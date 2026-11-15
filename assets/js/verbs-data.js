@@ -17,8 +17,13 @@
   var REG = {
     praes: ["e", "st", "t", "en", "t", "en"],
     praet: ["", "st", "", "n", "t", "n"],
-    strongPraet: ["", "st", "", "en", "t", "en"]
+    strongPraet: ["", "st", "", "en", "t", "en"],
+    subjunctive: ["e", "est", "e", "en", "et", "en"]
   };
+  /* Synthetic Konjunktiv II is selected by an explicit konj2 stem:
+     auxiliaries, modals, wissen; strong nehmen, kommen, gehen, geben; mixed
+     bringen, denken. All other verbs (fahren, waschen, stehen included) use
+     würde + infinitive, avoiding rare synthetic forms in the learner table. */
   var IRR = {
     "sein": {"praet": "war", "pp": "gewesen", "aux": "sein", "konj2": "wär", "praes": ["bin", "bist", "ist", "sind", "seid", "sind"]},
     "haben": {"praet": "hatte", "pp": "gehabt", "aux": "haben", "konj2": "hätt", "praes": ["habe", "hast", "hat", "haben", "habt", "haben"]},
@@ -49,7 +54,7 @@
     "empfehlen": {"praet": "empfahl", "pp": "empfohlen", "aux": "haben", "presentStem": "empfiehl"},
     "erschrecken": {"praet": "erschrak", "pp": "erschrocken", "aux": "sein", "presentStem": "erschrick"},
     "essen": {"praet": "aß", "pp": "gegessen", "aux": "haben", "presentStem": "iss"},
-    "fahren": {"praet": "fuhr", "pp": "gefahren", "aux": "sein", "presentStem": "fähr", "konj2": "führ"},
+    "fahren": {"praet": "fuhr", "pp": "gefahren", "aux": "sein", "presentStem": "fähr"},
     "fallen": {"praet": "fiel", "pp": "gefallen", "aux": "sein", "presentStem": "fäll"},
     "fangen": {"praet": "fing", "pp": "gefangen", "aux": "haben", "presentStem": "fäng"},
     "fechten": {"praet": "focht", "pp": "gefochten", "aux": "haben", "presentStem": "ficht"},
@@ -60,8 +65,8 @@
     "fließen": {"praet": "floss", "pp": "geflossen", "aux": "sein"},
     "fressen": {"praet": "fraß", "pp": "gefressen", "aux": "haben", "presentStem": "friss"},
     "frieren": {"praet": "fror", "pp": "gefroren", "aux": "haben"},
-    "geben": {"praet": "gab", "pp": "gegeben", "aux": "haben", "presentStem": "gib"},
-    "gehen": {"praet": "ging", "pp": "gegangen", "aux": "sein"},
+    "geben": {"praet": "gab", "pp": "gegeben", "aux": "haben", "presentStem": "gib", "konj2": "gäb"},
+    "gehen": {"praet": "ging", "pp": "gegangen", "aux": "sein", "konj2": "ging"},
     "gelingen": {"praet": "gelang", "pp": "gelungen", "aux": "sein"},
     "gelten": {"praet": "galt", "pp": "gegolten", "aux": "haben", "presentStem": "gilt"},
     "genießen": {"praet": "genoss", "pp": "genossen", "aux": "haben"},
@@ -79,7 +84,7 @@
     "helfen": {"praet": "half", "pp": "geholfen", "aux": "haben", "presentStem": "hilf"},
     "kennen": {"praet": "kannte", "pp": "gekannt", "aux": "haben"},
     "klingen": {"praet": "klang", "pp": "geklungen", "aux": "haben"},
-    "kommen": {"praet": "kam", "pp": "gekommen", "aux": "sein"},
+    "kommen": {"praet": "kam", "pp": "gekommen", "aux": "sein", "konj2": "käm"},
     "laden": {"praet": "lud", "pp": "geladen", "aux": "haben", "presentStem": "läd"},
     "lassen": {"praet": "ließ", "pp": "gelassen", "aux": "haben", "presentStem": "läss"},
     "laufen": {"praet": "lief", "pp": "gelaufen", "aux": "sein", "presentStem": "läuf"},
@@ -118,7 +123,7 @@
     "sitzen": {"praet": "saß", "pp": "gesessen", "aux": "haben"},
     "sprechen": {"praet": "sprach", "pp": "gesprochen", "aux": "haben", "presentStem": "sprich"},
     "springen": {"praet": "sprang", "pp": "gesprungen", "aux": "sein"},
-    "stehen": {"praet": "stand", "pp": "gestanden", "aux": "haben", "konj2": "stünd"},
+    "stehen": {"praet": "stand", "pp": "gestanden", "aux": "haben"},
     "stehlen": {"praet": "stahl", "pp": "gestohlen", "aux": "haben", "presentStem": "stiehl"},
     "steigen": {"praet": "stieg", "pp": "gestiegen", "aux": "sein"},
     "sterben": {"praet": "starb", "pp": "gestorben", "aux": "sein", "presentStem": "stirb"},
@@ -134,7 +139,7 @@
     "vergessen": {"praet": "vergaß", "pp": "vergessen", "aux": "haben", "presentStem": "vergiss"},
     "verlieren": {"praet": "verlor", "pp": "verloren", "aux": "haben"},
     "wachsen": {"praet": "wuchs", "pp": "gewachsen", "aux": "sein", "presentStem": "wächs"},
-    "waschen": {"praet": "wusch", "pp": "gewaschen", "aux": "haben", "presentStem": "wäsch", "konj2": "wüsch"},
+    "waschen": {"praet": "wusch", "pp": "gewaschen", "aux": "haben", "presentStem": "wäsch"},
     "wenden": {"praet": "wandte", "pp": "gewandt", "aux": "haben"},
     "werben": {"praet": "warb", "pp": "geworben", "aux": "haben", "presentStem": "wirb"},
     "werfen": {"praet": "warf", "pp": "geworfen", "aux": "haben", "presentStem": "wirf"},
@@ -142,6 +147,9 @@
     "ziehen": {"praet": "zog", "pp": "gezogen", "aux": "haben"},
   };
   var PRESENT_ONLY = { "möchten": ["möchte", "möchtest", "möchte", "möchten", "möchtet", "möchten"] };
+  var MODALS = ["können", "müssen", "dürfen", "sollen", "wollen", "mögen"];
+  var SUBJUNCTIVE_SEIN = ["sei", "seiest", "sei", "seien", "seiet", "seien"];
+  var IMPERATIVE_SEIN = [null, "sei", null, "seien wir", "seid", "seien Sie"];
   var SEIN_VERBS = Object.keys(IRR).filter(function (inf) {
     return IRR[inf].aux === "sein";
   }).concat([
@@ -153,6 +161,7 @@
 
   global.VERB_TABLES = {
     PERSONS: PERSONS, TENSES: TENSES, REG: REG, IRR: IRR, PRESENT_ONLY: PRESENT_ONLY,
-    SEIN_VERBS: SEIN_VERBS, COMMON: COMMON
+    SEIN_VERBS: SEIN_VERBS, COMMON: COMMON, MODALS: MODALS,
+    SUBJUNCTIVE_SEIN: SUBJUNCTIVE_SEIN, IMPERATIVE_SEIN: IMPERATIVE_SEIN
   };
 })(window);

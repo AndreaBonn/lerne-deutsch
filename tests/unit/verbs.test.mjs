@@ -5,16 +5,17 @@ import { loadEngine, VERBS } from './_harness.mjs';
 
 const V = loadEngine({ files: VERBS }).sandbox.Verbs;
 const golden = JSON.parse(readFileSync(new URL('./verbs-de-golden.json', import.meta.url), 'utf8'));
+/* F36: fahren shows würde + Infinitiv in the learner table; the golden file still lists the rare synthetic "führe". */
 for (const tense of Object.keys(golden.machen)) {
   describe(tense, () => {
     for (const [inf, table] of Object.entries(golden)) {
-      const deferred = !['praes', 'praet', 'perf', 'plusq', 'fut1', 'fut2'].includes(tense)
-        ? `implement in T1.${({ konj2: 17, konj2Verg: 17, konj1: 18, imper: 19 })[tense]}`
-        : inf === 'aufstehen' && ['praes', 'praet'].includes(tense) ? 'implement in T1.20'
+      const deferred = inf === 'aufstehen' && ['praes', 'praet', 'konj2', 'konj2Verg', 'konj1', 'imper'].includes(tense)
+        ? 'implement in T1.20'
           : inf === 'sich waschen' ? 'implement in T1.21' : undefined;
       test(`${inf}: ${tense}`, deferred ? { skip: deferred } : {}, () => {
         const actual = V.conjugate(inf, tense);
-        assert.deepEqual(actual === null ? null : Array.from(actual), table[tense]);
+        const expected = table[tense];
+        assert.deepEqual(actual === null ? null : Array.from(actual), expected);
       });
     }
   });
@@ -215,4 +216,96 @@ test('new tense rows remain independent across conjugate and fullTable calls', (
     forms[0] = 'changed';
     assert.deepEqual(Array.from(V.fullTable('machen')[tense] || []), golden.machen[tense]);
   }
+});
+
+describe('T1.17 selected synthetic and fallback Konjunktiv II', () => {
+  const cases = {
+    kommen: ['käme', 'kämest', 'käme', 'kämen', 'kämet', 'kämen'],
+    gehen: ['ginge', 'gingest', 'ginge', 'gingen', 'ginget', 'gingen'],
+    geben: ['gäbe', 'gäbest', 'gäbe', 'gäben', 'gäbet', 'gäben'],
+    sein: ['wäre', 'wärest', 'wäre', 'wären', 'wäret', 'wären'],
+    haben: ['hätte', 'hättest', 'hätte', 'hätten', 'hättet', 'hätten'],
+    werden: ['würde', 'würdest', 'würde', 'würden', 'würdet', 'würden'],
+    wissen: ['wüsste', 'wüsstest', 'wüsste', 'wüssten', 'wüsstet', 'wüssten'],
+    nehmen: ['nähme', 'nähmest', 'nähme', 'nähmen', 'nähmet', 'nähmen'],
+    bringen: ['brächte', 'brächtest', 'brächte', 'brächten', 'brächtet', 'brächten'],
+    können: ['könnte', 'könntest', 'könnte', 'könnten', 'könntet', 'könnten'],
+    fahren: ['würde fahren', 'würdest fahren', 'würde fahren', 'würden fahren', 'würdet fahren', 'würden fahren'],
+    waschen: ['würde waschen', 'würdest waschen', 'würde waschen', 'würden waschen', 'würdet waschen', 'würden waschen'],
+    stehen: ['würde stehen', 'würdest stehen', 'würde stehen', 'würden stehen', 'würdet stehen', 'würden stehen'],
+    denken: ['dächte', 'dächtest', 'dächte', 'dächten', 'dächtet', 'dächten'],
+    müssen: ['müsste', 'müsstest', 'müsste', 'müssten', 'müsstet', 'müssten'],
+    dürfen: ['dürfte', 'dürftest', 'dürfte', 'dürften', 'dürftet', 'dürften'],
+    sollen: ['sollte', 'solltest', 'sollte', 'sollten', 'solltet', 'sollten'],
+    wollen: ['wollte', 'wolltest', 'wollte', 'wollten', 'wolltet', 'wollten'],
+    mögen: ['möchte', 'möchtest', 'möchte', 'möchten', 'möchtet', 'möchten'],
+    schwimmen: ['würde schwimmen', 'würdest schwimmen', 'würde schwimmen', 'würden schwimmen', 'würdet schwimmen', 'würden schwimmen']
+  };
+  for (const [inf, expected] of Object.entries(cases)) {
+    test(inf, () => assert.deepEqual(Array.from(V.conjugate(inf, 'konj2') || []), expected));
+  }
+});
+
+describe('T1.18 Konjunktiv I stems and contractions', () => {
+  const cases = {
+    kommen: ['komme', 'kommest', 'komme', 'kommen', 'kommet', 'kommen'],
+    tun: ['tue', 'tuest', 'tue', 'tun', 'tuet', 'tun'],
+    sammeln: ['sammle', 'sammelst', 'sammle', 'sammeln', 'sammelt', 'sammeln']
+  };
+  for (const [inf, expected] of Object.entries(cases)) {
+    test(inf, () => assert.deepEqual(Array.from(V.conjugate(inf, 'konj1') || []), expected));
+  }
+});
+
+describe('T1.19 imperative vowel changes and required e', () => {
+  const cases = {
+    geben: [null, 'gib', null, 'geben wir', 'gebt', 'geben Sie'],
+    lesen: [null, 'lies', null, 'lesen wir', 'lest', 'lesen Sie'],
+    treten: [null, 'tritt', null, 'treten wir', 'tretet', 'treten Sie'],
+    laufen: [null, 'lauf', null, 'laufen wir', 'lauft', 'laufen Sie'],
+    rechnen: [null, 'rechne', null, 'rechnen wir', 'rechnet', 'rechnen Sie'],
+    sammeln: [null, 'sammle', null, 'sammeln wir', 'sammelt', 'sammeln Sie'],
+    tun: [null, 'tu', null, 'tun wir', 'tut', 'tun Sie']
+  };
+  for (const [inf, expected] of Object.entries(cases)) {
+    test(inf, () => assert.deepEqual(Array.from(V.conjugate(inf, 'imper') || []), expected));
+  }
+});
+
+const NULL_ROW = [null, null, null, null, null, null];
+
+describe('F33 möchten has no Konjunktiv II, Konjunktiv I or Imperativ rows', () => {
+  for (const tense of ['konj2', 'konj2Verg', 'konj1', 'imper']) {
+    test(tense, () => assert.deepEqual(Array.from(V.conjugate('möchten', tense)), NULL_ROW));
+  }
+  test('Präsens stays conjugated', () => {
+    assert.deepEqual(Array.from(V.conjugate('möchten', 'praes')), ['möchte', 'möchtest', 'möchte', 'möchten', 'möchtet', 'möchten']);
+  });
+});
+
+describe('F38 imperative coverage', () => {
+  for (const inf of ['können', 'müssen', 'dürfen', 'sollen', 'wollen', 'mögen']) {
+    test(`${inf} imperative is all null`, () => assert.deepEqual(Array.from(V.conjugate(inf, 'imper')), NULL_ROW));
+  }
+  const cases = {
+    wissen: [null, 'wisse', null, 'wissen wir', 'wisst', 'wissen Sie'],
+    essen: [null, 'iss', null, 'essen wir', 'esst', 'essen Sie'],
+    helfen: [null, 'hilf', null, 'helfen wir', 'helft', 'helfen Sie'],
+    fahren: [null, 'fahr', null, 'fahren wir', 'fahrt', 'fahren Sie'],
+    arbeiten: [null, 'arbeite', null, 'arbeiten wir', 'arbeitet', 'arbeiten Sie']
+  };
+  for (const [inf, expected] of Object.entries(cases)) {
+    test(inf, () => assert.deepEqual(Array.from(V.conjugate(inf, 'imper')), expected));
+  }
+});
+
+describe('F38 Konjunktiv II Vergangenheit uses the right auxiliary', () => {
+  test('haben verb: machen', () => {
+    assert.deepEqual(Array.from(V.conjugate('machen', 'konj2Verg')),
+      ['hätte gemacht', 'hättest gemacht', 'hätte gemacht', 'hätten gemacht', 'hättet gemacht', 'hätten gemacht']);
+  });
+  test('sein verb: gehen', () => {
+    assert.deepEqual(Array.from(V.conjugate('gehen', 'konj2Verg')),
+      ['wäre gegangen', 'wärest gegangen', 'wäre gegangen', 'wären gegangen', 'wäret gegangen', 'wären gegangen']);
+  });
 });

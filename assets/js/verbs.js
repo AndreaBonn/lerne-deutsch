@@ -8,6 +8,12 @@
   /* be-, er-, ge-, zer- that are part of the stem, so the participle keeps ge-. */
   var STEM_INITIAL_VERBS = /^(beten|bellen|beben|erben|ernten|geigen|zerren)$/;
 
+  var CONTRACTED_STEM = /(?:eln|ern)$/;
+
+  function nullRow() {
+    return D.PERSONS.map(function () { return null; });
+  }
+
   function stemOf(inf) {
     return inf.replace(/(?:en|n)$/, "");
   }
@@ -76,11 +82,71 @@
     return present("werden").map(function (form) { return form + " " + tail; });
   }
 
+  function subjunctiveForms(stem) {
+    return D.REG.subjunctive.map(function (ending) { return stem + ending; });
+  }
+
+  function subjunctiveTwo(inf) {
+    if (D.PRESENT_ONLY[inf]) return nullRow();
+    var entry = D.IRR[inf];
+    if (entry && entry.konj2) return subjunctiveForms(entry.konj2);
+    return subjunctiveForms(D.IRR.werden.konj2).map(function (form) {
+      return form + " " + inf;
+    });
+  }
+
+  function subjunctivePast(inf) {
+    if (D.PRESENT_ONLY[inf]) return nullRow();
+    var pp = participle(inf);
+    return subjunctiveTwo(auxiliary(inf)).map(function (form) {
+      return form + " " + pp;
+    });
+  }
+
+  function subjunctiveOne(inf) {
+    if (inf === "sein") return D.SUBJUNCTIVE_SEIN.slice();
+    if (D.PRESENT_ONLY[inf]) return nullRow();
+    var forms = subjunctiveForms(stemOf(inf));
+    forms[3] = forms[5] = inf;
+    if (CONTRACTED_STEM.test(inf)) {
+      var indicative = present(inf);
+      forms[0] = forms[2] = indicative[0];
+      forms[1] = indicative[1];
+      forms[4] = indicative[4];
+    }
+    return forms;
+  }
+
+  function imperativeSingular(inf) {
+    var stem = stemOf(inf);
+    var entry = D.IRR[inf];
+    if (entry && entry.presentStem && /i/.test(entry.presentStem)) {
+      return entry.presentStem;
+    }
+    if (inf === "wissen") return stem + "e";
+    if (needsE(stem) || CONTRACTED_STEM.test(inf) || inf === "werden") {
+      return present(inf)[0];
+    }
+    return stem;
+  }
+
+  function imperative(inf) {
+    if (inf === "sein") return D.IMPERATIVE_SEIN.slice();
+    if (D.MODALS.indexOf(inf) !== -1 || D.PRESENT_ONLY[inf]) return nullRow();
+    var subjunctive = subjunctiveOne(inf);
+    return [null, imperativeSingular(inf), null, subjunctive[3] + " wir",
+      present(inf)[4], subjunctive[5] + " Sie"];
+  }
+
   function conjugate(inf, tenseKey) {
     if (tenseKey === "praes") return present(inf);
     if (tenseKey === "praet") return preterite(inf);
     if (tenseKey === "perf" || tenseKey === "plusq") return perfect(inf, tenseKey);
     if (tenseKey === "fut1" || tenseKey === "fut2") return future(inf, tenseKey);
+    if (tenseKey === "konj2") return subjunctiveTwo(inf);
+    if (tenseKey === "konj2Verg") return subjunctivePast(inf);
+    if (tenseKey === "konj1") return subjunctiveOne(inf);
+    if (tenseKey === "imper") return imperative(inf);
     return null;
   }
 

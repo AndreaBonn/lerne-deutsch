@@ -376,14 +376,7 @@
       "werdet gefahren sein",
       "werden gefahren sein"
     ],
-    "konj2": [
-      "führe",
-      "führest",
-      "führe",
-      "führen",
-      "führet",
-      "führen"
-    ],
+    "konj2": ["würde fahren", "würdest fahren", "würde fahren", "würden fahren", "würdet fahren", "würden fahren"],
     "konj2Verg": [
       "wäre gefahren",
       "wärest gefahren",
