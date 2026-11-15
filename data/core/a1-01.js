@@ -1,282 +1,304 @@
 /* ============================================================
-   Warstwa neutralna językowo — struktura, włoski, klucze odpowiedzi.
-   Teksty w języku ucznia leżą w data/i18n/<lang>/a1-01.js
-   Powstało z data/a1-01.js przez scripts/split_data.mjs.
+   Language-neutral layer: German (de-DE), structure and answer keys.
+   Learner-language texts live in data/i18n/<lang>/a1-01.js.
+   a1-u01 is the German unit; a1-u02 and a1-u03 below are still the old
+   Italian-course content and are rewritten by later tasks.
    ============================================================ */
 LINGUAI.addUnits("A1", [
   {
     id: "a1-u01",
     icon: "☕",
-    titleIt: "Al bar",
+    titleIt: "Im Café",
     lessons: [
       {
         id: "a1-u01-l1",
-        tags: ["g-presente", "g-frase"],
+        tags: ["g-praesens", "g-satz-v2", "g-aussprache"],
         cefr: "A1",
-        titleIt: "Buongiorno, un caffè",
+        titleIt: "Guten Tag, einen Kaffee",
         grammar: {
           examples: [
-            { it: "Buongiorno, un caffè per favore." },
-            { it: "Sono Anna, piacere." },
-            { it: "Tu sei di Roma?" },
-            { it: "Il caffè è caldo." },
-            { it: "Siamo in ritardo." },
-            { it: "Loro sono al bar." }
+            { it: "Guten Tag, einen Kaffee, bitte." },
+            { it: "Ich heiße Anna." },
+            { it: "Wie heißt du?" },
+            { it: "Wie heißen Sie?" },
+            { it: "Heute trinke ich Tee." },
+            { it: "Das Café ist klein." }
           ]
         },
         vocab: [
-          { it: "buongiorno" },
-          { it: "buonasera" },
-          { it: "buonanotte" },
-          { it: "ciao" },
-          { it: "arrivederci" },
-          { it: "per favore" },
-          { it: "grazie" },
-          { it: "prego" },
-          { it: "un caffè", ex: "Un caffè, per favore." },
-          { it: "un cappuccino", ex: "Solo di mattina!" },
-          { it: "un cornetto" },
-          { it: "il bar" },
-          { it: "piacere" },
-          { it: "scusi" }
+          { it: "Guten Morgen" },
+          { it: "Guten Tag" },
+          { it: "Guten Abend" },
+          { it: "Gute Nacht" },
+          { it: "Hallo" },
+          { it: "Tschüss" },
+          { it: "Auf Wiedersehen" },
+          { it: "bitte" },
+          { it: "danke" },
+          { it: "Entschuldigung" },
+          { it: "der Kaffee", plural: "die Kaffees", ex: "Einen Kaffee, bitte." },
+          { it: "der Tee", plural: "die Tees", ex: "Einen Tee, bitte." },
+          { it: "das Wasser", plural: "-", ex: "Das Wasser ist kalt." },
+          { it: "das Café", plural: "die Cafés", ex: "Das Café ist klein." }
         ],
         dialogue: {
-          titleIt: "Al banco",
+          titleIt: "An der Theke",
           lines: [
-            { who: "🧑‍🍳", it: "Buongiorno! Dica pure." },
-            { who: "🙋", it: "Buongiorno. Un caffè e un cornetto, per favore." },
-            { who: "🧑‍🍳", it: "Subito. Sono due euro e cinquanta." },
-            { who: "🙋", it: "Ecco. Grazie!" },
-            { who: "🧑‍🍳", it: "Prego, buona giornata!" }
+            { who: "🧑‍🍳", it: "Guten Tag! Was möchten Sie?" },
+            { who: "🙋", it: "Guten Tag. Einen Kaffee, bitte." },
+            { who: "🧑‍🍳", it: "Gern. Sonst noch etwas?" },
+            { who: "🙋", it: "Nein, danke. Das ist alles." },
+            { who: "🧑‍🍳", it: "Bitte schön. Einen schönen Tag noch!" }
           ]
         },
         exercises: [
           { t: "mcq", a: 1 },
-          { t: "mcq", a: 1 },
-          { t: "conj", verb: "essere", tense: "pres", persons: [0, 1, 2, 3, 4, 5] },
-          { t: "fill", a: ["sono"] },
+          { t: "mcq", a: 2 },
+          { t: "conj", verb: "heißen", tense: "praes", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "fill", a: ["heißt"] },
           {
             t: "trans",
             dir: "toIt",
-            a: ["sono dalla polonia", "sono della polonia", "vengo dalla polonia"]
+            a: [
+              "Guten Tag, einen Kaffee, bitte",
+              "Guten Morgen, einen Kaffee, bitte"
+            ]
           },
           {
             t: "order",
-            tokens: ["Un", "caffè", "e", "un", "cornetto,", "per", "favore"],
-            a: ["un caffè e un cornetto per favore"]
+            tokens: ["Guten", "Tag,", "ich", "heiße", "Anna"],
+            a: ["Guten Tag, ich heiße Anna"]
           },
-          { t: "match", pairs: [{ it: "grazie" }, { it: "prego" }, { it: "scusi" }, { it: "arrivederci" }] },
-          { t: "listen", it: "Buonasera, un cappuccino per favore." },
-          { t: "speak", it: "Buongiorno, un caffè per favore." }
+          {
+            t: "match",
+            pairs: [{ it: "danke" }, { it: "bitte" }, { it: "Entschuldigung" }, { it: "Auf Wiedersehen" }]
+          },
+          { t: "listen", it: "Guten Abend, einen Tee, bitte." },
+          { t: "speak", it: "Guten Tag, einen Kaffee, bitte." }
         ]
       },
       {
         id: "a1-u01-l2",
-        tags: ["g-nome-genere", "g-nome-plurale"],
+        tags: ["g-genus", "g-plural"],
         cefr: "A1",
-        titleIt: "Maschile o femminile?",
+        titleIt: "der, die, das",
         grammar: {
           examples: [
-            { it: "Il cornetto è buono." },
-            { it: "I cornetti sono buoni." },
-            { it: "La stazione è vicina." },
-            { it: "Due caffè, per favore." }
+            { it: "Der Tisch ist klein." },
+            { it: "Die Tassen sind groß." },
+            { it: "Das Buch ist neu." },
+            { it: "Das Kind trinkt Milch." },
+            { it: "Drei Tassen und zwei Kuchen, bitte." },
+            { it: "Die Rechnung, bitte." }
           ]
         },
         vocab: [
-          { it: "il libro" },
-          { it: "la casa" },
-          { it: "il tavolo" },
-          { it: "la sedia" },
-          { it: "il ristorante" },
-          { it: "la stazione" },
-          { it: "la chiave" },
-          { it: "il fiore" },
-          { it: "la città" },
-          { it: "il caffè" },
-          { it: "lo sport" },
-          { it: "il film" },
-          { it: "la notte" },
-          { it: "il giorno" }
+          { it: "der Tisch", plural: "die Tische" },
+          { it: "der Stuhl", plural: "die Stühle" },
+          { it: "das Buch", plural: "die Bücher" },
+          { it: "das Haus", plural: "die Häuser" },
+          { it: "die Tasse", plural: "die Tassen", ex: "Eine Tasse Tee, bitte." },
+          { it: "die Frau", plural: "die Frauen" },
+          { it: "der Mann", plural: "die Männer" },
+          { it: "das Kind", plural: "die Kinder" },
+          { it: "die Zeitung", plural: "die Zeitungen" },
+          { it: "der Kuchen", plural: "die Kuchen", ex: "Der Kuchen ist frisch." },
+          { it: "die Milch", plural: "-", ex: "Die Milch ist kalt." },
+          { it: "der Zucker", plural: "-" },
+          { it: "das Brötchen", plural: "die Brötchen" },
+          { it: "die Rechnung", plural: "die Rechnungen", ex: "Die Rechnung, bitte." }
         ],
         exercises: [
           { t: "mcq", a: 1 },
-          { t: "fill", a: ["le"] },
-          { t: "fill", a: ["ristoranti"] },
+          { t: "fill", a: ["Tassen"] },
+          { t: "fill", a: ["Bücher"] },
           {
             t: "gender",
-            opts: ["il", "la"],
+            opts: ["der", "die", "das"],
             items: [
-              { it: "libro", a: "il" },
-              { it: "casa", a: "la" },
-              { it: "stazione", a: "la" },
-              { it: "ristorante", a: "il" },
-              { it: "chiave", a: "la" },
-              { it: "giorno", a: "il" }
+              { it: "Tisch", a: "der" },
+              { it: "Tasse", a: "die" },
+              { it: "Buch", a: "das" },
+              { it: "Haus", a: "das" },
+              { it: "Zeitung", a: "die" },
+              { it: "Mann", a: "der" }
             ]
           },
           { t: "mcq", a: 1 },
           { t: "multi", a: [0, 2, 4] },
-          { t: "order", tokens: ["Il", "ristorante", "è", "chiuso"], a: ["il ristorante è chiuso"] },
-          { t: "listen", it: "Le chiavi sono sul tavolo." },
-          { t: "speak", it: "La città è molto bella." }
+          { t: "order", tokens: ["Das", "Kind", "trinkt", "Milch"], a: ["Das Kind trinkt Milch"] },
+          { t: "listen", it: "Zwei Tassen und drei Brötchen, bitte." },
+          { t: "speak", it: "Die Rechnung, bitte." }
         ]
       },
       {
         id: "a1-u01-l3",
-        tags: ["g-articolo-det", "g-articolo-indet"],
+        tags: ["g-artikel-nom"],
         cefr: "A1",
-        titleIt: "Il, lo, la, un, una",
+        titleIt: "der oder ein?",
         grammar: {
           examples: [
-            { it: "Vorrei un caffè." },
-            { it: "Il caffè è freddo." },
-            { it: "Lo zaino è pesante." },
-            { it: "Gli studenti sono in ritardo." },
-            { it: "Un'amica di Roma." }
+            { it: "Der Kaffee ist heiß." },
+            { it: "Ein Kaffee kostet drei Euro." },
+            { it: "Das ist eine Tasse." },
+            { it: "Das ist kein Tee." },
+            { it: "Die Torte ist frisch." },
+            { it: "Hier ist die Speisekarte." }
           ]
         },
         vocab: [
-          { it: "lo studente / la studentessa" },
-          { it: "lo zaino" },
-          { it: "l'amico / l'amica" },
-          { it: "il treno" },
-          { it: "lo specchio" },
-          { it: "lo zucchero" },
-          { it: "l'acqua" },
-          { it: "il bicchiere" },
-          { it: "la bottiglia" },
-          { it: "l'albergo" },
-          { it: "lo psicologo" },
-          { it: "la gente" }
+          { it: "der Saft", plural: "die Säfte" },
+          { it: "die Cola", plural: "die Colas" },
+          { it: "die Schokolade", plural: "die Schokoladen" },
+          { it: "das Bier", plural: "die Biere" },
+          { it: "der Wein", plural: "die Weine" },
+          { it: "das Eis", plural: "-", ex: "Das ist ein Eis." },
+          { it: "der Apfelkuchen", plural: "die Apfelkuchen" },
+          { it: "die Torte", plural: "die Torten", ex: "Die Torte ist frisch." },
+          { it: "das Brot", plural: "die Brote" },
+          { it: "die Brezel", plural: "die Brezeln" },
+          { it: "die Speisekarte", plural: "die Speisekarten", ex: "Hier ist die Speisekarte." },
+          { it: "der Kellner", plural: "die Kellner" }
         ],
         exercises: [
           { t: "mcq", a: 1 },
           { t: "mcq", a: 1 },
           {
             t: "gender",
-            opts: ["il", "lo", "la", "l'"],
+            opts: ["ein", "eine"],
             items: [
-              { it: "treno", a: "il" },
-              { it: "studente", a: "lo" },
-              { it: "amica", a: "l'" },
-              { it: "acqua", a: "l'" },
-              { it: "bottiglia", a: "la" },
-              { it: "zaino", a: "lo" }
+              { it: "Saft", a: "ein" },
+              { it: "Cola", a: "eine" },
+              { it: "Torte", a: "eine" },
+              { it: "Brot", a: "ein" },
+              { it: "Speisekarte", a: "eine" },
+              { it: "Kellner", a: "ein" }
             ]
           },
-          { t: "fill", a: ["un'"] },
-          { t: "fill", a: ["gli"] },
+          { t: "fill", a: ["ein"] },
+          { t: "fill", a: ["Die"] },
           { t: "mcq", a: 1 },
           {
             t: "match",
-            pairs: [
-              { it: "___ psicologo → lo" },
-              { it: "___ albergo → l'" },
-              { it: "___ bicchiere → il" },
-              { it: "___ gente → la" }
-            ]
+            pairs: [{ it: "ein Kaffee" }, { it: "eine Torte" }, { it: "ein Brot" }, { it: "keine Cola" }]
           },
           {
             t: "order",
-            tokens: ["Lo", "zaino", "dello", "studente", "è", "pesante"],
-            a: ["lo zaino dello studente è pesante"]
+            tokens: ["Hier", "ist", "die", "Speisekarte", "und", "das", "Wasser"],
+            a: ["Hier ist die Speisekarte und das Wasser"]
           },
-          { t: "speak", it: "Gli studenti sono all'università." }
+          { t: "speak", it: "Das ist eine Torte." }
         ]
       },
       {
         id: "a1-u01-l4",
-        tags: ["g-presente", "g-frase"],
+        tags: ["g-register", "g-satz-v2"],
         cefr: "A1",
-        titleIt: "Come stai?",
+        titleIt: "Wie geht's? du oder Sie",
         grammar: {
           examples: [
-            { it: "Ciao Marco, come stai?" },
-            { it: "Buongiorno, come sta?" },
-            { it: "Sto bene, grazie. E tu?" },
-            { it: "Non c'è male." },
-            { it: "Così così." },
-            { it: "Possiamo darci del tu?" }
+            { it: "Hallo Julia, wie geht's?" },
+            { it: "Guten Tag, Frau Weber, wie geht es Ihnen?" },
+            { it: "Mir geht es gut, danke. Und dir?" },
+            { it: "Es geht." },
+            { it: "Sind Sie Frau Weber?" },
+            { it: "Wollen wir uns duzen?" }
           ]
         },
         vocab: [
-          { it: "come stai?" },
-          { it: "come sta?" },
-          { it: "sto bene" },
-          { it: "sto male" },
-          { it: "non c'è male" },
-          { it: "così così" },
-          { it: "e tu? / e Lei?" },
-          { it: "benissimo" },
-          { it: "un po' stanco/a" },
-          { it: "il signore / la signora" },
-          { it: "a presto" },
-          { it: "a dopo" }
+          { it: "Wie geht's?" },
+          { it: "Wie geht es Ihnen?" },
+          { it: "Mir geht es gut." },
+          { it: "Es geht." },
+          { it: "nicht schlecht" },
+          { it: "sehr gut" },
+          { it: "schlecht" },
+          { it: "und dir?" },
+          { it: "und Ihnen?" },
+          { it: "Herr" },
+          { it: "Frau" },
+          { it: "bis später" }
         ],
         dialogue: {
-          titleIt: "Due incontri, due registri",
+          titleIt: "Zwei Begegnungen, zwei Anreden",
           lines: [
-            { who: "🙋", it: "Ciao Giulia! Come stai?" },
-            { who: "👩", it: "Ciao! Benissimo, e tu?" },
-            { who: "🙋", it: "Un po' stanco, ma bene. A dopo!" },
-            { who: "🧓", it: "Buongiorno signora, come sta?" },
-            { who: "👩", it: "Non c'è male, grazie. E Lei?" }
+            { who: "🙋", it: "Hallo Julia! Wie geht's?" },
+            { who: "👩", it: "Hallo! Gut, und dir?" },
+            { who: "🙋", it: "Nicht schlecht, danke. Bis später!" },
+            { who: "🧓", it: "Guten Tag, Frau Weber. Wie geht es Ihnen?" },
+            { who: "👩", it: "Gut, danke. Und Ihnen?" }
           ]
         },
         exercises: [
           { t: "mcq", a: 1 },
           { t: "mcq", a: 1 },
-          { t: "conj", verb: "stare", tense: "pres", persons: [0, 1, 2, 4] },
-          { t: "fill", a: ["state"] },
-          { t: "trans", dir: "toIt", a: ["sto bene grazie e tu", "sto bene, grazie. e tu?"] },
+          { t: "conj", verb: "sein", tense: "praes", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "fill", a: ["Sind"] },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Mir geht es gut, danke. Und dir?",
+              "Mir geht's gut, danke. Und dir?",
+              "Es geht mir gut, danke. Und dir?",
+              "Gut, danke. Und dir?"
+            ]
+          },
           {
             t: "dialogue",
             lines: [
-              { sp: "A", it: "Ciao! Come stai stamattina?" },
-              { sp: "TY", choices: ["Sono bene, e tu?", "Sto bene, e tu?", "Sta bene, e Lei?"], a: 1 },
-              { sp: "A", it: "Benissimo! Il solito caffè?" },
-              { sp: "TY", choices: ["Sì, grazie!", "No, prego.", "Sì, scusi."], a: 0 }
+              { sp: "A", it: "Hallo! Wie geht's dir heute?" },
+              {
+                sp: "TY",
+                choices: ["Mir geht es gut, und dir?", "Mir geht es gut, und Ihnen?", "Ich bin gut, und dir?"],
+                a: 0
+              },
+              { sp: "A", it: "Sehr gut! Einen Kaffee?" },
+              { sp: "TY", choices: ["Ja, bitte!", "Ja, Entschuldigung!", "Nein, Tschüss!"], a: 0 }
             ]
           },
           {
             t: "match",
-            pairs: [{ it: "benissimo" }, { it: "non c'è male" }, { it: "così così" }, { it: "sto male" }]
+            pairs: [{ it: "Es geht." }, { it: "sehr gut" }, { it: "schlecht" }, { it: "nicht schlecht" }]
           },
-          { t: "listen", it: "Buonasera signora, come sta?" },
-          { t: "speak", it: "Non c'è male, grazie. E Lei?" }
+          { t: "listen", it: "Guten Tag, Frau Weber, wie geht es Ihnen?" },
+          { t: "speak", it: "Gut, danke. Und Ihnen?" }
         ]
       }
     ],
     test: {
       id: "a1-u01-test",
-      tags: ["g-presente", "g-nome-genere", "g-articolo-det"],
+      tags: ["g-praesens", "g-genus", "g-artikel-nom"],
       cefr: "A1",
-      titleIt: "Test — Al bar",
+      titleIt: "Test: Im Café",
       exercises: [
         { t: "mcq", a: 1 },
-        { t: "fill", a: ["siamo"] },
-        { t: "fill", a: ["stai"] },
+        { t: "fill", a: ["sind"] },
+        { t: "fill", a: ["heißen"] },
         {
           t: "gender",
-          opts: ["il", "lo", "la", "l'"],
+          opts: ["der", "die", "das"],
           items: [
-            { it: "zaino", a: "lo" },
-            { it: "amica", a: "l'" },
-            { it: "stazione", a: "la" },
-            { it: "treno", a: "il" }
+            { it: "Tisch", a: "der" },
+            { it: "Tasse", a: "die" },
+            { it: "Kind", a: "das" },
+            { it: "Torte", a: "die" }
           ]
         },
-        { t: "mcq", a: 0 },
-        { t: "multi", a: [0, 2, 3] },
+        { t: "mcq", a: 1 },
+        { t: "multi", a: [1, 2, 3] },
         {
           t: "trans",
           dir: "toIt",
-          a: ["un'acqua per favore", "vorrei un'acqua", "un acqua per favore", "dell'acqua per favore"]
+          a: ["Zwei Tee, bitte", "Zwei Tees, bitte", "Zwei Tassen Tee, bitte"]
         },
-        { t: "order", tokens: ["Gli", "studenti", "sono", "al", "bar"], a: ["gli studenti sono al bar"] },
-        { t: "listen", it: "Due caffè e un cornetto, per favore." },
-        { t: "speak", it: "Buongiorno, come sta?" }
+        {
+          t: "order",
+          tokens: ["Wie", "geht", "es", "Ihnen,", "Frau", "Weber"],
+          a: ["Wie geht es Ihnen, Frau Weber"]
+        },
+        { t: "listen", it: "Zwei Kaffee und ein Brötchen, bitte." },
+        { t: "speak", it: "Guten Tag, wie geht es Ihnen?" }
       ]
     }
   },
