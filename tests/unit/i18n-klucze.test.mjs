@@ -27,7 +27,7 @@ import { dirname, join } from "node:path";
 import vm from "node:vm";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
-const LANGS = ["pl", "en", "es", "fr", "de"];
+const LANGS = ["pl", "en", "es", "fr", "it"];
 
 /** The dictionary of one language, loaded the way the page loads it. */
 function slownik(lang) {
@@ -139,6 +139,20 @@ describe("i18n: no key is asked for and missing", () => {
       const inny = slownik(lang);
       const brak = klucze_pl.filter((k) => !Object.prototype.hasOwnProperty.call(inny, k));
       assert.deepEqual(brak, [], `ui-${lang}.js is missing: ${brak.slice(0, 5).join(", ")}`);
+      assert.deepEqual(Object.keys(inny).sort(), klucze_pl.slice().sort());
     }
   });
+});
+
+ test("Italian UI renders German course copy with plural forms and placeholders", () => {
+  const dict = slownik("it");
+  assert.match(dict["welcome.title"], /tedesco/);
+  assert.equal(dict["ex.ph.toIt"], "Scrivi in tedesco");
+  assert.equal(dict["ex.ph.toBase"], "Scrivi in italiano");
+  assert.equal(dict["stats.days"].one, "giorno");
+  assert.equal(dict["stats.days"].other, "giorni");
+  for (const [key, value] of Object.entries(slownik("pl"))) {
+    const variables = item => [...JSON.stringify(item).matchAll(/\{(\w+)\}/g)].map(match => match[1]);
+    assert.deepEqual([...new Set(variables(dict[key]))].sort(), [...new Set(variables(value))].sort(), key);
+  }
 });

@@ -27,7 +27,7 @@ const SPOZA_KURSU = "questa frase non esiste in nessuna lezione del corso";
 function silnik(opts) {
   const box = loadEngine(Object.assign({
     files: [...CORE, ...AUDIO],
-    voices: [glos("Isabella", "it-IT")]
+    voices: [glos("Katja", "de-DE")]
   }, opts || {}));
   box.Core.load();
   return box;
@@ -187,37 +187,37 @@ describe("the system voice", () => {
     assert.equal(wynik, false);
     assert.equal(box.audio.wypowiedzi.length, 0);
     assert.equal(domkniete, 1);
-    assert.deepEqual(box.toasts, ["audio.noItalianVoice"]);
+    assert.deepEqual(box.toasts, ["audio.noGermanVoice"]);
 
     box.sandbox.Audio2.speak(SPOZA_KURSU);
-    assert.deepEqual(box.toasts, ["audio.noItalianVoice"], "once per session");
+    assert.deepEqual(box.toasts, ["audio.noGermanVoice"], "once per session");
   });
 
-  test("among several Italian voices the neural one wins, not the first on the list", () => {
+  test("among several German voices the neural one wins, not the first on the list", () => {
     const box = silnik({
-      voices: [glos("espeak-ng italiano", "it-IT"), glos("Google italiano", "it-IT")]
+      voices: [glos("espeak-ng Deutsch", "de-DE"), glos("Google Deutsch", "de-DE")]
     });
     box.sandbox.Audio2.speak(SPOZA_KURSU);
 
-    assert.equal(box.audio.wypowiedzi[0].voice.name, "Google italiano",
+    assert.equal(box.audio.wypowiedzi[0].voice.name, "Google Deutsch",
       "espeak sounds mechanical and has to give way, though it stands higher on the list");
   });
 
   test("italianVoices() filters out voices of other languages", () => {
     const box = silnik({
-      voices: [glos("Isabella", "it-IT"), glos("Daniel", "en-GB"), glos("Luca", "it_IT")]
+      voices: [glos("Katja", "de-DE"), glos("Daniel", "en-GB"), glos("Isabella", "it-IT"), glos("Stefan", "de_DE")]
     });
     const nazwy = box.sandbox.Audio2.italianVoices().map((v) => v.name);
 
-    assert.deepEqual(nazwy, ["Isabella", "Luca"], "it_IT with an underscore is Italian too");
+    assert.deepEqual(nazwy, ["Katja", "Stefan"], "de_DE with an underscore is German too");
   });
 });
 
 describe("the system voice: handlers and degraded stop", () => {
   test("among two non-neural voices, the mechanical one gives way", () => {
-    const box = silnik({ voices: [glos("espeak-ng italiano", "it-IT"), glos("Luca", "it-IT")] });
+    const box = silnik({ voices: [glos("espeak-ng Deutsch", "de-DE"), glos("Stefan", "de-DE")] });
     box.sandbox.Audio2.speak(SPOZA_KURSU);
-    assert.equal(box.audio.wypowiedzi[0].voice.name, "Luca");
+    assert.equal(box.audio.wypowiedzi[0].voice.name, "Stefan");
   });
 
   test("the synthesiser's start and error reach the view's handlers", () => {
@@ -387,7 +387,7 @@ describe("speech recognition: the consent gate", () => {
     box.sandbox.Audio2.listen({});
 
     assert.equal(zapytania.length, 0);
-    assert.equal(box.audio.rozpoznania[0].lang, "it-IT", "we listen in Italian, not in the browser's language");
+    assert.equal(box.audio.rozpoznania[0].lang, "de-DE", "we listen in German, not in the browser's language");
   });
 });
 
@@ -544,10 +544,10 @@ describe("old and crippled browsers", () => {
        branch getVoices() returns an empty list at startup and the course stays
        silent for the rest of the session. */
     const box = silnik({ starySyntezator: true, voices: [] });
-    box.audio.voices.push(glos("Isabella", "it-IT"));
+    box.audio.voices.push(glos("Katja", "de-DE"));
     box.sandbox.speechSynthesis.onvoiceschanged();
 
-    assert.deepEqual(box.sandbox.Audio2.italianVoices().map((v) => v.name), ["Isabella"]);
+    assert.deepEqual(box.sandbox.Audio2.italianVoices().map((v) => v.name), ["Katja"]);
   });
 
   test("play() with no promise reports the start at once instead of waiting for then()", () => {

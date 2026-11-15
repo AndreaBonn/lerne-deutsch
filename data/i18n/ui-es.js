@@ -55,7 +55,7 @@ LINGUAI.addUI("es", {
   /* ---------------- Accesibilidad ---------------- */
   "a11y.listen": "Escuchar",
   "a11y.listenTo": "Escuchar {what}",
-  "audio.noItalianVoice": "No hay voz italiana en este sistema, así que la frase no se leerá. Un narrador inglés leyendo italiano te enseñaría una pronunciación equivocada. Las grabaciones del curso funcionan al margen de esto.",
+  "audio.noGermanVoice": "No hay voz italiana en este sistema, así que la frase no se leerá. Un narrador inglés leyendo italiano te enseñaría una pronunciación equivocada. Las grabaciones del curso funcionan al margen de esto.",
   "audio.recordingFailed": "La grabación está en el índice pero el archivo no se ha podido cargar. Comprueba que la carpeta audio/ esté junto a index.html y que la página se sirva desde el mismo sitio.",
 
   /* ---------------- Ruta de aprendizaje ---------------- */
@@ -589,20 +589,16 @@ LINGUAI.addUI("es", {
   "conj.reflexive": "reflexivo",
 
   /* ---------------- Nombres de los tiempos ---------------- */
-  "tense.pres": "Presente de indicativo",
-  "tense.passPross": "Pretérito perfecto compuesto",
-  "tense.imperf": "Pretérito imperfecto",
-  "tense.trapPross": "Pretérito pluscuamperfecto",
-  "tense.futuro": "Futuro simple",
-  "tense.futAnt": "Futuro compuesto",
-  "tense.remoto": "Pretérito perfecto simple",
-  "tense.condizionale": "Condicional simple",
-  "tense.condPass": "Condicional compuesto",
-  "tense.cong": "Presente de subjuntivo",
-  "tense.congPass": "Pretérito perfecto de subjuntivo",
-  "tense.congImp": "Pretérito imperfecto de subjuntivo",
-  "tense.congTrap": "Pluscuamperfecto de subjuntivo",
-  "tense.imper": "Imperativo",
+  "tense.praes": "Präsens (presente)",
+  "tense.praet": "Präteritum (pretérito simple)",
+  "tense.perf": "Perfekt (pretérito perfecto)",
+  "tense.plusq": "Plusquamperfekt (pluscuamperfecto)",
+  "tense.fut1": "Futur I (futuro)",
+  "tense.fut2": "Futur II (futuro perfecto)",
+  "tense.konj2": "Konjunktiv II (subjuntivo II, condicional)",
+  "tense.konj2Verg": "Konjunktiv II Vergangenheit (subjuntivo II pasado)",
+  "tense.konj1": "Konjunktiv I (subjuntivo I, estilo indirecto)",
+  "tense.imper": "Imperativ (imperativo)",
 
   /* ---------------- Mi vocabulario ---------------- */
   "lex.kicker": "Vocabulario",

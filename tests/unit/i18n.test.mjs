@@ -10,7 +10,7 @@
    ============================================================ */
 import { test, describe } from "node:test";
 import assert from "node:assert/strict";
-import { loadEngine, CORE } from "./_harness.mjs";
+import { loadEngine, CORE, UI } from "./_harness.mjs";
 
 /** We load i18n.js AFTER the engine, so that it overrides the sandbox's I18n double. */
 function swiezy() {
@@ -22,6 +22,7 @@ function swiezy() {
 function zNapisami(dict, lang) {
   const { I18n, LINGUAI } = swiezy();
   LINGUAI.addUI(lang || "pl", dict);
+  I18n.set(lang || "pl");
   if (lang) I18n.set(lang);
   return I18n;
 }
@@ -68,16 +69,16 @@ describe("napisy interfejsu", () => {
     assert.equal(I18n.locale(), "en-US", "English in this course is the American variety");
   });
 
-  test("a string missing in the current language falls back to English, not to the key", () => {
+  test("a string missing in the current language falls back to Italian, not to the key", () => {
     /* The course speaks five languages and an overlay is sometimes
-       incomplete: the student should see a sentence in English rather than
+       incomplete: the student should see a sentence in Italian rather than
        "set.errNoVersion" on the screen. */
     const { I18n, LINGUAI } = swiezy();
-    LINGUAI.addUI("en", { "x": "Fallback text" });
-    LINGUAI.addUI("de", {});
-    I18n.set("de");
+    LINGUAI.addUI("it", { "x": "Testo di riserva" });
+    LINGUAI.addUI("fr", {});
+    I18n.set("fr");
 
-    assert.equal(I18n.t("x"), "Fallback text");
+    assert.equal(I18n.t("x"), "Testo di riserva");
     assert.ok(I18n.missing().indexOf("x") >= 0, "the gap is still visible on the list");
   });
 });
@@ -88,12 +89,12 @@ describe("the language of a first visit", () => {
   test("the first browser language the course has wins, region ignored", () => {
     const { I18n } = swiezy();
     assert.equal(I18n.pickLang(["fr-CA", "en-US"]), "fr");
-    assert.equal(I18n.pickLang(["it-IT", "de-AT", "en"]), "de");
+    assert.equal(I18n.pickLang(["de-AT", "it-IT", "en"]), "it");
   });
 
   test("a browser with none of the course languages gives null, not a guess", () => {
     const { I18n } = swiezy();
-    assert.equal(I18n.pickLang(["it-IT", "ja"]), null);
+    assert.equal(I18n.pickLang(["de-DE", "ja"]), null);
     assert.equal(I18n.pickLang([]), null);
     assert.equal(I18n.pickLang(undefined), null);
   });
@@ -125,4 +126,23 @@ describe("applying translations to a root", () => {
     assert.equal(I18n.t("days", { n: 1 }), "1 dzień");
     assert.equal(I18n.t("days", { n: 3 }), "3 dni");
   });
+});
+
+ test("Italian is the default explanation language and German is not offered", () => {
+  const { I18n } = swiezy();
+  assert.equal(I18n.lang, "it");
+  assert.equal(I18n.locale(), "it-IT");
+  assert.deepEqual(Array.from(I18n.LANGS, item => item.code), ["it", "en", "es", "fr", "pl"]);
+  assert.deepEqual(Object.assign({}, I18n.LOCALE), { it: "it-IT", en: "en-US", es: "es-ES", fr: "fr-FR", pl: "pl-PL" });
+});
+
+test("the shell dictionaries render Italian by default and switch without reloading", () => {
+  const { sandbox } = loadEngine({ files: [...CORE, ...UI] });
+  assert.equal(sandbox.I18n.t("welcome.title"), "Benvenuto al corso di tedesco");
+  assert.equal(sandbox.I18n.t("lesson.savedVocab", { n: 1 }), "1 parola aggiunta al mazzo di ripasso.");
+  assert.equal(sandbox.I18n.t("lesson.savedVocab", { n: 2 }), "2 parole aggiunte al mazzo di ripasso.");
+  sandbox.I18n.set("en");
+  assert.equal(sandbox.I18n.t("nav.settings"), "Settings");
+  sandbox.I18n.set("it");
+  assert.equal(sandbox.I18n.t("nav.settings"), "Impostazioni");
 });

@@ -23,8 +23,8 @@
   var LINGUAI = global.LINGUAI = global.LINGUAI || {};
 
   /* Language code -> BCP-47 locale. "en" means American English. */
-  var LOCALE = { pl: "pl-PL", en: "en-US", es: "es-ES", fr: "fr-FR", de: "de-DE" };
-  var FALLBACK = "en";
+  var LOCALE = { it: "it-IT", en: "en-US", es: "es-ES", fr: "fr-FR", pl: "pl-PL" };
+  var FALLBACK = "it";
 
   /**
    * Languages of explanation. The name is always in the language it refers
@@ -33,11 +33,11 @@
    * plus a data/i18n/<code>/ directory.
    */
   var LANGS = [
-    { code: "pl", flag: "🇵🇱", name: "Polski" },
+    { code: "it", flag: "🇮🇹", name: "Italiano" },
     { code: "en", flag: "🇺🇸", name: "English" },
     { code: "es", flag: "🇪🇸", name: "Español" },
     { code: "fr", flag: "🇫🇷", name: "Français" },
-    { code: "de", flag: "🇩🇪", name: "Deutsch" }
+    { code: "pl", flag: "🇵🇱", name: "Polski" }
   ];
 
   /* ═══════════════════════════════════════════════════════════
@@ -46,7 +46,7 @@
 
   var ui = {};          // lang -> key -> string or plural forms
   var absent = {};      // keys that were missing — for I18n.missing()
-  var current = "pl";
+  var current = "it";
 
   /** Registers an interface dictionary. Called by data/i18n/ui-<lang>.js */
   function addUI(lang, dict) {

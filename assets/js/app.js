@@ -206,7 +206,7 @@
     var pierwszaWizyta = !zapisIstnieje();
     Core.load();
     /* A first visit takes the browser's language when the course has it:
-       the default (Polish) left everyone else facing a welcome they could not
+       the default (Italian) left everyone else facing a welcome they could not
        read. A saved choice always wins, so this runs only without a save. */
     if (pierwszaWizyta) {
       var zPrzegladarki = I18n.pickLang(global.navigator.languages || [global.navigator.language]);

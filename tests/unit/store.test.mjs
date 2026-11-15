@@ -61,6 +61,11 @@ function swiezy(opts) {
   return box;
 }
 
+test("a fresh profile explains in Italian, the reference language (R5, D10)", () => {
+  const box = swiezy();
+  assert.equal(box.Core.state.settings.lang, "it");
+});
+
 /** Storage that refuses to write with a given error. */
 function magazynOdmawiajacy(blad) {
   const bazowy = makeStorage();

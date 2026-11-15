@@ -49,7 +49,7 @@ LINGUAI.addUI("en", {
   /* ---------------- Accessibility ---------------- */
   "a11y.listen": "Listen",
   "a11y.listenTo": "Listen to {what}",
-  "audio.noItalianVoice": "No Italian voice on this system, so the sentence won't be read aloud. An English narrator reading Italian would teach you the wrong pronunciation. The course recordings work independently of this.",
+  "audio.noGermanVoice": "No Italian voice on this system, so the sentence won't be read aloud. An English narrator reading Italian would teach you the wrong pronunciation. The course recordings work independently of this.",
   "audio.recordingFailed": "The recording is in the index but the file could not be loaded. Check that the audio/ folder sits next to index.html and that the page is served from the same place.",
 
   /* ---------------- Learning path ---------------- */
@@ -579,20 +579,16 @@ LINGUAI.addUI("en", {
   "conj.reflexive": "reflexive",
 
   /* ---------------- Tense names ---------------- */
-  "tense.pres": "Present indicative",
-  "tense.passPross": "Present perfect",
-  "tense.imperf": "Imperfect",
-  "tense.trapPross": "Past perfect",
-  "tense.futuro": "Simple future",
-  "tense.futAnt": "Future perfect",
-  "tense.remoto": "Historic past",
-  "tense.condizionale": "Present conditional",
-  "tense.condPass": "Past conditional",
-  "tense.cong": "Present subjunctive",
-  "tense.congPass": "Past subjunctive",
-  "tense.congImp": "Imperfect subjunctive",
-  "tense.congTrap": "Pluperfect subjunctive",
-  "tense.imper": "Imperative",
+  "tense.praes": "Präsens (present)",
+  "tense.praet": "Präteritum (simple past)",
+  "tense.perf": "Perfekt (present perfect)",
+  "tense.plusq": "Plusquamperfekt (past perfect)",
+  "tense.fut1": "Futur I (future)",
+  "tense.fut2": "Futur II (future perfect)",
+  "tense.konj2": "Konjunktiv II (subjunctive II, conditional)",
+  "tense.konj2Verg": "Konjunktiv II Vergangenheit (past subjunctive II)",
+  "tense.konj1": "Konjunktiv I (subjunctive I, reported speech)",
+  "tense.imper": "Imperativ (imperative)",
 
   /* ---------------- My vocabulary ---------------- */
   "lex.kicker": "Vocabulary",

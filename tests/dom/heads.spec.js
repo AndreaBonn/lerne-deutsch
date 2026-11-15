@@ -46,3 +46,8 @@ test("narrowing the window after the render brings the button", async ({ page })
   await page.setViewportSize({ width: 375, height: 800 });
   await expect(page.locator(".view-head__more")).toBeVisible();
 });
+
+ test("lesson target-language text is marked as German", async ({ page }) => {
+  await page.goto("/index.html#/lezione?id=a1-u01-l1");
+  await expect(page.locator(".vocab-card__it[lang=de]").first()).toBeVisible();
+});

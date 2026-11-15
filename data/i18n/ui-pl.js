@@ -52,7 +52,7 @@ LINGUAI.addUI("pl", {
   /* ---------------- Dostępność ---------------- */
   "a11y.listen": "Posłuchaj",
   "a11y.listenTo": "Posłuchaj {what}",
-  "audio.noItalianVoice": "Brak włoskiego głosu w systemie: zdanie nie zostanie odczytane. Angielski lektor czytający po włosku nauczyłby złej wymowy. Nagrania kursu działają niezależnie od tego.",
+  "audio.noGermanVoice": "Brak włoskiego głosu w systemie: zdanie nie zostanie odczytane. Angielski lektor czytający po włosku nauczyłby złej wymowy. Nagrania kursu działają niezależnie od tego.",
   "audio.recordingFailed": "Nagranie jest w indeksie, ale plik się nie wczytał. Sprawdź, czy katalog audio/ jest obok index.html i czy strona jest serwowana z tego samego miejsca.",
 
   /* ---------------- Ścieżka nauki ---------------- */
@@ -590,20 +590,16 @@ LINGUAI.addUI("pl", {
   "conj.reflexive": "zwrotny",
 
   /* ---------------- Nazwy czasów ---------------- */
-  "tense.pres": "Czas teraźniejszy",
-  "tense.passPross": "Czas przeszły złożony",
-  "tense.imperf": "Imperfekt",
-  "tense.trapPross": "Czas zaprzeszły",
-  "tense.futuro": "Czas przyszły prosty",
-  "tense.futAnt": "Czas przyszły uprzedni",
-  "tense.remoto": "Czas przeszły odległy",
-  "tense.condizionale": "Tryb warunkowy teraźniejszy",
-  "tense.condPass": "Tryb warunkowy przeszły",
-  "tense.cong": "Tryb łączący teraźniejszy",
-  "tense.congPass": "Tryb łączący przeszły",
-  "tense.congImp": "Tryb łączący imperfekt",
-  "tense.congTrap": "Tryb łączący zaprzeszły",
-  "tense.imper": "Tryb rozkazujący",
+  "tense.praes": "Präsens (czas teraźniejszy)",
+  "tense.praet": "Präteritum (czas przeszły prosty)",
+  "tense.perf": "Perfekt (czas przeszły złożony)",
+  "tense.plusq": "Plusquamperfekt (czas zaprzeszły)",
+  "tense.fut1": "Futur I (czas przyszły)",
+  "tense.fut2": "Futur II (czas przyszły dokonany)",
+  "tense.konj2": "Konjunktiv II (tryb przypuszczający II)",
+  "tense.konj2Verg": "Konjunktiv II Vergangenheit (tryb przypuszczający II przeszły)",
+  "tense.konj1": "Konjunktiv I (tryb łączący I, mowa zależna)",
+  "tense.imper": "Imperativ (tryb rozkazujący)",
 
   /* ---------------- Mój słownik ---------------- */
   "lex.kicker": "Słownictwo",

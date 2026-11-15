@@ -55,7 +55,7 @@ LINGUAI.addUI("fr", {
   /* ---------------- Accessibilité ---------------- */
   "a11y.listen": "Écouter",
   "a11y.listenTo": "Écouter {what}",
-  "audio.noItalianVoice": "Aucune voix italienne sur ce système : la phrase ne sera pas lue. Un narrateur anglais lisant de l'italien t'apprendrait une mauvaise prononciation. Les enregistrements du cours fonctionnent indépendamment.",
+  "audio.noGermanVoice": "Aucune voix italienne sur ce système : la phrase ne sera pas lue. Un narrateur anglais lisant de l'italien t'apprendrait une mauvaise prononciation. Les enregistrements du cours fonctionnent indépendamment.",
   "audio.recordingFailed": "L'enregistrement est dans l'index mais le fichier n'a pas pu être chargé. Vérifie que le dossier audio/ est bien à côté d'index.html et que la page est servie depuis le même endroit.",
 
   /* ---------------- Parcours ---------------- */
@@ -589,20 +589,16 @@ LINGUAI.addUI("fr", {
   "conj.reflexive": "pronominal",
 
   /* ---------------- Noms des temps ---------------- */
-  "tense.pres": "Présent de l'indicatif",
-  "tense.passPross": "Passé composé",
-  "tense.imperf": "Imparfait",
-  "tense.trapPross": "Plus-que-parfait",
-  "tense.futuro": "Futur simple",
-  "tense.futAnt": "Futur antérieur",
-  "tense.remoto": "Passé simple",
-  "tense.condizionale": "Conditionnel présent",
-  "tense.condPass": "Conditionnel passé",
-  "tense.cong": "Subjonctif présent",
-  "tense.congPass": "Subjonctif passé",
-  "tense.congImp": "Subjonctif imparfait",
-  "tense.congTrap": "Subjonctif plus-que-parfait",
-  "tense.imper": "Impératif",
+  "tense.praes": "Präsens (présent)",
+  "tense.praet": "Präteritum (prétérit)",
+  "tense.perf": "Perfekt (passé composé)",
+  "tense.plusq": "Plusquamperfekt (plus-que-parfait)",
+  "tense.fut1": "Futur I (futur)",
+  "tense.fut2": "Futur II (futur antérieur)",
+  "tense.konj2": "Konjunktiv II (subjonctif II, conditionnel)",
+  "tense.konj2Verg": "Konjunktiv II Vergangenheit (subjonctif II passé)",
+  "tense.konj1": "Konjunktiv I (subjonctif I, discours indirect)",
+  "tense.imper": "Imperativ (impératif)",
 
   /* ---------------- Mon vocabulaire ---------------- */
   "lex.kicker": "Vocabulaire",

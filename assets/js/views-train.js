@@ -181,7 +181,7 @@
            that teaches the topic, and an unpassed one is said plainly. */
         var studied = Core.isLessonDone(topic.from);
         return '<div class="list-row train-row"><span class="list-row__main"><b>' + esc(topicLabel(topic.id)) + "</b>" +
-          '<span lang="it">' + esc(topic.sample) + "</span></span>" +
+          '<span lang="de">' + esc(topic.sample) + "</span></span>" +
           '<span class="chip chip--cefr train-level">' + esc(topic.from.slice(0, 2).toUpperCase()) + "</span>" +
           (studied ? "" : '<span class="chip train-notyet">' + esc(t("train.notYet")) + "</span>") +
           '<button class="btn btn--primary btn--sm js-topic" data-topic="' + esc(topic.id) + '">' +

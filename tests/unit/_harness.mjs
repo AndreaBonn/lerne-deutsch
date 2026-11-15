@@ -58,6 +58,12 @@ export const CORE = [
  */
 export const VERBS = ["assets/js/verbs-data.js", "assets/js/verbs.js"];
 
+export const UI = [
+  "assets/js/i18n.js",
+  "data/i18n/ui-it.js", "data/i18n/ui-en.js", "data/i18n/ui-es.js",
+  "data/i18n/ui-fr.js", "data/i18n/ui-pl.js"
+];
+
 /**
  * Lemmatisation: the rules of form before the verdict, the same order as in
  * index.html. lemma.js reads LemmaMorf at module execution.
@@ -266,7 +272,7 @@ function makeAudioEnv(opts) {
 
 /** A system voice for the `voices` list: as many fields as pickVoice() reads. */
 export function glos(name, lang) {
-  return { name: name, lang: lang || "it-IT" };
+  return { name: name, lang: lang || "de-DE" };
 }
 
 /**

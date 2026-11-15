@@ -118,7 +118,7 @@ test("the welcome strings exist in five languages", async ({ page }) => {
   await gotowe(page);
   const braki = await page.evaluate(async () => {
     const out = {};
-    for (const lang of ["pl", "en", "es", "fr", "de"]) {
+    for (const lang of ["pl", "en", "es", "fr", "it"]) {
       await new Promise(r => window.Core.setLanguage(lang, r));
       window.I18n.set(lang);
       window.App.go("benvenuto");
@@ -143,10 +143,10 @@ test.describe("a first visit from a French browser", () => {
 });
 
 test("a saved choice of language beats the browser", async ({ page }) => {
-  await zProfilem(page, { schema: 2, settings: { lang: "de" }, stats: { lessonsDone: 0, correct: 0, wrong: 0, days: {} } });
+  await zProfilem(page, { schema: 2, settings: { lang: "it" }, stats: { lessonsDone: 0, correct: 0, wrong: 0, days: {} } });
   await page.goto("/index.html");
   await gotowe(page);
-  expect(await page.evaluate(() => window.I18n.lang)).toBe("de");
+  expect(await page.evaluate(() => window.I18n.lang)).toBe("it");
 });
 
 /* On a phone the language switch is behind the menu: whoever lands in the

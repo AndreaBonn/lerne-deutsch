@@ -48,7 +48,7 @@
 
    A human raises "v35" when they want to name a release; the fingerprint
    is not their job. */
-var SW_VERSION = "v35.8f9b7590ff3f";
+var SW_VERSION = "v35.780e2b795bdb";
 
 var SHELL_CACHE = "impara-tedesco-shell-" + SW_VERSION;
 /* Recordings are content-addressed, so their cache survives a version change.
@@ -153,7 +153,7 @@ var PRECACHE = [
   "./data/i18n/ui-en.js",
   "./data/i18n/ui-es.js",
   "./data/i18n/ui-fr.js",
-  "./data/i18n/ui-de.js",
+  "./data/i18n/ui-it.js",
   "./data/core/curriculum-index.js",
   "./data/core/grammar-reference.js",
   "./data/core/conversations.js",
@@ -166,7 +166,6 @@ var PRECACHE = [
   "./data/i18n/en/interference.js",
   "./data/i18n/es/interference.js",
   "./data/i18n/fr/interference.js",
-  "./data/i18n/de/interference.js",
   "./data/core/frequenza.js",
   "./data/core/writing.js",
   "./assets/icons/icon-192.png",

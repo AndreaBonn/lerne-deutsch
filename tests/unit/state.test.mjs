@@ -38,7 +38,7 @@ describe("merge", () => {
     box.Core.load();
     const s = box.Core.state;
     assert.equal(s.settings.rate, 0.8, "the value from the saved state");
-    assert.equal(s.settings.lang, "pl", "the rest of the branch from the defaults");
+    assert.equal(s.settings.lang, "it", "the rest of the branch from the defaults");
     assert.equal(s.settings.autoplay, true);
   });
 

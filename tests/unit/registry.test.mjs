@@ -122,7 +122,7 @@ describe("fetching a level's data", () => {
     box.settleScripts();
     assert.deepEqual(box.scripts, [
       "data/core/a1-01.js", "data/core/a1-02.js",
-      "data/i18n/pl/a1-01.js", "data/i18n/pl/a1-02.js"
+      "data/i18n/it/a1-01.js", "data/i18n/it/a1-02.js"
     ]);
   });
 

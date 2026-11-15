@@ -41,7 +41,7 @@
   }
 
   function italianVoices() {
-    return voices.filter(function (v) { return /^it(-|_)/i.test(v.lang); });
+    return voices.filter(function (v) { return /^de(-|_)/i.test(v.lang); });
   }
 
   /** Ranking of system voices: neural ahead of formant. */
@@ -95,15 +95,15 @@
     var v = pickVoice();
     if (!v) {
       /*
-       * With no it-* voice the browser does NOT honour u.lang: it takes the
-       * default voice and reads the Italian sentence in English. For a
+       * With no de-* voice the browser does NOT honour u.lang: it takes the
+       * default voice and reads the German sentence in English. For a
        * pronunciation course that is worse than silence, because the student
        * repeats the very accent they are learning not to have.
        * The same decision as with the autoplay block below.
        */
       if (!warnedNoVoice) {
         warnedNoVoice = true;
-        try { Core.toast(I18n.t("audio.noItalianVoice")); } catch (e) { /* toast optional */ }
+        try { Core.toast(I18n.t("audio.noGermanVoice")); } catch (e) { /* toast optional */ }
       }
       opts.onend && opts.onend();
       return false;
@@ -249,7 +249,7 @@
     try { if (activeRec) activeRec.abort(); } catch (e) { /* nothing active */ }
 
     var rec = new SR();
-    rec.lang = "it-IT";
+    rec.lang = "de-DE";
     rec.interimResults = true;
     rec.maxAlternatives = 5;
     rec.continuous = false;
