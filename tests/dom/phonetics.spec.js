@@ -38,7 +38,7 @@ test("the set list shows the overlay titles, not the identifiers", async ({ page
 
 test("a set shows the contrastive note before the exercise", async ({ page }) => {
   await suoni(page);
-  await page.locator('.js-set[data-set="ph-doppie"]').click();
+  await page.locator('.js-set[data-set="ph-lang-kurz"]').click();
   await expect(page.locator(".card--contrast")).toBeVisible();
   const tekst = await page.locator(".card--contrast").innerText();
   expect(tekst.length, "the contrastive note must not be empty").toBeGreaterThan(80);
@@ -46,7 +46,7 @@ test("a set shows the contrastive note before the exercise", async ({ page }) =>
 
 test("the exercise refuses to check before anything is played", async ({ page }) => {
   await suoni(page);
-  await page.locator('.js-set[data-set="ph-doppie"]').click();
+  await page.locator('.js-set[data-set="ph-lang-kurz"]').click();
   await expect(page.locator(".exq")).toBeVisible();
 
   await page.locator(".exq .opt").first().click();
@@ -59,7 +59,7 @@ test("the exercise refuses to check before anything is played", async ({ page })
 
 test("after listening the answer is accepted and shows the glosses", async ({ page }) => {
   await suoni(page);
-  await page.locator('.js-set[data-set="ph-doppie"]').click();
+  await page.locator('.js-set[data-set="ph-lang-kurz"]').click();
   await expect(page.locator(".exq")).toBeVisible();
 
   await page.locator(".exq .js-play").click();
@@ -73,7 +73,7 @@ test("after listening the answer is accepted and shows the glosses", async ({ pa
 
 test("both options of the pair are shown and only one word is played", async ({ page }) => {
   await suoni(page);
-  await page.locator('.js-set[data-set="ph-gli"]').click();
+  await page.locator('.js-set[data-set="ph-lang-kurz"]').click();
   await expect(page.locator(".exq")).toBeVisible();
 
   const opcje = await page.locator(".exq .opt span").allInnerTexts();
@@ -83,7 +83,7 @@ test("both options of the pair are shown and only one word is played", async ({ 
 
 test("a mistake in discrimination reaches the mistake notebook", async ({ page }) => {
   await suoni(page);
-  await page.locator('.js-set[data-set="ph-doppie"]').click();
+  await page.locator('.js-set[data-set="ph-lang-kurz"]').click();
   await expect(page.locator(".exq")).toBeVisible();
 
   /* The exercise has something to choose from. Which option was NOT played

@@ -152,6 +152,34 @@ async function zProfilem(page, profil) {
   }, profil);
 }
 
+/**
+ * Only A1 is registered in the course now, so the tests that need a SECOND
+ * level register a fixture one: B1, one unit, one lesson, two German words
+ * with their glosses written inline. The level is announced by appending a
+ * registerLevel call to the real curriculum-index.js, and its data file is
+ * served by this handler: `opts.hold` (a promise) keeps the file back until
+ * it resolves, `opts.abort` makes the load fail.
+ */
+const B1_FIXTURE = 'LINGUAI.addUnits("B1", [{ id: "b1-u01", icon: "B", titleIt: "Fixture", lessons: [' +
+  '{ id: "b1-u01-l1", cefr: "B1", titleIt: "Fixture", tags: ["g-praesens"], vocab: [' +
+  '{ it: "die Verantwortung", tr: "odpowiedzialnosc", ex: "Ich trage die Verantwortung." },' +
+  '{ it: "der Zusammenhang", tr: "zwiazek", ex: "Das steht im Zusammenhang." }], exercises: [] }] }]);';
+
+async function zB1(page, opts) {
+  opts = opts || {};
+  await page.route("**/data/core/curriculum-index.js", async r => {
+    const res = await r.fetch();
+    await r.fulfill({ response: res, body: (await res.text()) +
+      '\nLINGUAI.registerLevel({ code: "B1", cefrLabel: "B1", dataFiles: ["b1-01.js"] });' });
+  });
+  await page.route("**/data/core/b1-01.js", async r => {
+    if (opts.abort) return r.abort();
+    if (opts.hold) await opts.hold;
+    await r.fulfill({ contentType: "application/javascript", body: B1_FIXTURE });
+  });
+  await page.route("**/data/i18n/*/b1-01.js", r => r.fulfill({ contentType: "application/javascript", body: "" }));
+}
+
 test("a new student with nothing due still gets a session, and only answered words join the deck", async ({ page }) => {
   await page.goto("/index.html#/cinque");
   await page.waitForSelector(".js-start");
@@ -197,6 +225,7 @@ test("the unit picker draws new words from the chosen unit and keeps it in the a
 });
 
 test("a finished B1 lesson: the level loads on a cold open and its words come up", async ({ page }) => {
+  await zB1(page);
   await zProfilem(page, { lessons: { "b1-u01-l1": { done: true, attempts: 1, best: 1 } } });
   await page.goto("/index.html#/cinque");
   await page.waitForFunction(() => window.Core && window.Core.registry.loaded.B1 === true);
@@ -209,8 +238,8 @@ test("a finished B1 lesson: the level loads on a cold open and its words come up
 });
 
 test("a level that fails to load is named on screen", async ({ page }) => {
+  await zB1(page, { abort: true });
   await zProfilem(page, { lessons: { "b1-u01-l1": { done: true, attempts: 1, best: 1 } } });
-  await page.route("**/data/core/b1-01.js", r => r.abort());
   await page.goto("/index.html#/cinque");
   await expect(page.locator(".toast").filter({ hasText: "B1" })).toBeVisible();
 });
@@ -223,13 +252,13 @@ test("an empty Reviews tab points to five minutes", async ({ page }) => {
 
 test("a level that finishes loading mid-session does not redraw over the card", async ({ page }) => {
   const teraz = Date.now();
-  await zProfilem(page, {
-    lessons: { "b1-u01-l1": { done: true, attempts: 1, best: 1 } },
-    srs: { "il gatto": { it: "il gatto", tr: { pl: "kot" }, src: "t", ef: 2.5, reps: 0, interval: 0, due: teraz - 1000, lapses: 0 } }
-  });
   let pusc;
   const wstrzymany = new Promise(r => { pusc = r; });
-  await page.route("**/data/core/b1-01.js", async r => { await wstrzymany; await r.continue(); });
+  await zB1(page, { hold: wstrzymany });
+  await zProfilem(page, {
+    lessons: { "b1-u01-l1": { done: true, attempts: 1, best: 1 } },
+    srs: { "die Katze": { it: "die Katze", tr: { pl: "kot" }, src: "t", ef: 2.5, reps: 0, interval: 0, due: teraz - 1000, lapses: 0 } }
+  });
   /* The held file is part of the page load, so "load" would never come. */
   await page.goto("/index.html#/cinque", { waitUntil: "domcontentloaded" });
   await page.waitForSelector(".js-start");
@@ -263,7 +292,7 @@ test("a level that lands after the student picked another unit keeps the student
   } });
   let pusc;
   const wstrzymany = new Promise(r => { pusc = r; });
-  await page.route("**/data/core/b1-01.js", async r => { await wstrzymany; await r.continue(); });
+  await zB1(page, { hold: wstrzymany });
   /* A1 first, on a screen that does not ask for B1: level scripts run in
      insertion order, so a held B1 file would otherwise hold A1 behind it. */
   await page.goto("/index.html#/percorso");

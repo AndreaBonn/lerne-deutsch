@@ -22,24 +22,23 @@ test("the list shows the tasks with their kind", async ({ page }) => {
 });
 
 test("a composition says up front which constructions it requires", async ({ page }) => {
-  await zadanie(page, "w-a2-giornata");
+  await zadanie(page, "w-a1-vorstellung");
   const ile = await page.evaluate(() => window.WRITING[0].requires.length);
   await expect(page.locator("#writeBox .card .list-row")).toHaveCount(ile);
   await expect(page.locator("#writeText")).toBeVisible();
 });
 
 test("the check reads what the student used and what they did not", async ({ page }) => {
-  test.skip(true, "rewrite in T1.82: this task still requires Italian course verbs");
-  await zadanie(page, "w-a2-giornata");
+  await zadanie(page, "w-a1-vorstellung");
   await page.locator("#writeText").fill(
-    "Di solito mi sveglio alle sette. Faccio colazione, poi esco di casa e vado in ufficio.");
+    "Guten Tag. Ich heiße Anna Rossi und ich komme aus Rom in Italien. Ich lerne gern Deutsch.");
   await page.locator(".js-check").click();
 
   const wynik = await page.evaluate(() => {
-    const zapis = window.Core.state.writing["w-a2-giornata"];
+    const zapis = window.Core.state.writing["w-a1-vorstellung"];
     return { found: zapis.found, total: zapis.total, words: zapis.words };
   });
-  /* "mi sveglio", "di solito" and "poi" are in the text; "lavorare" is not. */
+  /* "heiße", "komme" and the greeting "Guten Tag" are in the text; "wohne" is not. */
   expect(wynik.found).toBe(3);
   expect(wynik.total).toBe(4);
   expect(wynik.words).toBeGreaterThan(10);
@@ -68,8 +67,8 @@ test('German writing requirements show Präsens by default and detect verb brack
 
 /* The course has no marker and has no right to pretend it has one. */
 test("the result says plainly what was not checked", async ({ page }) => {
-  await zadanie(page, "w-a2-giornata");
-  await page.locator("#writeText").fill("Mi sveglio presto.");
+  await zadanie(page, "w-a1-vorstellung");
+  await page.locator("#writeText").fill("Hallo, ich heiße Anna.");
   await page.locator(".js-check").click();
 
   const nota = page.locator("#writeResult .card--contrast");
@@ -82,10 +81,10 @@ test("the result says plainly what was not checked", async ({ page }) => {
 });
 
 test("the model appears only after the check", async ({ page }) => {
-  await zadanie(page, "w-a2-giornata");
+  await zadanie(page, "w-a1-vorstellung");
   await expect(page.locator(".js-model")).toBeHidden();
 
-  await page.locator("#writeText").fill("Mi sveglio presto e lavoro.");
+  await page.locator("#writeText").fill("Hallo, ich heiße Anna und ich arbeite.");
   await page.locator(".js-check").click();
   await expect(page.locator(".js-model")).toBeVisible();
 
@@ -94,14 +93,14 @@ test("the model appears only after the check", async ({ page }) => {
 });
 
 test("the text comes back on re-entry", async ({ page }) => {
-  await zadanie(page, "w-a2-giornata");
-  await page.locator("#writeText").fill("Un testo che deve tornare.");
+  await zadanie(page, "w-a1-vorstellung");
+  await page.locator("#writeText").fill("Ein Text, der zurückkommen muss.");
   await page.locator(".js-check").click();
   await page.waitForTimeout(300);
 
   await page.reload();
   await page.waitForSelector("#writeText");
-  await expect(page.locator("#writeText")).toHaveValue("Un testo che deve tornare.");
+  await expect(page.locator("#writeText")).toHaveValue("Ein Text, der zurückkommen muss.");
 });
 
 /* The student's text leaves the application through the export and may enter
@@ -109,8 +108,8 @@ test("the text comes back on re-entry", async ({ page }) => {
    though the owner of the profile wrote it. It must never reach the DOM as
    HTML. */
 test("the student's text does not become markup", async ({ page }) => {
-  await zadanie(page, "w-a2-giornata");
-  const zlosliwy = '<img src=x onerror="window.__wstrzykniete=1"> ciao';
+  await zadanie(page, "w-a1-vorstellung");
+  const zlosliwy = '<img src=x onerror="window.__wstrzykniete=1"> hallo';
   await page.locator("#writeText").fill(zlosliwy);
   await page.locator(".js-check").click();
   await page.waitForTimeout(300);
@@ -125,21 +124,35 @@ test("the student's text does not become markup", async ({ page }) => {
 });
 
 test("the translation runs on ordinary exercises and counts the result", async ({ page }) => {
-  await zadanie(page, "w-a2-ieri");
-  const ile = await page.evaluate(() => window.WRITING.filter(w => w.id === "w-a2-ieri")[0].items.length);
+  /* The seed has no translate task: this one is a fixture, pushed the way the
+     German-contract test above pushes its compose task. */
+  await lista(page);
+  await page.evaluate(() => {
+    window.WRITING.push({ id: "w-fixture-translate", kind: "translate", cefr: "A1",
+      title: "Übersetzen", brief: "Übersetze.", checklist: [],
+      items: [
+        { q: "Mam na imię Anna.", a: ["Ich heiße Anna."] },
+        { q: "Mieszkam w Berlinie.", a: ["Ich wohne in Berlin."] },
+        { q: "Pochodzę z Włoch.", a: ["Ich komme aus Italien."] }
+      ] });
+    window.Views.scrittura({ id: "w-fixture-translate" });
+  });
+  await page.waitForSelector("#writeBox .exq");
+  const ile = 3;
   await expect(page.locator("#writeBox .exq")).toHaveCount(ile);
 
   /* The first sentence correct, the rest at random: what counts is reaching the end. */
-  const poprawna = await page.evaluate(() => window.WRITING.filter(w => w.id === "w-a2-ieri")[0].items[0].a[0]);
+  const poprawna = "Ich heiße Anna.";
   const pola = page.locator("#writeBox .exq .js-in");
   await pola.nth(0).fill(poprawna);
-  for (let i = 1; i < ile; i++) await pola.nth(i).fill("qualcosa");
+  for (let i = 1; i < ile; i++) await pola.nth(i).fill("irgendetwas");
   for (let i = 0; i < ile; i++) {
     const b = page.locator("#writeBox .exq .js-check").nth(i);
     if (await b.isEnabled()) await b.click();
     if (await b.isEnabled()) await b.click();
   }
   await expect(page.locator("#writeSum .summary")).toBeVisible();
+  await expect(page.locator("#writeSum .summary__score")).toHaveText("1/3");
 });
 
 test("the brief and the checklist exist in five languages", async ({ page }) => {
