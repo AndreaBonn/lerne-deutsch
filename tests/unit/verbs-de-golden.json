@@ -1,0 +1,1314 @@
+{
+  "machen": {
+    "praes": [
+      "mache",
+      "machst",
+      "macht",
+      "machen",
+      "macht",
+      "machen"
+    ],
+    "praet": [
+      "machte",
+      "machtest",
+      "machte",
+      "machten",
+      "machtet",
+      "machten"
+    ],
+    "perf": [
+      "habe gemacht",
+      "hast gemacht",
+      "hat gemacht",
+      "haben gemacht",
+      "habt gemacht",
+      "haben gemacht"
+    ],
+    "plusq": [
+      "hatte gemacht",
+      "hattest gemacht",
+      "hatte gemacht",
+      "hatten gemacht",
+      "hattet gemacht",
+      "hatten gemacht"
+    ],
+    "fut1": [
+      "werde machen",
+      "wirst machen",
+      "wird machen",
+      "werden machen",
+      "werdet machen",
+      "werden machen"
+    ],
+    "fut2": [
+      "werde gemacht haben",
+      "wirst gemacht haben",
+      "wird gemacht haben",
+      "werden gemacht haben",
+      "werdet gemacht haben",
+      "werden gemacht haben"
+    ],
+    "konj2": [
+      "würde machen",
+      "würdest machen",
+      "würde machen",
+      "würden machen",
+      "würdet machen",
+      "würden machen"
+    ],
+    "konj2Verg": [
+      "hätte gemacht",
+      "hättest gemacht",
+      "hätte gemacht",
+      "hätten gemacht",
+      "hättet gemacht",
+      "hätten gemacht"
+    ],
+    "konj1": [
+      "mache",
+      "machest",
+      "mache",
+      "machen",
+      "machet",
+      "machen"
+    ],
+    "imper": [
+      null,
+      "mach",
+      null,
+      "machen wir",
+      "macht",
+      "machen Sie"
+    ]
+  },
+  "arbeiten": {
+    "praes": [
+      "arbeite",
+      "arbeitest",
+      "arbeitet",
+      "arbeiten",
+      "arbeitet",
+      "arbeiten"
+    ],
+    "praet": [
+      "arbeitete",
+      "arbeitetest",
+      "arbeitete",
+      "arbeiteten",
+      "arbeitetet",
+      "arbeiteten"
+    ],
+    "perf": [
+      "habe gearbeitet",
+      "hast gearbeitet",
+      "hat gearbeitet",
+      "haben gearbeitet",
+      "habt gearbeitet",
+      "haben gearbeitet"
+    ],
+    "plusq": [
+      "hatte gearbeitet",
+      "hattest gearbeitet",
+      "hatte gearbeitet",
+      "hatten gearbeitet",
+      "hattet gearbeitet",
+      "hatten gearbeitet"
+    ],
+    "fut1": [
+      "werde arbeiten",
+      "wirst arbeiten",
+      "wird arbeiten",
+      "werden arbeiten",
+      "werdet arbeiten",
+      "werden arbeiten"
+    ],
+    "fut2": [
+      "werde gearbeitet haben",
+      "wirst gearbeitet haben",
+      "wird gearbeitet haben",
+      "werden gearbeitet haben",
+      "werdet gearbeitet haben",
+      "werden gearbeitet haben"
+    ],
+    "konj2": [
+      "würde arbeiten",
+      "würdest arbeiten",
+      "würde arbeiten",
+      "würden arbeiten",
+      "würdet arbeiten",
+      "würden arbeiten"
+    ],
+    "konj2Verg": [
+      "hätte gearbeitet",
+      "hättest gearbeitet",
+      "hätte gearbeitet",
+      "hätten gearbeitet",
+      "hättet gearbeitet",
+      "hätten gearbeitet"
+    ],
+    "konj1": [
+      "arbeite",
+      "arbeitest",
+      "arbeite",
+      "arbeiten",
+      "arbeitet",
+      "arbeiten"
+    ],
+    "imper": [
+      null,
+      "arbeite",
+      null,
+      "arbeiten wir",
+      "arbeitet",
+      "arbeiten Sie"
+    ]
+  },
+  "tanzen": {
+    "praes": [
+      "tanze",
+      "tanzt",
+      "tanzt",
+      "tanzen",
+      "tanzt",
+      "tanzen"
+    ],
+    "praet": [
+      "tanzte",
+      "tanztest",
+      "tanzte",
+      "tanzten",
+      "tanztet",
+      "tanzten"
+    ],
+    "perf": [
+      "habe getanzt",
+      "hast getanzt",
+      "hat getanzt",
+      "haben getanzt",
+      "habt getanzt",
+      "haben getanzt"
+    ],
+    "plusq": [
+      "hatte getanzt",
+      "hattest getanzt",
+      "hatte getanzt",
+      "hatten getanzt",
+      "hattet getanzt",
+      "hatten getanzt"
+    ],
+    "fut1": [
+      "werde tanzen",
+      "wirst tanzen",
+      "wird tanzen",
+      "werden tanzen",
+      "werdet tanzen",
+      "werden tanzen"
+    ],
+    "fut2": [
+      "werde getanzt haben",
+      "wirst getanzt haben",
+      "wird getanzt haben",
+      "werden getanzt haben",
+      "werdet getanzt haben",
+      "werden getanzt haben"
+    ],
+    "konj2": [
+      "würde tanzen",
+      "würdest tanzen",
+      "würde tanzen",
+      "würden tanzen",
+      "würdet tanzen",
+      "würden tanzen"
+    ],
+    "konj2Verg": [
+      "hätte getanzt",
+      "hättest getanzt",
+      "hätte getanzt",
+      "hätten getanzt",
+      "hättet getanzt",
+      "hätten getanzt"
+    ],
+    "konj1": [
+      "tanze",
+      "tanzest",
+      "tanze",
+      "tanzen",
+      "tanzet",
+      "tanzen"
+    ],
+    "imper": [
+      null,
+      "tanz",
+      null,
+      "tanzen wir",
+      "tanzt",
+      "tanzen Sie"
+    ]
+  },
+  "wandern": {
+    "praes": [
+      "wandere",
+      "wanderst",
+      "wandert",
+      "wandern",
+      "wandert",
+      "wandern"
+    ],
+    "praet": [
+      "wanderte",
+      "wandertest",
+      "wanderte",
+      "wanderten",
+      "wandertet",
+      "wanderten"
+    ],
+    "perf": [
+      "bin gewandert",
+      "bist gewandert",
+      "ist gewandert",
+      "sind gewandert",
+      "seid gewandert",
+      "sind gewandert"
+    ],
+    "plusq": [
+      "war gewandert",
+      "warst gewandert",
+      "war gewandert",
+      "waren gewandert",
+      "wart gewandert",
+      "waren gewandert"
+    ],
+    "fut1": [
+      "werde wandern",
+      "wirst wandern",
+      "wird wandern",
+      "werden wandern",
+      "werdet wandern",
+      "werden wandern"
+    ],
+    "fut2": [
+      "werde gewandert sein",
+      "wirst gewandert sein",
+      "wird gewandert sein",
+      "werden gewandert sein",
+      "werdet gewandert sein",
+      "werden gewandert sein"
+    ],
+    "konj2": [
+      "würde wandern",
+      "würdest wandern",
+      "würde wandern",
+      "würden wandern",
+      "würdet wandern",
+      "würden wandern"
+    ],
+    "konj2Verg": [
+      "wäre gewandert",
+      "wärest gewandert",
+      "wäre gewandert",
+      "wären gewandert",
+      "wäret gewandert",
+      "wären gewandert"
+    ],
+    "konj1": [
+      "wandere",
+      "wanderst",
+      "wandere",
+      "wandern",
+      "wandert",
+      "wandern"
+    ],
+    "imper": [
+      null,
+      "wandere",
+      null,
+      "wandern wir",
+      "wandert",
+      "wandern Sie"
+    ]
+  },
+  "fahren": {
+    "praes": [
+      "fahre",
+      "fährst",
+      "fährt",
+      "fahren",
+      "fahrt",
+      "fahren"
+    ],
+    "praet": [
+      "fuhr",
+      "fuhrst",
+      "fuhr",
+      "fuhren",
+      "fuhrt",
+      "fuhren"
+    ],
+    "perf": [
+      "bin gefahren",
+      "bist gefahren",
+      "ist gefahren",
+      "sind gefahren",
+      "seid gefahren",
+      "sind gefahren"
+    ],
+    "plusq": [
+      "war gefahren",
+      "warst gefahren",
+      "war gefahren",
+      "waren gefahren",
+      "wart gefahren",
+      "waren gefahren"
+    ],
+    "fut1": [
+      "werde fahren",
+      "wirst fahren",
+      "wird fahren",
+      "werden fahren",
+      "werdet fahren",
+      "werden fahren"
+    ],
+    "fut2": [
+      "werde gefahren sein",
+      "wirst gefahren sein",
+      "wird gefahren sein",
+      "werden gefahren sein",
+      "werdet gefahren sein",
+      "werden gefahren sein"
+    ],
+    "konj2": [
+      "führe",
+      "führest",
+      "führe",
+      "führen",
+      "führet",
+      "führen"
+    ],
+    "konj2Verg": [
+      "wäre gefahren",
+      "wärest gefahren",
+      "wäre gefahren",
+      "wären gefahren",
+      "wäret gefahren",
+      "wären gefahren"
+    ],
+    "konj1": [
+      "fahre",
+      "fahrest",
+      "fahre",
+      "fahren",
+      "fahret",
+      "fahren"
+    ],
+    "imper": [
+      null,
+      "fahr",
+      null,
+      "fahren wir",
+      "fahrt",
+      "fahren Sie"
+    ]
+  },
+  "nehmen": {
+    "praes": [
+      "nehme",
+      "nimmst",
+      "nimmt",
+      "nehmen",
+      "nehmt",
+      "nehmen"
+    ],
+    "praet": [
+      "nahm",
+      "nahmst",
+      "nahm",
+      "nahmen",
+      "nahmt",
+      "nahmen"
+    ],
+    "perf": [
+      "habe genommen",
+      "hast genommen",
+      "hat genommen",
+      "haben genommen",
+      "habt genommen",
+      "haben genommen"
+    ],
+    "plusq": [
+      "hatte genommen",
+      "hattest genommen",
+      "hatte genommen",
+      "hatten genommen",
+      "hattet genommen",
+      "hatten genommen"
+    ],
+    "fut1": [
+      "werde nehmen",
+      "wirst nehmen",
+      "wird nehmen",
+      "werden nehmen",
+      "werdet nehmen",
+      "werden nehmen"
+    ],
+    "fut2": [
+      "werde genommen haben",
+      "wirst genommen haben",
+      "wird genommen haben",
+      "werden genommen haben",
+      "werdet genommen haben",
+      "werden genommen haben"
+    ],
+    "konj2": [
+      "nähme",
+      "nähmest",
+      "nähme",
+      "nähmen",
+      "nähmet",
+      "nähmen"
+    ],
+    "konj2Verg": [
+      "hätte genommen",
+      "hättest genommen",
+      "hätte genommen",
+      "hätten genommen",
+      "hättet genommen",
+      "hätten genommen"
+    ],
+    "konj1": [
+      "nehme",
+      "nehmest",
+      "nehme",
+      "nehmen",
+      "nehmet",
+      "nehmen"
+    ],
+    "imper": [
+      null,
+      "nimm",
+      null,
+      "nehmen wir",
+      "nehmt",
+      "nehmen Sie"
+    ]
+  },
+  "sein": {
+    "praes": [
+      "bin",
+      "bist",
+      "ist",
+      "sind",
+      "seid",
+      "sind"
+    ],
+    "praet": [
+      "war",
+      "warst",
+      "war",
+      "waren",
+      "wart",
+      "waren"
+    ],
+    "perf": [
+      "bin gewesen",
+      "bist gewesen",
+      "ist gewesen",
+      "sind gewesen",
+      "seid gewesen",
+      "sind gewesen"
+    ],
+    "plusq": [
+      "war gewesen",
+      "warst gewesen",
+      "war gewesen",
+      "waren gewesen",
+      "wart gewesen",
+      "waren gewesen"
+    ],
+    "fut1": [
+      "werde sein",
+      "wirst sein",
+      "wird sein",
+      "werden sein",
+      "werdet sein",
+      "werden sein"
+    ],
+    "fut2": [
+      "werde gewesen sein",
+      "wirst gewesen sein",
+      "wird gewesen sein",
+      "werden gewesen sein",
+      "werdet gewesen sein",
+      "werden gewesen sein"
+    ],
+    "konj2": [
+      "wäre",
+      "wärest",
+      "wäre",
+      "wären",
+      "wäret",
+      "wären"
+    ],
+    "konj2Verg": [
+      "wäre gewesen",
+      "wärest gewesen",
+      "wäre gewesen",
+      "wären gewesen",
+      "wäret gewesen",
+      "wären gewesen"
+    ],
+    "konj1": [
+      "sei",
+      "seiest",
+      "sei",
+      "seien",
+      "seiet",
+      "seien"
+    ],
+    "imper": [
+      null,
+      "sei",
+      null,
+      "seien wir",
+      "seid",
+      "seien Sie"
+    ]
+  },
+  "haben": {
+    "praes": [
+      "habe",
+      "hast",
+      "hat",
+      "haben",
+      "habt",
+      "haben"
+    ],
+    "praet": [
+      "hatte",
+      "hattest",
+      "hatte",
+      "hatten",
+      "hattet",
+      "hatten"
+    ],
+    "perf": [
+      "habe gehabt",
+      "hast gehabt",
+      "hat gehabt",
+      "haben gehabt",
+      "habt gehabt",
+      "haben gehabt"
+    ],
+    "plusq": [
+      "hatte gehabt",
+      "hattest gehabt",
+      "hatte gehabt",
+      "hatten gehabt",
+      "hattet gehabt",
+      "hatten gehabt"
+    ],
+    "fut1": [
+      "werde haben",
+      "wirst haben",
+      "wird haben",
+      "werden haben",
+      "werdet haben",
+      "werden haben"
+    ],
+    "fut2": [
+      "werde gehabt haben",
+      "wirst gehabt haben",
+      "wird gehabt haben",
+      "werden gehabt haben",
+      "werdet gehabt haben",
+      "werden gehabt haben"
+    ],
+    "konj2": [
+      "hätte",
+      "hättest",
+      "hätte",
+      "hätten",
+      "hättet",
+      "hätten"
+    ],
+    "konj2Verg": [
+      "hätte gehabt",
+      "hättest gehabt",
+      "hätte gehabt",
+      "hätten gehabt",
+      "hättet gehabt",
+      "hätten gehabt"
+    ],
+    "konj1": [
+      "habe",
+      "habest",
+      "habe",
+      "haben",
+      "habet",
+      "haben"
+    ],
+    "imper": [
+      null,
+      "hab",
+      null,
+      "haben wir",
+      "habt",
+      "haben Sie"
+    ]
+  },
+  "werden": {
+    "praes": [
+      "werde",
+      "wirst",
+      "wird",
+      "werden",
+      "werdet",
+      "werden"
+    ],
+    "praet": [
+      "wurde",
+      "wurdest",
+      "wurde",
+      "wurden",
+      "wurdet",
+      "wurden"
+    ],
+    "perf": [
+      "bin geworden",
+      "bist geworden",
+      "ist geworden",
+      "sind geworden",
+      "seid geworden",
+      "sind geworden"
+    ],
+    "plusq": [
+      "war geworden",
+      "warst geworden",
+      "war geworden",
+      "waren geworden",
+      "wart geworden",
+      "waren geworden"
+    ],
+    "fut1": [
+      "werde werden",
+      "wirst werden",
+      "wird werden",
+      "werden werden",
+      "werdet werden",
+      "werden werden"
+    ],
+    "fut2": [
+      "werde geworden sein",
+      "wirst geworden sein",
+      "wird geworden sein",
+      "werden geworden sein",
+      "werdet geworden sein",
+      "werden geworden sein"
+    ],
+    "konj2": [
+      "würde",
+      "würdest",
+      "würde",
+      "würden",
+      "würdet",
+      "würden"
+    ],
+    "konj2Verg": [
+      "wäre geworden",
+      "wärest geworden",
+      "wäre geworden",
+      "wären geworden",
+      "wäret geworden",
+      "wären geworden"
+    ],
+    "konj1": [
+      "werde",
+      "werdest",
+      "werde",
+      "werden",
+      "werdet",
+      "werden"
+    ],
+    "imper": [
+      null,
+      "werde",
+      null,
+      "werden wir",
+      "werdet",
+      "werden Sie"
+    ]
+  },
+  "können": {
+    "praes": [
+      "kann",
+      "kannst",
+      "kann",
+      "können",
+      "könnt",
+      "können"
+    ],
+    "praet": [
+      "konnte",
+      "konntest",
+      "konnte",
+      "konnten",
+      "konntet",
+      "konnten"
+    ],
+    "perf": [
+      "habe gekonnt",
+      "hast gekonnt",
+      "hat gekonnt",
+      "haben gekonnt",
+      "habt gekonnt",
+      "haben gekonnt"
+    ],
+    "plusq": [
+      "hatte gekonnt",
+      "hattest gekonnt",
+      "hatte gekonnt",
+      "hatten gekonnt",
+      "hattet gekonnt",
+      "hatten gekonnt"
+    ],
+    "fut1": [
+      "werde können",
+      "wirst können",
+      "wird können",
+      "werden können",
+      "werdet können",
+      "werden können"
+    ],
+    "fut2": [
+      "werde gekonnt haben",
+      "wirst gekonnt haben",
+      "wird gekonnt haben",
+      "werden gekonnt haben",
+      "werdet gekonnt haben",
+      "werden gekonnt haben"
+    ],
+    "konj2": [
+      "könnte",
+      "könntest",
+      "könnte",
+      "könnten",
+      "könntet",
+      "könnten"
+    ],
+    "konj2Verg": [
+      "hätte gekonnt",
+      "hättest gekonnt",
+      "hätte gekonnt",
+      "hätten gekonnt",
+      "hättet gekonnt",
+      "hätten gekonnt"
+    ],
+    "konj1": [
+      "könne",
+      "könnest",
+      "könne",
+      "können",
+      "könnet",
+      "können"
+    ],
+    "imper": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "wissen": {
+    "praes": [
+      "weiß",
+      "weißt",
+      "weiß",
+      "wissen",
+      "wisst",
+      "wissen"
+    ],
+    "praet": [
+      "wusste",
+      "wusstest",
+      "wusste",
+      "wussten",
+      "wusstet",
+      "wussten"
+    ],
+    "perf": [
+      "habe gewusst",
+      "hast gewusst",
+      "hat gewusst",
+      "haben gewusst",
+      "habt gewusst",
+      "haben gewusst"
+    ],
+    "plusq": [
+      "hatte gewusst",
+      "hattest gewusst",
+      "hatte gewusst",
+      "hatten gewusst",
+      "hattet gewusst",
+      "hatten gewusst"
+    ],
+    "fut1": [
+      "werde wissen",
+      "wirst wissen",
+      "wird wissen",
+      "werden wissen",
+      "werdet wissen",
+      "werden wissen"
+    ],
+    "fut2": [
+      "werde gewusst haben",
+      "wirst gewusst haben",
+      "wird gewusst haben",
+      "werden gewusst haben",
+      "werdet gewusst haben",
+      "werden gewusst haben"
+    ],
+    "konj2": [
+      "wüsste",
+      "wüsstest",
+      "wüsste",
+      "wüssten",
+      "wüsstet",
+      "wüssten"
+    ],
+    "konj2Verg": [
+      "hätte gewusst",
+      "hättest gewusst",
+      "hätte gewusst",
+      "hätten gewusst",
+      "hättet gewusst",
+      "hätten gewusst"
+    ],
+    "konj1": [
+      "wisse",
+      "wissest",
+      "wisse",
+      "wissen",
+      "wisset",
+      "wissen"
+    ],
+    "imper": [
+      null,
+      "wisse",
+      null,
+      "wissen wir",
+      "wisst",
+      "wissen Sie"
+    ]
+  },
+  "aufstehen": {
+    "praes": [
+      "stehe auf",
+      "stehst auf",
+      "steht auf",
+      "stehen auf",
+      "steht auf",
+      "stehen auf"
+    ],
+    "praet": [
+      "stand auf",
+      "standest auf",
+      "stand auf",
+      "standen auf",
+      "standet auf",
+      "standen auf"
+    ],
+    "perf": [
+      "bin aufgestanden",
+      "bist aufgestanden",
+      "ist aufgestanden",
+      "sind aufgestanden",
+      "seid aufgestanden",
+      "sind aufgestanden"
+    ],
+    "plusq": [
+      "war aufgestanden",
+      "warst aufgestanden",
+      "war aufgestanden",
+      "waren aufgestanden",
+      "wart aufgestanden",
+      "waren aufgestanden"
+    ],
+    "fut1": [
+      "werde aufstehen",
+      "wirst aufstehen",
+      "wird aufstehen",
+      "werden aufstehen",
+      "werdet aufstehen",
+      "werden aufstehen"
+    ],
+    "fut2": [
+      "werde aufgestanden sein",
+      "wirst aufgestanden sein",
+      "wird aufgestanden sein",
+      "werden aufgestanden sein",
+      "werdet aufgestanden sein",
+      "werden aufgestanden sein"
+    ],
+    "konj2": [
+      "stünde auf",
+      "stündest auf",
+      "stünde auf",
+      "stünden auf",
+      "stündet auf",
+      "stünden auf"
+    ],
+    "konj2Verg": [
+      "wäre aufgestanden",
+      "wärest aufgestanden",
+      "wäre aufgestanden",
+      "wären aufgestanden",
+      "wäret aufgestanden",
+      "wären aufgestanden"
+    ],
+    "konj1": [
+      "stehe auf",
+      "stehest auf",
+      "stehe auf",
+      "stehen auf",
+      "stehet auf",
+      "stehen auf"
+    ],
+    "imper": [
+      null,
+      "steh auf",
+      null,
+      "stehen wir auf",
+      "steht auf",
+      "stehen Sie auf"
+    ]
+  },
+  "sich waschen": {
+    "praes": [
+      "wasche mich",
+      "wäschst dich",
+      "wäscht sich",
+      "waschen uns",
+      "wascht euch",
+      "waschen sich"
+    ],
+    "praet": [
+      "wusch mich",
+      "wuschest dich",
+      "wusch sich",
+      "wuschen uns",
+      "wuscht euch",
+      "wuschen sich"
+    ],
+    "perf": [
+      "habe mich gewaschen",
+      "hast dich gewaschen",
+      "hat sich gewaschen",
+      "haben uns gewaschen",
+      "habt euch gewaschen",
+      "haben sich gewaschen"
+    ],
+    "plusq": [
+      "hatte mich gewaschen",
+      "hattest dich gewaschen",
+      "hatte sich gewaschen",
+      "hatten uns gewaschen",
+      "hattet euch gewaschen",
+      "hatten sich gewaschen"
+    ],
+    "fut1": [
+      "werde mich waschen",
+      "wirst dich waschen",
+      "wird sich waschen",
+      "werden uns waschen",
+      "werdet euch waschen",
+      "werden sich waschen"
+    ],
+    "fut2": [
+      "werde mich gewaschen haben",
+      "wirst dich gewaschen haben",
+      "wird sich gewaschen haben",
+      "werden uns gewaschen haben",
+      "werdet euch gewaschen haben",
+      "werden sich gewaschen haben"
+    ],
+    "konj2": [
+      "wüsche mich",
+      "wüschest dich",
+      "wüsche sich",
+      "wüschen uns",
+      "wüschet euch",
+      "wüschen sich"
+    ],
+    "konj2Verg": [
+      "hätte mich gewaschen",
+      "hättest dich gewaschen",
+      "hätte sich gewaschen",
+      "hätten uns gewaschen",
+      "hättet euch gewaschen",
+      "hätten sich gewaschen"
+    ],
+    "konj1": [
+      "wasche mich",
+      "waschest dich",
+      "wasche sich",
+      "waschen uns",
+      "waschet euch",
+      "waschen sich"
+    ],
+    "imper": [
+      null,
+      "wasch dich",
+      null,
+      "waschen wir uns",
+      "wascht euch",
+      "waschen Sie sich"
+    ]
+  },
+  "studieren": {
+    "praes": [
+      "studiere",
+      "studierst",
+      "studiert",
+      "studieren",
+      "studiert",
+      "studieren"
+    ],
+    "praet": [
+      "studierte",
+      "studiertest",
+      "studierte",
+      "studierten",
+      "studiertet",
+      "studierten"
+    ],
+    "perf": [
+      "habe studiert",
+      "hast studiert",
+      "hat studiert",
+      "haben studiert",
+      "habt studiert",
+      "haben studiert"
+    ],
+    "plusq": [
+      "hatte studiert",
+      "hattest studiert",
+      "hatte studiert",
+      "hatten studiert",
+      "hattet studiert",
+      "hatten studiert"
+    ],
+    "fut1": [
+      "werde studieren",
+      "wirst studieren",
+      "wird studieren",
+      "werden studieren",
+      "werdet studieren",
+      "werden studieren"
+    ],
+    "fut2": [
+      "werde studiert haben",
+      "wirst studiert haben",
+      "wird studiert haben",
+      "werden studiert haben",
+      "werdet studiert haben",
+      "werden studiert haben"
+    ],
+    "konj2": [
+      "würde studieren",
+      "würdest studieren",
+      "würde studieren",
+      "würden studieren",
+      "würdet studieren",
+      "würden studieren"
+    ],
+    "konj2Verg": [
+      "hätte studiert",
+      "hättest studiert",
+      "hätte studiert",
+      "hätten studiert",
+      "hättet studiert",
+      "hätten studiert"
+    ],
+    "konj1": [
+      "studiere",
+      "studierest",
+      "studiere",
+      "studieren",
+      "studieret",
+      "studieren"
+    ],
+    "imper": [
+      null,
+      "studier",
+      null,
+      "studieren wir",
+      "studiert",
+      "studieren Sie"
+    ]
+  },
+  "besuchen": {
+    "praes": [
+      "besuche",
+      "besuchst",
+      "besucht",
+      "besuchen",
+      "besucht",
+      "besuchen"
+    ],
+    "praet": [
+      "besuchte",
+      "besuchtest",
+      "besuchte",
+      "besuchten",
+      "besuchtet",
+      "besuchten"
+    ],
+    "perf": [
+      "habe besucht",
+      "hast besucht",
+      "hat besucht",
+      "haben besucht",
+      "habt besucht",
+      "haben besucht"
+    ],
+    "plusq": [
+      "hatte besucht",
+      "hattest besucht",
+      "hatte besucht",
+      "hatten besucht",
+      "hattet besucht",
+      "hatten besucht"
+    ],
+    "fut1": [
+      "werde besuchen",
+      "wirst besuchen",
+      "wird besuchen",
+      "werden besuchen",
+      "werdet besuchen",
+      "werden besuchen"
+    ],
+    "fut2": [
+      "werde besucht haben",
+      "wirst besucht haben",
+      "wird besucht haben",
+      "werden besucht haben",
+      "werdet besucht haben",
+      "werden besucht haben"
+    ],
+    "konj2": [
+      "würde besuchen",
+      "würdest besuchen",
+      "würde besuchen",
+      "würden besuchen",
+      "würdet besuchen",
+      "würden besuchen"
+    ],
+    "konj2Verg": [
+      "hätte besucht",
+      "hättest besucht",
+      "hätte besucht",
+      "hätten besucht",
+      "hättet besucht",
+      "hätten besucht"
+    ],
+    "konj1": [
+      "besuche",
+      "besuchest",
+      "besuche",
+      "besuchen",
+      "besuchet",
+      "besuchen"
+    ],
+    "imper": [
+      null,
+      "besuch",
+      null,
+      "besuchen wir",
+      "besucht",
+      "besuchen Sie"
+    ]
+  },
+  "bringen": {
+    "praes": [
+      "bringe",
+      "bringst",
+      "bringt",
+      "bringen",
+      "bringt",
+      "bringen"
+    ],
+    "praet": [
+      "brachte",
+      "brachtest",
+      "brachte",
+      "brachten",
+      "brachtet",
+      "brachten"
+    ],
+    "perf": [
+      "habe gebracht",
+      "hast gebracht",
+      "hat gebracht",
+      "haben gebracht",
+      "habt gebracht",
+      "haben gebracht"
+    ],
+    "plusq": [
+      "hatte gebracht",
+      "hattest gebracht",
+      "hatte gebracht",
+      "hatten gebracht",
+      "hattet gebracht",
+      "hatten gebracht"
+    ],
+    "fut1": [
+      "werde bringen",
+      "wirst bringen",
+      "wird bringen",
+      "werden bringen",
+      "werdet bringen",
+      "werden bringen"
+    ],
+    "fut2": [
+      "werde gebracht haben",
+      "wirst gebracht haben",
+      "wird gebracht haben",
+      "werden gebracht haben",
+      "werdet gebracht haben",
+      "werden gebracht haben"
+    ],
+    "konj2": [
+      "brächte",
+      "brächtest",
+      "brächte",
+      "brächten",
+      "brächtet",
+      "brächten"
+    ],
+    "konj2Verg": [
+      "hätte gebracht",
+      "hättest gebracht",
+      "hätte gebracht",
+      "hätten gebracht",
+      "hättet gebracht",
+      "hätten gebracht"
+    ],
+    "konj1": [
+      "bringe",
+      "bringest",
+      "bringe",
+      "bringen",
+      "bringet",
+      "bringen"
+    ],
+    "imper": [
+      null,
+      "bring",
+      null,
+      "bringen wir",
+      "bringt",
+      "bringen Sie"
+    ]
+  }
+}

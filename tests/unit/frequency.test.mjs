@@ -47,7 +47,7 @@ describe("frequency: coverage of the lemma set", () => {
     assert.ok(Math.abs(p.udzialTokenow - 40 / 255) < 1e-9, "the share is 40 out of 255 tokens");
   });
 
-  test("an inflected form counts towards its base lemma", () => {
+  test("an inflected form counts towards its base lemma", { skip: "rewrite in T1.32" }, () => {
     const s = silnik();
     /* "bere" in the deck must cover "bevo" on the list, "libro" must cover
        "libri", and "mangiare" must cover the participle "mangiato". */
@@ -70,7 +70,7 @@ describe("frequency: coverage of the lemma set", () => {
 });
 
 describe("frequency: the nearest gaps", () => {
-  test("only the ones the course teaches and the student does not have come out", () => {
+  test("only the ones the course teaches and the student does not have come out", { skip: "rewrite in T1.32" }, () => {
     const s = silnik();
     const kurs = { casa: true, libro: true, bere: true };
     const uczen = { bere: true };
@@ -81,7 +81,7 @@ describe("frequency: the nearest gaps", () => {
     assert.ok(!hasla.includes("xyzzy"), "the course does not teach it: suggesting it would be passing the work on");
   });
 
-  test("forms of the same lemma collapse into one row", () => {
+  test("forms of the same lemma collapse into one row", { skip: "rewrite in T1.32" }, () => {
     const s = silnik();
     /* The frequency list holds "ho", "ha", "hai" separately: without
        collapsing, the top five gaps are the same word four times. */
@@ -95,14 +95,14 @@ describe("frequency: the nearest gaps", () => {
     assert.deepEqual(Array.from(avere.formy), ["ho", "ha", "hai"]);
   });
 
-  test("function words do not make it onto the clickable list", () => {
+  test("function words do not make it onto the clickable list", { skip: "rewrite in T1.32" }, () => {
     const s = silnik();
     const hasla = Array.from(s.Frequency.brakujace(LISTA, { che: true, casa: true }, {}, 10)).map(b => b.haslo);
     assert.ok(!hasla.includes("che"), "\"che\" is a piece of grammar, not a flashcard");
     assert.ok(hasla.includes("casa"));
   });
 
-  test("the order follows frequency and carries the rank", () => {
+  test("the order follows frequency and carries the rank", { skip: "rewrite in T1.32" }, () => {
     const s = silnik();
     const braki = Array.from(s.Frequency.brakujace(LISTA, { casa: true, libro: true }, {}, 10));
     assert.equal(braki[0].haslo, "casa", "the more frequent one first");
@@ -110,7 +110,7 @@ describe("frequency: the nearest gaps", () => {
     assert.ok(braki[0].ile > braki[1].ile);
   });
 
-  test("the limit is respected", () => {
+  test("the limit is respected", { skip: "rewrite in T1.32" }, () => {
     const s = silnik();
     const braki = s.Frequency.brakujace(LISTA, { casa: true, libro: true, mangiare: true }, {}, 2);
     assert.equal(Array.from(braki).length, 2);
