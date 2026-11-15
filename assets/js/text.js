@@ -14,10 +14,12 @@
 (function (global) {
   "use strict";
 
-  var ACCENT_MAP = { "à": "a", "á": "a", "è": "e", "é": "e", "ì": "i", "í": "i", "ò": "o", "ó": "o", "ù": "u", "ú": "u" };
+  var UMLAUT_MAP = { "ä": "a", "ö": "o", "ü": "u" };
+  var TRANSCRIPTIONS = { "ä": "ae", "ö": "oe", "ü": "ue", "ß": "ss" };
+  var NEAR_THRESHOLD = 0.85;
 
   function stripAccents(s) {
-    return s.replace(/[àáèéìíòóùú]/g, function (c) { return ACCENT_MAP[c] || c; });
+    return s.replace(/[äöü]/g, function (c) { return UMLAUT_MAP[c]; });
   }
 
   /**
@@ -48,12 +50,11 @@
   function norm(s, opts) {
     opts = opts || {};
     var t = detypo(s)
-      .toLowerCase()
       .replace(/[.,;:!?…"()[\]]/g, " ")
       .replace(/\s*'\s*/g, "'")
       .replace(/\s+/g, " ")
       .trim();
-    if (!opts.keepAccents) t = stripAccents(t);
+    if (!opts.keepCase) t = t.toLowerCase();
     return t;
   }
 
@@ -82,21 +83,45 @@
     return Math.max(0, 1 - d / Math.max(x.length, y.length));
   }
 
-  /**
-   * Checks an open answer against a list of accepted variants.
-   * Returns {ok, near, best} — "near" means a typo (similarity >= 0.85).
-   */
-  function checkOpen(input, accepted, strictAccents) {
-    var list = Array.isArray(accepted) ? accepted : [accepted];
-    var given = norm(input, { keepAccents: !!strictAccents });
-    var best = null, bestSim = 0, ok = false;
-    for (var i = 0; i < list.length; i++) {
-      var target = norm(list[i], { keepAccents: !!strictAccents });
-      if (given === target) { ok = true; best = list[i]; bestSim = 1; break; }
-      var sim = similarity(given, target);
-      if (sim > bestSim) { bestSim = sim; best = list[i]; }
+  /** Accept only transcriptions derived from the expected spelling. */
+  function transcribedMatch(given, target) {
+    var pattern = target.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+      .replace(/[äöüß]/g, function (c) { return "(?:" + c + "|" + TRANSCRIPTIONS[c] + ")"; });
+    return new RegExp("^" + pattern + "$", "i").test(given);
+  }
+
+  /** Initial case is tolerated; internal capitals follow the model. */
+  function missingCapital(input, target) {
+    var given = norm(input, { keepCase: true });
+    var expected = norm(target, { keepCase: true });
+    for (var i = 1; i < expected.length; i++) {
+      var c = expected.charAt(i);
+      if (/[A-ZÄÖÜẞ]/.test(c) && given.charAt(i) === c.toLowerCase()) return true;
     }
-    return { ok: ok, near: !ok && bestSim >= 0.85 && given.length > 2, best: best || list[0], sim: bestSim };
+    return false;
+  }
+
+  /** Umlaut omission/substitution is a spelling change, never a near typo. */
+  function umlautMismatch(given, target) {
+    var plainGiven = stripAccents(given), plainTarget = stripAccents(target);
+    return given !== target && plainGiven === plainTarget;
+  }
+
+  /** Returns {ok, near, best, sim}; near reuses the existing retry notice. */
+  function checkOpen(input, accepted) {
+    var list = Array.isArray(accepted) ? accepted : [accepted];
+    var given = norm(input);
+    var best = null, bestSim = 0, ok = false, near = false;
+    for (var i = 0; i < list.length; i++) {
+      var target = norm(list[i]);
+      var exact = given === target;
+      if (exact && !missingCapital(input, list[i])) { ok = true; best = list[i]; bestSim = 1; break; }
+      var transcription = transcribedMatch(given, target);
+      var sim = transcription ? 1 : similarity(given, target);
+      if (sim > bestSim) { bestSim = sim; best = list[i]; }
+      if (transcription || (!umlautMismatch(given, target) && sim >= NEAR_THRESHOLD && given.length > 2)) near = true;
+    }
+    return { ok: ok, near: !ok && near, best: best || list[0], sim: bestSim };
   }
 
   function esc(s) {

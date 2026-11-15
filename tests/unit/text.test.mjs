@@ -1,19 +1,7 @@
-/* ============================================================
-   Text comparison (assets/js/text.js).
-
-   These functions decide whether the student's answer counts as correct. A
-   mistake here overturns nothing on screen: the course simply starts
-   rejecting correct sentences or accepting wrong ones, and the only symptom
-   is a student who stops trusting the marking.
-
-   Three invariants that have to be read together with the code, because not
-   one of them is visible from a function signature:
-   - fold() preserves the LENGTH (search.js slices the original by indexes
-     computed on the folded text),
-   - norm() collapses whitespace and therefore does NOT preserve the length,
-   - similarity() always computes without accents, including when checkOpen
-     compares with them — hence "wrong, but almost" on an accent alone.
-   ============================================================ */
+/* Text comparison contracts for German answer grading.
+   fold() preserves LENGTH; search.js maps its sharp-s expansion back to
+   source indexes before slicing. norm() collapses whitespace and does not
+   preserve length. similarity() keeps German umlauts significant. */
 import { test, describe } from "node:test";
 import assert from "node:assert/strict";
 import { loadEngine, CORE } from "./_harness.mjs";
@@ -50,8 +38,8 @@ describe("detypo", () => {
 });
 
 describe("fold", () => {
-  test("it removes the accents and the letter case", () => {
-    assert.equal(T.fold("Perché È Così"), "perche e cosi");
+  test("it folds umlauts and case without expanding sharp s", () => {
+    assert.equal(T.fold("Mädchen ÖL ÜBER Straße"), "madchen ol uber straße");
   });
 
   test("it unifies the apostrophe, just like detypo", () => {
@@ -63,7 +51,7 @@ describe("fold", () => {
   });
 
   test("the length of the result equals the length of the input for every accent", () => {
-    ["caffè", "città", "perché", "così", "più", "à á è é ì í ò ó ù ú"].forEach(s => {
+    ["Mädchen", "Öl", "Übung", "Straße", "Ä Ö Ü ẞ"].forEach(s => {
       assert.equal(T.fold(s).length, s.length, `length changed on "${s}"`);
     });
   });
@@ -80,7 +68,7 @@ describe("norm", () => {
 
   test("punctuation turns into a space rather than vanishing without trace", () => {
     assert.equal(T.norm("io,mangio"), "io mangio");
-    assert.equal(T.norm("Sì! Certo… (davvero?)"), "si certo davvero");
+    assert.equal(T.norm("Ja! Klar… (wirklich?)"), "ja klar wirklich");
   });
 
   test("the spaces around an apostrophe are pulled together: \"l ' autore\" is \"l'autore\"", () => {
@@ -88,12 +76,12 @@ describe("norm", () => {
     assert.equal(T.norm("l'autore"), "l'autore");
   });
 
-  test("by default it removes the accents", () => {
-    assert.equal(T.norm("Perché"), "perche");
+  test("by default it preserves umlauts", () => {
+    assert.equal(T.norm("Mädchen"), "mädchen");
   });
 
   test("keepAccents leaves them in place", () => {
-    assert.equal(T.norm("Perché sì", { keepAccents: true }), "perché sì");
+    assert.equal(T.norm("Schön groß", { keepAccents: true }), "schön groß");
   });
 
   test("an empty string and a lone space give an empty result", () => {
@@ -146,8 +134,8 @@ describe("similarity", () => {
     assert.ok(s > 0.8 && s < 1, `expected 0.8 < s < 1, got ${s}`);
   });
 
-  test("a difference on the accent alone disappears, because the comparison goes through norm()", () => {
-    assert.equal(T.similarity("perché", "perche"), 1);
+  test("an umlaut changes similarity", () => {
+    assert.equal(T.similarity("schön", "schon"), 0.8);
   });
 
   test("the result never leaves the 0..1 range", () => {
@@ -199,18 +187,31 @@ describe("checkOpen", () => {
     assert.equal(T.checkOpen("ciao", "ciao").ok, true);
   });
 
-  test("without strict mode a missing accent passes", () => {
-    assert.equal(T.checkOpen("perche", ["perché"], false).ok, true);
-  });
-
-  test("in strict mode a missing accent is an error, but reported as \"almost\"", () => {
-    const r = T.checkOpen("perche", ["perché"], true);
-    assert.equal(r.ok, false, "akcent ma znaczenie");
-    assert.equal(r.near, true, "the student should see that it is a detail");
-  });
-
-  test("in strict mode a correct accent still passes", () => {
-    assert.equal(T.checkOpen("perché", ["perché"], true).ok, true);
+  for (const strict of [false, true]) {
+    for (const [given, target] of [["Strasse", "Straße"], ["Maedchen", "Mädchen"],
+      ["die strasse", "die Straße"], ["die straße", "die Straße"],
+      ["Oel", "Öl"], ["Uebung", "Übung"], ["das Maedchen trinkt Oel", "das Mädchen trinkt Öl"]]) {
+      test(`${given}/${target} is almost right (strict=${strict})`, () => {
+        const r = T.checkOpen(given, [target], strict);
+        assert.equal(r.ok, false);
+        assert.equal(r.near, true);
+        assert.equal(r.best, target);
+        assert.deepEqual(Object.keys(r).sort(), ["best", "near", "ok", "sim"]);
+      });
+    }
+    for (const [given, target] of [["Madchen", "Mädchen"], ["schon", "schön"], ["Michäl", "Michael"]]) {
+      test(`${given}/${target} is wrong (strict=${strict})`, () => {
+        const r = T.checkOpen(given, [target], strict);
+        assert.equal(r.ok, false);
+        assert.equal(r.near, false);
+        assert.equal(T.checkOpen(target, [target], strict).ok, true);
+      });
+    }
+  }
+  test("Fluss stays exact and initial case remains tolerant", () => {
+    assert.equal(T.checkOpen("Fluss", ["Fluss"]).ok, true);
+    assert.equal(T.checkOpen("fluss", ["Fluss"]).ok, true);
+    assert.equal(T.checkOpen("die straße", ["die Straße", "die straße"]).ok, true);
   });
 
   test("an empty answer does not pass, but it returns the model to be shown", () => {
@@ -239,6 +240,46 @@ describe("esc", () => {
   });
 });
 
+describe("German search and writing boundaries", () => {
+  const box = loadEngine({ files: [...CORE, "assets/js/writing.js", "assets/js/frequency.js"] });
+  box.sandbox.Views = { shell: { set() {}, head() {} } };
+  box.run("assets/js/search.js");
+  const S = box.sandbox.Search;
+  test("search expands sharp s without moving source highlights", () => {
+    assert.equal(S.highlight("Straße Straße Öl", "strasse"), "<mark>Straße</mark> <mark>Straße</mark> Öl");
+    assert.equal(S.highlight("Straße Öl", "ol"), "Straße <mark>Öl</mark>");
+    assert.equal(S.highlight("ßß!", "ss"), "<mark>ß</mark><mark>ß</mark>!");
+    assert.equal(S.highlight("Straße!", "sse"), "Stra<mark>ße</mark>!");
+    assert.equal(S.highlight("ß!", "s"), "<mark>ß</mark>!");
+  });
+  test("search escapes markup and handles empty queries", () => {
+    assert.equal(S.highlight("<b>Öl</b>", "ol"), "&lt;b&gt;<mark>Öl</mark>&lt;/b&gt;");
+    assert.equal(S.highlight("<Öl>", ""), "&lt;Öl&gt;");
+    assert.equal(S.highlight("Öl", "xyz"), "Öl");
+  });
+  test("search collects German umlauts and sharp s", () => {
+    box.Core.registry.levels = [{ code: "A1", units: [{ lessons: [{ id: "search-test",
+      vocab: [{ it: "Straße, Öl, Mädchen", tr: "street" }] }] }] }];
+    for (const query of ["strasse", "Straße", "ol", "madchen"]) {
+      assert.equal(S.collect(query)[0].main, "Straße, Öl, Mädchen");
+    }
+    assert.equal(S.collect("xyz").length, 0);
+  });
+  test("writing treats sharp s as part of a word on either boundary", () => {
+    const W = box.sandbox.Writing;
+    assert.equal(W.analyse("groß!", [{ word: "groß" }])[0].found, true);
+    assert.equal(W.analyse("groß", [{ word: "gro" }])[0].found, false);
+    assert.equal(W.analyse("ßwort", [{ word: "wort" }])[0].found, false);
+    assert.equal(W.analyse("wort!", [{ word: "wort" }])[0].found, true);
+  });
+  test("frequency coverage keeps German word identities", () => {
+    const F = box.sandbox.Frequency;
+    const r = F.pokrycie([["Mädchen", 4], ["Straße", 6], ["Fluss", 2]], { "Mädchen": true, "Straße": true }, 12);
+    assert.equal(r.znane, 2);
+    assert.equal(r.wszystkie, 3);
+    assert.equal(r.udzialTokenow, 10 / 12);
+  });
+});
 describe("wystawienie w Core", () => {
   /* Splitting text.js out was meant to leave untouched every one of the
      twenty modules calling Core.norm and Core.esc. This is that condition,
