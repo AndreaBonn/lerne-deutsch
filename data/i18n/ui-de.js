@@ -639,7 +639,6 @@ LINGUAI.addUI("de", {
   "set.notBuiltHint": "Die Aufnahmen wurden nicht erzeugt — führ <code>scripts/build_audio.py</code> aus.",
   "set.rate": "Sprechtempo:",
   "set.autoplay": "Aufnahmen in Übungen automatisch abspielen",
-  "set.strictAccents": "Akzente verlangen (perché, è, città…)",
   "set.sttConsent": "Einwilligung, meine Stimme zur Erkennung zu senden",
   "set.sttConsentHint": "Ohne sie nehmen die Sprechübungen nichts auf. Was mit der Aufnahme geschieht, steht im Datenschutz.",
   "set.sttConsentOn": "Einwilligung erteilt.",

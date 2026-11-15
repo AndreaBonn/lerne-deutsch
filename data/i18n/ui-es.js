@@ -644,7 +644,6 @@ LINGUAI.addUI("es", {
   "set.notBuiltHint": "Las grabaciones no se han generado: ejecuta <code>scripts/build_audio.py</code>.",
   "set.rate": "Velocidad del habla:",
   "set.autoplay": "Reproducir las grabaciones automáticamente en los ejercicios",
-  "set.strictAccents": "Exigir las tildes (perché, è, città…)",
   "set.sttConsent": "Consentimiento para enviar mi voz al reconocimiento",
   "set.sttConsentHint": "Sin él, los ejercicios de habla no graban nada. Qué pasa con la grabación se explica en Privacidad.",
   "set.sttConsentOn": "Consentimiento dado.",

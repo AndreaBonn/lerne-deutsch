@@ -634,7 +634,6 @@ LINGUAI.addUI("en", {
   "set.notBuiltHint": "The recordings haven't been generated — run <code>scripts/build_audio.py</code>.",
   "set.rate": "Speech rate:",
   "set.autoplay": "Play recordings automatically in exercises",
-  "set.strictAccents": "Require accents (perché, è, città…)",
   "set.sttConsent": "Consent to sending my voice for recognition",
   "set.sttConsentHint": "Without it the speaking exercises record nothing. What happens to the recording is described in Privacy.",
   "set.sttConsentOn": "Consent granted.",

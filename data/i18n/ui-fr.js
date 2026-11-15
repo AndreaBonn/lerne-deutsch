@@ -644,7 +644,6 @@ LINGUAI.addUI("fr", {
   "set.notBuiltHint": "Les enregistrements n'ont pas été générés : lance <code>scripts/build_audio.py</code>.",
   "set.rate": "Débit de la voix :",
   "set.autoplay": "Lire les enregistrements automatiquement dans les exercices",
-  "set.strictAccents": "Exiger les accents (perché, è, città…)",
   "set.sttConsent": "Consentement à envoyer ma voix pour la reconnaissance",
   "set.sttConsentHint": "Sans lui, les exercices oraux n'enregistrent rien. Ce qu'il advient de l'enregistrement est décrit dans Confidentialité.",
   "set.sttConsentOn": "Consentement donné.",

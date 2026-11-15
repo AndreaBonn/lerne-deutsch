@@ -645,7 +645,6 @@ LINGUAI.addUI("pl", {
   "set.notBuiltHint": "Nagrania nie zostały wygenerowane — uruchom <code>scripts/build_audio.py</code>.",
   "set.rate": "Tempo mowy:",
   "set.autoplay": "Automatycznie odtwarzaj nagrania w ćwiczeniach",
-  "set.strictAccents": "Wymagaj akcentów (perché, è, città…)",
   "set.sttConsent": "Zgoda na wysyłanie głosu do rozpoznawania",
   "set.sttConsentHint": "Bez niej ćwiczenia z mówieniem niczego nie nagrywają. Co dokładnie się dzieje z nagraniem, opisuje Prywatność.",
   "set.sttConsentOn": "Zgoda udzielona.",

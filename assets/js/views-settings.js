@@ -169,7 +169,6 @@
       '<label style="display:block"><span style="font-weight:600;display:block;margin-bottom:5px">' + t("set.rate") + ' <b class="js-rate-v">' + st.rate + "×</b></span>" +
       '<input type="range" class="js-rate" min="0.6" max="1.4" step="0.05" value="' + st.rate + '" style="width:100%;max-width:420px;accent-color:var(--salvia-deep)"></label>' +
       '<label style="display:flex;gap:10px;align-items:center"><input type="checkbox" class="js-autoplay"' + (st.autoplay ? " checked" : "") + ' style="width:18px;height:18px;accent-color:var(--salvia-deep)"><span>' + t("set.autoplay") + "</span></label>" +
-      '<label style="display:flex;gap:10px;align-items:center"><input type="checkbox" class="js-strict"' + (st.strictAccents ? " checked" : "") + ' style="width:18px;height:18px;accent-color:var(--salvia-deep)"><span>' + t("set.strictAccents") + "</span></label>" +
       '<button class="btn btn--ghost btn--sm js-test" style="align-self:flex-start">' + t("set.testVoice") + "</button>" +
 
       /* Withdrawing the speech-recognition consent. It sits HERE, next to
@@ -331,7 +330,6 @@
       Core.save();
     });
     el().querySelector(".js-autoplay").addEventListener("change", function (e) { Core.state.settings.autoplay = e.target.checked; Core.save(); });
-    el().querySelector(".js-strict").addEventListener("change", function (e) { Core.state.settings.strictAccents = e.target.checked; Core.save(); });
 
     el().querySelector(".js-privacy").addEventListener("click", function () { App.go("privacy"); });
 

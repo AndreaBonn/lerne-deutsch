@@ -45,7 +45,7 @@
       var tries = 0;
       function go() {
         if (btn.disabled) return;
-        var res = Core.checkOpen(input.value, accepted, Core.state.settings.strictAccents);
+        var res = Core.checkOpen(input.value, accepted);
         if (!res.ok && res.near && tries === 0) {
           tries++;
           var fb = root.querySelector(".fb");
@@ -92,7 +92,7 @@
         root.querySelectorAll(".js-gap").forEach(function (inp) {
           var g = parseInt(inp.getAttribute("data-gap"), 10);
           var accepted = Array.isArray(ex.gaps[g]) ? ex.gaps[g] : [ex.gaps[g]];
-          var res = Core.checkOpen(inp.value, accepted, Core.state.settings.strictAccents);
+          var res = Core.checkOpen(inp.value, accepted);
           inp.style.borderColor = res.ok ? "var(--ok)" : "var(--ko)";
           if (!res.ok) { allOk = false; if (!first) first = accepted[0]; inp.value = inp.value + " → " + accepted[0]; }
           inp.disabled = true;
@@ -173,7 +173,7 @@
         root.querySelectorAll(".js-cell").forEach(function (inp) {
           var p = parseInt(inp.getAttribute("data-p"), 10);
           var want = forms[p] || "";
-          var ok = Core.checkOpen(inp.value, [want], Core.state.settings.strictAccents).ok;
+          var ok = Core.checkOpen(inp.value, [want]).ok;
           inp.style.borderColor = ok ? "var(--ok)" : "var(--ko)";
           if (!ok) { allOk = false; inp.value = want; }
           inp.disabled = true;
