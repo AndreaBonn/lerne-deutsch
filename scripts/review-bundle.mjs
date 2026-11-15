@@ -1,9 +1,26 @@
-import { join } from 'node:path';
+import { join, basename, extname, resolve, relative, isAbsolute, sep } from 'node:path';
+import { readFileSync, realpathSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { loadCourse, runDataFile } from './snapshot_target.mjs';
 
 const ROOT = fileURLToPath(new URL('../', import.meta.url));
+
+function assertInsideRoot(root, path) {
+  const local = relative(root, path);
+  if (local === '..' || local.startsWith('..' + sep) || isAbsolute(local)) {
+    throw new Error('File is outside repository root');
+  }
+}
+
+export function buildFileBundle({ root, file, lang }) {
+  const resolvedRoot = realpathSync(root);
+  const candidate = resolve(resolvedRoot, file);
+  assertInsideRoot(resolvedRoot, candidate);
+  const path = realpathSync(candidate);
+  assertInsideRoot(resolvedRoot, path);
+  return { unit: basename(path, extname(path)), lang, content: readFileSync(path, 'utf8') };
+}
 
 export function buildBundle({ root, unitId, lang }) {
   const course = loadCourse(root);

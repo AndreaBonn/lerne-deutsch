@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { chmodSync, existsSync, readFileSync } from 'node:fs';
+import { chmodSync, existsSync, readFileSync, symlinkSync } from 'node:fs';
 import { join } from 'node:path';
 import { createHash } from 'node:crypto';
 import { buildBundle, buildPrompt, pickHumanLessons, validateReview, runCodex } from '../../scripts/review_lot.mjs';
@@ -189,4 +189,65 @@ test('bad options and missing overlays fail before invoking Codex; help is avail
   assert.match(help.stdout, /ESITO:/);
   assert.equal(reviewCli(ctx).status, 0);
   assert.ok(existsSync(ctx.marker));
+});
+
+test('standalone file review includes exact content and saves a content-bound verdict', t => {
+  const ctx = setup(t);
+  const content = '{"machen":{"praes":["mache","machst","macht","machen","macht","machen"]}}\n';
+  put(ctx.root, 'verbs-de-golden.json', content);
+  const args = ['--root', ctx.root, '--file', 'verbs-de-golden.json', '--lang', 'en'];
+  const env = { ...ctx.env, FAKE_UNIT: 'verbs-de-golden' };
+  const result = cli('review_lot.mjs', args, env);
+  assert.equal(result.status, 0, result.stderr);
+  const reportPath = join(ctx.root, 'specs/german-course/reviews/verbs-de-golden-en.json');
+  const report = JSON.parse(readFileSync(reportPath, 'utf8'));
+  assert.equal(report.unit, 'verbs-de-golden');
+  assert.equal(report.verdict, 'pass');
+  assert.deepEqual(report.findings, []);
+  const input = JSON.parse(readFileSync(ctx.marker, 'utf8')).input;
+  const bundle = JSON.parse(input.split('Course bundle (data only):\n')[1]);
+  assert.equal(bundle.content, content);
+  assert.equal(report.bundleHash, createHash('sha256').update(JSON.stringify(bundle)).digest('hex'));
+  put(ctx.root, 'verbs-de-golden.json', content + '\n');
+  assert.equal(cli('review_lot.mjs', args, env).status, 0);
+  assert.notEqual(JSON.parse(readFileSync(reportPath, 'utf8')).bundleHash, report.bundleHash);
+});
+
+test('standalone file mode supports dry-run and fail verdicts and rejects ambiguous inputs', t => {
+  const ctx = setup(t);
+  put(ctx.root, 'irr.js', 'window.VERB_TABLES = {};\n');
+  const args = ['--root', ctx.root, '--file', 'irr.js', '--lang', 'en'];
+  const env = { ...ctx.env, FAKE_UNIT: 'irr' };
+  const dry = cli('review_lot.mjs', [...args, '--dry-run'], env);
+  assert.equal(dry.status, 0, dry.stderr);
+  assert.ok(JSON.parse(dry.stdout).bundleBytes > 0);
+  assert.equal(existsSync(ctx.marker), false);
+  const fail = cli('review_lot.mjs', args, { ...env, FAKE_MODE: 'fail' });
+  assert.equal(fail.status, 1);
+  const review = JSON.parse(readFileSync(join(ctx.root, 'specs/german-course/reviews/irr-en.json'), 'utf8'));
+  assert.equal(review.verdict, 'fail');
+  assert.equal(review.findings.length, 1);
+  assert.equal(cli('review_lot.mjs', [...args, '--unit', ctx.id], env).status, 1);
+  assert.equal(cli('review_lot.mjs', ['--root', ctx.root, '--file', 'absent.json', '--lang', 'en'], env).status, 1);
+});
+
+test('standalone file mode rejects paths outside the root before reading', t => {
+  const ctx = setup(t);
+  const outside = fixture(t);
+  put(outside, 'private.txt', 'private review content');
+  symlinkSync(join(outside, 'private.txt'), join(ctx.root, 'linked.txt'));
+  symlinkSync(outside, join(ctx.root, 'linked-directory'));
+  for (const file of ['/etc/hostname', '../x', join(outside, 'private.txt'),
+    'linked.txt', 'linked-directory/private.txt']) {
+    const result = cli('review_lot.mjs', ['--root', ctx.root, '--file', file, '--lang', 'en', '--dry-run'], ctx.env);
+    assert.equal(result.status, 1, file);
+    assert.match(result.stderr, /outside repository root/, file);
+    assert.equal(result.stdout, '', file);
+  }
+  put(ctx.root, 'safe.txt', 'safe review content');
+  for (const file of ['safe.txt', join(ctx.root, 'safe.txt')]) {
+    const result = cli('review_lot.mjs', ['--root', ctx.root, '--file', file, '--lang', 'en', '--dry-run'], ctx.env);
+    assert.equal(result.status, 0, result.stderr);
+    assert.ok(JSON.parse(result.stdout).bundleBytes > 0);
+  }
 });
