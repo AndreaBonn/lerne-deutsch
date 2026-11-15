@@ -4,7 +4,8 @@
    assets/js/anki.js, not a copy. */
 import { readFileSync, writeFileSync } from "node:fs";
 import vm from "node:vm";
-const ROOT="/home/bonn/Documenti/00_Lavoro/ProgettiPersonali/LinguAI/versione-statica";
+import { fileURLToPath } from "node:url";
+const ROOT=fileURLToPath(new URL("..", import.meta.url));
 const box={console}; box.window=box; box.global=box; vm.createContext(box);
 vm.runInContext(readFileSync(`${ROOT}/assets/js/anki.js`,"utf8"),box);
 
