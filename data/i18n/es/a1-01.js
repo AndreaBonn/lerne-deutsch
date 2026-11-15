@@ -1121,416 +1121,547 @@ LINGUAI.addStrings("es", {
     ]
   },
   "unit:a1-u03": {
-    title: "Aperitivo y comida",
-    grammarNote: "piacere · artículo partitivo · -ere e -ire"
+    title: "Después del trabajo",
+    grammarNote: "gern y mögen · verbos con cambio de vocal · acusativo · kein y nicht"
   },
   "lesson:a1-u03-l1": {
-    theme: "Comida",
-    title: "El verbo piacere",
+    theme: "Gustos y costumbres",
+    title: "Decir lo que te gusta",
     objectives: [
-      "decir qué te gusta y qué no",
-      "elegir entre piace y piacciono",
-      "preguntar a los demás qué les gusta"
+      "decir que te gusta hacer algo con gern",
+      "decir que te gusta una cosa con mögen",
+      "mantener el verbo en segunda posición también cuando la oración empieza por heute"
     ],
     theory: [
       {
-        h: "La frase se construye del revés",
-        p: "<strong>Piacere</strong> no significa «gustar de algo», significa «resultar agradable». <em>Mi piace la pizza</em> es literalmente «la pizza me resulta agradable». El sujeto gramatical es <b>la cosa</b>, y quien siente el gusto aparece como complemento indirecto (<em>mi, ti, gli, le, ci, vi</em>)."
+        h: "Gern: «con gusto» que se convierte en «me gusta»",
+        p: "Para decir que te gusta hacer algo, el alemán no usa un verbo que signifique «gustar»: añade al verbo el adverbio <strong>gern</strong> («con gusto, de buena gana»). <em>Ich trinke gern Tee</em> es «bebo té con gusto», es decir, «me gusta beber té». <em>Gern</em> suele ir justo después del verbo, y después de un pronombre sujeto: <em>Ich esse gern Pizza</em>, <em>Wir trinken gern Limonade</em>."
       },
       {
-        h: "Por eso el verbo tiene dos formas",
-        p: "Como el sujeto es la cosa, es la cosa la que decide el número: <em>mi piace <b>il</b> caffè</em> (una) frente a <em>mi piacciono <b>gli</b> spaghetti</em> (varias). Ante un infinitivo va siempre en singular: <em>mi piace viaggiare</em>."
+        contrast: "En español <em>me gusta</em> da la vuelta a la oración: lo que gusta es el sujeto y el verbo concuerda con ello (<em>me gusta el té</em>, <em>me gustan las aceitunas</em>), mientras que quien disfruta pasa a ser complemento indirecto (<em>me, te, le</em>). En alemán no hay esa inversión: el sujeto es quien come o bebe y el verbo concuerda con él: <em>ich trinke</em>, <em>du trinkst</em>. No existe una forma como «gustan»: <em>Ich esse gern Oliven</em>. Además <em>gern</em> no cambia nunca: <em>ich esse gern</em>, <em>du isst gern</em>, <em>wir essen gern</em>."
       },
       {
-        contrast: "Este capítulo el español te lo regala entero: «gustar» funciona exactamente igual, con el mismo complemento indirecto y la misma concordancia con la cosa. «Me gusta el café» / «me gustan los espaguetis» es <em>mi piace il caffè</em> / <em>mi piacciono gli spaghetti</em>, palabra por palabra. Donde un anglófono se pasa meses produciendo errores, tú solo cambias de vocabulario."
+        h: "Mögen: me gusta una cosa",
+        p: "Cuando te gusta una cosa y no una acción, existe el verbo <strong>mögen</strong>: <em>Ich mag Käse</em>, <em>Magst du Fisch?</em>, <em>Wir mögen Suppe</em>. Es irregular: la forma de <em>ich</em> y la de <em>er/sie/es</em> son iguales y no llevan diéresis (<em>mag</em>), y <em>du</em> hace <em>magst</em>. Para decir que te gusta hacer algo, por ahora usa <em>gern</em> después del verbo."
       },
       {
-        h: "Quién siente el gusto: mi, ti, gli, le…",
-        list: [
-          "<b>mi</b> piace — me",
-          "<b>ti</b> piace — te",
-          "<b>gli</b> piace — le (a él); <b>le</b> piace — le (a ella)",
-          "<b>ci</b> piace — nos · <b>vi</b> piace — os · <b>gli</b> piace — les"
-        ]
+        trap: "Cuando hablas de gustos en general, el sustantivo va normalmente <b>sin artículo</b>: <em>Ich mag Käse</em>, no «Ich mag der Käse». El español dice «me gusta <em>el</em> queso»; el alemán, en este sentido general, omite el artículo (y lo mismo ocurre con el plural: <em>Ich mag Äpfel</em>)."
       },
       {
-        trap: "La negación va delante del pronombre, no del verbo: <b>non</b> mi piace. Nunca «mi non piace». Exactamente como «no me gusta»."
+        h: "El verbo sigue en segunda posición",
+        p: "Si la oración empieza por <em>heute</em> (hoy), el sujeto pasa detrás del verbo: <em>Heute trinke ich gern Saft</em>. El verbo conjugado está siempre en segunda posición. En la pregunta de sí o no, en cambio, va en primer lugar: <em>Trinkst du gern Tee?</em>, <em>Magst du Fisch?</em>"
+      },
+      {
+        tip: "Di en voz alta tres oraciones tuyas con <em>gern</em>: <em>Ich esse gern ...</em>, <em>Ich trinke gern ...</em>, <em>Ich mag ...</em>. Tres fórmulas, todo el vocabulario de esta lección."
       }
     ],
     grammar: {
-      title: "Piacere: el esquema de la frase",
-      note: "[pronombre] + piace/piacciono + [la cosa, con su artículo]",
+      title: "Mögen en presente",
+      note: "Con <b>ich</b> y <b>er/sie/es</b> la forma es la misma: <em>mag</em>. La diéresis aparece solo en el infinitivo y en el plural.",
       table: {
-        head: ["lo que gusta", "forma", "ejemplo"],
+        head: ["persona", "forma", "ejemplo"],
         rows: [
-          ["una cosa", "piace", "Mi piace il vino rosso."],
-          ["varias cosas", "piacciono", "Mi piacciono i dolci."],
-          ["una actividad", "piace", "Mi piace cucinare."],
-          ["negativo", "non … piace", "Non mi piace il pesce crudo."],
-          ["pregunta", "ti piace?", "Ti piace l'aperitivo?"]
+          ["ich", "mag", "Ich mag Käse."],
+          ["du", "magst", "Magst du Fisch?"],
+          ["er / sie / es", "mag", "Er mag Suppe."],
+          ["wir", "mögen", "Wir mögen Suppe."],
+          ["ihr", "mögt", "Mögt ihr Pizza?"],
+          ["sie / Sie", "mögen", "Sie mögen Nudeln."]
         ]
       },
       examples: [
-        { tr: "Me gusta mucho el café." },
-        { tr: "¿Te gusta el spritz?" },
-        { tr: "No nos gusta la cerveza caliente." },
-        { tr: "A ella le gusta bailar." },
-        { tr: "A Marco le gusta el pescado.", note: "con un nombre se añade «a» delante" },
-        { tr: "Me encantaría probarlo.", note: "una forma de condicional: apréndela como bloque" }
+        { tr: "Me gusta beber té.", note: "gern suele ir después del verbo y después de un pronombre sujeto: Ich trinke gern Tee, Heute trinke ich gern Tee" },
+        { tr: "Me gusta comer pizza." },
+        { tr: "Me gusta el queso.", note: "sin artículo, en sentido general" },
+        { tr: "¿Te gusta el pescado?", note: "pregunta de sí o no: el verbo va primero" },
+        { tr: "Hoy bebo zumo con gusto.", note: "el sujeto pasa detrás del verbo" },
+        { tr: "Nos gusta la sopa." }
       ]
     },
     vocab: [
-      "aperitivo (bebida con algo de picar)",
-      "spritz",
-      "vino tinto / blanco",
-      "cerveza",
-      "aceitunas",
-      "patatas fritas",
-      "aperitivos salados",
-      "jamón curado",
-      "queso",
-      "dulces, postres",
-      "pescado",
-      "carne",
-      "cocinar",
-      "probar"
+      "con gusto, de buena gana",
+      "beber",
+      "comer",
+      "gustar, apreciar (con un sustantivo)",
+      "la manzana",
+      "la pizza",
+      "la ensalada",
+      "la sopa",
+      "la pasta, los fideos (suele usarse en plural; singular: die Nudel)",
+      "el pescado",
+      "la carne",
+      "la fruta",
+      "el refresco dulce con gas (Limonade; no necesariamente de limón)",
+      "el queso"
     ],
-    culture: {
-      title: "Con ojos italianos: el aperitivo no es la cena",
-      text: "<p>El <b>aperitivo</b> empieza sobre las seis y media y dura hasta las ocho y media. Se paga la bebida (entre 7 y 12 euros según la ciudad) y la comida de la barra viene incluida. En Milán ha crecido hasta convertirse en un bufé llamado <i>apericena</i>, a medio camino de la cena.</p><p>La regla que nadie enuncia en voz alta: <b>sírvete una cantidad razonable</b>. Un plato montado en torre delata a un extranjero más rápido que el acento.</p><p>Los clásicos: <i>spritz</i> (con Aperol o Campari), <i>negroni</i>, una copa de vino. La cerveza también pasa, aunque los puristas arruguen la nariz.</p>"
-    },
     exercises: [
       {
-        q: "«___ piacciono le olive.» ¿Por qué piacciono y no piace?",
-        opts: ["Porque se trata de varias personas", "Porque «le olive» está en plural", "Porque es un pasado"],
-        why: "El verbo concuerda con la cosa que gusta, y esa cosa está en plural."
-      },
-      { q: "Completa: «Mi ___ il vino rosso.»", why: "Una cosa en singular → piace." },
-      { q: "Completa: «Non mi ___ i film horror.»", why: "«I film» es plural → piacciono." },
-      {
-        q: "¿Qué frase es correcta?",
-        opts: ["Mi non piace il pesce.", "Non mi piace il pesce.", "Mi piace non il pesce."],
-        why: "Non va delante de todo el grupo pronombre + verbo."
+        q: "¿Cómo se dice «Me gusta beber té»?",
+        opts: ["Ich gern trinke Tee.", "Ich trinke gern Tee.", "Gern ich trinke Tee."],
+        why: "El verbo conjugado se queda en segunda posición y <b>gern</b> lo sigue. (<i>Gern trinke ich Tee</i> es posible, con el sujeto detrás del verbo, pero no la versión con <i>ich</i> antes del verbo.)"
       },
       {
-        q: "¿Cómo se dice «a Marco le gusta el pescado»?",
-        opts: ["Marco piace il pesce", "A Marco piace il pesce", "Marco piacciono pesce"],
-        why: "Quien siente el gusto lleva la preposición <b>a</b> delante del nombre, como en español."
+        q: "Completa: «Ich ___ Käse.» (Me gusta el queso.)",
+        hint: "mögen, primera persona del singular",
+        why: "<i>Ich mag</i>: forma irregular, sin diéresis, igual que la de <i>er/sie/es</i>."
       },
-      { q: "«Me gusta cocinar.»", why: "Ante un infinitivo va siempre el singular piace." },
-      { q: "Empareja el pronombre con la persona.", pairs: ["me", "te", "le (a ella)", "nos"] },
       {
-        q: "Completa la conversación durante un aperitivo.",
-        tr: "— ¿Te gusta el spritz? — ¡Sí, mucho! Pero no me gustan las aceitunas."
+        q: "Completa: «Ich ___ gern Fisch.» (Me gusta comer pescado.)",
+        hint: "essen, primera persona del singular",
+        why: "Con <i>ich</i> el verbo es regular: <b>esse</b>. El cambio de vocal afecta solo a <i>du</i> y a <i>er</i>, lo verás en la lección 2."
       },
-      { tr: "Me gustan mucho los quesos italianos." },
-      { tr: "Me gusta el aperitivo, pero no me gustan las aceitunas." }
+      {
+        q: "¿Cómo se dice «Me gusta la pizza»?",
+        opts: ["Ich mag Pizza.", "Ich Pizza mag.", "Mag ich Pizza."],
+        why: "El verbo está en segunda posición y el sustantivo va sin artículo. Con el verbo delante, <i>Mag ich Pizza?</i> sería una pregunta."
+      },
+      {
+        q: "¿Qué oración tiene el verbo en el lugar correcto?",
+        opts: ["Heute ich esse Salat.", "Heute esse ich Salat.", "Ich heute esse Salat."],
+        why: "Si la oración empieza por <i>heute</i>, el sujeto pasa detrás del verbo: <b>Heute esse ich Salat.</b>"
+      },
+      {
+        q: "Traduce: «Hoy me gusta beber té.»",
+        why: "<i>Heute trinke ich gern Tee</i>: el verbo en segunda posición, luego el sujeto, luego <i>gern</i>. También es correcto <i>Ich trinke heute gern Tee</i>."
+      },
+      {
+        q: "Une cada palabra con su significado.",
+        pairs: ["beber", "comer", "gustar (con un sustantivo)", "con gusto"]
+      },
+      {
+        q: "Completa las dos oraciones.",
+        tr: "Me gusta beber té. ¿Y a ti, te gusta beber té?",
+        why: "La segunda oración es una pregunta de sí o no, así que el verbo va en primera posición: <i>Trinkst du ...?</i> Al principio de la oración se escribe con mayúscula."
+      },
+      {
+        tr: "Me gusta comer ensalada y beber agua.",
+        why: "En <i>Salat</i> la <b>s</b> inicial ante vocal es sonora, como la <i>s</i> de «mismo». En <i>Wasser</i> la <b>w</b> suena como una <i>v</i> con los dientes sobre el labio inferior, no como una <i>b</i>."
+      },
+      {
+        tr: "Me gusta beber té y comer pan.",
+        why: "En <i>Tee</i> la <b>ee</b> es una sola vocal larga, no dos vocales separadas."
+      }
     ]
   },
   "lesson:a1-u03-l2": {
-    theme: "Gramática básica",
-    title: "La segunda conjugación y c'è / ci sono",
+    theme: "Gustos y costumbres",
+    title: "Verbos con cambio de vocal",
     objectives: [
-      "conjugar los verbos regulares en -ere",
-      "usar c'è y ci sono",
-      "describir lo que hay en un sitio"
+      "conjugar nehmen, essen y sprechen en presente",
+      "reconocer que la vocal cambia solo con du y er/sie/es",
+      "pedir la comida: nehmen y essen"
     ],
     theory: [
       {
-        h: "Casi como -are, pero no del todo",
-        p: "El grupo <strong>-ere</strong> se diferencia del primero solo en tres desinencias: <em>-e</em> en vez de <em>-a</em>, <em>-ete</em> en vez de <em>-ate</em>, <em>-ono</em> en vez de <em>-ano</em>. La forma de <em>noi</em> (<em>-iamo</em>) es común a las tres conjugaciones: la desinencia más fácil de la lengua."
+        h: "Tres verbos, una sola novedad",
+        p: "<strong>Nehmen</strong> («tomar»), <strong>essen</strong> («comer») y <strong>sprechen</strong> («hablar») llevan las mismas terminaciones que los demás verbos, pero con <strong>du</strong> y con <strong>er/sie/es</strong> la <em>e</em> de la raíz pasa a <em>i</em>: <em>essen → du isst, er isst</em>; <em>sprechen → du sprichst, er spricht</em>; <em>nehmen → du nimmst, er nimmt</em> (aquí cambia también la consonante: <em>nehm-</em> pasa a <em>nimm-</em>)."
       },
       {
-        h: "Aquí se esconden casi todos los irregulares",
-        p: "Muchos verbos en -ere muy frecuentes tienen formas raras: <em>bere → bevo</em>, <em>rimanere → rimango</em>, <em>scegliere → scelgo</em>. Su irregularidad se nota sobre todo en el pasado y en el participio, que llegan en A2."
+        contrast: "El español conoce bien este fenómeno: <em>pedir → pido</em>, <em>pensar → pienso</em>, <em>poder → puedo</em>. Pero hay una diferencia útil. En español el cambio afecta a yo, tú, él y ellos, y no a nosotros ni a vosotros (<em>pensamos</em>, <em>pensáis</em>). En alemán afecta solo a <b>du</b> y <b>er/sie/es</b>, y la forma de <em>ich</em> no cambia: <em>ich esse</em>, no «ich isse». Con <em>wir</em>, <em>ihr</em> y <em>sie/Sie</em> se usa la raíz del infinitivo: <em>wir essen</em>, <em>ihr esst</em>."
       },
       {
-        h: "C'è y ci sono",
-        p: "<strong>C'è</strong> («hay», una cosa) y <strong>ci sono</strong> («hay», varias) dicen que algo existe en un sitio. La elección depende del número, no de la persona: <em>c'è un problema</em>, <em>ci sono due problemi</em>."
+        h: "Essen: du isst, sin doble terminación",
+        p: "La raíz de <em>essen</em> termina en <em>-s</em>, así que la terminación de <em>du</em> se reduce: <em>du isst</em>, no «du issst». La forma <em>isst</em> es igual para <em>du</em> y <em>er/sie/es</em>. <em>Ihr esst</em> conserva la vocal original: es otra forma."
       },
       {
-        contrast: "Y ahí está la diferencia con el español: «hay» es invariable, sirve para uno y para mil. El italiano obliga a elegir entre <em>c'è</em> y <em>ci sono</em> según el número, y decir «c'è due problemi» es un error que se oye enseguida. Cuenta antes de hablar."
+        trap: "El cambio de vocal no se aplica a <em>ihr</em>: <em>ihr esst</em>, <em>ihr nehmt</em>, <em>ihr sprecht</em>. Y no vale para todos los verbos: <em>trinken</em> sigue siendo regular (<em>du trinkst</em>). Otros verbos tienen otras alternancias, por ejemplo <em>sehen → du siehst</em>: las verás más adelante. Por ahora aprende estos tres con sus formas."
       },
       {
-        trap: "No confundas <b>c'è</b> (hay) con <b>è</b> (es/está). <em>Il ristorante è chiuso</em>: el restaurante está cerrado. <em>C'è un ristorante qui vicino</em>: hay un restaurante aquí cerca."
+        h: "Nehmen para pedir, sprechen para los idiomas",
+        p: "<em>Ich nehme einen Kaffee</em> equivale a «tomo un café»: es la fórmula típica para decir lo que eliges en un bar o en un restaurante. <em>Sprechen</em> se usa con los idiomas, sin artículo: <em>Ich spreche Deutsch</em>, <em>Sprichst du Italienisch?</em>"
+      },
+      {
+        tip: "Aprende cada verbo como un bloque: <em>essen, du isst, er isst</em>; <em>nehmen, du nimmst, er nimmt</em>; <em>sprechen, du sprichst, er spricht</em>. Si dudas de una forma, pregúntate: ¿es <em>du</em> o <em>er/sie/es</em>? Solo entonces cambia la vocal."
       }
     ],
     grammar: {
-      title: "Leggere (leer) — el patrón -ERE",
+      title: "Essen, nehmen, sprechen en presente",
+      note: "La vocal cambia (<b>e → i</b>) solo con <b>du</b> y <b>er/sie/es</b>.",
       table: {
-        head: ["persona", "desinencia", "leggere", "prendere"],
+        head: ["persona", "essen", "nehmen", "sprechen"],
         rows: [
-          ["io", "-o", "leggo", "prendo"],
-          ["tu", "-i", "leggi", "prendi"],
-          ["lui / lei / Lei", "-e", "legge", "prende"],
-          ["noi", "-iamo", "leggiamo", "prendiamo"],
-          ["voi", "-ete", "leggete", "prendete"],
-          ["loro", "-ono", "leggono", "prendono"]
+          ["ich", "esse", "nehme", "spreche"],
+          ["du", "isst", "nimmst", "sprichst"],
+          ["er / sie / es", "isst", "nimmt", "spricht"],
+          ["wir", "essen", "nehmen", "sprechen"],
+          ["ihr", "esst", "nehmt", "sprecht"],
+          ["sie / Sie", "essen", "nehmen", "sprechen"]
         ]
       },
       examples: [
-        { tr: "Yo tomo un café.", note: "«prendere» es el verbo normal para pedir" },
-        { tr: "¿Estás leyendo la carta?" },
-        { tr: "No veo al camarero." },
-        { tr: "¿Hay una mesa libre?" },
-        { tr: "Hay dos sitios en la barra." },
-        { tr: "Escribimos el nombre para la reserva." }
+        { tr: "Como arroz." },
+        { tr: "Tú comes pescado.", note: "du isst: la vocal cambia" },
+        { tr: "Él toma una sopa." },
+        { tr: "Nosotros tomamos café.", note: "con wir la raíz no cambia" },
+        { tr: "¿Hablas alemán?" },
+        { tr: "Vosotros coméis patatas.", note: "ihr esst: sin cambio de vocal" }
       ]
     },
     vocab: [
-      "tomar, pedir",
-      "leer",
-      "escribir",
-      "ver",
-      "preguntar",
-      "responder",
-      "poner",
-      "cerrar",
-      "hay",
-      "sitio, plaza",
-      "libre / ocupado",
-      "aquí cerca"
+      "tomar (también al pedir en un bar)",
+      "comer",
+      "hablar",
+      "la salchicha",
+      "el huevo",
+      "el arroz",
+      "la patata",
+      "la verdura",
+      "la cena",
+      "el idioma, la lengua",
+      "despacio",
+      "también (no confundir con la palabra alemana «also», que significa «así que»)"
     ],
     exercises: [
-      { why: "Fíjate en -e, -ete, -ono: esa es toda la diferencia con el grupo -are." },
       {
-        q: "¿Qué desinencia comparten las tres conjugaciones?",
-        opts: ["-o en la forma de io", "-iamo en la forma de noi", "-ono en la forma de loro"],
-        why: "La forma de noi es siempre -iamo, sea cual sea el grupo."
-      },
-      { q: "Completa: «___ un tavolo libero?» (¿Hay una mesa libre?)", why: "Una mesa → c'è." },
-      {
-        q: "Completa: «___ tre persone in fila.» (Hay tres personas en la cola.)",
-        why: "Plural → ci sono."
+        tr: "Toda la conjugación de nehmen, sin mirar.",
+        why: "Con <i>du</i> y <i>er/sie/es</i> cambian la vocal y la consonante: <b>nimmst, nimmt</b>. Las demás personas usan la raíz del infinitivo: <i>nehme, nehmen, nehmt, nehmen</i>."
       },
       {
-        q: "«Il bar è chiuso» frente a «C'è un bar qui vicino»: ¿cuál es la diferencia?",
-        opts: [
-          "Ninguna, son sinónimos",
-          "La primera describe el bar, la segunda dice que existe uno cerca",
-          "La segunda está en pasado"
-        ],
-        why: "è describe, c'è afirma que algo está presente en un sitio."
+        q: "¿Cómo se dice «tú comes»?",
+        opts: ["du esst", "du isst", "du esse"],
+        why: "<b>Du isst</b>: la vocal cambia (e → i) y la terminación <i>-st</i> se reduce porque la raíz acaba en <i>s</i>. <i>Esst</i> es la forma de <i>ihr</i>."
       },
-      { q: "«Yo tomo una cerveza, ¿y tú?»", why: "Prendere es el verbo por defecto para pedir en Italia." },
       {
-        q: "¿Qué verbos pertenecen al grupo -ere?",
-        opts: ["prendere", "abitare", "scrivere", "dormire", "chiudere"]
+        q: "Completa: «Er ___ einen Apfel.» (Él toma una manzana.)",
+        hint: "nehmen, tercera persona del singular",
+        why: "<b>Er nimmt</b>: cambian tanto la vocal como la consonante respecto a <i>nehmen</i>."
       },
-      { tr: "No veo al camarero." },
-      { tr: "¿Hay mesa para dos?" },
-      { tr: "Tomamos dos spritz." }
+      {
+        q: "Completa: «Du ___ sehr gut Deutsch.» (Hablas muy bien alemán.)",
+        hint: "sprechen, segunda persona del singular",
+        why: "<b>Du sprichst</b>: e → i y terminación <i>-st</i>."
+      },
+      {
+        q: "¿Con qué pronombre NO cambia la vocal?",
+        opts: ["du", "er", "wir"],
+        why: "Con <b>wir</b> se usa la raíz del infinitivo: <i>wir essen, wir nehmen, wir sprechen</i>. El cambio afecta solo a <i>du</i> y a <i>er/sie/es</i>."
+      },
+      {
+        q: "¿Qué oraciones son correctas?",
+        opts: ["Er isst Fisch.", "Du sprecht Deutsch.", "Ihr esst Reis.", "Ich nimme Tee.", "Sie nimmt eine Suppe."],
+        why: "<i>Du sprichst</i> (no «sprecht», que es de <i>ihr</i>); <i>ich nehme</i> (con <i>ich</i> la vocal no cambia). Las otras tres son correctas."
+      },
+      {
+        tr: "Hoy Anna come arroz y verdura.",
+        why: "Si la oración empieza por <i>heute</i>, el verbo se queda en segunda posición: <i>Heute isst Anna ...</i>"
+      },
+      {
+        q: "Traduce: «Tú hablas italiano y yo hablo alemán.»",
+        why: "<i>Du sprichst</i> con cambio de vocal, <i>ich spreche</i> sin él: los pronombres no se omiten."
+      },
+      {
+        tr: "Tú comes arroz y yo tomo patatas.",
+        why: "<i>Du isst</i>: la <b>i</b> es breve y la <b>ss</b> es sorda, como la <i>s</i> de «casa» en español."
+      },
+      {
+        tr: "Yo como arroz y tú comes patatas.",
+        why: "Recuerda el cambio de vocal: <i>ich esse</i>, pero <i>du isst</i>."
+      }
     ]
   },
   "lesson:a1-u03-l3": {
-    theme: "Gramática básica",
-    title: "La tercera conjugación y el patrón -isc-",
+    theme: "En el bar",
+    title: "Pedir, ofrecer, aceptar, rechazar",
     objectives: [
-      "conjugar los verbos como dormire y los como capire",
-      "reconocer qué verbos en -ire necesitan el infijo -isc-",
-      "usar preferire para expresar una preferencia"
+      "pedir una bebida con einen, eine, ein",
+      "ofrecer con Möchten Sie ...? y responder con Ja, gern o Nein, danke",
+      "reconocer que en el caso acusativo solo cambia el masculino singular"
     ],
     theory: [
       {
-        h: "Una terminación, dos comportamientos",
-        p: "Los verbos en <strong>-ire</strong> se dividen en dos subgrupos. El primero (<em>dormire, partire, sentire, aprire, offrire</em>) se conjuga sin sorpresas. El segundo (<em>capire, finire, preferire, pulire, spedire</em>) inserta <b>-isc-</b> en cuatro formas: <em>io, tu, lui/lei, loro</em>. Las de <em>noi</em> y <em>voi</em> van sin él."
+        h: "Ofrecer, aceptar, rechazar",
+        p: "Para ofrecer algo a un conocido: <em>Möchtest du einen Kaffee?</em>; a una persona a la que tratas de usted: <em>Möchten Sie einen Kaffee?</em> Para aceptar: <strong>Ja, gern</strong> o <strong>Ja, bitte</strong>. Para rechazar: <strong>Nein, danke</strong>. Para pedir algo: <em>Ich möchte einen Saft</em>, es decir, «quisiera un zumo»."
       },
       {
-        h: "Cómo saber a qué grupo pertenece",
-        p: "No hay regla: se memoriza. Ayuda que el grupo del <em>-isc-</em> es el más numeroso y se lleva casi todos los verbos nuevos (<em>gestire, inserire, garantire</em>). Los diccionarios lo señalan con <i>(-isc-)</i> junto a la entrada."
+        trap: "Ante un ofrecimiento, en español un «gracias» a secas puede ser sí o no según el tono. En alemán, <em>danke</em> solo suele entenderse a menudo como rechazo («no, gracias»), mientras que <em>bitte</em> suena a aceptación. Para que no haya malentendidos, di <em>Ja, bitte</em> o <em>Ja, gern</em> si aceptas, y <em>Nein, danke</em> si rechazas."
       },
       {
-        contrast: "El español no tiene nada parecido: sus verbos en -ir se conjugan de una sola manera. Aquí no hay intuición que traer, hay que aprender la lista. Consuelo: el infijo es siempre el mismo y su ritmo se pega rápido."
+        h: "Möchte: por ahora, una fórmula",
+        p: "<em>Ich möchte ...</em> es la fórmula amable para decir lo que deseas, equivalente a «quisiera». Las formas que debes aprender ahora son <em>ich möchte</em>, <em>du möchtest</em> y <em>Sie möchten</em>. En estas fórmulas lo que deseas es el complemento directo y va en acusativo: <em>Ich möchte einen Saft</em>."
       },
       {
-        tip: "El patrón -isc- tiene forma de paréntesis: cuatro formas con el infijo por fuera, dos sin él en medio. Aprende el ritmo: <b>ca-pi-sco, ca-pi-sci, ca-pi-sce — ca-piamo, ca-pite — ca-pi-scono</b>."
+        h: "El acusativo: solo cambia el masculino",
+        p: "El complemento directo (lo que tomas, bebes, pides) va en <strong>acusativo</strong>. Respecto al nominativo, solo cambia el masculino singular: <strong>der → den</strong>, <strong>ein → einen</strong>, <strong>kein → keinen</strong>. El femenino, el neutro y el plural no cambian: <em>Die Cola ist kalt. Ich trinke die Cola.</em> (nominativo y acusativo: <em>die</em> en ambos), <em>Das ist ein Wasser. Ich nehme ein Wasser.</em> (<em>ein</em> en ambos)."
+      },
+      {
+        contrast: "En español <em>un café</em> es siempre <em>un café</em>, sea sujeto u objeto: la función se entiende por la posición. En alemán la función se lee en el artículo, y solo en el masculino: <em>Der Kaffee ist heiß</em> (sujeto), pero <em>Ich nehme den Kaffee</em> (objeto). El español tiene la «a» personal (<em>veo a Ana</em>), pero no es un equivalente: marca ciertos complementos directos de persona, mientras que el acusativo alemán se ve en el artículo masculino, sea persona o cosa. No busques una «a» en alemán. Por eso en el bar se dice <em>Einen Kaffee, bitte</em>: detrás hay un «(ich nehme) einen Kaffee»."
+      },
+      {
+        trap: "Después de <em>sein</em> («ser») se queda el nominativo, porque no hay complemento directo: <em>Das ist ein Saft</em>, no «Das ist einen Saft». <em>Einen</em> aparece con verbos como <em>nehmen</em>, <em>trinken</em>, <em>essen</em>, <em>möchten</em>, <em>haben</em>."
+      },
+      {
+        tip: "Cuando tengas que elegir entre <em>ein</em> y <em>einen</em>, mira el género del sustantivo: si es masculino (<em>der Saft</em>, <em>der Kaffee</em>, <em>der Tee</em>) y es el complemento directo, como cuando pides o dices lo que tomas, usa <em>einen</em>; como sujeto se queda <em>ein</em>. Por eso el vocabulario del curso muestra siempre el artículo."
       }
     ],
     grammar: {
-      title: "Dormire (sin -isc-) frente a capire (con -isc-)",
+      title: "Nominativo y acusativo del artículo",
+      note: "Cambia <b>solo el masculino singular</b>. Después de <em>sein</em> se usa el nominativo.",
       table: {
-        head: ["persona", "dormire", "capire", "en español"],
+        head: ["género", "nominativo", "acusativo", "ejemplo"],
         rows: [
-          ["io", "dormo", "capisco", "duermo / entiendo"],
-          ["tu", "dormi", "capisci", "duermes / entiendes"],
-          ["lui / lei", "dorme", "capisce", "duerme / entiende"],
-          ["noi", "dormiamo", "capiamo", "dormimos / entendemos"],
-          ["voi", "dormite", "capite", "dormís / entendéis"],
-          ["loro", "dormono", "capiscono", "duermen / entienden"]
+          ["masculino", "der / ein", "den / einen", "Ich nehme einen Saft."],
+          ["femenino", "die / eine", "die / eine", "Ich möchte eine Cola."],
+          ["neutro", "das / ein", "das / ein", "Ich nehme ein Wasser."],
+          ["plural", "die / (ninguno)", "die / (ninguno)", "Ich möchte Pommes."]
         ]
       },
       examples: [
-        { tr: "No entiendo, ¿puede repetir?" },
-        { tr: "Prefiero una mesa fuera." },
-        { tr: "¿A qué hora terminas de trabajar?" },
-        { tr: "La tienda abre a las nueve.", note: "aprire, sin -isc-" },
-        { tr: "Salimos mañana por la mañana." },
-        { tr: "Lo entienden todo." }
+        { tr: "Tomo un zumo.", note: "Saft es masculino: einen" },
+        { tr: "Quisiera una cola.", note: "femenino: no cambia" },
+        { tr: "¿Desea un vaso de agua?", note: "forma de cortesía" },
+        { tr: "Sí, con gusto." },
+        { tr: "No, gracias." },
+        { tr: "Esto es un zumo.", note: "después de sein: nominativo" }
       ]
     },
+    culture: {
+      title: "Una mirada alemana: Feierabend, Kneipe y Biergarten",
+      text: "<p><i>Feierabend</i> es el final de la jornada laboral y, por extensión, el tiempo libre que viene después. A quien está terminando de trabajar se le desea <i>Schönen Feierabend!</i> Muchos se reúnen con compañeros o amigos en una <i>Kneipe</i>, un local informal de barrio donde normalmente hay cerveza y bebidas sin alcohol, y a menudo algo de comer. A diferencia de la caña con tapa de muchos bares españoles, en una Kneipe lo habitual es que la comida se pida aparte y no venga incluida con la bebida.</p><p>El <i>Biergarten</i> es un local con mesas al aire libre, típico de la buena estación y de la tradición bávara. En algunos Biergärten tradicionales se puede llevar la propia comida, pero no en todos: conviene mirar los carteles de la entrada. A menudo se pide en la barra y se lleva la bandeja a la mesa, y en otros casos viene el camarero.</p><p>Pedir un agua o un zumo es perfectamente normal: entre las bebidas sin alcohol muy habituales está la <i>Apfelschorle</i>, zumo de manzana con agua con gas. Antes de beber se dice <i>Prost!</i> («¡salud!») y es costumbre mirarse a los ojos.</p>"
+    },
     vocab: [
-      "entender",
-      "terminar",
-      "preferir",
-      "limpiar",
-      "enviar",
-      "dormir",
-      "salir, partir",
-      "abrir",
-      "invitar (a una ronda)",
-      "oír, sentir",
-      "seguir",
-      "¿puede repetir?"
+      "Quisiera ... (fórmula amable)",
+      "¿Desea ...? (cortesía)",
+      "¿Quieres ...? (informal)",
+      "Sí, con gusto.",
+      "Sí, por favor.",
+      "No, gracias.",
+      "¡Salud!",
+      "el zumo de naranja",
+      "el zumo de manzana",
+      "el agua mineral",
+      "el vaso",
+      "la botella"
     ],
     exercises: [
-      { why: "El paréntesis: -isc- en io, tu, lui/lei y loro; ausente en noi y voi." },
-      { why: "Dormire va de corrido, sin infijo." },
       {
-        q: "¿Qué verbo necesita el infijo -isc-?",
-        opts: ["partire", "preferire", "aprire"],
-        why: "Preferire → preferisco, preferisci, preferisce, preferiamo, preferite, preferiscono."
+        tr: "Todas las personas de trinken.",
+        why: "<i>Trinken</i> es regular: raíz <i>trink-</i> más <i>-e, -st, -t, -en, -t, -en</i>."
       },
       {
-        q: "Completa: «Noi non ___ bene.» (No entendemos bien.)",
-        hint: "la forma de noi no lleva infijo",
-        why: "Capiamo: en noi y voi el -isc- desaparece."
+        tr: "El verbo bestellen (pedir): ich, er, ihr.",
+        why: "<i>Bestellen</i> es regular: raíz <i>bestell-</i> más la terminación: <i>ich bestelle, er bestellt, ihr bestellt</i>."
       },
-      { q: "Completa: «Loro ___ alle sette.» (Terminan a las siete.)", why: "finire con -isc- en la forma de loro." },
-      { q: "«Prefiero una mesa fuera.»" },
-      { q: "¿Qué formas llevan -isc-?", opts: ["capisco", "capiamo", "finisce", "dormite", "puliscono"] },
-      { tr: "No entiendo, ¿puede repetir?" },
-      { tr: "Prefiero salir temprano mañana por la mañana." },
-      { tr: "Perdone, no entiendo. ¿Puede repetirlo?" }
+      {
+        q: "Completa: «Ich möchte ___ Saft.» (Quisiera un zumo.)",
+        hint: "der Saft es masculino; acusativo",
+        why: "<b>Einen</b>: después de <i>möchte</i> va el acusativo, y en el masculino <i>ein</i> pasa a <i>einen</i>."
+      },
+      {
+        q: "Completa: «Ich nehme ___ Cola.» (Tomo una cola.)",
+        hint: "die Cola es femenino",
+        why: "<b>Eine</b>: el femenino no cambia en acusativo."
+      },
+      {
+        q: "Te ofrecen: «Möchtest du ein Bier?» No quieres. ¿Qué respondes?",
+        opts: ["Ja, gern.", "Nein, danke.", "Prost!"],
+        why: "<b>Nein, danke</b> es el rechazo claro. <i>Ja, gern</i> acepta; <i>Prost!</i> se dice antes de beber."
+      },
+      {
+        q: "¿Qué oraciones son correctas?",
+        opts: [
+          "Ich trinke einen Tee.",
+          "Ich trinke ein Tee.",
+          "Ich esse eine Suppe.",
+          "Ich nehme ein Brot.",
+          "Ich nehme eine Brot."
+        ],
+        why: "<i>Tee</i> es masculino (<i>einen</i>), <i>Suppe</i> es femenino (<i>eine</i>), <i>Brot</i> es neutro (<i>ein</i>)."
+      },
+      {
+        tr: "Quisiera un zumo de manzana y un agua.",
+        why: "<i>Apfelsaft</i> es masculino: <i>einen</i>. <i>Wasser</i> es neutro: <i>ein</i>."
+      },
+      {
+        q: "Traduce: «Un zumo de naranja y un agua, por favor.»",
+        why: "<i>Einen Orangensaft</i> (masculino) y <i>ein Wasser</i> (neutro): la oración es un pedido abreviado, con un «(ich nehme/möchte) ...» detrás, así que va el acusativo."
+      },
+      {
+        tr: "Quisiera un zumo de naranja y una botella de agua, por favor.",
+        why: "En <i>Orangensaft</i> la <b>g</b> se pronuncia como la <i>j</i> francesa de «jour» (/ʒ/), no como la <i>j</i> española ni como la <i>g</i> de «gato», y <i>-saft</i> empieza por una <b>s</b> sonora."
+      },
+      {
+        tr: "Un zumo de manzana y un vaso de agua, por favor.",
+        why: "<i>Glas</i> tiene la <b>a</b> larga, y <i>Gläser</i> es el plural con diéresis."
+      }
     ]
   },
   "lesson:a1-u03-l4": {
-    theme: "Comida",
-    title: "El artículo partitivo y las cantidades",
+    theme: "Rechazar con educación",
+    title: "Kein o nicht, y doch",
     objectives: [
-      "expresar una cantidad indeterminada con del, della, dei…",
-      "usar un po' di y un chilo di",
-      "pedir la compra en una tienda"
+      "negar un sustantivo con kein",
+      "negar un verbo o un adjetivo con nicht",
+      "responder con doch a una pregunta negativa"
     ],
     theory: [
       {
-        h: "Algo de algo, sin una palabra para «algo»",
-        p: "El italiano expresa la cantidad indeterminada con el <strong>artículo partitivo</strong>: la preposición <em>di</em> fundida con el artículo determinado. <em>Vorrei del pane</em>, «querría pan». En plural cubre lo que el español dice con «unos»: <em>dei pomodori</em>."
+        h: "Dos negaciones, elegidas según lo que niegas",
+        p: "<strong>Kein</strong> niega un sustantivo que lleva artículo indefinido o ninguno: <em>Ich trinke kein Bier</em>, <em>Ich habe keinen Hunger</em>, <em>Wir haben keine Cola</em>. Toma las terminaciones de <em>ein</em>: <em>kein</em> (masculino nominativo y neutro), <em>keinen</em> (masculino acusativo), <em>keine</em> (femenino y plural). <strong>Nicht</strong> niega todo lo demás: un verbo, un adjetivo, un adverbio, o un sustantivo con artículo definido: <em>Ich komme nicht</em>, <em>Der Kaffee ist nicht heiß</em>, <em>Ich trinke den Tee nicht</em>."
       },
       {
-        h: "Las formas",
-        list: [
-          "di + il = <b>del</b> pane · di + lo = <b>dello</b> zucchero · di + l' = <b>dell'</b>acqua",
-          "di + la = <b>della</b> carne · di + i = <b>dei</b> pomodori",
-          "di + gli = <b>degli</b> spinaci · di + le = <b>delle</b> mele"
-        ]
+        contrast: "El español tiene una sola palabra, <em>no</em>, que va delante del verbo: <em>no bebo cerveza</em>, <em>no vengo</em>. En alemán hay que elegir: <em>Ich trinke kein Bier</em> (sustantivo) e <em>Ich komme nicht</em> (verbo), y <em>nicht</em> no va delante del verbo: palabra por palabra sería «yo vengo no». <em>Kein</em> se parece a «ningún» o a «no ... un»: <em>Ich habe keinen Bruder</em> es «no tengo ningún hermano». Y mientras el español acumula negaciones (<em>no tengo ningún hermano</em>), el alemán usa una sola."
       },
       {
-        h: "Las alternativas",
-        p: "En lugar del partitivo puedes usar <strong>un po' di</strong> («un poco de») o una medida: <em>un chilo di, un etto di, mezzo litro di</em>. En la negación el partitivo suele desaparecer: <em>non ho pane</em>, no «non ho del pane»."
+        h: "Dónde va nicht",
+        p: "Posición: si <em>nicht</em> niega toda la oración, suele ir hacia el <strong>final</strong>: <em>Ich komme heute nicht</em>. Si niega una palabra concreta, va <strong>antes</strong> de ella: <em>Der Kaffee ist nicht heiß</em>, <em>Ich trinke nicht gern Bier</em>. Es una tendencia, no una ley: en los ejemplos de la lección la verás en acción."
       },
       {
-        contrast: "Esta es la construcción que el español no tiene. Donde tú dices «quiero pan» a secas, el italiano quiere <em>del pane</em>. Omitirlo no es agramatical, pero suena entrecortado, como una lista de la compra leída en voz alta. Es de los detalles que más rápido mejoran la naturalidad."
+        h: "Doch: contradecir una pregunta negativa",
+        p: "Si alguien te hace una pregunta negativa (<em>Trinkst du kein Bier?</em>) y quieres decir que sí, la respuesta es <strong>doch</strong>: <em>Doch, ich trinke gern Bier</em>. Si quieres confirmar la negación, responde <em>Nein</em>: <em>Nein, ich trinke kein Bier</em>."
       },
       {
-        tip: "<b>Un etto</b> son 100 gramos y es la unidad de trabajo en la charcutería: <em>due etti di prosciutto</em> = 200 gramos de jamón."
+        trap: "El español responde «sí» a una pregunta negativa para contradecirla: <em>¿No bebes cerveza? Sí, la bebo</em>. En alemán <em>Ja</em> puede resultar ambiguo, y se usa <em>doch</em>. Otro error frecuente, sobre todo si estás acostumbrado a acumular negaciones, es «nicht kein»: después de <em>kein</em> no hace falta otra negación. Y con un sustantivo sin artículo no se dice <em>Ich trinke nicht Bier</em>, sino <em>Ich trinke kein Bier</em>."
+      },
+      {
+        tip: "Para rechazar con educación bastan pocas fórmulas: <em>Nein, danke</em>, <em>Heute nicht, danke</em>, <em>Kein Bier, bitte</em>. Son claras y amables, y no necesitan explicación."
       }
     ],
     grammar: {
-      title: "El artículo partitivo y las expresiones de cantidad",
+      title: "Kein y nicht",
+      note: "<b>Kein</b> niega los sustantivos con artículo indefinido o sin artículo; <b>nicht</b> niega el resto.",
       table: {
-        head: ["contexto", "forma", "ejemplo"],
+        head: ["género", "nominativo", "acusativo", "ejemplo"],
         rows: [
-          ["m. + consonante", "del", "del pane"],
-          ["m. + s+cons., z", "dello", "dello zucchero"],
-          ["+ vocal", "dell'", "dell'acqua, dell'olio"],
-          ["f. + consonante", "della", "della carne"],
-          ["m. plural", "dei / degli", "dei pomodori, degli spinaci"],
-          ["f. plural", "delle", "delle mele"]
+          ["masculino", "kein", "keinen", "Ich trinke keinen Tee."],
+          ["femenino", "keine", "keine", "Ich nehme keine Cola."],
+          ["neutro", "kein", "kein", "Ich trinke kein Bier."],
+          ["plural", "keine", "keine", "Wir haben keine Äpfel."]
         ]
       },
       examples: [
-        { tr: "Querría pan." },
-        { tr: "Compro manzanas y uvas." },
-        { tr: "Un poco de sal, no mucha." },
-        { tr: "Doscientos gramos de jamón serrano." },
-        { tr: "Medio litro de leche." },
-        { tr: "No tengo azúcar en casa.", note: "sin partitivo en la negación" }
+        { tr: "No bebo cerveza.", note: "kein: sustantivo sin artículo" },
+        { tr: "No tengo hambre.", note: "Hunger es masculino: keinen" },
+        { tr: "El café no está caliente.", note: "nicht: adjetivo" },
+        { tr: "Hoy no vengo.", note: "nicht: verbo" },
+        { tr: "¿No bebes cerveza? Sí, con gusto.", note: "doch contradice la pregunta negativa" },
+        { tr: "No me gusta beber cerveza.", note: "nicht gern" }
       ]
     },
     vocab: [
-      "pan",
-      "leche",
-      "agua",
-      "azúcar",
-      "sal",
-      "aceite, aceite de oliva",
-      "tomates",
-      "manzanas",
-      "cien gramos",
-      "un kilo",
-      "un poco",
-      "medio litro",
-      "así está bien, gracias",
-      "¿cuánto quiere?"
+      "el bar de barrio (Kneipe)",
+      "el jardín de cerveza (Biergarten)",
+      "el final de la jornada laboral, el tiempo libre después del trabajo",
+      "el hambre",
+      "la sed",
+      "el alcohol",
+      "sin alcohol",
+      "hoy",
+      "sí (respuesta que contradice una pregunta negativa)",
+      "no (verbo, adjetivo, adverbio)",
+      "ningún, no ... un (delante de un sustantivo)",
+      "saber (a); estar rico",
+      "todavía; otro, más",
+      "La cuenta, por favor."
     ],
     exercises: [
       {
-        q: "¿Cómo pides pan?",
-        opts: ["Vorrei il pane", "Vorrei del pane", "Vorrei un pane"],
-        why: "El partitivo <b>del</b> expresa una cantidad indeterminada."
+        q: "¿Cómo se dice «No bebo cerveza»?",
+        opts: ["Ich trinke kein Bier.", "Ich trinke keinen Bier.", "Ich trinke keine Bier."],
+        why: "<i>Bier</i> es neutro, por tanto <b>kein</b>. Para nombrar lo que no bebes (un sustantivo sin artículo) se usa <i>kein</i>."
       },
       {
-        q: "Completa: «Compro ___ acqua.» (Compro agua.)",
-        why: "di + l' = dell', porque acqua empieza por vocal."
+        q: "¿Qué negación hace falta? «Ich komme heute ___.»",
+        opts: ["kein", "nicht", "keine"],
+        why: "Aquí se niega un verbo, no un sustantivo: <b>nicht</b>."
       },
       {
-        q: "Completa: «Vorrei ___ mele.» (Querría unas manzanas.)",
-        why: "di + le = delle, femenino plural."
+        q: "Completa: «Ich habe ___ Hunger.» (No tengo hambre.)",
+        hint: "der Hunger es masculino; acusativo",
+        why: "<i>Haben</i> pide acusativo y <i>Hunger</i> es masculino: <b>keinen</b>."
       },
       {
-        q: "Elige el artículo partitivo.",
-        items: ["pan", "azúcar", "carne", "aceite", "tomates", "espinacas"]
+        q: "Completa: «Der Kaffee ist ___ heiß.» (El café no está caliente.)",
+        hint: "negación de un adjetivo",
+        why: "Un adjetivo se niega con <b>nicht</b>, colocado delante."
       },
       {
-        q: "¿Cuánto son «due etti»?",
-        opts: ["20 gramos", "200 gramos", "2 kilos"],
-        why: "Un etto son 100 g, así que due etti = 200 g."
+        q: "Ich trinke ___ ... (complemento directo, con artículo definido). Elige la forma correcta para cada sustantivo.",
+        why: "Con el artículo definido, en acusativo solo cambia el masculino: <i>den Tee</i>, <i>den Saft</i>; <i>die Cola</i>, <i>die Limonade</i> y <i>das Bier</i>, <i>das Wasser</i> se quedan igual. Un sustantivo con artículo definido se niega con <i>nicht</i>: <i>Ich trinke den Tee nicht</i>.",
+        items: ["té", "cola", "cerveza", "zumo", "refresco dulce con gas", "agua"]
       },
-      { q: "«Medio litro de leche, por favor.»" },
       {
-        q: "Estás en el mostrador de una tienda de alimentación.",
-        setting: "Una alimentari de barrio, en el mostrador de embutidos.",
+        q: "Traduce: «Hoy no bebo cerveza.»",
+        why: "<i>Heute trinke ich kein Bier</i>: con <i>heute</i> en primera posición, el sujeto pasa detrás del verbo."
+      },
+      {
+        q: "Completa la respuesta.",
+        tr: "¿No bebes cerveza? Sí que bebo, con gusto.",
+        why: "<b>Doch</b> contradice una pregunta negativa. <i>Ja</i> sería ambiguo."
+      },
+      {
+        q: "Un amigo te ve sin tu vaso de siempre.",
+        setting: "Después del trabajo, en una Kneipe.",
         lines: [
-          { tr: "¡Buenos días! ¿Qué le pongo?" },
-          { tr: "Pide 200 g de jamón.", answerTr: "Doscientos gramos de jamón, por favor." },
-          { tr: "Aquí tiene. ¿Algo más?" },
-          { tr: "Pide también un poco de pan.", answerTr: "Pan también, gracias." }
+          { tr: "¿No bebes cerveza?" },
+          { tr: "Responde que sí, pero hoy no.", answerTr: "Sí que bebo, pero hoy no." },
+          { tr: "¿Entonces un zumo?" },
+          { tr: "Acepta y pide un zumo de manzana.", answerTr: "Sí, con gusto. Un zumo de manzana, por favor." }
         ]
       },
-      { q: "Completa la lista de la compra.", tr: "Compro pan, agua y tomates." },
-      { tr: "Un kilo de tomates y albahaca, por favor." },
-      { tr: "Doscientos gramos de queso, por favor. Ya está." }
+      {
+        tr: "Tengo hambre, pero hoy no como pescado.",
+        why: "<i>Fisch</i> es masculino, de ahí <i>keinen Fisch</i>. El sonido <b>sch</b> es como la «sh» del inglés «ship», que no existe en español, y en <i>Hunger</i> la <b>h</b> inicial es un soplo de aire, no una <i>j</i> española."
+      },
+      {
+        tr: "No, gracias. Hoy no bebo alcohol.",
+        why: "<i>Heute</i>: el grupo <b>eu</b> suena «oi»."
+      }
     ]
   },
   "lesson:a1-u03-test": {
-    theme: "Prueba",
-    title: "Prueba de la unidad 3",
-    objectives: ["comprobar piacere, las conjugaciones -ere e -ire, el partitivo"],
-    theory: [{ p: "Diez preguntas. Se aprueba con un 70%." }],
-    exercises: [
-      { q: "«Mi ___ gli spaghetti.» (Me gustan los espaguetis.)" },
-      { q: "«Non mi ___ il pesce crudo.»" },
+    theme: "Verificación",
+    title: "Verificación de la unidad 3",
+    objectives: ["comprobar el cambio de vocal, el acusativo, kein y nicht"],
+    theory: [
       {
-        q: "«A Marco le gusta el vino» es:",
-        opts: ["Marco piace il vino", "A Marco piace il vino", "Marco piacciono il vino"]
+        p: "Diez preguntas sobre toda la unidad. Se supera con el 70%. No repases las lecciones mientras respondes: si no recuerdas algo, es mejor volver a repasar."
+      }
+    ],
+    exercises: [
+      {
+        q: "Completa: «Du ___ gern Fisch.» (Te gusta comer pescado.)",
+        hint: "essen, segunda persona del singular",
+        why: "<b>Du isst</b>: la vocal cambia y la terminación se reduce."
       },
-      {  },
-      {  },
-      { q: "«___ due posti liberi.» (Hay dos sitios libres.)" },
-      { q: "El artículo partitivo:", items: [, , , ] },
-      { q: "«Prefiero el vino blanco.»" },
-      { tr: "Hay aceitunas y queso." },
-      { tr: "Me gusta mucho el aperitivo italiano." }
+      {
+        tr: "El verbo sprechen: du, er, ihr.",
+        why: "<i>du sprichst, er spricht, ihr sprecht</i>: la vocal cambia solo con <i>du</i> y <i>er</i>."
+      },
+      {
+        tr: "El verbo nehmen: ich, du, wir.",
+        why: "<i>ich nehme, du nimmst, wir nehmen</i>: cambia solo la forma de <i>du</i>."
+      },
+      {
+        q: "Completa: «Ich möchte ___ Apfelsaft.» (Quisiera un zumo de manzana.)",
+        hint: "der Apfelsaft es masculino",
+        why: "<b>Einen</b>: acusativo masculino."
+      },
+      {
+        q: "Completa: «Der Saft ist ___ kalt.» (El zumo no está frío.)",
+        hint: "negación de un adjetivo",
+        why: "Un adjetivo se niega con <b>nicht</b>."
+      },
+      {
+        q: "Elige el artículo indefinido correcto. «Ich nehme ___ ...»",
+        items: ["café", "cola", "pan", "zumo"]
+      },
+      {
+        q: "¿Cómo se dice «No como carne»?",
+        opts: ["Ich esse kein Fleisch.", "Ich esse keinen Fleisch.", "Ich esse keine Fleisch."],
+        why: "<i>Fleisch</i> es neutro, por tanto <b>kein</b>."
+      },
+      {
+        q: "Traduce: «Hoy no bebo cerveza, tomo un zumo.»",
+        why: "<i>Kein Bier</i> (sustantivo), <i>einen Saft</i> (masculino acusativo)."
+      },
+      {
+        tr: "Tú comes pescado con gusto, pero yo no como pescado.",
+        why: "<i>Du isst</i> con cambio de vocal; <i>keinen Fisch</i> porque <i>Fisch</i> es masculino."
+      },
+      {
+        tr: "Quisiera un zumo, pero no una cerveza, por favor.",
+        why: "<i>Einen Saft</i> y <i>kein Bier</i>: el masculino cambia, el neutro no."
+      }
     ]
   }
 });
