@@ -107,8 +107,8 @@ fissa cosa ogni unità presuppone). `c` e `d` sono `ok` fra loro. `e` è `seq` p
 
 ### F1.F - Rebrand
 
-- [ ] T1.60 | F1 | Design system: nome, bandiera, palette OKLCH (nero-rosso-oro a chroma controllata) in `assets/css/`, icone e favicon | 2h | verify: `npx playwright test tests/dom/contrast.spec.js` verde e `grep -c "Impara l'Italiano" assets/css/*.css index.html` = 0 (rosso) | e2e | dip: T0.12 | par: ok | rollback: revert | R28
-- [ ] T1.61 | F1 | `index.html` (lang, title, og, favicon, brand, `ui-it.js` al posto di `ui-de.js`), `manifest.webmanifest`, `404.html`; `node scripts/build_og.mjs` | 1h | verify: `node scripts/check_ogtags.mjs` esce 0 e `npx playwright test tests/dom/heads.spec.js` (rosso: titolo italiano) | e2e | dip: T1.60, T1.51 | par: seq | rollback: revert | R4, R28
+- [x] T1.60 | F1 | Design system: nome, bandiera, palette OKLCH (nero-rosso-oro a chroma controllata) in `assets/css/`, icone e favicon | 2h | verify: `npx playwright test tests/dom/contrast.spec.js` verde e `grep -c "Impara l'Italiano" assets/css/*.css index.html` = 0 (rosso) | e2e | dip: T0.12 | par: ok | rollback: revert | R28
+- [x] T1.61 | F1 | `index.html` (lang, title, og, favicon, brand, `ui-it.js` al posto di `ui-de.js`), `manifest.webmanifest`, `404.html`; `node scripts/build_og.mjs` | 1h | verify: `node scripts/check_ogtags.mjs` esce 0 e `npx playwright test tests/dom/heads.spec.js` (rosso: titolo italiano) | e2e | dip: T1.60, T1.51 | par: seq | rollback: revert | R4, R28
 - [ ] T1.62 | F1 | `sw.js` PRECACHE allineato a `index.html`, `SW_VERSION` | 0,25h | verify: `node scripts/check_precache.mjs && node scripts/check_swversion.mjs` (rosso: ui-de in PRECACHE) | integrazione | dip: T1.61 | par: seq | rollback: revert | R29
 
 ### F1.G - Dati: cutover e A1 U1-U3

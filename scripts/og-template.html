@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Impara l'Italiano — social preview</title>
+<title>Deutsch lernen · social preview</title>
 
 <!-- The card is built out of the course's own stylesheet, not out of a copy
      of its colours. app.css brings three things at once: the two self-hosted
@@ -25,18 +25,18 @@
     display:flex; align-items:center;
   }
 
-  /* The tricolore as an edge, not as a decoration in the middle. Three
-     stacked segments on the left rule: sage, paper, rose — the same softened
-     flag the whole course is built on. It occupies 14px of 1200, which keeps
+  /* The flag as an edge, not as a decoration in the middle. Three
+     stacked segments on the left rule: black, red, gold — the same flag
+     the whole course is built on. It occupies 14px of 1200, which keeps
      the accent well under the share of the surface an accent is allowed. */
   .og__rule{
     position:fixed; left:0; top:0; bottom:0; width:14px;
     display:flex; flex-direction:column;
   }
   .og__rule > span{flex:1;}
-  .og__rule > span:nth-child(1){background:var(--salvia-mid);}
-  .og__rule > span:nth-child(2){background:var(--paper-2);}
-  .og__rule > span:nth-child(3){background:var(--rosa-mid);}
+  .og__rule > span:nth-child(1){background:var(--tri-black);}
+  .og__rule > span:nth-child(2){background:var(--tri-red);}
+  .og__rule > span:nth-child(3){background:var(--tri-gold);}
 
   .og__card{padding:0 96px 0 110px;}
 
@@ -48,7 +48,7 @@
     color:var(--rosa-deep);
   }
 
-  /* The course name stays Italian in every language, exactly as in the rail. */
+  /* The course name stays German in every language, exactly as in the rail. */
   .og__title{
     margin:0;
     font-family:var(--display);
@@ -73,7 +73,7 @@
     color:var(--ink-faint);
   }
 
-  /* A2 -> C2 as a badge rather than as prose: it is the one claim on the
+  /* A1 -> C2 as a badge rather than as prose: it is the one claim on the
      card that is a fact about the syllabus and not a sentence about it. */
   .og__badge{
     padding:8px 18px;
@@ -90,8 +90,8 @@
 
 <div class="og__card">
   <p class="og__kicker">Free · open source · no account</p>
-  <h1 class="og__title">Impara l'Italiano</h1>
-  <p class="og__lead">An Italian course that runs in your browser, works offline,
+  <h1 class="og__title">Deutsch lernen</h1>
+  <p class="og__lead">A German course that runs in your browser, works offline,
     and explains the grammar in the language you already speak.</p>
   <p class="og__foot">
     <span class="og__badge">A1 &rarr; C2</span>

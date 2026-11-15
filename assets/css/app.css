@@ -1,10 +1,10 @@
 /* ============================================================
-   Impara l'Italiano — the visual system.
+   Deutsch lernen — the visual system.
 
-   Built on the "Impara Italiano" design system that lives in
-   assets/Design system Impara Italiano/: verde as the primary, rosso as
-   the single accent, warm paper neutrals in light and a cool ink base in
-   dark. The palette itself, with the hex each step came from, is in the
+   Built on the "Deutsch lernen" design system that lives in
+   assets/Design system Deutsch lernen/: nero as the primary, rosso as
+   the single accent, oro for highlights, warm paper neutrals in light and
+   a cool ink base in dark. The palette itself, with the hex each step came from, is in the
    PALETTE block below; this file holds the components that spend it.
    ============================================================ */
 
@@ -103,24 +103,44 @@
 }
 
 /* ============================================================
-   PALETTE — the "Impara Italiano" design system, in OKLCH.
+   PALETTE — the "Deutsch lernen" design system, in OKLCH.
 
-   The system is authored in sRGB hex (assets/Design system Impara
-   Italiano/tokens/colors.css); the steps below are the same colours
-   converted, because the rest of this file measures and mixes in OKLCH
-   and a file in two colour spaces lies about lightness in half its rules.
-   The hex each step came from is written next to it, so a drift against
-   the source is a diff and not an opinion.
+   The course keeps the identity it was born with (warm paper, serif
+   headings, one primary, one accent) and swaps the flag it is built on:
+   the Italian green-white-red became the German black-red-gold. The
+   system is authored in sRGB hex (assets/Design system Deutsch lernen/
+   tokens/colors.css); the steps below are the same colours converted,
+   because the rest of this file measures and mixes in OKLCH and a file in
+   two colour spaces lies about lightness in half its rules. The hex each
+   step came from is written next to it, so a drift against the source is a
+   diff and not an opinion.
 
-   Two brand hues with a division of labour, and it is the division that
-   matters more than the hues: VERDE is the primary — progress, lessons
-   done, every ordinary action. ROSSO is the single energetic accent —
-   streaks, milestones, the citizenship track. Red is NOT the error colour:
-   errors are terracotta, so that a wrong answer never borrows the mark.
+   TOKEN NAMES ARE SLOTS, NOT COLOURS. --salvia*, --rosa* and --oro* are
+   read by assets/js (inline styles) and by every component below, so they
+   keep their names while the colour behind them changes: --salvia* is the
+   PRIMARY slot (now black), --rosa* the single ACCENT slot (now red),
+   --oro* the highlight slot (now gold). Renaming them would be a 90-place
+   edit with no visible gain.
+
+   Three flag colours with a division of labour, and it is the division
+   that matters more than the hues: BLACK is the primary and the ink of the
+   brand panel - every ordinary action, links, progress. RED is the single
+   energetic accent - streaks, milestones, the exam track. GOLD is the
+   highlight - the "new" chip, the mark, the callout. Red is NOT the error
+   colour: errors are terracotta, so that a wrong answer never borrows the
+   mark. Success stays a functional green (--ok), distinct from the brand:
+   a black primary can no longer double as "correct".
+
+   Chroma is controlled: black carries 0.010, red 0.18, gold 0.07 on the
+   pale fills. The flag's own red and yellow sit at 0.22 and 0.17; at that
+   saturation red text on paper fails 4.5:1 and a yellow fill becomes a
+   highlighter, so the course uses a deep red and a pale gold and keeps the
+   full gold only for the 4px flag rule (--tri-gold).
 
    Neutrals are warm paper, not cold grey (an exercise book, not a
-   dashboard). Dark mode drops onto a cool ink base rather than a dark
-   green, so both brand hues stay recognisable on top of it.
+   dashboard). Dark mode drops onto a cool ink base, and the primary flips
+   to a pale warm white (as every black-primary system does) so that red
+   and gold both stay recognisable on top of it.
    ============================================================ */
 :root{
   /* --- superfici: carta --- */
@@ -139,28 +159,28 @@
   --ink-soft:     oklch(0.433 0.014 59);   /* paper-700 #574F49 */
   --ink-faint:    oklch(0.529 0.016 67);   /* paper-600 #726A62 */
 
-  /* --- verde: il primario --- */
-  --salvia:       oklch(0.951 0.023 169);  /* green-100 #E1F4EC */
-  --salvia-mid:   oklch(0.656 0.119 168);  /* green-500 #2FA883 */
-  --salvia-deep:  oklch(0.515 0.102 170);  /* green-700 #007A5E — mark */
+  /* --- nero: il primario --- */
+  --salvia:       oklch(0.940 0.008 80);   /* black-100 #EEEBE5 */
+  --salvia-mid:   oklch(0.480 0.012 62);   /* black-600 #635C57 — 6.2:1 on paper */
+  --salvia-deep:  oklch(0.265 0.010 62);   /* black-800 #292420 — mark, 14.5:1 */
 
   /* --- rosso: l'unico accento --- */
-  --rosa:         oklch(0.945 0.022 7);    /* red-100 #FBE7EA */
-  --rosa-deep:    oklch(0.520 0.172 18);   /* red-700 #B72E42 — mark */
+  --rosa:         oklch(0.945 0.025 22);   /* red-100 #FDE7E5 */
+  --rosa-deep:    oklch(0.500 0.180 22);   /* red-700 #B32130 — mark, 6.2:1 */
 
   /* --- accenti di servizio --- */
   /* Gold does not flip with the theme, and that is deliberate: it is a
      fill that always carries dark ink (badge, highlight, test marker), so
      a pale step plus a fixed --on-oro passes in both themes and removes
      the hardcoded dark literal this file used to repeat at every use. */
-  --oro:          oklch(0.946 0.037 86);   /* gold-100 #F8ECD2 */
+  --oro:          oklch(0.945 0.070 92);   /* gold-100 #FEECB8 */
   /* One step past the end of the system's gold ramp, and it is here because
-     the ramp's own pairing does not hold: gold-700 on gold-100 — the design
-     system's warning badge — measures 4.30:1, under the 4.5 that WCAG asks
-     of small text, and the contrast gate reads it on the "new word" chip in
-     the five-minute session. The gate is right and the ramp is short, so the
-     step is extended rather than the threshold lowered. 5.6:1 on gold-100. */
-  --oro-deep:     oklch(0.490 0.100 74);   /* gold-800, derived — 5.6:1 */
+     the ramp's own pairing does not hold: a mid gold on gold-100 falls under
+     the 4.5 that WCAG asks of small text, and the contrast gate reads it on
+     the "new word" chip in the five-minute session. The gate is right and
+     the ramp is short, so the step is extended rather than the threshold
+     lowered. 6.0:1 on gold-100. */
+  --oro-deep:     oklch(0.460 0.095 78);   /* gold-800, derived — #755002 */
   /* Teal is the system's "info" hue; it replaces the lavender the earlier
      palette used, which belonged to no part of the mark. */
   --lavanda:      oklch(0.932 0.018 214);  /* teal-100 #DCECF0 */
@@ -178,7 +198,7 @@
   /* --- linee --- */
   --line:         oklch(0.903 0.015 81);   /* paper-200 #E4DED4 */
   --line-strong:  oklch(0.821 0.018 76);   /* paper-300 #CBC3B8 */
-  --line-mint:    oklch(0.903 0.045 169);  /* green-200 #C3E9DA */
+  --line-mint:    oklch(0.800 0.010 75);   /* black-200 #C2BDB7 */
   /* The outline of a control, not a decorative rule: a ghost button has the
      paper as its fill, so this edge is the only sign that it is a button at
      all, and WCAG 1.4.11 asks 3:1 of such a sign. --line-strong gives 1.6:1
@@ -189,29 +209,32 @@
   /* One pair per fill, flipped in dark mode where the fills themselves get
      lighter. Before these existed, every filled control repeated a literal
      and every dark-theme override had to repeat it back. */
-  --on-primary:   oklch(0.987 0.004 56);   /* paper-0 on green-700 — 5.1:1 */
-  --on-accent:    oklch(0.987 0.004 56);   /* paper-0 on red-700   — 5.8:1 */
+  --on-primary:   oklch(0.987 0.004 56);   /* paper-0 on black-800 — 14.8:1 */
+  --on-accent:    oklch(0.987 0.004 56);   /* paper-0 on red-700   —  6.4:1 */
   --on-oro:       oklch(0.211 0.007 67);   /* paper-950 on gold-100 */
   /* The halo around a focused field, the current lesson and the microphone.
      It has to be its own token rather than a literal of the fill: in the dark
      theme --salvia-deep and --rosa-deep move several steps lighter, and a glow
      frozen at the light value stops belonging to the thing it surrounds. */
-  --glow-primary: 0.515 0.102 170;
-  --glow-accent:  0.520 0.172 18;
+  --glow-primary: 0.265 0.010 62;
+  --glow-accent:  0.500 0.180 22;
 
   /* --- fondi tenui e stati --- */
   /* The rail is a dark brand panel in BOTH themes, so the ink on it does
      not flip: --on-rail is a constant, unlike --on-primary. */
   --on-rail:      oklch(0.987 0.004 56);
-  --on-tonal:     oklch(0.422 0.086 165);  /* green-800 on a green-100 fill */
-  --oro-soft:     oklch(0.946 0.037 86);   /* gold-100 — callout, chip */
-  --btn-primary-hover: oklch(0.422 0.086 165);  /* green-800 — 7.7:1 */
-  --btn-tonal-hover:   oklch(0.903 0.045 169);  /* green-200 */
+  --on-tonal:     oklch(0.265 0.010 62);   /* black-800 on a black-100 fill */
+  --oro-soft:     oklch(0.945 0.070 92);   /* gold-100 — callout, chip */
+  --btn-primary-hover: oklch(0.400 0.012 62);   /* black-700 — 8.9:1 */
+  --btn-tonal-hover:   oklch(0.895 0.010 78);   /* black-150 */
 
-  /* --- il motivo di marchio: una riga tricolore, usata una volta sola --- */
-  --tri-green:    oklch(0.515 0.102 170);
-  --tri-white:    oklch(0.987 0.004 56);
-  --tri-red:      oklch(0.520 0.172 18);
+  /* --- il motivo di marchio: una riga nero-rosso-oro, usata una volta sola --- */
+  /* The rule sits on the dark rail, so its black is darker than the panel
+     (0.12 against 0.30-0.38) and its gold is the one place the flag's own
+     saturated yellow is allowed. */
+  --tri-black:    oklch(0.120 0.006 62);
+  --tri-red:      oklch(0.560 0.200 25);
+  --tri-gold:     oklch(0.850 0.165 90);
 
   /* --- ombre: a tono caldo, mai nero puro --- */
   --shadow-s: 0 1px 2px oklch(0.211 0.007 67 / 0.08);
@@ -225,7 +248,7 @@
 
   /* --- metriche --- */
   /* Measured radii, 8/12/18/24 on a 4px grid. The pill (999px) is reserved
-     for badges, tags and the tricolor rail — not put on every card. */
+     for badges, tags and the flag rail — not put on every card. */
   --rail-w: 272px;
   --r-s: 8px;
   --r-m: 12px;
@@ -235,7 +258,7 @@
 }
 
 /* ============================================================
-   DARK — a cool ink base, not a dark green. Only the aliases remap; the
+   DARK — a cool ink base, not a pure black. Only the aliases remap; the
    ramp each one points at is the same ramp as above, one or two steps
    lighter where the surface got darker.
    ============================================================ */
@@ -249,12 +272,12 @@
   --ink-soft:     oklch(0.821 0.018 76);   /* paper-300 #CBC3B8 — 10.3:1 */
   --ink-faint:    oklch(0.720 0.019 73);   /* paper-400 #ACA398 —  7.3:1 */
 
-  --salvia:       oklch(0.320 0.055 168);  /* wash, not a ramp step */
-  --salvia-mid:   oklch(0.588 0.115 168);  /* green-600 #14926F */
-  --salvia-deep:  oklch(0.739 0.105 168);  /* green-400 #5FC09E — 8.2:1 */
+  --salvia:       oklch(0.300 0.010 62);   /* wash, not a ramp step */
+  --salvia-mid:   oklch(0.640 0.012 75);   /* black-400, lifted */
+  --salvia-deep:  oklch(0.910 0.010 80);   /* pale warm white — 14:1 */
 
-  --rosa:         oklch(0.320 0.060 17);   /* wash, not a ramp step */
-  --rosa-deep:    oklch(0.736 0.103 11);   /* red-400 #E28E9A — 7.4:1 */
+  --rosa:         oklch(0.320 0.060 22);   /* wash, not a ramp step */
+  --rosa-deep:    oklch(0.740 0.115 22);   /* red-400 — 7.5:1 */
 
   /* --oro and --on-oro do not flip: see the note in the light block. */
   --oro-deep:     oklch(0.678 0.127 73);   /* gold-500 #C68A2E — 6.1:1 */
@@ -268,20 +291,20 @@
 
   --line:         oklch(0.296 0.016 241);  /* ink-700 */
   --line-strong:  oklch(0.373 0.019 242);  /* ink-600 */
-  --line-mint:    oklch(0.422 0.086 165);  /* green-800 */
+  --line-mint:    oklch(0.420 0.010 62);   /* black-500 */
   /* Same job as in the light theme, opposite direction: the outline goes
      lighter than the paper instead of darker. 3.4:1 against the card. */
   --line-control: oklch(0.529 0.016 67);   /* paper-600 #726A62 */
 
   /* The fills get lighter in the dark theme, so the ink on top goes dark. */
-  --on-primary:   oklch(0.175 0.009 241);  /* ink-950 on green-400 — 8.6:1 */
-  --on-accent:    oklch(0.175 0.009 241);  /* ink-950 on red-400   — 7.7:1 */
-  --on-tonal:     oklch(0.980 0.007 81);   /* paper-50 on a green wash */
-  --glow-primary: 0.739 0.105 168;
-  --glow-accent:  0.736 0.103 11;
+  --on-primary:   oklch(0.175 0.009 241);  /* ink-950 on the pale white — 14:1 */
+  --on-accent:    oklch(0.175 0.009 241);  /* ink-950 on red-400        —  7.7:1 */
+  --on-tonal:     oklch(0.980 0.007 81);   /* paper-50 on a black wash */
+  --glow-primary: 0.910 0.010 80;
+  --glow-accent:  0.740 0.115 22;
   --oro-soft:     oklch(0.300 0.055 74);
-  --btn-primary-hover: oklch(0.824 0.077 168);  /* green-300 */
-  --btn-tonal-hover:   oklch(0.380 0.065 168);
+  --btn-primary-hover: oklch(0.820 0.012 80);   /* black-100, one step down */
+  --btn-tonal-hover:   oklch(0.370 0.010 62);
 
   --shadow-s: 0 1px 2px oklch(0 0 0 / 0.40);
   --shadow-m: 0 10px 24px oklch(0 0 0 / 0.50);
@@ -302,12 +325,12 @@ body{
   line-height:1.62;
   color:var(--ink);
   background:var(--paper);
-  /* Two soft washes rather than a flat sheet of paper: green-200 at the top
-     right, gold-100 at the bottom left. No red down here — the accent is
-     spent on streaks and the citizenship track, not on wallpaper. */
+  /* Two soft washes rather than a flat sheet of paper: gold at the top
+     right, a trace of red at the bottom left. Both stay under 0.09 chroma
+     and half alpha — the flag is an edge of the page, not its wallpaper. */
   background-image:
-    radial-gradient(circle at 92% -4%, oklch(0.903 0.045 169 / .55), transparent 46%),
-    radial-gradient(circle at -6% 102%, oklch(0.946 0.037 86 / .70), transparent 44%);
+    radial-gradient(circle at 92% -4%, oklch(0.915 0.085 92 / .50), transparent 46%),
+    radial-gradient(circle at -6% 102%, oklch(0.930 0.040 22 / .55), transparent 44%);
   background-attachment:fixed;
   -webkit-font-smoothing:antialiased;
 }
@@ -316,8 +339,8 @@ body{
    dark theme keeps the shape and drops both the lightness and the alpha. */
 :root[data-theme="dark"] body{
   background-image:
-    radial-gradient(circle at 92% -4%, oklch(0.422 0.086 165 / .38), transparent 46%),
-    radial-gradient(circle at -6% 102%, oklch(0.363 0.116 17 / .26), transparent 44%);
+    radial-gradient(circle at 92% -4%, oklch(0.420 0.085 90 / .30), transparent 46%),
+    radial-gradient(circle at -6% 102%, oklch(0.363 0.116 22 / .26), transparent 44%);
 }
 
 h1,h2,h3,h4{font-family:var(--display);font-weight:600;line-height:1.22;margin:0;letter-spacing:-0.01em;}
@@ -351,25 +374,26 @@ button{font:inherit;color:inherit;}
   position:sticky;top:0;height:100vh;
   display:flex;flex-direction:column;
   /* fallback for browsers with no oklab interpolation */
-  background: oklch(0.308 0.059 168);
-  /* The brand panel: the deep end of the primary ramp, green-800 down to
-     green-950. Every stop is dark enough for paper-white to hold 4.5:1 over
-     the whole height — the lightest of them, green-800, measures 7.7:1, and
-     the contrast gate reads the stops straight out of this declaration. */
+  background: oklch(0.290 0.010 62);
+  /* The brand panel: the deep end of the black ramp, a warm charcoal
+     (0.36) down to near black (0.20). Every stop is dark enough for
+     paper-white to hold 4.5:1 over the whole height — the lightest of them
+     measures 10:1, and the contrast gate reads the stops straight out of
+     this declaration. */
   background:
     linear-gradient(172deg in oklab,
-      oklch(0.422 0.086 165) 0%,
-      oklch(0.308 0.059 168) 45%,
-      oklch(0.231 0.040 172) 100%);
+      oklch(0.360 0.011 62) 0%,
+      oklch(0.290 0.010 62) 45%,
+      oklch(0.205 0.008 62) 100%);
   color:var(--on-rail);
   z-index:40;
 }
 :root[data-theme="dark"] .rail{
-  background: oklch(0.231 0.040 172);
+  background: oklch(0.225 0.011 242);
   background:linear-gradient(172deg in oklab,
-    oklch(0.308 0.059 168) 0%,
-    oklch(0.231 0.040 172) 55%,
-    oklch(0.201 0.011 242) 100%);
+    oklch(0.300 0.012 242) 0%,
+    oklch(0.225 0.011 242) 55%,
+    oklch(0.190 0.010 242) 100%);
 }
 
 .rail__head{padding:26px 22px 16px;}
@@ -377,7 +401,7 @@ button{font:inherit;color:inherit;}
   font-family:var(--display);font-weight:600;font-size:1.34rem;
   margin:0 0 2px;display:flex;align-items:center;gap:9px;line-height:1.2;
 }
-/* The one brand flourish, and it appears exactly once: a thin tricolor
+/* The one brand flourish, and it appears exactly once: a thin black-red-gold
    rule under the course name. It also retires the flag emoji that stood
    before the title — the design system asks for no emoji in the interface,
    and the span is aria-hidden, so nothing is lost to a screen reader. */
@@ -387,7 +411,7 @@ button{font:inherit;color:inherit;}
   content:"";display:block;width:56px;height:4px;margin-top:12px;
   border-radius:var(--r-pill);
   background:linear-gradient(90deg,
-    var(--tri-green) 0 33.33%, var(--tri-white) 33.33% 66.66%, var(--tri-red) 66.66%);
+    var(--tri-black) 0 33.33%, var(--tri-red) 33.33% 66.66%, var(--tri-gold) 66.66%);
 }
 
 /* wybór języka wyjaśnień: na przycisku flaga i endonim bieżącego języka,
@@ -458,10 +482,10 @@ button{font:inherit;color:inherit;}
   transition:background .16s ease, transform .16s ease;
 }
 .rail__item:hover{background:oklch(0 0 0 / .18);}
-/* Paper and green-800, both fixed: the current entry sits on the brand
+/* Paper and black-800, both fixed: the current entry sits on the brand
    panel, which is dark in either theme, so a pair that followed the theme
-   would invert under one of them. 7.7:1. */
-.rail__item[aria-current="page"]{background:oklch(0.987 0.004 56);color:oklch(0.422 0.086 165);box-shadow:var(--shadow-s);}
+   would invert under one of them. 14.8:1. */
+.rail__item[aria-current="page"]{background:oklch(0.987 0.004 56);color:oklch(0.265 0.010 62);box-shadow:var(--shadow-s);}
 .rail__ico{font-size:1.02rem;width:22px;text-align:center;flex:0 0 22px;}
 .rail__badge{
   margin-left:auto;background:var(--oro);color:var(--on-oro);
@@ -545,7 +569,7 @@ button{font:inherit;color:inherit;}
 }
 .btn:active{transform:translateY(1px);}
 .btn:disabled{opacity:.45;cursor:not-allowed;}
-/* The primary action is VERDE. The design system gives the mark green
+/* The primary action is NERO. The design system gives the mark black
    every ordinary action — progress, confirm, continue — and keeps the red
    for streaks, milestones and the citizenship track, one accent per view.
    Under the cursor the fill moves in whichever direction pulls AWAY from
@@ -555,9 +579,9 @@ button{font:inherit;color:inherit;}
 .btn--primary{background:var(--salvia-deep);color:var(--on-primary);border-color:var(--salvia-deep);}
 .btn--primary:hover:not(:disabled){background:var(--btn-primary-hover);border-color:var(--btn-primary-hover);}
 /* Tonal, not a second solid. The sixteen places carrying btn--green are
-   subordinate confirmations (play, add, export, ok); two solid greens a few
+   subordinate confirmations (play, add, export, ok); two solid blacks a few
    steps apart read as a rendering fault, not as a hierarchy. The border is
-   green-700 — 5.0:1 against the page — so the shape still clears WCAG
+   black-800 — 14.5:1 against the page — so the shape still clears WCAG
    1.4.11 without a fill that competes with the primary. */
 .btn--green{background:var(--salvia);color:var(--on-tonal);border-color:var(--salvia-deep);}
 .btn--green:hover:not(:disabled){background:var(--btn-tonal-hover);}
@@ -917,7 +941,7 @@ textarea.field{max-width:min(720px, 100%);line-height:1.7;font-weight:500;resize
 .voice-pl{font-size:.88rem;color:var(--ink-soft);margin:0 0 16px;}
 .mic{
   width:76px;height:76px;border-radius:50%;border:none;cursor:pointer;
-  /* At rest the microphone is the primary action, so it is green like every
+  /* At rest the microphone is the primary action, so it is black like every
      other one. RECORDING is the state that earns the accent: something is
      leaving the student's machine, and that is the one moment on this screen
      worth spending the red on. */

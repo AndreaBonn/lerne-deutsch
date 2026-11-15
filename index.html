@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" data-theme="light">
+<html lang="it-IT" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,8 +25,8 @@
      given that up. `default-src 'self'` does not cover connect-src by extension —
      the directive is explicit, so it had to be edited by hand. -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; media-src 'self' blob:; connect-src 'self' https://generativelanguage.googleapis.com https://api.groq.com https://api.openai.com https://api.anthropic.com; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
-<title data-i18n="app.title">Impara l'Italiano 🇮🇹 — kurs włoskiego od A1 do C2</title>
-<meta name="description" data-i18n-content="app.description" content="Kompletny kurs języka włoskiego po polsku: gramatyka, teoria, ćwiczenia, słuchanie i mówienie. Od A1 do poziomu native.">
+<title data-i18n="app.title">Deutsch lernen · Tedesco da A1 a C2</title>
+<meta name="description" data-i18n-content="app.description" content="Un corso completo di tedesco con spiegazioni in italiano: grammatica, esercizi, ascolto e conversazione. Da A1 a C2.">
 <!-- The preview a shared link shows. Three things about it are deliberate.
 
      STATIC, with no `data-i18n`. Every other string on this page is rewritten
@@ -35,12 +35,12 @@
      would reach it in whatever language the file was saved in. Marking them
      up as translatable would look right and change nothing.
 
-     ENGLISH, while <title> above defaults to Polish. The two serve different
+     ENGLISH, while <title> above defaults to Italian. The two serve different
      people. The title belongs to a student who has already chosen a language;
      the preview belongs to whoever is being handed the link for the first
      time, and English is the one language this course can assume of someone
      who has not opened it yet. It is the same call manifest.webmanifest makes
-     with "lang": "en-US". The course name itself stays Italian, as it does in
+     with "lang": "en-US". The course name itself stays German, as it does in
      the rail and in every language of the interface.
 
      ABSOLUTE URLs, which is the only place in this project where one appears.
@@ -49,23 +49,23 @@
      scripts/check_ogtags.mjs fails the build if these tags drift away from
      it, if the image is missing, or if it stops being exactly 1200x630. -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Impara l'Italiano">
+<meta property="og:site_name" content="Deutsch lernen">
 <meta property="og:url" content="https://andreabonn.github.io/impara-tedesco/">
-<meta property="og:title" content="Impara l'Italiano — a free Italian course, A1 to C2">
-<meta property="og:description" content="An Italian course that runs in your browser, works offline, and explains the grammar in the language you already speak. No account, no tracking.">
+<meta property="og:title" content="Deutsch lernen · a free German course, A1 to C2">
+<meta property="og:description" content="A German course that runs in your browser, works offline, and explains the grammar in the language you already speak. No account, no tracking.">
 <meta property="og:image" content="https://andreabonn.github.io/impara-tedesco/assets/og/cover.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="The name Impara l'Italiano over a warm cream background, next to a badge reading A1 to C2.">
+<meta property="og:image:alt" content="The name Deutsch lernen over a warm cream background, next to a badge reading A1 to C2.">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://andreabonn.github.io/impara-tedesco/assets/og/cover.png">
 
 <link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#007a5e">
+<meta name="theme-color" content="#292420">
 <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
 <link rel="stylesheet" href="assets/css/app.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇮🇹</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='34' fill='%23070504'/><rect y='33' width='100' height='34' fill='%23D02B31'/><rect y='66' width='100' height='34' fill='%23F8C829'/></svg>">
 </head>
 <body>
 
@@ -80,9 +80,9 @@
   <!-- ══════════ RAIL ══════════ -->
   <nav class="rail" id="rail" data-i18n-label="app.mainNav" aria-label="Nawigacja główna">
     <div class="rail__head">
-      <!-- the course name stays Italian in every language -->
-      <p class="rail__brand"><span class="rail__flag" aria-hidden="true">🇮🇹</span>Impara l'Italiano</p>
-      <p class="rail__tag" data-i18n="app.tagline">Włoski po polsku · A1 → C2</p>
+      <!-- the course name stays German in every language -->
+      <p class="rail__brand"><span class="rail__flag" aria-hidden="true">🇩🇪</span>Deutsch lernen</p>
+      <p class="rail__tag" data-i18n="app.tagline">Tedesco in italiano · A1 → C2</p>
       <!-- filled by app.js from I18n.LANGS: a new language needs no change in the HTML -->
       <div class="rail__lang" id="langPicker" role="group"></div>
       <button class="rail__search" id="railSearch" data-i18n-label="search.open" aria-label="Szukaj w kursie">
