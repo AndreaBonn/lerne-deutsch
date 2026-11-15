@@ -32,7 +32,7 @@ const SOGLIA = 0.85;
 const GATE = process.argv.includes("--gate");
 
 /* The sandbox follows the same pattern as validate.mjs and parity.mjs. We
-   load the NEUTRAL LAYER: the deciding dictionary is the Italian entries of
+   load the NEUTRAL LAYER: the deciding dictionary is the German entries of
    the course, and those do not depend on the language of explanations. */
 const levels = [];
 const byCode = {};
@@ -41,6 +41,7 @@ const box = {
   LINGUAI: {
     registerLevel(lv) { lv.units = lv.units || []; levels.push(lv); byCode[lv.code] = lv; },
     addUnits(code, units) { if (byCode[code]) byCode[code].units = byCode[code].units.concat(units); },
+    addReadings(readings) { box.READINGS = (box.READINGS || []).concat(readings); },
     addStrings() {}, addUI() {}
   }
 };
@@ -69,37 +70,10 @@ for (const p of [
 box.window.Lemma.uzyjSlownika(null);
 box.Core = { registry: { levels } };
 
-/**
- * Tokenising an Italian text.
- *
- * The apostrophe stays inside a word only where it joins two words
- * ("dell'acqua"), and then we split: "dell" and "acqua" are two entries and
- * not one. Numbers and punctuation drop out, because there is nothing to
- * explain.
- */
-function tokeny(zdanie) {
-  return zdanie
-    .toLowerCase()
-    .replace(/[’']/g, "'")
-    .split(/[^a-zàáèéìíòóùúç']+/)
-    .filter(Boolean)
-    .flatMap(rozetnij);
-}
-
-/**
- * Elision: "dell'acqua" is two entries, "c'è" is one.
- *
- * Splitting blindly produced the token "c", that is a letter that cannot be
- * explained and that the student will never tap on its own. We split only
- * when the right-hand side is longer than a single letter: the rest stays
- * whole and lands on the list of function words, where "c'è" already is.
- */
-function rozetnij(w) {
-  const i = w.indexOf("'");
-  if (i <= 0 || i === w.length - 1) return [w.replace(/'/g, "") || w];
-  const prawa = w.slice(i + 1);
-  if (prawa.length <= 1) return [w];
-  return [w.slice(0, i), prawa];
+/** German lookup tokens preserve umlauts, eszett and internal apostrophes. */
+export function tokenizeGerman(sentence) {
+  return sentence.toLowerCase().replace(/[’']/g, "'")
+    .match(/[a-zäöüß]+(?:'[a-zäöüß]+)*/g) || [];
 }
 
 const Lemma = box.window.Lemma;
@@ -113,7 +87,7 @@ const perTekst = [];
 for (const r of READINGS) {
   let ile = 0, ok = 0;
   for (const zdanie of r.sentences || []) {
-    for (const t of tokeny(zdanie)) {
+    for (const t of tokenizeGerman(zdanie)) {
       ile++;
       if (Lemma.resolve(t).length) ok++;
       else nieznane.set(t, (nieznane.get(t) || 0) + 1);
@@ -135,7 +109,7 @@ if (process.argv.includes("--dump")) {
   for (const r of READINGS) {
     const brak = new Map();
     for (const zdanie of r.sentences || []) {
-      for (const t of tokeny(zdanie)) {
+      for (const t of tokenizeGerman(zdanie)) {
         if (!Lemma.resolve(t).length) {
           const k = Lemma.kandydaci(t);
           brak.set(t, k.length > 1 ? k[1] : t);

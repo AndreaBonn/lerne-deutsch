@@ -26,8 +26,8 @@ function silnik(czytanki) {
 
 /* [form, occurrences] - as in data/core/frequenza.js */
 const LISTA = [
-  ["che", 100], ["bevo", 50], ["casa", 40], ["libri", 30],
-  ["mangiato", 20], ["turisti", 10], ["xyzzy", 5]
+  ["dass", 100], ["trinkst", 50], ["haus", 40], ["Bücher", 30],
+  ["gegessen", 20], ["Touristen", 10], ["xyzzy", 5]
 ];
 const TOKENOW = 255;
 
@@ -42,77 +42,77 @@ describe("frequency: coverage of the lemma set", () => {
 
   test("a literal hit counts together with its frequency", () => {
     const s = silnik();
-    const p = s.Frequency.pokrycie(LISTA, { casa: true }, TOKENOW);
+    const p = s.Frequency.pokrycie(LISTA, { haus: true }, TOKENOW);
     assert.equal(p.znane, 1);
     assert.ok(Math.abs(p.udzialTokenow - 40 / 255) < 1e-9, "the share is 40 out of 255 tokens");
   });
 
-  test("an inflected form counts towards its base lemma", { skip: "rewrite in T1.32" }, () => {
+  test("an inflected form counts towards its base lemma", () => {
     const s = silnik();
-    /* "bere" in the deck must cover "bevo" on the list, "libro" must cover
-       "libri", and "mangiare" must cover the participle "mangiato". */
-    const p = s.Frequency.pokrycie(LISTA, { bere: true, libro: true, mangiare: true }, TOKENOW);
+    /* "trinken" in the deck must cover "trinkst" on the list, "buch" must cover
+       "Bücher", and "essen" must cover the participle "gegessen". */
+    const p = s.Frequency.pokrycie(LISTA, { trinken: true, buch: true, essen: true }, TOKENOW);
     assert.equal(p.znane, 3, "three forms counted through inflection, not through string similarity");
   });
 
   test("a word outside the set stays uncovered", () => {
     const s = silnik();
-    const p = s.Frequency.pokrycie(LISTA, { casa: true }, TOKENOW);
+    const p = s.Frequency.pokrycie(LISTA, { haus: true }, TOKENOW);
     assert.deepEqual({ ...p }, { znane: 1, wszystkie: 7, udzialTokenow: 40 / 255 });
   });
 
   test("an empty list does not divide by zero", () => {
     const s = silnik();
-    const p = s.Frequency.pokrycie([], { casa: true }, 0);
+    const p = s.Frequency.pokrycie([], { haus: true }, 0);
     assert.equal(p.znane, 0);
     assert.equal(p.udzialTokenow, 0);
   });
 });
 
 describe("frequency: the nearest gaps", () => {
-  test("only the ones the course teaches and the student does not have come out", { skip: "rewrite in T1.32" }, () => {
+  test("only the ones the course teaches and the student does not have come out", () => {
     const s = silnik();
-    const kurs = { casa: true, libro: true, bere: true };
-    const uczen = { bere: true };
+    const kurs = { haus: true, buch: true, trinken: true };
+    const uczen = { trinken: true };
     const hasla = Array.from(s.Frequency.brakujace(LISTA, kurs, uczen, 10)).map(b => b.haslo);
-    assert.ok(hasla.includes("casa"), "the course knows it, the student does not have it");
-    assert.ok(hasla.includes("libro"), "the LEMMA comes out, not the form \"libri\" from the list");
-    assert.ok(!hasla.includes("bere"), "the student has bere, so bevo is not a gap");
+    assert.ok(hasla.includes("haus"), "the course knows it, the student does not have it");
+    assert.ok(hasla.includes("buch"), "the LEMMA comes out, not the form \"Bücher\" from the list");
+    assert.ok(!hasla.includes("trinken"), "the student has trinken, so trinkst is not a gap");
     assert.ok(!hasla.includes("xyzzy"), "the course does not teach it: suggesting it would be passing the work on");
   });
 
-  test("forms of the same lemma collapse into one row", { skip: "rewrite in T1.32" }, () => {
+  test("forms of the same lemma collapse into one row", () => {
     const s = silnik();
-    /* The frequency list holds "ho", "ha", "hai" separately: without
+    /* The frequency list holds "habe", "hat", "hast" separately: without
        collapsing, the top five gaps are the same word four times. */
-    const lista = [["ho", 90], ["ha", 80], ["hai", 70], ["casa", 10]];
-    const braki = Array.from(s.Frequency.brakujace(lista, { avere: true, casa: true }, {}, 10));
+    const lista = [["habe", 90], ["hat", 80], ["hast", 70], ["haus", 10]];
+    const braki = Array.from(s.Frequency.brakujace(lista, { haben: true, haus: true }, {}, 10));
     const hasla = braki.map(b => b.haslo);
-    assert.equal(hasla.filter(h => h === "avere").length, 1, "one row per lemma");
-    const avere = braki.filter(b => b.haslo === "avere")[0];
-    assert.equal(avere.ile, 240, "the frequency is the sum over the forms");
-    assert.equal(avere.ranga, 1, "the rank is the best rank among its forms");
-    assert.deepEqual(Array.from(avere.formy), ["ho", "ha", "hai"]);
+    assert.equal(hasla.filter(h => h === "haben").length, 1, "one row per lemma");
+    const haben = braki.filter(b => b.haslo === "haben")[0];
+    assert.equal(haben.ile, 240, "the frequency is the sum over the forms");
+    assert.equal(haben.ranga, 1, "the rank is the best rank among its forms");
+    assert.deepEqual(Array.from(haben.formy), ["habe", "hat", "hast"]);
   });
 
-  test("function words do not make it onto the clickable list", { skip: "rewrite in T1.32" }, () => {
+  test("function words do not make it onto the clickable list", () => {
     const s = silnik();
-    const hasla = Array.from(s.Frequency.brakujace(LISTA, { che: true, casa: true }, {}, 10)).map(b => b.haslo);
-    assert.ok(!hasla.includes("che"), "\"che\" is a piece of grammar, not a flashcard");
-    assert.ok(hasla.includes("casa"));
+    const hasla = Array.from(s.Frequency.brakujace(LISTA, { dass: true, haus: true }, {}, 10)).map(b => b.haslo);
+    assert.ok(!hasla.includes("dass"), "\"dass\" is a piece of grammar, not a flashcard");
+    assert.ok(hasla.includes("haus"));
   });
 
-  test("the order follows frequency and carries the rank", { skip: "rewrite in T1.32" }, () => {
+  test("the order follows frequency and carries the rank", () => {
     const s = silnik();
-    const braki = Array.from(s.Frequency.brakujace(LISTA, { casa: true, libro: true }, {}, 10));
-    assert.equal(braki[0].haslo, "casa", "the more frequent one first");
+    const braki = Array.from(s.Frequency.brakujace(LISTA, { haus: true, buch: true }, {}, 10));
+    assert.equal(braki[0].haslo, "haus", "the more frequent one first");
     assert.equal(braki[0].ranga, 3, "the rank is the position on the list, not in the result");
     assert.ok(braki[0].ile > braki[1].ile);
   });
 
-  test("the limit is respected", { skip: "rewrite in T1.32" }, () => {
+  test("the limit is respected", () => {
     const s = silnik();
-    const braki = s.Frequency.brakujace(LISTA, { casa: true, libro: true, mangiare: true }, {}, 2);
+    const braki = s.Frequency.brakujace(LISTA, { haus: true, buch: true, essen: true }, {}, 2);
     assert.equal(Array.from(braki).length, 2);
   });
 });
@@ -135,18 +135,13 @@ describe("frequency: where the two sets come from", () => {
 
   test("the student's set carries the bare word, because that is what the list holds", () => {
     const box = zSilnikiem();
-    box.Core.addCard("il caffè", "kawa", "a1-u01-l1");
+    box.Core.addCard("das Öl", "olej", "a1-u01-l1");
     const uczen = box.sandbox.Frequency.slownikUcznia();
 
-    /* The frequency list is a list of bare forms: "caffè", never "il caffè",
-       and it keeps its accents. A set built out of the card KEYS meets
-       neither - the key is "il caffe" - so the counter used to report zero
-       coverage for a deck that was not empty, which reads as a result of
-       studying rather than as a fault. The entry goes through the same
-       splitter as the course dictionary, so both sets are written the same
-       way. */
-    assert.ok(uczen["caffè"], "the bare word goes in: the article dropped, the accent kept");
-    assert.equal(box.sandbox.Frequency.pokrycie([["caffè", 10]], uczen, 10).znane, 1,
+    /* The deck key keeps the article; lookup and coverage need the bare
+       noun with its umlaut. Both use Lemma.dodajHaslo. */
+    assert.ok(uczen["öl"], "the bare word goes in: the article dropped, the accent kept");
+    assert.equal(box.sandbox.Frequency.pokrycie([["öl", 10]], uczen, 10).znane, 1,
       "and the list finds it");
     assert.equal(box.sandbox.Frequency.pokrycie([["xyzzy", 10]], uczen, 10).znane, 0,
       "while a word nobody has still counts for nothing");
@@ -162,13 +157,13 @@ describe("frequency: where the two sets come from", () => {
     box.sandbox.Registry.registerLevel({
       code: "A1", dataFiles: [], units: [{
         id: "u1",
-        lessons: [{ id: "l1", vocab: [{ it: "il caffè" }, { it: "la casa" }], exercises: [] }]
+        lessons: [{ id: "l1", vocab: [{ it: "das Öl" }, { it: "das Haus" }], exercises: [] }]
       }]
     });
     const kurs = box.sandbox.Frequency.slownikKursu();
 
-    assert.ok(kurs["caffè"], "multi-word phrases go in split into words");
-    assert.ok(kurs["casa"]);
+    assert.ok(kurs["öl"], "the article is removed and the umlaut stays");
+    assert.ok(kurs["haus"]);
     assert.ok(!kurs["xyzzy"]);
   });
 

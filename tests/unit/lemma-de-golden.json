@@ -8,5 +8,13 @@
   { "form": "gegangen", "lemma": "gehen", "kind": "verb" },
   { "form": "stehst", "lemma": "stehen", "kind": "verb" },
   { "form": "aufgestanden", "lemma": "aufstehen", "kind": "verb" },
-  { "form": "bin", "lemma": "sein", "kind": "verb" }
+  { "form": "bin", "lemma": "sein", "kind": "verb" },
+  { "form": "gestanden", "lemma": "stehen", "kind": "verb" },
+  { "form": "stand", "lemma": "stehen", "kind": "verb" },
+  { "form": "besser", "lemma": "gut", "kind": "nominal" },
+  { "form": "höher", "lemma": "hoch", "kind": "nominal" },
+  { "form": "mehr", "lemma": "viel", "kind": "nominal" },
+  { "form": "lieber", "lemma": "gern", "kind": "nominal" },
+  { "form": "nächst", "lemma": "nah", "kind": "nominal" },
+  { "form": "Lehrerinnen", "lemma": "Lehrerin", "kind": "nominal" }
 ]

@@ -113,9 +113,31 @@ test("German cardinals and ordinals match alongside ordinary-word rejection", ()
   assert.equal(M.funkcyjny("Hund"), false);
 });
 
-test("neutral compatibility stubs preserve spelling and return no enclitic candidates", () => {
+test("irregular degrees and feminine plurals propose dictionary candidates", () => {
   const M = morf();
-  assert.equal(M.bezAkcentow("Häuser pèsca"), "Häuser pèsca");
-  assert.deepEqual(Array.from(M.bezEnklityk("mandarli")), []);
-  assert.ok(M.odmienne("Häuser").includes("Haus"));
+  for (const [form, lemma] of [["besser", "gut"], ["höher", "hoch"], ["mehr", "viel"],
+    ["lieber", "gern"], ["nächst", "nah"], ["besseren", "gut"], ["höchsten", "hoch"],
+    ["am besten", "gut"], ["nächste", "nah"], ["Lehrerinnen", "Lehrerin"],
+    ["Ärztinnen", "Ärztin"], ["Studentinnen", "Studentin"]]) {
+    assert.ok(M.odmienne(form).includes(lemma), form + " -> " + lemma);
+  }
+  assert.deepEqual(Array.from(M.odmienne("gut")), ["gut"]);
+});
+
+test("candidate rules return only strings even for inherited object names", () => {
+  const M = morf();
+  for (const word of ["constructor", "toString", "__proto__"])
+    assert.ok(Array.from(M.odmienne(word)).every(candidate => typeof candidate === "string"), word);
+  assert.ok(M.odmienne("besser").includes("gut"));
+});
+
+test("Latin and Greek plurals propose their singular endings", () => {
+  const M = morf();
+  for (const [plural, singular] of [
+    ["Museen", "Museum"], ["Themen", "Thema"], ["Zentren", "Zentrum"],
+    ["Studien", "Studium"], ["Firmen", "Firma"], ["Konten", "Konto"],
+    ["Dramen", "Drama"], ["Alben", "Album"], ["Stadien", "Stadion"]
+  ]) {
+    assert.ok(M.odmienne(plural).includes(singular), plural + " -> " + singular);
+  }
 });

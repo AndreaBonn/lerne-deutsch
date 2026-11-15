@@ -1,195 +1,131 @@
-/* ============================================================
-   lemma.js — from a form in a text to a dictionary entry.
-
-   The test describes the boundary, not only the hits: the resolver has to
-   REFUSE where it does not know, because the view then shows the student "I
-   do not know this word" rather than an invented answer. A candidate the
-   dictionary does not know is silence — and that is behaviour to pin down,
-   not a fault to work around.
-   ============================================================ */
-import { test, describe } from "node:test";
+import { test } from "node:test";
 import assert from "node:assert/strict";
 import { loadEngine, VERBS, LEMMA } from "./_harness.mjs";
 
-/* Arrays from the sandbox have a prototype from another realm, so a strict
-   deepEqual rejects ["bere"] against ["bere"]. We copy the contents, just as
-   in state.test.mjs and fsrs.test.mjs. */
-const zZewnatrz = xs => Array.from(xs);
-
-/** The engine with a substituted dictionary: the test does not load the whole course. */
-function zeSlownikiem(hasla, czasowniki) {
+function engine(entries = []) {
   const box = loadEngine({ files: [...VERBS, ...LEMMA] });
-  const L = box.sandbox.Lemma;
-  const zbior = new Set(hasla);
-  L.uzyjSlownika(w => zbior.has(w));
-  if (czasowniki) L.dodajCzasowniki(czasowniki);
-  return L;
+  box.sandbox.READINGS = [{ lexIt: entries }];
+  return box.sandbox;
 }
 
-describe("lemma: verb forms come down to the infinitive", () => {
-  test("a personal form of the present tense", { skip: "rewrite in T1.32" }, () => {
-    const L = zeSlownikiem(["bere"]);
-    assert.deepEqual(zZewnatrz(L.resolve("bevono")), ["bere"]);
-    assert.deepEqual(zZewnatrz(L.resolve("bevi")), ["bere"]);
-  });
-
-  test("the participle and a compound tense", { skip: "rewrite in T1.32" }, () => {
-    const L = zeSlownikiem(["andare"]);
-    assert.ok(L.resolve("andati").includes("andare"), "andati -> andare");
-    assert.ok(L.resolve("andato").includes("andare"), "z sono andato zostaje andato");
-  });
-
-  test("the remote past and the subjunctive", { skip: "rewrite in T1.32" }, () => {
-    const L = zeSlownikiem(["essere"]);
-    assert.ok(L.resolve("fu").includes("essere"), "fu -> essere");
-    assert.ok(L.resolve("fossero").includes("essere"), "fossero -> essere");
-  });
-
-  test("è does not fall out of the index despite being one letter", { skip: "rewrite in T1.32" }, () => {
-    const L = zeSlownikiem(["essere"]);
-    assert.ok(L.resolve("è").includes("essere"),
-      "the most frequent word in an Italian text: the first version lost it");
-  });
-
-  test("a verb taught only by the reading dictionary inflects after refresh", { skip: "rewrite in T1.32" }, () => {
-    const box = loadEngine({ files: [...VERBS, ...LEMMA] });
-    const L = box.sandbox.Lemma;
-    box.sandbox.READINGS = [];
-    L.uzyjSlownika(null);
-    L.odswiez();
-    assert.deepEqual(zZewnatrz(L.resolve("camminano")), []);
-    box.sandbox.READINGS = [{ glossIt: [], lexIt: ["camminare"] }];
-    L.odswiez();
-    assert.deepEqual(zZewnatrz(L.resolve("camminano")), ["camminare"]);
-  });
+test("Latin and Greek plurals resolve only to dictionary singulars", () => {
+  const { Lemma: L } = engine(["Museum", "Thema"]);
+  assert.deepEqual(Array.from(L.resolve("Museen")), ["Museum"]);
+  assert.deepEqual(Array.from(L.resolve("Themen")), ["Thema"]);
+  assert.deepEqual(Array.from(L.resolve("Zentren")), []);
 });
 
-describe("lemma: nouns and adjectives come down by rule", () => {
-  const przypadki = [
-    ["libri", "libro"], ["cani", "cane"], ["case", "casa"],
-    ["amiche", "amica"], ["amici", "amico"], ["laghi", "lago"],
-    ["bella", "bello"], ["persone", "persona"]
-  ];
-  for (const [forma, baza] of przypadki) {
-    test(`${forma} -> ${baza}`, { skip: "rewrite in T1.32" }, () => {
-      const L = zeSlownikiem([baza]);
-      assert.ok(L.resolve(forma).includes(baza));
-    });
+for (const [form, lemma] of [
+  ["trinkst", "trinken"], ["trinken", "trinken"], ["getrunken", "trinken"],
+  ["ging", "gehen"], ["gegangen", "gehen"], ["wäre", "sein"], ["sei", "sein"],
+  ["bin", "sein"], ["hatten", "haben"], ["gestanden", "stehen"], ["stand", "stehen"],
+  ["stehst", "stehen"], ["aufgestanden", "aufstehen"], ["stehe auf", "aufstehen"],
+  ["wasche mich", "sich waschen"], ["Häuser", "Haus"], ["Hunde", "Hund"],
+  ["Kindern", "Kind"], ["Bücher", "Buch"], ["Frauen", "Frau"], ["Autos", "Auto"],
+  ["kleinen", "klein"], ["größer", "groß"], ["besser", "gut"], ["höher", "hoch"],
+  ["mehr", "viel"], ["lieber", "gern"], ["nächst", "nah"], ["Lehrerinnen", "Lehrerin"]
+]) {
+  test(`dictionary verdict: ${form} -> ${lemma}`, () => {
+    const { Lemma: L } = engine([lemma]);
+    assert.deepEqual(Array.from(L.resolve(form)), [lemma]);
+  });
+}
+
+test("all ten tenses contribute their complete forms without losing the infinitive", () => {
+  const { Lemma: L, Verbs: V } = engine(["aufstehen"]);
+  assert.equal(V.TENSES.length, 10);
+  for (const tense of V.TENSES) {
+    for (const form of V.conjugate("aufstehen", tense.key).filter(Boolean)) {
+      assert.ok(L.resolve(form).includes("aufstehen"), tense.key + ": " + form);
+    }
   }
-
-  test("invariable words are not mutilated", () => {
-    const L = zeSlownikiem(["città", "caffè"]);
-    assert.deepEqual(zZewnatrz(L.resolve("città")), ["città"]);
-    assert.deepEqual(zZewnatrz(L.resolve("caffè")), ["caffè"]);
-  });
 });
 
-describe("lemma: granica jest zadeklarowana, nie ukryta", () => {
-  test("a word the dictionary does not know returns nothing", () => {
-    const L = zeSlownikiem(["casa"]);
-    assert.deepEqual(zZewnatrz(L.resolve("carbonara")), [],
-      "brak wyniku to informacja dla widoku, nie usterka");
-  });
-
-  test("candidates exist even when the dictionary knows nothing", { skip: "rewrite in T1.32" }, () => {
-    const L = zeSlownikiem([]);
-    const k = L.kandydaci("turisti");
-    assert.ok(k.includes("turisti"), "sama forma");
-    assert.ok(k.includes("turista"), "turisti -> turista");
-  });
-
-  test("a function word answers with itself, without asking the dictionary", { skip: "rewrite in T1.32" }, () => {
-    const L = zeSlownikiem([]);
-    assert.deepEqual(zZewnatrz(L.resolve("dello")), ["dello"]);
-    assert.deepEqual(zZewnatrz(L.resolve("quaranta")), ["quaranta"], "a numeral too");
-    assert.ok(L.funkcyjne("nella"));
-    assert.ok(!L.funkcyjne("carbonara"));
-  });
-
-  test("letter case and the typographic apostrophe do not matter", { skip: "rewrite in T1.32" }, () => {
-    const L = zeSlownikiem(["essere"]);
-    assert.ok(L.resolve("È").includes("essere"));
-  });
+test("course-only verbs from vocabulary and readings enter the index after refresh", () => {
+  const box = engine();
+  const L = box.Lemma;
+  assert.deepEqual(Array.from(L.resolve("tüftelst")), []);
+  box.Core = { registry: { levels: [{ units: [{ lessons: [{ vocab: [{ it: "tüfteln" }] }] }] }] } };
+  L.odswiez();
+  assert.deepEqual(Array.from(L.resolve("tüftelst")), ["tüfteln"]);
+  box.READINGS = [{ lexIt: ["werkeln"] }];
+  L.odswiez();
+  assert.deepEqual(Array.from(L.resolve("werkelst")), ["werkeln"]);
 });
 
-describe("lemma: the cost", () => {
-  test("the index is built once and fits within the startup budget", { skip: "rewrite in T1.32" }, () => {
-    const L = zeSlownikiem(["bere"]);
-    const start = Date.now();
-    const n = L.rozmiarIndeksu();
-    const ms = Date.now() - start;
-    assert.ok(n > 3000, `the index only makes sense at thousands of forms, it has ${n}`);
-    /* Generous: measured in the vm sandbox, slower than a browser. The point
-       is to catch an order-of-magnitude regression, not to benchmark. */
-    assert.ok(ms < 2000, `budowa indeksu ${ms} ms`);
-  });
+test("COMMON forms remain available as candidates without a dictionary verdict", () => {
+  const { Lemma: L } = engine();
+  assert.ok(L.kandydaci("getrunken").includes("trinken"));
+  assert.equal(L.lemat("getrunken"), "trinken");
+  assert.deepEqual(Array.from(L.resolve("getrunken")), []);
+  assert.ok(L.kandydaci("Häuser").includes("haus"));
+  assert.deepEqual(Array.from(L.resolve("Häuser")), []);
 });
 
-describe("lemma: an accented entry, an unaccented form in the text", () => {
-  /* A word in a sentence carries no tonic accent, while a dictionary entry
-     must carry it, because that is how the narrator reads it: "pèsca" is the
-     fruit, "pésca" is fishing, and the voice tells them apart (measured, two
-     different files). The alias joins one to the other — and has to return
-     the CANONICAL form, not the one from the text, otherwise the card
-     pokazuje wyraz bez glosy i bez nagrania. */
-  test("tapping an unaccented form gives the accented entry", { skip: "rewrite in T1.32" }, () => {
-    const box = loadEngine({ files: [...VERBS, ...LEMMA] });
-    const L = box.sandbox.Lemma;
-    /* Through the production path: the dictionary is built from READINGS, as
-       in the browser. Substituting a predicate of our own would bypass the
-       aliases. */
-    box.sandbox.READINGS = [{ glossIt: [], lexIt: ["pèsca", "realtà"] }];
-    L.uzyjSlownika(null);
-    L.odswiez();
-    assert.deepEqual(zZewnatrz(L.resolve("pesca")), ["pèsca"]);
-    assert.deepEqual(zZewnatrz(L.resolve("realta")), ["realtà"]);
-  });
-
-  test("the accented form still works on its own", () => {
-    const box = loadEngine({ files: [...VERBS, ...LEMMA] });
-    const L = box.sandbox.Lemma;
-    box.sandbox.READINGS = [{ glossIt: [], lexIt: ["pèsca"] }];
-    L.uzyjSlownika(null);
-    L.odswiez();
-    assert.deepEqual(zZewnatrz(L.resolve("pèsca")), ["pèsca"]);
-  });
+test("function words and numerals resolve independently of the dictionary", () => {
+  const { Lemma: L } = engine();
+  for (const word of ["der", "im", "vierzig"]) assert.deepEqual(Array.from(L.resolve(word)), [word]);
+  assert.equal(L.funkcyjne("im"), true);
+  assert.equal(L.funkcyjne("Hund"), false);
 });
 
-describe("an auxiliary is not an entry", () => {
-  /* Found by tapping "era" in a reading: the card showed the translation of
-     the WHOLE lexicon phrase ("era tutto buonissimo" -> "everything was
-     delicious"), because a multi-word entry contributed each of its words to
-     the dictionary. On top of that, "era" and "hanno" landed in the index for
-     every verb with a compound tense, because the forms "era entrato" and
-     "hanno detto" were split on the space together with the auxiliary. */
-  test("a compound form does not contribute its auxiliary to the index", { skip: "rewrite in T1.32" }, () => {
-    const L = zeSlownikiem(["entrare", "dire"], ["entrare", "dire"]);
-    /* "era entrato" and "hanno detto" exist as forms, but "era" and "hanno"
-       must not lead to entrare or to dire. */
-    assert.deepEqual(zZewnatrz(L.resolve("era")), []);
-    assert.deepEqual(zZewnatrz(L.resolve("hanno")), []);
-    assert.ok(L.resolve("entrato").includes("entrare"), "entrato -> entrare");
-    assert.ok(L.resolve("detto").includes("dire"), "detto -> dire");
-  });
-
-  test("the forms of essere and avere lead to their own verb", { skip: "rewrite in T1.32" }, () => {
-    const L = zeSlownikiem(["essere", "avere"], ["essere", "avere"]);
-    assert.ok(L.resolve("era").includes("essere"), "era -> essere");
-    assert.ok(L.resolve("hanno").includes("avere"), "hanno -> avere");
-    assert.ok(L.resolve("fossero").includes("essere"), "fossero -> essere");
-  });
+test("dictionary spelling survives case folding without removing umlauts", () => {
+  const { Lemma: L } = engine(["der Hund", "das Öl", "schön"]);
+  assert.deepEqual(Array.from(L.resolve("HUND")), ["Hund"]);
+  assert.deepEqual(Array.from(L.resolve("Öl")), ["Öl"]);
+  assert.deepEqual(Array.from(L.resolve("schön")), ["schön"]);
+  assert.deepEqual(Array.from(L.resolve("schon")), ["schon"]);
+  assert.deepEqual(Array.from(L.resolve("Ol")), []);
 });
 
-test("a phrase entry excludes auxiliary and function words", { skip: "rewrite in T1.32" }, () => {
-  const L = zeSlownikiem([]);
-  const dictionary = L.zbudujSlownik([], [{ lexIt: ["era tutto buonissimo", "a che ora"] }]);
-  assert.deepEqual(Object.keys(dictionary).sort(), ["a che ora", "buonissimo", "era tutto buonissimo", "ora"]);
+test("articles are stripped from nominal entries shared by course and deck", () => {
+  const { Lemma: L } = engine();
+  const dictionary = L.zbudujSlownik([{ code: "B1" }, { units: [{ lessons: [
+    { vocab: [{ it: "der Hund" }, { it: "die Lehrerin" }] }
+  ] }] }], [{ glossIt: ["das Haus"] }]);
+  assert.deepEqual(Object.keys(dictionary).sort(), ["haus", "hund", "lehrerin"]);
+  const deck = {};
+  L.dodajHaslo(deck, "ein Hund");
+  assert.deepEqual(Object.keys(deck), ["hund"]);
 });
 
-test("a level without units preserves entries from loaded levels", () => {
-  const L = zeSlownikiem([]);
-  const levels = [{ code: "B1" }, { code: "A1", units: [{ id: "u", lessons: [
-    { id: "l", vocab: [{ it: "casa" }] }
-  ] }] }];
-  assert.deepEqual(Object.keys(L.zbudujSlownik(levels, [])), ["casa"]);
+test("compound auxiliaries and detached particles do not create false verb matches", () => {
+  const { Lemma: L } = engine(["gehen", "aufstehen"]);
+  assert.deepEqual(Array.from(L.resolve("bin")), []);
+  assert.deepEqual(Array.from(L.resolve("stehe")), []);
+  assert.deepEqual(Array.from(L.resolve("stehe heute früh auf")), []);
+  assert.deepEqual(Array.from(L.resolve("aufgestanden")), ["aufstehen"]);
+  assert.deepEqual(Array.from(L.resolve("gegangen")), ["gehen"]);
+});
+
+test("phrase entries exclude auxiliary and function words", () => {
+  const { Lemma: L } = engine();
+  const dictionary = L.zbudujSlownik([], [{ lexIt: ["hat gut geschlafen", "mit dem Hund"] }]);
+  assert.deepEqual(Object.keys(dictionary).sort(), ["geschlafen", "gut", "hat gut geschlafen", "hund", "mit dem hund"]);
+});
+
+test("dictionary predicates and explicitly added infinitives retain their API", () => {
+  const { Lemma: L } = engine();
+  L.uzyjSlownika(word => word === "tüfteln");
+  L.dodajCzasowniki(["tüfteln", "not a verb"]);
+  assert.deepEqual(Array.from(L.resolve("tüftelst")), ["tüfteln"]);
+  assert.deepEqual(Array.from(L.resolve("xyzzy")), []);
+  L.uzyjSlownika(null);
+  assert.deepEqual(Array.from(L.resolve("tüftelst")), []);
+});
+
+test("the lazy index stays within the lookup budget and is stable across calls", () => {
+  const { Lemma: L } = engine();
+  const start = Date.now();
+  const count = L.rozmiarIndeksu();
+  assert.ok(count > 3000, String(count));
+  assert.ok(Date.now() - start < 2000);
+  assert.equal(L.rozmiarIndeksu(), count);
+});
+
+test("reading coverage tokenizes German umlauts, eszett and apostrophes", async () => {
+  const { tokenizeGerman } = await import("../../scripts/check_lookup.mjs");
+  assert.deepEqual(tokenizeGerman("Häuser größer, Öl und Straße. Wie geht’s?"),
+    ["häuser", "größer", "öl", "und", "straße", "wie", "geht's"]);
+  assert.deepEqual(tokenizeGerman("123 ..."), []);
 });

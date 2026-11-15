@@ -32,10 +32,16 @@
     /est$/i, /st$/i, /ern$/i,
     /er(e|en|em|er|es)$/i, /es$/i, /en$/i, /em$/i, /er$/i, /e$/i, /n$/i, /s$/i];
   var UMLAUT = { "ä": "a", "ö": "o", "ü": "u", "Ä": "A", "Ö": "O", "Ü": "U" };
+  var CLASSICAL_SINGULAR_ENDINGS = ["um", "a", "o", "on"];
 
   function reverseUmlaut(word) {
     return word.replace(/[äöüÄÖÜ]/g, function (letter) { return UMLAUT[letter]; });
   }
+
+  var IRREGULAR_DEGREES = Object.assign(Object.create(null), {
+    besser: "gut", best: "gut", höher: "hoch", höchst: "hoch",
+    mehr: "viel", meist: "viel", lieber: "gern", liebst: "gern", nächst: "nah"
+  });
 
   function odmienne(slowo) {
     var out = [slowo];
@@ -44,6 +50,13 @@
     function add(candidate) {
       if (candidate && out.indexOf(candidate) < 0) out.push(candidate);
     }
+    var degreeStem = word.toLowerCase().replace(/(en|em|er|es|e)$/, "");
+    add(IRREGULAR_DEGREES[word.toLowerCase()]);
+    add(IRREGULAR_DEGREES[degreeStem]);
+    if (/innen$/i.test(word)) add(word.slice(0, -3));
+    if (/en$/i.test(word)) CLASSICAL_SINGULAR_ENDINGS.forEach(function (ending) {
+      add(word.slice(0, -2) + ending);
+    });
     // Groß has -t rather than -st in its superlative: größte -> größ.
     if (/ßt(e|en|em|er|es)?$/i.test(word)) {
       var superlativeStem = word.replace(/t(e|en|em|er|es)?$/i, "");
@@ -87,18 +100,12 @@
     return !!functionWords[String(w).toLowerCase()];
   }
 
-  // Neutral compatibility stubs, kept until lemma.js drops them in T1.32.
-  function bezAkcentow(w) { return w; }
-  function bezEnklityk() { return []; }
-
   global.LemmaMorf = {
     slowa: slowa,
     posilkowy: posilkowy,
     czasownikowe: czasownikowe,
     odmienne: odmienne,
-    funkcyjny: funkcyjny,
-    bezAkcentow: bezAkcentow,
-    bezEnklityk: bezEnklityk
+    funkcyjny: funkcyjny
   };
 
 })(window);

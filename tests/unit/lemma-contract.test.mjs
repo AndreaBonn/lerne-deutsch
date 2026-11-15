@@ -10,8 +10,7 @@ test("existing Lemma and LemmaMorf exports retain their callable API", () => {
   for (const name of ["resolve", "lemat", "kandydaci", "uzyjSlownika", "dodajCzasowniki",
     "zbudujSlownik", "dodajHaslo", "odswiez", "funkcyjne", "rozmiarIndeksu"])
     assert.equal(typeof L[name], "function", name);
-  for (const name of ["slowa", "posilkowy", "czasownikowe", "odmienne", "funkcyjny",
-    "bezAkcentow", "bezEnklityk"]) assert.equal(typeof M[name], "function", name);
+  for (const name of ["slowa", "posilkowy", "czasownikowe", "odmienne", "funkcyjny"]) assert.equal(typeof M[name], "function", name);
   L.uzyjSlownika(word => word === "haus");
   L.dodajCzasowniki(["gehen"]);
   L.odswiez();
@@ -25,14 +24,12 @@ test("existing Lemma and LemmaMorf exports retain their callable API", () => {
   L.dodajHaslo(dictionary, "Hund");
   assert.deepEqual(Object.keys(dictionary), ["hund"]);
   assert.ok(Array.isArray(M.slowa("Haus")) && Array.isArray(M.odmienne("Haus")));
-  assert.ok(Array.isArray(M.bezEnklityk("Haus")));
-  assert.equal(typeof M.bezAkcentow("Haus"), "string");
   for (const name of ["posilkowy", "czasownikowe", "funkcyjny"])
     assert.equal(typeof M[name]("Haus"), "boolean");
 });
 
 for (const { form, lemma, kind } of golden) {
-  test(`German golden: ${form} -> ${lemma}`, kind === "verb" && ["ging", "gegangen", "aufgestanden"].includes(form) ? { skip: "implement in T1.32" } : {}, () => {
+  test(`German golden: ${form} -> ${lemma}`, () => {
     if (kind === "verb") {
       const L = loadEngine({ files: [...VERBS, ...LEMMA] }).sandbox.Lemma;
       L.uzyjSlownika(word => word === lemma);
