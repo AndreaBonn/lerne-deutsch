@@ -1,11 +1,18 @@
-# CLAUDE.md — Impara l'Italiano
+# CLAUDE.md - Deutsch lernen
 
-Statyczna platforma do nauki włoskiego z wyjaśnieniami w języku ucznia. Bez backendu,
+Statyczna platforma do nauki niemieckiego z wyjaśnieniami w języku ucznia. Bez backendu,
 bez build stepu, bez ani jednej zależności w czasie działania — kroje pisma też leżą
 w repozytorium (`assets/fonts/`), więc strona nie odpytuje żadnej cudzej domeny.
 
-Włoski jest zawsze językiem **uczonym**. Językiem **wyjaśnień** jest polski albo angielski
-(`en` = odmiana amerykańska, locale `en-US`) i uczeń go wybiera; `settings.lang` trzyma wybór.
+Niemiecki (standardowy, `de-DE`) jest zawsze językiem **uczonym**. Językiem **wyjaśnień** jest
+włoski, angielski, hiszpański, francuski albo polski (`it`, `en`, `es`, `fr`, `pl`;
+`en` = odmiana amerykańska, locale `en-US`) i uczeń go wybiera; `settings.lang` trzyma wybór.
+Domyślny jest `it`, i `it` jest też wzorcem, do którego `parity.mjs` porównuje pozostałe
+nakładki, a `validate.mjs` bez argumentu waliduje właśnie jego. Języka `de` wśród wyjaśnień
+nie ma: niemiecki to język kursu, nie język objaśnień.
+
+Repozytorium jest rozwidleniem (fork) kursu włoskiego, `versione-statica`, które zachowuje jego
+silnik. Część nazw wewnętrznych została włoska celowo, zob. „Pola `it*` niosą język uczony".
 
 ## Zasady techniczne projektu
 
@@ -49,7 +56,7 @@ nic o `srs`, `srs` nie wie nic o postępach lekcji.
 `Core.addCard`, `Core.getLesson`…), bo woła je kilkanaście widoków. Nowy kod może iść wprost do
 modułu; stary nie musi się zmieniać. To jest fasada, nie warstwa: nie ma tam logiki.
 
-Ta sama zasada niżej: `verbs-data.js` (tabele włoskiego) przed `verbs.js` (algorytm);
+Ta sama zasada niżej: `verbs-data.js` (tabele niemieckiego) przed `verbs.js` (algorytm);
 `recordings.js` (który plik mp3 dla którego zdania) przed `audio.js` (kaskada nagranie →
 synteza → cisza); `i18n.js` (napisy interfejsu) obok `i18n-merge.js` (doklejanie tekstów
 ucznia do treści kursu); `router.js` (adres, wybór widoku, `Views.onLeave`) przed `app.js`
@@ -116,10 +123,10 @@ ponad to, co uczeń umie napisać. Tryb inny niż wpisanie trafia do dziennika p
 pole `m`, bo powtórek rozpoznania i przypomnienia nie da się potem rozdzielić.
 
 Słowo z nagraniem może przyjść **ze słuchu**: rozpoznawane (`listen-choice`, opcje nadal pisane
-po włosku) albo dyktowane (`listen-write`). Tylko z nagraniem i tylko gdy uczeń nie wybrał w
+po niemiecku) albo dyktowane (`listen-write`). Tylko z nagraniem i tylko gdy uczeń nie wybrał w
 Ustawieniach głosu systemowego (`FlashModes.audioAvailable`): karta ze słuchu czytana przez
 espeak uczy złych dźwięków, a wybór ucznia nie jest tu po cichu nadpisywany. W pytaniu nie ma
-włoskiego ani w tekście, ani w atrybucie, a przycisk „posłuchaj jeszcze raz" zostaje, bo
+niemieckiego ani w tekście, ani w atrybucie, a przycisk „posłuchaj jeszcze raz" zostaje, bo
 przeglądarka może odmówić odtworzenia przed pierwszym dotknięciem strony.
 
 Tą samą granicą idzie swobodna rozmowa: `chat-rules.js` (globalna `ChatRules`: sufit tur,
@@ -164,6 +171,14 @@ wyniku, nie na ekranie) i każda sprawdza się jednym assertem w `node:test`.
 
 ### Produkcje egzaminacyjne: model czyta, ale nie ocenia
 
+Symulator egzaminu to **podgląd w stylu Goethe-Zertifikat B1, nieoficjalny** (cztery moduły:
+Lesen, Hören, Schreiben, Sprechen), a nie CILS B1 Cittadinanza jak w kursie włoskim. Dopisek o
+nieoficjalności stoi na ekranie, materiałów oficjalnych nie używa, punktuje wyłącznie Lesen i
+Hören. **Struktura danych została pod starymi nazwami**: `data/core/cils.js`, `cils-run.js`,
+`cils-html.js`, `cils-report.js`, `views-cils.js`, trasa `#/cils`, klucze `cils.*` (ta sama
+zasada co pola `it*`, D4). Zmienia się treść i napisy, nie nazwy. Poniżej „prowa" znaczy
+moduł egzaminu, bez względu na nazwę pliku.
+
 ADR-009 postanowił, że dwie prowy produkcyjne dostają **wykrycie, nigdy oceny**: słuchanie
 i czytanie mają wagę za pozycję w oficjalnych kryteriach, a pisanie i mówienie na prawdziwym
 egzaminie oceniają ludzie według siatki. Symulator, który mówi „9/12, zdałbyś", obiecuje
@@ -190,10 +205,16 @@ transkrypcja, i referat mówi to tymi słowami: napisać „transkrypcja" znaczy
 że coś usłyszeliśmy. Dopiero ten tekst wchodzi do tego samego `Writing.analyse`, co prowa
 pisemna — czyli punkt 5 z ADR-009, wreszcie dotrzymany, inną drogą niż zakładał.
 
-Tą samą granicą przechodzi lematyzacja: `lemma-morf.js` (globalna `LemmaMorf`: rozcięcie
-formy złożonej, liczba mnoga, rodzaj, stopień najwyższy, akcent toniczny, enklityki,
-zamknięta lista wyrazów funkcyjnych) przed `lemma.js` (indeks odwrotny z koniugatora,
-słownik kursu, werdykt). To jest podział na KANDYDATÓW i WERDYKT: reguła formy jest czystą
+Tą samą granicą przechodzi lematyzacja: `lemma-morf.js` (globalna `LemmaMorf`: kandydaci niemieccy,
+czyli końcówki rzeczownika i przymiotnika, cofnięcie umlautu, stopniowanie, zamknięta lista
+wyrazów funkcyjnych i tabela stopniowań nieregularnych `IRREGULAR_DEGREES`: `besser`→`gut`,
+`höher`→`hoch`, `mehr`→`viel`, `lieber`→`gern`, `nächst`→`nah`) przed `lemma.js` (indeks odwrotny z koniugatora,
+słownik kursu, werdykt). **Granica, zadeklarowana w kodzie:** czasownik rozdzielny z partykułą oddaloną w zdaniu (`Ich
+stehe früh auf`) NIE jest sklejany z powrotem w `aufstehen`; indeks zna tylko formy, które
+generuje `Verbs` (także całe frazy `steht auf`), a oderwanego `stehe` ani `auf` nie indeksuje.
+Sklejenie wymaga składni zdania, nie wyszukiwania słowa. Formy rzeczowników zachowują wielką
+literę, bo lista frekwencyjna ją zachowuje.
+To jest podział na KANDYDATÓW i WERDYKT: reguła formy jest czystą
 funkcją napisu, werdykt wymaga zbudowanego słownika całego kursu.
 
 Kryterium podziału jest wszędzie to samo i nie jest nim długość pliku: **czysta funkcja
@@ -233,9 +254,30 @@ nie tłumaczy: dla Polaka chodzi o rodzaj nijaki i deklinację, dla Amerykanina 
 nie ma rodzaju gramatycznego w ogóle. Zawartość `p`, `trap`, `contrast`, `tip` jest wstawiana jako
 HTML (celowo, dla wyróżnień) — nie wolno tam wstawiać treści pochodzącej od użytkownika.
 
+### Pola `it*` niosą język uczony (D4)
+
+Kurs powstał jako rozwidlenie kursu włoskiego i **nazwy wewnętrzne nie zostały zmienione**:
+`it`, `titleIt`, `hintIt`, `glossIt`, `lexIt`, `dir: "toIt"` oraz klucze fiszek zachowują swoje
+nazwy, ale **trzymają tekst w języku UCZONYM, czyli po niemiecku**. `it` nie znaczy „włoski",
+znaczy „to, czego uczeń się uczy". Kod i dane czytają je tak samo jak dawniej, a `vocab[].it`
+zawiera więc `der Tisch`, nie `tavolo`. Kierunek `toIt` w ćwiczeniu `trans` to tłumaczenie NA
+język uczony (z wyjaśnień na niemiecki). Nazwy cils (pliki `cils*.js`, trasa `#/cils`, klucze
+`cils.*`) zostały z tego samego powodu.
+
+**Dlaczego nie rename.** Wspólny silnik ma dalej przyjmować poprawki z `versione-statica` przez
+cherry-pick (zob. „Silnik wspólny: najpierw upstream"). Rename `it` → `de` w setkach miejsc
+zrobiłby z każdej takiej poprawki ręczną rekonstrukcję i rozjechał dwa repozytoria na stałe,
+w zamian za nazwę, którą czyta tylko programista. Cena: pole `it` z niemieckim tekstem jest
+mylące dla kogoś, kto nie przeczytał tego akapitu, i dlatego stoi tutaj. Kto dopisuje dane,
+wpisuje niemiecki do pól `it*` i wyjaśnienie do `tr`, `hint`, `gloss`.
+
+Klucz fiszki to nadal samo pole `it`, czyli niemieckie słowo (rzeczownik z rodzajnikiem).
+Rodzajnik `der`/`die`/`das` rozpoznaje `FlashModes` (`ARTICLE` w `flash-modes.js`) w trybach,
+które go używają.
+
 ### Podział pola na warstwy
 
-Reguła: w `core` siedzi to, co jest włoskie, sprawdza odpowiedź albo trzyma strukturę.
+Reguła: w `core` siedzi to, co jest w języku uczonym (niemieckim), sprawdza odpowiedź albo trzyma strukturę.
 W nakładce siedzi to, co uczeń czyta po swojemu.
 
 | `data/core/` | `data/i18n/<lang>/` |
@@ -249,12 +291,13 @@ W nakładce siedzi to, co uczeń czyta po swojemu.
 
 Dwa miejsca wymagają uwagi:
 
-- **`grammar.table` i `ex.opts` idą w całości do nakładki**, razem z włoskimi komórkami. Nie ma
-  w nich znacznika, która kolumna jest po włosku, a która po polsku — zależy to od tabeli.
+- **`grammar.table` i `ex.opts` idą w całości do nakładki**, razem z niemieckimi komórkami. Nie ma
+  w nich znacznika, która kolumna jest po niemiecku, a która w języku ucznia — zależy to od tabeli.
   Decyzję „to tłumaczę, tego nie ruszam” podejmuje więc tłumacz, nie skrypt. Te napisy nigdy
   nie są wypowiadane, więc powielenie ich w każdym języku nic nie kosztuje po stronie nagrań.
-- **`gender.opts` zostaje w `core`**, mimo że to też `opts`. To zamknięty zbiór form włoskich,
-  który musi się zgadzać z `items[].a`; wystawienie go na tłumaczenie psuje sprawdzanie.
+- **`gender.opts` zostaje w `core`**, mimo że to też `opts`. To zamknięty zbiór form niemieckich
+  (`der`/`die`/`das`; przypadek ćwiczy się własnym `opts`, np. `den`/`dem`/`des`), który musi się
+  zgadzać z `items[].a` (`validate.mjs` odrzuca `items[].a` spoza `opts`); wystawienie go na tłumaczenie psuje sprawdzanie.
 - **`tags` zostaje w `core`**, choć wygląda na etykietę do czytania. To tablica **id** z
   `GRAMMAR_REF` (`g-presente`, `g-pron-diretti`, …), a nie napisów: tytuły tych haseł są już
   przetłumaczone na pięć języków pod kluczem `ref:<id>`, więc quaderno błędów nazywa zagadnienia
@@ -262,17 +305,31 @@ Dwa miejsca wymagają uwagi:
   pojedyncze ćwiczenie może dopisać `tag:` i nadpisać dziedziczenie z lekcji.
   `validate.mjs` odrzuca lekcję bez tagów i tag, którego nie ma w `GRAMMAR_REF`.
 - **W warstwie neutralnej nie ma ani jednego słowa w języku ucznia.** Etykieta konstrukcji pisze
-  się po włosku (`dopo aver + participio`, nie `+ imiesłów`), a prompt ćwiczenia po włosku
-  (`Colloquiale:`, nie `Potocznie:`). Dopóki polski był jedynym językiem bazowym, taki wyciek był
-  niewidoczny: wyglądał jak poprawny tekst. Pilnuje tego `validate.mjs`, i to na **danych**, a nie
-  na tekście pliku: skanuje wartości warstwy neutralnej ZANIM nałoży się nakładka, więc komentarz
-  po polsku go nie myli w żadną stronę. **Granica tego gate:** łapie tylko litery spoza włoskiego
-  alfabetu (`ą ę ł ż ź ć ń ś ñ ç ä ö ü ß` …). Angielskie „house" ani polskie „dziadek" przez niego
-  nie przejdą, bo nie mają czego — na to nie ma automatu i zostaje czytanie danych oczami.
+  się po niemiecku (`Perfekt mit haben`, nie `+ imiesłów`), a prompt ćwiczenia po niemiecku, nie
+  po polsku ani po włosku. Dopóki jednym językiem bazowym był polski, taki wyciek był niewidoczny:
+  wyglądał jak poprawny tekst. Pilnuje tego `validate.mjs`, i to na **danych**, a nie na tekście
+  pliku: skanuje wartości warstwy neutralnej ZANIM nałoży się nakładka, więc komentarz po polsku
+  go nie myli w żadną stronę. Reguły skanu siedzą w `scripts/neutral-letters.mjs` (`scanValues`)
+  i wołają je też `check_porting.mjs` oraz `review_lot.mjs`: jeden skaner, trzy bramki. Zastąpił
+  on regex „litery włoskie", który stał w `validate.mjs`; dwa alfabety w jednej bramce byłyby
+  błędem, a `upstream` ma swój własny. Skaner robi dwie rzeczy: odrzuca litery spoza zbioru
+  `a-z A-Z ä ö ü ß Ä Ö Ü ẞ é É` (a więc `à è ì ò ù`, litery włoskie, i `ą ę ł ż ź ć ń ś ñ ç` …)
+  oraz słowa funkcyjne włoskie z krótkiej zamkniętej listy (`della`, `nella`, `perché`, `anche`,
+  `questo` …). **Granica tego gate:** angielskie „house" ani polskie „dziadek" przez niego nie
+  przejdą, bo nie mają czego; na to nie ma automatu i zostaje czytanie danych oczami (w tym
+  drugim sędzią lotu, zob. „Cykl partii treści").
 
 Tablice łączą się **po indeksie**, więc ich długość musi być identyczna po obu stronach.
 `LINGUAI.applyStrings(lang)` (`assets/js/i18n-merge.js`) jest idempotentne i nigdy nie nadpisuje pól
 neutralnych — dlatego drugi język można nałożyć na te same obiekty bez przeładowania strony.
+
+### Ocena odpowiedzi pisanej (D7)
+`Txt.checkOpen` (`text.js`) rozstrzyga trzy stany. Odpowiedź różniąca się od wzorca wyłącznie
+transkrypcją `ae`/`oe`/`ue`/`ss` zamiast `ä`/`ö`/`ü`/`ß`, albo małą literą rzeczownika
+(`die strasse` dla `die Straße`), jest **prawie dobra** (`near`, ten sam komunikat „spróbuj
+jeszcze raz"). **Opuszczony umlaut jest błędem**: `Madchen` dla `Mädchen` to inne słowo, tak jak
+`schon`/`schön` i `Bar`/`Bär`, więc nie ma tolerancji „a za ä". Wielka litera w środku wzorca
+jest porównywana ściśle; tolerowana jest tylko początkowa. Pasek znaków oferuje `ä ö ü ß Ä Ö Ü`.
 
 ### Ćwiczenie
 Typ w polu `t`. Czternaście typów, po trzech plikach, wg tego CO ROBI UCZEŃ:
@@ -295,19 +352,37 @@ i to, że zbudowany kafelek ma `data-idx`, czego zastępnik nie ma.
 `truefalse` też nie występuje w lekcjach, ale jest w czytankach.
 
 ### Odmiana czasowników
-`Verbs.conjugate(infinito, tenseKey)` zwraca sześć form albo `null` na pozycjach bez formy
-(np. `io` w trybie rozkazującym). Klucze czasów: `pres, passPross, imperf, trapPross, futuro,
-futAnt, remoto, condizionale, condPass, cong, congPass, congImp, congTrap, imper`.
-Nieregularne siedzą w tablicy `IRR`; reszta jest wyprowadzana regułami, łącznie ze zmianami
-ortograficznymi (`-care/-gare/-ciare/-giare/-iare`). Tabele (`IRR`, końcówki, listy `ISC`
-i `ESSERE_VERBS`, `TENSES`, `COMMON`) leżą w `verbs-data.js`: dopisanie czasownika nie dotyka
-pliku z algorytmem. W `verbs.js` została lista przedrostków i jej dwa wyjątki, bo to strojenie
-heurystyki `irrOf`, a nie włoszczyzna do przeglądania.
+`Verbs.conjugate(infinitiv, tenseKey)` zwraca sześć form (`ich, du, er/sie/es, wir, ihr, sie/Sie`)
+albo `null` na pozycjach bez formy (np. `ich` w trybie rozkazującym). Klucze czasów:
+`praes, praet, perf, plusq, fut1, fut2, konj2, konj2Verg, konj1, imper`. Nieregularne (mocne,
+mieszane, modalne, `sein`/`haben`/`werden`/`wissen`) siedzą w tablicy `IRR`; reszta jest
+wyprowadzana regułami (końcówki słabe, `-eln`/`-ern`, `-ieren` bez `ge-`). Tabele (`IRR`,
+końcówki, `SEIN_VERBS`, `PREFIX_KIND`, `REFLEXIVE`, `TENSES`, `COMMON`) leżą w `verbs-data.js`:
+dopisanie czasownika nie dotyka pliku z algorytmem. W `verbs.js` została lista przedrostków
+i jej wyjątki (`UNSPLIT_VERBS`, `STEM_INITIAL_VERBS`, `UNRELATED_VERBS`), bo to strojenie
+heurystyki, a nie niemczyzna do przeglądania.
 
-**Zwrotne w trybie rozkazującym**: zaimek dokleja się do form tu/noi/voi (`alzati`,
-`alziamoci`, `alzatevi`) i stoi przed formą grzecznościową (`si alzi`). Krótka forma tu gubi
-apostrof i podwaja spółgłoskę (`fa'` + `ti` → `fatti`). Przeczenia silnik NIE zna: włoskie
-„non alzarti" bierze bezokolicznik, więc `"non " + forma` byłoby błędem.
+- **Pomocniczy czasownik Perfekt**: `SEIN_VERBS` to czasowniki z `aux: "sein"` w `IRR` plus
+  zamknięta lista regularnych (`reisen`, `wandern`, `aufstehen`, `passieren` …); reszta idzie
+  przez `haben`. Dopisując czasownik ruchu lub zmiany stanu, sprawdź, czy nie ma go na tej liście.
+- **Przedrostki rozdzielne i nierozdzielne.** Zamknięta lista rozdzielnych (`auf-`, `an-`,
+  `zurück-`, `zusammen-` …, dłuższe przed krótszymi, żeby `zurück-` wygrało z `zu-`) i
+  nierozdzielnych (`be-`, `ver-`, `er-`, `ent-`, `zer-`, `miss-` …). Przedrostki `über-`,
+  `unter-`, `durch-`, `wieder-` i `um-` bywają jednym i drugim, więc o każdym czasowniku z
+  tabeli decyduje `PREFIX_KIND` (`umziehen` rozdzielny, `umarmen` nie); poza tabelą `um-` jest
+  rozdzielny, a pozostałe trzy nie. Rozdzielny dostaje partykułę na końcu formy prostej
+  (`steht auf`), a imiesłów wstawia `ge-` za przedrostkiem (`aufgestanden`); nierozdzielny i
+  `-ieren` nie dostają `ge-`.
+- **Zwrotne** (`sich waschen`): zaimek `mich/dich/sich/uns/euch/sich` doklejany jest za formą
+  osobową. Przeczenia silnik NIE zna: „nicht" i szyk zdania to nie jego sprawa.
+- **Konjunktiv II: jaką formę pokazujemy.** Tabela dla ucznia pokazuje formę syntetyczną
+  (`wäre`, `hätte`, `könnte`) tylko tam, gdzie wpis `IRR` ma jawny rdzeń `konj2`: pomocnicze,
+  modalne, `wissen`, mocne `nehmen/kommen/gehen/geben`, mieszane `bringen/denken`. Wszystkie
+  pozostałe czasowniki (słabe, a także `fahren`, `waschen`, `stehen`) pokazują `würde` +
+  bezokolicznik, żeby nie uczyć rzadkich form syntetycznych. **Przy ocenie odpowiedzi forma
+  syntetyczna jest przyjmowana** (`exercises-text.js`, `SYNTHETIC_STEMS`: `führe`, `wüsche`,
+  `stünde`/`stände`): uczeń, który zna `stünde`, nie traci punktu za to, że tabela go nie
+  pokazuje. `konj2Verg` i `konj1` biorą te same zasady, a `möchten` ma tylko teraźniejszość.
 
 ## Dźwięk
 
@@ -315,47 +390,29 @@ Głos kursu to **nagrania**, nie synteza w przeglądarce. Powód: na Linuksie We
 sięga zwykle po espeak-ng (synteza formantowa, brzmi mechanicznie), a jakość na pozostałych
 systemach jest nieprzewidywalna. Backend odpadał, bo zabiłby statyczność.
 
-- **Głosy**: `it-IT-IsabellaNeural` (główny), `it-IT-GiuseppeMultilingualNeural` (rozmówca
-  w dialogach i konwersacjach). Edge TTS daje cztery głosy it-IT: Isabella, Elsa, Diego
-  i Giuseppe Multilingual, z czego Diego jest jedynym jednojęzycznym męskim. Próba
-  podmiany Giuseppe na Diego (2026-09-12) została **wycofana po odsłuchu**: rodzina
-  `*MultilingualNeural` faktycznie umie przejść na rodzimą fonetykę zapożyczenia, ale na
-  pełnych zdaniach kursu tego nie robi, a Diego wypadł gorzej. Sam mechanizm nie jest
-  wymyślony, tylko celuje w inne miejsce, zob. punkt niżej.
-- **„Amerykańska wymowa" w kursie była AKCENTEM TONICZNYM, nie angielską fonetyką.**
-  Głos przenosi akcent na złą sylabę w części włoskich słów (`figurati` czytane `figuràti`
-  zamiast `figùrati`), a przesunięty akcent brzmi obco, choć wszystkie dźwięki są włoskie.
-  Dwie hipotezy, które po drodze upadły, i obie są tu po to, żeby nikt ich nie wracał
-  sprawdzać: (1) rodzina `*MultilingualNeural` — odsłuch mówi, że na zdaniach kursu nie
-  przechodzi na angielski; (2) `xml:lang` w kopercie SSML, którą `edge-tts` na sztywno
-  ustawia na `en-US` (`communicate.py`) — **zmierzone: koperta jest bezczynna**, usługa
-  bierze język z głosu. Uwaga na pomiar: ta sama prośba dwa razy daje inne bajty dla części
-  napisów, więc porównanie plików bez kontroli powtarzalności pokazuje różnicę, której nie ma.
-- **Akcent poprawia się tabelą `STRESS_FIXES` w `scripts/build_audio.py`.** Grafia z akcentem
-  idzie **wyłącznie do syntezatora**: `voiced_text()` przepisuje napis przed wysłaniem, a
-  `audio_hash()` liczy skrót z napisu ORYGINALNEGO. Uczeń nadal czyta `figurati`, plik zostaje
-  pod swoim adresem, zmienia się samo nagranie. To jedyne miejsce w projekcie, gdzie tekst
-  mówiony rozjeżdża się z pisanym, i dlatego rozjazd jest jedną funkcją, a nie drugą kopią danych.
-- **Każdy wpis tabeli jest odsłuchany, nie wydedukowany.** 162 słowa kursu z grup ryzyka (formy
-  z enklityką, trzecia osoba mnoga, -issimo, -abile/-ibile/-evole, homografy, sdrucciole)
-  wygenerowano osobno i przesłuchano jedno po drugim; złych było siedem: `costano`, `dormono`,
-  `falliscono`, `figurati`, `imparano`, `ingannano`, `seguito`. Zasada dopisywania: słowo,
-  którego OBA odczyty występują w kursie, do tabeli NIE wchodzi — homograf `seguito` jest
-  bezpieczny tylko dlatego, że w kursie stoi raz, jako imiesłów (`mi ha seguito`). Taki
-  przypadek trzeba rozdzielić po zdaniu, nie po słowie.
+- **Głosy**: `de-DE-KatjaNeural` (główny, `VOICE_PRIMARY`) i `de-DE-ConradNeural` (rozmówca
+  w dialogach i konwersacjach, `VOICE_OTHER`), obie stałe w `scripts/build_audio.py`.
+- **Akcent poprawia się tabelą `STRESS_FIXES` w `scripts/build_audio.py`, dziś PUSTĄ.** Lista
+  niemiecka powstanie dopiero z odsłuchu: wpis wolno dopisać tylko słowu, które odsłuchano i
+  które głos czyta źle; wydedukowanych wpisów nie ma. Grafia poprawiona idzie
+  **wyłącznie do syntezatora**: `voiced_text()` przepisuje napis przed wysłaniem, a
+  `audio_hash()` liczy skrót z napisu ORYGINALNEGO. Uczeń nadal czyta oryginał, plik zostaje
+  pod swoim adresem, zmienia się samo nagranie. To jedyne miejsce, gdzie tekst mówiony
+  rozjeżdża się z pisanym, i dlatego rozjazd jest jedną funkcją, a nie drugą kopią danych.
+  Zasada dopisywania: słowo, którego OBA odczyty występują w kursie (homograf), do tabeli NIE
+  wchodzi; taki przypadek trzeba rozdzielić po zdaniu, nie po słowie.
 - **Zmiana tabeli to zmiana nagrań, w trzech krokach**: usuń pliki zdań z tym słowem,
   przebiegnij `build_audio.py` bez `--force`, podnieś sufiks w `AUDIO_CACHE` w `sw.js`.
   Krok trzeci jest obowiązkowy: treść pod tym samym adresem się zmienia, a guska trzyma
   nagrania cache-first bez unieważniania.
 - **Zmiana głosu to trzy kroki, nie jeden.** Nazwa pliku jest skrótem TREŚCI, a nie głosu,
   więc sama podmiana stałej nie rusza ani jednego pliku, a `--force` przegenerowałby
-  wszystkie 4070 (46 MB ruchu w gicie) zamiast tych, które faktycznie się zmieniają.
+  wszystkie (dziesiątki MB ruchu w gicie) zamiast tych, które faktycznie się zmieniają.
   Kolejno: (1) stała w `scripts/build_audio.py`; (2) usunięcie plików TEGO głosu (skróty
   z właściwej połowy `scripts/audio-strings.json`) i przebieg bez `--force`; (3) **sufiks
   w `AUDIO_CACHE` w `sw.js`**, bo guska trzyma nagrania cache-first bez unieważniania,
   a `sweepAudio()` tego nie wyłapie: skrót nie jest sierotą, jest identyczny. Bez kroku (3)
-  uczeń, który już korzystał z kursu, zostaje ze starym głosem na zawsze. Sprawdzone
-  w praktyce na wycofanej zmianie z 2026-09-12.
+  uczeń, który już korzystał z kursu, zostaje ze starym głosem na zawsze.
 - **Kto co robi**: `assets/js/recordings.js` (globalna `Recordings`) odpowiada wyłącznie na
   pytanie „czy to zdanie ma nagranie i pod jakim adresem" — jest czystą funkcją napisu i to
   jedyna część dźwięku, która ma bliźniaka po stronie budowania. `assets/js/audio.js` to
@@ -384,7 +441,7 @@ kolejne przebiegi nie generują ruchu w gicie.
 
 ## Pary minimalne
 
-`data/core/phonetics.js` (same wyrazy włoskie) plus nakładki z glosami i uwagą kontrastywną.
+`data/core/phonetics.js` (same wyrazy niemieckie) plus nakładki z glosami i uwagą kontrastywną.
 Ćwiczenie `minpair` odtwarza jeden z dwóch wyrazów i pyta który.
 
 **Nagranie jest warunkiem istnienia tego ćwiczenia.** Synteza systemowa myli dokładnie te
@@ -400,7 +457,14 @@ tego ani w kodzie, ani w testach, ani na ekranie. Z tego powodu w kursie nie ma 
 ## Praca bez sieci
 
 `sw.js` (w katalogu głównym, bo tam sięga scope) plus `manifest.webmanifest`.
-Dwie strategie i obie mają powód:
+Dwie strategie i obie mają powód. **Prefiks pamięci to `impara-tedesco-`** (`impara-tedesco-shell-<wersja>`,
+`impara-tedesco-audio-<n>`), nie `linguai-`: kurs włoski stoi na tym samym originie github.io, a jego
+guska przy aktywacji kasuje każdą pamięć o prefiksie `linguai-*`, więc wspólny prefiks pozwoliłby
+jednemu kursowi wyczyścić drugiemu cache. `activate` w `sw.js` kasuje wyłącznie własny prefiks.
+Z tego samego powodu stan ucznia leży pod kluczem `linguai.tedesco.v1` (zob. „Czego nie zmieniać"):
+profil włoski (`linguai.italiano.*`) w tym samym `localStorage` nie jest czytany, importowany
+ani kasowany. Marka kursu to **„Deutsch lernen"** (manifest, szyna, `og:*`, ścieżka
+`/impara-tedesco/`). Strategie:
 
 - **Nagrania** — cache-first, bez unieważniania. Nazwa pliku jest skrótem treści zdania,
   więc plik pod danym adresem nigdy nie zmienia zawartości; poprawione zdanie dostaje
@@ -549,7 +613,7 @@ miałby wyjść. Zostają cztery rzeczy i żadna z nich nie jest powiadomieniem.
 `ics.js` jest czystą funkcją napisu i to nie jest kosmetyka: **tu psuje się cicho i
 w cudzym programie**. Przecinek albo nowa linia w wartości nie psują wiersza, tylko go
 KOŃCZĄ, a reszta czyta się jako następna właściwość; limit 75 **oktetów** (nie znaków)
-przy polskich i włoskich literach wypada w innym miejscu, niż podpowiada oko; a
+przy polskich i niemieckich literach wypada w innym miejscu, niż podpowiada oko; a
 rozcięcie pary zastępczej odbiera plikowi status UTF-8. `DTSTART` celowo nie ma ani `Z`,
 ani `TZID`: RFC 5545 nazywa to czasem pływającym i o to chodzi, bo „siódma rano" ma
 znaczyć siódmą tam, gdzie uczeń jest.
@@ -573,7 +637,7 @@ oba skrypty, więc zmiana domeny to zmiana tej jednej linii plus przebieg `build
 napisy na tej stronie. Robot czytający link nie wykonuje ani jednej linii naszego kodu, więc
 `data-i18n` nigdy by się na nich nie odpaliło: wyglądałoby poprawnie i nie robiło nic.
 Angielski jest tu tym, czego można się spodziewać po kimś, kto kursu jeszcze nie otworzył,
-tą samą decyzją co `"lang": "en-US"` w `manifest.webmanifest`. Nazwa kursu zostaje włoska,
+tą samą decyzją co `"lang": "en-US"` w `manifest.webmanifest`. Nazwa kursu zostaje niemiecka (`Deutsch lernen`),
 jak w szynie i w każdym języku interfejsu.
 
 Pilnuje tego `node scripts/check_ogtags.mjs`: czy prefiks znaczników zgadza się z `homepage`,
@@ -587,13 +651,13 @@ a kurs działa dalej.
 pliku wyglądają na przeoczenie i są decyzją.
 
 **Ani jednej ścieżki względnej.** Pages odpowiada tym plikiem na KAŻDY nieznany adres,
-zachowując głębokość, o którą poprosił odwiedzający: `/impara-italiano/a/b/c/nic` dostaje
+zachowując głębokość, o którą poprosił odwiedzający: `/impara-tedesco/a/b/c/nic` dostaje
 te bajty, a przeglądarka nadal uważa, że stoi w `/a/b/c/`. Względny `href` rozwiązałby się
 więc względem katalogu, którego nie ma. Wszystko idzie od korzenia, spod prefiksu z pola
 `homepage` w `package.json`, i tego pilnuje `node scripts/check_404.mjs`.
 
 Cena jest realna: **otwarty przez `scripts/serve.mjs` ten plik przychodzi bez arkusza
-stylów**, bo `/impara-italiano/` nie jest ścieżką w drzewie roboczym. To nie jest usterka.
+stylów**, bo `/impara-tedesco/` nie jest ścieżką w drzewie roboczym. To nie jest usterka.
 Bramka czyta atrybuty zamiast ładować stronę, a `tests/dom/notfound.spec.js` przepisuje
 prefiks przed otwarciem - i dopiero dzięki temu może sprawdzić rzecz najważniejszą:
 że po przepisaniu arkusz NAPRAWDĘ się wczytuje, czyli że ścieżki wskazują na pliki,
@@ -601,7 +665,7 @@ a nie na prawdopodobnie wyglądające napisy.
 
 **Pięć zdań wpisanych w plik, nie w słowniki.** Kurs wybiera język z `localStorage`, a do
 tego potrzebny jest skrypt; ten projekt nie ma ani jednego wbudowanego i to jest własność
-zadeklarowana w komentarzu nad CSP, nie preferencja. Nagłówek stoi po włosku, bo to jedyny
+zadeklarowana w komentarzu nad CSP, nie preferencja. Nagłówek stoi po niemiecku, bo to jedyny
 język, który mają wspólny wszyscy uczniowie. Te pięć wierszy jest poza `parity.mjs`
 i nic nie powie, że rozjechały się z kursem - poza przeczytaniem ich.
 
@@ -646,8 +710,13 @@ pomylił, i sam mu to podsuwa.
   nakładki osierociłoby cały zbiór przy zmianie języka.
   Przechwytywanie idzie przez owinięcie `Ex.build` (`Errors.install`), nie przez
   trzynaście builderów: przy czternastym typie nie ma czego zapomnieć.
-- **Drille z reguł** (`drills-lex.js` + `drills.js`). Siedem generatorów, funkcje czyste
-  ziarna. Zadania są **wyłącznie pisane**: wygenerowanego zdania nie ma w indeksie
+- **Drille z reguł** (`drills.js` + dwa leksykony). Siedem generatorów, funkcje czyste
+  ziarna. Leksykon jest podzielony wedle przedmiotu: `drills-lex.js` (globalna `Lex`) trzyma
+  liczebniki, godziny, daty i zaimki, a `drills-de.js` (globalna `LexDe`) rzeczowniki z rodzajem
+  i liczbą mnogą, rodzajnik według przypadka, przyimki ze zrostami (`in` + `dem` → `im`) i
+  pomocniczy czasownik Perfekt (czyta `VERB_TABLES.SEIN_VERBS`, więc `verbs-data.js` stoi przed
+  nim). Odpowiedź i pytanie liczy ta sama funkcja, więc klucz nie rozjeżdża się z zadaniem.
+  Zadania są **wyłącznie pisane**: wygenerowanego zdania nie ma w indeksie
   nagrań, więc `say` i typy `listen`/`speak` są zabronione i pilnowane testem.
 - **Sesja dnia** (`views-today.js`), **test poziomujący** (`placement.js`),
   **pary minimalne** (`views-phonetics.js`), **czytanki** (`views-reading.js`),
@@ -684,16 +753,21 @@ plik niósł już nową wartość i po odzyskaniu nie prosił od razu o następn
 
 ```bash
 npm run lint                        # poprawność kodu (eslint, flat config, cztery bloki)
-node scripts/validate.mjs           # duplikaty id, kompletność ćwiczeń, długość tekstów biblioteki, statystyki (domyślnie pl)
+node scripts/validate.mjs           # duplikaty id, kompletność ćwiczeń, długość tekstów biblioteki, statystyki (domyślnie it)
 node scripts/validate.mjs en        # to samo dla nakładki angielskiej
-node scripts/parity.mjs             # czy każdy język ma ten sam kształt co polski
+node scripts/parity.mjs             # czy każdy język ma ten sam kształt co włoski (wzorzec)
 node scripts/check_precache.mjs     # czy guska wczyta wszystko, co ładuje index.html
 node scripts/check_swversion.mjs [--napraw]   # czy nowe wydanie ma jak się ogłosić
 node scripts/check_ogtags.mjs       # czy wysłany komuś link pokaże podgląd
 node scripts/build_og.mjs           # przerysowuje obrazek podglądu (Chromium z testów DOM)
 node scripts/check_404.mjs          # czy strona 404 działa tam, gdzie jest serwowana
 node scripts/baseline.mjs           # liczby tego repozytorium, do tabeli Baseline niżej
-node scripts/extract_strings.mjs    # lista zdań do nagrania
+node scripts/extract_strings.mjs    # lista zdań do nagrania (npm run audio:strings)
+npm run audio:build                 # nagrania de-DE, tylko brakujące (uv run --script scripts/build_audio.py)
+npm run audio:prune                 # sieroty mp3: domyślnie dry-run, kasuje dopiero --apply
+npm run snapshot:target -- <ścieżka versione-statica>   # zapisuje scripts/porting-target.json (cel liczbowy portu)
+npm run check:porting -- --unit <id> [--stage core,it,en,es,fr,pl,audio,review,human] [--curriculum]
+npm run review:lot -- --unit <id> --lang <it|en|es|fr|pl> [--dry-run]   # drugi sędzia partii
 uv run --script scripts/build_audio.py --dry-run   # ile plików brakuje
 node scripts/serve.mjs 8080         # serwer do testów, zawsze no-store
 npm test                            # logika silnika, node:test w piaskownicy node:vm
@@ -804,9 +878,9 @@ Trzy rzeczy, które trzeba o niej wiedzieć:
   głosu przed jej końcem, a samo jego zarejestrowanie wyłączyło domyślne ubicie procesu,
   więc Ctrl+C przestawał ją zatrzymywać.
 
-`parity.mjs` jest bramką dla nowego języka. Nakładki łączą się z warstwą neutralną **po indeksie**,
+`parity.mjs` jest bramką dla nowego języka (wzorzec: `it`). Nakładki łączą się z warstwą neutralną **po indeksie**,
 więc tablica krótsza o jeden element niczego nie wywraca: jedno ćwiczenie po cichu zostaje w
-poprzednim języku. Skrypt porównuje kształt (klucze i długości, nie treść) każdej nakładki z polską
+poprzednim języku. Skrypt porównuje kształt (klucze i długości, nie treść) każdej nakładki z włoską
 i kończy się kodem 1 przy różnicy.
 
 Do testów w przeglądarce służy `scripts/serve.mjs`, nie `python3 -m http.server`.
@@ -853,6 +927,20 @@ wywracają, widać bez testu.
   sRGB, więc konwersję robi silnik i próg jest prawdziwy. Ten gate złapał
   obramowanie zakładki przy 1.58:1 i licznik przy 2.58:1.
 
+### Cykl partii treści i drugi sędzia (D8)
+
+Kurs jest portowany partiami (jednostka × język). `scripts/check_porting.mjs` porównuje
+stan z celem z `scripts/porting-target.json` (37 jednostek, 170 lekcji, rozkład ćwiczeń
+w tolerancji ±15%) etapami `core`, `it`, `en`, `es`, `fr`, `pl`, `audio`, `review`, `human`.
+`scripts/review_lot.mjs` oddaje partię **drugiemu modelowi** (`codex exec`, limit 180 s) i
+zapisuje werdykt `pass`/`fail` z uwagami w `specs/german-course/reviews/<jednostka>-<język>.json`.
+**Werdykt jest związany z hashem paczki** (`bundleHash`, `review-bundle.mjs`): każda późniejsza
+zmiana plików partii unieważnia go (`stale verdict`) i `check_porting.mjs --stage review` robi
+się czerwony, więc `pass` sprzed edycji nie przechodzi. Sędzia może potwierdzić błąd wspólny
+obu modeli (rodzaj zapożyczeń, rekcja przyimków, rejestr C1-C2), dlatego jednostki B2-C2
+mają dodatkowo etap `human` (próbka sprawdzona przez człowieka). `--dry-run` drukuje rozmiar
+paczki i skrót promptu bez wołania modelu.
+
 `validate.mjs` uruchamia prawdziwe pliki danych w piaskownicy `node:vm` i scala je **tym samym**
 `assets/js/i18n-merge.js`, którego używa przeglądarka — sprawdza więc dane po scaleniu, nie ich kopię.
 Kończy się kodem 1 przy błędzie, nadaje się do CI.
@@ -860,6 +948,14 @@ Kończy się kodem 1 przy błędzie, nadaje się do CI.
 `extract_strings.mjs` czyta **wyłącznie `data/core/`**. To nie oszczędność, tylko dowód: gdyby
 wypowiadany napis mógł mieszkać w nakładce, ten skrypt by go tam nie znalazł. Nagrania nie zależą
 od języka wyjaśnień i dopisanie języka nie wymaga generowania ani jednego mp3.
+
+## Silnik wspólny: najpierw upstream
+
+Usterka w silniku, który dzielą oba kursy (nie w treści niemieckiej), jest naprawiana **najpierw w
+`versione-statica`**, w osobnym worktree na gałęzi `fix/<opis>` (nigdy w jego głównym checkoucie,
+nigdy z pushem), a tutaj trafia przez cherry-pick z remote'a `upstream`. Poprawka zrobiona tylko
+tu rozjeżdża silniki i następny cherry-pick z upstreamu ją zderzy z wersją „oryginalną".
+Treść, tabele czasowników i wszystko, co niemieckie, żyje tylko w tym repozytorium.
 
 ## Czego nie zmieniać bez powodu
 
@@ -869,8 +965,8 @@ od języka wyjaśnień i dopisanie języka nie wymaga generowania ani jednego mp
   Amerykanina poprawna i bezużyteczna naraz.
 - **Próg 70%** zaliczenia lekcji (`Core.recordLesson`). Zmiana rozjeżdża opisy w treści lekcji.
 - **Kolejność jednostek.** Gramatyka jest kumulatywna: A2 zakłada opanowanie A1, B1 zakłada A2.
-- **Klucz `localStorage`** (`linguai.italiano.v2`) i pole `schema`. Zmiana schematu wymaga
+- **Klucz `localStorage`** (`linguai.tedesco.v1`) i pole `schema` (2; start bez migracji, bez importu kluczy włoskich). Zmiana schematu wymaga
   podniesienia numeru **i napisania migracji** w `core.js`, inaczej stare zapisy wczytają się
-  w niespójnym stanie. Migracja v1 → v2 (przekluczowanie fiszek na sam włoski) jest tam wzorem.
-- **Klucz fiszki to sam włoski.** Gdyby wchodziło w niego tłumaczenie, zmiana języka wyjaśnień
+  w niespójnym stanie. Migracja v1 → v2 (przekluczowanie fiszek na samo pole `it`) jest tam wzorem. Klucze LLM (`linguai.llm.v1`) są wspólne z kursem włoskim: ten sam origin.
+- **Klucz fiszki to samo pole `it` (niemieckie słowo).** Gdyby wchodziło w niego tłumaczenie, zmiana języka wyjaśnień
   osierociłaby całą talię: to samo słowo, inny klucz, harmonogram powtórek do wyrzucenia.
