@@ -1,8 +1,7 @@
 /* ============================================================
    Language-neutral layer: German (de-DE), structure and answer keys.
    Learner-language texts live in data/i18n/<lang>/a1-01.js.
-   a1-u01 and a1-u02 are German units; a1-u03 below is still the old
-   Italian-course content and is rewritten by a later task.
+   a1-u01, a1-u02 and a1-u03 are German units.
    ============================================================ */
 LINGUAI.addUnits("A1", [
   {
@@ -555,253 +554,295 @@ LINGUAI.addUnits("A1", [
   },
   {
     id: "a1-u03",
-    icon: "🍹",
-    titleIt: "L'aperitivo",
+    icon: "🥨",
+    titleIt: "Feierabend",
     lessons: [
       {
         id: "a1-u03-l1",
-        tags: ["g-pron-indiretti", "g-frase"],
+        tags: ["g-praesens", "g-satz-v2"],
         cefr: "A1",
-        titleIt: "Mi piace, mi piacciono",
+        titleIt: "Ich trinke gern ...",
         grammar: {
           examples: [
-            { it: "Mi piace molto il caffè." },
-            { it: "Ti piacciono gli spritz?" },
-            { it: "Non ci piace la birra calda." },
-            { it: "Le piace ballare." },
-            { it: "A Marco piace il pesce." },
-            { it: "Mi piacerebbe provare." }
+            { it: "Ich trinke gern Tee." },
+            { it: "Ich esse gern Pizza." },
+            { it: "Ich mag Käse." },
+            { it: "Magst du Fisch?" },
+            { it: "Heute trinke ich gern Saft." },
+            { it: "Wir mögen Suppe." }
           ]
         },
         vocab: [
-          { it: "l'aperitivo" },
-          { it: "lo spritz" },
-          { it: "il vino rosso / bianco" },
-          { it: "la birra" },
-          { it: "le olive" },
-          { it: "le patatine" },
-          { it: "i salatini" },
-          { it: "il prosciutto" },
-          { it: "il formaggio" },
-          { it: "i dolci" },
-          { it: "il pesce" },
-          { it: "la carne" },
-          { it: "cucinare" },
-          { it: "assaggiare" }
+          { it: "gern", ex: "Ich trinke gern Tee." },
+          { it: "trinken", ex: "Ich trinke gern Saft." },
+          { it: "essen", ex: "Ich esse gern Brot." },
+          { it: "mögen", ex: "Ich mag Käse." },
+          { it: "der Apfel", plural: "die Äpfel", ex: "Ich esse gern Äpfel." },
+          { it: "die Pizza", plural: "die Pizzen", ex: "Ich mag Pizza." },
+          { it: "der Salat", plural: "die Salate", ex: "Ich esse gern Salat." },
+          { it: "die Suppe", plural: "die Suppen", ex: "Wir mögen Suppe." },
+          { it: "die Nudeln", plural: "die Nudeln", ex: "Ich mag Nudeln." },
+          { it: "der Fisch", plural: "die Fische", ex: "Magst du Fisch?" },
+          { it: "das Fleisch", plural: "-", ex: "Ich esse gern Fleisch." },
+          { it: "das Obst", plural: "-", ex: "Ich esse gern Obst." },
+          { it: "die Limonade", plural: "die Limonaden", ex: "Ich trinke gern Limonade." },
+          { it: "der Käse", plural: "-", ex: "Ich mag Käse." }
         ],
         exercises: [
           { t: "mcq", a: 1 },
-          { t: "fill", a: ["piace"] },
-          { t: "fill", a: ["piacciono"] },
-          { t: "mcq", a: 1 },
-          { t: "mcq", a: 1 },
-          { t: "trans", dir: "toIt", a: ["mi piace cucinare"] },
-          {
-            t: "match",
-            pairs: [{ it: "mi piace" }, { it: "ti piace" }, { it: "le piace" }, { it: "ci piace" }]
-          },
-          {
-            t: "cloze",
-            text: "— Ti {{1}} lo spritz? — Sì, molto! Ma non mi {{2}} le olive.",
-            gaps: [["piace"], ["piacciono"]]
-          },
-          { t: "listen", it: "Mi piacciono molto i formaggi italiani." },
-          { t: "speak", it: "Mi piace l'aperitivo, ma non mi piacciono le olive." }
-        ]
-      },
-      {
-        id: "a1-u03-l2",
-        tags: ["g-presente"],
-        cefr: "A1",
-        titleIt: "Verbi in -ERE",
-        grammar: {
-          examples: [
-            { it: "Prendo un caffè, grazie." },
-            { it: "Leggi il menù?" },
-            { it: "Non vedo il cameriere." },
-            { it: "C'è un tavolo libero?" },
-            { it: "Ci sono due posti al bancone." },
-            { it: "Scriviamo il nome sulla prenotazione." }
-          ]
-        },
-        vocab: [
-          { it: "prendere" },
-          { it: "leggere" },
-          { it: "scrivere" },
-          { it: "vedere" },
-          { it: "chiedere" },
-          { it: "rispondere" },
-          { it: "mettere" },
-          { it: "chiudere" },
-          { it: "c'è / ci sono" },
-          { it: "il posto" },
-          { it: "libero / occupato" },
-          { it: "qui vicino" }
-        ],
-        exercises: [
-          { t: "conj", verb: "prendere", tense: "pres", persons: [0, 1, 2, 3, 4, 5] },
-          { t: "mcq", a: 1 },
-          { t: "fill", a: ["c'è", "ce"] },
-          { t: "fill", a: ["ci sono"] },
-          { t: "mcq", a: 1 },
-          { t: "trans", dir: "toIt", a: ["prendo una birra e tu", "io prendo una birra e tu"] },
-          { t: "multi", a: [0, 2, 4] },
-          { t: "order", tokens: ["Non", "vedo", "il", "cameriere"], a: ["non vedo il cameriere"] },
-          { t: "listen", it: "C'è un tavolo libero per due persone?" },
-          { t: "speak", it: "Prendiamo due spritz, per favore." }
-        ]
-      },
-      {
-        id: "a1-u03-l3",
-        tags: ["g-presente"],
-        cefr: "A1",
-        titleIt: "Verbi in -IRE",
-        grammar: {
-          examples: [
-            { it: "Non capisco, può ripetere?" },
-            { it: "Preferisco un tavolo fuori." },
-            { it: "A che ora finisci di lavorare?" },
-            { it: "Il negozio apre alle nove." },
-            { it: "Partiamo domani mattina." },
-            { it: "Loro capiscono tutto." }
-          ]
-        },
-        vocab: [
-          { it: "capire (-isc-)" },
-          { it: "finire (-isc-)" },
-          { it: "preferire (-isc-)" },
-          { it: "pulire (-isc-)" },
-          { it: "spedire (-isc-)" },
-          { it: "dormire" },
-          { it: "partire" },
-          { it: "aprire" },
-          { it: "offrire" },
-          { it: "sentire" },
-          { it: "seguire" },
-          { it: "può ripetere?" }
-        ],
-        exercises: [
-          { t: "conj", verb: "capire", tense: "pres", persons: [0, 1, 2, 3, 4, 5] },
-          { t: "conj", verb: "dormire", tense: "pres", persons: [0, 2, 5] },
-          { t: "mcq", a: 1 },
-          { t: "fill", a: ["capiamo"] },
-          { t: "fill", a: ["finiscono"] },
-          { t: "trans", dir: "toIt", a: ["preferisco un tavolo fuori", "preferisco un tavolo all'aperto"] },
-          { t: "multi", a: [0, 2, 4] },
-          { t: "order", tokens: ["Non", "capisco,", "può", "ripetere?"], a: ["non capisco può ripetere"] },
-          { t: "listen", it: "Preferisco partire domani mattina presto." },
-          { t: "speak", it: "Scusi, non capisco. Può ripetere?" }
-        ]
-      },
-      {
-        id: "a1-u03-l4",
-        tags: ["g-preposizioni", "g-articolo-det"],
-        cefr: "A1",
-        titleIt: "Del pane, dell'acqua",
-        grammar: {
-          examples: [
-            { it: "Vorrei del pane, per favore." },
-            { it: "Compro delle mele e dell'uva." },
-            { it: "Un po' di sale, non troppo." },
-            { it: "Due etti di prosciutto crudo." },
-            { it: "Mezzo litro di latte." },
-            { it: "Non ho zucchero in casa." }
-          ]
-        },
-        vocab: [
-          { it: "il pane" },
-          { it: "il latte" },
-          { it: "l'acqua" },
-          { it: "lo zucchero" },
-          { it: "il sale" },
-          { it: "l'olio" },
-          { it: "i pomodori" },
-          { it: "le mele" },
-          { it: "un etto" },
-          { it: "un chilo" },
-          { it: "un po' di" },
-          { it: "mezzo litro" },
-          { it: "basta così" },
-          { it: "quanto ne vuole?" }
-        ],
-        exercises: [
-          { t: "mcq", a: 1 },
-          { t: "fill", a: ["dell'"] },
-          { t: "fill", a: ["delle"] },
-          {
-            t: "gender",
-            opts: ["del", "dello", "dell'", "della", "dei", "degli", "delle"],
-            items: [
-              { it: "pane", a: "del" },
-              { it: "zucchero", a: "dello" },
-              { it: "carne", a: "della" },
-              { it: "olio", a: "dell'" },
-              { it: "pomodori", a: "dei" },
-              { it: "spinaci", a: "degli" }
-            ]
-          },
+          { t: "fill", a: ["mag"] },
+          { t: "fill", a: ["esse"] },
+          { t: "mcq", a: 0 },
           { t: "mcq", a: 1 },
           {
             t: "trans",
             dir: "toIt",
-            a: ["vorrei mezzo litro di latte", "mezzo litro di latte per favore"]
+            a: [
+              "Heute trinke ich gern Tee",
+              "Ich trinke heute gern Tee",
+              "Heute trinke ich gern einen Tee",
+              "Ich trinke heute gern einen Tee"
+            ]
+          },
+          {
+            t: "match",
+            pairs: [{ it: "trinken" }, { it: "essen" }, { it: "mögen" }, { it: "gern" }]
+          },
+          {
+            t: "cloze",
+            text: "Ich {{1}} gern Tee. {{2}} du auch gern Tee?",
+            gaps: [["trinke"], ["Trinkst"]]
+          },
+          { t: "listen", it: "Ich esse gern Salat und trinke gern Wasser." },
+          { t: "speak", it: "Ich trinke gern Tee und esse gern Brot." }
+        ]
+      },
+      {
+        id: "a1-u03-l2",
+        tags: ["g-praesens"],
+        cefr: "A1",
+        titleIt: "nehmen, essen, sprechen",
+        grammar: {
+          examples: [
+            { it: "Ich esse Reis." },
+            { it: "Du isst Fisch." },
+            { it: "Er nimmt eine Suppe." },
+            { it: "Wir nehmen Kaffee." },
+            { it: "Sprichst du Deutsch?" },
+            { it: "Ihr esst Kartoffeln." }
+          ]
+        },
+        vocab: [
+          { it: "nehmen", ex: "Ich nehme eine Suppe." },
+          { it: "essen", ex: "Er isst Fisch." },
+          { it: "sprechen", ex: "Sie spricht Deutsch." },
+          { it: "die Wurst", plural: "die Würste", ex: "Er isst eine Wurst." },
+          { it: "das Ei", plural: "die Eier", ex: "Ich esse ein Ei." },
+          { it: "der Reis", plural: "-", ex: "Du isst Reis." },
+          { it: "die Kartoffel", plural: "die Kartoffeln", ex: "Ihr esst Kartoffeln." },
+          { it: "das Gemüse", plural: "-", ex: "Ich esse gern Gemüse." },
+          { it: "das Abendessen", plural: "die Abendessen", ex: "Das Abendessen ist fertig." },
+          { it: "die Sprache", plural: "die Sprachen", ex: "Ich spreche zwei Sprachen." },
+          { it: "langsam", ex: "Sprechen Sie bitte langsam." },
+          { it: "auch", ex: "Ich esse auch Reis." }
+        ],
+        exercises: [
+          { t: "conj", verb: "nehmen", tense: "praes", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "mcq", a: 1 },
+          { t: "fill", a: ["nimmt"] },
+          { t: "fill", a: ["sprichst"] },
+          { t: "mcq", a: 2 },
+          { t: "multi", a: [0, 2, 4] },
+          {
+            t: "order",
+            tokens: ["Heute", "isst", "Anna", "Reis", "und", "Gemüse"],
+            a: ["Heute isst Anna Reis und Gemüse"]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Du sprichst Italienisch und ich spreche Deutsch",
+              "Du sprichst Italienisch, und ich spreche Deutsch"
+            ]
+          },
+          { t: "listen", it: "Du isst Reis, und ich nehme Kartoffeln." },
+          { t: "speak", it: "Ich esse Reis, und du isst Kartoffeln." }
+        ]
+      },
+      {
+        id: "a1-u03-l3",
+        tags: ["g-artikel-akk"],
+        cefr: "A1",
+        titleIt: "Einen Saft, bitte",
+        grammar: {
+          examples: [
+            { it: "Ich nehme einen Saft." },
+            { it: "Ich möchte eine Cola." },
+            { it: "Möchten Sie ein Glas Wasser?" },
+            { it: "Ja, gern." },
+            { it: "Nein, danke." },
+            { it: "Das ist ein Saft." }
+          ]
+        },
+        vocab: [
+          { it: "Ich möchte ...", ex: "Ich möchte einen Saft." },
+          { it: "Möchten Sie ...?", ex: "Möchten Sie einen Kaffee?" },
+          { it: "Möchtest du ...?", ex: "Möchtest du ein Wasser?" },
+          { it: "Ja, gern." },
+          { it: "Ja, bitte." },
+          { it: "Nein, danke." },
+          { it: "Prost!" },
+          { it: "der Orangensaft", plural: "die Orangensäfte", ex: "Einen Orangensaft, bitte." },
+          { it: "der Apfelsaft", plural: "die Apfelsäfte", ex: "Ich nehme einen Apfelsaft." },
+          { it: "das Mineralwasser", plural: "die Mineralwässer", ex: "Ein Mineralwasser, bitte." },
+          { it: "das Glas", plural: "die Gläser", ex: "Ein Glas Wasser, bitte." },
+          { it: "die Flasche", plural: "die Flaschen", ex: "Eine Flasche Wasser, bitte." }
+        ],
+        exercises: [
+          { t: "conj", verb: "trinken", tense: "praes", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "conj", verb: "bestellen", tense: "praes", persons: [0, 2, 4] },
+          { t: "fill", a: ["einen"] },
+          { t: "fill", a: ["eine"] },
+          { t: "mcq", a: 1 },
+          { t: "multi", a: [0, 2, 3] },
+          {
+            t: "order",
+            tokens: ["Ich", "möchte", "einen", "Apfelsaft", "und", "ein", "Wasser"],
+            a: ["Ich möchte einen Apfelsaft und ein Wasser"]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Einen Orangensaft und ein Wasser, bitte",
+              "Einen Orangensaft und ein Mineralwasser, bitte"
+            ]
+          },
+          { t: "listen", it: "Ich möchte einen Orangensaft und eine Flasche Wasser, bitte." },
+          { t: "speak", it: "Einen Apfelsaft und ein Glas Wasser, bitte." }
+        ]
+      },
+      {
+        id: "a1-u03-l4",
+        tags: ["g-negation", "g-artikel-akk"],
+        cefr: "A1",
+        titleIt: "Kein Bier, nicht heute",
+        grammar: {
+          examples: [
+            { it: "Ich trinke kein Bier." },
+            { it: "Ich habe keinen Hunger." },
+            { it: "Der Kaffee ist nicht heiß." },
+            { it: "Heute komme ich nicht." },
+            { it: "Trinkst du kein Bier? Doch, gern." },
+            { it: "Ich trinke nicht gern Bier." }
+          ]
+        },
+        vocab: [
+          { it: "die Kneipe", plural: "die Kneipen", ex: "Die Kneipe ist klein." },
+          { it: "der Biergarten", plural: "die Biergärten", ex: "Im Biergarten ist es schön." },
+          { it: "der Feierabend", plural: "die Feierabende", ex: "Schönen Feierabend!" },
+          { it: "der Hunger", plural: "-", ex: "Ich habe Hunger." },
+          { it: "der Durst", plural: "-", ex: "Ich habe keinen Durst." },
+          { it: "der Alkohol", plural: "-", ex: "Ich trinke keinen Alkohol." },
+          { it: "alkoholfrei", ex: "Das Bier ist alkoholfrei." },
+          { it: "heute", ex: "Heute nicht, danke." },
+          { it: "doch", ex: "Doch, ich komme." },
+          { it: "nicht", ex: "Ich komme nicht." },
+          { it: "kein", ex: "Ich trinke kein Bier." },
+          { it: "schmecken", ex: "Das schmeckt gut." },
+          { it: "noch", ex: "Noch einen Saft?" },
+          { it: "Zahlen, bitte." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 1 },
+          { t: "fill", a: ["keinen"] },
+          { t: "fill", a: ["nicht"] },
+          {
+            t: "gender",
+            opts: ["der", "den", "die", "das"],
+            items: [
+              { it: "Tee", a: "den" },
+              { it: "Cola", a: "die" },
+              { it: "Bier", a: "das" },
+              { it: "Saft", a: "den" },
+              { it: "Limonade", a: "die" },
+              { it: "Wasser", a: "das" }
+            ]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: ["Heute trinke ich kein Bier", "Ich trinke heute kein Bier"]
+          },
+          {
+            t: "cloze",
+            text: "Trinkst du kein Bier? {{1}}, ich {{2}} gern Bier.",
+            gaps: [["Doch"], ["trinke"]]
           },
           {
             t: "dialogue",
             lines: [
-              { sp: "A", it: "Buongiorno! Mi dica." },
+              { sp: "A", it: "Trinkst du kein Bier?" },
               {
                 sp: "TY",
                 choices: [
-                  "Due etti di prosciutto, per favore.",
-                  "Due chili di prosciutto, per favore.",
-                  "Un prosciutto, per favore."
+                  "Doch, gern, aber heute nicht.",
+                  "Ja, gern, aber heute nicht.",
+                  "Nein, gern, aber heute nicht."
                 ],
                 a: 0
               },
-              { sp: "A", it: "Ecco. Altro?" },
+              { sp: "A", it: "Dann einen Saft?" },
               {
                 sp: "TY",
-                choices: ["Anche il pane.", "Anche del pane, grazie.", "Anche un pane grazie."],
-                a: 1
+                choices: [
+                  "Ja, gern. Einen Apfelsaft, bitte.",
+                  "Ja, gern. Ein Apfelsaft, bitte.",
+                  "Doch, gern. Einen Apfelsaft, bitte."
+                ],
+                a: 0
               }
             ]
           },
-          {
-            t: "cloze",
-            text: "Compro {{1}} pane, {{2}} acqua e {{3}} pomodori.",
-            gaps: [["del"], ["dell'"], ["dei"]]
-          },
-          { t: "listen", it: "Vorrei un chilo di pomodori e un po' di basilico." },
-          { t: "speak", it: "Due etti di formaggio, per favore. Basta così." }
+          { t: "listen", it: "Ich habe Hunger, aber ich esse heute keinen Fisch." },
+          { t: "speak", it: "Nein, danke. Heute trinke ich keinen Alkohol." }
         ]
       }
     ],
     test: {
       id: "a1-u03-test",
-      tags: ["g-presente", "g-preposizioni"],
+      tags: ["g-praesens", "g-artikel-akk", "g-negation"],
       cefr: "A1",
-      titleIt: "Test — L'aperitivo",
+      titleIt: "Test: Feierabend",
       exercises: [
-        { t: "fill", a: ["piacciono"] },
-        { t: "fill", a: ["piace"] },
-        { t: "mcq", a: 1 },
-        { t: "conj", verb: "prendere", tense: "pres", persons: [0, 2, 5] },
-        { t: "conj", verb: "capire", tense: "pres", persons: [0, 3, 5] },
-        { t: "fill", a: ["ci sono"] },
+        { t: "fill", a: ["isst"] },
+        { t: "conj", verb: "sprechen", tense: "praes", persons: [1, 2, 4] },
+        { t: "conj", verb: "nehmen", tense: "praes", persons: [0, 1, 3] },
+        { t: "fill", a: ["einen"] },
+        { t: "fill", a: ["nicht"] },
         {
           t: "gender",
-          opts: ["del", "dello", "dell'", "della", "dei", "delle"],
+          opts: ["ein", "eine", "einen"],
           items: [
-            { it: "acqua", a: "dell'" },
-            { it: "carne", a: "della" },
-            { it: "pane", a: "del" },
-            { it: "mele", a: "delle" }
+            { it: "Kaffee", a: "einen" },
+            { it: "Cola", a: "eine" },
+            { it: "Brot", a: "ein" },
+            { it: "Saft", a: "einen" }
           ]
         },
-        { t: "trans", dir: "toIt", a: ["preferisco il vino bianco", "preferisco vino bianco"] },
-        { t: "listen", it: "Ci sono delle olive e del formaggio." },
-        { t: "speak", it: "Mi piace molto l'aperitivo italiano." }
+        { t: "mcq", a: 0 },
+        {
+          t: "trans",
+          dir: "toIt",
+          a: [
+            "Heute trinke ich kein Bier, ich nehme einen Saft",
+            "Ich trinke heute kein Bier, ich nehme einen Saft"
+          ]
+        },
+        { t: "listen", it: "Du isst gern Fisch, aber ich esse keinen Fisch." },
+        { t: "speak", it: "Ich möchte einen Saft, aber kein Bier, bitte." }
       ]
     }
   }
