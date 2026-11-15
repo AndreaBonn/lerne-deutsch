@@ -145,8 +145,8 @@
 
   function nazwaCzasu(key) {
     var lista = (global.Verbs && Verbs.TENSES) || [];
-    for (var i = 0; i < lista.length; i++) if (lista[i].key === (key || "pres")) return lista[i].labelIt;
-    return key || "pres";
+    for (var i = 0; i < lista.length; i++) if (lista[i].key === (key || "praes")) return lista[i].labelIt;
+    return key || "praes";
   }
 
   function pokazWynik(w, box, wynik, tekst) {

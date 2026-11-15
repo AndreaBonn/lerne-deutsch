@@ -33,7 +33,7 @@ const FIXTURES = {
   cloze: { t: "cloze", text: "Ieri {{1}} al mercato.", gaps: [["sono andato"]] },
   order: { t: "order", tokens: ["io", "mangio"], a: "io mangio" },
   match: { t: "match", pairs: [{ it: "pane", tr: "chleb" }, { it: "vino", tr: "wino" }] },
-  conj: { t: "conj", verb: "parlare", tense: "pres", persons: [0, 1] },
+  conj: { t: "conj", verb: "aufstehen", persons: [0, 1] },
   gender: { t: "gender", items: [{ it: "Hund", a: "der" }, { it: "Kater", a: "der" }] },
   listen: { t: "listen", it: "Buongiorno a tutti", alt: [] },
   speak: { t: "speak", it: "Buongiorno a tutti", tr: "good morning" },
@@ -129,7 +129,7 @@ async function odpowiedz(page, type, fixture, poprawnie) {
         break;
 
       case "conj": {
-        const formy = window.Verbs.conjugate(ex.verb, ex.tense);
+        const formy = ex.answers || window.Verbs.conjugate(ex.verb, ex.tense || "praes");
         qq(".js-cell").forEach(inp => {
           const p = parseInt(inp.getAttribute("data-p"), 10);
           inp.value = dobrze ? formy[p] : ZLE;
@@ -184,6 +184,45 @@ test.describe("the exercise verdict", () => {
       expect(zla.klasa, `${type}: brak czerwonego oznaczenia na ekranie`).toContain("exq--ko");
     });
   }
+});
+
+const CONJ_CASES = [
+  ['reflexive separable', 'sich vorstellen', 'praes', ['stelle mich vor', 'stellst dich vor', 'stellt sich vor', 'stellen uns vor', 'stellt euch vor', 'stellen sich vor']],
+  ['synthetic fahren', 'fahren', 'konj2', ['führe', 'führest', 'führe', 'führen', 'führet', 'führen']],
+  ['synthetic waschen', 'sich waschen', 'konj2', ['wüsche mich', 'wüschest dich', 'wüsche sich', 'wüschen uns', 'wüschet euch', 'wüschen sich']],
+  ['synthetic stehen ü', 'stehen', 'konj2', ['stünde', 'stündest', 'stünde', 'stünden', 'stündet', 'stünden']],
+  ['synthetic stehen ä', 'stehen', 'konj2', ['stände', 'ständest', 'stände', 'ständen', 'ständet', 'ständen']],
+  ['synthetic separable', 'aufstehen', 'konj2', ['stünde auf', 'stündest auf', 'stünde auf', 'stünden auf', 'stündet auf', 'stünden auf']],
+  ['synthetic derived', 'verstehen', 'konj2', ['verstände', 'verständest', 'verstände', 'verständen', 'verständet', 'verständen']],
+  ['analytic unchanged', 'fahren', 'konj2', ['würde fahren', 'würdest fahren', 'würde fahren', 'würden fahren', 'würdet fahren', 'würden fahren']]
+];
+
+for (const [name, verb, tense, answers] of CONJ_CASES) {
+  test(`conj: ${name} accepts correct forms and rejects wrong ones`, async ({ page }) => {
+    await page.goto('/index.html');
+    await page.waitForFunction(() => window.Ex && window.Verbs);
+    const fixture = { t: 'conj', verb, tense, answers };
+    expect((await odpowiedz(page, 'conj', fixture, true)).ok).toBe(true);
+    expect((await odpowiedz(page, 'conj', fixture, false)).ok).toBe(false);
+  });
+}
+
+test('conj: German person labels and missing particles or pronouns', async ({ page }) => {
+  await page.goto('/index.html');
+  await page.waitForFunction(() => window.Ex && window.Verbs);
+  const labels = await page.evaluate(() => {
+    const host = document.createElement('div');
+    host.innerHTML = window.Ex.build({ t: 'conj', verb: 'sich vorstellen' }, 0).html;
+    return Array.from(host.querySelectorAll('label')).map(el => el.textContent);
+  });
+  expect(labels).toEqual(['ich', 'du', 'er/sie/es', 'wir', 'ihr', 'sie/Sie']);
+  for (const answer of ['stelle mich', 'stelle vor', 'stelle dich vor', 'stellen mich vor']) {
+    const fixture = { t: 'conj', verb: 'sich vorstellen', persons: [0], answers: [answer] };
+    expect((await odpowiedz(page, 'conj', fixture, true)).ok, answer).toBe(false);
+  }
+  expect((await odpowiedz(page, 'conj', {
+    t: 'conj', verb: 'sich vorstellen', persons: [0], answers: ['stelle mich vor']
+  }, true)).ok).toBe(true);
 });
 
 test("a typo gets a second chance, but only one", async ({ page }) => {

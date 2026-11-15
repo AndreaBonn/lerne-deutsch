@@ -22,10 +22,10 @@
 
   var Writing = {};
 
-  /* Folding from core.js: lower case, unified apostrophes, accents removed.
-     A local copy lost the typographic apostrophe, so "secondo l’autore"
-     typed on a phone never matched the requirement. */
-  var fold = Core.fold;
+  // Keep umlauts distinct; German ss and ß are equivalent for detection.
+  function fold(text) {
+    return global.Txt.detypo(text).toLowerCase().replace(/ß/g, "ss");
+  }
 
   /**
    * The forms we look for on behalf of one requirement.
@@ -38,24 +38,43 @@
     if (req.word) return [req.word];
     if (req.any) return req.any.slice();
     if (!req.verb) return [];
-    var f = (global.Verbs && global.Verbs.conjugate(req.verb, req.tense || "pres")) || [];
-    return f.filter(Boolean);
+    var tense = req.tense || "praes";
+    var f = ((global.Verbs && global.Verbs.conjugate(req.verb, tense)) || []).filter(Boolean);
+    return f.concat(verbFinalForms(req.verb, tense, f));
   }
 
   /**
-   * The pattern for a single form.
-   *
-   * The conjugator produces MASCULINE agreement ("sono andato"). A student
-   * writing about herself will write "sono andata" and will be right — so
-   * in compound forms the last vowel may be any of o/a/i/e. In simple forms
-   * ("parlavo") we change nothing: there the ending carries the person and
-   * substituting it would be consenting to a mistake.
+   * Forms of a separable verb as they appear in a subordinate clause: the
+   * particle is glued back on ("weil ich früh aufstehe"), plus the
+   * zu-infinitive ("aufzustehen") for Präsens. The particle is the last word
+   * of the separated finite form and must open the infinitive.
    */
-  function wzorzec(forma, luzNaKoncu) {
+  function verbFinalForms(verb, tense, forms) {
+    if (tense !== "praes" && tense !== "praet") return [];
+    var bare = verb.replace(/^sich /, "");
+    var out = [];
+    var particle = "";
+    forms.forEach(function (form) {
+      var words = form.split(" ");
+      var last = words[words.length - 1];
+      if (words.length < 2 || bare.indexOf(last) !== 0 || bare === last) return;
+      particle = last;
+      out.push(words.slice(1, -1).concat(last + words[0]).join(" "));
+    });
+    if (particle && tense === "praes") out.push(particle + "zu" + bare.slice(particle.length));
+    return out;
+  }
+
+  // At most six words between the parts of a verb, never across a comma,
+  // sentence end or coordinating conjunction ("stehe hier und warte auf dich").
+  var GAP = "(?:(?!(?:und|oder|aber|denn|sondern|weil|dass|wenn)[ \\t])[^\\s.!?;:,]+[ \\t]+){0,6}";
+
+  /** Matches complete words; verb components may enclose words in one sentence. */
+  function wzorzec(forma, allowGaps) {
     var f = fold(forma).trim().replace(/\s+/g, " ");
-    var uciekniete = f.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    if (luzNaKoncu && f.indexOf(" ") >= 0) uciekniete = uciekniete.replace(/[oaie]$/, "[oaie]");
-    return new RegExp("(^|[^a-zäöüß])" + uciekniete + "([^a-zäöüß]|$)");
+    var escaped = f.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    if (allowGaps) escaped = escaped.split(" ").join("[ \\t]+" + GAP);
+    return new RegExp("(^|[^a-zäöüß])" + escaped + "([^a-zäöüß]|$)");
   }
 
   /**
@@ -69,15 +88,11 @@
     var hay = fold(text || "");
     return (requires || []).map(function (req) {
       var formy = formyDla(req);
-      /* The slack on the ending applies ONLY to forms from the conjugator,
-         because only there is it about participle agreement. On `any`
-         phrases it would let through "cordiali saluto" and "di solita":
-         incorrect forms accepted as correct, that is exactly the opposite of
-         what the exercise intends. */
-      var luz = !!req.verb;
+      // Fixed phrases stay contiguous; only conjugated verbs form a bracket.
+      var allowGaps = !!req.verb;
       var trafiona = null;
       for (var i = 0; i < formy.length && !trafiona; i++) {
-        if (wzorzec(formy[i], luz).test(hay)) trafiona = formy[i];
+        if (wzorzec(formy[i], allowGaps).test(hay)) trafiona = formy[i];
       }
       return {
         key: req.key || req.verb || req.word || (req.any || [])[0] || "?",

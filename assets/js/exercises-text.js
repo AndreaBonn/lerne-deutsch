@@ -149,16 +149,32 @@
   }
 
   /* ═══════════════ CONJ (conjugation table) ═══════════════ */
+  var SYNTHETIC_STEMS = { fuhr: ["führ"], wusch: ["wüsch"], stand: ["stünd", "ständ"] };
+  var SUBJUNCTIVE_ENDINGS = ["e", "est", "e", "en", "et", "en"];
+
+  // F37: rare synthetic forms are valid answers, while the table keeps würde.
+  function conjugationAnswers(ex, person, shown) {
+    var accepted = [shown];
+    if (ex.tense !== "konj2" || !/^würde/.test(shown)) return accepted;
+    var past = Verbs.conjugate(ex.verb, "praet")[person];
+    var match = past.match(/^(.*?)(fuhr|wusch|stand)(?:est|st|et|t|en)?( .*)?$/);
+    if (!match) return accepted;
+    SYNTHETIC_STEMS[match[2]].forEach(function (stem) {
+      accepted.push(match[1] + stem + SUBJUNCTIVE_ENDINGS[person] + (match[3] || ""));
+    });
+    return accepted;
+  }
+
   function buildConj(ex, idx) {
     // ex.verb, ex.tense (a key from Verbs.TENSES), ex.persons: the indexes to fill in
-    var forms = Verbs.conjugate(ex.verb, ex.tense || "pres");
-    // the imperative has no "io" form — we skip the persons without one
+    var forms = Verbs.conjugate(ex.verb, ex.tense || "praes");
+    // The imperative has no ich form; omit persons without a form.
     var which = (ex.persons || [0, 1, 2, 3, 4, 5]).filter(function (p) { return !!forms[p]; });
-    var tenseLabel = (Verbs.TENSES.filter(function (x) { return x.key === (ex.tense || "pres"); })[0] || {}).labelIt;
+    var tenseLabel = (Verbs.TENSES.filter(function (x) { return x.key === (ex.tense || "praes"); })[0] || {}).labelIt;
 
     var rows = which.map(function (p) {
-      return '<label for="c' + idx + "_" + p + '">' + esc(Verbs.PERSONS[p]) + "</label>" +
-        '<input id="c' + idx + "_" + p + '" class="field js-cell" data-p="' + p + '" autocomplete="off" spellcheck="false">';
+      return '<label lang="de" for="c' + idx + "_" + p + '">' + esc(Verbs.PERSONS[p]) + "</label>" +
+        '<input lang="de" id="c' + idx + "_" + p + '" class="field js-cell" data-p="' + p + '" autocomplete="off" spellcheck="false">';
     }).join("");
 
     var html = '<div class="exq" data-idx="' + idx + '">' + head(idx, ex) +
@@ -173,7 +189,7 @@
         root.querySelectorAll(".js-cell").forEach(function (inp) {
           var p = parseInt(inp.getAttribute("data-p"), 10);
           var want = forms[p] || "";
-          var ok = Core.checkOpen(inp.value, [want]).ok;
+          var ok = Core.checkOpen(inp.value, conjugationAnswers(ex, p, want)).ok;
           inp.style.borderColor = ok ? "var(--ok)" : "var(--ko)";
           if (!ok) { allOk = false; inp.value = want; }
           inp.disabled = true;

@@ -58,6 +58,8 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
 const HTML = "assets/js/cils-html.js";
 const MORF = "assets/js/lemma-morf.js";
+const LEMMA = "assets/js/lemma.js";
+const T_LEMMA = "tests/unit/lemma.test.mjs";
 const REG = "assets/js/pwa-rules.js";
 const PWA = "assets/js/pwa.js";
 const T_HTML = "tests/unit/cils-html.test.mjs";
@@ -96,6 +98,8 @@ const DLEX = "assets/js/drills-lex.js";
 const DRILLS = "assets/js/drills.js";
 const DDE = "assets/js/drills-de.js";
 const T_DRILLS = "tests/unit/drills.test.mjs";
+const WRITING = "assets/js/writing.js";
+const T_WRITING = "tests/unit/writing.test.mjs";
 
 /**
  * The mutations. `z` must occur in the file EXACTLY ONCE — with two
@@ -104,6 +108,21 @@ const T_DRILLS = "tests/unit/drills.test.mjs";
  * says.
  */
 const MUTACJE = [
+  { plik: WRITING, test: T_WRITING, opis: "writing: conjugated German forms are never detected",
+    z: 'return f.concat(verbFinalForms(req.verb, tense, f));', na: 'return [];' },
+  { plik: WRITING, test: T_WRITING, opis: "writing: verb-final forms of separable verbs are never generated",
+    z: 'if (tense !== "praes" && tense !== "praet") return [];', na: 'return [];' },
+  { plik: WRITING, test: T_WRITING, opis: "writing: a conjunction no longer ends a verb bracket",
+    z: '(?!(?:und|oder|aber|denn|sondern|weil|dass|wenn)[ \\\\t])', na: '' },
+  { plik: WRITING, test: T_WRITING, opis: "writing: German default tense replaced by the retired Italian key",
+    z: 'req.tense || "praes"', na: 'req.tense || "pres"' },
+  { plik: WRITING, test: T_WRITING, opis: "writing: intervening words hide German verb brackets",
+    z: 'if (allowGaps) escaped =', na: 'if (false) escaped =' },
+  { plik: WRITING, test: T_WRITING, opis: "writing: German umlauts collapse into different words",
+    z: 'global.Txt.detypo(text).toLowerCase().replace(/ß/g, "ss")',
+    na: 'global.Txt.fold(text).replace(/ß/g, "ss")' },
+  { plik: WRITING, test: T_WRITING, opis: "writing: the detected German participle can end inside a word",
+    z: ' + "([^a-zäöüß]|$)"', na: ' + ""' },
   /* ---- cils-html.js: the answer grid ---- */
   { plik: HTML, test: T_HTML, opis: "radio: one group for the whole task",
     z: 'var nome = "p" + n + "i" + i;', na: 'var nome = "p" + n;' },
@@ -156,6 +175,14 @@ const MUTACJE = [
   { plik: HTML, test: T_HTML, opis: "oral: an empty account analysed as if it were an answer",
     z: '    if (!testo.trim()) {', na: "    if (false) {" },
 
+  { plik: LEMMA, test: T_LEMMA, opis: "lemma: dictionary entries retain their articles",
+    z: '.replace(ARTICLE, "")', na: "" },
+  { plik: LEMMA, test: T_LEMMA, opis: "lemma: complete separable verb forms omitted",
+    z: "addForm(form, infinitive);", na: "" },
+  { plik: LEMMA, test: T_LEMMA, opis: "lemma: dictionary verdict ignored",
+    z: "if (!(known ? known(candidate) : Object.prototype.hasOwnProperty.call(course, candidate))) return;",
+    na: "if (false) return;" },
+
   /* ---- lemma-morf.js: the form rules ---- */
   { plik: MORF, test: T_MORF, opis: "slowa: a lone auxiliary is dropped too",
     z: "if (words.length < 2) return words;", na: "if (false) return words;" },
@@ -187,6 +214,15 @@ const MUTACJE = [
     z: "/en$/i, /em$/i", na: "/n$/i, /en$/i, /em$/i" },
   { plik: MORF, test: T_MORF, opis: "comparative: -er not reduced",
     z: "/er$/i,", na: "/xyz$/i," },
+
+  { plik: MORF, test: T_MORF, opis: "irregular degrees: bare form omitted",
+    z: "add(IRREGULAR_DEGREES[word.toLowerCase()]);", na: "" },
+  { plik: MORF, test: T_MORF, opis: "irregular degrees: inflected stem omitted",
+    z: "add(IRREGULAR_DEGREES[degreeStem]);", na: "" },
+  { plik: MORF, test: T_MORF, opis: "feminine plural: -innen not reduced to -in",
+    z: "if (/innen$/i.test(word)) add(word.slice(0, -3));", na: "" },
+  { plik: MORF, test: T_MORF, opis: "irregular degrees: inherited object names become candidates",
+    z: "Object.assign(Object.create(null), {", na: "Object.assign({}, {" },
 
   /* ---- pwa-rules.js: the rules for announcing a new version ---- */
   { plik: REG, test: T_REG, opis: "announcement: the first visit treated as an update",
