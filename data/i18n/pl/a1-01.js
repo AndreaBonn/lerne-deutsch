@@ -1118,414 +1118,547 @@ LINGUAI.addStrings("pl", {
     ]
   },
   "unit:a1-u03": {
-    title: "Aperitivo i jedzenie",
-    grammarNote: "piacere · rodzajnik cząstkowy · -ere i -ire"
+    title: "Po pracy",
+    grammarNote: "gern i mögen · czasowniki ze zmianą samogłoski · biernik · kein i nicht"
   },
   "lesson:a1-u03-l1": {
-    theme: "Jedzenie",
-    title: "Czasownik piacere",
+    theme: "Gusty i przyzwyczajenia",
+    title: "Powiedzieć, co lubisz",
     objectives: [
-      "powiedzieć, co lubisz i czego nie lubisz",
-      "wybrać między piace a piacciono",
-      "zapytać o czyjeś upodobania"
+      "powiedzieć, że lubisz coś robić, za pomocą gern",
+      "powiedzieć, że lubisz jakąś rzecz, za pomocą mögen",
+      "zachować czasownik na drugim miejscu także wtedy, gdy zdanie zaczyna się od heute"
     ],
     theory: [
       {
-        h: "Zdanie stoi na głowie",
-        p: "<strong>Piacere</strong> nie znaczy „lubić”, tylko „podobać się”. <em>Mi piace la pizza</em> to dosłownie „pizza podoba się mnie”. Podmiotem gramatycznym jest <b>rzecz</b>, a osoba, która lubi, występuje jako dopełnienie dalsze (<em>mi, ti, gli, le, ci, vi</em>)."
+        h: "Gern: „chętnie”, które znaczy „lubię”",
+        p: "Żeby powiedzieć, że lubisz coś robić, zwykle nie używa się czasownika „lubić” z bezokolicznikiem: do czasownika czynności dodaje się przysłówek <strong>gern</strong> („chętnie”). <em>Ich trinke gern Tee</em> to „chętnie piję herbatę”, czyli „lubię pić herbatę”. Zwykle <em>gern</em> stoi tuż za czasownikiem, a gdy podmiotem jest zaimek, także za nim: <em>Ich esse gern Pizza</em>, <em>Wir trinken gern Limonade</em>."
       },
       {
-        h: "Dlatego czasownik ma dwie formy",
-        p: "Skoro podmiotem jest rzecz, to ona decyduje o liczbie: <em>mi piace <b>il</b> caffè</em> (jedna rzecz) kontra <em>mi piacciono <b>gli</b> spaghetti</em> (wiele rzeczy). Przed bezokolicznikiem zawsze liczba pojedyncza: <em>mi piace viaggiare</em>."
+        contrast: "Po polsku powiesz „lubię pić herbatę”: czasownik <em>lubić</em> i bezokolicznik. Po niemiecku odmieniony zostaje czasownik samej czynności, a <em>gern</em> mu towarzyszy: <em>Ich trinke gern Tee</em>. Konstrukcja z <em>mögen</em> i bezokolicznikiem też istnieje, ale nie jest tym, czego uczysz się na tym poziomie. Bliżej niemieckiego jest polskie „chętnie piję herbatę”: tam też jest jeden odmieniony czasownik i przysłówek. Nie przenoś więc <em>lubię + bezokolicznik</em> słowo w słowo."
       },
       {
-        contrast: "Polski ma dokładnie ten sam mechanizm w czasowniku „podobać się”: „podoba mi się film”, „podobają mi się filmy”. Jeśli oprzesz włoskie zdanie na polskim „podoba mi się” zamiast na „lubię”, przestaniesz się mylić."
+        h: "Mögen: lubię jakąś rzecz",
+        p: "Gdy lubisz rzecz, a nie czynność, używasz czasownika <strong>mögen</strong>. Buduje się go jak polskie „lubić”: podmiotem jest ten, kto lubi, a rzecz jest dopełnieniem (po polsku „lubię ser”, „lubię rybę”). <em>Ich mag Käse</em>, <em>Magst du Fisch?</em>, <em>Wir mögen Suppe</em>. To czasownik nieregularny: forma <em>ich</em> i forma <em>er/sie/es</em> są takie same i nie mają przegłosu (<em>mag</em>), <em>du</em> ma <em>magst</em>. Żeby powiedzieć, że lubisz coś robić, na razie używaj <em>gern</em> za czasownikiem."
       },
       {
-        h: "Kto lubi: mi, ti, gli, le…",
-        list: [
-          "<b>mi</b> piace — mnie",
-          "<b>ti</b> piace — tobie",
-          "<b>gli</b> piace — jemu; <b>le</b> piace — jej",
-          "<b>ci</b> piace — nam · <b>vi</b> piace — wam · <b>gli</b> piace — im"
-        ]
+        trap: "Gdy mówisz o gustach w ogóle, rzeczownik stoi zwykle <b>bez rodzajnika</b>: <em>Ich mag Käse</em>, nie „Ich mag der Käse”. Po polsku rodzajników nie ma, więc „lubię ser” brzmi tu tak samo jak po niemiecku: to rzadki przypadek, w którym brak rodzajnika jest dla ciebie naturalny. Dotyczy to także liczby mnogiej: <em>Ich mag Äpfel</em>. Gdy mówisz o konkretnym serze, rodzajnik wraca: <em>Ich mag den Käse</em>."
       },
       {
-        trap: "Przeczenie stawia się przed zaimkiem, nie przed czasownikiem: <b>non</b> mi piace. Nie „mi non piace”."
+        h: "Czasownik zostaje na drugim miejscu",
+        p: "Po polsku szyk jest swobodny: „Dziś piję sok”, „Piję dziś sok”. Po niemiecku odmieniony czasownik w zdaniu oznajmującym stoi zawsze na drugim miejscu. Jeśli zdanie zaczyna się od <em>heute</em> („dziś”), podmiot przesuwa się za czasownik: <em>Heute trinke ich gern Saft</em>. W pytaniu rozstrzygającym czasownik idzie na pierwsze miejsce, a niemiecki nie ma słowa odpowiadającego polskiemu „czy”: <em>Trinkst du gern Tee?</em>, <em>Magst du Fisch?</em>"
+      },
+      {
+        tip: "Powiedz na głos trzy własne zdania z <em>gern</em>: <em>Ich esse gern ...</em>, <em>Ich trinke gern ...</em>, <em>Ich mag ...</em>. Trzy formuły, całe słownictwo tej lekcji."
       }
     ],
     grammar: {
-      title: "Piacere — schemat zdania",
-      note: "[zaimek] + piace/piacciono + [rzecz z rodzajnikiem]",
+      title: "Mögen w czasie teraźniejszym",
+      note: "Przy <b>ich</b> i <b>er/sie/es</b> forma jest ta sama: <em>mag</em>. Przegłos pojawia się tylko w bezokoliczniku i w liczbie mnogiej.",
       table: {
-        head: ["co lubimy", "forma", "przykład"],
+        head: ["osoba", "forma", "przykład"],
         rows: [
-          ["jedna rzecz", "piace", "Mi piace il vino rosso."],
-          ["wiele rzeczy", "piacciono", "Mi piacciono i dolci."],
-          ["czynność", "piace", "Mi piace cucinare."],
-          ["przeczenie", "non … piace", "Non mi piace il pesce crudo."],
-          ["pytanie", "ti piace?", "Ti piace l'aperitivo?"]
+          ["ich", "mag", "Ich mag Käse."],
+          ["du", "magst", "Magst du Fisch?"],
+          ["er / sie / es", "mag", "Er mag Suppe."],
+          ["wir", "mögen", "Wir mögen Suppe."],
+          ["ihr", "mögt", "Mögt ihr Pizza?"],
+          ["sie / Sie", "mögen", "Sie mögen Nudeln."]
         ]
       },
       examples: [
-        { tr: "Bardzo lubię kawę." },
-        { tr: "Lubisz spritze?" },
-        { tr: "Nie lubimy ciepłego piwa." },
-        { tr: "Ona lubi tańczyć." },
-        { tr: "Marco lubi ryby.", note: "z imieniem dodaje się „a”" },
-        { tr: "Chętnie bym spróbował.", note: "forma warunkowa — zapamiętaj jako zwrot" }
+        { tr: "Chętnie piję herbatę.", note: "gern stoi zwykle za czasownikiem, a przy zaimku-podmiocie także za nim: Ich trinke gern Tee, Heute trinke ich gern Tee" },
+        { tr: "Chętnie jem pizzę." },
+        { tr: "Lubię ser.", note: "bez rodzajnika, w znaczeniu ogólnym" },
+        { tr: "Lubisz ryby?", note: "pytanie rozstrzygające: czasownik na pierwszym miejscu" },
+        { tr: "Dziś chętnie piję sok.", note: "podmiot przesuwa się za czasownik" },
+        { tr: "My lubimy zupę." }
       ]
     },
     vocab: [
-      "aperitif (drink + przekąski)",
-      "spritz",
-      "wino czerwone / białe",
-      "piwo",
-      "oliwki",
-      "chipsy / frytki",
-      "słone przekąski",
-      "szynka",
-      "ser",
-      "słodycze, desery",
+      "chętnie, z przyjemnością",
+      "pić",
+      "jeść",
+      "lubić (z rzeczownikiem)",
+      "jabłko",
+      "pizza",
+      "sałatka, sałata",
+      "zupa",
+      "makaron (w tym znaczeniu zwykle w liczbie mnogiej; liczba pojedyncza: die Nudel)",
       "ryba",
       "mięso",
-      "gotować",
-      "spróbować, skosztować"
+      "owoce",
+      "lemoniada (słodki napój gazowany, niekoniecznie cytrynowy)",
+      "ser"
     ],
-    culture: {
-      title: "Okiem Włocha: aperitivo to nie kolacja",
-      text: "<p><b>Aperitivo</b> zaczyna się około 18:30 i trwa do 20:30. Płacisz za drinka (7-12 euro w zależności od miasta), a jedzenie przy barze jest w cenie. W Mediolanie rozrósł się do bufetu zwanego <i>apericena</i> — pół drogi do kolacji.</p><p>Zasada, o której nikt nie mówi: <b>bierze się rozsądnie</b>. Talerz ułożony w kopiec zdradza obcokrajowca szybciej niż akcent.</p><p>Klasyki: <i>spritz</i> (Aperol lub Campari), <i>negroni</i>, kieliszek wina. Piwo też uchodzi, choć puryści kręcą nosem.</p>"
-    },
     exercises: [
       {
-        q: "„___ piacciono le olive.” Dlaczego piacciono, a nie piace?",
-        opts: ["Bo mówi o wielu osobach", "Bo „le olive” jest w liczbie mnogiej", "Bo to czas przeszły"],
-        why: "Czasownik zgadza się z rzeczą, która się podoba — a ta jest w liczbie mnogiej."
-      },
-      { q: "Uzupełnij: „Mi ___ il vino rosso.”", why: "Jedna rzecz w liczbie pojedynczej → piace." },
-      { q: "Uzupełnij: „Non mi ___ i film horror.”", why: "„I film” to liczba mnoga → piacciono." },
-      {
-        q: "Które zdanie jest poprawne?",
-        opts: ["Mi non piace il pesce.", "Non mi piace il pesce.", "Mi piace non il pesce."],
-        why: "Non stoi przed całą grupą zaimek + czasownik."
+        q: "Jak powiesz „Lubię pić herbatę”?",
+        opts: ["Ich gern trinke Tee.", "Ich trinke gern Tee.", "Gern ich trinke Tee."],
+        why: "Odmieniony czasownik zostaje na drugim miejscu, a <b>gern</b> idzie za nim. (<i>Gern trinke ich Tee</i> jest możliwe, z podmiotem za czasownikiem, ale nie zdanie z <i>ich</i> przed czasownikiem.)"
       },
       {
-        q: "Jak powiesz „Marco lubi ryby”?",
-        opts: ["Marco piace il pesce", "A Marco piace il pesce", "Marco piacciono pesce"],
-        why: "Przed imieniem osoby, która lubi, stawia się przyimek <b>a</b>."
+        q: "Uzupełnij: „Ich ___ Käse.” (Lubię ser.)",
+        hint: "mögen, 1. osoba liczby pojedynczej",
+        why: "<i>Ich mag</i>: forma nieregularna, bez przegłosu, taka sama jak <i>er/sie/es</i>."
       },
-      { q: "„Lubię gotować.”", why: "Przed bezokolicznikiem zawsze piace w liczbie pojedynczej." },
-      { q: "Połącz zaimek z osobą.", pairs: ["mnie się podoba", "tobie", "jej", "nam"] },
       {
-        q: "Uzupełnij rozmowę przy aperitivo.",
-        tr: "— Lubisz spritz? — Tak, bardzo! Ale nie lubię oliwek."
+        q: "Uzupełnij: „Ich ___ gern Fisch.” (Chętnie jem rybę.)",
+        hint: "essen, 1. osoba liczby pojedynczej",
+        why: "Przy <i>ich</i> czasownik jest regularny: <b>esse</b>. Zmiana samogłoski dotyczy tylko <i>du</i> i <i>er</i>, poznasz ją w lekcji 2."
       },
-      { tr: "Bardzo lubię włoskie sery." },
-      { tr: "Lubię aperitivo, ale nie lubię oliwek." }
+      {
+        q: "Jak powiesz „Lubię pizzę”?",
+        opts: ["Ich mag Pizza.", "Ich Pizza mag.", "Mag ich Pizza."],
+        why: "Czasownik jest na drugim miejscu, a rzeczownik stoi bez rodzajnika. Z czasownikiem na początku <i>Mag ich Pizza?</i> byłoby pytaniem."
+      },
+      {
+        q: "Które zdanie ma czasownik na właściwym miejscu?",
+        opts: ["Heute ich esse Salat.", "Heute esse ich Salat.", "Ich heute esse Salat."],
+        why: "Jeśli zdanie zaczyna się od <i>heute</i>, podmiot przesuwa się za czasownik: <b>Heute esse ich Salat.</b>"
+      },
+      {
+        q: "Przetłumacz: „Dziś chętnie piję herbatę.”",
+        why: "<i>Heute trinke ich gern Tee</i>: czasownik na drugim miejscu, potem podmiot, potem <i>gern</i>. Poprawne jest też <i>Ich trinke heute gern Tee</i>."
+      },
+      {
+        q: "Połącz każde słowo z jego znaczeniem.",
+        pairs: ["pić", "jeść", "lubić (z rzeczownikiem)", "chętnie"]
+      },
+      {
+        q: "Uzupełnij oba zdania.",
+        tr: "Chętnie piję herbatę. A ty, czy też chętnie pijesz herbatę?",
+        why: "Drugie zdanie jest pytaniem rozstrzygającym, więc czasownik idzie na pierwsze miejsce: <i>Trinkst du ...?</i> Na początku zdania piszesz wielką literą. Niemiecki nie ma odpowiednika polskiego „czy”."
+      },
+      {
+        tr: "Chętnie jem sałatkę i chętnie piję wodę.",
+        why: "<i>Salat</i>: <b>s</b> na początku przed samogłoską jest dźwięczne, jak polskie <i>z</i>. W <i>Wasser</i> <b>w</b> czyta się jak polskie <i>w</i>."
+      },
+      {
+        tr: "Chętnie piję herbatę i chętnie jem chleb.",
+        why: "W <i>Tee</i> <b>ee</b> to jedno długie <i>e</i>, dłuższe niż polskie, a nie dwie osobne samogłoski."
+      }
     ]
   },
   "lesson:a1-u03-l2": {
-    theme: "Gramatyka podstawowa",
-    title: "Druga koniugacja i c'è / ci sono",
+    theme: "Gusty i przyzwyczajenia",
+    title: "Czasowniki ze zmianą samogłoski",
     objectives: [
-      "odmienić regularne czasowniki na -ere",
-      "użyć c'è i ci sono",
-      "opisać, co się gdzieś znajduje"
+      "odmieniać nehmen, essen i sprechen w czasie teraźniejszym",
+      "rozpoznać, że samogłoska zmienia się tylko przy du i er/sie/es",
+      "zamawiać posiłki: nehmen i essen"
     ],
     theory: [
       {
-        h: "Prawie jak -are, ale nie do końca",
-        p: "Grupa <strong>-ere</strong> różni się od pierwszej tylko trzema końcówkami: <em>-e</em> zamiast <em>-a</em>, <em>-ete</em> zamiast <em>-ate</em>, <em>-ono</em> zamiast <em>-ano</em>. Forma <em>noi</em> (<em>-iamo</em>) jest wspólna dla wszystkich trzech koniugacji — to najłatwiejsza końcówka we włoskim."
+        h: "Trzy czasowniki, jedna nowość",
+        p: "<strong>Nehmen</strong> („brać”), <strong>essen</strong> („jeść”) i <strong>sprechen</strong> („mówić”) mają takie same końcówki jak inne czasowniki, ale przy <strong>du</strong> i przy <strong>er/sie/es</strong> samogłoska <em>e</em> w temacie zmienia się w <em>i</em>: <em>essen → du isst, er isst</em>; <em>sprechen → du sprichst, er spricht</em>; <em>nehmen → du nimmst, er nimmt</em> (tu zmienia się też spółgłoska: <em>nehm-</em> staje się <em>nimm-</em>)."
       },
       {
-        h: "Tu ukrywa się większość nieregularnych",
-        p: "Wiele bardzo częstych czasowników na -ere ma nietypowe formy — <em>bere → bevo</em>, <em>rimanere → rimango</em>, <em>scegliere → scelgo</em>. Ich nieregularność ujawnia się przede wszystkim w czasie przeszłym i w imiesłowie, do czego dojdziemy na poziomie A2."
+        contrast: "Zmiany w temacie czasownika znasz z polskiego: „brać” to <em>biorę, bierzesz, bierze, bierzemy, bierzecie, biorą</em>, a „jeść” to <em>jem, jesz, je, jemy, jecie, jedzą</em>. Po polsku temat zmienia się jednak w innych osobach niż po niemiecku. W trzech czasownikach z tej lekcji zmiana obejmuje tylko <b>2. i 3. osobę liczby pojedynczej</b>, czyli <em>du</em> i <em>er/sie/es</em>. Przy <em>ich</em>, <em>wir</em>, <em>ihr</em> i <em>sie/Sie</em> zostaje temat bezokolicznika: <em>ich esse</em>, <em>wir essen</em>, <em>ihr esst</em>."
       },
       {
-        h: "C'è i ci sono",
-        p: "<strong>C'è</strong> („jest, znajduje się”) i <strong>ci sono</strong> („są”) opisują istnienie czegoś w danym miejscu. Wybór zależy od liczby rzeczy, nie od osoby: <em>c'è un problema</em>, <em>ci sono due problemi</em>."
+        h: "Essen: du isst, bez podwójnej końcówki",
+        p: "Temat <em>essen</em> kończy się na <em>-s</em>, więc końcówka <em>du</em> się skraca: <em>du isst</em>, a nie „du issst”. Forma <em>isst</em> jest taka sama przy <em>du</em> i <em>er/sie/es</em>. <em>Ihr esst</em> ma samogłoskę niezmienioną: to inna forma."
       },
       {
-        trap: "Nie myl <b>c'è</b> (jest gdzieś) z <b>è</b> (jest jakieś). <em>Il ristorante è chiuso</em> — restauracja jest zamknięta. <em>C'è un ristorante qui vicino</em> — jest tu w pobliżu restauracja."
+        trap: "Zmiana samogłoski nie dotyczy <em>ihr</em> („wy”): <em>ihr esst</em>, <em>ihr nehmt</em>, <em>ihr sprecht</em>. Nie obejmuje też wszystkich czasowników: <em>trinken</em> zostaje regularny (<em>du trinkst</em>). Inne czasowniki mają inne zmiany, na przykład <em>sehen → du siehst</em>: poznasz je później. Na razie naucz się tych trzech z ich formami."
+      },
+      {
+        h: "Nehmen przy zamawianiu, sprechen przy językach",
+        p: "<em>Ich nehme einen Kaffee</em> odpowiada polskiemu „wezmę kawę”: to typowa formuła, gdy w kawiarni albo w restauracji mówisz, co wybierasz. Zwróć uwagę, że po niemiecku wystarczy czas teraźniejszy, a po polsku zwykle mówi się „wezmę” albo „poproszę”. <em>Sprechen</em> używa się z nazwami języków, bez rodzajnika i bez przyimka: <em>Ich spreche Deutsch</em>, <em>Sprichst du Polnisch?</em> Po polsku jest „mówię po niemiecku”, a po niemiecku nie ma odpowiednika „po”."
+      },
+      {
+        tip: "Naucz się tej trójki jak jednego bloku: <em>essen, du isst, er isst</em>; <em>nehmen, du nimmst, er nimmt</em>; <em>sprechen, du sprichst, er spricht</em>. Gdy wahasz się przy jakiejś formie, zapytaj: czy to <em>du</em>, czy <em>er/sie/es</em>? Tylko wtedy samogłoska się zmienia."
       }
     ],
     grammar: {
-      title: "Leggere (czytać) — wzorzec -ERE",
+      title: "Essen, nehmen, sprechen w czasie teraźniejszym",
+      note: "Samogłoska zmienia się (<b>e → i</b>) tylko przy <b>du</b> i <b>er/sie/es</b>.",
       table: {
-        head: ["osoba", "końcówka", "leggere", "prendere"],
+        head: ["osoba", "essen", "nehmen", "sprechen"],
         rows: [
-          ["io", "-o", "leggo", "prendo"],
-          ["tu", "-i", "leggi", "prendi"],
-          ["lui / lei / Lei", "-e", "legge", "prende"],
-          ["noi", "-iamo", "leggiamo", "prendiamo"],
-          ["voi", "-ete", "leggete", "prendete"],
-          ["loro", "-ono", "leggono", "prendono"]
+          ["ich", "esse", "nehme", "spreche"],
+          ["du", "isst", "nimmst", "sprichst"],
+          ["er / sie / es", "isst", "nimmt", "spricht"],
+          ["wir", "essen", "nehmen", "sprechen"],
+          ["ihr", "esst", "nehmt", "sprecht"],
+          ["sie / Sie", "essen", "nehmen", "sprechen"]
         ]
       },
       examples: [
-        { tr: "Poproszę kawę.", note: "„prendere” to najczęstszy czasownik przy zamawianiu" },
-        { tr: "Czytasz menu?" },
-        { tr: "Nie widzę kelnera." },
-        { tr: "Jest wolny stolik?" },
-        { tr: "Są dwa miejsca przy barze." },
-        { tr: "Wpisujemy nazwisko do rezerwacji." }
+        { tr: "Jem ryż." },
+        { tr: "Jesz rybę.", note: "du isst: samogłoska się zmienia" },
+        { tr: "On bierze zupę." },
+        { tr: "My bierzemy kawę.", note: "przy wir temat się nie zmienia" },
+        { tr: "Mówisz po niemiecku?" },
+        { tr: "Jecie ziemniaki.", note: "ihr esst (wy): bez zmiany samogłoski" }
       ]
     },
     vocab: [
-      "brać, zamawiać",
-      "czytać",
-      "pisać",
-      "widzieć",
-      "pytać, prosić",
-      "odpowiadać",
-      "kłaść",
-      "zamykać",
-      "jest / są",
-      "miejsce",
-      "wolny / zajęty",
-      "tu w pobliżu"
+      "brać",
+      "jeść",
+      "mówić",
+      "kiełbasa",
+      "jajko",
+      "ryż",
+      "ziemniak",
+      "warzywa",
+      "kolacja",
+      "język",
+      "wolno",
+      "też, także"
     ],
     exercises: [
-      { why: "Zwróć uwagę na -e, -ete, -ono — to cała różnica wobec grupy -are." },
       {
-        q: "Która końcówka jest wspólna dla wszystkich trzech koniugacji?",
-        opts: ["-o w formie io", "-iamo w formie noi", "-ono w formie loro"],
-        why: "Forma noi to zawsze -iamo, niezależnie od grupy."
-      },
-      { q: "Uzupełnij: „___ un tavolo libero?” (Jest wolny stolik?)", why: "Jeden stolik → c'è." },
-      {
-        q: "Uzupełnij: „___ tre persone in fila.” (Są trzy osoby w kolejce.)",
-        why: "Liczba mnoga → ci sono."
+        tr: "Pełna odmiana czasownika nehmen, bez zaglądania.",
+        why: "Przy <i>du</i> i <i>er/sie/es</i> zmieniają się samogłoska i spółgłoska: <b>nimmst, nimmt</b>. Pozostałe osoby mają temat bezokolicznika: <i>nehme, nehmen, nehmt, nehmen</i>."
       },
       {
-        q: "„Il bar è chiuso” a „C'è un bar qui vicino” — co je różni?",
-        opts: [
-          "Nic, to synonimy",
-          "Pierwsze opisuje cechę baru, drugie stwierdza jego istnienie w okolicy",
-          "Drugie jest w czasie przeszłym"
-        ],
-        why: "è opisuje, c'è stwierdza obecność czegoś w miejscu."
+        q: "Jak powiesz „ty jesz”?",
+        opts: ["du esst", "du isst", "du esse"],
+        why: "<b>Du isst</b>: samogłoska się zmienia (e → i), a końcówka <i>-st</i> się skraca, bo temat kończy się na <i>s</i>. <i>Esst</i> to forma <i>ihr</i>."
       },
-      { q: "„Biorę piwo, a ty?”", why: "Prendere jest we Włoszech domyślnym czasownikiem zamawiania." },
       {
-        q: "Które czasowniki należą do grupy -ere?",
-        opts: ["prendere", "abitare", "scrivere", "dormire", "chiudere"]
+        q: "Uzupełnij: „Er ___ einen Apfel.” (On bierze jabłko.)",
+        hint: "nehmen, 3. osoba liczby pojedynczej",
+        why: "<b>Er nimmt</b>: zmieniają się samogłoska i spółgłoska w porównaniu z <i>nehmen</i>."
       },
-      { tr: "Nie widzę kelnera." },
-      { tr: "Jest wolny stolik dla dwóch osób?" },
-      { tr: "Poprosimy dwa spritze." }
+      {
+        q: "Uzupełnij: „Du ___ sehr gut Deutsch.” (Mówisz bardzo dobrze po niemiecku.)",
+        hint: "sprechen, 2. osoba liczby pojedynczej",
+        why: "<b>Du sprichst</b>: e → i i końcówka <i>-st</i>."
+      },
+      {
+        q: "Przy którym zaimku samogłoska NIE zmienia się?",
+        opts: ["du", "er", "wir"],
+        why: "Przy <b>wir</b> używa się tematu bezokolicznika: <i>wir essen, wir nehmen, wir sprechen</i>. Zmiana dotyczy tylko <i>du</i> i <i>er/sie/es</i>."
+      },
+      {
+        q: "Które zdania są poprawne?",
+        opts: ["Er isst Fisch.", "Du sprecht Deutsch.", "Ihr esst Reis.", "Ich nimme Tee.", "Sie nimmt eine Suppe."],
+        why: "<i>Du sprichst</i> (nie „sprecht”, to forma <i>ihr</i>); <i>ich nehme</i> (przy <i>ich</i> samogłoska się nie zmienia). Pozostałe trzy są poprawne."
+      },
+      {
+        tr: "Dziś Anna je ryż i warzywa.",
+        why: "Jeśli zdanie zaczyna się od <i>heute</i>, czasownik zostaje na drugim miejscu: <i>Heute isst Anna ...</i>"
+      },
+      {
+        q: "Przetłumacz: „Ty mówisz po włosku, a ja mówię po niemiecku.”",
+        why: "<i>Du sprichst</i> ze zmianą samogłoski, <i>ich spreche</i> bez niej: zaimków się nie pomija, a po nazwie języka nie ma przyimka."
+      },
+      {
+        tr: "Ty jesz ryż, a ja biorę ziemniaki.",
+        why: "<i>Du isst</i>: <b>i</b> jest krótkie, a <b>ss</b> bezdźwięczne, jak polskie <i>s</i> w „kasa”."
+      },
+      {
+        tr: "Ja jem ryż, a ty jesz ziemniaki.",
+        why: "Pamiętaj o zmianie samogłoski: <i>ich esse</i>, ale <i>du isst</i>."
+      }
     ]
   },
   "lesson:a1-u03-l3": {
-    theme: "Gramatyka podstawowa",
-    title: "Trzecia koniugacja i wzorzec -isc-",
+    theme: "W kawiarni",
+    title: "Zamawiać, proponować, przyjmować, odmawiać",
     objectives: [
-      "odmienić czasowniki typu dormire i typu capire",
-      "rozpoznać, które -ire wymagają wstawki -isc-",
-      "użyć preferire do wyrażania preferencji"
+      "zamówić napój z einen, eine, ein",
+      "zaproponować za pomocą Möchten Sie ...? i odpowiedzieć Ja, gern albo Nein, danke",
+      "rozpoznać, że w bierniku zmienia się tylko rodzaj męski w liczbie pojedynczej"
     ],
     theory: [
       {
-        h: "Jedna końcówka, dwa zachowania",
-        p: "Czasowniki na <strong>-ire</strong> dzielą się na dwie podgrupy. Pierwsza (<em>dormire, partire, sentire, aprire, offrire</em>) odmienia się wprost. Druga (<em>capire, finire, preferire, pulire, spedire</em>) wstawia <b>-isc-</b> w czterech formach: <em>io, tu, lui/lei, loro</em>. Formy <em>noi</em> i <em>voi</em> zostają bez wstawki."
+        h: "Proponować, przyjmować, odmawiać",
+        p: "Żeby coś zaproponować znajomemu, z którym jesteś na „ty”: <em>Möchtest du einen Kaffee?</em>; osobie, do której zwracasz się per Pan/Pani: <em>Möchten Sie einen Kaffee?</em> Żeby przyjąć: <strong>Ja, gern</strong> albo <strong>Ja, bitte</strong>. Żeby odmówić: <strong>Nein, danke</strong>. Żeby o coś poprosić: <em>Ich möchte einen Saft</em>, czyli „chciałbym sok”."
       },
       {
-        h: "Skąd wiadomo, która to grupa",
-        p: "Reguły nie ma — trzeba zapamiętać. Pomaga to, że grupa z <em>-isc-</em> jest liczniejsza i zawiera prawie wszystkie nowsze czasowniki (<em>gestire, inserire, garantire</em>). Słowniki oznaczają ją skrótem <i>(-isc-)</i> przy haśle."
+        trap: "Wobec propozycji samo <em>danke</em> bywa rozumiane jako odmowa („nie, dziękuję”), a <em>bitte</em> jako zgoda. Znasz to z polskiego: samo „dziękuję” w odpowiedzi na propozycję też często znaczy „nie”. Żeby nie było nieporozumień, mów wyraźnie <em>Ja, bitte</em> albo <em>Ja, gern</em>, gdy się zgadzasz, i <em>Nein, danke</em>, gdy odmawiasz."
       },
       {
-        tip: "Wzorzec z -isc- ma kształt klamry: cztery formy z wstawką na zewnątrz, dwie bez niej w środku. Zapamiętaj rytm: <b>ca-pi-sco, ca-pi-sci, ca-pi-sce — ca-piamo, ca-pite — ca-pi-scono</b>."
+        h: "Möchte: na razie formuła",
+        p: "<em>Ich möchte ...</em> to grzeczna formuła na wyrażenie życzenia, odpowiednik „chciałbym”. Formy do nauczenia na teraz to <em>ich möchte</em>, <em>du möchtest</em> i <em>Sie möchten</em>. W tych formułach rzecz, której chcesz, jest dopełnieniem i stoi w bierniku: <em>Ich möchte einen Saft</em>."
       },
       {
-        h: "Preferire — bardzo przydatny czasownik",
-        p: "<em>Preferisco il vino bianco</em> („wolę białe wino”) to zwrot, którego użyjesz w każdej restauracji i sklepie. Buduje się go z rzeczownikiem albo z bezokolicznikiem: <em>preferisco restare a casa</em>."
+        h: "Biernik: zmienia się tylko rodzaj męski",
+        p: "Dopełnienie (to, co bierzesz, pijesz, zamawiasz) stoi w <strong>bierniku</strong>. W porównaniu z mianownikiem zmienia się tylko rodzaj męski w liczbie pojedynczej: <strong>der → den</strong>, <strong>ein → einen</strong>, <strong>kein → keinen</strong>. Rodzaj żeński, nijaki i liczba mnoga zostają takie same: <em>Die Cola ist kalt. Ich trinke die Cola.</em> (mianownik i biernik: <em>die</em> w obu), <em>Das ist ein Wasser. Ich nehme ein Wasser.</em> (<em>ein</em> w obu)."
+      },
+      {
+        contrast: "Biernik znasz z polskiego, więc sama idea nie jest nowa: „piję kawę”, „biorę sok”. Różnica jest w tym, <b>gdzie</b> ją widać. Po polsku końcówkę biernika dostaje rzeczownik, i to głównie żeński: <em>kawa → kawę</em>, ale <em>sok → sok</em> bez zmiany. Po niemiecku zmiana jest na rodzajniku i dotyczy tylko rodzaju męskiego: <em>der Saft → den Saft</em>, ale <em>die Cola</em> bez zmiany. Wychodzi odwrotnie niż po polsku. Rodzajnik jest tu prawdziwą nowością, bo polski go nie ma: <em>Der Kaffee ist heiß</em> (podmiot), ale <em>Ich nehme den Kaffee</em> (dopełnienie). Dlatego w kawiarni mówi się <em>Einen Kaffee, bitte</em>: za tym stoi „(ich nehme) einen Kaffee”."
+      },
+      {
+        trap: "Po <em>sein</em> („być”) zostaje mianownik, bo nie ma dopełnienia: <em>Das ist ein Saft</em>, nie „Das ist einen Saft”. <em>Einen</em> pojawia się z czasownikami takimi jak <em>nehmen</em>, <em>trinken</em>, <em>essen</em>, <em>möchten</em>, <em>haben</em>. I nie ufaj polskiemu rodzajowi: „kawa” jest żeńska, ale <em>der Kaffee</em> jest męski (<em>einen Kaffee</em>); „herbata” jest żeńska, ale <em>der Tee</em> męski; „woda” jest żeńska, ale <em>das Wasser</em> nijakie."
+      },
+      {
+        tip: "Gdy wahasz się między <em>ein</em> a <em>einen</em>, sprawdź rodzaj rzeczownika: jeśli jest męski (<em>der Saft</em>, <em>der Kaffee</em>, <em>der Tee</em>) i jest dopełnieniem, jak wtedy, gdy zamawiasz albo mówisz, co bierzesz, użyj <em>einen</em>; jako podmiot zostaje <em>ein</em>. Dlatego słownictwo kursu zawsze podaje rodzajnik."
       }
     ],
     grammar: {
-      title: "Dormire (bez -isc-) kontra capire (z -isc-)",
+      title: "Mianownik i biernik rodzajnika",
+      note: "Zmienia się <b>tylko rodzaj męski w liczbie pojedynczej</b>. Po <em>sein</em> używa się mianownika.",
       table: {
-        head: ["osoba", "dormire", "capire", "po polsku"],
+        head: ["rodzaj", "mianownik", "biernik", "przykład"],
         rows: [
-          ["io", "dormo", "capisco", "śpię / rozumiem"],
-          ["tu", "dormi", "capisci", "śpisz / rozumiesz"],
-          ["lui / lei", "dorme", "capisce", "śpi / rozumie"],
-          ["noi", "dormiamo", "capiamo", "śpimy / rozumiemy"],
-          ["voi", "dormite", "capite", "śpicie / rozumiecie"],
-          ["loro", "dormono", "capiscono", "śpią / rozumieją"]
+          ["męski", "der / ein", "den / einen", "Ich nehme einen Saft."],
+          ["żeński", "die / eine", "die / eine", "Ich möchte eine Cola."],
+          ["nijaki", "das / ein", "das / ein", "Ich nehme ein Wasser."],
+          ["mnoga", "die / (brak)", "die / (brak)", "Ich möchte Pommes."]
         ]
       },
       examples: [
-        { tr: "Nie rozumiem, może pan powtórzyć?" },
-        { tr: "Wolę stolik na zewnątrz." },
-        { tr: "O której kończysz pracę?" },
-        { tr: "Sklep otwiera się o dziewiątej.", note: "aprire — bez -isc-" },
-        { tr: "Wyjeżdżamy jutro rano." },
-        { tr: "Oni rozumieją wszystko." }
+        { tr: "Biorę sok.", note: "Saft jest rodzaju męskiego: einen" },
+        { tr: "Chciałbym colę.", note: "rodzaj żeński: bez zmiany" },
+        { tr: "Czy chciałby Pan/chciałaby Pani szklankę wody?", note: "forma grzecznościowa (Sie)" },
+        { tr: "Tak, chętnie." },
+        { tr: "Nie, dziękuję." },
+        { tr: "To jest sok.", note: "po sein: mianownik" }
       ]
     },
+    culture: {
+      title: "Niemiecki punkt widzenia: Feierabend, Kneipe i Biergarten",
+      text: "<p><i>Feierabend</i> to koniec dnia pracy i, szerzej, czas wolny, który po nim następuje. Komuś, kto kończy pracę, życzy się <i>Schönen Feierabend!</i>, mniej więcej „miłego wieczoru”. Wiele osób spotyka się z kolegami z pracy albo ze znajomymi w <i>Kneipe</i>, nieformalnym lokalu w dzielnicy, gdzie zwykle jest piwo i napoje bezalkoholowe, a często także coś do jedzenia.</p><p><i>Biergarten</i> to lokal ze stolikami na świeżym powietrzu, typowy dla ciepłej pory roku i tradycji bawarskiej. W niektórych tradycyjnych Biergärten można przynieść własne jedzenie, ale nie wszędzie: warto zerknąć na tablice przy wejściu. Często zamawia się przy ladzie i niesie tacę do stołu, w innych miejscach przychodzi kelner.</p><p>Zamówienie wody albo soku jest zupełnie normalne: wśród popularnych napojów bezalkoholowych jest <i>Apfelschorle</i>, czyli sok jabłkowy z wodą gazowaną. Przed wypiciem mówi się <i>Prost!</i> („na zdrowie”) i zwykle patrzy się sobie w oczy.</p>"
+    },
     vocab: [
-      "rozumieć",
-      "kończyć",
-      "woleć",
-      "sprzątać",
-      "wysyłać",
-      "spać",
-      "wyjeżdżać",
-      "otwierać",
-      "oferować, stawiać",
-      "słyszeć, czuć",
-      "śledzić, iść za",
-      "może pan/pani powtórzyć?"
+      "Chciałbym ... (grzeczna formuła)",
+      "Czy chciałby Pan/chciałaby Pani ...? (forma grzecznościowa)",
+      "Czy chciałbyś ...? (na „ty”)",
+      "Tak, chętnie.",
+      "Tak, proszę.",
+      "Nie, dziękuję.",
+      "Na zdrowie!",
+      "sok pomarańczowy",
+      "sok jabłkowy",
+      "woda mineralna",
+      "szklanka",
+      "butelka"
     ],
     exercises: [
-      { why: "Klamra: -isc- w io, tu, lui/lei i loro; brak w noi i voi." },
-      { why: "Dormire idzie wprost, bez wstawki." },
       {
-        q: "Który czasownik wymaga wstawki -isc-?",
-        opts: ["partire", "preferire", "aprire"],
-        why: "Preferire → preferisco, preferisci, preferisce, preferiamo, preferite, preferiscono."
+        tr: "Wszystkie osoby czasownika trinken.",
+        why: "<i>Trinken</i> jest regularny: temat <i>trink-</i> plus <i>-e, -st, -t, -en, -t, -en</i>."
       },
       {
-        q: "Uzupełnij: „Noi non ___ bene.” (Nie rozumiemy dobrze.)",
-        hint: "forma noi nie ma wstawki",
-        why: "Capiamo — w formie noi i voi -isc- znika."
+        tr: "Czasownik bestellen („zamawiać”): ich, er, ihr.",
+        why: "<i>Bestellen</i> jest regularny: temat <i>bestell-</i> plus końcówka: <i>ich bestelle, er bestellt, ihr bestellt</i>."
       },
-      { q: "Uzupełnij: „Loro ___ alle sette.” (Kończą o siódmej.)", why: "finire z -isc- w formie loro." },
-      { q: "„Wolę stolik na zewnątrz.”" },
-      { q: "Które formy zawierają -isc-?", opts: ["capisco", "capiamo", "finisce", "dormite", "puliscono"] },
-      { tr: "Nie rozumiem, może pani powtórzyć?" },
-      { tr: "Wolę wyjechać jutro wcześnie rano." },
-      { tr: "Przepraszam, nie rozumiem. Może pan powtórzyć?" }
+      {
+        q: "Uzupełnij: „Ich möchte ___ Saft.” (Chciałbym sok.)",
+        hint: "der Saft jest rodzaju męskiego; biernik",
+        why: "<b>Einen</b>: po <i>möchte</i> stoi biernik, a w rodzaju męskim <i>ein</i> zmienia się w <i>einen</i>."
+      },
+      {
+        q: "Uzupełnij: „Ich nehme ___ Cola.” (Biorę colę.)",
+        hint: "die Cola jest rodzaju żeńskiego",
+        why: "<b>Eine</b>: rodzaj żeński nie zmienia się w bierniku."
+      },
+      {
+        q: "Proponują ci: „Möchtest du ein Bier?” Nie chcesz. Co odpowiesz?",
+        opts: ["Ja, gern.", "Nein, danke.", "Prost!"],
+        why: "<b>Nein, danke</b> to wyraźna odmowa. <i>Ja, gern</i> to zgoda; <i>Prost!</i> mówi się przed wypiciem."
+      },
+      {
+        q: "Które zdania są poprawne?",
+        opts: [
+          "Ich trinke einen Tee.",
+          "Ich trinke ein Tee.",
+          "Ich esse eine Suppe.",
+          "Ich nehme ein Brot.",
+          "Ich nehme eine Brot."
+        ],
+        why: "<i>Tee</i> jest męski (<i>einen</i>), <i>Suppe</i> żeńska (<i>eine</i>), <i>Brot</i> nijaki (<i>ein</i>)."
+      },
+      {
+        tr: "Poproszę sok jabłkowy i wodę.",
+        why: "<i>Apfelsaft</i> jest męski: <i>einen</i>. <i>Wasser</i> jest nijakie: <i>ein</i>."
+      },
+      {
+        q: "Przetłumacz: „Sok pomarańczowy i wodę, poproszę.”",
+        why: "<i>Einen Orangensaft</i> (męski) i <i>ein Wasser</i> (nijaki): to zamówienie w skrócie, za którym stoi „ich nehme/möchte ...”, więc biernik."
+      },
+      {
+        tr: "Poproszę sok pomarańczowy i butelkę wody.",
+        why: "W <i>Orangensaft</i> <b>g</b> czyta się jak polskie <i>ż</i> (/ʒ/), a <i>-saft</i> zaczyna się dźwięcznym <b>s</b>, jak polskie <i>z</i>."
+      },
+      {
+        tr: "Poproszę sok jabłkowy i szklankę wody.",
+        why: "<i>Glas</i> ma długie <b>a</b>, a <i>Gläser</i> to liczba mnoga z przegłosem; <b>ä</b> czyta się jak długie <i>e</i>."
+      }
     ]
   },
   "lesson:a1-u03-l4": {
-    theme: "Jedzenie",
-    title: "Rodzajnik cząstkowy i ilości",
+    theme: "Odmawiać z taktem",
+    title: "Kein czy nicht, i doch",
     objectives: [
-      "wyrazić nieokreśloną ilość przez del, della, dei…",
-      "użyć un po' di i un chilo di",
-      "poprosić o produkty w sklepie"
+      "negować rzeczownik za pomocą kein",
+      "negować czasownik albo przymiotnik za pomocą nicht",
+      "odpowiadać doch na pytanie przeczące"
     ],
     theory: [
       {
-        h: "Trochę czegoś — bez słowa „trochę”",
-        p: "Włoski wyraża nieokreśloną ilość przez <strong>rodzajnik cząstkowy</strong>: przyimek <em>di</em> zlany z rodzajnikiem określonym. <em>Vorrei del pane</em> — „poproszę (trochę) chleba”. W liczbie mnogiej odpowiada polskiemu „jakieś, kilka”: <em>dei pomodori</em> — „pomidorów”."
+        h: "Dwa przeczenia, wybierane zależnie od tego, co negujesz",
+        p: "<strong>Kein</strong> neguje rzeczownik z rodzajnikiem nieokreślonym albo bez rodzajnika: <em>Ich trinke kein Bier</em>, <em>Ich habe keinen Hunger</em>, <em>Wir haben keine Cola</em>. Ma końcówki jak <em>ein</em>: <em>kein</em> (rodzaj męski w mianowniku i nijaki), <em>keinen</em> (rodzaj męski w bierniku), <em>keine</em> (żeński i liczba mnoga). <strong>Nicht</strong> neguje całą resztę: czasownik, przymiotnik, przysłówek albo rzeczownik z rodzajnikiem określonym: <em>Ich komme nicht</em>, <em>Der Kaffee ist nicht heiß</em>, <em>Ich trinke den Tee nicht</em>."
       },
       {
-        h: "Formy",
-        list: [
-          "di + il = <b>del</b> pane · di + lo = <b>dello</b> zucchero · di + l' = <b>dell'</b>acqua",
-          "di + la = <b>della</b> carne · di + i = <b>dei</b> pomodori",
-          "di + gli = <b>degli</b> spinaci · di + le = <b>delle</b> mele"
-        ]
+        contrast: "Po polsku wystarczy jedno <em>nie</em>, które przy czasowniku stoi przed nim: „nie piję piwa”, „nie przychodzę”, „kawa nie jest gorąca”. Po niemiecku trzeba wybierać: <em>Ich trinke kein Bier</em> (rzeczownik) i <em>Ich komme nicht</em> (czasownik). Przy negowaniu czasownika polskie <em>nie</em> stoi przed nim, a niemieckie <em>nicht</em> zwykle za nim. Nie ma też wielokrotnego przeczenia: „nie mam żadnego brata” to <em>Ich habe keinen Bruder</em>, jedno przeczenie."
       },
       {
-        h: "Alternatywy",
-        p: "Zamiast rodzajnika cząstkowego można użyć <strong>un po' di</strong> („trochę”) albo miary: <em>un chilo di, un etto di, mezzo litro di</em>. W przeczeniu rodzajnik cząstkowy zwykle znika: <em>non ho pane</em>, nie „non ho del pane”."
+        trap: "Prawdziwa pułapka to przypadek. Po polsku przeczenie zmienia dopełnienie na <b>dopełniacz</b>: „piję piwo”, ale „nie piję piwa”; „mam kawę”, ale „nie mam kawy”; „głód”, ale „nie mam głodu”. Po niemiecku przypadek <b>się nie zmienia</b>: zostaje biernik, a zmienia się tylko rodzajnik na <em>kein</em>: <em>Ich trinke keinen Kaffee</em>, <em>Ich habe keinen Hunger</em>. Nie szukaj więc końcówki dopełniacza na rzeczowniku. Częsty błąd to też „nicht kein”: po <em>kein</em> nie potrzeba żadnego innego przeczenia."
       },
       {
-        contrast: "Polski dopełniacz cząstkowy („kup chleba”, nie „kup chleb”) robi dokładnie to samo, tylko końcówką zamiast przyimkiem. To dobra kotwica: gdzie po polsku powiesz „chleba”, po włosku będzie <em>del pane</em>."
+        h: "Gdzie stoi nicht",
+        p: "Pozycja: jeśli <em>nicht</em> neguje całe zdanie, stoi zwykle bliżej <strong>końca</strong>: <em>Ich komme heute nicht</em>. Jeśli neguje jedno konkretne słowo, stoi <strong>przed</strong> nim: <em>Der Kaffee ist nicht heiß</em>, <em>Ich trinke nicht gern Bier</em>. To tendencja, nie prawo: zobaczysz ją w działaniu w przykładach tej lekcji."
       },
       {
-        tip: "<b>Un etto</b> to 100 gramów i jest podstawową jednostką przy ladzie: <em>due etti di prosciutto</em> = 200 g szynki."
+        h: "Doch: zaprzeczyć pytaniu przeczącemu",
+        p: "Jeśli ktoś zadaje pytanie przeczące (<em>Trinkst du kein Bier?</em>), a ty chcesz powiedzieć, że jednak tak, odpowiedź brzmi <strong>doch</strong>: <em>Doch, ich trinke gern Bier</em>. Jeśli chcesz potwierdzić przeczenie, odpowiadasz <em>Nein</em>: <em>Nein, ich trinke kein Bier</em>. Po polsku najbliższe są „ależ tak” albo „owszem”, ale nie jest to jedno stałe słowo jak niemieckie <em>doch</em>."
+      },
+      {
+        tip: "Żeby odmówić z taktem, wystarczy kilka formuł: <em>Nein, danke</em>, <em>Heute nicht, danke</em>, <em>Kein Bier, bitte</em>. Są jasne i uprzejme i nie wymagają tłumaczenia."
       }
     ],
     grammar: {
-      title: "Rodzajnik cząstkowy i wyrażenia ilości",
+      title: "Kein i nicht",
+      note: "<b>Kein</b> neguje rzeczowniki z rodzajnikiem nieokreślonym albo bez rodzajnika; <b>nicht</b> neguje resztę.",
       table: {
-        head: ["kontekst", "forma", "przykład"],
+        head: ["rodzaj", "mianownik", "biernik", "przykład"],
         rows: [
-          ["m. + spółgłoska", "del", "del pane"],
-          ["m. + s+sp., z", "dello", "dello zucchero"],
-          ["+ samogłoska", "dell'", "dell'acqua, dell'olio"],
-          ["ż. + spółgłoska", "della", "della carne"],
-          ["m. l.mn.", "dei / degli", "dei pomodori, degli spinaci"],
-          ["ż. l.mn.", "delle", "delle mele"]
+          ["męski", "kein", "keinen", "Ich trinke keinen Tee."],
+          ["żeński", "keine", "keine", "Ich nehme keine Cola."],
+          ["nijaki", "kein", "kein", "Ich trinke kein Bier."],
+          ["mnoga", "keine", "keine", "Wir haben keine Äpfel."]
         ]
       },
       examples: [
-        { tr: "Poproszę chleba." },
-        { tr: "Kupuję jabłka i winogrona." },
-        { tr: "Trochę soli, nie za dużo." },
-        { tr: "Dwadzieścia deko szynki surowej." },
-        { tr: "Pół litra mleka." },
-        { tr: "Nie mam cukru w domu.", note: "w przeczeniu bez rodzajnika cząstkowego" }
+        { tr: "Nie piję piwa.", note: "kein: rzeczownik bez rodzajnika (po polsku dopełniacz, po niemiecku biernik)" },
+        { tr: "Nie jestem głodny.", note: "Hunger jest rodzaju męskiego: keinen" },
+        { tr: "Kawa nie jest gorąca.", note: "nicht: przymiotnik" },
+        { tr: "Dziś nie przyjdę.", note: "nicht: czasownik" },
+        { tr: "Nie pijesz piwa? Ależ tak, chętnie.", note: "doch zaprzecza pytaniu przeczącemu" },
+        { tr: "Nie lubię pić piwa.", note: "nicht gern" }
       ]
     },
     vocab: [
-      "chleb",
-      "mleko",
-      "woda",
-      "cukier",
-      "sól",
-      "oliwa, olej",
-      "pomidory",
-      "jabłka",
-      "sto gramów",
-      "kilogram",
-      "trochę",
-      "pół litra",
-      "wystarczy, dziękuję",
-      "ile pan/pani chce?"
+      "lokal w dzielnicy, knajpa (Kneipe)",
+      "ogródek piwny (Biergarten)",
+      "koniec dnia pracy, czas wolny po pracy",
+      "głód",
+      "pragnienie",
+      "alkohol",
+      "bezalkoholowy",
+      "dziś",
+      "ależ tak, owszem (odpowiedź na pytanie przeczące)",
+      "nie (czasownik, przymiotnik, przysłówek)",
+      "żaden, nie ... (przed rzeczownikiem)",
+      "smakować; być smacznym",
+      "jeszcze",
+      "Poproszę rachunek."
     ],
     exercises: [
       {
-        q: "Jak poprosisz o (trochę) chleba?",
-        opts: ["Vorrei il pane", "Vorrei del pane", "Vorrei un pane"],
-        why: "Rodzajnik cząstkowy <b>del</b> wyraża nieokreśloną ilość."
+        q: "Jak powiesz „Nie piję piwa”?",
+        opts: ["Ich trinke kein Bier.", "Ich trinke keinen Bier.", "Ich trinke keine Bier."],
+        why: "<i>Bier</i> jest nijakie, więc <b>kein</b>. Żeby zanegować to, czego nie pijesz (rzeczownik bez rodzajnika), używa się <i>kein</i>; rzeczownik nie dostaje przy tym końcówki dopełniacza."
       },
       {
-        q: "Uzupełnij: „Compro ___ acqua.” (Kupuję wodę.)",
-        why: "di + l' = dell', bo acqua zaczyna się od samogłoski."
+        q: "Które przeczenie jest potrzebne? „Ich komme heute ___.”",
+        opts: ["kein", "nicht", "keine"],
+        why: "Tu negujesz czasownik, nie rzeczownik: <b>nicht</b>."
       },
       {
-        q: "Uzupełnij: „Vorrei ___ mele.” (Poproszę jabłka.)",
-        why: "di + le = delle, rodzaj żeński w liczbie mnogiej."
+        q: "Uzupełnij: „Ich habe ___ Hunger.” (Nie jestem głodny.)",
+        hint: "der Hunger jest rodzaju męskiego; biernik",
+        why: "<i>Haben</i> wymaga biernika, a <i>Hunger</i> jest rodzaju męskiego: <b>keinen</b>."
       },
       {
-        q: "Dobierz rodzajnik cząstkowy.",
-        items: ["chleb", "cukier", "mięso", "oliwa", "pomidory", "szpinak"]
+        q: "Uzupełnij: „Der Kaffee ist ___ heiß.” (Kawa nie jest gorąca.)",
+        hint: "negacja przymiotnika",
+        why: "Przymiotnik neguje się za pomocą <b>nicht</b>, postawionego przed nim."
       },
       {
-        q: "Ile to „due etti”?",
-        opts: ["20 gramów", "200 gramów", "2 kilogramy"],
-        why: "Un etto to 100 g, więc due etti = 200 g."
+        q: "Ich trinke ___ ... (dopełnienie, ale z rodzajnikiem określonym). Wybierz właściwą formę dla każdego rzeczownika.",
+        why: "Z rodzajnikiem określonym w bierniku zmienia się tylko rodzaj męski: <i>den Tee</i>, <i>den Saft</i>; <i>die Cola</i>, <i>die Limonade</i> oraz <i>das Bier</i>, <i>das Wasser</i> zostają bez zmian. Uwaga na rodzaj: „herbata” jest po polsku żeńska, ale <i>der Tee</i> jest męski. Rzeczownik z rodzajnikiem określonym neguje się za pomocą <i>nicht</i>: <i>Ich trinke den Tee nicht</i>.",
+        items: ["herbata", "cola", "piwo", "sok", "lemoniada (słodki napój gazowany)", "woda"]
       },
-      { q: "„Poproszę pół litra mleka.”" },
       {
-        q: "Jesteś przy ladzie w sklepie spożywczym.",
-        setting: "Alimentari w dzielnicy, przy ladzie z wędlinami.",
+        q: "Przetłumacz: „Dziś nie piję piwa.”",
+        why: "<i>Heute trinke ich kein Bier</i>: przy <i>heute</i> na pierwszym miejscu podmiot przesuwa się za czasownik."
+      },
+      {
+        q: "Uzupełnij odpowiedź.",
+        tr: "Nie pijesz piwa? Ależ tak, chętnie piję.",
+        why: "<b>Doch</b> zaprzecza pytaniu przeczącemu. <i>Ja</i> bywałoby niejednoznaczne."
+      },
+      {
+        q: "Przyjaciel widzi cię bez twojego zwykłego kufla.",
+        setting: "Po pracy, w Kneipe.",
         lines: [
-          { tr: "Dzień dobry! Słucham." },
-          { tr: "Poproś o 200 g szynki.", answerTr: "Dwadzieścia deko szynki poproszę." },
-          { tr: "Proszę. Coś jeszcze?" },
-          { tr: "Poproś jeszcze o chleb.", answerTr: "Jeszcze chleba, dziękuję." }
+          { tr: "Nie pijesz piwa?" },
+          { tr: "Odpowiedz, że pijesz, ale nie dziś.", answerTr: "Ależ tak, piję, ale dziś nie." },
+          { tr: "To może sok?" },
+          { tr: "Zgódź się i zamów sok jabłkowy.", answerTr: "Chętnie. Poproszę sok jabłkowy." }
         ]
       },
-      { q: "Uzupełnij listę zakupów.", tr: "Kupuję chleb, wodę i pomidory." },
-      { tr: "Poproszę kilogram pomidorów i trochę bazylii." },
-      { tr: "Dwadzieścia deko sera poproszę. To wszystko." }
+      {
+        tr: "Jestem głodny, ale dziś nie jem ryby.",
+        why: "<i>Fisch</i>: dźwięk <b>sch</b> czyta się jak polskie „sz”. W <i>Hunger</i> początkowe <b>h</b> to lekkie westchnienie, a nie polskie <i>ch</i>."
+      },
+      {
+        tr: "Nie, dziękuję. Dziś nie piję alkoholu.",
+        why: "<i>Heute</i>: grupa <b>eu</b> czyta się „oj”. Początkowe <b>h</b> to lekkie westchnienie, nie polskie <i>ch</i>."
+      }
     ]
   },
   "lesson:a1-u03-test": {
     theme: "Sprawdzian",
-    title: "Sprawdzian jednostki 3",
-    objectives: ["sprawdzić piacere, koniugacje -ere i -ire, rodzajnik cząstkowy"],
-    theory: [{ p: "Dziesięć zadań. Zaliczenie od 70%." }],
-    exercises: [
-      { q: "„Mi ___ gli spaghetti.” (Lubię spaghetti.)" },
-      { q: "„Non mi ___ il pesce crudo.”" },
+    title: "Sprawdzian z jednostki 3",
+    objectives: ["sprawdzić zmianę samogłoski, biernik, kein i nicht"],
+    theory: [
       {
-        q: "„Marco lubi wino” to:",
-        opts: ["Marco piace il vino", "A Marco piace il vino", "Marco piacciono il vino"]
+        p: "Dziesięć pytań z całej jednostki. Zalicza się je przy 70%. Nie zaglądaj do lekcji w trakcie odpowiadania: jeśli czegoś nie pamiętasz, lepiej wrócić i powtórzyć."
+      }
+    ],
+    exercises: [
+      {
+        q: "Uzupełnij: „Du ___ gern Fisch.” (Chętnie jesz rybę.)",
+        hint: "essen, 2. osoba liczby pojedynczej",
+        why: "<b>Du isst</b>: samogłoska się zmienia, a końcówka się skraca."
       },
-      {  },
-      {  },
-      { q: "„___ due posti liberi.” (Są dwa wolne miejsca.)" },
-      { q: "Rodzajnik cząstkowy:", items: [, , , ] },
-      { q: "„Wolę białe wino.”" },
-      { tr: "Są oliwki i ser." },
-      { tr: "Bardzo lubię włoskie aperitivo." }
+      {
+        tr: "Czasownik sprechen: du, er, ihr.",
+        why: "<i>du sprichst, er spricht, ihr sprecht</i>: samogłoska zmienia się tylko przy <i>du</i> i <i>er</i>."
+      },
+      {
+        tr: "Czasownik nehmen: ich, du, wir.",
+        why: "<i>ich nehme, du nimmst, wir nehmen</i>: zmienia się tylko forma <i>du</i>."
+      },
+      {
+        q: "Uzupełnij: „Ich möchte ___ Apfelsaft.” (Chciałbym sok jabłkowy.)",
+        hint: "der Apfelsaft jest rodzaju męskiego",
+        why: "<b>Einen</b>: biernik rodzaju męskiego."
+      },
+      {
+        q: "Uzupełnij: „Der Saft ist ___ kalt.” (Sok nie jest zimny.)",
+        hint: "negacja przymiotnika",
+        why: "Przymiotnik neguje się za pomocą <b>nicht</b>."
+      },
+      {
+        q: "Wybierz właściwy rodzajnik nieokreślony. „Ich nehme ___ ...”",
+        items: ["kawa", "cola", "chleb", "sok"]
+      },
+      {
+        q: "Jak powiesz „Nie jem mięsa”?",
+        opts: ["Ich esse kein Fleisch.", "Ich esse keinen Fleisch.", "Ich esse keine Fleisch."],
+        why: "<i>Fleisch</i> jest nijakie, więc <b>kein</b>."
+      },
+      {
+        q: "Przetłumacz: „Dziś nie piję piwa, wezmę sok.”",
+        why: "<i>Kein Bier</i> (rzeczownik), <i>einen Saft</i> (biernik rodzaju męskiego)."
+      },
+      {
+        tr: "Ty chętnie jesz rybę, ale ja nie jem ryby.",
+        why: "<i>Du isst</i> ze zmianą samogłoski; <i>keinen Fisch</i>, bo <i>Fisch</i> jest rodzaju męskiego."
+      },
+      {
+        tr: "Poproszę sok, ale nie piwo.",
+        why: "<i>Einen Saft</i> i <i>kein Bier</i>: rodzaj męski się zmienia, nijaki nie."
+      }
     ]
   }
 });
