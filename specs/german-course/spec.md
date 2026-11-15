@@ -35,7 +35,7 @@ Un requisito per riga. "Originale" = `upstream` (`../versione-statica`) al commi
 - R15 - Ogni sostantivo nel vocabolario ha genere (articolo nel campo `it`) e plurale nel campo neutro `plural` (o `"-"` per singularia tantum) [subordinato alla decisione DA-3 del piano].
 - R16 - Lo strato neutro ammette ä ö ü ß é e rifiuta à è ì ò ù e le lettere specifiche delle altre lingue di spiegazione (ą ę ł ż ź ć ń ś ñ ç …); nessun valore neutro contiene stopword italiane note.
 - R17 - `parity.mjs` usa `it` come riferimento e `validate.mjs` senza argomento valida `it`.
-- R18 - Il corso ha 37 unità e 170 lezioni con la stessa distribuzione per livello e per unità dell'originale; per lezione il numero di esercizi sta entro ±15% dell'originale e i 13 tipi di esercizio presenti nell'originale sono presenti.
+- R18 - Il corso ha 37 unità e 170 lezioni con la stessa distribuzione per livello e per unità dell'originale; per lezione il numero di esercizi sta entro ±15% dell'originale e ogni tipo di esercizio presente in un'unità dell'originale è presente nell'unità tedesca corrispondente (12 tipi nelle lezioni: `truefalse` vive solo nelle letture e `minpair` è generato a runtime da `phonetics.js`).
 - R19 - La progressione grammaticale segue Profile Deutsch ed è fissata in `specs/german-course/curriculum.md`; ogni tag di lezione esiste in `GRAMMAR_REF`.
 - R20 - I blocchi `{contrast}` e `{trap}` sono scritti per ciascuna lingua di spiegazione sul contrasto di quella lingua col tedesco, non tradotti dall'italiano.
 - R21 - Ogni lotto di contenuto generato ha un verdetto `pass` del secondo modello registrato in `specs/german-course/reviews/`; le unità B2-C2 hanno in più un esito umano su campione.
