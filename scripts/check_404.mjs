@@ -3,7 +3,7 @@
    Usage:  node scripts/check_404.mjs
 
    GitHub Pages answers EVERY unknown address with 404.html, keeping the
-   address the visitor asked for. A link to /impara-italiano/a/b/c/nothing
+   address the visitor asked for. A link to /impara-tedesco/a/b/c/nothing
    gets these bytes while the browser still believes it is standing in
    /a/b/c/, so `href="assets/css/app.css"` resolves against a directory that
    was never there. The page then arrives unstyled, or with a dead button,
@@ -48,7 +48,7 @@ if (!homepage) {
   process.exit(1);
 }
 
-/* Just the path: "https://andreabonn.github.io/impara-italiano/" -> "/impara-italiano/".
+/* Just the path: "https://andreabonn.github.io/impara-tedesco/" -> "/impara-tedesco/".
    A user page published at the domain root gives "/", which is also correct. */
 const PREFIKS = new URL(homepage).pathname;
 
