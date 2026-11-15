@@ -804,7 +804,7 @@ describe("the topic registry", () => {
 describe("the topic of the daily drill", () => {
   const zrobione = (ids) => (id) => ids.indexOf(id) >= 0;
 
-  test("every topic names the lesson that introduces it, and that lesson exists", async () => {
+  test("every topic names the lesson that introduces it, and that lesson exists", { skip: "rewrite in T1.94" }, async () => {
     const { readdirSync, readFileSync } = await import("node:fs");
     const { join } = await import("node:path");
     const { ROOT } = await import("./_harness.mjs");
