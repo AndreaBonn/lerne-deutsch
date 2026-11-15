@@ -409,7 +409,7 @@ LINGUAI.addUI("es", {
   "train.start": "Practicar",
   "train.endless": "Cada tanda saca ejercicios nuevos. Lo que falles va a la pestaña Fallos, dentro de Repaso.",
   "train.topic.prep-art": "Preposición con artículo",
-  "train.topic.accordo": "Concordancia del adjetivo",
+  "train.topic.artikel": "Artículo y caso",
   "train.topic.ausiliare": "Sein o haben",
   "train.topic.pronomi": "Pronombres de complemento",
   "train.topic.numeri": "Números",
@@ -422,8 +422,7 @@ LINGUAI.addUI("es", {
   "train.backHub": "Elegir otro",
 
   /* Drill values use German; translate only the surrounding instructions. */
-  "drill.prepArt.q": "Contrae: <b>{prep}</b> + el artículo de <b>{noun}</b>",
-  "drill.accordo.q": "Concuerda el adjetivo: <b>{group}</b> + <b>{adj}</b>",
+  "drill.prepArt.q": "Completa con preposición y artículo: <b>{prep}</b> + <b>{noun}</b>",
   "drill.pron.q": "Sustituye el complemento por un pronombre: <b>{sentence}</b>",
   "drill.aux.q": "¿Qué auxiliar lleva <b>{verb}</b> en el Perfekt?",
   "drill.aux.both": "<b>{verb}</b> lleva los dos: marca ambos.",

@@ -409,7 +409,7 @@ LINGUAI.addUI("fr", {
   "train.start": "Travailler",
   "train.endless": "Chaque série tire de nouveaux exercices. Ce que tu rates part dans l'onglet Erreurs, sous Révisions.",
   "train.topic.prep-art": "Préposition avec article",
-  "train.topic.accordo": "Accord de l'adjectif",
+  "train.topic.artikel": "Article et cas",
   "train.topic.ausiliare": "Sein ou haben",
   "train.topic.pronomi": "Pronoms compléments",
   "train.topic.numeri": "Nombres",
@@ -422,8 +422,7 @@ LINGUAI.addUI("fr", {
   "train.backHub": "En choisir un autre",
 
   /* Drill values use German; translate only the surrounding instructions. */
-  "drill.prepArt.q": "Contracte : <b>{prep}</b> + l'article de <b>{noun}</b>",
-  "drill.accordo.q": "Accorde l'adjectif : <b>{group}</b> + <b>{adj}</b>",
+  "drill.prepArt.q": "Complète avec la préposition et l’article : <b>{prep}</b> + <b>{noun}</b>",
   "drill.pron.q": "Remplace le complément par un pronom : <b>{sentence}</b>",
   "drill.aux.q": "Quel auxiliaire prend <b>{verb}</b> au Perfekt ?",
   "drill.aux.both": "<b>{verb}</b> prend les deux : coche les deux.",

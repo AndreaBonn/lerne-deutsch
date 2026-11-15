@@ -5,7 +5,7 @@
    yields the same task, so a mistake card can point at a specific task
    with the pair (generator, seed), without storing any content.
 
-   Why at all: a student who confuses "del" with "dello" needs two hundred
+   Why at all: a student who confuses "dem" with "den" needs two hundred
    repetitions, not four. The course has four, because each has to be
    written and translated into five languages. Here the content comes from
    the lexicon and the rules, so it costs neither a string nor a recording.
@@ -16,12 +16,13 @@
    principle. Hence the ban on `say` fields and on the listen and speak
    types.
 
-   Classic script. Requires drills-lex.js and i18n.js.
+   Classic script. Requires drills-lex.js, drills-de.js and i18n.js.
    ============================================================ */
 (function (global) {
   "use strict";
 
   var Drills = {};
+  var LexDe = global.LexDe;   // drills-de.js: not an eslint global, read off window
   var t = function (k, v) { return I18n.t(k, v); };
 
   /* ---------------- Repeatable randomness ---------------- */
@@ -49,53 +50,90 @@
   /* ---------------- Generators ---------------- */
 
   /**
-   * A contracted preposition. The sentence is a skeleton, not content: what
-   * counts is the choice of form, so the rest of the sentence stays fixed
-   * and does not distract.
+   * Preposition + article + noun. The sentence is a skeleton, not content:
+   * what counts is the case the preposition governs and whether it contracts
+   * with the article (zu dem -> zum), so the rest stays fixed. The prompt
+   * gives the preposition and the noun with its nominative article ("der
+   * Bahnhof"); the Wechselpräpositionen also say wo? (dative) or wohin?
+   * (accusative). The answer is the whole phrase: a dative plural needs the
+   * -n on the noun, so the bare article is accepted only where the noun does
+   * not change. Dative contractions are required; accusative ones are optional.
    */
   function prepArt(rnd) {
-    var noun = pick(rnd, Lex.NOUNS);
+    var group = pick(rnd, ["akk", "dat", "wechsel"]);
+    var prep = pick(rnd, LexDe.PREPS[group]);
+    var noun = pick(rnd, LexDe.NOUNS);
     var plural = rnd() < 0.35;
-    var word = plural ? Lex.pluralOf(noun) : noun.s;
-    var art = Lex.definite(word, noun.g, plural);
-    var prep = pick(rnd, Lex.PREPS);
-    var odp = Lex.articulate(prep, art);
-    return {
+    var hint, kase = group;
+    if (group === "wechsel") {
+      var motion = rnd() < 0.5;
+      hint = motion ? "wohin?" : "wo?";
+      kase = motion ? "akk" : "dat";
+    }
+    var art = LexDe.article(kase, noun.g, plural, false);
+    var head = LexDe.contract(prep, art) || prep + " " + art;
+    var full = LexDe.prepPhrase(prep, kase, noun, plural);
+    var changed = LexDe.nounForm(noun, kase, plural) !== (plural ? noun.pl : noun.s);
+    var ex = {
       t: "fill",
-      q: t("drill.prepArt.q", { prep: prep, noun: word }),
-      hint: prep + " + " + art,
-      a: [odp, odp + " " + word]
+      q: t("drill.prepArt.q", { prep: prep, noun: LexDe.article("nom", noun.g, plural, false) + " " + (plural ? noun.pl : noun.s) }),
+      a: changed ? [full] : [full, head],
+      tag: { akk: "g-praep-akk", dat: "g-praep-dativ", wechsel: "g-wechselpraep" }[group]
     };
+    if (kase === "akk" && LexDe.contract(prep, art)) {
+      ex.a.push(prep + " " + art + " " + LexDe.nounForm(noun, kase, plural));
+      if (!changed) ex.a.push(prep + " " + art);
+    }
+    if (hint) ex.hint = hint;
+    return ex;
   }
 
-  /** Agreement of the adjective with the noun. */
-  function accordo(rnd) {
-    var noun = pick(rnd, Lex.NOUNS);
-    var adj = pick(rnd, Lex.ADJ);
-    var plural = rnd() < 0.5;
-    var word = plural ? Lex.pluralOf(noun) : noun.s;
-    var art = Lex.definite(word, noun.g, plural);
+  /* The verbs that govern the accusative, and the dative ones (persons only:
+     "Ich helfe ___ (das Fenster)" would be a strange sentence). */
+  var ARTICLE_FRAMES = {
+    akk: ["sehe", "suche", "brauche"],
+    dat: ["helfe", "danke", "antworte"]
+  };
+
+  /**
+   * The article by case. "Ich sehe ___ (der Hund)" -> "den Hund": the cue is
+   * the nominative, the verb fixes the case, the answer is the group with its
+   * article (definite or ein-) and, in the dative plural, the noun with -n.
+   * The nominative is left out: its cue would be its own answer. The sentence
+   * is German in full, so there is nothing to translate.
+   */
+  function artikel(rnd) {
+    var kase = pick(rnd, ["akk", "dat"]);
+    var noun = pick(rnd, kase === "dat" ? LexDe.NOUNS.filter(function (n) { return n.person; }) : LexDe.NOUNS);
+    var plural = rnd() < 0.35;
+    var indefinite = !plural && rnd() < 0.5;
+    var shown = LexDe.article("nom", noun.g, plural, indefinite) + " " + (plural ? noun.pl : noun.s);
+    var art = LexDe.article(kase, noun.g, plural, indefinite);
+    var form = LexDe.nounForm(noun, kase, plural);
+    var changed = form !== (plural ? noun.pl : noun.s);
     return {
       t: "fill",
-      q: t("drill.accordo.q", { group: art + " " + word, adj: adj.s }),
-      a: [Lex.adjForm(adj, noun.g, plural)]
+      q: "Ich " + pick(rnd, ARTICLE_FRAMES[kase]) + " ___ (" + shown + ")",
+      a: changed ? [art + " " + form] : [art + " " + form, art],
+      tag: kase === "akk" ? "g-artikel-akk" : "g-artikel-dat"
     };
   }
 
   /**
-   * Choosing the auxiliary. Verbs marked "both" accept both answers:
-   * "è cambiato" and "ha cambiato" are both correct and mean different
-   * things. An exercise that accepts only one teaches something false.
+   * Choosing the auxiliary of the Perfekt. Verbs marked "both" accept both
+   * answers: "ist gefahren" and "hat gefahren" are both correct and mean
+   * different things. An exercise that accepts only one teaches something
+   * false.
    */
   function ausiliare(rnd) {
-    var verb = pick(rnd, Lex.VERBS);
-    var opcje = ["ho", "sono"];
-    var a = verb.aux === "avere" ? 0 : verb.aux === "essere" ? 1 : null;
+    var verb = pick(rnd, LexDe.VERBS);
+    var opts = ["haben", "sein"];
+    var a = verb.aux === "haben" ? 0 : verb.aux === "sein" ? 1 : null;
     if (a === null) {
       return {
         t: "multi",
         q: t("drill.aux.both", { verb: verb.inf }),
-        opts: opcje,
+        opts: opts,
         a: [0, 1],
         why: t("drill.aux.whyBoth", { verb: verb.inf })
       };
@@ -103,7 +141,7 @@
     return {
       t: "mcq",
       q: t("drill.aux.q", { verb: verb.inf }),
-      opts: opcje,
+      opts: opts,
       a: a,
       shuffle: false,
       why: t(verb.refl ? "drill.aux.whyRefl" : a === 1 ? "drill.aux.whyEssere" : "drill.aux.whyAvere")
@@ -138,7 +176,12 @@
     } else {
       sentence = "Lukas " + pick(rnd, CASE_VERBS[kase]) + " ___ (" + who.cue + ")";
     }
-    return { t: "fill", q: t("drill.pron.q", { sentence: sentence }), a: [who[kase]] };
+    return {
+      t: "fill",
+      q: t("drill.pron.q", { sentence: sentence }),
+      a: [who[kase]],
+      tag: { nom: "g-personalpron", akk: "g-pron-akk", dat: "g-pron-dat" }[kase]
+    };
   }
 
   /* ---------------- Numbers, dates, times ---------------- */
@@ -184,26 +227,35 @@
   /* ---------------- The registry ---------------- */
 
   /**
-   * The tags point at existing GRAMMAR_REF entries, so that the mistake
-   * notebook names the topic in words already translated into five
-   * languages. Numbers go under `g-frase`, dates and times under
-   * `g-articolo-det`: both are about choosing the article ("il primo"
-   * against "l'otto", "le due" against "l'una"), so it is not a stretch.
+   * `tags` are ids of the German GRAMMAR_REF (specs/german-course/curriculum.md),
+   * so that the mistake notebook names the topic in words already translated
+   * into five languages. The first one is the primary tag, shown under the
+   * topic; a generator that mixes grammar points tags each task with the one
+   * it asked about (`ex.tag`, moved to the item by make), so a mistake lands
+   * under the right point. Numbers, dates and times go under `g-temporalangaben`:
+   * the curriculum has no id of their own, and that is the closest one.
    */
-  /* `from` is the lesson that teaches what the generator asks for. The tag
-     cannot say it: "numeri" carries g-frase, which the very first lesson
-     already has, while numbers arrive in unit 2. Dates need the numbers and
-     the article, nothing later. `sample` is Italian, so it needs no
+  /* `from` is the lesson that teaches what the generator asks for, the latest
+     one when the topic mixes several: the drill must not ask what the student
+     has not met. The tag cannot say it. `sample` is German, so it needs no
      translation: it shows on the Training list what the drill asks for. */
   var TOPICS = [
-    { id: "prep-art", tag: "g-preposizioni", from: "a1-u06-l1", sample: "di + il = del · in + la = nella", make: prepArt },
-    { id: "accordo", tag: "g-agg-accordo", from: "a1-u04-l1", sample: "rosso, rossa, rossi, rosse", make: accordo },
-    { id: "ausiliare", tag: "g-passato-prossimo", from: "a1-u10-l2", sample: "sono andato · ho mangiato", make: ausiliare },
-    { id: "pronomi", tag: "g-pron-diretti", from: "a2-u03-l1", sample: "lo vedo · la chiamo · li compro", make: pronomi },
-    { id: "numeri", tag: "g-frase", from: "a1-u02-l2", sample: "ventuno · trentotto · cento", make: numeri },
-    { id: "date", tag: "g-articolo-det", from: "a1-u02-l2", sample: "il tre maggio · il primo giugno", make: date },
-    { id: "ore", tag: "g-articolo-det", from: "a1-u05-l2", sample: "sono le tre · è l'una", make: ore }
+    { id: "prep-art", tags: ["g-praep-dativ", "g-praep-akk", "g-wechselpraep"], from: "a1-u09-l4",
+      sample: "zu + dem = zum · in + das = ins", make: prepArt },
+    { id: "artikel", tags: ["g-artikel-akk", "g-artikel-dat"], from: "a1-u06-l1",
+      sample: "den Hund · dem Kind · den Kindern", make: artikel },
+    { id: "ausiliare", tags: ["g-perfekt"], from: "a1-u10-l2",
+      sample: "ich bin gegangen · ich habe gegessen", make: ausiliare },
+    { id: "pronomi", tags: ["g-personalpron", "g-pron-akk", "g-pron-dat"], from: "a2-u03-l1",
+      sample: "ich sehe ihn · ich helfe ihr", make: pronomi },
+    { id: "numeri", tags: ["g-temporalangaben"], from: "a1-u02-l2",
+      sample: "einundzwanzig · achtunddreißig · hundert", make: numeri },
+    { id: "date", tags: ["g-temporalangaben"], from: "a1-u02-l2",
+      sample: "am dritten Mai · der erste Juni", make: date },
+    { id: "ore", tags: ["g-temporalangaben"], from: "a1-u05-l2",
+      sample: "halb drei · Viertel vor vier", make: ore }
   ];
+  TOPICS.forEach(function (x) { x.tag = x.tags[0]; });
 
   var byId = {};
   TOPICS.forEach(function (x) { byId[x.id] = x; });
@@ -220,7 +272,9 @@
     var ex = topic.make(rng(topicId + "|" + seed));
     FORBIDDEN.forEach(function (f) { delete ex[f]; });
     if (FORBIDDEN_TYPES.indexOf(ex.t) >= 0) return null;
-    return { ex: ex, topicId: topicId, tag: topic.tag, seed: String(seed) };
+    var tag = ex.tag || topic.tag;
+    delete ex.tag;
+    return { ex: ex, topicId: topicId, tag: tag, seed: String(seed) };
   }
 
   /** A run of n tasks on one topic. */
@@ -244,7 +298,7 @@
    * @returns {{topic: Object, why: string}} why = "weak" | "studied" | "preview"
    */
   function pickTopic(o) {
-    var weak = TOPICS.filter(function (x) { return x.tag === o.weakTag; })[0];
+    var weak = TOPICS.filter(function (x) { return x.tags.indexOf(o.weakTag) >= 0; })[0];
     if (weak) return { topic: weak, why: "weak" };
     var studied = TOPICS.filter(function (x) { return o.isDone(x.from); });
     if (studied.length) return { topic: studied[o.day % studied.length], why: "studied" };

@@ -231,7 +231,8 @@ describe("resolving a generated task", () => {
        word. Were the generator to stop being a pure function of the seed, the
        review would show a different task from the one that went wrong. */
     const box = loadEngine({
-      files: [...CORE, "assets/js/errors-key.js", "assets/js/drills-lex.js", "assets/js/drills.js"]
+      files: [...CORE, "assets/js/verbs-data.js", "assets/js/errors-key.js", "assets/js/drills-lex.js",
+        "assets/js/drills-de.js", "assets/js/drills.js"]
     });
     box.Core.load();
     const temat = box.sandbox.Drills.TOPICS[0].id;

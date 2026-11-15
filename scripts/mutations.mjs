@@ -70,6 +70,9 @@ const T_RULES = "tests/unit/llm-rules.test.mjs";
 const T_PROV = "tests/unit/llm-providers.test.mjs";
 const PROMPTS = "assets/js/llm-prompts.js";
 const T_PROMPTS = "tests/unit/llm-prompts.test.mjs";
+const VERBS_JS = "assets/js/verbs.js";
+const T_VERBS = "tests/unit/verbs.test.mjs";
+const T_VERBS_PREFIX = "tests/unit/verbs-prefix.test.mjs";
 const RET = "assets/js/retention-rules.js";
 const T_RET = "tests/unit/retention-rules.test.mjs";
 const ICS = "assets/js/ics.js";
@@ -89,6 +92,10 @@ const RUN = "assets/js/flash-run.js";
 const SRS = "assets/js/srs.js";
 const T_SRS = "tests/unit/srs.test.mjs";
 const T_RUN = "tests/unit/flash-run.test.mjs";
+const DLEX = "assets/js/drills-lex.js";
+const DRILLS = "assets/js/drills.js";
+const DDE = "assets/js/drills-de.js";
+const T_DRILLS = "tests/unit/drills.test.mjs";
 
 /**
  * The mutations. `z` must occur in the file EXACTLY ONCE — with two
@@ -250,6 +257,15 @@ const MUTACJE = [
     na: "" },
 
   /* ---- llm-prompts.js: what the model is actually told ---- */
+  { plik: PROMPTS, test: T_PROMPTS, opis: "judge: the taught language is still Italian",
+    z: "grammatically correct German", na: "grammatically correct Italian" },
+  { plik: PROMPTS, test: T_PROMPTS, opis: "judge: Italian explanations fall back to English",
+    z: "fr: \"French\", it: \"Italian\"", na: "fr: \"French\", de: \"German\"" },
+  { plik: PROMPTS, test: T_PROMPTS, opis: "exam: the preview is presented as official",
+    z: "German exam in the style of Goethe B1 (an unofficial preview)",
+    na: "official Goethe B1 German exam" },
+  { plik: PROMPTS, test: T_PROMPTS, opis: "chat: the partner switches back to Italian",
+    z: "- stay in German even if", na: "- stay in Italian even if" },
   { plik: PROMPTS, test: T_PROMPTS, opis: "judge: a comment longer than the one kept",
     z: "  var MAX_COMMENT_CHARS = 160;", na: "  var MAX_COMMENT_CHARS = 400;" },
   { plik: PROMPTS, test: T_PROMPTS,
@@ -401,7 +417,100 @@ const MUTACJE = [
   { plik: SRS, test: T_SRS, opis: "journal: the default mode written as well",
     z: 'if (mode && mode !== "write") wpis.m = mode;', na: "if (mode) wpis.m = mode;" },
   { plik: SRS, test: T_SRS, opis: "journal: the mode dropped",
-    z: 'if (mode && mode !== "write") wpis.m = mode;', na: "" }
+    z: 'if (mode && mode !== "write") wpis.m = mode;', na: "" },
+
+  /* ---- drills-lex.js / drills.js: German numbers, clock, dates, pronouns ---- */
+  { plik: DLEX, test: T_DRILLS, opis: "numbers: eins kept before und (einsundzwanzig)",
+    z: 'return u ? (u === 1 ? "ein" : ZAHL[u]) + "und" + tens : tens;', na: 'return u ? ZAHL[u] + "und" + tens : tens;' },
+  { plik: DLEX, test: T_DRILLS, opis: "numbers: tens before units (zwanzigundein)",
+    z: 'return u ? (u === 1 ? "ein" : ZAHL[u]) + "und" + tens : tens;', na: 'return u ? tens + "und" + (u === 1 ? "ein" : ZAHL[u]) : tens;' },
+  { plik: DLEX, test: T_DRILLS, opis: "numbers: eins kept before tausend",
+    z: '.replace(/eins$/, "ein")', na: '.replace(/xyz$/, "ein")' },
+  { plik: DLEX, test: T_DRILLS, opis: "numbers: einhundert not accepted",
+    z: '(c === 1 ? (o.einH ? "ein" : "") : ZAHL[c])', na: '(c === 1 ? "" : ZAHL[c])' },
+  { plik: DLEX, test: T_DRILLS, opis: "numbers: year-style hundreds not accepted",
+    z: "if (n >= 1100 && n <= 1999) {", na: "if (false) {" },
+  { plik: DLEX, test: T_DRILLS, opis: "clock: the ss spelling of dreißig not accepted",
+    z: '"es ist " + f; }));\n    out.slice().forEach(function (w) { addUnique(out, w.replace(/ß/g, "ss")); });',
+    na: '"es ist " + f; }));' },
+  { plik: DLEX, test: T_DRILLS, opis: "clock: halb names the current hour",
+    z: '30: ["halb " + nx],', na: '30: ["halb " + a],' },
+  { plik: DLEX, test: T_DRILLS, opis: "clock: eins Uhr instead of ein Uhr",
+    z: 'function hourUhr(h) { return h === 1 ? "ein" : below100(h); }', na: "function hourUhr(h) { return below100(h); }" },
+  { plik: DLEX, test: T_DRILLS, opis: "clock: the hour after twelve does not wrap to eins",
+    z: "nx = hourBare(h12 % 12 + 1)", na: "nx = hourBare(h12 + 1)" },
+  { plik: DLEX, test: T_DRILLS, opis: "clock: dreiviertel not accepted",
+    z: ', "dreiviertel " + nx]', na: "]" },
+  { plik: DLEX, test: T_DRILLS, opis: "clock: no 12-hour reading of an afternoon time",
+    z: "(h24 === 0 ? [h24] : [h24, h12]).forEach(function (h) {", na: "[h24].forEach(function (h) {" },
+  { plik: DLEX, test: T_DRILLS, opis: "clock: 0:xx also read as zwölf Uhr (noon)",
+    z: "(h24 === 0 ? [h24] : [h24, h12]).forEach(function (h) {", na: "[h24, h12].forEach(function (h) {" },
+  { plik: DLEX, test: T_DRILLS, opis: "clock: no bare eins for one o'clock",
+    z: ' : h12 === 1 ? ["eins"] : [],', na: " : [],"},
+  { plik: DRILLS, test: T_DRILLS, opis: "pronouns: cue equal to the answer allowed",
+    z: "return cue && cue.toLowerCase() !== p[kase].toLowerCase();", na: "return !!cue;" },
+  { plik: DLEX, test: T_DRILLS, opis: "clock: no es ist variants",
+    z: 'bare.concat(bare.map(function (f) { return "es ist " + f; }))', na: "bare" },
+  { plik: DLEX, test: T_DRILLS, opis: "dates: -st ending from the 20th replaced by -t",
+    z: 'below100(n) + "st"', na: 'below100(n) + "t"' },
+  { plik: DLEX, test: T_DRILLS, opis: "dates: the 8th loses its irregular stem",
+    z: ', 8: ["acht"] };', na: " };" },
+  { plik: DLEX, test: T_DRILLS, opis: "dates: no accusative form (den dritten)",
+    z: '[["am ", "en"], ["der ", "e"], ["den ", "en"]]', na: '[["am ", "en"], ["der ", "e"]]' },
+  { plik: DLEX, test: T_DRILLS, opis: "pronouns: ihnen replaced by sie in the dative",
+    z: 'dat: "ihnen"', na: 'dat: "sie"' },
+  { plik: DRILLS, test: T_DRILLS, opis: "pronouns: plural subject takes the singular verb",
+    z: "[who.plural ? 1 : 0]", na: "[0]" },
+  { plik: DRILLS, test: T_DRILLS, opis: "dates: every month has 31 days",
+    z: "Math.floor(rnd() * Lex.MONTH_DAYS[month])", na: "Math.floor(rnd() * 31)" },
+  { plik: DRILLS, test: T_DRILLS, opis: "numbers: one million never asked",
+    z: ", [1000000, 1000000]];", na: "];" },
+  { plik: DDE, test: T_DRILLS, opis: "articles: masculine accusative den replaced by der",
+    z: "akk: [\"den\", \"die\", \"das\", \"die\"],", na: "akk: [\"der\", \"die\", \"das\", \"die\"]," },
+  { plik: DDE, test: T_DRILLS, opis: "articles: dative plural den replaced by die",
+    z: "dat: [\"dem\", \"der\", \"dem\", \"den\"],", na: "dat: [\"dem\", \"der\", \"dem\", \"die\"]," },
+  { plik: DDE, test: T_DRILLS, opis: "articles: ein given a plural",
+    z: "if (indefinite) return plural ? null : INDEFINITE[kase][COLUMN[gender]];", na: "if (indefinite) return INDEFINITE[kase][COLUMN[gender]];" },
+  { plik: DDE, test: T_DRILLS, opis: "nouns: dative plural without -n",
+    z: "if (kase === \"dat\" && !/[ns]$/.test(noun.pl)) return noun.pl + \"n\";", na: "if (false) return noun.pl + \"n\";" },
+  { plik: DDE, test: T_DRILLS, opis: "nouns: -n added after s as well",
+    z: "!/[ns]$/.test(noun.pl)", na: "!/[n]$/.test(noun.pl)" },
+  { plik: DDE, test: T_DRILLS, opis: "contractions: zur dropped",
+    z: "\"zu der\": \"zur\", ", na: "\"zu der\": \"zu der\", " },
+  { plik: DDE, test: T_DRILLS, opis: "contractions: ins dropped",
+    z: "\"in das\": \"ins\", ", na: "\"in das\": \"in das\", " },
+  { plik: DDE, test: T_DRILLS, opis: "contractions: preposition lookup ignores the article",
+    z: "return CONTRACTIONS[prep + \" \" + art] || null;", na: "return CONTRACTIONS[prep + \" dem\"] || null;" },
+  { plik: DDE, test: T_DRILLS, opis: "prepositions: wechsel list loses zwischen",
+    z: ", \"neben\", \"zwischen\"]", na: ", \"neben\"]" },
+  { plik: DDE, test: T_DRILLS, opis: "aux: sein verbs not read from SEIN_VERBS",
+    z: "global.VERB_TABLES.SEIN_VERBS.forEach(function (inf) {\n    if (SEIN_CORE.indexOf(inf) >= 0)", na: "SEIN_CORE.forEach(function (inf) {\n    if (inf)" },
+  { plik: DDE, test: T_DRILLS, opis: "aux: reflexives take sein",
+    z: "{ inf: inf, aux: \"haben\", refl: true }", na: "{ inf: inf, aux: \"sein\", refl: true }" },
+  { plik: DRILLS, test: T_DRILLS, opis: "prepositions: wechsel always answered as dative",
+    z: "kase = motion ? \"akk\" : \"dat\";", na: "kase = \"dat\";" },
+  { plik: DRILLS, test: T_DRILLS, opis: "prepositions: the bare answer accepted with a changed noun",
+    z: "a: changed ? [full] : [full, head],", na: "a: [full, head]," },
+  { plik: DRILLS, test: T_DRILLS, opis: "articles: nominative cue in the dative frame list",
+    z: "dat: [\"helfe\", \"danke\", \"antworte\"]", na: "dat: [\"helfe\", \"danke\", \"antworte\", \"sehe\"]" },
+  { plik: DRILLS, test: T_DRILLS, opis: "articles: ein allowed before a plural",
+    z: "var indefinite = !plural && rnd() < 0.5;", na: "var indefinite = rnd() < 0.5;" },
+  { plik: DRILLS, test: T_DRILLS, opis: "articles: dative frames take every noun",
+    z: "kase === \"dat\" ? LexDe.NOUNS.filter(function (n) { return n.person; }) : LexDe.NOUNS", na: "LexDe.NOUNS" },
+  { plik: DRILLS, test: T_DRILLS, opis: "tags: per-task tag ignored",
+    z: "var tag = ex.tag || topic.tag;", na: "var tag = topic.tag;" },
+  { plik: DRILLS, test: T_DRILLS, opis: "tags: a weak secondary tag not matched",
+    z: "x.tags.indexOf(o.weakTag) >= 0", na: "x.tag === o.weakTag" },
+  { plik: DRILLS, test: T_DRILLS, opis: "aux: both-verbs asked as a single choice",
+    z: "if (a === null) {", na: "if (a === null && false) {" },
+  { plik: VERBS_JS, test: T_VERBS_PREFIX, opis: "verbs: um- verbs marked separable never split",
+    z: 'return kind === "sep" ? cut(inf, variable[0]) : null;', na: "return null;" },
+  { plik: VERBS_JS, test: T_VERBS_PREFIX, opis: "verbs: einigen no longer protected from the ein- split",
+    z: "abonnieren|einen|einigen|losen", na: "abonnieren|einen|losen" },
+  { plik: VERBS_JS, test: T_VERBS, opis: "verbs: reflexive verbs take sein like their plain verb",
+    z: 'return parsed.reflexive ? "haben" : auxiliary(parsed.full);', na: "return auxiliary(parsed.full);" },
+  { plik: VERBS_JS, test: T_VERBS, opis: "verbs: bereiten treated as be + reiten",
+    z: "if (UNRELATED_VERBS.test(inf)) return null;", na: "if (false) return null;" },
 ];
 
 /* ---------------- Running ---------------- */

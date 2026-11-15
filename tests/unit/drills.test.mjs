@@ -3,7 +3,7 @@
 
    They are pure functions of a seed, so they can be checked in full without
    a browser. Three things at once: whether the same seed yields the same
-   task, whether the answer key is correct Italian, and whether anything
+   task, whether the answer key is correct German, and whether anything
    leaked towards recordings, which a generated sentence does not have and
    never will.
    ============================================================ */
@@ -11,7 +11,8 @@ import { test, describe } from "node:test";
 import assert from "node:assert/strict";
 import { loadEngine } from "./_harness.mjs";
 
-const PLIKI = ["assets/js/drills-lex.js", "assets/js/drills.js"];
+/* verbs-data.js first: the auxiliary drill reads VERB_TABLES.SEIN_VERBS. */
+const PLIKI = ["assets/js/verbs-data.js", "assets/js/drills-lex.js", "assets/js/drills-de.js", "assets/js/drills.js"];
 
 function silnik() {
   const box = loadEngine({ files: PLIKI });
@@ -25,6 +26,17 @@ function param(ex, key) {
   const m = new RegExp(key + "=(.*?)(?:, ?[a-z]+=|\\)$)").exec(ex.q);
   assert.ok(m, `${key} missing from ${ex.q}`);
   return m[1];
+}
+
+/* The noun and its number, read back from what the student sees: the article
+   of the cue ("die Frau" / "die Frauen" / "die Zimmer") and the word. A
+   feminine singular is the only "die" that is not a plural. */
+function cueNoun(S, art, word) {
+  const bySing = new Map(S.LexDe.NOUNS.map((n) => [n.s, n]));
+  const byPl = new Map(S.LexDe.NOUNS.map((n) => [n.pl, n]));
+  const noun = bySing.get(word) || byPl.get(word);
+  assert.ok(noun, `${word} is not in the lexicon`);
+  return { noun, plural: art === "die" && !(noun.g === "f" && word === noun.s) };
 }
 
 describe("numerals (T1.42)", () => {
@@ -152,10 +164,10 @@ describe("repeatability", () => {
     const trafione = new Set();
     for (let i = 0; i < 400; i++) {
       const { ex } = S.Drills.make("ausiliare", "cov" + i);
-      S.Lex.VERBS.forEach(v => { if (ex.q.indexOf(v.inf) >= 0) trafione.add(v.inf); });
+      trafione.add(param(ex, "verb"));
     }
-    assert.equal(trafione.size, S.Lex.VERBS.length,
-      `covered ${trafione.size} of ${S.Lex.VERBS.length} verbs`);
+    assert.equal(trafione.size, S.LexDe.VERBS.length,
+      `covered ${trafione.size} of ${S.LexDe.VERBS.length} verbs`);
   });
 });
 
@@ -190,57 +202,328 @@ describe("nothing that leads to a recording", () => {
   });
 });
 
-describe("answer key: contracted prepositions", { skip: "rewrite in T1.47" }, () => {
-  test("the answer matches the lexicon table", () => {
-    const S = silnik();
-    for (let i = 0; i < 80; i++) {
-      const { ex } = S.Drills.make("prep-art", "p" + i);
-      /* the hint carries the parts ("di + la"), the answer must be their contraction */
-      const [prep, art] = ex.hint.split(" + ");
-      assert.equal(ex.a[0], S.Lex.articulate(prep, art), `${prep} + ${art}`);
-    }
-  });
-});
+describe("Perfekt auxiliary: haben or sein (T1.46)", () => {
+  /* The sein side is whatever verbs-data.js says; the haben side must not
+     overlap it. The expectations below are written out by hand so that a
+     wrong verb in the lexicon cannot agree with itself. */
+  const BOTH = ["fahren", "fliegen", "reiten", "schwimmen", "segeln"];
 
-describe("answer key: adjective agreement", { skip: "rewrite in T1.48" }, () => {
-  test("the form is one of the four possible ones and matches the number", () => {
+  function ziehen(anzahl, praefix) {
     const S = silnik();
-    for (let i = 0; i < 80; i++) {
-      const { ex } = S.Drills.make("accordo", "a" + i);
-      const odp = ex.a[0];
-      assert.ok(/^[a-zàèéìòù]+$/.test(odp), `odd form: ${odp}`);
-      assert.ok(odp.length > 2);
+    const out = [];
+    for (let i = 0; i < anzahl; i++) {
+      const { ex } = S.Drills.make("ausiliare", praefix + i);
+      out.push({ ex, verb: param(ex, "verb") });
     }
-  });
-});
+    return out;
+  }
 
-describe("answer key: auxiliaries", () => {
-  test("a verb with two auxiliaries accepts both answers", () => {
+  test("the options are haben and sein, in that order, never shuffled", () => {
+    const { ex } = silnik().Drills.make("ausiliare", "opts");
+    assert.equal(JSON.stringify(ex.opts), JSON.stringify(["haben", "sein"]));
+    assert.equal(ex.shuffle, false);
+  });
+
+  test("a verb of change of place gets sein, a plain action gets haben", () => {
+    const wissen = new Map();
+    ziehen(600, "x").forEach(({ ex, verb }) => wissen.set(verb, ex));
+    ["gehen", "kommen", "bleiben", "aufstehen", "sterben"].forEach((v) => {
+      assert.ok(wissen.has(v), `${v} never came up`);
+      assert.equal(wissen.get(v).t, "mcq", v);
+      assert.equal(wissen.get(v).a, 1, `${v} takes sein`);
+    });
+    ["essen", "machen", "lesen", "tanzen", "haben"].forEach((v) => {
+      assert.ok(wissen.has(v), `${v} never came up`);
+      assert.equal(wissen.get(v).a, 0, `${v} takes haben`);
+    });
+  });
+
+  test("sein verbs are exactly the ones VERB_TABLES.SEIN_VERBS lists, haben verbs are none of them", () => {
     const S = silnik();
-    const dwa = S.Lex.VERBS.filter(v => v.aux === "both").map(v => v.inf);
-    let znalezione = 0;
-    for (let i = 0; i < 300 && znalezione < 3; i++) {
-      const { ex } = S.Drills.make("ausiliare", "x" + i);
-      const inf = dwa.filter(v => ex.q.indexOf(v) >= 0)[0];
-      if (!inf) continue;
-      znalezione++;
-      assert.equal(ex.t, "multi", `${inf} should accept both forms`);
-      /* The array comes from the sandbox: deepEqual would compare prototypes
-         from two realms and reject even identical content. */
+    const sein = Array.from(S.VERB_TABLES.SEIN_VERBS);
+    S.LexDe.VERBS.forEach((v) => {
+      if (v.aux === "sein") assert.ok(sein.includes(v.inf), `${v.inf} is not in SEIN_VERBS`);
+      if (v.aux === "haben") assert.ok(!sein.includes(v.inf.replace(/^sich /, "")), `${v.inf} is in SEIN_VERBS`);
+      if (v.aux === "both") assert.ok(BOTH.includes(v.inf), `${v.inf} unexpected as both`);
+    });
+  });
+
+  test("every listed sein verb is really in SEIN_VERBS: none is dropped on the way", () => {
+    const { LexDe } = silnik();
+    const sein = LexDe.VERBS.filter((v) => v.aux === "sein").map((v) => v.inf);
+    assert.equal(sein.length, 18, `sein verbs in the drill: ${sein}`);
+    assert.equal(LexDe.VERBS.filter((v) => v.aux === "both").length, BOTH.length);
+    /* They are read FROM the table, in its order, not copied next to it. */
+    const table = Array.from(silnik().VERB_TABLES.SEIN_VERBS).filter((v) => sein.includes(v));
+    assert.equal(sein.join(), table.join());
+  });
+
+  test("fahren, fliegen, reiten, schwimmen, segeln accept both auxiliaries", () => {
+    const gesehen = new Set();
+    ziehen(600, "b").forEach(({ ex, verb }) => {
+      if (!BOTH.includes(verb)) return;
+      gesehen.add(verb);
+      assert.equal(ex.t, "multi", `${verb} should accept both`);
+      /* The array comes from the sandbox: deepEqual would compare
+         prototypes from two realms and reject even identical content. */
       assert.equal(JSON.stringify(ex.a), "[0,1]");
-    }
-    assert.ok(znalezione >= 1, "not once did a verb with two auxiliaries come up");
+    });
+    assert.equal(gesehen.size, BOTH.length, `only ${Array.from(gesehen)} came up`);
   });
 
-  test("a verb of motion gets essere, a transitive one avere", () => {
+  test("a reflexive verb takes haben and says why", () => {
+    const refl = ziehen(600, "r").filter(({ verb }) => /^sich /.test(verb));
+    assert.ok(refl.length > 0, "no reflexive verb came up");
+    refl.forEach(({ ex, verb }) => {
+      assert.equal(ex.a, 0, verb);
+      assert.equal(ex.why, "drill.aux.whyRefl", verb);
+    });
+  });
+
+  test("the explanation follows the auxiliary", () => {
+    ziehen(200, "w").forEach(({ ex, verb }) => {
+      if (ex.t !== "mcq" || /^sich /.test(verb)) return;
+      assert.equal(ex.why, ex.a === 1 ? "drill.aux.whyEssere" : "drill.aux.whyAvere", verb);
+    });
+  });
+});
+
+describe("articles by case (T1.48)", () => {
+  /* Every cell of the paradigm, written out: der/den/dem/des, die/die/der/der,
+     das/das/dem/des, plural die/die/den/der; ein-/einen/einem/eines, eine/eine/einer/einer. */
+  const DEF = {
+    nom: { m: "der", f: "die", n: "das", pl: "die" },
+    akk: { m: "den", f: "die", n: "das", pl: "die" },
+    dat: { m: "dem", f: "der", n: "dem", pl: "den" },
+    gen: { m: "des", f: "der", n: "des", pl: "der" }
+  };
+  const INDEF = {
+    nom: { m: "ein", f: "eine", n: "ein" },
+    akk: { m: "einen", f: "eine", n: "ein" },
+    dat: { m: "einem", f: "einer", n: "einem" },
+    gen: { m: "eines", f: "einer", n: "eines" }
+  };
+
+  test("the definite article in all 16 cells", () => {
+    const { LexDe } = silnik();
+    Object.keys(DEF).forEach((k) => {
+      ["m", "f", "n"].forEach((g) => assert.equal(LexDe.article(k, g, false, false), DEF[k][g], `${k} ${g}`));
+      assert.equal(LexDe.article(k, "m", true, false), DEF[k].pl, `${k} plural`);
+    });
+  });
+
+  test("the indefinite article in all 12 cells, and none in the plural", () => {
+    const { LexDe } = silnik();
+    Object.keys(INDEF).forEach((k) => {
+      ["m", "f", "n"].forEach((g) => assert.equal(LexDe.article(k, g, false, true), INDEF[k][g], `${k} ${g}`));
+      assert.equal(LexDe.article(k, "f", true, true), null, `${k}: ein has no plural`);
+    });
+  });
+
+  test("the dative plural takes -n unless the plural already ends in n or s", () => {
+    const { LexDe } = silnik();
+    const dat = (s, pl) => LexDe.nounForm({ s, g: "m", pl }, "dat", true);
+    assert.equal(dat("Kind", "Kinder"), "Kindern");
+    assert.equal(dat("Haus", "Häuser"), "Häusern");
+    assert.equal(dat("Hund", "Hunde"), "Hunden");
+    assert.equal(dat("Zimmer", "Zimmer"), "Zimmern");
+    assert.equal(dat("Frau", "Frauen"), "Frauen");
+    assert.equal(dat("Auto", "Autos"), "Autos");
+    assert.equal(LexDe.nounForm({ s: "Kind", g: "n", pl: "Kinder" }, "akk", true), "Kinder");
+    assert.equal(LexDe.nounForm({ s: "Kind", g: "n", pl: "Kinder" }, "dat", false), "Kind");
+  });
+
+  test("every noun carries a gender and a plural, and the dative plural ends in n or s", () => {
+    const { LexDe } = silnik();
+    assert.ok(LexDe.NOUNS.length >= 30);
+    LexDe.NOUNS.forEach((n) => {
+      assert.ok(["m", "f", "n"].includes(n.g), n.s);
+      assert.match(n.pl, /^[A-ZÄÖÜ][a-zäöüßé]+$/, n.s);
+      assert.match(LexDe.nounForm(n, "dat", true), /[ns]$/, n.s);
+    });
+  });
+
+  /* The cue "(der Hund)" is the whole question, so it is the oracle: the
+     gender comes from the cue, the case from the verb in the frame. */
+  const AKK = ["sehe", "suche", "brauche"];
+  const DAT = ["helfe", "danke", "antworte"];
+
+  function artikelAufgaben(anzahl) {
     const S = silnik();
-    for (let i = 0; i < 200; i++) {
-      const { ex } = S.Drills.make("ausiliare", "y" + i);
-      if (ex.t !== "mcq") continue;
-      const verb = S.Lex.VERBS.filter(v => ex.q.indexOf(v.inf) >= 0)[0];
-      if (!verb) continue;
-      assert.equal(ex.a, verb.aux === "essere" ? 1 : 0, `${verb.inf} (${verb.aux})`);
+    const out = [];
+    for (let i = 0; i < anzahl; i++) {
+      const item = S.Drills.make("artikel", "a" + i);
+      const m = /^Ich (\w+) ___ \(((?:der|die|das|ein|eine) )?([^)]+)\)$/.exec(item.ex.q);
+      assert.ok(m, `unexpected frame: ${item.ex.q}`);
+      out.push({ item, verb: m[1], cueArt: (m[2] || "").trim(), cueWord: m[3] });
     }
+    return out;
+  }
+
+  test("the answer is the article for the case the verb governs, with the noun in that case", () => {
+    const S = silnik();
+    let dativPlural = 0;
+    artikelAufgaben(500).forEach(({ item, verb, cueArt, cueWord }) => {
+      const { noun, plural } = cueNoun(S, cueArt, cueWord);
+      const kase = AKK.includes(verb) ? "akk" : DAT.includes(verb) ? "dat" : null;
+      assert.ok(kase, `unknown verb ${verb}`);
+      const indef = cueArt === "ein" || cueArt === "eine";
+      const art = indef ? INDEF[kase][noun.g] : DEF[kase][plural ? "pl" : noun.g];
+      const form = plural ? (kase === "dat" && !/[ns]$/.test(noun.pl) ? noun.pl + "n" : noun.pl) : noun.s;
+      assert.equal(item.ex.a[0], `${art} ${form}`, item.ex.q);
+      if (kase === "dat" && plural && form !== noun.pl) {
+        dativPlural++;
+        assert.equal(item.ex.a.length, 1, "the bare article would let the missing -n through");
+      } else {
+        assert.ok(item.ex.a.includes(art), `${art} alone should be accepted for ${item.ex.q}`);
+      }
+      assert.equal(item.tag, kase === "akk" ? "g-artikel-akk" : "g-artikel-dat");
+      assert.equal(item.ex.tag, undefined, "the per-task tag moves to the item");
+    });
+    assert.ok(dativPlural > 0, "no dative plural with -n came up");
+  });
+
+  test("ein never meets a plural, and the dative frames only take persons", () => {
+    const S = silnik();
+    const persons = new Set(S.LexDe.NOUNS.filter((n) => n.person).flatMap((n) => [n.s, n.pl]));
+    const seen = { akk: new Set(), dat: new Set(), indef: 0, def: 0 };
+    artikelAufgaben(500).forEach(({ verb, cueArt, cueWord }) => {
+      const kase = AKK.includes(verb) ? "akk" : "dat";
+      seen[kase].add(cueWord);
+      if (kase === "dat") assert.ok(persons.has(cueWord), `${verb} ___ ${cueWord}: not a person`);
+      if (cueArt === "ein" || cueArt === "eine") {
+        seen.indef++;
+        assert.ok(!cueNoun(S, cueArt, cueWord).plural, `ein before plural ${cueWord}`);
+      } else seen.def++;
+    });
+    assert.ok(seen.indef > 0 && seen.def > 0, "both articles should come up");
+    assert.ok(seen.akk.size > seen.dat.size, "accusative draws on the whole lexicon");
+  });
+});
+
+describe("prepositions with case and contraction (T1.47)", () => {
+  const AKK = ["durch", "für", "gegen", "ohne", "um"];
+  const DAT = ["aus", "bei", "mit", "nach", "seit", "von", "zu"];
+  const WECHSEL = ["in", "an", "auf", "über", "unter", "vor", "hinter", "neben", "zwischen"];
+  const CONTRACTION = {
+    "zu dem": "zum", "zu der": "zur", "bei dem": "beim", "von dem": "vom",
+    "in dem": "im", "an dem": "am", "in das": "ins", "an das": "ans"
+  };
+
+  test("the lexicon lists the prepositions of each group", () => {
+    const { LexDe } = silnik();
+    assert.equal(JSON.stringify(LexDe.PREPS.akk), JSON.stringify(AKK));
+    assert.equal(JSON.stringify(LexDe.PREPS.dat), JSON.stringify(DAT));
+    assert.equal(JSON.stringify(LexDe.PREPS.wechsel), JSON.stringify(WECHSEL));
+  });
+
+  test("the eight contractions, and nothing contracted that should not be", () => {
+    const { LexDe } = silnik();
+    Object.keys(CONTRACTION).forEach((k) => {
+      const [p, a] = k.split(" ");
+      assert.equal(LexDe.contract(p, a), CONTRACTION[k], k);
+    });
+    assert.equal(LexDe.contract("mit", "dem"), null);
+    assert.equal(LexDe.contract("zu", "den"), null);
+    assert.equal(LexDe.contract("zu", "das"), null);
+    assert.equal(LexDe.contract("in", "der"), null);
+    assert.equal(LexDe.contract("für", "das"), null);
+  });
+
+  test("a phrase is preposition + article in the right case + noun, contracted where German does", () => {
+    const { LexDe } = silnik();
+    const N = (s, g, pl) => ({ s, g, pl });
+    const bahnhof = N("Bahnhof", "m", "Bahnhöfe"), frau = N("Frau", "f", "Frauen");
+    const haus = N("Haus", "n", "Häuser"), kind = N("Kind", "n", "Kinder");
+    assert.equal(LexDe.prepPhrase("zu", "dat", bahnhof, false), "zum Bahnhof");
+    assert.equal(LexDe.prepPhrase("zu", "dat", frau, false), "zur Frau");
+    assert.equal(LexDe.prepPhrase("bei", "dat", frau, false), "bei der Frau");
+    assert.equal(LexDe.prepPhrase("mit", "dat", kind, true), "mit den Kindern");
+    assert.equal(LexDe.prepPhrase("mit", "dat", bahnhof, false), "mit dem Bahnhof");
+    assert.equal(LexDe.prepPhrase("von", "dat", haus, false), "vom Haus");
+    assert.equal(LexDe.prepPhrase("durch", "akk", bahnhof, false), "durch den Bahnhof");
+    assert.equal(LexDe.prepPhrase("für", "akk", frau, false), "für die Frau");
+    assert.equal(LexDe.prepPhrase("ohne", "akk", kind, true), "ohne die Kinder");
+    assert.equal(LexDe.prepPhrase("in", "dat", haus, false), "im Haus");
+    assert.equal(LexDe.prepPhrase("in", "akk", haus, false), "ins Haus");
+    assert.equal(LexDe.prepPhrase("an", "dat", haus, false), "am Haus");
+    assert.equal(LexDe.prepPhrase("an", "akk", haus, false), "ans Haus");
+    assert.equal(LexDe.prepPhrase("in", "akk", bahnhof, false), "in den Bahnhof");
+    assert.equal(LexDe.prepPhrase("auf", "dat", frau, false), "auf der Frau");
+    assert.equal(LexDe.prepPhrase("hinter", "akk", kind, true), "hinter die Kinder");
+    assert.equal(LexDe.prepPhrase("neben", "dat", kind, true), "neben den Kindern");
+  });
+
+  /* The cue ("der Bahnhof") and the preposition are in the prompt, the
+     question for the Wechselpräpositionen carries wo? / wohin? as the hint:
+     together they are the oracle. */
+  function praepAufgaben(anzahl) {
+    const S = silnik();
+    const out = [];
+    for (let i = 0; i < anzahl; i++) {
+      const item = S.Drills.make("prep-art", "pp" + i);
+      const [cueArt, cueWord] = param(item.ex, "noun").split(" ");
+      out.push({ item, prep: param(item.ex, "prep"), ...cueNoun(S, cueArt, cueWord), hint: item.ex.hint });
+    }
+    return out;
+  }
+
+  test("accusative contractions accept separate forms; dative contractions remain required", () => {
+    const cases = [
+      ["pp3625", "in", "wohin?", "das Haus", ["ins Haus", "ins", "in das Haus", "in das"]],
+      ["pp11772", "an", "wohin?", "das Haus", ["ans Haus", "ans", "an das Haus", "an das"]],
+      ["pp2815", "in", "wo?", "das Haus", ["im Haus", "im"]],
+      ["pp3324", "an", "wo?", "das Haus", ["am Haus", "am"]],
+      ["pp54", "zu", undefined, "der Bahnhof", ["zum Bahnhof", "zum"]],
+      ["pp3669", "zu", undefined, "die Frau", ["zur Frau", "zur"]],
+      ["pp112", "von", undefined, "das Haus", ["vom Haus", "vom"]],
+      ["pp535", "bei", undefined, "das Haus", ["beim Haus", "beim"]]
+    ];
+    const { Drills } = silnik();
+    for (const [seed, prep, hint, noun, answers] of cases) {
+      const { ex } = Drills.make("prep-art", seed);
+      assert.equal(param(ex, "prep"), prep, seed);
+      assert.equal(param(ex, "noun"), noun, seed);
+      assert.equal(ex.hint, hint, seed);
+      assert.deepEqual(Array.from(ex.a), answers, seed);
+    }
+  });
+
+  test("the answer is the phrase in the case the preposition governs, contracted when possible", () => {
+    const DEF = { akk: { m: "den", f: "die", n: "das", pl: "die" }, dat: { m: "dem", f: "der", n: "dem", pl: "den" } };
+    const gesehen = { prep: new Set(), contr: new Set(), wo: 0, wohin: 0 };
+    praepAufgaben(900).forEach(({ item, prep, noun, plural, hint }) => {
+      assert.ok(noun, `noun not found for ${prep}`);
+      let kase;
+      if (AKK.includes(prep)) kase = "akk";
+      else if (DAT.includes(prep)) kase = "dat";
+      else {
+        assert.ok(WECHSEL.includes(prep), `unknown preposition ${prep}`);
+        assert.ok(hint === "wo?" || hint === "wohin?", `${prep}: hint ${hint}`);
+        kase = hint === "wo?" ? "dat" : "akk";
+        gesehen[hint === "wo?" ? "wo" : "wohin"]++;
+      }
+      if (!WECHSEL.includes(prep)) assert.equal(hint, undefined, `${prep} governs one case: no hint`);
+      const art = DEF[kase][plural ? "pl" : noun.g];
+      const form = plural ? (kase === "dat" && !/[ns]$/.test(noun.pl) ? noun.pl + "n" : noun.pl) : noun.s;
+      const contracted = CONTRACTION[`${prep} ${art}`];
+      const erwartet = (contracted || `${prep} ${art}`) + " " + form;
+      assert.equal(item.ex.a[0], erwartet, `${prep} + ${noun.s} (${kase})`);
+      assert.equal(item.ex.a.includes(contracted || `${prep} ${art}`), !(kase === "dat" && plural && form !== noun.pl),
+        "the bare preposition + article is accepted unless the noun changes");
+      if (contracted) {
+        gesehen.contr.add(contracted);
+        assert.equal(item.ex.a.includes(`${prep} ${art} ${form}`), kase === "akk",
+          "only accusative contractions accept the uncontracted phrase");
+      }
+      gesehen.prep.add(prep);
+      const tag = AKK.includes(prep) ? "g-praep-akk" : DAT.includes(prep) ? "g-praep-dativ" : "g-wechselpraep";
+      assert.equal(item.tag, tag, prep);
+      assert.equal(item.ex.tag, undefined);
+    });
+    assert.equal(gesehen.prep.size, AKK.length + DAT.length + WECHSEL.length, "every preposition should come up");
+    assert.equal(gesehen.contr.size, 8, `contractions seen: ${Array.from(gesehen.contr)}`);
+    assert.ok(gesehen.wo > 0 && gesehen.wohin > 0, "both wo? and wohin? should come up");
   });
 });
 
@@ -475,14 +758,34 @@ describe("personal pronouns (T1.45)", () => {
 describe("the topic registry", () => {
   test("every generator has a tag that exists in the grammar reference", () => {
     const S = silnik();
-    /* A list of ids from data/core/grammar-reference.js - here we only check
-       the shape and that the tag is one of the known ones; full agreement is
-       guarded by validate.mjs. */
-    const ZNANE = ["g-preposizioni", "g-agg-accordo", "g-passato-prossimo",
-      "g-pron-diretti", "g-frase", "g-articolo-det"];
+    /* The German ids of specs/german-course/curriculum.md that a generator
+       may use - here we only check that every tag is one of them; full
+       agreement with GRAMMAR_REF is guarded by validate.mjs. */
+    const ZNANE = ["g-praep-akk", "g-praep-dativ", "g-wechselpraep", "g-artikel-akk", "g-artikel-dat",
+      "g-perfekt", "g-personalpron", "g-pron-akk", "g-pron-dat", "g-temporalangaben"];
     S.Drills.TOPICS.forEach(topic => {
-      assert.ok(ZNANE.indexOf(topic.tag) >= 0, `${topic.id}: tag ${topic.tag}`);
+      assert.ok(topic.tags.length > 0, `${topic.id}: no tags`);
+      assert.equal(topic.tag, topic.tags[0], `${topic.id}: the primary tag leads the list`);
+      topic.tags.forEach(tag => assert.ok(ZNANE.indexOf(tag) >= 0, `${topic.id}: tag ${tag}`));
     });
+  });
+
+  test("every task carries one of the tags of its topic, and each tag of a mixed topic is reachable", () => {
+    const S = silnik();
+    S.Drills.TOPICS.forEach(topic => {
+      const gesehen = new Set();
+      for (let i = 0; i < 300; i++) {
+        const { tag } = S.Drills.make(topic.id, "tg" + i);
+        assert.ok(topic.tags.indexOf(tag) >= 0, `${topic.id}: task tag ${tag}`);
+        gesehen.add(tag);
+      }
+      assert.equal(gesehen.size, topic.tags.length, `${topic.id}: tags seen ${Array.from(gesehen)}`);
+    });
+  });
+
+  test("the topics are the German ones: no Italian generator is left", () => {
+    const ids = silnik().Drills.TOPICS.map(x => x.id);
+    assert.equal(JSON.stringify(ids), JSON.stringify(["prep-art", "artikel", "ausiliare", "pronomi", "numeri", "date", "ore"]));
   });
 
   test("a series returns as many tasks as were ordered", () => {
@@ -513,16 +816,23 @@ describe("the topic of the daily drill", () => {
     });
   });
 
+  test("a weak tag reaches the topic that produces it, even when it is not the primary one", () => {
+    const D = silnik().Drills;
+    const r = D.pickTopic({ weakTag: "g-wechselpraep", isDone: zrobione([]), day: 0 });
+    assert.equal(r.topic.id, "prep-art");
+    assert.equal(r.why, "weak");
+  });
+
   test("a weak spot wins, as before", () => {
     const D = silnik().Drills;
-    const r = D.pickTopic({ weakTag: "g-pron-diretti", isDone: zrobione([]), day: 3 });
+    const r = D.pickTopic({ weakTag: "g-pron-akk", isDone: zrobione([]), day: 3 });
     assert.equal(r.topic.id, "pronomi");
     assert.equal(r.why, "weak");
   });
 
   test("without a weak spot only topics already studied are drawn", () => {
     const D = silnik().Drills;
-    const studiowane = ["a1-u02-l2", "a1-u04-l1"];
+    const studiowane = ["a1-u02-l2", "a1-u06-l1"];
     const tematy = new Set();
     for (let day = 0; day < 30; day++) {
       const r = D.pickTopic({ weakTag: null, isDone: zrobione(studiowane), day });
@@ -543,8 +853,8 @@ describe("the topic of the daily drill", () => {
 
   test("a weak tag that no generator covers falls back to the studied topics", () => {
     const D = silnik().Drills;
-    const r = D.pickTopic({ weakTag: "g-congiuntivo", isDone: zrobione(["a1-u04-l1"]), day: 0 });
-    assert.equal(r.topic.id, "accordo");
+    const r = D.pickTopic({ weakTag: "g-konjunktiv2", isDone: zrobione(["a1-u06-l1"]), day: 0 });
+    assert.equal(r.topic.id, "artikel");
     assert.equal(r.why, "studied");
   });
 });

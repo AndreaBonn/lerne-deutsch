@@ -404,7 +404,7 @@ LINGUAI.addUI("en", {
   "train.start": "Drill",
   "train.endless": "Every round draws new items. Anything you get wrong lands in the Mistakes tab under Review.",
   "train.topic.prep-art": "Preposition plus article",
-  "train.topic.accordo": "Adjective agreement",
+  "train.topic.artikel": "Article and case",
   "train.topic.ausiliare": "Sein or haben",
   "train.topic.pronomi": "Object pronouns",
   "train.topic.numeri": "Numbers",
@@ -417,8 +417,7 @@ LINGUAI.addUI("en", {
   "train.backHub": "Pick another",
 
   /* Drill values use German; translate only the surrounding instructions. */
-  "drill.prepArt.q": "Contract these: <b>{prep}</b> + the article for <b>{noun}</b>",
-  "drill.accordo.q": "Make the adjective agree: <b>{group}</b> + <b>{adj}</b>",
+  "drill.prepArt.q": "Complete with preposition and article: <b>{prep}</b> + <b>{noun}</b>",
   "drill.pron.q": "Replace the object with a pronoun: <b>{sentence}</b>",
   "drill.aux.q": "Which auxiliary does <b>{verb}</b> take in the Perfekt?",
   "drill.aux.both": "<b>{verb}</b> takes both — tick both.",

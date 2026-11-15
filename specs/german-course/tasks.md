@@ -89,9 +89,9 @@ fissa cosa ogni unità presuppone). `c` e `d` sono `ok` fra loro. `e` è `seq` p
 - [x] T1.43 | F1 | Drill ore (halb drei = 2:30, Viertel nach/vor, formato 24h) | 0,5h | verify: `drills.test.mjs` ore (rosso) | unit | dip: T1.42 | par: seq | rollback: revert | R13
 - [x] T1.44 | F1 | Drill date (am dritten März, der 3. März, Ordinali) | 0,5h | verify: `drills.test.mjs` date (rosso) | unit | dip: T1.43 | par: seq | rollback: revert | R13
 - [x] T1.45 | F1 | Drill pronomi personali Nom/Akk/Dat | 0,5h | verify: `drills.test.mjs` pronomi (rosso) | unit | dip: T1.44 | par: seq | rollback: revert | R13
-- [ ] T1.46 | F1 | Drill ausiliare del Perfekt (haben/sein) da `SEIN_VERBS` | 0,5h | verify: `drills.test.mjs` ausiliare (rosso) | unit | dip: T1.45, T1.15 | par: seq | rollback: revert | R13
-- [ ] T1.47 | F1 | `drills-lex.js` preposizione + caso + contrazione (Akk, Dat, Wechselpräpositionen con stato/moto; zum, zur, im, am, ins, ans, vom, beim) | 0,5h | verify: `drills.test.mjs` prep (rosso) | unit | dip: T1.46 | par: seq | rollback: revert | R13
-- [ ] T1.48 | F1 | `drills-lex.js` articolo per caso (der/den/dem/des, ein/einen/einem/eines) e mappa `TOPICS` sui tag tedeschi di T1.01; test "niente say/listen/speak" invariato | 0,5h | verify: `drills.test.mjs` intero + `npx playwright test tests/dom/drills.spec.js` (rosso) | integrazione | dip: T1.47 | par: seq | rollback: revert | R13
+- [x] T1.46 | F1 | Drill ausiliare del Perfekt (haben/sein) da `SEIN_VERBS` | 0,5h | verify: `drills.test.mjs` ausiliare (rosso) | unit | dip: T1.45, T1.15 | par: seq | rollback: revert | R13
+- [x] T1.47 | F1 | `drills-lex.js` preposizione + caso + contrazione (Akk, Dat, Wechselpräpositionen con stato/moto; zum, zur, im, am, ins, ans, vom, beim) | 0,5h | verify: `drills.test.mjs` prep (rosso) | unit | dip: T1.46 | par: seq | rollback: revert | R13
+- [x] T1.48 | F1 | `drills-lex.js` articolo per caso (der/den/dem/des, ein/einen/einem/eines) e mappa `TOPICS` sui tag tedeschi di T1.01; test "niente say/listen/speak" invariato | 0,5h | verify: `drills.test.mjs` intero + `npx playwright test tests/dom/drills.spec.js` (rosso) | integrazione | dip: T1.47 | par: seq | rollback: revert | R13
 
 ### F1.E - Lingue, voce, prompt, validatori
 
@@ -109,7 +109,7 @@ fissa cosa ogni unità presuppone). `c` e `d` sono `ok` fra loro. `e` è `seq` p
 
 - [x] T1.60 | F1 | Design system: nome, bandiera, palette OKLCH (nero-rosso-oro a chroma controllata) in `assets/css/`, icone e favicon | 2h | verify: `npx playwright test tests/dom/contrast.spec.js` verde e `grep -c "Impara l'Italiano" assets/css/*.css index.html` = 0 (rosso) | e2e | dip: T0.12 | par: ok | rollback: revert | R28
 - [x] T1.61 | F1 | `index.html` (lang, title, og, favicon, brand, `ui-it.js` al posto di `ui-de.js`), `manifest.webmanifest`, `404.html`; `node scripts/build_og.mjs` | 1h | verify: `node scripts/check_ogtags.mjs` esce 0 e `npx playwright test tests/dom/heads.spec.js` (rosso: titolo italiano) | e2e | dip: T1.60, T1.51 | par: seq | rollback: revert | R4, R28
-- [ ] T1.62 | F1 | `sw.js` PRECACHE allineato a `index.html`, `SW_VERSION` | 0,25h | verify: `node scripts/check_precache.mjs && node scripts/check_swversion.mjs` (rosso: ui-de in PRECACHE) | integrazione | dip: T1.61 | par: seq | rollback: revert | R29
+- [x] T1.62 | F1 | `sw.js` PRECACHE allineato a `index.html`, `SW_VERSION` | 0,25h | verify: `node scripts/check_precache.mjs && node scripts/check_swversion.mjs` (rosso: ui-de in PRECACHE) | integrazione | dip: T1.61 | par: seq | rollback: revert | R29
 
 ### F1.G - Dati: cutover e A1 U1-U3
 

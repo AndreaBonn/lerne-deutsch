@@ -409,7 +409,7 @@ LINGUAI.addUI("pl", {
   "train.start": "Ćwicz",
   "train.endless": "Każde podejście losuje nowe zadania. Pomyłki trafiają do zakładki Błędy w Powtórkach.",
   "train.topic.prep-art": "Przyimek z rodzajnikiem",
-  "train.topic.accordo": "Zgodność przymiotnika",
+  "train.topic.artikel": "Rodzajnik i przypadek",
   "train.topic.ausiliare": "Sein czy haben",
   "train.topic.pronomi": "Zaimki dopełnienia",
   "train.topic.numeri": "Liczebniki",
@@ -422,8 +422,7 @@ LINGUAI.addUI("pl", {
   "train.backHub": "Wybierz inne",
 
   /* Drill values use German; translate only the surrounding instructions. */
-  "drill.prepArt.q": "Połącz w jedno: <b>{prep}</b> + rodzajnik od <b>{noun}</b>",
-  "drill.accordo.q": "Dopasuj przymiotnik: <b>{group}</b> + <b>{adj}</b>",
+  "drill.prepArt.q": "Uzupełnij przyimkiem i rodzajnikiem: <b>{prep}</b> + <b>{noun}</b>",
   "drill.pron.q": "Zastąp dopełnienie zaimkiem: <b>{sentence}</b>",
   "drill.aux.q": "Jakiego czasownika posiłkowego wymaga <b>{verb}</b> w czasie Perfekt?",
   "drill.aux.both": "<b>{verb}</b> przyjmuje oba — zaznacz oba.",

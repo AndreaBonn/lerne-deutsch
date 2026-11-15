@@ -15,7 +15,7 @@ test("the hub lists every topic under its own name", async ({ page }) => {
   await expect(page.locator(".js-topic")).toHaveCount(n);
 
   /* The topic name must NOT be the title of a grammar entry: the "numeri"
-     tag points at g-frase, that is "sentence structure". */
+     tag points at g-temporalangaben, that is "time expressions". */
   /* The hub also has a row leading to sound discrimination, so we count only
      the rows with a topic button. */
   const nazwy = await page.locator(".list-row:has(.js-topic) b").allInnerTexts();
@@ -54,7 +54,8 @@ test("a wrong answer in training creates a card marked as generated", async ({ p
 
   const karta = await page.evaluate(() => Object.values(window.Core.state.errors)[0]);
   expect(karta.kind).toBe("generated");
-  expect(karta.tag).toBe("g-preposizioni");
+  /* prep-art mixes three grammar points: the card carries the one the task asked about. */
+  expect(["g-praep-akk", "g-praep-dativ", "g-wechselpraep"]).toContain(karta.tag);
   expect(karta.srcId).toBe("prep-art");
 });
 
@@ -103,7 +104,7 @@ test("the training strings exist in five languages", async ({ page }) => {
   await hub(page);
   const braki = await page.evaluate(async () => {
     const out = {};
-    for (const lang of ["pl", "en", "es", "fr", "de"]) {
+    for (const lang of ["it", "en", "es", "fr", "pl"]) {
       await new Promise(r => window.Core.setLanguage(lang, r));
       window.I18n.set(lang);
       window.App.go("allenamento");
@@ -118,8 +119,8 @@ test("the training strings exist in five languages", async ({ page }) => {
 
 /* The line under each topic was the grammar tag's title, which sometimes had
    nothing to do with the drill: "Numbers / Word order, questions, negation".
-   An Italian sample says what is practised, in every language alike. */
-test("each topic shows an Italian sample of what it drills", async ({ page }) => {
+   A German sample says what is practised, in every language alike. */
+test("each topic shows a German sample of what it drills", async ({ page }) => {
   await hub(page);
   const probki = await page.evaluate(() => window.Drills.TOPICS.map(x => x.sample));
   probki.forEach(p => expect(p, "every topic has a sample").toBeTruthy());

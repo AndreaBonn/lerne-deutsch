@@ -48,7 +48,7 @@
 
    A human raises "v35" when they want to name a release; the fingerprint
    is not their job. */
-var SW_VERSION = "v35.780e2b795bdb";
+var SW_VERSION = "v35.33b15bf215bc";
 
 var SHELL_CACHE = "impara-tedesco-shell-" + SW_VERSION;
 /* Recordings are content-addressed, so their cache survives a version change.
@@ -103,6 +103,7 @@ var PRECACHE = [
   "./assets/js/errors-key.js",
   "./assets/js/errors.js",
   "./assets/js/drills-lex.js",
+  "./assets/js/drills-de.js",
   "./assets/js/drills.js",
   "./assets/js/views.js",
   "./assets/js/views-path.js",
