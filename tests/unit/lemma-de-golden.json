@@ -1,0 +1,12 @@
+[
+  { "form": "Häuser", "lemma": "Haus", "kind": "nominal" },
+  { "form": "Kindern", "lemma": "Kind", "kind": "nominal" },
+  { "form": "Mannes", "lemma": "Mann", "kind": "nominal" },
+  { "form": "kleinen", "lemma": "klein", "kind": "nominal" },
+  { "form": "größer", "lemma": "groß", "kind": "nominal" },
+  { "form": "ging", "lemma": "gehen", "kind": "verb" },
+  { "form": "gegangen", "lemma": "gehen", "kind": "verb" },
+  { "form": "stehst", "lemma": "stehen", "kind": "verb" },
+  { "form": "aufgestanden", "lemma": "aufstehen", "kind": "verb" },
+  { "form": "bin", "lemma": "sein", "kind": "verb" }
+]
