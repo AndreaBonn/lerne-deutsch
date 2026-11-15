@@ -1,13 +1,7 @@
 /* ============================================================
-   keys.js — typing Italian on somebody else's keyboard.
+   keys.js - typing German on somebody else's keyboard.
 
-   Two things, both about friction rather than features:
-
-   1. The character bar. "à è é ì ò ù" and the apostrophe are not on a
-      Polish or an American keyboard. Without this the student either
-      copies characters from elsewhere or writes "perche" and gets
-      "almost" — that is, the course punishes them for their keyboard
-      layout rather than for their Italian.
+   1. The character bar provides umlauts, sharp s and the apostrophe.
 
    2. Shortcuts. Enter moves on, a digit picks an answer. Active only when
       the focus is NOT in a text field: otherwise a "1" typed in an answer
@@ -20,8 +14,8 @@
 
   var Keys = {};
 
-  /* The Italian accents plus the apostrophe: "l'una", "un'amica", "dell'acqua". */
-  var CHARS = ["à", "è", "é", "ì", "ò", "ù", "'"];
+  /* Apostrophes also occur in German contractions such as "geht's". */
+  var CHARS = ["ä", "ö", "ü", "ß", "Ä", "Ö", "Ü", "'"];
 
   var bar = null;
   var forInput = null;
@@ -87,6 +81,11 @@
 
     var r = input.getBoundingClientRect();
     var h = bar.offsetHeight || 56;
+    var fieldRow = input.closest(".flash__typed .field-row");
+    if (fieldRow) {
+      fieldRow.style.marginTop = (h + ODSTEP) + "px";
+      r = input.getBoundingClientRect();
+    }
     var nadMiejsce = r.top - h - ODSTEP;
     var gora = nadMiejsce >= 0 ? nadMiejsce : r.bottom + ODSTEP;
 

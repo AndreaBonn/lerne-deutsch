@@ -26,17 +26,23 @@
 
   var LIMIT = 60;
 
-  /**
-   * CHARACTER-FOR-CHARACTER normalization: lower case and accents removed,
-   * whitespace untouched.
-   *
-   * Core.norm() also collapses whitespace, so "un  caffè" gets one character
-   * shorter and the position of a hit stops pointing at the same place in
-   * the source text: the highlight would cut at the wrong point. Here the
-   * length has to match, because we slice one string by indexes taken from
-   * another.
-   */
-  var fold = Core.fold;
+  /** Search expands sharp s; source indexes are retained for highlighting. */
+  function fold(text) {
+    return Core.fold(text).replace(/ß/g, "ss");
+  }
+
+  function indexedFold(text) {
+    var folded = "", starts = [], ends = [];
+    for (var i = 0; i < text.length; i++) {
+      var part = fold(text.charAt(i));
+      for (var j = 0; j < part.length; j++) {
+        starts.push(i);
+        ends.push(i + 1);
+      }
+      folded += part;
+    }
+    return { text: folded, starts: starts, ends: ends };
+  }
 
   /**
    * Highlighting without injection.
@@ -51,11 +57,14 @@
     var q = fold(query).trim();
     if (!q) return esc(src);
 
-    var hay = fold(src);
-    var out = "", from = 0, at;
-    while ((at = hay.indexOf(q, from)) >= 0) {
-      out += esc(src.slice(from, at)) + "<mark>" + esc(src.slice(at, at + q.length)) + "</mark>";
-      from = at + q.length;
+    var hay = indexedFold(src);
+    var out = "", from = 0, cursor = 0, at;
+    while ((at = hay.text.indexOf(q, cursor)) >= 0) {
+      var start = hay.starts[at], end = hay.ends[at + q.length - 1];
+      out += esc(src.slice(from, start)) + "<mark>" + esc(src.slice(start, end)) + "</mark>";
+      from = end;
+      cursor = at + q.length;
+      while (cursor < hay.text.length && hay.starts[cursor] < from) cursor++;
     }
     return out + esc(src.slice(from));
   }

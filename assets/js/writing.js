@@ -55,7 +55,7 @@
     var f = fold(forma).trim().replace(/\s+/g, " ");
     var uciekniete = f.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     if (luzNaKoncu && f.indexOf(" ") >= 0) uciekniete = uciekniete.replace(/[oaie]$/, "[oaie]");
-    return new RegExp("(^|[^a-zà-ù])" + uciekniete + "([^a-zà-ù]|$)");
+    return new RegExp("(^|[^a-zäöüß])" + uciekniete + "([^a-zäöüß]|$)");
   }
 
   /**

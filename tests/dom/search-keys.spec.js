@@ -17,20 +17,22 @@ test("the way into the search sits in the panel header", async ({ page }) => {
   await expect(page.locator("#searchQ")).toBeFocused();
 });
 
-test("it finds a word in the vocabulary and leads to the lesson", async ({ page }) => {
-  await szukaj(page, "caffè");
-  await expect(page.locator(".js-hit").first()).toBeVisible();
-  await page.locator(".js-hit").first().click();
-  await expect(page).toHaveURL(/#\/(lezione|grammatica|conversazione)/);
-});
-
-test("accents are not required, on either side", async ({ page }) => {
-  await szukaj(page, "caffe");
-  const bez = await page.locator(".js-hit").count();
-  await szukaj(page, "caffè");
-  const z = await page.locator(".js-hit").count();
-  expect(bez).toBeGreaterThan(0);
-  expect(bez).toBe(z);
+test("German search folds umlauts and sharp s with intact highlights", async ({ page }) => {
+  await szukaj(page, "");
+  const result = await page.evaluate(() => {
+    Core.registry.levels = [{ code: "A1", units: [{ lessons: [{ id: "german-search",
+      vocab: [{ it: "die Straße, Öl und Mädchen", tr: "street" }] }] }] }];
+    return {
+      hits: ["strasse", "Straße", "ol", "madchen"].map(q => Search.collect(q).length),
+      marks: [Search.highlight("Straße Straße Öl", "strasse"),
+        Search.highlight("Straße Öl", "ol"), Search.highlight("ßß!", "ss"),
+        Search.highlight("Straße!", "sse"), Search.highlight("Öl und Mädchen", "madchen")]
+    };
+  });
+  expect(result.hits).toEqual([1, 1, 1, 1]);
+  expect(result.marks).toEqual(["<mark>Straße</mark> <mark>Straße</mark> Öl",
+    "Straße <mark>Öl</mark>", "<mark>ß</mark><mark>ß</mark>!",
+    "Stra<mark>ße</mark>!", "Öl und <mark>Mädchen</mark>"]);
 });
 
 test("no results says so plainly", async ({ page }) => {
@@ -64,17 +66,38 @@ test("the highlight returns text, not markup, for dangerous content too", async 
 
 /* ---------------- The character bar ---------------- */
 
-test("the character bar appears next to a text field and inserts an accent", async ({ page }) => {
+test("the character bar appears next to a text field and inserts a German character", async ({ page }) => {
   await page.goto("/index.html#/cerca");
   await page.waitForSelector("#searchQ");
   await page.locator("#searchQ").click();
 
   const pasek = page.locator(".keybar");
   await expect(pasek).toBeVisible();
+  await expect(pasek.locator("[data-ch]")).toHaveText(["ä", "ö", "ü", "ß", "Ä", "Ö", "Ü", "'"]);
 
-  await page.locator("#searchQ").fill("perch");
-  await pasek.locator('[data-ch="é"]').click();
-  await expect(page.locator("#searchQ")).toHaveValue("perché");
+  await page.locator("#searchQ").fill("M");
+  await pasek.locator('[data-ch="ä"]').click();
+  await expect(page.locator("#searchQ")).toHaveValue("Mä");
+});
+
+test("a German transcription gets the existing almost-right notice before grading", async ({ page }) => {
+  await page.goto("/index.html");
+  await page.waitForFunction(() => window.Ex);
+  await page.evaluate(() => {
+    const host = document.createElement("div");
+    document.getElementById("main").appendChild(host);
+    const built = Ex.build({ t: "fill", q: "Write Mädchen", a: ["Mädchen"] }, 0, "german-text");
+    host.innerHTML = built.html;
+    window.germanGrade = null;
+    built.wire(host.querySelector(".exq"), ok => { window.germanGrade = ok; });
+  });
+  await page.locator(".exq .js-in").fill("Maedchen");
+  await page.locator(".exq .js-check").click();
+  await expect(page.locator(".exq .fb")).toHaveText(await page.evaluate(() => I18n.t("ex.almost")));
+  expect(await page.evaluate(() => window.germanGrade)).toBe(null);
+  await page.locator(".exq .js-in").fill("Mädchen");
+  await page.locator(".exq .js-check").click();
+  expect(await page.evaluate(() => window.germanGrade)).toBe(true);
 });
 
 test("the character goes in at the caret, not at the end", async ({ page }) => {
@@ -87,8 +110,8 @@ test("the character goes in at the caret, not at the end", async ({ page }) => {
     i.selectionStart = i.selectionEnd = 1;      // kursor po „c"
   });
   await page.locator(".keybar").waitFor();
-  await page.locator('.keybar [data-ch="à"]').click();
-  await expect(page.locator("#searchQ")).toHaveValue("càit");
+  await page.locator('.keybar [data-ch="ü"]').click();
+  await expect(page.locator("#searchQ")).toHaveValue("cüit");
 });
 
 test("the bar buttons have the size of a touch target", async ({ page }) => {

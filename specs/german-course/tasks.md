@@ -79,7 +79,7 @@ fissa cosa ogni unità presuppone). `c` e `d` sono `ok` fra loro. `e` è `seq` p
 - [ ] T1.32 | F1 | `lemma.js`: indice inverso delle forme di `Verbs` per i verbi del vocabolario + `COMMON`, articolo tolto dal lemma nominale, golden lemma intero | 0,5h | verify: `node --test tests/unit/lemma.test.mjs tests/unit/lemma-contract.test.mjs` (rosso) | unit | dip: T1.31, T1.22 | par: seq | rollback: revert | R10
 - [ ] T1.33 | F1 | Righe di `mutations.mjs` per `lemma-morf.js` riallineate (frammento `z` unico nel file nuovo) | 0,25h | verify: `npm run test:mutations` esce 0 (rosso: frammenti italiani assenti) | unit | dip: T1.32 | par: seq | rollback: revert | R31
 - [x] T1.34 | F1 | `text.js`: via `ACCENT_MAP` italiana, trascrizioni ae/oe/ue/ss e maiuscola come "quasi" (implementa T1.04) | 0,5h | verify: `node --test tests/unit/text.test.mjs` (rosso da T1.04) | unit | dip: T1.04 | par: ok | rollback: revert | R12
-- [ ] T1.35 | F1 | `keys.js:23` barra ä ö ü ß Ä Ö Ü; `search.js:30` piegatura (ä→a, ß→ss); `frequency.js:85`; `writing.js:58` | 0,5h | verify: `npx playwright test tests/dom/search-keys.spec.js` riscritto (rosso: tasti italiani) | integrazione | dip: T1.34 | par: ok | rollback: revert | R12
+- [x] T1.35 | F1 | `keys.js:23` barra ä ö ü ß Ä Ö Ü; `search.js:30` piegatura (ä→a, ß→ss); `frequency.js:85`; `writing.js:58` | 0,5h | verify: `npx playwright test tests/dom/search-keys.spec.js` riscritto (rosso: tasti italiani) | integrazione | dip: T1.34 | par: ok | rollback: revert | R12
 
 ### F1.D - Genere, flashcard, drill
 
