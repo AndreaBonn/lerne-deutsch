@@ -11,7 +11,7 @@ async function ripasso(page, profil) {
   if (profil) {
     await page.addInitScript(p => {
       if (sessionStorage.getItem("seeded")) return;
-      localStorage.setItem("linguai.italiano.v2", JSON.stringify(p));
+      localStorage.setItem("linguai.tedesco.v1", JSON.stringify(p));
       sessionStorage.setItem("seeded", "1");
     }, profil);
   }

@@ -139,7 +139,7 @@ describe("zapis wypracowania", () => {
     box.sandbox.Writing.save("w-test", "Ieri ho mangiato.", wynik);
     box.flush();
 
-    const zapis = box.stored("linguai.italiano.v2").writing["w-test"];
+    const zapis = box.stored("linguai.tedesco.v1").writing["w-test"];
     assert.equal(zapis.text, "Ieri ho mangiato.");
     assert.equal(zapis.found, 1);
     assert.equal(zapis.total, 2);

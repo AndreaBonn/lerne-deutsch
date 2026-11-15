@@ -55,12 +55,12 @@ async function przygotuj(page, opcje) {
 /** Consent, written straight into the profile: this is not the consent test. */
 async function zgoda(page) {
   await page.addInitScript(() => {
-    const raw = window.localStorage.getItem("linguai.italiano.v2");
+    const raw = window.localStorage.getItem("linguai.tedesco.v1");
     const state = raw ? JSON.parse(raw) : { schema: 2, settings: {} };
     state.settings = state.settings || {};
     state.settings.llmConsent = true;
     state.settings.lang = "pl";
-    window.localStorage.setItem("linguai.italiano.v2", JSON.stringify(state));
+    window.localStorage.setItem("linguai.tedesco.v1", JSON.stringify(state));
   });
 }
 
@@ -199,7 +199,7 @@ test.describe("the order of the providers", () => {
        profile. A file naming providers we do not serve, or naming one of
        them twice, must still leave four usable rows. */
     await page.addInitScript(() => {
-      window.localStorage.setItem("linguai.italiano.v2", JSON.stringify({
+      window.localStorage.setItem("linguai.tedesco.v1", JSON.stringify({
         schema: 2,
         settings: { lang: "pl", llmOrder: ["mistral", "openai", "openai", "__proto__"] }
       }));

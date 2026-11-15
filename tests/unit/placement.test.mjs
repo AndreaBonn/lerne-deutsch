@@ -139,7 +139,7 @@ describe("zastosowanie wyniku", () => {
     P.zastosuj(p);
     box.flush();
 
-    const zapis = box.stored("linguai.italiano.v2");
+    const zapis = box.stored("linguai.tedesco.v1");
     assert.equal(zapis.placement.level, "B1");
     assert.ok(zapis.placement.ts > 0);
     assert.equal(zapis.placement.history.length, 1);

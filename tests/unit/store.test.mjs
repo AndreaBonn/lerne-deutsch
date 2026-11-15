@@ -18,7 +18,42 @@ import { test, describe } from "node:test";
 import assert from "node:assert/strict";
 import { loadEngine, makeStorage, CORE } from "./_harness.mjs";
 
-const KEY = "linguai.italiano.v2";
+const KEY = "linguai.tedesco.v1";
+
+describe("German storage isolation", () => {
+  const italianKey = "linguai.italiano.v2";
+  const legacyKey = "linguai.italiano.pl.v1";
+
+  test("Italian profiles stay byte-identical after a German save", () => {
+    const seed = {
+      [italianKey]: JSON.stringify({ schema: 2, xp: 73, lessons: { italian: { done: true } } }),
+      [legacyKey]: JSON.stringify({ schema: 1, xp: 91 })
+    };
+    const box = swiezy({ seed });
+    assert.equal(box.Core.state.xp, 0);
+    assert.deepEqual(Object.keys(box.Core.state.lessons), []);
+    box.Core.state.xp = 12;
+    box.Core.save();
+    box.flush();
+    assert.equal(box.stored("linguai.tedesco.v1").xp, 12);
+    for (const key of Object.keys(seed)) assert.equal(box.storage.getItem(key), seed[key]);
+  });
+
+  test("quota pruning preserves a 3 MB Italian profile", () => {
+    const storage = makeStorage();
+    const italian = JSON.stringify({ schema: 2, xp: 99, pad: "x".repeat(3 * 1024 * 1024) });
+    storage.setItem(italianKey, italian);
+    storage._setLimit(italian.length + 10000);
+    const box = swiezy({ storage });
+    box.Core.state.errors.large = { reps: 1, text: "x".repeat(20000) };
+    box.Core.state.xp = 18;
+    box.Core.save();
+    box.flush();
+    assert.equal(storage.getItem(italianKey), italian);
+    assert.equal(box.stored("linguai.tedesco.v1").xp, 18);
+    assert.deepEqual(Object.keys(box.Core.state.errors), []);
+  });
+});
 
 function swiezy(opts) {
   const box = loadEngine(opts);
@@ -254,8 +289,8 @@ describe("the v1 migration: duplicates in the other order", () => {
         "stare|być": { it: "stare", pl: "być", ef: 2.5, reps: 1, interval: 1, due: 500, lapses: 0 }
       }
     };
-    const box = loadEngine({ seed: { "linguai.italiano.pl.v1": JSON.stringify(v1) } });
-    box.Core.load();
+    const box = loadEngine();
+    box.Core.importState(JSON.stringify(v1));
 
     assert.equal(Object.keys(box.Core.state.srs).length, 1);
     assert.equal(box.Core.state.srs.stare.due, 100);

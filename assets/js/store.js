@@ -24,11 +24,8 @@
   var norm = global.Txt.norm;
   var notice = global.Notice.notice;
 
-  var STORE_KEY = "linguai.italiano.v2";
+  var STORE_KEY = "linguai.tedesco.v1";
   var SCHEMA = 2;
-
-  /* The key from before languages were split apart: read once, on migration. */
-  var STORE_KEY_V1 = "linguai.italiano.pl.v1";
 
   /* ---------------- Persistent state ---------------- */
   var defaultState = function () {
@@ -194,8 +191,6 @@
         save();
         return;
       }
-      var old = global.localStorage.getItem(STORE_KEY_V1);
-      if (old) { state = migrateV1(JSON.parse(old)); save(); }
     } catch (e) { /* first visit, or storage blocked */ }
   }
 
@@ -498,7 +493,6 @@
 
   global.Store = {
     KEY: STORE_KEY,
-    KEY_V1: STORE_KEY_V1,
     SCHEMA: SCHEMA,
     get state() { return state; },
     load: load, save: save, flush: flush,

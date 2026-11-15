@@ -147,7 +147,7 @@ async function zProfilem(page, profil) {
   await page.addInitScript(p => {
     if (window.sessionStorage.getItem("__zapisano")) return;
     window.sessionStorage.setItem("__zapisano", "1");
-    window.localStorage.setItem("linguai.italiano.v2",
+    window.localStorage.setItem("linguai.tedesco.v1",
       JSON.stringify(Object.assign({ schema: 2, settings: { lang: "pl" } }, p)));
   }, profil);
 }

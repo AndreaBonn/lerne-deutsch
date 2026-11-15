@@ -24,8 +24,7 @@ function pusty(o, opis) {
   assert.equal(Object.keys(o).length, 0, opis);
 }
 
-const KEY = "linguai.italiano.v2";
-const KEY_V1 = "linguai.italiano.pl.v1";
+const KEY = "linguai.tedesco.v1";
 const SCHEMA = 2;
 
 /** A saved state in the shape that really sits in localStorage. */
@@ -127,8 +126,8 @@ describe("the v1 -> v2 migration", () => {
       srs: { "andare|iść": { it: "andare", pl: "iść", ef: 2.5, reps: 3, interval: 8, due: 111, lapses: 0 } },
       xp: 120
     };
-    const box = loadEngine({ seed: { [KEY_V1]: JSON.stringify(v1) } });
-    box.Core.load();
+    const box = loadEngine();
+    box.Core.importState(JSON.stringify(v1));
     const srs = box.Core.state.srs;
     assert.deepEqual(Object.keys(srs), ["andare"]);
     assert.equal(srs.andare.tr.pl, "iść");
@@ -145,16 +144,16 @@ describe("the v1 -> v2 migration", () => {
         "stare|stać": { it: "stare", pl: "stać", ef: 2.5, reps: 4, interval: 9, due: 100, lapses: 2 }
       }
     };
-    const box = loadEngine({ seed: { [KEY_V1]: JSON.stringify(v1) } });
-    box.Core.load();
+    const box = loadEngine();
+    box.Core.importState(JSON.stringify(v1));
     assert.equal(Object.keys(box.Core.state.srs).length, 1);
     assert.equal(box.Core.state.srs.stare.due, 100, "the one with the nearer due date stays");
     assert.equal(box.Core.state.srs.stare.lapses, 2);
   });
 
   test("v1 existed in Polish only, so the explanation language goes back to pl", () => {
-    const box = loadEngine({ seed: { [KEY_V1]: JSON.stringify({ schema: 1, srs: {}, settings: { lang: "de" } }) } });
-    box.Core.load();
+    const box = loadEngine();
+    box.Core.importState(JSON.stringify({ schema: 1, srs: {}, settings: { lang: "de" } }));
     assert.equal(box.Core.state.settings.lang, "pl");
   });
 });

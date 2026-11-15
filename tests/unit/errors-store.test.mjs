@@ -75,7 +75,7 @@ describe("recording a mistake", () => {
     const box = silnik();
     box.sandbox.Errors.record(LEKCJA, 0, false);
     box.flush();
-    assert.equal(Object.keys(box.stored("linguai.italiano.v2").errors).length, 1);
+    assert.equal(Object.keys(box.stored("linguai.tedesco.v1").errors).length, 1);
   });
 
   test("a blocked storage does not interrupt the lesson", () => {

@@ -684,7 +684,7 @@ export function loadEngine(options) {
     },
     /** The state as it lies in localStorage - not in memory. */
     stored(key) {
-      const raw = storage.getItem(key || "linguai.italiano.v2");
+      const raw = storage.getItem(key || sandbox.Store.KEY);
       return raw === null ? null : JSON.parse(raw);
     },
 

@@ -13,7 +13,7 @@ import { test, describe } from "node:test";
 import assert from "node:assert/strict";
 import { loadEngine } from "./_harness.mjs";
 
-const KEY = "linguai.italiano.v2";
+const KEY = "linguai.tedesco.v1";
 const CO_ILE = 10;
 
 /** Passes n successive, DIFFERENT lessons: each counts as finished. */

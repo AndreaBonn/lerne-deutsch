@@ -156,7 +156,7 @@ test("the daily session strings exist in five languages", async ({ page }) => {
 async function profil(page, p) {
   await page.addInitScript(x => {
     if (sessionStorage.getItem("seeded")) return;
-    localStorage.setItem("linguai.italiano.v2", JSON.stringify(x));
+    localStorage.setItem("linguai.tedesco.v1", JSON.stringify(x));
     sessionStorage.setItem("seeded", "1");
   }, p);
 }

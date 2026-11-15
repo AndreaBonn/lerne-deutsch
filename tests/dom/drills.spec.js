@@ -131,7 +131,7 @@ test("each topic shows an Italian sample of what it drills", async ({ page }) =>
 test("a topic whose lesson is not passed says so, a passed one does not", async ({ page }) => {
   await page.addInitScript(() => {
     if (sessionStorage.getItem("seeded")) return;
-    localStorage.setItem("linguai.italiano.v2", JSON.stringify({ schema: 2, onboarded: true,
+    localStorage.setItem("linguai.tedesco.v1", JSON.stringify({ schema: 2, onboarded: true,
       lessons: { "a1-u02-l2": { attempts: 1, score: 9, total: 10, best: 0.9, done: true, ts: 1 } },
       stats: { correct: 9, wrong: 1, lessonsDone: 1, days: {} } }));
     sessionStorage.setItem("seeded", "1");

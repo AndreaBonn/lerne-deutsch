@@ -11,7 +11,7 @@ async function otworz(page, lang) {
   if (lang) {
     await page.addInitScript(l => {
       if (sessionStorage.getItem("seeded")) return;
-      localStorage.setItem("linguai.italiano.v2", JSON.stringify({ schema: 2, onboarded: true, settings: { lang: l } }));
+      localStorage.setItem("linguai.tedesco.v1", JSON.stringify({ schema: 2, onboarded: true, settings: { lang: l } }));
       sessionStorage.setItem("seeded", "1");
     }, lang);
   }

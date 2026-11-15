@@ -28,12 +28,12 @@ async function przygotuj(page, opcje) {
     window.__llmZapytania = 0;
     if (cfg.key) window.localStorage.setItem("linguai.llm.v1", JSON.stringify({ openai: cfg.key }));
 
-    const raw = window.localStorage.getItem("linguai.italiano.v2");
+    const raw = window.localStorage.getItem("linguai.tedesco.v1");
     const state = raw ? JSON.parse(raw) : { schema: 2, settings: {} };
     state.settings = state.settings || {};
     state.settings.llmConsent = true;
     state.settings.lang = "pl";
-    window.localStorage.setItem("linguai.italiano.v2", JSON.stringify(state));
+    window.localStorage.setItem("linguai.tedesco.v1", JSON.stringify(state));
 
     const czekaj = new Promise((r) => { window.__llmGotowy = r; });
     Object.defineProperty(window, "Llm", {
