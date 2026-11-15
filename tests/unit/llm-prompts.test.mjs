@@ -27,16 +27,17 @@ function promptsAndRules() {
 }
 
 const TASK = {
-  question: "Ordina un caffè.",
-  accepted: ["vorrei un caffè", "un caffè per favore"],
-  given: "prendo un caffè"
+  question: "Bestelle einen Kaffee.",
+  accepted: ["ich möchte einen Kaffee", "einen Kaffee bitte"],
+  given: "ich nehme einen Kaffee"
 };
 
 describe("the prompt", () => {
   test("carries the language of the explanations", () => {
     const R = prompts();
     assert.ok(R.judge("pl", TASK).system.indexOf("Polish") > 0);
-    assert.ok(R.judge("de", TASK).system.indexOf("German") > 0);
+    assert.match(R.judge("it", TASK).system, /Write the commento in Italian:/);
+    assert.match(R.judge("de", TASK).system, /Write the commento in English:/);
     /* An unknown code must still produce a usable instruction. */
     assert.ok(R.judge("xx", TASK).system.indexOf("English") > 0);
     /* Including a code that names something Object.prototype owns: a plain
@@ -49,9 +50,17 @@ describe("the prompt", () => {
   test("carries the question, the model answers and what the student wrote", () => {
     const R = prompts();
     const u = R.judge("pl", TASK).user;
-    assert.ok(u.indexOf("Ordina un caff") >= 0);
-    assert.ok(u.indexOf("vorrei un caff") >= 0);
-    assert.ok(u.indexOf("prendo un caff") >= 0);
+    assert.ok(u.indexOf("Bestelle einen Kaffee") >= 0);
+    assert.ok(u.indexOf("ich möchte einen Kaffee") >= 0);
+    assert.ok(u.indexOf("ich nehme einen Kaffee") >= 0);
+  });
+
+  test("judges German conservatively and keeps the verdict contract", () => {
+    const s = prompts().judge("it", TASK).system;
+    assert.match(s, /grammatically correct German/);
+    assert.match(s, /When in doubt, answer NO/);
+    assert.match(s, /\{"esito":"SI","commento":"\.\.\."\}/);
+    assert.match(s, /\{"esito":"NO","commento":"\.\.\."\}/);
   });
 
   test("the student's text sits in a labelled field, not in the instruction", () => {
@@ -76,17 +85,14 @@ describe("the prompt", () => {
       "the number must reach the model, not just the constant");
   });
 
-  /* The course itself ignores case, accents and punctuation when it compares
-     an answer. A judge that marks them anyway is a second standard inside one
-     course, and the student meets whichever one the lesson happens to use. */
-  test("it marks to the same standard the course does", () => {
-    const R = prompts();
-    const s = R.judge("pl", TASK).system;
-    assert.ok(s.indexOf("missing accent") > 0);
-    /* And the positive half: what IS still a reason to refuse. Without this
-       the rule above could be widened into "typos never count" and the test
-       would go on passing. */
-    assert.ok(s.indexOf("Wrong verb ending") > 0);
+  test("judge rejects bare umlaut omissions but tolerates D7 near spellings", () => {
+    const s = prompts().judge("en", TASK).system;
+    assert.match(s, /missing umlaut without transcription.*error.*NO/);
+    assert.match(s, /Madchen.*Mädchen/);
+    assert.match(s, /ae\/oe\/ue\/ss.*lowercase nouns.*nearly correct/);
+    assert.match(s, /Do not reject solely for these.*absent punctuation/);
+    assert.match(s, /Wrong verb ending.*NO/);
+    assert.doesNotMatch(s, /ignoring case, accents|missing accent, a stray capital/);
   });
 
   test("a task missing every field still produces a prompt", () => {
@@ -99,15 +105,16 @@ describe("the prompt", () => {
 });
 
 describe("the reading of a composition", () => {
-  const ZADANIE = { title: "La mia giornata", prompt: "Racconta una giornata tipo." };
-  const TEKST = "Ieri sono andato al mare e ho mangiato un gelato.";
+  const ZADANIE = { title: "Mein Alltag", prompt: "Beschreibe einen typischen Tag." };
+  const TEKST = "Gestern war ich am Meer und habe ein Eis gegessen.";
 
   test("carries the task, the text, and the language to answer in", () => {
     const R = prompts();
     const p = R.writing("pl", ZADANIE, TEKST);
     assert.ok(p.system.indexOf("Polish") > 0);
-    assert.ok(p.user.indexOf("La mia giornata") >= 0);
-    assert.ok(p.user.indexOf("ho mangiato un gelato") >= 0);
+    assert.match(p.system, /written in German/);
+    assert.ok(p.user.indexOf("Mein Alltag") >= 0);
+    assert.ok(p.user.indexOf("habe ein Eis gegessen") >= 0);
   });
 
   test("asks for something the student can act on", () => {
@@ -121,8 +128,16 @@ describe("the reading of a composition", () => {
     assert.ok(s.indexOf("Do not") > 0 && s.indexOf("invent problems") > 0);
   });
 
+  test("writing corrects bare umlaut omissions while tolerating D7 near spellings", () => {
+    const s = prompts().writing("en", ZADANIE, TEKST).system;
+    assert.match(s, /Correct a missing umlaut without transcription.*Madchen.*Mädchen/);
+    assert.match(s, /Tolerate ae\/oe\/ue\/ss transcriptions and lowercase nouns/);
+    assert.match(s, /Ignore absent punctuation/);
+    assert.doesNotMatch(s, /Say nothing about.*accents/);
+  });
+
   /* A reading pitched above the level is correct and useless: the learner is
-     handed Italian they have not met. The level exists in the data and the
+     handed German they have not met. The level exists in the data and the
      only thing missing was passing it on. */
   test("the level of the task reaches the model", () => {
     const R = prompts();
@@ -133,7 +148,7 @@ describe("the reading of a composition", () => {
        reads exactly like a real one. */
     const bez = R.writing("pl", ZADANIE, TEKST).system;
     assert.ok(bez.indexOf("CEFR") < 0, bez.slice(0, 120));
-    assert.ok(bez.indexOf("written in Italian by a learner.") > 0);
+    assert.ok(bez.indexOf("written in German by a learner.") > 0);
   });
 
   test("a novel is cut rather than refused", () => {
@@ -178,7 +193,8 @@ describe("the exam: what the model is told", () => {
   test("the level reaches the model, and the exam is named", () => {
     const p = prompts().esame("pl", "scritta", TRACCIA, "Gentile ufficio…", "B1");
     assert.match(p.system, /level B1/);
-    assert.match(p.system, /CILS B1 Cittadinanza/);
+    assert.match(p.system, /German/);
+    assert.match(p.system, /in the style of Goethe B1 \(an unofficial preview\)/);
   });
 
   test("marks, verdicts and predictions are all three forbidden by name", () => {
@@ -208,10 +224,16 @@ describe("the exam: what the model is told", () => {
     const pismo = R.esame("pl", "scritta", TRACCIA, "Gentile ufficio", "B1");
     assert.match(mowa.system, /Say nothing about spelling/);
     assert.match(pismo.system, /Spelling and punctuation count here/);
+    assert.match(mowa.system, /including umlauts, transcriptions and noun capitals/);
+    assert.doesNotMatch(mowa.system, /Correct a missing umlaut/);
+    assert.match(pismo.system, /Correct a missing umlaut without transcription.*Madchen.*Mädchen/);
+    assert.match(pismo.system, /Tolerate ae\/oe\/ue\/ss transcriptions and lowercase nouns/);
+    assert.doesNotMatch(pismo.system, /Say nothing about spelling/);
   });
 
   test("the language of the explanations is passed on", () => {
-    assert.match(prompts().esame("de", "scritta", TRACCIA, "x", "B1").system, /German/);
+    assert.match(prompts().esame("it", "scritta", TRACCIA, "x", "B1").system,
+      /most worth fixing, in Italian\./);
   });
 
   test("the candidate's text sits in a labelled field and is called data", () => {
@@ -225,6 +247,37 @@ describe("the exam: what the model is told", () => {
     for (const bad of [null, undefined, {}]) {
       const p = R.esame("pl", "scritta", bad, null);
       assert.ok(p.system.length > 0 && typeof p.user === "string", String(bad));
+    }
+  });
+});
+
+describe("the conversation partner", () => {
+  test("chat corrects bare umlaut omissions but tolerates D7 near spellings", () => {
+    const s = prompts().chat("en", "A2", null, "Ein Madchen").system;
+    assert.match(s, /Correct a missing umlaut without transcription.*Madchen.*Mädchen/);
+    assert.match(s, /Tolerate ae\/oe\/ue\/ss transcriptions and lowercase nouns/);
+    assert.match(s, /Ignore absent punctuation/);
+    assert.doesNotMatch(s, /say nothing about accents, capitals/);
+  });
+
+  test("speaks German and writes separate corrections in the learner's language", () => {
+    const p = prompts().chat("it", "A2", null, "Ich wohne in Berlin.");
+    assert.match(p.system, /speaking German/);
+    assert.match(p.system, /a friendly German speaker/);
+    assert.match(p.system, /IN GERMAN/);
+    assert.match(p.system, /stay in German even if/);
+    assert.match(p.system, /in Italian:/);
+    assert.match(p.system, /\{"risposta":"\.\.\.","correzione":"\.\.\."\}/);
+    assert.equal(p.user, "<message>Ich wohne in Berlin.</message>");
+  });
+
+  test("all five explanation languages reach every prompt", () => {
+    const R = prompts();
+    for (const [code, name] of Object.entries({ it: "Italian", en: "English", es: "Spanish", fr: "French", pl: "Polish" })) {
+      for (const p of [R.judge(code, TASK), R.writing(code, {}, "Text"),
+        R.esame(code, "scritta", {}, "Text"), R.chat(code, "A2", {}, "Text")]) {
+        assert.ok(p.system.includes("in " + name), code + ": " + p.system);
+      }
     }
   });
 });
