@@ -37,7 +37,7 @@ import edge_tts
 
 ROOT = Path(__file__).resolve().parent.parent
 PHONETICS = ROOT / "data" / "core" / "phonetics.js"
-VOICE = "it-IT-IsabellaNeural"
+VOICE = "de-DE-KatjaNeural"
 
 
 def czytaj_zbiory() -> list[dict]:

@@ -3,7 +3,7 @@
 # requires-python = ">=3.10"
 # dependencies = ["edge-tts>=7.0"]
 # ///
-"""Generates the MP3 files for every Italian string in the course.
+"""Generates the MP3 files for every German string in the course.
 
 Input : scripts/audio-strings.json  (produced by scripts/extract_strings.mjs)
 Output: audio/<xx>/<hash>.mp3  and  data/audio-index.js
@@ -38,33 +38,11 @@ AUDIO_DIR = ROOT / "audio"
 INDEX_FILE = ROOT / "data" / "audio-index.js"
 STRINGS_FILE = ROOT / "scripts" / "audio-strings.json"
 
-VOICE_PRIMARY = "it-IT-IsabellaNeural"
-VOICE_OTHER = "it-IT-GiuseppeMultilingualNeural"
+VOICE_PRIMARY = "de-DE-KatjaNeural"
+VOICE_OTHER = "de-DE-ConradNeural"
 
-# Words the voice stresses on the wrong syllable, with the written accent that
-# puts it back. The student keeps reading "figurati": this spelling goes to the
-# synthesiser ONLY, and the file name stays the hash of the original sentence,
-# so a word added here re-records that sentence without moving its address.
-#
-# Every entry was heard, one word at a time, against the real course voice at
-# the real bitrate, and every occurrence was read in context before being added.
-# "seguito" is the entry that shows what "in context" has to mean: as a noun it
-# is "seguito", so the fix is only safe because both places the course uses the
-# word are the participle ("mi ha seguito" in cils.js, "chi ha seguito" in a
-# reading passage that is not voiced). A word whose two readings both occur does
-# NOT belong in this table: it needs splitting by sentence instead. Count the
-# occurrences in data/core/, not only in audio-strings.json — a word can enter
-# the spoken set later, and a table checked against the spoken half alone would
-# then be wrong without anyone touching it.
-STRESS_FIXES = {
-    "costano": "còstano",
-    "dormono": "dòrmono",
-    "falliscono": "fallìscono",
-    "figurati": "figùrati",
-    "imparano": "impàrano",
-    "ingannano": "ingànnano",
-    "seguito": "seguìto",
-}
+# German needs its own stress-fix list, built by listening to the chosen voices.
+STRESS_FIXES: dict[str, str] = {}
 
 BITRATE = "32k"
 SAMPLE_RATE = "24000"
@@ -209,6 +187,7 @@ async def main() -> int:
     if args.limit:
         todo = todo[: args.limit]
 
+    print(f"Primary voice: {VOICE_PRIMARY}; dialogue voice: {VOICE_OTHER}")
     print(f"napisów ogółem : {len(jobs)}")
     print(f"już wygenerowane: {len(jobs) - len([j for j in jobs if not target_path(j[2]).exists()])}")
     print(f"do wygenerowania: {len(todo)}")

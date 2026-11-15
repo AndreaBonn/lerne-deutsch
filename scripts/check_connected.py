@@ -26,7 +26,7 @@ the exercise has something to teach. If FAR — the narrator reads letters, and
 then the task "listen and say whether you heard a doubling" has no correct
 answer.
 
-The voice is the same one the course speaks with: `it-IT-IsabellaNeural`.
+The voice is the same one the course speaks with: `de-DE-KatjaNeural`.
 Testing system synthesis would answer no question at all, because the course
 does not use it outside the emergency fallback.
 
@@ -74,7 +74,7 @@ from pathlib import Path
 import edge_tts
 import numpy as np
 
-VOICE = "it-IT-IsabellaNeural"
+VOICE = "de-DE-KatjaNeural"
 
 # (phenomenon, written form, "as it sounds" form, what the exercise would teach)
 PROBY: list[tuple[str, str, str, str]] = [

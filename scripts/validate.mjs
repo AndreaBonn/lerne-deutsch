@@ -8,6 +8,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, join } from "node:path";
 import vm from "node:vm";
+import { scanValues } from "./neutral-letters.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -82,8 +83,8 @@ function run(path) {
   }
 }
 
-/* The language of explanations to check:  node scripts/validate.mjs [pl|en] */
-const LANG = process.argv[2] || "pl";
+/* The language of explanations to check: node scripts/validate.mjs [it|en|es|fr|pl] */
+const LANG = process.argv[2] || "it";
 
 run("assets/js/i18n.js");
 run("assets/js/i18n-merge.js");
@@ -408,40 +409,9 @@ const writeIds = new Set();
   if (z.tag) usedTags.push({ where: `zbiór ${z.id}`, tag: z.tag });
 });
 
-/* ---------------- The neutral layer: no student language ----------------
-   Checked against the DATA, not against the text of the file. A grep over
-   the file errs both ways: a Polish comment looks like a leak, and a Spanish
-   "ñ" in the data passes if nobody happened to look for it. So we read the
-   values of the neutral layer alone, BEFORE the overlay is applied.
-
-   The set of letters: the ones Italian never uses. The Italian à è é ì í ò ó
-   ù ú are allowed and must not enter here, because "perché" is correct
-   Italian.
-
-   THE LIMIT OF THIS GATE, so that nobody takes it for more than it is: it
-   catches only letters outside the Italian alphabet. Neither the English
-   "house" nor the Polish "dziadek" will be caught — there is nothing in
-   them to catch. There is no automaton for that and what remains is reading
-   the data with your eyes. */
-const OBCE_LITERY = /[ąęłżźćńśñçäöüßğşıåæøđčšžřůõ]/i;
-
-function skanujNeutralne(wezel, gdzie, wynik, glebokosc) {
-  if (glebokosc > 8 || wezel == null) return;
-  if (typeof wezel === "string") {
-    if (OBCE_LITERY.test(wezel)) wynik.push(`${gdzie}: „${wezel.slice(0, 60)}"`);
-    return;
-  }
-  if (Array.isArray(wezel)) {
-    wezel.forEach((v, i) => skanujNeutralne(v, `${gdzie}[${i}]`, wynik, glebokosc + 1));
-    return;
-  }
-  if (typeof wezel === "object") {
-    Object.keys(wezel).forEach(k => skanujNeutralne(wezel[k], `${gdzie}.${k}`, wynik, glebokosc + 1));
-  }
-}
-
-const wyciekiJezyka = [];
-skanujNeutralne(neutralneDane, "core", wyciekiJezyka, 0);
+/* Scan the snapshot taken before overlays add explanation-language text. */
+const wyciekiJezyka = scanValues(neutralneDane, "core")
+  .map(issue => issue.path + ": " + issue.kind + " " + issue.values.join(", "));
 wyciekiJezyka.slice(0, 10).forEach(w => {
   errors.push(`Warstwa neutralna zawiera język ucznia — ${w}`);
 });

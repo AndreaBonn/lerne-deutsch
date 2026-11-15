@@ -446,7 +446,7 @@
       Core.toast(t("set.retentionSaved"));
     });
     el().querySelector(".js-test").addEventListener("click", function () {
-      Audio2.speak("Ciao! Sono la tua voce italiana. Andiamo a studiare insieme.");
+      Audio2.speak("Hallo! Ich bin deine deutsche Stimme. Lass uns zusammen lernen.");
     });
 
     /* The three controls of the return card. Each one is queried rather than

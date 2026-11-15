@@ -18,7 +18,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
 /* The sentences spoken by the engine and absent from the data files. */
 const EXTRA = [
-  "Ciao! Sono la tua voce italiana. Andiamo a studiare insieme."
+  "Hallo! Ich bin deine deutsche Stimme. Lass uns zusammen lernen."
 ];
 
 const levels = [];

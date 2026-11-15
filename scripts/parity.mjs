@@ -1,13 +1,13 @@
 /* ============================================================
-   parity.mjs — does every language say the same as Polish?
+   parity.mjs — does every language say the same as Italian?
 
    The overlays join the neutral layer BY INDEX, so a shorter array is not a
    syntax error: it is a silent hole visible only in the browser, in one
    lesson, in one exercise. This script compares the SHAPE (keys and array
-   lengths, not content) of every overlay with the Polish one and prints the
+   lengths, not content) of every overlay with the Italian one and prints the
    differences.
 
-   Polish is the reference, because it is complete and checked.
+   Italian is the reference explanation language for the German course.
 
    Usage:  node scripts/parity.mjs [language-code …]
    With no arguments it checks every directory in data/i18n/.
@@ -20,7 +20,8 @@ import vm from "node:vm";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const I18N = join(ROOT, "data", "i18n");
-const REFERENCE = "pl";
+const REFERENCE = "it";
+console.log(`Overlay reference: ${REFERENCE}`);
 /* How many differences to print. All of them are always counted; this is
    only a readability threshold for the list. PARITY_MAX=0 prints everything. */
 const MAX_SHOWN = process.env.PARITY_MAX === undefined
@@ -170,7 +171,7 @@ if (!existsSync(join(I18N, REFERENCE))) {
    The "int:" entries are NOT meant to be the same in every language: the
    trap either exists or it does not, depending on what the student has in
    their head. So we compare them against the `for` DECLARATION in the
-   neutral layer, and not against Polish.
+   neutral layer, and not against Italian.
 
    Disabling the gate on this category (like FREE_FIELDS for "theory") would
    be simpler and worse: a shorter list looks exactly like a list, so a
@@ -204,7 +205,7 @@ for (const lang of langs) {
   const bag = loadLang(lang);
   const problems = [];
 
-  /* The "int:" keys take a separate path: presence is decided by `for`, not by Polish. */
+  /* The "int:" keys take a separate path: presence is decided by `for`, not by Italian. */
   const zwykle = refKeys.filter(k => !INT.has(k));
 
   zwykle.filter(k => !(k in bag)).forEach(k => problems.push(`${k}: brak całego wpisu`));
