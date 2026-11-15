@@ -1,1 +1,1 @@
-LINGUAI.registerLevel({ code: "A1", cefrLabel: "A1", dataFiles: ["a1-01.js", "library-a1.js"] });
+LINGUAI.registerLevel({ code: "A1", cefrLabel: "A1", dataFiles: ["a1-01.js", "a1-02.js", "library-a1.js"] });
