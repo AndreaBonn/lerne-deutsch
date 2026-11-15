@@ -14,7 +14,11 @@
     { key: "konj1", labelIt: "Konjunktiv I", kind: "simple" },
     { key: "imper", labelIt: "Imperativ", kind: "simple" }
   ];
-  var REG = { praes: ["e", "st", "t", "en", "t", "en"] };
+  var REG = {
+    praes: ["e", "st", "t", "en", "t", "en"],
+    praet: ["", "st", "", "n", "t", "n"],
+    strongPraet: ["", "st", "", "en", "t", "en"]
+  };
   var IRR = {
     "sein": {"praet": "war", "pp": "gewesen", "aux": "sein", "konj2": "wär", "praes": ["bin", "bist", "ist", "sind", "seid", "sind"]},
     "haben": {"praet": "hatte", "pp": "gehabt", "aux": "haben", "konj2": "hätt", "praes": ["habe", "hast", "hat", "haben", "habt", "haben"]},
@@ -138,9 +142,17 @@
     "ziehen": {"praet": "zog", "pp": "gezogen", "aux": "haben"},
   };
   var PRESENT_ONLY = { "möchten": ["möchte", "möchtest", "möchte", "möchten", "möchtet", "möchten"] };
+  var SEIN_VERBS = Object.keys(IRR).filter(function (inf) {
+    return IRR[inf].aux === "sein";
+  }).concat([
+    "reisen", "wandern", "spazieren", "marschieren", "passieren", "landen",
+    "starten", "klettern", "segeln", "aufstehen", "aufwachen", "einschlafen",
+    "erblühen", "folgen", "begegnen", "scheitern", "erwachen", "misslingen"
+  ]);
   var COMMON = ["machen"];
 
   global.VERB_TABLES = {
-    PERSONS: PERSONS, TENSES: TENSES, REG: REG, IRR: IRR, PRESENT_ONLY: PRESENT_ONLY, COMMON: COMMON
+    PERSONS: PERSONS, TENSES: TENSES, REG: REG, IRR: IRR, PRESENT_ONLY: PRESENT_ONLY,
+    SEIN_VERBS: SEIN_VERBS, COMMON: COMMON
   };
 })(window);

@@ -8,8 +8,9 @@ const golden = JSON.parse(readFileSync(new URL('./verbs-de-golden.json', import.
 for (const tense of Object.keys(golden.machen)) {
   describe(tense, () => {
     for (const [inf, table] of Object.entries(golden)) {
-      const deferred = tense !== 'praes' ? 'implement in T1.13-T1.19'
-        : inf === 'aufstehen' ? 'implement in T1.20'
+      const deferred = !['praes', 'praet', 'perf', 'plusq', 'fut1', 'fut2'].includes(tense)
+        ? `implement in T1.${({ konj2: 17, konj2Verg: 17, konj1: 18, imper: 19 })[tense]}`
+        : inf === 'aufstehen' && ['praes', 'praet'].includes(tense) ? 'implement in T1.20'
           : inf === 'sich waschen' ? 'implement in T1.21' : undefined;
       test(`${inf}: ${tense}`, deferred ? { skip: deferred } : {}, () => {
         const actual = V.conjugate(inf, tense);
@@ -38,6 +39,26 @@ describe('weak/strong Präsens spelling', () => {
   };
   for (const [inf, expected] of Object.entries(cases)) {
     test(inf, () => assert.deepEqual(Array.from(V.conjugate(inf, 'praes') || []), expected));
+  }
+});
+
+describe('T1.13 Präteritum spelling and mixed verbs', () => {
+  const cases = {
+    arbeiten: ['arbeitete', 'arbeitetest', 'arbeitete', 'arbeiteten', 'arbeitetet', 'arbeiteten'],
+    reden: ['redete', 'redetest', 'redete', 'redeten', 'redetet', 'redeten'],
+    atmen: ['atmete', 'atmetest', 'atmete', 'atmeten', 'atmetet', 'atmeten'],
+    rechnen: ['rechnete', 'rechnetest', 'rechnete', 'rechneten', 'rechnetet', 'rechneten'],
+    öffnen: ['öffnete', 'öffnetest', 'öffnete', 'öffneten', 'öffnetet', 'öffneten'],
+    lernen: ['lernte', 'lerntest', 'lernte', 'lernten', 'lerntet', 'lernten'],
+    denken: ['dachte', 'dachtest', 'dachte', 'dachten', 'dachtet', 'dachten'],
+    kennen: ['kannte', 'kanntest', 'kannte', 'kannten', 'kanntet', 'kannten'],
+    stehen: ['stand', 'standest', 'stand', 'standen', 'standet', 'standen'],
+    lesen: ['las', 'lasest', 'las', 'lasen', 'last', 'lasen'],
+    heißen: ['hieß', 'hießest', 'hieß', 'hießen', 'hießt', 'hießen'],
+    bieten: ['bot', 'botest', 'bot', 'boten', 'botet', 'boten']
+  };
+  for (const [inf, expected] of Object.entries(cases)) {
+    test(inf, () => assert.deepEqual(Array.from(V.conjugate(inf, 'praet') || []), expected));
   }
 });
 
@@ -110,4 +131,88 @@ test('fullTable exposes each contracted tense and fresh conjugation rows', () =>
   assert.deepEqual(Array.from(table.praes), golden.machen.praes);
   table.praes[0] = 'changed';
   assert.equal(V.fullTable('machen').praes[0], 'mache');
+});
+
+describe('T1.14 Partizip II', () => {
+  const cases = {
+    machen: 'gemacht', arbeiten: 'gearbeitet', reden: 'geredet',
+    atmen: 'geatmet', rechnen: 'gerechnet', öffnen: 'geöffnet',
+    lernen: 'gelernt', wandern: 'gewandert', sammeln: 'gesammelt',
+    fahren: 'gefahren', nehmen: 'genommen', bringen: 'gebracht',
+    studieren: 'studiert', besuchen: 'besucht', verkaufen: 'verkauft',
+    erklären: 'erklärt', entdecken: 'entdeckt', empören: 'empört',
+    gehören: 'gehört', missachten: 'missachtet', zerstören: 'zerstört',
+    aufmachen: 'aufgemacht', aufstehen: 'aufgestanden',
+    einkaufen: 'eingekauft', ausprobieren: 'ausprobiert',
+    antworten: 'geantwortet', angeln: 'geangelt', ankern: 'geankert',
+    zupfen: 'gezupft', zucken: 'gezuckt', zünden: 'gezündet', zurren: 'gezurrt',
+    sein: 'gewesen', werden: 'geworden',
+    // be-/er-/ge-/zer- belong to the stem here, not to an inseparable prefix
+    beten: 'gebetet', bellen: 'gebellt', beben: 'gebebt', erben: 'geerbt',
+    ernten: 'geerntet', geigen: 'gegeigt', zerren: 'gezerrt'
+  };
+  for (const [inf, expected] of Object.entries(cases)) {
+    test(inf, () => assert.equal(V.participle(inf), expected));
+  }
+});
+
+describe('T1.15 perfect auxiliaries in de-DE', () => {
+  const cases = {
+    reisen: ['ist gereist', 'war gereist'],
+    fahren: ['ist gefahren', 'war gefahren'],
+    studieren: ['hat studiert', 'hatte studiert'],
+    stehen: ['hat gestanden', 'hatte gestanden'],
+    bleiben: ['ist geblieben', 'war geblieben'],
+    aufstehen: ['ist aufgestanden', 'war aufgestanden'],
+    aufmachen: ['hat aufgemacht', 'hatte aufgemacht'],
+    einkaufen: ['hat eingekauft', 'hatte eingekauft'],
+    wandern: ['ist gewandert', 'war gewandert'],
+    passieren: ['ist passiert', 'war passiert'],
+    sterben: ['ist gestorben', 'war gestorben'],
+    wachsen: ['ist gewachsen', 'war gewachsen'],
+    erblühen: ['ist erblüht', 'war erblüht'],
+    aufwachen: ['ist aufgewacht', 'war aufgewacht'],
+    einschlafen: ['ist eingeschlafen', 'war eingeschlafen'],
+    folgen: ['ist gefolgt', 'war gefolgt'],
+    begegnen: ['ist begegnet', 'war begegnet'],
+    scheitern: ['ist gescheitert', 'war gescheitert'],
+    erwachen: ['ist erwacht', 'war erwacht']
+  };
+  for (const [inf, [perfect, pluperfect]] of Object.entries(cases)) {
+    test(inf, () => {
+      assert.equal(V.conjugate(inf, 'perf')?.[2], perfect);
+      assert.equal(V.conjugate(inf, 'plusq')?.[2], pluperfect);
+    });
+  }
+  test('SEIN_VERBS is available to auxiliary drills', () => {
+    const tables = loadEngine({ files: VERBS }).sandbox.VERB_TABLES;
+    assert.ok(tables.SEIN_VERBS.includes('reisen'));
+    assert.ok(tables.SEIN_VERBS.includes('fahren'));
+    assert.equal(tables.SEIN_VERBS.includes('stehen'), false);
+  });
+});
+
+describe('T1.16 future tenses', () => {
+  const cases = {
+    reisen: ['werde reisen', 'werde gereist sein'],
+    bleiben: ['werde bleiben', 'werde geblieben sein'],
+    stehen: ['werde stehen', 'werde gestanden haben'],
+    aufmachen: ['werde aufmachen', 'werde aufgemacht haben'],
+    studieren: ['werde studieren', 'werde studiert haben']
+  };
+  for (const [inf, [future, futurePerfect]] of Object.entries(cases)) {
+    test(inf, () => {
+      assert.equal(V.conjugate(inf, 'fut1')?.[0], future);
+      assert.equal(V.conjugate(inf, 'fut2')?.[0], futurePerfect);
+    });
+  }
+});
+
+test('new tense rows remain independent across conjugate and fullTable calls', () => {
+  for (const tense of ['praet', 'perf', 'plusq', 'fut1', 'fut2']) {
+    const forms = V.conjugate('machen', tense);
+    assert.deepEqual(Array.from(forms || []), golden.machen[tense]);
+    forms[0] = 'changed';
+    assert.deepEqual(Array.from(V.fullTable('machen')[tense] || []), golden.machen[tense]);
+  }
 });

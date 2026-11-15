@@ -2,6 +2,11 @@
   "use strict";
 
   var D = global.VERB_TABLES;
+  var PARTICIPLE_PREFIXES = /^(zurück|zusammen|weiter|vorbei|heraus|hinein|herunter|hinauf|auf|aus|ein|ab|an|bei|los|mit|nach|vor|weg|zu)/;
+  var INSEPARABLE_PREFIXES = /^(be|ver|er|ent|emp|ge|miss|zer)/;
+  var UNSPLIT_VERBS = /^(antworten|angeln|ankern|zupfen|zucken|zurren)$/;
+  /* be-, er-, ge-, zer- that are part of the stem, so the participle keeps ge-. */
+  var STEM_INITIAL_VERBS = /^(beten|bellen|beben|erben|ernten|geigen|zerren)$/;
 
   function stemOf(inf) {
     return inf.replace(/(?:en|n)$/, "");
@@ -21,14 +26,62 @@
       if (changed && person === 1 && /st$/.test(currentStem)) ending = "";
       if (changed && person === 2 && /t$/.test(currentStem)) ending = "";
       if (!changed && (person === 1 || person === 2 || person === 4) &&
-          /(?:[dt]|(?:ch|[^aeiouäöüyrlhmn])[mn])$/.test(stem)) ending = "e" + ending;
+          needsE(stem)) ending = "e" + ending;
       return currentStem + ending;
     });
   }
 
+  function needsE(stem) {
+    return /(?:[dt]|(?:ch|[^aeiouäöüyrlhmn])[mn])$/.test(stem);
+  }
+
+  function preterite(inf) {
+    var entry = D.IRR[inf];
+    var stem = stemOf(inf);
+    var base = entry ? entry.praet : stem + (needsE(stem) ? "ete" : "te");
+    var weak = /e$/.test(base);
+    return (weak ? D.REG.praet : D.REG.strongPraet).map(function (ending, person) {
+      if (!weak && ((person === 1 && /[sßxzdt]$/.test(base)) ||
+          (person === 4 && /[dt]$/.test(base)))) ending = "e" + ending;
+      return base + ending;
+    });
+  }
+
+  function participle(inf) {
+    var entry = D.IRR[inf];
+    if (entry) return entry.pp;
+    var separated = !UNSPLIT_VERBS.test(inf) && inf.match(PARTICIPLE_PREFIXES);
+    if (separated) return separated[0] + participle(inf.slice(separated[0].length));
+    var stem = stemOf(inf);
+    var inseparable = INSEPARABLE_PREFIXES.test(inf) && !STEM_INITIAL_VERBS.test(inf);
+    var prefix = /ieren$/.test(inf) || inseparable ? "" : "ge";
+    return prefix + stem + (needsE(stem) ? "et" : "t");
+  }
+
+  function auxiliary(inf) {
+    if (D.SEIN_VERBS.indexOf(inf) !== -1) return "sein";
+    var separated = inf.match(PARTICIPLE_PREFIXES);
+    return separated ? auxiliary(inf.slice(separated[0].length)) : "haben";
+  }
+
+  function perfect(inf, tenseKey) {
+    var aux = auxiliary(inf);
+    var forms = tenseKey === "plusq" ? preterite(aux) : present(aux);
+    var pp = participle(inf);
+    return forms.map(function (form) { return form + " " + pp; });
+  }
+
+  function future(inf, tenseKey) {
+    var tail = tenseKey === "fut2" ? participle(inf) + " " + auxiliary(inf) : inf;
+    return present("werden").map(function (form) { return form + " " + tail; });
+  }
+
   function conjugate(inf, tenseKey) {
-    if (tenseKey !== "praes") return null;
-    return present(inf);
+    if (tenseKey === "praes") return present(inf);
+    if (tenseKey === "praet") return preterite(inf);
+    if (tenseKey === "perf" || tenseKey === "plusq") return perfect(inf, tenseKey);
+    if (tenseKey === "fut1" || tenseKey === "fut2") return future(inf, tenseKey);
+    return null;
   }
 
   function fullTable(inf) {
@@ -39,6 +92,6 @@
 
   global.Verbs = {
     PERSONS: D.PERSONS, TENSES: D.TENSES, COMMON: D.COMMON, IRR: D.IRR,
-    conjugate: conjugate, fullTable: fullTable
+    conjugate: conjugate, fullTable: fullTable, participle: participle
   };
 })(window);
