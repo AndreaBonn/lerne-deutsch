@@ -1,32 +1,33 @@
 /* ============================================================
-   Textes dans la langue de l'élève (fr) pour data/core/curriculum-index.js
-   Les clés renvoient aux id de la couche neutre ; les tableaux se
-   joignent par index, leur longueur doit donc correspondre à core.
-   Vérifié par scripts/parity.mjs.
+   Learner-language text (fr) for data/core/curriculum-index.js
+   Level names and descriptions of the German course. Keys point
+   at ids in the neutral layer; all six levels are present so that
+   later levels need no change here.
+   Checked by scripts/parity.mjs.
    ============================================================ */
 LINGUAI.addStrings("fr", {
   "level:A1": {
     name: "Premier contact",
-    desc: "Tu te présentes, tu commandes, tu achètes, tu parles de toi et de ta journée. Présent, articles, genre et nombre, les premiers verbes irréguliers."
+    desc: "Vous vous présentez, commandez au café et au restaurant, demandez votre chemin et racontez votre week-end. Présent, articles au nominatif et à l'accusatif, verbes modaux, verbes séparables, Perfekt."
   },
   "level:A2": {
-    name: "Tu te débrouilles",
-    desc: "Tu parles du passé et de tes projets, et tu t'en sors en voyage, chez le médecin, à l'hôtel. Passato prossimo, imperfetto, futuro, pronoms compléments, impératif."
+    name: "En route",
+    desc: "Vous racontez votre enfance, réservez un voyage en train, décrivez des symptômes chez le médecin et écrivez un court courriel formel. Le datif, les subordonnées avec weil et dass, le Präteritum de sein, haben et des modaux, les verbes pronominaux, les prépositions avec datif ou accusatif."
   },
   "level:B1": {
-    name: "Autonomie",
-    desc: "Tu donnes ton avis, tu défends un argument, et tu affrontes l'administration italienne et un entretien d'embauche. Congiuntivo presente, pronoms groupés, ci/ne, propositions relatives, discours indirect."
+    name: "Dire ce que l'on pense",
+    desc: "Vous donnez votre avis, formulez des hypothèses, vous débrouillez avec les administrations et les contrats en Allemagne, en Autriche et en Suisse, et rapportez ce que disent les médias. Konjunktiv II, le passif, les relatives, le génitif, le Plusquamperfekt, les finales avec um ... zu et damit."
   },
   "level:B2": {
     name: "Aisance",
-    desc: "Tu discutes politique, économie, culture et technologie. Tu suis la presse et tu regardes des films sans sous-titres. Congiuntivo imperfetto et trapassato, phrases hypothétiques, le passif, passato remoto."
+    desc: "Vous débattez d'économie, d'environnement et de technologie, défendez une position et rapportez avec distance les paroles d'autrui. La déclinaison en -n, Konjunktiv I et discours indirect, le passif avec modaux, les concessives."
   },
   "level:C1": {
     name: "Précision",
-    desc: "Tu écris et tu parles en registre formel comme familier, et tu maîtrises la cohésion d'un texte. Les nombreuses valeurs de si, les verbes pronominaux (farcela, cavarsela), le passif avec andare/venire, le discours indirect."
+    desc: "Vous comprenez et reformulez des textes administratifs, reconnaissez le registre et condensez l'information dans des textes formels. Style nominal, Funktionsverbgefüge, connecteurs, modaux subjectifs, épithètes participiales."
   },
   "level:C2": {
     name: "Maîtrise",
-    desc: "Expressions figées, ironie, usages régionaux, la langue de la presse et de l'essai, nuances fines. Périphrases verbales, participes, pluriels des noms composés, concordance des temps complète."
+    desc: "Vous lisez et écrivez une prose d'essai dense et saisissez l'ironie, l'understatement et les variétés autrichienne et suisse. Épithète participiale étendue, pluriels doubles, dérivation, relatives avec dessen et wo(r)-, régimes des verbes et des adjectifs."
   }
 });

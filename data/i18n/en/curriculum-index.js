@@ -1,32 +1,33 @@
 /* ============================================================
    Learner-language text (en) for data/core/curriculum-index.js
-   Keys point at ids in the neutral layer; arrays merge by index,
-   so their length has to match core.
+   Level names and descriptions of the German course. Keys point
+   at ids in the neutral layer; all six levels are present so that
+   later levels need no change here.
    Checked by scripts/parity.mjs.
    ============================================================ */
 LINGUAI.addStrings("en", {
   "level:A1": {
     name: "First contact",
-    desc: "You introduce yourself, order, buy things, talk about yourself and your day. Present tense, articles, gender and number, the first irregular verbs."
+    desc: "You introduce yourself, order at a café and a restaurant, ask for directions and tell someone about your weekend. Present tense, articles in the nominative and accusative, modal verbs, separable verbs, the Perfekt."
   },
   "level:A2": {
-    name: "On your own",
-    desc: "You talk about the past and about plans, and you get things done while traveling, at the doctor's, at a hotel. Passato prossimo, imperfetto, futuro, object pronouns, the imperative."
+    name: "On the move",
+    desc: "You talk about your childhood, book a train trip, describe symptoms at the doctor's and write a short formal email. The dative, subordinate clauses with weil and dass, the Präteritum of sein, haben and the modals, reflexive verbs, prepositions with the dative or accusative."
   },
   "level:B1": {
-    name: "Standing on your own feet",
-    desc: "You give opinions, argue a point, and handle Italian bureaucracy and a job interview. Congiuntivo presente, combined pronouns, ci/ne, relative clauses, reported speech."
+    name: "Speaking your mind",
+    desc: "You give opinions and hypotheses, deal with offices and contracts in Germany, Austria and Switzerland, and report what the media say. Konjunktiv II, the passive, relative clauses, the genitive, the Plusquamperfekt, purpose clauses with um ... zu and damit."
   },
   "level:B2": {
     name: "Ease",
-    desc: "You discuss politics, the economy, culture and technology. You follow the press and watch movies without subtitles. Congiuntivo imperfetto and trapassato, conditional sentences, the passive, passato remoto."
+    desc: "You discuss economy, the environment and technology, defend a position and report other people's words at a distance. The n-declension, Konjunktiv I and reported speech, the passive with modals, concessive clauses."
   },
   "level:C1": {
     name: "Precision",
-    desc: "You write and speak in both formal and informal registers, and you control how a text holds together. The many uses of si, pronominal verbs (farcela, cavarsela), the passive with andare/venire, reported speech."
+    desc: "You understand and rephrase official texts, recognise register and condense information into formal writing. Nominal style, Funktionsverbgefüge, connectors, subjective modals, participial attributes."
   },
   "level:C2": {
     name: "Mastery",
-    desc: "Idiom, irony, regional usage, the language of the press and the essay, fine shades of meaning. Verbal periphrases, participles, plurals of compound nouns, full sequence of tenses."
+    desc: "You read and write dense essayistic prose and catch irony, understatement and Austrian and Swiss varieties. Extended participial attributes, double plurals, word formation, relative clauses with dessen and wo(r)-, fixed verb and adjective complements."
   }
 });

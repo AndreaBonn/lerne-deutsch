@@ -1,32 +1,33 @@
 /* ============================================================
-   Teksty w języku ucznia (pl) do data/core/curriculum-index.js
-   Klucze odsyłają do id z warstwy neutralnej; tablice łączą się
-   po indeksie, więc ich długość musi się zgadzać z core.
-   Sprawdza to gate parzystości w scripts/parity.mjs.
+   Learner-language text (pl) for data/core/curriculum-index.js
+   Level names and descriptions of the German course. Keys point
+   at ids in the neutral layer; all six levels are present so that
+   later levels need no change here.
+   Checked by scripts/parity.mjs.
    ============================================================ */
 LINGUAI.addStrings("pl", {
   "level:A1": {
     name: "Pierwszy kontakt",
-    desc: "Przedstawiasz się, zamawiasz, kupujesz, mówisz o sobie i swoim dniu. Czas teraźniejszy, rodzajniki, rodzaj i liczba, pierwsze czasowniki nieregularne."
+    desc: "Przedstawiasz się, zamawiasz w kawiarni i restauracji, pytasz o drogę i opowiadasz o swoim weekendzie. Czas teraźniejszy, rodzajniki w mianowniku i bierniku, czasowniki modalne, czasowniki rozdzielnie złożone, Perfekt."
   },
   "level:A2": {
-    name: "Radzę sobie sam",
-    desc: "Opowiadasz o przeszłości i planach, załatwiasz sprawy w podróży, u lekarza, w hotelu. Passato prossimo, imperfetto, futuro, zaimki dopełnienia, tryb rozkazujący."
+    name: "W drodze",
+    desc: "Opowiadasz o dzieciństwie, rezerwujesz podróż pociągiem, opisujesz objawy u lekarza i piszesz krótki formalny e-mail. Celownik, zdania podrzędne z weil i dass, Präteritum czasowników sein, haben i modalnych, czasowniki zwrotne, przyimki z celownikiem lub biernikiem."
   },
   "level:B1": {
-    name: "Próg samodzielności",
-    desc: "Wyrażasz opinie, argumentujesz, radzisz sobie z włoską biurokracją i rozmową o pracę. Congiuntivo presente, zaimki złożone, ci/ne, zdania względne, mowa zależna."
+    name: "Własne zdanie",
+    desc: "Wyrażasz opinie i hipotezy, załatwiasz sprawy w urzędach i przy umowach w Niemczech, Austrii i Szwajcarii oraz relacjonujesz to, co mówią media. Konjunktiv II, strona bierna, zdania względne, dopełniacz, Plusquamperfekt, zdania celowe z um ... zu i damit."
   },
   "level:B2": {
     name: "Swoboda",
-    desc: "Dyskutujesz o polityce, ekonomii, kulturze i technologii. Rozumiesz prasę i filmy bez napisów. Congiuntivo imperfetto i trapassato, okresy warunkowe, strona bierna, passato remoto."
+    desc: "Dyskutujesz o gospodarce, środowisku i technologii, bronisz swojego stanowiska i z dystansem przekazujesz cudze słowa. Deklinacja słaba na -n, Konjunktiv I i mowa zależna, strona bierna z czasownikami modalnymi, zdania przyzwalające."
   },
   "level:C1": {
-    name: "Skuteczność",
-    desc: "Piszesz i mówisz w rejestrze formalnym i nieformalnym, panujesz nad spójnością tekstu. Wartości si, czasowniki z zaimkami (farcela, cavarsela), strona bierna z andare/venire, mowa zależna."
+    name: "Precyzja",
+    desc: "Rozumiesz i parafrazujesz teksty urzędowe, rozpoznajesz rejestr i zagęszczasz informacje w tekstach formalnych. Styl nominalny, Funktionsverbgefüge, spójniki, modalne użycia subiektywne, określenia imiesłowowe."
   },
   "level:C2": {
-    name: "Biegłość",
-    desc: "Idiomatyka, ironia, regionalizmy, język prasy i eseju, niuanse znaczeniowe. Peryfrazy czasownikowe, imiesłowy, liczba mnoga nazw złożonych, pełna zgodność czasów."
+    name: "Mistrzostwo",
+    desc: "Czytasz i piszesz gęstą prozę eseistyczną oraz wychwytujesz ironię, niedopowiedzenie i odmiany austriacką i szwajcarską. Rozbudowane określenie imiesłowowe, podwójne liczby mnogie, słowotwórstwo, zdania względne z dessen i wo(r)-, rekcja czasowników i przymiotników."
   }
 });
