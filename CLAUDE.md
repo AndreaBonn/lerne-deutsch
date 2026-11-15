@@ -819,15 +819,15 @@ w pliku, i dlatego każdy z nich niesie swoje własne polecenie.
 
 | Co | Ile | Polecenie |
 |---|---|---|
-| Jednostki / lekcje / ćwiczenia | 37 / 170 / 1735 | `node scripts/baseline.mjs` |
-| Pozycje słownika / rozmowy / hasła gramatyczne | 1592 / 14 / 42 | `node scripts/baseline.mjs` |
-| Czytanki / zadania pisane / zbiory par minimalnych | 24 / 6 / 5 | `node scripts/baseline.mjs` |
-| Biblioteka: teksty / zdania / słowa | 6 / 213 / 2893 | `node scripts/baseline.mjs` |
+| Jednostki / lekcje / ćwiczenia | 3 / 15 / 145 | `node scripts/baseline.mjs` |
+| Pozycje słownika / rozmowy / hasła gramatyczne | 154 / 1 / 10 | `node scripts/baseline.mjs` |
+| Czytanki / zadania pisane / zbiory par minimalnych | 1 / 1 / 1 | `node scripts/baseline.mjs` |
+| Biblioteka: teksty / zdania / słowa | 1 / 53 / 478 | `node scripts/baseline.mjs` |
 | Typy ćwiczeń obecnych w danych | 13 | `node scripts/baseline.mjs` |
-| Nagrania | 4071 plików mp3, 46 MiB bajtów; 4070 skrótów w indeksie | `node scripts/baseline.mjs` |
-| Klucze interfejsu na język | 890 × 5 języków | `node scripts/baseline.mjs` |
+| Nagrania | 448 plików mp3, 5 MiB bajtów; 448 skrótów w indeksie | `node scripts/baseline.mjs` |
+| Klucze interfejsu na język | 952 × 5 języków | `node scripts/baseline.mjs` |
 | Kroje pisma | 7 plików woff2 w assets/fonts/, 155 KB | `node scripts/baseline.mjs` |
-| Pliki silnika | 77 w assets/js/, 16049 linii | `node scripts/baseline.mjs` |
+| Pliki silnika | 84 w assets/js/, 17253 linii | `node scripts/baseline.mjs` |
 
 Trzy rzeczy, których tabela nie mieści, a które trzeba przeczytać razem z nią.
 Wszystkie trzynaście typów ćwiczeń stoi w danych, ale `truefalse` (27 wystąpień) wyłącznie
