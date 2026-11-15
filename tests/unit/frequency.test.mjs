@@ -197,3 +197,23 @@ test("the default gap limit is twenty rows in frequency order", () => {
   const gaps = Array.from(Frequency.brakujace(words, course, {}));
   assert.deepEqual(gaps.map(gap => gap.haslo), words.slice(0, 20).map(([word]) => word));
 });
+
+import { tokenize, countForms } from "../../scripts/build_frequency.mjs";
+
+test('only sentence-initial capitals fold; German nouns keep their spelling', () => {
+  assert.deepEqual(tokenize('Der Hund sieht das Haus.'), ['der', 'Hund', 'sieht', 'das', 'Haus']);
+  assert.deepEqual(tokenize('Das Haus ist schön. Die Straße ist größer!'),
+    ['das', 'Haus', 'ist', 'schön', 'die', 'Straße', 'ist', 'größer']);
+  assert.deepEqual(tokenize('„Über die Brücke!“ Äpfel und Öl?'), ['über', 'die', 'Brücke', 'äpfel', 'und', 'Öl']);
+  assert.deepEqual(tokenize(''), []);
+});
+
+test('frequency counts retain nouns instead of excluding capitalised forms', () => {
+  const corpus = Array.from({ length: 6 }, (_, i) => `${i}\tdeu\tDer Hund sieht das Haus.`).join('\n');
+  const result = countForms(corpus + '\ninvalid\n7\tdeu\t');
+  assert.deepEqual(result.words, [['der', 6], ['Hund', 6], ['sieht', 6], ['das', 6], ['Haus', 6]]);
+  assert.equal(result.tokens, 30);
+  assert.equal(result.sentences, 6);
+  assert.deepEqual(countForms('').words, []);
+  assert.deepEqual(countForms('1\tdeu\tDer Hund.').words, []);
+});

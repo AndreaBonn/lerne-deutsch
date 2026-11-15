@@ -103,7 +103,7 @@ fissa cosa ogni unità presuppone). `c` e `d` sono `ok` fra loro. `e` è `seq` p
 - [x] T1.55 | F1 | Attributi `lang="it"` → `lang="de"` su ogni testo della lingua insegnata in `assets/js/*.js` e `index.html` | 0,5h | verify: `! grep -rn 'lang="it"\|lang=\\"it\\"' assets/js index.html` e test DOM in `heads.spec.js` (frase di lezione con `lang="de"`) | integrazione | dip: T0.01 | par: ok | rollback: revert | R6
 - [ ] T1.56 | F1 | `llm-prompts.js`: Italian → German nei prompt, `LANGS` (l.34) con it e senza de; righe di mutazione | 0,5h | verify: `node --test tests/unit/llm-prompts.test.mjs` (rosso) | unit | dip: T1.50 | par: ok | rollback: revert | R27
 - [ ] T1.57 | F1 | `parity.mjs:23` REFERENCE `it`; `validate.mjs` default `it`; `check-falsi-amici.mjs:30` LANGS it, en, es, fr, pl | 0,25h | verify: `node scripts/parity.mjs` stampa riferimento `it` (rosso: pl) | integrazione | dip: T1.50 | par: ok | rollback: revert | R17, R24
-- [ ] T1.58 | F1 | `build_frequency.mjs`: Tatoeba `deu`, maiuscola conservata per i sostantivi (piegata solo a inizio frase), test sulla tokenizzazione | 1h | verify: `node --test tests/unit/frequency.test.mjs` caso "Der Hund" → `Hund` (rosso) | unit | dip: T1.06 | par: ok | rollback: revert | R26
+- [x] T1.58 | F1 | `build_frequency.mjs`: Tatoeba `deu`, maiuscola conservata per i sostantivi (piegata solo a inizio frase), test sulla tokenizzazione | 1h | verify: `node --test tests/unit/frequency.test.mjs` caso "Der Hund" → `Hund` (rosso) | unit | dip: T1.06 | par: ok | rollback: revert | R26
 
 ### F1.F - Rebrand
 
