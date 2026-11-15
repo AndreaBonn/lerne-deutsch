@@ -86,11 +86,14 @@ function checkUI(lang, locale, ref, out) {
   refKeys.filter(k => k in bag).forEach(k => {
     const isPluralRef = ref[k] && typeof ref[k] === "object";
     const isPluralHere = bag[k] && typeof bag[k] === "object";
-    if (isPluralRef !== isPluralHere) {
+    /* A plain string in Italian and plural forms here is allowed: Italian has
+       two categories, Polish four, so the richer language may need forms the
+       reference never needed. The forms it does give must be complete. */
+    if (isPluralRef && !isPluralHere) {
       out.push(`ui.${k}: ${isPluralRef ? "formy liczby" : "napis"} w ${REFERENCE}, ${isPluralHere ? "formy liczby" : "napis"} tutaj`);
       return;
     }
-    if (!isPluralRef) return;
+    if (!isPluralHere) return;
     needed.filter(c => !(c in bag[k])).forEach(c => out.push(`ui.${k}: brak formy „${c}" wymaganej przez ${locale}`));
   });
 }

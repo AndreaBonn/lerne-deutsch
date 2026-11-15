@@ -175,3 +175,25 @@ test('parity tolerates a per-language note but still reports a missing example',
   assert.match(missing.stdout, /lesson\.grammar\.examples: 2 elementów w it, 1 tutaj/);
 });
 
+/* Italian is the reference but has only two plural categories; Polish needs
+   few/many. A plural object where Italian has a plain string is therefore
+   allowed, provided it carries every category of its locale. The opposite
+   (plural in Italian, plain string here) still fails. */
+test('parity lets a richer language use plural forms where Italian has a string', () => {
+  const root = fixture({
+    'assets/js/i18n.js': 'window.I18n = { LOCALE: { it: "it-IT", en: "en-US", pl: "pl-PL" } };',
+    'data/core/interference.js': 'window.INTERFERENCE = [];',
+    'data/i18n/it/course.js': 'LINGUAI.addStrings("it", { lesson: { title: "T" } });',
+    'data/i18n/en/course.js': 'LINGUAI.addStrings("en", { lesson: { title: "T" } });',
+    'data/i18n/pl/course.js': 'LINGUAI.addStrings("pl", { lesson: { title: "T" } });',
+    'data/i18n/ui-it.js': 'LINGUAI.addUI("it", { cards: "{n} carte", days: { one: "{n} giorno", other: "{n} giorni" } });',
+    'data/i18n/ui-pl.js': 'LINGUAI.addUI("pl", { cards: { one: "a", few: "b", many: "c", other: "d" }, days: { one: "a", few: "b", many: "c", other: "d" } });',
+    'data/i18n/ui-en.js': 'LINGUAI.addUI("en", { cards: { one: "{n} card" }, days: "{n} days" });'
+  });
+  const richer = run(root, 'parity.mjs', ['pl']);
+  assert.equal(richer.status, 0, richer.stdout);
+  const broken = run(root, 'parity.mjs', ['en']);
+  assert.equal(broken.status, 1, broken.stdout);
+  assert.match(broken.stdout, /ui\.cards: brak formy „other"/);
+  assert.match(broken.stdout, /ui\.days: formy liczby w it, napis tutaj/);
+});
