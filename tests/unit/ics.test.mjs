@@ -52,6 +52,10 @@ function wartosc(tekst, nazwa) {
 }
 
 describe("ics: the shape of the file", () => {
+  test("the product identifier names the German course", () => {
+    assert.equal(wartosc(plik(), "PRODID"), "-//LinguAI//Deutsch lernen//PL");
+  });
+
   test("a calendar with one recurring event and an alarm", () => {
     const out = plik();
     assert.match(out, /^BEGIN:VCALENDAR\r\n/);

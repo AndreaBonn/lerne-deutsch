@@ -93,7 +93,7 @@ test("the reminder button really puts a calendar file on disk", async ({ page })
     page.waitForEvent("download"),
     page.locator(".js-ics").click()
   ]);
-  expect(pobranie.suggestedFilename()).toBe("impara-italiano.ics");
+  expect(pobranie.suggestedFilename()).toBe("impara-tedesco.ics");
 
   /* The bytes, not the fact that something was clicked: a file a calendar
      refuses is the same as no reminder at all, and nothing on screen would

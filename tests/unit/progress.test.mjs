@@ -236,7 +236,7 @@ describe("the backup file", () => {
     box.Core.downloadBackup();
     const a = box.utworzone[box.utworzone.length - 1];
 
-    assert.equal(a.download, "impara-italiano-pl-2026-03-10.json");
+    assert.equal(a.download, "impara-tedesco-pl-2026-03-10.json");
     assert.equal(a.klikniecia, 1, "the link has to be clicked, otherwise nothing is downloaded");
     assert.equal(box.pobrania.blobs[0].type, "application/json");
   });

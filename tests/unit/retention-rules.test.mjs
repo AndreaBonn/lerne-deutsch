@@ -137,3 +137,23 @@ describe("retention: the number on the badge", () => {
     assert.equal(reguly().odznaka(undefined, TERAZ), 0);
   });
 });
+
+describe("retention: the reminder file leaving the course", () => {
+  function plikPrzypomnienia() {
+    const box = loadEngine({ files: [
+      "assets/js/ics.js", "assets/js/retention-rules.js", "assets/js/retention.js"
+    ] });
+    const S = box.sandbox;
+    S.I18n = { t: (k) => k, lang: "pl" };
+    S.Core = { state: {}, save() {} };
+    return box;
+  }
+
+  test("is saved as impara-tedesco.ics and the event id ends in @impara-tedesco", () => {
+    const box = plikPrzypomnienia();
+    const tekst = box.sandbox.Retention.pobierzPrzypomnienie(7, 0);
+    const a = box.utworzone[box.utworzone.length - 1];
+    assert.equal(a.download, "impara-tedesco.ics");
+    assert.match(tekst, /\r\nUID:linguai-\d+-\d+@impara-tedesco\r\n/);
+  });
+});

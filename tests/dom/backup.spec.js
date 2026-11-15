@@ -65,7 +65,7 @@ test("the button in the message downloads a file and moves the threshold", async
     page.waitForEvent("download"),
     przycisk.click()
   ]);
-  expect(plik.suggestedFilename()).toMatch(/^impara-italiano-.+\.json$/);
+  expect(plik.suggestedFilename()).toMatch(/^impara-tedesco-.+\.json$/);
 
   await expect(page.locator(".toast--stuck"), "komunikat znika po akcji").toHaveCount(0);
   expect(await page.evaluate(() => window.Core.backupDue()), "the threshold counted afresh").toBe(false);

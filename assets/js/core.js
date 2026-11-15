@@ -253,7 +253,7 @@
     var blob = new global.Blob([Store.exportState()], { type: "application/json" });
     var a = document.createElement("a");
     a.href = global.URL.createObjectURL(blob);
-    a.download = "impara-italiano-" + global.I18n.lang + "-" + today() + ".json";
+    a.download = "impara-tedesco-" + global.I18n.lang + "-" + today() + ".json";
     a.click();
     global.setTimeout(function () { global.URL.revokeObjectURL(a.href); }, 1000);
   }

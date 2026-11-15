@@ -529,7 +529,7 @@
       var blob = new Blob([Anki.toTsv(karty)], { type: "text/tab-separated-values" });
       var a = document.createElement("a");
       a.href = URL.createObjectURL(blob);
-      a.download = "impara-italiano-" + Core.today() + ".tsv";
+      a.download = "impara-tedesco-" + Core.today() + ".tsv";
       a.click();
       setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
       Core.toast(t("anki.exported", { n: karty.length }));

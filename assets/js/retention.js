@@ -208,7 +208,7 @@
       minuta: minuta,
       tytul: global.I18n.t("ret.icsTitle"),
       opis: global.I18n.t("ret.icsBody"),
-      uid: "linguai-" + Date.now() + "-" + Math.floor(Math.random() * 1e9) + "@impara-italiano",
+      uid: "linguai-" + Date.now() + "-" + Math.floor(Math.random() * 1e9) + "@impara-tedesco",
       teraz: Date.now()
     });
 
@@ -218,7 +218,7 @@
     var blob = new global.Blob([tekst], { type: "text/calendar;charset=utf-8" });
     var a = global.document.createElement("a");
     a.href = global.URL.createObjectURL(blob);
-    a.download = "impara-italiano.ics";
+    a.download = "impara-tedesco.ics";
     a.click();
     global.setTimeout(function () { global.URL.revokeObjectURL(a.href); }, 1000);
     return tekst;

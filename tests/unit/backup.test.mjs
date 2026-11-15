@@ -136,6 +136,13 @@ describe("the backup threshold", () => {
     assert.equal(drugi.Core.backupDue(), false);
   });
 
+  test("the saved file is named impara-tedesco-<language>-<date>.json", () => {
+    const box = swiezy();
+    box.Core.downloadBackup();
+    const a = box.utworzone[box.utworzone.length - 1];
+    assert.match(a.download, /^impara-tedesco-[a-z]+-\d{4}-\d{2}-\d{2}\.json$/);
+  });
+
   test("a file with a broken backup field does not go in at all", () => {
     const box = swiezy();
     const zly = JSON.stringify({ schema: 2, backup: "wczoraj" });

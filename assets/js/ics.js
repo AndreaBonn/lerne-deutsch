@@ -36,7 +36,7 @@
 (function (global) {
   "use strict";
 
-  var PRODID = "-//LinguAI//Impara l'Italiano//PL";
+  var PRODID = "-//LinguAI//Deutsch lernen//PL";
 
   /* RFC 5545 §3.1: "Lines of text SHOULD NOT be longer than 75 octets,
      excluding the line break". A continuation line begins with one space,
