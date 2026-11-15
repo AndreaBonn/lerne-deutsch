@@ -65,7 +65,7 @@ async function zgoda(page) {
 }
 
 async function otworzBar(page) {
-  await page.goto("/index.html#/conversazione?id=bar-mattina");
+  await page.goto("/index.html#/conversazione?id=cafe-bestellen");
   await page.waitForSelector(".js-in", { timeout: 30000 });
 }
 
@@ -81,7 +81,7 @@ test.describe("the second judge in the browser", () => {
 
     /* A sentence no letter-by-letter comparison accepts, so the judge is
        the only road to a promotion. */
-    await page.fill(".js-in", "vorrei per cortesia un caffè ed un cornetto");
+    await page.fill(".js-in", "Ich hätte gerne einen Kaffee mit Milch");
     await page.click(".js-send");
 
     await page.waitForFunction(() => window.__llmZapytania > 0, { timeout: 15000 });
@@ -101,7 +101,7 @@ test.describe("the second judge in the browser", () => {
     await otworzBar(page);
 
     const przedtem = await page.locator(".dlg__it").count();
-    await page.fill(".js-in", "vorrei per cortesia un caffè ed un cornetto");
+    await page.fill(".js-in", "Ich hätte gerne einen Kaffee mit Milch");
     await page.click(".js-send");
 
     await expect
@@ -115,7 +115,7 @@ test.describe("the second judge in the browser", () => {
     await otworzBar(page);
 
     const przedtem = await page.locator(".dlg__it").count();
-    await page.fill(".js-in", "completamente sbagliato questo");
+    await page.fill(".js-in", "völlig falsch dieser Satz");
     await page.click(".js-send");
     await page.waitForFunction(() => window.__llmZapytania > 0, { timeout: 15000 });
     await page.waitForTimeout(600);
@@ -137,7 +137,7 @@ test.describe("the second judge in the browser", () => {
     });
 
     await otworzBar(page);
-    await page.fill(".js-in", "vorrei per cortesia un caffè ed un cornetto");
+    await page.fill(".js-in", "Ich hätte gerne einen Kaffee mit Milch");
     await page.click(".js-send");
     await page.waitForTimeout(1200);
 
@@ -312,8 +312,8 @@ test.describe("the model reading a composition", () => {
     /* The transport answers with prose, not with a verdict. */
     await page.addInitScript((tekst) => {
       window.__opinia = tekst;
-    }, o.opinia || "Uwaga: «sono andato» jest poprawne, ale «un gelato» chce rodzajnika.");
-    await page.goto("/index.html#/scrittura?id=w-a2-giornata");
+    }, o.opinia || "Uwaga: «ich heiße» jest poprawne, ale «ein Kaffee» chce rodzajnika.");
+    await page.goto("/index.html#/scrittura?id=w-a1-vorstellung");
     await page.waitForSelector(".js-text");
 
     await page.evaluate(() => {
@@ -326,7 +326,7 @@ test.describe("the model reading a composition", () => {
         });
       });
       document.querySelector(".js-text").value =
-        "Ieri sono andato al mare con mia sorella e ho mangiato gelato. È stata una giornata bella e tranquilla.";
+        "Hallo, ich heiße Maria und ich komme aus Italien. Jetzt wohne ich in Berlin in einer kleinen Wohnung. Ich trinke jeden Morgen einen Kaffee und lerne Deutsch.";
     });
     await page.click(".js-check");
     await page.waitForSelector("#writeResult");
@@ -341,7 +341,7 @@ test.describe("the model reading a composition", () => {
 
     await page.click(".js-opinion");
     await expect(page.locator(".js-opinion-box")).toBeVisible({ timeout: 15000 });
-    await expect(page.locator(".js-opinion-box")).toContainText("un gelato");
+    await expect(page.locator(".js-opinion-box")).toContainText("ein Kaffee");
   });
 
   test("the opinion is prose from outside, so it goes in as text", async ({ page }) => {
@@ -359,7 +359,7 @@ test.describe("the model reading a composition", () => {
     await page.click(".js-opinion");
     await expect(page.locator(".js-opinion-box")).toBeVisible({ timeout: 15000 });
     /* The sentence matters: without it a student reads a model's guess as
-       the course's verdict on their Italian. */
+       the course's verdict on their German. */
     await expect(page.locator(".js-opinion-box")).toContainText("Nie wpływa");
   });
 

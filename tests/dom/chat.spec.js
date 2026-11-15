@@ -59,13 +59,13 @@ async function przygotuj(page, opcje) {
     key: o.key === undefined ? "sk-test-key-1234" : o.key,
     zgoda: o.zgoda,
     pada: !!o.pada,
-    risposta: o.risposta || "Certo, un caffè. Altro?",
+    risposta: o.risposta || "Gern, einen Kaffee. Sonst noch etwas?",
     correzione: o.correzione || ""
   });
 }
 
 async function otworzScena(page) {
-  await page.goto("/index.html#/chiacchiere?id=bar");
+  await page.goto("/index.html#/chiacchiere?id=cafe");
   await page.waitForSelector(".js-in", { timeout: 30000 });
 }
 
@@ -74,22 +74,22 @@ test("the opening line is on screen before the student types anything", async ({
   await otworzScena(page);
   const bolle = await page.locator(".dlg__line").allInnerTexts();
   expect(bolle.length).toBe(1);
-  expect(bolle[0]).toContain("Buongiorno");
+  expect(bolle[0]).toContain("Guten Morgen");
   expect(await page.evaluate(() => window.__zapytania), "nothing was asked yet").toBe(0);
 });
 
 test("a turn draws both bubbles, and the correction is text", async ({ page }) => {
   await przygotuj(page, {
-    risposta: "Certo, un caffè!",
-    correzione: "<img src=x onerror=\"window.__xss=1\">Si dice «vorrei»."
+    risposta: "Gern, einen Kaffee!",
+    correzione: "<img src=x onerror=\"window.__xss=1\">Man sagt «ich möchte»."
   });
   await otworzScena(page);
 
-  await page.fill(".js-in", "volere un caffè");
+  await page.fill(".js-in", "wollen einen Kaffee");
   await page.click(".js-send");
   await expect(page.locator(".dlg__line")).toHaveCount(3);
 
-  await expect(page.locator(".chat-fix")).toContainText("vorrei");
+  await expect(page.locator(".chat-fix")).toContainText("möchte");
   expect(await page.evaluate(() => window.__xss)).toBeUndefined();
   expect(await page.locator(".chat-fix img").count()).toBe(0);
 });
@@ -98,7 +98,7 @@ test("the counter of turns left goes down by one", async ({ page }) => {
   await przygotuj(page);
   await otworzScena(page);
   const przed = await page.locator(".js-left").innerText();
-  await page.fill(".js-in", "un caffè per favore");
+  await page.fill(".js-in", "einen Kaffee bitte");
   await page.click(".js-send");
   await expect(page.locator(".dlg__line")).toHaveCount(3);
   const po = await page.locator(".js-left").innerText();
@@ -110,13 +110,13 @@ test("a turn that got no answer is given back, with the words returned", async (
   await otworzScena(page);
   const przed = await page.locator(".js-left").innerText();
 
-  await page.fill(".js-in", "vorrei un caffè");
+  await page.fill(".js-in", "ich möchte einen Kaffee");
   await page.click(".js-send");
 
   /* The student's line is off the screen again, the field holds it back, the
      counter is where it was, and the field is usable. */
   await expect(page.locator(".dlg__line")).toHaveCount(1);
-  await expect(page.locator(".js-in")).toHaveValue("vorrei un caffè");
+  await expect(page.locator(".js-in")).toHaveValue("ich möchte einen Kaffee");
   await expect(page.locator(".js-in")).toBeEnabled();
   expect(await page.locator(".js-left").innerText()).toBe(przed);
 });
@@ -125,7 +125,7 @@ test("nothing in a conversation touches the student's progress", async ({ page }
   /* The structural claim of this whole mode, and the only place it can be
      checked end to end: XP, the streak, the deck and the lessons are exactly
      where they were before the conversation. */
-  await przygotuj(page, { correzione: "Si dice «vorrei»." });
+  await przygotuj(page, { correzione: "Man sagt «ich möchte»." });
   await otworzScena(page);
   const przed = await page.evaluate(() => JSON.stringify({
     xp: window.Core.state.xp,
@@ -135,7 +135,7 @@ test("nothing in a conversation touches the student's progress", async ({ page }
     bledy: Object.keys(window.Core.state.errors).length
   }));
 
-  await page.fill(".js-in", "volere un caffè");
+  await page.fill(".js-in", "wollen einen Kaffee");
   await page.click(".js-send");
   await expect(page.locator(".dlg__line")).toHaveCount(3);
 
@@ -152,13 +152,13 @@ test("nothing in a conversation touches the student's progress", async ({ page }
 test("the conversation never reaches the exported profile", async ({ page }) => {
   await przygotuj(page);
   await otworzScena(page);
-  await page.fill(".js-in", "un segreto che non deve uscire");
+  await page.fill(".js-in", "ein Geheimnis das nicht raus darf");
   await page.click(".js-send");
   await expect(page.locator(".dlg__line")).toHaveCount(3);
 
   const kopia = await page.evaluate(() => window.Core.exportState());
-  expect(kopia).not.toContain("un segreto che non deve uscire");
-  expect(kopia).not.toContain("Certo, un caffè");
+  expect(kopia).not.toContain("ein Geheimnis das nicht raus darf");
+  expect(kopia).not.toContain("Gern, einen Kaffee");
 });
 
 test("without a key the screen says so and sends nothing", async ({ page }) => {
@@ -172,7 +172,7 @@ test("without a key the screen says so and sends nothing", async ({ page }) => {
 
   await page.locator("[data-scena]").first().click();
   await page.waitForSelector(".js-in");
-  await page.fill(".js-in", "ciao");
+  await page.fill(".js-in", "Hallo");
   await page.click(".js-send");
   await page.waitForTimeout(300);
   expect(await page.evaluate(() => window.__zapytania)).toBe(0);
@@ -184,7 +184,7 @@ test("with the conversation consent withdrawn, nothing leaves", async ({ page })
      missing, and it is enough. */
   await przygotuj(page, { zgoda: false });
   await otworzScena(page);
-  await page.fill(".js-in", "ciao");
+  await page.fill(".js-in", "Hallo");
   await page.click(".js-send");
   await page.waitForTimeout(400);
   expect(await page.evaluate(() => window.__zapytania)).toBe(0);
