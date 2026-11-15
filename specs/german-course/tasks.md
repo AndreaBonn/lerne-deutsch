@@ -40,7 +40,7 @@ fissa cosa ogni unità presuppone). `c` e `d` sono `ok` fra loro. `e` è `seq` p
 - [x] T0.10 | F0 | `package.json` (name, homepage, description), `og-template.html`, `build_og.mjs`, `check_ogtags.mjs`, `check_404.mjs`, `404.html`, `index.html` og:url → `/impara-tedesco/` | 0,5h | verify: `! grep -rIl "impara-italiano" index.html 404.html sw.js manifest.webmanifest package.json assets scripts` e `node scripts/check_404.mjs` esce 0 | integrazione | dip: T0.01 | par: ok | rollback: revert | R4
 - [x] T0.11 | F0 | `gen_anki_sample.mjs`: path dal ROOT del repo, non da `versione-statica` | 0,25h | verify: `! grep -n "versione-statica" scripts/*.mjs` e `node scripts/gen_anki_sample.mjs` esce 0 | integrazione | dip: - | par: ok | rollback: revert | R32
 - [x] T0.12 | F0 | Copiare da `../versione-statica` i file non tracciati `assets/Design system Impara Italiano/` e `assets/social-preview.png`, lasciandoli non tracciati come nell'originale | 0,1h | verify: `test -d "assets/Design system Impara Italiano" && test -f assets/social-preview.png` (rosso: assenti) | - | dip: - | par: ok | rollback: rimuovere le due copie | R28
-- [ ] T0.13 | F0 | Chiusura F0: gate di fase, nota in `docs/REPORT_ATTIVITA.md` | 0,5h | verify: `npm run test:all` esce 0 | e2e | dip: T0.01-T0.12 | par: seq | rollback: - | R31
+- [x] T0.13 | F0 | Chiusura F0: gate di fase, nota in `docs/REPORT_ATTIVITA.md` | 0,5h | verify: `npm run test:all` esce 0 | e2e | dip: T0.01-T0.12 | par: seq | rollback: - | R31
 
 ## F1 - Cutover: contratti, motore tedesco, rebrand, A1 U1-U3, semi (prima versione pubblicabile)
 
