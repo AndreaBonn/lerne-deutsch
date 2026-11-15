@@ -2,11 +2,18 @@
   "use strict";
 
   var D = global.VERB_TABLES;
-  var PARTICIPLE_PREFIXES = /^(zurück|zusammen|weiter|vorbei|heraus|hinein|herunter|hinauf|auf|aus|ein|ab|an|bei|los|mit|nach|vor|weg|zu)/;
-  var INSEPARABLE_PREFIXES = /^(be|ver|er|ent|emp|ge|miss|zer)/;
-  var UNSPLIT_VERBS = /^(antworten|angeln|ankern|zupfen|zucken|zurren)$/;
+  /* Closed list of separable prefixes. Longer prefixes come first so that
+     zurück- wins over zu- and vorbei- over vor-. */
+  var SEPARABLE_PREFIXES = /^(zusammen|zurück|vorbei|heraus|hinein|hinaus|herein|herunter|hinauf|weiter|fern|teil|statt|fest|fort|auf|aus|ein|ab|an|bei|los|mit|nach|vor|weg|zu)/;
+  /* über-, unter-, durch-, wieder- and um- are decided per verb by PREFIX_KIND. */
+  var VARIABLE_PREFIXES = /^(über|unter|durch|wieder|um)/;
+  var INSEPARABLE_PREFIXES = /^(be|ver|er|ent|emp|ge|miss|zer|über|unter|durch|wieder)/;
+  /* A beginning that looks like a prefix but is part of the stem. */
+  var UNSPLIT_VERBS = /^(antworten|angeln|ankern|analysieren|abonnieren|einen|einigen|losen|zupfen|zucken|zurren)$/;
   /* be-, er-, ge-, zer- that are part of the stem, so the participle keeps ge-. */
   var STEM_INITIAL_VERBS = /^(beten|bellen|beben|erben|ernten|geigen|zerren)$/;
+  /* Prefix + strong verb that is only spelling: bereiten is not be + reiten. */
+  var UNRELATED_VERBS = /^(bereiten|entwenden)$/;
 
   var CONTRACTED_STEM = /(?:eln|ern)$/;
 
@@ -18,9 +25,84 @@
     return inf.replace(/(?:en|n)$/, "");
   }
 
+  function cut(inf, prefix) {
+    return inf.length > prefix.length ? { prefix: prefix, rest: inf.slice(prefix.length) } : null;
+  }
+
+  /* Splits a separable prefix off: { prefix, rest } or null. */
+  function separate(inf) {
+    if (D.IRR[inf] || D.PRESENT_ONLY[inf] || UNSPLIT_VERBS.test(inf)) return null;
+    var variable = inf.match(VARIABLE_PREFIXES);
+    if (variable) {
+      var kind = D.PREFIX_KIND[inf] || (variable[0] === "um" ? "sep" : "insep");
+      return kind === "sep" ? cut(inf, variable[0]) : null;
+    }
+    var plain = inf.match(SEPARABLE_PREFIXES);
+    return plain ? cut(inf, plain[0]) : null;
+  }
+
+  function stripGe(inf, pp) {
+    if (pp.indexOf("ge") !== 0) return pp;
+    if (inf.indexOf("ge") === 0 && pp.indexOf("gege") !== 0) return pp;
+    return pp.slice(2);
+  }
+
+  function derive(prefix, base, rest) {
+    var out = { praet: prefix + base.praet, pp: prefix + stripGe(rest, base.pp), aux: base.aux };
+    if (base.presentStem) out.presentStem = prefix + base.presentStem;
+    if (base.konj2) out.konj2 = prefix + base.konj2;
+    if (base.praes) {
+      out.praes = base.praes.map(function (form) { return form === null ? null : prefix + form; });
+    }
+    return out;
+  }
+
+  /* Irregular entry of an infinitive: its own, or the strong base's one when a
+     prefix (separable or not) is put in front of it. null when unrelated. */
+  function irrOf(inf) {
+    if (D.IRR[inf]) return D.IRR[inf];
+    if (UNRELATED_VERBS.test(inf)) return null;
+    var split = separate(inf);
+    if (split) return irrOf(split.rest);
+    var match = inf.match(INSEPARABLE_PREFIXES);
+    var prefixed = match && cut(inf, match[0]);
+    var base = prefixed && irrOf(prefixed.rest);
+    return base ? derive(prefixed.prefix, base, prefixed.rest) : null;
+  }
+
+  /* "sich vorstellen" -> reflexive, full "vorstellen", particle "vor", word "stellen". */
+  function parse(raw) {
+    var reflexive = raw.indexOf("sich ") === 0;
+    var full = reflexive ? raw.slice(5) : raw;
+    var split = separate(full);
+    return {
+      reflexive: reflexive, full: full,
+      particle: split ? split.prefix : "", word: split ? split.rest : full
+    };
+  }
+
+  function pronoun(parsed, person) {
+    return parsed.reflexive ? " " + D.REFLEXIVE[person] : "";
+  }
+
+  /* Simple tenses: finite verb, reflexive pronoun, separated particle. */
+  function finite(forms, parsed) {
+    return forms.map(function (form, person) {
+      if (form === null) return null;
+      return form + pronoun(parsed, person) + (parsed.particle ? " " + parsed.particle : "");
+    });
+  }
+
+  /* Compound tenses: auxiliary, reflexive pronoun, then the tail. */
+  function compound(forms, parsed, tail) {
+    return forms.map(function (form, person) {
+      return form + pronoun(parsed, person) + " " + tail;
+    });
+  }
+
   function present(inf) {
     var stem = stemOf(inf);
-    var entry = D.IRR[inf];
+    var entry = irrOf(inf);
     if (D.PRESENT_ONLY[inf]) return D.PRESENT_ONLY[inf].slice();
     if (entry && entry.praes) return entry.praes.slice();
     return D.REG.praes.map(function (ending, person) {
@@ -42,7 +124,7 @@
   }
 
   function preterite(inf) {
-    var entry = D.IRR[inf];
+    var entry = irrOf(inf);
     var stem = stemOf(inf);
     var base = entry ? entry.praet : stem + (needsE(stem) ? "ete" : "te");
     var weak = /e$/.test(base);
@@ -54,53 +136,57 @@
   }
 
   function participle(inf) {
-    var entry = D.IRR[inf];
-    if (entry) return entry.pp;
-    var separated = !UNSPLIT_VERBS.test(inf) && inf.match(PARTICIPLE_PREFIXES);
-    if (separated) return separated[0] + participle(inf.slice(separated[0].length));
+    if (D.IRR[inf]) return D.IRR[inf].pp;
+    var split = separate(inf);
+    if (split) return split.prefix + participle(split.rest);
+    var derived = irrOf(inf);
+    if (derived) return derived.pp;
     var stem = stemOf(inf);
-    var inseparable = INSEPARABLE_PREFIXES.test(inf) && !STEM_INITIAL_VERBS.test(inf);
+    var inseparable = D.PREFIX_KIND[inf] === "insep" ||
+      (INSEPARABLE_PREFIXES.test(inf) && !STEM_INITIAL_VERBS.test(inf));
     var prefix = /ieren$/.test(inf) || inseparable ? "" : "ge";
     return prefix + stem + (needsE(stem) ? "et" : "t");
   }
 
   function auxiliary(inf) {
     if (D.SEIN_VERBS.indexOf(inf) !== -1) return "sein";
-    var separated = inf.match(PARTICIPLE_PREFIXES);
-    return separated ? auxiliary(inf.slice(separated[0].length)) : "haben";
+    var split = separate(inf);
+    return split ? auxiliary(split.rest) : "haben";
   }
 
-  function perfect(inf, tenseKey) {
-    var aux = auxiliary(inf);
+  /* A reflexive verb always takes haben ("hat sich umgezogen"). */
+  function auxiliaryOf(parsed) {
+    return parsed.reflexive ? "haben" : auxiliary(parsed.full);
+  }
+
+  function perfect(parsed, tenseKey) {
+    var aux = auxiliaryOf(parsed);
     var forms = tenseKey === "plusq" ? preterite(aux) : present(aux);
-    var pp = participle(inf);
-    return forms.map(function (form) { return form + " " + pp; });
+    return compound(forms, parsed, participle(parsed.full));
   }
 
-  function future(inf, tenseKey) {
-    var tail = tenseKey === "fut2" ? participle(inf) + " " + auxiliary(inf) : inf;
-    return present("werden").map(function (form) { return form + " " + tail; });
+  function future(parsed, tenseKey) {
+    var tail = tenseKey === "fut2"
+      ? participle(parsed.full) + " " + auxiliaryOf(parsed) : parsed.full;
+    return compound(present("werden"), parsed, tail);
   }
 
   function subjunctiveForms(stem) {
     return D.REG.subjunctive.map(function (ending) { return stem + ending; });
   }
 
-  function subjunctiveTwo(inf) {
-    if (D.PRESENT_ONLY[inf]) return nullRow();
-    var entry = D.IRR[inf];
-    if (entry && entry.konj2) return subjunctiveForms(entry.konj2);
-    return subjunctiveForms(D.IRR.werden.konj2).map(function (form) {
-      return form + " " + inf;
-    });
+  function subjunctiveTwo(parsed) {
+    var word = parsed.word;
+    if (D.PRESENT_ONLY[word]) return nullRow();
+    var entry = irrOf(word);
+    if (entry && entry.konj2) return finite(subjunctiveForms(entry.konj2), parsed);
+    return compound(subjunctiveForms(D.IRR.werden.konj2), parsed, parsed.full);
   }
 
-  function subjunctivePast(inf) {
-    if (D.PRESENT_ONLY[inf]) return nullRow();
-    var pp = participle(inf);
-    return subjunctiveTwo(auxiliary(inf)).map(function (form) {
-      return form + " " + pp;
-    });
+  function subjunctivePast(parsed) {
+    if (D.PRESENT_ONLY[parsed.word]) return nullRow();
+    var aux = subjunctiveTwo({ word: auxiliaryOf(parsed), full: "", reflexive: false, particle: "" });
+    return compound(aux, parsed, participle(parsed.full));
   }
 
   function subjunctiveOne(inf) {
@@ -119,7 +205,7 @@
 
   function imperativeSingular(inf) {
     var stem = stemOf(inf);
-    var entry = D.IRR[inf];
+    var entry = irrOf(inf);
     if (entry && entry.presentStem && /i/.test(entry.presentStem)) {
       return entry.presentStem;
     }
@@ -138,15 +224,20 @@
       present(inf)[4], subjunctive[5] + " Sie"];
   }
 
-  function conjugate(inf, tenseKey) {
-    if (tenseKey === "praes") return present(inf);
-    if (tenseKey === "praet") return preterite(inf);
-    if (tenseKey === "perf" || tenseKey === "plusq") return perfect(inf, tenseKey);
-    if (tenseKey === "fut1" || tenseKey === "fut2") return future(inf, tenseKey);
-    if (tenseKey === "konj2") return subjunctiveTwo(inf);
-    if (tenseKey === "konj2Verg") return subjunctivePast(inf);
-    if (tenseKey === "konj1") return subjunctiveOne(inf);
-    if (tenseKey === "imper") return imperative(inf);
+  function conjugate(raw, tenseKey) {
+    var parsed = parse(raw);
+    var word = parsed.word;
+    if (tenseKey === "praes") return finite(present(word), parsed);
+    if (D.PRESENT_ONLY[word] && D.TENSES.some(function (tense) { return tense.key === tenseKey; })) {
+      return nullRow();
+    }
+    if (tenseKey === "praet") return finite(preterite(word), parsed);
+    if (tenseKey === "perf" || tenseKey === "plusq") return perfect(parsed, tenseKey);
+    if (tenseKey === "fut1" || tenseKey === "fut2") return future(parsed, tenseKey);
+    if (tenseKey === "konj2") return subjunctiveTwo(parsed);
+    if (tenseKey === "konj2Verg") return subjunctivePast(parsed);
+    if (tenseKey === "konj1") return finite(subjunctiveOne(word), parsed);
+    if (tenseKey === "imper") return finite(imperative(word), parsed);
     return null;
   }
 
@@ -158,6 +249,8 @@
 
   global.Verbs = {
     PERSONS: D.PERSONS, TENSES: D.TENSES, COMMON: D.COMMON, IRR: D.IRR,
-    conjugate: conjugate, fullTable: fullTable, participle: participle
+    conjugate: conjugate, fullTable: fullTable,
+    participle: function (raw) { return participle(parse(raw).full); },
+    irrOf: function (raw) { return irrOf(parse(raw).full); }
   };
 })(window);

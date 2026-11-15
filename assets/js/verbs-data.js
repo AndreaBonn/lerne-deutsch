@@ -51,6 +51,7 @@
     "brennen": {"praet": "brannte", "pp": "gebrannt", "aux": "haben"},
     "bringen": {"praet": "brachte", "pp": "gebracht", "aux": "haben", "konj2": "brächt"},
     "denken": {"praet": "dachte", "pp": "gedacht", "aux": "haben", "konj2": "dächt"},
+    "entscheiden": {"praet": "entschied", "pp": "entschieden", "aux": "haben"},
     "empfehlen": {"praet": "empfahl", "pp": "empfohlen", "aux": "haben", "presentStem": "empfiehl"},
     "erschrecken": {"praet": "erschrak", "pp": "erschrocken", "aux": "sein", "presentStem": "erschrick"},
     "essen": {"praet": "aß", "pp": "gegessen", "aux": "haben", "presentStem": "iss"},
@@ -94,6 +95,7 @@
     "liegen": {"praet": "lag", "pp": "gelegen", "aux": "haben"},
     "lügen": {"praet": "log", "pp": "gelogen", "aux": "haben"},
     "messen": {"praet": "maß", "pp": "gemessen", "aux": "haben", "presentStem": "miss"},
+    "misslingen": {"praet": "misslang", "pp": "misslungen", "aux": "sein"},
     "nehmen": {"praet": "nahm", "pp": "genommen", "aux": "haben", "presentStem": "nimm", "konj2": "nähm"},
     "nennen": {"praet": "nannte", "pp": "genannt", "aux": "haben"},
     "pfeifen": {"praet": "pfiff", "pp": "gepfiffen", "aux": "haben"},
@@ -105,6 +107,7 @@
     "riechen": {"praet": "roch", "pp": "gerochen", "aux": "haben"},
     "rufen": {"praet": "rief", "pp": "gerufen", "aux": "haben"},
     "schaffen": {"praet": "schuf", "pp": "geschaffen", "aux": "haben"},
+    "scheinen": {"praet": "schien", "pp": "geschienen", "aux": "haben"},
     "schieben": {"praet": "schob", "pp": "geschoben", "aux": "haben"},
     "schießen": {"praet": "schoss", "pp": "geschossen", "aux": "haben"},
     "schlafen": {"praet": "schlief", "pp": "geschlafen", "aux": "haben", "presentStem": "schläf"},
@@ -138,6 +141,7 @@
     "tun": {"praet": "tat", "pp": "getan", "aux": "haben", "praes": ["tue", "tust", "tut", "tun", "tut", "tun"]},
     "vergessen": {"praet": "vergaß", "pp": "vergessen", "aux": "haben", "presentStem": "vergiss"},
     "verlieren": {"praet": "verlor", "pp": "verloren", "aux": "haben"},
+    "verschwinden": {"praet": "verschwand", "pp": "verschwunden", "aux": "sein"},
     "wachsen": {"praet": "wuchs", "pp": "gewachsen", "aux": "sein", "presentStem": "wächs"},
     "waschen": {"praet": "wusch", "pp": "gewaschen", "aux": "haben", "presentStem": "wäsch"},
     "wenden": {"praet": "wandte", "pp": "gewandt", "aux": "haben"},
@@ -146,6 +150,7 @@
     "wiegen": {"praet": "wog", "pp": "gewogen", "aux": "haben"},
     "ziehen": {"praet": "zog", "pp": "gezogen", "aux": "haben"},
   };
+  var REFLEXIVE = ["mich", "dich", "sich", "uns", "euch", "sich"];
   var PRESENT_ONLY = { "möchten": ["möchte", "möchtest", "möchte", "möchten", "möchtet", "möchten"] };
   var MODALS = ["können", "müssen", "dürfen", "sollen", "wollen", "mögen"];
   var SUBJUNCTIVE_SEIN = ["sei", "seiest", "sei", "seien", "seiet", "seien"];
@@ -155,13 +160,55 @@
   }).concat([
     "reisen", "wandern", "spazieren", "marschieren", "passieren", "landen",
     "starten", "klettern", "segeln", "aufstehen", "aufwachen", "einschlafen",
-    "erblühen", "folgen", "begegnen", "scheitern", "erwachen", "misslingen"
+    "erblühen", "folgen", "begegnen", "scheitern", "erwachen", "umziehen",
+    "entkommen", "entlaufen", "entstehen", "entgehen", "vergehen", "verfallen",
+    "verlaufen", "erscheinen", "verreisen"
   ]);
-  var COMMON = ["machen"];
+  /* über-, unter-, durch-, wieder- and um- can be separable or inseparable.
+     Verbs not listed here default to inseparable for über-, unter-, durch- and
+     wieder-, and to separable for um-. The explicit rows are the ones the
+     course teaches; each is Duden-correct: überraschen/übersetzen/
+     wiederholen/unterschreiben/unterhalten/umarmen/umgeben stay whole, while
+     umziehen, umsteigen, umdrehen, durchfallen, durchführen, durchlesen,
+     wiedersehen and wiederkommen split. */
+  var PREFIX_KIND = {
+    "überraschen": "insep", "übersetzen": "insep", "wiederholen": "insep",
+    "unterschreiben": "insep", "unterhalten": "insep", "umarmen": "insep",
+    "umgeben": "insep", "umziehen": "sep", "umsteigen": "sep", "umdrehen": "sep",
+    "durchfallen": "sep", "durchführen": "sep", "durchlesen": "sep",
+    "wiedersehen": "sep", "wiederkommen": "sep"
+  };
+  var COMMON = [
+    "sein", "haben", "werden", "können", "müssen", "dürfen", "sollen", "wollen",
+    "mögen", "wissen", "machen", "gehen", "kommen", "sehen", "geben",
+    "nehmen", "finden", "bleiben", "stehen", "liegen", "sitzen", "heißen", "bringen",
+    "denken", "sagen", "sprechen", "fragen", "antworten", "lernen", "arbeiten",
+    "spielen", "wohnen", "leben", "essen", "trinken", "schlafen", "laufen", "fahren",
+    "fliegen", "lesen", "schreiben", "hören", "kaufen", "verkaufen", "bezahlen",
+    "kosten", "brauchen", "helfen", "treffen", "kennen", "verstehen", "bekommen",
+    "beginnen", "anfangen", "aufhören", "aufstehen", "ankommen", "abfahren",
+    "einsteigen", "aussteigen", "umsteigen", "einkaufen", "anrufen", "mitkommen",
+    "mitbringen", "zurückkommen", "einladen", "aufmachen", "zumachen", "ausgehen",
+    "vorschlagen", "vorbereiten", "aufräumen", "anziehen", "abholen", "zuhören",
+    "aufwachen", "einschlafen", "mitnehmen", "öffnen", "schließen", "gewinnen",
+    "verlieren", "vergessen", "verbringen", "besuchen", "bestellen", "erklären",
+    "erzählen", "erlauben", "gefallen", "gehören", "glauben", "hoffen", "holen",
+    "kochen", "lachen", "lieben", "meinen", "nennen", "passieren", "rechnen",
+    "reisen", "rennen", "rufen", "schicken", "schenken", "schneiden", "schwimmen",
+    "singen", "springen", "stellen", "legen", "setzen", "suchen", "tanzen", "tragen",
+    "tun", "übersetzen", "überraschen", "unterschreiben", "wiederholen", "umziehen",
+    "verlassen", "versuchen", "warten", "wandern", "wünschen", "zeigen", "ziehen",
+    "studieren", "benutzen", "beantworten", "entscheiden", "verschwinden",
+    "erscheinen", "unterhalten", "bitten", "sterben", "sich waschen", "sich freuen",
+    "sich setzen", "sich treffen", "sich fühlen", "sich erinnern",
+    "sich interessieren", "sich beeilen", "sich ärgern", "sich vorstellen",
+    "sich entscheiden", "sich bewerben", "sich kümmern", "sich unterhalten",
+    "sich umziehen", "sich anziehen", "sich verabreden", "sich ausruhen"
+  ];
 
   global.VERB_TABLES = {
     PERSONS: PERSONS, TENSES: TENSES, REG: REG, IRR: IRR, PRESENT_ONLY: PRESENT_ONLY,
-    SEIN_VERBS: SEIN_VERBS, COMMON: COMMON, MODALS: MODALS,
+    SEIN_VERBS: SEIN_VERBS, COMMON: COMMON, MODALS: MODALS, PREFIX_KIND: PREFIX_KIND, REFLEXIVE: REFLEXIVE,
     SUBJUNCTIVE_SEIN: SUBJUNCTIVE_SEIN, IMPERATIVE_SEIN: IMPERATIVE_SEIN
   };
 })(window);

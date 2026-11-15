@@ -5,14 +5,11 @@ import { loadEngine, VERBS } from './_harness.mjs';
 
 const V = loadEngine({ files: VERBS }).sandbox.Verbs;
 const golden = JSON.parse(readFileSync(new URL('./verbs-de-golden.json', import.meta.url), 'utf8'));
-/* F36: fahren shows würde + Infinitiv in the learner table; the golden file still lists the rare synthetic "führe". */
+/* T1.17: fahren, stehen and waschen show würde + Infinitiv in the learner table; the golden file follows. */
 for (const tense of Object.keys(golden.machen)) {
   describe(tense, () => {
     for (const [inf, table] of Object.entries(golden)) {
-      const deferred = inf === 'aufstehen' && ['praes', 'praet', 'konj2', 'konj2Verg', 'konj1', 'imper'].includes(tense)
-        ? 'implement in T1.20'
-          : inf === 'sich waschen' ? 'implement in T1.21' : undefined;
-      test(`${inf}: ${tense}`, deferred ? { skip: deferred } : {}, () => {
+      test(`${inf}: ${tense}`, () => {
         const actual = V.conjugate(inf, tense);
         const expected = table[tense];
         assert.deepEqual(actual === null ? null : Array.from(actual), expected);
@@ -274,8 +271,8 @@ describe('T1.19 imperative vowel changes and required e', () => {
 
 const NULL_ROW = [null, null, null, null, null, null];
 
-describe('F33 möchten has no Konjunktiv II, Konjunktiv I or Imperativ rows', () => {
-  for (const tense of ['konj2', 'konj2Verg', 'konj1', 'imper']) {
+describe('F33 möchten has only Präsens: every other tense is a null row', () => {
+  for (const tense of ['praet', 'perf', 'plusq', 'fut1', 'fut2', 'konj2', 'konj2Verg', 'konj1', 'imper']) {
     test(tense, () => assert.deepEqual(Array.from(V.conjugate('möchten', tense)), NULL_ROW));
   }
   test('Präsens stays conjugated', () => {
@@ -308,4 +305,123 @@ describe('F38 Konjunktiv II Vergangenheit uses the right auxiliary', () => {
     assert.deepEqual(Array.from(V.conjugate('gehen', 'konj2Verg')),
       ['wäre gegangen', 'wärest gegangen', 'wäre gegangen', 'wären gegangen', 'wäret gegangen', 'wären gegangen']);
   });
+});
+
+describe('T1.21 reflexive verbs', () => {
+  const waschen = {
+    praes: ['wasche mich', 'wäschst dich', 'wäscht sich', 'waschen uns', 'wascht euch', 'waschen sich'],
+    imper: [null, 'wasch dich', null, 'waschen wir uns', 'wascht euch', 'waschen Sie sich']
+  };
+  for (const [tense, expected] of Object.entries(waschen)) {
+    test(`sich waschen: ${tense}`, () => assert.deepEqual(Array.from(V.conjugate('sich waschen', tense)), expected));
+  }
+  test('perfect takes haben and puts the pronoun after the auxiliary', () => {
+    assert.equal(V.conjugate('sich waschen', 'perf')[2], 'hat sich gewaschen');
+    assert.equal(V.conjugate('sich waschen', 'plusq')[3], 'hatten uns gewaschen');
+  });
+  test('reflexive and separable together: sich vorstellen', () => {
+    assert.deepEqual(Array.from(V.conjugate('sich vorstellen', 'praes')),
+      ['stelle mich vor', 'stellst dich vor', 'stellt sich vor', 'stellen uns vor', 'stellt euch vor', 'stellen sich vor']);
+    assert.deepEqual(Array.from(V.conjugate('sich vorstellen', 'imper')),
+      [null, 'stell dich vor', null, 'stellen wir uns vor', 'stellt euch vor', 'stellen Sie sich vor']);
+    assert.equal(V.conjugate('sich vorstellen', 'perf')[0], 'habe mich vorgestellt');
+    assert.equal(V.conjugate('sich vorstellen', 'fut1')[1], 'wirst dich vorstellen');
+    assert.equal(V.conjugate('sich vorstellen', 'konj2')[0], 'würde mich vorstellen');
+  });
+  test('a reflexive verb takes haben even when the plain verb takes sein', () => {
+    assert.equal(V.conjugate('sich umziehen', 'perf')[0], 'habe mich umgezogen');
+    assert.equal(V.conjugate('umziehen', 'perf')[0], 'bin umgezogen');
+  });
+  test('regular reflexive: sich freuen, sich beeilen', () => {
+    assert.equal(V.conjugate('sich freuen', 'praet')[1], 'freutest dich');
+    assert.equal(V.conjugate('sich beeilen', 'perf')[4], 'habt euch beeilt');
+  });
+  test('the plain verb is not reflexive and the pronoun rows are fresh arrays', () => {
+    assert.equal(V.conjugate('waschen', 'praes')[0], 'wasche');
+    const rows = V.conjugate('sich waschen', 'praes');
+    rows[0] = 'changed';
+    assert.equal(V.conjugate('sich waschen', 'praes')[0], 'wasche mich');
+  });
+});
+
+describe('T1.22 irrOf: prefix + strong base', () => {
+  test('inseparable prefixes inherit principal parts without ge-', () => {
+    assert.equal(V.irrOf('verstehen').praet, 'verstand');
+    assert.equal(V.participle('verstehen'), 'verstanden');
+    assert.equal(V.participle('bekommen'), 'bekommen');
+    assert.equal(V.participle('empfangen'), 'empfangen');
+    assert.equal(V.participle('missverstehen'), 'missverstanden');
+    assert.equal(V.participle('vergleichen'), 'verglichen');
+    assert.equal(V.participle('vergießen'), 'vergossen');
+    assert.equal(V.participle('beschließen'), 'beschlossen');
+  });
+  test('separable prefixes inherit the base entry', () => {
+    assert.equal(V.irrOf('ankommen'), V.IRR.kommen);
+    assert.equal(V.participle('ankommen'), 'angekommen');
+    assert.equal(V.conjugate('ankommen', 'praet')[2], 'kam an');
+  });
+  test('present vowel change survives the prefix', () => {
+    assert.deepEqual(Array.from(V.conjugate('verlassen', 'praes')),
+      ['verlasse', 'verlässt', 'verlässt', 'verlassen', 'verlasst', 'verlassen']);
+    assert.deepEqual(Array.from(V.conjugate('einladen', 'praes')),
+      ['lade ein', 'lädst ein', 'lädt ein', 'laden ein', 'ladet ein', 'laden ein']);
+    assert.equal(V.conjugate('empfangen', 'praes')[1], 'empfängst');
+  });
+  test('gelingen and misslingen take sein', () => {
+    assert.equal(V.conjugate('gelingen', 'perf')[2], 'ist gelungen');
+    assert.equal(V.conjugate('misslingen', 'perf')[2], 'ist misslungen');
+    assert.equal(V.conjugate('misslingen', 'praet')[2], 'misslang');
+  });
+  test('auxiliary: separable follows the base, inseparable defaults to haben', () => {
+    assert.equal(V.conjugate('ankommen', 'perf')[2], 'ist angekommen');
+    assert.equal(V.conjugate('bekommen', 'perf')[2], 'hat bekommen');
+    assert.equal(V.conjugate('entkommen', 'perf')[2], 'ist entkommen');
+    assert.equal(V.conjugate('gefallen', 'perf')[2], 'hat gefallen');
+  });
+  test('synthetic Konjunktiv II is inherited, würde-form otherwise', () => {
+    assert.equal(V.conjugate('ankommen', 'konj2')[0], 'käme an');
+    assert.equal(V.conjugate('bekommen', 'konj2')[0], 'bekäme');
+    assert.equal(V.conjugate('verstehen', 'konj2')[0], 'würde verstehen');
+  });
+  test('a similar beginning is not a relationship', () => {
+    for (const inf of ['versuchen', 'bestellen', 'gehören', 'beten', 'erben', 'herrschen', 'einigen']) {
+      assert.equal(V.irrOf(inf), null, inf);
+    }
+    assert.equal(V.irrOf('machen'), null);
+    assert.equal(V.participle('versuchen'), 'versucht');
+    assert.equal(V.participle('herrschen'), 'geherrscht');
+  });
+});
+
+describe('T1.22 COMMON lemma list', () => {
+  const COMMON = Array.from(V.COMMON);
+  test('about 150 distinct verbs, each with a full German table', () => {
+    assert.ok(COMMON.length >= 140 && COMMON.length <= 170, String(COMMON.length));
+    assert.equal(new Set(COMMON).size, COMMON.length);
+    for (const inf of COMMON) {
+      const table = V.fullTable(inf);
+      for (const tense of V.TENSES) {
+        const forms = table[tense.key];
+        assert.equal(forms.length, 6, `${inf} ${tense.key}`);
+        for (const form of forms) assert.ok(form === null || /^[a-zäöüßA-Z ]+$/.test(form), `${inf} ${tense.key} ${form}`);
+      }
+      assert.ok(table.praes.every(form => typeof form === 'string'), `${inf} praes`);
+    }
+  });
+  test('contains the verbs the course teaches first', () => {
+    for (const inf of ['machen', 'sein', 'aufstehen', 'sich waschen', 'mögen', 'ankommen', 'verstehen', 'bekommen']) {
+      assert.ok(COMMON.includes(inf), inf);
+    }
+  });
+  test('principal parts of a sample are Duden-correct', () => {
+    const pp = { entscheiden: 'entschieden', verschwinden: 'verschwunden', erscheinen: 'erschienen',
+      vorschlagen: 'vorgeschlagen', einladen: 'eingeladen', anrufen: 'angerufen', mitbringen: 'mitgebracht',
+      bestellen: 'bestellt', unterhalten: 'unterhalten', vorbereiten: 'vorbereitet' };
+    for (const [inf, expected] of Object.entries(pp)) assert.equal(V.participle(inf), expected, inf);
+  });
+});
+
+test('waschen Präteritum du-form is wuschst (Duden primary form)', () => {
+  assert.equal(V.conjugate('waschen', 'praet')[1], 'wuschst');
+  assert.equal(V.conjugate('sich waschen', 'praet')[1], 'wuschst dich');
 });
