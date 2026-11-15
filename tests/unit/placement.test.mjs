@@ -185,3 +185,56 @@ test("units without a test are skipped while tested units contribute tasks", () 
   const pool = box.sandbox.Placement.pulaDla("B1", "s");
   assert.deepEqual(JSON.parse(JSON.stringify(pool)), [{ ex: { t: "mcq", a: 0 }, lessonId: "b1-test", index: 0 }]);
 });
+
+/* The registry grows with the course: today only A1 is registered. */
+function silnikZ(kody) {
+  const box = loadEngine({ files: PLIKI });
+  box.Core.load();
+  kody.forEach(code => box.Core.registerLevel({ code: code, dataFiles: [], units: [] }));
+  return box;
+}
+
+function graj(box, kody, az) {
+  const P = box.sandbox.Placement;
+  const p = P.nowyPrzebieg("seed");
+  const zapytane = [];
+  for (let kod; (kod = P.nastepnyPoziom(p)); ) {
+    assert.ok(kody.includes(kod), `${kod} is not registered`);
+    assert.ok(zapytane.length < 10, "the run does not end");
+    zapytane.push(kod);
+    const zdaje = az !== null && kody.indexOf(kod) <= kody.indexOf(az);
+    P.zapiszRunde(p, kod, zdaje ? P.NA_RUNDE : 0, P.NA_RUNDE);
+  }
+  return { wynik: P.wynik(p), zapytane };
+}
+
+describe("rejestr z mniejsza liczba poziomow", () => {
+  test("with only A1 registered, passing and failing both land on A1", () => {
+    [["A1"], null].forEach(az => {
+      const box = silnikZ(["A1"]);
+      const { wynik, zapytane } = graj(box, ["A1"], az === null ? null : "A1");
+      assert.equal(wynik.code, "A1");
+      assert.equal(wynik.index, 0);
+      assert.deepEqual(zapytane, ["A1"]);
+    });
+  });
+
+  test("with three levels, every student lands on a registered level", () => {
+    const kody = ["A1", "A2", "B1"];
+    kody.forEach(az => {
+      const { wynik } = graj(silnikZ(kody), kody, az);
+      assert.equal(wynik.code, az);
+    });
+    assert.equal(graj(silnikZ(kody), kody, null).wynik.code, "A1");
+  });
+
+  test("applying the result with one level marks nothing and stores A1", () => {
+    const box = silnikZ(["A1"]);
+    const P = box.sandbox.Placement;
+    const p = P.nowyPrzebieg("s");
+    P.zapiszRunde(p, P.nastepnyPoziom(p), P.NA_RUNDE, P.NA_RUNDE);
+    const r = P.zastosuj(p);
+    assert.equal(r.marked, 0);
+    assert.equal(r.placement.level, "A1");
+  });
+});
