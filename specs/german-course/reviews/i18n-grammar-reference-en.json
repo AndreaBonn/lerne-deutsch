@@ -1,7 +1,13 @@
 {
-  "bundleHash": "7b0cba1e29a2bcd7f274268a40731747eee352e1fac6169b0f8848a592a0dde1",
-  "findings": [],
+  "bundleHash": "ee4a34c4a5eae9dea6275b6e32f7caa5569501756c223ba172bcfd07e74c6fea",
+  "findings": [
+    {
+      "kind": "grammar-rule",
+      "msg": "La regola «A verb of motion used with an object takes haben» è troppo ampia: un complemento al dativo non impone haben, per esempio «Ich bin ihm gefolgt». Sostituire con «When a motion verb is used transitively, with an accusative direct object, it generally takes haben», mantenendo l'esempio «Ich habe das Auto gefahren».",
+      "path": "content[\"ref:g-perfekt\"].body"
+    }
+  ],
   "lang": "en",
   "unit": "i18n-grammar-reference",
-  "verdict": "pass"
+  "verdict": "fail"
 }
