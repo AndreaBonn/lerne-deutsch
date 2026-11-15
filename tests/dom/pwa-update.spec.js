@@ -77,7 +77,7 @@ async function nowaWersja(page, nazwa) {
 /** Whether the new release's shell is already cached — that is, whether the worker is active. */
 function pamiecPowloki(page, nazwa) {
   return page.waitForFunction(
-    async (n) => (await caches.keys()).includes("linguai-shell-" + n),
+    async (n) => (await caches.keys()).includes("impara-tedesco-shell-" + n),
     nazwa, { timeout: 20000 }
   );
 }
@@ -183,7 +183,7 @@ test("a change of voice does not leave the student with the old recordings", asy
   const ctx = await browser.newContext();
   const page = await ctx.newPage();
 
-  biezaceAudio = "linguai-audio-stare";
+  biezaceAudio = "impara-tedesco-audio-stare";
   try {
     await podKontrola(page);
     await pamiecPowloki(page, biezace);
@@ -203,13 +203,13 @@ test("a change of voice does not leave the student with the old recordings", asy
       return u;
     }, PAMIEC_AUDIO);
     await page.evaluate(async (u) => {
-      const c = await caches.open("linguai-audio-stare");
+      const c = await caches.open("impara-tedesco-audio-stare");
       await c.put(new Request(u), new Response(new Blob(["stary glos"])));
     }, ADRES_MP3);
     expect(
       await page.evaluate(() => caches.keys()),
       "the setup itself failed: the old cache is not there"
-    ).toContain("linguai-audio-stare");
+    ).toContain("impara-tedesco-audio-stare");
 
     /* The release this repo ships, with its own AUDIO_CACHE. */
     biezaceAudio = null;
@@ -219,11 +219,11 @@ test("a change of voice does not leave the student with the old recordings", asy
     await pamiecPowloki(page, "v904.000000000000");
 
     await page.waitForFunction(
-      async () => !(await caches.keys()).includes("linguai-audio-stare"),
+      async () => !(await caches.keys()).includes("impara-tedesco-audio-stare"),
       null, { timeout: 20000 }
     );
     const nazwy = await page.evaluate(() => caches.keys());
-    expect(nazwy, "the old recording cache survived the release").not.toContain("linguai-audio-stare");
+    expect(nazwy, "the old recording cache survived the release").not.toContain("impara-tedesco-audio-stare");
     /* The paired positive case, and it has to be a RECORDING and not a cache
        name: sweepAudio() calls caches.open(AUDIO_CACHE), so the current cache
        exists again even after a handler that deleted every cache it found —

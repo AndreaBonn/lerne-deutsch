@@ -113,7 +113,7 @@ test("recordings are not fetched a second time", async ({ page }) => {
        out here would turn that bump into a red test about nothing, and the
        property under test is "the recording landed in the audio cache", not
        what that cache is called today. */
-    const nazwy = (await caches.keys()).filter(n => n.indexOf("linguai-audio") === 0);
+    const nazwy = (await caches.keys()).filter(n => n.indexOf("impara-tedesco-audio") === 0);
     const trafienia = [];
     for (const n of nazwy) {
       const klucze = await (await caches.open(n)).keys();

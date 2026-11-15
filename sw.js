@@ -48,17 +48,17 @@
 
    A human raises "v35" when they want to name a release; the fingerprint
    is not their job. */
-var SW_VERSION = "v35.79e87661f0df";
+var SW_VERSION = "v35.8f9b7590ff3f";
 
-var SHELL_CACHE = "linguai-shell-" + SW_VERSION;
+var SHELL_CACHE = "impara-tedesco-shell-" + SW_VERSION;
 /* Recordings are content-addressed, so their cache survives a version change.
    Bump this suffix whenever the audio at unchanged addresses changes: a change
    of voice, or a change to the text handed to the synthesiser (STRESS_FIXES in
    scripts/build_audio.py). The activate handler then drops the old cache by the
-   rule it already has for stale linguai-* caches, so it needs no code of its
+   rule it already has for stale impara-tedesco-* caches, so it needs no code of its
    own and leaves no list to clean up later.
    -2: twelve recordings re-recorded with the stress fixes of 2026-09-12. */
-var AUDIO_CACHE = "linguai-audio-2";
+var AUDIO_CACHE = "impara-tedesco-audio-2";
 
 var PRECACHE = [
   "./",
@@ -233,7 +233,7 @@ self.addEventListener("activate", function (e) {
       return Promise.all(klucze.map(function (k) {
         /* Old worker versions go away; the recording cache stays. */
         if (k === SHELL_CACHE || k === AUDIO_CACHE) return null;
-        if (k.indexOf("linguai-") !== 0) return null;
+        if (k.indexOf("impara-tedesco-") !== 0) return null;
         return caches.delete(k);
       }));
     }).then(sweepAudio).then(function () { return self.clients.claim(); })
