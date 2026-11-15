@@ -27,7 +27,7 @@ test("every sentence of every reading has a recording", async ({ page }) => {
   expect(brak, `bez nagrania: ${brak.slice(0, 3).join(" | ")}`).toEqual([]);
 });
 
-test("the list shows the Italian title and the translation", async ({ page }) => {
+test("the list shows the German title and the translation", async ({ page }) => {
   await lista(page);
   const n = await page.evaluate(() => window.READINGS.length);
   await expect(page.locator(".js-open")).toHaveCount(n);
@@ -38,53 +38,53 @@ test("the list shows the Italian title and the translation", async ({ page }) =>
 });
 
 test("reading mode shows the text and a button at every sentence", async ({ page }) => {
-  await tekst(page, "r-a1-mattina");
-  const zdan = await page.evaluate(() => window.READINGS[0].sentences.length);
+  await tekst(page, "r-a1-cafe");
+  const zdan = await page.evaluate(() => window.READINGS.find(x => x.id === "r-a1-cafe").sentences.length);
   await expect(page.locator("#readBox .say-btn")).toHaveCount(zdan);
   await expect(page.locator("#readBox .js-all")).toBeVisible();
 });
 
 test("the glosses show a word and its translation", async ({ page }) => {
-  await tekst(page, "r-a1-mattina");
+  await tekst(page, "r-a1-cafe");
   const glosy = await page.locator("#readBox .card .list-row").count();
-  const ile = await page.evaluate(() => window.READINGS[0].glossIt.length);
+  const ile = await page.evaluate(() => window.READINGS.find(x => x.id === "r-a1-cafe").glossIt.length);
   expect(glosy).toBe(ile);
 });
 
 /* The point of listening mode: the text must NOT be visible, otherwise this
    is reading with a soundtrack, not listening comprehension. */
 test("listening mode does not show the text", async ({ page }) => {
-  await tekst(page, "r-a1-mattina", "listen");
+  await tekst(page, "r-a1-cafe", "listen");
   const widoczne = await page.evaluate(() => {
-    const zdanie = window.READINGS[0].sentences[0];
+    const zdanie = window.READINGS.find(x => x.id === "r-a1-cafe").sentences[0];
     return document.getElementById("readBox").innerText.includes(zdanie);
   });
   expect(widoczne, "the sentences of the text must not be on screen").toBe(false);
   await expect(page.locator("#readBox .js-all")).toBeVisible();
 });
 
-test("the questions are in Italian and appear on demand", async ({ page }) => {
-  await tekst(page, "r-a1-mattina", "listen");
+test("the questions are in German and appear on demand", async ({ page }) => {
+  await tekst(page, "r-a1-cafe", "listen");
   await expect(page.locator("#quizBox .exq")).toHaveCount(0);
 
   await page.locator(".js-quiz").click();
-  const ile = await page.evaluate(() => window.READINGS[0].questions.length);
+  const ile = await page.evaluate(() => window.READINGS.find(x => x.id === "r-a1-cafe").questions.length);
   await expect(page.locator("#quizBox .exq")).toHaveCount(ile);
 
-  /* The questions sit in the neutral layer, so they do not change with the language. */
+  /* The questions sit in the neutral layer (German), so they do not change with the explanation language. */
   const przed = await page.locator("#quizBox .exq__prompt").first().innerText();
-  await page.evaluate(() => new Promise(r => window.Core.setLanguage("de", r)));
+  await page.evaluate(() => new Promise(r => window.Core.setLanguage("en", r)));
   await page.locator(".js-mode[data-mode='listen']").click();
   await page.locator(".js-quiz").click();
   const po = await page.locator("#quizBox .exq__prompt").first().innerText();
-  expect(po, "the question text is Italian and independent of the explanation language").toBe(przed);
+  expect(po, "the question text is German and independent of the explanation language").toBe(przed);
 });
 
 test("dictation goes sentence by sentence and ends with a result", async ({ page }) => {
-  await tekst(page, "r-a1-mattina", "dictation");
+  await tekst(page, "r-a1-cafe", "dictation");
   await expect(page.locator(".exq")).toBeVisible();
 
-  const zdan = await page.evaluate(() => window.READINGS[0].sentences.length);
+  const zdan = await page.evaluate(() => window.READINGS.find(x => x.id === "r-a1-cafe").sentences.length);
   for (let i = 0; i < zdan + 2; i++) {
     if (await page.locator(".summary").count()) break;
     const inp = page.locator(".exq .js-in");
@@ -99,7 +99,7 @@ test("dictation goes sentence by sentence and ends with a result", async ({ page
 });
 
 test("switching modes stays in the address", async ({ page }) => {
-  await tekst(page, "r-a1-mattina");
+  await tekst(page, "r-a1-cafe");
   await page.locator('.js-mode[data-mode="dictation"]').click();
   await expect(page).toHaveURL(/mode=dictation/);
   await page.reload();
@@ -132,41 +132,72 @@ test("the reading strings exist in five languages", async ({ page }) => {
    invisible until somebody opens the list from a cold profile.
    ============================================================ */
 test("the list shows texts from every level, not only the loaded one", async ({ page }) => {
+  /* Only A1 is registered, so a second level is built here: the index is
+     served with one more registerLevel line, and the level's library file
+     (plus its overlay, whatever the learner language) exists only as a route.
+     The student never opens A2: the list has to pull it and draw it again. */
+  await page.route("**/data/core/curriculum-index.js", async route => {
+    const res = await route.fetch();
+    const body = (await res.text()) +
+      '\nLINGUAI.registerLevel({ code: "A2", cefrLabel: "A2", dataFiles: ["library-a2-fixture.js"] });\n';
+    await route.fulfill({ response: res, body });
+  });
+  await page.route("**/data/core/library-a2-fixture.js", route => route.fulfill({
+    contentType: "application/javascript",
+    body: 'LINGUAI.addReadings([{ id: "lib-a2-fixture", cefr: "A2", tag: "g-praesens", titleIt: "Fixture Bergtour", ' +
+      'sentences: ["Am Sonntag fahren wir in die Berge."], glossIt: ["die Berge"], lexIt: ["fahren"], questions: [] }]);'
+  }));
+  await page.route("**/data/i18n/*/library-a2-fixture.js", route => {
+    const lang = route.request().url().match(/i18n\/([a-z]+)\//)[1];
+    return route.fulfill({
+      contentType: "application/javascript",
+      body: 'LINGUAI.addStrings("' + lang + '", { "read:lib-a2-fixture": { title: "Fixture tour", gloss: ["mountains"], lex: ["drive"] } });'
+    });
+  });
+
   await page.goto("/index.html#/lettura");
   await page.waitForSelector(".js-open");
   /* Drawn first, pulled second, drawn again: the wait is for the second
      drawing, which is the one under test. */
-  await page.waitForFunction(() =>
-    document.body.innerText.includes("Bologna"), null, { timeout: 15000 });
+  await page.waitForSelector('.js-open[data-id="lib-a2-fixture"]', { timeout: 15000 });
 
-  const righe = await page.locator(".list-row").allInnerTexts();
-  const poziomy = new Set(righe.map((r) => r.split("\n")[0]));
-  expect(poziomy.has("A1") && poziomy.has("C2"), "levels present: " + [...poziomy]).toBe(true);
+  const riga = page.locator(".list-row", { has: page.locator('.js-open[data-id="lib-a2-fixture"]') });
+  await expect(riga.locator(".chip--cefr")).toHaveText("A2");
+  await expect(page.locator('.js-open[data-id="r-a1-cafe"]'), "the loaded level is still there").toHaveCount(1);
+});
+
+test("the list marks the long text and not the short one", async ({ page }) => {
+  await page.goto("/index.html#/lettura");
+  await page.waitForSelector('.js-open[data-id="lib-a1-samstag"]', { timeout: 15000 });
+  const rowLib = page.locator(".list-row", { has: page.locator('.js-open[data-id="lib-a1-samstag"]') });
+  await expect(rowLib.locator("span span")).toContainText("·");
+  const rowShort = page.locator(".list-row", { has: page.locator('.js-open[data-id="r-a1-cafe"]') });
+  await expect(rowShort.locator("span span")).not.toContainText("·");
 });
 
 test("a long text says how long it is and does not offer dictation", async ({ page }) => {
   /* Dictation on thirty sentences is not a harder exercise, it is one with
      no end, and whoever starts it finds that out ten sentences in. */
-  await page.goto("/index.html#/lettura?id=lib-a2-casa");
+  await page.goto("/index.html#/lettura?id=lib-a1-samstag");
   await page.waitForSelector(".tabs");
   const tryby = await page.locator(".tab").allInnerTexts();
   expect(tryby.length, "read and listen, nothing else: " + tryby.join(",")).toBe(2);
 
-  await page.goto("/index.html#/lettura?id=r-a1-mattina");
+  await page.goto("/index.html#/lettura?id=r-a1-cafe");
   await page.waitForSelector(".tabs");
   expect((await page.locator(".tab").allInnerTexts()).length,
     "a short text keeps its dictation").toBe(3);
 });
 
 test("listening remembers where it got to, and offers to go back there", async ({ page }) => {
-  await page.goto("/index.html#/lettura?id=lib-a2-casa&mode=listen");
+  await page.goto("/index.html#/lettura?id=lib-a1-samstag&mode=listen");
   await page.waitForSelector(".js-all");
   /* No resume button before anything has been played. */
   await expect(page.locator(".js-resume")).toHaveCount(0);
 
   await page.evaluate(() => {
-    window.Core.state.library = { "lib-a2-casa": { frase: 7, ts: Date.now() } };
-    window.App.go("lettura", { id: "lib-a2-casa", mode: "listen" });
+    window.Core.state.library = { "lib-a1-samstag": { frase: 7, ts: Date.now() } };
+    window.App.go("lettura", { id: "lib-a1-samstag", mode: "listen" });
   });
   await page.waitForSelector(".js-resume");
   const etykieta = await page.locator(".js-resume").innerText();

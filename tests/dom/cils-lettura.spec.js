@@ -59,6 +59,21 @@ async function przygotuj(page, opcje) {
 async function przejdzEgzamin(page, cosPowiedzial) {
   await page.goto("/index.html#/esame");
   await page.waitForSelector(".js-start");
+  /* The seed's oral section is an empty shell (no topics), so the row of the
+     report would have nothing to detect: a fixture topic goes in, in the
+     shape of the real ones (`it` text, `richiede` requirements). */
+  await page.evaluate(() => {
+    const orale = window.CILS[0].sezioni.find(s => s.id === "orale");
+    if (!orale.argomenti.length) {
+      orale.argomenti.push({
+        it: "Meine Arbeit",
+        richiede: [
+          { key: "schicht", any: ["Schicht", "Schichten"], etichetta: "Arbeitszeiten" },
+          { key: "ort", any: ["Fabrik", "Büro"], etichetta: "Arbeitsort" }
+        ]
+      });
+    }
+  });
   await page.locator(".js-start").first().click();
   await page.waitForSelector(".js-next");
 
@@ -122,7 +137,7 @@ test("a model that sends a mark reaches a report without one", async ({ page }) 
 
 test("the oral row reads what the student wrote, and says whose words they are", async ({ page }) => {
   await przygotuj(page, { key: "" });
-  await przejdzEgzamin(page, "Abito nel mio quartiere da due anni, funziona bene, cambierei i trasporti.");
+  await przejdzEgzamin(page, "Ich arbeite in einer Fabrik und mache oft Schichten.");
 
   const karty = (await page.locator(".card").allInnerTexts()).join("\n");
   expect(karty, "the requirements it met are detected").toContain("✓");

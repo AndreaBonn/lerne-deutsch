@@ -18,6 +18,24 @@ test.describe.configure({ timeout: 60000 });
 async function otworz(page, sekundy) {
   await page.goto("/index.html#/esame");
   await page.waitForSelector(".js-start");
+  /* The seed's listening section is an empty shell, but the behaviours
+     tested here (twice-only playback, the countdown and its expiry) need a
+     listening task with items: one goes in, shaped like the engine's real
+     ones (`brani` = passages of lines, `vf` items). */
+  await page.evaluate(() => {
+    const asc = window.CILS[0].sezioni.find(s => s.id === "ascolto");
+    if (!asc.prove.length) {
+      /* The shell's 1 minute is a placeholder: with it the clock would be in its warning minute from the start. */
+      asc.minuti = 20;
+      asc.prove.push({
+        t: "vf",
+        puntiPerItem: 2,
+        consegna: "Hören Sie das Gespräch. Richtig oder falsch?",
+        brani: [[{ it: "Guten Tag, ich möchte einen Termin." }]],
+        items: [{ q: "Die Person möchte einen Termin.", a: 0 }, { q: "Die Person ruft am Abend an.", a: 1 }]
+      });
+    }
+  });
   if (sekundy) {
     await page.evaluate(s => {
       window.CILS.forEach(sim => sim.sezioni.forEach(sez => { sez.minuti = s / 60; }));

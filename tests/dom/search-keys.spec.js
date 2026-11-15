@@ -169,7 +169,7 @@ test("a digit does nothing while the student types in a text field", async ({ pa
    — and under the field there is usually the "check" button. The first
    version did exactly that and the student could not submit a dictation. */
 test("the character bar does not cover the check button", async ({ page }) => {
-  await page.goto("/index.html#/lettura?id=r-a1-mattina&mode=dictation");
+  await page.goto("/index.html#/lettura?id=r-a1-cafe&mode=dictation");
   await page.waitForSelector(".exq .js-in");
   await page.locator(".exq .js-in").click();
   await page.locator(".keybar").waitFor();
