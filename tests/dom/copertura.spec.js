@@ -49,11 +49,11 @@ test("the student's deck meets the frequency list at all", async ({ page }) => {
   await page.goto("/index.html");
   await page.waitForFunction(() => window.Core && window.Core.registry.levels.length > 0);
 
-  /* The card key is normalised for identity — "il caffè" is filed under
-     "il caffe" — while the frequency list holds bare accented forms. A deck
-     read key by key therefore met the list nowhere, and a full deck scored
-     zero. */
-  await page.evaluate(() => { window.Core.addCard("il caffè", "kawa", "test"); });
+  /* The card key is normalised for identity — "der Hund" is filed lowercased
+     and with its article — while the frequency list holds bare forms with the
+     noun capital. A deck read key by key therefore met the list nowhere, and
+     a full deck scored zero. */
+  await page.evaluate(() => { window.Core.addCard("der Hund", "pies", "test"); });
   const znane = await page.evaluate(() => {
     const F = window.FREQUENCY;
     return window.Frequency.pokrycie(F.words, window.Frequency.slownikUcznia(), F.tokens).znane;
