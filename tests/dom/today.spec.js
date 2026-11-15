@@ -251,9 +251,26 @@ test("a student who has only looked around still opens on the path", async ({ pa
 });
 
 /* Levels load lazily: with A1 finished, only A1 was loaded at start and the
-   next lesson (in A2) was invisible, so Today showed no card at all. */
+   next lesson (in the next level) was invisible, so Today showed no card at
+   all. The course registers only A1 for now, so the second level is built by
+   the test: the index is served with one more registerLevel line, and its
+   data file exists only as a route, like a level not yet in memory. */
 test("with a level finished, the next lesson comes from the next level", async ({ page }) => {
-  const A1 = ["a1-u04-l1","a1-u04-l2","a1-u04-l3","a1-u04-l4","a1-u04-test","a1-u05-l1","a1-u05-l2","a1-u05-l3","a1-u05-l4","a1-u05-test","a1-u06-l1","a1-u06-l2","a1-u06-l3","a1-u06-l4","a1-u06-test","a1-u07-l1","a1-u07-l2","a1-u07-l3","a1-u07-l4","a1-u07-test","a1-u01-l1","a1-u01-l2","a1-u01-l3","a1-u01-l4","a1-u01-test","a1-u02-l1","a1-u02-l2","a1-u02-l3","a1-u02-l4","a1-u02-test","a1-u03-l1","a1-u03-l2","a1-u03-l3","a1-u03-l4","a1-u03-test","a1-u08-l1","a1-u08-l2","a1-u08-l3","a1-u08-l4","a1-u08-test","a1-u09-l1","a1-u09-l2","a1-u09-l3","a1-u09-l4","a1-u09-test","a1-u10-l1","a1-u10-l2","a1-u10-l3","a1-u10-l4","a1-u10-test"];
+  await page.route("**/data/core/curriculum-index.js", async route => {
+    const res = await route.fetch();
+    const body = (await res.text()) +
+      '\nLINGUAI.registerLevel({ code: "A2", cefrLabel: "A2", dataFiles: ["a2-fixture.js"] });\n';
+    await route.fulfill({ response: res, body });
+  });
+  await page.route("**/data/core/a2-fixture.js", route => route.fulfill({
+    contentType: "application/javascript",
+    body: 'LINGUAI.addUnits("A2", [{ id: "a2-u01", titleIt: "Fixture", lessons: [' +
+      '{ id: "a2-u01-l1", cefr: "A2", titleIt: "Fixture Lektion", vocab: [], exercises: [] }] }]);'
+  }));
+  const A1 = [];
+  ["a1-u01", "a1-u02", "a1-u03"].forEach(u => {
+    ["l1", "l2", "l3", "l4", "test"].forEach(k => A1.push(u + "-" + k));
+  });
   await profil(page, zdane(A1));
   await oggi(page);
   const karta = page.locator(".today-next");

@@ -15,6 +15,20 @@
 const { test, expect } = require("@playwright/test");
 
 test("the ceiling counts every level, not only the ones already in memory", async ({ page }) => {
+  /* Only A1 is registered for now, so a second level is built here: the
+     index is served with one more registerLevel line and the level's data
+     file exists only as a route. Its words are common ones that A1 lacks. */
+  await page.route("**/data/core/curriculum-index.js", async route => {
+    const res = await route.fetch();
+    const body = (await res.text()) +
+      '\nLINGUAI.registerLevel({ code: "A2", cefrLabel: "A2", dataFiles: ["a2-fixture.js"] });\n';
+    await route.fulfill({ response: res, body });
+  });
+  await page.route("**/data/core/a2-fixture.js", route => route.fulfill({
+    contentType: "application/javascript",
+    body: 'LINGUAI.addUnits("A2", [{ id: "a2-u01", titleIt: "Fixture", lessons: [{ id: "a2-u01-l1", cefr: "A2", ' +
+      'titleIt: "Fixture Lektion", vocab: [{ it: "die Arbeit" }, { it: "die Stadt" }, { it: "das Geld" }], exercises: [] }] }]);'
+  }));
   await page.goto("/index.html#/copertura");
   await page.waitForFunction(() => window.Core && window.Frequency && window.FREQUENCY);
 
@@ -26,14 +40,17 @@ test("the ceiling counts every level, not only the ones already in memory", asyn
     { timeout: 15000 }
   );
 
-  const { wDom, policzone, poziomow } = await page.evaluate(() => {
+  const { wDom, policzone, tylkoA1, poziomow } = await page.evaluate(() => {
     const F = window.FREQUENCY;
     const pelne = window.Frequency.pokrycie(F.words, window.Frequency.slownikKursu(), F.tokens);
+    const tylkoA1 = window.Frequency.pokrycie(F.words,
+      window.Lemma.zbudujSlownik(window.Core.registry.levels.slice(0, 1), window.READINGS), F.tokens);
     /* The second bar is the course; the first one is the student's deck. */
     const n = document.querySelectorAll(".cov .cov__n")[1].textContent;
     return {
       wDom: parseInt(n, 10),
       policzone: pelne.znane,
+      tylkoA1: tylkoA1.znane,
       poziomow: window.Core.registry.levels.length
     };
   });
@@ -43,6 +60,7 @@ test("the ceiling counts every level, not only the ones already in memory", asyn
      regenerated. What has to hold is that the screen shows what the whole
      loaded course covers, and it redraws after the levels arrive. */
   expect(wDom).toBe(policzone);
+  expect(policzone, "the second level adds words, so counting A1 alone would be smaller").toBeGreaterThan(tylkoA1);
 });
 
 test("the student's deck meets the frequency list at all", async ({ page }) => {

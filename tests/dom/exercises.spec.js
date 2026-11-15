@@ -24,7 +24,7 @@ const FIXTURES = {
   cloze: { t: "cloze", text: "Ieri {{1}} al mercato.", gaps: [["sono andato"]] },
   order: { t: "order", tokens: ["io", "mangio"], a: "io mangio" },
   match: { t: "match", pairs: [{ it: "pane", tr: "chleb" }, { it: "vino", tr: "wino" }] },
-  conj: { t: "conj", verb: "parlare", tense: "pres", persons: [0, 1] },
+  conj: { t: "conj", verb: "machen", tense: "praes", persons: [0, 1] },
   gender: { t: "gender", items: [{ it: "pane", a: "il" }, { it: "acqua", a: "l'" }], opts: ["il", "la", "l'"] },
   listen: { t: "listen", it: "Buongiorno a tutti", alt: [] },
   speak: { t: "speak", it: "Buongiorno a tutti", tr: "good morning" },

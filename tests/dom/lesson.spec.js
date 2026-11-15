@@ -11,12 +11,12 @@ async function lezione(page, id) {
 
 /* A theory block may carry a heading AND a list ({h, list}). The renderer
    used to leave at the heading branch, so the list was never drawn and the
-   rule it held (il -> i, lo -> gli) vanished, with the heading still there
+   rule it held (the pronoun list, say) vanished, with the heading still there
    to make the section look complete. */
 test("a theory block with a heading keeps its list", async ({ page }) => {
-  await lezione(page, "a1-u01-l3");
+  await lezione(page, "a1-u01-l1");
   const blok = await page.evaluate(() => {
-    const L = window.Core.getLesson("a1-u01-l3").lesson;
+    const L = window.Core.getLesson("a1-u01-l1").lesson;
     return L.theory.find(b => b && b.h && b.list);
   });
   expect(blok, "the lesson has a {h, list} block").toBeTruthy();
@@ -70,7 +70,7 @@ async function odpowiedzNaWszystko(page) {
   });
 }
 
-const PROSTA = "a1-u07-l1";
+const PROSTA = "a1-u01-l1";
 
 test("the exercises come one at a time, with Next", async ({ page }) => {
   await lezione(page, PROSTA);
