@@ -127,7 +127,7 @@ test("the brief and the checklist exist in five languages", async ({ page }) => 
   await lista(page);
   const braki = await page.evaluate(async () => {
     const out = {};
-    for (const lang of ["pl", "en", "es", "fr", "de"]) {
+    for (const lang of ["it", "en", "es", "fr", "pl"]) {
       await new Promise(r => window.Core.setLanguage(lang, r));
       window.I18n.set(lang);
       window.App.go("scrittura");
@@ -151,7 +151,7 @@ test("errore di import dice il motivo, nella lingua giusta", async ({ page }) =>
 
   const wyniki = await page.evaluate(async () => {
     const out = {};
-    for (const lang of ["pl", "en", "de"]) {
+    for (const lang of ["pl", "en", "it"]) {
       await new Promise(r => window.Core.setLanguage(lang, r));
       window.I18n.set(lang);
       const komunikaty = [];
@@ -169,7 +169,7 @@ test("errore di import dice il motivo, nella lingua giusta", async ({ page }) =>
     return out;
   });
 
-  for (const lang of ["pl", "en", "de"]) {
+  for (const lang of ["pl", "en", "it"]) {
     expect(wyniki[lang].length).toBe(4);
     for (const m of wyniki[lang]) {
       expect(m).not.toBe("BRAK BLEDU");
@@ -182,5 +182,5 @@ test("errore di import dice il motivo, nella lingua giusta", async ({ page }) =>
   }
   /* And really different across languages: they do not stay in Polish. */
   expect(wyniki.pl[0]).not.toBe(wyniki.en[0]);
-  expect(wyniki.de[0]).not.toBe(wyniki.en[0]);
+  expect(wyniki.it[0]).not.toBe(wyniki.en[0]);
 });
