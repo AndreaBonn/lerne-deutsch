@@ -210,10 +210,10 @@ describe("what the student is told when the chain runs out", () => {
 
 
 describe("the cache key", () => {
-  test("the same sentence typed twice is the same question", { skip: "rewrite in T1.94" }, () => {
+  test("the same sentence typed twice is the same question", () => {
     const R = rules();
-    const a = R.cacheKey("pl", TASK, "Prendo un caffè!");
-    const b = R.cacheKey("pl", TASK, "  prendo un caffe  ");
+    const a = R.cacheKey("pl", TASK, "Ich nehme einen Kaffee!");
+    const b = R.cacheKey("pl", TASK, "  ich nehme einen kaffee  ");
     assert.equal(a, b, "spacing and punctuation would buy a second paid request");
   });
 

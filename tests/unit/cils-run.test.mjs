@@ -24,9 +24,33 @@ function silnik() {
   return box;
 }
 
-/** An attempt at a ready-made simulation from the course data. */
+/* The seed in data/core/cils.js has an EMPTY listening shell and one reading
+   task of six items, while these tests need the shape of a full simulation:
+   a section worth 12 points made of a 6-item task (1 point each) and a
+   12-item task (half a point each), eighteen items in all. The fixture is
+   built here, from the seed's own sim-1 (title, writing and speaking shells
+   stay the real ones), so the scoring is checked on the shape it has to
+   handle and not on whatever the seed happens to contain this week. */
+function symulacja(C) {
+  const prova = (ile, peso) => ({
+    t: "vf",
+    puntiPerItem: peso,
+    consegna: "Sind die Aussagen richtig oder falsch?",
+    items: Array.from({ length: ile }, (_, i) => ({ q: `Aussage ${i + 1}`, a: i % 2 }))
+  });
+  const prawdziwa = C.sim("sim-1");
+  const zamiana = {
+    ascolto: { id: "ascolto", minuti: 20, prove: [prova(6, 1), prova(12, 0.5)] },
+    lettura: { id: "lettura", minuti: 20, prove: [prova(12, 0.5), prova(6, 1)] }
+  };
+  return Object.assign({}, prawdziwa, {
+    sezioni: prawdziwa.sezioni.map(s => zamiana[s.id] || s)
+  });
+}
+
+/** An attempt at the fixture simulation (see symulacja). */
 function podejscie(box) {
-  const s = box.sandbox.Cils.sim("sim-1");
+  const s = symulacja(box.sandbox.Cils);
   return box.sandbox.CilsRun.create(s);
 }
 
@@ -66,7 +90,7 @@ describe("the order of the sections", () => {
 });
 
 describe("the answer grid", () => {
-  test("it is created empty and sized to the tasks, before the student clicks anything", { skip: "rewrite in T1.94" }, () => {
+  test("it is created empty and sized to the tasks, before the student clicks anything", () => {
     /* Scoring walks by index: a list one item short would shift the
        answers onto somebody else's questions and produce a score nobody
        would ever report. */
@@ -80,7 +104,7 @@ describe("the answer grid", () => {
     assert.equal(siatka[0][0], undefined, "no answer is not zero points written in advance");
   });
 
-  test("an answer lands under its own task and item number", { skip: "rewrite in T1.94" }, () => {
+  test("an answer lands under its own task and item number", () => {
     const run = podejscie(silnik());
     const sez = run.sekcja();
     run.przygotuj(sez);
@@ -97,7 +121,7 @@ describe("the answer grid", () => {
 });
 
 describe("section points", () => {
-  test("a full set of hits gives the maximum and remembers the tally", { skip: "rewrite in T1.94" }, () => {
+  test("a full set of hits gives the maximum and remembers the tally", () => {
     const run = podejscie(silnik());
     const sez = run.sekcja();
     wypelnijPoprawnie(run, sez);
@@ -127,7 +151,7 @@ describe("time that has run out", () => {
     assert.equal(run.czyScadla("lettura"), false);
   });
 
-  test("running out of time does not erase what the student managed to mark", { skip: "rewrite in T1.94" }, () => {
+  test("running out of time does not erase what the student managed to mark", () => {
     /* Zero would be a punishment for the clock doing its job, a full score
        would be a gift. */
     const run = podejscie(silnik());
@@ -141,7 +165,7 @@ describe("time that has run out", () => {
 });
 
 describe("the verdict on the whole attempt", () => {
-  test("two skills scored, two declared as not measured", { skip: "rewrite in T1.94" }, () => {
+  test("two skills scored, two declared as not measured", () => {
     const run = podejscie(silnik());
     ["ascolto", "lettura"].forEach(() => {
       const sez = run.sekcja();
@@ -175,7 +199,7 @@ describe("the history entry", () => {
     return run;
   }
 
-  test("the entry carries points, timed-out sections and the verdict, not the answers", { skip: "rewrite in T1.94" }, () => {
+  test("the entry carries points, timed-out sections and the verdict, not the answers", () => {
     /* The answers are an exercise, not history: keeping them would blow up
        the single localStorage key the whole course shares. */
     const box = silnik();
@@ -256,7 +280,7 @@ describe("answers to the open sections", () => {
 });
 
 
-test("listening never closed is recorded as zero points", { skip: "rewrite in T1.94" }, () => {
+test("listening never closed is recorded as zero points", () => {
   const box = silnik();
   const run = podejscie(box);
   wypelnijPoprawnie(run, run.sekcja());

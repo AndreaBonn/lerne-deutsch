@@ -18,10 +18,10 @@ test("norm collapses whitespace and trims", () => {
   assert.equal(box.Core.norm(" A  b "), "a b");
 });
 
-test("norm removes the accents unless asked otherwise", { skip: "rewrite in T1.94" }, () => {
+test("norm keeps the umlauts, with or without keepAccents (a dropped umlaut is another word)", () => {
   const box = loadEngine();
-  assert.equal(box.Core.norm("perché"), "perche");
-  assert.equal(box.Core.norm("perché", { keepAccents: true }), "perché");
+  assert.equal(box.Core.norm("Mädchen"), "mädchen");
+  assert.equal(box.Core.norm("Mädchen", { keepAccents: true }), "mädchen");
 });
 
 test("the substituted clock does not run on its own", () => {

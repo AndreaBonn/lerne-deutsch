@@ -23,35 +23,59 @@ function silnik() {
   return box.sandbox.Cils;
 }
 
+/* The seed in data/core/cils.js has an EMPTY listening shell and one reading
+   task of six items, while these tests need the shape of a full simulation:
+   a section worth 12 points made of a 6-item task (1 point each) and a
+   12-item task (half a point each), eighteen items in all. The fixture is
+   built here, from the seed's own sim-1 (title, writing and speaking shells
+   stay the real ones), so the scoring is checked on the shape it has to
+   handle and not on whatever the seed happens to contain this week. */
+function symulacja(C) {
+  const prova = (ile, peso) => ({
+    t: "vf",
+    puntiPerItem: peso,
+    consegna: "Sind die Aussagen richtig oder falsch?",
+    items: Array.from({ length: ile }, (_, i) => ({ q: `Aussage ${i + 1}`, a: i % 2 }))
+  });
+  const prawdziwa = C.sim("sim-1");
+  const zamiana = {
+    ascolto: { id: "ascolto", minuti: 20, prove: [prova(6, 1), prova(12, 0.5)] },
+    lettura: { id: "lettura", minuti: 20, prove: [prova(12, 0.5), prova(6, 1)] }
+  };
+  return Object.assign({}, prawdziwa, {
+    sezioni: prawdziwa.sezioni.map(s => zamiana[s.id] || s)
+  });
+}
+
 describe("scoring the closed-answer tasks", () => {
-  test("a full set of hits gives the section maximum", { skip: "rewrite in T1.94" }, () => {
+  test("a full set of hits gives the section maximum", () => {
     const C = silnik();
-    const sez = C.sezione(C.sim("sim-1"), "ascolto");
+    const sez = C.sezione(symulacja(C), "ascolto");
     const risp = sez.prove.map(p => p.items.map(i => i.a));
     const w = C.punteggioSezione(sez, risp);
     assert.equal(w.punti, 12);
     assert.equal(w.max, 12);
   });
 
-  test("an omitted answer weighs the same as a wrong one, that is zero", { skip: "rewrite in T1.94" }, () => {
+  test("an omitted answer weighs the same as a wrong one, that is zero", () => {
     const C = silnik();
-    const prova = C.sezione(C.sim("sim-1"), "ascolto").prove[0];
+    const prova = C.sezione(symulacja(C), "ascolto").prove[0];
     const zle = prova.items.map(i => (i.a + 1) % 3);
     const puste = prova.items.map(() => null);
     assert.equal(C.punteggioProva(prova, zle).punti, 0);
     assert.equal(C.punteggioProva(prova, puste).punti, 0);
   });
 
-  test("a prova of twelve items weighs half a point per item", { skip: "rewrite in T1.94" }, () => {
+  test("a prova of twelve items weighs half a point per item", () => {
     const C = silnik();
-    const prova = C.sezione(C.sim("sim-1"), "ascolto").prove[1];
+    const prova = C.sezione(symulacja(C), "ascolto").prove[1];
     const polowa = prova.items.map((it, i) => (i < 6 ? it.a : null));
     assert.equal(C.punteggioProva(prova, polowa).punti, 3);
   });
 
-  test("time running out halfway leaves the points for what was ticked", { skip: "rewrite in T1.94" }, () => {
+  test("time running out halfway leaves the points for what was ticked", () => {
     const C = silnik();
-    const sez = C.sezione(C.sim("sim-1"), "lettura");
+    const sez = C.sezione(symulacja(C), "lettura");
     /* The student got through the first task and not one item of the second. */
     const risp = [sez.prove[0].items.map(i => i.a), []];
     const w = C.punteggioSezione(sez, risp);
@@ -113,19 +137,40 @@ describe("dane symulacji", () => {
     });
   });
 
-  test("the second simulation does not repeat the texts of the first", { skip: "rewrite in T1.94" }, () => {
+  /* Every sentence a simulation shows: reading texts (`testo`) and passages (`brani`). */
+  const zdania = (sim) => {
+    const out = [];
+    sim.sezioni.forEach(sez => (sez.prove || []).forEach(p => {
+      (p.brani || []).forEach(b => b.forEach(r => out.push(r.it)));
+      (p.testo || []).forEach(x => out.push(x));
+    }));
+    return out;
+  };
+  const wspolne = (a, b) => {
+    const znane = new Set(zdania(a));
+    return zdania(b).filter(x => znane.has(x));
+  };
+
+  test("no simulation repeats the texts of an earlier one", () => {
+    /* The seed has ONE simulation, so this loop has no pair to compare yet
+       and passes on what the data holds today; it starts to bite with the
+       second Modelltest. The next test proves the detector can fail. */
     const C = silnik();
-    const zdania = (sim) => {
-      const out = [];
-      sim.sezioni.forEach(sez => (sez.prove || []).forEach(p => {
-        (p.brani || []).forEach(b => b.forEach(r => out.push(r.it)));
-        (p.testo || []).forEach(x => out.push(x));
-      }));
-      return out;
-    };
-    const a = new Set(zdania(C.sim("sim-1")));
-    const wspolne = zdania(C.sim("sim-2")).filter(x => a.has(x));
-    assert.deepEqual(Array.from(wspolne), []);
+    const lista = C.simulazioni();
+    for (let j = 1; j < lista.length; j++) {
+      for (let i = 0; i < j; i++) {
+        assert.deepEqual(Array.from(wspolne(lista[i], lista[j])), [], `${lista[j].id} repeats ${lista[i].id}`);
+      }
+    }
+    assert.ok(zdania(lista[0]).length > 0, "the first simulation has texts to compare");
+  });
+
+  test("the repetition detector finds a text that two simulations share", () => {
+    const C = silnik();
+    const pierwsza = C.sim("sim-1");
+    const kopia = { id: "sim-x", sezioni: [{ id: "lettura", prove: [{ testo: [zdania(pierwsza)[0]], items: [] }] }] };
+    assert.deepEqual(Array.from(wspolne(pierwsza, kopia)), [zdania(pierwsza)[0]]);
+    assert.deepEqual(Array.from(wspolne(pierwsza, { id: "sim-y", sezioni: [{ id: "lettura", prove: [{ testo: ["Ganz anderer Satz."], items: [] }] }] })), []);
   });
 
   test("ogni item ha una risposta valida fra le opzioni", () => {
@@ -157,9 +202,9 @@ describe("what is not in the data", () => {
 });
 
 
-test("missing section answers score zero out of twelve", { skip: "rewrite in T1.94" }, () => {
+test("missing section answers score zero out of twelve", () => {
   const C = silnik();
-  const result = C.punteggioSezione(C.sezione(C.sim("sim-1"), "ascolto"), undefined);
+  const result = C.punteggioSezione(C.sezione(symulacja(C), "ascolto"), undefined);
   assert.equal(result.punti, 0);
   assert.equal(result.max, 12);
 });

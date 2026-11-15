@@ -804,16 +804,33 @@ describe("the topic registry", () => {
 describe("the topic of the daily drill", () => {
   const zrobione = (ids) => (id) => ids.indexOf(id) >= 0;
 
-  test("every topic names the lesson that introduces it, and that lesson exists", { skip: "rewrite in T1.94" }, async () => {
+  test("every topic names the lesson that introduces it, and that lesson exists", async () => {
+    /* A lesson exists if its file is already in data/core, or if the unit
+       plan (specs/german-course/curriculum.md, lines "- a1-u09: l1 ...; l2 ...")
+       declares it: units not ported yet have no data to look into, but a
+       topic must never point at a lesson the course does not plan. */
     const { readdirSync, readFileSync } = await import("node:fs");
     const { join } = await import("node:path");
     const { ROOT } = await import("./_harness.mjs");
     const dir = join(ROOT, "data", "core");
     const tekst = readdirSync(dir).map(f => readFileSync(join(dir, f), "utf8")).join("\n");
+    const plan = readFileSync(join(ROOT, "specs", "german-course", "curriculum.md"), "utf8");
+    const planned = new Set();
+    for (const m of plan.matchAll(/^- ([abc][12]-u\d{2}): (.+)$/gm)) {
+      for (const seg of m[2].split(";")) {
+        const l = seg.trim().match(/^l(\d)\b/);
+        if (l) planned.add(`${m[1]}-l${l[1]}`);
+      }
+    }
+    assert.ok(planned.size > 100, "the plan was parsed");
+    let inData = 0;
     silnik().Drills.TOPICS.forEach(topic => {
       assert.match(topic.from || "", /^[abc][12]-u\d{2}-l\d$/, `${topic.id}: from`);
-      assert.ok(tekst.indexOf(`id: "${topic.from}"`) >= 0, `${topic.id}: ${topic.from} is not a lesson`);
+      const found = tekst.indexOf(`id: "${topic.from}"`) >= 0;
+      if (found) inData++;
+      assert.ok(found || planned.has(topic.from), `${topic.id}: ${topic.from} is not a lesson`);
     });
+    assert.ok(inData > 0, "at least one topic is checked against real lesson data");
   });
 
   test("a weak tag reaches the topic that produces it, even when it is not the primary one", () => {

@@ -881,15 +881,15 @@ describe("addCard: reserved keys do not touch the prototype", () => {
   const ZASTRZEZONE = ["__proto__", "constructor", "prototype"];
 
   for (const reserved of ZASTRZEZONE) {
-    test(`a card named "${reserved}" is rejected without changing the prototype`, { skip: "rewrite in T1.94" }, () => {
+    test(`a card named "${reserved}" is rejected without changing the prototype`, () => {
       const box = loadEngine();
       box.Core.load();
       const objectPrototype = vm.runInContext("({}).constructor.prototype", box.sandbox);
-      assert.equal(box.Core.addCard("caffè", "coffee", "import"), "caffe");
+      assert.equal(box.Core.addCard("Käse", "cheese", "import"), "käse");
       const rejected = box.Core.addCard(reserved, "whatever", "import");
 
       assert.equal(Object.getPrototypeOf(box.Core.state.srs), objectPrototype);
-      assert.deepEqual(Object.keys(box.Core.state.srs), ["caffe"]);
+      assert.deepEqual(Object.keys(box.Core.state.srs), ["käse"]);
       assert.equal(rejected, null);
     });
   }
@@ -907,16 +907,16 @@ describe("addCard: reserved keys do not touch the prototype", () => {
     assert.deepEqual(Object.keys(reloaded.Core.state.srs), ["pane"]);
   });
 
-  test("an accepted card survives save and load with its translation", { skip: "rewrite in T1.94" }, () => {
+  test("an accepted card survives save and load with its translation", () => {
     const box = loadEngine();
     box.Core.load();
-    assert.equal(box.Core.addCard("caffè", "coffee", "import"), "caffe");
+    assert.equal(box.Core.addCard("Käse", "cheese", "import"), "käse");
     box.Core.save();
     box.flush();
-    assert.deepEqual(Object.keys(box.stored(KEY).srs), ["caffe"]);
+    assert.deepEqual(Object.keys(box.stored(KEY).srs), ["käse"]);
     const reloaded = loadEngine({ storage: box.storage });
     reloaded.Core.load();
-    assert.deepEqual(Object.keys(reloaded.Core.state.srs), ["caffe"]);
-    assert.equal(reloaded.Core.state.srs.caffe.tr.pl, "coffee");
+    assert.deepEqual(Object.keys(reloaded.Core.state.srs), ["käse"]);
+    assert.equal(reloaded.Core.state.srs["käse"].tr[reloaded.Core.state.settings.lang], "cheese");
   });
 });
