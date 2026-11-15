@@ -1,26 +1,24 @@
 /* ============================================================
-   ui-es.js — textos de la interfaz, español peninsular.
+   ui-es.js - interface strings, Spanish (Spain).
 
-   Las claves son área.elemento. Un valor es una cadena o un objeto
-   de formas de plural que elige Intl.PluralRules. es-ES pide tres
-   categorías: one, many, other.
+   Keys are area.element. Values are strings or plural-form objects.
+   Intl.PluralRules selects one, many or other for es-ES.
 
-   Los términos gramaticales italianos (passato prossimo, congiuntivo)
-   y los nombres propios se quedan igual en todos los idiomas.
+   German grammar terms (Perfekt, Konjunktiv) and proper names
+   stay identical across every language.
 
-   Tratamiento de tú: el curso habla al alumno de tú, como en las demás
-   lenguas del proyecto. El usted queda para el italiano que se enseña,
-   donde el Lei sí es materia de estudio.
+   Address the learner informally. Formal Sie belongs to the German
+   being taught, where the distinction is part of the course.
    ============================================================ */
 LINGUAI.addUI("es", {
 
   /* ---------------- Estructura ---------------- */
-  "app.title": "Impara l'Italiano 🇮🇹 — italiano en español, de A1 a C2",
-  "app.description": "Curso completo de italiano explicado en español: gramática, teoría, ejercicios, comprensión oral y pronunciación. De A1 a nivel casi nativo.",
+  "app.title": "Deutsch lernen · alemán en español, de A1 a C2",
+  "app.description": "Curso completo de alemán explicado en español: gramática, teoría, ejercicios, comprensión oral y pronunciación. De A1 a C2.",
   "app.skipToContent": "Saltar al contenido",
   "app.openMenu": "Abrir el menú",
   "app.mainNav": "Navegación principal",
-  "app.tagline": "Italiano en español · A1 → C2",
+  "app.tagline": "Alemán en español · A1 → C2",
 
   /* ---------------- Navegación ---------------- */
   "nav.path": "Ruta de aprendizaje",
@@ -55,7 +53,7 @@ LINGUAI.addUI("es", {
   /* ---------------- Accesibilidad ---------------- */
   "a11y.listen": "Escuchar",
   "a11y.listenTo": "Escuchar {what}",
-  "audio.noGermanVoice": "No hay voz italiana en este sistema, así que la frase no se leerá. Un narrador inglés leyendo italiano te enseñaría una pronunciación equivocada. Las grabaciones del curso funcionan al margen de esto.",
+  "audio.noGermanVoice": "No hay voz alemana en este sistema, así que la frase no se leerá. Un narrador inglés leyendo alemán te enseñaría una pronunciación equivocada. Las grabaciones del curso funcionan al margen de esto.",
   "audio.recordingFailed": "La grabación está en el índice pero el archivo no se ha podido cargar. Comprueba que la carpeta audio/ esté junto a index.html y que la página se sirva desde el mismo sitio.",
 
   /* ---------------- Ruta de aprendizaje ---------------- */
@@ -93,9 +91,9 @@ LINGUAI.addUI("es", {
   },
   "lesson.dialogue": "Diálogo: {title}",
   "lesson.playDialogue": "▶️ Escuchar el diálogo entero",
-  "lesson.culture": "Con ojos italianos",
+  "lesson.culture": "Con ojos alemanes",
   "lesson.exercises": "Ejercicios",
-  "lesson.end.perfect": "Impecable. ¡Perfetto!",
+  "lesson.end.perfect": "Impecable. ¡Perfecto!",
   "lesson.end.great": "Muy bien: lo tienes dominado.",
   "lesson.end.pass": "Aprobado. Un par de cosas merecen otra vuelta.",
   "lesson.end.fail": "Todavía no (hace falta un 70%). Vuelve a la teoría e inténtalo otra vez.",
@@ -131,41 +129,41 @@ LINGUAI.addUI("es", {
   "ex.multiHint": "Marca todas las respuestas correctas.",
   "ex.hintLabel": "Pista: {hint}",
   "ex.almost": "¡Casi! Repasa la ortografía (una errata o una tilde que falta).",
-  "ex.ph.toIt": "Escríbelo en italiano",
+  "ex.ph.toIt": "Escríbelo en alemán",
   "ex.ph.toBase": "Escríbelo en español",
   "ex.ph.answer": "Escribe tu respuesta",
   "ex.unknownType": "Tipo de ejercicio desconocido: {t}",
 
   /* ---------------- Ejercicios: por tipo ---------------- */
   "ex.cloze.prompt": "Rellena los huecos.",
-  "ex.order.prompt": "Ordena la frase italiana:",
+  "ex.order.prompt": "Ordena la frase alemana:",
   "ex.order.yourSentence": "Tu frase",
   "ex.order.clear": "Borrar",
   "ex.order.empty": "Construye la frase con las fichas.",
-  "ex.match.prompt": "Empareja las expresiones italianas con su significado en español.",
+  "ex.match.prompt": "Empareja las expresiones alemanas con su significado en español.",
   "ex.match.mistakes": "Errores: {n}.",
   "ex.conj.prompt": "Conjuga: {verb} — {tense}",
   "ex.gender.prompt": "Elige el artículo correcto.",
   "ex.listen.prompt": "Escucha y escribe lo que oigas.",
   "ex.listen.play": "🔊 Reproducir",
   "ex.listen.slow": "🐢 Más despacio",
-  "ex.listen.ph": "Escríbelo en italiano",
-  "ex.speak.prompt": "Dilo en voz alta en italiano:",
+  "ex.listen.ph": "Escríbelo en alemán",
+  "ex.speak.prompt": "Dilo en voz alta en alemán:",
   "ex.speak.mic": "Grabar tu respuesta",
   "ex.speak.hint": "Pulsa el micrófono y lee la frase.",
   "ex.speak.noStt": "Tu navegador no admite el reconocimiento de voz. Escucha el modelo, repítelo en voz alta y luego escribe la frase de memoria.",
   "ex.speak.ph": "Escribe la frase",
   "ex.speak.pass": "Marcar como hecho",
   "ex.speak.recordFirst": "Graba primero tu respuesta.",
-  "ex.speak.ok": "Pronunciación reconocida correctamente.",
+  "ex.speak.ok": "Las palabras reconocidas coinciden con la frase.",
   "ex.speak.retry": "El reconocimiento de voz es duro con el acento extranjero: escucha el modelo e inténtalo otra vez con calma.",
   "ex.dialogue.prompt": "Escucha y responde.",
   "ex.dialogue.yourTurn": "Te toca: {task}",
   "ex.dialogue.pickAnswer": "elige una respuesta",
   "ex.dialogue.mistakes": "Errores: {n}. Lee el diálogo en voz alta una vez más.",
   "ex.dialogue.allOk": "Toda la conversación ha salido bien.",
-  "ex.truefalse.true": "Verdadero (vero)",
-  "ex.truefalse.false": "Falso (falso)",
+  "ex.truefalse.true": "Verdadero",
+  "ex.truefalse.false": "Falso",
 
   /* ---------------- Reconocimiento de voz ---------------- */
   "ex.stt.listening": "Escuchando…",
@@ -187,9 +185,9 @@ LINGUAI.addUI("es", {
   "search.open": "Buscar en el curso",
   "search.kicker": "BUSCAR",
   "search.title": "¿Dónde estaba eso?",
-  "search.intro": "Busca en títulos de lecciones, vocabulario, entradas de gramática y conversaciones. En italiano o en español, con tildes o sin ellas.",
+  "search.intro": "Busca en títulos de lecciones, vocabulario, entradas de gramática y conversaciones. En alemán o en español, con tildes o sin ellas.",
   "search.label": "Término de búsqueda",
-  "search.ph": "p. ej. magari, congiuntivo, estación",
+  "search.ph": "p. ej. Bahnhof, Konjunktiv, estación",
   "search.go": "Buscar",
   "search.count": { one: "{n} resultado", many: "{n} resultados", other: "{n} resultados" },
   "search.partial": "No se han podido cargar los niveles: {levels}. Los resultados pueden estar incompletos.",
@@ -201,7 +199,7 @@ LINGUAI.addUI("es", {
   "search.kind.vocab": "palabra",
   "search.kind.grammar": "gramática",
   "search.kind.talk": "conversación",
-  "keys.barLabel": "Caracteres italianos",
+  "keys.barLabel": "Caracteres alemanes",
 
   /* ---------------- Prueba de nivel ---------------- */
   /* ---------------- Guía ---------------- */
@@ -214,7 +212,7 @@ LINGUAI.addUI("es", {
   "guide.open": "Abrir",
 
   "guide.inizio.h": "Por dónde empezar",
-  "guide.inizio.p1": "Si nunca has estudiado italiano, ve directo a la primera lección de A1. El curso está hecho para empezar de cero y no hay que configurar nada antes.",
+  "guide.inizio.p1": "Si nunca has estudiado alemán, ve directo a la primera lección de A1. El curso está hecho para empezar de cero y no hay que configurar nada antes.",
   "guide.inizio.p2": "Si ya sabes algo, haz la prueba de nivel. Salta entre niveles en vez de recorrerlos, así que termina rápido, y al final da por hechas las lecciones de los niveles de abajo. El resultado es una propuesta: puedes rechazarla y empezar desde el principio.",
 
   "guide.ordine.h": "El orden que tiene sentido",
@@ -236,7 +234,7 @@ LINGUAI.addUI("es", {
   "guide.ripasso.p3": "El contador de la pestaña Repasos suma las dos barajas. Cero significa «hoy no hay nada pendiente», no «se acabó el curso».",
 
   "guide.esame.h": "El examen",
-  "guide.esame.p1": "La pestaña Examen es una simulación del CILS: las secciones van en un orden fijo, cada una con su límite de tiempo, y las respuestas se escriben en una rejilla en vez de corregirse una a una. Los enunciados están en italiano, porque en el examen real también lo estarán.",
+  "guide.esame.p1": "La pestaña Examen ofrece una simulación al estilo Goethe B1 (no oficial, versión preliminar): las secciones siguen un orden fijo, cada una con su límite de tiempo. Las respuestas se anotan en una rejilla en vez de corregirse una a una. Los enunciados están en alemán.",
   "guide.esame.p2": "No tiene sentido probarlo pronto: mide un nivel que ya tienes, no es la manera de alcanzarlo. El momento razonable es el final del nivel al que te presentas.",
 
   "guide.mappa.h": "Todas las pantallas, una por una",
@@ -254,16 +252,16 @@ LINGUAI.addUI("es", {
   "guide.s.percorso": "Niveles, unidades y lecciones. De aquí sale todo el estudio.",
   "guide.s.ripasso": "Tarjetas y cuaderno de errores, todo lo que vuelve.",
   "guide.s.allenamento": "Ejercicios hechos con reglas, no con una lista, así que no se acaban.",
-  "guide.s.conversazione": "El curso habla italiano, tú contestas al micrófono.",
-  "guide.s.chiacchiere": "Una conversación sin guion: dices lo tuyo, la otra persona responde en italiano y corrige aparte. Necesita clave y un consentimiento propio; aquí no se puntúa nada.",
+  "guide.s.conversazione": "El curso habla alemán, tú contestas al micrófono.",
+  "guide.s.chiacchiere": "Una conversación sin guion: dices lo tuyo, la otra persona responde en alemán y corrige aparte. Necesita clave y un consentimiento propio; aquí no se puntúa nada.",
   "guide.s.grammatica": "El temario de gramática completo de A1 a C2, para leer.",
   "guide.s.coniugatore": "Conjugación de cualquier verbo, también reflexivos.",
   "guide.s.lessico": "Las palabras que marcaste, ordenadas por próximo repaso.",
   "guide.s.shadowing": "Escucha, repite y luego oye las dos grabaciones seguidas.",
   "guide.s.velocita": "La misma frase a velocidad normal. Ir lento es el salvavidas, no el punto de partida.",
-  "guide.s.esame": "Simulación del CILS con límite de tiempo e historial de intentos.",
+  "guide.s.esame": "Simulación al estilo Goethe B1 (no oficial, versión preliminar) con límite de tiempo e historial de intentos.",
   "guide.s.falsi": "Palabras que significan otra cosa de la que sugiere tu idioma.",
-  "guide.s.copertura": "Cuánto del italiano más frecuente ya entiendes.",
+  "guide.s.copertura": "Cuánto del alemán más frecuente ya entiendes.",
   "guide.s.progressi": "Racha, puntos y gráfico de días. Todo contado en local.",
   "guide.s.impostazioni": "Voz, velocidad, acentos, copia de seguridad, prueba de nivel.",
   "guide.s.suoni": "Dos palabras a un sonido de distancia. Primero el oído, luego la boca.",
@@ -274,7 +272,7 @@ LINGUAI.addUI("es", {
 
   /* ---------------- Pantalla de bienvenida ---------------- */
   "welcome.kicker": "INICIO",
-  "welcome.title": "Bienvenido al curso de italiano",
+  "welcome.title": "Bienvenido al curso de alemán",
   "welcome.intro": "Antes de empezar: ¿por dónde quieres arrancar? Nada es definitivo, el nivel se cambia cuando quieras.",
   "welcome.zeroTitle": "Empiezo de cero",
   "welcome.zeroHint": "Primera lección de A1, desde el saludo hasta pedir un café.",
@@ -306,7 +304,7 @@ LINGUAI.addUI("es", {
 
   /* ---------------- Escritura ---------------- */
   "write.kicker": "ESCRITURA",
-  "write.title": "Escribir en italiano",
+  "write.title": "Escribir en alemán",
   "write.hubHint": "Redacciones con un requisito medible y traducción frase a frase.",
   "write.intro": "Aquí nadie va a corregir tu texto y el curso no finge lo contrario. Se comprueba lo que se puede comprobar: si has usado las construcciones que pedía la tarea. El resto lo comparas con un modelo.",
   "write.kindCompose": "redacción",
@@ -316,7 +314,7 @@ LINGUAI.addUI("es", {
   "write.saved": "guardado, {n} palabras",
   "write.back": "← Tareas",
   "write.yourText": "Tu texto",
-  "write.placeholder": "Escribe en italiano, al menos {n} palabras…",
+  "write.placeholder": "Escribe en alemán, al menos {n} palabras…",
   "write.words": "Palabras: {n}",
   "write.mustUse": "La tarea te pide usar",
   "write.reqVerb": "{verb} en {tense}",
@@ -344,7 +342,7 @@ LINGUAI.addUI("es", {
   "read.kicker": "TEXTOS",
   "read.title": "Leer y escuchar",
   "read.hubHint": "Textos más largos con preguntas y dictado. Frase a frase se llega a B1 y ahí uno se queda.",
-  "read.intro": "El italiano de verdad no llega de frase en frase. Estos textos entrenan lo que los ejercicios sueltos no entrenan: sostener el sentido a lo largo de varias frases seguidas.",
+  "read.intro": "El alemán de verdad no llega de frase en frase. Estos textos entrenan lo que los ejercicios sueltos no entrenan: sostener el sentido a lo largo de varias frases seguidas.",
   "read.open": "Abrir",
   "read.long": "{n} frases",
   "read.resume": "Reanudar desde la frase {n}",
@@ -412,7 +410,7 @@ LINGUAI.addUI("es", {
   "train.endless": "Cada tanda saca ejercicios nuevos. Lo que falles va a la pestaña Fallos, dentro de Repaso.",
   "train.topic.prep-art": "Preposición con artículo",
   "train.topic.accordo": "Concordancia del adjetivo",
-  "train.topic.ausiliare": "Essere o avere",
+  "train.topic.ausiliare": "Sein o haben",
   "train.topic.pronomi": "Pronombres de complemento",
   "train.topic.numeri": "Números",
   "train.topic.date": "Fechas",
@@ -423,19 +421,18 @@ LINGUAI.addUI("es", {
   "train.again": "Otra vez",
   "train.backHub": "Elegir otro",
 
-  /* Enunciados de los generadores. El italiano entra como variable, así que
-     solo se traduce el marco de la frase, nunca el material lingüístico. */
+  /* Drill values use German; translate only the surrounding instructions. */
   "drill.prepArt.q": "Contrae: <b>{prep}</b> + el artículo de <b>{noun}</b>",
   "drill.accordo.q": "Concuerda el adjetivo: <b>{group}</b> + <b>{adj}</b>",
   "drill.pron.q": "Sustituye el complemento por un pronombre: <b>{sentence}</b>",
-  "drill.aux.q": "¿Qué auxiliar lleva <b>{verb}</b> en el passato prossimo?",
+  "drill.aux.q": "¿Qué auxiliar lleva <b>{verb}</b> en el Perfekt?",
   "drill.aux.both": "<b>{verb}</b> lleva los dos: marca ambos.",
-  "drill.aux.whyAvere": "Verbo transitivo: lleva avere.",
-  "drill.aux.whyEssere": "Verbo de movimiento o de cambio de estado: lleva essere.",
-  "drill.aux.whyRefl": "Reflexivo, así que siempre essere, incluso cuando el mismo verbo sin si lleva avere.",
-  "drill.aux.whyBoth": "Con avere es transitivo (ha cambiato casa), con essere no lo es (è cambiato). Otro auxiliar, otro significado.",
+  "drill.aux.whyAvere": "Este verbo forma el Perfekt con haben. Los verbos transitivos llevan haben, al igual que muchos intransitivos, como tanzen.",
+  "drill.aux.whyEssere": "Este verbo forma el Perfekt con sein. Por lo general, sein se usa con verbos intransitivos que expresan un cambio de lugar o de estado, y también con sein, bleiben y werden. El movimiento por sí solo no basta: tanzen lleva haben.",
+  "drill.aux.whyRefl": "Los verbos usados reflexivamente forman el Perfekt con haben: Ich habe mich gewaschen.",
+  "drill.aux.whyBoth": "El auxiliar puede depender del uso del verbo. Por ejemplo, fahren lleva haben en su uso transitivo (Er hat das Auto gefahren) y sein cuando expresa un cambio de lugar (Er ist nach Berlin gefahren).",
   "drill.num.q": "Escríbelo con letras: <b>{n}</b>",
-  "drill.date.q": "Escribe la fecha en italiano: <b>{day} {month}</b>",
+  "drill.date.q": "Escribe la fecha en alemán: <b>{day} {month}</b>",
   "drill.ore.q": "¿Qué hora es? <b>{time}</b>",
 
   /* ---------------- Repaso: pestañas ---------------- */
@@ -479,8 +476,8 @@ LINGUAI.addUI("es", {
   "srs.sessionDone": "Sesión de repaso terminada.",
   "srs.nextBatch": "Siguiente tanda",
   "srs.cardOf": "Tarjeta {i} de {n}",
-  "srs.howInItalian": "¿Cómo se dice en italiano?",
-  "srs.ph": "En italiano",
+  "srs.howInItalian": "¿Cómo se dice en alemán?",
+  "srs.ph": "En alemán",
   "srs.right": "¡Correcto!",
   "srs.wrong": "La respuesta es:",
   "srs.grade0": "Ni idea",
@@ -490,14 +487,14 @@ LINGUAI.addUI("es", {
 
   /* ---------------- Práctica oral ---------------- */
   "talk.kicker": "Hablar",
-  "talk.intro": "La aplicación habla italiano y tú respondes al micrófono. Situaciones reales: el bar, una tienda, la estación, una entrevista de trabajo.",
+  "talk.intro": "La aplicación habla alemán y tú respondes al micrófono. Situaciones reales: el bar, una tienda, la estación, una entrevista de trabajo.",
   "talk.noSttLabel": "Aviso:",
   "talk.noStt": "Tu navegador no admite el reconocimiento de voz. Las conversaciones funcionarán en modo escrito. El modo oral completo va en Chrome, Edge y Safari 16+.",
   "talk.notFound": "Conversación no encontrada",
   "talk.backToList": "← Todas las conversaciones",
   "talk.yourTurn": "Te toca: {task}",
   "talk.speak": "Hablar",
-  "talk.tapAndSpeak": "Pulsa y dilo en italiano.",
+  "talk.tapAndSpeak": "Pulsa y dilo en alemán.",
   "talk.orType": "…o escribe tu respuesta",
   "talk.typeAnswer": "Escribe tu respuesta",
   "talk.send": "Enviar",
@@ -511,13 +508,13 @@ LINGUAI.addUI("es", {
   "talk.otherBranch": "Volver a la elección",
   "nav.exam": "Examen",
   "cils.none": "Todavía no hay simulaciones de examen.",
-  "cils.kicker": "CILS B1 Cittadinanza",
+  "cils.kicker": "Estilo Goethe B1 (no oficial, versión preliminar)",
   "cils.title": "Simulación de examen",
-  "cils.intro": "Todo el examen está en italiano, instrucciones incluidas. Aquí también: de otro modo practicarías una tarea distinta de la que te espera.",
+  "cils.intro": "Las pruebas y las instrucciones están en alemán. Esta es una versión preliminar no oficial al estilo Goethe B1.",
   "cils.limitLabel": "Antes de empezar:",
   "cils.limit": "Este simulador puntúa dos de las cuatro destrezas, comprensión oral y lectora. La expresión escrita vuelve como una lista de las partes del encargo que están y las que faltan, y la oral no cuenta para el resultado: esas dos las corrige una persona, y un número automático parecería una nota sin serlo.",
-  "cils.structure": "Cuatro destrezas, seis pruebas: dos de comprensión oral (30 minutos), dos de lectura con gramática (40 minutos), un texto de 80-120 palabras (40 minutos) y una conversación (unos 10 minutos).",
-  "cils.thresholdSource": "El umbral de 7 sobre 12 en cada destreza no lo publica el Centro CILS para este módulo: procede de su propio documento de procedimiento y de un centro estatal de examen. Dos fuentes institucionales citan en cambio la escala del examen estándar, que contradice el máximo de este módulo.",
+  "cils.structure": "Cuatro destrezas: comprensión oral, lectura, escritura y expresión oral. Los tiempos y las tareas se indican en cada sección de esta versión preliminar.",
+  "cils.thresholdSource": "Los umbrales mostrados pertenecen al simulador. Esta versión preliminar no certifica un nivel ni sustituye los criterios oficiales del examen Goethe B1.",
   "cils.sectionsLine": "Escuchar, leer, escribir, hablar",
   "cils.start": "Empezar",
   "cils.stepOf": "Sección {i} de {n}",
@@ -528,7 +525,7 @@ LINGUAI.addUI("es", {
   "cils.sec.orale": "Expresión oral",
   "cils.testN": "Prueba {n}",
   "cils.playText": "▶ Texto {n}",
-  "cils.twice": "Cada texto se puede escuchar dos veces, como en el examen.",
+  "cils.twice": "Puedes escuchar cada texto dos veces.",
   "cils.playedTwice": "Escuchado dos veces",
   "cils.expired": "Se acabó el tiempo de esta sección. Se cuentan las respuestas que habías marcado.",
   "cils.closeSection": "Cerrar la sección",
@@ -564,7 +561,7 @@ LINGUAI.addUI("es", {
   "cils.notMeasured": "aquí no se cuenta",
   "cils.expiredMark": "(se acabó el tiempo)",
   "cils.threshold": "Umbral: {n} puntos sobre {max} en cada destreza.",
-  "cils.verdictBelow": "Al menos una destreza está por debajo del umbral, así que el examen no estaría aprobado. Aquí no hay capitalización: una destreza por debajo obliga a repetir el examen entero.",
+  "cils.verdictBelow": "Al menos una de las destrezas evaluadas está por debajo del umbral del simulador. Repasa esa sección y vuelve a intentarlo. Esta versión preliminar no ofrece un resultado oficial.",
   "cils.verdictUnknown": "Las destrezas contadas aquí están por encima del umbral. Eso no significa aprobado: la escritura y el habla no las corrige el simulador, y sin ellas el resultado queda sin decidir.",
   "cils.writingNotScored": "Sin nota: solo comprobamos si el encargo se ha hecho entero.",
   "cils.again": "Otra vez",
@@ -579,11 +576,11 @@ LINGUAI.addUI("es", {
 
   /* ---------------- Conjugador ---------------- */
   "conj.kicker": "Herramienta",
-  "conj.intro": "Escribe un infinitivo (también reflexivos, como svegliarsi). El motor conjuga las formas regulares y unos 45 de los irregulares más frecuentes.",
-  "conj.ph": "p. ej. parlare, essere, capire, svegliarsi",
+  "conj.intro": "Escribe un infinitivo alemán, también reflexivo, como sich freuen. El motor genera las formas regulares y conjuga los verbos irregulares del curso.",
+  "conj.ph": "Ej.: lernen, sein, haben, sich freuen",
   "conj.run": "Conjugar",
   "conj.notInfinitive": "Eso no parece un infinitivo",
-  "conj.notInfinitiveHint": "Un infinitivo acaba en -are, -ere, -ire (o en -rsi si es reflexivo).",
+  "conj.notInfinitiveHint": "Los infinitivos alemanes terminan en -en o -n. En los reflexivos, añade sich delante del verbo.",
   "conj.irregular": "irregular",
   "conj.regular": "regular",
   "conj.reflexive": "reflexivo",
@@ -606,7 +603,7 @@ LINGUAI.addUI("es", {
   "lex.inDeck": "tarjetas en la baraja",
   "lex.learned": "aprendidas (3 repasos o más)",
   "lex.dueToday": "para hoy",
-  "lex.searchPh": "Buscar en italiano o en español",
+  "lex.searchPh": "Buscar en alemán o en español",
   "lex.today": "hoy",
   "lex.tomorrow": "mañana",
   "lex.inDays": "dentro de {n} días",
@@ -682,16 +679,16 @@ LINGUAI.addUI("es", {
   "lookup.fromForm": "en el texto: {form}",
   "lookup.fromPhrase": "el curso lo enseña en: {phrase}",
   "nav.coverage": "Cobertura",
-  "cov.kicker": "Italiano real",
+  "cov.kicker": "Alemán real",
   "cov.title": "Cuánto tienes ya",
-  "cov.intro": "Las {n} formas italianas más frecuentes. No son puntos por fidelidad a una aplicación: es lengua que puedes comprobar fuera de ella.",
+  "cov.intro": "Las {n} formas alemanas más frecuentes. No son puntos por fidelidad a una aplicación: es lengua que puedes comprobar fuera de ella.",
   "cov.yours": "Tu mazo",
-  "cov.yoursWhy": "Formas que tienes en los repasos, con la flexión incluida: «bere» cubre «bevo».",
+  "cov.yoursWhy": "Formas que tienes en los repasos, con la flexión incluida: «trinken» cubre «trinke».",
   "cov.course": "Alcance del curso",
   "cov.courseWhy": "Formas que el curso llega a enseñar. Es el techo: no subirás más, por mucho que termines.",
   "cov.ofText": "alrededor del {pct}% de todo lo que se dice en una frase",
   "cov.nextUp": "Las lagunas más cercanas",
-  "cov.nextUpWhy": "Las palabras más frecuentes que aún no tienes y el curso sí conoce. Debajo, las formas en que aparece.",
+  "cov.nextUpWhy": "Las palabras más frecuentes que aún no tienes y el curso sí conoce. Debajo, las formas en que aparecen.",
   "cov.add": "A los repasos",
   "cov.forms": "aparece como: {forms}",
   /* ---------------- Volver ---------------- */
@@ -711,7 +708,7 @@ LINGUAI.addUI("es", {
   "ret.installed": "El curso ya está instalado.",
   "ret.installReady": "Este curso se puede instalar como una aplicación: abre más rápido, funciona sin conexión y tiene su propio icono.",
   "ret.installNow": "Instalar",
-  "ret.icsTitle": "Italiano: repasos",
+  "ret.icsTitle": "Alemán: repasos",
   "ret.icsBody": "Con diez minutos basta. Abre el curso y haz la sesión del día.",
 
 
@@ -719,14 +716,14 @@ LINGUAI.addUI("es", {
   "nav.chat": "Conversación libre",
   "chat.kicker": "Una conversación sin guion",
   "chat.title": "Conversación libre",
-  "chat.intro": "Aquí nadie ha escrito antes lo que tienes que decir. Eliges una escena, dices lo tuyo, y la otra persona responde en italiano y corrige aparte lo que merece corrección.",
+  "chat.intro": "Aquí nadie ha escrito antes lo que tienes que decir. Eliges una escena, dices lo tuyo, y la otra persona responde en alemán y corrige aparte lo que merece corrección.",
   "chat.needsKeyLabel": "Esta parte necesita una clave.",
   "chat.needsKeyOn": "Tu clave está puesta, y cada turno es una petición cobrada a tu propia cuenta. El contador indica cuántos turnos quedan.",
   "chat.needsKeyOff": "Todavía no tienes clave de modelo ni consentimiento para conversar. Ambos se activan en Ajustes; sin ellos el resto del curso funciona igual.",
   "chat.none": "No hay escenas para conversar.",
   "chat.notFound": "Esa escena no existe.",
   "chat.backToList": "← Escenas",
-  "chat.placeholder": "Escribe en italiano…",
+  "chat.placeholder": "Escribe en alemán…",
   "chat.send": "Enviar",
   "chat.waiting": "Está escribiendo…",
   "chat.failed": "No llegó respuesta. El turno no se ha contado: inténtalo otra vez.",
@@ -767,7 +764,7 @@ LINGUAI.addUI("es", {
   "nav.falsi": "Falsos amigos",
   "fa.kicker": "Tu lengua no te ayuda aquí",
   "fa.title": "Falsos amigos",
-  "fa.intro": "{n} palabras que en italiano significan otra cosa de lo que sugiere el español. La lista cambia según el idioma, porque la trampa depende de lo que ya llevas dentro.",
+  "fa.intro": "{n} palabras que en alemán significan otra cosa de lo que sugiere el español. La lista cambia según el idioma, porque la trampa depende de lo que ya llevas dentro.",
   "fa.looksLike": "parece",
   "fa.actually": "significa",
   "fa.startQuiz": "Ponte a prueba",
@@ -816,7 +813,7 @@ LINGUAI.addUI("es", {
   "nav.speed": "Velocidad",
   "sp.kicker": "Cuando nadie baja el ritmo",
   "sp.title": "Velocidad del habla",
-  "sp.intro": "La frase suena primero a velocidad normal. Bajarla está a un clic, pero es un salvavidas, no el punto de partida: fuera de clase nadie habla italiano despacio.",
+  "sp.intro": "La frase suena primero a velocidad natural, el alemán que oirás fuera de clase. Puedes ralentizarla con un clic cuando lo necesites.",
   "sp.normal": "▶ Normal",
   "sp.slow": "▶ Más lento",
   "sp.fast": "▶ Más rápido",
@@ -858,7 +855,7 @@ LINGUAI.addUI("es", {
   "set.storageGranted": "concedida",
   "set.storageDenied": "no concedida",
   "set.storageUnknown": "no disponible",
-  "set.italianVoices": "Voces italianas en este sistema",
+  "set.italianVoices": "Voces alemanas en este sistema",
   "set.fallbackOnly": "solo en modo alternativo",
   "set.works": "funciona",
   "set.absent": "ninguna",
@@ -977,11 +974,11 @@ LINGUAI.addUI("es", {
   "privacy.chi.p1": "El responsable del tratamiento es {name}. Para cualquier cosa sobre este aviso o sobre los datos: {mail}.",
 
   "privacy.breve.h": "En pocas palabras",
-  "privacy.breve.p1": "Impara l'Italiano no tiene cuentas ni servidor. No te pregunta el nombre. Tu progreso se queda en el navegador que estás usando, y nadie más que tú puede leerlo: no usamos cookies, no hemos instalado ningún sistema de estadísticas y la página no contacta con ningún otro sitio.",
+  "privacy.breve.p1": "Deutsch lernen no tiene cuentas ni servidor. No te pregunta el nombre. Tu progreso se queda en el navegador que estás usando, y nadie más que tú puede leerlo: no usamos cookies, no hemos instalado ningún sistema de estadísticas y la página no contacta con ningún otro sitio.",
   "privacy.breve.p2": "Hay tres cosas que sí salen de tu dispositivo, y este aviso existe sobre todo para decírtelas: tu voz, cuando usas los ejercicios de pronunciación; tus respuestas escritas, pero solo si activas tú la revisión por un modelo; y tu dirección IP, que ve quien aloja el sitio.",
 
   "privacy.dispositivo.h": "Qué se queda en tu dispositivo",
-  "privacy.dispositivo.p1": "El curso guarda en la memoria local del navegador (localStorage, bajo la clave linguai.italiano.v2) todo lo que hace falta para volver al punto donde se quedó el estudio:",
+  "privacy.dispositivo.p1": "El curso guarda en la memoria local del navegador (localStorage, bajo la clave linguai.tedesco.v1) todo lo que hace falta para volver al punto donde se quedó el estudio:",
   "privacy.dispositivo.l1": "las lecciones terminadas, los puntos y la racha de días seguidos;",
   "privacy.dispositivo.l2": "las tarjetas de repaso y cuándo tocan;",
   "privacy.dispositivo.l3": "el cuaderno de errores: qué ejercicios salieron mal y de qué tema;",
@@ -1005,11 +1002,11 @@ LINGUAI.addUI("es", {
   "privacy.modello.l2": "las peticiones las pagas tú, con el contrato que tienes con ese proveedor. No tenemos forma de verlas ni de contarlas;",
   "privacy.modello.l3": "lo que el proveedor haga con tu frase después de recibirla no depende de nosotros y no podemos comprobarlo, igual que con el reconocimiento de voz. La respuesta está en la política de privacidad del proveedor que elegiste.",
   "privacy.modello.p4": "También aquí el curso te pide el consentimiento, y es un consentimiento distinto del de reconocimiento de voz: aceptar uno no es aceptar el otro, y retirar uno no retira el otro. Lo retiras cuando quieras en {settings}, donde también puedes borrar todas las claves de una vez. Sin clave o sin consentimiento el curso no contacta con ningún proveedor y se comporta exactamente como antes.",
-  "privacy.modello.p5": "Hay un tercer lugar, la simulación de examen, y ahí sale todavía más, sin que pulses nada. Al final de un intento, si ya tienes activada la revisión con un modelo, el curso envía al proveedor dos cosas: el texto de la prueba escrita junto con su consigna y lo que hayas escrito en la revisión posterior a la prueba oral. Conviene saber qué son esos textos: las consignas del examen preguntan por tu barrio, tu trabajo y cómo llegaste a Italia, así que probablemente hayas puesto dónde vives y a qué te dedicas. Si prefieres que no salgan, desactiva la revisión con un modelo en {settings} antes de empezar: la simulación funciona igual, la puntuación de comprensión auditiva y lectora es la misma, y las dos producciones se quedan con la detección que el curso hace solo, en tu dispositivo. Tu voz no sale nunca por esta vía: la grabación se queda en la memoria de la página y desaparece al cerrarla.",
+  "privacy.modello.p5": "Hay un tercer lugar, la simulación de examen, y ahí sale todavía más, sin que pulses nada. Al final de un intento, si ya tienes activada la revisión con un modelo, el curso envía al proveedor dos cosas: el texto de la prueba escrita junto con su consigna y lo que hayas escrito en la revisión posterior a la prueba oral. Conviene saber qué son esos textos: las consignas del examen preguntan por tu barrio, tu trabajo y cómo llegaste a Alemania, así que probablemente hayas puesto dónde vives y a qué te dedicas. Si prefieres que no salgan, desactiva la revisión con un modelo en {settings} antes de empezar: la simulación funciona igual, la puntuación de comprensión auditiva y lectora es la misma, y las dos producciones se quedan con la detección que el curso hace solo, en tu dispositivo. Tu voz no sale nunca por esta vía: la grabación se queda en la memoria de la página y desaparece al cerrarla.",
   "privacy.modello.p6": "Y hay un cuarto lugar, el que más manda fuera: la conversación libre. Allí no sale una frase, sale todo lo que has dicho en esa escena, turno tras turno, y vuelve a salir en cada turno nuevo, porque el modelo necesita lo anterior para responder. Por eso tiene un consentimiento propio, separado del de la revisión de respuestas: aceptar que se revise una frase no es aceptar enviar una conversación entera, y desactivar uno no desactiva el otro. La conversación no se guarda: vive en la memoria de la página, desaparece al cerrarla o recargarla y nunca llega al archivo que descargas con {export}. Cada turno es una petición de pago en tu propio contrato, y por eso el contador de turnos restantes está en pantalla desde el primer momento.",
 
   "privacy.cache.h": "Las copias que el curso guarda para funcionar sin conexión",
-  "privacy.cache.p1": "El curso funciona también sin internet. Para conseguirlo, el navegador guarda una copia de los archivos del curso: el código, los textos de las lecciones y las grabaciones de los nativos. Son archivos nuestros, iguales para todos, y no contienen nada que tenga que ver contigo. Desaparecen cuando borras los datos del sitio en el navegador.",
+  "privacy.cache.p1": "El curso funciona también sin internet. Para conseguirlo, el navegador guarda una copia de los archivos del curso: el código, los textos de las lecciones y las grabaciones del curso. Son archivos nuestros, iguales para todos, y no contienen nada que tenga que ver contigo. Desaparecen cuando borras los datos del sitio en el navegador.",
 
   "privacy.hosting.h": "Quién sirve la página",
   "privacy.hosting.p1": "El curso está publicado en GitHub Pages. Como en cualquier sitio, quien lo sirve registra las peticiones que recibe, y en esas peticiones va tu dirección IP. Es el único tratamiento que no decidimos nosotros, y no podemos evitarlo: sin alguien que entregue las páginas no hay sitio. Qué pasa a partir de ahí lo describen las condiciones de GitHub.",
@@ -1053,7 +1050,7 @@ LINGUAI.addUI("es", {
   "flash.tryIt": "Cinco minutos con palabras nuevas",
   "flash.replay": "Escuchar otra vez",
   "flash.listenPick": "Escucha y elige lo que oíste.",
-  "flash.listenWrite": "Escucha y escríbelo en italiano.",
+  "flash.listenWrite": "Escucha y escríbelo en alemán.",
   "guide.s.cinque": "Una sesión de tarjetas que se detiene a los cinco minutos o a las veinte tarjetas.",
   "nav.g.study": "Estudiar",
   "nav.g.practise": "Practicar",

@@ -1,0 +1,28 @@
+{
+  "bundleHash": "68281c0bb7a1c30de69438280c3a5cfbaba67e505bb77f29986b20f31646ff80",
+  "findings": [
+    {
+      "kind": "Polish inflection",
+      "msg": "La forma fissa «{n} słów» produce «1 słów» e «2 słów». Usare un oggetto plurale: one «zapisane, {n} słowo», few «zapisane, {n} słowa», many «zapisane, {n} słów».",
+      "path": "content.LINGUAI.addUI(\"pl\")[\"write.saved\"]"
+    },
+    {
+      "kind": "Polish inflection",
+      "msg": "«Zapisano {n} fiszek» produce forme scorrette per 1, 2–4 e numeri come 22. Usare le categorie plurali: one «Zapisano {n} fiszkę.», few «Zapisano {n} fiszki.», many «Zapisano {n} fiszek.».",
+      "path": "content.LINGUAI.addUI(\"pl\")[\"anki.exported\"]"
+    },
+    {
+      "kind": "Polish inflection",
+      "msg": "«Wczytano {n} fiszek» richiede flessione: one «Wczytano {n} fiszkę.», few «Wczytano {n} fiszki.», many «Wczytano {n} fiszek.».",
+      "path": "content.LINGUAI.addUI(\"pl\")[\"anki.imported\"]"
+    },
+    {
+      "kind": "CEFR accuracy",
+      "msg": "«Od A1 do poziomu native» presenta impropriamente il livello finale come competenza madrelingua. C2 non equivale a essere madrelingua; sostituire con «Od A1 do C2».",
+      "path": "content.LINGUAI.addUI(\"pl\")[\"app.description\"]"
+    }
+  ],
+  "lang": "pl",
+  "unit": "ui-pl",
+  "verdict": "fail"
+}
