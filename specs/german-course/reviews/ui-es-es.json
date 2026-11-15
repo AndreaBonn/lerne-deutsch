@@ -1,15 +1,15 @@
 {
-  "bundleHash": "da4660ead844daa169906966d66426193c8c09b5007643237a0e6b6bfaa7dc58",
+  "bundleHash": "8c6bf0b3092dbef2aae60e556cf74e75acb395d0659f70ce1be7565e0cf9397e",
   "findings": [
     {
-      "kind": "pluralización",
-      "msg": "«Las {n} tarjetas están descansando» produce «Las 1 tarjetas están descansando» cuando solo hay una tarjeta. Añadir formas plurales: one: «La tarjeta está descansando. Vuelve mañana, o marca palabras nuevas dentro de una lección.»; many/other: conservar el texto actual.",
-      "path": "content → LINGUAI.addUI(\"es\") → srs.allResting"
+      "kind": "grammatica spagnola",
+      "msg": "«Significan otra cosa de lo que sugiere el español» presenta una costruzione comparativa scorretta. Correggere in «significan algo distinto de lo que sugiere el español».",
+      "path": "content[\"fa.intro\"]"
     },
     {
-      "kind": "concordancia",
-      "msg": "«Las formas en que aparece» tiene un sujeto implícito singular, pero el antecedente es «Las palabras». Corregir a «Debajo, las formas en que aparecen».",
-      "path": "content → LINGUAI.addUI(\"es\") → cov.nextUpWhy"
+      "kind": "chiarezza dell’istruzione",
+      "msg": "«Entender leyendo no es lo mismo que entender» omette il riferimento all’ascolto e rende oscuro il confronto. Correggere in «entender leyendo no es lo mismo que entender de oído».",
+      "path": "content[\"read.listenHint\"]"
     }
   ],
   "lang": "es",
