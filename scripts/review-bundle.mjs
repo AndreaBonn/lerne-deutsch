@@ -1,10 +1,12 @@
 import { join, basename, extname, resolve, relative, isAbsolute, sep } from 'node:path';
-import { readFileSync, realpathSync } from 'node:fs';
+import { readFileSync, realpathSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { loadCourse, runDataFile } from './snapshot_target.mjs';
 
 const ROOT = fileURLToPath(new URL('../', import.meta.url));
+
+const OVERLAY_PATH = /^data\/i18n\/([a-z]{2})\/([^/]+\.js)$/;
 
 function assertInsideRoot(root, path) {
   const local = relative(root, path);
@@ -19,7 +21,16 @@ export function buildFileBundle({ root, file, lang }) {
   assertInsideRoot(resolvedRoot, candidate);
   const path = realpathSync(candidate);
   assertInsideRoot(resolvedRoot, path);
-  return { unit: basename(path, extname(path)), lang, content: readFileSync(path, 'utf8') };
+  const name = basename(path, extname(path));
+  const overlay = relative(resolvedRoot, path).split(sep).join('/').match(OVERLAY_PATH);
+  if (!overlay) return { unit: name, lang, content: readFileSync(path, 'utf8') };
+  if (overlay[1] !== lang) throw new Error(`Overlay language "${overlay[1]}" does not match --lang "${lang}"`);
+  const neutralPath = join(resolvedRoot, 'data/core', overlay[2]);
+  /* Without its core an overlay cannot be judged: falling back to a plain
+     review would hide the German again and reuse the core's verdict name. */
+  if (!existsSync(neutralPath)) throw new Error(`Overlay has no neutral layer: data/core/${overlay[2]} is missing`);
+  assertInsideRoot(resolvedRoot, realpathSync(neutralPath));
+  return { unit: `i18n-${name}`, lang, neutral: readFileSync(neutralPath, 'utf8'), content: readFileSync(path, 'utf8') };
 }
 
 export function buildBundle({ root, unitId, lang }) {

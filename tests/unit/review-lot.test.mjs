@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { chmodSync, existsSync, readFileSync, symlinkSync } from 'node:fs';
 import { join } from 'node:path';
 import { createHash } from 'node:crypto';
+import { buildFileBundle, hashBundle } from '../../scripts/review-bundle.mjs';
 import { buildBundle, buildPrompt, pickHumanLessons, validateReview, runCodex } from '../../scripts/review_lot.mjs';
 import { fixture, put, cli } from './fixtures/porting/helpers.mjs';
 
@@ -250,4 +251,83 @@ test('standalone file mode rejects paths outside the root before reading', t => 
     assert.equal(result.status, 0, result.stderr);
     assert.ok(JSON.parse(result.stdout).bundleBytes > 0);
   }
+});
+
+const overlayArgs = (ctx, file, lang = 'en') => ['--root', ctx.root, '--file', file, '--lang', lang, '--dry-run'];
+
+test('overlay bundle carries the neutral layer and a distinct unit name', t => {
+  const ctx = setup(t);
+  put(ctx.root, 'data/core/readings.js', 'LINGUAI.addReadings([{id:"r1",sentences:["Guten Tag"]}]);\n');
+  put(ctx.root, 'data/i18n/en/readings.js', 'LINGUAI.addStrings("en",{"r1":{tr:"Good day"}});\n');
+  const overlay = buildFileBundle({ root: ctx.root, file: 'data/i18n/en/readings.js', lang: 'en' });
+  assert.equal(overlay.unit, 'i18n-readings');
+  assert.equal(overlay.lang, 'en');
+  assert.match(overlay.neutral, /Guten Tag/);
+  assert.match(overlay.content, /Good day/);
+  const core = buildFileBundle({ root: ctx.root, file: 'data/core/readings.js', lang: 'en' });
+  assert.equal(core.unit, 'readings');
+  assert.equal(core.neutral, undefined);
+});
+
+test('core and overlay reviews of the same name write different verdict files', t => {
+  const ctx = setup(t);
+  put(ctx.root, 'data/core/readings.js', 'LINGUAI.addReadings([]);\n');
+  put(ctx.root, 'data/i18n/en/readings.js', 'LINGUAI.addStrings("en",{});\n');
+  const run = (file, unit) => cli('review_lot.mjs', ['--root', ctx.root, '--file', file, '--lang', 'en'],
+    { ...ctx.env, FAKE_UNIT: unit });
+  assert.equal(run('data/core/readings.js', 'readings').status, 0);
+  assert.equal(run('data/i18n/en/readings.js', 'i18n-readings').status, 0);
+  const dir = join(ctx.root, 'specs/german-course/reviews');
+  assert.equal(JSON.parse(readFileSync(join(dir, 'readings-en.json'), 'utf8')).unit, 'readings');
+  assert.equal(JSON.parse(readFileSync(join(dir, 'i18n-readings-en.json'), 'utf8')).unit, 'i18n-readings');
+});
+
+test('overlay review rejects a --lang that differs from the language in the path', t => {
+  const ctx = setup(t);
+  put(ctx.root, 'data/core/readings.js', 'x\n');
+  put(ctx.root, 'data/i18n/en/readings.js', 'y\n');
+  const result = cli('review_lot.mjs', overlayArgs(ctx, 'data/i18n/en/readings.js', 'pl'), ctx.env);
+  assert.equal(result.status, 1);
+  assert.match(result.stderr, /language/i);
+  assert.equal(result.stdout, '');
+});
+
+test('an overlay without its core file is rejected, not reviewed as a plain file', t => {
+  const ctx = setup(t);
+  put(ctx.root, 'data/i18n/en/orphan.js', 'y\n');
+  const result = cli('review_lot.mjs', overlayArgs(ctx, 'data/i18n/en/orphan.js', 'en'), ctx.env);
+  assert.equal(result.status, 1);
+  assert.match(result.stderr, /data\/core\/orphan\.js/);
+  put(ctx.root, 'data/core/orphan.js', 'x\n');
+  assert.equal(cli('review_lot.mjs', overlayArgs(ctx, 'data/i18n/en/orphan.js', 'en'), ctx.env).status, 0,
+    'with the core in place the same overlay is accepted');
+});
+
+test('prompt context is chosen by file kind: verb data, overlay, other core content', () => {
+  const verb = buildPrompt({ unit: 'verbs-data', lang: 'en', content: 'v' });
+  assert.match(verb, /Standalone verb data/);
+  assert.match(buildPrompt({ unit: 'irr', lang: 'en', content: 'v' }), /Standalone verb data/);
+  const overlay = buildPrompt({ unit: 'i18n-readings', lang: 'pl', neutral: 'N', content: 'C' });
+  assert.doesNotMatch(overlay, /Standalone verb data/);
+  assert.match(overlay, /learner-language overlay in pl/);
+  assert.match(overlay, /align with neutral by index/);
+  const core = buildPrompt({ unit: 'conversations', lang: 'en', content: 'C' });
+  assert.doesNotMatch(core, /Standalone verb data/);
+  assert.match(core, /German course data, check German correctness and level/);
+});
+
+test('core file bundle hash is unchanged so existing verdicts stay valid', t => {
+  const ctx = setup(t);
+  put(ctx.root, 'data/core/cils.js', 'x = 1;\n');
+  const bundle = buildFileBundle({ root: ctx.root, file: 'data/core/cils.js', lang: 'it' });
+  const frozen = '{"unit":"cils","lang":"it","content":"x = 1;\\n"}';
+  assert.equal(JSON.stringify(bundle), frozen);
+  assert.equal(hashBundle(bundle), createHash('sha256').update(frozen).digest('hex'));
+});
+
+test('overlay path outside the root is still rejected', t => {
+  const ctx = setup(t);
+  const result = cli('review_lot.mjs', overlayArgs(ctx, '../data/i18n/en/readings.js'), ctx.env);
+  assert.equal(result.status, 1);
+  assert.match(result.stderr, /outside repository root/);
 });

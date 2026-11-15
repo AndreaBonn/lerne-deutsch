@@ -940,6 +940,7 @@ się czerwony, więc `pass` sprzed edycji nie przechodzi. Sędzia może potwierd
 obu modeli (rodzaj zapożyczeń, rekcja przyimków, rejestr C1-C2), dlatego jednostki B2-C2
 mają dodatkowo etap `human` (próbka sprawdzona przez człowieka). `--dry-run` drukuje rozmiar
 paczki i skrót promptu bez wołania modelu.
+Recenzja pojedynczego pliku (`--file`) nakładki `data/i18n/<lang>/<nazwa>.js` dołącza do paczki warstwę neutralną `data/core/<nazwa>.js` (pole `neutral`) i zapisuje werdykt pod nazwą `i18n-<nazwa>-<lang>.json`, więc nie nadpisuje werdyktu pliku neutralnego o tej samej nazwie; `--lang` musi być równy `<lang>` ze ścieżki, nakładka bez pliku neutralnego jest odrzucana, a kontekst o czasownikach dostają tylko pliki `verbs*` i `irr.js`.
 
 `validate.mjs` uruchamia prawdziwe pliki danych w piaskownicy `node:vm` i scala je **tym samym**
 `assets/js/i18n-merge.js`, którego używa przeglądarka — sprawdza więc dane po scaleniu, nie ich kopię.

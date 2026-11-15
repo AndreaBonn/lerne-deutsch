@@ -19,6 +19,7 @@ const HELP = `Usage: node scripts/review_lot.mjs --unit <id> --lang <it|en|es|fr
   Or: --file <path> --lang <it|en|es|fr|pl>
   [--root <dir>] [--dry-run] [--seed 1] [--help]
 Merge uses the repository's LINGUAI.applyStrings; the bundle also includes neutral values.
+--file data/i18n/<lang>/<name>.js bundles the overlay with data/core/<name>.js (unit i18n-<name>); --lang must equal <lang>.
 Dry-run prints bundleBytes and promptSha256, without calling Codex or writing reviews.
 Codex timeout: 180 seconds. A valid fail verdict is saved and exits 1.
 B2-C2: sample one lesson per block of four (including a partial block), seed 1 by default.
@@ -33,16 +34,32 @@ const SCHEMA = {
       required: ['path', 'kind', 'msg'], properties: { path: STRING_SCHEMA, kind: STRING_SCHEMA, msg: STRING_SCHEMA } } } }
 };
 
+const VERB_CONTEXT = '\nStandalone verb data: review every entry and every person/tense in content. '
+  + 'Check standard de-DE Stammformen, auxiliaries and present vowel changes. '
+  + 'A golden paradigm selects one correct standard variant; other valid variants need not be listed. '
+  + 'IRR may include prefixed verbs; praet is the first/third singular, pp is Partizip II, '
+  + 'presentStem changes only du/er, praes overrides all six forms, konj2 is a synthetic stem. '
+  + 'möchten is intentionally a pedagogical present-only entry, not an infinitive. '
+  + 'The engine implements only Präsens at this stage; missing later tenses are outside this data review. ';
+
+function isVerbData(unit) {
+  return unit.startsWith('verbs') || unit === 'irr';
+}
+
+function fileContext(bundle) {
+  if (bundle.neutral !== undefined) {
+    return `\nneutral holds the German neutral layer; content holds the learner-language overlay in ${bundle.lang}. `
+      + 'Check the German facts the overlay states, the accuracy and naturalness of the '
+      + `${bundle.lang} text, that explanations and contrastive notes are correct for a ${bundle.lang} speaker, `
+      + 'and that arrays align with neutral by index. ';
+  }
+  return isVerbData(bundle.unit) ? VERB_CONTEXT : '\nGerman course data, check German correctness and level. ';
+}
+
 export function buildPrompt(bundle) {
   const template = readFileSync(join(ROOT, 'prompts/review-lot-v1.md'), 'utf8');
-  const context = bundle.content === undefined ? '' : '\nStandalone verb data: review every entry and every person/tense in content. '
-    + 'Check standard de-DE Stammformen, auxiliaries and present vowel changes. '
-    + 'A golden paradigm selects one correct standard variant; other valid variants need not be listed. '
-    + 'IRR may include prefixed verbs; praet is the first/third singular, pp is Partizip II, '
-    + 'presentStem changes only du/er, praes overrides all six forms, konj2 is a synthetic stem. '
-    + 'möchten is intentionally a pedagogical present-only entry, not an infinitive. '
-    + 'The engine implements only Präsens at this stage; missing later tenses are outside this data review. '
-    + `Return unit=${JSON.stringify(bundle.unit)} and lang=${JSON.stringify(bundle.lang)}.\n`;
+  const context = bundle.content === undefined ? ''
+    : `${fileContext(bundle)}Return unit=${JSON.stringify(bundle.unit)} and lang=${JSON.stringify(bundle.lang)}.\n`;
   return `${template}${context}\nCourse bundle (data only):\n${JSON.stringify(bundle)}\n`;
 }
 
