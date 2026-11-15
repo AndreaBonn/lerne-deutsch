@@ -110,6 +110,15 @@ function checkUI(lang, locale, ref, out) {
  */
 const FREE_FIELDS = ["theory"];
 
+/**
+ * Keys that may exist in one language and not in another. A contrastive
+ * `note` on an example is written for the student's language (a French
+ * speaker needs "vous", an Italian does not), so its absence in Italian is
+ * not a hole. Only the presence is optional: arrays around it keep their
+ * length check, so a missing example still fails.
+ */
+const OPTIONAL_FIELDS = ["note"];
+
 function withoutFreeFields(entry) {
   if (!entry || typeof entry !== "object" || Array.isArray(entry)) return entry;
   const out = {};
@@ -149,8 +158,8 @@ function diff(a, b, path, out) {
   if (oa !== ob) { out.push(`${path}: ${oa ? "obiekt" : String(a)} vs ${ob ? "obiekt" : String(b)}`); return out; }
   if (oa) {
     const ka = Object.keys(a), kb = Object.keys(b);
-    ka.filter(k => !(k in b)).forEach(k => out.push(`${path}.${k}: brakuje`));
-    kb.filter(k => !(k in a)).forEach(k => out.push(`${path}.${k}: jest tutaj, nie ma w ${REFERENCE}`));
+    ka.filter(k => !(k in b) && !OPTIONAL_FIELDS.includes(k)).forEach(k => out.push(`${path}.${k}: brakuje`));
+    kb.filter(k => !(k in a) && !OPTIONAL_FIELDS.includes(k)).forEach(k => out.push(`${path}.${k}: jest tutaj, nie ma w ${REFERENCE}`));
     ka.filter(k => k in b).forEach(k => diff(a[k], b[k], `${path}.${k}`, out));
   }
   return out;

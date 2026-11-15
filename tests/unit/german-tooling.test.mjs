@@ -152,3 +152,26 @@ test('false friends checks the five explanation languages, excluding German', ()
   assert.equal(result.status, 0, result.stderr + result.stdout);
   for (const lang of ['it', 'en', 'es', 'fr', 'pl']) assert.match(result.stdout, new RegExp(` ${lang}: 0`));
 });
+
+/* Contrastive notes are written per language (CLAUDE.md), so an example may
+   carry a `note` in French and none in Italian. That optional field must not
+   turn parity red, while a missing example still must. */
+test('parity tolerates a per-language note but still reports a missing example', () => {
+  const ex = (items) => `{ lesson: { grammar: { examples: [${items}] } } }`;
+  const root = fixture({
+    'assets/js/i18n.js': 'window.I18n = { LOCALE: { it: "it-IT", fr: "fr-FR", pl: "pl-PL" } };',
+    'data/core/interference.js': 'window.INTERFERENCE = [];',
+    'data/i18n/it/course.js': `LINGUAI.addStrings("it", ${ex('{ tr: "a" }, { tr: "b", note: "n" }')});`,
+    'data/i18n/fr/course.js': `LINGUAI.addStrings("fr", ${ex('{ tr: "a", note: "vous" }, { tr: "b" }')});`,
+    'data/i18n/pl/course.js': `LINGUAI.addStrings("pl", ${ex('{ tr: "a", note: "x" }')});`,
+    'data/i18n/ui-it.js': 'LINGUAI.addUI("it", { hello: "Ciao" });',
+    'data/i18n/ui-fr.js': 'LINGUAI.addUI("fr", { hello: "Salut" });',
+    'data/i18n/ui-pl.js': 'LINGUAI.addUI("pl", { hello: "Cześć" });'
+  });
+  const optional = run(root, 'parity.mjs', ['fr']);
+  assert.equal(optional.status, 0, optional.stdout);
+  const missing = run(root, 'parity.mjs', ['pl']);
+  assert.equal(missing.status, 1, missing.stdout);
+  assert.match(missing.stdout, /lesson\.grammar\.examples: 2 elementów w it, 1 tutaj/);
+});
+
