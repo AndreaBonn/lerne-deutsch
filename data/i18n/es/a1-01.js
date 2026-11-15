@@ -578,405 +578,546 @@ LINGUAI.addStrings("es", {
       { tr: "Buenos días, ¿cómo está usted?" }
     ]
   },
-  "unit:a1-u02": { title: "Quién eres", grammarNote: "avere · números · profesiones y nacionalidades" },
+  "unit:a1-u02": {
+    title: "¿Quién eres?",
+    grammarNote: "pronombres personales · presente regular · sein y haben · profesiones · números hasta 100"
+  },
   "lesson:a1-u02-l1": {
-    theme: "Conocer gente",
-    title: "Presentarse",
+    theme: "Presentarse",
+    title: "Me llamo ...",
     objectives: [
-      "decir tu nombre, de dónde eres y dónde vives",
-      "usar el verbo chiamarsi",
-      "preguntar lo mismo a los demás"
+      "decir tu nombre y preguntar el de otra persona, con du y con Sie",
+      "usar los pronombres personales en nominativo: ich, du, er, sie, es, wir, ihr, sie, Sie",
+      "decir de dónde eres con «Ich komme aus ...»"
     ],
     theory: [
       {
-        h: "«Me llamo» es un verbo reflexivo",
-        p: "<strong>Chiamarsi</strong> significa literalmente «llamarse». De ahí <em>mi chiamo</em>. El pronombre reflexivo (<em>mi, ti, si…</em>) va <b>delante</b> del verbo, exactamente como en español."
+        h: "Los pronombres personales: en alemán el sujeto se dice",
+        p: "En una oración principal que se sostiene sola, el verbo conjugado necesita un sujeto expreso: un nombre (<em>Anna heißt Weber</em>) o un pronombre (en las coordinadas con el mismo sujeto, como <em>Ich wohne hier und arbeite in Bonn</em>, el segundo puede omitirse). Aquí están en nominativo: <strong>ich</strong> (yo), <strong>du</strong> (tú), <strong>er</strong> (él), <strong>sie</strong> (ella), <strong>es</strong> (neutro), <strong>wir</strong> (nosotros), <strong>ihr</strong> (vosotros), <strong>sie</strong> (ellos, ellas) y <strong>Sie</strong>, la forma de cortesía. Las terminaciones del verbo no bastan para reconocer la persona: <em>heißt</em> vale para <em>du</em>, <em>er</em>, <em>sie</em>, <em>es</em> e <em>ihr</em>."
       },
       {
-        h: "De dónde eres: essere di o venire da",
-        p: "Para una ciudad se dice <em>sono di Madrid</em>; para un país, <em>vengo dalla Spagna</em> o <em>sono spagnolo/a</em>. Los nombres de país llevan artículo (<em>l'Italia, la Spagna</em>), los de ciudad no."
+        contrast: "En español <em>Hablo alemán</em> se sostiene sin «yo». En alemán <em>Spreche Deutsch</em> no es una oración: hace falta <em>Ich spreche Deutsch</em>. El pronombre no es énfasis, forma parte de la oración. Otra diferencia: <em>ihr</em> corresponde al «vosotros» de España; en Latinoamérica se usa «ustedes» también entre amigos, pero el alemán sigue distinguiendo <em>ihr</em> (confianza) de <em>Sie</em> (cortesía)."
       },
       {
-        trap: "Las nacionalidades se escriben en <b>minúscula</b>: <em>sono spagnola</em>, <em>un ragazzo italiano</em>. Como en español, así que aquí no hay nada que desaprender: el que sufre es quien viene del inglés."
+        h: "sie y Sie: la mayúscula cambia el sentido",
+        p: "Al hablar, <em>sie</em> y <em>Sie</em> suenan igual; al escribir, no. <strong>sie</strong> con minúscula significa «ella» o «ellos/ellas»: <em>sie heißt Lena</em> con el verbo en singular, <em>sie heißen Weber</em> con el verbo en plural. <strong>Sie</strong> con mayúscula es la forma de cortesía, para una persona o para varias (equivale a «usted» y «ustedes»), y lleva el verbo como «ellos»: <em>Wie heißen Sie?</em> Ojo: «usted» lleva el verbo en tercera persona del singular, pero <em>Sie</em> lo lleva en tercera del plural, aunque hables con una sola persona. Al comienzo de la oración la mayúscula está de todos modos y no ayuda: <em>heißt</em> (singular) indica «ella», mientras que con <em>heißen</em> el contexto decide si es «ellos» o la forma de cortesía.",
+        list: [
+          "<b>du</b>: una persona con la que tienes confianza",
+          "<b>ihr</b>: varias personas con las que tienes confianza (no es la forma de cortesía)",
+          "<b>Sie</b>: una o varias personas a las que tratas de usted"
+        ]
       },
       {
-        h: "Abitare: vivir en un sitio",
-        p: "<em>Abitare a Roma</em> (ciudad), <em>abitare in Italia</em> (país). El mismo reparto a/in vuelve más adelante con los viajes, así que conviene memorizarlo ya como pareja: <b>a + ciudad, in + país</b>. El español usa «en» para las dos cosas, y ahí está la dificultad."
+        trap: "Los pronombres de tercera persona siguen el <b>género gramatical</b> del sustantivo al que sustituyen, también para las cosas: <em>Der Tisch ist neu. Er ist groß.</em> (er = la mesa), <em>Die Tasse ist neu. Sie ist groß.</em>, <em>Das Buch ist neu. Es ist groß.</em> En español se dice «es grande» sin pronombre; en alemán se dice literalmente «él es grande», «ella es grande» o «ello es grande», según el género. Y el género no siempre coincide con el español: «la mesa» es <em>der Tisch</em> (masculino) y «el sol» es <em>die Sonne</em> (femenino)."
+      },
+      {
+        h: "Nombre y procedencia",
+        p: "Para presentarte tienes dos fórmulas: <em>Ich heiße Paolo</em> o <em>Mein Name ist Paolo</em>. Para preguntar la procedencia se usa <strong>woher</strong> («de dónde», en una sola palabra) y el verbo <strong>kommen</strong>: <em>Woher kommst du?</em> Se responde con <em>Ich komme aus</em> y el país o la ciudad, normalmente sin artículo: <em>Ich komme aus Italien</em> («vengo de Italia»), <em>aus Berlin</em>. Se oye también <em>Woher bist du?</em> («¿de dónde eres?»). Por ahora aprende las frases enteras: los países que llevan artículo llegarán más adelante."
+      },
+      {
+        tip: "Para pedir que repitan: <em>Wie bitte?</em> («¿cómo?», «¿perdón?») es la fórmula más usada y sirve con todo el mundo. Para responder a una presentación te hace falta <em>Freut mich</em> («encantado», «mucho gusto»)."
       }
     ],
     grammar: {
-      title: "Chiamarsi (llamarse) y preguntar por alguien",
+      title: "Pronombres personales en nominativo",
+      note: "Los pronombres alemanes son nueve (<em>ich, du, er, sie, es, wir, ihr, sie, Sie</em>), pero las formas del verbo regular son solo cuatro: <em>-e, -st, -t, -en</em>. En la tabla <em>sie</em> y <em>Sie</em> comparten fila porque piden la misma forma del verbo.",
       table: {
-        head: ["persona", "chiamarsi", "ejemplo"],
+        head: ["persona", "pronombre", "ejemplo"],
         rows: [
-          ["io", "mi chiamo", "Mi chiamo Anna."],
-          ["tu", "ti chiami", "Come ti chiami?"],
-          ["lui / lei / Lei", "si chiama", "Come si chiama, scusi?"],
-          ["noi", "ci chiamiamo", "Ci chiamiamo Rossi."],
-          ["voi", "vi chiamate", "Come vi chiamate?"],
-          ["loro", "si chiamano", "Si chiamano Marco e Luca."]
+          ["1.ª singular", "ich", "Ich heiße Paolo."],
+          ["2.ª singular", "du", "Woher kommst du?"],
+          ["3.ª singular", "er / sie / es", "Er heißt Tom, sie heißt Lena."],
+          ["1.ª plural", "wir", "Wir heißen Weber."],
+          ["2.ª plural", "ihr", "Wie heißt ihr?"],
+          ["3.ª plural / cortesía", "sie / Sie", "Wie heißen Sie?"]
         ]
       },
       examples: [
-        { tr: "¿Cómo te llamas? — Me llamo Eva." },
-        { tr: "¿De dónde eres? — Soy de Sevilla." },
-        { tr: "Soy española, pero vivo en Milán.", note: "la nacionalidad en minúscula" },
-        { tr: "¿Cuántos años tienes? — Tengo veintiocho.", note: "la edad siempre va con avere" },
-        { tr: "Encantado, Marco. — El gusto es mío." }
+        { tr: "Me llamo Paolo." },
+        { tr: "¿De dónde eres?" },
+        { tr: "Él se llama Tom, ella se llama Lena." },
+        { tr: "Nos llamamos Weber." },
+        { tr: "¿Cómo os llamáis?" },
+        { tr: "¿Cómo se llama usted?", note: "forma de cortesía" }
       ]
     },
     vocab: [
-      "ser/estar",
-      "me llamo…",
-      "¿cómo te llamas?",
-      "¿de dónde eres?",
-      "soy de… (ciudad)",
-      "vivo en… (ciudad)",
-      "español (m. / f.)",
-      "italiano (m. / f.)",
-      "nombre",
-      "apellido",
-      "encantado",
-      "yo también",
-      "¿en serio?"
+      "el nombre",
+      "el nombre de pila",
+      "el apellido",
+      "¿Cómo te llamas?",
+      "Me llamo ...",
+      "Mi nombre es ...",
+      "Encantado, mucho gusto.",
+      "¿De dónde eres?",
+      "Vengo de ... (país o ciudad)",
+      "¿Cuántos años tienes?",
+      "Tengo ... años.",
+      "¿Y tú?",
+      "¿Perdón? (no he entendido)"
     ],
+    culture: {
+      title: "Una mirada alemana: nombres, títulos y el paso al du",
+      text: "<p>En Alemania es frecuente presentarse con nombre y apellido juntos: <i>Ich bin Anna Weber</i>. A una persona que no conoces te diriges normalmente con <i>Herr</i> o <i>Frau</i> y el apellido, no con el nombre de pila solo. Si alguien tiene un título, como <i>Doktor</i>, en ambientes formales se añade: <i>Frau Doktor Weber</i>.</p><p>El antiguo <i>Fräulein</i> para las jóvenes solteras ya no se usa. Hoy <i>Frau</i> vale para toda mujer adulta, casada o no.</p><p>El paso de <i>Sie</i> a <i>du</i> es un pequeño acontecimiento social: lo propone normalmente la persona de más edad o la que tiene más responsabilidad. En muchas empresas y entre estudiantes se tutea enseguida, pero en caso de duda empieza con <i>Sie</i> y espera la propuesta.</p>"
+    },
     exercises: [
       {
-        q: "¿Cómo preguntas el nombre de manera informal?",
-        opts: ["Come si chiama?", "Come ti chiami?", "Come vi chiamate?"],
-        why: "La forma de tu: <i>ti chiami</i>. La versión de Lei es <i>come si chiama?</i>"
+        q: "Hablas con una clienta a la que no conoces. ¿Qué pregunta usas para preguntarle el nombre?",
+        opts: ["Wie heißt du?", "Wie heißen Sie?", "Wie heißt ihr?"],
+        why: "A una persona desconocida se le habla de <b>Sie</b>, con el verbo como para «ellos»: <i>heißen</i>. <i>Wie heißt du?</i> es para un amigo, <i>Wie heißt ihr?</i> para varios."
       },
       {
-        q: "¿Qué frase está bien escrita?",
-        opts: ["Sono Spagnola.", "Sono spagnola.", "Sono la spagnola."],
-        why: "Las nacionalidades van en minúscula y sin artículo después de essere."
-      },
-      { q: "Completa: «___ chiamo Marta.»", why: "Pronombre reflexivo de primera persona: mi chiamo." },
-      {
-        q: "Completa: «Abito ___ Roma.» (Vivo en Roma.)",
-        why: "Las ciudades llevan <b>a</b> y los países <b>in</b>: abito a Roma / abito in Italia."
+        q: "Lena es una mujer. ¿Qué pronombre usas para hablar de ella?",
+        opts: ["er", "sie", "es"],
+        why: "Para una mujer se usa <b>sie</b>, con minúscula en medio de la oración. <i>Er</i> es para un hombre y <i>es</i> para los sustantivos neutros."
       },
       {
-        q: "Completa la presentación.",
-        tr: "¡Hola! Me llamo Kate, soy de Sevilla y vivo en Bolonia.",
-        why: "Los tres verbos que salen en cualquier primera frase sobre uno mismo."
+        q: "Completa: «___ heißt Lena.» (Ella se llama Lena.)",
+        hint: "pronombre de tercera persona femenino singular",
+        why: "Al comienzo de la oración se escribe <b>Sie</b> con mayúscula, porque es la primera palabra; el verbo <i>heißt</i> está en tercera persona del singular."
       },
-      { tr: "Encantado, me llamo Luca." },
       {
-        q: "Conoces a alguien en una escuela de idiomas.",
-        setting: "Primer día en una escuela de idiomas de Florencia.",
+        q: "Completa: «Ich ___ aus Italien.» (Vengo de Italia.)",
+        hint: "primera persona del singular de kommen",
+        why: "<i>Ich komme</i>: la terminación de la primera persona del singular es <b>-e</b>."
+      },
+      {
+        q: "Completa con los pronombres correctos.",
+        tr: "¡Hola! Me llamo Paolo. ¿Y tú cómo te llamas?",
+        why: "En la oración principal el pronombre no se omite: <i>Ich heiße Paolo</i>. A alguien de confianza se le pregunta <i>Wie heißt du?</i>"
+      },
+      {
+        q: "Una nueva conocida te saluda en el curso de alemán.",
+        setting: "La primera clase, el primer día.",
         lines: [
-          { tr: "¡Hola! Soy Giulia. ¿Y tú, cómo te llamas?" },
-          { tr: "Preséntate con tu nombre.", answerTr: "Me llamo Eva." },
-          { tr: "¡Encantada, Eva! ¿De dónde eres?" },
-          { tr: "Di que eres de Polonia: es la respuesta modelo grabada.", answerTr: "Soy de Polonia." }
+          { tr: "¡Hola! Soy Lena. ¿Y tú cómo te llamas?" },
+          { tr: "Responde diciendo tu nombre.", answerTr: "Me llamo Paolo." },
+          { tr: "¿De dónde eres?" },
+          { tr: "Responde que vienes de Italia.", answerTr: "Vengo de Italia." }
         ]
       },
-      { tr: "Me llamo Elena y vivo en Nápoles." },
-      { tr: "¡Encantado!" }
+      {
+        tr: "Mi nombre es Anna Weber.",
+        why: "<i>Mein Name ist</i> es la fórmula alternativa a <i>Ich heiße</i>. Nombre y apellido se escriben con mayúscula."
+      },
+      {
+        tr: "Hola, me llamo Lena y vengo de Berlín.",
+        why: "Escucha la <i>ei</i> de <i>heiße</i>: suena «ai», no «ei»."
+      },
+      {
+        tr: "Me llamo Paolo. ¿Y tú cómo te llamas?",
+        why: "En <i>wie</i> la <b>w</b> es una <i>v</i> sonora, no una <i>b</i>: los dientes superiores tocan el labio inferior y vibran las cuerdas vocales. <i>Ie</i> es una <i>i</i> larga: /viː/."
+      }
     ]
   },
   "lesson:a1-u02-l2": {
-    theme: "Gramática básica",
-    title: "Tener, y los números del 0 al 100",
+    theme: "Presentarse",
+    title: "Sein, haben y los números",
     objectives: [
-      "conjugar avere",
-      "usar expresiones como ho fame, ho freddo, ho ventotto anni",
-      "contar hasta cien y decir un precio"
+      "conjugar sein y haben en presente",
+      "decir la edad con «Ich bin ... Jahre alt»",
+      "contar hasta 100 y leer un número de teléfono"
     ],
     theory: [
       {
-        h: "Avere trabaja igual que «tener»",
-        p: "El italiano usa <strong>avere</strong> donde el inglés usa «ser». <em>Ho fame</em> es literalmente «tengo hambre», y eso en español ya lo dices así. Lo mismo con la sed, el frío, el calor, el miedo, el sueño y la edad. Es uno de los capítulos que el español te regala entero."
+        h: "Haben, el verbo «tener»",
+        p: "Como <em>sein</em> en la unidad 1, <strong>haben</strong> es irregular: la forma de <em>du</em> es <em>hast</em>, la de <em>er/sie/es</em> es <em>hat</em>, y la <em>b</em> desaparece. Equivale a «tener» cuando indica posesión: <em>Ich habe eine Schwester</em>. Más adelante verás que <em>haben</em> hace también de «haber» en los tiempos compuestos. Con <em>haben</em> lo que se posee es complemento directo, y el artículo indefinido masculino <em>ein</em> pasa a <em>einen</em>, como en la fórmula <em>einen Kaffee</em> (la unidad 3 explica el motivo): <em>Ich habe einen Bruder</em>. Con <em>Hunger haben</em> («tener hambre») y expresiones parecidas no hay artículo: <em>Wir haben Hunger</em>."
       },
       {
-        h: "La edad: siempre avere",
-        p: "<em>Ho trent'anni</em>, «tengo treinta años». Fíjate en el apóstrofo: <em>trent'anni</em>, <em>vent'anni</em>. La vocal final de la decena desaparece delante de <em>anni</em>."
+        h: "Sein con un sustantivo: se mantiene el nominativo",
+        p: "Después de <strong>sein</strong> el sustantivo que describe al sujeto va en el mismo caso que el sujeto, el nominativo: <em>Das ist ein Tisch</em>, <em>Das ist mein Lehrer</em>. Un complemento con preposición no dice quién eres: <em>Ich bin in Berlin</em> dice dónde estás, no quién eres."
       },
       {
-        h: "La h que nunca se oye",
-        p: "Las formas <em>ho, hai, ha, hanno</em> empiezan por una <b>h</b> muda. No se pronuncia en absoluto: existe solo para distinguirlas de otras palabras — <em>ho</em> (tengo) frente a <em>o</em> (o), <em>ha</em> (tiene) frente a <em>a</em> (a). Es la misma h muda del español, con una función distinta."
+        contrast: "En español la edad se <em>tiene</em>: «tengo veinticinco años». En alemán la edad se <em>es</em>: <em>Ich bin fünfundzwanzig Jahre alt</em>, y con <em>haben</em> la oración es incorrecta: <em>Ich habe fünfundzwanzig Jahre</em> no se dice. Es una trampa típica de quien piensa en español. Con el hambre coinciden: <em>Ich habe Hunger</em> es «tengo hambre». Con el frío no: no se dice <em>Ich habe kalt</em> sino <em>Mir ist kalt</em> («a mí me es frío»)."
       },
       {
-        h: "Números: decena más unidad",
-        p: "A partir de 20 se escriben en una sola palabra: <em>ventidue</em>, <em>trentasei</em>. Delante de <em>uno</em> y de <em>otto</em> la decena pierde su vocal final: <b>ventuno</b>, <b>ventotto</b>, <b>trentuno</b>."
+        h: "Los números del 20 al 100",
+        p: "Las decenas son <strong>zwanzig</strong>, <strong>dreißig</strong>, <strong>vierzig</strong>, <strong>fünfzig</strong>, <strong>sechzig</strong>, <strong>siebzig</strong>, <strong>achtzig</strong>, <strong>neunzig</strong>, <strong>hundert</strong>. Ojo: <em>dreißig</em> se escribe con <b>ß</b>; <em>sechzig</em> pierde la <em>s</em> final de <em>sechs</em>; <em>siebzig</em> pierde la <em>-en</em> de <em>sieben</em>. Los números del 21 al 99 se escriben en una sola palabra, y en ellos el 1 es <em>ein</em>: <em>einundzwanzig</em>."
+      },
+      {
+        trap: "En los números compuestos se dice <b>primero la unidad y luego la decena</b>: 45 es <em>fünfundvierzig</em>, literalmente «cinco y cuarenta». El español dice «cuarenta y cinco»: aparece la misma «y» (<em>und</em>), pero en el orden contrario. Y el 21 es <em>einundzwanzig</em> («uno y veinte»), mientras que el español dice «veintiuno»: la decena primero. Cuidado con las parejas que se confunden al oído: <em>sechzehn</em> (16) y <em>sechzig</em> (60), <em>siebzehn</em> (17) y <em>siebzig</em> (70)."
+      },
+      {
+        h: "Los números de teléfono",
+        p: "Un número de teléfono suele leerse cifra por cifra o en grupos pequeños: 0151 se dice <em>null eins fünf eins</em>. El cero se dice <em>null</em>. A veces por teléfono se oye <em>zwo</em> en lugar de <em>zwei</em>, para no confundirlo con <em>drei</em>. La agrupación varía, así que fíjate en las pausas. Para preguntar: <em>Wie ist deine Telefonnummer?</em>"
       }
     ],
     grammar: {
-      title: "Avere (tener) y los números",
+      title: "Sein (ser, estar) y haben (tener)",
+      note: "Los dos verbos son irregulares y hay que memorizarlos. Con <b>Sie</b> (cortesía) y con <em>sie</em> (ellos) se usan <em>sind</em> y <em>haben</em>.",
       table: {
-        head: ["persona", "avere", "expresión"],
+        head: ["persona", "sein", "haben"],
         rows: [
-          ["io", "ho", "Ho fame. (Tengo hambre.)"],
-          ["tu", "hai", "Hai freddo? (¿Tienes frío?)"],
-          ["lui / lei / Lei", "ha", "Ha ragione. (Tiene razón.)"],
-          ["noi", "abbiamo", "Abbiamo sete. (Tenemos sed.)"],
-          ["voi", "avete", "Avete tempo? (¿Tenéis tiempo?)"],
-          ["loro", "hanno", "Hanno paura. (Tienen miedo.)"]
+          ["ich", "bin", "habe"],
+          ["du", "bist", "hast"],
+          ["er / sie / es", "ist", "hat"],
+          ["wir", "sind", "haben"],
+          ["ihr", "seid", "habt"],
+          ["sie / Sie", "sind", "haben"]
         ]
       },
       examples: [
-        { tr: "1, 2, 3, 4, 5" },
-        { tr: "6, 7, 8, 9, 10" },
-        { tr: "11, 12, 13… 20" },
-        { tr: "21, 22, 28", note: "delante de uno y otto la decena pierde la vocal" },
-        { tr: "30, 40, 50, 60" },
-        { tr: "70, 80, 90, 100" },
-        { tr: "Tengo veintiocho años." }
+        { tr: "Tengo veinte años.", note: "en alemán la edad se dice con «sein» (ser)" },
+        { tr: "Tienes una hermana." },
+        { tr: "Él tiene hambre." },
+        { tr: "Somos amigos." },
+        { tr: "¿Tenéis un hermano?" },
+        { tr: "El número es cero tres cero, doce, treinta y cuatro, cincuenta y seis.", note: "número leído por grupos" }
       ]
     },
     vocab: [
-      "tener",
-      "tengo hambre",
-      "tengo sed",
-      "tengo frío / calor",
-      "tengo sueño",
-      "tengo miedo",
-      "tengo razón",
-      "necesito…",
-      "¿cuántos años tienes?",
-      "¿cuánto es?",
-      "euro",
-      "número",
-      "número de teléfono"
+      "el número de teléfono",
+      "el año",
+      "viejo; en la edad: «... Jahre alt» = «... años»",
+      "veinte",
+      "treinta",
+      "cuarenta",
+      "cincuenta",
+      "sesenta",
+      "setenta",
+      "ochenta",
+      "noventa",
+      "cien",
+      "veintiuno"
     ],
     exercises: [
-      { why: "Cuatro formas empiezan por h muda: ho, hai, ha, hanno." },
       {
-        q: "¿Cómo se dice «tengo hambre»?",
-        opts: ["Sono fame", "Ho fame", "Sto fame"],
-        why: "Los estados físicos van con avere: ho fame, ho sete, ho freddo. Igual que en español."
-      },
-      { q: "¿Qué número es «settantasei»?", opts: ["66", "76", "86"], why: "settanta (70) + sei (6) = 76." },
-      { q: "Escríbelo en cifras: «novantatré»", why: "novanta (90) + tre (3)." },
-      {
-        q: "Completa: «Ho vent___ anni.» (Tengo veinte años.)",
-        hint: "algo desaparece delante de «anni»",
-        why: "Vent'anni: la decena pierde la vocal final delante de anni."
-      },
-      { q: "«¿Cuántos años tienes?»", why: "Literalmente: «cuántos años tienes», igual que en español." },
-      {
-        q: "Empareja la expresión con avere y su significado.",
-        pairs: ["tengo sed", "tengo sueño", "tengo miedo", "tengo razón"]
+        q: "¿Cómo se dice «Tengo veinticinco años»?",
+        opts: ["Ich habe fünfundzwanzig Jahre.", "Ich bin fünfundzwanzig Jahre alt.", "Ich habe fünfundzwanzig alt."],
+        why: "En alemán la edad se dice con <b>sein</b>: <i>Ich bin fünfundzwanzig Jahre alt</i>. Con <i>haben</i> la oración no es correcta."
       },
       {
-        q: "Completa el intercambio en la caja.",
-        tr: "— ¿Cuánto es? — Treinta y dos euros. — Solo tengo veinte, lo siento."
+        q: "¿Qué número es «45»?",
+        opts: ["vierundfünfzig", "fünfundvierzig", "vierzigfünf"],
+        why: "<i>Fünfundvierzig</i>: primero la unidad (<i>fünf</i>), luego <i>und</i> y por último la decena (<i>vierzig</i>). <i>Vierundfünfzig</i> es 54."
       },
-      { tr: "Tengo treinta y cinco años y vivo en Turín." },
-      { tr: "¿Cuánto cuesta un capuchino?" }
+      {
+        tr: "Toda la conjugación de haben.",
+        why: "<i>Haben</i> es irregular: <i>du hast</i> y <i>er hat</i> pierden la <i>b</i>."
+      },
+      {
+        q: "Completa: «Du ___ eine Schwester.» (Tienes una hermana.)",
+        hint: "segunda persona del singular de haben",
+        why: "<i>Du hast</i>: la <b>b</b> del verbo desaparece en la forma de <i>du</i>."
+      },
+      {
+        q: "Completa: «Ihr ___ hier.» (Vosotros estáis aquí.)",
+        hint: "segunda persona del plural de sein",
+        why: "<i>Ihr seid</i>: no la confundas con <i>sind</i>, que vale para <i>wir</i> y <i>sie</i>."
+      },
+      {
+        q: "Completa con bin y habe.",
+        tr: "Soy Paolo y tengo veinticinco años. Tengo un hermano.",
+        why: "El nombre y la edad se dicen con <i>sein</i> (<i>bin</i>), el hermano con <i>haben</i> (<i>habe</i>), seguido de <i>einen</i>."
+      },
+      {
+        q: "Une cada número con su cifra.",
+        pairs: ["30", "60", "45", "100"]
+      },
+      {
+        q: "Traduce tuteando: «¿Tienes una hermana?»",
+        why: "<i>Hast du eine Schwester?</i> En la pregunta de sí o no el verbo va en primer lugar."
+      },
+      {
+        tr: "Mi número de teléfono es cero uno cinco uno, dos tres cuatro, cinco seis.",
+        why: "El cero se dice <i>null</i>. Los números de teléfono se leen cifra por cifra o en grupos."
+      },
+      {
+        tr: "Tengo veinticinco años y tengo una hermana.",
+        why: "<i>Fünfundzwanzig</i>: la <b>z</b> se lee siempre «ts»."
+      }
     ]
   },
   "lesson:a1-u02-l3": {
-    theme: "Trabajo y personas",
-    title: "Profesiones y trabajo",
+    theme: "Trabajo",
+    title: "¿A qué se dedica usted?",
     objectives: [
-      "decir a qué te dedicas",
-      "usar fare il / essere un",
-      "formar el femenino de los nombres de profesión"
+      "preguntar y decir la profesión con «Was sind Sie von Beruf?»",
+      "formar el femenino de las profesiones con -in",
+      "usar las profesiones sin artículo"
     ],
     theory: [
       {
-        h: "Dos construcciones, dos matices",
-        p: "«Soy arquitecto» tiene dos versiones en italiano. <strong>Faccio l'architetto</strong> (literalmente «hago el arquitecto») habla del oficio que ejerces y es lo más común al hablar. <strong>Sono architetto</strong> subraya la identidad o la titulación. Después de <em>fare</em> va el artículo determinado; después de <em>essere</em>, normalmente ninguno — igual que en español, «soy arquitecto» sin artículo."
+        h: "La profesión se dice sin artículo",
+        p: "Para decir a qué te dedicas, el alemán usa normalmente el sustantivo sin artículo, igual que el español: <em>Ich bin Lehrerin</em> («soy profesora»), <em>Er ist Arzt</em> («es médico»). Es una semejanza real y te ahorra un error. La pregunta es <strong>Was sind Sie von Beruf?</strong>, que equivale a «¿a qué se dedica usted?». Con alguien de confianza: <em>Was bist du von Beruf?</em>"
       },
       {
-        h: "Formas femeninas",
-        list: [
-          "-o → -a: <em>l'impiegato → l'impiegata</em>",
-          "-e → -essa: <em>il professore → la professoressa</em>, <em>lo studente → la studentessa</em>",
-          "-tore → -trice: <em>l'attore → l'attrice</em>, <em>il direttore → la direttrice</em>",
-          "sin cambio: <em>il/la giornalista</em>, <em>il/la dentista</em>, <em>il/la cantante</em>"
-        ]
+        trap: "Cuando la profesión lleva un adjetivo, el artículo suele volver: <em>Ich bin eine gute Lehrerin</em>, como en español («soy una buena profesora»). La regla de «sin artículo» vale, por tanto, para la profesión sola, no para cualquier oración que contenga una profesión."
       },
       {
-        h: "Nombres de profesión en movimiento",
-        p: "Formas como <em>l'avvocata</em>, <em>la sindaca</em>, <em>la ministra</em> son hoy estándar en la prensa y en los documentos oficiales, aunque hace veinte años provocaban discusiones. Al hablar todavía se oye <em>l'avvocato</em> referido a una mujer. Es el mismo debate que «la jueza» o «la médica» en español, y va por el mismo camino."
+        h: "El femenino en -in",
+        p: "En alemán el nombre de la profesión cambia según la ejerza un hombre o una mujer, como en «profesor / profesora»: <em>der Lehrer / die Lehrerin</em>, <em>der Student / die Studentin</em>. Casi siempre se añade <strong>-in</strong> al masculino, que hace el papel de la <em>-a</em> española, y el femenino lleva siempre <strong>die</strong>. Algunas vocales llevan diéresis: <em>der Arzt → die Ärztin</em>, <em>der Koch → die Köchin</em>."
       },
       {
-        contrast: "El sufijo <em>-essa</em> no tiene equivalente español y suena raro al principio: <em>la professoressa</em>, <em>la studentessa</em>, <em>la dottoressa</em>. No es una forma anticuada ni despectiva, es la normal."
+        contrast: "En español muchas profesiones tienen una sola forma para los dos géneros (<em>el/la estudiante</em>, <em>el/la periodista</em>). En alemán, en cambio, también esas se desdoblan: <em>der Student / die Studentin</em>, <em>der Journalist / die Journalistin</em>. El género de la persona se oye casi siempre en el propio nombre: <em>Ich bin Lehrer</em> lo dice un hombre y <em>Ich bin Lehrerin</em> una mujer."
+      },
+      {
+        h: "El plural de las formas en -in",
+        p: "El plural del femenino se hace con <strong>-nen</strong>: <em>die Lehrerin → die Lehrerinnen</em>, con dos <em>n</em>. Los plurales masculinos varían: <em>die Lehrer</em>, <em>die Ärzte</em>, <em>die Studenten</em>."
+      },
+      {
+        tip: "Cuando aprendas una profesión, aprende enseguida las dos formas: <em>der Arzt, die Ärztin</em>. Las necesitas para hablar de ti y de los demás. Ojo: <em>Student</em> y <em>Studentin</em> son quienes estudian en la universidad; un alumno de colegio es un <em>Schüler</em> o una <em>Schülerin</em>, así que «estudiante» a secas es un falso amigo."
       }
     ],
     grammar: {
-      title: "Fare (hacer) — presente",
-      note: "Irregular y, al mismo tiempo, uno de los tres verbos italianos más frecuentes.",
+      title: "Profesiones: masculino y femenino",
+      note: "El femenino se forma normalmente con <b>-in</b>. Con <em>Arzt</em> y <em>Koch</em> la vocal lleva diéresis.",
       table: {
-        head: ["persona", "fare", "ejemplo"],
+        head: ["masculino", "femenino", "ejemplo"],
         rows: [
-          ["io", "faccio", "Faccio l'insegnante."],
-          ["tu", "fai", "Che lavoro fai?"],
-          ["lui / lei / Lei", "fa", "Fa il medico."],
-          ["noi", "facciamo", "Facciamo colazione."],
-          ["voi", "fate", "Che cosa fate?"],
-          ["loro", "fanno", "Fanno gli avvocati."]
+          ["der Lehrer", "die Lehrerin", "Ich bin Lehrerin."],
+          ["der Arzt", "die Ärztin", "Er ist Arzt."],
+          ["der Student", "die Studentin", "Wir sind Studenten."],
+          ["der Koch", "die Köchin", "Sie ist Köchin."],
+          ["der Ingenieur", "die Ingenieurin", "Ich bin Ingenieurin."],
+          ["der Verkäufer", "die Verkäuferin", "Sie ist Verkäuferin."]
         ]
       },
       examples: [
-        { tr: "¿A qué te dedicas?" },
-        { tr: "Soy periodista." },
-        { tr: "Soy ingeniero.", note: "después de essere, normalmente sin artículo" },
-        { tr: "Trabajo en una agencia." },
-        { tr: "Ahora mismo no trabajo." },
-        { tr: "Todavía estudio, estoy en el último año." }
+        { tr: "¿A qué se dedica usted?", note: "forma de cortesía" },
+        { tr: "Soy profesora.", note: "habla una mujer" },
+        { tr: "Él es médico." },
+        { tr: "Ella es cocinera." },
+        { tr: "Soy una buena profesora.", note: "con el adjetivo vuelve el artículo" },
+        { tr: "Somos estudiantes universitarios.", note: "un alumno de colegio es un Schüler" }
       ]
     },
     vocab: [
-      "trabajo",
-      "profesor",
-      "médico",
-      "ingeniero",
-      "abogado",
-      "periodista",
-      "administrativo",
-      "cocinero",
-      "dependiente",
-      "obrero",
-      "autónomo",
-      "estoy buscando trabajo"
+      "la profesión",
+      "el profesor",
+      "la profesora",
+      "el médico",
+      "la médica, la doctora",
+      "el estudiante universitario",
+      "la estudiante universitaria",
+      "el cocinero",
+      "la cocinera",
+      "el ingeniero",
+      "el dependiente",
+      "la dependienta"
     ],
     exercises: [
-      { why: "Ojo con la doble c de faccio y facciamo." },
       {
-        q: "¿Qué frase significa «soy profesor» y suena más natural?",
-        opts: ["Faccio l'insegnante.", "Sono la insegnante.", "Ho insegnante."],
-        why: "Fare + artículo determinado es la forma más habitual de decir tu oficio al hablar."
+        q: "Eres médica. ¿Qué frase usa la forma femenina?",
+        opts: ["Ich bin Arzt.", "Ich bin Ärztin.", "Ich bin Arztin."],
+        why: "El femenino de <i>Arzt</i> es <b>Ärztin</b>: se añade <i>-in</i> y la <i>A</i> lleva diéresis."
       },
       {
-        q: "¿Cuál es el femenino de «il professore»?",
-        opts: ["la professora", "la professoressa", "la professrice"],
-        why: "El patrón -e → -essa, como studente → studentessa."
+        q: "¿Cuál es el plural de «die Lehrerin»?",
+        opts: ["die Lehrerins", "die Lehrerinnen", "die Lehrerine"],
+        why: "El plural de las formas en <i>-in</i> se hace con <b>-nen</b>: <i>die Lehrerinnen</i>."
       },
       {
-        q: "Completa: «Mia sorella fa ___ dottoressa.»",
-        why: "Después de fare va el artículo determinado, ajustado al género: la dottoressa."
+        tr: "El verbo studieren, todas las personas.",
+        why: "Los verbos en <i>-ieren</i> se conjugan de forma regular: <i>studier-</i> más las terminaciones."
       },
-      { q: "Elige el artículo.", items: ["cocinera", "ingeniero", "estudiante (f.)", "obrero"] },
-      { q: "«¿A qué te dedicas?» (informal)", why: "Che lavoro fai?, literalmente «qué trabajo haces»." },
       {
-        q: "Empareja la forma masculina con la femenina.",
-        pairs: ["l'attrice", "la commessa", "la studentessa", "la giornalista"]
+        q: "Completa: «Sie ist ___.» (Ella es cocinera.)",
+        hint: "forma femenina de Koch",
+        why: "<i>Köchin</i>: el femenino añade <i>-in</i> y la <i>o</i> lleva diéresis. Sin la diéresis la palabra es incorrecta."
       },
-      { tr: "Trabajo en un banco de Milán." },
-      { tr: "Soy arquitecto, trabajo con mi hermano." },
-      { tr: "¿A qué te dedicas? Soy periodista." }
+      {
+        q: "Elige el artículo determinado.",
+        items: [
+          "profesor",
+          "profesora",
+          "profesión",
+          "estudiante universitaria",
+          "médica",
+          "cocinero"
+        ]
+      },
+      {
+        q: "Une cada profesión con su significado.",
+        pairs: ["profesor", "médica", "cocinero", "dependienta"]
+      },
+      {
+        tr: "¿A qué se dedica usted?",
+        why: "Pregunta con <i>was</i>: el verbo <i>sind</i> va en segunda posición, y con <i>Sie</i> se usa la forma de cortesía."
+      },
+      {
+        q: "Traduce: «Yo soy cocinera.»",
+        why: "<i>Ich bin Köchin</i>: profesión sin artículo y forma femenina con <i>-in</i>."
+      },
+      {
+        tr: "¿A qué se dedica usted? Soy profesora.",
+        why: "<i>Beruf</i> termina en una <b>f</b> clara, y el acento cae en la segunda sílaba: be-RUF."
+      },
+      {
+        tr: "¿A qué se dedica usted? Soy ingeniera.",
+        why: "<i>Ingenieurin</i> es el femenino de <i>Ingenieur</i>: se añade <b>-in</b>. Y sin artículo, como en español."
+      }
     ]
   },
   "lesson:a1-u02-l4": {
-    theme: "Gramática básica",
-    title: "La primera conjugación",
+    theme: "Vida cotidiana",
+    title: "Wohnen, arbeiten, kommen",
     objectives: [
-      "conjugar cualquier verbo regular en -are",
-      "manejar los cambios ortográficos de cercare, pagare, mangiare",
-      "construir una negación y una pregunta"
+      "conjugar los verbos regulares en presente",
+      "decir dónde vives, dónde trabajas y de dónde vienes",
+      "reconocer países e idiomas"
     ],
     theory: [
       {
-        h: "El grupo más grande y más previsible",
-        p: "Cerca del 70% de los verbos italianos terminan en <strong>-are</strong>, y casi todos se comportan igual. Quitas la terminación del infinitivo y añades seis propias: <em>-o, -i, -a, -iamo, -ate, -ano</em>. Es tu conjugación en <em>-ar</em>, con desinencias parecidas pero no idénticas: ojo con <em>-iamo</em> y <em>-ate</em>, donde el español dice -amos y -áis."
+        h: "El verbo regular: raíz más terminación",
+        p: "Se quita <em>-en</em> del infinitivo y se añade la terminación de la persona: <strong>-e, -st, -t, -en, -t, -en</strong>. De <em>wohnen</em> sale <em>ich wohne, du wohnst, er wohnt, wir wohnen, ihr wohnt, sie/Sie wohnen</em>. Son seis formas pero cuatro terminaciones distintas, porque <em>er</em> e <em>ihr</em> tienen la misma forma, igual que <em>wir</em> y <em>sie/Sie</em>."
       },
       {
-        h: "Un acento que no se ve",
-        p: "En la forma de <em>loro</em> el acento cae en la antepenúltima sílaba: <b>par</b>-la-no, <b>la</b>-vo-ra-no. No «parla-NO». La diferencia se oye y los italianos la notan. El español coloca el acento en el mismo sitio en «hablan», así que el instinto sirve."
+        contrast: "En español cada persona tiene su terminación: trabajo, trabajas, trabaja, trabajamos, trabajáis, trabajan. En alemán <em>er arbeitet</em> e <em>ihr arbeitet</em> son idénticas, y <em>wir arbeiten</em> y <em>sie arbeiten</em> también. Por eso, en la oración principal, el pronombre no se omite."
       },
       {
-        h: "Ortografía que salva la pronunciación",
-        list: [
-          "<b>-care / -gare</b> añaden una <b>h</b> ante -i y -e: <em>cercare → cerchi, cerchiamo</em>; <em>pagare → paghi, paghiamo</em>. Es tu qu/gu de «busque» y «pague».",
-          "<b>-ciare / -giare</b> pierden la <b>i</b> ante -i: <em>mangiare → mangi</em> (no «mangii»), <em>cominciare → cominci</em>",
-          "<b>-iare</b> átono también pierde una i: <em>studiare → studi, studiamo</em>"
-        ]
+        h: "Raíces en -t y -d: hace falta una -e- más",
+        p: "Si la raíz termina en <em>-t</em> o <em>-d</em> (<em>arbeit-</em>, <em>find-</em>), para que la terminación se pueda pronunciar se intercala una <strong>-e-</strong> delante de <em>-st</em> y <em>-t</em>: <em>du arbeitest, er arbeitet, ihr arbeitet</em>. La forma de <em>ich</em> (<em>ich arbeite</em>) y las formas en <em>-en</em> siguen siendo regulares."
       },
       {
-        h: "Negación y pregunta no necesitan nada nuevo",
-        p: "La negación es una sola palabra, <strong>non</strong>, delante del verbo: <em>non parlo italiano</em>. La pregunta no cambia el orden: basta la entonación, <em>Parli italiano?</em> Igual que en español, y sin nada parecido al auxiliar inglés «do»."
+        h: "Wo y woher",
+        p: "<strong>Wo</strong> pregunta dónde está alguien: <em>Wo wohnst du?</em> → <em>Ich wohne in Berlin.</em> <strong>Woher</strong> pregunta la procedencia: <em>Woher kommen Sie?</em> → <em>Ich komme aus Spanien.</em> Con ciudades y países se usa normalmente <em>in</em> para el lugar y <em>aus</em> para la procedencia. El verbo sigue en segunda posición, y con <em>Sie</em> se conjuga como para «ellos». Ojo con «vivir»: el alemán lo reparte en dos verbos. <em>Wohnen</em> es el verbo corriente para el lugar donde resides; <em>leben</em> es más general (estar vivo, vivir una vida), así que para una dirección empieza por <em>wohnen</em>."
+      },
+      {
+        trap: "Los nombres de los idiomas son sustantivos y se escriben con <b>mayúscula</b>: <em>Deutsch, Italienisch, Englisch</em>, a diferencia del español («alemán», «italiano», «inglés»). Después de <em>sprechen</em> no llevan artículo: <em>Ich spreche Deutsch</em>. Atención: <em>sprechen</em> cambia de vocal con <em>du</em> y <em>er</em> (<em>du sprichst</em>), y ese tipo de verbos lo verás en la unidad 3: por ahora usa solo <em>ich spreche</em> y <em>wir sprechen</em>."
+      },
+      {
+        tip: "Para decir dónde trabajas: <em>Ich arbeite in Hamburg</em>. Para añadir qué haces: <em>Ich arbeite als Lehrerin</em> («trabajo de profesora»), normalmente sin artículo después de <em>als</em>."
       }
     ],
     grammar: {
-      title: "Parlare (hablar) — el patrón -ARE",
+      title: "Presente regular: wohnen, arbeiten, kommen",
+      note: "Con <em>arbeiten</em> la raíz termina en <b>-t</b>, así que aparece la <b>-e-</b> con <em>du</em>, <em>er/sie/es</em> e <em>ihr</em>.",
       table: {
-        head: ["persona", "desinencia", "parlare", "lavorare"],
+        head: ["persona", "wohnen", "arbeiten", "kommen"],
         rows: [
-          ["io", "-o", "parlo", "lavoro"],
-          ["tu", "-i", "parli", "lavori"],
-          ["lui / lei / Lei", "-a", "parla", "lavora"],
-          ["noi", "-iamo", "parliamo", "lavoriamo"],
-          ["voi", "-ate", "parlate", "lavorate"],
-          ["loro", "-ano", "parlano", "lavorano"]
+          ["ich", "wohne", "arbeite", "komme"],
+          ["du", "wohnst", "arbeitest", "kommst"],
+          ["er / sie / es", "wohnt", "arbeitet", "kommt"],
+          ["wir", "wohnen", "arbeiten", "kommen"],
+          ["ihr", "wohnt", "arbeitet", "kommt"],
+          ["sie / Sie", "wohnen", "arbeiten", "kommen"]
         ]
       },
       examples: [
-        { tr: "Hablo un poco de italiano." },
-        { tr: "No hablo bien, pero entiendo." },
-        { tr: "¿Estudias en la universidad?", note: "una pregunta solo por entonación" },
-        { tr: "Comemos a las ocho." },
-        { tr: "¿Buscas trabajo en Milán?", note: "cercare → cerchi, con h" },
-        { tr: "Viven cerca del centro.", note: "acento: A-bi-ta-no" }
+        { tr: "¿Dónde vives?" },
+        { tr: "Vivo en Berlín." },
+        { tr: "Tú trabajas en Viena." },
+        { tr: "Él viene de España." },
+        { tr: "Vosotros trabajáis en Hamburgo." },
+        { tr: "¿De dónde es usted?", note: "forma de cortesía" }
       ]
     },
     vocab: [
-      "hablar",
-      "trabajar",
-      "estudiar",
-      "vivir (en un sitio)",
-      "comer",
-      "comprar",
-      "buscar",
-      "pagar",
-      "escuchar",
-      "mirar",
-      "esperar",
-      "empezar"
+      "Alemania",
+      "Italia",
+      "Austria",
+      "Francia",
+      "España",
+      "Polonia",
+      "el alemán (idioma)",
+      "el italiano (idioma)",
+      "el inglés (idioma)",
+      "el español (idioma)",
+      "el francés (idioma)",
+      "el polaco (idioma)"
     ],
     exercises: [
-      { why: "El patrón que cubre la mayoría de los verbos italianos." },
       {
-        tr: "tu, noi — atención a la ortografía",
-        why: "Cerchi y cerchiamo llevan <b>h</b> para mantener el sonido de k."
+        q: "¿Qué frase es correcta?",
+        opts: ["Er arbeit in Berlin.", "Er arbeitet in Berlin.", "Er arbeitest in Berlin."],
+        why: "La raíz <i>arbeit-</i> termina en <i>-t</i>: con <i>er</i> hace falta la <b>-e-</b> antes de <i>-t</i>."
       },
       {
-        q: "¿Qué forma es la correcta para «comes»?",
-        opts: ["mangii", "mangi", "mangie"],
-        why: "Los verbos en -giare pierden la i ante la desinencia -i: mangi."
+        q: "¿Qué formas son correctas con «ihr»?",
+        opts: ["ihr arbeitet", "ihr kommt", "ihr wohnen", "ihr arbeitest", "ihr wohnt"],
+        why: "Con <i>ihr</i> la terminación es <b>-t</b> (<i>-et</i> con raíces en <i>-t</i>). <i>Wohnen</i> es para <i>wir</i> y <i>sie/Sie</i>; <i>-st</i> es para <i>du</i>."
       },
       {
-        q: "Completa: «Loro ___ a Bologna.» (Viven en Bolonia.)",
-        why: "abitare, la forma de loro: -ano."
+        tr: "El verbo arbeiten, todas las personas.",
+        why: "La raíz <i>arbeit-</i> termina en <i>-t</i>: con <i>du</i>, <i>er</i> e <i>ihr</i> aparece la <b>-e-</b>."
       },
       {
-        q: "Ponlo en negativo: «Parlo italiano.» → «___ parlo italiano.»",
-        why: "Una sola palabra, non, delante del verbo: eso es toda la negación."
+        tr: "El verbo kommen, algunas personas.",
+        why: "<i>Kommen</i> es regular: <i>du kommst</i>, <i>er kommt</i>, <i>ihr kommt</i>. No hay cambio de vocal."
       },
-      { q: "«Buscamos un piso en Roma.»", why: "cercare → cerchiamo (con h), a + ciudad." },
       {
-        q: "¿Qué formas pertenecen a «studiare»?",
-        opts: ["studio", "studii", "studi", "studiamo", "studiate"],
-        why: "«Studii» no existe: la doble i se reduce a una."
+        q: "Completa: «Du ___ in Wien.» (Trabajas en Viena.)",
+        hint: "segunda persona del singular de arbeiten",
+        why: "<i>Du arbeitest</i>: tras una raíz en <i>-t</i> hace falta una <b>-e-</b> antes de <i>-st</i>."
       },
-      { tr: "Los sábados no trabajo.", why: "«Il sabato» con artículo significa «los sábados», con regularidad." },
-      { tr: "Estudio italiano desde hace tres meses." },
-      { tr: "No hablo bien, pero lo entiendo casi todo." }
+      {
+        q: "Completa: «Wo ___ ihr?» (¿Dónde vivís?)",
+        hint: "segunda persona del plural de wohnen",
+        why: "<i>Ihr wohnt</i>: la terminación de <i>ihr</i> es <b>-t</b>."
+      },
+      {
+        tr: "Vivo en Italia y trabajo aquí.",
+        why: "En la oración con <i>und</i> el segundo verbo tiene el mismo sujeto, que puede omitirse: <i>und arbeite hier</i>."
+      },
+      {
+        q: "Traduce tuteando: «¿De dónde eres?»",
+        why: "<i>Woher kommst du?</i> es la forma más corriente; también es correcta <i>Woher bist du?</i>"
+      },
+      {
+        tr: "Vivo en Viena y vengo de Italia.",
+        why: "<i>Wien</i> se pronuncia /viːn/: la <b>w</b> es una <i>v</i> sonora (los dientes superiores tocan el labio inferior, sin pronunciarla como una <i>b</i>) e <i>ie</i> es una <i>i</i> larga."
+      },
+      {
+        tr: "Vengo de Italia y vivo en Berlín.",
+        why: "Con las ciudades se usa <i>in</i> para el lugar y <i>aus</i> para la procedencia."
+      }
     ]
   },
   "lesson:a1-u02-test": {
     theme: "Prueba",
     title: "Prueba de la unidad 2",
-    objectives: ["comprobar avere, fare, chiamarsi, los números y la primera conjugación"],
-    theory: [{ p: "Diez preguntas. Se aprueba con un 70%." }],
-    exercises: [
-      { q: "«___ chiamo Peter.»" },
-      { q: "«Quanti anni ___?» (¿Cuántos años tienes?)" },
-      { q: "¿Qué número es «ottantaquattro»?", opts: ["48", "84", "94"] },
-      { q: "«Tengo hambre» en italiano:", opts: ["Sono fame", "Ho fame", "Sto fame"] },
-      {  },
+    objectives: ["comprobar pronombres, sein y haben, profesiones, presente regular y números"],
+    theory: [
       {
-        q: "¿Qué forma es correcta para «pagas»?",
-        opts: ["pagi", "paghi", "page"],
-        why: "-gare añade una h ante -i."
+        p: "Diez preguntas sobre toda la unidad. Se aprueba con el 70 %. No repases las lecciones mientras contestas: si no recuerdas algo, es mejor volver a repasar."
+      }
+    ],
+    exercises: [
+      {
+        q: "¿Cómo se dice «Tengo treinta años»?",
+        opts: ["Ich habe dreißig Jahre.", "Ich bin dreißig Jahre alt.", "Ich sind dreißig Jahre alt."],
+        why: "<i>Ich bin dreißig Jahre alt</i>: la edad se dice con <b>sein</b> y <i>alt</i>."
       },
-      { q: "Complétalo.", tr: "Soy española, vivo en Verona y soy profesora." },
-      { q: "«No hablo italiano.»" },
-      { tr: "Tengo veintisiete años y estoy buscando trabajo." },
-      { tr: "Me llamo Anna y soy periodista." }
+      {
+        q: "¿Qué número es «73»?",
+        opts: ["siebenunddreißig", "dreiundsiebzig", "siebzigdrei"],
+        why: "<i>Dreiundsiebzig</i>: primero la unidad (<i>drei</i>), luego la decena (<i>siebzig</i>). <i>Siebenunddreißig</i> es 37."
+      },
+      {
+        q: "La señora Weber es médica. ¿Qué frase usa la forma femenina de la profesión?",
+        opts: ["Frau Weber ist Ärztin.", "Frau Weber ist Arzt.", "Frau Weber ist ein Ärztin."],
+        why: "El femenino es <b>Ärztin</b>, y la profesión va sin artículo."
+      },
+      {
+        q: "Completa: «Wir ___ aus Polen.» (Venimos de Polonia.)",
+        why: "<i>Wir kommen</i>: con <i>wir</i> la terminación es <b>-en</b>."
+      },
+      {
+        q: "Completa: «Ihr ___ Hunger.» (Vosotros tenéis hambre.)",
+        why: "<i>Ihr habt</i>: la forma de <i>haben</i> con <i>ihr</i> es <b>habt</b>."
+      },
+      {
+        tr: "El verbo arbeiten: du, er, ihr.",
+        why: "Con las raíces en <i>-t</i> hace falta la <b>-e-</b>: <i>du arbeitest, er arbeitet, ihr arbeitet</i>."
+      },
+      {
+        q: "Completa con ist, wohnt y kommt.",
+        tr: "Anna es profesora. Vive en Viena y viene de Polonia.",
+        why: "Los tres verbos están en tercera persona del singular: <i>ist</i>, <i>wohnt</i>, <i>kommt</i>."
+      },
+      {
+        q: "Traduce, dirigiéndote a una persona de usted: «¿A qué se dedica?»",
+        why: "<i>Was sind Sie von Beruf?</i> es la fórmula que has aprendido; <i>Was machen Sie beruflich?</i> es una alternativa correcta."
+      },
+      {
+        tr: "Me llamo Lena, tengo treinta años y vengo de Viena.",
+        why: "<i>Dreißig</i> se escribe con <b>ß</b>: se pronuncia como una <i>s</i> sorda, sin duplicarla, y nunca como una «z»."
+      },
+      {
+        tr: "Me llamo Paolo, soy ingeniero y vivo en Berlín.",
+        why: "En la oración aparecen tres verbos: <i>heiße</i>, <i>bin</i>, <i>wohne</i>."
+      }
     ]
   },
   "unit:a1-u03": {

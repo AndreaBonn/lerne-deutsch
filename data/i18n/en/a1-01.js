@@ -578,405 +578,546 @@ LINGUAI.addStrings("en", {
       { tr: "Good day, how are you? (formal)" }
     ]
   },
-  "unit:a1-u02": { title: "Who are you", grammarNote: "avere · numbers · jobs and nationalities" },
+  "unit:a1-u02": {
+    title: "Who are you?",
+    grammarNote: "personal pronouns · regular present · sein and haben · jobs · numbers to 100"
+  },
   "lesson:a1-u02-l1": {
-    theme: "Meeting people",
-    title: "Introducing yourself",
+    theme: "Introducing yourself",
+    title: "My name is ...",
     objectives: [
-      "give your name, where you're from and where you live",
-      "use the verb chiamarsi",
-      "ask other people the same things"
+      "say your name and ask someone else's, with du and with Sie",
+      "use the subject pronouns: ich, du, er, sie, es, wir, ihr, sie, Sie",
+      "say where you are from with “Ich komme aus ...”"
     ],
     theory: [
       {
-        h: "\"My name is\" is a reflexive verb",
-        p: "<strong>Chiamarsi</strong> literally means \"to call oneself\". Hence <em>mi chiamo</em> — \"I call myself\". The reflexive pronoun (<em>mi, ti, si…</em>) sits <b>before</b> the verb, which is the opposite of the English \"myself\" that trails after it."
+        h: "Subject pronouns: German says who is acting",
+        p: "In a main clause that stands on its own, the conjugated verb needs a stated subject: a name (<em>Anna heißt Weber</em>) or a pronoun. In coordinated clauses with the same subject, as in <em>Ich wohne hier und arbeite in Bonn</em>, the second subject can be left out. English works the same way, so that part is easy. What is new is the number of pronouns: <strong>ich</strong> (I), <strong>du</strong> (you, one friend), <strong>er</strong> (he), <strong>sie</strong> (she), <strong>es</strong> (it), <strong>wir</strong> (we), <strong>ihr</strong> (you, several friends), <strong>sie</strong> (they) and <strong>Sie</strong>, the polite “you”. The verb endings alone do not tell you the person: <em>heißt</em> fits <em>du</em>, <em>er</em>, <em>sie</em>, <em>es</em> and <em>ihr</em>."
       },
       {
-        h: "Where you're from: essere di or venire da",
-        p: "For a city you say <em>sono di Chicago</em> (\"I'm from Chicago\"); for a country, <em>vengo dagli Stati Uniti</em> or <em>sono americano/a</em>. Country names take an article (<em>l'Italia, gli Stati Uniti</em>), city names don't."
+        contrast: "English has one <em>you</em> for everybody. German has three, and choosing is grammar, not just tone: <em>Wie heißt du?</em> to one friend, <em>Wie heißt ihr?</em> to several, <em>Wie heißen Sie?</em> to a stranger. Decide on the pronoun first, because the verb form follows it."
       },
       {
-        trap: "Nationalities are written in <b>lowercase</b> in Italian: <em>sono americana</em>, <em>un ragazzo italiano</em>. English capitalizes them without exception, so this one takes real effort to unlearn — and it shows up in every written exercise."
+        h: "sie and Sie: the capital letter changes the meaning",
+        p: "Spoken, <em>sie</em> and <em>Sie</em> sound the same; written, they do not. Lowercase <strong>sie</strong> means “she” or “they”: <em>sie heißt Lena</em> with a singular verb, <em>sie heißen Weber</em> with a plural verb. Capital <strong>Sie</strong> is the polite “you”, for one person or several, and takes the same verb as “they”: <em>Wie heißen Sie?</em> At the start of a sentence the capital is there anyway, so it does not help: <em>heißt</em> (singular) points to “she”, while with <em>heißen</em> the context has to tell “they” from the polite “you”.",
+        list: [
+          "<b>du</b>: one person you are on familiar terms with",
+          "<b>ihr</b>: several people you are on familiar terms with (it is not the polite form)",
+          "<b>Sie</b>: one or several people you address politely"
+        ]
       },
       {
-        h: "Abitare — to live somewhere",
-        p: "<em>Abitare a Roma</em> (a city), <em>abitare in Italia</em> (a country). The same a/in split comes back later with travel, so it's worth memorizing right now as a pair: <b>a + city, in + country</b>."
+        trap: "Third-person pronouns follow the <b>grammatical gender</b> of the noun they replace, even for things: <em>Der Tisch ist neu. Er ist groß.</em> (er = the table), <em>Die Tasse ist neu. Sie ist groß.</em>, <em>Das Buch ist neu. Es ist groß.</em> English says “it” for all three; German says literally “he is big”, “she is big” or “it is big”, depending on the noun."
+      },
+      {
+        h: "Name and origin",
+        p: "To introduce yourself you have two formulas: <em>Ich heiße Paolo</em> or <em>Mein Name ist Paolo</em>. To ask where someone is from, use <strong>woher</strong> (“where from”, one word) and the verb <strong>kommen</strong>: <em>Woher kommst du?</em> You answer <em>Ich komme aus</em> plus the country or city, normally without an article: <em>Ich komme aus Italien</em>, <em>aus Berlin</em>. English says “I am from ...”; the German standard answer is “I come from ...”, though <em>Woher bist du?</em> is also common. As in all German questions, there is no <em>do</em>. For now learn the whole phrases: countries that take an article come later."
+      },
+      {
+        tip: "To ask someone to repeat, <em>Wie bitte?</em> (“Pardon?”, literally “how, please?”) is the usual phrase and fits everyone. To answer an introduction you need <em>Freut mich</em> (“nice to meet you”, literally “pleases me”)."
       }
     ],
     grammar: {
-      title: "Chiamarsi (to be called) and asking about someone",
+      title: "Subject pronouns in the nominative",
+      note: "German has nine pronouns (<em>ich, du, er, sie, es, wir, ihr, sie, Sie</em>) but a regular verb has only four endings: <em>-e, -st, -t, -en</em>. In the table <em>sie</em> and <em>Sie</em> share a row because they take the same verb form.",
       table: {
-        head: ["person", "chiamarsi", "example"],
+        head: ["person", "pronoun", "example"],
         rows: [
-          ["io", "mi chiamo", "Mi chiamo Anna."],
-          ["tu", "ti chiami", "Come ti chiami?"],
-          ["lui / lei / Lei", "si chiama", "Come si chiama, scusi?"],
-          ["noi", "ci chiamiamo", "Ci chiamiamo Rossi."],
-          ["voi", "vi chiamate", "Come vi chiamate?"],
-          ["loro", "si chiamano", "Si chiamano Marco e Luca."]
+          ["1st singular", "ich", "Ich heiße Paolo."],
+          ["2nd singular", "du", "Woher kommst du?"],
+          ["3rd singular", "er / sie / es", "Er heißt Tom, sie heißt Lena."],
+          ["1st plural", "wir", "Wir heißen Weber."],
+          ["2nd plural", "ihr", "Wie heißt ihr?"],
+          ["3rd plural / polite", "sie / Sie", "Wie heißen Sie?"]
         ]
       },
       examples: [
-        { tr: "What's your name? — My name is Eva." },
-        { tr: "Where are you from? — I'm from Boston." },
-        { tr: "I'm American, but I live in Milan.", note: "nationality in lowercase" },
-        { tr: "How old are you? — I'm twenty-eight.", note: "age always goes through avere" },
-        { tr: "Nice to meet you, Marco. — The pleasure's mine." }
+        { tr: "My name is Paolo." },
+        { tr: "Where are you from?", note: "informal" },
+        { tr: "He is called Tom, she is called Lena." },
+        { tr: "We are called Weber." },
+        { tr: "What are your names?", note: "to several friends" },
+        { tr: "What is your name?", note: "polite" }
       ]
     },
     vocab: [
-      "to be",
-      "my name is…",
-      "what's your name?",
-      "where are you from?",
-      "I'm from… (city)",
-      "I live in… (city)",
-      "American (m. / f.)",
-      "Italian (m. / f.)",
-      "first name",
-      "last name",
-      "nice to meet you",
-      "me too",
-      "really?"
+      "the name",
+      "the first name",
+      "the last name, the surname",
+      "What is your name? (informal)",
+      "My name is ...",
+      "My name is ... (second formula)",
+      "Nice to meet you.",
+      "Where are you from? (informal)",
+      "I am from ... (country or city)",
+      "How old are you? (informal)",
+      "I am ... years old.",
+      "And you? (informal)",
+      "Pardon? (I did not catch that)"
     ],
+    culture: {
+      title: "A German view: names, titles and the switch to du",
+      text: "<p>In Germany people often introduce themselves with first and last name together: <i>Ich bin Anna Weber</i>. With someone you do not know, you normally use <i>Herr</i> or <i>Frau</i> and the surname, not the first name alone. If someone has a title such as <i>Doktor</i>, in formal settings the title is added: <i>Frau Doktor Weber</i>.</p><p>The old <i>Fräulein</i> for unmarried women is no longer used. Today <i>Frau</i> is used for every adult woman, married or not, much like “Ms.”.</p><p>The switch from <i>Sie</i> to <i>du</i> is a small social event: it is usually proposed by the older person or the one with more responsibility. In many companies and among students people say <i>du</i> right away, but when in doubt start with <i>Sie</i> and wait for the offer. English speakers tend to move to first names quickly, so expect <i>Sie</i> to last longer than you are used to.</p>"
+    },
     exercises: [
       {
-        q: "How do you ask someone's name informally?",
-        opts: ["Come si chiama?", "Come ti chiami?", "Come vi chiamate?"],
-        why: "The tu form: <i>ti chiami</i>. The Lei version is <i>come si chiama?</i>"
+        q: "You are talking to a customer you do not know. Which question do you use to ask her name?",
+        opts: ["Wie heißt du?", "Wie heißen Sie?", "Wie heißt ihr?"],
+        why: "With a stranger you use the polite <b>Sie</b>, with the verb as for “they”: <i>heißen</i>. <i>Wie heißt du?</i> is for one friend, <i>Wie heißt ihr?</i> for several."
       },
       {
-        q: "Which sentence is written correctly?",
-        opts: ["Sono Americana.", "Sono americana.", "Sono la americana."],
-        why: "Nationalities are lowercase, and take no article after essere."
-      },
-      { q: "Fill in: \"___ chiamo Marta.\"", why: "First person reflexive pronoun: mi chiamo." },
-      {
-        q: "Fill in: \"Abito ___ Roma.\" (I live in Rome.)",
-        why: "Cities take <b>a</b>, countries take <b>in</b>: abito a Roma / abito in Italia."
+        q: "Lena is a woman. Which pronoun do you use to talk about her?",
+        opts: ["er", "sie", "es"],
+        why: "For a woman you use <b>sie</b>, lowercase in the middle of a sentence. <i>Er</i> is for a man, <i>es</i> for neuter nouns."
       },
       {
-        q: "Complete the introduction.",
-        tr: "Hi! My name's Kate, I'm from Seattle and I live in Bologna.",
-        why: "The three verbs that turn up in every first sentence about yourself."
+        q: "Complete: “___ heißt Lena.” (She is called Lena.)",
+        hint: "third person singular feminine pronoun",
+        why: "At the start of a sentence it is written <b>Sie</b> with a capital, because it is the first word; the verb <i>heißt</i> is third person singular."
       },
-      { tr: "Nice to meet you, my name is Luca." },
       {
-        q: "You're meeting someone at a language school.",
-        setting: "First day at a language school in Florence.",
+        q: "Complete: “Ich ___ aus Italien.” (I come from Italy.)",
+        hint: "first person singular of kommen",
+        why: "<i>Ich komme</i>: the ending of the first person singular is <b>-e</b>."
+      },
+      {
+        q: "Complete with the right pronouns.",
+        tr: "Hi! My name is Paolo. And what is your name?",
+        why: "In a main clause the pronoun is not left out: <i>Ich heiße Paolo</i>. To a friend you ask <i>Wie heißt du?</i>"
+      },
+      {
+        q: "A new acquaintance greets you at the German class.",
+        setting: "The first lesson, the first day.",
         lines: [
-          { tr: "Hi! I'm Giulia. And you, what's your name?" },
-          { tr: "Introduce yourself by name.", answerTr: "My name is Eva." },
-          { tr: "Nice to meet you, Eva! Where are you from?" },
-          { tr: "Say you're from Poland — that's the recorded model answer.", answerTr: "I'm from Poland." }
+          { tr: "Hi! I am Lena. And what is your name?" },
+          { tr: "Answer by saying your name.", answerTr: "My name is Paolo." },
+          { tr: "Where are you from?" },
+          { tr: "Answer that you are from Italy.", answerTr: "I come from Italy." }
         ]
       },
-      { tr: "My name is Elena and I live in Naples." },
-      { tr: "Nice to meet you!" }
+      {
+        tr: "My name is Anna Weber.",
+        why: "<i>Mein Name ist</i> is the alternative to <i>Ich heiße</i>. First and last names are written with a capital."
+      },
+      {
+        tr: "Hello, my name is Lena and I come from Berlin.",
+        why: "Listen to the <i>ei</i> in <i>heiße</i>: it sounds like English “eye”, not like “ay”."
+      },
+      {
+        tr: "My name is Paolo. And what is your name?",
+        why: "For <i>wie</i> remember: the <b>w</b> sounds like English <i>v</i>, and <i>ie</i> is a long “ee”: “vee”."
+      }
     ]
   },
   "lesson:a1-u02-l2": {
-    theme: "Core grammar",
-    title: "To have, and numbers 0-100",
+    theme: "Introducing yourself",
+    title: "Sein, haben and numbers",
     objectives: [
-      "conjugate avere",
-      "use expressions like ho fame, ho freddo, ho ventotto anni",
-      "count to a hundred and give a price"
+      "conjugate sein and haben in the present",
+      "say your age with “Ich bin ... Jahre alt”",
+      "count to 100 and read out a phone number"
     ],
     theory: [
       {
-        h: "Avere does more work than English \"have\"",
-        p: "Italian uses <strong>avere</strong> where English uses \"to be\". <em>Ho fame</em> is literally \"I have hunger\", not \"I am hungry\". The same logic covers thirst, cold, heat, fear, sleepiness and age — so \"I am cold\" comes out as <em>ho freddo</em>, and <em>sono freddo</em> would mean you're a cold person."
+        h: "Haben, the verb “to have”",
+        p: "Like <em>sein</em> from unit 1, <strong>haben</strong> is irregular: the form for <em>du</em> is <em>hast</em>, the one for <em>er/sie/es</em> is <em>hat</em>, and the <em>b</em> drops out. It works like English “have” for what you own: <em>Ich habe eine Schwester</em>, “I have a sister”. German also uses it where English uses “to be”: <em>Ich habe Hunger</em>, literally “I have hunger”. With <em>haben</em> what you own is a direct object, so the masculine indefinite article <em>ein</em> becomes <em>einen</em>, as in the formula <em>einen Kaffee</em> (unit 3 explains why): <em>Ich habe einen Bruder</em>. English has no grammatical gender, so these forms cannot be guessed from the English words. With <em>Hunger haben</em> and similar expressions there is no article."
       },
       {
-        h: "Age: always avere",
-        p: "<em>Ho trent'anni</em> — literally \"I have thirty years\". <em>Sono trenta</em> means nothing at all. Note the apostrophe: <em>trent'anni</em>, <em>vent'anni</em> — the final vowel of the ten drops before <em>anni</em>."
+        h: "Sein with a noun: the nominative stays",
+        p: "After <strong>sein</strong> the noun that describes the subject stays in the same case as the subject, the nominative: <em>Das ist ein Tisch</em>, <em>Das ist mein Lehrer</em>. A phrase with a preposition does not say who you are: <em>Ich bin in Berlin</em> says where you are, not who you are."
       },
       {
-        h: "The h you never hear",
-        p: "The forms <em>ho, hai, ha, hanno</em> start with a silent <b>h</b>. It isn't pronounced at all — it exists purely to keep them apart from other words: <em>ho</em> (I have) versus <em>o</em> (or), <em>ha</em> (has) versus <em>a</em> (to)."
+        contrast: "Age works as in English, with the verb <em>to be</em>: <em>Ich bin fünfundzwanzig Jahre alt</em> is “I am twenty-five years old”. German speakers also say just <em>Ich bin fünfundzwanzig</em>. Do not turn it into <em>have</em>: <em>Ich habe fünfundzwanzig Jahre</em> is wrong. The mismatch goes the other way for feelings. English “I am hungry” is <em>Ich habe Hunger</em> (“I have hunger”). And “I am cold” is <em>Mir ist kalt</em> (literally “to me it is cold”), not <em>Ich bin kalt</em>, which would not say that you feel cold. Questions never take <em>do</em>: <em>Hast du eine Schwester?</em>, not “Do you have a sister?” word for word."
       },
       {
-        h: "Numbers: tens plus units",
-        p: "From 20 up, numbers are written as one word: <em>ventidue</em>, <em>trentasei</em>. Before <em>uno</em> and <em>otto</em> the ten drops its final vowel: <b>ventuno</b>, <b>ventotto</b>, <b>trentuno</b>."
+        h: "Numbers from 20 to 100",
+        p: "The tens are <strong>zwanzig</strong>, <strong>dreißig</strong>, <strong>vierzig</strong>, <strong>fünfzig</strong>, <strong>sechzig</strong>, <strong>siebzig</strong>, <strong>achtzig</strong>, <strong>neunzig</strong>, <strong>hundert</strong>. Note: <em>zwanzig</em> is not “zweizig”; <em>dreißig</em> is written with <b>ß</b>; <em>sechzig</em> loses the final <em>s</em> of <em>sechs</em>; <em>siebzig</em> loses the <em>-en</em> of <em>sieben</em>. Numbers from 21 to 99 are written as one word, without hyphens, and 1 becomes <em>ein</em> in them: <em>einundzwanzig</em>."
+      },
+      {
+        trap: "In compound numbers the <b>units come first, then the tens</b>: 45 is <em>fünfundvierzig</em>, literally “five and forty”. English puts the tens first (“forty-five”); only the old rhyme “four and twenty blackbirds” has the German order. So 21 is <em>einundzwanzig</em>, “one and twenty”. Watch the pairs that are easy to confuse by ear: <em>sechzehn</em> (16) and <em>sechzig</em> (60), <em>siebzehn</em> (17) and <em>siebzig</em> (70), a bit like “sixteen” and “sixty” in English."
+      },
+      {
+        h: "Phone numbers",
+        p: "A phone number is usually read digit by digit or in small groups: 0151 is <em>null eins fünf eins</em>. German says <em>null</em> for zero, never “oh”. On the phone you sometimes hear <em>zwo</em> instead of <em>zwei</em>, so that it is not confused with <em>drei</em>. The grouping varies, so listen for the pauses. To ask: <em>Wie ist deine Telefonnummer?</em>"
       }
     ],
     grammar: {
-      title: "Avere (to have) and numbers",
+      title: "Sein (to be) and haben (to have)",
+      note: "Both verbs are irregular and have to be memorized. With <b>Sie</b> (polite) and with <em>sie</em> (they) you use <em>sind</em> and <em>haben</em>.",
       table: {
-        head: ["person", "avere", "expression"],
+        head: ["person", "sein", "haben"],
         rows: [
-          ["io", "ho", "Ho fame. (I'm hungry.)"],
-          ["tu", "hai", "Hai freddo? (Are you cold?)"],
-          ["lui / lei / Lei", "ha", "Ha ragione. (He's right.)"],
-          ["noi", "abbiamo", "Abbiamo sete. (We're thirsty.)"],
-          ["voi", "avete", "Avete tempo? (Do you have time?)"],
-          ["loro", "hanno", "Hanno paura. (They're afraid.)"]
+          ["ich", "bin", "habe"],
+          ["du", "bist", "hast"],
+          ["er / sie / es", "ist", "hat"],
+          ["wir", "sind", "haben"],
+          ["ihr", "seid", "habt"],
+          ["sie / Sie", "sind", "haben"]
         ]
       },
       examples: [
-        { tr: "1, 2, 3, 4, 5" },
-        { tr: "6, 7, 8, 9, 10" },
-        { tr: "11, 12, 13… 20" },
-        { tr: "21, 22, 28", note: "before uno and otto the ten loses its vowel" },
-        { tr: "30, 40, 50, 60" },
-        { tr: "70, 80, 90, 100" },
-        { tr: "I'm twenty-eight years old." }
+        { tr: "I am twenty years old." },
+        { tr: "You have a sister." },
+        { tr: "He is hungry.", note: "German says “he has hunger”" },
+        { tr: "We are friends." },
+        { tr: "Do you have a brother?", note: "to several friends; the verb goes first, no “do”" },
+        { tr: "The number is zero three zero, twelve, thirty-four, fifty-six.", note: "number read in groups" }
       ]
     },
     vocab: [
-      "to have",
-      "I'm hungry",
-      "I'm thirsty",
-      "I'm cold / hot",
-      "I'm sleepy",
-      "I'm afraid",
-      "I'm right",
-      "I need…",
-      "how old are you?",
-      "how much is it?",
-      "euro",
-      "number",
-      "phone number"
+      "the phone number",
+      "the year",
+      "old; for age: “... Jahre alt” = “... years old”",
+      "twenty",
+      "thirty",
+      "forty",
+      "fifty",
+      "sixty",
+      "seventy",
+      "eighty",
+      "ninety",
+      "one hundred",
+      "twenty-one"
     ],
     exercises: [
-      { why: "Four forms start with a silent h: ho, hai, ha, hanno." },
       {
-        q: "How do you say \"I'm hungry\"?",
-        opts: ["Sono fame", "Ho fame", "Sto fame"],
-        why: "Physical states go through avere: ho fame, ho sete, ho freddo."
-      },
-      { q: "What number is \"settantasei\"?", opts: ["66", "76", "86"], why: "settanta (70) + sei (6) = 76." },
-      { q: "Write it in digits: \"novantatré\"", why: "novanta (90) + tre (3)." },
-      {
-        q: "Fill in: \"Ho vent___ anni.\" (I'm twenty.)",
-        hint: "something disappears before \"anni\"",
-        why: "Vent'anni — the ten loses its final vowel before anni."
-      },
-      { q: "\"How old are you?\"", why: "Literally: \"how many years do you have\"." },
-      {
-        q: "Match the avere expression with its meaning.",
-        pairs: ["I'm thirsty", "I'm sleepy", "I'm afraid", "I'm right"]
+        q: "How do you say “I am twenty-five years old”?",
+        opts: ["Ich habe fünfundzwanzig Jahre.", "Ich bin fünfundzwanzig Jahre alt.", "Ich habe fünfundzwanzig alt."],
+        why: "Age is said with <b>sein</b>: <i>Ich bin fünfundzwanzig Jahre alt</i>. With <i>haben</i> the sentence is not correct."
       },
       {
-        q: "Complete the exchange at the register.",
-        tr: "— How much is it? — Thirty-two euros. — I only have twenty, sorry."
+        q: "Which number is “45”?",
+        opts: ["vierundfünfzig", "fünfundvierzig", "vierzigfünf"],
+        why: "<i>Fünfundvierzig</i>: first the unit (<i>fünf</i>), then <i>und</i>, then the ten (<i>vierzig</i>). <i>Vierundfünfzig</i> is 54."
       },
-      { tr: "I'm thirty-five and I live in Turin." },
-      { tr: "How much is a cappuccino?" }
+      {
+        tr: "The whole conjugation of haben.",
+        why: "<i>Haben</i> is irregular: <i>du hast</i> and <i>er hat</i> lose the <i>b</i>."
+      },
+      {
+        q: "Complete: “Du ___ eine Schwester.” (You have a sister.)",
+        hint: "second person singular of haben",
+        why: "<i>Du hast</i>: the <b>b</b> of the verb disappears in the <i>du</i> form."
+      },
+      {
+        q: "Complete: “Ihr ___ hier.” (You, several friends, are here.)",
+        hint: "second person plural of sein",
+        why: "<i>Ihr seid</i>: do not mix it up with <i>sind</i>, which is for <i>wir</i> and <i>sie</i>."
+      },
+      {
+        q: "Complete with bin and habe.",
+        tr: "I am Paolo and I am twenty-five years old. I have a brother.",
+        why: "Name and age are said with <i>sein</i> (<i>bin</i>), the brother with <i>haben</i> (<i>habe</i>), followed by <i>einen</i>."
+      },
+      {
+        q: "Match each number with its digits.",
+        pairs: ["30", "60", "45", "100"]
+      },
+      {
+        q: "Translate using du: “Do you have a sister?”",
+        why: "<i>Hast du eine Schwester?</i> In a yes/no question the verb goes in first position, and German has no <i>do</i>."
+      },
+      {
+        tr: "My phone number is zero one five one, two three four, five six.",
+        why: "Zero is <i>null</i>. Phone numbers are read digit by digit or in groups."
+      },
+      {
+        tr: "I am twenty-five years old and I have a sister.",
+        why: "<i>Fünfundzwanzig</i>: the <b>z</b> is always “ts”, as at the end of “cats”."
+      }
     ]
   },
   "lesson:a1-u02-l3": {
-    theme: "Work and people",
-    title: "Jobs and work",
+    theme: "Work",
+    title: "What do you do for a living?",
     objectives: [
-      "say what you do for a living",
-      "use fare il / essere un",
-      "form the feminine of job titles"
+      "ask and say your job with “Was sind Sie von Beruf?”",
+      "form the feminine of job titles with -in",
+      "use job titles without an article"
     ],
     theory: [
       {
-        h: "Two constructions, two shades",
-        p: "\"I'm an architect\" has two Italian versions. <strong>Faccio l'architetto</strong> (literally \"I do the architect\") is about the job you practice and is the commonest in conversation. <strong>Sono architetto</strong> stresses identity or qualification. After <em>fare</em> comes the definite article; after <em>essere</em>, usually none at all — so the English \"an\" disappears."
+        h: "A job is named without an article",
+        p: "To say what you do, German usually uses the bare noun, with no article: <em>Ich bin Lehrerin</em>, <em>Er ist Arzt</em>. English adds <em>a</em> (“I am a teacher”), so this is a habit to unlearn. The question is <strong>Was sind Sie von Beruf?</strong>, literally “what are you by profession?”, and to a friend <em>Was bist du von Beruf?</em> English more often asks “What do you do?”; in German <em>Was machen Sie beruflich?</em> is a common alternative."
       },
       {
-        h: "Feminine forms",
-        list: [
-          "-o → -a: <em>l'impiegato → l'impiegata</em>",
-          "-e → -essa: <em>il professore → la professoressa</em>, <em>lo studente → la studentessa</em>",
-          "-tore → -trice: <em>l'attore → l'attrice</em>, <em>il direttore → la direttrice</em>",
-          "no change: <em>il/la giornalista</em>, <em>il/la dentista</em>, <em>il/la cantante</em>"
-        ]
+        trap: "When an adjective comes with the job, the article usually returns: <em>Ich bin eine gute Lehrerin</em> (“I am a good teacher”). So “no article” holds for the bare job title, not for every sentence that contains one."
       },
       {
-        h: "Job titles in flux",
-        p: "Forms like <em>l'avvocata</em>, <em>la sindaca</em>, <em>la ministra</em> are now standard in the press and in official documents, though twenty years ago they caused arguments. In speech you'll still hear the older <em>l'avvocato</em> used of a woman. You'll meet both."
+        h: "The feminine in -in",
+        p: "In German the name of a job changes depending on whether a man or a woman does it: <em>der Lehrer / die Lehrerin</em>, <em>der Student / die Studentin</em>. Almost always you add <strong>-in</strong> to the masculine form, and the feminine article is always <strong>die</strong>. Some vowels take an umlaut: <em>der Arzt → die Ärztin</em>, <em>der Koch → die Köchin</em>."
       },
       {
-        contrast: "English \"I work as…\" translates literally as <em>lavoro come…</em>, and it's correct — but Italians far more often just say <em>faccio il/la…</em> Reaching for \"lavoro come\" every time is a small tell."
+        contrast: "English has a few feminine job words (<em>actress</em>, <em>waitress</em>), but most job titles are the same for everybody: <em>teacher</em>, <em>doctor</em>, <em>engineer</em>. The ending <em>-in</em> is new for you. In German it is the normal way to name a woman's job, and you hear the gender of the person in the noun: <em>Ich bin Lehrer</em> is said by a man, <em>Ich bin Lehrerin</em> by a woman."
+      },
+      {
+        h: "The plural of the -in forms",
+        p: "The plural of the feminine form takes <strong>-nen</strong>: <em>die Lehrerin → die Lehrerinnen</em>, with two <em>n</em>. The masculine plurals vary: <em>die Lehrer</em>, <em>die Ärzte</em>, <em>die Studenten</em>."
+      },
+      {
+        tip: "When you learn a job title, learn both forms right away: <em>der Arzt, die Ärztin</em>. You need them to talk about yourself and about other people. Note that <em>Student</em> and <em>Studentin</em> mean someone studying at a university or college; a school pupil is a <em>Schüler</em> or <em>Schülerin</em>, so “student” alone is a false friend."
       }
     ],
     grammar: {
-      title: "Fare (to do, to make) — present tense",
-      note: "Irregular, and at the same time one of the three most frequent Italian verbs.",
+      title: "Jobs: masculine and feminine",
+      note: "The feminine is usually formed with <b>-in</b>. With <em>Arzt</em> and <em>Koch</em> the vowel takes an umlaut.",
       table: {
-        head: ["person", "fare", "example"],
+        head: ["masculine", "feminine", "example"],
         rows: [
-          ["io", "faccio", "Faccio l'insegnante."],
-          ["tu", "fai", "Che lavoro fai?"],
-          ["lui / lei / Lei", "fa", "Fa il medico."],
-          ["noi", "facciamo", "Facciamo colazione."],
-          ["voi", "fate", "Che cosa fate?"],
-          ["loro", "fanno", "Fanno gli avvocati."]
+          ["der Lehrer", "die Lehrerin", "Ich bin Lehrerin."],
+          ["der Arzt", "die Ärztin", "Er ist Arzt."],
+          ["der Student", "die Studentin", "Wir sind Studenten."],
+          ["der Koch", "die Köchin", "Sie ist Köchin."],
+          ["der Ingenieur", "die Ingenieurin", "Ich bin Ingenieurin."],
+          ["der Verkäufer", "die Verkäuferin", "Sie ist Verkäuferin."]
         ]
       },
       examples: [
-        { tr: "What do you do?" },
-        { tr: "I'm a journalist." },
-        { tr: "I'm an engineer.", note: "after essere, usually no article" },
-        { tr: "I work at an agency." },
-        { tr: "I'm not working at the moment." },
-        { tr: "I'm still studying, I'm in my final year." }
+        { tr: "What do you do for a living?", note: "polite" },
+        { tr: "I am a teacher.", note: "a woman speaking; no article in German" },
+        { tr: "He is a doctor." },
+        { tr: "She is a cook." },
+        { tr: "I am a good teacher.", note: "with an adjective the article returns" },
+        { tr: "We are university students.", note: "a school pupil is a Schüler" }
       ]
     },
     vocab: [
-      "work, job",
-      "teacher",
-      "doctor",
-      "engineer",
-      "lawyer",
-      "journalist",
-      "office worker",
-      "cook",
-      "sales assistant",
-      "manual worker",
-      "self-employed person",
-      "I'm looking for work"
+      "the job, the profession",
+      "the teacher (man)",
+      "the teacher (woman)",
+      "the doctor (man)",
+      "the doctor (woman)",
+      "the university student (man)",
+      "the university student (woman)",
+      "the cook (man)",
+      "the cook (woman)",
+      "the engineer",
+      "the shop assistant (man)",
+      "the shop assistant (woman)"
     ],
     exercises: [
-      { why: "Mind the double c in faccio and facciamo." },
       {
-        q: "Which sentence means \"I'm a teacher\" and sounds most natural?",
-        opts: ["Faccio l'insegnante.", "Sono la insegnante.", "Ho insegnante."],
-        why: "Fare + definite article is the commonest way to name your job in speech."
+        q: "You are a woman and a doctor. Which sentence uses the feminine form?",
+        opts: ["Ich bin Arzt.", "Ich bin Ärztin.", "Ich bin Arztin."],
+        why: "The feminine of <i>Arzt</i> is <b>Ärztin</b>: you add <i>-in</i> and the <i>A</i> takes an umlaut."
       },
       {
-        q: "What's the feminine of \"il professore\"?",
-        opts: ["la professora", "la professoressa", "la professrice"],
-        why: "The -e → -essa pattern, like studente → studentessa."
+        q: "What is the plural of “die Lehrerin”?",
+        opts: ["die Lehrerins", "die Lehrerinnen", "die Lehrerine"],
+        why: "The plural of the <i>-in</i> forms takes <b>-nen</b>: <i>die Lehrerinnen</i>."
       },
       {
-        q: "Fill in: \"Mia sorella fa ___ dottoressa.\"",
-        why: "After fare comes the definite article, matched to the gender: la dottoressa."
+        tr: "The verb studieren, all persons.",
+        why: "Verbs in <i>-ieren</i> are conjugated regularly: <i>studier-</i> plus the endings."
       },
-      { q: "Choose the article.", items: ["cook (f.)", "engineer", "student (f.)", "worker"] },
-      { q: "\"What do you do?\" (informal)", why: "Che lavoro fai? — literally \"what work do you do\"." },
       {
-        q: "Match the masculine form with the feminine.",
-        pairs: ["l'attrice", "la commessa", "la studentessa", "la giornalista"]
+        q: "Complete: “Sie ist ___.” (She is a cook.)",
+        hint: "feminine form of Koch",
+        why: "<i>Köchin</i>: the feminine adds <i>-in</i> and the <i>o</i> takes an umlaut. Without the umlaut the word is wrong."
       },
-      { tr: "I work at a bank in Milan." },
-      { tr: "I'm an architect, I work with my brother." },
-      { tr: "What do you do? I'm a journalist." }
+      {
+        q: "Pick the definite article.",
+        items: [
+          "teacher (man)",
+          "teacher (woman)",
+          "job, profession",
+          "university student (woman)",
+          "doctor (woman)",
+          "cook (man)"
+        ]
+      },
+      {
+        q: "Match each job with its meaning.",
+        pairs: ["teacher (man)", "doctor (woman)", "cook (man)", "shop assistant (woman)"]
+      },
+      {
+        tr: "What do you do for a living?",
+        why: "A question with <i>was</i>: the verb <i>sind</i> is in second position, and with <i>Sie</i> you use the polite form."
+      },
+      {
+        q: "Translate, as a woman: “I am a cook.”",
+        why: "<i>Ich bin Köchin</i>: the job is named without an article, and the feminine form takes <i>-in</i>."
+      },
+      {
+        tr: "What do you do for a living? I am a teacher.",
+        why: "<i>Beruf</i> ends in a plain <b>f</b>, as in “off”, and the stress is on the second syllable: be-RUF."
+      },
+      {
+        tr: "What do you do for a living? I am an engineer.",
+        why: "<i>Ingenieurin</i> is the feminine of <i>Ingenieur</i>: you add <b>-in</b>. Note that there is no article, unlike English “an engineer”."
+      }
     ]
   },
   "lesson:a1-u02-l4": {
-    theme: "Core grammar",
-    title: "The first conjugation",
+    theme: "Daily life",
+    title: "Wohnen, arbeiten, kommen",
     objectives: [
-      "conjugate any regular -are verb",
-      "handle the spelling shifts in cercare, pagare, mangiare",
-      "build a negative and a question"
+      "conjugate regular verbs in the present",
+      "say where you live, where you work and where you come from",
+      "recognize countries and languages"
     ],
     theory: [
       {
-        h: "The biggest and most predictable group",
-        p: "About 70% of Italian verbs end in <strong>-are</strong>, and nearly all of them behave identically. Cut the infinitive ending and add six of your own: <em>-o, -i, -a, -iamo, -ate, -ano</em>. Learn one pattern and you can handle hundreds of words."
+        h: "The regular verb: stem plus ending",
+        p: "You drop <em>-en</em> from the infinitive and add the ending of the person: <strong>-e, -st, -t, -en, -t, -en</strong>. From <em>wohnen</em> you get <em>ich wohne, du wohnst, er wohnt, wir wohnen, ihr wohnt, sie/Sie wohnen</em>. There are six forms but only four different endings, because <em>er</em> and <em>ihr</em> share a form, and so do <em>wir</em> and <em>sie/Sie</em>."
       },
       {
-        h: "Stress where you can't see it",
-        p: "In the <em>loro</em> form the stress falls on the third syllable from the end: <b>par</b>-la-no, <b>la</b>-vo-ra-no. Not \"parla-NO\". The difference is audible and Italians catch it."
+        contrast: "English changes the verb only in the third person singular (<em>I work, you work, he works</em>). German changes it in nearly every person, but regularly. Two things to keep in mind. German has one present: <em>Ich wohne in Berlin</em> means both “I live” and “I am living”, and questions never take <em>do</em>: <em>Wo wohnst du?</em>, not “Where do you live?” word for word. And <em>er arbeitet</em> and <em>ihr arbeitet</em> are identical, as are <em>wir arbeiten</em> and <em>sie arbeiten</em>, which is why in a main clause the pronoun cannot be left out."
       },
       {
-        h: "Spelling that rescues the pronunciation",
-        list: [
-          "<b>-care / -gare</b> add an <b>h</b> before -i and -e: <em>cercare → cerchi, cerchiamo</em>; <em>pagare → paghi, paghiamo</em>",
-          "<b>-ciare / -giare</b> drop the <b>i</b> before -i: <em>mangiare → mangi</em> (not \"mangii\"), <em>cominciare → cominci</em>",
-          "unstressed <b>-iare</b> also drops one i: <em>studiare → studi, studiamo</em>"
-        ]
+        h: "Stems in -t and -d: an extra -e-",
+        p: "If the stem ends in <em>-t</em> or <em>-d</em> (<em>arbeit-</em>, <em>find-</em>), an <strong>-e-</strong> goes in front of <em>-st</em> and <em>-t</em> so that the ending can be pronounced: <em>du arbeitest, er arbeitet, ihr arbeitet</em>. English does something similar in “wanted” or “needed”, where an extra vowel separates the ending. The <em>ich</em> form (<em>ich arbeite</em>) and the <em>-en</em> forms stay regular."
       },
       {
-        h: "Negatives and questions need no rebuilding",
-        p: "The negative is one word, <strong>non</strong>, before the verb: <em>non parlo italiano</em>. A question needs no restructuring at all — intonation is enough: <em>Parli italiano?</em> There is no Italian equivalent of the English auxiliary \"do\", and inventing one (\"fai parlare?\") is a classic beginner reflex."
+        h: "Wo and woher",
+        p: "<strong>Wo</strong> asks where someone is: <em>Wo wohnst du?</em> → <em>Ich wohne in Berlin.</em> <strong>Woher</strong> asks where someone comes from: <em>Woher kommen Sie?</em> → <em>Ich komme aus Spanien.</em> English splits it in two (“where ... from”); German has it in one word. With cities and countries you normally use <em>in</em> for the place and <em>aus</em> for the origin. The verb stays in second position, and with <em>Sie</em> it is conjugated as for “they”. <em>Wohnen</em> is the everyday verb for where you live; <em>leben</em> is more general (to be alive, to live a life), so for an address start with <em>wohnen</em>."
+      },
+      {
+        trap: "Language names are nouns and are written with a <b>capital letter</b>: <em>Deutsch, Italienisch, Englisch</em>. English does that for languages too, but German does it for every noun. After <em>sprechen</em> they have no article: <em>Ich spreche Deutsch</em>. Careful: <em>sprechen</em> changes its vowel with <em>du</em> and <em>er</em> (<em>du sprichst</em>), and that kind of verb comes in unit 3: for now use only <em>ich spreche</em> and <em>wir sprechen</em>."
+      },
+      {
+        tip: "To say where you work: <em>Ich arbeite in Hamburg</em>. To add what you do: <em>Ich arbeite als Lehrerin</em> (“I work as a teacher”). After <em>als</em> there is usually no article, whereas English says “as a teacher”."
       }
     ],
     grammar: {
-      title: "Parlare (to speak) — the -ARE pattern",
+      title: "Regular present: wohnen, arbeiten, kommen",
+      note: "With <em>arbeiten</em> the stem ends in <b>-t</b>, so an <b>-e-</b> appears with <em>du</em>, <em>er/sie/es</em> and <em>ihr</em>.",
       table: {
-        head: ["person", "ending", "parlare", "lavorare"],
+        head: ["person", "wohnen", "arbeiten", "kommen"],
         rows: [
-          ["io", "-o", "parlo", "lavoro"],
-          ["tu", "-i", "parli", "lavori"],
-          ["lui / lei / Lei", "-a", "parla", "lavora"],
-          ["noi", "-iamo", "parliamo", "lavoriamo"],
-          ["voi", "-ate", "parlate", "lavorate"],
-          ["loro", "-ano", "parlano", "lavorano"]
+          ["ich", "wohne", "arbeite", "komme"],
+          ["du", "wohnst", "arbeitest", "kommst"],
+          ["er / sie / es", "wohnt", "arbeitet", "kommt"],
+          ["wir", "wohnen", "arbeiten", "kommen"],
+          ["ihr", "wohnt", "arbeitet", "kommt"],
+          ["sie / Sie", "wohnen", "arbeiten", "kommen"]
         ]
       },
       examples: [
-        { tr: "I speak a little Italian." },
-        { tr: "I don't speak well, but I understand." },
-        { tr: "Do you study at the university?", note: "a question by intonation alone" },
-        { tr: "We eat at eight." },
-        { tr: "Are you looking for work in Milan?", note: "cercare → cerchi, with an h" },
-        { tr: "They live near the center.", note: "stress: A-bi-ta-no" }
+        { tr: "Where do you live?", note: "no “do” in German" },
+        { tr: "I live in Berlin." },
+        { tr: "You work in Vienna." },
+        { tr: "He comes from Spain." },
+        { tr: "You work in Hamburg.", note: "to several friends" },
+        { tr: "Where are you from?", note: "polite" }
       ]
     },
     vocab: [
-      "to speak, to talk",
-      "to work",
-      "to study",
-      "to live (somewhere)",
-      "to eat",
-      "to buy",
-      "to look for",
-      "to pay",
-      "to listen",
-      "to watch, to look at",
-      "to wait",
-      "to start"
+      "Germany",
+      "Italy",
+      "Austria",
+      "France",
+      "Spain",
+      "Poland",
+      "German (language)",
+      "Italian (language)",
+      "English (language)",
+      "Spanish (language)",
+      "French (language)",
+      "Polish (language)"
     ],
     exercises: [
-      { why: "The pattern that covers most Italian verbs." },
       {
-        tr: "tu, noi — watch the spelling",
-        why: "Cerchi and cerchiamo take an <b>h</b> to keep the hard k sound."
+        q: "Which sentence is correct?",
+        opts: ["Er arbeit in Berlin.", "Er arbeitet in Berlin.", "Er arbeitest in Berlin."],
+        why: "The stem <i>arbeit-</i> ends in <i>-t</i>: with <i>er</i> you need the <b>-e-</b> before <i>-t</i>."
       },
       {
-        q: "Which form is right for \"you eat\"?",
-        opts: ["mangii", "mangi", "mangie"],
-        why: "Verbs in -giare drop the i before the -i ending: mangi."
+        q: "Which forms are correct with “ihr”?",
+        opts: ["ihr arbeitet", "ihr kommt", "ihr wohnen", "ihr arbeitest", "ihr wohnt"],
+        why: "With <i>ihr</i> the ending is <b>-t</b> (<i>-et</i> with stems in <i>-t</i>). <i>Wohnen</i> is for <i>wir</i> and <i>sie/Sie</i>; <i>-st</i> is for <i>du</i>."
       },
       {
-        q: "Fill in: \"Loro ___ a Bologna.\" (They live in Bologna.)",
-        why: "abitare, the loro form: -ano."
+        tr: "The verb arbeiten, all persons.",
+        why: "The stem <i>arbeit-</i> ends in <i>-t</i>: with <i>du</i>, <i>er</i> and <i>ihr</i> the <b>-e-</b> appears."
       },
       {
-        q: "Make it negative: \"Parlo italiano.\" → \"___ parlo italiano.\"",
-        why: "One word, non, before the verb — that's the whole negation."
+        tr: "The verb kommen, some persons.",
+        why: "<i>Kommen</i> is regular: <i>du kommst</i>, <i>er kommt</i>, <i>ihr kommt</i>. There is no vowel change."
       },
-      { q: "\"We're looking for an apartment in Rome.\"", why: "cercare → cerchiamo (with h), a + city." },
       {
-        q: "Which forms belong to \"studiare\"?",
-        opts: ["studio", "studii", "studi", "studiamo", "studiate"],
-        why: "\"Studii\" doesn't exist — the double i reduces to one."
+        q: "Complete: “Du ___ in Wien.” (You work in Vienna.)",
+        hint: "second person singular of arbeiten",
+        why: "<i>Du arbeitest</i>: after a stem in <i>-t</i> an <b>-e-</b> goes before <i>-st</i>."
       },
-      { tr: "I don't work on Saturdays.", why: "\"Il sabato\" with the article means \"on Saturdays\", regularly." },
-      { tr: "I've been studying Italian for three months." },
-      { tr: "I don't speak well, but I understand almost everything." }
+      {
+        q: "Complete: “Wo ___ ihr?” (Where do you live, several of you?)",
+        hint: "second person plural of wohnen",
+        why: "<i>Ihr wohnt</i>: the ending of <i>ihr</i> is <b>-t</b>."
+      },
+      {
+        tr: "I live in Italy and work here.",
+        why: "In the clause with <i>und</i> the second verb has the same subject, which can be left out: <i>und arbeite hier</i>. English does the same."
+      },
+      {
+        q: "Translate using du: “Where are you from?”",
+        why: "<i>Woher kommst du?</i> is the most common form; <i>Woher bist du?</i> is also correct."
+      },
+      {
+        tr: "I live in Vienna and I come from Italy.",
+        why: "<i>Wien</i> is pronounced “veen”: the <b>w</b> sounds like English <i>v</i> and <i>ie</i> is a long “ee”."
+      },
+      {
+        tr: "I come from Italy and live in Berlin.",
+        why: "With cities you use <i>in</i> for the place and <i>aus</i> for the origin."
+      }
     ]
   },
   "lesson:a1-u02-test": {
-    theme: "Test",
-    title: "Unit 2 test",
-    objectives: ["check avere, fare, chiamarsi, numbers and the first conjugation"],
-    theory: [{ p: "Ten questions. You pass at 70%." }],
-    exercises: [
-      { q: "\"___ chiamo Peter.\"" },
-      { q: "\"Quanti anni ___?\" (How old are you?)" },
-      { q: "What number is \"ottantaquattro\"?", opts: ["48", "84", "94"] },
-      { q: "\"I'm hungry\" in Italian:", opts: ["Sono fame", "Ho fame", "Sto fame"] },
-      {  },
+    theme: "Check",
+    title: "Unit 2 check",
+    objectives: ["check pronouns, sein and haben, jobs, the regular present, numbers"],
+    theory: [
       {
-        q: "Which form is right for \"you pay\"?",
-        opts: ["pagi", "paghi", "page"],
-        why: "-gare adds an h before -i."
+        p: "Ten questions on the whole unit. You pass with 70%. Do not look back at the lessons while you answer: if you do not remember something, it is better to go back and review."
+      }
+    ],
+    exercises: [
+      {
+        q: "How do you say “I am thirty years old”?",
+        opts: ["Ich habe dreißig Jahre.", "Ich bin dreißig Jahre alt.", "Ich sind dreißig Jahre alt."],
+        why: "<i>Ich bin dreißig Jahre alt</i>: age is said with <b>sein</b> and <i>alt</i>."
       },
-      { q: "Fill it in.", tr: "I'm American, I live in Verona and I'm a teacher." },
-      { q: "\"I don't speak Italian.\"" },
-      { tr: "I'm twenty-seven and I'm looking for work." },
-      { tr: "My name is Anna and I'm a journalist." }
+      {
+        q: "Which number is “73”?",
+        opts: ["siebenunddreißig", "dreiundsiebzig", "siebzigdrei"],
+        why: "<i>Dreiundsiebzig</i>: first the unit (<i>drei</i>), then the ten (<i>siebzig</i>). <i>Siebenunddreißig</i> is 37."
+      },
+      {
+        q: "Mrs. Weber is a doctor. Which sentence uses the feminine form of the job?",
+        opts: ["Frau Weber ist Ärztin.", "Frau Weber ist Arzt.", "Frau Weber ist ein Ärztin."],
+        why: "The feminine is <b>Ärztin</b>, and the job stands without an article."
+      },
+      {
+        q: "Complete: “Wir ___ aus Polen.” (We come from Poland.)",
+        why: "<i>Wir kommen</i>: with <i>wir</i> the ending is <b>-en</b>."
+      },
+      {
+        q: "Complete: “Ihr ___ Hunger.” (You, several friends, are hungry.)",
+        why: "<i>Ihr habt</i>: the form of <i>haben</i> with <i>ihr</i> is <b>habt</b>. German says “you have hunger”."
+      },
+      {
+        tr: "The verb arbeiten: du, er, ihr.",
+        why: "With stems in <i>-t</i> you need the <b>-e-</b>: <i>du arbeitest, er arbeitet, ihr arbeitet</i>."
+      },
+      {
+        q: "Complete with ist, wohnt and kommt.",
+        tr: "Anna is a teacher. She lives in Vienna and comes from Poland.",
+        why: "All three verbs are in the third person singular: <i>ist</i>, <i>wohnt</i>, <i>kommt</i>."
+      },
+      {
+        q: "Translate, addressing someone politely: “What do you do for a living?”",
+        why: "<i>Was sind Sie von Beruf?</i> is the formula you learned; <i>Was machen Sie beruflich?</i> is a correct alternative."
+      },
+      {
+        tr: "My name is Lena, I am thirty years old and I come from Vienna.",
+        why: "<i>Dreißig</i> is written with <b>ß</b>: it is a voiceless <i>s</i>, as in “hiss”, never a “z”."
+      },
+      {
+        tr: "My name is Paolo, I am an engineer and I live in Berlin.",
+        why: "The sentence has three verbs: <i>heiße</i>, <i>bin</i>, <i>wohne</i>. Note that <i>Ingenieur</i> has no article."
+      }
     ]
   },
   "unit:a1-u03": {
