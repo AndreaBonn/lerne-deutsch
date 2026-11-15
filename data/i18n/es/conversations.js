@@ -1,22 +1,8 @@
 /* ============================================================
-   Textos en la lengua del alumno (es) para data/core/conversations.js
-   Las claves apuntan a ids de la capa neutra; los arrays se fusionan por índice,
-   así que su longitud debe coincidir con la del core.
-   Lo comprueba scripts/parity.mjs.
-   German source in core, for reviewers ("(M)" other speaker, "(TY)" learner).
-   The neutral file stays the single source of truth.
-   (M) Guten Tag! Was möchten Sie trinken?
-   (TY) branch 1: Einen Kaffee, bitte. | branch 2: Einen Tee, bitte.
-   (M) Ein Kaffee, gern. / Ein Tee, gern. (both branches meet at the next line)
-   (M) Und wie heißen Sie, bitte?
-   (TY) Ich heiße Anna.
-   (M) Danke. Möchten Sie auch ein Stück Kuchen?
-   (TY) branch 1: Ja, ein Stück Apfelkuchen, bitte. | branch 2: Nein, danke.
-   (M) after branch 1: Gern. Der Kuchen ist ganz frisch. Das macht sechs Euro.
-   (M) after branch 2: Gut. Das macht drei Euro.
-   (TY) Hier, bitte.
-   (M) Danke schön! Auf Wiedersehen.
-   (TY) Auf Wiedersehen!
+   Learner-language text (es) for data/core/conversations.js
+   Keys point at ids in the neutral layer; arrays merge by index,
+   so their length has to match core.
+   Checked by scripts/parity.mjs.
    ============================================================ */
 LINGUAI.addStrings("es", {
   "conv:cafe-bestellen": {

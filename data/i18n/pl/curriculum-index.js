@@ -24,10 +24,10 @@ LINGUAI.addStrings("pl", {
   },
   "level:C1": {
     name: "Precyzja",
-    desc: "Rozumiesz i parafrazujesz teksty urzędowe, rozpoznajesz rejestr i zagęszczasz informacje w tekstach formalnych. Styl nominalny, Funktionsverbgefüge, spójniki, modalne użycia subiektywne, określenia imiesłowowe."
+    desc: "Rozumiesz i parafrazujesz teksty urzędowe, rozpoznajesz rejestr i zagęszczasz informacje w tekstach formalnych. Styl nominalny, Funktionsverbgefüge, spójniki, subiektywne użycie czasowników modalnych (przypuszczenia i cudze twierdzenia), określenia imiesłowowe."
   },
   "level:C2": {
     name: "Mistrzostwo",
-    desc: "Czytasz i piszesz gęstą prozę eseistyczną oraz wychwytujesz ironię, niedopowiedzenie i odmiany austriacką i szwajcarską. Rozbudowane określenie imiesłowowe, podwójne liczby mnogie, słowotwórstwo, zdania względne z dessen i wo(r)-, rekcja czasowników i przymiotników."
+    desc: "Czytasz i piszesz gęstą prozę eseistyczną oraz wychwytujesz ironię, niedopowiedzenie i odmiany austriacką i szwajcarską. Rozbudowane określenie imiesłowowe, rzeczowniki o dwóch formach liczby mnogiej różniących się znaczeniem, słowotwórstwo, zdania względne z dessen i wo(r)-, rekcja czasowników i przymiotników."
   }
 });

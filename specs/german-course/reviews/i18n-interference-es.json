@@ -1,0 +1,7 @@
+{
+  "bundleHash": "e6d02946d88dbb31e703a0cc8682c3ec86dd8048f4bc4a8246293628665c0fe0",
+  "findings": [],
+  "lang": "es",
+  "unit": "i18n-interference",
+  "verdict": "pass"
+}
