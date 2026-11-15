@@ -151,7 +151,7 @@
   /* ═══════════════ GENDER (article / gender) ═══════════════ */
   function buildGender(ex, idx, seed) {
     var items = Core.seededShuffle(ex.items.slice(), seed + "g" + idx);
-    var opts = ex.opts || ["il", "lo", "la", "l'", "i", "gli", "le"];
+    var opts = ex.opts || ["der", "die", "das"];
     var html = '<div class="exq" data-idx="' + idx + '">' + head(idx, ex) +
       '<p class="exq__prompt">' + esc(ex.q || t("ex.gender.prompt")) + "</p>" +
       '<div class="stack">' + items.map(function (it, i) {

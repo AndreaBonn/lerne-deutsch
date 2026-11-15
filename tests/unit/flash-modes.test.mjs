@@ -20,10 +20,10 @@ function R() {
 
 describe("the article of a word", () => {
   const przypadki = [
-    ["il bar", "il"], ["lo sport", "lo"], ["la città", "la"], ["l'amico", "l'"], ["i libri", "i"],
-    ["gli amici", "gli"], ["le case", "le"], ["un caffè", "un"], ["uno zaino", "uno"], ["una casa", "una"],
-    ["un'amica", "un'"], ["Il Bar", "il"], ["buongiorno", ""], ["per favore", ""], ["lavoro", ""], ["idea", ""],
-    ["un po' stanco/a", ""], ["un po'", ""]
+    ["der Hund", "der"], ["die Katze", "die"], ["das Haus", "das"],
+    ["die Hunde", "die"], ["Der Hund", "der"], ["  DIE  Katzen", "die"],
+    ["das\tHaus", "das"], ["derjenige", ""], ["dieser", ""], ["dass", ""],
+    ["hallo", ""], ["il cane", ""], ["", ""], [null, ""]
   ];
   for (const [slowo, rodzajnik] of przypadki) {
     test(`"${slowo}" -> "${rodzajnik}"`, () => {
@@ -34,37 +34,37 @@ describe("the article of a word", () => {
 
 describe("choosing distractors", () => {
   const w = (it, tr) => ({ it, tr });
-  const lekcja = [w("il bar", "bar, kawiarnia"), w("il caffè", "kawa"), w("la casa", "dom"), w("il cornetto", "rogalik"), w("grazie", "dziękuję")];
-  const jednostka = [w("il gatto", "kot"), w("il cane", "pies"), w("il bar", "bar (lokal)")];
+  const lekcja = [w("der Laden", "bar, kawiarnia"), w("der Kaffee", "kawa"), w("das Haus", "dom"), w("der Kuchen", "rogalik"), w("grazie", "dziękuję")];
+  const jednostka = [w("der Kater", "kot"), w("der Hund", "pies"), w("der Laden", "bar (lokal)")];
 
   test("every distractor shares the article, none is the answer", () => {
-    const out = [...R().distractors(w("il bar", "bar, kawiarnia"), [lekcja, jednostka], 3, "s")];
+    const out = [...R().distractors(w("der Laden", "bar, kawiarnia"), [lekcja, jednostka], 3, "s")];
     assert.equal(out.length, 3);
     for (const d of out) {
-      assert.ok(d.startsWith("il "), d);
-      assert.notEqual(d, "il bar");
+      assert.ok(d.startsWith("der "), d);
+      assert.notEqual(d, "der Laden");
     }
   });
 
   test("the answer glossed differently in another lesson is still the answer", () => {
-    const out = [...R().distractors(w("il bar", "bar, kawiarnia"), [[w("Il  bar", "lokal"), w("il gatto", "kot")]], 3, "s")];
-    assert.deepEqual(out, ["il gatto"]);
+    const out = [...R().distractors(w("der Laden", "bar, kawiarnia"), [[w("Der  Laden", "lokal"), w("der Kater", "kot")]], 3, "s")];
+    assert.deepEqual(out, ["der Kater"]);
   });
 
   test("the same lesson comes first; the unit only fills what is missing", () => {
-    const out = [...R().distractors(w("il bar", "bar, kawiarnia"), [lekcja, jednostka], 2, "s")];
-    assert.deepEqual(out.sort(), ["il caffè", "il cornetto"]);
+    const out = [...R().distractors(w("der Laden", "bar, kawiarnia"), [lekcja, jednostka], 2, "s")];
+    assert.deepEqual(out.sort(), ["der Kaffee", "der Kuchen"]);
   });
 
   test("a word with the same meaning is not a distractor, parentheses aside", () => {
-    const answer = w("il locale", "bar");
-    const out = [...R().distractors(answer, [[w("il bar", "bar (lokal)"), w("il gatto", "kot")]], 3, "s")];
-    assert.deepEqual(out, ["il gatto"]);
+    const answer = w("der Ort", "bar");
+    const out = [...R().distractors(answer, [[w("der Laden", "bar (lokal)"), w("der Kater", "kot")]], 3, "s")];
+    assert.deepEqual(out, ["der Kater"]);
   });
 
   test("no duplicates across tiers, a short list when the group is small", () => {
-    const out = [...R().distractors(w("il cane", "pies"), [jednostka, jednostka], 3, "s")];
-    assert.deepEqual(out.sort(), ["il bar", "il gatto"]);
+    const out = [...R().distractors(w("der Hund", "pies"), [jednostka, jednostka], 3, "s")];
+    assert.deepEqual(out.sort(), ["der Kater", "der Laden"]);
   });
 
   test("words without an article are grouped together", () => {
@@ -73,11 +73,11 @@ describe("choosing distractors", () => {
   });
 
   test("the same seed gives the same options, another seed may not", () => {
-    const duza = Array.from({ length: 12 }, (_, i) => w("il x" + i, "t" + i));
-    const a = [...R().distractors(w("il bar", "bar"), [duza], 3, "k#1")];
-    const b = [...R().distractors(w("il bar", "bar"), [duza], 3, "k#1")];
+    const duza = Array.from({ length: 12 }, (_, i) => w("der x" + i, "t" + i));
+    const a = [...R().distractors(w("der Laden", "bar"), [duza], 3, "k#1")];
+    const b = [...R().distractors(w("der Laden", "bar"), [duza], 3, "k#1")];
     assert.deepEqual(a, b);
-    const inne = [2, 3, 4, 5].map(n => [...R().distractors(w("il bar", "bar"), [duza], 3, "k#" + n)].join());
+    const inne = [2, 3, 4, 5].map(n => [...R().distractors(w("der Laden", "bar"), [duza], 3, "k#" + n)].join());
     assert.ok(inne.some(x => x !== a.join()), "the seed has an effect");
   });
 });
@@ -87,10 +87,10 @@ describe("the tiers distractors come from", () => {
     const l = (id, words) => ({ id, vocab: words.map(it => ({ it, tr: it + "-tr" })) });
     return [
       { code: "A1", units: [
-        { id: "a1-u01", lessons: [l("a1-u01-l1", ["il bar"]), l("a1-u01-l2", ["il caffè"])] },
-        { id: "a1-u02", lessons: [l("a1-u02-l1", ["il gatto"])] }
+        { id: "a1-u01", lessons: [l("a1-u01-l1", ["der Laden"]), l("a1-u01-l2", ["der Kaffee"])] },
+        { id: "a1-u02", lessons: [l("a1-u02-l1", ["der Kater"])] }
       ] },
-      { code: "A2", units: [{ id: "a2-u01", lessons: [l("a2-u01-l1", ["il treno"])] }] }
+      { code: "A2", units: [{ id: "a2-u01", lessons: [l("a2-u01-l1", ["der Zug"])] }] }
     ];
   }
   const its = tier => [...tier.map(x => x.it)];
@@ -98,10 +98,10 @@ describe("the tiers distractors come from", () => {
   test("a card from a lesson: the lesson, its unit, its level, everything", () => {
     const t = R().tiersFor("a1-u01-l2", levels());
     assert.equal(t.length, 4);
-    assert.deepEqual(its(t[0]), ["il caffè"]);
-    assert.deepEqual(its(t[1]), ["il bar", "il caffè"]);
-    assert.deepEqual(its(t[2]), ["il bar", "il caffè", "il gatto"]);
-    assert.deepEqual(its(t[3]), ["il bar", "il caffè", "il gatto", "il treno"]);
+    assert.deepEqual(its(t[0]), ["der Kaffee"]);
+    assert.deepEqual(its(t[1]), ["der Laden", "der Kaffee"]);
+    assert.deepEqual(its(t[2]), ["der Laden", "der Kaffee", "der Kater"]);
+    assert.deepEqual(its(t[3]), ["der Laden", "der Kaffee", "der Kater", "der Zug"]);
   });
 
   test("a card from somewhere else (import, coverage) draws from everything loaded", () => {
@@ -224,10 +224,22 @@ describe("listening modes", () => {
 test("tiersFor skips a registered level without units", () => {
   const modes = R();
   const levels = [{ code: "A1" }, { code: "A2", units: [{ id: "a2-u01", lessons: [
-    { id: "a2-u01-l1", vocab: [{ it: "il treno", tr: "train" }] }
+    { id: "a2-u01-l1", vocab: [{ it: "der Zug", tr: "train" }] }
   ] }] }];
   const tiers = modes.tiersFor("a2-u01-l1", levels);
   assert.deepEqual(Array.from(tiers, tier => Array.from(tier, word => word.it)),
-    [["il treno"], ["il treno"], ["il treno"], ["il treno"]]);
+    [["der Zug"], ["der Zug"], ["der Zug"], ["der Zug"]]);
   assert.deepEqual(Array.from(modes.tiersFor("anki", [{ code: "A1" }]), tier => Array.from(tier)), [[]]);
+});
+
+test("plural metadata resolves saved and reserve cards without changing their text", () => {
+  const levels = [{ units: [{ lessons: [{ id: "a1-u01-l1", vocab: [
+    { it: "der Hund", plural: "Hunde" }, { it: "das Wasser", plural: "-" }
+  ] }] }] }];
+  const card = { it: "der Hund", src: "a1-u01-l1" };
+  assert.equal(R().pluralOf(card, levels), "Hunde");
+  assert.equal(R().pluralOf({ it: "der Hund", plural: "Hunde", fresh: true }, []), "Hunde");
+  assert.equal(R().pluralOf({ it: "das Wasser" }, levels), "-");
+  assert.equal(R().pluralOf({ it: "lernen" }, levels), "");
+  assert.equal(card.it, "der Hund");
 });

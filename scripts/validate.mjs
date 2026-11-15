@@ -5,11 +5,35 @@
    the mcq answer agrees with the number of options, and the statistics.
    ============================================================ */
 import { readFileSync, readdirSync } from "node:fs";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, join } from "node:path";
 import vm from "node:vm";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
+
+const DEFAULT_ARTICLES = ["der", "die", "das"];
+const GERMAN_ARTICLES = [...DEFAULT_ARTICLES, "den", "dem", "des", "ein", "eine", "einen", "einem", "einer", "eines"];
+
+export function validateGender(ex) {
+  const issues = [];
+  const opts = ex.opts === undefined ? DEFAULT_ARTICLES : ex.opts;
+  if (!Array.isArray(opts) || !opts.length || opts.some(o => !GERMAN_ARTICLES.includes(o))) {
+    issues.push("gender options must be German articles");
+  }
+  if (!Array.isArray(ex.items) || !ex.items.length) return issues.concat("gender requires items");
+  ex.items.forEach(item => {
+    if (!Array.isArray(opts) || !opts.includes(item.a)) issues.push(`gender answer outside options: ${item.it}`);
+  });
+  return issues;
+}
+
+export function validatePlural(entry) {
+  if (!/^\s*(der|die|das)\s+/i.test(entry.it || "")) return [];
+  return typeof entry.plural === "string" && entry.plural.trim()
+    ? [] : ["German nouns require vocab[].plural (use '-' when there is no plural)"];
+}
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
 
 const EX_TYPES = new Set([
   "mcq", "multi", "fill", "cloze", "trans", "order", "match",
@@ -157,8 +181,7 @@ function checkExercise(ex, where) {
     if (!ex.verb) errors.push(`${where}: conj bez czasownika`);
   }
   if (ex.t === "gender") {
-    if (!Array.isArray(ex.items) || !ex.items.length) errors.push(`${where}: gender bez items`);
-    else ex.items.forEach(it => { if (!it.a) errors.push(`${where}: gender — brak poprawnej formy dla „${it.it}”`); });
+    validateGender(ex).forEach(issue => errors.push(`${where}: ${issue}`));
   }
   if (ex.t === "listen" && !ex.it) errors.push(`${where}: listen bez tekstu włoskiego`);
   if (ex.t === "speak" && !ex.it) errors.push(`${where}: speak bez tekstu włoskiego`);
@@ -193,6 +216,7 @@ function checkLesson(l, lv, unit) {
   (l.vocab || []).forEach(v => {
     nVocab++;
     if (!v.it || !v.tr) errors.push(`${l.id}: pozycja słownika bez it/tr`);
+    validatePlural(v).forEach(issue => errors.push(`${l.id}: ${issue}`));
   });
   const ex = l.exercises || [];
   if (!ex.length) warnings.push(`${l.id}: brak ćwiczeń`);
@@ -464,3 +488,4 @@ if (errors.length) {
   process.exit(1);
 }
 console.log("\nOK — brak błędów.\n");
+}

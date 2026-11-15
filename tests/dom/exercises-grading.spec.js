@@ -34,7 +34,7 @@ const FIXTURES = {
   order: { t: "order", tokens: ["io", "mangio"], a: "io mangio" },
   match: { t: "match", pairs: [{ it: "pane", tr: "chleb" }, { it: "vino", tr: "wino" }] },
   conj: { t: "conj", verb: "parlare", tense: "pres", persons: [0, 1] },
-  gender: { t: "gender", items: [{ it: "pane", a: "il" }, { it: "vino", a: "il" }], opts: ["il", "la"] },
+  gender: { t: "gender", items: [{ it: "Hund", a: "der" }, { it: "Kater", a: "der" }] },
   listen: { t: "listen", it: "Buongiorno a tutti", alt: [] },
   speak: { t: "speak", it: "Buongiorno a tutti", tr: "good morning" },
   dialogue: { t: "dialogue", lines: [{ sp: "A", it: "Ciao" }, { sp: "TY", choices: ["Ciao", "No"], a: 0 }] },
@@ -56,7 +56,6 @@ async function odpowiedz(page, type, fixture, poprawnie) {
     window.Audio2.speak = () => {};
     window.Audio2.speakSequence = () => ({ cancel() {} });
     window.Core.state.settings.autoplay = false;
-    window.Core.state.settings.strictAccents = false;
     /* Without a microphone "speak" takes the written branch — the only one
        that can be graded without a real voice. */
     window.Audio2.sttSupported = false;
@@ -140,7 +139,7 @@ async function odpowiedz(page, type, fixture, poprawnie) {
       }
 
       case "gender":
-        qq(".js-sel").forEach(sel => { sel.value = dobrze ? "il" : "la"; });
+        qq(".js-sel").forEach(sel => { sel.value = dobrze ? "der" : "die"; });
         check();
         break;
 
@@ -197,7 +196,6 @@ test("a typo gets a second chance, but only one", async ({ page }) => {
 
   const wynik = await page.evaluate(async () => {
     const sleep = ms => new Promise(r => setTimeout(r, ms));
-    window.Core.state.settings.strictAccents = false;
     const host = document.createElement("div");
     document.getElementById("main").appendChild(host);
     const built = window.Ex.build({ t: "fill", q: "Completa", a: "sono andato" }, 0, "near");
@@ -222,4 +220,17 @@ test("a typo gets a second chance, but only one", async ({ page }) => {
   expect(wynik.poPierwszej.tekst.length, "the student should see that they were close").toBeGreaterThan(0);
   expect(wynik.wywolan, "the second attempt has to close the matter").toBe(1);
   expect(wynik.ok, "a typo is still a wrong answer").toBe(false);
+});
+
+test('settings retain German spelling rules without a strict accents switch', async ({ page }) => {
+  await page.goto('/index.html#/impostazioni');
+  await expect(page.locator('.js-autoplay')).toBeVisible();
+  await expect(page.locator('.js-strict')).toHaveCount(0);
+  const result = await page.evaluate(() => {
+    const settings = window.Core.state.settings;
+    const legacy = settings.strictAccents;
+    return { legacy, correct: window.Core.checkOpen('schön', ['schön']).ok,
+      incorrect: window.Core.checkOpen('schon', ['schön']).ok };
+  });
+  expect(result).toEqual({ legacy: false, correct: true, incorrect: false });
 });

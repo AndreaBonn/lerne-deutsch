@@ -134,7 +134,8 @@
           var saved = !!Core.state.srs[key];
           return '<div class="vocab-card">' +
             '<button type="button" class="say-btn" data-say="' + esc(v.it) + '" aria-label="' + esc(t("a11y.listenTo", { what: v.it })) + '">🔊</button>' +
-            '<span class="vocab-card__txt"><span class="vocab-card__it">' + esc(v.it) + "</span>" +
+            '<span class="vocab-card__txt"><span class="vocab-card__it" lang="de">' + esc(v.it) + "</span>" +
+            (v.plural ? '<span class="vocab-card__plural" lang="de">Plural: ' + esc(v.plural) + "</span>" : "") +
             '<span class="vocab-card__pl">' + esc(v.tr) + "</span>" +
             (v.ex ? '<span class="vocab-card__ex">' + esc(v.ex) + "</span>" : "") + "</span>" +
             '<button type="button" class="vocab-card__star js-star" data-it="' + esc(v.it) + '" data-tr="' + esc(v.tr) + '" ' +

@@ -18,6 +18,11 @@
   var esc = Core.esc;
   var t = function (k, v) { return I18n.t(k, v); };
 
+  function pluralMarkup(c) {
+    var plural = global.FlashModes.pluralOf(c, Core.registry.levels);
+    return plural ? '<span class="flash__plural" lang="de">Plural: ' + esc(plural) + "</span>" : "";
+  }
+
   /**
    * The write card: the student's language shown, Italian typed, then a
    * self-grade. The check only colours the feedback; the grade the student
@@ -99,7 +104,7 @@
     var c = st.c;
     st.ok = Core.checkOpen(st.input.value, [c.it], false).ok;
     st.fb.className = "fb is-on " + (st.ok ? "fb--ok" : "fb--ko");
-    st.fb.innerHTML = esc(t(st.ok ? "srs.right" : "srs.wrong")) + " <b>" + esc(c.it) + "</b>" +
+    st.fb.innerHTML = esc(t(st.ok ? "srs.right" : "srs.wrong")) + ' <b lang="de">' + esc(c.it) + "</b> " + pluralMarkup(c) +
       ' <button type="button" class="say-btn" data-say="' + esc(c.it) + '" aria-label="' + esc(t("a11y.listen")) + '">🔊</button>';
     Ex.wireSpeakers(st.fb);
     Audio2.speak(c.it);
@@ -138,9 +143,10 @@
   function flip(host, c, options, onGrade) {
     host.innerHTML = '<div class="exq">' +
       (c.fresh ? '<p class="exq__num"><span class="chip chip--gold">' + esc(t("flash.newWord")) + "</span></p>" : "") +
-      '<p class="exq__prompt" style="font-size:1.3rem" lang="it">' + esc(c.it) +
+      '<p class="exq__prompt" style="font-size:1.3rem" lang="de">' + esc(c.it) +
       ' <button type="button" class="say-btn" data-say="' + esc(c.it) + '" aria-label="' +
       esc(t("a11y.listenTo", { what: c.it })) + '">🔊</button></p>' +
+      pluralMarkup(c) +
       '<p class="exq__sub">' + esc(t("flash.meaning")) + "</p>" +
       '<button class="btn btn--primary js-show">' + esc(t("flash.show")) + "</button>" +
       '<div class="fb" role="status"></div>' + gradeButtons() + "</div>";
@@ -208,7 +214,7 @@
       '<div class="opts" role="radiogroup" aria-label="' + esc(t("ex.answersGroup")) + '">' +
       options.map(function (o, i) {
         return '<label class="opt" data-i="' + i + '"><input type="radio" name="' + esc(name) + '" value="' + i + '">' +
-          '<span lang="it">' + esc(o) + "</span></label>";
+          '<span lang="de">' + esc(o) + "</span></label>";
       }).join("") + "</div>" +
       /* The feedback before the button: the correction is what the student
          reads next, and below "next" it was read after moving on. */
@@ -229,7 +235,7 @@
       l.querySelector("input").disabled = true;
     });
     st.fb.className = "fb is-on " + (st.ok ? "fb--ok" : "fb--ko");
-    st.fb.innerHTML = esc(t(st.ok ? "srs.right" : "srs.wrong")) + ' <b lang="it">' + esc(c.it) + "</b>";
+    st.fb.innerHTML = esc(t(st.ok ? "srs.right" : "srs.wrong")) + ' <b lang="de">' + esc(c.it) + "</b> " + pluralMarkup(c);
     Audio2.speak(c.it);
     st.check.hidden = true;
     st.next.hidden = false;

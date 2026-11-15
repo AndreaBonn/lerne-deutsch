@@ -28,20 +28,15 @@
   /* ---------------- Distractors ----------------
 
      A choice between four words teaches something only when the wrong three
-     cannot be ruled out without knowing the answer. "un gatto / una casa"
-     is answered by the article alone, and "un gatto / un consiglio" by
+     cannot be ruled out without knowing the answer. "der Hund / das Haus"
+     is answered by the article alone, and "der Hund / der Rat" by
      meaning alone, so distractors share the article and come from the same
      lesson first: a lesson's words share a topic. */
 
-  var ARTICLE = /^(l'|un'|il |lo |la |i |gli |le |un |uno |una )/;
+  var ARTICLE = /^(der |die |das )/;
 
-  /* "un po'" (a little) is an adverb, not "un" before a noun: grouped with
-     "un caffè" it would sit among the drinks as a free elimination. */
-  var NOT_AN_ARTICLE = /^un po'/;
-
-  /** The article a word starts with ("il", "l'", "un'"...), or "" for none. */
+  /** The initial German article (including plural "die"), or "" for none. */
   function articleOf(it) {
-    if (NOT_AN_ARTICLE.test(String(it || "").toLowerCase().trim())) return "";
     var m = ARTICLE.exec(String(it || "").toLowerCase().replace(/\s+/g, " ").replace(/^ /, ""));
     return m ? m[1].replace(/ $/, "") : "";
   }
@@ -111,6 +106,16 @@
     ];
   }
 
+  function pluralOf(card, levels) {
+    if (card.plural) return card.plural;
+    var lessons = allLessons(levels);
+    var own = lessons.filter(function (l) { return l.id === card.src; });
+    var words = [];
+    own.concat(lessons).forEach(function (l) { words = words.concat(l.vocab || []); });
+    var word = words.filter(function (v) { return v.it === card.it && v.plural; })[0];
+    return word ? word.plural : "";
+  }
+
   /* ---------------- Modes ----------------
 
      One card, several ways of asking. Recognising a word comes before
@@ -174,6 +179,7 @@
   global.FlashModes = {
     STABLE_DAYS: STABLE_DAYS,
     articleOf: articleOf,
+    pluralOf: pluralOf,
     distractors: distractors,
     tiersFor: tiersFor,
     pickMode: pickMode,

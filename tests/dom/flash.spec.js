@@ -479,6 +479,12 @@ for (const szer of [320, 375, 1280]) {
     await expect(page.locator(".flash__card .js-in")).toBeFocused();
     await expect(page.locator(".keybar")).toBeVisible();
 
+    const targets = await page.locator(".keybar__k").evaluateAll(keys => keys.map(key => {
+      const r = key.getBoundingClientRect();
+      return { width: r.width, height: r.height };
+    }));
+    expect(targets).toHaveLength(8);
+    targets.forEach(r => { expect(r.width).toBeGreaterThanOrEqual(44); expect(r.height).toBeGreaterThanOrEqual(44); });
     const zakryte = await page.evaluate(() => {
       const a = document.querySelector(".keybar").getBoundingClientRect();
       return [...document.querySelectorAll(".flash__card .exq__prompt, .flash__card .exq__sub")]
@@ -537,3 +543,56 @@ test("the new-word chip marks only a word never seen", async ({ page }) => {
   await page.locator('.flash__card .js-grade button[data-q="4"]').click();
   await expect(page.locator(".flash__card .chip"), "the next card, from the reserve, is new").toBeVisible();
 });
+
+async function renderGermanCard(page, mode) {
+  await page.evaluate(mode => {
+    const lesson = window.Core.registry.levels[0].units[0].lessons[0];
+    window.Audio2.speak = text => { window.__spoken = text; };
+    const host = document.createElement("section");
+    host.id = "plural-card";
+    document.getElementById("main").replaceChildren(host);
+    const key = window.Core.addCard("der Hund", "dog", lesson.id);
+    window.__pluralKey = key;
+    window.FlashCards[mode](host, { ...window.Core.state.srs[key], key }, ["der Hund", "der Kater"], () => {});
+  }, mode);
+}
+
+async function checkGermanCard(page, mode) {
+  await renderGermanCard(page, mode);
+  const card = page.locator("#plural-card");
+  if (mode !== "flip") {
+    await expect(card.locator(".flash__plural")).toHaveCount(0);
+    if (mode.includes("choice")) {
+      await card.locator(".opt").first().click();
+      await card.locator(".js-check").click();
+    } else {
+      await card.locator(".js-in").fill("der Hund");
+      await card.locator(".js-show").click();
+    }
+  }
+  await expect(card.locator('.flash__plural[lang="de"]')).toHaveText("Plural: Hunde");
+  if (mode === "flip") await card.locator(".js-show").click();
+  expect(await page.evaluate(() => window.__spoken)).toBe("der Hund");
+  expect(await page.evaluate(() => window.Core.state.srs[window.__pluralKey].it)).toBe("der Hund");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+}
+
+for (const width of [375, 1280]) {
+  test(`German plurals render separately in the lexicon and all flash modes at ${width}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto("/index.html#/percorso");
+    await page.waitForFunction(() => window.FlashCards && window.Views);
+    await page.evaluate(() => new Promise(resolve => window.Core.loadLevelData("A1", resolve)));
+    await page.evaluate(() => {
+      const lesson = window.Core.registry.levels[0].units[0].lessons[0];
+      lesson.vocab = [{ it: "der Hund", tr: "dog", plural: "Hunde" }, { it: "das Wasser", tr: "water", plural: "-" }];
+      window.Views.lezione({ id: lesson.id });
+    });
+    await expect(page.locator('.vocab-card__plural[lang="de"]').first()).toHaveText("Plural: Hunde");
+    await expect(page.locator('.vocab-card__plural[lang="de"]').nth(1)).toHaveText("Plural: -");
+    expect(await page.locator(".vocab-card .js-star").first().getAttribute("data-it")).toBe("der Hund");
+    for (const mode of ["flip", "write", "choice", "listen-write", "listen-choice"]) {
+      await checkGermanCard(page, mode);
+    }
+  });
+}
