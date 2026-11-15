@@ -212,3 +212,16 @@ test('frequency counts retain nouns instead of excluding capitalised forms', () 
   assert.deepEqual(countForms('').words, []);
   assert.deepEqual(countForms('1\tdeu\tDer Hund.').words, []);
 });
+
+describe("frequency: the student's set without the lemma resolver", () => {
+  /* Lemma is optional here: when it is not loaded the set falls back to the
+     raw deck keys rather than coming out empty. */
+  test("raw deck keys are used as they are, and nothing else", () => {
+    const box = loadEngine({ files: ["assets/js/frequency.js"] });
+    box.sandbox.Core = { state: { srs: { haus: { it: "das Haus" }, buch: {} } } };
+    const uczen = box.sandbox.Frequency.slownikUcznia();
+    assert.deepEqual(Object.keys(uczen).sort(), ["buch", "haus"]);
+    assert.equal(uczen.haus, true);
+    assert.equal(uczen["das haus"], undefined, "no resolver, so no splitting of the card text");
+  });
+});

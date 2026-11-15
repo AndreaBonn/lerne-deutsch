@@ -158,3 +158,16 @@ describe("verbs: a similar beginning is not a prefix", () => {
     assert.equal(engine().participle("gewinnen"), "gewonnen");
   });
 });
+
+describe("verbs: an inseparable prefix on a base that has its own present table", () => {
+  /* tun and mögen carry an explicit praes row in IRR. ver- is put in front of
+     every form of it, and the participle drops ge-. */
+  test("vertun takes the table of tun with ver- in front", () => {
+    assert.deepEqual(rows("vertun", "praes"), ["vertue", "vertust", "vertut", "vertun", "vertut", "vertun"]);
+    assert.equal(engine().participle("vertun"), "vertan");
+  });
+  test("vermögen keeps the modal vowel change of mögen (vermag, not vermöge)", () => {
+    assert.deepEqual(rows("vermögen", "praes"),
+      ["vermag", "vermagst", "vermag", "vermögen", "vermögt", "vermögen"]);
+  });
+});

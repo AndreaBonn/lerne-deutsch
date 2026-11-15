@@ -92,3 +92,71 @@ describe("the speech-recognition consent gate", () => {
     }
   });
 });
+
+/* The answer-judging and the conversation gates have the shape of the voice
+   one, but each stores its own flag: a copy that wrote the wrong flag would
+   pass the "asks and runs" check and still unlock another feature. */
+describe("the answer-judging and conversation consent gates", () => {
+  const gates = [
+    { name: "llm", ask: "uzyjPytaniaLlm", gate: "zZgodaLlm", read: "udzielonaLlm", flag: "llmConsent",
+      otherFlag: "llmChatConsent", others: ["udzielona", "udzielonaChat"] },
+    { name: "chat", ask: "uzyjPytaniaChat", gate: "zZgodaChat", read: "udzielonaChat", flag: "llmChatConsent",
+      otherFlag: "llmConsent", others: ["udzielona", "udzielonaLlm"] }
+  ];
+  for (const g of gates) {
+    test(`${g.name}: the other model feature's consent does not open this gate`, () => {
+      const { box, consent } = freshConsent();
+      box.Core.state.settings[g.otherFlag] = true;
+      const events = [];
+      consent[g.ask](answer => { events.push("asked"); answer(false); });
+      consent[g.gate](() => events.push("action"), () => events.push("refused"));
+      assert.deepEqual(events, ["asked", "refused"], "it asks for its own consent instead of borrowing one");
+      assert.equal(consent[g.read](), false);
+    });
+
+    test(`${g.name}: existing consent runs the action without asking`, () => {
+      const { box, consent } = freshConsent();
+      box.Core.state.settings[g.flag] = true;
+      const events = [];
+      consent[g.ask](() => events.push("asked"));
+      consent[g.gate](() => events.push("action"), () => events.push("refused"));
+      assert.deepEqual(events, ["action"]);
+    });
+
+    test(`${g.name}: without a question the gate refuses and stores nothing`, () => {
+      const { box, consent } = freshConsent();
+      const events = [];
+      consent[g.gate](() => events.push("action"), () => events.push("refused"));
+      assert.deepEqual(events, ["refused"]);
+      assert.equal(consent[g.read](), false);
+      assert.equal(box.Core.state.settings[g.flag], undefined);
+    });
+
+    test(`${g.name}: a yes stores its own flag only, then runs the action`, () => {
+      const { box, consent } = freshConsent();
+      const events = [];
+      consent[g.ask](answer => { events.push("asked"); answer(true); });
+      consent[g.gate](() => events.push(consent[g.read]()), () => events.push("refused"));
+      box.flush();
+      assert.deepEqual(events, ["asked", true]);
+      assert.equal(box.stored().settings[g.flag], true);
+      for (const other of g.others) assert.equal(consent[other](), false);
+    });
+
+    test(`${g.name}: a no refuses, runs no action and grants nothing`, () => {
+      const { box, consent } = freshConsent();
+      const events = [];
+      consent[g.ask](answer => answer(false));
+      consent[g.gate](() => events.push("action"), () => events.push("refused"));
+      assert.deepEqual(events, ["refused"]);
+      assert.equal(consent[g.read](), false);
+      assert.equal(box.Core.state.settings[g.flag], undefined);
+    });
+
+    test(`${g.name}: a no without a refusal callback does not throw`, () => {
+      const { consent } = freshConsent();
+      consent[g.ask](answer => answer(false));
+      assert.doesNotThrow(() => consent[g.gate](() => assert.fail("must not run")));
+    });
+  }
+});
