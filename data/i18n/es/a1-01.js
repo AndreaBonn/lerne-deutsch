@@ -5,483 +5,577 @@
    Lo comprueba scripts/parity.mjs.
    ============================================================ */
 LINGUAI.addStrings("es", {
-  "unit:a1-u01": { title: "El ritual del café", grammarNote: "essere · género y número · artículos" },
+  "unit:a1-u01": {
+    title: "En el café",
+    grammarNote: "presente · género y plural · artículos · du y Sie"
+  },
   "lesson:a1-u01-l1": {
     theme: "Vida cotidiana",
-    title: "Saludos y tu primer pedido",
+    title: "Saludos y primer pedido",
     objectives: [
-      "saludar y despedirte según la hora del día",
-      "pedir un café como lo hacen los italianos",
-      "conjugar essere en presente"
+      "saludar y despedirse según la hora del día",
+      "pedir un café con la fórmula «einen Kaffee, bitte»",
+      "conjugar heißen en presente y poner el verbo en segunda posición"
     ],
     theory: [
       {
-        h: "El saludo depende del reloj, no del ánimo",
-        p: "Los saludos italianos parten el día en dos. <strong>Buongiorno</strong> va de la mañana hasta primera hora de la tarde. Luego, entre las dos y las cinco (la frontera es difusa y cambia según la región), se pasa a <strong>buonasera</strong>, que se usa al entrar en un bar a las seis. <strong>Buonanotte</strong> no es un saludo: es lo que se dice al irse a dormir."
+        h: "El saludo depende de la hora, y el alemán tiene varios",
+        p: "El español distingue <em>buenos días</em>, <em>buenas tardes</em> y <em>buenas noches</em>. El alemán también reparte el día, pero con otros límites: <strong>Guten Morgen</strong> por la mañana, <strong>Guten Tag</strong> desde media mañana hasta la tarde (y a menudo como saludo general), <strong>Guten Abend</strong> cuando cae la tarde. Los límites son difusos y cambian de una persona a otra. <strong>Gute Nacht</strong> no es un saludo de llegada: se dice al despedirse a última hora de la noche o al irse a dormir."
       },
       {
-        h: "Ciao no siempre es la opción segura",
-        p: "<strong>Ciao</strong> vale para «hola» y para «adiós», pero solo con gente a la que tratarías de <em>tu</em>: amigos, gente de tu edad, familia, el camarero joven. A un camarero de cincuenta años, a un funcionario, al dueño de una tienda que ves por primera vez: <strong>buongiorno</strong>. Entrar en una farmacia con «ciao» suena más o menos como entrar diciendo «¿qué pasa, tío?»."
+        h: "Hallo y Tschüss: dos palabras para el «hola» y el «adiós» informales",
+        p: "Entre personas que se tratan de <em>du</em> se dice <strong>Hallo</strong> al encontrarse y <strong>Tschüss</strong> al separarse. Con desconocidos y en contextos formales se dice <strong>Guten Tag</strong> al llegar y <strong>Auf Wiedersehen</strong> al irse. En el sur de Alemania y en Austria también se oye <em>Servus</em> y <em>Grüß Gott</em>, en Suiza <em>Grüezi</em>: los entenderás enseguida, pero para empezar <em>Guten Tag</em> sirve en todas partes. <em>Tschüss</em> se pronuncia con <em>tsch</em> (como la <em>ch</em> de «chico») y una <em>ü</em> alemana (véase abajo)."
       },
       {
-        contrast: "El español también reparte el día, y ahí está la trampa: las fronteras no coinciden. «Buenas noches» sirve para saludar y para despedirse; <em>buonanotte</em> solo para despedirse, y decirlo al entrar es el desliz clásico. Y donde el español dice «buenas tardes» desde el mediodía, el italiano sigue con <em>buongiorno</em> un buen rato más."
+        contrast: "En español <em>buenas noches</em> sirve para saludar al llegar de noche y también para despedirse. En alemán esas dos funciones se separan: al llegar por la noche se dice <em>Guten Abend</em>, y <em>Gute Nacht</em> es solo una despedida. El error típico es decir <em>Gute Nacht</em> al entrar en un local por la noche, como si fuera «buenas noches». Y al revés: <em>Guten Tag</em> cubre buena parte de la mañana y de la tarde, y es el saludo neutro de todos los días, no uno rígido."
       },
       {
-        h: "Essere, el verbo sin el que no hay frase",
-        p: "<strong>Essere</strong> significa «ser» y «estar» a la vez. Sus formas no se parecen al infinitivo (<em>sono</em>, <em>sei</em>, <em>è</em>…), así que no hay regla que las genere: se aprenden. La buena noticia es que las vas a repetir tantas veces que se colocan solas."
+        h: "El verbo va en segunda posición",
+        p: "En la oración afirmativa el verbo conjugado ocupa la <strong>segunda posición</strong>, sea lo que sea lo que venga antes: <em>Ich trinke Tee</em>, pero también <em>Heute trinke ich Tee</em>, donde el sujeto pasa detrás del verbo. La primera posición puede ocuparla una sola palabra o un grupo de palabras, pero no dos elementos separados."
       },
       {
-        tip: "Los pronombres sujeto (io, tu, lui…) se omiten casi siempre, porque la desinencia ya dice quién. <em>Sono americana</em> basta; <em>io sono americana</em> añade énfasis: «<b>yo</b> soy americana (y tú no)». Igual que en español."
+        contrast: "En español el pronombre sujeto casi siempre se omite: <em>Me llamo Ana</em>, <em>Hablo alemán</em>. En alemán no se puede: <em>Ich heiße Anna</em>, <em>Ich spreche Deutsch</em>. En una oración declarativa el sujeto tiene que estar expresado: si no hay un nombre (<em>Der Kaffee ist heiß</em>), hace falta el pronombre, porque las terminaciones del verbo no bastan para identificar a la persona (<em>heißt</em> sirve para <em>du</em>, <em>er</em> e <em>ihr</em>). Otra diferencia: <em>me llamo</em> es reflexivo, pero <em>ich heiße</em> no lleva ningún <em>mich</em>."
+      },
+      {
+        h: "Pronunciación: seis hábitos que hay que cambiar",
+        list: [
+          "<b>z</b> se lee <em>ts</em>, como en «tsunami»: <em>Zucker</em>, <em>zwei</em>; no suena como la <em>z</em> española de «zapato» ni como una <em>s</em>",
+          "<b>ei</b> se lee <em>ai</em> (<em>heißen</em> suena «háisen», con una <em>h</em> aspirada suave y una <em>s</em> sorda), mientras que <b>ie</b> es una <em>i</em> larga (<em>Wie</em> suena «vi»)",
+          "<b>w</b> se lee como una <em>v</em> pronunciada con los dientes sobre el labio inferior (<em>Wasser</em> suena «vásser»), no como una <em>b</em>; la <b>v</b> alemana en palabras nativas suena a menudo como <em>f</em> (<em>Vater</em>)",
+          "una <b>s</b> simple al comienzo de palabra o de sílaba ante vocal es sonora, como la <em>s</em> de «mismo» (<em>Saft</em>, <em>Rose</em>); al final de palabra es sorda (<em>Eis</em>), y lo mismo les pasa a <b>b</b>, <b>d</b>, <b>g</b> finales, que suenan como <em>p</em>, <em>t</em>, <em>k</em> (<em>Abend</em> acaba en «t»); <b>ß</b> y <b>ss</b> son sordas: <em>heißen</em>, <em>Tschüss</em>",
+          "<b>ü</b> se pronuncia con la lengua de la <em>i</em> y los labios de la <em>u</em>: no existe en español",
+          "<b>ch</b> tras <em>i</em> y <em>e</em> es un soplo suave, más suave que la <em>j</em> española (<em>ich</em>, <em>Rechnung</em>), y tras <em>a</em>, <em>o</em>, <em>u</em> suena más áspera, como una <em>j</em> (<em>Buch</em>); además, la <b>h</b> inicial sí se pronuncia, como una <em>j</em> muy suave (<em>Hallo</em>, <em>Haus</em>), a diferencia de la <em>h</em> muda del español"
+        ]
+      },
+      {
+        trap: "En Alemania <strong>Kaffee</strong> (la bebida) lleva normalmente el acento en la primera sílaba, KA-ffee, con una <em>e</em> final clara, mientras que <strong>Café</strong> (el local) lo lleva en la última, como el español «ca-FÉ»; en algunas variedades regionales, por ejemplo en Austria, también <em>Kaffee</em> puede llevar el acento final. No te dejes engañar por la ortografía parecida: son dos palabras distintas."
+      },
+      {
+        tip: "<em>Einen Kaffee, bitte</em> es una fórmula completa: aprende de memoria <em>einen Kaffee</em>, <em>einen Tee</em>, <em>ein Wasser</em>, <em>eine Cola</em>. Por qué <em>einen</em> y no <em>ein</em> lo explicará otra unidad (es el caso acusativo): por ahora basta con repetir la fórmula, que con los sustantivos masculinos (<em>der Kaffee</em>, <em>der Tee</em>) usa <em>einen</em>."
       }
     ],
     grammar: {
-      title: "Essere (ser / estar) — presente",
-      note: "Cuidado con el acento de <b>è</b>: sin él, <em>e</em> significa «y». Son dos palabras distintas.",
+      title: "Presente de heißen (llamarse)",
+      note: "Cuidado con la <b>ß</b>: no es una B, y <em>heißen</em> suena como si llevara una doble s. La forma <em>heißt</em> es igual para <em>du</em>, <em>er/sie/es</em> e <em>ihr</em>, así que es el pronombre el que dice quién habla.",
       table: {
-        head: ["persona", "forma", "en español"],
+        head: ["persona", "forma", "ejemplo"],
         rows: [
-          ["io", "sono", "soy / estoy"],
-          ["tu", "sei", "eres / estás (informal)"],
-          ["lui / lei / Lei", "è", "es / está; usted es"],
-          ["noi", "siamo", "somos / estamos"],
-          ["voi", "siete", "sois / estáis"],
-          ["loro", "sono", "son / están"]
+          ["ich", "heiße", "Ich heiße Anna."],
+          ["du", "heißt", "Wie heißt du?"],
+          ["er / sie / es", "heißt", "Er heißt Tom."],
+          ["wir", "heißen", "Wir heißen Weber."],
+          ["ihr", "heißt", "Wie heißt ihr?"],
+          ["sie / Sie", "heißen", "Wie heißen Sie?"]
         ]
       },
       examples: [
         {
-          tr: "Buenos días, un café por favor.",
-          note: "«un caffè» es un espresso: no hace falta especificar"
+          tr: "Buenos días, un café, por favor.",
+          note: "«einen Kaffee» se aprende como bloque, véase el consejo de arriba"
         },
-        { tr: "Soy Anna, encantada." },
-        { tr: "¿Eres de Roma?" },
-        { tr: "El café está caliente." },
-        { tr: "Llegamos tarde." },
-        { tr: "Están en el bar." }
+        { tr: "Me llamo Anna.", note: "en alemán no hay pronombre reflexivo: no se dice «mich»" },
+        { tr: "¿Cómo te llamas?" },
+        { tr: "¿Cómo se llama usted?", note: "forma de cortesía, véase la lección 4" },
+        { tr: "Hoy tomo té.", note: "el verbo sigue en segunda posición y el sujeto pasa detrás" },
+        { tr: "La cafetería es pequeña." }
       ]
     },
     vocab: [
-      "buenos días (hasta primera hora de la tarde)",
-      "buenas tardes (desde las cuatro o cinco)",
-      "buenas noches (solo al despedirse)",
-      "hola / adiós (informal)",
+      "buenos días (por la mañana)",
+      "buenos días, buenas tardes (trato neutro, desde media mañana hasta la tarde)",
+      "buenas tardes, buenas noches (al llegar, cuando anochece)",
+      "buenas noches (al despedirse a última hora o antes de dormir)",
+      "hola (informal)",
+      "adiós, chao (informal)",
       "adiós (formal)",
-      "por favor (al pedir algo)",
+      "por favor; aquí tiene; de nada",
       "gracias",
-      "de nada",
-      "espresso",
-      "capuchino",
-      "cruasán",
-      "bar, cafetería",
-      "encantado",
-      "perdone (formal)"
+      "perdone, disculpe",
+      "el café (la bebida)",
+      "el té",
+      "el agua",
+      "el café, la cafetería (el local)"
     ],
     dialogue: [
-      "¡Buenos días! ¿Qué le pongo?",
-      "Buenos días. Un café y un cruasán, por favor.",
-      "Enseguida. Son dos cincuenta.",
-      "Aquí tiene. ¡Gracias!",
-      "De nada, ¡que vaya bien!"
+      "¡Buenos días! ¿Qué desea?",
+      "Buenos días. Un café, por favor.",
+      "Con mucho gusto. ¿Algo más?",
+      "No, gracias. Eso es todo.",
+      "Aquí tiene. ¡Que tenga un buen día!"
     ],
     culture: {
-      title: "Con ojos italianos: el café tiene reglas",
-      text: "<p>En un bar italiano el café se toma <b>de pie, en la barra</b> (al banco) y dura tres minutos. La mesa se paga aparte, a veces el doble: no es un timo, son dos servicios distintos en la lista de precios.</p><p><b>Un capuchino después de las once</b> te delata como turista: la leche se considera pesada y pertenece al desayuno. Después de comer se pide <i>un caffè</i>, o como mucho <i>un macchiato</i>, un espresso con una gota de leche.</p><p>Se suele pagar <b>después</b> de tomarlo, salvo que el bar tenga caja en la entrada: entonces primero <i>lo scontrino</i> (el tique) y luego el café.</p>"
+      title: "Una mirada alemana: Café, Kaffeehaus y el café de la tarde",
+      text: "<p>En una cafetería alemana tradicional te sientas a una mesa, el camarero viene a tomar nota y la cuenta se pide en la mesa con <i>Zahlen, bitte</i> o <i>Die Rechnung, bitte</i>. Es otro ritmo que el del bar español, donde el café se suele tomar de pie en la barra y se paga al irse. Hay locales con servicio en el mostrador, pero lo habitual es sentarse un rato. Normalmente se redondea la cifra dejando un pequeño extra: la propina se llama <i>Trinkgeld</i>.</p><p>En España se pide «un café» y se precisa si es solo, cortado o con leche. En Alemania, si pides <i>einen Kaffee</i>, lo normal es que te sirvan un café largo, de filtro o de máquina, más cercano a un café americano que a un café solo: el expreso se pide por su nombre, <i>einen Espresso</i>. El momento tradicional es la tarde, <i>Kaffee und Kuchen</i>, es decir, café y tarta: una pausa entre la comida y la cena que sigue siendo una tradición viva, sobre todo los domingos y en familia.</p><p>En Austria el <i>Kaffeehaus</i> vienés tiene otra lógica: puedes quedarte mucho tiempo con un solo café, que suele servirse con un vaso de agua, y leer el periódico. En Suiza el café largo se llama a menudo <i>Café crème</i>.</p>"
     },
     exercises: [
       {
-        q: "Entras en un bar a las nueve y media de la mañana. ¿Qué dices?",
-        opts: ["Buonasera", "Buongiorno", "Buonanotte"],
-        why: "Buongiorno cubre de la mañana a primera hora de la tarde. Buonanotte es solo una despedida antes de dormir."
+        q: "Entras en una cafetería a las 9 de la mañana. ¿Qué dices?",
+        opts: ["Guten Abend", "Guten Morgen", "Gute Nacht"],
+        why: "<i>Guten Morgen</i> vale para la mañana. <i>Gute Nacht</i> es una despedida para última hora de la noche o para irse a dormir."
       },
       {
-        q: "El camarero tiene unos sesenta años y no lo conoces. ¿Qué saludo va bien?",
-        opts: ["Ciao!", "Buongiorno!", "Buonanotte!"],
-        why: "Reserva «ciao» para gente a la que tuteas. A un desconocido en un bar: buongiorno."
+        q: "¿Qué frase afirmativa tiene el verbo en el lugar correcto?",
+        opts: ["Ich Anna heiße.", "Heiße ich Anna.", "Ich heiße Anna."],
+        why: "El verbo conjugado va en segunda posición, y el sujeto <b>ich</b> no se omite, a diferencia del español."
       },
       {
-        tr: "La conjugación entera, sin mirar.",
-        why: "Essere es irregular en todas las personas. Es una de las dos conjugaciones que hay que memorizar sí o sí."
+        tr: "Toda la conjugación, sin mirar.",
+        why: "<i>Heißen</i> es regular: raíz <i>heiß-</i> más terminación. Para <i>du</i>, <i>er</i> e <i>ihr</i> la forma es la misma: <b>heißt</b>."
       },
       {
-        q: "Completa: «Anna e Marco ___ italiani.» (Anna y Marco son italianos.)",
-        hint: "tercera persona del plural",
-        why: "Loro sono. Fíjate en que «sono» sirve para <b>io</b> y para <b>loro</b>: lo aclara el contexto."
+        q: "Completa: «Wie ___ du?» (¿Cómo te llamas?)",
+        hint: "segunda persona del singular de heißen",
+        why: "Con <b>du</b> la terminación es <i>-t</i>: <i>du heißt</i>. La <i>s</i> de la terminación <i>-st</i> se funde con la <i>ß</i> de la raíz."
       },
       {
-        q: "Traduce: «Soy de Polonia.»",
-        hint: "essere + da + país",
-        why: "Sono dalla Polonia. Los nombres de país llevan artículo: la Polonia → dalla Polonia."
+        q: "Traduce: «Buenos días, un café, por favor.»",
+        why: "Se dice <i>Einen Kaffee, bitte</i>: en esta fórmula <i>bitte</i> va al final (también puede ir antes de <i>einen Kaffee</i>), y <i>Kaffee</i> lleva mayúscula, como todo sustantivo alemán."
       },
       {
-        tr: "Un café y un cruasán, por favor.",
-        why: "En italiano no hace falta ningún verbo de cortesía: dices lo que quieres y añades <i>per favore</i>."
+        tr: "Hola, me llamo Anna.",
+        why: "Tras la coma empieza la oración principal: sujeto <i>ich</i> (que no se omite), luego el verbo <i>heiße</i> en segunda posición."
       },
       {
-        q: "Empareja cada expresión con su significado.",
-        pairs: ["gracias", "de nada", "perdone (formal)", "adiós"]
+        q: "Une cada palabra con su significado.",
+        pairs: ["gracias", "por favor / aquí tiene", "perdone", "adiós"]
       },
       {
-        tr: "Buenas tardes, un capuchino por favor.",
-        why: "Ojo con la doble <b>cc</b> y la doble <b>pp</b>: en italiano se sostienen audiblemente más que las simples."
+        tr: "Buenas noches, un té, por favor.",
+        why: "Atención a <i>Abend</i>: la <b>b</b> es sonora y la <b>d</b> final suena como una <i>t</i>. Al llegar por la noche se dice <i>Guten Abend</i>, no <i>Gute Nacht</i>."
       },
       {
-        tr: "Buenos días, un café por favor.",
-        why: "«Caffè» lleva el acento en la última sílaba: ca-FE, no CA-fe."
+        tr: "Hola, un café, por favor.",
+        why: "En Alemania el acento de <i>Kaffee</i> cae normalmente en la primera sílaba: KA-ffee, no «ca-FÉ»."
       }
     ]
   },
   "lesson:a1-u01-l2": {
     theme: "Gramática básica",
-    title: "El género del sustantivo",
+    title: "Género y plural de los sustantivos",
     objectives: [
-      "reconocer el género por la terminación",
-      "formar el plural según -o/-i, -a/-e, -e/-i",
-      "manejar los invariables como il bar y la città"
+      "reconocer que el alemán tiene tres géneros: der, die, das",
+      "aprender cada sustantivo junto con su artículo y su plural",
+      "contar del 1 al 20"
     ],
     theory: [
       {
-        h: "Dos géneros, no tres",
-        p: "El italiano solo tiene masculino y femenino: no hay neutro. Todo sustantivo pertenece a uno de los dos, objetos incluidos: <em>il tavolo</em> (mesa) es masculino, <em>la sedia</em> (silla) femenino. Aquí el español te da casi todo hecho — salvo que «la mesa» es femenina y <em>il tavolo</em> no."
+        h: "Tres géneros, no dos",
+        p: "El español tiene masculino y femenino (<em>el</em>, <em>la</em>). El alemán añade el <strong>neutro</strong>: <strong>der</strong> (masculino), <strong>die</strong> (femenino), <strong>das</strong> (neutro). Cada sustantivo pertenece a uno de los tres, también los objetos: <em>der Tisch</em> (la mesa), <em>die Tasse</em> (la taza), <em>das Buch</em> (el libro)."
       },
       {
-        h: "Tres patrones que cubren casi todo",
+        contrast: "El género alemán a menudo no coincide con el español, así que no se puede adivinar por traducción. <em>El libro</em> es masculino, pero <em>das Buch</em> es neutro; <em>la silla</em> es femenino, pero <em>der Stuhl</em> es masculino; <em>el niño</em> es masculino, pero <em>das Kind</em> es neutro, y <em>das Mädchen</em> (la niña) también. A veces coincide (<em>la leche</em> y <em>die Milch</em> son femeninas, <em>el café</em> y <em>der Kaffee</em> masculinos), y justo por eso es tentador fiarse de la analogía. En español la terminación suele delatar el género (<em>-o</em>, <em>-a</em>); en alemán casi nunca. Por eso cada sustantivo se aprende con su artículo, nunca solo."
+      },
+      {
+        h: "Algunas pistas, ninguna ley",
         list: [
-          "terminación en <b>-o</b> → masculino, plural <b>-i</b>: <em>il libro → i libri</em>",
-          "terminación en <b>-a</b> → femenino, plural <b>-e</b>: <em>la casa → le case</em>",
-          "terminación en <b>-e</b> → masculino <i>o</i> femenino, plural siempre <b>-i</b>: <em>il fiore → i fiori</em>, <em>la chiave → le chiavi</em>"
+          "los sustantivos con el sufijo <b>-ung</b> son femeninos, como los españoles en <em>-ción</em>: <em>die Zeitung</em>, <em>die Rechnung</em>",
+          "los diminutivos con el sufijo <b>-chen</b> son neutros: <em>das Brötchen</em> (ojo: <em>der Kuchen</em> no es un diminutivo y es masculino)",
+          "muchos sustantivos en <b>-e</b> son femeninos: <em>die Tasse</em>, <em>die Torte</em>",
+          "las pistas tienen excepciones (<em>der Kaffee</em> acaba en -e y es masculino): <b>el artículo se aprende junto con el sustantivo</b>"
         ]
       },
       {
-        trap: "Los sustantivos en <b>-e</b> son el único grupo cuyo género hay que memorizar con la palabra. Apúntalos siempre con el artículo: no «fiore», sino <b>il fiore</b>."
+        h: "El plural: un solo artículo, terminaciones distintas",
+        p: "En el nominativo plural el artículo determinado es siempre <strong>die</strong>, para los tres géneros (en los demás casos, que verás más adelante, cambia). En español el plural distingue género (<em>los</em>, <em>las</em>); en alemán no. El sustantivo, en cambio, toma terminaciones distintas, a veces con diéresis en la vocal (<em>Umlaut</em>): <em>die Tische</em>, <em>die Stühle</em>, <em>die Tassen</em>, <em>die Bücher</em>, <em>die Kinder</em>. Algunos sustantivos no cambian (<em>die Kuchen</em>, <em>die Brötchen</em>) y pocos toman <em>-s</em> (<em>die Cafés</em>, <em>die Kaffees</em>)."
       },
       {
-        h: "Palabras que nunca cambian",
-        p: "Los sustantivos acabados en vocal tónica (<em>la città</em>, <em>il caffè</em>) y los préstamos (<em>il bar</em>, <em>lo sport</em>, <em>il film</em>) son iguales en singular y en plural. Solo el artículo distingue: <em>la città → le città</em>, como «el lunes / los lunes»."
+        trap: "El plural no se deduce del singular: <em>der Tisch → die Tische</em>, pero <em>das Buch → die Bücher</em>. En español casi siempre basta añadir <em>-s</em> o <em>-es</em>; en alemán no. Aprende el conjunto entero, por ejemplo <b>der Tisch, die Tische</b>: por eso el vocabulario de este curso muestra el plural junto a cada sustantivo."
       },
       {
-        contrast: "El sistema es el tuyo, así que no hay categoría nueva que construir. Lo que hay que vigilar son los desacuerdos concretos: <em>il latte</em>, <em>il sale</em>, <em>il fiore</em> y <em>il mare</em> son masculinos donde el español dice la leche, la sal, la flor y la mar (o el mar). Y ojo con la clase en <b>-e</b>, que el español no tiene: ahí la terminación no informa de nada."
+        tip: "Todos los sustantivos alemanes se escriben con <b>mayúscula</b>: <em>der Tisch</em>, no <em>der tisch</em>. En español van en minúscula, así que hay que acostumbrarse. Y la diéresis cuenta: <em>Buch</em> y <em>Bücher</em> se escriben distinto, y <em>Madchen</em> sin diéresis sería una falta, no una variante."
+      },
+      {
+        h: "Contar del 1 al 20",
+        list: [
+          "<b>1-10</b>: eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn",
+          "<b>11-12</b>: elf, zwölf",
+          "<b>13-19</b>: dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn, neunzehn",
+          "<b>20</b>: zwanzig"
+        ]
+      },
+      {
+        trap: "Atención a <em>sechzehn</em> y <em>siebzehn</em>: <em>sechs</em> pierde la <em>-s</em> y <em>sieben</em> pierde la <em>-en</em>. Y la <b>z</b> se lee siempre <em>ts</em>, no como la <em>z</em> española: <em>zwei</em> suena «tsvái», <em>zehn</em> «tsen»."
       }
     ],
     grammar: {
-      title: "Género y plural del sustantivo",
+      title: "Género y plural",
+      note: "En el nominativo plural el artículo determinado es siempre <b>die</b>.",
       table: {
-        head: ["patrón", "singular", "plural", "en español"],
+        head: ["género", "singular", "plural", "español"],
         rows: [
-          ["-o → -i (m)", "il libro", "i libri", "libro / libros"],
-          ["-a → -e (f)", "la ragazza", "le ragazze", "chica / chicas"],
-          ["-e → -i (m)", "il ristorante", "i ristoranti", "restaurante / restaurantes"],
-          ["-e → -i (f)", "la stazione", "le stazioni", "estación / estaciones"],
-          ["invariable", "la città", "le città", "ciudad / ciudades"],
-          ["préstamos", "il bar", "i bar", "bar / bares"]
+          ["der (m)", "der Tisch", "die Tische", "mesa"],
+          ["die (f)", "die Tasse", "die Tassen", "taza"],
+          ["das (n)", "das Buch", "die Bücher", "libro"],
+          ["das (n)", "das Kind", "die Kinder", "niño"],
+          ["der (m)", "der Kuchen", "die Kuchen", "tarta, pastel"],
+          ["das (n)", "das Brötchen", "die Brötchen", "panecillo"]
         ]
       },
       examples: [
-        { tr: "El cruasán está bueno." },
-        { tr: "Los cruasanes están buenos.", note: "el adjetivo también cambia de terminación" },
-        { tr: "La estación está cerca.", note: "«stazione» es femenino pese a la -e" },
-        { tr: "Dos cafés, por favor.", note: "caffè no cambia de forma" }
+        { tr: "La mesa es pequeña." },
+        { tr: "Las tazas son grandes.", note: "en plural el verbo también cambia: sind" },
+        { tr: "El libro es nuevo." },
+        { tr: "El niño bebe leche." },
+        { tr: "Tres tazas y dos pasteles, por favor.", note: "Kuchen no cambia en plural" },
+        { tr: "La cuenta, por favor." }
       ]
     },
     vocab: [
-      "libro",
-      "casa",
-      "mesa",
-      "silla",
-      "restaurante",
-      "estación",
-      "llave",
-      "flor",
-      "ciudad",
-      "café / bar",
-      "deporte",
-      "película",
-      "noche",
-      "día"
+      "la mesa",
+      "la silla",
+      "el libro",
+      "la casa",
+      "la taza",
+      "la mujer, la señora",
+      "el hombre",
+      "el niño, la niña",
+      "el periódico",
+      "la tarta, el pastel",
+      "la leche",
+      "el azúcar",
+      "el panecillo",
+      "la cuenta"
     ],
     exercises: [
       {
-        q: "¿Qué palabra es femenina?",
-        opts: ["il tavolo", "la chiave", "il fiore"],
-        why: "<i>La chiave</i>: el género lo dice el artículo, porque la terminación -e no lo revela."
+        q: "¿Cuál de estos sustantivos es neutro?",
+        opts: ["der Tisch", "das Buch", "die Tasse"],
+        why: "<i>Das Buch</i>. En español «el libro» es masculino: el género no se traduce."
       },
       {
-        q: "El plural de «la ragazza» es «___ ragazze».",
-        why: "El artículo femenino plural es siempre <b>le</b>."
+        q: "Plural de «die Tasse»: «die ___».",
+        hint: "añade -n",
+        why: "Muchos sustantivos femeninos en <i>-e</i> forman el plural en <i>-n</i>: <i>Tassen</i>."
       },
       {
-        q: "Ponlo en plural: «il ristorante» → «i ___».",
-        hint: "-e siempre pasa a -i en plural",
-        why: "Los sustantivos en -e hacen el plural en -i, sea cual sea su género."
+        q: "Plural de «das Buch»: «die ___».",
+        hint: "la u lleva diéresis y se añade -er",
+        why: "<i>Bücher</i>: diéresis en la vocal y terminación <i>-er</i>. Sin diéresis sería una palabra mal escrita."
       },
       {
-        q: "Elige el artículo determinado singular.",
-        why: "Con los sustantivos en -e el género se memoriza, y por eso siempre se apuntan con artículo.",
-        items: ["libro", "casa", "estación", "restaurante", "llave", "día"]
+        q: "Elige el artículo determinado correcto.",
+        why: "El género y el plural se aprenden junto con el sustantivo: <i>der Tisch</i>, <i>die Tasse</i>, <i>das Buch</i>.",
+        items: ["mesa", "taza", "libro", "casa", "periódico", "hombre"]
       },
       {
-        q: "¿Cuántos cafés pides si dices «due caffè»?",
-        opts: ["Uno", "Dos", "No hay forma de saberlo"],
-        why: "«Caffè» no se flexiona; el número viene del numeral o del artículo: <i>il caffè / i caffè</i>."
+        q: "En el nominativo plural el artículo determinado es siempre…",
+        opts: ["der", "die", "das"],
+        why: "<b>die</b> para todos los géneros en el nominativo plural: <i>die Tische</i>, <i>die Tassen</i>, <i>die Bücher</i>."
       },
       {
-        q: "¿Cuáles de estos sustantivos son iguales en plural?",
-        opts: ["la città", "il libro", "il bar", "la sedia", "lo sport"],
-        why: "Invariables: las palabras con acento en la vocal final (città) y los préstamos (bar, sport)."
+        q: "¿Cuáles de estos sustantivos son femeninos?",
+        opts: ["die Zeitung", "der Stuhl", "die Milch", "das Kind", "die Rechnung"],
+        why: "<i>Die Zeitung</i>, <i>die Milch</i>, <i>die Rechnung</i>: lo dice el artículo, y los sustantivos con el sufijo <b>-ung</b> son femeninos."
       },
-      { tr: "El restaurante está cerrado.", why: "Orden: artículo + sustantivo + verbo + adjetivo." },
-      { tr: "Las llaves están encima de la mesa." },
-      { tr: "La ciudad es preciosa.", why: "«Città» lleva el acento al final: chi-TA." }
+      {
+        tr: "El niño bebe leche.",
+        why: "Sujeto, verbo, complemento: el verbo <i>trinkt</i> está en segunda posición."
+      },
+      {
+        tr: "Dos tazas y tres panecillos, por favor.",
+        why: "<i>Zwei</i> empieza por <b>ts</b> y la <b>w</b> suena como una <i>v</i>: «tsvái»."
+      },
+      {
+        tr: "La cuenta, por favor.",
+        why: "<i>Rechnung</i>: la <i>ch</i> tras la <i>e</i> es el soplo suave de <i>ich</i>, más suave que la <i>j</i> española, y no una <i>k</i>."
+      }
     ]
   },
   "lesson:a1-u01-l3": {
     theme: "Gramática básica",
-    title: "Artículos determinados e indeterminados",
+    title: "¿Der o ein? Los artículos en nominativo",
     objectives: [
-      "elegir el artículo determinado según el primer sonido de la palabra",
-      "distinguir il de un",
-      "usar lo y gli correctamente"
+      "distinguir el artículo determinado (der, die, das) del indeterminado (ein, eine)",
+      "usar kein para negar un sustantivo",
+      "elegir el artículo según el género, no según el sonido"
     ],
     theory: [
       {
-        h: "Por qué siete formas donde el español tiene cuatro",
-        p: "El artículo hace dos trabajos a la vez: marca género y número, y dice si hablamos de algo que el oyente ya conoce o de uno cualquiera. <em>Vorrei un caffè</em>: un café cualquiera. <em>Dov'è il caffè?</em>: el que los dos tenemos en la cabeza. Eso el español también lo hace; lo que no tiene es la tercera forma masculina."
+        h: "Determinado e indeterminado",
+        p: "Como en español, el artículo <strong>determinado</strong> señala algo conocido (<em>der Kaffee</em>, el café del que hablamos) y el <strong>indeterminado</strong> algo nuevo (<em>ein Kaffee</em>, un café cualquiera). En nominativo, es decir, cuando el sustantivo es el sujeto (<em>Der Kaffee ist heiß</em>) o el sustantivo que sigue a <em>sein</em> (<em>Das ist eine Tasse</em>, <em>Das ist kein Tee</em>), las formas son: <b>der / ein</b> (masculino), <b>die / eine</b> (femenino), <b>das / ein</b> (neutro), <b>die</b> (plural)."
       },
       {
-        h: "Las formas masculinas dependen del primer sonido",
-        p: "El artículo masculino tiene tres variantes, y la elección no es de gusto sino de pronunciación. <strong>Il</strong> ante consonante normal. <strong>Lo</strong> ante <em>s + consonante</em> (<em>lo studente</em>) y ante <em>z</em>, <em>gn</em>, <em>ps</em>, <em>y</em>, <em>x</em>. <strong>L'</strong> ante vocal. El motivo es puramente fonético: «il studente» es incómodo de decir. Es el mismo instinto que te hace decir «el agua» y no «la agua»."
+        contrast: "En español el artículo cambia según el género y el número (<em>el, la, los, las, un, una, unos, unas</em>), y alguna forma varía por el <b>sonido inicial</b>: <em>el agua</em>, <em>un águila</em>. En alemán, en nominativo singular, <em>der</em>, <em>die</em> y <em>das</em> solo dependen del género, sin variantes por el sonido inicial: <em>der Apfelkuchen</em>, <em>der Saft</em>, <em>der Kellner</em> llevan todos <em>der</em>, sea cual sea la letra siguiente. Es más sencillo, pero hay que conocer el género, y la terminación <em>-o</em>/<em>-a</em> del sustantivo no te ayuda como en español."
       },
       {
-        h: "El plural",
-        list: [
-          "<b>il → i</b>: <em>il libro → i libri</em>",
-          "<b>lo / l' → gli</b>: <em>lo studente → gli studenti</em>, <em>l'amico → gli amici</em>",
-          "<b>la / l' → le</b>: <em>la casa → le case</em>, <em>l'amica → le amiche</em>"
-        ]
+        trap: "En plural no existe el artículo indeterminado: <em>Tassen</em> solo vale «tazas» o «unas tazas». El español <em>unos</em>, <em>unas</em> no tiene equivalente en alemán: se deja el sustantivo sin artículo."
       },
       {
-        h: "El artículo indeterminado",
-        p: "<strong>Un</strong> ante consonante y ante vocal (<em>un libro</em>, <em>un amico</em>, ¡sin apóstrofo!), <strong>uno</strong> allí donde iría <em>lo</em> (<em>uno studente</em>), <strong>una</strong> para el femenino, <strong>un'</strong> ante vocal femenina (<em>un'amica</em>)."
+        h: "Kein: la negación del sustantivo",
+        p: "Para decir «no es un…» o «no hay ningún…» se usa <strong>kein</strong>, que sigue las formas de <em>ein</em>: <em>kein</em> (masculino y neutro), <em>keine</em> (femenino y plural). <em>Das ist kein Tee</em> significa «esto no es un té». En español la negación va delante del verbo (<em>no es un té</em>); en alemán se funde con el artículo, y no se dice <em>nicht ein Tee</em>."
       },
       {
-        trap: "<b>un amico</b> (sin apóstrofo, un chico) frente a <b>un'amica</b> (con apóstrofo, una chica). Por escrito el apóstrofo es la única diferencia y lleva encima todo el género. El español distingue amigo/amiga con la vocal, así que aquí no hay costumbre en la que apoyarse."
+        tip: "Cuando <b>pides</b>, el sustantivo masculino lleva <em>einen</em>: <em>Einen Kaffee, bitte</em>. En español <em>un café</em> no cambia de forma, sea sujeto u objeto; en alemán el masculino sí: <em>ein</em> es la forma del sujeto y <em>einen</em> es otra forma, que se usa cuando el sustantivo es el objeto de una acción y que veremos más adelante. Por ahora recuerda: al pedir se dice <em>einen</em> (masculino), <em>eine</em> (femenino), <em>ein</em> (neutro)."
+      },
+      {
+        h: "Una frase típica: Das ist …",
+        p: "Para identificar un objeto: <em>Das ist ein Eis</em>, <em>Das ist eine Torte</em>. El <em>das</em> inicial vale «esto» y no cambia, aunque el sustantivo que sigue sea masculino o femenino."
       }
     ],
     grammar: {
-      title: "Los artículos: tabla completa",
+      title: "Artículos en nominativo",
+      note: "El nominativo responde a la pregunta <em>¿quién / qué es?</em>. El plural lleva <b>die</b> o <b>keine</b> y no tiene artículo indeterminado.",
       table: {
-        head: ["contexto", "det. sing.", "det. pl.", "indeterminado"],
+        head: ["", "masculino", "femenino", "neutro", "plural"],
         rows: [
-          ["m. + consonante", "il treno", "i treni", "un treno"],
-          ["m. + s+cons., z, gn, ps", "lo studente, lo zaino", "gli studenti", "uno studente"],
-          ["m. + vocal", "l'amico", "gli amici", "un amico"],
-          ["f. + consonante", "la casa", "le case", "una casa"],
-          ["f. + vocal", "l'amica", "le amiche", "un'amica"]
+          ["determinado", "der Kaffee", "die Tasse", "das Brötchen", "die Tassen"],
+          ["indeterminado", "ein Kaffee", "eine Tasse", "ein Brötchen", "(sin artículo) Tassen"],
+          ["negación", "kein Kaffee", "keine Tasse", "kein Brötchen", "keine Tassen"]
         ]
       },
       examples: [
-        { tr: "Un café, por favor.", note: "uno cualquiera: indeterminado" },
-        { tr: "Este café está frío.", note: "uno concreto: determinado" },
-        { tr: "La mochila pesa.", note: "z → lo" },
-        { tr: "Los estudiantes llegan tarde." },
-        { tr: "Una amiga de Roma.", note: "femenino + vocal → un'" }
+        { tr: "El café está caliente." },
+        { tr: "Un café cuesta tres euros." },
+        { tr: "Esto es una taza." },
+        { tr: "Esto no es un té." },
+        { tr: "La tarta está fresca." },
+        { tr: "Aquí está la carta." }
       ]
     },
     vocab: [
-      "estudiante",
-      "mochila",
-      "amigo",
-      "tren",
-      "espejo",
-      "azúcar",
-      "agua",
-      "vaso",
-      "botella",
-      "hotel",
-      "psicólogo",
-      "gente (¡singular en italiano!)"
+      "el zumo",
+      "la cola",
+      "el chocolate",
+      "la cerveza",
+      "el vino",
+      "el helado",
+      "la tarta de manzana",
+      "la tarta",
+      "el pan",
+      "el pretzel",
+      "la carta, el menú",
+      "el camarero"
     ],
     exercises: [
       {
-        q: "¿Qué artículo lleva «zucchero» (azúcar)?",
-        opts: ["il", "lo", "l'"],
-        why: "Los masculinos que empiezan por <b>z</b> llevan lo: <i>lo zucchero</i>, igual que <i>lo zaino</i>."
+        q: "Completa: «___ Tasse ist neu.» (una taza)",
+        opts: ["Ein", "Eine", "Einen"],
+        why: "<i>Tasse</i> es femenino, así que <b>eine</b>."
       },
       {
-        q: "¿Cuál es el plural de «lo specchio»?",
-        opts: ["i specchi", "gli specchi", "le specchie"],
-        why: "Lo siempre pasa a <b>gli</b> en plural."
+        q: "Completa: «Das ist ___ Tee.» (no es un té)",
+        opts: ["nicht", "kein", "keine"],
+        why: "Para negar un sustantivo masculino se usa <b>kein</b>, no <i>nicht ein</i>."
       },
       {
-        q: "Elige el artículo determinado correcto.",
-        why: "La elección depende del género Y del primer sonido de la palabra.",
-        items: ["tren", "estudiante", "amiga", "agua", "botella", "mochila"]
+        q: "Elige el artículo indeterminado correcto.",
+        why: "<i>Ein</i> para masculino y neutro, <i>eine</i> para femenino.",
+        items: ["zumo", "cola", "tarta", "pan", "carta", "camarero"]
       },
       {
-        q: "Completa: «Ho ___ amica a Milano.» (Tengo una amiga en Milán.)",
-        hint: "femenino ante vocal",
-        why: "Un'amica, con apóstrofo. Sin él (<i>un amico</i>) sería un chico."
+        q: "Completa: «Das ist ___ Eis.» (un helado)",
+        hint: "das Eis es neutro",
+        why: "Neutro en nominativo: <b>ein</b>. No es el género del español («el helado» es masculino) lo que decide."
       },
       {
-        q: "Completa: «___ studenti sono bravi.» (Los estudiantes son buenos.)",
-        why: "Studente lleva lo, así que en plural: gli studenti."
+        q: "Completa: «___ Speisekarte ist neu.» (la)",
+        hint: "die Speisekarte es femenino",
+        why: "Femenino singular: <b>die</b>."
       },
       {
-        q: "«Vorrei il caffè» frente a «Vorrei un caffè»: ¿cuál es la diferencia?",
+        q: "«Tassen, bitte!» ¿Por qué no lleva artículo?",
         opts: [
-          "Ninguna, son sinónimos",
-          "Il = ese café concreto ya mencionado; un = un café cualquiera",
-          "Il es más educado"
+          "Es un error",
+          "En plural no existe ein/eine: el sustantivo va solo",
+          "Falta die delante de Tassen"
         ],
-        why: "El artículo determinado da por hecho que el oyente sabe cuál. En un bar se pide <i>un caffè</i>."
+        why: "El artículo indeterminado no tiene plural. El español «unas tazas» corresponde a <i>Tassen</i> sin artículo."
       },
       {
-        q: "Empareja el sustantivo con su artículo.",
-        pairs: ["ps + consonante", "vocal", "consonante normal", "femenino"]
+        q: "Une cada expresión con su significado.",
+        pairs: ["un café", "una tarta", "un pan", "ninguna cola"]
       },
       {
-        tr: "La mochila del estudiante pesa.",
-        why: "«Dello» es di + lo: la preposición también se adapta al artículo."
+        tr: "Aquí está la carta y el agua.",
+        why: "Con <i>Hier</i> en primera posición, el verbo <i>ist</i> sigue en segunda posición y el sujeto va detrás."
       },
-      { tr: "Los estudiantes están en la universidad." }
+      {
+        tr: "Esto es una tarta.",
+        why: "<i>Torte</i>: la <b>t</b> inicial se pronuncia aspirada, con un soplo de aire, y la <b>e</b> final es una vocal breve y átona, más neutra que la <i>e</i> española: TOR-te."
+      }
     ]
   },
   "lesson:a1-u01-l4": {
     theme: "Vida cotidiana",
-    title: "Cómo estás: tu o Lei",
+    title: "¿Cómo estás? Du o Sie",
     objectives: [
-      "preguntar cómo está alguien, de forma formal e informal",
-      "conjugar el verbo stare",
-      "saber cuándo se pasa de Lei a tu"
+      "preguntar cómo está alguien, con du y con Sie",
+      "conjugar sein en presente",
+      "elegir entre du y Sie según la situación"
     ],
     theory: [
       {
-        h: "Dos maneras de decir «tú»",
-        p: "El italiano distingue <strong>tu</strong> (informal) de <strong>Lei</strong> (formal). Es tu tú/usted, con una diferencia: <em>Lei</em> significa literalmente «ella» y se usa para hombres y mujeres por igual, con el verbo en tercera persona del singular: <em>Come sta?</em> Al escribir suele ir con mayúscula para no confundirlo con «ella»."
+        h: "Du, ihr y Sie: tres formas para «tú», «vosotros» y «usted»",
+        p: "El español tiene <em>tú</em> y <em>usted</em> (y <em>vosotros</em> y <em>ustedes</em> en España; en Latinoamérica solo <em>ustedes</em>). El alemán tiene <strong>du</strong> (una persona de confianza), <strong>ihr</strong> (varias personas de confianza) y <strong>Sie</strong>, la forma de cortesía, idéntica para una sola persona o para varias: <em>Sind Sie Frau Weber?</em>, <em>Wie heißen Sie?</em>"
       },
       {
-        h: "Quién propone pasar al tu",
-        p: "La regla es simple: lo propone la persona mayor o de más rango. La fórmula es <em>Possiamo darci del tu?</em> En un bar, entre gente de la misma edad, en una empresa joven, los italianos pasan al <em>tu</em> muy rápido. En el banco, en el médico, en una oficina pública, el <em>Lei</em> se queda."
+        contrast: "<strong>Sie</strong> corresponde a <em>usted</em> y a <em>ustedes</em>, pero el verbo va en tercera persona del <b>plural</b>, incluso para una sola persona: <em>Sie sind</em>, mientras que en español <em>usted</em> lleva el verbo en singular (<em>usted es</em>). Se escribe siempre con <b>S mayúscula</b>, porque <em>sie</em> con minúscula significa «ella» o «ellos» (al comienzo de la frase las dos formas se ven iguales y lo decide el contexto). En español <em>usted</em> se escribe con minúscula; el equivalente de <em>tutear</em> es <em>duzen</em>."
       },
       {
-        h: "Stare: «estar», pero de cómo te encuentras",
-        p: "Cómo te sientes va con <strong>stare</strong>, no con <em>essere</em>. <em>Come stai?</em> → <em>Sto bene</em>. «Sono bene» es un error que ningún italiano cometería. <em>Stare</em> también sirve para quedarse: <em>Sto a casa</em>."
+        h: "Cuándo pasar al du",
+        p: "Con personas que no conoces, con adultos, con clientes, en las oficinas y en situaciones oficiales se usa <em>Sie</em>, junto con <em>Herr</em> o <em>Frau</em> y el apellido: <em>Frau Weber</em>. El <em>du</em> es normal entre amigos, en la familia, entre personas de la misma edad y en muchos ambientes de trabajo informales. En España el tuteo suele llegar pronto; en los países de habla alemana <em>Sie</em> con apellido suele durar más, así que ante la duda se usa <em>Sie</em> y se espera a que el otro proponga el <em>du</em>. A menudo lo propone la persona mayor o la que tiene más responsabilidad: <em>Wollen wir uns duzen?</em> («¿nos tuteamos?»)."
       },
       {
-        contrast: "Aquí el español ayuda mucho: «¿cómo estás? — estoy bien» usa estar, igual que el italiano usa stare. Pero el reparto no es idéntico. Para la ubicación el italiano prefiere <em>essere</em> donde el español exige estar: <em>sono a casa</em>, <em>il libro è sul tavolo</em>. Traducir «estoy en casa» por «sto a casa» no es falso, pero significa más bien «me quedo en casa»."
+        h: "Wie geht's? Aquí no se usa sein",
+        p: "Para preguntar cómo está alguien, el español usa <em>estar</em> (<em>¿cómo estás?</em>). El alemán usa el verbo <strong>gehen</strong> (ir): <em>Wie geht es dir?</em> o, más corto, <em>Wie geht's?</em> («¿qué tal?», literalmente «¿cómo va?»). Se responde <em>Mir geht es gut</em> («me va bien») o <em>Es geht</em> («regular»). <em>Dir</em>, <em>Ihnen</em> y <em>mir</em> son formas especiales del pronombre que verás más adelante: por ahora aprende las frases enteras."
+      },
+      {
+        trap: "No traduzcas «estoy bien» palabra por palabra con <em>Ich bin gut</em>: significa «soy bueno» (hábil, competente), no «estoy bien». Para decir que estás bien se dice <em>Mir geht es gut</em>."
+      },
+      {
+        h: "Sein, el verbo «ser» y también «estar»",
+        p: "Como el español <em>ser</em>, <strong>sein</strong> es irregular: las formas no se parecen al infinitivo (<em>bin, bist, ist, sind, seid, sind</em>) y hay que memorizarlas. Sirven para decir quién eres y qué es algo: <em>Ich bin Anna</em>, <em>Das ist ein Kaffee</em>. El alemán no distingue entre <em>ser</em> y <em>estar</em>: <em>Wir sind hier</em> es «estamos aquí», y con un adjetivo concreto también se usa <em>sein</em> (<em>Ich bin müde</em>, «estoy cansado»). Solo la fórmula «¿cómo estás? / estoy bien» pasa por <em>gehen</em>."
+      },
+      {
+        h: "Las preguntas: cambia el orden de las palabras",
+        p: "En la pregunta con una palabra interrogativa (<em>wie</em>, <em>was</em>) el verbo se queda en <strong>segunda</strong> posición: <em>Wie geht es Ihnen?</em> En la pregunta de sí o no el verbo pasa a <strong>primera</strong> posición: <em>Sind Sie Frau Weber?</em>, <em>Bist du Anna?</em> En español basta con cambiar la entonación (<em>¿Eres Anna?</em>); en alemán lo normal es cambiar el orden de las palabras."
       }
     ],
     grammar: {
-      title: "Stare (encontrarse, quedarse) — presente",
+      title: "Sein (ser, estar) en presente",
+      note: "Con <b>Sie</b> (cortesía) el verbo es <em>sind</em>, igual que con <em>wir</em> y con <em>sie</em> (ellos).",
       table: {
         head: ["persona", "forma", "ejemplo"],
         rows: [
-          ["io", "sto", "Sto bene, grazie."],
-          ["tu", "stai", "Come stai?"],
-          ["lui / lei / Lei", "sta", "Come sta, signora?"],
-          ["noi", "stiamo", "Stiamo bene."],
-          ["voi", "state", "Come state?"],
-          ["loro", "stanno", "Stanno male."]
+          ["ich", "bin", "Ich bin Anna."],
+          ["du", "bist", "Bist du Anna?"],
+          ["er / sie / es", "ist", "Das Café ist klein."],
+          ["wir", "sind", "Wir sind hier."],
+          ["ihr", "seid", "Seid ihr hier?"],
+          ["sie / Sie", "sind", "Sind Sie Frau Weber?"]
         ]
       },
       examples: [
-        { tr: "Hola Marco, ¿qué tal?", note: "informal" },
-        { tr: "Buenos días, ¿cómo está?", note: "formal" },
-        { tr: "Bien, gracias. ¿Y tú?" },
-        { tr: "No me quejo.", note: "una respuesta muy corriente" },
-        { tr: "Así así." },
-        { tr: "¿Nos tuteamos?" }
+        { tr: "Hola, Julia, ¿qué tal?", note: "informal" },
+        { tr: "Buenos días, señora Weber, ¿cómo está usted?", note: "formal" },
+        { tr: "Estoy bien, gracias. ¿Y tú?" },
+        { tr: "Regular." },
+        { tr: "¿Es usted la señora Weber?", note: "pregunta de sí o no: el verbo va en primera posición" },
+        { tr: "¿Nos tuteamos?", note: "suele proponerlo la persona mayor" }
       ]
     },
     vocab: [
       "¿qué tal? (informal)",
-      "¿cómo está? (formal)",
+      "¿cómo está usted? (formal)",
       "estoy bien",
-      "no estoy bien",
-      "no me quejo",
-      "así así",
+      "regular",
+      "no está mal",
+      "muy bien",
+      "mal",
       "¿y tú?",
-      "estupendamente",
-      "un poco cansado",
-      "señor / señora",
-      "hasta pronto",
+      "¿y usted?",
+      "señor (delante del apellido)",
+      "señora (delante del apellido)",
       "hasta luego"
     ],
     dialogue: [
-      "¡Hola Giulia! ¿Qué tal?",
-      "¡Hola! Estupendamente, ¿y tú?",
-      "Un poco cansado, pero bien. ¡Hasta luego!",
-      "Buenos días señora, ¿cómo está?",
-      "No me quejo, gracias. ¿Y usted?"
+      "¡Hola, Julia! ¿Qué tal?",
+      "¡Hola! Bien, ¿y tú?",
+      "No está mal, gracias. ¡Hasta luego!",
+      "Buenos días, señora Weber. ¿Cómo está usted?",
+      "Bien, gracias. ¿Y usted?"
     ],
     exercises: [
       {
-        q: "Preguntas cómo está alguien a quien tratas de Lei. ¿Qué frase es correcta?",
-        opts: ["Come stai?", "Come sta?", "Come state?"],
-        why: "La forma de Lei va en tercera persona del singular: <i>come sta?</i>"
+        q: "Hablas con la señora Weber, a quien conoces poco. ¿Qué pregunta es correcta?",
+        opts: ["Wie geht es dir?", "Wie geht es Ihnen?", "Wie gehst du?"],
+        why: "Con una persona a la que tratas de usted se usa <b>Ihnen</b>."
       },
       {
-        q: "¿Qué frase es incorrecta?",
-        opts: ["Sto bene.", "Sono bene.", "Non c'è male."],
-        why: "Cómo te encuentras va con <b>stare</b>, nunca con <i>essere</i>."
+        q: "¿Qué frase NO significa «estoy bien»?",
+        opts: ["Mir geht es gut.", "Ich bin gut.", "Es geht mir gut."],
+        why: "<i>Ich bin gut</i> significa «soy bueno» (hábil). Para decir que estás bien se usa <i>gehen</i>."
       },
       {
-        tr: "io, tu, lui/lei, voi",
-        why: "Stare es irregular en el singular y en la tercera del plural (stanno)."
+        tr: "Todas las personas de sein.",
+        why: "<i>Sein</i> es irregular en todas las personas, como «ser». <i>Sind</i> vale para <i>wir</i>, <i>sie</i> y <i>Sie</i>."
       },
       {
-        q: "Completa: «Come ___, ragazzi?» (¿Qué tal, chicos?)",
-        why: "Te diriges a un grupo → la forma de voi: state."
+        q: "Completa: «___ Sie Frau Weber?» (¿Es usted la señora Weber?)",
+        hint: "pregunta de sí o no: el verbo va primero",
+        why: "<b>Sind</b>: la forma de cortesía usa la tercera persona del plural, no la del singular como el español «usted es»."
       },
-      { q: "Traduce informalmente: «Estoy bien, gracias. ¿Y tú?»", why: "Sto bene, grazie. E tu?" },
       {
-        q: "Estás en un bar. El camarero, que te conoce desde hace años, te saluda primero.",
-        setting: "El bar del barrio, ocho de la mañana.",
+        q: "Traduce tuteando: «Estoy bien, gracias. ¿Y tú?»",
+        why: "<i>Mir geht es gut, danke. Und dir?</i> Al tutear, la pregunta termina con <i>dir</i>."
+      },
+      {
+        q: "En el café, el camarero que te conoce desde hace años te saluda primero.",
+        setting: "La cafetería del barrio, ocho de la mañana.",
         lines: [
-          { tr: "¡Hola! ¿Qué tal esta mañana?" },
-          { tr: "Di que estás bien y devuelve la pregunta.", answerTr: "Bien, ¿y tú?" },
-          { tr: "¡Estupendo! ¿Lo de siempre, un café?" },
-          { tr: "Di que sí y da las gracias.", answerTr: "¡Sí, gracias!" }
+          { tr: "¡Hola! ¿Qué tal hoy?" },
+          { tr: "Responde que estás bien y devuelve la pregunta.", answerTr: "Estoy bien, ¿y tú?" },
+          { tr: "¡Muy bien! ¿Un café?" },
+          { tr: "Di que sí.", answerTr: "¡Sí, por favor!" }
         ]
       },
       {
-        q: "Empareja la respuesta con lo que transmite.",
-        pairs: ["muy bien", "no me quejo", "así así", "mal"]
+        q: "Une cada respuesta con su significado.",
+        pairs: ["regular", "muy bien", "mal", "no está mal"]
       },
-      { tr: "Buenas tardes señora, ¿cómo está?" },
-      { tr: "No me quejo, gracias. ¿Y usted?" }
+      {
+        tr: "Buenos días, señora Weber, ¿cómo está usted?",
+        why: "<i>Ihnen</i> suena «ínen», con la <i>i</i> larga: la <b>h</b> tras la vocal no se pronuncia."
+      },
+      {
+        tr: "Bien, gracias. ¿Y usted?",
+        why: "<i>Und Ihnen?</i> mantiene el tono de cortesía: la pregunta termina con la forma <i>Ihnen</i>."
+      }
     ]
   },
   "lesson:a1-u01-test": {
-    theme: "Prueba",
-    title: "Prueba de la unidad 1",
-    objectives: ["comprobar saludos, essere, stare, género y artículos"],
+    theme: "Verificación",
+    title: "Verificación de la unidad 1",
+    objectives: ["comprobar saludos, el presente de heißen y sein, género, plural y artículos"],
     theory: [
       {
-        p: "Diez preguntas sobre toda la unidad. Se aprueba con un 70%. No mires las lecciones: si no te acuerdas de algo, es mejor volver atrás y repasarlo."
+        p: "Diez preguntas sobre toda la unidad. Se supera con el 70 %. No vuelvas a mirar las lecciones mientras respondes: si no recuerdas algo, es mejor volver a repasar."
       }
     ],
     exercises: [
       {
-        q: "Son las seis y media de la tarde y entras en una tienda. ¿Qué dices?",
-        opts: ["Buongiorno", "Buonasera", "Buonanotte"],
-        why: "A partir de las cuatro o cinco los italianos pasan a buonasera."
-      },
-      { q: "«Noi ___ in ritardo.» (Llegamos tarde.)", why: "essere, la forma de noi." },
-      { q: "«Come ___?» preguntando a una amiga cómo está.", why: "stare, la forma de tu." },
-      { q: "Elige el artículo determinado.", items: [, , , ] },
-      {
-        q: "El plural de «l'amico»:",
-        opts: ["gli amici", "i amici", "le amiche"],
-        why: "El l' masculino pasa a gli."
+        q: "Son las 18:30 y entras en una tienda. ¿Qué dices?",
+        opts: ["Guten Morgen", "Guten Abend", "Gute Nacht"],
+        why: "Hacia la noche se dice <i>Guten Abend</i>. <i>Gute Nacht</i> es solo una despedida, a diferencia de «buenas noches»."
       },
       {
-        q: "¿Qué sustantivos no cambian en plural?",
-        opts: ["il caffè", "la sedia", "il bar", "la città"]
+        q: "Completa: «Wir ___ hier.» (Estamos aquí.)",
+        why: "<i>Sein</i>, forma de <i>wir</i>: <b>sind</b>. En alemán sirve tanto para «ser» como para «estar»."
       },
-      { q: "«Un agua, por favor.»", why: "Un'acqua, per favore: femenino ante vocal." },
-      { tr: "Los estudiantes están en el bar." },
-      { tr: "Dos cafés y un cruasán, por favor." },
-      { tr: "Buenos días, ¿cómo está?" }
+      {
+        q: "Completa: «Wie ___ Sie?» (¿Cómo se llama usted?)",
+        why: "<i>Heißen</i>: con <i>Sie</i> el verbo va en tercera persona del plural."
+      },
+      {
+        q: "Elige el artículo determinado.",
+        items: ["mesa", "taza", "niño", "tarta"]
+      },
+      {
+        q: "El plural de «das Kind» es:",
+        opts: ["die Kinde", "die Kinder", "die Kinds"],
+        why: "<i>Die Kinder</i>: terminación <b>-er</b>."
+      },
+      {
+        q: "¿Qué frases son correctas?",
+        opts: [
+          "Das ist ein Tasse.",
+          "Das ist eine Tasse.",
+          "Das ist kein Tee.",
+          "Das ist ein Kaffee.",
+          "Das ist keine Kaffee."
+        ],
+        why: "<i>Tasse</i> es femenino (<i>eine</i>); <i>Tee</i> y <i>Kaffee</i> son masculinos (<i>kein</i>, <i>ein</i>)."
+      },
+      {
+        q: "Traduce: «Dos tés, por favor.»",
+        why: "<i>Zwei Tee, bitte</i> es una fórmula de pedido con raciones sobreentendidas (dos tazas de té). El plural normal es <i>zwei Tees</i>, o bien <i>zwei Tassen Tee</i>."
+      },
+      {
+        tr: "¿Cómo está usted, señora Weber?",
+        why: "Pregunta con <i>Wie</i>: el verbo <i>geht</i> está en segunda posición."
+      },
+      { tr: "Dos cafés y un panecillo, por favor." },
+      { tr: "Buenos días, ¿cómo está usted?" }
     ]
   },
   "unit:a1-u02": { title: "Quién eres", grammarNote: "avere · números · profesiones y nacionalidades" },
