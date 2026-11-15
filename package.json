@@ -15,7 +15,13 @@
     "check:precache": "node scripts/check_precache.mjs",
     "check:swversion": "node scripts/check_swversion.mjs",
     "lint": "eslint .",
-    "serve": "node scripts/serve.mjs"
+    "serve": "node scripts/serve.mjs",
+    "snapshot:target": "node scripts/snapshot_target.mjs",
+    "check:porting": "node scripts/check_porting.mjs",
+    "review:lot": "node scripts/review_lot.mjs",
+    "audio:strings": "node scripts/extract_strings.mjs",
+    "audio:build": "uv run --script scripts/build_audio.py",
+    "audio:prune": "node scripts/prune_audio.mjs"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
