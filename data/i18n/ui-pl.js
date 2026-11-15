@@ -740,12 +740,7 @@ LINGUAI.addUI("pl", {
   "chat.consentHint": "Osobna od tej wyżej, bo wychodzi co innego: nie jedno zdanie, a cała rozmowa z danej sceny. Wycofasz ją tutaj, kiedy zechcesz.",
   "chat.consentOn": "Zgoda na rozmowę włączona",
   "chat.consentOff": "Zgoda na rozmowę wycofana",
-  "chat.sc.bar": "W barze",
-  "chat.sc.vicino": "Sąsiad na klatce",
-  "chat.sc.mercato": "Na targu",
-  "chat.sc.ufficio": "W urzędzie",
-  "chat.sc.colloquio": "Rozmowa o pracę",
-  "chat.sc.medico": "U lekarza",
+  "chat.sc.cafe": "W kawiarni",
 
   "anki.title": "Talia dla Anki",
   "anki.hint": "Słowa i tłumaczenia w formacie, który czyta Anki, arkusz i każdy inny program do fiszek.",

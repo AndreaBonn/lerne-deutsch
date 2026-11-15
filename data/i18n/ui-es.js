@@ -740,12 +740,7 @@ LINGUAI.addUI("es", {
   "chat.consentHint": "Separado del anterior, porque sale otra cosa: no una frase, sino toda la conversación de esa escena. Puedes retirarlo aquí cuando quieras.",
   "chat.consentOn": "Consentimiento de conversación activado",
   "chat.consentOff": "Consentimiento de conversación retirado",
-  "chat.sc.bar": "En el bar",
-  "chat.sc.vicino": "Un vecino en la escalera",
-  "chat.sc.mercato": "En el mercado",
-  "chat.sc.ufficio": "En el ayuntamiento",
-  "chat.sc.colloquio": "Una entrevista de trabajo",
-  "chat.sc.medico": "En el médico",
+  "chat.sc.cafe": "En la cafetería",
 
   "anki.title": "Mazo para Anki",
   "anki.hint": "Palabras y traducciones en el formato que leen Anki, una hoja de cálculo y cualquier otro programa de fichas.",

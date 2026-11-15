@@ -737,12 +737,7 @@ LINGUAI.addUI("fr", {
   "chat.consentHint": "Distinct du précédent, car ce qui sort est différent : non pas une phrase, mais toute la conversation de cette scène. Tu peux le retirer ici quand tu veux.",
   "chat.consentOn": "Consentement de conversation activé",
   "chat.consentOff": "Consentement de conversation retiré",
-  "chat.sc.bar": "Au bar",
-  "chat.sc.vicino": "Un voisin dans l'escalier",
-  "chat.sc.mercato": "Au marché",
-  "chat.sc.ufficio": "À la mairie",
-  "chat.sc.colloquio": "Un entretien d'embauche",
-  "chat.sc.medico": "Chez le médecin",
+  "chat.sc.cafe": "Au café",
 
   "anki.title": "Paquet pour Anki",
   "anki.hint": "Mots et traductions au format que lisent Anki, un tableur et tout autre logiciel de cartes.",

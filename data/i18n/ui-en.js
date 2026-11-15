@@ -729,12 +729,7 @@ LINGUAI.addUI("en", {
   "chat.consentHint": "Separate from the one above, because what leaves is different: not one sentence but the whole conversation in that scene. You can withdraw it here whenever you like.",
   "chat.consentOn": "Conversation consent on",
   "chat.consentOff": "Conversation consent withdrawn",
-  "chat.sc.bar": "At the bar",
-  "chat.sc.vicino": "A neighbour on the stairs",
-  "chat.sc.mercato": "At the market",
-  "chat.sc.ufficio": "At the council office",
-  "chat.sc.colloquio": "A job interview",
-  "chat.sc.medico": "At the doctor's",
+  "chat.sc.cafe": "At the café",
 
   "anki.title": "Deck for Anki",
   "anki.hint": "Words and translations in the format Anki, a spreadsheet and every other flashcard program can read.",
