@@ -5,483 +5,581 @@
    Sprawdza to gate parzystości w scripts/parity.mjs.
    ============================================================ */
 LINGUAI.addStrings("pl", {
-  "unit:a1-u01": { title: "Rytuał kawy", grammarNote: "essere · rodzaj i liczba · rodzajniki" },
+  "unit:a1-u01": {
+    title: "W kawiarni",
+    grammarNote: "czas teraźniejszy · rodzaj i liczba mnoga · rodzajniki · du i Sie"
+  },
   "lesson:a1-u01-l1": {
     theme: "Życie codzienne",
     title: "Powitania i pierwsze zamówienie",
     objectives: [
-      "przywitać się i pożegnać w odpowiedniej porze dnia",
-      "zamówić kawę tak, jak robią to Włosi",
-      "odmienić czasownik essere w czasie teraźniejszym"
+      "witać się i żegnać zależnie od pory dnia",
+      "zamówić kawę formułą „einen Kaffee, bitte”",
+      "odmieniać heißen w czasie teraźniejszym i stawiać czasownik na drugim miejscu"
     ],
     theory: [
       {
-        h: "Powitanie zależy od godziny, nie od nastroju",
-        p: "Włoskie powitania dzielą dobę na dwie części. <strong>Buongiorno</strong> obowiązuje od rana mniej więcej do wczesnego popołudnia. Potem, gdzieś między 14 a 17 (granica jest płynna i zależy od regionu), przechodzi się na <strong>buonasera</strong> — i mówi się tak także wchodząc do baru o 18, choć po polsku „dobry wieczór” brzmiałoby wtedy dziwnie. <strong>Buonanotte</strong> to nie powitanie, tylko pożegnanie przed snem."
+        h: "Powitanie zależy od pory dnia, a niemiecki ma ich kilka",
+        p: "Po polsku rano i w ciągu dnia mówi się <strong>dzień dobry</strong>, a wieczorem <strong>dobry wieczór</strong>. Niemiecki rozróżnia: <strong>Guten Morgen</strong> rano, <strong>Guten Tag</strong> od późnego przedpołudnia do wieczora, <strong>Guten Abend</strong> kiedy zapada wieczór. Granice są płynne i różnią się u różnych osób. <strong>Gute Nacht</strong> to nie powitanie, tylko odpowiednik „dobranoc”: mówi się je, żegnając się późnym wieczorem albo idąc spać."
       },
       {
-        h: "Ciao to nie zawsze bezpieczny wybór",
-        p: "<strong>Ciao</strong> znaczy jednocześnie „cześć” i „pa”, ale używa się go tylko z osobami, do których mówisz <em>tu</em>: znajomi, rówieśnicy, rodzina, młodzi barmani. Do kelnera po pięćdziesiątce, do urzędnika, do właścicielki sklepu, którą widzisz pierwszy raz — <strong>buongiorno</strong>. Wejście z „ciao” do apteki brzmi tak, jak polskie „siema” w banku."
+        h: "Hallo i Tschüss: niemieckie „cześć” ma dwa słowa",
+        p: "Między osobami, które mówią sobie na <em>du</em>, mówi się <strong>Hallo</strong> na powitanie i <strong>Tschüss</strong> na pożegnanie. Z obcymi i w sytuacjach oficjalnych mówi się <strong>Guten Tag</strong> przy przyjściu i <strong>Auf Wiedersehen</strong> przy wyjściu (jak „do widzenia”). Na południu Niemiec i w Austrii usłyszysz też <em>Servus</em> i <em>Grüß Gott</em>, w Szwajcarii <em>Grüezi</em>: zrozumiesz je od razu, ale na początek <em>Guten Tag</em> pasuje wszędzie."
       },
       {
-        contrast: "W polskim „dzień dobry” działa cały dzień. Po włosku ta jedna forma nie wystarczy — musisz wybrać porę. To najczęstszy błąd Polaków w pierwszym tygodniu we Włoszech."
+        contrast: "Po polsku <em>cześć</em> służy i na powitanie, i na pożegnanie. Po niemiecku te dwie funkcje się rozdzielają (<em>Hallo</em> na przywitanie, <em>Tschüss</em> na pożegnanie), a dzień dzieli się na trzy powitania. Typowy błąd to <em>Gute Nacht</em> przy wejściu do lokalu wieczorem: tak jak „dobranoc”, to tylko formuła pożegnalna."
       },
       {
-        h: "Essere — czasownik, bez którego nie zbudujesz zdania",
-        p: "<strong>Essere</strong> znaczy „być”. Jego formy nie przypominają bezokolicznika (<em>sono</em>, <em>sei</em>, <em>è</em>…), więc nie da się ich wyprowadzić z reguły — trzeba je po prostu znać. Dobra wiadomość: powtórzysz je tyle razy, że wejdą same."
+        h: "Czasownik stoi na drugim miejscu",
+        p: "W zdaniu głównym oznajmującym odmieniony czasownik zajmuje <strong>drugie miejsce</strong>, cokolwiek stoi przed nim: <em>Ich trinke Tee</em>, ale też <em>Heute trinke ich Tee</em>, gdzie podmiot przechodzi za czasownik. Na pierwszym miejscu może stać jedno słowo albo grupa słów, nigdy dwa oddzielne elementy."
       },
       {
-        tip: "Zaimki osobowe (io, tu, lui…) zwykle się pomija, bo końcówka czasownika już mówi, kto wykonuje czynność. <em>Sono polacca</em> wystarczy; <em>io sono polacca</em> dodaje nacisk: „<b>ja</b> jestem Polką (a ty nie)”."
+        contrast: "Polski ma swobodny szyk: <em>Dziś piję herbatę</em>, <em>Piję dziś herbatę</em> i <em>Herbatę piję dziś</em> są poprawne. W niemieckim czasownik jest na stałe na drugim miejscu, a wybierasz tylko, co stoi przed nim. Druga różnica: po polsku podmiot-zaimek się pomija (<em>Nazywam się Anna</em>, <em>Mówię po niemiecku</em>), po niemiecku nie: <em>Ich heiße Anna</em>, <em>Ich spreche Deutsch</em>. Podmiotem nie musi być zaimek (<em>Der Kaffee ist heiß</em>), ale podmiot w zdaniu oznajmującym zwykle się wyraża. Wreszcie <em>heißen</em> nie jest zwrotne: nie ma odpowiednika „się” (<em>nazywam się</em>), mówi się po prostu <em>Ich heiße</em>."
+      },
+      {
+        h: "Wymowa: siedem pułapek dla polskiego ucha",
+        list: [
+          "<b>ü</b> i <b>ö</b> nie istnieją po polsku: <b>ü</b> to usta ułożone jak do <em>u</em> i język jak do <em>i</em> (<em>Tschüss</em>, <em>Bücher</em>), a <b>ö</b> analogicznie z <em>e</em> (<em>schön</em>, <em>möchten</em>)",
+          "<b>ei</b> czyta się <em>aj</em> (<em>heißen</em> brzmi „hajsen”), a <b>ie</b> to długie <em>i</em> (<em>Wie</em> brzmi „wi:”), nie „i-e”",
+          "<b>z</b> czyta się jak polskie <em>c</em> (<em>Zucker</em>, <em>zwei</em>), nie jak polskie <em>z</em>; <b>w</b> czyta się jak polskie <em>w</em> (<em>Wasser</em>), a niemieckie <b>v</b> w słowach rodzimych brzmi często jak <em>f</em> (<em>Vater</em>)",
+          "<b>s</b> na początku wyrazu lub sylaby przed samogłoską jest dźwięczne, jak polskie <em>z</em> (<em>Saft</em>, <em>Rose</em>); na końcu wyrazu jest bezdźwięczne (<em>Eis</em>); <b>ß</b> i <b>ss</b> są zawsze bezdźwięczne, jak polskie <em>s</em>: <em>heißen</em>, <em>Tschüss</em>",
+          "samogłoski mają długość, a po polsku jej nie ma: <em>Tag</em> ma długie <em>a</em> i końcowe bezdźwięczne <em>k</em> ([ta:k]); tak jak w polskim <em>dąb</em>, dźwięczna spółgłoska na końcu ogłusza się, ale długość samogłoski zostaje, więc nie [tak]; długość bywa rozróżnikiem (<em>Staat</em> i <em>Stadt</em>)",
+          "<b>ch</b> po <em>i</em> i <em>e</em> to cichy szum, którego polski nie ma (<em>ich</em>, <em>Rechnung</em>); po <em>a</em>, <em>o</em>, <em>u</em> brzmi bliżej polskiego <em>ch</em> (<em>Buch</em>)",
+          "<b>h</b> na początku wyrazu to lekki wydech, bez tarcia polskiego <em>h</em> i <em>ch</em> (<em>Hallo</em>, <em>heißen</em>); po samogłosce jest zwykle niemy i oznacza długą samogłoskę (<em>gehen</em>), ale na początku akcentowanej sylaby wewnątrz wyrazu się wymawia (<em>behalten</em>)"
+        ]
+      },
+      {
+        trap: "W Niemczech <strong>Kaffee</strong> (napój) ma zwykle akcent na pierwszej sylabie, KÀ-fe, a <strong>Café</strong> (lokal) na ostatniej, jak polskie „kafe”; w niektórych odmianach regionalnych, na przykład w Austrii, także <em>Kaffee</em> może mieć akcent na końcu. Nie daj się zwieść podobnej pisowni: to dwa różne słowa. Po polsku akcent pada zwykle na przedostatnią sylabę, po niemiecku często na pierwszą."
+      },
+      {
+        tip: "<em>Einen Kaffee, bitte</em> to pełna formuła: zapamiętaj <em>einen Kaffee</em>, <em>einen Tee</em>, <em>ein Wasser</em>, <em>eine Cola</em>. Dlaczego <em>einen</em>, a nie <em>ein</em>, wyjaśni inna jednostka (to biernik, jak polskie <em>poproszę kawę</em>): na razie powtarzaj formułę, która przy rzeczownikach rodzaju męskiego (<em>der Kaffee</em>, <em>der Tee</em>) używa <em>einen</em>."
       }
     ],
     grammar: {
-      title: "Essere (być) — czas teraźniejszy",
-      note: "Zwróć uwagę na <b>è</b> z akcentem — bez niego <em>e</em> znaczy „i”. To dwa różne słowa.",
+      title: "Czas teraźniejszy czasownika heißen (nazywać się)",
+      note: "Uwaga na <b>ß</b>: <em>heißen</em> brzmi jak podwójne s. Forma <em>heißt</em> jest taka sama dla <em>du</em>, <em>er/sie/es</em> i <em>ihr</em>, więc to zaimek mówi, kto mówi.",
       table: {
-        head: ["osoba", "forma", "po polsku"],
+        head: ["osoba", "forma", "przykład"],
         rows: [
-          ["io", "sono", "jestem"],
-          ["tu", "sei", "jesteś (nieformalnie)"],
-          ["lui / lei / Lei", "è", "on / ona jest; Pan/Pani jest"],
-          ["noi", "siamo", "jesteśmy"],
-          ["voi", "siete", "jesteście"],
-          ["loro", "sono", "są"]
+          ["ich", "heiße", "Ich heiße Anna."],
+          ["du", "heißt", "Wie heißt du?"],
+          ["er / sie / es", "heißt", "Er heißt Tom."],
+          ["wir", "heißen", "Wir heißen Weber."],
+          ["ihr", "heißt", "Wie heißt ihr?"],
+          ["sie / Sie", "heißen", "Wie heißen Sie?"]
         ]
       },
       examples: [
         {
           tr: "Dzień dobry, poproszę kawę.",
-          note: "„un caffè” to espresso — nie trzeba tego doprecyzowywać"
+          note: "„einen Kaffee” uczy się jako całość, zob. wskazówkę wyżej"
         },
-        { tr: "Jestem Anna, miło mi." },
-        { tr: "Jesteś z Rzymu?" },
-        { tr: "Kawa jest gorąca." },
-        { tr: "Jesteśmy spóźnieni." },
-        { tr: "Oni są w barze." }
+        { tr: "Nazywam się Anna." },
+        { tr: "Jak masz na imię?" },
+        { tr: "Jak się Pan nazywa?", note: "forma grzecznościowa, zob. lekcję 4" },
+        { tr: "Dziś piję herbatę.", note: "czasownik zostaje na drugim miejscu, podmiot idzie za nim" },
+        { tr: "Kawiarnia jest mała." }
       ]
     },
     vocab: [
-      "dzień dobry (rano i po południu)",
-      "dobry wieczór (od ok. 16-17)",
-      "dobranoc (tylko przy pożegnaniu)",
-      "cześć / pa (nieformalnie)",
-      "do widzenia (formalnie)",
-      "proszę (prosząc o coś)",
+      "dzień dobry (rano)",
+      "dzień dobry (od późnego przedpołudnia do wieczora)",
+      "dobry wieczór",
+      "dobranoc (na pożegnanie późnym wieczorem lub przed snem)",
+      "cześć (na powitanie)",
+      "cześć, pa (na pożegnanie)",
+      "do widzenia",
+      "proszę (przy zamówieniu, podając coś)",
       "dziękuję",
-      "proszę bardzo / nie ma za co",
-      "espresso",
-      "cappuccino",
-      "rogalik",
-      "bar, kawiarnia",
-      "miło mi (przy poznaniu)",
-      "przepraszam (formalnie)"
+      "przepraszam",
+      "kawa",
+      "herbata",
+      "woda",
+      "kawiarnia"
     ],
     dialogue: [
-      "Dzień dobry! Słucham.",
-      "Dzień dobry. Kawę i rogalika poproszę.",
-      "Już podaję. To dwa pięćdziesiąt.",
-      "Proszę. Dziękuję!",
-      "Proszę bardzo, miłego dnia!"
+      "Dzień dobry! Co podać?",
+      "Dzień dobry. Poproszę kawę.",
+      "Chętnie. Coś jeszcze?",
+      "Nie, dziękuję. To wszystko.",
+      "Proszę bardzo. Miłego dnia!"
     ],
     culture: {
-      title: "Okiem Włocha: kawa ma swoje zasady",
-      text: "<p>We włoskim barze kawę pije się <b>na stojąco, przy barze</b> (al banco) i trwa to trzy minuty. Za stolik płaci się osobno, czasem dwa razy więcej — to nie oszustwo, tylko dwie różne usługi w cenniku.</p><p><b>Cappuccino po jedenastej</b> to sygnał, że jesteś turystą: mleko uchodzi za ciężkie i pije się je do śniadania. Po obiedzie zamawia się <i>un caffè</i>, ewentualnie <i>un macchiato</i> — espresso z kroplą mleka.</p><p>Płaci się zwykle <b>po wypiciu</b>, chyba że bar ma kasę przy wejściu — wtedy najpierw <i>lo scontrino</i> (paragon), potem kawa.</p>"
+      title: "Niemieckim okiem: Café, Kaffeehaus i popołudniowa kawa",
+      text: "<p>W Niemczech typowy lokal to nie bar z ladą: siada się przy stoliku, kelner przychodzi przyjąć zamówienie, a rachunek prosi się przy stoliku słowami <i>Zahlen, bitte</i> albo <i>Die Rechnung, bitte</i>. Zwykle zaokrągla się kwotę w górę, zostawiając drobny dodatek: napiwek nazywa się <i>Trinkgeld</i>.</p><p>Jeśli zamówisz <i>einen Kaffee</i>, zwykle dostaniesz kawę w dużej filiżance, parzoną w filtrze albo z ekspresu, a nie małe espresso: espresso zamawia się po nazwie, <i>einen Espresso</i>. Tradycyjna pora to popołudnie, <i>Kaffee und Kuchen</i>, czyli kawa i ciasto: przerwa między obiadem a kolacją, która wciąż jest żywym zwyczajem, szczególnie w niedzielę i w rodzinie.</p><p>W Austrii wiedeńska kawiarnia, czyli <i>das Kaffeehaus</i>, ma inną logikę: można w nim siedzieć długo przy jednej kawie, zwykle podawanej ze szklanką wody, i czytać gazetę. W Szwajcarii taką kawę nazywa się często <i>Café crème</i>.</p>"
     },
     exercises: [
       {
-        q: "Wchodzisz do baru o 9:30 rano. Co mówisz?",
-        opts: ["Buonasera", "Buongiorno", "Buonanotte"],
-        why: "Buongiorno obowiązuje od rana do wczesnego popołudnia. Buonanotte to wyłącznie pożegnanie przed snem."
+        q: "Wchodzisz do kawiarni o 9 rano. Co mówisz?",
+        opts: ["Guten Abend", "Guten Morgen", "Gute Nacht"],
+        why: "<i>Guten Morgen</i> pasuje rano. <i>Gute Nacht</i> to pożegnanie późnym wieczorem albo przed snem."
       },
       {
-        q: "Kelner ma jakieś sześćdziesiąt lat i widzisz go pierwszy raz. Które powitanie jest właściwe?",
-        opts: ["Ciao!", "Buongiorno!", "Buonanotte!"],
-        why: "„Ciao” zarezerwuj dla osób, do których mówisz na „ty”. W barze wobec obcej osoby — buongiorno."
+        q: "Które zdanie oznajmujące ma czasownik na właściwym miejscu?",
+        opts: ["Ich Anna heiße.", "Heiße ich Anna.", "Ich heiße Anna."],
+        why: "Odmieniony czasownik stoi na drugim miejscu, a podmiot <b>ich</b> się nie pomija."
       },
       {
-        tr: "Cała odmiana — bez ściągi.",
-        why: "Essere jest nieregularny w każdej osobie. To jedna z dwóch odmian, których naprawdę trzeba się nauczyć na pamięć."
+        tr: "Cała odmiana, bez podglądania.",
+        why: "<i>Heißen</i> odmienia się regularnie: temat <i>heiß-</i> plus końcówka. Dla <i>du</i>, <i>er</i> i <i>ihr</i> forma jest ta sama: <b>heißt</b>."
       },
       {
-        q: "Uzupełnij: „Anna e Marco ___ italiani.” (Anna i Marco są Włochami.)",
-        hint: "trzecia osoba liczby mnogiej",
-        why: "Loro sono. Uwaga: forma „sono” obsługuje jednocześnie <b>io</b> i <b>loro</b> — kontekst rozstrzyga, o kogo chodzi."
+        q: "Uzupełnij: „Wie ___ du?” (Jak masz na imię?)",
+        hint: "druga osoba liczby pojedynczej od heißen",
+        why: "Przy <b>du</b> końcówka to <i>-t</i>: <i>du heißt</i>. Końcówka <i>-st</i> zlewa się z <i>ß</i> tematu."
       },
       {
-        q: "Przetłumacz: „Jestem z Polski.”",
-        hint: "essere + da + kraj",
-        why: "Sono dalla Polonia. Nazwy krajów biorą rodzajnik: la Polonia → dalla Polonia."
+        q: "Przetłumacz: „Dzień dobry, poproszę kawę.”",
+        why: "Mówi się <i>Einen Kaffee, bitte</i>: w tej formule <i>bitte</i> stoi na końcu (może też stać przed <i>einen Kaffee</i>), a <i>Kaffee</i> pisze się wielką literą, jak każdy niemiecki rzeczownik."
       },
       {
-        tr: "Poproszę kawę i rogalika.",
-        why: "Włoski nie ma osobnego słowa na „poproszę” — mówi się po prostu, co chcesz, i dodaje <i>per favore</i>."
+        tr: "Dzień dobry, nazywam się Anna.",
+        why: "Po przecinku zaczyna się zdanie główne: podmiot <i>ich</i>, potem czasownik <i>heiße</i> na drugim miejscu."
       },
       {
-        q: "Połącz zwroty z ich znaczeniem.",
-        pairs: ["dziękuję", "proszę bardzo", "przepraszam (formalnie)", "do widzenia"]
+        q: "Dopasuj każde słowo do jego znaczenia.",
+        pairs: ["dziękuję", "proszę", "przepraszam", "do widzenia"]
       },
       {
-        tr: "Dobry wieczór, poproszę cappuccino.",
-        why: "Uwaga na podwójne <b>cc</b> i <b>pp</b> — po włosku słychać je wyraźnie dłużej niż pojedyncze."
+        tr: "Dobry wieczór, poproszę herbatę.",
+        why: "Uwaga na <i>Abend</i>: <b>b</b> jest dźwięczne, a końcowe <b>d</b> wymawia się jak <i>t</i>."
       },
       {
         tr: "Dzień dobry, poproszę kawę.",
-        why: "„Caffè” ma akcent na ostatniej sylabie: kaf-FE, nie KA-fe."
+        why: "W Niemczech akcent w <i>Kaffee</i> pada zwykle na pierwszą sylabę: KÀ-fe."
       }
     ]
   },
   "lesson:a1-u01-l2": {
     theme: "Gramatyka podstawowa",
-    title: "Rodzaj rzeczownika",
+    title: "Rodzaj i liczba mnoga rzeczowników",
     objectives: [
-      "rozpoznać rodzaj rzeczownika po końcówce",
-      "utworzyć liczbę mnogą według wzorca -o/-i, -a/-e, -e/-i",
-      "poradzić sobie z rzeczownikami nieodmiennymi typu il bar, la città"
+      "zauważyć, że niemiecki ma trzy rodzaje: der, die, das",
+      "uczyć się każdego rzeczownika razem z rodzajnikiem i liczbą mnogą",
+      "liczyć od 1 do 20"
     ],
     theory: [
       {
-        h: "Dwa rodzaje, nie trzy",
-        p: "Włoski ma tylko rodzaj męski i żeński — nijakiego nie ma. Każdy rzeczownik należy do jednego z nich, także wtedy, gdy chodzi o przedmiot: <em>il tavolo</em> (stół) jest męski, <em>la sedia</em> (krzesło) żeńska. Rodzaj nie jest kwestią logiki, tylko formy słowa."
+        h: "Trzy rodzaje, jak po polsku, ale z rodzajnikiem",
+        p: "Polski ma trzy rodzaje, niemiecki też: <strong>der</strong> (męski), <strong>die</strong> (żeński), <strong>das</strong> (nijaki). Różnica jest w tym, jak je widać. Po polsku rodzaj zdradza końcówka rzeczownika (<em>-a</em> to zwykle żeński), a rodzajnika nie ma wcale. Po niemiecku rodzaj widać w <strong>rodzajniku</strong> stojącym przed rzeczownikiem: <em>der Tisch</em> (stół), <em>die Tasse</em> (filiżanka), <em>das Buch</em> (książka). Rodzajnik to dla ciebie nowa kategoria."
       },
       {
-        h: "Trzy wzorce, które załatwiają większość słów",
+        contrast: "Rodzaj niemiecki rzadko pokrywa się z polskim, więc nie da się go zgadnąć przez tłumaczenie. <em>Książka</em> jest żeńska, ale <em>das Buch</em> jest nijakie; <em>krzesło</em> jest nijakie, ale <em>der Stuhl</em> jest męski; <em>mleko</em> jest nijakie, ale <em>die Milch</em> jest żeńska; <em>dom</em> jest męski, ale <em>das Haus</em> jest nijakie; <em>słońce</em> jest nijakie, ale <em>die Sonne</em> jest żeńska. Zdarzają się też zgodności (<em>stół</em> i <em>der Tisch</em>, <em>dziecko</em> i <em>das Kind</em>), ale na nich nie można polegać. Dlatego każdy rzeczownik uczysz się z rodzajnikiem, nigdy osobno."
+      },
+      {
+        h: "Kilka wskazówek, żadnego prawa",
         list: [
-          "końcówka <b>-o</b> → rodzaj męski, liczba mnoga <b>-i</b>: <em>il libro → i libri</em>",
-          "końcówka <b>-a</b> → rodzaj żeński, liczba mnoga <b>-e</b>: <em>la casa → le case</em>",
-          "końcówka <b>-e</b> → rodzaj męski <i>albo</i> żeński, liczba mnoga zawsze <b>-i</b>: <em>il fiore → i fiori</em>, <em>la chiave → le chiavi</em>"
+          "rzeczowniki z przyrostkiem <b>-ung</b> są żeńskie: <em>die Zeitung</em>, <em>die Rechnung</em>",
+          "zdrobnienia z przyrostkiem <b>-chen</b> są nijakie: <em>das Brötchen</em> (uwaga: <em>der Kuchen</em> nie jest zdrobnieniem i jest rodzaju męskiego)",
+          "wiele rzeczowników na nieakcentowane <b>-e</b> jest żeńskich: <em>die Tasse</em>, <em>die Torte</em>",
+          "wskazówki mają wyjątki (<em>der Käse</em> kończy się na nieakcentowane -e i jest męski): <b>rodzajnik uczy się razem z rzeczownikiem</b>"
         ]
       },
       {
-        trap: "Rzeczowniki na <b>-e</b> to jedyna grupa, przy której trzeba zapamiętać rodzaj razem ze słowem. Ucz się ich zawsze z rodzajnikiem: nie „fiore”, tylko <b>il fiore</b>."
+        h: "Liczba mnoga: jeden rodzajnik, różne końcówki",
+        p: "W mianowniku liczby mnogiej rodzajnik określony to zawsze <strong>die</strong>, dla wszystkich trzech rodzajów (w innych przypadkach, które poznasz później, się zmienia). Po polsku liczba mnoga zmienia końcówkę rzeczownika (<em>stół, stoły</em>), po niemiecku tak samo zmienia się rzeczownik, czasem z umlautem na samogłosce: <em>die Tische</em>, <em>die Stühle</em>, <em>die Tassen</em>, <em>die Bücher</em>, <em>die Kinder</em>. Niektóre rzeczowniki zostają bez zmian (<em>die Kuchen</em>, <em>die Brötchen</em>), niewiele bierze <em>-s</em> (<em>die Cafés</em>, <em>die Kaffees</em>)."
       },
       {
-        h: "Słowa, które się nie zmieniają",
-        p: "Rzeczowniki zakończone akcentowaną samogłoską (<em>la città</em>, <em>il caffè</em>) oraz zapożyczenia (<em>il bar</em>, <em>lo sport</em>, <em>il film</em>) mają tę samą formę w liczbie pojedynczej i mnogiej. Liczbę rozpoznasz wtedy tylko po rodzajniku: <em>la città → le città</em>."
+        trap: "Liczby mnogiej nie da się wyprowadzić z pojedynczej: <em>der Tisch → die Tische</em>, ale <em>das Buch → die Bücher</em>. Po polsku też bywa to nieregularne (<em>dziecko → dzieci</em>), więc zasada jest znana: ucz się całej trójki, na przykład <b>der Tisch, die Tische</b>. Dlatego słownik tego kursu podaje liczbę mnogą przy każdym rzeczowniku."
       },
       {
-        contrast: "Polski ma rodzaj nijaki i skomplikowaną deklinację; włoski nie ma przypadków w ogóle. Relacje, które polski wyraża końcówką („kawy”, „kawie”), włoski wyraża przyimkiem: <em>del caffè</em>, <em>al caffè</em>."
+        tip: "Wszystkie niemieckie rzeczowniki pisze się <b>wielką literą</b>, nie tak jak po polsku: <em>der Tisch</em>, nie <em>der tisch</em>. I umlaut się liczy: <em>Buch</em> i <em>Bücher</em> pisze się inaczej, a <em>Mädchen</em> bez kropek byłoby błędem, nie wariantem. Kropki zmieniają też brzmienie samogłoski."
+      },
+      {
+        h: "Liczenie od 1 do 20",
+        list: [
+          "<b>1-10</b>: eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn",
+          "<b>11-12</b>: elf, zwölf",
+          "<b>13-19</b>: dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn, neunzehn (jak polskie -naście: <em>drei</em> + <em>zehn</em>)",
+          "<b>20</b>: zwanzig"
+        ]
+      },
+      {
+        trap: "Uwaga na <em>sechzehn</em> i <em>siebzehn</em>: <em>sechs</em> traci <em>-s</em>, a <em>sieben</em> traci <em>-en</em>. I <b>z</b> czyta się jak polskie <em>c</em>: <em>zwei</em> brzmi „cwaj”, <em>zehn</em> „cen”."
       }
     ],
     grammar: {
-      title: "Rodzaj i liczba mnoga rzeczownika",
+      title: "Rodzaj i liczba mnoga",
+      note: "W mianowniku liczby mnogiej rodzajnik określony to zawsze <b>die</b>.",
       table: {
-        head: ["wzorzec", "liczba pojedyncza", "liczba mnoga", "po polsku"],
+        head: ["rodzaj", "liczba pojedyncza", "liczba mnoga", "po polsku"],
         rows: [
-          ["-o → -i (m)", "il libro", "i libri", "książka / książki"],
-          ["-a → -e (ż)", "la ragazza", "le ragazze", "dziewczyna / dziewczyny"],
-          ["-e → -i (m)", "il ristorante", "i ristoranti", "restauracja / restauracje"],
-          ["-e → -i (ż)", "la stazione", "le stazioni", "dworzec / dworce"],
-          ["nieodmienne", "la città", "le città", "miasto / miasta"],
-          ["zapożyczenia", "il bar", "i bar", "bar / bary"]
+          ["der (m)", "der Tisch", "die Tische", "stół"],
+          ["die (f)", "die Tasse", "die Tassen", "filiżanka"],
+          ["das (n)", "das Buch", "die Bücher", "książka"],
+          ["das (n)", "das Kind", "die Kinder", "dziecko"],
+          ["der (m)", "der Kuchen", "die Kuchen", "ciasto"],
+          ["das (n)", "das Brötchen", "die Brötchen", "bułka"]
         ]
       },
       examples: [
-        { tr: "Rogalik jest dobry." },
-        { tr: "Rogaliki są dobre.", note: "przymiotnik też zmienia końcówkę" },
-        { tr: "Dworzec jest blisko.", note: "„stazione” jest żeńska mimo końcówki -e" },
-        { tr: "Dwie kawy poproszę.", note: "caffè nie zmienia formy" }
+        { tr: "Stół jest mały." },
+        { tr: "Filiżanki są duże.", note: "w liczbie mnogiej czasownik się zmienia: sind" },
+        { tr: "Książka jest nowa." },
+        { tr: "Dziecko pije mleko." },
+        { tr: "Trzy filiżanki i dwa ciasta, poproszę.", note: "Kuchen w liczbie mnogiej się nie zmienia" },
+        { tr: "Rachunek, proszę." }
       ]
     },
     vocab: [
-      "książka",
-      "dom",
       "stół",
       "krzesło",
-      "restauracja",
-      "dworzec",
-      "klucz",
-      "kwiat",
-      "miasto",
-      "kawa / bar",
-      "sport",
-      "film",
-      "noc",
-      "dzień"
+      "książka",
+      "dom",
+      "filiżanka",
+      "kobieta, pani",
+      "mężczyzna",
+      "dziecko",
+      "gazeta",
+      "ciasto",
+      "mleko",
+      "cukier",
+      "bułka",
+      "rachunek"
     ],
     exercises: [
       {
-        q: "Które słowo jest rodzaju żeńskiego?",
-        opts: ["il tavolo", "la chiave", "il fiore"],
-        why: "<i>La chiave</i> — rodzaj poznajesz po rodzajniku, bo końcówka -e sama go nie zdradza."
+        q: "Który z tych rzeczowników jest nijaki?",
+        opts: ["der Tisch", "das Buch", "die Tasse"],
+        why: "<i>Das Buch</i>. Po polsku „książka” jest rodzaju żeńskiego: rodzaju się nie tłumaczy."
       },
       {
-        q: "Liczba mnoga od „la ragazza” to „___ ragazze”.",
-        why: "Rodzajnik żeński w liczbie mnogiej to zawsze <b>le</b>."
+        q: "Liczba mnoga od „die Tasse”: „die ___”.",
+        hint: "dodaj -n",
+        why: "Wiele rzeczowników żeńskich na <i>-e</i> tworzy liczbę mnogą z <i>-n</i>: <i>Tassen</i>."
       },
       {
-        q: "Utwórz liczbę mnogą: „il ristorante” → „i ___”.",
-        hint: "-e w liczbie mnogiej zawsze przechodzi w -i",
-        why: "Rzeczowniki na -e tworzą liczbę mnogą na -i, niezależnie od rodzaju."
+        q: "Liczba mnoga od „das Buch”: „die ___”.",
+        hint: "u dostaje umlaut i dochodzi -er",
+        why: "<i>Bücher</i>: umlaut na samogłosce i końcówka <i>-er</i>. Bez umlautu byłoby to inne słowo, źle napisane."
       },
       {
-        q: "Dobierz rodzajnik określony w liczbie pojedynczej.",
-        why: "Przy słowach na -e rodzaju trzeba się nauczyć na pamięć — dlatego zapisuj je zawsze z rodzajnikiem.",
-        items: ["książka", "dom", "dworzec", "restauracja", "klucz", "dzień"]
+        q: "Wybierz właściwy rodzajnik określony.",
+        why: "Rodzaj i liczbę mnogą uczy się razem z rzeczownikiem: <i>der Tisch</i>, <i>die Tasse</i>, <i>das Buch</i>.",
+        items: ["stół", "filiżanka", "książka", "dom", "gazeta", "mężczyzna"]
       },
       {
-        q: "Ile kaw zamawiasz, mówiąc „due caffè”?",
-        opts: ["Jedną", "Dwie", "Nie da się stwierdzić"],
-        why: "„Caffè” się nie odmienia; liczbę niesie liczebnik albo rodzajnik: <i>il caffè / i caffè</i>."
+        q: "W mianowniku liczby mnogiej rodzajnik określony to zawsze…",
+        opts: ["der", "die", "das"],
+        why: "<b>die</b> dla wszystkich rodzajów w mianowniku liczby mnogiej: <i>die Tische</i>, <i>die Tassen</i>, <i>die Bücher</i>."
       },
       {
-        q: "Które z tych rzeczowników mają tę samą formę w liczbie mnogiej?",
-        opts: ["la città", "il libro", "il bar", "la sedia", "lo sport"],
-        why: "Nie odmieniają się: słowa z akcentem na końcu (città) i zapożyczenia (bar, sport)."
+        q: "Które z tych rzeczowników są rodzaju żeńskiego?",
+        opts: ["die Zeitung", "der Stuhl", "die Milch", "das Kind", "die Rechnung"],
+        why: "<i>Die Zeitung</i>, <i>die Milch</i>, <i>die Rechnung</i>: rodzajnik to mówi, a rzeczowniki z przyrostkiem <b>-ung</b> są żeńskie."
       },
-      { tr: "Restauracja jest zamknięta.", why: "Szyk: rodzajnik + rzeczownik + czasownik + przymiotnik." },
-      { tr: "Klucze są na stole." },
-      { tr: "Miasto jest bardzo piękne.", why: "„Città” ma akcent na końcu: czit-TA." }
+      {
+        tr: "Dziecko pije mleko.",
+        why: "Podmiot, orzeczenie, dopełnienie: czasownik <i>trinkt</i> stoi na drugim miejscu. Po polsku szyk jest swobodny, tutaj nie."
+      },
+      {
+        tr: "Dwie filiżanki i trzy bułki, poproszę.",
+        why: "<i>Zwei</i> zaczyna się od <b>ts</b>, jak polskie <i>c</i>: „cwaj”."
+      },
+      {
+        tr: "Rachunek, proszę.",
+        why: "<i>Rechnung</i>: <i>ch</i> po <i>e</i> to cichy szum z <i>ich</i>, nie <i>k</i> ani polskie <i>ch</i>."
+      }
     ]
   },
   "lesson:a1-u01-l3": {
     theme: "Gramatyka podstawowa",
-    title: "Rodzajniki określone i nieokreślone",
+    title: "Der czy ein? Rodzajniki w mianowniku",
     objectives: [
-      "wybrać właściwy rodzajnik określony zależnie od pierwszej głoski słowa",
-      "odróżnić użycie il / un",
-      "poprawnie użyć lo i gli"
+      "odróżniać rodzajnik określony (der, die, das) i nieokreślony (ein, eine)",
+      "używać kein do zaprzeczania rzeczownikowi",
+      "wybierać rodzajnik według rodzaju, nie według brzmienia"
     ],
     theory: [
       {
-        h: "Po co rodzajnik, skoro polski go nie ma",
-        p: "Rodzajnik mówi dwie rzeczy naraz: jaki rodzaj i liczba ma słowo, oraz czy mówimy o rzeczy znanej rozmówcy, czy o dowolnej. <em>Vorrei un caffè</em> — jakąkolwiek kawę. <em>Dov'è il caffè?</em> — ta konkretna, o której wiemy."
+        h: "Określony i nieokreślony",
+        p: "Po polsku rodzajników nie ma: mówisz po prostu <em>kawa</em>, a to, czy chodzi o kawę znaną, czy nową, wynika z kontekstu albo ze słów w rodzaju <em>ta</em> i <em>jakaś</em>. Po niemiecku rodzajnik <strong>określony</strong> wskazuje coś znanego (<em>der Kaffee</em>, kawa, o której mówimy), a <strong>nieokreślony</strong> coś nowego (<em>ein Kaffee</em>, jakaś kawa). W mianowniku, czyli gdy rzeczownik jest podmiotem (<em>Der Kaffee ist heiß</em>) albo stoi po <em>sein</em> (<em>Das ist eine Tasse</em>, <em>Das ist kein Tee</em>), formy są takie: <b>der / ein</b> (męski), <b>die / eine</b> (żeński), <b>das / ein</b> (nijaki), <b>die</b> (liczba mnoga)."
       },
       {
-        h: "Formy męskie zależą od pierwszej głoski",
-        p: "Męski rodzajnik ma trzy warianty i wybór nie jest kwestią gustu, tylko wymowy. <strong>Il</strong> stoi przed zwykłą spółgłoską. <strong>Lo</strong> przed <em>s + spółgłoska</em> (<em>lo studente</em>), przed <em>z</em>, <em>gn</em>, <em>ps</em>, <em>y</em> oraz <em>x</em>. <strong>L'</strong> przed samogłoską. Powód jest czysto fonetyczny: „il studente” byłoby trudne do wymówienia."
+        contrast: "Po polsku rodzaj i przypadek widać w końcówce rzeczownika i przymiotnika (<em>ta kawa</em>, <em>tę kawę</em>). Po niemiecku w mianowniku to rodzajnik niesie rodzaj, a rzeczownik zwykle się nie zmienia. Po niemiecku rzeczownik w liczbie pojedynczej zwykle ma rodzajnik, także tam, gdzie po polsku stoi sam: <em>Kawa jest gorąca</em> to zwykle <em>Der Kaffee ist heiß</em>. Wybór między rodzajnikiem określonym, nieokreślonym i jego brakiem zależy od znaczenia i kontekstu, a forma rodzajnika w mianowniku liczby pojedynczej od rodzaju rzeczownika (<em>der Apfelkuchen</em>, <em>der Saft</em>, <em>der Kellner</em> mają <em>der</em>), więc musisz znać rodzaj każdego rzeczownika."
       },
       {
-        h: "Liczba mnoga",
-        list: [
-          "<b>il → i</b>: <em>il libro → i libri</em>",
-          "<b>lo / l' → gli</b>: <em>lo studente → gli studenti</em>, <em>l'amico → gli amici</em>",
-          "<b>la / l' → le</b>: <em>la casa → le case</em>, <em>l'amica → le amiche</em>"
-        ]
+        trap: "W liczbie mnogiej nie ma rodzajnika nieokreślonego: <em>Tassen</em> samo znaczy „filiżanki” albo „jakieś filiżanki”. Po polsku też mówi się po prostu <em>filiżanki</em>, więc nie szukaj odpowiednika niemieckiego <em>eine</em> w liczbie mnogiej: zostaw rzeczownik bez rodzajnika."
       },
       {
-        h: "Rodzajnik nieokreślony",
-        p: "<strong>Un</strong> przed spółgłoską i samogłoską (<em>un libro</em>, <em>un amico</em> — bez apostrofu!), <strong>uno</strong> tam, gdzie byłoby <em>lo</em> (<em>uno studente</em>), <strong>una</strong> dla żeńskiego, <strong>un'</strong> przed żeńską samogłoską (<em>un'amica</em>)."
+        h: "Kein: przeczenie rzeczownika",
+        p: "Aby powiedzieć „to nie jest…” albo „nie ma żadnego…”, używa się <strong>kein</strong>, które odmienia się jak <em>ein</em>: <em>kein</em> (męski i nijaki), <em>keine</em> (żeński i liczba mnoga). <em>Das ist kein Tee</em> znaczy „to nie jest herbata”. Nie mówi się <em>nicht ein Tee</em>."
       },
       {
-        trap: "<b>un amico</b> (bez apostrofu, męski) kontra <b>un'amica</b> (z apostrofem, żeński). Apostrof jest tu jedyną różnicą w piśmie i to on niesie informację o rodzaju."
+        contrast: "Po polsku przecząca cząstka jest jedna: <em>to nie jest herbata</em>, <em>to nie jest gorące</em>. Po niemiecku wybierasz: <strong>nicht</strong> stoi przy czasowniku albo przymiotniku (<em>Das ist nicht heiß</em>), a <strong>kein</strong> zastępuje rodzajnik nieokreślony lub jego brak przed rzeczownikiem (<em>Das ist kein Tee</em>)."
+      },
+      {
+        tip: "Kiedy <b>zamawiasz</b>, rzeczownik rodzaju męskiego dostaje <em>einen</em>: <em>Einen Kaffee, bitte</em>. <em>Ein</em> to forma podmiotu; <em>einen</em> to inna forma, używana, gdy rzeczownik jest dopełnieniem czynności (jak polski biernik: <em>kawa, poproszę kawę</em>), i omówimy ją później. Na razie pamiętaj: zamawiając, mówisz <em>einen</em> (męski), <em>eine</em> (żeński), <em>ein</em> (nijaki). W rodzajniku zmienia się tylko rodzaj męski."
+      },
+      {
+        h: "Typowe zdanie: Das ist …",
+        p: "Aby wskazać przedmiot: <em>Das ist ein Eis</em>, <em>Das ist eine Torte</em>. Początkowe <em>das</em> znaczy „to” i się nie zmienia, nawet jeśli następny rzeczownik jest męski albo żeński, tak jak polskie <em>to jest</em>."
       }
     ],
     grammar: {
-      title: "Rodzajniki — pełna tabela",
+      title: "Rodzajniki w mianowniku",
+      note: "Mianownik odpowiada na pytanie <em>kto? co?</em>. Liczba mnoga ma <b>die</b> albo <b>keine</b> i nie ma rodzajnika nieokreślonego.",
       table: {
-        head: ["kontekst", "określony l.poj.", "określony l.mn.", "nieokreślony"],
+        head: ["", "męski", "żeński", "nijaki", "liczba mnoga"],
         rows: [
-          ["m. + spółgłoska", "il treno", "i treni", "un treno"],
-          ["m. + s+sp., z, gn, ps", "lo studente, lo zaino", "gli studenti", "uno studente"],
-          ["m. + samogłoska", "l'amico", "gli amici", "un amico"],
-          ["ż. + spółgłoska", "la casa", "le case", "una casa"],
-          ["ż. + samogłoska", "l'amica", "le amiche", "un'amica"]
+          ["określony", "der Kaffee", "die Tasse", "das Brötchen", "die Tassen"],
+          ["nieokreślony", "ein Kaffee", "eine Tasse", "ein Brötchen", "(bez rodzajnika) Tassen"],
+          ["przeczenie", "kein Kaffee", "keine Tasse", "kein Brötchen", "keine Tassen"]
         ]
       },
       examples: [
-        { tr: "Poproszę kawę.", note: "jakąkolwiek — nieokreślony" },
-        { tr: "Ta kawa jest zimna.", note: "konkretna — określony" },
-        { tr: "Plecak jest ciężki.", note: "z → lo" },
-        { tr: "Studenci są spóźnieni." },
-        { tr: "Koleżanka z Rzymu.", note: "żeński + samogłoska → un'" }
+        { tr: "Kawa jest gorąca." },
+        { tr: "Jedna kawa kosztuje trzy euro." },
+        { tr: "To jest filiżanka." },
+        { tr: "To nie jest herbata." },
+        { tr: "Tort jest świeży." },
+        { tr: "Oto karta dań." }
       ]
     },
     vocab: [
-      "student / studentka",
-      "plecak",
-      "przyjaciel / przyjaciółka",
-      "pociąg",
-      "lustro",
-      "cukier",
-      "woda",
-      "szklanka",
-      "butelka",
-      "hotel",
-      "psycholog",
-      "ludzie (l. pojedyncza!)"
+      "sok",
+      "cola",
+      "czekolada",
+      "piwo",
+      "wino",
+      "lody",
+      "szarlotka, ciasto z jabłkami",
+      "tort",
+      "chleb",
+      "precel",
+      "karta dań",
+      "kelner"
     ],
     exercises: [
       {
-        q: "Który rodzajnik pasuje do „zucchero” (cukier)?",
-        opts: ["il", "lo", "l'"],
-        why: "Rzeczowniki męskie na <b>z</b> biorą lo: <i>lo zucchero</i>, tak samo <i>lo zaino</i>."
+        q: "Uzupełnij: „___ Tasse ist neu.” (jedna filiżanka)",
+        opts: ["Ein", "Eine", "Einen"],
+        why: "<i>Tasse</i> jest rodzaju żeńskiego, więc <b>eine</b>."
       },
       {
-        q: "Jak brzmi liczba mnoga od „lo specchio”?",
-        opts: ["i specchi", "gli specchi", "le specchie"],
-        why: "Lo w liczbie mnogiej zawsze przechodzi w <b>gli</b>."
+        q: "Uzupełnij: „Das ist ___ Tee.” (to nie jest herbata)",
+        opts: ["nicht", "kein", "keine"],
+        why: "Do zaprzeczenia rzeczownika rodzaju męskiego służy <b>kein</b>, nie <i>nicht ein</i>."
       },
       {
-        q: "Wybierz właściwy rodzajnik określony.",
-        why: "Wybór zależy od rodzaju ORAZ od pierwszej głoski słowa.",
-        items: ["pociąg", "student", "przyjaciółka", "woda", "butelka", "plecak"]
+        q: "Wybierz właściwy rodzajnik nieokreślony.",
+        why: "<i>Ein</i> dla rodzaju męskiego i nijakiego, <i>eine</i> dla żeńskiego.",
+        items: ["sok", "cola", "tort", "chleb", "karta dań", "kelner"]
       },
       {
-        q: "Uzupełnij: „Ho ___ amica a Milano.” (Mam koleżankę w Mediolanie.)",
-        hint: "rodzaj żeński przed samogłoską",
-        why: "Un'amica z apostrofem. Bez apostrofu (<i>un amico</i>) byłby to mężczyzna."
+        q: "Uzupełnij: „Das ist ___ Eis.” (lody)",
+        hint: "das Eis jest nijakie",
+        why: "Nijaki w mianowniku: <b>ein</b>. Po polsku „lody” to liczba mnoga: rodzaju się nie tłumaczy."
       },
       {
-        q: "Uzupełnij: „___ studenti sono bravi.” (Studenci są zdolni.)",
-        why: "Studente bierze lo, więc w liczbie mnogiej: gli studenti."
+        q: "Uzupełnij: „___ Speisekarte ist neu.” (ta)",
+        hint: "die Speisekarte jest żeńska",
+        why: "Rodzaj żeński w liczbie pojedynczej: <b>die</b>."
       },
       {
-        q: "„Vorrei il caffè” a „Vorrei un caffè” — na czym polega różnica?",
+        q: "„Tassen, bitte!” Dlaczego brakuje rodzajnika?",
         opts: [
-          "Żadna, to synonimy",
-          "Il = ta konkretna kawa, o której już mowa; un = jakakolwiek",
-          "Il jest grzeczniejsze"
+          "To błąd",
+          "W liczbie mnogiej nie ma ein/eine: rzeczownik stoi sam",
+          "Przed Tassen brakuje die"
         ],
-        why: "Rodzajnik określony zakłada, że rozmówca wie, o którą rzecz chodzi. W barze zamawiasz <i>un caffè</i>."
+        why: "Rodzajnik nieokreślony nie ma liczby mnogiej. Polskie „filiżanki” odpowiada <i>Tassen</i> bez rodzajnika."
       },
       {
-        q: "Połącz rzeczownik z rodzajnikiem.",
-        pairs: ["ps + spółgłoska", "samogłoska", "zwykła spółgłoska", "rodzaj żeński"]
+        q: "Dopasuj każde wyrażenie do jego znaczenia.",
+        pairs: ["jedna kawa", "jeden tort", "jeden chleb", "żadna cola"]
       },
       {
-        tr: "Plecak studenta jest ciężki.",
-        why: "„Dello” to di + lo — przyimek też dostosowuje się do rodzajnika."
+        tr: "Oto karta dań i woda.",
+        why: "Przy <i>Hier</i> na pierwszym miejscu czasownik <i>ist</i> zostaje na drugim, a podmiot idzie za nim."
       },
-      { tr: "Studenci są na uniwersytecie." }
+      {
+        tr: "To jest tort.",
+        why: "<i>Torte</i>: początkowe <b>t</b> jest przydechowe, a końcowe <b>e</b> się wymawia."
+      }
     ]
   },
   "lesson:a1-u01-l4": {
     theme: "Życie codzienne",
-    title: "Jak się masz — tu czy Lei",
+    title: "Jak się masz? Du albo Sie",
     objectives: [
-      "zapytać o samopoczucie w formie oficjalnej i nieoficjalnej",
-      "odmienić czasownik stare",
-      "wiedzieć, kiedy przejść z Lei na tu"
+      "pytać, jak się ktoś ma, na du i na Sie",
+      "odmieniać sein w czasie teraźniejszym",
+      "wybierać między du a Sie zależnie od sytuacji"
     ],
     theory: [
       {
-        h: "Dwie formy grzecznościowe, nie jedna",
-        p: "Włoski rozróżnia <strong>tu</strong> (na ty) i <strong>Lei</strong> (forma oficjalna). <em>Lei</em> to dosłownie „ona”, ale używa się jej wobec mężczyzn i kobiet — czasownik stoi w trzeciej osobie liczby pojedynczej: <em>Come sta?</em>. W piśmie często zapisuje się je wielką literą, żeby odróżnić od zwykłego „ona”."
+        h: "Du, ihr i Sie: trzy formy na „ty” i „wy”",
+        p: "Polski ma <em>ty</em>, <em>wy</em> oraz <em>Pan/Pani/Państwo</em>. Niemiecki ma <strong>du</strong> (jedna osoba, z którą jesteś na „ty”), <strong>ihr</strong> (kilka osób, z którymi jesteś na „ty”) i <strong>Sie</strong>, formę grzecznościową, taką samą dla jednej osoby i dla wielu: <em>Sind Sie Frau Weber?</em>, <em>Wie heißen Sie?</em>"
       },
       {
-        h: "Kto pierwszy proponuje przejście na ty",
-        p: "Zasada jest prosta: proponuje osoba starsza albo wyżej postawiona. Zdanie brzmi <em>Possiamo darci del tu?</em> („Możemy przejść na ty?”). W barze, wśród rówieśników, w środowisku młodym — Włosi przechodzą na <em>tu</em> bardzo szybko. W banku, u lekarza i w urzędzie zostaje <em>Lei</em>."
+        contrast: "Po polsku formę grzecznościową tworzy się z <em>Pan</em> i <em>Pani</em> i czasownikiem w 3. osobie liczby <b>pojedynczej</b>: <em>Pan jest</em>, <em>Pani jest</em>. Niemieckie <strong>Sie</strong> bierze czasownik w 3. osobie liczby <b>mnogiej</b>: <em>Sie sind</em>, a nie <em>Sie ist</em>. Pisze się je zawsze <b>wielką literą</b>, bo małe <em>sie</em> znaczy „ona” albo „oni, one”. Niemieckie <em>Sie</em> jest jedno dla kobiet i mężczyzn, nie ma rozróżnienia Pan i Pani, a odpowiednika <em>Państwo</em> też nie trzeba: <em>Sie</em> obejmuje i jedną osobę, i kilka."
       },
       {
-        h: "Stare — „być”, ale o samopoczuciu",
-        p: "O tym, jak się czujesz, mówi się przez <strong>stare</strong>, nie przez <em>essere</em>. <em>Come stai?</em> → <em>Sto bene</em>. Zdanie „sono bene” jest błędem, którego Włoch nigdy nie powie. <em>Stare</em> obsługuje też miejsce i stan trwały: <em>Sto a casa</em> (jestem/zostaję w domu)."
+        h: "Kiedy przejść na du",
+        p: "Z osobami, których nie znasz, z dorosłymi, klientami, w urzędach i w sytuacjach oficjalnych używa się <em>Sie</em>, razem z <em>Herr</em> lub <em>Frau</em> i nazwiskiem: <em>Frau Weber</em> (jak „pani Weber”). <em>Du</em> jest normalne między przyjaciółmi, w rodzinie, wśród rówieśników i w wielu nieformalnych środowiskach pracy. Zwykle propozycję przejścia na „ty” składa osoba starsza albo mająca więcej odpowiedzialności: <em>Wollen wir uns duzen?</em> (jak polskie „czy możemy przejść na ty?”). W razie wątpliwości używa się <em>Sie</em> i czeka, aż druga osoba zaproponuje <em>du</em>."
       },
       {
-        contrast: "Polskie „jak się masz” tłumaczymy odruchowo przez „mieć” — po włosku to zawsze <em>stare</em>. Zapamiętaj parę: <b>come stai / sto bene</b>."
+        h: "Wie geht's? Tu nie używa się sein",
+        p: "Aby zapytać, jak się ktoś ma, niemiecki używa czasownika <strong>gehen</strong> (iść), w konstrukcji bezosobowej: <em>Wie geht es dir?</em> albo krótko <em>Wie geht's?</em> (jak polskie „jak leci?”). Odpowiada się <em>Mir geht es gut</em> („mnie się wiedzie dobrze”) albo <em>Es geht</em> („tak sobie”). <em>Dir</em>, <em>Ihnen</em> i <em>mir</em> to celownik, jak w polskim „jak ci idzie?”: dokładniej poznasz go później, na razie ucz się całych zdań."
+      },
+      {
+        trap: "Nie mów <em>Ich bin gut</em>, gdy chcesz powiedzieć „mam się dobrze”: to opis cechy, „jestem dobry (w czymś)”, a nie stanu zdrowia czy nastroju. Na zdrowie i nastrój mówi się <em>Mir geht es gut</em>. Uwaga też na <em>Es geht</em>: to nie „idzie dobrze”, tylko „tak sobie”."
+      },
+      {
+        h: "Sein, czasownik „być”",
+        p: "Tak jak polskie <em>być</em>, <strong>sein</strong> jest nieregularny: formy nie przypominają bezokolicznika (<em>bin, bist, ist, sind, seid, sind</em>) i trzeba je zapamiętać. Służą do mówienia, kim jesteś i czym coś jest: <em>Ich bin Anna</em>, <em>Das ist ein Kaffee</em>."
+      },
+      {
+        h: "Pytania: zmienia się szyk",
+        p: "W pytaniu z zaimkiem pytającym (<em>wie</em>, <em>was</em>) czasownik zostaje na <strong>drugim</strong> miejscu: <em>Wie geht es Ihnen?</em> W pytaniu, na które odpowiada się „tak” albo „nie”, czasownik przechodzi na <strong>pierwsze</strong> miejsce: <em>Sind Sie Frau Weber?</em>, <em>Bist du Anna?</em> Po polsku takie pytanie zaczyna się od <em>czy</em> albo zmienia się intonację; po niemiecku nie ma odpowiednika <em>czy</em>, zmienia się szyk."
       }
     ],
     grammar: {
-      title: "Stare (czuć się, przebywać) — czas teraźniejszy",
+      title: "Sein (być) w czasie teraźniejszym",
+      note: "Przy <b>Sie</b> (forma grzecznościowa) czasownik to <em>sind</em>, tak samo jak przy <em>wir</em> i <em>sie</em> (oni).",
       table: {
         head: ["osoba", "forma", "przykład"],
         rows: [
-          ["io", "sto", "Sto bene, grazie."],
-          ["tu", "stai", "Come stai?"],
-          ["lui / lei / Lei", "sta", "Come sta, signora?"],
-          ["noi", "stiamo", "Stiamo bene."],
-          ["voi", "state", "Come state?"],
-          ["loro", "stanno", "Stanno male."]
+          ["ich", "bin", "Ich bin Anna."],
+          ["du", "bist", "Bist du Anna?"],
+          ["er / sie / es", "ist", "Das Café ist klein."],
+          ["wir", "sind", "Wir sind hier."],
+          ["ihr", "seid", "Seid ihr hier?"],
+          ["sie / Sie", "sind", "Sind Sie Frau Weber?"]
         ]
       },
       examples: [
-        { tr: "Cześć Marco, jak się masz?", note: "nieformalnie" },
-        { tr: "Dzień dobry, jak się Pan/Pani ma?", note: "formalnie" },
-        { tr: "Dobrze, dziękuję. A ty?" },
-        { tr: "Nie najgorzej.", note: "bardzo częsta odpowiedź" },
+        { tr: "Cześć, Julia, jak leci?", note: "nieformalnie" },
+        { tr: "Dzień dobry, pani Weber, jak się pani miewa?", note: "formalnie" },
+        { tr: "Mam się dobrze, dziękuję. A ty?" },
         { tr: "Tak sobie." },
-        { tr: "Możemy przejść na ty?" }
+        { tr: "Czy pani jest panią Weber?", note: "pytanie tak/nie: czasownik idzie na pierwsze miejsce" },
+        { tr: "Przejdziemy na ty?", note: "zwykle proponuje to osoba starsza" }
       ]
     },
     vocab: [
-      "jak się masz? (ty)",
-      "jak się Pan/Pani ma?",
+      "jak się masz? (nieformalnie)",
+      "jak się Pan/Pani miewa? (formalnie)",
       "mam się dobrze",
-      "źle się czuję",
-      "nie najgorzej",
       "tak sobie",
-      "a ty? / a Pan(i)?",
-      "świetnie",
-      "trochę zmęczony/a",
-      "pan / pani",
-      "do zobaczenia wkrótce",
-      "na razie (do później)"
+      "nieźle",
+      "bardzo dobrze",
+      "źle",
+      "a ty?",
+      "a Pan/Pani?",
+      "Pan (przed nazwiskiem)",
+      "Pani (przed nazwiskiem)",
+      "do zobaczenia później"
     ],
     dialogue: [
-      "Cześć Giulia! Jak się masz?",
-      "Cześć! Świetnie, a ty?",
-      "Trochę zmęczony, ale dobrze. Na razie!",
-      "Dzień dobry pani, jak się pani ma?",
-      "Nie najgorzej, dziękuję. A pan?"
+      "Cześć, Julia! Jak się masz?",
+      "Cześć! Dobrze, a ty?",
+      "Nieźle, dziękuję. Do zobaczenia później!",
+      "Dzień dobry, pani Weber. Jak się pani miewa?",
+      "Dobrze, dziękuję. A pan?"
     ],
     exercises: [
       {
-        q: "Pytasz o samopoczucie osoby, do której mówisz per Lei. Które zdanie jest poprawne?",
-        opts: ["Come stai?", "Come sta?", "Come state?"],
-        why: "Forma Lei wymaga trzeciej osoby liczby pojedynczej: <i>come sta?</i>"
+        q: "Rozmawiasz z panią Weber, którą słabo znasz. Które pytanie jest poprawne?",
+        opts: ["Wie geht es dir?", "Wie geht es Ihnen?", "Wie gehst du?"],
+        why: "Do osoby, do której zwracasz się per Pani, używa się <b>Ihnen</b>."
       },
       {
-        q: "Które zdanie jest błędne?",
-        opts: ["Sto bene.", "Sono bene.", "Non c'è male."],
-        why: "O samopoczuciu mówi się przez <b>stare</b>, nigdy przez <i>essere</i>."
+        q: "Które zdanie NIE znaczy „mam się dobrze”?",
+        opts: ["Mir geht es gut.", "Ich bin gut.", "Es geht mir gut."],
+        why: "<i>Ich bin gut</i> znaczy zwykle „jestem dobry (w czymś)”. Na zdrowie i nastrój używa się <i>gehen</i>."
       },
       {
-        tr: "io, tu, lui/lei, voi",
-        why: "Stare jest nieregularny w liczbie pojedynczej i w trzeciej osobie liczby mnogiej (stanno)."
+        tr: "Wszystkie osoby czasownika sein.",
+        why: "<i>Sein</i> jest nieregularny w każdej osobie, jak polskie „być”. <i>Sind</i> pasuje do <i>wir</i>, <i>sie</i> i <i>Sie</i>."
       },
       {
-        q: "Uzupełnij: „Come ___, ragazzi?” (Jak się macie, chłopaki?)",
-        why: "Zwracasz się do grupy → forma voi: state."
+        q: "Uzupełnij: „___ Sie Frau Weber?” (Czy pani jest panią Weber?)",
+        hint: "pytanie tak/nie: czasownik idzie na początek",
+        why: "<b>Sind</b>: forma grzecznościowa bierze 3. osobę liczby mnogiej."
       },
-      { q: "Przetłumacz nieformalnie: „Mam się dobrze, dziękuję. A ty?”", why: "Sto bene, grazie. E tu?" },
       {
-        q: "Jesteś w barze. Barmanka, którą znasz od lat, wita Cię pierwsza.",
-        setting: "Bar dzielnicowy, godzina ósma rano.",
+        q: "Przetłumacz, zwracając się na ty: „Mam się dobrze, dziękuję. A ty?”",
+        why: "<i>Mir geht es gut, danke. Und dir?</i> Zwracając się na ty, kończysz pytaniem z <i>dir</i>."
+      },
+      {
+        q: "W kawiarni barman, który zna cię od lat, wita cię pierwszy.",
+        setting: "Kawiarnia w twojej dzielnicy, ósma rano.",
         lines: [
-          { tr: "Cześć! Jak się masz dziś rano?" },
-          { tr: "Odpowiedz, że dobrze, i odbij pytanie.", answerTr: "Dobrze, a ty?" },
-          { tr: "Świetnie! To co zwykle, kawa?" },
-          { tr: "Potwierdź i podziękuj.", answerTr: "Tak, dziękuję!" }
+          { tr: "Cześć! Jak się dziś masz?" },
+          { tr: "Odpowiedz, że masz się dobrze, i zapytaj o to samo.", answerTr: "Mam się dobrze, a ty?" },
+          { tr: "Świetnie! Kawy?" },
+          { tr: "Odpowiedz, że tak.", answerTr: "Tak, poproszę!" }
         ]
       },
       {
-        q: "Połącz odpowiedź z jej wydźwiękiem.",
-        pairs: ["bardzo dobrze", "nie najgorzej", "tak sobie", "źle"]
+        q: "Dopasuj każdą odpowiedź do jej znaczenia.",
+        pairs: ["tak sobie", "bardzo dobrze", "źle", "nieźle"]
       },
-      { tr: "Dobry wieczór pani, jak się pani ma?" },
-      { tr: "Nie najgorzej, dziękuję. A pan/pani?" }
+      {
+        tr: "Dzień dobry, pani Weber, jak się pani miewa?",
+        why: "<i>Ihnen</i> wymawia się „inen”: <b>h</b> po samogłosce jest niemy."
+      },
+      {
+        tr: "Dobrze, dziękuję. A pan?",
+        why: "<i>Und Ihnen?</i> zachowuje ton grzecznościowy: pytanie kończy forma <i>Ihnen</i>."
+      }
     ]
   },
   "lesson:a1-u01-test": {
     theme: "Sprawdzian",
     title: "Sprawdzian jednostki 1",
-    objectives: ["sprawdzić powitania, essere, stare, rodzaj i rodzajniki"],
+    objectives: ["sprawdzić powitania, czasowniki heißen i sein w czasie teraźniejszym, rodzaj, liczbę mnogą i rodzajniki"],
     theory: [
       {
-        p: "Dziesięć zadań z całej jednostki. Zaliczenie od 70%. Nie zaglądaj do lekcji — jeśli czegoś nie pamiętasz, lepiej wrócić i powtórzyć."
+        p: "Dziesięć pytań z całej jednostki. Zaliczasz od 70%. Nie zaglądaj do lekcji w trakcie odpowiedzi: jeśli czegoś nie pamiętasz, lepiej wrócić do powtórki."
       }
     ],
     exercises: [
       {
-        q: "Jest 18:30, wchodzisz do sklepu. Co mówisz?",
-        opts: ["Buongiorno", "Buonasera", "Buonanotte"],
-        why: "Po ok. 16-17 Włosi przechodzą na buonasera."
-      },
-      { q: "„Noi ___ in ritardo.” (Jesteśmy spóźnieni.)", why: "essere, forma noi." },
-      { q: "„Come ___?” zapytasz koleżankę o samopoczucie.", why: "stare, forma tu." },
-      { q: "Wybierz rodzajnik określony.", items: [, , , ] },
-      {
-        q: "Liczba mnoga od „l'amico”:",
-        opts: ["gli amici", "i amici", "le amiche"],
-        why: "Męskie l' przechodzi w gli."
+        q: "Jest 18:30 i wchodzisz do sklepu. Co mówisz?",
+        opts: ["Guten Morgen", "Guten Abend", "Gute Nacht"],
+        why: "Pod wieczór mówi się <i>Guten Abend</i>. <i>Gute Nacht</i> to tylko pożegnanie."
       },
       {
-        q: "Które rzeczowniki nie zmieniają formy w liczbie mnogiej?",
-        opts: ["il caffè", "la sedia", "il bar", "la città"]
+        q: "Uzupełnij: „Wir ___ hier.” (Jesteśmy tutaj.)",
+        why: "<i>Sein</i>, forma <i>wir</i>: <b>sind</b>."
       },
-      { q: "„Poproszę wodę.”", why: "Un'acqua, per favore — rodzaj żeński przed samogłoską." },
-      { tr: "Studenci są w barze." },
-      { tr: "Dwie kawy i rogalik poproszę." },
-      { tr: "Dzień dobry, jak się Pan/Pani ma?" }
+      {
+        q: "Uzupełnij: „Wie ___ Sie?” (Jak się Pan/Pani nazywa?)",
+        why: "<i>Heißen</i>: przy <i>Sie</i> czasownik stoi w 3. osobie liczby mnogiej."
+      },
+      {
+        q: "Wybierz rodzajnik określony.",
+        items: ["stół", "filiżanka", "dziecko", "tort"]
+      },
+      {
+        q: "Liczba mnoga od „das Kind” to:",
+        opts: ["die Kinde", "die Kinder", "die Kinds"],
+        why: "<i>Die Kinder</i>: końcówka <b>-er</b>."
+      },
+      {
+        q: "Które zdania są poprawne?",
+        opts: [
+          "Das ist ein Tasse.",
+          "Das ist eine Tasse.",
+          "Das ist kein Tee.",
+          "Das ist ein Kaffee.",
+          "Das ist keine Kaffee."
+        ],
+        why: "<i>Tasse</i> jest żeńskie (<i>eine</i>); <i>Tee</i> i <i>Kaffee</i> są rodzaju męskiego (<i>kein</i>, <i>ein</i>)."
+      },
+      {
+        q: "Przetłumacz: „Dwie herbaty, proszę.”",
+        why: "<i>Zwei Tee, bitte</i>: przy zamawianiu rzeczownik po liczebniku często zostaje bez zmian. Poprawne jest też <i>zwei Tees</i>."
+      },
+      {
+        tr: "Jak się pani miewa, pani Weber?",
+        why: "Pytanie z <i>Wie</i>: czasownik <i>geht</i> stoi na drugim miejscu."
+      },
+      { tr: "Dwie kawy i bułka, proszę." },
+      { tr: "Dzień dobry, jak się pan miewa?" }
     ]
   },
   "unit:a1-u02": { title: "Kim jesteś", grammarNote: "avere · liczebniki · zawody i narodowości" },
