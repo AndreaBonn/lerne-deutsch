@@ -1,8 +1,8 @@
 /* ============================================================
    Language-neutral layer: German (de-DE), structure and answer keys.
    Learner-language texts live in data/i18n/<lang>/a1-01.js.
-   a1-u01 is the German unit; a1-u02 and a1-u03 below are still the old
-   Italian-course content and are rewritten by later tasks.
+   a1-u01 and a1-u02 are German units; a1-u03 below is still the old
+   Italian-course content and is rewritten by a later task.
    ============================================================ */
 LINGUAI.addUnits("A1", [
   {
@@ -305,242 +305,251 @@ LINGUAI.addUnits("A1", [
   {
     id: "a1-u02",
     icon: "🪪",
-    titleIt: "Chi sei?",
+    titleIt: "Wer bist du?",
     lessons: [
       {
         id: "a1-u02-l1",
-        tags: ["g-presente", "g-pron-soggetto"],
+        tags: ["g-personalpron", "g-praesens"],
         cefr: "A1",
-        titleIt: "Mi chiamo…",
+        titleIt: "Ich heiße ...",
         grammar: {
           examples: [
-            { it: "Come ti chiami? — Mi chiamo Ewa." },
-            { it: "Di dove sei? — Sono di Cracovia." },
-            { it: "Sono polacca, ma abito a Milano." },
-            { it: "Quanti anni hai? — Ho ventotto anni." },
-            { it: "Piacere, Marco. — Piacere mio." }
+            { it: "Ich heiße Paolo." },
+            { it: "Woher kommst du?" },
+            { it: "Er heißt Tom, sie heißt Lena." },
+            { it: "Wir heißen Weber." },
+            { it: "Wie heißt ihr?" },
+            { it: "Wie heißen Sie?" }
           ]
         },
         vocab: [
-          { it: "essere" },
-          { it: "mi chiamo…" },
-          { it: "come ti chiami?" },
-          { it: "di dove sei?" },
-          { it: "sono di…" },
-          { it: "abito a…" },
-          { it: "polacco / polacca" },
-          { it: "italiano / italiana" },
-          { it: "il nome" },
-          { it: "il cognome" },
-          { it: "piacere di conoscerti" },
-          { it: "anche io" },
-          { it: "davvero?" }
+          { it: "der Name", plural: "die Namen", ex: "Mein Name ist Anna." },
+          { it: "der Vorname", plural: "die Vornamen" },
+          { it: "der Nachname", plural: "die Nachnamen", ex: "Mein Nachname ist Weber." },
+          { it: "Wie heißt du?" },
+          { it: "Ich heiße ..." },
+          { it: "Mein Name ist ..." },
+          { it: "Freut mich." },
+          { it: "Woher kommst du?" },
+          { it: "Ich komme aus ..." },
+          { it: "Wie alt bist du?" },
+          { it: "Ich bin ... Jahre alt." },
+          { it: "Und du?" },
+          { it: "Wie bitte?" }
         ],
         exercises: [
           { t: "mcq", a: 1 },
           { t: "mcq", a: 1 },
-          { t: "fill", a: ["mi"] },
-          { t: "fill", a: ["a"] },
+          { t: "fill", a: ["Sie"] },
+          { t: "fill", a: ["komme"] },
           {
             t: "cloze",
-            text: "Ciao! {{1}} chiamo Kasia, {{2}} di Danzica e {{3}} a Bologna.",
-            gaps: [["mi"], ["sono"], ["abito"]]
-          },
-          {
-            t: "order",
-            tokens: ["Piacere", "di", "conoscerti,", "mi", "chiamo", "Luca"],
-            a: ["piacere di conoscerti mi chiamo luca"]
+            text: "Hallo! {{1}} heiße Paolo. Und wie heißt {{2}}?",
+            gaps: [["Ich"], ["du"]]
           },
           {
             t: "dialogue",
             lines: [
-              { sp: "A", it: "Ciao! Io sono Giulia. E tu, come ti chiami?" },
-              { sp: "TY", choices: ["Mi chiamo Ewa.", "Si chiama Ewa.", "Ti chiami Ewa."], a: 0 },
-              { sp: "A", it: "Piacere, Ewa! Di dove sei?" },
-              { sp: "TY", choices: ["Sono di Polonia.", "Sono dalla Polonia.", "Abito Polonia."], a: 1 }
-            ]
-          },
-          { t: "listen", it: "Mi chiamo Elena e abito a Napoli." },
-          { t: "speak", it: "Piacere di conoscerti!" }
-        ]
-      },
-      {
-        id: "a1-u02-l2",
-        tags: ["g-presente"],
-        cefr: "A1",
-        titleIt: "Avere e i numeri",
-        grammar: {
-          examples: [
-            { it: "uno, due, tre, quattro, cinque" },
-            { it: "sei, sette, otto, nove, dieci" },
-            { it: "undici, dodici, tredici… venti" },
-            { it: "ventuno, ventidue, ventotto" },
-            { it: "trenta, quaranta, cinquanta, sessanta" },
-            { it: "settanta, ottanta, novanta, cento" },
-            { it: "Ho ventotto anni." }
-          ]
-        },
-        vocab: [
-          { it: "avere" },
-          { it: "ho fame" },
-          { it: "ho sete" },
-          { it: "ho freddo / caldo" },
-          { it: "ho sonno" },
-          { it: "ho paura" },
-          { it: "ho ragione" },
-          { it: "ho bisogno di…" },
-          { it: "quanti anni hai?" },
-          { it: "quanto costa?" },
-          { it: "l'euro" },
-          { it: "il numero" },
-          { it: "il numero di telefono" }
-        ],
-        exercises: [
-          { t: "conj", verb: "avere", tense: "pres", persons: [0, 1, 2, 3, 4, 5] },
-          { t: "mcq", a: 1 },
-          { t: "mcq", a: 1 },
-          { t: "fill", a: ["93"] },
-          { t: "fill", a: ["'"] },
-          { t: "trans", dir: "toIt", a: ["quanti anni hai", "quanti anni hai?"] },
-          {
-            t: "match",
-            pairs: [{ it: "ho sete" }, { it: "ho sonno" }, { it: "ho paura" }, { it: "ho ragione" }]
-          },
-          {
-            t: "cloze",
-            text: "— Quanto {{1}}? — Sono {{2}} euro. — {{3}} solo venti euro, mi dispiace.",
-            gaps: [["costa"], ["trentadue", "32"], ["ho"]]
-          },
-          { t: "listen", it: "Ho trentacinque anni e abito a Torino." },
-          { t: "speak", it: "Quanto costa un cappuccino?" }
-        ]
-      },
-      {
-        id: "a1-u02-l3",
-        tags: ["g-presente", "g-nome-genere"],
-        cefr: "A1",
-        titleIt: "Che lavoro fai?",
-        grammar: {
-          examples: [
-            { it: "Che lavoro fai?" },
-            { it: "Faccio la giornalista." },
-            { it: "Sono ingegnere." },
-            { it: "Lavoro in un'agenzia." },
-            { it: "Sono disoccupato in questo momento." },
-            { it: "Studio ancora, sono all'ultimo anno." }
-          ]
-        },
-        vocab: [
-          { it: "il lavoro" },
-          { it: "l'insegnante" },
-          { it: "il medico / la dottoressa" },
-          { it: "l'ingegnere" },
-          { it: "l'avvocato / l'avvocata" },
-          { it: "il/la giornalista" },
-          { it: "l'impiegato / l'impiegata" },
-          { it: "il cuoco / la cuoca" },
-          { it: "il commesso / la commessa" },
-          { it: "l'operaio" },
-          { it: "il/la libero professionista" },
-          { it: "cerco lavoro" }
-        ],
-        exercises: [
-          { t: "conj", verb: "fare", tense: "pres", persons: [0, 1, 2, 3, 4, 5] },
-          { t: "mcq", a: 0 },
-          { t: "mcq", a: 1 },
-          { t: "fill", a: ["la"] },
-          {
-            t: "gender",
-            opts: ["il", "lo", "la", "l'"],
-            items: [
-              { it: "cuoca", a: "la" },
-              { it: "ingegnere", a: "l'" },
-              { it: "studentessa", a: "la" },
-              { it: "operaio", a: "l'" }
-            ]
-          },
-          { t: "trans", dir: "toIt", a: ["che lavoro fai", "che lavoro fai?", "che cosa fai nella vita"] },
-          {
-            t: "match",
-            pairs: [
-              { it: "l'attore" },
-              { it: "il commesso" },
-              { it: "lo studente" },
-              { it: "il giornalista" }
+              { sp: "A", it: "Hallo! Ich bin Lena. Und wie heißt du?" },
+              {
+                sp: "TY",
+                choices: ["Ich heiße Paolo.", "Ich Paolo heiße.", "Heiße Paolo."],
+                a: 0
+              },
+              { sp: "A", it: "Woher kommst du?" },
+              {
+                sp: "TY",
+                choices: ["Ich komme aus Italien.", "Ich komme in Italien.", "Ich kommst aus Italien."],
+                a: 0
+              }
             ]
           },
           {
             t: "order",
-            tokens: ["Lavoro", "in", "una", "banca", "a", "Milano"],
-            a: ["lavoro in una banca a milano"]
+            tokens: ["Mein", "Name", "ist", "Anna", "Weber"],
+            a: ["Mein Name ist Anna Weber"]
           },
-          { t: "listen", it: "Faccio l'architetto, lavoro con mio fratello." },
-          { t: "speak", it: "Che lavoro fai? Io faccio la giornalista." }
+          { t: "listen", it: "Hallo, ich heiße Lena und komme aus Berlin." },
+          { t: "speak", it: "Ich heiße Paolo. Und wie heißt du?" }
+        ]
+      },
+      {
+        id: "a1-u02-l2",
+        tags: ["g-praesens"],
+        cefr: "A1",
+        titleIt: "sein, haben und die Zahlen",
+        grammar: {
+          examples: [
+            { it: "Ich bin zwanzig Jahre alt." },
+            { it: "Du hast eine Schwester." },
+            { it: "Er hat Hunger." },
+            { it: "Wir sind Freunde." },
+            { it: "Habt ihr einen Bruder?" },
+            { it: "Die Nummer ist null drei null, zwölf, vierunddreißig, sechsundfünfzig." }
+          ]
+        },
+        vocab: [
+          { it: "die Telefonnummer", plural: "die Telefonnummern", ex: "Wie ist deine Telefonnummer?" },
+          { it: "das Jahr", plural: "die Jahre", ex: "Ich bin zwanzig Jahre alt." },
+          { it: "alt", ex: "Wie alt bist du?" },
+          { it: "zwanzig" },
+          { it: "dreißig" },
+          { it: "vierzig" },
+          { it: "fünfzig" },
+          { it: "sechzig" },
+          { it: "siebzig" },
+          { it: "achtzig" },
+          { it: "neunzig" },
+          { it: "hundert" },
+          { it: "einundzwanzig" }
+        ],
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "mcq", a: 1 },
+          { t: "conj", verb: "haben", tense: "praes", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "fill", a: ["hast"] },
+          { t: "fill", a: ["seid"] },
+          {
+            t: "cloze",
+            text: "Ich {{1}} Paolo und {{2}} fünfundzwanzig Jahre alt. Ich {{3}} einen Bruder.",
+            gaps: [["bin"], ["bin"], ["habe"]]
+          },
+          {
+            t: "match",
+            pairs: [{ it: "dreißig" }, { it: "sechzig" }, { it: "fünfundvierzig" }, { it: "hundert" }]
+          },
+          { t: "trans", dir: "toIt", a: ["Hast du eine Schwester"] },
+          { t: "listen", it: "Meine Telefonnummer ist null eins fünf eins, zwei drei vier, fünf sechs." },
+          { t: "speak", it: "Ich bin fünfundzwanzig Jahre alt und habe eine Schwester." }
+        ]
+      },
+      {
+        id: "a1-u02-l3",
+        tags: ["g-praesens", "g-genus"],
+        cefr: "A1",
+        titleIt: "Was sind Sie von Beruf?",
+        grammar: {
+          examples: [
+            { it: "Was sind Sie von Beruf?" },
+            { it: "Ich bin Lehrerin." },
+            { it: "Er ist Arzt." },
+            { it: "Sie ist Köchin." },
+            { it: "Ich bin eine gute Lehrerin." },
+            { it: "Wir sind Studenten." }
+          ]
+        },
+        vocab: [
+          { it: "der Beruf", plural: "die Berufe", ex: "Was sind Sie von Beruf?" },
+          { it: "der Lehrer", plural: "die Lehrer", ex: "Ich bin Lehrer." },
+          { it: "die Lehrerin", plural: "die Lehrerinnen", ex: "Sie ist Lehrerin." },
+          { it: "der Arzt", plural: "die Ärzte", ex: "Er ist Arzt." },
+          { it: "die Ärztin", plural: "die Ärztinnen", ex: "Sie ist Ärztin." },
+          { it: "der Student", plural: "die Studenten" },
+          { it: "die Studentin", plural: "die Studentinnen" },
+          { it: "der Koch", plural: "die Köche" },
+          { it: "die Köchin", plural: "die Köchinnen", ex: "Ich bin Köchin." },
+          { it: "der Ingenieur", plural: "die Ingenieure" },
+          { it: "der Verkäufer", plural: "die Verkäufer" },
+          { it: "die Verkäuferin", plural: "die Verkäuferinnen" }
+        ],
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "mcq", a: 1 },
+          { t: "conj", verb: "studieren", tense: "praes", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "fill", a: ["Köchin"] },
+          {
+            t: "gender",
+            opts: ["der", "die", "das"],
+            items: [
+              { it: "Lehrer", a: "der" },
+              { it: "Lehrerin", a: "die" },
+              { it: "Beruf", a: "der" },
+              { it: "Studentin", a: "die" },
+              { it: "Ärztin", a: "die" },
+              { it: "Koch", a: "der" }
+            ]
+          },
+          {
+            t: "match",
+            pairs: [{ it: "der Lehrer" }, { it: "die Ärztin" }, { it: "der Koch" }, { it: "die Verkäuferin" }]
+          },
+          {
+            t: "order",
+            tokens: ["Was", "sind", "Sie", "von", "Beruf"],
+            a: ["Was sind Sie von Beruf"]
+          },
+          { t: "trans", dir: "toIt", a: ["Ich bin Köchin"] },
+          { t: "listen", it: "Was sind Sie von Beruf? Ich bin Lehrerin." },
+          { t: "speak", it: "Was sind Sie von Beruf? Ich bin Ingenieurin." }
         ]
       },
       {
         id: "a1-u02-l4",
-        tags: ["g-presente"],
+        tags: ["g-praesens", "g-personalpron"],
         cefr: "A1",
-        titleIt: "Verbi in -ARE",
+        titleIt: "wohnen, arbeiten, kommen",
         grammar: {
           examples: [
-            { it: "Parlo un po' d'italiano." },
-            { it: "Non parlo bene, ma capisco." },
-            { it: "Studi all'università?" },
-            { it: "Mangiamo alle otto." },
-            { it: "Cerchi lavoro a Milano?" },
-            { it: "Loro abitano vicino al centro." }
+            { it: "Wo wohnst du?" },
+            { it: "Ich wohne in Berlin." },
+            { it: "Du arbeitest in Wien." },
+            { it: "Er kommt aus Spanien." },
+            { it: "Ihr arbeitet in Hamburg." },
+            { it: "Woher kommen Sie?" }
           ]
         },
         vocab: [
-          { it: "parlare" },
-          { it: "lavorare" },
-          { it: "studiare" },
-          { it: "abitare" },
-          { it: "mangiare" },
-          { it: "comprare" },
-          { it: "cercare" },
-          { it: "pagare" },
-          { it: "ascoltare" },
-          { it: "guardare" },
-          { it: "aspettare" },
-          { it: "cominciare" }
+          { it: "Deutschland" },
+          { it: "Italien" },
+          { it: "Österreich" },
+          { it: "Frankreich" },
+          { it: "Spanien" },
+          { it: "Polen" },
+          { it: "Deutsch" },
+          { it: "Italienisch" },
+          { it: "Englisch" },
+          { it: "Spanisch" },
+          { it: "Französisch" },
+          { it: "Polnisch" }
         ],
         exercises: [
-          { t: "conj", verb: "parlare", tense: "pres", persons: [0, 1, 2, 3, 4, 5] },
-          { t: "conj", verb: "cercare", tense: "pres", persons: [1, 3] },
           { t: "mcq", a: 1 },
-          { t: "fill", a: ["abitano"] },
-          { t: "fill", a: ["non"] },
-          { t: "trans", dir: "toIt", a: ["cerchiamo un appartamento a roma", "cerchiamo casa a roma"] },
-          { t: "multi", a: [0, 2, 3, 4] },
-          { t: "order", tokens: ["Non", "lavoro", "il", "sabato"], a: ["non lavoro il sabato"] },
-          { t: "listen", it: "Studio italiano da tre mesi." },
-          { t: "speak", it: "Non parlo bene, ma capisco quasi tutto." }
+          { t: "multi", a: [0, 1, 4] },
+          { t: "conj", verb: "arbeiten", tense: "praes", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "conj", verb: "kommen", tense: "praes", persons: [1, 2, 4] },
+          { t: "fill", a: ["arbeitest"] },
+          { t: "fill", a: ["wohnt"] },
+          {
+            t: "order",
+            tokens: ["Ich", "wohne", "in", "Italien", "und", "arbeite", "hier"],
+            a: ["Ich wohne in Italien und arbeite hier"]
+          },
+          { t: "trans", dir: "toIt", a: ["Woher kommst du", "Woher bist du"] },
+          { t: "listen", it: "Ich wohne in Wien und komme aus Italien." },
+          { t: "speak", it: "Ich komme aus Italien und wohne in Berlin." }
         ]
       }
     ],
     test: {
       id: "a1-u02-test",
-      tags: ["g-presente", "g-pron-soggetto"],
+      tags: ["g-praesens", "g-personalpron"],
       cefr: "A1",
-      titleIt: "Test — Chi sei?",
+      titleIt: "Test: Wer bist du?",
       exercises: [
-        { t: "fill", a: ["mi"] },
-        { t: "fill", a: ["hai"] },
         { t: "mcq", a: 1 },
         { t: "mcq", a: 1 },
-        { t: "conj", verb: "fare", tense: "pres", persons: [0, 2, 3] },
-        { t: "mcq", a: 1 },
+        { t: "mcq", a: 0 },
+        { t: "fill", a: ["kommen"] },
+        { t: "fill", a: ["habt"] },
+        { t: "conj", verb: "arbeiten", tense: "praes", persons: [1, 2, 4] },
         {
           t: "cloze",
-          text: "{{1}} polacca, {{2}} a Verona e {{3}} l'insegnante.",
-          gaps: [["sono"], ["abito"], ["faccio"]]
+          text: "Anna {{1}} Lehrerin. Sie {{2}} in Wien und {{3}} aus Polen.",
+          gaps: [["ist"], ["wohnt"], ["kommt"]]
         },
-        { t: "trans", dir: "toIt", a: ["non parlo italiano", "non parlo l'italiano"] },
-        { t: "listen", it: "Ho ventisette anni e cerco lavoro." },
-        { t: "speak", it: "Mi chiamo Anna e faccio la giornalista." }
+        { t: "trans", dir: "toIt", a: ["Was sind Sie von Beruf", "Was machen Sie beruflich"] },
+        { t: "listen", it: "Ich heiße Lena, bin dreißig Jahre alt und komme aus Wien." },
+        { t: "speak", it: "Ich heiße Paolo, ich bin Ingenieur und wohne in Berlin." }
       ]
     }
   },

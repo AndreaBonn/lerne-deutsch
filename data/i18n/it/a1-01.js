@@ -1,5 +1,5 @@
 /* ============================================================
-   Learner-language text (it) for data/core/a1-01.js, unit a1-u01.
+   Learner-language text (it) for data/core/a1-01.js, units a1-u01 and a1-u02.
    Keys point at ids in the neutral layer; arrays merge by index,
    so their length has to match core.
    Checked by scripts/parity.mjs.
@@ -576,6 +576,541 @@ LINGUAI.addStrings("it", {
       },
       { tr: "Due caffè e un panino, per favore." },
       { tr: "Buongiorno, come sta?" }
+    ]
+  },
+  "unit:a1-u02": {
+    title: "Chi sei?",
+    grammarNote: "pronomi personali · presente regolare · sein e haben · professioni · numeri fino a 100"
+  },
+  "lesson:a1-u02-l1": {
+    theme: "Presentarsi",
+    title: "Mi chiamo ...",
+    objectives: [
+      "dire il proprio nome e chiedere quello di un altro, con du e con Sie",
+      "usare i pronomi personali al nominativo: ich, du, er, sie, es, wir, ihr, sie, Sie",
+      "dire da dove si viene con «Ich komme aus ...»"
+    ],
+    theory: [
+      {
+        h: "I pronomi personali: in tedesco il soggetto si dice",
+        p: "In una frase dichiarativa autonoma il verbo coniugato vuole un soggetto espresso: o un nome (<em>Anna heißt Weber</em>) o un pronome (nelle coordinate con lo stesso soggetto, come <em>Ich wohne hier und arbeite in Bonn</em>, il secondo si può sottintendere). Eccoli al nominativo: <strong>ich</strong> (io), <strong>du</strong> (tu), <strong>er</strong> (lui), <strong>sie</strong> (lei), <strong>es</strong> (esso), <strong>wir</strong> (noi), <strong>ihr</strong> (voi), <strong>sie</strong> (loro) e <strong>Sie</strong>, la forma di cortesia. Le desinenze del verbo da sole non bastano a riconoscere la persona: <em>heißt</em> vale per <em>du</em>, <em>er</em>, <em>sie</em>, <em>es</em> e <em>ihr</em>."
+      },
+      {
+        contrast: "In italiano <em>Parlo italiano</em> sta in piedi senza «io». In tedesco <em>Spreche Deutsch</em> non è una frase: serve <em>Ich spreche Deutsch</em>. Il pronome non è enfasi, è parte della frase."
+      },
+      {
+        h: "sie e Sie: la maiuscola cambia il senso",
+        p: "Alla pronuncia <em>sie</em> e <em>Sie</em> sono uguali, nella scrittura no. <strong>sie</strong> con la minuscola vuol dire «lei» (una donna) oppure «loro»: <em>sie heißt Lena</em> con il verbo al singolare, <em>sie heißen Weber</em> con il verbo al plurale. <strong>Sie</strong> con la maiuscola è la forma di cortesia, per una persona sola o per molte, e vuole il verbo come per «loro»: <em>Wie heißen Sie?</em> A inizio frase la maiuscola c'è comunque, quindi non aiuta: <em>heißt</em> (singolare) indica «lei», mentre con <em>heißen</em> serve il contesto per distinguere «loro» dalla forma di cortesia.",
+        list: [
+          "<b>du</b>: una persona con cui sei in confidenza",
+          "<b>ihr</b>: più persone con cui sei in confidenza (non è la forma di cortesia)",
+          "<b>Sie</b>: una o più persone con cui usi la forma di cortesia"
+        ]
+      },
+      {
+        trap: "I pronomi di terza persona seguono il <b>genere grammaticale</b> del nome che sostituiscono, anche per le cose: <em>Der Tisch ist neu. Er ist groß.</em> (er = il tavolo), <em>Die Tasse ist neu. Sie ist groß.</em>, <em>Das Buch ist neu. Es ist groß.</em> In italiano si dice «è grande» senza pronome; in tedesco si dice «lui è grande», «lei è grande», «esso è grande», a seconda del genere."
+      },
+      {
+        h: "Nome e provenienza",
+        p: "Per presentarti hai due formule: <em>Ich heiße Paolo</em> oppure <em>Mein Name ist Paolo</em>. Per chiedere la provenienza si usa <strong>woher</strong> («da dove») e il verbo <strong>kommen</strong>: <em>Woher kommst du?</em> Si risponde con <em>Ich komme aus</em> e il paese o la città, di norma senza articolo: <em>Ich komme aus Italien</em>, <em>aus Berlin</em>. Per ora impara le frasi intere: i paesi che vogliono l'articolo li incontrerai più avanti."
+      },
+      {
+        tip: "Per chiedere di ripetere: <em>Wie bitte?</em> («come, scusa?») è la formula più usata e va bene con tutti. Per rispondere a una presentazione ti serve <em>Freut mich</em> («piacere»)."
+      }
+    ],
+    grammar: {
+      title: "Pronomi personali al nominativo",
+      note: "I pronomi tedeschi sono nove (<em>ich, du, er, sie, es, wir, ihr, sie, Sie</em>) ma le forme del verbo regolare sono solo quattro: <em>-e, -st, -t, -en</em>. Nella tabella <em>sie</em> e <em>Sie</em> condividono la riga perché richiedono la stessa forma del verbo.",
+      table: {
+        head: ["persona", "pronome", "esempio"],
+        rows: [
+          ["1ª singolare", "ich", "Ich heiße Paolo."],
+          ["2ª singolare", "du", "Woher kommst du?"],
+          ["3ª singolare", "er / sie / es", "Er heißt Tom, sie heißt Lena."],
+          ["1ª plurale", "wir", "Wir heißen Weber."],
+          ["2ª plurale", "ihr", "Wie heißt ihr?"],
+          ["3ª plurale / cortesia", "sie / Sie", "Wie heißen Sie?"]
+        ]
+      },
+      examples: [
+        { tr: "Mi chiamo Paolo." },
+        { tr: "Di dove sei?" },
+        { tr: "Lui si chiama Tom, lei si chiama Lena." },
+        { tr: "Ci chiamiamo Weber." },
+        { tr: "Come vi chiamate?" },
+        { tr: "Come si chiama Lei?", note: "forma di cortesia" }
+      ]
+    },
+    vocab: [
+      "il nome",
+      "il nome di battesimo",
+      "il cognome",
+      "Come ti chiami?",
+      "Mi chiamo ...",
+      "Il mio nome è ...",
+      "Piacere.",
+      "Di dove sei?",
+      "Vengo da ... (paese o città)",
+      "Quanti anni hai?",
+      "Ho ... anni.",
+      "E tu?",
+      "Come, scusa? (non ho capito)"
+    ],
+    culture: {
+      title: "Uno sguardo tedesco: nomi, titoli e il passaggio al du",
+      text: "<p>In Germania ci si presenta spesso con nome e cognome insieme: <i>Ich bin Anna Weber</i>. Con una persona che non conosci ti rivolgi di norma usando <i>Herr</i> o <i>Frau</i> e il cognome, non il solo nome di battesimo. Se qualcuno ha un titolo, come <i>Doktor</i>, in ambienti formali il titolo si aggiunge: <i>Frau Doktor Weber</i>.</p><p>Il vecchio <i>Fräulein</i> per le ragazze non sposate è ormai fuori uso. Oggi <i>Frau</i> vale per ogni donna adulta.</p><p>Il passaggio dal <i>Sie</i> al <i>du</i> è un piccolo evento sociale: di norma lo propone chi è più anziano o ha più responsabilità. In molte aziende e tra studenti ci si dà del <i>du</i> subito, ma nel dubbio parti con <i>Sie</i> e aspetta la proposta.</p>"
+    },
+    exercises: [
+      {
+        q: "Parli con una cliente che non conosci. Quale domanda usi per chiederle il nome?",
+        opts: ["Wie heißt du?", "Wie heißen Sie?", "Wie heißt ihr?"],
+        why: "Con una persona sconosciuta si usa la forma di cortesia <b>Sie</b>, con il verbo come per «loro»: <i>heißen</i>."
+      },
+      {
+        q: "Lena è una donna. Quale pronome usi per parlare di lei?",
+        opts: ["er", "sie", "es"],
+        why: "Per una donna si usa <b>sie</b>, con la minuscola a metà frase. <i>Er</i> è per un uomo, <i>es</i> per i nomi neutri."
+      },
+      {
+        q: "Completa: «___ heißt Lena.» (Lei si chiama Lena.)",
+        hint: "pronome della terza persona femminile",
+        why: "A inizio frase si scrive <b>Sie</b> con la maiuscola, perché è la prima parola; il verbo <i>heißt</i> è alla terza persona singolare."
+      },
+      {
+        q: "Completa: «Ich ___ aus Italien.» (Vengo dall'Italia.)",
+        hint: "prima persona singolare di kommen",
+        why: "<i>Ich komme</i>: la desinenza della prima persona singolare è <b>-e</b>."
+      },
+      {
+        q: "Completa con i pronomi giusti.",
+        tr: "Ciao! Mi chiamo Paolo. E tu come ti chiami?",
+        why: "Nella frase autonoma il pronome non si omette: <i>Ich heiße Paolo</i>. Con una persona in confidenza si chiede <i>Wie heißt du?</i>"
+      },
+      {
+        q: "Una nuova conoscenza ti saluta al corso di tedesco.",
+        setting: "La prima lezione, il primo giorno.",
+        lines: [
+          { tr: "Ciao! Sono Lena. E tu come ti chiami?" },
+          { tr: "Rispondi dicendo il tuo nome.", answerTr: "Mi chiamo Paolo." },
+          { tr: "Di dove sei?" },
+          { tr: "Rispondi che vieni dall'Italia.", answerTr: "Vengo dall'Italia." }
+        ]
+      },
+      {
+        tr: "Il mio nome è Anna Weber.",
+        why: "<i>Mein Name ist</i> è la formula alternativa a <i>Ich heiße</i>. Nome e cognome si scrivono con la maiuscola."
+      },
+      {
+        tr: "Ciao, mi chiamo Lena e vengo da Berlino.",
+        why: "Ascolta <i>ei</i> in <i>heiße</i>: si legge «ai», non «ei»."
+      },
+      {
+        tr: "Mi chiamo Paolo. E tu come ti chiami?",
+        why: "Per <i>wie</i> ricorda: la <b>w</b> si legge come una <i>v</i> italiana."
+      }
+    ]
+  },
+  "lesson:a1-u02-l2": {
+    theme: "Presentarsi",
+    title: "Sein, haben e i numeri",
+    objectives: [
+      "coniugare sein e haben al presente",
+      "dire l'età con «Ich bin ... Jahre alt»",
+      "contare fino a 100 e leggere un numero di telefono"
+    ],
+    theory: [
+      {
+        h: "Haben, il verbo «avere»",
+        p: "Anche <strong>haben</strong> è irregolare: la forma di <em>du</em> è <em>hast</em>, quella di <em>er/sie/es</em> è <em>hat</em>, e la <em>b</em> sparisce. Servono per dire cosa hai: <em>Ich habe eine Schwester</em>, <em>Wir haben Hunger</em>. Con <em>haben</em> ciò che si possiede è un complemento oggetto, e l'articolo indefinito maschile <em>ein</em> diventa <em>einen</em>, come nella formula <em>einen Kaffee</em> (il motivo lo spiega l'unità 3): <em>Ich habe einen Bruder</em>. Con <em>Hunger haben</em> e altre espressioni simili non c'è articolo: <em>Wir haben Hunger</em>."
+      },
+      {
+        h: "Sein con un nome: resta il nominativo",
+        p: "Dopo <strong>sein</strong> il nome che descrive il soggetto sta nello stesso caso del soggetto, il nominativo: <em>Das ist ein Tisch</em>, <em>Er ist ein Lehrer</em>. Un complemento con preposizione non è un nome predicativo: <em>Ich bin in Berlin</em> dice dove sei, non chi sei."
+      },
+      {
+        contrast: "In italiano l'età si <em>ha</em>: «ho venticinque anni». In tedesco l'età si <em>è</em>: <em>Ich bin fünfundzwanzig Jahre alt</em>, e con <em>haben</em> la frase è sbagliata. Per il freddo, invece, non si dice <em>Ich habe kalt</em> ma <em>Mir ist kalt</em> («a me è freddo»); per la fame vale <em>Ich habe Hunger</em>, come in italiano."
+      },
+      {
+        h: "I numeri da 20 a 100",
+        p: "Le decine sono <strong>zwanzig</strong>, <strong>dreißig</strong>, <strong>vierzig</strong>, <strong>fünfzig</strong>, <strong>sechzig</strong>, <strong>siebzig</strong>, <strong>achtzig</strong>, <strong>neunzig</strong>, <strong>hundert</strong>. Notare: <em>dreißig</em> si scrive con la <b>ß</b>; <em>sechzig</em> perde la <em>s</em> finale di <em>sechs</em>; <em>siebzig</em> perde la <em>-en</em> di <em>sieben</em>. I numeri da 21 a 99 si scrivono in una parola sola."
+      },
+      {
+        trap: "Nei numeri composti si dice <b>prima l'unità, poi la decina</b>: 45 è <em>fünfundvierzig</em>, letteralmente «cinque e quaranta». In italiano si dice «quarantacinque», nell'altro ordine. Attenzione alle coppie che si confondono all'ascolto: <em>sechzehn</em> (16) e <em>sechzig</em> (60), <em>siebzehn</em> (17) e <em>siebzig</em> (70)."
+      },
+      {
+        h: "I numeri di telefono",
+        p: "Un numero di telefono si legge di solito cifra per cifra o a gruppi di due cifre: 0151 si dice <em>null eins fünf eins</em>. Lo zero si dice <em>null</em>. A volte al telefono si sente <em>zwo</em> al posto di <em>zwei</em>, per non confonderlo con <em>drei</em>. Per chiedere: <em>Wie ist deine Telefonnummer?</em>"
+      }
+    ],
+    grammar: {
+      title: "Sein (essere) e haben (avere)",
+      note: "Entrambi i verbi sono irregolari e vanno memorizzati. Con <b>Sie</b> (cortesia) e con <em>sie</em> (loro) si usano <em>sind</em> e <em>haben</em>.",
+      table: {
+        head: ["persona", "sein", "haben"],
+        rows: [
+          ["ich", "bin", "habe"],
+          ["du", "bist", "hast"],
+          ["er / sie / es", "ist", "hat"],
+          ["wir", "sind", "haben"],
+          ["ihr", "seid", "habt"],
+          ["sie / Sie", "sind", "haben"]
+        ]
+      },
+      examples: [
+        { tr: "Ho vent'anni." },
+        { tr: "Hai una sorella." },
+        { tr: "Lui ha fame." },
+        { tr: "Siamo amici." },
+        { tr: "Avete un fratello?" },
+        { tr: "Il numero è zero tre zero, dodici, trentaquattro, cinquantasei.", note: "numero letto a gruppi" }
+      ]
+    },
+    vocab: [
+      "il numero di telefono",
+      "l'anno",
+      "vecchio; nell'età: «... Jahre alt» = «... anni»",
+      "venti",
+      "trenta",
+      "quaranta",
+      "cinquanta",
+      "sessanta",
+      "settanta",
+      "ottanta",
+      "novanta",
+      "cento",
+      "ventuno"
+    ],
+    exercises: [
+      {
+        q: "Come dici «Ho venticinque anni»?",
+        opts: ["Ich habe fünfundzwanzig Jahre.", "Ich bin fünfundzwanzig Jahre alt.", "Ich habe fünfundzwanzig alt."],
+        why: "In tedesco l'età si dice con <b>sein</b>: <i>Ich bin fünfundzwanzig Jahre alt</i>. Con <i>haben</i> la frase non è corretta."
+      },
+      {
+        q: "Quale numero è «45»?",
+        opts: ["vierundfünfzig", "fünfundvierzig", "vierzigfünf"],
+        why: "<i>Fünfundvierzig</i>: prima l'unità (<i>fünf</i>), poi <i>und</i>, poi la decina (<i>vierzig</i>). <i>Vierundfünfzig</i> è 54."
+      },
+      {
+        tr: "Tutta la coniugazione di haben.",
+        why: "<i>Haben</i> è irregolare: <i>du hast</i> e <i>er hat</i> perdono la <i>b</i>."
+      },
+      {
+        q: "Completa: «Du ___ eine Schwester.» (Hai una sorella.)",
+        hint: "seconda persona singolare di haben",
+        why: "<i>Du hast</i>: la <b>b</b> del verbo sparisce nella forma di <i>du</i>."
+      },
+      {
+        q: "Completa: «Ihr ___ hier.» (Voi siete qui.)",
+        hint: "seconda persona plurale di sein",
+        why: "<i>Ihr seid</i>: attenzione a non confonderla con <i>sind</i>, che vale per <i>wir</i> e <i>sie</i>."
+      },
+      {
+        q: "Completa con bin e habe.",
+        tr: "Sono Paolo e ho venticinque anni. Ho un fratello.",
+        why: "L'età e il nome si dicono con <i>sein</i> (<i>bin</i>), il fratello con <i>haben</i> (<i>habe</i>), seguito da <i>einen</i>."
+      },
+      {
+        q: "Abbina ogni numero alla sua cifra.",
+        pairs: ["30", "60", "45", "100"]
+      },
+      {
+        q: "Traduci dando del tu: «Hai una sorella?»",
+        why: "<i>Hast du eine Schwester?</i> Nella domanda sì/no il verbo va al primo posto."
+      },
+      {
+        tr: "Il mio numero di telefono è zero uno cinque uno, due tre quattro, cinque sei.",
+        why: "Lo zero si dice <i>null</i>. I numeri di telefono si leggono cifra per cifra o a gruppi."
+      },
+      {
+        tr: "Ho venticinque anni e ho una sorella.",
+        why: "<i>Fünfundzwanzig</i>: la <b>z</b> si legge sempre «ts»."
+      }
+    ]
+  },
+  "lesson:a1-u02-l3": {
+    theme: "Lavoro",
+    title: "Che lavoro fa?",
+    objectives: [
+      "chiedere e dire la professione con «Was sind Sie von Beruf?»",
+      "formare il femminile delle professioni con -in",
+      "usare le professioni senza articolo"
+    ],
+    theory: [
+      {
+        h: "La professione si dice senza articolo",
+        p: "Per dire che lavoro fai, il tedesco usa di solito il nome senza articolo, come l'italiano: <em>Ich bin Lehrerin</em>, <em>Er ist Arzt</em>. La domanda è <strong>Was sind Sie von Beruf?</strong>, letteralmente «che cosa è Lei di professione?». Con una persona in confidenza: <em>Was bist du von Beruf?</em>"
+      },
+      {
+        trap: "Quando la professione ha un aggettivo accanto, di solito l'articolo torna: <em>Ich bin eine gute Lehrerin</em>. La regola «senza articolo» vale quindi per la professione nuda, non per ogni frase con una professione."
+      },
+      {
+        h: "Il femminile in -in",
+        p: "In tedesco il nome della professione cambia a seconda che chi lo fa sia un uomo o una donna: <em>der Lehrer / die Lehrerin</em>, <em>der Student / die Studentin</em>. Quasi sempre si aggiunge <strong>-in</strong> al maschile, e il femminile è sempre <strong>die</strong>. Alcune vocali prendono la dieresi: <em>der Arzt → die Ärztin</em>, <em>der Koch → die Köchin</em>."
+      },
+      {
+        contrast: "In italiano molte professioni hanno una forma sola per entrambi i generi (<em>l'insegnante</em>, <em>il/la docente</em>, <em>il giornalista / la giornalista</em>), e per molte altre il femminile si forma in modi diversi. In tedesco il genere della persona si sente quasi sempre nel nome stesso: <em>Ich bin Lehrer</em> parla un uomo, <em>Ich bin Lehrerin</em> una donna."
+      },
+      {
+        h: "Il plurale delle forme in -in",
+        p: "Il plurale del femminile si fa con <strong>-nen</strong>: <em>die Lehrerin → die Lehrerinnen</em>, con due <em>n</em>. I maschili variano: <em>die Lehrer</em>, <em>die Ärzte</em>, <em>die Studenten</em>."
+      },
+      {
+        tip: "Quando impari una professione, impara subito entrambe le forme: <em>der Arzt, die Ärztin</em>. Ti serve per parlare di te e degli altri."
+      }
+    ],
+    grammar: {
+      title: "Professioni: maschile e femminile",
+      note: "Il femminile si forma di solito con <b>-in</b>. Con <em>Arzt</em> e <em>Koch</em> la vocale prende la dieresi.",
+      table: {
+        head: ["maschile", "femminile", "esempio"],
+        rows: [
+          ["der Lehrer", "die Lehrerin", "Ich bin Lehrerin."],
+          ["der Arzt", "die Ärztin", "Er ist Arzt."],
+          ["der Student", "die Studentin", "Wir sind Studenten."],
+          ["der Koch", "die Köchin", "Sie ist Köchin."],
+          ["der Ingenieur", "die Ingenieurin", "Ich bin Ingenieurin."],
+          ["der Verkäufer", "die Verkäuferin", "Sie ist Verkäuferin."]
+        ]
+      },
+      examples: [
+        { tr: "Che lavoro fa?", note: "forma di cortesia" },
+        { tr: "Sono insegnante.", note: "parla una donna" },
+        { tr: "Lui è medico." },
+        { tr: "Lei è cuoca." },
+        { tr: "Sono una brava insegnante.", note: "con l'aggettivo torna l'articolo" },
+        { tr: "Siamo studenti." }
+      ]
+    },
+    vocab: [
+      "la professione",
+      "l'insegnante (uomo)",
+      "l'insegnante (donna)",
+      "il medico (uomo)",
+      "il medico (donna)",
+      "lo studente",
+      "la studentessa",
+      "il cuoco",
+      "la cuoca",
+      "l'ingegnere",
+      "il commesso",
+      "la commessa"
+    ],
+    exercises: [
+      {
+        q: "Sei una dottoressa. Quale frase usa la forma femminile?",
+        opts: ["Ich bin Arzt.", "Ich bin Ärztin.", "Ich bin Arztin."],
+        why: "Il femminile di <i>Arzt</i> è <b>Ärztin</b>: si aggiunge <i>-in</i> e la <i>A</i> prende la dieresi."
+      },
+      {
+        q: "Qual è il plurale di «die Lehrerin»?",
+        opts: ["die Lehrerins", "die Lehrerinnen", "die Lehrerine"],
+        why: "Il plurale delle forme in <i>-in</i> si fa con <b>-nen</b>: <i>die Lehrerinnen</i>."
+      },
+      {
+        tr: "Il verbo studieren, tutte le persone.",
+        why: "I verbi in <i>-ieren</i> si coniugano in modo regolare: <i>studier-</i> più le desinenze."
+      },
+      {
+        q: "Completa: «Sie ist ___.» (Lei è cuoca.)",
+        hint: "forma femminile di Koch",
+        why: "<i>Köchin</i>: il femminile aggiunge <i>-in</i> e la <i>o</i> prende la dieresi. Senza la dieresi la parola è sbagliata."
+      },
+      {
+        q: "Scegli l'articolo determinativo.",
+        items: ["insegnante (uomo)", "insegnante (donna)", "professione", "studentessa", "medico (donna)", "cuoco"]
+      },
+      {
+        q: "Abbina ogni professione al suo significato.",
+        pairs: ["insegnante (uomo)", "medico (donna)", "cuoco", "commessa"]
+      },
+      {
+        tr: "Che lavoro fa?",
+        why: "Domanda con <i>was</i>: il verbo <i>sind</i> è al secondo posto, e con <i>Sie</i> si usa la forma di cortesia."
+      },
+      {
+        q: "Traduci: «Io sono cuoca.»",
+        why: "<i>Ich bin Köchin</i>: professione senza articolo e forma femminile con <i>-in</i>."
+      },
+      {
+        tr: "Che lavoro fa? Sono insegnante.",
+        why: "<i>Beruf</i> ha la <b>f</b> finale, che si pronuncia come l'italiana «f»."
+      },
+      {
+        tr: "Che lavoro fa? Sono ingegnera.",
+        why: "<i>Ingenieurin</i> è il femminile di <i>Ingenieur</i>: si aggiunge <b>-in</b>."
+      }
+    ]
+  },
+  "lesson:a1-u02-l4": {
+    theme: "Vita quotidiana",
+    title: "Wohnen, arbeiten, kommen",
+    objectives: [
+      "coniugare i verbi regolari al presente",
+      "dire dove si abita, dove si lavora e da dove si viene",
+      "riconoscere paesi e lingue"
+    ],
+    theory: [
+      {
+        h: "Il verbo regolare: radice più desinenza",
+        p: "Si toglie <em>-en</em> dall'infinito e si aggiunge la desinenza della persona: <strong>-e, -st, -t, -en, -t, -en</strong>. Da <em>wohnen</em> si ha <em>ich wohne, du wohnst, er wohnt, wir wohnen, ihr wohnt, sie/Sie wohnen</em>. Le forme sono sei ma le desinenze diverse sono quattro, perché <em>er</em> e <em>ihr</em> hanno la stessa forma, come <em>wir</em> e <em>sie/Sie</em>."
+      },
+      {
+        contrast: "In italiano ogni persona ha la sua desinenza: parlo, parli, parla, parliamo, parlate, parlano. In tedesco <em>er arbeitet</em> e <em>ihr arbeitet</em> sono identici, e <em>wir arbeiten</em> e <em>sie arbeiten</em> pure. Per questo, nella frase autonoma, il pronome non si omette."
+      },
+      {
+        h: "Radici in -t e -d: serve una -e- in più",
+        p: "Se la radice finisce in <em>-t</em> o <em>-d</em> (<em>arbeit-</em>, <em>find-</em>), per rendere pronunciabile la desinenza si inserisce una <strong>-e-</strong> davanti a <em>-st</em> e <em>-t</em>: <em>du arbeitest, er arbeitet, ihr arbeitet</em>. La forma con <em>ich</em> (<em>ich arbeite</em>) e quelle in <em>-en</em> restano regolari."
+      },
+      {
+        h: "Wo e woher",
+        p: "<strong>Wo</strong> chiede dove si trova qualcuno: <em>Wo wohnst du?</em> → <em>Ich wohne in Berlin.</em> <strong>Woher</strong> chiede la provenienza: <em>Woher kommen Sie?</em> → <em>Ich komme aus Spanien.</em> Con città e paesi si usa di norma <em>in</em> per il luogo e <em>aus</em> per la provenienza. Il verbo resta al secondo posto, e con <em>Sie</em> si coniuga come per «loro»."
+      },
+      {
+        trap: "I nomi delle lingue sono sostantivi e si scrivono con la <b>maiuscola</b>: <em>Deutsch, Italienisch, Englisch</em>. Si usano senza articolo dopo <em>sprechen</em>: <em>Ich spreche Deutsch</em>. Attenzione: <em>sprechen</em> cambia vocale con <em>du</em> e <em>er</em> (<em>du sprichst</em>), e quel tipo di verbi lo vedrai nell'unità 3: per ora usa solo <em>ich spreche</em> e <em>wir sprechen</em>."
+      },
+      {
+        tip: "Per dire dove lavori: <em>Ich arbeite in Hamburg</em>. Per dire che lavoro fai accanto al luogo: <em>Ich arbeite als Lehrerin</em>, di solito senza articolo dopo <em>als</em>."
+      }
+    ],
+    grammar: {
+      title: "Presente regolare: wohnen, arbeiten, kommen",
+      note: "Con <em>arbeiten</em> la radice finisce in <b>-t</b>, quindi compare la <b>-e-</b> con <em>du</em>, <em>er/sie/es</em> e <em>ihr</em>.",
+      table: {
+        head: ["persona", "wohnen", "arbeiten", "kommen"],
+        rows: [
+          ["ich", "wohne", "arbeite", "komme"],
+          ["du", "wohnst", "arbeitest", "kommst"],
+          ["er / sie / es", "wohnt", "arbeitet", "kommt"],
+          ["wir", "wohnen", "arbeiten", "kommen"],
+          ["ihr", "wohnt", "arbeitet", "kommt"],
+          ["sie / Sie", "wohnen", "arbeiten", "kommen"]
+        ]
+      },
+      examples: [
+        { tr: "Dove abiti?" },
+        { tr: "Abito a Berlino." },
+        { tr: "Tu lavori a Vienna." },
+        { tr: "Lui viene dalla Spagna." },
+        { tr: "Voi lavorate ad Amburgo." },
+        { tr: "Di dove viene Lei?", note: "forma di cortesia" }
+      ]
+    },
+    vocab: [
+      "la Germania",
+      "l'Italia",
+      "l'Austria",
+      "la Francia",
+      "la Spagna",
+      "la Polonia",
+      "il tedesco (lingua)",
+      "l'italiano (lingua)",
+      "l'inglese (lingua)",
+      "lo spagnolo (lingua)",
+      "il francese (lingua)",
+      "il polacco (lingua)"
+    ],
+    exercises: [
+      {
+        q: "Quale frase è corretta?",
+        opts: ["Er arbeit in Berlin.", "Er arbeitet in Berlin.", "Er arbeitest in Berlin."],
+        why: "La radice <i>arbeit-</i> finisce in <i>-t</i>: con <i>er</i> serve la <b>-e-</b> prima di <i>-t</i>."
+      },
+      {
+        q: "Quali forme sono corrette con «ihr»?",
+        opts: ["ihr arbeitet", "ihr kommt", "ihr wohnen", "ihr arbeitest", "ihr wohnt"],
+        why: "Con <i>ihr</i> la desinenza è <b>-t</b> (<i>-et</i> con le radici in <i>-t</i>). <i>Wohnen</i> è per <i>wir</i> e <i>sie/Sie</i>; <i>-st</i> è per <i>du</i>."
+      },
+      {
+        tr: "Il verbo arbeiten, tutte le persone.",
+        why: "La radice <i>arbeit-</i> finisce in <i>-t</i>: con <i>du</i>, <i>er</i> e <i>ihr</i> compare la <b>-e-</b>."
+      },
+      {
+        tr: "Il verbo kommen, alcune persone.",
+        why: "<i>Kommen</i> è regolare: <i>du kommst</i>, <i>er kommt</i>, <i>ihr kommt</i>. Non c'è cambio di vocale."
+      },
+      {
+        q: "Completa: «Du ___ in Wien.» (Lavori a Vienna.)",
+        hint: "seconda persona singolare di arbeiten",
+        why: "<i>Du arbeitest</i>: dopo la radice in <i>-t</i> serve la <b>-e-</b> prima di <i>-st</i>."
+      },
+      {
+        q: "Completa: «Wo ___ ihr?» (Dove abitate?)",
+        hint: "seconda persona plurale di wohnen",
+        why: "<i>Ihr wohnt</i>: la desinenza di <i>ihr</i> è <b>-t</b>."
+      },
+      {
+        tr: "Abito in Italia e lavoro qui.",
+        why: "Nella frase con <i>und</i> il secondo verbo ha lo stesso soggetto, che si può omettere: <i>und arbeite hier</i>."
+      },
+      {
+        q: "Traduci dando del tu: «Di dove sei?»",
+        why: "<i>Woher kommst du?</i> è la forma più comune; anche <i>Woher bist du?</i> è corretta."
+      },
+      {
+        tr: "Abito a Vienna e vengo dall'Italia.",
+        why: "<i>Wien</i> si legge «vin»: la <b>w</b> è come la <i>v</i> italiana e <i>ie</i> è una <i>i</i> lunga."
+      },
+      {
+        tr: "Vengo dall'Italia e abito a Berlino.",
+        why: "Con le città si usa <i>in</i> per il luogo e <i>aus</i> per la provenienza."
+      }
+    ]
+  },
+  "lesson:a1-u02-test": {
+    theme: "Verifica",
+    title: "Verifica dell'unità 2",
+    objectives: ["verificare pronomi, sein e haben, professioni, presente regolare, numeri"],
+    theory: [
+      {
+        p: "Dieci domande su tutta l'unità. Si supera con il 70%. Non riguardare le lezioni mentre rispondi: se non ricordi qualcosa, è meglio tornare a ripassare."
+      }
+    ],
+    exercises: [
+      {
+        q: "Come dici «Ho trent'anni»?",
+        opts: ["Ich habe dreißig Jahre.", "Ich bin dreißig Jahre alt.", "Ich sind dreißig Jahre alt."],
+        why: "<i>Ich bin dreißig Jahre alt</i>: l'età si dice con <b>sein</b> e <i>alt</i>."
+      },
+      {
+        q: "Quale numero è «73»?",
+        opts: ["siebenunddreißig", "dreiundsiebzig", "siebzigdrei"],
+        why: "<i>Dreiundsiebzig</i>: prima l'unità (<i>drei</i>), poi la decina (<i>siebzig</i>). <i>Siebenunddreißig</i> è 37."
+      },
+      {
+        q: "La signora Weber fa il medico. Quale frase usa la forma femminile della professione?",
+        opts: ["Frau Weber ist Ärztin.", "Frau Weber ist Arzt.", "Frau Weber ist ein Ärztin."],
+        why: "Il femminile è <b>Ärztin</b>, e la professione sta senza articolo."
+      },
+      {
+        q: "Completa: «Wir ___ aus Polen.» (Veniamo dalla Polonia.)",
+        why: "<i>Wir kommen</i>: con <i>wir</i> la desinenza è <b>-en</b>."
+      },
+      {
+        q: "Completa: «Ihr ___ Hunger.» (Voi avete fame.)",
+        why: "<i>Ihr habt</i>: la forma di <i>haben</i> con <i>ihr</i> è <b>habt</b>."
+      },
+      {
+        tr: "Il verbo arbeiten: du, er, ihr.",
+        why: "Con le radici in <i>-t</i> serve la <b>-e-</b>: <i>du arbeitest, er arbeitet, ihr arbeitet</i>."
+      },
+      {
+        q: "Completa con ist, wohnt e kommt.",
+        tr: "Anna è insegnante. Abita a Vienna e viene dalla Polonia.",
+        why: "Tutti e tre i verbi sono alla terza persona singolare: <i>ist</i>, <i>wohnt</i>, <i>kommt</i>."
+      },
+      {
+        q: "Traduci, rivolgendoti a una persona con il Lei: «Che lavoro fa?»",
+        why: "<i>Was sind Sie von Beruf?</i> è la formula che hai imparato; <i>Was machen Sie beruflich?</i> è un'alternativa corretta."
+      },
+      {
+        tr: "Mi chiamo Lena, ho trent'anni e vengo da Vienna.",
+        why: "<i>Dreißig</i> si scrive con la <b>ß</b>: si pronuncia /s/, come la <i>s</i> di «sole», senza raddoppiarla."
+      },
+      {
+        tr: "Mi chiamo Paolo, sono ingegnere e abito a Berlino.",
+        why: "Nella frase compaiono tre verbi: <i>heiße</i>, <i>bin</i>, <i>wohne</i>."
+      }
     ]
   }
 });
