@@ -110,111 +110,75 @@
     };
   }
 
-  /** The direct object pronoun, agreeing in gender and number. */
+  /* Verb forms for the pronoun frames: [singular, plural] 3rd person, and
+     the verbs that govern the accusative or the dative. */
+  var SUBJECT_VERBS = [["kommt", "kommen"], ["wohnt", "wohnen"], ["lernt", "lernen"], ["arbeitet", "arbeiten"]];
+  var CASE_VERBS = {
+    akk: ["sieht", "besucht", "kennt", "braucht"],
+    dat: ["hilft", "dankt", "antwortet", "glaubt"]
+  };
+
+  /**
+   * A personal pronoun in the nominative, accusative or dative. The cue in
+   * brackets names who is replaced ("Lukas sieht ___ (Tom)" -> ihn); a
+   * subject needs a verb that agrees with it, so the nominative frame picks
+   * the plural form for wir and "sie" (plural) and the singular otherwise.
+   * A pronoun whose cue would be its own answer ("Sie" in the accusative) is
+   * left out of that case.
+   */
   function pronomi(rnd) {
-    var noun = pick(rnd, Lex.NOUNS);
-    var plural = rnd() < 0.5;
-    var word = plural ? Lex.pluralOf(noun) : noun.s;
-    var art = Lex.definite(word, noun.g, plural);
-    var forma = plural ? (noun.g === "f" ? "le" : "li") : (noun.g === "f" ? "la" : "lo");
-    var verb = pick(rnd, ["vedo", "compro", "prendo", "conosco"]);
-    return {
-      t: "fill",
-      q: t("drill.pron.q", { sentence: verb + " " + art + " " + word }),
-      a: [forma + " " + verb]
-    };
+    var kase = pick(rnd, ["nom", "akk", "dat"]);
+    var who = pick(rnd, Lex.PRONOUNS.filter(function (p) {
+      var cue = kase === "nom" ? p.nomCue : p.cue;
+      return cue && cue.toLowerCase() !== p[kase].toLowerCase();
+    }));
+    var sentence;
+    if (kase === "nom") {
+      sentence = "___ " + pick(rnd, SUBJECT_VERBS)[who.plural ? 1 : 0] + " (" + who.nomCue + ")";
+    } else {
+      sentence = "Lukas " + pick(rnd, CASE_VERBS[kase]) + " ___ (" + who.cue + ")";
+    }
+    return { t: "fill", q: t("drill.pron.q", { sentence: sentence }), a: [who[kase]] };
   }
 
   /* ---------------- Numbers, dates, times ---------------- */
 
-  var UNITA = ["zero", "uno", "due", "tre", "quattro", "cinque", "sei", "sette", "otto", "nove"];
-  var DIECI = ["dieci", "undici", "dodici", "tredici", "quattordici", "quindici", "sedici",
-    "diciassette", "diciotto", "diciannove"];
-  var DECINE = ["", "", "venti", "trenta", "quaranta", "cinquanta", "sessanta", "settanta", "ottanta", "novanta"];
-
-  /**
-   * A cardinal number in words, 0-9999.
-   * Elision is the real subject of the exercise: "ventuno" and "ventotto"
-   * lose the vowel of the tens before "uno" and "otto".
-   */
-  function numeral(n) {
-    if (n < 10) return UNITA[n];
-    if (n < 20) return DIECI[n - 10];
-    if (n < 100) {
-      var d = Math.floor(n / 10), u = n % 10;
-      var base = DECINE[d];
-      if (u === 0) return base;
-      if (u === 1 || u === 8) base = base.slice(0, -1);      // venti + uno -> ventuno
-      return base + (u === 3 ? "tré" : UNITA[u]);
-    }
-    if (n < 1000) {
-      var c = Math.floor(n / 100), r = n % 100;
-      var pre = c === 1 ? "cento" : UNITA[c] + "cento";
-      return r ? pre + numeral(r) : pre;
-    }
-    var m = Math.floor(n / 1000), rr = n % 1000;
-    var pref = m === 1 ? "mille" : UNITA[m] + "mila";
-    return rr ? pref + numeral(rr) : pref;
-  }
-
   function numeri(rnd) {
-    /* The ranges are chosen for what causes trouble: elisions in the
-       twenties, hundreds and thousands. A random number from 0-9999 would
-       hit them rarely. */
-    var pule = [[11, 19], [20, 39], [40, 99], [100, 999], [1000, 9999]];
-    var pula = pick(rnd, pule);
-    var n = pula[0] + Math.floor(rnd() * (pula[1] - pula[0] + 1));
-    return { t: "fill", q: t("drill.num.q", { n: n }), a: [numeral(n)] };
+    /* The ranges are chosen for what causes trouble: eins/ein, und-order,
+       the optional "ein" of hundert and tausend, big numbers. A random
+       number from 0-1000000 would hit them rarely. */
+    var ranges = [[0, 20], [21, 99], [100, 199], [200, 999], [1000, 1999], [2000, 9999],
+      [10000, 999999], [1000000, 1000000]];
+    var range = pick(rnd, ranges);
+    var n = range[0] + Math.floor(rnd() * (range[1] - range[0] + 1));
+    return { t: "fill", q: t("drill.num.q", { n: n }), a: Lex.numeralVariants(n) };
   }
 
-  var MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno",
-    "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
-
   /**
-   * A date. The first day of the month is ordinal ("il primo"), the rest
-   * cardinal, and "otto" and "undici" take an apostrophe: "l'otto",
-   * "l'undici".
+   * A date. The prompt shows the digits ("3. März") and the answer is
+   * spelled out: "am dritten März", "der dritte März" or "den dritten März".
+   * A month never gets a day it does not have.
    */
   function date(rnd) {
-    var giorno = 1 + Math.floor(rnd() * 28);
-    var mese = pick(rnd, MESI);
-    var slowo = giorno === 1 ? "primo" : numeral(giorno);
-    var art = /^[aeiou]/.test(slowo) ? "l'" : "il ";
+    var month = Math.floor(rnd() * 12);
+    var day = 1 + Math.floor(rnd() * Lex.MONTH_DAYS[month]);
     return {
       t: "fill",
-      q: t("drill.date.q", { day: giorno, month: mese }),
-      a: [art + slowo + " " + mese]
+      q: t("drill.date.q", { day: day + ".", month: Lex.MONTHS[month] }),
+      a: Lex.dateAnswers(day, month)
     };
   }
 
+  function two(n) { return (n < 10 ? "0" : "") + n; }
+
   /**
-   * The time, formal and colloquial. "l'una" is singular, and noon and
-   * midnight have words of their own: three exceptions in one exercise.
+   * The time. The prompt gives HH:MM without fixing a register, so the key
+   * accepts colloquial ("halb drei") and official ("vierzehn Uhr dreißig").
    */
   function ore(rnd) {
     var h = Math.floor(rnd() * 24);
-    var m = pick(rnd, [0, 15, 30, 45]);
-    var h12 = h % 12 === 0 ? 12 : h % 12;
-    var odp;
-    if (h === 12 && m === 0) odp = "mezzogiorno";
-    else if (h === 0 && m === 0) odp = "mezzanotte";
-    else {
-      var baza = h12 === 1 ? "l'una" : "le " + numeral(h12);
-      if (m === 0) odp = baza;
-      else if (m === 15) odp = baza + " e un quarto";
-      else if (m === 30) odp = baza + " e mezza";
-      else odp = baza + " e quarantacinque";
-    }
-    var alt = [odp];
-    if (m === 45) {
-      var nast = (h12 % 12) + 1;
-      alt.push((nast === 1 ? "l'una" : "le " + numeral(nast)) + " meno un quarto");
-    }
-    return {
-      t: "fill",
-      q: t("drill.ore.q", { time: (h < 10 ? "0" : "") + h + ":" + (m < 10 ? "0" : "") + m }),
-      a: alt
-    };
+    var m = 5 * Math.floor(rnd() * 12);
+    return { t: "fill", q: t("drill.ore.q", { time: two(h) + ":" + two(m) }), a: Lex.clockAnswers(h, m) };
   }
 
   /* ---------------- The registry ---------------- */
@@ -292,8 +256,8 @@
   Drills.pickTopic = pickTopic;
   Drills.make = make;
   Drills.session = session;
-  Drills.numeral = numeral;
-  Drills.MESI = MESI;
+  Drills.numeral = Lex.numeral;
+  Drills.MESI = Lex.MONTHS;
 
   global.Drills = Drills;
 

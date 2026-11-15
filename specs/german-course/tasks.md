@@ -85,10 +85,10 @@ fissa cosa ogni unità presuppone). `c` e `d` sono `ok` fra loro. `e` è `seq` p
 
 - [x] T1.40 | F1 | `exercises-choice.js:154` default `["der","die","das"]` (implementa T1.03) | 0,25h | verify: `npx playwright test tests/dom/exercises-grading.spec.js -g gender` (rosso da T1.03) | integrazione | dip: T1.03 | par: ok | rollback: revert | R11
 - [x] T1.41 | F1 | `flash-modes.js:36-43` regex articoli der/die/das (+ plurale `die`), rendering di `plural` in lessico e flashcard; righe di mutazione | 0,5h | verify: `node --test tests/unit/flash-modes.test.mjs` riscritto (rosso) | unit | dip: T1.03 | par: ok | rollback: revert | R14, R15
-- [ ] T1.42 | F1 | Drill numeri (einundzwanzig, hundertzwei, tausendeins) | 0,5h | verify: `node --test tests/unit/drills.test.mjs` casi numeri (rosso) | unit | dip: T1.01 | par: seq | rollback: revert | R13
-- [ ] T1.43 | F1 | Drill ore (halb drei = 2:30, Viertel nach/vor, formato 24h) | 0,5h | verify: `drills.test.mjs` ore (rosso) | unit | dip: T1.42 | par: seq | rollback: revert | R13
-- [ ] T1.44 | F1 | Drill date (am dritten März, der 3. März, Ordinali) | 0,5h | verify: `drills.test.mjs` date (rosso) | unit | dip: T1.43 | par: seq | rollback: revert | R13
-- [ ] T1.45 | F1 | Drill pronomi personali Nom/Akk/Dat | 0,5h | verify: `drills.test.mjs` pronomi (rosso) | unit | dip: T1.44 | par: seq | rollback: revert | R13
+- [x] T1.42 | F1 | Drill numeri (einundzwanzig, hundertzwei, tausendeins) | 0,5h | verify: `node --test tests/unit/drills.test.mjs` casi numeri (rosso) | unit | dip: T1.01 | par: seq | rollback: revert | R13
+- [x] T1.43 | F1 | Drill ore (halb drei = 2:30, Viertel nach/vor, formato 24h) | 0,5h | verify: `drills.test.mjs` ore (rosso) | unit | dip: T1.42 | par: seq | rollback: revert | R13
+- [x] T1.44 | F1 | Drill date (am dritten März, der 3. März, Ordinali) | 0,5h | verify: `drills.test.mjs` date (rosso) | unit | dip: T1.43 | par: seq | rollback: revert | R13
+- [x] T1.45 | F1 | Drill pronomi personali Nom/Akk/Dat | 0,5h | verify: `drills.test.mjs` pronomi (rosso) | unit | dip: T1.44 | par: seq | rollback: revert | R13
 - [ ] T1.46 | F1 | Drill ausiliare del Perfekt (haben/sein) da `SEIN_VERBS` | 0,5h | verify: `drills.test.mjs` ausiliare (rosso) | unit | dip: T1.45, T1.15 | par: seq | rollback: revert | R13
 - [ ] T1.47 | F1 | `drills-lex.js` preposizione + caso + contrazione (Akk, Dat, Wechselpräpositionen con stato/moto; zum, zur, im, am, ins, ans, vom, beim) | 0,5h | verify: `drills.test.mjs` prep (rosso) | unit | dip: T1.46 | par: seq | rollback: revert | R13
 - [ ] T1.48 | F1 | `drills-lex.js` articolo per caso (der/den/dem/des, ein/einen/einem/eines) e mappa `TOPICS` sui tag tedeschi di T1.01; test "niente say/listen/speak" invariato | 0,5h | verify: `drills.test.mjs` intero + `npx playwright test tests/dom/drills.spec.js` (rosso) | integrazione | dip: T1.47 | par: seq | rollback: revert | R13
