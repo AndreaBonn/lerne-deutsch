@@ -1057,17 +1057,17 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Mit e zu vogliono il dativo",
-        p: "Le preposizioni <strong>mit</strong> (con, per il mezzo di trasporto) e <strong>zu</strong> (verso un luogo o una persona) vogliono sempre il <strong>dativo</strong>. L'articolo cambia in tutti i generi: maschile e neutro <strong>dem</strong>, femminile <strong>der</strong>, plurale <strong>den</strong>. Esempi: <em>Ich fahre mit dem Bus</em> (maschile), <em>mit der Straßenbahn</em> (femminile), <em>mit dem Auto</em> (neutro). Al plurale il nome prende anche una <strong>-n</strong>: <em>mit den Bussen</em>, <em>mit den Zügen</em>."
+        p: "Le preposizioni <strong>mit</strong> (con, per il mezzo di trasporto) e <strong>zu</strong> (verso un luogo o una persona) vogliono sempre il <strong>dativo</strong>. L'articolo cambia in tutti i generi: maschile e neutro <strong>dem</strong>, femminile <strong>der</strong>, plurale <strong>den</strong>. Esempi: <em>Ich fahre mit dem Bus</em> (maschile), <em>mit der Straßenbahn</em> (femminile), <em>mit dem Auto</em> (neutro). Al plurale il nome di solito prende anche una <strong>-n</strong>: <em>mit den Bussen</em>, <em>mit den Zügen</em>, <em>mit den Fahrrädern</em>. Non la prende se il plurale termina già in <strong>-n</strong> o in <strong>-s</strong>: <em>mit den Autos</em>, <em>mit den Straßenbahnen</em>."
       },
       {
         h: "zu dem diventa zum, zu der diventa zur",
         p: "Con <em>zu</em> l'articolo si fonde: <strong>zu dem → zum</strong>, <strong>zu der → zur</strong>. Si dice <em>Ich gehe zum Bahnhof</em> e <em>Sie geht zur Schule</em>. Per dire che si va a piedi c'è l'espressione fissa <strong>zu Fuß</strong>: <em>Wir gehen zu Fuß zur Haltestelle</em>."
       },
       {
-        contrast: "In italiano il mezzo si dice con <em>in</em> (<em>in autobus</em>, <em>in treno</em>, <em>in macchina</em>, <em>in bicicletta</em>) e la meta con <em>a</em> (<em>alla stazione</em>, <em>a scuola</em>). In tedesco il mezzo è sempre <strong>mit</strong> (<em>mit dem Bus</em>, <em>mit dem Zug</em>) e la meta <strong>zu</strong>. Fai attenzione anche ai generi: <em>la stazione</em> è femminile, ma <em>der Bahnhof</em> è maschile; <em>il tram</em> è maschile, ma <em>die Straßenbahn</em> è femminile; <em>l'auto</em> è femminile in italiano, ma <em>das Auto</em> è neutro; <em>la bici</em> è <em>das Fahrrad</em>, neutro."
+        contrast: "In italiano il mezzo si dice con <em>in</em> (<em>in autobus</em>, <em>in treno</em>, <em>in macchina</em>, <em>in bicicletta</em>) e la meta con <em>a</em> (<em>alla stazione</em>, <em>a scuola</em>). Negli esempi di questa lezione il mezzo si dice con <strong>mit</strong> (<em>mit dem Bus</em>, <em>mit dem Zug</em>) e la meta con <strong>zu</strong> (le mete possono richiedere anche <em>nach</em> o <em>in</em>, come vedrai). <em>Im Bus fahren</em> esiste, ma sottolinea il trovarsi a bordo. Fai attenzione anche ai generi: <em>la stazione</em> è femminile, ma <em>der Bahnhof</em> è maschile; <em>il tram</em> è maschile, ma <em>die Straßenbahn</em> è femminile; <em>l'auto</em> è femminile in italiano, ma <em>das Auto</em> è neutro; <em>la bici</em> è <em>das Fahrrad</em>, neutro."
       },
       {
-        trap: "Non dire «in dem Bus fahren» per «andare in autobus» e non usare la forma del nominativo: «mit der Bus» e «mit die Straßenbahn» sono sbagliati. Dopo <em>mit</em> e <em>zu</em> l'articolo è sempre al dativo: <em>mit dem Bus</em>, <em>mit der Straßenbahn</em>, <em>zum Bahnhof</em>, <em>zur Schule</em>."
+        trap: "Per «andare in autobus» la formulazione abituale è <em>mit dem Bus fahren</em>; <em>im Bus fahren</em> mette in evidenza il trovarsi a bordo. Non usare la forma del nominativo: «mit der Bus» e «mit die Straßenbahn» sono sbagliati. Dopo <em>mit</em> e <em>zu</em> l'articolo è sempre al dativo: <em>mit dem Bus</em>, <em>mit der Straßenbahn</em>, <em>zum Bahnhof</em>, <em>zur Schule</em>."
       },
       {
         tip: "Impara ogni mezzo di trasporto con la sua frase intera: <em>mit dem Bus</em>, <em>mit der U-Bahn</em>, <em>mit dem Zug</em>, <em>mit dem Fahrrad</em>. Così l'articolo giusto arriva insieme al nome."
@@ -1162,7 +1162,7 @@ LINGUAI.addStrings("it", {
     title: "gehen, fahren, kommen: aus, von, bei",
     objectives: [
       "distinguere gehen (a piedi) da fahren (con un mezzo)",
-      "dire da dove si viene con aus, von e bei",
+      "dire da dove si viene con aus e von e dove ci si trova con bei",
       "dire verso quale città si va con nach"
     ],
     theory: [
@@ -1202,7 +1202,7 @@ LINGUAI.addStrings("it", {
         { tr: "Vengo dal supermercato.", note: "aus dem: dal supermercato, da dentro" },
         { tr: "Lui viene dalla stazione.", note: "vom = von dem" },
         { tr: "Andiamo dal medico.", note: "zum = zu dem" },
-        { tr: "Tu vai al parco in macchina.", note: "fährst: cambio di vocale" },
+        { tr: "Vai al parco.", note: "fährst: cambio di vocale" },
         { tr: "Anna è dal medico.", note: "beim = bei dem" }
       ]
     },
@@ -1266,11 +1266,11 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Vengo dall'Italia e vado a Berlino in treno.",
-        why: "<i>Italien</i>: la <b>I</b> è una «i» lunga; <i>Berlin</i> si legge con la <b>r</b> uvulare o apicale, sono entrambe pronunce standard. <i>Zug</i> comincia con la <b>z</b> «ts»."
+        why: "<i>Italien</i>: l'accento cade sulla seconda sillaba e la <b>a</b> è lunga; <i>Berlin</i> si legge con la <b>r</b> uvulare o apicale, sono entrambe pronunce standard. <i>Zug</i> comincia con la <b>z</b> «ts»."
       },
       {
         tr: "Andiamo a piedi al parco.",
-        why: "<i>Fuß</i>: la <b>ß</b> è una «s» sorda e la <b>u</b> è lunga. In <i>Park</i> la <b>a</b> è lunga e la <b>k</b> finale è netta."
+        why: "<i>Fuß</i>: la <b>ß</b> è una «s» sorda e la <b>u</b> è lunga. In <i>Park</i> la <b>k</b> finale è netta."
       }
     ]
   },
@@ -1381,7 +1381,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Vada dritto e giri a destra.",
-        why: "In <i>geradeaus</i> la <b>g</b> è dura e la <b>au</b> si legge come «ao». In <i>biegen</i> la <b>ie</b> è una «i» lunga."
+        why: "In <i>geradeaus</i> la <b>g</b> è dura e la <b>au</b> è un dittongo /aʊ̯/: si passa dalla <b>a</b> a una <b>u</b> breve nella stessa sillaba. In <i>biegen</i> la <b>ie</b> è una «i» lunga."
       },
       {
         tr: "Scusi, dov'è la farmacia?",
@@ -1404,7 +1404,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Dire che qualcosa non c'è",
-        p: "Per negare si usa <strong>kein</strong>, che segue lo stesso schema di <em>ein</em>: <em>Es gibt keinen Supermarkt</em> (m.), <em>keine Bank</em> (f.), <em>kein Museum</em> (n.). Con <em>es gibt</em> la negazione è <em>kein</em>, non <em>nicht</em>."
+        p: "Per negare si usa <strong>kein</strong>, che segue lo stesso schema di <em>ein</em>: <em>Es gibt keinen Supermarkt</em> (m.), <em>keine Bank</em> (f.), <em>kein Museum</em> (n.). Negli esempi trattati qui, con <em>es gibt</em> la negazione è <em>kein</em>, non <em>nicht</em> (<em>nicht</em> compare in usi diversi, come <em>Das gibt es nicht</em>)."
       },
       {
         contrast: "In italiano <em>c'è</em> e <em>ci sono</em> cambiano con il numero (<em>c'è un parco</em>, <em>ci sono due cinema</em>). In tedesco <em>es gibt</em> non cambia mai: <em>Es gibt einen Park</em>, <em>Es gibt zwei Kinos</em>. Anche il genere è diverso: <em>il panificio</em> è maschile, <em>die Bäckerei</em> è femminile; <em>il bar</em> è maschile in italiano, <em>das Café</em> è neutro; <em>il cinema</em> è <em>das Kino</em>, neutro; <em>la chiesa</em> è <em>die Kirche</em>."
@@ -1553,7 +1553,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Vada dritto e poi a sinistra.",
-        why: "<i>Geradeaus</i>: la <b>g</b> è dura e la <b>au</b> suona come «ao». In <i>links</i> la <b>i</b> è breve."
+        why: "<i>Geradeaus</i>: la <b>g</b> è dura e la <b>au</b> è un dittongo /aʊ̯/: si passa dalla <b>a</b> a una <b>u</b> breve nella stessa sillaba. In <i>links</i> la <b>i</b> è breve."
       }
     ]
   }
