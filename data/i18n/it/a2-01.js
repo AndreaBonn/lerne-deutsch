@@ -1584,7 +1584,7 @@ LINGUAI.addStrings("it", {
         contrast: "La struttura è la stessa dell'italiano: «mi fa male la testa», «mi fanno male i piedi». Anche in italiano la persona è all'indiretto (<em>mi</em>) e il verbo si accorda con la parte del corpo. La differenza è nella forma: <em>mir</em> è una parola a sé, non un pronome atono prima del verbo, e il verbo si spezza in <em>tut ... weh</em>. Anche i generi non coincidono: <em>la testa</em> è femminile, ma <em>der Kopf</em> è maschile; <em>la gamba</em> è femminile, <em>das Bein</em> è neutro. Per il mal di testa c'è anche <em>Ich habe Kopfschmerzen</em>, dove il soggetto è la persona. Attenzione a <em>der Hals</em>: indica sia il collo sia la gola."
       },
       {
-        trap: "Con <em>wehtun</em> la persona non è il soggetto: <em>Ich tut der Kopf weh</em> e <em>Mich tut der Kopf weh</em> sono sbagliati, serve <em>mir</em>. E il verbo non segue la persona ma la parte del corpo: <em>Mir tun die Füße weh</em> (plurale), non <em>Mir tut die Füße weh</em>. Dire <em>Mein Kopf tut weh</em> è invece corretto: cambia il soggetto grammaticale, non il significato."
+        trap: "Con <em>wehtun</em> la persona non è il soggetto: <em>Ich tut der Kopf weh</em> e <em>Mich tut der Kopf weh</em> sono sbagliati, serve <em>mir</em>. E il verbo non segue la persona ma la parte del corpo: <em>Mir tun die Füße weh</em> (plurale), non <em>Mir tut die Füße weh</em>. È corretto anche <em>Mein Kopf tut weh</em>: il possessivo <em>mein</em> identifica chi prova dolore, mentre il soggetto resta <em>Kopf</em>."
       },
       {
         tip: "Prima trova la parte del corpo e guarda se è singolare o plurale: è lei che decide <em>tut</em> o <em>tun</em>. Poi aggiungi la persona al dativo. Il plurale dei nomi del corpo va imparato insieme all'articolo: <em>der Fuß, die Füße</em>; <em>das Ohr, die Ohren</em>."
@@ -1700,7 +1700,7 @@ LINGUAI.addStrings("it", {
         contrast: "L'italiano usa <em>da</em> in entrambi i casi: «sono dal medico» e «vado dal medico». Il tedesco separa i due significati: <em>bei</em> (si è lì) e <em>zu</em> (ci si va). Anche il tempo cambia: «da tre giorni» è <em>seit drei Tagen</em>, con il presente come in italiano (<em>Ich habe seit drei Tagen Fieber</em>, «ho la febbre da tre giorni»), mentre «tre giorni fa» è <em>vor drei Tagen</em> e la preposizione sta <b>prima</b>, non dopo come <em>fa</em>."
       },
       {
-        trap: "<em>Bei</em> e <em>zu</em> reggono il dativo. <em>Zum Arzt</em> e <em>zur Ärztin</em> sono le forme contratte usuali: <em>zu dem</em> e <em>zu der</em> compaiono quando si vuole mettere in evidenza l'articolo. Non scrivere <em>Ich gehe beim Arzt</em>: dopo un verbo di moto serve <em>zu</em>. Dopo <em>seit</em> e <em>vor</em> anche il plurale è al dativo, con la <b>-n</b>: <em>seit drei Tagen</em>, non <em>seit drei Tage</em>."
+        trap: "<em>Bei</em> e <em>zu</em> reggono il dativo. <em>Zum Arzt</em> e <em>zur Ärztin</em> sono le forme contratte usuali: <em>zu dem</em> e <em>zu der</em> compaiono quando si vuole mettere in evidenza l'articolo. Per dire che vai dal medico usa <em>Ich gehe zum Arzt</em>; <em>beim Arzt</em> indica che sei dal medico. Dopo <em>seit</em> e <em>vor</em> anche il plurale è al dativo, con la <b>-n</b>: <em>seit drei Tagen</em>, non <em>seit drei Tage</em>."
       },
       {
         tip: "Chiediti prima: «si è lì o ci si va?». <em>Wo?</em> chiede <em>bei</em>, <em>wohin?</em> chiede <em>zu</em>. Per l'appuntamento tieni insieme giorno e ora: <em>am Montag um zehn Uhr</em>."
@@ -1855,7 +1855,7 @@ LINGUAI.addStrings("it", {
         { tr: "Dovresti riposarti.", note: "du solltest + dich + infinito in fondo" },
         { tr: "Io andrei dal medico.", note: "ich würde + infinito in fondo" },
         { tr: "Al tuo posto resterei a letto.", note: "an deiner Stelle: dativo dopo an" },
-        { tr: "Dovreste bere molto tè.", note: "ihr solltet; la desinenza è -et" },
+        { tr: "Dovreste bere molto tè.", note: "ihr solltet: sollte- + la desinenza personale -t" },
         { tr: "Dovrebbe sdraiarsi.", note: "forma di cortesia: Sie sollten sich hinlegen" },
         { tr: "Io mi riprenderei in vacanza.", note: "sich erholen: würde + mich + infinito" }
       ]
@@ -1945,7 +1945,7 @@ LINGUAI.addStrings("it", {
         p: "<b>Deshalb</b> («per questo») collega due frasi principali e occupa la <b>prima posizione</b> della seconda: il verbo viene subito dopo e il soggetto lo segue. <em>Ich schlafe schlecht. Deshalb bin ich müde.</em> Sinonimi: <em>deswegen, darum</em>. Si può mettere anche dopo una virgola: <em>Ich schlafe schlecht, deshalb bin ich müde.</em>"
       },
       {
-        contrast: "In italiano dopo «penso che», «so che» il verbo può richiedere il <b>congiuntivo</b> («penso che sia importante»); il tedesco usa l'indicativo: <em>Ich denke, dass Sport wichtig <b>ist</b></em>. In italiano «che» non vuole la virgola davanti; in tedesco la virgola prima di <em>dass</em> è obbligatoria. E «per questo», «quindi» non cambiano l'ordine in italiano (<em>dormo male, quindi sono stanco</em>), mentre <em>deshalb</em> inverte soggetto e verbo: <em>Deshalb bin ich müde</em>."
+        contrast: "In italiano «penso che» regge il <b>congiuntivo</b> («penso che sia importante»), mentre «so che» regge l'indicativo («so che è importante»); in tedesco entrambe le frasi con <em>dass</em> usano l'indicativo: <em>Ich denke, dass Sport wichtig <b>ist</b></em>, <em>Ich weiß, dass Sport wichtig <b>ist</b></em>. In italiano «che» non vuole la virgola davanti; in tedesco la virgola prima di <em>dass</em> è obbligatoria. E «per questo», «quindi» non cambiano l'ordine in italiano (<em>dormo male, quindi sono stanco</em>), mentre <em>deshalb</em> inverte soggetto e verbo: <em>Deshalb bin ich müde</em>."
       },
       {
         trap: "<em>Deshalb</em> non manda il verbo in fondo come fa <em>dass</em>: <em>Deshalb ich bin müde</em> e <em>Deshalb ich müde bin</em> sono sbagliati. E con <em>dass</em> il verbo non resta in seconda posizione: <em>Ich finde, dass Sport ist wichtig</em> è sbagliato. Non confondere <em>dass</em> (congiunzione) con <em>das</em> (articolo o pronome)."
