@@ -929,7 +929,11 @@ LINGUAI.addUnits("A1", [
           {
             t: "order",
             tokens: ["Wir", "brauchen", "einen", "Tisch", "für", "vier"],
-            a: ["Wir brauchen einen Tisch für vier", "Einen Tisch für vier brauchen wir"]
+            a: [
+              "Wir brauchen einen Tisch für vier",
+              "Einen Tisch für vier brauchen wir",
+              "Für vier brauchen wir einen Tisch"
+            ]
           },
           {
             t: "dialogue",
@@ -959,7 +963,7 @@ LINGUAI.addUnits("A1", [
           {
             t: "trans",
             dir: "toIt",
-            a: ["Haben Sie einen Tisch für zwei"]
+            a: ["Haben Sie einen Tisch für zwei", "Haben Sie einen Tisch für zwei Personen"]
           },
           { t: "listen", it: "Haben Sie drinnen einen Tisch für drei Personen frei?" },
           { t: "speak", it: "Haben Sie draußen einen Tisch frei?" }
@@ -1013,7 +1017,8 @@ LINGUAI.addUnits("A1", [
             a: [
               "Ich hätte gern das Schnitzel",
               "Ich hätte das Schnitzel gern",
-              "Das Schnitzel hätte ich gern"
+              "Das Schnitzel hätte ich gern",
+              "Gern hätte ich das Schnitzel"
             ]
           },
           {
@@ -1142,7 +1147,7 @@ LINGUAI.addUnits("A1", [
           { it: "der Franken", plural: "die Franken", ex: "Ich zahle in der Schweiz in Franken." },
           { it: "der Gast", plural: "die Gäste", ex: "Die Gäste zahlen." },
           { it: "stimmt so", ex: "Dreizehn Euro, stimmt so." },
-          { it: "der Betrag", plural: "die Beträge", ex: "Der Betrag ist zwölf Euro." }
+          { it: "der Betrag", plural: "die Beträge", ex: "Wie hoch ist der Betrag?" }
         ],
         exercises: [
           { t: "mcq", a: 1 },
@@ -1160,7 +1165,7 @@ LINGUAI.addUnits("A1", [
           {
             t: "order",
             tokens: ["Können", "wir", "bitte", "zahlen"],
-            a: ["Können wir bitte zahlen", "Können wir zahlen bitte"]
+            a: ["Können wir bitte zahlen", "Können wir zahlen bitte", "Bitte können wir zahlen"]
           },
           {
             t: "dialogue",
@@ -1224,7 +1229,8 @@ LINGUAI.addUnits("A1", [
           a: [
             "Ich hätte gern den Fisch",
             "Ich hätte den Fisch gern",
-            "Den Fisch hätte ich gern"
+            "Den Fisch hätte ich gern",
+            "Gern hätte ich den Fisch"
           ]
         },
         {
@@ -1236,7 +1242,9 @@ LINGUAI.addUnits("A1", [
             "Ich möchte gern einen Tisch für zwei",
             "Einen Tisch für zwei möchte ich",
             "Einen Tisch für zwei hätte ich gern",
-            "Ich hätte einen Tisch für zwei gern"
+            "Ich hätte einen Tisch für zwei gern",
+            "Ich möchte einen Tisch für zwei Personen",
+            "Ich hätte gern einen Tisch für zwei Personen"
           ]
         },
         { t: "listen", it: "Wir hätten gern zwei Suppen und einen Salat." },

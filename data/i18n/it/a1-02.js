@@ -1652,7 +1652,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Ci serve un tavolo per quattro.",
-        why: "Sono corrette entrambe le posizioni: <i>Wir brauchen einen Tisch für vier</i> e, con l'oggetto davanti, <i>Einen Tisch für vier brauchen wir</i>. Il verbo resta al secondo posto."
+        why: "Più ordini sono corretti, per esempio <i>Wir brauchen einen Tisch für vier</i>, con l'oggetto davanti <i>Einen Tisch für vier brauchen wir</i> e con il complemento davanti <i>Für vier brauchen wir einen Tisch</i>. Il verbo resta al secondo posto."
       },
       {
         q: "Sei al ristorante e il cameriere ti accoglie.",
@@ -1769,7 +1769,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Vorrei la cotoletta.",
-        why: "Sono corrette tre posizioni: <i>Ich hätte gern das Schnitzel</i>, <i>Ich hätte das Schnitzel gern</i> e, con l'oggetto davanti, <i>Das Schnitzel hätte ich gern</i>. Il verbo resta al secondo posto."
+        why: "Più ordini sono corretti, per esempio <i>Ich hätte gern das Schnitzel</i>, <i>Ich hätte das Schnitzel gern</i>, con l'oggetto davanti <i>Das Schnitzel hätte ich gern</i> e con <i>gern</i> davanti <i>Gern hätte ich das Schnitzel</i>. Il verbo resta al secondo posto."
       },
       {
         q: "Ordini al ristorante.",
@@ -1783,7 +1783,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Vorrei la zuppa.",
-        why: "Funzionano sia <i>ich möchte</i> sia <i>ich hätte gern</i>; <i>gern</i> può stare anche con <i>möchte</i> o dopo l'oggetto, e l'oggetto può aprire la frase (<i>Die Suppe möchte ich</i>). <i>Suppe</i> è femminile: all'accusativo resta <i>die</i>."
+        why: "Funzionano sia <i>ich möchte</i> sia <i>ich hätte gern</i>; <i>gern</i> può stare anche con <i>möchte</i> o dopo l'oggetto, e l'oggetto può aprire la frase (<i>Die Suppe möchte ich</i>). <i>Suppe</i> è femminile: all'accusativo resta <i>die</i>: «la zuppa» è una zuppa già nota, quindi articolo determinativo."
       },
       {
         tr: "Vorrei la zuppa e la cotoletta.",
@@ -1993,7 +1993,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Possiamo pagare, per favore?",
-        why: "<i>Können wir bitte zahlen?</i>: il modale è in prima posizione (domanda sì/no) e l'infinito <i>zahlen</i> è in fondo. Si può dire anche <i>Können wir zahlen, bitte?</i>."
+        why: "<i>Können wir bitte zahlen?</i>: il modale è in prima posizione (domanda sì/no) e l'infinito <i>zahlen</i> è in fondo. Si può dire anche <i>Können wir zahlen, bitte?</i> oppure <i>Bitte, können wir zahlen?</i>."
       },
       {
         q: "Hai finito di mangiare.",
@@ -2062,7 +2062,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Vorrei il pesce.",
-        why: "Sono corrette tre posizioni: <i>Ich hätte gern den Fisch</i>, <i>Ich hätte den Fisch gern</i> e <i>Den Fisch hätte ich gern</i>. <i>Fisch</i> è maschile: <b>den</b>."
+        why: "Più ordini sono corretti, per esempio <i>Ich hätte gern den Fisch</i>, <i>Ich hätte den Fisch gern</i>, <i>Den Fisch hätte ich gern</i> e <i>Gern hätte ich den Fisch</i>. <i>Fisch</i> è maschile: <b>den</b>."
       },
       {
         tr: "Vorrei un tavolo per due.",
