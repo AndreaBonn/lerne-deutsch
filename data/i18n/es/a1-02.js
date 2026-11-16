@@ -1,5 +1,5 @@
 /* ============================================================
-   Learner-language text (es) for data/core/a1-02.js, units a1-u04, a1-u05 and a1-u06.
+   Learner-language text (es) for data/core/a1-02.js, units a1-u04 to a1-u07.
    Keys point at ids in the neutral layer; arrays merge by index,
    so their length has to match core.
    Checked by scripts/parity.mjs.
@@ -1554,6 +1554,527 @@ LINGUAI.addStrings("es", {
       {
         tr: "Vaya todo recto y luego a la izquierda.",
         why: "<i>Geradeaus</i>: la <b>g</b> es oclusiva y la <b>au</b> es un diptongo /aʊ̯/: se pasa de la <b>a</b> a una <b>u</b> breve en la misma sílaba. En <i>links</i> la <b>i</b> es breve."
+      }
+    ]
+  },
+  "unit:a1-u07": {
+    title: "En el restaurante",
+    grammarNote: "acusativo con haben y brauchen · möchte y hätte gern · einer, eins, welche · la cuenta"
+  },
+  "lesson:a1-u07-l1": {
+    theme: "Reservar una mesa",
+    title: "Una mesa para dos: Ein Tisch für zwei",
+    objectives: [
+      "pedir una mesa con Haben Sie einen Tisch für zwei?",
+      "usar el acusativo con haben, brauchen y reservieren: einen Tisch, eine Speisekarte",
+      "decir dónde sentarse (drinnen, draußen) y si un sitio está libre (frei)"
+    ],
+    theory: [
+      {
+        h: "Haben, brauchen, reservieren: el acusativo",
+        p: "Después de <strong>haben</strong>, <strong>brauchen</strong>, <strong>suchen</strong> y <strong>reservieren</strong>, lo que pides es el complemento directo, así que va en <strong>acusativo</strong> (ya lo viste en la unidad 3). Solo cambia el masculino: <strong>der → den</strong>, <strong>ein → einen</strong>. El femenino, el neutro y el plural quedan igual que en el nominativo: <em>Wir brauchen einen Tisch</em> (<em>der Tisch</em>), <em>Wir brauchen eine Speisekarte</em> (<em>die Speisekarte</em>), <em>Wir brauchen ein Messer</em> (<em>das Messer</em>). El sujeto va siempre en nominativo: <em>Der Tisch ist frei.</em> (aquí <em>der Tisch</em> es el sujeto)."
+      },
+      {
+        h: "El verbo va en segundo lugar, y en las preguntas en primero",
+        p: "Como siempre, el verbo conjugado ocupa el <strong>segundo lugar</strong> en la oración enunciativa: <em>Heute Abend reserviere ich einen Tisch.</em> (si empiezas con <em>Heute Abend</em>, el sujeto pasa detrás del verbo). En las preguntas de sí o no el verbo abre la frase: <em>Haben Sie einen Tisch für zwei?</em> Con el personal de sala se usa <strong>Sie</strong>, una sola forma de cortesía que equivale tanto a «usted» como a «ustedes»."
+      },
+      {
+        contrast: "En español <em>una mesa</em> y <em>la mesa</em> no cambian según su función en la frase; en alemán el masculino cambia cuando es complemento directo (<em>Der Tisch ist frei</em>, pero <em>Wir brauchen einen Tisch</em>). Ojo con los géneros que no coinciden: <em>la mesa</em> es femenino, pero <em>der Tisch</em> es masculino; <em>la silla</em> es femenino, pero <em>der Stuhl</em> es masculino; <em>la carta</em> es femenino y <em>die Speisekarte</em> también, pero <em>el menú</em> es masculino. Además, <em>das Menü</em> en alemán suele ser el menú de varios platos a precio fijo, como el «menú del día», y no la lista de platos, que es <em>die Speisekarte</em>. Por último, <em>el camarero</em> es <em>der Kellner</em> y <em>la camarera</em> es <em>die Kellnerin</em>, con el sufijo <em>-in</em>."
+      },
+      {
+        trap: "Después de <em>haben</em> y <em>brauchen</em> no dejes el masculino en nominativo: «Haben Sie ein Tisch?» es incorrecto, se dice <em>Haben Sie einen Tisch?</em>. Y no extiendas el cambio a los nombres que no son masculinos: con <em>die Speisekarte</em> el artículo no cambia, así que <em>eine Speisekarte</em> y no «einen Speisekarte». Recuerda también que <em>für zwei</em> basta para decir «para dos», sin ningún otro nombre."
+      },
+      {
+        tip: "Aprende la frase entera: <em>Haben Sie einen Tisch für zwei?</em>. Cambiando el número (<em>für drei</em>, <em>für vier</em>) y el lugar (<em>drinnen</em>, <em>draußen</em>) ya tienes casi todo lo que necesitas para que te reciban en un restaurante."
+      }
+    ],
+    grammar: {
+      title: "El acusativo con haben, brauchen y reservieren",
+      note: "Solo el masculino cambia en acusativo: <b>der → den</b>, <b>ein → einen</b>. Femenino, neutro y plural se quedan igual. El verbo va en segundo lugar; en las preguntas de sí o no, en primero.",
+      table: {
+        head: ["género", "nominativo", "acusativo"],
+        rows: [
+          ["masculino", "der Tisch / ein Tisch", "den Tisch / einen Tisch"],
+          ["femenino", "die Speisekarte / eine Speisekarte", "die Speisekarte / eine Speisekarte"],
+          ["neutro", "das Restaurant / ein Restaurant", "das Restaurant / ein Restaurant"],
+          ["plural", "die Tische", "die Tische"]
+        ]
+      },
+      examples: [
+        { tr: "¿Tienen una mesa para dos?", note: "Haben Sie: pregunta, verbo en primera posición; einen: acusativo masculino" },
+        { tr: "Necesitamos una mesa para cuatro personas.", note: "brauchen + acusativo" },
+        { tr: "Necesitamos una carta.", note: "femenino: eine no cambia" },
+        { tr: "Esta noche reservo una mesa.", note: "Heute Abend abre la frase: el verbo sigue en segundo lugar" },
+        { tr: "La mesa está libre.", note: "el sujeto va en nominativo: der Tisch ist frei" },
+        { tr: "¿Tienen una mesa libre fuera?", note: "draußen: al aire libre; frei al final" }
+      ]
+    },
+    vocab: [
+      "la mesa",
+      "la silla",
+      "el sitio, el lugar",
+      "el restaurante",
+      "la persona",
+      "la camarera",
+      "la reserva",
+      "reservar",
+      "necesitar",
+      "fuera, al aire libre",
+      "dentro, en el interior",
+      "libre"
+    ],
+    dialogue: [
+      "Buenas noches. ¿Tienen una mesa para dos?",
+      "Sí, con mucho gusto. ¿Dentro o fuera?",
+      "Fuera, por favor.",
+      "Aquí tiene una mesa. Aquí tiene la carta.",
+      "¡Muchas gracias!"
+    ],
+    exercises: [
+      {
+        q: "Quieres preguntar si hay una mesa libre. ¿Qué frase es correcta?",
+        opts: ["Haben Sie ein Tisch frei?", "Haben Sie einen Tisch frei?", "Haben Sie eine Tisch frei?"],
+        why: "<i>Der Tisch</i> es masculino y, después de <i>haben</i>, es complemento directo: <b>einen Tisch</b>."
+      },
+      {
+        q: "¿Qué frase es correcta?",
+        opts: ["Wir brauchen eine Speisekarte.", "Wir brauchen einen Speisekarte.", "Wir brauchen ein Speisekarte."],
+        why: "<i>Die Speisekarte</i> es femenino: en acusativo el artículo no cambia, así que <b>eine</b>."
+      },
+      {
+        q: "Completa con el artículo indefinido: «Ich brauche ___ Tisch für zwei.» (Necesito una mesa para dos.)",
+        hint: "ein-, masculino, acusativo",
+        why: "<i>Tisch</i> es masculino y <i>brauchen</i> pide acusativo: <b>einen</b>."
+      },
+      {
+        q: "Une cada palabra con su significado.",
+        pairs: ["el camarero", "la silla", "fuera, al aire libre", "reservar"]
+      },
+      {
+        tr: "Necesitamos una mesa para cuatro.",
+        why: "Son correctos varios órdenes, por ejemplo <i>Wir brauchen einen Tisch für vier</i>, con el objeto delante <i>Einen Tisch für vier brauchen wir</i> y con el complemento delante <i>Für vier brauchen wir einen Tisch</i>. El verbo sigue en segundo lugar."
+      },
+      {
+        q: "Estás en el restaurante y el camarero te recibe.",
+        setting: "En la entrada del local.",
+        lines: [
+          { tr: "¡Buenas noches! ¿Qué necesita?" },
+          { tr: "Pide una mesa para dos.", answerTr: "Necesitamos una mesa para dos." },
+          { tr: "Con mucho gusto. Aquí tiene la mesa." },
+          { tr: "Da las gracias y pide la carta.", answerTr: "Gracias. La carta, por favor." }
+        ]
+      },
+      {
+        tr: "¿Tiene una mesa para dos?",
+        why: "El «usted» de cortesía pasa a ser <i>Haben Sie</i>: <i>Sie</i> es una sola forma para «usted» y «ustedes», y el verbo va en tercera persona del plural. <i>Tisch</i> es masculino, así que <b>einen Tisch</b>."
+      },
+      {
+        tr: "¿Tienen una mesa libre dentro para tres personas?",
+        why: "Es una pregunta de sí o no, así que <i>haben</i> abre la frase. <i>Personen</i> se pronuncia con una <b>s</b> sonora [z], un sonido que el español no usa para esta letra; en <i>drinnen</i> la <b>i</b> es breve y <b>nn</b> es una sola /n/: la consonante doble solo indica que la vocal es corta."
+      },
+      {
+        tr: "¿Tienen una mesa libre fuera?",
+        why: "<i>Draußen</i>: <b>au</b> es un diptongo /aʊ̯/, parecido al de «causa», y <b>ß</b> es una «s» sorda. En <i>frei</i>, <b>ei</b> se lee /aɪ̯/, como «ai» en «aire»."
+      }
+    ]
+  },
+  "lesson:a1-u07-l2": {
+    theme: "Pedir",
+    title: "Pedir: Ich hätte gern das Schnitzel",
+    objectives: [
+      "pedir con las fórmulas ich möchte e ich hätte gern",
+      "conjugar möchte: ich möchte, du möchtest, wir möchten",
+      "poner en acusativo el plato que pides: den Fisch, die Suppe, das Schnitzel"
+    ],
+    theory: [
+      {
+        h: "Dos fórmulas para pedir",
+        p: "En el restaurante se pide con <strong>ich möchte</strong> + acusativo (<em>Ich möchte das Schnitzel</em>) o con <strong>ich hätte gern</strong> + acusativo (<em>Ich hätte gern das Schnitzel</em>). Las dos son fórmulas de cortesía. <em>möchte</em> es en origen una forma del Konjunktiv II de <em>mögen</em>, y <em>hätte</em> es el Konjunktiv II de <em>haben</em>: en este nivel las aprendes como fórmulas fijas, sin construir otras formas de ese modo. <em>gern</em> significa «con gusto», así que <em>ich hätte gern</em> se traduce por «quisiera» o «me gustaría», no por un literal «tendría con gusto», que en español no se dice al pedir."
+      },
+      {
+        h: "möchte es un modal, con -e",
+        p: "Como los demás modales, <em>möchte</em> manda el infinitivo al final (<em>Ich möchte das Schnitzel essen</em>), y muchas veces el infinitivo se omite cuando el sentido está claro (<em>Ich möchte das Schnitzel</em>). A diferencia de <em>kann</em>, <em>will</em> y <em>muss</em>, lleva una <strong>-e</strong> en la 1.ª y la 3.ª persona del singular: <em>ich möchte</em>, <em>er möchte</em>. Las demás personas: <em>du möchtest</em>, <em>wir möchten</em>, <em>ihr möchtet</em>, <em>sie/Sie möchten</em>. El plato que pides es un complemento directo, por eso va en acusativo: <em>den Fisch</em>, <em>die Suppe</em>, <em>das Schnitzel</em>."
+      },
+      {
+        contrast: "El español <em>quisiera</em> es una forma del subjuntivo de <em>querer</em>, y el alemán consigue la misma cortesía con <em>möchte</em>, que viene de <em>mögen</em> («gustar, querer») y no de <em>wollen</em>. Puedes pensar en «quisiera» para <em>ich möchte</em>; <em>ich hätte gern</em> es una segunda fórmula con el mismo fin, parecida a «me gustaría». Ojo con el género: <em>el pollo</em> es masculino, pero <em>das Hähnchen</em> es neutro; <em>el helado</em> es masculino, pero <em>das Eis</em> es neutro; <em>la patata</em> es femenino y <em>die Kartoffel</em> también. Un <em>Schnitzel</em> es un filete fino de carne, parecido a un «escalope»; la versión empanada se llama <em>paniertes Schnitzel</em>, así que no tiene por qué ir empanado."
+      },
+      {
+        trap: "<em>Ich will das Schnitzel</em> es una frase correcta, pero en un restaurante suena brusca, como un «quiero el escalope» dicho al camarero: para pedir, elige <em>ich möchte</em> o <em>ich hätte gern</em>. Y no pierdas la <strong>-e</strong>: «ich möchten» es incorrecto, se dice <em>ich möchte</em>, y en la 3.ª persona <em>er möchte</em> (no «er möchtet»)."
+      },
+      {
+        tip: "Para pedir te bastan dos esquemas: <em>Ich möchte + acusativo</em> e <em>Ich hätte gern + acusativo</em>. Para varias personas: <em>Wir möchten ...</em> y <em>Wir hätten gern ...</em>."
+      }
+    ],
+    grammar: {
+      title: "möchte y hätte gern",
+      note: "<b>Ich möchte</b> + acusativo e <b>ich hätte gern</b> + acusativo son fórmulas de cortesía para pedir. <b>möchte</b> lleva -e en la 1.ª y la 3.ª persona del singular.",
+      table: {
+        head: ["persona", "möchten", "hätte gern"],
+        rows: [
+          ["ich", "möchte", "hätte gern"],
+          ["du", "möchtest", "hättest gern"],
+          ["er/sie/es", "möchte", "hätte gern"],
+          ["wir", "möchten", "hätten gern"],
+          ["ihr", "möchtet", "hättet gern"],
+          ["sie/Sie", "möchten", "hätten gern"]
+        ]
+      },
+      examples: [
+        { tr: "Quisiera el escalope.", note: "möchte: fórmula de cortesía; das Schnitzel, neutro" },
+        { tr: "Quisiera el queso.", note: "hätte gern + acusativo: den Käse" },
+        { tr: "Quisiera el pescado.", note: "den Fisch: masculino en acusativo" },
+        { tr: "¿Qué desea beber?", note: "Was en primera posición, möchten en segunda, trinken al final" },
+        { tr: "¿Desea un entrante?", note: "pregunta de sí o no: möchten en primera posición" },
+        { tr: "Quisiéramos dos sopas.", note: "wir hätten gern: plural" }
+      ]
+    },
+    vocab: [
+      "quisiera (fórmula de cortesía)",
+      "quisiera (en la versión con hätte gern)",
+      "el escalope, el filete fino de carne (paniertes Schnitzel: empanado)",
+      "la salchicha",
+      "la patata",
+      "el arroz",
+      "el pollo",
+      "el queso",
+      "el entrante",
+      "el plato principal",
+      "el postre",
+      "el helado"
+    ],
+    exercises: [
+      {
+        q: "Pides el pescado con educación. ¿Qué frase es correcta?",
+        opts: ["Ich möchte den Fisch.", "Ich möchten den Fisch.", "Ich möchte der Fisch."],
+        why: "<b>Ich möchte</b> lleva -e, y <i>der Fisch</i> en acusativo es <b>den Fisch</b>."
+      },
+      {
+        q: "¿Qué frase es correcta?",
+        opts: ["Er möchtet eine Suppe.", "Er möchte eine Suppe.", "Er möchten eine Suppe."],
+        why: "En la 3.ª persona del singular <i>möchte</i> lleva una <b>-e</b> y ninguna otra terminación: <b>er möchte</b>."
+      },
+      {
+        q: "Completa: «Ich möchte ___ Salat.» (Quisiera la ensalada.)",
+        hint: "der Salat, artículo determinado en acusativo",
+        why: "<i>Salat</i> es masculino (en español <i>la ensalada</i> es femenino): en acusativo <b>den</b>."
+      },
+      {
+        q: "Une cada plato con su significado.",
+        pairs: ["el escalope o filete fino de carne", "la sopa", "el pescado", "el postre"]
+      },
+      {
+        q: "Completa con el verbo möchten.",
+        tr: "Yo quisiera el pescado y tú quisieras la sopa.",
+        why: "<i>Ich möchte</i> (1.ª persona, con -e) y <i>du möchtest</i> (2.ª persona, con -st)."
+      },
+      {
+        tr: "Quisiera el escalope.",
+        why: "Son correctos varios órdenes, por ejemplo <i>Ich hätte gern das Schnitzel</i>, <i>Ich hätte das Schnitzel gern</i>, con el objeto delante <i>Das Schnitzel hätte ich gern</i> y con <i>gern</i> delante <i>Gern hätte ich das Schnitzel</i>. El verbo sigue en segundo lugar."
+      },
+      {
+        q: "Pides en el restaurante.",
+        setting: "El camarero toma nota.",
+        lines: [
+          { tr: "¿Qué desea?" },
+          { tr: "Pide el pescado con la fórmula de cortesía.", answerTr: "Quisiera el pescado." },
+          { tr: "¿Y desea también una sopa?" },
+          { tr: "Responde que sí y pide la sopa.", answerTr: "Sí, con gusto. Quisiera una sopa." }
+        ]
+      },
+      {
+        tr: "Quisiera la sopa.",
+        why: "Valen tanto <i>ich möchte</i> como <i>ich hätte gern</i>; <i>gern</i> puede ir también con <i>möchte</i> o detrás del objeto, y el objeto puede abrir la frase (<i>Die Suppe möchte ich</i>). <i>Suppe</i> es femenino: en acusativo sigue siendo <i>die</i>: «la sopa» es una sopa ya conocida, así que artículo determinado."
+      },
+      {
+        tr: "Quisiera la sopa y el escalope.",
+        why: "<i>möchte</i>: la <b>ö</b> es breve y la <b>ch</b> tras <b>ö</b> es el sonido de <i>ich</i>, una fricativa palatal suave: no es la «ch» española /tʃ/ ni una «j». En <i>Schnitzel</i>, <b>sch</b> es /ʃ/ y <b>tz</b> es /ts/."
+      },
+      {
+        tr: "Quisiera el pescado y la ensalada.",
+        why: "<i>hätte</i>: la <b>ä</b> es breve, parecida a una «e» abierta, y <b>tt</b> es una sola /t/. En <i>gern</i> la <b>g</b> es dura, y la <b>r</b> puede ser uvular o alveolar: las dos pronunciaciones son estándar, así que puedes usar una r alveolar como la española."
+      }
+    ]
+  },
+  "lesson:a1-u07-l3": {
+    theme: "Uno, algunos, ninguno",
+    title: "Uno, algunos, ninguno: Ich nehme zwei. Haben Sie welche?",
+    objectives: [
+      "decir «uno» sin repetir el nombre con einer, eine, eins",
+      "decir «tengo» y «me llevo dos» sin repetir el nombre",
+      "usar welche para algunos y keine para ninguno"
+    ],
+    theory: [
+      {
+        h: "El nombre ya dicho no se repite: einer, eine, eins",
+        p: "Para no repetir un nombre ya dicho, el alemán usa las formas de <em>ein</em> sin el nombre. Concuerdan con el género del nombre que se omite: masculino <strong>einer</strong> (acusativo <strong>einen</strong>), femenino <strong>eine</strong>, neutro <strong>eins</strong>. <em>Möchten Sie einen Apfel? Ja, ich nehme einen.</em> (<em>der Apfel</em>) <em>Möchten Sie eine Tomate? Ja, ich nehme eine.</em> (<em>die Tomate</em>) <em>Möchten Sie ein Brötchen? Ja, ich nehme eins.</em> (<em>das Brötchen</em>). Con un número no hace falta nada más: <em>Ich nehme zwei.</em>"
+      },
+      {
+        h: "welche para «algunos», keine para «ninguno»",
+        p: "Cuando no hay un número y no se dice cuántos, se usa <strong>welche</strong> en lugar del nombre: con un plural (<em>Haben Sie Brötchen? Ja, wir haben welche.</em>) y con un femenino no contable (<em>Haben Sie Milch? Ja, wir haben welche.</em>). Con un neutro no contable la forma es <strong>welches</strong> (<em>Haben Sie Wasser? Ja, wir haben welches.</em>), y con un masculino no contable en acusativo <strong>welchen</strong> (<em>Haben Sie Saft? Ja, wir haben welchen.</em>). Para decir que no hay se usa <strong>keiner / keine / keins</strong> (acusativo masculino <em>keinen</em>): <em>Wir haben leider keine.</em>"
+      },
+      {
+        contrast: "En español basta con omitir el nombre y a veces añadir un pronombre: «¿Tienen panecillos? Sí, tenemos», «me llevo dos», «me llevo uno». Sin un número, el alemán suele retomar el nombre con un pronombre: <em>welche</em>, <em>einen / eine / eins</em> o <em>keine</em>; con un número basta este (<em>Ich nehme zwei</em>). El alemán tiene pronombres personales de objeto (<em>ihn</em>, <em>sie</em>, <em>es</em>), pero no el sistema de clíticos del español; para retomar una cantidad indefinida, como en estos ejemplos, usa <em>einen / eine / eins</em> o <em>welche</em>. Con «uno / una» ocurre algo parecido a lo español, que también concuerda, pero lo que cuenta es el género alemán: <em>el tomate</em> es masculino, pero <em>die Tomate</em> es femenino, así que «me llevo uno» se dice <em>Ich nehme eine</em>. Lo mismo vale para <em>la manzana</em> (femenino en español, pero <em>der Apfel</em> es masculino: <em>einen</em>) y para <em>el huevo</em> (<em>das Ei</em>, neutro: <em>eins</em>). Para los cubiertos pasa igual: <em>la cuchara</em> es femenino y <em>der Löffel</em> masculino; <em>el tenedor</em> es masculino y <em>die Gabel</em> femenino; <em>el cuchillo</em> es masculino y <em>das Messer</em> neutro."
+      },
+      {
+        trap: "<em>welche</em> no es siempre la palabra interrogativa «cuál / cuáles» de <em>Welche Suppe möchten Sie?</em>: en <em>Haben Sie welche?</em> significa «¿tienen algunos?». Lo distingue el contexto: el uso interrogativo pide elegir o identificar (<em>Welche möchten Sie?</em> funciona incluso sin nombre), mientras que el indefinido retoma una cantidad no precisada. Y no uses <em>ein</em> solo: «Ich nehme ein» es incorrecto. En español pasa algo parecido con «un» y «uno» («un pan», «quiero uno»), pero el alemán distingue tres formas, <em>einen</em>, <em>eine</em> y <em>eins</em>."
+      },
+      {
+        tip: "Para elegir la forma, piensa en el nombre alemán, no en el español: <em>der Apfel → einen</em>, <em>die Tomate → eine</em>, <em>das Ei → eins</em>. Si tienes un número, di el número y ya está."
+      }
+    ],
+    grammar: {
+      title: "einer, eins, welche: el nombre no se repite",
+      note: "Sin el nombre: masculino <b>einer / einen</b>, femenino <b>eine</b>, neutro <b>eins</b>. Con un número basta el número (<b>Ich nehme zwei</b>). Para «tengo» sin número: <b>welche</b> (plural, femenino no contable), <b>welches</b> (neutro no contable), <b>welchen</b> (masculino no contable, acusativo).",
+      table: {
+        head: ["género", "con el nombre", "sin el nombre"],
+        rows: [
+          ["masculino", "Ich nehme einen Apfel.", "Ich nehme einen."],
+          ["femenino", "Ich nehme eine Tomate.", "Ich nehme eine."],
+          ["neutro", "Ich nehme ein Brötchen.", "Ich nehme eins."],
+          ["plural", "Haben Sie Brötchen?", "Haben Sie welche?"]
+        ]
+      },
+      examples: [
+        { tr: "Me llevo dos.", note: "el número solo: en alemán no hay un «lo / los» átono" },
+        { tr: "¿Quiere un panecillo? Sí, me llevo uno.", note: "das Brötchen es neutro: eins" },
+        { tr: "¿Tiene una manzana? Sí, tengo una.", note: "der Apfel es masculino: einen" },
+        { tr: "¿Quiere un tomate? Sí, me llevo uno.", note: "die Tomate es femenino: eine" },
+        { tr: "¿Tienen panecillos? Sí, tenemos.", note: "plural sin número: welche" },
+        { tr: "¿Tienen agua? Sí, tenemos.", note: "das Wasser es neutro no contable: welches" }
+      ]
+    },
+    vocab: [
+      "algunos, algo de (sin número)",
+      "uno / una (sin el nombre)",
+      "ninguno / ninguna (sin el nombre)",
+      "el huevo",
+      "el tomate",
+      "el pepino",
+      "el vaso",
+      "la botella",
+      "la ración",
+      "el tenedor",
+      "la cuchara",
+      "el cuchillo"
+    ],
+    exercises: [
+      {
+        q: "«Haben Sie Brötchen?» El camarero tiene. ¿Cómo responde?",
+        opts: ["Ja, wir haben welche.", "Ja, wir haben welches.", "Ja, wir haben einen."],
+        why: "<i>Brötchen</i> aquí es plural y sin número: el pronombre es <b>welche</b>. <i>Welches</i> sirve para un neutro singular no contable, <i>einen</i> para un masculino singular."
+      },
+      {
+        q: "«Möchten Sie ein Brötchen?» Responde: «Sí, me llevo uno.»",
+        opts: ["Ja, ich nehme ein.", "Ja, ich nehme eins.", "Ja, ich nehme einen."],
+        why: "<i>Das Brötchen</i> es neutro: sin el nombre se dice <b>eins</b>. «Ich nehme ein» es incorrecto, y <i>einen</i> es masculino."
+      },
+      {
+        q: "Completa: «Haben Sie Wasser? Ja, wir haben ___.» (¿Tienen agua? Sí, tenemos.)",
+        hint: "das Wasser, nombre neutro no contable, sin número",
+        why: "<i>Das Wasser</i> es neutro y no contable: el pronombre es <b>welches</b>."
+      },
+      {
+        q: "Completa: «Möchten Sie eine Tomate? Ja, ich nehme ___.» (¿Quiere un tomate? Sí, me llevo uno.)",
+        hint: "die Tomate es femenino",
+        why: "<i>El tomate</i> es masculino en español, pero <i>die Tomate</i> es femenino: «uno» se dice <b>eine</b>."
+      },
+      {
+        q: "Une cada palabra con su significado.",
+        pairs: ["el panecillo", "la leche", "el huevo", "la botella"]
+      },
+      {
+        q: "Completa las dos palabras que faltan: «¿Tienen una manzana? Sí, tenemos una.»",
+        tr: "¿Tienen una manzana? Sí, tenemos una.",
+        why: "<i>Der Apfel</i> es masculino: después de <i>haben</i> es <b>einen Apfel</b>, y el pronombre sin nombre vuelve a ser <b>einen</b>. Ojo: <i>la manzana</i> es femenino en español, <i>der Apfel</i> es masculino."
+      },
+      {
+        tr: "Por desgracia no tenemos.",
+        why: "Son correctas las dos: <i>Wir haben leider keine</i> y, con <i>leider</i> delante, <i>Leider haben wir keine</i>. El verbo sigue en segundo lugar."
+      },
+      {
+        tr: "¿Tienes panecillos? Sí, tengo.",
+        why: "Con <i>du</i> el verbo es <i>hast</i>. <i>Brötchen</i> es plural y sin número, así que la respuesta usa <b>welche</b>: en alemán la respuesta natural lleva un pronombre, no basta con «Sí, tengo»."
+      },
+      {
+        tr: "Tenemos panecillos y manzanas, pero no tomates.",
+        why: "En <i>Äpfel</i> la <b>ä</b> es una «e» abierta y <b>pf</b> se pronuncia con las dos consonantes unidas: la <b>p</b> va seguida enseguida de una <b>f</b>. En <i>keine</i>, la <b>ei</b> es /aɪ̯/, como «ai» en «aire»."
+      },
+      {
+        tr: "Me llevo dos panecillos y una manzana.",
+        why: "<i>Apfel</i> es masculino, así que <b>einen Apfel</b>. En <i>zwei</i> la <b>z</b> es /ts/ y la <b>ei</b> es /aɪ̯/."
+      }
+    ]
+  },
+  "lesson:a1-u07-l4": {
+    theme: "La cuenta",
+    title: "La cuenta: Zahlen, bitte!",
+    objectives: [
+      "pedir la cuenta con Zahlen, bitte! y Können wir bitte zahlen?",
+      "responder a Zusammen oder getrennt?",
+      "decir la cifra y dejar propina: Das macht ..., stimmt so"
+    ],
+    theory: [
+      {
+        h: "Pedir la cuenta",
+        p: "En un restaurante alemán se suele pagar en la mesa, cuando pasa el camarero, y no en la caja. Para pedir la cuenta se dice <strong>Zahlen, bitte!</strong> (forma breve), <strong>Die Rechnung, bitte.</strong> o, más completo, <strong>Wir möchten zahlen.</strong> o <strong>Können wir bitte zahlen?</strong> Con el camarero se usa <em>Sie</em>; en locales jóvenes e informales puede que te tuteen con <em>du</em>, pero si no estás seguro, quédate con <em>Sie</em>."
+      },
+      {
+        h: "Zusammen oder getrennt? El total y la propina",
+        p: "El camarero pregunta <em>Zusammen oder getrennt?</em>: <strong>zusammen</strong> es una sola cuenta, <strong>getrennt</strong> es una cuenta para cada uno. Se responde <em>Zusammen, bitte.</em> o <em>Getrennt, bitte.</em> Luego llega el total: <em>Das macht zweiunddreißig Euro.</em> Para dejar propina (<em>das Trinkgeld</em>) se dice la cifra que se quiere pagar, ya redondeada: <em>Vierunddreißig Euro, stimmt so.</em> (<em>stimmt so</em> = quédese con el cambio). En Alemania y Austria se paga en <em>Euro</em>, en Suiza en <em>Franken</em> (francos suizos). Algunos locales solo aceptan efectivo: puedes preguntar <em>Kann ich mit Karte zahlen?</em>"
+      },
+      {
+        contrast: "En muchos países de habla hispana la cuenta llega con la propina sugerida o ya incluida, y a veces se paga en la caja. En Alemania, por lo general, no se suma nada a la cuenta: tú mismo redondeas hacia arriba al pagar y dices la cifra final con <em>stimmt so</em>. El servicio suele estar ya incluido en los precios, así que la propina es un extra pequeño y habitual, normalmente un redondeo. Fíjate también en el género: <em>la cuenta</em> es femenino y <em>die Rechnung</em> también. <em>Getrennt</em> equivale a «cuentas separadas» y <em>zusammen</em> a «todo junto». Y el «dividir a partes iguales» no es <em>getrennt</em>: con <em>getrennt</em> cada uno paga lo que ha pedido."
+      },
+      {
+        trap: "<em>Zahlen, bitte!</em> no contiene <em>Sie</em>: es la forma abreviada de «Wir möchten zahlen, bitte», parecida a nuestro «La cuenta, por favor». Si el verbo va seguido de <em>Sie</em>, la misma forma puede ser una pregunta o una invitación: <em>Zahlen Sie bar oder mit Karte?</em> (pregunta del camarero) y <em>Zahlen Sie bitte an der Kasse.</em> (invitación, imperativo de cortesía). Las distinguen el contexto, la entonación y la puntuación. Y con <em>zahlen</em> no busques un «usted» aparte: en alemán se usa <em>Sie</em>, con el verbo en plural."
+      },
+      {
+        tip: "Ten presente la secuencia: <em>Zahlen, bitte!</em>, luego <em>Zusammen, bitte.</em> o <em>Getrennt, bitte.</em>, y al final la cifra con <em>stimmt so</em>."
+      }
+    ],
+    grammar: {
+      title: "Pedir la cuenta y pagar",
+      note: "Con el camarero se usa <b>Sie</b>. Frases útiles: <b>Zahlen, bitte!</b>, <b>Die Rechnung, bitte.</b>, <b>Können wir bitte zahlen?</b>. Respuestas: <b>Zusammen, bitte.</b> / <b>Getrennt, bitte.</b>. <b>stimmt so</b>: quédese con el cambio.",
+      table: {
+        head: ["el camarero dice", "tú respondes"],
+        rows: [
+          ["Zusammen oder getrennt?", "Zusammen, bitte. / Getrennt, bitte."],
+          ["Bar oder mit Karte?", "Bar, bitte. / Mit Karte, bitte."],
+          ["Das macht zwölf Euro.", "Dreizehn Euro, stimmt so."]
+        ]
+      },
+      examples: [
+        { tr: "¡La cuenta, por favor!", note: "Zahlen, bitte!: forma breve, sin Sie" },
+        { tr: "La cuenta, por favor.", note: "die Rechnung: femenino" },
+        { tr: "¿Podemos pagar, por favor?", note: "können: modal en primera posición, zahlen al final" },
+        { tr: "¿Juntos o separados?", note: "zusammen: una sola cuenta; getrennt: una cuenta por persona" },
+        { tr: "Son doce euros.", note: "das macht + importe" },
+        { tr: "Trece euros, quédese con el cambio.", note: "stimmt so: el cambio es para usted" }
+      ]
+    },
+    vocab: [
+      "pagar",
+      "la cuenta",
+      "junto, todo junto",
+      "por separado (una cuenta cada uno)",
+      "en efectivo",
+      "la tarjeta (de crédito)",
+      "la propina",
+      "el euro",
+      "el franco suizo",
+      "el huésped, el cliente",
+      "quédese con el cambio, está bien así",
+      "el importe, la suma"
+    ],
+    exercises: [
+      {
+        q: "¿Cuál es la manera más cortés de pedir la cuenta?",
+        opts: ["Ich will die Rechnung.", "Die Rechnung, bitte.", "Gib mir die Rechnung."],
+        why: "<b>Die Rechnung, bitte.</b> es breve y cortés. <i>Ich will ...</i> es correcto pero suena brusco, y <i>Gib mir ...</i> es un imperativo con <i>du</i>, fuera de lugar con un camarero."
+      },
+      {
+        q: "El camarero pregunta «Zusammen oder getrennt?». Queréis una cuenta cada uno. ¿Qué respondes?",
+        opts: ["Zusammen, bitte.", "Getrennt, bitte.", "Bar, bitte."],
+        why: "<b>Getrennt</b> significa una cuenta por persona. <i>Zusammen</i> es una sola cuenta, y <i>bar</i> responde a otra pregunta (efectivo)."
+      },
+      {
+        q: "Completa con el verbo machen: «Das ___ zwölf Euro.» (Son doce euros.)",
+        hint: "machen, 3.ª persona del singular",
+        why: "<i>Das macht ...</i> es la fórmula para decir el total: <b>macht</b>."
+      },
+      {
+        q: "Une cada palabra con su significado.",
+        pairs: ["la cuenta", "la propina", "en efectivo", "por separado (una cuenta cada uno)"]
+      },
+      {
+        q: "Completa con la forma correcta del verbo zahlen.",
+        tr: "Yo pago en efectivo y él paga con tarjeta.",
+        why: "<i>Ich zahle</i> (1.ª persona) y <i>er zahlt</i> (3.ª persona del singular)."
+      },
+      {
+        tr: "¿Podemos pagar, por favor?",
+        why: "<i>Können wir bitte zahlen?</i>: el modal va en primera posición (pregunta de sí o no) y el infinitivo <i>zahlen</i> al final. También se puede decir <i>Können wir zahlen, bitte?</i> o <i>Bitte, können wir zahlen?</i>."
+      },
+      {
+        q: "Has terminado de comer.",
+        setting: "El camarero se acerca a la mesa.",
+        lines: [
+          { tr: "¿Desea algo más?" },
+          { tr: "Rechaza y pide la cuenta.", answerTr: "No, gracias. Quisiéramos pagar, por favor." },
+          { tr: "Con gusto. ¿Juntos o separados?" },
+          { tr: "Responde: juntos.", answerTr: "Juntos, por favor." },
+          { tr: "Son treinta y dos euros." },
+          { tr: "Da treinta y cuatro euros y deja el cambio.", answerTr: "Treinta y cuatro euros, quédese con el cambio." }
+        ]
+      },
+      {
+        tr: "La cuenta, por favor. Pagamos juntos.",
+        why: "La cuenta se pide con <i>Die Rechnung, bitte</i>. En <i>Wir zahlen zusammen</i> el adverbio <i>zusammen</i> va después del verbo."
+      },
+      {
+        tr: "Disculpe, ¿podemos pagar, por favor?",
+        why: "<i>Entschuldigung</i>: la <b>sch</b> es /ʃ/. En <i>zahlen</i> la <b>z</b> es /ts/ y la <b>ah</b> es una <b>a</b> larga: la <b>h</b> no se pronuncia."
+      },
+      {
+        tr: "Pagamos por separado, por favor.",
+        why: "<i>Getrennt</i>: la <b>g</b> es dura y la <b>r</b> puede ser uvular o alveolar (las dos son estándar). En <i>zusammen</i> la <b>z</b> es /ts/ y la <b>s</b> entre dos vocales es sonora."
+      }
+    ]
+  },
+  "lesson:a1-u07-test": {
+    theme: "Prueba",
+    title: "Prueba de la unidad 7",
+    objectives: ["comprobar el acusativo en el restaurante, möchte y hätte gern, einer, eins y welche, la cuenta"],
+    theory: [
+      {
+        p: "Diez preguntas sobre toda la unidad. Se supera con el 70%. No repases las lecciones mientras respondes: si no recuerdas algo, es mejor volver a repasar."
+      }
+    ],
+    exercises: [
+      {
+        q: "Completa: «Haben Sie ___ Tisch für zwei?» (¿Tienen una mesa para dos?)",
+        hint: "ein-, masculino, acusativo",
+        why: "<i>Tisch</i> es masculino y después de <i>haben</i> es complemento directo: <b>einen</b>."
+      },
+      {
+        q: "Completa: «Ich ___ gern das Schnitzel.» (Quisiera el escalope.)",
+        hint: "haben, forma de cortesía que se usa con gern",
+        why: "La fórmula es <b>ich hätte gern</b>: <i>hätte</i> es la forma de cortesía de <i>haben</i>."
+      },
+      {
+        q: "Completa: «Haben Sie Brötchen? Ja, wir haben ___.» (¿Tienen panecillos? Sí, tenemos.)",
+        hint: "plural sin número",
+        why: "<i>Brötchen</i> es plural y sin número: el pronombre es <b>welche</b>."
+      },
+      {
+        q: "¿Qué frase es correcta?",
+        opts: ["Ich möchte der Fisch.", "Ich möchte den Fisch.", "Ich möchte die Fisch."],
+        why: "<i>Der Fisch</i> es masculino y después de <i>möchte</i> va en acusativo: <b>den Fisch</b>."
+      },
+      {
+        q: "«Möchten Sie ein Brötchen?» Responde: «Sí, me llevo uno.»",
+        opts: ["Ja, ich nehme eins.", "Ja, ich nehme ein.", "Ja, ich nehme einen."],
+        why: "<i>Das Brötchen</i> es neutro: sin el nombre se dice <b>eins</b>."
+      },
+      {
+        q: "Une cada palabra con su significado.",
+        pairs: ["pagar", "la cuenta", "la propina", "la carta (la lista de platos)"]
+      },
+      {
+        tr: "Quisiera el pescado.",
+        why: "Son correctos varios órdenes, por ejemplo <i>Ich hätte gern den Fisch</i>, <i>Ich hätte den Fisch gern</i>, <i>Den Fisch hätte ich gern</i> y <i>Gern hätte ich den Fisch</i>. <i>Fisch</i> es masculino: <b>den</b>."
+      },
+      {
+        tr: "Quisiera una mesa para dos.",
+        why: "Valen <i>ich möchte</i> e <i>ich hätte gern</i> con <i>einen Tisch für zwei</i>; <i>gern</i> puede ir también con <i>möchte</i> y el objeto puede abrir la frase. <i>Tisch</i> es masculino: <b>einen</b>."
+      },
+      {
+        tr: "Quisiéramos dos sopas y una ensalada.",
+        why: "<i>hätten</i>: la <b>ä</b> es breve, parecida a una «e» abierta, y <b>tt</b> es una sola /t/. En <i>zwei</i> la <b>z</b> es /ts/ y la <b>ei</b> es /aɪ̯/."
+      },
+      {
+        tr: "¿Podemos pagar, por favor?",
+        why: "<i>Können</i>: la <b>ö</b> es breve. En <i>zahlen</i> la <b>z</b> es /ts/ y la <b>a</b> es larga."
       }
     ]
   }

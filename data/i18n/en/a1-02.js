@@ -1,5 +1,5 @@
 /* ============================================================
-   Learner-language text (en) for data/core/a1-02.js, units a1-u04, a1-u05 and a1-u06.
+   Learner-language text (en) for data/core/a1-02.js, units a1-u04 to a1-u07.
    Keys point at ids in the neutral layer; arrays merge by index,
    so their length has to match core.
    Checked by scripts/parity.mjs.
@@ -1554,6 +1554,527 @@ LINGUAI.addStrings("en", {
       {
         tr: "Go straight ahead and then left.",
         why: "<i>Geradeaus</i>: the <b>g</b> is hard and <b>au</b> is a diphthong /aʊ̯/, like “ow” in “cow”. In <i>links</i> the <b>i</b> is short."
+      }
+    ]
+  },
+  "unit:a1-u07": {
+    title: "At the restaurant",
+    grammarNote: "accusative with haben and brauchen · möchte and hätte gern · einer, eins, welche · the check"
+  },
+  "lesson:a1-u07-l1": {
+    theme: "Booking a table",
+    title: "A table for two: Ein Tisch für zwei",
+    objectives: [
+      "ask for a table with Haben Sie einen Tisch für zwei?",
+      "use the accusative with haben, brauchen and reservieren: einen Tisch, eine Speisekarte",
+      "say where to sit (drinnen, draußen) and whether a seat is free (frei)"
+    ],
+    theory: [
+      {
+        h: "Haben, brauchen, reservieren: the accusative",
+        p: "After <strong>haben</strong>, <strong>brauchen</strong>, <strong>suchen</strong> and <strong>reservieren</strong>, the thing you ask for is the direct object, so it takes the <strong>accusative</strong> (you met it in unit 3). Only the masculine changes: <strong>der → den</strong>, <strong>ein → einen</strong>. Feminine, neuter and plural look the same as in the nominative: <em>Wir brauchen einen Tisch</em> (<em>der Tisch</em>), <em>Wir brauchen eine Speisekarte</em> (<em>die Speisekarte</em>), <em>Wir brauchen ein Messer</em> (<em>das Messer</em>). The subject stays in the nominative: <em>Der Tisch ist frei.</em> (<em>der Tisch</em> is the subject here)."
+      },
+      {
+        h: "The verb stays in second place, and comes first in questions",
+        p: "As always, the conjugated verb takes <strong>second place</strong> in a statement: <em>Heute Abend reserviere ich einen Tisch.</em> (if you start with <em>Heute Abend</em>, the subject moves after the verb). In yes/no questions the verb comes first: <em>Haben Sie einen Tisch für zwei?</em> There is no “do” here: German does not use a helper verb, it simply puts <em>haben</em> first. With restaurant staff you use <strong>Sie</strong>, a single polite form that covers both one person and several."
+      },
+      {
+        contrast: "English “a table” and “the table” never change, whatever job the noun does. In German the masculine changes when it is the direct object (<em>Der Tisch ist frei</em>, but <em>Wir brauchen einen Tisch</em>), the same way English <em>he</em> becomes <em>him</em>, only here it happens to articles and not just to pronouns. English nouns have no gender, so <em>der Tisch</em>, <em>die Speisekarte</em> and <em>das Messer</em> have to be learned together with their article. Watch the word <em>Menü</em>: <em>das Menü</em> usually means a fixed-price meal with several courses, while the list of dishes, what you would call the menu, is <em>die Speisekarte</em>. Finally, <em>der Kellner</em> is a waiter and <em>die Kellnerin</em> a waitress: German adds <em>-in</em> to make the feminine."
+      },
+      {
+        trap: "After <em>haben</em> and <em>brauchen</em> don't leave the masculine in the nominative: “Haben Sie ein Tisch?” is wrong, you say <em>Haben Sie einen Tisch?</em>. And don't spread the change to nouns that aren't masculine: with <em>die Speisekarte</em> the article stays, so <em>eine Speisekarte</em>, not “einen Speisekarte”. Also, <em>für zwei</em> is enough for “for two”, with no extra noun."
+      },
+      {
+        tip: "Learn the whole sentence: <em>Haben Sie einen Tisch für zwei?</em>. Swap the number (<em>für drei</em>, <em>für vier</em>) and the place (<em>drinnen</em>, <em>draußen</em>) and you have almost everything you need to be welcomed in a restaurant."
+      }
+    ],
+    grammar: {
+      title: "The accusative with haben, brauchen and reservieren",
+      note: "Only the masculine changes in the accusative: <b>der → den</b>, <b>ein → einen</b>. Feminine, neuter and plural stay the same. The verb is in second place; in yes/no questions it is first.",
+      table: {
+        head: ["gender", "nominative", "accusative"],
+        rows: [
+          ["masculine", "der Tisch / ein Tisch", "den Tisch / einen Tisch"],
+          ["feminine", "die Speisekarte / eine Speisekarte", "die Speisekarte / eine Speisekarte"],
+          ["neuter", "das Restaurant / ein Restaurant", "das Restaurant / ein Restaurant"],
+          ["plural", "die Tische", "die Tische"]
+        ]
+      },
+      examples: [
+        { tr: "Do you have a table for two?", note: "Haben Sie: a question, verb in first position; einen: masculine accusative" },
+        { tr: "We need a table for four people.", note: "brauchen + accusative" },
+        { tr: "We need a menu.", note: "feminine: eine does not change" },
+        { tr: "Tonight I'm booking a table.", note: "Heute Abend opens the sentence: the verb stays second" },
+        { tr: "The table is free.", note: "the subject is in the nominative: der Tisch ist frei" },
+        { tr: "Do you have a free table outside?", note: "draußen: outdoors; frei at the end" }
+      ]
+    },
+    vocab: [
+      "the table",
+      "the chair",
+      "the seat, the place",
+      "the restaurant",
+      "the person",
+      "the waitress",
+      "the reservation",
+      "to reserve, to book",
+      "to need",
+      "outside, outdoors",
+      "inside, indoors",
+      "free, available"
+    ],
+    dialogue: [
+      "Good evening. Do you have a table for two?",
+      "Yes, gladly. Inside or outside?",
+      "Outside, please.",
+      "Here is a table. Here is the menu.",
+      "Thank you very much!"
+    ],
+    exercises: [
+      {
+        q: "You want to ask whether a table is free. Which sentence is correct?",
+        opts: ["Haben Sie ein Tisch frei?", "Haben Sie einen Tisch frei?", "Haben Sie eine Tisch frei?"],
+        why: "<i>Der Tisch</i> is masculine and, after <i>haben</i>, a direct object: <b>einen Tisch</b>."
+      },
+      {
+        q: "Which sentence is correct?",
+        opts: ["Wir brauchen eine Speisekarte.", "Wir brauchen einen Speisekarte.", "Wir brauchen ein Speisekarte."],
+        why: "<i>Die Speisekarte</i> is feminine: in the accusative the article does not change, so <b>eine</b>."
+      },
+      {
+        q: "Complete with the indefinite article: “Ich brauche ___ Tisch für zwei.” (I need a table for two.)",
+        hint: "ein-, masculine, accusative",
+        why: "<i>Tisch</i> is masculine and <i>brauchen</i> takes the accusative: <b>einen</b>."
+      },
+      {
+        q: "Match each word with its meaning.",
+        pairs: ["the waiter", "the chair", "outside, outdoors", "to reserve, to book"]
+      },
+      {
+        tr: "We need a table for four.",
+        why: "Several orders are correct, for example <i>Wir brauchen einen Tisch für vier</i>, with the object in front <i>Einen Tisch für vier brauchen wir</i>, and with the phrase in front <i>Für vier brauchen wir einen Tisch</i>. The verb stays in second place."
+      },
+      {
+        q: "You are at a restaurant and the waiter greets you.",
+        setting: "At the entrance of the restaurant.",
+        lines: [
+          { tr: "Good evening! What do you need?" },
+          { tr: "Ask for a table for two.", answerTr: "We need a table for two." },
+          { tr: "Gladly. Here is the table." },
+          { tr: "Say thank you and ask for the menu.", answerTr: "Thank you. The menu, please." }
+        ]
+      },
+      {
+        tr: "Do you have a table for two?",
+        why: "The polite “you” becomes <i>Haben Sie</i>: <i>Sie</i> is a single form that works for one person or several, and the verb is in the third person plural. <i>Tisch</i> is masculine, so <b>einen Tisch</b>."
+      },
+      {
+        tr: "Do you have a free table inside for three people?",
+        why: "It is a yes/no question, so <i>haben</i> opens the sentence. <i>Personen</i> has a voiced <b>s</b>, like the “z” in “zoo”; in <i>drinnen</i> the <b>i</b> is short and <b>nn</b> is a single /n/, the doubled letter just tells you the vowel is short."
+      },
+      {
+        tr: "Do you have a free table outside?",
+        why: "<i>Draußen</i>: <b>au</b> is a diphthong /aʊ̯/, like “ow” in “cow”, and <b>ß</b> is a voiceless “s”. In <i>frei</i>, <b>ei</b> is /aɪ̯/, like the English word “eye”."
+      }
+    ]
+  },
+  "lesson:a1-u07-l2": {
+    theme: "Ordering",
+    title: "Ordering: Ich hätte gern das Schnitzel",
+    objectives: [
+      "order with the phrases ich möchte and ich hätte gern",
+      "conjugate möchte: ich möchte, du möchtest, wir möchten",
+      "put the dish you order in the accusative: den Fisch, die Suppe, das Schnitzel"
+    ],
+    theory: [
+      {
+        h: "Two phrases for ordering",
+        p: "In a restaurant you order with <strong>ich möchte</strong> + accusative (<em>Ich möchte das Schnitzel</em>) or with <strong>ich hätte gern</strong> + accusative (<em>Ich hätte gern das Schnitzel</em>). Both are polite. <em>möchte</em> started out as a Konjunktiv II form of <em>mögen</em>, and <em>hätte</em> is the Konjunktiv II of <em>haben</em>: at this level you learn them as fixed phrases, without building other forms of that mood. <em>gern</em> means “gladly”, so <em>ich hätte gern</em> corresponds to “I'd like”, not to a literal “I would have gladly”, which nobody says when ordering."
+      },
+      {
+        h: "möchte is a modal, with an -e",
+        p: "Like the other modals, <em>möchte</em> sends the infinitive to the end (<em>Ich möchte das Schnitzel essen</em>), and the infinitive is often dropped when the meaning is clear (<em>Ich möchte das Schnitzel</em>). Unlike <em>kann</em>, <em>will</em> and <em>muss</em>, it has an <strong>-e</strong> in the 1st and 3rd person singular: <em>ich möchte</em>, <em>er möchte</em>. The other persons: <em>du möchtest</em>, <em>wir möchten</em>, <em>ihr möchtet</em>, <em>sie/Sie möchten</em>. The dish you order is a direct object, so it is in the accusative: <em>den Fisch</em>, <em>die Suppe</em>, <em>das Schnitzel</em>."
+      },
+      {
+        contrast: "English “I'd like” and German <em>ich möchte</em> do the same job, and both are softened forms: “I'd” is short for “I would”, and <em>möchte</em> comes from <em>mögen</em>, “to like”. You can map <em>ich möchte</em> straight onto “I'd like”. <em>Ich hätte gern</em> is a second phrase with the same use. English “I want the schnitzel” is blunt, and German <em>Ich will das Schnitzel</em> is blunt in the same way. Another difference: <em>möchte</em> has the verb ending <em>-e</em> for <em>ich</em> and <em>er</em>, while English “would like” never changes. Remember the gender too, since English has none: <em>das Schnitzel</em>, <em>das Hähnchen</em> (chicken) and <em>das Eis</em> (ice cream) are neuter, <em>der Fisch</em> and <em>der Salat</em> are masculine, <em>die Suppe</em> is feminine. A <em>Schnitzel</em> is a thin cutlet; the version in breadcrumbs is called <em>paniertes Schnitzel</em>, so it is not necessarily breaded."
+      },
+      {
+        trap: "<em>Ich will das Schnitzel</em> is a correct sentence, but in a restaurant it sounds abrupt, like saying “I want the cutlet” to the waiter: to order, choose <em>ich möchte</em> or <em>ich hätte gern</em>. And don't lose the <strong>-e</strong>: “ich möchten” is wrong, you say <em>ich möchte</em>, and in the 3rd person <em>er möchte</em> (not “er möchtet”)."
+      },
+      {
+        tip: "Two patterns are enough to order: <em>Ich möchte + accusative</em> and <em>Ich hätte gern + accusative</em>. For several people: <em>Wir möchten ...</em> and <em>Wir hätten gern ...</em>."
+      }
+    ],
+    grammar: {
+      title: "möchte and hätte gern",
+      note: "<b>Ich möchte</b> + accusative and <b>ich hätte gern</b> + accusative are polite phrases for ordering. <b>möchte</b> has an -e in the 1st and 3rd person singular.",
+      table: {
+        head: ["person", "möchten", "hätte gern"],
+        rows: [
+          ["ich", "möchte", "hätte gern"],
+          ["du", "möchtest", "hättest gern"],
+          ["er/sie/es", "möchte", "hätte gern"],
+          ["wir", "möchten", "hätten gern"],
+          ["ihr", "möchtet", "hättet gern"],
+          ["sie/Sie", "möchten", "hätten gern"]
+        ]
+      },
+      examples: [
+        { tr: "I'd like the schnitzel.", note: "möchte: polite phrase; das Schnitzel, neuter" },
+        { tr: "I'd like the cheese.", note: "hätte gern + accusative: den Käse" },
+        { tr: "I'd like the fish.", note: "den Fisch: masculine in the accusative" },
+        { tr: "What would you like to drink?", note: "Was in first position, möchten in second, trinken at the end" },
+        { tr: "Would you like a starter?", note: "yes/no question: möchten in first position" },
+        { tr: "We'd like two soups.", note: "wir hätten gern: plural" }
+      ]
+    },
+    vocab: [
+      "I'd like (polite phrase)",
+      "I'd like (the hätte gern version)",
+      "the cutlet, the thin slice of meat (paniertes Schnitzel: breaded)",
+      "the sausage",
+      "the potato",
+      "the rice",
+      "the chicken",
+      "the cheese",
+      "the starter",
+      "the main course",
+      "the dessert",
+      "the ice cream"
+    ],
+    exercises: [
+      {
+        q: "You order the fish politely. Which sentence is correct?",
+        opts: ["Ich möchte den Fisch.", "Ich möchten den Fisch.", "Ich möchte der Fisch."],
+        why: "<b>Ich möchte</b> has the -e, and <i>der Fisch</i> in the accusative is <b>den Fisch</b>."
+      },
+      {
+        q: "Which sentence is correct?",
+        opts: ["Er möchtet eine Suppe.", "Er möchte eine Suppe.", "Er möchten eine Suppe."],
+        why: "In the 3rd person singular <i>möchte</i> has an <b>-e</b> and no other ending: <b>er möchte</b>."
+      },
+      {
+        q: "Complete: “Ich möchte ___ Salat.” (I'd like the salad.)",
+        hint: "der Salat, definite article in the accusative",
+        why: "<i>Salat</i> is masculine: in the accusative <b>den</b>."
+      },
+      {
+        q: "Match each dish with its meaning.",
+        pairs: ["the cutlet or thin slice of meat", "the soup", "the fish", "the dessert"]
+      },
+      {
+        q: "Complete with the verb möchten.",
+        tr: "I'd like the fish and you'd like the soup.",
+        why: "<i>Ich möchte</i> (1st person, with the -e) and <i>du möchtest</i> (2nd person, with -st)."
+      },
+      {
+        tr: "I'd like the schnitzel.",
+        why: "Several orders are correct, for example <i>Ich hätte gern das Schnitzel</i>, <i>Ich hätte das Schnitzel gern</i>, with the object in front <i>Das Schnitzel hätte ich gern</i>, and with <i>gern</i> in front <i>Gern hätte ich das Schnitzel</i>. The verb stays in second place."
+      },
+      {
+        q: "You order at the restaurant.",
+        setting: "The waiter takes the order.",
+        lines: [
+          { tr: "What would you like?" },
+          { tr: "Order the fish with the polite phrase.", answerTr: "I'd like the fish." },
+          { tr: "And would you also like a soup?" },
+          { tr: "Say yes and order the soup.", answerTr: "Yes, gladly. I'd like a soup." }
+        ]
+      },
+      {
+        tr: "I'd like the soup.",
+        why: "Both <i>ich möchte</i> and <i>ich hätte gern</i> work; <i>gern</i> can also go with <i>möchte</i> or after the object, and the object can open the sentence (<i>Die Suppe möchte ich</i>). <i>Suppe</i> is feminine: in the accusative it stays <i>die</i>: “the soup” is one already known, so the definite article."
+      },
+      {
+        tr: "I'd like the soup and the schnitzel.",
+        why: "<i>möchte</i>: the <b>ö</b> is short, and <b>ch</b> after <b>ö</b> is the sound of <i>ich</i>, a light palatal fricative, like the “h” in “huge”: it is not a “k” and not “sh”. In <i>Schnitzel</i>, <b>sch</b> is /ʃ/ (as in “shop”) and <b>tz</b> is /ts/."
+      },
+      {
+        tr: "I'd like the fish and the salad.",
+        why: "<i>hätte</i>: the <b>ä</b> is short, close to the “e” in “bed”, and <b>tt</b> is a single /t/. In <i>gern</i> the <b>g</b> is hard, and the <b>r</b> is not the American “r”: it can be uvular or tapped, both are standard."
+      }
+    ]
+  },
+  "lesson:a1-u07-l3": {
+    theme: "One, some, none",
+    title: "One, some, none: Ich nehme zwei. Haben Sie welche?",
+    objectives: [
+      "say “one” without repeating the noun with einer, eine, eins",
+      "say “I have some” and “I'll take two” without repeating the noun",
+      "use welche for some and keine for none"
+    ],
+    theory: [
+      {
+        h: "Don't repeat a noun you already said: einer, eine, eins",
+        p: "To avoid repeating a noun, German uses the forms of <em>ein</em> without the noun. They agree with the gender of the noun you leave out: masculine <strong>einer</strong> (accusative <strong>einen</strong>), feminine <strong>eine</strong>, neuter <strong>eins</strong>. <em>Möchten Sie einen Apfel? Ja, ich nehme einen.</em> (<em>der Apfel</em>) <em>Möchten Sie eine Tomate? Ja, ich nehme eine.</em> (<em>die Tomate</em>) <em>Möchten Sie ein Brötchen? Ja, ich nehme eins.</em> (<em>das Brötchen</em>). With a number nothing else is needed: <em>Ich nehme zwei.</em>"
+      },
+      {
+        h: "welche for “some”, keine for “none”",
+        p: "When there is no number and you don't say how many, you use <strong>welche</strong> in place of the noun: with a plural (<em>Haben Sie Brötchen? Ja, wir haben welche.</em>) and with a feminine mass noun (<em>Haben Sie Milch? Ja, wir haben welche.</em>). With a neuter mass noun the form is <strong>welches</strong> (<em>Haben Sie Wasser? Ja, wir haben welches.</em>), and with a masculine mass noun in the accusative <strong>welchen</strong> (<em>Haben Sie Saft? Ja, wir haben welchen.</em>). To say there is none, you use <strong>keiner / keine / keins</strong> (masculine accusative <em>keinen</em>): <em>Wir haben leider keine.</em>"
+      },
+      {
+        contrast: "English does this with “one”, “some”, “any” and “none”: “I'll take two”, “Do you have any?”, “We have some”, “We don't have any”. The ideas are the same, but English “one” and “some” never change, while the German forms agree with the German noun: <em>der Apfel → einen</em>, <em>die Tomate → eine</em>, <em>das Ei → eins</em>. English does not even mark gender, so there is no shortcut: you have to remember the article of each noun. With a number both languages simply drop the noun: <em>Ich nehme zwei</em>, “I'll take two”."
+      },
+      {
+        trap: "<em>welche</em> is not always the question word “which” of <em>Welche Suppe möchten Sie?</em>: in <em>Haben Sie welche?</em> it means “do you have any?”. Context tells them apart: the question use asks you to choose or identify (<em>Welche möchten Sie?</em> works even without a noun), the other one picks up an unspecified quantity. And don't use <em>ein</em> alone: “Ich nehme ein” is wrong, because without the noun you need the pronoun forms, <em>einen</em>, <em>eine</em> or <em>eins</em>."
+      },
+      {
+        tip: "To choose the form, think of the German noun: <em>der Apfel → einen</em>, <em>die Tomate → eine</em>, <em>das Ei → eins</em>. If you have a number, say the number and stop."
+      }
+    ],
+    grammar: {
+      title: "einer, eins, welche: the noun is not repeated",
+      note: "Without the noun: masculine <b>einer / einen</b>, feminine <b>eine</b>, neuter <b>eins</b>. With a number the number is enough (<b>Ich nehme zwei</b>). For “I have some” without a number: <b>welche</b> (plural, feminine mass noun), <b>welches</b> (neuter mass noun), <b>welchen</b> (masculine mass noun, accusative).",
+      table: {
+        head: ["gender", "with the noun", "without the noun"],
+        rows: [
+          ["masculine", "Ich nehme einen Apfel.", "Ich nehme einen."],
+          ["feminine", "Ich nehme eine Tomate.", "Ich nehme eine."],
+          ["neuter", "Ich nehme ein Brötchen.", "Ich nehme eins."],
+          ["plural", "Haben Sie Brötchen?", "Haben Sie welche?"]
+        ]
+      },
+      examples: [
+        { tr: "I'll take two.", note: "the number alone is enough" },
+        { tr: "Would you like a roll? Yes, I'll take one.", note: "das Brötchen is neuter: eins" },
+        { tr: "Do you have an apple? Yes, I have one.", note: "der Apfel is masculine: einen" },
+        { tr: "Would you like a tomato? Yes, I'll take one.", note: "die Tomate is feminine: eine" },
+        { tr: "Do you have any rolls? Yes, we have some.", note: "plural without a number: welche" },
+        { tr: "Do you have any water? Yes, we have some.", note: "das Wasser is a neuter mass noun: welches" }
+      ]
+    },
+    vocab: [
+      "some, any (without a number)",
+      "one (without the noun)",
+      "none, not any (without the noun)",
+      "the egg",
+      "the tomato",
+      "the cucumber",
+      "the glass",
+      "the bottle",
+      "the portion",
+      "the fork",
+      "the spoon",
+      "the knife"
+    ],
+    exercises: [
+      {
+        q: "“Haben Sie Brötchen?” The waiter has some. How does he answer?",
+        opts: ["Ja, wir haben welche.", "Ja, wir haben welches.", "Ja, wir haben einen."],
+        why: "<i>Brötchen</i> here is plural and without a number: the pronoun is <b>welche</b>. <i>Welches</i> is for a neuter singular mass noun, <i>einen</i> for a masculine singular."
+      },
+      {
+        q: "“Möchten Sie ein Brötchen?” Answer: “Yes, I'll take one.”",
+        opts: ["Ja, ich nehme ein.", "Ja, ich nehme eins.", "Ja, ich nehme einen."],
+        why: "<i>Das Brötchen</i> is neuter: without the noun you say <b>eins</b>. “Ich nehme ein” is wrong, and <i>einen</i> is masculine."
+      },
+      {
+        q: "Complete: “Haben Sie Wasser? Ja, wir haben ___.” (Do you have any water? Yes, we have some.)",
+        hint: "das Wasser, neuter mass noun, no number",
+        why: "<i>Das Wasser</i> is neuter and a mass noun: the pronoun is <b>welches</b>."
+      },
+      {
+        q: "Complete: “Möchten Sie eine Tomate? Ja, ich nehme ___.” (Would you like a tomato? Yes, I'll take one.)",
+        hint: "die Tomate is feminine",
+        why: "<i>Die Tomate</i> is feminine, so “one” is <b>eine</b>."
+      },
+      {
+        q: "Match each word with its meaning.",
+        pairs: ["the roll", "the milk", "the egg", "the bottle"]
+      },
+      {
+        q: "Complete the two missing words: “Do you have an apple? Yes, we have one.”",
+        tr: "Do you have an apple? Yes, we have one.",
+        why: "<i>Der Apfel</i> is masculine: after <i>haben</i> it is <b>einen Apfel</b>, and the pronoun without the noun is <b>einen</b> again."
+      },
+      {
+        tr: "Unfortunately we don't have any.",
+        why: "Both are correct: <i>Wir haben leider keine</i> and, with <i>leider</i> in front, <i>Leider haben wir keine</i>. The verb stays in second place."
+      },
+      {
+        tr: "Do you (informal, du) have any rolls? Yes, I have some.",
+        why: "With <i>du</i> the verb is <i>hast</i>. <i>Brötchen</i> is plural and without a number, so the answer uses <b>welche</b>: the answer needs a pronoun that agrees with the noun, not just a bare “some”."
+      },
+      {
+        tr: "We have rolls and apples, but no tomatoes.",
+        why: "In <i>Äpfel</i> the <b>ä</b> is like the “e” in “bed” and <b>pf</b> is pronounced with both consonants: the <b>p</b> is followed at once by an <b>f</b>. In <i>keine</i> the <b>ei</b> is /aɪ̯/, like the English word “eye”."
+      },
+      {
+        tr: "I'll take two rolls and an apple.",
+        why: "<i>Apfel</i> is masculine, so <b>einen Apfel</b>. In <i>zwei</i> the <b>z</b> is /ts/, not the English “z”, and the <b>ei</b> is /aɪ̯/."
+      }
+    ]
+  },
+  "lesson:a1-u07-l4": {
+    theme: "The check",
+    title: "The check: Zahlen, bitte!",
+    objectives: [
+      "ask for the check with Zahlen, bitte! and Können wir bitte zahlen?",
+      "answer Zusammen oder getrennt?",
+      "say the amount and leave a tip: Das macht ..., stimmt so"
+    ],
+    theory: [
+      {
+        h: "Asking for the check",
+        p: "In a German restaurant you usually pay at the table, when the waiter comes by, not at a register. To ask for the check you say <strong>Zahlen, bitte!</strong> (short form), <strong>Die Rechnung, bitte.</strong> or, more fully, <strong>Wir möchten zahlen.</strong> or <strong>Können wir bitte zahlen?</strong> With the waiter you use <em>Sie</em>; in young, informal places you may be addressed with <em>du</em>, but if you are not sure, stay with <em>Sie</em>."
+      },
+      {
+        h: "Zusammen oder getrennt? The total and the tip",
+        p: "The waiter asks <em>Zusammen oder getrennt?</em>: <strong>zusammen</strong> is one check, <strong>getrennt</strong> is a separate check for each person. You answer <em>Zusammen, bitte.</em> or <em>Getrennt, bitte.</em> Then comes the total: <em>Das macht zweiunddreißig Euro.</em> To leave a tip (<em>das Trinkgeld</em>) you say the amount you want to pay, already rounded up: <em>Vierunddreißig Euro, stimmt so.</em> (<em>stimmt so</em> = keep the change). In Germany and Austria you pay in <em>Euro</em>, in Switzerland in <em>Franken</em> (Swiss francs). Some places take cash only: you can ask <em>Kann ich mit Karte zahlen?</em>"
+      },
+      {
+        contrast: "In the US the check usually arrives with the tip still to be added on top, often 15 to 20 percent, and you write it in or leave it on the table. In Germany the tip is normally not added to the bill: you round up the total yourself as you pay and say the final amount, with <em>stimmt so</em>. Service is generally already included in the prices, so a tip is a small extra, usually a few percent or a round-up. Another difference is the word <em>Rechnung</em>: English says “check” (American) or “bill”, and <em>die Rechnung</em> is feminine. <em>Getrennt</em> corresponds to “separate checks”, and <em>zusammen</em> to “together”."
+      },
+      {
+        trap: "<em>Zahlen, bitte!</em> does not contain <em>Sie</em>: it is the short form of “Wir möchten zahlen, bitte”, much like English “Check, please!”. If the verb is followed by <em>Sie</em>, the same form can be a question or an invitation: <em>Zahlen Sie bar oder mit Karte?</em> (the waiter's question) and <em>Zahlen Sie bitte an der Kasse.</em> (an invitation, polite imperative). Context, intonation and punctuation tell them apart. And with <em>zahlen</em> don't look for a separate polite “you”: German uses <em>Sie</em>, with the verb in the plural form."
+      },
+      {
+        tip: "Keep the sequence in mind: <em>Zahlen, bitte!</em>, then <em>Zusammen, bitte.</em> or <em>Getrennt, bitte.</em>, finally the amount with <em>stimmt so</em>."
+      }
+    ],
+    grammar: {
+      title: "Asking for the check and paying",
+      note: "With the waiter you use <b>Sie</b>. Useful phrases: <b>Zahlen, bitte!</b>, <b>Die Rechnung, bitte.</b>, <b>Können wir bitte zahlen?</b>. Answers: <b>Zusammen, bitte.</b> / <b>Getrennt, bitte.</b>. <b>stimmt so</b>: keep the change.",
+      table: {
+        head: ["the waiter says", "you answer"],
+        rows: [
+          ["Zusammen oder getrennt?", "Zusammen, bitte. / Getrennt, bitte."],
+          ["Bar oder mit Karte?", "Bar, bitte. / Mit Karte, bitte."],
+          ["Das macht zwölf Euro.", "Dreizehn Euro, stimmt so."]
+        ]
+      },
+      examples: [
+        { tr: "The check, please!", note: "Zahlen, bitte!: short form, without Sie" },
+        { tr: "The check, please.", note: "die Rechnung: feminine" },
+        { tr: "Can we pay, please?", note: "können: modal in first position, zahlen at the end" },
+        { tr: "Together or separate?", note: "zusammen: one check; getrennt: one each" },
+        { tr: "That's twelve euros.", note: "das macht + amount" },
+        { tr: "Thirteen euros, keep the change.", note: "stimmt so: keep the change" }
+      ]
+    },
+    vocab: [
+      "to pay",
+      "the check, the bill",
+      "together",
+      "separately (one check each)",
+      "in cash",
+      "the (credit) card",
+      "the tip",
+      "the euro",
+      "the Swiss franc",
+      "the guest, the customer",
+      "keep the change, that's fine",
+      "the amount, the sum"
+    ],
+    exercises: [
+      {
+        q: "Which way of asking for the check is the most polite?",
+        opts: ["Ich will die Rechnung.", "Die Rechnung, bitte.", "Gib mir die Rechnung."],
+        why: "<b>Die Rechnung, bitte.</b> is short and polite. <i>Ich will ...</i> is correct but sounds abrupt, and <i>Gib mir ...</i> is an imperative with <i>du</i>, out of place with a waiter."
+      },
+      {
+        q: "The waiter asks “Zusammen oder getrennt?”. You want one check each. What do you answer?",
+        opts: ["Zusammen, bitte.", "Getrennt, bitte.", "Bar, bitte."],
+        why: "<b>Getrennt</b> means one check for each person. <i>Zusammen</i> is a single check, and <i>bar</i> answers a different question (cash)."
+      },
+      {
+        q: "Complete with the verb machen: “Das ___ zwölf Euro.” (That's twelve euros.)",
+        hint: "machen, 3rd person singular",
+        why: "<i>Das macht ...</i> is the phrase for stating the total: <b>macht</b>."
+      },
+      {
+        q: "Match each word with its meaning.",
+        pairs: ["the check", "the tip", "in cash", "separately (one check each)"]
+      },
+      {
+        q: "Complete with the right form of the verb zahlen.",
+        tr: "I pay in cash and he pays by card.",
+        why: "<i>Ich zahle</i> (1st person) and <i>er zahlt</i> (3rd person singular)."
+      },
+      {
+        tr: "Can we pay, please?",
+        why: "<i>Können wir bitte zahlen?</i>: the modal is in first position (yes/no question) and the infinitive <i>zahlen</i> is at the end. You can also say <i>Können wir zahlen, bitte?</i> or <i>Bitte, können wir zahlen?</i>."
+      },
+      {
+        q: "You have finished eating.",
+        setting: "The waiter comes to the table.",
+        lines: [
+          { tr: "Would you like anything else?" },
+          { tr: "Decline and ask for the check.", answerTr: "No, thank you. We'd like to pay, please." },
+          { tr: "Gladly. Together or separate?" },
+          { tr: "Answer: together.", answerTr: "Together, please." },
+          { tr: "That's thirty-two euros." },
+          { tr: "Give thirty-four euros and let him keep the change.", answerTr: "Thirty-four euros, keep the change." }
+        ]
+      },
+      {
+        tr: "The check, please. We'll pay together.",
+        why: "You ask for the check with <i>Die Rechnung, bitte</i>. In <i>Wir zahlen zusammen</i> the adverb <i>zusammen</i> comes after the verb."
+      },
+      {
+        tr: "Excuse me, can we pay, please?",
+        why: "<i>Entschuldigung</i>: <b>sch</b> is /ʃ/, as in “shop”. In <i>zahlen</i> the <b>z</b> is /ts/ and <b>ah</b> is a long <b>a</b>: the <b>h</b> is not pronounced."
+      },
+      {
+        tr: "We'll pay separately, please.",
+        why: "<i>Getrennt</i>: the <b>g</b> is hard and the <b>r</b> can be uvular or tapped (both are standard), not the American “r”. In <i>zusammen</i> the <b>z</b> is /ts/ and the <b>s</b> between two vowels is voiced, like “z” in “zoo”."
+      }
+    ]
+  },
+  "lesson:a1-u07-test": {
+    theme: "Test",
+    title: "Unit 7 test",
+    objectives: ["check the accusative at the restaurant, möchte and hätte gern, einer, eins and welche, the check"],
+    theory: [
+      {
+        p: "Ten questions on the whole unit. You pass with 70%. Don't look back at the lessons while you answer: if you can't remember something, it is better to go back and review."
+      }
+    ],
+    exercises: [
+      {
+        q: "Complete: “Haben Sie ___ Tisch für zwei?” (Do you have a table for two?)",
+        hint: "ein-, masculine, accusative",
+        why: "<i>Tisch</i> is masculine and after <i>haben</i> it is a direct object: <b>einen</b>."
+      },
+      {
+        q: "Complete: “Ich ___ gern das Schnitzel.” (I'd like the schnitzel.)",
+        hint: "haben, polite form used with gern",
+        why: "The phrase is <b>ich hätte gern</b>: <i>hätte</i> is the polite form of <i>haben</i>."
+      },
+      {
+        q: "Complete: “Haben Sie Brötchen? Ja, wir haben ___.” (Do you have any rolls? Yes, we have some.)",
+        hint: "plural without a number",
+        why: "<i>Brötchen</i> is plural and without a number: the pronoun is <b>welche</b>."
+      },
+      {
+        q: "Which sentence is correct?",
+        opts: ["Ich möchte der Fisch.", "Ich möchte den Fisch.", "Ich möchte die Fisch."],
+        why: "<i>Der Fisch</i> is masculine and after <i>möchte</i> it is in the accusative: <b>den Fisch</b>."
+      },
+      {
+        q: "“Möchten Sie ein Brötchen?” Answer: “Yes, I'll take one.”",
+        opts: ["Ja, ich nehme eins.", "Ja, ich nehme ein.", "Ja, ich nehme einen."],
+        why: "<i>Das Brötchen</i> is neuter: without the noun you say <b>eins</b>."
+      },
+      {
+        q: "Match each word with its meaning.",
+        pairs: ["to pay", "the check", "the tip", "the menu (the list of dishes)"]
+      },
+      {
+        tr: "I'd like the fish.",
+        why: "Several orders are correct, for example <i>Ich hätte gern den Fisch</i>, <i>Ich hätte den Fisch gern</i>, <i>Den Fisch hätte ich gern</i> and <i>Gern hätte ich den Fisch</i>. <i>Fisch</i> is masculine: <b>den</b>."
+      },
+      {
+        tr: "I'd like a table for two.",
+        why: "Both <i>ich möchte</i> and <i>ich hätte gern</i> work with <i>einen Tisch für zwei</i>; <i>gern</i> can also go with <i>möchte</i> and the object can open the sentence. <i>Tisch</i> is masculine: <b>einen</b>."
+      },
+      {
+        tr: "We'd like two soups and a salad.",
+        why: "<i>hätten</i>: the <b>ä</b> is short, close to the “e” in “bed”, and <b>tt</b> is a single /t/. In <i>zwei</i> the <b>z</b> is /ts/ and the <b>ei</b> is /aɪ̯/."
+      },
+      {
+        tr: "Can we pay, please?",
+        why: "<i>Können</i>: the <b>ö</b> is short. In <i>zahlen</i> the <b>z</b> is /ts/ and the <b>a</b> is long."
       }
     ]
   }
