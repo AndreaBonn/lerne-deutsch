@@ -1701,7 +1701,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Metti in ordine le parole.",
         tr: "Ho intenzione di trasferirmi in estate.",
-        why: "<i>Ich habe vor, im Sommer umzuziehen.</i> Si accetta anche <i>Im Sommer habe ich vor, umzuziehen</i>: il verbo coniugato resta in seconda posizione."
+        why: "<i>Ich habe vor, im Sommer umzuziehen.</i> «In estate» appartiene al trasferimento, non all'intenzione: sta quindi dentro il gruppo con <i>zu</i>, dopo la virgola."
       },
       {
         q: "Traduci: «Ho intenzione di trasferirmi a Vienna in estate.» (usa vorhaben)",
@@ -1733,7 +1733,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "haben o sein nel Perfekt",
-        p: "La maggior parte dei verbi forma il Perfekt con <strong>haben</strong>: <em>Ich habe studiert.</em> I verbi di movimento e di cambiamento di stato prendono <strong>sein</strong>: <em>Ich bin umgezogen. Wir sind angekommen.</em> Così anche <em>sein</em> e <em>bleiben</em>: <em>Ich bin geblieben.</em> Il verbo coniugato sta in seconda posizione, il Partizip II in fondo."
+        p: "La maggior parte dei verbi forma il Perfekt con <strong>haben</strong>: <em>Ich habe studiert.</em> I verbi intransitivi che esprimono un cambiamento di luogo o di stato prendono <strong>sein</strong> (non tutti i verbi di movimento: <em>tanzen</em> vuole <strong>haben</strong>): <em>Ich bin umgezogen. Wir sind angekommen.</em> Così anche <em>sein</em> e <em>bleiben</em>: <em>Ich bin geblieben.</em> Il verbo coniugato sta in seconda posizione, il Partizip II in fondo."
       },
       {
         contrast: "L'italiano distingue il passato prossimo dall'imperfetto (<em>ho abitato</em> / <em>abitavo</em>). Il tedesco non ha un imperfetto che corrisponda: parlando usa il Perfekt per quasi tutto (<em>Ich habe damals in Berlin gewohnt</em>), e il Präteritum compare soprattutto con <em>war, hatte</em> e i modali. Il <em>Konjunktiv II</em> di cortesia (<em>Könnten Sie ...?</em>, <em>Ich hätte gern ...</em>) corrisponde al condizionale italiano (<em>potrebbe, vorrei</em>)."
@@ -1819,7 +1819,7 @@ LINGUAI.addStrings("it", {
         why: "<i>Als Kind war ich oft krank, und wir hatten keinen Hund</i>: Präteritum di <i>sein</i> (<i>war</i>) e di <i>haben</i> (<i>hatten</i>)."
       },
       {
-        q: "Completa la frase.",
+        q: "Completa la frase (secondo spazio: haben al Konjunktiv II).",
         tr: "Domani ti chiamerò. Vorrei avere più tempo.",
         why: "<i>Morgen werde ich dich anrufen</i>: Futur I, con l'infinito in fondo. <i>Ich hätte gern mehr Zeit</i>: Konjunktiv II di <i>haben</i>, per un desiderio."
       },
@@ -1853,14 +1853,14 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "L'articolo al dativo",
-        p: "Al dativo l'articolo determinativo è <strong>dem</strong> (maschile e neutro), <strong>der</strong> (femminile), <strong>den</strong> (plurale, e il nome prende <strong>-n</strong>): <em>dem Vermieter, der Mutter, den Nachbarn.</em> Con l'articolo indeterminativo o il possessivo: <em>einem, einer, meinem, meiner.</em> Verbi che vogliono il dativo: <strong>helfen, danken, gehören, gefallen, schenken, gratulieren</strong>."
+        p: "Al dativo l'articolo determinativo è <strong>dem</strong> (maschile e neutro), <strong>der</strong> (femminile), <strong>den</strong> (plurale; il nome prende <strong>-n</strong>, tranne i plurali che già finiscono in -n o -en e quelli in -s): <em>dem Vermieter, der Mutter, den Kindern, den Nachbarn, den Jobs.</em> Con l'articolo indeterminativo o il possessivo: <em>einem, einer, meinem, meiner.</em> Verbi che vogliono il dativo: <strong>helfen, danken, gehören, gefallen, gratulieren</strong>. Con <strong>schenken</strong> (jemandem etwas schenken) il destinatario è al dativo e la cosa regalata all'accusativo: <em>Ich schenke meiner Mutter einen Kuchen.</em>"
       },
       {
         h: "L'ordine delle parole",
         p: "Con due nomi, di solito prima il <strong>dativo</strong>, poi l'accusativo: <em>Ich gebe dem Mann das Buch.</em> Con due pronomi, prima l'<strong>accusativo</strong>, poi il dativo: <em>Ich gebe es ihm.</em> Con un pronome e un nome, il pronome viene prima: <em>Ich gebe ihm das Buch. Ich gebe es dem Mann.</em>"
       },
       {
-        contrast: "In italiano <em>mi, ti, ci, vi</em> sono uguali per l'oggetto diretto e per quello indiretto (<em>mi vede, mi aiuta</em>), mentre il tedesco distingue <em>mich/mir</em> e <em>dich/dir</em>; solo <em>uns</em> e <em>euch</em> restano uguali. Inoltre <em>aiutare</em> in italiano vuole l'oggetto diretto (<em>lo aiuto</em>), ma <em>helfen</em> vuole il dativo (<em>ich helfe ihm</em>). Al singolare l'italiano ha <em>gli</em> (a lui) e <em>le</em> (a lei); il tedesco ha <em>ihm</em> e <em>ihr</em>, e <em>ihm</em> vale anche per i nomi neutri."
+        contrast: "In italiano <em>mi, ti, ci, vi</em> sono uguali per l'oggetto diretto e per quello indiretto (<em>mi vede, mi dà un libro</em>), mentre il tedesco distingue <em>mich/mir</em> e <em>dich/dir</em>; solo <em>uns</em> e <em>euch</em> restano uguali. Inoltre <em>aiutare</em> in italiano vuole l'oggetto diretto (<em>lo aiuto</em>), ma <em>helfen</em> vuole il dativo (<em>ich helfe ihm</em>). Al singolare l'italiano ha <em>gli</em> (a lui) e <em>le</em> (a lei); il tedesco ha <em>ihm</em> e <em>ihr</em>, e <em>ihm</em> vale anche per i nomi neutri."
       },
       {
         trap: "Non si dice «Ich helfe ihn» né «Ich sehe ihm»: <em>helfen</em> vuole il dativo (<em>ihm</em>), <em>sehen</em> l'accusativo (<em>ihn</em>). Non si dice «Ich gebe ihm es»: con due pronomi l'accusativo viene prima, <em>Ich gebe es ihm</em>. E dopo <em>mit, bei, zu</em> l'articolo è sempre al dativo: <em>beim Umzug</em> (<em>bei dem Umzug</em>), <em>mit dem Auto</em>."
@@ -1871,7 +1871,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Accusativo, dativo e pronomi",
-      note: "<b>mich/mir, dich/dir, ihn/ihm, sie/ihr, uns/uns, euch/euch, sie/ihnen</b>. Articolo al dativo: <b>dem, der, dem, den + -n</b>. Due pronomi: prima l'<b>accusativo</b> (<i>Ich gebe es ihm</i>).",
+      note: "<b>mich/mir, dich/dir, ihn/ihm, sie/ihr, uns/uns, euch/euch, sie/ihnen</b>. Articolo al dativo: <b>dem, der, dem, den</b>; al plurale il nome prende <b>-n</b> (<i>den Kindern</i>), tranne i plurali in -n/-en e in -s (<i>den Nachbarn, den Jobs</i>). Due pronomi: prima l'<b>accusativo</b> (<i>Ich gebe es ihm</i>).",
       table: {
         head: ["nominativo", "accusativo", "dativo"],
         rows: [
@@ -1961,7 +1961,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Aiuto la mia amica con il trasloco. Lei mi regala una torta, e io la ringrazio.",
-        why: "In <i>Freundin</i> la <b>ei</b> è [aɪ]; in <i>schenkt</i> la <b>sch</b> è [ʃ]; in <i>Kuchen</i> la <b>ch</b> dopo <b>u</b> è [x]."
+        why: "In <i>Freundin</i> la <b>eu</b> è [ɔʏ]; in <i>schenkt</i> la <b>sch</b> è [ʃ]; in <i>Kuchen</i> la <b>ch</b> dopo <b>u</b> è [x]."
       },
       {
         tr: "Gli do la chiave, e lui mi aiuta con il trasloco.",
@@ -2081,7 +2081,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Spero di trovare un posto di lavoro in autunno. Quando ho tempo, studio il tedesco, perché è importante per il mio lavoro.",
-        why: "In <i>Herbst</i> la <b>b</b> prima di <b>st</b> suona [p]; in <i>wichtig</i> la <b>ch</b> è [ç] e la <b>w</b> è [v]; in <i>Deutsch</i> la <b>eu</b> si legge [ɔɪ] e la <b>tsch</b> [tʃ]."
+        why: "In <i>Herbst</i> la <b>b</b> prima di <b>st</b> suona [p]; in <i>wichtig</i> la desinenza <b>-ig</b> è normalmente [ɪç] nel tedesco standard (de-DE) e la <b>w</b> resta [v]; in <i>Deutsch</i> la <b>eu</b> si legge [ɔʏ] e la <b>tsch</b> [tʃ]."
       },
       {
         tr: "So che devo studiare molto, perché l'esame è difficile.",
@@ -2149,7 +2149,7 @@ LINGUAI.addStrings("it", {
         why: "<b>zu</b> sta davanti all'infinito, e l'infinito <i>arbeiten</i> chiude la frase."
       },
       {
-        q: "Completa la frase.",
+        q: "Completa la frase (usa ankommen al Perfekt).",
         tr: "Quando sarò arrivato a Vienna, ti chiamerò.",
         why: "<i>Wenn ich in Wien angekommen bin, rufe ich dich an</i>: <i>wenn</i> vale per il futuro, il Perfekt ha l'ausiliare <i>bin</i> in fondo, e la principale comincia con il verbo <i>rufe</i>."
       },

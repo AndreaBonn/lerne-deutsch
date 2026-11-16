@@ -920,7 +920,7 @@ LINGUAI.addUnits("A2", [
           { it: "planen", ex: "Wir planen einen Umzug." },
           { it: "der Umzug", plural: "die Umzüge", ex: "Der Umzug ist im Juli." },
           { it: "umziehen", ex: "Ich ziehe im Sommer um." },
-          { it: "das Studium", plural: "-", ex: "Nach dem Studium suche ich eine Stelle." },
+          { it: "das Studium", plural: "die Studien", ex: "Nach dem Studium suche ich eine Stelle." },
           { it: "studieren", ex: "Ich möchte in Wien studieren." },
           { it: "die Stelle", plural: "die Stellen", ex: "Ich suche eine neue Stelle." },
           { it: "der Job", plural: "die Jobs", ex: "Mein Job gefällt mir." },
@@ -943,9 +943,7 @@ LINGUAI.addUnits("A2", [
             t: "order",
             tokens: ["Ich", "habe", "vor,", "im", "Sommer", "umzuziehen"],
             a: [
-              "Ich habe vor, im Sommer umzuziehen",
-              "Im Sommer habe ich vor, umzuziehen",
-              "Ich habe im Sommer vor, umzuziehen"
+              "Ich habe vor, im Sommer umzuziehen"
             ]
           },
           {
@@ -953,11 +951,7 @@ LINGUAI.addUnits("A2", [
             dir: "toIt",
             a: [
               "Ich habe vor, im Sommer nach Wien umzuziehen",
-              "Im Sommer habe ich vor, nach Wien umzuziehen",
-              "Ich habe im Sommer vor, nach Wien umzuziehen",
-              "Ich habe vor, im Sommer nach Wien zu ziehen",
-              "Im Sommer habe ich vor, nach Wien zu ziehen",
-              "Ich habe im Sommer vor, nach Wien zu ziehen"
+              "Ich habe vor, im Sommer nach Wien zu ziehen"
             ]
           },
           { t: "listen", it: "Ich habe vor, im Sommer nach Wien umzuziehen. Dort werde ich Informatik studieren." },
@@ -968,7 +962,7 @@ LINGUAI.addUnits("A2", [
         id: "a2-u08-l2",
         tags: ["g-perfekt", "g-praeteritum", "g-futur", "g-konjunktiv2"],
         cefr: "A2",
-        titleIt: "Ripasso: i tempi",
+        titleIt: "Wiederholung: Zeitformen",
         grammar: {
           examples: [
             { it: "Gestern habe ich den ganzen Tag gearbeitet." },
@@ -1026,7 +1020,7 @@ LINGUAI.addUnits("A2", [
         id: "a2-u08-l3",
         tags: ["g-pron-akk", "g-pron-dat", "g-artikel-dat"],
         cefr: "A2",
-        titleIt: "Ripasso: casi e pronomi",
+        titleIt: "Wiederholung: Fälle und Pronomen",
         grammar: {
           examples: [
             { it: "Ich sehe ihn jeden Tag im Büro." },
@@ -1071,7 +1065,7 @@ LINGUAI.addUnits("A2", [
         id: "a2-u08-l4",
         tags: ["g-nebensatz-weil", "g-nebensatz-dass", "g-nebensatz-temporal"],
         cefr: "A2",
-        titleIt: "Pronti per il B1",
+        titleIt: "Bereit für B1",
         grammar: {
           examples: [
             { it: "Ich bleibe zu Hause, weil ich arbeiten muss." },
