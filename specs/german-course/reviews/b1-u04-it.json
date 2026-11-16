@@ -1,0 +1,18 @@
+{
+  "bundleHash": "e6c8fa00d62fe2948227f778131c6284936dd695dcca077f3922860dbc0db554",
+  "findings": [
+    {
+      "kind": "progressione didattica",
+      "msg": "Il test verifica passivo, relative, Konjunktiv II e warten auf / worauf, ma nessuna delle quattro lezioni insegna questi argomenti. Inoltre non verifica direttamente la declinazione dell'aggettivo e le coppie di connettori, che costituiscono due lezioni dell'unità. Sostituire le domande estranee con esercizi sugli obiettivi effettivamente trattati oppure dichiarare esplicitamente i prerequisiti e la natura cumulativa del test.",
+      "path": "merged.test"
+    },
+    {
+      "kind": "idiomaticità",
+      "msg": "«Ein großer, klarer Standpunkt» non è un esempio idiomatico per descrivere un punto di vista: groß non esprime qui una qualità chiaramente interpretabile. Sostituire con «ein klarer, gut begründeter Standpunkt», che conserva anche l'esempio di due aggettivi con la stessa desinenza.",
+      "path": "merged.lessons[3].theory[2].p"
+    }
+  ],
+  "lang": "it",
+  "unit": "b1-u04",
+  "verdict": "fail"
+}
