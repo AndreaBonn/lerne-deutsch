@@ -1210,7 +1210,7 @@ LINGUAI.addStrings("pl", {
     },
     vocab: [
       "prezent",
-      "pomoc",
+      "pomoc (w znaczeniu ogólnym zwykle w liczbie pojedynczej)",
       "plecak",
       "telefon komórkowy",
       "kurtka",
@@ -1412,7 +1412,7 @@ LINGUAI.addStrings("pl", {
         trap: "Nie dodawaj <em>-st</em>: <em>Kommst!</em> nie jest trybem rozkazującym. Przy czasownikach mocnych z <em>e → ie</em> nie mów <em>Lese!</em>, tylko <em>Lies!</em>, a nie <em>Nehm!</em>, tylko <em>Nimm!</em> Przy <em>sein</em> forma to <em>Sei vorsichtig!</em> Nie myśl, że <em>mal</em> i <em>doch</em> to puste słowa: bez nich zdanie jest nadal poprawne, ale brzmi ostrzej."
       },
       {
-        tip: "Gdy dajesz przyjacielowi polecenie albo radę: zacznij od bezokolicznika, odrzuć <em>-en</em>, dodaj <em>-e</em>, jeśli temat kończy się na <em>-t</em> lub <em>-d</em>, i wstaw <em>mal</em> lub <em>doch</em>, żeby złagodzić: <em>Warte mal! Komm doch mit!</em>"
+        tip: "Gdy dajesz przyjacielowi polecenie albo radę, przy czasowniku regularnym: zacznij od bezokolicznika, odrzuć <em>-en</em>, dodaj <em>-e</em>, jeśli temat kończy się na <em>-t</em> lub <em>-d</em>, i wstaw <em>mal</em> lub <em>doch</em>, żeby złagodzić: <em>Warte mal! Komm doch mit!</em> Wyjątkiem są czasowniki ze zmianą samogłoski i <em>sein</em>: <em>Nimm! Lies! Sei!</em>"
       }
     ],
     grammar: {

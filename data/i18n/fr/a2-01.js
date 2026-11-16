@@ -539,7 +539,7 @@ LINGUAI.addStrings("fr", {
         p: "À la question <b>wohin ?</b> (vers où ?), l'allemand choisit la préposition selon la destination. Avec les <b>villes et les pays sans article</b>, on emploie <strong>nach</strong> : <em>Ich fahre nach Wien. Wir fliegen nach Italien.</em> Avec les <b>pays qui ont un article</b>, on emploie <strong>in</strong> + <b>accusatif</b> : <em>Wir fahren in die Schweiz.</em> Vers <b>une personne</b> et, en général, vers un <b>bâtiment ou un lieu précis</b>, on emploie <strong>zu</strong> + datif : <em>Ich fahre zu meiner Tante. Wir gehen zum Bahnhof.</em> Avec <em>zu</em> + article, il y a des contractions : <em>zum</em> (zu dem) et <em>zur</em> (zu der)."
       },
       {
-        contrast: "Le français aussi change de préposition selon la destination : <em>à</em> pour les villes (<em>je vais à Vienne</em>), <em>en</em> ou <em>au</em> pour les pays (<em>en Suisse, au Portugal</em>), <em>chez</em> pour les personnes (<em>chez ma tante</em>). Mais le partage n'est pas le même : le français regarde le genre du pays (<em>en</em> + féminin, <em>au</em> + masculin), l'allemand regarde s'il y a un article. <em>Italien</em>, <em>Deutschland</em>, <em>Österreich</em> n'en ont pas et prennent <em>nach</em>, comme les villes ; <em>die Schweiz</em>, <em>die Türkei</em>, <em>die USA</em> en ont un et prennent <em>in die</em>. Autre différence : en français, la même préposition sert pour aller quelque part et pour y être (<em>je vais en Suisse</em>, <em>j'habite en Suisse</em>). En allemand, <em>in die Schweiz</em> (accusatif) dit où l'on va et <em>in der Schweiz</em> (datif) où l'on est. <em>Chez ma tante</em> se partage aussi : <em>zu meiner Tante</em> (où je vais) et <em>bei meiner Tante</em> (où je suis)."
+        contrast: "Le français aussi change de préposition selon la destination : <em>à</em> pour les villes (<em>je vais à Vienne</em>), <em>en</em> ou <em>au</em> pour les pays (<em>en Suisse, au Portugal</em>), <em>chez</em> pour les personnes (<em>chez ma tante</em>). Mais le partage n'est pas le même : le français regarde le genre du pays (<em>en</em> + féminin, <em>au</em> + masculin ; exception : les pays masculins commençant par une voyelle prennent aussi <em>en</em>, comme <em>en Iran</em> ou <em>en Afghanistan</em>), l'allemand regarde s'il y a un article. <em>Italien</em>, <em>Deutschland</em>, <em>Österreich</em> n'en ont pas et prennent <em>nach</em>, comme les villes ; <em>die Schweiz</em>, <em>die Türkei</em>, <em>die USA</em> en ont un et prennent <em>in die</em>. Autre différence : en français, la même préposition sert pour aller quelque part et pour y être (<em>je vais en Suisse</em>, <em>j'habite en Suisse</em>). En allemand, <em>in die Schweiz</em> (accusatif) dit où l'on va et <em>in der Schweiz</em> (datif) où l'on est. <em>Chez ma tante</em> se partage aussi : <em>zu meiner Tante</em> (où je vais) et <em>bei meiner Tante</em> (où je suis)."
       },
       {
         trap: "Le cas dépend de ce que la phrase exprime. Avec <b>wohin ?</b> (mouvement vers un lieu), <em>in</em> prend l'<b>accusatif</b> : <em>Wir fahren in die Schweiz</em>. Avec <b>wo ?</b> (position, où l'on est), il prend le <b>datif</b> : <em>Meine Tante wohnt in der Schweiz</em>. Deux phrases presque identiques, deux cas différents, et <em>die</em> contre <em>der</em> est le seul indice. Attention aussi à <em>nach die Schweiz</em> : cela n'existe pas, car <em>nach</em> ne s'emploie pas avec les pays qui ont un article."
@@ -573,7 +573,7 @@ LINGUAI.addStrings("fr", {
     vocab: [
       "la gare",
       "le train",
-      "le quai, la voie",
+      "la voie (ferrée)",
       "le billet de train",
       "l'horaire (des trains)",
       "le départ",
@@ -615,7 +615,7 @@ LINGUAI.addStrings("fr", {
         pairs: ["à Vienne", "en Suisse (destination)", "chez ma tante", "à la gare"]
       },
       {
-        q: "Traduis : « Demain, nous allons en Suisse. »",
+        q: "Traduis (verbe : fahren) : « Demain, nous allons en Suisse. »",
         why: "<i>Morgen fahren wir in die Schweiz</i> : <i>fahren</i> pour un moyen de transport ; <i>reisen</i> est une autre possibilité. L'ordre peut changer (<i>Wir fahren morgen ...</i>), le verbe conjugué reste en deuxième position."
       },
       {
@@ -1025,7 +1025,7 @@ LINGUAI.addStrings("fr", {
         why: "Position (wo ?) : <b>in</b> + datif, et <i>die Schweiz</i> au datif donne <i>in der Schweiz</i>."
       },
       {
-        q: "Traduis : « Demain, nous allons à Vienne. »",
+        q: "Traduis (verbe : fahren) : « Demain, nous allons à Vienne. »",
         why: "<i>Morgen fahren wir nach Wien</i> : <i>nach</i> avec une ville. L'ordre peut changer, le verbe reste en deuxième position."
       },
       {
@@ -1136,14 +1136,14 @@ LINGUAI.addStrings("fr", {
         why: "<b>Sie</b> : l'accusatif de <i>sie</i> (elle) est identique au nominatif."
       },
       {
-        q: "Complète la phrase.",
+        q: "Complète la phrase (deuxième blanc : ich à l'accusatif).",
         tr: "Ma collègue est sympa. Je la rencontre souvent et parfois elle m'invite.",
         why: "<i>Sie</i> est l'accusatif pour <i>die Kollegin</i> ; <i>mich</i> est l'accusatif de <i>ich</i>. <i>Einladen</i> est séparable : <i>ein</i> va à la fin."
       },
       {
         q: "Remets les mots dans l'ordre.",
         tr: "Aujourd'hui, je la rencontre au café.",
-        why: "Le verbe reste en deuxième position et le pronom <i>sie</i> suit le sujet <i>ich</i>. <i>Ich treffe sie heute im Café</i> et <i>Im Café treffe ich sie heute</i> conviennent aussi."
+        why: "Le verbe reste en deuxième position ; le pronom complément suit normalement le pronom sujet (<i>Heute treffe ich sie im Café</i>), mais il peut aussi se placer en tête pour insister : <i>Sie treffe ich heute im Café</i> est également correct."
       },
       {
         q: "Traduis (tu parles de ton frère) : « Je le vois demain. »",
@@ -1268,7 +1268,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         tr: "Le sac à dos est à moi, et la veste me plaît beaucoup.",
-        why: "Dans <i>gehört</i>, l'accent tombe sur <i>-hört</i>, où le <b>ö</b> est long ([øː]) ; dans <i>Rucksack</i>, les deux voyelles sont brèves, et le <b>ck</b> signale le <b>a</b> bref."
+        why: "Dans <i>gehört</i>, l'accent tombe sur <i>-hört</i>, où le <b>ö</b> est long ([øː]) ; dans <i>Rucksack</i>, les deux voyelles sont brèves : <i>Ruck</i> + <i>Sack</i>, et chaque <b>ck</b> signale la voyelle brève qui le précède."
       }
     ]
   },
@@ -1366,7 +1366,7 @@ LINGUAI.addStrings("fr", {
         why: "<b>Ihm</b> : datif de <i>er</i>. L'accusatif <i>ihn</i> (la chose, <i>der Schlüssel</i>) vient d'abord."
       },
       {
-        q: "Complète la phrase.",
+        q: "Complète la phrase (deuxième blanc : du au datif).",
         tr: "La lettre est prête. Demain, je te l'envoie.",
         why: "<i>Der Brief</i> est masculin : <b>ihn</b> (accusatif) vient avant <b>dir</b> (datif). En français, « te l' » met le datif en premier : en allemand, l'ordre est inverse."
       },
@@ -1403,7 +1403,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         h: "mal et doch : de petits mots qui changent le ton",
-        p: "<em>Mal</em> et <em>doch</em> sont des <b>particules modales</b> : elles ne changent pas la grammaire, elles changent <b>le ton</b> de la phrase. <em>Komm mal her!</em> est plus léger que <em>Komm her!</em>, comme « viens un instant ». <em>Ruf mich doch an!</em> est une invitation amicale ou une insistance : « appelle-moi donc », « appelle-moi quand tu veux ». Elles se placent dans le champ central, en général après le pronom : <em>Ruf mich doch mal an!</em> Elles n'ont pas de traduction fixe."
+        p: "<em>Mal</em> et <em>doch</em> sont des <b>particules modales</b> : elles ne changent pas la grammaire, elles changent <b>le ton</b> de la phrase. <em>Komm mal her!</em> est moins catégorique et plus familier que <em>Komm her!</em> : « viens un peu par ici ». Ce <em>mal</em> ne veut pas dire « un instant ». <em>Ruf mich doch an!</em> peut se rendre par « appelle-moi donc » ou « allez, appelle-moi » ; le ton de <em>doch</em> dépend du contexte et de l'intonation. Elles se placent dans le champ central, en général après le pronom : <em>Ruf mich doch mal an!</em> Elles n'ont pas de traduction fixe."
       },
       {
         contrast: "En français aussi, le sujet disparaît à l'impératif (<em>viens, attends, appelle-moi</em>), et le pronom complément se rattache au verbe par un trait d'union (<em>appelle-moi, aide-moi</em>) ; en allemand, c'est un mot séparé après le verbe : <em>Ruf mich an! Hilf mir!</em> Pour <em>ihr</em>, la forme est celle du <em>vous</em> français (<em>Venez! → Kommt!</em>), mais ce <em>vous</em> peut aussi être le <em>Sie</em> de politesse, qui a sa propre forme (<em>Kommen Sie!</em>) : ici, nous ne voyons que <em>du</em> et <em>ihr</em>. Le verbe <em>être</em> est irrégulier dans les deux langues (<em>sois, soyez</em> ; <em>Sei, Seid</em>). À la forme négative, le français met <em>ne ... pas</em> autour du verbe (<em>ne viens pas trop tard</em>) ; l'allemand place <em>nicht</em> après : <em>Komm nicht zu spät!</em> Les particules modales n'ont pas de catégorie propre en français : on les rend par le ton ou par des mots comme <em>donc, un peu, dis, allez</em>."
@@ -1412,7 +1412,7 @@ LINGUAI.addStrings("fr", {
         trap: "N'ajoute pas <em>-st</em> : <em>Kommst!</em> n'est pas un impératif. Avec les verbes forts en <em>e → ie</em>, ne dis pas <em>Lese!</em> mais <em>Lies!</em>, et non <em>Nehm!</em> mais <em>Nimm!</em> Avec <em>sein</em>, la forme est <em>Sei vorsichtig!</em> Ne crois pas que <em>mal</em> et <em>doch</em> soient des mots vides : sans eux, la phrase reste correcte mais sonne plus sèche."
       },
       {
-        tip: "Quand tu donnes un ordre ou un conseil à un ami : pars de l'infinitif, enlève <em>-en</em>, ajoute <em>-e</em> si le radical se termine en <em>-t</em> ou <em>-d</em>, et mets <em>mal</em> ou <em>doch</em> pour adoucir : <em>Warte mal! Komm doch mit!</em>"
+        tip: "Quand tu donnes un ordre ou un conseil à un ami : pour un verbe régulier, pars de l'infinitif, enlève <em>-en</em>, ajoute <em>-e</em> si le radical se termine en <em>-t</em> ou <em>-d</em> ; les verbes irréguliers se retiennent à part (<em>Nimm! Lies! Sei!</em>). Mets ensuite <em>mal</em> ou <em>doch</em> pour adoucir : <em>Warte mal! Komm doch mit!</em>"
       }
     ],
     grammar: {
@@ -1430,7 +1430,7 @@ LINGUAI.addStrings("fr", {
         ]
       },
       examples: [
-        { tr: "Viens un instant ici !", note: "mal rend la demande plus légère" },
+        { tr: "Viens un peu par ici !", note: "mal rend la demande plus légère" },
         { tr: "Attends un moment !", note: "radical en -t : on ajoute -e" },
         { tr: "Appelle-moi donc !", note: "doch : invitation amicale ; an à la fin" },
         { tr: "Fais donc une pause !", note: "machen : radical Mach, sans -en" },
@@ -1550,7 +1550,7 @@ LINGUAI.addStrings("fr", {
         why: "Avec deux pronoms, l'accusatif (<i>es</i>) vient avant le datif (<i>dir</i>)."
       },
       {
-        q: "Traduis : « Demain, je lui donne le livre. »",
+        q: "Traduis : « Demain, je lui donne le livre. (lui = mon frère) »",
         why: "<i>Ich gebe ihm das Buch morgen</i> : le pronom datif <i>ihm</i> vient avant le nom <i>das Buch</i>. <i>Morgen gebe ich ihm das Buch</i> et <i>Ich gebe ihm morgen das Buch</i> conviennent aussi."
       },
       {

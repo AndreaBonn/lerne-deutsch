@@ -658,7 +658,7 @@ LINGUAI.addStrings("es", {
         p: "Un correo formal tiene una fórmula fija. Al principio: <strong>Sehr geehrte Frau Keller,</strong> a una mujer, <strong>Sehr geehrter Herr Weber,</strong> a un hombre, <strong>Sehr geehrte Damen und Herren,</strong> a varias personas o a un destinatario desconocido. Se escribe <em>Frau</em> o <em>Herr</em> y el apellido, sin el nombre de pila. Al final: <strong>Mit freundlichen Grüßen</strong> y debajo el nombre, sin coma después de la despedida. El cuerpo del mensaje es breve: <em>Vielen Dank für Ihre E-Mail. Im Anhang finden Sie die Datei. Könnten Sie mir den Termin bitte bestätigen?</em>"
       },
       {
-        contrast: "El español abre con <em>Estimada señora Keller:</em> (con dos puntos) o <em>Estimado señor Weber:</em> y cierra con <em>Atentamente,</em> o <em>Un cordial saludo</em>. El alemán usa <em>Sehr geehrte</em> (literalmente «muy honrada»), un adjetivo sin artículo: por eso lleva <strong>-e</strong> con <em>Frau</em> y <strong>-er</strong> con <em>Herr</em>. Después de la coma del saludo, la línea siguiente suele empezar con minúscula (<em>..., vielen Dank für ...</em>), salvo que la primera palabra sea un sustantivo. Para una mujer adulta se usa <em>Frau</em>, haya o no estado casada: <em>Fräulein</em> se considera anticuado. Con <em>du</em> se abre con <em>Liebe Anna,</em> o <em>Lieber Tim,</em> y se cierra con <em>Viele Grüße</em>."
+        contrast: "El español abre con <em>Estimada señora Keller:</em> (con dos puntos) o <em>Estimado señor Weber:</em> y cierra con <em>Atentamente,</em> o <em>Un cordial saludo</em>. El alemán usa <em>Sehr geehrte</em> (literalmente «muy honrada»), un adjetivo sin artículo: por eso lleva <strong>-e</strong> con <em>Frau</em> y <strong>-er</strong> con <em>Herr</em>. Después de la coma del saludo, el texto continúa con minúscula, salvo las palabras que siempre llevan mayúscula, como los sustantivos y las formas de cortesía <em>Sie</em>, <em>Ihnen</em>, <em>Ihr/Ihre</em>: <em>Sehr geehrte Frau Keller, / vielen Dank für Ihre Nachricht.</em> Para una mujer adulta se usa <em>Frau</em>, haya o no estado casada: <em>Fräulein</em> se considera anticuado. Con <em>du</em> se abre con <em>Liebe Anna,</em> o <em>Lieber Tim,</em> y se cierra con <em>Viele Grüße</em>."
       },
       {
         trap: "Las formas de cortesía llevan mayúscula en las cartas: <em>Sie</em>, <em>Ihr</em>, <em>Ihre</em> e <em>Ihnen</em> en los correos formales se escriben con mayúscula, y distinguen «usted, su» de <em>sie</em> e <em>ihre</em> (ella, ellos; su de ella, su de ellos). En español <em>usted</em> se escribe con minúscula (solo la abreviatura <em>Ud.</em> lleva mayúscula), así que aquí no hay que trasladar el hábito. <em>Mit freundlichen Grüßen</em> está en plural y en dativo: no se escribe «Mit freundliche Gruß»."
@@ -855,7 +855,7 @@ LINGUAI.addStrings("es", {
         why: "<i>Bei uns beginnt man um acht Uhr</i>. También valen <i>Man beginnt bei uns um acht Uhr</i> y <i>Um acht Uhr beginnt man bei uns</i>: el verbo se queda en segunda posición."
       },
       {
-        tr: "Aquí nos tuteamos.",
+        tr: "Aquí nos tuteamos. (usa man)",
         why: "<i>Hier duzt man sich</i>. También vale <i>Man duzt sich hier</i>. <i>Sich</i> es el reflexivo de <i>man</i>."
       },
       {
@@ -1095,7 +1095,7 @@ LINGUAI.addStrings("es", {
           ["gratulieren", "Ich gratuliere dir", "zum Geburtstag."],
           ["schenken", "Ich schenke meiner Schwester", "ein Buch."],
           ["danken", "Ich danke dir", "für das Geschenk."],
-          ["Geburtstag haben", "Ich habe", "am 3. Oktober Geburtstag."]
+          ["Geburtstag haben", "-", "Ich habe am 3. Oktober Geburtstag. (sin persona en dativo)"]
         ]
       },
       examples: [
@@ -1200,7 +1200,7 @@ LINGUAI.addStrings("es", {
         p: "Con un verbo separable <strong>zu va en medio</strong>, entre el prefijo y el verbo, y todo se escribe en una palabra: <em>mitkommen</em> → <em>Hast du Lust, mitzukommen?</em>; <em>einladen</em> → <em>Es ist schön, Freunde einzuladen.</em> La <strong>coma</strong> se pone cuando el grupo con <em>zu</em> está ampliado, es decir, tiene otras palabras además del infinitivo (<em>..., am Samstag zu meiner Party zu kommen</em>); tras un sustantivo como <em>Lust</em> o <em>Zeit</em> suele escribirse siempre. Tras un verbo, con el infinitivo simple (<em>Ich versuche zu schlafen</em>), la coma es facultativa."
       },
       {
-        contrast: "El español usa <em>de</em> + infinitivo: <em>¿tienes ganas de venir?</em>, <em>no tengo tiempo de cocinar</em>. El alemán tiene <em>zu</em> + infinitivo, que va siempre pegado al verbo y al final de la frase, mientras que en español <em>de venir</em> sigue enseguida al verbo principal. Como el español no tiene verbos con prefijo separable, <em>mitzukommen</em> (con <em>zu</em> dentro de la palabra) es nuevo: en español sería <em>venir con</em>, en dos palabras. Tras los verbos modales (<em>können, müssen, wollen</em>) en alemán <strong>no</strong> hay <em>zu</em>, igual que en español no hay <em>de</em> tras <em>poder</em> o <em>querer</em>: <em>Kannst du kommen?</em> (¿puedes venir?)."
+        contrast: "El español usa <em>de</em> + infinitivo: <em>¿tienes ganas de venir?</em>, <em>no tengo tiempo de cocinar</em>. El alemán tiene <em>zu</em> + infinitivo, y en español el infinitivo sigue a <em>ganas de</em> o <em>tiempo de</em>, mientras que en alemán los complementos suelen ir antes de <em>zu</em> + infinitivo: <em>Lust, am Samstag ins Kino zu gehen</em>. Como el español no tiene verbos con prefijo separable, <em>mitzukommen</em> (con <em>zu</em> dentro de la palabra) es nuevo: en español sería <em>venir con</em>, en dos palabras. Tras los verbos modales (<em>können, müssen, wollen</em>) en alemán <strong>no</strong> hay <em>zu</em>, igual que en español no hay <em>de</em> tras <em>poder</em> o <em>querer</em>: <em>Kannst du kommen?</em> (¿puedes venir?)."
       },
       {
         trap: "No se escribe «zu mitkommen» ni «mit zu kommen»: la forma es <em>mitzukommen</em>, en una palabra. Y no se dice «Hast du Lust, kommen?»: hace falta <em>zu</em>, <em>Hast du Lust, zu kommen?</em>. Tras un modal, en cambio, falta <em>zu</em>: <em>Ich kann kommen</em>, no «Ich kann zu kommen»."
@@ -1299,7 +1299,7 @@ LINGUAI.addStrings("es", {
       },
       {
         tr: "¿Tienes ganas de venir a mi fiesta el sábado? Por desgracia no tengo tiempo, ¡pero gracias por la invitación!",
-        why: "En <i>Einladung</i> la <b>ei</b> es [aɪ]; en <i>Samstag</i> la <b>s</b> inicial es sonora [z]; en <i>besuchen</i> la <b>ch</b> tras <b>u</b> es [x] y la <b>s</b> entre vocales es sonora [z]."
+        why: "En <i>Einladung</i> la <b>ei</b> es [aɪ]; en <i>Samstag</i> la <b>s</b> inicial es sonora [z]; en <i>kommen</i> la <b>o</b> es breve y la <b>mm</b> se lee como una sola [m]."
       },
       {
         tr: "¿Tienes ganas de venir conmigo al cine?",
@@ -1405,7 +1405,7 @@ LINGUAI.addStrings("es", {
         why: "<i>In Österreich sagt man oft Servus</i>. También valen <i>Man sagt in Österreich oft Servus</i>, <i>Oft sagt man in Österreich Servus</i>, <i>Man sagt oft in Österreich Servus</i> y <i>Servus sagt man in Österreich oft</i>."
       },
       {
-        tr: "En nuestra casa se dice a menudo Hallo.",
+        tr: "En nuestra casa se dice a menudo Hallo. (usa bei uns)",
         why: "<i>Bei uns sagt man oft Hallo</i>. También valen <i>Man sagt bei uns oft Hallo</i>, <i>Oft sagt man bei uns Hallo</i>, <i>Man sagt oft bei uns Hallo</i> y <i>Hallo sagt man bei uns oft</i>."
       },
       {
@@ -1441,7 +1441,7 @@ LINGUAI.addStrings("es", {
         p: "Algunos adverbios dicen algo sobre <strong>toda la frase</strong>: <strong>normalerweise</strong> (normalmente), <strong>leider</strong> (por desgracia), <strong>hoffentlich</strong> (ojalá, espero que), <strong>vielleicht</strong> (quizá). Pueden abrir la frase, y entonces el verbo queda en <strong>segunda posición</strong> y el sujeto pasa detrás: <em>Normalerweise feiere ich meinen Geburtstag mit Freunden. Leider habe ich am Samstag keine Zeit. Hoffentlich kommst du zur Party. Vielleicht kommt Tim später.</em> Dentro de la frase suelen ir después del verbo: <em>Ich habe leider keine Zeit.</em>"
       },
       {
-        contrast: "El español forma muchos adverbios con <em>-mente</em> (<em>lentamente, rápidamente</em>) o usa el adjetivo en masculino (<em>habla alto</em>, <em>conduce rápido</em>); el alemán usa casi siempre el adjetivo tal cual: <em>langsam</em> es a la vez «lento» y «lentamente». Hay otra diferencia en el orden de las palabras: en español <em>Lamentablemente no tengo tiempo</em> mantiene el sujeto antes del verbo, pero en alemán, si el adverbio abre la frase, el verbo va enseguida: <em>Leider habe ich keine Zeit</em>. Y <em>hoffentlich</em> es un adverbio por sí solo: el español construye la frase con <em>espero que</em> o con <em>ojalá</em> y subjuntivo (<em>ojalá vengas</em>), el alemán usa el indicativo y no pone <em>dass</em>: <em>Hoffentlich kommst du</em>."
+        contrast: "El español forma muchos adverbios con <em>-mente</em> (<em>lentamente, rápidamente</em>) o usa el adjetivo en masculino (<em>habla alto</em>, <em>conduce rápido</em>); el alemán usa casi siempre el adjetivo tal cual: <em>langsam</em> es a la vez «lento» y «lentamente». Hay otra diferencia en el orden de las palabras: en español se dice <em>Lamentablemente, yo no tengo tiempo</em>, pero el sujeto puede omitirse (<em>Lamentablemente no tengo tiempo</em>); en alemán el sujeto es obligatorio y, si el adverbio abre la frase, va detrás del verbo: <em>Leider habe ich keine Zeit</em>. Y <em>hoffentlich</em> es un adverbio por sí solo: el español construye la frase con <em>espero que</em> o con <em>ojalá</em> y subjuntivo (<em>ojalá vengas</em>), el alemán usa el indicativo y no pone <em>dass</em>: <em>Hoffentlich kommst du</em>."
       },
       {
         trap: "<em>normal</em> es un adjetivo (<em>Das ist normal</em>), mientras que «normalmente» se dice <em>normalerweise</em>. Cuando una de estas palabras abre la frase, el verbo va justo después: <em>Leider habe ich keine Zeit</em>, no «Leider ich habe keine Zeit». Y no añadas terminación al adverbio: <em>Er spricht langsam</em>, no «Er spricht langsame»."
@@ -1521,13 +1521,13 @@ LINGUAI.addStrings("es", {
         why: "<i>Leider habe ich keine Zeit</i>. También vale <i>Ich habe leider keine Zeit</i>."
       },
       {
-        q: "Completa la frase.",
+        q: "Completa la frase (1: despacio, 2: ojalá).",
         tr: "Habla despacio y yo lo entiendo bien. ¡Ojalá vengas a la fiesta!",
         why: "<i>Langsam</i> es el adjetivo sin terminación que hace de adverbio; <i>Hoffentlich</i> abre la frase y el verbo <i>kommst</i> queda en segunda posición."
       },
       {
         tr: "Normalmente celebro el cumpleaños en casa. Por desgracia el sábado no tengo tiempo, pero quizá lo celebremos más tarde.",
-        why: "En <i>normalerweise</i> la <b>w</b> es [v] y la <b>ei</b> es [aɪ]; en <i>vielleicht</i> la <b>v</b> es [f], la primera <b>i</b> es breve y sin acento, que cae en la segunda sílaba [fiˈlaɪçt], y la <b>ch</b> tras <b>ei</b> es [ç]; en <i>später</i> la <b>sp</b> inicial es [ʃp]."
+        why: "En <i>normalerweise</i> la <b>w</b> es [v] y la <b>ei</b> es [aɪ]; en <i>vielleicht</i> el acento cae en la segunda sílaba (<i>-leicht</i>), la <b>ei</b> es [aɪ] y la <b>ch</b> final es [ç]; en <i>später</i> la <b>sp</b> inicial es [ʃp]."
       },
       {
         tr: "Ojalá vengas a la fiesta. Quizá lo celebremos más tarde.",

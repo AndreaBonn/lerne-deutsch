@@ -1053,13 +1053,13 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Il pronome all'accusativo al posto del nome",
-        p: "Per non ripetere un nome che è <b>oggetto diretto</b> si usa il pronome all'accusativo: <em>mich, dich, ihn, sie, es, uns, euch, sie, Sie</em>. Rispetto al nominativo cambiano <em>ich, du, er, wir, ihr</em>; <em>sie</em> ed <em>es</em> restano uguali. Il pronome segue il <b>genere del nome tedesco</b>, anche per le cose: <em>der Bruder → ihn</em>, <em>die Kollegin → sie</em>, <em>das Kind → es</em>, <em>der Schlüssel → ihn</em>. Nella frase principale neutra il pronome sta subito dopo il verbo coniugato: <em>Ich kenne ihn gut.</em> Se la frase comincia con un altro elemento, il pronome segue il soggetto: <em>Morgen sehe ich ihn.</em> In una subordinata sta dopo la congiunzione e il soggetto, prima del verbo in fondo: <em>..., weil ich ihn gut kenne.</em>"
+        p: "Per non ripetere un nome che è <b>oggetto diretto</b> si usa il pronome all'accusativo: <em>mich, dich, ihn, sie, es, uns, euch, sie, Sie</em>. Rispetto al nominativo cambiano <em>ich, du, er, wir, ihr</em>; <em>sie</em> ed <em>es</em> restano uguali. Il pronome segue il <b>genere del nome tedesco</b>, anche per le cose: <em>der Bruder → ihn</em>, <em>die Kollegin → sie</em>, <em>das Kind → es</em>, <em>der Schlüssel → ihn</em>. Nella frase principale neutra il pronome sta subito dopo il verbo coniugato: <em>Ich kenne ihn gut.</em> Se la frase comincia con un altro elemento, e il soggetto è un pronome, il pronome oggetto lo segue: <em>Morgen sehe ich ihn.</em> Se il soggetto è un nome, il pronome oggetto di norma lo precede: <em>Morgen sieht ihn mein Bruder.</em> In una subordinata con soggetto pronominale sta dopo la congiunzione e il soggetto, prima del verbo in fondo: <em>..., weil ich ihn gut kenne.</em> Con un soggetto nominale il pronome viene prima: <em>..., weil ihn mein Bruder kennt.</em>"
       },
       {
         contrast: "In italiano il pronome atono sta <b>prima</b> del verbo (<em>lo vedo, la conosco</em>); in tedesco è una parola a sé e sta dopo il verbo: <em>Ich sehe ihn.</em> Inoltre il genere segue la parola tedesca, non quella italiana: <em>il giornale</em> è maschile (<em>lo leggo</em>), ma <em>die Zeitung</em> è femminile, quindi <em>Ich lese sie</em>. Al contrario <em>la chiave</em> è femminile (<em>la vedo</em>), ma <em>der Schlüssel</em> è maschile: <em>Ich sehe ihn nicht</em>."
       },
       {
-        trap: "<em>Sie</em> può voler dire «lei», «loro», «la» o «le»: lo capisci dal verbo e dal contesto (<em>Ich sehe sie</em>, da solo, è ambiguo). Con l'iniziale maiuscola è la forma di cortesia: <em>Ich kenne Sie</em>. E non confondere <em>ihn</em> (accusativo) con <em>ihm</em> (dativo): <em>Ich sehe ihm</em> è sbagliato, perché <em>sehen</em> vuole l'accusativo."
+        trap: "<em>Sie</em> può voler dire «lei», «loro», «la», «le» o «li»: lo capisci dal verbo e dal contesto (<em>Ich sehe sie</em>, da solo, è ambiguo). Il tedesco non distingue il genere al plurale: <em>Ich sehe die Brüder → Ich sehe sie</em> = «Vedo i fratelli → Li vedo». Dentro la frase l'iniziale maiuscola indica la forma di cortesia: <em>Ich kenne Sie</em>. A inizio frase la maiuscola c'è sempre, quindi decidono contesto e accordo del verbo (<em>Sie kommt</em> = lei viene, <em>Sie kommen</em> = loro vengono o Lei viene). E non confondere <em>ihn</em> (accusativo) con <em>ihm</em> (dativo): <em>Ich sehe ihm</em> è sbagliato, perché <em>sehen</em> vuole l'accusativo."
       },
       {
         tip: "Prima di scrivere il pronome ripeti il nome tedesco con l'articolo: <em>der → ihn</em>, <em>die → sie</em>, <em>das → es</em>, <em>die</em> (plurale) <em>→ sie</em>. Il pronome per una persona è uguale a quello per una cosa dello stesso genere."
@@ -1136,14 +1136,14 @@ LINGUAI.addStrings("it", {
         why: "<b>Sie</b>: l'accusativo di <i>sie</i> (lei) è uguale al nominativo."
       },
       {
-        q: "Completa la frase.",
+        q: "Completa la frase (secondo spazio: ich, accusativo).",
         tr: "La mia collega è simpatica. La incontro spesso e a volte mi invita.",
         why: "<i>Sie</i> è l'accusativo per <i>die Kollegin</i>; <i>mich</i> è l'accusativo di <i>ich</i>. <i>Einladen</i> è separabile: <i>ein</i> va in fondo."
       },
       {
         q: "Metti in ordine le parole.",
         tr: "Oggi la incontro al caffè.",
-        why: "Il verbo resta in seconda posizione e il pronome <i>sie</i> segue il soggetto <i>ich</i>. Vanno bene anche <i>Ich treffe sie heute im Café</i> e <i>Im Café treffe ich sie heute</i>."
+        why: "Il verbo resta in seconda posizione e il pronome <i>sie</i> segue il soggetto <i>ich</i>. Vanno bene anche <i>Ich treffe sie heute im Café</i> e <i>Im Café treffe ich sie heute</i>. Il pronome complemento può stare anche in prima posizione per enfasi: <i>Sie treffe ich heute im Café</i> è corretto, con il verbo sempre al secondo posto."
       },
       {
         q: "Traduci (parli di tuo fratello): «Lo vedo domani.»",
@@ -1268,7 +1268,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Lo zaino è mio, e la giacca mi piace molto.",
-        why: "In <i>gehört</i> l'accento cade su <i>-hört</i>, dove la <b>ö</b> è lunga ([øː]); in <i>Rucksack</i> entrambe le vocali sono brevi, e la <b>ck</b> segnala la <b>a</b> breve."
+        why: "In <i>gehört</i> l'accento cade su <i>-hört</i>, dove la <b>ö</b> è lunga ([øː]); in <i>Rucksack</i> entrambe le vocali sono brevi: <i>Ruck</i> + <i>Sack</i>, e ogni <b>ck</b> segnala la vocale breve che lo precede."
       }
     ]
   },
@@ -1366,7 +1366,7 @@ LINGUAI.addStrings("it", {
         why: "<b>Ihm</b>: dativo di <i>er</i>. L'accusativo <i>ihn</i> (la cosa, <i>der Schlüssel</i>) viene prima."
       },
       {
-        q: "Completa la frase.",
+        q: "Completa la frase (secondo spazio: du, dativo).",
         tr: "La lettera è pronta. Domani te la mando.",
         why: "<i>Der Brief</i> è maschile: <b>ihn</b> (accusativo) viene prima di <b>dir</b> (dativo). In italiano «la lettera» è femminile (<i>te la</i>) e il dativo viene prima: l'ordine è opposto."
       },
@@ -1406,13 +1406,13 @@ LINGUAI.addStrings("it", {
         p: "<em>Mal</em> e <em>doch</em> sono <b>particelle modali</b>: non cambiano la grammatica, cambiano <b>come suona</b> la frase. <em>Komm mal her!</em> è più leggero di <em>Komm her!</em>, come «dai, vieni un attimo». <em>Ruf mich doch an!</em> è un invito amichevole o un'insistenza: «chiamami pure», «dai, chiamami». Stanno nel campo centrale, di norma dopo il pronome: <em>Ruf mich doch mal an!</em> Non hanno una traduzione fissa."
       },
       {
-        contrast: "L'italiano attacca il pronome all'imperativo (<em>chiamami, dimmi, aiutami</em>); in tedesco il pronome è una parola separata dopo il verbo: <em>Ruf mich an! Sag mir! Hilf mir!</em> Per il negativo con tu l'italiano usa l'infinito (<em>non venire</em>); il tedesco usa lo stesso imperativo con <em>nicht</em>: <em>Komm nicht zu spät!</em> Le particelle modali in italiano non hanno una categoria a sé: si rendono con il tono o con parole come <em>dai, pure, un attimo</em>."
+        contrast: "L'italiano attacca il pronome all'imperativo (<em>chiamami, dimmi, aiutami</em>); in tedesco il pronome è una parola separata dopo il verbo: <em>Ruf mich an! Sag es mir! Hilf mir!</em> Per il negativo con tu l'italiano usa l'infinito (<em>non venire</em>); il tedesco usa lo stesso imperativo con <em>nicht</em>: <em>Komm nicht zu spät!</em> Le particelle modali in italiano non hanno una categoria a sé: si rendono con il tono o con parole come <em>dai, pure, un attimo</em>."
       },
       {
         trap: "Non aggiungere <em>-st</em>: <em>Kommst!</em> non è un imperativo. Con i verbi forti con <em>e → ie</em> non dire <em>Lese!</em> ma <em>Lies!</em>, e non <em>Nehm!</em> ma <em>Nimm!</em> Con <em>sein</em> la forma è <em>Sei vorsichtig!</em> Non pensare che <em>mal</em> e <em>doch</em> siano parole vuote: tolte, la frase resta corretta ma suona più secca."
       },
       {
-        tip: "Quando dai un ordine o un consiglio a un amico: parti dall'infinito, togli <em>-en</em>, aggiungi <em>-e</em> se il tema finisce in <em>-t</em> o <em>-d</em>, e metti <em>mal</em> o <em>doch</em> per ammorbidire: <em>Warte mal! Komm doch mit!</em>"
+        tip: "Quando dai un ordine o un consiglio a un amico, con un verbo regolare: parti dall'infinito, togli <em>-en</em>, aggiungi <em>-e</em> se il tema finisce in <em>-t</em> o <em>-d</em>, e metti <em>mal</em> o <em>doch</em> per ammorbidire: <em>Warte mal! Komm doch mit!</em> I verbi con cambio vocalico e <em>sein</em> fanno eccezione: <em>Nimm! Lies! Sei!</em>"
       }
     ],
     grammar: {
@@ -1497,7 +1497,7 @@ LINGUAI.addStrings("it", {
         why: "In <i>Sag</i> la <b>g</b> finale si legge di norma [k]; in <i>zusammen</i> la <b>z</b> è [ts] e la <b>s</b> davanti a vocale è di norma sonora."
       },
       {
-        tr: "Passa una volta da me, dai, e prenditi un po' di tempo!",
+        tr: "Dai, passa da me e prenditi un momento di tempo!",
         why: "In <i>vorbei</i> la <b>v</b> si legge [f]; in <i>Moment</i> l'accento cade sulla seconda sillaba."
       }
     ]
@@ -1932,7 +1932,7 @@ LINGUAI.addStrings("it", {
     objectives: [
       "introdurre un contenuto con dass dopo ich finde, ich glaube, ich weiß, der Arzt sagt",
       "mettere il verbo coniugato in fondo nella frase con dass",
-      "collegare causa e conseguenza con deshalb, che porta il verbo subito dopo",
+      "collegare causa e conseguenza con deshalb, che in prima posizione porta il verbo subito dopo",
       "parlare di sport, alimentazione, sonno e abitudini"
     ],
     theory: [
@@ -1942,7 +1942,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "deshalb: la conseguenza, con inversione",
-        p: "<b>Deshalb</b> («per questo») collega due frasi principali e occupa la <b>prima posizione</b> della seconda: il verbo viene subito dopo e il soggetto lo segue. <em>Ich schlafe schlecht. Deshalb bin ich müde.</em> Sinonimi: <em>deswegen, darum</em>. Si può mettere anche dopo una virgola: <em>Ich schlafe schlecht, deshalb bin ich müde.</em>"
+        p: "<b>Deshalb</b> («per questo») collega due frasi principali e di solito occupa la <b>prima posizione</b> della seconda (non è obbligatorio: <em>Ich bin deshalb müde</em> è corretto); quando sta in testa, il verbo coniugato viene subito dopo e il soggetto lo segue. <em>Ich schlafe schlecht. Deshalb bin ich müde.</em> Sinonimi: <em>deswegen, darum</em>. Si può mettere anche dopo una virgola: <em>Ich schlafe schlecht, deshalb bin ich müde.</em>"
       },
       {
         contrast: "In italiano «penso che» regge il <b>congiuntivo</b> («penso che sia importante»), mentre «so che» regge l'indicativo («so che è importante»); in tedesco entrambe le frasi con <em>dass</em> usano l'indicativo: <em>Ich denke, dass Sport wichtig <b>ist</b></em>, <em>Ich weiß, dass Sport wichtig <b>ist</b></em>. In italiano «che» non vuole la virgola davanti; in tedesco la virgola prima di <em>dass</em> è obbligatoria. E «per questo», «quindi» non cambiano l'ordine in italiano (<em>dormo male, quindi sono stanco</em>), mentre <em>deshalb</em> inverte soggetto e verbo: <em>Deshalb bin ich müde</em>."
@@ -1951,19 +1951,19 @@ LINGUAI.addStrings("it", {
         trap: "<em>Deshalb</em> non manda il verbo in fondo come fa <em>dass</em>: <em>Deshalb ich bin müde</em> e <em>Deshalb ich müde bin</em> sono sbagliati. E con <em>dass</em> il verbo non resta in seconda posizione: <em>Ich finde, dass Sport ist wichtig</em> è sbagliato. Non confondere <em>dass</em> (congiunzione) con <em>das</em> (articolo o pronome)."
       },
       {
-        tip: "Davanti a <em>dass</em> metti la virgola e porta il verbo in fondo; dopo <em>deshalb</em> scrivi subito il verbo. Prima di scrivere chiediti: la frase comincia con una congiunzione (<em>dass</em>, verbo in fondo) o con un avverbio (<em>deshalb</em>, verbo subito)?"
+        tip: "Davanti a <em>dass</em> metti la virgola e porta il verbo in fondo; se <em>deshalb</em> apre la frase, scrivi subito il verbo. Prima di scrivere chiediti: la frase comincia con una congiunzione (<em>dass</em>, verbo in fondo) o con un avverbio come <em>deshalb</em> (verbo subito)?"
       }
     ],
     grammar: {
       title: "dass e deshalb",
-      note: "<b>dass</b>: il verbo coniugato va in fondo. <b>deshalb</b>: il verbo viene subito dopo, il soggetto lo segue.",
+      note: "<b>dass</b>: il verbo coniugato va in fondo. <b>deshalb</b> in prima posizione: il verbo viene subito dopo, il soggetto lo segue.",
       table: {
         head: ["elemento", "posizione del verbo", "esempio"],
         rows: [
           ["frase principale", "seconda posizione", "Sport ist wichtig."],
           ["dass", "in fondo", "Ich finde, dass Sport wichtig ist."],
           ["dass con modale", "il modale chiude", "..., dass ich mehr trinken soll."],
-          ["deshalb", "subito dopo deshalb", "Ich schlafe schlecht. Deshalb bin ich müde."]
+          ["deshalb", "subito dopo deshalb, se apre la frase", "Ich schlafe schlecht. Deshalb bin ich müde."]
         ]
       },
       examples: [
@@ -2006,7 +2006,7 @@ LINGUAI.addStrings("it", {
           "Ich schlafe schlecht. Deshalb bin ich müde.",
           "Ich schlafe schlecht. Deshalb ich müde bin."
         ],
-        why: "Dopo <b>deshalb</b> il verbo viene subito, poi il soggetto: <i>Deshalb bin ich müde</i>. <i>Deshalb</i> non manda il verbo in fondo."
+        why: "Con <b>deshalb</b> in prima posizione il verbo viene subito, poi il soggetto: <i>Deshalb bin ich müde</i>. <i>Deshalb</i> non manda il verbo in fondo."
       },
       {
         q: "Completa: «Der Arzt sagt, ___ ich mehr Wasser trinken soll.» (che)",
@@ -2021,7 +2021,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa: «Ich bin oft müde. Deshalb ___ ich früh ins Bett.» (gehen, ich)",
         hint: "gehen, ich",
-        why: "<b>Gehe</b>: dopo <i>Deshalb</i> il verbo viene subito, poi <i>ich</i>."
+        why: "<b>Gehe</b>: con <i>Deshalb</i> in prima posizione il verbo viene subito, poi <i>ich</i>."
       },
       {
         q: "Completa la frase.",

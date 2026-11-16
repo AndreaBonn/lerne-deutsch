@@ -518,14 +518,14 @@ LINGUAI.addStrings("pl", {
   },
   "unit:a2-u06": {
     title: "W biurze",
-    grammarNote: "Könnten Sie ...? · pytania zależne z ob i zaimkiem pytajnym · list oficjalny · man · zuerst, dann, danach, außerdem"
+    grammarNote: "Könnten Sie ...? · pytania zależne z ob i wyrazem pytajnym · list oficjalny · man · zuerst, dann, danach, außerdem"
   },
   "lesson:a2-u06-l1": {
     theme: "Przez telefon",
     title: "Czy mógłby Pan do mnie oddzwonić?",
     objectives: [
       "zadzwonić i zostawić wiadomość z użyciem Könnten Sie ...?",
-      "zadać pytanie zależne z ob albo z zaimkiem pytajnym",
+      "zadać pytanie zależne z ob albo z wyrazem pytajnym",
       "przesunąć czasownik na koniec w zdaniu z ob, wann, wo i dass"
     ],
     theory: [
@@ -535,13 +535,13 @@ LINGUAI.addStrings("pl", {
       },
       {
         h: "Pytania zależne: ob i zaimek pytajny",
-        p: "Pytanie może wejść do środka innego zdania. Jeśli pytanie bezpośrednie jest <strong>rozstrzygnięcia</strong> (tak/nie, <em>Ist Herr Weber im Büro?</em>), pytanie zależne wprowadza <strong>ob</strong>; jeśli ma <strong>zaimek pytajny</strong> (<em>wann, wo, wer, wie, warum</em>), ten zaimek zostaje i otwiera zdanie podrzędne. W obu przypadkach odmieniony czasownik idzie <strong>na koniec</strong>, a przed zdaniem stoi przecinek: <em>Ich möchte wissen, ob Herr Weber heute im Büro ist. Ich weiß nicht, wann die Besprechung beginnt. Könnten Sie mir sagen, wo Frau Keller ist?</em> Przy czasowniku rozdzielnie złożonym przedrostek łączy się z czasownikiem: <em>Ich weiß nicht, wann er anruft.</em> To samo dotyczy <strong>dass</strong>: <em>Könnten Sie ihr sagen, dass ich morgen wieder anrufe?</em>"
+        p: "Pytanie może wejść do środka innego zdania. Jeśli pytanie bezpośrednie jest <strong>rozstrzygnięcia</strong> (tak/nie, <em>Ist Herr Weber im Büro?</em>), pytanie zależne wprowadza <strong>ob</strong>; jeśli ma <strong>wyraz pytajny</strong> (<em>wann, wo, wer, wie, warum</em>), ten wyraz zostaje i otwiera zdanie podrzędne. W obu przypadkach odmieniony czasownik idzie <strong>na koniec</strong>, a przed zdaniem stoi przecinek: <em>Ich möchte wissen, ob Herr Weber heute im Büro ist. Ich weiß nicht, wann die Besprechung beginnt. Könnten Sie mir sagen, wo Frau Keller ist?</em> Przy czasowniku rozdzielnie złożonym przedrostek łączy się z czasownikiem: <em>Ich weiß nicht, wann er anruft.</em> To samo dotyczy <strong>dass</strong>: <em>Könnten Sie ihr sagen, dass ich morgen wieder anrufe?</em>"
       },
       {
         contrast: "Przecinek przed zdaniem zależnym jest w polskim tak samo obowiązkowy jak w niemieckim: «Nie wiem, kiedy zaczyna się zebranie», «Nie wiem, czy pan Weber jest w biurze», «Powiedz jej, że zadzwonię jutro». Polskie <em>czy</em> odpowiada <em>ob</em>, a <em>jeśli</em> odpowiada <em>wenn</em>, więc tu nie ma pułapki: oba języki je rozróżniają. Różnica jest w szyku. Po polsku szyk jest swobodny i czasownik nie ma stałego miejsca (<em>kiedy zaczyna się zebranie</em>, <em>kiedy zebranie się zaczyna</em>), a w niemieckim zdaniu podrzędnym odmieniony czasownik zawsze stoi na końcu: <em>Ich weiß nicht, wann die Besprechung beginnt</em>, nie «wann beginnt die Besprechung». Druga różnica to grzeczność: polski mówi «Czy mógłby Pan ...?» albo «Czy mogłaby Pani ...?» i forma zależy od rodzaju adresata, a w niemieckim <em>Könnten Sie</em> jest jedno dla wszystkich, z czasownikiem w 3. osobie liczby <strong>mnogiej</strong>."
       },
       {
-        trap: "Po <em>ob</em> nie używa się <em>wenn</em>: <em>Ich weiß nicht, ob er kommt</em>. Przecinek przed <em>ob</em>, <em>dass</em> i zaimkiem pytajnym jest obowiązkowy. Po <em>Könnten Sie mir sagen</em> pytanie zależne nie jest już pytaniem bezpośrednim: <em>Könnten Sie mir sagen, wo Frau Keller ist?</em>, nie «wo ist Frau Keller». Uwaga na szyk po polsku: bezokolicznik stoi zwykle zaraz po «mógłby» (<em>oddzwonić</em>), a po niemiecku idzie na koniec, po wszystkich dopełnieniach."
+        trap: "W pytaniach zależnych typu tak/nie używa się <em>ob</em>, a nie <em>wenn</em>: <em>Ich weiß nicht, ob er kommt</em>. Przecinek przed <em>ob</em>, <em>dass</em> i wyrazem pytajnym jest obowiązkowy. Po <em>Könnten Sie mir sagen</em> pytanie zależne nie jest już pytaniem bezpośrednim: <em>Könnten Sie mir sagen, wo Frau Keller ist?</em>, nie «wo ist Frau Keller». Po polsku bezokolicznik nie ma stałego miejsca na końcu zdania: <em>Czy mógłby Pan do mnie oddzwonić?</em> W niemieckim po <em>Könnten Sie</em> bezokolicznik zamyka zdanie: <em>Könnten Sie mich bitte zurückrufen?</em>"
       },
       {
         tip: "Inne przydatne zwroty: <em>Die Leitung ist besetzt</em> (linia jest zajęta), <em>Ich erreiche ihn nicht</em> (nie mogę się z nim skontaktować), <em>Wie ist Ihre Telefonnummer?</em>. W formie grzecznościowej zostajesz przy <em>Sie</em> od początku do końca rozmowy."
@@ -603,7 +603,7 @@ LINGUAI.addStrings("pl", {
       {
         q: "Uzupełnij: «Ich möchte wissen, ___ die Besprechung beginnt.» (kiedy)",
         hint: "zaimek pytajny",
-        why: "<b>wann</b> jest zaimkiem pytajnym i zostaje: <i>..., wann die Besprechung beginnt</i>."
+        why: "<b>wann</b> jest wyrazem pytajnym i zostaje: <i>..., wann die Besprechung beginnt</i>."
       },
       {
         q: "Dopasuj każde słowo do jego znaczenia.",
@@ -761,7 +761,7 @@ LINGUAI.addStrings("pl", {
     ],
     theory: [
       {
-        h: "man: ktokolwiek",
+        h: "man: podmiot nieokreślony",
         p: "<strong>man</strong> oznacza dowolną osobę, ludzi w ogóle, i służy do opisywania zasad i zwyczajów: <em>Bei uns beginnt man um acht Uhr. Hier duzt man sich. In der Mittagspause isst man in der Kantine.</em> Czasownik stoi w <strong>3. osobie liczby pojedynczej</strong>, choć sens jest zbiorowy. Czasowniki ze zmianą samogłoski ją zachowują: <em>man isst, man liest, man fährt, man spricht</em>. Z czasownikami modalnymi: <em>man muss, man darf, man kann</em>: <em>Hier darf man nicht rauchen. Man muss pünktlich sein.</em> Częste pytanie: <em>Wie sagt man das auf Deutsch?</em>"
       },
       {
@@ -926,7 +926,7 @@ LINGUAI.addStrings("pl", {
       "punkt",
       "proponować",
       "zgadzać się, przyznawać rację",
-      "zgodny",
+      "zgadzający się (einverstanden sein = zgadzać się)",
       "najpierw, przede wszystkim",
       "po tym, następnie",
       "poza tym"
@@ -1000,7 +1000,7 @@ LINGUAI.addStrings("pl", {
     objectives: ["sprawdzić uprzejme prośby, pytania zależne, list oficjalny, man i spójniki kolejności"],
     theory: [
       {
-        p: "Dziesięć pytań o całej jednostce. Zaliczasz przy 70%. Nie zaglądaj do lekcji w trakcie odpowiadania: jeśli czegoś nie pamiętasz, lepiej wrócić i powtórzyć."
+        p: "Dziesięć pytań z całej jednostki. Zaliczasz przy 70%. Nie zaglądaj do lekcji w trakcie odpowiadania: jeśli czegoś nie pamiętasz, lepiej wrócić i powtórzyć."
       }
     ],
     exercises: [
@@ -1074,10 +1074,10 @@ LINGUAI.addStrings("pl", {
       },
       {
         h: "Daty: am + liczebnik porządkowy",
-        p: "Datę podaje się z <strong>am</strong> i <strong>liczebnikiem porządkowym</strong>. Pisze się ją z kropką: <em>am 3. Oktober</em>, a czyta <em>am dritten Oktober</em>. Kropka po liczbie oznacza właśnie, że to liczebnik porządkowy. Do 19 dodaje się <em>-ten</em> (<em>am vierten, am siebten, am achten</em>), od 20 <em>-sten</em> (<em>am zwanzigsten, am dreißigsten</em>); <em>am zweiten</em> (2.) jest regularne; formy szczególne mają <em>am ersten</em> (1.) i <em>am dritten</em> (3.). Żeby powiedzieć, kiedy ma się urodziny: <em>Wann hast du Geburtstag? Am 3. Oktober.</em> albo <em>Ich habe am 3. Oktober Geburtstag.</em>"
+        p: "Datę podaje się z <strong>am</strong> i <strong>liczebnikiem porządkowym</strong>. Pisze się ją z kropką: <em>am 3. Oktober</em>, a czyta <em>am dritten Oktober</em>. Kropka po liczbie oznacza właśnie, że to liczebnik porządkowy. Do 19 dodaje się <em>-t-</em> i końcówkę (<em>am vierten, am zwölften</em>), od 20 <em>-st-</em> i końcówkę (<em>am zwanzigsten, am dreißigsten</em>); <em>am zweiten</em> (2.) jest regularne; formy szczególne mają <em>am ersten</em> (1.), <em>am dritten</em> (3.), <em>am siebten</em> (7.) i <em>am achten</em> (8.). Żeby powiedzieć, kiedy ma się urodziny: <em>Wann hast du Geburtstag? Am 3. Oktober.</em> albo <em>Ich habe am 3. Oktober Geburtstag.</em>"
       },
       {
-        contrast: "Po polsku <em>dziękować</em>, <em>gratulować</em> i <em>podarować</em> też wymagają celownika (<em>dziękuję ci</em>, <em>gratuluję ci</em>, <em>podaruję ci</em>), więc ten wzorzec jest ci znany; i podobnie jak <em>dziękuję za prezent</em> daje <em>danken für</em>, tak <em>für</em> + biernik pasuje do powodu podziękowania. Różnica jest w okazji: po polsku stoi ona w dopełniaczu albo z <em>z okazji</em> (<em>gratuluję urodzin</em>, <em>z okazji urodzin</em>), a po niemiecku to <em>zu</em> + celownik, i w tym <em>zum</em> / <em>zur</em> trzeba znać rodzaj niemieckiego rzeczownika. Rodzaj często nie zgadza się z polskim odpowiednikiem: <em>die Hochzeit</em> jest żeńskie, a polski <em>ślub</em> męski. Datę po polsku zapisuje się liczebnikiem głównym i miesiącem w dopełniaczu (<em>3 października</em>), a po niemiecku jest <em>am</em>, liczebnik porządkowy z kropką i miesiąc bez zmiany końcówki: <em>am 3. Oktober</em>."
+        contrast: "Po polsku <em>dziękować</em>, <em>gratulować</em> i <em>podarować</em> też wymagają celownika (<em>dziękuję ci</em>, <em>gratuluję ci</em>, <em>podaruję ci</em>), więc ten wzorzec jest ci znany; i podobnie jak <em>dziękuję za prezent</em> daje <em>danken für</em>, tak <em>für</em> + biernik pasuje do powodu podziękowania. Różnica jest w okazji: po polsku stoi ona w dopełniaczu albo z <em>z okazji</em> (<em>z okazji urodzin</em>), a po niemiecku to <em>zu</em> + celownik (<em>gratulieren</em> służy też do życzeń urodzinowych, podczas gdy po polsku zwykle odróżnia się <em>gratulować</em> osiągnięć od <em>składać życzenia</em>: <em>składam ci życzenia urodzinowe</em>), i w tym <em>zum</em> / <em>zur</em> trzeba znać rodzaj niemieckiego rzeczownika. Rodzaj często nie zgadza się z polskim odpowiednikiem: <em>die Hochzeit</em> jest żeńskie, a polski <em>ślub</em> męski. Po polsku data nie ma przyimka, a miesiąc stoi w dopełniaczu (<em>3 października</em>, czytane jako <em>trzeciego października</em>); po niemiecku jest <em>am</em>, kropka po liczbie i miesiąc bez zmiany końcówki: <em>am 3. Oktober</em>."
       },
       {
         trap: "<em>Zum</em> czy <em>zur</em> zależy od rodzaju <strong>niemieckiego</strong> rzeczownika, nie polskiego: <em>der Geburtstag</em> → <em>zum</em>, <em>die Hochzeit</em> → <em>zur</em>, <em>das Fest</em> → <em>zum</em>. Polskie <em>urodziny</em> to liczba mnoga i nic ci tu nie podpowie. Okazja nie bierze <em>für</em> (choć po polsku jest <em>za</em> przy podziękowaniu) tylko <em>zu</em>: <em>zum Geburtstag</em>, nie «für Geburtstag». W dacie często brakuje kropki: <em>am 3 Oktober</em> wygląda jak liczebnik główny, a po niemiecku poprawny zapis to <em>am 3. Oktober</em>."
@@ -1099,7 +1099,7 @@ LINGUAI.addStrings("pl", {
         ]
       },
       examples: [
-        { tr: "Gratuluję ci urodzin.", note: "gratulieren + dir; zum = zu dem" },
+        { tr: "Składam ci życzenia urodzinowe.", note: "gratulieren + dir; zum = zu dem" },
         { tr: "Wszystkiego najlepszego z okazji urodzin!", note: "stała formuła, bez czasownika" },
         { tr: "Gratulujemy wam ślubu.", note: "zur = zu der (die Hochzeit jest rodzaju żeńskiego)" },
         { tr: "Moje urodziny są 3 października.", note: "am + liczebnik porządkowy z kropką" },
@@ -1116,7 +1116,7 @@ LINGUAI.addStrings("pl", {
       "podarować",
       "dziękować",
       "święto, uroczystość",
-      "tort, ciasto",
+      "ciasto",
       "świętować",
       "przyjęcie (wśród przyjaciół)",
       "świeczka"
@@ -1169,15 +1169,15 @@ LINGUAI.addStrings("pl", {
         pairs: ["urodziny", "prezent", "ślub", "życzenia"]
       },
       {
-        tr: "Gratuluję Timowi urodzin. (czasownik: gratulieren)",
+        tr: "Składam Timowi życzenia urodzinowe. (czasownik: gratulieren)",
         why: "<i>Ich gratuliere Tim zum Geburtstag</i>. Pasują też <i>Zum Geburtstag gratuliere ich Tim</i> i <i>Ich gratuliere Tim zu seinem Geburtstag</i>."
       },
       {
-        tr: "Wszystkiego najlepszego, Anno! Gratuluję ci i daję ci w prezencie książkę.",
+        tr: "Wszystkiego najlepszego, Anno! Składam ci życzenia urodzinowe i daję ci w prezencie książkę.",
         why: "W <i>Glückwunsch</i> <b>ü</b> jest krótkie [ʏ], <b>ck</b> czyta się [k], a <b>sch</b> to [ʃ]; w <i>herzlichen</i> <b>z</b> to [ts], a <b>ch</b> po <b>i</b> to [ç]; w <i>gratuliere</i> <b>ie</b> to długie <b>i</b> [iː]."
       },
       {
-        tr: "Gratuluję mojej siostrze urodzin i daję jej w prezencie książkę.",
+        tr: "Składam mojej siostrze życzenia urodzinowe i daję jej w prezencie książkę.",
         why: "W <i>Schwester</i> <b>sch</b> to [ʃ], a <b>w</b> to [v]; w <i>Geburtstag</i> akcent pada na <b>bur</b>, a końcowe <b>g</b> czyta się [k]."
       }
     ]
@@ -1197,10 +1197,10 @@ LINGUAI.addStrings("pl", {
       },
       {
         h: "Czasowniki rozdzielnie złożone i przecinek",
-        p: "Przy czasowniku rozdzielnie złożonym <strong>zu stoi w środku</strong>, między przedrostkiem a czasownikiem, a całość pisze się razem: <em>mitkommen</em> → <em>Hast du Lust, mitzukommen?</em>; <em>einladen</em> → <em>Es ist schön, Freunde einzuladen.</em> <strong>Przecinek</strong> stawia się, gdy grupa z <em>zu</em> jest rozbudowana, czyli ma inne słowa oprócz bezokolicznika (<em>..., am Samstag zu meiner Party zu kommen</em>); po rzeczowniku takim jak <em>Lust</em> czy <em>Zeit</em> zazwyczaj pisze się go zawsze. Po czasowniku, przy samym bezokoliczniku (<em>Ich versuche zu schlafen</em>), przecinek jest dowolny."
+        p: "Przy czasowniku rozdzielnie złożonym <strong>zu stoi w środku</strong>, między przedrostkiem a czasownikiem, a całość pisze się razem: <em>mitkommen</em> → <em>Hast du Lust, mitzukommen?</em>; <em>einladen</em> → <em>Es ist schön, Freunde einzuladen.</em> <strong>Przecinek</strong> jest obowiązkowy, gdy grupa z <em>zu</em> zależy od rzeczownika takiego jak <em>Lust</em> czy <em>Zeit</em> (<em>Hast du Lust, mitzukommen?</em>) albo od wyrazu odsyłającego; w pozostałych przypadkach, np. po czasowniku przy samym bezokoliczniku (<em>Ich versuche zu schlafen</em>), przecinek jest często dowolny."
       },
       {
-        contrast: "Po polsku bezokolicznik stoi bez żadnej partykuły: <em>masz ochotę przyjść?</em>, <em>nie mam czasu gotować</em>. Po niemiecku przed bezokolicznikiem po <em>Lust haben</em> trzeba <em>zu</em>, które stoi bezpośrednio przed czasownikiem i na końcu zdania. Polski nie ma też czasowników z rozdzielnym przedrostkiem w niemieckim sensie: <em>przyjść z nami</em> to dwa osobne słowa, a <em>mitkommen</em> staje się w bezokoliczniku z <em>zu</em> jednym wyrazem, <em>mitzukommen</em>. Po czasownikach modalnych (<em>können, müssen, wollen</em>) po niemiecku <strong>nie</strong> ma <em>zu</em>, tak jak po polsku nie ma żadnej partykuły: <em>Kannst du kommen?</em> (możesz przyjść?)."
+        contrast: "Po polsku bezokolicznik stoi bez żadnej partykuły: <em>masz ochotę przyjść?</em>, <em>nie mam czasu gotować</em>. Po niemiecku przed bezokolicznikiem po <em>Lust haben</em> trzeba <em>zu</em>, które stoi bezpośrednio przed czasownikiem i na końcu zdania. Polski nie ma też czasowników z rozdzielnym przedrostkiem w niemieckim sensie: <em>mitzukommen</em> pisze się jako jedno słowo, a po polsku mówi się <em>przyjść z nami</em>. Po czasownikach modalnych (<em>können, müssen, wollen</em>) po niemiecku <strong>nie</strong> ma <em>zu</em>, tak jak po polsku nie ma żadnej partykuły: <em>Kannst du kommen?</em> (możesz przyjść?)."
       },
       {
         trap: "Nie pisze się «zu mitkommen» ani «mit zu kommen»: forma to <em>mitzukommen</em>, w jednym słowie. I nie mówi się «Hast du Lust, kommen?»: potrzebne jest <em>zu</em>, <em>Hast du Lust, zu kommen?</em>. Po czasowniku modalnym natomiast <em>zu</em> brakuje: <em>Ich kann kommen</em>, nie «Ich kann zu kommen». Polskie <em>masz ochotę przyjść</em> bez żadnej partykuły łatwo przenieść na niemiecki i zgubić <em>zu</em>."
@@ -1211,19 +1211,19 @@ LINGUAI.addStrings("pl", {
     ],
     grammar: {
       title: "zu + bezokolicznik",
-      note: "<b>zu</b> + bezokolicznik <b>na końcu</b>: <i>Ich habe Lust, ins Kino zu gehen.</i> Czasownik rozdzielnie złożony: <b>zu</b> w środku (<i>mitzukommen</i>). Grupa rozbudowana: <b>przecinek</b>. Po czasowniku modalnym nie ma <i>zu</i>.",
+      note: "<b>zu</b> + bezokolicznik <b>na końcu</b>: <i>Ich habe Lust, ins Kino zu gehen.</i> Czasownik rozdzielnie złożony: <b>zu</b> w środku (<i>mitzukommen</i>). Przecinek jest obowiązkowy, gdy grupa z <i>zu</i> zależy od rzeczownika (<i>Lust</i>, <i>Zeit</i>) lub wyrazu odsyłającego, a w innych przypadkach często dowolny. Po czasowniku modalnym nie ma <i>zu</i>.",
       table: {
         head: ["konstrukcja", "przykład", "uwaga"],
         rows: [
           ["Lust haben", "Ich habe Lust, ins Kino zu gehen.", "zu przed bezokolicznikiem, na końcu"],
-          ["keine Zeit haben", "Ich habe keine Zeit, am Samstag zu kommen.", "grupa rozbudowana: przecinek"],
+          ["keine Zeit haben", "Ich habe keine Zeit, am Samstag zu kommen.", "po rzeczowniku Zeit: przecinek obowiązkowy"],
           ["czasownik rozdzielny", "Hast du Lust, mitzukommen?", "zu w środku: mitzukommen"],
           ["czasownik modalny", "Kannst du kommen?", "bez zu"]
         ]
       },
       examples: [
-        { tr: "Masz ochotę przyjść też?", note: "mitkommen: zu w środku, mitzukommen" },
-        { tr: "Masz ochotę przyjść w sobotę na moje przyjęcie?", note: "grupa rozbudowana: przecinek po Lust" },
+        { tr: "Masz ochotę pójść z nami?", note: "mitkommen: zu w środku, mitzukommen" },
+        { tr: "Masz ochotę przyjść w sobotę na moje przyjęcie?", note: "po rzeczowniku Lust: przecinek obowiązkowy" },
         { tr: "Mam ochotę iść do kina.", note: "zu gehen: zu przed bezokolicznikiem" },
         { tr: "Nie mam czasu przyjść w sobotę.", note: "keine Zeit, ... zu kommen" },
         { tr: "Miło jest zapraszać przyjaciół.", note: "einladen: zu w środku, einzuladen" },
@@ -1234,7 +1234,7 @@ LINGUAI.addStrings("pl", {
       "zaproszenie",
       "zapraszać",
       "ochota",
-      "przyjść też, przyjść razem z kimś",
+      "pójść/przyjść razem z kimś",
       "odwołać, odmówić",
       "przyjąć (zaproszenie)",
       "pomysł",
@@ -1246,7 +1246,7 @@ LINGUAI.addStrings("pl", {
     ],
     exercises: [
       {
-        q: "Jak zaprosisz przyjaciela, żeby przyszedł razem z tobą?",
+        q: "Jak powiesz po niemiecku: «Masz ochotę pójść z nami?»",
         opts: [
           "Hast du Lust, mitzukommen?",
           "Hast du Lust, zu mitkommen?",
@@ -1290,10 +1290,10 @@ LINGUAI.addStrings("pl", {
             tr: "Podziękuj za zaproszenie i powiedz, że chętnie przyjdziesz.",
             answerTr: "Dziękuję za zaproszenie! Chętnie przyjdę."
           },
-          { tr: "Świetnie! Możesz przynieść tort?" },
+          { tr: "Świetnie! Możesz przynieść ciasto?" },
           {
-            tr: "Odpowiedz, że tak, i powiedz, że masz ochotę upiec tort.",
-            answerTr: "Tak, chętnie. Mam ochotę upiec tort."
+            tr: "Odpowiedz, że tak, i powiedz, że masz ochotę upiec ciasto.",
+            answerTr: "Tak, chętnie. Mam ochotę upiec ciasto."
           }
         ]
       },
@@ -1360,7 +1360,7 @@ LINGUAI.addStrings("pl", {
     vocab: [
       "zwyczaj, obyczaj",
       "tradycja",
-      "kraj, naród",
+      "kraj, państwo",
       "region",
       "dzień świąteczny",
       "jarmark bożonarodzeniowy",
@@ -1527,7 +1527,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         tr: "Zwykle świętuję urodziny w domu. Niestety w sobotę nie mam czasu, ale może będziemy świętować później.",
-        why: "W <i>normalerweise</i> <b>w</b> to [v], a <b>ei</b> to [aɪ]; w <i>vielleicht</i> <b>v</b> to [f], pierwsze <b>i</b> jest krótkie i nieakcentowane, akcent pada na drugą sylabę [fiˈlaɪçt], a <b>ch</b> po <b>ei</b> to [ç]; w <i>später</i> początkowe <b>sp</b> to [ʃp]."
+        why: "W <i>normalerweise</i> <b>w</b> to [v], a <b>ei</b> to [aɪ]; w <i>vielleicht</i> akcent pada na drugą sylabę (<i>-leicht</i>), <b>ei</b> to [aɪ], a końcowe <b>ch</b> to [ç]; w <i>später</i> początkowe <b>sp</b> to [ʃp]."
       },
       {
         tr: "Mam nadzieję, że przyjdziesz na przyjęcie. Może będziemy świętować później.",
@@ -1589,7 +1589,7 @@ LINGUAI.addStrings("pl", {
         why: "W <i>Glückwunsch</i> <b>ü</b> jest krótkie [ʏ], a <b>sch</b> to [ʃ]; w <i>Samstag</i> początkowe <b>s</b> jest dźwięczne [z]; w <i>Lust</i> <b>u</b> jest krótkie."
       },
       {
-        tr: "Gratuluję ci urodzin. Masz ochotę świętować z nami?",
+        tr: "Składam ci życzenia urodzinowe. Masz ochotę świętować z nami?",
         why: "W <i>gratuliere</i> <b>ie</b> to długie <b>i</b> [iː]; w <i>Geburtstag</i> akcent pada na <b>bur</b>; w <i>feiern</i> <b>ei</b> to [aɪ]."
       }
     ]
