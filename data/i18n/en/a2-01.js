@@ -811,7 +811,7 @@ LINGUAI.addStrings("en", {
       "reception",
       "guest",
       "luggage",
-      "to reserve (a seat)",
+      "to reserve (a room, a table, a seat)",
       "to book (a room, a trip)"
     ],
     exercises: [
@@ -881,10 +881,10 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "Wenn + Perfekt: after I've arrived",
-        p: "<strong>Wenn</strong> introduces a fact in the present or the future. When the action of the subordinate clause will be <b>already completed</b> before that of the main clause, the subordinate clause uses the <b>Perfekt</b>: <em>Wenn ich angekommen bin, rufe ich dich an</em> (when I've arrived, I'll call you). The conjugated verb (<em>bin</em>) goes <b>to the end</b>; the main clause starts with the verb: <em>rufe ich</em>. In the main clause you can use the present (<em>rufe ich ... an</em>) or the Futur I (<em>werde ich ... anrufen</em>)."
+        p: "<strong>Wenn</strong> introduces a fact in the present or the future. When the action of the subordinate clause will be <b>already completed</b> before that of the main clause, the subordinate clause <b>can use the Perfekt</b> to emphasize completion (the present, <em>Wenn ich ankomme, rufe ich dich an</em>, is a normal alternative): <em>Wenn ich angekommen bin, rufe ich dich an</em> (when I've arrived, I'll call you). The conjugated verb (<em>bin</em>) goes <b>to the end</b>; the main clause starts with the verb: <em>rufe ich</em>. In the main clause you can use the present (<em>rufe ich ... an</em>) or the Futur I (<em>werde ich ... anrufen</em>)."
       },
       {
-        contrast: "English does something similar and even sounds natural: “When I've arrived, I'll call you”, or just “When I arrive, I'll call you”. In both, English keeps a present form after <em>when</em>, never “when I will arrive”, and German does the same: <em>Wenn ich ankomme</em> or <em>Wenn ich angekommen bin</em>, not a Futur in the <em>wenn</em> clause. For one event in the past English also says <em>when</em> (“When we arrived yesterday, it was raining”), but German uses <em>als</em> and the conjugated verb goes to the end: <em>Als wir gestern angekommen sind, hat es geregnet.</em> <em>Als</em> also goes with the Präteritum: <em>Als wir gestern ankamen, regnete es.</em> Here we practice it with the Perfekt. English has one word for all of this; German has <em>wenn</em>, <em>als</em> and, for questions, <em>wann</em>."
+        contrast: "English does something similar and even sounds natural: “When I've arrived, I'll call you”, or just “When I arrive, I'll call you”. In both, English keeps a present form after <em>when</em>, never “when I will arrive”, and in these examples German does the same: <em>Wenn ich ankomme</em> or <em>Wenn ich angekommen bin</em>. Present or Perfekt is the natural choice in the <em>wenn</em> clause here; this is a usage recommendation, not a rule. For one event in the past English also says <em>when</em> (“When we arrived yesterday, it was raining”), but German uses <em>als</em> and the conjugated verb goes to the end: <em>Als wir gestern angekommen sind, hat es geregnet.</em> <em>Als</em> also goes with the Präteritum: <em>Als wir gestern ankamen, regnete es.</em> Here we practice it with the Perfekt. English has one word for all of this; German has <em>wenn</em>, <em>als</em> and, for questions, <em>wann</em>."
       },
       {
         trap: "<em>Als</em> and <em>wenn</em> are not interchangeable: with a single past event you need <b>als</b> (<em>Als ich gestern angekommen bin, ...</em>), with present, future and repeated events you need <b>wenn</b>. Do not write “Wenn ich bin angekommen”: after <em>wenn</em> the conjugated verb goes to the end, after the participle. And do not confuse <em>wenn</em> with <em>wann</em>, the question word (<em>Wann kommst du an?</em>). English “when” is both, so the choice has to be made in German."
@@ -1053,13 +1053,13 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "The accusative pronoun in place of the noun",
-        p: "To avoid repeating a noun that is the <b>direct object</b> you use the accusative pronoun: <em>mich, dich, ihn, sie, es, uns, euch, sie, Sie</em>. Compared with the nominative, <em>ich, du, er, wir, ihr</em> change; <em>sie</em> and <em>es</em> stay the same. The pronoun follows the <b>gender of the German noun</b>, even for things: <em>der Bruder → ihn</em>, <em>die Kollegin → sie</em>, <em>das Kind → es</em>, <em>der Schlüssel → ihn</em>. In a neutral main clause the pronoun comes right after the conjugated verb: <em>Ich kenne ihn gut.</em> If the sentence begins with another element, the pronoun follows the subject: <em>Morgen sehe ich ihn.</em> In a subordinate clause it comes after the conjunction and the subject, before the verb at the end: <em>..., weil ich ihn gut kenne.</em>"
+        p: "To avoid repeating a noun that is the <b>direct object</b> you use the accusative pronoun: <em>mich, dich, ihn, sie, es, uns, euch, sie, Sie</em>. Compared with the nominative, <em>ich, du, er, wir, ihr</em> change; <em>sie</em> and <em>es</em> stay the same. The pronoun follows the <b>gender of the German noun</b>, even for things: <em>der Bruder → ihn</em>, <em>die Kollegin → sie</em>, <em>das Kind → es</em>, <em>der Schlüssel → ihn</em>. In a neutral main clause the pronoun comes right after the conjugated verb: <em>Ich kenne ihn gut.</em> If the sentence begins with another element, and the subject is a pronoun, the object pronoun follows it: <em>Morgen sehe ich ihn.</em> If the subject is a noun, the object pronoun normally comes before it: <em>Morgen sieht ihn mein Bruder.</em> In a subordinate clause with a pronoun subject it comes after the conjunction and the subject, before the verb at the end: <em>..., weil ich ihn gut kenne.</em> With a noun subject the pronoun comes first: <em>..., weil ihn mein Bruder kennt.</em>"
       },
       {
         contrast: "English has almost the same set (<em>me, you, him, her, it, us, them</em>) and also puts the pronoun after the verb: “I see him”, <em>Ich sehe ihn</em>. The big difference is things: English calls every object <em>it</em> (“the key → I see it”), while German keeps the gender of the noun: <em>der Schlüssel → ihn</em>, <em>die Zeitung → sie</em>, <em>das Buch → es</em>. So “I read it” can be <em>Ich lese ihn</em>, <em>sie</em> or <em>es</em>, depending on the noun. English <em>him</em> also covers both cases (“I see him”, “I help him”), while German splits it into <em>ihn</em> and <em>ihm</em>."
       },
       {
-        trap: "<em>Sie</em> can mean “she”, “they”, “her” or “them”: you work it out from the verb and the context (<em>Ich sehe sie</em>, on its own, is ambiguous). With a capital letter it is the polite form: <em>Ich kenne Sie</em>. And do not confuse <em>ihn</em> (accusative) with <em>ihm</em> (dative): <em>Ich sehe ihm</em> is wrong, because <em>sehen</em> takes the accusative. Since English <em>him</em> hides the difference, check the case, not only the sound."
+        trap: "<em>Sie</em> can mean “she”, “they”, “her” or “them”: you work it out from the verb and the context (<em>Ich sehe sie</em>, on its own, is ambiguous). Inside a sentence a capital letter marks the polite form: <em>Ich kenne Sie</em>. At the start of a sentence the capital is always there, so context and verb agreement decide (<em>Sie kommt</em> = she comes, <em>Sie kommen</em> = they come, or you come, polite). And do not confuse <em>ihn</em> (accusative) with <em>ihm</em> (dative): <em>Ich sehe ihm</em> is wrong, because <em>sehen</em> takes the accusative. Since English <em>him</em> hides the difference, check the case, not only the sound."
       },
       {
         tip: "Before writing the pronoun, repeat the German noun with its article: <em>der → ihn</em>, <em>die → sie</em>, <em>das → es</em>, <em>die</em> (plural) <em>→ sie</em>. The pronoun for a person is the same as the one for a thing of the same gender."
@@ -1086,7 +1086,7 @@ LINGUAI.addStrings("en", {
         { tr: "Tomorrow we're meeting her.", note: "sie: for example die Kollegin" },
         { tr: "He doesn't see me.", note: "mich: accusative of ich" },
         { tr: "I'll call you tonight.", note: "dich; anrufen is separable, an goes to the end" },
-        { tr: "The child is sick. I'm going to visit him today.", note: "es for das Kind, neuter" },
+        { tr: "The child is sick. I'm visiting them today.", note: "es for das Kind, neuter" },
         { tr: "They're inviting us to the party.", note: "uns; einladen is separable, ein goes to the end" }
       ]
     },
@@ -1268,7 +1268,7 @@ LINGUAI.addStrings("en", {
       },
       {
         tr: "The backpack is mine, and I like the jacket a lot.",
-        why: "In <i>gehört</i> the stress falls on <i>-hört</i>, where the <b>ö</b> is long ([øː]); in <i>Rucksack</i> both vowels are short, and the <b>ck</b> marks the short <b>a</b>."
+        why: "In <i>gehört</i> the stress falls on <i>-hört</i>, where the <b>ö</b> is long ([øː]); in <i>Rucksack</i> both vowels are short: <i>Ruck</i> + <i>Sack</i>, and each <b>ck</b> marks the short vowel before it."
       }
     ]
   },
@@ -1292,7 +1292,7 @@ LINGUAI.addStrings("en", {
         trap: "In the usual order <em>Ich gebe ihm es</em> sounds wrong: with two pronouns the accusative comes first, <em>Ich gebe es ihm</em>. Choose the gender from the German word: <em>das Foto → es</em>, <em>der Brief → ihn</em>, <em>die Postkarte → sie</em>. With a masculine noun the two pronouns look different: <em>Ich gebe ihn ihm</em> (the first is accusative, the second dative). English <em>it</em> for every thing hides this, so check the German noun each time."
       },
       {
-        tip: "First find the thing and put its pronoun (<em>es, ihn, sie</em>) right after the verb; then add the person (<em>mir, dir, ihm, ihr</em>). With nouns, start from the person instead: <em>Ich zeige meiner Mutter das Foto.</em>"
+        tip: "First find the thing and put its pronoun (<em>es, ihn, sie</em>) right after the verb; then add the person (<em>mir, dir, ihm, ihr</em>). With the subject first: <em>Ich gebe es dir morgen.</em> With <em>morgen</em> first, the subject follows the verb and comes before the pronouns: <em>Morgen gebe ich es dir.</em> The rule to remember: accusative pronoun before dative pronoun. With nouns, start from the person instead: <em>Ich zeige meiner Mutter das Foto.</em>"
       }
     ],
     grammar: {
@@ -1366,7 +1366,7 @@ LINGUAI.addStrings("en", {
         why: "<b>Ihm</b>: dative of <i>er</i>. The accusative <i>ihn</i> (the thing, <i>der Schlüssel</i>) comes first."
       },
       {
-        q: "Complete the sentence.",
+        q: "Complete the sentence. (der Brief = er; recipient: du)",
         tr: "The letter is ready. I'll send it to you tomorrow.",
         why: "<i>Der Brief</i> is masculine: <b>ihn</b> (accusative) comes before <b>dir</b> (dative). English says “it” for a letter, but German needs the gender of <i>der Brief</i>."
       },
@@ -1375,7 +1375,7 @@ LINGUAI.addStrings("en", {
         pairs: ["I give it to him.", "I give him the book.", "I give it to my brother.", "I give it to you."]
       },
       {
-        q: "Translate: “I'll give it to you tomorrow.” (the book: use the pronoun es)",
+        q: "Translate: “I'll give it to you tomorrow.” (the book: use the pronoun es; one friend: use du)",
         why: "<i>Ich gebe es dir morgen</i>: first the accusative <i>es</i>, then the dative <i>dir</i>. With <i>morgen</i> first the verb stays in second position: <i>Morgen gebe ich es dir</i>."
       },
       {
@@ -1412,7 +1412,7 @@ LINGUAI.addStrings("en", {
         trap: "Do not add <em>-st</em>: <em>Kommst!</em> is not an imperative. With strong verbs with <em>e → ie</em> do not say <em>Lese!</em> but <em>Lies!</em>, and not <em>Nehm!</em> but <em>Nimm!</em> With <em>sein</em> the form is <em>Sei vorsichtig!</em> Do not think <em>mal</em> and <em>doch</em> are empty words: without them the sentence is still correct but sounds more curt."
       },
       {
-        tip: "When you give an order or advice to a friend: start from the infinitive, remove <em>-en</em>, add <em>-e</em> if the stem ends in <em>-t</em> or <em>-d</em>, and put in <em>mal</em> or <em>doch</em> to soften it: <em>Warte mal! Komm doch mit!</em>"
+        tip: "When you give an order or advice to a friend: start from the infinitive, remove <em>-en</em>, add <em>-e</em> if the stem ends in <em>-t</em> or <em>-d</em>, and put in <em>mal</em> or <em>doch</em> to soften it. This procedure is for regular verbs; remember the exceptions you learned: <em>Nimm!</em>, <em>Lies!</em>, <em>Sei!</em> Examples: <em>Warte mal! Komm doch mit!</em>"
       }
     ],
     grammar: {
@@ -1554,7 +1554,7 @@ LINGUAI.addStrings("en", {
         why: "<i>Ich gebe ihm das Buch morgen</i>: the dative pronoun <i>ihm</i> comes before the noun <i>das Buch</i>. <i>Morgen gebe ich ihm das Buch</i> and <i>Ich gebe ihm morgen das Buch</i> are also fine."
       },
       {
-        tr: "My brother has a birthday. I'm giving him a book and I'll give it to him tomorrow.",
+        tr: "It's my brother's birthday. I'm giving him a book as a present, and I'll give it to him tomorrow.",
         why: "In <i>Geburtstag</i> the stress falls on <i>-burts-</i> (<i>ge-</i> is unstressed) and the final <b>g</b> is usually read [k]."
       },
       {

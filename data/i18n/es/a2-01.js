@@ -539,7 +539,7 @@ LINGUAI.addStrings("es", {
         p: "A la pregunta <b>wohin?</b> (¿hacia dónde?) el alemán elige la preposición según el destino. Con <b>ciudades y países sin artículo</b> se usa <strong>nach</strong>: <em>Ich fahre nach Wien. Wir fliegen nach Italien.</em> Con los <b>países que llevan artículo</b> se usa <strong>in</strong> + <b>acusativo</b>: <em>Wir fahren in die Schweiz.</em> Hacia <b>una persona</b> y, por lo general, hacia <b>un edificio o un lugar concreto</b> se usa <strong>zu</strong> + dativo: <em>Ich fahre zu meiner Tante. Wir gehen zum Bahnhof.</em> Con <em>zu</em> + artículo hay contracciones: <em>zum</em> (zu dem) y <em>zur</em> (zu der)."
       },
       {
-        contrast: "El español usa casi siempre <em>a</em> para el destino: «voy a Viena», «voy a Suiza», «voy a la estación». El alemán distingue tres casos: <em>nach</em> para ciudades y países sin artículo, <em>in die</em> para los países con artículo y <em>zu</em> para personas y lugares. Para ir a casa de alguien el español dice «a casa de mi tía» y el alemán, simplemente, <em>zu meiner Tante</em>. Además, en español «Suiza» o «Turquía» no suelen llevar artículo, pero en alemán <em>die Schweiz</em> y <em>die Türkei</em> sí, y eso decide la preposición: hay que aprender cada país con su artículo. El español también separa <em>dónde</em> y <em>adónde</em>, y el alemán tiene dos preguntas parecidas, <em>wo?</em> (lugar) y <em>wohin?</em> (dirección); la segunda cambia el caso después de <em>in</em>."
+        contrast: "El español usa casi siempre <em>a</em> para el destino: «voy a Viena», «voy a Suiza», «voy a la estación». El alemán distingue tres casos: <em>nach</em> para ciudades y países sin artículo, <em>in</em> + acusativo para los países con artículo (el artículo varía: <em>in die Schweiz</em>, <em>in den Iran</em>, <em>in die USA</em>) y <em>zu</em> para personas y lugares. Para ir a casa de alguien el español dice «a casa de mi tía» y el alemán, simplemente, <em>zu meiner Tante</em>. Además, en español «Suiza» o «Turquía» no suelen llevar artículo, pero en alemán <em>die Schweiz</em> y <em>die Türkei</em> sí, y eso decide la preposición: hay que aprender cada país con su artículo. El español también separa <em>dónde</em> y <em>adónde</em>, y el alemán tiene dos preguntas parecidas, <em>wo?</em> (lugar) y <em>wohin?</em> (dirección); la segunda cambia el caso después de <em>in</em>."
       },
       {
         trap: "El caso depende de lo que pregunta la frase. Con <b>wohin?</b> (movimiento hacia un lugar) <em>in</em> pide el <b>acusativo</b>: <em>Wir fahren in die Schweiz</em>. Con <b>wo?</b> (posición, dónde se está) pide el <b>dativo</b>: <em>Meine Tante wohnt in der Schweiz</em>. Dos frases casi iguales, dos casos distintos, y <em>die</em> frente a <em>der</em> es la única pista. Ojo también con <em>nach die Schweiz</em>: no existe, porque <em>nach</em> no va con países que llevan artículo. Y como en español los sustantivos no cambian de forma según el caso, esa diferencia no se oye por costumbre: hay que fijarse en ella a propósito."
@@ -573,7 +573,7 @@ LINGUAI.addStrings("es", {
     vocab: [
       "la estación",
       "el tren",
-      "la vía, el andén",
+      "la vía",
       "el billete de tren",
       "el horario (de trenes)",
       "la salida",
@@ -615,7 +615,7 @@ LINGUAI.addStrings("es", {
         pairs: ["a Viena", "a Suiza (destino)", "a casa de mi tía", "a la estación"]
       },
       {
-        q: "Traduce: «Mañana vamos a Suiza.»",
+        q: "Traduce (verbo: fahren): «Mañana vamos a Suiza.»",
         why: "<i>Morgen fahren wir in die Schweiz</i>: <i>fahren</i> para un medio de transporte; <i>reisen</i> es una alternativa. El orden puede cambiar (<i>Wir fahren morgen ...</i>), el verbo conjugado se queda en segunda posición."
       },
       {
@@ -770,7 +770,7 @@ LINGUAI.addStrings("es", {
         p: "Para decir que ya has reservado se usa el <strong>Perfekt</strong>: auxiliar en segunda posición y <b>participio II</b> al final. <em>Ich habe ein Zimmer reserviert. Wir haben ein Doppelzimmer gebucht.</em> Los verbos en <em>-ieren</em> no llevan <em>ge-</em>: <em>reservieren → reserviert</em>. <em>Buchen</em> es regular: <em>gebucht</em>. En general, los verbos intransitivos de movimiento o de cambio de estado llevan <em>sein</em>, mientras que los transitivos y los reflexivos llevan <em>haben</em>. Aquí necesitas <em>ankommen</em> y <em>abfahren</em>: <em>Wir sind gestern Abend angekommen</em> (participio <em>angekommen</em>, con <em>ge-</em> en medio)."
       },
       {
-        contrast: "El español forma el pretérito perfecto siempre con <em>haber</em>: «hemos llegado», «hemos reservado». El alemán usa <em>sein</em> con los verbos de movimiento o de cambio de estado: <em>Wir sind angekommen</em>, no «Wir haben angekommen». En el habla cotidiana el Perfekt alemán sirve para lo que el español reparte entre el pretérito perfecto y el indefinido: <em>Wir sind gestern Abend angekommen</em> = «llegamos ayer por la noche». El español tiene dos verbos, <em>reservar</em> (que se usa para todo), y el alemán, <em>reservieren</em> y <em>buchen</em> (este último para un viaje o una habitación), a menudo intercambiables en un hotel. Para la cortesía el español usa <em>usted</em> (verbo en tercera persona del singular); el alemán usa <em>Sie</em>, que se conjuga como la tercera persona del <b>plural</b>: <em>Haben Sie ein Zimmer?</em>"
+        contrast: "El español forma el pretérito perfecto siempre con <em>haber</em>: «hemos llegado», «hemos reservado». El alemán usa <em>sein</em> con los verbos de movimiento o de cambio de estado: <em>Wir sind angekommen</em>, no «Wir haben angekommen». En el habla cotidiana el Perfekt alemán sirve para lo que el español reparte entre el pretérito perfecto y el indefinido: <em>Wir sind gestern Abend angekommen</em> = «llegamos ayer por la noche». El español usa <em>reservar</em> para ambos casos; el alemán tiene dos verbos, <em>reservieren</em> y <em>buchen</em>, a menudo intercambiables en un hotel. Para la cortesía el español usa <em>usted</em> (verbo en tercera persona del singular); el alemán usa <em>Sie</em>, que se conjuga como la tercera persona del <b>plural</b>: <em>Haben Sie ein Zimmer?</em>"
       },
       {
         trap: "No digas «Ich habe ein Zimmer reservieren» (infinitivo en lugar del participio) y no olvides el auxiliar correcto: <em>Wir sind angekommen</em>, no «Wir haben angekommen». En cuanto al registro: en la recepción se usa normalmente <em>Sie</em>, y <em>Könnten Sie mir bitte ...?</em> es más cortés que <em>Können Sie ...?</em>. Entre amigos o en un albergue entre jóvenes se suele usar <em>du</em>, pero en caso de duda elige <em>Sie</em>."
@@ -811,7 +811,7 @@ LINGUAI.addStrings("es", {
       "la recepción",
       "el huésped",
       "el equipaje",
-      "reservar (un asiento)",
+      "reservar (una habitación, una mesa, un asiento)",
       "reservar (una habitación, un viaje)"
     ],
     exercises: [
@@ -881,7 +881,7 @@ LINGUAI.addStrings("es", {
     theory: [
       {
         h: "Wenn + Perfekt: cuando haya llegado",
-        p: "<strong>Wenn</strong> introduce un hecho del presente o del futuro. Cuando la acción de la subordinada estará <b>ya terminada</b> antes que la de la principal, en la subordinada se usa el <b>Perfekt</b>: <em>Wenn ich angekommen bin, rufe ich dich an</em> (cuando haya llegado, te llamo). El verbo conjugado (<em>bin</em>) va <b>al final</b>; la principal empieza con el verbo: <em>rufe ich</em>. En la principal puedes usar el presente (<em>rufe ich ... an</em>) o el Futur I (<em>werde ich ... anrufen</em>)."
+        p: "<strong>Wenn</strong> introduce un hecho del presente o del futuro. Cuando la acción de la subordinada estará <b>ya terminada</b> antes que la de la principal, en la subordinada se puede usar el <b>Perfekt</b> para destacar que la acción ya estará terminada; también es habitual el presente (<em>Wenn ich ankomme, rufe ich dich an</em>): <em>Wenn ich angekommen bin, rufe ich dich an</em> (cuando haya llegado, te llamo). El verbo conjugado (<em>bin</em>) va <b>al final</b>; la principal empieza con el verbo: <em>rufe ich</em>. En la principal puedes usar el presente (<em>rufe ich ... an</em>) o el Futur I (<em>werde ich ... anrufen</em>)."
       },
       {
         contrast: "El español usa el <b>subjuntivo</b> después de «cuando» para el futuro: «cuando llegue», «cuando haya llegado, te llamaré». El alemán no tiene subjuntivo aquí: usa el indicativo, y para marcar que la acción ya habrá terminado pone el <em>Perfekt</em> en la subordinada (<em>Wenn ich angekommen bin</em>) o, si no hace falta subrayarlo, el presente (<em>Wenn ich ankomme</em>). Existe un Futur II (<em>ich werde angekommen sein</em>), pero en las temporales referidas al futuro no hace falta. Para un hecho único del pasado el español sigue diciendo «cuando» («cuando llegamos ayer, llovía»), pero el alemán usa <em>als</em>: <em>Als wir gestern angekommen sind, hat es geregnet.</em> <em>Als</em> también va con el Präteritum: <em>Als wir gestern ankamen, regnete es.</em> Aquí lo practicamos con el Perfekt."
@@ -967,7 +967,7 @@ LINGUAI.addStrings("es", {
         why: "Con estas piezas el orden es el de la subordinada primero: <i>Wenn ich angekommen bin, rufe ich dich an</i>. El verbo separable <i>anrufen</i> deja <i>an</i> al final de la principal."
       },
       {
-        q: "Traduce: «Cuando llego, te llamo.»",
+        q: "Traduce: «Cuando haya llegado, te llamaré.»",
         why: "Basta el presente: <i>Wenn ich ankomme, rufe ich dich an</i>. También valen el Perfekt en la subordinada (<i>angekommen bin</i>) o el Futur I en la principal (<i>werde ich dich anrufen</i>), y el orden puede invertirse."
       },
       {
@@ -1025,7 +1025,7 @@ LINGUAI.addStrings("es", {
         why: "Lugar (wo?): <b>in</b> + dativo, y <i>die Schweiz</i> en dativo es <i>in der Schweiz</i>."
       },
       {
-        q: "Traduce: «Mañana vamos a Viena.»",
+        q: "Traduce (verbo: fahren): «Mañana vamos a Viena.»",
         why: "<i>Morgen fahren wir nach Wien</i>: <i>nach</i> con una ciudad. El orden puede cambiar, el verbo queda en segunda posición."
       },
       {
@@ -1053,13 +1053,13 @@ LINGUAI.addStrings("es", {
     theory: [
       {
         h: "El pronombre de acusativo en lugar del nombre",
-        p: "Para no repetir un nombre que es <b>objeto directo</b> se usa el pronombre de acusativo: <em>mich, dich, ihn, sie, es, uns, euch, sie, Sie</em>. Respecto al nominativo cambian <em>ich, du, er, wir, ihr</em>; <em>sie</em> y <em>es</em> se quedan igual. El pronombre sigue el <b>género del nombre alemán</b>, también para las cosas: <em>der Bruder → ihn</em>, <em>die Kollegin → sie</em>, <em>das Kind → es</em>, <em>der Schlüssel → ihn</em>. En la oración principal neutra el pronombre va justo después del verbo conjugado: <em>Ich kenne ihn gut.</em> Si la frase empieza por otro elemento, el pronombre sigue al sujeto: <em>Morgen sehe ich ihn.</em> En una subordinada va después de la conjunción y del sujeto, antes del verbo final: <em>..., weil ich ihn gut kenne.</em>"
+        p: "Para no repetir un nombre que es <b>objeto directo</b> se usa el pronombre de acusativo: <em>mich, dich, ihn, sie, es, uns, euch, sie, Sie</em>. Respecto al nominativo cambian <em>ich, du, er, wir, ihr</em>; <em>sie</em> y <em>es</em> se quedan igual. El pronombre sigue el <b>género del nombre alemán</b>, también para las cosas: <em>der Bruder → ihn</em>, <em>die Kollegin → sie</em>, <em>das Kind → es</em>, <em>der Schlüssel → ihn</em>. En la oración principal neutra el pronombre va justo después del verbo conjugado: <em>Ich kenne ihn gut.</em> Si la frase empieza por otro elemento, y el sujeto es un pronombre, el pronombre de objeto lo sigue: <em>Morgen sehe ich ihn.</em> Si el sujeto es un nombre, el pronombre de objeto suele ir antes: <em>Morgen sieht ihn mein Bruder.</em> En una subordinada con sujeto pronominal va después de la conjunción y del sujeto, antes del verbo final: <em>..., weil ich ihn gut kenne.</em> Con un sujeto nominal el pronombre va primero: <em>..., weil ihn mein Bruder kennt.</em>"
       },
       {
         contrast: "En español el pronombre átono va <b>antes</b> del verbo (<em>lo veo, la conozco</em>); en alemán es una palabra aparte y va después del verbo: <em>Ich sehe ihn.</em> Además, el género sigue la palabra alemana, no la española, y las dos lenguas no siempre coinciden: <em>la llave</em> es femenina (<em>la veo</em>), pero <em>der Schlüssel</em> es masculino: <em>Ich sehe ihn nicht</em>. Al revés, <em>el periódico</em> es masculino (<em>lo leo</em>), pero <em>die Zeitung</em> es femenina: <em>Ich lese sie</em>. El español distingue «lo» de «le» (acusativo y dativo), y el alemán distingue <em>ihn</em> de <em>ihm</em>, con la misma idea."
       },
       {
-        trap: "<em>Sie</em> puede significar «ella», «ellos», «la», «las» o «los»: lo entiendes por el verbo y el contexto (<em>Ich sehe sie</em>, solo, es ambiguo). Con inicial mayúscula es la forma de cortesía: <em>Ich kenne Sie</em> («lo conozco a usted»). Y no confundas <em>ihn</em> (acusativo) con <em>ihm</em> (dativo): <em>Ich sehe ihm</em> es incorrecto, porque <em>sehen</em> pide el acusativo."
+        trap: "<em>Sie</em> puede significar «ella», «ellos», «la», «las» o «los»: lo entiendes por el verbo y el contexto (<em>Ich sehe sie</em>, solo, es ambiguo). Dentro de la frase, la inicial mayúscula marca la forma de cortesía: <em>Ich kenne Sie</em> («lo conozco a usted»). Al principio de la frase la mayúscula siempre está, así que deciden el contexto y la concordancia del verbo (<em>Sie kommt</em> = ella viene, <em>Sie kommen</em> = ellos vienen o usted viene). Y no confundas <em>ihn</em> (acusativo) con <em>ihm</em> (dativo): <em>Ich sehe ihm</em> es incorrecto, porque <em>sehen</em> pide el acusativo."
       },
       {
         tip: "Antes de escribir el pronombre, repite el nombre alemán con su artículo: <em>der → ihn</em>, <em>die → sie</em>, <em>das → es</em>, <em>die</em> (plural) <em>→ sie</em>. El pronombre para una persona es igual que el de una cosa del mismo género."
@@ -1173,7 +1173,7 @@ LINGUAI.addStrings("es", {
         p: "El dativo responde a la pregunta <em>¿a quién?</em>. Los pronombres son <em>mir, dir, ihm, ihr, ihm, uns, euch, ihnen</em> (cortesía: <em>Ihnen</em>). Algunos verbos piden el dativo como objeto, aunque en español el objeto parezca directo: <em>helfen</em> (<em>Ich helfe dir</em>), <em>danken</em> (<em>Ich danke dir</em>), <em>antworten</em> (<em>Er antwortet mir</em>), <em>gehören</em> (<em>Das Handy gehört mir</em>) y <em>gefallen</em> (<em>Die Jacke gefällt mir</em>). Con <em>gefallen</em> la cosa que gusta es el sujeto y la persona va en dativo: si la cosa es plural, el verbo la sigue (<em>Die Schuhe gefallen mir</em>)."
       },
       {
-        contrast: "<em>Gefallen</em> funciona como el español <em>gustar</em>: «Me gusta la chaqueta» y <em>Die Jacke gefällt mir</em> tienen la misma estructura, con la cosa como sujeto y la persona en dativo («me», <em>mir</em>). Con <em>helfen</em> y <em>danken</em> el español suele usar «le» (dativo), igual que el alemán: «le ayudo», «le agradezco», <em>Ich helfe ihm</em>, <em>Ich danke ihm</em>. La diferencia está en el acusativo: en español <em>ver</em> y <em>conocer</em> piden «lo/la» («lo veo»), y el alemán, <em>ihn/sie/es</em>. Con <em>gehören</em> el español dice «me pertenece», con dativo, como el alemán: <em>Das gehört mir</em>."
+        contrast: "<em>Gefallen</em> funciona como el español <em>gustar</em>: «Me gusta la chaqueta» y <em>Die Jacke gefällt mir</em> tienen la misma estructura, con la cosa como sujeto y la persona en dativo («me», <em>mir</em>). Con <em>danken</em> el español usa «le» (dativo), igual que el alemán: «le agradezco», <em>Ich danke ihm</em>. En español se usan «lo/la ayudo» y también «le ayudo», según la variedad; en alemán <em>helfen</em> exige siempre el dativo: <em>Ich helfe ihm/ihr</em>. La diferencia está en el acusativo: en español <em>ver</em> y <em>conocer</em> piden «lo/la» («lo veo»), y el alemán, <em>ihn/sie/es</em>. Con <em>gehören</em> el español dice «me pertenece», con dativo, como el alemán: <em>Das gehört mir</em>."
       },
       {
         trap: "Con estos verbos el acusativo es un error: <em>Ich helfe dich</em> e <em>Ich danke ihn</em> son incorrectos. Ojo también con <em>ihr</em>: como nominativo significa «vosotros» (<em>Ihr helft mir</em>), como dativo «a ella» (<em>Ich helfe ihr</em>). El verbo y el caso te dicen cuál es. <em>Ihm</em> sirve para <em>er</em> y para <em>es</em>: <em>Ich helfe dem Kind → Ich helfe ihm</em>."
@@ -1268,7 +1268,7 @@ LINGUAI.addStrings("es", {
       },
       {
         tr: "La mochila es mía, y me gusta mucho la chaqueta.",
-        why: "En <i>gehört</i> el acento cae en <i>-hört</i>, donde la <b>ö</b> es larga ([øː]); en <i>Rucksack</i> las dos vocales son breves, y la <b>ck</b> señala la <b>a</b> breve."
+        why: "En <i>gehört</i> el acento cae en <i>-hört</i>, donde la <b>ö</b> es larga ([øː]); en <i>Rucksack</i> las dos vocales son breves: <i>Ruck</i> + <i>Sack</i>, y cada <b>ck</b> señala la vocal breve que la precede."
       }
     ]
   },
@@ -1286,7 +1286,7 @@ LINGUAI.addStrings("es", {
         p: "Con verbos como <em>geben, schenken, zeigen, schicken, leihen, erklären</em> hay dos objetos: la persona (dativo) y la cosa (acusativo). El orden habitual, en una frase neutra, es este. Con <b>dos nombres</b> el dativo va antes del acusativo: <em>Ich schenke meiner Schwester ein Buch.</em> Con <b>un pronombre y un nombre</b> el pronombre va primero, sea cual sea su caso: <em>Ich gebe ihm das Buch. Ich gebe es meinem Bruder.</em> Con <b>dos pronombres</b> el acusativo va antes del dativo: <em>Ich gebe es ihm.</em> Son órdenes habituales, no reglas absolutas: para destacar un elemento se puede mover."
       },
       {
-        contrast: "En español los dos pronombres se juntan delante del verbo y el dativo va <b>primero</b>: <em>se lo doy</em>, <em>te lo doy</em> (dativo + acusativo). En alemán van después del verbo y el orden es el inverso, acusativo + dativo: <em>Ich gebe es ihm</em>, <em>Ich gebe es dir</em>. Si traduces por piezas, recoloca el orden: primero <em>es</em> (el «lo»), luego <em>dir</em> o <em>ihm</em> (el «te» o el «le»). Además, el «se» de «se lo doy» no tiene equivalente: en alemán se dice <em>ihm</em>, <em>ihr</em> o <em>ihnen</em> según la persona."
+        contrast: "En español los dos pronombres se juntan delante del verbo y el dativo va <b>primero</b>: <em>se lo doy</em>, <em>te lo doy</em> (dativo + acusativo). En alemán van después del verbo y el orden es el inverso, acusativo + dativo: <em>Ich gebe es ihm</em>, <em>Ich gebe es dir</em>. Si traduces por piezas, recoloca el orden: primero <em>es</em> (el «lo»), luego <em>dir</em> o <em>ihm</em> (el «te» o el «le»). Además, el «se» de «se lo doy» es la variante de «le/les» ante lo/la/los/las; corresponde al destinatario que el alemán expresa con <em>ihm</em>, <em>ihr</em> o <em>ihnen</em> (<em>Ihnen</em> en el trato de cortesía)."
       },
       {
         trap: "En el orden habitual <em>Ich gebe ihm es</em> suena mal: con dos pronombres va primero el acusativo, <em>Ich gebe es ihm</em>. Elige el género por la palabra alemana: <em>das Foto → es</em>, <em>der Brief → ihn</em>, <em>die Postkarte → sie</em>. Con un nombre masculino los dos pronombres son distintos: <em>Ich gebe ihn ihm</em> (el primero es acusativo, el segundo dativo)."
@@ -1406,7 +1406,7 @@ LINGUAI.addStrings("es", {
         p: "<em>Mal</em> y <em>doch</em> son <b>partículas modales</b>: no cambian la gramática, cambian <b>cómo suena</b> la frase. <em>Komm mal her!</em> es más ligero que <em>Komm her!</em>, como «anda, ven un momento». <em>Ruf mich doch an!</em> es una invitación amistosa o una insistencia: «llámame, anda», «venga, llámame». Van en el campo central, normalmente después del pronombre: <em>Ruf mich doch mal an!</em> No tienen una traducción fija, y aquí <em>mal</em> no significa «a veces»."
       },
       {
-        contrast: "El español pega el pronombre al imperativo (<em>llámame, dime, ayúdame</em>); en alemán el pronombre es una palabra aparte después del verbo: <em>Ruf mich an! Sag mir! Hilf mir!</em> Para el negativo con tú el español usa el subjuntivo, con otra forma del verbo («ven» pero «no vengas»); el alemán usa el mismo imperativo con <em>nicht</em>: <em>Komm nicht zu spät!</em> Para varias personas el alemán tiene <em>ihr</em> (como «vosotros» en España), con la forma <em>Kommt!</em> A las partículas modales el español suele responder con el tono o con palabras como «anda», «venga», «pues», «un momento»; el alemán las tiene como categoría propia."
+        contrast: "El español pega el pronombre al imperativo (<em>llámame, dime, ayúdame</em>); en alemán el pronombre es una palabra aparte después del verbo: <em>Ruf mich an! Sag es mir! Hilf mir!</em> (<em>Sag es mir!</em> equivale a «¡Dímelo!» o «¡Dime!») Para el negativo con tú el español usa el subjuntivo, con otra forma del verbo («ven» pero «no vengas»); el alemán usa el mismo imperativo con <em>nicht</em>: <em>Komm nicht zu spät!</em> Para varias personas el alemán tiene <em>ihr</em> (como «vosotros» en España), con la forma <em>Kommt!</em> A las partículas modales el español suele responder con el tono o con palabras como «anda», «venga», «pues», «un momento»; el alemán las tiene como categoría propia."
       },
       {
         trap: "No añadas <em>-st</em>: <em>Kommst!</em> no es un imperativo. Con los verbos fuertes con <em>e → ie</em> no digas <em>Lese!</em> sino <em>Lies!</em>, y no <em>Nehm!</em> sino <em>Nimm!</em> Con <em>sein</em> la forma es <em>Sei vorsichtig!</em> No pienses que <em>mal</em> y <em>doch</em> son palabras vacías: sin ellas la frase sigue siendo correcta, pero suena más seca."
@@ -1550,7 +1550,7 @@ LINGUAI.addStrings("es", {
         why: "Con dos pronombres el acusativo (<i>es</i>) va antes del dativo (<i>dir</i>)."
       },
       {
-        q: "Traduce: «Le doy el libro mañana.»",
+        q: "Traduce (mi hermano: usa ihm): «Le doy el libro mañana.»",
         why: "<i>Ich gebe ihm das Buch morgen</i>: el pronombre de dativo <i>ihm</i> va antes del nombre <i>das Buch</i>. También valen <i>Morgen gebe ich ihm das Buch</i> e <i>Ich gebe ihm morgen das Buch</i>."
       },
       {

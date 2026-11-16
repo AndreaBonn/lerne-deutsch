@@ -697,7 +697,8 @@ LINGUAI.addUnits("A2", [
               "Heute treffe ich sie im Café",
               "Ich treffe sie heute im Café",
               "Im Café treffe ich sie heute",
-              "Ich treffe sie im Café heute"
+              "Ich treffe sie im Café heute",
+              "Sie treffe ich heute im Café"
             ]
           },
           {
