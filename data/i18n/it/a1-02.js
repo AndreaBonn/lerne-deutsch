@@ -87,7 +87,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Che colore è «weiß»?",
         opts: ["bianco", "nero", "giallo"],
-        why: "<i>Weiß</i> è «bianco». Si scrive con la <b>ß</b>, che suona come una «s» sorda lunga."
+        why: "<i>Weiß</i> è «bianco». Si scrive con la <b>ß</b> e si legge /vaɪs/: la <b>ß</b> è una «s» sorda, non una consonante doppia."
       },
       {
         q: "Completa: «Das Hemd ___ weiß.»",
@@ -101,7 +101,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Il maglione è blu e i pantaloni sono neri.",
-        why: "Il verbo <i>ist</i> si ripete davanti a ogni soggetto: <i>... und die Hose ist schwarz</i>. Nel secondo membro, <i>die Hose</i> è il soggetto singolare."
+        why: "Ogni proposizione ha il proprio verbo coniugato: <i>Der Pullover ist blau und die Hose ist schwarz</i>. In entrambe il soggetto precede <i>ist</i>. Nel secondo membro, <i>die Hose</i> è il soggetto singolare."
       },
       {
         q: "Abbina ogni colore al suo significato.",
@@ -140,13 +140,13 @@ LINGUAI.addStrings("it", {
         p: "Per scegliere fra due capi si chiede con <strong>welcher</strong>: <em>Welcher Mantel ist schön?</em>, <em>Welche Tasche ist blau?</em>, <em>Welches Kleid ist rot?</em> Segue lo stesso schema di <em>dieser</em>. Si risponde con <em>dieser</em> oppure, a voce, con <strong>der da</strong>, <strong>die da</strong>, <strong>das da</strong>: <em>Welcher Mantel ist billig? Der da.</em>"
       },
       {
-        contrast: "L'italiano ha «questo» e «quello», e «quale» che concorda con il nome (<em>quale giacca</em>, <em>quali scarpe</em>). Il tedesco concorda anche lui, ma con una sola forma per «questo» e una per «quale». Per «quello» a voce di solito non c'è un'altra parola: si usa l'articolo accompagnato da <em>da</em> (<em>der da</em>, «quello là»)."
+        contrast: "L'italiano ha «questo» e «quello», e «quale» che concorda con il nome (<em>quale giacca</em>, <em>quali scarpe</em>). Il tedesco concorda anche lui, ma con tre generi, il plurale e quattro casi: <em>dieser</em> e <em>welcher</em> cambiano desinenza secondo genere, numero e caso. Qui studi solo il nominativo: <em>dieser / welcher</em>, <em>diese / welche</em>, <em>dieses / welches</em>. Per «quello» a voce di solito non c'è un'altra parola: si usa l'articolo accompagnato da <em>da</em> (<em>der da</em>, «quello là»)."
       },
       {
         trap: "Non dire «Welche Mantel», né «Dieser Jacke»: l'ultima lettera deve seguire il genere del nome. <em>Mantel</em> è maschile (<em>welcher</em>), <em>Jacke</em> è femminile (<em>welche</em>), <em>Hemd</em> è neutro (<em>welches</em>)."
       },
       {
-        tip: "In un negozio puoi indicare con la mano e dire solo <em>Welche?</em> o <em>Diese hier?</em>: nel tedesco parlato si taglia molto. Per le frasi scritte, ripeti il nome per intero."
+        tip: "In un negozio puoi indicare con la mano e dire solo la parola senza il nome, che però concorda con la cosa indicata: <em>Welcher? Dieser hier?</em> per <em>der Mantel</em>, <em>Welche? Diese hier?</em> per <em>die Jacke</em> o un plurale, <em>Welches? Dieses hier?</em> per <em>das Hemd</em>. Nel tedesco parlato si taglia molto. Per le frasi scritte, ripeti il nome per intero."
       }
     ],
     grammar: {
@@ -263,7 +263,7 @@ LINGUAI.addStrings("it", {
         p: "Dopo aver nominato un capo, non lo si ripete: si usa un pronome. Come oggetto di <em>nehmen</em> o <em>kaufen</em> (accusativo) il pronome segue il <strong>genere del nome</strong>: <em>der Pullover</em> diventa <strong>ihn</strong>, <em>die Jacke</em> diventa <strong>sie</strong>, <em>das Hemd</em> diventa <strong>es</strong>, <em>die Schuhe</em> diventa <strong>sie</strong>. Esempio: <em>Der Pullover ist schön. Ich nehme ihn.</em>"
       },
       {
-        contrast: "In italiano il pronome atono sta prima del verbo e concorda in genere e numero: <em>lo prendo</em>, <em>la prendo</em>, <em>li prendo</em>. In tedesco sta <em>dopo</em> il verbo, come un normale oggetto: <em>Ich nehme ihn</em>. E il genere è quello del nome tedesco, non del suo significato: <em>der Pullover</em> è maschile (<em>ihn</em>), anche se in italiano «il maglione» sembra un oggetto neutro."
+        contrast: "In italiano il pronome atono sta prima del verbo e concorda in genere e numero: <em>lo prendo</em>, <em>la prendo</em>, <em>li prendo</em>. In tedesco sta <em>dopo</em> il verbo, come un normale oggetto: <em>Ich nehme ihn</em>. E il genere è quello del nome tedesco, non del suo significato: <em>der Pullover</em> è maschile (<em>ihn</em>), anche quando l'italiano suggerisce un altro genere: <em>la camicia</em> è <em>das Hemd</em> (<em>es</em>), <em>la gonna</em> è <em>der Rock</em> (<em>ihn</em>), <em>i pantaloni</em> sono <em>die Hose</em>, singolare in tedesco (<em>sie</em>)."
       },
       {
         trap: "Per le cose si usa il genere grammaticale, non <em>es</em> per tutto: <em>Die Jacke ist schön. Ich nehme sie</em>, non «Ich nehme es». <em>Es</em> è corretto solo per un nome neutro (<em>das Hemd</em>, <em>das Kleid</em>). Solo il maschile cambia forma tra nominativo (<em>er</em>) e accusativo (<em>ihn</em>)."
@@ -348,7 +348,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Quanto costa il cappotto? Costa novanta euro.",
-        why: "In <i>neunzig</i> la <b>eu</b> si legge «oi» e la <b>z</b> «ts»: «noin-tsig». <i>Euro</i> comincia con «oi»."
+        why: "In <i>neunzig</i> la <b>eu</b> si legge «oi» e la <b>z</b> «ts»; la finale <b>-ig</b> si pronuncia come il <b>ch</b> di <i>ich</i>: /ˈnɔʏntsɪç/. <i>Euro</i> comincia con «oi»."
       },
       {
         tr: "La camicia costa solo venti euro. La prendo.",
@@ -361,7 +361,7 @@ LINGUAI.addStrings("it", {
     title: "Quanto? Sehr, zu, viel, wenig",
     objectives: [
       "dire che un capo è molto bello (sehr) o troppo caro (zu)",
-      "usare viel e wenig dopo il verbo (kostet viel, kostet wenig)",
+      "usare viel e wenig dopo kosten (kostet viel, kostet wenig)",
       "descrivere la taglia: groß, klein, lang, kurz, eng, weit"
     ],
     theory: [
@@ -370,14 +370,14 @@ LINGUAI.addStrings("it", {
         p: "<strong>Sehr</strong> (molto) e <strong>zu</strong> (troppo) stanno <em>davanti</em> all'aggettivo, senza alcuna desinenza: <em>Der Pullover ist sehr schön</em>, <em>Die Hose ist zu klein</em>, <em>Das Kleid ist zu teuer</em>. Si può aggiungere <em>ein bisschen</em> (un po'): <em>Die Jacke ist ein bisschen zu groß</em>. Per descrivere la taglia: <em>groß</em>, <em>klein</em>, <em>lang</em>, <em>kurz</em>, <em>eng</em> (stretto), <em>weit</em> (largo)."
       },
       {
-        h: "Viel e wenig: dopo il verbo",
-        p: "<strong>Viel</strong> (molto, tanto) e <strong>wenig</strong> (poco) non descrivono una cosa, ma un verbo: stanno <em>dopo</em> di esso. <em>Der Mantel kostet viel</em>, <em>Das Hemd kostet wenig</em>. Con <em>zu</em> si può dire <em>zu viel</em> (troppo): <em>Der Mantel ist sehr schön, aber er kostet zu viel</em>."
+        h: "Viel e wenig: dopo kosten",
+        p: "Con <em>kosten</em> e con un aggettivo al grado positivo la posizione distingue le parole: <strong>viel</strong> (molto, tanto) e <strong>wenig</strong> (poco) stanno <em>dopo</em> il verbo <em>kosten</em>, mentre <strong>sehr</strong> sta davanti all'aggettivo. Non è una regola per tutti i verbi (<em>Das gefällt mir sehr</em>) né per i comparativi (<em>viel schöner</em>). <em>Der Mantel kostet viel</em>, <em>Das Hemd kostet wenig</em>. Con <em>zu</em> si può dire <em>zu viel</em> (troppo): <em>Der Mantel ist sehr schön, aber er kostet zu viel</em>."
       },
       {
-        contrast: "L'italiano usa «molto» per tutto: <em>molto bello</em>, <em>costa molto</em>, <em>molti vestiti</em>. In tedesco bisogna scegliere: <em>sehr</em> davanti a un aggettivo (<em>sehr schön</em>), <em>viel</em> dopo un verbo (<em>kostet viel</em>). Lo stesso vale per «poco» (<em>wenig</em>) e «troppo» (<em>zu</em> davanti all'aggettivo, <em>zu viel</em> con un verbo)."
+        contrast: "L'italiano usa «molto» per tutto: <em>molto bello</em>, <em>costa molto</em>, <em>molti vestiti</em>. In tedesco, con un aggettivo al grado positivo si usa <em>sehr</em> (<em>sehr schön</em>) e con <em>kosten</em> si usa <em>viel</em> dopo il verbo (<em>kostet viel</em>). Con altri verbi può servire <em>sehr</em> (<em>Das gefällt mir sehr</em>). Lo stesso vale per «poco» (<em>wenig</em>) e «troppo» (<em>zu</em> davanti all'aggettivo, <em>zu viel</em> con <em>kosten</em>)."
       },
       {
-        trap: "Non dire «Der Pullover ist viel schön»: <em>viel</em> non si mette davanti a un aggettivo, ci vuole <em>sehr</em>. E non dire «Der Mantel kostet sehr»: dopo il verbo si usa <em>viel</em> (o <em>sehr viel</em>)."
+        trap: "Non dire «Der Pullover ist viel schön»: davanti a un aggettivo al grado positivo ci vuole <em>sehr</em> (<em>viel</em> sta invece davanti al comparativo: <em>viel schöner</em>). E con <em>kosten</em> non dire «Der Mantel kostet sehr»: si usa <em>viel</em> (o <em>sehr viel</em>)."
       },
       {
         tip: "In negozio ti serviranno spesso due frasi: <em>Der Mantel ist zu teuer</em> e <em>Die Hose ist zu eng</em>. Dopo <em>zu</em> davanti a un aggettivo non cambia niente."
@@ -385,30 +385,30 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "sehr, zu, viel, wenig",
-      note: "<b>Sehr</b> e <b>zu</b> stanno davanti all'aggettivo; <b>viel</b> e <b>wenig</b> stanno dopo il verbo.",
+      note: "<b>Sehr</b> e <b>zu</b> stanno davanti all'aggettivo al grado positivo; con <b>kosten</b>, <b>viel</b> e <b>wenig</b> stanno dopo il verbo.",
       table: {
         head: ["avverbio", "significato", "posizione", "esempio"],
         rows: [
           ["sehr", "molto", "davanti all'aggettivo", "Der Pullover ist sehr schön."],
           ["zu", "troppo", "davanti all'aggettivo", "Die Hose ist zu klein."],
-          ["viel", "molto, tanto", "dopo il verbo", "Der Mantel kostet viel."],
-          ["wenig", "poco", "dopo il verbo", "Das Hemd kostet wenig."]
+          ["viel", "molto, tanto", "dopo kosten", "Der Mantel kostet viel."],
+          ["wenig", "poco", "dopo kosten", "Das Hemd kostet wenig."]
         ]
       },
       examples: [
         { tr: "Il maglione è molto bello." },
         { tr: "I pantaloni sono troppo piccoli.", note: "zu davanti all'aggettivo" },
         { tr: "Il vestito è troppo caro." },
-        { tr: "Il cappotto costa molto.", note: "viel dopo il verbo" },
-        { tr: "La camicia costa poco.", note: "wenig dopo il verbo" },
+        { tr: "Il cappotto costa molto.", note: "viel dopo kosten" },
+        { tr: "La camicia costa poco.", note: "wenig dopo kosten" },
         { tr: "La giacca è un po' troppo grande." }
       ]
     },
     vocab: [
       "molto (davanti a un aggettivo)",
       "troppo (davanti a un aggettivo)",
-      "molto, tanto (dopo il verbo)",
-      "poco (dopo il verbo)",
+      "molto, tanto (dopo kosten)",
+      "poco (dopo kosten)",
       "un po'",
       "grande, alto",
       "piccolo, basso",
@@ -438,7 +438,7 @@ LINGUAI.addStrings("it", {
           "Der Mantel ist sehr groß.",
           "Die Jacke kostet sehr."
         ],
-        why: "<i>Viel schön</i> è sbagliato: davanti a un aggettivo ci vuole <i>sehr</i>. <i>Kostet sehr</i> da solo non va: si dice <i>kostet viel</i> o <i>kostet sehr viel</i>."
+        why: "<i>Viel schön</i> è sbagliato: davanti a un aggettivo ci vuole <i>sehr</i>. Con <i>kosten</i>, <i>kostet sehr</i> da solo non va: si dice <i>kostet viel</i> o <i>kostet sehr viel</i>."
       },
       {
         q: "Completa: «Der Mantel ist ___ teuer. Ich nehme ihn nicht.» (troppo)",
@@ -455,13 +455,13 @@ LINGUAI.addStrings("it", {
         pairs: ["grande", "piccolo", "lungo", "corto"]
       },
       {
-        q: "Completa le due frasi.",
+        q: "Completa: «Il maglione è molto bello, ma costa molto.»",
         tr: "Il maglione è molto bello, ma costa molto.",
-        why: "<i>Sehr</i> davanti all'aggettivo, <i>viel</i> dopo il verbo."
+        why: "<i>Sehr</i> davanti all'aggettivo, <i>viel</i> dopo <i>kosten</i>."
       },
       {
         q: "Traduci: «Il cappotto è molto bello, ma costa troppo.»",
-        why: "<i>Sehr schön</i> (davanti all'aggettivo) e <i>zu viel</i> (dopo il verbo): <i>er kostet zu viel</i>."
+        why: "<i>Sehr schön</i> (davanti all'aggettivo) e <i>zu viel</i> (dopo <i>kosten</i>): <i>er kostet zu viel</i>."
       },
       {
         tr: "I pantaloni sono troppo piccoli, ma la giacca è molto bella.",
@@ -518,7 +518,7 @@ LINGUAI.addStrings("it", {
       },
       {
         q: "Traduci: «La giacca è bella, ma troppo cara. Non la prendo.»",
-        why: "<i>Zu teuer</i> davanti all'aggettivo; <i>sie</i> per il femminile, con <i>nicht</i> in fondo."
+        why: "<i>Zu</i> sta davanti all'aggettivo <i>teuer</i>; <i>sie</i> riprende <i>die Jacke</i> e <i>nicht</i>, in fondo, nega l'acquisto."
       },
       {
         tr: "Quale maglione è rosso e quale è blu?",

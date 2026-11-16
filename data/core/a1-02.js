@@ -265,7 +265,7 @@ LINGUAI.addUnits("A1", [
           {
             t: "trans",
             dir: "toIt",
-            a: ["Der Mantel ist sehr schön, aber er kostet zu viel"]
+            a: ["Der Mantel ist sehr schön, aber er kostet zu viel", "Der Mantel ist sehr schön, aber kostet zu viel"]
           },
           { t: "listen", it: "Die Hose ist zu klein, aber die Jacke ist sehr schön." },
           { t: "speak", it: "Das Kleid ist sehr schön, aber zu teuer." }
