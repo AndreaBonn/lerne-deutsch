@@ -1562,5 +1562,557 @@ LINGUAI.addStrings("pl", {
         why: "W <i>braucht</i> <b>au</b> brzmi [aʊ], a następujące po nim <b>ch</b> to [x]; w <i>sie</i> <b>s</b> jest dźwięczne [z]."
       }
     ]
+  },
+  "unit:a2-u04": {
+    title: "Zdrowie",
+    grammarNote: "mir tut ... weh · bei i zu z celownikiem · określenia czasu (am, um, seit, vor) · Konjunktiv II w radach (du solltest, ich würde) · czasowniki zwrotne · dass · deshalb"
+  },
+  "lesson:a2-u04-l1": {
+    theme: "Ból i objawy",
+    title: "Boli mnie głowa",
+    objectives: [
+      "powiedzieć, co boli, z celownikiem osoby: mir, dir, ihm, ihr, uns, euch, ihnen",
+      "dopasować tut lub tun do części ciała, która jest podmiotem",
+      "nazywać części ciała z rodzajnikiem i liczbą mnogą"
+    ],
+    theory: [
+      {
+        h: "Osoba w celowniku, część ciała w mianowniku",
+        p: "Żeby powiedzieć, że jakaś część ciała boli, niemiecki używa czasownika <em>wehtun</em>. <b>Osoba</b> stoi w <b>celowniku</b> (<em>mir, dir, ihm, ihr, uns, euch, ihnen</em>), a <b>część ciała</b> jest <b>podmiotem</b>, więc czasownik zgadza się z nią: <em>Mir tut der Kopf weh</em> (liczba pojedyncza, <em>tut</em>), <em>Mir tun die Füße weh</em> (liczba mnoga, <em>tun</em>). <em>Weh</em> stoi na końcu zdania, bo <em>wehtun</em> jest czasownikiem rozdzielnie złożonym. Przy rzeczowniku osoba dostaje celownik rzeczownika: <em>Meiner Schwester tut der Rücken weh.</em> Szyk można odwrócić bez zmiany sensu: <em>Der Kopf tut mir weh.</em> Pytanie: <em>Wo tut es dir weh?</em> albo <em>Was tut dir weh?</em>"
+      },
+      {
+        contrast: "Po polsku zdanie ma tę samą budowę: «boli mnie głowa», «bolą mnie nogi». Część ciała jest podmiotem, a czasownik zgadza się z nią w liczbie. Różnica jest w przypadku osoby: po polsku stoi w <b>bierniku</b> (<em>mnie, cię, go, ją, nas, was</em>), a po niemiecku w <b>celowniku</b>, więc kuszące <em>mich</em> (biernik) jest błędem, trzeba <em>mir</em>. Po polsku nie ma rodzajników, a po niemiecku część ciała ma swój rodzaj, który trzeba zapamiętać razem z rzeczownikiem: <em>głowa</em> jest rodzaju żeńskiego, ale <em>der Kopf</em> męskiego; <em>noga</em> jest żeńska, a <em>das Bein</em> nijakie. Na ból głowy jest też <em>Ich habe Kopfschmerzen</em>, gdzie podmiotem jest osoba, jak w «mam ból głowy». Uwaga na <em>der Hals</em>: to słowo znaczy zarówno szyję, jak i gardło."
+      },
+      {
+        trap: "Przy <em>wehtun</em> osoba nie jest podmiotem: <em>Ich tut der Kopf weh</em> i <em>Mich tut der Kopf weh</em> są błędne, potrzebne jest <em>mir</em>. Czasownik nie zgadza się też z osobą, tylko z częścią ciała: <em>Mir tun die Füße weh</em> (liczba mnoga), a nie <em>Mir tut die Füße weh</em>. Poprawne jest także <em>Mein Kopf tut weh</em>: zaimek <em>mein</em> mówi, kto cierpi, ale podmiotem nadal jest <em>Kopf</em>."
+      },
+      {
+        tip: "Najpierw znajdź część ciała i sprawdź, czy jest w liczbie pojedynczej, czy mnogiej: to ona decyduje o <em>tut</em> lub <em>tun</em>. Potem dodaj osobę w celowniku. Liczbę mnogą nazw części ciała ucz się razem z rodzajnikiem: <em>der Fuß, die Füße</em>; <em>das Ohr, die Ohren</em>."
+      }
+    ],
+    grammar: {
+      title: "mir tut ... weh",
+      note: "Osoba stoi w <b>celowniku</b>, część ciała jest <b>podmiotem</b> i decyduje o <b>tut</b> (liczba pojedyncza) lub <b>tun</b> (liczba mnoga). <b>Weh</b> idzie na koniec.",
+      table: {
+        head: ["osoba", "celownik", "przykład"],
+        rows: [
+          ["ich", "mir", "Mir tut der Kopf weh."],
+          ["du", "dir", "Dir tun die Füße weh."],
+          ["er", "ihm", "Ihm tut der Bauch weh."],
+          ["sie", "ihr", "Ihr tut der Rücken weh."],
+          ["wir", "uns", "Uns tun die Beine weh."],
+          ["ihr", "euch", "Euch tut der Hals weh."],
+          ["sie, Sie", "ihnen, Ihnen", "Ihnen tun die Ohren weh."]
+        ]
+      },
+      examples: [
+        { tr: "Boli mnie głowa.", note: "mir: celownik od ich; der Kopf jest podmiotem" },
+        { tr: "Gdzie cię boli?", note: "es jest podmiotem ogólnym: Wo tut es dir weh?" },
+        { tr: "Bolą go zęby.", note: "ihm; die Zähne to liczba mnoga, więc tun" },
+        { tr: "Moją siostrę bolą plecy.", note: "celownik także przy rzeczowniku: meiner Schwester" },
+        { tr: "Bolą nas nogi.", note: "uns; das Bein, die Beine" },
+        { tr: "Mam ból głowy.", note: "wariant: tu podmiotem jest ich, Kopfschmerzen to liczba mnoga" }
+      ]
+    },
+    vocab: [
+      "głowa",
+      "szyja, gardło",
+      "brzuch",
+      "plecy",
+      "noga",
+      "stopa",
+      "ząb",
+      "ucho",
+      "ból",
+      "boleć",
+      "chory",
+      "zmęczony"
+    ],
+    exercises: [
+      {
+        q: "Jak powiesz: «Boli mnie głowa»?",
+        opts: ["Ich tut der Kopf weh.", "Mir tut der Kopf weh.", "Mich tut der Kopf weh."],
+        why: "Osoba stoi w celowniku: <b>mir</b>. <i>Der Kopf</i> jest podmiotem, więc czasownik to <i>tut</i>. <i>Ich</i> to mianownik, a <i>mich</i> biernik."
+      },
+      {
+        q: "Jak powiesz: «Bolą mnie stopy»?",
+        opts: ["Mir tut die Füße weh.", "Mir tun die Füße weh.", "Mich tun die Füße weh."],
+        why: "<i>Die Füße</i> to liczba mnoga i podmiot, więc czasownik to <b>tun</b>. Osoba zostaje w celowniku, <i>mir</i>."
+      },
+      {
+        q: "Uzupełnij: «Mir ___ die Beine weh.» (boleć; część ciała jest w liczbie mnogiej)",
+        hint: "tun, forma liczby mnogiej",
+        why: "<b>Tun</b>: podmiotem jest <i>die Beine</i>, liczba mnoga. Przy podmiocie w liczbie pojedynczej byłoby <i>tut</i>."
+      },
+      {
+        q: "Uzupełnij: «Anna ist krank. ___ tut der Hals weh.» (ją: celownik od sie)",
+        hint: "zaimek w celowniku",
+        why: "<b>Ihr</b>: celownik od <i>sie</i> (ona). <i>Der Hals</i> jest podmiotem, liczba pojedyncza."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Jestem zmęczony. Bolą mnie nogi. A co z Lisą? Bolą ją plecy.",
+        why: "<i>Mir</i> dla <i>ich</i> i <i>ihr</i> dla <i>Lisa</i>: to celowniki. Czasownik zgadza się z częścią ciała: <i>tun</i> z <i>die Beine</i>, <i>tut</i> z <i>der Rücken</i>."
+      },
+      {
+        q: "Dopasuj każde zdanie do jego tłumaczenia.",
+        pairs: [
+          "Boli mnie głowa.",
+          "Bolą mnie stopy.",
+          "Boli ją brzuch.",
+          "Bolą go uszy."
+        ]
+      },
+      {
+        q: "Ułóż wyrazy w odpowiedniej kolejności.",
+        tr: "Bolą mnie stopy.",
+        why: "Czasownik zostaje na drugim miejscu. Pasują <i>Mir tun die Füße weh</i> i <i>Die Füße tun mir weh</i>: zmienia się szyk, nie sens."
+      },
+      {
+        q: "Przetłumacz z użyciem tun ... weh i celownika: «Boli mnie głowa.»",
+        why: "<i>Mir tut der Kopf weh</i> albo <i>Der Kopf tut mir weh</i>. Po polsku <i>głowa</i> jest rodzaju żeńskiego, ale <i>der Kopf</i> jest męski."
+      },
+      {
+        tr: "Dzień dobry, pani doktor. Boli mnie głowa, a także bolą mnie uszy.",
+        why: "W <i>Kopf</i> <b>o</b> jest krótkie, a <b>pf</b> to afrykata [pf]; w <i>Ohren</i> <b>h</b> się nie czyta, a <b>o</b> jest długie."
+      },
+      {
+        tr: "Jestem chory. Boli mnie gardło i bolą mnie nogi.",
+        why: "W <i>Hals</i> początkowe <b>h</b> to lekkie tchnienie [h], mniej szorstkie niż polskie <b>h</b>; w <i>weh</i> <b>w</b> czyta się [v], a <b>h</b> jest niemy; w <i>Beine</i> <b>ei</b> brzmi [aɪ]."
+      }
+    ]
+  },
+  "lesson:a2-u04-l2": {
+    theme: "U lekarza",
+    title: "U lekarza",
+    objectives: [
+      "odróżniać bei + celownik (bycie u kogoś) od zu + celownik (iść do kogoś), mówiąc «u lekarza» i «do lekarza»",
+      "używać form ściągniętych beim, zum, zur",
+      "mówić, kiedy i od jak dawna, z am, um, seit i vor",
+      "umówić wizytę w zrozumiały sposób"
+    ],
+    theory: [
+      {
+        h: "bei, gdy się jest u kogoś, zu, gdy się do kogoś idzie",
+        p: "Żeby powiedzieć, <b>gdzie się jest</b> u danej osoby, używa się <b>bei + celownik</b>: <em>Ich bin beim Arzt</em> (<em>bei dem</em> staje się <em>beim</em>). Żeby powiedzieć, <b>dokąd się idzie</b>, używa się <b>zu + celownik</b>: <em>Ich gehe zum Arzt</em> (<em>zu dem</em> staje się <em>zum</em>), <em>Ich gehe zur Ärztin</em> (<em>zu der</em> staje się <em>zur</em>). Także <em>zur Apotheke</em> to ruch do miejsca. Dla czasu: <b>am</b> z dniem (<em>am Montag</em>), <b>um</b> z godziną (<em>um zehn Uhr</em>), <b>seit + celownik</b> dla tego, co trwa od jakiegoś momentu i trwa nadal (<em>seit drei Tagen</em>), <b>vor + celownik</b> dla tego, co zdarzyło się wcześniej (<em>vor drei Tagen</em>). Umówienie wizyty: <em>Ich möchte einen Termin vereinbaren.</em>"
+      },
+      {
+        contrast: "Polski już rozróżnia te dwa znaczenia: «jestem <b>u</b> lekarza» i «idę <b>do</b> lekarza». Niemiecki robi to samo (<em>bei</em> i <em>zu</em>), ale oba przyimki rządzą celownikiem, podczas gdy po polsku oba rządzą dopełniaczem. Po niemiecku <em>bei dem</em> i <em>zu dem</em> zlewają się w <em>beim</em> i <em>zum</em>, czego polski nie ma. W czasie też są różnice. «W poniedziałek» to <em>am Montag</em>, «o dziesiątej» to <em>um zehn Uhr</em>. «Od trzech dni» to <em>seit drei Tagen</em>, z czasem teraźniejszym jak po polsku (<em>Ich habe seit drei Tagen Fieber</em>, «mam gorączkę od trzech dni»), tyle że po polsku po «od» stoi dopełniacz, a po niemiecku celownik. Z kolei «trzy dni temu» to <em>vor drei Tagen</em>: przyimek stoi <b>przed</b> okresem, a nie po nim jak «temu»."
+      },
+      {
+        trap: "<em>Bei</em> i <em>zu</em> rządzą celownikiem. <em>Zum Arzt</em> i <em>zur Ärztin</em> to zwykłe formy ściągnięte; <em>zu dem</em> i <em>zu der</em> pojawiają się, gdy chce się uwypuklić rodzajnik. Żeby powiedzieć, że idziesz do lekarza, użyj <em>Ich gehe zum Arzt</em>; <em>beim Arzt</em> znaczy, że jesteś u lekarza. Po <em>seit</em> i <em>vor</em> także liczba mnoga stoi w celowniku, z <b>-n</b>: <em>seit drei Tagen</em>, a nie <em>seit drei Tage</em>."
+      },
+      {
+        tip: "Zapytaj najpierw: «jestem tam, czy idę tam?». <em>Wo?</em> prosi o <em>bei</em>, <em>wohin?</em> prosi o <em>zu</em>. Przy umawianiu wizyty trzymaj razem dzień i godzinę: <em>am Montag um zehn Uhr</em>."
+      }
+    ],
+    grammar: {
+      title: "bei, zu, am, um, seit, vor",
+      note: "U lekarza: <b>bei</b> + celownik dla miejsca, w którym się jest, <b>zu</b> + celownik dla ruchu. W czasie: <b>am</b> (dzień), <b>um</b> (godzina), <b>seit</b> (od kiedy), <b>vor</b> (temu).",
+      table: {
+        head: ["pytanie", "forma", "przykład"],
+        rows: [
+          ["Wo? (u osoby)", "bei + celownik", "Ich bin beim Arzt."],
+          ["Wohin? (do osoby)", "zu + celownik", "Ich gehe zum Arzt."],
+          ["Wohin? (do miejsca)", "zu + celownik", "Ich gehe zur Apotheke."],
+          ["kiedy (dzień)", "am", "am Montag"],
+          ["kiedy (godzina)", "um", "um zehn Uhr"],
+          ["od jak dawna", "seit + celownik", "seit drei Tagen"],
+          ["jak dawno temu", "vor + celownik", "vor drei Tagen"]
+        ]
+      },
+      examples: [
+        { tr: "Jestem u lekarza.", note: "bei dem staje się beim: miejsce, w którym się jest" },
+        { tr: "Idę do lekarza.", note: "zu dem staje się zum: ruch do osoby" },
+        { tr: "Moja mama idzie do lekarki.", note: "zu der staje się zur" },
+        { tr: "Idę do apteki.", note: "zur Apotheke: ruch do miejsca" },
+        { tr: "Mam gorączkę od trzech dni.", note: "seit + celownik liczby mnogiej: Tagen" },
+        { tr: "Wizyta jest w poniedziałek o dziesiątej.", note: "am z dniem, um z godziną" }
+      ]
+    },
+    vocab: [
+      "lekarz",
+      "lekarka",
+      "gabinet lekarski",
+      "wizyta, termin",
+      "kasa chorych, ubezpieczyciel zdrowotny",
+      "recepta",
+      "apteka",
+      "tabletka",
+      "gorączka",
+      "kaszel",
+      "umówić (wizytę)",
+      "od (jak długo)"
+    ],
+    exercises: [
+      {
+        q: "Jesteś u lekarza, a nie idziesz do niego. Które zdanie jest poprawne?",
+        opts: ["Ich bin zum Arzt.", "Ich bin beim Arzt.", "Ich bin bei Arzt."],
+        why: "Żeby powiedzieć, gdzie się jest u osoby: <b>bei</b> + celownik, a <i>bei dem</i> staje się <i>beim</i>. <i>Zum</i> oznacza ruch."
+      },
+      {
+        q: "Uzupełnij: «Ich gehe ___ Ärztin.» (zu z rodzajnikiem, w formie ściągniętej)",
+        hint: "zu + der, forma ściągnięta",
+        why: "<b>Zur</b>: <i>zu der</i> ściąga się w <i>zur</i>. Po ruchu do osoby potrzebne jest <i>zu</i> + celownik."
+      },
+      {
+        q: "Uzupełnij: «Ich habe ___ drei Tagen Fieber.» (Mam gorączkę od trzech dni.)",
+        hint: "od jak dawna, + celownik",
+        why: "<b>Seit</b> + celownik dla tego, co trwa od pewnego momentu i trwa nadal; <i>Tagen</i> ma <b>-n</b> celownika liczby mnogiej."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Chciałbym umówić się na wizytę. Czy w poniedziałek o dziesiątej będzie dobrze?",
+        why: "<i>Am Montag</i> z dniem, <i>um zehn Uhr</i> z godziną."
+      },
+      {
+        q: "Dopasuj każde wyrażenie do jego tłumaczenia.",
+        pairs: [
+          "u lekarza (jestem tam)",
+          "do lekarza (idę tam)",
+          "od trzech dni",
+          "trzy dni temu"
+        ]
+      },
+      {
+        q: "Ułóż wyrazy w odpowiedniej kolejności.",
+        tr: "Jutro idę do lekarza.",
+        why: "Czasownik zostaje na drugim miejscu. Pasują <i>Ich gehe morgen zum Arzt</i> i <i>Morgen gehe ich zum Arzt</i>; możliwe są też szyki z <i>zum Arzt</i> na początku albo z <i>morgen</i> na końcu, które uwypuklają jeden element."
+      },
+      {
+        q: "Przetłumacz (użyj am i zu): «W poniedziałek idę do lekarki.»",
+        why: "<i>Ich gehe am Montag zur Ärztin</i>: <i>am</i> z dniem, <i>zur</i> (= <i>zu der</i>) z ruchem. Przy <i>Am Montag</i> na początku czasownik zostaje na drugim miejscu: <i>Am Montag gehe ich zur Ärztin</i>."
+      },
+      {
+        q: "Dzwonisz do gabinetu lekarskiego, żeby umówić wizytę.",
+        setting: "Dzwonisz do gabinetu doktora Bergera, bo masz gorączkę.",
+        lines: [
+          { tr: "Gabinet Berger, dzień dobry." },
+          {
+            tr: "Powiedz, że chciałbyś umówić się na wizytę.",
+            answerTr: "Dzień dobry, chciałbym umówić się na wizytę."
+          },
+          { tr: "Chętnie. Od jak dawna ma Pan gorączkę?" },
+          {
+            tr: "Odpowiedz, że masz gorączkę od trzech dni.",
+            answerTr: "Mam gorączkę od trzech dni."
+          }
+        ]
+      },
+      {
+        tr: "Dzień dobry, chciałbym umówić się na wizytę. Mam gorączkę od trzech dni i boli mnie głowa.",
+        why: "W <i>seit</i> początkowe <b>s</b> jest dźwięczne [z], a <b>ei</b> brzmi [aɪ]; w <i>Termin</i> akcent pada na ostatnią sylabę."
+      },
+      {
+        tr: "W poniedziałek o dziesiątej mam wizytę u lekarza.",
+        why: "W <i>zehn</i> <b>z</b> to [ts], <b>e</b> jest długie, a <b>h</b> nieme; w <i>Uhr</i> <b>u</b> jest długie, a końcowe <b>r</b> często się wokalizuje."
+      }
+    ]
+  },
+  "lesson:a2-u04-l3": {
+    theme: "Rady",
+    title: "Powinieneś odpocząć",
+    objectives: [
+      "dawać radę z du solltest, ihr solltet, Sie sollten",
+      "wyrażać osobistą radę z ich würde + bezokolicznik",
+      "używać właściwego zaimka zwrotnego z czasownikiem takim jak sich ausruhen",
+      "stawiać zaimek zwrotny przed bezokolicznikiem na końcu zdania"
+    ],
+    theory: [
+      {
+        h: "Rada w Konjunktiv II",
+        p: "Żeby dać radę, niemiecki używa Konjunktiv II. Z <b>sollen</b> mówi się <em>solltest</em>, <em>solltet</em>, <em>sollten</em>: <em>Du solltest dich ausruhen.</em> Żeby powiedzieć, co by się zrobiło na miejscu drugiej osoby, używa się <b>würde + bezokolicznik</b>: <em>Ich würde zum Arzt gehen.</em> Wyrażenie <em>an deiner Stelle</em> dobrze łączy się z <em>würde</em>: <em>An deiner Stelle würde ich im Bett bleiben.</em> Bezokolicznik idzie na koniec zdania, a zaimek zwrotny stoi przed nim."
+      },
+      {
+        h: "Czasowniki zwrotne leksykalne",
+        p: "<em>Sich ausruhen, sich hinlegen, sich erholen, sich fühlen</em> są zwrotne z natury: zaimek jest częścią czasownika i nie znaczy «odpoczywać samego siebie». Zaimek stoi w <b>bierniku</b> i zmienia się z osobą: <em>mich, dich, sich, uns, euch, sich</em>. Stoi po czasowniku w formie osobowej: <em>Ich ruhe mich aus.</em> Z <em>sollen</em> i <em>würde</em> stoi przed bezokolicznikiem: <em>Du solltest dich ausruhen. Ich würde mich hinlegen.</em> W formie grzecznościowej: <em>Sie sollten sich hinlegen</em> (<em>sich</em> pisze się małą literą)."
+      },
+      {
+        contrast: "Po polsku radę można dać przez «powinieneś» («powinieneś odpocząć») albo przez tryb warunkowy («poszedłbym do lekarza»). Niemiecki używa Konjunktiv II czasownika <em>sollen</em> albo <em>würde</em> + bezokolicznik. Różnica w sile: <em>Du solltest</em> to rada, a <em>du sollst</em> brzmi jak polskie «masz» i oznacza nakaz. Zaimek zwrotny po polsku to niezmienne <em>się</em> («położyć się», «czuć się»), a po niemiecku zmienia się z osobą: <em>mich, dich, sich, uns, euch</em>. Czasowniki też nie zawsze się pokrywają: <em>sich ausruhen</em> odpowiada polskiemu «odpocząć», które nie jest zwrotne, <em>sich hinlegen</em> to «położyć się», a <em>sich erholen</em> to «wypocząć, dojść do siebie»."
+      },
+      {
+        trap: "<em>Du solltest</em> to rada; <em>du sollst</em> to obowiązek albo polecenie kogoś innego i brzmi dużo mocniej. Nie przesuwaj zaimka na koniec: <em>Du solltest ausruhen dich</em> jest błędne, szyk to <em>dich ausruhen</em>. Z <em>würde</em> bezokolicznik zostaje na końcu: <em>Ich würde mich ausruhen</em>, a nie <em>Ich würde ausruhen mich</em>. Zdarza się też <em>Du solltest ausruhen</em> bez zaimka, bo <em>ausruhen</em> może występować bez <em>sich</em>; tu ćwiczymy formę z <em>sich ausruhen</em>."
+      },
+      {
+        tip: "Do rady przygotuj dwie wersje: <em>Du solltest ...</em>, żeby powiedzieć to drugiej osobie, i <em>Ich würde ...</em>, żeby powiedzieć, co ty byś zrobił. Potem sprawdź zaimek zwrotny: ta sama osoba co podmiot (<em>ich ... mich</em>, <em>du ... dich</em>)."
+      }
+    ],
+    grammar: {
+      title: "Konjunktiv II w radach",
+      note: "<b>sollen</b> w Konjunktiv II do doradzania (<b>du solltest</b>), <b>würde + bezokolicznik</b>, żeby powiedzieć, co ty byś zrobił. Zaimek zwrotny jest w bierniku i stoi przed bezokolicznikiem.",
+      table: {
+        head: ["osoba", "sollen", "würde", "zaimek zwrotny"],
+        rows: [
+          ["ich", "sollte", "würde", "mich"],
+          ["du", "solltest", "würdest", "dich"],
+          ["er, sie, es", "sollte", "würde", "sich"],
+          ["wir", "sollten", "würden", "uns"],
+          ["ihr", "solltet", "würdet", "euch"],
+          ["sie, Sie", "sollten", "würden", "sich"]
+        ]
+      },
+      examples: [
+        { tr: "Powinieneś odpocząć.", note: "du solltest + dich + bezokolicznik na końcu" },
+        { tr: "Poszedłbym do lekarza.", note: "ich würde + bezokolicznik na końcu" },
+        { tr: "Na twoim miejscu zostałbym w łóżku.", note: "an deiner Stelle: celownik po an" },
+        { tr: "Powinniście pić dużo herbaty.", note: "ihr solltet: sollte- + końcówka osobowa -t" },
+        { tr: "Powinien Pan się położyć.", note: "forma grzecznościowa: Sie sollten sich hinlegen" },
+        { tr: "Wypocząłbym na urlopie.", note: "sich erholen: würde + mich + bezokolicznik" }
+      ]
+    },
+    vocab: [
+      "odpoczywać",
+      "położyć się",
+      "wypocząć, dojść do siebie",
+      "czuć się",
+      "rada",
+      "herbata",
+      "łóżko",
+      "spokój, odpoczynek",
+      "urlop, wakacje",
+      "zdrowy",
+      "powinien (sollen)",
+      "na twoim miejscu"
+    ],
+    exercises: [
+      {
+        q: "Doradź zmęczonej przyjaciółce: «Powinnaś odpocząć.»",
+        opts: ["Du sollst dich ausruhen.", "Du solltest dich ausruhen.", "Du solltest ausruhen dich."],
+        why: "<b>Du solltest dich ausruhen</b>: Konjunktiv II od <i>sollen</i> daje radę, a <i>dich</i> stoi przed bezokolicznikiem. <i>Du sollst</i> to nakaz; w trzecim zdaniu zaimek stoi w złym miejscu."
+      },
+      {
+        tr: "Konjunktiv II czasownika sollen, wszystkie osoby.",
+        why: "<i>Sollte, solltest, sollte, sollten, solltet, sollten</i>: to formy Präteritum, ale tu służą do rady. Pierwsza i trzecia osoba liczby pojedynczej są takie same."
+      },
+      {
+        tr: "Konjunktiv II czasownika sich ausruhen z würde, wszystkie osoby.",
+        why: "<i>Würde mich ausruhen, würdest dich ausruhen, würde sich ausruhen, würden uns ausruhen, würdet euch ausruhen, würden sich ausruhen</i>: <i>würde</i> + zaimek zwrotny + bezokolicznik."
+      },
+      {
+        q: "Uzupełnij: «Du bist krank. Du ___ zum Arzt gehen.» (powinieneś: sollen, Konjunktiv II)",
+        hint: "sollen, Konjunktiv II, du",
+        why: "<b>Solltest</b>: forma dla <i>du</i> to <i>solltest</i>, z <b>-st</b>. Bezokolicznik <i>gehen</i> stoi na końcu."
+      },
+      {
+        q: "Uzupełnij: «Wir sind müde. Wir sollten ___ ausruhen.» (wir)",
+        hint: "zaimek zwrotny, biernik",
+        why: "<b>Uns</b>: zaimek zwrotny dla <i>wir</i> to <i>uns</i>, przed bezokolicznikiem."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Masz gorączkę. Na twoim miejscu poszedłbym do lekarza. I powinieneś odpocząć.",
+        why: "<i>An deiner Stelle würde ich ...</i>, żeby powiedzieć, co ty byś zrobił; <i>du solltest dich ausruhen</i>, z <i>dich</i> dla <i>du</i>."
+      },
+      {
+        q: "Dopasuj każde zdanie do jego tłumaczenia.",
+        pairs: [
+          "Powinieneś odpocząć.",
+          "Poszedłbym do lekarza.",
+          "Powinniście pić dużo herbaty.",
+          "Powinien Pan się położyć."
+        ]
+      },
+      {
+        q: "Przetłumacz (użyj sich ausruhen): «Na twoim miejscu odpocząłbym.»",
+        why: "<i>An deiner Stelle würde ich mich ausruhen</i>: <i>würde</i> na drugim miejscu po <i>An deiner Stelle</i>, potem <i>ich mich</i> i bezokolicznik na końcu. Pasuje też <i>Ich würde mich an deiner Stelle ausruhen</i>."
+      },
+      {
+        tr: "Wyglądasz na zmęczonego. Na twoim miejscu położyłbym się i powinieneś pić dużo herbaty.",
+        why: "W <i>Stelle</i> początkowe <b>st</b> brzmi [ʃt], a w <i>solltest</i> jest [st]; w <i>würde</i> <b>ü</b> jest krótkie [ʏ]."
+      },
+      {
+        tr: "Powinieneś odpocząć, a ja poszedłbym do lekarza.",
+        why: "W <i>ausruhen</i> <b>au</b> brzmi [aʊ], a <b>h</b> się nie czyta; w <i>dich</i> <b>ch</b> po <b>i</b> to [ç], nie polskie <b>ch</b>."
+      }
+    ]
+  },
+  "lesson:a2-u04-l4": {
+    theme: "Styl życia",
+    title: "Zdrowy tryb życia",
+    objectives: [
+      "wprowadzać treść z dass po ich finde, ich glaube, ich weiß, der Arzt sagt",
+      "stawiać czasownik w formie osobowej na końcu w zdaniu z dass",
+      "łączyć przyczynę i skutek przez deshalb, po którym czasownik następuje zaraz",
+      "mówić o sporcie, jedzeniu, śnie i nawykach"
+    ],
+    theory: [
+      {
+        h: "dass wysyła czasownik na koniec",
+        p: "Po czasownikach takich jak <em>finden, glauben, denken, wissen, sagen</em> treść przekazuje się z <b>dass</b>. Następujące po nim zdanie jest podrzędne: czasownik w formie osobowej idzie na <b>koniec</b>, a przecinek przed <em>dass</em> jest obowiązkowy. <em>Ich finde, dass Sport wichtig ist. Der Arzt sagt, dass ich mehr Wasser trinken soll.</em> Gdy jest bezokolicznik i czasownik modalny, modalny w formie osobowej zamyka zdanie: <em>... trinken soll</em>. Działa to tak jak <em>weil</em>, <em>als</em> i <em>wenn</em> z wcześniejszych lekcji."
+      },
+      {
+        h: "deshalb: skutek, z inwersją",
+        p: "<b>Deshalb</b> («dlatego») łączy dwa zdania główne. Stojąc na <b>pierwszym miejscu</b> drugiego, sprawia, że czasownik następuje zaraz po nim, a podmiot za czasownikiem: <em>Ich schlafe schlecht. Deshalb bin ich müde.</em> Synonimy: <em>deswegen, darum</em>. Można go też wstawić po przecinku: <em>Ich schlafe schlecht, deshalb bin ich müde.</em> Nie musi otwierać zdania (<em>Ich bin deshalb müde</em> też istnieje), ale gdy je otwiera, czasownik idzie zaraz za nim."
+      },
+      {
+        contrast: "Po polsku przed «że» też stawia się przecinek, więc ta zasada będzie znajoma: <em>Uważam, że sport jest ważny</em> i <em>Ich finde, dass Sport wichtig ist</em>. Różnica jest w szyku. Po polsku czasownik w zdaniu z «że» zostaje na swoim miejscu, po niemiecku idzie na koniec. Podobnie «dlatego»: po polsku szyk jest swobodny («dlatego jestem zmęczony», «jestem dlatego zmęczony»), a po niemiecku <em>deshalb</em> na początku wymusza czasownik zaraz po sobie, a podmiot za nim: <em>Deshalb bin ich müde</em>."
+      },
+      {
+        trap: "<em>Deshalb</em> nie wysyła czasownika na koniec jak <em>dass</em>: <em>Deshalb ich bin müde</em> i <em>Deshalb ich müde bin</em> są błędne. A z <em>dass</em> czasownik nie zostaje na drugim miejscu: <em>Ich finde, dass Sport ist wichtig</em> jest błędne. Nie myl <em>dass</em> (spójnik) z <em>das</em> (rodzajnik albo zaimek)."
+      },
+      {
+        tip: "Przed <em>dass</em> postaw przecinek i wyślij czasownik na koniec; po <em>deshalb</em> napisz czasownik od razu. Zanim napiszesz, zapytaj: czy zdanie zaczyna się od spójnika (<em>dass</em>, czasownik na końcu), czy od przysłówka (<em>deshalb</em>, czasownik zaraz)?"
+      }
+    ],
+    grammar: {
+      title: "dass i deshalb",
+      note: "<b>dass</b>: czasownik w formie osobowej idzie na koniec. <b>deshalb</b>: czasownik następuje zaraz po nim, podmiot za nim.",
+      table: {
+        head: ["element", "pozycja czasownika", "przykład"],
+        rows: [
+          ["zdanie główne", "drugie miejsce", "Sport ist wichtig."],
+          ["dass", "na końcu", "Ich finde, dass Sport wichtig ist."],
+          ["dass z czasownikiem modalnym", "modalny zamyka zdanie", "..., dass ich mehr trinken soll."],
+          ["deshalb", "zaraz po deshalb", "Ich schlafe schlecht. Deshalb bin ich müde."]
+        ]
+      },
+      examples: [
+        { tr: "Uważam, że sport jest ważny.", note: "dass + czasownik na końcu; przecinek przed dass jest obowiązkowy" },
+        { tr: "Lekarz mówi, że powinienem pić więcej wody.", note: "modalny soll zamyka zdanie po trinken" },
+        { tr: "Wiem, że papierosy są niezdrowe.", note: "dass ... sind: czasownik na końcu" },
+        { tr: "Źle śpię. Dlatego jestem zmęczony.", note: "deshalb na pierwszym miejscu, potem bin ich" },
+        { tr: "Je dużo warzyw. Dlatego rzadko choruje.", note: "deshalb, potem ist sie" },
+        { tr: "Uważam, że spacer jest zdrowy.", note: "dass ... gesund ist" }
+      ]
+    },
+    vocab: [
+      "jabłko",
+      "warzywa",
+      "posiłek",
+      "spacer",
+      "papieros",
+      "sen",
+      "zdrowie",
+      "woda",
+      "palić",
+      "regularnie",
+      "niezdrowy",
+      "ruszać się"
+    ],
+    exercises: [
+      {
+        q: "Z dass: «Uważam, że sport jest ważny.» Które zdanie jest poprawne?",
+        opts: [
+          "Ich finde, dass Sport ist wichtig.",
+          "Ich finde, dass Sport wichtig ist.",
+          "Ich finde dass, Sport wichtig ist."
+        ],
+        why: "<b>Dass</b> wysyła czasownik na koniec, a przecinek stoi <b>przed</b> <i>dass</i>. W pierwszym zdaniu czasownik jest na drugim miejscu, w trzecim przecinek stoi w złym miejscu."
+      },
+      {
+        q: "Które zdanie jest poprawne? «Źle śpię. Dlatego jestem zmęczony.»",
+        opts: [
+          "Ich schlafe schlecht. Deshalb ich bin müde.",
+          "Ich schlafe schlecht. Deshalb bin ich müde.",
+          "Ich schlafe schlecht. Deshalb ich müde bin."
+        ],
+        why: "Po <b>deshalb</b> czasownik następuje zaraz, potem podmiot: <i>Deshalb bin ich müde</i>. <i>Deshalb</i> nie wysyła czasownika na koniec."
+      },
+      {
+        q: "Uzupełnij: «Der Arzt sagt, ___ ich mehr Wasser trinken soll.» (że)",
+        hint: "spójnik",
+        why: "<b>Dass</b> wprowadza to, co mówi lekarz, i wysyła czasownik na koniec: <i>trinken soll</i>."
+      },
+      {
+        q: "Uzupełnij: «Ich glaube, dass er viel Gemüse ___.» (essen, er)",
+        hint: "essen, er, czasownik na końcu",
+        why: "<b>Isst</b>: forma dla <i>er</i> to <i>isst</i>, a z <i>dass</i> stoi na końcu zdania."
+      },
+      {
+        q: "Uzupełnij: «Ich bin oft müde. Deshalb ___ ich früh ins Bett.» (gehen, ich)",
+        hint: "gehen, ich",
+        why: "<b>Gehe</b>: po <i>Deshalb</i> czasownik następuje zaraz, potem <i>ich</i>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Wiem, że sport jest zdrowy. Ale uprawiam go za mało. Dlatego jestem często zmęczony.",
+        why: "<i>Dass</i> po <i>Ich weiß,</i> z czasownikiem na końcu; <i>deshalb</i> (także <i>deswegen</i> lub <i>darum</i>) otwiera następne zdanie, a <i>bin ich</i> następuje zaraz po nim."
+      },
+      {
+        q: "Dopasuj każde słowo do jego tłumaczenia.",
+        pairs: [
+          "że (wprowadza zdanie)",
+          "dlatego",
+          "regularnie",
+          "niezdrowy"
+        ]
+      },
+      {
+        q: "Przetłumacz (użyj dass): «Lekarz mówi, że muszę więcej spać.»",
+        why: "<i>Der Arzt sagt, dass ich mehr schlafen soll</i>: przecinek, <i>dass</i> i modalny <i>soll</i> na końcu po bezokoliczniku. Pasuje też <i>muss</i>, bo «muszę» może oddawać jedno i drugie."
+      },
+      {
+        tr: "Lekarz mówi, że muszę więcej spać. Źle śpię, dlatego jestem często zmęczony.",
+        why: "W <i>schlafen</i> i <i>schlecht</i> <b>sch</b> czyta się [ʃ]; w <i>dass</i> <b>ss</b> to bezdźwięczne <b>s</b>, a <b>a</b> jest krótkie."
+      },
+      {
+        tr: "Sądzę, że sport jest zdrowy. Dlatego codziennie chodzę na spacer.",
+        why: "W <i>Sport</i> początkowe <b>sp</b> brzmi [ʃp]; w <i>gesund</i> <b>s</b> jest dźwięczne [z]; w <i>spazieren</i> <b>sp</b> czyta się [ʃp], a <b>z</b> to [ts]."
+      }
+    ]
+  },
+  "lesson:a2-u04-test": {
+    theme: "Sprawdzian",
+    title: "Sprawdzian z jednostki 4",
+    objectives: [
+      "sprawdzić celownik przy wehtun, Konjunktiv II w radach (solltest, würde, także z czasownikiem zwrotnym) i zdania z dass"
+    ],
+    theory: [
+      {
+        p: "Dziesięć pytań o celownik przy <em>wehtun</em>, Konjunktiv II w radach i zdania z <em>dass</em>. Zaliczasz przy 70%. Nie zaglądaj do lekcji w trakcie odpowiadania: jeśli czegoś nie pamiętasz, lepiej wrócić do powtórki."
+      }
+    ],
+    exercises: [
+      {
+        tr: "Konjunktiv II czasownika sollen, wszystkie osoby.",
+        why: "<i>Sollte, solltest, sollte, sollten, solltet, sollten</i>: pierwsza i trzecia osoba liczby pojedynczej są takie same."
+      },
+      {
+        q: "Uzupełnij: «Anna hat Fieber. ___ tut der Kopf weh.» (ją)",
+        hint: "zaimek w celowniku",
+        why: "<b>Ihr</b>: celownik od <i>sie</i>; <i>der Kopf</i> jest podmiotem."
+      },
+      {
+        q: "Uzupełnij: «Wir sind müde. ___ tun die Beine weh.» (nas)",
+        hint: "zaimek w celowniku",
+        why: "<b>Uns</b>: celownik od <i>wir</i>; <i>die Beine</i> to liczba mnoga, więc <i>tun</i>."
+      },
+      {
+        q: "Uzupełnij: «Ich denke, ___ du dich ausruhen solltest.» (że)",
+        hint: "spójnik",
+        why: "<b>Dass</b> wprowadza to, co się myśli, i wysyła czasownik na koniec: <i>ausruhen solltest</i>."
+      },
+      {
+        q: "Uzupełnij: «Du bist krank. An deiner Stelle ___ ich zum Arzt gehen.» (werden, Konjunktiv II)",
+        hint: "werden, Konjunktiv II, ich",
+        why: "<b>Würde</b>: <i>würde</i> + bezokolicznik, żeby powiedzieć, co ty byś zrobił."
+      },
+      {
+        q: "Jak powiesz: «Bolą mnie nogi»?",
+        opts: ["Mir tut die Beine weh.", "Mir tun die Beine weh.", "Ich tun die Beine weh."],
+        why: "<i>Die Beine</i> to liczba mnoga i podmiot, więc <b>tun</b>; osoba zostaje w celowniku, <i>mir</i>."
+      },
+      {
+        q: "Dopasuj każde zdanie do jego tłumaczenia.",
+        pairs: [
+          "Boli mnie głowa.",
+          "Powinieneś odpocząć.",
+          "Poszedłbym do lekarza.",
+          "Wiem, że jest chory."
+        ]
+      },
+      {
+        q: "Przetłumacz (użyj dass i sollen): «Lekarz mówi, że mam odpocząć.»",
+        why: "<i>Der Arzt sagt, dass ich mich ausruhen soll</i>: <i>dass</i> wysyła czasownik na koniec; <i>mich</i> stoi przed bezokolicznikiem <i>ausruhen</i>."
+      },
+      {
+        tr: "Boli mnie głowa. Myślę, że powinienem odpocząć.",
+        why: "W <i>denke</i> <b>n</b> przed <b>k</b> brzmi [ŋ]; w <i>sollte</i> <b>o</b> jest krótkie."
+      },
+      {
+        tr: "Mój brat jest chory. Bolą go plecy i sądzę, że powinien iść do lekarza.",
+        why: "W <i>Rücken</i> <b>ü</b> jest krótkie [ʏ], a <b>ck</b> brzmi [k]; w <i>Mein</i> <b>ei</b> to [aɪ]; w <i>ihm</i> <b>h</b> się nie czyta, a <b>i</b> jest długie."
+      }
+    ]
   }
 });
