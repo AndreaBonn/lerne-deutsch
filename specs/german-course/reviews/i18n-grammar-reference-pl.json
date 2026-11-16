@@ -1,7 +1,18 @@
 {
-  "bundleHash": "6fd94875900b7e1c959d0cf841da3a527d303746f603bd10aac4cb5676b33afa",
-  "findings": [],
+  "bundleHash": "ff9f2e4b04ba6f603ab04a17caaa0f54385744d4131519a09e758ba433a521c8",
+  "findings": [
+    {
+      "kind": "spiegazione contrastiva errata",
+      "msg": "La nota afferma che in polacco l’aggettivo dopo «coś» e «nic» è al genitivo, contrapponendolo alla declinazione tedesca secondo il caso. Questo vale per «coś nowego / nic nowego», ma non in generale: «z czymś nowym / z niczym szczególnym» richiede lo strumentale. Precisare che anche in polacco la costruzione cambia secondo il caso e confrontare «etwas Neues → mit etwas Neuem» con «coś nowego → z czymś nowym».",
+      "path": "content[\"ref:g-indefinitpron\"].body"
+    },
+    {
+      "kind": "traduzione inesatta",
+      "msg": "«Chcę, żebyś przyszedł» esprime una volontà diretta, mentre «Ich möchte, dass du kommst» la attenua. Per un esempio equivalente usare «Ich will, dass du kommst», oppure cambiare il polacco in «Chciałbym/Chciałabym, żebyś przyszedł».",
+      "path": "content[\"ref:g-infinitiv-zu\"].body"
+    }
+  ],
   "lang": "pl",
   "unit": "i18n-grammar-reference",
-  "verdict": "pass"
+  "verdict": "fail"
 }
