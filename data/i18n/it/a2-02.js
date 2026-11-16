@@ -549,14 +549,13 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Könnten Sie ...? e le domande indirette",
-      note: "<b>Könnten Sie</b> + infinito in fondo. Domanda indiretta: <b>ob</b> o parola interrogativa, e il verbo coniugato <b>in fondo</b>.",
+      note: "<b>Könnten Sie</b> + infinito in fondo. Domanda indiretta: <b>ob</b> o parola interrogativa, e il verbo coniugato <b>in fondo</b>. Con <b>dass</b> (affermazione, non domanda) il verbo va in fondo allo stesso modo: <i>Ich rufe morgen wieder an</i> diventa <i>..., dass ich morgen wieder anrufe.</i>",
       table: {
         head: ["domanda diretta", "domanda indiretta", "introduce"],
         rows: [
           ["Ist Herr Weber im Büro?", "..., ob Herr Weber im Büro ist.", "ob (sì/no)"],
           ["Wann beginnt die Besprechung?", "..., wann die Besprechung beginnt.", "wann"],
-          ["Wo ist Frau Keller?", "..., wo Frau Keller ist.", "wo"],
-          ["Ich rufe morgen wieder an.", "..., dass ich morgen wieder anrufe.", "dass"]
+          ["Wo ist Frau Keller?", "..., wo Frau Keller ist.", "wo"]
         ]
       },
       examples: [
@@ -623,7 +622,7 @@ LINGUAI.addStrings("it", {
         q: "Sei al telefono con un'azienda.",
         setting: "Telefoni per parlare con la signora Keller.",
         lines: [
-          { tr: "Firma Brandt, buongiorno." },
+          { tr: "Ditta Brandt, buongiorno." },
           {
             tr: "Presentati e chiedi di essere messo in comunicazione con la signora Keller.",
             answerTr: "Buongiorno, sono Weber. Potrebbe passarmi la signora Keller?"
@@ -656,7 +655,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Apertura e chiusura di una mail formale",
-        p: "Una mail formale ha una formula fissa. All'inizio: <strong>Sehr geehrte Frau Keller,</strong> a una donna, <strong>Sehr geehrter Herr Weber,</strong> a un uomo, <strong>Sehr geehrte Damen und Herren,</strong> a più persone o a un destinatario sconosciuto. Si scrive <em>Frau</em> o <em>Herr</em> e il cognome, senza il nome di battesimo. In fondo: <strong>Mit freundlichen Grüßen</strong> e sotto il nome, di solito senza virgola finale. Il corpo del messaggio è breve: <em>Vielen Dank für Ihre E-Mail. Im Anhang finden Sie die Datei. Könnten Sie mir den Termin bitte bestätigen?</em>"
+        p: "Una mail formale ha una formula fissa. All'inizio: <strong>Sehr geehrte Frau Keller,</strong> a una donna, <strong>Sehr geehrter Herr Weber,</strong> a un uomo, <strong>Sehr geehrte Damen und Herren,</strong> a più persone o a un destinatario sconosciuto. Si scrive <em>Frau</em> o <em>Herr</em> e il cognome, senza il nome di battesimo. In fondo: <strong>Mit freundlichen Grüßen</strong> e sotto il nome, senza virgola finale. Il corpo del messaggio è breve: <em>Vielen Dank für Ihre E-Mail. Im Anhang finden Sie die Datei. Könnten Sie mir den Termin bitte bestätigen?</em>"
       },
       {
         contrast: "L'italiano apre con <em>Gentile signora Keller</em> o <em>Egregio signor Weber</em> e chiude con <em>Cordiali saluti</em>. Il tedesco usa <em>Sehr geehrte</em> (letteralmente «molto onorata»), ed è un aggettivo senza articolo: per questo prende <strong>-e</strong> con <em>Frau</em> e <strong>-er</strong> con <em>Herr</em>. Per una donna adulta si usa sempre <em>Frau</em>: <em>Fräulein</em> è considerato superato. Con <em>du</em> si apre con <em>Liebe Anna,</em> o <em>Lieber Tim,</em> e si chiude con <em>Viele Grüße</em>."
@@ -862,7 +861,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa la frase.",
         tr: "Qui si deve essere puntuali e non si può fumare.",
-        why: "<i>Hier muss man pünktlich sein, und man darf nicht rauchen.</i> Per «non si può fumare» (non è permesso) il tedesco dice <i>man darf nicht rauchen</i>; anche <i>man kann nicht rauchen</i> è corretto, ma suona più come «non è possibile»."
+        why: "<i>Hier muss man pünktlich sein, und man darf nicht rauchen.</i> Per «non si può fumare» (non è permesso) il tedesco dice <i>man darf nicht rauchen</i>. <i>Man kann nicht rauchen</i> direbbe invece che fumare è impossibile, non vietato."
       },
       {
         tr: "Da noi si comincia alle otto. Durante la pausa pranzo si mangia in mensa. Qui ci si dà del tu.",

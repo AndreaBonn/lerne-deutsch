@@ -460,7 +460,8 @@ LINGUAI.addUnits("A2", [
             a: [
               "Bei uns beginnt man um acht Uhr",
               "Man beginnt bei uns um acht Uhr",
-              "Um acht Uhr beginnt man bei uns"
+              "Um acht Uhr beginnt man bei uns",
+              "Man beginnt um acht Uhr bei uns"
             ]
           },
           {
@@ -471,7 +472,7 @@ LINGUAI.addUnits("A2", [
           {
             t: "cloze",
             text: "Hier {{1}} man pünktlich sein, und man {{2}} nicht rauchen.",
-            gaps: [["muss"], ["darf", "kann"]]
+            gaps: [["muss"], ["darf"]]
           },
           {
             t: "listen",
@@ -520,7 +521,12 @@ LINGUAI.addUnits("A2", [
           {
             t: "order",
             tokens: ["Danach", "schreibt", "Anna", "das", "Protokoll"],
-            a: ["Danach schreibt Anna das Protokoll", "Anna schreibt danach das Protokoll"]
+            a: [
+              "Danach schreibt Anna das Protokoll",
+              "Anna schreibt danach das Protokoll",
+              "Anna schreibt das Protokoll danach",
+              "Das Protokoll schreibt Anna danach"
+            ]
           },
           {
             t: "trans",
