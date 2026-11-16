@@ -724,7 +724,7 @@ LINGUAI.addStrings("it", {
   },
   "lesson:b1-u02-l2": {
     theme: "Attese e fastidi",
-    title: "Ne sono contento. Di cosa?",
+    title: "Lo aspetto con gioia. Che cosa?",
     objectives: [
       "sostituire verbo + preposizione + cosa con darauf, daran, davon",
       "chiedere con worauf, woran, worüber",
@@ -773,7 +773,7 @@ LINGUAI.addStrings("it", {
         { tr: "Che cosa aspetti con gioia?", note: "worauf: wo + r + auf" },
         { tr: "Si arrabbia per il rumore.", note: "sich ärgern über + accusativo" },
         { tr: "Di che cosa ti arrabbi?", note: "worüber: wo + r + über" },
-        { tr: "Sono contento di vederlo. Chi stai aspettando?", note: "per una persona: auf ihn, auf wen" }
+        { tr: "Non vedo l'ora di vederlo. Chi stai aspettando?", note: "per una persona: auf ihn, auf wen" }
       ]
     },
     vocab: [
@@ -812,7 +812,7 @@ LINGUAI.addStrings("it", {
         why: "<b>Worauf</b>: <i>wo</i> + <i>r</i> + <i>auf</i>. La risposta ha lo stesso <i>auf</i>: <i>Auf das Wochenende</i>."
       },
       {
-        q: "Completa: «Er denkt oft an seine Familie. Er denkt oft ___.»",
+        q: "Completa: «Er denkt oft an den Urlaub. Er denkt oft ___.»",
         hint: "da- + an",
         why: "<b>Daran</b>: <i>da</i> + <i>r</i> + <i>an</i>. Davanti alla vocale di <i>an</i> si inserisce la <b>r</b>, come in <i>darauf</i>."
       },
@@ -830,8 +830,8 @@ LINGUAI.addStrings("it", {
         why: "<i>Ich denke oft daran</i>: <i>ci</i> diventa <i>daran</i>. Va bene anche <i>Oft denke ich daran</i>."
       },
       {
-        tr: "Di che cosa sei contento? Sono contento del fine settimana. E di che cosa ti sei arrabbiato? Del rumore. Mi arrabbio spesso per questo.",
-        why: "In <i>freust</i> la <b>eu</b> si legge [ɔʏ]; in <i>Wochenende</i> la <b>w</b> è [v] e la <b>ch</b> [x]; in <i>Lärm</i> la <b>ä</b> è lunga [ɛː]; in <i>über</i> e <i>darüber</i> la <b>ü</b> è arrotondata."
+        tr: "Che cosa aspetti con gioia? Non vedo l'ora che arrivi il fine settimana. E per che cosa ti sei arrabbiato? Per il rumore. Mi arrabbio spesso per questo.",
+        why: "In <i>freust</i> la <b>eu</b> si legge [ɔʏ]; in <i>Wochenende</i> la <b>w</b> è [v] e la <b>ch</b> [x]; in <i>über</i> e <i>darüber</i> la <b>ü</b> è arrotondata."
       },
       {
         tr: "Non vedo l'ora che arrivi il fine settimana e ci penso già.",
@@ -855,7 +855,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Due domande per scegliere la forma",
-        p: "Il <strong>genere e il numero</strong> si prendono dal nome a cui il pronome rimanda (<em>Buch</em> è neutro, quindi <em>das</em>). Il <strong>caso</strong> dipende dal ruolo del pronome dentro la relativa: soggetto (nominativo), oggetto diretto (accusativo) o complemento di <em>helfen, geben</em> (dativo). Le forme sono quelle dell'articolo determinativo, tranne il dativo plurale, che è <strong>denen</strong>."
+        p: "Il <strong>genere e il numero</strong> si prendono dal nome a cui il pronome rimanda (<em>Buch</em> è neutro, quindi <em>das</em>). Il <strong>caso</strong> dipende dal ruolo del pronome dentro la relativa: soggetto (nominativo), oggetto diretto (accusativo) o complemento di <em>helfen, geben</em> (dativo). Nei tre casi studiati qui le forme sono quelle dell'articolo determinativo, tranne il dativo plurale, che è <strong>denen</strong> (il genitivo, <em>dessen, deren</em>, arriva più avanti)."
       },
       {
         h: "Con la preposizione",
@@ -927,9 +927,9 @@ LINGUAI.addStrings("it", {
         why: "<b>Die</b>: <i>Frau</i> è femminile e nella relativa è oggetto diretto. Il femminile ha <i>die</i> sia al nominativo sia all'accusativo."
       },
       {
-        q: "Completa: «Die Kinder, ___ ich das Buch gebe, sind sieben.»",
+        q: "Completa: «Die Kinder, ___ ich das Buch gebe, sind sieben Jahre alt.»",
         hint: "plurale, dativo",
-        why: "<b>Denen</b>: dativo plurale. Il relativo ha forma propria solo qui, negli altri casi è uguale all'articolo."
+        why: "<b>Denen</b>: dativo plurale. Nei tre casi studiati qui il pronome relativo coincide con l'articolo determinativo, tranne al dativo plurale: <i>denen</i>."
       },
       {
         q: "Completa la frase.",
@@ -967,7 +967,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "jemand e niemand",
-        p: "<strong>Jemand</strong> (qualcuno) e <strong>niemand</strong> (nessuno) parlano di persone in modo generico. Possono restare invariati oppure prendere <em>-en</em> all'accusativo e <em>-em</em> al dativo: <em>Ich habe niemanden gesehen</em> o <em>Ich habe niemand gesehen</em>. <em>Ich habe jemandem geholfen</em> o <em>Ich habe jemand geholfen</em>. Le forme con la desinenza sono quelle standard; quelle senza si sentono spesso nella lingua parlata e si accettano."
+        p: "<strong>Jemand</strong> (qualcuno) e <strong>niemand</strong> (nessuno) parlano di persone in modo generico. Possono restare invariati oppure prendere <em>-en</em> all'accusativo e <em>-em</em> al dativo: <em>Ich habe niemanden gesehen</em> o <em>Ich habe niemand gesehen</em>. <em>Ich habe jemandem geholfen</em> o <em>Ich habe jemand geholfen</em>. Tutte e due le forme sono corrette, anche nella lingua scritta; le forme con la desinenza rendono il caso più evidente."
       },
       {
         h: "jeder e alle",
@@ -975,7 +975,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "etwas e nichts",
-        p: "<strong>Etwas</strong> (qualcosa) e <strong>nichts</strong> (niente) non cambiano: <em>Ich habe etwas gehört. Ich habe nichts gesehen.</em> Un aggettivo che li segue si scrive con la maiuscola e prende <em>-es</em>: <em>etwas Neues, nichts Besonderes</em>."
+        p: "<strong>Etwas</strong> (qualcosa) e <strong>nichts</strong> (niente) non cambiano: <em>Ich habe etwas gehört. Ich habe nichts gesehen.</em> Un aggettivo che li segue si scrive con la maiuscola e prende <em>-es</em> al nominativo e all'accusativo (<em>etwas Neues, nichts Besonderes</em>), <em>-em</em> al dativo (<em>mit etwas Neuem, mit nichts Besonderem</em>)."
       },
       {
         contrast: "In italiano <em>nessuno</em> e <em>niente</em> dopo il verbo vogliono <em>non</em>: <em>Non ho visto nessuno, non ho fatto niente</em>. In tedesco la negazione sta già in <em>niemand</em> e <em>nichts</em>, e di solito non si aggiunge <em>nicht</em>: <em>Ich habe niemanden gesehen. Ich habe nichts gemacht.</em> Se <em>nessuno</em> sta prima del verbo, come in italiano, la frase è identica: <em>Nessuno ha chiamato</em> è <em>Niemand hat angerufen</em>."
@@ -989,7 +989,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "jemand, niemand, jeder",
-      note: "<b>jemand</b> e <b>niemand</b>: invariati o con <b>-en</b> (acc.) e <b>-em</b> (dat.). <b>jeder</b> è singolare, <b>alle</b> è plurale. Una sola negazione: <b>nichts</b>, <b>niemand</b>.",
+      note: "<b>jemand</b> e <b>niemand</b>: invariati o con <b>-en</b> (acc.) e <b>-em</b> (dat.). <b>jeder</b> è singolare, <b>alle</b> è plurale. <b>nichts</b> e <b>niemand</b> negano da soli: niente <b>nicht</b> in più.",
       table: {
         head: ["", "nominativo", "accusativo", "dativo"],
         rows: [
@@ -1051,12 +1051,12 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa: «Ich habe ___ gesehen.» (non ho visto nessuno)",
         hint: "nessuno, accusativo",
-        why: "<b>Niemanden</b>: accusativo standard. Nella lingua parlata si sente e si accetta anche <i>niemand</i>. Nessun <i>nicht</i>."
+        why: "<b>Niemanden</b>: accusativo con la desinenza; è corretto anche <i>niemand</i>. Nessun <i>nicht</i>."
       },
       {
         q: "Completa: «Ich habe ___ geholfen.» (a qualcuno)",
         hint: "qualcuno, dativo",
-        why: "<b>Jemandem</b>: <i>helfen</i> vuole il dativo. Nella lingua parlata si accetta anche <i>jemand</i>."
+        why: "<b>Jemandem</b>: <i>helfen</i> vuole il dativo. È corretto anche <i>jemand</i> senza desinenza."
       },
       {
         q: "Completa: «___ weiß das.» (ognuno)",
@@ -1071,7 +1071,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa la frase.",
         tr: "Non ho visto nessuno e non ho sentito niente.",
-        why: "<i>Ich habe niemanden gesehen und nichts gehört</i>: una sola negazione per frase, dentro <i>niemanden</i> e <i>nichts</i>."
+        why: "<i>Ich habe niemanden gesehen und nichts gehört</i>: ciascun pronome nega il proprio complemento, e il <i>non</i> italiano non si traduce con un <i>nicht</i> in più."
       },
       {
         tr: "Qualcuno ha visto i miei occhiali? No, nessuno li ha visti. Ognuno li cerca, ma non troviamo niente.",
@@ -1123,7 +1123,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa: «Ich habe ___ gesehen.» (non ho visto nessuno)",
         hint: "nessuno, accusativo",
-        why: "<b>Niemanden</b> (o <i>niemand</i> nella lingua parlata), senza <i>nicht</i>."
+        why: "<b>Niemanden</b> (o <i>niemand</i>, anch'esso corretto), senza <i>nicht</i>."
       },
       {
         q: "Hai già ricevuto il regalo e ne sei contento. Quale frase è corretta?",

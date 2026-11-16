@@ -429,7 +429,7 @@ LINGUAI.addUnits("B1", [
             { it: "Der Mann, der dort steht, ist mein Lehrer." },
             { it: "Das Buch, das ich gelesen habe, ist spannend." },
             { it: "Die Frau, der ich geholfen habe, heißt Eva." },
-            { it: "Die Kinder, denen ich das Buch gebe, sind sieben." },
+            { it: "Die Kinder, denen ich das Buch gebe, sind sieben Jahre alt." },
             { it: "Der Mann, mit dem ich spreche, ist mein Chef." },
             { it: "Die Freundin, auf die ich warte, kommt aus Rom." }
           ]
