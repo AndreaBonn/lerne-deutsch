@@ -1074,10 +1074,10 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Le date: am + numero ordinale",
-        p: "Una data si dice con <strong>am</strong> e il numero <strong>ordinale</strong>. Si scrive con il punto: <em>am 3. Oktober</em>, e si legge <em>am dritten Oktober</em>. Il punto dopo il numero indica proprio che è un ordinale. Fino al 19 si aggiunge <em>-ten</em> (<em>am vierten, am siebten, am achten</em>), dal 20 in poi <em>-sten</em> (<em>am zwanzigsten, am dreißigsten</em>); le forme irregolari sono <em>am ersten</em> (1.), <em>am zweiten</em> (2.), <em>am dritten</em> (3.). Per dire quando si compie gli anni: <em>Wann hast du Geburtstag? Am 3. Oktober.</em> oppure <em>Ich habe am 3. Oktober Geburtstag.</em>"
+        p: "Una data si dice con <strong>am</strong> e il numero <strong>ordinale</strong>. Si scrive con il punto: <em>am 3. Oktober</em>, e si legge <em>am dritten Oktober</em>. Il punto dopo il numero indica proprio che è un ordinale. Fino al 19 si aggiunge <em>-ten</em> (<em>am vierten, am siebten, am achten</em>), dal 20 in poi <em>-sten</em> (<em>am zwanzigsten, am dreißigsten</em>); <em>am zweiten</em> (2.) è regolare; hanno forme particolari <em>am ersten</em> (1.), <em>am dritten</em> (3.). Per dire quando si compie gli anni: <em>Wann hast du Geburtstag? Am 3. Oktober.</em> oppure <em>Ich habe am 3. Oktober Geburtstag.</em>"
       },
       {
-        contrast: "In italiano <em>ringraziare</em> e <em>aiutare</em> hanno un oggetto diretto (<em>lo ringrazio</em>), mentre <em>fare gli auguri a qualcuno</em> e <em>regalare a qualcuno</em> hanno un complemento di termine. In tedesco tutti e tre i verbi si costruiscono con la persona al dativo: <em>ich danke <b>dir</b></em>, <em>ich gratuliere <b>dir</b></em>, <em>ich schenke <b>dir</b></em>. Per le date l'italiano usa l'articolo e un numero semplice (<em>il 3 ottobre</em>, ma <em>il primo</em> per l'1); il tedesco usa <em>am</em> e un ordinale per tutti i giorni, anche per il 3 e il 20."
+        contrast: "In italiano <em>ringraziare</em> ha un oggetto diretto (<em>lo ringrazio</em>), mentre <em>fare gli auguri a qualcuno</em> e <em>regalare a qualcuno</em> hanno un complemento di termine. In tedesco tutti e tre i verbi si costruiscono con la persona al dativo: <em>ich danke <b>dir</b></em>, <em>ich gratuliere <b>dir</b></em>, <em>ich schenke <b>dir</b></em>. Per le date l'italiano usa l'articolo e un numero semplice (<em>il 3 ottobre</em>, ma <em>il primo</em> per l'1); il tedesco usa <em>am</em> e un ordinale per tutti i giorni, anche per il 3 e il 20."
       },
       {
         trap: "Non si dice «ich danke dich» né «ich gratuliere dich»: il pronome è <em>dir</em>. L'occasione non prende <em>für</em> ma <em>zu</em>: <em>zum Geburtstag</em>, non «für Geburtstag». E <em>zum</em> o <em>zur</em> dipende dal genere: <em>der Geburtstag</em> → <em>zum</em>, <em>die Hochzeit</em> → <em>zur</em>, <em>das Fest</em> → <em>zum</em>. Nella data manca spesso il punto: <em>am 3 Oktober</em> sembra un cardinale, e in tedesco la scrittura corretta è <em>am 3. Oktober</em>."
@@ -1178,7 +1178,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Faccio gli auguri a mia sorella per il compleanno e le regalo un libro.",
-        why: "In <i>Schwester</i> la <b>sch</b> è [ʃ] e la <b>w</b> è [v]; in <i>Geburtstag</i> l'accento cade su <b>bur</b>, con la <b>u</b> lunga, e la <b>g</b> finale si legge [k]."
+        why: "In <i>Schwester</i> la <b>sch</b> è [ʃ] e la <b>w</b> è [v]; in <i>Geburtstag</i> l'accento cade su <b>bur</b> e la <b>g</b> finale si legge [k]."
       }
     ]
   },
@@ -1318,7 +1318,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Un tedesco, tre paesi",
-        p: "Si parla tedesco in Germania, in Austria e in Svizzera (dove, oltre al tedesco, ci sono il francese, l'italiano e il romancio). Il tedesco standard è lo stesso, ma i saluti e alcune usanze cambiano da una regione all'altra. <em>Guten Tag</em> funziona più o meno ovunque. <em>Grüß Gott</em> si sente più spesso nel sud della Germania e in Austria, <em>Servus</em> soprattutto in Austria e in Baviera (si dice anche quando ci si congeda), <em>Grüezi</em> nella Svizzera tedesca, <em>Moin</em> nel nord della Germania. Sono <strong>tendenze</strong>, non regole: per questo nelle frasi di questa lezione compaiono <em>oft</em> e <em>meistens</em>."
+        p: "Si parla tedesco in Germania, in Austria e in Svizzera (dove, oltre al tedesco, ci sono il francese, l'italiano e il romancio). Germania, Austria e Svizzera condividono il tedesco standard, con alcune differenze nazionali di lessico, pronuncia e ortografia; i saluti e alcune usanze cambiano da una regione all'altra. <em>Guten Tag</em> funziona più o meno ovunque. <em>Grüß Gott</em> si sente più spesso nel sud della Germania e in Austria, <em>Servus</em> soprattutto in Austria e in Baviera (si dice anche quando ci si congeda), <em>Grüezi</em> nella Svizzera tedesca, <em>Moin</em> nel nord della Germania. Sono <strong>tendenze</strong>, non regole: per questo nelle frasi di questa lezione compaiono <em>oft</em> e <em>meistens</em>."
       },
       {
         h: "Raccontare un'usanza",
@@ -1527,7 +1527,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Di solito festeggio il compleanno a casa. Purtroppo sabato non ho tempo, ma forse festeggiamo più tardi.",
-        why: "In <i>normalerweise</i> la <b>w</b> è [v] e la <b>ei</b> è [aɪ]; in <i>vielleicht</i> la <b>v</b> è [f], la <b>ie</b> è una <b>i</b> lunga [iː] e la <b>ch</b> dopo <b>ei</b> è [ç]; in <i>später</i> la <b>sp</b> iniziale è [ʃp]."
+        why: "In <i>normalerweise</i> la <b>w</b> è [v] e la <b>ei</b> è [aɪ]; in <i>vielleicht</i> la <b>v</b> è [f], la prima <b>i</b> è breve e senza accento, che cade sulla seconda sillaba [fiˈlaɪçt], e la <b>ch</b> dopo <b>ei</b> è [ç]; in <i>später</i> la <b>sp</b> iniziale è [ʃp]."
       },
       {
         tr: "Speriamo che tu venga alla festa. Forse festeggiamo più tardi.",
