@@ -1,7 +1,7 @@
 /* ============================================================
    Language-neutral layer: German (de-DE), structure and answer keys.
    Learner-language texts live in data/i18n/<lang>/a2-02.js.
-   a2-u05, a2-u06 and a2-u07 are German units.
+   a2-u05, a2-u06, a2-u07 and a2-u08 are German units.
    ============================================================ */
 LINGUAI.addUnits("A2", [
   {
@@ -891,6 +891,269 @@ LINGUAI.addUnits("A2", [
         },
         { t: "listen", it: "Herzlichen Glückwunsch zum Geburtstag! Hast du Lust, am Samstag zu meiner Party zu kommen?" },
         { t: "speak", it: "Ich gratuliere dir zum Geburtstag. Hast du Lust, mit uns zu feiern?" }
+      ]
+    }
+  },
+  {
+    id: "a2-u08",
+    icon: "🧭",
+    titleIt: "Pläne",
+    lessons: [
+      {
+        id: "a2-u08-l1",
+        tags: ["g-infinitiv-zu", "g-futur"],
+        cefr: "A2",
+        titleIt: "Ich habe vor, ... zu ...",
+        grammar: {
+          examples: [
+            { it: "Ich habe vor, im Sommer umzuziehen." },
+            { it: "Hast du vor, nach dem Studium in Wien zu arbeiten?" },
+            { it: "Wir haben vor, eine Wohnung zu suchen." },
+            { it: "Was hast du morgen vor?" },
+            { it: "Nächstes Jahr ziehe ich nach Berlin." },
+            { it: "Ich werde im Herbst Informatik studieren." }
+          ]
+        },
+        vocab: [
+          { it: "der Plan", plural: "die Pläne", ex: "Mein Plan ist einfach." },
+          { it: "vorhaben", ex: "Ich habe vor, im Sommer umzuziehen." },
+          { it: "planen", ex: "Wir planen einen Umzug." },
+          { it: "der Umzug", plural: "die Umzüge", ex: "Der Umzug ist im Juli." },
+          { it: "umziehen", ex: "Ich ziehe im Sommer um." },
+          { it: "das Studium", plural: "-", ex: "Nach dem Studium suche ich eine Stelle." },
+          { it: "studieren", ex: "Ich möchte in Wien studieren." },
+          { it: "die Stelle", plural: "die Stellen", ex: "Ich suche eine neue Stelle." },
+          { it: "der Job", plural: "die Jobs", ex: "Mein Job gefällt mir." },
+          { it: "kündigen", ex: "Ich habe vor, meine Wohnung zu kündigen." },
+          { it: "die Prüfung", plural: "die Prüfungen", ex: "Die Prüfung ist im Mai." },
+          { it: "die Ausbildung", plural: "die Ausbildungen", ex: "Sie macht eine Ausbildung." }
+        ],
+        exercises: [
+          { t: "conj", verb: "vorhaben", tense: "praes", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["zu"] },
+          { t: "fill", a: ["werden"] },
+          { t: "fill", a: ["vor"] },
+          {
+            t: "cloze",
+            text: "Ich {{1}} vor, im Sommer meine Wohnung {{2}} kündigen.",
+            gaps: [["habe"], ["zu"]]
+          },
+          {
+            t: "order",
+            tokens: ["Ich", "habe", "vor,", "im", "Sommer", "umzuziehen"],
+            a: [
+              "Ich habe vor, im Sommer umzuziehen",
+              "Im Sommer habe ich vor, umzuziehen",
+              "Ich habe im Sommer vor, umzuziehen"
+            ]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Ich habe vor, im Sommer nach Wien umzuziehen",
+              "Im Sommer habe ich vor, nach Wien umzuziehen",
+              "Ich habe im Sommer vor, nach Wien umzuziehen",
+              "Ich habe vor, im Sommer nach Wien zu ziehen",
+              "Im Sommer habe ich vor, nach Wien zu ziehen",
+              "Ich habe im Sommer vor, nach Wien zu ziehen"
+            ]
+          },
+          { t: "listen", it: "Ich habe vor, im Sommer nach Wien umzuziehen. Dort werde ich Informatik studieren." },
+          { t: "speak", it: "Nach dem Studium habe ich vor, in Berlin zu arbeiten." }
+        ]
+      },
+      {
+        id: "a2-u08-l2",
+        tags: ["g-perfekt", "g-praeteritum", "g-futur", "g-konjunktiv2"],
+        cefr: "A2",
+        titleIt: "Ripasso: i tempi",
+        grammar: {
+          examples: [
+            { it: "Gestern habe ich den ganzen Tag gearbeitet." },
+            { it: "Letztes Jahr sind wir nach Wien umgezogen." },
+            { it: "Als Kind war ich oft krank, und wir hatten keinen Hund." },
+            { it: "Nächste Woche fahre ich nach Hamburg." },
+            { it: "Morgen werde ich dich anrufen." },
+            { it: "Könnten Sie mir bitte helfen? Ich hätte gern mehr Zeit." }
+          ]
+        },
+        vocab: [
+          { it: "der Lebenslauf", plural: "die Lebensläufe", ex: "Mein Lebenslauf ist kurz." },
+          { it: "die Erfahrung", plural: "die Erfahrungen", ex: "Ich habe viel Erfahrung." },
+          { it: "das Praktikum", plural: "die Praktika", ex: "Ich habe ein Praktikum gemacht." },
+          { it: "die Bewerbung", plural: "die Bewerbungen", ex: "Ich schreibe eine Bewerbung." },
+          { it: "der Chef", plural: "die Chefs", ex: "Der Chef ist heute nicht im Büro." },
+          { it: "der Kollege", plural: "die Kollegen", ex: "Meine Kollegen sind nett." },
+          { it: "das Gehalt", plural: "die Gehälter", ex: "Das Gehalt ist gut." },
+          { it: "der Kurs", plural: "die Kurse", ex: "Ich habe einen Kurs besucht." }
+        ],
+        exercises: [
+          { t: "conj", verb: "umziehen", tense: "perf", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "conj", verb: "arbeiten", tense: "praet", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "conj", verb: "können", tense: "konj2", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "mcq", a: 1 },
+          { t: "mcq", a: 0 },
+          {
+            t: "cloze",
+            text: "Letztes Jahr {{1}} wir nach Wien {{2}}.",
+            gaps: [["sind"], ["umgezogen"]]
+          },
+          {
+            t: "cloze",
+            text: "Als Kind {{1}} ich oft krank, und wir {{2}} keinen Hund.",
+            gaps: [["war"], ["hatten"]]
+          },
+          {
+            t: "cloze",
+            text: "Morgen {{1}} ich dich anrufen. Ich {{2}} gern mehr Zeit.",
+            gaps: [["werde"], ["hätte"]]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: ["Gestern habe ich den ganzen Tag gearbeitet", "Ich habe gestern den ganzen Tag gearbeitet"]
+          },
+          {
+            t: "listen",
+            it: "Letztes Jahr bin ich nach Wien umgezogen. Jetzt arbeite ich dort, und nächstes Jahr werde ich einen Kurs besuchen. Ich hätte gern mehr Zeit."
+          },
+          { t: "speak", it: "Letztes Jahr bin ich umgezogen, und im Herbst werde ich studieren." }
+        ]
+      },
+      {
+        id: "a2-u08-l3",
+        tags: ["g-pron-akk", "g-pron-dat", "g-artikel-dat"],
+        cefr: "A2",
+        titleIt: "Ripasso: casi e pronomi",
+        grammar: {
+          examples: [
+            { it: "Ich sehe ihn jeden Tag im Büro." },
+            { it: "Ich helfe ihm beim Umzug." },
+            { it: "Der Schlüssel gehört dem Vermieter." },
+            { it: "Ich schenke meiner Mutter Blumen." },
+            { it: "Ich gebe es ihm." },
+            { it: "Wir danken den Nachbarn für die Hilfe." }
+          ]
+        },
+        vocab: [
+          { it: "der Vermieter", plural: "die Vermieter", ex: "Der Vermieter wohnt im Haus." },
+          { it: "der Nachbar", plural: "die Nachbarn", ex: "Mein Nachbar ist sehr nett." },
+          { it: "die Miete", plural: "die Mieten", ex: "Die Miete ist hoch." },
+          { it: "der Mietvertrag", plural: "die Mietverträge", ex: "Ich unterschreibe den Mietvertrag." },
+          { it: "der Schlüssel", plural: "die Schlüssel", ex: "Wo ist der Schlüssel?" },
+          { it: "der Karton", plural: "die Kartons", ex: "Wir brauchen zehn Kartons." },
+          { it: "die Adresse", plural: "die Adressen", ex: "Das ist meine neue Adresse." },
+          { it: "das Möbelstück", plural: "die Möbelstücke", ex: "Das Möbelstück ist schwer." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 1 },
+          { t: "multi", a: [0, 2, 4] },
+          { t: "fill", a: ["der"] },
+          { t: "fill", a: ["dem"] },
+          { t: "fill", a: ["ihn"] },
+          { t: "fill", a: ["ihnen"] },
+          {
+            t: "cloze",
+            text: "Wo ist der Karton? Ich suche {{1}} schon lange. Kannst du {{2}} helfen?",
+            gaps: [["ihn"], ["mir"]]
+          },
+          {
+            t: "listen",
+            it: "Ich helfe meiner Freundin beim Umzug. Sie schenkt mir einen Kuchen, und ich danke ihr."
+          },
+          { t: "speak", it: "Ich gebe ihm den Schlüssel, und er hilft mir beim Umzug." }
+        ]
+      },
+      {
+        id: "a2-u08-l4",
+        tags: ["g-nebensatz-weil", "g-nebensatz-dass", "g-nebensatz-temporal"],
+        cefr: "A2",
+        titleIt: "Pronti per il B1",
+        grammar: {
+          examples: [
+            { it: "Ich bleibe zu Hause, weil ich arbeiten muss." },
+            { it: "Weil ich krank bin, bleibe ich zu Hause." },
+            { it: "Ich hoffe, dass ich bald eine Stelle finde." },
+            { it: "Als ich in Wien angekommen bin, habe ich dich angerufen." },
+            { it: "Wenn ich Zeit habe, lerne ich Deutsch." },
+            { it: "Ich weiß, dass er morgen nicht kommen kann." }
+          ]
+        },
+        vocab: [
+          { it: "die Zukunft", plural: "-", ex: "Die Zukunft ist offen." },
+          { it: "der Traum", plural: "die Träume", ex: "Mein Traum ist ein Haus am Meer." },
+          { it: "das Ziel", plural: "die Ziele", ex: "Mein Ziel ist eine gute Stelle." },
+          { it: "die Möglichkeit", plural: "die Möglichkeiten", ex: "Wir haben zwei Möglichkeiten." },
+          { it: "die Entscheidung", plural: "die Entscheidungen", ex: "Das ist eine wichtige Entscheidung." },
+          { it: "hoffen", ex: "Ich hoffe, dass es klappt." },
+          { it: "wichtig", ex: "Deutsch ist für meine Arbeit wichtig." },
+          { it: "sicher", ex: "Ich bin nicht sicher." }
+        ],
+        exercises: [
+          { t: "conj", verb: "wollen", tense: "praes", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "conj", verb: "müssen", tense: "praet", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "conj", verb: "bleiben", tense: "perf", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "fill", a: ["weil"] },
+          { t: "fill", a: ["dass"] },
+          { t: "fill", a: ["Als"] },
+          { t: "fill", a: ["Wenn"] },
+          { t: "fill", a: ["kann"] },
+          {
+            t: "cloze",
+            text: "Ich bleibe zu Hause, {{1}} ich krank {{2}}.",
+            gaps: [["weil"], ["bin"]]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Ich bleibe zu Hause, weil ich arbeiten muss",
+              "Ich bleibe daheim, weil ich arbeiten muss",
+              "Weil ich arbeiten muss, bleibe ich zu Hause",
+              "Weil ich arbeiten muss, bleibe ich daheim"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Ich hoffe, dass ich im Herbst eine Stelle finde. Wenn ich Zeit habe, lerne ich Deutsch, weil es für meine Arbeit wichtig ist."
+          },
+          { t: "speak", it: "Ich weiß, dass ich viel lernen muss, weil die Prüfung schwer ist." }
+        ]
+      }
+    ],
+    test: {
+      id: "a2-u08-test",
+      tags: ["g-perfekt", "g-praeteritum", "g-pron-dat", "g-konjunktiv2", "g-nebensatz-weil"],
+      cefr: "A2",
+      titleIt: "Test: Pläne",
+      exercises: [
+        { t: "conj", verb: "gehen", tense: "perf", persons: [0, 1, 2, 3, 4, 5] },
+        { t: "conj", verb: "haben", tense: "konj2", persons: [0, 1, 2, 3, 4, 5] },
+        { t: "fill", a: ["zu"] },
+        { t: "fill", a: ["war"] },
+        { t: "fill", a: ["ihm"] },
+        { t: "fill", a: ["weil"] },
+        { t: "fill", a: ["hätte"] },
+        { t: "fill", a: ["angekommen"] },
+        { t: "mcq", a: 0 },
+        {
+          t: "cloze",
+          text: "Wenn ich in Wien {{1}} {{2}}, rufe ich dich an.",
+          gaps: [["angekommen"], ["bin"]]
+        },
+        {
+          t: "trans",
+          dir: "toIt",
+          a: [
+            "Ich habe ihm den Schlüssel gegeben",
+            "Den Schlüssel habe ich ihm gegeben",
+            "Ihm habe ich den Schlüssel gegeben"
+          ]
+        },
+        { t: "speak", it: "Ich habe vor, umzuziehen, weil ich eine neue Stelle habe." }
       ]
     }
   }

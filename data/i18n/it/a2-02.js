@@ -1,5 +1,5 @@
 /* ============================================================
-   Learner-language text (it) for data/core/a2-02.js, units a2-u05, a2-u06 and a2-u07.
+   Learner-language text (it) for data/core/a2-02.js, units a2-u05, a2-u06, a2-u07 and a2-u08.
    Keys point at ids in the neutral layer; arrays merge by index,
    so their length has to match core.
    Checked by scripts/parity.mjs.
@@ -1591,6 +1591,575 @@ LINGUAI.addStrings("it", {
       {
         tr: "Ti faccio gli auguri per il compleanno. Hai voglia di festeggiare con noi?",
         why: "In <i>gratuliere</i> la <b>ie</b> è una <b>i</b> lunga [iː]; in <i>Geburtstag</i> l'accento cade su <b>bur</b>; in <i>feiern</i> la <b>ei</b> è [aɪ]."
+      }
+    ]
+  },
+  "unit:a2-u08": {
+    title: "Progetti",
+    grammarNote: "vorhaben + zu · ripasso dei tempi (Perfekt, Präteritum, Futur, Konjunktiv II) · ripasso di casi e pronomi · weil, dass, als, wenn"
+  },
+  "lesson:a2-u08-l1": {
+    theme: "Progetti e intenzioni",
+    title: "Ho intenzione di ...",
+    objectives: [
+      "dire che cosa si ha intenzione di fare con Ich habe vor, ... zu ...",
+      "chiedere i progetti di qualcuno con Was hast du vor?",
+      "parlare del futuro con il presente e un indicatore di tempo, oppure con werden"
+    ],
+    theory: [
+      {
+        h: "vorhaben + zu + infinito",
+        p: "Per dire che cosa si ha <strong>intenzione</strong> di fare si usa il verbo <strong>vorhaben</strong>, seguito da un secondo verbo all'infinito con <strong>zu</strong>, in fondo alla frase: <em>Ich habe vor, im Sommer nach Wien zu ziehen. Hast du vor, nach dem Studium in Berlin zu arbeiten?</em> Con un verbo separabile <em>zu</em> va in mezzo, in una parola: <em>umziehen</em> → <em>Ich habe vor, im Sommer umzuziehen.</em> La virgola si scrive quando il gruppo con <em>zu</em> ha altre parole oltre all'infinito."
+      },
+      {
+        h: "vorhaben è un verbo separabile",
+        p: "<em>Vorhaben</em> si separa come <em>aufstehen</em>: <strong>haben</strong> prende le desinenze e <strong>vor</strong> va in fondo alla frase principale: <em>Ich habe vor, ... / Wir haben vor, ...</em> Senza un secondo verbo si può chiedere <em>Was hast du morgen vor?</em> (che cosa hai in programma domani?), e la risposta può essere <em>Ich habe nichts vor</em> (non ho programmi)."
+      },
+      {
+        h: "Il futuro: presente oppure werden",
+        p: "Per i progetti il tedesco usa spesso il <strong>presente</strong> con un indicatore di tempo: <em>Nächstes Jahr ziehe ich nach Berlin.</em> Il <strong>Futur I</strong> (<em>werden</em> in seconda posizione, infinito in fondo) mette in risalto una decisione o una promessa: <em>Ich werde im Herbst Informatik studieren.</em> Dopo <em>werden</em> e dopo i verbi modali non c'è <em>zu</em>."
+      },
+      {
+        contrast: "L'italiano dice <em>ho intenzione di</em> o <em>ho in programma di</em>, con <em>di</em> + infinito. Il tedesco ha <em>vorhaben</em> con <em>zu</em> + infinito, e la particella <em>vor</em> si stacca e va in fondo. Anche il futuro è diverso: l'italiano usa molto il futuro semplice (<em>mi trasferirò</em>), mentre il tedesco parlato preferisce il presente con un indicatore di tempo (<em>Nächstes Jahr ziehe ich um</em>)."
+      },
+      {
+        trap: "Non si dice «Ich habe vor, umziehen» né «Ich habe vor, zu umziehen»: con un verbo separabile la forma è <em>umzuziehen</em>. E dopo <em>werden</em> non va <em>zu</em>: <em>Ich werde studieren</em>, non «Ich werde zu studieren». Non confondere <em>Ich habe vor, ... zu ...</em> con <em>Ich will ...</em>: dopo <em>wollen</em> l'infinito è senza <em>zu</em> (<em>Ich will umziehen</em>)."
+      },
+      {
+        tip: "Per descrivere un progetto in due frasi: <em>Ich habe vor, im Sommer umzuziehen. Dort werde ich studieren.</em> Prima l'intenzione con <em>vorhaben</em>, poi il seguito con <em>werden</em>."
+      }
+    ],
+    grammar: {
+      title: "vorhaben + zu e il futuro",
+      note: "<b>vorhaben</b> + <b>zu</b> + infinito in fondo: <i>Ich habe vor, nach Wien zu ziehen.</i> Verbo separabile: <b>zu</b> in mezzo (<i>umzuziehen</i>). Futuro: presente + indicatore di tempo, oppure <b>werden</b> + infinito.",
+      table: {
+        head: ["costruzione", "esempio", "nota"],
+        rows: [
+          ["vorhaben + zu", "Ich habe vor, im Sommer nach Wien zu ziehen.", "vor in fondo alla principale, zu + infinito in fondo"],
+          ["verbo separabile", "Ich habe vor, im Sommer umzuziehen.", "zu in mezzo: umzuziehen"],
+          ["presente + tempo", "Nächstes Jahr ziehe ich nach Berlin.", "il futuro con un indicatore di tempo"],
+          ["Futur I", "Ich werde im Herbst Informatik studieren.", "werden in seconda posizione, infinito in fondo"]
+        ]
+      },
+      examples: [
+        { tr: "Ho intenzione di trasferirmi in estate.", note: "umziehen: zu in mezzo, umzuziehen" },
+        { tr: "Hai intenzione di lavorare a Vienna dopo gli studi?", note: "domanda: Hast du vor, ... zu ...?" },
+        { tr: "Abbiamo intenzione di cercare un appartamento.", note: "zu davanti a suchen, in fondo" },
+        { tr: "Che programmi hai per domani?", note: "vorhaben senza secondo verbo: vor in fondo" },
+        { tr: "L'anno prossimo mi trasferisco a Berlino.", note: "presente con indicatore di tempo" },
+        { tr: "In autunno studierò informatica.", note: "Futur I: werden + infinito" }
+      ]
+    },
+    vocab: [
+      "il progetto, il piano",
+      "avere intenzione, avere in programma",
+      "pianificare",
+      "il trasloco",
+      "trasferirsi",
+      "gli studi, il corso di laurea",
+      "studiare (all'università)",
+      "il posto di lavoro",
+      "il lavoro (informale)",
+      "disdire (un contratto), licenziarsi",
+      "l'esame",
+      "la formazione professionale"
+    ],
+    exercises: [
+      {
+        tr: "Il presente di vorhaben, tutte le persone.",
+        why: "<i>Ich habe vor, du hast vor, er hat vor, wir haben vor, ihr habt vor, sie haben vor</i>: <i>haben</i> prende le desinenze, e <i>vor</i> va in fondo alla frase principale."
+      },
+      {
+        q: "Come dici «Ho intenzione di trasferirmi in estate»?",
+        opts: [
+          "Ich habe vor, im Sommer umzuziehen.",
+          "Ich habe vor, im Sommer zu umziehen.",
+          "Ich habe vor, im Sommer umziehen zu."
+        ],
+        why: "Con un verbo separabile <b>zu</b> va in mezzo, tutto in una parola: <i>umzuziehen</i>."
+      },
+      {
+        q: "Completa: «Ich habe vor, nach dem Studium in Berlin ___ arbeiten.»",
+        hint: "davanti all'infinito",
+        why: "<b>zu</b> sta direttamente davanti all'infinito: <i>in Berlin zu arbeiten</i>."
+      },
+      {
+        q: "Completa: «Wir ___ im Sommer nach Wien ziehen.» (Futur I di werden, wir)",
+        hint: "werden, wir",
+        why: "<b>Werden</b> sta in seconda posizione e l'infinito <i>ziehen</i> resta in fondo: <i>Wir werden im Sommer nach Wien ziehen.</i>"
+      },
+      {
+        q: "Completa: «Ich habe ___, im Herbst zu studieren.» (vorhaben)",
+        hint: "la parte staccata di vorhaben",
+        why: "<b>Vor</b>: <i>vorhaben</i> è separabile, e la particella resta in fondo alla principale, prima della virgola."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Ho intenzione di disdire il contratto di affitto in estate.",
+        why: "<i>Ich habe vor, im Sommer meine Wohnung zu kündigen</i>: <i>habe</i> con <i>ich</i>, e <i>zu</i> davanti a <i>kündigen</i>, in fondo."
+      },
+      {
+        q: "Metti in ordine le parole.",
+        tr: "Ho intenzione di trasferirmi in estate.",
+        why: "<i>Ich habe vor, im Sommer umzuziehen.</i> Si accetta anche <i>Im Sommer habe ich vor, umzuziehen</i>: il verbo coniugato resta in seconda posizione."
+      },
+      {
+        q: "Traduci: «Ho intenzione di trasferirmi a Vienna in estate.» (usa vorhaben)",
+        why: "<i>Ich habe vor, im Sommer nach Wien umzuziehen</i>: <i>umzuziehen</i> in una parola. Va bene anche <i>nach Wien zu ziehen</i>."
+      },
+      {
+        tr: "Ho intenzione di trasferirmi a Vienna in estate. Lì studierò informatica.",
+        why: "In <i>Wien</i> la <b>W</b> è [v] e la <b>ie</b> si legge [iː]; in <i>Sommer</i> la <b>S</b> iniziale davanti a vocale è di norma sonora [z]; in <i>studieren</i> la <b>st</b> iniziale è [ʃt]."
+      },
+      {
+        tr: "Dopo gli studi ho intenzione di lavorare a Berlino.",
+        why: "In <i>Studium</i> la <b>st</b> iniziale è [ʃt]; in <i>nach</i> la <b>ch</b> dopo <b>a</b> è [x]; in <i>arbeiten</i> la <b>ei</b> è [aɪ]."
+      }
+    ]
+  },
+  "lesson:a2-u08-l2": {
+    theme: "Ripasso dei tempi",
+    title: "Ripasso: i tempi",
+    objectives: [
+      "scegliere il tempo giusto: Perfekt, Präteritum, presente o Futur I, Konjunktiv II",
+      "formare il Perfekt con haben o sein e il Partizip II",
+      "usare il Präteritum di sein, haben e dei verbi modali",
+      "fare una richiesta o esprimere un desiderio con könnten e hätte gern"
+    ],
+    theory: [
+      {
+        h: "Quattro modi di parlare del tempo",
+        p: "<strong>Perfekt</strong> (<em>haben</em> o <em>sein</em> + Partizip II) è il passato del parlato: <em>Gestern habe ich gearbeitet. Wir sind nach Wien umgezogen.</em> Il <strong>Präteritum</strong> si usa soprattutto con <em>sein, haben</em> e i verbi modali, anche parlando: <em>Ich war krank. Wir hatten keinen Hund. Ich musste arbeiten.</em> Per il futuro: presente con un indicatore di tempo (<em>Morgen fahre ich</em>) oppure <strong>werden</strong> + infinito. Il <strong>Konjunktiv II</strong> serve per richieste e desideri: <em>Könnten Sie mir helfen? Ich hätte gern mehr Zeit.</em>"
+      },
+      {
+        h: "haben o sein nel Perfekt",
+        p: "La maggior parte dei verbi forma il Perfekt con <strong>haben</strong>: <em>Ich habe studiert.</em> I verbi di movimento e di cambiamento di stato prendono <strong>sein</strong>: <em>Ich bin umgezogen. Wir sind angekommen.</em> Così anche <em>sein</em> e <em>bleiben</em>: <em>Ich bin geblieben.</em> Il verbo coniugato sta in seconda posizione, il Partizip II in fondo."
+      },
+      {
+        contrast: "L'italiano distingue il passato prossimo dall'imperfetto (<em>ho abitato</em> / <em>abitavo</em>). Il tedesco non ha un imperfetto che corrisponda: parlando usa il Perfekt per quasi tutto (<em>Ich habe damals in Berlin gewohnt</em>), e il Präteritum compare soprattutto con <em>war, hatte</em> e i modali. Il <em>Konjunktiv II</em> di cortesia (<em>Könnten Sie ...?</em>, <em>Ich hätte gern ...</em>) corrisponde al condizionale italiano (<em>potrebbe, vorrei</em>)."
+      },
+      {
+        trap: "Non si mescolano le due forme: «Gestern ich habe gearbeitet» ha il verbo in terza posizione, e <em>Gestern habe ich gearbeitet</em> ha il verbo coniugato in seconda. Non si dice «Ich habe umgezogen»: <em>umziehen</em> si comporta come un verbo di movimento e vuole <em>sein</em>, <em>Ich bin umgezogen</em>. E la richiesta è <em>Könnten Sie ...?</em>, non «Könnte Sie ...?»."
+      },
+      {
+        tip: "Prima di scrivere una frase chiediti: è già successo (Perfekt, o <em>war/hatte</em>), succederà (presente + tempo, oppure <em>werden</em>), o è una richiesta (Konjunktiv II)? Poi controlla dove sta il verbo coniugato: in seconda posizione."
+      }
+    ],
+    grammar: {
+      title: "Ripasso dei tempi",
+      note: "<b>Perfekt</b>: haben/sein + Partizip II in fondo. <b>Präteritum</b>: war, hatte, modali. <b>Futuro</b>: presente + tempo, oppure <b>werden</b> + infinito. <b>Konjunktiv II</b>: könnten, hätte gern.",
+      table: {
+        head: ["tempo", "esempio", "uso"],
+        rows: [
+          ["Perfekt", "Gestern habe ich den ganzen Tag gearbeitet.", "passato del parlato"],
+          ["Perfekt con sein", "Letztes Jahr sind wir nach Wien umgezogen.", "movimento o cambiamento di stato"],
+          ["Präteritum", "Als Kind war ich oft krank.", "sein, haben, modali"],
+          ["Futuro", "Morgen werde ich dich anrufen.", "presente + tempo, oppure werden"],
+          ["Konjunktiv II", "Könnten Sie mir bitte helfen?", "richieste e desideri"]
+        ]
+      },
+      examples: [
+        { tr: "Ieri ho lavorato tutto il giorno.", note: "Perfekt con haben" },
+        { tr: "L'anno scorso ci siamo trasferiti a Vienna.", note: "Perfekt con sein" },
+        { tr: "Da bambino ero spesso malato, e non avevamo un cane.", note: "Präteritum di sein e haben" },
+        { tr: "La settimana prossima vado ad Amburgo.", note: "presente con indicatore di tempo" },
+        { tr: "Domani ti chiamerò.", note: "Futur I: werden + infinito" },
+        { tr: "Potrebbe aiutarmi, per favore? Vorrei avere più tempo.", note: "Konjunktiv II di cortesia e di desiderio" }
+      ]
+    },
+    vocab: [
+      "il curriculum",
+      "l'esperienza",
+      "il tirocinio",
+      "la candidatura",
+      "il capo",
+      "il collega",
+      "lo stipendio",
+      "il corso"
+    ],
+    exercises: [
+      {
+        tr: "Il Perfekt di umziehen, tutte le persone.",
+        why: "<i>Ich bin umgezogen, du bist umgezogen, er ist umgezogen, wir sind umgezogen, ihr seid umgezogen, sie sind umgezogen</i>: <i>umziehen</i> vuole <i>sein</i>, e il Partizip II ha <i>-ge-</i> in mezzo."
+      },
+      {
+        tr: "Il Präteritum di arbeiten, tutte le persone.",
+        why: "<i>Arbeitete, arbeitetest, arbeitete, arbeiteten, arbeitetet, arbeiteten</i>: la radice finisce in <i>-t</i>, quindi tra radice e desinenza si inserisce una <b>-e-</b>."
+      },
+      {
+        tr: "Il Konjunktiv II di können, tutte le persone.",
+        why: "<i>Könnte, könntest, könnte, könnten, könntet, könnten</i>: la forma si ricava dal Präteritum <i>konnte</i> con l'Umlaut."
+      },
+      {
+        q: "Quale frase è corretta? (Ieri ho scritto una lettera.)",
+        opts: [
+          "Gestern ich habe einen Brief geschrieben.",
+          "Gestern habe ich einen Brief geschrieben.",
+          "Gestern habe ich einen Brief schrieben."
+        ],
+        why: "Con <i>gestern</i> in prima posizione il verbo coniugato (<i>habe</i>) resta in seconda, il soggetto lo segue e il Partizip II <i>geschrieben</i> va in fondo."
+      },
+      {
+        q: "Quale frase è una richiesta cortese?",
+        opts: [
+          "Könnten Sie mir bitte helfen?",
+          "Können Sie mir bitte geholfen?",
+          "Könnte Sie mir bitte helfen?"
+        ],
+        why: "<b>Könnten Sie ...?</b>: con <i>Sie</i> la forma è <i>könnten</i>, e l'infinito <i>helfen</i> va in fondo."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "L'anno scorso ci siamo trasferiti a Vienna.",
+        why: "<i>Letztes Jahr sind wir nach Wien umgezogen</i>: <i>umziehen</i> forma il Perfekt con <b>sein</b>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Da bambino ero spesso malato, e non avevamo un cane.",
+        why: "<i>Als Kind war ich oft krank, und wir hatten keinen Hund</i>: Präteritum di <i>sein</i> (<i>war</i>) e di <i>haben</i> (<i>hatten</i>)."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Domani ti chiamerò. Vorrei avere più tempo.",
+        why: "<i>Morgen werde ich dich anrufen</i>: Futur I, con l'infinito in fondo. <i>Ich hätte gern mehr Zeit</i>: Konjunktiv II di <i>haben</i>, per un desiderio."
+      },
+      {
+        q: "Traduci: «Ieri ho lavorato tutto il giorno.» (usa il Perfekt)",
+        why: "<i>Gestern habe ich den ganzen Tag gearbeitet</i>, oppure <i>Ich habe gestern den ganzen Tag gearbeitet</i>: <i>habe</i> in seconda posizione, <i>gearbeitet</i> in fondo."
+      },
+      {
+        tr: "L'anno scorso mi sono trasferito a Vienna. Adesso lavoro lì, e l'anno prossimo seguirò un corso. Vorrei avere più tempo.",
+        why: "In <i>Wien</i> la <b>W</b> è [v]; in <i>besuchen</i> la <b>ch</b> dopo <b>u</b> è [x]; in <i>gern</i> la <b>g</b> è [g]."
+      },
+      {
+        tr: "L'anno scorso mi sono trasferito, e in autunno studierò.",
+        why: "In <i>umgezogen</i> la <b>z</b> si legge sempre [ts] e la <b>g</b> è [g]; in <i>studieren</i> la <b>st</b> iniziale è [ʃt]; in <i>werde</i> la <b>w</b> è [v]."
+      }
+    ]
+  },
+  "lesson:a2-u08-l3": {
+    theme: "Ripasso di casi e pronomi",
+    title: "Ripasso: casi e pronomi",
+    objectives: [
+      "scegliere tra pronome all'accusativo e al dativo",
+      "usare l'articolo al dativo (dem, der, dem, den)",
+      "mettere nell'ordine giusto pronome e nome, accusativo e dativo",
+      "riconoscere i verbi che vogliono il dativo (helfen, danken, gehören, schenken)"
+    ],
+    theory: [
+      {
+        h: "I pronomi: nominativo, accusativo, dativo",
+        p: "<strong>ich / mich / mir</strong>, <strong>du / dich / dir</strong>, <strong>er / ihn / ihm</strong>, <strong>sie / sie / ihr</strong>, <strong>es / es / ihm</strong>, <strong>wir / uns / uns</strong>, <strong>ihr / euch / euch</strong>, <strong>sie / sie / ihnen</strong>. L'accusativo risponde a <em>chi? che cosa?</em> (<em>Ich sehe ihn.</em>), il dativo a <em>a chi?</em> (<em>Ich helfe ihm.</em>). Con <em>wir</em> e <em>ihr</em> accusativo e dativo hanno la stessa forma: <em>Er sieht uns. Er hilft uns.</em>"
+      },
+      {
+        h: "L'articolo al dativo",
+        p: "Al dativo l'articolo determinativo è <strong>dem</strong> (maschile e neutro), <strong>der</strong> (femminile), <strong>den</strong> (plurale, e il nome prende <strong>-n</strong>): <em>dem Vermieter, der Mutter, den Nachbarn.</em> Con l'articolo indeterminativo o il possessivo: <em>einem, einer, meinem, meiner.</em> Verbi che vogliono il dativo: <strong>helfen, danken, gehören, gefallen, schenken, gratulieren</strong>."
+      },
+      {
+        h: "L'ordine delle parole",
+        p: "Con due nomi, di solito prima il <strong>dativo</strong>, poi l'accusativo: <em>Ich gebe dem Mann das Buch.</em> Con due pronomi, prima l'<strong>accusativo</strong>, poi il dativo: <em>Ich gebe es ihm.</em> Con un pronome e un nome, il pronome viene prima: <em>Ich gebe ihm das Buch. Ich gebe es dem Mann.</em>"
+      },
+      {
+        contrast: "In italiano <em>mi, ti, ci, vi</em> sono uguali per l'oggetto diretto e per quello indiretto (<em>mi vede, mi aiuta</em>), mentre il tedesco distingue <em>mich/mir</em> e <em>dich/dir</em>; solo <em>uns</em> e <em>euch</em> restano uguali. Inoltre <em>aiutare</em> in italiano vuole l'oggetto diretto (<em>lo aiuto</em>), ma <em>helfen</em> vuole il dativo (<em>ich helfe ihm</em>). Al singolare l'italiano ha <em>gli</em> (a lui) e <em>le</em> (a lei); il tedesco ha <em>ihm</em> e <em>ihr</em>, e <em>ihm</em> vale anche per i nomi neutri."
+      },
+      {
+        trap: "Non si dice «Ich helfe ihn» né «Ich sehe ihm»: <em>helfen</em> vuole il dativo (<em>ihm</em>), <em>sehen</em> l'accusativo (<em>ihn</em>). Non si dice «Ich gebe ihm es»: con due pronomi l'accusativo viene prima, <em>Ich gebe es ihm</em>. E dopo <em>mit, bei, zu</em> l'articolo è sempre al dativo: <em>beim Umzug</em> (<em>bei dem Umzug</em>), <em>mit dem Auto</em>."
+      },
+      {
+        tip: "Per scegliere il caso, chiediti prima se il verbo vuole il dativo (<em>helfen, danken, gehören</em>), poi se la persona riceve qualcosa. Per ogni verbo nuovo impara anche il suo caso."
+      }
+    ],
+    grammar: {
+      title: "Accusativo, dativo e pronomi",
+      note: "<b>mich/mir, dich/dir, ihn/ihm, sie/ihr, uns/uns, euch/euch, sie/ihnen</b>. Articolo al dativo: <b>dem, der, dem, den + -n</b>. Due pronomi: prima l'<b>accusativo</b> (<i>Ich gebe es ihm</i>).",
+      table: {
+        head: ["nominativo", "accusativo", "dativo"],
+        rows: [
+          ["ich", "mich", "mir"],
+          ["du", "dich", "dir"],
+          ["er", "ihn", "ihm"],
+          ["sie", "sie", "ihr"],
+          ["es", "es", "ihm"],
+          ["wir", "uns", "uns"],
+          ["ihr", "euch", "euch"],
+          ["sie", "sie", "ihnen"]
+        ]
+      },
+      examples: [
+        { tr: "Lo vedo ogni giorno in ufficio.", note: "sehen + accusativo: ihn" },
+        { tr: "Lo aiuto con il trasloco.", note: "helfen + dativo: ihm" },
+        { tr: "La chiave appartiene al padrone di casa.", note: "gehören + dativo: dem Vermieter" },
+        { tr: "Regalo dei fiori a mia madre.", note: "dativo femminile: meiner Mutter" },
+        { tr: "Lo do a lui.", note: "due pronomi: prima l'accusativo, es ihm" },
+        { tr: "Ringraziamo i vicini per l'aiuto.", note: "dativo plurale: den Nachbarn" }
+      ]
+    },
+    vocab: [
+      "il padrone di casa",
+      "il vicino",
+      "l'affitto",
+      "il contratto di affitto",
+      "la chiave",
+      "lo scatolone",
+      "l'indirizzo",
+      "il mobile"
+    ],
+    exercises: [
+      {
+        q: "Come dici «Lo aiuto con il trasloco» (a un amico)?",
+        opts: [
+          "Ich helfe ihm beim Umzug.",
+          "Ich helfe ihn beim Umzug.",
+          "Ich helfe er beim Umzug."
+        ],
+        why: "<i>Helfen</i> vuole il dativo: <b>ihm</b>. <i>Beim</i> è <i>bei dem</i>, ancora il dativo."
+      },
+      {
+        q: "Quale frase ha l'ordine giusto?",
+        opts: [
+          "Ich gebe ihm es.",
+          "Ich gebe es ihm.",
+          "Ich es gebe ihm."
+        ],
+        why: "Con due pronomi viene prima l'accusativo (<i>es</i>), poi il dativo (<i>ihm</i>), e il verbo coniugato resta in seconda posizione."
+      },
+      {
+        q: "Quali frasi sono corrette?",
+        opts: [
+          "Ich helfe dir.",
+          "Ich helfe dich.",
+          "Das gehört mir.",
+          "Ich sehe ihm im Büro.",
+          "Wir danken euch."
+        ],
+        why: "<i>Helfen, gehören, danken</i> vogliono il dativo (<i>dir, mir, euch</i>). <i>Sehen</i> vuole l'accusativo: <i>Ich sehe ihn.</i>"
+      },
+      {
+        q: "Completa: «Ich schenke ___ Mutter Blumen.» (articolo determinativo)",
+        hint: "dativo femminile",
+        why: "<i>Die Mutter</i> è femminile, e al dativo l'articolo è <b>der</b>: <i>Ich schenke der Mutter Blumen.</i>"
+      },
+      {
+        q: "Completa: «Der Schlüssel gehört ___ Vermieter.» (articolo determinativo)",
+        hint: "dativo maschile",
+        why: "<i>Gehören</i> vuole il dativo, e <i>der Vermieter</i> è maschile: <b>dem</b>."
+      },
+      {
+        q: "Completa: «Kennst du Tim? Ich sehe ___ oft im Büro.» (lui)",
+        hint: "accusativo di er",
+        why: "<i>Sehen</i> vuole l'accusativo: <b>ihn</b>."
+      },
+      {
+        q: "Completa: «Das sind Anna und Tim. Ich danke ___ für die Hilfe.» (a loro)",
+        hint: "dativo plurale",
+        why: "<i>Danken</i> vuole il dativo, e al plurale il pronome è <b>ihnen</b>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Dov'è lo scatolone? Lo cerco da molto tempo. Puoi aiutarmi?",
+        why: "<i>Der Karton</i> è maschile e <i>suchen</i> vuole l'accusativo: <b>ihn</b>. <i>Helfen</i> vuole il dativo: <b>mir</b>."
+      },
+      {
+        tr: "Aiuto la mia amica con il trasloco. Lei mi regala una torta, e io la ringrazio.",
+        why: "In <i>Freundin</i> la <b>ei</b> è [aɪ]; in <i>schenkt</i> la <b>sch</b> è [ʃ]; in <i>Kuchen</i> la <b>ch</b> dopo <b>u</b> è [x]."
+      },
+      {
+        tr: "Gli do la chiave, e lui mi aiuta con il trasloco.",
+        why: "In <i>Schlüssel</i> la <b>sch</b> è [ʃ] e la <b>ü</b> è arrotondata; in <i>Umzug</i> la <b>z</b> è [ts]; in <i>hilft</i> la <b>h</b> iniziale è un soffio."
+      }
+    ]
+  },
+  "lesson:a2-u08-l4": {
+    theme: "Le subordinate",
+    title: "Pronti per il B1",
+    objectives: [
+      "dare un motivo con weil e riferire con dass",
+      "scegliere tra als e wenn",
+      "mettere il verbo coniugato in fondo nella subordinata",
+      "gestire verbi modali, Perfekt e verbi separabili nella subordinata"
+    ],
+    theory: [
+      {
+        h: "weil, dass, als, wenn: il verbo va in fondo",
+        p: "Dopo <strong>weil</strong> (perché), <strong>dass</strong> (che), <strong>als</strong> e <strong>wenn</strong> (quando) il verbo coniugato va <strong>in fondo</strong>, e fra principale e subordinata c'è la virgola: <em>Ich bleibe zu Hause, weil ich arbeiten muss. Ich hoffe, dass ich bald eine Stelle finde.</em> Con un modale in fondo sta il modale (<em>muss</em>), con il Perfekt l'ausiliare (<em>weil ich umgezogen bin</em>), con un verbo separabile il prefisso si riattacca (<em>weil ich früh aufstehe</em>)."
+      },
+      {
+        h: "Se la subordinata viene prima",
+        p: "Se la subordinata apre la frase, la principale comincia con il <strong>verbo coniugato</strong>: <em>Weil ich krank bin, bleibe ich zu Hause. Wenn ich Zeit habe, lerne ich Deutsch.</em> La subordinata occupa da sola la prima posizione, e il verbo della principale resta in seconda."
+      },
+      {
+        h: "als o wenn?",
+        p: "<strong>Als</strong> introduce un fatto singolo nel passato: <em>Als ich in Wien angekommen bin, habe ich dich angerufen.</em> <strong>Wenn</strong> vale per il presente, il futuro e le azioni che si ripetono: <em>Wenn ich Zeit habe, lerne ich Deutsch.</em> Alla domanda diretta si usa invece <em>wann</em>: <em>Wann kommst du?</em>"
+      },
+      {
+        contrast: "In italiano l'ordine delle parole non cambia nella subordinata: <em>resto a casa perché devo lavorare</em>. In tedesco <em>weil ich arbeiten muss</em> manda il modale in fondo. L'italiano ha un solo <em>quando</em>; il tedesco distingue <em>als</em> (una volta, nel passato) da <em>wenn</em> (ogni volta, o nel presente e nel futuro). <em>Dass</em> corrisponde a <em>che</em>, ma in tedesco la virgola davanti è obbligatoria."
+      },
+      {
+        trap: "Non si scrive «weil ich muss arbeiten»: il modale va in fondo, <em>weil ich arbeiten muss</em>. Per «perché» ci sono <em>weil</em> e <em>denn</em>, ma <em>denn</em> lascia il verbo in seconda posizione (<em>..., denn ich muss arbeiten</em>). Non si dice «wenn ich in Wien angekommen bin» per un fatto singolo del passato: lì ci vuole <em>als</em>. E <em>weil</em> non è una domanda: si domanda <em>Warum?</em>."
+      },
+      {
+        tip: "Quando una frase comincia con <em>weil, dass, als, wenn</em>, cerca il verbo coniugato e portalo in fondo. Se la frase ha due verbi (<em>muss arbeiten</em>), alla fine va quello coniugato: <em>arbeiten muss</em>."
+      }
+    ],
+    grammar: {
+      title: "weil, dass, als, wenn",
+      note: "Nella subordinata il verbo coniugato va <b>in fondo</b>. <b>weil</b> = perché, <b>dass</b> = che, <b>als</b> = quando (un fatto singolo nel passato), <b>wenn</b> = quando o se (presente, futuro, abitudine). Subordinata prima: la principale comincia con il verbo.",
+      table: {
+        head: ["congiunzione", "esempio", "nota"],
+        rows: [
+          ["weil", "Ich bleibe zu Hause, weil ich arbeiten muss.", "il modale in fondo"],
+          ["dass", "Ich hoffe, dass ich bald eine Stelle finde.", "virgola obbligatoria"],
+          ["als", "Als ich in Wien angekommen bin, habe ich dich angerufen.", "un fatto singolo nel passato"],
+          ["wenn", "Wenn ich Zeit habe, lerne ich Deutsch.", "presente, futuro, abitudine"]
+        ]
+      },
+      examples: [
+        { tr: "Resto a casa perché devo lavorare.", note: "weil: il modale muss in fondo" },
+        { tr: "Siccome sono malato, resto a casa.", note: "subordinata prima: la principale comincia con il verbo" },
+        { tr: "Spero di trovare presto un posto di lavoro.", note: "dass: verbo coniugato in fondo" },
+        { tr: "Quando sono arrivato a Vienna, ti ho chiamato.", note: "als: un fatto singolo nel passato" },
+        { tr: "Quando ho tempo, studio il tedesco.", note: "wenn: presente, abitudine" },
+        { tr: "So che domani non può venire.", note: "dass: kommen kann, il modale in fondo" }
+      ]
+    },
+    vocab: [
+      "il futuro",
+      "il sogno",
+      "l'obiettivo",
+      "la possibilità",
+      "la decisione",
+      "sperare",
+      "importante",
+      "sicuro"
+    ],
+    exercises: [
+      {
+        tr: "Il presente di wollen, tutte le persone.",
+        why: "<i>Will, willst, will, wollen, wollt, wollen</i>: alla prima e alla terza persona singolare la forma è uguale, senza desinenza."
+      },
+      {
+        tr: "Il Präteritum di müssen, tutte le persone.",
+        why: "<i>Musste, musstest, musste, mussten, musstet, mussten</i>: l'Umlaut sparisce, e la prima e la terza persona singolare sono uguali."
+      },
+      {
+        tr: "Il Perfekt di bleiben, tutte le persone.",
+        why: "<i>Ich bin geblieben, du bist geblieben, er ist geblieben, wir sind geblieben, ihr seid geblieben, sie sind geblieben</i>: <i>bleiben</i> vuole <i>sein</i>."
+      },
+      {
+        q: "Completa: «Ich bleibe hier, ___ ich arbeiten muss.» (perché)",
+        hint: "congiunzione che manda il verbo in fondo",
+        why: "<b>weil</b> manda il verbo coniugato in fondo: <i>weil ich arbeiten muss</i>. <i>Denn</i> lascerebbe il verbo in seconda posizione."
+      },
+      {
+        q: "Completa: «Ich hoffe, ___ ich bald eine Stelle finde.» (che)",
+        hint: "congiunzione per riferire un contenuto",
+        why: "<b>dass</b> introduce ciò che si spera, e il verbo coniugato <i>finde</i> va in fondo."
+      },
+      {
+        q: "Completa: «___ ich in Wien angekommen bin, habe ich dich angerufen.» (quando)",
+        hint: "un fatto singolo nel passato",
+        why: "Un fatto singolo nel passato vuole <b>als</b>. Con la subordinata in prima posizione, la principale comincia con il verbo: <i>habe ich dich angerufen</i>."
+      },
+      {
+        q: "Completa: «___ ich Zeit habe, lerne ich Deutsch.» (quando, abitualmente)",
+        hint: "presente o abitudine",
+        why: "Per il presente e per le azioni che si ripetono si usa <b>wenn</b>."
+      },
+      {
+        q: "Completa: «Ich weiß, dass er morgen nicht kommen ___.» (können, er)",
+        hint: "il modale va in fondo",
+        why: "Nella subordinata il modale va in fondo: <b>kann</b>. La frase finisce con <i>kommen kann</i>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Resto a casa perché sono malato.",
+        why: "<i>Ich bleibe zu Hause, weil ich krank bin</i>: <i>weil</i> manda <i>bin</i> in fondo."
+      },
+      {
+        q: "Traduci: «Resto a casa perché devo lavorare.»",
+        why: "<i>Ich bleibe zu Hause, weil ich arbeiten muss</i>: il modale <i>muss</i> in fondo. Va bene anche <i>daheim</i>, e la subordinata può stare prima: <i>Weil ich arbeiten muss, bleibe ich zu Hause.</i>"
+      },
+      {
+        tr: "Spero di trovare un posto di lavoro in autunno. Quando ho tempo, studio il tedesco, perché è importante per il mio lavoro.",
+        why: "In <i>Herbst</i> la <b>b</b> prima di <b>st</b> suona [p]; in <i>wichtig</i> la <b>ch</b> è [ç] e la <b>w</b> è [v]; in <i>Deutsch</i> la <b>eu</b> si legge [ɔɪ] e la <b>tsch</b> [tʃ]."
+      },
+      {
+        tr: "So che devo studiare molto, perché l'esame è difficile.",
+        why: "In <i>weiß</i> la <b>ß</b> è una <b>s</b> sorda e la <b>ei</b> è [aɪ]; in <i>Prüfung</i> la <b>ü</b> è arrotondata; in <i>schwer</i> la <b>sch</b> è [ʃ]."
+      }
+    ]
+  },
+  "lesson:a2-u08-test": {
+    theme: "Verifica",
+    title: "Test: Progetti",
+    objectives: [
+      "verificare vorhaben + zu, i tempi dell'A2 (Perfekt, Präteritum, Konjunktiv II), pronomi e dativo, weil, dass, als e wenn"
+    ],
+    theory: [
+      {
+        p: "Dodici domande sull'intero livello A2. Si supera con il 70%. Non riguardare le lezioni mentre rispondi: se non ricordi qualcosa, è meglio tornare a ripassare."
+      }
+    ],
+    exercises: [
+      {
+        tr: "Il Perfekt di gehen, tutte le persone.",
+        why: "<i>Ich bin gegangen, du bist gegangen, er ist gegangen, wir sind gegangen, ihr seid gegangen, sie sind gegangen</i>: <i>gehen</i> vuole <i>sein</i>."
+      },
+      {
+        tr: "Il Konjunktiv II di haben, tutte le persone.",
+        why: "<i>Hätte, hättest, hätte, hätten, hättet, hätten</i>: il Präteritum <i>hatte</i> con l'Umlaut."
+      },
+      {
+        q: "Completa: «Ich habe vor, im Herbst in Wien ___ studieren.»",
+        hint: "davanti all'infinito",
+        why: "<b>zu</b> sta direttamente davanti all'infinito: <i>in Wien zu studieren</i>."
+      },
+      {
+        q: "Completa: «Als Kind ___ ich oft krank.» (essere)",
+        hint: "Präteritum di sein, ich",
+        why: "<b>War</b>: alla prima persona singolare non c'è nessuna desinenza."
+      },
+      {
+        q: "Completa: «Ich helfe ___ beim Umzug.» (a lui)",
+        hint: "dativo di er",
+        why: "<i>Helfen</i> vuole il dativo: <b>ihm</b>."
+      },
+      {
+        q: "Completa: «Ich bleibe zu Hause, ___ ich krank bin.» (perché)",
+        hint: "congiunzione che manda il verbo in fondo",
+        why: "<b>weil</b> manda il verbo coniugato in fondo: <i>weil ich krank bin</i>."
+      },
+      {
+        q: "Completa: «Ich ___ gern ein Zimmer.» (vorrei avere)",
+        hint: "Konjunktiv II di haben, ich",
+        why: "<b>Hätte</b>: <i>Ich hätte gern ein Zimmer</i> è la forma cortese per un desiderio."
+      },
+      {
+        q: "Completa: «Wir sind gestern in Berlin ___.» (Partizip II di ankommen)",
+        hint: "Partizip II con -ge- in mezzo",
+        why: "<b>angekommen</b>: nei verbi separabili <i>-ge-</i> va tra il prefisso e il verbo, e <i>ankommen</i> vuole <i>sein</i>."
+      },
+      {
+        q: "Quale frase è corretta?",
+        opts: [
+          "Ich habe vor, nach dem Studium in Berlin zu arbeiten.",
+          "Ich habe vor, nach dem Studium in Berlin arbeiten zu.",
+          "Ich habe vor, nach dem Studium in Berlin zu arbeitet."
+        ],
+        why: "<b>zu</b> sta davanti all'infinito, e l'infinito <i>arbeiten</i> chiude la frase."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Quando sarò arrivato a Vienna, ti chiamerò.",
+        why: "<i>Wenn ich in Wien angekommen bin, rufe ich dich an</i>: <i>wenn</i> vale per il futuro, il Perfekt ha l'ausiliare <i>bin</i> in fondo, e la principale comincia con il verbo <i>rufe</i>."
+      },
+      {
+        q: "Traduci: «Ho dato la chiave a Tim.» (usa un pronome per Tim e il Perfekt)",
+        why: "<i>Ich habe ihm den Schlüssel gegeben</i>: il pronome dativo <i>ihm</i> viene prima del nome all'accusativo, <i>den Schlüssel</i>."
+      },
+      {
+        tr: "Ho intenzione di trasferirmi, perché ho un nuovo posto di lavoro.",
+        why: "In <i>umzuziehen</i> la <b>z</b> è [ts] e <i>zu</i> sta in mezzo; in <i>weil</i> la <b>w</b> è [v]; in <i>Stelle</i> la <b>st</b> iniziale è [ʃt]."
       }
     ]
   }
