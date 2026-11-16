@@ -1,0 +1,18 @@
+{
+  "bundleHash": "02604f53b3e0179e3f989caa8c3831b9790e1290183ede78deef71a55dc5a5f7",
+  "findings": [
+    {
+      "kind": "spiegazione grammaticale inesatta",
+      "msg": "L’aspetto polacco non è una flessione del tempo passato: «chorowałem» e «zachorowałem» derivano da due verbi di aspetto diverso. Sostituire «czas przeszły, który zmienia się [...] według aspektu» con una spiegazione che distingua la flessione per genere dall’aspetto del verbo.",
+      "path": "merged.lessons[0].theory[1].contrast"
+    },
+    {
+      "kind": "istruzione grammaticale e polacco scorretto",
+      "msg": "«Czasownik zwrotny ucz się» usa il caso sbagliato: «uczyć się» richiede il genitivo. Inoltre «Jeden czasownik, jeden przyimek, jeden przypadek» suggerisce erroneamente una sola preposizione per verbo, contraddicendo «sich freuen auf/über». Riscrivere: «Ucz się czasowników zwrotnych razem z odpowiednimi przyimkami i przypadkami: sich erinnern an + biernik, sich freuen auf/über + biernik, sich interessieren für + biernik, sich ärgern über + biernik, sich treffen mit + celownik».",
+      "path": "merged.lessons[3].theory[3].tip"
+    }
+  ],
+  "lang": "pl",
+  "unit": "a2-u01",
+  "verdict": "fail"
+}
