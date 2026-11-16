@@ -1,15 +1,15 @@
 {
-  "bundleHash": "7ef51a3b12dba332f1707994467afad012f4df5acf8244dd892fd6c95a051c69",
+  "bundleHash": "4364132e0ea6653d8244bce76163404fbe603aea94c13ed8daaf71874d03220b",
   "findings": [
     {
-      "kind": "punctuation",
-      "msg": "Reguła o często dowolnym przecinku w pozostałych konstrukcjach jest zbyt szeroka i nie odpowiada zasadom obowiązującym od 2024 r. Rozwinięte grupy bezokolicznikowe oddziela się przecinkiem także wtedy, gdy zależą od czasownika: „Ich versuche, früh nach Hause zu kommen.” Zachowaj informację o możliwości pominięcia przecinka przy samym nierozwiniętym bezokoliczniku, np. „Ich versuche zu schlafen”. Popraw również lessons[1].theory[1].p.",
+      "kind": "punctuation_rule",
+      "msg": "La spiegazione presenta come spesso facoltativa la virgola negli altri gruppi infinitivi con zu. Secondo le regole ortografiche del 2024, le proposizioni infinitive ampliate richiedono la virgola anche quando dipendono da un verbo: «Ich versuche, heute früher zu kommen.» Correggere questa generalizzazione anche in merged.lessons[1].theory[1].p, distinguendo il caso del semplice infinito non ampliato, come «Ich versuche zu schlafen».",
       "path": "merged.lessons[1].grammar.note"
     },
     {
-      "kind": "translation",
-      "msg": "Polskie „oby przyszedł” odnosi się do trzeciej osoby, natomiast „Hoffentlich kommst du” do rozmówcy. Zmień polski przykład na „obyś przyszedł” lub „obyś przyszła”, aby zachować osobę gramatyczną.",
-      "path": "merged.lessons[3].theory[2].contrast"
+      "kind": "ambiguous_exercise",
+      "msg": "Il testo tedesco e la consegna non determinano univocamente le risposte: «Er spricht deutlich» è altrettanto plausibile di «Er spricht langsam»; anche «Vielleicht kommst du zur Party!» è corretto. Se la traduzione polacca deve vincolare le risposte, chiedere esplicitamente di completare secondo quella traduzione e renderla visibile prima della risposta. In alternativa, aggiungere gli indizi «powoli» e «oby» accanto alle rispettive lacune.",
+      "path": "merged.lessons[3].exercises[7]"
     }
   ],
   "lang": "pl",

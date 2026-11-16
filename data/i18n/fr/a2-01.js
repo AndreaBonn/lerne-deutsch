@@ -50,7 +50,7 @@ LINGUAI.addStrings("fr", {
         { tr: "Enfant, j'étais souvent malade.", note: "als Kind : sans article" },
         { tr: "Nous avions un grand jardin.", note: "wir hatten" },
         { tr: "Mon grand-père avait un chien.", note: "er hatte, comme ich hatte" },
-        { tr: "Autrefois, nous étions chaque été au bord de la mer.", note: "früher + sein au pluriel : waren" },
+        { tr: "Autrefois, nous étions chaque été au bord de la mer.", note: "früher + sein : wir/sie/Sie waren, mais ihr wart" },
         { tr: "À cette époque, je n'avais pas de portable.", note: "damals" },
         { tr: "Comment était ton enfance ?", note: "Wie war ...?" }
       ]
@@ -1283,7 +1283,7 @@ LINGUAI.addStrings("fr", {
     theory: [
       {
         h: "Deux compléments : datif et accusatif",
-        p: "Avec des verbes comme <em>geben, schenken, zeigen, schicken, leihen, erklären</em>, il y a deux compléments : la personne (datif) et la chose (accusatif). L'ordre habituel, dans la phrase neutre, est le suivant. Avec <b>deux noms</b>, le datif précède l'accusatif : <em>Ich schenke meiner Schwester ein Buch.</em> Avec <b>un pronom et un nom</b>, le pronom vient d'abord, quel que soit son cas : <em>Ich gebe ihm das Buch. Ich gebe es meinem Bruder.</em> Avec <b>deux pronoms</b>, l'accusatif précède le datif : <em>Ich gebe es ihm.</em> Ce sont des ordres habituels, pas des règles absolues : pour mettre un élément en relief, on peut le déplacer."
+        p: "Avec des verbes comme <em>geben, schenken, zeigen, schicken, leihen, erklären</em>, il y a deux compléments : la personne (datif) et la chose (accusatif). L'ordre habituel, dans la phrase neutre, est le suivant. Avec <b>deux noms</b>, le datif précède l'accusatif : <em>Ich schenke meiner Schwester ein Buch.</em> Avec <b>un pronom et un nom</b>, le pronom vient d'abord, quel que soit son cas : <em>Ich gebe ihm das Buch. Ich gebe es meinem Bruder.</em> Avec <b>deux pronoms</b>, l'accusatif précède le datif : <em>Ich gebe es ihm.</em> Ce sont des ordres habituels, pas des règles absolues : un nom ou un pronom accentué peut passer en tête pour être mis en relief (<em>Das gebe ich ihm</em>), mais le complément atone <em>es</em> ne se place pas en tête : pas <s>Es gebe ich ihm</s>."
       },
       {
         contrast: "En français, les deux pronoms se placent avant le verbe, et l'ordre dépend de la personne : <em>je le lui donne</em> (accusatif puis datif, comme en allemand : <em>Ich gebe es ihm</em>), mais <em>je te le donne</em>, <em>il me le donne</em> (datif puis accusatif). En allemand, l'ordre est toujours le même avec deux pronoms : accusatif, puis datif, donc <em>Ich gebe es dir</em>, <em>Er gibt es mir</em>. Si tu traduis à partir du français, remets l'ordre : d'abord <em>es</em> (le « le »), puis <em>dir</em> ou <em>mir</em> (le « te » ou le « me »)."
@@ -1409,7 +1409,7 @@ LINGUAI.addStrings("fr", {
         contrast: "En français aussi, le sujet disparaît à l'impératif (<em>viens, attends, appelle-moi</em>), et le pronom complément se rattache au verbe par un trait d'union (<em>appelle-moi, aide-moi</em>) ; en allemand, c'est un mot séparé après le verbe : <em>Ruf mich an! Hilf mir!</em> Pour <em>ihr</em>, la forme est celle du <em>vous</em> français (<em>Venez! → Kommt!</em>), mais ce <em>vous</em> peut aussi être le <em>Sie</em> de politesse, qui a sa propre forme (<em>Kommen Sie!</em>) : ici, nous ne voyons que <em>du</em> et <em>ihr</em>. Le verbe <em>être</em> est irrégulier dans les deux langues (<em>sois, soyez</em> ; <em>Sei, Seid</em>). À la forme négative, le français met <em>ne ... pas</em> autour du verbe (<em>ne viens pas trop tard</em>) ; l'allemand place <em>nicht</em> après : <em>Komm nicht zu spät!</em> Les particules modales n'ont pas de catégorie propre en français : on les rend par le ton ou par des mots comme <em>donc, un peu, dis, allez</em>."
       },
       {
-        trap: "N'ajoute pas <em>-st</em> : <em>Kommst!</em> n'est pas un impératif. Avec les verbes forts en <em>e → ie</em>, ne dis pas <em>Lese!</em> mais <em>Lies!</em>, et non <em>Nehm!</em> mais <em>Nimm!</em> Avec <em>sein</em>, la forme est <em>Sei vorsichtig!</em> Ne crois pas que <em>mal</em> et <em>doch</em> soient des mots vides : sans eux, la phrase reste correcte mais sonne plus sèche."
+        trap: "N'ajoute pas <em>-st</em> : <em>Kommst!</em> n'est pas un impératif. Avec les verbes forts en <em>e → i/ie</em>, ne dis pas <em>Lese!</em> mais <em>Lies!</em>, et non <em>Nehm!</em> mais <em>Nimm!</em> Avec <em>sein</em>, la forme est <em>Sei vorsichtig!</em> Ne crois pas que <em>mal</em> et <em>doch</em> soient des mots vides : sans eux, la phrase reste correcte mais sonne plus sèche."
       },
       {
         tip: "Quand tu donnes un ordre ou un conseil à un ami : pour un verbe régulier, pars de l'infinitif, enlève <em>-en</em>, ajoute <em>-e</em> si le radical se termine en <em>-t</em> ou <em>-d</em> ; les verbes irréguliers se retiennent à part (<em>Nimm! Lies! Sei!</em>). Mets ensuite <em>mal</em> ou <em>doch</em> pour adoucir : <em>Warte mal! Komm doch mit!</em>"

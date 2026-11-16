@@ -1,7 +1,18 @@
 {
-  "bundleHash": "984c328eed00eefafe4b7c126491f33dfba2211dee5ae79b4a8f0e9af209ce68",
-  "findings": [],
+  "bundleHash": "7d92d02094385f28ee4882b153e404681ce31d327ccea1a8c607b93612d3f3af",
+  "findings": [
+    {
+      "kind": "ambiguous-exercise",
+      "msg": "Il testo non determina le risposte previste: nel primo spazio sono corretti anche «deutlich» e «leise», già insegnati nella lezione; nel secondo sono possibili, fra gli altri, «Vielleicht» e «Natürlich». Aggiungere indicazioni inglesi per ciascuno spazio, per esempio «slowly» e «hopefully», oppure accettare le alternative coerenti. Correggere anche neutral.lessons[3].exercises[7].",
+      "path": "merged.lessons[3].exercises[7]"
+    },
+    {
+      "kind": "ambiguous-exercise",
+      "msg": "Il secondo spazio ammette anche «Bayern»: «In Bayern sagt man oft Servus» è corretto ed è coerente con la spiegazione della lezione, ma la chiave accetta soltanto «Österreich». Specificare «Austria» come suggerimento oppure aggiungere «Bayern» alle risposte accettate, anche in neutral.lessons[2].exercises[7].",
+      "path": "merged.lessons[2].exercises[7]"
+    }
+  ],
   "lang": "en",
   "unit": "a2-u07",
-  "verdict": "pass"
+  "verdict": "fail"
 }

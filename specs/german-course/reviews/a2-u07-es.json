@@ -1,13 +1,7 @@
 {
-  "bundleHash": "3a571112216246ee2297a33610785a68353fb131d836eb907872ecf20b98d367",
-  "findings": [
-    {
-      "kind": "grammar-explanation",
-      "msg": "La regola «Hasta el 19 se añade -ten» presenta come regolari anche forme che richiedono un adattamento della base. Gli esempi corretti non spiegano perché sieben diventi siebten e acht diventi achten. Integrare le eccezioni: «Del 1 al 19 se añade normalmente -ten; formas especiales: am ersten, am dritten, am siebten y am achten».",
-      "path": "merged.lessons[0].theory[2].p"
-    }
-  ],
+  "bundleHash": "d4245c1718e657e3580726fa35ef832dbea4fa40e1799cfc8c48689830f9f4c0",
+  "findings": [],
   "lang": "es",
   "unit": "a2-u07",
-  "verdict": "fail"
+  "verdict": "pass"
 }

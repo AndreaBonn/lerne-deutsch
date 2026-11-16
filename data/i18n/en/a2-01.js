@@ -50,7 +50,7 @@ LINGUAI.addStrings("en", {
         { tr: "As a child I was often sick.", note: "als Kind: no article" },
         { tr: "We had a big garden.", note: "wir hatten" },
         { tr: "My grandpa had a dog.", note: "er hatte, the same as ich hatte" },
-        { tr: "Back then we spent every summer at the sea.", note: "früher + sein in the plural: waren" },
+        { tr: "Back then we spent every summer at the sea.", note: "früher + sein: wir/sie/Sie waren, but ihr wart" },
         { tr: "Back then I didn't have a cell phone.", note: "damals" },
         { tr: "What was your childhood like?", note: "Wie war ...?" }
       ]
@@ -1143,7 +1143,7 @@ LINGUAI.addStrings("en", {
       {
         q: "Put the words in order.",
         tr: "Today I'm meeting her at the café.",
-        why: "The verb stays in second position and the pronoun <i>sie</i> follows the subject <i>ich</i>. <i>Ich treffe sie heute im Café</i> and <i>Im Café treffe ich sie heute</i> are also fine."
+        why: "The verb stays in second position, and in the neutral order the object pronoun <i>sie</i> follows the subject pronoun <i>ich</i>. <i>Ich treffe sie heute im Café</i> and <i>Im Café treffe ich sie heute</i> are also fine. The object pronoun can also open the sentence to stress who you are meeting: <i>Sie treffe ich heute im Café</i>, with the verb still second."
       },
       {
         q: "Translate (you are talking about your brother): “I'll see him tomorrow.”",
@@ -1283,7 +1283,7 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "Two objects: dative and accusative",
-        p: "With verbs like <em>geben, schenken, zeigen, schicken, leihen, erklären</em> there are two objects: the person (dative) and the thing (accusative). The usual order, in a neutral sentence, is this. With <b>two nouns</b> the dative comes before the accusative: <em>Ich schenke meiner Schwester ein Buch.</em> With <b>a pronoun and a noun</b> the pronoun comes first, whatever its case: <em>Ich gebe ihm das Buch. Ich gebe es meinem Bruder.</em> With <b>two pronouns</b> the accusative comes before the dative: <em>Ich gebe es ihm.</em> These are usual orders, not absolute rules: to emphasize an element you can move it."
+        p: "With verbs like <em>geben, schenken, zeigen, schicken, leihen, erklären</em> there are two objects: the person (dative) and the thing (accusative). The usual order, in a neutral sentence, is this. With <b>two nouns</b> the dative comes before the accusative: <em>Ich schenke meiner Schwester ein Buch.</em> With <b>a pronoun and a noun</b> the pronoun comes first, whatever its case: <em>Ich gebe ihm das Buch. Ich gebe es meinem Bruder.</em> With <b>two pronouns</b> the accusative comes before the dative: <em>Ich gebe es ihm.</em> These are usual orders, not absolute rules: a noun or a stressed pronoun can move to first position for emphasis (<em>Das gebe ich ihm</em>), but the unstressed object <em>es</em> cannot open the sentence: not <s>Es gebe ich ihm</s>."
       },
       {
         contrast: "English has two patterns: “I give him the book” (person first, no <em>to</em>) and “I give the book to him” (thing first, with <em>to</em>). German has no <em>to</em> here: the person is marked by the dative, and the order of the two objects depends on whether they are nouns or pronouns. With two pronouns the German order matches the English pattern with <em>to</em>: <em>Ich gebe es ihm</em> = “I give it to him”, thing first, person second. With a noun and a pronoun German puts the pronoun first: <em>Ich gebe ihm das Buch</em> (“I give him the book”)."
@@ -1409,7 +1409,7 @@ LINGUAI.addStrings("en", {
         contrast: "The English imperative is just the bare verb (“Come!”, “Wait!”, “Call me!”), the same for one person or many, so it covers both <em>Komm!</em> and <em>Kommt!</em>; German has to choose between <em>du</em> and <em>ihr</em> (and uses <em>Sie</em> for the polite form). In German the pronoun is a separate word after the verb, as in English: <em>Ruf mich an!</em> = “Call me!”. The negative needs no helper: English says “Don't be late” with <em>do</em>, while German keeps the same imperative and adds <em>nicht</em>: <em>Komm nicht zu spät!</em> English softens a request with words like <em>just</em>, <em>go ahead</em>, <em>why don't you</em>, <em>come on</em> or with tone of voice; German often does it with <em>mal</em> and <em>doch</em>."
       },
       {
-        trap: "Do not add <em>-st</em>: <em>Kommst!</em> is not an imperative. With strong verbs with <em>e → ie</em> do not say <em>Lese!</em> but <em>Lies!</em>, and not <em>Nehm!</em> but <em>Nimm!</em> With <em>sein</em> the form is <em>Sei vorsichtig!</em> Do not think <em>mal</em> and <em>doch</em> are empty words: without them the sentence is still correct but sounds more curt."
+        trap: "Do not add <em>-st</em>: <em>Kommst!</em> is not an imperative. With strong verbs with <em>e → i/ie</em> do not say <em>Lese!</em> but <em>Lies!</em>, and not <em>Nehm!</em> but <em>Nimm!</em> With <em>sein</em> the form is <em>Sei vorsichtig!</em> Do not think <em>mal</em> and <em>doch</em> are empty words: without them the sentence is still correct but sounds more curt."
       },
       {
         tip: "When you give an order or advice to a friend: start from the infinitive, remove <em>-en</em>, add <em>-e</em> if the stem ends in <em>-t</em> or <em>-d</em>, and put in <em>mal</em> or <em>doch</em> to soften it. This procedure is for regular verbs; remember the exceptions you learned: <em>Nimm!</em>, <em>Lies!</em>, <em>Sei!</em> Examples: <em>Warte mal! Komm doch mit!</em>"

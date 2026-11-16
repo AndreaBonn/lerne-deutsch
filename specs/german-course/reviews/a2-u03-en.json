@@ -1,15 +1,10 @@
 {
-  "bundleHash": "455715789e535b08a71e711aac73a63fc3cba486b31aa0fc0adb60e2138f2350",
+  "bundleHash": "60c798ff438db7ecd47e95e21b7d26eb7bd469a35e1bfb033c65b146fdc69593",
   "findings": [
     {
-      "kind": "grammar-explanation",
-      "msg": "La spiegazione afferma che il pronome «sie» segue il soggetto «ich», ma tra le risposte accettate compare «Sie treffe ich heute im Café», dove lo precede. Precisare che nella disposizione neutra l'oggetto pronominale segue il soggetto pronominale; può invece occupare la prima posizione per mettere in risalto chi viene incontrato.",
-      "path": "merged.lessons[0].exercises[6].why"
-    },
-    {
-      "kind": "grammar-explanation",
-      "msg": "L'affermazione finale secondo cui questi ordini si possono modificare per enfatizzare un elemento è troppo generale: il pronome oggetto atono «es» non può essere liberamente spostato o enfatizzato. Limitare esplicitamente la flessibilità agli elementi che la consentono e precisare che, per mettere in risalto la cosa, si usa per esempio «Das gebe ich ihm», non «Es gebe ich ihm».",
-      "path": "merged.lessons[2].theory[0].p"
+      "kind": "ambiguous_question",
+      "msg": "Il cloze ammette anche «Ich bedanke mich für deine Hilfe», ma le soluzioni accettano soltanto «danke / dir». Specificare nella consegna «usa danken; destinataria: du» per rendere univoca la risposta prevista, oppure accettare anche la coppia «bedanke / mich» con validazione congiunta dei due spazi.",
+      "path": "merged.lessons[1].exercises[5]"
     }
   ],
   "lang": "en",

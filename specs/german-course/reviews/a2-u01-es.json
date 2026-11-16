@@ -1,7 +1,13 @@
 {
-  "bundleHash": "dd2ec473746c95d89db1552be3a40f1e4abfb4257aa8b9faac8608317090f934",
-  "findings": [],
+  "bundleHash": "b7ab926202ed2cd368387b4b918955f1ce217378e20f858637336602c0135995",
+  "findings": [
+    {
+      "kind": "spiegazione grammaticale inesatta",
+      "msg": "La spiegazione afferma che in tedesco il pronome è obbligatorio e che è l’unico elemento a identificare il soggetto. È obbligatorio esprimere il soggetto nelle dichiarative personali ordinarie, ma questo può essere anche un nome: «Mein Opa war müde». Sostituire con: «A diferencia del español, en alemán normalmente hay que expresar el sujeto, con un pronombre o un nombre. Si usas ich o er, el pronombre permite distinguir las personas aunque la forma war sea idéntica».",
+      "path": "merged.lessons[0].theory[1].contrast"
+    }
+  ],
   "lang": "es",
   "unit": "a2-u01",
-  "verdict": "pass"
+  "verdict": "fail"
 }

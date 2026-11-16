@@ -50,7 +50,7 @@ LINGUAI.addStrings("it", {
         { tr: "Da bambino ero spesso malato.", note: "als Kind: senza articolo" },
         { tr: "Avevamo un grande giardino.", note: "wir hatten" },
         { tr: "Mio nonno aveva un cane.", note: "er hatte, come ich hatte" },
-        { tr: "Un tempo andavamo ogni estate al mare.", note: "früher + war al plurale: waren" },
+        { tr: "Un tempo andavamo ogni estate al mare.", note: "früher + sein: wir/sie/Sie waren, ma ihr wart" },
         { tr: "A quel tempo non avevo il cellulare.", note: "damals" },
         { tr: "Com'era la tua infanzia?", note: "Wie war ...?" }
       ]
@@ -1283,7 +1283,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Due oggetti: dativo e accusativo",
-        p: "Con verbi come <em>geben, schenken, zeigen, schicken, leihen, erklären</em> ci sono due oggetti: la persona (dativo) e la cosa (accusativo). L'ordine abituale, nella frase neutra, è questo. Con <b>due nomi</b> il dativo precede l'accusativo: <em>Ich schenke meiner Schwester ein Buch.</em> Con <b>un pronome e un nome</b> il pronome viene prima, qualunque sia il suo caso: <em>Ich gebe ihm das Buch. Ich gebe es meinem Bruder.</em> Con <b>due pronomi</b> l'accusativo precede il dativo: <em>Ich gebe es ihm.</em> Sono ordini abituali, non regole assolute: per mettere in risalto un elemento lo si può spostare."
+        p: "Con verbi come <em>geben, schenken, zeigen, schicken, leihen, erklären</em> ci sono due oggetti: la persona (dativo) e la cosa (accusativo). L'ordine abituale, nella frase neutra, è questo. Con <b>due nomi</b> il dativo precede l'accusativo: <em>Ich schenke meiner Schwester ein Buch.</em> Con <b>un pronome e un nome</b> il pronome viene prima, qualunque sia il suo caso: <em>Ich gebe ihm das Buch. Ich gebe es meinem Bruder.</em> Con <b>due pronomi</b> l'accusativo precede il dativo: <em>Ich gebe es ihm.</em> Sono ordini abituali, non regole assolute: un nome o un pronome tonico si può spostare in prima posizione per metterlo in risalto (<em>Das gebe ich ihm</em>), ma il pronome atono <em>es</em> non va in prima posizione come complemento: non <s>Es gebe ich ihm</s>."
       },
       {
         contrast: "In italiano i due pronomi si fondono davanti al verbo e il dativo viene <b>prima</b>: <em>glielo do</em>, <em>te lo do</em> (dativo + accusativo). In tedesco vanno dopo il verbo e l'ordine è l'inverso, accusativo + dativo: <em>Ich gebe es ihm</em>, <em>Ich gebe es dir</em>. Se traduci a pezzi, rimetti l'ordine: prima <em>es</em> (il «lo»), poi <em>dir</em> o <em>ihm</em> (il «te» o il «gli»)."
@@ -1409,7 +1409,7 @@ LINGUAI.addStrings("it", {
         contrast: "L'italiano attacca il pronome all'imperativo (<em>chiamami, dimmi, aiutami</em>); in tedesco il pronome è una parola separata dopo il verbo: <em>Ruf mich an! Sag es mir! Hilf mir!</em> Per il negativo con tu l'italiano usa l'infinito (<em>non venire</em>); il tedesco usa lo stesso imperativo con <em>nicht</em>: <em>Komm nicht zu spät!</em> Le particelle modali in italiano non hanno una categoria a sé: si rendono con il tono o con parole come <em>dai, pure, un attimo</em>."
       },
       {
-        trap: "Non aggiungere <em>-st</em>: <em>Kommst!</em> non è un imperativo. Con i verbi forti con <em>e → ie</em> non dire <em>Lese!</em> ma <em>Lies!</em>, e non <em>Nehm!</em> ma <em>Nimm!</em> Con <em>sein</em> la forma è <em>Sei vorsichtig!</em> Non pensare che <em>mal</em> e <em>doch</em> siano parole vuote: tolte, la frase resta corretta ma suona più secca."
+        trap: "Non aggiungere <em>-st</em>: <em>Kommst!</em> non è un imperativo. Con i verbi forti con <em>e → i/ie</em> non dire <em>Lese!</em> ma <em>Lies!</em>, e non <em>Nehm!</em> ma <em>Nimm!</em> Con <em>sein</em> la forma è <em>Sei vorsichtig!</em> Non pensare che <em>mal</em> e <em>doch</em> siano parole vuote: tolte, la frase resta corretta ma suona più secca."
       },
       {
         tip: "Quando dai un ordine o un consiglio a un amico, con un verbo regolare: parti dall'infinito, togli <em>-en</em>, aggiungi <em>-e</em> se il tema finisce in <em>-t</em> o <em>-d</em>, e metti <em>mal</em> o <em>doch</em> per ammorbidire: <em>Warte mal! Komm doch mit!</em> I verbi con cambio vocalico e <em>sein</em> fanno eccezione: <em>Nimm! Lies! Sei!</em>"

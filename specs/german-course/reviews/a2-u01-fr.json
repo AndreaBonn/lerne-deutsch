@@ -1,7 +1,13 @@
 {
-  "bundleHash": "e624aaddcc553a2919f67f018d0e5fa05fb03a3322c8a949799f047ccc3b64fd",
-  "findings": [],
+  "bundleHash": "ddd5b33d552f912e5b4b69b38b61b1857ca0719ffe378766308d1e5313578110",
+  "findings": [
+    {
+      "kind": "grammar-explanation",
+      "msg": "La nota « früher + sein au pluriel : waren » generalizza erroneamente waren a tutte le persone plurali: con ihr si usa wart. Correggere in francese: « Avec wir et sie/Sie : waren ; avec ihr : wart. »",
+      "path": "merged.lessons[0].grammar.examples[3].note"
+    }
+  ],
   "lang": "fr",
   "unit": "a2-u01",
-  "verdict": "pass"
+  "verdict": "fail"
 }

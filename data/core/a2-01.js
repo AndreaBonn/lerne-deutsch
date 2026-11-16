@@ -117,7 +117,9 @@ LINGUAI.addUnits("A2", [
             dir: "toIt",
             a: [
               "Als ich zehn Jahre alt war, sind wir nach Berlin umgezogen",
-              "Als ich zehn war, sind wir nach Berlin umgezogen"
+              "Als ich zehn war, sind wir nach Berlin umgezogen",
+              "Wir sind nach Berlin umgezogen, als ich zehn Jahre alt war",
+              "Wir sind nach Berlin umgezogen, als ich zehn war"
             ]
           },
           { t: "listen", it: "Als ich zehn war, sind wir nach Berlin umgezogen, und ich hatte dort keine Freunde." },
@@ -243,7 +245,7 @@ LINGUAI.addUnits("A2", [
           {
             t: "trans",
             dir: "toIt",
-            a: ["Ich erinnere mich gut an meine Schule", "An meine Schule erinnere ich mich gut"]
+            a: ["Ich erinnere mich gut an meine Schule", "An meine Schule erinnere ich mich gut", "Ich kann mich gut an meine Schule erinnern"]
           },
           {
             t: "dialogue",

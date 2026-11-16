@@ -1,7 +1,13 @@
 {
-  "bundleHash": "b93e6a42189817e72fa6b9f348f9c77f94bdfdafba8b624f42697f4c48b345fe",
-  "findings": [],
+  "bundleHash": "f43a1341d0eb948e76eb6a6df301c17cbcc10c5fa5e5c77d5a2c1e072497855c",
+  "findings": [
+    {
+      "kind": "translation_answer_key",
+      "msg": "Polecenie „Widzę go jutro” wymaga czasownika sehen. Warianty „Ich treffe ihn morgen” i „Morgen treffe ich ihn” znaczą „Jutro się z nim spotkam” i nie są wiernymi tłumaczeniami. Usuń je z klucza tutaj oraz w neutral.lessons[0].exercises[7].a; pozostaw warianty z sehe.",
+      "path": "merged.lessons[0].exercises[7].a"
+    }
+  ],
   "lang": "pl",
   "unit": "a2-u03",
-  "verdict": "pass"
+  "verdict": "fail"
 }

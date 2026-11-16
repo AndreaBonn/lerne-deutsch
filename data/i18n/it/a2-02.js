@@ -1074,7 +1074,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Le date: am + numero ordinale",
-        p: "Una data si dice con <strong>am</strong> e il numero <strong>ordinale</strong>. Si scrive con il punto: <em>am 3. Oktober</em>, e si legge <em>am dritten Oktober</em>. Il punto dopo il numero indica proprio che è un ordinale. Fino al 19 si aggiunge <em>-ten</em> (<em>am vierten, am siebten, am achten</em>), dal 20 in poi <em>-sten</em> (<em>am zwanzigsten, am dreißigsten</em>); <em>am zweiten</em> (2.) è regolare; hanno forme particolari <em>am ersten</em> (1.), <em>am dritten</em> (3.). Per dire quando si compie gli anni: <em>Wann hast du Geburtstag? Am 3. Oktober.</em> oppure <em>Ich habe am 3. Oktober Geburtstag.</em>"
+        p: "Una data si dice con <strong>am</strong> e il numero <strong>ordinale</strong>. Si scrive con il punto: <em>am 3. Oktober</em>, e si legge <em>am dritten Oktober</em>. Il punto dopo il numero indica proprio che è un ordinale. Fino al 19 si aggiunge di norma <em>-ten</em> (<em>am vierten, am zwölften</em>), dal 20 in poi <em>-sten</em> (<em>am zwanzigsten, am dreißigsten</em>); <em>am zweiten</em> (2.) è regolare; hanno forme particolari <em>am ersten</em> (1.), <em>am dritten</em> (3.), <em>am siebten</em> (7.) e <em>am achten</em> (8.). Per dire quando si compie gli anni: <em>Wann hast du Geburtstag? Am 3. Oktober.</em> oppure <em>Ich habe am 3. Oktober Geburtstag.</em>"
       },
       {
         contrast: "In italiano <em>ringraziare</em> ha un oggetto diretto (<em>lo ringrazio</em>), mentre <em>fare gli auguri a qualcuno</em> e <em>regalare a qualcuno</em> hanno un complemento di termine. In tedesco tutti e tre i verbi si costruiscono con la persona al dativo: <em>ich danke <b>dir</b></em>, <em>ich gratuliere <b>dir</b></em>, <em>ich schenke <b>dir</b></em>. Per le date l'italiano usa l'articolo e un numero semplice (<em>il 3 ottobre</em>, ma <em>il primo</em> per l'1); il tedesco usa <em>am</em> e un ordinale per tutti i giorni, anche per il 3 e il 20."
@@ -1527,7 +1527,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Di solito festeggio il compleanno a casa. Purtroppo sabato non ho tempo, ma forse festeggiamo più tardi.",
-        why: "In <i>normalerweise</i> la <b>w</b> è [v] e la <b>ei</b> è [aɪ]; in <i>vielleicht</i> la <b>v</b> è [f], la prima <b>i</b> è breve e senza accento, che cade sulla seconda sillaba [fiˈlaɪçt], e la <b>ch</b> dopo <b>ei</b> è [ç]; in <i>später</i> la <b>sp</b> iniziale è [ʃp]."
+        why: "In <i>normalerweise</i> la <b>w</b> è [v] e la <b>ei</b> è [aɪ]; in <i>vielleicht</i> la <b>v</b> è [f], la prima <b>i</b> è senza accento, che cade sulla seconda sillaba [fiˈlaɪçt], e la <b>ch</b> dopo <b>ei</b> è [ç]; in <i>später</i> la <b>sp</b> iniziale è [ʃp]."
       },
       {
         tr: "Speriamo che tu venga alla festa. Forse festeggiamo più tardi.",

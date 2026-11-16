@@ -50,7 +50,7 @@ LINGUAI.addStrings("pl", {
         { tr: "Jako dziecko często chorowałem.", note: "als Kind: bez rodzajnika" },
         { tr: "Mieliśmy duży ogród.", note: "wir hatten" },
         { tr: "Mój dziadek miał psa.", note: "er hatte, tak jak ich hatte" },
-        { tr: "Dawniej każdego lata byliśmy nad morzem.", note: "früher + sein w liczbie mnogiej: waren" },
+        { tr: "Dawniej każdego lata byliśmy nad morzem.", note: "früher + sein: wir/sie/Sie waren, ale ihr wart" },
         { tr: "Wtedy nie miałem telefonu komórkowego.", note: "damals" },
         { tr: "Jakie było twoje dzieciństwo?", note: "Wie war ...?" }
       ]
@@ -1283,7 +1283,7 @@ LINGUAI.addStrings("pl", {
     theory: [
       {
         h: "Dwa dopełnienia: celownik i biernik",
-        p: "Przy czasownikach takich jak <em>geben, schenken, zeigen, schicken, leihen, erklären</em> są dwa dopełnienia: osoba (celownik) i rzecz (biernik). Zwykła kolejność w zdaniu neutralnym jest taka. Przy <b>dwóch rzeczownikach</b> celownik stoi przed biernikiem: <em>Ich schenke meiner Schwester ein Buch.</em> Przy <b>zaimku i rzeczowniku</b> zaimek stoi pierwszy, bez względu na przypadek: <em>Ich gebe ihm das Buch. Ich gebe es meinem Bruder.</em> Przy <b>dwóch zaimkach</b> biernik stoi przed celownikiem: <em>Ich gebe es ihm.</em> To kolejności zwykłe, a nie bezwzględne reguły: żeby coś podkreślić, można element przesunąć."
+        p: "Przy czasownikach takich jak <em>geben, schenken, zeigen, schicken, leihen, erklären</em> są dwa dopełnienia: osoba (celownik) i rzecz (biernik). Zwykła kolejność w zdaniu neutralnym jest taka. Przy <b>dwóch rzeczownikach</b> celownik stoi przed biernikiem: <em>Ich schenke meiner Schwester ein Buch.</em> Przy <b>zaimku i rzeczowniku</b> zaimek stoi pierwszy, bez względu na przypadek: <em>Ich gebe ihm das Buch. Ich gebe es meinem Bruder.</em> Przy <b>dwóch zaimkach</b> biernik stoi przed celownikiem: <em>Ich gebe es ihm.</em> To kolejności zwykłe, a nie bezwzględne reguły: rzeczownik albo akcentowany zaimek można dla podkreślenia przesunąć na pierwsze miejsce (<em>Das gebe ich ihm</em>), ale nieakcentowane dopełnienie <em>es</em> nie otwiera zdania: nie <s>Es gebe ich ihm</s>."
       },
       {
         contrast: "Po polsku kolejność dopełnień jest swobodna i zależy od akcentu: <em>daję mu książkę</em> albo <em>daję książkę jemu</em>. Przy dwóch zaimkach zwykle stoi najpierw celownik, potem biernik: <em>daję mu to</em>, <em>daję ci to</em> (mu, ci to celownik, to jest biernik). W niemieckim w zwykłej kolejności jest odwrotnie: najpierw biernik, potem celownik: <em>Ich gebe es ihm</em>, <em>Ich gebe es dir</em>. Jeśli tłumaczysz z polskiego, odwróć kolejność: najpierw <em>es</em> (polskie «to»), potem <em>dir</em> albo <em>ihm</em> (polskie «ci» albo «mu»). Przy zaimku i rzeczowniku polski i niemiecki zgadzają się: <em>daję mu książkę</em> to <em>Ich gebe ihm das Buch</em>."
@@ -1409,7 +1409,7 @@ LINGUAI.addStrings("pl", {
         contrast: "Po polsku też nie ma zaimka w trybie rozkazującym (<em>chodź, czekaj, zadzwoń</em>), a dla kilku osób forma ma końcówkę <em>-cie</em> (<em>chodźcie, czekajcie</em>), tak jak niemieckie <em>ihr</em> (<em>Kommt! Wartet!</em>). Polskie czasowniki tworzą tryb rozkazujący końcówkami (<em>-j</em>, <em>-ij</em>, <em>-ź</em> i inne), a niemiecki dla <em>du</em> po prostu bierze temat: <em>Komm!</em>, <em>Warte!</em>. Różnica w rekcji: <em>zadzwoń do mnie</em> to <em>do</em> z dopełniaczem, a <em>Ruf mich an!</em> ma biernik (<em>mich</em>) i przedrostek na końcu. W zaprzeczeniu polski używa <em>nie</em> przed czasownikiem (<em>nie spóźnij się</em>), a niemiecki dodaje <em>nicht</em> w zdaniu: <em>Komm nicht zu spät!</em> Polski ma własne słówka zmieniające ton (<em>no</em>, <em>przecież</em>, <em>sobie</em>, <em>śmiało</em>), ale nie odpowiadają one niemieckim <em>mal</em> i <em>doch</em> jeden do jednego: tłumaczy się je tonem, a nie słowem."
       },
       {
-        trap: "Nie dodawaj <em>-st</em>: <em>Kommst!</em> nie jest trybem rozkazującym. Przy czasownikach mocnych z <em>e → ie</em> nie mów <em>Lese!</em>, tylko <em>Lies!</em>, a nie <em>Nehm!</em>, tylko <em>Nimm!</em> Przy <em>sein</em> forma to <em>Sei vorsichtig!</em> Nie myśl, że <em>mal</em> i <em>doch</em> to puste słowa: bez nich zdanie jest nadal poprawne, ale brzmi ostrzej."
+        trap: "Nie dodawaj <em>-st</em>: <em>Kommst!</em> nie jest trybem rozkazującym. Przy czasownikach mocnych z <em>e → i/ie</em> nie mów <em>Lese!</em>, tylko <em>Lies!</em>, a nie <em>Nehm!</em>, tylko <em>Nimm!</em> Przy <em>sein</em> forma to <em>Sei vorsichtig!</em> Nie myśl, że <em>mal</em> i <em>doch</em> to puste słowa: bez nich zdanie jest nadal poprawne, ale brzmi ostrzej."
       },
       {
         tip: "Gdy dajesz przyjacielowi polecenie albo radę, przy czasowniku regularnym: zacznij od bezokolicznika, odrzuć <em>-en</em>, dodaj <em>-e</em>, jeśli temat kończy się na <em>-t</em> lub <em>-d</em>, i wstaw <em>mal</em> lub <em>doch</em>, żeby złagodzić: <em>Warte mal! Komm doch mit!</em> Wyjątkiem są czasowniki ze zmianą samogłoski i <em>sein</em>: <em>Nimm! Lies! Sei!</em>"

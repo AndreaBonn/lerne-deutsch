@@ -1,23 +1,7 @@
 {
-  "bundleHash": "152aa48df1255e50d06a443b3688bac99756032efb0d6aba9fd5adcc5e9b3d19",
-  "findings": [
-    {
-      "kind": "alternative corrette mancanti",
-      "msg": "La traduzione ammette anche «Wir sind nach Berlin umgezogen, als ich zehn Jahre alt war» e «Wir sind nach Berlin umgezogen, als ich zehn war». Aggiungere queste varianti alla chiave oppure richiedere esplicitamente di iniziare con als.",
-      "path": "merged.lessons[1].exercises[7].a"
-    },
-    {
-      "kind": "alternative corrette mancanti",
-      "msg": "«Ich kann mich gut an meine Schule erinnern» è una traduzione naturale e fedele di «Dobrze pamiętam moją szkołę». Aggiungerla alle risposte accettate oppure richiedere esplicitamente la costruzione senza verbo modale.",
-      "path": "merged.lessons[3].exercises[6].a"
-    },
-    {
-      "kind": "copertura della verifica",
-      "msg": "La verifica non contiene esercizi sui verbi riflessivi della lezione 4 né sulla scelta tra als e wenn: als viene suggerito direttamente e wenn non compare. Integrare almeno un esercizio sui pronomi riflessivi e uno che distingua eventi passati singoli e ripetuti, per verificare effettivamente l'intera unità.",
-      "path": "merged.test.exercises"
-    }
-  ],
+  "bundleHash": "75987fdbb924b5f7308e646b400af084569acd50ed0d9a53762aef9f0c311e14",
+  "findings": [],
   "lang": "pl",
   "unit": "a2-u01",
-  "verdict": "fail"
+  "verdict": "pass"
 }
