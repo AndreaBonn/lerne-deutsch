@@ -1,5 +1,5 @@
 /* ============================================================
-   Learner-language text (it) for data/core/a2-02.js, units a2-u05 and a2-u06.
+   Learner-language text (it) for data/core/a2-02.js, units a2-u05, a2-u06 and a2-u07.
    Keys point at ids in the neutral layer; arrays merge by index,
    so their length has to match core.
    Checked by scripts/parity.mjs.
@@ -1048,6 +1048,549 @@ LINGUAI.addStrings("it", {
       {
         tr: "Da noi si comincia alle otto, e per prima cosa parliamo dell'ordine del giorno.",
         why: "In <i>acht</i> la <b>ch</b> dopo <b>a</b> è [x]; <i>Bei</i> ha <b>ei</b> = [aɪ]; in <i>zuerst</i> la <b>z</b> è [ts] e le vocali <b>u</b> ed <b>e</b> si pronunciano staccate."
+      }
+    ]
+  },
+  "unit:a2-u07": {
+    title: "Feste e usanze",
+    grammarNote: "gratulieren e altri verbi con il dativo · date (am 3. Oktober) · Hast du Lust, ... zu ...? · aggettivo usato come avverbio · normalerweise, leider, hoffentlich"
+  },
+  "lesson:a2-u07-l1": {
+    theme: "Auguri e regali",
+    title: "Tanti auguri!",
+    objectives: [
+      "fare gli auguri con gratulieren e Herzlichen Glückwunsch",
+      "usare il dativo con gratulieren, schenken e danken",
+      "dire una data con am e il numero ordinale (am 3. Oktober)"
+    ],
+    theory: [
+      {
+        h: "Fare gli auguri",
+        p: "Per fare gli auguri a qualcuno c'è il verbo <strong>gratulieren</strong>: la persona è al <strong>dativo</strong> e l'occasione si introduce con <strong>zu</strong> + dativo, cioè <em>zum</em> (<em>zu dem</em>, maschile e neutro) o <em>zur</em> (<em>zu der</em>, femminile): <em>Ich gratuliere dir zum Geburtstag. Wir gratulieren euch zur Hochzeit.</em> Come formula fissa, senza verbo: <em>Herzlichen Glückwunsch zum Geburtstag!</em> oppure <em>Alles Gute zum Geburtstag!</em> Per le feste: <em>Frohe Weihnachten!</em> e <em>Frohes neues Jahr!</em>"
+      },
+      {
+        h: "Regalare e ringraziare: ancora il dativo",
+        p: "Anche <strong>schenken</strong> (regalare) e <strong>danken</strong> (ringraziare) vogliono la persona al dativo: <em>Ich schenke meiner Schwester ein Buch. Ich danke dir für das Geschenk.</em> Con <em>schenken</em> la cosa regalata è all'accusativo (<em>ein Buch</em>); con <em>danken</em> il motivo si introduce con <strong>für</strong> + accusativo."
+      },
+      {
+        h: "Le date: am + numero ordinale",
+        p: "Una data si dice con <strong>am</strong> e il numero <strong>ordinale</strong>. Si scrive con il punto: <em>am 3. Oktober</em>, e si legge <em>am dritten Oktober</em>. Il punto dopo il numero indica proprio che è un ordinale. Fino al 19 si aggiunge <em>-ten</em> (<em>am vierten, am siebten, am achten</em>), dal 20 in poi <em>-sten</em> (<em>am zwanzigsten, am dreißigsten</em>); le forme irregolari sono <em>am ersten</em> (1.), <em>am zweiten</em> (2.), <em>am dritten</em> (3.). Per dire quando si compie gli anni: <em>Wann hast du Geburtstag? Am 3. Oktober.</em> oppure <em>Ich habe am 3. Oktober Geburtstag.</em>"
+      },
+      {
+        contrast: "In italiano <em>ringraziare</em> e <em>aiutare</em> hanno un oggetto diretto (<em>lo ringrazio</em>), mentre <em>fare gli auguri a qualcuno</em> e <em>regalare a qualcuno</em> hanno un complemento di termine. In tedesco tutti e tre i verbi si costruiscono con la persona al dativo: <em>ich danke <b>dir</b></em>, <em>ich gratuliere <b>dir</b></em>, <em>ich schenke <b>dir</b></em>. Per le date l'italiano usa l'articolo e un numero semplice (<em>il 3 ottobre</em>, ma <em>il primo</em> per l'1); il tedesco usa <em>am</em> e un ordinale per tutti i giorni, anche per il 3 e il 20."
+      },
+      {
+        trap: "Non si dice «ich danke dich» né «ich gratuliere dich»: il pronome è <em>dir</em>. L'occasione non prende <em>für</em> ma <em>zu</em>: <em>zum Geburtstag</em>, non «für Geburtstag». E <em>zum</em> o <em>zur</em> dipende dal genere: <em>der Geburtstag</em> → <em>zum</em>, <em>die Hochzeit</em> → <em>zur</em>, <em>das Fest</em> → <em>zum</em>. Nella data manca spesso il punto: <em>am 3 Oktober</em> sembra un cardinale, e in tedesco la scrittura corretta è <em>am 3. Oktober</em>."
+      },
+      {
+        tip: "Una frase completa per un biglietto: <em>Liebe Anna, herzlichen Glückwunsch zum Geburtstag! Ich schenke dir ein Buch.</em> I mesi si dicono con <em>im</em> (<em>im Oktober</em>), il giorno preciso con <em>am</em> (<em>am 3. Oktober</em>)."
+      }
+    ],
+    grammar: {
+      title: "Verbi con il dativo e le date",
+      note: "<b>gratulieren, schenken, danken</b>: la persona è al <b>dativo</b>. L'occasione: <b>zum / zur</b> + dativo. La data: <b>am</b> + ordinale con il punto, <b>am 3. Oktober</b>.",
+      table: {
+        head: ["verbo", "persona (dativo)", "il resto della frase"],
+        rows: [
+          ["gratulieren", "Ich gratuliere dir", "zum Geburtstag."],
+          ["schenken", "Ich schenke meiner Schwester", "ein Buch."],
+          ["danken", "Ich danke dir", "für das Geschenk."],
+          ["Geburtstag haben", "Ich habe", "am 3. Oktober Geburtstag."]
+        ]
+      },
+      examples: [
+        { tr: "Ti faccio gli auguri per il compleanno.", note: "gratulieren + dir; zum = zu dem" },
+        { tr: "Tanti auguri di buon compleanno!", note: "formula fissa, senza verbo" },
+        { tr: "Vi facciamo gli auguri per il matrimonio.", note: "zur = zu der (die Hochzeit è femminile)" },
+        { tr: "Il mio compleanno è il 3 ottobre.", note: "am + ordinale con il punto" },
+        { tr: "Regalo un libro a mia sorella.", note: "meiner Schwester: dativo femminile" },
+        { tr: "Ti ringrazio per il regalo.", note: "danken + dativo; für + accusativo" }
+      ]
+    },
+    vocab: [
+      "il compleanno",
+      "il regalo",
+      "il matrimonio, le nozze",
+      "l'augurio, la congratulazione",
+      "fare gli auguri, congratularsi",
+      "regalare",
+      "ringraziare",
+      "la festa, la ricorrenza",
+      "la torta, il dolce",
+      "festeggiare",
+      "la festa (tra amici)",
+      "la candelina"
+    ],
+    exercises: [
+      {
+        q: "Come fai gli auguri di compleanno a un amico?",
+        opts: [
+          "Ich gratuliere dir zum Geburtstag.",
+          "Ich gratuliere dich zum Geburtstag.",
+          "Ich gratuliere dir für Geburtstag."
+        ],
+        why: "<i>Gratulieren</i> vuole la persona al dativo (<b>dir</b>) e l'occasione con <b>zu</b> + dativo: <i>zum Geburtstag</i>."
+      },
+      {
+        q: "Come dici «Il mio compleanno è il 3 ottobre»?",
+        opts: [
+          "Mein Geburtstag ist an 3. Oktober.",
+          "Mein Geburtstag ist am 3. Oktober.",
+          "Mein Geburtstag ist im 3. Oktober."
+        ],
+        why: "Per una data si usa <b>am</b> e l'ordinale con il punto: <i>am 3. Oktober</i>. <i>Im</i> serve per il mese intero: <i>im Oktober</i>."
+      },
+      {
+        q: "Cosa dici a chi si sposa?",
+        opts: [
+          "Herzlichen Glückwunsch zum Hochzeit!",
+          "Herzlichen Glückwunsch in der Hochzeit!",
+          "Herzlichen Glückwunsch zur Hochzeit!"
+        ],
+        why: "<i>Die Hochzeit</i> è femminile: <b>zur</b> = <i>zu der</i>. <i>Zum</i> si userebbe con un maschile o un neutro."
+      },
+      {
+        q: "Completa: «Ich schenke ___ Schwester ein Buch.» (a mia sorella)",
+        opts: ["meiner", "meine", "meinem"],
+        why: "<i>Schenken</i> vuole la persona al dativo, e <i>die Schwester</i> è femminile: <b>meiner</b>. <i>Meinem</i> è il dativo di maschile e neutro."
+      },
+      {
+        q: "Completa: «Ich gratuliere ___ zum Geburtstag.» (a te)",
+        hint: "dativo di du",
+        why: "<b>dir</b> è il dativo di <i>du</i>: <i>Ich gratuliere dir zum Geburtstag.</i>"
+      },
+      {
+        q: "Completa: «Mein Geburtstag ist ___ 3. Oktober.» (il)",
+        hint: "preposizione della data",
+        why: "Con una data si usa <b>am</b>: <i>am 3. Oktober</i>."
+      },
+      {
+        q: "Abbina ogni parola al suo significato.",
+        pairs: ["compleanno", "regalo", "matrimonio", "augurio"]
+      },
+      {
+        tr: "Faccio gli auguri a Tim per il compleanno. (verbo: gratulieren)",
+        why: "<i>Ich gratuliere Tim zum Geburtstag</i>. Vanno bene anche <i>Zum Geburtstag gratuliere ich Tim</i> e <i>Ich gratuliere Tim zu seinem Geburtstag</i>."
+      },
+      {
+        tr: "Buon compleanno, Anna! Ti faccio gli auguri e ti regalo un libro.",
+        why: "In <i>Glückwunsch</i> la <b>ü</b> è breve [ʏ], la <b>ck</b> si legge [k] e la <b>sch</b> è [ʃ]; in <i>herzlichen</i> la <b>z</b> è [ts] e la <b>ch</b> dopo <b>i</b> è [ç]; in <i>gratuliere</i> la <b>ie</b> è una <b>i</b> lunga [iː]."
+      },
+      {
+        tr: "Faccio gli auguri a mia sorella per il compleanno e le regalo un libro.",
+        why: "In <i>Schwester</i> la <b>sch</b> è [ʃ] e la <b>w</b> è [v]; in <i>Geburtstag</i> l'accento cade su <b>bur</b>, con la <b>u</b> lunga, e la <b>g</b> finale si legge [k]."
+      }
+    ]
+  },
+  "lesson:a2-u07-l2": {
+    theme: "Inviti",
+    title: "Hai voglia di venire?",
+    objectives: [
+      "invitare qualcuno con Hast du Lust, ... zu ...?",
+      "rispondere a un invito: accettare e declinare",
+      "mettere zu davanti all'infinito, e dentro un verbo separabile (mitzukommen)"
+    ],
+    theory: [
+      {
+        h: "Hast du Lust, ... zu ...?",
+        p: "Per invitare qualcuno si dice <strong>Hast du Lust, ...</strong> e poi un secondo verbo all'infinito, preceduto da <strong>zu</strong> e messo <strong>in fondo</strong>: <em>Hast du Lust, am Samstag zu meiner Party zu kommen? Ich habe Lust, ins Kino zu gehen. Ich habe keine Zeit, am Samstag zu kommen.</em> Così funziona anche con altre espressioni, come <em>Es ist schön, ...</em> o <em>Ich habe vor, ...</em> (vedi la scheda della grammatica)."
+      },
+      {
+        h: "Verbi separabili e virgola",
+        p: "Con un verbo separabile <strong>zu va in mezzo</strong>, tra il prefisso e il verbo, e si scrive tutto in una parola: <em>mitkommen</em> → <em>Hast du Lust, mitzukommen?</em>; <em>einladen</em> → <em>Es ist schön, Freunde einzuladen.</em> La <strong>virgola</strong> si mette quando il gruppo con <em>zu</em> è ampliato, cioè ha altre parole oltre all'infinito (<em>..., am Samstag zu meiner Party zu kommen</em>); dopo un nome come <em>Lust</em> o <em>Zeit</em> in genere si scrive sempre. Dopo un verbo, con l'infinito semplice (<em>Ich versuche zu schlafen</em>) la virgola è facoltativa."
+      },
+      {
+        contrast: "L'italiano usa <em>di</em> + infinito: <em>hai voglia di venire?</em>, <em>non ho tempo di cucinare</em>. Il tedesco ha <em>zu</em> + infinito, che sta sempre direttamente davanti al verbo e in fondo alla frase, mentre in italiano <em>di venire</em> segue subito il verbo principale. Dopo i verbi modali (<em>können, müssen, wollen</em>) in tedesco <strong>non</strong> c'è <em>zu</em>, come in italiano non c'è <em>di</em>: <em>Kannst du kommen?</em> (puoi venire?)."
+      },
+      {
+        trap: "Non si scrive «zu mitkommen» né «mit zu kommen»: la forma è <em>mitzukommen</em>, in una parola. E non si dice «Hast du Lust, kommen?»: serve <em>zu</em>, <em>Hast du Lust, zu kommen?</em>. Dopo un modale invece <em>zu</em> manca: <em>Ich kann kommen</em>, non «Ich kann zu kommen»."
+      },
+      {
+        tip: "Per rispondere: <em>Danke für die Einladung! Ich komme gern.</em> oppure <em>Ich sage gern zu</em> (accetto). Per declinare: <em>Leider habe ich keine Zeit.</em> o <em>Leider muss ich absagen.</em> Per invitare: <em>Ich lade dich zu meiner Party ein.</em>"
+      }
+    ],
+    grammar: {
+      title: "zu + infinito",
+      note: "<b>zu</b> + infinito <b>in fondo</b>: <i>Ich habe Lust, ins Kino zu gehen.</i> Verbo separabile: <b>zu</b> in mezzo (<i>mitzukommen</i>). Gruppo ampliato: <b>virgola</b>. Dopo un verbo modale nessun <i>zu</i>.",
+      table: {
+        head: ["costruzione", "esempio", "nota"],
+        rows: [
+          ["Lust haben", "Ich habe Lust, ins Kino zu gehen.", "zu davanti all'infinito, in fondo"],
+          ["keine Zeit haben", "Ich habe keine Zeit, am Samstag zu kommen.", "gruppo ampliato: virgola"],
+          ["verbo separabile", "Hast du Lust, mitzukommen?", "zu in mezzo: mitzukommen"],
+          ["verbo modale", "Kannst du kommen?", "nessun zu"]
+        ]
+      },
+      examples: [
+        { tr: "Hai voglia di venire anche tu?", note: "mitkommen: zu in mezzo, mitzukommen" },
+        { tr: "Hai voglia di venire sabato alla mia festa?", note: "gruppo ampliato: virgola dopo Lust" },
+        { tr: "Ho voglia di andare al cinema.", note: "zu gehen: zu davanti all'infinito" },
+        { tr: "Non ho tempo di venire sabato.", note: "keine Zeit, ... zu kommen" },
+        { tr: "È bello invitare gli amici.", note: "einladen: zu in mezzo, einzuladen" },
+        { tr: "Grazie per l'invito! Vengo volentieri.", note: "risposta a un invito" }
+      ]
+    },
+    vocab: [
+      "l'invito",
+      "invitare",
+      "la voglia",
+      "venire anche tu, venire con (qualcuno)",
+      "disdire, declinare",
+      "accettare (un invito)",
+      "l'idea",
+      "l'ospite",
+      "la visita, gli ospiti",
+      "la sorpresa",
+      "passare (a trovare)",
+      "il tempo"
+    ],
+    exercises: [
+      {
+        q: "Come inviti un amico a venire con te?",
+        opts: [
+          "Hast du Lust, mitzukommen?",
+          "Hast du Lust, zu mitkommen?",
+          "Hast du Lust, mitkommen zu?"
+        ],
+        why: "Con un verbo separabile <b>zu</b> va in mezzo, tutto in una parola: <i>mitzukommen</i>."
+      },
+      {
+        q: "Completa: «Hast du Lust, heute Abend ins Kino ___ gehen?»",
+        hint: "una parola breve prima dell'infinito",
+        why: "<b>zu</b> sta direttamente davanti all'infinito: <i>ins Kino zu gehen</i>."
+      },
+      {
+        q: "Completa: «Hast du ___, mitzukommen?» (voglia)",
+        hint: "nome, con la maiuscola",
+        why: "<b>Lust</b> haben: <i>Hast du Lust, mitzukommen?</i>"
+      },
+      {
+        q: "Abbina ogni parola al suo significato.",
+        pairs: ["invitare", "disdire, declinare", "accettare (un invito)", "sorpresa"]
+      },
+      {
+        tr: "Hai voglia di venire a trovarci?",
+        why: "<i>Hast du Lust, uns zu besuchen?</i>: la virgola dopo <i>Lust</i>, <i>zu</i> direttamente davanti a <i>besuchen</i>, in fondo."
+      },
+      {
+        tr: "Hai voglia di andare al cinema?",
+        why: "<i>Hast du Lust, ins Kino zu gehen?</i> Va bene anche <i>in das Kino</i>. <i>Zu gehen</i> chiude la frase."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Grazie per l'invito! Ho voglia di venire alla vostra festa.",
+        why: "<i>Die Einladung</i> è l'invito. <i>Zu eurer Party zu kommen</i>: la prima <b>zu</b> è la preposizione, la seconda introduce l'infinito."
+      },
+      {
+        q: "Sei invitato a una festa.",
+        setting: "Un'amica ti invita alla sua festa di sabato.",
+        lines: [
+          { tr: "Ciao! Sabato c'è la mia festa. Hai voglia di venire?" },
+          {
+            tr: "Ringrazia per l'invito e di' che vieni volentieri.",
+            answerTr: "Grazie per l'invito! Vengo volentieri."
+          },
+          { tr: "Benissimo! Puoi portare una torta?" },
+          {
+            tr: "Rispondi di sì e di' che hai voglia di fare una torta.",
+            answerTr: "Sì, volentieri. Ho voglia di fare una torta."
+          }
+        ]
+      },
+      {
+        tr: "Hai voglia di venire alla mia festa sabato? Purtroppo non ho tempo, ma grazie per l'invito!",
+        why: "In <i>Einladung</i> la <b>ei</b> è [aɪ]; in <i>Samstag</i> la <b>s</b> iniziale è sonora [z]; in <i>besuchen</i> la <b>ch</b> dopo <b>u</b> è [x] e la <b>s</b> tra due vocali è sonora [z]."
+      },
+      {
+        tr: "Hai voglia di venire con me al cinema?",
+        why: "In <i>Kino</i> la <b>i</b> è lunga [iː]; in <i>mit</i> la <b>i</b> è breve; in <i>Lust</i> la <b>u</b> è breve e la <b>st</b> si legge [st]."
+      }
+    ]
+  },
+  "lesson:a2-u07-l3": {
+    theme: "Saluti e usanze",
+    title: "Germania, Austria, Svizzera",
+    objectives: [
+      "conoscere alcuni saluti tipici delle tre aree (Grüß Gott, Grüezi, Servus)",
+      "descrivere un'usanza come tendenza, con oft e meistens",
+      "dire come ci si saluta e a che registro, tra du e Sie"
+    ],
+    theory: [
+      {
+        h: "Un tedesco, tre paesi",
+        p: "Si parla tedesco in Germania, in Austria e in Svizzera (dove, oltre al tedesco, ci sono il francese, l'italiano e il romancio). Il tedesco standard è lo stesso, ma i saluti e alcune usanze cambiano da una regione all'altra. <em>Guten Tag</em> funziona più o meno ovunque. <em>Grüß Gott</em> si sente più spesso nel sud della Germania e in Austria, <em>Servus</em> soprattutto in Austria e in Baviera (si dice anche quando ci si congeda), <em>Grüezi</em> nella Svizzera tedesca, <em>Moin</em> nel nord della Germania. Sono <strong>tendenze</strong>, non regole: per questo nelle frasi di questa lezione compaiono <em>oft</em> e <em>meistens</em>."
+      },
+      {
+        h: "Raccontare un'usanza",
+        p: "Per descrivere un'usanza si usa <strong>man</strong> con il verbo alla terza persona singolare: <em>In der Schweiz sagt man oft Grüezi.</em> Una tendenza si dichiara con <em>oft, meistens, in vielen Familien</em>: <em>In vielen Familien feiert man Weihnachten am 24. Dezember.</em> Il registro lo scegli con <em>du</em> e <em>Sie</em>: <em>Im Büro siezt man oft, unter Freunden duzt man sich.</em>"
+      },
+      {
+        contrast: "In italiano, a Natale, molte famiglie fanno una cena la sera della vigilia e un pranzo il giorno 25. In molte famiglie tedesche il momento principale è la sera del 24 dicembre, <em>Heiligabend</em>, con i regali; il 25 e il 26 sono <em>Feiertage</em>. Sono tendenze e non regole: ogni famiglia e ogni regione ha le sue abitudini. A <em>Silvester</em> (il 31 dicembre, San Silvestro) molte persone festeggiano con amici e fuochi d'artificio a mezzanotte. In italiano il saluto <em>buongiorno</em> o <em>salve</em> cambia poco da regione a regione; in tedesco la scelta tra <em>Grüß Gott</em>, <em>Grüezi</em> e <em>Servus</em> dipende molto da dove ti trovi."
+      },
+      {
+        trap: "Non generalizzare: «In Germania si dice Grüß Gott» è troppo largo, perché in molte zone del nord non si sente quasi mai. Meglio una frase prudente: <em>In Süddeutschland und in Österreich sagt man oft Grüß Gott.</em> Un'altra differenza di scrittura: in Svizzera di solito si scrive <em>ss</em> al posto di <em>ß</em> (<em>Strasse</em>, <em>Grüsse</em>), in Germania e in Austria si usa <em>ß</em> (<em>Straße</em>, <em>Grüße</em>)."
+      },
+      {
+        tip: "Quando non sai quale saluto usare, <em>Guten Tag</em> (e <em>Auf Wiedersehen</em>) è una scelta sicura, e con persone che non conosci resta la forma <em>Sie</em>."
+      }
+    ],
+    grammar: {
+      title: "Saluti nelle tre aree e registro",
+      note: "Un saluto o un'usanza si descrive come <b>tendenza</b>: <b>man</b> + <b>oft / meistens</b>. Tra sconosciuti <b>Sie</b>, tra amici <b>du</b>.",
+      table: {
+        head: ["saluto", "dove si sente più spesso", "nota"],
+        rows: [
+          ["Guten Tag", "in tutte e tre le aree", "neutro, adatto a molte situazioni"],
+          ["Grüß Gott", "sud della Germania, Austria", "si sente spesso anche nei negozi"],
+          ["Servus", "Austria, Baviera", "informale, per salutare e per congedarsi"],
+          ["Grüezi", "Svizzera tedesca", "si dice spesso a persone che non si conoscono"],
+          ["Moin", "nord della Germania", "informale, si sente a qualsiasi ora"],
+          ["Hallo", "in tutte e tre le aree", "informale, tra amici e colleghi"]
+        ]
+      },
+      examples: [
+        { tr: "Nel sud della Germania e in Austria si dice spesso Grüß Gott.", note: "oft: una tendenza" },
+        { tr: "In Svizzera si dice spesso Grüezi.", note: "man + terza persona singolare" },
+        { tr: "Tra amici si dice anche Hallo.", note: "unter Freunden: registro informale" },
+        { tr: "In Austria si dice spesso Servus.", note: "Servus: informale" },
+        { tr: "In molte famiglie si festeggia il Natale il 24 dicembre.", note: "in vielen Familien: una tendenza" },
+        { tr: "In ufficio spesso ci si dà del Lei, tra amici del tu.", note: "siezen e duzen" }
+      ]
+    },
+    vocab: [
+      "l'usanza, il costume",
+      "la tradizione",
+      "il paese, la nazione",
+      "la regione",
+      "il giorno festivo",
+      "il mercatino di Natale",
+      "il saluto, l'accoglienza",
+      "salutare, accogliere",
+      "tipico",
+      "diverso, vario",
+      "la differenza",
+      "San Silvestro (il 31 dicembre)"
+    ],
+    exercises: [
+      {
+        q: "Quale saluto si sente spesso nella Svizzera tedesca?",
+        opts: ["Grüß Gott.", "Grüezi.", "Moin."],
+        why: "<i>Grüezi</i> è il saluto che si sente spesso nella Svizzera tedesca. <i>Grüß Gott</i> è più frequente nel sud della Germania e in Austria, <i>Moin</i> nel nord della Germania."
+      },
+      {
+        q: "Con un cliente che non conosci, di solito dai del...",
+        opts: ["Sie", "du", "ihr"],
+        why: "Con persone che non conosci e in contesti formali si usa di solito <b>Sie</b>; <i>du</i> è per amici e familiari."
+      },
+      {
+        q: "Quale frase è formulata in modo prudente, senza generalizzare?",
+        opts: [
+          "In der Schweiz gibt es keine Traditionen.",
+          "In Deutschland feiern alle Weihnachten gleich.",
+          "Die Bräuche sind oft von Region zu Region verschieden."
+        ],
+        why: "<b>oft</b> presenta le usanze come tendenze. Le altre due frasi sono troppo assolute e non sono vere."
+      },
+      {
+        q: "Completa il saluto tipico del sud della Germania e dell'Austria: «Grüß ___.»",
+        hint: "la seconda parola del saluto",
+        why: "<b>Grüß Gott</b>: si sente spesso nel sud della Germania e in Austria."
+      },
+      {
+        q: "Abbina ogni parola al suo significato.",
+        pairs: ["usanza", "giorno festivo", "mercatino di Natale", "differenza"]
+      },
+      {
+        tr: "In Austria si dice spesso Servus.",
+        why: "<i>In Österreich sagt man oft Servus</i>. Vanno bene anche <i>Man sagt in Österreich oft Servus</i>, <i>Oft sagt man in Österreich Servus</i>, <i>Man sagt oft in Österreich Servus</i> e <i>Servus sagt man in Österreich oft</i>."
+      },
+      {
+        tr: "Da noi si dice spesso Hallo.",
+        why: "<i>Bei uns sagt man oft Hallo</i>. Vanno bene anche <i>Man sagt bei uns oft Hallo</i>, <i>Oft sagt man bei uns Hallo</i>, <i>Man sagt oft bei uns Hallo</i> e <i>Hallo sagt man bei uns oft</i>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "In Svizzera si dice spesso Grüezi. In Austria si dice spesso Servus.",
+        why: "<i>Die Schweiz</i> dopo <i>in der</i>; <i>Österreich</i> dopo <i>in</i>, senza articolo."
+      },
+      {
+        tr: "Nel sud della Germania e in Austria si dice spesso Grüß Gott. In Svizzera si dice spesso Grüezi. Tra amici si dice anche Hallo.",
+        why: "In <i>Grüß</i> la <b>ü</b> è lunga [yː] e la <b>ß</b> è una <b>s</b> sorda; in <i>Österreich</i> la <b>ö</b> è lunga [øː] e la <b>ch</b> finale dopo <b>ei</b> è [ç]; in <i>Servus</i> la <b>s</b> iniziale è sonora [z] e la <b>v</b> è [v]."
+      },
+      {
+        tr: "Le usanze sono spesso diverse da una regione all'altra.",
+        why: "In <i>Bräuche</i> la <b>äu</b> è [ɔʏ] e la <b>ch</b> dopo <b>äu</b> è [ç]; in <i>verschieden</i> la <b>sch</b> è [ʃ] e la <b>ie</b> è una <b>i</b> lunga [iː]."
+      }
+    ]
+  },
+  "lesson:a2-u07-l4": {
+    theme: "Come e quando",
+    title: "normalmente, lentamente",
+    objectives: [
+      "usare un aggettivo come avverbio, senza desinenza (langsam, schnell, laut)",
+      "usare normalerweise, leider, hoffentlich e vielleicht",
+      "mettere l'avverbio all'inizio e il verbo in seconda posizione"
+    ],
+    theory: [
+      {
+        h: "L'aggettivo che fa da avverbio",
+        p: "In tedesco l'<strong>aggettivo</strong> senza desinenza può funzionare da <strong>avverbio</strong>, cioè dire come si fa un'azione: <em>Er spricht langsam. Sie fährt schnell. Wir singen laut.</em> È la stessa parola che usi per descrivere un nome: <em>Der Zug ist langsam</em>, ma con un sostantivo ha la desinenza (<em>ein langsamer Zug</em>); come avverbio la desinenza non c'è mai."
+      },
+      {
+        h: "Avverbi di frase: normalerweise, leider, hoffentlich, vielleicht",
+        p: "Alcuni avverbi dicono qualcosa sull'<strong>intera frase</strong>: <strong>normalerweise</strong> (di solito), <strong>leider</strong> (purtroppo), <strong>hoffentlich</strong> (speriamo che, si spera che), <strong>vielleicht</strong> (forse). Possono aprire la frase, e allora il verbo resta in <strong>seconda posizione</strong> e il soggetto passa dopo: <em>Normalerweise feiere ich meinen Geburtstag mit Freunden. Leider habe ich am Samstag keine Zeit. Hoffentlich kommst du zur Party. Vielleicht kommt Tim später.</em> Nella frase si trovano di solito dopo il verbo: <em>Ich habe leider keine Zeit.</em>"
+      },
+      {
+        contrast: "L'italiano forma molti avverbi con <em>-mente</em> (<em>lentamente, velocemente</em>) o usa l'aggettivo uguale (<em>parla forte</em>); il tedesco usa quasi sempre l'aggettivo così com'è: <em>langsam</em> è sia «lento» sia «lentamente». <em>Hoffentlich</em> poi è un avverbio da solo: l'italiano costruisce la frase con un verbo (<em>spero che tu venga</em>, <em>speriamo che venga</em>), il tedesco no: <em>Hoffentlich kommst du</em>, senza <em>dass</em>."
+      },
+      {
+        trap: "<em>normal</em> è un aggettivo (<em>Das ist normal</em>), mentre «di solito» si dice <em>normalerweise</em>. Quando una di queste parole apre la frase, il verbo viene subito dopo: <em>Leider habe ich keine Zeit</em>, non «Leider ich habe keine Zeit». E non aggiungere una desinenza all'avverbio: <em>Er spricht langsam</em>, non «Er spricht langsame»."
+      },
+      {
+        tip: "Altri avverbi utili da imparare insieme a questi: <em>deutlich</em> (chiaramente), <em>leise</em> (piano), <em>später</em> (più tardi), <em>natürlich</em> (naturalmente, certo)."
+      }
+    ],
+    grammar: {
+      title: "Avverbi: aggettivo senza desinenza e avverbi di frase",
+      note: "Un <b>aggettivo senza desinenza</b> fa da avverbio: <i>Er spricht langsam.</i> Avverbi di frase come <b>normalerweise, leider, hoffentlich, vielleicht</b> possono aprire la frase: il verbo resta in <b>seconda posizione</b>.",
+      table: {
+        head: ["parola", "significato", "esempio"],
+        rows: [
+          ["normalerweise", "di solito", "Normalerweise esse ich um zwölf Uhr."],
+          ["leider", "purtroppo", "Leider habe ich keine Zeit."],
+          ["hoffentlich", "speriamo che, si spera che", "Hoffentlich kommst du zur Party."],
+          ["vielleicht", "forse", "Vielleicht komme ich später."],
+          ["langsam", "lento; lentamente", "Er spricht langsam."]
+        ]
+      },
+      examples: [
+        { tr: "Di solito festeggio il compleanno con gli amici.", note: "normalerweise apre la frase: verbo in seconda posizione" },
+        { tr: "Purtroppo sabato non ho tempo.", note: "leider: habe ich" },
+        { tr: "Speriamo che tu venga alla festa.", note: "hoffentlich, senza dass" },
+        { tr: "Anna balla lentamente e con grazia.", note: "langsam e schön: aggettivi come avverbi" },
+        { tr: "Cantiamo ad alta voce.", note: "laut: nessuna desinenza" },
+        { tr: "Forse Tim viene più tardi.", note: "vielleicht: kommt Tim" }
+      ]
+    },
+    vocab: [
+      "di solito, normalmente",
+      "purtroppo",
+      "speriamo che, si spera che",
+      "forse",
+      "lento; lentamente",
+      "veloce; velocemente",
+      "forte, ad alta voce",
+      "piano, a bassa voce",
+      "chiaro; chiaramente",
+      "più tardi, dopo",
+      "particolarmente, soprattutto",
+      "naturalmente, certo"
+    ],
+    exercises: [
+      {
+        q: "Quale parola significa «purtroppo»?",
+        opts: ["hoffentlich", "leider", "vielleicht"],
+        why: "<b>leider</b> = purtroppo. <i>Hoffentlich</i> è «speriamo che», <i>vielleicht</i> è «forse»."
+      },
+      {
+        q: "In quale frase <i>langsam</i> descrive il verbo, senza desinenza?",
+        opts: ["Das Kind ist langsam.", "Das ist ein langsames Kind.", "Das Kind spricht langsam."],
+        why: "In <i>Das Kind spricht langsam</i>, <b>langsam</b> dice come parla il bambino, ed è senza desinenza. Nelle altre due frasi descrive il bambino."
+      },
+      {
+        q: "Completa con la parola della lezione: «___ feiere ich meinen Geburtstag zu Hause.» (di solito)",
+        hint: "comincia con n",
+        why: "<b>Normalerweise</b> apre la frase, e il verbo resta in seconda posizione: <i>feiere ich</i>."
+      },
+      {
+        q: "Completa: «___ habe ich am Samstag keine Zeit.» (purtroppo)",
+        hint: "avverbio di frase",
+        why: "<b>Leider</b> apre la frase e il verbo viene subito dopo: <i>habe ich</i>."
+      },
+      {
+        q: "Completa: «Die Kinder singen sehr ___.» (forte)",
+        hint: "aggettivo, senza desinenza",
+        why: "<b>laut</b> è un aggettivo senza desinenza che fa da avverbio."
+      },
+      {
+        q: "Abbina ogni parola al suo significato.",
+        pairs: ["di solito", "purtroppo", "speriamo che", "forse"]
+      },
+      {
+        tr: "Purtroppo non ho tempo.",
+        why: "<i>Leider habe ich keine Zeit</i>. Va bene anche <i>Ich habe leider keine Zeit</i>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Parla lentamente e io lo capisco bene. Speriamo che tu venga alla festa!",
+        why: "<i>Langsam</i> è l'aggettivo senza desinenza che fa da avverbio; <i>Hoffentlich</i> apre la frase e il verbo <i>kommst</i> resta in seconda posizione."
+      },
+      {
+        tr: "Di solito festeggio il compleanno a casa. Purtroppo sabato non ho tempo, ma forse festeggiamo più tardi.",
+        why: "In <i>normalerweise</i> la <b>w</b> è [v] e la <b>ei</b> è [aɪ]; in <i>vielleicht</i> la <b>v</b> è [f], la <b>ie</b> è una <b>i</b> lunga [iː] e la <b>ch</b> dopo <b>ei</b> è [ç]; in <i>später</i> la <b>sp</b> iniziale è [ʃp]."
+      },
+      {
+        tr: "Speriamo che tu venga alla festa. Forse festeggiamo più tardi.",
+        why: "In <i>hoffentlich</i> la <b>ch</b> dopo <b>i</b> è [ç]; in <i>später</i> la <b>sp</b> iniziale si legge [ʃp]; in <i>vielleicht</i> la <b>v</b> è [f]."
+      }
+    ]
+  },
+  "lesson:a2-u07-test": {
+    theme: "Verifica",
+    title: "Test: Feste e usanze",
+    objectives: ["verificare gratulieren e il dativo, le date, zu + infinito, i saluti nelle tre aree e gli avverbi"],
+    theory: [
+      {
+        p: "Dieci domande sull'unità. Si supera con il 70%. Non riguardare le lezioni mentre rispondi: se non ricordi qualcosa, è meglio tornare a ripassare."
+      }
+    ],
+    exercises: [
+      {
+        q: "Completa: «Wir gratulieren ___ zur Hochzeit.» (a voi)",
+        hint: "dativo di ihr",
+        why: "<b>euch</b> è il dativo di <i>ihr</i>: <i>Wir gratulieren euch zur Hochzeit.</i>"
+      },
+      {
+        q: "Completa: «Der Kurs beginnt ___ 5. Mai.» (il)",
+        hint: "preposizione della data",
+        why: "Con una data si usa <b>am</b>: <i>am 5. Mai</i>."
+      },
+      {
+        q: "Completa: «Hast du Lust, ins Kino ___ gehen?»",
+        hint: "davanti all'infinito",
+        why: "<b>zu</b> sta direttamente davanti all'infinito: <i>ins Kino zu gehen</i>."
+      },
+      {
+        q: "Completa: «___ kommst du zur Party.» (speriamo che)",
+        hint: "avverbio di frase",
+        why: "<b>Hoffentlich</b> apre la frase e il verbo <i>kommst</i> resta in seconda posizione. Dopo <i>hoffentlich</i> non c'è <i>dass</i>."
+      },
+      {
+        q: "Completa: «Ich schenke ___ Bruder ein Buch.» (a mio fratello)",
+        opts: ["meinem", "meinen", "mein"],
+        why: "<i>Schenken</i> vuole la persona al dativo, e <i>der Bruder</i> è maschile: <b>meinem</b>."
+      },
+      {
+        q: "Quale frase è un invito corretto?",
+        opts: ["Hast du Lust, zu mitkommen?", "Hast du Lust, mitzukommen?", "Hast du Lust, mitkommen?"],
+        why: "Con un verbo separabile <b>zu</b> va in mezzo: <i>mitzukommen</i>, in una parola."
+      },
+      {
+        q: "Che cosa significa <i>leider</i>?",
+        opts: ["di solito", "forse", "purtroppo"],
+        why: "<b>leider</b> = purtroppo. <i>Normalerweise</i> è «di solito», <i>vielleicht</i> è «forse»."
+      },
+      {
+        q: "Abbina ogni parola al suo significato.",
+        pairs: ["fare gli auguri", "regalo", "invito", "usanza"]
+      },
+      {
+        tr: "Tanti auguri di buon compleanno! Hai voglia di venire sabato alla mia festa?",
+        why: "In <i>Glückwunsch</i> la <b>ü</b> è breve [ʏ] e la <b>sch</b> è [ʃ]; in <i>Samstag</i> la <b>s</b> iniziale è sonora [z]; in <i>Lust</i> la <b>u</b> è breve."
+      },
+      {
+        tr: "Ti faccio gli auguri per il compleanno. Hai voglia di festeggiare con noi?",
+        why: "In <i>gratuliere</i> la <b>ie</b> è una <b>i</b> lunga [iː]; in <i>Geburtstag</i> l'accento cade su <b>bur</b>; in <i>feiern</i> la <b>ei</b> è [aɪ]."
       }
     ]
   }

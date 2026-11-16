@@ -1,7 +1,7 @@
 /* ============================================================
    Language-neutral layer: German (de-DE), structure and answer keys.
    Learner-language texts live in data/i18n/<lang>/a2-02.js.
-   a2-u05 and a2-u06 are German units.
+   a2-u05, a2-u06 and a2-u07 are German units.
    ============================================================ */
 LINGUAI.addUnits("A2", [
   {
@@ -598,6 +598,299 @@ LINGUAI.addUnits("A2", [
         },
         { t: "listen", it: "Ich möchte wissen, ob Herr Weber heute im Büro ist. Könnten Sie mich bitte zurückrufen?" },
         { t: "speak", it: "Bei uns beginnt man um acht Uhr, und zuerst besprechen wir die Tagesordnung." }
+      ]
+    }
+  },
+  {
+    id: "a2-u07",
+    icon: "🎉",
+    titleIt: "Feste und Bräuche",
+    lessons: [
+      {
+        id: "a2-u07-l1",
+        tags: ["g-verben-dativ", "g-temporalangaben"],
+        cefr: "A2",
+        titleIt: "Herzlichen Glückwunsch!",
+        grammar: {
+          examples: [
+            { it: "Ich gratuliere dir zum Geburtstag." },
+            { it: "Herzlichen Glückwunsch zum Geburtstag!" },
+            { it: "Wir gratulieren euch zur Hochzeit." },
+            { it: "Mein Geburtstag ist am 3. Oktober." },
+            { it: "Ich schenke meiner Schwester ein Buch." },
+            { it: "Ich danke dir für das Geschenk." }
+          ]
+        },
+        vocab: [
+          { it: "der Geburtstag", plural: "die Geburtstage", ex: "Mein Geburtstag ist am 3. Oktober." },
+          { it: "das Geschenk", plural: "die Geschenke", ex: "Danke für das Geschenk!" },
+          { it: "die Hochzeit", plural: "die Hochzeiten", ex: "Die Hochzeit ist im Mai." },
+          { it: "der Glückwunsch", plural: "die Glückwünsche", ex: "Herzlichen Glückwunsch zum Geburtstag!" },
+          { it: "gratulieren", ex: "Ich gratuliere dir zum Geburtstag." },
+          { it: "schenken", ex: "Ich schenke meiner Mutter Blumen." },
+          { it: "danken", ex: "Ich danke dir für die Hilfe." },
+          { it: "das Fest", plural: "die Feste", ex: "Das Fest beginnt um sieben Uhr." },
+          { it: "der Kuchen", plural: "die Kuchen", ex: "Der Kuchen ist noch warm." },
+          { it: "feiern", ex: "Wir feiern am Samstag." },
+          { it: "die Party", plural: "die Partys", ex: "Die Party beginnt um acht Uhr." },
+          { it: "die Kerze", plural: "die Kerzen", ex: "Auf dem Kuchen steht eine Kerze." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 1 },
+          { t: "mcq", a: 2 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["dir"] },
+          { t: "fill", a: ["am"] },
+          {
+            t: "match",
+            pairs: [{ it: "Geburtstag" }, { it: "Geschenk" }, { it: "Hochzeit" }, { it: "Glückwunsch" }]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Ich gratuliere Tim zum Geburtstag",
+              "Zum Geburtstag gratuliere ich Tim",
+              "Ich gratuliere Tim zu seinem Geburtstag"
+            ]
+          },
+          { t: "listen", it: "Herzlichen Glückwunsch zum Geburtstag, Anna! Ich gratuliere dir und schenke dir ein Buch." },
+          { t: "speak", it: "Ich gratuliere meiner Schwester zum Geburtstag und schenke ihr ein Buch." }
+        ]
+      },
+      {
+        id: "a2-u07-l2",
+        tags: ["g-infinitiv-zu"],
+        cefr: "A2",
+        titleIt: "Hast du Lust, mitzukommen?",
+        grammar: {
+          examples: [
+            { it: "Hast du Lust, mitzukommen?" },
+            { it: "Hast du Lust, am Samstag zu meiner Party zu kommen?" },
+            { it: "Ich habe Lust, ins Kino zu gehen." },
+            { it: "Ich habe keine Zeit, am Samstag zu kommen." },
+            { it: "Es ist schön, Freunde einzuladen." },
+            { it: "Danke für die Einladung! Ich komme gern." }
+          ]
+        },
+        vocab: [
+          { it: "die Einladung", plural: "die Einladungen", ex: "Danke für die Einladung!" },
+          { it: "einladen", ex: "Ich lade dich zu meiner Party ein." },
+          { it: "die Lust", plural: "-", ex: "Hast du Lust, mitzukommen?" },
+          { it: "mitkommen", ex: "Kommst du mit?" },
+          { it: "absagen", ex: "Leider muss ich die Party absagen." },
+          { it: "zusagen", ex: "Ich sage gern zu." },
+          { it: "die Idee", plural: "die Ideen", ex: "Das ist eine gute Idee." },
+          { it: "der Gast", plural: "die Gäste", ex: "Wir haben heute viele Gäste." },
+          { it: "der Besuch", plural: "die Besuche", ex: "Am Sonntag haben wir Besuch." },
+          { it: "die Überraschung", plural: "die Überraschungen", ex: "Die Party ist eine Überraschung." },
+          { it: "vorbeikommen", ex: "Hast du Lust, vorbeizukommen?" },
+          { it: "die Zeit", plural: "die Zeiten", ex: "Ich habe am Samstag keine Zeit." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["zu"] },
+          { t: "fill", a: ["Lust"] },
+          {
+            t: "match",
+            pairs: [{ it: "einladen" }, { it: "absagen" }, { it: "zusagen" }, { it: "Überraschung" }]
+          },
+          {
+            t: "order",
+            tokens: ["Hast", "du", "Lust,", "uns", "zu", "besuchen"],
+            a: ["Hast du Lust, uns zu besuchen"]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: ["Hast du Lust, ins Kino zu gehen", "Hast du Lust, in das Kino zu gehen"]
+          },
+          {
+            t: "cloze",
+            text: "Danke für die {{1}}! Ich habe Lust, zu eurer Party {{2}} kommen.",
+            gaps: [["Einladung"], ["zu"]]
+          },
+          {
+            t: "dialogue",
+            lines: [
+              { sp: "A", it: "Hallo! Am Samstag ist meine Party. Hast du Lust, zu kommen?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Danke für die Einladung! Ich komme gern.",
+                  "Danke für die Einladung! Ich gern komme.",
+                  "Danke für die Einladung! Ich kommen gern."
+                ],
+                a: 0
+              },
+              { sp: "A", it: "Super! Kannst du einen Kuchen mitbringen?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Ja, gern. Ich habe Lust, einen Kuchen backen zu.",
+                  "Ja, gern. Ich habe Lust, einen Kuchen zu backen.",
+                  "Ja, gern. Ich habe Lust, einen Kuchen zu backt."
+                ],
+                a: 1
+              }
+            ]
+          },
+          {
+            t: "listen",
+            it: "Hast du Lust, am Samstag zu meiner Party zu kommen? Ich habe leider keine Zeit, aber danke für die Einladung!"
+          },
+          { t: "speak", it: "Hast du Lust, mit mir ins Kino zu gehen?" }
+        ]
+      },
+      {
+        id: "a2-u07-l3",
+        tags: ["g-register"],
+        cefr: "A2",
+        titleIt: "Deutschland, Österreich, Schweiz",
+        grammar: {
+          examples: [
+            { it: "In Süddeutschland und in Österreich sagt man oft Grüß Gott." },
+            { it: "In der Schweiz sagt man oft Grüezi." },
+            { it: "Unter Freunden sagt man auch Hallo." },
+            { it: "In Österreich sagt man oft Servus." },
+            { it: "In vielen Familien feiert man Weihnachten am 24. Dezember." },
+            { it: "Im Büro siezt man oft, unter Freunden duzt man sich." }
+          ]
+        },
+        vocab: [
+          { it: "der Brauch", plural: "die Bräuche", ex: "Das ist ein alter Brauch." },
+          { it: "die Tradition", plural: "die Traditionen", ex: "In meiner Familie gibt es viele Traditionen." },
+          { it: "das Land", plural: "die Länder", ex: "Deutschland ist ein großes Land." },
+          { it: "die Region", plural: "die Regionen", ex: "In dieser Region feiert man gern." },
+          { it: "der Feiertag", plural: "die Feiertage", ex: "Weihnachten ist ein Feiertag." },
+          { it: "der Weihnachtsmarkt", plural: "die Weihnachtsmärkte", ex: "Der Weihnachtsmarkt ist im Dezember." },
+          { it: "die Begrüßung", plural: "die Begrüßungen", ex: "Die Begrüßung ist freundlich." },
+          { it: "begrüßen", ex: "Wir begrüßen die Gäste." },
+          { it: "typisch", ex: "Das ist typisch für diese Region." },
+          { it: "verschieden", ex: "Die Bräuche sind oft verschieden." },
+          { it: "der Unterschied", plural: "die Unterschiede", ex: "Es gibt viele Unterschiede." },
+          { it: "Silvester", ex: "An Silvester feiern viele Leute mit Freunden." }
+        ],
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 2 },
+          { t: "fill", a: ["Gott"] },
+          {
+            t: "match",
+            pairs: [{ it: "Brauch" }, { it: "Feiertag" }, { it: "Weihnachtsmarkt" }, { it: "Unterschied" }]
+          },
+          {
+            t: "order",
+            tokens: ["In", "Österreich", "sagt", "man", "oft", "Servus"],
+            a: [
+              "In Österreich sagt man oft Servus",
+              "Man sagt in Österreich oft Servus",
+              "Oft sagt man in Österreich Servus",
+              "Man sagt oft in Österreich Servus",
+              "Servus sagt man in Österreich oft"
+            ]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Bei uns sagt man oft Hallo",
+              "Man sagt bei uns oft Hallo",
+              "Oft sagt man bei uns Hallo",
+              "Man sagt oft bei uns Hallo",
+              "Hallo sagt man bei uns oft"
+            ]
+          },
+          {
+            t: "cloze",
+            text: "In der {{1}} sagt man oft Grüezi. In {{2}} sagt man oft Servus.",
+            gaps: [["Schweiz"], ["Österreich"]]
+          },
+          {
+            t: "listen",
+            it: "In Süddeutschland und in Österreich sagt man oft Grüß Gott. In der Schweiz sagt man oft Grüezi. Unter Freunden sagt man auch Hallo."
+          },
+          { t: "speak", it: "Die Bräuche sind oft von Region zu Region verschieden." }
+        ]
+      },
+      {
+        id: "a2-u07-l4",
+        tags: ["g-adverbien"],
+        cefr: "A2",
+        titleIt: "normalerweise, langsam",
+        grammar: {
+          examples: [
+            { it: "Normalerweise feiere ich meinen Geburtstag mit Freunden." },
+            { it: "Leider habe ich am Samstag keine Zeit." },
+            { it: "Hoffentlich kommst du zur Party." },
+            { it: "Anna tanzt langsam und schön." },
+            { it: "Wir singen laut." },
+            { it: "Vielleicht kommt Tim später." }
+          ]
+        },
+        vocab: [
+          { it: "normalerweise", ex: "Normalerweise esse ich um zwölf Uhr." },
+          { it: "leider", ex: "Leider habe ich keine Zeit." },
+          { it: "hoffentlich", ex: "Hoffentlich kommst du zur Party." },
+          { it: "vielleicht", ex: "Vielleicht komme ich später." },
+          { it: "langsam", ex: "Er spricht langsam." },
+          { it: "schnell", ex: "Sie fährt schnell." },
+          { it: "laut", ex: "Die Kinder singen laut." },
+          { it: "leise", ex: "Bitte sprechen Sie leise." },
+          { it: "deutlich", ex: "Sie spricht deutlich." },
+          { it: "später", ex: "Wir feiern später." },
+          { it: "besonders", ex: "Der Kuchen ist besonders gut." },
+          { it: "natürlich", ex: "Natürlich komme ich zur Party." }
+        ],
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "mcq", a: 2 },
+          { t: "fill", a: ["Normalerweise"] },
+          { t: "fill", a: ["Leider"] },
+          { t: "fill", a: ["laut"] },
+          {
+            t: "match",
+            pairs: [{ it: "normalerweise" }, { it: "leider" }, { it: "hoffentlich" }, { it: "vielleicht" }]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: ["Leider habe ich keine Zeit", "Ich habe leider keine Zeit"]
+          },
+          {
+            t: "cloze",
+            text: "Er spricht {{1}}, und ich verstehe ihn gut. {{2}} kommst du zur Party!",
+            gaps: [["langsam"], ["Hoffentlich"]]
+          },
+          {
+            t: "listen",
+            it: "Normalerweise feiere ich meinen Geburtstag zu Hause. Leider habe ich am Samstag keine Zeit, aber vielleicht feiern wir später."
+          },
+          { t: "speak", it: "Hoffentlich kommst du zur Party. Vielleicht feiern wir später." }
+        ]
+      }
+    ],
+    test: {
+      id: "a2-u07-test",
+      tags: ["g-infinitiv-zu", "g-adverbien", "g-verben-dativ"],
+      cefr: "A2",
+      titleIt: "Test: Feste und Bräuche",
+      exercises: [
+        { t: "fill", a: ["euch"] },
+        { t: "fill", a: ["am"] },
+        { t: "fill", a: ["zu"] },
+        { t: "fill", a: ["Hoffentlich"] },
+        { t: "mcq", a: 0 },
+        { t: "mcq", a: 1 },
+        { t: "mcq", a: 2 },
+        {
+          t: "match",
+          pairs: [{ it: "gratulieren" }, { it: "Geschenk" }, { it: "Einladung" }, { it: "Brauch" }]
+        },
+        { t: "listen", it: "Herzlichen Glückwunsch zum Geburtstag! Hast du Lust, am Samstag zu meiner Party zu kommen?" },
+        { t: "speak", it: "Ich gratuliere dir zum Geburtstag. Hast du Lust, mit uns zu feiern?" }
       ]
     }
   }
