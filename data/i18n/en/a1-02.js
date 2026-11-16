@@ -1,5 +1,5 @@
 /* ============================================================
-   Learner-language text (en) for data/core/a1-02.js, units a1-u04 and a1-u05.
+   Learner-language text (en) for data/core/a1-02.js, units a1-u04, a1-u05 and a1-u06.
    Keys point at ids in the neutral layer; arrays merge by index,
    so their length has to match core.
    Checked by scripts/parity.mjs.
@@ -1039,6 +1039,521 @@ LINGUAI.addStrings("en", {
       {
         tr: "In the evening I sometimes watch TV.",
         why: "After <i>Abends</i> the verb comes straight away; <i>fern</i> closes the sentence."
+      }
+    ]
+  },
+  "unit:a1-u06": {
+    title: "In town",
+    grammarNote: "mit, zu, bei, aus, von · dative · wo? with in, an, neben · polite imperative · es gibt"
+  },
+  "lesson:a1-u06-l1": {
+    theme: "Means of transport",
+    title: "Transport and destinations: mit dem Bus, zum Bahnhof",
+    objectives: [
+      "say how you travel with mit + dative",
+      "say where you are going with zu + dative: zum Bahnhof, zur Schule",
+      "use the article in the dative: dem, der, dem, den"
+    ],
+    theory: [
+      {
+        h: "Mit and zu take the dative",
+        p: "The prepositions <strong>mit</strong> (with, by means of transport) and <strong>zu</strong> (towards a place or a person) take the <strong>dative</strong>. The article changes for every gender: masculine and neuter <strong>dem</strong>, feminine <strong>der</strong>, plural <strong>den</strong>. Examples: <em>Ich fahre mit dem Bus</em> (masculine), <em>mit der Straßenbahn</em> (feminine), <em>mit dem Auto</em> (neuter). In the plural the noun usually takes an extra <strong>-n</strong>: <em>mit den Bussen</em>, <em>mit den Zügen</em>, <em>mit den Fahrrädern</em>. It does not take it if the plural already ends in <strong>-n</strong> or <strong>-s</strong>: <em>mit den Autos</em>, <em>mit den Straßenbahnen</em>."
+      },
+      {
+        h: "zu dem becomes zum, zu der becomes zur",
+        p: "With <em>zu</em> the article merges: <strong>zu dem → zum</strong>, <strong>zu der → zur</strong>. You say <em>Ich gehe zum Bahnhof</em> and <em>Sie geht zur Schule</em>. To say you walk there is a fixed phrase, <strong>zu Fuß</strong>: <em>Wir gehen zu Fuß zur Haltestelle</em>."
+      },
+      {
+        contrast: "English names the vehicle with <em>by</em> and no article (<em>by bus</em>, <em>by train</em>, <em>by car</em>, <em>by bike</em>) and the destination with <em>to</em> (<em>to the station</em>, <em>to school</em>). German says <strong>mit</strong> plus the dative article (<em>mit dem Bus</em>, <em>mit dem Zug</em>), so the article is there where English has none. Do not carry over “with the bus” as a literal idea of company: <em>mit</em> here just means “by means of”. And the destination takes <strong>zu</strong> in these examples (other places may need <em>nach</em> or <em>in</em>, as you will see). The dative is the new part: English <em>the</em> never changes, but German <em>der Bus</em> becomes <em>dem Bus</em> after <em>mit</em>. <em>Im Bus fahren</em> exists, but it stresses that you are on board. Gender also has to be learned noun by noun, because English does not mark it: <em>der Bahnhof</em> (masculine), <em>die Straßenbahn</em> (feminine), <em>das Auto</em> and <em>das Fahrrad</em> (neuter)."
+      },
+      {
+        trap: "The usual way to say “go by bus” is <em>mit dem Bus fahren</em>; <em>im Bus fahren</em> puts the focus on being on board. Do not use the nominative form: “mit der Bus” and “mit die Straßenbahn” are wrong. After <em>mit</em> and <em>zu</em> the article is in the dative: <em>mit dem Bus</em>, <em>mit der Straßenbahn</em>, <em>zum Bahnhof</em>, <em>zur Schule</em>."
+      },
+      {
+        tip: "Learn each means of transport as a full phrase: <em>mit dem Bus</em>, <em>mit der U-Bahn</em>, <em>mit dem Zug</em>, <em>mit dem Fahrrad</em>. That way the right article arrives together with the noun."
+      }
+    ],
+    grammar: {
+      title: "mit and zu with the dative",
+      note: "After <b>mit</b> and <b>zu</b> the article is in the dative: <b>dem</b> (m. and n.), <b>der</b> (f.), <b>den</b> + -n (plural). <b>zu dem → zum</b>, <b>zu der → zur</b>.",
+      table: {
+        head: ["gender", "mit + dative", "zu + dative"],
+        rows: [
+          ["masculine", "mit dem Bus", "zum Bahnhof"],
+          ["feminine", "mit der Straßenbahn", "zur Schule"],
+          ["neuter", "mit dem Auto", "zum Kino"],
+          ["plural", "mit den Bussen", "zu den Haltestellen"]
+        ]
+      },
+      examples: [
+        { tr: "I go by bus.", note: "mit dem Bus: masculine" },
+        { tr: "You go by tram.", note: "mit der Straßenbahn: feminine; fährst, with the vowel change" },
+        { tr: "We go by car.", note: "mit dem Auto: neuter" },
+        { tr: "I am going to the station.", note: "zum = zu dem" },
+        { tr: "She goes to school.", note: "zur = zu der" },
+        { tr: "We walk to the stop.", note: "zu Fuß: fixed phrase" }
+      ]
+    },
+    vocab: [
+      "with, by means of",
+      "to, towards (a place or a person)",
+      "on foot",
+      "the bus",
+      "the tram",
+      "the subway, the underground",
+      "the train",
+      "the car",
+      "the bicycle",
+      "the station",
+      "the stop",
+      "the school"
+    ],
+    exercises: [
+      {
+        q: "Which sentence is correct?",
+        opts: ["Ich fahre mit der Bus.", "Ich fahre mit dem Bus.", "Ich fahre mit den Bus."],
+        why: "<i>Der Bus</i> is masculine: after <i>mit</i> the article is <b>dem</b>."
+      },
+      {
+        q: "Complete: «Wir fahren mit ___ Auto.»",
+        hint: "das Auto, definite article in the dative",
+        why: "<i>Das Auto</i> is neuter: after <i>mit</i> you say <b>dem</b>."
+      },
+      {
+        q: "Complete: «Ich fahre mit ___ U-Bahn.»",
+        hint: "die U-Bahn, definite article in the dative",
+        why: "<i>Die U-Bahn</i> is feminine: in the dative it is <b>der</b>."
+      },
+      {
+        q: "Complete: «Ich gehe ___ Bahnhof.»",
+        hint: "zu + dem, in the contracted form",
+        why: "<i>Zu dem</i> merges into <b>zum</b>. <i>Zu dem Bahnhof</i> is also correct, but <i>zum</i> is what people almost always say."
+      },
+      {
+        q: "Choose the right article for each noun.",
+        why: "<i>Bahnhof</i> and <i>Zug</i> are masculine, <i>Haltestelle</i> and <i>Schule</i> feminine, <i>Auto</i> and <i>Fahrrad</i> neuter. English has no grammatical gender, so learn the article together with each noun.",
+        items: ["station", "stop", "car", "train", "school", "bicycle"]
+      },
+      {
+        tr: "We go by train.",
+        why: "Both positions are correct: <i>Wir fahren mit dem Zug</i> and, with inversion, <i>Mit dem Zug fahren wir</i>. The verb stays in second position."
+      },
+      {
+        q: "Complete the two missing words.",
+        tr: "He goes to school by bus.",
+        why: "The vehicle takes <i>mit</i> + dative (<i>dem Bus</i>), the destination <i>zu</i> + dative (<i>zu der → zur Schule</i>)."
+      },
+      {
+        tr: "I go to the station by bus.",
+        why: "The other positions are correct too: <i>Ich fahre zum Bahnhof mit dem Bus</i>, <i>Mit dem Bus fahre ich zum Bahnhof</i> and <i>Zum Bahnhof fahre ich mit dem Bus</i>. With a vehicle you use <i>fahren</i>, not <i>gehen</i>."
+      },
+      {
+        tr: "I go to school by bus.",
+        why: "<i>Schule</i>: <b>sch</b> sounds like English “sh” (/ʃ/) and the <b>u</b> is long, like the vowel in “food”. In <i>fahre</i> the <b>h</b> is silent and lengthens the <b>a</b>."
+      },
+      {
+        tr: "We go to the station by tram.",
+        why: "<i>Straßenbahn</i>: <b>ß</b> is a voiceless “s” as in “miss”, and the initial <b>str</b> sounds like “shtr”. In <i>Bahnhof</i> the <b>h</b> after the <b>a</b> lengthens the vowel; the <b>h</b> of <i>hof</i> is lightly aspirated."
+      }
+    ]
+  },
+  "lesson:a1-u06-l2": {
+    theme: "Getting around and origin",
+    title: "gehen, fahren, kommen: aus, von, bei",
+    objectives: [
+      "tell gehen (on foot) from fahren (with a vehicle)",
+      "say where you come from with aus and von, and where you are with bei",
+      "say which city you are going to with nach"
+    ],
+    theory: [
+      {
+        h: "Gehen, fahren, kommen",
+        p: "<strong>Gehen</strong> usually means moving on foot, <strong>fahren</strong> moving with a vehicle (bus, train, bike, car). With <em>fahren</em> the vowel changes in the 2nd and 3rd person singular: <em>ich fahre</em>, <em>du f<strong>ä</strong>hrst</em>, <em>er f<strong>ä</strong>hrt</em>. <em>Gehen</em> and <em>kommen</em> are regular: <em>ich gehe</em>, <em>du gehst</em>, <em>wir kommen</em>. The separable verbs <em>einsteigen</em> and <em>aussteigen</em> put the prefix at the end: <em>Ich steige am Bahnhof aus.</em>"
+      },
+      {
+        h: "Aus, von and bei: from where?",
+        p: "<strong>Aus</strong> marks origin from a place or a country (<em>Ich komme aus Italien</em>, <em>Sie kommt aus dem Supermarkt</em>). <strong>Von</strong> marks the starting point (<em>Er kommt vom Bahnhof</em>, <em>vom Arzt</em>). <strong>Bei</strong> says where you are, at a place or at someone's (<em>Anna ist beim Arzt</em>). <em>von dem → vom</em> and <em>bei dem → beim</em> merge as well."
+      },
+      {
+        h: "Nach for cities, in for where you live",
+        p: "To say where you are going, with the name of a city or country <strong>without an article</strong> you use <strong>nach</strong>: <em>Ich fahre nach Berlin</em>, <em>Wir fahren nach Italien</em>. To say where you live or are, you use <strong>in</strong>: <em>Ich wohne in Berlin</em>. Countries that take an article, like <em>die Schweiz</em>, come later."
+      },
+      {
+        contrast: "English <em>from</em> splits into several German words: <em>aus</em> (<em>I come from Rome</em>: <em>Ich komme aus Rom</em>) and <em>von</em> (<em>I come from the station</em>: <em>Ich komme vom Bahnhof</em>). English <em>to</em> and <em>at</em> also divide: <em>to the doctor's</em> is <em>zum Arzt</em> and <em>at the doctor's</em> is <em>beim Arzt</em>. English <em>go</em> covers both <em>gehen</em> and <em>fahren</em>, so in German the vehicle matters: <em>I go by train</em> is <em>Ich fahre mit dem Zug</em>. And “I have lived here for a year” uses the present perfect in English, but German uses the present with <em>seit</em>: <em>Ich wohne seit einem Jahr hier</em>."
+      },
+      {
+        trap: "For “I come from Italy” you do not say “Ich komme von Italien”: for origin from a country or a city you use <strong>aus</strong>. And “Ich gehe mit dem Zug” is wrong: with a vehicle you use <em>fahren</em>, so <em>Ich fahre mit dem Zug</em>."
+      }
+    ],
+    grammar: {
+      title: "aus, von, bei, zu: origin and place",
+      note: "<b>aus</b> = origin from a place or a country, <b>von</b> = starting point, <b>bei</b> = at, <b>zu</b> = towards. All take the dative.",
+      table: {
+        head: ["preposition", "meaning", "example"],
+        rows: [
+          ["aus", "from (origin)", "Ich komme aus Italien."],
+          ["von", "from (starting point)", "Er kommt vom Bahnhof."],
+          ["bei", "at (someone's place)", "Anna ist beim Arzt."],
+          ["zu", "towards", "Wir gehen zum Arzt."]
+        ]
+      },
+      examples: [
+        { tr: "I come from Italy.", note: "aus + country without an article" },
+        { tr: "I come from the supermarket.", note: "aus dem: out of the supermarket" },
+        { tr: "He comes from the station.", note: "vom = von dem" },
+        { tr: "We are going to the doctor's.", note: "zum = zu dem" },
+        { tr: "You go to the park.", note: "fährst: vowel change" },
+        { tr: "Anna is at the doctor's.", note: "beim = bei dem" }
+      ]
+    },
+    vocab: [
+      "to go (on foot)",
+      "to go (by vehicle), to drive",
+      "to come",
+      "from (origin), out of",
+      "from (starting point), of",
+      "at (someone's place)",
+      "to get on (a vehicle)",
+      "to get off (a vehicle)",
+      "the doctor",
+      "the park",
+      "the supermarket",
+      "the city"
+    ],
+    exercises: [
+      {
+        tr: "Present tense of gehen: ich, er/sie/es, wir.",
+        why: "<i>Gehen</i> is regular: <i>gehe</i>, <i>geht</i>, <i>gehen</i>."
+      },
+      {
+        tr: "Present tense of fahren: ich, du, er/sie/es, wir.",
+        why: "In the 2nd and 3rd person singular the <b>a</b> becomes <b>ä</b>: <i>fahre</i>, <i>fährst</i>, <i>fährt</i>, <i>fahren</i>."
+      },
+      {
+        q: "Complete: «Ich ___ aus Italien.»",
+        hint: "kommen, first person singular",
+        why: "<i>Ich komme</i>: the ending of the 1st person is <b>-e</b>."
+      },
+      {
+        q: "Complete: «Er ___ mit dem Zug.»",
+        hint: "fahren, third person singular",
+        why: "With <i>er</i> the verb changes its vowel: <b>fährt</b>."
+      },
+      {
+        q: "Complete: «Wir kommen ___ der Stadt.»",
+        hint: "out of a place, origin",
+        why: "For origin from a place you use <b>aus</b>: <i>aus der Stadt</i>."
+      },
+      {
+        q: "How do you say “I come from the doctor's”?",
+        opts: ["Ich komme aus dem Arzt.", "Ich komme vom Arzt.", "Ich komme zum Arzt."],
+        why: "For the starting point you use <b>von</b> (<i>von dem → vom</i>). <i>Aus</i> goes with a place, not with a person, and <i>zum</i> marks the direction towards, not where you come from."
+      },
+      {
+        q: "Which sentences are correct?",
+        opts: [
+          "Ich fahre mit dem Zug.",
+          "Ich gehe mit dem Zug.",
+          "Wir gehen zu Fuß zum Park.",
+          "Du kommst aus Italien.",
+          "Er fahrt zum Bahnhof."
+        ],
+        why: "Sentence 2 is wrong because with a vehicle you use <i>fahren</i>; sentence 5 has the wrong form of <i>fahren</i>: <i>fährt</i>."
+      },
+      {
+        tr: "He comes from the station.",
+        why: "The inversion <i>Vom Bahnhof kommt er</i> is also correct. The verb stays in second position."
+      },
+      {
+        tr: "I come from Italy and I go to Berlin by train.",
+        why: "<i>Italien</i>: the stress falls on the second syllable and the <b>a</b> is long; <i>Berlin</i> can be said with a uvular or a tapped <b>r</b>, both are standard. <i>Zug</i> starts with <b>z</b> “ts”."
+      },
+      {
+        tr: "We walk to the park.",
+        why: "<i>Fuß</i>: <b>ß</b> is a voiceless “s” as in “miss” and the <b>u</b> is long. In <i>Park</i> the final <b>k</b> is crisp."
+      }
+    ]
+  },
+  "lesson:a1-u06-l3": {
+    theme: "Asking the way",
+    title: "Wo ist der Bahnhof? Gehen Sie geradeaus",
+    objectives: [
+      "ask where a place is with Entschuldigung, wo ist ...?",
+      "give directions with the polite imperative (Gehen Sie ..., Biegen Sie ... ab)",
+      "say where something is with neben, hinter, vor + dative"
+    ],
+    theory: [
+      {
+        h: "The polite imperative: infinitive + Sie",
+        p: "With <strong>Sie</strong> the imperative has the form <strong>infinitive + Sie</strong>, with the verb in <strong>first position</strong>: <em>Gehen Sie geradeaus!</em>, <em>Nehmen Sie die erste Straße rechts!</em> Separable verbs send the prefix to the end: <em>Biegen Sie links <strong>ab</strong>.</em> <em>Sein</em> is the exception: <strong>Seien Sie</strong> (<em>Seien Sie bitte pünktlich!</em>)."
+      },
+      {
+        h: "Where is it? wo? with the dative",
+        p: "To ask where a place is: <em>Entschuldigung, wo ist der Bahnhof?</em> To answer you need prepositions of place. With <strong>wo?</strong>, in, an, auf, vor, hinter, neben take the <strong>dative</strong>: <em>Der Bahnhof ist neben dem Rathaus</em>, <em>Die Apotheke ist hinter der Kreuzung</em>, <em>Der Bus hält vor dem Rathaus</em>, <em>Wir sind am Bahnhof</em> (<em>an dem → am</em>) and <em>Das Café ist in der Stadt</em>."
+      },
+      {
+        contrast: "In English a polite request to a stranger is usually a question or a softened command (<em>Could you go straight ahead?</em>), and the plain imperative is just the bare verb (<em>Go straight</em>, <em>Turn left</em>), the same for one person or many. German adds <em>Sie</em> after the verb for the polite form, and the verb comes first, which looks just like a yes/no question. <em>Excuse me</em> is <em>Entschuldigung</em> (or <em>Entschuldigen Sie</em>), <em>straight ahead</em> is <em>geradeaus</em>, <em>to the right</em> is <em>rechts</em> and <em>to the left</em> is <em>links</em>, with no preposition. The prepositions of place also behave differently: English <em>next to the town hall</em> never changes the noun, while German <em>neben dem Rathaus</em> puts the article in the dative. Gender is new information for each noun: <em>das Rathaus</em> (neuter), <em>die Apotheke</em> and <em>die Kreuzung</em> (feminine)."
+      },
+      {
+        trap: "The imperative with <em>Sie</em> has the same shape as a yes/no question: <em>Gehen Sie geradeaus!</em> or <em>Gehen Sie geradeaus?</em> Context, intonation and punctuation tell them apart. It is not <em>Sie gehen geradeaus</em> (subject before the verb), which is a statement. And after <em>neben</em>, <em>hinter</em> and <em>vor</em> with <em>wo?</em> you do not use the accusative: “neben den Bahnhof” is wrong, you say <em>neben dem Bahnhof</em>."
+      },
+      {
+        tip: "To remember the three sentences you need on the street: <em>Entschuldigung, wo ist ...?</em>, <em>Gehen Sie geradeaus</em>, <em>Biegen Sie links / rechts ab</em>. With these three you can find your way in any German-speaking city."
+      }
+    ],
+    grammar: {
+      title: "Polite imperative and wo? with the dative",
+      note: "<b>Imperative with Sie:</b> infinitive + <b>Sie</b>, verb in first position. <b>Wo?</b> with in, an, vor, hinter, neben: dative.",
+      table: {
+        head: ["infinitive", "imperative", "meaning"],
+        rows: [
+          ["gehen", "Gehen Sie geradeaus.", "go straight ahead"],
+          ["abbiegen", "Biegen Sie links ab.", "turn left"],
+          ["nehmen", "Nehmen Sie die erste Straße rechts.", "take the first street on the right"],
+          ["sein", "Seien Sie bitte pünktlich.", "please be on time"]
+        ]
+      },
+      examples: [
+        { tr: "Go straight ahead.", note: "Gehen Sie: verb, then Sie" },
+        { tr: "Turn left.", note: "abbiegen: ab at the end" },
+        { tr: "Take the first street on the right.", note: "nehmen: the first street, die erste Straße" },
+        { tr: "Excuse me, where is the station?" },
+        { tr: "The station is next to the town hall.", note: "neben dem: dative neuter" },
+        { tr: "The pharmacy is behind the intersection.", note: "hinter der: dative feminine" }
+      ]
+    },
+    vocab: [
+      "straight ahead",
+      "to the left",
+      "to the right",
+      "to turn",
+      "excuse me",
+      "next to",
+      "behind",
+      "in front of",
+      "the street",
+      "the intersection",
+      "the town hall",
+      "the pharmacy"
+    ],
+    exercises: [
+      {
+        q: "How do you politely tell someone to turn left?",
+        opts: ["Sie biegen links ab.", "Biegen Sie links ab.", "Biegen links Sie ab."],
+        why: "Verb in first position, then <i>Sie</i>, and the prefix <b>ab</b> at the end: <b>Biegen Sie links ab.</b> The first option is a statement."
+      },
+      {
+        q: "How do you ask where the station is?",
+        opts: ["Wo ist der Bahnhof?", "Wo der Bahnhof ist?", "Wo ist den Bahnhof?"],
+        why: "In a question with <i>wo</i> the verb is in second position: <b>Wo ist der Bahnhof?</b> With <i>sein</i> the noun stays in the nominative."
+      },
+      {
+        q: "Complete: «___ Sie geradeaus.» (Go)",
+        hint: "gehen, polite imperative, with a capital initial",
+        why: "The polite imperative starts with the infinitive: <b>Gehen</b> Sie geradeaus."
+      },
+      {
+        q: "Match each word with its meaning.",
+        pairs: ["straight ahead", "to the left", "to the right", "behind"]
+      },
+      {
+        q: "Complete the two missing words.",
+        tr: "The pharmacy is behind the town hall and the station is next to the pharmacy.",
+        why: "<i>Hinter dem Rathaus</i> (dative neuter) and <i>neben der Apotheke</i> (dative feminine): with <i>wo?</i> these prepositions take the dative."
+      },
+      {
+        tr: "Go straight ahead and turn left.",
+        why: "The two imperatives each have their own <i>Sie</i>. The prefix <i>ab</i> of <i>abbiegen</i> closes the sentence."
+      },
+      {
+        q: "Someone asks you for directions. Answer their questions.",
+        setting: "Downtown, you are helping someone find the station and the pharmacy.",
+        lines: [
+          { tr: "Excuse me, where is the station?" },
+          { tr: "Give directions: straight ahead, then left.", answerTr: "Go straight ahead and then left." },
+          { tr: "Thanks! And where is the pharmacy?" },
+          { tr: "Answer that the pharmacy is next to the town hall.", answerTr: "It is next to the town hall." }
+        ]
+      },
+      {
+        tr: "Excuse me, where is the pharmacy?",
+        why: "Both <i>Entschuldigung</i> and <i>Entschuldigen Sie</i> (more formal) are correct. The question has the verb in second position: <i>wo ist</i>."
+      },
+      {
+        tr: "Go straight ahead and turn right.",
+        why: "In <i>geradeaus</i> the <b>g</b> is hard and <b>au</b> is a diphthong /aʊ̯/, like “ow” in “cow”. In <i>biegen</i> the <b>ie</b> is a long “ee”."
+      },
+      {
+        tr: "Excuse me, where is the pharmacy?",
+        why: "<i>Entschuldigung</i>: <b>sch</b> sounds like English “sh” (/ʃ/). In <i>Apotheke</i> the <b>th</b> is just a plain “t”."
+      }
+    ]
+  },
+  "lesson:a1-u06-l4": {
+    theme: "The neighborhood",
+    title: "Es gibt, es gibt keinen",
+    objectives: [
+      "say what there is in town with es gibt + accusative",
+      "say that something is missing with es gibt keinen / keine / kein",
+      "ask Gibt es hier ...?"
+    ],
+    theory: [
+      {
+        h: "Es gibt: “there is” and “there are”",
+        p: "To say that something exists you use <strong>es gibt</strong>. The form is <strong>always the same</strong>, in the singular and in the plural: <em>Es gibt einen Park</em>, <em>Es gibt zwei Kinos</em>. After <em>es gibt</em> the noun is in the <strong>accusative</strong>, so only the masculine changes: <em>einen Park</em> (m.), <em>eine Bäckerei</em> (f.), <em>ein Café</em> (n.). To ask: <em>Gibt es hier ein Hotel?</em>"
+      },
+      {
+        h: "Saying that something is not there",
+        p: "To negate you use <strong>kein</strong>, which follows the same pattern as <em>ein</em>: <em>Es gibt keinen Supermarkt</em> (m.), <em>keine Bank</em> (f.), <em>kein Museum</em> (n.). In the examples covered here, the negation with <em>es gibt</em> is <em>kein</em>, not <em>nicht</em> (<em>nicht</em> appears in other uses, such as <em>Das gibt es nicht</em>)."
+      },
+      {
+        contrast: "English “there is” and “there are” change with the number (<em>there is a park</em>, <em>there are two cinemas</em>). German <em>es gibt</em> never changes: <em>Es gibt einen Park</em>, <em>Es gibt zwei Kinos</em>. English also says “is there a hotel here?” by moving the verb, and German does the same with <em>Gibt es hier ein Hotel?</em>. Where English says “there is no supermarket” or “there isn't a bank”, German uses <em>kein</em> (<em>keinen Supermarkt</em>, <em>keine Bank</em>), which is the one that has to agree with the noun. Gender has to be learned noun by noun, since English does not mark it: <em>das Café</em> and <em>das Kino</em> are neuter, <em>die Bäckerei</em> and <em>die Kirche</em> are feminine, <em>der Park</em> is masculine."
+      },
+      {
+        trap: "<em>Es gibt</em> usually introduces something new: <em>Es gibt ein Café neben dem Rathaus</em>. To say where something already known is, use <em>sein</em> instead: <em>Wo ist das Café? Es ist neben dem Rathaus.</em> Do not say “Es gibt ein Bäckerei”: <em>Bäckerei</em> is feminine, so <em>eine Bäckerei</em>. And do not say “Es gibt ein Park”: the masculine in the accusative takes <em>einen</em>."
+      },
+      {
+        tip: "To find out what is in a new neighborhood, ask: <em>Gibt es hier ein Café / einen Supermarkt / eine Bank in der Nähe?</em> Remember <em>-en</em> only for the masculine."
+      }
+    ],
+    grammar: {
+      title: "es gibt with the accusative",
+      note: "<b>Es gibt</b> + accusative: <b>einen</b> (m.), <b>eine</b> (f.), <b>ein</b> (n.). The negation is <b>keinen</b>, <b>keine</b>, <b>kein</b>. The form <i>es gibt</i> does not change in the plural.",
+      table: {
+        head: ["gender", "positive", "negative"],
+        rows: [
+          ["masculine", "Es gibt einen Park.", "Es gibt keinen Supermarkt."],
+          ["feminine", "Es gibt eine Bäckerei.", "Es gibt keine Bank."],
+          ["neuter", "Es gibt ein Café.", "Es gibt kein Museum."]
+        ]
+      },
+      examples: [
+        { tr: "There is a park nearby.", note: "einen: masculine accusative" },
+        { tr: "There is a bakery here.", note: "eine: feminine" },
+        { tr: "There is a café next to the town hall.", note: "ein: neuter" },
+        { tr: "Is there a hotel here?", note: "question: verb in first position" },
+        { tr: "There is no supermarket here.", note: "keinen: negation of the masculine" },
+        { tr: "There is no bank nearby.", note: "keine: negation of the feminine" }
+      ]
+    },
+    vocab: [
+      "there is, there are",
+      "here",
+      "nearby, close by",
+      "the café",
+      "the cinema",
+      "the bakery",
+      "the restaurant",
+      "the bank",
+      "the museum",
+      "the hotel",
+      "the library",
+      "the church"
+    ],
+    exercises: [
+      {
+        q: "Which sentence is correct?",
+        opts: ["Es gibt ein Park hier.", "Es gibt einen Park hier.", "Es gibt eine Park hier."],
+        why: "<i>Der Park</i> is masculine and after <i>es gibt</i> you need the accusative: <b>einen Park</b>."
+      },
+      {
+        q: "Complete: «Es gibt ___ Supermarkt in der Nähe.»",
+        hint: "der Supermarkt, indefinite article in the accusative",
+        why: "<i>Der Supermarkt</i> is masculine, accusative: <b>einen</b>."
+      },
+      {
+        q: "Complete: «Es gibt ___ Bank hier.» (no)",
+        hint: "die Bank, negation",
+        why: "<i>Die Bank</i> is feminine: the negation is <b>keine</b>."
+      },
+      {
+        q: "Complete: «___ es hier ein Café?»",
+        hint: "question: is there ...?",
+        why: "In a yes/no question the verb comes first: <b>Gibt</b> es hier ein Café?"
+      },
+      {
+        q: "Match each word with its meaning.",
+        pairs: ["the café", "the bakery", "the cinema", "the church"]
+      },
+      {
+        tr: "There is no supermarket here.",
+        why: "<i>Es gibt keinen Supermarkt hier</i> and, with inversion, <i>Hier gibt es keinen Supermarkt</i> are also correct. The verb <i>gibt</i> stays in second position."
+      },
+      {
+        q: "Complete the two missing words.",
+        tr: "There is a bakery and a park here.",
+        why: "<i>Bäckerei</i> is feminine (<b>eine</b>), <i>Park</i> masculine (<b>einen</b>): only the masculine changes in the accusative."
+      },
+      {
+        q: "Translate: «There is a cinema in town, but there is no museum.»",
+        why: "After <i>es gibt</i>: <i>ein Kino</i> is neuter (<i>ein</i>), and the negation of <i>Museum</i> (neuter) is <i>kein</i>. The other positions with the same structure are correct too."
+      },
+      {
+        tr: "There is a bakery and a park nearby.",
+        why: "<i>Bäckerei</i>: the <b>ä</b> sounds like the “e” in “bed” and <b>ck</b> like “k”. In <i>Nähe</i> the <b>h</b> is silent and lengthens the vowel; the <b>ä</b> is long."
+      },
+      {
+        tr: "Is there a hotel here?",
+        why: "<i>Hotel</i> is stressed on the second syllable: /hoˈtɛl/. In <i>gibt</i> the <b>g</b> is hard."
+      }
+    ]
+  },
+  "lesson:a1-u06-test": {
+    theme: "Check",
+    title: "Unit 6 check",
+    objectives: ["check means of transport, the dative, directions, wo? and es gibt"],
+    theory: [
+      {
+        p: "Ten questions on the whole unit. You pass with 70%. Don't look back at the lessons while you answer: if you can't remember something, it is better to go back and review."
+      }
+    ],
+    exercises: [
+      {
+        tr: "Present tense of fahren: ich, du, er/sie/es, wir.",
+        why: "<i>Fahre</i>, <i>fährst</i>, <i>fährt</i>, <i>fahren</i>: the <b>a</b> becomes <b>ä</b> in the 2nd and 3rd person singular."
+      },
+      {
+        q: "Complete: «Ich fahre mit ___ Bus.»",
+        hint: "der Bus, definite article in the dative",
+        why: "<i>Der Bus</i> is masculine: after <i>mit</i> you say <b>dem</b>."
+      },
+      {
+        q: "Complete: «Wir gehen ___ Schule.»",
+        hint: "zu + der, in the contracted form",
+        why: "<i>Zu der</i> merges into <b>zur</b>."
+      },
+      {
+        q: "Complete: «Ich komme ___ Italien.»",
+        hint: "origin from a country",
+        why: "For origin from a country you use <b>aus</b>."
+      },
+      {
+        q: "Complete: «Die Apotheke ist ___ dem Rathaus.» (next to)",
+        hint: "next to",
+        why: "<b>Neben</b> + dative: <i>neben dem Rathaus</i>."
+      },
+      {
+        q: "Complete: «___ Sie die erste Straße links.» (Take)",
+        hint: "nehmen, polite imperative, with a capital initial",
+        why: "The polite imperative starts with the infinitive: <b>Nehmen</b> Sie die erste Straße links."
+      },
+      {
+        q: "Choose the right article for each noun.",
+        why: "<i>Rathaus</i> is neuter, <i>Kreuzung</i> and <i>Apotheke</i> are feminine, <i>Bahnhof</i> is masculine.",
+        items: ["town hall", "intersection", "station", "pharmacy"]
+      },
+      {
+        q: "How do you say “There is no supermarket”?",
+        opts: ["Es gibt kein Supermarkt.", "Es gibt keinen Supermarkt.", "Es gibt nicht Supermarkt."],
+        why: "<i>Der Supermarkt</i> is masculine in the accusative: <b>keinen</b>."
+      },
+      {
+        tr: "Excuse me, where is the station?",
+        why: "<i>Entschuldigung</i>: <b>sch</b> sounds like English “sh” (/ʃ/); in <i>Bahnhof</i> the <b>h</b> after the <b>a</b> lengthens the vowel."
+      },
+      {
+        tr: "Go straight ahead and then left.",
+        why: "<i>Geradeaus</i>: the <b>g</b> is hard and <b>au</b> is a diphthong /aʊ̯/, like “ow” in “cow”. In <i>links</i> the <b>i</b> is short."
       }
     ]
   }
