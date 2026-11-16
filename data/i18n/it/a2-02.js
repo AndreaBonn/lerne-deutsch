@@ -53,7 +53,7 @@ LINGUAI.addStrings("it", {
       ]
     },
     vocab: [
-      "l'appartamento, la casa (in affitto)",
+      "l'appartamento, la casa",
       "l'affitto",
       "il balcone",
       "il vicino",
@@ -110,7 +110,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "L'appartamento ha un balcone grande e una cucina nuova.",
-        why: "In <i>großen</i> la <b>ß</b> è una <b>s</b> sorda e la <b>o</b> è lunga; in <i>Küche</i> la <b>ü</b> è [y] e la <b>ch</b> dopo <b>ü</b> è [ç], un suono più morbido del [x]."
+        why: "In <i>großen</i> la <b>ß</b> è una <b>s</b> sorda e la <b>o</b> è lunga; in <i>Küche</i> la <b>ü</b> è breve e aperta [ʏ] e la <b>ch</b> è [ç], un suono più morbido del [x]: <i>Küche</i> [ˈkʏçə]."
       },
       {
         tr: "Cerco un appartamento luminoso e tranquillo.",
@@ -129,21 +129,21 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "wohin? o wo?",
-        p: "Le preposizioni <em>in, an, auf, vor, hinter, neben, über, unter, zwischen</em> vogliono due casi. Se la frase risponde a <strong>wohin?</strong> (verso dove? c'è uno spostamento) il caso è l'<strong>accusativo</strong>; se risponde a <strong>wo?</strong> (dove? lo stato) è il <strong>dativo</strong>. <em>Ich stelle das Sofa an die Wand</em> (wohin?), <em>Das Sofa steht an der Wand</em> (wo?). Contrazioni: <em>in das → ins, an das → ans, auf das → aufs, in dem → im, an dem → am</em>."
+        p: "Le preposizioni <em>in, an, auf, vor, hinter, neben, über, unter, zwischen</em> vogliono due casi. Se la frase indica la <strong>destinazione</strong> (<strong>wohin?</strong>, verso dove?) il caso è l'<strong>accusativo</strong>; se indica il <strong>luogo</strong> (<strong>wo?</strong>, dove?) è il <strong>dativo</strong>, anche quando nel luogo c'è un movimento (<em>Ich laufe im Garten</em>). <em>Ich stelle das Sofa an die Wand</em> (wohin?), <em>Das Sofa steht an der Wand</em> (wo?). Contrazioni: <em>in das → ins, an das → ans, auf das → aufs, in dem → im, an dem → am</em>."
       },
       {
-        p: "Il tedesco sceglie il verbo secondo la posizione dell'oggetto. <strong>stellen / stehen</strong> per ciò che sta in piedi (<em>die Lampe, der Schrank, das Regal</em>), <strong>legen / liegen</strong> per ciò che sta disteso (<em>das Buch, der Teppich</em>). I verbi dell'azione, <em>stellen</em> e <em>legen</em>, vogliono <em>wohin?</em> e l'accusativo; quelli dello stato, <em>stehen</em> e <em>liegen</em>, vogliono <em>wo?</em> e il dativo."
+        p: "Il tedesco sceglie il verbo secondo la posizione dell'oggetto. <strong>stellen / stehen</strong> per ciò che sta in piedi (<em>die Lampe, der Schrank, das Regal</em>), <strong>legen / liegen</strong> per ciò che sta disteso (<em>das Buch, der Teppich</em>). <em>stellen</em> e <em>legen</em> indicano una destinazione e rispondono a <em>wohin?</em>; <em>stehen</em> e <em>liegen</em> indicano un luogo e rispondono a <em>wo?</em>. Il caso riguarda il complemento spaziale introdotto da una preposizione a doppia reggenza (<em>auf, in, an, unter</em>...): accusativo per <em>wohin?</em>, dativo per <em>wo?</em>."
       },
       {
         contrast: "L'italiano usa un verbo per tutto, <em>mettere</em>, e la stessa preposizione per lo stato e per il movimento: <em>metto il libro sul tavolo, il libro è sul tavolo</em>. Il tedesco distingue due volte: con il <strong>verbo</strong> (<em>legen</em> o <em>stellen</em>, <em>liegen</em> o <em>stehen</em>) e con il <strong>caso</strong> (accusativo o dativo): <em>Ich lege das Buch auf den Tisch. Das Buch liegt auf dem Tisch.</em>"
       },
       {
-        trap: "Non tradurre «mettere» con un verbo solo. <em>Ich stelle das Buch auf den Tisch</em> si dice se il libro sta in piedi, <em>Ich lege das Buch auf den Tisch</em> se è steso: dipende dall'oggetto e dalla posizione, non dalla parola italiana. Con <em>stehen</em> e <em>liegen</em> il caso resta il dativo: <em>Die Lampe steht auf dem Tisch</em>, mai «auf den Tisch»."
+        trap: "Non tradurre «mettere» con un verbo solo. <em>Ich stelle das Buch auf den Tisch</em> si dice se il libro sta in piedi, <em>Ich lege das Buch auf den Tisch</em> se è steso: dipende dall'oggetto e dalla posizione, non dalla parola italiana. Con <em>stehen</em> e <em>liegen</em>, che indicano un luogo (<em>wo?</em>), il complemento con preposizione a doppia reggenza va al dativo: <em>Die Lampe steht auf dem Tisch</em>, mai «auf den Tisch»."
       }
     ],
     grammar: {
       title: "wohin? + accusativo, wo? + dativo",
-      note: "<b>stellen, legen</b> = azione, wohin? + accusativo. <b>stehen, liegen</b> = stato, wo? + dativo.",
+      note: "Con una preposizione a doppia reggenza: <b>wohin?</b> (destinazione, con stellen, legen) = accusativo; <b>wo?</b> (luogo, con stehen, liegen) = dativo.",
       table: {
         head: ["domanda", "verbo", "esempio"],
         rows: [
@@ -154,9 +154,9 @@ LINGUAI.addStrings("it", {
         ]
       },
       examples: [
-        { tr: "Metto il divano alla parete.", note: "stellen + accusativo: an die Wand" },
+        { tr: "Metto il divano alla parete.", note: "wohin?: an die Wand è accusativo" },
         { tr: "Il divano sta alla parete.", note: "stehen + dativo: an der Wand" },
-        { tr: "Metto il tappeto sotto il tavolo.", note: "legen + accusativo: unter den Tisch" },
+        { tr: "Metto il tappeto sotto il tavolo.", note: "wohin?: unter den Tisch è accusativo" },
         { tr: "Il tappeto sta sotto il tavolo.", note: "liegen + dativo: unter dem Tisch" },
         { tr: "Dove metti la lampada? Nell'angolo.", note: "wohin? risponde con l'accusativo: in die Ecke" },
         { tr: "La lampada sta nell'angolo.", note: "wo? risponde con il dativo: in der Ecke" }
@@ -180,7 +180,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Come dici «Metto il divano alla parete»?",
         opts: ["Ich stelle das Sofa an der Wand.", "Ich stelle das Sofa an die Wand.", "Ich stehe das Sofa an die Wand."],
-        why: "C'è un movimento (<i>wohin?</i>): <i>stellen</i> e l'accusativo, <b>an die Wand</b>."
+        why: "C'è una destinazione (<i>wohin?</i>): <i>stellen</i> e l'accusativo, <b>an die Wand</b>."
       },
       {
         q: "Scegli il verbo: «Der Schrank ___ in der Ecke.»",
@@ -190,10 +190,10 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa: «Ich lege das Buch auf ___ Tisch.»",
         opts: ["dem", "den", "der"],
-        why: "<i>Legen</i> indica un movimento, quindi accusativo: <i>Tisch</i> è maschile, <b>den</b> Tisch."
+        why: "<i>Legen</i> indica una destinazione (<i>wohin?</i>), quindi accusativo: <i>Tisch</i> è maschile, <b>den</b> Tisch."
       },
       {
-        q: "Quali frasi sono corrette?",
+        q: "Quali frasi sono corrette, se stellen e legen devono dire dove va a finire l'oggetto (wohin?)?",
         opts: [
           "Ich stelle die Lampe in die Ecke.",
           "Die Lampe steht in der Ecke.",
@@ -220,7 +220,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa la frase.",
         tr: "Metto lo scaffale alla parete. Adesso sta lì.",
-        why: "<i>Stelle</i> è l'azione, <i>steht</i> è lo stato: il primo verbo risponde a <i>wohin?</i>, il secondo a <i>wo?</i>."
+        why: "<i>Stelle</i> indica la destinazione, <i>steht</i> il luogo: il primo verbo risponde a <i>wohin?</i> (accusativo), il secondo a <i>wo?</i> (dativo)."
       },
       {
         tr: "Metto il divano alla parete e il tappeto sotto il tavolo.",
@@ -334,7 +334,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Il frigorifero è in cucina e la lavatrice è in cantina.",
-        why: "In <i>Küche</i> la <b>ü</b> è [y] e la <b>ch</b> è [ç]; in <i>Keller</i> la <b>K</b> è piena e la <b>e</b> breve."
+        why: "In <i>Küche</i> la <b>ü</b> è breve e aperta [ʏ] e la <b>ch</b> è [ç] ([ˈkʏçə]); in <i>Keller</i> la <b>K</b> è piena e la <b>e</b> breve."
       },
       {
         tr: "La camera da letto e il bagno sono piccoli, ma il soggiorno è grande.",
@@ -356,10 +356,10 @@ LINGUAI.addStrings("it", {
         p: "Per chiedere qualcosa a chi non conosci, a un custode o a un'amministrazione, usi la forma di cortesia <strong>Könnten Sie ...?</strong> (<em>Konjunktiv II</em> di <em>können</em>) con l'<strong>infinito in fondo</strong>: <em>Könnten Sie bitte morgen vorbeikommen? Könnten Sie die Heizung reparieren?</em> Un'alternativa altrettanto cortese è <strong>Würden Sie ...?</strong> con l'infinito finale. Per segnalare il problema bastano frasi semplici: <em>Die Heizung ist kaputt. Der Wasserhahn tropft. Die Heizung funktioniert nicht.</em>"
       },
       {
-        contrast: "<em>Könnten Sie</em> corrisponde al condizionale italiano <em>potrebbe</em>: in tutte e due le lingue la forma verbale addolcisce la richiesta. La differenza sta nel pronome: l'italiano usa <em>Lei</em> con la terza persona singolare, il tedesco usa <em>Sie</em> con la forma della terza persona <strong>plurale</strong> (<em>Könnten Sie</em>, <em>Sie sind</em>). E <em>kaputt</em> è invariabile, mentre «rotto» si accorda: <em>Die Heizung ist kaputt, Die Fenster sind kaputt</em>."
+        contrast: "<em>Könnten Sie</em> corrisponde al condizionale italiano <em>potrebbe</em>: in tutte e due le lingue la forma verbale addolcisce la richiesta. La differenza sta nel pronome: l'italiano usa <em>Lei</em> con la terza persona singolare, il tedesco usa <em>Sie</em> con la forma della terza persona <strong>plurale</strong> (<em>Könnten Sie</em>, <em>Sie sind</em>). E dopo <em>sein</em> <em>kaputt</em> resta senza desinenza, come gli altri aggettivi predicativi, mentre «rotto» si accorda: <em>Die Heizung ist kaputt, Die Fenster sind kaputt</em>."
       },
       {
-        trap: "L'infinito non segue subito <em>Könnten</em>: va in fondo alla frase, dopo tutti i complementi. <em>Könnten Sie die Heizung reparieren?</em>, non «Könnten Sie reparieren die Heizung?». Per telefono ci si presenta con <em>Guten Tag, hier ist Weber</em> (non «Ich bin Weber») e con la cortesia si resta su <em>Sie</em>, anche se l'altra persona è più giovane."
+        trap: "L'infinito non segue subito <em>Könnten</em>: va in fondo alla frase, dopo tutti i complementi. <em>Könnten Sie die Heizung reparieren?</em>, non «Könnten Sie reparieren die Heizung?». Per telefono la formula usuale è <em>Guten Tag, hier ist Weber</em>; <em>Ich bin Weber</em> è corretto, ma non è la formula tipica. Con la cortesia si resta su <em>Sie</em>, anche se l'altra persona è più giovane."
       },
       {
         tip: "Se la richiesta è urgente aggiungi <em>dringend</em> o <em>so schnell wie möglich</em>, senza perdere la cortesia: <em>Könnten Sie bitte so schnell wie möglich vorbeikommen?</em> <em>Bitte</em> sta di solito dopo il pronome."
@@ -380,7 +380,7 @@ LINGUAI.addStrings("it", {
       },
       examples: [
         { tr: "Buongiorno, sono Weber, di Hauptstraße 5.", note: "per telefono: hier ist ..." },
-        { tr: "Il riscaldamento è rotto.", note: "kaputt non cambia" },
+        { tr: "Il riscaldamento è rotto.", note: "dopo sein, kaputt resta senza desinenza" },
         { tr: "Il rubinetto della cucina gocciola.", note: "tropfen: terza persona singolare" },
         { tr: "Potrebbe passare domani, per favore?", note: "infinito in fondo: vorbeikommen" },
         { tr: "Potrebbe riparare il riscaldamento?", note: "Könnten Sie ... reparieren" },
@@ -418,8 +418,8 @@ LINGUAI.addStrings("it", {
       },
       {
         q: "Completa: «Die Heizung ist ___.» (rotta)",
-        hint: "aggettivo invariabile",
-        why: "<b>kaputt</b>, con accento sull'ultima sillaba, non cambia con il genere."
+        hint: "dopo sein, senza desinenza",
+        why: "<b>kaputt</b>, con accento sull'ultima sillaba, dopo <b>sein</b> resta senza desinenza."
       },
       {
         q: "Completa: «___ Sie bitte morgen vorbeikommen?» (forma di cortesia di können)",
@@ -441,7 +441,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa la frase.",
         tr: "Buongiorno, sono Weber. Il riscaldamento è rotto. Potrebbe passare oggi?",
-        why: "Per telefono si dice <i>hier ist Weber</i>, non «ich bin». Per la richiesta cortese vanno bene <i>Könnten</i> e <i>Würden</i>; anche <i>Können</i> è corretto, ma meno cortese."
+        why: "Per telefono la formula usuale è <i>hier ist Weber</i> (anche <i>ich bin Weber</i> è corretto). Per la richiesta cortese vanno bene <i>Könnten</i> e <i>Würden</i>; anche <i>Können</i> è corretto, ma meno cortese."
       },
       {
         tr: "Buongiorno, sono Weber. Il riscaldamento è rotto. Potrebbe passare oggi?",
@@ -489,13 +489,13 @@ LINGUAI.addStrings("it", {
         why: "Il genere segue l'ultimo elemento: <b>der</b> Schrank, quindi <b>der</b> Küchenschrank."
       },
       {
-        q: "Quale frase è corretta?",
+        q: "Quale frase dice dove va a finire il libro (wohin?)?",
         opts: [
           "Ich lege das Buch auf dem Tisch.",
           "Ich lege das Buch auf den Tisch.",
           "Ich liege das Buch auf den Tisch."
         ],
-        why: "<i>Legen</i> è un'azione (<i>wohin?</i>) e vuole l'accusativo: <b>auf den Tisch</b>. <i>Liegen</i> non ha oggetto."
+        why: "<i>Legen</i> indica la destinazione (<i>wohin?</i>) e vuole l'accusativo: <b>auf den Tisch</b>. <i>Liegen</i> non ha oggetto."
       },
       {
         q: "Quale frase è la richiesta cortese?",
@@ -508,7 +508,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Il frigorifero è in cucina e il divano è in soggiorno.",
-        why: "In <i>Kühlschrank</i> la <b>ü</b> è [y] e la <b>ch</b> dopo <b>ü</b> è [ç]; in <i>Sofa</i> l'accento cade sulla <b>o</b>, che è lunga."
+        why: "In <i>Kühlschrank</i> la <b>ü</b> è lunga [yː] e <b>sch</b> è [ʃ] ([ˈkyːlʃʁaŋk]); in <i>Sofa</i> l'accento cade sulla <b>o</b>, che è lunga."
       },
       {
         tr: "Cerco un appartamento luminoso con un balcone grande.",
