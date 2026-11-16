@@ -307,5 +307,245 @@ LINGUAI.addUnits("B1", [
         { t: "speak", it: "Wenn ich mehr Geld hätte, würde ich ein Haus kaufen, obwohl das teuer ist." }
       ]
     }
+  },
+  {
+    id: "b1-u02",
+    icon: "🔗",
+    titleIt: "Woran denkst du?",
+    lessons: [
+      {
+        id: "b1-u02-l1",
+        tags: ["g-praep-verben"],
+        cefr: "B1",
+        titleIt: "Ich warte auf dich",
+        grammar: {
+          examples: [
+            { it: "Ich warte auf dich." },
+            { it: "Er denkt oft an seine Familie." },
+            { it: "Sie interessiert sich für Musik." },
+            { it: "Wir kümmern uns um die Kinder." },
+            { it: "Sie hat Angst vor dem Test." },
+            { it: "Er träumt von einem Haus am Meer." }
+          ]
+        },
+        vocab: [
+          { it: "warten auf", ex: "Ich warte auf den Bus." },
+          { it: "denken an", ex: "Ich denke oft an dich." },
+          { it: "sich interessieren für", ex: "Sie interessiert sich für Musik." },
+          { it: "sich kümmern um", ex: "Wir kümmern uns um die Kinder." },
+          { it: "teilnehmen an", ex: "Ich nehme an dem Kurs teil." },
+          { it: "träumen von", ex: "Er träumt von einem Haus am Meer." },
+          { it: "die Angst", plural: "die Ängste", ex: "Sie hat Angst vor dem Test." },
+          { it: "der Kurs", plural: "die Kurse", ex: "Der Kurs beginnt im Herbst." },
+          { it: "die Prüfung", plural: "die Prüfungen", ex: "Die Prüfung ist schwer." },
+          { it: "die Sorge", plural: "die Sorgen", ex: "Ich mache mir Sorgen um dich." },
+          { it: "das Interesse", plural: "die Interessen", ex: "Mein Interesse an Kunst wächst." },
+          { it: "der Traum", plural: "die Träume", ex: "Das ist mein Traum." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["auf"] },
+          { t: "fill", a: ["an"] },
+          { t: "fill", a: ["um"] },
+          { t: "cloze", text: "Sie {{1}} sich {{2}} Musik.", gaps: [["interessiert"], ["für"]] },
+          {
+            t: "order",
+            tokens: ["Ich", "denke", "oft", "an", "dich"],
+            a: ["Ich denke oft an dich", "Oft denke ich an dich"]
+          },
+          { t: "trans", dir: "toIt", a: ["Ich warte auf Anna"] },
+          {
+            t: "listen",
+            it: "Ich warte auf dich. Ich denke oft an unseren Urlaub. Sie interessiert sich für Musik und kümmert sich um die Kinder."
+          },
+          { t: "speak", it: "Ich warte auf dich und denke an die Prüfung." }
+        ]
+      },
+      {
+        id: "b1-u02-l2",
+        tags: ["g-praep-verben"],
+        cefr: "B1",
+        titleIt: "Darauf freue ich mich. Worauf?",
+        grammar: {
+          examples: [
+            { it: "Ich freue mich auf das Wochenende." },
+            { it: "Ich freue mich darauf." },
+            { it: "Worauf freust du dich?" },
+            { it: "Er ärgert sich über den Lärm." },
+            { it: "Worüber ärgerst du dich?" },
+            { it: "Ich freue mich auf ihn. Auf wen wartest du?" }
+          ]
+        },
+        vocab: [
+          { it: "sich freuen auf", ex: "Ich freue mich auf das Wochenende." },
+          { it: "sich freuen über", ex: "Ich freue mich über das Geschenk." },
+          { it: "sich ärgern über", ex: "Er ärgert sich über den Lärm." },
+          { it: "sich erinnern an", ex: "Ich erinnere mich an den Sommer." },
+          { it: "sprechen über", ex: "Wir sprechen über das Wetter." },
+          { it: "das Wochenende", plural: "die Wochenenden", ex: "Am Wochenende besuche ich Freunde." },
+          { it: "das Geschenk", plural: "die Geschenke", ex: "Das Geschenk war eine Überraschung." },
+          { it: "der Lärm", plural: "-", ex: "Der Lärm stört mich." },
+          { it: "die Nachricht", plural: "die Nachrichten", ex: "Ich habe eine gute Nachricht." },
+          { it: "das Treffen", plural: "die Treffen", ex: "Ich freue mich auf das Treffen." },
+          { it: "das Fest", plural: "die Feste", ex: "Wir freuen uns auf das Fest." },
+          { it: "die Überraschung", plural: "die Überraschungen", ex: "Die Überraschung war groß." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["Worauf"] },
+          { t: "fill", a: ["daran"] },
+          {
+            t: "cloze",
+            text: "{{1}} ärgerst du dich? Ich ärgere mich {{2}} den Lärm.",
+            gaps: [["Worüber"], ["über"]]
+          },
+          {
+            t: "match",
+            pairs: [
+              { it: "Worauf wartest du?" },
+              { it: "Ich denke daran." },
+              { it: "Auf wen wartest du?" },
+              { it: "Ich denke an ihn." }
+            ]
+          },
+          { t: "trans", dir: "toIt", a: ["Ich denke oft daran", "Ich denke häufig daran", "Oft denke ich daran"] },
+          {
+            t: "listen",
+            it: "Worauf freust du dich? Ich freue mich auf das Wochenende. Und worüber hast du dich geärgert? Über den Lärm. Ich ärgere mich oft darüber."
+          },
+          { t: "speak", it: "Ich freue mich auf das Wochenende und denke schon daran." }
+        ]
+      },
+      {
+        id: "b1-u02-l3",
+        tags: ["g-relativsatz"],
+        cefr: "B1",
+        titleIt: "Das Buch, das ich gelesen habe",
+        grammar: {
+          examples: [
+            { it: "Der Mann, der dort steht, ist mein Lehrer." },
+            { it: "Das Buch, das ich gelesen habe, ist spannend." },
+            { it: "Die Frau, der ich geholfen habe, heißt Eva." },
+            { it: "Die Kinder, denen ich das Buch gebe, sind sieben." },
+            { it: "Der Mann, mit dem ich spreche, ist mein Chef." },
+            { it: "Die Freundin, auf die ich warte, kommt aus Rom." }
+          ]
+        },
+        vocab: [
+          { it: "der Roman", plural: "die Romane", ex: "Der Roman ist sehr spannend." },
+          { it: "der Film", plural: "die Filme", ex: "Der Film war lang." },
+          { it: "der Nachbar", plural: "die Nachbarn", ex: "Mein Nachbar ist nett." },
+          { it: "die Kollegin", plural: "die Kolleginnen", ex: "Meine Kollegin kommt aus Wien." },
+          { it: "der Schlüssel", plural: "die Schlüssel", ex: "Ich habe meinen Schlüssel verloren." },
+          { it: "die Tasche", plural: "die Taschen", ex: "Die Tasche ist neu." },
+          { it: "das Handy", plural: "die Handys", ex: "Mein Handy liegt auf dem Tisch." },
+          { it: "die Brille", plural: "die Brillen", ex: "Ich brauche meine Brille." },
+          { it: "das Geschäft", plural: "die Geschäfte", ex: "Das Geschäft ist am Sonntag zu." },
+          { it: "spannend", ex: "Das Buch ist spannend." },
+          { it: "verlieren", ex: "Ich habe mein Handy verloren." },
+          { it: "empfehlen", ex: "Ich empfehle dir diesen Film." }
+        ],
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["das"] },
+          { t: "fill", a: ["die"] },
+          { t: "fill", a: ["denen"] },
+          {
+            t: "cloze",
+            text: "Das ist der Schlüssel, {{1}} ich {{2}} habe.",
+            gaps: [["den"], ["verloren"]]
+          },
+          {
+            t: "order",
+            tokens: ["Das", "ist", "die", "Tasche,", "die", "ich", "gestern", "gekauft", "habe"],
+            a: ["Das ist die Tasche, die ich gestern gekauft habe"]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: ["Der Film, den wir gesehen haben, war lang"]
+          },
+          {
+            t: "listen",
+            it: "Das ist das Buch, das ich gelesen habe. Es ist ein spannender Roman. Die Kollegin, der ich den Roman empfohlen habe, findet ihn auch spannend."
+          },
+          { t: "speak", it: "Der Schlüssel, den ich verloren habe, war in meiner Tasche." }
+        ]
+      },
+      {
+        id: "b1-u02-l4",
+        tags: ["g-indefinitpron"],
+        cefr: "B1",
+        titleIt: "jemand, niemand, jeder",
+        grammar: {
+          examples: [
+            { it: "Hat jemand meinen Schlüssel gesehen?" },
+            { it: "Ich habe niemanden gesehen." },
+            { it: "Ich habe jemandem geholfen." },
+            { it: "Jeder weiß das." },
+            { it: "Alle sind da." },
+            { it: "Ich habe nichts gehört." }
+          ]
+        },
+        vocab: [
+          { it: "jemand", ex: "Ist jemand zu Hause?" },
+          { it: "niemand", ex: "Niemand hat angerufen." },
+          { it: "jeder", ex: "Jeder hat seine Meinung." },
+          { it: "alle", ex: "Alle sind gekommen." },
+          { it: "etwas", ex: "Ich möchte dir etwas zeigen." },
+          { it: "nichts", ex: "Ich habe nichts gesehen." },
+          { it: "die Person", plural: "die Personen", ex: "Zwei Personen warten draußen." },
+          { it: "der Mensch", plural: "die Menschen", ex: "Viele Menschen sind hier." },
+          { it: "das Problem", plural: "die Probleme", ex: "Das ist kein Problem." },
+          { it: "die Frage", plural: "die Fragen", ex: "Hat jemand eine Frage?" },
+          { it: "die Antwort", plural: "die Antworten", ex: "Ich kenne die Antwort nicht." },
+          { it: "das Geheimnis", plural: "die Geheimnisse", ex: "Das bleibt unser Geheimnis." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "multi", a: [0, 1, 2] },
+          { t: "fill", a: ["niemanden", "niemand"] },
+          { t: "fill", a: ["jemandem", "jemand"] },
+          { t: "fill", a: ["Jeder"] },
+          { t: "fill", a: ["nichts"] },
+          {
+            t: "cloze",
+            text: "Ich habe {{1}} gesehen und {{2}} gehört.",
+            gaps: [["niemanden", "niemand"], ["nichts"]]
+          },
+          {
+            t: "listen",
+            it: "Hat jemand meine Brille gesehen? Nein, niemand hat sie gesehen. Jeder sucht sie, aber wir finden nichts."
+          },
+          { t: "speak", it: "Ich habe niemanden gesehen und nichts gehört." }
+        ]
+      }
+    ],
+    test: {
+      id: "b1-u02-test",
+      tags: ["g-praep-verben", "g-relativsatz", "g-indefinitpron"],
+      cefr: "B1",
+      titleIt: "Test: Woran denkst du?",
+      exercises: [
+        { t: "fill", a: ["auf"] },
+        { t: "fill", a: ["vor"] },
+        { t: "fill", a: ["Woran"] },
+        { t: "fill", a: ["den"] },
+        { t: "fill", a: ["das"] },
+        { t: "fill", a: ["niemanden", "niemand"] },
+        { t: "mcq", a: 0 },
+        { t: "mcq", a: 0 },
+        {
+          t: "listen",
+          it: "Ich warte auf dich. Die Frau, die dort steht, hat Angst vor dem Test. Niemand hilft ihr."
+        },
+        { t: "speak", it: "Ich denke oft an das Buch, das ich gelesen habe." }
+      ]
+    }
   }
 ]);
