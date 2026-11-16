@@ -6,7 +6,7 @@
    ============================================================ */
 LINGUAI.addStrings("it", {
   "unit:a2-u01": {
-    title: "Ieri e oggi",
+    title: "Un tempo e oggi",
     grammarNote: "Präteritum di sein, haben e dei modali · als e wenn · weil con il verbo in fondo · verbi riflessivi e sich erinnern an"
   },
   "lesson:a2-u01-l1": {
@@ -23,7 +23,7 @@ LINGUAI.addStrings("it", {
         p: "Per descrivere come erano le cose in passato, a voce, si usano le forme semplici di <strong>sein</strong> e <strong>haben</strong>: <em>ich war</em>, <em>ich hatte</em>. Al posto del Perfekt (<em>Ich bin gewesen</em>, <em>Ich habe gehabt</em>) il tedesco parlato preferisce quasi sempre queste forme brevi: <em>Als Kind war ich oft krank</em>, <em>Wir hatten einen großen Garten</em>. Alla prima e alla terza persona singolare la forma è uguale: <em>ich war, er war</em>; <em>ich hatte, er hatte</em>."
       },
       {
-        contrast: "L'italiano distingue l'<b>imperfetto</b> (<em>ero, avevo</em>), che descrive come erano le cose, dal <b>passato remoto</b> (<em>fui, ebbi</em>), che racconta un fatto concluso. Il Präteritum non fa questa distinzione: <em>Ich war müde</em> può rendere <em>ero stanco</em> e <em>fui stanco</em>, e lo decide il contesto. Un'altra differenza è piccola ma costante: in <em>als Kind</em> («da bambino») non c'è articolo, e <em>Kind</em> è neutro."
+        contrast: "L'italiano distingue l'<b>imperfetto</b> (<em>ero, avevo</em>), che descrive come erano le cose, dal <b>passato remoto</b> (<em>fui, ebbi</em>), che racconta un fatto concluso (la distinzione, però, non si riduce a descrizione contro fatto concluso). Il Präteritum non fa questa distinzione: <em>Ich war müde</em> può corrispondere a tempi italiani diversi, secondo contesto e aspetto: <em>Als Kind war ich oft krank</em> = «Da bambino ero spesso malato», <em>Gestern war ich beim Arzt</em> = «Ieri sono stato dal medico». Un'altra differenza è piccola ma costante: in <em>als Kind</em> («da bambino») non c'è articolo, e <em>Kind</em> è neutro."
       },
       {
         trap: "Non mescolare le due forme: <em>Ich habe war</em> non esiste. Con <em>sein</em> e <em>haben</em> si sceglie il Präteritum (<em>Ich war</em>, <em>Ich hatte</em>) oppure il Perfekt (<em>Ich bin gewesen</em>, <em>Ich habe gehabt</em>), mai una forma ibrida. Fai attenzione anche a <em>wir hatten</em> e <em>wir waren</em>: alla prima persona plurale la desinenza è <em>-en</em>, come all'infinito."
@@ -76,7 +76,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Il Präteritum di haben, tutte le persone.",
-        why: "<i>Hatte, hattest, hatte, hatten, hattet, hatten</i>: la radice si accorcia (<i>hab-</i> diventa <i>hat-</i>) e poi arrivano le terminazioni."
+        why: "<i>Hatte, hattest, hatte, hatten, hattet, hatten</i>: <i>haben</i> è irregolare al Präteritum: il tema è <i>hatt-</i>, con le terminazioni <i>-e, -est, -e, -en, -et, -en</i>."
       },
       {
         tr: "Il Präteritum di können, tutte le persone.",
@@ -220,7 +220,7 @@ LINGUAI.addStrings("it", {
       },
       {
         q: "Traduci: «Quando avevo dieci anni, ci siamo trasferiti a Berlino.» (usa umziehen)",
-        why: "<i>Als</i> per un fatto solo. Il Perfekt di <i>umziehen</i> si fa con <b>sein</b>: <i>sind umgezogen</i>. Va bene anche <i>gezogen</i>."
+        why: "<i>Als</i> per un fatto solo. Il Perfekt di <i>umziehen</i> si fa con <b>sein</b>: <i>sind umgezogen</i>."
       },
       {
         tr: "Quando avevo dieci anni ci siamo trasferiti a Berlino, e lì non avevo amici.",
@@ -281,7 +281,7 @@ LINGUAI.addStrings("it", {
       "la regola",
       "la televisione, il televisore",
       "la paghetta",
-      "i dolci, le caramelle (solo plurale)",
+      "i dolci, le caramelle (plurale di <i>die Süßigkeit</i>)",
       "il cellulare",
       "il compleanno",
       "l'animale domestico",
@@ -335,7 +335,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Non mi era permesso guardare la televisione a lungo, perché dovevo andare a letto presto.",
-        why: "In <i>durfte</i> la <b>u</b> è breve; in <i>früh</i> la <b>ü</b> è lunga. In <i>lange</i> la <b>ng</b> si legge come una sola nasale [ŋ], come in «anche»."
+        why: "In <i>durfte</i> la <b>u</b> è breve; in <i>früh</i> la <b>ü</b> è lunga. In <i>lange</i> la <b>ng</b> si legge come una sola nasale [ŋ], come la nasale di «anche», senza la consonante [k]."
       },
       {
         tr: "Da bambino non mi era permesso mangiare dolci, perché i miei genitori erano severi.",
@@ -354,7 +354,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "I verbi riflessivi: mich, dich, sich, uns, euch",
-        p: "Un verbo è <b>riflessivo</b> quando l'azione torna sul soggetto: <em>Ich erinnere mich</em> (mi ricordo). Il pronome cambia con la persona: <em>mich, dich, sich, uns, euch, sich</em>. Sta dopo il verbo coniugato: <em>Erinnerst du dich an unsere Schule?</em> Nel Perfekt l'ausiliare è <em>haben</em> e il pronome si colloca subito dopo: <em>Wir haben uns am Bahnhof getroffen.</em> Con <em>sich erinnern</em> e con <em>sich freuen</em> la preposizione e il suo caso si imparano insieme al verbo: <em>sich erinnern an</em> + accusativo, <em>sich freuen auf</em> + accusativo (aspettare con gioia qualcosa di futuro), <em>sich freuen über</em> + accusativo (essere contenti di qualcosa di presente o di passato)."
+        p: "Un verbo è <b>riflessivo</b> quando l'azione torna sul soggetto: <em>Ich erinnere mich</em> (mi ricordo). Il pronome cambia con la persona: <em>mich, dich, sich, uns, euch, sich</em>. Nella principale con il soggetto in prima posizione sta dopo il verbo coniugato: <em>Du erinnerst dich an unsere Schule.</em> Nelle domande il verbo viene per primo e il pronome segue il soggetto: <em>Erinnerst du dich an unsere Schule?</em> Nel Perfekt l'ausiliare è <em>haben</em> e il pronome sta di norma vicino all'inizio del Mittelfeld, dopo un eventuale soggetto pronominale: <em>Wir haben uns am Bahnhof getroffen. Gestern haben wir uns getroffen. Gestern habe ich mich mit Anna getroffen.</em> Nella subordinata segue il soggetto: <em>weil ich mich erinnere</em>. Con <em>sich erinnern</em> e con <em>sich freuen</em> la preposizione e il suo caso si imparano insieme al verbo: <em>sich erinnern an</em> + accusativo, <em>sich freuen auf</em> + accusativo (aspettare con gioia qualcosa di futuro), <em>sich freuen über</em> + accusativo (essere contenti di qualcosa di presente o di passato)."
       },
       {
         contrast: "L'italiano ha molti verbi riflessivi, ma non sono gli stessi. <em>Ricordare qualcosa</em> è transitivo, mentre in tedesco <em>sich erinnern</em> è riflessivo e vuole <em>an</em>: <em>Ich erinnere mich an meine Lehrerin</em>. Al contrario, <em>alzarsi</em> e <em>svegliarsi</em> in tedesco <b>non</b> sono riflessivi (<em>aufstehen, aufwachen</em>), mentre <em>sich ärgern</em> (arrabbiarsi) e <em>sich setzen</em> (sedersi) lo sono. Anche <em>sich treffen</em> è usato in modo reciproco: <em>Wir treffen uns</em> è «ci incontriamo»."
@@ -368,7 +368,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Il pronome riflessivo",
-      note: "Dopo il verbo coniugato. Alla 3ª persona (singolare e plurale) il pronome è sempre <b>sich</b>.",
+      note: "Nella principale con soggetto iniziale dopo il verbo coniugato (con soggetto pronominale posposto, dopo di lui: <i>Gestern habe ich mich ...</i>; nella subordinata: <i>weil ich mich erinnere</i>). Alla 3ª persona (singolare e plurale) il pronome è sempre <b>sich</b>.",
       table: {
         head: ["persona", "pronome", "esempio"],
         rows: [

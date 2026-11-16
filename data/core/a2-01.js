@@ -117,9 +117,7 @@ LINGUAI.addUnits("A2", [
             dir: "toIt",
             a: [
               "Als ich zehn Jahre alt war, sind wir nach Berlin umgezogen",
-              "Als ich zehn war, sind wir nach Berlin umgezogen",
-              "Als ich zehn Jahre alt war, sind wir nach Berlin gezogen",
-              "Als ich zehn war, sind wir nach Berlin gezogen"
+              "Als ich zehn war, sind wir nach Berlin umgezogen"
             ]
           },
           { t: "listen", it: "Als ich zehn war, sind wir nach Berlin umgezogen, und ich hatte dort keine Freunde." },
