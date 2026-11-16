@@ -1,7 +1,7 @@
 /* ============================================================
    Language-neutral layer: German (de-DE), structure and answer keys.
    Learner-language texts live in data/i18n/<lang>/a1-02.js.
-   a1-u04, a1-u05 and a1-u06 are German units.
+   a1-u04 to a1-u07 are German units.
    ============================================================ */
 LINGUAI.addUnits("A1", [
   {
@@ -871,6 +871,375 @@ LINGUAI.addUnits("A1", [
         { t: "mcq", a: 1 },
         { t: "listen", it: "Entschuldigung, wo ist der Bahnhof?" },
         { t: "speak", it: "Gehen Sie geradeaus und dann links." }
+      ]
+    }
+  },
+  {
+    id: "a1-u07",
+    icon: "🍽️",
+    titleIt: "Im Restaurant",
+    lessons: [
+      {
+        id: "a1-u07-l1",
+        tags: ["g-artikel-akk", "g-satz-v2"],
+        cefr: "A1",
+        titleIt: "Ein Tisch für zwei",
+        grammar: {
+          examples: [
+            { it: "Haben Sie einen Tisch für zwei?" },
+            { it: "Wir brauchen einen Tisch für vier Personen." },
+            { it: "Wir brauchen eine Speisekarte." },
+            { it: "Heute Abend reserviere ich einen Tisch." },
+            { it: "Der Tisch ist frei." },
+            { it: "Haben Sie draußen einen Tisch frei?" }
+          ]
+        },
+        vocab: [
+          { it: "der Tisch", plural: "die Tische", ex: "Der Tisch ist frei." },
+          { it: "der Stuhl", plural: "die Stühle", ex: "Wir brauchen einen Stuhl." },
+          { it: "der Platz", plural: "die Plätze", ex: "Ist hier ein Platz frei?" },
+          { it: "das Restaurant", plural: "die Restaurants", ex: "Das Restaurant ist schön." },
+          { it: "die Person", plural: "die Personen", ex: "Wir sind vier Personen." },
+          { it: "die Kellnerin", plural: "die Kellnerinnen", ex: "Die Kellnerin ist freundlich." },
+          { it: "die Reservierung", plural: "die Reservierungen", ex: "Die Reservierung ist für sieben Uhr." },
+          { it: "reservieren", ex: "Ich reserviere einen Tisch für sieben Uhr." },
+          { it: "brauchen", ex: "Wir brauchen einen Tisch für drei." },
+          { it: "draußen", ex: "Haben Sie draußen einen Tisch frei?" },
+          { it: "drinnen", ex: "Der Tisch drinnen ist frei." },
+          { it: "frei", ex: "Ist der Tisch frei?" }
+        ],
+        dialogue: {
+          titleIt: "Am Eingang",
+          lines: [
+            { who: "🙋", it: "Guten Abend. Haben Sie einen Tisch für zwei?" },
+            { who: "🧑‍💼", it: "Ja, gern. Drinnen oder draußen?" },
+            { who: "🙋", it: "Draußen, bitte." },
+            { who: "🧑‍💼", it: "Hier ist ein Tisch. Hier ist die Speisekarte." },
+            { who: "🙋", it: "Danke schön!" }
+          ]
+        },
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["einen"] },
+          {
+            t: "match",
+            pairs: [{ it: "der Kellner" }, { it: "der Stuhl" }, { it: "draußen" }, { it: "reservieren" }]
+          },
+          {
+            t: "order",
+            tokens: ["Wir", "brauchen", "einen", "Tisch", "für", "vier"],
+            a: ["Wir brauchen einen Tisch für vier", "Einen Tisch für vier brauchen wir"]
+          },
+          {
+            t: "dialogue",
+            lines: [
+              { sp: "A", it: "Guten Abend! Was brauchen Sie?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Wir brauchen einen Tisch für zwei.",
+                  "Wir brauchen ein Tisch für zwei.",
+                  "Wir einen Tisch brauchen für zwei."
+                ],
+                a: 0
+              },
+              { sp: "A", it: "Gern. Hier ist der Tisch." },
+              {
+                sp: "TY",
+                choices: [
+                  "Danke. Die Speisekarte, bitte.",
+                  "Danke. Der Speisekarte, bitte.",
+                  "Danke. Den Speisekarte, bitte."
+                ],
+                a: 0
+              }
+            ]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: ["Haben Sie einen Tisch für zwei"]
+          },
+          { t: "listen", it: "Haben Sie drinnen einen Tisch für drei Personen frei?" },
+          { t: "speak", it: "Haben Sie draußen einen Tisch frei?" }
+        ]
+      },
+      {
+        id: "a1-u07-l2",
+        tags: ["g-modalverben"],
+        cefr: "A1",
+        titleIt: "Ich hätte gern das Schnitzel",
+        grammar: {
+          examples: [
+            { it: "Ich möchte das Schnitzel." },
+            { it: "Ich hätte gern den Käse." },
+            { it: "Ich möchte den Fisch." },
+            { it: "Was möchten Sie trinken?" },
+            { it: "Möchten Sie eine Vorspeise?" },
+            { it: "Wir hätten gern zwei Suppen." }
+          ]
+        },
+        vocab: [
+          { it: "ich möchte", ex: "Ich möchte das Hähnchen." },
+          { it: "ich hätte gern", ex: "Ich hätte gern das Schnitzel." },
+          { it: "das Schnitzel", plural: "die Schnitzel", ex: "Das Schnitzel ist groß." },
+          { it: "die Wurst", plural: "die Würste", ex: "Ich möchte die Wurst." },
+          { it: "die Kartoffel", plural: "die Kartoffeln", ex: "Die Kartoffeln sind heiß." },
+          { it: "der Reis", plural: "-", ex: "Ich hätte gern den Reis." },
+          { it: "das Hähnchen", plural: "die Hähnchen", ex: "Das Hähnchen ist frisch." },
+          { it: "der Käse", plural: "die Käse", ex: "Ich hätte gern den Käse." },
+          { it: "die Vorspeise", plural: "die Vorspeisen", ex: "Möchten Sie eine Vorspeise?" },
+          { it: "das Hauptgericht", plural: "die Hauptgerichte", ex: "Das Hauptgericht ist ein Schnitzel." },
+          { it: "der Nachtisch", plural: "die Nachtische", ex: "Als Nachtisch hätte ich gern ein Eis." },
+          { it: "das Eis", plural: "-", ex: "Ich möchte ein Eis." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 1 },
+          { t: "fill", a: ["den"] },
+          {
+            t: "match",
+            pairs: [{ it: "das Schnitzel" }, { it: "die Suppe" }, { it: "der Fisch" }, { it: "der Nachtisch" }]
+          },
+          {
+            t: "cloze",
+            text: "Ich {{1}} den Fisch und du {{2}} die Suppe.",
+            gaps: [["möchte"], ["möchtest"]]
+          },
+          {
+            t: "order",
+            tokens: ["Ich", "hätte", "gern", "das", "Schnitzel"],
+            a: [
+              "Ich hätte gern das Schnitzel",
+              "Ich hätte das Schnitzel gern",
+              "Das Schnitzel hätte ich gern"
+            ]
+          },
+          {
+            t: "dialogue",
+            lines: [
+              { sp: "A", it: "Was möchten Sie?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Ich hätte gern den Fisch.",
+                  "Ich hätte gern der Fisch.",
+                  "Ich gern hätte den Fisch."
+                ],
+                a: 0
+              },
+              { sp: "A", it: "Und möchten Sie auch eine Suppe?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Ja, gern. Ich möchte eine Suppe.",
+                  "Ja, gern. Ich möchtest eine Suppe.",
+                  "Ja, gern. Ich eine Suppe möchte."
+                ],
+                a: 0
+              }
+            ]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Ich möchte die Suppe",
+              "Ich hätte gern die Suppe",
+              "Ich hätte die Suppe gern",
+              "Ich möchte gern die Suppe",
+              "Ich möchte die Suppe gern",
+              "Die Suppe möchte ich",
+              "Die Suppe hätte ich gern"
+            ]
+          },
+          { t: "listen", it: "Ich möchte die Suppe und das Schnitzel." },
+          { t: "speak", it: "Ich hätte gern den Fisch und den Salat." }
+        ]
+      },
+      {
+        id: "a1-u07-l3",
+        tags: ["g-indefinitpron"],
+        cefr: "A1",
+        titleIt: "Ich nehme zwei. Haben Sie welche?",
+        grammar: {
+          examples: [
+            { it: "Ich nehme zwei." },
+            { it: "Möchten Sie ein Brötchen? Ja, ich nehme eins." },
+            { it: "Haben Sie einen Apfel? Ja, ich habe einen." },
+            { it: "Möchten Sie eine Tomate? Ja, ich nehme eine." },
+            { it: "Haben Sie Brötchen? Ja, wir haben welche." },
+            { it: "Haben Sie Wasser? Ja, wir haben welches." }
+          ]
+        },
+        vocab: [
+          { it: "welche", ex: "Haben Sie Brötchen? Ja, wir haben welche." },
+          { it: "einer / eine / eins", ex: "Ich nehme eins." },
+          { it: "keiner / keine / keins", ex: "Wir haben leider keine." },
+          { it: "das Ei", plural: "die Eier", ex: "Ich nehme zwei Eier." },
+          { it: "die Tomate", plural: "die Tomaten", ex: "Die Tomate ist rot." },
+          { it: "die Gurke", plural: "die Gurken", ex: "Ich möchte eine Gurke." },
+          { it: "das Glas", plural: "die Gläser", ex: "Ich nehme ein Glas Wasser." },
+          { it: "die Flasche", plural: "die Flaschen", ex: "Wir nehmen eine Flasche Wasser." },
+          { it: "die Portion", plural: "die Portionen", ex: "Eine Portion Reis, bitte." },
+          { it: "die Gabel", plural: "die Gabeln", ex: "Haben Sie eine Gabel?" },
+          { it: "der Löffel", plural: "die Löffel", ex: "Ich brauche einen Löffel." },
+          { it: "das Messer", plural: "die Messer", ex: "Ich brauche ein Messer." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 1 },
+          { t: "fill", a: ["welches"] },
+          { t: "fill", a: ["eine"] },
+          {
+            t: "match",
+            pairs: [{ it: "das Brötchen" }, { it: "die Milch" }, { it: "das Ei" }, { it: "die Flasche" }]
+          },
+          {
+            t: "cloze",
+            text: "Haben Sie {{1}} Apfel? Ja, wir haben {{2}}.",
+            gaps: [["einen"], ["einen"]]
+          },
+          {
+            t: "order",
+            tokens: ["Wir", "haben", "leider", "keine"],
+            a: ["Wir haben leider keine", "Leider haben wir keine"]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: ["Hast du Brötchen? Ja, ich habe welche"]
+          },
+          { t: "listen", it: "Wir haben Brötchen und Äpfel, aber keine Tomaten." },
+          { t: "speak", it: "Ich nehme zwei Brötchen und einen Apfel." }
+        ]
+      },
+      {
+        id: "a1-u07-l4",
+        tags: ["g-register"],
+        cefr: "A1",
+        titleIt: "Zahlen, bitte!",
+        grammar: {
+          examples: [
+            { it: "Zahlen, bitte!" },
+            { it: "Die Rechnung, bitte." },
+            { it: "Können wir bitte zahlen?" },
+            { it: "Zusammen oder getrennt?" },
+            { it: "Das macht zwölf Euro." },
+            { it: "Dreizehn Euro, stimmt so." }
+          ]
+        },
+        vocab: [
+          { it: "zahlen", ex: "Wir möchten zahlen." },
+          { it: "die Rechnung", plural: "die Rechnungen", ex: "Die Rechnung, bitte." },
+          { it: "zusammen", ex: "Wir zahlen zusammen." },
+          { it: "getrennt", ex: "Wir zahlen getrennt." },
+          { it: "bar", ex: "Ich zahle bar." },
+          { it: "die Karte", plural: "die Karten", ex: "Ich zahle mit Karte." },
+          { it: "das Trinkgeld", plural: "die Trinkgelder", ex: "Das Trinkgeld ist für Sie." },
+          { it: "der Euro", plural: "die Euro", ex: "Das macht zwölf Euro." },
+          { it: "der Franken", plural: "die Franken", ex: "Ich zahle in der Schweiz in Franken." },
+          { it: "der Gast", plural: "die Gäste", ex: "Die Gäste zahlen." },
+          { it: "stimmt so", ex: "Dreizehn Euro, stimmt so." },
+          { it: "der Betrag", plural: "die Beträge", ex: "Der Betrag ist zwölf Euro." }
+        ],
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "mcq", a: 1 },
+          { t: "fill", a: ["macht"] },
+          {
+            t: "match",
+            pairs: [{ it: "die Rechnung" }, { it: "das Trinkgeld" }, { it: "bar" }, { it: "getrennt" }]
+          },
+          {
+            t: "cloze",
+            text: "Ich {{1}} bar und er {{2}} mit Karte.",
+            gaps: [["zahle"], ["zahlt"]]
+          },
+          {
+            t: "order",
+            tokens: ["Können", "wir", "bitte", "zahlen"],
+            a: ["Können wir bitte zahlen", "Können wir zahlen bitte"]
+          },
+          {
+            t: "dialogue",
+            lines: [
+              { sp: "A", it: "Möchten Sie noch etwas?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Nein, danke. Wir möchten zahlen, bitte.",
+                  "Nein, danke. Wir zahlen möchten, bitte.",
+                  "Nein, danke. Wir möchten bitte zahlen Sie."
+                ],
+                a: 0
+              },
+              { sp: "A", it: "Gern. Zusammen oder getrennt?" },
+              {
+                sp: "TY",
+                choices: ["Zusammen, bitte.", "Zusammen, bitten.", "Zusammen bitte ist."],
+                a: 0
+              },
+              { sp: "A", it: "Das macht zweiunddreißig Euro." },
+              {
+                sp: "TY",
+                choices: [
+                  "Vierunddreißig Euro, stimmt so.",
+                  "Vierunddreißig Euro, stimmt Sie.",
+                  "Vierunddreißig stimmt Euro so."
+                ],
+                a: 0
+              }
+            ]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: ["Die Rechnung, bitte. Wir zahlen zusammen"]
+          },
+          { t: "listen", it: "Entschuldigung, können wir bitte zahlen?" },
+          { t: "speak", it: "Wir zahlen getrennt, bitte." }
+        ]
+      }
+    ],
+    test: {
+      id: "a1-u07-test",
+      tags: ["g-artikel-akk", "g-indefinitpron", "g-modalverben"],
+      cefr: "A1",
+      titleIt: "Test: Im Restaurant",
+      exercises: [
+        { t: "fill", a: ["einen"] },
+        { t: "fill", a: ["hätte"] },
+        { t: "fill", a: ["welche"] },
+        { t: "mcq", a: 1 },
+        { t: "mcq", a: 0 },
+        {
+          t: "match",
+          pairs: [{ it: "zahlen" }, { it: "die Rechnung" }, { it: "das Trinkgeld" }, { it: "die Speisekarte" }]
+        },
+        {
+          t: "order",
+          tokens: ["Ich", "hätte", "gern", "den", "Fisch"],
+          a: [
+            "Ich hätte gern den Fisch",
+            "Ich hätte den Fisch gern",
+            "Den Fisch hätte ich gern"
+          ]
+        },
+        {
+          t: "trans",
+          dir: "toIt",
+          a: [
+            "Ich möchte einen Tisch für zwei",
+            "Ich hätte gern einen Tisch für zwei",
+            "Ich möchte gern einen Tisch für zwei",
+            "Einen Tisch für zwei möchte ich",
+            "Einen Tisch für zwei hätte ich gern"
+          ]
+        },
+        { t: "listen", it: "Wir hätten gern zwei Suppen und einen Salat." },
+        { t: "speak", it: "Können wir bitte zahlen?" }
       ]
     }
   }
