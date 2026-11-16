@@ -268,7 +268,7 @@ test("with a level finished, the next lesson comes from the next level", async (
       '{ id: "a2-u01-l1", cefr: "A2", titleIt: "Fixture Lektion", vocab: [], exercises: [] }] }]);'
   }));
   const A1 = [];
-  ["a1-u01", "a1-u02", "a1-u03"].forEach(u => {
+  ["a1-u01", "a1-u02", "a1-u03", "a1-u04", "a1-u05", "a1-u06", "a1-u07", "a1-u08", "a1-u09", "a1-u10"].forEach(u => {
     ["l1", "l2", "l3", "l4", "test"].forEach(k => A1.push(u + "-" + k));
   });
   await profil(page, zdane(A1));

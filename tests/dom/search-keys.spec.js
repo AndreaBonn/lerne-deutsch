@@ -20,8 +20,13 @@ test("the way into the search sits in the panel header", async ({ page }) => {
 test("German search folds umlauts and sharp s with intact highlights", async ({ page }) => {
   await szukaj(page, "");
   const result = await page.evaluate(() => {
+    /* collect() also walks the grammar reference and the conversations, so the
+       fixture empties them: otherwise a grammar title that happens to contain
+       "ol" changes the counts as the course grows. */
     Core.registry.levels = [{ code: "A1", units: [{ lessons: [{ id: "german-search",
       vocab: [{ it: "die Straße, Öl und Mädchen", tr: "street" }] }] }] }];
+    window.GRAMMAR_REF = [];
+    window.CONVERSATIONS = [];
     return {
       hits: ["strasse", "Straße", "ol", "madchen"].map(q => Search.collect(q).length),
       marks: [Search.highlight("Straße Straße Öl", "strasse"),
