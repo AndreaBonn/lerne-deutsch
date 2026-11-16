@@ -1366,8 +1366,8 @@ LINGUAI.addStrings("it", {
         why: "I due imperativi hanno ciascuno il proprio <i>Sie</i>. Il prefisso <i>ab</i> di <i>abbiegen</i> chiude la frase."
       },
       {
-        q: "Sei per strada e cerchi la stazione.",
-        setting: "Fermi una persona in centro.",
+        q: "Una persona ti chiede la strada: rispondi alle sue domande.",
+        setting: "In centro aiuti qualcuno a trovare la stazione e la farmacia.",
         lines: [
           { tr: "Scusi, dov'è la stazione?" },
           { tr: "Spiega la strada: dritto, poi a sinistra.", answerTr: "Vada dritto e poi a sinistra." },
