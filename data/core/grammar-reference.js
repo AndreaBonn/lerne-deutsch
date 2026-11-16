@@ -14,6 +14,7 @@ window.GRAMMAR_REF = [
       { id: "g-artikel-nom", cefr: "A1" },
       { id: "g-artikel-akk", cefr: "A1" },
       { id: "g-artikel-dat", cefr: "A1" },
+      { id: "g-genitiv", cefr: "B1" },
       { id: "g-wortbildung", cefr: "A2" }
     ]
   },
@@ -43,14 +44,17 @@ window.GRAMMAR_REF = [
       { id: "g-imperativ", cefr: "A1" },
       { id: "g-perfekt", cefr: "A1" },
       { id: "g-praeteritum", cefr: "A2" },
+      { id: "g-plusquamperfekt", cefr: "B1" },
       { id: "g-reflexivverben", cefr: "A2" },
       { id: "g-verben-dativ", cefr: "A2" },
-      { id: "g-futur", cefr: "A2" }
+      { id: "g-futur", cefr: "A2" },
+      { id: "g-praep-verben", cefr: "B1" }
     ]
   },
   {
     items: [
-      { id: "g-konjunktiv2", cefr: "A2" }
+      { id: "g-konjunktiv2", cefr: "A2" },
+      { id: "g-passiv", cefr: "B1" }
     ]
   },
   {
@@ -70,7 +74,11 @@ window.GRAMMAR_REF = [
       { id: "g-nebensatz-weil", cefr: "A2" },
       { id: "g-nebensatz-temporal", cefr: "A2" },
       { id: "g-nebensatz-dass", cefr: "A2" },
-      { id: "g-infinitiv-zu", cefr: "A2" }
+      { id: "g-infinitiv-zu", cefr: "A2" },
+      { id: "g-relativsatz", cefr: "B1" },
+      { id: "g-konditionalsatz", cefr: "B1" },
+      { id: "g-konzessiv", cefr: "B1" },
+      { id: "g-nebensatz-final", cefr: "B1" }
     ]
   },
   {
