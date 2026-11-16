@@ -1,5 +1,5 @@
 /* ============================================================
-   Teksty w języku ucznia (pl) do data/core/a1-02.js, jednostki a1-u04 i a1-u05.
+   Teksty w języku ucznia (pl) do data/core/a1-02.js, jednostki a1-u04, a1-u05 i a1-u06.
    Klucze wskazują id warstwy neutralnej; tablice łączą się po
    indeksie, więc ich długość musi zgadzać się z core.
    Sprawdza to scripts/parity.mjs.
@@ -1039,6 +1039,521 @@ LINGUAI.addStrings("pl", {
       {
         tr: "Wieczorem czasami oglądam telewizję.",
         why: "Po <i>Abends</i> od razu stoi czasownik; <i>fern</i> zamyka zdanie."
+      }
+    ]
+  },
+  "unit:a1-u06": {
+    title: "W mieście",
+    grammarNote: "mit, zu, bei, aus, von · celownik (Dativ) · wo? z in, an, neben · forma grzecznościowa rozkazu · es gibt"
+  },
+  "lesson:a1-u06-l1": {
+    theme: "Środki transportu",
+    title: "Środki i cele: mit dem Bus, zum Bahnhof",
+    objectives: [
+      "mówić, czym się jedzie, za pomocą mit + Dativ",
+      "mówić, dokąd się idzie, za pomocą zu + Dativ: zum Bahnhof, zur Schule",
+      "używać rodzajnika w Dativie: dem, der, dem, den"
+    ],
+    theory: [
+      {
+        h: "Mit i zu wymagają Dativu",
+        p: "Przyimki <strong>mit</strong> (z, za pomocą: środek transportu) i <strong>zu</strong> (do, w stronę miejsca lub osoby) zawsze wymagają <strong>Dativu</strong>. Rodzajnik zmienia się we wszystkich rodzajach: męski i nijaki <strong>dem</strong>, żeński <strong>der</strong>, liczba mnoga <strong>den</strong>. Przykłady: <em>Ich fahre mit dem Bus</em> (męski), <em>mit der Straßenbahn</em> (żeński), <em>mit dem Auto</em> (nijaki). W liczbie mnogiej rzeczownik zwykle dostaje jeszcze <strong>-n</strong>: <em>mit den Bussen</em>, <em>mit den Zügen</em>, <em>mit den Fahrrädern</em>. Nie dostaje go, jeśli liczba mnoga już kończy się na <strong>-n</strong> lub <strong>-s</strong>: <em>mit den Autos</em>, <em>mit den Straßenbahnen</em>."
+      },
+      {
+        h: "zu dem staje się zum, zu der staje się zur",
+        p: "Po <em>zu</em> rodzajnik zlewa się z przyimkiem: <strong>zu dem → zum</strong>, <strong>zu der → zur</strong>. Mówi się <em>Ich gehe zum Bahnhof</em> i <em>Sie geht zur Schule</em>. Na „pieszo” jest stałe wyrażenie <strong>zu Fuß</strong>: <em>Wir gehen zu Fuß zur Haltestelle</em>."
+      },
+      {
+        contrast: "Po polsku środek transportu stoi w narzędniku, bez przyimka: <em>jadę autobusem</em>, <em>pociągiem</em>, <em>rowerem</em>. Po niemiecku potrzebny jest przyimek <strong>mit</strong> i Dativ: <em>mit dem Bus</em>, <em>mit dem Zug</em>. Cel podróży w tych przykładach to <em>do</em> + dopełniacz (<em>do dworca</em>, <em>do szkoły</em>), a po niemiecku <strong>zu</strong> + Dativ (inne cele mogą wymagać <em>nach</em> lub <em>in</em>, zobaczysz to dalej). Nie szukaj więc w tym Dativie polskiego celownika: tutaj odpowiada mu raczej narzędnik albo dopełniacz. <em>Im Bus fahren</em> istnieje, ale podkreśla, że jest się w środku. Uważaj też na rodzaje: <em>dworzec</em> jest męski i <em>der Bahnhof</em> też, ale <em>tramwaj</em> jest męski, a <em>die Straßenbahn</em> żeńska; <em>metro</em> jest nijakie, a <em>die U-Bahn</em> żeńska; <em>samochód</em> jest męski, ale <em>das Auto</em> nijakie (polskie <em>auto</em> też jest nijakie); <em>rower</em> jest męski, a <em>das Fahrrad</em> nijakie."
+      },
+      {
+        trap: "Dla „jechać autobusem” zwykła formuła to <em>mit dem Bus fahren</em>; <em>im Bus fahren</em> podkreśla, że jest się w środku. Nie używaj formy mianownika: „mit der Bus” i „mit die Straßenbahn” są błędne. Po <em>mit</em> i <em>zu</em> rodzajnik stoi zawsze w Dativie: <em>mit dem Bus</em>, <em>mit der Straßenbahn</em>, <em>zum Bahnhof</em>, <em>zur Schule</em>."
+      },
+      {
+        tip: "Ucz się każdego środka transportu z całym wyrażeniem: <em>mit dem Bus</em>, <em>mit der U-Bahn</em>, <em>mit dem Zug</em>, <em>mit dem Fahrrad</em>. Wtedy właściwy rodzajnik przychodzi razem z rzeczownikiem."
+      }
+    ],
+    grammar: {
+      title: "mit i zu z Dativem",
+      note: "Po <b>mit</b> i <b>zu</b> rodzajnik stoi w Dativie: <b>dem</b> (r. męski i nijaki), <b>der</b> (r. żeński), <b>den</b> + -n (liczba mnoga). <b>zu dem → zum</b>, <b>zu der → zur</b>.",
+      table: {
+        head: ["rodzaj", "mit + Dativ", "zu + Dativ"],
+        rows: [
+          ["męski", "mit dem Bus", "zum Bahnhof"],
+          ["żeński", "mit der Straßenbahn", "zur Schule"],
+          ["nijaki", "mit dem Auto", "zum Kino"],
+          ["liczba mnoga", "mit den Bussen", "zu den Haltestellen"]
+        ]
+      },
+      examples: [
+        { tr: "Jadę autobusem.", note: "mit dem Bus: rodzaj męski" },
+        { tr: "Jedziesz tramwajem.", note: "mit der Straßenbahn: rodzaj żeński; fährst, ze zmianą samogłoski" },
+        { tr: "Jedziemy samochodem.", note: "mit dem Auto: rodzaj nijaki" },
+        { tr: "Idę na dworzec.", note: "zum = zu dem" },
+        { tr: "Ona idzie do szkoły.", note: "zur = zu der" },
+        { tr: "Idziemy pieszo na przystanek.", note: "zu Fuß: wyrażenie stałe" }
+      ]
+    },
+    vocab: [
+      "z, za pomocą",
+      "do, w stronę (miejsca lub osoby)",
+      "pieszo, na piechotę",
+      "autobus",
+      "tramwaj",
+      "metro",
+      "pociąg",
+      "samochód, auto",
+      "rower",
+      "dworzec",
+      "przystanek",
+      "szkoła"
+    ],
+    exercises: [
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: ["Ich fahre mit der Bus.", "Ich fahre mit dem Bus.", "Ich fahre mit den Bus."],
+        why: "<i>Der Bus</i> jest rodzaju męskiego: po <i>mit</i> rodzajnik to <b>dem</b>."
+      },
+      {
+        q: "Uzupełnij: „Wir fahren mit ___ Auto.”",
+        hint: "das Auto, rodzajnik określony w Dativie",
+        why: "<i>Das Auto</i> jest rodzaju nijakiego: po <i>mit</i> mówi się <b>dem</b>."
+      },
+      {
+        q: "Uzupełnij: „Ich fahre mit ___ U-Bahn.”",
+        hint: "die U-Bahn, rodzajnik określony w Dativie",
+        why: "<i>Die U-Bahn</i> jest rodzaju żeńskiego: w Dativie <b>der</b>."
+      },
+      {
+        q: "Uzupełnij: „Ich gehe ___ Bahnhof.”",
+        hint: "zu + dem, w formie zlanej",
+        why: "<i>Zu dem</i> zlewa się w <b>zum</b>. Poprawne jest też <i>zu dem Bahnhof</i>, ale prawie zawsze mówi się <i>zum</i>."
+      },
+      {
+        q: "Wybierz właściwy rodzajnik dla każdego rzeczownika.",
+        why: "<i>Bahnhof</i> i <i>Zug</i> są rodzaju męskiego, <i>Haltestelle</i> i <i>Schule</i> żeńskiego, <i>Auto</i> i <i>Fahrrad</i> nijakiego. Uwaga: <i>samochód</i> jest męski po polsku, ale <i>das Auto</i> jest nijakie.",
+        items: ["dworzec", "przystanek", "samochód", "pociąg", "szkoła", "rower"]
+      },
+      {
+        tr: "Jedziemy pociągiem.",
+        why: "Poprawne są obie pozycje: <i>Wir fahren mit dem Zug</i> i, z inwersją, <i>Mit dem Zug fahren wir</i>. Czasownik zostaje na drugim miejscu."
+      },
+      {
+        q: "Uzupełnij oba brakujące słowa.",
+        tr: "On jedzie do szkoły autobusem.",
+        why: "Środek transportu wyraża się przez <i>mit</i> + Dativ (<i>dem Bus</i>), cel przez <i>zu</i> + Dativ (<i>zu der → zur Schule</i>)."
+      },
+      {
+        tr: "Jadę na dworzec autobusem.",
+        why: "Poprawne są też inne pozycje: <i>Ich fahre zum Bahnhof mit dem Bus</i>, <i>Mit dem Bus fahre ich zum Bahnhof</i> i <i>Zum Bahnhof fahre ich mit dem Bus</i>. Przy środku transportu używa się <i>fahren</i>, nie <i>gehen</i>."
+      },
+      {
+        tr: "Jadę do szkoły autobusem.",
+        why: "<i>Schule</i>: <b>sch</b> czyta się jak /ʃ/, bliskie polskiemu „sz”, a <b>u</b> jest długie. W <i>fahre</i> <b>h</b> się nie wymawia i wydłuża <b>a</b>."
+      },
+      {
+        tr: "Jedziemy tramwajem na dworzec.",
+        why: "<i>Straßenbahn</i>: <b>ß</b> to bezdźwięczne „s”, a początkowe <b>str</b> czyta się „sztr”. W <i>Bahnhof</i> <b>h</b> po <b>a</b> wydłuża samogłoskę; <b>h</b> w <i>hof</i> jest lekko dyszące, łagodniejsze niż polskie „h”."
+      }
+    ]
+  },
+  "lesson:a1-u06-l2": {
+    theme: "Poruszanie się i pochodzenie",
+    title: "gehen, fahren, kommen: aus, von, bei",
+    objectives: [
+      "odróżniać gehen (pieszo) od fahren (środkiem transportu)",
+      "mówić, skąd się pochodzi, za pomocą aus i von, a gdzie się jest, za pomocą bei",
+      "mówić, do jakiego miasta się jedzie, za pomocą nach"
+    ],
+    theory: [
+      {
+        h: "Gehen i fahren, kommen",
+        p: "<strong>Gehen</strong> oznacza zwykle poruszanie się pieszo, <strong>fahren</strong> poruszanie się środkiem transportu (autobus, pociąg, rower, samochód). Przy <em>fahren</em> samogłoska zmienia się w 2. i 3. osobie liczby pojedynczej: <em>ich fahre</em>, <em>du f<strong>ä</strong>hrst</em>, <em>er f<strong>ä</strong>hrt</em>. <em>Gehen</em> i <em>kommen</em> są regularne: <em>ich gehe</em>, <em>du gehst</em>, <em>wir kommen</em>. Czasowniki rozdzielne <em>einsteigen</em> i <em>aussteigen</em> wysyłają przedrostek na koniec: <em>Ich steige am Bahnhof aus.</em>"
+      },
+      {
+        h: "Aus, von i bei: skąd?",
+        p: "<strong>Aus</strong> oznacza pochodzenie z miejsca lub z kraju (<em>Ich komme aus Italien</em>, <em>Sie kommt aus dem Supermarkt</em>). <strong>Von</strong> oznacza punkt wyjścia (<em>Er kommt vom Bahnhof</em>, <em>vom Arzt</em>). <strong>Bei</strong> oznacza, gdzie ktoś się znajduje: u kogoś lub przy jakimś miejscu (<em>Anna ist beim Arzt</em>). <em>Von dem → vom</em> i <em>bei dem → beim</em> też się zlewają."
+      },
+      {
+        h: "Nach dla miast, in dla miejsca zamieszkania",
+        p: "Żeby powiedzieć, dokąd się jedzie, z nazwą miasta lub kraju <strong>bez rodzajnika</strong> używa się <strong>nach</strong>: <em>Ich fahre nach Berlin</em>, <em>Wir fahren nach Italien</em>. Żeby powiedzieć, gdzie się mieszka lub jest, używa się natomiast <strong>in</strong>: <em>Ich wohne in Berlin</em>. Kraje z rodzajnikiem, jak <em>die Schweiz</em>, pojawią się później."
+      },
+      {
+        contrast: "Tu polski jest po twojej stronie: <em>z</em> odpowiada <em>aus</em> (<em>jestem z Włoch</em>: <em>Ich komme aus Italien</em>), <em>od</em> odpowiada <em>von</em> (<em>wracam od lekarza</em>: <em>Ich komme vom Arzt</em>), <em>u</em> odpowiada <em>bei</em> (<em>jestem u lekarza</em>: <em>Ich bin beim Arzt</em>), a <em>do</em> odpowiada <em>zu</em> (<em>idę do lekarza</em>: <em>Ich gehe zum Arzt</em>). Polskie <em>od</em> ma też drugie znaczenie, „od jakiegoś czasu”: po niemiecku to <em>seit</em> (<em>mieszkam tu od roku</em>: <em>Ich wohne seit einem Jahr hier</em>). Podobnie jak niemiecki, polski rozróżnia też <em>iść</em> i <em>jechać</em>. Różnica jest gdzie indziej: polskie <em>do</em> obejmuje i miasto (<em>do Berlina</em>), i budynek (<em>do dworca</em>), a niemieckie <em>nach</em> i <em>zu</em> dzielą te zadania. Po polsku mówi się też „mieszkam w Berlinie”, i po niemiecku <em>in Berlin</em>, bez żadnego <em>nach</em>."
+      },
+      {
+        trap: "Dla „jestem z Włoch” nie mówi się „Ich komme von Italien”: dla pochodzenia z kraju lub z miasta używa się <strong>aus</strong>. I „Ich gehe mit dem Zug” jest błędne: przy środku transportu używa się <em>fahren</em>, więc <em>Ich fahre mit dem Zug</em>."
+      }
+    ],
+    grammar: {
+      title: "aus, von, bei, zu: pochodzenie i miejsce",
+      note: "<b>aus</b> = pochodzenie z miejsca lub kraju, <b>von</b> = punkt wyjścia, <b>bei</b> = u, przy, <b>zu</b> = do, w stronę. Wszystkie wymagają Dativu.",
+      table: {
+        head: ["przyimek", "znaczenie", "przykład"],
+        rows: [
+          ["aus", "z (pochodzenie)", "Ich komme aus Italien."],
+          ["von", "od, z (punkt wyjścia)", "Er kommt vom Bahnhof."],
+          ["bei", "u, przy", "Anna ist beim Arzt."],
+          ["zu", "do, w stronę", "Wir gehen zum Arzt."]
+        ]
+      },
+      examples: [
+        { tr: "Pochodzę z Włoch.", note: "aus + kraj bez rodzajnika" },
+        { tr: "Wychodzę z supermarketu.", note: "aus dem: ze środka supermarketu" },
+        { tr: "On przychodzi z dworca.", note: "vom = von dem" },
+        { tr: "Idziemy do lekarza.", note: "zum = zu dem" },
+        { tr: "Jedziesz do parku.", note: "fährst: zmiana samogłoski" },
+        { tr: "Anna jest u lekarza.", note: "beim = bei dem" }
+      ]
+    },
+    vocab: [
+      "iść (pieszo)",
+      "jechać (środkiem transportu), prowadzić",
+      "przychodzić, pochodzić",
+      "z (pochodzenie), ze środka",
+      "od, z (punkt wyjścia)",
+      "u (kogoś), przy",
+      "wsiadać",
+      "wysiadać",
+      "lekarz",
+      "park",
+      "supermarket",
+      "miasto"
+    ],
+    exercises: [
+      {
+        tr: "Czas teraźniejszy gehen: ich, er/sie/es, wir.",
+        why: "<i>Gehen</i> jest regularny: <i>gehe</i>, <i>geht</i>, <i>gehen</i>."
+      },
+      {
+        tr: "Czas teraźniejszy fahren: ich, du, er/sie/es, wir.",
+        why: "W 2. i 3. osobie liczby pojedynczej <b>a</b> zmienia się w <b>ä</b>: <i>fahre</i>, <i>fährst</i>, <i>fährt</i>, <i>fahren</i>."
+      },
+      {
+        q: "Uzupełnij: „Ich ___ aus Italien.”",
+        hint: "kommen, pierwsza osoba liczby pojedynczej",
+        why: "<i>Ich komme</i>: końcówka 1. osoby to <b>-e</b>."
+      },
+      {
+        q: "Uzupełnij: „Er ___ mit dem Zug.”",
+        hint: "fahren, trzecia osoba liczby pojedynczej",
+        why: "Przy <i>er</i> czasownik zmienia samogłoskę: <b>fährt</b>."
+      },
+      {
+        q: "Uzupełnij: „Wir kommen ___ der Stadt.”",
+        hint: "ze środka miejsca, pochodzenie",
+        why: "Dla pochodzenia z miejsca używa się <b>aus</b>: <i>aus der Stadt</i>."
+      },
+      {
+        q: "Jak powiesz „Wracam od lekarza”?",
+        opts: ["Ich komme aus dem Arzt.", "Ich komme vom Arzt.", "Ich komme zum Arzt."],
+        why: "Dla punktu wyjścia używa się <b>von</b> (<i>von dem → vom</i>). <i>Aus</i> dotyczy miejsca, nie osoby, a <i>zum</i> oznacza kierunek do, nie pochodzenie."
+      },
+      {
+        q: "Które zdania są poprawne?",
+        opts: [
+          "Ich fahre mit dem Zug.",
+          "Ich gehe mit dem Zug.",
+          "Wir gehen zu Fuß zum Park.",
+          "Du kommst aus Italien.",
+          "Er fahrt zum Bahnhof."
+        ],
+        why: "Zdanie 2 jest błędne, bo przy środku transportu używa się <i>fahren</i>; zdanie 5 ma złą formę <i>fahren</i>: <i>fährt</i>."
+      },
+      {
+        tr: "On przychodzi z dworca.",
+        why: "Poprawna jest też inwersja <i>Vom Bahnhof kommt er</i>. Czasownik zostaje na drugim miejscu."
+      },
+      {
+        tr: "Pochodzę z Włoch i jadę do Berlina pociągiem.",
+        why: "<i>Italien</i>: akcent pada na drugą sylabę, a <b>a</b> jest długie. W <i>Berlin</i> <b>r</b> może być tylne (języczkowe) albo przednie, jak w polskim: obie wymowy są standardowe. <i>Zug</i> zaczyna się od <b>z</b> czytanego jak polskie „c”."
+      },
+      {
+        tr: "Idziemy pieszo do parku.",
+        why: "<i>Fuß</i>: <b>ß</b> to bezdźwięczne „s”, a <b>u</b> jest długie. W <i>Park</i> końcowe <b>k</b> jest wyraźne."
+      }
+    ]
+  },
+  "lesson:a1-u06-l3": {
+    theme: "Pytanie o drogę",
+    title: "Wo ist der Bahnhof? Gehen Sie geradeaus",
+    objectives: [
+      "pytać, gdzie jest jakieś miejsce, za pomocą Entschuldigung, wo ist ...?",
+      "wskazywać drogę formą grzecznościową rozkazu (Gehen Sie ..., Biegen Sie ... ab)",
+      "mówić, gdzie coś się znajduje, za pomocą neben, hinter, vor + Dativ"
+    ],
+    theory: [
+      {
+        h: "Grzecznościowy tryb rozkazujący: bezokolicznik + Sie",
+        p: "Z <strong>Sie</strong> tryb rozkazujący ma postać <strong>bezokolicznik + Sie</strong>, z czasownikiem na <strong>pierwszym miejscu</strong>: <em>Gehen Sie geradeaus!</em>, <em>Nehmen Sie die erste Straße rechts!</em> Czasowniki rozdzielne wysyłają przedrostek na koniec: <em>Biegen Sie links <strong>ab</strong>.</em> Wyjątkiem jest <em>sein</em>: <strong>Seien Sie</strong> (<em>Seien Sie bitte pünktlich!</em>)."
+      },
+      {
+        h: "Gdzie jest? wo? z Dativem",
+        p: "Żeby zapytać, gdzie jest jakieś miejsce: <em>Entschuldigung, wo ist der Bahnhof?</em> Do odpowiedzi trzeba przyimków miejsca. Przy <strong>wo?</strong> in, an, auf, vor, hinter, neben wymagają <strong>Dativu</strong>: <em>Der Bahnhof ist neben dem Rathaus</em>, <em>Die Apotheke ist hinter der Kreuzung</em>, <em>Der Bus hält vor dem Rathaus</em>, <em>Wir sind am Bahnhof</em> (<em>an dem → am</em>) i <em>Das Café ist in der Stadt</em>."
+      },
+      {
+        contrast: "Po polsku forma grzecznościowa też ma dwie drogi: <em>Proszę iść prosto</em> (<em>proszę</em> + bezokolicznik) albo <em>Niech pan idzie prosto</em> (<em>niech</em> + <em>pan</em> lub <em>pani</em> + czasownik w 3. osobie). Niemiecka forma jest bliższa pierwszej: bezokolicznik na początku, ale zaimek <em>Sie</em> zostaje po czasowniku, a <em>bitte</em> jest opcjonalne. <em>Sie</em> jest jedno dla „pana”, „pani” i „państwa”. <em>Przepraszam</em> mówi się <em>Entschuldigung</em> (albo <em>Entschuldigen Sie</em>), <em>prosto</em> to <em>geradeaus</em>, <em>w prawo</em> to <em>rechts</em>, a <em>w lewo</em> to <em>links</em>, bez przyimka. Po polsku przyimki miejsca też rządzą przypadkiem (<em>obok ratusza</em>, <em>przed ratuszem</em>), więc pomysł jest ci znany, ale same formy są inne i trzeba je wyuczyć. Uważaj też na rodzaj: <em>ratusz</em> jest męski, a <em>das Rathaus</em> nijakie; <em>skrzyżowanie</em> jest nijakie, a <em>die Kreuzung</em> żeńska."
+      },
+      {
+        trap: "Tryb rozkazujący z <em>Sie</em> ma tę samą postać co pytanie tak/nie: <em>Gehen Sie geradeaus!</em> albo <em>Gehen Sie geradeaus?</em> Odróżniają je kontekst, intonacja i interpunkcja. To nie jest <em>Sie gehen geradeaus</em> (podmiot przed czasownikiem), czyli zdanie oznajmujące. A po <em>neben</em>, <em>hinter</em> i <em>vor</em> przy <em>wo?</em> nie stoi biernik: „neben den Bahnhof” jest błędne, mówi się <em>neben dem Bahnhof</em>."
+      },
+      {
+        tip: "Żeby zapamiętać trzy zdania potrzebne na ulicy: <em>Entschuldigung, wo ist ...?</em>, <em>Gehen Sie geradeaus</em>, <em>Biegen Sie links / rechts ab</em>. Z nimi poradzisz sobie w każdym niemieckojęzycznym mieście."
+      }
+    ],
+    grammar: {
+      title: "Grzecznościowy tryb rozkazujący i wo? z Dativem",
+      note: "<b>Tryb rozkazujący z Sie:</b> bezokolicznik + <b>Sie</b>, czasownik na pierwszym miejscu. <b>Wo?</b> z in, an, vor, hinter, neben: Dativ.",
+      table: {
+        head: ["bezokolicznik", "tryb rozkazujący", "znaczenie"],
+        rows: [
+          ["gehen", "Gehen Sie geradeaus.", "proszę iść prosto"],
+          ["abbiegen", "Biegen Sie links ab.", "proszę skręcić w lewo"],
+          ["nehmen", "Nehmen Sie die erste Straße rechts.", "proszę skręcić w pierwszą ulicę w prawo"],
+          ["sein", "Seien Sie bitte pünktlich.", "proszę być punktualnym"]
+        ]
+      },
+      examples: [
+        { tr: "Proszę iść prosto.", note: "Gehen Sie: czasownik, potem Sie" },
+        { tr: "Proszę skręcić w lewo.", note: "abbiegen: ab na końcu" },
+        { tr: "Proszę skręcić w pierwszą ulicę w prawo.", note: "nehmen: pierwsza ulica, die erste Straße" },
+        { tr: "Przepraszam, gdzie jest dworzec?" },
+        { tr: "Dworzec jest obok ratusza.", note: "neben dem: Dativ rodzaju nijakiego" },
+        { tr: "Apteka jest za skrzyżowaniem.", note: "hinter der: Dativ rodzaju żeńskiego" }
+      ]
+    },
+    vocab: [
+      "prosto",
+      "w lewo, po lewej",
+      "w prawo, po prawej",
+      "skręcać",
+      "przepraszam",
+      "obok",
+      "za, z tyłu",
+      "przed",
+      "ulica",
+      "skrzyżowanie",
+      "ratusz",
+      "apteka"
+    ],
+    exercises: [
+      {
+        q: "Jak grzecznie poprosisz kogoś, żeby skręcił w lewo?",
+        opts: ["Sie biegen links ab.", "Biegen Sie links ab.", "Biegen links Sie ab."],
+        why: "Czasownik na pierwszym miejscu, potem <i>Sie</i>, a przedrostek <b>ab</b> na końcu: <b>Biegen Sie links ab.</b> Pierwsza opcja to zdanie oznajmujące."
+      },
+      {
+        q: "Jak zapytasz, gdzie jest dworzec?",
+        opts: ["Wo ist der Bahnhof?", "Wo der Bahnhof ist?", "Wo ist den Bahnhof?"],
+        why: "W pytaniu z <i>wo</i> czasownik stoi na drugim miejscu: <b>Wo ist der Bahnhof?</b> Przy <i>sein</i> rzeczownik zostaje w mianowniku."
+      },
+      {
+        q: "Uzupełnij: „___ Sie geradeaus.” (Proszę iść)",
+        hint: "gehen, grzecznościowy tryb rozkazujący, wielką literą na początku",
+        why: "Grzecznościowy tryb rozkazujący zaczyna się od bezokolicznika: <b>Gehen</b> Sie geradeaus."
+      },
+      {
+        q: "Dopasuj każde słowo do jego znaczenia.",
+        pairs: ["prosto", "w lewo", "w prawo", "za"]
+      },
+      {
+        q: "Uzupełnij oba brakujące słowa.",
+        tr: "Apteka jest za ratuszem, a dworzec obok apteki.",
+        why: "<i>Hinter dem Rathaus</i> (Dativ rodzaju nijakiego) i <i>neben der Apotheke</i> (Dativ rodzaju żeńskiego): przy <i>wo?</i> te przyimki wymagają Dativu."
+      },
+      {
+        tr: "Proszę iść prosto i skręcić w lewo.",
+        why: "Każdy z dwóch trybów rozkazujących ma własne <i>Sie</i>. Przedrostek <i>ab</i> w <i>abbiegen</i> zamyka zdanie."
+      },
+      {
+        q: "Ktoś pyta cię o drogę: odpowiedz na jego pytania.",
+        setting: "W centrum pomagasz komuś znaleźć dworzec i aptekę.",
+        lines: [
+          { tr: "Przepraszam, gdzie jest dworzec?" },
+          { tr: "Wytłumacz drogę: prosto, potem w lewo.", answerTr: "Proszę iść prosto, a potem w lewo." },
+          { tr: "Dziękuję! A gdzie jest apteka?" },
+          { tr: "Odpowiedz, że apteka jest obok ratusza.", answerTr: "Jest obok ratusza." }
+        ]
+      },
+      {
+        tr: "Przepraszam, gdzie jest apteka?",
+        why: "Poprawne jest zarówno <i>Entschuldigung</i>, jak i <i>Entschuldigen Sie</i> (bardziej formalne). Pytanie ma czasownik na drugim miejscu: <i>wo ist</i>."
+      },
+      {
+        tr: "Proszę iść prosto i skręcić w prawo.",
+        why: "W <i>geradeaus</i> <b>g</b> jest twarde, jak w polskim „g”, a <b>au</b> to dyftong /aʊ̯/, zbliżony do polskiego „au” w „auto”: od <b>a</b> przechodzi się do krótkiego <b>u</b> w jednej sylabie. W <i>biegen</i> <b>ie</b> to długie „i”."
+      },
+      {
+        tr: "Przepraszam, gdzie jest apteka?",
+        why: "<i>Entschuldigung</i>: <b>sch</b> czyta się jak /ʃ/, bliskie polskiemu „sz”. W <i>Apotheke</i> <b>th</b> czyta się jak zwykłe „t”."
+      }
+    ]
+  },
+  "lesson:a1-u06-l4": {
+    theme: "Okolica",
+    title: "Es gibt, es gibt keinen",
+    objectives: [
+      "mówić, co jest w mieście, za pomocą es gibt + biernik",
+      "mówić, że czegoś nie ma, za pomocą es gibt keinen / keine / kein",
+      "pytać Gibt es hier ...?"
+    ],
+    theory: [
+      {
+        h: "Es gibt: „jest” i „są”",
+        p: "Żeby powiedzieć, że coś istnieje, używa się <strong>es gibt</strong>. Forma jest <strong>zawsze taka sama</strong>, w liczbie pojedynczej i mnogiej: <em>Es gibt einen Park</em>, <em>Es gibt zwei Kinos</em>. Po <em>es gibt</em> rzeczownik stoi w <strong>bierniku</strong>, więc zmienia się tylko rodzaj męski: <em>einen Park</em> (r. m.), <em>eine Bäckerei</em> (r. ż.), <em>ein Café</em> (r. n.). Pytanie: <em>Gibt es hier ein Hotel?</em>"
+      },
+      {
+        h: "Mówienie, że czegoś nie ma",
+        p: "Do zaprzeczenia służy <strong>kein</strong>, który odmienia się jak <em>ein</em>: <em>Es gibt keinen Supermarkt</em> (r. m.), <em>keine Bank</em> (r. ż.), <em>kein Museum</em> (r. n.). W omawianych tu przykładach przy <em>es gibt</em> zaprzeczeniem jest <em>kein</em>, nie <em>nicht</em> (<em>nicht</em> występuje w innych użyciach, na przykład <em>Das gibt es nicht</em>)."
+      },
+      {
+        contrast: "Po polsku mówi się <em>jest</em> i <em>są</em>, więc czasownik zmienia się z liczbą (<em>jest park</em>, <em>są dwa kina</em>). Niemieckie <em>es gibt</em> nie zmienia się nigdy: <em>Es gibt einen Park</em>, <em>Es gibt zwei Kinos</em>. Zaprzeczenie też jest inne: polskie <em>nie ma</em> wymaga dopełniacza (<em>nie ma supermarketu</em>, <em>nie ma banku</em>), a niemieckie <em>kein</em> przybiera końcówkę biernika (<em>keinen Supermarkt</em>, <em>keine Bank</em>, <em>kein Museum</em>). Pytanie po polsku zaczyna się od <em>czy</em> (<em>Czy tu jest hotel?</em>), po niemiecku czasownik idzie na początek: <em>Gibt es hier ein Hotel?</em> Uważaj na rodzaj: <em>bank</em> jest męski po polsku, ale <em>die Bank</em> jest żeńska; <em>kościół</em> jest męski, a <em>die Kirche</em> żeńska; <em>hotel</em> jest męski, a <em>das Hotel</em> nijakie; <em>kawiarnia</em> jest żeńska, ale <em>das Café</em> nijakie; <em>kino</em> i <em>das Kino</em>, <em>muzeum</em> i <em>das Museum</em> są nijakie w obu językach."
+      },
+      {
+        trap: "<em>Es gibt</em> zwykle wprowadza coś nowego: <em>Es gibt ein Café neben dem Rathaus</em>. Żeby powiedzieć, gdzie jest coś już znanego, używa się raczej <em>sein</em>: <em>Wo ist das Café? Es ist neben dem Rathaus.</em> Nie mów „Es gibt ein Bäckerei”: <em>Bäckerei</em> jest rodzaju żeńskiego, więc <em>eine Bäckerei</em>. I nie mów „Es gibt ein Park”: rodzaj męski w bierniku wymaga <em>einen</em>."
+      },
+      {
+        tip: "Żeby dowiedzieć się, co jest w nowej okolicy, pytaj: <em>Gibt es hier ein Café / einen Supermarkt / eine Bank in der Nähe?</em> Pamiętaj o <em>-en</em> tylko w rodzaju męskim."
+      }
+    ],
+    grammar: {
+      title: "es gibt z biernikiem",
+      note: "<b>Es gibt</b> + biernik: <b>einen</b> (r. m.), <b>eine</b> (r. ż.), <b>ein</b> (r. n.). Zaprzeczenie to <b>keinen</b>, <b>keine</b>, <b>kein</b>. Forma <i>es gibt</i> nie zmienia się w liczbie mnogiej.",
+      table: {
+        head: ["rodzaj", "twierdzenie", "zaprzeczenie"],
+        rows: [
+          ["męski", "Es gibt einen Park.", "Es gibt keinen Supermarkt."],
+          ["żeński", "Es gibt eine Bäckerei.", "Es gibt keine Bank."],
+          ["nijaki", "Es gibt ein Café.", "Es gibt kein Museum."]
+        ]
+      },
+      examples: [
+        { tr: "W pobliżu jest park.", note: "einen: rodzaj męski w bierniku" },
+        { tr: "Jest tu piekarnia.", note: "eine: rodzaj żeński" },
+        { tr: "Obok ratusza jest kawiarnia.", note: "ein: rodzaj nijaki" },
+        { tr: "Czy jest tu hotel?", note: "pytanie: czasownik na pierwszym miejscu" },
+        { tr: "Nie ma tu żadnego supermarketu.", note: "keinen: zaprzeczenie rodzaju męskiego" },
+        { tr: "W pobliżu nie ma żadnego banku.", note: "keine: zaprzeczenie rodzaju żeńskiego" }
+      ]
+    },
+    vocab: [
+      "jest, są",
+      "tu",
+      "w pobliżu, niedaleko",
+      "kawiarnia",
+      "kino",
+      "piekarnia",
+      "restauracja",
+      "bank",
+      "muzeum",
+      "hotel",
+      "biblioteka",
+      "kościół"
+    ],
+    exercises: [
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: ["Es gibt ein Park hier.", "Es gibt einen Park hier.", "Es gibt eine Park hier."],
+        why: "<i>Der Park</i> jest rodzaju męskiego, a po <i>es gibt</i> trzeba biernika: <b>einen Park</b>."
+      },
+      {
+        q: "Uzupełnij: „Es gibt ___ Supermarkt in der Nähe.”",
+        hint: "der Supermarkt, rodzajnik nieokreślony w bierniku",
+        why: "<i>Der Supermarkt</i> jest rodzaju męskiego, w bierniku: <b>einen</b>."
+      },
+      {
+        q: "Uzupełnij: „Es gibt ___ Bank hier.” (żadnego)",
+        hint: "die Bank, zaprzeczenie",
+        why: "<i>Die Bank</i> jest rodzaju żeńskiego: zaprzeczeniem jest <b>keine</b>."
+      },
+      {
+        q: "Uzupełnij: „___ es hier ein Café?”",
+        hint: "pytanie: czy jest ...?",
+        why: "W pytaniu tak/nie czasownik stoi na pierwszym miejscu: <b>Gibt</b> es hier ein Café?"
+      },
+      {
+        q: "Dopasuj każde słowo do jego znaczenia.",
+        pairs: ["kawiarnia", "piekarnia", "kino", "kościół"]
+      },
+      {
+        tr: "Nie ma tu żadnego supermarketu.",
+        why: "Poprawne jest też <i>Es gibt keinen Supermarkt hier</i> i, z inwersją, <i>Hier gibt es keinen Supermarkt</i>. Czasownik <i>gibt</i> zostaje na drugim miejscu."
+      },
+      {
+        q: "Uzupełnij oba brakujące słowa.",
+        tr: "Jest tu piekarnia i park.",
+        why: "<i>Bäckerei</i> jest rodzaju żeńskiego (<b>eine</b>), <i>Park</i> męskiego (<b>einen</b>): w bierniku zmienia się tylko rodzaj męski."
+      },
+      {
+        q: "Przetłumacz: „W mieście jest kino, ale nie ma muzeum.”",
+        why: "Po <i>es gibt</i>: <i>ein Kino</i> jest rodzaju nijakiego (<i>ein</i>), zaprzeczeniem <i>Museum</i> (nijaki) jest <i>kein</i>. Inne pozycje o tej samej budowie są również poprawne."
+      },
+      {
+        tr: "W pobliżu jest piekarnia i park.",
+        why: "<i>Bäckerei</i>: <b>ä</b> czyta się jak polskie „e”, a <b>ck</b> jak „k”. W <i>Nähe</i> <b>h</b> się nie wymawia i wydłuża samogłoskę; <b>ä</b> jest długie."
+      },
+      {
+        tr: "Czy jest tu hotel?",
+        why: "<i>Hotel</i> ma akcent na drugiej sylabie: /hoˈtɛl/. Początkowe <b>h</b> jest lekko dyszące, łagodniejsze niż polskie „h”. W <i>gibt</i> <b>g</b> jest twarde."
+      }
+    ]
+  },
+  "lesson:a1-u06-test": {
+    theme: "Sprawdzian",
+    title: "Sprawdzian z jednostki 6",
+    objectives: ["sprawdzić środki transportu, Dativ, wskazywanie drogi, wo? i es gibt"],
+    theory: [
+      {
+        p: "Dziesięć pytań z całej jednostki. Zaliczasz przy 70%. Nie zaglądaj do lekcji, odpowiadając: jeśli czegoś nie pamiętasz, lepiej wrócić do powtórki."
+      }
+    ],
+    exercises: [
+      {
+        tr: "Czas teraźniejszy fahren: ich, du, er/sie/es, wir.",
+        why: "<i>Fahre</i>, <i>fährst</i>, <i>fährt</i>, <i>fahren</i>: <b>a</b> zmienia się w <b>ä</b> w 2. i 3. osobie liczby pojedynczej."
+      },
+      {
+        q: "Uzupełnij: „Ich fahre mit ___ Bus.”",
+        hint: "der Bus, rodzajnik określony w Dativie",
+        why: "<i>Der Bus</i> jest rodzaju męskiego: po <i>mit</i> mówi się <b>dem</b>."
+      },
+      {
+        q: "Uzupełnij: „Wir gehen ___ Schule.”",
+        hint: "zu + der, w formie zlanej",
+        why: "<i>Zu der</i> zlewa się w <b>zur</b>."
+      },
+      {
+        q: "Uzupełnij: „Ich komme ___ Italien.”",
+        hint: "pochodzenie z kraju",
+        why: "Dla pochodzenia z kraju używa się <b>aus</b>."
+      },
+      {
+        q: "Uzupełnij: „Die Apotheke ist ___ dem Rathaus.” (obok)",
+        hint: "obok",
+        why: "<b>Neben</b> + Dativ: <i>neben dem Rathaus</i>."
+      },
+      {
+        q: "Uzupełnij: „___ Sie die erste Straße links.” (Proszę skręcić)",
+        hint: "nehmen, grzecznościowy tryb rozkazujący, wielką literą na początku",
+        why: "Grzecznościowy tryb rozkazujący zaczyna się od bezokolicznika: <b>Nehmen</b> Sie die erste Straße links."
+      },
+      {
+        q: "Wybierz właściwy rodzajnik dla każdego rzeczownika.",
+        why: "<i>Rathaus</i> jest rodzaju nijakiego, <i>Kreuzung</i> i <i>Apotheke</i> żeńskiego, <i>Bahnhof</i> męskiego.",
+        items: ["ratusz", "skrzyżowanie", "dworzec", "apteka"]
+      },
+      {
+        q: "Jak powiesz „Nie ma supermarketu”?",
+        opts: ["Es gibt kein Supermarkt.", "Es gibt keinen Supermarkt.", "Es gibt nicht Supermarkt."],
+        why: "<i>Der Supermarkt</i> jest rodzaju męskiego w bierniku: <b>keinen</b>."
+      },
+      {
+        tr: "Przepraszam, gdzie jest dworzec?",
+        why: "<i>Entschuldigung</i>: <b>sch</b> czyta się jak /ʃ/, bliskie polskiemu „sz”; w <i>Bahnhof</i> <b>h</b> po <b>a</b> wydłuża samogłoskę."
+      },
+      {
+        tr: "Proszę iść prosto, a potem w lewo.",
+        why: "<i>Geradeaus</i>: <b>g</b> jest twarde, a <b>au</b> to dyftong /aʊ̯/: od <b>a</b> przechodzi się do krótkiego <b>u</b> w jednej sylabie. W <i>links</i> <b>i</b> jest krótkie."
       }
     ]
   }
