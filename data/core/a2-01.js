@@ -913,5 +913,325 @@ LINGUAI.addUnits("A2", [
         { t: "speak", it: "Meine Kollegin braucht Hilfe. Ich helfe ihr gern, und ich rufe sie morgen an." }
       ]
     }
+  },
+  {
+    id: "a2-u04",
+    icon: "🩺",
+    titleIt: "Gesundheit",
+    lessons: [
+      {
+        id: "a2-u04-l1",
+        tags: ["g-pron-dat", "g-verben-dativ"],
+        cefr: "A2",
+        titleIt: "Mir tut der Kopf weh",
+        grammar: {
+          examples: [
+            { it: "Mir tut der Kopf weh." },
+            { it: "Wo tut es dir weh?" },
+            { it: "Ihm tun die Zähne weh." },
+            { it: "Meiner Schwester tut der Rücken weh." },
+            { it: "Uns tun die Beine weh." },
+            { it: "Ich habe Kopfschmerzen." }
+          ]
+        },
+        vocab: [
+          { it: "der Kopf", plural: "die Köpfe", ex: "Mir tut der Kopf weh." },
+          { it: "der Hals", plural: "die Hälse", ex: "Ihr tut der Hals weh." },
+          { it: "der Bauch", plural: "die Bäuche", ex: "Mir tut der Bauch weh." },
+          { it: "der Rücken", plural: "die Rücken", ex: "Meinem Vater tut der Rücken weh." },
+          { it: "das Bein", plural: "die Beine", ex: "Uns tun die Beine weh." },
+          { it: "der Fuß", plural: "die Füße", ex: "Mir tun die Füße weh." },
+          { it: "der Zahn", plural: "die Zähne", ex: "Ihm tun die Zähne weh." },
+          { it: "das Ohr", plural: "die Ohren", ex: "Mir tun die Ohren weh." },
+          { it: "der Schmerz", plural: "die Schmerzen", ex: "Ich habe starke Schmerzen." },
+          { it: "wehtun", ex: "Wo tut es dir weh?" },
+          { it: "krank", ex: "Mein Bruder ist krank." },
+          { it: "müde", ex: "Ich bin heute sehr müde." }
+        ],
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "mcq", a: 1 },
+          { t: "fill", a: ["tun"] },
+          { t: "fill", a: ["ihr"] },
+          {
+            t: "cloze",
+            text: "Ich bin müde. {{1}} tun die Beine weh. Und Lisa? {{2}} tut der Rücken weh.",
+            gaps: [["mir"], ["ihr"]]
+          },
+          {
+            t: "match",
+            pairs: [
+              { it: "Mir tut der Kopf weh." },
+              { it: "Mir tun die Füße weh." },
+              { it: "Ihr tut der Bauch weh." },
+              { it: "Ihm tun die Ohren weh." }
+            ]
+          },
+          {
+            t: "order",
+            tokens: ["Mir", "tun", "die", "Füße", "weh"],
+            a: ["Mir tun die Füße weh", "Die Füße tun mir weh"]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: ["Mir tut der Kopf weh", "Der Kopf tut mir weh"]
+          },
+          { t: "listen", it: "Guten Tag, Frau Doktor. Mir tut der Kopf weh, und mir tun auch die Ohren weh." },
+          { t: "speak", it: "Ich bin krank. Mir tut der Hals weh, und mir tun die Beine weh." }
+        ]
+      },
+      {
+        id: "a2-u04-l2",
+        tags: ["g-praep-dativ", "g-temporalangaben"],
+        cefr: "A2",
+        titleIt: "Beim Arzt",
+        grammar: {
+          examples: [
+            { it: "Ich bin beim Arzt." },
+            { it: "Ich gehe zum Arzt." },
+            { it: "Meine Mutter geht zur Ärztin." },
+            { it: "Ich gehe zur Apotheke." },
+            { it: "Ich habe seit drei Tagen Fieber." },
+            { it: "Der Termin ist am Montag um zehn Uhr." }
+          ]
+        },
+        vocab: [
+          { it: "der Arzt", plural: "die Ärzte", ex: "Der Arzt hat heute bis 17 Uhr geöffnet." },
+          { it: "die Ärztin", plural: "die Ärztinnen", ex: "Die Ärztin ist sehr freundlich." },
+          { it: "die Praxis", plural: "die Praxen", ex: "Die Praxis ist am Montag geöffnet." },
+          { it: "der Termin", plural: "die Termine", ex: "Ich habe morgen einen Termin." },
+          { it: "die Krankenkasse", plural: "die Krankenkassen", ex: "Meine Krankenkasse zahlt das." },
+          { it: "das Rezept", plural: "die Rezepte", ex: "Die Ärztin schreibt mir ein Rezept." },
+          { it: "die Apotheke", plural: "die Apotheken", ex: "Die Apotheke ist neben der Bank." },
+          { it: "die Tablette", plural: "die Tabletten", ex: "Ich nehme drei Tabletten am Tag." },
+          { it: "das Fieber", plural: "-", ex: "Ich habe seit gestern Fieber." },
+          { it: "der Husten", plural: "-", ex: "Mein Husten ist schlimm." },
+          { it: "vereinbaren", ex: "Ich möchte einen Termin vereinbaren." },
+          { it: "seit", ex: "Ich bin seit einer Woche krank." }
+        ],
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "fill", a: ["zur"] },
+          { t: "fill", a: ["seit"] },
+          {
+            t: "cloze",
+            text: "Ich möchte einen Termin vereinbaren. Geht es {{1}} Montag {{2}} zehn Uhr?",
+            gaps: [["am"], ["um"]]
+          },
+          {
+            t: "match",
+            pairs: [
+              { it: "beim Arzt" },
+              { it: "zum Arzt" },
+              { it: "seit drei Tagen" },
+              { it: "vor drei Tagen" }
+            ]
+          },
+          {
+            t: "order",
+            tokens: ["Ich", "gehe", "morgen", "zum", "Arzt"],
+            a: [
+              "Ich gehe morgen zum Arzt",
+              "Morgen gehe ich zum Arzt",
+              "Ich gehe zum Arzt morgen",
+              "Zum Arzt gehe ich morgen"
+            ]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Ich gehe am Montag zur Ärztin",
+              "Am Montag gehe ich zur Ärztin",
+              "Ich gehe zur Ärztin am Montag",
+              "Zur Ärztin gehe ich am Montag"
+            ]
+          },
+          {
+            t: "dialogue",
+            lines: [
+              { sp: "A", it: "Praxis Berger, guten Tag." },
+              {
+                sp: "TY",
+                choices: [
+                  "Guten Tag, ich möchte einen Termin vereinbaren.",
+                  "Guten Tag, ich möchte vereinbaren einen Termin.",
+                  "Guten Tag, ich möchte einen Termin vereinbart."
+                ],
+                a: 0
+              },
+              { sp: "A", it: "Gern. Seit wann haben Sie denn Fieber?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Ich habe seit drei Tagen Fieber.",
+                  "Ich habe seit drei Tage Fieber.",
+                  "Ich habe seit drei Tagen Fieber habe."
+                ],
+                a: 0
+              }
+            ]
+          },
+          {
+            t: "listen",
+            it: "Guten Tag, ich möchte einen Termin vereinbaren. Ich habe seit drei Tagen Fieber, und mir tut der Kopf weh."
+          },
+          { t: "speak", it: "Ich habe am Montag um zehn Uhr einen Termin beim Arzt." }
+        ]
+      },
+      {
+        id: "a2-u04-l3",
+        tags: ["g-konjunktiv2", "g-reflexivverben"],
+        cefr: "A2",
+        titleIt: "Du solltest dich ausruhen",
+        grammar: {
+          examples: [
+            { it: "Du solltest dich ausruhen." },
+            { it: "Ich würde zum Arzt gehen." },
+            { it: "An deiner Stelle würde ich im Bett bleiben." },
+            { it: "Ihr solltet viel Tee trinken." },
+            { it: "Sie sollten sich hinlegen." },
+            { it: "Ich würde mich im Urlaub erholen." }
+          ]
+        },
+        vocab: [
+          { it: "sich ausruhen", ex: "Ich ruhe mich heute aus." },
+          { it: "sich hinlegen", ex: "Leg dich bitte hin." },
+          { it: "sich erholen", ex: "Ich erhole mich im Urlaub." },
+          { it: "sich fühlen", ex: "Ich fühle mich heute nicht gut." },
+          { it: "der Ratschlag", plural: "die Ratschläge", ex: "Danke für deinen Ratschlag." },
+          { it: "der Tee", plural: "die Tees", ex: "Ich trinke einen Tee mit Honig." },
+          { it: "das Bett", plural: "die Betten", ex: "Das Bett ist sehr bequem." },
+          { it: "die Ruhe", plural: "-", ex: "Ich brauche jetzt Ruhe." },
+          { it: "der Urlaub", plural: "die Urlaube", ex: "Im Urlaub fahre ich ans Meer." },
+          { it: "gesund", ex: "Ich bin wieder gesund." },
+          { it: "sollen", ex: "Du sollst nicht so viel arbeiten." },
+          { it: "an deiner Stelle", ex: "An deiner Stelle würde ich zum Arzt gehen." }
+        ],
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "conj", verb: "sollen", tense: "konj2", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "conj", verb: "sich ausruhen", tense: "konj2", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "fill", a: ["solltest"] },
+          { t: "fill", a: ["uns"] },
+          {
+            t: "cloze",
+            text: "Du hast Fieber. An deiner Stelle {{1}} ich zum Arzt gehen. Und du solltest {{2}} ausruhen.",
+            gaps: [["würde"], ["dich"]]
+          },
+          {
+            t: "match",
+            pairs: [
+              { it: "Du solltest dich ausruhen." },
+              { it: "Ich würde zum Arzt gehen." },
+              { it: "Ihr solltet viel Tee trinken." },
+              { it: "Sie sollten sich hinlegen." }
+            ]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "An deiner Stelle würde ich mich ausruhen",
+              "Ich würde mich an deiner Stelle ausruhen"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Du siehst müde aus. An deiner Stelle würde ich mich hinlegen, und du solltest viel Tee trinken."
+          },
+          { t: "speak", it: "Du solltest dich ausruhen, und ich würde zum Arzt gehen." }
+        ]
+      },
+      {
+        id: "a2-u04-l4",
+        tags: ["g-nebensatz-dass", "g-konnektoren"],
+        cefr: "A2",
+        titleIt: "Gesund leben",
+        grammar: {
+          examples: [
+            { it: "Ich finde, dass Sport wichtig ist." },
+            { it: "Der Arzt sagt, dass ich mehr Wasser trinken soll." },
+            { it: "Ich weiß, dass Zigaretten ungesund sind." },
+            { it: "Ich schlafe schlecht. Deshalb bin ich müde." },
+            { it: "Sie isst viel Gemüse. Deshalb ist sie selten krank." },
+            { it: "Ich denke, dass ein Spaziergang gesund ist." }
+          ]
+        },
+        vocab: [
+          { it: "der Apfel", plural: "die Äpfel", ex: "Ich esse jeden Tag einen Apfel." },
+          { it: "das Gemüse", plural: "-", ex: "Wir essen viel Gemüse." },
+          { it: "die Mahlzeit", plural: "die Mahlzeiten", ex: "Drei Mahlzeiten am Tag sind genug." },
+          { it: "der Spaziergang", plural: "die Spaziergänge", ex: "Nach dem Essen mache ich einen Spaziergang." },
+          { it: "die Zigarette", plural: "die Zigaretten", ex: "Er raucht fünf Zigaretten am Tag." },
+          { it: "der Schlaf", plural: "-", ex: "Guter Schlaf ist wichtig." },
+          { it: "die Gesundheit", plural: "-", ex: "Die Gesundheit ist wichtig." },
+          { it: "das Wasser", plural: "-", ex: "Ich trinke viel Wasser." },
+          { it: "rauchen", ex: "Mein Onkel raucht nicht mehr." },
+          { it: "regelmäßig", ex: "Ich mache regelmäßig Sport." },
+          { it: "ungesund", ex: "Zu viel Zucker ist ungesund." },
+          { it: "sich bewegen", ex: "Ich bewege mich jeden Tag." }
+        ],
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "mcq", a: 1 },
+          { t: "fill", a: ["dass"] },
+          { t: "fill", a: ["isst"] },
+          { t: "fill", a: ["gehe"] },
+          {
+            t: "cloze",
+            text: "Ich weiß, {{1}} Sport gesund ist. Ich mache aber zu wenig Sport. {{2}} bin ich oft müde.",
+            gaps: [["dass"], ["deshalb", "deswegen", "darum"]]
+          },
+          {
+            t: "match",
+            pairs: [{ it: "dass" }, { it: "deshalb" }, { it: "regelmäßig" }, { it: "ungesund" }]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Der Arzt sagt, dass ich mehr schlafen soll",
+              "Der Arzt sagt, dass ich mehr schlafen muss"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Der Arzt sagt, dass ich mehr schlafen soll. Ich schlafe schlecht, deshalb bin ich oft müde."
+          },
+          { t: "speak", it: "Ich glaube, dass Sport gesund ist. Deshalb gehe ich jeden Tag spazieren." }
+        ]
+      }
+    ],
+    test: {
+      id: "a2-u04-test",
+      tags: ["g-konjunktiv2", "g-nebensatz-dass", "g-pron-dat"],
+      cefr: "A2",
+      titleIt: "Test: Gesundheit",
+      exercises: [
+        { t: "conj", verb: "sollen", tense: "konj2", persons: [0, 1, 2, 3, 4, 5] },
+        { t: "fill", a: ["ihr"] },
+        { t: "fill", a: ["uns"] },
+        { t: "fill", a: ["dass"] },
+        { t: "fill", a: ["würde"] },
+        { t: "mcq", a: 1 },
+        {
+          t: "match",
+          pairs: [
+            { it: "Mir tut der Kopf weh." },
+            { it: "Du solltest dich ausruhen." },
+            { it: "Ich würde zum Arzt gehen." },
+            { it: "Ich weiß, dass er krank ist." }
+          ]
+        },
+        { t: "trans", dir: "toIt", a: ["Der Arzt sagt, dass ich mich ausruhen soll"] },
+        { t: "listen", it: "Mir tut der Kopf weh. Ich denke, dass ich mich ausruhen sollte." },
+        {
+          t: "speak",
+          it: "Mein Bruder ist krank. Ihm tut der Rücken weh, und ich glaube, dass er zum Arzt gehen sollte."
+        }
+      ]
+    }
   }
 ]);

@@ -1562,5 +1562,557 @@ LINGUAI.addStrings("it", {
         why: "In <i>braucht</i> <b>au</b> suona [aʊ] e la <b>ch</b> dopo di esso è [x]; in <i>sie</i> la <b>s</b> è sonora [z]."
       }
     ]
+  },
+  "unit:a2-u04": {
+    title: "Salute",
+    grammarNote: "mir tut ... weh · bei e zu con il dativo · espressioni di tempo (am, um, seit, vor) · Konjunktiv II di consiglio (du solltest, ich würde) · verbi riflessivi · dass · deshalb"
+  },
+  "lesson:a2-u04-l1": {
+    theme: "Dolori e sintomi",
+    title: "Mi fa male la testa",
+    objectives: [
+      "dire dove si sente dolore con il dativo della persona: mir, dir, ihm, ihr, uns, euch, ihnen",
+      "accordare tut o tun alla parte del corpo, che è il soggetto",
+      "nominare le parti del corpo con il loro articolo e il plurale"
+    ],
+    theory: [
+      {
+        h: "La persona al dativo, la parte del corpo al nominativo",
+        p: "Per dire che una parte del corpo fa male il tedesco usa <em>wehtun</em>. La <b>persona</b> sta al <b>dativo</b> (<em>mir, dir, ihm, ihr, uns, euch, ihnen</em>) e la <b>parte del corpo</b> è il <b>soggetto</b>, quindi il verbo si accorda con lei: <em>Mir tut der Kopf weh</em> (singolare, <em>tut</em>), <em>Mir tun die Füße weh</em> (plurale, <em>tun</em>). <em>Weh</em> va in fondo alla frase, perché <em>wehtun</em> è un verbo separabile. Con un nome la persona prende il dativo del nome: <em>Meiner Schwester tut der Rücken weh.</em> L'ordine si può invertire senza cambiare il senso: <em>Der Kopf tut mir weh.</em> Per chiedere: <em>Wo tut es dir weh?</em> oppure <em>Was tut dir weh?</em>"
+      },
+      {
+        contrast: "La struttura è la stessa dell'italiano: «mi fa male la testa», «mi fanno male i piedi». Anche in italiano la persona è all'indiretto (<em>mi</em>) e il verbo si accorda con la parte del corpo. La differenza è nella forma: <em>mir</em> è una parola a sé, non un pronome atono prima del verbo, e il verbo si spezza in <em>tut ... weh</em>. Anche i generi non coincidono: <em>la testa</em> è femminile, ma <em>der Kopf</em> è maschile; <em>la gamba</em> è femminile, <em>das Bein</em> è neutro. Per il mal di testa c'è anche <em>Ich habe Kopfschmerzen</em>, dove il soggetto è la persona. Attenzione a <em>der Hals</em>: indica sia il collo sia la gola."
+      },
+      {
+        trap: "Con <em>wehtun</em> la persona non è il soggetto: <em>Ich tut der Kopf weh</em> e <em>Mich tut der Kopf weh</em> sono sbagliati, serve <em>mir</em>. E il verbo non segue la persona ma la parte del corpo: <em>Mir tun die Füße weh</em> (plurale), non <em>Mir tut die Füße weh</em>. Dire <em>Mein Kopf tut weh</em> è invece corretto: cambia il soggetto grammaticale, non il significato."
+      },
+      {
+        tip: "Prima trova la parte del corpo e guarda se è singolare o plurale: è lei che decide <em>tut</em> o <em>tun</em>. Poi aggiungi la persona al dativo. Il plurale dei nomi del corpo va imparato insieme all'articolo: <em>der Fuß, die Füße</em>; <em>das Ohr, die Ohren</em>."
+      }
+    ],
+    grammar: {
+      title: "mir tut ... weh",
+      note: "La persona è al <b>dativo</b>, la parte del corpo è il <b>soggetto</b> e decide <b>tut</b> (singolare) o <b>tun</b> (plurale). <b>Weh</b> va in fondo.",
+      table: {
+        head: ["persona", "dativo", "esempio"],
+        rows: [
+          ["ich", "mir", "Mir tut der Kopf weh."],
+          ["du", "dir", "Dir tun die Füße weh."],
+          ["er", "ihm", "Ihm tut der Bauch weh."],
+          ["sie", "ihr", "Ihr tut der Rücken weh."],
+          ["wir", "uns", "Uns tun die Beine weh."],
+          ["ihr", "euch", "Euch tut der Hals weh."],
+          ["sie, Sie", "ihnen, Ihnen", "Ihnen tun die Ohren weh."]
+        ]
+      },
+      examples: [
+        { tr: "Mi fa male la testa.", note: "mir: dativo di ich; der Kopf è il soggetto" },
+        { tr: "Dove ti fa male?", note: "es è soggetto generico: Wo tut es dir weh?" },
+        { tr: "Gli fanno male i denti.", note: "ihm; die Zähne è plurale, quindi tun" },
+        { tr: "A mia sorella fa male la schiena.", note: "dativo anche sul nome: meiner Schwester" },
+        { tr: "Ci fanno male le gambe.", note: "uns; das Bein, die Beine" },
+        { tr: "Ho mal di testa.", note: "alternativa: qui il soggetto è ich, Kopfschmerzen è plurale" }
+      ]
+    },
+    vocab: [
+      "la testa",
+      "il collo, la gola",
+      "la pancia",
+      "la schiena",
+      "la gamba",
+      "il piede",
+      "il dente",
+      "l'orecchio",
+      "il dolore",
+      "fare male",
+      "malato",
+      "stanco"
+    ],
+    exercises: [
+      {
+        q: "Come dici «Mi fa male la testa»?",
+        opts: ["Ich tut der Kopf weh.", "Mir tut der Kopf weh.", "Mich tut der Kopf weh."],
+        why: "La persona sta al dativo: <b>mir</b>. <i>Der Kopf</i> è il soggetto, quindi il verbo è <i>tut</i>. <i>Ich</i> è un nominativo e <i>mich</i> un accusativo."
+      },
+      {
+        q: "Come dici «Mi fanno male i piedi»?",
+        opts: ["Mir tut die Füße weh.", "Mir tun die Füße weh.", "Mich tun die Füße weh."],
+        why: "<i>Die Füße</i> è plurale e soggetto: il verbo è <b>tun</b>. La persona resta al dativo, <i>mir</i>."
+      },
+      {
+        q: "Completa: «Mir ___ die Beine weh.» (fare, plurale della parte del corpo)",
+        hint: "tun, forma del plurale",
+        why: "<b>Tun</b>: il soggetto è <i>die Beine</i>, plurale. Con un soggetto singolare si direbbe <i>tut</i>."
+      },
+      {
+        q: "Completa: «Anna ist krank. ___ tut der Hals weh.» (a lei: dativo di sie)",
+        hint: "pronome al dativo",
+        why: "<b>Ihr</b>: dativo di <i>sie</i> (lei). <i>Der Hals</i> è il soggetto, singolare."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Sono stanco. Mi fanno male le gambe. E Lisa? Le fa male la schiena.",
+        why: "<i>Mir</i> per <i>ich</i> e <i>ihr</i> per <i>Lisa</i>: sono i dativi. Il verbo si accorda con la parte del corpo: <i>tun</i> con <i>die Beine</i>, <i>tut</i> con <i>der Rücken</i>."
+      },
+      {
+        q: "Abbina ogni frase alla sua traduzione.",
+        pairs: [
+          "Mi fa male la testa.",
+          "Mi fanno male i piedi.",
+          "Le fa male la pancia.",
+          "Gli fanno male le orecchie."
+        ]
+      },
+      {
+        q: "Metti in ordine le parole.",
+        tr: "Mi fanno male i piedi.",
+        why: "Il verbo resta in seconda posizione. Vanno bene <i>Mir tun die Füße weh</i> e <i>Die Füße tun mir weh</i>: cambia l'ordine, non il senso."
+      },
+      {
+        q: "Traduci con tun ... weh e il dativo: «Mi fa male la testa.»",
+        why: "<i>Mir tut der Kopf weh</i> oppure <i>Der Kopf tut mir weh</i>. In italiano <i>la testa</i> è femminile, ma <i>der Kopf</i> è maschile."
+      },
+      {
+        tr: "Buongiorno, dottoressa. Mi fa male la testa, e mi fanno male anche le orecchie.",
+        why: "In <i>Kopf</i> la <b>o</b> è breve e la <b>pf</b> è un'affricata [pf]; in <i>Ohren</i> la <b>h</b> non si legge e la <b>o</b> è lunga."
+      },
+      {
+        tr: "Sono malato. Mi fa male la gola, e mi fanno male le gambe.",
+        why: "In <i>Hals</i> la <b>h</b> iniziale è un soffio [h]; in <i>weh</i> la <b>w</b> è [v] e la <b>h</b> non si legge; in <i>Beine</i> la <b>ei</b> suona [aɪ]."
+      }
+    ]
+  },
+  "lesson:a2-u04-l2": {
+    theme: "Dal medico",
+    title: "Dal medico",
+    objectives: [
+      "distinguere bei + dativo (stato) da zu + dativo (moto) per dire «dal medico»",
+      "usare le forme contratte beim, zum, zur",
+      "dire quando e da quanto tempo con am, um, seit e vor",
+      "fissare un appuntamento in modo comprensibile"
+    ],
+    theory: [
+      {
+        h: "bei per essere da qualcuno, zu per andarci",
+        p: "Per dire <b>dove si è</b> presso una persona si usa <b>bei + dativo</b>: <em>Ich bin beim Arzt</em> (<em>bei dem</em> diventa <em>beim</em>). Per dire <b>dove si va</b> si usa <b>zu + dativo</b>: <em>Ich gehe zum Arzt</em> (<em>zu dem</em> diventa <em>zum</em>), <em>Ich gehe zur Ärztin</em> (<em>zu der</em> diventa <em>zur</em>). Anche <em>zur Apotheke</em> è un moto verso un luogo. Per il tempo: <b>am</b> con il giorno (<em>am Montag</em>), <b>um</b> con l'ora (<em>um zehn Uhr</em>), <b>seit + dativo</b> per ciò che dura da un certo momento e continua (<em>seit drei Tagen</em>), <b>vor + dativo</b> per ciò che è accaduto prima (<em>vor drei Tagen</em>). Per fissare un appuntamento: <em>Ich möchte einen Termin vereinbaren.</em>"
+      },
+      {
+        contrast: "L'italiano usa <em>da</em> in entrambi i casi: «sono dal medico» e «vado dal medico». Il tedesco separa i due significati: <em>bei</em> (si è lì) e <em>zu</em> (ci si va). Anche il tempo cambia: «da tre giorni» è <em>seit drei Tagen</em>, con il presente come in italiano (<em>Ich habe seit drei Tagen Fieber</em>, «ho la febbre da tre giorni»), mentre «tre giorni fa» è <em>vor drei Tagen</em> e la preposizione sta <b>prima</b>, non dopo come <em>fa</em>."
+      },
+      {
+        trap: "<em>Bei</em> e <em>zu</em> reggono il dativo. <em>Zum Arzt</em> e <em>zur Ärztin</em> sono le forme contratte usuali: <em>zu dem</em> e <em>zu der</em> compaiono quando si vuole mettere in evidenza l'articolo. Non scrivere <em>Ich gehe beim Arzt</em>: dopo un verbo di moto serve <em>zu</em>. Dopo <em>seit</em> e <em>vor</em> anche il plurale è al dativo, con la <b>-n</b>: <em>seit drei Tagen</em>, non <em>seit drei Tage</em>."
+      },
+      {
+        tip: "Chiediti prima: «si è lì o ci si va?». <em>Wo?</em> chiede <em>bei</em>, <em>wohin?</em> chiede <em>zu</em>. Per l'appuntamento tieni insieme giorno e ora: <em>am Montag um zehn Uhr</em>."
+      }
+    ],
+    grammar: {
+      title: "bei, zu, am, um, seit, vor",
+      note: "Dal medico: <b>bei</b> + dativo per lo stato, <b>zu</b> + dativo per il moto. Nel tempo: <b>am</b> (giorno), <b>um</b> (ora), <b>seit</b> (da quando), <b>vor</b> (fa).",
+      table: {
+        head: ["domanda", "forma", "esempio"],
+        rows: [
+          ["Wo? (da una persona)", "bei + dativo", "Ich bin beim Arzt."],
+          ["Wohin? (da una persona)", "zu + dativo", "Ich gehe zum Arzt."],
+          ["Wohin? (a un luogo)", "zu + dativo", "Ich gehe zur Apotheke."],
+          ["quando (giorno)", "am", "am Montag"],
+          ["quando (ora)", "um", "um zehn Uhr"],
+          ["da quanto tempo", "seit + dativo", "seit drei Tagen"],
+          ["quanto tempo fa", "vor + dativo", "vor drei Tagen"]
+        ]
+      },
+      examples: [
+        { tr: "Sono dal medico.", note: "bei dem diventa beim: stato in luogo" },
+        { tr: "Vado dal medico.", note: "zu dem diventa zum: moto verso una persona" },
+        { tr: "Mia madre va dalla dottoressa.", note: "zu der diventa zur" },
+        { tr: "Vado in farmacia.", note: "zur Apotheke: moto verso un luogo" },
+        { tr: "Ho la febbre da tre giorni.", note: "seit + dativo plurale: Tagen" },
+        { tr: "L'appuntamento è lunedì alle dieci.", note: "am con il giorno, um con l'ora" }
+      ]
+    },
+    vocab: [
+      "il medico",
+      "la dottoressa",
+      "lo studio medico",
+      "l'appuntamento",
+      "la cassa mutua, l'assicurazione sanitaria",
+      "la ricetta",
+      "la farmacia",
+      "la compressa",
+      "la febbre",
+      "la tosse",
+      "fissare (un appuntamento)",
+      "da (tempo)"
+    ],
+    exercises: [
+      {
+        q: "Sei dal medico, non ci stai andando. Quale frase è corretta?",
+        opts: ["Ich bin zum Arzt.", "Ich bin beim Arzt.", "Ich bin bei Arzt."],
+        why: "Per dire dove si è presso una persona: <b>bei</b> + dativo, e <i>bei dem</i> diventa <i>beim</i>. <i>Zum</i> indica il moto."
+      },
+      {
+        q: "Completa: «Ich gehe ___ Ärztin.» (usa zu con l'articolo, nella forma contratta)",
+        hint: "zu + der, forma contratta",
+        why: "<b>Zur</b>: <i>zu der</i> si contrae in <i>zur</i>. Dopo un verbo di moto verso una persona serve <i>zu</i> + dativo."
+      },
+      {
+        q: "Completa: «Ich habe ___ drei Tagen Fieber.» (Ho la febbre da tre giorni.)",
+        hint: "da quanto tempo, + dativo",
+        why: "<b>Seit</b> + dativo per ciò che dura da un certo momento e continua; <i>Tagen</i> ha la <b>-n</b> del dativo plurale."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Vorrei fissare un appuntamento. Va bene lunedì alle dieci?",
+        why: "<i>Am Montag</i> con il giorno, <i>um zehn Uhr</i> con l'ora."
+      },
+      {
+        q: "Abbina ogni espressione alla sua traduzione.",
+        pairs: [
+          "dal medico (ci sono)",
+          "dal medico (ci vado)",
+          "da tre giorni",
+          "tre giorni fa"
+        ]
+      },
+      {
+        q: "Metti in ordine le parole.",
+        tr: "Domani vado dal medico.",
+        why: "Il verbo resta in seconda posizione. Vanno bene <i>Ich gehe morgen zum Arzt</i> e <i>Morgen gehe ich zum Arzt</i>; sono possibili anche l'ordine con <i>zum Arzt</i> in prima posizione o con <i>morgen</i> in fondo, che mettono in risalto un elemento."
+      },
+      {
+        q: "Traduci (usa am e zu): «Lunedì vado dalla dottoressa.»",
+        why: "<i>Ich gehe am Montag zur Ärztin</i>: <i>am</i> con il giorno, <i>zur</i> (= <i>zu der</i>) con il moto. Con <i>Am Montag</i> in testa il verbo resta in seconda posizione: <i>Am Montag gehe ich zur Ärztin</i>."
+      },
+      {
+        q: "Telefoni a uno studio medico per fissare un appuntamento.",
+        setting: "Chiami lo studio del dottor Berger perché hai la febbre.",
+        lines: [
+          { tr: "Studio Berger, buongiorno." },
+          {
+            tr: "Di' che vorresti fissare un appuntamento.",
+            answerTr: "Buongiorno, vorrei fissare un appuntamento."
+          },
+          { tr: "Volentieri. Da quanto tempo ha la febbre?" },
+          {
+            tr: "Rispondi che hai la febbre da tre giorni.",
+            answerTr: "Ho la febbre da tre giorni."
+          }
+        ]
+      },
+      {
+        tr: "Buongiorno, vorrei fissare un appuntamento. Ho la febbre da tre giorni e mi fa male la testa.",
+        why: "In <i>seit</i> la <b>s</b> iniziale è sonora [z] e la <b>ei</b> suona [aɪ]; in <i>Termin</i> l'accento cade sull'ultima sillaba."
+      },
+      {
+        tr: "Lunedì alle dieci ho un appuntamento dal medico.",
+        why: "In <i>zehn</i> la <b>z</b> è [ts] e la <b>e</b> è lunga, con la <b>h</b> muta; in <i>Uhr</i> la <b>u</b> è lunga e la <b>r</b> finale si vocalizza spesso."
+      }
+    ]
+  },
+  "lesson:a2-u04-l3": {
+    theme: "Consigli",
+    title: "Dovresti riposarti",
+    objectives: [
+      "dare un consiglio con du solltest, ihr solltet, Sie sollten",
+      "esprimere un consiglio personale con ich würde + infinito",
+      "usare il pronome riflessivo giusto con un verbo come sich ausruhen",
+      "collocare il pronome riflessivo prima dell'infinito in fondo alla frase"
+    ],
+    theory: [
+      {
+        h: "Il consiglio con il Konjunktiv II",
+        p: "Per dare un consiglio il tedesco usa il Konjunktiv II. Con <b>sollen</b> si dice <em>solltest</em>, <em>solltet</em>, <em>sollten</em>: <em>Du solltest dich ausruhen.</em> Per dire che cosa si farebbe al posto dell'altro si usa <b>würde + infinito</b>: <em>Ich würde zum Arzt gehen.</em> L'espressione <em>an deiner Stelle</em> si abbina bene a <em>würde</em>: <em>An deiner Stelle würde ich im Bett bleiben.</em> L'infinito va in fondo alla frase, e il pronome riflessivo lo precede."
+      },
+      {
+        h: "I verbi riflessivi lessicali",
+        p: "<em>Sich ausruhen, sich hinlegen, sich erholen, sich fühlen</em> sono riflessivi per natura: il pronome fa parte del verbo e non significa «riposare sé stesso». Il pronome è all'<b>accusativo</b> e cambia con la persona: <em>mich, dich, sich, uns, euch, sich</em>. Il pronome sta dopo il verbo coniugato: <em>Ich ruhe mich aus.</em> Con <em>sollen</em> e <em>würde</em> sta davanti all'infinito: <em>Du solltest dich ausruhen. Ich würde mich hinlegen.</em> Con la forma di cortesia: <em>Sie sollten sich hinlegen</em> (<em>sich</em> resta minuscolo)."
+      },
+      {
+        contrast: "L'italiano costruisce il consiglio con il condizionale: «dovresti riposarti», «io andrei dal medico». Il tedesco usa il Konjunktiv II di <em>sollen</em> o <em>würde</em> + infinito, non una desinenza propria sul verbo principale. Per i riflessivi in italiano il pronome si attacca all'infinito (<em>riposarti</em>); in tedesco è una parola a sé e sta davanti: <em>dich ausruhen</em>. Anche i verbi non sempre coincidono: <em>sich ausruhen</em> corrisponde a «riposarsi», ma <em>sich hinlegen</em> è «sdraiarsi» e <em>sich erholen</em> è «riprendersi»."
+      },
+      {
+        trap: "<em>Du solltest</em> è un consiglio; <em>du sollst</em> è un obbligo o l'incarico di qualcun altro, e suona molto più forte. Non spostare il pronome in fondo: <em>Du solltest ausruhen dich</em> è sbagliato, l'ordine è <em>dich ausruhen</em>. Con <em>würde</em> l'infinito resta in fondo: <em>Ich würde mich ausruhen</em>, non <em>Ich würde ausruhen mich</em>."
+      },
+      {
+        tip: "Per il consiglio formula due versioni: <em>Du solltest ...</em> per dirlo all'altro, <em>Ich würde ...</em> per dire cosa faresti tu. Poi controlla il pronome riflessivo: stessa persona del soggetto (<em>ich ... mich</em>, <em>du ... dich</em>)."
+      }
+    ],
+    grammar: {
+      title: "Il Konjunktiv II di consiglio",
+      note: "<b>sollen</b> al Konjunktiv II per consigliare (<b>du solltest</b>), <b>würde + infinito</b> per dire cosa faresti tu. Il pronome riflessivo è accusativo e sta prima dell'infinito.",
+      table: {
+        head: ["persona", "sollen", "würde", "riflessivo"],
+        rows: [
+          ["ich", "sollte", "würde", "mich"],
+          ["du", "solltest", "würdest", "dich"],
+          ["er, sie, es", "sollte", "würde", "sich"],
+          ["wir", "sollten", "würden", "uns"],
+          ["ihr", "solltet", "würdet", "euch"],
+          ["sie, Sie", "sollten", "würden", "sich"]
+        ]
+      },
+      examples: [
+        { tr: "Dovresti riposarti.", note: "du solltest + dich + infinito in fondo" },
+        { tr: "Io andrei dal medico.", note: "ich würde + infinito in fondo" },
+        { tr: "Al tuo posto resterei a letto.", note: "an deiner Stelle: dativo dopo an" },
+        { tr: "Dovreste bere molto tè.", note: "ihr solltet; la desinenza è -et" },
+        { tr: "Dovrebbe sdraiarsi.", note: "forma di cortesia: Sie sollten sich hinlegen" },
+        { tr: "Io mi riprenderei in vacanza.", note: "sich erholen: würde + mich + infinito" }
+      ]
+    },
+    vocab: [
+      "riposarsi",
+      "sdraiarsi",
+      "riprendersi, rimettersi",
+      "sentirsi",
+      "il consiglio",
+      "il tè",
+      "il letto",
+      "la quiete, il riposo",
+      "le vacanze, il congedo",
+      "sano, guarito",
+      "dovere (sollen)",
+      "al tuo posto"
+    ],
+    exercises: [
+      {
+        q: "Dai un consiglio a un'amica stanca: «Dovresti riposarti.»",
+        opts: ["Du sollst dich ausruhen.", "Du solltest dich ausruhen.", "Du solltest ausruhen dich."],
+        why: "<b>Du solltest dich ausruhen</b>: il Konjunktiv II di <i>sollen</i> dà un consiglio, e <i>dich</i> precede l'infinito. <i>Du sollst</i> è un obbligo; nella terza il pronome è nel posto sbagliato."
+      },
+      {
+        tr: "Il Konjunktiv II di sollen, tutte le persone.",
+        why: "<i>Sollte, solltest, sollte, sollten, solltet, sollten</i>: sono le forme del Präteritum, ma qui servono per il consiglio. La 1ª e la 3ª persona singolare sono uguali."
+      },
+      {
+        tr: "Il Konjunktiv II di sich ausruhen con würde, tutte le persone.",
+        why: "<i>Würde mich ausruhen, würdest dich ausruhen, würde sich ausruhen, würden uns ausruhen, würdet euch ausruhen, würden sich ausruhen</i>: <i>würde</i> + pronome riflessivo + infinito."
+      },
+      {
+        q: "Completa: «Du bist krank. Du ___ zum Arzt gehen.» (dovresti: sollen)",
+        hint: "sollen, Konjunktiv II, du",
+        why: "<b>Solltest</b>: la forma di <i>du</i> è <i>solltest</i>, con la <b>-st</b>. L'infinito <i>gehen</i> sta in fondo."
+      },
+      {
+        q: "Completa: «Wir sind müde. Wir sollten ___ ausruhen.» (wir)",
+        hint: "pronome riflessivo, accusativo",
+        why: "<b>Uns</b>: il pronome riflessivo di <i>wir</i> è <i>uns</i>, davanti all'infinito."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Hai la febbre. Al tuo posto andrei dal medico. E dovresti riposarti.",
+        why: "<i>An deiner Stelle würde ich ...</i> per dire cosa faresti tu; <i>du solltest dich ausruhen</i>, con <i>dich</i> per <i>du</i>."
+      },
+      {
+        q: "Abbina ogni frase alla sua traduzione.",
+        pairs: [
+          "Dovresti riposarti.",
+          "Io andrei dal medico.",
+          "Dovreste bere molto tè.",
+          "Dovrebbe sdraiarsi."
+        ]
+      },
+      {
+        q: "Traduci (usa sich ausruhen): «Al tuo posto mi riposerei.»",
+        why: "<i>An deiner Stelle würde ich mich ausruhen</i>: <i>würde</i> dopo <i>An deiner Stelle</i> in seconda posizione, poi <i>ich mich</i> e l'infinito in fondo. Va bene anche <i>Ich würde mich an deiner Stelle ausruhen</i>."
+      },
+      {
+        tr: "Sembri stanco. Al tuo posto mi sdraierei, e dovresti bere molto tè.",
+        why: "In <i>Stelle</i> la <b>st</b> iniziale suona [ʃt], mentre in <i>solltest</i> è [st]; in <i>würde</i> la <b>ü</b> è breve [ʏ]."
+      },
+      {
+        tr: "Dovresti riposarti, e io andrei dal medico.",
+        why: "In <i>ausruhen</i> la <b>au</b> suona [aʊ] e la <b>h</b> non si legge; in <i>dich</i> la <b>ch</b> dopo <b>i</b> è [ç]."
+      }
+    ]
+  },
+  "lesson:a2-u04-l4": {
+    theme: "Stile di vita",
+    title: "Vivere in salute",
+    objectives: [
+      "introdurre un contenuto con dass dopo ich finde, ich glaube, ich weiß, der Arzt sagt",
+      "mettere il verbo coniugato in fondo nella frase con dass",
+      "collegare causa e conseguenza con deshalb, che porta il verbo subito dopo",
+      "parlare di sport, alimentazione, sonno e abitudini"
+    ],
+    theory: [
+      {
+        h: "dass manda il verbo in fondo",
+        p: "Dopo verbi come <em>finden, glauben, denken, wissen, sagen</em> si riporta un contenuto con <b>dass</b>. La frase che segue è una subordinata: il verbo coniugato va in <b>fondo</b>, e la virgola prima di <em>dass</em> è obbligatoria. <em>Ich finde, dass Sport wichtig ist. Der Arzt sagt, dass ich mehr Wasser trinken soll.</em> Se ci sono un infinito e un modale, il modale coniugato chiude la frase: <em>... trinken soll</em>. Funziona come <em>weil</em>, <em>als</em> e <em>wenn</em> viste prima."
+      },
+      {
+        h: "deshalb: la conseguenza, con inversione",
+        p: "<b>Deshalb</b> («per questo») collega due frasi principali e occupa la <b>prima posizione</b> della seconda: il verbo viene subito dopo e il soggetto lo segue. <em>Ich schlafe schlecht. Deshalb bin ich müde.</em> Sinonimi: <em>deswegen, darum</em>. Si può mettere anche dopo una virgola: <em>Ich schlafe schlecht, deshalb bin ich müde.</em>"
+      },
+      {
+        contrast: "In italiano dopo «penso che», «so che» il verbo può richiedere il <b>congiuntivo</b> («penso che sia importante»); il tedesco usa l'indicativo: <em>Ich denke, dass Sport wichtig <b>ist</b></em>. In italiano «che» non vuole la virgola davanti; in tedesco la virgola prima di <em>dass</em> è obbligatoria. E «per questo», «quindi» non cambiano l'ordine in italiano (<em>dormo male, quindi sono stanco</em>), mentre <em>deshalb</em> inverte soggetto e verbo: <em>Deshalb bin ich müde</em>."
+      },
+      {
+        trap: "<em>Deshalb</em> non manda il verbo in fondo come fa <em>dass</em>: <em>Deshalb ich bin müde</em> e <em>Deshalb ich müde bin</em> sono sbagliati. E con <em>dass</em> il verbo non resta in seconda posizione: <em>Ich finde, dass Sport ist wichtig</em> è sbagliato. Non confondere <em>dass</em> (congiunzione) con <em>das</em> (articolo o pronome)."
+      },
+      {
+        tip: "Davanti a <em>dass</em> metti la virgola e porta il verbo in fondo; dopo <em>deshalb</em> scrivi subito il verbo. Prima di scrivere chiediti: la frase comincia con una congiunzione (<em>dass</em>, verbo in fondo) o con un avverbio (<em>deshalb</em>, verbo subito)?"
+      }
+    ],
+    grammar: {
+      title: "dass e deshalb",
+      note: "<b>dass</b>: il verbo coniugato va in fondo. <b>deshalb</b>: il verbo viene subito dopo, il soggetto lo segue.",
+      table: {
+        head: ["elemento", "posizione del verbo", "esempio"],
+        rows: [
+          ["frase principale", "seconda posizione", "Sport ist wichtig."],
+          ["dass", "in fondo", "Ich finde, dass Sport wichtig ist."],
+          ["dass con modale", "il modale chiude", "..., dass ich mehr trinken soll."],
+          ["deshalb", "subito dopo deshalb", "Ich schlafe schlecht. Deshalb bin ich müde."]
+        ]
+      },
+      examples: [
+        { tr: "Penso che lo sport sia importante.", note: "dass + verbo in fondo; l'italiano chiede il congiuntivo, il tedesco no" },
+        { tr: "Il medico dice che devo bere più acqua.", note: "il modale soll chiude la frase dopo trinken" },
+        { tr: "So che le sigarette non fanno bene.", note: "dass ... sind: il verbo in fondo" },
+        { tr: "Dormo male. Per questo sono stanco.", note: "deshalb in prima posizione, poi bin ich" },
+        { tr: "Mangia molta verdura. Per questo è raramente malata.", note: "deshalb, poi ist sie" },
+        { tr: "Penso che una passeggiata faccia bene.", note: "dass ... gesund ist" }
+      ]
+    },
+    vocab: [
+      "la mela",
+      "la verdura",
+      "il pasto",
+      "la passeggiata",
+      "la sigaretta",
+      "il sonno",
+      "la salute",
+      "l'acqua",
+      "fumare",
+      "regolarmente",
+      "malsano, poco salutare",
+      "muoversi, fare movimento"
+    ],
+    exercises: [
+      {
+        q: "Con dass: «Penso che lo sport sia importante.» Quale frase è corretta?",
+        opts: [
+          "Ich finde, dass Sport ist wichtig.",
+          "Ich finde, dass Sport wichtig ist.",
+          "Ich finde dass, Sport wichtig ist."
+        ],
+        why: "<b>Dass</b> manda il verbo in fondo, e la virgola va <b>prima</b> di <i>dass</i>. Nella prima il verbo è in seconda posizione, nella terza la virgola è al posto sbagliato."
+      },
+      {
+        q: "Quale frase è corretta? «Dormo male. Per questo sono stanco.»",
+        opts: [
+          "Ich schlafe schlecht. Deshalb ich bin müde.",
+          "Ich schlafe schlecht. Deshalb bin ich müde.",
+          "Ich schlafe schlecht. Deshalb ich müde bin."
+        ],
+        why: "Dopo <b>deshalb</b> il verbo viene subito, poi il soggetto: <i>Deshalb bin ich müde</i>. <i>Deshalb</i> non manda il verbo in fondo."
+      },
+      {
+        q: "Completa: «Der Arzt sagt, ___ ich mehr Wasser trinken soll.» (che)",
+        hint: "congiunzione",
+        why: "<b>Dass</b> introduce ciò che dice il medico e manda il verbo in fondo: <i>trinken soll</i>."
+      },
+      {
+        q: "Completa: «Ich glaube, dass er viel Gemüse ___.» (essen, er)",
+        hint: "essen, er, verbo in fondo",
+        why: "<b>Isst</b>: la forma di <i>er</i> è <i>isst</i>, e con <i>dass</i> sta in fondo alla frase."
+      },
+      {
+        q: "Completa: «Ich bin oft müde. Deshalb ___ ich früh ins Bett.» (gehen, ich)",
+        hint: "gehen, ich",
+        why: "<b>Gehe</b>: dopo <i>Deshalb</i> il verbo viene subito, poi <i>ich</i>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "So che lo sport fa bene. Ma ne faccio troppo poco. Per questo sono spesso stanco.",
+        why: "<i>Dass</i> dopo <i>Ich weiß,</i> con il verbo in fondo; <i>deshalb</i> (anche <i>deswegen</i> o <i>darum</i>) apre la frase seguente, e <i>bin ich</i> viene subito dopo."
+      },
+      {
+        q: "Abbina ogni parola alla sua traduzione.",
+        pairs: [
+          "che (introduce una frase)",
+          "per questo",
+          "regolarmente",
+          "malsano, poco salutare"
+        ]
+      },
+      {
+        q: "Traduci (usa dass): «Il medico dice che devo dormire di più.»",
+        why: "<i>Der Arzt sagt, dass ich mehr schlafen soll</i>: virgola, <i>dass</i>, e il modale <i>soll</i> in fondo dopo l'infinito. Va bene anche <i>muss</i>, perché «devo» può tradurre l'uno e l'altro."
+      },
+      {
+        tr: "Il medico dice che devo dormire di più. Dormo male, per questo sono spesso stanco.",
+        why: "In <i>schlafen</i> e <i>schlecht</i> la <b>sch</b> è [ʃ]; in <i>dass</i> la <b>ss</b> è una <b>s</b> sorda e la <b>a</b> è breve."
+      },
+      {
+        tr: "Credo che lo sport faccia bene. Per questo vado a passeggio ogni giorno.",
+        why: "In <i>Sport</i> la <b>sp</b> iniziale suona [ʃp]; in <i>gesund</i> la <b>s</b> è sonora [z]; in <i>spazieren</i> <b>sp</b> è [ʃp] e la <b>z</b> è [ts]."
+      }
+    ]
+  },
+  "lesson:a2-u04-test": {
+    theme: "Verifica",
+    title: "Verifica dell'unità 4",
+    objectives: [
+      "verificare il dativo con wehtun, il Konjunktiv II di consiglio (solltest, würde, anche con un verbo riflessivo) e le frasi con dass"
+    ],
+    theory: [
+      {
+        p: "Dieci domande sul dativo con <em>wehtun</em>, sul Konjunktiv II di consiglio e sulle frasi con <em>dass</em>. Si supera con il 70%. Non riguardare le lezioni mentre rispondi: se non ricordi qualcosa, è meglio tornare a ripassare."
+      }
+    ],
+    exercises: [
+      {
+        tr: "Il Konjunktiv II di sollen, tutte le persone.",
+        why: "<i>Sollte, solltest, sollte, sollten, solltet, sollten</i>: la 1ª e la 3ª persona singolare sono uguali."
+      },
+      {
+        q: "Completa: «Anna hat Fieber. ___ tut der Kopf weh.» (a lei)",
+        hint: "pronome al dativo",
+        why: "<b>Ihr</b>: dativo di <i>sie</i>; <i>der Kopf</i> è il soggetto."
+      },
+      {
+        q: "Completa: «Wir sind müde. ___ tun die Beine weh.» (a noi)",
+        hint: "pronome al dativo",
+        why: "<b>Uns</b>: dativo di <i>wir</i>; <i>die Beine</i> è plurale, quindi <i>tun</i>."
+      },
+      {
+        q: "Completa: «Ich denke, ___ du dich ausruhen solltest.» (che)",
+        hint: "congiunzione",
+        why: "<b>Dass</b> introduce ciò che si pensa e manda il verbo in fondo: <i>ausruhen solltest</i>."
+      },
+      {
+        q: "Completa: «Du bist krank. An deiner Stelle ___ ich zum Arzt gehen.» (werden, Konjunktiv II)",
+        hint: "werden, Konjunktiv II, ich",
+        why: "<b>Würde</b>: <i>würde</i> + infinito per dire cosa faresti tu."
+      },
+      {
+        q: "Come dici «Mi fanno male le gambe»?",
+        opts: ["Mir tut die Beine weh.", "Mir tun die Beine weh.", "Ich tun die Beine weh."],
+        why: "<i>Die Beine</i> è plurale e soggetto, quindi <b>tun</b>; la persona resta al dativo, <i>mir</i>."
+      },
+      {
+        q: "Abbina ogni frase alla sua traduzione.",
+        pairs: [
+          "Mi fa male la testa.",
+          "Dovresti riposarti.",
+          "Io andrei dal medico.",
+          "So che è malato."
+        ]
+      },
+      {
+        q: "Traduci (usa dass e sollen): «Il medico dice che devo riposarmi.»",
+        why: "<i>Der Arzt sagt, dass ich mich ausruhen soll</i>: <i>dass</i> manda il verbo in fondo; <i>mich</i> precede l'infinito <i>ausruhen</i>."
+      },
+      {
+        tr: "Mi fa male la testa. Penso che dovrei riposarmi.",
+        why: "In <i>denke</i> la <b>n</b> davanti a <b>k</b> suona [ŋ]; in <i>sollte</i> la <b>o</b> è breve."
+      },
+      {
+        tr: "Mio fratello è malato. Gli fa male la schiena, e credo che dovrebbe andare dal medico.",
+        why: "In <i>Rücken</i> la <b>ü</b> è breve [ʏ] e <b>ck</b> suona [k]; in <i>Mein</i> la <b>ei</b> è [aɪ]; in <i>ihm</i> la <b>h</b> non si legge e la <b>i</b> è lunga."
+      }
+    ]
   }
 });
