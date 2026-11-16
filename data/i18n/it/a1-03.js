@@ -1046,7 +1046,7 @@ LINGUAI.addStrings("it", {
         contrast: "La costruzione somiglia al passato prossimo italiano: <em>ho mangiato</em> corrisponde a <em>ich habe gegessen</em>. Due differenze. Nel Perfekt il participio <strong>non concorda mai</strong>: in italiano si dice <em>l'ho vista</em> e <em>sono andata</em>, in tedesco <em>Ich habe sie gesehen</em> e <em>Ich bin gegangen</em>, qualunque sia il soggetto o l'oggetto. E il tedesco parlato usa il Perfekt anche dove un italiano potrebbe dire il passato remoto: <em>Gestern habe ich einen Film gesehen</em> si traduce con «ieri ho visto» e, in certi contesti, anche con «ieri vidi»."
       },
       {
-        trap: "In italiano il participio segue subito l'ausiliare: <em>ho visto ieri un film</em>. In tedesco il participio va <strong>in fondo</strong>, dopo tutti i complementi: <em>Ich habe gestern einen Film <strong>gesehen</strong></em>, non «Ich habe gesehen gestern einen Film». Il participio dei verbi forti non si deduce: va imparato insieme all'infinito (<em>trinken, getrunken</em>; <em>lesen, gelesen</em>)."
+        trap: "In italiano il participio precede normalmente l'oggetto; nella principale tedesca questi complementi si collocano fra ausiliare e participio. In tedesco il participio va <strong>in fondo</strong>, dopo tutti i complementi: <em>Ich habe gestern einen Film <strong>gesehen</strong></em>, non «Ich habe gesehen gestern einen Film». Il participio dei verbi forti non si deduce: va imparato insieme all'infinito (<em>trinken, getrunken</em>; <em>lesen, gelesen</em>)."
       },
       {
         tip: "Non prendono <em>ge-</em> i verbi con prefisso inseparabile (<em>be-, ver-, er-, ent-</em>) e quelli in <em>-ieren</em>: <em>besuchen, besucht</em>; <em>studieren, studiert</em>. Per le domande vale la stessa struttura: <em>Hast du am Samstag gekocht?</em> Il verbo coniugato apre la frase, il participio la chiude."
@@ -1132,7 +1132,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Sabato ho bevuto un caffè e ho letto un libro.",
-        why: "In <i>Kaffee</i> l'accento cade sulla prima sillaba; in <i>Buch</i> la <b>ch</b> dopo <b>u</b> è [x], un suono raschiato in gola che l'italiano non ha."
+        why: "In <i>Kaffee</i> la doppia <b>ff</b> indica che la <b>a</b> è breve; in <i>Buch</i> la <b>ch</b> dopo <b>u</b> è [x], un suono raschiato in gola che l'italiano non ha."
       }
     ]
   },
@@ -1176,7 +1176,7 @@ LINGUAI.addStrings("it", {
         ]
       },
       examples: [
-        { tr: "Sono andato a Berlino in treno.", note: "cambio di luogo: sein" },
+        { tr: "Sono andato a Berlino", note: "cambio di luogo: sein" },
         { tr: "Ci siamo alzati presto.", note: "aufstehen: aufgestanden, senza pronome" },
         { tr: "Lei è rimasta a casa.", note: "bleiben: sein" },
         { tr: "Lui è arrivato alle otto.", note: "ankommen: angekommen" },
@@ -1227,7 +1227,7 @@ LINGUAI.addStrings("it", {
           "Er ist zu Hause geblieben.",
           "Ich habe um sieben aufgestehen."
         ],
-        why: "La frase 3 vuole <i>sein</i> (<i>Wir sind nach Wien geflogen</i>); la frase 5 ha un participio sbagliato: <i>aufgestanden</i>, non «aufgestehen»."
+        why: "La frase 3 vuole <i>sein</i> (<i>Wir sind nach Wien geflogen</i>); la frase 5 ha due errori: ausiliare e participio. Corretta: <i>Ich bin um sieben aufgestanden</i> (<i>sein</i> e <i>aufgestanden</i>, non «habe» e «aufgestehen»)."
       },
       {
         q: "Completa: «Ich ___ gestern früh aufgestanden.»",
@@ -1308,7 +1308,7 @@ LINGUAI.addStrings("it", {
       "poi",
       "dopo, in seguito",
       "più tardi",
-      "la festa (la party)",
+      "la festa",
       "la passeggiata",
       "il museo",
       "il regalo",
@@ -1366,7 +1366,7 @@ LINGUAI.addStrings("it", {
         why: "In <i>getroffen</i> la doppia <b>ff</b> segnala di solito una vocale breve; in <i>Kino</i> la prima <b>i</b> è lunga."
       },
       {
-        tr: "Era bello! Ho ballato e ho incontrato amici.",
+        tr: "È stato fantastico! Ho ballato e ho incontrato amici.",
         why: "In <i>getanzt</i> la <b>z</b> si legge [ts], come in «pizza»; in <i>Freunde</i> la <b>eu</b> si legge «oi»."
       }
     ]
@@ -1382,10 +1382,10 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Ripasso: tre cose da non sbagliare",
-        p: "<strong>1.</strong> Il verbo coniugato sta in seconda posizione e nei verbi forti cambia la vocale con <em>du</em> ed <em>er</em>: <em>ich esse, du isst, er isst</em>. <strong>2.</strong> All'accusativo cambia solo il maschile: <em>der Koffer → den Koffer</em>, <em>ein Koffer → einen Koffer</em>. <strong>3.</strong> Dopo <em>mit, zu, bei, aus, von</em> si usa il dativo: <em>mit dem Zug, zum Strand</em> (zu dem), <em>aus Italien</em>."
+        p: "<strong>1.</strong> Il verbo coniugato sta in seconda posizione e in alcuni verbi forti cambia la vocale con <em>du</em> ed <em>er/sie/es</em>: <em>ich esse, du isst, er isst</em>. <strong>2.</strong> All'accusativo cambia solo il maschile: <em>der Koffer → den Koffer</em>, <em>ein Koffer → einen Koffer</em>. <strong>3.</strong> Dopo <em>mit, zu, bei, aus, von</em> si usa il dativo: <em>mit dem Zug, zum Strand</em> (zu dem), <em>aus Italien</em>."
       },
       {
-        contrast: "In italiano «in treno» e «in autobus» usano <em>in</em>; in tedesco il mezzo di trasporto vuole <strong>mit</strong> e il dativo: <em>mit dem Zug, mit dem Bus</em>. E «da» si traduce in modi diversi: <em>aus</em> per la provenienza (<em>Ich komme aus Italien</em>), <em>von</em> per il punto di partenza, <em>bei</em> per «da una persona»."
+        contrast: "In italiano «in treno» e «in autobus» usano <em>in</em>; in tedesco il mezzo di trasporto vuole <strong>mit</strong> e il dativo: <em>mit dem Zug, mit dem Bus</em>. E «da» si traduce in modi diversi: <em>aus</em> per la provenienza (<em>Ich komme aus Italien</em>), <em>von</em> per il punto di partenza, <em>bei</em> + dativo per stare da qualcuno (<em>Ich bin bei meiner Tante</em>), mentre per andare da qualcuno si usa <em>zu</em> + dativo (<em>Ich gehe zu meiner Tante</em>)."
       },
       {
         trap: "Al femminile e al neutro l'accusativo è identico al nominativo: <em>die Fahrkarte</em>, <em>das Zimmer</em>. Quindi <em>Ich nehme den Koffer</em> ma <em>Ich nehme die Fahrkarte</em>. Se sbagli il genere del nome, sbagli anche l'articolo: ripassa sempre il nome con il suo articolo."
@@ -1401,7 +1401,7 @@ LINGUAI.addStrings("it", {
         head: ["cosa", "regola", "esempio"],
         rows: [
           ["presente", "verbo in seconda posizione", "Ich fahre mit dem Zug."],
-          ["verbi forti", "vocale che cambia con du ed er", "Du isst, er sieht."],
+          ["alcuni verbi forti", "vocale che cambia con du ed er/sie/es", "Du isst, er sieht."],
           ["accusativo", "der → den, ein → einen", "Wir nehmen den Koffer."],
           ["dativo con mit, zu, bei, aus, von", "dem, der, dem; zum, zur", "Wir gehen zum Hotel."],
           ["Perfekt", "haben o sein + participio in fondo", "Gestern bin ich früh aufgestanden."]
@@ -1541,7 +1541,7 @@ LINGUAI.addStrings("it", {
         why: "<i>Ich bin gegangen, du bist gegangen, er ist gegangen, wir sind gegangen</i>: <i>gehen</i> prende <b>sein</b>."
       },
       {
-        q: "Completa la frase.",
+        q: "Completa la frase (per prima cosa, usa zuerst).",
         tr: "Prima ho incontrato amici. Poi siamo andati al cinema.",
         why: "<i>Zuerst</i> apre la frase; <i>habe ich ... getroffen</i> con haben; <i>sind wir ... gegangen</i> con sein."
       },

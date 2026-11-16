@@ -316,7 +316,8 @@ LINGUAI.addUnits("A1", [
             a: [
               "Am Samstag spiele ich Fußball und am Sonntag wandere ich",
               "Ich spiele am Samstag Fußball und wandere am Sonntag",
-              "Am Samstag spiele ich Fußball und ich wandere am Sonntag"
+              "Am Samstag spiele ich Fußball und ich wandere am Sonntag",
+              "Ich spiele am Samstag Fußball und am Sonntag wandere ich"
             ]
           },
           {
@@ -696,12 +697,12 @@ LINGUAI.addUnits("A1", [
         exercises: [
           { t: "mcq", a: 0 },
           { t: "mcq", a: 1 },
-          { t: "fill", a: ["dann", "danach"] },
+          { t: "fill", a: ["dann"] },
           { t: "fill", a: ["war"] },
           {
             t: "order",
             tokens: ["Danach", "habe", "ich", "ein", "Buch", "gelesen"],
-            a: ["Danach habe ich ein Buch gelesen"]
+            a: ["Danach habe ich ein Buch gelesen", "Ich habe danach ein Buch gelesen"]
           },
           {
             t: "trans",
@@ -746,7 +747,7 @@ LINGUAI.addUnits("A1", [
         id: "a1-u10-l4",
         tags: ["g-praesens", "g-artikel-akk", "g-praep-dativ"],
         cefr: "A1",
-        titleIt: "Ripasso A1",
+        titleIt: "Wiederholung A1",
         grammar: {
           examples: [
             { it: "Ich fahre mit dem Zug zum Strand." },
@@ -773,7 +774,7 @@ LINGUAI.addUnits("A1", [
           { t: "conj", verb: "fahren", tense: "praes", persons: [0, 1, 2, 3, 4, 5] },
           { t: "fill", a: ["mit"] },
           { t: "fill", a: ["den"] },
-          { t: "fill", a: ["zum", "zu dem"] },
+          { t: "fill", a: ["zum"] },
           { t: "fill", a: ["aus"] },
           {
             t: "cloze",
