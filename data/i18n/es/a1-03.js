@@ -513,5 +513,516 @@ LINGUAI.addStrings("es", {
         why: "<i>Größer als ich</i>, luego <i>sehr sympathisch</i>: en <i>sympathisch</i> la terminación <b>sch</b> [ʃ] suena como la «sh» del inglés «she»."
       }
     ]
+  },
+  "unit:a1-u09": {
+    title: "Tiempo libre",
+    grammarNote: "presente y días · es regnet · gerade en lugar de «estar + gerundio» · für, ohne, um, durch, gegen · und, aber, oder, denn"
+  },
+  "lesson:a1-u09-l1": {
+    theme: "El fin de semana",
+    title: "¿Qué haces el fin de semana?",
+    objectives: [
+      "preguntar y decir qué se hace el fin de semana",
+      "elegir entre am Samstag y samstags",
+      "hablar de pasatiempos con spielen, schwimmen, wandern, kochen"
+    ],
+    theory: [
+      {
+        h: "El presente para los planes",
+        p: "El presente alemán sirve para lo que haces habitualmente y para lo que harás pronto: <em>Am Samstag spiele ich Fußball</em> (“El sábado juego al fútbol”). El verbo se queda en <b>segunda posición</b>: si abres la frase con <em>am Samstag</em>, el sujeto pasa detrás del verbo."
+      },
+      {
+        contrast: "El español distingue «el sábado» (ese sábado) de «los sábados» (cada sábado) con el artículo y el plural. El alemán usa dos formas distintas: <em>samstags</em> (con <em>-s</em>) indica de forma explícita el hábito, mientras que <em>am Samstag</em> depende del contexto: puede ser un sábado concreto, pero también habitual (<em>Am Samstag spiele ich immer Fußball</em>). Y «el fin de semana» es <em>am Wochenende</em>, con <em>am</em>: no digas <em>im</em> (<em>im Wochenende</em> es incorrecto)."
+      },
+      {
+        trap: "<em>Wochenende</em> es neutro (<em>das Wochenende</em>), mientras que «el fin de semana» es masculino en español: el género español no te ayuda. Y con los deportes se dice <em>Fußball spielen</em>, sin preposición: «jugar <em>al</em> fútbol» no lleva ningún <em>an</em> ni <em>zu</em>. Con un instrumento pasa algo parecido, pero el español cambia de verbo y el alemán no: «tocar la guitarra» es <em>Gitarre spielen</em>, con el mismo <em>spielen</em> que para «jugar»."
+      },
+      {
+        tip: "Para decir que algo te gusta, añade <em>gern</em> después del verbo: <em>Ich schwimme gern</em>. Para preguntar por los planes de alguien, <em>Was machst du am Wochenende?</em> es la pregunta más natural."
+      }
+    ],
+    grammar: {
+      title: "Cuándo: am, samstags, im",
+      note: "<b>am</b> para un día concreto y para la parte del día, <b>-s</b> para el hábito explícito (<b>am</b> también puede ser habitual, según el contexto), <b>im</b> para las estaciones.",
+      table: {
+        head: ["cuándo", "forma", "ejemplo"],
+        rows: [
+          ["normalmente un sábado concreto (o habitual, según el contexto)", "am Samstag", "Am Samstag spiele ich Fußball."],
+          ["todos los sábados, hábito explícito", "samstags", "Samstags schwimme ich gern."],
+          ["el fin de semana", "am Wochenende", "Am Wochenende wandere ich."],
+          ["por la noche", "am Abend", "Am Abend koche ich."],
+          ["en una estación", "im Winter", "Im Winter tanzen wir oft."]
+        ]
+      },
+      examples: [
+        { tr: "¿Qué haces el fin de semana?", note: "am Wochenende, no im" },
+        { tr: "El sábado juego al fútbol.", note: "Fußball spielen sin preposición" },
+        { tr: "Los sábados nado con gusto.", note: "samstags = todos los sábados" },
+        { tr: "El domingo hago senderismo con los amigos.", note: "wandern: caminar por la naturaleza" },
+        { tr: "Por la noche cocino para mi familia." },
+        { tr: "En invierno bailamos a menudo.", note: "im + estación" }
+      ]
+    },
+    vocab: [
+      "el fin de semana",
+      "el pasatiempo, el hobby",
+      "el concierto",
+      "la película",
+      "el libro",
+      "la excursión",
+      "jugar (también: tocar un instrumento)",
+      "nadar",
+      "hacer senderismo",
+      "cocinar",
+      "bailar",
+      "los sábados, cada sábado"
+    ],
+    exercises: [
+      {
+        q: "¿Cómo le preguntas a un amigo qué hace el fin de semana?",
+        opts: ["Was machst du am Wochenende?", "Was machst du im Wochenende?", "Was machst du an Wochenende?"],
+        why: "Con el fin de semana se usa <b>am</b>: <i>am Wochenende</i>. <i>Im Wochenende</i> es el error de quien piensa en «en el»."
+      },
+      {
+        q: "¿Cómo dices «los sábados» (cada sábado)?",
+        opts: ["Im Samstag", "Der Samstag", "Samstags"],
+        why: "<b>Samstags</b>, con la <i>-s</i>, indica de forma explícita un hábito. <i>Am Samstag</i> depende del contexto: normalmente un sábado concreto, pero también puede ser habitual."
+      },
+      {
+        q: "Completa: «Ich ___ gern Fußball.» (jugar, yo)",
+        hint: "spielen, ich",
+        why: "Con <i>ich</i> el verbo regular acaba en <b>-e</b>: <i>ich spiele</i>."
+      },
+      {
+        q: "Completa: «Ich besuche ___ Sonntag meine Großmutter.» (el domingo)",
+        hint: "preposición para un día concreto",
+        why: "Un día concreto lleva <b>am</b>: <i>am Sonntag</i>."
+      },
+      {
+        q: "Une cada verbo con su significado.",
+        pairs: ["jugar", "nadar", "hacer senderismo", "cocinar"]
+      },
+      {
+        q: "Traduce: «El sábado juego al fútbol y el domingo hago senderismo.» (días concretos, usa wandern)",
+        why: "<i>Am Samstag spiele ich Fußball ...</i>: después del complemento de tiempo el verbo sigue en segunda posición y el sujeto va detrás."
+      },
+      {
+        q: "Completa el diálogo (usa treffen).",
+        tr: "¿Qué haces el fin de semana? Quedo con amigos e iremos al cine.",
+        why: "Con <i>du</i> se dice <i>machst</i>; <i>ich treffe</i> es la primera persona de <i>treffen</i>; <i>ins</i> es <i>in das</i>."
+      },
+      {
+        q: "Un amigo te pregunta por tus planes.",
+        setting: "Hablas con un amigo por teléfono.",
+        lines: [
+          { tr: "¡Hola! ¿Qué haces el fin de semana?" },
+          { tr: "Responde que el sábado juegas al fútbol.", answerTr: "El sábado juego al fútbol." },
+          { tr: "¿Y el domingo?" },
+          { tr: "Responde que el domingo haces senderismo.", answerTr: "El domingo hago senderismo." }
+        ]
+      },
+      {
+        tr: "El sábado juego al fútbol y el domingo cocino para mi familia.",
+        why: "En <i>Fußball</i> la <b>ß</b> es una <b>s</b> sorda y la <b>u</b> es larga."
+      },
+      {
+        tr: "El sábado bailo y el domingo hago senderismo.",
+        why: "En <i>tanze</i> la <b>z</b> se lee [ts], como en «pizza»; en <i>wandere</i> la <b>w</b> se pronuncia como una «v» labiodental, no como la «b» suave del español."
+      }
+    ]
+  },
+  "lesson:a1-u09-l2": {
+    theme: "El tiempo",
+    title: "Llueve",
+    objectives: [
+      "decir qué tiempo hace con es regnet, es schneit, es ist kalt",
+      "usar es como sujeto de las frases sobre el tiempo",
+      "preguntar y decir la temperatura"
+    ],
+    theory: [
+      {
+        h: "Es: el sujeto que en español no aparece",
+        p: "Para hablar del tiempo el alemán exige un sujeto: <strong>es</strong>. <em>Es regnet</em> (llueve), <em>Es schneit</em> (nieva), <em>Es ist kalt</em> (hace frío). <em>Es</em> no designa una cosa: solo ocupa el lugar del sujeto."
+      },
+      {
+        contrast: "El español omite el sujeto: «llueve», «nieva», «hace frío». En alemán, en las frases sobre el tiempo no se omite: <em>Regnet</em> solo no es una frase. Incluso cuando la frase empieza con otro elemento, <em>es</em> se queda y va detrás del verbo: <em>Heute regnet es</em>, no <em>Heute regnet</em>."
+      },
+      {
+        trap: "«Hace frío» en español usa el verbo hacer; en alemán se usa <em>sein</em>: <em>Es ist kalt</em>, no «es macht kalt». Cuidado también con <em>die Sonne scheint</em>: aquí el sujeto es una cosa real, <em>die Sonne</em>, y no hace falta <em>es</em>. Para «está soleado» se dice, en cambio, <em>Es ist sonnig</em>."
+      },
+      {
+        tip: "Para la temperatura: <em>Wie viel Grad sind es?</em> y <em>Es sind zwanzig Grad.</em> Con un número, para indicar la temperatura, <em>Grad</em> no cambia; el plural léxico es <em>Grade</em>. Para preguntar por el tiempo: <em>Wie ist das Wetter?</em>"
+      }
+    ],
+    grammar: {
+      title: "Es en las frases sobre el tiempo",
+      note: "El sujeto <b>es</b> no se omite; si hay otro elemento en primera posición, va detrás del verbo.",
+      table: {
+        head: ["español", "alemán", "ejemplo"],
+        rows: [
+          ["llueve", "Es regnet.", "Heute regnet es nicht."],
+          ["nieva", "Es schneit.", "Im Winter schneit es oft."],
+          ["hace frío", "Es ist kalt.", "Heute ist es sehr kalt."],
+          ["hace calor", "Es ist warm / heiß.", "Im Sommer ist es warm."],
+          ["¿qué tiempo hace?", "Wie ist das Wetter?", "Wie ist das Wetter in Wien?"]
+        ]
+      },
+      examples: [
+        { tr: "Llueve.", note: "es no se omite" },
+        { tr: "En invierno nieva a menudo.", note: "es detrás del verbo" },
+        { tr: "Hoy hace mucho frío.", note: "sein, no machen" },
+        { tr: "Hoy no llueve." },
+        { tr: "¿Qué tiempo hace?", note: "das Wetter es neutro" },
+        { tr: "Hay veinte grados.", note: "Con un número, para la temperatura, Grad no cambia: zwanzig Grad; el plural léxico es Grade." }
+      ]
+    },
+    vocab: [
+      "el tiempo (meteorológico)",
+      "llover",
+      "nevar",
+      "el sol",
+      "la nube",
+      "el viento",
+      "frío",
+      "cálido (agradable), templado",
+      "muy caluroso, tórrido",
+      "soleado",
+      "ventoso",
+      "el grado"
+    ],
+    exercises: [
+      {
+        q: "¿Cómo dices «llueve»?",
+        opts: ["Es regnet.", "Regnet.", "Sie regnet."],
+        why: "En alemán el sujeto <b>es</b> no se omite: <i>Es regnet</i>."
+      },
+      {
+        q: "¿Qué frase es correcta?",
+        opts: ["Heute es regnet.", "Heute regnet es.", "Heute regnet."],
+        why: "El verbo está en segunda posición y <i>es</i> se queda, detrás del verbo."
+      },
+      {
+        q: "Completa: «Im Winter ___ es oft.» (nevar)",
+        hint: "schneien, es",
+        why: "<b>Schneit</b>: <i>schneien</i> en tercera persona, con <i>es</i>."
+      },
+      {
+        q: "Completa: «Heute ist ___ sehr kalt.» (Hoy hace mucho frío.)",
+        hint: "el sujeto de las frases sobre el tiempo",
+        why: "<b>Es</b> es el sujeto y en las frases sobre el tiempo no se omite."
+      },
+      {
+        q: "Une cada palabra con su significado.",
+        pairs: ["frío", "muy caluroso", "soleado", "ventoso"]
+      },
+      {
+        tr: "Hoy hace mucho frío.",
+        why: "<i>Heute ist es sehr kalt</i>: verbo en segunda posición. También vale <i>Es ist heute sehr kalt</i>."
+      },
+      {
+        q: "Traduce: «Hoy llueve y hace frío.»",
+        why: "Dos frases, dos <i>es</i>: <i>es regnet</i> y <i>es ist kalt</i>. Después de <i>und</i> el sujeto común se puede omitir: <i>Heute regnet es und ist kalt</i>."
+      },
+      {
+        q: "Completa el diálogo (el último hueco es «frío»).",
+        tr: "¿Qué tiempo hace hoy? Llueve y hace frío.",
+        why: "<i>Das Wetter</i> es neutro. Con <i>regnet</i> y <i>ist kalt</i> el sujeto <i>es</i> siempre está."
+      },
+      {
+        tr: "Hoy hay sol, pero no hace calor.",
+        why: "En <i>scheint</i> el grupo <b>sch</b> se lee [ʃ], como la «sh» inglesa de «shoe», y <b>ei</b> suena como «ai»."
+      },
+      {
+        tr: "En invierno nieva a menudo y hace mucho frío.",
+        why: "En <i>schneit</i> la <b>sch</b> es [ʃ] seguida de <b>n</b>, y <b>ei</b> suena como «ai»."
+      }
+    ]
+  },
+  "lesson:a1-u09-l3": {
+    theme: "Ahora",
+    title: "Estoy leyendo",
+    objectives: [
+      "decir qué se está haciendo ahora con el presente y gerade",
+      "usar im Moment como alternativa a gerade",
+      "conjugar lesen y sehen (y fernsehen)"
+    ],
+    theory: [
+      {
+        h: "Gerade + presente",
+        p: "El alemán no tiene una forma como «estoy leyendo». Para decir que haces algo ahora usas el presente y añades <strong>gerade</strong> (ahora mismo) o <strong>im Moment</strong> (en este momento): <em>Ich lese gerade</em>. Normalmente <em>gerade</em> va detrás del verbo."
+      },
+      {
+        contrast: "El español tiene «estar + gerundio»: «estoy leyendo», «está llamando». En alemán estándar no existe una construcción equivalente: <em>Ich bin lesend</em> es incorrecto. «Estoy leyendo» y «leo» son ambos <em>ich lese</em>, y solo el contexto o <em>gerade</em> dice si es ahora. En algunas regiones se oye también <em>Ich bin am Lesen</em>, pero por ahora no te hace falta."
+      },
+      {
+        h: "Lesen y sehen cambian de vocal",
+        p: "En la segunda y la tercera persona del singular <em>lesen</em> y <em>sehen</em> cambian <b>e → ie</b>: <em>du liest</em>, <em>er liest</em>, <em>du siehst</em>, <em>er sieht</em>. <em>Fernsehen</em> es separable: <em>Er sieht gerade fern</em>."
+      },
+      {
+        trap: "<em>Ich lese</em> solo puede significar «leo» (habitualmente) o «estoy leyendo». Si quieres dejar claro que es ahora, pon <em>gerade</em>. Usa un solo verbo conjugado en presente: <em>ich lese gerade</em>. No añadas <em>bin</em>: no es un equivalente de «estoy»."
+      },
+      {
+        tip: "La pregunta y la respuesta usan el mismo esquema: <em>Was machst du gerade? Ich lese gerade.</em> Los adverbios de frecuencia (<em>immer, oft, manchmal, nie</em>) van detrás del verbo conjugado y de un sujeto pronombre: <em>Ich lese oft</em>, <em>Heute lese ich oft</em>."
+      }
+    ],
+    grammar: {
+      title: "Lesen y sehen en presente",
+      note: "<b>e → ie</b> con <em>du</em> y <em>er/sie/es</em>. Con <b>gerade</b> se dice «ahora».",
+      table: {
+        head: ["persona", "lesen", "sehen"],
+        rows: [
+          ["ich", "lese", "sehe"],
+          ["du", "liest", "siehst"],
+          ["er / sie / es", "liest", "sieht"],
+          ["wir", "lesen", "sehen"],
+          ["ihr", "lest", "seht"],
+          ["sie / Sie", "lesen", "sehen"]
+        ]
+      },
+      examples: [
+        { tr: "Estoy leyendo un libro.", note: "presente + gerade" },
+        { tr: "¿Qué estás haciendo?", note: "gerade = en este momento" },
+        { tr: "Él está viendo la tele.", note: "fernsehen: fern al final" },
+        { tr: "Ahora mismo estoy escribiendo un mensaje.", note: "im Moment en primera posición: el verbo va detrás" },
+        { tr: "Estamos escuchando una canción." },
+        { tr: "Ella está llamando por teléfono." }
+      ]
+    },
+    vocab: [
+      "ahora mismo, en este instante",
+      "en este momento",
+      "leer",
+      "escuchar",
+      "escribir",
+      "llamar por teléfono",
+      "ver la televisión",
+      "aprender, estudiar",
+      "el periódico",
+      "el teléfono móvil",
+      "el mensaje",
+      "la canción"
+    ],
+    exercises: [
+      {
+        q: "¿Cómo dices «estoy leyendo» (ahora)?",
+        opts: ["Ich lese gerade.", "Ich bin gerade lesend.", "Ich lesen gerade."],
+        why: "Se usa el presente con <b>gerade</b>: no hay una forma con «estar»."
+      },
+      {
+        q: "¿Qué significa «Was machst du gerade?»",
+        opts: ["¿Qué haces normalmente?", "¿Qué estás haciendo ahora?", "¿Qué hiciste ayer?"],
+        why: "<i>Gerade</i> significa «en este momento»."
+      },
+      {
+        q: "Completa: «Du ___ gerade ein Buch.» (leer)",
+        hint: "lesen, du",
+        why: "<i>Lesen</i> cambia <b>e → ie</b> con <i>du</i>: <b>liest</b>."
+      },
+      {
+        q: "Completa: «Er ___ gerade fern.» (ver la tele, él)",
+        hint: "fernsehen, er",
+        why: "<i>Fernsehen</i> es separable y, como <i>sehen</i>, cambia <b>e → ie</b>: <b>sieht</b>, y <i>fern</i> va al final."
+      },
+      {
+        q: "Completa: «Wir ___ gerade ein Lied.» (escuchar)",
+        hint: "hören, wir",
+        why: "Con <i>wir</i> el presente de <i>hören</i> es <b>wir hören</b>: la forma coincide con el infinitivo."
+      },
+      {
+        tr: "Estoy escribiendo un mensaje.",
+        why: "<i>Ich schreibe gerade eine Nachricht</i>. También es correcto <i>Gerade schreibe ich eine Nachricht</i>, pero entonces el sujeto va detrás del verbo."
+      },
+      {
+        q: "Traduce: «Mi hermano está leyendo el periódico.» (usa gerade)",
+        why: "<i>Mein Bruder liest gerade die Zeitung</i>: con <i>er</i> y <i>Bruder</i> la vocal cambia, <i>liest</i>."
+      },
+      {
+        q: "Completa el diálogo (el segundo hueco es «leer»).",
+        tr: "¿Qué haces ahora? Estoy leyendo un libro y mi hermano está viendo la tele.",
+        why: "<i>Machst</i>, <i>lese</i>, <i>sieht ... fern</i>: ninguna forma con «estar», solo el presente con <i>gerade</i>."
+      },
+      {
+        tr: "Yo estoy leyendo, y mi hermano en este momento ve la televisión.",
+        why: "En <i>sieht</i> la <b>ie</b> es una <b>i</b> larga y la <b>h</b> no se pronuncia; en el alemán estándar la <b>s</b> inicial es sonora, como la «z» inglesa de «zoo»."
+      },
+      {
+        tr: "Estoy escribiendo un mensaje y escucho una canción.",
+        why: "En <i>höre</i> la <b>ö</b> es larga, como la <i>eu</i> francesa de «peu». En <i>Nachricht</i> la primera <b>ch</b> es dura [x], como la «j» española, y la segunda es suave [ç]."
+      }
+    ]
+  },
+  "lesson:a1-u09-l4": {
+    theme: "Una invitación",
+    title: "¿Vamos al cine?",
+    objectives: [
+      "proponer, aceptar y rechazar una invitación",
+      "usar für, ohne, um, durch, gegen con el acusativo",
+      "unir frases con und, aber, oder, denn"
+    ],
+    theory: [
+      {
+        h: "Proponer, aceptar, rechazar",
+        p: "Para proponer: <em>Gehen wir ins Kino?</em> o <em>Hast du Lust?</em> Para aceptar: <em>Ja, gern!</em>, <em>Gute Idee!</em> Para rechazar con amabilidad: <em>Leider kann ich nicht</em> o <em>Tut mir leid</em>, y después el motivo con <em>denn</em>. <em>Ins</em> es <em>in das</em>: aquí es una fórmula para aprender tal cual."
+      },
+      {
+        h: "Cinco preposiciones con el acusativo",
+        p: "<strong>für</strong> (para, por), <strong>ohne</strong> (sin), <strong>um</strong> (alrededor de; con las horas, a las), <strong>durch</strong> (a través de), <strong>gegen</strong> (contra) llevan siempre el <b>acusativo</b>: solo cambia el masculino. <em>Die Karte ist für den Freund</em>, <em>Wir gehen durch den Park</em>. Con los pronombres: <em>für mich, für dich, ohne ihn, ohne sie</em>."
+      },
+      {
+        contrast: "En español «para Marco» y «sin Marco» no cambian el nombre. En alemán el artículo masculino cambia: <em>für den Freund</em>, <em>ohne meinen Bruder</em>; con el femenino y el neutro no se ve diferencia: <em>für die Freundin</em>, <em>für das Kind</em>. Ojo con <em>für</em>: cubre «para» y a menudo «por» (<em>Danke für die Karte</em>, gracias por la entrada), pero no traduzcas automáticamente «por» con <em>für</em>: según el caso corresponde a <em>durch</em>, <em>wegen</em> o <em>von</em>. «A las ocho» se dice con <em>um</em>: <em>um acht Uhr</em>."
+      },
+      {
+        h: "Und, aber, oder, denn",
+        p: "Estas cuatro palabras unen dos frases y <b>no mueven el verbo</b>: <em>Ich bin müde, aber ich gehe ins Kino</em>. Después de <em>und</em>, <em>oder</em> y <em>aber</em> el sujeto repetido se puede omitir: <em>Ich gehe ins Kino und sehe einen Film</em>. Después de <em>denn</em> el sujeto se repite siempre."
+      },
+      {
+        trap: "El español «porque» es una sola palabra: «no vengo porque tengo que trabajar». En alemán, para dar un motivo, <em>denn</em> deja el verbo en segundo lugar: <em>Ich komme nicht, denn ich muss arbeiten</em>. Son errores <em>denn ich arbeiten muss</em> (verbo al final) y <em>denn muss ich arbeiten</em> (verbo en primer lugar); con otro elemento delante el verbo sigue siendo el segundo: <em>denn morgen muss ich arbeiten</em>. La otra palabra para «porque», <em>weil</em>, manda el verbo al final: llega más adelante. Cuidado también con <em>gegen</em>: significa «contra», pero con las horas también «hacia» (<em>gegen acht Uhr</em>, hacia las ocho)."
+      },
+      {
+        tip: "Para rechazar con amabilidad: <em>Leider</em> + el motivo con <em>denn</em>. Antes de <em>aber</em> y <em>denn</em> la coma es obligatoria."
+      }
+    ],
+    grammar: {
+      title: "Preposiciones con el acusativo y conectores",
+      note: "<b>für, ohne, um, durch, gegen</b> + acusativo; <b>und, aber, oder, denn</b> no mueven el verbo.",
+      table: {
+        head: ["preposición", "significado", "ejemplo"],
+        rows: [
+          ["für", "para, por", "Die Karte ist für dich."],
+          ["ohne", "sin", "Ich trinke Kaffee ohne Zucker."],
+          ["um", "alrededor de; a las (horas)", "Der Film beginnt um acht Uhr."],
+          ["durch", "a través de", "Wir gehen durch den Park."],
+          ["gegen", "contra", "Ich bin gegen den Plan."]
+        ]
+      },
+      examples: [
+        { tr: "¿Vamos al cine?", note: "ins = in das" },
+        { tr: "La entrada es para ti.", note: "für + acusativo" },
+        { tr: "Tomo el café sin azúcar.", note: "ohne + nombre incontable: aquí Zucker indica la sustancia en general, por eso normalmente no lleva artículo" },
+        { tr: "La película empieza a las ocho.", note: "um con las horas" },
+        { tr: "Atravesamos el parque, pero llueve.", note: "aber no mueve el verbo" },
+        { tr: "No vengo, porque tengo que trabajar.", note: "denn no mueve el verbo: se queda en segunda posición" }
+      ]
+    },
+    vocab: [
+      "el cine",
+      "la entrada (también: la tarjeta, la postal)",
+      "la idea",
+      "la propuesta",
+      "las ganas",
+      "por desgracia",
+      "para, por",
+      "sin",
+      "alrededor de; a las (con las horas)",
+      "a través de",
+      "contra",
+      "porque (explica el motivo)"
+    ],
+    exercises: [
+      {
+        q: "¿Cómo le propones a un amigo ir al cine?",
+        opts: ["Gehen wir ins Kino?", "Wir ins Kino gehen?", "Gehen wir an Kino?"],
+        why: "Una propuesta es una pregunta con el verbo en primer lugar: <i>Gehen wir ...?</i> <i>Ins</i> es <i>in das</i>."
+      },
+      {
+        q: "¿Cómo rechazas y explicas el motivo?",
+        opts: ["Leider nicht, denn muss ich arbeiten.", "Leider nicht, denn ich arbeiten muss.", "Leider nicht, denn ich muss arbeiten."],
+        why: "<b>Denn</b> no ocupa una posición en la frase que sigue: el verbo conjugado se queda en segunda posición, como en <i>denn ich muss arbeiten</i> (pero también <i>denn morgen muss ich arbeiten</i>). Las otras dos opciones tienen el verbo al final o en primer lugar."
+      },
+      {
+        q: "Completa: «Die Karte ist ___ dich.» (para)",
+        hint: "para + acusativo",
+        why: "<b>Für</b> lleva el acusativo: <i>für dich</i>."
+      },
+      {
+        q: "Completa: «Ich trinke Kaffee ___ Zucker.» (sin)",
+        hint: "sin",
+        why: "<b>Ohne</b> + acusativo; con un nombre incontable como <i>Zucker</i> normalmente falta el artículo."
+      },
+      {
+        q: "Une cada preposición con su significado.",
+        pairs: ["para", "sin", "a través de", "contra"]
+      },
+      {
+        tr: "Vamos a través del parque.",
+        why: "<i>Wir gehen durch den Park</i>: <i>durch</i> + acusativo, <i>den</i>. También vale <i>Durch den Park gehen wir</i>."
+      },
+      {
+        q: "Traduce: «No vengo, porque tengo que trabajar.» (usa denn)",
+        why: "<i>Ich komme nicht, denn ich muss arbeiten</i>: después de <i>denn</i> el verbo conjugado se queda en segunda posición."
+      },
+      {
+        q: "Completa el diálogo.",
+        tr: "¿Vamos al cine? Por desgracia no puedo, porque tengo que trabajar. Pero mañana tengo tiempo.",
+        why: "<i>Ins</i> es <i>in das</i>; <i>denn</i> explica el motivo y no mueve el verbo; <i>ich habe Zeit</i> usa <i>haben</i>."
+      },
+      {
+        tr: "¿Vamos al cine? Por desgracia no puedo, porque tengo que trabajar.",
+        why: "En <i>leider</i> la <b>ei</b> suena como «ai» y la <b>d</b> es sonora; en <i>Kino</i> la primera <b>i</b> es larga."
+      },
+      {
+        tr: "¡Buena idea! ¿Vamos al cine a las ocho?",
+        why: "En <i>Uhr</i> la <b>h</b> no se pronuncia y la <b>u</b> es larga; en <i>Idee</i> la <b>ee</b> es una <b>e</b> larga."
+      }
+    ]
+  },
+  "lesson:a1-u09-test": {
+    theme: "Repaso",
+    title: "Repaso de la unidad 9",
+    objectives: ["comprobar es, gerade, preposiciones con el acusativo y conectores"],
+    theory: [
+      {
+        p: "Diez preguntas sobre toda la unidad. Se supera con el 70 %. No vuelvas a mirar las lecciones mientras respondes: si no recuerdas algo, es mejor volver a repasar."
+      }
+    ],
+    exercises: [
+      {
+        q: "Completa: «Im Winter schneit ___ oft.» (En invierno nieva a menudo.)",
+        hint: "el sujeto de las frases sobre el tiempo",
+        why: "<b>Es</b> es el sujeto y no se omite."
+      },
+      {
+        q: "Completa: «Die Karte ist ___ meinen Bruder.» (para)",
+        hint: "para + acusativo",
+        why: "<b>Für</b> + acusativo: <i>meinen Bruder</i>."
+      },
+      {
+        q: "Completa: «Ich komme nicht, ___ ich muss arbeiten.» (porque)",
+        hint: "explica el motivo, el verbo se queda en segunda posición",
+        why: "<b>Denn</b> no mueve el verbo."
+      },
+      {
+        q: "Completa: «Wir gehen ___ den Park.» (a través de)",
+        hint: "a través de",
+        why: "<b>Durch</b> + acusativo: <i>den Park</i>."
+      },
+      {
+        q: "¿Qué frase dice «estoy leyendo ahora»?",
+        opts: ["Ich bin lesen.", "Ich lesen gerade.", "Ich lese gerade."],
+        why: "Presente con <b>gerade</b>: <i>ich lese gerade</i>."
+      },
+      {
+        q: "¿Qué frase es correcta?",
+        opts: ["Er geht ohne ich ins Kino.", "Er geht ohne mich ins Kino.", "Er geht ohne mir ins Kino."],
+        why: "<i>Ohne</i> lleva el acusativo: <b>mich</b>."
+      },
+      {
+        q: "¿Qué frase es correcta?",
+        opts: ["Ich bleibe zu Hause, denn ich bin müde.", "Ich bleibe zu Hause, denn ich müde bin.", "Ich bleibe zu Hause, denn bin ich müde."],
+        why: "<i>Denn</i> no ocupa una posición: el verbo conjugado se queda en segunda posición, como en <i>denn ich bin müde</i> (pero también <i>denn heute bin ich müde</i>). Las otras dos opciones tienen el verbo al final o en primer lugar."
+      },
+      {
+        tr: "El sábado vamos al cine.",
+        why: "<i>Am Samstag gehen wir ins Kino</i>: verbo en segunda posición. También vale <i>Wir gehen am Samstag ins Kino</i>."
+      },
+      {
+        tr: "Llueve y hace frío, pero yo voy al cine.",
+        why: "En <i>regnet</i> se pronuncian tanto la <b>g</b> como la <b>n</b>; en <i>Kino</i> la primera <b>i</b> es larga."
+      },
+      {
+        tr: "Por desgracia no puedo, porque a las ocho tengo que trabajar.",
+        why: "En <i>muss</i> la <b>ss</b> es una <b>s</b> sorda y la <b>u</b> es breve; <i>arbeiten</i> está en infinitivo al final de la frase."
+      }
+    ]
   }
 });
