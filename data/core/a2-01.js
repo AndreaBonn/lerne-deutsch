@@ -998,7 +998,7 @@ LINGUAI.addUnits("A2", [
           ]
         },
         vocab: [
-          { it: "der Arzt", plural: "die Ärzte", ex: "Die Praxis hat heute bis 17 Uhr geöffnet." },
+          { it: "der Arzt", plural: "die Ärzte", ex: "Der Arzt hat heute bis 17 Uhr Sprechstunde." },
           { it: "die Ärztin", plural: "die Ärztinnen", ex: "Die Ärztin ist sehr freundlich." },
           { it: "die Praxis", plural: "die Praxen", ex: "Die Praxis ist am Montag geöffnet." },
           { it: "der Termin", plural: "die Termine", ex: "Ich habe morgen einen Termin." },

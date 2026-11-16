@@ -1136,7 +1136,7 @@ LINGUAI.addStrings("en", {
         why: "<b>Sie</b>: the accusative of <i>sie</i> (she) is the same as the nominative."
       },
       {
-        q: "Complete the sentence.",
+        q: "Complete the sentence (second gap: ich, accusative).",
         tr: "My colleague is nice. I often meet her and sometimes she invites me.",
         why: "<i>Sie</i> is the accusative for <i>die Kollegin</i>; <i>mich</i> is the accusative of <i>ich</i>. <i>Einladen</i> is separable: <i>ein</i> goes to the end."
       },
@@ -1673,7 +1673,7 @@ LINGUAI.addStrings("en", {
         why: "<i>Mir tut der Kopf weh</i> or <i>Der Kopf tut mir weh</i>. English has no gender here, but German <i>der Kopf</i> is masculine."
       },
       {
-        tr: "Good morning, doctor. My head hurts, and my ears hurt too.",
+        tr: "Hello, doctor. My head hurts, and my ears hurt too.",
         why: "In <i>Kopf</i> the <b>o</b> is short and <b>pf</b> is an affricate [pf]; in <i>Ohren</i> the <b>h</b> is silent and the <b>o</b> is long."
       },
       {
@@ -1735,7 +1735,7 @@ LINGUAI.addStrings("en", {
       "doctor (female)",
       "doctor's office",
       "appointment",
-      "health insurance",
+      "health insurance fund (health insurer)",
       "prescription",
       "pharmacy",
       "tablet, pill",
@@ -1787,10 +1787,10 @@ LINGUAI.addStrings("en", {
         q: "You phone a doctor's office to make an appointment.",
         setting: "You call Dr. Berger's office because you have a fever.",
         lines: [
-          { tr: "Berger practice, good morning." },
+          { tr: "Berger practice, hello." },
           {
             tr: "Say that you would like to make an appointment.",
-            answerTr: "Good morning, I would like to make an appointment."
+            answerTr: "Hello, I would like to make an appointment."
           },
           { tr: "Gladly. How long have you had the fever?" },
           {
@@ -1800,7 +1800,7 @@ LINGUAI.addStrings("en", {
         ]
       },
       {
-        tr: "Good morning, I would like to make an appointment. I have had a fever for three days and my head hurts.",
+        tr: "Hello, I would like to make an appointment. I have had a fever for three days and my head hurts.",
         why: "In <i>seit</i> the initial <b>s</b> is voiced [z] and the <b>ei</b> sounds like [aɪ]; in <i>Termin</i> the stress falls on the last syllable."
       },
       {
@@ -1825,13 +1825,13 @@ LINGUAI.addStrings("en", {
       },
       {
         h: "Reflexive verbs with a fixed pronoun",
-        p: "<em>Sich ausruhen, sich hinlegen, sich erholen, sich fühlen</em> are reflexive by nature: the pronoun is part of the verb and does not mean “rest oneself” in a literal sense. The pronoun is in the <b>accusative</b> and changes with the person: <em>mich, dich, sich, uns, euch, sich</em>. It comes after the conjugated verb: <em>Ich ruhe mich aus.</em> With <em>sollen</em> and <em>würde</em> it stands before the infinitive: <em>Du solltest dich ausruhen. Ich würde mich hinlegen.</em> With the polite form: <em>Sie sollten sich hinlegen</em> (<em>sich</em> stays lowercase)."
+        p: "<em>Sich ausruhen, sich hinlegen, sich erholen, sich fühlen</em> are the reflexive constructions practised in this lesson; <em>sich ausruhen</em> is the usual form taught. The pronoun is not “rest oneself” in a literal sense. The pronoun is in the <b>accusative</b> and changes with the person: <em>mich, dich, sich, uns, euch, sich</em>. It comes after the conjugated verb: <em>Ich ruhe mich aus.</em> With <em>sollen</em> and <em>würde</em> it stands before the infinitive: <em>Du solltest dich ausruhen. Ich würde mich hinlegen.</em> With the polite form: <em>Sie sollten sich hinlegen</em> (<em>sich</em> stays lowercase)."
       },
       {
         contrast: "English builds advice with <em>should</em> and <em>would</em>: “you should rest”, “I would go to the doctor”. German is very close: <em>solltest</em> is the Konjunktiv II of <em>sollen</em> and <em>würde</em> is “would”, with the infinitive at the end. But <em>sollte</em> has personal endings (<em>du solltest, ihr solltet</em>), while English <em>should</em> never changes. The real difference is the reflexive: English often has no pronoun (“you should rest”, “lie down”, “recover”), while German needs it: <em>sich ausruhen</em>, <em>sich hinlegen</em>, <em>sich erholen</em>. “To feel” is the same: “I feel tired” is <em>Ich fühle mich müde</em>."
       },
       {
-        trap: "<em>Du solltest</em> is advice; <em>du sollst</em> is an obligation or someone else's order, and sounds much stronger (closer to “you shall” or “you are supposed to”). Do not drop the pronoun as English does: <em>Du solltest ausruhen</em> is incomplete, you need <em>dich ausruhen</em>. Do not move it to the end either: <em>Du solltest ausruhen dich</em> is wrong. With <em>würde</em> the infinitive stays last: <em>Ich würde mich ausruhen</em>, not <em>Ich würde ausruhen mich</em>."
+        trap: "<em>Du solltest</em> is advice; <em>du sollst</em> is an obligation or someone else's order, and sounds much stronger (closer to “you shall” or “you are supposed to”). The usual construction, and the one practised in this lesson, is reflexive: <em>Du solltest dich ausruhen</em>. <em>Ausruhen</em> can also be used on its own (<em>Du solltest ausruhen</em> is possible), but with the pronoun it is the common way to say it. Do not move it to the end either: <em>Du solltest ausruhen dich</em> is wrong. With <em>würde</em> the infinitive stays last: <em>Ich würde mich ausruhen</em>, not <em>Ich würde ausruhen mich</em>."
       },
       {
         tip: "For advice prepare two versions: <em>Du solltest ...</em> to tell the other person, <em>Ich würde ...</em> to say what you would do. Then check the reflexive pronoun: same person as the subject (<em>ich ... mich</em>, <em>du ... dich</em>)."
@@ -2102,7 +2102,7 @@ LINGUAI.addStrings("en", {
         ]
       },
       {
-        q: "Translate (use dass and sollen): “The doctor says I should rest.”",
+        q: "Translate (use dass and sollen): “The doctor says I should rest.” (use sollen in the present)",
         why: "<i>Der Arzt sagt, dass ich mich ausruhen soll</i>: <i>dass</i> sends the verb to the end; <i>mich</i> comes before the infinitive <i>ausruhen</i>."
       },
       {

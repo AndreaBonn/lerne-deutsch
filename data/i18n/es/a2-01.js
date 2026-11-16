@@ -1056,7 +1056,7 @@ LINGUAI.addStrings("es", {
         p: "Para no repetir un nombre que es <b>objeto directo</b> se usa el pronombre de acusativo: <em>mich, dich, ihn, sie, es, uns, euch, sie, Sie</em>. Respecto al nominativo cambian <em>ich, du, er, wir, ihr</em>; <em>sie</em> y <em>es</em> se quedan igual. El pronombre sigue el <b>género del nombre alemán</b>, también para las cosas: <em>der Bruder → ihn</em>, <em>die Kollegin → sie</em>, <em>das Kind → es</em>, <em>der Schlüssel → ihn</em>. En la oración principal neutra el pronombre va justo después del verbo conjugado: <em>Ich kenne ihn gut.</em> Si la frase empieza por otro elemento, y el sujeto es un pronombre, el pronombre de objeto lo sigue: <em>Morgen sehe ich ihn.</em> Si el sujeto es un nombre, el pronombre de objeto suele ir antes: <em>Morgen sieht ihn mein Bruder.</em> En una subordinada con sujeto pronominal va después de la conjunción y del sujeto, antes del verbo final: <em>..., weil ich ihn gut kenne.</em> Con un sujeto nominal el pronombre va primero: <em>..., weil ihn mein Bruder kennt.</em>"
       },
       {
-        contrast: "En español el pronombre átono va <b>antes</b> del verbo (<em>lo veo, la conozco</em>); en alemán es una palabra aparte y va después del verbo: <em>Ich sehe ihn.</em> Además, el género sigue la palabra alemana, no la española, y las dos lenguas no siempre coinciden: <em>la llave</em> es femenina (<em>la veo</em>), pero <em>der Schlüssel</em> es masculino: <em>Ich sehe ihn nicht</em>. Al revés, <em>el periódico</em> es masculino (<em>lo leo</em>), pero <em>die Zeitung</em> es femenina: <em>Ich lese sie</em>. El español distingue «lo» de «le» (acusativo y dativo), y el alemán distingue <em>ihn</em> de <em>ihm</em>, con la misma idea."
+        contrast: "En español el pronombre átono va <b>antes</b> del verbo (<em>lo veo, la conozco</em>); en alemán es una palabra aparte. En una oración principal con el sujeto en primera posición, el pronombre suele ir después del verbo conjugado: <em>Ich sehe ihn.</em> También puede aparecer al principio: <em>Ihn sehe ich morgen.</em> En una subordinada: <em>..., weil ich ihn sehe.</em> Además, el género sigue la palabra alemana, no la española, y las dos lenguas no siempre coinciden: <em>la llave</em> es femenina (<em>la veo</em>), pero <em>der Schlüssel</em> es masculino: <em>Ich sehe ihn nicht</em>. Al revés, <em>el periódico</em> es masculino (<em>lo leo</em>), pero <em>die Zeitung</em> es femenina: <em>Ich lese sie</em>. El español distingue «lo» de «le» (acusativo y dativo), y el alemán distingue <em>ihn</em> de <em>ihm</em>, con la misma idea."
       },
       {
         trap: "<em>Sie</em> puede significar «ella», «ellos», «la», «las» o «los»: lo entiendes por el verbo y el contexto (<em>Ich sehe sie</em>, solo, es ambiguo). Dentro de la frase, la inicial mayúscula marca la forma de cortesía: <em>Ich kenne Sie</em> («lo conozco a usted»). Al principio de la frase la mayúscula siempre está, así que deciden el contexto y la concordancia del verbo (<em>Sie kommt</em> = ella viene, <em>Sie kommen</em> = ellos vienen o usted viene). Y no confundas <em>ihn</em> (acusativo) con <em>ihm</em> (dativo): <em>Ich sehe ihm</em> es incorrecto, porque <em>sehen</em> pide el acusativo."
@@ -1136,14 +1136,14 @@ LINGUAI.addStrings("es", {
         why: "<b>Sie</b>: el acusativo de <i>sie</i> (ella) es igual que el nominativo."
       },
       {
-        q: "Completa la frase.",
+        q: "Completa la frase (segundo hueco: ich, acusativo).",
         tr: "Mi compañera de trabajo es simpática. La veo a menudo y a veces me invita.",
         why: "<i>Sie</i> es el acusativo de <i>die Kollegin</i>; <i>mich</i> es el acusativo de <i>ich</i>. <i>Einladen</i> es separable: <i>ein</i> va al final."
       },
       {
         q: "Ordena las palabras.",
         tr: "Hoy me encuentro con ella en el café.",
-        why: "El verbo se queda en segunda posición y el pronombre <i>sie</i> sigue al sujeto <i>ich</i>. También valen <i>Ich treffe sie heute im Café</i> e <i>Im Café treffe ich sie heute</i>."
+        why: "El verbo se queda en segunda posición y el pronombre <i>sie</i> sigue al sujeto <i>ich</i>. En las variantes con <i>sie</i> en el campo central, este sigue a <i>ich</i>; también puede ir en primer lugar para destacar a la persona: <i>Sie treffe ich heute im Café</i>."
       },
       {
         q: "Traduce (hablas de tu hermano): «Lo veo mañana.»",
@@ -1366,7 +1366,7 @@ LINGUAI.addStrings("es", {
         why: "<b>Ihm</b>: dativo de <i>er</i>. El acusativo <i>ihn</i> (la cosa, <i>der Schlüssel</i>) va primero."
       },
       {
-        q: "Completa la frase.",
+        q: "Completa la frase (segundo hueco: du, dativo).",
         tr: "La carta está lista. Mañana te la mando.",
         why: "<i>Der Brief</i> es masculino: <b>ihn</b> (acusativo) va antes de <b>dir</b> (dativo). En español «la carta» es femenina («te la») y el dativo va primero: el orden es el opuesto."
       },
@@ -1412,7 +1412,7 @@ LINGUAI.addStrings("es", {
         trap: "No añadas <em>-st</em>: <em>Kommst!</em> no es un imperativo. Con los verbos fuertes con <em>e → ie</em> no digas <em>Lese!</em> sino <em>Lies!</em>, y no <em>Nehm!</em> sino <em>Nimm!</em> Con <em>sein</em> la forma es <em>Sei vorsichtig!</em> No pienses que <em>mal</em> y <em>doch</em> son palabras vacías: sin ellas la frase sigue siendo correcta, pero suena más seca."
       },
       {
-        tip: "Cuando das una orden o un consejo a un amigo: parte del infinitivo, quita <em>-en</em>, añade <em>-e</em> si la raíz termina en <em>-t</em> o <em>-d</em>, y pon <em>mal</em> o <em>doch</em> para suavizar: <em>Warte mal! Komm doch mit!</em>"
+        tip: "Cuando das una orden o un consejo a un amigo, con un verbo regular: parte del infinitivo, quita <em>-en</em>, añade <em>-e</em> si la raíz termina en <em>-t</em> o <em>-d</em>, y pon <em>mal</em> o <em>doch</em> para suavizar: <em>Warte mal! Komm doch mit!</em> Los verbos con cambio vocálico y <em>sein</em> son excepciones: <em>Nimm! Lies! Sei!</em>"
       }
     ],
     grammar: {
@@ -1742,7 +1742,7 @@ LINGUAI.addStrings("es", {
       "la fiebre",
       "la tos",
       "concertar (una cita)",
-      "desde, hace (tiempo)"
+      "desde; desde hace (con una duración)"
     ],
     exercises: [
       {
@@ -1831,7 +1831,7 @@ LINGUAI.addStrings("es", {
         contrast: "El español construye el consejo con el condicional: «deberías descansar», «yo iría al médico». El alemán usa el Konjunktiv II de <em>sollen</em> o <em>würde</em> + infinitivo, no una desinencia propia en el verbo principal. Con los reflexivos, el clítico español se pega al infinitivo (<em>acostarte</em>); en alemán es una palabra aparte y va delante: <em>dich hinlegen</em>. Y los verbos no siempre coinciden en ser reflexivos: «descansar» no lo es en español, pero <em>sich ausruhen</em> sí; <em>sich hinlegen</em> es «acostarse» y <em>sich erholen</em> es «recuperarse»."
       },
       {
-        trap: "<em>Du solltest</em> es un consejo; <em>du sollst</em> es una obligación o un encargo de otra persona, y suena mucho más fuerte. No te olvides del pronombre como en «descansar»: <em>Du solltest ausruhen</em> está incompleto, hace falta <em>dich ausruhen</em>. Tampoco lo muevas al final: <em>Du solltest ausruhen dich</em> es incorrecto. Con <em>würde</em> el infinitivo queda al final: <em>Ich würde mich ausruhen</em>, no <em>Ich würde ausruhen mich</em>."
+        trap: "<em>Du solltest</em> es un consejo; <em>du sollst</em> es una obligación o un encargo de otra persona, y suena mucho más fuerte. La forma reflexiva es la habitual y la que se practica en esta lección: <em>Du solltest dich ausruhen</em>. <em>Ausruhen</em> también puede usarse sin pronombre (<em>Du solltest ausruhen</em> es correcto), pero con el pronombre es la construcción corriente. Tampoco lo muevas al final: <em>Du solltest ausruhen dich</em> es incorrecto. Con <em>würde</em> el infinitivo queda al final: <em>Ich würde mich ausruhen</em>, no <em>Ich würde ausruhen mich</em>."
       },
       {
         tip: "Para el consejo prepara dos versiones: <em>Du solltest ...</em> para decírselo al otro, <em>Ich würde ...</em> para decir qué harías tú. Después comprueba el pronombre reflexivo: misma persona que el sujeto (<em>ich ... mich</em>, <em>du ... dich</em>)."
@@ -1932,7 +1932,7 @@ LINGUAI.addStrings("es", {
     objectives: [
       "introducir un contenido con dass tras ich finde, ich glaube, ich weiß, der Arzt sagt",
       "poner el verbo conjugado al final en la frase con dass",
-      "unir causa y consecuencia con deshalb, que lleva el verbo justo después",
+      "unir causa y consecuencia con deshalb, que en primera posición lleva el verbo justo después",
       "hablar de deporte, alimentación, sueño y hábitos"
     ],
     theory: [
@@ -1942,28 +1942,28 @@ LINGUAI.addStrings("es", {
       },
       {
         h: "deshalb: la consecuencia, con inversión",
-        p: "<b>Deshalb</b> («por eso») une dos oraciones principales y ocupa la <b>primera posición</b> de la segunda: el verbo viene justo después y el sujeto lo sigue. <em>Ich schlafe schlecht. Deshalb bin ich müde.</em> Sinónimos: <em>deswegen, darum</em>. También puede ir tras una coma: <em>Ich schlafe schlecht, deshalb bin ich müde.</em>"
+        p: "<b>Deshalb</b> («por eso») une dos oraciones principales y suele ocupar la <b>primera posición</b> de la segunda (no es obligatorio: <em>Ich bin deshalb müde</em> también es correcto); cuando va primero, el verbo conjugado viene justo después y el sujeto lo sigue. <em>Ich schlafe schlecht. Deshalb bin ich müde.</em> Sinónimos: <em>deswegen, darum</em>. También puede ir tras una coma: <em>Ich schlafe schlecht, deshalb bin ich müde.</em>"
       },
       {
         contrast: "En español, «creo que» con una afirmación va con indicativo («creo que el deporte es importante»), pero «no creo que» pide subjuntivo («no creo que sea importante»). En alemán la frase con <em>dass</em> usa el indicativo en ambos casos: <em>Ich denke, dass Sport wichtig <b>ist</b></em>, <em>Ich glaube nicht, dass Sport schlecht <b>ist</b></em>. En español no se pone coma delante de «que»; en alemán la coma antes de <em>dass</em> es obligatoria. Y «por eso» no cambia el orden en español (<em>duermo mal, por eso estoy cansado</em> o <em>por eso yo estoy cansado</em>), mientras que <em>deshalb</em> obliga a poner el verbo primero: <em>Deshalb bin ich müde</em>."
       },
       {
-        trap: "<em>Deshalb</em> no manda el verbo al final como hace <em>dass</em>: <em>Deshalb ich bin müde</em> y <em>Deshalb ich müde bin</em> son incorrectas. Y con <em>dass</em> el verbo no se queda en segunda posición: <em>Ich finde, dass Sport ist wichtig</em> es incorrecto. No confundas <em>dass</em> (conjunción) con <em>das</em> (artículo o pronombre): el español usa «que» en ambos casos, pero el alemán los escribe distinto."
+        trap: "<em>Deshalb</em> no manda el verbo al final como hace <em>dass</em>: <em>Deshalb ich bin müde</em> y <em>Deshalb ich müde bin</em> son incorrectas. Y con <em>dass</em> el verbo no se queda en segunda posición: <em>Ich finde, dass Sport ist wichtig</em> es incorrecto. No confundas <em>dass</em> con <em>das</em>: <em>dass</em> = «que» (conjunción), <em>das</em> = «que» (pronombre relativo) o <em>das</em> = artículo neutro («el», «la»). El alemán distingue por escrito la conjunción del resto."
       },
       {
-        tip: "Delante de <em>dass</em> pon la coma y lleva el verbo al final; tras <em>deshalb</em> escribe el verbo enseguida. Antes de escribir pregúntate: ¿la frase empieza con una conjunción (<em>dass</em>, verbo al final) o con un adverbio (<em>deshalb</em>, verbo enseguida)?"
+        tip: "Delante de <em>dass</em> pon la coma y lleva el verbo al final; si <em>deshalb</em> abre la frase, escribe el verbo enseguida. Antes de escribir pregúntate: ¿la frase empieza con una conjunción (<em>dass</em>, verbo al final) o con un adverbio como <em>deshalb</em> (verbo enseguida)?"
       }
     ],
     grammar: {
       title: "dass y deshalb",
-      note: "<b>dass</b>: el verbo conjugado va al final. <b>deshalb</b>: el verbo viene justo después, el sujeto lo sigue.",
+      note: "<b>dass</b>: el verbo conjugado va al final. <b>deshalb</b> en primera posición: el verbo viene justo después, el sujeto lo sigue.",
       table: {
         head: ["elemento", "posición del verbo", "ejemplo"],
         rows: [
           ["oración principal", "segunda posición", "Sport ist wichtig."],
           ["dass", "al final", "Ich finde, dass Sport wichtig ist."],
           ["dass con modal", "el modal cierra", "..., dass ich mehr trinken soll."],
-          ["deshalb", "justo después de deshalb", "Ich schlafe schlecht. Deshalb bin ich müde."]
+          ["deshalb", "justo después de deshalb, si abre la frase", "Ich schlafe schlecht. Deshalb bin ich müde."]
         ]
       },
       examples: [
@@ -2006,7 +2006,7 @@ LINGUAI.addStrings("es", {
           "Ich schlafe schlecht. Deshalb bin ich müde.",
           "Ich schlafe schlecht. Deshalb ich müde bin."
         ],
-        why: "Tras <b>deshalb</b> el verbo viene enseguida, luego el sujeto: <i>Deshalb bin ich müde</i>. <i>Deshalb</i> no manda el verbo al final."
+        why: "Con <b>deshalb</b> en primera posición el verbo viene enseguida, luego el sujeto: <i>Deshalb bin ich müde</i>. <i>Deshalb</i> no manda el verbo al final."
       },
       {
         q: "Completa: «Der Arzt sagt, ___ ich mehr Wasser trinken soll.» (que)",
@@ -2021,7 +2021,7 @@ LINGUAI.addStrings("es", {
       {
         q: "Completa: «Ich bin oft müde. Deshalb ___ ich früh ins Bett.» (gehen, ich)",
         hint: "gehen, ich",
-        why: "<b>Gehe</b>: tras <i>Deshalb</i> el verbo viene enseguida, luego <i>ich</i>."
+        why: "<b>Gehe</b>: con <i>Deshalb</i> en primera posición el verbo viene enseguida, luego <i>ich</i>."
       },
       {
         q: "Completa la frase.",
@@ -2102,7 +2102,7 @@ LINGUAI.addStrings("es", {
         ]
       },
       {
-        q: "Traduce (usa dass y sollen): «El médico dice que debo descansar.»",
+        q: "Traduce (usa dass y sollen): «El médico dice que debo descansar.» (usa sich ausruhen)",
         why: "<i>Der Arzt sagt, dass ich mich ausruhen soll</i>: <i>dass</i> manda el verbo al final; <i>mich</i> precede al infinitivo <i>ausruhen</i>."
       },
       {

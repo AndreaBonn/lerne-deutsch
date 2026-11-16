@@ -1325,7 +1325,7 @@ LINGUAI.addStrings("pl", {
         p: "Żeby opisać zwyczaj, używa się <strong>man</strong> z czasownikiem w trzeciej osobie liczby pojedynczej: <em>In der Schweiz sagt man oft Grüezi.</em> Tendencję zaznacza się przez <em>oft, meistens, in vielen Familien</em>: <em>In vielen Familien feiert man Weihnachten am 24. Dezember.</em> Rejestr wybiera się przez <em>du</em> i <em>Sie</em>: <em>Im Büro siezt man oft, unter Freunden duzt man sich.</em>"
       },
       {
-        contrast: "W Polsce Wigilia, wieczór 24 grudnia, jest dla wielu rodzin głównym momentem świąt, często też z prezentami tego samego wieczoru. W wielu niemieckich rodzinach to również wieczór 24 grudnia, <em>Heiligabend</em>, z prezentami; 25 i 26 grudnia to <em>Feiertage</em>. To tendencje, nie reguły: każda rodzina i każdy region mają swoje zwyczaje. Na <em>Silvester</em> (31 grudnia, po polsku sylwester) wiele osób świętuje z przyjaciółmi i o północy ogląda fajerwerki. Inna różnica to zwracanie się do kogoś: po polsku mówi się <em>proszę pana</em> lub <em>proszę pani</em> i trzeba wybrać formę według płci, a po niemiecku jest jedno <em>Sie</em> dla każdego, z czasownikiem w trzeciej osobie liczby mnogiej: <em>Sie kommen</em>. Po polsku <em>dzień dobry</em> pasuje prawie wszędzie; po niemiecku wybór między <em>Grüß Gott</em>, <em>Grüezi</em> i <em>Servus</em> zależy mocno od miejsca, w którym się jesteś."
+        contrast: "W Polsce Wigilia, wieczór 24 grudnia, jest dla wielu rodzin głównym momentem świąt, często też z prezentami tego samego wieczoru. W wielu niemieckich rodzinach to również wieczór 24 grudnia, <em>Heiligabend</em>, z prezentami; 25 i 26 grudnia to <em>Feiertage</em>. To tendencje, nie reguły: każda rodzina i każdy region mają swoje zwyczaje. Na <em>Silvester</em> (31 grudnia, po polsku sylwester) wiele osób świętuje z przyjaciółmi i o północy ogląda fajerwerki. Inna różnica to zwracanie się do kogoś: po polsku mówi się <em>proszę pana</em> lub <em>proszę pani</em> i trzeba wybrać formę według płci, a po niemiecku jest jedno <em>Sie</em> dla każdego, z czasownikiem w trzeciej osobie liczby mnogiej: <em>Sie kommen</em>. Po polsku <em>dzień dobry</em> pasuje prawie wszędzie; po niemiecku wybór między <em>Grüß Gott</em>, <em>Grüezi</em> i <em>Servus</em> zależy mocno od miejsca, w którym jesteś."
       },
       {
         trap: "Nie uogólniaj: «W Niemczech mówi się Grüß Gott» jest zbyt szerokie, bo w wielu regionach północy prawie się tego nie słyszy. Lepiej ostrożne zdanie: <em>In Süddeutschland und in Österreich sagt man oft Grüß Gott.</em> Inna różnica w pisowni: w Szwajcarii zwykle pisze się <em>ss</em> zamiast <em>ß</em> (<em>Strasse</em>, <em>Grüsse</em>), a w Niemczech i w Austrii używa się <em>ß</em> (<em>Straße</em>, <em>Grüße</em>)."
@@ -1591,6 +1591,573 @@ LINGUAI.addStrings("pl", {
       {
         tr: "Składam ci życzenia urodzinowe. Masz ochotę świętować z nami?",
         why: "W <i>gratuliere</i> <b>ie</b> to długie <b>i</b> [iː]; w <i>Geburtstag</i> akcent pada na <b>bur</b>; w <i>feiern</i> <b>ei</b> to [aɪ]."
+      }
+    ]
+  },
+  "unit:a2-u08": {
+    title: "Plany",
+    grammarNote: "vorhaben + zu · powtórka czasów (Perfekt, Präteritum, Futur, Konjunktiv II) · powtórka przypadków i zaimków · weil, dass, als, wenn"
+  },
+  "lesson:a2-u08-l1": {
+    theme: "Plany i zamiary",
+    title: "Mam zamiar ...",
+    objectives: [
+      "mówić, co się ma zamiar zrobić, za pomocą Ich habe vor, ... zu ...",
+      "pytać o plany drugiej osoby: Was hast du vor?",
+      "mówić o przyszłości czasem teraźniejszym ze wskaźnikiem czasu albo z werden"
+    ],
+    theory: [
+      {
+        h: "vorhaben + zu + bezokolicznik",
+        p: "Żeby powiedzieć, co się ma <strong>zamiar</strong> zrobić, używa się czasownika <strong>vorhaben</strong>, po którym stoi drugi czasownik w bezokoliczniku z <strong>zu</strong>, na końcu zdania: <em>Ich habe vor, im Sommer nach Wien zu ziehen. Hast du vor, nach dem Studium in Berlin zu arbeiten?</em> Przy czasowniku rozdzielnie złożonym <em>zu</em> wchodzi w środek, w jednym wyrazie: <em>umziehen</em> → <em>Ich habe vor, im Sommer umzuziehen.</em> Przecinek stawia się wtedy, gdy grupa z <em>zu</em> zawiera poza bezokolicznikiem inne wyrazy."
+      },
+      {
+        h: "vorhaben jest czasownikiem rozdzielnie złożonym",
+        p: "<em>Vorhaben</em> rozdziela się jak <em>aufstehen</em>: <strong>haben</strong> przyjmuje końcówki, a <strong>vor</strong> idzie na koniec zdania głównego: <em>Ich habe vor, ... / Wir haben vor, ...</em> Bez drugiego czasownika można zapytać <em>Was hast du morgen vor?</em> (co masz zaplanowane na jutro?), a odpowiedzią może być <em>Ich habe nichts vor</em> (nie mam żadnych planów)."
+      },
+      {
+        h: "Przyszłość: czas teraźniejszy albo werden",
+        p: "Mówiąc o planach, po niemiecku często używa się <strong>czasu teraźniejszego</strong> ze wskaźnikiem czasu: <em>Nächstes Jahr ziehe ich nach Berlin.</em> <strong>Futur I</strong> (<em>werden</em> na drugim miejscu, bezokolicznik na końcu) podkreśla decyzję albo obietnicę: <em>Ich werde im Herbst Informatik studieren.</em> Po <em>werden</em> i po czasownikach modalnych nie ma <em>zu</em>."
+      },
+      {
+        contrast: "Po polsku mówi się <em>mam zamiar</em> albo <em>zamierzam</em> i od razu następuje bezokolicznik: <em>zamierzam przeprowadzić się latem</em>, bez żadnego dodatkowego słowa. Po niemiecku <em>vorhaben</em> wymaga <em>zu</em> + bezokolicznik, a cząstka <em>vor</em> odrywa się i idzie na koniec. Różni się też przyszłość: po polsku jest czas przyszły (<em>będę studiować</em>, <em>przeprowadzę się</em>), a niemiecki w rozmowie chętnie używa czasu teraźniejszego ze wskaźnikiem czasu (<em>Nächstes Jahr ziehe ich um</em>)."
+      },
+      {
+        trap: "Nie mówi się „Ich habe vor, umziehen” ani „Ich habe vor, zu umziehen”: przy czasowniku rozdzielnie złożonym forma brzmi <em>umzuziehen</em>. Po polsku po <em>zamierzam</em> stoi sam bezokolicznik, więc łatwo pominąć <em>zu</em>: <em>Ich habe vor, nach Wien ziehen</em> jest błędem. Po <em>werden</em> też nie ma <em>zu</em>: <em>Ich werde studieren</em>, nie „Ich werde zu studieren”. Nie myl <em>Ich habe vor, ... zu ...</em> z <em>Ich will ...</em>: po <em>wollen</em> bezokolicznik stoi bez <em>zu</em> (<em>Ich will umziehen</em>)."
+      },
+      {
+        tip: "Żeby opisać plan dwoma zdaniami: <em>Ich habe vor, im Sommer umzuziehen. Dort werde ich studieren.</em> Najpierw zamiar z <em>vorhaben</em>, potem ciąg dalszy z <em>werden</em>."
+      }
+    ],
+    grammar: {
+      title: "vorhaben + zu i przyszłość",
+      note: "<b>vorhaben</b> + <b>zu</b> + bezokolicznik na końcu: <i>Ich habe vor, nach Wien zu ziehen.</i> Czasownik rozdzielnie złożony: <b>zu</b> w środku (<i>umzuziehen</i>). Przyszłość: czas teraźniejszy + wskaźnik czasu albo <b>werden</b> + bezokolicznik.",
+      table: {
+        head: ["konstrukcja", "przykład", "uwaga"],
+        rows: [
+          ["vorhaben + zu", "Ich habe vor, im Sommer nach Wien zu ziehen.", "vor na końcu zdania głównego, zu + bezokolicznik na końcu"],
+          ["czasownik rozdzielnie złożony", "Ich habe vor, im Sommer umzuziehen.", "zu w środku: umzuziehen"],
+          ["czas teraźniejszy + czas", "Nächstes Jahr ziehe ich nach Berlin.", "przyszłość ze wskaźnikiem czasu"],
+          ["Futur I", "Ich werde im Herbst Informatik studieren.", "werden na drugim miejscu, bezokolicznik na końcu"]
+        ]
+      },
+      examples: [
+        { tr: "Mam zamiar przeprowadzić się latem.", note: "umziehen: zu w środku, umzuziehen" },
+        { tr: "Czy masz zamiar pracować w Wiedniu po studiach?", note: "pytanie: Hast du vor, ... zu ...?" },
+        { tr: "Mamy zamiar poszukać mieszkania.", note: "zu przed suchen, na końcu" },
+        { tr: "Co masz zaplanowane na jutro?", note: "vorhaben bez drugiego czasownika: vor na końcu" },
+        { tr: "W przyszłym roku przeprowadzam się do Berlina.", note: "czas teraźniejszy ze wskaźnikiem czasu" },
+        { tr: "Jesienią będę studiować informatykę.", note: "Futur I: werden + bezokolicznik" }
+      ]
+    },
+    vocab: [
+      "plan",
+      "mieć zamiar, mieć w planach",
+      "planować",
+      "przeprowadzka",
+      "przeprowadzić się",
+      "studia, kierunek studiów",
+      "studiować",
+      "miejsce pracy, posada",
+      "praca (potocznie)",
+      "wypowiedzieć (umowę), zwolnić się z pracy",
+      "egzamin",
+      "nauka zawodu"
+    ],
+    exercises: [
+      {
+        tr: "Czas teraźniejszy czasownika vorhaben, wszystkie osoby.",
+        why: "<i>Ich habe vor, du hast vor, er hat vor, wir haben vor, ihr habt vor, sie haben vor</i>: <i>haben</i> przyjmuje końcówki, a <i>vor</i> idzie na koniec zdania głównego."
+      },
+      {
+        q: "Jak powiedzieć „Mam zamiar przeprowadzić się latem”?",
+        opts: [
+          "Ich habe vor, im Sommer umzuziehen.",
+          "Ich habe vor, im Sommer zu umziehen.",
+          "Ich habe vor, im Sommer umziehen zu."
+        ],
+        why: "Przy czasowniku rozdzielnie złożonym <b>zu</b> wchodzi w środek, w jednym wyrazie: <i>umzuziehen</i>."
+      },
+      {
+        q: "Uzupełnij: „Ich habe vor, nach dem Studium in Berlin ___ arbeiten.”",
+        hint: "przed bezokolicznikiem",
+        why: "<b>zu</b> stoi bezpośrednio przed bezokolicznikiem: <i>in Berlin zu arbeiten</i>."
+      },
+      {
+        q: "Uzupełnij: „Wir ___ im Sommer nach Wien ziehen.” (Futur I od werden, wir)",
+        hint: "werden, wir",
+        why: "<b>Werden</b> stoi na drugim miejscu, a bezokolicznik <i>ziehen</i> zostaje na końcu: <i>Wir werden im Sommer nach Wien ziehen.</i>"
+      },
+      {
+        q: "Uzupełnij: „Ich habe ___, im Herbst zu studieren.” (vorhaben)",
+        hint: "oderwana część vorhaben",
+        why: "<b>Vor</b>: <i>vorhaben</i> jest rozdzielne, a cząstka zostaje na końcu zdania głównego, przed przecinkiem."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Mam zamiar wypowiedzieć latem umowę najmu.",
+        why: "<i>Ich habe vor, im Sommer meine Wohnung zu kündigen</i>: <i>habe</i> przy <i>ich</i>, a <i>zu</i> przed <i>kündigen</i>, na końcu."
+      },
+      {
+        q: "Ułóż wyrazy w odpowiedniej kolejności.",
+        tr: "Mam zamiar przeprowadzić się latem.",
+        why: "<i>Ich habe vor, im Sommer umzuziehen.</i> „Latem” odnosi się do przeprowadzki, a nie do zamiaru: stoi więc w grupie z <i>zu</i>, po przecinku."
+      },
+      {
+        q: "Przetłumacz: „Mam zamiar przeprowadzić się latem do Wiednia.” (użyj vorhaben)",
+        why: "<i>Ich habe vor, im Sommer nach Wien umzuziehen</i>: <i>umzuziehen</i> w jednym wyrazie. Poprawne jest też <i>nach Wien zu ziehen</i>."
+      },
+      {
+        tr: "Mam zamiar przeprowadzić się latem do Wiednia. Tam będę studiować informatykę.",
+        why: "W <i>Wien</i> <b>W</b> to [v], a <b>ie</b> czyta się [iː]; w <i>Sommer</i> początkowe <b>S</b> przed samogłoską jest zwykle dźwięczne [z]; w <i>studieren</i> początkowe <b>st</b> to [ʃt]."
+      },
+      {
+        tr: "Po studiach mam zamiar pracować w Berlinie.",
+        why: "W <i>Studium</i> początkowe <b>st</b> to [ʃt]; w <i>nach</i> <b>ch</b> po <b>a</b> to [x]; w <i>arbeiten</i> <b>ei</b> to [aɪ]."
+      }
+    ]
+  },
+  "lesson:a2-u08-l2": {
+    theme: "Powtórka czasów",
+    title: "Powtórka: czasy",
+    objectives: [
+      "wybrać właściwy czas: Perfekt, Präteritum, czas teraźniejszy lub Futur I, Konjunktiv II",
+      "tworzyć Perfekt z haben albo sein i Partizip II",
+      "używać Präteritum od sein, haben i czasowników modalnych",
+      "złożyć prośbę albo wyrazić życzenie za pomocą könnten i hätte gern"
+    ],
+    theory: [
+      {
+        h: "Cztery sposoby mówienia o czasie",
+        p: "<strong>Perfekt</strong> (<em>haben</em> albo <em>sein</em> + Partizip II) to czas przeszły języka mówionego: <em>Gestern habe ich gearbeitet. Wir sind nach Wien umgezogen.</em> <strong>Präteritum</strong> stosuje się głównie z <em>sein, haben</em> i czasownikami modalnymi, także w mowie: <em>Ich war krank. Wir hatten keinen Hund. Ich musste arbeiten.</em> Przyszłość: czas teraźniejszy ze wskaźnikiem czasu (<em>Morgen fahre ich</em>) albo <strong>werden</strong> + bezokolicznik. <strong>Konjunktiv II</strong> służy do próśb i życzeń: <em>Könnten Sie mir helfen? Ich hätte gern mehr Zeit.</em>"
+      },
+      {
+        h: "haben czy sein w Perfekcie",
+        p: "Większość czasowników tworzy Perfekt z <strong>haben</strong>: <em>Ich habe studiert.</em> Czasowniki nieprzechodnie, które wyrażają zmianę miejsca albo stanu, biorą <strong>sein</strong> (nie wszystkie czasowniki ruchu: <em>tanzen</em> bierze <strong>haben</strong>): <em>Ich bin umgezogen. Wir sind angekommen.</em> Tak samo <em>sein</em> i <em>bleiben</em>: <em>Ich bin geblieben.</em> Odmieniony czasownik stoi na drugim miejscu, Partizip II na końcu."
+      },
+      {
+        contrast: "Po polsku jest jeden czas przeszły (<em>pisałem</em>, <em>napisałem</em>), bez czasownika posiłkowego, a różnicę robi aspekt. Po niemiecku Perfekt wymaga <em>haben</em> albo <em>sein</em> i nie oznacza aspektu: <em>Ich habe geschrieben</em> może odpowiadać obu polskim formom, zależnie od kontekstu. Dlatego wybór <em>haben</em> albo <em>sein</em> jest dla Polaka czymś nowym: <em>przeprowadziłem się</em> to po niemiecku <em>Ich bin umgezogen</em>. Präteritum pojawia się w mowie głównie przy <em>war, hatte</em> i czasownikach modalnych. <em>Konjunktiv II</em> grzecznościowy (<em>Könnten Sie ...?</em>, <em>Ich hätte gern ...</em>) odpowiada polskiemu trybowi przypuszczającemu (<em>czy mógłby Pan ..., chciałbym</em>)."
+      },
+      {
+        trap: "Nie miesza się szyku: „Gestern ich habe gearbeitet” ma czasownik na trzecim miejscu, a <em>Gestern habe ich gearbeitet</em> ma odmieniony czasownik na drugim. Nie mówi się „Ich habe umgezogen” (jak po polsku, gdzie nie ma czasownika posiłkowego): <em>umziehen</em> zachowuje się jak czasownik ruchu i bierze <em>sein</em>, <em>Ich bin umgezogen</em>. A prośba brzmi <em>Könnten Sie ...?</em>, nie „Könnte Sie ...?”."
+      },
+      {
+        tip: "Zanim napiszesz zdanie, zapytaj się: czy to już się stało (Perfekt albo <em>war/hatte</em>), czy się stanie (czas teraźniejszy + czas albo <em>werden</em>), czy to prośba (Konjunktiv II)? Potem sprawdź, gdzie stoi odmieniony czasownik: na drugim miejscu."
+      }
+    ],
+    grammar: {
+      title: "Powtórka czasów",
+      note: "<b>Perfekt</b>: haben/sein + Partizip II na końcu. <b>Präteritum</b>: war, hatte, czasowniki modalne. <b>Przyszłość</b>: czas teraźniejszy + czas albo <b>werden</b> + bezokolicznik. <b>Konjunktiv II</b>: könnten, hätte gern.",
+      table: {
+        head: ["czas", "przykład", "zastosowanie"],
+        rows: [
+          ["Perfekt", "Gestern habe ich den ganzen Tag gearbeitet.", "czas przeszły języka mówionego"],
+          ["Perfekt z sein", "Letztes Jahr sind wir nach Wien umgezogen.", "ruch albo zmiana stanu"],
+          ["Präteritum", "Als Kind war ich oft krank.", "sein, haben, czasowniki modalne"],
+          ["Przyszłość", "Morgen werde ich dich anrufen.", "czas teraźniejszy + czas albo werden"],
+          ["Konjunktiv II", "Könnten Sie mir bitte helfen?", "prośby i życzenia"]
+        ]
+      },
+      examples: [
+        { tr: "Wczoraj pracowałem cały dzień.", note: "Perfekt z haben" },
+        { tr: "W zeszłym roku przeprowadziliśmy się do Wiednia.", note: "Perfekt z sein" },
+        { tr: "Jako dziecko często chorowałem i nie mieliśmy psa.", note: "Präteritum od sein i haben" },
+        { tr: "W przyszłym tygodniu jadę do Hamburga.", note: "czas teraźniejszy ze wskaźnikiem czasu" },
+        { tr: "Jutro do ciebie zadzwonię.", note: "Futur I: werden + bezokolicznik" },
+        { tr: "Czy mógłby mi Pan pomóc? Chciałbym mieć więcej czasu.", note: "Konjunktiv II grzecznościowy i życzeniowy" }
+      ]
+    },
+    vocab: [
+      "CV, życiorys",
+      "doświadczenie",
+      "praktyka, staż",
+      "aplikacja, podanie o pracę",
+      "szef",
+      "kolega z pracy",
+      "pensja",
+      "kurs"
+    ],
+    exercises: [
+      {
+        tr: "Perfekt od umziehen, wszystkie osoby.",
+        why: "<i>Ich bin umgezogen, du bist umgezogen, er ist umgezogen, wir sind umgezogen, ihr seid umgezogen, sie sind umgezogen</i>: <i>umziehen</i> bierze <i>sein</i>, a Partizip II ma <i>-ge-</i> w środku."
+      },
+      {
+        tr: "Präteritum od arbeiten, wszystkie osoby.",
+        why: "<i>Arbeitete, arbeitetest, arbeitete, arbeiteten, arbeitetet, arbeiteten</i>: temat kończy się na <i>-t</i>, więc między tematem a końcówką wstawia się <b>-e-</b>."
+      },
+      {
+        tr: "Konjunktiv II od können, wszystkie osoby.",
+        why: "<i>Könnte, könntest, könnte, könnten, könntet, könnten</i>: formę tworzy się od Präteritum <i>konnte</i> z przegłosem."
+      },
+      {
+        q: "Które zdanie jest poprawne? (Wczoraj napisałem list.)",
+        opts: [
+          "Gestern ich habe einen Brief geschrieben.",
+          "Gestern habe ich einen Brief geschrieben.",
+          "Gestern habe ich einen Brief schrieben."
+        ],
+        why: "Gdy <i>gestern</i> stoi na pierwszym miejscu, odmieniony czasownik (<i>habe</i>) zostaje na drugim, podmiot idzie za nim, a Partizip II <i>geschrieben</i> na końcu."
+      },
+      {
+        q: "Które zdanie jest grzeczną prośbą?",
+        opts: [
+          "Könnten Sie mir bitte helfen?",
+          "Können Sie mir bitte geholfen?",
+          "Könnte Sie mir bitte helfen?"
+        ],
+        why: "<b>Könnten Sie ...?</b>: przy <i>Sie</i> forma brzmi <i>könnten</i>, a bezokolicznik <i>helfen</i> idzie na koniec."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "W zeszłym roku przeprowadziliśmy się do Wiednia.",
+        why: "<i>Letztes Jahr sind wir nach Wien umgezogen</i>: <i>umziehen</i> tworzy Perfekt z <b>sein</b>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Jako dziecko często chorowałem i nie mieliśmy psa.",
+        why: "<i>Als Kind war ich oft krank, und wir hatten keinen Hund</i>: Präteritum od <i>sein</i> (<i>war</i>) i od <i>haben</i> (<i>hatten</i>)."
+      },
+      {
+        q: "Uzupełnij zdanie (druga luka: haben w Konjunktiv II).",
+        tr: "Jutro do ciebie zadzwonię. Chciałbym mieć więcej czasu.",
+        why: "<i>Morgen werde ich dich anrufen</i>: Futur I, z bezokolicznikiem na końcu. <i>Ich hätte gern mehr Zeit</i>: Konjunktiv II od <i>haben</i>, wyrażający życzenie."
+      },
+      {
+        q: "Przetłumacz: „Wczoraj pracowałem cały dzień.” (użyj Perfekt)",
+        why: "<i>Gestern habe ich den ganzen Tag gearbeitet</i> albo <i>Ich habe gestern den ganzen Tag gearbeitet</i>: <i>habe</i> na drugim miejscu, <i>gearbeitet</i> na końcu."
+      },
+      {
+        tr: "W zeszłym roku przeprowadziłem się do Wiednia. Teraz tam pracuję, a w przyszłym roku pójdę na kurs. Chciałbym mieć więcej czasu.",
+        why: "W <i>Wien</i> <b>W</b> to [v]; w <i>besuchen</i> <b>ch</b> po <b>u</b> to [x]; w <i>gern</i> <b>g</b> to [g]."
+      },
+      {
+        tr: "W zeszłym roku przeprowadziłem się, a jesienią będę studiować.",
+        why: "W <i>umgezogen</i> <b>z</b> czyta się zawsze [ts], a <b>g</b> to [g]; w <i>studieren</i> początkowe <b>st</b> to [ʃt]; w <i>werde</i> <b>w</b> to [v]."
+      }
+    ]
+  },
+  "lesson:a2-u08-l3": {
+    theme: "Powtórka przypadków i zaimków",
+    title: "Powtórka: przypadki i zaimki",
+    objectives: [
+      "wybrać między zaimkiem w bierniku a w celowniku",
+      "używać rodzajnika w celowniku (dem, der, dem, den)",
+      "ułożyć w dobrej kolejności zaimek i rzeczownik, biernik i celownik",
+      "rozpoznawać czasowniki, które wymagają celownika (helfen, danken, gehören, schenken)"
+    ],
+    theory: [
+      {
+        h: "Zaimki: mianownik, biernik, celownik",
+        p: "<strong>ich / mich / mir</strong>, <strong>du / dich / dir</strong>, <strong>er / ihn / ihm</strong>, <strong>sie / sie / ihr</strong>, <strong>es / es / ihm</strong>, <strong>wir / uns / uns</strong>, <strong>ihr / euch / euch</strong>, <strong>sie / sie / ihnen</strong>. Biernik odpowiada na pytanie <em>kogo? co?</em> (<em>Ich sehe ihn.</em>), celownik na pytanie <em>komu?</em> (<em>Ich helfe ihm.</em>). Przy <em>wir</em> i <em>ihr</em> biernik i celownik mają tę samą formę: <em>Er sieht uns. Er hilft uns.</em>"
+      },
+      {
+        h: "Rodzajnik w celowniku",
+        p: "W celowniku rodzajnik określony to <strong>dem</strong> (rodzaj męski i nijaki), <strong>der</strong> (rodzaj żeński), <strong>den</strong> (liczba mnoga; rzeczownik dostaje <strong>-n</strong>, z wyjątkiem liczby mnogiej, która już kończy się na -n lub -en, oraz na -s): <em>dem Vermieter, der Mutter, den Kindern, den Nachbarn, den Jobs.</em> Z rodzajnikiem nieokreślonym i zaimkiem dzierżawczym: <em>einem, einer, meinem, meiner.</em> Czasowniki z celownikiem: <strong>helfen, danken, gehören, gefallen, gratulieren</strong>. Przy <strong>schenken</strong> (jemandem etwas schenken) odbiorca stoi w celowniku, a podarowana rzecz w bierniku: <em>Ich schenke meiner Mutter einen Kuchen.</em>"
+      },
+      {
+        h: "Szyk wyrazów",
+        p: "Przy dwóch rzeczownikach zwykle najpierw <strong>celownik</strong>, potem biernik: <em>Ich gebe dem Mann das Buch.</em> Przy dwóch zaimkach najpierw <strong>biernik</strong>, potem celownik: <em>Ich gebe es ihm.</em> Przy zaimku i rzeczowniku zaimek stoi pierwszy: <em>Ich gebe ihm das Buch. Ich gebe es dem Mann.</em>"
+      },
+      {
+        contrast: "Polak ma tu przewagę: celownik zna z własnego języka, a wiele czasowników rządzi nim tak samo po obu stronach (<em>pomagam mu</em> = <em>ich helfe ihm</em>, <em>dziękuję mu</em> = <em>ich danke ihm</em>, <em>podaruję mu</em> = <em>ich schenke ihm</em>). Kłopot jest gdzie indziej. Po niemiecku rodzajnik i końcówka rzeczownika zmieniają się wraz z przypadkiem (<em>dem, der, den</em> + <em>-n</em>), a po polsku rodzajników nie ma. Szyk jest sztywny: po polsku można powiedzieć <em>daję mu to</em> albo <em>daję to jemu</em>, a po niemiecku przy dwóch zaimkach zawsze <em>Ich gebe es ihm</em>. Trzecia osoba rozróżnia rodzaj: <em>ihm</em> (męski i nijaki), <em>ihr</em> (żeński). I uwaga na <em>gehören</em>: po polsku <em>należy do mnie</em> (przyimek <em>do</em> + dopełniacz), po niemiecku sam celownik: <em>Das gehört mir</em>."
+      },
+      {
+        trap: "Nie mówi się „Ich helfe ihn” ani „Ich sehe ihm”: <em>helfen</em> wymaga celownika (<em>ihm</em>), <em>sehen</em> biernika (<em>ihn</em>). Nie mówi się „Ich gebe ihm es”: przy dwóch zaimkach biernik idzie pierwszy, <em>Ich gebe es ihm</em>. Nie mówi się też „Der Schlüssel gehört zum Vermieter”: w znaczeniu „należy do kogoś” <em>gehören</em> nie ma <em>zu</em>, <em>Der Schlüssel gehört dem Vermieter</em>. A po <em>mit, bei, zu</em> rodzajnik jest zawsze w celowniku: <em>beim Umzug</em> (<em>bei dem Umzug</em>), <em>mit dem Auto</em>."
+      },
+      {
+        tip: "Żeby wybrać przypadek, zapytaj najpierw, czy czasownik wymaga celownika (<em>helfen, danken, gehören</em>), a potem, czy osoba coś dostaje. Przy każdym nowym czasowniku ucz się też jego przypadka."
+      }
+    ],
+    grammar: {
+      title: "Biernik, celownik i zaimki",
+      note: "<b>mich/mir, dich/dir, ihn/ihm, sie/ihr, uns/uns, euch/euch, sie/ihnen</b>. Rodzajnik w celowniku: <b>dem, der, dem, den</b>; w liczbie mnogiej rzeczownik dostaje <b>-n</b> (<i>den Kindern</i>), z wyjątkiem liczby mnogiej na -n/-en i na -s (<i>den Nachbarn, den Jobs</i>). Dwa zaimki: najpierw <b>biernik</b> (<i>Ich gebe es ihm</i>).",
+      table: {
+        head: ["mianownik", "biernik", "celownik"],
+        rows: [
+          ["ich", "mich", "mir"],
+          ["du", "dich", "dir"],
+          ["er", "ihn", "ihm"],
+          ["sie", "sie", "ihr"],
+          ["es", "es", "ihm"],
+          ["wir", "uns", "uns"],
+          ["ihr", "euch", "euch"],
+          ["sie", "sie", "ihnen"]
+        ]
+      },
+      examples: [
+        { tr: "Widzę go codziennie w biurze.", note: "sehen + biernik: ihn" },
+        { tr: "Pomagam mu w przeprowadzce.", note: "helfen + celownik: ihm" },
+        { tr: "Klucz należy do właściciela mieszkania.", note: "gehören + celownik: dem Vermieter" },
+        { tr: "Daję mojej matce kwiaty w prezencie.", note: "celownik rodzaju żeńskiego: meiner Mutter" },
+        { tr: "Daję to jemu.", note: "dwa zaimki: najpierw biernik, es ihm" },
+        { tr: "Dziękujemy sąsiadom za pomoc.", note: "celownik liczby mnogiej: den Nachbarn" }
+      ]
+    },
+    vocab: [
+      "wynajmujący, właściciel mieszkania",
+      "sąsiad",
+      "czynsz",
+      "umowa najmu",
+      "klucz",
+      "karton",
+      "adres",
+      "mebel"
+    ],
+    exercises: [
+      {
+        q: "Jak powiedzieć „Pomagam mu w przeprowadzce” (o koledze)?",
+        opts: [
+          "Ich helfe ihm beim Umzug.",
+          "Ich helfe ihn beim Umzug.",
+          "Ich helfe er beim Umzug."
+        ],
+        why: "<i>Helfen</i> wymaga celownika: <b>ihm</b>. <i>Beim</i> to <i>bei dem</i>, znowu celownik."
+      },
+      {
+        q: "Które zdanie ma właściwy szyk?",
+        opts: [
+          "Ich gebe ihm es.",
+          "Ich gebe es ihm.",
+          "Ich es gebe ihm."
+        ],
+        why: "Przy dwóch zaimkach najpierw stoi biernik (<i>es</i>), potem celownik (<i>ihm</i>), a odmieniony czasownik zostaje na drugim miejscu."
+      },
+      {
+        q: "Które zdania są poprawne?",
+        opts: [
+          "Ich helfe dir.",
+          "Ich helfe dich.",
+          "Das gehört mir.",
+          "Ich sehe ihm im Büro.",
+          "Wir danken euch."
+        ],
+        why: "<i>Helfen, gehören, danken</i> wymagają celownika (<i>dir, mir, euch</i>). <i>Sehen</i> wymaga biernika: <i>Ich sehe ihn.</i>"
+      },
+      {
+        q: "Uzupełnij: „Ich schenke ___ Mutter Blumen.” (rodzajnik określony)",
+        hint: "celownik rodzaju żeńskiego",
+        why: "<i>Die Mutter</i> jest rodzaju żeńskiego, a w celowniku rodzajnik brzmi <b>der</b>: <i>Ich schenke der Mutter Blumen.</i>"
+      },
+      {
+        q: "Uzupełnij: „Der Schlüssel gehört ___ Vermieter.” (rodzajnik określony)",
+        hint: "celownik rodzaju męskiego",
+        why: "<i>Gehören</i> wymaga celownika, a <i>der Vermieter</i> jest rodzaju męskiego: <b>dem</b>."
+      },
+      {
+        q: "Uzupełnij: „Kennst du Tim? Ich sehe ___ oft im Büro.” (go: Tima)",
+        hint: "biernik od er",
+        why: "<i>Sehen</i> wymaga biernika: <b>ihn</b>."
+      },
+      {
+        q: "Uzupełnij: „Das sind Anna und Tim. Ich danke ___ für die Hilfe.” (im)",
+        hint: "celownik liczby mnogiej",
+        why: "<i>Danken</i> wymaga celownika, a w liczbie mnogiej zaimek brzmi <b>ihnen</b>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Gdzie jest karton? Szukam go od dawna. Możesz mi pomóc?",
+        why: "<i>Der Karton</i> jest rodzaju męskiego, a <i>suchen</i> wymaga biernika: <b>ihn</b>. <i>Helfen</i> wymaga celownika: <b>mir</b>."
+      },
+      {
+        tr: "Pomagam mojej koleżance w przeprowadzce. Daje mi w prezencie ciasto, a ja jej dziękuję.",
+        why: "W <i>Freundin</i> <b>eu</b> to [ɔʏ]; w <i>schenkt</i> <b>sch</b> to [ʃ]; w <i>Kuchen</i> <b>ch</b> po <b>u</b> to [x]."
+      },
+      {
+        tr: "Daję mu klucz, a on pomaga mi w przeprowadzce.",
+        why: "W <i>Schlüssel</i> <b>sch</b> to [ʃ], a <b>ü</b> jest zaokrąglone; w <i>Umzug</i> <b>z</b> to [ts]; w <i>hilft</i> początkowe <b>h</b> to lekki oddech."
+      }
+    ]
+  },
+  "lesson:a2-u08-l4": {
+    theme: "Zdania podrzędne",
+    title: "Gotowi na B1",
+    objectives: [
+      "podać powód za pomocą weil i zdawać relację za pomocą dass",
+      "wybierać między als a wenn",
+      "stawiać odmieniony czasownik na końcu zdania podrzędnego",
+      "radzić sobie z czasownikami modalnymi, Perfektem i czasownikami rozdzielnie złożonymi w zdaniu podrzędnym"
+    ],
+    theory: [
+      {
+        h: "weil, dass, als, wenn: czasownik idzie na koniec",
+        p: "Po <strong>weil</strong> (ponieważ, bo), <strong>dass</strong> (że), <strong>als</strong> i <strong>wenn</strong> (kiedy) odmieniony czasownik idzie <strong>na koniec</strong>, a między zdaniem głównym a podrzędnym stoi przecinek: <em>Ich bleibe zu Hause, weil ich arbeiten muss. Ich hoffe, dass ich bald eine Stelle finde.</em> Gdy na końcu stoi czasownik modalny, to on jest odmieniony (<em>muss</em>); przy Perfekcie jest to czasownik posiłkowy (<em>weil ich umgezogen bin</em>); przy czasowniku rozdzielnie złożonym przedrostek łączy się z powrotem (<em>weil ich früh aufstehe</em>)."
+      },
+      {
+        h: "Gdy zdanie podrzędne stoi na początku",
+        p: "Jeśli zdanie podrzędne otwiera całość, zdanie główne zaczyna się od <strong>odmienionego czasownika</strong>: <em>Weil ich krank bin, bleibe ich zu Hause. Wenn ich Zeit habe, lerne ich Deutsch.</em> Zdanie podrzędne zajmuje samo pierwsze miejsce, a czasownik zdania głównego zostaje na drugim."
+      },
+      {
+        h: "als czy wenn?",
+        p: "<strong>Als</strong> wprowadza jednorazowy fakt z przeszłości: <em>Als ich in Wien angekommen bin, habe ich dich angerufen.</em> <strong>Wenn</strong> dotyczy teraźniejszości, przyszłości i czynności powtarzających się: <em>Wenn ich Zeit habe, lerne ich Deutsch.</em> W pytaniu bezpośrednim używa się natomiast <em>wann</em>: <em>Wann kommst du?</em>"
+      },
+      {
+        contrast: "Po polsku szyk w zdaniu podrzędnym się nie zmienia: <em>zostaję w domu, bo muszę pracować</em>. Po niemiecku <em>weil ich arbeiten muss</em> odsyła czasownik modalny na koniec. Przecinek przed <em>że</em> po polsku też się stawia, więc <em>dass</em> nie sprawi kłopotu. Po polsku jest jedno <em>kiedy</em> (także <em>gdy</em>), a niemiecki rozróżnia <em>als</em> (raz, w przeszłości) i <em>wenn</em> (za każdym razem albo w teraźniejszości i przyszłości); <em>wenn</em> znaczy też <em>jeśli</em>. Polskie <em>bo</em> odpowiada <em>weil</em> albo <em>denn</em>, ale tylko po <em>weil</em> czasownik idzie na koniec."
+      },
+      {
+        trap: "Nie pisze się „weil ich muss arbeiten”: czasownik modalny idzie na koniec, <em>weil ich arbeiten muss</em>. Na „bo” są <em>weil</em> i <em>denn</em>, ale po <em>denn</em> czasownik zostaje na drugim miejscu (<em>..., denn ich muss arbeiten</em>). Nie mówi się „wenn ich in Wien angekommen bin” o jednorazowym fakcie z przeszłości: tam trzeba <em>als</em>. I <em>weil</em> nie jest pytaniem: pyta się <em>Warum?</em>."
+      },
+      {
+        tip: "Gdy zdanie zaczyna się od <em>weil, dass, als, wenn</em>, znajdź odmieniony czasownik i przenieś go na koniec. Jeśli w zdaniu są dwa czasowniki (<em>muss arbeiten</em>), na końcu stoi ten odmieniony: <em>arbeiten muss</em>."
+      }
+    ],
+    grammar: {
+      title: "weil, dass, als, wenn",
+      note: "W zdaniu podrzędnym odmieniony czasownik idzie <b>na koniec</b>. <b>weil</b> = ponieważ, <b>dass</b> = że, <b>als</b> = kiedy (jednorazowy fakt z przeszłości), <b>wenn</b> = kiedy lub jeśli (teraźniejszość, przyszłość, zwyczaj). Zdanie podrzędne na początku: zdanie główne zaczyna się od czasownika.",
+      table: {
+        head: ["spójnik", "przykład", "uwaga"],
+        rows: [
+          ["weil", "Ich bleibe zu Hause, weil ich arbeiten muss.", "czasownik modalny na końcu"],
+          ["dass", "Ich hoffe, dass ich bald eine Stelle finde.", "przecinek obowiązkowy"],
+          ["als", "Als ich in Wien angekommen bin, habe ich dich angerufen.", "jednorazowy fakt z przeszłości"],
+          ["wenn", "Wenn ich Zeit habe, lerne ich Deutsch.", "teraźniejszość, przyszłość, zwyczaj"]
+        ]
+      },
+      examples: [
+        { tr: "Zostaję w domu, bo muszę pracować.", note: "weil: czasownik modalny muss na końcu" },
+        { tr: "Ponieważ jestem chory, zostaję w domu.", note: "zdanie podrzędne na początku: zdanie główne zaczyna się od czasownika" },
+        { tr: "Mam nadzieję, że niedługo znajdę pracę.", note: "dass: odmieniony czasownik na końcu" },
+        { tr: "Kiedy przyjechałem do Wiednia, zadzwoniłem do ciebie.", note: "als: jednorazowy fakt z przeszłości" },
+        { tr: "Kiedy mam czas, uczę się niemieckiego.", note: "wenn: teraźniejszość, zwyczaj" },
+        { tr: "Wiem, że jutro nie może przyjść.", note: "dass: kommen kann, czasownik modalny na końcu" }
+      ]
+    },
+    vocab: [
+      "przyszłość",
+      "marzenie",
+      "cel",
+      "możliwość",
+      "decyzja",
+      "mieć nadzieję",
+      "ważny",
+      "pewny"
+    ],
+    exercises: [
+      {
+        tr: "Czas teraźniejszy czasownika wollen, wszystkie osoby.",
+        why: "<i>Will, willst, will, wollen, wollt, wollen</i>: w pierwszej i trzeciej osobie liczby pojedynczej forma jest taka sama, bez końcówki."
+      },
+      {
+        tr: "Präteritum od müssen, wszystkie osoby.",
+        why: "<i>Musste, musstest, musste, mussten, musstet, mussten</i>: przegłos znika, a pierwsza i trzecia osoba liczby pojedynczej są takie same."
+      },
+      {
+        tr: "Perfekt od bleiben, wszystkie osoby.",
+        why: "<i>Ich bin geblieben, du bist geblieben, er ist geblieben, wir sind geblieben, ihr seid geblieben, sie sind geblieben</i>: <i>bleiben</i> bierze <i>sein</i>."
+      },
+      {
+        q: "Uzupełnij: „Ich bleibe hier, ___ ich arbeiten muss.” (ponieważ)",
+        hint: "spójnik, który odsyła czasownik na koniec",
+        why: "<b>weil</b> odsyła odmieniony czasownik na koniec: <i>weil ich arbeiten muss</i>. <i>Denn</i> zostawiłoby czasownik na drugim miejscu."
+      },
+      {
+        q: "Uzupełnij: „Ich hoffe, ___ ich bald eine Stelle finde.” (że)",
+        hint: "spójnik wprowadzający treść",
+        why: "<b>dass</b> wprowadza to, na co się liczy, a odmieniony czasownik <i>finde</i> idzie na koniec."
+      },
+      {
+        q: "Uzupełnij: „___ ich in Wien angekommen bin, habe ich dich angerufen.” (kiedy)",
+        hint: "jednorazowy fakt z przeszłości",
+        why: "Jednorazowy fakt z przeszłości wymaga <b>als</b>. Gdy zdanie podrzędne stoi na pierwszym miejscu, zdanie główne zaczyna się od czasownika: <i>habe ich dich angerufen</i>."
+      },
+      {
+        q: "Uzupełnij: „___ ich Zeit habe, lerne ich Deutsch.” (kiedy, zwykle)",
+        hint: "teraźniejszość albo zwyczaj",
+        why: "Przy teraźniejszości i czynnościach powtarzających się używa się <b>wenn</b>."
+      },
+      {
+        q: "Uzupełnij: „Ich weiß, dass er morgen nicht kommen ___.” (können, er)",
+        hint: "czasownik modalny idzie na koniec",
+        why: "W zdaniu podrzędnym czasownik modalny idzie na koniec: <b>kann</b>. Zdanie kończy się na <i>kommen kann</i>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Zostaję w domu, bo jestem chory.",
+        why: "<i>Ich bleibe zu Hause, weil ich krank bin</i>: <i>weil</i> odsyła <i>bin</i> na koniec."
+      },
+      {
+        q: "Przetłumacz: „Zostaję w domu, bo muszę pracować.”",
+        why: "<i>Ich bleibe zu Hause, weil ich arbeiten muss</i>: czasownik modalny <i>muss</i> na końcu. Poprawne jest też <i>daheim</i>, a zdanie podrzędne może stać na początku: <i>Weil ich arbeiten muss, bleibe ich zu Hause.</i>"
+      },
+      {
+        tr: "Mam nadzieję, że jesienią znajdę pracę. Kiedy mam czas, uczę się niemieckiego, bo jest to ważne w mojej pracy.",
+        why: "W <i>Herbst</i> <b>b</b> przed <b>st</b> brzmi [p]; w <i>wichtig</i> końcówka <b>-ig</b> to w standardowym niemieckim (de-DE) zwykle [ɪç], a <b>w</b> pozostaje [v]; w <i>Deutsch</i> <b>eu</b> czyta się [ɔʏ], a <b>tsch</b> [tʃ]."
+      },
+      {
+        tr: "Wiem, że muszę dużo się uczyć, bo egzamin jest trudny.",
+        why: "W <i>weiß</i> <b>ß</b> to bezdźwięczne <b>s</b>, a <b>ei</b> to [aɪ]; w <i>Prüfung</i> <b>ü</b> jest zaokrąglone; w <i>schwer</i> <b>sch</b> to [ʃ]."
+      }
+    ]
+  },
+  "lesson:a2-u08-test": {
+    theme: "Sprawdzian",
+    title: "Test: Plany",
+    objectives: ["sprawdzić vorhaben + zu, czasy poziomu A2 (Perfekt, Präteritum, Konjunktiv II), zaimki i celownik, weil, dass, als i wenn"],
+    theory: [
+      {
+        p: "Dwanaście pytań z całego poziomu A2. Zaliczenie od 70%. Nie zaglądaj do lekcji, odpowiadając: jeśli czegoś nie pamiętasz, lepiej wrócić do powtórki."
+      }
+    ],
+    exercises: [
+      {
+        tr: "Perfekt od gehen, wszystkie osoby.",
+        why: "<i>Ich bin gegangen, du bist gegangen, er ist gegangen, wir sind gegangen, ihr seid gegangen, sie sind gegangen</i>: <i>gehen</i> bierze <i>sein</i>."
+      },
+      {
+        tr: "Konjunktiv II od haben, wszystkie osoby.",
+        why: "<i>Hätte, hättest, hätte, hätten, hättet, hätten</i>: Präteritum <i>hatte</i> z przegłosem."
+      },
+      {
+        q: "Uzupełnij: „Ich habe vor, im Herbst in Wien ___ studieren.”",
+        hint: "przed bezokolicznikiem",
+        why: "<b>zu</b> stoi bezpośrednio przed bezokolicznikiem: <i>in Wien zu studieren</i>."
+      },
+      {
+        q: "Uzupełnij: „Als Kind ___ ich oft krank.” (być)",
+        hint: "Präteritum od sein, ich",
+        why: "<b>War</b>: w pierwszej osobie liczby pojedynczej nie ma żadnej końcówki."
+      },
+      {
+        q: "Uzupełnij: „Ich helfe ___ beim Umzug.” (jemu)",
+        hint: "celownik od er",
+        why: "<i>Helfen</i> wymaga celownika: <b>ihm</b>."
+      },
+      {
+        q: "Uzupełnij: „Ich bleibe zu Hause, ___ ich krank bin.” (ponieważ)",
+        hint: "spójnik, który odsyła czasownik na koniec",
+        why: "<b>weil</b> odsyła odmieniony czasownik na koniec: <i>weil ich krank bin</i>."
+      },
+      {
+        q: "Uzupełnij: „Ich ___ gern ein Zimmer.” (chciałbym mieć)",
+        hint: "Konjunktiv II od haben, ich",
+        why: "<b>Hätte</b>: <i>Ich hätte gern ein Zimmer</i> to grzeczna forma wyrażająca życzenie."
+      },
+      {
+        q: "Uzupełnij: „Wir sind gestern in Berlin ___.” (Partizip II od ankommen)",
+        hint: "Partizip II z -ge- w środku",
+        why: "<b>angekommen</b>: w czasownikach rozdzielnie złożonych <i>-ge-</i> wchodzi między przedrostek a czasownik, a <i>ankommen</i> bierze <i>sein</i>."
+      },
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: [
+          "Ich habe vor, nach dem Studium in Berlin zu arbeiten.",
+          "Ich habe vor, nach dem Studium in Berlin arbeiten zu.",
+          "Ich habe vor, nach dem Studium in Berlin zu arbeitet."
+        ],
+        why: "<b>zu</b> stoi przed bezokolicznikiem, a bezokolicznik <i>arbeiten</i> kończy zdanie."
+      },
+      {
+        q: "Uzupełnij zdanie (użyj ankommen w Perfekcie).",
+        tr: "Kiedy dojadę do Wiednia, zadzwonię do ciebie.",
+        why: "<i>Wenn ich in Wien angekommen bin, rufe ich dich an</i>: <i>wenn</i> dotyczy przyszłości, Perfekt ma czasownik posiłkowy <i>bin</i> na końcu, a zdanie główne zaczyna się od czasownika <i>rufe</i>."
+      },
+      {
+        q: "Przetłumacz: „Dałem klucz Timowi.” (użyj zaimka za Tima i Perfektu)",
+        why: "<i>Ich habe ihm den Schlüssel gegeben</i>: zaimek w celowniku <i>ihm</i> stoi przed rzeczownikiem w bierniku, <i>den Schlüssel</i>."
+      },
+      {
+        tr: "Mam zamiar się przeprowadzić, bo mam nową pracę.",
+        why: "W <i>umzuziehen</i> <b>z</b> to [ts], a <i>zu</i> stoi w środku; w <i>weil</i> <b>w</b> to [v]; w <i>Stelle</i> początkowe <b>st</b> to [ʃt]."
       }
     ]
   }

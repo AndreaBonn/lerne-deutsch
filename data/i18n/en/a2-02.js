@@ -1,5 +1,5 @@
 /* ============================================================
-   Learner-language text (en) for data/core/a2-02.js, units a2-u05, a2-u06 and a2-u07.
+   Learner-language text (en) for data/core/a2-02.js, units a2-u05, a2-u06, a2-u07 and a2-u08.
    Keys point at ids in the neutral layer; arrays merge by index,
    so their length has to match core.
    Checked by scripts/parity.mjs.
@@ -1591,6 +1591,575 @@ LINGUAI.addStrings("en", {
       {
         tr: "I congratulate you on your birthday. Do you feel like celebrating with us?",
         why: "In <i>gratuliere</i> the <b>ie</b> is a long <b>i</b> [iː]; in <i>Geburtstag</i> the stress falls on <b>bur</b>; in <i>feiern</i> the <b>ei</b> is [aɪ]."
+      }
+    ]
+  },
+  "unit:a2-u08": {
+    title: "Plans",
+    grammarNote: "vorhaben + zu · review of tenses (Perfekt, Präteritum, Futur, Konjunktiv II) · review of cases and pronouns · weil, dass, als, wenn"
+  },
+  "lesson:a2-u08-l1": {
+    theme: "Plans and intentions",
+    title: "I intend to ...",
+    objectives: [
+      "say what you intend to do with Ich habe vor, ... zu ...",
+      "ask about someone's plans with Was hast du vor?",
+      "talk about the future with the present plus a time expression, or with werden"
+    ],
+    theory: [
+      {
+        h: "vorhaben + zu + infinitive",
+        p: "To say what you <strong>intend</strong> to do, use the verb <strong>vorhaben</strong>, followed by a second verb in the infinitive with <strong>zu</strong>, at the end of the clause: <em>Ich habe vor, im Sommer nach Wien zu ziehen. Hast du vor, nach dem Studium in Berlin zu arbeiten?</em> With a separable verb, <em>zu</em> goes in the middle, written as one word: <em>umziehen</em> → <em>Ich habe vor, im Sommer umzuziehen.</em> A comma is written when the <em>zu</em> group has other words besides the infinitive."
+      },
+      {
+        h: "vorhaben is a separable verb",
+        p: "<em>Vorhaben</em> splits like <em>aufstehen</em>: <strong>haben</strong> takes the endings and <strong>vor</strong> goes to the end of the main clause: <em>Ich habe vor, ... / Wir haben vor, ...</em> Without a second verb you can ask <em>Was hast du morgen vor?</em> (what are you doing tomorrow?), and the answer can be <em>Ich habe nichts vor</em> (I have no plans)."
+      },
+      {
+        h: "The future: present or werden",
+        p: "For plans German often uses the <strong>present</strong> with a time expression: <em>Nächstes Jahr ziehe ich nach Berlin.</em> The <strong>Futur I</strong> (<em>werden</em> in second position, infinitive at the end) stresses a decision or a promise: <em>Ich werde im Herbst Informatik studieren.</em> After <em>werden</em> and after modal verbs there is no <em>zu</em>."
+      },
+      {
+        contrast: "English says <em>I intend to move</em> or <em>I plan to move</em>, with <em>to</em> + infinitive. German has <em>vorhaben</em> with <em>zu</em> + infinitive, but the particle <em>vor</em> splits off and goes to the end of the clause, something English verbs like <em>intend</em> never do. The future also works differently: English has <em>will</em> and <em>going to</em>, but it also says <em>I'm moving to Berlin next year</em> with a present form, and German does the same far more often: <em>Nächstes Jahr ziehe ich um</em>. German <em>werden</em> is not simply <em>will</em>: it is mostly kept for decisions, promises and predictions."
+      },
+      {
+        trap: "Don't say «Ich habe vor, umziehen» or «Ich habe vor, zu umziehen»: with a separable verb the form is <em>umzuziehen</em>. After <em>werden</em> there is no <em>zu</em>: <em>Ich werde studieren</em>, not «Ich werde zu studieren». And don't carry the English <em>to</em> over to <em>wollen</em>: <em>I want to move</em> is <em>Ich will umziehen</em>, with no <em>zu</em>, unlike <em>Ich habe vor, ... zu ...</em>."
+      },
+      {
+        tip: "To describe a plan in two sentences: <em>Ich habe vor, im Sommer umzuziehen. Dort werde ich studieren.</em> First the intention with <em>vorhaben</em>, then what follows with <em>werden</em>."
+      }
+    ],
+    grammar: {
+      title: "vorhaben + zu and the future",
+      note: "<b>vorhaben</b> + <b>zu</b> + infinitive at the end: <i>Ich habe vor, nach Wien zu ziehen.</i> Separable verb: <b>zu</b> in the middle (<i>umzuziehen</i>). Future: present + time expression, or <b>werden</b> + infinitive.",
+      table: {
+        head: ["construction", "example", "note"],
+        rows: [
+          ["vorhaben + zu", "Ich habe vor, im Sommer nach Wien zu ziehen.", "vor at the end of the main clause, zu + infinitive at the end"],
+          ["separable verb", "Ich habe vor, im Sommer umzuziehen.", "zu in the middle: umzuziehen"],
+          ["present + time", "Nächstes Jahr ziehe ich nach Berlin.", "the future with a time expression"],
+          ["Futur I", "Ich werde im Herbst Informatik studieren.", "werden in second position, infinitive at the end"]
+        ]
+      },
+      examples: [
+        { tr: "I intend to move in the summer.", note: "umziehen: zu in the middle, umzuziehen" },
+        { tr: "Do you intend to work in Vienna after your studies?", note: "question: Hast du vor, ... zu ...?" },
+        { tr: "We intend to look for an apartment.", note: "zu before suchen, at the end" },
+        { tr: "What are you doing tomorrow?", note: "vorhaben without a second verb: vor at the end" },
+        { tr: "Next year I'm moving to Berlin.", note: "present with a time expression" },
+        { tr: "In the fall I will study computer science.", note: "Futur I: werden + infinitive" }
+      ]
+    },
+    vocab: [
+      "the plan",
+      "to intend, to have planned",
+      "to plan",
+      "the move",
+      "to move (house)",
+      "university studies, degree course",
+      "to study (at university)",
+      "the job, the position",
+      "the job (informal)",
+      "to terminate (a contract), to quit",
+      "the exam",
+      "vocational training"
+    ],
+    exercises: [
+      {
+        tr: "The present tense of vorhaben, all persons.",
+        why: "<i>Ich habe vor, du hast vor, er hat vor, wir haben vor, ihr habt vor, sie haben vor</i>: <i>haben</i> takes the endings, and <i>vor</i> goes to the end of the main clause."
+      },
+      {
+        q: "How do you say \"I intend to move in the summer\"?",
+        opts: [
+          "Ich habe vor, im Sommer umzuziehen.",
+          "Ich habe vor, im Sommer zu umziehen.",
+          "Ich habe vor, im Sommer umziehen zu."
+        ],
+        why: "With a separable verb <b>zu</b> goes in the middle, all in one word: <i>umzuziehen</i>."
+      },
+      {
+        q: "Complete: \"Ich habe vor, nach dem Studium in Berlin ___ arbeiten.\"",
+        hint: "before the infinitive",
+        why: "<b>zu</b> stands directly before the infinitive: <i>in Berlin zu arbeiten</i>."
+      },
+      {
+        q: "Complete: \"Wir ___ im Sommer nach Wien ziehen.\" (Futur I of werden, wir)",
+        hint: "werden, wir",
+        why: "<b>Werden</b> is in second position and the infinitive <i>ziehen</i> stays at the end: <i>Wir werden im Sommer nach Wien ziehen.</i>"
+      },
+      {
+        q: "Complete: \"Ich habe ___, im Herbst zu studieren.\" (vorhaben)",
+        hint: "the detached part of vorhaben",
+        why: "<b>Vor</b>: <i>vorhaben</i> is separable, and the particle stays at the end of the main clause, before the comma."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "I intend to give notice on my apartment in the summer.",
+        why: "<i>Ich habe vor, im Sommer meine Wohnung zu kündigen</i>: <i>habe</i> with <i>ich</i>, and <i>zu</i> before <i>kündigen</i>, at the end."
+      },
+      {
+        q: "Put the words in order.",
+        tr: "I intend to move in the summer.",
+        why: "<i>Ich habe vor, im Sommer umzuziehen.</i> \"In the summer\" belongs to the move, not to the intention: so it goes inside the <i>zu</i> group, after the comma."
+      },
+      {
+        q: "Translate: \"I intend to move to Vienna in the summer.\" (use vorhaben)",
+        why: "<i>Ich habe vor, im Sommer nach Wien umzuziehen</i>: <i>umzuziehen</i> in one word. <i>Nach Wien zu ziehen</i> is fine too."
+      },
+      {
+        tr: "I intend to move to Vienna in the summer. I will study computer science there.",
+        why: "In <i>Wien</i> the <b>W</b> is [v] and the <b>ie</b> is read [iː]; in <i>Sommer</i> the initial <b>S</b> before a vowel is normally voiced [z]; in <i>studieren</i> the initial <b>st</b> is [ʃt]."
+      },
+      {
+        tr: "After my studies I intend to work in Berlin.",
+        why: "In <i>Studium</i> the initial <b>st</b> is [ʃt]; in <i>nach</i> the <b>ch</b> after <b>a</b> is [x]; in <i>arbeiten</i> the <b>ei</b> is [aɪ]."
+      }
+    ]
+  },
+  "lesson:a2-u08-l2": {
+    theme: "Review of the tenses",
+    title: "Review: tenses",
+    objectives: [
+      "choose the right tense: Perfekt, Präteritum, present or Futur I, Konjunktiv II",
+      "form the Perfekt with haben or sein and the Partizip II",
+      "use the Präteritum of sein, haben and the modal verbs",
+      "make a request or express a wish with könnten and hätte gern"
+    ],
+    theory: [
+      {
+        h: "Four ways to talk about time",
+        p: "The <strong>Perfekt</strong> (<em>haben</em> or <em>sein</em> + Partizip II) is the past tense of speech: <em>Gestern habe ich gearbeitet. Wir sind nach Wien umgezogen.</em> The <strong>Präteritum</strong> is used mainly with <em>sein, haben</em> and the modal verbs, even in speech: <em>Ich war krank. Wir hatten keinen Hund. Ich musste arbeiten.</em> For the future: the present with a time expression (<em>Morgen fahre ich</em>) or <strong>werden</strong> + infinitive. The <strong>Konjunktiv II</strong> is for requests and wishes: <em>Könnten Sie mir helfen? Ich hätte gern mehr Zeit.</em>"
+      },
+      {
+        h: "haben or sein in the Perfekt",
+        p: "Most verbs form the Perfekt with <strong>haben</strong>: <em>Ich habe studiert.</em> Intransitive verbs that express a change of place or state take <strong>sein</strong> (not every verb of motion: <em>tanzen</em> takes <strong>haben</strong>): <em>Ich bin umgezogen. Wir sind angekommen.</em> So do <em>sein</em> and <em>bleiben</em>: <em>Ich bin geblieben.</em> The conjugated verb is in second position, the Partizip II at the end."
+      },
+      {
+        contrast: "English has one auxiliary for the present perfect, <em>have</em>: <em>I have worked, I have arrived</em>. German has two, <strong>haben</strong> and <strong>sein</strong>, and you have to learn which verb takes which: <em>Ich bin angekommen</em>, <em>Ich bin umgezogen</em>. The German Perfekt is also not the English present perfect: in speech <em>Gestern habe ich gearbeitet</em> simply means <em>I worked yesterday</em>, with a past time expression that English would not allow with <em>have worked</em>. For <em>was</em> and <em>had</em> the Präteritum is the usual form (<em>Ich war krank. Wir hatten keinen Hund.</em>). The polite <em>Könnten Sie ...?</em> and <em>Ich hätte gern ...</em> correspond to <em>Could you ...?</em> and <em>I'd like ...</em>."
+      },
+      {
+        trap: "Don't carry the English word order over: «Gestern ich habe gearbeitet» has the verb in third position, and <em>Gestern habe ich gearbeitet</em> has the conjugated verb in second. Don't say «Ich habe umgezogen»: <em>umziehen</em> behaves like a verb of motion and takes <em>sein</em>, <em>Ich bin umgezogen</em>. And the request is <em>Könnten Sie ...?</em>, not «Könnte Sie ...?»."
+      },
+      {
+        tip: "Before writing a sentence ask yourself: did it already happen (Perfekt, or <em>war/hatte</em>), will it happen (present + time, or <em>werden</em>), or is it a request (Konjunktiv II)? Then check where the conjugated verb is: in second position."
+      }
+    ],
+    grammar: {
+      title: "Review of the tenses",
+      note: "<b>Perfekt</b>: haben/sein + Partizip II at the end. <b>Präteritum</b>: war, hatte, modals. <b>Future</b>: present + time, or <b>werden</b> + infinitive. <b>Konjunktiv II</b>: könnten, hätte gern.",
+      table: {
+        head: ["tense", "example", "use"],
+        rows: [
+          ["Perfekt", "Gestern habe ich den ganzen Tag gearbeitet.", "past tense of speech"],
+          ["Perfekt with sein", "Letztes Jahr sind wir nach Wien umgezogen.", "motion or change of state"],
+          ["Präteritum", "Als Kind war ich oft krank.", "sein, haben, modals"],
+          ["Future", "Morgen werde ich dich anrufen.", "present + time, or werden"],
+          ["Konjunktiv II", "Könnten Sie mir bitte helfen?", "requests and wishes"]
+        ]
+      },
+      examples: [
+        { tr: "Yesterday I worked all day.", note: "Perfekt with haben" },
+        { tr: "Last year we moved to Vienna.", note: "Perfekt with sein" },
+        { tr: "As a child I was often sick, and we didn't have a dog.", note: "Präteritum of sein and haben" },
+        { tr: "Next week I'm going to Hamburg.", note: "present with a time expression" },
+        { tr: "Tomorrow I will call you.", note: "Futur I: werden + infinitive" },
+        { tr: "Could you help me, please? I would like to have more time.", note: "polite and wishing Konjunktiv II" }
+      ]
+    },
+    vocab: [
+      "the résumé",
+      "the experience",
+      "the internship",
+      "the job application",
+      "the boss",
+      "the colleague",
+      "the salary",
+      "the course"
+    ],
+    exercises: [
+      {
+        tr: "The Perfekt of umziehen, all persons.",
+        why: "<i>Ich bin umgezogen, du bist umgezogen, er ist umgezogen, wir sind umgezogen, ihr seid umgezogen, sie sind umgezogen</i>: <i>umziehen</i> takes <i>sein</i>, and the Partizip II has <i>-ge-</i> in the middle."
+      },
+      {
+        tr: "The Präteritum of arbeiten, all persons.",
+        why: "<i>Arbeitete, arbeitetest, arbeitete, arbeiteten, arbeitetet, arbeiteten</i>: the stem ends in <i>-t</i>, so an <b>-e-</b> goes between the stem and the ending."
+      },
+      {
+        tr: "The Konjunktiv II of können, all persons.",
+        why: "<i>Könnte, könntest, könnte, könnten, könntet, könnten</i>: the form comes from the Präteritum <i>konnte</i> with the Umlaut."
+      },
+      {
+        q: "Which sentence is correct? (Yesterday I wrote a letter.)",
+        opts: [
+          "Gestern ich habe einen Brief geschrieben.",
+          "Gestern habe ich einen Brief geschrieben.",
+          "Gestern habe ich einen Brief schrieben."
+        ],
+        why: "With <i>gestern</i> in first position the conjugated verb (<i>habe</i>) stays in second, the subject follows it, and the Partizip II <i>geschrieben</i> goes to the end."
+      },
+      {
+        q: "Which sentence is a polite request?",
+        opts: [
+          "Könnten Sie mir bitte helfen?",
+          "Können Sie mir bitte geholfen?",
+          "Könnte Sie mir bitte helfen?"
+        ],
+        why: "<b>Könnten Sie ...?</b>: with <i>Sie</i> the form is <i>könnten</i>, and the infinitive <i>helfen</i> goes to the end."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "Last year we moved to Vienna.",
+        why: "<i>Letztes Jahr sind wir nach Wien umgezogen</i>: <i>umziehen</i> forms the Perfekt with <b>sein</b>."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "As a child I was often sick, and we didn't have a dog.",
+        why: "<i>Als Kind war ich oft krank, und wir hatten keinen Hund</i>: Präteritum of <i>sein</i> (<i>war</i>) and of <i>haben</i> (<i>hatten</i>)."
+      },
+      {
+        q: "Complete the sentence (second gap: haben in Konjunktiv II).",
+        tr: "Tomorrow I will call you. I would like to have more time.",
+        why: "<i>Morgen werde ich dich anrufen</i>: Futur I, with the infinitive at the end. <i>Ich hätte gern mehr Zeit</i>: Konjunktiv II of <i>haben</i>, for a wish."
+      },
+      {
+        q: "Translate: \"Yesterday I worked all day.\" (use the Perfekt)",
+        why: "<i>Gestern habe ich den ganzen Tag gearbeitet</i>, or <i>Ich habe gestern den ganzen Tag gearbeitet</i>: <i>habe</i> in second position, <i>gearbeitet</i> at the end."
+      },
+      {
+        tr: "Last year I moved to Vienna. Now I work there, and next year I will take a course. I would like to have more time.",
+        why: "In <i>Wien</i> the <b>W</b> is [v]; in <i>besuchen</i> the <b>ch</b> after <b>u</b> is [x]; in <i>gern</i> the <b>g</b> is [g]."
+      },
+      {
+        tr: "Last year I moved, and in the fall I will study.",
+        why: "In <i>umgezogen</i> the <b>z</b> is always read [ts] and the <b>g</b> is [g]; in <i>studieren</i> the initial <b>st</b> is [ʃt]; in <i>werde</i> the <b>w</b> is [v]."
+      }
+    ]
+  },
+  "lesson:a2-u08-l3": {
+    theme: "Review of cases and pronouns",
+    title: "Review: cases and pronouns",
+    objectives: [
+      "choose between an accusative and a dative pronoun",
+      "use the article in the dative (dem, der, dem, den)",
+      "put pronoun and noun, accusative and dative, in the right order",
+      "recognize the verbs that take the dative (helfen, danken, gehören, schenken)"
+    ],
+    theory: [
+      {
+        h: "Pronouns: nominative, accusative, dative",
+        p: "<strong>ich / mich / mir</strong>, <strong>du / dich / dir</strong>, <strong>er / ihn / ihm</strong>, <strong>sie / sie / ihr</strong>, <strong>es / es / ihm</strong>, <strong>wir / uns / uns</strong>, <strong>ihr / euch / euch</strong>, <strong>sie / sie / ihnen</strong>. The accusative answers <em>whom? what?</em> (<em>Ich sehe ihn.</em>), the dative answers <em>to whom?</em> (<em>Ich helfe ihm.</em>). With <em>wir</em> and <em>ihr</em> accusative and dative have the same form: <em>Er sieht uns. Er hilft uns.</em>"
+      },
+      {
+        h: "The article in the dative",
+        p: "In the dative the definite article is <strong>dem</strong> (masculine and neuter), <strong>der</strong> (feminine), <strong>den</strong> (plural; the noun takes <strong>-n</strong>, except plurals that already end in -n or -en and those in -s): <em>dem Vermieter, der Mutter, den Kindern, den Nachbarn, den Jobs.</em> With the indefinite article or a possessive: <em>einem, einer, meinem, meiner.</em> Verbs that take the dative: <strong>helfen, danken, gehören, gefallen, gratulieren</strong>. With <strong>schenken</strong> (jemandem etwas schenken) the recipient is in the dative and the gift in the accusative: <em>Ich schenke meiner Mutter einen Kuchen.</em>"
+      },
+      {
+        h: "Word order",
+        p: "With two nouns, usually the <strong>dative</strong> comes first, then the accusative: <em>Ich gebe dem Mann das Buch.</em> With two pronouns, the <strong>accusative</strong> comes first, then the dative: <em>Ich gebe es ihm.</em> With a pronoun and a noun, the pronoun comes first: <em>Ich gebe ihm das Buch. Ich gebe es dem Mann.</em>"
+      },
+      {
+        contrast: "English nouns have no cases, and only the pronouns show them (<em>he / him, she / her, they / them</em>). But English <em>him, her, them</em> serve as both direct and indirect object (<em>I see him, I help him, I give him the key</em>), while German splits them: <em>ihn</em> for <em>sehen</em>, <em>ihm</em> for <em>helfen</em> and <em>geben</em>. So with every verb you have to know the case, and <em>helfen</em> is not a guess you can make from <em>help</em>. In English the recipient can take <em>to</em> (<em>I give it to him</em>); German uses no preposition, the dative case alone does the job: <em>Ich gebe es ihm</em>, <em>Ich schenke meiner Mutter Blumen</em>. Only <em>uns</em> and <em>euch</em> are the same in both cases, a bit like <em>us</em>."
+      },
+      {
+        trap: "Don't say «Ich helfe ihn» or «Ich sehe ihm»: <em>helfen</em> takes the dative (<em>ihm</em>), <em>sehen</em> the accusative (<em>ihn</em>). Don't say «Ich gebe ihm es»: with two pronouns the accusative comes first, <em>Ich gebe es ihm</em>. And after <em>mit, bei, zu</em> the article is always in the dative: <em>beim Umzug</em> (<em>bei dem Umzug</em>), <em>mit dem Auto</em>."
+      },
+      {
+        tip: "To choose the case, first ask whether the verb takes the dative (<em>helfen, danken, gehören</em>), then whether the person receives something. For every new verb, learn its case too."
+      }
+    ],
+    grammar: {
+      title: "Accusative, dative and pronouns",
+      note: "<b>mich/mir, dich/dir, ihn/ihm, sie/ihr, uns/uns, euch/euch, sie/ihnen</b>. Article in the dative: <b>dem, der, dem, den</b>; in the plural the noun takes <b>-n</b> (<i>den Kindern</i>), except plurals in -n/-en and in -s (<i>den Nachbarn, den Jobs</i>). Two pronouns: the <b>accusative</b> first (<i>Ich gebe es ihm</i>).",
+      table: {
+        head: ["nominative", "accusative", "dative"],
+        rows: [
+          ["ich", "mich", "mir"],
+          ["du", "dich", "dir"],
+          ["er", "ihn", "ihm"],
+          ["sie", "sie", "ihr"],
+          ["es", "es", "ihm"],
+          ["wir", "uns", "uns"],
+          ["ihr", "euch", "euch"],
+          ["sie", "sie", "ihnen"]
+        ]
+      },
+      examples: [
+        { tr: "I see him every day at the office.", note: "sehen + accusative: ihn" },
+        { tr: "I help him with the move.", note: "helfen + dative: ihm" },
+        { tr: "The key belongs to the landlord.", note: "gehören + dative: dem Vermieter" },
+        { tr: "I give my mother flowers as a present.", note: "feminine dative: meiner Mutter" },
+        { tr: "I give it to him.", note: "two pronouns: accusative first, es ihm" },
+        { tr: "We thank the neighbors for their help.", note: "plural dative: den Nachbarn" }
+      ]
+    },
+    vocab: [
+      "the landlord",
+      "the neighbor",
+      "the rent",
+      "the rental agreement",
+      "the key",
+      "the box",
+      "the address",
+      "the piece of furniture"
+    ],
+    exercises: [
+      {
+        q: "How do you say \"I help him with the move\" (about a friend)?",
+        opts: [
+          "Ich helfe ihm beim Umzug.",
+          "Ich helfe ihn beim Umzug.",
+          "Ich helfe er beim Umzug."
+        ],
+        why: "<i>Helfen</i> takes the dative: <b>ihm</b>. <i>Beim</i> is <i>bei dem</i>, the dative again."
+      },
+      {
+        q: "Which sentence has the right order?",
+        opts: [
+          "Ich gebe ihm es.",
+          "Ich gebe es ihm.",
+          "Ich es gebe ihm."
+        ],
+        why: "With two pronouns the accusative (<i>es</i>) comes first, then the dative (<i>ihm</i>), and the conjugated verb stays in second position."
+      },
+      {
+        q: "Which sentences are correct?",
+        opts: [
+          "Ich helfe dir.",
+          "Ich helfe dich.",
+          "Das gehört mir.",
+          "Ich sehe ihm im Büro.",
+          "Wir danken euch."
+        ],
+        why: "<i>Helfen, gehören, danken</i> take the dative (<i>dir, mir, euch</i>). <i>Sehen</i> takes the accusative: <i>Ich sehe ihn.</i>"
+      },
+      {
+        q: "Complete: \"Ich schenke ___ Mutter Blumen.\" (definite article)",
+        hint: "feminine dative",
+        why: "<i>Die Mutter</i> is feminine, and in the dative the article is <b>der</b>: <i>Ich schenke der Mutter Blumen.</i>"
+      },
+      {
+        q: "Complete: \"Der Schlüssel gehört ___ Vermieter.\" (definite article)",
+        hint: "masculine dative",
+        why: "<i>Gehören</i> takes the dative, and <i>der Vermieter</i> is masculine: <b>dem</b>."
+      },
+      {
+        q: "Complete: \"Kennst du Tim? Ich sehe ___ oft im Büro.\" (him)",
+        hint: "accusative of er",
+        why: "<i>Sehen</i> takes the accusative: <b>ihn</b>."
+      },
+      {
+        q: "Complete: \"Das sind Anna und Tim. Ich danke ___ für die Hilfe.\" (them)",
+        hint: "plural dative",
+        why: "<i>Danken</i> takes the dative, and in the plural the pronoun is <b>ihnen</b>."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "Where is the box? I've been looking for it for a long time. Can you help me?",
+        why: "<i>Der Karton</i> is masculine and <i>suchen</i> takes the accusative: <b>ihn</b>. <i>Helfen</i> takes the dative: <b>mir</b>."
+      },
+      {
+        tr: "I help my friend with the move. She gives me a cake, and I thank her.",
+        why: "In <i>Freundin</i> the <b>eu</b> is [ɔʏ]; in <i>schenkt</i> the <b>sch</b> is [ʃ]; in <i>Kuchen</i> the <b>ch</b> after <b>u</b> is [x]."
+      },
+      {
+        tr: "I give him the key, and he helps me with the move.",
+        why: "In <i>Schlüssel</i> the <b>sch</b> is [ʃ] and the <b>ü</b> is rounded; in <i>Umzug</i> the <b>z</b> is [ts]; in <i>hilft</i> the initial <b>h</b> is a breath."
+      }
+    ]
+  },
+  "lesson:a2-u08-l4": {
+    theme: "Subordinate clauses",
+    title: "Ready for B1",
+    objectives: [
+      "give a reason with weil and report with dass",
+      "choose between als and wenn",
+      "put the conjugated verb at the end in the subordinate clause",
+      "handle modal verbs, the Perfekt and separable verbs in the subordinate clause"
+    ],
+    theory: [
+      {
+        h: "weil, dass, als, wenn: the verb goes to the end",
+        p: "After <strong>weil</strong> (because), <strong>dass</strong> (that), <strong>als</strong> and <strong>wenn</strong> (when) the conjugated verb goes <strong>to the end</strong>, and there is a comma between the main and the subordinate clause: <em>Ich bleibe zu Hause, weil ich arbeiten muss. Ich hoffe, dass ich bald eine Stelle finde.</em> With a modal at the end it is the modal that stands last (<em>muss</em>), with the Perfekt the auxiliary (<em>weil ich umgezogen bin</em>), and with a separable verb the prefix is reattached (<em>weil ich früh aufstehe</em>)."
+      },
+      {
+        h: "When the subordinate clause comes first",
+        p: "If the subordinate clause opens the sentence, the main clause begins with the <strong>conjugated verb</strong>: <em>Weil ich krank bin, bleibe ich zu Hause. Wenn ich Zeit habe, lerne ich Deutsch.</em> The subordinate clause fills the first position by itself, and the verb of the main clause stays in second."
+      },
+      {
+        h: "als or wenn?",
+        p: "<strong>Als</strong> introduces a single event in the past: <em>Als ich in Wien angekommen bin, habe ich dich angerufen.</em> <strong>Wenn</strong> is for the present, the future and repeated actions: <em>Wenn ich Zeit habe, lerne ich Deutsch.</em> For a direct question you use <em>wann</em> instead: <em>Wann kommst du?</em>"
+      },
+      {
+        contrast: "In English the word order doesn't change in a subordinate clause: <em>I stay home because I have to work</em>. In German <em>weil ich arbeiten muss</em> sends the modal to the end. English <em>when</em> covers both <em>als</em> and <em>wenn</em>: German uses <em>als</em> for a single past event and <em>wenn</em> for the present, the future and repeated actions, and <em>wenn</em> is also <em>if</em>. English often drops <em>that</em> (<em>I hope I find a job soon</em>); with <em>dass</em> you keep it, put the verb at the end, and the comma in front is required."
+      },
+      {
+        trap: "Don't write «weil ich muss arbeiten»: the modal goes to the end, <em>weil ich arbeiten muss</em>. For \"because\" there are <em>weil</em> and <em>denn</em>, but <em>denn</em> leaves the verb in second position (<em>..., denn ich muss arbeiten</em>). Don't say «wenn ich in Wien angekommen bin» for a single event in the past: that takes <em>als</em>. And <em>weil</em> is not a question word: to ask \"why\" you say <em>Warum?</em>."
+      },
+      {
+        tip: "When a clause starts with <em>weil, dass, als, wenn</em>, find the conjugated verb and move it to the end. If the clause has two verbs (<em>muss arbeiten</em>), the conjugated one goes last: <em>arbeiten muss</em>."
+      }
+    ],
+    grammar: {
+      title: "weil, dass, als, wenn",
+      note: "In the subordinate clause the conjugated verb goes <b>to the end</b>. <b>weil</b> = because, <b>dass</b> = that, <b>als</b> = when (a single event in the past), <b>wenn</b> = when or if (present, future, habit). Subordinate clause first: the main clause begins with the verb.",
+      table: {
+        head: ["conjunction", "example", "note"],
+        rows: [
+          ["weil", "Ich bleibe zu Hause, weil ich arbeiten muss.", "the modal at the end"],
+          ["dass", "Ich hoffe, dass ich bald eine Stelle finde.", "comma required"],
+          ["als", "Als ich in Wien angekommen bin, habe ich dich angerufen.", "a single event in the past"],
+          ["wenn", "Wenn ich Zeit habe, lerne ich Deutsch.", "present, future, habit"]
+        ]
+      },
+      examples: [
+        { tr: "I'm staying home because I have to work.", note: "weil: the modal muss at the end" },
+        { tr: "Since I'm sick, I'm staying home.", note: "subordinate clause first: the main clause begins with the verb" },
+        { tr: "I hope to find a job soon.", note: "dass: conjugated verb at the end" },
+        { tr: "When I arrived in Vienna, I called you.", note: "als: a single event in the past" },
+        { tr: "When I have time, I study German.", note: "wenn: present, habit" },
+        { tr: "I know that he can't come tomorrow.", note: "dass: kommen kann, the modal at the end" }
+      ]
+    },
+    vocab: [
+      "the future",
+      "the dream",
+      "the goal",
+      "the possibility",
+      "the decision",
+      "to hope",
+      "important",
+      "sure"
+    ],
+    exercises: [
+      {
+        tr: "The present tense of wollen, all persons.",
+        why: "<i>Will, willst, will, wollen, wollt, wollen</i>: in the first and third person singular the form is the same, with no ending."
+      },
+      {
+        tr: "The Präteritum of müssen, all persons.",
+        why: "<i>Musste, musstest, musste, mussten, musstet, mussten</i>: the Umlaut disappears, and the first and third person singular are the same."
+      },
+      {
+        tr: "The Perfekt of bleiben, all persons.",
+        why: "<i>Ich bin geblieben, du bist geblieben, er ist geblieben, wir sind geblieben, ihr seid geblieben, sie sind geblieben</i>: <i>bleiben</i> takes <i>sein</i>."
+      },
+      {
+        q: "Complete: \"Ich bleibe hier, ___ ich arbeiten muss.\" (because)",
+        hint: "a conjunction that sends the verb to the end",
+        why: "<b>weil</b> sends the conjugated verb to the end: <i>weil ich arbeiten muss</i>. <i>Denn</i> would leave the verb in second position."
+      },
+      {
+        q: "Complete: \"Ich hoffe, ___ ich bald eine Stelle finde.\" (that)",
+        hint: "a conjunction for reporting content",
+        why: "<b>dass</b> introduces what you hope, and the conjugated verb <i>finde</i> goes to the end."
+      },
+      {
+        q: "Complete: \"___ ich in Wien angekommen bin, habe ich dich angerufen.\" (when)",
+        hint: "a single event in the past",
+        why: "A single event in the past takes <b>als</b>. With the subordinate clause in first position, the main clause begins with the verb: <i>habe ich dich angerufen</i>."
+      },
+      {
+        q: "Complete: \"___ ich Zeit habe, lerne ich Deutsch.\" (when, as a habit)",
+        hint: "present or habit",
+        why: "For the present and for repeated actions you use <b>wenn</b>."
+      },
+      {
+        q: "Complete: \"Ich weiß, dass er morgen nicht kommen ___.\" (können, er)",
+        hint: "the modal goes to the end",
+        why: "In the subordinate clause the modal goes to the end: <b>kann</b>. The sentence ends with <i>kommen kann</i>."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "I'm staying home because I'm sick.",
+        why: "<i>Ich bleibe zu Hause, weil ich krank bin</i>: <i>weil</i> sends <i>bin</i> to the end."
+      },
+      {
+        q: "Translate: \"I'm staying home because I have to work.\"",
+        why: "<i>Ich bleibe zu Hause, weil ich arbeiten muss</i>: the modal <i>muss</i> at the end. <i>Daheim</i> is fine too, and the subordinate clause can come first: <i>Weil ich arbeiten muss, bleibe ich zu Hause.</i>"
+      },
+      {
+        tr: "I hope to find a job in the fall. When I have time, I study German, because it is important for my work.",
+        why: "In <i>Herbst</i> the <b>b</b> before <b>st</b> sounds [p]; in <i>wichtig</i> the ending <b>-ig</b> is normally [ɪç] in standard German (de-DE) and the <b>w</b> stays [v]; in <i>Deutsch</i> the <b>eu</b> is read [ɔʏ] and the <b>tsch</b> [tʃ]."
+      },
+      {
+        tr: "I know I have to study a lot, because the exam is hard.",
+        why: "In <i>weiß</i> the <b>ß</b> is a voiceless <b>s</b> and the <b>ei</b> is [aɪ]; in <i>Prüfung</i> the <b>ü</b> is rounded; in <i>schwer</i> the <b>sch</b> is [ʃ]."
+      }
+    ]
+  },
+  "lesson:a2-u08-test": {
+    theme: "Check",
+    title: "Test: Plans",
+    objectives: [
+      "check vorhaben + zu, the A2 tenses (Perfekt, Präteritum, Konjunktiv II), pronouns and the dative, weil, dass, als and wenn"
+    ],
+    theory: [
+      {
+        p: "Twelve questions on the whole A2 level. You pass with 70%. Don't look back at the lessons while you answer: if you can't remember something, it is better to go back and review."
+      }
+    ],
+    exercises: [
+      {
+        tr: "The Perfekt of gehen, all persons.",
+        why: "<i>Ich bin gegangen, du bist gegangen, er ist gegangen, wir sind gegangen, ihr seid gegangen, sie sind gegangen</i>: <i>gehen</i> takes <i>sein</i>."
+      },
+      {
+        tr: "The Konjunktiv II of haben, all persons.",
+        why: "<i>Hätte, hättest, hätte, hätten, hättet, hätten</i>: the Präteritum <i>hatte</i> with the Umlaut."
+      },
+      {
+        q: "Complete: \"Ich habe vor, im Herbst in Wien ___ studieren.\"",
+        hint: "before the infinitive",
+        why: "<b>zu</b> stands directly before the infinitive: <i>in Wien zu studieren</i>."
+      },
+      {
+        q: "Complete: \"Als Kind ___ ich oft krank.\" (to be)",
+        hint: "Präteritum of sein, ich",
+        why: "<b>War</b>: in the first person singular there is no ending."
+      },
+      {
+        q: "Complete: \"Ich helfe ___ beim Umzug.\" (him)",
+        hint: "dative of er",
+        why: "<i>Helfen</i> takes the dative: <b>ihm</b>."
+      },
+      {
+        q: "Complete: \"Ich bleibe zu Hause, ___ ich krank bin.\" (because)",
+        hint: "a conjunction that sends the verb to the end",
+        why: "<b>weil</b> sends the conjugated verb to the end: <i>weil ich krank bin</i>."
+      },
+      {
+        q: "Complete: \"Ich ___ gern ein Zimmer.\" (I would like to have)",
+        hint: "Konjunktiv II of haben, ich",
+        why: "<b>Hätte</b>: <i>Ich hätte gern ein Zimmer</i> is the polite form for a wish."
+      },
+      {
+        q: "Complete: \"Wir sind gestern in Berlin ___.\" (Partizip II of ankommen)",
+        hint: "Partizip II with -ge- in the middle",
+        why: "<b>angekommen</b>: in separable verbs <i>-ge-</i> goes between the prefix and the verb, and <i>ankommen</i> takes <i>sein</i>."
+      },
+      {
+        q: "Which sentence is correct?",
+        opts: [
+          "Ich habe vor, nach dem Studium in Berlin zu arbeiten.",
+          "Ich habe vor, nach dem Studium in Berlin arbeiten zu.",
+          "Ich habe vor, nach dem Studium in Berlin zu arbeitet."
+        ],
+        why: "<b>zu</b> stands before the infinitive, and the infinitive <i>arbeiten</i> closes the sentence."
+      },
+      {
+        q: "Complete the sentence (use ankommen in the Perfekt).",
+        tr: "When I have arrived in Vienna, I will call you.",
+        why: "<i>Wenn ich in Wien angekommen bin, rufe ich dich an</i>: <i>wenn</i> is for the future, the Perfekt has the auxiliary <i>bin</i> at the end, and the main clause begins with the verb <i>rufe</i>."
+      },
+      {
+        q: "Translate: \"I gave the key to Tim.\" (use a pronoun for Tim and the Perfekt)",
+        why: "<i>Ich habe ihm den Schlüssel gegeben</i>: the dative pronoun <i>ihm</i> comes before the noun in the accusative, <i>den Schlüssel</i>."
+      },
+      {
+        tr: "I intend to move, because I have a new job.",
+        why: "In <i>umzuziehen</i> the <b>z</b> is [ts] and <i>zu</i> is in the middle; in <i>weil</i> the <b>w</b> is [v]; in <i>Stelle</i> the initial <b>st</b> is [ʃt]."
       }
     ]
   }
