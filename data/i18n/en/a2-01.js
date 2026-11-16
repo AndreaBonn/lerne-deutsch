@@ -1562,5 +1562,557 @@ LINGUAI.addStrings("en", {
         why: "In <i>braucht</i> <b>au</b> sounds [aʊ] and the <b>ch</b> after it is [x]; in <i>sie</i> the <b>s</b> is voiced [z]."
       }
     ]
+  },
+  "unit:a2-u04": {
+    title: "Health",
+    grammarNote: "mir tut ... weh · bei and zu with the dative · time expressions (am, um, seit, vor) · Konjunktiv II for advice (du solltest, ich würde) · reflexive verbs · dass · deshalb"
+  },
+  "lesson:a2-u04-l1": {
+    theme: "Aches and symptoms",
+    title: "My head hurts",
+    objectives: [
+      "say where it hurts, with the person in the dative: mir, dir, ihm, ihr, uns, euch, ihnen",
+      "match tut or tun to the body part, which is the subject",
+      "name body parts with their article and plural"
+    ],
+    theory: [
+      {
+        h: "The person in the dative, the body part in the nominative",
+        p: "To say that a body part hurts, German uses <em>wehtun</em>. The <b>person</b> goes in the <b>dative</b> (<em>mir, dir, ihm, ihr, uns, euch, ihnen</em>) and the <b>body part</b> is the <b>subject</b>, so the verb agrees with it: <em>Mir tut der Kopf weh</em> (singular, <em>tut</em>), <em>Mir tun die Füße weh</em> (plural, <em>tun</em>). <em>Weh</em> goes at the end of the sentence, because <em>wehtun</em> is a separable verb. With a noun, the person takes the dative of the noun: <em>Meiner Schwester tut der Rücken weh.</em> You can swap the order without changing the meaning: <em>Der Kopf tut mir weh.</em> To ask: <em>Wo tut es dir weh?</em> or <em>Was tut dir weh?</em>"
+      },
+      {
+        contrast: "English also makes the body part the subject: “my head hurts”, “my feet hurt”. German shows the person with a dative pronoun instead of a possessive: <em>Mir tut der Kopf weh</em>, literally “to me hurts the head”. English <em>me</em> looks the same whatever the role, but German keeps <em>mir</em> (dative) apart from <em>mich</em> (accusative). English has no grammatical gender for body parts, while German does: <em>der Kopf</em>, <em>die Hand</em>, <em>das Bein</em>. Learn each noun with its article. For a headache there is also <em>Ich habe Kopfschmerzen</em>, where the person is the subject, like “I have a headache”. Watch out for <em>der Hals</em>: it means both “neck” and “throat”."
+      },
+      {
+        trap: "With <em>wehtun</em> the person is not the subject: <em>Ich tut der Kopf weh</em> and <em>Mich tut der Kopf weh</em> are wrong, you need <em>mir</em>. And the verb does not follow the person but the body part: <em>Mir tun die Füße weh</em> (plural), not <em>Mir tut die Füße weh</em>. <em>Mein Kopf tut weh</em> is also correct: the possessive <em>mein</em> shows who feels the pain, while the subject stays <em>Kopf</em>."
+      },
+      {
+        tip: "First find the body part and check whether it is singular or plural: that decides <em>tut</em> or <em>tun</em>. Then add the person in the dative. Learn the plurals of body nouns together with the article: <em>der Fuß, die Füße</em>; <em>das Ohr, die Ohren</em>."
+      }
+    ],
+    grammar: {
+      title: "mir tut ... weh",
+      note: "The person is in the <b>dative</b>, the body part is the <b>subject</b> and decides <b>tut</b> (singular) or <b>tun</b> (plural). <b>Weh</b> goes at the end.",
+      table: {
+        head: ["person", "dative", "example"],
+        rows: [
+          ["ich", "mir", "Mir tut der Kopf weh."],
+          ["du", "dir", "Dir tun die Füße weh."],
+          ["er", "ihm", "Ihm tut der Bauch weh."],
+          ["sie", "ihr", "Ihr tut der Rücken weh."],
+          ["wir", "uns", "Uns tun die Beine weh."],
+          ["ihr", "euch", "Euch tut der Hals weh."],
+          ["sie, Sie", "ihnen, Ihnen", "Ihnen tun die Ohren weh."]
+        ]
+      },
+      examples: [
+        { tr: "My head hurts.", note: "mir: dative of ich; der Kopf is the subject" },
+        { tr: "Where does it hurt?", note: "es is a general subject: Wo tut es dir weh?" },
+        { tr: "His teeth hurt.", note: "ihm; die Zähne is plural, so tun" },
+        { tr: "My sister's back hurts.", note: "dative on the noun too: meiner Schwester" },
+        { tr: "Our legs hurt.", note: "uns; das Bein, die Beine" },
+        { tr: "I have a headache.", note: "alternative: here the subject is ich, Kopfschmerzen is plural" }
+      ]
+    },
+    vocab: [
+      "head",
+      "neck, throat",
+      "belly, stomach",
+      "back",
+      "leg",
+      "foot",
+      "tooth",
+      "ear",
+      "pain",
+      "to hurt",
+      "sick, ill",
+      "tired"
+    ],
+    exercises: [
+      {
+        q: "How do you say “My head hurts”?",
+        opts: ["Ich tut der Kopf weh.", "Mir tut der Kopf weh.", "Mich tut der Kopf weh."],
+        why: "The person goes in the dative: <b>mir</b>. <i>Der Kopf</i> is the subject, so the verb is <i>tut</i>. <i>Ich</i> is a nominative and <i>mich</i> an accusative."
+      },
+      {
+        q: "How do you say “My feet hurt”?",
+        opts: ["Mir tut die Füße weh.", "Mir tun die Füße weh.", "Mich tun die Füße weh."],
+        why: "<i>Die Füße</i> is plural and the subject: the verb is <b>tun</b>. The person stays in the dative, <i>mir</i>."
+      },
+      {
+        q: "Complete: “Mir ___ die Beine weh.” (verb tun, the form that matches the plural body part)",
+        hint: "tun, plural form",
+        why: "<b>Tun</b>: the subject is <i>die Beine</i>, plural. With a singular subject you would say <i>tut</i>."
+      },
+      {
+        q: "Complete: “Anna ist krank. ___ tut der Hals weh.” (to her: dative of sie)",
+        hint: "pronoun in the dative",
+        why: "<b>Ihr</b>: dative of <i>sie</i> (she). <i>Der Hals</i> is the subject, singular."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "I am tired. My legs hurt. And Lisa? Her back hurts.",
+        why: "<i>Mir</i> for <i>ich</i> and <i>ihr</i> for <i>Lisa</i>: these are the datives. The verb agrees with the body part: <i>tun</i> with <i>die Beine</i>, <i>tut</i> with <i>der Rücken</i>."
+      },
+      {
+        q: "Match each sentence with its translation.",
+        pairs: [
+          "My head hurts.",
+          "My feet hurt.",
+          "Her stomach hurts.",
+          "His ears hurt."
+        ]
+      },
+      {
+        q: "Put the words in order.",
+        tr: "My feet hurt.",
+        why: "The verb stays in second position. Both <i>Mir tun die Füße weh</i> and <i>Die Füße tun mir weh</i> work: the order changes, not the meaning."
+      },
+      {
+        q: "Translate with tun ... weh and the dative: “My head hurts.”",
+        why: "<i>Mir tut der Kopf weh</i> or <i>Der Kopf tut mir weh</i>. English has no gender here, but German <i>der Kopf</i> is masculine."
+      },
+      {
+        tr: "Good morning, doctor. My head hurts, and my ears hurt too.",
+        why: "In <i>Kopf</i> the <b>o</b> is short and <b>pf</b> is an affricate [pf]; in <i>Ohren</i> the <b>h</b> is silent and the <b>o</b> is long."
+      },
+      {
+        tr: "I am sick. My throat hurts, and my legs hurt.",
+        why: "In <i>Hals</i> the initial <b>h</b> is a breath [h]; in <i>weh</i> the <b>w</b> is [v] and the <b>h</b> is silent; in <i>Beine</i> the <b>ei</b> sounds like [aɪ]."
+      }
+    ]
+  },
+  "lesson:a2-u04-l2": {
+    theme: "At the doctor's",
+    title: "At the doctor's",
+    objectives: [
+      "tell bei + dative (being there) from zu + dative (going there) for “at/to the doctor's”",
+      "use the contracted forms beim, zum, zur",
+      "say when and for how long with am, um, seit and vor",
+      "make an appointment so that you are understood"
+    ],
+    theory: [
+      {
+        h: "bei for being at someone's, zu for going there",
+        p: "To say <b>where you are</b> at a person's, use <b>bei + dative</b>: <em>Ich bin beim Arzt</em> (<em>bei dem</em> becomes <em>beim</em>). To say <b>where you are going</b>, use <b>zu + dative</b>: <em>Ich gehe zum Arzt</em> (<em>zu dem</em> becomes <em>zum</em>), <em>Ich gehe zur Ärztin</em> (<em>zu der</em> becomes <em>zur</em>). <em>Zur Apotheke</em> is also movement towards a place. For time: <b>am</b> with the day (<em>am Montag</em>), <b>um</b> with the hour (<em>um zehn Uhr</em>), <b>seit + dative</b> for something that has lasted from a point in time and still goes on (<em>seit drei Tagen</em>), <b>vor + dative</b> for something that happened earlier (<em>vor drei Tagen</em>). To make an appointment: <em>Ich möchte einen Termin vereinbaren.</em>"
+      },
+      {
+        contrast: "English “at the doctor's” and “to the doctor's” also split being there from going there, much like <em>bei</em> and <em>zu</em>; but German puts the article on the person (<em>beim Arzt</em>, “at the doctor”), and English uses the possessive <em>doctor's</em>. For time, English “on Monday” and “at ten” match <em>am Montag</em> and <em>um zehn Uhr</em>. The big difference is “for three days”: English says “I have had a fever for three days” (present perfect), while German uses the present with <em>seit</em>: <em>Ich habe seit drei Tagen Fieber</em>. And “three days ago” is <em>vor drei Tagen</em>: the preposition comes <b>first</b>, while English <em>ago</em> comes after."
+      },
+      {
+        trap: "<em>Bei</em> and <em>zu</em> take the dative. <em>Zum Arzt</em> and <em>zur Ärztin</em> are the usual contracted forms: <em>zu dem</em> and <em>zu der</em> appear when you want to stress the article. <em>Zum Arzt</em> means going to the doctor and <em>beim Arzt</em> means being at the doctor's: do not decide by the verb alone (there is no general rule such as “after a verb of motion use <em>zu</em>”), look at whether you mean being there or going there. After <em>seit</em> and <em>vor</em> the plural is also dative, with <b>-n</b>: <em>seit drei Tagen</em>, not <em>seit drei Tage</em>. With <em>seit</em> the German present is the normal tense, not the perfect."
+      },
+      {
+        tip: "First ask yourself: “am I there, or am I going there?”. <em>Wo?</em> asks for <em>bei</em>, <em>wohin?</em> asks for <em>zu</em>. For the appointment keep day and time together: <em>am Montag um zehn Uhr</em>."
+      }
+    ],
+    grammar: {
+      title: "bei, zu, am, um, seit, vor",
+      note: "At the doctor's: <b>bei</b> + dative for being there, <b>zu</b> + dative for going there. In time: <b>am</b> (day), <b>um</b> (hour), <b>seit</b> (since when), <b>vor</b> (ago).",
+      table: {
+        head: ["question", "form", "example"],
+        rows: [
+          ["Wo? (at a person's)", "bei + dative", "Ich bin beim Arzt."],
+          ["Wohin? (to a person's)", "zu + dative", "Ich gehe zum Arzt."],
+          ["Wohin? (to a place)", "zu + dative", "Ich gehe zur Apotheke."],
+          ["when (day)", "am", "am Montag"],
+          ["when (hour)", "um", "um zehn Uhr"],
+          ["for how long", "seit + dative", "seit drei Tagen"],
+          ["how long ago", "vor + dative", "vor drei Tagen"]
+        ]
+      },
+      examples: [
+        { tr: "I am at the doctor's.", note: "bei dem becomes beim: where you are" },
+        { tr: "I am going to the doctor's.", note: "zu dem becomes zum: movement towards a person" },
+        { tr: "My mother is going to the doctor (female).", note: "zu der becomes zur" },
+        { tr: "I am going to the pharmacy.", note: "zur Apotheke: movement towards a place" },
+        { tr: "I have had a fever for three days.", note: "seit + dative plural: Tagen" },
+        { tr: "The appointment is on Monday at ten.", note: "am with the day, um with the hour" }
+      ]
+    },
+    vocab: [
+      "doctor (male)",
+      "doctor (female)",
+      "doctor's office",
+      "appointment",
+      "health insurance",
+      "prescription",
+      "pharmacy",
+      "tablet, pill",
+      "fever",
+      "cough",
+      "to make (an appointment)",
+      "for, since (time)"
+    ],
+    exercises: [
+      {
+        q: "You are at the doctor's, not on your way there. Which sentence is correct?",
+        opts: ["Ich bin zum Arzt.", "Ich bin beim Arzt.", "Ich bin bei Arzt."],
+        why: "To say where you are at a person's: <b>bei</b> + dative, and <i>bei dem</i> becomes <i>beim</i>. <i>Zum</i> expresses movement."
+      },
+      {
+        q: "Complete: “Ich gehe ___ Ärztin.” (zu with the article, contracted form)",
+        hint: "zu + der, contracted form",
+        why: "<b>Zur</b>: <i>zu der</i> contracts to <i>zur</i>. Going towards a person takes <i>zu</i> + dative."
+      },
+      {
+        q: "Complete: “Ich habe ___ drei Tagen Fieber.” (I have had a fever for three days.)",
+        hint: "for how long, + dative",
+        why: "<b>Seit</b> + dative for something that has lasted from a point in time and continues; <i>Tagen</i> has the <b>-n</b> of the dative plural."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "I would like to make an appointment. Is Monday at ten all right?",
+        why: "<i>Am Montag</i> with the day, <i>um zehn Uhr</i> with the hour."
+      },
+      {
+        q: "Match each expression with its translation.",
+        pairs: [
+          "at the doctor's (I am there)",
+          "to the doctor's (I am going)",
+          "for three days",
+          "three days ago"
+        ]
+      },
+      {
+        q: "Put the words in order.",
+        tr: "Tomorrow I am going to the doctor's.",
+        why: "The verb stays in second position. Both <i>Ich gehe morgen zum Arzt</i> and <i>Morgen gehe ich zum Arzt</i> work; you can also open with <i>zum Arzt</i> or end with <i>morgen</i>, which puts one element in the spotlight."
+      },
+      {
+        q: "Translate (use am and zu): “On Monday I am going to the doctor (female).”",
+        why: "<i>Ich gehe am Montag zur Ärztin</i>: <i>am</i> with the day, <i>zur</i> (= <i>zu der</i>) for the movement. With <i>Am Montag</i> first, the verb stays in second position: <i>Am Montag gehe ich zur Ärztin</i>."
+      },
+      {
+        q: "You phone a doctor's office to make an appointment.",
+        setting: "You call Dr. Berger's office because you have a fever.",
+        lines: [
+          { tr: "Berger practice, good morning." },
+          {
+            tr: "Say that you would like to make an appointment.",
+            answerTr: "Good morning, I would like to make an appointment."
+          },
+          { tr: "Gladly. How long have you had the fever?" },
+          {
+            tr: "Answer that you have had a fever for three days.",
+            answerTr: "I have had a fever for three days."
+          }
+        ]
+      },
+      {
+        tr: "Good morning, I would like to make an appointment. I have had a fever for three days and my head hurts.",
+        why: "In <i>seit</i> the initial <b>s</b> is voiced [z] and the <b>ei</b> sounds like [aɪ]; in <i>Termin</i> the stress falls on the last syllable."
+      },
+      {
+        tr: "On Monday at ten I have an appointment at the doctor's.",
+        why: "In <i>zehn</i> the <b>z</b> is [ts] and the <b>e</b> is long, with a silent <b>h</b>; in <i>Uhr</i> the <b>u</b> is long and the final <b>r</b> is often vocalized."
+      }
+    ]
+  },
+  "lesson:a2-u04-l3": {
+    theme: "Advice",
+    title: "You should rest",
+    objectives: [
+      "give advice with du solltest, ihr solltet, Sie sollten",
+      "express personal advice with ich würde + infinitive",
+      "use the right reflexive pronoun with a verb like sich ausruhen",
+      "place the reflexive pronoun before the infinitive at the end of the sentence"
+    ],
+    theory: [
+      {
+        h: "Advice with the Konjunktiv II",
+        p: "To give advice German uses the Konjunktiv II. With <b>sollen</b> you say <em>solltest</em>, <em>solltet</em>, <em>sollten</em>: <em>Du solltest dich ausruhen.</em> To say what you would do in the other person's place, use <b>würde + infinitive</b>: <em>Ich würde zum Arzt gehen.</em> The phrase <em>an deiner Stelle</em> goes well with <em>würde</em>: <em>An deiner Stelle würde ich im Bett bleiben.</em> The infinitive goes at the end of the sentence, and the reflexive pronoun comes before it."
+      },
+      {
+        h: "Reflexive verbs with a fixed pronoun",
+        p: "<em>Sich ausruhen, sich hinlegen, sich erholen, sich fühlen</em> are reflexive by nature: the pronoun is part of the verb and does not mean “rest oneself” in a literal sense. The pronoun is in the <b>accusative</b> and changes with the person: <em>mich, dich, sich, uns, euch, sich</em>. It comes after the conjugated verb: <em>Ich ruhe mich aus.</em> With <em>sollen</em> and <em>würde</em> it stands before the infinitive: <em>Du solltest dich ausruhen. Ich würde mich hinlegen.</em> With the polite form: <em>Sie sollten sich hinlegen</em> (<em>sich</em> stays lowercase)."
+      },
+      {
+        contrast: "English builds advice with <em>should</em> and <em>would</em>: “you should rest”, “I would go to the doctor”. German is very close: <em>solltest</em> is the Konjunktiv II of <em>sollen</em> and <em>würde</em> is “would”, with the infinitive at the end. But <em>sollte</em> has personal endings (<em>du solltest, ihr solltet</em>), while English <em>should</em> never changes. The real difference is the reflexive: English often has no pronoun (“you should rest”, “lie down”, “recover”), while German needs it: <em>sich ausruhen</em>, <em>sich hinlegen</em>, <em>sich erholen</em>. “To feel” is the same: “I feel tired” is <em>Ich fühle mich müde</em>."
+      },
+      {
+        trap: "<em>Du solltest</em> is advice; <em>du sollst</em> is an obligation or someone else's order, and sounds much stronger (closer to “you shall” or “you are supposed to”). Do not drop the pronoun as English does: <em>Du solltest ausruhen</em> is incomplete, you need <em>dich ausruhen</em>. Do not move it to the end either: <em>Du solltest ausruhen dich</em> is wrong. With <em>würde</em> the infinitive stays last: <em>Ich würde mich ausruhen</em>, not <em>Ich würde ausruhen mich</em>."
+      },
+      {
+        tip: "For advice prepare two versions: <em>Du solltest ...</em> to tell the other person, <em>Ich würde ...</em> to say what you would do. Then check the reflexive pronoun: same person as the subject (<em>ich ... mich</em>, <em>du ... dich</em>)."
+      }
+    ],
+    grammar: {
+      title: "The Konjunktiv II for advice",
+      note: "<b>sollen</b> in the Konjunktiv II to advise (<b>du solltest</b>), <b>würde + infinitive</b> to say what you would do. The reflexive pronoun is accusative and comes before the infinitive.",
+      table: {
+        head: ["person", "sollen", "würde", "reflexive"],
+        rows: [
+          ["ich", "sollte", "würde", "mich"],
+          ["du", "solltest", "würdest", "dich"],
+          ["er, sie, es", "sollte", "würde", "sich"],
+          ["wir", "sollten", "würden", "uns"],
+          ["ihr", "solltet", "würdet", "euch"],
+          ["sie, Sie", "sollten", "würden", "sich"]
+        ]
+      },
+      examples: [
+        { tr: "You should rest.", note: "du solltest + dich + infinitive at the end" },
+        { tr: "I would go to the doctor.", note: "ich würde + infinitive at the end" },
+        { tr: "In your place I would stay in bed.", note: "an deiner Stelle: dative after an" },
+        { tr: "You (plural) should drink a lot of tea.", note: "ihr solltet: sollte- + the personal ending -t" },
+        { tr: "You should lie down (polite).", note: "polite form: Sie sollten sich hinlegen" },
+        { tr: "I would recover on vacation.", note: "sich erholen: würde + mich + infinitive" }
+      ]
+    },
+    vocab: [
+      "to rest",
+      "to lie down",
+      "to recover",
+      "to feel",
+      "advice",
+      "tea",
+      "bed",
+      "rest, quiet",
+      "vacation, leave",
+      "healthy, well",
+      "should, to be supposed to (sollen)",
+      "in your place"
+    ],
+    exercises: [
+      {
+        q: "Give a tired friend some advice: “You should rest.”",
+        opts: ["Du sollst dich ausruhen.", "Du solltest dich ausruhen.", "Du solltest ausruhen dich."],
+        why: "<b>Du solltest dich ausruhen</b>: the Konjunktiv II of <i>sollen</i> gives advice, and <i>dich</i> comes before the infinitive. <i>Du sollst</i> is an obligation; in the third option the pronoun is in the wrong place."
+      },
+      {
+        tr: "The Konjunktiv II of sollen, all persons.",
+        why: "<i>Sollte, solltest, sollte, sollten, solltet, sollten</i>: these are the Präteritum forms, but here they serve for advice. The 1st and 3rd person singular are the same."
+      },
+      {
+        tr: "The Konjunktiv II of sich ausruhen with würde, all persons.",
+        why: "<i>Würde mich ausruhen, würdest dich ausruhen, würde sich ausruhen, würden uns ausruhen, würdet euch ausruhen, würden sich ausruhen</i>: <i>würde</i> + reflexive pronoun + infinitive."
+      },
+      {
+        q: "Complete: “Du bist krank. Du ___ zum Arzt gehen.” (you should: sollen)",
+        hint: "sollen, Konjunktiv II, du",
+        why: "<b>Solltest</b>: the form for <i>du</i> is <i>solltest</i>, with <b>-st</b>. The infinitive <i>gehen</i> goes at the end."
+      },
+      {
+        q: "Complete: “Wir sind müde. Wir sollten ___ ausruhen.” (wir)",
+        hint: "reflexive pronoun, accusative",
+        why: "<b>Uns</b>: the reflexive pronoun for <i>wir</i> is <i>uns</i>, before the infinitive."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "You have a fever. In your place I would go to the doctor. And you should rest.",
+        why: "<i>An deiner Stelle würde ich ...</i> to say what you would do; <i>du solltest dich ausruhen</i>, with <i>dich</i> for <i>du</i>."
+      },
+      {
+        q: "Match each sentence with its translation.",
+        pairs: [
+          "You should rest.",
+          "I would go to the doctor.",
+          "You (plural) should drink a lot of tea.",
+          "You should lie down (polite)."
+        ]
+      },
+      {
+        q: "Translate (use sich ausruhen): “In your place I would rest.”",
+        why: "<i>An deiner Stelle würde ich mich ausruhen</i>: <i>würde</i> in second position after <i>An deiner Stelle</i>, then <i>ich mich</i> and the infinitive at the end. <i>Ich würde mich an deiner Stelle ausruhen</i> works too."
+      },
+      {
+        tr: "You look tired. In your place I would lie down, and you should drink a lot of tea.",
+        why: "In <i>Stelle</i> the initial <b>st</b> sounds like [ʃt], while in <i>solltest</i> it is [st]; in <i>würde</i> the <b>ü</b> is short [ʏ]."
+      },
+      {
+        tr: "You should rest, and I would go to the doctor.",
+        why: "In <i>ausruhen</i> the <b>au</b> sounds like [aʊ] and the <b>h</b> is silent; in <i>dich</i> the <b>ch</b> after <b>i</b> is [ç]."
+      }
+    ]
+  },
+  "lesson:a2-u04-l4": {
+    theme: "Lifestyle",
+    title: "Living healthily",
+    objectives: [
+      "introduce a content clause with dass after ich finde, ich glaube, ich weiß, der Arzt sagt",
+      "put the conjugated verb at the end in a clause with dass",
+      "link cause and consequence with deshalb, which takes the verb right after it",
+      "talk about sport, food, sleep and habits"
+    ],
+    theory: [
+      {
+        h: "dass sends the verb to the end",
+        p: "After verbs like <em>finden, glauben, denken, wissen, sagen</em> you report a content with <b>dass</b>. The clause that follows is subordinate: the conjugated verb goes at the <b>end</b>, and the comma before <em>dass</em> is required. <em>Ich finde, dass Sport wichtig ist. Der Arzt sagt, dass ich mehr Wasser trinken soll.</em> If there is an infinitive and a modal, the conjugated modal closes the clause: <em>... trinken soll</em>. It works like <em>weil</em>, <em>als</em> and <em>wenn</em> seen earlier."
+      },
+      {
+        h: "deshalb: the consequence, with inversion",
+        p: "<b>Deshalb</b> (“that is why”) links two main clauses and takes the <b>first position</b> of the second: the verb comes right after it and the subject follows. <em>Ich schlafe schlecht. Deshalb bin ich müde.</em> Synonyms: <em>deswegen, darum</em>. It can also come after a comma: <em>Ich schlafe schlecht, deshalb bin ich müde.</em>"
+      },
+      {
+        contrast: "English often drops “that”: “I think sport is important”. German can drop <em>dass</em> too, but then the verb stays in second position and there is a comma: <em>Ich denke, Sport ist wichtig.</em> With <em>dass</em> the verb goes to the end: <em>Ich denke, dass Sport wichtig <b>ist</b></em>. And English has no comma before “that”, while German always has one before <em>dass</em>. The other difference is <em>deshalb</em>: English “that is why I am tired” keeps subject and verb in the usual order, while German inverts them: <em>Deshalb bin ich müde</em>."
+      },
+      {
+        trap: "<em>Deshalb</em> does not send the verb to the end as <em>dass</em> does: <em>Deshalb ich bin müde</em> and <em>Deshalb ich müde bin</em> are wrong. And with <em>dass</em> the verb does not stay in second position: <em>Ich finde, dass Sport ist wichtig</em> is wrong. English “that” is two different words in German: <em>dass</em> (conjunction, “I know that he is ill”) and <em>das</em> (article or pronoun, “that is good”). They are not interchangeable: <em>Ich weiß, das er krank ist</em> is a spelling error."
+      },
+      {
+        tip: "Before <em>dass</em> put the comma and send the verb to the end; after <em>deshalb</em> write the verb right away. Before writing, ask yourself: does the clause begin with a conjunction (<em>dass</em>, verb at the end) or an adverb (<em>deshalb</em>, verb right after)?"
+      }
+    ],
+    grammar: {
+      title: "dass and deshalb",
+      note: "<b>dass</b>: the conjugated verb goes at the end. <b>deshalb</b>: the verb comes right after it, the subject follows.",
+      table: {
+        head: ["element", "verb position", "example"],
+        rows: [
+          ["main clause", "second position", "Sport ist wichtig."],
+          ["dass", "at the end", "Ich finde, dass Sport wichtig ist."],
+          ["dass with a modal", "the modal closes", "..., dass ich mehr trinken soll."],
+          ["deshalb", "right after deshalb", "Ich schlafe schlecht. Deshalb bin ich müde."]
+        ]
+      },
+      examples: [
+        { tr: "I think sport is important.", note: "dass + verb at the end; English can drop “that”, German normally keeps dass" },
+        { tr: "The doctor says I have to drink more water.", note: "the modal soll closes the clause after trinken" },
+        { tr: "I know that cigarettes are not good for you.", note: "dass ... sind: the verb at the end" },
+        { tr: "I sleep badly. That is why I am tired.", note: "deshalb in first position, then bin ich" },
+        { tr: "She eats a lot of vegetables. That is why she is rarely ill.", note: "deshalb, then ist sie" },
+        { tr: "I think a walk is good for you.", note: "dass ... gesund ist" }
+      ]
+    },
+    vocab: [
+      "apple",
+      "vegetables",
+      "meal",
+      "walk",
+      "cigarette",
+      "sleep",
+      "health",
+      "water",
+      "to smoke",
+      "regularly",
+      "unhealthy",
+      "to exercise, to move"
+    ],
+    exercises: [
+      {
+        q: "With dass: “I think sport is important.” Which sentence is correct?",
+        opts: [
+          "Ich finde, dass Sport ist wichtig.",
+          "Ich finde, dass Sport wichtig ist.",
+          "Ich finde dass, Sport wichtig ist."
+        ],
+        why: "<b>Dass</b> sends the verb to the end, and the comma goes <b>before</b> <i>dass</i>. In the first the verb is in second position, in the third the comma is in the wrong place."
+      },
+      {
+        q: "Which sentence is correct? “I sleep badly. That is why I am tired.”",
+        opts: [
+          "Ich schlafe schlecht. Deshalb ich bin müde.",
+          "Ich schlafe schlecht. Deshalb bin ich müde.",
+          "Ich schlafe schlecht. Deshalb ich müde bin."
+        ],
+        why: "After <b>deshalb</b> the verb comes right away, then the subject: <i>Deshalb bin ich müde</i>. <i>Deshalb</i> does not send the verb to the end."
+      },
+      {
+        q: "Complete: “Der Arzt sagt, ___ ich mehr Wasser trinken soll.” (that)",
+        hint: "conjunction",
+        why: "<b>Dass</b> introduces what the doctor says and sends the verb to the end: <i>trinken soll</i>."
+      },
+      {
+        q: "Complete: “Ich glaube, dass er viel Gemüse ___.” (essen, er)",
+        hint: "essen, er, verb at the end",
+        why: "<b>Isst</b>: the form for <i>er</i> is <i>isst</i>, and with <i>dass</i> it goes at the end of the clause."
+      },
+      {
+        q: "Complete: “Ich bin oft müde. Deshalb ___ ich früh ins Bett.” (gehen, ich)",
+        hint: "gehen, ich",
+        why: "<b>Gehe</b>: after <i>Deshalb</i> the verb comes right away, then <i>ich</i>."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "I know that sport is good for you. But I do too little of it. That is why I am often tired.",
+        why: "<i>Dass</i> after <i>Ich weiß,</i> with the verb at the end; <i>deshalb</i> (also <i>deswegen</i> or <i>darum</i>) opens the next sentence, and <i>bin ich</i> follows right away."
+      },
+      {
+        q: "Match each word with its translation.",
+        pairs: [
+          "that (introduces a clause)",
+          "that is why",
+          "regularly",
+          "unhealthy"
+        ]
+      },
+      {
+        q: "Translate (use dass): “The doctor says I have to sleep more.”",
+        why: "<i>Der Arzt sagt, dass ich mehr schlafen soll</i>: comma, <i>dass</i>, and the modal <i>soll</i> at the end after the infinitive. <i>Muss</i> works too, because “I have to” can render either."
+      },
+      {
+        tr: "The doctor says I have to sleep more. I sleep badly, that is why I am often tired.",
+        why: "In <i>schlafen</i> and <i>schlecht</i> the <b>sch</b> is [ʃ]; in <i>dass</i> the <b>ss</b> is a voiceless <b>s</b> and the <b>a</b> is short."
+      },
+      {
+        tr: "I think sport is good for you. That is why I go for a walk every day.",
+        why: "In <i>Sport</i> the initial <b>sp</b> sounds like [ʃp]; in <i>gesund</i> the <b>s</b> is voiced [z]; in <i>spazieren</i> <b>sp</b> is [ʃp] and the <b>z</b> is [ts]."
+      }
+    ]
+  },
+  "lesson:a2-u04-test": {
+    theme: "Test",
+    title: "Unit 4 test",
+    objectives: [
+      "check the dative with wehtun, the Konjunktiv II for advice (solltest, würde, also with a reflexive verb) and clauses with dass"
+    ],
+    theory: [
+      {
+        p: "Ten questions on the dative with <em>wehtun</em>, on the Konjunktiv II for advice and on clauses with <em>dass</em>. You pass with 70%. Do not look back at the lessons while answering: if you do not remember something, it is better to go back and review."
+      }
+    ],
+    exercises: [
+      {
+        tr: "The Konjunktiv II of sollen, all persons.",
+        why: "<i>Sollte, solltest, sollte, sollten, solltet, sollten</i>: the 1st and 3rd person singular are the same."
+      },
+      {
+        q: "Complete: “Anna hat Fieber. ___ tut der Kopf weh.” (to her)",
+        hint: "pronoun in the dative",
+        why: "<b>Ihr</b>: dative of <i>sie</i>; <i>der Kopf</i> is the subject."
+      },
+      {
+        q: "Complete: “Wir sind müde. ___ tun die Beine weh.” (to us)",
+        hint: "pronoun in the dative",
+        why: "<b>Uns</b>: dative of <i>wir</i>; <i>die Beine</i> is plural, so <i>tun</i>."
+      },
+      {
+        q: "Complete: “Ich denke, ___ du dich ausruhen solltest.” (that)",
+        hint: "conjunction",
+        why: "<b>Dass</b> introduces what you think and sends the verb to the end: <i>ausruhen solltest</i>."
+      },
+      {
+        q: "Complete: “Du bist krank. An deiner Stelle ___ ich zum Arzt gehen.” (werden, Konjunktiv II)",
+        hint: "werden, Konjunktiv II, ich",
+        why: "<b>Würde</b>: <i>würde</i> + infinitive to say what you would do."
+      },
+      {
+        q: "How do you say “My legs hurt”?",
+        opts: ["Mir tut die Beine weh.", "Mir tun die Beine weh.", "Ich tun die Beine weh."],
+        why: "<i>Die Beine</i> is plural and the subject, so <b>tun</b>; the person stays in the dative, <i>mir</i>."
+      },
+      {
+        q: "Match each sentence with its translation.",
+        pairs: [
+          "My head hurts.",
+          "You should rest.",
+          "I would go to the doctor.",
+          "I know that he is ill."
+        ]
+      },
+      {
+        q: "Translate (use dass and sollen): “The doctor says I should rest.”",
+        why: "<i>Der Arzt sagt, dass ich mich ausruhen soll</i>: <i>dass</i> sends the verb to the end; <i>mich</i> comes before the infinitive <i>ausruhen</i>."
+      },
+      {
+        tr: "My head hurts. I think I should rest.",
+        why: "In <i>denke</i> the <b>n</b> before <b>k</b> sounds like [ŋ]; in <i>sollte</i> the <b>o</b> is short."
+      },
+      {
+        tr: "My brother is sick. His back hurts, and I think he should go to the doctor.",
+        why: "In <i>Rücken</i> the <b>ü</b> is short [ʏ] and <b>ck</b> sounds like [k]; in <i>Mein</i> the <b>ei</b> is [aɪ]; in <i>ihm</i> the <b>h</b> is silent and the <b>i</b> is long."
+      }
+    ]
   }
 });

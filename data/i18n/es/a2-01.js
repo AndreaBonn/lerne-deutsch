@@ -1562,5 +1562,557 @@ LINGUAI.addStrings("es", {
         why: "En <i>braucht</i> <b>au</b> suena [aʊ] y la <b>ch</b> tras él es [x]; en <i>sie</i> la <b>s</b> es sonora [z]."
       }
     ]
+  },
+  "unit:a2-u04": {
+    title: "Salud",
+    grammarNote: "mir tut ... weh · bei y zu con el dativo · expresiones de tiempo (am, um, seit, vor) · Konjunktiv II de consejo (du solltest, ich würde) · verbos reflexivos · dass · deshalb"
+  },
+  "lesson:a2-u04-l1": {
+    theme: "Dolores y síntomas",
+    title: "Me duele la cabeza",
+    objectives: [
+      "decir dónde duele con el dativo de la persona: mir, dir, ihm, ihr, uns, euch, ihnen",
+      "concordar tut o tun con la parte del cuerpo, que es el sujeto",
+      "nombrar las partes del cuerpo con su artículo y su plural"
+    ],
+    theory: [
+      {
+        h: "La persona en dativo, la parte del cuerpo en nominativo",
+        p: "Para decir que duele una parte del cuerpo el alemán usa <em>wehtun</em>. La <b>persona</b> va en <b>dativo</b> (<em>mir, dir, ihm, ihr, uns, euch, ihnen</em>) y la <b>parte del cuerpo</b> es el <b>sujeto</b>, así que el verbo concuerda con ella: <em>Mir tut der Kopf weh</em> (singular, <em>tut</em>), <em>Mir tun die Füße weh</em> (plural, <em>tun</em>). <em>Weh</em> va al final de la frase, porque <em>wehtun</em> es un verbo separable. Con un nombre, la persona toma el dativo del nombre: <em>Meiner Schwester tut der Rücken weh.</em> Se puede invertir el orden sin cambiar el sentido: <em>Der Kopf tut mir weh.</em> Para preguntar: <em>Wo tut es dir weh?</em> o <em>Was tut dir weh?</em>"
+      },
+      {
+        contrast: "La estructura es la misma que en español: «me duele la cabeza», «me duelen los pies». También en español la persona va en objeto indirecto (<em>me</em>) y el verbo concuerda con la parte del cuerpo. La diferencia está en la forma: <em>mir</em> es una palabra independiente, no un clítico delante del verbo, y el verbo se parte en <em>tut ... weh</em>. Además, el español usa <em>me</em> tanto para el dativo como para el acusativo, mientras que el alemán distingue <em>mir</em> de <em>mich</em>. Los géneros tampoco coinciden: <em>la cabeza</em> es femenino, pero <em>der Kopf</em> es masculino; <em>la pierna</em> es femenino, <em>das Bein</em> es neutro. Para el dolor de cabeza existe también <em>Ich habe Kopfschmerzen</em>, donde el sujeto es la persona. Ojo con <em>der Hals</em>: significa tanto «cuello» como «garganta»."
+      },
+      {
+        trap: "Con <em>wehtun</em> la persona no es el sujeto: <em>Ich tut der Kopf weh</em> y <em>Mich tut der Kopf weh</em> son incorrectas, hace falta <em>mir</em>. Y el verbo no concuerda con la persona sino con la parte del cuerpo: <em>Mir tun die Füße weh</em> (plural), no <em>Mir tut die Füße weh</em>. También es correcto <em>Mein Kopf tut weh</em>: el posesivo <em>mein</em> indica quién siente el dolor, mientras que el sujeto sigue siendo <em>Kopf</em>."
+      },
+      {
+        tip: "Primero localiza la parte del cuerpo y mira si es singular o plural: ella decide <em>tut</em> o <em>tun</em>. Después añade la persona en dativo. El plural de los nombres del cuerpo se aprende junto con el artículo: <em>der Fuß, die Füße</em>; <em>das Ohr, die Ohren</em>."
+      }
+    ],
+    grammar: {
+      title: "mir tut ... weh",
+      note: "La persona va en <b>dativo</b>, la parte del cuerpo es el <b>sujeto</b> y decide <b>tut</b> (singular) o <b>tun</b> (plural). <b>Weh</b> va al final.",
+      table: {
+        head: ["persona", "dativo", "ejemplo"],
+        rows: [
+          ["ich", "mir", "Mir tut der Kopf weh."],
+          ["du", "dir", "Dir tun die Füße weh."],
+          ["er", "ihm", "Ihm tut der Bauch weh."],
+          ["sie", "ihr", "Ihr tut der Rücken weh."],
+          ["wir", "uns", "Uns tun die Beine weh."],
+          ["ihr", "euch", "Euch tut der Hals weh."],
+          ["sie, Sie", "ihnen, Ihnen", "Ihnen tun die Ohren weh."]
+        ]
+      },
+      examples: [
+        { tr: "Me duele la cabeza.", note: "mir: dativo de ich; der Kopf es el sujeto" },
+        { tr: "¿Dónde te duele?", note: "es es un sujeto general: Wo tut es dir weh?" },
+        { tr: "Le duelen los dientes.", note: "ihm; die Zähne es plural, por eso tun" },
+        { tr: "A mi hermana le duele la espalda.", note: "dativo también en el nombre: meiner Schwester" },
+        { tr: "Nos duelen las piernas.", note: "uns; das Bein, die Beine" },
+        { tr: "Tengo dolor de cabeza.", note: "alternativa: aquí el sujeto es ich, Kopfschmerzen es plural" }
+      ]
+    },
+    vocab: [
+      "la cabeza",
+      "el cuello, la garganta",
+      "la barriga",
+      "la espalda",
+      "la pierna",
+      "el pie",
+      "el diente",
+      "la oreja",
+      "el dolor",
+      "doler",
+      "enfermo",
+      "cansado"
+    ],
+    exercises: [
+      {
+        q: "¿Cómo se dice «Me duele la cabeza»?",
+        opts: ["Ich tut der Kopf weh.", "Mir tut der Kopf weh.", "Mich tut der Kopf weh."],
+        why: "La persona va en dativo: <b>mir</b>. <i>Der Kopf</i> es el sujeto, por eso el verbo es <i>tut</i>. <i>Ich</i> es un nominativo y <i>mich</i> un acusativo."
+      },
+      {
+        q: "¿Cómo se dice «Me duelen los pies»?",
+        opts: ["Mir tut die Füße weh.", "Mir tun die Füße weh.", "Mich tun die Füße weh."],
+        why: "<i>Die Füße</i> es plural y sujeto: el verbo es <b>tun</b>. La persona sigue en dativo, <i>mir</i>."
+      },
+      {
+        q: "Completa: «Mir ___ die Beine weh.» (verbo tun, la forma que concuerda con la parte del cuerpo en plural)",
+        hint: "tun, forma del plural",
+        why: "<b>Tun</b>: el sujeto es <i>die Beine</i>, plural. Con un sujeto singular se diría <i>tut</i>."
+      },
+      {
+        q: "Completa: «Anna ist krank. ___ tut der Hals weh.» (a ella: dativo de sie)",
+        hint: "pronombre en dativo",
+        why: "<b>Ihr</b>: dativo de <i>sie</i> (ella). <i>Der Hals</i> es el sujeto, singular."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Estoy cansado. Me duelen las piernas. ¿Y Lisa? Le duele la espalda.",
+        why: "<i>Mir</i> para <i>ich</i> e <i>ihr</i> para <i>Lisa</i>: son los dativos. El verbo concuerda con la parte del cuerpo: <i>tun</i> con <i>die Beine</i>, <i>tut</i> con <i>der Rücken</i>."
+      },
+      {
+        q: "Une cada frase con su traducción.",
+        pairs: [
+          "Me duele la cabeza.",
+          "Me duelen los pies.",
+          "Le duele la barriga.",
+          "Le duelen las orejas."
+        ]
+      },
+      {
+        q: "Ordena las palabras.",
+        tr: "Me duelen los pies.",
+        why: "El verbo se queda en segunda posición. Valen tanto <i>Mir tun die Füße weh</i> como <i>Die Füße tun mir weh</i>: cambia el orden, no el sentido."
+      },
+      {
+        q: "Traduce con tun ... weh y el dativo: «Me duele la cabeza.»",
+        why: "<i>Mir tut der Kopf weh</i> o <i>Der Kopf tut mir weh</i>. En español <i>la cabeza</i> es femenino, pero <i>der Kopf</i> es masculino."
+      },
+      {
+        tr: "Buenos días, doctora. Me duele la cabeza, y también me duelen las orejas.",
+        why: "En <i>Kopf</i> la <b>o</b> es breve y <b>pf</b> es una africada [pf]; en <i>Ohren</i> la <b>h</b> no se pronuncia y la <b>o</b> es larga."
+      },
+      {
+        tr: "Estoy enfermo. Me duele la garganta, y me duelen las piernas.",
+        why: "En <i>Hals</i> la <b>h</b> inicial es un soplo [h]; en <i>weh</i> la <b>w</b> es [v] y la <b>h</b> no se pronuncia; en <i>Beine</i> la <b>ei</b> suena [aɪ]."
+      }
+    ]
+  },
+  "lesson:a2-u04-l2": {
+    theme: "En el médico",
+    title: "En el médico",
+    objectives: [
+      "distinguir bei + dativo (estar) de zu + dativo (ir) para decir «en casa del médico» y «al médico»",
+      "usar las formas contractas beim, zum, zur",
+      "decir cuándo y desde cuándo con am, um, seit y vor",
+      "pedir una cita de forma comprensible"
+    ],
+    theory: [
+      {
+        h: "bei para estar con alguien, zu para ir a verlo",
+        p: "Para decir <b>dónde se está</b> en casa de una persona o con ella se usa <b>bei + dativo</b>: <em>Ich bin beim Arzt</em> (<em>bei dem</em> pasa a <em>beim</em>). Para decir <b>adónde se va</b> se usa <b>zu + dativo</b>: <em>Ich gehe zum Arzt</em> (<em>zu dem</em> pasa a <em>zum</em>), <em>Ich gehe zur Ärztin</em> (<em>zu der</em> pasa a <em>zur</em>). También <em>zur Apotheke</em> es un movimiento hacia un lugar. Para el tiempo: <b>am</b> con el día (<em>am Montag</em>), <b>um</b> con la hora (<em>um zehn Uhr</em>), <b>seit + dativo</b> para lo que dura desde un momento y continúa (<em>seit drei Tagen</em>), <b>vor + dativo</b> para lo que ocurrió antes (<em>vor drei Tagen</em>). Para pedir una cita: <em>Ich möchte einen Termin vereinbaren.</em>"
+      },
+      {
+        contrast: "El español dice «voy al médico» con <em>a + el = al</em>, una contracción como <em>zum</em>. Para decir que se está allí, en cambio, cambia la construcción («estoy en la consulta», «estoy con el médico»), y el alemán usa para eso <em>bei</em>: <em>beim Arzt</em>. Con el tiempo hay mucho parecido: «desde hace tres días» es <em>seit drei Tagen</em>, con el presente como en español (<em>Ich habe seit drei Tagen Fieber</em>, «tengo fiebre desde hace tres días»), y «hace tres días» es <em>vor drei Tagen</em>, con la preposición también <b>antes</b> del tiempo. «El lunes» es <em>am Montag</em> y «a las diez» es <em>um zehn Uhr</em>."
+      },
+      {
+        trap: "<em>Bei</em> y <em>zu</em> rigen dativo. <em>Zum Arzt</em> y <em>zur Ärztin</em> son las formas contractas habituales: <em>zu dem</em> y <em>zu der</em> aparecen cuando se quiere destacar el artículo. <em>Zum Arzt</em> significa ir al médico y <em>beim Arzt</em> estar con el médico: no decidas solo por el verbo (no hay una regla general del tipo «tras un verbo de movimiento se usa <em>zu</em>»), fíjate en si quieres decir estar o ir. Tras <em>seit</em> y <em>vor</em> también el plural va en dativo, con <b>-n</b>: <em>seit drei Tagen</em>, no <em>seit drei Tage</em>."
+      },
+      {
+        tip: "Pregúntate primero: «¿estoy allí o voy hacia allí?». <em>Wo?</em> pide <em>bei</em>, <em>wohin?</em> pide <em>zu</em>. Para la cita junta día y hora: <em>am Montag um zehn Uhr</em>."
+      }
+    ],
+    grammar: {
+      title: "bei, zu, am, um, seit, vor",
+      note: "En el médico: <b>bei</b> + dativo para estar, <b>zu</b> + dativo para ir. En el tiempo: <b>am</b> (día), <b>um</b> (hora), <b>seit</b> (desde cuándo), <b>vor</b> (hace).",
+      table: {
+        head: ["pregunta", "forma", "ejemplo"],
+        rows: [
+          ["Wo? (en casa de alguien)", "bei + dativo", "Ich bin beim Arzt."],
+          ["Wohin? (a casa de alguien)", "zu + dativo", "Ich gehe zum Arzt."],
+          ["Wohin? (a un lugar)", "zu + dativo", "Ich gehe zur Apotheke."],
+          ["cuándo (día)", "am", "am Montag"],
+          ["cuándo (hora)", "um", "um zehn Uhr"],
+          ["desde cuándo", "seit + dativo", "seit drei Tagen"],
+          ["hace cuánto", "vor + dativo", "vor drei Tagen"]
+        ]
+      },
+      examples: [
+        { tr: "Estoy en el médico.", note: "bei dem pasa a beim: estado en un lugar" },
+        { tr: "Voy al médico.", note: "zu dem pasa a zum: movimiento hacia una persona" },
+        { tr: "Mi madre va a la doctora.", note: "zu der pasa a zur" },
+        { tr: "Voy a la farmacia.", note: "zur Apotheke: movimiento hacia un lugar" },
+        { tr: "Tengo fiebre desde hace tres días.", note: "seit + dativo plural: Tagen" },
+        { tr: "La cita es el lunes a las diez.", note: "am con el día, um con la hora" }
+      ]
+    },
+    vocab: [
+      "el médico",
+      "la doctora",
+      "la consulta",
+      "la cita",
+      "el seguro médico",
+      "la receta",
+      "la farmacia",
+      "la pastilla",
+      "la fiebre",
+      "la tos",
+      "concertar (una cita)",
+      "desde, hace (tiempo)"
+    ],
+    exercises: [
+      {
+        q: "Estás en el médico, no vas de camino. ¿Qué frase es correcta?",
+        opts: ["Ich bin zum Arzt.", "Ich bin beim Arzt.", "Ich bin bei Arzt."],
+        why: "Para decir dónde se está con una persona: <b>bei</b> + dativo, y <i>bei dem</i> pasa a <i>beim</i>. <i>Zum</i> indica movimiento."
+      },
+      {
+        q: "Completa: «Ich gehe ___ Ärztin.» (zu con el artículo, forma contracta)",
+        hint: "zu + der, forma contracta",
+        why: "<b>Zur</b>: <i>zu der</i> se contrae en <i>zur</i>. Ir hacia una persona pide <i>zu</i> + dativo."
+      },
+      {
+        q: "Completa: «Ich habe ___ drei Tagen Fieber.» (Tengo fiebre desde hace tres días.)",
+        hint: "desde cuándo, + dativo",
+        why: "<b>Seit</b> + dativo para lo que dura desde un momento y continúa; <i>Tagen</i> lleva la <b>-n</b> del dativo plural."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Quisiera pedir una cita. ¿Le va bien el lunes a las diez?",
+        why: "<i>Am Montag</i> con el día, <i>um zehn Uhr</i> con la hora."
+      },
+      {
+        q: "Une cada expresión con su traducción.",
+        pairs: [
+          "en el médico (estoy allí)",
+          "al médico (voy)",
+          "desde hace tres días",
+          "hace tres días"
+        ]
+      },
+      {
+        q: "Ordena las palabras.",
+        tr: "Mañana voy al médico.",
+        why: "El verbo se queda en segunda posición. Valen tanto <i>Ich gehe morgen zum Arzt</i> como <i>Morgen gehe ich zum Arzt</i>; también son posibles el orden con <i>zum Arzt</i> en primera posición o con <i>morgen</i> al final, que destacan un elemento."
+      },
+      {
+        q: "Traduce (usa am y zu): «El lunes voy a la doctora.»",
+        why: "<i>Ich gehe am Montag zur Ärztin</i>: <i>am</i> con el día, <i>zur</i> (= <i>zu der</i>) con el movimiento. Con <i>Am Montag</i> delante el verbo sigue en segunda posición: <i>Am Montag gehe ich zur Ärztin</i>."
+      },
+      {
+        q: "Llamas a una consulta médica para pedir una cita.",
+        setting: "Llamas a la consulta del doctor Berger porque tienes fiebre.",
+        lines: [
+          { tr: "Consulta Berger, buenos días." },
+          {
+            tr: "Di que quisieras pedir una cita.",
+            answerTr: "Buenos días, quisiera pedir una cita."
+          },
+          { tr: "Con mucho gusto. ¿Desde cuándo tiene fiebre?" },
+          {
+            tr: "Responde que tienes fiebre desde hace tres días.",
+            answerTr: "Tengo fiebre desde hace tres días."
+          }
+        ]
+      },
+      {
+        tr: "Buenos días, quisiera pedir una cita. Tengo fiebre desde hace tres días y me duele la cabeza.",
+        why: "En <i>seit</i> la <b>s</b> inicial es sonora [z] y la <b>ei</b> suena [aɪ]; en <i>Termin</i> el acento cae en la última sílaba."
+      },
+      {
+        tr: "El lunes a las diez tengo una cita con el médico.",
+        why: "En <i>zehn</i> la <b>z</b> es [ts] y la <b>e</b> es larga, con la <b>h</b> muda; en <i>Uhr</i> la <b>u</b> es larga y la <b>r</b> final se vocaliza a menudo."
+      }
+    ]
+  },
+  "lesson:a2-u04-l3": {
+    theme: "Consejos",
+    title: "Deberías descansar",
+    objectives: [
+      "dar un consejo con du solltest, ihr solltet, Sie sollten",
+      "expresar un consejo personal con ich würde + infinitivo",
+      "usar el pronombre reflexivo correcto con un verbo como sich ausruhen",
+      "colocar el pronombre reflexivo antes del infinitivo al final de la frase"
+    ],
+    theory: [
+      {
+        h: "El consejo con el Konjunktiv II",
+        p: "Para dar un consejo el alemán usa el Konjunktiv II. Con <b>sollen</b> se dice <em>solltest</em>, <em>solltet</em>, <em>sollten</em>: <em>Du solltest dich ausruhen.</em> Para decir qué harías en el lugar del otro se usa <b>würde + infinitivo</b>: <em>Ich würde zum Arzt gehen.</em> La expresión <em>an deiner Stelle</em> combina bien con <em>würde</em>: <em>An deiner Stelle würde ich im Bett bleiben.</em> El infinitivo va al final de la frase, y el pronombre reflexivo lo precede."
+      },
+      {
+        h: "Los verbos reflexivos léxicos",
+        p: "<em>Sich ausruhen, sich hinlegen, sich erholen, sich fühlen</em> son reflexivos por naturaleza: el pronombre forma parte del verbo y no significa «descansar a sí mismo». El pronombre va en <b>acusativo</b> y cambia con la persona: <em>mich, dich, sich, uns, euch, sich</em>. Va después del verbo conjugado: <em>Ich ruhe mich aus.</em> Con <em>sollen</em> y <em>würde</em> va delante del infinitivo: <em>Du solltest dich ausruhen. Ich würde mich hinlegen.</em> Con la forma de cortesía: <em>Sie sollten sich hinlegen</em> (<em>sich</em> sigue en minúscula)."
+      },
+      {
+        contrast: "El español construye el consejo con el condicional: «deberías descansar», «yo iría al médico». El alemán usa el Konjunktiv II de <em>sollen</em> o <em>würde</em> + infinitivo, no una desinencia propia en el verbo principal. Con los reflexivos, el clítico español se pega al infinitivo (<em>acostarte</em>); en alemán es una palabra aparte y va delante: <em>dich hinlegen</em>. Y los verbos no siempre coinciden en ser reflexivos: «descansar» no lo es en español, pero <em>sich ausruhen</em> sí; <em>sich hinlegen</em> es «acostarse» y <em>sich erholen</em> es «recuperarse»."
+      },
+      {
+        trap: "<em>Du solltest</em> es un consejo; <em>du sollst</em> es una obligación o un encargo de otra persona, y suena mucho más fuerte. No te olvides del pronombre como en «descansar»: <em>Du solltest ausruhen</em> está incompleto, hace falta <em>dich ausruhen</em>. Tampoco lo muevas al final: <em>Du solltest ausruhen dich</em> es incorrecto. Con <em>würde</em> el infinitivo queda al final: <em>Ich würde mich ausruhen</em>, no <em>Ich würde ausruhen mich</em>."
+      },
+      {
+        tip: "Para el consejo prepara dos versiones: <em>Du solltest ...</em> para decírselo al otro, <em>Ich würde ...</em> para decir qué harías tú. Después comprueba el pronombre reflexivo: misma persona que el sujeto (<em>ich ... mich</em>, <em>du ... dich</em>)."
+      }
+    ],
+    grammar: {
+      title: "El Konjunktiv II de consejo",
+      note: "<b>sollen</b> en Konjunktiv II para aconsejar (<b>du solltest</b>), <b>würde + infinitivo</b> para decir qué harías tú. El pronombre reflexivo es acusativo y va antes del infinitivo.",
+      table: {
+        head: ["persona", "sollen", "würde", "reflexivo"],
+        rows: [
+          ["ich", "sollte", "würde", "mich"],
+          ["du", "solltest", "würdest", "dich"],
+          ["er, sie, es", "sollte", "würde", "sich"],
+          ["wir", "sollten", "würden", "uns"],
+          ["ihr", "solltet", "würdet", "euch"],
+          ["sie, Sie", "sollten", "würden", "sich"]
+        ]
+      },
+      examples: [
+        { tr: "Deberías descansar.", note: "du solltest + dich + infinitivo al final" },
+        { tr: "Yo iría al médico.", note: "ich würde + infinitivo al final" },
+        { tr: "En tu lugar me quedaría en la cama.", note: "an deiner Stelle: dativo tras an" },
+        { tr: "Deberíais beber mucho té.", note: "ihr solltet: sollte- + la desinencia personal -t" },
+        { tr: "Debería acostarse (usted).", note: "forma de cortesía: Sie sollten sich hinlegen" },
+        { tr: "Yo me recuperaría en las vacaciones.", note: "sich erholen: würde + mich + infinitivo" }
+      ]
+    },
+    vocab: [
+      "descansar",
+      "acostarse, tumbarse",
+      "recuperarse",
+      "sentirse",
+      "el consejo",
+      "el té",
+      "la cama",
+      "la calma, el reposo",
+      "las vacaciones, el permiso",
+      "sano, curado",
+      "deber (sollen)",
+      "en tu lugar"
+    ],
+    exercises: [
+      {
+        q: "Da un consejo a una amiga cansada: «Deberías descansar.»",
+        opts: ["Du sollst dich ausruhen.", "Du solltest dich ausruhen.", "Du solltest ausruhen dich."],
+        why: "<b>Du solltest dich ausruhen</b>: el Konjunktiv II de <i>sollen</i> da un consejo, y <i>dich</i> precede al infinitivo. <i>Du sollst</i> es una obligación; en la tercera el pronombre está mal colocado."
+      },
+      {
+        tr: "El Konjunktiv II de sollen, todas las personas.",
+        why: "<i>Sollte, solltest, sollte, sollten, solltet, sollten</i>: son las formas del Präteritum, pero aquí sirven para el consejo. La 1.ª y la 3.ª persona del singular son iguales."
+      },
+      {
+        tr: "El Konjunktiv II de sich ausruhen con würde, todas las personas.",
+        why: "<i>Würde mich ausruhen, würdest dich ausruhen, würde sich ausruhen, würden uns ausruhen, würdet euch ausruhen, würden sich ausruhen</i>: <i>würde</i> + pronombre reflexivo + infinitivo."
+      },
+      {
+        q: "Completa: «Du bist krank. Du ___ zum Arzt gehen.» (deberías: sollen)",
+        hint: "sollen, Konjunktiv II, du",
+        why: "<b>Solltest</b>: la forma de <i>du</i> es <i>solltest</i>, con <b>-st</b>. El infinitivo <i>gehen</i> va al final."
+      },
+      {
+        q: "Completa: «Wir sind müde. Wir sollten ___ ausruhen.» (wir)",
+        hint: "pronombre reflexivo, acusativo",
+        why: "<b>Uns</b>: el pronombre reflexivo de <i>wir</i> es <i>uns</i>, delante del infinitivo."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Tienes fiebre. En tu lugar iría al médico. Y deberías descansar.",
+        why: "<i>An deiner Stelle würde ich ...</i> para decir qué harías tú; <i>du solltest dich ausruhen</i>, con <i>dich</i> para <i>du</i>."
+      },
+      {
+        q: "Une cada frase con su traducción.",
+        pairs: [
+          "Deberías descansar.",
+          "Yo iría al médico.",
+          "Deberíais beber mucho té.",
+          "Debería acostarse (usted)."
+        ]
+      },
+      {
+        q: "Traduce (usa sich ausruhen): «En tu lugar descansaría.»",
+        why: "<i>An deiner Stelle würde ich mich ausruhen</i>: <i>würde</i> en segunda posición tras <i>An deiner Stelle</i>, luego <i>ich mich</i> y el infinitivo al final. También vale <i>Ich würde mich an deiner Stelle ausruhen</i>."
+      },
+      {
+        tr: "Pareces cansado. En tu lugar me acostaría, y deberías beber mucho té.",
+        why: "En <i>Stelle</i> la <b>st</b> inicial suena [ʃt], mientras que en <i>solltest</i> es [st]; en <i>würde</i> la <b>ü</b> es breve [ʏ]."
+      },
+      {
+        tr: "Deberías descansar, y yo iría al médico.",
+        why: "En <i>ausruhen</i> la <b>au</b> suena [aʊ] y la <b>h</b> no se pronuncia; en <i>dich</i> la <b>ch</b> tras <b>i</b> es [ç]."
+      }
+    ]
+  },
+  "lesson:a2-u04-l4": {
+    theme: "Estilo de vida",
+    title: "Vivir sano",
+    objectives: [
+      "introducir un contenido con dass tras ich finde, ich glaube, ich weiß, der Arzt sagt",
+      "poner el verbo conjugado al final en la frase con dass",
+      "unir causa y consecuencia con deshalb, que lleva el verbo justo después",
+      "hablar de deporte, alimentación, sueño y hábitos"
+    ],
+    theory: [
+      {
+        h: "dass manda el verbo al final",
+        p: "Tras verbos como <em>finden, glauben, denken, wissen, sagen</em> se transmite un contenido con <b>dass</b>. La frase siguiente es subordinada: el verbo conjugado va al <b>final</b>, y la coma antes de <em>dass</em> es obligatoria. <em>Ich finde, dass Sport wichtig ist. Der Arzt sagt, dass ich mehr Wasser trinken soll.</em> Si hay un infinitivo y un modal, el modal conjugado cierra la frase: <em>... trinken soll</em>. Funciona como <em>weil</em>, <em>als</em> y <em>wenn</em>, vistos antes."
+      },
+      {
+        h: "deshalb: la consecuencia, con inversión",
+        p: "<b>Deshalb</b> («por eso») une dos oraciones principales y ocupa la <b>primera posición</b> de la segunda: el verbo viene justo después y el sujeto lo sigue. <em>Ich schlafe schlecht. Deshalb bin ich müde.</em> Sinónimos: <em>deswegen, darum</em>. También puede ir tras una coma: <em>Ich schlafe schlecht, deshalb bin ich müde.</em>"
+      },
+      {
+        contrast: "En español, «creo que» con una afirmación va con indicativo («creo que el deporte es importante»), pero «no creo que» pide subjuntivo («no creo que sea importante»). En alemán la frase con <em>dass</em> usa el indicativo en ambos casos: <em>Ich denke, dass Sport wichtig <b>ist</b></em>, <em>Ich glaube nicht, dass Sport schlecht <b>ist</b></em>. En español no se pone coma delante de «que»; en alemán la coma antes de <em>dass</em> es obligatoria. Y «por eso» no cambia el orden en español (<em>duermo mal, por eso estoy cansado</em> o <em>por eso yo estoy cansado</em>), mientras que <em>deshalb</em> obliga a poner el verbo primero: <em>Deshalb bin ich müde</em>."
+      },
+      {
+        trap: "<em>Deshalb</em> no manda el verbo al final como hace <em>dass</em>: <em>Deshalb ich bin müde</em> y <em>Deshalb ich müde bin</em> son incorrectas. Y con <em>dass</em> el verbo no se queda en segunda posición: <em>Ich finde, dass Sport ist wichtig</em> es incorrecto. No confundas <em>dass</em> (conjunción) con <em>das</em> (artículo o pronombre): el español usa «que» en ambos casos, pero el alemán los escribe distinto."
+      },
+      {
+        tip: "Delante de <em>dass</em> pon la coma y lleva el verbo al final; tras <em>deshalb</em> escribe el verbo enseguida. Antes de escribir pregúntate: ¿la frase empieza con una conjunción (<em>dass</em>, verbo al final) o con un adverbio (<em>deshalb</em>, verbo enseguida)?"
+      }
+    ],
+    grammar: {
+      title: "dass y deshalb",
+      note: "<b>dass</b>: el verbo conjugado va al final. <b>deshalb</b>: el verbo viene justo después, el sujeto lo sigue.",
+      table: {
+        head: ["elemento", "posición del verbo", "ejemplo"],
+        rows: [
+          ["oración principal", "segunda posición", "Sport ist wichtig."],
+          ["dass", "al final", "Ich finde, dass Sport wichtig ist."],
+          ["dass con modal", "el modal cierra", "..., dass ich mehr trinken soll."],
+          ["deshalb", "justo después de deshalb", "Ich schlafe schlecht. Deshalb bin ich müde."]
+        ]
+      },
+      examples: [
+        { tr: "Creo que el deporte es importante.", note: "dass + verbo al final; en alemán el verbo de la frase con dass va en indicativo" },
+        { tr: "El médico dice que tengo que beber más agua.", note: "el modal soll cierra la frase tras trinken" },
+        { tr: "Sé que los cigarrillos no son sanos.", note: "dass ... sind: el verbo al final" },
+        { tr: "Duermo mal. Por eso estoy cansado.", note: "deshalb en primera posición, luego bin ich" },
+        { tr: "Come mucha verdura. Por eso rara vez está enferma.", note: "deshalb, luego ist sie" },
+        { tr: "Creo que pasear es sano.", note: "dass ... gesund ist" }
+      ]
+    },
+    vocab: [
+      "la manzana",
+      "la verdura",
+      "la comida",
+      "el paseo",
+      "el cigarrillo",
+      "el sueño",
+      "la salud",
+      "el agua",
+      "fumar",
+      "con regularidad",
+      "malsano, poco sano",
+      "moverse, hacer ejercicio"
+    ],
+    exercises: [
+      {
+        q: "Con dass: «Creo que el deporte es importante.» ¿Qué frase es correcta?",
+        opts: [
+          "Ich finde, dass Sport ist wichtig.",
+          "Ich finde, dass Sport wichtig ist.",
+          "Ich finde dass, Sport wichtig ist."
+        ],
+        why: "<b>Dass</b> manda el verbo al final, y la coma va <b>antes</b> de <i>dass</i>. En la primera el verbo está en segunda posición, en la tercera la coma está mal colocada."
+      },
+      {
+        q: "¿Qué frase es correcta? «Duermo mal. Por eso estoy cansado.»",
+        opts: [
+          "Ich schlafe schlecht. Deshalb ich bin müde.",
+          "Ich schlafe schlecht. Deshalb bin ich müde.",
+          "Ich schlafe schlecht. Deshalb ich müde bin."
+        ],
+        why: "Tras <b>deshalb</b> el verbo viene enseguida, luego el sujeto: <i>Deshalb bin ich müde</i>. <i>Deshalb</i> no manda el verbo al final."
+      },
+      {
+        q: "Completa: «Der Arzt sagt, ___ ich mehr Wasser trinken soll.» (que)",
+        hint: "conjunción",
+        why: "<b>Dass</b> introduce lo que dice el médico y manda el verbo al final: <i>trinken soll</i>."
+      },
+      {
+        q: "Completa: «Ich glaube, dass er viel Gemüse ___.» (essen, er)",
+        hint: "essen, er, verbo al final",
+        why: "<b>Isst</b>: la forma de <i>er</i> es <i>isst</i>, y con <i>dass</i> va al final de la frase."
+      },
+      {
+        q: "Completa: «Ich bin oft müde. Deshalb ___ ich früh ins Bett.» (gehen, ich)",
+        hint: "gehen, ich",
+        why: "<b>Gehe</b>: tras <i>Deshalb</i> el verbo viene enseguida, luego <i>ich</i>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Sé que el deporte es sano. Pero hago muy poco. Por eso estoy a menudo cansado.",
+        why: "<i>Dass</i> tras <i>Ich weiß,</i> con el verbo al final; <i>deshalb</i> (también <i>deswegen</i> o <i>darum</i>) abre la frase siguiente, y <i>bin ich</i> viene enseguida."
+      },
+      {
+        q: "Une cada palabra con su traducción.",
+        pairs: [
+          "que (introduce una frase)",
+          "por eso",
+          "con regularidad",
+          "malsano, poco sano"
+        ]
+      },
+      {
+        q: "Traduce (usa dass): «El médico dice que tengo que dormir más.»",
+        why: "<i>Der Arzt sagt, dass ich mehr schlafen soll</i>: coma, <i>dass</i>, y el modal <i>soll</i> al final tras el infinitivo. También vale <i>muss</i>, porque «tengo que» puede traducir ambos."
+      },
+      {
+        tr: "El médico dice que tengo que dormir más. Duermo mal, por eso estoy a menudo cansado.",
+        why: "En <i>schlafen</i> y <i>schlecht</i> la <b>sch</b> es [ʃ]; en <i>dass</i> la <b>ss</b> es una <b>s</b> sorda y la <b>a</b> es breve."
+      },
+      {
+        tr: "Creo que el deporte es sano. Por eso salgo a pasear todos los días.",
+        why: "En <i>Sport</i> la <b>sp</b> inicial suena [ʃp]; en <i>gesund</i> la <b>s</b> es sonora [z]; en <i>spazieren</i> <b>sp</b> es [ʃp] y la <b>z</b> es [ts]."
+      }
+    ]
+  },
+  "lesson:a2-u04-test": {
+    theme: "Prueba",
+    title: "Prueba de la unidad 4",
+    objectives: [
+      "comprobar el dativo con wehtun, el Konjunktiv II de consejo (solltest, würde, también con un verbo reflexivo) y las frases con dass"
+    ],
+    theory: [
+      {
+        p: "Diez preguntas sobre el dativo con <em>wehtun</em>, el Konjunktiv II de consejo y las frases con <em>dass</em>. Se aprueba con el 70 %. No vuelvas a mirar las lecciones mientras respondes: si no recuerdas algo, es mejor volver a repasar."
+      }
+    ],
+    exercises: [
+      {
+        tr: "El Konjunktiv II de sollen, todas las personas.",
+        why: "<i>Sollte, solltest, sollte, sollten, solltet, sollten</i>: la 1.ª y la 3.ª persona del singular son iguales."
+      },
+      {
+        q: "Completa: «Anna hat Fieber. ___ tut der Kopf weh.» (a ella)",
+        hint: "pronombre en dativo",
+        why: "<b>Ihr</b>: dativo de <i>sie</i>; <i>der Kopf</i> es el sujeto."
+      },
+      {
+        q: "Completa: «Wir sind müde. ___ tun die Beine weh.» (a nosotros)",
+        hint: "pronombre en dativo",
+        why: "<b>Uns</b>: dativo de <i>wir</i>; <i>die Beine</i> es plural, por eso <i>tun</i>."
+      },
+      {
+        q: "Completa: «Ich denke, ___ du dich ausruhen solltest.» (que)",
+        hint: "conjunción",
+        why: "<b>Dass</b> introduce lo que se piensa y manda el verbo al final: <i>ausruhen solltest</i>."
+      },
+      {
+        q: "Completa: «Du bist krank. An deiner Stelle ___ ich zum Arzt gehen.» (werden, Konjunktiv II)",
+        hint: "werden, Konjunktiv II, ich",
+        why: "<b>Würde</b>: <i>würde</i> + infinitivo para decir qué harías tú."
+      },
+      {
+        q: "¿Cómo se dice «Me duelen las piernas»?",
+        opts: ["Mir tut die Beine weh.", "Mir tun die Beine weh.", "Ich tun die Beine weh."],
+        why: "<i>Die Beine</i> es plural y sujeto, por eso <b>tun</b>; la persona sigue en dativo, <i>mir</i>."
+      },
+      {
+        q: "Une cada frase con su traducción.",
+        pairs: [
+          "Me duele la cabeza.",
+          "Deberías descansar.",
+          "Yo iría al médico.",
+          "Sé que está enfermo."
+        ]
+      },
+      {
+        q: "Traduce (usa dass y sollen): «El médico dice que debo descansar.»",
+        why: "<i>Der Arzt sagt, dass ich mich ausruhen soll</i>: <i>dass</i> manda el verbo al final; <i>mich</i> precede al infinitivo <i>ausruhen</i>."
+      },
+      {
+        tr: "Me duele la cabeza. Creo que debería descansar.",
+        why: "En <i>denke</i> la <b>n</b> ante <b>k</b> suena [ŋ]; en <i>sollte</i> la <b>o</b> es breve."
+      },
+      {
+        tr: "Mi hermano está enfermo. Le duele la espalda, y creo que debería ir al médico.",
+        why: "En <i>Rücken</i> la <b>ü</b> es breve [ʏ] y <b>ck</b> suena [k]; en <i>Mein</i> la <b>ei</b> es [aɪ]; en <i>ihm</i> la <b>h</b> no se pronuncia y la <b>i</b> es larga."
+      }
+    ]
   }
 });
