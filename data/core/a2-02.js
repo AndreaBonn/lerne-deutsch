@@ -1,7 +1,7 @@
 /* ============================================================
    Language-neutral layer: German (de-DE), structure and answer keys.
    Learner-language texts live in data/i18n/<lang>/a2-02.js.
-   a2-u05 is a German unit.
+   a2-u05 and a2-u06 are German units.
    ============================================================ */
 LINGUAI.addUnits("A2", [
   {
@@ -261,6 +261,337 @@ LINGUAI.addUnits("A2", [
         },
         { t: "listen", it: "Der Kühlschrank steht in der Küche und das Sofa steht im Wohnzimmer." },
         { t: "speak", it: "Ich suche eine helle Wohnung mit einem großen Balkon." }
+      ]
+    }
+  },
+  {
+    id: "a2-u06",
+    icon: "💼",
+    titleIt: "Im Büro",
+    lessons: [
+      {
+        id: "a2-u06-l1",
+        tags: ["g-konjunktiv2", "g-nebensatz-dass"],
+        cefr: "A2",
+        titleIt: "Könnten Sie mich zurückrufen?",
+        grammar: {
+          examples: [
+            { it: "Könnten Sie mich bitte zurückrufen?" },
+            { it: "Könnten Sie Frau Keller etwas ausrichten?" },
+            { it: "Ich möchte wissen, ob Herr Weber heute im Büro ist." },
+            { it: "Ich weiß nicht, wann die Besprechung beginnt." },
+            { it: "Könnten Sie mir sagen, wo Frau Keller ist?" },
+            { it: "Könnten Sie ihr sagen, dass ich morgen wieder anrufe?" }
+          ]
+        },
+        vocab: [
+          { it: "anrufen", ex: "Ich rufe morgen wieder an." },
+          { it: "zurückrufen", ex: "Könnten Sie mich zurückrufen?" },
+          { it: "die Nachricht", plural: "die Nachrichten", ex: "Ich habe eine Nachricht für Herrn Weber." },
+          { it: "ausrichten", ex: "Könnten Sie ihm etwas ausrichten?" },
+          { it: "die Durchwahl", plural: "die Durchwahlen", ex: "Die Durchwahl von Frau Keller ist die 24." },
+          { it: "verbinden", ex: "Ich verbinde Sie mit Frau Keller." },
+          { it: "der Anrufbeantworter", plural: "die Anrufbeantworter", ex: "Der Anrufbeantworter ist an." },
+          { it: "erreichen", ex: "Ich erreiche Herrn Weber nicht." },
+          { it: "besetzt", ex: "Die Leitung ist besetzt." },
+          { it: "die Telefonnummer", plural: "die Telefonnummern", ex: "Wie ist Ihre Telefonnummer?" },
+          { it: "der Termin", plural: "die Termine", ex: "Der Termin ist am Montag." },
+          { it: "die Leitung", plural: "die Leitungen", ex: "Die Leitung ist leider besetzt." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "conj", verb: "können", tense: "konj2", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "fill", a: ["ob"] },
+          { t: "fill", a: ["wann"] },
+          {
+            t: "match",
+            pairs: [{ it: "anrufen" }, { it: "Nachricht" }, { it: "Durchwahl" }, { it: "besetzt" }]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Könnten Sie mich bitte zurückrufen",
+              "Könnten Sie mich zurückrufen, bitte",
+              "Könnten Sie mich zurückrufen bitte"
+            ]
+          },
+          {
+            t: "cloze",
+            text: "Könnten Sie Herrn Weber etwas {{1}}? Ich möchte wissen, {{2}} er im Büro ist.",
+            gaps: [["ausrichten"], ["ob"]]
+          },
+          {
+            t: "dialogue",
+            lines: [
+              { sp: "A", it: "Firma Brandt, guten Tag." },
+              {
+                sp: "TY",
+                choices: [
+                  "Guten Tag, hier ist Weber. Könnten Sie mich mit Frau Keller verbinden?",
+                  "Guten Tag, hier ist Weber. Könnten Sie verbinden mich mit Frau Keller?",
+                  "Guten Tag, hier ist Weber. Könnten Sie mich mit Frau Keller verbindet?"
+                ],
+                a: 0
+              },
+              { sp: "A", it: "Frau Keller ist gerade nicht am Platz. Soll ich ihr etwas ausrichten?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Ja, bitte. Könnten Sie ihr sagen, dass ich morgen wieder anrufe?",
+                  "Ja, bitte. Könnten Sie ihr sagen, dass ich morgen wieder rufe an?",
+                  "Ja, bitte. Könnten Sie ihr sagen, dass ich rufe morgen wieder an?"
+                ],
+                a: 0
+              }
+            ]
+          },
+          { t: "listen", it: "Guten Tag, hier ist Weber. Könnten Sie mich bitte zurückrufen? Ich möchte wissen, ob der Termin am Montag ist." },
+          { t: "speak", it: "Könnten Sie Frau Keller bitte sagen, dass ich morgen wieder anrufe?" }
+        ]
+      },
+      {
+        id: "a2-u06-l2",
+        tags: ["g-register"],
+        cefr: "A2",
+        titleIt: "Sehr geehrte Frau Keller",
+        grammar: {
+          examples: [
+            { it: "Sehr geehrte Frau Keller," },
+            { it: "Sehr geehrter Herr Weber," },
+            { it: "Vielen Dank für Ihre E-Mail." },
+            { it: "Im Anhang finden Sie die Datei." },
+            { it: "Könnten Sie mir den Termin bitte bestätigen?" },
+            { it: "Mit freundlichen Grüßen" }
+          ]
+        },
+        vocab: [
+          { it: "die E-Mail", plural: "die E-Mails", ex: "Ich schreibe Ihnen eine E-Mail." },
+          { it: "der Betreff", plural: "die Betreffe", ex: "Der Betreff der E-Mail ist kurz." },
+          { it: "die Anrede", plural: "die Anreden", ex: "Die Anrede ist formell." },
+          { it: "der Gruß", plural: "die Grüße", ex: "Viele Grüße aus Berlin." },
+          { it: "der Anhang", plural: "die Anhänge", ex: "Im Anhang finden Sie den Plan." },
+          { it: "die Datei", plural: "die Dateien", ex: "Die Datei ist zu groß." },
+          { it: "der Absender", plural: "die Absender", ex: "Der Absender ist Frau Keller." },
+          { it: "schicken", ex: "Ich schicke Ihnen die Datei." },
+          { it: "anhängen", ex: "Ich hänge die Datei an." },
+          { it: "bestätigen", ex: "Könnten Sie den Termin bestätigen?" },
+          { it: "freundlich", ex: "Sie ist immer sehr freundlich." },
+          { it: "formell", ex: "Die E-Mail ist formell." }
+        ],
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["geehrter"] },
+          { t: "fill", a: ["Ihre"] },
+          {
+            t: "match",
+            pairs: [{ it: "Betreff" }, { it: "Anhang" }, { it: "Absender" }, { it: "Datei" }]
+          },
+          {
+            t: "order",
+            tokens: ["Im", "Anhang", "finden", "Sie", "die", "Datei"],
+            a: [
+              "Im Anhang finden Sie die Datei",
+              "Sie finden im Anhang die Datei",
+              "Sie finden die Datei im Anhang",
+              "Die Datei finden Sie im Anhang"
+            ]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Sehr geehrte Frau Keller, vielen Dank für Ihre E-Mail",
+              "Sehr geehrte Frau Keller, herzlichen Dank für Ihre E-Mail",
+              "Sehr geehrte Frau Keller, danke für Ihre E-Mail"
+            ]
+          },
+          {
+            t: "cloze",
+            text: "Sehr {{1}} Frau Keller, vielen Dank für {{2}} E-Mail. Mit freundlichen {{3}}",
+            gaps: [["geehrte"], ["Ihre"], ["Grüßen"]]
+          },
+          {
+            t: "listen",
+            it: "Sehr geehrte Frau Keller, vielen Dank für Ihre E-Mail. Im Anhang finden Sie die Datei. Mit freundlichen Grüßen"
+          },
+          { t: "speak", it: "Könnten Sie mir bitte den Termin bestätigen?" }
+        ]
+      },
+      {
+        id: "a2-u06-l3",
+        tags: ["g-man"],
+        cefr: "A2",
+        titleIt: "Hier macht man das so",
+        grammar: {
+          examples: [
+            { it: "Hier duzt man sich." },
+            { it: "Bei uns beginnt man um acht Uhr." },
+            { it: "In der Mittagspause isst man in der Kantine." },
+            { it: "Hier darf man nicht rauchen." },
+            { it: "Wie sagt man das auf Deutsch?" },
+            { it: "Man muss pünktlich sein." }
+          ]
+        },
+        vocab: [
+          { it: "das Büro", plural: "die Büros", ex: "Das Büro ist im zweiten Stock." },
+          { it: "der Kollege", plural: "die Kollegen", ex: "Mein Kollege heißt Tim." },
+          { it: "die Kollegin", plural: "die Kolleginnen", ex: "Meine Kollegin ist nett." },
+          { it: "der Chef", plural: "die Chefs", ex: "Der Chef kommt um neun Uhr." },
+          { it: "die Mittagspause", plural: "die Mittagspausen", ex: "In der Mittagspause essen wir zusammen." },
+          { it: "die Kantine", plural: "die Kantinen", ex: "Die Kantine ist im Erdgeschoss." },
+          { it: "der Drucker", plural: "die Drucker", ex: "Der Drucker steht im Flur." },
+          { it: "die Arbeitszeit", plural: "die Arbeitszeiten", ex: "Die Arbeitszeit beginnt um acht Uhr." },
+          { it: "pünktlich", ex: "Man muss pünktlich sein." },
+          { it: "duzen", ex: "Im Büro duzt man sich." },
+          { it: "siezen", ex: "Den Chef siezt man hier." },
+          { it: "üblich", ex: "Das ist hier üblich." }
+        ],
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "mcq", a: 0 },
+          { t: "multi", a: [0, 1, 3] },
+          { t: "fill", a: ["isst"] },
+          { t: "fill", a: ["sagt"] },
+          {
+            t: "order",
+            tokens: ["Bei", "uns", "beginnt", "man", "um", "acht", "Uhr"],
+            a: [
+              "Bei uns beginnt man um acht Uhr",
+              "Man beginnt bei uns um acht Uhr",
+              "Um acht Uhr beginnt man bei uns"
+            ]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: ["Hier duzt man sich", "Man duzt sich hier"]
+          },
+          {
+            t: "cloze",
+            text: "Hier {{1}} man pünktlich sein, und man {{2}} nicht rauchen.",
+            gaps: [["muss"], ["darf", "kann"]]
+          },
+          {
+            t: "listen",
+            it: "Bei uns beginnt man um acht Uhr. In der Mittagspause isst man in der Kantine. Hier duzt man sich."
+          },
+          { t: "speak", it: "Hier muss man pünktlich sein, und im Büro darf man nicht rauchen." }
+        ]
+      },
+      {
+        id: "a2-u06-l4",
+        tags: ["g-konnektoren"],
+        cefr: "A2",
+        titleIt: "In der Besprechung",
+        grammar: {
+          examples: [
+            { it: "Zuerst besprechen wir die Tagesordnung." },
+            { it: "Dann diskutieren wir den Vorschlag." },
+            { it: "Danach schreibt Anna das Protokoll." },
+            { it: "Außerdem brauchen wir einen neuen Drucker." },
+            { it: "Ich schlage vor, dass wir einen neuen Termin machen." },
+            { it: "Ich bin einverstanden." }
+          ]
+        },
+        vocab: [
+          { it: "die Besprechung", plural: "die Besprechungen", ex: "Die Besprechung beginnt um zehn Uhr." },
+          { it: "der Vorschlag", plural: "die Vorschläge", ex: "Das ist ein guter Vorschlag." },
+          { it: "die Tagesordnung", plural: "die Tagesordnungen", ex: "Die Tagesordnung hat drei Punkte." },
+          { it: "das Ergebnis", plural: "die Ergebnisse", ex: "Das Ergebnis ist gut." },
+          { it: "das Protokoll", plural: "die Protokolle", ex: "Anna schreibt das Protokoll." },
+          { it: "der Punkt", plural: "die Punkte", ex: "Der erste Punkt ist wichtig." },
+          { it: "vorschlagen", ex: "Ich schlage einen neuen Termin vor." },
+          { it: "zustimmen", ex: "Ich stimme zu." },
+          { it: "einverstanden", ex: "Ich bin einverstanden." },
+          { it: "zuerst", ex: "Zuerst besprechen wir die Tagesordnung." },
+          { it: "danach", ex: "Danach machen wir eine Pause." },
+          { it: "außerdem", ex: "Außerdem habe ich eine Frage." }
+        ],
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "fill", a: ["dann", "danach"] },
+          { t: "fill", a: ["brauchen"] },
+          {
+            t: "match",
+            pairs: [{ it: "Vorschlag" }, { it: "Tagesordnung" }, { it: "Ergebnis" }, { it: "Protokoll" }]
+          },
+          {
+            t: "order",
+            tokens: ["Danach", "schreibt", "Anna", "das", "Protokoll"],
+            a: ["Danach schreibt Anna das Protokoll", "Anna schreibt danach das Protokoll"]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: ["Außerdem habe ich eine Frage", "Ich habe außerdem eine Frage"]
+          },
+          {
+            t: "cloze",
+            text: "{{1}} besprechen wir den Vorschlag. {{2}} schreibt Anna das Protokoll.",
+            gaps: [["Zuerst"], ["Dann", "Danach"]]
+          },
+          {
+            t: "dialogue",
+            lines: [
+              { sp: "A", it: "Guten Morgen! Wir haben heute viel Arbeit. Wie fangen wir an?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Zuerst besprechen wir die Tagesordnung.",
+                  "Zuerst wir besprechen die Tagesordnung.",
+                  "Wir zuerst besprechen die Tagesordnung."
+                ],
+                a: 0
+              },
+              { sp: "A", it: "Gut. Und danach?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Danach diskutieren wir den Vorschlag von Herrn Weber.",
+                  "Danach wir diskutieren den Vorschlag von Herrn Weber.",
+                  "Wir danach diskutieren den Vorschlag von Herrn Weber."
+                ],
+                a: 0
+              }
+            ]
+          },
+          {
+            t: "listen",
+            it: "Zuerst besprechen wir die Tagesordnung. Danach diskutieren wir den Vorschlag. Außerdem schreibt Anna das Protokoll."
+          },
+          { t: "speak", it: "Ich schlage vor, dass wir zuerst die Tagesordnung besprechen." }
+        ]
+      }
+    ],
+    test: {
+      id: "a2-u06-test",
+      tags: ["g-konjunktiv2", "g-man", "g-register"],
+      cefr: "A2",
+      titleIt: "Test: Im Büro",
+      exercises: [
+        { t: "conj", verb: "können", tense: "konj2", persons: [1, 3, 4] },
+        { t: "fill", a: ["ob"] },
+        { t: "fill", a: ["muss"] },
+        { t: "fill", a: ["geehrte"] },
+        { t: "fill", a: ["besprechen"] },
+        { t: "mcq", a: 1 },
+        {
+          t: "match",
+          pairs: [{ it: "Nachricht" }, { it: "Betreff" }, { it: "Besprechung" }, { it: "Kollegin" }]
+        },
+        {
+          t: "trans",
+          dir: "toIt",
+          a: [
+            "Könnten Sie mir den Termin bitte bestätigen",
+            "Könnten Sie mir bitte den Termin bestätigen",
+            "Könnten Sie mir den Termin bestätigen, bitte"
+          ]
+        },
+        { t: "listen", it: "Ich möchte wissen, ob Herr Weber heute im Büro ist. Könnten Sie mich bitte zurückrufen?" },
+        { t: "speak", it: "Bei uns beginnt man um acht Uhr, und zuerst besprechen wir die Tagesordnung." }
       ]
     }
   }
