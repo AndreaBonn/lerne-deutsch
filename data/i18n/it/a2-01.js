@@ -520,5 +520,522 @@ LINGUAI.addStrings("it", {
         why: "In <i>Hund</i> la <b>d</b> finale si pronuncia come una <b>t</b>; in <i>jeden Tag</i> la <b>g</b> finale è una <b>k</b> sorda."
       }
     ]
+  },
+  "unit:a2-u02": {
+    title: "In viaggio",
+    grammarNote: "wohin? con nach, zu e in + accusativo · presente con indicatore di tempo e Futur I · Perfekt e registro in albergo · wenn + Perfekt per un'azione futura già compiuta"
+  },
+  "lesson:a2-u02-l1": {
+    theme: "In stazione",
+    title: "In stazione: nach Wien, in die Schweiz",
+    objectives: [
+      "dire dove vai con nach, in + accusativo e zu",
+      "distinguere wohin? (destinazione) da wo? (posizione)",
+      "comprare un biglietto e chiedere informazioni in stazione"
+    ],
+    theory: [
+      {
+        h: "Wohin? nach, in o zu",
+        p: "Alla domanda <b>wohin?</b> (verso dove?) il tedesco sceglie la preposizione secondo la destinazione. Con <b>città e paesi senza articolo</b> si usa <strong>nach</strong>: <em>Ich fahre nach Wien. Wir fliegen nach Italien.</em> Con i <b>paesi che hanno l'articolo</b> si usa <strong>in</strong> + <b>accusativo</b>: <em>Wir fahren in die Schweiz.</em> Verso <b>una persona</b> e di norma verso un <b>edificio o un luogo preciso</b> si usa <strong>zu</strong> + dativo: <em>Ich fahre zu meiner Tante. Wir gehen zum Bahnhof.</em> Con <em>zu</em> + articolo ci sono le contrazioni <em>zum</em> (zu dem) e <em>zur</em> (zu der)."
+      },
+      {
+        contrast: "L'italiano ragiona in modo simile ma con altri confini: <em>a</em> per le città (<em>vado a Vienna</em>), <em>in</em> per i paesi (<em>vado in Svizzera, in Italia</em>), <em>da</em> per le persone (<em>vado da mia zia</em>). In tedesco i paesi si dividono in due gruppi: <em>Italien</em>, <em>Deutschland</em>, <em>Österreich</em> non hanno articolo e vogliono <em>nach</em>, proprio come le città, mentre <em>die Schweiz</em>, <em>die Türkei</em>, <em>die USA</em> hanno l'articolo e vogliono <em>in die</em>. Il nostro <em>da</em> verso una persona diventa <em>zu</em> (<em>zu meiner Tante</em>), mentre <em>bei</em> indica dove si sta (<em>bei meiner Tante</em>, «da mia zia»)."
+      },
+      {
+        trap: "Il caso dipende da ciò che chiede la frase. Con <b>wohin?</b> (movimento verso un luogo) <em>in</em> vuole l'<b>accusativo</b>: <em>Wir fahren in die Schweiz</em>. Con <b>wo?</b> (posizione, dove si è) vuole il <b>dativo</b>: <em>Meine Tante wohnt in der Schweiz</em>. Due frasi quasi uguali, due casi diversi, e <em>die</em> contro <em>der</em> è l'unica spia. Fai attenzione anche a <em>nach die Schweiz</em>: non esiste, perché <em>nach</em> non va con i paesi che hanno l'articolo."
+      },
+      {
+        tip: "In stazione ti serviranno poche frasi fisse: <em>Eine Fahrkarte nach Wien, bitte.</em> <em>Einfach oder hin und zurück?</em> (solo andata o andata e ritorno?) <em>Von welchem Gleis fährt der Zug ab?</em> Impara <em>die Schweiz</em> con l'articolo, come un'unità sola."
+      }
+    ],
+    grammar: {
+      title: "Wohin? nach, in + accusativo, zu",
+      note: "La preposizione dipende dalla destinazione. <b>nach</b> non ha articolo, <b>zu</b> vuole il dativo (<i>zum</i>, <i>zur</i>), <b>in</b> con wohin? vuole l'accusativo.",
+      table: {
+        head: ["destinazione", "preposizione", "esempio"],
+        rows: [
+          ["città, paesi senza articolo", "nach", "nach Wien, nach Italien"],
+          ["paesi con articolo", "in + accusativo", "in die Schweiz, in die Türkei"],
+          ["persone", "zu + dativo", "zu meiner Tante, zum Arzt"],
+          ["edifici, luoghi precisi", "zu + dativo", "zum Bahnhof, zur Post"],
+          ["posizione (wo?)", "in + dativo", "in der Schweiz"]
+        ]
+      },
+      examples: [
+        { tr: "Vado a Vienna.", note: "nach + città, senza articolo" },
+        { tr: "Voliamo in Italia.", note: "nach + paese senza articolo" },
+        { tr: "In estate vanno in Svizzera.", note: "wohin? in + accusativo: in die Schweiz" },
+        { tr: "Lui va da sua zia.", note: "zu + dativo: zu seiner Tante" },
+        { tr: "Andiamo alla stazione.", note: "zu + dativo: zum (zu dem) Bahnhof" },
+        { tr: "Mia zia abita in Svizzera.", note: "wo? in + dativo: in der Schweiz" }
+      ]
+    },
+    vocab: [
+      "la stazione",
+      "il treno",
+      "il binario",
+      "il biglietto del treno",
+      "l'orario (dei treni)",
+      "la partenza",
+      "l'arrivo",
+      "la Svizzera",
+      "il paese, lo Stato",
+      "l'informazione (sportello informazioni)",
+      "solo andata",
+      "andata e ritorno"
+    ],
+    exercises: [
+      {
+        q: "Completa: «Wohin fährst du? Ich fahre ___ Wien.»",
+        opts: ["nach", "in", "zu"],
+        why: "Con le città senza articolo si usa <b>nach</b>. <i>In Wien</i> indica dove si è, non dove si va."
+      },
+      {
+        q: "Dici che andate in Svizzera. Quale frase è corretta?",
+        opts: ["Wir fahren nach die Schweiz.", "Wir fahren in die Schweiz.", "Wir fahren in der Schweiz."],
+        why: "<i>Die Schweiz</i> ha l'articolo: serve <b>in</b> + accusativo (<i>in die Schweiz</i>). <i>In der Schweiz</i> è il dativo e dice dove si è."
+      },
+      {
+        q: "Completa: «Morgen fliege ich ___ Italien.» (verso un paese senza articolo)",
+        hint: "nach, in o zu?",
+        why: "<i>Italien</i> non ha articolo, quindi <b>nach</b>, come con le città."
+      },
+      {
+        q: "Completa: «Ich fahre ___ meiner Tante.» (verso una persona)",
+        hint: "preposizione + dativo",
+        why: "Verso una persona si usa <b>zu</b> + dativo: <i>zu meiner Tante</i>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Vado a Vienna. Poi andiamo in Svizzera, e la sera vado dal mio amico.",
+        why: "Tre destinazioni, tre preposizioni: <i>nach Wien</i>, <i>in die Schweiz</i> (accusativo, paese con articolo), <i>zu meinem Freund</i> (persona, dativo)."
+      },
+      {
+        q: "Abbina ogni destinazione alla sua traduzione.",
+        pairs: ["a Vienna", "in Svizzera (destinazione)", "da mia zia", "alla stazione"]
+      },
+      {
+        q: "Traduci: «Domani andiamo in Svizzera (in treno).»",
+        why: "<i>Morgen fahren wir in die Schweiz</i>: <i>fahren</i> per un mezzo di trasporto; <i>reisen</i> è un'alternativa. L'ordine può cambiare (<i>Wir fahren morgen ...</i>), il verbo coniugato resta in seconda posizione."
+      },
+      {
+        q: "Allo sportello della stazione.",
+        setting: "Compri un biglietto per Vienna.",
+        lines: [
+          { tr: "Buongiorno. Dove va?" },
+          { tr: "Rispondi che vai a Vienna.", answerTr: "Vado a Vienna." },
+          { tr: "Solo andata o andata e ritorno?" },
+          { tr: "Rispondi: andata e ritorno, per favore.", answerTr: "Andata e ritorno, per favore." },
+          { tr: "Poi prosegue il viaggio?" },
+          { tr: "Rispondi che dopo vai da tua zia.", answerTr: "Sì, dopo vado da mia zia." }
+        ]
+      },
+      {
+        tr: "Buongiorno, vorrei un biglietto per Vienna, andata e ritorno, per favore.",
+        why: "In <i>Fahrkarte</i> la prima <b>a</b> è lunga; in <i>Wien</i> la <b>W</b> si legge [v] e <b>ie</b> è una <b>i</b> lunga; <i>zurück</i> ha una <b>ü</b> breve."
+      },
+      {
+        tr: "In estate vado in Svizzera e poi da mia zia a Vienna.",
+        why: "In <i>Schweiz</i> la <b>sch</b> si legge [ʃ], la <b>w</b> è [v], <b>ei</b> suona [aɪ] e la <b>z</b> finale è [ts]. In <i>Sommer</i> la <b>S</b> iniziale davanti a vocale è di norma sonora."
+      }
+    ]
+  },
+  "lesson:a2-u02-l2": {
+    theme: "Piani di viaggio",
+    title: "Domani parto, partirò",
+    objectives: [
+      "parlare del futuro con il presente e un indicatore di tempo",
+      "formare il Futur I con werden + infinito in fondo",
+      "riconoscere quando il Futur I è utile (promessa, decisione, previsione)"
+    ],
+    theory: [
+      {
+        h: "Il futuro: presente con indicatore di tempo, oppure Futur I",
+        p: "Per parlare del futuro il tedesco usa di solito il <b>presente</b> insieme a un indicatore di tempo: <em>Morgen fahre ich nach Wien. Nächste Woche fliegen wir nach Spanien.</em> Esiste anche il <strong>Futur I</strong>: <em>werden</em> coniugato in seconda posizione e l'<b>infinito in fondo</b> alla frase: <em>Ich werde dich morgen anrufen. Wir werden im Sommer in die Schweiz fahren.</em> Il Futur I si usa per una promessa, una decisione, una previsione (<em>Es wird heute Abend regnen</em>) oppure quando manca un indicatore di tempo."
+      },
+      {
+        contrast: "L'italiano ha un futuro semplice (<em>andrò, partirò</em>) molto frequente, anche se per i programmi vicini si dice spesso il presente (<em>domani parto</em>). In tedesco il presente con <em>morgen</em>, <em>nächste Woche</em>, <em>bald</em> è la forma normale, e il Futur I, corretto, è meno frequente: <em>Morgen werde ich nach Wien fahren</em> si dice, ma <em>Morgen fahre ich nach Wien</em> è più abituale. Nel Futur I il verbo pieno non si coniuga: sta all'infinito in fondo, come in <em>Ich werde fahren</em>."
+      },
+      {
+        trap: "Con il Futur I il verbo pieno resta all'infinito: <em>Ich werde morgen nach Wien fahren</em>, non «Ich werde fahre». Con un verbo separabile l'infinito resta unito: <em>Ich werde dich anrufen</em>. Attenzione: <em>werden</em> è anche un verbo pieno e significa «diventare»: <em>Er wird Arzt</em> (diventa medico), <em>Es wird kalt</em> (diventa freddo). Se manca l'infinito in fondo, non è un futuro."
+      },
+      {
+        tip: "Prima cerca un indicatore di tempo: <em>morgen, nächste Woche, im Sommer, bald, am Wochenende</em>. Se c'è, il presente basta. Se vuoi dare un tono di promessa o di decisione (<em>Ich werde es nicht vergessen</em>), usa il Futur I. In entrambi i casi la prima posizione può essere il tempo: <em>Morgen fahre ich ...</em>, con il verbo in seconda posizione."
+      }
+    ],
+    grammar: {
+      title: "Il Futur I con werden",
+      note: "<b>werden</b> si coniuga in seconda posizione, il verbo pieno va <b>all'infinito in fondo</b>. Con un indicatore di tempo il presente è la forma normale.",
+      table: {
+        head: ["persona", "werden", "esempio"],
+        rows: [
+          ["ich", "werde", "Ich werde fahren."],
+          ["du", "wirst", "Du wirst fahren."],
+          ["er, sie, es", "wird", "Es wird regnen."],
+          ["wir", "werden", "Wir werden fliegen."],
+          ["ihr", "werdet", "Ihr werdet ankommen."],
+          ["sie, Sie", "werden", "Sie werden bleiben."]
+        ]
+      },
+      examples: [
+        { tr: "Domani vado a Vienna.", note: "presente + morgen: forma normale" },
+        { tr: "Settimana prossima voliamo in Spagna.", note: "presente + nächste Woche" },
+        { tr: "Ti chiamerò domani.", note: "Futur I: verbo separabile unito all'infinito in fondo" },
+        { tr: "Stasera pioverà.", note: "Futur I come previsione" },
+        { tr: "In estate andremo in Svizzera.", note: "werden in seconda posizione, infinito in fondo" },
+        { tr: "Ti manderò una foto.", note: "Futur I: una promessa" }
+      ]
+    },
+    vocab: [
+      "il viaggio",
+      "le ferie, la vacanza",
+      "la settimana",
+      "il fine settimana",
+      "il volo",
+      "l'aeroporto",
+      "la valigia",
+      "il biglietto (del volo, dell'evento)",
+      "domani",
+      "settimana prossima",
+      "presto, tra poco",
+      "in estate"
+    ],
+    exercises: [
+      {
+        tr: "Il presente di werden, tutte le persone.",
+        why: "<i>Werde, wirst, wird, werden, werdet, werden</i>: <i>werden</i> è irregolare (<i>e</i> diventa <i>i</i> a <i>du</i> e a <i>er, sie, es</i>) ed è l'ausiliare del Futur I."
+      },
+      {
+        tr: "Il Futur I di fahren, tutte le persone.",
+        why: "<i>Ich werde fahren, du wirst fahren, er wird fahren, wir werden fahren, ihr werdet fahren, sie werden fahren</i>: <i>werden</i> cambia, l'infinito resta uguale."
+      },
+      {
+        tr: "Il Futur I di fliegen, tutte le persone.",
+        why: "Nel Futur I l'infinito non si coniuga: <i>ich werde fliegen, du wirst fliegen ...</i>. In frase normale sta in fondo."
+      },
+      {
+        q: "Quale frase usa correttamente il Futur I?",
+        opts: [
+          "Ich werde morgen nach Wien fahren.",
+          "Ich werde morgen nach Wien fahre.",
+          "Ich werde fahren morgen nach Wien."
+        ],
+        why: "<b>werden</b> in seconda posizione e <b>infinito in fondo</b>. Il verbo pieno non si coniuga e non va in seconda posizione: resta all'infinito, in fondo."
+      },
+      {
+        q: "Quale frase è corretta? (Domani vado a Berlino.)",
+        opts: [
+          "Morgen ich fahre nach Berlin.",
+          "Morgen fahre ich nach Berlin.",
+          "Morgen werde fahre ich nach Berlin."
+        ],
+        why: "Con <i>morgen</i> in prima posizione il verbo coniugato resta in seconda (<i>fahre</i>) e il soggetto lo segue: <i>Morgen fahre ich ...</i>."
+      },
+      {
+        q: "Completa: «Wir ___ im Sommer nach Spanien fliegen.» (werden, wir)",
+        hint: "werden, wir",
+        why: "<b>Werden</b>: alla prima persona plurale la forma è uguale all'infinito, e <i>fliegen</i> resta all'infinito in fondo."
+      },
+      {
+        q: "Completa: «Nächste Woche ___ ich nach Hamburg.» (presente di fahren)",
+        hint: "fahren, presente, ich",
+        why: "<b>Fahre</b>: con <i>nächste Woche</i> il presente basta. <i>Nächste Woche</i> sta in prima posizione, il verbo in seconda."
+      },
+      {
+        q: "Completa la frase (per «mandare» vanno bene schicken e senden).",
+        tr: "Domani ti manderò una foto.",
+        why: "<i>Morgen werde ich dir ein Foto schicken</i>: dopo <i>morgen</i> il verbo coniugato (<i>werde</i>) sta in seconda posizione e il soggetto lo segue; l'infinito va in fondo. Anche <i>senden</i> va bene."
+      },
+      {
+        tr: "Settimana prossima vado a Vienna in treno, e in estate andremo in Svizzera in aereo.",
+        why: "In <i>Nächste</i> la <b>ch</b> dopo <b>ä</b> è [ç], un suono soffiato che l'italiano non ha; in <i>Woche</i> la <b>ch</b> dopo <b>o</b> è [x], più in fondo alla gola. In <i>werden</i> la <b>w</b> si legge [v]."
+      },
+      {
+        tr: "Domani vado ad Amburgo, e settimana prossima andrò a trovare la mia amica.",
+        why: "In <i>Hamburg</i> la <b>g</b> finale suona di norma come una <b>k</b> sorda ([k]); in <i>besuchen</i> la <b>ch</b> dopo <b>u</b> è [x] e l'accento cade sulla seconda sillaba, perché <i>be-</i> è atono."
+      }
+    ]
+  },
+  "lesson:a2-u02-l3": {
+    theme: "In albergo",
+    title: "Ho prenotato una camera",
+    objectives: [
+      "dire che hai prenotato o prenotato online con il Perfekt",
+      "formare il participio di reservieren e buchen",
+      "scegliere tra Sie e du in un albergo e usare formule cortesi"
+    ],
+    theory: [
+      {
+        h: "Il Perfekt: prenotare e arrivare",
+        p: "Per dire che hai già prenotato si usa il <strong>Perfekt</strong>: ausiliare in seconda posizione e <b>participio II</b> in fondo. <em>Ich habe ein Zimmer reserviert. Wir haben ein Doppelzimmer gebucht.</em> I verbi in <em>-ieren</em> non prendono <em>ge-</em>: <em>reservieren → reserviert</em>. <em>Buchen</em> è regolare: <em>gebucht</em>. I verbi di movimento o di cambio di stato prendono <em>sein</em>: <em>Wir sind gestern Abend angekommen</em> (participio <em>angekommen</em>, con <em>ge-</em> al centro)."
+      },
+      {
+        contrast: "Il participio tedesco non concorda con il soggetto: <em>Er ist angekommen, Sie ist angekommen, Wir sind angekommen</em>, senza <em>-o/-a/-i</em>. In italiano si dice <em>è arrivato, è arrivata, sono arrivati</em>. Inoltre l'italiano usa <em>prenotare</em> per tutto; il tedesco ha <em>reservieren</em> (tenere un posto) e <em>buchen</em> (prenotare un viaggio, una camera), spesso intercambiabili in albergo. Per la cortesia l'italiano usa il <em>Lei</em> (terza persona singolare); il tedesco usa <em>Sie</em>, che si coniuga come la terza persona <b>plurale</b>: <em>Haben Sie ein Zimmer?</em>"
+      },
+      {
+        trap: "Non dire «Ich habe ein Zimmer reservieren» (infinito al posto del participio) e non dimenticare l'ausiliare giusto: <em>Wir sind angekommen</em>, non «Wir haben angekommen». Quanto al registro: alla reception si usa di norma <em>Sie</em>, e <em>Könnten Sie mir bitte ...?</em> è più cortese di <em>Können Sie ...?</em>. Con amici o in un ostello tra giovani di solito si usa <em>du</em>, ma nel dubbio scegli <em>Sie</em>."
+      },
+      {
+        tip: "Tre frasi da avere pronte in albergo: <em>Ich habe ein Zimmer reserviert.</em> <em>Haben Sie ein Zimmer für zwei Nächte frei?</em> <em>Könnten Sie mir bitte den Schlüssel geben?</em> Il participio dei verbi in <em>-ieren</em> finisce in <em>-iert</em> e non prende <em>ge-</em>."
+      }
+    ],
+    grammar: {
+      title: "Il Perfekt: reservieren, buchen, ankommen",
+      note: "Ausiliare in seconda posizione, participio II in fondo. <b>haben</b> con quasi tutti i verbi, <b>sein</b> con i verbi di movimento. I verbi in <b>-ieren</b> non hanno <i>ge-</i>.",
+      table: {
+        head: ["infinito", "participio II", "esempio"],
+        rows: [
+          ["reservieren", "reserviert", "Ich habe ein Zimmer reserviert."],
+          ["buchen", "gebucht", "Wir haben ein Zimmer gebucht."],
+          ["ankommen", "angekommen", "Wir sind gestern angekommen."],
+          ["abfahren", "abgefahren", "Der Zug ist abgefahren."]
+        ]
+      },
+      examples: [
+        { tr: "Ho prenotato una camera.", note: "-ieren: reserviert, senza ge-" },
+        { tr: "Abbiamo prenotato una camera doppia per due notti.", note: "haben + gebucht in fondo" },
+        { tr: "Ieri sera siamo arrivati.", note: "ankommen vuole sein" },
+        { tr: "Ha una prenotazione?", note: "forma di cortesia con Sie (come la terza persona plurale)" },
+        { tr: "Potrebbe aiutarmi, per favore?", note: "Könnten Sie: richiesta cortese" },
+        { tr: "Hai già prenotato un albergo?", note: "con du: Hast du ...?" }
+      ]
+    },
+    vocab: [
+      "l'albergo",
+      "la camera",
+      "la camera doppia",
+      "la prenotazione",
+      "la notte",
+      "la chiave",
+      "la colazione",
+      "la reception",
+      "l'ospite",
+      "il bagaglio",
+      "prenotare (un posto)",
+      "prenotare (una camera, un viaggio)"
+    ],
+    exercises: [
+      {
+        q: "Completa: «Ich habe ein Zimmer ___.» (il participio di reservieren)",
+        opts: ["gereserviert", "reserviert", "reservieren"],
+        why: "I verbi in <i>-ieren</i> non prendono <i>ge-</i>: <b>reserviert</b>. L'infinito (<i>reservieren</i>) non va al posto del participio."
+      },
+      {
+        q: "Completa: «Wir haben ein Doppelzimmer ___.» (il participio di buchen)",
+        hint: "buchen è regolare",
+        why: "<b>Gebucht</b>: <i>ge-</i> + radice + <i>-t</i>."
+      },
+      {
+        q: "Completa: «Wir ___ gestern Abend im Hotel angekommen.» (haben o sein?)",
+        hint: "ankommen è un verbo di movimento",
+        why: "<b>Sind</b>: <i>ankommen</i> indica un cambio di luogo e vuole <i>sein</i> al Perfekt."
+      },
+      {
+        q: "Completa: «Guten Abend, ___ Sie ein Zimmer frei?» (presente di haben, dando del Lei)",
+        hint: "haben, presente, Sie",
+        why: "<b>Haben</b>: <i>Sie</i> di cortesia si coniuga come la terza persona plurale."
+      },
+      {
+        q: "Completa la frase (per la camera vanno bene reservieren e buchen).",
+        tr: "Ho prenotato una camera. Ieri sera siamo arrivati.",
+        why: "<i>Ich habe ein Zimmer reserviert</i> (anche <i>gebucht</i>) e <i>Wir sind gestern Abend angekommen</i>. Le due frasi hanno due ausiliari diversi: <i>haben</i> e <i>sein</i>."
+      },
+      {
+        q: "Abbina ogni parola al suo significato.",
+        pairs: ["la camera doppia", "la prenotazione", "la chiave", "la colazione"]
+      },
+      {
+        q: "Traduci: «Abbiamo prenotato una camera doppia per due notti.»",
+        why: "<i>Wir haben ein Doppelzimmer für zwei Nächte reserviert</i>. Va bene anche <i>gebucht</i>; l'ordine di <i>für zwei Nächte</i> e <i>ein Doppelzimmer</i> può cambiare, il participio resta in fondo."
+      },
+      {
+        q: "Alla reception.",
+        setting: "Arrivi in albergo e parli con il receptionist.",
+        lines: [
+          { tr: "Buonasera. Ha una prenotazione?" },
+          { tr: "Rispondi che hai prenotato una camera.", answerTr: "Sì, ho prenotato una camera." },
+          { tr: "È in viaggio da molto?" },
+          { tr: "Rispondi che siete partiti alle cinque.", answerTr: "Sì, siamo partiti alle cinque." },
+          { tr: "La colazione è dalle sette alle dieci. Ha altre domande?" },
+          { tr: "Chiedi la chiave con cortesia, dando del Lei.", answerTr: "Sì, potrebbe darmi la chiave, per favore?" }
+        ]
+      },
+      {
+        tr: "Buonasera, ho prenotato una camera doppia per due notti.",
+        why: "In <i>Doppelzimmer</i> la <b>z</b> è [ts]; <i>Nächte</i> ha una <b>ch</b> dopo <b>ä</b>, cioè [ç], un soffio sottile che l'italiano non ha. In <i>Abend</i> la <b>b</b> è sonora, perché non è alla fine della sillaba."
+      },
+      {
+        tr: "Abbiamo prenotato una camera e ieri sera siamo arrivati in albergo.",
+        why: "In <i>angekommen</i> la <b>ng</b> è una sola nasale [ŋ], senza la consonante [k]; in <i>gebucht</i> la <b>ch</b> dopo <b>u</b> è [x], raschiata in fondo alla gola."
+      }
+    ]
+  },
+  "lesson:a2-u02-l4": {
+    theme: "Dopo l'arrivo",
+    title: "Quando sarò arrivato, ti chiamo",
+    objectives: [
+      "usare wenn + Perfekt per un'azione futura già compiuta",
+      "distinguere wenn (presente, futuro, ripetizione) da als (un fatto passato singolo)",
+      "combinare wenn con il presente o con il Futur I nella principale"
+    ],
+    theory: [
+      {
+        h: "Wenn + Perfekt: dopo che sarò arrivato",
+        p: "<strong>Wenn</strong> introduce un fatto del presente o del futuro. Quando l'azione della subordinata sarà <b>già compiuta</b> prima di quella della principale, nella subordinata si usa il <b>Perfekt</b>: <em>Wenn ich angekommen bin, rufe ich dich an</em> (quando sarò arrivato, ti chiamo). Il verbo coniugato (<em>bin</em>) va <b>in fondo</b>; la principale comincia con il verbo: <em>rufe ich</em>. Nella principale puoi usare il presente (<em>rufe ich ... an</em>) o il Futur I (<em>werde ich ... anrufen</em>)."
+      },
+      {
+        contrast: "L'italiano per un fatto futuro già compiuto usa il <b>futuro anteriore</b> (<em>quando sarò arrivato, ti chiamerò</em>) oppure il presente (<em>quando arrivo, ti chiamo</em>). Il tedesco non ha una forma separata: nella subordinata usa il <em>Perfekt</em> per sottolineare che è compiuto (<em>Wenn ich angekommen bin</em>), oppure il presente se non serve sottolinearlo (<em>Wenn ich ankomme</em>). Per un fatto passato singolo serve <em>als</em> con il Perfekt: <em>Als wir gestern angekommen sind, hat es geregnet.</em>"
+      },
+      {
+        trap: "<em>Als</em> e <em>wenn</em> non sono intercambiabili: con un fatto passato singolo serve <b>als</b> (<em>Als ich gestern angekommen bin, ...</em>), con presente, futuro e fatti ripetuti serve <b>wenn</b>. Non scrivere «Wenn ich bin angekommen»: dopo <em>wenn</em> il verbo coniugato va in fondo, dopo il participio. E non confondere <em>wenn</em> con <em>wann</em>, che è la parola della domanda (<em>Wann kommst du an?</em>)."
+      },
+      {
+        tip: "Costruisci la frase in due pezzi: la subordinata <em>Wenn ich angekommen bin,</em> con il verbo in fondo, poi una virgola e la principale che comincia con il verbo, <em>rufe ich dich an</em>. Se la subordinata sta dopo, l'ordine è normale: <em>Ich rufe dich an, wenn ich angekommen bin.</em>"
+      }
+    ],
+    grammar: {
+      title: "Wenn + Perfekt, als + Perfekt",
+      note: "Il verbo coniugato (l'ausiliare) va <b>in fondo</b>, dopo il participio. Se la subordinata sta prima, la principale comincia con il verbo.",
+      table: {
+        head: ["situazione", "parola e tempo", "esempio"],
+        rows: [
+          ["futuro già compiuto", "wenn + Perfekt", "Wenn ich angekommen bin, rufe ich dich an."],
+          ["presente o futuro", "wenn + presente", "Wenn ich Zeit habe, besuche ich dich."],
+          ["fatto passato singolo", "als + Perfekt", "Als wir gestern angekommen sind, hat es geregnet."]
+        ]
+      },
+      examples: [
+        { tr: "Quando sarò arrivato, ti chiamo.", note: "wenn + Perfekt: ausiliare in fondo" },
+        { tr: "Quando avremo trovato l'albergo, andremo a mangiare.", note: "gefunden haben, poi gehen wir" },
+        { tr: "Quando il treno sarà partito, ti chiamerò.", note: "principale con Futur I: werde ich anrufen" },
+        { tr: "Quando ho tempo, vengo a trovarti.", note: "wenn + presente" },
+        { tr: "Quando siamo arrivati ieri, pioveva.", note: "als: un fatto passato singolo" },
+        { tr: "Ti mando un messaggio quando avrò cambiato treno.", note: "subordinata dopo: ordine normale" }
+      ]
+    },
+    vocab: [
+      "arrivare",
+      "partire (di un mezzo)",
+      "cambiare (mezzo, treno)",
+      "telefonare a",
+      "il ritardo",
+      "il messaggio",
+      "la coincidenza",
+      "la fermata",
+      "il taxi",
+      "il collegamento",
+      "puntuale",
+      "più tardi"
+    ],
+    exercises: [
+      {
+        q: "Come dici: «Quando sarò arrivato, ti chiamo»?",
+        opts: [
+          "Wenn ich angekommen bin, rufe ich dich an.",
+          "Wenn ich ankomme bin, rufe ich dich an.",
+          "Wenn ich bin angekommen, rufe ich dich an."
+        ],
+        why: "Nella subordinata il participio va prima e l'ausiliare in fondo: <i>angekommen bin</i>. La principale comincia con il verbo: <i>rufe ich ... an</i>."
+      },
+      {
+        q: "Quale parola? «___ ich gestern angekommen bin, hat es geregnet.»",
+        opts: ["Als", "Wenn", "Wann"],
+        why: "Un fatto passato singolo: <b>als</b>. <i>Wenn</i> serve per presente, futuro e fatti ripetuti."
+      },
+      {
+        q: "Completa: «Ich rufe dich an, ___ ich angekommen bin.» (quando, usa wenn)",
+        hint: "usa wenn",
+        why: "<b>Wenn</b> per un fatto del futuro. Il verbo coniugato (<i>bin</i>) va in fondo."
+      },
+      {
+        q: "Completa: «Wenn ich angekommen ___, rufe ich dich an.» (sein, Perfekt, ich)",
+        hint: "sein, presente, ich",
+        why: "<b>Bin</b>: l'ausiliare di <i>ankommen</i> è <i>sein</i>, e in fondo alla subordinata sta il verbo coniugato."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Quando avremo trovato l'albergo, andremo a mangiare.",
+        why: "<i>Wenn wir das Hotel gefunden haben, gehen wir essen</i>: nella subordinata <i>haben</i> chiude la frase; nella principale il verbo (<i>gehen</i>) viene subito dopo la virgola."
+      },
+      {
+        q: "Abbina ogni verbo al suo significato.",
+        pairs: ["arrivare", "partire", "cambiare (treno)", "telefonare"]
+      },
+      {
+        q: "Metti in ordine le parole.",
+        tr: "Quando sarò arrivato, ti chiamo.",
+        why: "Due ordini sono corretti: subordinata prima (<i>Wenn ich angekommen bin, rufe ich dich an</i>) oppure dopo (<i>Ich rufe dich an, wenn ich angekommen bin</i>). Il verbo separabile <i>anrufen</i> lascia <i>an</i> in fondo alla principale."
+      },
+      {
+        q: "Traduci: «Quando arrivo, ti chiamo.»",
+        why: "Il presente basta: <i>Wenn ich ankomme, rufe ich dich an</i>. Va bene anche il Perfekt nella subordinata (<i>angekommen bin</i>) o il Futur I nella principale (<i>werde ich dich anrufen</i>), e l'ordine può essere invertito."
+      },
+      {
+        tr: "Quando sarò arrivato, ti chiamo, e poi andiamo a mangiare insieme.",
+        why: "In <i>angekommen</i> la <b>ng</b> è una sola nasale [ŋ], senza la consonante [k]; in <i>zusammen</i> la <b>z</b> è [ts] e la <b>s</b> davanti a vocale è di norma sonora."
+      },
+      {
+        tr: "Quando sarò arrivato in albergo, ti mando un messaggio.",
+        why: "In <i>Nachricht</i> la <b>ch</b> è [x] dopo <b>a</b> e [ç] dopo <b>i</b>: due suoni diversi nella stessa parola, e la <b>sch</b> di <i>schicke</i> è [ʃ]. In <i>Hotel</i> l'accento cade sull'ultima sillaba."
+      }
+    ]
+  },
+  "lesson:a2-u02-test": {
+    theme: "Verifica",
+    title: "Verifica dell'unità 2",
+    objectives: ["verificare wohin? (nach, in, zu), Futur I e wenn + Perfekt"],
+    theory: [
+      {
+        p: "Dieci domande su tutta l'unità. Si supera con il 70%. Non riguardare le lezioni mentre rispondi: se non ricordi qualcosa, è meglio tornare a ripassare."
+      }
+    ],
+    exercises: [
+      {
+        tr: "Il Futur I di kommen, tutte le persone.",
+        why: "<i>Ich werde kommen, du wirst kommen, er wird kommen, wir werden kommen, ihr werdet kommen, sie werden kommen</i>."
+      },
+      {
+        q: "Completa: «Wir fahren ___ Italien.» (verso un paese senza articolo)",
+        hint: "nach, in o zu?",
+        why: "<b>Nach</b>: <i>Italien</i> non ha articolo."
+      },
+      {
+        q: "Completa: «Ich fahre ___ die Schweiz.» (verso un paese con l'articolo)",
+        hint: "preposizione + accusativo",
+        why: "<b>In</b> + accusativo: <i>in die Schweiz</i>."
+      },
+      {
+        q: "Completa: «Wir fahren ___ meiner Oma.» (verso una persona)",
+        hint: "preposizione + dativo",
+        why: "<b>Zu</b> + dativo: <i>zu meiner Oma</i>."
+      },
+      {
+        q: "Completa: «Ich ___ morgen nach Wien fahren.» (Futur I, werden, ich)",
+        hint: "werden, ich",
+        why: "<b>Werde</b> in seconda posizione, <i>fahren</i> all'infinito in fondo."
+      },
+      {
+        q: "Completa: «Ich rufe dich an, ___ ich im Hotel angekommen bin.» (quando, usa wenn)",
+        hint: "usa wenn",
+        why: "<b>Wenn</b>: un fatto del futuro, con il verbo coniugato in fondo."
+      },
+      {
+        q: "Completa: «Meine Tante wohnt ___ Schweiz.» (dove abita: posizione)",
+        opts: ["in der", "in die", "nach der"],
+        why: "Posizione (wo?): <b>in</b> + dativo, e <i>die Schweiz</i> al dativo è <i>in der Schweiz</i>."
+      },
+      {
+        q: "Traduci: «Domani andiamo a Vienna (in treno).»",
+        why: "<i>Morgen fahren wir nach Wien</i>: <i>nach</i> con una città. L'ordine può cambiare, il verbo resta in seconda posizione."
+      },
+      {
+        tr: "Domani vado a Vienna e, quando sarò arrivato, ti chiamo.",
+        why: "In <i>Wien</i> la <b>W</b> è [v] e <b>ie</b> è una <b>i</b> lunga; in <i>angekommen</i> la <b>ng</b> è una sola nasale [ŋ]."
+      },
+      {
+        tr: "In estate andremo in Svizzera, e poi vado da mia zia.",
+        why: "In <i>Schweiz</i> la <b>sch</b> è [ʃ], <b>w</b> è [v] e <b>ei</b> suona [aɪ]."
+      }
+    ]
   }
 });

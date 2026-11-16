@@ -311,5 +311,341 @@ LINGUAI.addUnits("A2", [
         { t: "speak", it: "Als ich Kind war, hatte ich einen Hund, und ich konnte jeden Tag mit ihm spielen." }
       ]
     }
+  },
+  {
+    id: "a2-u02",
+    icon: "🚆",
+    titleIt: "Unterwegs",
+    lessons: [
+      {
+        id: "a2-u02-l1",
+        tags: ["g-wechselpraep", "g-praep-dativ"],
+        cefr: "A2",
+        titleIt: "Am Bahnhof: nach Wien, in die Schweiz",
+        grammar: {
+          examples: [
+            { it: "Ich fahre nach Wien." },
+            { it: "Wir fliegen nach Italien." },
+            { it: "Sie fahren im Sommer in die Schweiz." },
+            { it: "Er fährt zu seiner Tante." },
+            { it: "Wir fahren zum Bahnhof." },
+            { it: "Meine Tante wohnt in der Schweiz." }
+          ]
+        },
+        vocab: [
+          { it: "der Bahnhof", plural: "die Bahnhöfe", ex: "Der Bahnhof ist nicht weit." },
+          { it: "der Zug", plural: "die Züge", ex: "Der Zug nach Wien fährt um neun Uhr ab." },
+          { it: "das Gleis", plural: "die Gleise", ex: "Der Zug fährt von Gleis vier ab." },
+          { it: "die Fahrkarte", plural: "die Fahrkarten", ex: "Ich kaufe eine Fahrkarte nach Hamburg." },
+          { it: "der Fahrplan", plural: "die Fahrpläne", ex: "Im Fahrplan steht die Abfahrt." },
+          { it: "die Abfahrt", plural: "die Abfahrten", ex: "Die Abfahrt ist um zehn Uhr." },
+          { it: "die Ankunft", plural: "die Ankünfte", ex: "Die Ankunft in Wien ist um zwölf Uhr." },
+          { it: "die Schweiz", plural: "-", ex: "Wir fahren im Sommer in die Schweiz." },
+          { it: "das Land", plural: "die Länder", ex: "Welches Land möchtest du besuchen?" },
+          { it: "die Auskunft", plural: "-", ex: "Die Auskunft ist am Bahnhof." },
+          { it: "einfach", ex: "Einmal einfach nach Wien, bitte." },
+          { it: "hin und zurück", ex: "Eine Fahrkarte nach Berlin, hin und zurück, bitte." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 1 },
+          { t: "fill", a: ["nach"] },
+          { t: "fill", a: ["zu"] },
+          {
+            t: "cloze",
+            text: "Ich fahre {{1}} Wien. Dann fahren wir {{2}} die Schweiz, und am Abend gehe ich {{3}} meinem Freund.",
+            gaps: [["nach"], ["in"], ["zu"]]
+          },
+          {
+            t: "match",
+            pairs: [{ it: "nach Wien" }, { it: "in die Schweiz" }, { it: "zu meiner Tante" }, { it: "zum Bahnhof" }]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Morgen fahren wir in die Schweiz",
+              "Wir fahren morgen in die Schweiz",
+              "In die Schweiz fahren wir morgen",
+              "Morgen reisen wir in die Schweiz",
+              "Wir reisen morgen in die Schweiz",
+              "In die Schweiz reisen wir morgen"
+            ]
+          },
+          {
+            t: "dialogue",
+            lines: [
+              { sp: "A", it: "Guten Tag. Wohin fahren Sie?" },
+              {
+                sp: "TY",
+                choices: ["Ich fahre in Wien.", "Ich fahre zu Wien.", "Ich fahre nach Wien."],
+                a: 2
+              },
+              { sp: "A", it: "Einfach oder hin und zurück?" },
+              {
+                sp: "TY",
+                choices: ["Hin und zurück, bitte.", "Hin und her, bitte.", "Zurück und hin, bitte."],
+                a: 0
+              },
+              { sp: "A", it: "Fahren Sie dann weiter?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Ja, danach fahre ich nach meiner Tante.",
+                  "Ja, danach fahre ich zu meiner Tante.",
+                  "Ja, danach fahre ich bei meiner Tante."
+                ],
+                a: 1
+              }
+            ]
+          },
+          { t: "listen", it: "Guten Tag, ich möchte eine Fahrkarte nach Wien, hin und zurück, bitte." },
+          { t: "speak", it: "Ich fahre im Sommer in die Schweiz und dann zu meiner Tante nach Wien." }
+        ]
+      },
+      {
+        id: "a2-u02-l2",
+        tags: ["g-futur"],
+        cefr: "A2",
+        titleIt: "Morgen fahre ich, ich werde fahren",
+        grammar: {
+          examples: [
+            { it: "Morgen fahre ich nach Wien." },
+            { it: "Nächste Woche fliegen wir nach Spanien." },
+            { it: "Ich werde dich morgen anrufen." },
+            { it: "Es wird heute Abend regnen." },
+            { it: "Wir werden im Sommer in die Schweiz fahren." },
+            { it: "Ich werde dir ein Foto schicken." }
+          ]
+        },
+        vocab: [
+          { it: "die Reise", plural: "die Reisen", ex: "Die Reise nach Wien dauert vier Stunden." },
+          { it: "der Urlaub", plural: "-", ex: "Nächste Woche habe ich Urlaub." },
+          { it: "die Woche", plural: "die Wochen", ex: "In einer Woche fahre ich nach Berlin." },
+          { it: "das Wochenende", plural: "die Wochenenden", ex: "Am Wochenende fahren wir ans Meer." },
+          { it: "der Flug", plural: "die Flüge", ex: "Der Flug nach Wien dauert eine Stunde." },
+          { it: "der Flughafen", plural: "die Flughäfen", ex: "Der Flughafen ist weit weg." },
+          { it: "der Koffer", plural: "die Koffer", ex: "Mein Koffer ist schwer." },
+          { it: "das Ticket", plural: "die Tickets", ex: "Ich habe das Ticket schon gekauft." },
+          { it: "morgen", ex: "Morgen fahre ich nach Hamburg." },
+          { it: "nächste Woche", ex: "Nächste Woche fliege ich nach Rom." },
+          { it: "bald", ex: "Bald fahren wir in Urlaub." },
+          { it: "im Sommer", ex: "Im Sommer fahren wir an den See." }
+        ],
+        exercises: [
+          { t: "conj", verb: "werden", tense: "praes", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "conj", verb: "fahren", tense: "fut1", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "conj", verb: "fliegen", tense: "fut1", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 1 },
+          { t: "fill", a: ["werden"] },
+          { t: "fill", a: ["fahre"] },
+          {
+            t: "cloze",
+            text: "Morgen {{1}} ich dir ein Foto {{2}}.",
+            gaps: [["werde"], ["schicken", "senden"]]
+          },
+          { t: "listen", it: "Nächste Woche fahre ich mit dem Zug nach Wien, und im Sommer werden wir in die Schweiz fliegen." },
+          { t: "speak", it: "Morgen fahre ich nach Hamburg, und nächste Woche werde ich meine Freundin besuchen." }
+        ]
+      },
+      {
+        id: "a2-u02-l3",
+        tags: ["g-perfekt", "g-register"],
+        cefr: "A2",
+        titleIt: "Ich habe ein Zimmer reserviert",
+        grammar: {
+          examples: [
+            { it: "Ich habe ein Zimmer reserviert." },
+            { it: "Wir haben ein Doppelzimmer für zwei Nächte gebucht." },
+            { it: "Wir sind gestern Abend angekommen." },
+            { it: "Haben Sie eine Reservierung?" },
+            { it: "Könnten Sie mir bitte helfen?" },
+            { it: "Hast du schon ein Hotel gebucht?" }
+          ]
+        },
+        vocab: [
+          { it: "das Hotel", plural: "die Hotels", ex: "Das Hotel liegt direkt am Bahnhof." },
+          { it: "das Zimmer", plural: "die Zimmer", ex: "Das Zimmer hat einen Balkon." },
+          { it: "das Doppelzimmer", plural: "die Doppelzimmer", ex: "Wir brauchen ein Doppelzimmer." },
+          { it: "die Reservierung", plural: "die Reservierungen", ex: "Haben Sie eine Reservierung?" },
+          { it: "die Nacht", plural: "die Nächte", ex: "Wir bleiben zwei Nächte." },
+          { it: "der Schlüssel", plural: "die Schlüssel", ex: "Hier ist Ihr Schlüssel." },
+          { it: "das Frühstück", plural: "-", ex: "Das Frühstück gibt es ab sieben Uhr." },
+          { it: "die Rezeption", plural: "die Rezeptionen", ex: "Die Rezeption ist rund um die Uhr offen." },
+          { it: "der Gast", plural: "die Gäste", ex: "Die Gäste frühstücken im Garten." },
+          { it: "das Gepäck", plural: "-", ex: "Mein Gepäck ist noch im Zug." },
+          { it: "reservieren", ex: "Ich möchte ein Zimmer reservieren." },
+          { it: "buchen", ex: "Wir haben das Hotel online gebucht." }
+        ],
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "fill", a: ["gebucht"] },
+          { t: "fill", a: ["sind"] },
+          { t: "fill", a: ["haben"] },
+          {
+            t: "cloze",
+            text: "Ich {{1}} ein Zimmer {{2}}. Wir {{3}} gestern Abend {{4}}.",
+            gaps: [["habe"], ["reserviert", "gebucht"], ["sind"], ["angekommen"]]
+          },
+          {
+            t: "match",
+            pairs: [
+              { it: "das Doppelzimmer" },
+              { it: "die Reservierung" },
+              { it: "der Schlüssel" },
+              { it: "das Frühstück" }
+            ]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Wir haben ein Doppelzimmer für zwei Nächte reserviert",
+              "Wir haben ein Doppelzimmer für zwei Nächte gebucht",
+              "Wir haben für zwei Nächte ein Doppelzimmer reserviert",
+              "Wir haben für zwei Nächte ein Doppelzimmer gebucht",
+              "Für zwei Nächte haben wir ein Doppelzimmer reserviert",
+              "Für zwei Nächte haben wir ein Doppelzimmer gebucht"
+            ]
+          },
+          {
+            t: "dialogue",
+            lines: [
+              { sp: "A", it: "Guten Abend. Haben Sie eine Reservierung?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Ja, ich habe ein Zimmer reserviert.",
+                  "Ja, ich habe ein Zimmer reservieren.",
+                  "Ja, ich bin ein Zimmer reserviert."
+                ],
+                a: 0
+              },
+              { sp: "A", it: "Sind Sie schon lange unterwegs?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Ja, wir sind um fünf Uhr abgefahren.",
+                  "Ja, wir sind um fünf Uhr abfahren.",
+                  "Ja, wir haben um fünf Uhr abgefahrt."
+                ],
+                a: 0
+              },
+              { sp: "A", it: "Das Frühstück gibt es von sieben bis zehn Uhr. Haben Sie noch eine Frage?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Ja, könntest du mir bitte den Schlüssel geben?",
+                  "Ja, gib mir bitte den Schlüssel.",
+                  "Ja, könnten Sie mir bitte den Schlüssel geben?"
+                ],
+                a: 2
+              }
+            ]
+          },
+          { t: "listen", it: "Guten Abend, ich habe ein Doppelzimmer für zwei Nächte reserviert." },
+          { t: "speak", it: "Wir haben ein Zimmer gebucht und sind gestern Abend im Hotel angekommen." }
+        ]
+      },
+      {
+        id: "a2-u02-l4",
+        tags: ["g-nebensatz-temporal", "g-futur"],
+        cefr: "A2",
+        titleIt: "Wenn ich angekommen bin, rufe ich an",
+        grammar: {
+          examples: [
+            { it: "Wenn ich angekommen bin, rufe ich dich an." },
+            { it: "Wenn wir das Hotel gefunden haben, gehen wir essen." },
+            { it: "Wenn der Zug abgefahren ist, werde ich dich anrufen." },
+            { it: "Wenn ich Zeit habe, besuche ich dich." },
+            { it: "Als wir gestern angekommen sind, hat es geregnet." },
+            { it: "Ich schicke dir eine Nachricht, wenn ich umgestiegen bin." }
+          ]
+        },
+        vocab: [
+          { it: "ankommen", ex: "Wir kommen um acht Uhr an." },
+          { it: "abfahren", ex: "Der Zug fährt um neun Uhr ab." },
+          { it: "umsteigen", ex: "Wir müssen in München umsteigen." },
+          { it: "anrufen", ex: "Ich rufe dich morgen an." },
+          { it: "die Verspätung", plural: "die Verspätungen", ex: "Der Zug hat zehn Minuten Verspätung." },
+          { it: "die Nachricht", plural: "die Nachrichten", ex: "Ich schicke dir eine Nachricht." },
+          { it: "der Anschluss", plural: "die Anschlüsse", ex: "Wir haben den Anschluss verpasst." },
+          { it: "die Haltestelle", plural: "die Haltestellen", ex: "Die Haltestelle ist vor dem Bahnhof." },
+          { it: "das Taxi", plural: "die Taxis", ex: "Wir nehmen ein Taxi zum Hotel." },
+          { it: "die Verbindung", plural: "die Verbindungen", ex: "Es gibt eine gute Verbindung nach Wien." },
+          { it: "pünktlich", ex: "Der Zug ist pünktlich." },
+          { it: "später", ex: "Ich rufe dich später an." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["wenn"] },
+          { t: "fill", a: ["bin"] },
+          {
+            t: "cloze",
+            text: "{{1}} wir das Hotel gefunden {{2}}, {{3}} wir essen.",
+            gaps: [["Wenn"], ["haben"], ["gehen"]]
+          },
+          {
+            t: "match",
+            pairs: [{ it: "ankommen" }, { it: "abfahren" }, { it: "umsteigen" }, { it: "anrufen" }]
+          },
+          {
+            t: "order",
+            tokens: ["Wenn", "ich", "angekommen", "bin,", "rufe", "ich", "dich", "an"],
+            a: [
+              "Wenn ich angekommen bin, rufe ich dich an",
+              "Ich rufe dich an, wenn ich angekommen bin"
+            ]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Wenn ich ankomme, rufe ich dich an",
+              "Wenn ich angekommen bin, rufe ich dich an",
+              "Ich rufe dich an, wenn ich ankomme",
+              "Ich rufe dich an, wenn ich angekommen bin",
+              "Wenn ich ankomme, werde ich dich anrufen",
+              "Wenn ich angekommen bin, werde ich dich anrufen",
+              "Ich werde dich anrufen, wenn ich ankomme",
+              "Ich werde dich anrufen, wenn ich angekommen bin"
+            ]
+          },
+          { t: "listen", it: "Wenn ich angekommen bin, rufe ich dich an, und dann gehen wir zusammen essen." },
+          { t: "speak", it: "Wenn ich im Hotel angekommen bin, schicke ich dir eine Nachricht." }
+        ]
+      }
+    ],
+    test: {
+      id: "a2-u02-test",
+      tags: ["g-futur", "g-wechselpraep", "g-nebensatz-temporal"],
+      cefr: "A2",
+      titleIt: "Test: Unterwegs",
+      exercises: [
+        { t: "conj", verb: "kommen", tense: "fut1", persons: [0, 1, 2, 3, 4, 5] },
+        { t: "fill", a: ["nach"] },
+        { t: "fill", a: ["in"] },
+        { t: "fill", a: ["zu"] },
+        { t: "fill", a: ["werde"] },
+        { t: "fill", a: ["wenn"] },
+        { t: "mcq", a: 0 },
+        {
+          t: "trans",
+          dir: "toIt",
+          a: [
+            "Morgen fahren wir nach Wien",
+            "Wir fahren morgen nach Wien",
+            "Nach Wien fahren wir morgen",
+            "Morgen reisen wir nach Wien",
+            "Wir reisen morgen nach Wien",
+            "Nach Wien reisen wir morgen"
+          ]
+        },
+        { t: "listen", it: "Morgen fahre ich nach Wien, und wenn ich angekommen bin, rufe ich dich an." },
+        { t: "speak", it: "Im Sommer werden wir in die Schweiz fahren, und danach fahre ich zu meiner Tante." }
+      ]
+    }
   }
 ]);
