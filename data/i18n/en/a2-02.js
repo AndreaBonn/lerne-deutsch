@@ -515,5 +515,540 @@ LINGUAI.addStrings("en", {
         why: "In <i>großen</i> the <b>ß</b> is a voiceless <b>s</b>; <i>einem großen Balkon</i> is dative after <i>mit</i>, so <b>-en</b>."
       }
     ]
+  },
+  "unit:a2-u06": {
+    title: "At the office",
+    grammarNote: "Könnten Sie ...? · indirect questions with ob and question words · formal letter · man · zuerst, dann, danach, außerdem"
+  },
+  "lesson:a2-u06-l1": {
+    theme: "On the phone",
+    title: "Could you call me back?",
+    objectives: [
+      "make a phone call and leave a message with Könnten Sie ...?",
+      "ask an indirect question with ob or a question word",
+      "send the verb to the end in a clause introduced by ob, wann, wo and dass"
+    ],
+    theory: [
+      {
+        h: "Asking for a call back and leaving a message",
+        p: "On the phone with someone you don't know, use the polite form: <em>Guten Tag, hier ist Weber. Könnten Sie mich bitte zurückrufen?</em> To leave a message: <em>Könnten Sie Frau Keller etwas ausrichten?</em> The person who answers will often say <em>Ich verbinde Sie</em> (I'll put you through) or <em>Frau Keller ist gerade nicht am Platz</em> (she is not at her desk). <em>Zurückrufen</em> and <em>ausrichten</em> are separable verbs: as an infinitive after <em>Könnten Sie ...</em> they stay in one piece and go to the end."
+      },
+      {
+        h: "Indirect questions: ob and question words",
+        p: "A question can sit inside another sentence. If the direct question is <strong>yes/no</strong> (<em>Ist Herr Weber im Büro?</em>), the indirect version starts with <strong>ob</strong>; if it has a <strong>question word</strong> (<em>wann, wo, wer, wie, warum</em>), that word stays and opens the subordinate clause. In both cases the conjugated verb goes <strong>to the end</strong>, and a comma comes before: <em>Ich möchte wissen, ob Herr Weber heute im Büro ist. Ich weiß nicht, wann die Besprechung beginnt. Könnten Sie mir sagen, wo Frau Keller ist?</em> With a separable verb the prefix joins the verb again: <em>Ich weiß nicht, wann er anruft.</em> The same goes for <strong>dass</strong>: <em>Könnten Sie ihr sagen, dass ich morgen wieder anrufe?</em>"
+      },
+      {
+        contrast: "English also changes the order in an indirect question: “Where is Ms. Keller?” becomes “Could you tell me where Ms. Keller is?”, not “where is Ms. Keller”, so the idea is familiar. The German difference is how far the verb travels. English keeps the verb right after the subject (“when the meeting starts today”), while German sends the conjugated verb to the very end, after everything else: <em>wann die Besprechung heute beginnt</em>. English also has no comma there, and German always has one. One more point: “if” does two jobs in English. “I don't know if he is coming” is <em>ob</em>, while “if he comes, ...” is <em>wenn</em>. German keeps them apart."
+      },
+      {
+        trap: "After a yes/no question use <em>ob</em>, not <em>wenn</em>: <em>Ich weiß nicht, ob er kommt</em>. Don't leave the verb in second position as in a direct question: <em>Könnten Sie mir sagen, wo Frau Keller ist?</em>, not “wo ist Frau Keller”. And the comma before <em>ob</em>, <em>dass</em> and the question word is part of the spelling."
+      },
+      {
+        tip: "More useful phrases: <em>Die Leitung ist besetzt</em> (the line is busy), <em>Ich erreiche ihn nicht</em> (I can't reach him), <em>Wie ist Ihre Telefonnummer?</em>. With the polite form you stay with <em>Sie</em> from the beginning to the end of the call."
+      }
+    ],
+    grammar: {
+      title: "Könnten Sie ...? and indirect questions",
+      note: "<b>Könnten Sie</b> + infinitive at the end. Indirect question: <b>ob</b> or a question word, and the conjugated verb <b>at the end</b>. With <b>dass</b> (a statement, not a question) the verb also goes to the end: <i>Ich rufe morgen wieder an</i> becomes <i>..., dass ich morgen wieder anrufe.</i>",
+      table: {
+        head: ["direct question", "indirect question", "introduced by"],
+        rows: [
+          ["Ist Herr Weber im Büro?", "..., ob Herr Weber im Büro ist.", "ob (yes/no)"],
+          ["Wann beginnt die Besprechung?", "..., wann die Besprechung beginnt.", "wann"],
+          ["Wo ist Frau Keller?", "..., wo Frau Keller ist.", "wo"]
+        ]
+      },
+      examples: [
+        { tr: "Could you call me back, please?", note: "zurückrufen stays in one piece, at the end" },
+        { tr: "Could you pass something on to Ms. Keller?", note: "ausrichten, at the end" },
+        { tr: "I'd like to know whether Mr. Weber is in the office today.", note: "ob: the verb ist goes to the end" },
+        { tr: "I don't know when the meeting starts.", note: "wann: the verb beginnt goes to the end" },
+        { tr: "Could you tell me where Ms. Keller is?", note: "wo: the verb ist goes to the end" },
+        { tr: "Could you tell her that I'll call again tomorrow?", note: "dass: anrufe joins back together" }
+      ]
+    },
+    vocab: [
+      "to call, to phone",
+      "to call back",
+      "message",
+      "to pass on (a message)",
+      "extension (phone)",
+      "to put through, to connect",
+      "answering machine",
+      "to reach, to get hold of",
+      "busy (line)",
+      "phone number",
+      "appointment, date",
+      "line"
+    ],
+    exercises: [
+      {
+        q: "How do you politely ask to be called back?",
+        opts: [
+          "Könnten Sie mich bitte zurückrufen?",
+          "Könnten Sie zurückrufen mich bitte?",
+          "Könnten Sie mich bitte zurückrufe?"
+        ],
+        why: "<i>Könnten Sie</i> + objects + the <b>whole</b> infinitive at the end: <i>zurückrufen</i>."
+      },
+      {
+        tr: "The full conjugation of können in the Konjunktiv II.",
+        why: "<i>könnte, könntest, könnte, könnten, könntet, könnten</i>: the <b>ö</b> with the umlaut and the <b>-e-</b> of the Konjunktiv II. <i>Ich</i> and <i>er/sie/es</i> have the same form, and with <i>Sie</i> you use <b>könnten</b>."
+      },
+      {
+        q: "Complete: “Ich weiß nicht, ___ Herr Weber heute im Büro ist.” (if, whether)",
+        hint: "yes/no question",
+        why: "A yes/no question becomes indirect with <b>ob</b>, and the verb <i>ist</i> goes to the end."
+      },
+      {
+        q: "Complete: “Ich möchte wissen, ___ die Besprechung beginnt.” (when)",
+        hint: "question word",
+        why: "<b>wann</b> is the question word and it stays: <i>..., wann die Besprechung beginnt</i>."
+      },
+      {
+        q: "Match each word to its meaning.",
+        pairs: ["to call", "message", "extension", "busy"]
+      },
+      {
+        tr: "Could you call me back, please?",
+        why: "<i>Könnten Sie mich bitte zurückrufen</i>: the whole infinitive closes the sentence. <i>Könnten Sie mich zurückrufen, bitte</i> works too."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "Could you pass something on to Mr. Weber? I'd like to know whether he is in the office.",
+        why: "<i>Etwas ausrichten</i>: the infinitive stays in one piece, at the end. <i>Wissen, ob ...</i>: a yes/no question becomes indirect with <b>ob</b>."
+      },
+      {
+        q: "You are on the phone with a company.",
+        setting: "You call to speak to Ms. Keller.",
+        lines: [
+          { tr: "Brandt company, good morning." },
+          {
+            tr: "Introduce yourself and ask to be put through to Ms. Keller.",
+            answerTr: "Good morning, this is Weber. Could you put me through to Ms. Keller?"
+          },
+          { tr: "Ms. Keller is not at her desk. Shall I pass something on to her?" },
+          {
+            tr: "Say yes and ask them to tell her that you'll call back tomorrow.",
+            answerTr: "Yes, please. Could you tell her that I'll call again tomorrow?"
+          }
+        ]
+      },
+      {
+        tr: "Good morning, this is Weber. Could you call me back, please? I'd like to know whether the appointment is on Monday.",
+        why: "In <i>zurückrufen</i> the stress falls on <b>rück</b> (short <b>ü</b> [ʏ]); in <i>Könnten</i> the <b>ö</b> is short and open [œ]; <i>Weber</i> starts with <b>w</b> = [v], not the English [w]."
+      },
+      {
+        tr: "Could you tell Ms. Keller that I'll call again tomorrow?",
+        why: "In <i>wieder</i> the <b>ie</b> is a long <b>i</b> [iː] and the initial <b>w</b> is read [v]; in <i>anrufe</i> the stress falls on <b>an</b> and the verb stands at the end after <i>dass</i>."
+      }
+    ]
+  },
+  "lesson:a2-u06-l2": {
+    theme: "Writing an email",
+    title: "Dear Ms. Keller",
+    objectives: [
+      "open and close a formal email with Sehr geehrte Frau ... and Mit freundlichen Grüßen",
+      "write the polite forms Sie, Ihr, Ihnen with a capital letter",
+      "ask for a confirmation with Könnten Sie ...?"
+    ],
+    theory: [
+      {
+        h: "Opening and closing a formal email",
+        p: "A formal email has a fixed formula. At the start: <strong>Sehr geehrte Frau Keller,</strong> to a woman, <strong>Sehr geehrter Herr Weber,</strong> to a man, <strong>Sehr geehrte Damen und Herren,</strong> to several people or an unknown recipient. You write <em>Frau</em> or <em>Herr</em> plus the surname, without the first name. At the end: <strong>Mit freundlichen Grüßen</strong> and the name below, with no comma after the closing. The body is short: <em>Vielen Dank für Ihre E-Mail. Im Anhang finden Sie die Datei. Könnten Sie mir den Termin bitte bestätigen?</em>"
+      },
+      {
+        contrast: "English opens with “Dear Ms. Keller,” (or “Dear Mr. Weber:”) and closes with “Sincerely,” or “Best regards,”, with a comma after the closing. German <em>Sehr geehrte</em> (literally “very honored”) is an adjective without an article, which is why it takes <strong>-e</strong> with <em>Frau</em> and <strong>-er</strong> with <em>Herr</em>. “Ms.” does not say whether a woman is married, and <em>Frau</em> works the same way for any adult woman; <em>Fräulein</em> is considered outdated. After the comma of the salutation the next line usually starts with a lowercase letter (<em>..., vielen Dank für ...</em>), unless the first word is a noun. With <em>du</em> you open with <em>Liebe Anna,</em> or <em>Lieber Tim,</em> and close with <em>Viele Grüße</em>."
+      },
+      {
+        trap: "English “you” never changes and is written in lowercase. In a formal German email <em>Sie</em>, <em>Ihr</em>, <em>Ihre</em> and <em>Ihnen</em> are capitalized, which also separates “you, your” from <em>sie</em> and <em>ihre</em> (she, they; her, their). <em>Mit freundlichen Grüßen</em> is plural and dative after <em>mit</em>: not “Mit freundliche Gruß”."
+      },
+      {
+        tip: "Other formulas: <em>Vielen Dank für Ihre schnelle Antwort</em>, <em>Im Anhang finden Sie ...</em>, <em>Könnten Sie ...?</em> The subject line (<em>Betreff</em>) needs only a few words, for example <em>Termin am Montag</em>."
+      }
+    ],
+    grammar: {
+      title: "Formal register: the email",
+      note: "Opening <b>Sehr geehrte Frau</b> / <b>Sehr geehrter Herr</b> + surname; closing <b>Mit freundlichen Grüßen</b>. <b>Sie, Ihre, Ihnen</b> with a capital letter.",
+      table: {
+        head: ["part of the email", "formula", "meaning"],
+        rows: [
+          ["opening (woman)", "Sehr geehrte Frau Keller,", "Dear Ms. Keller"],
+          ["opening (man)", "Sehr geehrter Herr Weber,", "Dear Mr. Weber"],
+          ["opening (several people)", "Sehr geehrte Damen und Herren,", "Dear Ladies and Gentlemen"],
+          ["body", "Vielen Dank für Ihre E-Mail.", "Thank you for your email"],
+          ["closing", "Mit freundlichen Grüßen", "Kind regards"]
+        ]
+      },
+      examples: [
+        { tr: "Dear Ms. Keller,", note: "Frau: geehrt + e" },
+        { tr: "Dear Mr. Weber,", note: "Herr: geehrt + er" },
+        { tr: "Thank you for your email.", note: "Ihre with a capital letter" },
+        { tr: "You will find the file attached.", note: "verb in second position: finden Sie" },
+        { tr: "Could you confirm the appointment for me, please?", note: "Könnten Sie ... bestätigen" },
+        { tr: "Kind regards", note: "Grüßen, plural and dative" }
+      ]
+    },
+    vocab: [
+      "email",
+      "subject (of an email)",
+      "salutation",
+      "greeting, closing",
+      "attachment",
+      "file",
+      "sender",
+      "to send",
+      "to attach",
+      "to confirm",
+      "friendly, kind",
+      "formal"
+    ],
+    exercises: [
+      {
+        q: "Which opening is correct for an email to a woman?",
+        opts: ["Sehr geehrter Frau Keller,", "Sehr geehrte Frau Keller,", "Sehr geehrt Frau Keller,"],
+        why: "<i>Frau</i> is feminine, so the adjective takes <b>-e</b>: <i>Sehr geehrte Frau Keller,</i>. With <i>Herr</i> it would be <i>geehrter</i>."
+      },
+      {
+        q: "Which closing is correct?",
+        opts: ["Mit freundlichen Grüßen", "Mit freundliche Grüße", "Mit freundlichem Grüßen"],
+        why: "<i>Mit</i> takes the dative and <i>Grüße</i> is plural: <b>Mit freundlichen Grüßen</b>."
+      },
+      {
+        q: "Complete: “Sehr ___ Herr Weber,” (geehrt, with the ending)",
+        hint: "masculine, no article",
+        why: "With <i>Herr</i> the adjective without an article takes <b>-er</b>: <i>Sehr geehrter Herr Weber,</i>."
+      },
+      {
+        q: "Complete: “Vielen Dank für ___ E-Mail.” (your, formal, with a capital letter)",
+        hint: "polite form",
+        why: "<b>Ihre</b> with a capital letter is the polite possessive: your. <i>Ihre</i>, <i>Ihr</i> and <i>Ihnen</i> are written this way in formal emails."
+      },
+      {
+        q: "Match each word to its meaning.",
+        pairs: ["subject line", "attachment", "sender", "file"]
+      },
+      {
+        tr: "You will find the file attached.",
+        why: "<i>Im Anhang finden Sie die Datei</i>: the verb is in second position. <i>Sie finden im Anhang die Datei</i>, <i>Sie finden die Datei im Anhang</i> and <i>Die Datei finden Sie im Anhang</i> work too."
+      },
+      {
+        tr: "Dear Ms. Keller, thank you for your email.",
+        why: "<i>Sehr geehrte Frau Keller, vielen Dank für Ihre E-Mail</i>. <i>Herzlichen Dank</i> or <i>danke</i> work too; <i>Ihre</i> is written with a capital letter."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "Dear Ms. Keller, thank you for your email. Kind regards",
+        why: "<i>Sehr geehrte</i> (feminine), <i>Ihre</i> (your, with a capital letter) and <i>Mit freundlichen Grüßen</i> (dative plural)."
+      },
+      {
+        tr: "Dear Ms. Keller, thank you for your email. You will find the file attached. Kind regards",
+        why: "In <i>Grüßen</i> the <b>ü</b> is long [yː] and the <b>ß</b> is a voiceless <b>s</b>; in <i>geehrte</i> the syllable <b>ge</b> is weak and the stress falls on <b>ehr</b>, with a long <b>e</b>."
+      },
+      {
+        tr: "Could you confirm the appointment for me, please?",
+        why: "In <i>Termin</i> the stress falls on the last syllable, with a long <b>i</b>; in <i>bestätigen</i> the <b>st</b> after <b>be-</b> is read [ʃt] and the stress falls on <b>stä</b>."
+      }
+    ]
+  },
+  "lesson:a2-u06-l3": {
+    theme: "Habits at the office",
+    title: "Here we do it like this",
+    objectives: [
+      "use man with the verb in the third person singular",
+      "describe rules and habits of the workplace",
+      "use man with muss, darf and kann"
+    ],
+    theory: [
+      {
+        h: "man: anyone, people in general",
+        p: "<strong>man</strong> stands for any person, people in general, and is used for rules and habits: <em>Bei uns beginnt man um acht Uhr. Hier duzt man sich. In der Mittagspause isst man in der Kantine.</em> The verb is in the <strong>third person singular</strong>, even though the meaning is plural. Verbs that change their vowel keep the change: <em>man isst, man liest, man fährt, man spricht</em>. With modals: <em>man muss, man darf, man kann</em>: <em>Hier darf man nicht rauchen. Man muss pünktlich sein.</em> A common question: <em>Wie sagt man das auf Deutsch?</em>"
+      },
+      {
+        contrast: "English has no single word like <em>man</em>. Depending on the register it uses “you” (“Here you have to be on time”), the stiffer “one” (“One has to be on time”), “people” or “they” (“In Germany people eat early”) or the passive (“German is spoken here”). In German <em>man</em> is always the subject, and the verb is third person singular: <em>man isst</em>, even though “you eat” and “they eat” look plural. <em>Man</em> is also not the same as <em>du</em>: <em>Du musst pünktlich sein</em> speaks to one person, <em>Man muss pünktlich sein</em> states a rule. And <em>man</em> goes with the reflexive pronoun <em>sich</em>: <em>Hier duzt man sich</em>."
+      },
+      {
+        trap: "<em>man</em> is not <em>der Mann</em> (the man) and not the English “man”: it has one <strong>n</strong> and a lowercase letter. The verb stays in the third person singular: <em>man sagt</em>, not “man sagen”, and with modals <em>man muss</em>, not “man müssen”. Also watch the modals: English “can't” covers both “not allowed” and “not possible”, while German has two verbs. <em>Hier darf man nicht rauchen</em> says that smoking is not allowed; <em>Hier kann man nicht rauchen</em> would say that it can't be done."
+      },
+      {
+        tip: "To introduce an office rule open with <em>Hier</em>, <em>Bei uns</em> or <em>In der Firma</em>; the verb stays in second position: <em>Bei uns beginnt man um acht Uhr.</em> For du or Sie: <em>duzen</em> and <em>siezen</em>: <em>Den Chef siezt man hier.</em>"
+      }
+    ],
+    grammar: {
+      title: "man + third person singular",
+      note: "<b>man</b> is always the subject; the verb stays in the <b>third person singular</b>: <b>man isst, man muss, man darf</b>.",
+      table: {
+        head: ["verb", "with man", "example"],
+        rows: [
+          ["essen", "man isst", "In der Kantine isst man warm."],
+          ["sagen", "man sagt", "Wie sagt man das auf Deutsch?"],
+          ["müssen", "man muss", "Man muss pünktlich sein."],
+          ["dürfen", "man darf", "Hier darf man nicht rauchen."],
+          ["duzen", "man duzt sich", "Hier duzt man sich."]
+        ]
+      },
+      examples: [
+        { tr: "Here we use du with each other.", note: "man duzt sich: third person singular" },
+        { tr: "At our place we start at eight.", note: "inversion after Bei uns: beginnt man" },
+        { tr: "During the lunch break people eat in the cafeteria.", note: "essen changes its vowel: man isst" },
+        { tr: "Smoking is not allowed here.", note: "man darf, with nicht" },
+        { tr: "How do you say this in German?", note: "man sagt, not man sagen" },
+        { tr: "You have to be on time.", note: "man muss" }
+      ]
+    },
+    vocab: [
+      "office",
+      "colleague (male)",
+      "colleague (female)",
+      "boss",
+      "lunch break",
+      "cafeteria, canteen",
+      "printer",
+      "working hours",
+      "on time, punctual",
+      "to use du (informal you)",
+      "to use Sie (formal you)",
+      "usual, customary"
+    ],
+    exercises: [
+      {
+        q: "Which sentence is correct?",
+        opts: [
+          "Hier arbeiten man bis fünf Uhr.",
+          "Hier arbeitet man bis fünf Uhr.",
+          "Hier arbeitest man bis fünf Uhr."
+        ],
+        why: "With <i>man</i> the verb is in the third person singular: <b>arbeitet</b>."
+      },
+      {
+        q: "How do you say “In Germany people eat early”?",
+        opts: [
+          "In Deutschland isst man früh.",
+          "In Deutschland essen man früh.",
+          "In Deutschland esst man früh."
+        ],
+        why: "<i>Essen</i> changes its vowel in the third person singular: <i>er isst</i>, so <b>man isst</b>."
+      },
+      {
+        q: "Which sentences are correct?",
+        opts: [
+          "Man darf hier nicht rauchen.",
+          "Man muss pünktlich sein.",
+          "Man müssen pünktlich sein.",
+          "Wie sagt man das auf Deutsch?",
+          "Man fahren mit dem Bus."
+        ],
+        why: "With <i>man</i> the modal is also in the third person singular: <i>man muss</i>, not “man müssen”. <i>Man fahren</i> is wrong: you need <i>man fährt</i>."
+      },
+      {
+        q: "Complete: “In der Kantine ___ man mittags warm.” (essen)",
+        hint: "third person singular, the vowel changes",
+        why: "<b>isst</b>: <i>essen</i> changes <i>e</i> to <i>i</i>, and after <i>man</i> you use this form."
+      },
+      {
+        q: "Complete: “Wie ___ man das auf Deutsch?” (sagen)",
+        hint: "third person singular",
+        why: "<b>sagt</b>: <i>man</i> takes the third person singular."
+      },
+      {
+        tr: "At our place we start at eight.",
+        why: "<i>Bei uns beginnt man um acht Uhr</i>. <i>Man beginnt bei uns um acht Uhr</i> and <i>Um acht Uhr beginnt man bei uns</i> work too: the verb stays in second position."
+      },
+      {
+        tr: "Here we use du with each other.",
+        why: "<i>Hier duzt man sich</i>. <i>Man duzt sich hier</i> works too. <i>Sich</i> is the reflexive pronoun that goes with <i>man</i>."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "Here you have to be on time and you can't smoke.",
+        why: "<i>Hier muss man pünktlich sein, und man darf nicht rauchen.</i> For “you can't smoke” (not allowed) German says <i>man darf nicht rauchen</i>. <i>Man kann nicht rauchen</i> would say that smoking is impossible, not forbidden."
+      },
+      {
+        tr: "At our place we start at eight. During the lunch break people eat in the cafeteria. Here we use du with each other.",
+        why: "In <i>isst</i> the <b>ss</b> is a voiceless <b>s</b> and the <b>i</b> is short; in <i>Kantine</i> the stress falls on <b>ti</b>, with a long <b>i</b> [kanˈtiːnə]."
+      },
+      {
+        tr: "Here you have to be on time, and you can't smoke in the office.",
+        why: "In <i>pünktlich</i> the <b>ü</b> is short [ʏ], the <b>n</b> before <b>k</b> is the velar nasal [ŋ], as in “think”, and the final <b>ch</b> after <b>i</b> is [ç]."
+      }
+    ]
+  },
+  "lesson:a2-u06-l4": {
+    theme: "Meeting",
+    title: "In the meeting",
+    objectives: [
+      "put contributions in order with zuerst, dann, danach and außerdem",
+      "put the verb right after these words, before the subject",
+      "make a proposal and give your agreement"
+    ],
+    theory: [
+      {
+        h: "zuerst, dann, danach, außerdem",
+        p: "<strong>zuerst</strong> (first of all), <strong>dann</strong> (then), <strong>danach</strong> (afterwards) and <strong>außerdem</strong> (besides, also) can open a sentence. When they take the <strong>first position</strong>, the conjugated verb comes <strong>right after</strong> and the subject follows it: <em>Zuerst besprechen wir die Tagesordnung. Dann diskutieren wir den Vorschlag. Danach schreibt Anna das Protokoll. Außerdem brauchen wir einen neuen Drucker.</em> They can also come later, after the subject: <em>Wir besprechen zuerst die Tagesordnung.</em> For a proposal: <em>Ich schlage vor, dass wir einen neuen Termin machen.</em> To agree: <em>Ich bin einverstanden. Ich stimme zu.</em>"
+      },
+      {
+        contrast: "In English these words leave the order alone: “First we discuss the agenda”, with the subject before the verb, as always. In German the conjugated verb has to stay in second position, so when one of these words opens the sentence the subject moves behind the verb: <em>Zuerst besprechen wir ...</em>, not “Zuerst wir besprechen”. The pronoun cannot be dropped either. Be careful with “before” and “after”: “first” is <em>zuerst</em>, but “before the meeting” is <em>vor der Besprechung</em> (<em>vor</em> + dative), and the preposition “after the meeting” is <em>nach der Besprechung</em>, while the adverb “afterwards” is <em>danach</em>."
+      },
+      {
+        trap: "With <em>zuerst, dann, danach, außerdem</em> in front, <em>wir besprechen</em> becomes <em>besprechen wir</em>. A separable verb stays split: <em>Danach fängt Anna an.</em> After <em>dass</em>, however, the conjugated verb goes to the end: <em>Ich schlage vor, dass wir einen neuen Termin machen.</em> English often drops “that” (“I suggest we set a new date”), but in German <em>dass</em> is the normal choice here. After <em>glauben</em> and <em>meinen</em> you can also leave out <em>dass</em>, and then the verb comes back to second position: <em>Ich meine, wir machen einen neuen Termin.</em>"
+      },
+      {
+        tip: "To disagree politely: <em>Das sehe ich anders.</em> To ask for the floor or a break: <em>Ich habe eine Frage. Könnten wir eine Pause machen?</em> A list in three steps uses <em>zuerst, dann, danach</em>, and <em>außerdem</em> adds one more point."
+      }
+    ],
+    grammar: {
+      title: "zuerst, dann, danach, außerdem: the verb right after",
+      note: "With <b>zuerst, dann, danach, außerdem</b> in first position the conjugated verb is in <b>second place</b> and the subject comes after it.",
+      table: {
+        head: ["word", "meaning", "example"],
+        rows: [
+          ["zuerst", "first of all", "Zuerst besprechen wir die Tagesordnung."],
+          ["dann", "then", "Dann diskutieren wir den Vorschlag."],
+          ["danach", "afterwards", "Danach schreibt Anna das Protokoll."],
+          ["außerdem", "besides, also", "Außerdem brauchen wir einen neuen Drucker."]
+        ]
+      },
+      examples: [
+        { tr: "First of all we talk about the agenda.", note: "zuerst: verb + subject" },
+        { tr: "Then we discuss the proposal.", note: "dann: diskutieren wir" },
+        { tr: "Afterwards Anna writes the minutes.", note: "danach: schreibt Anna" },
+        { tr: "We also need a new printer.", note: "außerdem: brauchen wir" },
+        { tr: "I suggest that we set a new date.", note: "dass: the verb goes to the end" },
+        { tr: "I agree.", note: "einverstanden with sein" }
+      ]
+    },
+    vocab: [
+      "meeting",
+      "proposal",
+      "agenda",
+      "result",
+      "minutes (of a meeting)",
+      "point, item",
+      "to propose, to suggest",
+      "to agree, to approve",
+      "in agreement",
+      "first of all",
+      "afterwards",
+      "besides, also"
+    ],
+    exercises: [
+      {
+        q: "Which sentence is correct?",
+        opts: [
+          "Zuerst wir besprechen die Tagesordnung.",
+          "Zuerst besprechen wir die Tagesordnung.",
+          "Zuerst wir die Tagesordnung besprechen."
+        ],
+        why: "With <i>zuerst</i> in first position the verb comes right after, then the subject: <b>Zuerst besprechen wir ...</b>."
+      },
+      {
+        q: "Complete: “Zuerst besprechen wir die Tagesordnung, ___ diskutieren wir den Vorschlag.” (then)",
+        hint: "two possible words",
+        why: "<b>dann</b> and <b>danach</b> both work: both open the sentence and the verb comes right after."
+      },
+      {
+        q: "Complete: “Außerdem ___ wir einen neuen Drucker.” (brauchen)",
+        hint: "present tense, wir",
+        why: "<b>brauchen</b>: after <i>außerdem</i> the verb is in second position, then <i>wir</i>."
+      },
+      {
+        q: "Match each word to its meaning.",
+        pairs: ["proposal", "agenda", "result", "minutes"]
+      },
+      {
+        tr: "Afterwards, Anna writes the minutes.",
+        why: "<i>Danach schreibt Anna das Protokoll</i>: the verb comes right after <i>danach</i>. <i>Anna schreibt danach das Protokoll</i>, <i>Anna schreibt das Protokoll danach</i> and <i>Das Protokoll schreibt Anna danach</i> work too."
+      },
+      {
+        tr: "Besides, I have a question.",
+        why: "<i>Außerdem habe ich eine Frage</i>: the verb comes before the subject. <i>Ich habe außerdem eine Frage</i> works too."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "First we talk about the proposal. Then Anna writes the minutes.",
+        why: "<i>Zuerst besprechen wir den Vorschlag. Dann schreibt Anna das Protokoll.</i> For “then” both <i>dann</i> and <i>danach</i> work."
+      },
+      {
+        q: "You are in a meeting.",
+        setting: "Your boss asks you how to begin.",
+        lines: [
+          { tr: "Good morning! We have a lot of work today. How do we begin?" },
+          {
+            tr: "Answer that first you talk about the agenda.",
+            answerTr: "First we talk about the agenda."
+          },
+          { tr: "Good. And afterwards?" },
+          {
+            tr: "Answer that afterwards you discuss Mr. Weber's proposal.",
+            answerTr: "Afterwards we discuss Mr. Weber's proposal."
+          }
+        ]
+      },
+      {
+        tr: "First we talk about the agenda. Afterwards we discuss the proposal. Besides, Anna writes the minutes.",
+        why: "In <i>Besprechung</i> the <b>sp</b> after <b>Be-</b> is read [ʃp] and the <b>ch</b> is [ç]; in <i>Protokoll</i> the stress falls on the last syllable; in <i>außerdem</i> the <b>ß</b> is a voiceless <b>s</b>."
+      },
+      {
+        tr: "I suggest that we discuss the agenda first.",
+        why: "In <i>vor</i> the <b>v</b> is read [f] and in <i>schlage</i> the <b>sch</b> is [ʃ]; <i>zuerst</i> is read [tsuˈʔeːɐ̯st], with <b>z</b> = [ts]."
+      }
+    ]
+  },
+  "lesson:a2-u06-test": {
+    theme: "Review",
+    title: "Test: At the office",
+    objectives: ["check polite requests, indirect questions, the formal letter, man and the sequence connectors"],
+    theory: [
+      {
+        p: "Ten questions on the unit. You pass with 70%. Don't look back at the lessons while you answer: if you don't remember something, it's better to go back and review."
+      }
+    ],
+    exercises: [
+      {
+        tr: "Conjugate können in the Konjunktiv II: du, wir, ihr.",
+        why: "<i>könntest, könnten, könntet</i>: the <b>ö</b> with the umlaut and the <b>-e-</b> of the Konjunktiv II."
+      },
+      {
+        q: "Complete: “Ich weiß nicht, ___ Herr Weber im Büro ist.” (if, whether)",
+        hint: "yes/no question",
+        why: "A yes/no question becomes indirect with <b>ob</b>, and the verb goes to the end."
+      },
+      {
+        q: "Complete: “Hier ___ man pünktlich sein.” (müssen)",
+        hint: "third person singular",
+        why: "<b>muss</b>: with <i>man</i> the modal is in the third person singular."
+      },
+      {
+        q: "Complete: “Sehr ___ Frau Keller,” (geehrt, with the ending)",
+        hint: "feminine, no article",
+        why: "With <i>Frau</i> the adjective without an article takes <b>-e</b>: <i>geehrte</i>."
+      },
+      {
+        q: "Complete: “Zuerst ___ wir die Tagesordnung.” (besprechen)",
+        hint: "verb before the subject",
+        why: "After <i>zuerst</i> comes the verb, then the subject: <b>besprechen wir</b>."
+      },
+      {
+        q: "Which sentence is the polite request?",
+        opts: ["Rufen Sie mich zurück!", "Könnten Sie mich bitte zurückrufen?", "Sie rufen mich zurück."],
+        why: "<b>Könnten Sie ...?</b> with the infinitive at the end is the polite formula; the other two are an order and a statement."
+      },
+      {
+        q: "Match each word to its meaning.",
+        pairs: ["message", "subject line", "meeting", "colleague"]
+      },
+      {
+        tr: "Could you confirm the appointment for me, please?",
+        why: "<i>Könnten Sie mir den Termin bitte bestätigen</i>: the infinitive closes the sentence. <i>Könnten Sie mir bitte den Termin bestätigen</i> works too."
+      },
+      {
+        tr: "I'd like to know whether Mr. Weber is in the office today. Could you call me back, please?",
+        why: "In <i>Büro</i> the <b>ü</b> is [y] and the stress falls on <b>ro</b>; in <i>ich</i> the <b>ch</b> is [ç]; in <i>wissen</i> the <b>w</b> is [v] and the <b>ss</b> is a voiceless <b>s</b>."
+      },
+      {
+        tr: "At our place we start at eight, and first of all we talk about the agenda.",
+        why: "In <i>acht</i> the <b>ch</b> after <b>a</b> is [x]; <i>Bei</i> has <b>ei</b> = [aɪ]; in <i>zuerst</i> the <b>z</b> is [ts] and the vowels <b>u</b> and <b>e</b> are pronounced separately."
+      }
+    ]
   }
 });

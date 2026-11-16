@@ -515,5 +515,540 @@ LINGUAI.addStrings("pl", {
         why: "W <i>großen</i> <b>ß</b> to bezdźwięczne <b>s</b>; <i>einem großen Balkon</i> to celownik po <i>mit</i>, więc <b>-en</b>."
       }
     ]
+  },
+  "unit:a2-u06": {
+    title: "W biurze",
+    grammarNote: "Könnten Sie ...? · pytania zależne z ob i zaimkiem pytajnym · list oficjalny · man · zuerst, dann, danach, außerdem"
+  },
+  "lesson:a2-u06-l1": {
+    theme: "Przez telefon",
+    title: "Czy mógłby Pan do mnie oddzwonić?",
+    objectives: [
+      "zadzwonić i zostawić wiadomość z użyciem Könnten Sie ...?",
+      "zadać pytanie zależne z ob albo z zaimkiem pytajnym",
+      "przesunąć czasownik na koniec w zdaniu z ob, wann, wo i dass"
+    ],
+    theory: [
+      {
+        h: "Prośba o oddzwonienie i zostawienie wiadomości",
+        p: "Przez telefon, do osoby, której nie znasz, używasz formy grzecznościowej: <em>Guten Tag, hier ist Weber. Könnten Sie mich bitte zurückrufen?</em> Żeby zostawić wiadomość: <em>Könnten Sie Frau Keller etwas ausrichten?</em> Osoba odbierająca mówi zwykle <em>Ich verbinde Sie</em> (łączę Pana/Panią) albo <em>Frau Keller ist gerade nicht am Platz</em> (nie ma jej w tej chwili przy biurku). <em>Zurückrufen</em> i <em>ausrichten</em> to czasowniki rozdzielnie złożone: w bezokoliczniku, po <em>Könnten Sie ...</em>, zostają w całości i idą na koniec zdania."
+      },
+      {
+        h: "Pytania zależne: ob i zaimek pytajny",
+        p: "Pytanie może wejść do środka innego zdania. Jeśli pytanie bezpośrednie jest <strong>rozstrzygnięcia</strong> (tak/nie, <em>Ist Herr Weber im Büro?</em>), pytanie zależne wprowadza <strong>ob</strong>; jeśli ma <strong>zaimek pytajny</strong> (<em>wann, wo, wer, wie, warum</em>), ten zaimek zostaje i otwiera zdanie podrzędne. W obu przypadkach odmieniony czasownik idzie <strong>na koniec</strong>, a przed zdaniem stoi przecinek: <em>Ich möchte wissen, ob Herr Weber heute im Büro ist. Ich weiß nicht, wann die Besprechung beginnt. Könnten Sie mir sagen, wo Frau Keller ist?</em> Przy czasowniku rozdzielnie złożonym przedrostek łączy się z czasownikiem: <em>Ich weiß nicht, wann er anruft.</em> To samo dotyczy <strong>dass</strong>: <em>Könnten Sie ihr sagen, dass ich morgen wieder anrufe?</em>"
+      },
+      {
+        contrast: "Przecinek przed zdaniem zależnym jest w polskim tak samo obowiązkowy jak w niemieckim: «Nie wiem, kiedy zaczyna się zebranie», «Nie wiem, czy pan Weber jest w biurze», «Powiedz jej, że zadzwonię jutro». Polskie <em>czy</em> odpowiada <em>ob</em>, a <em>jeśli</em> odpowiada <em>wenn</em>, więc tu nie ma pułapki: oba języki je rozróżniają. Różnica jest w szyku. Po polsku szyk jest swobodny i czasownik nie ma stałego miejsca (<em>kiedy zaczyna się zebranie</em>, <em>kiedy zebranie się zaczyna</em>), a w niemieckim zdaniu podrzędnym odmieniony czasownik zawsze stoi na końcu: <em>Ich weiß nicht, wann die Besprechung beginnt</em>, nie «wann beginnt die Besprechung». Druga różnica to grzeczność: polski mówi «Czy mógłby Pan ...?» albo «Czy mogłaby Pani ...?» i forma zależy od rodzaju adresata, a w niemieckim <em>Könnten Sie</em> jest jedno dla wszystkich, z czasownikiem w 3. osobie liczby <strong>mnogiej</strong>."
+      },
+      {
+        trap: "Po <em>ob</em> nie używa się <em>wenn</em>: <em>Ich weiß nicht, ob er kommt</em>. Przecinek przed <em>ob</em>, <em>dass</em> i zaimkiem pytajnym jest obowiązkowy. Po <em>Könnten Sie mir sagen</em> pytanie zależne nie jest już pytaniem bezpośrednim: <em>Könnten Sie mir sagen, wo Frau Keller ist?</em>, nie «wo ist Frau Keller». Uwaga na szyk po polsku: bezokolicznik stoi zwykle zaraz po «mógłby» (<em>oddzwonić</em>), a po niemiecku idzie na koniec, po wszystkich dopełnieniach."
+      },
+      {
+        tip: "Inne przydatne zwroty: <em>Die Leitung ist besetzt</em> (linia jest zajęta), <em>Ich erreiche ihn nicht</em> (nie mogę się z nim skontaktować), <em>Wie ist Ihre Telefonnummer?</em>. W formie grzecznościowej zostajesz przy <em>Sie</em> od początku do końca rozmowy."
+      }
+    ],
+    grammar: {
+      title: "Könnten Sie ...? i pytania zależne",
+      note: "<b>Könnten Sie</b> + bezokolicznik na końcu. Pytanie zależne: <b>ob</b> albo zaimek pytajny, a odmieniony czasownik <b>na końcu</b>. Z <b>dass</b> (twierdzenie, nie pytanie) czasownik też idzie na koniec: <i>Ich rufe morgen wieder an</i> zamienia się w <i>..., dass ich morgen wieder anrufe.</i>",
+      table: {
+        head: ["pytanie bezpośrednie", "pytanie zależne", "wprowadza"],
+        rows: [
+          ["Ist Herr Weber im Büro?", "..., ob Herr Weber im Büro ist.", "ob (tak/nie)"],
+          ["Wann beginnt die Besprechung?", "..., wann die Besprechung beginnt.", "wann"],
+          ["Wo ist Frau Keller?", "..., wo Frau Keller ist.", "wo"]
+        ]
+      },
+      examples: [
+        { tr: "Czy mógłby Pan do mnie oddzwonić, proszę?", note: "zurückrufen zostaje w całości, na końcu" },
+        { tr: "Czy mógłby Pan coś przekazać pani Keller?", note: "ausrichten, na końcu" },
+        { tr: "Chciałbym wiedzieć, czy pan Weber jest dziś w biurze.", note: "ob: czasownik ist idzie na koniec" },
+        { tr: "Nie wiem, kiedy zaczyna się zebranie.", note: "wann: czasownik beginnt idzie na koniec" },
+        { tr: "Czy mógłby Pan powiedzieć mi, gdzie jest pani Keller?", note: "wo: czasownik ist idzie na koniec" },
+        { tr: "Czy mógłby Pan jej powiedzieć, że jutro zadzwonię ponownie?", note: "dass: anrufe się łączy" }
+      ]
+    },
+    vocab: [
+      "dzwonić, telefonować",
+      "oddzwonić",
+      "wiadomość",
+      "przekazać (wiadomość)",
+      "numer wewnętrzny",
+      "połączyć (z kimś)",
+      "automatyczna sekretarka",
+      "dodzwonić się, skontaktować się",
+      "zajęty",
+      "numer telefonu",
+      "termin, spotkanie",
+      "linia"
+    ],
+    exercises: [
+      {
+        q: "Jak grzecznie prosisz, żeby ktoś do ciebie oddzwonił?",
+        opts: [
+          "Könnten Sie mich bitte zurückrufen?",
+          "Könnten Sie zurückrufen mich bitte?",
+          "Könnten Sie mich bitte zurückrufe?"
+        ],
+        why: "<i>Könnten Sie</i> + dopełnienia + <b>cały</b> bezokolicznik na końcu: <i>zurückrufen</i>."
+      },
+      {
+        tr: "Cała odmiana czasownika können w Konjunktiv II.",
+        why: "<i>könnte, könntest, könnte, könnten, könntet, könnten</i>: <b>ö</b> z umlautem i <b>-e-</b> w Konjunktiv II. <i>Ich</i> i <i>er/sie/es</i> mają tę samą formę, a przy <i>Sie</i> używa się <b>könnten</b>."
+      },
+      {
+        q: "Uzupełnij: «Ich weiß nicht, ___ Herr Weber heute im Büro ist.» (czy)",
+        hint: "pytanie rozstrzygnięcia (tak/nie)",
+        why: "Pytanie tak/nie staje się zależne dzięki <b>ob</b>, a czasownik <i>ist</i> idzie na koniec."
+      },
+      {
+        q: "Uzupełnij: «Ich möchte wissen, ___ die Besprechung beginnt.» (kiedy)",
+        hint: "zaimek pytajny",
+        why: "<b>wann</b> jest zaimkiem pytajnym i zostaje: <i>..., wann die Besprechung beginnt</i>."
+      },
+      {
+        q: "Dopasuj każde słowo do jego znaczenia.",
+        pairs: ["dzwonić", "wiadomość", "numer wewnętrzny", "zajęty"]
+      },
+      {
+        tr: "Czy mógłby Pan do mnie oddzwonić, proszę?",
+        why: "<i>Könnten Sie mich bitte zurückrufen</i>: cały bezokolicznik zamyka zdanie. Pasuje też <i>Könnten Sie mich zurückrufen, bitte</i>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Czy mógłby Pan coś przekazać panu Weberowi? Chciałbym wiedzieć, czy jest w biurze.",
+        why: "<i>Etwas ausrichten</i>: bezokolicznik zostaje w całości, na końcu. <i>Wissen, ob ...</i>: pytanie tak/nie staje się zależne dzięki <b>ob</b>."
+      },
+      {
+        q: "Rozmawiasz przez telefon z firmą.",
+        setting: "Dzwonisz, żeby porozmawiać z panią Keller.",
+        lines: [
+          { tr: "Firma Brandt, dzień dobry." },
+          {
+            tr: "Przedstaw się i poproś o połączenie z panią Keller.",
+            answerTr: "Dzień dobry, mówi Weber. Czy mógłby mnie Pan połączyć z panią Keller?"
+          },
+          { tr: "Pani Keller nie ma teraz przy biurku. Mam jej coś przekazać?" },
+          {
+            tr: "Odpowiedz, że tak, i poproś o przekazanie, że zadzwonisz jutro.",
+            answerTr: "Tak, dziękuję. Czy mógłby Pan jej powiedzieć, że jutro zadzwonię ponownie?"
+          }
+        ]
+      },
+      {
+        tr: "Dzień dobry, mówi Weber. Czy mógłby Pan do mnie oddzwonić, proszę? Chciałbym wiedzieć, czy termin jest w poniedziałek.",
+        why: "W <i>zurückrufen</i> akcent pada na <b>rück</b> (krótkie <b>ü</b> [ʏ], to nie polskie <b>y</b>); w <i>Könnten</i> <b>ö</b> jest krótkie i otwarte [œ]; <i>Weber</i> zaczyna się od <b>w</b> = [v], jak po polsku."
+      },
+      {
+        tr: "Czy mógłby Pan powiedzieć pani Keller, że jutro zadzwonię ponownie?",
+        why: "W <i>wieder</i> <b>ie</b> to długie <b>i</b> [iː], a początkowe <b>w</b> czyta się [v]; w <i>anrufe</i> akcent pada na <b>an</b>, a czasownik stoi na końcu po <i>dass</i>."
+      }
+    ]
+  },
+  "lesson:a2-u06-l2": {
+    theme: "Pisanie e-maila",
+    title: "Szanowna Pani Keller",
+    objectives: [
+      "rozpocząć i zakończyć oficjalny e-mail formułami Sehr geehrte Frau ... i Mit freundlichen Grüßen",
+      "pisać formy grzecznościowe Sie, Ihr, Ihnen wielką literą",
+      "poprosić o potwierdzenie z użyciem Könnten Sie ...?"
+    ],
+    theory: [
+      {
+        h: "Początek i koniec oficjalnego e-maila",
+        p: "Oficjalny e-mail ma stałą formułę. Na początku: <strong>Sehr geehrte Frau Keller,</strong> do kobiety, <strong>Sehr geehrter Herr Weber,</strong> do mężczyzny, <strong>Sehr geehrte Damen und Herren,</strong> do kilku osób albo do nieznanego adresata. Pisze się <em>Frau</em> albo <em>Herr</em> i nazwisko, bez imienia. Na końcu: <strong>Mit freundlichen Grüßen</strong> i pod spodem imię i nazwisko, bez przecinka po formule. Treść jest krótka: <em>Vielen Dank für Ihre E-Mail. Im Anhang finden Sie die Datei. Könnten Sie mir den Termin bitte bestätigen?</em>"
+      },
+      {
+        contrast: "Polski zaczyna od <em>Szanowna Pani Keller,</em> albo <em>Szanowny Panie,</em> i kończy <em>Z poważaniem</em> albo <em>Z wyrazami szacunku</em>. Niemieckie <em>Sehr geehrte</em> (dosłownie «bardzo szanowna») jest przymiotnikiem bez rodzajnika, więc ma <strong>-e</strong> przy <em>Frau</em> i <strong>-er</strong> przy <em>Herr</em>, podobnie jak polskie <em>Szanowna</em> i <em>Szanowny</em> zgadzają się z adresatem. Niemieckie <em>Mit freundlichen Grüßen</em> znaczy dosłownie «z przyjaznymi pozdrowieniami» i stoi w celowniku liczby mnogiej po <em>mit</em>, tak jak polskie «z» wymaga narzędnika. Po przecinku formuły zwracania się następny wiersz zaczyna się zwykle małą literą (<em>..., vielen Dank für ...</em>), chyba że pierwszym słowem jest rzeczownik. Do dorosłej kobiety zawsze <em>Frau</em>: <em>Fräulein</em> uchodzi za przestarzałe. Przy <em>du</em> zaczynasz od <em>Liebe Anna,</em> lub <em>Lieber Tim,</em> i kończysz <em>Viele Grüße</em>."
+      },
+      {
+        trap: "Zasada wielkiej litery jest ta sama co w polskich listach: w oficjalnym e-mailu <em>Sie</em>, <em>Ihr</em>, <em>Ihre</em> i <em>Ihnen</em> pisze się wielką literą, tak jak polskie <em>Pan, Pani, Państwo</em>, i to odróżnia «Pan, Pański» od <em>sie</em> i <em>ihre</em> (ona, oni; jej, ich). Uwaga na czasownik: przy <em>Sie</em> idzie w 3. osobie liczby <strong>mnogiej</strong> (<em>Sie finden</em>), a nie w 3. osobie liczby pojedynczej jak po polsku (<em>Pan znajdzie</em>). <em>Mit freundlichen Grüßen</em> jest w liczbie mnogiej i w celowniku: nie pisze się «Mit freundliche Gruß»."
+      },
+      {
+        tip: "Inne formuły: <em>Vielen Dank für Ihre schnelle Antwort</em>, <em>Im Anhang finden Sie ...</em>, <em>Könnten Sie ...?</em> W temacie (<em>Betreff</em>) wystarczy kilka słów, na przykład <em>Termin am Montag</em>."
+      }
+    ],
+    grammar: {
+      title: "Rejestr oficjalny: e-mail",
+      note: "Początek <b>Sehr geehrte Frau</b> / <b>Sehr geehrter Herr</b> + nazwisko; zakończenie <b>Mit freundlichen Grüßen</b>. <b>Sie, Ihre, Ihnen</b> wielką literą.",
+      table: {
+        head: ["część e-maila", "formuła", "znaczenie"],
+        rows: [
+          ["początek (kobieta)", "Sehr geehrte Frau Keller,", "Szanowna Pani Keller"],
+          ["początek (mężczyzna)", "Sehr geehrter Herr Weber,", "Szanowny Panie Weber"],
+          ["początek (kilka osób)", "Sehr geehrte Damen und Herren,", "Szanowni Państwo"],
+          ["treść", "Vielen Dank für Ihre E-Mail.", "Dziękuję za Pani/Pana e-mail"],
+          ["zakończenie", "Mit freundlichen Grüßen", "Z poważaniem"]
+        ]
+      },
+      examples: [
+        { tr: "Szanowna Pani Keller,", note: "Frau: geehrt + e" },
+        { tr: "Szanowny Panie Weber,", note: "Herr: geehrt + er" },
+        { tr: "Dziękuję za Pani e-mail.", note: "Ihre wielką literą" },
+        { tr: "W załączniku znajdzie Pani plik.", note: "czasownik na drugim miejscu: finden Sie" },
+        { tr: "Czy mogłaby Pani potwierdzić mi termin, proszę?", note: "Könnten Sie ... bestätigen" },
+        { tr: "Z poważaniem", note: "Grüßen, liczba mnoga i celownik" }
+      ]
+    },
+    vocab: [
+      "e-mail",
+      "temat (e-maila)",
+      "zwrot na początku listu",
+      "pozdrowienie, formuła końcowa",
+      "załącznik",
+      "plik",
+      "nadawca",
+      "wysłać",
+      "załączyć",
+      "potwierdzić",
+      "uprzejmy, serdeczny",
+      "oficjalny"
+    ],
+    exercises: [
+      {
+        q: "Który początek jest poprawny w e-mailu do pani?",
+        opts: ["Sehr geehrter Frau Keller,", "Sehr geehrte Frau Keller,", "Sehr geehrt Frau Keller,"],
+        why: "<i>Frau</i> jest rodzaju żeńskiego, więc przymiotnik ma <b>-e</b>: <i>Sehr geehrte Frau Keller,</i>. Przy <i>Herr</i> byłoby <i>geehrter</i>."
+      },
+      {
+        q: "Które zakończenie jest poprawne?",
+        opts: ["Mit freundlichen Grüßen", "Mit freundliche Grüße", "Mit freundlichem Grüßen"],
+        why: "<i>Mit</i> wymaga celownika, a <i>Grüße</i> jest w liczbie mnogiej: <b>Mit freundlichen Grüßen</b>."
+      },
+      {
+        q: "Uzupełnij: «Sehr ___ Herr Weber,» (geehrt, z końcówką)",
+        hint: "rodzaj męski, bez rodzajnika",
+        why: "Przy <i>Herr</i> przymiotnik bez rodzajnika ma <b>-er</b>: <i>Sehr geehrter Herr Weber,</i>."
+      },
+      {
+        q: "Uzupełnij: «Vielen Dank für ___ E-Mail.» (Pani/Pana, wielką literą)",
+        hint: "forma grzecznościowa",
+        why: "<b>Ihre</b> wielką literą to zaimek dzierżawczy grzecznościowy: Pani/Pana. <i>Ihre</i>, <i>Ihr</i> i <i>Ihnen</i> pisze się tak w oficjalnych e-mailach."
+      },
+      {
+        q: "Dopasuj każde słowo do jego znaczenia.",
+        pairs: ["temat", "załącznik", "nadawca", "plik"]
+      },
+      {
+        tr: "W załączniku znajdzie Pani plik.",
+        why: "<i>Im Anhang finden Sie die Datei</i>: czasownik stoi na drugim miejscu. Pasują też <i>Sie finden im Anhang die Datei</i>, <i>Sie finden die Datei im Anhang</i> i <i>Die Datei finden Sie im Anhang</i>."
+      },
+      {
+        tr: "Szanowna Pani Keller, dziękuję za Pani e-mail.",
+        why: "<i>Sehr geehrte Frau Keller, vielen Dank für Ihre E-Mail</i>. Pasuje też <i>herzlichen Dank</i> albo <i>danke</i>; <i>Ihre</i> pisze się wielką literą."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Szanowna Pani Keller, dziękuję za Pani e-mail. Z poważaniem",
+        why: "<i>Sehr geehrte</i> (rodzaj żeński), <i>Ihre</i> (Pani, wielką literą) i <i>Mit freundlichen Grüßen</i> (celownik liczby mnogiej)."
+      },
+      {
+        tr: "Szanowna Pani Keller, dziękuję za Pani e-mail. W załączniku znajdzie Pani plik. Z poważaniem",
+        why: "W <i>Grüßen</i> <b>ü</b> jest długie [yː] (to nie polskie <b>y</b>), a <b>ß</b> to bezdźwięczne <b>s</b>; w <i>geehrte</i> sylaba <b>ge</b> jest słaba, a akcent pada na <b>ehr</b>, z długim <b>e</b>."
+      },
+      {
+        tr: "Czy mogłaby Pani potwierdzić mi termin, proszę?",
+        why: "W <i>Termin</i> akcent pada na ostatnią sylabę, z długim <b>i</b>; w <i>bestätigen</i> <b>st</b> po <b>be-</b> czyta się [ʃt], a akcent pada na <b>stä</b>."
+      }
+    ]
+  },
+  "lesson:a2-u06-l3": {
+    theme: "Zwyczaje w biurze",
+    title: "U nas robi się tak",
+    objectives: [
+      "używać man z czasownikiem w 3. osobie liczby pojedynczej",
+      "opisywać zasady i zwyczaje w miejscu pracy",
+      "używać man z muss, darf i kann"
+    ],
+    theory: [
+      {
+        h: "man: ktokolwiek",
+        p: "<strong>man</strong> oznacza dowolną osobę, ludzi w ogóle, i służy do opisywania zasad i zwyczajów: <em>Bei uns beginnt man um acht Uhr. Hier duzt man sich. In der Mittagspause isst man in der Kantine.</em> Czasownik stoi w <strong>3. osobie liczby pojedynczej</strong>, choć sens jest zbiorowy. Czasowniki ze zmianą samogłoski ją zachowują: <em>man isst, man liest, man fährt, man spricht</em>. Z czasownikami modalnymi: <em>man muss, man darf, man kann</em>: <em>Hier darf man nicht rauchen. Man muss pünktlich sein.</em> Częste pytanie: <em>Wie sagt man das auf Deutsch?</em>"
+      },
+      {
+        contrast: "Polski nie ma jednego słowa jak <em>man</em>. Zwykle używa formy ze <em>się</em> (<em>Tutaj się nie pali</em>, <em>Jak się to mówi po niemiecku?</em>, <em>W Niemczech je się wcześnie</em>), trzeciej osoby liczby mnogiej (<em>Tutaj pracują do piątej</em>), bezokolicznika (<em>Nie wolno palić</em>, <em>Trzeba być punktualnym</em>) albo drugiej osoby (<em>Tu zaczynasz o ósmej</em>). Polskie formy na <em>-no/-to</em> (<em>mówiono</em>) dotyczą czasu przeszłego, więc zasadę biurową wyraża się raczej przez <em>się</em>. W niemieckim wszystkie te sposoby oddaje <em>man</em>, które jest zawsze podmiotem i musi stać w zdaniu: <em>Hier arbeitet man bis fünf Uhr</em>, bo polskie «Tu się pracuje do piątej» nie ma w zdaniu żadnego podmiotu, a w tym zdaniu niemieckim jest on potrzebny. Polskie «się» robi tu za wszystko naraz, a po niemiecku mówimy <em>man</em> i, gdy czasownik jest zwrotny, jeszcze <em>sich</em>: <em>Hier duzt man sich</em>."
+      },
+      {
+        trap: "<em>man</em> to nie <em>der Mann</em> (mężczyzna): <em>man</em> ma jedno <strong>n</strong> i pisze się małą literą. Czasownik zostaje w 3. osobie liczby pojedynczej: <em>man sagt</em>, nie «man sagen», a z modalnymi <em>man muss</em>, nie «man müssen». Uważaj na modalne: polskie «nie wolno palić» odpowiada <em>man darf nicht rauchen</em> (zakaz), a <em>man kann nicht rauchen</em> mówiłoby, że palenie jest niemożliwe, a nie zabronione. Polskie «można» obejmuje i pozwolenie, i możliwość, a niemiecki ma dwa czasowniki: <em>darf</em> i <em>kann</em>. «Trzeba» to <em>man muss</em>."
+      },
+      {
+        tip: "Zasadę biurową zaczynasz od <em>Hier</em>, <em>Bei uns</em> albo <em>In der Firma</em>; czasownik zostaje na drugim miejscu: <em>Bei uns beginnt man um acht Uhr.</em> Na «ty» i «Pan/Pani»: <em>duzen</em> i <em>siezen</em>: <em>Den Chef siezt man hier.</em>"
+      }
+    ],
+    grammar: {
+      title: "man + 3. osoba liczby pojedynczej",
+      note: "<b>man</b> jest zawsze podmiotem; czasownik zostaje w <b>3. osobie liczby pojedynczej</b>: <b>man isst, man muss, man darf</b>.",
+      table: {
+        head: ["czasownik", "z man", "przykład"],
+        rows: [
+          ["essen", "man isst", "In der Kantine isst man warm."],
+          ["sagen", "man sagt", "Wie sagt man das auf Deutsch?"],
+          ["müssen", "man muss", "Man muss pünktlich sein."],
+          ["dürfen", "man darf", "Hier darf man nicht rauchen."],
+          ["duzen", "man duzt sich", "Hier duzt man sich."]
+        ]
+      },
+      examples: [
+        { tr: "Tutaj mówimy sobie na ty.", note: "man duzt sich: 3. osoba liczby pojedynczej" },
+        { tr: "U nas zaczyna się o ósmej.", note: "inwersja po Bei uns: beginnt man" },
+        { tr: "W przerwie obiadowej je się w stołówce.", note: "essen zmienia samogłoskę: man isst" },
+        { tr: "Tutaj nie wolno palić.", note: "man darf, z nicht" },
+        { tr: "Jak się to mówi po niemiecku?", note: "man sagt, nie man sagen" },
+        { tr: "Trzeba być punktualnym.", note: "man muss" }
+      ]
+    },
+    vocab: [
+      "biuro",
+      "kolega z pracy",
+      "koleżanka z pracy",
+      "szef",
+      "przerwa obiadowa",
+      "stołówka",
+      "drukarka",
+      "godziny pracy",
+      "punktualny",
+      "mówić sobie na ty",
+      "mówić do kogoś per Pan/Pani",
+      "zwyczajowy, przyjęty"
+    ],
+    exercises: [
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: [
+          "Hier arbeiten man bis fünf Uhr.",
+          "Hier arbeitet man bis fünf Uhr.",
+          "Hier arbeitest man bis fünf Uhr."
+        ],
+        why: "Z <i>man</i> czasownik stoi w 3. osobie liczby pojedynczej: <b>arbeitet</b>."
+      },
+      {
+        q: "Jak powiesz «W Niemczech je się wcześnie»?",
+        opts: [
+          "In Deutschland isst man früh.",
+          "In Deutschland essen man früh.",
+          "In Deutschland esst man früh."
+        ],
+        why: "<i>Essen</i> zmienia samogłoskę w 3. osobie liczby pojedynczej: <i>er isst</i>, więc <b>man isst</b>."
+      },
+      {
+        q: "Które zdania są poprawne?",
+        opts: [
+          "Man darf hier nicht rauchen.",
+          "Man muss pünktlich sein.",
+          "Man müssen pünktlich sein.",
+          "Wie sagt man das auf Deutsch?",
+          "Man fahren mit dem Bus."
+        ],
+        why: "Z <i>man</i> także czasownik modalny stoi w 3. osobie liczby pojedynczej: <i>man muss</i>, nie «man müssen». <i>Man fahren</i> jest błędne: trzeba <i>man fährt</i>."
+      },
+      {
+        q: "Uzupełnij: «In der Kantine ___ man mittags warm.» (essen)",
+        hint: "3. osoba liczby pojedynczej, zmienia się samogłoska",
+        why: "<b>isst</b>: <i>essen</i> zmienia <i>e</i> w <i>i</i>, a po <i>man</i> używa się tej formy."
+      },
+      {
+        q: "Uzupełnij: «Wie ___ man das auf Deutsch?» (sagen)",
+        hint: "3. osoba liczby pojedynczej",
+        why: "<b>sagt</b>: <i>man</i> wymaga 3. osoby liczby pojedynczej."
+      },
+      {
+        tr: "U nas zaczyna się o ósmej.",
+        why: "<i>Bei uns beginnt man um acht Uhr</i>. Pasują też <i>Man beginnt bei uns um acht Uhr</i> i <i>Um acht Uhr beginnt man bei uns</i>: czasownik zostaje na drugim miejscu."
+      },
+      {
+        tr: "Tutaj mówimy sobie na ty.",
+        why: "<i>Hier duzt man sich</i>. Pasuje też <i>Man duzt sich hier</i>. <i>Sich</i> to zaimek zwrotny przy <i>man</i>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Tutaj trzeba być punktualnym i nie wolno palić.",
+        why: "<i>Hier muss man pünktlich sein, und man darf nicht rauchen.</i> Dla «nie wolno palić» (zakaz) niemiecki mówi <i>man darf nicht rauchen</i>. <i>Man kann nicht rauchen</i> mówiłoby raczej, że palenie jest niemożliwe, a nie zabronione."
+      },
+      {
+        tr: "U nas zaczyna się o ósmej. W przerwie obiadowej je się w stołówce. Tutaj mówimy sobie na ty.",
+        why: "W <i>isst</i> <b>ss</b> to bezdźwięczne <b>s</b>, a <b>i</b> jest krótkie; w <i>Kantine</i> akcent pada na <b>ti</b>, z długim <b>i</b> [kanˈtiːnə]."
+      },
+      {
+        tr: "Tutaj trzeba być punktualnym, a w biurze nie wolno palić.",
+        why: "W <i>pünktlich</i> <b>ü</b> jest krótkie [ʏ], <b>n</b> przed <b>k</b> jest nosowym welarnym [ŋ], a końcowe <b>ch</b> po <b>i</b> to [ç]."
+      }
+    ]
+  },
+  "lesson:a2-u06-l4": {
+    theme: "Zebranie",
+    title: "Na zebraniu",
+    objectives: [
+      "porządkować wypowiedzi za pomocą zuerst, dann, danach i außerdem",
+      "stawiać czasownik zaraz po tych słowach, przed podmiotem",
+      "złożyć propozycję i wyrazić zgodę"
+    ],
+    theory: [
+      {
+        h: "zuerst, dann, danach, außerdem",
+        p: "<strong>zuerst</strong> (najpierw), <strong>dann</strong> (potem), <strong>danach</strong> (po tym, następnie) i <strong>außerdem</strong> (poza tym) mogą otwierać zdanie. Gdy stoją na <strong>pierwszym miejscu</strong>, odmieniony czasownik następuje <strong>zaraz po nich</strong>, a podmiot po nim: <em>Zuerst besprechen wir die Tagesordnung. Dann diskutieren wir den Vorschlag. Danach schreibt Anna das Protokoll. Außerdem brauchen wir einen neuen Drucker.</em> Mogą też stać dalej, po podmiocie: <em>Wir besprechen zuerst die Tagesordnung.</em> Przy propozycji: <em>Ich schlage vor, dass wir einen neuen Termin machen.</em> Przy zgodzie: <em>Ich bin einverstanden. Ich stimme zu.</em>"
+      },
+      {
+        contrast: "Po polsku <em>najpierw, potem, następnie, poza tym</em> nie wymuszają żadnego szyku: «Najpierw omawiamy porządek obrad», «Najpierw my omawiamy», «Najpierw porządek obrad omawiamy» są poprawne, a podmiot można w ogóle pominąć. W niemieckim, gdy te słowa otwierają zdanie, odmieniony czasownik zostaje na drugim miejscu: <em>Zuerst besprechen wir ...</em>, nie «Zuerst wir besprechen». I zaimka nie wolno opuścić: <em>wir</em> musi być. Uwaga na «przed» i «po»: «najpierw» to <em>zuerst</em>, ale «przed zebraniem» to <em>vor der Besprechung</em> (<em>vor</em> + celownik), a «po zebraniu» to <em>nach der Besprechung</em>, podczas gdy przysłówek «potem» to <em>danach</em> albo <em>dann</em>. Spójnik «zanim» to z kolei <em>bevor</em>."
+      },
+      {
+        trap: "Z <em>zuerst, dann, danach, außerdem</em> na początku <em>wir besprechen</em> zamienia się w <em>besprechen wir</em>. Czasownik rozdzielnie złożony pozostaje rozdzielony: <em>Danach fängt Anna an.</em> Po <em>dass</em> natomiast odmieniony czasownik idzie na koniec: <em>Ich schlage vor, dass wir einen neuen Termin machen.</em> Po <em>glauben</em> i <em>meinen</em> można też pominąć <em>dass</em>, a wtedy czasownik wraca na drugie miejsce: <em>Ich meine, wir machen einen neuen Termin.</em>"
+      },
+      {
+        tip: "Żeby grzecznie się nie zgodzić: <em>Das sehe ich anders.</em> Żeby poprosić o głos albo przerwę: <em>Ich habe eine Frage. Könnten wir eine Pause machen?</em> Listę w trzech krokach buduje się z <em>zuerst, dann, danach</em>, a <em>außerdem</em> dodaje jeszcze jeden punkt."
+      }
+    ],
+    grammar: {
+      title: "zuerst, dann, danach, außerdem: czasownik zaraz po nich",
+      note: "Z <b>zuerst, dann, danach, außerdem</b> na pierwszym miejscu odmieniony czasownik stoi na <b>drugim miejscu</b>, a podmiot po nim.",
+      table: {
+        head: ["słowo", "znaczenie", "przykład"],
+        rows: [
+          ["zuerst", "najpierw", "Zuerst besprechen wir die Tagesordnung."],
+          ["dann", "potem", "Dann diskutieren wir den Vorschlag."],
+          ["danach", "po tym, następnie", "Danach schreibt Anna das Protokoll."],
+          ["außerdem", "poza tym", "Außerdem brauchen wir einen neuen Drucker."]
+        ]
+      },
+      examples: [
+        { tr: "Najpierw rozmawiamy o porządku obrad.", note: "zuerst: czasownik + podmiot" },
+        { tr: "Potem omawiamy propozycję.", note: "dann: diskutieren wir" },
+        { tr: "Następnie Anna pisze protokół.", note: "danach: schreibt Anna" },
+        { tr: "Poza tym potrzebujemy nowej drukarki.", note: "außerdem: brauchen wir" },
+        { tr: "Proponuję ustalić nowy termin.", note: "dass: czasownik idzie na koniec" },
+        { tr: "Zgadzam się.", note: "einverstanden z sein" }
+      ]
+    },
+    vocab: [
+      "zebranie, narada",
+      "propozycja",
+      "porządek obrad",
+      "wynik",
+      "protokół",
+      "punkt",
+      "proponować",
+      "zgadzać się, przyznawać rację",
+      "zgodny",
+      "najpierw, przede wszystkim",
+      "po tym, następnie",
+      "poza tym"
+    ],
+    exercises: [
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: [
+          "Zuerst wir besprechen die Tagesordnung.",
+          "Zuerst besprechen wir die Tagesordnung.",
+          "Zuerst wir die Tagesordnung besprechen."
+        ],
+        why: "Z <i>zuerst</i> na pierwszym miejscu czasownik następuje zaraz po nim, potem podmiot: <b>Zuerst besprechen wir ...</b>."
+      },
+      {
+        q: "Uzupełnij: «Zuerst besprechen wir die Tagesordnung, ___ diskutieren wir den Vorschlag.» (potem)",
+        hint: "dwa możliwe słowa",
+        why: "Pasują <b>dann</b> i <b>danach</b>: oba otwierają zdanie, a czasownik następuje zaraz po nich."
+      },
+      {
+        q: "Uzupełnij: «Außerdem ___ wir einen neuen Drucker.» (brauchen)",
+        hint: "czas teraźniejszy, wir",
+        why: "<b>brauchen</b>: po <i>außerdem</i> czasownik stoi na drugim miejscu, potem <i>wir</i>."
+      },
+      {
+        q: "Dopasuj każde słowo do jego znaczenia.",
+        pairs: ["propozycja", "porządek obrad", "wynik", "protokół"]
+      },
+      {
+        tr: "Potem Anna pisze protokół.",
+        why: "<i>Danach schreibt Anna das Protokoll</i>: czasownik następuje zaraz po <i>danach</i>. Pasują też <i>Anna schreibt danach das Protokoll</i>, <i>Anna schreibt das Protokoll danach</i> i <i>Das Protokoll schreibt Anna danach</i>."
+      },
+      {
+        tr: "Poza tym mam pytanie.",
+        why: "<i>Außerdem habe ich eine Frage</i>: czasownik stoi przed podmiotem. Pasuje też <i>Ich habe außerdem eine Frage</i>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Najpierw rozmawiamy o propozycji. Potem Anna pisze protokół.",
+        why: "<i>Zuerst besprechen wir den Vorschlag. Dann schreibt Anna das Protokoll.</i> Dla «potem» pasują <i>dann</i> i <i>danach</i>."
+      },
+      {
+        q: "Jesteś na zebraniu.",
+        setting: "Szef pyta cię, jak zacząć.",
+        lines: [
+          { tr: "Dzień dobry! Dzisiaj mamy dużo pracy. Jak zaczynamy?" },
+          {
+            tr: "Odpowiedz, że najpierw rozmawiacie o porządku obrad.",
+            answerTr: "Najpierw rozmawiamy o porządku obrad."
+          },
+          { tr: "Dobrze. A potem?" },
+          {
+            tr: "Odpowiedz, że potem omawiacie propozycję pana Webera.",
+            answerTr: "Potem omawiamy propozycję pana Webera."
+          }
+        ]
+      },
+      {
+        tr: "Najpierw rozmawiamy o porządku obrad. Potem omawiamy propozycję. Poza tym Anna pisze protokół.",
+        why: "W <i>Besprechung</i> <b>sp</b> po <b>Be-</b> czyta się [ʃp], a <b>ch</b> to [ç]; w <i>Protokoll</i> akcent pada na ostatnią sylabę; w <i>außerdem</i> <b>ß</b> to bezdźwięczne <b>s</b>."
+      },
+      {
+        tr: "Proponuję omówić najpierw porządek obrad.",
+        why: "W <i>vor</i> <b>v</b> czyta się [f], a w <i>schlage</i> <b>sch</b> to [ʃ] (jak polskie <b>sz</b>); <i>zuerst</i> czyta się [tsuˈʔeːɐ̯st], z <b>z</b> = [ts] (jak polskie <b>c</b>)."
+      }
+    ]
+  },
+  "lesson:a2-u06-test": {
+    theme: "Sprawdzian",
+    title: "Test: W biurze",
+    objectives: ["sprawdzić uprzejme prośby, pytania zależne, list oficjalny, man i spójniki kolejności"],
+    theory: [
+      {
+        p: "Dziesięć pytań o całej jednostce. Zaliczasz przy 70%. Nie zaglądaj do lekcji w trakcie odpowiadania: jeśli czegoś nie pamiętasz, lepiej wrócić i powtórzyć."
+      }
+    ],
+    exercises: [
+      {
+        tr: "Odmień können w Konjunktiv II: du, wir, ihr.",
+        why: "<i>könntest, könnten, könntet</i>: <b>ö</b> z umlautem i <b>-e-</b> w Konjunktiv II."
+      },
+      {
+        q: "Uzupełnij: «Ich weiß nicht, ___ Herr Weber im Büro ist.» (czy)",
+        hint: "pytanie rozstrzygnięcia (tak/nie)",
+        why: "Pytanie tak/nie staje się zależne dzięki <b>ob</b>, a czasownik idzie na koniec."
+      },
+      {
+        q: "Uzupełnij: «Hier ___ man pünktlich sein.» (müssen)",
+        hint: "3. osoba liczby pojedynczej",
+        why: "<b>muss</b>: z <i>man</i> czasownik modalny stoi w 3. osobie liczby pojedynczej."
+      },
+      {
+        q: "Uzupełnij: «Sehr ___ Frau Keller,» (geehrt, z końcówką)",
+        hint: "rodzaj żeński, bez rodzajnika",
+        why: "Przy <i>Frau</i> przymiotnik bez rodzajnika ma <b>-e</b>: <i>geehrte</i>."
+      },
+      {
+        q: "Uzupełnij: «Zuerst ___ wir die Tagesordnung.» (besprechen)",
+        hint: "czasownik przed podmiotem",
+        why: "Po <i>zuerst</i> następuje czasownik, potem podmiot: <b>besprechen wir</b>."
+      },
+      {
+        q: "Które zdanie jest uprzejmą prośbą?",
+        opts: ["Rufen Sie mich zurück!", "Könnten Sie mich bitte zurückrufen?", "Sie rufen mich zurück."],
+        why: "<b>Könnten Sie ...?</b> z bezokolicznikiem na końcu to formuła uprzejma; pozostałe dwa to rozkaz i twierdzenie."
+      },
+      {
+        q: "Dopasuj każde słowo do jego znaczenia.",
+        pairs: ["wiadomość", "temat (e-maila)", "zebranie", "kolega z pracy"]
+      },
+      {
+        tr: "Czy mogłaby Pani potwierdzić mi termin, proszę?",
+        why: "<i>Könnten Sie mir den Termin bitte bestätigen</i>: bezokolicznik zamyka zdanie. Pasuje też <i>Könnten Sie mir bitte den Termin bestätigen</i>."
+      },
+      {
+        tr: "Chciałbym wiedzieć, czy pan Weber jest dziś w biurze. Czy mógłby Pan do mnie oddzwonić, proszę?",
+        why: "W <i>Büro</i> <b>ü</b> to [y], a akcent pada na <b>ro</b>; w <i>ich</i> <b>ch</b> to [ç]; w <i>wissen</i> <b>w</b> to [v], a <b>ss</b> to bezdźwięczne <b>s</b>."
+      },
+      {
+        tr: "U nas zaczyna się o ósmej, a najpierw rozmawiamy o porządku obrad.",
+        why: "W <i>acht</i> <b>ch</b> po <b>a</b> to [x]; <i>Bei</i> ma <b>ei</b> = [aɪ]; w <i>zuerst</i> <b>z</b> to [ts], a samogłoski <b>u</b> i <b>e</b> wymawia się osobno."
+      }
+    ]
   }
 });

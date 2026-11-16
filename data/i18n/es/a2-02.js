@@ -515,5 +515,540 @@ LINGUAI.addStrings("es", {
         why: "En <i>großen</i> la <b>ß</b> es una <b>s</b> sorda; <i>einem großen Balkon</i> es dativo después de <i>mit</i>, por tanto <b>-en</b>."
       }
     ]
+  },
+  "unit:a2-u06": {
+    title: "En la oficina",
+    grammarNote: "Könnten Sie ...? · preguntas indirectas con ob y palabra interrogativa · carta formal · man · zuerst, dann, danach, außerdem"
+  },
+  "lesson:a2-u06-l1": {
+    theme: "Por teléfono",
+    title: "¿Podría devolverme la llamada?",
+    objectives: [
+      "llamar por teléfono y dejar un recado con Könnten Sie ...?",
+      "hacer una pregunta indirecta con ob o con una palabra interrogativa",
+      "mandar el verbo al final en la oración introducida por ob, wann, wo y dass"
+    ],
+    theory: [
+      {
+        h: "Pedir que te devuelvan la llamada y dejar un recado",
+        p: "Por teléfono, con una persona que no conoces, usas la forma de cortesía: <em>Guten Tag, hier ist Weber. Könnten Sie mich bitte zurückrufen?</em> Para dejar un recado: <em>Könnten Sie Frau Keller etwas ausrichten?</em> Quien contesta suele decir <em>Ich verbinde Sie</em> (le paso) o <em>Frau Keller ist gerade nicht am Platz</em> (no está en su puesto). <em>Zurückrufen</em> y <em>ausrichten</em> son verbos separables: en infinitivo, después de <em>Könnten Sie ...</em>, quedan enteros y van al final."
+      },
+      {
+        h: "Preguntas indirectas: ob y palabra interrogativa",
+        p: "Una pregunta puede entrar dentro de otra oración. Si la pregunta directa es de <strong>sí/no</strong> (<em>Ist Herr Weber im Büro?</em>), la indirecta se introduce con <strong>ob</strong>; si lleva una <strong>palabra interrogativa</strong> (<em>wann, wo, wer, wie, warum</em>), esa palabra se queda y abre la subordinada. En los dos casos el verbo conjugado va <strong>al final</strong> y antes hay una coma: <em>Ich möchte wissen, ob Herr Weber heute im Büro ist. Ich weiß nicht, wann die Besprechung beginnt. Könnten Sie mir sagen, wo Frau Keller ist?</em> Con un verbo separable el prefijo se une de nuevo al verbo: <em>Ich weiß nicht, wann er anruft.</em> Lo mismo vale para <strong>dass</strong>: <em>Könnten Sie ihr sagen, dass ich morgen wieder anrufe?</em>"
+      },
+      {
+        contrast: "En español la pregunta indirecta no tiene un orden fijo: <em>no sé cuándo empieza la reunión</em> y <em>no sé cuándo la reunión empieza</em> son posibles, y el verbo suele ir junto al sujeto o delante de él. En alemán el orden es el de la subordinada, con el verbo conjugado al final: <em>Ich weiß nicht, wann die Besprechung beginnt</em>, no «wann beginnt die Besprechung». Además, el <em>si</em> español sirve para la duda y para la condición: <em>no sé si viene</em> es <em>ob</em>, <em>si viene, ...</em> es <em>wenn</em>. El alemán las separa. Otro contraste es la cortesía: el español usa el condicional con <em>usted</em> (<em>¿podría llamarme?</em>) y el clítico se pega al infinitivo (<em>llamarme</em>); en alemán <em>Könnten Sie</em> es Konjunktiv II y el pronombre va aparte, <em>mich</em>, antes del infinitivo final."
+      },
+      {
+        trap: "Después de <em>ob</em> no se usa <em>wenn</em>: <em>Ich weiß nicht, ob er kommt</em>. Y la coma delante de <em>ob</em>, <em>dass</em> y la palabra interrogativa es obligatoria. Después de <em>Könnten Sie mir sagen</em> la pregunta indirecta ya no es una pregunta directa: <em>Könnten Sie mir sagen, wo Frau Keller ist?</em>, no «wo ist Frau Keller»."
+      },
+      {
+        tip: "Otras fórmulas útiles: <em>Die Leitung ist besetzt</em> (la línea está ocupada), <em>Ich erreiche ihn nicht</em> (no consigo localizarlo), <em>Wie ist Ihre Telefonnummer?</em>. Con la forma de cortesía te quedas con <em>Sie</em> de principio a fin de la llamada. Ojo: <em>Sie</em> lleva el verbo en tercera persona del <strong>plural</strong> (<em>Könnten Sie</em>), mientras que <em>usted</em> lo lleva en singular."
+      }
+    ],
+    grammar: {
+      title: "Könnten Sie ...? y las preguntas indirectas",
+      note: "<b>Könnten Sie</b> + infinitivo al final. Pregunta indirecta: <b>ob</b> o palabra interrogativa, y el verbo conjugado <b>al final</b>. Con <b>dass</b> (una afirmación, no una pregunta) el verbo también va al final: <i>Ich rufe morgen wieder an</i> pasa a <i>..., dass ich morgen wieder anrufe.</i>",
+      table: {
+        head: ["pregunta directa", "pregunta indirecta", "introduce"],
+        rows: [
+          ["Ist Herr Weber im Büro?", "..., ob Herr Weber im Büro ist.", "ob (sí/no)"],
+          ["Wann beginnt die Besprechung?", "..., wann die Besprechung beginnt.", "wann"],
+          ["Wo ist Frau Keller?", "..., wo Frau Keller ist.", "wo"]
+        ]
+      },
+      examples: [
+        { tr: "¿Podría devolverme la llamada, por favor?", note: "zurückrufen queda entero, al final" },
+        { tr: "¿Podría darle un recado a la señora Keller?", note: "ausrichten, al final" },
+        { tr: "Quisiera saber si el señor Weber está hoy en la oficina.", note: "ob: el verbo ist va al final" },
+        { tr: "No sé cuándo empieza la reunión.", note: "wann: el verbo beginnt va al final" },
+        { tr: "¿Podría decirme dónde está la señora Keller?", note: "wo: el verbo ist va al final" },
+        { tr: "¿Podría decirle que mañana vuelvo a llamar?", note: "dass: anrufe se vuelve a unir" }
+      ]
+    },
+    vocab: [
+      "llamar por teléfono",
+      "devolver la llamada",
+      "el recado, el mensaje",
+      "dar un recado, transmitir",
+      "la extensión",
+      "pasar (una llamada), poner en comunicación",
+      "el contestador automático",
+      "localizar, conseguir contactar",
+      "ocupado",
+      "el número de teléfono",
+      "la cita, el plazo",
+      "la línea"
+    ],
+    exercises: [
+      {
+        q: "¿Cómo pides con cortesía que te devuelvan la llamada?",
+        opts: [
+          "Könnten Sie mich bitte zurückrufen?",
+          "Könnten Sie zurückrufen mich bitte?",
+          "Könnten Sie mich bitte zurückrufe?"
+        ],
+        why: "<i>Könnten Sie</i> + complementos + el infinitivo <b>entero</b> al final: <i>zurückrufen</i>."
+      },
+      {
+        tr: "Toda la conjugación de können en Konjunktiv II.",
+        why: "<i>könnte, könntest, könnte, könnten, könntet, könnten</i>: la <b>ö</b> con diéresis y la <b>-e-</b> del Konjunktiv II. <i>Ich</i> y <i>er/sie/es</i> tienen la misma forma, y con <i>Sie</i> se usa <b>könnten</b>."
+      },
+      {
+        q: "Completa: «Ich weiß nicht, ___ Herr Weber heute im Büro ist.» (si)",
+        hint: "pregunta de sí/no",
+        why: "Una pregunta de sí/no se vuelve indirecta con <b>ob</b>, y el verbo <i>ist</i> va al final."
+      },
+      {
+        q: "Completa: «Ich möchte wissen, ___ die Besprechung beginnt.» (cuándo)",
+        hint: "palabra interrogativa",
+        why: "<b>wann</b> es la palabra interrogativa y se queda: <i>..., wann die Besprechung beginnt</i>."
+      },
+      {
+        q: "Une cada palabra con su significado.",
+        pairs: ["llamar por teléfono", "recado", "extensión", "ocupado"]
+      },
+      {
+        tr: "¿Podría devolverme la llamada, por favor?",
+        why: "<i>Könnten Sie mich bitte zurückrufen</i>: el infinitivo entero cierra la frase. También vale <i>Könnten Sie mich zurückrufen, bitte</i>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "¿Podría darle un recado al señor Weber? Quisiera saber si está en la oficina.",
+        why: "<i>Etwas ausrichten</i>: el infinitivo queda entero, al final. <i>Wissen, ob ...</i>: una pregunta de sí/no se vuelve indirecta con <b>ob</b>."
+      },
+      {
+        q: "Estás al teléfono con una empresa.",
+        setting: "Llamas para hablar con la señora Keller.",
+        lines: [
+          { tr: "Empresa Brandt, buenos días." },
+          {
+            tr: "Preséntate y pide que te pasen con la señora Keller.",
+            answerTr: "Buenos días, soy Weber. ¿Podría pasarme con la señora Keller?"
+          },
+          { tr: "La señora Keller no está en su puesto. ¿Le doy algún recado?" },
+          {
+            tr: "Responde que sí y pide que le digan que mañana vuelves a llamar.",
+            answerTr: "Sí, gracias. ¿Podría decirle que mañana vuelvo a llamar?"
+          }
+        ]
+      },
+      {
+        tr: "Buenos días, soy Weber. ¿Podría devolverme la llamada, por favor? Quisiera saber si la cita es el lunes.",
+        why: "En <i>zurückrufen</i> el acento cae en <b>rück</b> (<b>ü</b> breve [ʏ]); en <i>Könnten</i> la <b>ö</b> es breve y abierta [œ]; <i>Weber</i> empieza con <b>w</b> = [v], no [w]."
+      },
+      {
+        tr: "¿Podría decirle a la señora Keller que mañana vuelvo a llamar?",
+        why: "En <i>wieder</i> la <b>ie</b> es una <b>i</b> larga [iː] y la <b>w</b> inicial se lee [v]; en <i>anrufe</i> el acento cae en <b>an</b> y el verbo está al final después de <i>dass</i>."
+      }
+    ]
+  },
+  "lesson:a2-u06-l2": {
+    theme: "Escribir un correo",
+    title: "Estimada señora Keller",
+    objectives: [
+      "abrir y cerrar un correo formal con Sehr geehrte Frau ... y Mit freundlichen Grüßen",
+      "escribir las formas de cortesía Sie, Ihr, Ihnen con mayúscula",
+      "pedir una confirmación con Könnten Sie ...?"
+    ],
+    theory: [
+      {
+        h: "Apertura y cierre de un correo formal",
+        p: "Un correo formal tiene una fórmula fija. Al principio: <strong>Sehr geehrte Frau Keller,</strong> a una mujer, <strong>Sehr geehrter Herr Weber,</strong> a un hombre, <strong>Sehr geehrte Damen und Herren,</strong> a varias personas o a un destinatario desconocido. Se escribe <em>Frau</em> o <em>Herr</em> y el apellido, sin el nombre de pila. Al final: <strong>Mit freundlichen Grüßen</strong> y debajo el nombre, sin coma después de la despedida. El cuerpo del mensaje es breve: <em>Vielen Dank für Ihre E-Mail. Im Anhang finden Sie die Datei. Könnten Sie mir den Termin bitte bestätigen?</em>"
+      },
+      {
+        contrast: "El español abre con <em>Estimada señora Keller:</em> (con dos puntos) o <em>Estimado señor Weber:</em> y cierra con <em>Atentamente,</em> o <em>Un cordial saludo</em>. El alemán usa <em>Sehr geehrte</em> (literalmente «muy honrada»), un adjetivo sin artículo: por eso lleva <strong>-e</strong> con <em>Frau</em> y <strong>-er</strong> con <em>Herr</em>. Después de la coma del saludo, la línea siguiente suele empezar con minúscula (<em>..., vielen Dank für ...</em>), salvo que la primera palabra sea un sustantivo. Para una mujer adulta se usa <em>Frau</em>, haya o no estado casada: <em>Fräulein</em> se considera anticuado. Con <em>du</em> se abre con <em>Liebe Anna,</em> o <em>Lieber Tim,</em> y se cierra con <em>Viele Grüße</em>."
+      },
+      {
+        trap: "Las formas de cortesía llevan mayúscula en las cartas: <em>Sie</em>, <em>Ihr</em>, <em>Ihre</em> e <em>Ihnen</em> en los correos formales se escriben con mayúscula, y distinguen «usted, su» de <em>sie</em> e <em>ihre</em> (ella, ellos; su de ella, su de ellos). En español <em>usted</em> se escribe con minúscula (solo la abreviatura <em>Ud.</em> lleva mayúscula), así que aquí no hay que trasladar el hábito. <em>Mit freundlichen Grüßen</em> está en plural y en dativo: no se escribe «Mit freundliche Gruß»."
+      },
+      {
+        tip: "Otras fórmulas: <em>Vielen Dank für Ihre schnelle Antwort</em>, <em>Im Anhang finden Sie ...</em>, <em>Könnten Sie ...?</em> En el asunto (<em>Betreff</em>) bastan pocas palabras, por ejemplo <em>Termin am Montag</em>."
+      }
+    ],
+    grammar: {
+      title: "Registro formal: el correo",
+      note: "Apertura <b>Sehr geehrte Frau</b> / <b>Sehr geehrter Herr</b> + apellido; cierre <b>Mit freundlichen Grüßen</b>. <b>Sie, Ihre, Ihnen</b> con mayúscula.",
+      table: {
+        head: ["parte del correo", "fórmula", "significado"],
+        rows: [
+          ["apertura (mujer)", "Sehr geehrte Frau Keller,", "Estimada señora Keller"],
+          ["apertura (hombre)", "Sehr geehrter Herr Weber,", "Estimado señor Weber"],
+          ["apertura (varias personas)", "Sehr geehrte Damen und Herren,", "Estimadas señoras y estimados señores"],
+          ["cuerpo", "Vielen Dank für Ihre E-Mail.", "Gracias por su correo"],
+          ["cierre", "Mit freundlichen Grüßen", "Un cordial saludo"]
+        ]
+      },
+      examples: [
+        { tr: "Estimada señora Keller:", note: "Frau: geehrt + e" },
+        { tr: "Estimado señor Weber:", note: "Herr: geehrt + er" },
+        { tr: "Gracias por su correo.", note: "Ihre con mayúscula" },
+        { tr: "En el adjunto encontrará el archivo.", note: "verbo en segunda posición: finden Sie" },
+        { tr: "¿Podría confirmarme la cita, por favor?", note: "Könnten Sie ... bestätigen" },
+        { tr: "Un cordial saludo", note: "Grüßen, plural y dativo" }
+      ]
+    },
+    vocab: [
+      "el correo electrónico",
+      "el asunto (del correo)",
+      "la fórmula de saludo",
+      "el saludo, la despedida",
+      "el archivo adjunto",
+      "el archivo",
+      "el remitente",
+      "enviar, mandar",
+      "adjuntar",
+      "confirmar",
+      "amable, cordial",
+      "formal"
+    ],
+    exercises: [
+      {
+        q: "¿Qué apertura es correcta para un correo a una señora?",
+        opts: ["Sehr geehrter Frau Keller,", "Sehr geehrte Frau Keller,", "Sehr geehrt Frau Keller,"],
+        why: "<i>Frau</i> es femenino, así que el adjetivo lleva <b>-e</b>: <i>Sehr geehrte Frau Keller,</i>. Con <i>Herr</i> sería <i>geehrter</i>."
+      },
+      {
+        q: "¿Qué despedida es correcta?",
+        opts: ["Mit freundlichen Grüßen", "Mit freundliche Grüße", "Mit freundlichem Grüßen"],
+        why: "<i>Mit</i> pide dativo y <i>Grüße</i> es plural: <b>Mit freundlichen Grüßen</b>."
+      },
+      {
+        q: "Completa: «Sehr ___ Herr Weber,» (geehrt, con la terminación)",
+        hint: "masculino, sin artículo",
+        why: "Con <i>Herr</i> el adjetivo sin artículo lleva <b>-er</b>: <i>Sehr geehrter Herr Weber,</i>."
+      },
+      {
+        q: "Completa: «Vielen Dank für ___ E-Mail.» (su, con mayúscula)",
+        hint: "forma de cortesía",
+        why: "<b>Ihre</b> con mayúscula es el posesivo de cortesía: su (de usted). <i>Ihre</i>, <i>Ihr</i> e <i>Ihnen</i> se escriben así en los correos formales."
+      },
+      {
+        q: "Une cada palabra con su significado.",
+        pairs: ["asunto", "adjunto", "remitente", "archivo"]
+      },
+      {
+        tr: "En el adjunto encontrará el archivo.",
+        why: "<i>Im Anhang finden Sie die Datei</i>: el verbo está en segunda posición. También valen <i>Sie finden im Anhang die Datei</i>, <i>Sie finden die Datei im Anhang</i> y <i>Die Datei finden Sie im Anhang</i>."
+      },
+      {
+        tr: "Estimada señora Keller, gracias por su correo.",
+        why: "<i>Sehr geehrte Frau Keller, vielen Dank für Ihre E-Mail</i>. También vale <i>herzlichen Dank</i> o <i>danke</i>; <i>Ihre</i> se escribe con mayúscula."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Estimada señora Keller, gracias por su correo. Un cordial saludo",
+        why: "<i>Sehr geehrte</i> (femenino), <i>Ihre</i> (su, con mayúscula) y <i>Mit freundlichen Grüßen</i> (dativo plural)."
+      },
+      {
+        tr: "Estimada señora Keller, gracias por su correo. En el adjunto encontrará el archivo. Un cordial saludo",
+        why: "En <i>Grüßen</i> la <b>ü</b> es larga [yː] y la <b>ß</b> es una <b>s</b> sorda; en <i>geehrte</i> la sílaba <b>ge</b> es débil y el acento cae en <b>ehr</b>, con la <b>e</b> larga."
+      },
+      {
+        tr: "¿Podría confirmarme la cita, por favor?",
+        why: "En <i>Termin</i> el acento cae en la última sílaba, con la <b>i</b> larga; en <i>bestätigen</i> la <b>st</b> después de <b>be-</b> se lee [ʃt] y el acento cae en <b>stä</b>."
+      }
+    ]
+  },
+  "lesson:a2-u06-l3": {
+    theme: "Costumbres en la oficina",
+    title: "Aquí se hace así",
+    objectives: [
+      "usar man con el verbo en tercera persona del singular",
+      "describir reglas y costumbres del lugar de trabajo",
+      "usar man con muss, darf y kann"
+    ],
+    theory: [
+      {
+        h: "man: una persona cualquiera",
+        p: "<strong>man</strong> indica una persona cualquiera, la gente en general, y se usa para reglas y costumbres: <em>Bei uns beginnt man um acht Uhr. Hier duzt man sich. In der Mittagspause isst man in der Kantine.</em> El verbo va en <strong>tercera persona del singular</strong>, aunque el sentido sea plural. Los verbos que cambian de vocal mantienen el cambio: <em>man isst, man liest, man fährt, man spricht</em>. Con los modales: <em>man muss, man darf, man kann</em>: <em>Hier darf man nicht rauchen. Man muss pünktlich sein.</em> Una pregunta frecuente: <em>Wie sagt man das auf Deutsch?</em>"
+      },
+      {
+        contrast: "El español usa el <em>se</em> impersonal (<em>aquí se come a las doce</em>) y la pasiva refleja (<em>se venden libros</em>, donde el verbo concuerda con <em>libros</em>). En alemán los dos casos se dicen con <em>man</em>, que es siempre el sujeto: <em>Man isst um zwölf Uhr. Man verkauft Bücher.</em> El verbo concuerda con <em>man</em>, no con el complemento. Hay un contraste más: el español no necesita ninguna palabra como sujeto (<em>aquí se trabaja hasta las cinco</em>), pero en alemán hace falta <em>man</em>: <em>Hier arbeitet man bis fünf Uhr.</em> También existen <em>uno</em> y la tercera persona del plural (<em>dicen que...</em>), pero <em>man</em> no se parece a <em>uno</em> en registro: es de uso corriente. Y con un reflexivo, el español dice <em>aquí se tutea</em> con un solo <em>se</em>; el alemán usa <em>man</em> y además <em>sich</em>: <em>Hier duzt man sich</em>."
+      },
+      {
+        trap: "<em>man</em> no es <em>der Mann</em> (el hombre): <em>man</em> lleva una sola <strong>n</strong> y minúscula. El verbo sigue en tercera persona del singular: <em>man sagt</em>, no «man sagen», y con los modales <em>man muss</em>, no «man müssen». Ojo con <em>poder</em>: el español <em>no se puede fumar</em> cubre «está prohibido» y «es imposible», mientras que el alemán tiene dos verbos. <em>Hier darf man nicht rauchen</em> dice que no está permitido; <em>Hier kann man nicht rauchen</em> diría que no es posible hacerlo. Y para «hay que» sirve <em>man muss</em>."
+      },
+      {
+        tip: "Para introducir una regla de la oficina abre con <em>Hier</em>, <em>Bei uns</em> o <em>In der Firma</em>; el verbo se queda en segunda posición: <em>Bei uns beginnt man um acht Uhr.</em> Para tutear o tratar de usted: <em>duzen</em> y <em>siezen</em>: <em>Den Chef siezt man hier.</em>"
+      }
+    ],
+    grammar: {
+      title: "man + tercera persona del singular",
+      note: "<b>man</b> es siempre el sujeto; el verbo queda en <b>tercera persona del singular</b>: <b>man isst, man muss, man darf</b>.",
+      table: {
+        head: ["verbo", "con man", "ejemplo"],
+        rows: [
+          ["essen", "man isst", "In der Kantine isst man warm."],
+          ["sagen", "man sagt", "Wie sagt man das auf Deutsch?"],
+          ["müssen", "man muss", "Man muss pünktlich sein."],
+          ["dürfen", "man darf", "Hier darf man nicht rauchen."],
+          ["duzen", "man duzt sich", "Hier duzt man sich."]
+        ]
+      },
+      examples: [
+        { tr: "Aquí nos tuteamos.", note: "man duzt sich: tercera persona del singular" },
+        { tr: "En nuestra empresa se empieza a las ocho.", note: "inversión después de Bei uns: beginnt man" },
+        { tr: "En la pausa del almuerzo se come en el comedor.", note: "essen cambia de vocal: man isst" },
+        { tr: "Aquí no está permitido fumar.", note: "man darf, con nicht" },
+        { tr: "¿Cómo se dice esto en alemán?", note: "man sagt, no man sagen" },
+        { tr: "Hay que ser puntual.", note: "man muss" }
+      ]
+    },
+    vocab: [
+      "la oficina",
+      "el colega, el compañero",
+      "la colega, la compañera",
+      "el jefe",
+      "la pausa del almuerzo",
+      "el comedor, la cantina",
+      "la impresora",
+      "el horario de trabajo",
+      "puntual",
+      "tutear",
+      "tratar de usted",
+      "habitual, de costumbre"
+    ],
+    exercises: [
+      {
+        q: "¿Qué frase es correcta?",
+        opts: [
+          "Hier arbeiten man bis fünf Uhr.",
+          "Hier arbeitet man bis fünf Uhr.",
+          "Hier arbeitest man bis fünf Uhr."
+        ],
+        why: "Con <i>man</i> el verbo va en tercera persona del singular: <b>arbeitet</b>."
+      },
+      {
+        q: "¿Cómo dices «En Alemania se come temprano»?",
+        opts: [
+          "In Deutschland isst man früh.",
+          "In Deutschland essen man früh.",
+          "In Deutschland esst man früh."
+        ],
+        why: "<i>Essen</i> cambia la vocal en la tercera persona del singular: <i>er isst</i>, así que <b>man isst</b>."
+      },
+      {
+        q: "¿Qué frases son correctas?",
+        opts: [
+          "Man darf hier nicht rauchen.",
+          "Man muss pünktlich sein.",
+          "Man müssen pünktlich sein.",
+          "Wie sagt man das auf Deutsch?",
+          "Man fahren mit dem Bus."
+        ],
+        why: "Con <i>man</i> también el modal va en tercera persona del singular: <i>man muss</i>, no «man müssen». <i>Man fahren</i> es incorrecto: hace falta <i>man fährt</i>."
+      },
+      {
+        q: "Completa: «In der Kantine ___ man mittags warm.» (essen)",
+        hint: "tercera persona del singular, cambia la vocal",
+        why: "<b>isst</b>: <i>essen</i> cambia <i>e</i> por <i>i</i>, y después de <i>man</i> se usa esta forma."
+      },
+      {
+        q: "Completa: «Wie ___ man das auf Deutsch?» (sagen)",
+        hint: "tercera persona del singular",
+        why: "<b>sagt</b>: <i>man</i> pide la tercera persona del singular."
+      },
+      {
+        tr: "En nuestra empresa se empieza a las ocho.",
+        why: "<i>Bei uns beginnt man um acht Uhr</i>. También valen <i>Man beginnt bei uns um acht Uhr</i> y <i>Um acht Uhr beginnt man bei uns</i>: el verbo se queda en segunda posición."
+      },
+      {
+        tr: "Aquí nos tuteamos.",
+        why: "<i>Hier duzt man sich</i>. También vale <i>Man duzt sich hier</i>. <i>Sich</i> es el reflexivo de <i>man</i>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Aquí hay que ser puntual y no se puede fumar.",
+        why: "<i>Hier muss man pünktlich sein, und man darf nicht rauchen.</i> Para «no se puede fumar» (no está permitido) el alemán dice <i>man darf nicht rauchen</i>. <i>Man kann nicht rauchen</i> diría en cambio que fumar es imposible, no que está prohibido."
+      },
+      {
+        tr: "En nuestra empresa se empieza a las ocho. En la pausa del almuerzo se come en el comedor. Aquí nos tuteamos.",
+        why: "En <i>isst</i> la <b>ss</b> es una <b>s</b> sorda y la <b>i</b> es breve; en <i>Kantine</i> el acento cae en <b>ti</b>, con la <b>i</b> larga [kanˈtiːnə]."
+      },
+      {
+        tr: "Aquí hay que ser puntual, y en la oficina no se puede fumar.",
+        why: "En <i>pünktlich</i> la <b>ü</b> es breve [ʏ], la <b>n</b> delante de <b>k</b> es nasal velar [ŋ] y la <b>ch</b> final después de <b>i</b> es [ç]."
+      }
+    ]
+  },
+  "lesson:a2-u06-l4": {
+    theme: "Reunión",
+    title: "En la reunión",
+    objectives: [
+      "ordenar las intervenciones con zuerst, dann, danach y außerdem",
+      "poner el verbo justo después de estas palabras, antes del sujeto",
+      "hacer una propuesta y dar la conformidad"
+    ],
+    theory: [
+      {
+        h: "zuerst, dann, danach, außerdem",
+        p: "<strong>zuerst</strong> (primero, ante todo), <strong>dann</strong> (luego), <strong>danach</strong> (después, a continuación) y <strong>außerdem</strong> (además) pueden abrir una oración. Cuando ocupan la <strong>primera posición</strong>, el verbo conjugado viene <strong>justo después</strong> y el sujeto lo sigue: <em>Zuerst besprechen wir die Tagesordnung. Dann diskutieren wir den Vorschlag. Danach schreibt Anna das Protokoll. Außerdem brauchen wir einen neuen Drucker.</em> También pueden ir más adelante, después del sujeto: <em>Wir besprechen zuerst die Tagesordnung.</em> Para una propuesta: <em>Ich schlage vor, dass wir einen neuen Termin machen.</em> Para dar la conformidad: <em>Ich bin einverstanden. Ich stimme zu.</em>"
+      },
+      {
+        contrast: "En español <em>primero, luego, después, además</em> no cambian el orden: <em>primero hablamos de la propuesta</em>, y el sujeto puede ir antes o después del verbo, o incluso omitirse. En alemán, cuando estas palabras abren la oración, el verbo conjugado queda en segunda posición: <em>Zuerst besprechen wir ...</em>, no «Zuerst wir besprechen». Y el pronombre no se puede omitir: <em>wir</em> tiene que estar. Atención a <em>antes</em> y <em>después</em>: «primero» es <em>zuerst</em>, pero «antes de la reunión» es <em>vor der Besprechung</em> (<em>vor</em> + dativo); y «después de la reunión» es <em>nach der Besprechung</em>, mientras que el adverbio «después» es <em>danach</em>."
+      },
+      {
+        trap: "Con <em>zuerst, dann, danach, außerdem</em> delante, <em>wir besprechen</em> se convierte en <em>besprechen wir</em>. El verbo separable sigue dividido: <em>Danach fängt Anna an.</em> Después de <em>dass</em>, en cambio, el verbo conjugado va al final: <em>Ich schlage vor, dass wir einen neuen Termin machen.</em> Después de <em>glauben</em> y <em>meinen</em> también se puede omitir <em>dass</em>, y entonces el verbo vuelve a la segunda posición: <em>Ich meine, wir machen einen neuen Termin.</em>"
+      },
+      {
+        tip: "Para discrepar con educación: <em>Das sehe ich anders.</em> Para pedir la palabra o una pausa: <em>Ich habe eine Frage. Könnten wir eine Pause machen?</em> Una lista en tres tiempos se construye con <em>zuerst, dann, danach</em>, y un punto más con <em>außerdem</em>."
+      }
+    ],
+    grammar: {
+      title: "zuerst, dann, danach, außerdem: el verbo justo después",
+      note: "Con <b>zuerst, dann, danach, außerdem</b> en primera posición el verbo conjugado va en <b>segundo lugar</b> y el sujeto viene después.",
+      table: {
+        head: ["palabra", "significado", "ejemplo"],
+        rows: [
+          ["zuerst", "primero, ante todo", "Zuerst besprechen wir die Tagesordnung."],
+          ["dann", "luego", "Dann diskutieren wir den Vorschlag."],
+          ["danach", "después, a continuación", "Danach schreibt Anna das Protokoll."],
+          ["außerdem", "además", "Außerdem brauchen wir einen neuen Drucker."]
+        ]
+      },
+      examples: [
+        { tr: "Primero hablamos del orden del día.", note: "zuerst: verbo + sujeto" },
+        { tr: "Luego discutimos la propuesta.", note: "dann: diskutieren wir" },
+        { tr: "Después Anna escribe el acta.", note: "danach: schreibt Anna" },
+        { tr: "Además necesitamos una impresora nueva.", note: "außerdem: brauchen wir" },
+        { tr: "Propongo fijar una nueva fecha.", note: "dass: el verbo va al final" },
+        { tr: "Estoy de acuerdo.", note: "einverstanden con sein" }
+      ]
+    },
+    vocab: [
+      "la reunión",
+      "la propuesta",
+      "el orden del día",
+      "el resultado",
+      "el acta",
+      "el punto",
+      "proponer",
+      "estar de acuerdo, aprobar",
+      "de acuerdo",
+      "primero, ante todo",
+      "después, a continuación",
+      "además"
+    ],
+    exercises: [
+      {
+        q: "¿Qué frase es correcta?",
+        opts: [
+          "Zuerst wir besprechen die Tagesordnung.",
+          "Zuerst besprechen wir die Tagesordnung.",
+          "Zuerst wir die Tagesordnung besprechen."
+        ],
+        why: "Con <i>zuerst</i> en primera posición el verbo viene justo después, luego el sujeto: <b>Zuerst besprechen wir ...</b>."
+      },
+      {
+        q: "Completa: «Zuerst besprechen wir die Tagesordnung, ___ diskutieren wir den Vorschlag.» (luego)",
+        hint: "dos palabras posibles",
+        why: "Valen <b>dann</b> y <b>danach</b>: las dos abren la oración y el verbo viene justo después."
+      },
+      {
+        q: "Completa: «Außerdem ___ wir einen neuen Drucker.» (brauchen)",
+        hint: "presente, wir",
+        why: "<b>brauchen</b>: después de <i>außerdem</i> el verbo va en segunda posición, luego <i>wir</i>."
+      },
+      {
+        q: "Une cada palabra con su significado.",
+        pairs: ["propuesta", "orden del día", "resultado", "acta"]
+      },
+      {
+        tr: "Después, Anna escribe el acta.",
+        why: "<i>Danach schreibt Anna das Protokoll</i>: el verbo viene justo después de <i>danach</i>. También valen <i>Anna schreibt danach das Protokoll</i>, <i>Anna schreibt das Protokoll danach</i> y <i>Das Protokoll schreibt Anna danach</i>."
+      },
+      {
+        tr: "Además tengo una pregunta.",
+        why: "<i>Außerdem habe ich eine Frage</i>: el verbo viene antes del sujeto. También vale <i>Ich habe außerdem eine Frage</i>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Primero hablamos de la propuesta. Luego Anna escribe el acta.",
+        why: "<i>Zuerst besprechen wir den Vorschlag. Dann schreibt Anna das Protokoll.</i> Para «luego» valen <i>dann</i> y <i>danach</i>."
+      },
+      {
+        q: "Estás en una reunión.",
+        setting: "Tu jefe te pregunta cómo empezar.",
+        lines: [
+          { tr: "¡Buenos días! Hoy tenemos mucho trabajo. ¿Cómo empezamos?" },
+          {
+            tr: "Responde que primero habláis del orden del día.",
+            answerTr: "Primero hablamos del orden del día."
+          },
+          { tr: "Bien. ¿Y después?" },
+          {
+            tr: "Responde que luego discutís la propuesta del señor Weber.",
+            answerTr: "Después discutimos la propuesta del señor Weber."
+          }
+        ]
+      },
+      {
+        tr: "Primero hablamos del orden del día. Después discutimos la propuesta. Además Anna escribe el acta.",
+        why: "En <i>Besprechung</i> la <b>sp</b> después de <b>Be-</b> se lee [ʃp] y la <b>ch</b> es [ç]; en <i>Protokoll</i> el acento cae en la última sílaba; en <i>außerdem</i> la <b>ß</b> es una <b>s</b> sorda."
+      },
+      {
+        tr: "Propongo discutir primero el orden del día.",
+        why: "En <i>vor</i> la <b>v</b> se lee [f] y en <i>schlage</i> la <b>sch</b> es [ʃ]; <i>zuerst</i> se lee [tsuˈʔeːɐ̯st], con <b>z</b> = [ts]."
+      }
+    ]
+  },
+  "lesson:a2-u06-test": {
+    theme: "Verificación",
+    title: "Test: En la oficina",
+    objectives: ["comprobar las peticiones corteses, las preguntas indirectas, la carta formal, man y los conectores de secuencia"],
+    theory: [
+      {
+        p: "Diez preguntas sobre la unidad. Se aprueba con el 70%. No vuelvas a mirar las lecciones mientras respondes: si no recuerdas algo, es mejor volver a repasar."
+      }
+    ],
+    exercises: [
+      {
+        tr: "Conjuga können en Konjunktiv II: du, wir, ihr.",
+        why: "<i>könntest, könnten, könntet</i>: la <b>ö</b> con diéresis y la <b>-e-</b> del Konjunktiv II."
+      },
+      {
+        q: "Completa: «Ich weiß nicht, ___ Herr Weber im Büro ist.» (si)",
+        hint: "pregunta de sí/no",
+        why: "Una pregunta de sí/no se vuelve indirecta con <b>ob</b>, y el verbo va al final."
+      },
+      {
+        q: "Completa: «Hier ___ man pünktlich sein.» (müssen)",
+        hint: "tercera persona del singular",
+        why: "<b>muss</b>: con <i>man</i> el modal va en tercera persona del singular."
+      },
+      {
+        q: "Completa: «Sehr ___ Frau Keller,» (geehrt, con la terminación)",
+        hint: "femenino, sin artículo",
+        why: "Con <i>Frau</i> el adjetivo sin artículo lleva <b>-e</b>: <i>geehrte</i>."
+      },
+      {
+        q: "Completa: «Zuerst ___ wir die Tagesordnung.» (besprechen)",
+        hint: "verbo antes del sujeto",
+        why: "Después de <i>zuerst</i> viene el verbo, luego el sujeto: <b>besprechen wir</b>."
+      },
+      {
+        q: "¿Qué frase es la petición cortés?",
+        opts: ["Rufen Sie mich zurück!", "Könnten Sie mich bitte zurückrufen?", "Sie rufen mich zurück."],
+        why: "<b>Könnten Sie ...?</b> con el infinitivo al final es la fórmula cortés; las otras dos son una orden y una afirmación."
+      },
+      {
+        q: "Une cada palabra con su significado.",
+        pairs: ["recado", "asunto (del correo)", "reunión", "colega"]
+      },
+      {
+        tr: "¿Podría confirmarme la cita, por favor?",
+        why: "<i>Könnten Sie mir den Termin bitte bestätigen</i>: el infinitivo cierra la frase. También vale <i>Könnten Sie mir bitte den Termin bestätigen</i>."
+      },
+      {
+        tr: "Quisiera saber si el señor Weber está hoy en la oficina. ¿Podría devolverme la llamada, por favor?",
+        why: "En <i>Büro</i> la <b>ü</b> es [y] y el acento cae en <b>ro</b>; en <i>ich</i> la <b>ch</b> es [ç]; en <i>wissen</i> la <b>w</b> es [v] y la <b>ss</b> es una <b>s</b> sorda."
+      },
+      {
+        tr: "En nuestra empresa se empieza a las ocho, y lo primero es hablar del orden del día.",
+        why: "En <i>acht</i> la <b>ch</b> después de <b>a</b> es [x]; <i>Bei</i> tiene <b>ei</b> = [aɪ]; en <i>zuerst</i> la <b>z</b> es [ts] y las vocales <b>u</b> y <b>e</b> se pronuncian separadas."
+      }
+    ]
   }
 });
