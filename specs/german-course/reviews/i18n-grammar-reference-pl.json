@@ -1,25 +1,15 @@
 {
-  "bundleHash": "fb9a5454de24124c1a5305b3bfeabda63ffb28fc326340518fbd3f3121e141b6",
+  "bundleHash": "39db205245e38c9f1cbae36a0601ba173b9f5bfae51ce666e99acea597728399",
   "findings": [
     {
-      "kind": "grammatica",
-      "msg": "La nota afferma che «denn» non può aprire una frase. Può invece iniziare una nuova frase ortografica che spiega quella precedente: «Ich bleibe zu Hause. Denn ich bin müde.» Precisare che «denn» collega un'enunciazione a una precedente e mantiene l'ordine della principale.",
-      "path": "content[\"ref:g-konnektoren\"].body"
+      "kind": "chiarezza didattica",
+      "msg": "«Dla dokładnej godziny: Um acht Uhr» confonde l'ora attuale con l'orario di un evento. Alla domanda «Wie spät ist es?» si risponde «Es ist acht Uhr», anche per indicare un'ora esatta. Presentare «Um acht Uhr» come risposta a «Wann …?» o «Um wie viel Uhr …?», con un esempio completo.",
+      "path": "content[\"ref:g-temporalangaben\"].body"
     },
     {
-      "kind": "grammatica",
-      "msg": "«Sama intonacja nie wystarcza» esclude erroneamente le domande con ordine dichiarativo, comuni anche nella conversazione elementare: «Du wohnst in Berlin?» Spiegare che l'inversione è il modello neutro delle domande sì/no, mentre l'ordine dichiarativo può esprimere una richiesta di conferma.",
-      "path": "content[\"ref:g-satz-v2\"].body"
-    },
-    {
-      "kind": "grammatica",
-      "msg": "La nota definisce «Ich kann gehen heute Abend ins Kino» un errore assoluto. In tedesco i sintagmi preposizionali possono occupare il Nachfeld dopo l'infinito, sebbene questo ordine sia marcato e inadatto come modello iniziale. Presentare «Ich kann heute Abend ins Kino gehen» come ordine neutro da usare ad A1, senza dichiarare universalmente agrammaticale la collocazione dopo l'infinito.",
-      "path": "content[\"ref:g-modalverben\"].body"
-    },
-    {
-      "kind": "significato",
-      "msg": "«Ihre Mutter» non significa soltanto «jej matka»: «ihre Mutter» può significare anche «ich matka», riferito a più possessori. Integrare entrambe le interpretazioni e ricordare «Ihre Mutter» per la forma di cortesia; la tabella presenta già queste distinzioni, ma la nota le cancella.",
-      "path": "content[\"ref:g-possessiv\"].body"
+      "kind": "regola grammaticale troppo assoluta",
+      "msg": "«Po niemiecku dopełnienie musi być wyrażone» esclude erroneamente risposte ellittiche naturali come «Hast du einen Bruder? – Ja, habe ich». Precisare in polacco che nella risposta completa «Ja, ich habe einen» il pronome sostituisce il nome, mentre nelle risposte brevi il complemento può essere sottinteso.",
+      "path": "content[\"ref:g-indefinitpron\"].body"
     }
   ],
   "lang": "pl",
