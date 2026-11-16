@@ -266,5 +266,290 @@ LINGUAI.addUnits("A1", [
         { t: "speak", it: "Meine Schwester ist größer als ich und sehr sympathisch." }
       ]
     }
+  },
+  {
+    id: "a1-u09",
+    icon: "🎬",
+    titleIt: "Freizeit",
+    lessons: [
+      {
+        id: "a1-u09-l1",
+        tags: ["g-praesens", "g-temporalangaben"],
+        cefr: "A1",
+        titleIt: "Was machst du am Wochenende?",
+        grammar: {
+          examples: [
+            { it: "Was machst du am Wochenende?" },
+            { it: "Am Samstag spiele ich Fußball." },
+            { it: "Samstags schwimme ich gern." },
+            { it: "Am Sonntag wandere ich mit Freunden." },
+            { it: "Am Abend koche ich für meine Familie." },
+            { it: "Im Winter tanzen wir oft." }
+          ]
+        },
+        vocab: [
+          { it: "das Wochenende", plural: "die Wochenenden", ex: "Am Wochenende bin ich zu Hause." },
+          { it: "das Hobby", plural: "die Hobbys", ex: "Ich habe viele Hobbys." },
+          { it: "das Konzert", plural: "die Konzerte", ex: "Am Samstag besuche ich ein Konzert." },
+          { it: "der Film", plural: "die Filme", ex: "Ich sehe gern Filme." },
+          { it: "das Buch", plural: "die Bücher", ex: "Ich lese gern Bücher." },
+          { it: "der Ausflug", plural: "die Ausflüge", ex: "Am Sonntag machen wir einen Ausflug." },
+          { it: "spielen", ex: "Ich spiele gern Fußball." },
+          { it: "schwimmen", ex: "Ich schwimme gern." },
+          { it: "wandern", ex: "Wir wandern am Sonntag." },
+          { it: "kochen", ex: "Ich koche am Sonntag für meine Familie." },
+          { it: "tanzen", ex: "Am Abend tanzen wir." },
+          { it: "samstags", ex: "Samstags besuche ich meine Großmutter." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 2 },
+          { t: "fill", a: ["spiele"] },
+          { t: "fill", a: ["am"] },
+          {
+            t: "match",
+            pairs: [{ it: "spielen" }, { it: "schwimmen" }, { it: "wandern" }, { it: "kochen" }]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Am Samstag spiele ich Fußball und am Sonntag wandere ich",
+              "Am Samstag spiele ich Fußball, aber am Sonntag wandere ich"
+            ]
+          },
+          {
+            t: "cloze",
+            text: "Was {{1}} du am Wochenende? Ich {{2}} Freunde und wir {{3}} ins Kino.",
+            gaps: [["machst"], ["treffe"], ["gehen"]]
+          },
+          {
+            t: "dialogue",
+            lines: [
+              { sp: "A", it: "Hallo! Was machst du am Wochenende?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Am Samstag spiele ich Fußball.",
+                  "Am Samstag spielst ich Fußball.",
+                  "Am Samstag ich spiele Fußball."
+                ],
+                a: 0
+              },
+              { sp: "A", it: "Und am Sonntag?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Am Sonntag ich wandere.",
+                  "Am Sonntag wandere ich.",
+                  "Am Sonntag wanderst ich."
+                ],
+                a: 1
+              }
+            ]
+          },
+          { t: "listen", it: "Am Samstag spiele ich Fußball und am Sonntag koche ich für meine Familie." },
+          { t: "speak", it: "Am Samstag tanze ich und am Sonntag wandere ich." }
+        ]
+      },
+      {
+        id: "a1-u09-l2",
+        tags: ["g-es"],
+        cefr: "A1",
+        titleIt: "Es regnet",
+        grammar: {
+          examples: [
+            { it: "Es regnet." },
+            { it: "Im Winter schneit es oft." },
+            { it: "Heute ist es sehr kalt." },
+            { it: "Heute regnet es nicht." },
+            { it: "Wie ist das Wetter?" },
+            { it: "Es sind zwanzig Grad." }
+          ]
+        },
+        vocab: [
+          { it: "das Wetter", plural: "-", ex: "Wie ist das Wetter heute?" },
+          { it: "regnen", ex: "Heute regnet es." },
+          { it: "schneien", ex: "Im Winter schneit es oft." },
+          { it: "die Sonne", plural: "-", ex: "Die Sonne scheint." },
+          { it: "die Wolke", plural: "die Wolken", ex: "Am Himmel sind viele Wolken." },
+          { it: "der Wind", plural: "die Winde", ex: "Heute ist der Wind kalt." },
+          { it: "kalt", ex: "Es ist kalt." },
+          { it: "warm", ex: "Im Sommer ist es warm." },
+          { it: "heiß", ex: "Heute ist es sehr heiß." },
+          { it: "sonnig", ex: "Morgen ist es sonnig." },
+          { it: "windig", ex: "Am Meer ist es oft windig." },
+          { it: "der Grad", plural: "die Grad", ex: "Es sind zwanzig Grad." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 1 },
+          { t: "fill", a: ["schneit"] },
+          { t: "fill", a: ["es"] },
+          {
+            t: "match",
+            pairs: [{ it: "kalt" }, { it: "heiß" }, { it: "sonnig" }, { it: "windig" }]
+          },
+          {
+            t: "order",
+            tokens: ["Heute", "ist", "es", "sehr", "kalt"],
+            a: ["Heute ist es sehr kalt", "Es ist heute sehr kalt"]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Heute regnet es und es ist kalt",
+              "Es regnet heute und es ist kalt",
+              "Heute ist es kalt und es regnet",
+              "Es ist heute kalt und es regnet"
+            ]
+          },
+          {
+            t: "cloze",
+            text: "Wie ist das {{1}} heute? {{2}} regnet und es ist {{3}}.",
+            gaps: [["Wetter"], ["Es"], ["kalt"]]
+          },
+          { t: "listen", it: "Heute scheint die Sonne, aber es ist nicht warm." },
+          { t: "speak", it: "Im Winter schneit es oft und es ist sehr kalt." }
+        ]
+      },
+      {
+        id: "a1-u09-l3",
+        tags: ["g-praesens", "g-adverbien"],
+        cefr: "A1",
+        titleIt: "Ich lese gerade",
+        grammar: {
+          examples: [
+            { it: "Ich lese gerade ein Buch." },
+            { it: "Was machst du gerade?" },
+            { it: "Er sieht gerade fern." },
+            { it: "Im Moment schreibe ich eine Nachricht." },
+            { it: "Wir hören gerade ein Lied." },
+            { it: "Sie telefoniert gerade." }
+          ]
+        },
+        vocab: [
+          { it: "gerade", ex: "Ich lese gerade." },
+          { it: "im Moment", ex: "Im Moment lerne ich Deutsch." },
+          { it: "lesen", ex: "Er liest gerade die Zeitung." },
+          { it: "hören", ex: "Wir hören gerade ein Lied." },
+          { it: "schreiben", ex: "Ich schreibe gerade eine Nachricht." },
+          { it: "telefonieren", ex: "Sie telefoniert gerade." },
+          { it: "fernsehen", ex: "Er sieht gerade fern." },
+          { it: "lernen", ex: "Ich lerne gerade für den Test." },
+          { it: "die Zeitung", plural: "die Zeitungen", ex: "Mein Bruder liest die Zeitung." },
+          { it: "das Handy", plural: "die Handys", ex: "Mein Handy ist neu." },
+          { it: "die Nachricht", plural: "die Nachrichten", ex: "Ich schreibe eine Nachricht." },
+          { it: "das Lied", plural: "die Lieder", ex: "Das Lied ist schön." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 1 },
+          { t: "fill", a: ["liest"] },
+          { t: "fill", a: ["sieht"] },
+          { t: "fill", a: ["hören"] },
+          {
+            t: "order",
+            tokens: ["Ich", "schreibe", "gerade", "eine", "Nachricht"],
+            a: ["Ich schreibe gerade eine Nachricht", "Gerade schreibe ich eine Nachricht"]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Mein Bruder liest gerade die Zeitung",
+              "Gerade liest mein Bruder die Zeitung"
+            ]
+          },
+          {
+            t: "cloze",
+            text: "Was {{1}} du gerade? Ich {{2}} gerade ein Buch und mein Bruder {{3}} gerade fern.",
+            gaps: [["machst"], ["lese"], ["sieht"]]
+          },
+          { t: "listen", it: "Ich lese gerade, und mein Bruder sieht im Moment fern." },
+          { t: "speak", it: "Ich schreibe gerade eine Nachricht und höre ein Lied." }
+        ]
+      },
+      {
+        id: "a1-u09-l4",
+        tags: ["g-konnektoren", "g-praep-akk"],
+        cefr: "A1",
+        titleIt: "Gehen wir ins Kino?",
+        grammar: {
+          examples: [
+            { it: "Gehen wir ins Kino?" },
+            { it: "Die Karte ist für dich." },
+            { it: "Ich trinke Kaffee ohne Zucker." },
+            { it: "Der Film beginnt um acht Uhr." },
+            { it: "Wir gehen durch den Park, aber es regnet." },
+            { it: "Ich komme nicht, denn ich muss arbeiten." }
+          ]
+        },
+        vocab: [
+          { it: "das Kino", plural: "die Kinos", ex: "Gehen wir ins Kino?" },
+          { it: "die Karte", plural: "die Karten", ex: "Ich kaufe zwei Karten." },
+          { it: "die Idee", plural: "die Ideen", ex: "Das ist eine gute Idee." },
+          { it: "der Vorschlag", plural: "die Vorschläge", ex: "Das ist ein guter Vorschlag." },
+          { it: "die Lust", plural: "-", ex: "Hast du Lust?" },
+          { it: "leider", ex: "Leider habe ich keine Zeit." },
+          { it: "für", ex: "Die Karte ist für dich." },
+          { it: "ohne", ex: "Ich gehe nicht ohne dich." },
+          { it: "um", ex: "Der Film beginnt um acht Uhr." },
+          { it: "durch", ex: "Wir gehen durch den Park." },
+          { it: "gegen", ex: "Ich bin gegen den Plan." },
+          { it: "denn", ex: "Ich komme nicht, denn ich bin müde." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 2 },
+          { t: "fill", a: ["für"] },
+          { t: "fill", a: ["ohne"] },
+          {
+            t: "match",
+            pairs: [{ it: "für" }, { it: "ohne" }, { it: "durch" }, { it: "gegen" }]
+          },
+          {
+            t: "order",
+            tokens: ["Wir", "gehen", "durch", "den", "Park"],
+            a: ["Wir gehen durch den Park", "Durch den Park gehen wir"]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: ["Ich komme nicht, denn ich muss arbeiten"]
+          },
+          {
+            t: "cloze",
+            text: "Gehen wir {{1}} Kino? Leider kann ich nicht, {{2}} ich muss arbeiten. Aber morgen {{3}} ich Zeit.",
+            gaps: [["ins", "in das"], ["denn"], ["habe"]]
+          },
+          { t: "listen", it: "Gehen wir ins Kino? Leider kann ich nicht, denn ich muss arbeiten." },
+          { t: "speak", it: "Gute Idee! Gehen wir um acht Uhr ins Kino?" }
+        ]
+      }
+    ],
+    test: {
+      id: "a1-u09-test",
+      tags: ["g-praep-akk", "g-konnektoren", "g-es"],
+      cefr: "A1",
+      titleIt: "Test: Freizeit",
+      exercises: [
+        { t: "fill", a: ["es"] },
+        { t: "fill", a: ["für"] },
+        { t: "fill", a: ["denn"] },
+        { t: "fill", a: ["durch"] },
+        { t: "mcq", a: 2 },
+        { t: "mcq", a: 1 },
+        { t: "mcq", a: 0 },
+        {
+          t: "order",
+          tokens: ["Am", "Samstag", "gehen", "wir", "ins", "Kino"],
+          a: ["Am Samstag gehen wir ins Kino", "Wir gehen am Samstag ins Kino"]
+        },
+        { t: "listen", it: "Es regnet und es ist kalt, aber ich gehe ins Kino." },
+        { t: "speak", it: "Leider kann ich nicht, denn ich muss um acht Uhr arbeiten." }
+      ]
+    }
   }
 ]);
