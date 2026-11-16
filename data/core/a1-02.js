@@ -1235,7 +1235,8 @@ LINGUAI.addUnits("A1", [
             "Ich hätte gern einen Tisch für zwei",
             "Ich möchte gern einen Tisch für zwei",
             "Einen Tisch für zwei möchte ich",
-            "Einen Tisch für zwei hätte ich gern"
+            "Einen Tisch für zwei hätte ich gern",
+            "Ich hätte einen Tisch für zwei gern"
           ]
         },
         { t: "listen", it: "Wir hätten gern zwei Suppen und einen Salat." },

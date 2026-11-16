@@ -1572,7 +1572,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Haben, brauchen, reservieren: l'accusativo",
-        p: "Dopo <strong>haben</strong>, <strong>brauchen</strong>, <strong>suchen</strong> e <strong>reservieren</strong> la cosa che si chiede è il complemento diretto, quindi sta all'<strong>accusativo</strong> (lo hai già incontrato nell'unità 3). Cambia solo il maschile: <strong>der → den</strong>, <strong>ein → einen</strong>. Femminile, neutro e plurale restano uguali al nominativo: <em>Wir brauchen einen Tisch</em> (<em>der Tisch</em>), <em>Wir brauchen eine Speisekarte</em> (<em>die Speisekarte</em>), <em>Wir brauchen ein Messer</em> (<em>das Messer</em>). Dopo <em>sein</em> il nome resta invece al nominativo: <em>Der Tisch ist frei.</em>"
+        p: "Dopo <strong>haben</strong>, <strong>brauchen</strong>, <strong>suchen</strong> e <strong>reservieren</strong> la cosa che si chiede è il complemento diretto, quindi sta all'<strong>accusativo</strong> (lo hai già incontrato nell'unità 3). Cambia solo il maschile: <strong>der → den</strong>, <strong>ein → einen</strong>. Femminile, neutro e plurale restano uguali al nominativo: <em>Wir brauchen einen Tisch</em> (<em>der Tisch</em>), <em>Wir brauchen eine Speisekarte</em> (<em>die Speisekarte</em>), <em>Wir brauchen ein Messer</em> (<em>das Messer</em>). Il soggetto è sempre al nominativo: <em>Der Tisch ist frei.</em>"
       },
       {
         h: "Il verbo resta al secondo posto, e nelle domande al primo",
@@ -1605,7 +1605,7 @@ LINGUAI.addStrings("it", {
         { tr: "Ci serve un tavolo per quattro persone.", note: "brauchen + accusativo" },
         { tr: "Ci serve un menu.", note: "femminile: eine non cambia" },
         { tr: "Stasera prenoto un tavolo.", note: "Heute Abend apre la frase: il verbo resta secondo" },
-        { tr: "Il tavolo è libero.", note: "dopo sein il nome resta al nominativo: der Tisch" },
+        { tr: "Il tavolo è libero.", note: "il soggetto è al nominativo: der Tisch ist frei" },
         { tr: "Avete un tavolo libero fuori?", note: "draußen: all'aperto; frei in fondo" }
       ]
     },
@@ -1670,7 +1670,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Avete un tavolo libero dentro per tre persone?",
-        why: "È una domanda sì/no, quindi <i>haben</i> apre la frase. In <i>Personen</i> la <b>s</b> tra due vocali è sonora (/z/); in <i>drinnen</i> la <b>nn</b> è doppia e la <b>i</b> è breve."
+        why: "È una domanda sì/no, quindi <i>haben</i> apre la frase. <i>Personen</i> si pronuncia con la <b>s</b> sonora (/z/); in <i>drinnen</i> la <b>i</b> è breve e <b>nn</b> si pronuncia come una sola /n/."
       },
       {
         tr: "Avete un tavolo libero fuori?",
@@ -1689,7 +1689,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Due formule per ordinare",
-        p: "Al ristorante si ordina con <strong>ich möchte</strong> + accusativo (<em>Ich möchte das Schnitzel</em>) oppure con <strong>ich hätte gern</strong> + accusativo (<em>Ich hätte gern das Schnitzel</em>). Sono entrambe formule di cortesia. <em>möchte</em> è in origine una forma del Konjunktiv II di <em>mögen</em>, e <em>hätte</em> è il Konjunktiv II di <em>haben</em>: a questo livello le impari come formule fisse, senza costruire altre forme di quel modo. <em>gern</em> vuol dire «volentieri», quindi <em>ich hätte gern</em> corrisponde a «avrei volentieri»."
+        p: "Al ristorante si ordina con <strong>ich möchte</strong> + accusativo (<em>Ich möchte das Schnitzel</em>) oppure con <strong>ich hätte gern</strong> + accusativo (<em>Ich hätte gern das Schnitzel</em>). Sono entrambe formule di cortesia. <em>möchte</em> è in origine una forma del Konjunktiv II di <em>mögen</em>, e <em>hätte</em> è il Konjunktiv II di <em>haben</em>: a questo livello le impari come formule fisse, senza costruire altre forme di quel modo. <em>gern</em> vuol dire «volentieri», quindi <em>ich hätte gern</em> si traduce con «vorrei» (alla lettera «avrei volentieri», glossa che in italiano non si usa per ordinare)."
       },
       {
         h: "möchte è un modale, con la -e",
@@ -1721,7 +1721,7 @@ LINGUAI.addStrings("it", {
       },
       examples: [
         { tr: "Vorrei la cotoletta.", note: "möchte: formula di cortesia; das Schnitzel, neutro" },
-        { tr: "Avrei volentieri il formaggio.", note: "hätte gern + accusativo: den Käse" },
+        { tr: "Vorrei il formaggio.", note: "hätte gern + accusativo: den Käse" },
         { tr: "Vorrei il pesce.", note: "den Fisch: maschile all'accusativo" },
         { tr: "Che cosa desidera bere?", note: "Was in prima posizione, möchten in seconda, trinken in fondo" },
         { tr: "Desidera un antipasto?", note: "domanda sì/no: möchten in prima posizione" },
@@ -1730,8 +1730,8 @@ LINGUAI.addStrings("it", {
     },
     vocab: [
       "vorrei (formula di cortesia)",
-      "avrei volentieri (formula di cortesia)",
-      "la cotoletta impanata",
+      "vorrei (nella versione con hätte gern)",
+      "la cotoletta, la fettina di carne (paniertes Schnitzel: impanata)",
       "la salsiccia, il wurstel",
       "la patata",
       "il riso",
@@ -1760,7 +1760,7 @@ LINGUAI.addStrings("it", {
       },
       {
         q: "Abbina ogni piatto al suo significato.",
-        pairs: ["la cotoletta impanata", "la zuppa", "il pesce", "il dolce"]
+        pairs: ["la cotoletta o fettina di carne", "la zuppa", "il pesce", "il dolce"]
       },
       {
         q: "Completa con il verbo möchten.",
@@ -1768,7 +1768,7 @@ LINGUAI.addStrings("it", {
         why: "<i>Ich möchte</i> (1ª persona, con la -e) e <i>du möchtest</i> (2ª persona, con -st)."
       },
       {
-        tr: "Avrei volentieri la cotoletta.",
+        tr: "Vorrei la cotoletta.",
         why: "Sono corrette tre posizioni: <i>Ich hätte gern das Schnitzel</i>, <i>Ich hätte das Schnitzel gern</i> e, con l'oggetto davanti, <i>Das Schnitzel hätte ich gern</i>. Il verbo resta al secondo posto."
       },
       {
@@ -1776,7 +1776,7 @@ LINGUAI.addStrings("it", {
         setting: "Il cameriere prende l'ordinazione.",
         lines: [
           { tr: "Che cosa desidera?" },
-          { tr: "Ordina il pesce con la formula di cortesia.", answerTr: "Avrei volentieri il pesce." },
+          { tr: "Ordina il pesce con la formula di cortesia.", answerTr: "Vorrei il pesce." },
           { tr: "E desidera anche una zuppa?" },
           { tr: "Rispondi di sì e ordina la zuppa.", answerTr: "Sì, volentieri. Vorrei una zuppa." }
         ]
@@ -1790,7 +1790,7 @@ LINGUAI.addStrings("it", {
         why: "<i>möchte</i>: la <b>ö</b> è breve e la <b>ch</b> dopo <b>ö</b> è il suono di <i>ich</i>, una fricativa palatale leggera: non è una «k» e non è «sc». In <i>Schnitzel</i> la <b>sch</b> è /ʃ/ e la <b>tz</b> è /ts/."
       },
       {
-        tr: "Avrei volentieri il pesce e l'insalata.",
+        tr: "Vorrei il pesce e l'insalata.",
         why: "<i>hätte</i>: la <b>ä</b> è breve, simile a una «e» aperta. In <i>gern</i> la <b>g</b> è dura e la <b>r</b> può essere uvulare o apicale: entrambe sono standard."
       }
     ]
@@ -1816,7 +1816,7 @@ LINGUAI.addStrings("it", {
         contrast: "In italiano tutto questo lo fa la particella <em>ne</em> (<em>ne prendo due</em>, <em>ne ho</em>, <em>non ne abbiamo</em>), che il tedesco non ha. Al suo posto troverai il numero da solo (<em>Ich nehme zwei</em>), <em>einer / eine / eins</em> per «uno», <em>welche</em> per «alcuni, un po'» e <em>keine</em> per «nessuno». Anche <em>uno / una</em> in italiano si accordano con il nome, ma in tedesco conta il genere tedesco: <em>il pomodoro</em> è maschile, <em>die Tomate</em> è femminile, quindi «ne prendo uno» si dice <em>Ich nehme eine</em>. Lo stesso vale per <em>la mela</em> (femminile in italiano, ma <em>der Apfel</em> è maschile: <em>einen</em>) e per <em>l'uovo</em> (<em>das Ei</em>, neutro: <em>eins</em>)."
       },
       {
-        trap: "<em>welche</em> non è sempre la parola interrogativa «quale / quali» di <em>Welche Suppe möchten Sie?</em>: in <em>Haben Sie welche?</em> significa «ne avete?». Li distingue il contesto: la domanda con «quale» ha subito un nome dopo. E non usare <em>ein</em> da solo: «Ich nehme ein» è sbagliato, perché senza il nome servono le forme del pronome, <em>einen</em>, <em>eine</em> o <em>eins</em>."
+        trap: "<em>welche</em> non è sempre la parola interrogativa «quale / quali» di <em>Welche Suppe möchten Sie?</em>: in <em>Haben Sie welche?</em> significa «ne avete?». Li distingue il contesto: l'uso interrogativo chiede di scegliere o identificare (<em>Welche möchten Sie?</em> funziona anche senza nome), quello indefinito riprende una quantità non precisata. E non usare <em>ein</em> da solo: «Ich nehme ein» è sbagliato, perché senza il nome servono le forme del pronome, <em>einen</em>, <em>eine</em> o <em>eins</em>."
       },
       {
         tip: "Per scegliere la forma ripensa al nome tedesco, non a quello italiano: <em>der Apfel → einen</em>, <em>die Tomate → eine</em>, <em>das Ei → eins</em>. Se hai un numero, di' il numero e basta."
@@ -1831,7 +1831,7 @@ LINGUAI.addStrings("it", {
           ["maschile", "Ich nehme einen Apfel.", "Ich nehme einen."],
           ["femminile", "Ich nehme eine Tomate.", "Ich nehme eine."],
           ["neutro", "Ich nehme ein Brötchen.", "Ich nehme eins."],
-          ["plurale / non numerabile", "Haben Sie Brötchen?", "Haben Sie welche?"]
+          ["plurale", "Haben Sie Brötchen?", "Haben Sie welche?"]
         ]
       },
       examples: [
@@ -2037,7 +2037,7 @@ LINGUAI.addStrings("it", {
         why: "<i>Tisch</i> è maschile e dopo <i>haben</i> è complemento diretto: <b>einen</b>."
       },
       {
-        q: "Completa: «Ich ___ gern das Schnitzel.» (Avrei volentieri la cotoletta.)",
+        q: "Completa: «Ich ___ gern das Schnitzel.» (Vorrei la cotoletta.)",
         hint: "haben, forma di cortesia che si usa con gern",
         why: "La formula è <b>ich hätte gern</b>: <i>hätte</i> è la forma di cortesia di <i>haben</i>."
       },
@@ -2061,7 +2061,7 @@ LINGUAI.addStrings("it", {
         pairs: ["pagare", "il conto", "la mancia", "il menu (la lista dei piatti)"]
       },
       {
-        tr: "Avrei volentieri il pesce.",
+        tr: "Vorrei il pesce.",
         why: "Sono corrette tre posizioni: <i>Ich hätte gern den Fisch</i>, <i>Ich hätte den Fisch gern</i> e <i>Den Fisch hätte ich gern</i>. <i>Fisch</i> è maschile: <b>den</b>."
       },
       {
@@ -2070,7 +2070,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Vorremmo due zuppe e un'insalata.",
-        why: "<i>hätten</i>: la <b>ä</b> è breve, simile a una «e» aperta, e la <b>tt</b> è doppia. In <i>zwei</i> la <b>z</b> è /ts/ e la <b>ei</b> è /aɪ̯/."
+        why: "<i>hätten</i>: la <b>ä</b> è breve, simile a una «e» aperta, e <b>tt</b> si pronuncia come una sola /t/. In <i>zwei</i> la <b>z</b> è /ts/ e la <b>ei</b> è /aɪ̯/."
       },
       {
         tr: "Possiamo pagare, per favore?",
