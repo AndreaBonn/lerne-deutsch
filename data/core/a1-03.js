@@ -555,5 +555,292 @@ LINGUAI.addUnits("A1", [
         { t: "speak", it: "Leider kann ich nicht, denn ich muss um acht Uhr arbeiten." }
       ]
     }
+  },
+  {
+    id: "a1-u10",
+    icon: "🧳",
+    titleIt: "Mein Wochenende",
+    lessons: [
+      {
+        id: "a1-u10-l1",
+        tags: ["g-perfekt"],
+        cefr: "A1",
+        titleIt: "Ich habe gegessen, ich habe gesehen",
+        grammar: {
+          examples: [
+            { it: "Gestern habe ich einen Film gesehen." },
+            { it: "Ich habe Pizza gegessen." },
+            { it: "Wir haben Kaffee getrunken." },
+            { it: "Er hat ein Buch gekauft." },
+            { it: "Hast du am Samstag gekocht?" },
+            { it: "Am Sonntag habe ich meine Großmutter besucht." }
+          ]
+        },
+        vocab: [
+          { it: "gestern", ex: "Gestern habe ich einen Film gesehen." },
+          { it: "vorgestern", ex: "Vorgestern habe ich Pizza gegessen." },
+          { it: "sehen", ex: "Wir haben einen Film gesehen." },
+          { it: "machen", ex: "Was hast du am Samstag gemacht?" },
+          { it: "kaufen", ex: "Er hat ein Buch gekauft." },
+          { it: "trinken", ex: "Ich habe Kaffee getrunken." },
+          { it: "essen", ex: "Wir haben Pizza gegessen." },
+          { it: "lesen", ex: "Sie hat eine Zeitung gelesen." },
+          { it: "schlafen", ex: "Ich habe lange geschlafen." },
+          { it: "besuchen", ex: "Am Sonntag habe ich meine Großmutter besucht." },
+          { it: "treffen", ex: "Ich habe Freunde getroffen." },
+          { it: "das Abendessen", plural: "die Abendessen", ex: "Das Abendessen ist gut." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["gesehen"] },
+          { t: "fill", a: ["haben"] },
+          { t: "fill", a: ["gekauft"] },
+          { t: "fill", a: ["getrunken"] },
+          {
+            t: "match",
+            pairs: [{ it: "gesehen" }, { it: "gegessen" }, { it: "gekauft" }, { it: "getrunken" }]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: ["Gestern habe ich einen Film gesehen", "Ich habe gestern einen Film gesehen"]
+          },
+          {
+            t: "cloze",
+            text: "Gestern {{1}} ich Pizza {{2}} und Wein {{3}}.",
+            gaps: [["habe"], ["gegessen"], ["getrunken"]]
+          },
+          { t: "listen", it: "Gestern habe ich einen Film gesehen und Pizza gegessen." },
+          { t: "speak", it: "Am Samstag habe ich Kaffee getrunken und ein Buch gelesen." }
+        ]
+      },
+      {
+        id: "a1-u10-l2",
+        tags: ["g-perfekt", "g-trennbare-verben"],
+        cefr: "A1",
+        titleIt: "Ich bin gefahren, ich bin aufgestanden",
+        grammar: {
+          examples: [
+            { it: "Ich bin nach Berlin gefahren." },
+            { it: "Wir sind früh aufgestanden." },
+            { it: "Sie ist zu Hause geblieben." },
+            { it: "Er ist um acht Uhr angekommen." },
+            { it: "Ich habe gestern eingekauft." },
+            { it: "Habt ihr eure Mutter angerufen?" }
+          ]
+        },
+        vocab: [
+          { it: "fahren", ex: "Wir sind mit dem Zug gefahren." },
+          { it: "gehen", ex: "Ich bin ins Kino gegangen." },
+          { it: "kommen", ex: "Er ist spät gekommen." },
+          { it: "fliegen", ex: "Wir sind nach Wien geflogen." },
+          { it: "bleiben", ex: "Sie ist zu Hause geblieben." },
+          { it: "reisen", ex: "Sie ist nach Italien gereist." },
+          { it: "aufstehen", ex: "Ich bin um sieben Uhr aufgestanden." },
+          { it: "ankommen", ex: "Wir sind um acht Uhr angekommen." },
+          { it: "einkaufen", ex: "Ich habe gestern eingekauft." },
+          { it: "anrufen", ex: "Er hat seine Mutter angerufen." },
+          { it: "aufräumen", ex: "Ich habe die Wohnung aufgeräumt." },
+          { it: "die Reise", plural: "die Reisen", ex: "Die Reise ist lang." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 1 },
+          { t: "mcq", a: 0 },
+          { t: "multi", a: [0, 1, 3] },
+          { t: "fill", a: ["bin"] },
+          { t: "fill", a: ["angekommen"] },
+          {
+            t: "order",
+            tokens: ["Wir", "sind", "nach", "Berlin", "gefahren"],
+            a: ["Wir sind nach Berlin gefahren", "Nach Berlin sind wir gefahren"]
+          },
+          {
+            t: "cloze",
+            text: "Am Samstag {{1}} wir mit dem Zug nach Wien {{2}} und am Sonntag {{3}} wir zu Hause geblieben.",
+            gaps: [["sind"], ["gefahren", "gereist"], ["sind"]]
+          },
+          { t: "listen", it: "Ich bin um sieben Uhr aufgestanden und habe Kaffee getrunken." },
+          { t: "speak", it: "Wir sind am Abend in Wien angekommen." }
+        ]
+      },
+      {
+        id: "a1-u10-l3",
+        tags: ["g-perfekt", "g-satz-v2"],
+        cefr: "A1",
+        titleIt: "Mein Wochenende",
+        grammar: {
+          examples: [
+            { it: "Wie war dein Wochenende?" },
+            { it: "Zuerst habe ich lange geschlafen." },
+            { it: "Dann habe ich für meine Freunde gekocht." },
+            { it: "Danach sind wir ins Kino gegangen." },
+            { it: "Später habe ich einen Spaziergang gemacht." },
+            { it: "Es war toll, und ich hatte Glück." }
+          ]
+        },
+        vocab: [
+          { it: "zuerst", ex: "Zuerst habe ich lange geschlafen." },
+          { it: "dann", ex: "Dann habe ich gekocht." },
+          { it: "danach", ex: "Danach sind wir ins Kino gegangen." },
+          { it: "später", ex: "Später habe ich ein Buch gelesen." },
+          { it: "die Party", plural: "die Partys", ex: "Am Samstag gehe ich zu einer Party." },
+          { it: "der Spaziergang", plural: "die Spaziergänge", ex: "Ich habe einen Spaziergang gemacht." },
+          { it: "das Museum", plural: "die Museen", ex: "Wir haben ein Museum besucht." },
+          { it: "das Geschenk", plural: "die Geschenke", ex: "Ich habe ein Geschenk gekauft." },
+          { it: "toll", ex: "Der Film ist toll." },
+          { it: "Es war schön.", ex: "Es war schön." },
+          { it: "Wie war dein Wochenende?", ex: "Wie war dein Wochenende?" },
+          { it: "Ich hatte Glück.", ex: "Ich hatte Glück." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 1 },
+          { t: "fill", a: ["dann", "danach"] },
+          { t: "fill", a: ["war"] },
+          {
+            t: "order",
+            tokens: ["Danach", "habe", "ich", "ein", "Buch", "gelesen"],
+            a: ["Danach habe ich ein Buch gelesen"]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: ["Dann habe ich für meine Freunde gekocht", "Ich habe dann für meine Freunde gekocht"]
+          },
+          {
+            t: "cloze",
+            text: "Am Samstag {{1}} ich lange geschlafen. Danach {{2}} ich einen Spaziergang {{3}}.",
+            gaps: [["habe"], ["habe"], ["gemacht"]]
+          },
+          {
+            t: "dialogue",
+            lines: [
+              { sp: "A", it: "Hallo! Wie war dein Wochenende?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Es war schön! Ich habe Freunde getroffen.",
+                  "Es war schön! Ich getroffen habe Freunde.",
+                  "Es war schön! Ich habe Freunde treffen."
+                ],
+                a: 0
+              },
+              { sp: "A", it: "Und was hast du am Sonntag gemacht?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Ich bin zu Hause geblieben.",
+                  "Ich habe zu Hause geblieben.",
+                  "Ich bin zu Hause bleiben."
+                ],
+                a: 0
+              }
+            ]
+          },
+          { t: "listen", it: "Am Samstag habe ich Freunde getroffen, dann sind wir ins Kino gegangen." },
+          { t: "speak", it: "Es war toll! Ich habe getanzt und Freunde getroffen." }
+        ]
+      },
+      {
+        id: "a1-u10-l4",
+        tags: ["g-praesens", "g-artikel-akk", "g-praep-dativ"],
+        cefr: "A1",
+        titleIt: "Ripasso A1",
+        grammar: {
+          examples: [
+            { it: "Ich fahre mit dem Zug zum Strand." },
+            { it: "Wir nehmen den Koffer und die Fahrkarte." },
+            { it: "Ich komme aus Italien und wohne bei meiner Tante." },
+            { it: "Er sieht einen Film und isst eine Pizza." },
+            { it: "Am Abend gehen wir zum Hotel." },
+            { it: "Gestern bin ich früh aufgestanden." }
+          ]
+        },
+        vocab: [
+          { it: "die Reise", plural: "die Reisen", ex: "Die Reise ist lang." },
+          { it: "der Koffer", plural: "die Koffer", ex: "Ich nehme den Koffer." },
+          { it: "die Fahrkarte", plural: "die Fahrkarten", ex: "Ich kaufe eine Fahrkarte." },
+          { it: "das Hotel", plural: "die Hotels", ex: "Das Hotel ist neben dem Bahnhof." },
+          { it: "das Zimmer", plural: "die Zimmer", ex: "Wir haben ein Zimmer im Hotel." },
+          { it: "der Urlaub", plural: "die Urlaube", ex: "Im Urlaub schlafe ich lange." },
+          { it: "das Meer", plural: "die Meere", ex: "Wir fahren zum Meer." },
+          { it: "der Strand", plural: "die Strände", ex: "Am Strand lese ich ein Buch." }
+        ],
+        exercises: [
+          { t: "conj", verb: "sein", tense: "praes", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "conj", verb: "essen", tense: "praes", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "conj", verb: "fahren", tense: "praes", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "fill", a: ["mit"] },
+          { t: "fill", a: ["den"] },
+          { t: "fill", a: ["zum", "zu dem"] },
+          { t: "fill", a: ["aus"] },
+          {
+            t: "cloze",
+            text: "Ich {{1}} gestern früh {{2}} und {{3}} einen Kaffee getrunken.",
+            gaps: [["bin"], ["aufgestanden"], ["habe"]]
+          },
+          {
+            t: "gender",
+            opts: ["der", "die", "das"],
+            items: [
+              { it: "Koffer", a: "der" },
+              { it: "Reise", a: "die" },
+              { it: "Hotel", a: "das" },
+              { it: "Zimmer", a: "das" },
+              { it: "Strand", a: "der" },
+              { it: "Fahrkarte", a: "die" }
+            ]
+          },
+          {
+            t: "order",
+            tokens: ["Wir", "fahren", "mit", "dem", "Zug", "zum", "Strand"],
+            a: [
+              "Wir fahren mit dem Zug zum Strand",
+              "Mit dem Zug fahren wir zum Strand",
+              "Wir fahren zum Strand mit dem Zug",
+              "Zum Strand fahren wir mit dem Zug"
+            ]
+          },
+          { t: "listen", it: "Ich fahre mit dem Zug zum Strand und nehme meinen Koffer." },
+          { t: "speak", it: "Wir haben ein Zimmer im Hotel und fahren morgen zum Meer." }
+        ]
+      }
+    ],
+    test: {
+      id: "a1-u10-test",
+      tags: ["g-praesens", "g-perfekt", "g-artikel-akk", "g-genus"],
+      cefr: "A1",
+      titleIt: "Abschlusstest A1",
+      exercises: [
+        { t: "fill", a: ["habe"] },
+        { t: "fill", a: ["sind"] },
+        { t: "fill", a: ["gesehen"] },
+        { t: "fill", a: ["den"] },
+        { t: "fill", a: ["mit"] },
+        { t: "fill", a: ["aufgestanden"] },
+        { t: "mcq", a: 1 },
+        { t: "mcq", a: 1 },
+        {
+          t: "gender",
+          opts: ["der", "die", "das"],
+          items: [
+            { it: "Film", a: "der" },
+            { it: "Wochenende", a: "das" },
+            { it: "Party", a: "die" },
+            { it: "Spaziergang", a: "der" },
+            { it: "Museum", a: "das" },
+            { it: "Karte", a: "die" }
+          ]
+        },
+        { t: "conj", verb: "gehen", tense: "perf", persons: [0, 1, 2, 3] },
+        {
+          t: "cloze",
+          text: "{{1}} habe ich Freunde {{2}}. Danach {{3}} wir ins Kino gegangen.",
+          gaps: [["Zuerst"], ["getroffen"], ["sind"]]
+        },
+        { t: "speak", it: "Am Wochenende bin ich nach Wien gefahren und habe ein Museum besucht." }
+      ]
+    }
   }
 ]);

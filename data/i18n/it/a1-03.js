@@ -1024,5 +1024,531 @@ LINGUAI.addStrings("it", {
         why: "In <i>muss</i> la <b>ss</b> è una <b>s</b> sorda e la <b>u</b> è breve; <i>arbeiten</i> è all'infinito in fondo alla frase."
       }
     ]
+  },
+  "unit:a1-u10": {
+    title: "Il mio fine settimana",
+    grammarNote: "Perfekt con haben e con sein · participio II regolare, forte e separabile · war e hatte come formule · ripasso dell'A1"
+  },
+  "lesson:a1-u10-l1": {
+    theme: "Il passato parlato",
+    title: "Ho mangiato, ho visto",
+    objectives: [
+      "formare il Perfekt con haben e il participio II",
+      "riconoscere il participio regolare (ge- ... -t) e quello forte (ge- ... -en)",
+      "raccontare cosa si è fatto ieri o nel fine settimana"
+    ],
+    theory: [
+      {
+        h: "Il Perfekt: il passato del parlato",
+        p: "Quando racconti qualcosa di passato, a voce, usi il <strong>Perfekt</strong>: <strong>haben</strong> in seconda posizione e il <strong>participio II</strong> in fondo alla frase. <em>Ich habe gegessen</em> (ho mangiato), <em>Gestern habe ich einen Film gesehen</em> (ieri ho visto un film). Il participio dei verbi regolari è <em>ge- + radice + -t</em> (<em>machen, gemacht</em>), quello dei verbi forti è <em>ge- + radice + -en</em> (<em>essen, gegessen</em>)."
+      },
+      {
+        contrast: "La costruzione somiglia al passato prossimo italiano: <em>ho mangiato</em> corrisponde a <em>ich habe gegessen</em>. Due differenze. Nel Perfekt il participio <strong>non concorda mai</strong>: in italiano si dice <em>l'ho vista</em> e <em>sono andata</em>, in tedesco <em>Ich habe sie gesehen</em> e <em>Ich bin gegangen</em>, qualunque sia il soggetto o l'oggetto. E il tedesco parlato usa il Perfekt anche dove un italiano potrebbe dire il passato remoto: <em>Gestern habe ich einen Film gesehen</em> si traduce con «ieri ho visto» e, in certi contesti, anche con «ieri vidi»."
+      },
+      {
+        trap: "In italiano il participio segue subito l'ausiliare: <em>ho visto ieri un film</em>. In tedesco il participio va <strong>in fondo</strong>, dopo tutti i complementi: <em>Ich habe gestern einen Film <strong>gesehen</strong></em>, non «Ich habe gesehen gestern einen Film». Il participio dei verbi forti non si deduce: va imparato insieme all'infinito (<em>trinken, getrunken</em>; <em>lesen, gelesen</em>)."
+      },
+      {
+        tip: "Non prendono <em>ge-</em> i verbi con prefisso inseparabile (<em>be-, ver-, er-, ent-</em>) e quelli in <em>-ieren</em>: <em>besuchen, besucht</em>; <em>studieren, studiert</em>. Per le domande vale la stessa struttura: <em>Hast du am Samstag gekocht?</em> Il verbo coniugato apre la frase, il participio la chiude."
+      }
+    ],
+    grammar: {
+      title: "Perfekt con haben",
+      note: "<b>haben</b> in seconda posizione + <b>participio II</b> in fondo. Regolare: ge- ... -t; forte: ge- ... -en; senza ge- con be-, ver-, er- e con -ieren.",
+      table: {
+        head: ["tipo", "infinito", "participio II"],
+        rows: [
+          ["regolare: ge- ... -t", "machen, kaufen, kochen", "gemacht, gekauft, gekocht"],
+          ["forte: ge- ... -en", "essen, sehen, trinken", "gegessen, gesehen, getrunken"],
+          ["forte: ge- ... -en", "lesen, schlafen, treffen", "gelesen, geschlafen, getroffen"],
+          ["senza ge-", "besuchen, studieren", "besucht, studiert"]
+        ]
+      },
+      examples: [
+        { tr: "Ieri ho visto un film.", note: "participio in fondo alla frase" },
+        { tr: "Ho mangiato la pizza.", note: "essen è forte: gegessen" },
+        { tr: "Abbiamo bevuto il caffè.", note: "haben con wir: haben" },
+        { tr: "Lui ha comprato un libro.", note: "kaufen è regolare: gekauft" },
+        { tr: "Hai cucinato sabato?", note: "domanda: haben al primo posto" },
+        { tr: "Domenica ho visitato mia nonna.", note: "besuchen: niente ge-" }
+      ]
+    },
+    vocab: [
+      "ieri",
+      "l'altro ieri",
+      "vedere",
+      "fare (anche: cosa hai fatto?)",
+      "comprare",
+      "bere",
+      "mangiare",
+      "leggere",
+      "dormire",
+      "visitare, andare a trovare",
+      "incontrare",
+      "la cena"
+    ],
+    exercises: [
+      {
+        q: "Come dici «Ho mangiato»?",
+        opts: ["Ich habe gegessen.", "Ich habe essen.", "Ich bin gegessen."],
+        why: "<i>Essen</i> prende <b>haben</b> e il participio forte <b>gegessen</b> in fondo alla frase."
+      },
+      {
+        q: "Completa: «Gestern habe ich einen Film ___.» (vedere)",
+        hint: "participio II di sehen",
+        why: "<i>Sehen</i> è un verbo forte: <b>gesehen</b>. La <i>h</i> non si pronuncia."
+      },
+      {
+        q: "Completa: «Wir ___ am Samstag Pizza gegessen.»",
+        hint: "ausiliare, prima persona plurale",
+        why: "Con <i>essen</i> l'ausiliare è <b>haben</b>; con <i>wir</i> ha la stessa forma dell'infinito."
+      },
+      {
+        q: "Completa: «Er hat ein Buch ___.» (comprare)",
+        hint: "kaufen, participio II",
+        why: "<i>Kaufen</i> è regolare: ge- + radice + -t, quindi <b>gekauft</b>."
+      },
+      {
+        q: "Completa: «Hast du gestern Kaffee ___?» (bere)",
+        hint: "trinken, participio II",
+        why: "<i>Trinken</i> è forte: <b>getrunken</b>."
+      },
+      {
+        q: "Abbina ogni participio al suo significato.",
+        pairs: ["visto", "mangiato", "comprato", "bevuto"]
+      },
+      {
+        q: "Traduci: «Ieri ho visto un film.»",
+        why: "<i>Gestern habe ich einen Film gesehen</i>: dopo <i>gestern</i> il verbo coniugato resta in seconda posizione e il soggetto lo segue. Va bene anche <i>Ich habe gestern einen Film gesehen</i>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Ieri ho mangiato la pizza e bevuto il vino.",
+        why: "<i>Habe</i> sta in seconda posizione; i due participi, <i>gegessen</i> e <i>getrunken</i>, chiudono la frase. L'ausiliare non si ripete."
+      },
+      {
+        tr: "Ieri ho visto un film e ho mangiato la pizza.",
+        why: "In <i>gesehen</i> la <b>h</b> non si pronuncia e allunga la <b>e</b>; in <i>gegessen</i> la <b>ss</b> è una <b>s</b> sorda e <i>ge-</i> è atono."
+      },
+      {
+        tr: "Sabato ho bevuto un caffè e ho letto un libro.",
+        why: "In <i>Kaffee</i> l'accento cade sulla prima sillaba; in <i>Buch</i> la <b>ch</b> dopo <b>u</b> è [x], un suono raschiato in gola che l'italiano non ha."
+      }
+    ]
+  },
+  "lesson:a1-u10-l2": {
+    theme: "Sein o haben",
+    title: "Sono andato, mi sono alzato",
+    objectives: [
+      "scegliere sein o haben come ausiliare del Perfekt",
+      "formare il participio dei verbi separabili",
+      "raccontare un viaggio breve e la giornata"
+    ],
+    theory: [
+      {
+        h: "Il Perfekt con sein",
+        p: "Con i verbi intransitivi di <strong>cambio di luogo o di stato</strong> l'ausiliare è <strong>sein</strong>: <em>fahren, gehen, kommen, fliegen, aufstehen</em>. Lo stesso vale per <em>sein, bleiben, werden, passieren</em>. <em>Ich bin nach Berlin gefahren. Wir sind früh aufgestanden. Sie ist zu Hause geblieben.</em> Con quasi tutti gli altri verbi si usa <em>haben</em>."
+      },
+      {
+        p: "Nei verbi separabili il participio è una parola sola e <em>ge-</em> va <strong>in mezzo</strong>, fra il prefisso e il verbo: <em>aufstehen → aufgestanden, ankommen → angekommen, einkaufen → eingekauft, anrufen → angerufen</em>. Il prefisso non si stacca più: <em>Ich bin um sieben Uhr aufgestanden</em>, mentre al presente è <em>Ich stehe um sieben Uhr auf</em>."
+      },
+      {
+        contrast: "Anche l'italiano usa essere con molti verbi di movimento: <em>sono andato, sono venuto, sono rimasto</em> corrispondono a <em>ich bin gegangen, ich bin gekommen, ich bin geblieben</em>. Ma l'accordo non è totale. <em>Ho viaggiato</em> e <em>ho camminato</em> vogliono avere in italiano, mentre in tedesco si dice <em>Ich bin gereist</em> e <em>Ich bin gewandert</em>, con sein. Il verbo si controlla caso per caso."
+      },
+      {
+        trap: "Un verbo di movimento usato con un oggetto diretto all'accusativo prende di solito <strong>haben</strong>: <em>Ich habe das Auto gefahren</em> (ho guidato la macchina). Un complemento con preposizione, invece, non obbliga a haben: <em>Ich bin mit dem Bus gefahren</em>, <em>Ich bin nach Wien geflogen</em>. In italiano <em>mi sono alzato</em> è riflessivo e prende essere; in tedesco <em>aufstehen</em> non ha pronome: <em>Ich bin aufgestanden</em>."
+      },
+      {
+        tip: "Se il verbo ha un prefisso separabile e un participio regolare, il <em>-t</em> finale resta: <em>aufräumen → aufgeräumt</em>, <em>einkaufen → eingekauft</em>. I verbi con prefisso inseparabile o in <em>-ieren</em> non prendono <em>ge-</em>: <em>besucht, studiert</em>."
+      }
+    ],
+    grammar: {
+      title: "Perfekt con sein e participio separabile",
+      note: "<b>sein</b> con cambio di luogo o di stato; nei separabili ge- va fra il prefisso e il verbo: auf<b>ge</b>standen.",
+      table: {
+        head: ["verbo", "ausiliare", "participio II"],
+        rows: [
+          ["fahren, gehen, kommen", "sein", "gefahren, gegangen, gekommen"],
+          ["fliegen, reisen, bleiben", "sein", "geflogen, gereist, geblieben"],
+          ["aufstehen, ankommen", "sein", "aufgestanden, angekommen"],
+          ["einkaufen, anrufen", "haben", "eingekauft, angerufen"],
+          ["aufräumen, fernsehen", "haben", "aufgeräumt, ferngesehen"]
+        ]
+      },
+      examples: [
+        { tr: "Sono andato a Berlino in treno.", note: "cambio di luogo: sein" },
+        { tr: "Ci siamo alzati presto.", note: "aufstehen: aufgestanden, senza pronome" },
+        { tr: "Lei è rimasta a casa.", note: "bleiben: sein" },
+        { tr: "Lui è arrivato alle otto.", note: "ankommen: angekommen" },
+        { tr: "Ieri ho fatto la spesa.", note: "einkaufen: haben, non è un cambio di luogo" },
+        { tr: "Avete telefonato a vostra madre?", note: "anrufen: angerufen con haben" }
+      ]
+    },
+    vocab: [
+      "andare con un mezzo, guidare",
+      "andare (a piedi, in generale)",
+      "venire",
+      "volare, andare in aereo",
+      "rimanere",
+      "viaggiare",
+      "alzarsi",
+      "arrivare",
+      "fare la spesa",
+      "telefonare",
+      "riordinare",
+      "il viaggio"
+    ],
+    exercises: [
+      {
+        q: "Come dici «Sono andato a Berlino in treno»?",
+        opts: [
+          "Ich bin mit dem Zug nach Berlin gefahren.",
+          "Ich habe mit dem Zug nach Berlin gefahren.",
+          "Ich bin mit dem Zug nach Berlin fahren."
+        ],
+        why: "<i>Fahren</i> indica un cambio di luogo: ausiliare <b>sein</b> e participio <b>gefahren</b> in fondo alla frase."
+      },
+      {
+        q: "Come dici «Sono rimasto a casa»?",
+        opts: ["Ich habe zu Hause geblieben.", "Ich bin zu Hause geblieben.", "Ich bin zu Hause gebleibt."],
+        why: "<i>Bleiben</i> prende <b>sein</b> e ha il participio forte <b>geblieben</b>."
+      },
+      {
+        q: "Come dici «Ieri ho fatto la spesa»?",
+        opts: ["Ich habe gestern eingekauft.", "Ich habe gestern geeinkauft.", "Ich bin gestern eingekauft."],
+        why: "<i>Einkaufen</i> è separabile: <b>ein-ge-kauft</b>, con <i>haben</i>, perché fare la spesa non è un cambio di luogo."
+      },
+      {
+        q: "Quali frasi sono corrette?",
+        opts: [
+          "Sie ist um sieben Uhr aufgestanden.",
+          "Ich habe gestern meine Mutter angerufen.",
+          "Wir haben nach Wien geflogen.",
+          "Er ist zu Hause geblieben.",
+          "Ich habe um sieben aufgestehen."
+        ],
+        why: "La frase 3 vuole <i>sein</i> (<i>Wir sind nach Wien geflogen</i>); la frase 5 ha un participio sbagliato: <i>aufgestanden</i>, non «aufgestehen»."
+      },
+      {
+        q: "Completa: «Ich ___ gestern früh aufgestanden.»",
+        hint: "ausiliare, prima persona singolare",
+        why: "<i>Aufstehen</i> è un cambio di stato: ausiliare <b>sein</b>, quindi <i>ich bin</i>."
+      },
+      {
+        q: "Completa: «Wir sind um acht Uhr ___.» (arrivare, ankommen)",
+        hint: "ankommen: ge- va in mezzo",
+        why: "<b>angekommen</b>: <i>an</i> + <i>ge</i> + <i>kommen</i>."
+      },
+      {
+        tr: "Siamo andati a Berlino.",
+        why: "<i>Wir sind nach Berlin gefahren</i>: <i>sein</i> in seconda posizione, participio in fondo. Va bene anche <i>Nach Berlin sind wir gefahren</i>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Sabato siamo andati a Vienna in treno e domenica siamo rimasti a casa.",
+        why: "Con <i>fahren</i> e <i>bleiben</i> l'ausiliare è <b>sein</b>; <i>gefahren</i> chiude la prima parte, <i>geblieben</i> la seconda."
+      },
+      {
+        tr: "Mi sono alzato alle sette e ho bevuto un caffè.",
+        why: "In <i>aufgestanden</i> l'accento cade su <b>auf</b>; in <i>Uhr</i> la <b>h</b> non si pronuncia e allunga la <b>u</b>."
+      },
+      {
+        tr: "Siamo arrivati a Vienna la sera.",
+        why: "In <i>Wien</i> la <b>W</b> si legge come la «v» italiana e la <b>ie</b> è una <b>i</b> lunga; <i>angekommen</i> ha l'accento su <b>an</b>."
+      }
+    ]
+  },
+  "lesson:a1-u10-l3": {
+    theme: "Il fine settimana",
+    title: "Il mio fine settimana",
+    objectives: [
+      "raccontare il fine settimana in ordine con zuerst, dann, danach, später",
+      "tenere il verbo in seconda posizione dopo i connettori di tempo",
+      "usare war e hatte solo come formule: Es war schön, Ich hatte Glück"
+    ],
+    theory: [
+      {
+        h: "Raccontare in ordine",
+        p: "Per raccontare il fine settimana metti in fila le azioni con <strong>zuerst</strong> (prima), <strong>dann</strong> (poi), <strong>danach</strong> (dopo) e <strong>später</strong> (più tardi). Ogni azione è un Perfekt: <em>Zuerst habe ich lange geschlafen. Dann habe ich gekocht. Danach sind wir ins Kino gegangen.</em> Questi avverbi aprono la frase e occupano la prima posizione."
+      },
+      {
+        contrast: "In italiano «poi» non cambia l'ordine: <em>poi ho cucinato</em>, e il soggetto può sparire. In tedesco il verbo coniugato resta in <strong>seconda posizione</strong> e il soggetto passa dopo di lui: <em>Dann habe ich gekocht</em>, mai «Dann ich habe gekocht». Il soggetto, inoltre, non si omette: <em>habe gekocht</em> da solo non è una frase."
+      },
+      {
+        trap: "Per sein e haben nel parlato si usano <strong>war</strong> e <strong>hatte</strong>, che per ora impari come formule fisse: <em>Es war schön. Wie war dein Wochenende? Ich hatte Glück.</em> Non serve coniugare altri verbi in questo modo: per tutti gli altri verbi resta il Perfekt. Attenzione a <em>Wie war dein Wochenende?</em>: l'italiano dice «com'è stato», con il passato prossimo, il tedesco usa <em>war</em>."
+      },
+      {
+        tip: "Puoi unire due azioni con <em>und</em> o <em>aber</em> senza cambiare la struttura: <em>Ich habe gekocht, und wir haben gegessen.</em> Per dire quando, premetti <em>am Samstag</em> o <em>am Sonntag</em>: il verbo resta secondo."
+      }
+    ],
+    grammar: {
+      title: "Il racconto: connettori e verbo in seconda posizione",
+      note: "Dopo <b>zuerst, dann, danach, später</b> il verbo coniugato resta in seconda posizione e il soggetto lo segue; il participio chiude la frase.",
+      table: {
+        head: ["italiano", "tedesco", "esempio"],
+        rows: [
+          ["prima, per prima cosa", "zuerst", "Zuerst habe ich geschlafen."],
+          ["poi", "dann", "Dann habe ich gekocht."],
+          ["dopo, in seguito", "danach", "Danach sind wir ins Kino gegangen."],
+          ["più tardi", "später", "Später habe ich gelesen."],
+          ["com'è stato?", "Wie war ...?", "Wie war dein Wochenende?"]
+        ]
+      },
+      examples: [
+        { tr: "Com'è stato il tuo fine settimana?", note: "war: formula fissa" },
+        { tr: "Per prima cosa ho dormito a lungo.", note: "zuerst in prima posizione, poi habe e ich" },
+        { tr: "Poi ho cucinato per i miei amici.", note: "dann + verbo + soggetto" },
+        { tr: "Dopo siamo andati al cinema.", note: "gehen: sein" },
+        { tr: "Più tardi ho fatto una passeggiata.", note: "einen Spaziergang machen" },
+        { tr: "È stato bellissimo e ho avuto fortuna.", note: "war e hatte come formule" }
+      ]
+    },
+    vocab: [
+      "prima, per prima cosa",
+      "poi",
+      "dopo, in seguito",
+      "più tardi",
+      "la festa (la party)",
+      "la passeggiata",
+      "il museo",
+      "il regalo",
+      "fantastico, bellissimo",
+      "Era bello. / È stato bello.",
+      "Com'è stato il tuo fine settimana?",
+      "Ho avuto fortuna."
+    ],
+    exercises: [
+      {
+        q: "Come chiedi a un amico com'è stato il fine settimana?",
+        opts: ["Wie war dein Wochenende?", "Wie hat dein Wochenende?", "Wie bist dein Wochenende?"],
+        why: "Per «è stato» si usa <b>war</b>: <i>Wie war dein Wochenende?</i> È una formula da imparare così."
+      },
+      {
+        q: "Quale frase è corretta?",
+        opts: ["Dann ich habe einen Film gesehen.", "Dann habe ich einen Film gesehen.", "Dann habe einen Film gesehen ich."],
+        why: "Dopo <i>dann</i> il verbo coniugato resta in seconda posizione e il soggetto lo segue: <i>Dann habe ich ...</i>; il participio chiude la frase."
+      },
+      {
+        q: "Completa: «Zuerst habe ich geschlafen, ___ habe ich gekocht.» (poi, usa dann)",
+        hint: "usa dann",
+        why: "<b>Dann</b> apre la seconda frase: verbo e soggetto si scambiano di posto, <i>habe ich</i>."
+      },
+      {
+        q: "Completa: «Wie ___ dein Wochenende?»",
+        hint: "è stato: la forma fissa",
+        why: "<b>war</b> è la formula per «è stato»: <i>Wie war dein Wochenende?</i>"
+      },
+      {
+        tr: "Dopo ho letto un libro.",
+        why: "<i>Danach habe ich ein Buch gelesen</i>: dopo <i>danach</i> verbo e soggetto si scambiano. Va bene anche <i>Ich habe danach ein Buch gelesen</i>."
+      },
+      {
+        q: "Traduci: «Poi ho cucinato per i miei amici.» (usa dann)",
+        why: "<i>Dann habe ich für meine Freunde gekocht</i>: <i>für</i> vuole l'accusativo. Va bene anche <i>Ich habe dann für meine Freunde gekocht</i>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Sabato ho dormito a lungo. Poi ho fatto una passeggiata.",
+        why: "Perfekt con <b>haben</b>: <i>habe geschlafen</i>, <i>habe ... gemacht</i>. Dopo <i>danach</i> il soggetto segue il verbo: <i>habe ich</i>."
+      },
+      {
+        q: "Completa il dialogo.",
+        setting: "Parli con un amico del fine settimana.",
+        lines: [
+          { tr: "Ciao! Com'è stato il tuo fine settimana?" },
+          { tr: "Rispondi che è stato bello e che hai incontrato amici.", answerTr: "È stato bello! Ho incontrato amici." },
+          { tr: "E domenica, cosa hai fatto?" },
+          { tr: "Rispondi che sei rimasto a casa.", answerTr: "Sono rimasto a casa." }
+        ]
+      },
+      {
+        tr: "Sabato ho incontrato amici, poi siamo andati al cinema.",
+        why: "In <i>getroffen</i> la doppia <b>ff</b> segnala di solito una vocale breve; in <i>Kino</i> la prima <b>i</b> è lunga."
+      },
+      {
+        tr: "Era bello! Ho ballato e ho incontrato amici.",
+        why: "In <i>getanzt</i> la <b>z</b> si legge [ts], come in «pizza»; in <i>Freunde</i> la <b>eu</b> si legge «oi»."
+      }
+    ]
+  },
+  "lesson:a1-u10-l4": {
+    theme: "Ripasso",
+    title: "Ripasso A1",
+    objectives: [
+      "ripassare il presente, l'accusativo e le preposizioni con il dativo",
+      "usare insieme presente e Perfekt in poche frasi",
+      "parlare di un viaggio breve in albergo"
+    ],
+    theory: [
+      {
+        h: "Ripasso: tre cose da non sbagliare",
+        p: "<strong>1.</strong> Il verbo coniugato sta in seconda posizione e nei verbi forti cambia la vocale con <em>du</em> ed <em>er</em>: <em>ich esse, du isst, er isst</em>. <strong>2.</strong> All'accusativo cambia solo il maschile: <em>der Koffer → den Koffer</em>, <em>ein Koffer → einen Koffer</em>. <strong>3.</strong> Dopo <em>mit, zu, bei, aus, von</em> si usa il dativo: <em>mit dem Zug, zum Strand</em> (zu dem), <em>aus Italien</em>."
+      },
+      {
+        contrast: "In italiano «in treno» e «in autobus» usano <em>in</em>; in tedesco il mezzo di trasporto vuole <strong>mit</strong> e il dativo: <em>mit dem Zug, mit dem Bus</em>. E «da» si traduce in modi diversi: <em>aus</em> per la provenienza (<em>Ich komme aus Italien</em>), <em>von</em> per il punto di partenza, <em>bei</em> per «da una persona»."
+      },
+      {
+        trap: "Al femminile e al neutro l'accusativo è identico al nominativo: <em>die Fahrkarte</em>, <em>das Zimmer</em>. Quindi <em>Ich nehme den Koffer</em> ma <em>Ich nehme die Fahrkarte</em>. Se sbagli il genere del nome, sbagli anche l'articolo: ripassa sempre il nome con il suo articolo."
+      },
+      {
+        tip: "Per ricordare le preposizioni: <em>mit, zu, bei, aus, von</em> vogliono sempre il dativo; <em>für, ohne, durch, um, gegen</em> vogliono sempre l'accusativo."
+      }
+    ],
+    grammar: {
+      title: "Ripasso: presente, accusativo, dativo",
+      note: "Verbo in seconda posizione; accusativo: solo il maschile cambia (<b>den</b>); dopo <b>mit, zu, bei, aus, von</b> il dativo.",
+      table: {
+        head: ["cosa", "regola", "esempio"],
+        rows: [
+          ["presente", "verbo in seconda posizione", "Ich fahre mit dem Zug."],
+          ["verbi forti", "vocale che cambia con du ed er", "Du isst, er sieht."],
+          ["accusativo", "der → den, ein → einen", "Wir nehmen den Koffer."],
+          ["dativo con mit, zu, bei, aus, von", "dem, der, dem; zum, zur", "Wir gehen zum Hotel."],
+          ["Perfekt", "haben o sein + participio in fondo", "Gestern bin ich früh aufgestanden."]
+        ]
+      },
+      examples: [
+        { tr: "Vado in treno alla spiaggia.", note: "mit dem Zug, zum Strand" },
+        { tr: "Prendiamo la valigia e il biglietto.", note: "accusativo: den Koffer, die Fahrkarte" },
+        { tr: "Vengo dall'Italia e abito da mia zia.", note: "aus, bei + dativo" },
+        { tr: "Lui vede un film e mangia una pizza.", note: "sehen e essen cambiano la vocale" },
+        { tr: "La sera andiamo all'albergo.", note: "zum = zu dem" },
+        { tr: "Ieri mi sono alzato presto.", note: "Perfekt con sein" }
+      ]
+    },
+    vocab: [
+      "il viaggio",
+      "la valigia",
+      "il biglietto (di viaggio)",
+      "l'albergo",
+      "la camera",
+      "la vacanza",
+      "il mare",
+      "la spiaggia"
+    ],
+    exercises: [
+      {
+        tr: "Il presente di sein, tutte le persone.",
+        why: "<i>Bin, bist, ist, sind, seid, sind</i>: forme irregolari da sapere a memoria. <i>Wir</i> e <i>sie/Sie</i> hanno la stessa forma."
+      },
+      {
+        tr: "Il presente di essen, tutte le persone.",
+        why: "<i>Essen</i> cambia vocale con <i>du</i> ed <i>er</i>: <b>isst</b> per entrambi. <i>Ich esse, wir essen, ihr esst, sie essen</i>."
+      },
+      {
+        tr: "Il presente di fahren, tutte le persone.",
+        why: "<i>Fahren</i> prende l'umlaut con <i>du</i> ed <i>er</i>: <b>fährst</b>, <b>fährt</b>."
+      },
+      {
+        q: "Completa: «Wir fahren ___ dem Zug nach Wien.» (con)",
+        hint: "mezzo di trasporto",
+        why: "<b>Mit</b> + dativo: <i>mit dem Zug</i>."
+      },
+      {
+        q: "Completa: «Ich nehme ___ Koffer.» (articolo determinativo, accusativo)",
+        hint: "Koffer è maschile",
+        why: "All'accusativo il maschile cambia: <b>den</b> Koffer."
+      },
+      {
+        q: "Completa: «Ich gehe ___ Bahnhof.» (verso, con l'articolo fuso)",
+        hint: "zu + dem",
+        why: "<b>Zum</b> = <i>zu dem</i>."
+      },
+      {
+        q: "Completa: «Er kommt ___ Italien.» (da)",
+        hint: "provenienza",
+        why: "Per la provenienza si usa <b>aus</b> + dativo."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Ieri mi sono alzato presto e ho bevuto un caffè.",
+        why: "<i>Aufstehen</i> prende <b>sein</b> (<i>ich bin aufgestanden</i>); <i>trinken</i> prende <b>haben</b> (<i>ich habe getrunken</i>)."
+      },
+      {
+        q: "Scegli l'articolo determinativo giusto per ogni nome.",
+        items: ["valigia", "viaggio", "albergo", "camera", "spiaggia", "biglietto"]
+      },
+      {
+        tr: "Andiamo in treno alla spiaggia.",
+        why: "<i>Wir fahren mit dem Zug zum Strand</i>: <i>mit</i> + dativo, <i>zu dem</i> si fonde in <i>zum</i>. Le altre posizioni del complemento sono possibili, perché il verbo resta secondo."
+      },
+      {
+        tr: "Vado in treno alla spiaggia e prendo la mia valigia.",
+        why: "In <i>Strand</i> la <b>st</b> iniziale si legge [ʃt], come la «sc» di «scena» seguita da una t; in <i>Koffer</i> la doppia <b>ff</b> segnala di solito una vocale breve."
+      },
+      {
+        tr: "Abbiamo una camera in albergo e domani andiamo al mare.",
+        why: "In <i>Zimmer</i> la <b>Z</b> si legge [ts]; in <i>Meer</i> la <b>ee</b> è una <b>e</b> lunga."
+      }
+    ]
+  },
+  "lesson:a1-u10-test": {
+    theme: "Verifica",
+    title: "Esame finale A1",
+    objectives: ["verificare presente, Perfekt con haben e con sein, accusativo, dativo e genere dei nomi"],
+    theory: [
+      {
+        p: "Dodici domande su tutto l'A1. Si supera con il 70%. Non riguardare le lezioni mentre rispondi: se non ricordi qualcosa, è meglio tornare a ripassare."
+      }
+    ],
+    exercises: [
+      {
+        q: "Completa: «Ich ___ gestern Fußball gespielt.»",
+        hint: "ausiliare, prima persona singolare",
+        why: "<i>Spielen</i> prende <b>haben</b>: <i>ich habe gespielt</i>."
+      },
+      {
+        q: "Completa: «Am Samstag ___ wir nach Wien gefahren.»",
+        hint: "ausiliare, prima persona plurale",
+        why: "<i>Fahren</i> con una destinazione indica un cambio di luogo: <b>sind</b>."
+      },
+      {
+        q: "Completa: «Wir haben einen Film ___.» (vedere)",
+        hint: "participio II di sehen",
+        why: "<i>Sehen</i> è forte: <b>gesehen</b>."
+      },
+      {
+        q: "Completa: «Ich nehme ___ Kaffee.» (articolo determinativo, accusativo)",
+        hint: "Kaffee è maschile",
+        why: "All'accusativo il maschile cambia: <b>den</b> Kaffee."
+      },
+      {
+        q: "Completa: «Ich fahre ___ dem Bus.» (con)",
+        hint: "mezzo di trasporto",
+        why: "<b>Mit</b> + dativo."
+      },
+      {
+        q: "Completa: «Sie ist früh ___.» (alzarsi, aufstehen)",
+        hint: "ge- va in mezzo",
+        why: "<b>aufgestanden</b>: <i>auf</i> + <i>ge</i> + <i>standen</i>, con <i>sein</i>."
+      },
+      {
+        q: "Quale frase è corretta?",
+        opts: ["Ich habe nach Berlin gefahren.", "Ich bin nach Berlin gefahren.", "Ich bin nach Berlin gefahrt."],
+        why: "<i>Fahren</i> con una destinazione prende <b>sein</b> e ha il participio forte <i>gefahren</i>."
+      },
+      {
+        q: "Qual è il participio II di «besuchen»?",
+        opts: ["gebesucht", "besucht", "besuchen"],
+        why: "<i>Be-</i> è un prefisso inseparabile: niente <i>ge-</i>. Il participio è <b>besucht</b>."
+      },
+      {
+        q: "Scegli l'articolo determinativo giusto per ogni nome.",
+        items: ["film", "fine settimana", "festa", "passeggiata", "museo", "biglietto"]
+      },
+      {
+        tr: "Il Perfekt di gehen: ausiliare e participio.",
+        why: "<i>Ich bin gegangen, du bist gegangen, er ist gegangen, wir sind gegangen</i>: <i>gehen</i> prende <b>sein</b>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Prima ho incontrato amici. Poi siamo andati al cinema.",
+        why: "<i>Zuerst</i> apre la frase; <i>habe ich ... getroffen</i> con haben; <i>sind wir ... gegangen</i> con sein."
+      },
+      {
+        tr: "Nel fine settimana sono andato a Vienna e ho visitato un museo.",
+        why: "In <i>Museum</i> l'accento cade su <b>se</b> e la <b>s</b> è sonora; in <i>besucht</i> la <b>ch</b> dopo <b>u</b> è [x]."
+      }
+    ]
   }
 });
