@@ -566,14 +566,14 @@ LINGUAI.addStrings("pl", {
         { tr: "Lecimy do Włoch.", note: "nach + kraj bez rodzajnika" },
         { tr: "Latem jadą do Szwajcarii.", note: "wohin? in + biernik: in die Schweiz" },
         { tr: "On jedzie do swojej cioci.", note: "zu + celownik: zu seiner Tante" },
-        { tr: "Idziemy na dworzec.", note: "zu + celownik: zum (zu dem) Bahnhof" },
+        { tr: "Jedziemy na dworzec.", note: "zu + celownik: zum (zu dem) Bahnhof" },
         { tr: "Moja ciocia mieszka w Szwajcarii.", note: "wo? in + celownik: in der Schweiz" }
       ]
     },
     vocab: [
       "dworzec",
       "pociąg",
-      "peron, tor",
+      "tor",
       "bilet kolejowy",
       "rozkład jazdy",
       "odjazd",
@@ -967,8 +967,8 @@ LINGUAI.addStrings("pl", {
         why: "Z tych elementów wychodzi szyk ze zdaniem podrzędnym na początku: <i>Wenn ich angekommen bin, rufe ich dich an</i>. Czasownik rozdzielny <i>anrufen</i> zostawia <i>an</i> na końcu zdania głównego."
       },
       {
-        q: "Przetłumacz: «Kiedy dojeżdżam, dzwonię do ciebie.»",
-        why: "Wystarczy czas teraźniejszy: <i>Wenn ich ankomme, rufe ich dich an</i>. Pasuje też Perfekt w zdaniu podrzędnym (<i>angekommen bin</i>) albo Futur I w zdaniu głównym (<i>werde ich dich anrufen</i>), a kolejność można odwrócić."
+        q: "Przetłumacz: «Kiedy dojadę, zadzwonię do ciebie.»",
+        why: "Polskie «dojadę» to przyszłość dokonana, a po niemiecku wystarczy czas teraźniejszy: <i>Wenn ich ankomme, rufe ich dich an</i>. Pasuje też Perfekt w zdaniu podrzędnym (<i>angekommen bin</i>) albo Futur I w zdaniu głównym (<i>werde ich dich anrufen</i>), a kolejność można odwrócić."
       },
       {
         tr: "Kiedy dojadę, zadzwonię do ciebie, a potem pójdziemy razem coś zjeść.",
@@ -1033,7 +1033,7 @@ LINGUAI.addStrings("pl", {
         why: "W <i>Wien</i> <b>W</b> to [v], a <b>ie</b> to długie <b>i</b>; w <i>angekommen</i> <b>n</b> i <b>g</b> należą do różnych cząstek (<i>an-ge-</i>) i wymawia się je osobno [nɡ], a nie jako jedną spółgłoskę nosową [ŋ]."
       },
       {
-        tr: "Latem pojedziemy do Szwajcarii, a potem idę do mojej cioci.",
+        tr: "Latem pojedziemy do Szwajcarii, a potem jadę do mojej cioci.",
         why: "W <i>Schweiz</i> <b>sch</b> to [ʃ], <b>w</b> to [v], a <b>ei</b> brzmi [aɪ]."
       }
     ]
@@ -1053,13 +1053,13 @@ LINGUAI.addStrings("pl", {
     theory: [
       {
         h: "Zaimek w bierniku zamiast rzeczownika",
-        p: "Żeby nie powtarzać rzeczownika, który jest <b>dopełnieniem bliższym</b>, używa się zaimka w bierniku: <em>mich, dich, ihn, sie, es, uns, euch, sie, Sie</em>. W porównaniu z mianownikiem zmieniają się <em>ich, du, er, wir, ihr</em>; <em>sie</em> i <em>es</em> zostają takie same. Zaimek odpowiada <b>rodzajowi niemieckiego rzeczownika</b>, także przy rzeczach: <em>der Bruder → ihn</em>, <em>die Kollegin → sie</em>, <em>das Kind → es</em>, <em>der Schlüssel → ihn</em>. W zwykłym zdaniu głównym zaimek stoi zaraz po odmienionym czasowniku: <em>Ich kenne ihn gut.</em> Jeśli zdanie zaczyna się od innego elementu, zaimek idzie za podmiotem: <em>Morgen sehe ich ihn.</em> W zdaniu podrzędnym stoi po spójniku i podmiocie, przed czasownikiem na końcu: <em>..., weil ich ihn gut kenne.</em>"
+        p: "Żeby nie powtarzać rzeczownika, który jest <b>dopełnieniem bliższym</b>, używa się zaimka w bierniku: <em>mich, dich, ihn, sie, es, uns, euch, sie, Sie</em>. W porównaniu z mianownikiem zmieniają się <em>ich, du, er, wir, ihr</em>; <em>sie</em> i <em>es</em> zostają takie same. Zaimek odpowiada <b>rodzajowi niemieckiego rzeczownika</b>, także przy rzeczach: <em>der Bruder → ihn</em>, <em>die Kollegin → sie</em>, <em>das Kind → es</em>, <em>der Schlüssel → ihn</em>. W zwykłym zdaniu głównym zaimek stoi zaraz po odmienionym czasowniku: <em>Ich kenne ihn gut.</em> Jeśli zdanie zaczyna się od innego elementu, a podmiotem jest zaimek, zaimek dopełnienia idzie za nim: <em>Morgen sehe ich ihn.</em> Gdy podmiotem jest rzeczownik, zaimek zwykle stoi przed nim: <em>Morgen sieht ihn mein Bruder.</em> W zdaniu podrzędnym stoi po spójniku i podmiocie, przed czasownikiem na końcu: <em>..., weil ich ihn gut kenne.</em>"
       },
       {
         contrast: "Polskie zaimki też zmieniają się w bierniku (<em>widzę go, ją, je, was</em>), ale rodzaj rzeczy nie zawsze się zgadza z niemieckim. Zaimek idzie za rodzajem <b>niemieckiego</b> rzeczownika: «rower» jest po polsku rodzaju męskiego (<em>kupuję go</em>), a <em>das Fahrrad</em> jest nijakie, więc <em>Ich kaufe es</em>; «dziewczynka» jest żeńska (<em>widzę ją</em>), a <em>das Mädchen</em> jest nijakie, więc <em>Ich sehe es</em>. Natomiast «klucz» i <em>der Schlüssel</em> są oba męskie (<em>Ich sehe ihn</em>), a «gazeta» i <em>die Zeitung</em> oba żeńskie (<em>Ich lese sie</em>). Warto też pamiętać, że niemieckie <em>sie</em> w bierniku jest takie samo jak w mianowniku, a polskie «ona» zmienia się w «ją»."
       },
       {
-        trap: "<em>Sie</em> może znaczyć «ona», «oni/one», «ją», «je», a z wielką literą także grzecznościowe «Pan/Pani/Państwo»: o znaczeniu decyduje czasownik i kontekst (<em>Ich sehe sie</em>, samo, jest niejednoznaczne). Z wielką literą jest formą grzecznościową: <em>Ich kenne Sie</em> to «znam Pana/Panią/Państwa». Nie myl też <em>ihn</em> (biernik) z <em>ihm</em> (celownik): <em>Ich sehe ihm</em> jest błędne, bo <em>sehen</em> wymaga biernika."
+        trap: "<em>Sie</em> może znaczyć «ona», «oni/one», «ją», «je», «ich» (biernik, mężczyźni lub grupa mieszana: <em>Ich sehe sie</em> to «Widzę ich» albo «Widzę je», zależnie od tego, kogo lub co widzę; po polsku forma zależy od rodzaju osoby, po niemiecku <em>sie</em> jest zawsze to samo), a z wielką literą także grzecznościowe «Pan/Pani/Państwo»: w środku zdania wielka litera oznacza formę grzecznościową, a na początku zdania (<em>Sie sieht mich</em> = «Ona mnie widzi») o znaczeniu decyduje forma czasownika i kontekst (<em>Ich sehe sie</em>, samo, jest niejednoznaczne). W środku zdania z wielką literą jest formą grzecznościową: <em>Ich kenne Sie</em> to «znam Pana/Panią/Państwa». Nie myl też <em>ihn</em> (biernik) z <em>ihm</em> (celownik): <em>Ich sehe ihm</em> jest błędne, bo <em>sehen</em> wymaga biernika."
       },
       {
         tip: "Zanim napiszesz zaimek, powtórz niemiecki rzeczownik z rodzajnikiem: <em>der → ihn</em>, <em>die → sie</em>, <em>das → es</em>, <em>die</em> (liczba mnoga) <em>→ sie</em>. Zaimek dla osoby jest taki sam jak dla rzeczy tego samego rodzaju."
@@ -1136,18 +1136,18 @@ LINGUAI.addStrings("pl", {
         why: "<b>Sie</b>: biernik od <i>sie</i> (ona) jest taki sam jak mianownik."
       },
       {
-        q: "Uzupełnij zdanie.",
+        q: "Uzupełnij zdanie (druga luka: ich, biernik).",
         tr: "Moja koleżanka z pracy jest miła. Często się z nią spotykam, a czasem mnie zaprasza.",
         why: "<i>Sie</i> to biernik od <i>die Kollegin</i>; <i>mich</i> to biernik od <i>ich</i>. <i>Einladen</i> jest rozdzielne: <i>ein</i> idzie na koniec."
       },
       {
         q: "Ułóż wyrazy w odpowiedniej kolejności.",
         tr: "Dziś spotykam się z nią w kawiarni.",
-        why: "Czasownik zostaje na drugim miejscu, a zaimek <i>sie</i> idzie za podmiotem <i>ich</i>. Pasują też <i>Ich treffe sie heute im Café</i> i <i>Im Café treffe ich sie heute</i>."
+        why: "Czasownik zostaje na drugim miejscu, a zaimek <i>sie</i> idzie za podmiotem zaimkowym <i>ich</i>. Pasują też <i>Ich treffe sie heute im Café</i>, <i>Im Café treffe ich sie heute</i> oraz <i>Sie treffe ich heute im Café</i> (dopełnienie na pierwszym miejscu)."
       },
       {
         q: "Przetłumacz (mówisz o swoim bracie): «Widzę go jutro.»",
-        why: "<i>Ich sehe ihn morgen</i>: zaimek idzie za czasownikiem. Gdy <i>morgen</i> otwiera zdanie, czasownik zostaje na drugim miejscu, a podmiot idzie za nim (<i>Morgen sehe ich ihn</i>). Pasuje też <i>treffen</i>."
+        why: "<i>Ich sehe ihn morgen</i>: zaimek idzie za czasownikiem. Gdy <i>morgen</i> otwiera zdanie, czasownik zostaje na drugim miejscu, a podmiot idzie za nim (<i>Morgen sehe ich ihn</i>)."
       },
       {
         tr: "Znasz mojego brata? Widuję go codziennie, a on często mnie odwiedza.",
@@ -1268,7 +1268,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         tr: "Plecak jest mój, a kurtka bardzo mi się podoba.",
-        why: "W <i>gehört</i> akcent pada na <i>-hört</i>, gdzie <b>ö</b> jest długie ([øː]): wargi jak do <b>o</b>, język jak do <b>e</b>; w <i>Rucksack</i> obie samogłoski są krótkie, a <b>ck</b> sygnalizuje krótkie <b>a</b>."
+        why: "W <i>gehört</i> akcent pada na <i>-hört</i>, gdzie <b>ö</b> jest długie ([øː]): wargi jak do <b>o</b>, język jak do <b>e</b>; w <i>Rucksack</i> obie samogłoski są krótkie: <i>Ruck</i> + <i>Sack</i>, a każde <b>ck</b> sygnalizuje krótką samogłoskę przed nim."
       }
     ]
   },
@@ -1366,7 +1366,7 @@ LINGUAI.addStrings("pl", {
         why: "<b>Ihm</b>: celownik od <i>er</i>. Biernik <i>ihn</i> (rzecz, <i>der Schlüssel</i>) stoi pierwszy."
       },
       {
-        q: "Uzupełnij zdanie.",
+        q: "Uzupełnij zdanie (druga luka: du, celownik).",
         tr: "List jest gotowy. Jutro ci go wyślę.",
         why: "<i>Der Brief</i> jest rodzaju męskiego: <b>ihn</b> (biernik) stoi przed <b>dir</b> (celownik). Po polsku «ci go» ma celownik na pierwszym miejscu: w niemieckim kolejność jest odwrotna."
       },
@@ -1497,7 +1497,7 @@ LINGUAI.addStrings("pl", {
         why: "W <i>Sag</i> końcowe <b>g</b> czyta się zwykle [k], jak w polskim «Bóg»; w <i>zusammen</i> <b>z</b> to [ts], a <b>s</b> przed samogłoską jest zwykle dźwięczne."
       },
       {
-        tr: "Wpadnij do mnie kiedyś i weź sobie trochę czasu!",
+        tr: "Wpadnij do mnie i znajdź chwilę czasu!",
         why: "W <i>vorbei</i> <b>v</b> czyta się [f]; w <i>Moment</i> akcent pada na drugą sylabę."
       }
     ]
@@ -1550,7 +1550,7 @@ LINGUAI.addStrings("pl", {
         why: "Przy dwóch zaimkach biernik (<i>es</i>) stoi przed celownikiem (<i>dir</i>)."
       },
       {
-        q: "Przetłumacz: «Jutro dam mu książkę.»",
+        q: "Przetłumacz: «Jutro dam mu książkę (das Buch).»",
         why: "<i>Ich gebe ihm das Buch morgen</i>: zaimek w celowniku <i>ihm</i> stoi przed rzeczownikiem <i>das Buch</i>. Pasują też <i>Morgen gebe ich ihm das Buch</i> i <i>Ich gebe ihm morgen das Buch</i>."
       },
       {

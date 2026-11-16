@@ -1200,7 +1200,7 @@ LINGUAI.addStrings("fr", {
         p: "Avec un verbe séparable, <strong>zu se place au milieu</strong>, entre le préfixe et le verbe, et tout s'écrit en un seul mot : <em>mitkommen</em> → <em>Hast du Lust, mitzukommen?</em> ; <em>einladen</em> → <em>Es ist schön, Freunde einzuladen.</em> On met la <strong>virgule</strong> quand le groupe avec <em>zu</em> est étoffé, c'est-à-dire qu'il comprend d'autres mots que l'infinitif (<em>..., am Samstag zu meiner Party zu kommen</em>) ; après un nom comme <em>Lust</em> ou <em>Zeit</em>, on l'écrit en général toujours. Après un verbe, avec l'infinitif seul (<em>Ich versuche zu schlafen</em>), la virgule est facultative."
       },
       {
-        contrast: "Le français emploie <em>de</em> + infinitif : <em>tu as envie de venir ?</em>, <em>je n'ai pas le temps de cuisiner</em>. L'allemand a <em>zu</em> + infinitif, qui se place toujours directement devant le verbe et à la fin de la phrase, alors qu'en français <em>de venir</em> suit tout de suite le verbe principal. Le français n'a pas de verbes à préfixe séparable : <em>mitzukommen</em> (avec <em>zu</em> à l'intérieur du mot) est donc nouveau, alors qu'en français on dirait <em>venir avec</em>, en deux mots. Après les verbes modaux (<em>können, müssen, wollen</em>), en allemand il n'y a <strong>pas</strong> de <em>zu</em>, comme en français il n'y a pas de <em>de</em> après <em>pouvoir</em> ou <em>vouloir</em> : <em>Kannst du kommen?</em> (tu peux venir ?)."
+        contrast: "Le français emploie <em>de</em> + infinitif : <em>tu as envie de venir ?</em>, <em>je n'ai pas le temps de cuisiner</em>. L'allemand a <em>zu</em> + infinitif, et le groupe de l'infinitif place l'infinitif à la fin : <em>am Samstag zu meiner Party zu kommen</em>, alors qu'en français les compléments restent après l'infinitif (<em>venir samedi à ma fête</em>). Le français n'a pas de verbes à préfixe séparable : <em>mitzukommen</em> (avec <em>zu</em> à l'intérieur du mot) est donc nouveau, alors qu'en français on dirait <em>venir avec</em>, en deux mots. Après les verbes modaux (<em>können, müssen, wollen</em>), en allemand il n'y a <strong>pas</strong> de <em>zu</em>, comme en français il n'y a pas de <em>de</em> après <em>pouvoir</em> ou <em>vouloir</em> : <em>Kannst du kommen?</em> (tu peux venir ?)."
       },
       {
         trap: "On n'écrit pas «zu mitkommen» ni «mit zu kommen» : la forme est <em>mitzukommen</em>, en un seul mot. Et on ne dit pas «Hast du Lust, kommen?» : il faut <em>zu</em>, <em>Hast du Lust, zu kommen?</em>. Après un modal, en revanche, <em>zu</em> manque : <em>Ich kann kommen</em>, pas «Ich kann zu kommen»."
@@ -1526,11 +1526,11 @@ LINGUAI.addStrings("fr", {
         why: "<i>Langsam</i> est l'adjectif sans terminaison employé comme adverbe ; <i>Hoffentlich</i> ouvre la phrase et le verbe <i>kommst</i> reste en deuxième position."
       },
       {
-        tr: "D'habitude, je fête mon anniversaire à la maison. Malheureusement, je n'ai pas le temps samedi, mais peut-être que nous fêterons plus tard.",
-        why: "Dans <i>normalerweise</i>, le <b>w</b> est [v] et le <b>ei</b> est [aɪ] ; dans <i>vielleicht</i>, le <b>v</b> est [f], le premier <b>i</b> est bref et sans accent, qui tombe sur la deuxième syllabe [fiˈlaɪçt], et le <b>ch</b> après <b>ei</b> est [ç] ; dans <i>später</i>, le <b>sp</b> initial est [ʃp]."
+        tr: "D'habitude, je fête mon anniversaire à la maison. Malheureusement, je n'ai pas le temps samedi, mais peut-être que nous ferons la fête plus tard.",
+        why: "Dans <i>normalerweise</i>, le <b>w</b> est [v] et le <b>ei</b> est [aɪ] ; dans <i>vielleicht</i>, l'accent tombe sur la deuxième syllabe (<i>-leicht</i>), le <b>ei</b> est [aɪ] et le <b>ch</b> final est [ç] ; dans <i>später</i>, le <b>sp</b> initial est [ʃp]."
       },
       {
-        tr: "J'espère que tu viendras à la fête. Peut-être que nous fêterons plus tard.",
+        tr: "J'espère que tu viendras à la fête. Peut-être que nous ferons la fête plus tard.",
         why: "Dans <i>hoffentlich</i>, le <b>ch</b> après <b>i</b> est [ç] ; dans <i>später</i>, le <b>sp</b> initial se lit [ʃp] ; dans <i>vielleicht</i>, le <b>v</b> est [f]."
       }
     ]
@@ -1589,7 +1589,7 @@ LINGUAI.addStrings("fr", {
         why: "Dans <i>Glückwunsch</i>, le <b>ü</b> est bref [ʏ] et le <b>sch</b> est [ʃ] ; dans <i>Samstag</i>, le <b>s</b> initial est sonore [z] ; dans <i>Lust</i>, le <b>u</b> est bref."
       },
       {
-        tr: "Je te souhaite un bon anniversaire. Tu as envie de fêter avec nous ?",
+        tr: "Je te souhaite un bon anniversaire. Tu as envie de faire la fête avec nous ?",
         why: "Dans <i>gratuliere</i>, le <b>ie</b> est un <b>i</b> long [iː] ; dans <i>Geburtstag</i>, l'accent tombe sur <b>bur</b> ; dans <i>feiern</i>, le <b>ei</b> est [aɪ]."
       }
     ]

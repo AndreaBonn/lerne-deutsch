@@ -1527,7 +1527,7 @@ LINGUAI.addStrings("en", {
       },
       {
         tr: "I usually celebrate my birthday at home. Unfortunately I don't have time on Saturday, but maybe we'll celebrate later.",
-        why: "In <i>normalerweise</i> the <b>w</b> is [v] and the <b>ei</b> is [aɪ]; in <i>vielleicht</i> the <b>v</b> is [f], the first <b>i</b> is short and unstressed, the stress falls on the second syllable [fiˈlaɪçt], and the <b>ch</b> after <b>ei</b> is [ç]; in <i>später</i> the initial <b>sp</b> is [ʃp]."
+        why: "In <i>normalerweise</i> the <b>w</b> is [v] and the <b>ei</b> is [aɪ]; in <i>vielleicht</i> the stress falls on the second syllable (<i>-leicht</i>), the <b>ei</b> is [aɪ] and the final <b>ch</b> is [ç]; in <i>später</i> the initial <b>sp</b> is [ʃp]."
       },
       {
         tr: "I hope you come to the party. Maybe we'll celebrate later.",
