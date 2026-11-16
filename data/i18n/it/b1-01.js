@@ -1226,7 +1226,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Quale frase significa «Il modulo viene compilato»?",
         opts: ["Das Formular wird ausgefüllt.", "Das Formular ist ausgefüllt.", "Das Formular hat ausgefüllt."],
-        why: "<b>Wird ausgefüllt</b>: <i>werden</i> + participio II, il processo. <i>Ist ausgefüllt</i> è una frase corretta ma dice che il modulo è già compilato; <i>hat ausgefüllt</i> non ha un soggetto che compili."
+        why: "<b>Wird ausgefüllt</b>: <i>werden</i> + participio II, il processo. <i>Ist ausgefüllt</i> è una frase corretta ma dice che il modulo è già compilato; <i>Das Formular hat ausgefüllt</i> è attiva: fa del modulo chi compila, e non ha senso."
       },
       {
         q: "Ieri la domanda è stata controllata. Quale frase?",
@@ -1289,14 +1289,14 @@ LINGUAI.addStrings("it", {
     title: "Banca e contratto d'affitto",
     objectives: [
       "usare il genitivo per dire a chi appartiene qualcosa",
-      "riconoscere le desinenze -(e)s al maschile e al neutro",
+      "riconoscere le desinenze -(e)s al maschile e al neutro, e -(e)n dei maschili deboli",
       "usare wegen, während e innerhalb con il genitivo",
       "parlare allo sportello di una banca in modo formale"
     ],
     theory: [
       {
-        h: "Il genitivo: il quarto caso",
-        p: "Il <strong>genitivo</strong> indica il possesso o la relazione, e sta <strong>dopo</strong> il nome a cui si riferisce: <em>der Vertrag des Vermieters</em>, <em>die Höhe der Miete</em>. L'articolo cambia: maschile e neutro <strong>des</strong>, femminile e plurale <strong>der</strong>. Al maschile e al neutro il nome prende anche <strong>-s</strong> o <strong>-es</strong>: <em>des Vermieters, des Vertrags, des Hauses</em>."
+        h: "Il genitivo: il secondo caso",
+        p: "Il <strong>genitivo</strong> indica il possesso o la relazione, e sta <strong>dopo</strong> il nome a cui si riferisce: <em>der Vertrag des Vermieters</em>, <em>die Höhe der Miete</em>. L'articolo cambia: maschile e neutro <strong>des</strong>, femminile e plurale <strong>der</strong>. Al maschile e al neutro la maggior parte dei nomi prende anche <strong>-s</strong> o <strong>-es</strong>: <em>des Vermieters, des Vertrags, des Hauses</em>. I maschili deboli prendono <strong>-(e)n</strong>: <em>des Kunden, des Studenten</em>."
       },
       {
         h: "wegen, während, innerhalb",
@@ -1318,7 +1318,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Il genitivo e wegen, während, innerhalb",
-      note: "Genitivo: <b>des</b> (m. e n.) + nome in <b>-(e)s</b>, <b>der</b> (f. e plurale). Sta <b>dopo</b> il nome posseduto. Con <b>wegen, während, innerhalb</b>.",
+      note: "Genitivo: <b>des</b> (m. e n.) + nome in <b>-(e)s</b> (i maschili deboli: <b>-(e)n</b>, <i>des Kunden</i>), <b>der</b> (f. e plurale). Sta <b>dopo</b> il nome posseduto. Con <b>wegen, während, innerhalb</b>.",
       table: {
         head: ["", "m.", "f.", "n.", "plurale"],
         rows: [
@@ -1414,7 +1414,7 @@ LINGUAI.addStrings("it", {
     title: "Mi lamento, affinché ...",
     objectives: [
       "dire lo scopo con um ... zu quando il soggetto è lo stesso",
-      "dire lo scopo con damit quando i soggetti sono diversi",
+      "dire lo scopo con damit, soprattutto quando i soggetti sono diversi",
       "formulare un reclamo in modo educato con il Konjunktiv II",
       "non confondere damit (scopo) e weil (causa)"
     ],
@@ -1424,8 +1424,8 @@ LINGUAI.addStrings("it", {
         p: "Per dire <strong>a che scopo</strong> si fa qualcosa, quando il soggetto è lo stesso nelle due parti, si usa <strong>um ... zu</strong> con l'infinito in fondo: <em>Ich rufe an, um mich zu beschweren.</em> Con un verbo separabile <em>zu</em> va in mezzo: <em>Ich gehe zum Bürgeramt, um mich anzumelden.</em> Prima di <em>um</em> c'è sempre la virgola."
       },
       {
-        h: "damit: soggetti diversi",
-        p: "Quando i soggetti sono <strong>diversi</strong> si usa <strong>damit</strong>, seguito da una frase con il verbo coniugato in fondo, all'indicativo: <em>Ich schicke ein Foto, damit er den Schaden sieht.</em> Con soggetti diversi <em>um ... zu</em> non è possibile. Anche con lo stesso soggetto <em>damit</em> esiste (<em>..., damit ich pünktlich bin</em>), ma <em>um ... zu</em> è la forma più naturale."
+        h: "damit: lo scopo con un verbo coniugato",
+        p: "<strong>Damit</strong> esprime lo scopo e introduce una frase con il verbo coniugato in fondo, all'indicativo. È possibile con soggetti diversi (<em>Ich schicke ein Foto, damit er den Schaden sieht.</em>) e con lo stesso soggetto (<em>..., damit ich pünktlich bin</em>). Con soggetti diversi <em>um ... zu</em> non è possibile; con lo stesso soggetto <em>um ... zu</em> è la forma più naturale."
       },
       {
         h: "Un reclamo educato",
@@ -1435,27 +1435,27 @@ LINGUAI.addStrings("it", {
         contrast: "L'italiano usa <em>per + infinito</em> (<em>chiamo per lamentarmi</em>) e, con soggetti diversi, <em>affinché</em> o <em>perché</em> con il <strong>congiuntivo</strong> (<em>ti mando una foto perché tu veda</em>). Il tedesco usa <em>um ... zu</em> e <em>damit</em> con l'<strong>indicativo</strong>: <em>damit er den Schaden sieht</em>. Inoltre <em>perché</em> italiano è sia causale sia finale, mentre in tedesco sono due parole diverse."
       },
       {
-        trap: "<em>Weil</em> dà la causa, <em>damit</em> lo scopo: <em>Ich rufe an, weil die Heizung kaputt ist</em> (motivo) e <em>Ich rufe an, damit jemand sie repariert</em> (scopo). Con <em>um</em> da solo non si può unire una frase con un altro soggetto: <em>Ich rufe an, um der Handwerker kommt</em> è sbagliato. Con un solo nome si usa <em>für</em>: <em>Ich lerne für die Prüfung.</em>"
+        trap: "<em>Weil</em> dà la causa, <em>damit</em> lo scopo: <em>Ich rufe an, weil die Heizung kaputt ist</em> (motivo) e <em>Ich rufe an, damit jemand sie repariert</em> (scopo). Con <em>um</em> da solo non si può unire una frase con un altro soggetto: <em>Ich rufe an, um der Handwerker kommt</em> è sbagliato. Lo scopo espresso con un nome può usare <em>für</em> + accusativo (<em>Ich lerne für die Prüfung</em>) oppure <em>zu</em> + dativo (<em>zur Anmeldung</em>, <em>zur Reparatur</em>): la scelta dipende dalla costruzione."
       },
       {
-        tip: "Prima di scegliere, chiediti: chi compie le due azioni? Se è la stessa persona, <em>um ... zu</em>; se sono persone diverse, <em>damit</em>. E se parli con un ufficio o con un'azienda, apri con <em>Guten Tag</em> e usa <em>Sie</em>."
+        tip: "Prima di scegliere, chiediti: chi compie le due azioni? Se è la stessa persona, <em>um ... zu</em> è più naturale (<em>damit</em> resta possibile); se sono persone diverse, serve <em>damit</em>. E se parli con un ufficio o con un'azienda, apri con <em>Guten Tag</em> e usa <em>Sie</em>."
       }
     ],
     grammar: {
       title: "La finale: um ... zu e damit",
-      note: "Stesso soggetto: <b>um ... zu</b> + infinito. Soggetti diversi: <b>damit</b> + verbo coniugato in fondo, all'indicativo.",
+      note: "Scopo: <b>um ... zu</b> + infinito (stesso soggetto, forma più naturale) oppure <b>damit</b> + verbo coniugato in fondo, all'indicativo (stesso soggetto o soggetti diversi).",
       table: {
         head: ["costruzione", "quando", "esempio"],
         rows: [
           ["um ... zu + infinito", "stesso soggetto", "Ich rufe an, um mich zu beschweren."],
-          ["damit + verbo in fondo", "soggetti diversi", "Ich schicke ein Foto, damit er den Schaden sieht."],
+          ["damit + verbo in fondo", "stesso soggetto o soggetti diversi", "Ich schicke ein Foto, damit er den Schaden sieht."],
           ["weil + verbo in fondo", "causa, non scopo", "Ich rufe an, weil die Heizung kaputt ist."]
         ]
       },
       examples: [
         { tr: "Chiamo per lamentarmi.", note: "um ... zu, stesso soggetto: ich" },
         { tr: "Vado all'ufficio per registrare la residenza.", note: "verbo separabile: um mich anzumelden" },
-        { tr: "Mando una foto, così lui vede il danno.", note: "damit: due soggetti, ich e er" },
+        { tr: "Mando una foto affinché lui veda il danno.", note: "damit: scopo, due soggetti (ich e er)" },
         { tr: "Potrebbe ripararlo, per favore?", note: "Konjunktiv II di können: richiesta educata" },
         { tr: "Vorrei parlare con il Suo capo.", note: "würde gern + infinito" },
         { tr: "Vorremmo una soluzione rapida.", note: "hätten gern: Konjunktiv II di haben" }
@@ -1489,7 +1489,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa: «Ich schreibe eine E-Mail, ___ der Vermieter die Heizung repariert.»",
         hint: "scopo, soggetti diversi",
-        why: "<b>Damit</b>: soggetti diversi, verbo coniugato in fondo."
+        why: "<b>Damit</b>: scopo con un verbo coniugato in fondo (qui soggetti diversi)."
       },
       {
         q: "Completa: «Ich rufe an, um mich ___ beschweren.»",
@@ -1504,15 +1504,15 @@ LINGUAI.addStrings("it", {
       {
         q: "Abbina ogni espressione alla sua funzione.",
         pairs: [
-          "stesso soggetto, infinito",
-          "soggetti diversi, verbo coniugato",
+          "scopo, infinito (stesso soggetto)",
+          "scopo, verbo coniugato in fondo",
           "indica la causa",
           "indica lo scopo con un sostantivo"
         ]
       },
       {
         q: "Metti in ordine le parole (comincia con Ich).",
-        tr: "Mando una foto, così vede il danno.",
+        tr: "Mando una foto affinché lui veda il danno.",
         why: "<i>Ich schicke ein Foto, damit er den Schaden sieht.</i> Dopo <i>damit</i> il verbo coniugato <i>sieht</i> va in fondo."
       },
       {
@@ -1520,7 +1520,7 @@ LINGUAI.addStrings("it", {
         why: "<i>Ich rufe an, um mich zu beschweren</i>: <i>anrufen</i> è separabile, e dopo <i>um</i> il riflessivo <i>mich</i> resta davanti all'infinito."
       },
       {
-        tr: "Buongiorno, chiamo per lamentarmi. Il riscaldamento è rotto. Mando una foto, così Lei vede il danno. Potrebbe mandare qualcuno al più presto, per favore?",
+        tr: "Buongiorno, chiamo per lamentarmi. Il riscaldamento è rotto. Mando una foto affinché Lei veda il danno. Potrebbe mandare qualcuno al più presto, per favore?",
         why: "In <i>beschweren</i> la <b>sch</b> è [ʃ] e la <b>w</b> è [v]; in <i>Heizung</i> la <b>z</b> è [ts]; in <i>Könnten</i> la <b>ö</b> è arrotondata; in <i>schicke</i> la <b>sch</b> è [ʃ] e la <b>ck</b> segnala una vocale breve."
       },
       {
@@ -1591,7 +1591,7 @@ LINGUAI.addStrings("it", {
       "il preavviso",
       "l'orario di lavoro",
       "il posto di lavoro",
-      "dare le dimissioni (o licenziare)",
+      "dimettersi / recedere dal contratto (jemandem kündigen = licenziare qualcuno)",
       "assumere",
       "pagare",
       "a termine"
@@ -1713,8 +1713,8 @@ LINGUAI.addStrings("it", {
         pairs: [
           "Il modulo viene controllato.",
           "a causa del tempo",
-          "stesso soggetto, infinito",
-          "soggetti diversi, verbo coniugato"
+          "scopo, infinito (stesso soggetto)",
+          "scopo, verbo coniugato in fondo"
         ]
       },
       {

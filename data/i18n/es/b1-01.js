@@ -1148,5 +1148,583 @@ LINGUAI.addStrings("es", {
         why: "En <i>ich</i> la <b>ch</b> es [ç], en <i>Buch</i> es [x]; la <b>u</b> de <i>Buch</i> es larga [uː]; en <i>gelesen</i> la <b>s</b> es sonora [z]."
       }
     ]
+  },
+  "unit:b1-u03": {
+    title: "Oficinas y contratos",
+    grammarNote: "pasiva (Vorgangspassiv) en presente y Präteritum · genitivo y wegen, während, innerhalb · um ... zu y damit · registro formal"
+  },
+  "lesson:b1-u03-l1": {
+    theme: "Burocracia",
+    title: "La inscripción de residencia",
+    objectives: [
+      "entender y formar la pasiva con werden en presente y en Präteritum",
+      "decir quién hace la acción con von + dativo, cuando hace falta",
+      "distinguir el proceso (wird geprüft) del resultado (ist geprüft)",
+      "desenvolverse en una ventanilla con el registro formal"
+    ],
+    theory: [
+      {
+        h: "La pasiva con werden",
+        p: "La pasiva pone en primer plano <strong>lo que ocurre</strong>, no quién lo hace. Se forma con <strong>werden</strong> conjugado y el <strong>participio</strong> al final: <em>Das Formular wird ausgefüllt.</em> Para el pasado se usa el Präteritum de <em>werden</em>: <em>Das Formular wurde ausgefüllt.</em> El objeto de la frase activa pasa a ser el sujeto: <em>Die Beamtin prüft den Ausweis</em> se convierte en <em>Der Ausweis wird geprüft.</em>"
+      },
+      {
+        h: "Quién actúa: von + dativo",
+        p: "Si hace falta decir quién realiza la acción, se añade <strong>von + dativo</strong>: <em>Der Ausweis wird von der Beamtin geprüft.</em> Muy a menudo el agente no se dice, porque es obvio o no importa: <em>Termine werden online vergeben.</em> Por eso la pasiva es típica de formularios, avisos y oficinas."
+      },
+      {
+        h: "En la ventanilla: el registro formal",
+        p: "En una oficina se usa <strong>Sie</strong>, con <em>Herr</em> o <em>Frau</em> y el apellido. Una petición se formula con <em>ich möchte</em> o con el Konjunktiv II: <em>Ich möchte mich anmelden. Könnten Sie mir helfen?</em> La <strong>Anmeldung</strong> es la inscripción de tu domicilio en el Bürgeramt; normalmente hay que hacerla dentro de las dos semanas siguientes a la mudanza."
+      },
+      {
+        contrast: "El español tiene dos pasivas habituales: <em>el formulario es rellenado</em> (ser + participio) y <em>se rellena el formulario</em> (pasiva refleja), y además <em>el formulario está rellenado</em> para el resultado. El alemán usa <strong>werden</strong> para la acción (<em>wird ausgefüllt</em>) y <strong>sein</strong> para el resultado (<em>ist ausgefüllt</em>), como el español con <em>ser</em> y <em>estar</em>. Pero hay una diferencia: en español el participio concuerda (<em>rellenado, rellenada, rellenados</em>), en alemán no cambia: <em>der Ausweis wird geprüft</em>, <em>die Karte wird geprüft</em>, <em>die Formulare werden geprüft</em>. Y el alemán no suele recurrir a una forma como <em>se</em>: la pasiva con <em>werden</em> es la opción normal en los textos formales."
+      },
+      {
+        trap: "<em>Das Formular wird ausgefüllt</em> pone en primer plano la <strong>acción</strong> de rellenar el formulario, sin decir que ocurra justo ahora: puede ser un procedimiento habitual o algo futuro. <em>Das Formular ist ausgefüllt</em> es una frase correcta, pero describe el <strong>resultado</strong>: el formulario ya está rellenado. No son lo mismo: con <em>wird</em> se mira la acción, con <em>ist</em> el estado que queda. Del mismo modo, <em>wurde geprüft</em> lleva <em>werden</em>, mientras que <em>war geprüft</em> describe un estado pasado."
+      },
+      {
+        tip: "Para pasar de activa a pasiva, busca el objeto en acusativo: se convierte en el sujeto. <em>Man gibt das Formular ab</em> pasa a <em>Das Formular wird abgegeben.</em> Con un verbo separable el participio queda unido: <em>abgegeben, ausgefüllt, angemeldet</em>."
+      }
+    ],
+    grammar: {
+      title: "La pasiva en presente y en Präteritum",
+      note: "<b>werden</b> + <b>participio</b> al final: <b>wird geprüft</b> (presente), <b>wurde geprüft</b> (Präteritum). El agente, si hay, es <b>von + dativo</b>.",
+      table: {
+        head: ["", "presente", "Präteritum"],
+        rows: [
+          ["ich", "werde geprüft", "wurde geprüft"],
+          ["du", "wirst geprüft", "wurdest geprüft"],
+          ["er/sie/es", "wird geprüft", "wurde geprüft"],
+          ["wir", "werden geprüft", "wurden geprüft"],
+          ["ihr", "werdet geprüft", "wurdet geprüft"],
+          ["sie/Sie", "werden geprüft", "wurden geprüft"]
+        ]
+      },
+      examples: [
+        { tr: "Se rellena el formulario.", note: "werden + participio: la acción en primer plano" },
+        { tr: "Se comprueba el documento de identidad.", note: "el participio no cambia con el género" },
+        { tr: "La inscripción fue confirmada ayer.", note: "wurde: Präteritum de werden" },
+        { tr: "Las citas se asignan en línea.", note: "sin agente, plural: werden" },
+        { tr: "El certificado fue expedido enseguida.", note: "participio de un verbo separable: ausgestellt" },
+        { tr: "El formulario lo comprueba la funcionaria.", note: "von + dativo: von der Beamtin" }
+      ]
+    },
+    vocab: [
+      "la inscripción de residencia",
+      "la oficina de atención al ciudadano",
+      "la identificación fiscal alemana",
+      "la cita",
+      "el formulario",
+      "la constancia (el certificado)",
+      "el documento de identidad",
+      "la ventanilla",
+      "inscribir la residencia (sich anmelden)",
+      "rellenar",
+      "entregar",
+      "expedir"
+    ],
+    exercises: [
+      {
+        q: "¿Qué frase significa «Se rellena el formulario»?",
+        opts: ["Das Formular wird ausgefüllt.", "Das Formular ist ausgefüllt.", "Das Formular hat ausgefüllt."],
+        why: "<b>Wird ausgefüllt</b>: <i>werden</i> + participio, el proceso. <i>Ist ausgefüllt</i> es una frase correcta, pero dice que el formulario ya está rellenado; <i>Das Formular hat ausgefüllt</i> está en activa: convierte el formulario en quien rellena, y eso no tiene sentido."
+      },
+      {
+        q: "Ayer se comprobó la solicitud. ¿Qué frase?",
+        opts: [
+          "Der Antrag wurde gestern geprüft.",
+          "Der Antrag wird gestern geprüft.",
+          "Der Antrag werden gestern geprüft."
+        ],
+        why: "<b>Wurde geprüft</b>: Präteritum de <i>werden</i>. <i>Wird</i> es un presente, y <i>werden</i> no concuerda con el singular <i>Antrag</i>."
+      },
+      {
+        q: "¿Qué frase es correcta?",
+        opts: [
+          "Der Ausweis wird von der Beamtin geprüft.",
+          "Der Ausweis wird von die Beamtin geprüft.",
+          "Der Ausweis wird von der Beamtin prüfen."
+        ],
+        why: "<b>Von + dativo</b>: <i>von der Beamtin</i>. El participio (<i>geprüft</i>) va al final, no el infinitivo."
+      },
+      {
+        q: "Completa: «Das Formular ___ ausgefüllt.»",
+        hint: "werden, presente",
+        why: "<b>Wird</b>: sujeto singular, pasiva de proceso en presente."
+      },
+      {
+        q: "Completa: «Der Pass ___ gestern ausgestellt.»",
+        hint: "werden, Präteritum",
+        why: "<b>Wurde</b>: la pista pide el Präteritum de <i>werden</i>, es decir, <i>wurde</i>. <i>Gestern</i> por sí solo no basta: la pasiva en Perfekt (<i>ist ... ausgestellt worden</i>) es otra forma, que aquí no se pide."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "El formulario se entrega en la ventanilla (pasiva en presente).",
+        why: "<i>Das Formular wird am Schalter abgegeben.</i> <i>Wird</i> + participio <i>abgegeben</i>, que queda unido."
+      },
+      {
+        q: "Relaciona cada frase con su significado.",
+        pairs: [
+          "Se rellena el formulario.",
+          "Se comprobó el documento de identidad.",
+          "Se asigna la cita.",
+          "Se expidió el certificado."
+        ]
+      },
+      {
+        q: "Traduce usando el pasivo de proceso con werden: «La solicitud es comprobada.»",
+        why: "<i>Der Antrag wird geprüft</i>: <i>werden</i> + participio. También vale <i>überprüft</i>."
+      },
+      {
+        tr: "Buenos días, quisiera inscribir mi residencia. El formulario se entrega en la ventanilla. Se comprueba el documento y el certificado se expide enseguida.",
+        why: "En <i>möchte</i> la <b>ö</b> es una vocal anterior redondeada y la <b>ch</b> es [ç]; en <i>Schalter</i> la <b>sch</b> es [ʃ]; en <i>Ausweis</i> la <b>au</b> es [aʊ] y la <b>w</b> es [v]; en <i>geprüft</i> la <b>ü</b> es una vocal anterior redondeada."
+      },
+      {
+        tr: "Buenos días, quisiera inscribir mi residencia. El formulario ya ha sido rellenado.",
+        why: "En <i>ich</i> la <b>ch</b> es [ç]; en <i>schon</i> la <b>sch</b> es [ʃ]; en <i>wurde</i> la <b>w</b> es [v]; en <i>ausgefüllt</i> la <b>ü</b> es una vocal anterior redondeada."
+      }
+    ]
+  },
+  "lesson:b1-u03-l2": {
+    theme: "Banco y alquiler",
+    title: "El banco y el contrato de alquiler",
+    objectives: [
+      "usar el genitivo para decir a quién pertenece algo",
+      "reconocer las terminaciones -(e)s en masculino y neutro",
+      "usar wegen, während e innerhalb con el genitivo",
+      "hablar en la ventanilla de un banco de forma formal"
+    ],
+    theory: [
+      {
+        h: "El genitivo",
+        p: "El <strong>genitivo</strong> indica posesión o relación, y va <strong>después</strong> del nombre al que se refiere: <em>der Vertrag des Vermieters</em>, <em>die Höhe der Miete</em>. El artículo cambia: masculino y neutro <strong>des</strong>, femenino y plural <strong>der</strong>. La mayoría de los nombres masculinos y neutros toman <strong>-s</strong> o <strong>-es</strong>: <em>des Vermieters, des Vertrags, des Hauses</em>; los masculinos débiles toman <strong>-n</strong> o <strong>-en</strong>: <em>des Kunden, des Studenten</em>."
+      },
+      {
+        h: "wegen, während, innerhalb",
+        p: "Algunas preposiciones llevan genitivo: <strong>wegen</strong> (a causa de), <strong>während</strong> (durante), <strong>innerhalb</strong> (dentro de, en el plazo de). <em>Wegen des Umzugs brauche ich ein neues Konto. Während des Urlaubs habe ich viel gelesen. Innerhalb einer Woche bekommen Sie Ihre Karte.</em> En la lengua hablada tras <em>wegen</em> se oye a menudo también el dativo; en los textos escritos y en las oficinas se espera el genitivo."
+      },
+      {
+        h: "Nombres propios y von + dativo",
+        p: "Con un <strong>nombre propio</strong> el genitivo toma <em>-s</em> y va <strong>antes</strong> del nombre, sin apóstrofo: <em>Annas Konto</em>. Si el nombre termina en sibilante (<em>-s, -x, -z, -ß</em>) se pone solo el apóstrofo: <em>Hans’ Konto, Max’ Konto</em>. En la lengua hablada se sustituye a menudo por <strong>von + dativo</strong>: <em>das Konto von meinem Bruder</em>."
+      },
+      {
+        contrast: "El español expresa la posesión con <em>de</em>: <em>el contrato del propietario, la cuenta de mi hermano</em>, y la preposición no cambia. En alemán es el artículo el que marca el caso, y el poseedor va después del nombre: <em>der Vertrag des Vermieters</em>. Solo con los nombres propios el poseedor va delante: <em>Annas Konto</em>, algo que en español sería <em>la cuenta de Ana</em>."
+      },
+      {
+        trap: "<em>Während</em> puede ser también una conjunción, y entonces el verbo va al final: <em>Während ich arbeite, ...</em>. El español distingue <em>durante</em> (preposición) y <em>mientras</em> (conjunción); el alemán usa la misma palabra para las dos. Como preposición (<em>während des Urlaubs</em>) lleva genitivo y no tiene verbo conjugado detrás. En femenino el nombre no cambia: <em>die Höhe der Miete</em>."
+      },
+      {
+        tip: "En la ventanilla del banco usa <em>Sie</em>: <em>Ich möchte ein Konto eröffnen. Könnten Sie mir bitte das Formular geben?</em> El registro formal no pide palabras difíciles, sino frases completas y el verbo en su sitio."
+      }
+    ],
+    grammar: {
+      title: "El genitivo y wegen, während, innerhalb",
+      note: "Genitivo: <b>des</b> (m. y n.) + nombre en <b>-(e)s</b> (masculinos débiles: <b>-(e)n</b>, p. ej. <i>des Kunden</i>), <b>der</b> (f. y plural). Va <b>después</b> del nombre poseído. Con <b>wegen, während, innerhalb</b>.",
+      table: {
+        head: ["", "m.", "f.", "n.", "plural"],
+        rows: [
+          ["artículo", "des", "der", "des", "der"],
+          ["ejemplo", "des Vermieters", "der Miete", "des Kontos", "der Mieter"]
+        ]
+      },
+      examples: [
+        { tr: "Este es el contrato del propietario.", note: "des Vermieters: masculino, nombre en -s" },
+        { tr: "El importe del alquiler está en el contrato.", note: "der Miete: femenino, el nombre no cambia" },
+        { tr: "A causa de la mudanza necesito una cuenta nueva.", note: "wegen + genitivo: des Umzugs" },
+        { tr: "Durante las vacaciones leí mucho.", note: "während + genitivo: des Urlaubs" },
+        { tr: "En el plazo de una semana recibe su tarjeta.", note: "innerhalb + genitivo: einer Woche" },
+        { tr: "La cuenta de Ana está en otro banco.", note: "nombre propio: Annas, antes del nombre" }
+      ]
+    },
+    vocab: [
+      "el contrato de alquiler",
+      "la cuenta",
+      "la renta (el alquiler)",
+      "el propietario (el arrendador)",
+      "el inquilino (el arrendatario)",
+      "la fianza",
+      "la rescisión (del contrato)",
+      "la fecha límite (el plazo)",
+      "la transferencia",
+      "abrir (una cuenta)",
+      "firmar",
+      "hacer una transferencia"
+    ],
+    exercises: [
+      {
+        q: "¿Qué frase es correcta?",
+        opts: [
+          "Die Höhe der Miete steht im Vertrag.",
+          "Die Höhe den Miete steht im Vertrag.",
+          "Die Höhe Miete steht im Vertrag."
+        ],
+        why: "<b>Der Miete</b>: <i>Miete</i> es femenino y el genitivo femenino lleva <i>der</i>. <i>Den</i> no es una forma del femenino singular, y sin artículo falta el caso."
+      },
+      {
+        q: "Completa: «Das ist der Vertrag ___ Vermieters.»",
+        hint: "genitivo masculino",
+        why: "<b>Des</b>: genitivo masculino, y el nombre toma <i>-s</i> (<i>des Vermieters</i>)."
+      },
+      {
+        q: "Completa: «Die Höhe ___ Miete steht im Vertrag.»",
+        hint: "genitivo femenino",
+        why: "<b>Der</b>: genitivo femenino singular. El nombre <i>Miete</i> no cambia."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Durante las vacaciones leí mucho.",
+        why: "<i>Während des Urlaubs habe ich viel gelesen.</i> <i>Während</i> como preposición lleva genitivo: <i>des Urlaubs</i>."
+      },
+      {
+        q: "Relaciona cada expresión con su significado.",
+        pairs: ["el coche del padre", "a causa del tiempo", "durante las vacaciones", "en el plazo de una semana"]
+      },
+      {
+        q: "Ordena las palabras.",
+        tr: "A causa de la mudanza necesito una cuenta nueva.",
+        why: "<i>Wegen des Umzugs brauche ich ein neues Konto.</i> También vale <i>Ich brauche wegen des Umzugs ein neues Konto</i>. En la primera, el verbo <i>brauche</i> está en segunda posición, tras el grupo <i>Wegen des Umzugs</i>."
+      },
+      {
+        q: "Traduce: «Esta es la cuenta de mi hermano.»",
+        why: "<i>Das ist das Konto meines Bruders</i>: genitivo masculino con <i>meines</i> y <i>-s</i> en el nombre. En la lengua hablada también vale <i>das Konto von meinem Bruder</i>."
+      },
+      {
+        q: "Estás en el banco y hablas con un empleado.",
+        setting: "Quieres abrir una cuenta y usas el registro formal.",
+        lines: [
+          { tr: "Buenos días. ¿En qué puedo ayudarle?" },
+          { tr: "Responde: quisieras abrir una cuenta.", answerTr: "Buenos días, quisiera abrir una cuenta." },
+          { tr: "Con mucho gusto. ¿Trae también una copia del contrato de alquiler?" },
+          { tr: "Responde: por supuesto, a causa de la mudanza lo traes todo.", answerTr: "Por supuesto. A causa de la mudanza lo traigo todo." },
+          { tr: "Perfecto. En el plazo de una semana recibe su tarjeta." },
+          { tr: "Pregunta si la tarjeta se envía por correo.", answerTr: "¿Se envía la tarjeta por correo?" }
+        ]
+      },
+      {
+        tr: "Buenos días, quisiera abrir una cuenta. Aquí está el contrato de alquiler. A causa de la mudanza necesito una cuenta nueva. En el plazo de una semana recibo la tarjeta.",
+        why: "En <i>eröffnen</i> la <b>ö</b> es una vocal anterior redondeada; en <i>Mietvertrag</i> la <b>ie</b> es larga [iː] y la <b>v</b> es [f]; en <i>Wegen</i> la <b>W</b> es [v]; en <i>Woche</i> la <b>ch</b> tras <b>o</b> es [x]."
+      },
+      {
+        tr: "El alquiler se paga por transferencia el día uno del mes.",
+        why: "En <i>Miete</i> la <b>ie</b> es larga [iː]; en <i>überwiesen</i> la <b>ü</b> es una vocal anterior redondeada, la <b>w</b> es [v] y la <b>s</b> entre dos vocales es sonora [z]."
+      }
+    ]
+  },
+  "lesson:b1-u03-l3": {
+    theme: "Reclamaciones",
+    title: "Me quejo para que ...",
+    objectives: [
+      "expresar la finalidad con um ... zu cuando el sujeto es el mismo",
+      "expresar la finalidad con damit, sobre todo cuando los sujetos son distintos",
+      "formular una queja con cortesía usando el Konjunktiv II",
+      "no confundir damit (finalidad) y weil (causa)"
+    ],
+    theory: [
+      {
+        h: "um ... zu: finalidad con el mismo sujeto",
+        p: "Para decir <strong>con qué fin</strong> se hace algo, cuando el sujeto es el mismo en las dos partes, se usa <strong>um ... zu</strong> con el infinitivo al final: <em>Ich rufe an, um mich zu beschweren.</em> Con un verbo separable, <em>zu</em> va en medio: <em>Ich gehe zum Bürgeramt, um mich anzumelden.</em> Las oraciones de infinitivo introducidas por <em>um</em> se separan con una coma."
+      },
+      {
+        h: "damit: normalmente sujetos distintos",
+        p: "Cuando los sujetos son <strong>distintos</strong> se usa <strong>damit</strong>, seguido de una oración con el verbo conjugado al final, en indicativo: <em>Ich schicke ein Foto, damit er den Schaden sieht.</em> Con sujetos distintos no se usa <em>um ... zu</em>. <em>Damit</em> también aparece con el mismo sujeto (<em>..., damit ich pünktlich bin</em>), pero <em>um ... zu</em> es la forma más natural."
+      },
+      {
+        h: "Una queja educada",
+        p: "En una queja el tono importa: el Konjunktiv II suaviza una petición. <em>Könnten Sie das bitte reparieren? Ich würde gern mit Ihrem Chef sprechen. Wir hätten gern eine schnelle Lösung.</em> Una petición en imperativo (<em>Reparieren Sie das!</em>) suena mucho más dura."
+      },
+      {
+        contrast: "El español usa <em>para + infinitivo</em> (<em>llamo para quejarme</em>) y, con sujetos distintos, <em>para que</em> con <strong>subjuntivo</strong> (<em>te mando una foto para que veas el daño</em>). El alemán reparte igual los dos casos, <em>um ... zu</em> y <em>damit</em>, pero <em>damit</em> lleva el <strong>indicativo</strong>: <em>damit er den Schaden sieht</em>. Además <em>porque</em> (causa) y <em>para que</em> (finalidad) son en español palabras distintas, y también lo son en alemán: <em>weil</em> y <em>damit</em>."
+      },
+      {
+        trap: "<em>Weil</em> da la causa, <em>damit</em> la finalidad: <em>Ich rufe an, weil die Heizung kaputt ist</em> (motivo) y <em>Ich rufe an, damit jemand sie repariert</em> (finalidad). Una oración con otro sujeto no se puede unir solo con <em>um</em>: <em>Ich rufe an, um der Handwerker kommt</em> es incorrecto. Una finalidad expresada con un nombre puede usar <em>für</em> + acusativo (<em>Ich lerne für die Prüfung</em>) o <em>zu</em> + dativo (<em>zur Anmeldung</em>, <em>zur Reparatur</em>): la elección depende de la construcción."
+      },
+      {
+        tip: "Antes de elegir, pregúntate quién realiza las dos acciones. Si es la misma persona, <em>um ... zu</em>; si son personas distintas, <em>damit</em>. Y si hablas con una oficina o una empresa, empieza con <em>Guten Tag</em> y usa <em>Sie</em>."
+      }
+    ],
+    grammar: {
+      title: "La oración final: um ... zu y damit",
+      note: "Mismo sujeto: <b>um ... zu</b> + infinitivo. Sujetos distintos (o el mismo): <b>damit</b> + verbo conjugado al final, en indicativo.",
+      table: {
+        head: ["construcción", "cuándo", "ejemplo"],
+        rows: [
+          ["um ... zu + infinitivo", "mismo sujeto", "Ich rufe an, um mich zu beschweren."],
+          ["damit + verbo al final", "finalidad; sujetos iguales o distintos", "Ich schicke ein Foto, damit er den Schaden sieht."],
+          ["weil + verbo al final", "causa, no finalidad", "Ich rufe an, weil die Heizung kaputt ist."]
+        ]
+      },
+      examples: [
+        { tr: "Llamo para quejarme.", note: "um ... zu, mismo sujeto: ich" },
+        { tr: "Voy a la oficina para inscribir mi residencia.", note: "verbo separable: um mich anzumelden" },
+        { tr: "Mando una foto para que él vea el daño.", note: "damit: dos sujetos, ich y er" },
+        { tr: "¿Podría repararlo, por favor?", note: "Konjunktiv II de können: petición educada" },
+        { tr: "Quisiera hablar con su jefe.", note: "würde gern + infinitivo" },
+        { tr: "Querríamos una solución rápida.", note: "hätten gern: Konjunktiv II de haben" }
+      ]
+    },
+    vocab: [
+      "la queja (la reclamación)",
+      "el defecto",
+      "el daño",
+      "la reparación",
+      "el operario (el que repara)",
+      "la factura",
+      "la garantía",
+      "la sustitución (el sustituto)",
+      "quejarse",
+      "reparar",
+      "sustituir",
+      "urgente"
+    ],
+    exercises: [
+      {
+        q: "Completa: «Ich rufe an, ___ mich zu beschweren.»",
+        opts: ["um", "damit", "weil"],
+        why: "<b>Um</b>: mismo sujeto (<i>ich</i>) e infinitivo con <i>zu</i>. <i>Damit</i> necesita un verbo conjugado, y <i>weil</i> da la causa."
+      },
+      {
+        q: "Completa para expresar la finalidad: «Ich schicke ein Foto, ___ der Vermieter den Schaden sieht.» (Mando una foto para que el propietario vea el daño.)",
+        opts: ["damit", "um", "weil"],
+        why: "<b>Damit</b>: los sujetos son distintos (<i>ich</i> y <i>der Vermieter</i>) y hay un verbo conjugado. <i>Um</i> no se usa con un sujeto nuevo. <i>Weil</i> daría una causa («porque el propietario ve el daño»), no la finalidad pedida."
+      },
+      {
+        q: "Completa: «Ich schreibe eine E-Mail, ___ der Vermieter die Heizung repariert.»",
+        hint: "finalidad, sujetos distintos",
+        why: "<b>Damit</b>: sujetos distintos, verbo conjugado al final."
+      },
+      {
+        q: "Completa: «Ich rufe an, um mich ___ beschweren.»",
+        hint: "um ... ?",
+        why: "<b>Zu</b>: <i>um ... zu + infinitivo</i>, con <i>zu</i> justo antes del verbo."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Voy a la oficina para inscribir mi residencia (sich anmelden).",
+        why: "<i>Ich gehe zum Bürgeramt, um mich anzumelden.</i> Con el verbo separable <i>anmelden</i>, <i>zu</i> va en medio: <i>anzumelden</i>."
+      },
+      {
+        q: "Relaciona cada expresión con su función.",
+        pairs: [
+          "mismo sujeto, infinitivo",
+          "finalidad, verbo conjugado al final; admite sujetos iguales o distintos",
+          "indica la causa",
+          "indica la finalidad con un sustantivo"
+        ]
+      },
+      {
+        q: "Ordena las palabras (empieza con Ich).",
+        tr: "Mando una foto para que vea el daño.",
+        why: "<i>Ich schicke ein Foto, damit er den Schaden sieht.</i> Tras <i>damit</i> el verbo conjugado <i>sieht</i> va al final."
+      },
+      {
+        q: "Traduce: «Llamo para quejarme.» (usa anrufen y um ... zu)",
+        why: "<i>Ich rufe an, um mich zu beschweren</i>: <i>anrufen</i> es separable, y tras <i>um</i> el reflexivo <i>mich</i> queda delante del infinitivo."
+      },
+      {
+        tr: "Buenos días, llamo para quejarme. La calefacción está rota. Mando una foto para que usted vea el daño. ¿Podría enviar a alguien lo antes posible, por favor?",
+        why: "En <i>beschweren</i> la <b>sch</b> es [ʃ] y la <b>w</b> es [v]; en <i>Heizung</i> la <b>z</b> es [ts]; en <i>Könnten</i> la <b>ö</b> es una vocal anterior redondeada; en <i>schicke</i> la <b>sch</b> es [ʃ] y la <b>ck</b> señala una vocal breve."
+      },
+      {
+        tr: "Quisiera hablar con su jefe para quejarme.",
+        why: "En <i>würde</i> la <b>ü</b> es una vocal anterior redondeada; en <i>Chef</i> la <b>ch</b> es [ʃ] (palabra de origen francés); en <i>sprechen</i> la <b>sp</b> a principio de sílaba se lee [ʃp] y la <b>ch</b> es [ç]."
+      }
+    ]
+  },
+  "lesson:b1-u03-l4": {
+    theme: "Trabajo",
+    title: "El contrato de trabajo",
+    objectives: [
+      "leer las cláusulas principales de un contrato de trabajo",
+      "usar la pasiva y el genitivo juntos en frases formales",
+      "reconocer período de prueba, preaviso y sueldo",
+      "entender la diferencia entre contrato temporal e indefinido"
+    ],
+    theory: [
+      {
+        h: "El lenguaje de un contrato",
+        p: "Un contrato de trabajo usa mucho la <strong>pasiva</strong> y el <strong>genitivo</strong>, porque describe reglas sin decir quién las aplica: <em>Das Gehalt wird am Ende des Monats bezahlt. Die Probezeit des Arbeitnehmers dauert sechs Monate. Die Kündigungsfrist des Vertrags beträgt vier Wochen.</em> Quien reconoce <em>wird ... bezahlt</em> y <em>des ... s</em> ya entiende la estructura de la frase."
+      },
+      {
+        h: "Pasiva y genitivo en la misma frase",
+        p: "Las dos estructuras se combinan: <em>Der Vertrag wurde von beiden Seiten unterschrieben.</em> (pasiva con agente) y <em>Die Arbeitszeit des Mitarbeiters wird im Vertrag genannt.</em> (genitivo y pasiva). En la pasiva el participio va al final, y el genitivo sigue al nombre al que se refiere."
+      },
+      {
+        h: "Palabras que vuelven",
+        p: "<strong>Arbeitgeber</strong> es quien contrata, <strong>Arbeitnehmer</strong> quien es contratado. La <strong>Probezeit</strong> es el período inicial durante el cual la relación se puede disolver con más facilidad; la <strong>Kündigungsfrist</strong> es el preaviso. Un contrato es <strong>befristet</strong> si tiene fecha de vencimiento, <strong>unbefristet</strong> si es indefinido."
+      },
+      {
+        contrast: "En español <em>período de prueba</em> y <em>plazo de preaviso</em> se forman con <em>de</em>; en alemán son palabras compuestas: <em>Probezeit, Kündigungsfrist</em>. El género lo da el último elemento, y no siempre coincide con el español: <em>die Frist</em> da <em>die Kündigungsfrist</em> (femenino), mientras que <em>el plazo</em> es masculino. Por eso conviene aprender el artículo junto con cada compuesto. En los compuestos aparece a menudo un pequeño elemento de unión, por ejemplo la <em>-s-</em> de <em>Arbeitsvertrag</em>."
+      },
+      {
+        trap: "No confundas el Präteritum de la pasiva con el Präteritum activo: <em>Er wurde eingestellt</em> (fue contratado) y <em>Er stellte ein</em> (contrató, activa) dan al sujeto papeles opuestos. Comprueba, pues, quién realiza la acción. Y con <em>des Arbeitnehmers</em> recuerda la <em>-s</em> del genitivo masculino."
+      },
+      {
+        tip: "Cuando leas un contrato, subraya los verbos con <em>werden</em> y los grupos con <em>des/der + nombre</em>. Son las dos estructuras que llevan las reglas, y el resto es sobre todo vocabulario."
+      }
+    ],
+    grammar: {
+      title: "Pasiva y genitivo en los contratos",
+      note: "<b>werden</b> + participio para las reglas (<b>wird bezahlt</b>), <b>des/der + nombre</b> para el poseedor (<b>des Vertrags</b>).",
+      table: {
+        head: ["estructura", "ejemplo", "significado"],
+        rows: [
+          ["pasiva presente", "Das Gehalt wird bezahlt.", "se paga el sueldo"],
+          ["pasiva Präteritum", "Der Arbeitnehmer wurde eingestellt.", "el empleado fue contratado"],
+          ["genitivo masculino", "die Probezeit des Arbeitnehmers", "el período de prueba del empleado"],
+          ["genitivo femenino", "die Höhe der Miete", "el importe del alquiler"]
+        ]
+      },
+      examples: [
+        { tr: "El contrato fue firmado por ambas partes.", note: "pasiva con agente: von beiden Seiten" },
+        { tr: "El sueldo se paga a final de mes.", note: "pasiva presente, des Monats" },
+        { tr: "El período de prueba del empleado dura seis meses.", note: "genitivo masculino: des Arbeitnehmers" },
+        { tr: "La jornada laboral se indica en el contrato.", note: "pasiva: wird ... genannt" },
+        { tr: "El empleado fue contratado en mayo.", note: "pasiva Präteritum: wurde eingestellt" },
+        { tr: "El preaviso del contrato es de cuatro semanas.", note: "genitivo masculino: des Vertrags" }
+      ]
+    },
+    vocab: [
+      "el contrato de trabajo",
+      "el sueldo",
+      "el período de prueba",
+      "el empleador",
+      "el empleado (el trabajador)",
+      "el plazo de preaviso",
+      "la jornada laboral",
+      "el puesto de trabajo",
+      "dimitir / rescindir el contrato (jemandem kündigen = despedir a alguien)",
+      "contratar",
+      "pagar",
+      "temporal (de duración determinada)"
+    ],
+    exercises: [
+      {
+        q: "¿Qué frase es correcta?",
+        opts: [
+          "Das Gehalt wird am Ende des Monats bezahlt.",
+          "Das Gehalt wird am Ende des Monats bezahlen.",
+          "Das Gehalt wird am Ende der Monat bezahlt."
+        ],
+        why: "<b>Wird ... bezahlt</b> con el participio al final, y <b>des Monats</b> en genitivo masculino. El infinitivo <i>bezahlen</i> es incorrecto en la pasiva, y <i>der Monat</i> no es un genitivo."
+      },
+      {
+        q: "Ayer el contrato fue firmado por ambas partes. ¿Qué frase?",
+        opts: [
+          "Der Vertrag wurde gestern von beiden Seiten unterschrieben.",
+          "Der Vertrag wird gestern von beiden Seiten unterschrieben.",
+          "Der Vertrag hat gestern von beiden Seiten unterschrieben."
+        ],
+        why: "<b>Wurde ... unterschrieben</b>: pasiva en Präteritum, con <i>von + dativo</i> para el agente. <i>Hat</i> convertiría al contrato en quien firma."
+      },
+      {
+        q: "Completa: «Die Probezeit ___ dauert sechs Monate.»",
+        opts: ["des Arbeitnehmers", "dem Arbeitnehmer", "den Arbeitnehmers"],
+        why: "<b>Des Arbeitnehmers</b>: genitivo masculino singular, con <i>des</i> y <i>-s</i> en el nombre."
+      },
+      {
+        q: "Completa: «Die Kündigungsfrist ___ Vertrags beträgt vier Wochen.»",
+        hint: "genitivo masculino",
+        why: "<b>Des</b>: <i>Vertrag</i> es masculino y el genitivo lleva <i>des</i> y <i>-s</i>: <i>des Vertrags</i>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "El empleado fue contratado en mayo (pasiva en Präteritum).",
+        why: "<i>Der Arbeitnehmer wurde im Mai eingestellt.</i> Pasiva en Präteritum: <i>wurde</i> + participio <i>eingestellt</i>, que queda unido."
+      },
+      {
+        q: "Relaciona cada palabra con su significado.",
+        pairs: ["el período de prueba", "el preaviso", "el empleador", "el sueldo"]
+      },
+      {
+        q: "Ordena las palabras.",
+        tr: "El período de prueba del empleado dura seis meses.",
+        why: "<i>Die Probezeit des Arbeitnehmers dauert sechs Monate.</i> El genitivo <i>des Arbeitnehmers</i> sigue al nombre <i>Probezeit</i>."
+      },
+      {
+        q: "Traduce: «El sueldo se paga a final de mes.»",
+        why: "<i>Das Gehalt wird am Ende des Monats bezahlt.</i> También valen <i>am Monatsende</i> y <i>ausgezahlt</i>."
+      },
+      {
+        tr: "El contrato de trabajo fue firmado ayer por ambas partes. El período de prueba dura seis meses y el sueldo se paga a final de mes. El preaviso del contrato es de cuatro semanas.",
+        why: "En <i>Arbeitsvertrag</i> la <b>ei</b> es [aɪ] y la <b>v</b> es [f]; en <i>unterschrieben</i> la <b>sch</b> es [ʃ] y la <b>ie</b> es larga [iː]; en <i>Probezeit</i> la <b>z</b> es [ts]."
+      },
+      {
+        tr: "El sueldo del empleado se paga a final de mes.",
+        why: "En <i>Arbeitnehmers</i> la <b>ei</b> es [aɪ] y la <b>eh</b> alarga la vocal [eː]; en <i>Monatsende</i> la <b>o</b> es larga [oː]; en <i>bezahlt</i> la <b>ah</b> alarga la vocal [aː]."
+      }
+    ]
+  },
+  "lesson:b1-u03-test": {
+    theme: "Evaluación",
+    title: "Test: Oficinas y contratos",
+    objectives: [
+      "comprobar la pasiva, el genitivo con wegen, während e innerhalb, um ... zu y damit"
+    ],
+    theory: [
+      {
+        p: "Diez preguntas sobre toda la unidad. Se aprueba con el 70%. No vuelvas a mirar las lecciones mientras respondes: si no recuerdas algo, es mejor volver a repasar."
+      }
+    ],
+    exercises: [
+      {
+        q: "Completa: «Das Formular ___ am Schalter abgegeben.»",
+        hint: "werden, presente",
+        why: "<b>Wird</b>: pasiva de proceso en presente, sujeto singular."
+      },
+      {
+        q: "Completa: «Der Mietvertrag ___ gestern unterschrieben.»",
+        hint: "werden, Präteritum",
+        why: "<b>Wurde</b>: la pista pide el Präteritum de <i>werden</i>, es decir, <i>wurde</i>. <i>Gestern</i> por sí solo no basta: la pasiva en Perfekt (<i>ist ... unterschrieben worden</i>) es otra forma, que aquí no se pide."
+      },
+      {
+        q: "Completa: «Die Höhe ___ Miete steht im Vertrag.»",
+        hint: "genitivo femenino",
+        why: "<b>Der</b>: genitivo femenino singular."
+      },
+      {
+        q: "Completa: «Ich schicke ein Foto, ___ er den Schaden sieht.»",
+        hint: "finalidad, sujetos distintos",
+        why: "<b>Damit</b>: <i>ich</i> y <i>er</i> son sujetos distintos, y el verbo conjugado va al final."
+      },
+      {
+        q: "Ayer se abrió la cuenta. ¿Qué frase?",
+        opts: [
+          "Das Konto wurde gestern eröffnet.",
+          "Das Konto wird gestern eröffnet.",
+          "Das Konto haben gestern eröffnet."
+        ],
+        why: "<b>Wurde ... eröffnet</b>: pasiva en Präteritum. <i>Wird</i> es un presente, y <i>haben</i> no concuerda con <i>Konto</i>."
+      },
+      {
+        q: "¿Qué frase es correcta?",
+        opts: [
+          "Während des Urlaubs bin ich nicht im Büro.",
+          "Während der Urlaub bin ich nicht im Büro.",
+          "Während des Urlaubs ich bin nicht im Büro."
+        ],
+        why: "<b>Während des Urlaubs</b>: preposición con genitivo, y el verbo <i>bin</i> justo después, en segunda posición."
+      },
+      {
+        q: "Completa: «Er schickt eine E-Mail, ___ der Chef Bescheid weiß.»",
+        opts: ["damit", "um", "ohne"],
+        why: "<b>Damit</b>: los sujetos son distintos (<i>er</i> y <i>der Chef</i>) y el verbo conjugado va al final."
+      },
+      {
+        q: "Relaciona cada expresión con su significado.",
+        pairs: [
+          "Se comprueba el formulario.",
+          "a causa del tiempo",
+          "mismo sujeto, infinitivo",
+          "finalidad, verbo conjugado al final; admite sujetos iguales o distintos"
+        ]
+      },
+      {
+        tr: "El formulario se entrega en la ventanilla. A causa de la mudanza necesito una cuenta. Llamo para que alguien repare la calefacción.",
+        why: "En <i>Schalter</i> la <b>sch</b> es [ʃ]; en <i>Umzugs</i> la <b>z</b> es [ts]; en <i>Heizung</i> la <b>ei</b> es [aɪ] y la <b>z</b> es [ts]; en <i>repariert</i> la <b>ie</b> es larga [iː]."
+      },
+      {
+        tr: "El contrato de alquiler fue firmado y la fianza se paga por transferencia.",
+        why: "En <i>Mietvertrag</i> la <b>ie</b> es larga [iː] y la <b>v</b> es [f]; en <i>unterschrieben</i> la <b>sch</b> es [ʃ]; en <i>überwiesen</i> la <b>ü</b> es una vocal anterior redondeada."
+      }
+    ]
   }
 });

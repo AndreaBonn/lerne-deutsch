@@ -1148,5 +1148,583 @@ LINGUAI.addStrings("pl", {
         why: "W <i>ich</i> <b>ch</b> to [ç], w <i>Buch</i> to [x]; <b>u</b> w <i>Buch</i> jest długie [uː]; w <i>gelesen</i> <b>s</b> jest dźwięczne [z]."
       }
     ]
+  },
+  "unit:b1-u03": {
+    title: "Urzędy i umowy",
+    grammarNote: "strona bierna (Vorgangspassiv) w czasie teraźniejszym i w Präteritum · dopełniacz oraz wegen, während, innerhalb · um ... zu i damit · rejestr formalny"
+  },
+  "lesson:b1-u03-l1": {
+    theme: "Biurokracja",
+    title: "Zameldowanie",
+    objectives: [
+      "rozumieć i tworzyć stronę bierną z werden w czasie teraźniejszym i w Präteritum",
+      "mówić, kto wykonuje czynność, za pomocą von + celownik, gdy jest to potrzebne",
+      "odróżniać proces (wird geprüft) od wyniku (ist geprüft)",
+      "załatwić sprawę przy okienku w urzędzie w rejestrze formalnym"
+    ],
+    theory: [
+      {
+        h: "Strona bierna z werden",
+        p: "Strona bierna wysuwa na pierwszy plan <strong>to, co się dzieje</strong>, a nie to, kto to robi. Tworzy się ją odmienionym <strong>werden</strong> i <strong>Partizip II</strong> na końcu: <em>Das Formular wird ausgefüllt.</em> W czasie przeszłym używa się Präteritum od <em>werden</em>: <em>Das Formular wurde ausgefüllt.</em> Dopełnienie zdania w stronie czynnej staje się podmiotem: <em>Die Beamtin prüft den Ausweis</em> zmienia się w <em>Der Ausweis wird geprüft.</em>"
+      },
+      {
+        h: "Kto działa: von + celownik",
+        p: "Jeśli trzeba powiedzieć, kto wykonuje czynność, dodaje się <strong>von + celownik</strong> (Dativ): <em>Der Ausweis wird von der Beamtin geprüft.</em> Bardzo często wykonawcy się nie podaje, bo jest oczywisty albo nieważny: <em>Termine werden online vergeben.</em> Dlatego strona bierna jest częsta w formularzach, ogłoszeniach i urzędach."
+      },
+      {
+        h: "Przy okienku: rejestr formalny",
+        p: "W urzędzie mówi się <strong>Sie</strong>, z <em>Herr</em> lub <em>Frau</em> i nazwiskiem (jak po polsku Pan, Pani). Prośbę formułuje się z <em>ich möchte</em> albo w Konjunktiv II: <em>Ich möchte mich anmelden. Könnten Sie mir helfen?</em> <strong>Anmeldung</strong> to zgłoszenie swojego adresu w Bürgeramt; zwykle trzeba to zrobić w ciągu dwóch tygodni od przeprowadzki."
+      },
+      {
+        contrast: "Po polsku stronę bierną tworzy się z <em>jest</em> albo <em>zostaje</em> i imiesłowem (<em>formularz jest wypełniany</em>, <em>formularz został wypełniony</em>) albo używa się <em>się</em> (<em>formularz wypełnia się</em>). Po polsku proces od stanu odróżnia się tak: <em>jest wypełniany</em> oddaje <em>wird ausgefüllt</em> (proces), a <em>jest już wypełniony</em> oddaje <em>ist ausgefüllt</em> (stan). Natomiast <em>został wypełniony</em> opisuje dokonanie się czynności i tłumaczy raczej <em>wurde ausgefüllt</em> niż stan z <em>sein</em>. W niemieckim czasownikiem pomocniczym jest <strong>werden</strong>, a imiesłów nie zmienia się według rodzaju ani liczby: <em>der Ausweis wird geprüft</em>, <em>die Karte wird geprüft</em>, <em>die Formulare werden geprüft</em>, podczas gdy po polsku mówi się <em>dowód jest sprawdzany</em>, <em>karta jest sprawdzana</em>, <em>formularze są sprawdzane</em>. Wykonawcę wyraża się po polsku przez <em>przez</em> + biernik (<em>przez urzędniczkę</em>), a po niemiecku przez <em>von</em> + celownik (<em>von der Beamtin</em>)."
+      },
+      {
+        trap: "<em>Das Formular wird ausgefüllt</em> wysuwa na pierwszy plan <strong>czynność</strong> wypełniania formularza, nie mówiąc, że dzieje się to właśnie teraz: może to być zwykła procedura albo coś, co dopiero nastąpi. <em>Das Formular ist ausgefüllt</em> jest zdaniem poprawnym, ale opisuje <strong>wynik</strong>: formularz jest już wypełniony. To nie to samo: z <em>wird</em> patrzy się na czynność, z <em>ist</em> na stan, który z niej pozostał. Podobnie <em>wurde geprüft</em> zawiera <em>werden</em>, a <em>war geprüft</em> opisuje stan przeszły."
+      },
+      {
+        tip: "Żeby przejść ze strony czynnej na bierną, znajdź dopełnienie w bierniku (Akkusativ): staje się podmiotem. <em>Man gibt das Formular ab</em> zmienia się w <em>Das Formular wird abgegeben.</em> Przy czasowniku rozdzielnym Partizip II pozostaje w jednym kawałku: <em>abgegeben, ausgefüllt, angemeldet</em>."
+      }
+    ],
+    grammar: {
+      title: "Strona bierna w czasie teraźniejszym i w Präteritum",
+      note: "<b>werden</b> + <b>Partizip II</b> na końcu: <b>wird geprüft</b> (czas teraźniejszy), <b>wurde geprüft</b> (Präteritum). Wykonawca, jeśli jest podany, to <b>von + celownik</b>.",
+      table: {
+        head: ["", "czas teraźniejszy", "Präteritum"],
+        rows: [
+          ["ich", "werde geprüft", "wurde geprüft"],
+          ["du", "wirst geprüft", "wurdest geprüft"],
+          ["er/sie/es", "wird geprüft", "wurde geprüft"],
+          ["wir", "werden geprüft", "wurden geprüft"],
+          ["ihr", "werdet geprüft", "wurdet geprüft"],
+          ["sie/Sie", "werden geprüft", "wurden geprüft"]
+        ]
+      },
+      examples: [
+        { tr: "Formularz jest wypełniany.", note: "werden + Partizip II: czynność na pierwszym planie" },
+        { tr: "Dowód osobisty jest sprawdzany.", note: "imiesłów nie zmienia się według rodzaju" },
+        { tr: "Zameldowanie zostało wczoraj potwierdzone.", note: "wurde: Präteritum od werden" },
+        { tr: "Terminy są przydzielane online.", note: "bez wykonawcy, liczba mnoga: werden" },
+        { tr: "Zaświadczenie zostało wydane od razu.", note: "imiesłów czasownika rozdzielnego: ausgestellt" },
+        { tr: "Formularz jest sprawdzany przez urzędniczkę.", note: "von + celownik: von der Beamtin" }
+      ]
+    },
+    vocab: [
+      "zameldowanie",
+      "urząd obsługi mieszkańców (Bürgeramt)",
+      "niemiecki numer identyfikacji podatkowej (Steuer-ID)",
+      "termin (umówione spotkanie)",
+      "formularz",
+      "zaświadczenie",
+      "dokument tożsamości",
+      "okienko",
+      "zameldować się (sich anmelden)",
+      "wypełniać",
+      "składać (oddawać)",
+      "wystawiać"
+    ],
+    exercises: [
+      {
+        q: "Które zdanie oznacza: „Formularz jest wypełniany” (proces)?",
+        opts: ["Das Formular wird ausgefüllt.", "Das Formular ist ausgefüllt.", "Das Formular hat ausgefüllt."],
+        why: "<b>Wird ausgefüllt</b>: <i>werden</i> + Partizip II, czyli proces. <i>Ist ausgefüllt</i> to zdanie poprawne, ale mówi, że formularz jest już wypełniony; <i>Das Formular hat ausgefüllt</i> to zdanie w stronie czynnej, w którym to formularz jest tym, kto wypełnia, a to nie ma sensu."
+      },
+      {
+        q: "Wczoraj wniosek został sprawdzony. Które zdanie?",
+        opts: [
+          "Der Antrag wurde gestern geprüft.",
+          "Der Antrag wird gestern geprüft.",
+          "Der Antrag werden gestern geprüft."
+        ],
+        why: "<b>Wurde geprüft</b>: Präteritum od <i>werden</i>. <i>Wird</i> to czas teraźniejszy, a <i>werden</i> nie zgadza się z liczbą pojedynczą <i>Antrag</i>."
+      },
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: [
+          "Der Ausweis wird von der Beamtin geprüft.",
+          "Der Ausweis wird von die Beamtin geprüft.",
+          "Der Ausweis wird von der Beamtin prüfen."
+        ],
+        why: "<b>Von + celownik</b>: <i>von der Beamtin</i>. Partizip II (<i>geprüft</i>) stoi na końcu, a nie bezokolicznik."
+      },
+      {
+        q: "Uzupełnij: „Das Formular ___ ausgefüllt.”",
+        hint: "werden, czas teraźniejszy",
+        why: "<b>Wird</b>: podmiot w liczbie pojedynczej, strona bierna procesu w czasie teraźniejszym."
+      },
+      {
+        q: "Uzupełnij: „Der Pass ___ gestern ausgestellt.”",
+        hint: "werden, Präteritum",
+        why: "<b>Wurde</b>: podpowiedź wymaga Präteritum od <i>werden</i>, czyli <i>wurde</i>. Samo <i>gestern</i> nie wystarcza: strona bierna w Perfekt (<i>ist ... ausgestellt worden</i>) to inna forma, tu niewymagana."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Formularz jest składany przy okienku (strona bierna, czas teraźniejszy).",
+        why: "<i>Das Formular wird am Schalter abgegeben.</i> <i>Wird</i> + Partizip II <i>abgegeben</i>, który pozostaje w jednym kawałku."
+      },
+      {
+        q: "Dopasuj każde zdanie do jego znaczenia.",
+        pairs: [
+          "Formularz jest wypełniany.",
+          "Dowód osobisty został sprawdzony.",
+          "Termin jest przydzielany.",
+          "Zaświadczenie zostało wydane."
+        ]
+      },
+      {
+        q: "Przetłumacz, używając strony biernej czynnościowej z werden: „Wniosek jest sprawdzany.”",
+        why: "<i>Der Antrag wird geprüft</i>: <i>werden</i> + Partizip II. Poprawne jest też <i>überprüft</i>."
+      },
+      {
+        tr: "Dzień dobry, chcę się zameldować. Formularz jest składany przy okienku. Dokument jest sprawdzany, a zaświadczenie jest wydawane od razu.",
+        why: "W <i>möchte</i> <b>ö</b> jest zaokrąglone, a <b>ch</b> to [ç]; w <i>Schalter</i> <b>sch</b> to [ʃ]; w <i>Ausweis</i> <b>au</b> to [aʊ], a <b>w</b> to [v]; w <i>geprüft</i> <b>ü</b> jest zaokrąglone."
+      },
+      {
+        tr: "Dzień dobry, chcę się zameldować. Formularz został już wypełniony.",
+        why: "W <i>ich</i> <b>ch</b> to [ç]; w <i>schon</i> <b>sch</b> to [ʃ]; w <i>wurde</i> <b>w</b> to [v]; w <i>ausgefüllt</i> <b>ü</b> jest zaokrąglone."
+      }
+    ]
+  },
+  "lesson:b1-u03-l2": {
+    theme: "Bank i wynajem",
+    title: "Bank i umowa najmu",
+    objectives: [
+      "używać dopełniacza, by powiedzieć, do kogo coś należy",
+      "rozpoznawać końcówki -(e)s w rodzaju męskim i nijakim",
+      "używać wegen, während i innerhalb z dopełniaczem",
+      "rozmawiać formalnie przy okienku w banku"
+    ],
+    theory: [
+      {
+        h: "Dopełniacz (Genitiv)",
+        p: "<strong>Dopełniacz (Genitiv)</strong> wyraża przynależność lub związek i stoi <strong>po</strong> rzeczowniku, którego dotyczy: <em>der Vertrag des Vermieters</em>, <em>die Höhe der Miete</em>. Zmienia się rodzajnik: <strong>des</strong> w rodzaju męskim i nijakim, <strong>der</strong> w rodzaju żeńskim i w liczbie mnogiej. Większość rzeczowników rodzaju męskiego i nijakiego dostaje końcówkę <strong>-s</strong> lub <strong>-es</strong>: <em>des Vermieters, des Vertrags, des Hauses</em>; rzeczowniki męskie odmiany słabej dostają <strong>-n</strong> lub <strong>-en</strong>: <em>des Kunden, des Studenten</em>."
+      },
+      {
+        h: "wegen, während, innerhalb",
+        p: "Niektóre przyimki łączą się z dopełniaczem: <strong>wegen</strong> (z powodu), <strong>während</strong> (podczas), <strong>innerhalb</strong> (w ciągu, wewnątrz). <em>Wegen des Umzugs brauche ich ein neues Konto. Während des Urlaubs habe ich viel gelesen. Innerhalb einer Woche bekommen Sie Ihre Karte.</em> W mowie po <em>wegen</em> słychać często także celownik; w tekstach pisanych i w urzędach oczekuje się dopełniacza."
+      },
+      {
+        h: "Imiona własne i von + celownik",
+        p: "Przy <strong>imieniu własnym</strong> dopełniacz dostaje <em>-s</em> i stoi <strong>przed</strong> rzeczownikiem, bez apostrofu: <em>Annas Konto</em>. Jeśli imię kończy się na sybilantę (<em>-s, -x, -z, -ß</em>), dodaje się tylko apostrof: <em>Hans’ Konto, Max’ Konto</em>. W mowie często zastępuje się to konstrukcją <strong>von + celownik</strong>: <em>das Konto von meinem Bruder</em>."
+      },
+      {
+        contrast: "Polak zna dopełniacz i to bardzo pomaga: <em>umowa wynajmującego</em>, <em>wysokość czynszu</em>, <em>z powodu przeprowadzki</em>, <em>podczas urlopu</em>, <em>w ciągu tygodnia</em>, wszystko to dopełniacz, a niemieckie <em>wegen, während, innerhalb</em> też wymagają dopełniacza. Różnice są dwie. Po pierwsze polski dopełniacz zmienia końcówkę samego rzeczownika (<em>wynajmującego</em>), a niemiecki oznacza przypadek głównie <strong>rodzajnikiem</strong> (<em>des Vermieters</em>); krótka końcówka <em>-s/-es</em> pojawia się tylko w liczbie pojedynczej rodzaju męskiego i nijakiego. Po drugie przy imionach polski stawia właściciela po rzeczy (<em>konto Anny</em>), a niemiecki przed nią: <em>Annas Konto</em>."
+      },
+      {
+        trap: "<em>Während</em> może być też spójnikiem, i wtedy czasownik idzie na koniec: <em>Während ich arbeite, ...</em>. Jako przyimek (<em>während des Urlaubs</em>) łączy się z dopełniaczem i nie ma po sobie odmienionego czasownika. W rodzaju żeńskim rzeczownik się nie zmienia: <em>die Höhe der Miete</em>."
+      },
+      {
+        tip: "Przy okienku w banku mów <em>Sie</em>: <em>Ich möchte ein Konto eröffnen. Könnten Sie mir bitte das Formular geben?</em> Rejestr formalny nie wymaga trudnych słów, tylko pełnych zdań i czasownika na właściwym miejscu."
+      }
+    ],
+    grammar: {
+      title: "Dopełniacz oraz wegen, während, innerhalb",
+      note: "Dopełniacz: <b>des</b> (r. m. i n.) + rzeczownik z końcówką <b>-(e)s</b> (męskie odmiany słabej: <b>-(e)n</b>, np. <i>des Kunden</i>), <b>der</b> (r. ż. i l. mn.). Stoi <b>po</b> rzeczowniku, do którego się odnosi. Z <b>wegen, während, innerhalb</b>.",
+      table: {
+        head: ["", "r. m.", "r. ż.", "r. n.", "l. mn."],
+        rows: [
+          ["rodzajnik", "des", "der", "des", "der"],
+          ["przykład", "des Vermieters", "der Miete", "des Kontos", "der Mieter"]
+        ]
+      },
+      examples: [
+        { tr: "To jest umowa wynajmującego.", note: "des Vermieters: rodzaj męski, rzeczownik z -s" },
+        { tr: "Wysokość czynszu jest w umowie.", note: "der Miete: rodzaj żeński, rzeczownik się nie zmienia" },
+        { tr: "Z powodu przeprowadzki potrzebuję nowego konta.", note: "wegen + dopełniacz: des Umzugs" },
+        { tr: "Podczas urlopu dużo czytałem.", note: "während + dopełniacz: des Urlaubs" },
+        { tr: "W ciągu tygodnia otrzymają Państwo kartę.", note: "innerhalb + dopełniacz: einer Woche" },
+        { tr: "Konto Anny jest w innym banku.", note: "imię własne: Annas, przed rzeczownikiem" }
+      ]
+    },
+    vocab: [
+      "umowa najmu",
+      "konto",
+      "czynsz",
+      "wynajmujący (właściciel)",
+      "najemca",
+      "kaucja",
+      "wypowiedzenie",
+      "termin (ostateczny)",
+      "przelew",
+      "otwierać (konto)",
+      "podpisywać",
+      "robić przelew"
+    ],
+    exercises: [
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: [
+          "Die Höhe der Miete steht im Vertrag.",
+          "Die Höhe den Miete steht im Vertrag.",
+          "Die Höhe Miete steht im Vertrag."
+        ],
+        why: "<b>Der Miete</b>: <i>Miete</i> jest rodzaju żeńskiego, a dopełniacz żeński ma <i>der</i>. <i>Den</i> nie jest formą liczby pojedynczej rodzaju żeńskiego, a bez rodzajnika nie widać przypadka."
+      },
+      {
+        q: "Uzupełnij: „Das ist der Vertrag ___ Vermieters.”",
+        hint: "dopełniacz, rodzaj męski",
+        why: "<b>Des</b>: dopełniacz rodzaju męskiego, a rzeczownik dostaje <i>-s</i> (<i>des Vermieters</i>)."
+      },
+      {
+        q: "Uzupełnij: „Die Höhe ___ Miete steht im Vertrag.”",
+        hint: "dopełniacz, rodzaj żeński",
+        why: "<b>Der</b>: dopełniacz rodzaju żeńskiego w liczbie pojedynczej. Rzeczownik <i>Miete</i> się nie zmienia."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Podczas urlopu dużo czytałem.",
+        why: "<i>Während des Urlaubs habe ich viel gelesen.</i> <i>Während</i> jako przyimek łączy się z dopełniaczem: <i>des Urlaubs</i>."
+      },
+      {
+        q: "Dopasuj każdy zwrot do jego znaczenia.",
+        pairs: ["samochód ojca", "z powodu pogody", "podczas urlopu", "w ciągu tygodnia"]
+      },
+      {
+        q: "Ułóż wyrazy w kolejności.",
+        tr: "Z powodu przeprowadzki potrzebuję nowego konta.",
+        why: "<i>Wegen des Umzugs brauche ich ein neues Konto.</i> Poprawne jest też <i>Ich brauche wegen des Umzugs ein neues Konto</i>. W pierwszym zdaniu czasownik <i>brauche</i> stoi na drugim miejscu, po grupie <i>Wegen des Umzugs</i>."
+      },
+      {
+        q: "Przetłumacz: „To jest konto mojego brata.”",
+        why: "<i>Das ist das Konto meines Bruders</i>: dopełniacz rodzaju męskiego z <i>meines</i> i <i>-s</i> przy rzeczowniku. W mowie dobre jest też <i>das Konto von meinem Bruder</i>."
+      },
+      {
+        q: "Jesteś w banku i rozmawiasz z pracownikiem.",
+        setting: "Chcesz otworzyć konto i używasz rejestru formalnego.",
+        lines: [
+          { tr: "Dzień dobry. W czym mogę pomóc?" },
+          { tr: "Odpowiedz: chcesz otworzyć konto.", answerTr: "Dzień dobry, chcę otworzyć konto." },
+          { tr: "Chętnie. Czy ma Pan/Pani przy sobie także kopię umowy najmu?" },
+          { tr: "Odpowiedz: oczywiście, z powodu przeprowadzki masz wszystko przy sobie.", answerTr: "Oczywiście. Z powodu przeprowadzki mam wszystko przy sobie." },
+          { tr: "Doskonale. W ciągu tygodnia otrzyma Pan/Pani kartę." },
+          { tr: "Zapytaj, czy karta jest wysyłana pocztą.", answerTr: "Czy karta jest wysyłana pocztą?" }
+        ]
+      },
+      {
+        tr: "Dzień dobry, chcę otworzyć konto. Oto umowa najmu. Z powodu przeprowadzki potrzebuję nowego konta. W ciągu tygodnia dostanę kartę.",
+        why: "W <i>eröffnen</i> <b>ö</b> jest zaokrąglone; w <i>Mietvertrag</i> <b>ie</b> jest długie [iː], a <b>v</b> to [f]; w <i>Wegen</i> <b>W</b> to [v]; w <i>Woche</i> <b>ch</b> po <b>o</b> to [x]."
+      },
+      {
+        tr: "Czynsz jest przelewany pierwszego dnia miesiąca.",
+        why: "W <i>Miete</i> <b>ie</b> jest długie [iː]; w <i>überwiesen</i> <b>ü</b> jest zaokrąglone, <b>w</b> to [v], a <b>s</b> między samogłoskami jest dźwięczne [z]."
+      }
+    ]
+  },
+  "lesson:b1-u03-l3": {
+    theme: "Reklamacje",
+    title: "Skarżę się, żeby ...",
+    objectives: [
+      "wyrażać cel za pomocą um ... zu, gdy podmiot jest ten sam",
+      "wyrażać cel za pomocą damit, zwłaszcza gdy podmioty są różne",
+      "grzecznie sformułować reklamację w Konjunktiv II",
+      "nie mylić damit (cel) z weil (przyczyna)"
+    ],
+    theory: [
+      {
+        h: "um ... zu: cel przy tym samym podmiocie",
+        p: "Żeby powiedzieć, <strong>w jakim celu</strong> coś się robi, gdy podmiot w obu częściach jest ten sam, używa się <strong>um ... zu</strong> z bezokolicznikiem na końcu: <em>Ich rufe an, um mich zu beschweren.</em> Przy czasowniku rozdzielnym <em>zu</em> wchodzi w środek: <em>Ich gehe zum Bürgeramt, um mich anzumelden.</em> Zdanie bezokolicznikowe wprowadzone przez <em>um</em> oddziela się od zdania głównego przecinkiem."
+      },
+      {
+        h: "damit: zwykle podmioty różne",
+        p: "Gdy podmioty są <strong>różne</strong>, używa się <strong>damit</strong> ze zdaniem, w którym odmieniony czasownik stoi na końcu, w trybie oznajmującym: <em>Ich schicke ein Foto, damit er den Schaden sieht.</em> Przy różnych podmiotach <em>um ... zu</em> jest niemożliwe. Także przy tym samym podmiocie <em>damit</em> istnieje (<em>..., damit ich pünktlich bin</em>), ale <em>um ... zu</em> jest formą naturalniejszą."
+      },
+      {
+        h: "Grzeczna reklamacja",
+        p: "W reklamacji liczy się ton: Konjunktiv II łagodzi prośbę. <em>Könnten Sie das bitte reparieren? Ich würde gern mit Ihrem Chef sprechen. Wir hätten gern eine schnelle Lösung.</em> Prośba w trybie rozkazującym (<em>Reparieren Sie das!</em>) brzmi o wiele ostrzej."
+      },
+      {
+        contrast: "Po polsku cel wyraża w obu przypadkach to samo <em>żeby</em> (albo <em>aby</em>): z bezokolicznikiem przy tym samym podmiocie (<em>dzwonię, żeby się poskarżyć</em>) i z formą z końcówką <em>-ł</em> przy różnych (<em>wysyłam zdjęcie, żeby zobaczył szkodę</em>). Niemiecki rozdziela to na dwie konstrukcje, <em>um ... zu</em> i <em>damit</em>, a po <em>damit</em> stoi zwykły czas teraźniejszy w trybie oznajmującym (<em>damit er den Schaden sieht</em>), bez żadnej formy przypuszczającej. O wyborze decyduje więc podmiot, a nie samo „żeby”."
+      },
+      {
+        trap: "<em>Weil</em> podaje przyczynę, <em>damit</em> cel: <em>Ich rufe an, weil die Heizung kaputt ist</em> (powód) i <em>Ich rufe an, damit jemand sie repariert</em> (cel). Z samym <em>um</em> nie można połączyć zdania z innym podmiotem: <em>Ich rufe an, um der Handwerker kommt</em> jest błędne. Cel wyrażony rzeczownikiem można oddać przyimkiem <em>für</em> + biernik (<em>Ich lerne für die Prüfung</em>) lub <em>zu</em> + celownik (<em>zur Anmeldung</em>, <em>zur Reparatur</em>). Wybór przyimka zależy od konstrukcji."
+      },
+      {
+        tip: "Zanim wybierzesz, zapytaj siebie: kto wykonuje obie czynności? Jeśli ta sama osoba, <em>um ... zu</em>; jeśli różne osoby, <em>damit</em>. A jeśli rozmawiasz z urzędem albo firmą, zacznij od <em>Guten Tag</em> i mów <em>Sie</em>."
+      }
+    ],
+    grammar: {
+      title: "Zdanie celowe: um ... zu i damit",
+      note: "Ten sam podmiot: <b>um ... zu</b> + bezokolicznik. Różne podmioty (albo ten sam): <b>damit</b> + odmieniony czasownik na końcu, w trybie oznajmującym.",
+      table: {
+        head: ["konstrukcja", "kiedy", "przykład"],
+        rows: [
+          ["um ... zu + bezokolicznik", "ten sam podmiot", "Ich rufe an, um mich zu beschweren."],
+          ["damit + czasownik na końcu", "cel; podmioty te same lub różne", "Ich schicke ein Foto, damit er den Schaden sieht."],
+          ["weil + czasownik na końcu", "przyczyna, nie cel", "Ich rufe an, weil die Heizung kaputt ist."]
+        ]
+      },
+      examples: [
+        { tr: "Dzwonię, żeby się poskarżyć.", note: "um ... zu, ten sam podmiot: ich" },
+        { tr: "Idę do urzędu, żeby się zameldować.", note: "czasownik rozdzielny: um mich anzumelden" },
+        { tr: "Wysyłam zdjęcie, żeby on zobaczył szkodę.", note: "damit: dwa podmioty, ich i er" },
+        { tr: "Czy mogliby Państwo to naprawić?", note: "Konjunktiv II od können: grzeczna prośba" },
+        { tr: "Chciałbym porozmawiać z Państwa szefem.", note: "würde gern + bezokolicznik" },
+        { tr: "Chcielibyśmy szybkiego rozwiązania.", note: "hätten gern: Konjunktiv II od haben" }
+      ]
+    },
+    vocab: [
+      "reklamacja",
+      "wada",
+      "szkoda",
+      "naprawa",
+      "rzemieślnik (fachowiec, który naprawia)",
+      "rachunek (faktura)",
+      "gwarancja",
+      "wymiana, zastępstwo (Ersatz)",
+      "skarżyć się, składać reklamację",
+      "naprawiać",
+      "wymieniać",
+      "pilny"
+    ],
+    exercises: [
+      {
+        q: "Uzupełnij: „Ich rufe an, ___ mich zu beschweren.”",
+        opts: ["um", "damit", "weil"],
+        why: "<b>Um</b>: ten sam podmiot (<i>ich</i>) i bezokolicznik z <i>zu</i>. <i>Damit</i> wymaga odmienionego czasownika, a <i>weil</i> podaje przyczynę."
+      },
+      {
+        q: "Uzupełnij, by wyrazić cel: „Ich schicke ein Foto, ___ der Vermieter den Schaden sieht.” (Wysyłam zdjęcie, żeby wynajmujący zobaczył szkodę.)",
+        opts: ["damit", "um", "weil"],
+        why: "<b>Damit</b>: podmioty są różne (<i>ich</i> i <i>der Vermieter</i>) i jest odmieniony czasownik. <i>Um</i> nie występuje z nowym podmiotem. <i>Weil</i> podałoby przyczynę („bo wynajmujący widzi szkodę”), a nie żądany cel."
+      },
+      {
+        q: "Uzupełnij: „Ich schreibe eine E-Mail, ___ der Vermieter die Heizung repariert.”",
+        hint: "cel, różne podmioty",
+        why: "<b>Damit</b>: różne podmioty, odmieniony czasownik na końcu."
+      },
+      {
+        q: "Uzupełnij: „Ich rufe an, um mich ___ beschweren.”",
+        hint: "um ... ?",
+        why: "<b>Zu</b>: <i>um ... zu + bezokolicznik</i>, z <i>zu</i> tuż przed czasownikiem."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Idę do urzędu, żeby się zameldować (sich anmelden).",
+        why: "<i>Ich gehe zum Bürgeramt, um mich anzumelden.</i> Przy czasowniku rozdzielnym <i>anmelden</i> <i>zu</i> wchodzi w środek: <i>anzumelden</i>."
+      },
+      {
+        q: "Dopasuj każdy zwrot do jego funkcji.",
+        pairs: [
+          "ten sam podmiot, bezokolicznik",
+          "cel, odmieniony czasownik na końcu; podmioty te same lub różne",
+          "podaje przyczynę",
+          "podaje cel przy rzeczowniku"
+        ]
+      },
+      {
+        q: "Ułóż wyrazy w kolejności (zacznij od Ich).",
+        tr: "Wysyłam zdjęcie, żeby zobaczył szkodę.",
+        why: "<i>Ich schicke ein Foto, damit er den Schaden sieht.</i> Po <i>damit</i> odmieniony czasownik <i>sieht</i> idzie na koniec."
+      },
+      {
+        q: "Przetłumacz: „Dzwonię, żeby się poskarżyć.” (użyj anrufen i um ... zu)",
+        why: "<i>Ich rufe an, um mich zu beschweren</i>: <i>anrufen</i> jest rozdzielne, a po <i>um</i> zaimek zwrotny <i>mich</i> zostaje przed bezokolicznikiem."
+      },
+      {
+        tr: "Dzień dobry, dzwonię, żeby złożyć reklamację. Ogrzewanie jest zepsute. Wysyłam zdjęcie, żeby Państwo zobaczyli szkodę. Czy mogliby Państwo jak najszybciej przysłać kogoś?",
+        why: "W <i>beschweren</i> <b>sch</b> to [ʃ], a <b>w</b> to [v]; w <i>Heizung</i> <b>z</b> to [ts]; w <i>Könnten</i> <b>ö</b> jest zaokrąglone; w <i>schicke</i> <b>sch</b> to [ʃ], a <b>ck</b> oznacza samogłoskę krótką."
+      },
+      {
+        tr: "Chciałbym porozmawiać z Państwa szefem, żeby się poskarżyć.",
+        why: "W <i>würde</i> <b>ü</b> jest zaokrąglone; w <i>Chef</i> <b>ch</b> to [ʃ] (wyraz pochodzenia francuskiego); w <i>sprechen</i> <b>sp</b> na początku sylaby czyta się [ʃp], a <b>ch</b> to [ç]."
+      }
+    ]
+  },
+  "lesson:b1-u03-l4": {
+    theme: "Praca",
+    title: "Umowa o pracę",
+    objectives: [
+      "czytać najważniejsze klauzule umowy o pracę",
+      "używać razem strony biernej i dopełniacza w zdaniach formalnych",
+      "rozpoznawać okres próbny, okres wypowiedzenia i wynagrodzenie",
+      "rozumieć różnicę między umową na czas określony a na czas nieokreślony"
+    ],
+    theory: [
+      {
+        h: "Język umowy",
+        p: "Umowa o pracę często używa <strong>strony biernej</strong> i <strong>dopełniacza</strong>, bo opisuje zasady bez wskazywania, kto je stosuje: <em>Das Gehalt wird am Ende des Monats bezahlt. Die Probezeit des Arbeitnehmers dauert sechs Monate. Die Kündigungsfrist des Vertrags beträgt vier Wochen.</em> Kto rozpoznaje <em>wird ... bezahlt</em> i <em>des ... s</em>, rozumie już strukturę zdania."
+      },
+      {
+        h: "Strona bierna i dopełniacz w jednym zdaniu",
+        p: "Obie struktury łączą się: <em>Der Vertrag wurde von beiden Seiten unterschrieben.</em> (strona bierna z wykonawcą) oraz <em>Die Arbeitszeit des Mitarbeiters wird im Vertrag genannt.</em> (dopełniacz i strona bierna). W stronie biernej Partizip II stoi na końcu, a dopełniacz następuje po rzeczowniku, do którego się odnosi."
+      },
+      {
+        h: "Słowa, które wracają",
+        p: "<strong>Arbeitgeber</strong> to ten, kto zatrudnia, <strong>Arbeitnehmer</strong> to ten, kto jest zatrudniany. <strong>Probezeit</strong> to początkowy okres, w którym stosunek pracy łatwiej rozwiązać; <strong>Kündigungsfrist</strong> to okres wypowiedzenia. Umowa jest <strong>befristet</strong>, jeśli ma termin końca, a <strong>unbefristet</strong>, jeśli jest na czas nieokreślony."
+      },
+      {
+        contrast: "Po polsku mówi się <em>okres próbny</em>, <em>okres wypowiedzenia</em>, <em>umowa o pracę</em>: przymiotnik albo dopełniacz, albo przyimek po rzeczowniku. Po niemiecku to wyrazy złożone, pisane razem: <em>Probezeit, Kündigungsfrist, Arbeitsvertrag</em>. Określenie stoi na początku, a rodzajnik i rodzaj bierze się od <strong>ostatniego</strong> elementu: <em>die Zeit</em> daje <em>die Probezeit</em>, <em>die Frist</em> daje <em>die Kündigungsfrist</em>. W złożeniach często pojawia się mała łączówka, na przykład <em>-s-</em> w <em>Arbeitsvertrag</em>."
+      },
+      {
+        trap: "Nie myl Präteritum strony biernej z Präteritum strony czynnej: <em>Er wurde eingestellt</em> (został zatrudniony) i <em>Er stellte ein</em> (zatrudnił, strona czynna) mają podmioty o przeciwnych rolach. Sprawdź więc, kto wykonuje czynność. A przy <em>des Arbeitnehmers</em> pamiętaj o <em>-s</em> dopełniacza rodzaju męskiego."
+      },
+      {
+        tip: "Gdy czytasz umowę, podkreślaj czasowniki z <em>werden</em> i grupy <em>des/der + rzeczownik</em>. To dwie struktury, które niosą zasady, a reszta to najczęściej słownictwo."
+      }
+    ],
+    grammar: {
+      title: "Strona bierna i dopełniacz w umowach",
+      note: "<b>werden</b> + Partizip II dla zasad (<b>wird bezahlt</b>), <b>des/der + rzeczownik</b> dla właściciela (<b>des Vertrags</b>).",
+      table: {
+        head: ["struktura", "przykład", "znaczenie"],
+        rows: [
+          ["strona bierna, czas teraźniejszy", "Das Gehalt wird bezahlt.", "wynagrodzenie jest wypłacane"],
+          ["strona bierna, Präteritum", "Der Arbeitnehmer wurde eingestellt.", "pracownik został zatrudniony"],
+          ["dopełniacz, rodzaj męski", "die Probezeit des Arbeitnehmers", "okres próbny pracownika"],
+          ["dopełniacz, rodzaj żeński", "die Höhe der Miete", "wysokość czynszu"]
+        ]
+      },
+      examples: [
+        { tr: "Umowa została podpisana przez obie strony.", note: "strona bierna z wykonawcą: von beiden Seiten" },
+        { tr: "Wynagrodzenie jest wypłacane na koniec miesiąca.", note: "strona bierna, czas teraźniejszy, des Monats" },
+        { tr: "Okres próbny pracownika trwa sześć miesięcy.", note: "dopełniacz, rodzaj męski: des Arbeitnehmers" },
+        { tr: "Czas pracy jest podany w umowie.", note: "strona bierna: wird ... genannt" },
+        { tr: "Pracownik został zatrudniony w maju.", note: "strona bierna w Präteritum: wurde eingestellt" },
+        { tr: "Okres wypowiedzenia umowy wynosi cztery tygodnie.", note: "dopełniacz, rodzaj męski: des Vertrags" }
+      ]
+    },
+    vocab: [
+      "umowa o pracę",
+      "wynagrodzenie",
+      "okres próbny",
+      "pracodawca",
+      "pracownik",
+      "okres wypowiedzenia",
+      "czas pracy",
+      "stanowisko",
+      "wypowiedzieć umowę, zrezygnować z pracy (jemandem kündigen = zwolnić kogoś)",
+      "zatrudniać",
+      "płacić",
+      "na czas określony"
+    ],
+    exercises: [
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: [
+          "Das Gehalt wird am Ende des Monats bezahlt.",
+          "Das Gehalt wird am Ende des Monats bezahlen.",
+          "Das Gehalt wird am Ende der Monat bezahlt."
+        ],
+        why: "<b>Wird ... bezahlt</b> z Partizip II na końcu i <b>des Monats</b> w dopełniaczu rodzaju męskiego. Bezokolicznik <i>bezahlen</i> jest błędny w stronie biernej, a <i>der Monat</i> nie jest dopełniaczem."
+      },
+      {
+        q: "Wczoraj umowa została podpisana przez obie strony. Które zdanie?",
+        opts: [
+          "Der Vertrag wurde gestern von beiden Seiten unterschrieben.",
+          "Der Vertrag wird gestern von beiden Seiten unterschrieben.",
+          "Der Vertrag hat gestern von beiden Seiten unterschrieben."
+        ],
+        why: "<b>Wurde ... unterschrieben</b>: strona bierna w Präteritum, z <i>von + celownik</i> dla wykonawcy. <i>Hat</i> zrobiłoby z umowy podmiot, który podpisuje."
+      },
+      {
+        q: "Uzupełnij: „Die Probezeit ___ dauert sechs Monate.”",
+        opts: ["des Arbeitnehmers", "dem Arbeitnehmer", "den Arbeitnehmers"],
+        why: "<b>Des Arbeitnehmers</b>: dopełniacz rodzaju męskiego w liczbie pojedynczej, z <i>des</i> i <i>-s</i> przy rzeczowniku."
+      },
+      {
+        q: "Uzupełnij: „Die Kündigungsfrist ___ Vertrags beträgt vier Wochen.”",
+        hint: "dopełniacz, rodzaj męski",
+        why: "<b>Des</b>: <i>Vertrag</i> jest rodzaju męskiego, a dopełniacz ma <i>des</i> i <i>-s</i>: <i>des Vertrags</i>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Pracownik został zatrudniony w maju (strona bierna w Präteritum).",
+        why: "<i>Der Arbeitnehmer wurde im Mai eingestellt.</i> Strona bierna w Präteritum: <i>wurde</i> + Partizip II <i>eingestellt</i>, który pozostaje w jednym kawałku."
+      },
+      {
+        q: "Dopasuj każde słowo do jego znaczenia.",
+        pairs: ["okres próbny", "okres wypowiedzenia", "pracodawca", "wynagrodzenie"]
+      },
+      {
+        q: "Ułóż wyrazy w kolejności.",
+        tr: "Okres próbny pracownika trwa sześć miesięcy.",
+        why: "<i>Die Probezeit des Arbeitnehmers dauert sechs Monate.</i> Dopełniacz <i>des Arbeitnehmers</i> następuje po rzeczowniku <i>Probezeit</i>."
+      },
+      {
+        q: "Przetłumacz: „Wynagrodzenie jest wypłacane na koniec miesiąca.”",
+        why: "<i>Das Gehalt wird am Ende des Monats bezahlt.</i> Poprawne są też <i>am Monatsende</i> i <i>ausgezahlt</i>."
+      },
+      {
+        tr: "Umowa o pracę została wczoraj podpisana przez obie strony. Okres próbny trwa sześć miesięcy, a wynagrodzenie jest wypłacane na koniec miesiąca. Okres wypowiedzenia umowy wynosi cztery tygodnie.",
+        why: "W <i>Arbeitsvertrag</i> <b>ei</b> to [aɪ], a <b>v</b> to [f]; w <i>unterschrieben</i> <b>sch</b> to [ʃ], a <b>ie</b> jest długie [iː]; w <i>Probezeit</i> <b>z</b> to [ts]."
+      },
+      {
+        tr: "Wynagrodzenie pracownika jest wypłacane na koniec miesiąca.",
+        why: "W <i>Arbeitnehmers</i> <b>ei</b> to [aɪ], a <b>eh</b> wydłuża samogłoskę [eː]; w <i>Monatsende</i> <b>o</b> jest długie [oː]; w <i>bezahlt</i> <b>ah</b> wydłuża samogłoskę [aː]."
+      }
+    ]
+  },
+  "lesson:b1-u03-test": {
+    theme: "Sprawdzian",
+    title: "Test: Urzędy i umowy",
+    objectives: [
+      "sprawdzić stronę bierną, dopełniacz z wegen, während i innerhalb oraz um ... zu i damit"
+    ],
+    theory: [
+      {
+        p: "Dziesięć pytań z całej jednostki. Zaliczenie od 70%. Nie zaglądaj do lekcji w trakcie odpowiadania: jeśli czegoś nie pamiętasz, lepiej wrócić i powtórzyć."
+      }
+    ],
+    exercises: [
+      {
+        q: "Uzupełnij: „Das Formular ___ am Schalter abgegeben.”",
+        hint: "werden, czas teraźniejszy",
+        why: "<b>Wird</b>: strona bierna procesu w czasie teraźniejszym, podmiot w liczbie pojedynczej."
+      },
+      {
+        q: "Uzupełnij: „Der Mietvertrag ___ gestern unterschrieben.”",
+        hint: "werden, Präteritum",
+        why: "<b>Wurde</b>: podpowiedź wymaga Präteritum od <i>werden</i>, czyli <i>wurde</i>. Samo <i>gestern</i> nie wystarcza: strona bierna w Perfekt (<i>ist ... unterschrieben worden</i>) to inna forma, tu niewymagana."
+      },
+      {
+        q: "Uzupełnij: „Die Höhe ___ Miete steht im Vertrag.”",
+        hint: "dopełniacz, rodzaj żeński",
+        why: "<b>Der</b>: dopełniacz rodzaju żeńskiego w liczbie pojedynczej."
+      },
+      {
+        q: "Uzupełnij: „Ich schicke ein Foto, ___ er den Schaden sieht.”",
+        hint: "cel, różne podmioty",
+        why: "<b>Damit</b>: <i>ich</i> i <i>er</i> to różne podmioty, a odmieniony czasownik idzie na koniec."
+      },
+      {
+        q: "Wczoraj konto zostało otwarte. Które zdanie?",
+        opts: [
+          "Das Konto wurde gestern eröffnet.",
+          "Das Konto wird gestern eröffnet.",
+          "Das Konto haben gestern eröffnet."
+        ],
+        why: "<b>Wurde ... eröffnet</b>: strona bierna w Präteritum. <i>Wird</i> to czas teraźniejszy, a <i>haben</i> nie zgadza się z <i>Konto</i>."
+      },
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: [
+          "Während des Urlaubs bin ich nicht im Büro.",
+          "Während der Urlaub bin ich nicht im Büro.",
+          "Während des Urlaubs ich bin nicht im Büro."
+        ],
+        why: "<b>Während des Urlaubs</b>: przyimek z dopełniaczem, a czasownik <i>bin</i> tuż po nim, na drugim miejscu."
+      },
+      {
+        q: "Uzupełnij: „Er schickt eine E-Mail, ___ der Chef Bescheid weiß.”",
+        opts: ["damit", "um", "ohne"],
+        why: "<b>Damit</b>: podmioty są różne (<i>er</i> i <i>der Chef</i>), a odmieniony czasownik idzie na koniec."
+      },
+      {
+        q: "Dopasuj każdy zwrot do jego znaczenia.",
+        pairs: [
+          "Formularz jest sprawdzany.",
+          "z powodu pogody",
+          "ten sam podmiot, bezokolicznik",
+          "cel, odmieniony czasownik na końcu; podmioty te same lub różne"
+        ]
+      },
+      {
+        tr: "Formularz jest składany przy okienku. Z powodu przeprowadzki potrzebuję konta. Dzwonię, żeby ktoś naprawił ogrzewanie.",
+        why: "W <i>Schalter</i> <b>sch</b> to [ʃ]; w <i>Umzugs</i> <b>z</b> to [ts]; w <i>Heizung</i> <b>ei</b> to [aɪ], a <b>z</b> to [ts]; w <i>repariert</i> <b>ie</b> jest długie [iː]."
+      },
+      {
+        tr: "Umowa najmu została podpisana, a kaucja jest wpłacana przelewem.",
+        why: "W <i>Mietvertrag</i> <b>ie</b> jest długie [iː], a <b>v</b> to [f]; w <i>unterschrieben</i> <b>sch</b> to [ʃ]; w <i>überwiesen</i> <b>ü</b> jest zaokrąglone."
+      }
+    ]
   }
 });

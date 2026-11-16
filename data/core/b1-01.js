@@ -652,7 +652,7 @@ LINGUAI.addUnits("B1", [
           {
             t: "order",
             tokens: ["Wegen", "des", "Umzugs", "brauche", "ich", "ein", "neues", "Konto"],
-            a: ["Wegen des Umzugs brauche ich ein neues Konto", "Ich brauche wegen des Umzugs ein neues Konto"]
+            a: ["Wegen des Umzugs brauche ich ein neues Konto", "Ich brauche wegen des Umzugs ein neues Konto", "Ein neues Konto brauche ich wegen des Umzugs", "Ich brauche ein neues Konto wegen des Umzugs"]
           },
           {
             t: "trans",
@@ -803,7 +803,7 @@ LINGUAI.addUnits("B1", [
           {
             t: "order",
             tokens: ["Die", "Probezeit", "des", "Arbeitnehmers", "dauert", "sechs", "Monate"],
-            a: ["Die Probezeit des Arbeitnehmers dauert sechs Monate"]
+            a: ["Die Probezeit des Arbeitnehmers dauert sechs Monate", "Sechs Monate dauert die Probezeit des Arbeitnehmers"]
           },
           {
             t: "trans",
@@ -815,7 +815,12 @@ LINGUAI.addUnits("B1", [
               "Am Ende des Monats wird das Gehalt bezahlt",
               "Am Monatsende wird das Gehalt bezahlt",
               "Das Gehalt wird am Ende des Monats ausgezahlt",
-              "Das Gehalt wird am Monatsende ausgezahlt"
+              "Das Gehalt wird am Monatsende ausgezahlt",
+              "Das Gehalt wird am Ende des Monats überwiesen",
+              "Das Gehalt wird am Monatsende überwiesen",
+              "Das Gehalt wird Ende des Monats überwiesen",
+              "Am Ende des Monats wird das Gehalt überwiesen",
+              "Am Monatsende wird das Gehalt überwiesen"
             ]
           },
           {
