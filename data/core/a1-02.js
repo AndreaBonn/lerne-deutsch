@@ -1,7 +1,7 @@
 /* ============================================================
    Language-neutral layer: German (de-DE), structure and answer keys.
    Learner-language texts live in data/i18n/<lang>/a1-02.js.
-   a1-u04 and a1-u05 are German units.
+   a1-u04, a1-u05 and a1-u06 are German units.
    ============================================================ */
 LINGUAI.addUnits("A1", [
   {
@@ -572,6 +572,305 @@ LINGUAI.addUnits("A1", [
         },
         { t: "listen", it: "Ich muss um halb acht aufstehen." },
         { t: "speak", it: "Abends sehe ich manchmal fern." }
+      ]
+    }
+  },
+  {
+    id: "a1-u06",
+    icon: "🏙️",
+    titleIt: "In der Stadt",
+    lessons: [
+      {
+        id: "a1-u06-l1",
+        tags: ["g-praep-dativ", "g-artikel-dat"],
+        cefr: "A1",
+        titleIt: "mit dem Bus, zum Bahnhof",
+        grammar: {
+          examples: [
+            { it: "Ich fahre mit dem Bus." },
+            { it: "Du fährst mit der Straßenbahn." },
+            { it: "Wir fahren mit dem Auto." },
+            { it: "Ich gehe zum Bahnhof." },
+            { it: "Sie geht zur Schule." },
+            { it: "Wir gehen zu Fuß zur Haltestelle." }
+          ]
+        },
+        vocab: [
+          { it: "mit", ex: "Ich fahre mit dem Bus." },
+          { it: "zu", ex: "Ich gehe zum Bahnhof." },
+          { it: "zu Fuß", ex: "Wir gehen zu Fuß zur Schule." },
+          { it: "der Bus", plural: "die Busse", ex: "Der Bus kommt um acht Uhr." },
+          { it: "die Straßenbahn", plural: "die Straßenbahnen", ex: "Ich fahre mit der Straßenbahn." },
+          { it: "die U-Bahn", plural: "die U-Bahnen", ex: "Die U-Bahn fährt schnell." },
+          { it: "der Zug", plural: "die Züge", ex: "Der Zug fährt um neun Uhr ab." },
+          { it: "das Auto", plural: "die Autos", ex: "Wir fahren mit dem Auto." },
+          { it: "das Fahrrad", plural: "die Fahrräder", ex: "Er fährt mit dem Fahrrad." },
+          { it: "der Bahnhof", plural: "die Bahnhöfe", ex: "Der Bahnhof ist groß." },
+          { it: "die Haltestelle", plural: "die Haltestellen", ex: "Die Haltestelle ist da." },
+          { it: "die Schule", plural: "die Schulen", ex: "Die Schule fängt um acht Uhr an." }
+        ],
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "fill", a: ["dem"] },
+          { t: "fill", a: ["der"] },
+          { t: "fill", a: ["zum", "zu dem"] },
+          {
+            t: "gender",
+            opts: ["der", "die", "das"],
+            items: [
+              { it: "Bahnhof", a: "der" },
+              { it: "Haltestelle", a: "die" },
+              { it: "Auto", a: "das" },
+              { it: "Zug", a: "der" },
+              { it: "Schule", a: "die" },
+              { it: "Fahrrad", a: "das" }
+            ]
+          },
+          {
+            t: "order",
+            tokens: ["Wir", "fahren", "mit", "dem", "Zug"],
+            a: ["Wir fahren mit dem Zug", "Mit dem Zug fahren wir"]
+          },
+          {
+            t: "cloze",
+            text: "Er fährt {{1}} dem Bus {{2}} Schule.",
+            gaps: [["mit"], ["zur", "zu der"]]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Ich fahre mit dem Bus zum Bahnhof",
+              "Ich fahre zum Bahnhof mit dem Bus",
+              "Mit dem Bus fahre ich zum Bahnhof",
+              "Zum Bahnhof fahre ich mit dem Bus"
+            ]
+          },
+          { t: "listen", it: "Ich fahre mit dem Bus zur Schule." },
+          { t: "speak", it: "Wir fahren mit der Straßenbahn zum Bahnhof." }
+        ]
+      },
+      {
+        id: "a1-u06-l2",
+        tags: ["g-praesens", "g-praep-dativ"],
+        cefr: "A1",
+        titleIt: "gehen, fahren, kommen aus",
+        grammar: {
+          examples: [
+            { it: "Ich komme aus Italien." },
+            { it: "Ich komme aus dem Supermarkt." },
+            { it: "Er kommt vom Bahnhof." },
+            { it: "Wir gehen zum Arzt." },
+            { it: "Du fährst zum Park." },
+            { it: "Anna ist beim Arzt." }
+          ]
+        },
+        vocab: [
+          { it: "gehen", ex: "Wir gehen zum Park." },
+          { it: "fahren", ex: "Er fährt mit dem Zug." },
+          { it: "kommen", ex: "Ich komme aus Italien." },
+          { it: "aus", ex: "Sie kommt aus dem Supermarkt." },
+          { it: "von", ex: "Er kommt vom Bahnhof." },
+          { it: "bei", ex: "Anna ist beim Arzt." },
+          { it: "einsteigen", ex: "Wir steigen an der Haltestelle ein." },
+          { it: "aussteigen", ex: "Ich steige am Bahnhof aus." },
+          { it: "der Arzt", plural: "die Ärzte", ex: "Ich gehe zum Arzt." },
+          { it: "der Park", plural: "die Parks", ex: "Der Park ist groß." },
+          { it: "der Supermarkt", plural: "die Supermärkte", ex: "Der Supermarkt ist neu." },
+          { it: "die Stadt", plural: "die Städte", ex: "Die Stadt ist schön." }
+        ],
+        exercises: [
+          { t: "conj", verb: "gehen", tense: "praes", persons: [0, 2, 3] },
+          { t: "conj", verb: "fahren", tense: "praes", persons: [0, 1, 2, 3] },
+          { t: "fill", a: ["komme"] },
+          { t: "fill", a: ["fährt"] },
+          { t: "fill", a: ["aus"] },
+          { t: "mcq", a: 1 },
+          { t: "multi", a: [0, 2, 3] },
+          {
+            t: "order",
+            tokens: ["Er", "kommt", "vom", "Bahnhof"],
+            a: ["Er kommt vom Bahnhof", "Vom Bahnhof kommt er"]
+          },
+          { t: "listen", it: "Ich komme aus Italien und fahre mit dem Zug nach Berlin." },
+          { t: "speak", it: "Wir gehen zu Fuß zum Park." }
+        ]
+      },
+      {
+        id: "a1-u06-l3",
+        tags: ["g-imperativ", "g-wechselpraep"],
+        cefr: "A1",
+        titleIt: "Wo ist der Bahnhof? Gehen Sie geradeaus",
+        grammar: {
+          examples: [
+            { it: "Gehen Sie geradeaus." },
+            { it: "Biegen Sie links ab." },
+            { it: "Nehmen Sie die erste Straße rechts." },
+            { it: "Entschuldigung, wo ist der Bahnhof?" },
+            { it: "Der Bahnhof ist neben dem Rathaus." },
+            { it: "Die Apotheke ist hinter der Kreuzung." }
+          ]
+        },
+        vocab: [
+          { it: "geradeaus", ex: "Gehen Sie geradeaus." },
+          { it: "links", ex: "Biegen Sie links ab." },
+          { it: "rechts", ex: "Die Apotheke ist rechts." },
+          { it: "abbiegen", ex: "Biegen Sie an der Kreuzung rechts ab." },
+          { it: "Entschuldigung", ex: "Entschuldigung, wo ist der Bahnhof?" },
+          { it: "neben", ex: "Der Bahnhof ist neben dem Rathaus." },
+          { it: "hinter", ex: "Die Apotheke ist hinter dem Bahnhof." },
+          { it: "vor", ex: "Der Bus hält vor dem Rathaus." },
+          { it: "die Straße", plural: "die Straßen", ex: "Nehmen Sie die erste Straße." },
+          { it: "die Kreuzung", plural: "die Kreuzungen", ex: "Die Kreuzung ist da." },
+          { it: "das Rathaus", plural: "die Rathäuser", ex: "Das Rathaus ist alt." },
+          { it: "die Apotheke", plural: "die Apotheken", ex: "Die Apotheke ist neben dem Bahnhof." }
+        ],
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["Gehen"] },
+          {
+            t: "match",
+            pairs: [{ it: "geradeaus" }, { it: "links" }, { it: "rechts" }, { it: "hinter" }]
+          },
+          {
+            t: "cloze",
+            text: "Die Apotheke ist {{1}} dem Rathaus und der Bahnhof ist {{2}} der Apotheke.",
+            gaps: [["hinter"], ["neben"]]
+          },
+          {
+            t: "order",
+            tokens: ["Gehen", "Sie", "geradeaus", "und", "biegen", "Sie", "links", "ab"],
+            a: ["Gehen Sie geradeaus und biegen Sie links ab"]
+          },
+          {
+            t: "dialogue",
+            lines: [
+              { sp: "A", it: "Entschuldigung, wo ist der Bahnhof?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Gehen Sie geradeaus und dann links.",
+                  "Gehen geradeaus Sie und dann links.",
+                  "Sie geradeaus gehen und dann links."
+                ],
+                a: 0
+              },
+              { sp: "A", it: "Danke! Und wo ist die Apotheke?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Sie ist neben dem Rathaus.",
+                  "Sie ist neben den Rathaus.",
+                  "Sie ist neben der Rathaus."
+                ],
+                a: 0
+              }
+            ]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Entschuldigung, wo ist die Apotheke?",
+              "Entschuldigen Sie, wo ist die Apotheke?"
+            ]
+          },
+          { t: "listen", it: "Gehen Sie geradeaus und biegen Sie rechts ab." },
+          { t: "speak", it: "Entschuldigung, wo ist die Apotheke?" }
+        ]
+      },
+      {
+        id: "a1-u06-l4",
+        tags: ["g-es", "g-artikel-akk"],
+        cefr: "A1",
+        titleIt: "Es gibt, es gibt keinen",
+        grammar: {
+          examples: [
+            { it: "Es gibt einen Park in der Nähe." },
+            { it: "Es gibt eine Bäckerei hier." },
+            { it: "Es gibt ein Café neben dem Rathaus." },
+            { it: "Gibt es hier ein Hotel?" },
+            { it: "Es gibt keinen Supermarkt hier." },
+            { it: "Es gibt keine Bank in der Nähe." }
+          ]
+        },
+        vocab: [
+          { it: "es gibt", ex: "Es gibt ein Café in der Nähe." },
+          { it: "hier", ex: "Gibt es hier ein Hotel?" },
+          { it: "in der Nähe", ex: "Es gibt einen Park in der Nähe." },
+          { it: "das Café", plural: "die Cafés", ex: "Es gibt ein Café in der Stadt." },
+          { it: "das Kino", plural: "die Kinos", ex: "Es gibt ein Kino hier." },
+          { it: "die Bäckerei", plural: "die Bäckereien", ex: "Es gibt eine Bäckerei in der Nähe." },
+          { it: "das Restaurant", plural: "die Restaurants", ex: "Es gibt ein Restaurant am Bahnhof." },
+          { it: "die Bank", plural: "die Banken", ex: "Es gibt keine Bank hier." },
+          { it: "das Museum", plural: "die Museen", ex: "Es gibt ein Museum in der Stadt." },
+          { it: "das Hotel", plural: "die Hotels", ex: "Gibt es hier ein Hotel?" },
+          { it: "die Bibliothek", plural: "die Bibliotheken", ex: "Es gibt eine Bibliothek hier." },
+          { it: "die Kirche", plural: "die Kirchen", ex: "Es gibt eine Kirche neben dem Rathaus." }
+        ],
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "fill", a: ["einen"] },
+          { t: "fill", a: ["keine"] },
+          { t: "fill", a: ["Gibt"] },
+          {
+            t: "match",
+            pairs: [{ it: "das Café" }, { it: "die Bäckerei" }, { it: "das Kino" }, { it: "die Kirche" }]
+          },
+          {
+            t: "order",
+            tokens: ["Es", "gibt", "hier", "keinen", "Supermarkt"],
+            a: [
+              "Es gibt hier keinen Supermarkt",
+              "Es gibt keinen Supermarkt hier",
+              "Hier gibt es keinen Supermarkt"
+            ]
+          },
+          {
+            t: "cloze",
+            text: "Es gibt {{1}} Bäckerei und {{2}} Park hier.",
+            gaps: [["eine"], ["einen"]]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "In der Stadt gibt es ein Kino, aber kein Museum",
+              "Es gibt ein Kino in der Stadt, aber kein Museum",
+              "Es gibt in der Stadt ein Kino, aber kein Museum"
+            ]
+          },
+          { t: "listen", it: "Es gibt eine Bäckerei und einen Park in der Nähe." },
+          { t: "speak", it: "Gibt es hier ein Hotel?" }
+        ]
+      }
+    ],
+    test: {
+      id: "a1-u06-test",
+      tags: ["g-praep-dativ", "g-artikel-dat", "g-wechselpraep"],
+      cefr: "A1",
+      titleIt: "Test: In der Stadt",
+      exercises: [
+        { t: "conj", verb: "fahren", tense: "praes", persons: [0, 1, 2, 3] },
+        { t: "fill", a: ["dem"] },
+        { t: "fill", a: ["zur", "zu der"] },
+        { t: "fill", a: ["aus"] },
+        { t: "fill", a: ["neben"] },
+        { t: "fill", a: ["Nehmen"] },
+        {
+          t: "gender",
+          opts: ["der", "die", "das"],
+          items: [
+            { it: "Rathaus", a: "das" },
+            { it: "Kreuzung", a: "die" },
+            { it: "Bahnhof", a: "der" },
+            { it: "Apotheke", a: "die" }
+          ]
+        },
+        { t: "mcq", a: 1 },
+        { t: "listen", it: "Entschuldigung, wo ist der Bahnhof?" },
+        { t: "speak", it: "Gehen Sie geradeaus und dann links." }
       ]
     }
   }

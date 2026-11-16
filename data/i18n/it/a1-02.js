@@ -1,5 +1,5 @@
 /* ============================================================
-   Learner-language text (it) for data/core/a1-02.js, units a1-u04 and a1-u05.
+   Learner-language text (it) for data/core/a1-02.js, units a1-u04, a1-u05 and a1-u06.
    Keys point at ids in the neutral layer; arrays merge by index,
    so their length has to match core.
    Checked by scripts/parity.mjs.
@@ -1039,6 +1039,521 @@ LINGUAI.addStrings("it", {
       {
         tr: "La sera guardo qualche volta la televisione.",
         why: "Dopo <i>Abends</i> il verbo viene subito; <i>fern</i> chiude la frase."
+      }
+    ]
+  },
+  "unit:a1-u06": {
+    title: "In città",
+    grammarNote: "mit, zu, bei, aus, von · dativo · wo? con in, an, neben · imperativo di cortesia · es gibt"
+  },
+  "lesson:a1-u06-l1": {
+    theme: "Mezzi di trasporto",
+    title: "Mezzi e destinazioni: mit dem Bus, zum Bahnhof",
+    objectives: [
+      "dire con che mezzo ci si sposta con mit + dativo",
+      "dire dove si va con zu + dativo: zum Bahnhof, zur Schule",
+      "usare l'articolo al dativo: dem, der, dem, den"
+    ],
+    theory: [
+      {
+        h: "Mit e zu vogliono il dativo",
+        p: "Le preposizioni <strong>mit</strong> (con, per il mezzo di trasporto) e <strong>zu</strong> (verso un luogo o una persona) vogliono sempre il <strong>dativo</strong>. L'articolo cambia in tutti i generi: maschile e neutro <strong>dem</strong>, femminile <strong>der</strong>, plurale <strong>den</strong>. Esempi: <em>Ich fahre mit dem Bus</em> (maschile), <em>mit der Straßenbahn</em> (femminile), <em>mit dem Auto</em> (neutro). Al plurale il nome prende anche una <strong>-n</strong>: <em>mit den Bussen</em>, <em>mit den Zügen</em>."
+      },
+      {
+        h: "zu dem diventa zum, zu der diventa zur",
+        p: "Con <em>zu</em> l'articolo si fonde: <strong>zu dem → zum</strong>, <strong>zu der → zur</strong>. Si dice <em>Ich gehe zum Bahnhof</em> e <em>Sie geht zur Schule</em>. Per dire che si va a piedi c'è l'espressione fissa <strong>zu Fuß</strong>: <em>Wir gehen zu Fuß zur Haltestelle</em>."
+      },
+      {
+        contrast: "In italiano il mezzo si dice con <em>in</em> (<em>in autobus</em>, <em>in treno</em>, <em>in macchina</em>, <em>in bicicletta</em>) e la meta con <em>a</em> (<em>alla stazione</em>, <em>a scuola</em>). In tedesco il mezzo è sempre <strong>mit</strong> (<em>mit dem Bus</em>, <em>mit dem Zug</em>) e la meta <strong>zu</strong>. Fai attenzione anche ai generi: <em>la stazione</em> è femminile, ma <em>der Bahnhof</em> è maschile; <em>il tram</em> è maschile, ma <em>die Straßenbahn</em> è femminile; <em>l'auto</em> è femminile in italiano, ma <em>das Auto</em> è neutro; <em>la bici</em> è <em>das Fahrrad</em>, neutro."
+      },
+      {
+        trap: "Non dire «in dem Bus fahren» per «andare in autobus» e non usare la forma del nominativo: «mit der Bus» e «mit die Straßenbahn» sono sbagliati. Dopo <em>mit</em> e <em>zu</em> l'articolo è sempre al dativo: <em>mit dem Bus</em>, <em>mit der Straßenbahn</em>, <em>zum Bahnhof</em>, <em>zur Schule</em>."
+      },
+      {
+        tip: "Impara ogni mezzo di trasporto con la sua frase intera: <em>mit dem Bus</em>, <em>mit der U-Bahn</em>, <em>mit dem Zug</em>, <em>mit dem Fahrrad</em>. Così l'articolo giusto arriva insieme al nome."
+      }
+    ],
+    grammar: {
+      title: "mit e zu con il dativo",
+      note: "Dopo <b>mit</b> e <b>zu</b> l'articolo è al dativo: <b>dem</b> (m. e n.), <b>der</b> (f.), <b>den</b> + -n (plurale). <b>zu dem → zum</b>, <b>zu der → zur</b>.",
+      table: {
+        head: ["genere", "mit + dativo", "zu + dativo"],
+        rows: [
+          ["maschile", "mit dem Bus", "zum Bahnhof"],
+          ["femminile", "mit der Straßenbahn", "zur Schule"],
+          ["neutro", "mit dem Auto", "zum Kino"],
+          ["plurale", "mit den Bussen", "zu den Haltestellen"]
+        ]
+      },
+      examples: [
+        { tr: "Vado in autobus.", note: "mit dem Bus: maschile" },
+        { tr: "Tu vai in tram.", note: "mit der Straßenbahn: femminile; fährst, con il cambio di vocale" },
+        { tr: "Andiamo in macchina.", note: "mit dem Auto: neutro" },
+        { tr: "Vado alla stazione.", note: "zum = zu dem" },
+        { tr: "Lei va a scuola.", note: "zur = zu der" },
+        { tr: "Andiamo a piedi alla fermata.", note: "zu Fuß: espressione fissa" }
+      ]
+    },
+    vocab: [
+      "con, per mezzo di",
+      "a, verso (un luogo o una persona)",
+      "a piedi",
+      "l'autobus",
+      "il tram",
+      "la metropolitana",
+      "il treno",
+      "l'auto",
+      "la bicicletta",
+      "la stazione",
+      "la fermata",
+      "la scuola"
+    ],
+    exercises: [
+      {
+        q: "Quale frase è corretta?",
+        opts: ["Ich fahre mit der Bus.", "Ich fahre mit dem Bus.", "Ich fahre mit den Bus."],
+        why: "<i>Der Bus</i> è maschile: dopo <i>mit</i> l'articolo è <b>dem</b>."
+      },
+      {
+        q: "Completa: «Wir fahren mit ___ Auto.»",
+        hint: "das Auto, articolo determinativo al dativo",
+        why: "<i>Das Auto</i> è neutro: dopo <i>mit</i> si dice <b>dem</b>."
+      },
+      {
+        q: "Completa: «Ich fahre mit ___ U-Bahn.»",
+        hint: "die U-Bahn, articolo determinativo al dativo",
+        why: "<i>Die U-Bahn</i> è femminile: al dativo <b>der</b>."
+      },
+      {
+        q: "Completa: «Ich gehe ___ Bahnhof.»",
+        hint: "zu + dem, nella forma contratta",
+        why: "<i>Zu dem</i> si fonde in <b>zum</b>. Anche <i>zu dem Bahnhof</i> è corretto, ma si dice quasi sempre <i>zum</i>."
+      },
+      {
+        q: "Scegli l'articolo giusto per ogni nome.",
+        why: "<i>Bahnhof</i> e <i>Zug</i> sono maschili, <i>Haltestelle</i> e <i>Schule</i> femminili, <i>Auto</i> e <i>Fahrrad</i> neutri. Attenzione: <i>la stazione</i> è femminile in italiano, ma <i>der Bahnhof</i> è maschile.",
+        items: ["stazione", "fermata", "auto", "treno", "scuola", "bicicletta"]
+      },
+      {
+        tr: "Andiamo in treno.",
+        why: "Sono corrette entrambe le posizioni: <i>Wir fahren mit dem Zug</i> e, con l'inversione, <i>Mit dem Zug fahren wir</i>. Il verbo resta al secondo posto."
+      },
+      {
+        q: "Completa le due parole mancanti.",
+        tr: "Va a scuola con l'autobus.",
+        why: "Il mezzo si dice con <i>mit</i> + dativo (<i>dem Bus</i>), la meta con <i>zu</i> + dativo (<i>zu der → zur Schule</i>)."
+      },
+      {
+        tr: "Vado alla stazione in autobus.",
+        why: "Sono corrette anche le altre posizioni: <i>Ich fahre zum Bahnhof mit dem Bus</i>, <i>Mit dem Bus fahre ich zum Bahnhof</i> e <i>Zum Bahnhof fahre ich mit dem Bus</i>. Con il mezzo si usa <i>fahren</i>, non <i>gehen</i>."
+      },
+      {
+        tr: "Vado a scuola in autobus.",
+        why: "<i>Schule</i>: la <b>sch</b> si legge come in «scena» (/ʃ/) e la <b>u</b> è lunga. In <i>fahre</i> la <b>h</b> non si pronuncia e allunga la <b>a</b>."
+      },
+      {
+        tr: "Andiamo alla stazione in tram.",
+        why: "<i>Straßenbahn</i>: la <b>ß</b> è una «s» sorda e la <b>str</b> iniziale si legge «scht-r». In <i>Bahnhof</i> la <b>h</b> dopo la <b>a</b> allunga la vocale; la <b>h</b> di <i>hof</i> si aspira leggermente."
+      }
+    ]
+  },
+  "lesson:a1-u06-l2": {
+    theme: "Muoversi e provenienza",
+    title: "gehen, fahren, kommen: aus, von, bei",
+    objectives: [
+      "distinguere gehen (a piedi) da fahren (con un mezzo)",
+      "dire da dove si viene con aus, von e bei",
+      "dire verso quale città si va con nach"
+    ],
+    theory: [
+      {
+        h: "Gehen e fahren, kommen",
+        p: "<strong>Gehen</strong> indica di solito lo spostarsi a piedi, <strong>fahren</strong> spostarsi con un mezzo (autobus, treno, bici, auto). Con <em>fahren</em> la vocale cambia alla 2ª e alla 3ª persona singolare: <em>ich fahre</em>, <em>du f<strong>ä</strong>hrst</em>, <em>er f<strong>ä</strong>hrt</em>. <em>Gehen</em> e <em>kommen</em> sono regolari: <em>ich gehe</em>, <em>du gehst</em>, <em>wir kommen</em>. I verbi separabili <em>einsteigen</em> e <em>aussteigen</em> mettono il prefisso in fondo: <em>Ich steige am Bahnhof aus.</em>"
+      },
+      {
+        h: "Aus, von e bei: da dove?",
+        p: "<strong>Aus</strong> indica la provenienza da un luogo o da un paese (<em>Ich komme aus Italien</em>, <em>Sie kommt aus dem Supermarkt</em>). <strong>Von</strong> indica il punto di partenza (<em>Er kommt vom Bahnhof</em>, <em>vom Arzt</em>). <strong>Bei</strong> indica dove ci si trova, presso un luogo o una persona (<em>Anna ist beim Arzt</em>). Anche <em>von dem → vom</em> e <em>bei dem → beim</em> si fondono."
+      },
+      {
+        h: "Nach per le città, in per dove si vive",
+        p: "Per dire dove si va, con il nome di una città o di un paese <strong>senza articolo</strong> si usa <strong>nach</strong>: <em>Ich fahre nach Berlin</em>, <em>Wir fahren nach Italien</em>. Per dire dove si abita o si è, invece, si usa <strong>in</strong>: <em>Ich wohne in Berlin</em>. I paesi con l'articolo, come <em>die Schweiz</em>, si trattano più avanti."
+      },
+      {
+        contrast: "L'italiano <em>da</em> è una sola parola e in tedesco diventa molte: <em>aus</em> (<em>vengo da Roma</em>: <em>Ich komme aus Rom</em>), <em>von</em> (<em>vengo dalla stazione</em>: <em>Ich komme vom Bahnhof</em>), <em>bei</em> (<em>sono dal medico</em>: <em>Ich bin beim Arzt</em>), <em>zu</em> (<em>vado dal medico</em>: <em>Ich gehe zum Arzt</em>) e <em>seit</em> (<em>abito qui da un anno</em>: <em>Ich wohne seit einem Jahr hier</em>; <em>seit Montag</em>, per un punto di inizio). Inoltre <em>andare</em> copre sia <em>gehen</em> sia <em>fahren</em>: in tedesco il mezzo conta."
+      },
+      {
+        trap: "Per «vengo dall'Italia» non si dice «Ich komme von Italien»: per la provenienza da un paese o da una città si usa <strong>aus</strong>. E «Ich gehe mit dem Zug» è sbagliato: con un mezzo di trasporto si usa <em>fahren</em>, quindi <em>Ich fahre mit dem Zug</em>."
+      }
+    ],
+    grammar: {
+      title: "aus, von, bei, zu: provenienza e luogo",
+      note: "<b>aus</b> = provenienza da un luogo o da un paese, <b>von</b> = punto di partenza, <b>bei</b> = presso, <b>zu</b> = verso. Tutte vogliono il dativo.",
+      table: {
+        head: ["preposizione", "significato", "esempio"],
+        rows: [
+          ["aus", "da (provenienza)", "Ich komme aus Italien."],
+          ["von", "da (punto di partenza)", "Er kommt vom Bahnhof."],
+          ["bei", "presso, da", "Anna ist beim Arzt."],
+          ["zu", "verso", "Wir gehen zum Arzt."]
+        ]
+      },
+      examples: [
+        { tr: "Vengo dall'Italia.", note: "aus + paese senza articolo" },
+        { tr: "Vengo dal supermercato.", note: "aus dem: dal supermercato, da dentro" },
+        { tr: "Lui viene dalla stazione.", note: "vom = von dem" },
+        { tr: "Andiamo dal medico.", note: "zum = zu dem" },
+        { tr: "Tu vai al parco in macchina.", note: "fährst: cambio di vocale" },
+        { tr: "Anna è dal medico.", note: "beim = bei dem" }
+      ]
+    },
+    vocab: [
+      "andare (a piedi)",
+      "andare (con un mezzo), guidare",
+      "venire",
+      "da (provenienza), di",
+      "da (punto di partenza), di",
+      "presso, da (una persona)",
+      "salire (su un mezzo)",
+      "scendere (da un mezzo)",
+      "il medico",
+      "il parco",
+      "il supermercato",
+      "la città"
+    ],
+    exercises: [
+      {
+        tr: "Presente di gehen: ich, er/sie/es, wir.",
+        why: "<i>Gehen</i> è regolare: <i>gehe</i>, <i>geht</i>, <i>gehen</i>."
+      },
+      {
+        tr: "Presente di fahren: ich, du, er/sie/es, wir.",
+        why: "Alla 2ª e 3ª persona singolare la <b>a</b> diventa <b>ä</b>: <i>fahre</i>, <i>fährst</i>, <i>fährt</i>, <i>fahren</i>."
+      },
+      {
+        q: "Completa: «Ich ___ aus Italien.»",
+        hint: "kommen, prima persona singolare",
+        why: "<i>Ich komme</i>: la desinenza della 1ª persona è <b>-e</b>."
+      },
+      {
+        q: "Completa: «Er ___ mit dem Zug.»",
+        hint: "fahren, terza persona singolare",
+        why: "Con <i>er</i> il verbo cambia vocale: <b>fährt</b>."
+      },
+      {
+        q: "Completa: «Wir kommen ___ der Stadt.»",
+        hint: "da dentro un luogo, provenienza",
+        why: "Per la provenienza da un luogo si usa <b>aus</b>: <i>aus der Stadt</i>."
+      },
+      {
+        q: "Come dici «Vengo dal medico»?",
+        opts: ["Ich komme aus dem Arzt.", "Ich komme vom Arzt.", "Ich komme zum Arzt."],
+        why: "Per il punto di partenza si usa <b>von</b> (<i>von dem → vom</i>). <i>Aus</i> vale per un luogo, non per una persona, e <i>zum</i> indica la direzione verso, non la provenienza."
+      },
+      {
+        q: "Quali frasi sono corrette?",
+        opts: [
+          "Ich fahre mit dem Zug.",
+          "Ich gehe mit dem Zug.",
+          "Wir gehen zu Fuß zum Park.",
+          "Du kommst aus Italien.",
+          "Er fahrt zum Bahnhof."
+        ],
+        why: "La frase 2 è sbagliata perché con un mezzo si usa <i>fahren</i>; la frase 5 ha la forma sbagliata di <i>fahren</i>: <i>fährt</i>."
+      },
+      {
+        tr: "Lui viene dalla stazione.",
+        why: "È corretta anche l'inversione <i>Vom Bahnhof kommt er</i>. Il verbo resta al secondo posto."
+      },
+      {
+        tr: "Vengo dall'Italia e vado a Berlino in treno.",
+        why: "<i>Italien</i>: la <b>I</b> è una «i» lunga; <i>Berlin</i> si legge con la <b>r</b> uvulare o apicale, sono entrambe pronunce standard. <i>Zug</i> comincia con la <b>z</b> «ts»."
+      },
+      {
+        tr: "Andiamo a piedi al parco.",
+        why: "<i>Fuß</i>: la <b>ß</b> è una «s» sorda e la <b>u</b> è lunga. In <i>Park</i> la <b>a</b> è lunga e la <b>k</b> finale è netta."
+      }
+    ]
+  },
+  "lesson:a1-u06-l3": {
+    theme: "Chiedere la strada",
+    title: "Wo ist der Bahnhof? Gehen Sie geradeaus",
+    objectives: [
+      "chiedere dove si trova un luogo con Entschuldigung, wo ist ...?",
+      "dare indicazioni con l'imperativo di cortesia (Gehen Sie ..., Biegen Sie ... ab)",
+      "dire dove si trova qualcosa con neben, hinter, vor + dativo"
+    ],
+    theory: [
+      {
+        h: "L'imperativo di cortesia: infinito + Sie",
+        p: "Con <strong>Sie</strong> l'imperativo ha la forma dell'<strong>infinito + Sie</strong>, con il verbo in <strong>prima posizione</strong>: <em>Gehen Sie geradeaus!</em>, <em>Nehmen Sie die erste Straße rechts!</em> I verbi separabili mandano il prefisso in fondo: <em>Biegen Sie links <strong>ab</strong>.</em> Fa eccezione <em>sein</em>: <strong>Seien Sie</strong> (<em>Seien Sie bitte pünktlich!</em>)."
+      },
+      {
+        h: "Dov'è? wo? con il dativo",
+        p: "Per chiedere dove si trova un luogo: <em>Entschuldigung, wo ist der Bahnhof?</em> Per rispondere servono le preposizioni di luogo. Con <strong>wo?</strong> in, an, auf, vor, hinter, neben vogliono il <strong>dativo</strong>: <em>Der Bahnhof ist neben dem Rathaus</em>, <em>Die Apotheke ist hinter der Kreuzung</em>, <em>Der Bus hält vor dem Rathaus</em>, <em>Wir sind am Bahnhof</em> (<em>an dem → am</em>) e <em>Das Café ist in der Stadt</em>."
+      },
+      {
+        contrast: "In italiano la forma di cortesia usa il congiuntivo alla terza persona (<em>vada dritto</em>, <em>giri a sinistra</em>, <em>prenda la prima a destra</em>). In tedesco la forma di cortesia non passa dal congiuntivo: si usa l'infinito e il pronome <em>Sie</em> dopo il verbo. <em>Scusi</em> si dice <em>Entschuldigung</em> (o <em>Entschuldigen Sie</em>), <em>dritto</em> è <em>geradeaus</em>, <em>a destra</em> è <em>rechts</em> e <em>a sinistra</em> è <em>links</em>, senza preposizione. Fai attenzione anche al genere: <em>il municipio</em> è maschile, ma <em>das Rathaus</em> è neutro."
+      },
+      {
+        trap: "L'imperativo con <em>Sie</em> ha la stessa forma di una domanda sì/no: <em>Gehen Sie geradeaus!</em> oppure <em>Gehen Sie geradeaus?</em> Li distinguono il contesto, l'intonazione e la punteggiatura. Non è, invece, <em>Sie gehen geradeaus</em> (soggetto prima del verbo), che è una frase dichiarativa. E dopo <em>neben</em>, <em>hinter</em> e <em>vor</em> con <em>wo?</em> non va l'accusativo: «neben den Bahnhof» è sbagliato, si dice <em>neben dem Bahnhof</em>."
+      },
+      {
+        tip: "Per ricordare le tre frasi che servono per strada: <em>Entschuldigung, wo ist ...?</em>, <em>Gehen Sie geradeaus</em>, <em>Biegen Sie links / rechts ab</em>. Con queste tre ti orienti in qualsiasi città di lingua tedesca."
+      }
+    ],
+    grammar: {
+      title: "Imperativo di cortesia e wo? con il dativo",
+      note: "<b>Imperativo con Sie:</b> infinito + <b>Sie</b>, verbo in prima posizione. <b>Wo?</b> con in, an, vor, hinter, neben: dativo.",
+      table: {
+        head: ["infinito", "imperativo", "significato"],
+        rows: [
+          ["gehen", "Gehen Sie geradeaus.", "vada dritto"],
+          ["abbiegen", "Biegen Sie links ab.", "giri a sinistra"],
+          ["nehmen", "Nehmen Sie die erste Straße rechts.", "prenda la prima a destra"],
+          ["sein", "Seien Sie bitte pünktlich.", "sia puntuale"]
+        ]
+      },
+      examples: [
+        { tr: "Vada dritto.", note: "Gehen Sie: verbo, poi Sie" },
+        { tr: "Giri a sinistra.", note: "abbiegen: ab in fondo" },
+        { tr: "Prenda la prima strada a destra.", note: "nehmen: la prima strada, die erste Straße" },
+        { tr: "Scusi, dov'è la stazione?" },
+        { tr: "La stazione è accanto al municipio.", note: "neben dem: dativo neutro" },
+        { tr: "La farmacia è dietro l'incrocio.", note: "hinter der: dativo femminile" }
+      ]
+    },
+    vocab: [
+      "dritto",
+      "a sinistra",
+      "a destra",
+      "girare, svoltare",
+      "scusi, mi scusi",
+      "accanto a",
+      "dietro",
+      "davanti a",
+      "la strada",
+      "l'incrocio",
+      "il municipio",
+      "la farmacia"
+    ],
+    exercises: [
+      {
+        q: "Come inviti qualcuno a girare a sinistra con la forma di cortesia?",
+        opts: ["Sie biegen links ab.", "Biegen Sie links ab.", "Biegen links Sie ab."],
+        why: "Verbo in prima posizione, poi <i>Sie</i>, e il prefisso <b>ab</b> in fondo: <b>Biegen Sie links ab.</b> La prima opzione è una frase dichiarativa."
+      },
+      {
+        q: "Come chiedi dov'è la stazione?",
+        opts: ["Wo ist der Bahnhof?", "Wo der Bahnhof ist?", "Wo ist den Bahnhof?"],
+        why: "In una domanda con <i>wo</i> il verbo sta al secondo posto: <b>Wo ist der Bahnhof?</b> Con <i>sein</i> il nome resta al nominativo."
+      },
+      {
+        q: "Completa: «___ Sie geradeaus.» (Vada)",
+        hint: "gehen, imperativo di cortesia, con la maiuscola iniziale",
+        why: "L'imperativo di cortesia comincia con l'infinito: <b>Gehen</b> Sie geradeaus."
+      },
+      {
+        q: "Abbina ogni parola al suo significato.",
+        pairs: ["dritto", "a sinistra", "a destra", "dietro"]
+      },
+      {
+        q: "Completa le due parole mancanti.",
+        tr: "La farmacia è dietro il municipio e la stazione è accanto alla farmacia.",
+        why: "<i>Hinter dem Rathaus</i> (dativo neutro) e <i>neben der Apotheke</i> (dativo femminile): con <i>wo?</i> queste preposizioni vogliono il dativo."
+      },
+      {
+        tr: "Vada dritto e giri a sinistra.",
+        why: "I due imperativi hanno ciascuno il proprio <i>Sie</i>. Il prefisso <i>ab</i> di <i>abbiegen</i> chiude la frase."
+      },
+      {
+        q: "Sei per strada e cerchi la stazione.",
+        setting: "Fermi una persona in centro.",
+        lines: [
+          { tr: "Scusi, dov'è la stazione?" },
+          { tr: "Spiega la strada: dritto, poi a sinistra.", answerTr: "Vada dritto e poi a sinistra." },
+          { tr: "Grazie! E dov'è la farmacia?" },
+          { tr: "Rispondi che la farmacia è accanto al municipio.", answerTr: "È accanto al municipio." }
+        ]
+      },
+      {
+        tr: "Scusi, dov'è la farmacia?",
+        why: "Sono corrette sia <i>Entschuldigung</i> sia <i>Entschuldigen Sie</i> (più formale). La domanda ha il verbo al secondo posto: <i>wo ist</i>."
+      },
+      {
+        tr: "Vada dritto e giri a destra.",
+        why: "In <i>geradeaus</i> la <b>g</b> è dura e la <b>au</b> si legge come «ao». In <i>biegen</i> la <b>ie</b> è una «i» lunga."
+      },
+      {
+        tr: "Scusi, dov'è la farmacia?",
+        why: "<i>Entschuldigung</i>: la <b>sch</b> si legge come in «scena» (/ʃ/). In <i>Apotheke</i> la <b>th</b> si legge come una «t» semplice."
+      }
+    ]
+  },
+  "lesson:a1-u06-l4": {
+    theme: "Il quartiere",
+    title: "Es gibt, es gibt keinen",
+    objectives: [
+      "dire cosa c'è in città con es gibt + accusativo",
+      "dire che qualcosa non c'è con es gibt keinen / keine / kein",
+      "chiedere Gibt es hier ...?"
+    ],
+    theory: [
+      {
+        h: "Es gibt: «c'è» e «ci sono»",
+        p: "Per dire che qualcosa esiste si usa <strong>es gibt</strong>. La forma è <strong>sempre la stessa</strong>, al singolare e al plurale: <em>Es gibt einen Park</em>, <em>Es gibt zwei Kinos</em>. Dopo <em>es gibt</em> il nome va all'<strong>accusativo</strong>, quindi solo il maschile cambia: <em>einen Park</em> (m.), <em>eine Bäckerei</em> (f.), <em>ein Café</em> (n.). Per chiedere: <em>Gibt es hier ein Hotel?</em>"
+      },
+      {
+        h: "Dire che qualcosa non c'è",
+        p: "Per negare si usa <strong>kein</strong>, che segue lo stesso schema di <em>ein</em>: <em>Es gibt keinen Supermarkt</em> (m.), <em>keine Bank</em> (f.), <em>kein Museum</em> (n.). Con <em>es gibt</em> la negazione è <em>kein</em>, non <em>nicht</em>."
+      },
+      {
+        contrast: "In italiano <em>c'è</em> e <em>ci sono</em> cambiano con il numero (<em>c'è un parco</em>, <em>ci sono due cinema</em>). In tedesco <em>es gibt</em> non cambia mai: <em>Es gibt einen Park</em>, <em>Es gibt zwei Kinos</em>. Anche il genere è diverso: <em>il panificio</em> è maschile, <em>die Bäckerei</em> è femminile; <em>il bar</em> è maschile in italiano, <em>das Café</em> è neutro; <em>il cinema</em> è <em>das Kino</em>, neutro; <em>la chiesa</em> è <em>die Kirche</em>."
+      },
+      {
+        trap: "<em>Es gibt</em> di solito introduce qualcosa di nuovo: <em>Es gibt ein Café neben dem Rathaus</em>. Per dire dove si trova una cosa già nota si usa invece <em>sein</em>: <em>Wo ist das Café? Es ist neben dem Rathaus.</em> Non dire «Es gibt ein Bäckerei»: <em>Bäckerei</em> è femminile, quindi <em>eine Bäckerei</em>. E non dire «Es gibt ein Park»: il maschile all'accusativo vuole <em>einen</em>."
+      },
+      {
+        tip: "Per scoprire cosa c'è in un quartiere nuovo, chiedi: <em>Gibt es hier ein Café / einen Supermarkt / eine Bank in der Nähe?</em> Ricorda <em>-en</em> solo per il maschile."
+      }
+    ],
+    grammar: {
+      title: "es gibt con l'accusativo",
+      note: "<b>Es gibt</b> + accusativo: <b>einen</b> (m.), <b>eine</b> (f.), <b>ein</b> (n.). La negazione è <b>keinen</b>, <b>keine</b>, <b>kein</b>. La forma <i>es gibt</i> non cambia con il plurale.",
+      table: {
+        head: ["genere", "positivo", "negativo"],
+        rows: [
+          ["maschile", "Es gibt einen Park.", "Es gibt keinen Supermarkt."],
+          ["femminile", "Es gibt eine Bäckerei.", "Es gibt keine Bank."],
+          ["neutro", "Es gibt ein Café.", "Es gibt kein Museum."]
+        ]
+      },
+      examples: [
+        { tr: "C'è un parco qui vicino.", note: "einen: maschile all'accusativo" },
+        { tr: "C'è una panetteria qui.", note: "eine: femminile" },
+        { tr: "C'è un bar accanto al municipio.", note: "ein: neutro" },
+        { tr: "C'è un albergo qui?", note: "domanda: verbo in prima posizione" },
+        { tr: "Qui non c'è nessun supermercato.", note: "keinen: negazione del maschile" },
+        { tr: "Qui vicino non c'è nessuna banca.", note: "keine: negazione del femminile" }
+      ]
+    },
+    vocab: [
+      "c'è, ci sono",
+      "qui",
+      "nelle vicinanze, qui vicino",
+      "il bar, il caffè",
+      "il cinema",
+      "la panetteria",
+      "il ristorante",
+      "la banca",
+      "il museo",
+      "l'albergo",
+      "la biblioteca",
+      "la chiesa"
+    ],
+    exercises: [
+      {
+        q: "Quale frase è corretta?",
+        opts: ["Es gibt ein Park hier.", "Es gibt einen Park hier.", "Es gibt eine Park hier."],
+        why: "<i>Der Park</i> è maschile e dopo <i>es gibt</i> serve l'accusativo: <b>einen Park</b>."
+      },
+      {
+        q: "Completa: «Es gibt ___ Supermarkt in der Nähe.»",
+        hint: "der Supermarkt, articolo indeterminativo all'accusativo",
+        why: "<i>Der Supermarkt</i> è maschile, accusativo: <b>einen</b>."
+      },
+      {
+        q: "Completa: «Es gibt ___ Bank hier.» (nessuna)",
+        hint: "die Bank, negazione",
+        why: "<i>Die Bank</i> è femminile: la negazione è <b>keine</b>."
+      },
+      {
+        q: "Completa: «___ es hier ein Café?»",
+        hint: "domanda: c'è ...?",
+        why: "In una domanda sì/no il verbo sta in prima posizione: <b>Gibt</b> es hier ein Café?"
+      },
+      {
+        q: "Abbina ogni parola al suo significato.",
+        pairs: ["il bar, il caffè", "la panetteria", "il cinema", "la chiesa"]
+      },
+      {
+        tr: "Qui non c'è nessun supermercato.",
+        why: "Sono corrette anche <i>Es gibt keinen Supermarkt hier</i> e, con l'inversione, <i>Hier gibt es keinen Supermarkt</i>. Il verbo <i>gibt</i> resta al secondo posto."
+      },
+      {
+        q: "Completa le due parole mancanti.",
+        tr: "C'è una panetteria e un parco qui.",
+        why: "<i>Bäckerei</i> è femminile (<b>eine</b>), <i>Park</i> maschile (<b>einen</b>): solo il maschile cambia all'accusativo."
+      },
+      {
+        q: "Traduci: «In città c'è un cinema, ma non c'è un museo.»",
+        why: "Dopo <i>es gibt</i>: <i>ein Kino</i> è neutro (<i>ein</i>), la negazione di <i>Museum</i> (neutro) è <i>kein</i>. Sono corrette anche le altre posizioni con la stessa struttura."
+      },
+      {
+        tr: "C'è una panetteria e un parco qui vicino.",
+        why: "<i>Bäckerei</i>: la <b>ä</b> si legge come una «e» aperta, la <b>ck</b> come «k». In <i>Nähe</i> la <b>h</b> non si pronuncia e allunga la vocale; la <b>ä</b> è lunga."
+      },
+      {
+        tr: "C'è un albergo qui?",
+        why: "<i>Hotel</i> ha l'accento sulla seconda sillaba: /hoˈtɛl/. In <i>gibt</i> la <b>g</b> è dura."
+      }
+    ]
+  },
+  "lesson:a1-u06-test": {
+    theme: "Verifica",
+    title: "Verifica dell'unità 6",
+    objectives: ["verificare mezzi di trasporto, dativo, indicazioni, wo? ed es gibt"],
+    theory: [
+      {
+        p: "Dieci domande su tutta l'unità. Si supera con il 70%. Non riguardare le lezioni mentre rispondi: se non ricordi qualcosa, è meglio tornare a ripassare."
+      }
+    ],
+    exercises: [
+      {
+        tr: "Presente di fahren: ich, du, er/sie/es, wir.",
+        why: "<i>Fahre</i>, <i>fährst</i>, <i>fährt</i>, <i>fahren</i>: la <b>a</b> diventa <b>ä</b> alla 2ª e 3ª persona singolare."
+      },
+      {
+        q: "Completa: «Ich fahre mit ___ Bus.»",
+        hint: "der Bus, articolo determinativo al dativo",
+        why: "<i>Der Bus</i> è maschile: dopo <i>mit</i> si dice <b>dem</b>."
+      },
+      {
+        q: "Completa: «Wir gehen ___ Schule.»",
+        hint: "zu + der, nella forma contratta",
+        why: "<i>Zu der</i> si fonde in <b>zur</b>."
+      },
+      {
+        q: "Completa: «Ich komme ___ Italien.»",
+        hint: "provenienza da un paese",
+        why: "Per la provenienza da un paese si usa <b>aus</b>."
+      },
+      {
+        q: "Completa: «Die Apotheke ist ___ dem Rathaus.» (accanto)",
+        hint: "accanto a",
+        why: "<b>Neben</b> + dativo: <i>neben dem Rathaus</i>."
+      },
+      {
+        q: "Completa: «___ Sie die erste Straße links.» (Prenda)",
+        hint: "nehmen, imperativo di cortesia, con la maiuscola iniziale",
+        why: "L'imperativo di cortesia comincia con l'infinito: <b>Nehmen</b> Sie die erste Straße links."
+      },
+      {
+        q: "Scegli l'articolo giusto per ogni nome.",
+        why: "<i>Rathaus</i> è neutro, <i>Kreuzung</i> e <i>Apotheke</i> sono femminili, <i>Bahnhof</i> è maschile.",
+        items: ["municipio", "incrocio", "stazione", "farmacia"]
+      },
+      {
+        q: "Come dici «Non c'è un supermercato»?",
+        opts: ["Es gibt kein Supermarkt.", "Es gibt keinen Supermarkt.", "Es gibt nicht Supermarkt."],
+        why: "<i>Der Supermarkt</i> è maschile all'accusativo: <b>keinen</b>."
+      },
+      {
+        tr: "Scusi, dov'è la stazione?",
+        why: "<i>Entschuldigung</i>: la <b>sch</b> si legge come in «scena» (/ʃ/); in <i>Bahnhof</i> la <b>h</b> dopo la <b>a</b> allunga la vocale."
+      },
+      {
+        tr: "Vada dritto e poi a sinistra.",
+        why: "<i>Geradeaus</i>: la <b>g</b> è dura e la <b>au</b> suona come «ao». In <i>links</i> la <b>i</b> è breve."
       }
     ]
   }
