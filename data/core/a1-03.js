@@ -372,7 +372,7 @@ LINGUAI.addUnits("A1", [
           { it: "das Wetter", plural: "-", ex: "Wie ist das Wetter heute?" },
           { it: "regnen", ex: "Heute regnet es." },
           { it: "schneien", ex: "Im Winter schneit es oft." },
-          { it: "die Sonne", plural: "-", ex: "Die Sonne scheint." },
+          { it: "die Sonne", plural: "die Sonnen", ex: "Die Sonne scheint." },
           { it: "die Wolke", plural: "die Wolken", ex: "Am Himmel sind viele Wolken." },
           { it: "der Wind", plural: "die Winde", ex: "Heute ist der Wind kalt." },
           { it: "kalt", ex: "Es ist kalt." },
