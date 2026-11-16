@@ -794,7 +794,7 @@ LINGUAI.addStrings("en", {
       {
         q: "How do you ask “What are you thinking about?”",
         opts: ["Woran denkst du?", "Wonach denkst du?", "Wohin denkst du?"],
-        why: "<i>Denken an</i> becomes <b>woran</b> (wo + r + an). <i>Wonach</i> and <i>wohin</i> are real words, but they do not go with <i>denken</i>: the first points to <i>nach</i>, the second to a direction."
+        why: "<i>Denken an</i> becomes <b>woran</b> (wo + r + an). The other options do not mean “what are you thinking about?”: <i>wonach</i> points to the preposition <i>nach</i>, and <i>Wohin denkst du?</i> is an idiom of surprise or protest (“what are you thinking?”)."
       },
       {
         q: "Replace with a da- form: “Ich warte auf den Bus. Ich warte ___.”",
@@ -855,7 +855,7 @@ LINGUAI.addStrings("en", {
       },
       {
         h: "Two questions to choose the form",
-        p: "The <strong>gender and number</strong> come from the noun the pronoun refers to (<em>Buch</em> is neuter, so <em>das</em>). The <strong>case</strong> depends on the pronoun's role inside the relative clause: subject (nominative), direct object (accusative) or the complement of <em>helfen, geben</em> (dative). In the three cases covered here the forms are those of the definite article, except the dative plural, which is <strong>denen</strong> (the genitive, <em>dessen, deren</em>, comes later)."
+        p: "The <strong>gender and number</strong> come from the noun the pronoun refers to (<em>Buch</em> is neuter, so <em>das</em>). The <strong>case</strong> depends on the pronoun's role inside the relative clause: subject (nominative), direct object (accusative), or an indirect object such as the recipient with <em>geben</em> (dative); <em>helfen</em> also takes a dative object. Compare <em>das Buch, das ich den Kindern gebe</em> (the thing given: accusative) with <em>die Kinder, denen ich das Buch gebe</em> (the recipient: dative). In the three cases covered here the forms are those of the definite article, except the dative plural, which is <strong>denen</strong> (the genitive, <em>dessen, deren</em>, comes later)."
       },
       {
         h: "With a preposition",

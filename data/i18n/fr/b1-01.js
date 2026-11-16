@@ -794,7 +794,7 @@ LINGUAI.addStrings("fr", {
       {
         q: "Comment demandes-tu « À quoi penses-tu ? »",
         opts: ["Woran denkst du?", "Wonach denkst du?", "Wohin denkst du?"],
-        why: "<i>Denken an</i> devient <b>woran</b> (wo + r + an). <i>Wonach</i> et <i>wohin</i> existent, mais ne s'emploient pas avec <i>denken</i> : la première renvoie à <i>nach</i>, la seconde indique une direction."
+        why: "<i>Denken an</i> devient <b>woran</b> (wo + r + an). Les autres options ne veulent pas dire « à quoi penses-tu ? » : <i>wonach</i> renvoie à la préposition <i>nach</i>, et <i>Wohin denkst du ?</i> est une tournure qui exprime la surprise ou la protestation (« qu'est-ce que tu t'imagines ? »)."
       },
       {
         q: "Remplace par une forme en da- : « Ich warte auf den Bus. Ich warte ___. »",
@@ -855,7 +855,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         h: "Deux questions pour choisir la forme",
-        p: "Le <strong>genre et le nombre</strong> viennent du nom auquel le pronom renvoie (<em>Buch</em> est neutre, donc <em>das</em>). Le <strong>cas</strong> dépend du rôle du pronom dans la relative : sujet (nominatif), complément d'objet direct (accusatif) ou complément de <em>helfen, geben</em> (datif). Dans les trois cas étudiés ici, les formes sont celles de l'article défini, sauf le datif pluriel, qui est <strong>denen</strong> (le génitif, <em>dessen, deren</em>, viendra plus tard)."
+        p: "Le <strong>genre et le nombre</strong> viennent du nom auquel le pronom renvoie (<em>Buch</em> est neutre, donc <em>das</em>). Le <strong>cas</strong> dépend du rôle du pronom dans la relative : sujet (nominatif), complément d'objet direct (accusatif) ou complément d'objet indirect, comme le destinataire avec <em>geben</em> ou l'objet de <em>helfen</em> (datif) : <em>das Buch, das ich den Kindern gebe</em> (la chose donnée : accusatif), <em>die Kinder, denen ich das Buch gebe</em> (le destinataire : datif). Dans les trois cas étudiés ici, les formes sont celles de l'article défini, sauf le datif pluriel, qui est <strong>denen</strong> (le génitif, <em>dessen, deren</em>, viendra plus tard)."
       },
       {
         h: "Avec la préposition",
