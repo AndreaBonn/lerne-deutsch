@@ -1,18 +1,7 @@
 {
-  "bundleHash": "39db205245e38c9f1cbae36a0601ba173b9f5bfae51ce666e99acea597728399",
-  "findings": [
-    {
-      "kind": "chiarezza didattica",
-      "msg": "«Dla dokładnej godziny: Um acht Uhr» confonde l'ora attuale con l'orario di un evento. Alla domanda «Wie spät ist es?» si risponde «Es ist acht Uhr», anche per indicare un'ora esatta. Presentare «Um acht Uhr» come risposta a «Wann …?» o «Um wie viel Uhr …?», con un esempio completo.",
-      "path": "content[\"ref:g-temporalangaben\"].body"
-    },
-    {
-      "kind": "regola grammaticale troppo assoluta",
-      "msg": "«Po niemiecku dopełnienie musi być wyrażone» esclude erroneamente risposte ellittiche naturali come «Hast du einen Bruder? – Ja, habe ich». Precisare in polacco che nella risposta completa «Ja, ich habe einen» il pronome sostituisce il nome, mentre nelle risposte brevi il complemento può essere sottinteso.",
-      "path": "content[\"ref:g-indefinitpron\"].body"
-    }
-  ],
+  "bundleHash": "6fd94875900b7e1c959d0cf841da3a527d303746f603bd10aac4cb5676b33afa",
+  "findings": [],
   "lang": "pl",
   "unit": "i18n-grammar-reference",
-  "verdict": "fail"
+  "verdict": "pass"
 }

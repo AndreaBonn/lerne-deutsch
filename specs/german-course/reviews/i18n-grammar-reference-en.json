@@ -1,23 +1,7 @@
 {
-  "bundleHash": "d31c722ec1338a13a87e2a08053d08063779d800f3030788ac83e439c12b6072",
-  "findings": [
-    {
-      "kind": "case-rule",
-      "msg": "“The dative is ... used ... to say where something is” overgeneralizes the location rule. Location alone does not determine case: accusative prepositions retain their case even in descriptions of location. Specify that a location expressed with a two-way preposition takes the dative; other prepositions govern their own case.",
-      "path": "content[\"ref:g-artikel-dat\"].body"
-    },
-    {
-      "kind": "word-order",
-      "msg": "The claim that nicht stands “just before” a final infinitive or separable particle is too restrictive. Other complements can intervene: Ich kann nicht nach Berlin kommen; Ich rufe nicht jeden Tag an. Say that nicht precedes the final verb component, with its precise position depending on what is negated.",
-      "path": "content[\"ref:g-negation\"].body"
-    },
-    {
-      "kind": "inflection-rule",
-      "msg": "“With feminine nouns and in the plural: mein + -e” omits the case restriction and conflicts with the dative forms taught elsewhere in this reference. Specify “in the nominative and accusative”; the dative requires meiner Mutter and meinen Eltern.",
-      "path": "content[\"ref:g-possessiv\"].body"
-    }
-  ],
+  "bundleHash": "b9c114b0c8811bfac7a9b1dab00afb94adc67d9813698822b6ac85dc4b9621f8",
+  "findings": [],
   "lang": "en",
   "unit": "i18n-grammar-reference",
-  "verdict": "fail"
+  "verdict": "pass"
 }
