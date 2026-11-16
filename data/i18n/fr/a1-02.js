@@ -1,5 +1,5 @@
 /* ============================================================
-   Textes dans la langue de l'élève (fr) pour data/core/a1-02.js, unité a1-u04.
+   Textes dans la langue de l'élève (fr) pour data/core/a1-02.js, unités a1-u04 et a1-u05.
    Les clés renvoient aux id de la couche neutre ; les tableaux se
    joignent par index, leur longueur doit donc correspondre à core.
    Vérifié par scripts/parity.mjs.
@@ -527,6 +527,518 @@ LINGUAI.addStrings("fr", {
       {
         tr: "Le manteau est très beau. Je le prends.",
         why: "<i>Mantel</i> est masculin : <i>ihn</i>."
+      }
+    ]
+  },
+  "unit:a1-u05": {
+    title: "Ma journée",
+    grammarNote: "verbes à particule séparable · um, am, im, von ... bis · können, wollen, müssen · adverbes de fréquence"
+  },
+  "lesson:a1-u05-l1": {
+    theme: "Routine du matin",
+    title: "Verbes séparables : la particule va en fin de phrase",
+    objectives: [
+      "décrire sa routine avec aufstehen, frühstücken, duschen, einkaufen, fernsehen",
+      "placer la particule des verbes séparables en fin de phrase",
+      "dire à quelle heure on fait quelque chose avec um + heure"
+    ],
+    theory: [
+      {
+        h: "La particule se détache et va en fin de phrase",
+        p: "Beaucoup de verbes allemands ont une particule accentuée qui, dans la proposition principale, <strong>se détache</strong> et va <strong>à la fin de la phrase</strong>. À l'infinitif le verbe reste entier : <em>aufstehen</em>. Dans la phrase, la partie conjuguée est en deuxième position et la particule ferme la phrase : <em>Ich stehe um sieben Uhr <strong>auf</strong></em>. Il en va de même pour <em>aufwachen</em> (<em>Ich wache um sechs Uhr auf</em>), <em>einkaufen</em> (<em>Wir kaufen am Samstag ein</em>), <em>fernsehen</em> (<em>Am Abend sehe ich fern</em>), <em>anfangen</em> (<em>Der Film fängt um acht Uhr an</em>) et <em>einschlafen</em>."
+      },
+      {
+        contrast: "Le français n'a pas de verbes qui se coupent en deux : <em>se lever</em>, <em>se réveiller</em>, <em>faire les courses</em> restent d'un bloc. De plus, <em>se lever</em> et <em>se réveiller</em> sont pronominaux (<em>je me lève</em>), alors que <em>aufstehen</em> et <em>aufwachen</em> n'ont <strong>aucun pronom</strong> : <em>Ich stehe auf</em>, et non « Ich stehe mich auf ». Pour « prendre une douche », le verbe <em>duschen</em> suffit : <em>Ich dusche am Morgen</em>."
+      },
+      {
+        h: "Les moments de la journée : le genre",
+        p: "Apprends ces noms avec leur article : <em>der Morgen</em>, <em>der Tag</em>, <em>der Abend</em>, <em>die Nacht</em>. Bonne nouvelle : les genres correspondent à ceux du français (<em>le matin</em>, <em>le jour</em>, <em>le soir</em> sont masculins, <em>la nuit</em> est féminine). Attention à une confusion de sens : <em>der Morgen</em> (le matin) s'écrit avec une majuscule, alors que <em>morgen</em> en minuscule veut dire « demain »."
+      },
+      {
+        trap: "Ne dis pas « Ich aufstehe um sieben » : la particule ne reste pas collée au verbe conjugué. Et ne l'oublie pas à la fin : « Ich stehe um sieben Uhr » sans <em>auf</em> est une autre phrase et ne veut pas dire « je me lève ». Attention aussi aux préfixes qui <strong>ne</strong> se détachent <strong>pas</strong> : <em>be-</em>, <em>ver-</em>, <em>er-</em> (<em>besuchen</em> → <em>Ich besuche dich</em>, <em>verstehen</em> → <em>Ich verstehe das</em>). La particule séparable est celle qui porte l'accent (<em>AUFstehen</em>), le préfixe inséparable ne le porte pas (<em>beSUchen</em>)."
+      },
+      {
+        tip: "Écris cinq phrases avec des verbes séparables différents et vérifie que la particule est toujours le dernier mot : <em>Ich wache auf. Ich stehe auf. Ich kaufe ein. Ich sehe fern. Ich schlafe ein.</em> Puis ajoute <em>um</em> + heure à deux d'entre elles."
+      }
+    ],
+    grammar: {
+      title: "Verbes séparables dans la proposition principale",
+      note: "Dans la proposition principale, la partie conjuguée est en <b>deuxième position</b> et la <b>particule va en fin de phrase</b>. À l'infinitif, le verbe est entier.",
+      table: {
+        head: ["infinitif", "présent", "exemple"],
+        rows: [
+          ["aufstehen", "ich stehe ... auf", "Ich stehe um sieben Uhr auf."],
+          ["aufwachen", "ich wache ... auf", "Du wachst um sechs Uhr auf."],
+          ["einkaufen", "wir kaufen ... ein", "Am Samstag kaufen wir ein."],
+          ["fernsehen", "er sieht ... fern", "Am Abend sieht er fern."],
+          ["anfangen", "er fängt ... an", "Der Film fängt um acht Uhr an."]
+        ]
+      },
+      examples: [
+        { tr: "Je me lève à sept heures.", note: "auf en fin de phrase, aucun pronom réfléchi" },
+        { tr: "Tu te réveilles à six heures." },
+        { tr: "Le samedi, nous faisons les courses.", note: "einkaufen : ein en fin de phrase" },
+        { tr: "Le soir, il regarde la télévision.", note: "fernsehen : au présent de er, sehen devient sieht" },
+        { tr: "Le film commence à huit heures.", note: "anfangen : er fängt an, avec le changement de voyelle" },
+        { tr: "Je prends mon petit-déjeuner à sept heures et demie.", note: "frühstücken n'est pas séparable : aucune particule en fin de phrase" }
+      ]
+    },
+    vocab: [
+      "se lever",
+      "se réveiller",
+      "prendre le petit-déjeuner",
+      "prendre une douche",
+      "faire les courses",
+      "regarder la télévision",
+      "commencer",
+      "s'endormir",
+      "le matin",
+      "le jour",
+      "le soir",
+      "la nuit"
+    ],
+    exercises: [
+      {
+        q: "Quelle phrase est correcte ?",
+        opts: ["Ich aufstehe um sieben Uhr.", "Ich stehe um sieben Uhr auf.", "Ich stehe um auf sieben Uhr."],
+        why: "Le verbe conjugué est en deuxième position et la particule <b>auf</b> ferme la phrase : <b>Ich stehe um sieben Uhr auf.</b>"
+      },
+      {
+        q: "Quelle question est correcte ?",
+        opts: ["Kommst du mit?", "Mitkommst du?", "Kommst mit du?"],
+        why: "<i>Mitkommen</i> est séparable : <i>Kommst du mit?</i> La particule <b>mit</b> ferme la question."
+      },
+      {
+        tr: "Toute la conjugaison de aufstehen, avec la particule.",
+        why: "Écris toujours la forme conjuguée, puis la particule : <i>stehe auf</i>, <i>stehst auf</i>, <i>steht auf</i>, <i>stehen auf</i>, <i>steht auf</i>, <i>stehen auf</i>. <i>Er/sie/es</i> et <i>ihr</i> ont la même forme : <b>steht auf</b>."
+      },
+      {
+        q: "Complète : « Wir ___ um sieben auf. »",
+        hint: "aufstehen, première personne du pluriel",
+        why: "Avec <b>wir</b> le verbe a la forme de l'infinitif : <i>wir stehen ... auf</i>."
+      },
+      {
+        q: "Complète : « Ich stehe um sieben ___. »",
+        hint: "la particule de aufstehen",
+        why: "La particule séparable va en fin de phrase : <b>auf</b>."
+      },
+      {
+        tr: "Je me lève à sept heures.",
+        why: "L'ordre est : sujet, verbe conjugué, heure, particule. Dans <i>stehe</i>, le <b>st</b> en début de syllabe se lit « scht » : /ˈʃteːə/."
+      },
+      {
+        q: "Complète les deux mots manquants.",
+        tr: "Le samedi, nous faisons les courses.",
+        why: "<i>Einkaufen</i> se divise en <i>kaufen</i> et <i>ein</i>. Avec <i>am Samstag</i> en première position, le sujet <i>wir</i> suit le verbe."
+      },
+      {
+        tr: "À sept heures, je me lève.",
+        why: "<i>Ich stehe um sieben Uhr auf</i> est correct aussi, tout comme, avec l'inversion, <i>Um sieben (Uhr) stehe ich auf</i>. Dans la phrase française, le pronom réfléchi (« me ») ne se traduit pas."
+      },
+      {
+        tr: "Je me lève à sept heures et je prends mon petit-déjeuner à huit heures.",
+        why: "<i>Auf</i> contient la diphtongue /aʊ̯/, écrite « au » : un glissement de « a » vers un « ou » bref dans la même syllabe. Dans <i>frühstücke</i>, le <b>ü</b> se prononce comme le « u » français de « tu » ; le <b>st</b> se lit « scht »."
+      },
+      {
+        tr: "Le samedi, nous faisons les courses.",
+        why: "<i>Samstag</i> : le <b>s</b> devant une voyelle est sonore (comme le « z » de « zéro ») ; <i>ein</i> commence par la diphtongue <b>ei</b> (comme « aï »)."
+      }
+    ]
+  },
+  "lesson:a1-u05-l2": {
+    theme: "L'heure et les jours",
+    title: "Dire et demander l'heure : um, am, von ... bis",
+    objectives: [
+      "demander l'heure avec Wie spät ist es? et répondre",
+      "dire les heures pleines, ainsi que Viertel nach, Viertel vor, halb",
+      "utiliser um avec l'heure, am avec les jours et von ... bis"
+    ],
+    theory: [
+      {
+        h: "Demander et dire l'heure",
+        p: "Pour demander l'heure : <em>Wie spät ist es?</em> ou <em>Wie viel Uhr ist es?</em> On répond avec <em>Es ist</em> + heure : <em>Es ist sieben Uhr</em>. Pour les quarts et les minutes : <em>Es ist Viertel nach sieben</em> (7 h 15), <em>Es ist Viertel vor acht</em> (7 h 45), <em>Es ist zehn nach sieben</em> (7 h 10), <em>Es ist zehn vor acht</em> (7 h 50). Pour une heure, on dit <em>Es ist ein Uhr</em>. Dans les contextes officiels (trains, programmes de télévision, horaires), on utilise aussi les heures de 0 à 24 : <em>neunzehn Uhr dreißig</em>."
+      },
+      {
+        contrast: "Comme en français (« il est sept heures »), le sujet est un <em>es</em> impersonnel : <em>Es ist sieben Uhr</em>. Le piège, c'est <strong>halb</strong> : <em>halb acht</em> veut dire <strong>sept heures et demie</strong>, pas huit heures et demie, car on compte vers l'heure qui arrive. Quand tu entends « acht », ton oreille pense à 8 h : retiens que <em>Es ist halb acht</em> = 7 h 30. En français, « heure » désigne à la fois l'heure du jour et la durée ; l'allemand distingue les deux : l'heure du jour se dit avec <em>Uhr</em> (<em>die Uhr</em> est aussi « l'horloge, la montre »), la durée avec <em>die Stunde</em> : <em>Es ist drei Uhr</em> (il est trois heures), <em>Der Film dauert drei Stunden</em> (le film dure trois heures)."
+      },
+      {
+        h: "um, am, von ... bis",
+        p: "Avec l'heure précise on utilise <strong>um</strong> : <em>Der Film beginnt um acht Uhr</em> (à huit heures). Avec les jours et les moments de la journée on utilise <strong>am</strong> : <em>am Montag</em>, <em>am Samstag</em>, <em>am Morgen</em>, <em>am Nachmittag</em>, <em>am Abend</em> ; seule exception, <em>in der Nacht</em>. Avec les mois et les saisons, <strong>im</strong> : <em>im Mai</em>, <em>im Sommer</em>. Pour un intervalle, <strong>von ... bis</strong> : <em>von Montag bis Freitag</em>, <em>von acht bis vier</em>. Les jours : <em>Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag</em>."
+      },
+      {
+        trap: "En allemand, tous les jours sont masculins (<em>der Montag</em>, <em>der Sonntag</em>) et s'écrivent avec une majuscule, comme tous les noms ; en français ils prennent une minuscule. Ne traduis pas « à sept heures » avec <em>am</em> : pour l'heure il faut <em>um</em>, pour le jour <em>am</em>. Et ne dis pas « um Montag » : lundi est un jour, donc <em>am Montag</em>."
+      },
+      {
+        tip: "Apprends les trois demi-heures par paires : <em>halb acht</em> (7 h 30), <em>halb neun</em> (8 h 30), <em>halb zehn</em> (9 h 30). Pour vérifier que tu as compris, ajoute toujours l'heure qui suit : si je dis <em>halb neun</em>, il me manque une demi-heure pour arriver à neuf heures."
+      }
+    ],
+    grammar: {
+      title: "L'heure et les prépositions de temps",
+      note: "<b>um</b> + heure, <b>am</b> + jour ou moment de la journée (<em>am Morgen, am Nachmittag, am Abend</em> ; exception : <em>in der Nacht</em>), <b>im</b> + mois ou saison. <b>Halb acht</b> = 7 h 30.",
+      table: {
+        head: ["heure", "on dit"],
+        rows: [
+          ["7:00", "Es ist sieben Uhr."],
+          ["7:05", "Es ist fünf nach sieben."],
+          ["7:15", "Es ist Viertel nach sieben."],
+          ["7:30", "Es ist halb acht."],
+          ["7:45", "Es ist Viertel vor acht."],
+          ["7:50", "Es ist zehn vor acht."]
+        ]
+      },
+      examples: [
+        { tr: "Quelle heure est-il ?", note: "aussi : Wie viel Uhr ist es?" },
+        { tr: "Il est sept heures.", note: "es ist, au singulier" },
+        { tr: "Il est sept heures et quart." },
+        { tr: "Il est sept heures et demie.", note: "halb acht : on compte vers huit heures" },
+        { tr: "Il est huit heures moins le quart." },
+        { tr: "Le film commence le samedi à huit heures et demie.", note: "am Samstag, um halb neun" }
+      ]
+    },
+    vocab: [
+      "l'heure, l'horloge, la montre (die Uhr)",
+      "l'heure (durée)",
+      "la minute",
+      "le quart",
+      "demi, demie (halb acht = sept heures et demie)",
+      "moins (devant l'heure qui arrive : Viertel vor acht)",
+      "après, et (Viertel nach sieben)",
+      "tard",
+      "tôt",
+      "le lundi",
+      "le samedi",
+      "le week-end"
+    ],
+    exercises: [
+      {
+        q: "« Es ist halb acht. » Quelle heure est-il ?",
+        opts: ["sept heures et demie", "huit heures et demie", "huit heures pile"],
+        why: "<i>Halb acht</i> correspond à sept heures et demie : on compte vers l'heure suivante, une demi-heure avant huit heures."
+      },
+      {
+        q: "Comment dis-tu « du lundi au vendredi » ?",
+        opts: ["von Montag nach Freitag", "ab Montag zu Freitag", "von Montag bis Freitag"],
+        why: "Pour un intervalle on utilise <b>von ... bis</b> : <i>von Montag bis Freitag</i>."
+      },
+      {
+        q: "Complète : « Der Film beginnt ___ acht Uhr. » (à huit heures)",
+        hint: "avec l'heure précise",
+        why: "Avec l'heure on utilise <b>um</b> : <i>um acht Uhr</i>."
+      },
+      {
+        q: "Complète : « Das Konzert ist ___ Samstag. » (le samedi)",
+        hint: "avec un jour de la semaine",
+        why: "Avec les jours on utilise <b>am</b> : <i>am Samstag</i>."
+      },
+      {
+        tr: "Il est sept heures et quart.",
+        why: "<i>Viertel nach sieben</i> : le <b>V</b> de <i>Viertel</i> se lit comme un « f ». Dans <i>sieben</i>, le <b>ie</b> est un « i » long et le <b>s</b> est sonore."
+      },
+      {
+        q: "Associe chaque jour de la semaine à sa signification.",
+        pairs: ["lundi", "mercredi", "vendredi", "dimanche"]
+      },
+      {
+        q: "Complète les deux phrases.",
+        tr: "7 h 10 : il est sept heures dix. 7 h 50 : il est huit heures moins dix.",
+        why: "<i>Zehn nach sieben</i> est 7 h 10, <i>zehn vor acht</i> est 7 h 50."
+      },
+      {
+        tr: "Quelle heure est-il ? Il est huit heures et demie.",
+        why: "Huit heures et demie se dit <i>halb neun</i>. Autre possibilité, plus formelle : <i>acht Uhr dreißig</i>. <i>Wie spät ist es?</i> et <i>Wie viel Uhr ist es?</i> sont équivalents."
+      },
+      {
+        tr: "Quelle heure est-il ? Il est huit heures moins le quart.",
+        why: "<i>Viertel vor acht</i> : 7 h 45. Dans <i>vor</i>, le <b>v</b> sonne comme un « f » et le <b>o</b> est long."
+      },
+      {
+        tr: "Le film commence à huit heures et demie.",
+        why: "Dans <i>halb neun</i>, le <b>h</b> initial est expiré et le <b>b</b> final sonne comme un « p ». <i>Beginnt</i> : le <b>g</b> est un « g » dur, comme dans « gare »."
+      }
+    ]
+  },
+  "lesson:a1-u05-l3": {
+    theme: "Capacité, volonté, obligation",
+    title: "Verbes modaux : können, wollen, müssen",
+    objectives: [
+      "dire ce qu'on peut, veut et doit faire avec können, wollen, müssen",
+      "conjuguer les trois modaux au présent",
+      "placer l'infinitif en fin de phrase"
+    ],
+    theory: [
+      {
+        h: "Trois verbes, une structure",
+        p: "<strong>können</strong> (pouvoir, savoir), <strong>wollen</strong> (vouloir) et <strong>müssen</strong> (devoir) s'emploient avec un autre verbe à l'infinitif. Le modal est conjugué et se place en deuxième position, l'<strong>infinitif va à la fin de la phrase</strong> : <em>Ich kann heute nicht kommen</em>, <em>Wir wollen morgen schwimmen</em>, <em>Du musst heute lernen</em>. Le modal et l'infinitif encadrent le reste de la phrase comme une parenthèse."
+      },
+      {
+        h: "La conjugaison",
+        p: "Ces trois verbes ont une conjugaison propre : la première et la troisième personne du singulier sont identiques et <strong>sans terminaison</strong>. <em>Ich kann</em>, <em>er kann</em>. <em>Ich will</em>, <em>er will</em>. <em>Ich muss</em>, <em>er muss</em>. Avec <em>wir</em>, <em>sie</em> et <em>Sie</em>, la forme est celle de l'infinitif : <em>wir können</em>, <em>sie wollen</em>, <em>Sie müssen</em>. Avec <em>ihr</em> on a <em>könnt, wollt, müsst</em>, avec <em>du</em> <em>kannst, willst, musst</em>."
+      },
+      {
+        contrast: "En français, l'infinitif suit directement le modal (<em>je peux venir</em>, <em>je veux dormir</em>) ; en allemand il est repoussé à la fin : <em>Ich kann heute kommen</em>, et quand la phrase s'allonge, la parenthèse devient évidente : <em>Ich kann heute Abend mit dir ins Kino gehen</em>. En français, « savoir » exprime une compétence (<em>je sais nager</em>) ; l'allemand utilise <em>können</em> pour tout : <em>Ich kann schwimmen</em> vaut « je peux nager » et « je sais nager »."
+      },
+      {
+        trap: "Avec <em>nicht</em>, <em>müssen</em> ne signifie pas « ne pas devoir » au sens d'une interdiction. <em>Du musst nicht kommen</em> veut dire « tu n'as pas besoin de venir » : ce n'est pas une interdiction. Pour « tu ne dois pas » comme interdiction, il faudra un autre verbe, <em>dürfen</em>, qui arrive plus loin. Autre piège : <em>wollen</em> est direct. <em>Ich will einen Kaffee</em> peut sonner sec comme demande, comme « je veux un café ». Pour demander poliment, on utilise <em>ich möchte</em> (« je voudrais »), qu'on verra plus tard. Après un modal, il n'y a pas de <em>zu</em> devant l'infinitif."
+      },
+      {
+        tip: "Construis trois phrases sur toi, une par modal, et dis-les à voix haute : <em>Ich kann gut kochen</em>, <em>Ich will morgen schlafen</em>, <em>Ich muss heute lernen</em>. Vérifie que l'infinitif est toujours le dernier mot."
+      }
+    ],
+    grammar: {
+      title: "können, wollen, müssen au présent",
+      note: "La 1re et la 3e personne du singulier sont <b>identiques et sans terminaison</b>. L'infinitif va en fin de phrase.",
+      table: {
+        head: ["personne", "können", "wollen", "müssen"],
+        rows: [
+          ["ich", "kann", "will", "muss"],
+          ["du", "kannst", "willst", "musst"],
+          ["er / sie / es", "kann", "will", "muss"],
+          ["wir", "können", "wollen", "müssen"],
+          ["ihr", "könnt", "wollt", "müsst"],
+          ["sie / Sie", "können", "wollen", "müssen"]
+        ]
+      },
+      examples: [
+        { tr: "Je sais bien cuisiner.", note: "können pour la capacité" },
+        { tr: "Aujourd'hui, tu ne peux pas venir.", note: "nicht avant l'infinitif" },
+        { tr: "Demain, nous voulons nager." },
+        { tr: "Aujourd'hui, il ne veut pas travailler.", note: "er will : sans terminaison" },
+        { tr: "Aujourd'hui, je dois étudier.", note: "ich muss : sans terminaison" },
+        { tr: "Ils doivent faire leurs devoirs.", note: "sie müssen : forme identique à l'infinitif" }
+      ]
+    },
+    vocab: [
+      "pouvoir, savoir (capacité)",
+      "vouloir",
+      "devoir",
+      "étudier, apprendre",
+      "cuisiner",
+      "nager",
+      "dormir",
+      "danser",
+      "le travail",
+      "le devoir (à faire à la maison)",
+      "aujourd'hui",
+      "demain"
+    ],
+    exercises: [
+      {
+        q: "Quelle phrase est correcte ?",
+        opts: ["Ich kann heute gehe.", "Ich kann heute gehen.", "Ich gehen kann heute."],
+        why: "Le modal est en deuxième position, l'infinitif à la fin : <b>Ich kann heute gehen.</b>"
+      },
+      {
+        q: "Complète : « Er ___ heute lernen. » (Aujourd'hui, il doit étudier.)",
+        opts: ["müsst", "muss", "müssen"],
+        why: "Avec <i>er</i>, le modal ne prend pas de terminaison : <b>er muss</b>."
+      },
+      {
+        tr: "Toute la conjugaison de können.",
+        why: "<i>Ich kann</i> et <i>er kann</i> sont identiques. Avec <i>du</i> la forme est <i>kannst</i>, avec <i>ihr</i> <i>könnt</i>."
+      },
+      {
+        tr: "Toute la conjugaison de wollen.",
+        why: "<i>Ich will</i> et <i>er will</i> sont identiques. Avec <i>du</i> la forme est <i>willst</i>, avec <i>ihr</i> <i>wollt</i>."
+      },
+      {
+        tr: "Toute la conjugaison de müssen.",
+        why: "<i>Ich muss</i> et <i>er muss</i> sont identiques. Avec <i>du</i> la forme est <i>musst</i>, avec <i>ihr</i> <i>müsst</i>."
+      },
+      {
+        q: "Complète : « Wir ___ morgen schwimmen. » (Demain, nous voulons nager.)",
+        hint: "vouloir, première personne du pluriel",
+        why: "Avec <b>wir</b>, le modal a la forme de l'infinitif : <b>wollen</b>."
+      },
+      {
+        q: "Complète les deux phrases.",
+        tr: "Je ne peux pas dormir. Je dois travailler.",
+        why: "<i>Ich kann nicht schlafen</i> : <i>können</i> pour la possibilité. <i>Ich muss arbeiten</i> : <i>müssen</i> pour l'obligation."
+      },
+      {
+        tr: "Je dois travailler, mais je veux dormir.",
+        why: "Deux phrases avec chacune son modal, reliées par <i>aber</i> avec une virgule devant : <i>muss</i> pour l'obligation, <i>will</i> pour la volonté."
+      },
+      {
+        tr: "Aujourd'hui je ne peux pas venir, je dois travailler.",
+        why: "<i>Kann</i> avec un <b>a</b> bref. Dans <i>kommen</i>, le <b>o</b> est bref. <i>Heute</i> : le <b>eu</b> se lit « oï »."
+      },
+      {
+        tr: "Aujourd'hui je dois étudier, mais je veux nager.",
+        why: "Dans <i>schwimmen</i>, le <b>sch</b> se lit comme le « ch » de « chat » et le <b>w</b> comme le « v » français."
+      }
+    ]
+  },
+  "lesson:a1-u05-l4": {
+    theme: "Habitudes et fréquence",
+    title: "À quelle fréquence ? immer, oft, manchmal, nie",
+    objectives: [
+      "dire à quelle fréquence on fait quelque chose avec immer, oft, manchmal, selten, nie",
+      "placer l'adverbe de fréquence au bon endroit",
+      "commencer la phrase par une indication de temps et inverser verbe et sujet"
+    ],
+    theory: [
+      {
+        h: "Les adverbes de fréquence",
+        p: "Cinq mots suffisent pour décrire ses habitudes : <em>immer</em> (toujours), <em>oft</em> (souvent), <em>manchmal</em> (parfois), <em>selten</em> (rarement), <em>nie</em> (jamais). Ils se placent en général <strong>après le verbe conjugué</strong> : <em>Ich trinke immer Kaffee</em>, <em>Ich lese oft die Zeitung</em>, <em>Ich esse selten Brot</em>. Pour dire que quelque chose arrive chaque matin ou chaque soir, il y a <em>morgens</em> (le matin) et <em>abends</em> (le soir) ; <em>jeden Tag</em> (chaque jour) ne précise pas le moment de la journée."
+      },
+      {
+        h: "Si la phrase commence par le temps, le sujet suit le verbe",
+        p: "Le verbe conjugué est toujours en <strong>deuxième position</strong>. Si une indication de temps ouvre la phrase, le sujet passe après le verbe (<strong>inversion</strong>) : <em>Morgens trinke ich immer Kaffee</em>, <em>Abends sehe ich manchmal fern</em>, <em>Jeden Tag frühstücke ich um acht</em>. Le sens est le même que dans <em>Ich trinke morgens immer Kaffee</em> : seul change l'élément qui ouvre la phrase."
+      },
+      {
+        contrast: "En français, on dit sans problème <em>Le matin, je bois toujours du café</em>, avec le sujet avant le verbe. En allemand, « Morgens ich trinke » est une faute : après <em>morgens</em>, le verbe vient tout de suite. De plus, le français nie avec <em>ne ... jamais</em> : <em>je ne bois jamais de bière</em>. En allemand, <em>nie</em> contient déjà la négation et se met seul : <em>Ich trinke nie Bier</em>, sans <em>nicht</em>."
+      },
+      {
+        trap: "Ne dis pas « Ich trinke nie nicht Bier » : <em>nie</em> est déjà négatif et <em>nicht</em> s'ajoute pour rien. Et ne place pas l'adverbe devant le verbe conjugué : « Ich immer trinke Kaffee » est une faute. Après le sujet vient toujours le verbe, puis l'adverbe."
+      },
+      {
+        tip: "Décris ta journée avec une phrase par adverbe : <em>Ich trinke immer Kaffee. Ich lese oft die Zeitung. Abends sehe ich manchmal fern. Ich esse selten Brot. Ich trinke nie Bier.</em> Puis essaie de mettre <em>Morgens</em> ou <em>Abends</em> en première position et vérifie le verbe."
+      }
+    ],
+    grammar: {
+      title: "Adverbes de fréquence et inversion",
+      note: "L'adverbe se place en général <b>après le verbe conjugué</b>. Si la phrase commence par une indication de temps, <b>le verbe reste en deuxième position</b> et le sujet le suit.",
+      table: {
+        head: ["adverbe", "signification", "exemple"],
+        rows: [
+          ["immer", "toujours", "Ich trinke immer Kaffee."],
+          ["oft", "souvent", "Ich lese oft die Zeitung."],
+          ["manchmal", "parfois", "Abends sehe ich manchmal fern."],
+          ["selten", "rarement", "Ich esse selten Brot."],
+          ["nie", "jamais", "Ich trinke nie Bier."]
+        ]
+      },
+      examples: [
+        { tr: "Je bois toujours du café." },
+        { tr: "Le matin, je bois toujours du café.", note: "morgens en première position : trinke ich" },
+        { tr: "Je lis souvent le journal." },
+        { tr: "Le soir, je regarde parfois la télévision.", note: "fernsehen : fern en fin de phrase" },
+        { tr: "Je mange rarement du pain." },
+        { tr: "Je ne bois jamais de bière.", note: "nie, sans nicht" }
+      ]
+    },
+    vocab: [
+      "toujours",
+      "souvent",
+      "parfois",
+      "rarement",
+      "jamais",
+      "le matin, chaque matin",
+      "le soir, chaque soir",
+      "chaque jour",
+      "le pain",
+      "le petit-déjeuner",
+      "le journal",
+      "le déjeuner"
+    ],
+    exercises: [
+      {
+        q: "Quelle phrase est correcte ?",
+        opts: ["Morgens ich trinke Kaffee.", "Morgens trinke ich Kaffee.", "Ich morgens trinke Kaffee."],
+        why: "Après <i>morgens</i> vient tout de suite le verbe conjugué (deuxième position), puis le sujet : <b>Morgens trinke ich Kaffee.</b>"
+      },
+      {
+        q: "Que signifie « Ich trinke nie Kaffee » ?",
+        opts: ["Je ne bois jamais de café.", "Je bois toujours du café.", "Aujourd'hui, je ne bois pas de café."],
+        why: "<i>Nie</i> veut dire « jamais » et contient déjà la négation : pas besoin de <i>nicht</i>."
+      },
+      {
+        q: "Quelles phrases sont correctes ?",
+        opts: [
+          "Morgens trinke ich immer Kaffee.",
+          "Manchmal ich lese die Zeitung.",
+          "Ich lese oft die Zeitung.",
+          "Ich trinke nie nicht Kaffee.",
+          "Jeden Tag frühstücke ich um acht."
+        ],
+        why: "La phrase 2 place le sujet avant le verbe après <i>manchmal</i> ; la phrase 4 double la négation, car <i>nie</i> est déjà négatif."
+      },
+      {
+        q: "Complète : « Abends ___ ich oft fern. »",
+        hint: "fernsehen, première personne du singulier",
+        why: "Le verbe <i>fernsehen</i> se divise : <b>sehe</b> en deuxième position, <i>fern</i> en fin de phrase."
+      },
+      {
+        q: "Associe chaque adverbe à sa signification.",
+        pairs: ["toujours", "souvent", "parfois", "jamais"]
+      },
+      {
+        tr: "Le soir, je regarde parfois la télévision.",
+        why: "Avec <i>Abends</i> en première position, le verbe suit tout de suite : <i>sehe ich</i>, puis l'adverbe, puis <i>fern</i> en fin de phrase."
+      },
+      {
+        q: "Complète les deux mots manquants.",
+        tr: "Le matin, je bois toujours du café.",
+        why: "Avec <i>morgens</i> en première position, le verbe est en deuxième position : <i>trinke ich</i>. L'adverbe <i>immer</i> suit le sujet."
+      },
+      {
+        tr: "Le soir, je regarde souvent la télévision.",
+        why: "<i>Ich sehe abends oft fern</i> et <i>Oft sehe ich abends fern</i> sont corrects aussi : l'adverbe peut changer de place, le verbe reste en deuxième."
+      },
+      {
+        tr: "Le matin, je bois toujours du café, le soir parfois du thé.",
+        why: "Dans <i>Kaffee</i>, la double <b>ff</b> indique que le <b>a</b> est bref ; <i>immer</i> a un <b>i</b> bref. Dans <i>manchmal</i>, le <b>ch</b> est le même son que dans <i>ich</i>."
+      },
+      {
+        tr: "Le matin, je bois toujours du café et je lis le journal.",
+        why: "<i>Zeitung</i> : le <b>z</b> se lit « ts » et le <b>ei</b> « aï ». <i>Lese</i> a un <b>s</b> sonore."
+      }
+    ]
+  },
+  "lesson:a1-u05-test": {
+    theme: "Contrôle",
+    title: "Contrôle de l'unité 5",
+    objectives: ["vérifier les verbes séparables, l'heure et les prépositions de temps, les modaux et les adverbes de fréquence"],
+    theory: [
+      {
+        p: "Dix questions sur toute l'unité. On réussit avec 70 %. Ne relis pas les leçons pendant que tu réponds : si tu ne te souviens pas de quelque chose, mieux vaut retourner réviser."
+      }
+    ],
+    exercises: [
+      {
+        tr: "Présent de aufstehen : ich, er/sie/es, wir.",
+        why: "La particule va en fin de phrase : <i>stehe auf</i>, <i>steht auf</i>, <i>stehen auf</i>."
+      },
+      {
+        tr: "Présent de müssen : ich, du, er/sie/es, wir.",
+        why: "<i>Muss</i>, <i>musst</i>, <i>muss</i>, <i>müssen</i> : la 1re et la 3e personne du singulier sont identiques."
+      },
+      {
+        q: "Complète : « Der Film beginnt ___ acht Uhr. » (à huit heures)",
+        hint: "avec l'heure précise",
+        why: "Avec l'heure on utilise <b>um</b>."
+      },
+      {
+        q: "Complète : « Ich kann nicht kommen, ich ___ arbeiten. » (je dois)",
+        hint: "devoir, première personne du singulier",
+        why: "<i>Ich muss</i>, sans terminaison."
+      },
+      {
+        q: "Complète : « Morgens ___ ich immer Kaffee. » (je bois)",
+        hint: "trinken, première personne du singulier",
+        why: "Après <i>morgens</i> le verbe suit tout de suite : <b>trinke</b>."
+      },
+      {
+        q: "Quelle phrase est correcte ?",
+        opts: ["Ich aufstehe um sieben.", "Ich stehe um sieben auf.", "Ich auf stehe um sieben."],
+        why: "La particule <i>auf</i> va en fin de phrase : <b>Ich stehe um sieben auf.</b>"
+      },
+      {
+        q: "« Es ist halb zehn. » Quelle heure est-il ?",
+        opts: ["neuf heures et demie", "dix heures et demie", "dix heures"],
+        why: "<i>Halb zehn</i> correspond à neuf heures et demie, une demi-heure avant dix heures."
+      },
+      {
+        tr: "Aujourd'hui, je ne peux pas venir.",
+        why: "Le modal est en deuxième position, <i>nicht</i> et l'infinitif en fin de phrase."
+      },
+      {
+        tr: "Je dois me lever à sept heures et demie.",
+        why: "Dans cette phrase le modal est <i>muss</i> et l'infinitif <i>aufstehen</i> reste entier, en fin de phrase. Pour « sept heures et demie », on dit <i>halb acht</i>."
+      },
+      {
+        tr: "Le soir, je regarde parfois la télévision.",
+        why: "Après <i>Abends</i> le verbe vient tout de suite ; <i>fern</i> ferme la phrase."
       }
     ]
   }
