@@ -1024,5 +1024,531 @@ LINGUAI.addStrings("pl", {
         why: "W <i>muss</i> litery <b>ss</b> oznaczają bezdźwięczne <b>s</b>, a <b>u</b> jest krótkie; <i>arbeiten</i> to bezokolicznik na końcu zdania."
       }
     ]
+  },
+  "unit:a1-u10": {
+    title: "Mój weekend",
+    grammarNote: "Perfekt z haben i z sein · imiesłów II regularny, mocny i rozdzielny · war i hatte jako formuły · powtórka z A1"
+  },
+  "lesson:a1-u10-l1": {
+    theme: "Czas przeszły mówiony",
+    title: "Zjadłem, zobaczyłem",
+    objectives: [
+      "tworzyć Perfekt z haben i imiesłowem II",
+      "rozpoznawać imiesłów regularny (ge- ... -t) i mocny (ge- ... -en)",
+      "opowiadać, co robiło się wczoraj lub w weekend"
+    ],
+    theory: [
+      {
+        h: "Perfekt: czas przeszły mówiony",
+        p: "Kiedy opowiadasz o czymś, co się już stało, i robisz to ustnie, używasz <strong>Perfekt</strong>: <strong>haben</strong> na drugim miejscu i <strong>imiesłów II</strong> na końcu zdania. <em>Ich habe gegessen</em> (zjadłem), <em>Gestern habe ich einen Film gesehen</em> (wczoraj obejrzałem film). Imiesłów czasowników regularnych to <em>ge- + temat + -t</em> (<em>machen, gemacht</em>), a mocnych <em>ge- + temat + -en</em> (<em>essen, gegessen</em>)."
+      },
+      {
+        contrast: "Po polsku czas przeszły tworzy się jedną formą, która zmienia się z rodzajem: <em>zjadłem</em> (mężczyzna), <em>zjadłam</em> (kobieta). Po niemiecku nie ma takiej zmiany: <em>Ich habe gegessen</em> mówi każdy, niezależnie od płci, a imiesłów <strong>nigdy się nie zmienia</strong>. Drugi kontrast: polski rozróżnia <em>czytałem</em> i <em>przeczytałem</em> (aspekt), a niemiecki Perfekt pokrywa obie formy: <em>Ich habe gelesen</em>. Który z tych sensów masz na myśli, wynika z kontekstu."
+      },
+      {
+        trap: "Po polsku szyk jest swobodny: <em>wczoraj widziałem film</em>, <em>film widziałem wczoraj</em>. W niemieckim imiesłów idzie <strong>na koniec</strong>, za wszystkimi dopełnieniami i okolicznikami: <em>Ich habe gestern einen Film <strong>gesehen</strong></em>, a nie „Ich habe gesehen gestern einen Film”. Imiesłowu czasowników mocnych nie da się wywnioskować: uczysz się go razem z bezokolicznikiem (<em>trinken, getrunken</em>; <em>lesen, gelesen</em>)."
+      },
+      {
+        tip: "Czasowniki z przedrostkiem nierozdzielnym (<em>be-, ver-, er-, ent-</em>) i czasowniki na <em>-ieren</em> nie dostają <em>ge-</em>: <em>besuchen, besucht</em>; <em>studieren, studiert</em>. W pytaniu struktura jest ta sama: <em>Hast du am Samstag gekocht?</em> Czasownik odmieniony otwiera zdanie, imiesłów je zamyka."
+      }
+    ],
+    grammar: {
+      title: "Perfekt z haben",
+      note: "<b>haben</b> na drugim miejscu + <b>imiesłów II</b> na końcu. Regularne: ge- ... -t; mocne: ge- ... -en; bez ge- przy be-, ver-, er- i przy -ieren.",
+      table: {
+        head: ["typ", "bezokolicznik", "imiesłów II"],
+        rows: [
+          ["regularny: ge- ... -t", "machen, kaufen, kochen", "gemacht, gekauft, gekocht"],
+          ["mocny: ge- ... -en", "essen, sehen, trinken", "gegessen, gesehen, getrunken"],
+          ["mocny: ge- ... -en", "lesen, schlafen, treffen", "gelesen, geschlafen, getroffen"],
+          ["bez ge-", "besuchen, studieren", "besucht, studiert"]
+        ]
+      },
+      examples: [
+        { tr: "Wczoraj obejrzałem film.", note: "imiesłów na końcu zdania" },
+        { tr: "Zjadłem pizzę.", note: "essen jest mocny: gegessen" },
+        { tr: "Wypiliśmy kawę.", note: "haben przy wir: haben" },
+        { tr: "On kupił książkę.", note: "kaufen jest regularny: gekauft" },
+        { tr: "Gotowałeś w sobotę?", note: "pytanie: haben na pierwszym miejscu" },
+        { tr: "W niedzielę odwiedziłem babcię.", note: "besuchen: bez ge-" }
+      ]
+    },
+    vocab: [
+      "wczoraj",
+      "przedwczoraj",
+      "widzieć, zobaczyć",
+      "robić (także: co robiłeś?)",
+      "kupować",
+      "pić",
+      "jeść",
+      "czytać",
+      "spać",
+      "odwiedzać",
+      "spotykać",
+      "kolacja"
+    ],
+    exercises: [
+      {
+        q: "Jak powiesz „Zjadłem”?",
+        opts: ["Ich habe gegessen.", "Ich habe essen.", "Ich bin gegessen."],
+        why: "<i>Essen</i> bierze <b>haben</b> i mocny imiesłów <b>gegessen</b> na końcu zdania."
+      },
+      {
+        q: "Uzupełnij: „Gestern habe ich einen Film ___.” (widzieć)",
+        hint: "imiesłów II od sehen",
+        why: "<i>Sehen</i> to czasownik mocny: <b>gesehen</b>. Litera <i>h</i> się nie wymawia."
+      },
+      {
+        q: "Uzupełnij: „Wir ___ am Samstag Pizza gegessen.”",
+        hint: "czasownik posiłkowy, pierwsza osoba liczby mnogiej",
+        why: "Przy <i>essen</i> czasownikiem posiłkowym jest <b>haben</b>; przy <i>wir</i> ma taką samą formę jak bezokolicznik."
+      },
+      {
+        q: "Uzupełnij: „Er hat ein Buch ___.” (kupić)",
+        hint: "kaufen, imiesłów II",
+        why: "<i>Kaufen</i> jest regularny: ge- + temat + -t, czyli <b>gekauft</b>."
+      },
+      {
+        q: "Uzupełnij: „Hast du gestern Kaffee ___?” (pić)",
+        hint: "trinken, imiesłów II",
+        why: "<i>Trinken</i> jest mocny: <b>getrunken</b>."
+      },
+      {
+        q: "Dopasuj każdy imiesłów do jego znaczenia.",
+        pairs: ["widziany", "zjedzony", "kupiony", "wypity"]
+      },
+      {
+        q: "Przetłumacz: „Wczoraj obejrzałem film.”",
+        why: "<i>Gestern habe ich einen Film gesehen</i>: po <i>gestern</i> czasownik odmieniony zostaje na drugim miejscu, a podmiot idzie za nim. Poprawne jest też <i>Ich habe gestern einen Film gesehen</i>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Wczoraj zjadłem pizzę i wypiłem wino.",
+        why: "<i>Habe</i> stoi na drugim miejscu; dwa imiesłowy, <i>gegessen</i> i <i>getrunken</i>, zamykają zdanie. Czasownik posiłkowy się nie powtarza."
+      },
+      {
+        tr: "Wczoraj obejrzałem film i zjadłem pizzę.",
+        why: "W <i>gesehen</i> litera <b>h</b> się nie wymawia, a <b>e</b> jest długie; w <i>gegessen</i> litera <b>ss</b> to bezdźwięczne <b>s</b>, a <i>ge-</i> jest nieakcentowane."
+      },
+      {
+        tr: "W sobotę wypiłem kawę i przeczytałem książkę.",
+        why: "W <i>Kaffee</i> podwójne <b>ff</b> oznacza, że <b>a</b> jest krótkie; w <i>Buch</i> litera <b>ch</b> po <b>u</b> to [x], jak polskie „ch”."
+      }
+    ]
+  },
+  "lesson:a1-u10-l2": {
+    theme: "Sein czy haben",
+    title: "Pojechałem, wstałem",
+    objectives: [
+      "wybierać sein albo haben jako czasownik posiłkowy Perfekt",
+      "tworzyć imiesłów czasowników rozdzielnych",
+      "opowiadać o krótkiej podróży i o dniu"
+    ],
+    theory: [
+      {
+        h: "Perfekt z sein",
+        p: "Przy czasownikach nieprzechodnich oznaczających <strong>zmianę miejsca lub stanu</strong> czasownikiem posiłkowym jest <strong>sein</strong>: <em>fahren, gehen, kommen, fliegen, aufstehen</em>. To samo dotyczy <em>sein, bleiben, werden, passieren</em>. <em>Ich bin nach Berlin gefahren. Wir sind früh aufgestanden. Sie ist zu Hause geblieben.</em> Przy prawie wszystkich pozostałych czasownikach używa się <em>haben</em>."
+      },
+      {
+        p: "W czasownikach rozdzielnych imiesłów to jedno słowo, a <em>ge-</em> wchodzi <strong>w środek</strong>, między przedrostek a czasownik: <em>aufstehen → aufgestanden, ankommen → angekommen, einkaufen → eingekauft, anrufen → angerufen</em>. Przedrostek już się nie oddziela: <em>Ich bin um sieben Uhr aufgestanden</em>, a w czasie teraźniejszym jest <em>Ich stehe um sieben Uhr auf</em>."
+      },
+      {
+        contrast: "Po polsku nie ma wyboru czasownika posiłkowego: <em>pojechałem, wstałem, zostałem</em> i <em>kupiłem</em> tworzą się tak samo. Po niemiecku ten wybór jest częścią każdego czasownika, więc uczysz się go razem z imiesłowem: <em>ich bin gefahren</em>, ale <em>ich habe gekauft</em>. Pomaga pytanie, czy ktoś się <strong>przemieszcza albo zmienia stan</strong>: <em>pojechać</em>, <em>przyjść</em>, <em>wstać</em> to <em>sein</em>; <em>kupić</em>, <em>zjeść</em>, <em>zadzwonić</em> to <em>haben</em>. Reguła ma wyjątki, więc sprawdzaj czasownik po czasowniku: <em>Ich bin gereist</em> i <em>Ich bin gewandert</em> też biorą <em>sein</em>."
+      },
+      {
+        trap: "Przechodnie użycie czasownika ruchu, np. <em>fahren</em> z dopełnieniem oznaczającym prowadzony pojazd, wymaga <strong>haben</strong>: <em>Ich habe das Auto gefahren</em> (prowadziłem samochód). Biernik oznaczający odległość lub czas nie powoduje takiej zmiany: <em>Ich bin einen Kilometer gegangen</em>. Dopełnienie z przyimkiem nie wymusza haben: <em>Ich bin mit dem Bus gefahren</em>, <em>Ich bin nach Wien geflogen</em>. Polskie <em>jechałem</em> i <em>pojechałem</em> po niemiecku to jedno i to samo: <em>Ich bin gefahren</em>."
+      },
+      {
+        tip: "Jeśli czasownik ma przedrostek rozdzielny i imiesłów regularny, końcowe <em>-t</em> zostaje: <em>aufräumen → aufgeräumt</em>, <em>einkaufen → eingekauft</em>. Czasowniki z przedrostkiem nierozdzielnym albo na <em>-ieren</em> nie dostają <em>ge-</em>: <em>besucht, studiert</em>."
+      }
+    ],
+    grammar: {
+      title: "Perfekt z sein i imiesłów rozdzielny",
+      note: "<b>sein</b> przy zmianie miejsca lub stanu; w czasownikach rozdzielnych ge- wchodzi między przedrostek a czasownik: auf<b>ge</b>standen.",
+      table: {
+        head: ["czasownik", "posiłkowy", "imiesłów II"],
+        rows: [
+          ["fahren, gehen, kommen", "sein", "gefahren, gegangen, gekommen"],
+          ["fliegen, reisen, bleiben", "sein", "geflogen, gereist, geblieben"],
+          ["aufstehen, ankommen", "sein", "aufgestanden, angekommen"],
+          ["einkaufen, anrufen", "haben", "eingekauft, angerufen"],
+          ["aufräumen, fernsehen", "haben", "aufgeräumt, ferngesehen"]
+        ]
+      },
+      examples: [
+        { tr: "Pojechałem do Berlina", note: "zmiana miejsca: sein" },
+        { tr: "Wstaliśmy wcześnie.", note: "aufstehen: aufgestanden" },
+        { tr: "Ona została w domu.", note: "bleiben: sein" },
+        { tr: "On przyjechał o ósmej.", note: "ankommen: angekommen" },
+        { tr: "Wczoraj zrobiłem zakupy.", note: "einkaufen: haben, to nie zmiana miejsca" },
+        { tr: "Zadzwoniliście do mamy?", note: "anrufen: angerufen z haben" }
+      ]
+    },
+    vocab: [
+      "jechać środkiem transportu, prowadzić",
+      "iść (pieszo, ogólnie)",
+      "przychodzić, przyjeżdżać",
+      "lecieć, latać samolotem",
+      "zostawać",
+      "podróżować",
+      "wstawać",
+      "przyjeżdżać, docierać",
+      "robić zakupy",
+      "dzwonić",
+      "sprzątać",
+      "podróż"
+    ],
+    exercises: [
+      {
+        q: "Jak powiesz „Pojechałem do Berlina pociągiem”?",
+        opts: [
+          "Ich bin mit dem Zug nach Berlin gefahren.",
+          "Ich habe mit dem Zug nach Berlin gefahren.",
+          "Ich bin mit dem Zug nach Berlin fahren."
+        ],
+        why: "<i>Fahren</i> oznacza zmianę miejsca: czasownik posiłkowy <b>sein</b> i imiesłów <b>gefahren</b> na końcu zdania."
+      },
+      {
+        q: "Jak powiesz „Zostałem w domu”?",
+        opts: ["Ich habe zu Hause geblieben.", "Ich bin zu Hause geblieben.", "Ich bin zu Hause gebleibt."],
+        why: "<i>Bleiben</i> bierze <b>sein</b> i ma mocny imiesłów <b>geblieben</b>."
+      },
+      {
+        q: "Jak powiesz „Wczoraj zrobiłem zakupy”?",
+        opts: ["Ich habe gestern eingekauft.", "Ich habe gestern geeinkauft.", "Ich bin gestern eingekauft."],
+        why: "<i>Einkaufen</i> jest rozdzielny: <b>ein-ge-kauft</b>, z <i>haben</i>, bo robienie zakupów nie jest zmianą miejsca."
+      },
+      {
+        q: "Które zdania są poprawne?",
+        opts: [
+          "Sie ist um sieben Uhr aufgestanden.",
+          "Ich habe gestern meine Mutter angerufen.",
+          "Wir haben nach Wien geflogen.",
+          "Er ist zu Hause geblieben.",
+          "Ich habe um sieben aufgestehen."
+        ],
+        why: "Zdanie 3 wymaga <i>sein</i> (<i>Wir sind nach Wien geflogen</i>); zdanie 5 ma dwa błędy: czasownik posiłkowy i imiesłów. Poprawnie: <i>Ich bin um sieben aufgestanden</i> (<i>sein</i> i <i>aufgestanden</i>, a nie „habe” i „aufgestehen”)."
+      },
+      {
+        q: "Uzupełnij: „Ich ___ gestern früh aufgestanden.”",
+        hint: "czasownik posiłkowy, pierwsza osoba liczby pojedynczej",
+        why: "<i>Aufstehen</i> to zmiana stanu: czasownik posiłkowy <b>sein</b>, czyli <i>ich bin</i>."
+      },
+      {
+        q: "Uzupełnij: „Wir sind um acht Uhr ___.” (przyjechać, ankommen)",
+        hint: "ankommen: ge- wchodzi w środek",
+        why: "<b>angekommen</b>: <i>an</i> + <i>ge</i> + <i>kommen</i>."
+      },
+      {
+        tr: "Pojechaliśmy do Berlina.",
+        why: "<i>Wir sind nach Berlin gefahren</i>: <i>sein</i> na drugim miejscu, imiesłów na końcu. Poprawne jest też <i>Nach Berlin sind wir gefahren</i>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "W sobotę pojechaliśmy do Wiednia pociągiem, a w niedzielę zostaliśmy w domu.",
+        why: "Przy <i>fahren</i> i <i>bleiben</i> czasownikiem posiłkowym jest <b>sein</b>; <i>gefahren</i> zamyka pierwszą część, <i>geblieben</i> drugą."
+      },
+      {
+        tr: "Wstałem o siódmej i wypiłem kawę.",
+        why: "W <i>aufgestanden</i> akcent pada na <b>auf</b>; w <i>Uhr</i> litera <b>h</b> się nie wymawia, a <b>u</b> jest długie."
+      },
+      {
+        tr: "Przyjechaliśmy do Wiednia wieczorem.",
+        why: "W <i>Wien</i> litera <b>W</b> brzmi jak polskie „w”, a <b>ie</b> to długie <b>i</b>; <i>angekommen</i> ma akcent na <b>an</b>."
+      }
+    ]
+  },
+  "lesson:a1-u10-l3": {
+    theme: "Weekend",
+    title: "Mój weekend",
+    objectives: [
+      "opowiadać o weekendzie po kolei za pomocą zuerst, dann, danach, später",
+      "trzymać czasownik na drugim miejscu po przysłówkach czasu",
+      "używać war i hatte tylko jako formuł: Es war schön, Ich hatte Glück"
+    ],
+    theory: [
+      {
+        h: "Opowiadanie po kolei",
+        p: "Żeby opowiedzieć o weekendzie, ustawiasz czynności w szeregu: <strong>zuerst</strong> (najpierw), <strong>dann</strong> (potem), <strong>danach</strong> (po tym) i <strong>später</strong> (później). Każda czynność to Perfekt: <em>Zuerst habe ich lange geschlafen. Dann habe ich gekocht. Danach sind wir ins Kino gegangen.</em> Te przysłówki otwierają zdanie i zajmują pierwsze miejsce."
+      },
+      {
+        contrast: "Po polsku szyk jest swobodny, a podmiot można pominąć: <em>potem ugotowałem</em>, <em>ugotowałem potem</em>. Po niemiecku czasownik odmieniony stoi na <strong>drugim miejscu</strong>, a podmiot idzie za nim: <em>Dann habe ich gekocht</em>, nigdy „Dann ich habe gekocht”. Podmiotu przy tym nie pomija się: samo <em>habe gekocht</em> nie jest zdaniem."
+      },
+      {
+        trap: "Przy sein i haben w mowie używa się <strong>war</strong> i <strong>hatte</strong>, które na razie poznajesz jako gotowe formuły: <em>Es war schön. Wie war dein Wochenende? Ich hatte Glück.</em> Nie trzeba w ten sposób odmieniać innych czasowników: przy pozostałych zostaje Perfekt. Uwaga na różnicę: po polsku <em>zrobiłem</em>, <em>kupiłem</em> i <em>było</em> to ta sama prosta forma przeszła, a po niemiecku <em>było</em> to <em>war</em>, natomiast <em>zrobiłem</em> to <em>habe gemacht</em>."
+      },
+      {
+        tip: "Dwie czynności możesz połączyć przez <em>und</em> lub <em>aber</em>, nie zmieniając struktury: <em>Ich habe gekocht, und wir haben gegessen.</em> Żeby powiedzieć kiedy, postaw na początku <em>am Samstag</em> lub <em>am Sonntag</em>: czasownik zostaje drugi."
+      }
+    ],
+    grammar: {
+      title: "Opowieść: przysłówki czasu i czasownik na drugim miejscu",
+      note: "Po <b>zuerst, dann, danach, später</b> czasownik odmieniony zostaje na drugim miejscu, a podmiot idzie za nim; imiesłów zamyka zdanie.",
+      table: {
+        head: ["polski", "niemiecki", "przykład"],
+        rows: [
+          ["najpierw, na początku", "zuerst", "Zuerst habe ich geschlafen."],
+          ["potem", "dann", "Dann habe ich gekocht."],
+          ["po tym, następnie", "danach", "Danach sind wir ins Kino gegangen."],
+          ["później", "später", "Später habe ich gelesen."],
+          ["jak było?", "Wie war ...?", "Wie war dein Wochenende?"]
+        ]
+      },
+      examples: [
+        { tr: "Jak minął twój weekend?", note: "war: stała formuła" },
+        { tr: "Najpierw długo spałem.", note: "zuerst na pierwszym miejscu, potem habe i ich" },
+        { tr: "Potem gotowałem dla przyjaciół.", note: "dann + czasownik + podmiot" },
+        { tr: "Następnie poszliśmy do kina.", note: "gehen: sein" },
+        { tr: "Później poszedłem na spacer.", note: "einen Spaziergang machen" },
+        { tr: "Było cudownie i miałem szczęście.", note: "war i hatte jako formuły" }
+      ]
+    },
+    vocab: [
+      "najpierw, na początku",
+      "potem",
+      "po tym, następnie",
+      "później",
+      "impreza",
+      "spacer",
+      "muzeum",
+      "prezent",
+      "fantastyczny, cudowny",
+      "Było pięknie. / Było fajnie.",
+      "Jak minął twój weekend?",
+      "Miałem szczęście."
+    ],
+    exercises: [
+      {
+        q: "Jak zapytasz przyjaciela, jak minął jego weekend?",
+        opts: ["Wie war dein Wochenende?", "Wie hat dein Wochenende?", "Wie bist dein Wochenende?"],
+        why: "Na „było” używa się <b>war</b>: <i>Wie war dein Wochenende?</i> To formuła, którą trzeba znać na pamięć."
+      },
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: ["Dann ich habe einen Film gesehen.", "Dann habe ich einen Film gesehen.", "Dann habe einen Film gesehen ich."],
+        why: "Po <i>dann</i> czasownik odmieniony zostaje na drugim miejscu, a podmiot idzie za nim: <i>Dann habe ich ...</i>; imiesłów zamyka zdanie."
+      },
+      {
+        q: "Uzupełnij: „Zuerst habe ich geschlafen, ___ habe ich gekocht.” (potem, użyj dann)",
+        hint: "użyj dann",
+        why: "<b>Dann</b> otwiera drugie zdanie: czasownik i podmiot zamieniają się miejscami, <i>habe ich</i>."
+      },
+      {
+        q: "Uzupełnij: „Wie ___ dein Wochenende?”",
+        hint: "było: forma stała",
+        why: "<b>war</b> to formuła na „było”: <i>Wie war dein Wochenende?</i>"
+      },
+      {
+        tr: "Potem przeczytałem książkę.",
+        why: "<i>Danach habe ich ein Buch gelesen</i>: po <i>danach</i> czasownik i podmiot zamieniają się miejscami. Poprawne jest też <i>Ich habe danach ein Buch gelesen</i>."
+      },
+      {
+        q: "Przetłumacz: „Potem gotowałem dla moich przyjaciół.” (użyj dann)",
+        why: "<i>Dann habe ich für meine Freunde gekocht</i>: <i>für</i> wymaga biernika. Poprawne jest też <i>Ich habe dann für meine Freunde gekocht</i>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "W sobotę długo spałem. Potem poszedłem na spacer.",
+        why: "Perfekt z <b>haben</b>: <i>habe geschlafen</i>, <i>habe ... gemacht</i>. Po <i>danach</i> podmiot idzie za czasownikiem: <i>habe ich</i>."
+      },
+      {
+        q: "Uzupełnij dialog.",
+        setting: "Rozmawiasz z przyjacielem o weekendzie.",
+        lines: [
+          { tr: "Cześć! Jak minął twój weekend?" },
+          { tr: "Odpowiedz, że było fajnie i że spotkałeś przyjaciół.", answerTr: "Było fajnie! Spotkałem przyjaciół." },
+          { tr: "A w niedzielę, co robiłeś?" },
+          { tr: "Odpowiedz, że zostałeś w domu.", answerTr: "Zostałem w domu." }
+        ]
+      },
+      {
+        tr: "W sobotę spotkałem przyjaciół, potem poszliśmy do kina.",
+        why: "W <i>getroffen</i> podwójne <b>ff</b> sygnalizuje zwykle krótką samogłoskę; w <i>Kino</i> pierwsze <b>i</b> jest długie."
+      },
+      {
+        tr: "Było fantastycznie! Tańczyłem i spotkałem przyjaciół.",
+        why: "W <i>getanzt</i> litera <b>z</b> czyta się [ts], jak polskie „c”; w <i>Freunde</i> połączenie <b>eu</b> brzmi jak „oj”."
+      }
+    ]
+  },
+  "lesson:a1-u10-l4": {
+    theme: "Powtórka",
+    title: "Powtórka z A1",
+    objectives: [
+      "powtórzyć czas teraźniejszy, biernik i przyimki z celownikiem",
+      "używać razem czasu teraźniejszego i Perfekt w kilku zdaniach",
+      "mówić o krótkiej podróży do hotelu"
+    ],
+    theory: [
+      {
+        h: "Powtórka: trzy rzeczy, w których nie wolno się pomylić",
+        p: "<strong>1.</strong> Czasownik odmieniony stoi na drugim miejscu, a w niektórych czasownikach mocnych zmienia się samogłoska przy <em>du</em> i <em>er/sie/es</em>: <em>ich esse, du isst, er isst</em>. <strong>2.</strong> W bierniku zmienia się tylko rodzaj męski: <em>der Koffer → den Koffer</em>, <em>ein Koffer → einen Koffer</em>. <strong>3.</strong> Po <em>mit, zu, bei, aus, von</em> stoi celownik: <em>mit dem Zug, zum Strand</em> (zu dem), <em>aus Italien</em>."
+      },
+      {
+        contrast: "Po polsku środek transportu wyraża się samym narzędnikiem: <em>jadę pociągiem</em>. Po niemiecku potrzebny jest przyimek <strong>mit</strong> i celownik: <em>mit dem Zug, mit dem Bus</em>. Pomaga to, że polski rozróżnia to samo co niemiecki, gdy mowa o czyimś domu: <em>u cioci</em> to <em>bei</em> + celownik (<em>Ich bin bei meiner Tante</em>), a <em>do cioci</em> to <em>zu</em> + celownik (<em>Ich gehe zu meiner Tante</em>). <em>Z Włoch</em> to <em>aus Italien</em>; <em>von</em> wskazuje punkt wyjścia."
+      },
+      {
+        trap: "Po polsku biernik zmienia także rodzaj żeński: <em>biorę walizkę</em>, <em>biorę kartę</em>. Po niemiecku w rodzaju żeńskim i nijakim biernik jest identyczny z mianownikiem: <em>die Fahrkarte</em>, <em>das Zimmer</em>. Dlatego <em>Ich nehme den Koffer</em>, ale <em>Ich nehme die Fahrkarte</em>. Skoro w polskim nie ma rodzajników, rodzaj każdego niemieckiego rzeczownika trzeba zapamiętać razem z nim: powtarzaj zawsze rzeczownik z jego rodzajnikiem."
+      },
+      {
+        tip: "Żeby zapamiętać przyimki: <em>mit, zu, bei, aus, von</em> wymagają celownika; <em>für, ohne, durch, um, gegen</em> wymagają biernika."
+      }
+    ],
+    grammar: {
+      title: "Powtórka: czas teraźniejszy, biernik, celownik",
+      note: "Czasownik na drugim miejscu; biernik: zmienia się tylko rodzaj męski (<b>den</b>); po <b>mit, zu, bei, aus, von</b> celownik.",
+      table: {
+        head: ["co", "reguła", "przykład"],
+        rows: [
+          ["czas teraźniejszy", "czasownik na drugim miejscu", "Ich fahre mit dem Zug."],
+          ["niektóre czasowniki mocne", "zmiana samogłoski przy du i er/sie/es", "Du isst, er sieht."],
+          ["biernik", "der → den, ein → einen", "Wir nehmen den Koffer."],
+          ["celownik po mit, zu, bei, aus, von", "dem, der, dem; zum, zur", "Wir gehen zum Hotel."],
+          ["Perfekt", "haben lub sein + imiesłów na końcu", "Gestern bin ich früh aufgestanden."]
+        ]
+      },
+      examples: [
+        { tr: "Jadę pociągiem na plażę.", note: "mit dem Zug, zum Strand" },
+        { tr: "Bierzemy walizkę i bilet.", note: "biernik: den Koffer, die Fahrkarte" },
+        { tr: "Pochodzę z Włoch i mieszkam u cioci.", note: "aus, bei + celownik" },
+        { tr: "On ogląda film i je pizzę.", note: "sehen i essen zmieniają samogłoskę" },
+        { tr: "Wieczorem idziemy do hotelu.", note: "zum = zu dem" },
+        { tr: "Wczoraj wstałem wcześnie.", note: "Perfekt z sein" }
+      ]
+    },
+    vocab: [
+      "podróż",
+      "walizka",
+      "bilet (na przejazd)",
+      "hotel",
+      "pokój",
+      "wakacje",
+      "morze",
+      "plaża"
+    ],
+    exercises: [
+      {
+        tr: "Czas teraźniejszy od sein, wszystkie osoby.",
+        why: "<i>Bin, bist, ist, sind, seid, sind</i>: formy nieregularne, które trzeba znać na pamięć. <i>Wir</i> i <i>sie/Sie</i> mają taką samą formę."
+      },
+      {
+        tr: "Czas teraźniejszy od essen, wszystkie osoby.",
+        why: "<i>Essen</i> zmienia samogłoskę przy <i>du</i> i <i>er</i>: <b>isst</b> w obu przypadkach. <i>Ich esse, wir essen, ihr esst, sie essen</i>."
+      },
+      {
+        tr: "Czas teraźniejszy od fahren, wszystkie osoby.",
+        why: "<i>Fahren</i> dostaje umlaut przy <i>du</i> i <i>er</i>: <b>fährst</b>, <b>fährt</b>."
+      },
+      {
+        q: "Uzupełnij: „Wir fahren ___ dem Zug nach Wien.” (z, pociągiem)",
+        hint: "środek transportu",
+        why: "<b>Mit</b> + celownik: <i>mit dem Zug</i>."
+      },
+      {
+        q: "Uzupełnij: „Ich nehme ___ Koffer.” (rodzajnik określony, biernik)",
+        hint: "Koffer jest rodzaju męskiego",
+        why: "W bierniku rodzaj męski się zmienia: <b>den</b> Koffer."
+      },
+      {
+        q: "Uzupełnij: „Ich gehe ___ Bahnhof.” (do, rodzajnik zlany z przyimkiem)",
+        hint: "zu + dem",
+        why: "<b>Zum</b> = <i>zu dem</i>."
+      },
+      {
+        q: "Uzupełnij: „Er kommt ___ Italien.” (z)",
+        hint: "pochodzenie",
+        why: "Na pochodzenie używa się <b>aus</b> + celownik."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Wczoraj wstałem wcześnie i wypiłem kawę.",
+        why: "<i>Aufstehen</i> bierze <b>sein</b> (<i>ich bin aufgestanden</i>); <i>trinken</i> bierze <b>haben</b> (<i>ich habe getrunken</i>)."
+      },
+      {
+        q: "Wybierz właściwy rodzajnik określony do każdego rzeczownika.",
+        items: ["walizka", "podróż", "hotel", "pokój", "plaża", "bilet"]
+      },
+      {
+        tr: "Jedziemy pociągiem na plażę.",
+        why: "<i>Wir fahren mit dem Zug zum Strand</i>: <i>mit</i> + celownik, <i>zu dem</i> zlewa się w <i>zum</i>. Inne ułożenia okoliczników też są możliwe, bo czasownik zostaje drugi."
+      },
+      {
+        tr: "Jadę pociągiem na plażę i biorę moją walizkę.",
+        why: "W <i>Strand</i> początkowe <b>st</b> czyta się [ʃt], jak polskie „szt”; w <i>Koffer</i> podwójne <b>ff</b> sygnalizuje zwykle krótką samogłoskę."
+      },
+      {
+        tr: "Mamy pokój w hotelu, a jutro jedziemy nad morze.",
+        why: "W <i>Zimmer</i> litera <b>Z</b> czyta się [ts], jak polskie „c”; w <i>Meer</i> połączenie <b>ee</b> to długie <b>e</b>."
+      }
+    ]
+  },
+  "lesson:a1-u10-test": {
+    theme: "Sprawdzian",
+    title: "Egzamin końcowy z A1",
+    objectives: ["sprawdzić Perfekt z haben i z sein, biernik, celownik i rodzaj rzeczowników"],
+    theory: [
+      {
+        p: "Dwanaście pytań z całego A1. Zaliczasz przy 70%. Nie zaglądaj do lekcji, odpowiadając: jeśli czegoś nie pamiętasz, lepiej wrócić do powtórki."
+      }
+    ],
+    exercises: [
+      {
+        q: "Uzupełnij: „Ich ___ gestern Fußball gespielt.”",
+        hint: "czasownik posiłkowy, pierwsza osoba liczby pojedynczej",
+        why: "<i>Spielen</i> bierze <b>haben</b>: <i>ich habe gespielt</i>."
+      },
+      {
+        q: "Uzupełnij: „Am Samstag ___ wir nach Wien gefahren.”",
+        hint: "czasownik posiłkowy, pierwsza osoba liczby mnogiej",
+        why: "<i>Fahren</i> z celem podróży oznacza zmianę miejsca: <b>sind</b>."
+      },
+      {
+        q: "Uzupełnij: „Wir haben einen Film ___.” (widzieć)",
+        hint: "imiesłów II od sehen",
+        why: "<i>Sehen</i> jest mocny: <b>gesehen</b>."
+      },
+      {
+        q: "Uzupełnij: „Ich nehme ___ Kaffee.” (rodzajnik określony, biernik)",
+        hint: "Kaffee jest rodzaju męskiego",
+        why: "W bierniku rodzaj męski się zmienia: <b>den</b> Kaffee."
+      },
+      {
+        q: "Uzupełnij: „Ich fahre ___ dem Bus.” (z, autobusem)",
+        hint: "środek transportu",
+        why: "<b>Mit</b> + celownik."
+      },
+      {
+        q: "Uzupełnij: „Sie ist früh ___.” (wstać, aufstehen)",
+        hint: "ge- wchodzi w środek",
+        why: "<b>aufgestanden</b>: <i>auf</i> + <i>ge</i> + <i>standen</i>, z <i>sein</i>."
+      },
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: ["Ich habe nach Berlin gefahren.", "Ich bin nach Berlin gefahren.", "Ich bin nach Berlin gefahrt."],
+        why: "<i>Fahren</i> z celem podróży bierze <b>sein</b> i ma mocny imiesłów <i>gefahren</i>."
+      },
+      {
+        q: "Jaki jest imiesłów II od „besuchen”?",
+        opts: ["gebesucht", "besucht", "besuchen"],
+        why: "<i>Be-</i> to przedrostek nierozdzielny: bez <i>ge-</i>. Imiesłów to <b>besucht</b>."
+      },
+      {
+        q: "Wybierz właściwy rodzajnik określony do każdego rzeczownika.",
+        items: ["film", "weekend", "impreza", "spacer", "muzeum", "bilet"]
+      },
+      {
+        tr: "Perfekt od gehen: czasownik posiłkowy i imiesłów.",
+        why: "<i>Ich bin gegangen, du bist gegangen, er ist gegangen, wir sind gegangen</i>: <i>gehen</i> bierze <b>sein</b>."
+      },
+      {
+        q: "Uzupełnij zdanie (najpierw, użyj zuerst).",
+        tr: "Najpierw spotkałem przyjaciół. Potem poszliśmy do kina.",
+        why: "<i>Zuerst</i> otwiera zdanie; <i>habe ich ... getroffen</i> z haben; <i>sind wir ... gegangen</i> z sein."
+      },
+      {
+        tr: "W weekend pojechałem do Wiednia i zwiedziłem muzeum.",
+        why: "W <i>Museum</i> akcent pada na <b>se</b>, a <b>s</b> jest dźwięczne; w <i>besucht</i> litera <b>ch</b> po <b>u</b> to [x]."
+      }
+    ]
   }
 });

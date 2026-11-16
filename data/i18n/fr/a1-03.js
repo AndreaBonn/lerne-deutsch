@@ -1024,5 +1024,531 @@ LINGUAI.addStrings("fr", {
         why: "Dans <i>muss</i>, <b>ss</b> est un <b>s</b> sourd et le <b>u</b> est bref ; <i>arbeiten</i> est à l'infinitif, à la fin de la phrase."
       }
     ]
+  },
+  "unit:a1-u10": {
+    title: "Mon week-end",
+    grammarNote: "Perfekt avec haben et avec sein · participe II régulier, fort et séparable · war et hatte comme formules · révision de l'A1"
+  },
+  "lesson:a1-u10-l1": {
+    theme: "Le passé parlé",
+    title: "J'ai mangé, j'ai vu",
+    objectives: [
+      "former le Perfekt avec haben et le participe II",
+      "reconnaître le participe régulier (ge- ... -t) et le participe fort (ge- ... -en)",
+      "raconter ce qu'on a fait hier ou pendant le week-end"
+    ],
+    theory: [
+      {
+        h: "Le Perfekt : le passé de l'oral",
+        p: "Quand tu racontes quelque chose de passé, à l'oral, tu utilises le <strong>Perfekt</strong> : <strong>haben</strong> en deuxième position et le <strong>participe II</strong> à la fin de la phrase. <em>Ich habe gegessen</em> (j'ai mangé), <em>Gestern habe ich einen Film gesehen</em> (hier, j'ai vu un film). Le participe des verbes réguliers est <em>ge- + radical + -t</em> (<em>machen, gemacht</em>), celui des verbes forts <em>ge- + radical + -en</em> (<em>essen, gegessen</em>)."
+      },
+      {
+        contrast: "La construction ressemble beaucoup au passé composé : <em>j'ai mangé</em> correspond à <em>ich habe gegessen</em>, et à l'oral les deux langues racontent avec ce temps. Deux différences. En allemand, le participe <strong>ne s'accorde jamais</strong> : en français on écrit « je l'ai vue » et « elle est allée », en allemand <em>Ich habe sie gesehen</em> et <em>Sie ist gegangen</em>, quel que soit le sujet ou l'objet. Et la place du participe change, voir le piège ci-dessous."
+      },
+      {
+        trap: "En français, le participe suit l'auxiliaire : « j'ai vu un film hier ». En allemand, il va <strong>à la fin</strong>, après tous les compléments : <em>Ich habe gestern einen Film <strong>gesehen</strong></em>, et non « Ich habe gesehen gestern einen Film ». Le participe des verbes forts ne se déduit pas : on l'apprend avec l'infinitif (<em>trinken, getrunken</em> ; <em>lesen, gelesen</em>)."
+      },
+      {
+        tip: "Les verbes à préfixe inséparable (<em>be-, ver-, er-, ent-</em>) et ceux en <em>-ieren</em> ne prennent pas <em>ge-</em> : <em>besuchen, besucht</em> ; <em>studieren, studiert</em>. La question suit la même structure : <em>Hast du am Samstag gekocht ?</em> Le verbe conjugué ouvre la phrase, le participe la ferme."
+      }
+    ],
+    grammar: {
+      title: "Perfekt avec haben",
+      note: "<b>haben</b> en deuxième position + <b>participe II</b> à la fin. Régulier : ge- ... -t ; fort : ge- ... -en ; sans ge- avec be-, ver-, er- et avec -ieren.",
+      table: {
+        head: ["type", "infinitif", "participe II"],
+        rows: [
+          ["régulier : ge- ... -t", "machen, kaufen, kochen", "gemacht, gekauft, gekocht"],
+          ["fort : ge- ... -en", "essen, sehen, trinken", "gegessen, gesehen, getrunken"],
+          ["fort : ge- ... -en", "lesen, schlafen, treffen", "gelesen, geschlafen, getroffen"],
+          ["sans ge-", "besuchen, studieren", "besucht, studiert"]
+        ]
+      },
+      examples: [
+        { tr: "Hier, j'ai vu un film.", note: "participe à la fin de la phrase" },
+        { tr: "J'ai mangé de la pizza.", note: "essen est fort : gegessen" },
+        { tr: "Nous avons bu du café.", note: "haben avec wir : haben" },
+        { tr: "Il a acheté un livre.", note: "kaufen est régulier : gekauft" },
+        { tr: "Tu as cuisiné samedi ?", note: "question : haben en première position" },
+        { tr: "Dimanche, j'ai rendu visite à ma grand-mère.", note: "besuchen : pas de ge-" }
+      ]
+    },
+    vocab: [
+      "hier",
+      "avant-hier",
+      "voir",
+      "faire (aussi : qu'as-tu fait ?)",
+      "acheter",
+      "boire",
+      "manger",
+      "lire",
+      "dormir",
+      "rendre visite à, visiter",
+      "rencontrer",
+      "le dîner"
+    ],
+    exercises: [
+      {
+        q: "Comment dit-on « J'ai mangé » ?",
+        opts: ["Ich habe gegessen.", "Ich habe essen.", "Ich bin gegessen."],
+        why: "<i>Essen</i> prend <b>haben</b> et le participe fort <b>gegessen</b> à la fin de la phrase."
+      },
+      {
+        q: "Complète : « Gestern habe ich einen Film ___. » (voir)",
+        hint: "participe II de sehen",
+        why: "<i>Sehen</i> est un verbe fort : <b>gesehen</b>. Le <i>h</i> ne se prononce pas."
+      },
+      {
+        q: "Complète : « Wir ___ am Samstag Pizza gegessen. »",
+        hint: "auxiliaire, première personne du pluriel",
+        why: "Avec <i>essen</i>, l'auxiliaire est <b>haben</b> ; avec <i>wir</i>, il a la même forme que l'infinitif."
+      },
+      {
+        q: "Complète : « Er hat ein Buch ___. » (acheter)",
+        hint: "kaufen, participe II",
+        why: "<i>Kaufen</i> est régulier : ge- + radical + -t, donc <b>gekauft</b>."
+      },
+      {
+        q: "Complète : « Hast du gestern Kaffee ___? » (boire)",
+        hint: "trinken, participe II",
+        why: "<i>Trinken</i> est fort : <b>getrunken</b>."
+      },
+      {
+        q: "Associe chaque participe à son sens.",
+        pairs: ["vu", "mangé", "acheté", "bu"]
+      },
+      {
+        q: "Traduis : « Hier, j'ai vu un film. »",
+        why: "<i>Gestern habe ich einen Film gesehen</i> : après <i>gestern</i>, le verbe conjugué reste en deuxième position et le sujet le suit. <i>Ich habe gestern einen Film gesehen</i> est correct aussi."
+      },
+      {
+        q: "Complète la phrase.",
+        tr: "Hier, j'ai mangé de la pizza et bu du vin.",
+        why: "<i>Habe</i> est en deuxième position ; les deux participes, <i>gegessen</i> et <i>getrunken</i>, ferment la phrase. L'auxiliaire ne se répète pas."
+      },
+      {
+        tr: "Hier, j'ai vu un film et j'ai mangé de la pizza.",
+        why: "Dans <i>gesehen</i>, le <b>h</b> ne se prononce pas et allonge le <b>e</b> ; dans <i>gegessen</i>, <b>ss</b> est un <b>s</b> sourd et <i>ge-</i> est atone."
+      },
+      {
+        tr: "Samedi, j'ai bu un café et j'ai lu un livre.",
+        why: "Dans <i>Kaffee</i>, le double <b>ff</b> indique que le <b>a</b> est bref ; dans <i>Buch</i>, le <b>ch</b> après <b>u</b> est [x], un son râpeux au fond de la gorge que le français n'a pas."
+      }
+    ]
+  },
+  "lesson:a1-u10-l2": {
+    theme: "Sein ou haben",
+    title: "Je suis allé, je me suis levé",
+    objectives: [
+      "choisir sein ou haben comme auxiliaire du Perfekt",
+      "former le participe des verbes séparables",
+      "raconter un court voyage et la journée"
+    ],
+    theory: [
+      {
+        h: "Le Perfekt avec sein",
+        p: "Avec les verbes intransitifs de <strong>changement de lieu ou d'état</strong>, l'auxiliaire est <strong>sein</strong> : <em>fahren, gehen, kommen, fliegen, aufstehen</em>. Il en va de même pour <em>sein, bleiben, werden, passieren</em>. <em>Ich bin nach Berlin gefahren. Wir sind früh aufgestanden. Sie ist zu Hause geblieben.</em> Avec presque tous les autres verbes, on emploie <em>haben</em>."
+      },
+      {
+        p: "Dans les verbes séparables, le participe est un seul mot et <em>ge-</em> se place <strong>au milieu</strong>, entre le préfixe et le verbe : <em>aufstehen → aufgestanden, ankommen → angekommen, einkaufen → eingekauft, anrufen → angerufen</em>. Le préfixe ne se détache plus : <em>Ich bin um sieben Uhr aufgestanden</em>, alors qu'au présent on dit <em>Ich stehe um sieben Uhr auf</em>."
+      },
+      {
+        contrast: "Le français aussi emploie être avec des verbes de mouvement : <em>je suis allé, je suis venu, je suis resté</em> correspondent à <em>ich bin gegangen, ich bin gekommen, ich bin geblieben</em>. Mais les deux langues ne coïncident pas tout à fait. « J'ai voyagé » prend avoir en français, alors que l'allemand dit <em>Ich bin gereist</em>, avec sein. Et surtout, en français les verbes pronominaux prennent être (« je me suis levé », « je me suis lavé »), alors qu'en allemand les verbes réfléchis prennent en général haben : <em>Ich habe mich gewaschen</em>. Le choix se vérifie verbe par verbe."
+      },
+      {
+        trap: "Un verbe de mouvement employé avec un objet direct à l'accusatif prend en général <strong>haben</strong> : <em>Ich habe das Auto gefahren</em> (j'ai conduit la voiture). Un complément introduit par une préposition, lui, n'oblige pas à haben : <em>Ich bin mit dem Bus gefahren</em>, <em>Ich bin nach Wien geflogen</em>. En français, « je me suis levé » est pronominal ; en allemand, <em>aufstehen</em> n'a pas de pronom : <em>Ich bin aufgestanden</em>."
+      },
+      {
+        tip: "Si le verbe a un préfixe séparable et un participe régulier, le <em>-t</em> final reste : <em>aufräumen → aufgeräumt</em>, <em>einkaufen → eingekauft</em>. Les verbes à préfixe inséparable ou en <em>-ieren</em> ne prennent pas <em>ge-</em> : <em>besucht, studiert</em>."
+      }
+    ],
+    grammar: {
+      title: "Perfekt avec sein et participe séparable",
+      note: "<b>sein</b> avec un changement de lieu ou d'état ; dans les séparables, ge- se place entre le préfixe et le verbe : auf<b>ge</b>standen.",
+      table: {
+        head: ["verbe", "auxiliaire", "participe II"],
+        rows: [
+          ["fahren, gehen, kommen", "sein", "gefahren, gegangen, gekommen"],
+          ["fliegen, reisen, bleiben", "sein", "geflogen, gereist, geblieben"],
+          ["aufstehen, ankommen", "sein", "aufgestanden, angekommen"],
+          ["einkaufen, anrufen", "haben", "eingekauft, angerufen"],
+          ["aufräumen, fernsehen", "haben", "aufgeräumt, ferngesehen"]
+        ]
+      },
+      examples: [
+        { tr: "Je suis allé à Berlin", note: "changement de lieu : sein" },
+        { tr: "Nous nous sommes levés tôt.", note: "aufstehen : aufgestanden, sans pronom" },
+        { tr: "Elle est restée à la maison.", note: "bleiben : sein" },
+        { tr: "Il est arrivé à huit heures.", note: "ankommen : angekommen" },
+        { tr: "Hier, j'ai fait les courses.", note: "einkaufen : haben, ce n'est pas un changement de lieu" },
+        { tr: "Avez-vous téléphoné à votre mère ?", note: "anrufen : angerufen avec haben" }
+      ]
+    },
+    vocab: [
+      "aller avec un moyen de transport, conduire",
+      "aller (à pied, en général)",
+      "venir",
+      "voler, aller en avion",
+      "rester",
+      "voyager",
+      "se lever",
+      "arriver",
+      "faire les courses",
+      "téléphoner",
+      "ranger",
+      "le voyage"
+    ],
+    exercises: [
+      {
+        q: "Comment dit-on « Je suis allé à Berlin en train » ?",
+        opts: [
+          "Ich bin mit dem Zug nach Berlin gefahren.",
+          "Ich habe mit dem Zug nach Berlin gefahren.",
+          "Ich bin mit dem Zug nach Berlin fahren."
+        ],
+        why: "<i>Fahren</i> indique un changement de lieu : auxiliaire <b>sein</b> et participe <b>gefahren</b> à la fin de la phrase."
+      },
+      {
+        q: "Comment dit-on « Je suis resté à la maison » ?",
+        opts: ["Ich habe zu Hause geblieben.", "Ich bin zu Hause geblieben.", "Ich bin zu Hause gebleibt."],
+        why: "<i>Bleiben</i> prend <b>sein</b> et a le participe fort <b>geblieben</b>."
+      },
+      {
+        q: "Comment dit-on « Hier, j'ai fait les courses » ?",
+        opts: ["Ich habe gestern eingekauft.", "Ich habe gestern geeinkauft.", "Ich bin gestern eingekauft."],
+        why: "<i>Einkaufen</i> est séparable : <b>ein-ge-kauft</b>, avec <i>haben</i>, parce que faire les courses n'est pas un changement de lieu."
+      },
+      {
+        q: "Quelles phrases sont correctes ?",
+        opts: [
+          "Sie ist um sieben Uhr aufgestanden.",
+          "Ich habe gestern meine Mutter angerufen.",
+          "Wir haben nach Wien geflogen.",
+          "Er ist zu Hause geblieben.",
+          "Ich habe um sieben aufgestehen."
+        ],
+        why: "La phrase 3 veut <i>sein</i> (<i>Wir sind nach Wien geflogen</i>) ; la phrase 5 a deux erreurs : l'auxiliaire et le participe. Correct : <i>Ich bin um sieben aufgestanden</i> (<i>sein</i> et <i>aufgestanden</i>, et non « habe » et « aufgestehen »)."
+      },
+      {
+        q: "Complète : « Ich ___ gestern früh aufgestanden. »",
+        hint: "auxiliaire, première personne du singulier",
+        why: "<i>Aufstehen</i> est un changement d'état : auxiliaire <b>sein</b>, donc <i>ich bin</i>."
+      },
+      {
+        q: "Complète : « Wir sind um acht Uhr ___. » (arriver, ankommen)",
+        hint: "ankommen : ge- va au milieu",
+        why: "<b>angekommen</b> : <i>an</i> + <i>ge</i> + <i>kommen</i>."
+      },
+      {
+        tr: "Nous sommes allés à Berlin.",
+        why: "<i>Wir sind nach Berlin gefahren</i> : <i>sein</i> en deuxième position, participe à la fin. <i>Nach Berlin sind wir gefahren</i> est correct aussi."
+      },
+      {
+        q: "Complète la phrase.",
+        tr: "Samedi, nous sommes allés à Vienne en train et dimanche, nous sommes restés à la maison.",
+        why: "Avec <i>fahren</i> et <i>bleiben</i>, l'auxiliaire est <b>sein</b> ; <i>gefahren</i> ferme la première partie, <i>geblieben</i> la seconde."
+      },
+      {
+        tr: "Je me suis levé à sept heures et j'ai bu un café.",
+        why: "Dans <i>aufgestanden</i>, l'accent tombe sur <b>auf</b> ; dans <i>Uhr</i>, le <b>h</b> ne se prononce pas et allonge le <b>u</b>."
+      },
+      {
+        tr: "Nous sommes arrivés à Vienne le soir.",
+        why: "Dans <i>Wien</i>, le <b>W</b> se lit comme le « v » français et <b>ie</b> est un <b>i</b> long ; <i>angekommen</i> a l'accent sur <b>an</b>."
+      }
+    ]
+  },
+  "lesson:a1-u10-l3": {
+    theme: "Le week-end",
+    title: "Mon week-end",
+    objectives: [
+      "raconter le week-end dans l'ordre avec zuerst, dann, danach, später",
+      "garder le verbe en deuxième position après les connecteurs de temps",
+      "utiliser war et hatte seulement comme formules : Es war schön, Ich hatte Glück"
+    ],
+    theory: [
+      {
+        h: "Raconter dans l'ordre",
+        p: "Pour raconter le week-end, tu enchaînes les actions avec <strong>zuerst</strong> (d'abord), <strong>dann</strong> (puis), <strong>danach</strong> (après) et <strong>später</strong> (plus tard). Chaque action est un Perfekt : <em>Zuerst habe ich lange geschlafen. Dann habe ich gekocht. Danach sind wir ins Kino gegangen.</em> Ces adverbes ouvrent la phrase et occupent la première position."
+      },
+      {
+        contrast: "En français, « puis » ne change pas l'ordre des mots : « puis j'ai cuisiné », le sujet reste devant le verbe. En allemand, le verbe conjugué reste en <strong>deuxième position</strong> et le sujet passe après lui : <em>Dann habe ich gekocht</em>, et non « Dann ich habe gekocht ». C'est le même mécanisme que dans <em>Gestern habe ich ...</em> : ce qui ouvre la phrase pousse le sujet après le verbe."
+      },
+      {
+        trap: "Pour sein et haben, à l'oral, on emploie <strong>war</strong> et <strong>hatte</strong>, que tu apprends pour l'instant comme des formules : <em>Es war schön. Wie war dein Wochenende? Ich hatte Glück.</em> Inutile de conjuguer ainsi d'autres verbes : pour tous les autres, on reste au Perfekt. Attention : en français, « j'ai eu de la chance » est un passé composé, alors qu'en allemand on dit <em>Ich hatte Glück</em> ; et « c'était bien » correspond bien à <em>Es war schön</em>, mais « comment s'est passé ton week-end ? » se dit <em>Wie war dein Wochenende?</em>"
+      },
+      {
+        tip: "Tu peux relier deux actions avec <em>und</em> ou <em>aber</em> sans changer la structure : <em>Ich habe gekocht, und wir haben gegessen.</em> Pour dire quand, place <em>am Samstag</em> ou <em>am Sonntag</em> en tête : le verbe reste deuxième."
+      }
+    ],
+    grammar: {
+      title: "Le récit : connecteurs et verbe en deuxième position",
+      note: "Après <b>zuerst, dann, danach, später</b>, le verbe conjugué reste en deuxième position et le sujet le suit ; le participe ferme la phrase.",
+      table: {
+        head: ["français", "allemand", "exemple"],
+        rows: [
+          ["d'abord, pour commencer", "zuerst", "Zuerst habe ich geschlafen."],
+          ["puis", "dann", "Dann habe ich gekocht."],
+          ["après, ensuite", "danach", "Danach sind wir ins Kino gegangen."],
+          ["plus tard", "später", "Später habe ich gelesen."],
+          ["comment était... ?", "Wie war ...?", "Wie war dein Wochenende?"]
+        ]
+      },
+      examples: [
+        { tr: "Comment était ton week-end ?", note: "war : formule fixe" },
+        { tr: "D'abord, j'ai dormi longtemps.", note: "zuerst en première position, puis habe et ich" },
+        { tr: "Puis j'ai cuisiné pour mes amis.", note: "dann + verbe + sujet" },
+        { tr: "Après, nous sommes allés au cinéma.", note: "gehen : sein" },
+        { tr: "Plus tard, j'ai fait une promenade.", note: "einen Spaziergang machen" },
+        { tr: "C'était magnifique et j'ai eu de la chance.", note: "war et hatte comme formules" }
+      ]
+    },
+    vocab: [
+      "d'abord, pour commencer",
+      "puis",
+      "après, ensuite",
+      "plus tard",
+      "la fête",
+      "la promenade",
+      "le musée",
+      "le cadeau",
+      "fantastique, magnifique",
+      "C'était beau. / C'était bien.",
+      "Comment était ton week-end ?",
+      "J'ai eu de la chance."
+    ],
+    exercises: [
+      {
+        q: "Comment demandes-tu à un ami comment était son week-end ?",
+        opts: ["Wie war dein Wochenende?", "Wie hat dein Wochenende?", "Wie bist dein Wochenende?"],
+        why: "Pour « était », on utilise <b>war</b> : <i>Wie war dein Wochenende?</i> C'est une formule à apprendre telle quelle."
+      },
+      {
+        q: "Quelle phrase est correcte ?",
+        opts: ["Dann ich habe einen Film gesehen.", "Dann habe ich einen Film gesehen.", "Dann habe einen Film gesehen ich."],
+        why: "Après <i>dann</i>, le verbe conjugué reste en deuxième position et le sujet le suit : <i>Dann habe ich ...</i> ; le participe ferme la phrase."
+      },
+      {
+        q: "Complète : « Zuerst habe ich geschlafen, ___ habe ich gekocht. » (puis, utilise dann)",
+        hint: "utilise dann",
+        why: "<b>Dann</b> ouvre la seconde phrase : le verbe et le sujet échangent leur place, <i>habe ich</i>."
+      },
+      {
+        q: "Complète : « Wie ___ dein Wochenende? »",
+        hint: "était : la forme fixe",
+        why: "<b>war</b> est la formule pour « était » : <i>Wie war dein Wochenende?</i>"
+      },
+      {
+        tr: "Après, j'ai lu un livre.",
+        why: "<i>Danach habe ich ein Buch gelesen</i> : après <i>danach</i>, le verbe et le sujet échangent leur place. <i>Ich habe danach ein Buch gelesen</i> est correct aussi."
+      },
+      {
+        q: "Traduis : « Puis j'ai cuisiné pour mes amis. » (utilise dann)",
+        why: "<i>Dann habe ich für meine Freunde gekocht</i> : <i>für</i> veut l'accusatif. <i>Ich habe dann für meine Freunde gekocht</i> est correct aussi."
+      },
+      {
+        q: "Complète la phrase.",
+        tr: "Samedi, j'ai dormi longtemps. Puis j'ai fait une promenade.",
+        why: "Perfekt avec <b>haben</b> : <i>habe geschlafen</i>, <i>habe ... gemacht</i>. Après <i>danach</i>, le sujet suit le verbe : <i>habe ich</i>."
+      },
+      {
+        q: "Complète le dialogue.",
+        setting: "Tu parles du week-end avec un ami.",
+        lines: [
+          { tr: "Salut ! Comment était ton week-end ?" },
+          { tr: "Réponds que c'était bien et que tu as rencontré des amis.", answerTr: "C'était bien ! J'ai rencontré des amis." },
+          { tr: "Et dimanche, qu'as-tu fait ?" },
+          { tr: "Réponds que tu es resté à la maison.", answerTr: "Je suis resté à la maison." }
+        ]
+      },
+      {
+        tr: "Samedi, j'ai rencontré des amis, puis nous sommes allés au cinéma.",
+        why: "Dans <i>getroffen</i>, le double <b>ff</b> signale en général une voyelle brève ; dans <i>Kino</i>, le premier <b>i</b> est long."
+      },
+      {
+        tr: "C'était fantastique ! J'ai dansé et j'ai rencontré des amis.",
+        why: "Dans <i>getanzt</i>, le <b>z</b> se lit [ts], comme dans « pizza » ; dans <i>Freunde</i>, <b>eu</b> se lit « oï »."
+      }
+    ]
+  },
+  "lesson:a1-u10-l4": {
+    theme: "Révision",
+    title: "Révision de l'A1",
+    objectives: [
+      "réviser le présent, l'accusatif et les prépositions avec le datif",
+      "utiliser ensemble le présent et le Perfekt en quelques phrases",
+      "parler d'un court voyage à l'hôtel"
+    ],
+    theory: [
+      {
+        h: "Révision : trois choses à ne pas rater",
+        p: "<strong>1.</strong> Le verbe conjugué est en deuxième position et, dans certains verbes forts, la voyelle change avec <em>du</em> et <em>er/sie/es</em> : <em>ich esse, du isst, er isst</em>. <strong>2.</strong> À l'accusatif, seul le masculin change : <em>der Koffer → den Koffer</em>, <em>ein Koffer → einen Koffer</em>. <strong>3.</strong> Après <em>mit, zu, bei, aus, von</em>, on emploie le datif : <em>mit dem Zug, zum Strand</em> (zu dem), <em>aus Italien</em>."
+      },
+      {
+        contrast: "En français, on voyage « en train » ou « en bus » ; en allemand, le moyen de transport veut <strong>mit</strong> et le datif : <em>mit dem Zug, mit dem Bus</em>. Et « chez » recouvre deux idées que l'allemand sépare : <em>bei</em> + datif pour être chez quelqu'un (<em>Ich bin bei meiner Tante</em>), <em>zu</em> + datif pour aller chez quelqu'un (<em>Ich gehe zu meiner Tante</em>). Pour la provenance, « de » se dit <em>aus</em> (<em>Ich komme aus Italien</em>) ; <em>von</em> indique le point de départ."
+      },
+      {
+        trap: "Au féminin et au neutre, l'accusatif est identique au nominatif : <em>die Fahrkarte</em>, <em>das Zimmer</em>. Donc <em>Ich nehme den Koffer</em> mais <em>Ich nehme die Fahrkarte</em>. Si tu te trompes de genre, tu te trompes aussi d'article : révise toujours le nom avec son article, et ne le déduis pas du genre français."
+      },
+      {
+        tip: "Pour retenir les prépositions : <em>mit, zu, bei, aus, von</em> veulent le datif ; <em>für, ohne, durch, um, gegen</em> veulent l'accusatif."
+      }
+    ],
+    grammar: {
+      title: "Révision : présent, accusatif, datif",
+      note: "Verbe en deuxième position ; accusatif : seul le masculin change (<b>den</b>) ; après <b>mit, zu, bei, aus, von</b>, le datif.",
+      table: {
+        head: ["quoi", "règle", "exemple"],
+        rows: [
+          ["présent", "verbe en deuxième position", "Ich fahre mit dem Zug."],
+          ["certains verbes forts", "la voyelle change avec du et er/sie/es", "Du isst, er sieht."],
+          ["accusatif", "der → den, ein → einen", "Wir nehmen den Koffer."],
+          ["datif avec mit, zu, bei, aus, von", "dem, der, dem ; zum, zur", "Wir gehen zum Hotel."],
+          ["Perfekt", "haben ou sein + participe à la fin", "Gestern bin ich früh aufgestanden."]
+        ]
+      },
+      examples: [
+        { tr: "Je vais à la plage en train.", note: "mit dem Zug, zum Strand" },
+        { tr: "Nous prenons la valise et le billet.", note: "accusatif : den Koffer, die Fahrkarte" },
+        { tr: "Je viens d'Italie et j'habite chez ma tante.", note: "aus, bei + datif" },
+        { tr: "Il voit un film et mange une pizza.", note: "sehen et essen changent de voyelle" },
+        { tr: "Le soir, nous allons à l'hôtel.", note: "zum = zu dem" },
+        { tr: "Hier, je me suis levé tôt.", note: "Perfekt avec sein" }
+      ]
+    },
+    vocab: [
+      "le voyage",
+      "la valise",
+      "le billet (de transport)",
+      "l'hôtel",
+      "la chambre",
+      "les vacances",
+      "la mer",
+      "la plage"
+    ],
+    exercises: [
+      {
+        tr: "Le présent de sein, toutes les personnes.",
+        why: "<i>Bin, bist, ist, sind, seid, sind</i> : formes irrégulières à connaître par cœur. <i>Wir</i> et <i>sie/Sie</i> ont la même forme."
+      },
+      {
+        tr: "Le présent de essen, toutes les personnes.",
+        why: "<i>Essen</i> change de voyelle avec <i>du</i> et <i>er</i> : <b>isst</b> pour les deux. <i>Ich esse, wir essen, ihr esst, sie essen</i>."
+      },
+      {
+        tr: "Le présent de fahren, toutes les personnes.",
+        why: "<i>Fahren</i> prend le tréma avec <i>du</i> et <i>er</i> : <b>fährst</b>, <b>fährt</b>."
+      },
+      {
+        q: "Complète : « Wir fahren ___ dem Zug nach Wien. » (avec)",
+        hint: "moyen de transport",
+        why: "<b>Mit</b> + datif : <i>mit dem Zug</i>."
+      },
+      {
+        q: "Complète : « Ich nehme ___ Koffer. » (article défini, accusatif)",
+        hint: "Koffer est masculin",
+        why: "À l'accusatif, le masculin change : <b>den</b> Koffer."
+      },
+      {
+        q: "Complète : « Ich gehe ___ Bahnhof. » (vers, avec l'article contracté)",
+        hint: "zu + dem",
+        why: "<b>Zum</b> = <i>zu dem</i>."
+      },
+      {
+        q: "Complète : « Er kommt ___ Italien. » (de)",
+        hint: "provenance",
+        why: "Pour la provenance, on utilise <b>aus</b> + datif."
+      },
+      {
+        q: "Complète la phrase.",
+        tr: "Hier, je me suis levé tôt et j'ai bu un café.",
+        why: "<i>Aufstehen</i> prend <b>sein</b> (<i>ich bin aufgestanden</i>) ; <i>trinken</i> prend <b>haben</b> (<i>ich habe getrunken</i>)."
+      },
+      {
+        q: "Choisis l'article défini correct pour chaque nom.",
+        items: ["valise", "voyage", "hôtel", "chambre", "plage", "billet"]
+      },
+      {
+        tr: "Nous allons à la plage en train.",
+        why: "<i>Wir fahren mit dem Zug zum Strand</i> : <i>mit</i> + datif, <i>zu dem</i> devient <i>zum</i>. Les autres places du complément sont possibles, car le verbe reste deuxième."
+      },
+      {
+        tr: "Je vais à la plage en train et je prends ma valise.",
+        why: "Dans <i>Strand</i>, le <b>st</b> initial se lit [ʃt], comme le « ch » de « chat » suivi d'un t ; dans <i>Koffer</i>, le double <b>ff</b> signale en général une voyelle brève."
+      },
+      {
+        tr: "Nous avons une chambre à l'hôtel et demain, nous allons à la mer.",
+        why: "Dans <i>Zimmer</i>, le <b>Z</b> se lit [ts] ; dans <i>Meer</i>, <b>ee</b> est un <b>e</b> long."
+      }
+    ]
+  },
+  "lesson:a1-u10-test": {
+    theme: "Contrôle",
+    title: "Examen final de l'A1",
+    objectives: ["vérifier le Perfekt avec haben et avec sein, l'accusatif, le datif et le genre des noms"],
+    theory: [
+      {
+        p: "Douze questions sur tout l'A1. On réussit avec 70 %. Ne relis pas les leçons pendant que tu réponds : si tu ne te souviens pas de quelque chose, mieux vaut retourner réviser."
+      }
+    ],
+    exercises: [
+      {
+        q: "Complète : « Ich ___ gestern Fußball gespielt. »",
+        hint: "auxiliaire, première personne du singulier",
+        why: "<i>Spielen</i> prend <b>haben</b> : <i>ich habe gespielt</i>."
+      },
+      {
+        q: "Complète : « Am Samstag ___ wir nach Wien gefahren. »",
+        hint: "auxiliaire, première personne du pluriel",
+        why: "<i>Fahren</i> avec une destination indique un changement de lieu : <b>sind</b>."
+      },
+      {
+        q: "Complète : « Wir haben einen Film ___. » (voir)",
+        hint: "participe II de sehen",
+        why: "<i>Sehen</i> est fort : <b>gesehen</b>."
+      },
+      {
+        q: "Complète : « Ich nehme ___ Kaffee. » (article défini, accusatif)",
+        hint: "Kaffee est masculin",
+        why: "À l'accusatif, le masculin change : <b>den</b> Kaffee."
+      },
+      {
+        q: "Complète : « Ich fahre ___ dem Bus. » (avec)",
+        hint: "moyen de transport",
+        why: "<b>Mit</b> + datif."
+      },
+      {
+        q: "Complète : « Sie ist früh ___. » (se lever, aufstehen)",
+        hint: "ge- va au milieu",
+        why: "<b>aufgestanden</b> : <i>auf</i> + <i>ge</i> + <i>standen</i>, avec <i>sein</i>."
+      },
+      {
+        q: "Quelle phrase est correcte ?",
+        opts: ["Ich habe nach Berlin gefahren.", "Ich bin nach Berlin gefahren.", "Ich bin nach Berlin gefahrt."],
+        why: "<i>Fahren</i> avec une destination prend <b>sein</b> et a le participe fort <i>gefahren</i>."
+      },
+      {
+        q: "Quel est le participe II de « besuchen » ?",
+        opts: ["gebesucht", "besucht", "besuchen"],
+        why: "<i>Be-</i> est un préfixe inséparable : pas de <i>ge-</i>. Le participe est <b>besucht</b>."
+      },
+      {
+        q: "Choisis l'article défini correct pour chaque nom.",
+        items: ["film", "week-end", "fête", "promenade", "musée", "billet"]
+      },
+      {
+        tr: "Le Perfekt de gehen : auxiliaire et participe.",
+        why: "<i>Ich bin gegangen, du bist gegangen, er ist gegangen, wir sind gegangen</i> : <i>gehen</i> prend <b>sein</b>."
+      },
+      {
+        q: "Complète la phrase (d'abord, utilise zuerst).",
+        tr: "D'abord, j'ai rencontré des amis. Puis nous sommes allés au cinéma.",
+        why: "<i>Zuerst</i> ouvre la phrase ; <i>habe ich ... getroffen</i> avec haben ; <i>sind wir ... gegangen</i> avec sein."
+      },
+      {
+        tr: "Pendant le week-end, je suis allé à Vienne et j'ai visité un musée.",
+        why: "Dans <i>Museum</i>, l'accent tombe sur <b>se</b> et le <b>s</b> est sonore ; dans <i>besucht</i>, le <b>ch</b> après <b>u</b> est [x]."
+      }
+    ]
   }
 });
