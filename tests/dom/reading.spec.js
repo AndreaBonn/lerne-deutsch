@@ -132,26 +132,26 @@ test("the reading strings exist in five languages", async ({ page }) => {
    invisible until somebody opens the list from a cold profile.
    ============================================================ */
 test("the list shows texts from every level, not only the loaded one", async ({ page }) => {
-  /* Only A1 is registered, so a second level is built here: the index is
+  /* Only A1 and A2 are registered, so a third level is built here: the index is
      served with one more registerLevel line, and the level's library file
      (plus its overlay, whatever the learner language) exists only as a route.
-     The student never opens A2: the list has to pull it and draw it again. */
+     The student never opens B1: the list has to pull it and draw it again. */
   await page.route("**/data/core/curriculum-index.js", async route => {
     const res = await route.fetch();
     const body = (await res.text()) +
-      '\nLINGUAI.registerLevel({ code: "A2", cefrLabel: "A2", dataFiles: ["library-a2-fixture.js"] });\n';
+      '\nLINGUAI.registerLevel({ code: "B1", cefrLabel: "B1", dataFiles: ["library-b1-fixture.js"] });\n';
     await route.fulfill({ response: res, body });
   });
-  await page.route("**/data/core/library-a2-fixture.js", route => route.fulfill({
+  await page.route("**/data/core/library-b1-fixture.js", route => route.fulfill({
     contentType: "application/javascript",
-    body: 'LINGUAI.addReadings([{ id: "lib-a2-fixture", cefr: "A2", tag: "g-praesens", titleIt: "Fixture Bergtour", ' +
+    body: 'LINGUAI.addReadings([{ id: "lib-b1-fixture", cefr: "B1", tag: "g-praesens", titleIt: "Fixture Bergtour", ' +
       'sentences: ["Am Sonntag fahren wir in die Berge."], glossIt: ["die Berge"], lexIt: ["fahren"], questions: [] }]);'
   }));
-  await page.route("**/data/i18n/*/library-a2-fixture.js", route => {
+  await page.route("**/data/i18n/*/library-b1-fixture.js", route => {
     const lang = route.request().url().match(/i18n\/([a-z]+)\//)[1];
     return route.fulfill({
       contentType: "application/javascript",
-      body: 'LINGUAI.addStrings("' + lang + '", { "read:lib-a2-fixture": { title: "Fixture tour", gloss: ["mountains"], lex: ["drive"] } });'
+      body: 'LINGUAI.addStrings("' + lang + '", { "read:lib-b1-fixture": { title: "Fixture tour", gloss: ["mountains"], lex: ["drive"] } });'
     });
   });
 
@@ -159,10 +159,10 @@ test("the list shows texts from every level, not only the loaded one", async ({ 
   await page.waitForSelector(".js-open");
   /* Drawn first, pulled second, drawn again: the wait is for the second
      drawing, which is the one under test. */
-  await page.waitForSelector('.js-open[data-id="lib-a2-fixture"]', { timeout: 15000 });
+  await page.waitForSelector('.js-open[data-id="lib-b1-fixture"]', { timeout: 15000 });
 
-  const riga = page.locator(".list-row", { has: page.locator('.js-open[data-id="lib-a2-fixture"]') });
-  await expect(riga.locator(".chip--cefr")).toHaveText("A2");
+  const riga = page.locator(".list-row", { has: page.locator('.js-open[data-id="lib-b1-fixture"]') });
+  await expect(riga.locator(".chip--cefr")).toHaveText("B1");
   await expect(page.locator('.js-open[data-id="r-a1-cafe"]'), "the loaded level is still there").toHaveCount(1);
 });
 
