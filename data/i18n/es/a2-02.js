@@ -1656,7 +1656,7 @@ LINGUAI.addStrings("es", {
       "planear, planificar",
       "la mudanza",
       "mudarse",
-      "los estudios, la carrera",
+      "los estudios universitarios, la carrera (plural die Studien, poco usado)",
       "estudiar (en la universidad)",
       "el puesto de trabajo",
       "el trabajo (coloquial)",
@@ -1713,7 +1713,7 @@ LINGUAI.addStrings("es", {
       },
       {
         tr: "Después de los estudios tengo la intención de trabajar en Berlín.",
-        why: "En <i>Studium</i> la <b>st</b> inicial es [ʃt]; en <i>nach</i> la <b>ch</b> tras <b>a</b> es [x]; en <i>arbeiten</i> la <b>ei</b> es [aɪ]."
+        why: "En <i>Studium</i> la <b>st</b> inicial es [ʃt]; en <i>nach</i> la <b>ch</b> tras <b>a</b> es [x]."
       }
     ]
   },
@@ -1736,7 +1736,7 @@ LINGUAI.addStrings("es", {
         p: "La mayoría de los verbos forma el Perfekt con <strong>haben</strong>: <em>Ich habe studiert.</em> Los verbos intransitivos que expresan un cambio de lugar o de estado toman <strong>sein</strong> (no todos los verbos de movimiento: <em>tanzen</em> lleva <strong>haben</strong>): <em>Ich bin umgezogen. Wir sind angekommen.</em> Igual <em>sein</em> y <em>bleiben</em>: <em>Ich bin geblieben.</em> El verbo conjugado está en segunda posición, el Partizip II al final."
       },
       {
-        contrast: "El español tiene un solo auxiliar, <em>haber</em>: <em>he llegado, me he mudado</em>. El alemán tiene dos, <strong>haben</strong> y <strong>sein</strong>, y hay que aprender cuál lleva cada verbo: <em>Ich bin angekommen, Ich bin umgezogen</em>. Además el Perfekt alemán no equivale al pretérito perfecto español: en la lengua hablada <em>Gestern habe ich gearbeitet</em> significa <em>ayer trabajé</em>, con una expresión de tiempo pasado que en gran parte del español no iría con <em>he trabajado</em>. El alemán tampoco tiene un tiempo aparte como el imperfecto: <em>war</em> y <em>hatte</em> en Präteritum se usan para decir <em>era / estaba</em> y <em>teníamos</em> (<em>Ich war krank. Wir hatten keinen Hund.</em>). El Konjunktiv II de cortesía (<em>Könnten Sie ...?</em>, <em>Ich hätte gern ...</em>) corresponde al condicional español (<em>¿podría usted ...?, quisiera ...</em>)."
+        contrast: "El español tiene un solo auxiliar, <em>haber</em>: <em>he llegado, me he mudado</em>. El alemán tiene dos, <strong>haben</strong> y <strong>sein</strong>, y hay que aprender cuál lleva cada verbo: <em>Ich bin angekommen, Ich bin umgezogen</em>. Además el Perfekt alemán no equivale al pretérito perfecto español: en la lengua hablada <em>Gestern habe ich gearbeitet</em> significa <em>ayer trabajé</em>, con una expresión de tiempo pasado que en gran parte del español no iría con <em>he trabajado</em>. El alemán tampoco tiene un tiempo aparte como el imperfecto: <em>war</em> y <em>hatte</em> en Präteritum se usan para decir <em>era / estaba</em> y <em>teníamos</em> (<em>Ich war krank. Wir hatten keinen Hund.</em>). El Konjunktiv II de cortesía (<em>Könnten Sie ...?</em>, <em>Ich hätte gern ...</em>) corresponde a fórmulas españolas de cortesía como <em>podría</em> (condicional) y <em>quisiera</em> (imperfecto de subjuntivo): <em>¿podría usted ...?, quisiera ...</em>."
       },
       {
         trap: "No se mezclan las dos formas: «Gestern ich habe gearbeitet» tiene el verbo en tercera posición, y <em>Gestern habe ich gearbeitet</em> tiene el verbo conjugado en segunda. No se dice «Ich habe umgezogen»: <em>umziehen</em> se comporta como un verbo de movimiento y lleva <em>sein</em>, <em>Ich bin umgezogen</em>. Y la petición es <em>Könnten Sie ...?</em>, no «Könnte Sie ...?»."
@@ -1819,7 +1819,7 @@ LINGUAI.addStrings("es", {
         why: "<i>Als Kind war ich oft krank, und wir hatten keinen Hund</i>: Präteritum de <i>sein</i> (<i>war</i>) y de <i>haben</i> (<i>hatten</i>)."
       },
       {
-        q: "Completa la frase (segundo hueco: haben en Konjunktiv II).",
+        q: "Completa la frase (primer hueco: werden, Futur I; segundo hueco: haben en Konjunktiv II).",
         tr: "Mañana te llamaré. Me gustaría tener más tiempo.",
         why: "<i>Morgen werde ich dich anrufen</i>: Futur I, con el infinitivo al final. <i>Ich hätte gern mehr Zeit</i>: Konjunktiv II de <i>haben</i>, para un deseo."
       },
@@ -1853,14 +1853,14 @@ LINGUAI.addStrings("es", {
       },
       {
         h: "El artículo en dativo",
-        p: "En dativo el artículo determinado es <strong>dem</strong> (masculino y neutro), <strong>der</strong> (femenino), <strong>den</strong> (plural; el nombre toma <strong>-n</strong>, salvo los plurales que ya acaban en -n o -en y los en -s): <em>dem Vermieter, der Mutter, den Kindern, den Nachbarn, den Jobs.</em> Con el artículo indeterminado o el posesivo: <em>einem, einer, meinem, meiner.</em> Verbos que piden dativo: <strong>helfen, danken, gehören, gefallen, gratulieren</strong>. Con <strong>schenken</strong> (jemandem etwas schenken) el destinatario va en dativo y lo regalado en acusativo: <em>Ich schenke meiner Mutter einen Kuchen.</em>"
+        p: "En dativo el artículo determinado es <strong>dem</strong> (masculino y neutro), <strong>der</strong> (femenino), <strong>den</strong> (plural; el nombre toma <strong>-n</strong>, salvo los plurales que ya acaban en -n o -en los en -s y algunos plurales de origen extranjero con otras terminaciones, como <em>Praktika</em>): <em>dem Vermieter, der Mutter, den Kindern, den Nachbarn, den Jobs, den Praktika.</em> Con el artículo indeterminado o el posesivo: <em>einem, einer, meinem, meiner.</em> Verbos que piden dativo: <strong>helfen, danken, gehören, gefallen, gratulieren</strong>. Con <strong>schenken</strong> (jemandem etwas schenken) el destinatario va en dativo y lo regalado en acusativo: <em>Ich schenke meiner Mutter einen Kuchen.</em>"
       },
       {
         h: "El orden de las palabras",
         p: "Con dos nombres, de ordinario primero el <strong>dativo</strong> y luego el acusativo: <em>Ich gebe dem Mann das Buch.</em> Con dos pronombres, primero el <strong>acusativo</strong> y luego el dativo: <em>Ich gebe es ihm.</em> Con un pronombre y un nombre, el pronombre va primero: <em>Ich gebe ihm das Buch. Ich gebe es dem Mann.</em>"
       },
       {
-        contrast: "Los pronombres españoles <em>me, te, nos, os</em> sirven igual para el complemento directo y el indirecto (<em>me ve, me da un libro</em>), y solo en tercera persona se distingue <em>lo/la</em> de <em>le</em>. El alemán distingue ya en primera y segunda del singular: <em>mich / mir, dich / dir</em>; solo <em>uns</em> y <em>euch</em> son iguales. En español los pronombres van pegados al verbo y delante de él, con el indirecto primero (<em>se lo doy</em>); en alemán son palabras sueltas detrás del verbo, con el acusativo primero (<em>Ich gebe es ihm</em>). Tampoco hay <em>a</em> personal ni <em>a</em> para el destinatario: <em>veo a Tim</em> es <em>Ich sehe Tim</em>, y <em>regalo flores a mi madre</em> es <em>Ich schenke meiner Mutter Blumen</em>, donde solo el caso (<em>meiner</em>) marca al destinatario."
+        contrast: "Los pronombres españoles <em>me, te, nos, os</em> sirven igual para el complemento directo y el indirecto (<em>me ve, me da un libro</em>), y solo en tercera persona se distingue <em>lo/la</em> de <em>le</em>. El alemán distingue ya en primera y segunda del singular: <em>mich / mir, dich / dir</em>; solo <em>uns</em> y <em>euch</em> son iguales. Ante un verbo conjugado, los pronombres átonos se escriben separados: <em>se lo doy</em>, con el indirecto primero. Se escriben unidos al infinitivo, al gerundio y al imperativo afirmativo: <em>dárselo, dándoselo, dáselo</em>. En alemán son palabras sueltas, con el acusativo primero (<em>Ich gebe es ihm</em>), detrás del verbo en la principal y delante del verbo en una subordinada: <em>weil ich es ihm gebe</em>. Tampoco hay <em>a</em> personal ni <em>a</em> para el destinatario: <em>veo a Tim</em> es <em>Ich sehe Tim</em>, y <em>regalo flores a mi madre</em> es <em>Ich schenke meiner Mutter Blumen</em>, donde solo el caso (<em>meiner</em>) marca al destinatario."
       },
       {
         trap: "No se dice «Ich helfe ihn» ni «Ich sehe ihm»: <em>helfen</em> pide el dativo (<em>ihm</em>), <em>sehen</em> el acusativo (<em>ihn</em>). No se dice «Ich gebe ihm es»: con dos pronombres el acusativo va primero, <em>Ich gebe es ihm</em>. Y después de <em>mit, bei, zu</em> el artículo va siempre en dativo: <em>beim Umzug</em> (<em>bei dem Umzug</em>), <em>mit dem Auto</em>."
@@ -1871,7 +1871,7 @@ LINGUAI.addStrings("es", {
     ],
     grammar: {
       title: "Acusativo, dativo y pronombres",
-      note: "<b>mich/mir, dich/dir, ihn/ihm, sie/ihr, uns/uns, euch/euch, sie/ihnen</b>. Artículo en dativo: <b>dem, der, dem, den</b>; en plural el nombre toma <b>-n</b> (<i>den Kindern</i>), salvo los plurales en -n/-en y en -s (<i>den Nachbarn, den Jobs</i>). Dos pronombres: primero el <b>acusativo</b> (<i>Ich gebe es ihm</i>).",
+      note: "<b>mich/mir, dich/dir, ihn/ihm, sie/ihr, uns/uns, euch/euch, sie/ihnen</b>. Artículo en dativo: <b>dem, der, dem, den</b>; en plural el nombre toma <b>-n</b> (<i>den Kindern</i>), salvo los plurales en -n/-en, en -s y algunos plurales de origen extranjero con otras terminaciones (<i>den Nachbarn, den Jobs, den Praktika</i>). Dos pronombres: primero el <b>acusativo</b> (<i>Ich gebe es ihm</i>).",
       table: {
         head: ["nominativo", "acusativo", "dativo"],
         rows: [

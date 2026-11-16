@@ -1617,10 +1617,10 @@ LINGUAI.addStrings("pl", {
       },
       {
         h: "Przyszłość: czas teraźniejszy albo werden",
-        p: "Mówiąc o planach, po niemiecku często używa się <strong>czasu teraźniejszego</strong> ze wskaźnikiem czasu: <em>Nächstes Jahr ziehe ich nach Berlin.</em> <strong>Futur I</strong> (<em>werden</em> na drugim miejscu, bezokolicznik na końcu) podkreśla decyzję albo obietnicę: <em>Ich werde im Herbst Informatik studieren.</em> Po <em>werden</em> i po czasownikach modalnych nie ma <em>zu</em>."
+        p: "Mówiąc o planach, po niemiecku często używa się <strong>czasu teraźniejszego</strong> ze wskaźnikiem czasu: <em>Nächstes Jahr ziehe ich nach Berlin.</em> <strong>Futur I</strong> (<em>werden</em> + bezokolicznik) służy m.in. do mówienia o przyszłości; zależnie od kontekstu może też wyrażać obietnicę lub przypuszczenie: <em>Ich werde im Herbst Informatik studieren.</em> Po <em>werden</em> i po czasownikach modalnych nie ma <em>zu</em>."
       },
       {
-        contrast: "Po polsku mówi się <em>mam zamiar</em> albo <em>zamierzam</em> i od razu następuje bezokolicznik: <em>zamierzam przeprowadzić się latem</em>, bez żadnego dodatkowego słowa. Po niemiecku <em>vorhaben</em> wymaga <em>zu</em> + bezokolicznik, a cząstka <em>vor</em> odrywa się i idzie na koniec. Różni się też przyszłość: po polsku jest czas przyszły (<em>będę studiować</em>, <em>przeprowadzę się</em>), a niemiecki w rozmowie chętnie używa czasu teraźniejszego ze wskaźnikiem czasu (<em>Nächstes Jahr ziehe ich um</em>)."
+        contrast: "Po polsku mówi się <em>mam zamiar</em> albo <em>zamierzam</em> i od razu następuje bezokolicznik: <em>zamierzam przeprowadzić się latem</em>, bez żadnego dodatkowego słowa. Po niemiecku <em>vorhaben</em> wymaga <em>zu</em> + bezokolicznik, a cząstka <em>vor</em> odrywa się i idzie na koniec. W planach na przyszłość oba języki mogą użyć czasu teraźniejszego: <em>W przyszłym roku przeprowadzam się do Berlina</em> / <em>Nächstes Jahr ziehe ich nach Berlin um</em>. Różnica dotyczy głównie budowy niemieckiego Futur I: <em>werden</em> + bezokolicznik na końcu zdania."
       },
       {
         trap: "Nie mówi się „Ich habe vor, umziehen” ani „Ich habe vor, zu umziehen”: przy czasowniku rozdzielnie złożonym forma brzmi <em>umzuziehen</em>. Po polsku po <em>zamierzam</em> stoi sam bezokolicznik, więc łatwo pominąć <em>zu</em>: <em>Ich habe vor, nach Wien ziehen</em> jest błędem. Po <em>werden</em> też nie ma <em>zu</em>: <em>Ich werde studieren</em>, nie „Ich werde zu studieren”. Nie myl <em>Ich habe vor, ... zu ...</em> z <em>Ich will ...</em>: po <em>wollen</em> bezokolicznik stoi bez <em>zu</em> (<em>Ich will umziehen</em>)."
@@ -1656,7 +1656,7 @@ LINGUAI.addStrings("pl", {
       "planować",
       "przeprowadzka",
       "przeprowadzić się",
-      "studia, kierunek studiów",
+      "studia, kierunek studiów (liczba mnoga die Studien, rzadko używana)",
       "studiować",
       "miejsce pracy, posada",
       "praca (potocznie)",
@@ -1713,7 +1713,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         tr: "Po studiach mam zamiar pracować w Berlinie.",
-        why: "W <i>Studium</i> początkowe <b>st</b> to [ʃt]; w <i>nach</i> <b>ch</b> po <b>a</b> to [x]; w <i>arbeiten</i> <b>ei</b> to [aɪ]."
+        why: "W <i>Studium</i> początkowe <b>st</b> to [ʃt]; w <i>nach</i> <b>ch</b> po <b>a</b> to [x]."
       }
     ]
   },
@@ -1742,7 +1742,7 @@ LINGUAI.addStrings("pl", {
         trap: "Nie miesza się szyku: „Gestern ich habe gearbeitet” ma czasownik na trzecim miejscu, a <em>Gestern habe ich gearbeitet</em> ma odmieniony czasownik na drugim. Nie mówi się „Ich habe umgezogen” (jak po polsku, gdzie nie ma czasownika posiłkowego): <em>umziehen</em> zachowuje się jak czasownik ruchu i bierze <em>sein</em>, <em>Ich bin umgezogen</em>. A prośba brzmi <em>Könnten Sie ...?</em>, nie „Könnte Sie ...?”."
       },
       {
-        tip: "Zanim napiszesz zdanie, zapytaj się: czy to już się stało (Perfekt albo <em>war/hatte</em>), czy się stanie (czas teraźniejszy + czas albo <em>werden</em>), czy to prośba (Konjunktiv II)? Potem sprawdź, gdzie stoi odmieniony czasownik: na drugim miejscu."
+        tip: "Zanim napiszesz zdanie, zapytaj się: czy to już się stało (Perfekt albo <em>war/hatte</em>), czy się stanie (czas teraźniejszy + czas albo <em>werden</em>), czy to prośba (Konjunktiv II)? Potem sprawdź, gdzie stoi odmieniony czasownik: w zdaniu oznajmującym na drugim miejscu, a w pytaniu bez wyrazu pytającego na pierwszym (<em>Könnten Sie mir helfen?</em>)."
       }
     ],
     grammar: {
@@ -1819,7 +1819,7 @@ LINGUAI.addStrings("pl", {
         why: "<i>Als Kind war ich oft krank, und wir hatten keinen Hund</i>: Präteritum od <i>sein</i> (<i>war</i>) i od <i>haben</i> (<i>hatten</i>)."
       },
       {
-        q: "Uzupełnij zdanie (druga luka: haben w Konjunktiv II).",
+        q: "Uzupełnij zdanie (pierwsza luka: werden w Futur I; druga luka: haben w Konjunktiv II).",
         tr: "Jutro do ciebie zadzwonię. Chciałbym mieć więcej czasu.",
         why: "<i>Morgen werde ich dich anrufen</i>: Futur I, z bezokolicznikiem na końcu. <i>Ich hätte gern mehr Zeit</i>: Konjunktiv II od <i>haben</i>, wyrażający życzenie."
       },
@@ -1853,7 +1853,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         h: "Rodzajnik w celowniku",
-        p: "W celowniku rodzajnik określony to <strong>dem</strong> (rodzaj męski i nijaki), <strong>der</strong> (rodzaj żeński), <strong>den</strong> (liczba mnoga; rzeczownik dostaje <strong>-n</strong>, z wyjątkiem liczby mnogiej, która już kończy się na -n lub -en, oraz na -s): <em>dem Vermieter, der Mutter, den Kindern, den Nachbarn, den Jobs.</em> Z rodzajnikiem nieokreślonym i zaimkiem dzierżawczym: <em>einem, einer, meinem, meiner.</em> Czasowniki z celownikiem: <strong>helfen, danken, gehören, gefallen, gratulieren</strong>. Przy <strong>schenken</strong> (jemandem etwas schenken) odbiorca stoi w celowniku, a podarowana rzecz w bierniku: <em>Ich schenke meiner Mutter einen Kuchen.</em>"
+        p: "W celowniku rodzajnik określony to <strong>dem</strong> (rodzaj męski i nijaki), <strong>der</strong> (rodzaj żeński), <strong>den</strong> (liczba mnoga; rzeczownik dostaje <strong>-n</strong>, z wyjątkiem liczby mnogiej, która już kończy się na -n lub -en, na -s oraz niektórych obcych form liczby mnogiej o innych końcówkach, jak <em>Praktika</em>): <em>dem Vermieter, der Mutter, den Kindern, den Nachbarn, den Jobs, den Praktika.</em> Z rodzajnikiem nieokreślonym i zaimkiem dzierżawczym: <em>einem, einer, meinem, meiner.</em> Czasowniki z celownikiem: <strong>helfen, danken, gehören, gefallen, gratulieren</strong>. Przy <strong>schenken</strong> (jemandem etwas schenken) odbiorca stoi w celowniku, a podarowana rzecz w bierniku: <em>Ich schenke meiner Mutter einen Kuchen.</em>"
       },
       {
         h: "Szyk wyrazów",
@@ -1871,7 +1871,7 @@ LINGUAI.addStrings("pl", {
     ],
     grammar: {
       title: "Biernik, celownik i zaimki",
-      note: "<b>mich/mir, dich/dir, ihn/ihm, sie/ihr, uns/uns, euch/euch, sie/ihnen</b>. Rodzajnik w celowniku: <b>dem, der, dem, den</b>; w liczbie mnogiej rzeczownik dostaje <b>-n</b> (<i>den Kindern</i>), z wyjątkiem liczby mnogiej na -n/-en i na -s (<i>den Nachbarn, den Jobs</i>). Dwa zaimki: najpierw <b>biernik</b> (<i>Ich gebe es ihm</i>).",
+      note: "<b>mich/mir, dich/dir, ihn/ihm, sie/ihr, uns/uns, euch/euch, sie/ihnen</b>. Rodzajnik w celowniku: <b>dem, der, dem, den</b>; w liczbie mnogiej rzeczownik dostaje <b>-n</b> (<i>den Kindern</i>), z wyjątkiem liczby mnogiej na -n/-en, na -s i niektórych obcych form liczby mnogiej o innych końcówkach (<i>den Nachbarn, den Jobs, den Praktika</i>). Dwa zaimki: najpierw <b>biernik</b> (<i>Ich gebe es ihm</i>).",
       table: {
         head: ["mianownik", "biernik", "celownik"],
         rows: [

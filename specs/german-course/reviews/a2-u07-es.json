@@ -1,0 +1,13 @@
+{
+  "bundleHash": "534d2edf0a45964303caad470fa954d6e53cb3cebaa8f7d4912b36c8cafee5da",
+  "findings": [
+    {
+      "kind": "risposta corretta esclusa",
+      "msg": "La seconda lacuna accetta soltanto «Österreich», ma anche «Deutschland» rende la frase corretta: «Servus» si usa in Baviera, come indica la tabella della stessa lezione. Accettare almeno entrambe le risposte oppure specificare nella domanda che si cerca il paese Austria. Aggiornare anche neutral.lessons[2].exercises[7].gaps[1].",
+      "path": "merged.lessons[2].exercises[7].gaps[1]"
+    }
+  ],
+  "lang": "es",
+  "unit": "a2-u07",
+  "verdict": "fail"
+}

@@ -1,0 +1,18 @@
+{
+  "bundleHash": "143d80e9e77a8683221de7911d505bc7c91dd88955bf226cc985cdb728fd3ad0",
+  "findings": [
+    {
+      "kind": "explanation",
+      "msg": "La regola «the dative answers to whom?» è fuorviante per anglofoni: in inglese si dice «Whom do I help?», ma helfen richiede il dativo tedesco. Spiegare che il caso dipende dalla reggenza del verbo; presentare «to whom?» soltanto come aiuto per il destinatario con geben o schenken.",
+      "path": "merged.lessons[2].theory[0].p"
+    },
+    {
+      "kind": "answer-alternatives",
+      "msg": "Mancano risposte con «zuhause», grafia standard corretta al pari di «zu Hause»: «Ich bleibe zuhause, weil ich arbeiten muss». Accettare questa variante anche nelle altre costruzioni già previste e aggiornare la chiave corrispondente in neutral.",
+      "path": "merged.lessons[3].exercises[9].a"
+    }
+  ],
+  "lang": "en",
+  "unit": "a2-u08",
+  "verdict": "fail"
+}

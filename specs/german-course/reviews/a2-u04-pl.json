@@ -1,0 +1,13 @@
+{
+  "bundleHash": "32bd949ff3dc3c8dcb2cb738c44b4cd786117ca4cebf3766a00288039366a9be",
+  "findings": [
+    {
+      "kind": "answer_key",
+      "msg": "Klucz dopuszcza „Der Arzt sagt, dass ich mehr schlafen muss”, mimo że polecenie wymaga użycia „sollen”. „Muss” wyraża konieczność i zmienia znaczenie; samo wyjaśnienie również wskazuje tę różnicę. Usuń wariant z „muss” z obu list odpowiedzi i usuń z wyjaśnienia informację, że kurs go akceptuje.",
+      "path": "neutral.lessons[3].exercises[7].a[1]; merged.lessons[3].exercises[7].a[1]; merged.lessons[3].exercises[7].why"
+    }
+  ],
+  "lang": "pl",
+  "unit": "a2-u04",
+  "verdict": "fail"
+}

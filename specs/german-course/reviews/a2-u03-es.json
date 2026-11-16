@@ -1,7 +1,18 @@
 {
-  "bundleHash": "8f2a47e0fdbecbb99375e9d3bd9a101e30705e16b04fb3dbf00eee368592e5ed",
-  "findings": [],
+  "bundleHash": "25af221f0e4a79b3642d9a6226e3fb4ef562b2aa602db22bcbd591b5cc3b7c74",
+  "findings": [
+    {
+      "kind": "ambiguità della consegna",
+      "msg": "Il testo identifica la collega, ma non chi viene invitato: «mich», «dich», «uns» ed «euch» sono tutti possibili nel secondo spazio. Specificare nella consegna «ella a veces me invita», così che la chiave «mich» sia univoca senza consultare la traduzione.",
+      "path": "merged.lessons[0].exercises[5].q"
+    },
+    {
+      "kind": "ambiguità della consegna",
+      "msg": "Il destinatario della lettera non è indicato nel testo da completare: «dir» non è l’unica risposta corretta al secondo spazio; sono possibili anche «mir», «ihm», «ihr», «uns» ed «euch». Aggiungere alla consegna «Mañana te la mando» oppure il vincolo «du, dativo».",
+      "path": "merged.lessons[2].exercises[5].q"
+    }
+  ],
   "lang": "es",
   "unit": "a2-u03",
-  "verdict": "pass"
+  "verdict": "fail"
 }

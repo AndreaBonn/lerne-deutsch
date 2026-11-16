@@ -1578,7 +1578,7 @@ LINGUAI.addStrings("fr", {
     theory: [
       {
         h: "La personne au datif, la partie du corps au nominatif",
-        p: "Pour dire qu'une partie du corps fait mal, l'allemand emploie <em>wehtun</em>. La <b>personne</b> se met au <b>datif</b> (<em>mir, dir, ihm, ihr, uns, euch, ihnen</em>) et la <b>partie du corps</b> est le <b>sujet</b> : le verbe s'accorde donc avec elle. <em>Mir tut der Kopf weh</em> (singulier, <em>tut</em>), <em>Mir tun die Füße weh</em> (pluriel, <em>tun</em>). <em>Weh</em> se place à la fin de la phrase, car <em>wehtun</em> est un verbe à particule séparable. Avec un nom, la personne prend le datif du nom : <em>Meiner Schwester tut der Rücken weh.</em> On peut inverser l'ordre sans changer le sens : <em>Der Kopf tut mir weh.</em> Pour poser la question : <em>Wo tut es dir weh ?</em> ou <em>Was tut dir weh ?</em>"
+        p: "Pour dire qu'une partie du corps fait mal, l'allemand emploie <em>wehtun</em>. La <b>personne</b> se met au <b>datif</b> (<em>mir, dir, ihm, ihr, uns, euch, ihnen</em>) et la <b>partie du corps</b> est le <b>sujet</b> : le verbe s'accorde donc avec elle. <em>Mir tut der Kopf weh</em> (singulier, <em>tut</em>), <em>Mir tun die Füße weh</em> (pluriel, <em>tun</em>). <em>Weh</em> se place à la fin de la phrase, car <em>wehtun</em> est un verbe à particule séparable. Avec un nom, la personne prend le datif du nom : <em>Meiner Schwester tut der Rücken weh.</em> On peut inverser l'ordre sans changer le sens : <em>Der Kopf tut mir weh.</em> Pour poser la question : <em>Wo tut es dir weh?</em> ou <em>Was tut dir weh?</em>"
       },
       {
         contrast: "En français, la tournure courante fait de la personne le sujet : « <b>j'ai</b> mal à la tête », « <b>il a</b> mal aux oreilles ». L'allemand part de l'autre bout : la partie du corps est le sujet et la personne est au datif, un peu comme dans « ma tête me fait mal » ou « les pieds me font mal ». Les genres ne coïncident pas toujours : <em>la tête</em> est féminin, mais <em>der Kopf</em> est masculin ; <em>la jambe</em> est féminin, <em>das Bein</em> est neutre. Pour le mal de tête, l'allemand a aussi <em>Ich habe Kopfschmerzen</em>, où le sujet est la personne. Attention à <em>der Hals</em> : le mot désigne à la fois le cou et la gorge."
@@ -1607,7 +1607,7 @@ LINGUAI.addStrings("fr", {
       },
       examples: [
         { tr: "Ma tête me fait mal.", note: "mir : datif de ich ; der Kopf est le sujet" },
-        { tr: "Où as-tu mal ?", note: "es est un sujet général : Wo tut es dir weh ?" },
+        { tr: "Où as-tu mal ?", note: "es est un sujet général : Wo tut es dir weh?" },
         { tr: "Il a mal aux dents.", note: "ihm ; die Zähne est un pluriel, donc tun" },
         { tr: "Ma sœur a mal au dos.", note: "datif aussi sur le nom : meiner Schwester" },
         { tr: "Nous avons mal aux jambes.", note: "uns ; das Bein, die Beine" },
@@ -1703,7 +1703,7 @@ LINGUAI.addStrings("fr", {
         trap: "<em>Bei</em> et <em>zu</em> se construisent avec le datif. <em>Zum Arzt</em> et <em>zur Ärztin</em> sont les formes contractées habituelles ; <em>zu dem</em> et <em>zu der</em> apparaissent quand on veut mettre l'article en relief. Pour dire que tu vas chez le médecin, dis <em>Ich gehe zum Arzt</em> ; <em>beim Arzt</em> indique que tu y es. Après <em>seit</em> et <em>vor</em>, le pluriel est aussi au datif, avec le <b>-n</b> : <em>seit drei Tagen</em>, pas <em>seit drei Tage</em>."
       },
       {
-        tip: "Demande-toi d'abord : « j'y suis ou j'y vais ? ». <em>Wo ?</em> appelle <em>bei</em>, <em>wohin ?</em> appelle <em>zu</em>. Pour le rendez-vous, garde ensemble le jour et l'heure : <em>am Montag um zehn Uhr</em>."
+        tip: "Demande-toi d'abord : « j'y suis ou j'y vais ? ». <em>Wo?</em> appelle <em>bei</em>, <em>wohin?</em> appelle <em>zu</em>. Pour le rendez-vous, garde ensemble le jour et l'heure : <em>am Montag um zehn Uhr</em>."
       }
     ],
     grammar: {
@@ -1712,9 +1712,9 @@ LINGUAI.addStrings("fr", {
       table: {
         head: ["question", "forme", "exemple"],
         rows: [
-          ["Wo ? (chez une personne)", "bei + datif", "Ich bin beim Arzt."],
-          ["Wohin ? (chez une personne)", "zu + datif", "Ich gehe zum Arzt."],
-          ["Wohin ? (vers un lieu)", "zu + datif", "Ich gehe zur Apotheke."],
+          ["Wo? (chez une personne)", "bei + datif", "Ich bin beim Arzt."],
+          ["Wohin? (chez une personne)", "zu + datif", "Ich gehe zum Arzt."],
+          ["Wohin? (vers un lieu)", "zu + datif", "Ich gehe zur Apotheke."],
           ["quand (jour)", "am", "am Montag"],
           ["quand (heure)", "um", "um zehn Uhr"],
           ["depuis combien de temps", "seit + datif", "seit drei Tagen"],
@@ -1825,10 +1825,10 @@ LINGUAI.addStrings("fr", {
       },
       {
         h: "Les verbes réfléchis lexicaux",
-        p: "<em>Sich ausruhen, sich hinlegen, sich erholen, sich fühlen</em> sont réfléchis par nature : le pronom fait partie du verbe et ne signifie pas « reposer soi-même ». Le pronom est à l'<b>accusatif</b> et change avec la personne : <em>mich, dich, sich, uns, euch, sich</em>. Il se place après le verbe conjugué : <em>Ich ruhe mich aus.</em> Avec <em>sollen</em> et <em>würde</em>, il se place devant l'infinitif : <em>Du solltest dich ausruhen. Ich würde mich hinlegen.</em> Avec la forme de politesse : <em>Sie sollten sich hinlegen</em> (<em>sich</em> reste en minuscule)."
+        p: "Dans les sens travaillés ici, on apprend <em>sich ausruhen, sich hinlegen, sich erholen, sich fühlen</em> avec un pronom réfléchi à l'accusatif, qui ne signifie pas « reposer soi-même ». Le pronom change avec la personne : <em>mich, dich, sich, uns, euch, sich</em>. Il se place après le verbe conjugué : <em>Ich ruhe mich aus.</em> Avec <em>sollen</em> et <em>würde</em>, il se place devant l'infinitif : <em>Du solltest dich ausruhen. Ich würde mich hinlegen.</em> Avec la forme de politesse : <em>Sie sollten sich hinlegen</em> (<em>sich</em> reste en minuscule)."
       },
       {
-        contrast: "Le français exprime le conseil avec le conditionnel : « tu devrais te reposer », « j'irais chez le médecin ». L'allemand emploie le Konjunktiv II de <em>sollen</em> ou <em>würde</em> + infinitif, et non une terminaison propre au verbe principal. Pour les pronominaux, le pronom précède l'infinitif dans les deux langues (« te reposer », <em>dich ausruhen</em>), mais après un verbe conjugué l'ordre diffère : « je <b>me</b> repose » devient <em>Ich ruhe <b>mich</b> aus</em>. Le réfléchi allemand change aussi avec la personne (<em>mich, dich, sich, uns, euch</em>) et garde une seule forme, <em>sich</em>, à la 3e personne (singulier et pluriel) et à la forme de politesse. Les verbes ne coïncident pas toujours : <em>sich ausruhen</em> correspond à « se reposer », mais <em>sich hinlegen</em> est « s'allonger » et <em>sich erholen</em> est « se remettre, récupérer »."
+        contrast: "Le français exprime le conseil avec le conditionnel : « tu devrais te reposer », « j'irais chez le médecin ». L'allemand emploie le Konjunktiv II de <em>sollen</em> ou <em>würde</em> + infinitif : pour les verbes lexicaux de cette leçon, c'est la forme usuelle qu'on apprend (les formes synthétiques existent, mais elles sont rares). Pour les pronominaux, le pronom précède l'infinitif dans les deux langues (« te reposer », <em>dich ausruhen</em>), mais après un verbe conjugué l'ordre diffère : « je <b>me</b> repose » devient <em>Ich ruhe <b>mich</b> aus</em>. Le réfléchi allemand change aussi avec la personne (<em>mich, dich, sich, uns, euch</em>) et garde une seule forme, <em>sich</em>, à la 3e personne (singulier et pluriel) et à la forme de politesse. Les verbes ne coïncident pas toujours : <em>sich ausruhen</em> correspond à « se reposer », mais <em>sich hinlegen</em> est « s'allonger » et <em>sich erholen</em> est « se remettre, récupérer »."
       },
       {
         trap: "<em>Du solltest</em> est un conseil ; <em>du sollst</em> est une obligation ou l'ordre d'une autre personne, et sonne beaucoup plus fort. Ne rejette pas le pronom à la fin : <em>Du solltest ausruhen dich</em> est faux, l'ordre est <em>dich ausruhen</em>. Avec <em>würde</em>, l'infinitif reste à la fin : <em>Ich würde mich ausruhen</em>, pas <em>Ich würde ausruhen mich</em>. On entend aussi <em>Du solltest ausruhen</em> sans pronom, car <em>ausruhen</em> peut s'employer sans <em>sich</em> ; ici on s'exerce sur la forme avec <em>sich ausruhen</em>."

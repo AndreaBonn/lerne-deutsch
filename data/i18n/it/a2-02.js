@@ -1656,7 +1656,7 @@ LINGUAI.addStrings("it", {
       "pianificare",
       "il trasloco",
       "trasferirsi",
-      "gli studi, il corso di laurea",
+      "gli studi universitari, il corso di studi (plurale: die Studien, poco comune)",
       "studiare (all'università)",
       "il posto di lavoro",
       "il lavoro (informale)",
@@ -1684,7 +1684,7 @@ LINGUAI.addStrings("it", {
         why: "<b>zu</b> sta direttamente davanti all'infinito: <i>in Berlin zu arbeiten</i>."
       },
       {
-        q: "Completa: «Wir ___ im Sommer nach Wien ziehen.» (Futur I di werden, wir)",
+        q: "Completa con l'ausiliare werden al presente, persona wir, per formare il Futur I: «Wir ___ im Sommer nach Wien ziehen.»",
         hint: "werden, wir",
         why: "<b>Werden</b> sta in seconda posizione e l'infinito <i>ziehen</i> resta in fondo: <i>Wir werden im Sommer nach Wien ziehen.</i>"
       },
@@ -1713,7 +1713,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Dopo gli studi ho intenzione di lavorare a Berlino.",
-        why: "In <i>Studium</i> la <b>st</b> iniziale è [ʃt]; in <i>nach</i> la <b>ch</b> dopo <b>a</b> è [x]; in <i>arbeiten</i> la <b>ei</b> è [aɪ]."
+        why: "In <i>Studium</i> la <b>st</b> iniziale è [ʃt]; in <i>nach</i> la <b>ch</b> dopo <b>a</b> è [x]."
       }
     ]
   },
@@ -1809,7 +1809,7 @@ LINGUAI.addStrings("it", {
         why: "<b>Könnten Sie ...?</b>: con <i>Sie</i> la forma è <i>könnten</i>, e l'infinito <i>helfen</i> va in fondo."
       },
       {
-        q: "Completa la frase.",
+        q: "Completa la frase (usa umziehen al Perfekt).",
         tr: "L'anno scorso ci siamo trasferiti a Vienna.",
         why: "<i>Letztes Jahr sind wir nach Wien umgezogen</i>: <i>umziehen</i> forma il Perfekt con <b>sein</b>."
       },
@@ -1819,7 +1819,7 @@ LINGUAI.addStrings("it", {
         why: "<i>Als Kind war ich oft krank, und wir hatten keinen Hund</i>: Präteritum di <i>sein</i> (<i>war</i>) e di <i>haben</i> (<i>hatten</i>)."
       },
       {
-        q: "Completa la frase (secondo spazio: haben al Konjunktiv II).",
+        q: "Completa la frase (primo spazio: werden, Futur I; secondo spazio: haben al Konjunktiv II).",
         tr: "Domani ti chiamerò. Vorrei avere più tempo.",
         why: "<i>Morgen werde ich dich anrufen</i>: Futur I, con l'infinito in fondo. <i>Ich hätte gern mehr Zeit</i>: Konjunktiv II di <i>haben</i>, per un desiderio."
       },
@@ -1849,11 +1849,11 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "I pronomi: nominativo, accusativo, dativo",
-        p: "<strong>ich / mich / mir</strong>, <strong>du / dich / dir</strong>, <strong>er / ihn / ihm</strong>, <strong>sie / sie / ihr</strong>, <strong>es / es / ihm</strong>, <strong>wir / uns / uns</strong>, <strong>ihr / euch / euch</strong>, <strong>sie / sie / ihnen</strong>. L'accusativo risponde a <em>chi? che cosa?</em> (<em>Ich sehe ihn.</em>), il dativo a <em>a chi?</em> (<em>Ich helfe ihm.</em>). Con <em>wir</em> e <em>ihr</em> accusativo e dativo hanno la stessa forma: <em>Er sieht uns. Er hilft uns.</em>"
+        p: "<strong>ich / mich / mir</strong>, <strong>du / dich / dir</strong>, <strong>er / ihn / ihm</strong>, <strong>sie / sie / ihr</strong>, <strong>es / es / ihm</strong>, <strong>wir / uns / uns</strong>, <strong>ihr / euch / euch</strong>, <strong>sie / sie / ihnen</strong>. Il caso dipende dalla reggenza del verbo tedesco: <em>sehen</em> vuole l'accusativo (<em>Ich sehe ihn.</em>), <em>helfen</em> il dativo (<em>Ich helfe ihm.</em>), anche se in italiano si dice «aiuto lui». Le domande <em>wen? was?</em> (accusativo) e <em>wem?</em> (dativo) servono solo da appoggio: non ricavare il caso dalle domande italiane. Con <em>wir</em> e <em>ihr</em> accusativo e dativo hanno la stessa forma: <em>Er sieht uns. Er hilft uns.</em>"
       },
       {
         h: "L'articolo al dativo",
-        p: "Al dativo l'articolo determinativo è <strong>dem</strong> (maschile e neutro), <strong>der</strong> (femminile), <strong>den</strong> (plurale; il nome prende <strong>-n</strong>, tranne i plurali che già finiscono in -n o -en e quelli in -s): <em>dem Vermieter, der Mutter, den Kindern, den Nachbarn, den Jobs.</em> Con l'articolo indeterminativo o il possessivo: <em>einem, einer, meinem, meiner.</em> Verbi che vogliono il dativo: <strong>helfen, danken, gehören, gefallen, gratulieren</strong>. Con <strong>schenken</strong> (jemandem etwas schenken) il destinatario è al dativo e la cosa regalata all'accusativo: <em>Ich schenke meiner Mutter einen Kuchen.</em>"
+        p: "Al dativo l'articolo determinativo è <strong>dem</strong> (maschile e neutro), <strong>der</strong> (femminile), <strong>den</strong> (plurale; il nome prende <strong>-n</strong>, tranne i plurali che già finiscono in -n o -en quelli in -s e alcuni plurali di origine straniera con altre terminazioni, come <em>Praktika</em>): <em>dem Vermieter, der Mutter, den Kindern, den Nachbarn, den Jobs, den Praktika.</em> Con l'articolo indeterminativo o il possessivo: <em>einem, einer, meinem, meiner.</em> Verbi che vogliono il dativo: <strong>helfen, danken, gehören, gefallen, gratulieren</strong>. Con <strong>schenken</strong> (jemandem etwas schenken) il destinatario è al dativo e la cosa regalata all'accusativo: <em>Ich schenke meiner Mutter einen Kuchen.</em>"
       },
       {
         h: "L'ordine delle parole",
@@ -1871,7 +1871,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Accusativo, dativo e pronomi",
-      note: "<b>mich/mir, dich/dir, ihn/ihm, sie/ihr, uns/uns, euch/euch, sie/ihnen</b>. Articolo al dativo: <b>dem, der, dem, den</b>; al plurale il nome prende <b>-n</b> (<i>den Kindern</i>), tranne i plurali in -n/-en e in -s (<i>den Nachbarn, den Jobs</i>). Due pronomi: prima l'<b>accusativo</b> (<i>Ich gebe es ihm</i>).",
+      note: "<b>mich/mir, dich/dir, ihn/ihm, sie/ihr, uns/uns, euch/euch, sie/ihnen</b>. Articolo al dativo: <b>dem, der, dem, den</b>; al plurale il nome prende <b>-n</b> (<i>den Kindern</i>), tranne i plurali in -n/-en, in -s e alcuni plurali di origine straniera con altre terminazioni (<i>den Nachbarn, den Jobs, den Praktika</i>). Due pronomi: prima l'<b>accusativo</b> (<i>Ich gebe es ihm</i>).",
       table: {
         head: ["nominativo", "accusativo", "dativo"],
         rows: [

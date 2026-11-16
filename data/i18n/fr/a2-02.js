@@ -1603,21 +1603,21 @@ LINGUAI.addStrings("fr", {
     title: "J'ai l'intention de ...",
     objectives: [
       "dire ce qu'on a l'intention de faire avec Ich habe vor, ... zu ...",
-      "demander les projets de quelqu'un avec Was hast du vor ?",
+      "demander les projets de quelqu'un avec Was hast du vor?",
       "parler de l'avenir avec le présent et un indicateur de temps, ou avec werden"
     ],
     theory: [
       {
         h: "vorhaben + zu + infinitif",
-        p: "Pour dire ce qu'on a l'<strong>intention</strong> de faire, on emploie le verbe <strong>vorhaben</strong>, suivi d'un second verbe à l'infinitif avec <strong>zu</strong>, à la fin de la phrase : <em>Ich habe vor, im Sommer nach Wien zu ziehen. Hast du vor, nach dem Studium in Berlin zu arbeiten ?</em> Avec un verbe à particule séparable, <em>zu</em> se place au milieu, en un seul mot : <em>umziehen</em> → <em>Ich habe vor, im Sommer umzuziehen.</em> On écrit la virgule quand le groupe avec <em>zu</em> contient d'autres mots que l'infinitif."
+        p: "Pour dire ce qu'on a l'<strong>intention</strong> de faire, on emploie le verbe <strong>vorhaben</strong>, suivi d'un second verbe à l'infinitif avec <strong>zu</strong>, à la fin de la phrase : <em>Ich habe vor, im Sommer nach Wien zu ziehen. Hast du vor, nach dem Studium in Berlin zu arbeiten?</em> Avec un verbe à particule séparable, <em>zu</em> se place au milieu, en un seul mot : <em>umziehen</em> → <em>Ich habe vor, im Sommer umzuziehen.</em> On écrit la virgule quand le groupe avec <em>zu</em> contient d'autres mots que l'infinitif."
       },
       {
         h: "vorhaben est un verbe séparable",
-        p: "<em>Vorhaben</em> se sépare comme <em>aufstehen</em> : <strong>haben</strong> prend les terminaisons et <strong>vor</strong> va à la fin de la proposition principale : <em>Ich habe vor, ... / Wir haben vor, ...</em> Sans second verbe, on peut demander <em>Was hast du morgen vor ?</em> (qu'est-ce que tu as prévu demain ?), et la réponse peut être <em>Ich habe nichts vor</em> (je n'ai rien de prévu)."
+        p: "<em>Vorhaben</em> se sépare comme <em>aufstehen</em> : <strong>haben</strong> prend les terminaisons et <strong>vor</strong> va à la fin de la proposition principale : <em>Ich habe vor, ... / Wir haben vor, ...</em> Sans second verbe, on peut demander <em>Was hast du morgen vor?</em> (qu'est-ce que tu as prévu demain ?), et la réponse peut être <em>Ich habe nichts vor</em> (je n'ai rien de prévu)."
       },
       {
         h: "L'avenir : présent ou werden",
-        p: "Pour les projets, l'allemand emploie souvent le <strong>présent</strong> avec un indicateur de temps : <em>Nächstes Jahr ziehe ich nach Berlin.</em> Le <strong>Futur I</strong> (<em>werden</em> en deuxième position, infinitif à la fin) met en relief une décision ou une promesse : <em>Ich werde im Herbst Informatik studieren.</em> Après <em>werden</em> et après les verbes de modalité, il n'y a pas de <em>zu</em>."
+        p: "Pour les projets, l'allemand emploie souvent le <strong>présent</strong> avec un indicateur de temps : <em>Nächstes Jahr ziehe ich nach Berlin.</em> Le <strong>Futur I</strong> (<em>werden</em> en deuxième position, infinitif à la fin) exprime notamment un événement futur ou une prévision ; selon le contexte, il peut aussi servir à faire une promesse : <em>Ich werde im Herbst Informatik studieren.</em> Après <em>werden</em> et après les verbes de modalité, il n'y a pas de <em>zu</em>."
       },
       {
         contrast: "En français, on dit <em>avoir l'intention de</em> + infinitif : <em>j'ai l'intention de déménager</em>, avec <em>de</em>. L'allemand a <em>vorhaben</em> avec <em>zu</em> + infinitif, et la particule <em>vor</em> se détache et passe à la fin. L'expression de l'avenir diffère aussi : le français a le futur simple (<em>je déménagerai</em>) et le futur proche (<em>je vais déménager</em>), alors que l'allemand emploie très souvent le présent avec un indicateur de temps (<em>Nächstes Jahr ziehe ich um</em>)."
@@ -1643,7 +1643,7 @@ LINGUAI.addStrings("fr", {
       },
       examples: [
         { tr: "J'ai l'intention de déménager cet été.", note: "umziehen : zu au milieu, umzuziehen" },
-        { tr: "Tu as l'intention de travailler à Vienne après tes études ?", note: "question : Hast du vor, ... zu ... ?" },
+        { tr: "Tu as l'intention de travailler à Vienne après tes études ?", note: "question : Hast du vor, ... zu ...?" },
         { tr: "Nous avons l'intention de chercher un appartement.", note: "zu devant suchen, à la fin" },
         { tr: "Qu'est-ce que tu as prévu demain ?", note: "vorhaben sans second verbe : vor à la fin" },
         { tr: "L'année prochaine, je déménage à Berlin.", note: "présent avec indicateur de temps" },
@@ -1656,7 +1656,7 @@ LINGUAI.addStrings("fr", {
       "planifier",
       "le déménagement",
       "déménager",
-      "les études, le cursus universitaire",
+      "les études universitaires, le cursus (pluriel die Studien, rarement employé)",
       "faire des études (à l'université)",
       "le poste, l'emploi",
       "le boulot (familier)",
@@ -1713,7 +1713,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         tr: "Après mes études, j'ai l'intention de travailler à Berlin.",
-        why: "Dans <i>Studium</i>, le <b>st</b> initial est [ʃt] ; dans <i>nach</i>, le <b>ch</b> après <b>a</b> est [x] ; dans <i>arbeiten</i>, le <b>ei</b> est [aɪ]."
+        why: "Dans <i>Studium</i>, le <b>st</b> initial est [ʃt] ; dans <i>nach</i>, le <b>ch</b> après <b>a</b> est [x]."
       }
     ]
   },
@@ -1742,7 +1742,7 @@ LINGUAI.addStrings("fr", {
         trap: "On ne mélange pas les deux ordres : «Gestern ich habe gearbeitet» met le verbe en troisième position, alors que <em>Gestern habe ich gearbeitet</em> a le verbe conjugué en deuxième. On ne dit pas «Ich habe umgezogen» (calqué sur <em>j'ai déménagé</em>) : <em>umziehen</em> se comporte comme un verbe de mouvement et prend <em>sein</em>, <em>Ich bin umgezogen</em>. Et la demande est <em>Könnten Sie ...?</em>, pas «Könnte Sie ...?»."
       },
       {
-        tip: "Avant d'écrire une phrase, demande-toi : est-ce déjà arrivé (Perfekt, ou <em>war/hatte</em>), est-ce que cela arrivera (présent + temps, ou <em>werden</em>), ou est-ce une demande (Konjunktiv II) ? Puis vérifie où se trouve le verbe conjugué : en deuxième position."
+        tip: "Avant d'écrire une phrase, demande-toi : est-ce déjà arrivé (Perfekt, ou <em>war/hatte</em>), est-ce que cela arrivera (présent + temps, ou <em>werden</em>), ou est-ce une demande (Konjunktiv II) ? Puis vérifie où se trouve le verbe conjugué : en deuxième position dans une principale déclarative, en première position dans une question fermée et dans une demande (<em>Könnten Sie mir helfen?</em>)."
       }
     ],
     grammar: {
@@ -1819,7 +1819,7 @@ LINGUAI.addStrings("fr", {
         why: "<i>Als Kind war ich oft krank, und wir hatten keinen Hund</i> : Präteritum de <i>sein</i> (<i>war</i>) et de <i>haben</i> (<i>hatten</i>)."
       },
       {
-        q: "Complète la phrase (deuxième blanc : haben au Konjunktiv II).",
+        q: "Complète la phrase (premier blanc : werden, Futur I ; deuxième blanc : haben au Konjunktiv II).",
         tr: "Demain, je t'appellerai. Je voudrais avoir plus de temps.",
         why: "<i>Morgen werde ich dich anrufen</i> : Futur I, avec l'infinitif à la fin. <i>Ich hätte gern mehr Zeit</i> : Konjunktiv II de <i>haben</i>, pour un souhait."
       },
@@ -1849,11 +1849,11 @@ LINGUAI.addStrings("fr", {
     theory: [
       {
         h: "Les pronoms : nominatif, accusatif, datif",
-        p: "<strong>ich / mich / mir</strong>, <strong>du / dich / dir</strong>, <strong>er / ihn / ihm</strong>, <strong>sie / sie / ihr</strong>, <strong>es / es / ihm</strong>, <strong>wir / uns / uns</strong>, <strong>ihr / euch / euch</strong>, <strong>sie / sie / ihnen</strong>. L'accusatif répond à <em>qui ? quoi ?</em> (<em>Ich sehe ihn.</em>), le datif à <em>à qui ?</em> (<em>Ich helfe ihm.</em>). Avec <em>wir</em> et <em>ihr</em>, l'accusatif et le datif ont la même forme : <em>Er sieht uns. Er hilft uns.</em>"
+        p: "<strong>ich / mich / mir</strong>, <strong>du / dich / dir</strong>, <strong>er / ihn / ihm</strong>, <strong>sie / sie / ihr</strong>, <strong>es / es / ihm</strong>, <strong>wir / uns / uns</strong>, <strong>ihr / euch / euch</strong>, <strong>sie / sie / ihnen</strong>. L'accusatif répond à <em>wen? was?</em> (<em>Ich sehe ihn.</em>), le datif à <em>wem?</em> (<em>Ich helfe ihm.</em>). Le cas dépend de la construction du verbe allemand : <em>helfen</em> et <em>danken</em> prennent le datif, même si le français dit « aider quelqu'un ». Avec <em>wir</em> et <em>ihr</em>, l'accusatif et le datif ont la même forme : <em>Er sieht uns. Er hilft uns.</em>"
       },
       {
         h: "L'article au datif",
-        p: "Au datif, l'article défini est <strong>dem</strong> (masculin et neutre), <strong>der</strong> (féminin), <strong>den</strong> (pluriel ; le nom prend <strong>-n</strong>, sauf les pluriels qui finissent déjà en -n ou -en et ceux en -s) : <em>dem Vermieter, der Mutter, den Kindern, den Nachbarn, den Jobs.</em> Avec l'article indéfini ou le possessif : <em>einem, einer, meinem, meiner.</em> Verbes qui veulent le datif : <strong>helfen, danken, gehören, gefallen, gratulieren</strong>. Avec <strong>schenken</strong> (jemandem etwas schenken), le destinataire est au datif et la chose offerte à l'accusatif : <em>Ich schenke meiner Mutter einen Kuchen.</em>"
+        p: "Au datif, l'article défini est <strong>dem</strong> (masculin et neutre), <strong>der</strong> (féminin), <strong>den</strong> (pluriel ; le nom prend <strong>-n</strong>, sauf les pluriels qui finissent déjà en -n ou -en ceux en -s et certains pluriels d'origine étrangère à terminaison différente, comme <em>Praktika</em>) : <em>dem Vermieter, der Mutter, den Kindern, den Nachbarn, den Jobs, den Praktika.</em> Avec l'article indéfini ou le possessif : <em>einem, einer, meinem, meiner.</em> Verbes qui veulent le datif : <strong>helfen, danken, gehören, gefallen, gratulieren</strong>. Avec <strong>schenken</strong> (jemandem etwas schenken), le destinataire est au datif et la chose offerte à l'accusatif : <em>Ich schenke meiner Mutter einen Kuchen.</em>"
       },
       {
         h: "L'ordre des mots",
@@ -1871,7 +1871,7 @@ LINGUAI.addStrings("fr", {
     ],
     grammar: {
       title: "Accusatif, datif et pronoms",
-      note: "<b>mich/mir, dich/dir, ihn/ihm, sie/ihr, uns/uns, euch/euch, sie/ihnen</b>. Article au datif : <b>dem, der, dem, den</b> ; au pluriel, le nom prend <b>-n</b> (<i>den Kindern</i>), sauf les pluriels en -n/-en et en -s (<i>den Nachbarn, den Jobs</i>). Deux pronoms : l'<b>accusatif</b> d'abord (<i>Ich gebe es ihm</i>).",
+      note: "<b>mich/mir, dich/dir, ihn/ihm, sie/ihr, uns/uns, euch/euch, sie/ihnen</b>. Article au datif : <b>dem, der, dem, den</b> ; au pluriel, le nom prend <b>-n</b> (<i>den Kindern</i>), sauf les pluriels en -n/-en, en -s et certains pluriels d'origine étrangère à terminaison différente (<i>den Nachbarn, den Jobs, den Praktika</i>). Deux pronoms : l'<b>accusatif</b> d'abord (<i>Ich gebe es ihm</i>).",
       table: {
         head: ["nominatif", "accusatif", "datif"],
         rows: [

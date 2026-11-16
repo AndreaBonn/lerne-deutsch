@@ -951,7 +951,9 @@ LINGUAI.addUnits("A2", [
             dir: "toIt",
             a: [
               "Ich habe vor, im Sommer nach Wien umzuziehen",
-              "Ich habe vor, im Sommer nach Wien zu ziehen"
+              "Ich habe vor, im Sommer nach Wien zu ziehen",
+              "Ich habe vor, nach Wien im Sommer umzuziehen",
+              "Ich habe vor, nach Wien im Sommer zu ziehen"
             ]
           },
           { t: "listen", it: "Ich habe vor, im Sommer nach Wien umzuziehen. Dort werde ich Informatik studieren." },
@@ -1090,7 +1092,7 @@ LINGUAI.addUnits("A2", [
           { t: "conj", verb: "wollen", tense: "praes", persons: [0, 1, 2, 3, 4, 5] },
           { t: "conj", verb: "müssen", tense: "praet", persons: [0, 1, 2, 3, 4, 5] },
           { t: "conj", verb: "bleiben", tense: "perf", persons: [0, 1, 2, 3, 4, 5] },
-          { t: "fill", a: ["weil"] },
+          { t: "fill", a: ["weil", "da"] },
           { t: "fill", a: ["dass"] },
           { t: "fill", a: ["Als"] },
           { t: "fill", a: ["Wenn"] },
@@ -1098,7 +1100,7 @@ LINGUAI.addUnits("A2", [
           {
             t: "cloze",
             text: "Ich bleibe zu Hause, {{1}} ich krank {{2}}.",
-            gaps: [["weil"], ["bin"]]
+            gaps: [["weil", "da"], ["bin"]]
           },
           {
             t: "trans",
@@ -1107,7 +1109,13 @@ LINGUAI.addUnits("A2", [
               "Ich bleibe zu Hause, weil ich arbeiten muss",
               "Ich bleibe daheim, weil ich arbeiten muss",
               "Weil ich arbeiten muss, bleibe ich zu Hause",
-              "Weil ich arbeiten muss, bleibe ich daheim"
+              "Weil ich arbeiten muss, bleibe ich daheim",
+              "Ich bleibe zu Hause, da ich arbeiten muss",
+              "Ich bleibe daheim, da ich arbeiten muss",
+              "Da ich arbeiten muss, bleibe ich zu Hause",
+              "Da ich arbeiten muss, bleibe ich daheim",
+              "Ich bleibe zu Hause, denn ich muss arbeiten",
+              "Ich bleibe daheim, denn ich muss arbeiten"
             ]
           },
           {
@@ -1129,7 +1137,7 @@ LINGUAI.addUnits("A2", [
         { t: "fill", a: ["zu"] },
         { t: "fill", a: ["war"] },
         { t: "fill", a: ["ihm"] },
-        { t: "fill", a: ["weil"] },
+        { t: "fill", a: ["weil", "da"] },
         { t: "fill", a: ["hätte"] },
         { t: "fill", a: ["angekommen"] },
         { t: "mcq", a: 0 },

@@ -1882,7 +1882,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         tr: "Konjunktiv II czasownika sollen, wszystkie osoby.",
-        why: "<i>Sollte, solltest, sollte, sollten, solltet, sollten</i>: to formy Präteritum, ale tu służą do rady. Pierwsza i trzecia osoba liczby pojedynczej są takie same."
+        why: "<i>Sollte, solltest, sollte, sollten, solltet, sollten</i>: To formy Konjunktiv II, identyczne w zapisie z formami Präteritum; tutaj wyrażają radę. Pierwsza i trzecia osoba liczby pojedynczej są takie same."
       },
       {
         tr: "Konjunktiv II czasownika sich ausruhen z würde, wszystkie osoby.",
@@ -2038,11 +2038,11 @@ LINGUAI.addStrings("pl", {
         ]
       },
       {
-        q: "Przetłumacz (użyj dass): «Lekarz mówi, że muszę więcej spać.»",
-        why: "<i>Der Arzt sagt, dass ich mehr schlafen soll</i>: przecinek, <i>dass</i> i modalny <i>soll</i> na końcu po bezokoliczniku. Pasuje też <i>muss</i>, bo «muszę» może oddawać jedno i drugie."
+        q: "Przetłumacz (użyj dass i sollen): «Lekarz mówi, że mam więcej spać.»",
+        why: "<i>Der Arzt sagt, dass ich mehr schlafen soll</i>: przecinek, <i>dass</i> i modalny <i>soll</i> na końcu po bezokoliczniku. <i>Soll</i> oddaje polecenie przekazane przez lekarza («mam spać»); <i>muss</i> wyrażałoby konieczność («muszę spać») i to inne zdanie: kurs je przyjmuje, ale tutaj ćwiczymy <i>sollen</i>."
       },
       {
-        tr: "Lekarz mówi, że muszę więcej spać. Źle śpię, dlatego jestem często zmęczony.",
+        tr: "Lekarz mówi, że mam więcej spać. Źle śpię, dlatego jestem często zmęczony.",
         why: "W <i>schlafen</i> i <i>schlecht</i> <b>sch</b> czyta się [ʃ]; w <i>dass</i> <b>ss</b> to bezdźwięczne <b>s</b>, a <b>a</b> jest krótkie."
       },
       {

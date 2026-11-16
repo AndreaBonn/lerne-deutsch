@@ -1,7 +1,13 @@
 {
-  "bundleHash": "adf52554de59a24b076f160262791b1f2629da4f23b4164c698cb51fb22e0ff6",
-  "findings": [],
+  "bundleHash": "79683d9f13e36a967a4d742c3a50e495b189e1c598b097cdf62fa13e54723c4f",
+  "findings": [
+    {
+      "kind": "ambiguità della consegna e chiave incompleta",
+      "msg": "La seconda lacuna accetta soltanto «mich», ma la consegna non identifica chi viene invitato: anche «dich», «ihn», «uns» ed «euch», per esempio, producono frasi corrette. La traduzione contiene «me», ma la consegna non richiede esplicitamente di seguirla. Aggiungere un'indicazione come «invite me: ich → accusative» per rendere univoca la risposta prevista.",
+      "path": "merged.lessons[0].exercises[5]"
+    }
+  ],
   "lang": "en",
   "unit": "a2-u03",
-  "verdict": "pass"
+  "verdict": "fail"
 }

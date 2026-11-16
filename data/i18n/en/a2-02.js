@@ -1617,10 +1617,10 @@ LINGUAI.addStrings("en", {
       },
       {
         h: "The future: present or werden",
-        p: "For plans German often uses the <strong>present</strong> with a time expression: <em>Nächstes Jahr ziehe ich nach Berlin.</em> The <strong>Futur I</strong> (<em>werden</em> in second position, infinitive at the end) stresses a decision or a promise: <em>Ich werde im Herbst Informatik studieren.</em> After <em>werden</em> and after modal verbs there is no <em>zu</em>."
+        p: "For plans German often uses the <strong>present</strong> with a time expression: <em>Nächstes Jahr ziehe ich nach Berlin.</em> The <strong>Futur I</strong> (<em>werden</em> in second position, infinitive at the end) can express future events, predictions, intentions or promises; German also commonly uses the present tense with a future time expression: <em>Ich werde im Herbst Informatik studieren.</em> After <em>werden</em> and after modal verbs there is no <em>zu</em>."
       },
       {
-        contrast: "English says <em>I intend to move</em> or <em>I plan to move</em>, with <em>to</em> + infinitive. German has <em>vorhaben</em> with <em>zu</em> + infinitive, but the particle <em>vor</em> splits off and goes to the end of the clause, something English verbs like <em>intend</em> never do. The future also works differently: English has <em>will</em> and <em>going to</em>, but it also says <em>I'm moving to Berlin next year</em> with a present form, and German does the same far more often: <em>Nächstes Jahr ziehe ich um</em>. German <em>werden</em> is not simply <em>will</em>: it is mostly kept for decisions, promises and predictions."
+        contrast: "English says <em>I intend to move</em> or <em>I plan to move</em>, with <em>to</em> + infinitive. German has <em>vorhaben</em> with <em>zu</em> + infinitive, but the particle <em>vor</em> splits off and goes to the end of the clause, something English verbs like <em>intend</em> never do. The future also works differently: English has <em>will</em> and <em>going to</em>, but it also says <em>I'm moving to Berlin next year</em> with a present form, and German does the same far more often: <em>Nächstes Jahr ziehe ich um</em>. German <em>werden</em> is not simply <em>will</em>: Futur I can express future events, predictions, intentions or promises, and German also commonly uses the present tense with a future time expression."
       },
       {
         trap: "Don't say «Ich habe vor, umziehen» or «Ich habe vor, zu umziehen»: with a separable verb the form is <em>umzuziehen</em>. After <em>werden</em> there is no <em>zu</em>: <em>Ich werde studieren</em>, not «Ich werde zu studieren». And don't carry the English <em>to</em> over to <em>wollen</em>: <em>I want to move</em> is <em>Ich will umziehen</em>, with no <em>zu</em>, unlike <em>Ich habe vor, ... zu ...</em>."
@@ -1656,7 +1656,7 @@ LINGUAI.addStrings("en", {
       "to plan",
       "the move",
       "to move (house)",
-      "university studies, degree course",
+      "university studies, degree course (plural die Studien, rarely used; countable courses: der Studiengang, die Studiengänge)",
       "to study (at university)",
       "the job, the position",
       "the job (informal)",
@@ -1713,7 +1713,7 @@ LINGUAI.addStrings("en", {
       },
       {
         tr: "After my studies I intend to work in Berlin.",
-        why: "In <i>Studium</i> the initial <b>st</b> is [ʃt]; in <i>nach</i> the <b>ch</b> after <b>a</b> is [x]; in <i>arbeiten</i> the <b>ei</b> is [aɪ]."
+        why: "In <i>Studium</i> the initial <b>st</b> is [ʃt]; in <i>nach</i> the <b>ch</b> after <b>a</b> is [x]."
       }
     ]
   },
@@ -1742,7 +1742,7 @@ LINGUAI.addStrings("en", {
         trap: "Don't carry the English word order over: «Gestern ich habe gearbeitet» has the verb in third position, and <em>Gestern habe ich gearbeitet</em> has the conjugated verb in second. Don't say «Ich habe umgezogen»: <em>umziehen</em> behaves like a verb of motion and takes <em>sein</em>, <em>Ich bin umgezogen</em>. And the request is <em>Könnten Sie ...?</em>, not «Könnte Sie ...?»."
       },
       {
-        tip: "Before writing a sentence ask yourself: did it already happen (Perfekt, or <em>war/hatte</em>), will it happen (present + time, or <em>werden</em>), or is it a request (Konjunktiv II)? Then check where the conjugated verb is: in second position."
+        tip: "Before writing a sentence ask yourself: did it already happen (Perfekt, or <em>war/hatte</em>), will it happen (present + time, or <em>werden</em>), or is it a request (Konjunktiv II)? Then check where the conjugated verb is: second in declarative main clauses, first in yes/no questions and in requests phrased as questions (<em>Könnten Sie mir helfen?</em>)."
       }
     ],
     grammar: {
@@ -1819,7 +1819,7 @@ LINGUAI.addStrings("en", {
         why: "<i>Als Kind war ich oft krank, und wir hatten keinen Hund</i>: Präteritum of <i>sein</i> (<i>war</i>) and of <i>haben</i> (<i>hatten</i>)."
       },
       {
-        q: "Complete the sentence (second gap: haben in Konjunktiv II).",
+        q: "Complete the sentence (first gap: werden, Futur I; second gap: haben in Konjunktiv II).",
         tr: "Tomorrow I will call you. I would like to have more time.",
         why: "<i>Morgen werde ich dich anrufen</i>: Futur I, with the infinitive at the end. <i>Ich hätte gern mehr Zeit</i>: Konjunktiv II of <i>haben</i>, for a wish."
       },
@@ -1849,18 +1849,18 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "Pronouns: nominative, accusative, dative",
-        p: "<strong>ich / mich / mir</strong>, <strong>du / dich / dir</strong>, <strong>er / ihn / ihm</strong>, <strong>sie / sie / ihr</strong>, <strong>es / es / ihm</strong>, <strong>wir / uns / uns</strong>, <strong>ihr / euch / euch</strong>, <strong>sie / sie / ihnen</strong>. The accusative answers <em>whom? what?</em> (<em>Ich sehe ihn.</em>), the dative answers <em>to whom?</em> (<em>Ich helfe ihm.</em>). With <em>wir</em> and <em>ihr</em> accusative and dative have the same form: <em>Er sieht uns. Er hilft uns.</em>"
+        p: "<strong>ich / mich / mir</strong>, <strong>du / dich / dir</strong>, <strong>er / ihn / ihm</strong>, <strong>sie / sie / ihr</strong>, <strong>es / es / ihm</strong>, <strong>wir / uns / uns</strong>, <strong>ihr / euch / euch</strong>, <strong>sie / sie / ihnen</strong>. The case depends on the German verb: <em>sehen</em> takes the accusative (<em>Ich sehe ihn.</em>), <em>helfen</em> takes the dative (<em>Ich helfe ihm.</em>), although English says “Whom do I help?”. “To whom?” helps only to find the recipient with <em>geben</em> or <em>schenken</em>. With <em>wir</em> and <em>ihr</em> accusative and dative have the same form: <em>Er sieht uns. Er hilft uns.</em>"
       },
       {
         h: "The article in the dative",
-        p: "In the dative the definite article is <strong>dem</strong> (masculine and neuter), <strong>der</strong> (feminine), <strong>den</strong> (plural; the noun takes <strong>-n</strong>, except plurals that already end in -n or -en and those in -s): <em>dem Vermieter, der Mutter, den Kindern, den Nachbarn, den Jobs.</em> With the indefinite article or a possessive: <em>einem, einer, meinem, meiner.</em> Verbs that take the dative: <strong>helfen, danken, gehören, gefallen, gratulieren</strong>. With <strong>schenken</strong> (jemandem etwas schenken) the recipient is in the dative and the gift in the accusative: <em>Ich schenke meiner Mutter einen Kuchen.</em>"
+        p: "In the dative the definite article is <strong>dem</strong> (masculine and neuter), <strong>der</strong> (feminine), <strong>den</strong> (plural; the noun takes <strong>-n</strong>, except plurals that already end in -n or -en those in -s and some plurals of foreign origin with other endings, such as <em>Praktika</em>): <em>dem Vermieter, der Mutter, den Kindern, den Nachbarn, den Jobs, den Praktika.</em> With the indefinite article or a possessive: <em>einem, einer, meinem, meiner.</em> Verbs that take the dative: <strong>helfen, danken, gehören, gefallen, gratulieren</strong>. With <strong>schenken</strong> (jemandem etwas schenken) the recipient is in the dative and the gift in the accusative: <em>Ich schenke meiner Mutter einen Kuchen.</em>"
       },
       {
         h: "Word order",
         p: "With two nouns, usually the <strong>dative</strong> comes first, then the accusative: <em>Ich gebe dem Mann das Buch.</em> With two pronouns, the <strong>accusative</strong> comes first, then the dative: <em>Ich gebe es ihm.</em> With a pronoun and a noun, the pronoun comes first: <em>Ich gebe ihm das Buch. Ich gebe es dem Mann.</em>"
       },
       {
-        contrast: "English nouns have no cases, and only the pronouns show them (<em>he / him, she / her, they / them</em>). But English <em>him, her, them</em> serve as both direct and indirect object (<em>I see him, I help him, I give him the key</em>), while German splits them: <em>ihn</em> for <em>sehen</em>, <em>ihm</em> for <em>helfen</em> and <em>geben</em>. So with every verb you have to know the case, and <em>helfen</em> is not a guess you can make from <em>help</em>. In English the recipient can take <em>to</em> (<em>I give it to him</em>); German uses no preposition, the dative case alone does the job: <em>Ich gebe es ihm</em>, <em>Ich schenke meiner Mutter Blumen</em>. Only <em>uns</em> and <em>euch</em> are the same in both cases, a bit like <em>us</em>."
+        contrast: "English nouns do not distinguish nominative, accusative and dative forms; some personal pronouns distinguish subject and object forms (<em>he / him, she / her, they / them</em>). But English <em>him, her, them</em> serve as both direct and indirect object (<em>I see him, I help him, I give him the key</em>), while German splits them: <em>ihn</em> for <em>sehen</em>, <em>ihm</em> for <em>helfen</em> and <em>geben</em>. So with every verb you have to know the case, and <em>helfen</em> is not a guess you can make from <em>help</em>. In English the recipient can take <em>to</em> (<em>I give it to him</em>); German uses no preposition, the dative case alone does the job: <em>Ich gebe es ihm</em>, <em>Ich schenke meiner Mutter Blumen</em>. Only <em>uns</em> and <em>euch</em> are the same in both cases, a bit like <em>us</em>."
       },
       {
         trap: "Don't say «Ich helfe ihn» or «Ich sehe ihm»: <em>helfen</em> takes the dative (<em>ihm</em>), <em>sehen</em> the accusative (<em>ihn</em>). Don't say «Ich gebe ihm es»: with two pronouns the accusative comes first, <em>Ich gebe es ihm</em>. And after <em>mit, bei, zu</em> the article is always in the dative: <em>beim Umzug</em> (<em>bei dem Umzug</em>), <em>mit dem Auto</em>."
@@ -1871,7 +1871,7 @@ LINGUAI.addStrings("en", {
     ],
     grammar: {
       title: "Accusative, dative and pronouns",
-      note: "<b>mich/mir, dich/dir, ihn/ihm, sie/ihr, uns/uns, euch/euch, sie/ihnen</b>. Article in the dative: <b>dem, der, dem, den</b>; in the plural the noun takes <b>-n</b> (<i>den Kindern</i>), except plurals in -n/-en and in -s (<i>den Nachbarn, den Jobs</i>). Two pronouns: the <b>accusative</b> first (<i>Ich gebe es ihm</i>).",
+      note: "<b>mich/mir, dich/dir, ihn/ihm, sie/ihr, uns/uns, euch/euch, sie/ihnen</b>. Article in the dative: <b>dem, der, dem, den</b>; in the plural the noun takes <b>-n</b> (<i>den Kindern</i>), except plurals in -n/-en, in -s and some plurals of foreign origin with other endings (<i>den Nachbarn, den Jobs, den Praktika</i>). Two pronouns: the <b>accusative</b> first (<i>Ich gebe es ihm</i>).",
       table: {
         head: ["nominative", "accusative", "dative"],
         rows: [
@@ -1989,10 +1989,10 @@ LINGUAI.addStrings("en", {
       },
       {
         h: "als or wenn?",
-        p: "<strong>Als</strong> introduces a single event in the past: <em>Als ich in Wien angekommen bin, habe ich dich angerufen.</em> <strong>Wenn</strong> is for the present, the future and repeated actions: <em>Wenn ich Zeit habe, lerne ich Deutsch.</em> For a direct question you use <em>wann</em> instead: <em>Wann kommst du?</em>"
+        p: "<strong>Als</strong> is used for a single event in the past or for a non-recurring period or state in the past: <em>Als ich in Wien angekommen bin, habe ich dich angerufen. Als ich ein Kind war, hatte ich keinen Hund.</em> <strong>Wenn</strong> is for repeated events in the past, and for the present and the future: <em>Wenn ich Zeit habe, lerne ich Deutsch.</em> For a direct question you use <em>wann</em> instead: <em>Wann kommst du?</em>"
       },
       {
-        contrast: "In English the word order doesn't change in a subordinate clause: <em>I stay home because I have to work</em>. In German <em>weil ich arbeiten muss</em> sends the modal to the end. English <em>when</em> covers both <em>als</em> and <em>wenn</em>: German uses <em>als</em> for a single past event and <em>wenn</em> for the present, the future and repeated actions, and <em>wenn</em> is also <em>if</em>. English often drops <em>that</em> (<em>I hope I find a job soon</em>); with <em>dass</em> you keep it, put the verb at the end, and the comma in front is required."
+        contrast: "In English the word order doesn't change in a subordinate clause: <em>I stay home because I have to work</em>. In German <em>weil ich arbeiten muss</em> sends the modal to the end. English <em>when</em> covers both <em>als</em> and <em>wenn</em>: German uses <em>als</em> for a single past event or a non-recurring past period or state (<em>Als ich ein Kind war, ...</em>) and <em>wenn</em> for repeated past events and for the present and the future, and <em>wenn</em> is also <em>if</em>. English often drops <em>that</em> (<em>I hope I find a job soon</em>); with <em>dass</em> you keep it, put the verb at the end, and the comma in front is required."
       },
       {
         trap: "Don't write «weil ich muss arbeiten»: the modal goes to the end, <em>weil ich arbeiten muss</em>. For \"because\" there are <em>weil</em> and <em>denn</em>, but <em>denn</em> leaves the verb in second position (<em>..., denn ich muss arbeiten</em>). Don't say «wenn ich in Wien angekommen bin» for a single event in the past: that takes <em>als</em>. And <em>weil</em> is not a question word: to ask \"why\" you say <em>Warum?</em>."
@@ -2003,14 +2003,14 @@ LINGUAI.addStrings("en", {
     ],
     grammar: {
       title: "weil, dass, als, wenn",
-      note: "In the subordinate clause the conjugated verb goes <b>to the end</b>. <b>weil</b> = because, <b>dass</b> = that, <b>als</b> = when (a single event in the past), <b>wenn</b> = when or if (present, future, habit). Subordinate clause first: the main clause begins with the verb.",
+      note: "In the subordinate clause the conjugated verb goes <b>to the end</b>. <b>weil</b> = because, <b>dass</b> = that, <b>als</b> = when (a single past event, or a non-recurring past period or state), <b>wenn</b> = when or if (repeated past events, present, future). Subordinate clause first: the main clause begins with the verb.",
       table: {
         head: ["conjunction", "example", "note"],
         rows: [
           ["weil", "Ich bleibe zu Hause, weil ich arbeiten muss.", "the modal at the end"],
           ["dass", "Ich hoffe, dass ich bald eine Stelle finde.", "comma required"],
-          ["als", "Als ich in Wien angekommen bin, habe ich dich angerufen.", "a single event in the past"],
-          ["wenn", "Wenn ich Zeit habe, lerne ich Deutsch.", "present, future, habit"]
+          ["als", "Als ich in Wien angekommen bin, habe ich dich angerufen.", "a single past event or non-recurring past period or state"],
+          ["wenn", "Wenn ich Zeit habe, lerne ich Deutsch.", "repeated past events, present, future"]
         ]
       },
       examples: [
