@@ -1,5 +1,5 @@
 /* ============================================================
-   Teksty w języku ucznia (pl) do data/core/a1-02.js, jednostki a1-u04, a1-u05 i a1-u06.
+   Teksty w języku ucznia (pl) do data/core/a1-02.js, jednostki a1-u04 do a1-u07.
    Klucze wskazują id warstwy neutralnej; tablice łączą się po
    indeksie, więc ich długość musi zgadzać się z core.
    Sprawdza to scripts/parity.mjs.
@@ -1554,6 +1554,527 @@ LINGUAI.addStrings("pl", {
       {
         tr: "Proszę iść prosto, a potem w lewo.",
         why: "<i>Geradeaus</i>: <b>g</b> jest twarde, a <b>au</b> to dyftong /aʊ̯/: od <b>a</b> przechodzi się do krótkiego <b>u</b> w jednej sylabie. W <i>links</i> <b>i</b> jest krótkie."
+      }
+    ]
+  },
+  "unit:a1-u07": {
+    title: "W restauracji",
+    grammarNote: "biernik (Akkusativ) z haben i brauchen · möchte i hätte gern · einer, eins, welche · rachunek"
+  },
+  "lesson:a1-u07-l1": {
+    theme: "Rezerwacja stolika",
+    title: "Stolik dla dwojga: Ein Tisch für zwei",
+    objectives: [
+      "pytać o stolik zdaniem Haben Sie einen Tisch für zwei?",
+      "używać Akkusativu po haben, brauchen i reservieren: einen Tisch, eine Speisekarte",
+      "mówić, gdzie usiąść (drinnen, draußen) i czy miejsce jest wolne (frei)"
+    ],
+    theory: [
+      {
+        h: "Haben, brauchen, reservieren: Akkusativ",
+        p: "Po <strong>haben</strong>, <strong>brauchen</strong>, <strong>suchen</strong> i <strong>reservieren</strong> to, o co prosisz, jest dopełnieniem bliższym, więc stoi w <strong>Akkusativie</strong> (to samo co biernik; poznałeś go już w jednostce 3). Zmienia się tylko rodzaj męski: <strong>der → den</strong>, <strong>ein → einen</strong>. Rodzaj żeński, nijaki i liczba mnoga zostają takie jak w mianowniku: <em>Wir brauchen einen Tisch</em> (<em>der Tisch</em>), <em>Wir brauchen eine Speisekarte</em> (<em>die Speisekarte</em>), <em>Wir brauchen ein Messer</em> (<em>das Messer</em>). Podmiot zawsze stoi w mianowniku: <em>Der Tisch ist frei.</em>"
+      },
+      {
+        h: "Czasownik stoi na drugim miejscu, a w pytaniach na pierwszym",
+        p: "Jak zawsze odmieniony czasownik zajmuje <strong>drugie miejsce</strong> w zdaniu oznajmującym: <em>Heute Abend reserviere ich einen Tisch.</em> (jeśli zaczynasz od <em>Heute Abend</em>, podmiot przechodzi za czasownik). W pytaniach rozstrzygnięcia czasownik otwiera zdanie: <em>Haben Sie einen Tisch für zwei?</em> W kontakcie z obsługą używa się <strong>Sie</strong>: jednej formy, która obejmuje polskie „Pan”, „Pani” i „Państwo”, a czasownik stoi wtedy w 3. osobie liczby mnogiej."
+      },
+      {
+        contrast: "Po polsku biernik zmienia końcówkę rzeczownika (<em>karta → kartę</em>), a rodzajników nie ma. Po niemiecku w tych przykładach rodzajnik stoi przed rzeczownikiem, a sam rzeczownik się nie zmienia: przy rodzaju męskim zmienia się tylko rodzajnik (<em>der Tisch</em> → <em>den Tisch</em>), przy żeńskim nawet on zostaje taki sam (<em>eine Speisekarte</em>, choć po polsku „kartę”). Z „Pan/Pani” jest podobnie, ale z drobną pułapką: po polsku mówisz „Czy ma Pan stolik?” (3. osoba liczby pojedynczej), a po niemiecku <em>Haben Sie einen Tisch?</em> (3. osoba liczby <strong>mnogiej</strong>). Po polsku zaimek często się pomija (<em>rezerwuję stolik</em>), po niemiecku <em>ich</em> jest obowiązkowe. Uważaj na rodzaje, które się nie pokrywają: <em>stół</em> i <em>der Tisch</em> są męskie, ale <em>krzesło</em> jest nijakie, a <em>der Stuhl</em> męski; <em>menu</em> jest po polsku nijakie, a <em>die Speisekarte</em> żeńska. Polskie „menu” bywa też zestawem dań, a <em>das Menü</em> to zwykle zestaw kilku dań za stałą cenę, nie lista potraw (to jest <em>die Speisekarte</em>). <em>Kelner</em> to <em>der Kellner</em>, a <em>kelnerka</em> to <em>die Kellnerin</em>, z przyrostkiem <em>-in</em>."
+      },
+      {
+        trap: "Po <em>haben</em> i <em>brauchen</em> nie zostawiaj rodzaju męskiego w mianowniku: „Haben Sie ein Tisch?” jest błędne, mówi się <em>Haben Sie einen Tisch?</em>. Nie przenoś też zmiany na rzeczowniki, które nie są męskie: przy <em>die Speisekarte</em> rodzajnik się nie zmienia, więc <em>eine Speisekarte</em>, a nie „einen Speisekarte”. Pamiętaj też, że <em>für zwei</em> wystarcza, by powiedzieć „dla dwóch osób”, bez żadnego rzeczownika."
+      },
+      {
+        tip: "Naucz się całego zdania: <em>Haben Sie einen Tisch für zwei?</em>. Zmieniając liczbę (<em>für drei</em>, <em>für vier</em>) i miejsce (<em>drinnen</em>, <em>draußen</em>), masz już prawie wszystko, czego potrzeba, żeby zostać przyjętym w restauracji."
+      }
+    ],
+    grammar: {
+      title: "Akkusativ po haben, brauchen i reservieren",
+      note: "W Akkusativie zmienia się tylko rodzaj męski: <b>der → den</b>, <b>ein → einen</b>. Rodzaj żeński, nijaki i liczba mnoga zostają takie same. Czasownik stoi na drugim miejscu, a w pytaniach rozstrzygnięcia na pierwszym.",
+      table: {
+        head: ["rodzaj", "mianownik", "Akkusativ"],
+        rows: [
+          ["męski", "der Tisch / ein Tisch", "den Tisch / einen Tisch"],
+          ["żeński", "die Speisekarte / eine Speisekarte", "die Speisekarte / eine Speisekarte"],
+          ["nijaki", "das Restaurant / ein Restaurant", "das Restaurant / ein Restaurant"],
+          ["liczba mnoga", "die Tische", "die Tische"]
+        ]
+      },
+      examples: [
+        { tr: "Czy mają Państwo stolik dla dwóch osób?", note: "Haben Sie: pytanie, czasownik na pierwszym miejscu; einen: Akkusativ rodzaju męskiego" },
+        { tr: "Potrzebujemy stolika dla czterech osób.", note: "brauchen + Akkusativ" },
+        { tr: "Potrzebujemy karty dań.", note: "rodzaj żeński: eine się nie zmienia" },
+        { tr: "Dziś wieczorem rezerwuję stolik.", note: "Heute Abend otwiera zdanie: czasownik zostaje na drugim miejscu" },
+        { tr: "Stolik jest wolny.", note: "podmiot stoi w mianowniku: der Tisch ist frei" },
+        { tr: "Czy mają Państwo wolny stolik na zewnątrz?", note: "draußen: na zewnątrz; frei na końcu" }
+      ]
+    },
+    vocab: [
+      "stół, stolik",
+      "krzesło",
+      "miejsce",
+      "restauracja",
+      "osoba",
+      "kelnerka",
+      "rezerwacja",
+      "rezerwować",
+      "potrzebować",
+      "na zewnątrz",
+      "w środku",
+      "wolny"
+    ],
+    dialogue: [
+      "Dobry wieczór. Czy mają Państwo stolik dla dwóch osób?",
+      "Tak, oczywiście. W środku czy na zewnątrz?",
+      "Na zewnątrz, poproszę.",
+      "Oto stolik. Oto karta dań.",
+      "Bardzo dziękuję!"
+    ],
+    exercises: [
+      {
+        q: "Chcesz zapytać, czy jest wolny stolik. Które zdanie jest poprawne?",
+        opts: ["Haben Sie ein Tisch frei?", "Haben Sie einen Tisch frei?", "Haben Sie eine Tisch frei?"],
+        why: "<i>Der Tisch</i> jest rodzaju męskiego i po <i>haben</i> jest dopełnieniem bliższym: <b>einen Tisch</b>."
+      },
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: ["Wir brauchen eine Speisekarte.", "Wir brauchen einen Speisekarte.", "Wir brauchen ein Speisekarte."],
+        why: "<i>Die Speisekarte</i> jest rodzaju żeńskiego: w Akkusativie rodzajnik się nie zmienia, więc <b>eine</b>."
+      },
+      {
+        q: "Uzupełnij rodzajnikiem nieokreślonym: „Ich brauche ___ Tisch für zwei.” (Potrzebuję stolika dla dwóch osób.)",
+        hint: "ein-, rodzaj męski, Akkusativ",
+        why: "<i>Tisch</i> jest rodzaju męskiego, a <i>brauchen</i> wymaga Akkusativu: <b>einen</b>."
+      },
+      {
+        q: "Dopasuj każde słowo do jego znaczenia.",
+        pairs: ["kelner", "krzesło", "na zewnątrz", "rezerwować"]
+      },
+      {
+        tr: "Potrzebujemy stolika dla czterech osób.",
+        why: "Poprawnych jest kilka szyków, na przykład <i>Wir brauchen einen Tisch für vier</i>, z dopełnieniem na początku <i>Einen Tisch für vier brauchen wir</i> oraz z okolicznikiem na początku <i>Für vier brauchen wir einen Tisch</i>. Czasownik zostaje na drugim miejscu."
+      },
+      {
+        q: "Jesteś w restauracji, a kelner wita cię przy wejściu.",
+        setting: "Przy wejściu do lokalu.",
+        lines: [
+          { tr: "Dobry wieczór! Czego Państwo potrzebują?" },
+          { tr: "Poproś o stolik dla dwojga.", answerTr: "Potrzebujemy stolika dla dwóch osób." },
+          { tr: "Proszę bardzo. Oto stolik." },
+          { tr: "Podziękuj i poproś o kartę dań.", answerTr: "Dziękuję. Poproszę kartę dań." }
+        ]
+      },
+      {
+        tr: "Czy ma Pan stolik dla dwóch osób?",
+        why: "Grzecznościowe „Czy ma Pan” staje się <i>Haben Sie</i>: <i>Sie</i> to jedna forma na „Pan”, „Pani” i „Państwo”, a czasownik stoi w 3. osobie liczby mnogiej (po polsku w liczbie pojedynczej). <i>Tisch</i> jest rodzaju męskiego, więc <b>einen Tisch</b>."
+      },
+      {
+        tr: "Czy mają Państwo wolny stolik w środku dla trzech osób?",
+        why: "To pytanie rozstrzygnięcia, więc <i>haben</i> otwiera zdanie. W <i>Personen</i> litera <b>s</b> jest dźwięczna (/z/), jak polskie „z”; w <i>drinnen</i> samogłoska <b>i</b> jest krótka, a <b>nn</b> to jedna spółgłoska /n/: podwójna litera mówi tylko, że poprzedzająca samogłoska jest krótka."
+      },
+      {
+        tr: "Czy mają Państwo wolny stolik na zewnątrz?",
+        why: "<i>Draußen</i>: <b>au</b> to dyftong /aʊ̯/ (od <b>a</b> do krótkiego <b>u</b> w jednej sylabie, jak w polskim „auto”), a <b>ß</b> to bezdźwięczne „s”. W <i>frei</i> pisownia <b>ei</b> czyta się /aɪ̯/, mniej więcej jak polskie „aj”."
+      }
+    ]
+  },
+  "lesson:a1-u07-l2": {
+    theme: "Zamawianie",
+    title: "Zamawianie: Ich hätte gern das Schnitzel",
+    objectives: [
+      "zamawiać formułami ich möchte i ich hätte gern",
+      "odmieniać möchte: ich möchte, du möchtest, wir möchten",
+      "stawiać zamawiane danie w Akkusativie: den Fisch, die Suppe, das Schnitzel"
+    ],
+    theory: [
+      {
+        h: "Dwie formuły zamawiania",
+        p: "W restauracji zamawia się zwrotem <strong>ich möchte</strong> + Akkusativ (<em>Ich möchte das Schnitzel</em>) albo <strong>ich hätte gern</strong> + Akkusativ (<em>Ich hätte gern das Schnitzel</em>). Obie są formułami grzecznościowymi. <em>möchte</em> pochodzi od formy Konjunktiv II czasownika <em>mögen</em>, a <em>hätte</em> to Konjunktiv II od <em>haben</em>: na tym poziomie ucz się ich jako stałych formuł, bez tworzenia innych form tego trybu. <em>gern</em> znaczy „chętnie”, ale <em>ich hätte gern</em> tłumaczy się „poproszę” albo „chciałbym / chciałabym”, a nie dosłownie („miałbym chętnie” nie mówi się przy zamawianiu)."
+      },
+      {
+        h: "möchte jest czasownikiem modalnym, z końcówką -e",
+        p: "Jak inne czasowniki modalne, <em>möchte</em> wysyła bezokolicznik na koniec zdania (<em>Ich möchte das Schnitzel essen</em>), a bezokolicznik często się pomija, gdy sens jest jasny (<em>Ich möchte das Schnitzel</em>). W odróżnieniu od <em>kann</em>, <em>will</em> i <em>muss</em> ma w 1. i 3. osobie liczby pojedynczej końcówkę <strong>-e</strong>: <em>ich möchte</em>, <em>er möchte</em>. Pozostałe osoby: <em>du möchtest</em>, <em>wir möchten</em>, <em>ihr möchtet</em>, <em>sie/Sie möchten</em>. Zamawiane danie jest dopełnieniem bliższym, więc stoi w Akkusativie: <em>den Fisch</em>, <em>die Suppe</em>, <em>das Schnitzel</em>."
+      },
+      {
+        contrast: "Po polsku „chciałbym” i „chciałabym” zależą od płci mówiącego, a po niemiecku <em>ich möchte</em> brzmi tak samo dla mężczyzny i kobiety. Polskie „poproszę” jest formułą zamawiania, a niemieckim odpowiednikiem w tej roli jest <em>ich hätte gern</em>, więc nie szukaj tu słowa „prosić”. Uważaj na rodzaje: <em>kotlet</em> jest męski, ale <em>das Schnitzel</em> jest nijakie; <em>kurczak</em> jest męski, ale <em>das Hähnchen</em> jest nijakie; <em>ryba</em> jest żeńska, ale <em>der Fisch</em> męski; <em>sałatka</em> jest żeńska, ale <em>der Salat</em> męski; „lody” są po polsku w liczbie mnogiej, a <em>das Eis</em> to rodzaj nijaki w liczbie pojedynczej (<em>ein Eis</em>). Pamiętaj też, że <em>Schnitzel</em> to cienki kotlet, niekoniecznie panierowany: po polsku „kotlet schabowy” jest zwykle w panierce, a po niemiecku panierowana wersja to <em>paniertes Schnitzel</em>."
+      },
+      {
+        trap: "<em>Ich will das Schnitzel</em> to zdanie poprawne, ale w restauracji brzmi ostro, jak „chcę kotleta” rzucone kelnerowi: do zamawiania wybierz <em>ich möchte</em> albo <em>ich hätte gern</em>. I nie gub końcówki <strong>-e</strong>: „ich möchten” jest błędne, mówi się <em>ich möchte</em>, a w 3. osobie <em>er möchte</em> (nie „er möchtet”)."
+      },
+      {
+        tip: "Do zamawiania wystarczą ci dwa schematy: <em>Ich möchte + Akkusativ</em> i <em>Ich hätte gern + Akkusativ</em>. Dla kilku osób: <em>Wir möchten ...</em> i <em>Wir hätten gern ...</em>."
+      }
+    ],
+    grammar: {
+      title: "möchte i hätte gern",
+      note: "<b>Ich möchte</b> + Akkusativ i <b>ich hätte gern</b> + Akkusativ to formuły grzecznościowe do zamawiania. <b>möchte</b> ma końcówkę -e w 1. i 3. osobie liczby pojedynczej.",
+      table: {
+        head: ["osoba", "möchten", "hätte gern"],
+        rows: [
+          ["ich", "möchte", "hätte gern"],
+          ["du", "möchtest", "hättest gern"],
+          ["er/sie/es", "möchte", "hätte gern"],
+          ["wir", "möchten", "hätten gern"],
+          ["ihr", "möchtet", "hättet gern"],
+          ["sie/Sie", "möchten", "hätten gern"]
+        ]
+      },
+      examples: [
+        { tr: "Poproszę kotlet.", note: "möchte: formuła grzecznościowa; das Schnitzel, rodzaj nijaki" },
+        { tr: "Poproszę ser.", note: "hätte gern + Akkusativ: den Käse" },
+        { tr: "Poproszę rybę.", note: "den Fisch: rodzaj męski w Akkusativie" },
+        { tr: "Co chcieliby Państwo pić?", note: "Was na pierwszym miejscu, möchten na drugim, trinken na końcu" },
+        { tr: "Czy życzą sobie Państwo przystawki?", note: "pytanie rozstrzygnięcia: möchten na pierwszym miejscu" },
+        { tr: "Poprosimy dwie zupy.", note: "wir hätten gern: liczba mnoga" }
+      ]
+    },
+    vocab: [
+      "chciałbym, chciałabym (formuła grzecznościowa)",
+      "poproszę (w wersji z hätte gern)",
+      "cienki kotlet (paniertes Schnitzel: panierowany)",
+      "kiełbasa",
+      "ziemniak",
+      "ryż",
+      "kurczak",
+      "ser",
+      "przystawka",
+      "danie główne",
+      "deser",
+      "lody"
+    ],
+    exercises: [
+      {
+        q: "Grzecznie zamawiasz rybę. Które zdanie jest poprawne?",
+        opts: ["Ich möchte den Fisch.", "Ich möchten den Fisch.", "Ich möchte der Fisch."],
+        why: "<b>Ich möchte</b> ma końcówkę -e, a <i>der Fisch</i> w Akkusativie to <b>den Fisch</b>."
+      },
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: ["Er möchtet eine Suppe.", "Er möchte eine Suppe.", "Er möchten eine Suppe."],
+        why: "W 3. osobie liczby pojedynczej <i>möchte</i> ma końcówkę <b>-e</b> i żadnej innej: <b>er möchte</b>."
+      },
+      {
+        q: "Uzupełnij: „Ich möchte ___ Salat.” (sałatkę)",
+        hint: "der Salat, rodzajnik określony w Akkusativie",
+        why: "<i>Salat</i> jest rodzaju męskiego (choć „sałatka” jest po polsku żeńska): w Akkusativie <b>den</b>."
+      },
+      {
+        q: "Dopasuj każde danie do jego znaczenia.",
+        pairs: ["kotlet", "zupa", "ryba", "deser"]
+      },
+      {
+        q: "Uzupełnij czasownikiem möchten.",
+        tr: "Ja poproszę rybę, a ty poprosisz zupę.",
+        why: "<i>Ich möchte</i> (1. osoba, z -e) i <i>du möchtest</i> (2. osoba, z -st)."
+      },
+      {
+        tr: "Poproszę kotlet.",
+        why: "Poprawnych jest kilka szyków, na przykład <i>Ich hätte gern das Schnitzel</i>, <i>Ich hätte das Schnitzel gern</i>, z dopełnieniem na początku <i>Das Schnitzel hätte ich gern</i> oraz z <i>gern</i> na początku <i>Gern hätte ich das Schnitzel</i>. Czasownik zostaje na drugim miejscu."
+      },
+      {
+        q: "Zamawiasz w restauracji.",
+        setting: "Kelner przyjmuje zamówienie.",
+        lines: [
+          { tr: "Co podać?" },
+          { tr: "Zamów rybę grzeczną formułą.", answerTr: "Poproszę rybę." },
+          { tr: "A czy życzy sobie Pan też zupy?" },
+          { tr: "Odpowiedz twierdząco i zamów zupę.", answerTr: "Tak, chętnie. Poproszę zupę." }
+        ]
+      },
+      {
+        tr: "Poproszę tę zupę.",
+        why: "Pasuje zarówno <i>ich möchte</i>, jak i <i>ich hätte gern</i>; <i>gern</i> może też stać przy <i>möchte</i> albo za dopełnieniem, a dopełnienie może otwierać zdanie (<i>Die Suppe möchte ich</i>). <i>Suppe</i> jest rodzaju żeńskiego i w Akkusativie zostaje <i>die</i>: „tę zupę” to zupa już znana, więc rodzajnik określony."
+      },
+      {
+        tr: "Poproszę zupę i kotlet.",
+        why: "<i>möchte</i>: <b>ö</b> jest krótkie i nie ma odpowiednika w polskim, a <b>ch</b> po <b>ö</b> ma dźwięk z <i>ich</i>, łagodny i bardziej przedni niż polskie twarde „ch”; nie jest to też „sz”. W <i>Schnitzel</i> <b>sch</b> to /ʃ/ (zbliżone do polskiego „sz”), a <b>tz</b> to /ts/, mniej więcej jak polskie „c”."
+      },
+      {
+        tr: "Poproszę rybę i sałatkę.",
+        why: "<i>hätte</i>: <b>ä</b> jest krótkie i brzmi podobnie do polskiego „e”; podwójne <b>tt</b> to jedna spółgłoska /t/. W <i>gern</i> <b>g</b> czyta się twardo, a <b>r</b> może być języczkowe albo dziąsłowe (jak polskie): oba warianty są standardowe."
+      }
+    ]
+  },
+  "lesson:a1-u07-l3": {
+    theme: "Jeden, jakieś, żaden",
+    title: "Jeden, jakieś, żaden: Ich nehme zwei. Haben Sie welche?",
+    objectives: [
+      "mówić „jeden” bez powtarzania rzeczownika za pomocą einer, eine, eins",
+      "mówić „mam” i „biorę dwa” bez rzeczownika, samą liczbą albo przez welche",
+      "używać welche dla „jakichś” i keine dla „żadnego”"
+    ],
+    theory: [
+      {
+        h: "Rzeczownika już użytego się nie powtarza: einer, eine, eins",
+        p: "Żeby nie powtarzać rzeczownika, który już padł, niemiecki używa form <em>ein</em> bez rzeczownika. Zgadzają się one z rodzajem pominiętego rzeczownika: męski <strong>einer</strong> (Akkusativ <strong>einen</strong>), żeński <strong>eine</strong>, nijaki <strong>eins</strong>. <em>Möchten Sie einen Apfel? Ja, ich nehme einen.</em> (<em>der Apfel</em>) <em>Möchten Sie eine Tomate? Ja, ich nehme eine.</em> (<em>die Tomate</em>) <em>Möchten Sie ein Brötchen? Ja, ich nehme eins.</em> (<em>das Brötchen</em>). Z liczebnikiem nic więcej nie trzeba: <em>Ich nehme zwei.</em>"
+      },
+      {
+        h: "welche dla „mam”, keine dla „nie mam”",
+        p: "Gdy nie ma liczby i nie mówi się, ile, używa się <strong>welche</strong> zamiast rzeczownika: przy liczbie mnogiej (<em>Haben Sie Brötchen? Ja, wir haben welche.</em>) i przy żeńskim rzeczowniku niepoliczalnym (<em>Haben Sie Milch? Ja, wir haben welche.</em>). Przy nijakim niepoliczalnym forma to <strong>welches</strong> (<em>Haben Sie Wasser? Ja, wir haben welches.</em>), przy męskim niepoliczalnym w Akkusativie <strong>welchen</strong> (<em>Haben Sie Saft? Ja, wir haben welchen.</em>). Żeby powiedzieć, że czegoś nie ma, używa się <strong>keiner / keine / keins</strong> (męski w Akkusativie <em>keinen</em>): <em>Wir haben leider keine.</em>"
+      },
+      {
+        contrast: "Po polsku wystarcza często pominąć dopełnienie (<em>Czy mają Państwo bułki? Mamy.</em>) albo powiedzieć samą liczbę (<em>Biorę dwie.</em>). W odpowiedzi z <em>haben</em>, jak <em>Ja, wir haben welche</em>, niemiecki zwykle zostawia zaimek: potrzebne jest <em>welche</em> („mamy jakieś”) albo <em>keine</em>, a nie samo „Tak, mamy”. Polskie „jeden / jedna / jedno” zgadza się z rodzajem rzeczownika, tak samo jak <em>einer / eine / eins</em>, ale liczy się rodzaj <strong>niemiecki</strong>, a on często się nie pokrywa z polskim: <em>jabłko</em> jest nijakie, a <em>der Apfel</em> męski, więc „wezmę jedno” mówi się <em>Ich nehme einen</em>; <em>pomidor</em> jest męski, a <em>die Tomate</em> żeńska: <em>eine</em>; <em>bułka</em> jest żeńska, a <em>das Brötchen</em> nijakie: <em>eins</em>. To samo przy <em>welche</em>: <em>woda</em> jest żeńska, ale <em>das Wasser</em> nijakie, stąd <em>welches</em>; <em>mleko</em> jest nijakie, ale <em>die Milch</em> żeńska, stąd <em>welche</em>. Polskie „który / która / które” odpowiada pytającemu <em>welche</em> (<em>Welche Suppe möchten Sie?</em> to „Którą zupę?”)."
+      },
+      {
+        trap: "<em>welche</em> nie zawsze jest pytajnikiem „który / która / które” z <em>Welche Suppe möchten Sie?</em>: w <em>Haben Sie welche?</em> znaczy mniej więcej „czy mają Państwo jakieś?”. Rozróżnia je kontekst: użycie pytające każe wybierać albo wskazywać (<em>Welche möchten Sie?</em> działa też bez rzeczownika, jak „Którą Pan woli?”), użycie nieokreślone wraca do nieokreślonej ilości. I nie używaj samego <em>ein</em>: „Ich nehme ein” jest błędne, bo bez rzeczownika potrzebne są formy zaimka: <em>einen</em>, <em>eine</em> albo <em>eins</em>."
+      },
+      {
+        tip: "Żeby wybrać formę, pomyśl o rzeczowniku niemieckim, nie polskim: <em>der Apfel → einen</em>, <em>die Tomate → eine</em>, <em>das Ei → eins</em>. Jeśli masz liczbę, powiedz samą liczbę i koniec."
+      }
+    ],
+    grammar: {
+      title: "einer, eins, welche: rzeczownika się nie powtarza",
+      note: "Bez rzeczownika: męski <b>einer / einen</b>, żeński <b>eine</b>, nijaki <b>eins</b>. Z liczbą wystarcza liczba (<b>Ich nehme zwei</b>). Dla „mam” bez liczby: <b>welche</b> (liczba mnoga, żeński niepoliczalny), <b>welches</b> (nijaki niepoliczalny), <b>welchen</b> (męski niepoliczalny, Akkusativ).",
+      table: {
+        head: ["rodzaj", "z rzeczownikiem", "bez rzeczownika"],
+        rows: [
+          ["męski", "Ich nehme einen Apfel.", "Ich nehme einen."],
+          ["żeński", "Ich nehme eine Tomate.", "Ich nehme eine."],
+          ["nijaki", "Ich nehme ein Brötchen.", "Ich nehme eins."],
+          ["liczba mnoga", "Haben Sie Brötchen?", "Haben Sie welche?"]
+        ]
+      },
+      examples: [
+        { tr: "Biorę dwie.", note: "sama liczba: po niemiecku nie trzeba nic więcej" },
+        { tr: "Czy chce Pan bułkę? Tak, wezmę jedną.", note: "das Brötchen jest nijakie: eins" },
+        { tr: "Czy ma Pan/Pani jabłko? Tak, mam jedno.", note: "der Apfel jest męski: einen" },
+        { tr: "Czy chce Pan pomidor? Tak, wezmę jeden.", note: "die Tomate jest żeńska: eine" },
+        { tr: "Czy mają Państwo bułki? Tak, mamy.", note: "liczba mnoga bez liczebnika: welche" },
+        { tr: "Czy mają Państwo wodę? Tak, mamy.", note: "das Wasser jest nijakie i niepoliczalne: welches" }
+      ]
+    },
+    vocab: [
+      "jakieś, trochę (bez liczebnika i bez rzeczownika)",
+      "jeden / jedna / jedno (bez rzeczownika)",
+      "żaden / żadna / żadne (bez rzeczownika)",
+      "jajko",
+      "pomidor",
+      "ogórek",
+      "szklanka, kieliszek",
+      "butelka",
+      "porcja",
+      "widelec",
+      "łyżka",
+      "nóż"
+    ],
+    exercises: [
+      {
+        q: "„Haben Sie Brötchen?” Kelner je ma. Jak odpowiada?",
+        opts: ["Ja, wir haben welche.", "Ja, wir haben welches.", "Ja, wir haben einen."],
+        why: "<i>Brötchen</i> jest tu w liczbie mnogiej i bez liczebnika: zaimek to <b>welche</b>. <i>Welches</i> służy dla nijakiego niepoliczalnego, <i>einen</i> dla męskiego w liczbie pojedynczej."
+      },
+      {
+        q: "„Möchten Sie ein Brötchen?” Odpowiedz: „Tak, wezmę jedną.”",
+        opts: ["Ja, ich nehme ein.", "Ja, ich nehme eins.", "Ja, ich nehme einen."],
+        why: "<i>Das Brötchen</i> jest nijakie: bez rzeczownika mówi się <b>eins</b>. „Ich nehme ein” jest błędne, a <i>einen</i> jest męskie."
+      },
+      {
+        q: "Uzupełnij: „Haben Sie Wasser? Ja, wir haben ___.” (Czy mają Państwo wodę? Tak, mamy.)",
+        hint: "das Wasser, rzeczownik nijaki niepoliczalny, bez liczebnika",
+        why: "<i>Das Wasser</i> jest nijakie i niepoliczalne: zaimek to <b>welches</b>."
+      },
+      {
+        q: "Uzupełnij: „Möchten Sie eine Tomate? Ja, ich nehme ___.” (Pomidor? Tak, biorę jeden.)",
+        hint: "die Tomate jest rodzaju żeńskiego",
+        why: "<i>Pomidor</i> jest po polsku męski, ale <i>die Tomate</i> jest żeńska: „jeden” mówi się <b>eine</b>. Formę wybiera się według rodzaju rzeczownika niemieckiego."
+      },
+      {
+        q: "Dopasuj każde słowo do jego znaczenia.",
+        pairs: ["bułka", "mleko", "jajko", "butelka"]
+      },
+      {
+        q: "Uzupełnij dwa brakujące słowa: „Czy mają Państwo jabłko? Tak, mamy jedno.”",
+        tr: "Czy mają Państwo jabłko? Tak, mamy jedno.",
+        why: "<i>Der Apfel</i> jest rodzaju męskiego: po <i>haben</i> jest <b>einen Apfel</b>, a zaimek bez rzeczownika to znów <b>einen</b>. Uwaga: „jabłko” jest po polsku nijakie, a <i>der Apfel</i> męski."
+      },
+      {
+        tr: "Niestety nie mamy.",
+        why: "Poprawne są obie wersje: <i>Wir haben leider keine</i> i, z <i>leider</i> na początku, <i>Leider haben wir keine</i>. Czasownik zostaje na drugim miejscu."
+      },
+      {
+        tr: "Czy masz bułki? Tak, mam.",
+        why: "Przy <i>du</i> czasownik to <i>hast</i>. <i>Brötchen</i> jest w liczbie mnogiej i bez liczebnika, więc odpowiedź ma <b>welche</b>: po niemiecku nie można po prostu pominąć dopełnienia, jak po polsku."
+      },
+      {
+        tr: "Mamy bułki i jabłka, ale nie mamy pomidorów.",
+        why: "W <i>Äpfel</i> <b>ä</b> brzmi podobnie do polskiego „e”, a <b>pf</b> wymawia się razem: najpierw <b>p</b>, od razu po nim <b>f</b>. W <i>keine</i> pisownia <b>ei</b> czyta się /aɪ̯/."
+      },
+      {
+        tr: "Biorę dwie bułki i jedno jabłko.",
+        why: "<i>Apfel</i> jest rodzaju męskiego, więc <b>einen Apfel</b>. W <i>zwei</i> <b>z</b> to /ts/, mniej więcej jak polskie „c”, a <b>ei</b> to /aɪ̯/."
+      }
+    ]
+  },
+  "lesson:a1-u07-l4": {
+    theme: "Rachunek",
+    title: "Rachunek: Zahlen, bitte!",
+    objectives: [
+      "prosić o rachunek zwrotami Zahlen, bitte! i Können wir bitte zahlen?",
+      "odpowiadać na pytanie Zusammen oder getrennt?",
+      "podawać kwotę i zostawiać napiwek: Das macht ..., stimmt so"
+    ],
+    theory: [
+      {
+        h: "Prośba o rachunek",
+        p: "W niemieckiej restauracji płaci się zwykle przy stole, gdy kelner podchodzi, a nie przy kasie. Żeby poprosić o rachunek, mówi się <strong>Zahlen, bitte!</strong> (forma krótka), <strong>Die Rechnung, bitte.</strong> albo, dłużej, <strong>Wir möchten zahlen.</strong> lub <strong>Können wir bitte zahlen?</strong> Do kelnera mówi się <em>Sie</em>; w młodzieżowych, swobodnych lokalach zdarza się, że kelner mówi do ciebie <em>du</em>, ale jeśli nie jesteś pewien, zostań przy <em>Sie</em>."
+      },
+      {
+        h: "Zusammen oder getrennt? Kwota i napiwek",
+        p: "Kelner pyta <em>Zusammen oder getrennt?</em>: <strong>zusammen</strong> to jeden rachunek, <strong>getrennt</strong> to osobny rachunek dla każdego. Odpowiada się <em>Zusammen, bitte.</em> albo <em>Getrennt, bitte.</em> Potem pada kwota: <em>Das macht zweiunddreißig Euro.</em> Żeby zostawić napiwek (<em>das Trinkgeld</em>), podaje się kwotę, którą chcemy zapłacić, już zaokrągloną: <em>Vierunddreißig Euro, stimmt so.</em> (<em>stimmt so</em> = reszty nie trzeba). W Niemczech i Austrii płaci się w <em>Euro</em>, w Szwajcarii we <em>Franken</em> (frankach szwajcarskich). Niektóre lokale przyjmują tylko gotówkę: możesz zapytać <em>Kann ich mit Karte zahlen?</em>"
+      },
+      {
+        contrast: "<em>Getrennt</em> nie znaczy, że kwota jest dzielona po równo: każdy płaci za to, co zamówił, a kelner liczy osobny rachunek dla każdego. Polskie „Razem czy osobno?” odpowiada dokładnie <em>Zusammen oder getrennt?</em>, a „reszty nie trzeba” to <em>stimmt so</em>. Obsługa jest zwykle wliczona w cenę, ale zostawianie napiwku jest w zwyczaju: zazwyczaj zaokrągla się kwotę w górę, a w Szwajcarii napiwek jest skromniejszy. Czasownik <em>zahlen</em> nie rozróżnia aspektu: odpowiada i polskiemu „płacić”, i „zapłacić”. Uwaga na rodzaj: <em>rachunek</em> jest męski, a <em>die Rechnung</em> żeńska; <em>napiwek</em> jest męski, a <em>das Trinkgeld</em> nijaki."
+      },
+      {
+        trap: "<em>Zahlen, bitte!</em> nie zawiera <em>Sie</em>: to skrócona forma zdania „Wir möchten zahlen, bitte”. Jeśli natomiast po czasowniku stoi <em>Sie</em>, ta sama forma może być pytaniem albo zaproszeniem: <em>Zahlen Sie bar oder mit Karte?</em> (pytanie kelnera) i <em>Zahlen Sie bitte an der Kasse.</em> (zaproszenie, grzecznościowy tryb rozkazujący). Rozróżniają je kontekst, intonacja i interpunkcja. A przy <em>zahlen</em> pamiętaj, że po niemiecku używa się <em>Sie</em> z czasownikiem w liczbie mnogiej, a nie polskiego „Pan/Pani” z liczbą pojedynczą."
+      },
+      {
+        tip: "Zapamiętaj kolejność: <em>Zahlen, bitte!</em>, potem <em>Zusammen, bitte.</em> albo <em>Getrennt, bitte.</em>, na końcu kwota ze <em>stimmt so</em>."
+      }
+    ],
+    grammar: {
+      title: "Prośba o rachunek i płacenie",
+      note: "Do kelnera mówi się <b>Sie</b>. Przydatne zwroty: <b>Zahlen, bitte!</b>, <b>Die Rechnung, bitte.</b>, <b>Können wir bitte zahlen?</b>. Odpowiedzi: <b>Zusammen, bitte.</b> / <b>Getrennt, bitte.</b>. <b>stimmt so</b>: reszty nie trzeba.",
+      table: {
+        head: ["kelner mówi", "ty odpowiadasz"],
+        rows: [
+          ["Zusammen oder getrennt?", "Zusammen, bitte. / Getrennt, bitte."],
+          ["Bar oder mit Karte?", "Bar, bitte. / Mit Karte, bitte."],
+          ["Das macht zwölf Euro.", "Dreizehn Euro, stimmt so."]
+        ]
+      },
+      examples: [
+        { tr: "Poproszę rachunek!", note: "Zahlen, bitte!: forma krótka, bez Sie" },
+        { tr: "Poproszę rachunek.", note: "die Rechnung: rodzaj żeński" },
+        { tr: "Czy możemy zapłacić?", note: "können: czasownik modalny na pierwszym miejscu, zahlen na końcu" },
+        { tr: "Razem czy osobno?", note: "zusammen: jeden rachunek; getrennt: rachunek dla każdego" },
+        { tr: "To wychodzi dwanaście euro.", note: "das macht + kwota" },
+        { tr: "Trzynaście euro, reszty nie trzeba.", note: "stimmt so: reszta dla Pana" }
+      ]
+    },
+    vocab: [
+      "płacić, zapłacić",
+      "rachunek",
+      "razem",
+      "osobno (każdy płaci za siebie)",
+      "gotówką",
+      "karta (płatnicza)",
+      "napiwek",
+      "euro",
+      "frank szwajcarski",
+      "gość, klient",
+      "reszty nie trzeba",
+      "kwota"
+    ],
+    exercises: [
+      {
+        q: "Która prośba o rachunek jest najgrzeczniejsza?",
+        opts: ["Ich will die Rechnung.", "Die Rechnung, bitte.", "Gib mir die Rechnung."],
+        why: "<b>Die Rechnung, bitte.</b> jest krótkie i grzeczne. <i>Ich will ...</i> jest poprawne, ale brzmi ostro, a <i>Gib mir ...</i> to tryb rozkazujący z <i>du</i>, nie na miejscu wobec kelnera."
+      },
+      {
+        q: "Kelner pyta „Zusammen oder getrennt?”. Chcecie osobne rachunki. Co odpowiadasz?",
+        opts: ["Zusammen, bitte.", "Getrennt, bitte.", "Bar, bitte."],
+        why: "<b>Getrennt</b> znaczy osobny rachunek dla każdego. <i>Zusammen</i> to jeden rachunek, a <i>bar</i> odpowiada na inne pytanie (gotówka)."
+      },
+      {
+        q: "Uzupełnij czasownikiem machen: „Das ___ zwölf Euro.” (To wychodzi dwanaście euro.)",
+        hint: "machen, 3. osoba liczby pojedynczej",
+        why: "<i>Das macht ...</i> to formuła podawania sumy: <b>macht</b>."
+      },
+      {
+        q: "Dopasuj każde słowo do jego znaczenia.",
+        pairs: ["rachunek", "napiwek", "gotówką", "osobno (każdy płaci za siebie)"]
+      },
+      {
+        q: "Uzupełnij właściwą formą czasownika zahlen.",
+        tr: "Ja płacę gotówką, a on płaci kartą.",
+        why: "<i>Ich zahle</i> (1. osoba) i <i>er zahlt</i> (3. osoba liczby pojedynczej)."
+      },
+      {
+        tr: "Czy możemy zapłacić?",
+        why: "<i>Können wir bitte zahlen?</i>: czasownik modalny stoi na pierwszym miejscu (pytanie rozstrzygnięcia), a bezokolicznik <i>zahlen</i> na końcu. Można też powiedzieć <i>Können wir zahlen, bitte?</i> albo <i>Bitte, können wir zahlen?</i>."
+      },
+      {
+        q: "Skończyłeś jeść.",
+        setting: "Kelner podchodzi do stolika.",
+        lines: [
+          { tr: "Czy życzą sobie Państwo jeszcze czegoś?" },
+          { tr: "Odmów i poproś o rachunek.", answerTr: "Nie, dziękujemy. Chcielibyśmy zapłacić." },
+          { tr: "Oczywiście. Razem czy osobno?" },
+          { tr: "Odpowiedz: razem.", answerTr: "Razem, poproszę." },
+          { tr: "To wychodzi trzydzieści dwa euro." },
+          { tr: "Daj trzydzieści cztery euro i zostaw resztę.", answerTr: "Trzydzieści cztery euro, reszty nie trzeba." }
+        ]
+      },
+      {
+        tr: "Poproszę rachunek. Płacimy razem.",
+        why: "Rachunek zamawia się zwrotem <i>Die Rechnung, bitte</i>. W <i>Wir zahlen zusammen</i> przysłówek <i>zusammen</i> stoi za czasownikiem."
+      },
+      {
+        tr: "Przepraszam, czy możemy zapłacić?",
+        why: "<i>Entschuldigung</i>: <b>sch</b> to /ʃ/, zbliżone do polskiego „sz”. W <i>zahlen</i> <b>z</b> to /ts/, mniej więcej jak polskie „c”, a <b>ah</b> to długie <b>a</b>: <b>h</b> się nie wymawia."
+      },
+      {
+        tr: "Płacimy osobno.",
+        why: "<i>Getrennt</i>: <b>g</b> czyta się twardo, a <b>r</b> może być języczkowe albo dziąsłowe (oba warianty są standardowe). W <i>zusammen</i> <b>z</b> to /ts/, a <b>s</b> między samogłoskami jest dźwięczne."
+      }
+    ]
+  },
+  "lesson:a1-u07-test": {
+    theme: "Sprawdzian",
+    title: "Sprawdzian z jednostki 7",
+    objectives: ["sprawdzić Akkusativ w restauracji, möchte i hätte gern, einer, eins i welche, rachunek"],
+    theory: [
+      {
+        p: "Dziesięć pytań z całej jednostki. Zaliczasz przy 70%. Nie zaglądaj do lekcji, odpowiadając: jeśli czegoś nie pamiętasz, lepiej wrócić do powtórki."
+      }
+    ],
+    exercises: [
+      {
+        q: "Uzupełnij: „Haben Sie ___ Tisch für zwei?” (Czy mają Państwo stolik dla dwóch osób?)",
+        hint: "ein-, rodzaj męski, Akkusativ",
+        why: "<i>Tisch</i> jest rodzaju męskiego i po <i>haben</i> jest dopełnieniem bliższym: <b>einen</b>."
+      },
+      {
+        q: "Uzupełnij: „Ich ___ gern das Schnitzel.” (Poproszę kotlet.)",
+        hint: "haben, forma grzecznościowa używana z gern",
+        why: "Formuła to <b>ich hätte gern</b>: <i>hätte</i> to grzecznościowa forma od <i>haben</i>."
+      },
+      {
+        q: "Uzupełnij: „Haben Sie Brötchen? Ja, wir haben ___.” (Czy mają Państwo bułki? Tak, mamy.)",
+        hint: "liczba mnoga bez liczebnika",
+        why: "<i>Brötchen</i> jest w liczbie mnogiej i bez liczebnika: zaimek to <b>welche</b>."
+      },
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: ["Ich möchte der Fisch.", "Ich möchte den Fisch.", "Ich möchte die Fisch."],
+        why: "<i>Der Fisch</i> jest rodzaju męskiego i po <i>möchte</i> stoi w Akkusativie: <b>den Fisch</b>."
+      },
+      {
+        q: "„Möchten Sie ein Brötchen?” Odpowiedz: „Tak, wezmę jedną.”",
+        opts: ["Ja, ich nehme eins.", "Ja, ich nehme ein.", "Ja, ich nehme einen."],
+        why: "<i>Das Brötchen</i> jest nijakie: bez rzeczownika mówi się <b>eins</b>."
+      },
+      {
+        q: "Dopasuj każde słowo do jego znaczenia.",
+        pairs: ["płacić", "rachunek", "napiwek", "karta dań (lista potraw)"]
+      },
+      {
+        tr: "Poproszę rybę.",
+        why: "Poprawnych jest kilka szyków, na przykład <i>Ich hätte gern den Fisch</i>, <i>Ich hätte den Fisch gern</i>, <i>Den Fisch hätte ich gern</i> oraz <i>Gern hätte ich den Fisch</i>. <i>Fisch</i> jest rodzaju męskiego: <b>den</b>."
+      },
+      {
+        tr: "Poproszę stolik dla dwóch osób.",
+        why: "Pasują <i>ich möchte</i> i <i>ich hätte gern</i> z <i>einen Tisch für zwei</i>; <i>gern</i> może też stać przy <i>möchte</i>, a dopełnienie może otwierać zdanie. <i>Tisch</i> jest rodzaju męskiego: <b>einen</b>."
+      },
+      {
+        tr: "Poprosimy dwie zupy i sałatkę.",
+        why: "<i>hätten</i>: <b>ä</b> jest krótkie, podobne do polskiego „e”, a podwójne <b>tt</b> to jedna spółgłoska /t/. W <i>zwei</i> <b>z</b> to /ts/, a <b>ei</b> to /aɪ̯/."
+      },
+      {
+        tr: "Czy możemy zapłacić?",
+        why: "<i>Können</i>: <b>ö</b> jest krótkie. W <i>zahlen</i> <b>z</b> to /ts/, a <b>a</b> jest długie."
       }
     ]
   }
