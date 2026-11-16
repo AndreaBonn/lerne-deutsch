@@ -151,3 +151,26 @@ test('a selected unit cannot pass with duplicate registrations', t => {
   assert.equal(result.status, 1);
   assert.match(result.stdout, /Duplicate unit/);
 });
+
+/* The phase gate is "check:porting -- --level A1": every unit of the level,
+   every language, every review. Without the option the gate could only be
+   run unit by unit, and a level with one forgotten language passed. */
+test('--level checks every unit of the level in every language and its reviews', t => {
+  const root = fixture(t);
+  const missing = check(root, '--level', 'A1');
+  assert.equal(missing.status, 1);
+  assert.match(missing.stdout, /a1-u01 it: Missing it overlay/);
+  for (const lang of ['it', 'en', 'es', 'fr', 'pl']) {
+    put(root, `data/i18n/${lang}/a1-01.js`, `LINGUAI.addStrings('${lang}', {});`);
+    savePass(root, lang);
+  }
+  const full = check(root, '--level', 'A1');
+  assert.equal(full.status, 0, full.stdout);
+  assert.match(full.stdout, /a1-u01 pl: pass/);
+  assert.match(full.stdout, /a1-u01 review: pass/);
+  put(root, 'specs/german-course/reviews/a1-u01-fr.json', '{}');
+  assert.equal(check(root, '--level', 'A1').status, 1);
+  const unknown = check(root, '--level', 'B1');
+  assert.equal(unknown.status, 1);
+  assert.match(unknown.stdout + unknown.stderr, /B1/);
+});

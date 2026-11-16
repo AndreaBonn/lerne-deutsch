@@ -9,10 +9,12 @@ const ROOT = fileURLToPath(new URL('../', import.meta.url));
 export const LANGUAGES = ['it', 'en', 'es', 'fr', 'pl'];
 export const ADVANCED_LEVELS = ['B2', 'C1', 'C2'];
 const STAGES = ['core', ...LANGUAGES, 'audio', 'review', 'human'];
+const LEVEL_STAGES = ['core', ...LANGUAGES, 'review'];
 const EXERCISE_TOLERANCE = 0.15;
 const HELP = `Usage: node scripts/check_porting.mjs [--root <dir>] [--unit <id>]
-  [--stage core,it,en,es,fr,pl,audio,review,human] [--curriculum] [--help]
+  [--level <A1..C2>] [--stage core,it,en,es,fr,pl,audio,review,human] [--curriculum] [--help]
 Default: check core for all target units and course distribution.
+--level: every unit of the level on core, it, en, es, fr, pl and review (the phase gate).
 Language stages check overlay file existence. Review requires pass per requested language (default it).
 Human: n/a below B2; B2-C2 need <unit>-human.md with a nonempty ESITO: line after picked IDs.
 Audio: n/a (not implemented yet); explicitly requesting this stage exits 1.
@@ -122,7 +124,10 @@ function curriculumErrors(root, target) {
 function checkUnits({ root, course, target, options, stages }) {
   const output = [];
   const languages = stages.filter(stage => LANGUAGES.includes(stage));
-  const ids = options.unit ? [options.unit] : Object.keys(target.units);
+  const ids = options.unit ? [options.unit]
+    : options.level ? Object.keys(target.units).filter(id => target.units[id].level === options.level)
+      : Object.keys(target.units);
+  if (options.level && !ids.length) return [{ label: options.level, errors: [`No units for level ${options.level}`] }];
   for (const id of ids) {
     const matches = course.levels.flatMap(level => level.units.filter(unit => unit.id === id));
     if (matches.length > 1) { output.push({ label: id, errors: ['Duplicate unit IDs'] }); continue; }
@@ -133,15 +138,17 @@ function checkUnits({ root, course, target, options, stages }) {
       languages: languages.length ? languages : ['it'] };
     stages.forEach(stage => output.push({ label: `${id} ${stage}`, errors: stageErrors({ stage, context }) }));
   }
-  if (!options.unit && stages.includes('core')) output.push({ label: 'distribution', errors: distributionErrors(course, target) });
+  if (!options.unit && !options.level && stages.includes('core')) output.push({ label: 'distribution', errors: distributionErrors(course, target) });
   return output;
 }
 
 function main() {
-  const options = parseOptions({ args: process.argv.slice(2), values: ['root', 'unit', 'stage'], flags: ['curriculum', 'help'] });
+  const options = parseOptions({ args: process.argv.slice(2), values: ['root', 'unit', 'stage', 'level'], flags: ['curriculum', 'help'] });
   if (options.help) { console.log(HELP); return; }
   if (options.unit && !/^[a-c][12]-u\d+$/.test(options.unit)) throw new Error('Invalid unit ID');
-  const stages = options.stage ? options.stage.split(',') : ['core'];
+  /* --level is the phase gate: all units of the level, all explanation
+     languages and their reviews, unless --stage narrows it. */
+  const stages = options.stage ? options.stage.split(',') : options.level ? LEVEL_STAGES : ['core'];
   if (stages.some(stage => !STAGES.includes(stage))) throw new Error('Invalid stage');
   const root = resolve(options.root || ROOT);
   const target = JSON.parse(readFileSync(join(root, 'scripts/porting-target.json'), 'utf8'));
