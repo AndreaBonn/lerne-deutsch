@@ -1024,5 +1024,531 @@ LINGUAI.addStrings("en", {
         why: "In <i>muss</i> the <b>ss</b> is a voiceless <b>s</b> and the <b>u</b> is short; <i>arbeiten</i> is the infinitive at the end of the clause."
       }
     ]
+  },
+  "unit:a1-u10": {
+    title: "My weekend",
+    grammarNote: "Perfekt with haben and with sein · regular, strong and separable past participles · war and hatte as set phrases · A1 review"
+  },
+  "lesson:a1-u10-l1": {
+    theme: "The spoken past",
+    title: "I ate, I saw",
+    objectives: [
+      "form the Perfekt with haben and the past participle",
+      "recognize the regular participle (ge- ... -t) and the strong one (ge- ... -en)",
+      "say what you did yesterday or on the weekend"
+    ],
+    theory: [
+      {
+        h: "The Perfekt: the past of everyday speech",
+        p: "When you talk about something that happened, out loud, you use the <strong>Perfekt</strong>: <strong>haben</strong> in second position and the <strong>past participle</strong> at the end of the clause. <em>Ich habe gegessen</em> (“I ate”), <em>Gestern habe ich einen Film gesehen</em> (“Yesterday I saw a movie”). The participle of regular verbs is <em>ge- + stem + -t</em> (<em>machen, gemacht</em>), that of strong verbs is <em>ge- + stem + -en</em> (<em>essen, gegessen</em>)."
+      },
+      {
+        contrast: "The form looks like the English present perfect (“I have eaten”), but the use is different. In speech, German uses the Perfekt where English normally uses the simple past: <em>Gestern habe ich einen Film gesehen</em> is “Yesterday I saw a movie”, not “Yesterday I have seen a movie”. So when you want “I ate” or “I saw” in conversation, reach for the Perfekt. The participle never changes with the subject or the object, as in English: <em>Ich habe sie gesehen</em>, <em>Wir haben sie gesehen</em>."
+      },
+      {
+        trap: "In English the participle sits right after “have” and the rest follows: “I have seen a movie”. In German the participle goes <strong>at the very end</strong>, after everything else: <em>Ich habe gestern einen Film <strong>gesehen</strong></em>, not “Ich habe gesehen gestern einen Film”. You cannot always guess a strong participle from the infinitive, the way English “drink, drank, drunk” cannot be guessed either: learn it with the infinitive (<em>trinken, getrunken</em>; <em>lesen, gelesen</em>)."
+      },
+      {
+        tip: "Verbs with an inseparable prefix (<em>be-, ver-, er-, ent-</em>) and verbs ending in <em>-ieren</em> take no <em>ge-</em>: <em>besuchen, besucht</em>; <em>studieren, studiert</em>. Questions work the same way: <em>Hast du am Samstag gekocht?</em> The conjugated verb opens the question and the participle closes it. No do-support, no “did”."
+      }
+    ],
+    grammar: {
+      title: "Perfekt with haben",
+      note: "<b>haben</b> in second position + <b>past participle</b> at the end. Regular: ge- ... -t; strong: ge- ... -en; no ge- after be-, ver-, er- and with -ieren.",
+      table: {
+        head: ["type", "infinitive", "past participle"],
+        rows: [
+          ["regular: ge- ... -t", "machen, kaufen, kochen", "gemacht, gekauft, gekocht"],
+          ["strong: ge- ... -en", "essen, sehen, trinken", "gegessen, gesehen, getrunken"],
+          ["strong: ge- ... -en", "lesen, schlafen, treffen", "gelesen, geschlafen, getroffen"],
+          ["no ge-", "besuchen, studieren", "besucht, studiert"]
+        ]
+      },
+      examples: [
+        { tr: "Yesterday I saw a movie.", note: "participle at the end of the clause" },
+        { tr: "I ate pizza.", note: "essen is strong: gegessen" },
+        { tr: "We drank coffee.", note: "haben with wir: haben" },
+        { tr: "He bought a book.", note: "kaufen is regular: gekauft" },
+        { tr: "Did you cook on Saturday?", note: "question: haben comes first" },
+        { tr: "On Sunday I visited my grandmother.", note: "besuchen: no ge-" }
+      ]
+    },
+    vocab: [
+      "yesterday",
+      "the day before yesterday",
+      "to see",
+      "to do, to make (also: what did you do?)",
+      "to buy",
+      "to drink",
+      "to eat",
+      "to read",
+      "to sleep",
+      "to visit, to go and see",
+      "to meet",
+      "dinner"
+    ],
+    exercises: [
+      {
+        q: "How do you say “I ate”?",
+        opts: ["Ich habe gegessen.", "Ich habe essen.", "Ich bin gegessen."],
+        why: "<i>Essen</i> takes <b>haben</b> and the strong participle <b>gegessen</b> at the end of the clause."
+      },
+      {
+        q: "Complete: “Gestern habe ich einen Film ___.” (to see)",
+        hint: "past participle of sehen",
+        why: "<i>Sehen</i> is a strong verb: <b>gesehen</b>. The <i>h</i> is silent."
+      },
+      {
+        q: "Complete: “Wir ___ am Samstag Pizza gegessen.” (On Saturday we ate pizza.)",
+        hint: "auxiliary, first person plural",
+        why: "With <i>essen</i> the auxiliary is <b>haben</b>; with <i>wir</i> it has the same form as the infinitive."
+      },
+      {
+        q: "Complete: “Er hat ein Buch ___.” (to buy)",
+        hint: "kaufen, past participle",
+        why: "<i>Kaufen</i> is regular: ge- + stem + -t, so <b>gekauft</b>."
+      },
+      {
+        q: "Complete: “Hast du gestern Kaffee ___?” (to drink)",
+        hint: "trinken, past participle",
+        why: "<i>Trinken</i> is strong: <b>getrunken</b>."
+      },
+      {
+        q: "Match each participle with its meaning.",
+        pairs: ["seen", "eaten", "bought", "drunk"]
+      },
+      {
+        q: "Translate: “Yesterday I saw a movie.”",
+        why: "<i>Gestern habe ich einen Film gesehen</i>: after <i>gestern</i> the conjugated verb stays in second position and the subject follows it. <i>Ich habe gestern einen Film gesehen</i> is fine too."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "Yesterday I ate pizza and drank wine.",
+        why: "<i>Habe</i> is in second position; the two participles, <i>gegessen</i> and <i>getrunken</i>, close the sentence. The auxiliary is not repeated."
+      },
+      {
+        tr: "Yesterday I saw a movie and ate pizza.",
+        why: "In <i>gesehen</i> the <b>h</b> is silent and makes the <b>e</b> long; in <i>gegessen</i> the <b>ss</b> is a voiceless <b>s</b> and <i>ge-</i> is unstressed."
+      },
+      {
+        tr: "On Saturday I drank a coffee and read a book.",
+        why: "In <i>Kaffee</i> the double <b>ff</b> tells you the <b>a</b> is short; in <i>Buch</i> the <b>ch</b> after <b>u</b> is [x], a rasp in the throat like Scottish “loch”."
+      }
+    ]
+  },
+  "lesson:a1-u10-l2": {
+    theme: "Sein or haben",
+    title: "I went, I got up",
+    objectives: [
+      "choose sein or haben as the Perfekt auxiliary",
+      "form the participle of separable verbs",
+      "talk about a short trip and about your day"
+    ],
+    theory: [
+      {
+        h: "The Perfekt with sein",
+        p: "With intransitive verbs of <strong>change of place or state</strong> the auxiliary is <strong>sein</strong>: <em>fahren, gehen, kommen, fliegen, aufstehen</em>. The same goes for <em>sein, bleiben, werden, passieren</em>. <em>Ich bin nach Berlin gefahren. Wir sind früh aufgestanden. Sie ist zu Hause geblieben.</em> With most other verbs you use <em>haben</em>."
+      },
+      {
+        p: "In separable verbs the participle is one word and <em>ge-</em> goes <strong>in the middle</strong>, between the prefix and the verb: <em>aufstehen → aufgestanden, ankommen → angekommen, einkaufen → eingekauft, anrufen → angerufen</em>. The prefix no longer splits off: <em>Ich bin um sieben Uhr aufgestanden</em>, whereas the present is <em>Ich stehe um sieben Uhr auf</em>."
+      },
+      {
+        contrast: "English has only one auxiliary for the perfect, “have”, for every verb: “I have gone”, “I have stayed”, “I have eaten”. German splits the verbs in two groups, and the group with <em>sein</em> is the one you have to remember: <em>Ich bin gegangen</em>, not “Ich habe gegangen”. Think of verbs that say you moved or changed, and check each verb as you learn it: English gives you no hint, because it uses “have” for all of them."
+      },
+      {
+        trap: "A verb of motion used with a direct object in the accusative usually takes <strong>haben</strong>: <em>Ich habe das Auto gefahren</em> (“I drove the car”). A prepositional phrase does not force haben: <em>Ich bin mit dem Bus gefahren</em>, <em>Ich bin nach Wien geflogen</em>. And watch the spelling: English “got up” is two words, but the German participle is one word, <em>aufgestanden</em>, with <em>ge-</em> inserted after <em>auf-</em>."
+      },
+      {
+        tip: "If a verb has a separable prefix and a regular participle, the final <em>-t</em> stays: <em>aufräumen → aufgeräumt</em>, <em>einkaufen → eingekauft</em>. Verbs with an inseparable prefix or in <em>-ieren</em> take no <em>ge-</em>: <em>besucht, studiert</em>."
+      }
+    ],
+    grammar: {
+      title: "Perfekt with sein and the separable participle",
+      note: "<b>sein</b> with change of place or state; in separable verbs ge- goes between the prefix and the verb: auf<b>ge</b>standen.",
+      table: {
+        head: ["verb", "auxiliary", "past participle"],
+        rows: [
+          ["fahren, gehen, kommen", "sein", "gefahren, gegangen, gekommen"],
+          ["fliegen, reisen, bleiben", "sein", "geflogen, gereist, geblieben"],
+          ["aufstehen, ankommen", "sein", "aufgestanden, angekommen"],
+          ["einkaufen, anrufen", "haben", "eingekauft, angerufen"],
+          ["aufräumen, fernsehen", "haben", "aufgeräumt, ferngesehen"]
+        ]
+      },
+      examples: [
+        { tr: "I went to Berlin.", note: "change of place: sein" },
+        { tr: "We got up early.", note: "aufstehen: aufgestanden, no pronoun" },
+        { tr: "She stayed at home.", note: "bleiben: sein" },
+        { tr: "He arrived at eight.", note: "ankommen: angekommen" },
+        { tr: "Yesterday I went shopping.", note: "einkaufen: haben, not a change of place" },
+        { tr: "Did you call your mother?", note: "anrufen: angerufen with haben" }
+      ]
+    },
+    vocab: [
+      "to go by vehicle, to drive",
+      "to go (on foot, in general)",
+      "to come",
+      "to fly, to go by plane",
+      "to stay",
+      "to travel",
+      "to get up",
+      "to arrive",
+      "to go shopping",
+      "to call, to phone",
+      "to tidy up",
+      "the trip"
+    ],
+    exercises: [
+      {
+        q: "How do you say “I went to Berlin by train”?",
+        opts: [
+          "Ich bin mit dem Zug nach Berlin gefahren.",
+          "Ich habe mit dem Zug nach Berlin gefahren.",
+          "Ich bin mit dem Zug nach Berlin fahren."
+        ],
+        why: "<i>Fahren</i> expresses a change of place: auxiliary <b>sein</b> and participle <b>gefahren</b> at the end of the clause."
+      },
+      {
+        q: "How do you say “I stayed at home”?",
+        opts: ["Ich habe zu Hause geblieben.", "Ich bin zu Hause geblieben.", "Ich bin zu Hause gebleibt."],
+        why: "<i>Bleiben</i> takes <b>sein</b> and has the strong participle <b>geblieben</b>."
+      },
+      {
+        q: "How do you say “Yesterday I went shopping”?",
+        opts: ["Ich habe gestern eingekauft.", "Ich habe gestern geeinkauft.", "Ich bin gestern eingekauft."],
+        why: "<i>Einkaufen</i> is separable: <b>ein-ge-kauft</b>, with <i>haben</i>, because shopping is not a change of place."
+      },
+      {
+        q: "Which sentences are correct?",
+        opts: [
+          "Sie ist um sieben Uhr aufgestanden.",
+          "Ich habe gestern meine Mutter angerufen.",
+          "Wir haben nach Wien geflogen.",
+          "Er ist zu Hause geblieben.",
+          "Ich habe um sieben aufgestehen."
+        ],
+        why: "Sentence 3 needs <i>sein</i> (<i>Wir sind nach Wien geflogen</i>); sentence 5 has two mistakes: the auxiliary and the participle. Correct: <i>Ich bin um sieben aufgestanden</i> (<i>sein</i> and <i>aufgestanden</i>, not “habe” and “aufgestehen”)."
+      },
+      {
+        q: "Complete: “Ich ___ gestern früh aufgestanden.” (Yesterday I got up early.)",
+        hint: "auxiliary, first person singular",
+        why: "<i>Aufstehen</i> is a change of state: auxiliary <b>sein</b>, so <i>ich bin</i>."
+      },
+      {
+        q: "Complete: “Wir sind um acht Uhr ___.” (to arrive, ankommen)",
+        hint: "ankommen: ge- goes in the middle",
+        why: "<b>angekommen</b>: <i>an</i> + <i>ge</i> + <i>kommen</i>."
+      },
+      {
+        tr: "We went to Berlin.",
+        why: "<i>Wir sind nach Berlin gefahren</i>: <i>sein</i> in second position, participle at the end. <i>Nach Berlin sind wir gefahren</i> is fine too."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "On Saturday we went to Vienna by train and on Sunday we stayed at home.",
+        why: "With <i>fahren</i> and <i>bleiben</i> the auxiliary is <b>sein</b>; <i>gefahren</i> closes the first part, <i>geblieben</i> the second."
+      },
+      {
+        tr: "I got up at seven and drank a coffee.",
+        why: "In <i>aufgestanden</i> the stress falls on <b>auf</b>; in <i>Uhr</i> the <b>h</b> is silent and makes the <b>u</b> long."
+      },
+      {
+        tr: "We arrived in Vienna in the evening.",
+        why: "In <i>Wien</i> the <b>W</b> sounds like English “v” and <b>ie</b> is a long <b>i</b>; <i>angekommen</i> is stressed on <b>an</b>."
+      }
+    ]
+  },
+  "lesson:a1-u10-l3": {
+    theme: "The weekend",
+    title: "My weekend",
+    objectives: [
+      "tell about your weekend in order with zuerst, dann, danach, später",
+      "keep the verb in second position after time connectors",
+      "use war and hatte only as set phrases: Es war schön, Ich hatte Glück"
+    ],
+    theory: [
+      {
+        h: "Telling it in order",
+        p: "To tell about your weekend, line up the actions with <strong>zuerst</strong> (first), <strong>dann</strong> (then), <strong>danach</strong> (afterwards) and <strong>später</strong> (later). Each action is a Perfekt: <em>Zuerst habe ich lange geschlafen. Dann habe ich gekocht. Danach sind wir ins Kino gegangen.</em> These adverbs open the sentence and take the first position."
+      },
+      {
+        contrast: "In English “then” can sit in front of the subject without any change: “Then I cooked”. In German the conjugated verb stays in <strong>second position</strong> and the subject moves behind it: <em>Dann habe ich gekocht</em>, never “Dann ich habe gekocht”. This holds for every statement that opens with something other than the subject. And the subject cannot be dropped: <em>habe gekocht</em> on its own is not a sentence."
+      },
+      {
+        trap: "For “was” and “had” in speech you will see <strong>war</strong> and <strong>hatte</strong>, which for now you learn as set phrases: <em>Es war schön. Wie war dein Wochenende? Ich hatte Glück.</em> You do not need to do the same with other verbs: for those, keep using the Perfekt. In English “How was your weekend?” and “I had a good time” are simple past, so these set phrases will feel natural."
+      },
+      {
+        tip: "You can join two actions with <em>und</em> or <em>aber</em> without changing the structure: <em>Ich habe gekocht, und wir haben gegessen.</em> To say when, put <em>am Samstag</em> or <em>am Sonntag</em> in front: the verb stays second."
+      }
+    ],
+    grammar: {
+      title: "The story: connectors and the verb in second position",
+      note: "After <b>zuerst, dann, danach, später</b> the conjugated verb stays in second position and the subject follows it; the participle closes the sentence.",
+      table: {
+        head: ["English", "German", "example"],
+        rows: [
+          ["first, first of all", "zuerst", "Zuerst habe ich geschlafen."],
+          ["then", "dann", "Dann habe ich gekocht."],
+          ["afterwards", "danach", "Danach sind wir ins Kino gegangen."],
+          ["later", "später", "Später habe ich gelesen."],
+          ["how was it?", "Wie war ...?", "Wie war dein Wochenende?"]
+        ]
+      },
+      examples: [
+        { tr: "How was your weekend?", note: "war: set phrase" },
+        { tr: "First of all I slept for a long time.", note: "zuerst in first position, then habe and ich" },
+        { tr: "Then I cooked for my friends.", note: "dann + verb + subject" },
+        { tr: "Afterwards we went to the movies.", note: "gehen: sein" },
+        { tr: "Later I went for a walk.", note: "einen Spaziergang machen" },
+        { tr: "It was wonderful and I was lucky.", note: "war and hatte as set phrases" }
+      ]
+    },
+    vocab: [
+      "first, first of all",
+      "then",
+      "afterwards",
+      "later",
+      "the party",
+      "the walk",
+      "the museum",
+      "the gift",
+      "fantastic, wonderful",
+      "It was nice.",
+      "How was your weekend?",
+      "I was lucky."
+    ],
+    exercises: [
+      {
+        q: "How do you ask a friend how the weekend was?",
+        opts: ["Wie war dein Wochenende?", "Wie hat dein Wochenende?", "Wie bist dein Wochenende?"],
+        why: "For “was” you use <b>war</b>: <i>Wie war dein Wochenende?</i> Learn it as a set phrase."
+      },
+      {
+        q: "Which sentence is correct?",
+        opts: ["Dann ich habe einen Film gesehen.", "Dann habe ich einen Film gesehen.", "Dann habe einen Film gesehen ich."],
+        why: "After <i>dann</i> the conjugated verb stays in second position and the subject follows it: <i>Dann habe ich ...</i>; the participle closes the sentence."
+      },
+      {
+        q: "Complete: “Zuerst habe ich geschlafen, ___ habe ich gekocht.” (then, use dann)",
+        hint: "use dann",
+        why: "<b>Dann</b> opens the second sentence: verb and subject swap places, <i>habe ich</i>."
+      },
+      {
+        q: "Complete: “Wie ___ dein Wochenende?” (How was your weekend?)",
+        hint: "was: the set form",
+        why: "<b>war</b> is the set phrase for “was”: <i>Wie war dein Wochenende?</i>"
+      },
+      {
+        tr: "Afterwards I read a book.",
+        why: "<i>Danach habe ich ein Buch gelesen</i>: after <i>danach</i> verb and subject swap places. <i>Ich habe danach ein Buch gelesen</i> is fine too."
+      },
+      {
+        q: "Translate: “Then I cooked for my friends.” (use dann)",
+        why: "<i>Dann habe ich für meine Freunde gekocht</i>: <i>für</i> takes the accusative. <i>Ich habe dann für meine Freunde gekocht</i> is fine too."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "On Saturday I slept for a long time. Then I went for a walk.",
+        why: "Perfekt with <b>haben</b>: <i>habe geschlafen</i>, <i>habe ... gemacht</i>. After <i>danach</i> the subject follows the verb: <i>habe ich</i>."
+      },
+      {
+        q: "Complete the dialogue.",
+        setting: "You are talking with a friend about the weekend.",
+        lines: [
+          { tr: "Hi! How was your weekend?" },
+          { tr: "Say it was nice and that you met friends.", answerTr: "It was nice! I met friends." },
+          { tr: "And on Sunday, what did you do?" },
+          { tr: "Say that you stayed at home.", answerTr: "I stayed at home." }
+        ]
+      },
+      {
+        tr: "On Saturday I met friends, then we went to the movies.",
+        why: "In <i>getroffen</i> the double <b>ff</b> usually marks a short vowel; in <i>Kino</i> the first <b>i</b> is long."
+      },
+      {
+        tr: "It was fantastic! I danced and met friends.",
+        why: "In <i>getanzt</i> the <b>z</b> sounds like [ts], as in “pizza”; in <i>Freunde</i> the <b>eu</b> sounds like “oy” in “boy”."
+      }
+    ]
+  },
+  "lesson:a1-u10-l4": {
+    theme: "Review",
+    title: "A1 review",
+    objectives: [
+      "review the present tense, the accusative and prepositions with the dative",
+      "use the present and the Perfekt together in a few sentences",
+      "talk about a short trip to a hotel"
+    ],
+    theory: [
+      {
+        h: "Review: three things to get right",
+        p: "<strong>1.</strong> The conjugated verb stays in second position, and some strong verbs change their vowel with <em>du</em> and <em>er/sie/es</em>: <em>ich esse, du isst, er isst</em> (but <em>kommen, gehen, trinken</em> do not change). <strong>2.</strong> In the accusative only the masculine changes: <em>der Koffer → den Koffer</em>, <em>ein Koffer → einen Koffer</em>. <strong>3.</strong> After <em>mit, zu, bei, aus, von</em> you use the dative: <em>mit dem Zug, zum Strand</em> (zu dem), <em>aus Italien</em>."
+      },
+      {
+        contrast: "In English you travel “by train” and “by bus”, and German says it with <strong>mit</strong> and the dative: <em>mit dem Zug, mit dem Bus</em>. Another trap is English “at” and “to” with a person. <em>Bei</em> + dative means “at someone’s place” (<em>Ich bin bei meiner Tante</em>, “I’m at my aunt’s”), while going to someone takes <em>zu</em> + dative (<em>Ich gehe zu meiner Tante</em>, “I’m going to my aunt’s”). English “from” splits too: <em>aus</em> for origin (<em>Ich komme aus Italien</em>), <em>von</em> for a starting point."
+      },
+      {
+        trap: "English nouns have no case, so the masculine <em>den</em> will not show up unless you look for it. In the feminine and the neuter the accusative looks the same as the nominative: <em>die Fahrkarte</em>, <em>das Zimmer</em>. So <em>Ich nehme den Koffer</em> but <em>Ich nehme die Fahrkarte</em>. If you get the gender of a noun wrong, the article is wrong too: always review the noun with its article."
+      },
+      {
+        tip: "To remember the prepositions: <em>mit, zu, bei, aus, von</em> take the dative; <em>für, ohne, durch, um, gegen</em> take the accusative. Both lists are fixed, you do not have to choose each time."
+      }
+    ],
+    grammar: {
+      title: "Review: present, accusative, dative",
+      note: "Verb in second position; accusative: only the masculine changes (<b>den</b>); after <b>mit, zu, bei, aus, von</b> the dative.",
+      table: {
+        head: ["what", "rule", "example"],
+        rows: [
+          ["present tense", "verb in second position", "Ich fahre mit dem Zug."],
+          ["some strong verbs", "vowel changes with du and er/sie/es", "Du isst, er sieht."],
+          ["accusative", "der → den, ein → einen", "Wir nehmen den Koffer."],
+          ["dative with mit, zu, bei, aus, von", "dem, der, dem; zum, zur", "Wir gehen zum Hotel."],
+          ["Perfekt", "haben or sein + participle at the end", "Gestern bin ich früh aufgestanden."]
+        ]
+      },
+      examples: [
+        { tr: "I go to the beach by train.", note: "mit dem Zug, zum Strand" },
+        { tr: "We take the suitcase and the ticket.", note: "accusative: den Koffer, die Fahrkarte" },
+        { tr: "I come from Italy and I am staying at my aunt’s.", note: "aus, bei + dative" },
+        { tr: "He watches a movie and eats a pizza.", note: "sehen and essen change the vowel" },
+        { tr: "In the evening we go to the hotel.", note: "zum = zu dem" },
+        { tr: "Yesterday I got up early.", note: "Perfekt with sein" }
+      ]
+    },
+    vocab: [
+      "the trip",
+      "the suitcase",
+      "the (travel) ticket",
+      "the hotel",
+      "the room",
+      "the vacation",
+      "the sea",
+      "the beach"
+    ],
+    exercises: [
+      {
+        tr: "The present of sein, all persons.",
+        why: "<i>Bin, bist, ist, sind, seid, sind</i>: irregular forms to learn by heart. <i>Wir</i> and <i>sie/Sie</i> have the same form."
+      },
+      {
+        tr: "The present of essen, all persons.",
+        why: "<i>Essen</i> changes its vowel with <i>du</i> and <i>er</i>: <b>isst</b> for both. <i>Ich esse, wir essen, ihr esst, sie essen</i>."
+      },
+      {
+        tr: "The present of fahren, all persons.",
+        why: "<i>Fahren</i> takes an umlaut with <i>du</i> and <i>er</i>: <b>fährst</b>, <b>fährt</b>."
+      },
+      {
+        q: "Complete: “Wir fahren ___ dem Zug nach Wien.” (by)",
+        hint: "means of transport",
+        why: "<b>Mit</b> + dative: <i>mit dem Zug</i>."
+      },
+      {
+        q: "Complete: “Ich nehme ___ Koffer.” (definite article, accusative)",
+        hint: "Koffer is masculine",
+        why: "In the accusative the masculine changes: <b>den</b> Koffer."
+      },
+      {
+        q: "Complete: “Ich gehe ___ Bahnhof.” (to, with the contracted article)",
+        hint: "zu + dem",
+        why: "<b>Zum</b> = <i>zu dem</i>."
+      },
+      {
+        q: "Complete: “Er kommt ___ Italien.” (from)",
+        hint: "origin",
+        why: "For origin you use <b>aus</b> + dative."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "Yesterday I got up early and drank a coffee.",
+        why: "<i>Aufstehen</i> takes <b>sein</b> (<i>ich bin aufgestanden</i>); <i>trinken</i> takes <b>haben</b> (<i>ich habe getrunken</i>)."
+      },
+      {
+        q: "Choose the right definite article for each noun.",
+        items: ["suitcase", "trip", "hotel", "room", "beach", "ticket"]
+      },
+      {
+        tr: "We go to the beach by train.",
+        why: "<i>Wir fahren mit dem Zug zum Strand</i>: <i>mit</i> + dative, <i>zu dem</i> contracts to <i>zum</i>. Other positions of the phrase are possible, because the verb stays second."
+      },
+      {
+        tr: "I go to the beach by train and take my suitcase.",
+        why: "In <i>Strand</i> the initial <b>st</b> sounds like [ʃt], “sh” followed by a t; in <i>Koffer</i> the double <b>ff</b> usually marks a short vowel."
+      },
+      {
+        tr: "We have a room in the hotel and tomorrow we are going to the sea.",
+        why: "In <i>Zimmer</i> the <b>Z</b> sounds like [ts], as in “cats”; in <i>Meer</i> the <b>ee</b> is a long <b>e</b>."
+      }
+    ]
+  },
+  "lesson:a1-u10-test": {
+    theme: "Test",
+    title: "A1 final exam",
+    objectives: ["check the present, the Perfekt with haben and with sein, the accusative, the dative and noun gender"],
+    theory: [
+      {
+        p: "Twelve questions on the whole of A1. You pass with 70%. Do not look back at the lessons while you answer: if you do not remember something, it is better to go back and review."
+      }
+    ],
+    exercises: [
+      {
+        q: "Complete: “Ich ___ gestern Fußball gespielt.” (Yesterday I played soccer.)",
+        hint: "auxiliary, first person singular",
+        why: "<i>Spielen</i> takes <b>haben</b>: <i>ich habe gespielt</i>."
+      },
+      {
+        q: "Complete: “Am Samstag ___ wir nach Wien gefahren.” (On Saturday we went to Vienna.)",
+        hint: "auxiliary, first person plural",
+        why: "<i>Fahren</i> with a destination expresses a change of place: <b>sind</b>."
+      },
+      {
+        q: "Complete: “Wir haben einen Film ___.” (to see)",
+        hint: "past participle of sehen",
+        why: "<i>Sehen</i> is strong: <b>gesehen</b>."
+      },
+      {
+        q: "Complete: “Ich nehme ___ Kaffee.” (definite article, accusative)",
+        hint: "Kaffee is masculine",
+        why: "In the accusative the masculine changes: <b>den</b> Kaffee."
+      },
+      {
+        q: "Complete: “Ich fahre ___ dem Bus.” (by)",
+        hint: "means of transport",
+        why: "<b>Mit</b> + dative."
+      },
+      {
+        q: "Complete: “Sie ist früh ___.” (to get up, aufstehen)",
+        hint: "ge- goes in the middle",
+        why: "<b>aufgestanden</b>: <i>auf</i> + <i>ge</i> + <i>standen</i>, with <i>sein</i>."
+      },
+      {
+        q: "Which sentence is correct?",
+        opts: ["Ich habe nach Berlin gefahren.", "Ich bin nach Berlin gefahren.", "Ich bin nach Berlin gefahrt."],
+        why: "<i>Fahren</i> with a destination takes <b>sein</b> and has the strong participle <i>gefahren</i>."
+      },
+      {
+        q: "What is the past participle of “besuchen”?",
+        opts: ["gebesucht", "besucht", "besuchen"],
+        why: "<i>Be-</i> is an inseparable prefix: no <i>ge-</i>. The participle is <b>besucht</b>."
+      },
+      {
+        q: "Choose the right definite article for each noun.",
+        items: ["movie", "weekend", "party", "walk", "museum", "ticket"]
+      },
+      {
+        tr: "The Perfekt of gehen: auxiliary and participle.",
+        why: "<i>Ich bin gegangen, du bist gegangen, er ist gegangen, wir sind gegangen</i>: <i>gehen</i> takes <b>sein</b>."
+      },
+      {
+        q: "Complete the sentence (for the first part, use zuerst).",
+        tr: "First I met friends. Then we went to the movies.",
+        why: "<i>Zuerst</i> opens the sentence; <i>habe ich ... getroffen</i> with haben; <i>sind wir ... gegangen</i> with sein."
+      },
+      {
+        tr: "On the weekend I went to Vienna and visited a museum.",
+        why: "In <i>Museum</i> the stress falls on <b>se</b> and the <b>s</b> is voiced; in <i>besucht</i> the <b>ch</b> after <b>u</b> is [x]."
+      }
+    ]
   }
 });
