@@ -1,15 +1,15 @@
 {
-  "bundleHash": "e6c8fa00d62fe2948227f778131c6284936dd695dcca077f3922860dbc0db554",
+  "bundleHash": "6307270a69d03638a0b78d415e3d5014251f32d9ccd7a94590b5a7fd2d4116dd",
   "findings": [
     {
-      "kind": "progressione didattica",
-      "msg": "Il test verifica passivo, relative, Konjunktiv II e warten auf / worauf, ma nessuna delle quattro lezioni insegna questi argomenti. Inoltre non verifica direttamente la declinazione dell'aggettivo e le coppie di connettori, che costituiscono due lezioni dell'unità. Sostituire le domande estranee con esercizi sugli obiettivi effettivamente trattati oppure dichiarare esplicitamente i prerequisiti e la natura cumulativa del test.",
-      "path": "merged.test"
+      "kind": "risposte alternative mancanti",
+      "msg": "La traduzione «Anna ha detto che non ha tempo» ammette anche «Anna sagte, dass sie keine Zeit hat» e «Anna sagte, sie hat keine Zeit», ma la chiave le esclude. Aggiungerle, coerentemente con le alternative ammesse nel test, oppure richiedere esplicitamente il Perfekt nella consegna.",
+      "path": "merged.lessons[0].exercises[7].a"
     },
     {
-      "kind": "idiomaticità",
-      "msg": "«Ein großer, klarer Standpunkt» non è un esempio idiomatico per descrivere un punto di vista: groß non esprime qui una qualità chiaramente interpretabile. Sostituire con «ein klarer, gut begründeter Standpunkt», che conserva anche l'esempio di due aggettivi con la stessa desinenza.",
-      "path": "merged.lessons[3].theory[2].p"
+      "kind": "esercizio ambiguo",
+      "msg": "La consegna non specifica quale coppia usare: oltre a «zwar … aber», anche «Die Sendung ist sehr kurz, und sie ist sehr interessant» completa correttamente entrambi gli spazi. Specificare «Completa con zwar … aber» oppure fornire un vincolo che renda univoca la risposta.",
+      "path": "merged.lessons[2].exercises[5]"
     }
   ],
   "lang": "it",

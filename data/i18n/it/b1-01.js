@@ -2091,7 +2091,7 @@ LINGUAI.addStrings("it", {
         why: "<b>Als</b>: la coppia è <i>sowohl ... als auch</i>."
       },
       {
-        q: "Completa la frase: «Die Sendung ist ___ kurz, ___ sie ist sehr interessant.»",
+        q: "Completa con la coppia zwar ... aber: «Die Sendung ist ___ kurz, ___ sie ist sehr interessant.»",
         why: "<b>Zwar ... aber</b>: la prima parola ammette un fatto, la seconda introduce il contrasto."
       },
       {
@@ -2138,7 +2138,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Senza articolo",
-        p: "Senza articolo l'aggettivo porta lui il segnale di genere e caso, con le desinenze dell'articolo: <em>interessante Kommentare</em> (plurale), <em>guter Rat, gutes Wetter, gute Laune</em>. Fa eccezione il genitivo maschile e neutro, dove l'aggettivo prende <strong>-en</strong> perché il nome ha già <em>-(e)s</em>: <em>guten Weines, guten Wetters</em>. Più aggettivi prima dello stesso nome hanno di solito la stessa desinenza: <em>ein großer, klarer Standpunkt.</em>"
+        p: "Senza articolo l'aggettivo porta lui il segnale di genere e caso, con le desinenze dell'articolo: <em>interessante Kommentare</em> (plurale), <em>guter Rat, gutes Wetter, gute Laune</em>. Fa eccezione il genitivo maschile e neutro, dove l'aggettivo prende <strong>-en</strong> perché il nome ha già <em>-(e)s</em>: <em>guten Weines, guten Wetters</em>. Più aggettivi prima dello stesso nome hanno di solito la stessa desinenza: <em>ein klarer, gut begründeter Standpunkt.</em>"
       },
       {
         h: "Formule per discutere",
@@ -2250,11 +2250,11 @@ LINGUAI.addStrings("it", {
     theme: "Verifica",
     title: "Test: Opinioni e media",
     objectives: [
-      "verificare il passivo, le frasi relative, il Konjunktiv II, il Plusquamperfekt e i verbi con preposizione"
+      "verificare il discorso riferito, nachdem e bevor, zwar ... aber e sowohl ... als auch, la declinazione dell'aggettivo"
     ],
     theory: [
       {
-        p: "Dodici domande sull'intera unità e sul livello B1. Si supera con il 70%. Non riguardare le lezioni mentre rispondi: se non ricordi qualcosa, è meglio tornare a ripassare."
+        p: "Dodici domande sull'intera unità. Si supera con il 70%. Non riguardare le lezioni mentre rispondi: se non ricordi qualcosa, è meglio tornare a ripassare."
       }
     ],
     exercises: [
@@ -2263,60 +2263,64 @@ LINGUAI.addStrings("it", {
         why: "<i>War gegangen, warst gegangen, war gegangen, waren gegangen, wart gegangen, waren gegangen</i>: <i>sein</i> al Präteritum + participio II."
       },
       {
-        q: "Completa: «Der Artikel ___ gestern veröffentlicht.»",
-        hint: "passivo, werden, Präteritum",
-        why: "<b>Wurde</b>: passivo al Präteritum, <i>werden</i> + participio II."
-      },
-      {
-        q: "Completa: «Das ist der Journalist, ___ den Artikel geschrieben hat.»",
-        hint: "pronome relativo, nominativo maschile",
-        why: "<b>Der</b>: il pronome relativo è soggetto della frase relativa, maschile nominativo; il verbo <i>hat</i> sta in fondo."
-      },
-      {
-        q: "Completa con il Konjunktiv II di haben: «Wenn ich mehr Zeit ___, würde ich mehr lesen.»",
-        hint: "Konjunktiv II di haben, ich",
-        why: "<b>Hätte</b>: forma del Konjunktiv II di <i>haben</i>, nella subordinata con <i>wenn</i>."
-      },
-      {
-        q: "Completa: «Nachdem sie die Nachricht gelesen ___, rief sie an.»",
-        hint: "Plusquamperfekt, haben",
-        why: "<b>Hatte</b>: <i>nachdem</i> con la principale al Präteritum vuole il Plusquamperfekt."
-      },
-      {
-        q: "Completa: «Ich warte ___ die Nachricht.»",
-        hint: "preposizione fissa di warten",
-        why: "<b>Auf</b>: <i>warten auf</i> + accusativo."
-      },
-      {
-        q: "Completa: «Sie hat gesagt, ___ sie keine Zeit hat.»",
+        q: "Completa: «Anna hat gesagt, ___ sie keine Zeit hat.»",
         hint: "congiunzione, affermazione riferita",
         why: "<b>Dass</b>: introduce un'affermazione riferita e manda il verbo in fondo."
       },
       {
+        q: "Completa: «Nachdem sie die Nachricht gelesen ___, rief sie an.»",
+        hint: "Plusquamperfekt, haben",
+        why: "<b>Hatte</b>: <i>nachdem</i> con la principale al Präteritum (<i>rief</i>) vuole il Plusquamperfekt."
+      },
+      {
+        q: "Completa con il Präteritum di veröffentlichen: «Bevor die Zeitung den Artikel ___, prüfte die Redaktion die Quelle.»",
+        hint: "Präteritum, 3ª persona singolare",
+        why: "<b>Veröffentlichte</b>: <i>bevor</i> qui ha lo stesso tempo della principale (<i>prüfte</i>), il Präteritum. Verbo debole: tema + <i>-te</i>."
+      },
+      {
+        q: "Completa: «Die Sendung ist ___ kurz, aber sie ist sehr interessant.»",
+        hint: "primo elemento della coppia con aber",
+        why: "<b>Zwar</b>: <i>zwar ... aber</i> riconosce un punto e poi controbatte."
+      },
+      {
+        q: "Completa: «Er hört sowohl Radio ___ auch Podcasts.»",
+        hint: "secondo elemento della coppia con sowohl",
+        why: "<b>Als</b>: la coppia è <i>sowohl ... als auch</i>."
+      },
+      {
+        q: "Completa con l'aggettivo kurz: «Sie schreibt einen ___ Kommentar.»",
+        hint: "kurz, accusativo maschile dopo einen",
+        why: "<b>Kurzen</b>: all'accusativo maschile dopo <i>einen</i> l'aggettivo prende <i>-en</i>."
+      },
+      {
+        q: "Tom dice: «Ich komme morgen.» Quale frase lo riferisce senza dass?",
+        opts: [
+          "Tom hat gesagt, er kommt morgen.",
+          "Tom hat gesagt, er morgen kommt.",
+          "Tom hat gesagt, dass er kommt morgen."
+        ],
+        why: "<b>Tom hat gesagt, er kommt morgen.</b> Senza <i>dass</i> il verbo resta in seconda posizione; il verbo in fondo appartiene solo alla versione con <i>dass</i>, e con <i>dass</i> non può stare in seconda posizione."
+      },
+      {
         q: "Quale frase è corretta?",
         opts: [
-          "Das ist die Zeitung, die ich jeden Tag lese.",
-          "Das ist die Zeitung, der ich jeden Tag lese.",
-          "Das ist die Zeitung, dem ich jeden Tag lese."
+          "Das ist ein gutes Argument.",
+          "Das ist ein guter Argument.",
+          "Das ist ein gute Argument."
         ],
-        why: "<b>Die</b>: <i>Zeitung</i> è femminile e la relativa ha il complemento oggetto in accusativo. Il verbo <i>lese</i> sta in fondo."
+        why: "<b>Ein gutes Argument</b>: <i>Argument</i> è neutro e <i>ein</i> non mostra la desinenza al nominativo neutro, quindi la porta l'aggettivo: <i>-es</i>."
       },
       {
-        q: "Sul verbo «warten auf», quale domanda è corretta per «Ich warte auf den Bus»?",
-        opts: ["Worauf wartest du?", "Woran wartest du?", "Wofür wartest du?"],
-        why: "<b>Worauf</b>: <i>wo(r)</i> + la preposizione del verbo, <i>auf</i>. <i>Woran</i> e <i>wofür</i> vanno con altri verbi."
+        q: "Traduci: «Tom ha detto che ha un buon argomento.»",
+        why: "<i>Tom hat gesagt, dass er ein gutes Argument hat.</i> Va bene anche senza <i>dass</i>, con il verbo in seconda posizione, o con <i>sagte</i>. Il presente <i>hat</i> indica che il fatto vale ancora."
       },
       {
-        q: "Traduci: «Se avessi più tempo, leggerei il giornale ogni giorno.»",
-        why: "<i>Wenn ich mehr Zeit hätte, würde ich jeden Tag die Zeitung lesen.</i> Konjunktiv II con <i>wenn</i>; va bene anche <i>läse</i> o <i>Hätte ich mehr Zeit, ...</i>."
+        tr: "Anna ha raccontato che ogni mattina legge il giornale. Dopo che aveva letto il titolo, ha chiamato un'amica. L'articolo è sì lungo, ma ha un punto di vista chiaro.",
+        why: "In <i>Zeitung</i> la <b>z</b> è [ts] e la <b>ei</b> è [aɪ]; in <i>Schlagzeile</i> la <b>sch</b> è [ʃ]; in <i>Freundin</i> la <b>eu</b> è [ɔʏ]."
       },
       {
-        tr: "L'articolo è stato pubblicato ieri. Dopo che la giornalista aveva controllato la fonte, ha scritto il titolo. Aspetto la notizia che il giornalista ha promesso.",
-        why: "In <i>veröffentlicht</i> la <b>v</b> è [f] e la <b>ö</b> è arrotondata; in <i>Journalistin</i> la <b>J</b> è [ʒ]; in <i>geprüft</i> la <b>ü</b> è arrotondata; in <i>versprochen</i> la <b>v</b> è [f] e la <b>sp</b> è [ʃp]."
-      },
-      {
-        tr: "L'articolo che hai consigliato è stato pubblicato ieri.",
-        why: "In <i>empfohlen</i> la <b>pf</b> è un suono solo [pf]; in <i>wurde</i> la <b>w</b> è [v]; in <i>gestern</i> la <b>st</b> interna è [st] (la [ʃt] è all'inizio di un tema, come in <i>stehen</i>); in <i>veröffentlicht</i> la <b>v</b> è [f] e la <b>ö</b> è arrotondata."
+        tr: "Ha detto che ascolta sia la radio sia i podcast.",
+        why: "In <i>sowohl</i> la <b>w</b> è [v] e la <b>o</b> di <i>wohl</i> è lunga; in <i>Radio</i> la <b>a</b> è lunga; in <i>Podcasts</i> la <b>c</b> è [k] e la <b>ts</b> finale è [ts]."
       }
     ]
   }

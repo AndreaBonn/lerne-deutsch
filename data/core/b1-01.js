@@ -911,7 +911,9 @@ LINGUAI.addUnits("B1", [
             dir: "toIt",
             a: [
               "Anna hat gesagt, dass sie keine Zeit hat",
-              "Anna hat gesagt, sie hat keine Zeit"
+              "Anna hat gesagt, sie hat keine Zeit",
+              "Anna sagte, dass sie keine Zeit hat",
+              "Anna sagte, sie hat keine Zeit"
             ]
           },
           {
@@ -1114,35 +1116,34 @@ LINGUAI.addUnits("B1", [
     ],
     test: {
       id: "b1-u04-test",
-      tags: ["g-passiv", "g-relativsatz", "g-konjunktiv2", "g-plusquamperfekt", "g-praep-verben"],
+      tags: ["g-nebensatz-dass", "g-plusquamperfekt", "g-nebensatz-temporal", "g-konnektoren", "g-adjektivdeklination"],
       cefr: "B1",
       titleIt: "Test: Meinungen und Medien",
       exercises: [
         { t: "conj", verb: "gehen", tense: "plusq", persons: [0, 1, 2, 3, 4, 5] },
-        { t: "fill", a: ["wurde"] },
-        { t: "fill", a: ["der"] },
-        { t: "fill", a: ["hätte"] },
-        { t: "fill", a: ["hatte"] },
-        { t: "fill", a: ["auf"] },
         { t: "fill", a: ["dass"] },
+        { t: "fill", a: ["hatte"] },
+        { t: "fill", a: ["veröffentlichte"] },
+        { t: "fill", a: ["zwar"] },
+        { t: "fill", a: ["als"] },
+        { t: "fill", a: ["kurzen"] },
         { t: "mcq", a: 0 },
         { t: "mcq", a: 0 },
         {
           t: "trans",
           dir: "toIt",
           a: [
-            "Wenn ich mehr Zeit hätte, würde ich jeden Tag die Zeitung lesen",
-            "Wenn ich mehr Zeit hätte, würde ich die Zeitung jeden Tag lesen",
-            "Wenn ich mehr Zeit hätte, läse ich jeden Tag die Zeitung",
-            "Hätte ich mehr Zeit, würde ich jeden Tag die Zeitung lesen",
-            "Hätte ich mehr Zeit, würde ich die Zeitung jeden Tag lesen"
+            "Tom hat gesagt, dass er ein gutes Argument hat",
+            "Tom hat gesagt, er hat ein gutes Argument",
+            "Tom sagte, dass er ein gutes Argument hat",
+            "Tom sagte, er hat ein gutes Argument"
           ]
         },
         {
           t: "listen",
-          it: "Der Artikel wurde gestern veröffentlicht. Nachdem die Journalistin die Quelle geprüft hatte, schrieb sie die Überschrift. Ich warte auf die Nachricht, die der Journalist versprochen hat."
+          it: "Anna hat erzählt, dass sie jeden Morgen die Zeitung liest. Nachdem sie die Schlagzeile gelesen hatte, rief sie eine Freundin an. Der Artikel ist zwar lang, aber er hat einen klaren Standpunkt."
         },
-        { t: "speak", it: "Der Artikel, den du empfohlen hast, wurde gestern veröffentlicht." }
+        { t: "speak", it: "Er hat gesagt, dass er sowohl Radio als auch Podcasts hört." }
       ]
     }
   }
