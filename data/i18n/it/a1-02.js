@@ -558,7 +558,7 @@ LINGUAI.addStrings("it", {
         trap: "Non dire «Ich aufstehe um sieben»: il prefisso non resta attaccato al verbo coniugato. E non dimenticarlo in fondo: «Ich stehe um sieben Uhr» senza <em>auf</em> è un'altra frase e non vuol dire «mi alzo». Attenzione anche ai prefissi che <strong>non</strong> si staccano mai: <em>be-</em>, <em>ver-</em>, <em>er-</em> (<em>besuchen</em> → <em>Ich besuche dich</em>, <em>verstehen</em> → <em>Ich verstehe das</em>). Il prefisso separabile è quello accentato (<em>AUFstehen</em>), quello inseparabile no (<em>beSUchen</em>)."
       },
       {
-        tip: "Scrivi cinque frasi sulla tua mattina, ognuna con un verbo separabile diverso, e controlla che il prefisso sia sempre l'ultima parola: <em>Ich wache auf. Ich stehe auf. Ich dusche. Ich frühstücke. Ich kaufe ein.</em> Poi aggiungi <em>um</em> + ora a due di esse."
+        tip: "Scrivi cinque frasi con verbi separabili diversi e controlla che il prefisso sia sempre l'ultima parola: <em>Ich wache auf. Ich stehe auf. Ich kaufe ein. Ich sehe fern. Ich schlafe ein.</em> Poi aggiungi <em>um</em> + ora a due di esse."
       }
     ],
     grammar: {
@@ -637,7 +637,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Mi alzo alle sette e faccio colazione alle otto.",
-        why: "<i>Auf</i> si legge con il dittongo <b>au</b> (come «ao»). In <i>frühstücke</i> la <b>ü</b> è una «u» con le labbra arrotondate e la lingua avanti, come per dire «i»; la <b>st</b> si legge «scht»."
+        why: "<i>Auf</i> ha il dittongo /aʊ̯/, scritto «au»: uno scivolamento da «a» a una «u» breve nella stessa sillaba. In <i>frühstücke</i> la <b>ü</b> è una «u» con le labbra arrotondate e la lingua avanti, come per dire «i»; la <b>st</b> si legge «scht»."
       },
       {
         tr: "Il sabato facciamo la spesa.",
@@ -663,7 +663,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "um, am, von ... bis",
-        p: "Con l'ora precisa si usa <strong>um</strong>: <em>Der Film beginnt um acht Uhr</em> (alle otto). Con i giorni e le parti della giornata si usa <strong>am</strong>: <em>am Montag</em>, <em>am Samstag</em>, <em>am Abend</em>. Con i mesi e le stagioni <strong>im</strong>: <em>im Mai</em>, <em>im Sommer</em>. Per un intervallo, <strong>von ... bis</strong>: <em>von Montag bis Freitag</em>, <em>von acht bis vier</em>. I giorni: <em>Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag</em>."
+        p: "Con l'ora precisa si usa <strong>um</strong>: <em>Der Film beginnt um acht Uhr</em> (alle otto). Con i giorni e le parti della giornata si usa <strong>am</strong>: <em>am Montag</em>, <em>am Samstag</em>, <em>am Morgen</em>, <em>am Nachmittag</em>, <em>am Abend</em>; unica eccezione, <em>in der Nacht</em>. Con i mesi e le stagioni <strong>im</strong>: <em>im Mai</em>, <em>im Sommer</em>. Per un intervallo, <strong>von ... bis</strong>: <em>von Montag bis Freitag</em>, <em>von acht bis vier</em>. I giorni: <em>Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag</em>."
       },
       {
         trap: "In tedesco tutti i giorni sono maschili (<em>der Montag</em>, <em>der Sonntag</em>) e si scrivono con la maiuscola, come ogni nome. In italiano sono minuscoli e la domenica è femminile (<em>la domenica</em>), mentre il sabato e gli altri giorni sono maschili. Non tradurre «alle sette» con <em>am</em>: per l'ora serve <em>um</em>, per il giorno <em>am</em>. E non dire «um Montag»: lunedì è un giorno, quindi <em>am Montag</em>."
@@ -674,7 +674,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "L'ora e le preposizioni di tempo",
-      note: "<b>um</b> + ora, <b>am</b> + giorno o parte del giorno, <b>im</b> + mese o stagione. <b>Halb acht</b> = 7:30.",
+      note: "<b>um</b> + ora, <b>am</b> + giorno o parte del giorno (<em>am Morgen, am Nachmittag, am Abend</em>; eccezione: <em>in der Nacht</em>), <b>im</b> + mese o stagione. <b>Halb acht</b> = 7:30.",
       table: {
         head: ["ora", "si dice"],
         rows: [
@@ -772,10 +772,10 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "La coniugazione",
-        p: "I tre verbi hanno una coniugazione propria: la prima e la terza persona singolare sono uguali e <strong>senza desinenza</strong>. <em>Ich kann</em>, <em>er kann</em>. <em>Ich will</em>, <em>er will</em>. <em>Ich muss</em>, <em>er muss</em>. Nel plurale e con Sie la forma è come l'infinito: <em>wir können</em>, <em>sie wollen</em>, <em>Sie müssen</em>. Con <em>du</em> la forma è <em>kannst, willst, musst</em>."
+        p: "I tre verbi hanno una coniugazione propria: la prima e la terza persona singolare sono uguali e <strong>senza desinenza</strong>. <em>Ich kann</em>, <em>er kann</em>. <em>Ich will</em>, <em>er will</em>. <em>Ich muss</em>, <em>er muss</em>. Con <em>wir</em>, <em>sie</em> e <em>Sie</em> la forma è come l'infinito: <em>wir können</em>, <em>sie wollen</em>, <em>Sie müssen</em>. Con <em>ihr</em> si ha <em>könnt, wollt, müsst</em>, con <em>du</em> <em>kannst, willst, musst</em>."
       },
       {
-        contrast: "In italiano l'infinito segue il modale subito dopo: <em>posso venire oggi</em>, <em>voglio dormire</em>. In tedesco l'infinito sta in fondo: <em>Ich kann heute kommen</em>, e se la frase si allunga la parentesi è evidente: <em>Ich kann heute Abend mit dir ins Kino gehen</em>. Inoltre l'italiano usa «sapere» per la capacità (<em>so nuotare</em>), mentre il tedesco usa <em>können</em> per tutto: <em>Ich kann schwimmen</em> vale «posso nuotare» e «so nuotare»."
+        contrast: "In italiano l'infinito normalmente segue il modale (<em>posso venire oggi</em>, <em>voglio dormire</em>), ma non deve occupare la posizione finale richiesta dalla struttura tedesca qui insegnata. In tedesco l'infinito sta in fondo: <em>Ich kann heute kommen</em>, e se la frase si allunga la parentesi è evidente: <em>Ich kann heute Abend mit dir ins Kino gehen</em>. Inoltre l'italiano usa «sapere» per la capacità (<em>so nuotare</em>), mentre il tedesco usa <em>können</em> per tutto: <em>Ich kann schwimmen</em> vale «posso nuotare» e «so nuotare»."
       },
       {
         trap: "Con <em>nicht</em>, <em>müssen</em> non vuol dire «non devo» nel senso di divieto. <em>Du musst nicht kommen</em> significa «non è necessario che tu venga»: non è un divieto. Per «non devi» come divieto servirà un altro verbo, <em>dürfen</em>, che arriva più avanti. Un'altra trappola: <em>wollen</em> è diretto. <em>Ich will einen Kaffee</em> può suonare brusco come richiesta. Per chiedere con gentilezza si usa <em>ich möchte</em>, che si vede più avanti e ha una <em>-e</em>: viene da <em>mögen</em> (è una forma di cortesia). Dopo un modale non c'è <em>zu</em> davanti all'infinito."
@@ -824,7 +824,7 @@ LINGUAI.addStrings("it", {
     exercises: [
       {
         q: "Quale frase è corretta?",
-        opts: ["Ich kann gehen heute.", "Ich kann heute gehen.", "Ich gehen kann heute."],
+        opts: ["Ich kann heute gehe.", "Ich kann heute gehen.", "Ich gehen kann heute."],
         why: "Il modale è al secondo posto, l'infinito in fondo: <b>Ich kann heute gehen.</b>"
       },
       {
@@ -856,7 +856,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Devo lavorare, ma voglio dormire.",
-        why: "Due frasi con il proprio modale, unite da <i>aber</i> con la virgola prima. Anche <i>ich möchte schlafen</i> è corretto, più gentile di <i>ich will</i>."
+        why: "Due frasi con il proprio modale, unite da <i>aber</i> con la virgola prima: <i>muss</i> per l'obbligo, <i>will</i> per la volontà."
       },
       {
         tr: "Oggi non posso venire, devo lavorare.",
@@ -977,7 +977,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "La mattina bevo sempre caffè, la sera qualche volta tè.",
-        why: "In <i>Kaffee</i> l'accento cade sulla prima sillaba; <i>immer</i> ha la <b>i</b> corta. In <i>manchmal</i> il <b>ch</b> è lo stesso suono di <i>ich</i>."
+        why: "In <i>Kaffee</i> la doppia <b>ff</b> indica che la <b>a</b> è breve; <i>immer</i> ha la <b>i</b> corta. In <i>manchmal</i> il <b>ch</b> è lo stesso suono di <i>ich</i>."
       },
       {
         tr: "La mattina bevo sempre caffè e leggo il giornale.",

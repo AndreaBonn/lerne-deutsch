@@ -461,7 +461,7 @@ LINGUAI.addUnits("A1", [
           { it: "schwimmen", ex: "Wir können im Sommer schwimmen." },
           { it: "schlafen", ex: "Ich will heute lange schlafen." },
           { it: "tanzen", ex: "Sie kann sehr gut tanzen." },
-          { it: "die Arbeit", plural: "die Arbeiten", ex: "Die Arbeit ist heute lang." },
+          { it: "die Arbeit", plural: "die Arbeiten", ex: "Ich muss heute lange arbeiten." },
           { it: "die Hausaufgabe", plural: "die Hausaufgaben", ex: "Ich muss die Hausaufgabe machen." },
           { it: "heute", ex: "Heute muss ich arbeiten." },
           { it: "morgen", ex: "Morgen will ich schlafen." }
@@ -482,8 +482,7 @@ LINGUAI.addUnits("A1", [
             t: "trans",
             dir: "toIt",
             a: [
-              "Ich muss arbeiten, aber ich will schlafen",
-              "Ich muss arbeiten, aber ich möchte schlafen"
+              "Ich muss arbeiten, aber ich will schlafen"
             ]
           },
           { t: "listen", it: "Ich kann heute nicht kommen, ich muss arbeiten." },
