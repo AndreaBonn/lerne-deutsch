@@ -114,7 +114,7 @@ LINGUAI.addUnits("A1", [
           {
             t: "order",
             tokens: ["Meine", "Schwester", "ist", "klein", "und", "blond"],
-            a: ["Meine Schwester ist klein und blond"]
+            a: ["Meine Schwester ist klein und blond", "Meine Schwester ist blond und klein"]
           },
           {
             t: "trans",
@@ -175,7 +175,7 @@ LINGUAI.addUnits("A1", [
           {
             t: "order",
             tokens: ["Mein", "Chef", "ist", "sehr", "nett", "und", "ruhig"],
-            a: ["Mein Chef ist sehr nett und ruhig"]
+            a: ["Mein Chef ist sehr nett und ruhig", "Mein Chef ist ruhig und sehr nett"]
           },
           {
             t: "trans",
