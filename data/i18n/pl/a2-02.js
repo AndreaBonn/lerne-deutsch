@@ -1035,7 +1035,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         q: "Dopasuj każde słowo do jego znaczenia.",
-        pairs: ["wiadomość", "temat (e-maila)", "zebranie", "kolega z pracy"]
+        pairs: ["wiadomość", "temat (e-maila)", "zebranie", "koleżanka z pracy"]
       },
       {
         tr: "Czy mogłaby Pani potwierdzić mi termin, proszę?",
@@ -1048,6 +1048,549 @@ LINGUAI.addStrings("pl", {
       {
         tr: "U nas zaczyna się o ósmej, a najpierw rozmawiamy o porządku obrad.",
         why: "W <i>acht</i> <b>ch</b> po <b>a</b> to [x]; <i>Bei</i> ma <b>ei</b> = [aɪ]; w <i>zuerst</i> <b>z</b> to [ts], a samogłoski <b>u</b> i <b>e</b> wymawia się osobno."
+      }
+    ]
+  },
+  "unit:a2-u07": {
+    title: "Święta i zwyczaje",
+    grammarNote: "gratulieren i inne czasowniki z celownikiem · daty (am 3. Oktober) · Hast du Lust, ... zu ...? · przymiotnik w roli przysłówka · normalerweise, leider, hoffentlich"
+  },
+  "lesson:a2-u07-l1": {
+    theme: "Życzenia i prezenty",
+    title: "Wszystkiego najlepszego!",
+    objectives: [
+      "składać życzenia za pomocą gratulieren i Herzlichen Glückwunsch",
+      "używać celownika z gratulieren, schenken i danken",
+      "podawać datę z am i liczebnikiem porządkowym (am 3. Oktober)"
+    ],
+    theory: [
+      {
+        h: "Składanie życzeń",
+        p: "Żeby komuś pogratulować, używa się czasownika <strong>gratulieren</strong>: osoba stoi w <strong>celowniku</strong>, a okazję wprowadza się przez <strong>zu</strong> + celownik, czyli <em>zum</em> (<em>zu dem</em>, rodzaj męski i nijaki) albo <em>zur</em> (<em>zu der</em>, rodzaj żeński): <em>Ich gratuliere dir zum Geburtstag. Wir gratulieren euch zur Hochzeit.</em> Jako stała formuła, bez czasownika: <em>Herzlichen Glückwunsch zum Geburtstag!</em> albo <em>Alles Gute zum Geburtstag!</em> Na święta: <em>Frohe Weihnachten!</em> i <em>Frohes neues Jahr!</em>"
+      },
+      {
+        h: "Obdarowywanie i dziękowanie: znowu celownik",
+        p: "<strong>schenken</strong> (podarować) i <strong>danken</strong> (dziękować) też wymagają osoby w celowniku: <em>Ich schenke meiner Schwester ein Buch. Ich danke dir für das Geschenk.</em> Przy <em>schenken</em> to, co się daje, stoi w bierniku (<em>ein Buch</em>); przy <em>danken</em> powód wprowadza się przez <strong>für</strong> + biernik."
+      },
+      {
+        h: "Daty: am + liczebnik porządkowy",
+        p: "Datę podaje się z <strong>am</strong> i <strong>liczebnikiem porządkowym</strong>. Pisze się ją z kropką: <em>am 3. Oktober</em>, a czyta <em>am dritten Oktober</em>. Kropka po liczbie oznacza właśnie, że to liczebnik porządkowy. Do 19 dodaje się <em>-ten</em> (<em>am vierten, am siebten, am achten</em>), od 20 <em>-sten</em> (<em>am zwanzigsten, am dreißigsten</em>); <em>am zweiten</em> (2.) jest regularne; formy szczególne mają <em>am ersten</em> (1.) i <em>am dritten</em> (3.). Żeby powiedzieć, kiedy ma się urodziny: <em>Wann hast du Geburtstag? Am 3. Oktober.</em> albo <em>Ich habe am 3. Oktober Geburtstag.</em>"
+      },
+      {
+        contrast: "Po polsku <em>dziękować</em>, <em>gratulować</em> i <em>podarować</em> też wymagają celownika (<em>dziękuję ci</em>, <em>gratuluję ci</em>, <em>podaruję ci</em>), więc ten wzorzec jest ci znany; i podobnie jak <em>dziękuję za prezent</em> daje <em>danken für</em>, tak <em>für</em> + biernik pasuje do powodu podziękowania. Różnica jest w okazji: po polsku stoi ona w dopełniaczu albo z <em>z okazji</em> (<em>gratuluję urodzin</em>, <em>z okazji urodzin</em>), a po niemiecku to <em>zu</em> + celownik, i w tym <em>zum</em> / <em>zur</em> trzeba znać rodzaj niemieckiego rzeczownika. Rodzaj często nie zgadza się z polskim odpowiednikiem: <em>die Hochzeit</em> jest żeńskie, a polski <em>ślub</em> męski. Datę po polsku zapisuje się liczebnikiem głównym i miesiącem w dopełniaczu (<em>3 października</em>), a po niemiecku jest <em>am</em>, liczebnik porządkowy z kropką i miesiąc bez zmiany końcówki: <em>am 3. Oktober</em>."
+      },
+      {
+        trap: "<em>Zum</em> czy <em>zur</em> zależy od rodzaju <strong>niemieckiego</strong> rzeczownika, nie polskiego: <em>der Geburtstag</em> → <em>zum</em>, <em>die Hochzeit</em> → <em>zur</em>, <em>das Fest</em> → <em>zum</em>. Polskie <em>urodziny</em> to liczba mnoga i nic ci tu nie podpowie. Okazja nie bierze <em>für</em> (choć po polsku jest <em>za</em> przy podziękowaniu) tylko <em>zu</em>: <em>zum Geburtstag</em>, nie «für Geburtstag». W dacie często brakuje kropki: <em>am 3 Oktober</em> wygląda jak liczebnik główny, a po niemiecku poprawny zapis to <em>am 3. Oktober</em>."
+      },
+      {
+        tip: "Pełne zdanie na kartkę: <em>Liebe Anna, herzlichen Glückwunsch zum Geburtstag! Ich schenke dir ein Buch.</em> Miesiące mówi się z <em>im</em> (<em>im Oktober</em>), konkretny dzień z <em>am</em> (<em>am 3. Oktober</em>)."
+      }
+    ],
+    grammar: {
+      title: "Czasowniki z celownikiem i daty",
+      note: "<b>gratulieren, schenken, danken</b>: osoba stoi w <b>celowniku</b>. Okazja: <b>zum / zur</b> + celownik. Data: <b>am</b> + liczebnik porządkowy z kropką, <b>am 3. Oktober</b>.",
+      table: {
+        head: ["czasownik", "osoba (celownik)", "reszta zdania"],
+        rows: [
+          ["gratulieren", "Ich gratuliere dir", "zum Geburtstag."],
+          ["schenken", "Ich schenke meiner Schwester", "ein Buch."],
+          ["danken", "Ich danke dir", "für das Geschenk."],
+          ["Geburtstag haben", "Ich habe", "am 3. Oktober Geburtstag."]
+        ]
+      },
+      examples: [
+        { tr: "Gratuluję ci urodzin.", note: "gratulieren + dir; zum = zu dem" },
+        { tr: "Wszystkiego najlepszego z okazji urodzin!", note: "stała formuła, bez czasownika" },
+        { tr: "Gratulujemy wam ślubu.", note: "zur = zu der (die Hochzeit jest rodzaju żeńskiego)" },
+        { tr: "Moje urodziny są 3 października.", note: "am + liczebnik porządkowy z kropką" },
+        { tr: "Daję siostrze książkę w prezencie.", note: "meiner Schwester: celownik rodzaju żeńskiego" },
+        { tr: "Dziękuję ci za prezent.", note: "danken + celownik; für + biernik" }
+      ]
+    },
+    vocab: [
+      "urodziny",
+      "prezent",
+      "ślub, wesele",
+      "życzenia, gratulacje",
+      "gratulować, składać życzenia",
+      "podarować",
+      "dziękować",
+      "święto, uroczystość",
+      "tort, ciasto",
+      "świętować",
+      "przyjęcie (wśród przyjaciół)",
+      "świeczka"
+    ],
+    exercises: [
+      {
+        q: "Jak złożysz przyjacielowi życzenia urodzinowe?",
+        opts: [
+          "Ich gratuliere dir zum Geburtstag.",
+          "Ich gratuliere dich zum Geburtstag.",
+          "Ich gratuliere dir für Geburtstag."
+        ],
+        why: "<i>Gratulieren</i> wymaga osoby w celowniku (<b>dir</b>) i okazji z <b>zu</b> + celownik: <i>zum Geburtstag</i>."
+      },
+      {
+        q: "Jak powiesz „Moje urodziny są 3 października”?",
+        opts: [
+          "Mein Geburtstag ist an 3. Oktober.",
+          "Mein Geburtstag ist am 3. Oktober.",
+          "Mein Geburtstag ist im 3. Oktober."
+        ],
+        why: "Do daty używa się <b>am</b> i liczebnika porządkowego z kropką: <i>am 3. Oktober</i>. <i>Im</i> służy do całego miesiąca: <i>im Oktober</i>."
+      },
+      {
+        q: "Co powiesz komuś, kto się żeni?",
+        opts: [
+          "Herzlichen Glückwunsch zum Hochzeit!",
+          "Herzlichen Glückwunsch in der Hochzeit!",
+          "Herzlichen Glückwunsch zur Hochzeit!"
+        ],
+        why: "<i>Die Hochzeit</i> jest rodzaju żeńskiego: <b>zur</b> = <i>zu der</i>. <i>Zum</i> pasowałoby do rodzaju męskiego lub nijakiego."
+      },
+      {
+        q: "Uzupełnij: „Ich schenke ___ Schwester ein Buch.” (mojej siostrze)",
+        opts: ["meiner", "meine", "meinem"],
+        why: "<i>Schenken</i> wymaga osoby w celowniku, a <i>die Schwester</i> jest rodzaju żeńskiego: <b>meiner</b>. <i>Meinem</i> to celownik rodzaju męskiego i nijakiego."
+      },
+      {
+        q: "Uzupełnij: „Ich gratuliere ___ zum Geburtstag.” (tobie)",
+        hint: "celownik od du",
+        why: "<b>dir</b> to celownik od <i>du</i>: <i>Ich gratuliere dir zum Geburtstag.</i>"
+      },
+      {
+        q: "Uzupełnij: „Mein Geburtstag ist ___ 3. Oktober.” (w)",
+        hint: "przyimek przy dacie",
+        why: "Przy dacie używa się <b>am</b>: <i>am 3. Oktober</i>."
+      },
+      {
+        q: "Dopasuj każde słowo do jego znaczenia.",
+        pairs: ["urodziny", "prezent", "ślub", "życzenia"]
+      },
+      {
+        tr: "Gratuluję Timowi urodzin. (czasownik: gratulieren)",
+        why: "<i>Ich gratuliere Tim zum Geburtstag</i>. Pasują też <i>Zum Geburtstag gratuliere ich Tim</i> i <i>Ich gratuliere Tim zu seinem Geburtstag</i>."
+      },
+      {
+        tr: "Wszystkiego najlepszego, Anno! Gratuluję ci i daję ci w prezencie książkę.",
+        why: "W <i>Glückwunsch</i> <b>ü</b> jest krótkie [ʏ], <b>ck</b> czyta się [k], a <b>sch</b> to [ʃ]; w <i>herzlichen</i> <b>z</b> to [ts], a <b>ch</b> po <b>i</b> to [ç]; w <i>gratuliere</i> <b>ie</b> to długie <b>i</b> [iː]."
+      },
+      {
+        tr: "Gratuluję mojej siostrze urodzin i daję jej w prezencie książkę.",
+        why: "W <i>Schwester</i> <b>sch</b> to [ʃ], a <b>w</b> to [v]; w <i>Geburtstag</i> akcent pada na <b>bur</b>, a końcowe <b>g</b> czyta się [k]."
+      }
+    ]
+  },
+  "lesson:a2-u07-l2": {
+    theme: "Zaproszenia",
+    title: "Masz ochotę przyjść?",
+    objectives: [
+      "zapraszać kogoś za pomocą Hast du Lust, ... zu ...?",
+      "odpowiadać na zaproszenie: przyjmować i odmawiać",
+      "stawiać zu przed bezokolicznikiem, także wewnątrz czasownika rozdzielnie złożonego (mitzukommen)"
+    ],
+    theory: [
+      {
+        h: "Hast du Lust, ... zu ...?",
+        p: "Żeby kogoś zaprosić, mówi się <strong>Hast du Lust, ...</strong>, a potem drugi czasownik w bezokoliczniku, poprzedzony <strong>zu</strong> i postawiony <strong>na końcu</strong>: <em>Hast du Lust, am Samstag zu meiner Party zu kommen? Ich habe Lust, ins Kino zu gehen. Ich habe keine Zeit, am Samstag zu kommen.</em> Tak samo działa to z innymi wyrażeniami, np. <em>Es ist schön, ...</em> albo <em>Ich habe vor, ...</em> (zobacz kartę gramatyczną)."
+      },
+      {
+        h: "Czasowniki rozdzielnie złożone i przecinek",
+        p: "Przy czasowniku rozdzielnie złożonym <strong>zu stoi w środku</strong>, między przedrostkiem a czasownikiem, a całość pisze się razem: <em>mitkommen</em> → <em>Hast du Lust, mitzukommen?</em>; <em>einladen</em> → <em>Es ist schön, Freunde einzuladen.</em> <strong>Przecinek</strong> stawia się, gdy grupa z <em>zu</em> jest rozbudowana, czyli ma inne słowa oprócz bezokolicznika (<em>..., am Samstag zu meiner Party zu kommen</em>); po rzeczowniku takim jak <em>Lust</em> czy <em>Zeit</em> zazwyczaj pisze się go zawsze. Po czasowniku, przy samym bezokoliczniku (<em>Ich versuche zu schlafen</em>), przecinek jest dowolny."
+      },
+      {
+        contrast: "Po polsku bezokolicznik stoi bez żadnej partykuły: <em>masz ochotę przyjść?</em>, <em>nie mam czasu gotować</em>. Po niemiecku przed bezokolicznikiem po <em>Lust haben</em> trzeba <em>zu</em>, które stoi bezpośrednio przed czasownikiem i na końcu zdania. Polski nie ma też czasowników z rozdzielnym przedrostkiem w niemieckim sensie: <em>przyjść z nami</em> to dwa osobne słowa, a <em>mitkommen</em> staje się w bezokoliczniku z <em>zu</em> jednym wyrazem, <em>mitzukommen</em>. Po czasownikach modalnych (<em>können, müssen, wollen</em>) po niemiecku <strong>nie</strong> ma <em>zu</em>, tak jak po polsku nie ma żadnej partykuły: <em>Kannst du kommen?</em> (możesz przyjść?)."
+      },
+      {
+        trap: "Nie pisze się «zu mitkommen» ani «mit zu kommen»: forma to <em>mitzukommen</em>, w jednym słowie. I nie mówi się «Hast du Lust, kommen?»: potrzebne jest <em>zu</em>, <em>Hast du Lust, zu kommen?</em>. Po czasowniku modalnym natomiast <em>zu</em> brakuje: <em>Ich kann kommen</em>, nie «Ich kann zu kommen». Polskie <em>masz ochotę przyjść</em> bez żadnej partykuły łatwo przenieść na niemiecki i zgubić <em>zu</em>."
+      },
+      {
+        tip: "Żeby odpowiedzieć: <em>Danke für die Einladung! Ich komme gern.</em> albo <em>Ich sage gern zu</em> (przyjmuję). Żeby odmówić: <em>Leider habe ich keine Zeit.</em> albo <em>Leider muss ich absagen.</em> Żeby zaprosić: <em>Ich lade dich zu meiner Party ein.</em>"
+      }
+    ],
+    grammar: {
+      title: "zu + bezokolicznik",
+      note: "<b>zu</b> + bezokolicznik <b>na końcu</b>: <i>Ich habe Lust, ins Kino zu gehen.</i> Czasownik rozdzielnie złożony: <b>zu</b> w środku (<i>mitzukommen</i>). Grupa rozbudowana: <b>przecinek</b>. Po czasowniku modalnym nie ma <i>zu</i>.",
+      table: {
+        head: ["konstrukcja", "przykład", "uwaga"],
+        rows: [
+          ["Lust haben", "Ich habe Lust, ins Kino zu gehen.", "zu przed bezokolicznikiem, na końcu"],
+          ["keine Zeit haben", "Ich habe keine Zeit, am Samstag zu kommen.", "grupa rozbudowana: przecinek"],
+          ["czasownik rozdzielny", "Hast du Lust, mitzukommen?", "zu w środku: mitzukommen"],
+          ["czasownik modalny", "Kannst du kommen?", "bez zu"]
+        ]
+      },
+      examples: [
+        { tr: "Masz ochotę przyjść też?", note: "mitkommen: zu w środku, mitzukommen" },
+        { tr: "Masz ochotę przyjść w sobotę na moje przyjęcie?", note: "grupa rozbudowana: przecinek po Lust" },
+        { tr: "Mam ochotę iść do kina.", note: "zu gehen: zu przed bezokolicznikiem" },
+        { tr: "Nie mam czasu przyjść w sobotę.", note: "keine Zeit, ... zu kommen" },
+        { tr: "Miło jest zapraszać przyjaciół.", note: "einladen: zu w środku, einzuladen" },
+        { tr: "Dziękuję za zaproszenie! Chętnie przyjdę.", note: "odpowiedź na zaproszenie" }
+      ]
+    },
+    vocab: [
+      "zaproszenie",
+      "zapraszać",
+      "ochota",
+      "przyjść też, przyjść razem z kimś",
+      "odwołać, odmówić",
+      "przyjąć (zaproszenie)",
+      "pomysł",
+      "gość",
+      "wizyta, goście",
+      "niespodzianka",
+      "wpaść (z wizytą)",
+      "czas"
+    ],
+    exercises: [
+      {
+        q: "Jak zaprosisz przyjaciela, żeby przyszedł razem z tobą?",
+        opts: [
+          "Hast du Lust, mitzukommen?",
+          "Hast du Lust, zu mitkommen?",
+          "Hast du Lust, mitkommen zu?"
+        ],
+        why: "Przy czasowniku rozdzielnie złożonym <b>zu</b> stoi w środku, całość w jednym słowie: <i>mitzukommen</i>."
+      },
+      {
+        q: "Uzupełnij: „Hast du Lust, heute Abend ins Kino ___ gehen?”",
+        hint: "krótkie słowo przed bezokolicznikiem",
+        why: "<b>zu</b> stoi bezpośrednio przed bezokolicznikiem: <i>ins Kino zu gehen</i>."
+      },
+      {
+        q: "Uzupełnij: „Hast du ___, mitzukommen?” (ochotę)",
+        hint: "rzeczownik, wielką literą",
+        why: "<b>Lust</b> haben: <i>Hast du Lust, mitzukommen?</i>"
+      },
+      {
+        q: "Dopasuj każde słowo do jego znaczenia.",
+        pairs: ["zapraszać", "odwołać, odmówić", "przyjąć (zaproszenie)", "niespodzianka"]
+      },
+      {
+        tr: "Masz ochotę nas odwiedzić?",
+        why: "<i>Hast du Lust, uns zu besuchen?</i>: przecinek po <i>Lust</i>, <i>zu</i> bezpośrednio przed <i>besuchen</i>, na końcu."
+      },
+      {
+        tr: "Masz ochotę iść do kina?",
+        why: "<i>Hast du Lust, ins Kino zu gehen?</i> Pasuje też <i>in das Kino</i>. <i>Zu gehen</i> zamyka zdanie."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Dziękuję za zaproszenie! Mam ochotę przyjść na wasze przyjęcie.",
+        why: "<i>Die Einladung</i> to zaproszenie. <i>Zu eurer Party zu kommen</i>: pierwsze <b>zu</b> jest przyimkiem, drugie wprowadza bezokolicznik."
+      },
+      {
+        q: "Jesteś zaproszony na przyjęcie.",
+        setting: "Koleżanka zaprasza cię na swoje przyjęcie w sobotę.",
+        lines: [
+          { tr: "Cześć! W sobotę mam przyjęcie. Masz ochotę przyjść?" },
+          {
+            tr: "Podziękuj za zaproszenie i powiedz, że chętnie przyjdziesz.",
+            answerTr: "Dziękuję za zaproszenie! Chętnie przyjdę."
+          },
+          { tr: "Świetnie! Możesz przynieść tort?" },
+          {
+            tr: "Odpowiedz, że tak, i powiedz, że masz ochotę upiec tort.",
+            answerTr: "Tak, chętnie. Mam ochotę upiec tort."
+          }
+        ]
+      },
+      {
+        tr: "Masz ochotę przyjść w sobotę na moje przyjęcie? Niestety nie mam czasu, ale dziękuję za zaproszenie!",
+        why: "W <i>Einladung</i> <b>ei</b> to [aɪ]; w <i>Samstag</i> początkowe <b>s</b> jest dźwięczne [z]; w <i>besuchen</i> <b>ch</b> po <b>u</b> to [x], a <b>s</b> między samogłoskami jest dźwięczne [z]."
+      },
+      {
+        tr: "Masz ochotę pójść ze mną do kina?",
+        why: "W <i>Kino</i> <b>i</b> jest długie [iː]; w <i>mit</i> <b>i</b> jest krótkie; w <i>Lust</i> <b>u</b> jest krótkie, a <b>st</b> czyta się [st]."
+      }
+    ]
+  },
+  "lesson:a2-u07-l3": {
+    theme: "Pozdrowienia i zwyczaje",
+    title: "Niemcy, Austria, Szwajcaria",
+    objectives: [
+      "poznać kilka typowych pozdrowień z trzech obszarów (Grüß Gott, Grüezi, Servus)",
+      "opisać zwyczaj jako tendencję, z oft i meistens",
+      "powiedzieć, jak się wita i w jakim rejestrze, między du a Sie"
+    ],
+    theory: [
+      {
+        h: "Jeden niemiecki, trzy kraje",
+        p: "Po niemiecku mówi się w Niemczech, w Austrii i w Szwajcarii (gdzie oprócz niemieckiego są jeszcze francuski, włoski i romansz). Niemcy, Austria i Szwajcaria mają wspólny niemiecki standardowy, z pewnymi różnicami narodowymi w słownictwie, wymowie i pisowni; pozdrowienia i niektóre zwyczaje zmieniają się z regionu na region. <em>Guten Tag</em> pasuje mniej więcej wszędzie. <em>Grüß Gott</em> słychać częściej na południu Niemiec i w Austrii, <em>Servus</em> głównie w Austrii i w Bawarii (mówi się tak też na pożegnanie), <em>Grüezi</em> w niemieckojęzycznej Szwajcarii, <em>Moin</em> na północy Niemiec. To są <strong>tendencje</strong>, nie reguły: dlatego w zdaniach tej lekcji pojawiają się <em>oft</em> i <em>meistens</em>."
+      },
+      {
+        h: "Opowiadanie o zwyczaju",
+        p: "Żeby opisać zwyczaj, używa się <strong>man</strong> z czasownikiem w trzeciej osobie liczby pojedynczej: <em>In der Schweiz sagt man oft Grüezi.</em> Tendencję zaznacza się przez <em>oft, meistens, in vielen Familien</em>: <em>In vielen Familien feiert man Weihnachten am 24. Dezember.</em> Rejestr wybiera się przez <em>du</em> i <em>Sie</em>: <em>Im Büro siezt man oft, unter Freunden duzt man sich.</em>"
+      },
+      {
+        contrast: "W Polsce Wigilia, wieczór 24 grudnia, jest dla wielu rodzin głównym momentem świąt, często też z prezentami tego samego wieczoru. W wielu niemieckich rodzinach to również wieczór 24 grudnia, <em>Heiligabend</em>, z prezentami; 25 i 26 grudnia to <em>Feiertage</em>. To tendencje, nie reguły: każda rodzina i każdy region mają swoje zwyczaje. Na <em>Silvester</em> (31 grudnia, po polsku sylwester) wiele osób świętuje z przyjaciółmi i o północy ogląda fajerwerki. Inna różnica to zwracanie się do kogoś: po polsku mówi się <em>proszę pana</em> lub <em>proszę pani</em> i trzeba wybrać formę według płci, a po niemiecku jest jedno <em>Sie</em> dla każdego, z czasownikiem w trzeciej osobie liczby mnogiej: <em>Sie kommen</em>. Po polsku <em>dzień dobry</em> pasuje prawie wszędzie; po niemiecku wybór między <em>Grüß Gott</em>, <em>Grüezi</em> i <em>Servus</em> zależy mocno od miejsca, w którym się jesteś."
+      },
+      {
+        trap: "Nie uogólniaj: «W Niemczech mówi się Grüß Gott» jest zbyt szerokie, bo w wielu regionach północy prawie się tego nie słyszy. Lepiej ostrożne zdanie: <em>In Süddeutschland und in Österreich sagt man oft Grüß Gott.</em> Inna różnica w pisowni: w Szwajcarii zwykle pisze się <em>ss</em> zamiast <em>ß</em> (<em>Strasse</em>, <em>Grüsse</em>), a w Niemczech i w Austrii używa się <em>ß</em> (<em>Straße</em>, <em>Grüße</em>)."
+      },
+      {
+        tip: "Kiedy nie wiesz, jakiego pozdrowienia użyć, <em>Guten Tag</em> (i <em>Auf Wiedersehen</em>) to bezpieczny wybór, a wobec osób, których nie znasz, zostaje forma <em>Sie</em>."
+      }
+    ],
+    grammar: {
+      title: "Pozdrowienia w trzech obszarach i rejestr",
+      note: "Pozdrowienie albo zwyczaj opisuje się jako <b>tendencję</b>: <b>man</b> + <b>oft / meistens</b>. Między nieznajomymi <b>Sie</b>, między przyjaciółmi <b>du</b>.",
+      table: {
+        head: ["pozdrowienie", "gdzie słychać je najczęściej", "uwaga"],
+        rows: [
+          ["Guten Tag", "w trzech obszarach", "neutralne, pasuje do wielu sytuacji"],
+          ["Grüß Gott", "południe Niemiec, Austria", "często słychać je też w sklepach"],
+          ["Servus", "Austria, Bawaria", "nieformalne, na powitanie i na pożegnanie"],
+          ["Grüezi", "niemieckojęzyczna Szwajcaria", "często mówi się je do osób, których się nie zna"],
+          ["Moin", "północ Niemiec", "nieformalne, słychać je o każdej porze"],
+          ["Hallo", "w trzech obszarach", "nieformalne, między przyjaciółmi i kolegami"]
+        ]
+      },
+      examples: [
+        { tr: "Na południu Niemiec i w Austrii często mówi się Grüß Gott.", note: "oft: tendencja" },
+        { tr: "W Szwajcarii często mówi się Grüezi.", note: "man + trzecia osoba liczby pojedynczej" },
+        { tr: "Między przyjaciółmi mówi się też Hallo.", note: "unter Freunden: rejestr nieformalny" },
+        { tr: "W Austrii często mówi się Servus.", note: "Servus: nieformalne" },
+        { tr: "W wielu rodzinach świętuje się Boże Narodzenie 24 grudnia.", note: "in vielen Familien: tendencja" },
+        { tr: "W biurze często mówi się sobie per pan/pani, między przyjaciółmi per ty.", note: "siezen i duzen" }
+      ]
+    },
+    vocab: [
+      "zwyczaj, obyczaj",
+      "tradycja",
+      "kraj, naród",
+      "region",
+      "dzień świąteczny",
+      "jarmark bożonarodzeniowy",
+      "pozdrowienie, powitanie",
+      "pozdrawiać, witać",
+      "typowy",
+      "różny, zróżnicowany",
+      "różnica",
+      "sylwester (31 grudnia)"
+    ],
+    exercises: [
+      {
+        q: "Które pozdrowienie często słychać w niemieckojęzycznej Szwajcarii?",
+        opts: ["Grüß Gott.", "Grüezi.", "Moin."],
+        why: "<i>Grüezi</i> to pozdrowienie, które często słychać w niemieckojęzycznej Szwajcarii. <i>Grüß Gott</i> jest częstsze na południu Niemiec i w Austrii, <i>Moin</i> na północy Niemiec."
+      },
+      {
+        q: "Do klienta, którego nie znasz, zwykle zwracasz się per...",
+        opts: ["Sie", "du", "ihr"],
+        why: "Wobec osób, których nie znasz, i w kontekstach formalnych używa się zwykle <b>Sie</b>; <i>du</i> jest dla przyjaciół i rodziny."
+      },
+      {
+        q: "Które zdanie jest sformułowane ostrożnie, bez uogólniania?",
+        opts: [
+          "In der Schweiz gibt es keine Traditionen.",
+          "In Deutschland feiern alle Weihnachten gleich.",
+          "Die Bräuche sind oft von Region zu Region verschieden."
+        ],
+        why: "<b>oft</b> przedstawia zwyczaje jako tendencje. Pozostałe dwa zdania są zbyt absolutne i nie są prawdziwe."
+      },
+      {
+        q: "Uzupełnij typowe pozdrowienie z południa Niemiec i z Austrii: „Grüß ___.”",
+        hint: "drugie słowo pozdrowienia",
+        why: "<b>Grüß Gott</b>: często słychać je na południu Niemiec i w Austrii."
+      },
+      {
+        q: "Dopasuj każde słowo do jego znaczenia.",
+        pairs: ["zwyczaj", "dzień świąteczny", "jarmark bożonarodzeniowy", "różnica"]
+      },
+      {
+        tr: "W Austrii często mówi się Servus.",
+        why: "<i>In Österreich sagt man oft Servus</i>. Pasują też <i>Man sagt in Österreich oft Servus</i>, <i>Oft sagt man in Österreich Servus</i>, <i>Man sagt oft in Österreich Servus</i> i <i>Servus sagt man in Österreich oft</i>."
+      },
+      {
+        tr: "U nas często mówi się Hallo.",
+        why: "<i>Bei uns sagt man oft Hallo</i>. Pasują też <i>Man sagt bei uns oft Hallo</i>, <i>Oft sagt man bei uns Hallo</i>, <i>Man sagt oft bei uns Hallo</i> i <i>Hallo sagt man bei uns oft</i>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "W Szwajcarii często mówi się Grüezi. W Austrii często mówi się Servus.",
+        why: "<i>Die Schweiz</i> po <i>in der</i>; <i>Österreich</i> po <i>in</i>, bez rodzajnika."
+      },
+      {
+        tr: "Na południu Niemiec i w Austrii często mówi się Grüß Gott. W Szwajcarii często mówi się Grüezi. Między przyjaciółmi mówi się też Hallo.",
+        why: "W <i>Grüß</i> <b>ü</b> jest długie [yː], a <b>ß</b> to bezdźwięczne <b>s</b>; w <i>Österreich</i> <b>ö</b> jest długie [øː], a końcowe <b>ch</b> po <b>ei</b> to [ç]; w <i>Servus</i> początkowe <b>s</b> jest dźwięczne [z], a <b>v</b> to [v]."
+      },
+      {
+        tr: "Zwyczaje są często różne w różnych regionach.",
+        why: "W <i>Bräuche</i> <b>äu</b> to [ɔʏ], a <b>ch</b> po <b>äu</b> to [ç]; w <i>verschieden</i> <b>sch</b> to [ʃ], a <b>ie</b> to długie <b>i</b> [iː]."
+      }
+    ]
+  },
+  "lesson:a2-u07-l4": {
+    theme: "Jak i kiedy",
+    title: "normalnie, powoli",
+    objectives: [
+      "używać przymiotnika jako przysłówka, bez końcówki (langsam, schnell, laut)",
+      "używać normalerweise, leider, hoffentlich i vielleicht",
+      "stawiać przysłówek na początku, a czasownik na drugim miejscu"
+    ],
+    theory: [
+      {
+        h: "Przymiotnik w roli przysłówka",
+        p: "Po niemiecku <strong>przymiotnik</strong> bez końcówki może pełnić rolę <strong>przysłówka</strong>, czyli mówić, jak coś się robi: <em>Er spricht langsam. Sie fährt schnell. Wir singen laut.</em> To to samo słowo, którego używasz do opisu rzeczownika: <em>Der Zug ist langsam</em>, ale przy rzeczowniku ma końcówkę (<em>ein langsamer Zug</em>); jako przysłówek końcówki nigdy nie ma."
+      },
+      {
+        h: "Przysłówki zdaniowe: normalerweise, leider, hoffentlich, vielleicht",
+        p: "Niektóre przysłówki mówią coś o <strong>całym zdaniu</strong>: <strong>normalerweise</strong> (zwykle), <strong>leider</strong> (niestety), <strong>hoffentlich</strong> (oby, mam nadzieję, że), <strong>vielleicht</strong> (może). Mogą otwierać zdanie, a wtedy czasownik zostaje na <strong>drugim miejscu</strong>, a podmiot idzie za nim: <em>Normalerweise feiere ich meinen Geburtstag mit Freunden. Leider habe ich am Samstag keine Zeit. Hoffentlich kommst du zur Party. Vielleicht kommt Tim später.</em> We wnętrzu zdania stoją zwykle po czasowniku: <em>Ich habe leider keine Zeit.</em>"
+      },
+      {
+        contrast: "Po polsku przysłówek odprzymiotnikowy ma własną końcówkę: <em>wolny</em> → <em>wolno</em>, <em>szybki</em> → <em>szybko</em>, <em>głośny</em> → <em>głośno</em>. Po niemiecku nic się nie zmienia: <em>langsam</em> znaczy zarówno „wolny”, jak i „powoli”. Drugą różnicą jest szyk. Po polsku szyk jest swobodny i <em>Niestety nie mam czasu</em> nie wymaga niczego szczególnego, a po niemieckim przysłówku na początku czasownik musi być zaraz za nim: <em>Leider habe ich keine Zeit</em>. <em>Hoffentlich</em> jest przysłówkiem samym w sobie: po polsku jest <em>mam nadzieję, że przyjdziesz</em> albo <em>oby przyszedł</em>, a po niemiecku <em>Hoffentlich kommst du</em>, bez <em>dass</em>."
+      },
+      {
+        trap: "<em>normal</em> to przymiotnik (<em>Das ist normal</em>), a „zwykle” mówi się <em>normalerweise</em>. Gdy jedno z tych słów otwiera zdanie, czasownik idzie zaraz po nim: <em>Leider habe ich keine Zeit</em>, nie «Leider ich habe keine Zeit» (polski szyk). I nie dodawaj do przysłówka końcówki: <em>Er spricht langsam</em>, nie «Er spricht langsame»."
+      },
+      {
+        tip: "Inne przydatne przysłówki do nauki razem z tymi: <em>deutlich</em> (wyraźnie), <em>leise</em> (cicho), <em>später</em> (później), <em>natürlich</em> (oczywiście)."
+      }
+    ],
+    grammar: {
+      title: "Przysłówki: przymiotnik bez końcówki i przysłówki zdaniowe",
+      note: "<b>Przymiotnik bez końcówki</b> pełni rolę przysłówka: <i>Er spricht langsam.</i> Przysłówki zdaniowe takie jak <b>normalerweise, leider, hoffentlich, vielleicht</b> mogą otwierać zdanie: czasownik zostaje na <b>drugim miejscu</b>.",
+      table: {
+        head: ["słowo", "znaczenie", "przykład"],
+        rows: [
+          ["normalerweise", "zwykle", "Normalerweise esse ich um zwölf Uhr."],
+          ["leider", "niestety", "Leider habe ich keine Zeit."],
+          ["hoffentlich", "oby, mam nadzieję, że", "Hoffentlich kommst du zur Party."],
+          ["vielleicht", "może", "Vielleicht komme ich später."],
+          ["langsam", "wolny; powoli", "Er spricht langsam."]
+        ]
+      },
+      examples: [
+        { tr: "Zwykle świętuję urodziny z przyjaciółmi.", note: "normalerweise otwiera zdanie: czasownik na drugim miejscu" },
+        { tr: "Niestety w sobotę nie mam czasu.", note: "leider: habe ich" },
+        { tr: "Mam nadzieję, że przyjdziesz na przyjęcie.", note: "hoffentlich, bez dass" },
+        { tr: "Anna tańczy powoli i z wdziękiem.", note: "langsam i schön: przymiotniki w roli przysłówków" },
+        { tr: "Śpiewamy głośno.", note: "laut: bez końcówki" },
+        { tr: "Może Tim przyjdzie później.", note: "vielleicht: kommt Tim" }
+      ]
+    },
+    vocab: [
+      "zwykle, normalnie",
+      "niestety",
+      "oby, mam nadzieję, że",
+      "może",
+      "wolny; powoli",
+      "szybki; szybko",
+      "głośny, głośno",
+      "cichy, cicho",
+      "wyraźny; wyraźnie",
+      "później, potem",
+      "szczególnie, zwłaszcza",
+      "oczywiście, naturalnie"
+    ],
+    exercises: [
+      {
+        q: "Które słowo znaczy „niestety”?",
+        opts: ["hoffentlich", "leider", "vielleicht"],
+        why: "<b>leider</b> = niestety. <i>Hoffentlich</i> to „oby”, <i>vielleicht</i> to „może”."
+      },
+      {
+        q: "W którym zdaniu <i>langsam</i> opisuje czasownik, bez końcówki?",
+        opts: ["Das Kind ist langsam.", "Das ist ein langsames Kind.", "Das Kind spricht langsam."],
+        why: "W <i>Das Kind spricht langsam</i> <b>langsam</b> mówi, jak dziecko mówi, i nie ma końcówki. W pozostałych dwóch zdaniach opisuje dziecko."
+      },
+      {
+        q: "Uzupełnij słowem z lekcji: „___ feiere ich meinen Geburtstag zu Hause.” (zwykle)",
+        hint: "zaczyna się na n",
+        why: "<b>Normalerweise</b> otwiera zdanie, a czasownik zostaje na drugim miejscu: <i>feiere ich</i>."
+      },
+      {
+        q: "Uzupełnij: „___ habe ich am Samstag keine Zeit.” (niestety)",
+        hint: "przysłówek zdaniowy",
+        why: "<b>Leider</b> otwiera zdanie, a czasownik idzie zaraz po nim: <i>habe ich</i>."
+      },
+      {
+        q: "Uzupełnij: „Die Kinder singen sehr ___.” (głośno)",
+        hint: "przymiotnik, bez końcówki",
+        why: "<b>laut</b> to przymiotnik bez końcówki, który pełni rolę przysłówka."
+      },
+      {
+        q: "Dopasuj każde słowo do jego znaczenia.",
+        pairs: ["zwykle", "niestety", "mam nadzieję, że", "może"]
+      },
+      {
+        tr: "Niestety nie mam czasu.",
+        why: "<i>Leider habe ich keine Zeit</i>. Pasuje też <i>Ich habe leider keine Zeit</i>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "On mówi powoli i dobrze go rozumiem. Mam nadzieję, że przyjdziesz na przyjęcie!",
+        why: "<i>Langsam</i> to przymiotnik bez końcówki w roli przysłówka; <i>Hoffentlich</i> otwiera zdanie, a czasownik <i>kommst</i> zostaje na drugim miejscu."
+      },
+      {
+        tr: "Zwykle świętuję urodziny w domu. Niestety w sobotę nie mam czasu, ale może będziemy świętować później.",
+        why: "W <i>normalerweise</i> <b>w</b> to [v], a <b>ei</b> to [aɪ]; w <i>vielleicht</i> <b>v</b> to [f], pierwsze <b>i</b> jest krótkie i nieakcentowane, akcent pada na drugą sylabę [fiˈlaɪçt], a <b>ch</b> po <b>ei</b> to [ç]; w <i>später</i> początkowe <b>sp</b> to [ʃp]."
+      },
+      {
+        tr: "Mam nadzieję, że przyjdziesz na przyjęcie. Może będziemy świętować później.",
+        why: "W <i>hoffentlich</i> <b>ch</b> po <b>i</b> to [ç]; w <i>später</i> początkowe <b>sp</b> czyta się [ʃp]; w <i>vielleicht</i> <b>v</b> to [f]."
+      }
+    ]
+  },
+  "lesson:a2-u07-test": {
+    theme: "Sprawdzian",
+    title: "Test: Święta i zwyczaje",
+    objectives: ["sprawdzić gratulieren i celownik, daty, zu + bezokolicznik, pozdrowienia w trzech obszarach i przysłówki"],
+    theory: [
+      {
+        p: "Dziesięć pytań o jednostce. Zaliczenie od 70%. Nie zaglądaj do lekcji, odpowiadając: jeśli czegoś nie pamiętasz, lepiej wrócić do powtórki."
+      }
+    ],
+    exercises: [
+      {
+        q: "Uzupełnij: „Wir gratulieren ___ zur Hochzeit.” (wam)",
+        hint: "celownik od ihr",
+        why: "<b>euch</b> to celownik od <i>ihr</i>: <i>Wir gratulieren euch zur Hochzeit.</i>"
+      },
+      {
+        q: "Uzupełnij: „Der Kurs beginnt ___ 5. Mai.” (w)",
+        hint: "przyimek przy dacie",
+        why: "Przy dacie używa się <b>am</b>: <i>am 5. Mai</i>."
+      },
+      {
+        q: "Uzupełnij: „Hast du Lust, ins Kino ___ gehen?”",
+        hint: "przed bezokolicznikiem",
+        why: "<b>zu</b> stoi bezpośrednio przed bezokolicznikiem: <i>ins Kino zu gehen</i>."
+      },
+      {
+        q: "Uzupełnij: „___ kommst du zur Party.” (oby)",
+        hint: "przysłówek zdaniowy",
+        why: "<b>Hoffentlich</b> otwiera zdanie, a czasownik <i>kommst</i> zostaje na drugim miejscu. Po <i>hoffentlich</i> nie ma <i>dass</i>."
+      },
+      {
+        q: "Uzupełnij: „Ich schenke ___ Bruder ein Buch.” (mojemu bratu)",
+        opts: ["meinem", "meinen", "mein"],
+        why: "<i>Schenken</i> wymaga osoby w celowniku, a <i>der Bruder</i> jest rodzaju męskiego: <b>meinem</b>."
+      },
+      {
+        q: "Które zdanie jest poprawnym zaproszeniem?",
+        opts: ["Hast du Lust, zu mitkommen?", "Hast du Lust, mitzukommen?", "Hast du Lust, mitkommen?"],
+        why: "Przy czasowniku rozdzielnie złożonym <b>zu</b> stoi w środku: <i>mitzukommen</i>, w jednym słowie."
+      },
+      {
+        q: "Co znaczy <i>leider</i>?",
+        opts: ["zwykle", "może", "niestety"],
+        why: "<b>leider</b> = niestety. <i>Normalerweise</i> to „zwykle”, <i>vielleicht</i> to „może”."
+      },
+      {
+        q: "Dopasuj każde słowo do jego znaczenia.",
+        pairs: ["gratulować", "prezent", "zaproszenie", "zwyczaj"]
+      },
+      {
+        tr: "Wszystkiego najlepszego z okazji urodzin! Masz ochotę przyjść w sobotę na moje przyjęcie?",
+        why: "W <i>Glückwunsch</i> <b>ü</b> jest krótkie [ʏ], a <b>sch</b> to [ʃ]; w <i>Samstag</i> początkowe <b>s</b> jest dźwięczne [z]; w <i>Lust</i> <b>u</b> jest krótkie."
+      },
+      {
+        tr: "Gratuluję ci urodzin. Masz ochotę świętować z nami?",
+        why: "W <i>gratuliere</i> <b>ie</b> to długie <b>i</b> [iː]; w <i>Geburtstag</i> akcent pada na <b>bur</b>; w <i>feiern</i> <b>ei</b> to [aɪ]."
       }
     ]
   }

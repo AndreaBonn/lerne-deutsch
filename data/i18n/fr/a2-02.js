@@ -535,7 +535,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         h: "Questions indirectes : ob et mot interrogatif",
-        p: "Une question peut entrer dans une autre phrase. Si la question directe est en <strong>oui/non</strong> (<em>Ist Herr Weber im Büro?</em>), on l'introduit avec <strong>ob</strong> ; si elle contient un <strong>mot interrogatif</strong> (<em>wann, wo, wer, wie, warum</em>), ce mot reste et ouvre la subordonnée. Dans les deux cas le verbe conjugué va <strong>à la fin</strong>, et une virgule le précède : <em>Ich möchte wissen, ob Herr Weber heute im Büro ist. Ich weiß nicht, wann die Besprechung beginnt. Könnten Sie mir sagen, wo Frau Keller ist?</em> Avec un verbe séparable le préfixe se ressoude au verbe : <em>Ich weiß nicht, wann er anruft.</em> Il en va de même pour <strong>dass</strong> : <em>Könnten Sie ihr sagen, dass ich morgen wieder anrufe?</em>"
+        p: "Une virgule sépare la proposition principale de la subordonnée ; le verbe conjugué se place à la fin de la subordonnée."
       },
       {
         contrast: "En français la question indirecte garde un ordre souple : <em>je ne sais pas quand commence la réunion</em> ou <em>quand la réunion commence</em>, le verbe restant près du sujet. En allemand l'ordre est celui de la subordonnée, avec le verbe conjugué en dernière position : <em>Ich weiß nicht, wann die Besprechung beginnt</em>, et non « wann beginnt die Besprechung ». Autre point : le <em>si</em> français sert pour le doute comme pour la condition : <em>je ne sais pas s'il vient</em> est <em>ob</em>, <em>s'il vient, ...</em> est <em>wenn</em>. L'allemand les sépare. Côté politesse, le français emploie le conditionnel avec <em>vous</em> (<em>Pourriez-vous me rappeler ?</em>) et le pronom se place avant le verbe ; l'allemand utilise le Konjunktiv II <em>Könnten Sie</em> et l'infinitif final vient après tous les compléments."
@@ -765,7 +765,7 @@ LINGUAI.addStrings("fr", {
         p: "<strong>man</strong> désigne une personne quelconque, les gens en général, et sert pour les règles et les habitudes : <em>Bei uns beginnt man um acht Uhr. Hier duzt man sich. In der Mittagspause isst man in der Kantine.</em> Le verbe se met à la <strong>troisième personne du singulier</strong>, même si le sens est pluriel. Les verbes qui changent de voyelle gardent le changement : <em>man isst, man liest, man fährt, man spricht</em>. Avec les modaux : <em>man muss, man darf, man kann</em> : <em>Hier darf man nicht rauchen. Man muss pünktlich sein.</em> Une question fréquente : <em>Wie sagt man das auf Deutsch?</em>"
       },
       {
-        contrast: "Le français <em>on</em> est le meilleur point d'appui : <em>ici, on se tutoie</em> se dit <em>Hier duzt man sich</em>, avec le verbe à la troisième personne du singulier et le réfléchi qui suit (<em>se</em> / <em>sich</em>). Une différence : <em>on</em> sert aussi, dans la langue courante, à dire <em>nous</em> (<em>on y va</em>), alors que <em>man</em> ne remplace pas <em>wir</em> de cette façon : pour « nous y allons » on dit <em>Wir gehen</em>. Le français a aussi le passif et <em>les gens</em>, mais pour une règle ou une habitude l'allemand choisit <em>man</em>."
+        contrast: "En français, <em>se</em> précède le verbe : <em>on se tutoie</em>. En allemand, <em>sich</em> se place ici après le verbe et <em>man</em> : <em>Hier duzt man sich.</em>"
       },
       {
         trap: "<em>man</em> n'est pas <em>der Mann</em> (l'homme) : <em>man</em> s'écrit avec un seul <strong>n</strong> et une minuscule. Le verbe reste à la troisième personne du singulier : <em>man sagt</em>, et non « man sagen », et avec les modaux <em>man muss</em>, et non « man müssen ». Attention aux modaux : le français <em>on ne peut pas fumer</em> couvre « c'est interdit » et « c'est impossible », alors que l'allemand a deux verbes. <em>Hier darf man nicht rauchen</em> dit que ce n'est pas permis ; <em>Hier kann man nicht rauchen</em> dirait que ce n'est pas faisable. Pour « il faut », on a <em>man muss</em>."
@@ -1048,6 +1048,549 @@ LINGUAI.addStrings("fr", {
       {
         tr: "Chez nous, on commence à huit heures, et d'abord nous parlons de l'ordre du jour.",
         why: "Dans <i>acht</i> le <b>ch</b> après <b>a</b> est [x] ; <i>Bei</i> a <b>ei</b> = [aɪ] ; dans <i>zuerst</i> le <b>z</b> est [ts] et les voyelles <b>u</b> et <b>e</b> se prononcent séparément."
+      }
+    ]
+  },
+  "unit:a2-u07": {
+    title: "Fêtes et coutumes",
+    grammarNote: "gratulieren et d'autres verbes avec le datif · les dates (am 3. Oktober) · Hast du Lust, ... zu ...? · adjectif employé comme adverbe · normalerweise, leider, hoffentlich"
+  },
+  "lesson:a2-u07-l1": {
+    theme: "Vœux et cadeaux",
+    title: "Bon anniversaire !",
+    objectives: [
+      "féliciter quelqu'un avec gratulieren et Herzlichen Glückwunsch",
+      "utiliser le datif avec gratulieren, schenken et danken",
+      "dire une date avec am et le nombre ordinal (am 3. Oktober)"
+    ],
+    theory: [
+      {
+        h: "Féliciter quelqu'un",
+        p: "Pour féliciter quelqu'un, il y a le verbe <strong>gratulieren</strong> : la personne est au <strong>datif</strong> et l'occasion s'introduit avec <strong>zu</strong> + datif, c'est-à-dire <em>zum</em> (<em>zu dem</em>, masculin et neutre) ou <em>zur</em> (<em>zu der</em>, féminin) : <em>Ich gratuliere dir zum Geburtstag. Wir gratulieren euch zur Hochzeit.</em> Comme formule figée, sans verbe : <em>Herzlichen Glückwunsch zum Geburtstag!</em> ou <em>Alles Gute zum Geburtstag!</em> Pour les fêtes : <em>Frohe Weihnachten!</em> et <em>Frohes neues Jahr!</em>"
+      },
+      {
+        h: "Offrir et remercier : encore le datif",
+        p: "<strong>schenken</strong> (offrir, faire cadeau de) et <strong>danken</strong> (remercier) veulent aussi la personne au datif : <em>Ich schenke meiner Schwester ein Buch. Ich danke dir für das Geschenk.</em> Avec <em>schenken</em>, le cadeau est à l'accusatif (<em>ein Buch</em>) ; avec <em>danken</em>, le motif s'introduit avec <strong>für</strong> + accusatif."
+      },
+      {
+        h: "Les dates : am + nombre ordinal",
+        p: "Une date se dit avec <strong>am</strong> et le nombre <strong>ordinal</strong>. On l'écrit avec un point : <em>am 3. Oktober</em>, et on lit <em>am dritten Oktober</em>. Le point après le nombre indique justement qu'il s'agit d'un ordinal. Jusqu'au 19, on ajoute <em>-ten</em> (<em>am vierten, am siebten, am achten</em>), à partir du 20 <em>-sten</em> (<em>am zwanzigsten, am dreißigsten</em>) ; <em>am zweiten</em> (2.) est régulier ; <em>am ersten</em> (1.) et <em>am dritten</em> (3.) ont des formes particulières. Pour dire quand on a son anniversaire : <em>Wann hast du Geburtstag? Am 3. Oktober.</em> ou <em>Ich habe am 3. Oktober Geburtstag.</em>"
+      },
+      {
+        contrast: "En français, <em>féliciter</em> et <em>remercier</em> ont un complément d'objet direct (<em>je te félicite</em>, <em>je te remercie</em>), alors qu'<em>offrir</em> a un complément indirect (<em>je t'offre un livre</em>). En allemand, les trois verbes se construisent avec la personne au datif : <em>ich gratuliere <b>dir</b></em>, <em>ich danke <b>dir</b></em>, <em>ich schenke <b>dir</b></em>. Pour les dates, le français emploie l'article et un nombre cardinal (<em>le 3 octobre</em>, mais <em>le premier</em> pour le 1<sup>er</sup>) ; l'allemand emploie <em>am</em> et un ordinal pour tous les jours, même pour le 3 et le 20."
+      },
+      {
+        trap: "On ne dit pas «ich danke dich» ni «ich gratuliere dich» : comme <em>te</em> est un objet direct en français, on est tenté d'écrire <em>dich</em>, mais le pronom est <em>dir</em>. L'occasion ne prend pas <em>für</em> (même si l'on dit «féliciter pour») mais <em>zu</em> : <em>zum Geburtstag</em>, pas «für Geburtstag». Et <em>zum</em> ou <em>zur</em> dépend du genre allemand : <em>der Geburtstag</em> → <em>zum</em>, <em>die Hochzeit</em> → <em>zur</em>, <em>das Fest</em> → <em>zum</em>. Dans la date, le point manque souvent : <em>am 3 Oktober</em> ressemble à un cardinal, et en allemand l'écriture correcte est <em>am 3. Oktober</em>."
+      },
+      {
+        tip: "Une phrase complète pour une carte : <em>Liebe Anna, herzlichen Glückwunsch zum Geburtstag! Ich schenke dir ein Buch.</em> Les mois se disent avec <em>im</em> (<em>im Oktober</em>), le jour précis avec <em>am</em> (<em>am 3. Oktober</em>)."
+      }
+    ],
+    grammar: {
+      title: "Verbes avec le datif et dates",
+      note: "<b>gratulieren, schenken, danken</b> : la personne est au <b>datif</b>. L'occasion : <b>zum / zur</b> + datif. La date : <b>am</b> + ordinal avec un point, <b>am 3. Oktober</b>.",
+      table: {
+        head: ["verbe", "personne (datif)", "le reste de la phrase"],
+        rows: [
+          ["gratulieren", "Ich gratuliere dir", "zum Geburtstag."],
+          ["schenken", "Ich schenke meiner Schwester", "ein Buch."],
+          ["danken", "Ich danke dir", "für das Geschenk."],
+          ["Geburtstag haben", "Ich habe", "am 3. Oktober Geburtstag."]
+        ]
+      },
+      examples: [
+        { tr: "Je te souhaite un bon anniversaire.", note: "gratulieren + dir ; zum = zu dem" },
+        { tr: "Bon anniversaire !", note: "formule figée, sans verbe" },
+        { tr: "Nous vous félicitons pour votre mariage.", note: "zur = zu der (die Hochzeit est féminin)" },
+        { tr: "Mon anniversaire est le 3 octobre.", note: "am + ordinal avec un point" },
+        { tr: "J'offre un livre à ma sœur.", note: "meiner Schwester : datif féminin" },
+        { tr: "Je te remercie pour le cadeau.", note: "danken + datif ; für + accusatif" }
+      ]
+    },
+    vocab: [
+      "l'anniversaire",
+      "le cadeau",
+      "le mariage",
+      "les félicitations, les vœux",
+      "féliciter",
+      "offrir, faire cadeau de",
+      "remercier",
+      "la fête, la célébration",
+      "le gâteau",
+      "fêter, célébrer",
+      "la fête (entre amis)",
+      "la bougie (d'anniversaire)"
+    ],
+    exercises: [
+      {
+        q: "Comment souhaites-tu un bon anniversaire à un ami ?",
+        opts: [
+          "Ich gratuliere dir zum Geburtstag.",
+          "Ich gratuliere dich zum Geburtstag.",
+          "Ich gratuliere dir für Geburtstag."
+        ],
+        why: "<i>Gratulieren</i> veut la personne au datif (<b>dir</b>) et l'occasion avec <b>zu</b> + datif : <i>zum Geburtstag</i>."
+      },
+      {
+        q: "Comment dis-tu « Mon anniversaire est le 3 octobre » ?",
+        opts: [
+          "Mein Geburtstag ist an 3. Oktober.",
+          "Mein Geburtstag ist am 3. Oktober.",
+          "Mein Geburtstag ist im 3. Oktober."
+        ],
+        why: "Pour une date, on emploie <b>am</b> et l'ordinal avec un point : <i>am 3. Oktober</i>. <i>Im</i> sert pour le mois entier : <i>im Oktober</i>."
+      },
+      {
+        q: "Que dis-tu à quelqu'un qui se marie ?",
+        opts: [
+          "Herzlichen Glückwunsch zum Hochzeit!",
+          "Herzlichen Glückwunsch in der Hochzeit!",
+          "Herzlichen Glückwunsch zur Hochzeit!"
+        ],
+        why: "<i>Die Hochzeit</i> est féminin : <b>zur</b> = <i>zu der</i>. <i>Zum</i> s'emploierait avec un masculin ou un neutre."
+      },
+      {
+        q: "Complète : « Ich schenke ___ Schwester ein Buch. » (à ma sœur)",
+        opts: ["meiner", "meine", "meinem"],
+        why: "<i>Schenken</i> veut la personne au datif, et <i>die Schwester</i> est féminin : <b>meiner</b>. <i>Meinem</i> est le datif du masculin et du neutre."
+      },
+      {
+        q: "Complète : « Ich gratuliere ___ zum Geburtstag. » (à toi)",
+        hint: "datif de du",
+        why: "<b>dir</b> est le datif de <i>du</i> : <i>Ich gratuliere dir zum Geburtstag.</i>"
+      },
+      {
+        q: "Complète : « Mein Geburtstag ist ___ 3. Oktober. » (le)",
+        hint: "préposition de la date",
+        why: "Avec une date, on emploie <b>am</b> : <i>am 3. Oktober</i>."
+      },
+      {
+        q: "Associe chaque mot à son sens.",
+        pairs: ["anniversaire", "cadeau", "mariage", "félicitations"]
+      },
+      {
+        tr: "Je souhaite un bon anniversaire à Tim. (verbe : gratulieren)",
+        why: "<i>Ich gratuliere Tim zum Geburtstag</i>. <i>Zum Geburtstag gratuliere ich Tim</i> et <i>Ich gratuliere Tim zu seinem Geburtstag</i> conviennent aussi."
+      },
+      {
+        tr: "Bon anniversaire, Anna ! Je te félicite et je t'offre un livre.",
+        why: "Dans <i>Glückwunsch</i>, le <b>ü</b> est bref [ʏ], le <b>ck</b> se lit [k] et le <b>sch</b> est [ʃ] ; dans <i>herzlichen</i>, le <b>z</b> est [ts] et le <b>ch</b> après <b>i</b> est [ç] ; dans <i>gratuliere</i>, le <b>ie</b> est un <b>i</b> long [iː]."
+      },
+      {
+        tr: "Je souhaite un bon anniversaire à ma sœur et je lui offre un livre.",
+        why: "Dans <i>Schwester</i>, le <b>sch</b> est [ʃ] et le <b>w</b> est [v] ; dans <i>Geburtstag</i>, l'accent tombe sur <b>bur</b> et le <b>g</b> final se lit [k]."
+      }
+    ]
+  },
+  "lesson:a2-u07-l2": {
+    theme: "Invitations",
+    title: "Tu as envie de venir ?",
+    objectives: [
+      "inviter quelqu'un avec Hast du Lust, ... zu ...?",
+      "répondre à une invitation : accepter et décliner",
+      "mettre zu devant l'infinitif, et à l'intérieur d'un verbe séparable (mitzukommen)"
+    ],
+    theory: [
+      {
+        h: "Hast du Lust, ... zu ...?",
+        p: "Pour inviter quelqu'un, on dit <strong>Hast du Lust, ...</strong> puis un second verbe à l'infinitif, précédé de <strong>zu</strong> et placé <strong>à la fin</strong> : <em>Hast du Lust, am Samstag zu meiner Party zu kommen? Ich habe Lust, ins Kino zu gehen. Ich habe keine Zeit, am Samstag zu kommen.</em> Cela fonctionne aussi avec d'autres expressions, comme <em>Es ist schön, ...</em> ou <em>Ich habe vor, ...</em> (voir la fiche de grammaire)."
+      },
+      {
+        h: "Verbes séparables et virgule",
+        p: "Avec un verbe séparable, <strong>zu se place au milieu</strong>, entre le préfixe et le verbe, et tout s'écrit en un seul mot : <em>mitkommen</em> → <em>Hast du Lust, mitzukommen?</em> ; <em>einladen</em> → <em>Es ist schön, Freunde einzuladen.</em> On met la <strong>virgule</strong> quand le groupe avec <em>zu</em> est étoffé, c'est-à-dire qu'il comprend d'autres mots que l'infinitif (<em>..., am Samstag zu meiner Party zu kommen</em>) ; après un nom comme <em>Lust</em> ou <em>Zeit</em>, on l'écrit en général toujours. Après un verbe, avec l'infinitif seul (<em>Ich versuche zu schlafen</em>), la virgule est facultative."
+      },
+      {
+        contrast: "Le français emploie <em>de</em> + infinitif : <em>tu as envie de venir ?</em>, <em>je n'ai pas le temps de cuisiner</em>. L'allemand a <em>zu</em> + infinitif, qui se place toujours directement devant le verbe et à la fin de la phrase, alors qu'en français <em>de venir</em> suit tout de suite le verbe principal. Le français n'a pas de verbes à préfixe séparable : <em>mitzukommen</em> (avec <em>zu</em> à l'intérieur du mot) est donc nouveau, alors qu'en français on dirait <em>venir avec</em>, en deux mots. Après les verbes modaux (<em>können, müssen, wollen</em>), en allemand il n'y a <strong>pas</strong> de <em>zu</em>, comme en français il n'y a pas de <em>de</em> après <em>pouvoir</em> ou <em>vouloir</em> : <em>Kannst du kommen?</em> (tu peux venir ?)."
+      },
+      {
+        trap: "On n'écrit pas «zu mitkommen» ni «mit zu kommen» : la forme est <em>mitzukommen</em>, en un seul mot. Et on ne dit pas «Hast du Lust, kommen?» : il faut <em>zu</em>, <em>Hast du Lust, zu kommen?</em>. Après un modal, en revanche, <em>zu</em> manque : <em>Ich kann kommen</em>, pas «Ich kann zu kommen»."
+      },
+      {
+        tip: "Pour répondre : <em>Danke für die Einladung! Ich komme gern.</em> ou <em>Ich sage gern zu</em> (j'accepte). Pour décliner : <em>Leider habe ich keine Zeit.</em> ou <em>Leider muss ich absagen.</em> Pour inviter : <em>Ich lade dich zu meiner Party ein.</em>"
+      }
+    ],
+    grammar: {
+      title: "zu + infinitif",
+      note: "<b>zu</b> + infinitif <b>à la fin</b> : <i>Ich habe Lust, ins Kino zu gehen.</i> Verbe séparable : <b>zu</b> au milieu (<i>mitzukommen</i>). Groupe étoffé : <b>virgule</b>. Après un verbe modal, pas de <i>zu</i>.",
+      table: {
+        head: ["construction", "exemple", "remarque"],
+        rows: [
+          ["Lust haben", "Ich habe Lust, ins Kino zu gehen.", "zu devant l'infinitif, à la fin"],
+          ["keine Zeit haben", "Ich habe keine Zeit, am Samstag zu kommen.", "groupe étoffé : virgule"],
+          ["verbe séparable", "Hast du Lust, mitzukommen?", "zu au milieu : mitzukommen"],
+          ["verbe modal", "Kannst du kommen?", "pas de zu"]
+        ]
+      },
+      examples: [
+        { tr: "Tu as envie de venir aussi ?", note: "mitkommen : zu au milieu, mitzukommen" },
+        { tr: "Tu as envie de venir samedi à ma fête ?", note: "groupe étoffé : virgule après Lust" },
+        { tr: "J'ai envie d'aller au cinéma.", note: "zu gehen : zu devant l'infinitif" },
+        { tr: "Je n'ai pas le temps de venir samedi.", note: "keine Zeit, ... zu kommen" },
+        { tr: "C'est agréable d'inviter des amis.", note: "einladen : zu au milieu, einzuladen" },
+        { tr: "Merci pour l'invitation ! Je viens avec plaisir.", note: "réponse à une invitation" }
+      ]
+    },
+    vocab: [
+      "l'invitation",
+      "inviter",
+      "l'envie",
+      "venir aussi, venir avec (quelqu'un)",
+      "décommander, décliner",
+      "accepter (une invitation)",
+      "l'idée",
+      "l'invité",
+      "la visite, les invités",
+      "la surprise",
+      "passer (rendre visite)",
+      "le temps"
+    ],
+    exercises: [
+      {
+        q: "Comment invites-tu un ami à venir avec toi ?",
+        opts: [
+          "Hast du Lust, mitzukommen?",
+          "Hast du Lust, zu mitkommen?",
+          "Hast du Lust, mitkommen zu?"
+        ],
+        why: "Avec un verbe séparable, <b>zu</b> se place au milieu, en un seul mot : <i>mitzukommen</i>."
+      },
+      {
+        q: "Complète : « Hast du Lust, heute Abend ins Kino ___ gehen? »",
+        hint: "un mot court avant l'infinitif",
+        why: "<b>zu</b> se place directement devant l'infinitif : <i>ins Kino zu gehen</i>."
+      },
+      {
+        q: "Complète : « Hast du ___, mitzukommen? » (envie)",
+        hint: "un nom, avec une majuscule",
+        why: "<b>Lust</b> haben : <i>Hast du Lust, mitzukommen?</i>"
+      },
+      {
+        q: "Associe chaque mot à son sens.",
+        pairs: ["inviter", "décommander, décliner", "accepter (une invitation)", "surprise"]
+      },
+      {
+        tr: "Tu as envie de venir nous voir ?",
+        why: "<i>Hast du Lust, uns zu besuchen?</i> : la virgule après <i>Lust</i>, <i>zu</i> directement devant <i>besuchen</i>, à la fin."
+      },
+      {
+        tr: "Tu as envie d'aller au cinéma ?",
+        why: "<i>Hast du Lust, ins Kino zu gehen?</i> <i>In das Kino</i> convient aussi. <i>Zu gehen</i> termine la phrase."
+      },
+      {
+        q: "Complète la phrase.",
+        tr: "Merci pour l'invitation ! J'ai envie de venir à votre fête.",
+        why: "<i>Die Einladung</i> est l'invitation. <i>Zu eurer Party zu kommen</i> : le premier <b>zu</b> est la préposition, le second introduit l'infinitif."
+      },
+      {
+        q: "Tu es invité à une fête.",
+        setting: "Une amie t'invite à sa fête de samedi.",
+        lines: [
+          { tr: "Salut ! Samedi, c'est ma fête. Tu as envie de venir ?" },
+          {
+            tr: "Remercie pour l'invitation et dis que tu viens avec plaisir.",
+            answerTr: "Merci pour l'invitation ! Je viens avec plaisir."
+          },
+          { tr: "Super ! Tu peux apporter un gâteau ?" },
+          {
+            tr: "Réponds oui et dis que tu as envie de faire un gâteau.",
+            answerTr: "Oui, avec plaisir. J'ai envie de faire un gâteau."
+          }
+        ]
+      },
+      {
+        tr: "Tu as envie de venir à ma fête samedi ? Malheureusement je n'ai pas le temps, mais merci pour l'invitation !",
+        why: "Dans <i>Einladung</i>, le <b>ei</b> est [aɪ] ; dans <i>Samstag</i>, le <b>s</b> initial est sonore [z] ; dans <i>besuchen</i>, le <b>ch</b> après <b>u</b> est [x] et le <b>s</b> entre deux voyelles est sonore [z]."
+      },
+      {
+        tr: "Tu as envie de venir avec moi au cinéma ?",
+        why: "Dans <i>Kino</i>, le <b>i</b> est long [iː] ; dans <i>mit</i>, le <b>i</b> est bref ; dans <i>Lust</i>, le <b>u</b> est bref et le <b>st</b> se lit [st]."
+      }
+    ]
+  },
+  "lesson:a2-u07-l3": {
+    theme: "Salutations et coutumes",
+    title: "Allemagne, Autriche, Suisse",
+    objectives: [
+      "connaître quelques salutations typiques des trois régions (Grüß Gott, Grüezi, Servus)",
+      "décrire une coutume comme une tendance, avec oft et meistens",
+      "dire comment on se salue et à quel registre, entre du et Sie"
+    ],
+    theory: [
+      {
+        h: "Un allemand, trois pays",
+        p: "On parle allemand en Allemagne, en Autriche et en Suisse (où, en plus de l'allemand, il y a le français, l'italien et le romanche). L'Allemagne, l'Autriche et la Suisse partagent l'allemand standard, avec quelques différences nationales de vocabulaire, de prononciation et d'orthographe ; les salutations et certaines coutumes changent d'une région à l'autre. <em>Guten Tag</em> convient à peu près partout. <em>Grüß Gott</em> s'entend plus souvent dans le sud de l'Allemagne et en Autriche, <em>Servus</em> surtout en Autriche et en Bavière (on le dit aussi pour prendre congé), <em>Grüezi</em> en Suisse alémanique, <em>Moin</em> dans le nord de l'Allemagne. Ce sont des <strong>tendances</strong>, pas des règles : c'est pourquoi <em>oft</em> et <em>meistens</em> apparaissent dans les phrases de cette leçon."
+      },
+      {
+        h: "Raconter une coutume",
+        p: "Pour décrire une coutume, on emploie <strong>man</strong> avec le verbe à la troisième personne du singulier : <em>In der Schweiz sagt man oft Grüezi.</em> Une tendance se signale avec <em>oft, meistens, in vielen Familien</em> : <em>In vielen Familien feiert man Weihnachten am 24. Dezember.</em> Le registre se choisit avec <em>du</em> et <em>Sie</em> : <em>Im Büro siezt man oft, unter Freunden duzt man sich.</em>"
+      },
+      {
+        contrast: "En France, à Noël, le réveillon du 24 au soir est pour beaucoup de familles le grand moment du repas, et les cadeaux s'ouvrent souvent à minuit ou le matin du 25. Dans beaucoup de familles allemandes, le moment principal est le soir du 24 décembre, <em>Heiligabend</em>, avec les cadeaux ; le 25 et le 26 sont des <em>Feiertage</em>. Ce sont des tendances, pas des règles : chaque famille et chaque région a ses habitudes. À la <em>Silvester</em> (le 31 décembre, la Saint-Sylvestre), beaucoup de gens fêtent avec des amis et des feux d'artifice à minuit. Autre différence : en français, <em>vous</em> sert à la fois pour le vouvoiement et pour le pluriel, alors que l'allemand distingue <em>Sie</em> (politesse), <em>du</em> (un ami) et <em>ihr</em> (plusieurs amis). Et en français, <em>bonjour</em> convient presque partout ; en allemand, le choix entre <em>Grüß Gott</em>, <em>Grüezi</em> et <em>Servus</em> dépend beaucoup de l'endroit où l'on se trouve."
+      },
+      {
+        trap: "Ne généralise pas : «En Allemagne on dit Grüß Gott» est trop large, car dans beaucoup de régions du nord on ne l'entend presque jamais. Mieux vaut une phrase prudente : <em>In Süddeutschland und in Österreich sagt man oft Grüß Gott.</em> Autre différence d'écriture : en Suisse, on écrit en général <em>ss</em> à la place de <em>ß</em> (<em>Strasse</em>, <em>Grüsse</em>), en Allemagne et en Autriche on emploie <em>ß</em> (<em>Straße</em>, <em>Grüße</em>)."
+      },
+      {
+        tip: "Quand tu ne sais pas quelle salutation employer, <em>Guten Tag</em> (et <em>Auf Wiedersehen</em>) est un choix sûr, et avec des personnes que tu ne connais pas, la forme <em>Sie</em> reste de mise."
+      }
+    ],
+    grammar: {
+      title: "Salutations dans les trois régions et registre",
+      note: "Une salutation ou une coutume se décrit comme une <b>tendance</b> : <b>man</b> + <b>oft / meistens</b>. Entre inconnus <b>Sie</b>, entre amis <b>du</b>.",
+      table: {
+        head: ["salutation", "où on l'entend le plus souvent", "remarque"],
+        rows: [
+          ["Guten Tag", "dans les trois régions", "neutre, convient à beaucoup de situations"],
+          ["Grüß Gott", "sud de l'Allemagne, Autriche", "on l'entend souvent aussi dans les magasins"],
+          ["Servus", "Autriche, Bavière", "informel, pour dire bonjour et au revoir"],
+          ["Grüezi", "Suisse alémanique", "se dit souvent à des personnes qu'on ne connaît pas"],
+          ["Moin", "nord de l'Allemagne", "informel, s'entend à toute heure"],
+          ["Hallo", "dans les trois régions", "informel, entre amis et collègues"]
+        ]
+      },
+      examples: [
+        { tr: "Dans le sud de l'Allemagne et en Autriche, on dit souvent Grüß Gott.", note: "oft : une tendance" },
+        { tr: "En Suisse, on dit souvent Grüezi.", note: "man + troisième personne du singulier" },
+        { tr: "Entre amis, on dit aussi Hallo.", note: "unter Freunden : registre informel" },
+        { tr: "En Autriche, on dit souvent Servus.", note: "Servus : informel" },
+        { tr: "Dans beaucoup de familles, on fête Noël le 24 décembre.", note: "in vielen Familien : une tendance" },
+        { tr: "Au bureau, on se vouvoie souvent, entre amis on se tutoie.", note: "siezen et duzen" }
+      ]
+    },
+    vocab: [
+      "la coutume",
+      "la tradition",
+      "le pays, la nation",
+      "la région",
+      "le jour férié",
+      "le marché de Noël",
+      "la salutation, l'accueil",
+      "saluer, accueillir",
+      "typique",
+      "différent, varié",
+      "la différence",
+      "la Saint-Sylvestre (le 31 décembre)"
+    ],
+    exercises: [
+      {
+        q: "Quelle salutation entend-on souvent en Suisse alémanique ?",
+        opts: ["Grüß Gott.", "Grüezi.", "Moin."],
+        why: "<i>Grüezi</i> est la salutation que l'on entend souvent en Suisse alémanique. <i>Grüß Gott</i> est plus fréquent dans le sud de l'Allemagne et en Autriche, <i>Moin</i> dans le nord de l'Allemagne."
+      },
+      {
+        q: "Avec un client que tu ne connais pas, tu emploies en général...",
+        opts: ["Sie", "du", "ihr"],
+        why: "Avec des personnes que l'on ne connaît pas et dans des contextes formels, on emploie en général <b>Sie</b> ; <i>du</i> est pour les amis et la famille."
+      },
+      {
+        q: "Quelle phrase est formulée avec prudence, sans généraliser ?",
+        opts: [
+          "In der Schweiz gibt es keine Traditionen.",
+          "In Deutschland feiern alle Weihnachten gleich.",
+          "Die Bräuche sind oft von Region zu Region verschieden."
+        ],
+        why: "<b>oft</b> présente les coutumes comme des tendances. Les deux autres phrases sont trop absolues et ne sont pas vraies."
+      },
+      {
+        q: "Complète la salutation typique du sud de l'Allemagne et de l'Autriche : « Grüß ___. »",
+        hint: "le deuxième mot de la salutation",
+        why: "<b>Grüß Gott</b> : on l'entend souvent dans le sud de l'Allemagne et en Autriche."
+      },
+      {
+        q: "Associe chaque mot à son sens.",
+        pairs: ["coutume", "jour férié", "marché de Noël", "différence"]
+      },
+      {
+        tr: "En Autriche, on dit souvent Servus.",
+        why: "<i>In Österreich sagt man oft Servus</i>. <i>Man sagt in Österreich oft Servus</i>, <i>Oft sagt man in Österreich Servus</i>, <i>Man sagt oft in Österreich Servus</i> et <i>Servus sagt man in Österreich oft</i> conviennent aussi."
+      },
+      {
+        tr: "Chez nous, on dit souvent Hallo.",
+        why: "<i>Bei uns sagt man oft Hallo</i>. <i>Man sagt bei uns oft Hallo</i>, <i>Oft sagt man bei uns Hallo</i>, <i>Man sagt oft bei uns Hallo</i> et <i>Hallo sagt man bei uns oft</i> conviennent aussi."
+      },
+      {
+        q: "Complète la phrase.",
+        tr: "En Suisse, on dit souvent Grüezi. En Autriche, on dit souvent Servus.",
+        why: "<i>Die Schweiz</i> après <i>in der</i> ; <i>Österreich</i> après <i>in</i>, sans article."
+      },
+      {
+        tr: "Dans le sud de l'Allemagne et en Autriche, on dit souvent Grüß Gott. En Suisse, on dit souvent Grüezi. Entre amis, on dit aussi Hallo.",
+        why: "Dans <i>Grüß</i>, le <b>ü</b> est long [yː] et le <b>ß</b> est un <b>s</b> sourd ; dans <i>Österreich</i>, le <b>ö</b> est long [øː] et le <b>ch</b> final après <b>ei</b> est [ç] ; dans <i>Servus</i>, le <b>s</b> initial est sonore [z] et le <b>v</b> est [v]."
+      },
+      {
+        tr: "Les coutumes sont souvent différentes d'une région à l'autre.",
+        why: "Dans <i>Bräuche</i>, le <b>äu</b> est [ɔʏ] et le <b>ch</b> après <b>äu</b> est [ç] ; dans <i>verschieden</i>, le <b>sch</b> est [ʃ] et le <b>ie</b> est un <b>i</b> long [iː]."
+      }
+    ]
+  },
+  "lesson:a2-u07-l4": {
+    theme: "Comment et quand",
+    title: "normalement, lentement",
+    objectives: [
+      "employer un adjectif comme adverbe, sans terminaison (langsam, schnell, laut)",
+      "employer normalerweise, leider, hoffentlich et vielleicht",
+      "mettre l'adverbe en tête et le verbe en deuxième position"
+    ],
+    theory: [
+      {
+        h: "L'adjectif qui sert d'adverbe",
+        p: "En allemand, l'<strong>adjectif</strong> sans terminaison peut servir d'<strong>adverbe</strong>, c'est-à-dire dire comment se fait une action : <em>Er spricht langsam. Sie fährt schnell. Wir singen laut.</em> C'est le même mot que l'on emploie pour décrire un nom : <em>Der Zug ist langsam</em>, mais devant un nom il prend une terminaison (<em>ein langsamer Zug</em>) ; comme adverbe, il n'y a jamais de terminaison."
+      },
+      {
+        h: "Adverbes de phrase : normalerweise, leider, hoffentlich, vielleicht",
+        p: "Certains adverbes disent quelque chose sur la <strong>phrase entière</strong> : <strong>normalerweise</strong> (d'habitude), <strong>leider</strong> (malheureusement), <strong>hoffentlich</strong> (espérons que, j'espère que), <strong>vielleicht</strong> (peut-être). Ils peuvent ouvrir la phrase, et alors le verbe reste en <strong>deuxième position</strong> et le sujet passe après : <em>Normalerweise feiere ich meinen Geburtstag mit Freunden. Leider habe ich am Samstag keine Zeit. Hoffentlich kommst du zur Party. Vielleicht kommt Tim später.</em> Dans la phrase, ils se trouvent en général après le verbe : <em>Ich habe leider keine Zeit.</em>"
+      },
+      {
+        contrast: "Le français forme beaucoup d'adverbes avec <em>-ment</em> (<em>lentement, rapidement</em>) ou emploie l'adjectif tel quel (<em>il parle fort</em>) ; l'allemand emploie presque toujours l'adjectif tel quel : <em>langsam</em> veut dire à la fois « lent » et « lentement ». L'ordre des mots est l'autre différence : en français, <em>Malheureusement, je n'ai pas le temps</em> garde le sujet avant le verbe, mais en allemand, quand l'adverbe ouvre la phrase, le verbe vient tout de suite : <em>Leider habe ich keine Zeit</em>. Quant à <em>hoffentlich</em>, c'est un adverbe à lui seul : le français construit la phrase avec <em>j'espère que</em> ou <em>espérons que</em>, l'allemand non : <em>Hoffentlich kommst du</em>, sans <em>dass</em>."
+      },
+      {
+        trap: "<em>normal</em> est un adjectif (<em>Das ist normal</em>), alors que « normalement » se dit <em>normalerweise</em>. Quand l'un de ces mots ouvre la phrase, le verbe vient juste après : <em>Leider habe ich keine Zeit</em>, pas «Leider ich habe keine Zeit». Et n'ajoute pas de terminaison à l'adverbe : <em>Er spricht langsam</em>, pas «Er spricht langsame»."
+      },
+      {
+        tip: "D'autres adverbes utiles à apprendre avec ceux-ci : <em>deutlich</em> (clairement), <em>leise</em> (doucement, à voix basse), <em>später</em> (plus tard), <em>natürlich</em> (naturellement, bien sûr)."
+      }
+    ],
+    grammar: {
+      title: "Adverbes : adjectif sans terminaison et adverbes de phrase",
+      note: "Un <b>adjectif sans terminaison</b> sert d'adverbe : <i>Er spricht langsam.</i> Les adverbes de phrase comme <b>normalerweise, leider, hoffentlich, vielleicht</b> peuvent ouvrir la phrase : le verbe reste en <b>deuxième position</b>.",
+      table: {
+        head: ["mot", "sens", "exemple"],
+        rows: [
+          ["normalerweise", "d'habitude", "Normalerweise esse ich um zwölf Uhr."],
+          ["leider", "malheureusement", "Leider habe ich keine Zeit."],
+          ["hoffentlich", "espérons que, j'espère que", "Hoffentlich kommst du zur Party."],
+          ["vielleicht", "peut-être", "Vielleicht komme ich später."],
+          ["langsam", "lent ; lentement", "Er spricht langsam."]
+        ]
+      },
+      examples: [
+        { tr: "D'habitude, je fête mon anniversaire avec des amis.", note: "normalerweise ouvre la phrase : verbe en deuxième position" },
+        { tr: "Malheureusement, je n'ai pas le temps samedi.", note: "leider : habe ich" },
+        { tr: "J'espère que tu viendras à la fête.", note: "hoffentlich, sans dass" },
+        { tr: "Anna danse lentement et avec grâce.", note: "langsam et schön : adjectifs employés comme adverbes" },
+        { tr: "Nous chantons fort.", note: "laut : pas de terminaison" },
+        { tr: "Peut-être que Tim viendra plus tard.", note: "vielleicht : kommt Tim" }
+      ]
+    },
+    vocab: [
+      "d'habitude, normalement",
+      "malheureusement",
+      "espérons que, j'espère que",
+      "peut-être",
+      "lent ; lentement",
+      "rapide ; rapidement",
+      "fort, à voix haute",
+      "doucement, à voix basse",
+      "clair ; clairement",
+      "plus tard, après",
+      "particulièrement, surtout",
+      "naturellement, bien sûr"
+    ],
+    exercises: [
+      {
+        q: "Quel mot signifie « malheureusement » ?",
+        opts: ["hoffentlich", "leider", "vielleicht"],
+        why: "<b>leider</b> = malheureusement. <i>Hoffentlich</i> est « j'espère que », <i>vielleicht</i> est « peut-être »."
+      },
+      {
+        q: "Dans quelle phrase <i>langsam</i> décrit-il le verbe, sans terminaison ?",
+        opts: ["Das Kind ist langsam.", "Das ist ein langsames Kind.", "Das Kind spricht langsam."],
+        why: "Dans <i>Das Kind spricht langsam</i>, <b>langsam</b> dit comment l'enfant parle, et il n'a pas de terminaison. Dans les deux autres phrases, il décrit l'enfant."
+      },
+      {
+        q: "Complète avec le mot de la leçon : « ___ feiere ich meinen Geburtstag zu Hause. » (d'habitude)",
+        hint: "commence par n",
+        why: "<b>Normalerweise</b> ouvre la phrase, et le verbe reste en deuxième position : <i>feiere ich</i>."
+      },
+      {
+        q: "Complète : « ___ habe ich am Samstag keine Zeit. » (malheureusement)",
+        hint: "adverbe de phrase",
+        why: "<b>Leider</b> ouvre la phrase et le verbe vient juste après : <i>habe ich</i>."
+      },
+      {
+        q: "Complète : « Die Kinder singen sehr ___. » (fort)",
+        hint: "adjectif, sans terminaison",
+        why: "<b>laut</b> est un adjectif sans terminaison qui sert d'adverbe."
+      },
+      {
+        q: "Associe chaque mot à son sens.",
+        pairs: ["d'habitude", "malheureusement", "j'espère que", "peut-être"]
+      },
+      {
+        tr: "Malheureusement, je n'ai pas le temps.",
+        why: "<i>Leider habe ich keine Zeit</i>. <i>Ich habe leider keine Zeit</i> convient aussi."
+      },
+      {
+        q: "Complète la phrase.",
+        tr: "Il parle lentement et je le comprends bien. J'espère que tu viendras à la fête !",
+        why: "<i>Langsam</i> est l'adjectif sans terminaison employé comme adverbe ; <i>Hoffentlich</i> ouvre la phrase et le verbe <i>kommst</i> reste en deuxième position."
+      },
+      {
+        tr: "D'habitude, je fête mon anniversaire à la maison. Malheureusement, je n'ai pas le temps samedi, mais peut-être que nous fêterons plus tard.",
+        why: "Dans <i>normalerweise</i>, le <b>w</b> est [v] et le <b>ei</b> est [aɪ] ; dans <i>vielleicht</i>, le <b>v</b> est [f], le premier <b>i</b> est bref et sans accent, qui tombe sur la deuxième syllabe [fiˈlaɪçt], et le <b>ch</b> après <b>ei</b> est [ç] ; dans <i>später</i>, le <b>sp</b> initial est [ʃp]."
+      },
+      {
+        tr: "J'espère que tu viendras à la fête. Peut-être que nous fêterons plus tard.",
+        why: "Dans <i>hoffentlich</i>, le <b>ch</b> après <b>i</b> est [ç] ; dans <i>später</i>, le <b>sp</b> initial se lit [ʃp] ; dans <i>vielleicht</i>, le <b>v</b> est [f]."
+      }
+    ]
+  },
+  "lesson:a2-u07-test": {
+    theme: "Contrôle",
+    title: "Test : Fêtes et coutumes",
+    objectives: ["vérifier gratulieren et le datif, les dates, zu + infinitif, les salutations dans les trois régions et les adverbes"],
+    theory: [
+      {
+        p: "Dix questions sur l'unité. On réussit avec 70 %. Ne relis pas les leçons pendant que tu réponds : si tu ne te souviens pas de quelque chose, mieux vaut retourner réviser."
+      }
+    ],
+    exercises: [
+      {
+        q: "Complète : « Wir gratulieren ___ zur Hochzeit. » (à vous)",
+        hint: "datif de ihr",
+        why: "<b>euch</b> est le datif de <i>ihr</i> : <i>Wir gratulieren euch zur Hochzeit.</i>"
+      },
+      {
+        q: "Complète : « Der Kurs beginnt ___ 5. Mai. » (le)",
+        hint: "préposition de la date",
+        why: "Avec une date, on emploie <b>am</b> : <i>am 5. Mai</i>."
+      },
+      {
+        q: "Complète : « Hast du Lust, ins Kino ___ gehen? »",
+        hint: "devant l'infinitif",
+        why: "<b>zu</b> se place directement devant l'infinitif : <i>ins Kino zu gehen</i>."
+      },
+      {
+        q: "Complète : « ___ kommst du zur Party. » (j'espère que)",
+        hint: "adverbe de phrase",
+        why: "<b>Hoffentlich</b> ouvre la phrase et le verbe <i>kommst</i> reste en deuxième position. Après <i>hoffentlich</i>, il n'y a pas de <i>dass</i>."
+      },
+      {
+        q: "Complète : « Ich schenke ___ Bruder ein Buch. » (à mon frère)",
+        opts: ["meinem", "meinen", "mein"],
+        why: "<i>Schenken</i> veut la personne au datif, et <i>der Bruder</i> est masculin : <b>meinem</b>."
+      },
+      {
+        q: "Quelle phrase est une invitation correcte ?",
+        opts: ["Hast du Lust, zu mitkommen?", "Hast du Lust, mitzukommen?", "Hast du Lust, mitkommen?"],
+        why: "Avec un verbe séparable, <b>zu</b> se place au milieu : <i>mitzukommen</i>, en un seul mot."
+      },
+      {
+        q: "Que signifie <i>leider</i> ?",
+        opts: ["d'habitude", "peut-être", "malheureusement"],
+        why: "<b>leider</b> = malheureusement. <i>Normalerweise</i> est « d'habitude », <i>vielleicht</i> est « peut-être »."
+      },
+      {
+        q: "Associe chaque mot à son sens.",
+        pairs: ["féliciter", "cadeau", "invitation", "coutume"]
+      },
+      {
+        tr: "Bon anniversaire ! Tu as envie de venir samedi à ma fête ?",
+        why: "Dans <i>Glückwunsch</i>, le <b>ü</b> est bref [ʏ] et le <b>sch</b> est [ʃ] ; dans <i>Samstag</i>, le <b>s</b> initial est sonore [z] ; dans <i>Lust</i>, le <b>u</b> est bref."
+      },
+      {
+        tr: "Je te souhaite un bon anniversaire. Tu as envie de fêter avec nous ?",
+        why: "Dans <i>gratuliere</i>, le <b>ie</b> est un <b>i</b> long [iː] ; dans <i>Geburtstag</i>, l'accent tombe sur <b>bur</b> ; dans <i>feiern</i>, le <b>ei</b> est [aɪ]."
       }
     ]
   }
