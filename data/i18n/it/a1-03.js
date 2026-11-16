@@ -23,7 +23,7 @@ LINGUAI.addStrings("it", {
         p: "Il possessivo si sceglie in base a <b>chi possiede</b>: <em>mein</em> (io), <em>dein</em> (tu), <em>sein</em> (lui), <em>ihr</em> (lei), <em>unser</em> (noi). Poi prende le desinenze di <em>ein</em>, in base al <b>nome posseduto</b>: <em>mein Vater</em>, <em>meine Mutter</em>, <em>mein Kind</em>, <em>meine Eltern</em>. Al maschile accusativo diventa <em>meinen</em>: <em>Ich mag meinen Bruder</em>."
       },
       {
-        contrast: "In italiano il possessivo ha l'articolo e concorda con la cosa posseduta: <em>il mio capo, la mia amica, i miei genitori</em>. In tedesco l'articolo non c'è (<em>mein Chef</em>, non «der mein Chef»). La base dipende dal possessore (<em>sein</em>, <em>ihr</em>...); la desinenza dipende da genere, numero e caso del nome posseduto: <em>meine</em> vale per «mia» e per «miei»."
+        contrast: "In italiano il possessivo di norma ha l'articolo e concorda con la cosa posseduta: <em>il mio capo, la mia amica, i miei genitori</em>; l'articolo manca solo con i nomi di parentela al singolare senza altre parole: <em>mia madre, mio padre</em>. In tedesco l'articolo non c'è mai: <em>mio padre</em> è <em>mein Vater</em> e <em>il mio capo</em> è <em>mein Chef</em>, non «der mein Chef». La base dipende dal possessore (<em>sein</em>, <em>ihr</em>...); la desinenza dipende da genere, numero e caso del nome posseduto: <em>meine</em> vale per «mia» e per «miei»."
       },
       {
         trap: "<em>Sua madre</em> in italiano può essere di lui o di lei. In tedesco il possessore si sente: <em>seine Mutter</em> è la madre di lui, <em>ihre Mutter</em> quella di lei. Non confondere <em>sein</em> (di lui) e <em>ihr</em> (di lei) solo perché la cosa posseduta è la stessa."
@@ -107,7 +107,7 @@ LINGUAI.addStrings("it", {
         why: "Niente articolo davanti al possessivo: <i>meine Schwester</i>, <i>mein Bruder</i>."
       },
       {
-        q: "Completa le due frasi.",
+        q: "Completa: «Questi sono i miei genitori. Mio padre si chiama Jan.»",
         tr: "Questi sono i miei genitori. Mio padre si chiama Jan.",
         why: "<i>Eltern</i> è plurale: <b>meine</b>. <i>Vater</i> è maschile nominativo: <b>Mein</b>, con la maiuscola a inizio frase."
       },
@@ -117,7 +117,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Questa è la mia famiglia: mio padre, mia madre e mio fratello.",
-        why: "In <i>Familie</i> la <b>ie</b> è una <b>i</b> lunga, la <b>e</b> finale si legge: «fa-MI-lie»."
+        why: "<i>Familie</i> si pronuncia /faˈmiːli̯ə/: la prima <b>i</b> è lunga e accentata; la terminazione <b>-ie</b> si pronuncia /i̯ə/, non è una <b>i</b> lunga."
       }
     ]
   },
@@ -227,7 +227,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Mio padre è alto, ha la barba e gli occhiali.",
-        why: "In <i>Brille</i> la <b>r</b> è uvulare, non rotolata; la <b>ll</b> è una <b>l</b> breve."
+        why: "In <i>Brille</i> la <b>r</b> può essere uvulare (la più diffusa) o apicale, anch'essa standard; nessuna delle due è sbagliata. La <b>ll</b> segna la <b>i</b> breve che precede e non è una geminata come in italiano."
       }
     ]
   },
@@ -245,14 +245,14 @@ LINGUAI.addStrings("it", {
         p: "<em>Wie sieht er aus?</em> chiede l'aspetto, <em>Wie ist er?</em> chiede il <b>carattere</b>: <em>Wie ist dein Chef?</em> – <em>Er ist sehr nett.</em> Anche qui l'aggettivo sta dopo <em>sein</em> e non cambia: <em>Meine Freundin ist lustig</em>, <em>Meine Eltern sind intelligent</em>."
       },
       {
-        contrast: "In italiano «simpatico» e «gentile» sono due parole che si scambiano spesso. In tedesco <em>nett</em> copre tutte e due («una persona carina, a modo»), <em>sympathisch</em> dice che la persona ti piace, <em>freundlich</em> che si comporta in modo cordiale. Il contrario di <em>freundlich</em> si fa con <em>un-</em>: <em>unfreundlich</em>."
+        contrast: "Come in italiano, una persona può essere gentile senza risultare simpatica. In tedesco <em>sympathisch</em> dice che una persona suscita simpatia, <em>freundlich</em> descrive un comportamento cordiale, <em>nett</em> può voler dire gentile, carino o simpatico secondo il contesto. Il contrario di <em>freundlich</em> si fa con <em>un-</em>: <em>unfreundlich</em>."
       },
       {
         h: "Negare un aggettivo: nicht",
         p: "Come hai visto nell'unità 3, un aggettivo si nega con <strong>nicht</strong>, che sta davanti a lui: <em>Er ist nicht unfreundlich</em>, <em>Sie ist nicht faul, sie ist sehr fleißig</em>. Con <em>aber</em> si contrappone: <em>Mein Chef ist nett, aber zu ernst</em>."
       },
       {
-        trap: "<em>Zu</em> davanti a un aggettivo significa «troppo», non «a»: <em>zu ernst</em> è «troppo serio». E <em>nicht</em> non diventa <em>kein</em> davanti a un aggettivo: «Er ist kein nett» è sbagliato, <em>kein</em> si usa solo con i nomi."
+        trap: "<em>Zu</em> davanti a un aggettivo significa «troppo», non «a»: <em>zu ernst</em> è «troppo serio». E <em>nicht</em> non diventa <em>kein</em> davanti a un aggettivo: «Er ist kein nett» è sbagliato; per negare un aggettivo dopo <em>sein</em> si usa <em>nicht</em>, <em>Er ist nicht nett</em>."
       },
       {
         tip: "Per descrivere una persona fai due mosse: l'aspetto (<em>Wie sieht sie aus?</em>) e il carattere (<em>Wie ist sie?</em>). Due domande diverse, due risposte diverse."
@@ -327,7 +327,7 @@ LINGUAI.addStrings("it", {
         why: "<i>Nicht schüchtern</i>: <i>nicht</i> sta davanti all'aggettivo. Poi una seconda frase con <i>sie ist ...</i>."
       },
       {
-        q: "Completa il dialogo.",
+        q: "Completa: «Com'è il tuo capo? È simpatico, ma troppo serio.»",
         tr: "Com'è il tuo capo? È simpatico, ma troppo serio.",
         why: "<i>Wie ist ...?</i> e <i>ist</i> nelle risposte; <i>zu</i> davanti all'aggettivo significa «troppo»."
       },
@@ -437,10 +437,10 @@ LINGUAI.addStrings("it", {
       },
       {
         q: "Traduci: «Tu parli tedesco meglio di me.»",
-        why: "<i>Besser</i> e <i>als ich</i>: dopo <i>als</i> il pronome resta al nominativo."
+        why: "<i>Besser</i> e <i>als ich</i>: qui <i>ich</i> è al nominativo perché è il soggetto della frase sottintesa: <i>als ich Deutsch spreche</i>."
       },
       {
-        q: "Completa la frase.",
+        q: "Completa la frase. Usa jung nella prima lacuna e alt nella seconda.",
         tr: "Io sono più giovane di te, ma tu sei più vecchio di me.",
         why: "<i>Jünger als du</i>, <i>älter als ich</i>: le dieresi di <i>jung</i> e <i>alt</i>."
       },
