@@ -513,5 +513,516 @@ LINGUAI.addStrings("pl", {
         why: "<i>Größer als ich</i>, potem <i>sehr sympathisch</i>: w <i>sympathisch</i> końcówka <b>sch</b> [ʃ] wymawia się jak polskie „sz”."
       }
     ]
+  },
+  "unit:a1-u09": {
+    title: "Czas wolny",
+    grammarNote: "czas teraźniejszy i dni · es regnet · gerade zamiast formy „właśnie coś robię” · für, ohne, um, durch, gegen · und, aber, oder, denn"
+  },
+  "lesson:a1-u09-l1": {
+    theme: "Weekend",
+    title: "Co robisz w weekend?",
+    objectives: [
+      "pytać i mówić, co się robi w weekend",
+      "wybierać między am Samstag a samstags",
+      "mówić o hobby za pomocą spielen, schwimmen, wandern, kochen"
+    ],
+    theory: [
+      {
+        h: "Czas teraźniejszy na zwyczaje i bliskie plany",
+        p: "Niemiecki czas teraźniejszy służy do tego, co robisz zwykle, i do tego, co zrobisz niedługo: <em>Am Samstag spiele ich Fußball</em> (w sobotę gram w piłkę nożną). Czasownik zostaje na <b>drugim miejscu</b>: jeśli zaczynasz zdanie od <em>am Samstag</em>, podmiot przesuwa się za czasownik."
+      },
+      {
+        contrast: "Polski odróżnia „w sobotę” (ta konkretna sobota) od „w soboty” (każdej soboty). Niemiecki ma na to dwie formy: <em>samstags</em> (z <em>-s</em>) wyraźnie oznacza zwyczaj, jak „w soboty”, natomiast <em>am Samstag</em> zależy od kontekstu: może to być jedna konkretna sobota, ale także sobota zwyczajowa (<em>Am Samstag spiele ich immer Fußball</em>). „W weekend” to <em>am Wochenende</em>: tak jak w polskim jest przyimek („w”), ale po niemiecku to <em>am</em>, a nie <em>in</em>."
+      },
+      {
+        trap: "<em>Wochenende</em> jest rodzaju nijakiego (<em>das Wochenende</em>), a „weekend” po polsku jest rodzaju męskiego: polski rodzaj ci nie pomaga. Przy sportach i instrumentach niemiecki nie używa przyimka: <em>Fußball spielen</em>, <em>Gitarre spielen</em>, a polski mówi „grać <em>w</em> piłkę”, „grać <em>na</em> gitarze”."
+      },
+      {
+        tip: "Żeby powiedzieć, że coś lubisz robić, dodaj <em>gern</em> po czasowniku: <em>Ich schwimme gern</em>. Do zapytania o plany najnaturalniejsze jest <em>Was machst du am Wochenende?</em>"
+      }
+    ],
+    grammar: {
+      title: "Kiedy: am, samstags, im",
+      note: "<b>am</b> dla konkretnego dnia i pory dnia, <b>-s</b> dla wyraźnego zwyczaju (<b>am</b> może też oznaczać zwyczaj, zależnie od kontekstu), <b>im</b> dla pór roku.",
+      table: {
+        head: ["kiedy", "forma", "przykład"],
+        rows: [
+          ["konkretna sobota (albo zwyczajowa, zależnie od kontekstu)", "am Samstag", "Am Samstag spiele ich Fußball."],
+          ["w każdą sobotę, wyraźny zwyczaj", "samstags", "Samstags schwimme ich gern."],
+          ["w weekend", "am Wochenende", "Am Wochenende wandere ich."],
+          ["wieczorem", "am Abend", "Am Abend koche ich."],
+          ["w porze roku", "im Winter", "Im Winter tanzen wir oft."]
+        ]
+      },
+      examples: [
+        { tr: "Co robisz w weekend?", note: "am Wochenende" },
+        { tr: "W sobotę gram w piłkę nożną.", note: "Fußball spielen bez przyimka" },
+        { tr: "W soboty lubię pływać.", note: "samstags = w każdą sobotę" },
+        { tr: "W niedzielę chodzę z przyjaciółmi na wycieczki piesze.", note: "wandern: chodzić po okolicy na wycieczkę" },
+        { tr: "Wieczorem gotuję dla mojej rodziny." },
+        { tr: "Zimą często tańczymy.", note: "im + pora roku" }
+      ]
+    },
+    vocab: [
+      "weekend",
+      "hobby, zainteresowanie",
+      "koncert",
+      "film",
+      "książka",
+      "wycieczka",
+      "grać (także na instrumencie)",
+      "pływać",
+      "chodzić na wycieczki piesze",
+      "gotować",
+      "tańczyć",
+      "w soboty, w każdą sobotę"
+    ],
+    exercises: [
+      {
+        q: "Jak zapytasz przyjaciela, co robi w weekend?",
+        opts: ["Was machst du am Wochenende?", "Was machst du im Wochenende?", "Was machst du an Wochenende?"],
+        why: "Z weekendem używa się <b>am</b>: <i>am Wochenende</i>. <i>Im Wochenende</i> to błąd kogoś, kto myśli o „w”."
+      },
+      {
+        q: "Jak powiesz „w każdą sobotę”?",
+        opts: ["Im Samstag", "Der Samstag", "Samstags"],
+        why: "<b>Samstags</b>, z <i>-s</i>, wyraźnie oznacza zwyczaj. <i>Am Samstag</i> zależy od kontekstu: zwykle chodzi o konkretną sobotę, ale może to być też zwyczaj."
+      },
+      {
+        q: "Uzupełnij: „Ich ___ gern Fußball.” (grać, ja)",
+        hint: "spielen, ich",
+        why: "Z <i>ich</i> czasownik regularny kończy się na <b>-e</b>: <i>ich spiele</i>."
+      },
+      {
+        q: "Uzupełnij: „Ich besuche ___ Sonntag meine Großmutter.” (w niedzielę)",
+        hint: "przyimek przy konkretnym dniu",
+        why: "Konkretny dzień wymaga <b>am</b>: <i>am Sonntag</i>."
+      },
+      {
+        q: "Dopasuj każdy czasownik do jego znaczenia.",
+        pairs: ["grać", "pływać", "chodzić na wycieczki piesze", "gotować"]
+      },
+      {
+        q: "Przetłumacz: „W sobotę gram w piłkę nożną, a w niedzielę chodzę na wycieczkę pieszą.” (konkretne dni, użyj wandern)",
+        why: "<i>Am Samstag spiele ich Fußball ...</i>: po okoliczniku czasu czasownik zostaje na drugim miejscu, a podmiot idzie za nim."
+      },
+      {
+        q: "Uzupełnij dialog (użyj treffen).",
+        tr: "Co robisz w weekend? Spotykam się z przyjaciółmi i idziemy do kina.",
+        why: "Z <i>du</i> mówi się <i>machst</i>; <i>ich treffe</i> to pierwsza osoba od <i>treffen</i>; <i>ins</i> to <i>in das</i>."
+      },
+      {
+        q: "Przyjaciel pyta cię o plany.",
+        setting: "Rozmawiasz z przyjacielem przez telefon.",
+        lines: [
+          { tr: "Cześć! Co robisz w weekend?" },
+          { tr: "Odpowiedz, że w sobotę grasz w piłkę nożną.", answerTr: "W sobotę gram w piłkę nożną." },
+          { tr: "A w niedzielę?" },
+          { tr: "Odpowiedz, że w niedzielę chodzisz na wycieczkę pieszą.", answerTr: "W niedzielę chodzę na wycieczkę pieszą." }
+        ]
+      },
+      {
+        tr: "W sobotę gram w piłkę nożną, a w niedzielę gotuję dla mojej rodziny.",
+        why: "W <i>Fußball</i> litera <b>ß</b> oznacza bezdźwięczne <b>s</b>, a <b>u</b> jest długie."
+      },
+      {
+        tr: "W sobotę tańczę, a w niedzielę chodzę na wycieczkę pieszą.",
+        why: "W <i>tanze</i> litera <b>z</b> czyta się [ts], jak polskie „c”; w <i>wandere</i> litera <b>w</b> brzmi jak polskie „w”."
+      }
+    ]
+  },
+  "lesson:a1-u09-l2": {
+    theme: "Pogoda",
+    title: "Pada",
+    objectives: [
+      "mówić o pogodzie za pomocą es regnet, es schneit, es ist kalt",
+      "używać es jako podmiotu w zdaniach o pogodzie",
+      "pytać o temperaturę i ją podawać"
+    ],
+    theory: [
+      {
+        h: "Es: podmiot, którego po polsku nie ma",
+        p: "Mówiąc o pogodzie, niemiecki wymaga podmiotu: <strong>es</strong>. <em>Es regnet</em> (pada deszcz), <em>Es schneit</em> (pada śnieg), <em>Es ist kalt</em> (jest zimno). <em>Es</em> nie oznacza żadnej rzeczy: tylko zajmuje miejsce podmiotu."
+      },
+      {
+        contrast: "Po polsku mówi się „jest zimno”, „jest ciepło”, bez żadnego podmiotu, a przy deszczu podmiotem jest sam deszcz: „pada deszcz”. W niemieckim w zdaniach o pogodzie <em>es</em> się nie pomija: <em>Regnet</em> samo nie jest zdaniem. Nawet gdy zdanie zaczyna się od innego elementu, <em>es</em> zostaje i stoi za czasownikiem: <em>Heute regnet es</em>, a nie <em>Heute regnet</em>. Polskie „jest zimno” ma przysłówek, a niemieckie <em>Es ist kalt</em> ma przymiotnik <em>kalt</em> z czasownikiem <em>sein</em>."
+      },
+      {
+        trap: "Zwróć uwagę na <em>die Sonne scheint</em>: tutaj podmiotem jest prawdziwa rzecz, <em>die Sonne</em>, i <em>es</em> nie jest potrzebne. Żeby powiedzieć „jest słonecznie”, mówi się natomiast <em>Es ist sonnig</em>. Pamiętaj też, że „pogoda” jest po polsku rodzaju żeńskiego, a <em>das Wetter</em> jest nijakie."
+      },
+      {
+        tip: "Do temperatury: <em>Wie viel Grad sind es?</em> i <em>Es sind zwanzig Grad.</em> Po liczebniku, przy temperaturze, <em>Grad</em> się nie zmienia; zwykła liczba mnoga to <em>Grade</em>. Żeby zapytać o pogodę: <em>Wie ist das Wetter?</em>"
+      }
+    ],
+    grammar: {
+      title: "Es w zdaniach o pogodzie",
+      note: "Podmiot <b>es</b> się nie pomija; gdy zdanie zaczyna się od innego elementu, stoi za czasownikiem.",
+      table: {
+        head: ["polski", "niemiecki", "przykład"],
+        rows: [
+          ["pada deszcz", "Es regnet.", "Heute regnet es nicht."],
+          ["pada śnieg", "Es schneit.", "Im Winter schneit es oft."],
+          ["jest zimno", "Es ist kalt.", "Heute ist es sehr kalt."],
+          ["jest ciepło / gorąco", "Es ist warm / heiß.", "Im Sommer ist es warm."],
+          ["jaka jest pogoda?", "Wie ist das Wetter?", "Wie ist das Wetter in Wien?"]
+        ]
+      },
+      examples: [
+        { tr: "Pada deszcz.", note: "es się nie pomija" },
+        { tr: "Zimą często pada śnieg.", note: "es za czasownikiem" },
+        { tr: "Dzisiaj jest bardzo zimno.", note: "sein, a nie machen" },
+        { tr: "Dzisiaj nie pada.", note: "nie pada deszcz" },
+        { tr: "Jaka jest pogoda?", note: "das Wetter jest nijakie" },
+        { tr: "Jest dwadzieścia stopni.", note: "Po liczebniku, przy temperaturze, Grad się nie zmienia: zwanzig Grad; zwykła liczba mnoga to Grade." }
+      ]
+    },
+    vocab: [
+      "pogoda",
+      "padać (o deszczu)",
+      "padać (o śniegu)",
+      "słońce",
+      "chmura",
+      "wiatr",
+      "zimny, zimno",
+      "ciepły (przyjemnie), ciepło",
+      "bardzo gorąco, upalny",
+      "słoneczny",
+      "wietrzny",
+      "stopień"
+    ],
+    exercises: [
+      {
+        q: "Jak powiesz „pada deszcz”?",
+        opts: ["Es regnet.", "Regnet.", "Sie regnet."],
+        why: "W niemieckim podmiot <b>es</b> się nie pomija: <i>Es regnet</i>."
+      },
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: ["Heute es regnet.", "Heute regnet es.", "Heute regnet."],
+        why: "Czasownik jest na drugim miejscu, a <i>es</i> zostaje, za czasownikiem."
+      },
+      {
+        q: "Uzupełnij: „Im Winter ___ es oft.” (padać o śniegu)",
+        hint: "schneien, es",
+        why: "<b>Schneit</b>: <i>schneien</i> w trzeciej osobie, z <i>es</i>."
+      },
+      {
+        q: "Uzupełnij: „Heute ist ___ sehr kalt.” (Dzisiaj jest bardzo zimno.)",
+        hint: "podmiot zdań o pogodzie",
+        why: "<b>Es</b> jest podmiotem i w zdaniach o pogodzie się go nie pomija."
+      },
+      {
+        q: "Dopasuj każde słowo do jego znaczenia.",
+        pairs: ["zimny", "bardzo gorąco", "słoneczny", "wietrzny"]
+      },
+      {
+        tr: "Dzisiaj jest bardzo zimno.",
+        why: "<i>Heute ist es sehr kalt</i>: czasownik na drugim miejscu. Poprawne jest też <i>Es ist heute sehr kalt</i>."
+      },
+      {
+        q: "Przetłumacz: „Dzisiaj pada deszcz i jest zimno.”",
+        why: "Dwa zdania, dwa <i>es</i>: <i>es regnet</i> i <i>es ist kalt</i>. Po <i>und</i> wspólny podmiot można pominąć: <i>Heute regnet es und ist kalt</i>."
+      },
+      {
+        q: "Uzupełnij dialog (trzecia luka: zimno).",
+        tr: "Jaka jest dzisiaj pogoda? Pada deszcz i jest zimno.",
+        why: "<i>Das Wetter</i> jest nijakie. Przy <i>regnet</i> i <i>ist kalt</i> podmiot <i>es</i> jest zawsze."
+      },
+      {
+        tr: "Dzisiaj świeci słońce, ale nie jest ciepło.",
+        why: "W <i>scheint</i> grupa <b>sch</b> czyta się [ʃ], jak polskie „sz”, a <b>ei</b> jak „aj”."
+      },
+      {
+        tr: "Zimą często pada śnieg i jest bardzo zimno.",
+        why: "W <i>schneit</i> grupa <b>sch</b> to [ʃ] (polskie „sz”), po niej <b>n</b>, a <b>ei</b> czyta się jak „aj”."
+      }
+    ]
+  },
+  "lesson:a1-u09-l3": {
+    theme: "Teraz",
+    title: "Czytam właśnie",
+    objectives: [
+      "mówić, co się robi teraz, za pomocą czasu teraźniejszego i gerade",
+      "używać im Moment jako zamiennika gerade",
+      "odmieniać lesen i sehen (oraz fernsehen)"
+    ],
+    theory: [
+      {
+        h: "Gerade + czas teraźniejszy",
+        p: "Niemiecki nie ma osobnej formy na „właśnie coś robię”. Żeby powiedzieć, że robisz coś teraz, używasz czasu teraźniejszego i dodajesz <strong>gerade</strong> (właśnie) albo <strong>im Moment</strong> (w tej chwili): <em>Ich lese gerade</em>. Zwykle <em>gerade</em> stoi za czasownikiem."
+      },
+      {
+        contrast: "Pod tym względem niemiecki jest bliski polskiemu: po polsku „czytam” znaczy zarówno „zwykle czytam”, jak i „czytam teraz”, a „teraz” albo „właśnie” to tylko wskazówka. Tak samo <em>Ich lese</em>. Nowością jest co innego: niemiecki czasownik <em>lesen</em> zmienia samogłoskę w drugiej i trzeciej osobie (<em>du liest</em>), a polskie „czytasz” jest regularne. W niektórych regionach słyszy się też <em>Ich bin am Lesen</em>, ale na razie nie jest ci potrzebne."
+      },
+      {
+        h: "Lesen i sehen zmieniają samogłoskę",
+        p: "W drugiej i trzeciej osobie liczby pojedynczej <em>lesen</em> i <em>sehen</em> zmieniają <b>e → ie</b>: <em>du liest</em>, <em>er liest</em>, <em>du siehst</em>, <em>er sieht</em>. <em>Fernsehen</em> jest rozdzielne: <em>Er sieht gerade fern</em>. W polskim przedrostki się nie oddzielają od czasownika, w niemieckim <em>fern</em> idzie na koniec zdania."
+      },
+      {
+        trap: "Samo <em>Ich lese</em> może znaczyć „czytam” (zwykle) albo „czytam teraz”. Jeśli chcesz, żeby było jasne, że to teraz, dodaj <em>gerade</em>. Używaj jednego odmienionego czasownika w czasie teraźniejszym: <em>ich lese gerade</em>. Nie dodawaj <em>bin</em>."
+      },
+      {
+        tip: "Pytanie i odpowiedź mają ten sam schemat: <em>Was machst du gerade? Ich lese gerade.</em> Przysłówki częstotliwości (<em>immer, oft, manchmal, nie</em>) stoją za odmienionym czasownikiem i podmiotem-zaimkiem: <em>Ich lese oft</em>, <em>Heute lese ich oft</em>. W polskim szyk jest swobodniejszy, w niemieckim czasownik trzyma drugie miejsce."
+      }
+    ],
+    grammar: {
+      title: "Lesen i sehen w czasie teraźniejszym",
+      note: "<b>e → ie</b> z <em>du</em> i <em>er/sie/es</em>. Z <b>gerade</b> znaczy „teraz”.",
+      table: {
+        head: ["osoba", "lesen", "sehen"],
+        rows: [
+          ["ich", "lese", "sehe"],
+          ["du", "liest", "siehst"],
+          ["er / sie / es", "liest", "sieht"],
+          ["wir", "lesen", "sehen"],
+          ["ihr", "lest", "seht"],
+          ["sie / Sie", "lesen", "sehen"]
+        ]
+      },
+      examples: [
+        { tr: "Czytam właśnie książkę.", note: "czas teraźniejszy + gerade" },
+        { tr: "Co teraz robisz?", note: "gerade = w tej chwili" },
+        { tr: "On ogląda telewizję.", note: "fernsehen: fern na końcu" },
+        { tr: "W tej chwili piszę wiadomość.", note: "im Moment na pierwszym miejscu: czasownik idzie za nim" },
+        { tr: "Słuchamy piosenki." },
+        { tr: "Ona właśnie rozmawia przez telefon." }
+      ]
+    },
+    vocab: [
+      "właśnie, teraz",
+      "w tej chwili",
+      "czytać",
+      "słuchać",
+      "pisać",
+      "telefonować",
+      "oglądać telewizję",
+      "uczyć się",
+      "gazeta",
+      "telefon komórkowy",
+      "wiadomość",
+      "piosenka"
+    ],
+    exercises: [
+      {
+        q: "Jak powiesz „czytam właśnie” (teraz)?",
+        opts: ["Ich lese gerade.", "Ich bin gerade lesend.", "Ich lesen gerade."],
+        why: "Używa się czasu teraźniejszego z <b>gerade</b>: nie ma formy z „być”."
+      },
+      {
+        q: "Co znaczy „Was machst du gerade?”",
+        opts: ["Co robisz zwykle?", "Co robisz teraz?", "Co robiłeś wczoraj?"],
+        why: "<i>Gerade</i> znaczy „w tej chwili”."
+      },
+      {
+        q: "Uzupełnij: „Du ___ gerade ein Buch.” (czytać)",
+        hint: "lesen, du",
+        why: "<i>Lesen</i> z <i>du</i> zmienia <b>e → ie</b>: <b>liest</b>."
+      },
+      {
+        q: "Uzupełnij: „Er ___ gerade fern.” (oglądać telewizję, on)",
+        hint: "fernsehen, er",
+        why: "<i>Fernsehen</i> jest rozdzielne i tak jak <i>sehen</i> zmienia <b>e → ie</b>: <b>sieht</b>, a <i>fern</i> idzie na koniec."
+      },
+      {
+        q: "Uzupełnij: „Wir ___ gerade ein Lied.” (słuchać)",
+        hint: "hören, wir",
+        why: "Z <i>wir</i> czas teraźniejszy od <i>hören</i> to <b>wir hören</b>: forma jest taka sama jak bezokolicznik."
+      },
+      {
+        tr: "Piszę teraz wiadomość.",
+        why: "<i>Ich schreibe gerade eine Nachricht</i>. Poprawne jest też <i>Gerade schreibe ich eine Nachricht</i>, ale wtedy podmiot idzie za czasownikiem."
+      },
+      {
+        q: "Przetłumacz: „Mój brat czyta właśnie gazetę.” (użyj gerade)",
+        why: "<i>Mein Bruder liest gerade die Zeitung</i>: z <i>er</i> i <i>Bruder</i> samogłoska się zmienia, <i>liest</i>."
+      },
+      {
+        q: "Uzupełnij: „Co teraz robisz? Czytam książkę, a mój brat ogląda telewizję.”",
+        tr: "Co teraz robisz? Czytam książkę, a mój brat ogląda telewizję.",
+        why: "<i>Machst</i>, <i>lese</i>, <i>sieht ... fern</i>: żadnej formy z „być”, tylko czas teraźniejszy z <i>gerade</i>."
+      },
+      {
+        tr: "Ja właśnie czytam, a mój brat w tej chwili ogląda telewizję.",
+        why: "W <i>sieht</i> litery <b>ie</b> oznaczają długie <b>i</b>, a <b>h</b> się nie wymawia; w wymowie standardowej początkowe <b>s</b> jest dźwięczne, jak polskie „z”."
+      },
+      {
+        tr: "Piszę wiadomość i słucham piosenki.",
+        why: "W <i>höre</i> litera <b>ö</b> jest długa; nie ma jej w polskim, wymawia się ją z ustami jak do „o”, ale językiem jak do „e”. W <i>Nachricht</i> pierwsze <b>ch</b> jest twarde [x], jak polskie „ch”, a drugie miękkie [ç]."
+      }
+    ]
+  },
+  "lesson:a1-u09-l4": {
+    theme: "Zaproszenie",
+    title: "Idziemy do kina?",
+    objectives: [
+      "proponować, przyjmować i odrzucać zaproszenie",
+      "używać für, ohne, um, durch, gegen z biernikiem",
+      "łączyć zdania za pomocą und, aber, oder, denn"
+    ],
+    theory: [
+      {
+        h: "Proponować, przyjmować, odrzucać",
+        p: "Żeby zaproponować: <em>Gehen wir ins Kino?</em> albo <em>Hast du Lust?</em> Żeby przyjąć: <em>Ja, gern!</em>, <em>Gute Idee!</em> Żeby grzecznie odmówić: <em>Leider kann ich nicht</em> albo <em>Tut mir leid</em>, a potem powód z <em>denn</em>. <em>Ins</em> to <em>in das</em>: tu jest to formuła do zapamiętania w tej postaci."
+      },
+      {
+        h: "Pięć przyimków z biernikiem",
+        p: "<strong>für</strong> (dla), <strong>ohne</strong> (bez), <strong>um</strong> (wokół; z godzinami, o), <strong>durch</strong> (przez), <strong>gegen</strong> (przeciw) zawsze wymagają <b>biernika</b>. W porównaniu z mianownikiem rodzajniki zmieniają formę tylko w rodzaju męskim: <em>der → den</em>, <em>ein → einen</em>. Zaimki mają własne formy biernika. <em>Die Karte ist für den Freund</em>, <em>Wir gehen durch den Park</em>. Z zaimkami: <em>für mich, für dich, ohne ihn, ohne sie</em>."
+      },
+      {
+        contrast: "Polskie przyimki wymagają różnych przypadków: „dla ciebie” i „bez niego” to dopełniacz, „przez park” to biernik, „przeciwko planowi” to celownik. Niemiecka piątka ma jeden przypadek, biernik, i widać go tylko w rodzaju męskim: <em>für den Freund</em>, <em>ohne meinen Bruder</em>; w żeńskim i nijakim różnicy nie widać: <em>für die Freundin</em>, <em>für das Kind</em>. „O ósmej” mówi się z <em>um</em>: <em>um acht Uhr</em>."
+      },
+      {
+        h: "Und, aber, oder, denn",
+        p: "Te cztery słowa łączą dwa zdania i <b>nie przesuwają czasownika</b>: <em>Ich bin müde, aber ich gehe ins Kino</em>. Po <em>und</em>, <em>oder</em> i <em>aber</em> identyczny podmiot można pominąć: <em>Ich gehe ins Kino und sehe einen Film</em>. Po <em>denn</em> podmiot zawsze się powtarza."
+      },
+      {
+        trap: "Polskie „bo” jest zwykle odpowiednikiem <em>denn</em>: <em>Ich komme nicht, denn ich muss arbeiten</em> („Nie przyjdę, bo muszę pracować”). Różnica w tym, że w niemieckim czasownik po <em>denn</em> musi zostać na drugim miejscu. Błędne są <em>denn ich arbeiten muss</em> (czasownik na końcu) i <em>denn muss ich arbeiten</em> (czasownik na pierwszym miejscu); gdy na początku stoi inny element, czasownik zostaje drugi: <em>denn morgen muss ich arbeiten</em>. Inne słowo na „ponieważ”, <em>weil</em>, wysyła czasownik na koniec: pojawi się później. Uważaj też na <em>gegen</em>: znaczy „przeciw”, ale z godzinami także „około” (<em>gegen acht Uhr</em>, koło ósmej)."
+      },
+      {
+        tip: "Żeby grzecznie odmówić: <em>Leider</em> + powód z <em>denn</em>. Przed <em>aber</em> i <em>denn</em> przecinek jest obowiązkowy, tak jak przed polskimi „ale” i „bo”."
+      }
+    ],
+    grammar: {
+      title: "Przyimki z biernikiem i spójniki",
+      note: "<b>für, ohne, um, durch, gegen</b> + biernik; <b>und, aber, oder, denn</b> nie przesuwają czasownika.",
+      table: {
+        head: ["przyimek", "znaczenie", "przykład"],
+        rows: [
+          ["für", "dla", "Die Karte ist für dich."],
+          ["ohne", "bez", "Ich trinke Kaffee ohne Zucker."],
+          ["um", "wokół; o (przy godzinach)", "Der Film beginnt um acht Uhr."],
+          ["durch", "przez", "Wir gehen durch den Park."],
+          ["gegen", "przeciw", "Ich bin gegen den Plan."]
+        ]
+      },
+      examples: [
+        { tr: "Idziemy do kina?", note: "ins = in das" },
+        { tr: "Bilet jest dla ciebie.", note: "für + biernik" },
+        { tr: "Piję kawę bez cukru.", note: "ohne + rzeczownik niepoliczalny: tu Zucker oznacza substancję w ogóle, więc zwykle bez rodzajnika" },
+        { tr: "Film zaczyna się o ósmej.", note: "um z godzinami" },
+        { tr: "Idziemy przez park, ale pada deszcz.", note: "aber nie przesuwa czasownika" },
+        { tr: "Nie przyjdę, bo muszę pracować.", note: "denn nie przesuwa czasownika: zostaje na drugim miejscu" }
+      ]
+    },
+    vocab: [
+      "kino",
+      "bilet (także: karta, kartka)",
+      "pomysł",
+      "propozycja",
+      "ochota",
+      "niestety",
+      "dla",
+      "bez",
+      "wokół; o (przy godzinach)",
+      "przez",
+      "przeciw",
+      "bo (podaje powód)"
+    ],
+    exercises: [
+      {
+        q: "Jak zaproponujesz przyjacielowi pójście do kina?",
+        opts: ["Gehen wir ins Kino?", "Wir ins Kino gehen?", "Gehen wir an Kino?"],
+        why: "Propozycja to pytanie z czasownikiem na pierwszym miejscu: <i>Gehen wir ...?</i> <i>Ins</i> to <i>in das</i>."
+      },
+      {
+        q: "Jak odmówisz i podasz powód?",
+        opts: ["Leider nicht, denn muss ich arbeiten.", "Leider nicht, denn ich arbeiten muss.", "Leider nicht, denn ich muss arbeiten."],
+        why: "<b>Denn</b> nie zajmuje miejsca w zdaniu, które po nim następuje: odmieniony czasownik zostaje na drugim miejscu, jak w <i>denn ich muss arbeiten</i> (ale także <i>denn morgen muss ich arbeiten</i>). Dwie pozostałe opcje mają czasownik na końcu albo na pierwszym miejscu."
+      },
+      {
+        q: "Uzupełnij: „Die Karte ist ___ dich.” (dla)",
+        hint: "dla + biernik",
+        why: "<b>Für</b> wymaga biernika: <i>für dich</i>."
+      },
+      {
+        q: "Uzupełnij: „Ich trinke Kaffee ___ Zucker.” (bez)",
+        hint: "bez",
+        why: "<b>Ohne</b> + biernik; przy rzeczowniku niepoliczalnym, takim jak <i>Zucker</i>, rodzajnika zwykle brak."
+      },
+      {
+        q: "Dopasuj każdy przyimek do jego znaczenia.",
+        pairs: ["dla", "bez", "przez", "przeciw"]
+      },
+      {
+        tr: "Idziemy przez park.",
+        why: "<i>Wir gehen durch den Park</i>: <i>durch</i> + biernik, <i>den</i>. Poprawne jest też <i>Durch den Park gehen wir</i>."
+      },
+      {
+        q: "Przetłumacz: „Nie przyjdę, bo muszę pracować.” (użyj denn)",
+        why: "<i>Ich komme nicht, denn ich muss arbeiten</i>: po <i>denn</i> odmieniony czasownik zostaje na drugim miejscu."
+      },
+      {
+        q: "Uzupełnij dialog (druga luka: bo).",
+        tr: "Idziemy do kina? Niestety nie mogę, bo muszę pracować. Ale jutro mam czas.",
+        why: "<i>Ins</i> to <i>in das</i>; <i>denn</i> podaje powód i nie przesuwa czasownika; <i>ich habe Zeit</i> używa <i>haben</i>."
+      },
+      {
+        tr: "Idziemy do kina? Niestety nie mogę, bo muszę pracować.",
+        why: "W <i>leider</i> litery <b>ei</b> czyta się jak „aj”, a <b>d</b> jest dźwięczne; w <i>Kino</i> pierwsze <b>i</b> jest długie."
+      },
+      {
+        tr: "Dobry pomysł! Idziemy do kina o ósmej?",
+        why: "W <i>Uhr</i> litera <b>h</b> się nie wymawia, a <b>u</b> jest długie; w <i>Idee</i> litery <b>ee</b> oznaczają długie <b>e</b>."
+      }
+    ]
+  },
+  "lesson:a1-u09-test": {
+    theme: "Sprawdzian",
+    title: "Sprawdzian z jednostki 9",
+    objectives: ["sprawdzić es, gerade, przyimki z biernikiem i spójniki"],
+    theory: [
+      {
+        p: "Dziesięć pytań z całej jednostki. Zaliczasz przy 70%. Nie zaglądaj do lekcji, odpowiadając: jeśli czegoś nie pamiętasz, lepiej wrócić do powtórki."
+      }
+    ],
+    exercises: [
+      {
+        q: "Uzupełnij: „Im Winter schneit ___ oft.” (Zimą często pada śnieg.)",
+        hint: "podmiot zdań o pogodzie",
+        why: "<b>Es</b> jest podmiotem i się go nie pomija."
+      },
+      {
+        q: "Uzupełnij: „Die Karte ist ___ meinen Bruder.” (dla)",
+        hint: "dla + biernik",
+        why: "<b>Für</b> + biernik: <i>meinen Bruder</i>."
+      },
+      {
+        q: "Uzupełnij: „Ich komme nicht, ___ ich muss arbeiten.” (bo)",
+        hint: "podaje powód, czasownik zostaje na drugim miejscu",
+        why: "<b>Denn</b> nie przesuwa czasownika."
+      },
+      {
+        q: "Uzupełnij: „Wir gehen ___ den Park.” (przez)",
+        hint: "przez",
+        why: "<b>Durch</b> + biernik: <i>den Park</i>."
+      },
+      {
+        q: "Które zdanie znaczy „czytam teraz”?",
+        opts: ["Ich bin lesen.", "Ich lesen gerade.", "Ich lese gerade."],
+        why: "Czas teraźniejszy z <b>gerade</b>: <i>ich lese gerade</i>."
+      },
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: ["Er geht ohne ich ins Kino.", "Er geht ohne mich ins Kino.", "Er geht ohne mir ins Kino."],
+        why: "<i>Ohne</i> wymaga biernika: <b>mich</b>."
+      },
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: ["Ich bleibe zu Hause, denn ich bin müde.", "Ich bleibe zu Hause, denn ich müde bin.", "Ich bleibe zu Hause, denn bin ich müde."],
+        why: "<i>Denn</i> nie zajmuje miejsca: odmieniony czasownik zostaje na drugim miejscu, jak w <i>denn ich bin müde</i> (ale także <i>denn heute bin ich müde</i>). Dwie pozostałe opcje mają czasownik na końcu albo na pierwszym miejscu."
+      },
+      {
+        tr: "W sobotę idziemy do kina.",
+        why: "<i>Am Samstag gehen wir ins Kino</i>: czasownik na drugim miejscu. Poprawne jest też <i>Wir gehen am Samstag ins Kino</i>."
+      },
+      {
+        tr: "Pada deszcz i jest zimno, ale ja idę do kina.",
+        why: "W <i>regnet</i> wymawia się [ɡn]: <b>g</b> oraz zwykłe <b>n</b>, jak w polskim „noc”; w <i>Kino</i> pierwsze <b>i</b> jest długie."
+      },
+      {
+        tr: "Niestety nie mogę, bo o ósmej muszę pracować.",
+        why: "W <i>muss</i> litery <b>ss</b> oznaczają bezdźwięczne <b>s</b>, a <b>u</b> jest krótkie; <i>arbeiten</i> to bezokolicznik na końcu zdania."
+      }
+    ]
   }
 });
