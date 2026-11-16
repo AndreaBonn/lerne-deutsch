@@ -100,7 +100,7 @@ LINGUAI.addUnits("A2", [
           {
             t: "cloze",
             text: "{{1}} ich klein war, haben wir in einem Dorf {{2}}.",
-            gaps: [["Als"], ["gewohnt"]]
+            gaps: [["Als"], ["gewohnt", "gelebt"]]
           },
           {
             t: "cloze",
@@ -110,7 +110,7 @@ LINGUAI.addUnits("A2", [
           {
             t: "cloze",
             text: "Als wir in Wien {{1}} {{2}}, bin ich oft Fahrrad gefahren.",
-            gaps: [["gewohnt"], ["haben"]]
+            gaps: [["gewohnt", "gelebt"], ["haben"]]
           },
           {
             t: "trans",
@@ -243,7 +243,7 @@ LINGUAI.addUnits("A2", [
           {
             t: "trans",
             dir: "toIt",
-            a: ["Ich erinnere mich gut an meine Schule"]
+            a: ["Ich erinnere mich gut an meine Schule", "An meine Schule erinnere ich mich gut"]
           },
           {
             t: "dialogue",
@@ -642,6 +642,275 @@ LINGUAI.addUnits("A2", [
         },
         { t: "listen", it: "Morgen fahre ich nach Wien, und wenn ich angekommen bin, rufe ich dich an." },
         { t: "speak", it: "Im Sommer werden wir in die Schweiz fahren, und danach fahre ich zu meiner Tante." }
+      ]
+    }
+  },
+  {
+    id: "a2-u03",
+    icon: "🤝",
+    titleIt: "Ich sehe ihn, ich helfe ihm",
+    lessons: [
+      {
+        id: "a2-u03-l1",
+        tags: ["g-pron-akk"],
+        cefr: "A2",
+        titleIt: "ihn, sie, es",
+        grammar: {
+          examples: [
+            { it: "Ich kenne ihn gut." },
+            { it: "Wir treffen sie morgen." },
+            { it: "Er sieht mich nicht." },
+            { it: "Ich rufe dich heute Abend an." },
+            { it: "Das Kind ist krank. Ich besuche es heute." },
+            { it: "Sie laden uns zur Party ein." }
+          ]
+        },
+        vocab: [
+          { it: "der Bruder", plural: "die Brüder", ex: "Mein Bruder wohnt in Hamburg." },
+          { it: "die Schwester", plural: "die Schwestern", ex: "Meine Schwester arbeitet im Krankenhaus." },
+          { it: "der Nachbar", plural: "die Nachbarn", ex: "Unser Nachbar ist sehr freundlich." },
+          { it: "die Kollegin", plural: "die Kolleginnen", ex: "Meine Kollegin spricht gut Englisch." },
+          { it: "der Chef", plural: "die Chefs", ex: "Der Chef ist heute nicht im Büro." },
+          { it: "das Kind", plural: "die Kinder", ex: "Das Kind spielt im Garten." },
+          { it: "der Schlüssel", plural: "die Schlüssel", ex: "Ich finde meinen Schlüssel nicht." },
+          { it: "die Zeitung", plural: "die Zeitungen", ex: "Ich lese jeden Morgen die Zeitung." },
+          { it: "kennen", ex: "Kennst du meine Schwester?" },
+          { it: "sehen", ex: "Ich sehe dich morgen." },
+          { it: "treffen", ex: "Ich treffe sie oft im Café." },
+          { it: "einladen", ex: "Wir laden dich zur Party ein." }
+        ],
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "mcq", a: 2 },
+          { t: "multi", a: [0, 1, 2] },
+          { t: "fill", a: ["ihn"] },
+          { t: "fill", a: ["sie"] },
+          {
+            t: "cloze",
+            text: "Meine Kollegin ist nett. Ich treffe {{1}} oft, und sie lädt {{2}} manchmal ein.",
+            gaps: [["sie"], ["mich"]]
+          },
+          {
+            t: "order",
+            tokens: ["Heute", "treffe", "ich", "sie", "im", "Café"],
+            a: [
+              "Heute treffe ich sie im Café",
+              "Ich treffe sie heute im Café",
+              "Im Café treffe ich sie heute",
+              "Ich treffe sie im Café heute"
+            ]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Ich sehe ihn morgen",
+              "Morgen sehe ich ihn",
+              "Ich treffe ihn morgen",
+              "Morgen treffe ich ihn"
+            ]
+          },
+          { t: "listen", it: "Kennst du meinen Bruder? Ich sehe ihn jeden Tag, und er besucht mich oft." },
+          { t: "speak", it: "Meine Kollegin ist nett. Ich treffe sie oft, und sie lädt mich manchmal ein." }
+        ]
+      },
+      {
+        id: "a2-u03-l2",
+        tags: ["g-pron-dat", "g-verben-dativ"],
+        cefr: "A2",
+        titleIt: "Ich helfe dir, das gefällt mir",
+        grammar: {
+          examples: [
+            { it: "Ich helfe dir gern." },
+            { it: "Das Handy gehört mir." },
+            { it: "Die Jacke gefällt mir sehr." },
+            { it: "Wir danken ihm für das Geschenk." },
+            { it: "Er antwortet mir nicht." },
+            { it: "Meine Schwester braucht Hilfe. Ich helfe ihr." }
+          ]
+        },
+        vocab: [
+          { it: "das Geschenk", plural: "die Geschenke", ex: "Das Geschenk ist für meine Mutter." },
+          { it: "die Hilfe", plural: "-", ex: "Danke für deine Hilfe." },
+          { it: "der Rucksack", plural: "die Rucksäcke", ex: "Der Rucksack ist ziemlich schwer." },
+          { it: "das Handy", plural: "die Handys", ex: "Mein Handy liegt auf dem Tisch." },
+          { it: "die Jacke", plural: "die Jacken", ex: "Die Jacke ist neu." },
+          { it: "das Buch", plural: "die Bücher", ex: "Das Buch ist spannend." },
+          { it: "helfen", ex: "Kannst du mir bitte helfen?" },
+          { it: "gefallen", ex: "Die Jacke gefällt mir." },
+          { it: "gehören", ex: "Der Rucksack gehört meinem Bruder." },
+          { it: "danken", ex: "Ich danke dir für die Einladung." },
+          { it: "antworten", ex: "Er antwortet mir nicht." },
+          { it: "gern", ex: "Ich helfe dir gern." }
+        ],
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "mcq", a: 1 },
+          { t: "multi", a: [0, 1, 3] },
+          { t: "fill", a: ["mir"] },
+          { t: "fill", a: ["ihr"] },
+          {
+            t: "cloze",
+            text: "Danke, Anna! Ich {{1}} {{2}} für deine Hilfe.",
+            gaps: [["danke"], ["dir"]]
+          },
+          {
+            t: "order",
+            tokens: ["Die", "Jacke", "gefällt", "mir", "sehr"],
+            a: ["Die Jacke gefällt mir sehr", "Mir gefällt die Jacke sehr"]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: ["Ich helfe dir gern", "Ich helfe dir gerne", "Gern helfe ich dir", "Gerne helfe ich dir"]
+          },
+          { t: "listen", it: "Kannst du mir bitte helfen? Ich danke dir, das ist sehr nett von dir." },
+          { t: "speak", it: "Der Rucksack gehört mir, und die Jacke gefällt mir sehr." }
+        ]
+      },
+      {
+        id: "a2-u03-l3",
+        tags: ["g-wortstellung", "g-pron-dat"],
+        cefr: "A2",
+        titleIt: "Ich gebe es ihm",
+        grammar: {
+          examples: [
+            { it: "Ich gebe es ihm." },
+            { it: "Ich zeige dir das Foto." },
+            { it: "Ich schenke meiner Schwester ein Buch." },
+            { it: "Er schickt es mir morgen." },
+            { it: "Wir leihen ihm das Fahrrad." },
+            { it: "Ich erkläre es dir später." }
+          ]
+        },
+        vocab: [
+          { it: "das Foto", plural: "die Fotos", ex: "Das Foto ist von meinem Urlaub." },
+          { it: "der Brief", plural: "die Briefe", ex: "Der Brief kommt aus Wien." },
+          { it: "das Paket", plural: "die Pakete", ex: "Das Paket ist schwer." },
+          { it: "das Geld", plural: "-", ex: "Das Geld liegt auf dem Tisch." },
+          { it: "die Postkarte", plural: "die Postkarten", ex: "Die Postkarte ist aus Wien." },
+          { it: "das Fahrrad", plural: "die Fahrräder", ex: "Mein Fahrrad ist neu." },
+          { it: "geben", ex: "Gibst du mir bitte den Schlüssel?" },
+          { it: "schenken", ex: "Wir schenken unserer Oma ein Buch." },
+          { it: "zeigen", ex: "Ich zeige dir das Foto." },
+          { it: "schicken", ex: "Sie schickt mir eine Postkarte." },
+          { it: "leihen", ex: "Kannst du mir dein Fahrrad leihen?" },
+          { it: "erklären", ex: "Er erklärt mir den Weg." }
+        ],
+        exercises: [
+          { t: "mcq", a: 1 },
+          { t: "mcq", a: 1 },
+          { t: "multi", a: [0, 1, 3] },
+          { t: "fill", a: ["es"] },
+          { t: "fill", a: ["ihm"] },
+          {
+            t: "cloze",
+            text: "Der Brief ist fertig. Ich schicke {{1}} {{2}} morgen.",
+            gaps: [["ihn"], ["dir"]]
+          },
+          {
+            t: "match",
+            pairs: [
+              { it: "Ich gebe es ihm." },
+              { it: "Ich gebe ihm das Buch." },
+              { it: "Ich gebe es meinem Bruder." },
+              { it: "Ich gebe es dir." }
+            ]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: ["Ich gebe es dir morgen", "Morgen gebe ich es dir"]
+          },
+          {
+            t: "listen",
+            it: "Ich habe dein Foto gefunden. Ich zeige es dir gleich, und morgen schicke ich es deiner Schwester."
+          },
+          { t: "speak", it: "Der Schlüssel gehört meinem Bruder. Ich gebe ihn ihm morgen." }
+        ]
+      },
+      {
+        id: "a2-u03-l4",
+        tags: ["g-imperativ", "g-modalpartikeln"],
+        cefr: "A2",
+        titleIt: "Sag mal! Ruf mich doch an!",
+        grammar: {
+          examples: [
+            { it: "Komm mal her!" },
+            { it: "Warte einen Moment!" },
+            { it: "Ruf mich doch an!" },
+            { it: "Mach doch eine Pause!" },
+            { it: "Sag mal, hast du Zeit?" },
+            { it: "Seid bitte vorsichtig!" }
+          ]
+        },
+        vocab: [
+          { it: "der Tipp", plural: "die Tipps", ex: "Hast du einen Tipp für mich?" },
+          { it: "die Idee", plural: "die Ideen", ex: "Das ist eine gute Idee." },
+          { it: "der Moment", plural: "die Momente", ex: "Warte einen Moment!" },
+          { it: "die Pause", plural: "die Pausen", ex: "Wir machen eine kurze Pause." },
+          { it: "anrufen", ex: "Ruf mich später an!" },
+          { it: "warten", ex: "Wartet bitte hier!" },
+          { it: "nehmen", ex: "Nimm doch einen Stuhl!" },
+          { it: "lesen", ex: "Lies den Brief noch einmal!" },
+          { it: "mal", ex: "Komm mal her!" },
+          { it: "doch", ex: "Komm doch mit!" },
+          { it: "vorsichtig", ex: "Sei vorsichtig!" },
+          { it: "bitte", ex: "Bitte, komm herein!" }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 1 },
+          { t: "fill", a: ["wartet"] },
+          { t: "fill", a: ["an"] },
+          { t: "fill", a: ["sei"] },
+          {
+            t: "cloze",
+            text: "Du bist müde? Dann {{1}} {{2}} eine Pause!",
+            gaps: [["mach", "mache"], ["doch", "mal"]]
+          },
+          {
+            t: "order",
+            tokens: ["Ruf", "mich", "doch", "mal", "an"],
+            a: ["Ruf mich doch mal an"]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: ["Ruf mich doch an", "Ruf mich doch mal an", "Rufe mich doch an", "Rufe mich doch mal an"]
+          },
+          {
+            t: "listen",
+            it: "Sag mal, hast du morgen Zeit? Dann ruf mich doch an, und wir gehen zusammen essen."
+          },
+          { t: "speak", it: "Komm doch mal vorbei, und nimm dir einen Moment Zeit!" }
+        ]
+      }
+    ],
+    test: {
+      id: "a2-u03-test",
+      tags: ["g-pron-akk", "g-pron-dat", "g-verben-dativ"],
+      cefr: "A2",
+      titleIt: "Test: Ich sehe ihn, ich helfe ihm",
+      exercises: [
+        { t: "fill", a: ["sie"] },
+        { t: "fill", a: ["dir"] },
+        { t: "fill", a: ["mir"] },
+        { t: "fill", a: ["ihm"] },
+        { t: "fill", a: ["euch"] },
+        { t: "mcq", a: 1 },
+        { t: "mcq", a: 0 },
+        {
+          t: "trans",
+          dir: "toIt",
+          a: [
+            "Ich gebe ihm das Buch morgen",
+            "Morgen gebe ich ihm das Buch",
+            "Ich gebe ihm morgen das Buch"
+          ]
+        },
+        { t: "listen", it: "Mein Bruder hat Geburtstag. Ich schenke ihm ein Buch, und ich gebe es ihm morgen." },
+        { t: "speak", it: "Meine Kollegin braucht Hilfe. Ich helfe ihr gern, und ich rufe sie morgen an." }
       ]
     }
   }

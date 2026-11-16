@@ -34,7 +34,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Präteritum di sein, haben e können",
-      note: "Alla 1ª e alla 3ª persona singolare la forma è uguale. Le terminazioni sono quelle del Präteritum: <b>-st</b>, <b>-en</b>, <b>-t</b>, <b>-en</b>.",
+      note: "Alla 1ª e alla 3ª persona singolare la forma è uguale. <i>Sein</i> prende le terminazioni semplici <b>-st</b> (du warst) e <b>-t</b> (ihr wart), e <b>-en</b> per wir e sie. <i>Haben</i> e <i>können</i> hanno i temi <i>hatt-</i> e <i>konnt-</i> e prendono <b>-est</b> e <b>-et</b> (hattest, hattet, konntest, konntet), e <b>-en</b> per wir e sie.",
       table: {
         head: ["persona", "sein", "haben", "können"],
         rows: [
@@ -206,7 +206,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa la frase.",
         tr: "Quando ero piccolo, abitavamo in un paese.",
-        why: "<i>Als</i> introduce un periodo concluso del passato; il participio <i>gewohnt</i> chiude la principale."
+        why: "<i>Als</i> introduce un periodo concluso del passato; il participio (<i>gewohnt</i>, oppure <i>gelebt</i>) chiude la principale."
       },
       {
         q: "Completa la frase.",
@@ -1035,6 +1035,531 @@ LINGUAI.addStrings("it", {
       {
         tr: "In estate andremo in Svizzera, e poi vado da mia zia.",
         why: "In <i>Schweiz</i> la <b>sch</b> è [ʃ], <b>w</b> è [v] e <b>ei</b> suona [aɪ]."
+      }
+    ]
+  },
+  "unit:a2-u03": {
+    title: "Lo vedo, lo aiuto",
+    grammarNote: "pronomi all'accusativo e al dativo · verbi con il dativo (helfen, gefallen, gehören, danken) · ordine degli oggetti · imperativo con du e ihr · mal e doch"
+  },
+  "lesson:a2-u03-l1": {
+    theme: "Parlare di persone",
+    title: "ihn, sie, es",
+    objectives: [
+      "sostituire un nome con mich, dich, ihn, sie, es, uns, euch, sie, Sie",
+      "scegliere il pronome secondo il genere del nome tedesco",
+      "collocare il pronome dopo il verbo nella frase principale"
+    ],
+    theory: [
+      {
+        h: "Il pronome all'accusativo al posto del nome",
+        p: "Per non ripetere un nome che è <b>oggetto diretto</b> si usa il pronome all'accusativo: <em>mich, dich, ihn, sie, es, uns, euch, sie, Sie</em>. Rispetto al nominativo cambiano <em>ich, du, er, wir, ihr</em>; <em>sie</em> ed <em>es</em> restano uguali. Il pronome segue il <b>genere del nome tedesco</b>, anche per le cose: <em>der Bruder → ihn</em>, <em>die Kollegin → sie</em>, <em>das Kind → es</em>, <em>der Schlüssel → ihn</em>. Nella frase principale neutra il pronome sta subito dopo il verbo coniugato: <em>Ich kenne ihn gut.</em> Se la frase comincia con un altro elemento, il pronome segue il soggetto: <em>Morgen sehe ich ihn.</em> In una subordinata sta dopo la congiunzione e il soggetto, prima del verbo in fondo: <em>..., weil ich ihn gut kenne.</em>"
+      },
+      {
+        contrast: "In italiano il pronome atono sta <b>prima</b> del verbo (<em>lo vedo, la conosco</em>); in tedesco è una parola a sé e sta dopo il verbo: <em>Ich sehe ihn.</em> Inoltre il genere segue la parola tedesca, non quella italiana: <em>il giornale</em> è maschile (<em>lo leggo</em>), ma <em>die Zeitung</em> è femminile, quindi <em>Ich lese sie</em>. Al contrario <em>la chiave</em> è femminile (<em>la vedo</em>), ma <em>der Schlüssel</em> è maschile: <em>Ich sehe ihn nicht</em>."
+      },
+      {
+        trap: "<em>Sie</em> può voler dire «lei», «loro», «la» o «le»: lo capisci dal verbo e dal contesto (<em>Ich sehe sie</em>, da solo, è ambiguo). Con l'iniziale maiuscola è la forma di cortesia: <em>Ich kenne Sie</em>. E non confondere <em>ihn</em> (accusativo) con <em>ihm</em> (dativo): <em>Ich sehe ihm</em> è sbagliato, perché <em>sehen</em> vuole l'accusativo."
+      },
+      {
+        tip: "Prima di scrivere il pronome ripeti il nome tedesco con l'articolo: <em>der → ihn</em>, <em>die → sie</em>, <em>das → es</em>, <em>die</em> (plurale) <em>→ sie</em>. Il pronome per una persona è uguale a quello per una cosa dello stesso genere."
+      }
+    ],
+    grammar: {
+      title: "I pronomi all'accusativo",
+      note: "Sostituiscono un oggetto diretto già noto. Genere e numero seguono il nome tedesco: <b>der → ihn</b>, <b>die → sie</b>, <b>das → es</b>.",
+      table: {
+        head: ["nominativo", "accusativo", "esempio"],
+        rows: [
+          ["ich", "mich", "Er sieht mich."],
+          ["du", "dich", "Ich kenne dich."],
+          ["er", "ihn", "Wir sehen ihn."],
+          ["sie", "sie", "Ich treffe sie."],
+          ["es", "es", "Ich nehme es."],
+          ["wir", "uns", "Sie laden uns ein."],
+          ["ihr", "euch", "Ich besuche euch."],
+          ["sie, Sie", "sie, Sie", "Wir kennen Sie."]
+        ]
+      },
+      examples: [
+        { tr: "Lo conosco bene.", note: "ihn per un nome maschile (der Bruder)" },
+        { tr: "Domani la incontriamo.", note: "sie: per esempio die Kollegin" },
+        { tr: "Lui non mi vede.", note: "mich: accusativo di ich" },
+        { tr: "Stasera ti chiamo.", note: "dich; anrufen è separabile, an va in fondo" },
+        { tr: "Il bambino è malato. Lo vado a trovare oggi.", note: "es per das Kind, neutro" },
+        { tr: "Ci invitano alla festa.", note: "uns; einladen è separabile, ein va in fondo" }
+      ]
+    },
+    vocab: [
+      "il fratello",
+      "la sorella",
+      "il vicino",
+      "la collega",
+      "il capo",
+      "il bambino",
+      "la chiave",
+      "il giornale",
+      "conoscere",
+      "vedere",
+      "incontrare",
+      "invitare"
+    ],
+    exercises: [
+      {
+        q: "Parli di tuo fratello: «Lo vedo spesso.» Quale frase è corretta?",
+        opts: ["Ich sehe er oft.", "Ich sehe ihn oft.", "Ich sehe ihm oft."],
+        why: "<b>Ihn</b>: <i>sehen</i> vuole l'accusativo e per <i>der Bruder</i> il pronome è <i>ihn</i>. <i>Er</i> è il nominativo, <i>ihm</i> il dativo."
+      },
+      {
+        q: "Completa: «Das Kind ist krank. Ich besuche ___ heute.»",
+        opts: ["ihn", "sie", "es"],
+        why: "<i>Das Kind</i> è neutro, quindi <b>es</b>. Il genere segue la parola tedesca, non il sesso della persona."
+      },
+      {
+        q: "Quali frasi sono corrette? (più di una)",
+        opts: [
+          "Ich sehe dich morgen.",
+          "Wir laden sie zur Party ein.",
+          "Er kennt mich gut.",
+          "Ich treffe ihm heute."
+        ],
+        why: "Le prime tre usano il pronome giusto all'accusativo. <i>Ihm</i> è un dativo e <i>treffen</i> vuole l'accusativo: <i>Ich treffe ihn heute.</i>"
+      },
+      {
+        q: "Completa: «Das ist mein Bruder. Ich kenne ___ sehr gut.» (er, accusativo)",
+        hint: "pronome all'accusativo",
+        why: "<b>Ihn</b>: <i>kennen</i> vuole l'accusativo e <i>der Bruder</i> è maschile."
+      },
+      {
+        q: "Completa: «Wo ist Lisa? Ich sehe ___ nicht.» (Lisa)",
+        hint: "pronome all'accusativo",
+        why: "<b>Sie</b>: l'accusativo di <i>sie</i> (lei) è uguale al nominativo."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "La mia collega è simpatica. La incontro spesso e a volte mi invita.",
+        why: "<i>Sie</i> è l'accusativo per <i>die Kollegin</i>; <i>mich</i> è l'accusativo di <i>ich</i>. <i>Einladen</i> è separabile: <i>ein</i> va in fondo."
+      },
+      {
+        q: "Metti in ordine le parole.",
+        tr: "Oggi la incontro al caffè.",
+        why: "Il verbo resta in seconda posizione e il pronome <i>sie</i> segue il soggetto <i>ich</i>. Vanno bene anche <i>Ich treffe sie heute im Café</i> e <i>Im Café treffe ich sie heute</i>."
+      },
+      {
+        q: "Traduci (parli di tuo fratello): «Lo vedo domani.»",
+        why: "<i>Ich sehe ihn morgen</i>: il pronome segue il verbo. Con <i>morgen</i> in testa il verbo resta in seconda posizione e il soggetto lo segue (<i>Morgen sehe ich ihn</i>). Va bene anche <i>treffen</i>."
+      },
+      {
+        tr: "Conosci mio fratello? Lo vedo ogni giorno, e lui mi viene spesso a trovare.",
+        why: "In <i>ihn</i> e <i>sehe</i> la <b>h</b> non si legge e la vocale precedente è lunga; in <i>besucht</i> l'accento cade su <i>-sucht</i> e la <b>ch</b> dopo <b>u</b> è [x]."
+      },
+      {
+        tr: "La mia collega è simpatica. La incontro spesso e a volte mi invita.",
+        why: "In <i>sie</i> la <b>s</b> è sonora [z] e <b>ie</b> è una <b>i</b> lunga; in <i>manchmal</i> la <b>ch</b> dopo la <b>n</b> si legge [ç]."
+      }
+    ]
+  },
+  "lesson:a2-u03-l2": {
+    theme: "Aiuto e gusti",
+    title: "Ti aiuto, mi piace",
+    objectives: [
+      "usare mir, dir, ihm, ihr, uns, euch, ihnen",
+      "riconoscere i verbi che vogliono il dativo: helfen, gefallen, gehören, danken",
+      "dire che una cosa piace o appartiene a qualcuno"
+    ],
+    theory: [
+      {
+        h: "Il dativo con i pronomi e con alcuni verbi",
+        p: "Il dativo risponde alla domanda <em>a chi?</em>. I pronomi sono <em>mir, dir, ihm, ihr, ihm, uns, euch, ihnen</em> (cortesia: <em>Ihnen</em>). Alcuni verbi vogliono il dativo come oggetto, anche quando in italiano l'oggetto sembra diretto: <em>helfen</em> (<em>Ich helfe dir</em>), <em>danken</em> (<em>Ich danke dir</em>), <em>antworten</em> (<em>Er antwortet mir</em>), <em>gehören</em> (<em>Das Handy gehört mir</em>) e <em>gefallen</em> (<em>Die Jacke gefällt mir</em>). Con <em>gefallen</em> la cosa che piace è il soggetto e la persona sta al dativo: se la cosa è plurale il verbo la segue (<em>Die Schuhe gefallen mir</em>)."
+      },
+      {
+        contrast: "<em>Gefallen</em> funziona come l'italiano <em>piacere</em>: <em>Mi piace la giacca</em> e <em>Die Jacke gefällt mir</em> hanno la stessa struttura, con la cosa come soggetto e la persona al dativo (<em>mi</em>, <em>mir</em>). Più sorprendenti sono <em>helfen</em> e <em>danken</em>: in italiano <em>lo aiuto</em> e <em>lo ringrazio</em> hanno un pronome diretto (<em>lo</em>), in tedesco vogliono il dativo: <em>Ich helfe ihm</em>, <em>Ich danke ihm</em>. Anche <em>gehören</em> ha il dativo, come l'italiano <em>mi appartiene</em> (a me): <em>Das gehört mir</em>."
+      },
+      {
+        trap: "Con questi verbi l'accusativo è un errore: <em>Ich helfe dich</em> e <em>Ich danke ihn</em> sono sbagliati. Attenzione anche a <em>ihr</em>: come nominativo vuol dire «voi» (<em>Ihr helft mir</em>), come dativo «a lei» (<em>Ich helfe ihr</em>). Il verbo e il caso aiutano a capire quale dei due è. <em>Ihm</em> vale per <em>er</em> e per <em>es</em>: <em>Ich helfe dem Kind → Ich helfe ihm</em>."
+      },
+      {
+        tip: "Impara questi verbi insieme al dativo: <em>helfen + dativo</em>, <em>gefallen + dativo</em>, <em>gehören + dativo</em>, <em>danken + dativo</em>. Quando il verbo è uno di questi, il pronome è <em>mir, dir, ihm, ihr, uns, euch, ihnen</em>."
+      }
+    ],
+    grammar: {
+      title: "I pronomi al dativo e i verbi con il dativo",
+      note: "Il dativo è il caso della persona che riceve qualcosa o riceve aiuto, oppure a cui qualcosa piace o appartiene, a seconda del verbo. <b>helfen, danken, antworten, gehören, gefallen</b> vogliono il dativo.",
+      table: {
+        head: ["nominativo", "dativo", "esempio"],
+        rows: [
+          ["ich", "mir", "Das gehört mir."],
+          ["du", "dir", "Ich helfe dir."],
+          ["er", "ihm", "Wir danken ihm."],
+          ["sie", "ihr", "Das Buch gefällt ihr."],
+          ["es", "ihm", "Ich helfe ihm."],
+          ["wir", "uns", "Er hilft uns."],
+          ["ihr", "euch", "Ich danke euch."],
+          ["sie", "ihnen", "Ich antworte ihnen."],
+          ["Sie", "Ihnen", "Ich danke Ihnen."]
+        ]
+      },
+      examples: [
+        { tr: "Ti aiuto volentieri.", note: "helfen + dativo: dir" },
+        { tr: "Il cellulare è mio.", note: "gehören + dativo: mir" },
+        { tr: "La giacca mi piace molto.", note: "gefallen: la cosa è il soggetto, la persona è al dativo" },
+        { tr: "Lo ringraziamo per il regalo.", note: "danken + dativo: ihm" },
+        { tr: "Lui non mi risponde.", note: "antworten + dativo: mir" },
+        { tr: "Mia sorella ha bisogno di aiuto. La aiuto.", note: "helfen + dativo: ihr" }
+      ]
+    },
+    vocab: [
+      "il regalo",
+      "l'aiuto",
+      "lo zaino",
+      "il cellulare",
+      "la giacca",
+      "il libro",
+      "aiutare",
+      "piacere",
+      "appartenere",
+      "ringraziare",
+      "rispondere",
+      "volentieri"
+    ],
+    exercises: [
+      {
+        q: "Dici di tuo fratello: «Lo aiuto.» Quale frase è corretta?",
+        opts: ["Ich helfe ihn.", "Ich helfe ihm.", "Ich helfe er."],
+        why: "<b>Ihm</b>: <i>helfen</i> vuole il dativo, anche se in italiano si dice «lo aiuto». <i>Ihn</i> è un accusativo."
+      },
+      {
+        q: "Come dici «Mi piace la giacca»?",
+        opts: ["Die Jacke gefällt mich.", "Die Jacke gefällt mir.", "Ich gefalle die Jacke."],
+        why: "La cosa è il soggetto (<i>die Jacke</i>) e la persona sta al dativo (<i>mir</i>), come in «mi piace»."
+      },
+      {
+        q: "Quali verbi vogliono il dativo? (più di una)",
+        opts: ["helfen", "gehören", "sehen", "danken"],
+        why: "<i>Helfen</i>, <i>gehören</i> e <i>danken</i> vogliono il dativo. <i>Sehen</i> vuole l'accusativo: <i>Ich sehe ihn.</i>"
+      },
+      {
+        q: "Completa: «Das ist mein Handy. Es gehört ___.» (ich, dativo)",
+        hint: "pronome al dativo",
+        why: "<b>Mir</b>: <i>gehören</i> vuole il dativo."
+      },
+      {
+        q: "Completa: «Meine Schwester braucht Hilfe. Ich helfe ___ gern.» (sie: la sorella)",
+        hint: "pronome al dativo",
+        why: "<b>Ihr</b>: dativo di <i>sie</i> al singolare. <i>Helfen</i> vuole il dativo."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Grazie, Anna! Ti ringrazio per il tuo aiuto.",
+        why: "<i>Ich danke dir</i>: <i>danken</i> vuole il dativo, quindi <b>dir</b> e non <i>dich</i>."
+      },
+      {
+        q: "Metti in ordine le parole.",
+        tr: "La giacca mi piace molto.",
+        why: "Con la cosa come soggetto: <i>Die Jacke gefällt mir sehr</i>. Va bene anche <i>Mir gefällt die Jacke sehr</i>, con il dativo in testa."
+      },
+      {
+        q: "Traduci (a un amico): «Ti aiuto volentieri.»",
+        why: "<i>Ich helfe dir gern</i>: <i>helfen</i> vuole il dativo (<i>dir</i>). Sono corrette anche le varianti con <i>gerne</i> e con <i>gern</i> in testa."
+      },
+      {
+        tr: "Puoi aiutarmi, per favore? Ti ringrazio, è molto gentile da parte tua.",
+        why: "In <i>helfen</i> la <b>e</b> è breve; in <i>danke</i> la <b>n</b> davanti a <b>k</b> si legge [ŋ] e la <b>a</b> è breve."
+      },
+      {
+        tr: "Lo zaino è mio, e la giacca mi piace molto.",
+        why: "In <i>gehört</i> l'accento cade su <i>-hört</i>, dove la <b>ö</b> è lunga ([øː]); in <i>Rucksack</i> entrambe le vocali sono brevi, e la <b>ck</b> segnala la <b>a</b> breve."
+      }
+    ]
+  },
+  "lesson:a2-u03-l3": {
+    theme: "Regali e favori",
+    title: "Glielo do",
+    objectives: [
+      "usare dativo e accusativo nella stessa frase",
+      "mettere nell'ordine abituale due nomi, un pronome e un nome, due pronomi",
+      "usare geben, schenken, zeigen, schicken, leihen, erklären"
+    ],
+    theory: [
+      {
+        h: "Due oggetti: dativo e accusativo",
+        p: "Con verbi come <em>geben, schenken, zeigen, schicken, leihen, erklären</em> ci sono due oggetti: la persona (dativo) e la cosa (accusativo). L'ordine abituale, nella frase neutra, è questo. Con <b>due nomi</b> il dativo precede l'accusativo: <em>Ich schenke meiner Schwester ein Buch.</em> Con <b>un pronome e un nome</b> il pronome viene prima, qualunque sia il suo caso: <em>Ich gebe ihm das Buch. Ich gebe es meinem Bruder.</em> Con <b>due pronomi</b> l'accusativo precede il dativo: <em>Ich gebe es ihm.</em> Sono ordini abituali, non regole assolute: per mettere in risalto un elemento lo si può spostare."
+      },
+      {
+        contrast: "In italiano i due pronomi si fondono davanti al verbo e il dativo viene <b>prima</b>: <em>glielo do</em>, <em>te lo do</em> (dativo + accusativo). In tedesco vanno dopo il verbo e l'ordine è l'inverso, accusativo + dativo: <em>Ich gebe es ihm</em>, <em>Ich gebe es dir</em>. Se traduci a pezzi, rimetti l'ordine: prima <em>es</em> (il «lo»), poi <em>dir</em> o <em>ihm</em> (il «te» o il «gli»)."
+      },
+      {
+        trap: "Nell'ordine abituale <em>Ich gebe ihm es</em> suona sbagliato: con due pronomi viene prima l'accusativo, <em>Ich gebe es ihm</em>. Scegli il genere dalla parola tedesca: <em>das Foto → es</em>, <em>der Brief → ihn</em>, <em>die Postkarte → sie</em>. Con un nome maschile i due pronomi sono diversi: <em>Ich gebe ihn ihm</em> (il primo è accusativo, il secondo dativo)."
+      },
+      {
+        tip: "Prima trova la cosa e metti il suo pronome (<em>es, ihn, sie</em>) subito dopo il verbo; poi aggiungi la persona (<em>mir, dir, ihm, ihr</em>). Con i nomi parti invece dalla persona: <em>Ich zeige meiner Mutter das Foto.</em>"
+      }
+    ],
+    grammar: {
+      title: "L'ordine di dativo e accusativo",
+      note: "Nella frase neutra: due nomi, <b>dativo prima</b>; un pronome e un nome, <b>il pronome prima</b>; due pronomi, <b>accusativo prima</b>.",
+      table: {
+        head: ["oggetti", "ordine abituale", "esempio"],
+        rows: [
+          ["due nomi", "dativo, accusativo", "Ich schenke meiner Schwester ein Buch."],
+          ["pronome + nome", "il pronome prima", "Ich gebe ihm das Buch."],
+          ["nome + pronome", "il pronome prima", "Ich gebe es meinem Bruder."],
+          ["due pronomi", "accusativo, dativo", "Ich gebe es ihm."]
+        ]
+      },
+      examples: [
+        { tr: "Glielo do.", note: "due pronomi: es (accusativo) prima di ihm (dativo)" },
+        { tr: "Ti mostro la foto.", note: "pronome dativo prima del nome" },
+        { tr: "Regalo un libro a mia sorella.", note: "due nomi: dativo prima dell'accusativo" },
+        { tr: "Me lo manda domani.", note: "es mir: accusativo prima del dativo" },
+        { tr: "Gli prestiamo la bicicletta.", note: "pronome dativo prima del nome" },
+        { tr: "Te lo spiego dopo.", note: "es dir: accusativo prima del dativo" }
+      ]
+    },
+    vocab: [
+      "la foto",
+      "la lettera",
+      "il pacco",
+      "i soldi, il denaro",
+      "la cartolina",
+      "la bicicletta",
+      "dare",
+      "regalare",
+      "mostrare",
+      "mandare",
+      "prestare",
+      "spiegare"
+    ],
+    exercises: [
+      {
+        q: "Dici: «Glielo do» (il libro, a mio fratello). Quale frase ha l'ordine abituale?",
+        opts: ["Ich gebe ihm es.", "Ich gebe es ihm.", "Ich gebe ihm ihn."],
+        why: "Con due pronomi l'accusativo viene prima del dativo: <i>es ihm</i>. <i>Das Buch</i> è neutro, quindi <i>es</i>."
+      },
+      {
+        q: "Quale frase ha l'ordine neutro con due nomi?",
+        opts: [
+          "Ich schenke ein Buch meiner Schwester.",
+          "Ich schenke meiner Schwester ein Buch.",
+          "Ich meiner Schwester schenke ein Buch."
+        ],
+        why: "Con due nomi prima il dativo (la persona), poi l'accusativo (la cosa). La prima frase non è sbagliata, ma sposta la persona in fondo per metterla in risalto: non è l'ordine neutro. La terza rompe la seconda posizione del verbo."
+      },
+      {
+        q: "Quali frasi hanno un ordine abituale? (più di una)",
+        opts: [
+          "Ich gebe es ihm.",
+          "Ich zeige dir das Foto.",
+          "Ich schicke dem Chef es.",
+          "Ich schenke ihm einen Schlüssel."
+        ],
+        why: "Il pronome sta prima del nome (<i>dir das Foto</i>, <i>ihm einen Schlüssel</i>) e con due pronomi vale <i>es ihm</i>. In «Ich schicke dem Chef es» il nome precede il pronome: l'ordine abituale è <i>Ich schicke es dem Chef</i>."
+      },
+      {
+        q: "Completa: «Wo ist das Foto? Ich zeige ___ dir gleich.» (das Foto)",
+        hint: "pronome all'accusativo",
+        why: "<b>Es</b>: <i>das Foto</i> è neutro, e l'accusativo <i>es</i> viene prima del dativo <i>dir</i>."
+      },
+      {
+        q: "Completa: «Der Schlüssel gehört Paul. Ich gebe ihn ___ heute.» (Paul: er)",
+        hint: "pronome al dativo",
+        why: "<b>Ihm</b>: dativo di <i>er</i>. L'accusativo <i>ihn</i> (la cosa, <i>der Schlüssel</i>) viene prima."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "La lettera è pronta. Domani te la mando.",
+        why: "<i>Der Brief</i> è maschile: <b>ihn</b> (accusativo) viene prima di <b>dir</b> (dativo). In italiano «la lettera» è femminile (<i>te la</i>) e il dativo viene prima: l'ordine è opposto."
+      },
+      {
+        q: "Abbina ogni frase alla sua traduzione.",
+        pairs: ["Glielo do.", "Gli do il libro.", "Lo do a mio fratello.", "Te lo do."]
+      },
+      {
+        q: "Traduci: «Domani te lo do.» (il libro: usa il pronome es)",
+        why: "<i>Ich gebe es dir morgen</i>: prima l'accusativo <i>es</i>, poi il dativo <i>dir</i>. Con <i>morgen</i> in testa il verbo resta in seconda posizione: <i>Morgen gebe ich es dir</i>."
+      },
+      {
+        tr: "Ho trovato la tua foto. Te la mostro subito, e domani la mando a tua sorella.",
+        why: "In <i>zeigen</i> la <b>z</b> è [ts] e <b>ei</b> suona [aɪ]; in <i>gleich</i> la <b>ch</b> finale dopo <b>ei</b> si legge [ç]."
+      },
+      {
+        tr: "La chiave è di mio fratello. Domani gliela do.",
+        why: "In <i>Schlüssel</i> la <b>sch</b> è [ʃ] e la <b>ü</b> è breve; in <i>ihn</i> e <i>ihm</i> la <b>h</b> non si legge e la <b>i</b> è lunga."
+      }
+    ]
+  },
+  "lesson:a2-u03-l4": {
+    theme: "Istruzioni e consigli",
+    title: "Dimmi! Chiamami pure!",
+    objectives: [
+      "formare l'imperativo con du e con ihr",
+      "ricordare i verbi con cambio di tema e sein",
+      "usare mal e doch per cambiare il tono di una richiesta"
+    ],
+    theory: [
+      {
+        h: "L'imperativo con du e con ihr",
+        p: "Per dire a una persona che dai del <em>tu</em> di fare qualcosa si usa il <b>tema del verbo</b>, senza <em>du</em>: <em>Komm! Ruf mich an! Mach das Fenster zu!</em> Con i verbi deboli il cui tema finisce in <em>-t</em> o <em>-d</em> si aggiunge di norma una <b>-e</b>: <em>Warte! Arbeite! Antworte!</em> I verbi forti con cambio <em>e → i/ie</em> usano il tema cambiato e non hanno la <em>-e</em>: <em>Nimm! Lies! Gib! Sprich!</em> Senza Umlaut: <em>Fahr!</em>, non <em>Fähr!</em> <em>Sein</em> è irregolare: <em>Sei!</em> Per più persone (<em>ihr</em>) l'imperativo ha la forma di <em>ihr</em> senza pronome: <em>Kommt! Wartet! Ruft an!</em> Il verbo separabile lascia il prefisso in fondo: <em>Ruf mich an!</em>"
+      },
+      {
+        h: "mal e doch: piccole parole che cambiano il tono",
+        p: "<em>Mal</em> e <em>doch</em> sono <b>particelle modali</b>: non cambiano la grammatica, cambiano <b>come suona</b> la frase. <em>Komm mal her!</em> è più leggero di <em>Komm her!</em>, come «dai, vieni un attimo». <em>Ruf mich doch an!</em> è un invito amichevole o un'insistenza: «chiamami pure», «dai, chiamami». Stanno nel campo centrale, di norma dopo il pronome: <em>Ruf mich doch mal an!</em> Non hanno una traduzione fissa."
+      },
+      {
+        contrast: "L'italiano attacca il pronome all'imperativo (<em>chiamami, dimmi, aiutami</em>); in tedesco il pronome è una parola separata dopo il verbo: <em>Ruf mich an! Sag mir! Hilf mir!</em> Per il negativo con tu l'italiano usa l'infinito (<em>non venire</em>); il tedesco usa lo stesso imperativo con <em>nicht</em>: <em>Komm nicht zu spät!</em> Le particelle modali in italiano non hanno una categoria a sé: si rendono con il tono o con parole come <em>dai, pure, un attimo</em>."
+      },
+      {
+        trap: "Non aggiungere <em>-st</em>: <em>Kommst!</em> non è un imperativo. Con i verbi forti con <em>e → ie</em> non dire <em>Lese!</em> ma <em>Lies!</em>, e non <em>Nehm!</em> ma <em>Nimm!</em> Con <em>sein</em> la forma è <em>Sei vorsichtig!</em> Non pensare che <em>mal</em> e <em>doch</em> siano parole vuote: tolte, la frase resta corretta ma suona più secca."
+      },
+      {
+        tip: "Quando dai un ordine o un consiglio a un amico: parti dall'infinito, togli <em>-en</em>, aggiungi <em>-e</em> se il tema finisce in <em>-t</em> o <em>-d</em>, e metti <em>mal</em> o <em>doch</em> per ammorbidire: <em>Warte mal! Komm doch mit!</em>"
+      }
+    ],
+    grammar: {
+      title: "L'imperativo con du e ihr; mal e doch",
+      note: "Con <b>du</b> il tema senza pronome (<i>Komm!</i>), con <b>ihr</b> la forma di ihr (<i>Kommt!</i>). <b>mal</b> e <b>doch</b> ammorbidiscono o rendono più amichevole la richiesta.",
+      table: {
+        head: ["infinito", "du", "ihr"],
+        rows: [
+          ["kommen", "Komm!", "Kommt!"],
+          ["warten", "Warte!", "Wartet!"],
+          ["anrufen", "Ruf an!", "Ruft an!"],
+          ["nehmen", "Nimm!", "Nehmt!"],
+          ["lesen", "Lies!", "Lest!"],
+          ["sein", "Sei!", "Seid!"]
+        ]
+      },
+      examples: [
+        { tr: "Vieni un attimo qui!", note: "mal rende la richiesta più leggera" },
+        { tr: "Aspetta un momento!", note: "tema in -t: si aggiunge -e" },
+        { tr: "Chiamami pure!", note: "doch: invito amichevole; an in fondo" },
+        { tr: "Fai pure una pausa!", note: "machen: tema Mach, senza -en" },
+        { tr: "Dimmi un po', hai tempo?", note: "Sag mal: apre una domanda in tono colloquiale" },
+        { tr: "State attenti, per favore!", note: "ihr: forma di sein, Seid" }
+      ]
+    },
+    vocab: [
+      "il consiglio",
+      "l'idea",
+      "il momento",
+      "la pausa",
+      "chiamare (al telefono)",
+      "aspettare",
+      "prendere",
+      "leggere",
+      "mal (particella modale)",
+      "doch (particella modale)",
+      "prudente, attento",
+      "per favore"
+    ],
+    exercises: [
+      {
+        q: "Dici a un amico: «Aspetta un momento!» Quale frase è corretta?",
+        opts: ["Warte einen Moment!", "Wartest einen Moment!", "Warten einen Moment!"],
+        why: "Con <i>du</i> l'imperativo è il tema senza pronome; il tema finisce in <i>-t</i>, quindi si aggiunge <b>-e</b>: <i>Warte!</i>"
+      },
+      {
+        q: "Dici a un amico: «Leggi questo!» (lesen)",
+        opts: ["Lese das!", "Lies das!", "Les das!"],
+        why: "<i>Lesen</i> è un verbo forte con <i>e → ie</i>: nell'imperativo cambia il tema (<b>Lies!</b>) e non ha la <i>-e</i>."
+      },
+      {
+        q: "Completa: «___ bitte einen Moment, Kinder!» (warten, ihr)",
+        hint: "warten, imperativo ihr",
+        why: "L'imperativo con <i>ihr</i> ha la forma di <i>ihr</i> senza pronome: <b>Wartet!</b>"
+      },
+      {
+        q: "Completa: «Ruf mich doch ___!» (anrufen: chiamami pure)",
+        hint: "il prefisso del verbo separabile",
+        why: "<i>Anrufen</i> è separabile: il prefisso <b>an</b> va in fondo e il verbo resta in prima posizione."
+      },
+      {
+        q: "Completa: «___ vorsichtig!» (sein, du)",
+        hint: "sein, imperativo du",
+        why: "<b>Sei</b>: l'imperativo di <i>sein</i> è irregolare (<i>sei, seid</i>)."
+      },
+      {
+        q: "Completa la frase (vanno bene sia doch sia mal).",
+        tr: "Sei stanco? Allora fai pure una pausa!",
+        why: "<b>Mach</b>: il tema di <i>machen</i> è <i>mach-</i>, senza <i>-en</i> e senza <i>du</i>. Vanno bene <i>doch</i> (invito amichevole) e <i>mal</i> (tono più leggero)."
+      },
+      {
+        q: "Metti in ordine le parole.",
+        tr: "Dai, chiamami!",
+        why: "Il verbo apre la frase, il pronome lo segue, le particelle <i>doch mal</i> precedono il prefisso <i>an</i> in fondo."
+      },
+      {
+        q: "Traduci (a un amico, usa doch): «Chiamami pure!»",
+        why: "<i>Ruf mich doch an!</i>: imperativo senza <i>du</i>, pronome dopo il verbo, prefisso <i>an</i> in fondo; <i>doch</i> rende l'invito più amichevole. Va bene anche con <i>mal</i> in più."
+      },
+      {
+        tr: "Dimmi un po', domani hai tempo? Allora chiamami pure, e andiamo a mangiare insieme.",
+        why: "In <i>Sag</i> la <b>g</b> finale si legge di norma [k]; in <i>zusammen</i> la <b>z</b> è [ts] e la <b>s</b> davanti a vocale è di norma sonora."
+      },
+      {
+        tr: "Passa una volta da me, dai, e prenditi un po' di tempo!",
+        why: "In <i>vorbei</i> la <b>v</b> si legge [f]; in <i>Moment</i> l'accento cade sulla seconda sillaba."
+      }
+    ]
+  },
+  "lesson:a2-u03-test": {
+    theme: "Verifica",
+    title: "Verifica dell'unità 3",
+    objectives: [
+      "verificare i pronomi all'accusativo e al dativo, i verbi con il dativo e l'ordine degli oggetti"
+    ],
+    theory: [
+      {
+        p: "Dieci domande sui pronomi all'accusativo e al dativo, sui verbi con il dativo e sull'ordine degli oggetti. Si supera con il 70%. Non riguardare le lezioni mentre rispondi: se non ricordi qualcosa, è meglio tornare a ripassare."
+      }
+    ],
+    exercises: [
+      {
+        q: "Completa: «Wo ist Anna? Ich sehe ___ nicht.» (sie: Anna)",
+        hint: "pronome all'accusativo",
+        why: "<b>Sie</b>: <i>sehen</i> vuole l'accusativo, e quello di <i>sie</i> (lei) è uguale al nominativo."
+      },
+      {
+        q: "Completa: «Du brauchst Hilfe? Ich helfe ___ gern.» (du)",
+        hint: "pronome al dativo",
+        why: "<b>Dir</b>: <i>helfen</i> vuole il dativo."
+      },
+      {
+        q: "Completa: «Das Handy gehört ___.» (ich)",
+        hint: "pronome al dativo",
+        why: "<b>Mir</b>: <i>gehören</i> vuole il dativo."
+      },
+      {
+        q: "Completa: «Ich habe das Buch. Ich gebe es ___ gleich.» (mein Bruder: er)",
+        hint: "pronome al dativo",
+        why: "<b>Ihm</b>: con due pronomi viene prima l'accusativo (<i>es</i>), poi il dativo (<i>ihm</i>)."
+      },
+      {
+        q: "Completa: «Ihr helft uns oft. Wir danken ___ sehr.» (ihr)",
+        hint: "pronome al dativo",
+        why: "<b>Euch</b>: <i>danken</i> vuole il dativo, e il dativo di <i>ihr</i> è <i>euch</i>."
+      },
+      {
+        q: "Come dici «Questa idea mi piace molto»?",
+        opts: ["Die Idee gefällt mich sehr.", "Die Idee gefällt mir sehr.", "Ich gefalle die Idee sehr."],
+        why: "La cosa è il soggetto (<i>die Idee</i>) e la persona sta al dativo (<i>mir</i>)."
+      },
+      {
+        q: "Dici: «Te lo mostro» (il libro). Quale frase ha l'ordine abituale?",
+        opts: ["Ich zeige es dir.", "Ich zeige dir es.", "Ich zeige du es."],
+        why: "Con due pronomi l'accusativo (<i>es</i>) viene prima del dativo (<i>dir</i>)."
+      },
+      {
+        q: "Traduci: «Gli do il libro domani.»",
+        why: "<i>Ich gebe ihm das Buch morgen</i>: il pronome dativo <i>ihm</i> viene prima del nome <i>das Buch</i>. Vanno bene anche <i>Morgen gebe ich ihm das Buch</i> e <i>Ich gebe ihm morgen das Buch</i>."
+      },
+      {
+        tr: "Mio fratello compie gli anni. Gli regalo un libro e glielo do domani.",
+        why: "In <i>Geburtstag</i> l'accento cade su <i>-burts-</i> (<i>ge-</i> è atono) e la <b>g</b> finale si legge di norma [k]."
+      },
+      {
+        tr: "La mia collega ha bisogno di aiuto. La aiuto volentieri e domani la chiamo.",
+        why: "In <i>braucht</i> <b>au</b> suona [aʊ] e la <b>ch</b> dopo di esso è [x]; in <i>sie</i> la <b>s</b> è sonora [z]."
       }
     ]
   }
