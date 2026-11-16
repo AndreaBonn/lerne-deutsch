@@ -88,7 +88,7 @@ LINGUAI.addUnits("B1", [
           { it: "das Geld", plural: "-", ex: "Ich habe wenig Geld." },
           { it: "sparen", ex: "Ich spare für ein Auto." },
           { it: "verdienen", ex: "Sie verdient gut." },
-          { it: "der Urlaub", plural: "-", ex: "Ich habe im August Urlaub." },
+          { it: "der Urlaub", plural: "die Urlaube", ex: "Ich habe im August Urlaub." },
           { it: "das Haus", plural: "die Häuser", ex: "Das Haus hat einen Garten." },
           { it: "der Garten", plural: "die Gärten", ex: "Der Garten ist groß." },
           { it: "die Weltreise", plural: "die Weltreisen", ex: "Eine Weltreise ist mein Traum." },

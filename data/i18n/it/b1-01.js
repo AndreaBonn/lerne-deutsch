@@ -14,7 +14,7 @@ LINGUAI.addStrings("it", {
     title: "Sarei, avrei, farei",
     objectives: [
       "esprimere un desiderio o un'ipotesi con wäre e hätte",
-      "usare würde + infinito con i verbi che non hanno una forma propria",
+      "usare würde + infinito, che con la maggior parte dei verbi sostituisce la forma propria",
       "dare un consiglio con An deiner Stelle würde ich ...",
       "fare proposte e richieste con könnte"
     ],
@@ -28,13 +28,13 @@ LINGUAI.addStrings("it", {
         p: "Con quasi tutti gli altri verbi si usa <strong>würde</strong> + <strong>infinito in fondo</strong>: <em>Ich würde gern im Ausland arbeiten. Wir würden gern am Meer wohnen.</em> <em>Würde</em> si coniuga così: <em>ich würde, du würdest, er würde, wir würden, ihr würdet, sie würden</em>. Anche alcuni modali hanno la forma propria: <em>ich könnte</em> (potrei), <em>ich müsste</em> (dovrei). Un consiglio si dà spesso così: <em>An deiner Stelle würde ich umziehen</em> (al posto tuo mi trasferirei)."
       },
       {
-        contrast: "L'italiano ha un <em>condizionale</em> con una forma propria per ogni verbo: <em>sarei, avrei, andrei, farei</em>. Il tedesco ha forme proprie soltanto per pochi verbi molto frequenti (<em>wäre, hätte, könnte, müsste</em>) e per tutti gli altri di solito usa <em>würde</em> + infinito: <em>andrei</em> è <em>würde gehen</em>, <em>farei</em> è <em>würde machen</em>. Inoltre il Konjunktiv II è un modo, non un tempo: <em>Ich wäre</em> corrisponde a <em>sarei</em> e riguarda il presente o il futuro."
+        contrast: "L'italiano ha un <em>condizionale</em> con una forma propria per ogni verbo: <em>sarei, avrei, andrei, farei</em>. Anche il tedesco ha una forma propria per ogni verbo, ma nell'uso quotidiano la si sente soprattutto con pochi verbi molto frequenti (<em>wäre, hätte, könnte, müsste</em>): negli altri spesso coincide con il Präteritum o suona antiquata, e al suo posto si usa <em>würde</em> + infinito: <em>andrei</em> è <em>würde gehen</em>, <em>farei</em> è <em>würde machen</em>. Inoltre il Konjunktiv II è un modo, non un tempo: <em>Ich wäre</em> corrisponde a <em>sarei</em> e riguarda il presente o il futuro."
       },
       {
-        trap: "Non confondere <em>würde</em> con <em>wurde</em>: <em>wurde</em> (senza Umlaut) è il Präteritum di <em>werden</em> («diventò»), <em>würde</em> (con Umlaut) è il condizionale. Una sola lettera cambia il significato, e si sente anche: la <em>ü</em> è arrotondata. Con <em>sein</em> e <em>haben</em> di solito si preferiscono <em>wäre</em> e <em>hätte</em> a «würde sein» e «würde haben»: <em>Das wäre schön</em>, non «Das würde schön sein»."
+        trap: "Non confondere <em>würde</em> con <em>wurde</em>: <em>wurde</em> (senza Umlaut) è il Präteritum di <em>werden</em> («diventò»), <em>würde</em> (con Umlaut) è il condizionale. Una sola lettera cambia il significato, e si sente anche: la <em>ü</em> è arrotondata. Con <em>sein</em> e <em>haben</em> di solito si preferiscono <em>wäre</em> e <em>hätte</em> a «würde sein» e «würde haben»: <em>Das wäre schön</em> è la forma che si sente di più; «Das würde schön sein» è corretto ma più pesante."
       },
       {
-        tip: "Per dare un consiglio educato usa <em>An deiner Stelle würde ich ...</em> invece di un imperativo: suona più morbido. E per un desiderio, <em>Ich hätte gern ...</em> o <em>Ich wäre gern ...</em>, seguito da un nome o da un aggettivo."
+        tip: "Per dare un consiglio educato usa <em>An deiner Stelle würde ich ...</em> invece di un imperativo: suona più morbido. E per un desiderio: <em>Ich hätte gern</em> + complemento oggetto (<em>Ich hätte gern mehr Zeit</em>), <em>Ich wäre gern</em> + aggettivo o nome di ruolo (<em>Ich wäre gern glücklich, Ich wäre gern Pilot</em>)."
       }
     ],
     grammar: {
@@ -148,7 +148,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Dove sta il verbo",
-        p: "Dopo <em>wenn</em> il verbo coniugato va <strong>in fondo</strong> alla subordinata, e la virgola la separa dalla principale. Se la frase con <em>wenn</em> viene prima, la principale <strong>comincia con il verbo</strong>: <em>Wenn ich Zeit hätte, würde ich mehr reisen.</em> Se viene dopo, l'ordine della principale non cambia: <em>Ich würde mehr reisen, wenn ich Zeit hätte.</em> Nella subordinata con <em>wenn</em> si preferisce la forma propria (<em>hätte, wäre, könnte</em>), e <em>würde</em> + infinito sta nella principale."
+        p: "Dopo <em>wenn</em> il verbo coniugato va <strong>in fondo</strong> alla subordinata, e la virgola la separa dalla principale. Se la frase con <em>wenn</em> viene prima, la principale <strong>comincia con il verbo</strong>: <em>Wenn ich Zeit hätte, würde ich mehr reisen.</em> Se viene dopo, l'ordine della principale non cambia: <em>Ich würde mehr reisen, wenn ich Zeit hätte.</em> Le due costruzioni possono stare in tutte e due le frasi: <em>Wenn ich weniger arbeiten würde, hätte ich mehr Zeit</em> è corretto quanto <em>Wenn ich Zeit hätte, würde ich mehr reisen</em>. Con <em>sein</em>, <em>haben</em> e i modali si preferisce in genere la forma propria (<em>wäre, hätte, könnte</em>), con gli altri verbi spesso <em>würde</em> + infinito."
       },
       {
         h: "Wenn ich du wäre, ...",
@@ -161,12 +161,12 @@ LINGUAI.addStrings("it", {
         trap: "Non si scrive «Wenn ich hätte Zeit»: dopo <em>wenn</em> il verbo coniugato va in fondo, <em>Wenn ich Zeit hätte</em>. E la principale dopo la subordinata non comincia con il soggetto: «Wenn ich Zeit hätte, ich würde reisen» è sbagliato, giusto è <em>..., würde ich reisen</em>. Non confondere <em>wenn</em> (se) con <em>wann</em> (quando, nelle domande)."
       },
       {
-        tip: "Prima di scrivere una frase con <em>wenn</em> chiediti: può succedere davvero? Allora presente nelle due frasi. È un'ipotesi che immagini? Allora Konjunktiv II (<em>hätte, wäre, könnte</em>) dopo <em>wenn</em> e <em>würde</em> + infinito nella principale."
+        tip: "Prima di scrivere una frase con <em>wenn</em> chiediti come presenti la condizione. Come reale o aperta? La costruzione di base è il presente nelle due frasi. Come ipotetica, improbabile o contraria ai fatti? Allora Konjunktiv II in tutte e due le frasi (anche per qualcosa di possibile: <em>Wenn es morgen regnen würde, würden wir zu Hause bleiben</em>): <em>hätte, wäre, könnte</em> con <em>haben</em>, <em>sein</em> e i modali, <em>würde</em> + infinito con quasi tutti gli altri verbi."
       }
     ],
     grammar: {
       title: "Wenn + presente o Konjunktiv II",
-      note: "<b>Reale</b>: <i>wenn</i> + presente, presente. <b>Irreale</b>: <i>wenn</i> + Konjunktiv II (<i>hätte, wäre, könnte</i>), poi <i>würde</i> + infinito. Il verbo di <i>wenn</i> va in fondo, e la principale che segue comincia con il verbo.",
+      note: "<b>Reale</b>: <i>wenn</i> + presente, presente. <b>Irreale</b>: Konjunktiv II in entrambe le frasi (<i>hätte, wäre, könnte</i>, o <i>würde</i> + infinito). Il verbo di <i>wenn</i> va in fondo, e la principale che segue comincia con il verbo.",
       table: {
         head: ["tipo", "esempio", "nota"],
         rows: [
@@ -415,10 +415,10 @@ LINGUAI.addStrings("it", {
         p: "<strong>Trotzdem</strong> (comunque, lo stesso, ciononostante) dice la stessa cosa con due frasi separate. Non cambia l'ordine delle parole: può occupare la <strong>prima posizione</strong>, e allora il verbo viene subito dopo: <em>Es regnet. Trotzdem gehen wir spazieren.</em> Oppure sta nella frase: <em>Wir gehen trotzdem spazieren.</em> Con <em>aber</em> si può anche dire <em>Sie ist krank, aber sie geht trotzdem zur Arbeit.</em>"
       },
       {
-        contrast: "In italiano <em>benché</em> e <em>sebbene</em> vogliono il congiuntivo (<em>benché piova</em>), mentre <em>anche se</em> si usa con l'indicativo (<em>anche se piove</em>). In tedesco <em>obwohl</em> ha sempre l'<strong>indicativo</strong>: <em>obwohl es regnet</em>. Il verbo va in fondo, come dopo <em>weil</em>: <em>weil es regnet</em> dice perché, <em>obwohl es regnet</em> dice «nonostante questo»."
+        contrast: "In italiano <em>benché</em> e <em>sebbene</em> vogliono il congiuntivo (<em>benché piova</em>), mentre <em>anche se</em> si usa con l'indicativo (<em>anche se piove</em>). In tedesco, quando <em>obwohl</em> introduce un fatto reale come in questi esempi, si usa normalmente l'<strong>indicativo</strong>: <em>obwohl es regnet</em>. Il verbo va in fondo, come dopo <em>weil</em>: <em>weil es regnet</em> dice perché, <em>obwohl es regnet</em> dice «nonostante questo»."
       },
       {
-        trap: "Dopo una frase con <em>obwohl</em> la principale comincia con il verbo: <em>Obwohl es regnet, gehen wir spazieren</em>, non «..., wir gehen». E dopo <em>trotzdem</em> in prima posizione il verbo viene subito: <em>trotzdem gehen wir</em>, non «trotzdem wir gehen». <em>Obwohl</em> e <em>trotzdem</em> dicono la stessa cosa: in una frase se ne sceglie uno, perché usarli insieme ripete l'idea. Non confondere <em>obwohl</em> con <em>weil</em>: sono l'uno il contrario dell'altro."
+        trap: "Dopo una frase con <em>obwohl</em> la principale comincia con il verbo: <em>Obwohl es regnet, gehen wir spazieren</em>, non «..., wir gehen». E dopo <em>trotzdem</em> in prima posizione il verbo viene subito: <em>trotzdem gehen wir</em>, non «trotzdem wir gehen». <em>Obwohl</em> e <em>trotzdem</em> possono anche stare insieme, e allora la concessione si rafforza: <em>Obwohl es regnet, gehen wir trotzdem spazieren</em>, con <em>trotzdem</em> dopo il verbo. Non confondere <em>obwohl</em> con <em>weil</em>: <em>weil</em> introduce una causa, <em>obwohl</em> un fatto nonostante il quale succede ciò che dice la principale."
       },
       {
         tip: "Se la concessione sta nella stessa frase, usa <em>obwohl</em> con il verbo in fondo. Se sono due frasi separate, usa <em>trotzdem</em> e metti il verbo subito dopo, in seconda posizione."
@@ -467,7 +467,7 @@ LINGUAI.addStrings("it", {
           "Obwohl es regnet, wir gehen spazieren.",
           "Obwohl es regnet, trotzdem wir gehen spazieren."
         ],
-        why: "Dopo la frase con <b>obwohl</b> la principale comincia con il verbo: <i>gehen wir</i>. La terza ha il verbo nel posto sbagliato e ripete l'idea con <i>trotzdem</i>."
+        why: "Dopo la frase con <b>obwohl</b> la principale comincia con il verbo: <i>gehen wir</i>. La terza ha il verbo nel posto sbagliato: dopo <i>trotzdem</i> in prima posizione deve venire subito il verbo."
       },
       {
         q: "Quale frase è corretta?",
