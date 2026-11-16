@@ -520,5 +520,1047 @@ LINGUAI.addStrings("en", {
         why: "In <i>Hund</i> the final <b>d</b> sounds like a <b>t</b>; in <i>jeden Tag</i> the final <b>g</b> is a voiceless <b>k</b>."
       }
     ]
+  },
+  "unit:a2-u02": {
+    title: "On the road",
+    grammarNote: "wohin? with nach, zu and in + accusative · present with a time word and Futur I · Perfekt and register in a hotel · wenn + Perfekt for a future action already completed"
+  },
+  "lesson:a2-u02-l1": {
+    theme: "At the station",
+    title: "At the station: nach Wien, in die Schweiz",
+    objectives: [
+      "say where you are going with nach, in + accusative and zu",
+      "tell wohin? (destination) apart from wo? (location)",
+      "buy a ticket and ask for information at the station"
+    ],
+    theory: [
+      {
+        h: "Wohin? nach, in or zu",
+        p: "To the question <b>wohin?</b> (where to?) German picks the preposition according to the destination. With <b>cities and countries without an article</b> it uses <strong>nach</strong>: <em>Ich fahre nach Wien. Wir fliegen nach Italien.</em> With <b>countries that have an article</b> it uses <strong>in</strong> + <b>accusative</b>: <em>Wir fahren in die Schweiz.</em> Towards <b>a person</b>, and usually towards <b>a building or a specific place</b>, it uses <strong>zu</strong> + dative: <em>Ich fahre zu meiner Tante. Wir gehen zum Bahnhof.</em> With <em>zu</em> + article there are the contractions <em>zum</em> (zu dem) and <em>zur</em> (zu der)."
+      },
+      {
+        contrast: "English uses one little word, <em>to</em>, for almost every destination (“to Vienna, to Switzerland, to my aunt's, to the station”), and often just drops it (“I'm going home”). German has to choose: <em>nach</em> for cities and countries without an article, <em>in die</em> for countries with one, <em>zu</em> for people and places. The list of countries with an article is short and has to be learned: <em>die Schweiz</em>, <em>die Türkei</em>, <em>die USA</em>, while <em>Italien</em>, <em>Deutschland</em> and <em>Österreich</em> have none. English also has a single <em>where</em> for both “where are you?” and “where are you going?”, with <em>where to</em> now rare; German keeps two questions, <em>wo?</em> (location) and <em>wohin?</em> (direction), and the second one changes the case after <em>in</em>."
+      },
+      {
+        trap: "The case depends on the question the sentence answers. With <b>wohin?</b> (movement towards a place) <em>in</em> takes the <b>accusative</b>: <em>Wir fahren in die Schweiz</em>. With <b>wo?</b> (location, where someone is) it takes the <b>dative</b>: <em>Meine Tante wohnt in der Schweiz</em>. Two nearly identical sentences, two different cases, and <em>die</em> against <em>der</em> is the only clue. Watch out for <em>nach die Schweiz</em> as well: it does not exist, because <em>nach</em> does not go with countries that have an article. Since English has no case on nouns, the difference between <em>die</em> and <em>der</em> will not come from your ear, so listen for it deliberately."
+      },
+      {
+        tip: "At the station you only need a few fixed phrases: <em>Eine Fahrkarte nach Wien, bitte.</em> <em>Einfach oder hin und zurück?</em> (one way or round trip?) <em>Von welchem Gleis fährt der Zug ab?</em> Learn <em>die Schweiz</em> together with its article, as a single unit."
+      }
+    ],
+    grammar: {
+      title: "Wohin? nach, in + accusative, zu",
+      note: "The preposition depends on the destination. <b>nach</b> goes without an article, <b>zu</b> takes the dative (<i>zum</i>, <i>zur</i>), <b>in</b> with wohin? takes the accusative.",
+      table: {
+        head: ["destination", "preposition", "example"],
+        rows: [
+          ["cities, countries without an article", "nach", "nach Wien, nach Italien"],
+          ["countries with an article", "in + accusative", "in die Schweiz, in die Türkei"],
+          ["people", "zu + dative", "zu meiner Tante, zum Arzt"],
+          ["buildings, specific places", "zu + dative", "zum Bahnhof, zur Post"],
+          ["location (wo?)", "in + dative", "in der Schweiz"]
+        ]
+      },
+      examples: [
+        { tr: "I'm going to Vienna.", note: "nach + city, no article" },
+        { tr: "We're flying to Italy.", note: "nach + country without an article" },
+        { tr: "In summer they go to Switzerland.", note: "wohin? in + accusative: in die Schweiz" },
+        { tr: "He's going to his aunt's.", note: "zu + dative: zu seiner Tante" },
+        { tr: "We're going to the station.", note: "zu + dative: zum (zu dem) Bahnhof" },
+        { tr: "My aunt lives in Switzerland.", note: "wo? in + dative: in der Schweiz" }
+      ]
+    },
+    vocab: [
+      "train station",
+      "train",
+      "platform, track",
+      "train ticket",
+      "timetable",
+      "departure",
+      "arrival",
+      "Switzerland",
+      "country",
+      "information (information desk)",
+      "one way",
+      "round trip"
+    ],
+    exercises: [
+      {
+        q: "Complete: “Wohin fährst du? Ich fahre ___ Wien.”",
+        opts: ["nach", "in", "zu"],
+        why: "With cities without an article you use <b>nach</b>. <i>In Wien</i> says where you are, not where you are going."
+      },
+      {
+        q: "You say that you are going to Switzerland. Which sentence is correct?",
+        opts: ["Wir fahren nach die Schweiz.", "Wir fahren in die Schweiz.", "Wir fahren in der Schweiz."],
+        why: "<i>Die Schweiz</i> has an article: you need <b>in</b> + accusative (<i>in die Schweiz</i>). <i>In der Schweiz</i> is the dative and says where you are."
+      },
+      {
+        q: "Complete: “Morgen fliege ich ___ Italien.” (to a country without an article)",
+        hint: "nach, in or zu?",
+        why: "<i>Italien</i> has no article, so <b>nach</b>, as with cities."
+      },
+      {
+        q: "Complete: “Ich fahre ___ meiner Tante.” (towards a person)",
+        hint: "preposition + dative",
+        why: "Towards a person you use <b>zu</b> + dative: <i>zu meiner Tante</i>."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "I'm going to Vienna. Then we're going to Switzerland, and in the evening I'm going to my friend's.",
+        why: "Three destinations, three prepositions: <i>nach Wien</i>, <i>in die Schweiz</i> (accusative, country with an article), <i>zu meinem Freund</i> (person, dative)."
+      },
+      {
+        q: "Match each destination with its translation.",
+        pairs: ["to Vienna", "to Switzerland (destination)", "to my aunt's", "to the station"]
+      },
+      {
+        q: "Translate: “Tomorrow we're going to Switzerland.”",
+        why: "<i>Morgen fahren wir in die Schweiz</i>: <i>fahren</i> for a means of transport; <i>reisen</i> is an alternative. The order can change (<i>Wir fahren morgen ...</i>), the conjugated verb stays in second position."
+      },
+      {
+        q: "At the station ticket counter.",
+        setting: "You are buying a ticket to Vienna.",
+        lines: [
+          { tr: "Good morning. Where are you going?" },
+          { tr: "Say that you are going to Vienna.", answerTr: "I'm going to Vienna." },
+          { tr: "One way or round trip?" },
+          { tr: "Answer: round trip, please.", answerTr: "Round trip, please." },
+          { tr: "Are you traveling on afterwards?" },
+          { tr: "Say that afterwards you are going to your aunt's.", answerTr: "Yes, afterwards I'm going to my aunt's." }
+        ]
+      },
+      {
+        tr: "Good morning, I'd like a ticket to Vienna, round trip, please.",
+        why: "In <i>Fahrkarte</i> the first <b>a</b> is long; in <i>Wien</i> the <b>W</b> is read [v] and <b>ie</b> is a long <b>i</b>; <i>zurück</i> has a short <b>ü</b>."
+      },
+      {
+        tr: "In summer I'm going to Switzerland, and then to my aunt's in Vienna.",
+        why: "In <i>Schweiz</i> the <b>sch</b> is read [ʃ], the <b>w</b> is [v], <b>ei</b> sounds [aɪ] and the final <b>z</b> is [ts]. In <i>Sommer</i> the initial <b>S</b> before a vowel is usually voiced."
+      }
+    ]
+  },
+  "lesson:a2-u02-l2": {
+    theme: "Travel plans",
+    title: "Tomorrow I leave, I will leave",
+    objectives: [
+      "talk about the future with the present and a time word",
+      "form the Futur I with werden + infinitive at the end",
+      "recognize when the Futur I is useful (promise, decision, prediction)"
+    ],
+    theory: [
+      {
+        h: "The future: present with a time word, or Futur I",
+        p: "To talk about the future German usually uses the <b>present</b> together with a time word: <em>Morgen fahre ich nach Wien. Nächste Woche fliegen wir nach Spanien.</em> There is also the <strong>Futur I</strong>: <em>werden</em> conjugated in second position and the <b>infinitive at the end</b> of the sentence: <em>Ich werde dich morgen anrufen. Wir werden im Sommer in die Schweiz fahren.</em> The Futur I is used for a promise, a decision, a prediction (<em>Es wird heute Abend regnen</em>) or when there is no time word."
+      },
+      {
+        contrast: "English has no future tense of its own: it uses the modal <em>will</em> (“I will call you”) and, for plans, the present continuous or <em>going to</em> (“I'm flying to Vienna tomorrow”, “I'm going to call you”). German <em>Morgen fahre ich nach Wien</em> corresponds to the plan form, and <em>Ich werde ... fahren</em> to <em>will</em>, though the match is not exact. The mechanics differ: <em>will</em> is followed by a bare infinitive right after it (“will go”), while in German <em>werden</em> sits in second position and the infinitive goes to the end: <em>Ich werde morgen nach Wien fahren</em>. Also note that <em>werden</em> is conjugated for every person (<em>du wirst</em>), whereas <em>will</em> never changes."
+      },
+      {
+        trap: "With the Futur I the main verb stays in the infinitive: <em>Ich werde morgen nach Wien fahren</em>, not “Ich werde fahre”. With a separable verb the infinitive stays together: <em>Ich werde dich anrufen</em>. Careful: <em>werden</em> is also a full verb meaning “to become”: <em>Er wird Arzt</em> (he becomes a doctor), <em>Es wird kalt</em> (it is getting cold). If there is no infinitive at the end, it is not a future. English speakers may also be tempted to put the infinitive straight after <em>werden</em>, as with “will go”; in a main clause it belongs at the very end."
+      },
+      {
+        tip: "First look for a time word: <em>morgen, nächste Woche, im Sommer, bald, am Wochenende</em>. If there is one, the present is enough. If you want a tone of promise or decision (<em>Ich werde es nicht vergessen</em>), use the Futur I. In both cases the time word can come first: <em>Morgen fahre ich ...</em>, with the verb in second position."
+      }
+    ],
+    grammar: {
+      title: "The Futur I with werden",
+      note: "<b>werden</b> is conjugated in second position, the main verb goes <b>in the infinitive at the end</b>. With a time word the present is the normal form.",
+      table: {
+        head: ["person", "werden", "example"],
+        rows: [
+          ["ich", "werde", "Ich werde fahren."],
+          ["du", "wirst", "Du wirst fahren."],
+          ["er, sie, es", "wird", "Es wird regnen."],
+          ["wir", "werden", "Wir werden fliegen."],
+          ["ihr", "werdet", "Ihr werdet ankommen."],
+          ["sie, Sie", "werden", "Sie werden bleiben."]
+        ]
+      },
+      examples: [
+        { tr: "Tomorrow I'm going to Vienna.", note: "present + morgen: normal form" },
+        { tr: "Next week we're flying to Spain.", note: "present + nächste Woche" },
+        { tr: "I'll call you tomorrow.", note: "Futur I: separable verb joined in the infinitive at the end" },
+        { tr: "It will rain tonight.", note: "Futur I as a prediction" },
+        { tr: "In summer we will go to Switzerland.", note: "werden in second position, infinitive at the end" },
+        { tr: "I'll send you a photo.", note: "Futur I: a promise" }
+      ]
+    },
+    vocab: [
+      "trip, journey",
+      "vacation, time off",
+      "week",
+      "weekend",
+      "flight",
+      "airport",
+      "suitcase",
+      "ticket (flight, event)",
+      "tomorrow",
+      "next week",
+      "soon",
+      "in summer"
+    ],
+    exercises: [
+      {
+        tr: "The present of werden, all persons.",
+        why: "<i>Werde, wirst, wird, werden, werdet, werden</i>: <i>werden</i> is irregular (<i>e</i> becomes <i>i</i> in <i>du</i> and <i>er, sie, es</i>) and it is the auxiliary of the Futur I."
+      },
+      {
+        tr: "The Futur I of fahren, all persons.",
+        why: "<i>Ich werde fahren, du wirst fahren, er wird fahren, wir werden fahren, ihr werdet fahren, sie werden fahren</i>: <i>werden</i> changes, the infinitive stays the same."
+      },
+      {
+        tr: "The Futur I of fliegen, all persons.",
+        why: "In the Futur I the infinitive is not conjugated: <i>ich werde fliegen, du wirst fliegen ...</i>. In a normal sentence it goes at the end."
+      },
+      {
+        q: "Which sentence uses the Futur I correctly?",
+        opts: [
+          "Ich werde morgen nach Wien fahren.",
+          "Ich werde morgen nach Wien fahre.",
+          "Ich werde fahren morgen nach Wien."
+        ],
+        why: "<b>werden</b> in second position and the <b>infinitive at the end</b>. The main verb is not conjugated and does not go in second position: it stays in the infinitive, at the end."
+      },
+      {
+        q: "Which sentence is correct? (Tomorrow I'm going to Berlin.)",
+        opts: [
+          "Morgen ich fahre nach Berlin.",
+          "Morgen fahre ich nach Berlin.",
+          "Morgen werde fahre ich nach Berlin."
+        ],
+        why: "With <i>morgen</i> in first position the conjugated verb stays in second (<i>fahre</i>) and the subject follows it: <i>Morgen fahre ich ...</i>."
+      },
+      {
+        q: "Complete: “Wir ___ im Sommer nach Spanien fliegen.” (we will, use werden)",
+        hint: "werden, wir",
+        why: "<b>Werden</b>: in the first person plural the form is the same as the infinitive, and <i>fliegen</i> stays in the infinitive at the end."
+      },
+      {
+        q: "Complete: “Nächste Woche ___ ich nach Hamburg.” (present of fahren)",
+        hint: "fahren, present, ich",
+        why: "<b>Fahre</b>: with <i>nächste Woche</i> the present is enough. <i>Nächste Woche</i> is in first position, the verb in second."
+      },
+      {
+        q: "Complete the sentence (for “to send”, both schicken and senden work).",
+        tr: "Tomorrow I'll send you a photo.",
+        why: "<i>Morgen werde ich dir ein Foto schicken</i>: after <i>morgen</i> the conjugated verb (<i>werde</i>) is in second position and the subject follows it; the infinitive goes at the end. <i>Senden</i> also works."
+      },
+      {
+        tr: "Next week I'm going to Vienna by train, and in summer we'll go to Switzerland by plane.",
+        why: "In <i>Nächste</i> the final <b>st</b> stays [st], not [ʃt]. In <i>werden</i> the <b>w</b> is read [v]."
+      },
+      {
+        tr: "Tomorrow I'm going to Hamburg, and next week I'll visit my friend.",
+        why: "In <i>Hamburg</i> the final <b>g</b> is usually a voiceless <b>k</b> ([k]); in <i>besuchen</i> the <b>ch</b> after <b>u</b> is [x] and the stress falls on the second syllable, because <i>be-</i> is unstressed."
+      }
+    ]
+  },
+  "lesson:a2-u02-l3": {
+    theme: "At the hotel",
+    title: "I've booked a room",
+    objectives: [
+      "say that you have reserved or booked something with the Perfekt",
+      "form the participle of reservieren and buchen",
+      "choose between Sie and du in a hotel and use polite phrases"
+    ],
+    theory: [
+      {
+        h: "The Perfekt: booking and arriving",
+        p: "To say that you have already booked, use the <strong>Perfekt</strong>: auxiliary in second position and <b>participle II</b> at the end. <em>Ich habe ein Zimmer reserviert. Wir haben ein Doppelzimmer gebucht.</em> Verbs in <em>-ieren</em> do not take <em>ge-</em>: <em>reservieren → reserviert</em>. <em>Buchen</em> is regular: <em>gebucht</em>. In general, intransitive verbs of movement or change of state take <em>sein</em>, while transitive and reflexive verbs take <em>haben</em>. Here you need <em>ankommen</em> and <em>abfahren</em>: <em>Wir sind gestern Abend angekommen</em> (participle <em>angekommen</em>, with <em>ge-</em> in the middle)."
+      },
+      {
+        contrast: "English always builds the present perfect with “have”: “I have arrived”, “we have booked”. German uses <em>sein</em> for verbs of movement or change of state: <em>Wir sind angekommen</em>, not “Wir haben angekommen”. In everyday speech German uses the Perfekt where English often uses the simple past (“we arrived last night” = <em>Wir sind gestern Abend angekommen</em>). For politeness English has only <em>you</em>, which works for everyone; German makes you choose between <em>du</em> and <em>Sie</em>, and <em>Sie</em> is conjugated like the third person <b>plural</b>: <em>Haben Sie ein Zimmer?</em> English “Could you ...?” is close to <em>Könnten Sie ...?</em>, a polite request."
+      },
+      {
+        trap: "Do not say “Ich habe ein Zimmer reservieren” (infinitive instead of the participle) and do not forget the right auxiliary: <em>Wir sind angekommen</em>, not “Wir haben angekommen”. As for register: at a reception desk you normally use <em>Sie</em>, and <em>Könnten Sie mir bitte ...?</em> is more polite than <em>Können Sie ...?</em>. Among friends or in a youth hostel among young people <em>du</em> is usual, but when in doubt choose <em>Sie</em>."
+      },
+      {
+        tip: "Three sentences to have ready at a hotel: <em>Ich habe ein Zimmer reserviert.</em> <em>Haben Sie ein Zimmer für zwei Nächte frei?</em> <em>Könnten Sie mir bitte den Schlüssel geben?</em> The participle of verbs in <em>-ieren</em> ends in <em>-iert</em> and takes no <em>ge-</em>."
+      }
+    ],
+    grammar: {
+      title: "The Perfekt: reservieren, buchen, ankommen",
+      note: "Auxiliary in second position, participle II at the end. <b>haben</b> with most verbs, <b>sein</b> in general with intransitive verbs of movement or change of state (here ankommen, abfahren), not with transitive or reflexive ones. Verbs in <b>-ieren</b> have no <i>ge-</i>.",
+      table: {
+        head: ["infinitive", "participle II", "example"],
+        rows: [
+          ["reservieren", "reserviert", "Ich habe ein Zimmer reserviert."],
+          ["buchen", "gebucht", "Wir haben ein Zimmer gebucht."],
+          ["ankommen", "angekommen", "Wir sind gestern angekommen."],
+          ["abfahren", "abgefahren", "Der Zug ist abgefahren."]
+        ]
+      },
+      examples: [
+        { tr: "I've reserved a room.", note: "-ieren: reserviert, no ge-" },
+        { tr: "We've booked a double room for two nights.", note: "haben + gebucht at the end" },
+        { tr: "We arrived last night.", note: "ankommen takes sein" },
+        { tr: "Do you have a reservation?", note: "polite form with Sie (like the third person plural)" },
+        { tr: "Could you help me, please?", note: "Könnten Sie: polite request" },
+        { tr: "Have you already booked a hotel?", note: "with du: Hast du ...?" }
+      ]
+    },
+    vocab: [
+      "hotel",
+      "room",
+      "double room",
+      "reservation",
+      "night",
+      "key",
+      "breakfast",
+      "reception",
+      "guest",
+      "luggage",
+      "to reserve (a seat)",
+      "to book (a room, a trip)"
+    ],
+    exercises: [
+      {
+        q: "Complete: “Ich habe ein Zimmer ___.” (the participle of reservieren)",
+        opts: ["gereserviert", "reserviert", "reservieren"],
+        why: "Verbs in <i>-ieren</i> take no <i>ge-</i>: <b>reserviert</b>. The infinitive (<i>reservieren</i>) does not replace the participle."
+      },
+      {
+        q: "Complete: “Wir haben ein Doppelzimmer ___.” (the participle of buchen)",
+        hint: "buchen is regular",
+        why: "<b>Gebucht</b>: <i>ge-</i> + stem + <i>-t</i>."
+      },
+      {
+        q: "Complete: “Wir ___ gestern Abend im Hotel angekommen.” (haben or sein?)",
+        hint: "ankommen is a verb of movement",
+        why: "<b>Sind</b>: <i>ankommen</i> expresses a change of place and takes <i>sein</i> in the Perfekt."
+      },
+      {
+        q: "Complete: “Guten Abend, ___ Sie ein Zimmer frei?” (present of haben, polite form)",
+        hint: "haben, present, Sie",
+        why: "<b>Haben</b>: the polite <i>Sie</i> is conjugated like the third person plural."
+      },
+      {
+        q: "Complete the sentence (for the room, both reservieren and buchen work).",
+        tr: "I've booked a room. We arrived last night.",
+        why: "<i>Ich habe ein Zimmer reserviert</i> (<i>gebucht</i> also works) and <i>Wir sind gestern Abend angekommen</i>. The two sentences have two different auxiliaries: <i>haben</i> and <i>sein</i>."
+      },
+      {
+        q: "Match each word with its meaning.",
+        pairs: ["double room", "reservation", "key", "breakfast"]
+      },
+      {
+        q: "Translate: “We've booked a double room for two nights.”",
+        why: "<i>Wir haben ein Doppelzimmer für zwei Nächte reserviert</i>. <i>Gebucht</i> also works; the order of <i>für zwei Nächte</i> and <i>ein Doppelzimmer</i> can change, the participle stays at the end."
+      },
+      {
+        q: "At the reception desk.",
+        setting: "You arrive at the hotel and talk to the receptionist.",
+        lines: [
+          { tr: "Good evening. Do you have a reservation?" },
+          { tr: "Say that you have booked a room.", answerTr: "Yes, I've booked a room." },
+          { tr: "Have you been traveling for long?" },
+          { tr: "Say that you left at five.", answerTr: "Yes, we left at five." },
+          { tr: "Breakfast is from seven to ten. Do you have any other questions?" },
+          { tr: "Politely ask for the key, using the formal form.", answerTr: "Yes, could you give me the key, please?" }
+        ]
+      },
+      {
+        tr: "Good evening, I've booked a double room for two nights.",
+        why: "In <i>Doppelzimmer</i> the <b>z</b> is [ts]; <i>Nächte</i> has a <b>ch</b> after <b>ä</b>, that is [ç], a soft hiss. In <i>Abend</i> the <b>b</b> is voiced, because it is not at the end of the syllable."
+      },
+      {
+        tr: "We've booked a room and last night we arrived at the hotel.",
+        why: "In <i>angekommen</i> the <b>n</b> and <b>g</b> belong to different parts (<i>an-ge-</i>) and are pronounced [nɡ], not as a single nasal [ŋ]; in <i>gebucht</i> the <b>ch</b> after <b>u</b> is [x], scraped at the back of the throat."
+      }
+    ]
+  },
+  "lesson:a2-u02-l4": {
+    theme: "After arrival",
+    title: "When I've arrived, I'll call you",
+    objectives: [
+      "use wenn + Perfekt for a future action that is already completed",
+      "tell wenn (present, future, repetition) apart from als (a single past event)",
+      "combine wenn with the present or with the Futur I in the main clause"
+    ],
+    theory: [
+      {
+        h: "Wenn + Perfekt: after I've arrived",
+        p: "<strong>Wenn</strong> introduces a fact in the present or the future. When the action of the subordinate clause will be <b>already completed</b> before that of the main clause, the subordinate clause uses the <b>Perfekt</b>: <em>Wenn ich angekommen bin, rufe ich dich an</em> (when I've arrived, I'll call you). The conjugated verb (<em>bin</em>) goes <b>to the end</b>; the main clause starts with the verb: <em>rufe ich</em>. In the main clause you can use the present (<em>rufe ich ... an</em>) or the Futur I (<em>werde ich ... anrufen</em>)."
+      },
+      {
+        contrast: "English does something similar and even sounds natural: “When I've arrived, I'll call you”, or just “When I arrive, I'll call you”. In both, English keeps a present form after <em>when</em>, never “when I will arrive”, and German does the same: <em>Wenn ich ankomme</em> or <em>Wenn ich angekommen bin</em>, not a Futur in the <em>wenn</em> clause. For one event in the past English also says <em>when</em> (“When we arrived yesterday, it was raining”), but German uses <em>als</em> and the conjugated verb goes to the end: <em>Als wir gestern angekommen sind, hat es geregnet.</em> <em>Als</em> also goes with the Präteritum: <em>Als wir gestern ankamen, regnete es.</em> Here we practice it with the Perfekt. English has one word for all of this; German has <em>wenn</em>, <em>als</em> and, for questions, <em>wann</em>."
+      },
+      {
+        trap: "<em>Als</em> and <em>wenn</em> are not interchangeable: with a single past event you need <b>als</b> (<em>Als ich gestern angekommen bin, ...</em>), with present, future and repeated events you need <b>wenn</b>. Do not write “Wenn ich bin angekommen”: after <em>wenn</em> the conjugated verb goes to the end, after the participle. And do not confuse <em>wenn</em> with <em>wann</em>, the question word (<em>Wann kommst du an?</em>). English “when” is both, so the choice has to be made in German."
+      },
+      {
+        tip: "Build the sentence in two pieces: the subordinate clause <em>Wenn ich angekommen bin,</em> with the verb at the end, then a comma and the main clause starting with the verb, <em>rufe ich dich an</em>. If the subordinate clause comes second, the order is normal: <em>Ich rufe dich an, wenn ich angekommen bin.</em>"
+      }
+    ],
+    grammar: {
+      title: "Wenn + Perfekt, als + Perfekt",
+      note: "The conjugated verb (the auxiliary) goes <b>to the end</b>, after the participle. If the subordinate clause comes first, the main clause starts with the verb.",
+      table: {
+        head: ["situation", "word and tense", "example"],
+        rows: [
+          ["future, already completed", "wenn + Perfekt", "Wenn ich angekommen bin, rufe ich dich an."],
+          ["present or future", "wenn + present", "Wenn ich Zeit habe, besuche ich dich."],
+          ["single past event", "als + Perfekt", "Als wir gestern angekommen sind, hat es geregnet."]
+        ]
+      },
+      examples: [
+        { tr: "When I've arrived, I'll call you.", note: "wenn + Perfekt: auxiliary at the end" },
+        { tr: "When we've found the hotel, we'll go and eat.", note: "gefunden haben, then gehen wir" },
+        { tr: "When the train has left, I'll call you.", note: "main clause with Futur I: werde ich anrufen" },
+        { tr: "When I have time, I come and visit you.", note: "wenn + present" },
+        { tr: "When we arrived yesterday, it was raining.", note: "als: a single past event" },
+        { tr: "I'll send you a message once I've changed trains.", note: "subordinate clause second: normal order" }
+      ]
+    },
+    vocab: [
+      "to arrive",
+      "to leave, to depart (vehicle)",
+      "to change (vehicle, train)",
+      "to call, to phone",
+      "delay",
+      "message",
+      "connection (transfer)",
+      "stop (bus, tram)",
+      "taxi",
+      "connection (route, link)",
+      "on time",
+      "later"
+    ],
+    exercises: [
+      {
+        q: "How do you say “When I've arrived, I'll call you”?",
+        opts: [
+          "Wenn ich angekommen bin, rufe ich dich an.",
+          "Wenn ich ankomme bin, rufe ich dich an.",
+          "Wenn ich bin angekommen, rufe ich dich an."
+        ],
+        why: "In the subordinate clause the participle comes first and the auxiliary at the end: <i>angekommen bin</i>. The main clause starts with the verb: <i>rufe ich ... an</i>."
+      },
+      {
+        q: "Which word? “___ ich gestern angekommen bin, hat es geregnet.”",
+        opts: ["Als", "Wenn", "Wann"],
+        why: "A single past event: <b>als</b>. <i>Wenn</i> is for present, future and repeated events."
+      },
+      {
+        q: "Complete: “Ich rufe dich an, ___ ich angekommen bin.” (when, use wenn)",
+        hint: "use wenn",
+        why: "<b>Wenn</b> for a fact in the future. The conjugated verb (<i>bin</i>) goes to the end."
+      },
+      {
+        q: "Complete: “Wenn ich angekommen ___, rufe ich dich an.” (sein, Perfekt, ich)",
+        hint: "sein, present, ich",
+        why: "<b>Bin</b>: the auxiliary of <i>ankommen</i> is <i>sein</i>, and the conjugated verb stands at the end of the subordinate clause."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "When we've found the hotel, we'll go and eat.",
+        why: "<i>Wenn wir das Hotel gefunden haben, gehen wir essen</i>: in the subordinate clause <i>haben</i> closes the sentence; in the main clause the verb (<i>gehen</i>) comes right after the comma."
+      },
+      {
+        q: "Match each verb with its meaning.",
+        pairs: ["to arrive", "to leave", "to change (trains)", "to phone"]
+      },
+      {
+        q: "Put the words in order.",
+        tr: "When I've arrived, I'll call you.",
+        why: "With these pieces the order is that of a subordinate clause first: <i>Wenn ich angekommen bin, rufe ich dich an</i>. The separable verb <i>anrufen</i> leaves <i>an</i> at the end of the main clause."
+      },
+      {
+        q: "Translate: “When I arrive, I'll call you.”",
+        why: "The present is enough: <i>Wenn ich ankomme, rufe ich dich an</i>. The Perfekt in the subordinate clause (<i>angekommen bin</i>) or the Futur I in the main clause (<i>werde ich dich anrufen</i>) also work, and the order can be reversed."
+      },
+      {
+        tr: "When I've arrived, I'll call you, and then we'll go and eat together.",
+        why: "In <i>angekommen</i> the <b>n</b> and <b>g</b> belong to different parts (<i>an-ge-</i>) and are pronounced [nɡ], not as a single nasal [ŋ]; in <i>zusammen</i> the <b>z</b> is [ts] and the <b>s</b> before a vowel is usually voiced."
+      },
+      {
+        tr: "When I've arrived at the hotel, I'll send you a message.",
+        why: "In <i>Nachricht</i> the <b>ch</b> is [x] after <b>a</b> and [ç] after <b>i</b>: two different sounds in the same word, and the <b>sch</b> of <i>schicke</i> is [ʃ]. In <i>Hotel</i> the stress falls on the last syllable."
+      }
+    ]
+  },
+  "lesson:a2-u02-test": {
+    theme: "Review",
+    title: "Unit 2 review",
+    objectives: ["check wohin? (nach, in, zu), the Futur I and wenn + Perfekt"],
+    theory: [
+      {
+        p: "Ten questions on the whole unit. You pass with 70%. Don't look back at the lessons while you answer: if you don't remember something, it's better to go back and review."
+      }
+    ],
+    exercises: [
+      {
+        tr: "The Futur I of kommen, all persons.",
+        why: "<i>Ich werde kommen, du wirst kommen, er wird kommen, wir werden kommen, ihr werdet kommen, sie werden kommen</i>."
+      },
+      {
+        q: "Complete: “Wir fahren ___ Italien.” (to a country without an article)",
+        hint: "nach, in or zu?",
+        why: "<b>Nach</b>: <i>Italien</i> has no article."
+      },
+      {
+        q: "Complete: “Ich fahre ___ die Schweiz.” (to a country with an article)",
+        hint: "preposition + accusative",
+        why: "<b>In</b> + accusative: <i>in die Schweiz</i>."
+      },
+      {
+        q: "Complete: “Wir fahren ___ meiner Oma.” (towards a person)",
+        hint: "preposition + dative",
+        why: "<b>Zu</b> + dative: <i>zu meiner Oma</i>."
+      },
+      {
+        q: "Complete: “Ich ___ morgen nach Wien fahren.” (Futur I, werden, ich)",
+        hint: "werden, ich",
+        why: "<b>Werde</b> in second position, <i>fahren</i> in the infinitive at the end."
+      },
+      {
+        q: "Complete: “Ich rufe dich an, ___ ich im Hotel angekommen bin.” (when, use wenn)",
+        hint: "use wenn",
+        why: "<b>Wenn</b>: a fact in the future, with the conjugated verb at the end."
+      },
+      {
+        q: "Complete: “Meine Tante wohnt ___ Schweiz.” (where she lives: location)",
+        opts: ["in der", "in die", "nach der"],
+        why: "Location (wo?): <b>in</b> + dative, and <i>die Schweiz</i> in the dative is <i>in der Schweiz</i>."
+      },
+      {
+        q: "Translate: “Tomorrow we're going to Vienna.”",
+        why: "<i>Morgen fahren wir nach Wien</i>: <i>nach</i> with a city. The order can change, the verb stays in second position."
+      },
+      {
+        tr: "Tomorrow I'm going to Vienna and, when I've arrived, I'll call you.",
+        why: "In <i>Wien</i> the <b>W</b> is [v] and <b>ie</b> is a long <b>i</b>; in <i>angekommen</i> the <b>n</b> and <b>g</b> belong to different parts (<i>an-ge-</i>) and are pronounced [nɡ], not as a single nasal [ŋ]."
+      },
+      {
+        tr: "In summer we'll go to Switzerland, and then I'm going to my aunt's.",
+        why: "In <i>Schweiz</i> the <b>sch</b> is [ʃ], <b>w</b> is [v] and <b>ei</b> sounds [aɪ]."
+      }
+    ]
+  },
+  "unit:a2-u03": {
+    title: "I see him, I help him",
+    grammarNote: "accusative and dative pronouns · verbs with the dative (helfen, gefallen, gehören, danken) · order of objects · imperative with du and ihr · mal and doch"
+  },
+  "lesson:a2-u03-l1": {
+    theme: "Talking about people",
+    title: "ihn, sie, es",
+    objectives: [
+      "replace a noun with mich, dich, ihn, sie, es, uns, euch, sie, Sie",
+      "choose the pronoun according to the gender of the German noun",
+      "place the pronoun after the verb in the main clause"
+    ],
+    theory: [
+      {
+        h: "The accusative pronoun in place of the noun",
+        p: "To avoid repeating a noun that is the <b>direct object</b> you use the accusative pronoun: <em>mich, dich, ihn, sie, es, uns, euch, sie, Sie</em>. Compared with the nominative, <em>ich, du, er, wir, ihr</em> change; <em>sie</em> and <em>es</em> stay the same. The pronoun follows the <b>gender of the German noun</b>, even for things: <em>der Bruder → ihn</em>, <em>die Kollegin → sie</em>, <em>das Kind → es</em>, <em>der Schlüssel → ihn</em>. In a neutral main clause the pronoun comes right after the conjugated verb: <em>Ich kenne ihn gut.</em> If the sentence begins with another element, the pronoun follows the subject: <em>Morgen sehe ich ihn.</em> In a subordinate clause it comes after the conjunction and the subject, before the verb at the end: <em>..., weil ich ihn gut kenne.</em>"
+      },
+      {
+        contrast: "English has almost the same set (<em>me, you, him, her, it, us, them</em>) and also puts the pronoun after the verb: “I see him”, <em>Ich sehe ihn</em>. The big difference is things: English calls every object <em>it</em> (“the key → I see it”), while German keeps the gender of the noun: <em>der Schlüssel → ihn</em>, <em>die Zeitung → sie</em>, <em>das Buch → es</em>. So “I read it” can be <em>Ich lese ihn</em>, <em>sie</em> or <em>es</em>, depending on the noun. English <em>him</em> also covers both cases (“I see him”, “I help him”), while German splits it into <em>ihn</em> and <em>ihm</em>."
+      },
+      {
+        trap: "<em>Sie</em> can mean “she”, “they”, “her” or “them”: you work it out from the verb and the context (<em>Ich sehe sie</em>, on its own, is ambiguous). With a capital letter it is the polite form: <em>Ich kenne Sie</em>. And do not confuse <em>ihn</em> (accusative) with <em>ihm</em> (dative): <em>Ich sehe ihm</em> is wrong, because <em>sehen</em> takes the accusative. Since English <em>him</em> hides the difference, check the case, not only the sound."
+      },
+      {
+        tip: "Before writing the pronoun, repeat the German noun with its article: <em>der → ihn</em>, <em>die → sie</em>, <em>das → es</em>, <em>die</em> (plural) <em>→ sie</em>. The pronoun for a person is the same as the one for a thing of the same gender."
+      }
+    ],
+    grammar: {
+      title: "Accusative pronouns",
+      note: "They replace a direct object that is already known. Gender and number follow the German noun: <b>der → ihn</b>, <b>die → sie</b>, <b>das → es</b>.",
+      table: {
+        head: ["nominative", "accusative", "example"],
+        rows: [
+          ["ich", "mich", "Er sieht mich."],
+          ["du", "dich", "Ich kenne dich."],
+          ["er", "ihn", "Wir sehen ihn."],
+          ["sie", "sie", "Ich treffe sie."],
+          ["es", "es", "Ich nehme es."],
+          ["wir", "uns", "Sie laden uns ein."],
+          ["ihr", "euch", "Ich besuche euch."],
+          ["sie, Sie", "sie, Sie", "Wir kennen Sie."]
+        ]
+      },
+      examples: [
+        { tr: "I know him well.", note: "ihn for a masculine noun (der Bruder)" },
+        { tr: "Tomorrow we're meeting her.", note: "sie: for example die Kollegin" },
+        { tr: "He doesn't see me.", note: "mich: accusative of ich" },
+        { tr: "I'll call you tonight.", note: "dich; anrufen is separable, an goes to the end" },
+        { tr: "The child is sick. I'm going to visit him today.", note: "es for das Kind, neuter" },
+        { tr: "They're inviting us to the party.", note: "uns; einladen is separable, ein goes to the end" }
+      ]
+    },
+    vocab: [
+      "brother",
+      "sister",
+      "neighbor",
+      "colleague (woman)",
+      "boss",
+      "child",
+      "key",
+      "newspaper",
+      "to know (a person)",
+      "to see",
+      "to meet",
+      "to invite"
+    ],
+    exercises: [
+      {
+        q: "You are talking about your brother: “I often see him.” Which sentence is correct?",
+        opts: ["Ich sehe er oft.", "Ich sehe ihn oft.", "Ich sehe ihm oft."],
+        why: "<b>Ihn</b>: <i>sehen</i> takes the accusative and for <i>der Bruder</i> the pronoun is <i>ihn</i>. <i>Er</i> is the nominative, <i>ihm</i> the dative."
+      },
+      {
+        q: "Complete: “Das Kind ist krank. Ich besuche ___ heute.”",
+        opts: ["ihn", "sie", "es"],
+        why: "<i>Das Kind</i> is neuter, so <b>es</b>. The gender follows the German word, not the sex of the person."
+      },
+      {
+        q: "Which sentences are correct? (more than one)",
+        opts: [
+          "Ich sehe dich morgen.",
+          "Wir laden sie zur Party ein.",
+          "Er kennt mich gut.",
+          "Ich treffe ihm heute."
+        ],
+        why: "The first three use the right accusative pronoun. <i>Ihm</i> is a dative and <i>treffen</i> takes the accusative: <i>Ich treffe ihn heute.</i>"
+      },
+      {
+        q: "Complete: “Das ist mein Bruder. Ich kenne ___ sehr gut.” (er, accusative)",
+        hint: "accusative pronoun",
+        why: "<b>Ihn</b>: <i>kennen</i> takes the accusative and <i>der Bruder</i> is masculine."
+      },
+      {
+        q: "Complete: “Wo ist Lisa? Ich sehe ___ nicht.” (Lisa)",
+        hint: "accusative pronoun",
+        why: "<b>Sie</b>: the accusative of <i>sie</i> (she) is the same as the nominative."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "My colleague is nice. I often meet her and sometimes she invites me.",
+        why: "<i>Sie</i> is the accusative for <i>die Kollegin</i>; <i>mich</i> is the accusative of <i>ich</i>. <i>Einladen</i> is separable: <i>ein</i> goes to the end."
+      },
+      {
+        q: "Put the words in order.",
+        tr: "Today I'm meeting her at the café.",
+        why: "The verb stays in second position and the pronoun <i>sie</i> follows the subject <i>ich</i>. <i>Ich treffe sie heute im Café</i> and <i>Im Café treffe ich sie heute</i> are also fine."
+      },
+      {
+        q: "Translate (you are talking about your brother): “I'll see him tomorrow.”",
+        why: "<i>Ich sehe ihn morgen</i>: the pronoun follows the verb. With <i>morgen</i> first, the verb stays in second position and the subject follows it (<i>Morgen sehe ich ihn</i>). <i>Treffen</i> also works."
+      },
+      {
+        tr: "Do you know my brother? I see him every day, and he often comes to visit me.",
+        why: "In <i>ihn</i> and <i>sehe</i> the <b>h</b> is silent and the preceding vowel is long; in <i>besucht</i> the stress falls on <i>-sucht</i> and the <b>ch</b> after <b>u</b> is [x]."
+      },
+      {
+        tr: "My colleague is nice. I often meet her and sometimes she invites me.",
+        why: "In <i>sie</i> the <b>s</b> is voiced [z] and <b>ie</b> is a long <b>i</b>; in <i>manchmal</i> the <b>ch</b> after the <b>n</b> is read [ç]."
+      }
+    ]
+  },
+  "lesson:a2-u03-l2": {
+    theme: "Help and tastes",
+    title: "I'll help you, I like it",
+    objectives: [
+      "use mir, dir, ihm, ihr, uns, euch, ihnen",
+      "recognize the verbs that take the dative: helfen, gefallen, gehören, danken",
+      "say that something pleases or belongs to someone"
+    ],
+    theory: [
+      {
+        h: "The dative with pronouns and with some verbs",
+        p: "The dative answers the question <em>to whom?</em>. The pronouns are <em>mir, dir, ihm, ihr, ihm, uns, euch, ihnen</em> (polite: <em>Ihnen</em>). Some verbs take the dative as their object, even when the English object looks direct: <em>helfen</em> (<em>Ich helfe dir</em>), <em>danken</em> (<em>Ich danke dir</em>), <em>antworten</em> (<em>Er antwortet mir</em>), <em>gehören</em> (<em>Das Handy gehört mir</em>) and <em>gefallen</em> (<em>Die Jacke gefällt mir</em>). With <em>gefallen</em> the thing that is liked is the subject and the person is in the dative: if the thing is plural the verb agrees with it (<em>Die Schuhe gefallen mir</em>)."
+      },
+      {
+        contrast: "English says “I like the jacket”, with the person as subject and the jacket as object. German turns this around: <em>Die Jacke gefällt mir</em>, literally “the jacket is pleasing to me”, with the thing as subject and the person in the dative. English <em>help</em> and <em>thank</em> take a plain object (“I help him”, “I thank him”), but in German these verbs want the dative: <em>Ich helfe ihm</em>, <em>Ich danke ihm</em>. Because English <em>him</em> and <em>her</em> do not change with the case, you have to remember which German verbs take <em>ihm</em> or <em>ihr</em>. <em>Gehören</em> corresponds to “belong to”, where English also has a <em>to</em>: <em>Das gehört mir</em>."
+      },
+      {
+        trap: "With these verbs the accusative is a mistake: <em>Ich helfe dich</em> and <em>Ich danke ihn</em> are wrong. Be careful with <em>ihr</em> as well: as a nominative it means “you” (plural) (<em>Ihr helft mir</em>), as a dative “to her” (<em>Ich helfe ihr</em>). The verb and the case tell you which one it is. <em>Ihm</em> stands for <em>er</em> and for <em>es</em>: <em>Ich helfe dem Kind → Ich helfe ihm</em>."
+      },
+      {
+        tip: "Learn these verbs together with the dative: <em>helfen + dative</em>, <em>gefallen + dative</em>, <em>gehören + dative</em>, <em>danken + dative</em>. When the verb is one of these, the pronoun is <em>mir, dir, ihm, ihr, uns, euch, ihnen</em>."
+      }
+    ],
+    grammar: {
+      title: "Dative pronouns and verbs with the dative",
+      note: "The dative is the case of the person who receives something or help, or to whom something pleases or belongs, depending on the verb. <b>helfen, danken, antworten, gehören, gefallen</b> take the dative.",
+      table: {
+        head: ["nominative", "dative", "example"],
+        rows: [
+          ["ich", "mir", "Das gehört mir."],
+          ["du", "dir", "Ich helfe dir."],
+          ["er", "ihm", "Wir danken ihm."],
+          ["sie", "ihr", "Das Buch gefällt ihr."],
+          ["es", "ihm", "Ich helfe ihm."],
+          ["wir", "uns", "Er hilft uns."],
+          ["ihr", "euch", "Ich danke euch."],
+          ["sie", "ihnen", "Ich antworte ihnen."],
+          ["Sie", "Ihnen", "Ich danke Ihnen."]
+        ]
+      },
+      examples: [
+        { tr: "I'm happy to help you.", note: "helfen + dative: dir" },
+        { tr: "The cell phone is mine.", note: "gehören + dative: mir" },
+        { tr: "I like the jacket a lot.", note: "gefallen: the thing is the subject, the person is in the dative" },
+        { tr: "We thank him for the gift.", note: "danken + dative: ihm" },
+        { tr: "He doesn't answer me.", note: "antworten + dative: mir" },
+        { tr: "My sister needs help. I'm helping her.", note: "helfen + dative: ihr" }
+      ]
+    },
+    vocab: [
+      "gift, present",
+      "help",
+      "backpack",
+      "cell phone",
+      "jacket",
+      "book",
+      "to help",
+      "to please, to be liked",
+      "to belong to",
+      "to thank",
+      "to answer",
+      "gladly, happily"
+    ],
+    exercises: [
+      {
+        q: "You say about your brother: “I help him.” Which sentence is correct?",
+        opts: ["Ich helfe ihn.", "Ich helfe ihm.", "Ich helfe er."],
+        why: "<b>Ihm</b>: <i>helfen</i> takes the dative, even though English has a plain object. <i>Ihn</i> is an accusative."
+      },
+      {
+        q: "How do you say “I like the jacket”?",
+        opts: ["Die Jacke gefällt mich.", "Die Jacke gefällt mir.", "Ich gefalle die Jacke."],
+        why: "The thing is the subject (<i>die Jacke</i>) and the person is in the dative (<i>mir</i>), as in “the jacket pleases me”."
+      },
+      {
+        q: "Which verbs take the dative? (more than one)",
+        opts: ["helfen", "gehören", "sehen", "danken"],
+        why: "<i>Helfen</i>, <i>gehören</i> and <i>danken</i> take the dative. <i>Sehen</i> takes the accusative: <i>Ich sehe ihn.</i>"
+      },
+      {
+        q: "Complete: “Das ist mein Handy. Es gehört ___.” (ich, dative)",
+        hint: "dative pronoun",
+        why: "<b>Mir</b>: <i>gehören</i> takes the dative."
+      },
+      {
+        q: "Complete: “Meine Schwester braucht Hilfe. Ich helfe ___ gern.” (sie: my sister)",
+        hint: "dative pronoun",
+        why: "<b>Ihr</b>: dative of <i>sie</i> in the singular. <i>Helfen</i> takes the dative."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "Thank you, Anna! I thank you for your help.",
+        why: "<i>Ich danke dir</i>: <i>danken</i> takes the dative, so <b>dir</b> and not <i>dich</i>."
+      },
+      {
+        q: "Put the words in order.",
+        tr: "I like the jacket a lot.",
+        why: "With the thing as subject: <i>Die Jacke gefällt mir sehr</i>. <i>Mir gefällt die Jacke sehr</i>, with the dative first, is also fine."
+      },
+      {
+        q: "Translate (to a friend): “I'm happy to help you.”",
+        why: "<i>Ich helfe dir gern</i>: <i>helfen</i> takes the dative (<i>dir</i>). The variants with <i>gerne</i> and with <i>gern</i> first are also correct."
+      },
+      {
+        tr: "Can you help me, please? Thank you, that's very kind of you.",
+        why: "In <i>helfen</i> the <b>e</b> is short; in <i>danke</i> the <b>n</b> before <b>k</b> is read [ŋ] and the <b>a</b> is short."
+      },
+      {
+        tr: "The backpack is mine, and I like the jacket a lot.",
+        why: "In <i>gehört</i> the stress falls on <i>-hört</i>, where the <b>ö</b> is long ([øː]); in <i>Rucksack</i> both vowels are short, and the <b>ck</b> marks the short <b>a</b>."
+      }
+    ]
+  },
+  "lesson:a2-u03-l3": {
+    theme: "Gifts and favors",
+    title: "I give it to him",
+    objectives: [
+      "use dative and accusative in the same sentence",
+      "put in the usual order two nouns, a pronoun and a noun, two pronouns",
+      "use geben, schenken, zeigen, schicken, leihen, erklären"
+    ],
+    theory: [
+      {
+        h: "Two objects: dative and accusative",
+        p: "With verbs like <em>geben, schenken, zeigen, schicken, leihen, erklären</em> there are two objects: the person (dative) and the thing (accusative). The usual order, in a neutral sentence, is this. With <b>two nouns</b> the dative comes before the accusative: <em>Ich schenke meiner Schwester ein Buch.</em> With <b>a pronoun and a noun</b> the pronoun comes first, whatever its case: <em>Ich gebe ihm das Buch. Ich gebe es meinem Bruder.</em> With <b>two pronouns</b> the accusative comes before the dative: <em>Ich gebe es ihm.</em> These are usual orders, not absolute rules: to emphasize an element you can move it."
+      },
+      {
+        contrast: "English has two patterns: “I give him the book” (person first, no <em>to</em>) and “I give the book to him” (thing first, with <em>to</em>). German has no <em>to</em> here: the person is marked by the dative, and the order of the two objects depends on whether they are nouns or pronouns. With two pronouns the German order matches the English pattern with <em>to</em>: <em>Ich gebe es ihm</em> = “I give it to him”, thing first, person second. With a noun and a pronoun German puts the pronoun first: <em>Ich gebe ihm das Buch</em> (“I give him the book”)."
+      },
+      {
+        trap: "In the usual order <em>Ich gebe ihm es</em> sounds wrong: with two pronouns the accusative comes first, <em>Ich gebe es ihm</em>. Choose the gender from the German word: <em>das Foto → es</em>, <em>der Brief → ihn</em>, <em>die Postkarte → sie</em>. With a masculine noun the two pronouns look different: <em>Ich gebe ihn ihm</em> (the first is accusative, the second dative). English <em>it</em> for every thing hides this, so check the German noun each time."
+      },
+      {
+        tip: "First find the thing and put its pronoun (<em>es, ihn, sie</em>) right after the verb; then add the person (<em>mir, dir, ihm, ihr</em>). With nouns, start from the person instead: <em>Ich zeige meiner Mutter das Foto.</em>"
+      }
+    ],
+    grammar: {
+      title: "The order of dative and accusative",
+      note: "In a neutral sentence: two nouns, <b>dative first</b>; a pronoun and a noun, <b>the pronoun first</b>; two pronouns, <b>accusative first</b>.",
+      table: {
+        head: ["objects", "usual order", "example"],
+        rows: [
+          ["two nouns", "dative, accusative", "Ich schenke meiner Schwester ein Buch."],
+          ["pronoun + noun", "the pronoun first", "Ich gebe ihm das Buch."],
+          ["noun + pronoun", "the pronoun first", "Ich gebe es meinem Bruder."],
+          ["two pronouns", "accusative, dative", "Ich gebe es ihm."]
+        ]
+      },
+      examples: [
+        { tr: "I give it to him.", note: "two pronouns: es (accusative) before ihm (dative)" },
+        { tr: "I'll show you the photo.", note: "dative pronoun before the noun" },
+        { tr: "I'm giving my sister a book.", note: "two nouns: dative before accusative" },
+        { tr: "He's sending it to me tomorrow.", note: "es mir: accusative before dative" },
+        { tr: "We lend him the bicycle.", note: "dative pronoun before the noun" },
+        { tr: "I'll explain it to you later.", note: "es dir: accusative before dative" }
+      ]
+    },
+    vocab: [
+      "photo",
+      "letter",
+      "package, parcel",
+      "money",
+      "postcard",
+      "bicycle",
+      "to give",
+      "to give (as a gift)",
+      "to show",
+      "to send",
+      "to lend",
+      "to explain"
+    ],
+    exercises: [
+      {
+        q: "You say: “I give it to him” (the book, to my brother). Which sentence has the usual order?",
+        opts: ["Ich gebe ihm es.", "Ich gebe es ihm.", "Ich gebe ihm ihn."],
+        why: "With two pronouns the accusative comes before the dative: <i>es ihm</i>. <i>Das Buch</i> is neuter, so <i>es</i>."
+      },
+      {
+        q: "Which sentence has the neutral order with two nouns?",
+        opts: [
+          "Ich schenke ein Buch meiner Schwester.",
+          "Ich schenke meiner Schwester ein Buch.",
+          "Ich meiner Schwester schenke ein Buch."
+        ],
+        why: "With two nouns, first the dative (the person), then the accusative (the thing). The first sentence is not wrong, but it moves the person to the end for emphasis: it is not the neutral order. The third breaks the second position of the verb."
+      },
+      {
+        q: "Which sentences have a usual order? (more than one)",
+        opts: [
+          "Ich gebe es ihm.",
+          "Ich zeige dir das Foto.",
+          "Ich schicke dem Chef es.",
+          "Ich schenke ihm einen Schlüssel."
+        ],
+        why: "The pronoun comes before the noun (<i>dir das Foto</i>, <i>ihm einen Schlüssel</i>) and with two pronouns <i>es ihm</i> applies. In “Ich schicke dem Chef es” the noun comes before the pronoun: the usual order is <i>Ich schicke es dem Chef</i>."
+      },
+      {
+        q: "Complete: “Wo ist das Foto? Ich zeige ___ dir gleich.” (das Foto)",
+        hint: "accusative pronoun",
+        why: "<b>Es</b>: <i>das Foto</i> is neuter, and the accusative <i>es</i> comes before the dative <i>dir</i>."
+      },
+      {
+        q: "Complete: “Der Schlüssel gehört Paul. Ich gebe ihn ___ heute.” (Paul: er)",
+        hint: "dative pronoun",
+        why: "<b>Ihm</b>: dative of <i>er</i>. The accusative <i>ihn</i> (the thing, <i>der Schlüssel</i>) comes first."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "The letter is ready. I'll send it to you tomorrow.",
+        why: "<i>Der Brief</i> is masculine: <b>ihn</b> (accusative) comes before <b>dir</b> (dative). English says “it” for a letter, but German needs the gender of <i>der Brief</i>."
+      },
+      {
+        q: "Match each sentence with its translation.",
+        pairs: ["I give it to him.", "I give him the book.", "I give it to my brother.", "I give it to you."]
+      },
+      {
+        q: "Translate: “I'll give it to you tomorrow.” (the book: use the pronoun es)",
+        why: "<i>Ich gebe es dir morgen</i>: first the accusative <i>es</i>, then the dative <i>dir</i>. With <i>morgen</i> first the verb stays in second position: <i>Morgen gebe ich es dir</i>."
+      },
+      {
+        tr: "I found your photo. I'll show it to you right away, and tomorrow I'll send it to your sister.",
+        why: "In <i>zeigen</i> the <b>z</b> is [ts] and <b>ei</b> sounds [aɪ]; in <i>gleich</i> the final <b>ch</b> after <b>ei</b> is read [ç]."
+      },
+      {
+        tr: "The key is my brother's. Tomorrow I'll give it to him.",
+        why: "In <i>Schlüssel</i> the <b>sch</b> is [ʃ] and the <b>ü</b> is short; in <i>ihn</i> and <i>ihm</i> the <b>h</b> is silent and the <b>i</b> is long."
+      }
+    ]
+  },
+  "lesson:a2-u03-l4": {
+    theme: "Instructions and advice",
+    title: "Tell me! Go ahead and call me!",
+    objectives: [
+      "form the imperative with du and with ihr",
+      "remember the verbs with a stem change and sein",
+      "use mal and doch to change the tone of a request"
+    ],
+    theory: [
+      {
+        h: "The imperative with du and with ihr",
+        p: "To tell one person you address with <em>du</em> to do something you use the <b>verb stem</b>, without <em>du</em>: <em>Komm! Ruf mich an! Mach das Fenster zu!</em> With weak verbs whose stem ends in <em>-t</em> or <em>-d</em> you usually add an <b>-e</b>: <em>Warte! Arbeite! Antworte!</em> Strong verbs with <em>e → i/ie</em> use the changed stem and have no <em>-e</em>: <em>Nimm! Lies! Gib! Sprich!</em> Without Umlaut: <em>Fahr!</em>, not <em>Fähr!</em> <em>Sein</em> is irregular: <em>Sei!</em> For several people (<em>ihr</em>) the imperative has the form of <em>ihr</em> without the pronoun: <em>Kommt! Wartet! Ruft an!</em> A separable verb leaves the prefix at the end: <em>Ruf mich an!</em>"
+      },
+      {
+        h: "mal and doch: small words that change the tone",
+        p: "<em>Mal</em> and <em>doch</em> are <b>modal particles</b>: they do not change the grammar, they change <b>how the sentence sounds</b>. <em>Komm mal her!</em> is lighter than <em>Komm her!</em>, like “come on over for a second”. <em>Ruf mich doch an!</em> is a friendly invitation or a nudge: “go ahead and call me”, “come on, call me”. They stand in the middle of the sentence, usually after the pronoun: <em>Ruf mich doch mal an!</em> They have no fixed translation, and <em>mal</em> here is not the word meaning “sometimes”."
+      },
+      {
+        contrast: "The English imperative is just the bare verb (“Come!”, “Wait!”, “Call me!”), the same for one person or many, so it covers both <em>Komm!</em> and <em>Kommt!</em>; German has to choose between <em>du</em> and <em>ihr</em> (and uses <em>Sie</em> for the polite form). In German the pronoun is a separate word after the verb, as in English: <em>Ruf mich an!</em> = “Call me!”. The negative needs no helper: English says “Don't be late” with <em>do</em>, while German keeps the same imperative and adds <em>nicht</em>: <em>Komm nicht zu spät!</em> English softens a request with words like <em>just</em>, <em>go ahead</em>, <em>why don't you</em>, <em>come on</em> or with tone of voice; German often does it with <em>mal</em> and <em>doch</em>."
+      },
+      {
+        trap: "Do not add <em>-st</em>: <em>Kommst!</em> is not an imperative. With strong verbs with <em>e → ie</em> do not say <em>Lese!</em> but <em>Lies!</em>, and not <em>Nehm!</em> but <em>Nimm!</em> With <em>sein</em> the form is <em>Sei vorsichtig!</em> Do not think <em>mal</em> and <em>doch</em> are empty words: without them the sentence is still correct but sounds more curt."
+      },
+      {
+        tip: "When you give an order or advice to a friend: start from the infinitive, remove <em>-en</em>, add <em>-e</em> if the stem ends in <em>-t</em> or <em>-d</em>, and put in <em>mal</em> or <em>doch</em> to soften it: <em>Warte mal! Komm doch mit!</em>"
+      }
+    ],
+    grammar: {
+      title: "The imperative with du and ihr; mal and doch",
+      note: "With <b>du</b> the stem without a pronoun (<i>Komm!</i>), with <b>ihr</b> the form of ihr (<i>Kommt!</i>). <b>mal</b> and <b>doch</b> soften the request or make it friendlier.",
+      table: {
+        head: ["infinitive", "du", "ihr"],
+        rows: [
+          ["kommen", "Komm!", "Kommt!"],
+          ["warten", "Warte!", "Wartet!"],
+          ["anrufen", "Ruf an!", "Ruft an!"],
+          ["nehmen", "Nimm!", "Nehmt!"],
+          ["lesen", "Lies!", "Lest!"],
+          ["sein", "Sei!", "Seid!"]
+        ]
+      },
+      examples: [
+        { tr: "Come over here for a second!", note: "mal makes the request lighter" },
+        { tr: "Wait a moment!", note: "stem in -t: add -e" },
+        { tr: "Go ahead and call me!", note: "doch: friendly invitation; an at the end" },
+        { tr: "Go ahead and take a break!", note: "machen: stem Mach, without -en" },
+        { tr: "Tell me, do you have time?", note: "Sag mal: opens a question in a casual tone" },
+        { tr: "Be careful, please!", note: "ihr: form of sein, Seid" }
+      ]
+    },
+    vocab: [
+      "tip, piece of advice",
+      "idea",
+      "moment",
+      "break",
+      "to call (by phone)",
+      "to wait",
+      "to take",
+      "to read",
+      "mal (modal particle)",
+      "doch (modal particle)",
+      "careful, cautious",
+      "please"
+    ],
+    exercises: [
+      {
+        q: "You tell a friend: “Wait a moment!” Which sentence is correct?",
+        opts: ["Warte einen Moment!", "Wartest einen Moment!", "Warten einen Moment!"],
+        why: "With <i>du</i> the imperative is the stem without a pronoun; the stem ends in <i>-t</i>, so you add <b>-e</b>: <i>Warte!</i>"
+      },
+      {
+        q: "You tell a friend: “Read this!” (lesen)",
+        opts: ["Lese das!", "Lies das!", "Les das!"],
+        why: "<i>Lesen</i> is a strong verb with <i>e → ie</i>: in the imperative the stem changes (<b>Lies!</b>) and there is no <i>-e</i>."
+      },
+      {
+        q: "Complete: “___ bitte einen Moment, Kinder!” (warten, ihr)",
+        hint: "warten, imperative ihr",
+        why: "The imperative with <i>ihr</i> has the form of <i>ihr</i> without the pronoun: <b>Wartet!</b>"
+      },
+      {
+        q: "Complete: “Ruf mich doch ___!” (anrufen: go ahead and call me)",
+        hint: "the prefix of the separable verb",
+        why: "<i>Anrufen</i> is separable: the prefix <b>an</b> goes to the end and the verb stays in first position."
+      },
+      {
+        q: "Complete: “___ vorsichtig!” (sein, du)",
+        hint: "sein, imperative du",
+        why: "<b>Sei</b>: the imperative of <i>sein</i> is irregular (<i>sei, seid</i>)."
+      },
+      {
+        q: "Complete the sentence (both doch and mal work).",
+        tr: "Are you tired? Then go ahead and take a break!",
+        why: "<b>Mach</b>: the stem of <i>machen</i> is <i>mach-</i>, without <i>-en</i> and without <i>du</i>. Both <i>doch</i> (friendly invitation) and <i>mal</i> (lighter tone) work."
+      },
+      {
+        q: "Put the words in order.",
+        tr: "Come on, call me!",
+        why: "The verb opens the sentence, the pronoun follows it, the particles <i>doch mal</i> come before the prefix <i>an</i> at the end."
+      },
+      {
+        q: "Translate (to a friend, use doch): “Go ahead and call me!”",
+        why: "<i>Ruf mich doch an!</i>: imperative without <i>du</i>, pronoun after the verb, prefix <i>an</i> at the end; <i>doch</i> makes the invitation friendlier. Adding <i>mal</i> also works."
+      },
+      {
+        tr: "Tell me, do you have time tomorrow? Then go ahead and call me, and we'll go and eat together.",
+        why: "In <i>Sag</i> the final <b>g</b> is usually read [k]; in <i>zusammen</i> the <b>z</b> is [ts] and the <b>s</b> before a vowel is usually voiced."
+      },
+      {
+        tr: "Come by my place sometime, come on, and take some time!",
+        why: "In <i>vorbei</i> the <b>v</b> is read [f]; in <i>Moment</i> the stress falls on the second syllable."
+      }
+    ]
+  },
+  "lesson:a2-u03-test": {
+    theme: "Review",
+    title: "Unit 3 review",
+    objectives: [
+      "check the accusative and dative pronouns, the verbs with the dative and the order of objects"
+    ],
+    theory: [
+      {
+        p: "Ten questions on accusative and dative pronouns, on verbs with the dative and on the order of objects. You pass with 70%. Don't look back at the lessons while you answer: if you don't remember something, it's better to go back and review."
+      }
+    ],
+    exercises: [
+      {
+        q: "Complete: “Wo ist Anna? Ich sehe ___ nicht.” (sie: Anna)",
+        hint: "accusative pronoun",
+        why: "<b>Sie</b>: <i>sehen</i> takes the accusative, and that of <i>sie</i> (she) is the same as the nominative."
+      },
+      {
+        q: "Complete: “Du brauchst Hilfe? Ich helfe ___ gern.” (du)",
+        hint: "dative pronoun",
+        why: "<b>Dir</b>: <i>helfen</i> takes the dative."
+      },
+      {
+        q: "Complete: “Das Handy gehört ___.” (ich)",
+        hint: "dative pronoun",
+        why: "<b>Mir</b>: <i>gehören</i> takes the dative."
+      },
+      {
+        q: "Complete: “Ich habe das Buch. Ich gebe es ___ gleich.” (mein Bruder: er)",
+        hint: "dative pronoun",
+        why: "<b>Ihm</b>: with two pronouns the accusative (<i>es</i>) comes first, then the dative (<i>ihm</i>)."
+      },
+      {
+        q: "Complete: “Ihr helft uns oft. Wir danken ___ sehr.” (ihr)",
+        hint: "dative pronoun",
+        why: "<b>Euch</b>: <i>danken</i> takes the dative, and the dative of <i>ihr</i> is <i>euch</i>."
+      },
+      {
+        q: "How do you say “I like this idea a lot”?",
+        opts: ["Die Idee gefällt mich sehr.", "Die Idee gefällt mir sehr.", "Ich gefalle die Idee sehr."],
+        why: "The thing is the subject (<i>die Idee</i>) and the person is in the dative (<i>mir</i>)."
+      },
+      {
+        q: "You say: “I'll show it to you” (the book). Which sentence has the usual order?",
+        opts: ["Ich zeige es dir.", "Ich zeige dir es.", "Ich zeige du es."],
+        why: "With two pronouns the accusative (<i>es</i>) comes before the dative (<i>dir</i>)."
+      },
+      {
+        q: "Translate: “I'll give him the book tomorrow.”",
+        why: "<i>Ich gebe ihm das Buch morgen</i>: the dative pronoun <i>ihm</i> comes before the noun <i>das Buch</i>. <i>Morgen gebe ich ihm das Buch</i> and <i>Ich gebe ihm morgen das Buch</i> are also fine."
+      },
+      {
+        tr: "My brother has a birthday. I'm giving him a book and I'll give it to him tomorrow.",
+        why: "In <i>Geburtstag</i> the stress falls on <i>-burts-</i> (<i>ge-</i> is unstressed) and the final <b>g</b> is usually read [k]."
+      },
+      {
+        tr: "My colleague needs help. I'm happy to help her and I'll call her tomorrow.",
+        why: "In <i>braucht</i> <b>au</b> sounds [aʊ] and the <b>ch</b> after it is [x]; in <i>sie</i> the <b>s</b> is voiced [z]."
+      }
+    ]
   }
 });
