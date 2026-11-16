@@ -767,6 +767,7 @@ npm run audio:build                 # nagrania de-DE, tylko brakujące (uv run -
 npm run audio:prune                 # sieroty mp3: domyślnie dry-run, kasuje dopiero --apply
 npm run snapshot:target -- <ścieżka versione-statica>   # zapisuje scripts/porting-target.json (cel liczbowy portu)
 npm run check:porting -- --unit <id> [--stage core,it,en,es,fr,pl,audio,review,human] [--curriculum]
+npm run check:porting -- --level A1   # bramka fazy: wszystkie jednostki poziomu, pięć nakładek, recenzje
 npm run review:lot -- --unit <id> --lang <it|en|es|fr|pl> [--dry-run]   # drugi sędzia partii
 uv run --script scripts/build_audio.py --dry-run   # ile plików brakuje
 node scripts/serve.mjs 8080         # serwer do testów, zawsze no-store
@@ -819,12 +820,12 @@ w pliku, i dlatego każdy z nich niesie swoje własne polecenie.
 
 | Co | Ile | Polecenie |
 |---|---|---|
-| Jednostki / lekcje / ćwiczenia | 3 / 15 / 145 | `node scripts/baseline.mjs` |
-| Pozycje słownika / rozmowy / hasła gramatyczne | 154 / 1 / 10 | `node scripts/baseline.mjs` |
+| Jednostki / lekcje / ćwiczenia | 10 / 50 / 498 | `node scripts/baseline.mjs` |
+| Pozycje słownika / rozmowy / hasła gramatyczne | 488 / 1 / 27 | `node scripts/baseline.mjs` |
 | Czytanki / zadania pisane / zbiory par minimalnych | 1 / 1 / 1 | `node scripts/baseline.mjs` |
 | Biblioteka: teksty / zdania / słowa | 1 / 53 / 478 | `node scripts/baseline.mjs` |
 | Typy ćwiczeń obecnych w danych | 13 | `node scripts/baseline.mjs` |
-| Nagrania | 448 plików mp3, 5 MiB bajtów; 448 skrótów w indeksie | `node scripts/baseline.mjs` |
+| Nagrania | 1016 plików mp3, 10 MiB bajtów; 1016 skrótów w indeksie | `node scripts/baseline.mjs` |
 | Klucze interfejsu na język | 952 × 5 języków | `node scripts/baseline.mjs` |
 | Kroje pisma | 7 plików woff2 w assets/fonts/, 155 KB | `node scripts/baseline.mjs` |
 | Pliki silnika | 84 w assets/js/, 17253 linii | `node scripts/baseline.mjs` |
