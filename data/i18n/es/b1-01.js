@@ -794,7 +794,7 @@ LINGUAI.addStrings("es", {
       {
         q: "¿Cómo preguntas «¿En qué piensas?»",
         opts: ["Woran denkst du?", "Wonach denkst du?", "Wohin denkst du?"],
-        why: "<i>Denken an</i> se convierte en <b>woran</b> (wo + r + an). <i>Wonach</i> y <i>wohin</i> son palabras reales, pero no se usan con <i>denken</i>: la primera remite a <i>nach</i>, la segunda indica una dirección."
+        why: "<i>Denken an</i> se convierte en <b>woran</b> (wo + r + an). Las otras opciones no significan «¿en qué piensas?»: <i>wonach</i> remite a la preposición <i>nach</i>, y <i>Wohin denkst du?</i> es un giro que expresa sorpresa o protesta («¿pero qué te crees?»)."
       },
       {
         q: "Sustituye con una forma con da-: «Ich warte auf den Bus. Ich warte ___.»",
