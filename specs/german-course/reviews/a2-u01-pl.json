@@ -1,15 +1,20 @@
 {
-  "bundleHash": "02604f53b3e0179e3f989caa8c3831b9790e1290183ede78deef71a55dc5a5f7",
+  "bundleHash": "152aa48df1255e50d06a443b3688bac99756032efb0d6aba9fd5adcc5e9b3d19",
   "findings": [
     {
-      "kind": "spiegazione grammaticale inesatta",
-      "msg": "L’aspetto polacco non è una flessione del tempo passato: «chorowałem» e «zachorowałem» derivano da due verbi di aspetto diverso. Sostituire «czas przeszły, który zmienia się [...] według aspektu» con una spiegazione che distingua la flessione per genere dall’aspetto del verbo.",
-      "path": "merged.lessons[0].theory[1].contrast"
+      "kind": "alternative corrette mancanti",
+      "msg": "La traduzione ammette anche «Wir sind nach Berlin umgezogen, als ich zehn Jahre alt war» e «Wir sind nach Berlin umgezogen, als ich zehn war». Aggiungere queste varianti alla chiave oppure richiedere esplicitamente di iniziare con als.",
+      "path": "merged.lessons[1].exercises[7].a"
     },
     {
-      "kind": "istruzione grammaticale e polacco scorretto",
-      "msg": "«Czasownik zwrotny ucz się» usa il caso sbagliato: «uczyć się» richiede il genitivo. Inoltre «Jeden czasownik, jeden przyimek, jeden przypadek» suggerisce erroneamente una sola preposizione per verbo, contraddicendo «sich freuen auf/über». Riscrivere: «Ucz się czasowników zwrotnych razem z odpowiednimi przyimkami i przypadkami: sich erinnern an + biernik, sich freuen auf/über + biernik, sich interessieren für + biernik, sich ärgern über + biernik, sich treffen mit + celownik».",
-      "path": "merged.lessons[3].theory[3].tip"
+      "kind": "alternative corrette mancanti",
+      "msg": "«Ich kann mich gut an meine Schule erinnern» è una traduzione naturale e fedele di «Dobrze pamiętam moją szkołę». Aggiungerla alle risposte accettate oppure richiedere esplicitamente la costruzione senza verbo modale.",
+      "path": "merged.lessons[3].exercises[6].a"
+    },
+    {
+      "kind": "copertura della verifica",
+      "msg": "La verifica non contiene esercizi sui verbi riflessivi della lezione 4 né sulla scelta tra als e wenn: als viene suggerito direttamente e wenn non compare. Integrare almeno un esercizio sui pronomi riflessivi e uno che distingua eventi passati singoli e ripetuti, per verificare effettivamente l'intera unità.",
+      "path": "merged.test.exercises"
     }
   ],
   "lang": "pl",

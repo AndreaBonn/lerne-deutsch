@@ -3,8 +3,8 @@
   "findings": [
     {
       "kind": "answer_key",
-      "msg": "Klucz dopuszcza „Der Arzt sagt, dass ich mehr schlafen muss”, mimo że polecenie wymaga użycia „sollen”. „Muss” wyraża konieczność i zmienia znaczenie; samo wyjaśnienie również wskazuje tę różnicę. Usuń wariant z „muss” z obu list odpowiedzi i usuń z wyjaśnienia informację, że kurs go akceptuje.",
-      "path": "neutral.lessons[3].exercises[7].a[1]; merged.lessons[3].exercises[7].a[1]; merged.lessons[3].exercises[7].why"
+      "msg": "La consegna richiede esplicitamente sollen, ma la chiave accetta anche «Der Arzt sagt, dass ich mehr schlafen muss». Muss esprime necessità e non riproduce il valore di istruzione riferita di soll; la spiegazione stessa riconosce questa differenza. Eliminare l'alternativa con muss sia da merged sia da neutral.lessons[3].exercises[7].a.",
+      "path": "merged.lessons[3].exercises[7].a[1]"
     }
   ],
   "lang": "pl",

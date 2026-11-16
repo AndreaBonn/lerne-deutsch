@@ -1,15 +1,15 @@
 {
-  "bundleHash": "4fe381b93343de07c6cd6e9a0f89fb426cda2bfad458a947b67733a41857ba59",
+  "bundleHash": "7ef51a3b12dba332f1707994467afad012f4df5acf8244dd892fd6c95a051c69",
   "findings": [
     {
-      "kind": "grammar-explanation",
-      "msg": "La regola della virgola è troppo categorica: con un infinito semplice non ampliato, come «mitzukommen» o «zu kommen», la virgola può essere omessa anche dopo «Lust». Distinguere «Hast du Lust(,) mitzukommen?» da «Hast du Lust, am Samstag mitzukommen?», dove la virgola è obbligatoria. Correggere anche grammar.examples[1].note, grammar.table.rows[2] e theory[1].p.",
+      "kind": "punctuation",
+      "msg": "Reguła o często dowolnym przecinku w pozostałych konstrukcjach jest zbyt szeroka i nie odpowiada zasadom obowiązującym od 2024 r. Rozwinięte grupy bezokolicznikowe oddziela się przecinkiem także wtedy, gdy zależą od czasownika: „Ich versuche, früh nach Hause zu kommen.” Zachowaj informację o możliwości pominięcia przecinka przy samym nierozwiniętym bezokoliczniku, np. „Ich versuche zu schlafen”. Popraw również lessons[1].theory[1].p.",
       "path": "merged.lessons[1].grammar.note"
     },
     {
-      "kind": "learner-language-grammar",
-      "msg": "La frase polacca «zależy mocno od miejsca, w którym się jesteś» contiene un «się» scorretto. Scrivere «zależy mocno od miejsca, w którym jesteś».",
-      "path": "merged.lessons[2].theory[2].contrast"
+      "kind": "translation",
+      "msg": "Polskie „oby przyszedł” odnosi się do trzeciej osoby, natomiast „Hoffentlich kommst du” do rozmówcy. Zmień polski przykład na „obyś przyszedł” lub „obyś przyszła”, aby zachować osobę gramatyczną.",
+      "path": "merged.lessons[3].theory[2].contrast"
     }
   ],
   "lang": "pl",

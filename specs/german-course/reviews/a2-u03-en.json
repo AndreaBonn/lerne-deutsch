@@ -1,10 +1,15 @@
 {
-  "bundleHash": "79683d9f13e36a967a4d742c3a50e495b189e1c598b097cdf62fa13e54723c4f",
+  "bundleHash": "455715789e535b08a71e711aac73a63fc3cba486b31aa0fc0adb60e2138f2350",
   "findings": [
     {
-      "kind": "ambiguità della consegna e chiave incompleta",
-      "msg": "La seconda lacuna accetta soltanto «mich», ma la consegna non identifica chi viene invitato: anche «dich», «ihn», «uns» ed «euch», per esempio, producono frasi corrette. La traduzione contiene «me», ma la consegna non richiede esplicitamente di seguirla. Aggiungere un'indicazione come «invite me: ich → accusative» per rendere univoca la risposta prevista.",
-      "path": "merged.lessons[0].exercises[5]"
+      "kind": "grammar-explanation",
+      "msg": "La spiegazione afferma che il pronome «sie» segue il soggetto «ich», ma tra le risposte accettate compare «Sie treffe ich heute im Café», dove lo precede. Precisare che nella disposizione neutra l'oggetto pronominale segue il soggetto pronominale; può invece occupare la prima posizione per mettere in risalto chi viene incontrato.",
+      "path": "merged.lessons[0].exercises[6].why"
+    },
+    {
+      "kind": "grammar-explanation",
+      "msg": "L'affermazione finale secondo cui questi ordini si possono modificare per enfatizzare un elemento è troppo generale: il pronome oggetto atono «es» non può essere liberamente spostato o enfatizzato. Limitare esplicitamente la flessibilità agli elementi che la consentono e precisare che, per mettere in risalto la cosa, si usa per esempio «Das gebe ich ihm», non «Es gebe ich ihm».",
+      "path": "merged.lessons[2].theory[0].p"
     }
   ],
   "lang": "en",

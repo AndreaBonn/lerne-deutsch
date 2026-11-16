@@ -1,13 +1,7 @@
 {
-  "bundleHash": "52755e243b12c2617c65b90a6b59efe869f2aa237ff60ffb528a740cfb435ff2",
-  "findings": [
-    {
-      "kind": "answer-key",
-      "msg": "La consegna «Completa la frase» non specifica il verbo: anche «Letztes Jahr sind wir nach Wien gezogen» è corretto e corrisponde alla traduzione italiana, ma «gezogen» non è accettato nel secondo spazio. Aggiungere «gezogen» alle alternative in neutral e merged, oppure precisare nella consegna «usa umziehen al Perfekt».",
-      "path": "merged.lessons[1].exercises[5].gaps[1]"
-    }
-  ],
+  "bundleHash": "e5443f1c49cbb246697a42f5bb47cda3394829f31591f32d50dce8f9ee6873c1",
+  "findings": [],
   "lang": "it",
   "unit": "a2-u08",
-  "verdict": "fail"
+  "verdict": "pass"
 }

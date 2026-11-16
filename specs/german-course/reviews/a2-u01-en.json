@@ -1,23 +1,7 @@
 {
-  "bundleHash": "71de711bbe96a83e503cc371e222818ceeef52d121ff326dc1b26b63704749c3",
-  "findings": [
-    {
-      "kind": "misleading_explanation",
-      "msg": "L'affermazione secondo cui «enjoy yourself» non ha una forma riflessiva in tedesco è falsa: si può tradurre con «Amüsier dich!» oppure «Viel Spaß!». Presentare queste alternative senza generalizzare dall'espressione nominale al sistema dei verbi.",
-      "path": "merged.lessons[3].theory[1].contrast"
-    },
-    {
-      "kind": "ambiguous_answer_key",
-      "msg": "La consegna non specifica quali verbi usare, ma la chiave ammette soltanto konnte/durfte, machen e musste. Sono possibili anche completamenti corretti come «Ich wollte nicht spielen, weil ich Hausaufgaben machen musste». Specificare nella domanda i verbi richiesti e la distinzione semantica ammessa.",
-      "path": "merged.test.exercises[7]"
-    },
-    {
-      "kind": "assessment_coverage",
-      "msg": "Il test dichiara di verificare la distinzione fra als e wenn, ma nessuna domanda richiede wenn o una scelta fra le due congiunzioni: l'unica scelta lessicale relativa ad als è già suggerita dal contesto e dall'indizio. Aggiungere un quesito su occasioni ripetute nel passato che richieda wenn, oppure correggere l'obiettivo dichiarato.",
-      "path": "merged.test.objectives[0]"
-    }
-  ],
+  "bundleHash": "73a0e13a7f60515de03ada2581ddda4820f9ace3d2aba1f4ee66086899854346",
+  "findings": [],
   "lang": "en",
   "unit": "a2-u01",
-  "verdict": "fail"
+  "verdict": "pass"
 }
