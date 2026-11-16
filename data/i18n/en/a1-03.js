@@ -1485,7 +1485,7 @@ LINGUAI.addStrings("en", {
   "lesson:a1-u10-test": {
     theme: "Test",
     title: "A1 final exam",
-    objectives: ["check the present, the Perfekt with haben and with sein, the accusative, the dative and noun gender"],
+    objectives: ["check the Perfekt with haben and with sein, the accusative, the dative and noun gender"],
     theory: [
       {
         p: "Twelve questions on the whole of A1. You pass with 70%. Do not look back at the lessons while you answer: if you do not remember something, it is better to go back and review."

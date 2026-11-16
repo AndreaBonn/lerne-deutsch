@@ -1049,7 +1049,7 @@ LINGUAI.addStrings("it", {
         trap: "In italiano il participio precede normalmente l'oggetto; nella principale tedesca questi complementi si collocano fra ausiliare e participio. In tedesco il participio va <strong>in fondo</strong>, dopo tutti i complementi: <em>Ich habe gestern einen Film <strong>gesehen</strong></em>, non «Ich habe gesehen gestern einen Film». Il participio dei verbi forti non si deduce: va imparato insieme all'infinito (<em>trinken, getrunken</em>; <em>lesen, gelesen</em>)."
       },
       {
-        tip: "Non prendono <em>ge-</em> i verbi con prefisso inseparabile (<em>be-, ver-, er-, ent-</em>) e quelli in <em>-ieren</em>: <em>besuchen, besucht</em>; <em>studieren, studiert</em>. Per le domande vale la stessa struttura: <em>Hast du am Samstag gekocht?</em> Il verbo coniugato apre la frase, il participio la chiude."
+        tip: "Non prendono <em>ge-</em> i verbi con prefisso inseparabile (<em>be-, ver-, er-, ent-</em>) e quelli in <em>-ieren</em>: <em>besuchen, besucht</em>; <em>studieren, studiert</em>. Per le domande vale la stessa struttura: <em>Hast du am Samstag gekocht?</em> Nelle domande senza parola interrogativa il verbo coniugato apre la frase; con una parola interrogativa sta al secondo posto (<em>Was hast du am Samstag gemacht?</em>). In entrambi i casi il participio chiude la frase."
       }
     ],
     grammar: {
@@ -1485,7 +1485,7 @@ LINGUAI.addStrings("it", {
   "lesson:a1-u10-test": {
     theme: "Verifica",
     title: "Esame finale A1",
-    objectives: ["verificare presente, Perfekt con haben e con sein, accusativo, dativo e genere dei nomi"],
+    objectives: ["verificare Perfekt con haben e con sein, accusativo, dativo e genere dei nomi"],
     theory: [
       {
         p: "Dodici domande su tutto l'A1. Si supera con il 70%. Non riguardare le lezioni mentre rispondi: se non ricordi qualcosa, è meglio tornare a ripassare."

@@ -1485,7 +1485,7 @@ LINGUAI.addStrings("es", {
   "lesson:a1-u10-test": {
     theme: "Prueba",
     title: "Examen final A1",
-    objectives: ["comprobar el presente, el Perfekt con haben y con sein, el acusativo, el dativo y el género de los nombres"],
+    objectives: ["comprobar el Perfekt con haben y con sein, el acusativo, el dativo y el género de los nombres"],
     theory: [
       {
         p: "Doce preguntas sobre todo el A1. Se aprueba con el 70%. No vuelvas a mirar las lecciones mientras respondes: si no recuerdas algo, es mejor volver a repasar."

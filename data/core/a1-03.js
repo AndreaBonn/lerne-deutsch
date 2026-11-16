@@ -702,7 +702,7 @@ LINGUAI.addUnits("A1", [
           {
             t: "order",
             tokens: ["Danach", "habe", "ich", "ein", "Buch", "gelesen"],
-            a: ["Danach habe ich ein Buch gelesen", "Ich habe danach ein Buch gelesen"]
+            a: ["Danach habe ich ein Buch gelesen", "Ich habe danach ein Buch gelesen", "Ein Buch habe ich danach gelesen"]
           },
           {
             t: "trans",
