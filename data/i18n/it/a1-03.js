@@ -532,23 +532,23 @@ LINGUAI.addStrings("it", {
         p: "Il presente tedesco serve per quello che fai di solito e per quello che farai presto: <em>Am Samstag spiele ich Fußball</em> (sabato gioco a calcio). Il verbo resta in <b>seconda posizione</b>: se apri la frase con <em>am Samstag</em>, il soggetto passa dopo il verbo."
       },
       {
-        contrast: "L'italiano distingue «sabato» (quel sabato) da «il sabato» (ogni sabato) con l'articolo. Il tedesco usa due forme diverse: <em>am Samstag</em> per un sabato preciso, <em>samstags</em> (con <em>-s</em>) per l'abitudine. E «nel fine settimana» è <em>am Wochenende</em>, con <em>am</em>: l'italiano «nel» fa pensare a <em>im</em>, ma <em>im Wochenende</em> è sbagliato."
+        contrast: "L'italiano distingue «sabato» (quel sabato) da «il sabato» (ogni sabato) con l'articolo. Il tedesco usa due forme diverse: <em>samstags</em> (con <em>-s</em>) indica in modo esplicito l'abitudine, mentre <em>am Samstag</em> dipende dal contesto: può essere un sabato preciso, ma anche abituale (<em>Am Samstag spiele ich immer Fußball</em>). E «nel fine settimana» è <em>am Wochenende</em>, con <em>am</em>: l'italiano «nel» fa pensare a <em>im</em>, ma <em>im Wochenende</em> è sbagliato."
       },
       {
         trap: "<em>Wochenende</em> è neutro (<em>das Wochenende</em>), mentre «il fine settimana» in italiano è maschile: il genere italiano non ti aiuta. E con gli sport si dice <em>Fußball spielen</em>, senza preposizione: «giocare <em>a</em> calcio» non ha un <em>an</em> o <em>zu</em> corrispondente. Con uno strumento vale lo stesso: <em>Gitarre spielen</em>."
       },
       {
-        tip: "Per dire che una cosa ti piace aggiungi <em>gern</em> dopo il verbo: <em>Ich schwimme gern</em>. Per chiedere ai piani di qualcuno, <em>Was machst du am Wochenende?</em> è la domanda più naturale."
+        tip: "Per dire che una cosa ti piace aggiungi <em>gern</em> dopo il verbo: <em>Ich schwimme gern</em>. Per chiedere a qualcuno quali programmi ha, <em>Was machst du am Wochenende?</em> è la domanda più naturale."
       }
     ],
     grammar: {
       title: "Quando: am, samstags, im",
-      note: "<b>am</b> per un giorno preciso e per la parte del giorno, <b>-s</b> per l'abitudine, <b>im</b> per le stagioni.",
+      note: "<b>am</b> per un giorno preciso e per la parte del giorno, <b>-s</b> per l'abitudine esplicita (<b>am</b> può essere anche abituale, secondo il contesto), <b>im</b> per le stagioni.",
       table: {
         head: ["quando", "forma", "esempio"],
         rows: [
-          ["un sabato preciso", "am Samstag", "Am Samstag spiele ich Fußball."],
-          ["ogni sabato", "samstags", "Samstags schwimme ich gern."],
+          ["di solito un sabato preciso (o abituale, secondo il contesto)", "am Samstag", "Am Samstag spiele ich Fußball."],
+          ["ogni sabato, abitudine esplicita", "samstags", "Samstags schwimme ich gern."],
           ["nel fine settimana", "am Wochenende", "Am Wochenende wandere ich."],
           ["la sera", "am Abend", "Am Abend koche ich."],
           ["in una stagione", "im Winter", "Im Winter tanzen wir oft."]
@@ -586,7 +586,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Come dici «ogni sabato»?",
         opts: ["Im Samstag", "Der Samstag", "Samstags"],
-        why: "<b>Samstags</b>, con la <i>-s</i>, indica un'abitudine. <i>Am Samstag</i> indica un sabato preciso."
+        why: "<b>Samstags</b>, con la <i>-s</i>, indica in modo esplicito un'abitudine. <i>Am Samstag</i> dipende dal contesto: di solito un sabato preciso, ma può essere anche abituale."
       },
       {
         q: "Completa: «Ich ___ gern Fußball.» (giocare, io)",
@@ -604,10 +604,10 @@ LINGUAI.addStrings("it", {
       },
       {
         q: "Traduci: «Sabato gioco a calcio e domenica faccio escursioni a piedi.» (giorni precisi, usa wandern)",
-        why: "<i>Am Samstag spiele ich Fußball ...</i>: dopo il complemento di tempo il verbo resta in seconda posizione e il soggetto lo segue. Va bene anche <i>aber</i> al posto di <i>und</i>."
+        why: "<i>Am Samstag spiele ich Fußball ...</i>: dopo il complemento di tempo il verbo resta in seconda posizione e il soggetto lo segue."
       },
       {
-        q: "Completa il dialogo.",
+        q: "Completa il dialogo (usa treffen).",
         tr: "Cosa fai nel fine settimana? Incontro amici e andiamo al cinema.",
         why: "Con <i>du</i> si dice <i>machst</i>; <i>ich treffe</i> è la prima persona di <i>treffen</i>; <i>ins</i> è <i>in das</i>."
       },
@@ -651,7 +651,7 @@ LINGUAI.addStrings("it", {
         trap: "«Fa freddo» in italiano usa il verbo fare; in tedesco usa <em>sein</em>: <em>Es ist kalt</em>, non «es macht kalt». Attenzione anche a <em>die Sonne scheint</em>: qui il soggetto è una cosa vera, <em>die Sonne</em>, e non serve <em>es</em>. Per «è soleggiato» si dice invece <em>Es ist sonnig</em>."
       },
       {
-        tip: "Per la temperatura: <em>Wie viel Grad sind es?</em> e <em>Es sind zwanzig Grad.</em> <em>Grad</em> non cambia al plurale. Per chiedere il tempo: <em>Wie ist das Wetter?</em>"
+        tip: "Per la temperatura: <em>Wie viel Grad sind es?</em> e <em>Es sind zwanzig Grad.</em> Con un numero, per indicare la temperatura, <em>Grad</em> resta invariato; il plurale lessicale è <em>Grade</em>. Per chiedere il tempo: <em>Wie ist das Wetter?</em>"
       }
     ],
     grammar: {
@@ -673,7 +673,7 @@ LINGUAI.addStrings("it", {
         { tr: "Oggi fa molto freddo.", note: "sein, non machen" },
         { tr: "Oggi non piove." },
         { tr: "Com'è il tempo?", note: "das Wetter è neutro" },
-        { tr: "Ci sono venti gradi.", note: "Grad non cambia al plurale" }
+        { tr: "Ci sono venti gradi.", note: "Con un numero, per la temperatura, Grad resta invariato: zwanzig Grad; il plurale lessicale è Grade." }
       ]
     },
     vocab: [
@@ -721,7 +721,7 @@ LINGUAI.addStrings("it", {
       },
       {
         q: "Traduci: «Oggi piove e fa freddo.»",
-        why: "Due frasi, due <i>es</i>: <i>es regnet</i> e <i>es ist kalt</i>."
+        why: "Due frasi, due <i>es</i>: <i>es regnet</i> e <i>es ist kalt</i>. Dopo <i>und</i> il soggetto comune si può omettere: <i>Heute regnet es und ist kalt</i>."
       },
       {
         q: "Completa il dialogo.",
@@ -759,10 +759,10 @@ LINGUAI.addStrings("it", {
         p: "Alla seconda e alla terza persona singolare <em>lesen</em> e <em>sehen</em> cambiano <b>e → ie</b>: <em>du liest</em>, <em>er liest</em>, <em>du siehst</em>, <em>er sieht</em>. <em>Fernsehen</em> è separabile: <em>Er sieht gerade fern</em>."
       },
       {
-        trap: "<em>Ich lese</em> da solo può voler dire «leggo» (di solito) o «sto leggendo». Se vuoi che sia chiaro che è adesso, metti <em>gerade</em>. Non dire <em>ich bin gerade lese</em>: dopo <em>gerade</em> c'è solo il verbo coniugato."
+        trap: "<em>Ich lese</em> da solo può voler dire «leggo» (di solito) o «sto leggendo». Se vuoi che sia chiaro che è adesso, metti <em>gerade</em>. Usa un solo verbo coniugato al presente: <em>ich lese gerade</em>. Non aggiungere <em>bin</em>."
       },
       {
-        tip: "La domanda e la risposta usano lo stesso schema: <em>Was machst du gerade? Ich lese gerade.</em> Gli avverbi di frequenza (<em>immer, oft, manchmal, nie</em>) stanno nello stesso posto, dopo il verbo."
+        tip: "La domanda e la risposta usano lo stesso schema: <em>Was machst du gerade? Ich lese gerade.</em> Gli avverbi di frequenza (<em>immer, oft, manchmal, nie</em>) seguono il verbo coniugato e il soggetto pronome: <em>Ich lese oft</em>, <em>Heute lese ich oft</em>."
       }
     ],
     grammar: {
@@ -826,7 +826,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa: «Wir ___ gerade ein Lied.» (ascoltare)",
         hint: "hören, wir",
-        why: "Con <i>wir</i> il verbo resta all'infinito: <b>hören</b>."
+        why: "Con <i>wir</i> il presente di <i>hören</i> è <b>wir hören</b>: la forma coincide con l'infinito."
       },
       {
         tr: "Sto scrivendo un messaggio.",
@@ -876,7 +876,7 @@ LINGUAI.addStrings("it", {
         p: "Queste quattro parole collegano due frasi e <b>non spostano il verbo</b>: <em>Ich bin müde, aber ich gehe ins Kino</em>. Dopo <em>und</em>, <em>oder</em> e <em>aber</em> il soggetto uguale si può omettere: <em>Ich gehe ins Kino und sehe einen Film</em>. Dopo <em>denn</em> il soggetto si ripete sempre."
       },
       {
-        trap: "L'italiano «perché» è una parola sola: «non vengo perché devo lavorare». In tedesco, per spiegare un motivo, usa <em>denn</em> e lascia il verbo al secondo posto: <em>Ich komme nicht, denn ich muss arbeiten</em>. Sono errori <em>denn ich arbeiten muss</em> e <em>denn muss ich arbeiten</em>. Un'altra parola per «perché», <em>weil</em>, manda il verbo in fondo: arriva più avanti. Attenzione anche a <em>gegen</em>: vuol dire «contro», ma con le ore anche «verso» (<em>gegen acht Uhr</em>, verso le otto)."
+        trap: "L'italiano «perché» è una parola sola: «non vengo perché devo lavorare». In tedesco, per spiegare un motivo, usa <em>denn</em> e lascia il verbo al secondo posto: <em>Ich komme nicht, denn ich muss arbeiten</em>. Sono errori <em>denn ich arbeiten muss</em> (verbo in fondo) e <em>denn muss ich arbeiten</em> (verbo al primo posto); con un altro elemento in testa il verbo resta secondo: <em>denn morgen muss ich arbeiten</em>. Un'altra parola per «perché», <em>weil</em>, manda il verbo in fondo: arriva più avanti. Attenzione anche a <em>gegen</em>: vuol dire «contro», ma con le ore anche «verso» (<em>gegen acht Uhr</em>, verso le otto)."
       },
       {
         tip: "Per rifiutare con garbo: <em>Leider</em> + motivo con <em>denn</em>. Prima di <em>aber</em> e <em>denn</em> la virgola è obbligatoria."
@@ -898,10 +898,10 @@ LINGUAI.addStrings("it", {
       examples: [
         { tr: "Andiamo al cinema?", note: "ins = in das" },
         { tr: "Il biglietto è per te.", note: "für + accusativo" },
-        { tr: "Bevo il caffè senza zucchero.", note: "ohne + nome non numerabile: niente articolo" },
+        { tr: "Bevo il caffè senza zucchero.", note: "ohne + nome non numerabile: qui Zucker indica la sostanza in generale, quindi di norma senza articolo" },
         { tr: "Il film comincia alle otto.", note: "um con le ore" },
         { tr: "Attraversiamo il parco, ma piove.", note: "aber non sposta il verbo" },
-        { tr: "Non vengo, perché devo lavorare.", note: "denn + soggetto + verbo in seconda posizione" }
+        { tr: "Non vengo, perché devo lavorare.", note: "denn non sposta il verbo: resta in seconda posizione" }
       ]
     },
     vocab: [
@@ -927,7 +927,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Come rifiuti e spieghi il motivo?",
         opts: ["Leider nicht, denn muss ich arbeiten.", "Leider nicht, denn ich arbeiten muss.", "Leider nicht, denn ich muss arbeiten."],
-        why: "Dopo <b>denn</b> il soggetto resta davanti al verbo e il verbo in seconda posizione: <i>denn ich muss arbeiten</i>."
+        why: "<b>Denn</b> non occupa una posizione nella frase che segue: il verbo coniugato resta in seconda posizione, come in <i>denn ich muss arbeiten</i> (ma anche <i>denn morgen muss ich arbeiten</i>). Le altre due opzioni hanno il verbo alla fine o al primo posto."
       },
       {
         q: "Completa: «Die Karte ist ___ dich.» (per)",
@@ -949,7 +949,7 @@ LINGUAI.addStrings("it", {
       },
       {
         q: "Traduci: «Non vengo, perché devo lavorare.» (usa denn)",
-        why: "<i>Ich komme nicht, denn ich muss arbeiten</i>: dopo <i>denn</i> il verbo resta in seconda posizione."
+        why: "<i>Ich komme nicht, denn ich muss arbeiten</i>: dopo <i>denn</i> il verbo coniugato resta in seconda posizione."
       },
       {
         q: "Completa il dialogo.",
@@ -1009,7 +1009,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Quale frase è corretta?",
         opts: ["Ich bleibe zu Hause, denn ich bin müde.", "Ich bleibe zu Hause, denn ich müde bin.", "Ich bleibe zu Hause, denn bin ich müde."],
-        why: "Dopo <i>denn</i> l'ordine è quello di una frase normale: soggetto, verbo in seconda posizione."
+        why: "<i>Denn</i> non occupa una posizione: il verbo coniugato resta in seconda posizione, come in <i>denn ich bin müde</i> (ma anche <i>denn heute bin ich müde</i>). Le altre due opzioni hanno il verbo alla fine o al primo posto."
       },
       {
         tr: "Sabato andiamo al cinema.",

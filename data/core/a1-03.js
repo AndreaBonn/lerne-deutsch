@@ -315,7 +315,8 @@ LINGUAI.addUnits("A1", [
             dir: "toIt",
             a: [
               "Am Samstag spiele ich Fußball und am Sonntag wandere ich",
-              "Am Samstag spiele ich Fußball, aber am Sonntag wandere ich"
+              "Ich spiele am Samstag Fußball und wandere am Sonntag",
+              "Am Samstag spiele ich Fußball und ich wandere am Sonntag"
             ]
           },
           {
@@ -379,7 +380,7 @@ LINGUAI.addUnits("A1", [
           { it: "heiß", ex: "Heute ist es sehr heiß." },
           { it: "sonnig", ex: "Morgen ist es sonnig." },
           { it: "windig", ex: "Am Meer ist es oft windig." },
-          { it: "der Grad", plural: "die Grad", ex: "Es sind zwanzig Grad." }
+          { it: "der Grad", plural: "die Grade", ex: "Es sind zwanzig Grad." }
         ],
         exercises: [
           { t: "mcq", a: 0 },
@@ -402,7 +403,9 @@ LINGUAI.addUnits("A1", [
               "Heute regnet es und es ist kalt",
               "Es regnet heute und es ist kalt",
               "Heute ist es kalt und es regnet",
-              "Es ist heute kalt und es regnet"
+              "Es ist heute kalt und es regnet",
+              "Heute regnet es und ist kalt",
+              "Es regnet heute und ist kalt"
             ]
           },
           {
@@ -459,7 +462,8 @@ LINGUAI.addUnits("A1", [
             dir: "toIt",
             a: [
               "Mein Bruder liest gerade die Zeitung",
-              "Gerade liest mein Bruder die Zeitung"
+              "Gerade liest mein Bruder die Zeitung",
+              "Mein Bruder liest die Zeitung gerade"
             ]
           },
           {
