@@ -120,20 +120,20 @@ LINGUAI.addStrings("it", {
     theme: "Quando era piccolo",
     title: "Quando ero piccolo, ...",
     objectives: [
-      "collegare due eventi con als (un fatto singolo nel passato) e wenn (un fatto ripetuto)",
+      "collegare due eventi con als (un fatto o un periodo unico nel passato) e wenn (occasioni ripetute)",
       "mettere il verbo coniugato in fondo alla frase con als e wenn",
       "cominciare la principale con il verbo quando la subordinata sta prima"
     ],
     theory: [
       {
-        h: "Als per un fatto solo, wenn per un fatto ripetuto",
-        p: "Il tedesco ha due parole per il «quando» temporale. <strong>Als</strong> introduce un fatto <b>singolo</b> nel passato: <em>Als ich zehn war, sind wir nach Berlin umgezogen</em>. <strong>Wenn</strong> introduce un fatto <b>ripetuto</b> (anche nel passato: <em>Immer wenn es geschneit hat, ...</em>) oppure un fatto del <b>presente o del futuro</b>: <em>Wenn ich müde bin, gehe ich früh ins Bett</em>. Nella subordinata il verbo coniugato va <b>in fondo</b>."
+        h: "Als per un fatto o un periodo unico, wenn per occasioni ripetute",
+        p: "Il tedesco ha due parole per il «quando» temporale. <strong>Als</strong> introduce un fatto <b>singolo</b> o un unico periodo del passato (anche con azioni ripetute al suo interno): <em>Als ich zehn war, sind wir nach Berlin umgezogen</em>; <em>Als ich klein war, bin ich jeden Tag Fahrrad gefahren</em>. <strong>Wenn</strong> introduce un fatto <b>ripetuto</b> (anche nel passato: <em>Immer wenn es geschneit hat, ...</em>) oppure un fatto del <b>presente o del futuro</b>: <em>Wenn ich müde bin, gehe ich früh ins Bett</em>. Nella subordinata il verbo coniugato va <b>in fondo</b>."
       },
       {
         contrast: "L'italiano ha un solo <em>quando</em> e di norma non cambia l'ordine delle parole: <em>quando ero piccolo, abitavamo in paese</em>. In tedesco bisogna scegliere tra <em>als</em> e <em>wenn</em> e il verbo coniugato va in fondo: <em>Als ich klein war, ...</em>, non «Als ich war klein». Quando la subordinata sta all'inizio, la principale ricomincia con il verbo coniugato subito dopo la virgola: <em>Als ich klein war, haben wir in einem Dorf gewohnt.</em> Per la domanda diretta si usa un'altra parola ancora, <em>wann</em>."
       },
       {
-        trap: "Con un fatto ripetuto nel passato l'istinto italiano è «quando» = <em>als</em>, ma serve <b>wenn</b>: <em>Immer wenn es geschneit hat, sind wir Schlitten gefahren</em> (ogni volta che nevicava). Per capire quale usare, chiediti se il fatto è successo una volta sola (<em>als</em>) o più volte (<em>wenn</em>). <em>Als</em> non si usa mai al presente o al futuro."
+        trap: "Con un fatto ripetuto nel passato l'istinto italiano è «quando» = <em>als</em>, ma serve <b>wenn</b>: <em>Immer wenn es geschneit hat, sind wir Schlitten gefahren</em> (ogni volta che nevicava). Per capire quale usare, chiediti se parli di un episodio o di un unico periodo del passato (<em>als</em>, anche se dentro ci sono azioni abituali: <em>Als ich klein war, bin ich jeden Tag Fahrrad gefahren</em>) o di occasioni che si ripetono (<em>wenn</em>). <em>Als</em> non si usa mai al presente o al futuro."
       },
       {
         tip: "<em>Als</em> è la stessa parola del comparativo (<em>älter als ich</em>), ma qui ha un altro ruolo: collega due frasi. Con il Perfekt nella subordinata il verbo coniugato (l'ausiliare) va in fondo, dopo il participio: <em>Als wir in Wien gewohnt haben, ...</em>"
@@ -211,7 +211,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa la frase.",
         tr: "Ogni volta che d'inverno nevicava, andavamo in slittino.",
-        why: "Fatto ripetuto: <b>wenn</b>. Nella principale il verbo coniugato (<i>sind</i>) viene prima del soggetto."
+        why: "Fatto ripetuto: <i>immer wenn</i>, quindi <b>wenn</b>. Nella principale il verbo coniugato (<i>sind</i>) viene prima del soggetto."
       },
       {
         q: "Completa la frase.",
@@ -354,7 +354,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "I verbi riflessivi: mich, dich, sich, uns, euch",
-        p: "Un verbo è <b>riflessivo</b> quando l'azione torna sul soggetto: <em>Ich erinnere mich</em> (mi ricordo). Il pronome cambia con la persona: <em>mich, dich, sich, uns, euch, sich</em>. Nella principale con il soggetto in prima posizione sta dopo il verbo coniugato: <em>Du erinnerst dich an unsere Schule.</em> Nelle domande il verbo viene per primo e il pronome segue il soggetto: <em>Erinnerst du dich an unsere Schule?</em> Nel Perfekt l'ausiliare è <em>haben</em> e il pronome sta di norma vicino all'inizio del Mittelfeld, dopo un eventuale soggetto pronominale: <em>Wir haben uns am Bahnhof getroffen. Gestern haben wir uns getroffen. Gestern habe ich mich mit Anna getroffen.</em> Nella subordinata segue il soggetto: <em>weil ich mich erinnere</em>. Con <em>sich erinnern</em> e con <em>sich freuen</em> la preposizione e il suo caso si imparano insieme al verbo: <em>sich erinnern an</em> + accusativo, <em>sich freuen auf</em> + accusativo (aspettare con gioia qualcosa di futuro), <em>sich freuen über</em> + accusativo (essere contenti di qualcosa di presente o di passato)."
+        p: "Alcuni verbi tedeschi richiedono un pronome <b>riflessivo</b> riferito al soggetto: <em>Ich erinnere mich</em> (mi ricordo, uso lessicale) o <em>Wir treffen uns</em> (ci incontriamo, uso reciproco). Il pronome cambia con la persona: <em>mich, dich, sich, uns, euch, sich</em>. Nella principale con il soggetto in prima posizione sta dopo il verbo coniugato: <em>Du erinnerst dich an unsere Schule.</em> Nelle domande il verbo viene per primo e il pronome segue il soggetto: <em>Erinnerst du dich an unsere Schule?</em> Nel Perfekt l'ausiliare è <em>haben</em> e il pronome sta di norma vicino all'inizio del Mittelfeld, dopo un eventuale soggetto pronominale: <em>Wir haben uns am Bahnhof getroffen. Gestern haben wir uns getroffen. Gestern habe ich mich mit Anna getroffen.</em> Nella subordinata segue il soggetto: <em>weil ich mich erinnere</em>. Con <em>sich erinnern</em> e con <em>sich freuen</em> la preposizione e il suo caso si imparano insieme al verbo: <em>sich erinnern an</em> + accusativo, <em>sich freuen auf</em> + accusativo (aspettare con gioia qualcosa di futuro), <em>sich freuen über</em> + accusativo (essere contenti di qualcosa di presente o di passato)."
       },
       {
         contrast: "L'italiano ha molti verbi riflessivi, ma non sono gli stessi. <em>Ricordare qualcosa</em> è transitivo, mentre in tedesco <em>sich erinnern</em> è riflessivo e vuole <em>an</em>: <em>Ich erinnere mich an meine Lehrerin</em>. Al contrario, <em>alzarsi</em> e <em>svegliarsi</em> in tedesco <b>non</b> sono riflessivi (<em>aufstehen, aufwachen</em>), mentre <em>sich ärgern</em> (arrabbiarsi) e <em>sich setzen</em> (sedersi) lo sono. Anche <em>sich treffen</em> è usato in modo reciproco: <em>Wir treffen uns</em> è «ci incontriamo»."
@@ -363,7 +363,7 @@ LINGUAI.addStrings("it", {
         trap: "Alla 1ª e alla 2ª persona il pronome ha due forme: l'accusativo <em>mich, dich</em> e il dativo <em>mir, dir</em>. Con <em>sich erinnern an</em> serve l'<b>accusativo</b>: <em>Ich erinnere mich</em>, non «Ich erinnere mir». Fai attenzione anche a <em>erinnern</em> senza pronome: <em>Ich erinnere dich an den Termin</em> significa «ti ricordo (ti faccio ricordare) l'appuntamento», che è un'altra cosa."
       },
       {
-        tip: "Impara il verbo riflessivo sempre insieme alla sua preposizione: <em>sich erinnern an</em>, <em>sich freuen auf/über</em>, <em>sich interessieren für</em>, <em>sich ärgern über</em>, <em>sich treffen mit</em>. Un verbo, una preposizione, un caso."
+        tip: "Impara il verbo riflessivo sempre insieme alla sua preposizione: <em>sich erinnern an</em>, <em>sich freuen auf/über</em>, <em>sich interessieren für</em>, <em>sich ärgern über</em>, <em>sich treffen mit</em> + dativo (<em>Ich treffe mich mit meinem Freund</em>). Un verbo, una preposizione, un caso."
       }
     ],
     grammar: {
@@ -454,7 +454,7 @@ LINGUAI.addStrings("it", {
         why: "In <i>ich</i> la <b>ch</b> dopo una vocale anteriore si pronuncia [ç], un suono soffiato che l'italiano non ha. In <i>erinnere</i> l'accento cade sulla seconda sillaba, e <i>er-</i> è atono."
       },
       {
-        tr: "Mi ricordo bene della mia scuola elementare e mi rallegro per il ritrovo con gli ex compagni.",
+        tr: "Mi ricordo bene della mia scuola elementare e aspetto con gioia l'incontro con gli ex compagni.",
         why: "In <i>Grundschule</i> la <b>sch</b> si legge [ʃ] e la <b>d</b> di <i>Grund</i> si pronuncia come una <b>t</b>; in <i>Klassentreffen</i> la <b>ss</b> è una <b>s</b> sorda."
       }
     ]
@@ -615,7 +615,7 @@ LINGUAI.addStrings("it", {
         pairs: ["a Vienna", "in Svizzera (destinazione)", "da mia zia", "alla stazione"]
       },
       {
-        q: "Traduci: «Domani andiamo in Svizzera (in treno).»",
+        q: "Traduci: «Domani andiamo in Svizzera.»",
         why: "<i>Morgen fahren wir in die Schweiz</i>: <i>fahren</i> per un mezzo di trasporto; <i>reisen</i> è un'alternativa. L'ordine può cambiare (<i>Wir fahren morgen ...</i>), il verbo coniugato resta in seconda posizione."
       },
       {
@@ -748,7 +748,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Settimana prossima vado a Vienna in treno, e in estate andremo in Svizzera in aereo.",
-        why: "In <i>Nächste</i> la <b>ch</b> dopo <b>ä</b> è [ç], un suono soffiato che l'italiano non ha; in <i>Woche</i> la <b>ch</b> dopo <b>o</b> è [x], più in fondo alla gola. In <i>werden</i> la <b>w</b> si legge [v]."
+        why: "In <i>Nächste</i> la <b>st</b> finale resta [st], non [ʃt]; in <i>Woche</i> la <b>ch</b> dopo <b>o</b> è [x], più in fondo alla gola. In <i>werden</i> la <b>w</b> si legge [v]."
       },
       {
         tr: "Domani vado ad Amburgo, e settimana prossima andrò a trovare la mia amica.",
@@ -767,7 +767,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Il Perfekt: prenotare e arrivare",
-        p: "Per dire che hai già prenotato si usa il <strong>Perfekt</strong>: ausiliare in seconda posizione e <b>participio II</b> in fondo. <em>Ich habe ein Zimmer reserviert. Wir haben ein Doppelzimmer gebucht.</em> I verbi in <em>-ieren</em> non prendono <em>ge-</em>: <em>reservieren → reserviert</em>. <em>Buchen</em> è regolare: <em>gebucht</em>. I verbi di movimento o di cambio di stato prendono <em>sein</em>: <em>Wir sind gestern Abend angekommen</em> (participio <em>angekommen</em>, con <em>ge-</em> al centro)."
+        p: "Per dire che hai già prenotato si usa il <strong>Perfekt</strong>: ausiliare in seconda posizione e <b>participio II</b> in fondo. <em>Ich habe ein Zimmer reserviert. Wir haben ein Doppelzimmer gebucht.</em> I verbi in <em>-ieren</em> non prendono <em>ge-</em>: <em>reservieren → reserviert</em>. <em>Buchen</em> è regolare: <em>gebucht</em>. In genere i verbi intransitivi di movimento o di cambio di stato prendono <em>sein</em>, mentre i verbi transitivi e riflessivi prendono <em>haben</em>. Qui ti servono <em>ankommen</em> e <em>abfahren</em>: <em>Wir sind gestern Abend angekommen</em> (participio <em>angekommen</em>, con <em>ge-</em> al centro)."
       },
       {
         contrast: "Il participio tedesco non concorda con il soggetto: <em>Er ist angekommen, Sie ist angekommen, Wir sind angekommen</em>, senza <em>-o/-a/-i</em>. In italiano si dice <em>è arrivato, è arrivata, sono arrivati</em>. Inoltre l'italiano usa <em>prenotare</em> per tutto; il tedesco ha <em>reservieren</em> (tenere un posto) e <em>buchen</em> (prenotare un viaggio, una camera), spesso intercambiabili in albergo. Per la cortesia l'italiano usa il <em>Lei</em> (terza persona singolare); il tedesco usa <em>Sie</em>, che si coniuga come la terza persona <b>plurale</b>: <em>Haben Sie ein Zimmer?</em>"
@@ -781,7 +781,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Il Perfekt: reservieren, buchen, ankommen",
-      note: "Ausiliare in seconda posizione, participio II in fondo. <b>haben</b> con quasi tutti i verbi, <b>sein</b> con i verbi di movimento. I verbi in <b>-ieren</b> non hanno <i>ge-</i>.",
+      note: "Ausiliare in seconda posizione, participio II in fondo. <b>haben</b> con quasi tutti i verbi, <b>sein</b> in genere con i verbi intransitivi di movimento o di cambio di stato (qui ankommen, abfahren), non con quelli transitivi o riflessivi. I verbi in <b>-ieren</b> non hanno <i>ge-</i>.",
       table: {
         head: ["infinito", "participio II", "esempio"],
         rows: [
@@ -866,7 +866,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Abbiamo prenotato una camera e ieri sera siamo arrivati in albergo.",
-        why: "In <i>angekommen</i> la <b>ng</b> è una sola nasale [ŋ], senza la consonante [k]; in <i>gebucht</i> la <b>ch</b> dopo <b>u</b> è [x], raschiata in fondo alla gola."
+        why: "In <i>angekommen</i> <b>n</b> e <b>g</b> appartengono a parti diverse (<i>an-ge-</i>) e si pronunciano [nɡ], non come una sola nasale [ŋ]; in <i>gebucht</i> la <b>ch</b> dopo <b>u</b> è [x], raschiata in fondo alla gola."
       }
     ]
   },
@@ -884,7 +884,7 @@ LINGUAI.addStrings("it", {
         p: "<strong>Wenn</strong> introduce un fatto del presente o del futuro. Quando l'azione della subordinata sarà <b>già compiuta</b> prima di quella della principale, nella subordinata si usa il <b>Perfekt</b>: <em>Wenn ich angekommen bin, rufe ich dich an</em> (quando sarò arrivato, ti chiamo). Il verbo coniugato (<em>bin</em>) va <b>in fondo</b>; la principale comincia con il verbo: <em>rufe ich</em>. Nella principale puoi usare il presente (<em>rufe ich ... an</em>) o il Futur I (<em>werde ich ... anrufen</em>)."
       },
       {
-        contrast: "L'italiano per un fatto futuro già compiuto usa il <b>futuro anteriore</b> (<em>quando sarò arrivato, ti chiamerò</em>) oppure il presente (<em>quando arrivo, ti chiamo</em>). Il tedesco non ha una forma separata: nella subordinata usa il <em>Perfekt</em> per sottolineare che è compiuto (<em>Wenn ich angekommen bin</em>), oppure il presente se non serve sottolinearlo (<em>Wenn ich ankomme</em>). Per un fatto passato singolo serve <em>als</em> con il Perfekt: <em>Als wir gestern angekommen sind, hat es geregnet.</em>"
+        contrast: "L'italiano per un fatto futuro già compiuto usa il <b>futuro anteriore</b> (<em>quando sarò arrivato, ti chiamerò</em>) oppure il presente (<em>quando arrivo, ti chiamo</em>). Il tedesco ha un Futur II (<em>ich werde angekommen sein</em>), ma nelle temporali riferite al futuro non serve: per esprimere l'anteriorità si usa di norma il <em>Perfekt</em> nella subordinata, per sottolineare che è compiuto (<em>Wenn ich angekommen bin</em>), oppure il presente se non serve sottolinearlo (<em>Wenn ich ankomme</em>). Per un evento singolo nel passato si usa <em>als</em>; qui lo esercitiamo con il Perfekt: <em>Als wir gestern angekommen sind, hat es geregnet.</em>"
       },
       {
         trap: "<em>Als</em> e <em>wenn</em> non sono intercambiabili: con un fatto passato singolo serve <b>als</b> (<em>Als ich gestern angekommen bin, ...</em>), con presente, futuro e fatti ripetuti serve <b>wenn</b>. Non scrivere «Wenn ich bin angekommen»: dopo <em>wenn</em> il verbo coniugato va in fondo, dopo il participio. E non confondere <em>wenn</em> con <em>wann</em>, che è la parola della domanda (<em>Wann kommst du an?</em>)."
@@ -964,7 +964,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Metti in ordine le parole.",
         tr: "Quando sarò arrivato, ti chiamo.",
-        why: "Due ordini sono corretti: subordinata prima (<i>Wenn ich angekommen bin, rufe ich dich an</i>) oppure dopo (<i>Ich rufe dich an, wenn ich angekommen bin</i>). Il verbo separabile <i>anrufen</i> lascia <i>an</i> in fondo alla principale."
+        why: "Con questi pezzi l'ordine è quello della subordinata prima: <i>Wenn ich angekommen bin, rufe ich dich an</i>.  Il verbo separabile <i>anrufen</i> lascia <i>an</i> in fondo alla principale."
       },
       {
         q: "Traduci: «Quando arrivo, ti chiamo.»",
@@ -972,7 +972,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Quando sarò arrivato, ti chiamo, e poi andiamo a mangiare insieme.",
-        why: "In <i>angekommen</i> la <b>ng</b> è una sola nasale [ŋ], senza la consonante [k]; in <i>zusammen</i> la <b>z</b> è [ts] e la <b>s</b> davanti a vocale è di norma sonora."
+        why: "In <i>angekommen</i> <b>n</b> e <b>g</b> appartengono a parti diverse (<i>an-ge-</i>) e si pronunciano [nɡ], non come una sola nasale [ŋ]; in <i>zusammen</i> la <b>z</b> è [ts] e la <b>s</b> davanti a vocale è di norma sonora."
       },
       {
         tr: "Quando sarò arrivato in albergo, ti mando un messaggio.",
@@ -1025,12 +1025,12 @@ LINGUAI.addStrings("it", {
         why: "Posizione (wo?): <b>in</b> + dativo, e <i>die Schweiz</i> al dativo è <i>in der Schweiz</i>."
       },
       {
-        q: "Traduci: «Domani andiamo a Vienna (in treno).»",
+        q: "Traduci: «Domani andiamo a Vienna.»",
         why: "<i>Morgen fahren wir nach Wien</i>: <i>nach</i> con una città. L'ordine può cambiare, il verbo resta in seconda posizione."
       },
       {
         tr: "Domani vado a Vienna e, quando sarò arrivato, ti chiamo.",
-        why: "In <i>Wien</i> la <b>W</b> è [v] e <b>ie</b> è una <b>i</b> lunga; in <i>angekommen</i> la <b>ng</b> è una sola nasale [ŋ]."
+        why: "In <i>Wien</i> la <b>W</b> è [v] e <b>ie</b> è una <b>i</b> lunga; in <i>angekommen</i> <b>n</b> e <b>g</b> appartengono a parti diverse (<i>an-ge-</i>) e si pronunciano [nɡ], non come una sola nasale [ŋ]."
       },
       {
         tr: "In estate andremo in Svizzera, e poi vado da mia zia.",

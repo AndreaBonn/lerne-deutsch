@@ -104,8 +104,8 @@ LINGUAI.addUnits("A2", [
           },
           {
             t: "cloze",
-            text: "{{1}} es im Winter geschneit hat, {{2}} wir Schlitten gefahren.",
-            gaps: [["Wenn"], ["sind"]]
+            text: "Immer {{1}} es im Winter geschneit hat, {{2}} wir Schlitten gefahren.",
+            gaps: [["wenn"], ["sind"]]
           },
           {
             t: "cloze",
@@ -342,7 +342,7 @@ LINGUAI.addUnits("A2", [
           { it: "die Ankunft", plural: "die Ankünfte", ex: "Die Ankunft in Wien ist um zwölf Uhr." },
           { it: "die Schweiz", plural: "-", ex: "Wir fahren im Sommer in die Schweiz." },
           { it: "das Land", plural: "die Länder", ex: "Welches Land möchtest du besuchen?" },
-          { it: "die Auskunft", plural: "-", ex: "Die Auskunft ist am Bahnhof." },
+          { it: "die Auskunft", plural: "die Auskünfte", ex: "Die Auskunft ist am Bahnhof." },
           { it: "einfach", ex: "Einmal einfach nach Wien, bitte." },
           { it: "hin und zurück", ex: "Eine Fahrkarte nach Berlin, hin und zurück, bitte." }
         ],
@@ -420,7 +420,7 @@ LINGUAI.addUnits("A2", [
         },
         vocab: [
           { it: "die Reise", plural: "die Reisen", ex: "Die Reise nach Wien dauert vier Stunden." },
-          { it: "der Urlaub", plural: "-", ex: "Nächste Woche habe ich Urlaub." },
+          { it: "der Urlaub", plural: "die Urlaube", ex: "Nächste Woche habe ich Urlaub." },
           { it: "die Woche", plural: "die Wochen", ex: "In einer Woche fahre ich nach Berlin." },
           { it: "das Wochenende", plural: "die Wochenenden", ex: "Am Wochenende fahren wir ans Meer." },
           { it: "der Flug", plural: "die Flüge", ex: "Der Flug nach Wien dauert eine Stunde." },
@@ -471,7 +471,7 @@ LINGUAI.addUnits("A2", [
           { it: "die Reservierung", plural: "die Reservierungen", ex: "Haben Sie eine Reservierung?" },
           { it: "die Nacht", plural: "die Nächte", ex: "Wir bleiben zwei Nächte." },
           { it: "der Schlüssel", plural: "die Schlüssel", ex: "Hier ist Ihr Schlüssel." },
-          { it: "das Frühstück", plural: "-", ex: "Das Frühstück gibt es ab sieben Uhr." },
+          { it: "das Frühstück", plural: "die Frühstücke", ex: "Das Frühstück gibt es ab sieben Uhr." },
           { it: "die Rezeption", plural: "die Rezeptionen", ex: "Die Rezeption ist rund um die Uhr offen." },
           { it: "der Gast", plural: "die Gäste", ex: "Die Gäste frühstücken im Garten." },
           { it: "das Gepäck", plural: "-", ex: "Mein Gepäck ist noch im Zug." },
@@ -594,10 +594,7 @@ LINGUAI.addUnits("A2", [
           {
             t: "order",
             tokens: ["Wenn", "ich", "angekommen", "bin,", "rufe", "ich", "dich", "an"],
-            a: [
-              "Wenn ich angekommen bin, rufe ich dich an",
-              "Ich rufe dich an, wenn ich angekommen bin"
-            ]
+            a: ["Wenn ich angekommen bin, rufe ich dich an"]
           },
           {
             t: "trans",
