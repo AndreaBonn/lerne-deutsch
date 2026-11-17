@@ -194,7 +194,10 @@ const CONJ_CASES = [
   ['synthetic stehen ä', 'stehen', 'konj2', ['stände', 'ständest', 'stände', 'ständen', 'ständet', 'ständen']],
   ['synthetic separable', 'aufstehen', 'konj2', ['stünde auf', 'stündest auf', 'stünde auf', 'stünden auf', 'stündet auf', 'stünden auf']],
   ['synthetic derived', 'verstehen', 'konj2', ['verstände', 'verständest', 'verstände', 'verständen', 'verständet', 'verständen']],
-  ['analytic unchanged', 'fahren', 'konj2', ['würde fahren', 'würdest fahren', 'würde fahren', 'würden fahren', 'würdet fahren', 'würden fahren']]
+  ['analytic unchanged', 'fahren', 'konj2', ['würde fahren', 'würdest fahren', 'würde fahren', 'würden fahren', 'würdet fahren', 'würden fahren']],
+  ['sein short forms', 'sein', 'konj2', ['wäre', 'wärst', 'wäre', 'wären', 'wärt', 'wären']],
+  ['sein long forms', 'sein', 'konj2', ['wäre', 'wärest', 'wäre', 'wären', 'wäret', 'wären']],
+  ['past with wäre, short forms', 'gehen', 'konj2Verg', ['wäre gegangen', 'wärst gegangen', 'wäre gegangen', 'wären gegangen', 'wärt gegangen', 'wären gegangen']]
 ];
 
 for (const [name, verb, tense, answers] of CONJ_CASES) {

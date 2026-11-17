@@ -155,6 +155,10 @@
   // F37: rare synthetic forms are valid answers, while the table keeps würde.
   function conjugationAnswers(ex, person, shown) {
     var accepted = [shown];
+    /* The table prints wärest/wäret, but wärst/wärt are the everyday forms and
+       the ones the lessons teach: both are standard, so both count. */
+    var short = shown.replace(/^wär(est|et)\b/, function (m, end) { return end === "est" ? "wärst" : "wärt"; });
+    if (short !== shown) accepted.push(short);
     if (ex.tense !== "konj2" || !/^würde/.test(shown)) return accepted;
     var past = Verbs.conjugate(ex.verb, "praet")[person];
     var match = past.match(/^(.*?)(fuhr|wusch|stand)(?:est|st|et|t|en)?( .*)?$/);
