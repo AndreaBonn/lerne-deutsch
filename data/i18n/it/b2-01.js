@@ -997,7 +997,7 @@ LINGUAI.addStrings("it", {
           "Das Geschäft wird geschlossen.",
           "Das Geschäft ist geschlossen worden."
         ],
-        why: "Lo stato si esprime con <b>sein</b> + participio. <i>Wird geschlossen</i> descrive l'azione di chiudere, <i>ist geschlossen worden</i> un'azione appena compiuta."
+        why: "Lo stato si esprime con <b>sein</b> + participio. <i>Wird geschlossen</i> descrive l'azione di chiudere, <i>ist geschlossen worden</i> un'azione di chiusura avvenuta in passato."
       },
       {
         q: "Come dici «Il modulo deve essere compilato»?",
@@ -1182,10 +1182,10 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "ohne dass, anstatt dass",
-        p: "Se il soggetto della seconda frase è <strong>diverso</strong>, non si può usare l'infinito: servono <strong>ohne dass</strong> o <strong>anstatt dass</strong> con il verbo coniugato in fondo. <em>Er ging, ohne dass ich es merkte</em> (se ne andò senza che me ne accorgessi). <em>Anstatt dass du hilfst, schaust du nur zu</em> (invece di aiutare, stai solo a guardare). Con lo stesso soggetto la forma con <em>zu</em> è più naturale."
+        p: "Se il soggetto della seconda frase è <strong>diverso</strong>, non si può usare l'infinito: servono <strong>ohne dass</strong> o <strong>anstatt dass</strong> con il verbo coniugato in fondo. <em>Er ging, ohne dass ich es merkte</em> (se ne andò senza che me ne accorgessi). <em>Anstatt dass du alles allein machst, helfen wir dir</em> (invece di lasciarti fare tutto da solo, ti aiutiamo). La costruzione con <em>dass</em> è possibile anche con lo stesso soggetto (<em>Anstatt dass du hilfst, schaust du nur zu</em>), ma lì la forma con <em>zu</em> è più naturale."
       },
       {
-        contrast: "In italiano l'infinito segue subito la preposizione (<em>senza salutare</em>, <em>invece di aspettare</em>); in tedesco <em>zu</em> + infinito va alla fine della frase, dopo tutti i complementi: <em>ohne den Vertrag zu lesen</em>, <em>senza leggere il contratto</em>. E <em>senza che</em> vuole in italiano il congiuntivo (<em>senza che io me ne accorgessi</em>); <em>ohne dass</em> vuole l'indicativo: <em>ohne dass ich es merkte</em>."
+        contrast: "In italiano l'infinito segue subito la preposizione (<em>senza salutare</em>, <em>invece di aspettare</em>); in tedesco <em>zu</em> + infinito va alla fine della frase, dopo tutti i complementi: <em>ohne den Vertrag zu lesen</em>, <em>senza leggere il contratto</em>. E <em>senza che</em> vuole in italiano il congiuntivo (<em>senza che io me ne accorgessi</em>); dopo <em>ohne dass</em> di solito c'è l'indicativo: <em>ohne dass ich es merkte</em> (il Konjunktiv II è possibile ma più raro: <em>ohne dass ich es bemerkt hätte</em>)."
       },
       {
         trap: "Non dimenticare <em>zu</em>: <em>ohne sich verabschieden</em> è un errore, serve <em>ohne sich zu verabschieden</em>. E non usare l'infinito con un soggetto diverso: <em>Er ging, ohne mich es zu merken</em> non ha senso; si dice <em>ohne dass ich es merkte</em>."
@@ -1196,12 +1196,12 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "ohne ... zu, statt ... zu, ohne dass, anstatt dass",
-      note: "<b>Stesso soggetto</b>: ohne / statt / anstatt + ... + <b>zu</b> + infinito in fondo. <b>Soggetto diverso</b>: ohne dass / anstatt dass + verbo coniugato in fondo, all'indicativo.",
+      note: "<b>Stesso soggetto</b>: ohne / statt / anstatt + ... + <b>zu</b> + infinito in fondo. <b>Soggetto diverso</b>: ohne dass / anstatt dass + verbo coniugato in fondo, di solito all'indicativo.",
       table: {
         head: ["", "stesso soggetto", "soggetto diverso"],
         rows: [
           ["senza", "Er ging, ohne sich zu verabschieden.", "Er ging, ohne dass ich es merkte."],
-          ["invece di", "Statt zu warten, rief sie an.", "Anstatt dass du hilfst, schaust du zu."],
+          ["invece di", "Statt zu warten, rief sie an.", "Anstatt dass du alles allein machst, helfen wir dir."],
           ["verbo separabile", "..., ohne nachzudenken.", "..., ohne dass er nachdachte."]
         ]
       },
@@ -1210,8 +1210,8 @@ LINGUAI.addStrings("it", {
         { tr: "Invece di aspettare, chiamò subito.", note: "statt ... zu all'inizio, poi il verbo della principale" },
         { tr: "Ha firmato senza leggere il contratto.", note: "zu + infinito dopo tutti i complementi" },
         { tr: "Invece di studiare, guarda la televisione.", note: "anstatt ... zu; fernsehen è separabile" },
-        { tr: "Se ne andò senza che me ne accorgessi.", note: "ohne dass: soggetto diverso, indicativo" },
-        { tr: "Invece di aiutare, stai solo a guardare.", note: "anstatt dass: soggetto espresso nella frase" }
+        { tr: "Se ne andò senza che me ne accorgessi.", note: "ohne dass: soggetto diverso, di solito indicativo" },
+        { tr: "Invece di aiutare, stai solo a guardare.", note: "anstatt dass: possibile anche con lo stesso soggetto" }
       ]
     },
     vocab: [
@@ -1278,7 +1278,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Si è licenziato senza parlarne con nessuno. Invece di chiedere, ha deciso subito.",
-        why: "In <i>gekündigt</i> la <b>ü</b> è breve e il <b>-igt</b> finale si legge [ɪçt]; in <i>jemandem</i> la <b>j</b> è [j]; in <i>entschieden</i> la <b>ie</b> è lunga."
+        why: "In <i>gekündigt</i> la <b>ü</b> è breve e arrotondata; in <i>jemandem</i> la <b>j</b> è [j]; in <i>entschieden</i> la <b>ie</b> è lunga."
       },
       {
         tr: "Invece di aspettare, dovremmo chiamare subito.",
@@ -1329,7 +1329,7 @@ LINGUAI.addStrings("it", {
           "Die Brücke ist schon gesperrt geworden.",
           "Die Brücke hatte schon gesperrt worden."
         ],
-        why: "Plusquamperfekt del passivo: <b>war</b> + participio + <b>worden</b>. Nel passivo non si usa mai <i>haben</i>."
+        why: "Il Plusquamperfekt del passivo senza modale si forma con <b>war</b> + participio + <b>worden</b>, non con <i>hatte</i>."
       },
       {
         q: "Quale frase è corretta?",
