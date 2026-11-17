@@ -770,7 +770,7 @@ LINGUAI.addStrings("en", {
     ],
     grammar: {
       title: "Separable or inseparable prefixes, and idioms",
-      note: "<b>Separable</b>: stress on the prefix, prefix splits off, participle with <i>-ge-</i> if the base verb has it (<i>umgefahren</i>). <b>Inseparable</b>: stress on the stem, prefix stays attached, participle without <i>ge-</i> (<i>umfahren</i>).",
+      note: "<b>Separable</b>: stress on the prefix, prefix splits off, participle with <i>-ge-</i> if the base verb has it (<i>umgefahren</i>). <b>Inseparable</b>: stress on the verb after the prefix (<i>wiederholen</i> with stress on <i>ho</i>), prefix stays attached, participle without <i>ge-</i> (<i>umfahren</i>).",
       table: {
         head: ["separable", "meaning", "inseparable", "meaning"],
         rows: [

@@ -770,7 +770,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Prefissi separabili o inseparabili, e modi di dire",
-      note: "<b>Separabile</b>: accento sul prefisso, prefisso staccato, participio con <i>-ge-</i> se il verbo base lo prevede (<i>umgefahren</i>). <b>Inseparabile</b>: accento sulla radice, prefisso attaccato, participio senza <i>ge-</i> (<i>umfahren</i>).",
+      note: "<b>Separabile</b>: accento sul prefisso, prefisso staccato, participio con <i>-ge-</i> se il verbo base lo prevede (<i>umgefahren</i>). <b>Inseparabile</b>: accento sul verbo dopo il prefisso (<i>wiederholen</i> con l'accento su <i>ho</i>), prefisso attaccato, participio senza <i>ge-</i> (<i>umfahren</i>).",
       table: {
         head: ["separabile", "significato", "inseparabile", "significato"],
         rows: [

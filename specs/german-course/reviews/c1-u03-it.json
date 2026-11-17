@@ -1,18 +1,7 @@
 {
-  "bundleHash": "78a1554cf397c86bf4320b8f3de6fc1a09d42f0a80e12e10830aa7a88fd87dc8",
-  "findings": [
-    {
-      "kind": "livello CEFR e progressione",
-      "msg": "Le attività richiedono quasi esclusivamente riconoscimento di forme isolate, completamenti guidati e ripetizione di frasi brevi. Anche il test verifica soprattutto contenuti di livello inferiore, senza accertare la padronanza C1 di registro e coesione. Aggiungere testi articolati da riformulare per destinatari diversi, interpretazioni contestualizzate delle particelle e revisione di paragrafi con problemi di coesione; includere queste competenze nel test.",
-      "path": "merged"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "La definizione dello stile verbale come «secondaria con un verbo coniugato» esclude erroneamente le costruzioni infinitive, presenti nella stessa tabella («Um Wartezeiten zu vermeiden»). Correggere in «costruzione con un verbo, per esempio una subordinata con verbo coniugato oppure una proposizione infinitiva con um … zu».",
-      "path": "merged.lessons[0].grammar.note"
-    }
-  ],
+  "bundleHash": "2657a8e7a03310ec988cef394603fc05ceb592df2e08ae340fd0eb144ad15b4b",
+  "findings": [],
   "lang": "it",
   "unit": "c1-u03",
-  "verdict": "fail"
+  "verdict": "pass"
 }
