@@ -1370,7 +1370,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Che cos'è la n-Deklination",
-        p: "Un gruppo di nomi <strong>maschili</strong> prende <strong>-n</strong> o <strong>-en</strong> in tutti i casi tranne il nominativo singolare: <em>der Kunde, den Kunden, dem Kunden, des Kunden</em>. Sono soprattutto i maschili in <strong>-e</strong> che indicano persone o animali (<em>der Kollege, der Experte, der Junge</em>) e i maschili di origine straniera in <strong>-ent, -ant, -ist, -at, -oge</strong> (<em>der Präsident, der Praktikant, der Lieferant, der Journalist</em>). Al plurale prendono <em>-n</em> o <em>-en</em> come tutti gli altri: <em>die Kunden</em>."
+        p: "Un gruppo di nomi <strong>maschili</strong> prende <strong>-n</strong> o <strong>-en</strong> in tutti i casi tranne il nominativo singolare: <em>der Kunde, den Kunden, dem Kunden, des Kunden</em>. Sono soprattutto i maschili in <strong>-e</strong> che indicano persone o animali (<em>der Kollege, der Experte, der Junge</em>) e i maschili di origine straniera in <strong>-ent, -ant, -ist, -at, -oge</strong> (<em>der Präsident, der Praktikant, der Lieferant, der Journalist</em>). Questi nomi hanno il plurale in <em>-n</em> o <em>-en</em>: <em>die Kunden, die Präsidenten</em>."
       },
       {
         h: "Herr, Herrn",
@@ -1380,7 +1380,7 @@ LINGUAI.addStrings("it", {
         contrast: "L'italiano non segna il caso sul nome: <em>il cliente</em> resta uguale come soggetto, complemento oggetto o con una preposizione. In tedesco questi maschili cambiano, e la <em>-n</em> sembra un plurale: <em>den Kunden</em> può essere un cliente (accusativo singolare) o i clienti (dativo plurale), con lo stesso articolo. Lo decide il caso richiesto dal verbo: <em>Ich rufe den Kunden an</em> (un cliente, accusativo), <em>Ich helfe den Kunden</em> (i clienti, dativo plurale)."
       },
       {
-        trap: "L'errore più frequente è dimenticare la desinenza: <em>Ich frage den Student</em> invece di <em>den Studenten</em>, <em>mit dem Kollege</em> invece di <em>mit dem Kollegen</em>. I femminili non seguono questa declinazione: <em>die Kundin, der Kundin</em>, e nemmeno la maggior parte dei maschili, anche se finiscono in <em>-er</em> o <em>-ent</em> in italiano: <em>der Lehrer, den Lehrer</em>."
+        trap: "L'errore più frequente è dimenticare la desinenza: <em>Ich frage den Student</em> invece di <em>den Studenten</em>, <em>mit dem Kollege</em> invece di <em>mit dem Kollegen</em>. I femminili non seguono questa declinazione: <em>die Kundin, der Kundin</em>, e non tutti i maschili la seguono: <em>der Lehrer, den Lehrer</em>."
       },
       {
         tip: "Quando impari un maschile che indica una persona, guarda il genitivo nel dizionario: <em>der Kunde, -n, -n</em> vuol dire genitivo <em>des Kunden</em>, plurale <em>die Kunden</em>, ed è il segnale della declinazione debole."
@@ -1496,7 +1496,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "je ... desto, je ... umso",
-        p: "Per dire che due cose crescono o calano insieme si usa <strong>je</strong> + comparativo nella prima parte e <strong>desto</strong> o <strong>umso</strong> + comparativo nella seconda. La parte con <em>je</em> è una subordinata, con il verbo <strong>in fondo</strong>; la parte con <em>desto</em> è la principale, e il verbo viene <strong>subito dopo</strong> il comparativo: <em>Je mehr wir recyceln, desto weniger Müll gibt es. Je länger man wartet, umso teurer wird es.</em> Se c'è un nome, sta subito dopo il comparativo: <em>Je mehr Autos fahren, desto schlechter wird die Luft.</em>"
+        p: "Per dire che due cose crescono o calano insieme si usa <strong>je</strong> + comparativo nella prima parte e <strong>desto</strong> o <strong>umso</strong> + comparativo nella seconda. La parte con <em>je</em> è una subordinata, con il verbo <strong>in fondo</strong>; la parte con <em>desto</em> è la principale, e il verbo viene <strong>subito dopo</strong> il gruppo del comparativo, che può comprendere un nome (<em>desto weniger Müll gibt es</em>): <em>Je mehr wir recyceln, desto weniger Müll gibt es. Je länger man wartet, umso teurer wird es.</em> Se c'è un nome, sta subito dopo il comparativo: <em>Je mehr Autos fahren, desto schlechter wird die Luft.</em>"
       },
       {
         h: "Forme brevi e immer + comparativo",
@@ -1509,12 +1509,12 @@ LINGUAI.addStrings("it", {
         trap: "Dopo <em>desto</em> non viene il soggetto: <em>desto weniger Müll gibt es</em>, non «desto es gibt weniger Müll». E <em>je</em> e <em>desto</em> vogliono il comparativo, non l'aggettivo semplice: <em>je länger</em>, non «je lang»."
       },
       {
-        tip: "Pensa alla frase come a due metà incastrate: la prima finisce con il verbo (<em>... wartet,</em>), la seconda comincia con il comparativo e il verbo (<em>umso teurer wird ...</em>)."
+        tip: "Pensa alla frase come a due metà incastrate: la prima finisce con il verbo (<em>... wartet,</em>), la seconda comincia con il gruppo del comparativo e poi il verbo (<em>umso teurer wird ...</em>, <em>desto weniger Müll gibt ...</em>)."
       }
     ],
     grammar: {
       title: "je ... desto / umso",
-      note: "<b>je</b> + comparativo + ... + verbo in fondo, <b>desto / umso</b> + comparativo + verbo + soggetto. Per una crescita continua: <b>immer</b> + comparativo.",
+      note: "<b>je</b> + comparativo + ... + verbo in fondo, <b>desto / umso</b> + gruppo del comparativo (anche con un nome) + verbo + soggetto. Per una crescita continua: <b>immer</b> + comparativo.",
       table: {
         head: ["prima parte (je ...)", "seconda parte (desto / umso ...)"],
         rows: [
@@ -1525,7 +1525,7 @@ LINGUAI.addStrings("it", {
         ]
       },
       examples: [
-        { tr: "Più ricicliamo, meno rifiuti ci sono.", note: "je + verbo in fondo, desto + verbo subito dopo" },
+        { tr: "Più ricicliamo, meno rifiuti ci sono.", note: "je + verbo in fondo, desto + weniger Müll + verbo" },
         { tr: "Più si aspetta, più diventa caro.", note: "umso al posto di desto" },
         { tr: "Prima è, meglio è.", note: "forma breve senza verbi" },
         { tr: "Più auto circolano, peggiore diventa l'aria.", note: "il nome segue subito il comparativo" },
