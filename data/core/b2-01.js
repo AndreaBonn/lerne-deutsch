@@ -672,5 +672,275 @@ LINGUAI.addUnits("B2", [
         { t: "speak", it: "Statt lange zu diskutieren, haben wir das Problem einfach gelöst." }
       ]
     }
+  },
+  {
+    id: "b2-u04",
+    icon: "🗣️",
+    titleIt: "Gesellschaft und Debatte",
+    lessons: [
+      {
+        id: "b2-u04-l1",
+        tags: ["g-n-deklination"],
+        cefr: "B2",
+        titleIt: "Wirtschaft und Arbeit: der Kunde, des Kunden",
+        grammar: {
+          examples: [
+            { it: "Der Kunde hat sich beschwert." },
+            { it: "Wir haben den Kunden sofort angerufen." },
+            { it: "Ich spreche morgen mit dem Kollegen." },
+            { it: "Das ist das Büro des Präsidenten." },
+            { it: "Der Praktikant hilft dem Journalisten." },
+            { it: "Ich habe Herrn Müller eine Mail geschrieben." }
+          ]
+        },
+        vocab: [
+          { it: "der Kunde", plural: "die Kunden", ex: "Der Kunde ist König." },
+          { it: "der Kollege", plural: "die Kollegen", ex: "Mein Kollege ist heute krank." },
+          { it: "der Praktikant", plural: "die Praktikanten", ex: "Der Praktikant lernt schnell." },
+          { it: "der Präsident", plural: "die Präsidenten", ex: "Der Präsident hält eine Rede." },
+          { it: "der Lieferant", plural: "die Lieferanten", ex: "Der Lieferant kommt um neun." },
+          { it: "der Experte", plural: "die Experten", ex: "Wir haben einen Experten gefragt." },
+          { it: "die Firma", plural: "die Firmen", ex: "Die Firma hat hundert Mitarbeiter." },
+          { it: "der Umsatz", plural: "die Umsätze", ex: "Der Umsatz ist gestiegen." },
+          { it: "der Auftrag", plural: "die Aufträge", ex: "Wir haben einen neuen Auftrag bekommen." },
+          { it: "sich beschweren", ex: "Der Kunde hat sich beschwert." },
+          { it: "beraten", ex: "Wir beraten Sie gern." },
+          { it: "einstellen", ex: "Die Firma stellt neue Mitarbeiter ein." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["Kollegen"] },
+          { t: "fill", a: ["Präsidenten"] },
+          {
+            t: "cloze",
+            text: "Der Praktikant hilft {{1}} {{2}}.",
+            gaps: [["dem"], ["Journalisten"]]
+          },
+          {
+            t: "match",
+            pairs: [{ it: "der Kunde" }, { it: "der Lieferant" }, { it: "der Praktikant" }, { it: "der Experte" }]
+          },
+          {
+            t: "order",
+            tokens: ["Wir", "haben", "einen", "Experten", "um", "Rat", "gefragt"],
+            a: ["Wir haben einen Experten um Rat gefragt"]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Ich habe Herrn Müller eine Mail geschrieben",
+              "Ich habe Herrn Müller eine E-Mail geschrieben",
+              "Ich schrieb Herrn Müller eine Mail",
+              "Ich schrieb Herrn Müller eine E-Mail"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Gestern hat sich ein Kunde über den Lieferanten beschwert. Unser Kollege hat den Kunden sofort zurückgerufen und ihn beraten."
+          },
+          { t: "speak", it: "Die Firma stellt einen neuen Praktikanten ein." }
+        ]
+      },
+      {
+        id: "b2-u04-l2",
+        tags: ["g-konnektoren", "g-komparation"],
+        cefr: "B2",
+        titleIt: "Umwelt und Technik: je mehr, desto ...",
+        grammar: {
+          examples: [
+            { it: "Je mehr wir recyceln, desto weniger Müll gibt es." },
+            { it: "Je länger man wartet, umso teurer wird es." },
+            { it: "Je früher, desto besser." },
+            { it: "Je mehr Autos fahren, desto schlechter wird die Luft." },
+            { it: "Solarstrom wird immer billiger." },
+            { it: "Je weniger Energie wir verbrauchen, desto besser ist es für das Klima." }
+          ]
+        },
+        vocab: [
+          { it: "die Umwelt", plural: "-", ex: "Wir müssen die Umwelt schützen." },
+          { it: "der Müll", plural: "-", ex: "Bitte trenn den Müll." },
+          { it: "die Energie", plural: "die Energien", ex: "Wir brauchen erneuerbare Energien." },
+          { it: "der Klimawandel", plural: "-", ex: "Der Klimawandel ist ein großes Problem." },
+          { it: "das Gerät", plural: "die Geräte", ex: "Das Gerät verbraucht viel Strom." },
+          { it: "die Emission", plural: "die Emissionen", ex: "Die Emissionen müssen sinken." },
+          { it: "schützen", ex: "Wir müssen die Natur schützen." },
+          { it: "verbrauchen", ex: "Das Auto verbraucht zu viel Benzin." },
+          { it: "sparen", ex: "Mit dem Fahrrad spart man Geld." },
+          { it: "steigen", ex: "Die Preise steigen jedes Jahr." },
+          { it: "sinken", ex: "Der Verbrauch ist gesunken." },
+          { it: "nachhaltig", ex: "Wir wollen nachhaltig leben." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["desto", "umso"] },
+          { t: "fill", a: ["wird"] },
+          {
+            t: "cloze",
+            text: "Je weniger Energie wir {{1}}, desto besser {{2}} es für das Klima.",
+            gaps: [["verbrauchen"], ["ist"]]
+          },
+          {
+            t: "match",
+            pairs: [{ it: "steigen" }, { it: "sinken" }, { it: "sparen" }, { it: "schützen" }]
+          },
+          {
+            t: "order",
+            tokens: ["Je", "mehr", "wir", "recyceln,", "desto", "weniger", "Müll", "gibt", "es"],
+            a: ["Je mehr wir recyceln, desto weniger Müll gibt es"]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Je länger man wartet, desto teurer wird es",
+              "Je länger man wartet, umso teurer wird es"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Je mehr Menschen mit dem Fahrrad fahren, desto sauberer wird die Luft in der Stadt. Außerdem sparen sie Geld."
+          },
+          { t: "speak", it: "Je früher wir Energie sparen, desto besser ist es für die Umwelt." }
+        ]
+      },
+      {
+        id: "b2-u04-l3",
+        tags: ["g-konnektoren", "g-konjunktiv2"],
+        cefr: "B2",
+        titleIt: "Eine Position vertreten",
+        grammar: {
+          examples: [
+            { it: "Einerseits ist das Homeoffice praktisch, andererseits fehlt der Kontakt zu den Kollegen." },
+            { it: "Ich würde sagen, dass die Vorteile überwiegen." },
+            { it: "Es wäre besser, wenn die Stadt mehr Radwege bauen würde." },
+            { it: "Zwar ist die Technik teuer, aber sie spart Zeit." },
+            { it: "Meiner Ansicht nach sollte man das Problem anders lösen." },
+            { it: "Ich bin der Meinung, dass wir mehr investieren sollten." }
+          ]
+        },
+        vocab: [
+          { it: "der Vorteil", plural: "die Vorteile", ex: "Das hat viele Vorteile." },
+          { it: "der Nachteil", plural: "die Nachteile", ex: "Der größte Nachteil ist der Preis." },
+          { it: "die Ansicht", plural: "die Ansichten", ex: "Ich bin anderer Ansicht." },
+          { it: "das Argument", plural: "die Argumente", ex: "Das ist ein gutes Argument." },
+          { it: "die Lösung", plural: "die Lösungen", ex: "Wir suchen eine Lösung." },
+          { it: "die Gesellschaft", plural: "die Gesellschaften", ex: "Die Gesellschaft verändert sich." },
+          { it: "überwiegen", ex: "Die Vorteile überwiegen." },
+          { it: "vertreten", ex: "Sie vertritt eine klare Position." },
+          { it: "widersprechen", ex: "Da muss ich Ihnen widersprechen." },
+          { it: "zustimmen", ex: "Da stimme ich Ihnen zu." },
+          { it: "investieren", ex: "Die Stadt investiert in Radwege." },
+          { it: "überzeugt", ex: "Ich bin davon überzeugt." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["wäre"] },
+          { t: "fill", a: ["zu"] },
+          {
+            t: "cloze",
+            text: "{{1}} ist die Technik teuer, {{2}} sie spart Zeit.",
+            gaps: [["Zwar"], ["aber"]]
+          },
+          {
+            t: "match",
+            pairs: [{ it: "der Vorteil" }, { it: "der Nachteil" }, { it: "zustimmen" }, { it: "widersprechen" }]
+          },
+          {
+            t: "order",
+            tokens: ["Ich", "würde", "sagen,", "dass", "die", "Vorteile", "überwiegen"],
+            a: ["Ich würde sagen, dass die Vorteile überwiegen"]
+          },
+          {
+            t: "dialogue",
+            lines: [
+              { sp: "A", it: "Was halten Sie vom Homeoffice?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Einerseits ist es praktisch, andererseits fehlt der Kontakt zu den Kollegen.",
+                  "Einerseits es ist praktisch, andererseits der Kontakt zu den Kollegen fehlt.",
+                  "Einerseits ist es praktisch, andererseits der Kontakt zu den Kollegen fehlt."
+                ],
+                a: 0
+              },
+              { sp: "A", it: "Sollte die Firma es also verbieten?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Nein, aber es wäre besser, wenn alle zweimal pro Woche ins Büro kämen.",
+                  "Nein, aber es wäre besser, wenn alle zweimal pro Woche ins Büro kommen wären.",
+                  "Nein, aber es wäre besser, wenn alle kämen zweimal pro Woche ins Büro."
+                ],
+                a: 0
+              },
+              { sp: "A", it: "Und die Kosten für das Büro?" },
+              {
+                sp: "TY",
+                choices: [
+                  "Zwar kostet das Büro Geld, aber der Kontakt ist wichtig.",
+                  "Zwar das Büro kostet Geld, aber der Kontakt ist wichtig.",
+                  "Zwar kostet das Büro Geld, aber ist der Kontakt wichtig."
+                ],
+                a: 0
+              }
+            ]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Meiner Meinung nach sollte die Stadt mehr investieren",
+              "Meiner Ansicht nach sollte die Stadt mehr investieren",
+              "Ich finde, die Stadt sollte mehr investieren",
+              "Ich finde, dass die Stadt mehr investieren sollte",
+              "Ich bin der Meinung, dass die Stadt mehr investieren sollte",
+              "Ich bin der Ansicht, dass die Stadt mehr investieren sollte"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Einerseits verstehe ich die Argumente der Gegner, andererseits bin ich überzeugt, dass wir handeln müssen. Es wäre ein Fehler, noch länger zu warten."
+          },
+          { t: "speak", it: "Meiner Ansicht nach überwiegen die Vorteile, auch wenn es einige Nachteile gibt." }
+        ]
+      }
+    ],
+    test: {
+      id: "b2-u04-test",
+      tags: ["g-konjunktiv2", "g-konditionalsatz", "g-passiv", "g-n-deklination"],
+      cefr: "B2",
+      titleIt: "Test: Gesellschaft und Debatte",
+      exercises: [
+        { t: "conj", verb: "kommen", tense: "konj2Verg", persons: [0, 1, 2, 3, 4, 5] },
+        { t: "fill", a: ["wären"] },
+        { t: "fill", a: ["sollen", "müssen"] },
+        { t: "fill", a: ["regnet"] },
+        { t: "fill", a: ["worden"] },
+        { t: "fill", a: ["Kunden"] },
+        { t: "fill", a: ["desto", "umso"] },
+        { t: "mcq", a: 0 },
+        { t: "mcq", a: 0 },
+        {
+          t: "cloze",
+          text: "Hätte ich mehr Zeit {{1}}, {{2}} ich mitgekommen.",
+          gaps: [["gehabt"], ["wäre"]]
+        },
+        {
+          t: "trans",
+          dir: "toIt",
+          a: [
+            "Wir hätten früher losfahren können",
+            "Wir hätten früher abfahren können",
+            "Wir hätten früher fahren können",
+            "Wir hätten früher aufbrechen können",
+            "Wir hätten früher losgehen können"
+          ]
+        },
+        { t: "speak", it: "Einerseits ist die Stadt teuer, andererseits gibt es dort viele Jobs." }
+      ]
+    }
   }
 ]);
