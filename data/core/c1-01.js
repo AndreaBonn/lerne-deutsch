@@ -498,7 +498,7 @@ LINGUAI.addUnits("C1", [
           {
             t: "cloze",
             text: "Sehr geehrte Bürgerinnen und Bürger, {{1}} Abschluss der Bauarbeiten wird die Straße wieder freigegeben. {{2}} Vermeidung von Wartezeiten bitten wir um Terminvereinbarung.",
-            gaps: [["nach", "Nach"], ["zur", "Zur"]]
+            gaps: [["nach"], ["Zur"]]
           },
           {
             t: "match",
@@ -626,7 +626,7 @@ LINGUAI.addUnits("C1", [
           {
             t: "cloze",
             text: "{{1}} möchte ich das Problem beschreiben. {{2}} nenne ich mögliche Lösungen, und {{3}} ziehe ich ein Fazit.",
-            gaps: [["Zuerst", "Zunächst", "Erstens"], ["Danach", "Dann", "Anschließend", "Zweitens"], ["schließlich", "abschließend"]]
+            gaps: [["Zuerst", "Zunächst", "Erstens"], ["Danach", "Dann", "Anschließend", "Zweitens"], ["schließlich", "abschließend", "zuletzt", "zum Schluss"]]
           },
           {
             t: "match",

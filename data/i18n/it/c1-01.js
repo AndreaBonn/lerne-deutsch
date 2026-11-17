@@ -985,7 +985,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Stile nominale e stile verbale",
-      note: "<b>Nominale</b>: nome + genitivo + preposizione (<i>nach Abschluss der Arbeiten</i>). <b>Verbale</b>: secondaria con un verbo coniugato (<i>nachdem die Arbeiten abgeschlossen sind</i>). Verbi tipici: <i>erfolgen, erheben, gewähren</i>.",
+      note: "<b>Nominale</b>: preposizione + nome, spesso con un genitivo che dipende dal nome (<i>nach Abschluss der Arbeiten</i>). <b>Verbale</b>: secondaria con un verbo coniugato (<i>nachdem die Arbeiten abgeschlossen sind</i>). Verbi tipici: <i>erfolgen, erheben, gewähren</i>.",
       table: {
         head: ["stile nominale", "stile verbale"],
         rows: [
@@ -997,8 +997,8 @@ LINGUAI.addStrings("it", {
         ]
       },
       examples: [
-        { tr: "Al termine dei lavori la strada sarà riaperta.", note: "nach + genitivo al posto di nachdem" },
-        { tr: "In caso di mancata osservanza viene riscossa una multa.", note: "bei Nichtbeachtung = wenn man nicht beachtet" },
+        { tr: "Al termine dei lavori la strada sarà riaperta.", note: "nach regge il dativo (Abschluss); der Arbeiten è il genitivo che dipende da Abschluss" },
+        { tr: "In caso di mancata osservanza viene riscossa una multa.", note: "bei Nichtbeachtung = wenn man die Vorschriften nicht beachtet" },
         { tr: "Per evitare attese si prega di prenotare un appuntamento.", note: "zur Vermeidung = um ... zu vermeiden" },
         { tr: "A causa della forte pioggia il concerto è stato annullato.", note: "wegen + genitivo al posto di weil" },
         { tr: "La domanda si presenta online.", note: "erfolgen: avvenire, tipico degli uffici" },
@@ -1055,7 +1055,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa l'avviso del comune.",
         tr: "Gentili cittadine e cittadini, al termine dei lavori la strada sarà riaperta. Per evitare attese chiediamo di prenotare un appuntamento.",
-        why: "<i>Nach Abschluss</i> e <i>Zur Vermeidung</i>: preposizione + nome + genitivo al posto di una secondaria."
+        why: "<i>Nach Abschluss der Bauarbeiten</i>: <i>nach</i> + dativo, con il genitivo <i>der Bauarbeiten</i> che dipende da <i>Abschluss</i>. <i>Zur Vermeidung von Wartezeiten</i>: <i>zu</i> + dativo, con <i>von</i> + dativo al posto del genitivo. Tutti e due sostituiscono una secondaria."
       },
       {
         q: "Abbina ogni parola al suo significato.",
@@ -1147,7 +1147,7 @@ LINGUAI.addStrings("it", {
       "chiedere di nuovo, informarsi",
       "in realtà, veramente",
       "comunque, in ogni caso",
-      "appunto, ecco (rassegnazione)"
+      "è così e basta (presenta un fatto come inevitabile)"
     ],
     exercises: [
       {
@@ -1188,7 +1188,7 @@ LINGUAI.addStrings("it", {
         why: "<b>halt</b> (o <i>eben</i>): «è così, che ci vuoi fare»."
       },
       {
-        q: "Completa il dialogo.",
+        q: "Completa il dialogo con eigentlich, doch ed echt.",
         tr: "«Vieni al cinema stasera?» «Non so, in realtà sono piuttosto stanco.» «Ma dai, vieni, il film è davvero fantastico!»",
         why: "<i>eigentlich</i> (in realtà), <i>doch</i> (incoraggia), <i>echt</i> o <i>wirklich</i> (davvero): tre parole tipiche del parlato."
       },
@@ -1228,14 +1228,14 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Annunciare una frase",
-        p: "Quando un verbo regge una preposizione (<em>sich freuen auf, bestehen auf, sich einigen auf, hinweisen auf</em>) e il complemento è una frase, nella principale compare un avverbio pronominale che la annuncia: <em>Er besteht <strong>darauf</strong>, dass wir bleiben. Wir haben uns <strong>darauf</strong> geeinigt, den Termin zu verschieben.</em> Senza preposizione, l'anticipatore può essere <strong>es</strong>: <em>Es ist wichtig, dass alle pünktlich sind.</em> Se la secondaria passa al primo posto, l'<em>es</em> soggetto sparisce: <em>Dass alle pünktlich sind, ist wichtig.</em>"
+        p: "Quando un verbo regge una preposizione (<em>sich freuen auf, bestehen auf, sich einigen auf, hinweisen auf</em>) e il complemento è una frase, nella principale può comparire un avverbio pronominale che la annuncia; con alcuni verbi è obbligatorio (<em>bestehen auf</em>), con altri facoltativo (<em>Ich freue mich, dass du kommst</em> va bene anche senza <em>darauf</em>): <em>Er besteht <strong>darauf</strong>, dass wir bleiben. Wir haben uns <strong>darauf</strong> geeinigt, den Termin zu verschieben.</em> Senza preposizione, l'anticipatore può essere <strong>es</strong>: <em>Es ist wichtig, dass alle pünktlich sind.</em> Se la secondaria passa al primo posto, l'<em>es</em> soggetto sparisce: <em>Dass alle pünktlich sind, ist wichtig.</em>"
       },
       {
         h: "Tenere insieme un testo",
         p: "Un testo coeso guida chi legge. Per l'ordine: <em>zunächst, zuerst, dann, anschließend, schließlich</em>. Per aggiungere: <em>darüber hinaus, außerdem</em>. Per rinviare a ciò che si è detto: <em>dadurch, deshalb, dabei, darauf</em>: <em>Die Mieten steigen. Dadurch wird Wohnen für viele unbezahlbar.</em>"
       },
       {
-        contrast: "In italiano la secondaria segue direttamente il verbo: <em>insiste perché restiamo</em>, <em>ci siamo accordati per rinviare</em>. In tedesco il verbo con preposizione annuncia la frase con <em>darauf, daran, darüber</em>: senza, la frase suona incompleta o cambia significato."
+        contrast: "In italiano la secondaria segue direttamente il verbo: <em>insiste perché restiamo</em>, <em>ci siamo accordati per rinviare</em>. In tedesco il verbo con preposizione spesso annuncia la frase con <em>darauf, daran, darüber</em>. Con alcuni verbi il correlativo è obbligatorio (<em>Er besteht darauf, dass wir bleiben</em>); con altri è facoltativo (<em>Wir haben uns (darauf) geeinigt, den Termin zu verschieben</em>), e nello scritto curato di solito si mette."
       },
       {
         trap: "L'avverbio pronominale prende la preposizione del verbo: <em>bestehen auf → darauf</em>, <em>denken an → daran</em>, <em>sich ärgern über → darüber</em>. <em>Er besteht daran, dass ...</em> è sbagliato."
@@ -1341,7 +1341,7 @@ LINGUAI.addStrings("it", {
         why: "In <i>Vortrag</i> l'accento cade su <b>Vor</b>; in <i>Ursachen</i> l'accento cade su <b>Ur</b>; in <i>zusammen</i> l'accento cade su <b>sam</b>."
       },
       {
-        tr: "Vorrei far notare che la scadenza termina domani.",
+        tr: "Vorrei far notare che il termine scade domani.",
         why: "In <i>hinweisen</i> l'accento cade su <b>hin</b>; in <i>Frist</i> la <b>i</b> è breve; in <i>endet</i> la prima <b>e</b> è breve."
       }
     ]
@@ -1386,10 +1386,10 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa: «___ Abschluss der Arbeiten wird die Straße freigegeben.»",
         hint: "preposizione: «dopo»",
-        why: "<b>Nach</b>: <i>nach</i> + nome + genitivo al posto di <i>nachdem</i>."
+        why: "<b>Nach</b>: <i>nach</i> + dativo (<i>Abschluss</i>) al posto di <i>nachdem</i>; <i>der Arbeiten</i> è il genitivo che dipende dal nome."
       },
       {
-        q: "Che cosa esprime «Er wird den Zug verpasst haben»?",
+        q: "Il collega non è ancora arrivato. Che cosa esprime «Er wird den Zug wohl verpasst haben»?",
         opts: [
           "una supposizione sul passato",
           "un futuro",
