@@ -1,18 +1,7 @@
 {
-  "bundleHash": "86daf7963cae04fadac313fdafa61c37ea384e49c073963c9c57a24323f9d805",
-  "findings": [
-    {
-      "kind": "cefr",
-      "msg": "Il livello effettivamente richiesto è prevalentemente B1–B2: riconoscimento di collocazioni frequenti, completamenti di singole forme spesso suggerite e comprensione di brevi frasi esplicite. Anche il test ripete questi compiti senza verificare competenze C1. Mantenere questi esercizi come ripasso e aggiungere testi articolati, riformulazioni con conservazione del significato, scelta motivata del registro e interpretazione contestuale dei valori modali di «sein + zu»; includere tali competenze nel test finale.",
-      "path": "merged.lessons"
-    },
-    {
-      "kind": "grammar-explanation",
-      "msg": "La regola «Inseparable: stress on the stem» è troppo generale: per esempio, l'inseparabile «wiederholen», presente nel vocabolario della lezione, ha l'accento su «ho», mentre il verbo base «holen» è accentato su «ho»; soprattutto la formulazione non chiarisce che l'accento va appreso per ciascun verbo e non consente di ricavarlo automaticamente dalla radice. Sostituire con una regola circoscritta alle coppie illustrate e indicare esplicitamente l'accento nelle due letture, per esempio «úmfahren / umfáhren», «ǘbersetzen / übersétzen» e «dúrchfahren / durchfáhren».",
-      "path": "merged.lessons[2].grammar.note"
-    }
-  ],
+  "bundleHash": "24371085505ec721b2a4366271d5098db4d0e6c23335ea1034f2be19b113c813",
+  "findings": [],
   "lang": "en",
   "unit": "c1-u02",
-  "verdict": "fail"
+  "verdict": "pass"
 }

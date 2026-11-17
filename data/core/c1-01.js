@@ -16,8 +16,8 @@ LINGUAI.addUnits("C1", [
         titleIt: "Ein Wort, fünf Funktionen",
         grammar: {
           examples: [
-            { it: "Sie wird Ärztin." },
-            { it: "Es wird langsam dunkel." },
+            { it: "Aus dem kleinen Start-up ist inzwischen ein Weltkonzern geworden." },
+            { it: "Allmählich wird klar, dass das Projekt scheitern könnte." },
             { it: "Wir werden Sie rechtzeitig informieren." },
             { it: "Der Antrag wird gerade bearbeitet." },
             { it: "An deiner Stelle würde ich das nicht tun." },
@@ -57,7 +57,9 @@ LINGUAI.addUnits("C1", [
               "Er wird den Termin wohl vergessen haben",
               "Er wird den Termin vermutlich vergessen haben",
               "Er wird wohl den Termin vergessen haben",
-              "Er wird vermutlich den Termin vergessen haben"
+              "Er wird vermutlich den Termin vergessen haben",
+              "Er wird den Termin wahrscheinlich vergessen haben",
+              "Er wird wahrscheinlich den Termin vergessen haben"
             ]
           },
           {
@@ -77,7 +79,7 @@ LINGUAI.addUnits("C1", [
             { it: "Ein Bekannter hat mir die Wohnung empfohlen." },
             { it: "Die Angestellten arbeiten heute länger." },
             { it: "Der Verletzte wurde ins Krankenhaus gebracht." },
-            { it: "Ich habe etwas Neues gelernt." },
+            { it: "Es gibt kaum etwas Ärgerlicheres als einen verpassten Anschluss." },
             { it: "Es gibt nichts Besseres als frisches Brot." },
             { it: "Alles Gute zum Geburtstag!" }
           ]
@@ -163,12 +165,12 @@ LINGUAI.addUnits("C1", [
           { t: "mcq", a: 0 },
           { t: "mcq", a: 0 },
           { t: "mcq", a: 0 },
-          { t: "fill", a: ["kürzesten"] },
+          { t: "fill", a: ["kühnsten"] },
           { t: "fill", a: ["äußerst"] },
           {
             t: "cloze",
-            text: "Sie hat uns {{1}} Herzlichste {{2}}.",
-            gaps: [["aufs"], ["begrüßt"]]
+            text: "Sie hat uns aufs {{1}} {{2}}.",
+            gaps: [["Herzlichste", "herzlichste"], ["begrüßt"]]
           },
           {
             t: "match",
@@ -325,7 +327,7 @@ LINGUAI.addUnits("C1", [
           { t: "mcq", a: 0 },
           { t: "mcq", a: 0 },
           { t: "fill", a: ["bezahlen", "zahlen"] },
-          { t: "fill", a: ["trinkbar"] },
+          { t: "fill", a: ["vorhersehbar", "absehbar", "voraussehbar"] },
           {
             t: "cloze",
             text: "Liebe Mieterinnen und Mieter, die Heizung {{1}} sich leider erst nächste Woche reparieren. Bis dahin {{2}} die Fenster geschlossen zu halten. Der Schaden ist aber {{3}}: Der Techniker kommt am Montag.",

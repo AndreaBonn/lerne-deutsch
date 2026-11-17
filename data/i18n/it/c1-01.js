@@ -28,13 +28,13 @@ LINGUAI.addStrings("it", {
         p: "Al Perfekt il verbo pieno usa <strong>geworden</strong>: <em>Sie ist Ärztin geworden. Es ist dunkel geworden.</em> Il passivo usa <strong>worden</strong>, senza <em>ge-</em>: <em>Das Haus ist 1950 gebaut worden.</em> Tutti e due vogliono <em>sein</em> come ausiliare."
       },
       {
-        contrast: "L'italiano usa forme diverse per queste funzioni: <em>diventare</em>, il futuro (<em>vi informeremo</em>), il futuro di supposizione (<em>sarà in ufficio</em>), <em>venire</em> o <em>essere</em> nel passivo, il condizionale (<em>non lo farei</em>). In tedesco c'è sempre <em>werden</em>, e la funzione si capisce solo dal resto della frase."
+        contrast: "L'italiano usa forme diverse per queste funzioni: <em>diventare</em>, il futuro (<em>vi informeremo</em>), il futuro di supposizione (<em>sarà in ufficio</em>), <em>venire</em> o <em>essere</em> nel passivo, il condizionale (<em>non lo farei</em>). In tedesco c'è sempre <em>werden</em>, e la funzione si ricava dalla costruzione e dal contesto: futuro e supposizione, per esempio, hanno la stessa forma (<em>Er wird zu Hause sein</em>) e senza indizi come <em>wohl</em> o un'indicazione di tempo possono restare ambigui."
       },
       {
         trap: "<em>Der Antrag wird bearbeitet</em> non è un futuro: è un passivo presente, «la domanda viene elaborata». E la supposizione sul passato non si fa con il futuro semplice: <em>sarà stato stanco</em> è <em>Er wird müde gewesen sein</em> (Futur II), non <em>Er wird müde sein</em>, che riguarda il presente."
       },
       {
-        tip: "Davanti a un <em>werden</em> difficile, cerca la fine della frase: un participio II (<em>bearbeitet</em>) segnala il passivo, un infinito (<em>informieren, sein</em>) il futuro o la supposizione."
+        tip: "Davanti a un <em>werden</em> difficile, guarda l'intera costruzione in fondo alla frase: <em>werden</em> con il participio II di un altro verbo (<em>wird bearbeitet</em>) è il passivo, mentre <em>geworden</em> (<em>ist müde geworden</em>) è il Perfekt di «diventare»; <em>werden</em> + participio II + <em>haben</em> o <em>sein</em> (<em>wird vergessen haben</em>) il Futur II (supposizione sul passato, o azione conclusa entro un momento futuro: <em>Bis morgen werde ich den Bericht fertiggestellt haben</em>), un infinito (<em>informieren, sein</em>) il futuro o la supposizione."
       }
     ],
     grammar: {
@@ -51,8 +51,8 @@ LINGUAI.addStrings("it", {
         ]
       },
       examples: [
-        { tr: "Diventa medico.", note: "verbo pieno, con un nome" },
-        { tr: "Si sta facendo buio.", note: "verbo pieno, con un aggettivo" },
+        { tr: "Da piccola start-up è diventata nel frattempo un gruppo mondiale.", note: "verbo pieno «diventare» al Perfekt: aus ... ist ... geworden" },
+        { tr: "A poco a poco diventa chiaro che il progetto potrebbe fallire.", note: "verbo pieno con aggettivo predicativo e soggettiva posposta (dass ...)" },
         { tr: "La informeremo in tempo.", note: "futuro: werden + infinito" },
         { tr: "La domanda viene elaborata proprio adesso.", note: "passivo presente, non futuro" },
         { tr: "Al tuo posto non lo farei.", note: "Konjunktiv II con würde" },
@@ -86,14 +86,14 @@ LINGUAI.addStrings("it", {
       {
         q: "Un collega è preoccupato per una cifra in un rapporto. Rispondi: «Das wird schon stimmen.» Che cosa comunichi?",
         opts: [
-          "una supposizione rassicurante: «sarà sicuramente giusto»",
+          "una supposizione rassicurante: «vedrai che sarà giusto»",
           "una previsione: «diventerà giusto»",
           "un passivo: «viene corretto»"
         ],
         why: "<i>werden</i> + infinito con <i>schon</i> esprime una <b>supposizione</b> che rassicura; <i>stimmen</i> è un infinito, non un participio, quindi non è un passivo."
       },
       {
-        q: "Completa: «Er ist Arzt ___.»",
+        q: "In un articolo economico: «Seit der Fusion ist aus zwei Konkurrenten ein einziger Konzern ___.»",
         opts: [
           "geworden",
           "worden",
@@ -136,7 +136,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Se avessi più tempo, diventerei medico.",
-        why: "In <i>hätte</i> la <b>ä</b> è breve; in <i>Ärztin</i> la <b>ä</b> è lunga e <b>z</b> si pronuncia [ts]; in <i>werden</i> la <b>e</b> è lunga."
+        why: "In <i>hätte</i> la <b>ä</b> è breve; in <i>Ärztin</i> <b>z</b> si pronuncia [ts]; in <i>werden</i> la <b>r</b> si vocalizza."
       }
     ]
   },
@@ -162,7 +162,7 @@ LINGUAI.addStrings("it", {
         contrast: "In italiano <em>il conoscente</em> e <em>un conoscente</em> hanno la stessa forma, e <em>qualcosa di nuovo</em> si costruisce con <em>di</em>. In tedesco la desinenza cambia con l'articolo (<em>der Bekannte</em>, <em>ein Bekannter</em>) e <em>etwas Neues</em> non ha preposizione: l'aggettivo segue direttamente <em>etwas</em>, con la maiuscola."
       },
       {
-        trap: "Non mettere la desinenza del nome maschile debole: <em>der Bekannte</em> si comporta come un aggettivo, quindi <em>mit einem Bekannten</em>, ma <em>ein Bekannter</em> al nominativo, non <em>ein Bekannte</em>. E al plurale senza articolo: <em>Wir haben Verwandte in Wien</em>, non <em>Verwandten</em>."
+        trap: "Non mettere la desinenza del nome maschile debole: <em>der Bekannte</em> si comporta come un aggettivo, quindi <em>mit einem Bekannten</em>, ma <em>ein Bekannter</em> al nominativo, non <em>ein Bekannte</em>. E al plurale senza articolo, al nominativo e all'accusativo: <em>Wir haben Verwandte in Wien</em>, non <em>Verwandten</em>; al dativo invece <em>mit Verwandten</em>."
       },
       {
         tip: "Se non sai che desinenza usare, immagina un nome dopo l'aggettivo: <em>ein bekannter (Mann)</em> → <em>ein Bekannter</em>; <em>dem bekannten (Mann)</em> → <em>dem Bekannten</em>."
@@ -184,7 +184,7 @@ LINGUAI.addStrings("it", {
         { tr: "Un conoscente mi ha consigliato l'appartamento.", note: "ein Bekannter: desinenza -er dopo ein" },
         { tr: "Gli impiegati oggi lavorano più a lungo.", note: "die Angestellten: -en dopo die" },
         { tr: "Il ferito è stato portato in ospedale.", note: "der Verletzte: participio sostantivato" },
-        { tr: "Ho imparato qualcosa di nuovo.", note: "etwas Neues: maiuscola e -es" },
+        { tr: "Non c'è quasi niente di più irritante di una coincidenza persa.", note: "etwas + comparativo sostantivato: etwas Ärgerlicheres" },
         { tr: "Non c'è niente di meglio del pane fresco.", note: "nichts Besseres: comparativo sostantivato" },
         { tr: "Tanti auguri di buon compleanno!", note: "alles Gute: -e dopo alles" }
       ]
@@ -214,22 +214,22 @@ LINGUAI.addStrings("it", {
         why: "Genitivo plurale dopo <i>der</i>: l'aggettivo sostantivato prende <b>-en</b>, <i>die Zahl der Arbeitslosen</i>. <i>Arbeitslose</i> è il plurale nominativo o accusativo senza articolo; <i>Arbeitsloser</i> è il singolare dopo <i>ein</i> oppure il genitivo plurale senza articolo (<i>die Zahl Arbeitsloser</i>). Dopo <i>der</i> al genitivo plurale serve <i>Arbeitslosen</i>."
       },
       {
-        q: "Completa: «Ich habe mit dem ___ gesprochen.»",
+        q: "In un comunicato sindacale: «Die Interessen der ___ wurden bei der Umstrukturierung kaum berücksichtigt.»",
         opts: [
-          "Angestellten",
-          "Angestellter",
-          "Angestellte"
+          "Beschäftigten",
+          "Beschäftigte",
+          "Beschäftigter"
         ],
-        why: "Dopo <i>dem</i> (dativo) l'aggettivo sostantivato prende <b>-en</b>: <i>dem Angestellten</i>."
+        why: "Genitivo plurale dopo <i>der</i>: il participio sostantivato prende <b>-en</b>, <i>der Beschäftigten</i> (dei dipendenti)."
       },
       {
-        q: "Completa: «Ich wünsche dir alles ___!»",
+        q: "In un reportage sulla fusione: «Den Angestellten stand nach der Übernahme nichts ___ bevor.»",
         opts: [
-          "Gute",
           "Gutes",
+          "Gute",
           "Guten"
         ],
-        why: "Dopo <i>alles</i> l'aggettivo sostantivato prende <b>-e</b>: <i>alles Gute</i>."
+        why: "Dopo <i>nichts</i> l'aggettivo sostantivato è neutro con <b>-es</b>, anche in una frase complessa: <i>nichts Gutes</i> («niente di buono»). <i>Gute</i> segue <i>alles</i>."
       },
       {
         q: "Completa: «Es gibt nichts ___ als frisches Brot.»",
@@ -265,7 +265,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Ieri ho incontrato un vecchio conoscente. Mi ha raccontato una cosa interessante: la sua ditta cerca nuovi impiegati.",
-        why: "In <i>Bekannten</i> l'accento cade su <b>kann</b>; in <i>Interessantes</i> l'accento cade su <b>sant</b>; in <i>Angestellte</i> l'accento cade su <b>An</b>."
+        why: "In <i>Bekannten</i> l'accento cade su <b>kann</b>; in <i>Interessantes</i> l'accento cade su <b>sant</b>."
       },
       {
         tr: "Per gli adulti l'ingresso costa dodici euro.",
@@ -285,7 +285,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Un grado molto alto senza confronto",
-        p: "Per dire che qualcosa ha una qualità in grado molto alto, senza paragonarlo ad altro, il tedesco mette un avverbio davanti all'aggettivo: <em>sehr</em> e, nello scritto, <strong>höchst</strong>, <strong>äußerst</strong>, <strong>überaus</strong>, <strong>besonders</strong>. <em>Das ist ein höchst interessanter Vorschlag. Die Lage ist äußerst schwierig.</em> Per attenuare: <strong>ziemlich</strong> (piuttosto), <em>relativ</em>, <em>einigermaßen</em>."
+        p: "Per dire che qualcosa ha una qualità in grado molto alto, senza paragonarlo ad altro, il tedesco mette un avverbio davanti all'aggettivo: <em>sehr</em> e, nello scritto, <strong>höchst</strong>, <strong>äußerst</strong>, <strong>überaus</strong>; <strong>besonders</strong> («particolarmente») mette invece in rilievo una qualità, spesso rispetto ad altre. <em>Das ist ein höchst interessanter Vorschlag. Die Lage ist äußerst schwierig.</em> Per attenuare: <strong>ziemlich</strong> (piuttosto), <em>relativ</em>, <em>einigermaßen</em>."
       },
       {
         h: "Il superlativo resta un confronto",
@@ -303,7 +303,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Grado molto alto e superlativo",
-      note: "<b>höchst, äußerst, überaus, besonders</b> + aggettivo: grado molto alto, senza confronto. <b>am</b> + superlativo: confronto. <b>aufs</b> + superlativo: grado molto alto, scritto formale.",
+      note: "<b>höchst, äußerst, überaus</b> + aggettivo: grado molto alto, senza confronto (più forti di <i>sehr</i>). <b>besonders</b> mette invece in rilievo una qualità, spesso rispetto ad altre. <b>am</b> + superlativo: confronto. <b>aufs</b> + superlativo: grado molto alto, scritto formale.",
       table: {
         head: ["forma", "valore", "esempio"],
         rows: [
@@ -338,13 +338,13 @@ LINGUAI.addStrings("it", {
     ],
     exercises: [
       {
-        q: "Come si dice «difficilissimo», senza confronto?",
+        q: "In una perizia vuoi attenuare il giudizio sui risultati. Quale frase scegli?",
         opts: [
-          "äußerst schwierig",
-          "am schwierigsten",
-          "schwierigst"
+          "Die Ergebnisse sind ziemlich widersprüchlich.",
+          "Die Ergebnisse sind äußerst widersprüchlich.",
+          "Die Ergebnisse sind höchst widersprüchlich."
         ],
-        why: "Senza confronto: avverbio + aggettivo, <b>äußerst schwierig</b>. <i>am schwierigsten</i> è «il più difficile» in un confronto."
+        why: "<b>ziemlich</b> attenua («piuttosto contraddittori»); <i>äußerst</i> e <i>höchst</i> rafforzano il giudizio."
       },
       {
         q: "Dei tre percorsi, questo è il più breve: «Von den drei Wegen ist dieser ___.»",
@@ -365,9 +365,9 @@ LINGUAI.addStrings("it", {
         why: "In una lettera formale si usa <b>äußerst</b> (o <i>höchst</i>); <i>echt super</i> è parlato informale. <i>am interessantesten</i> è un confronto e qui non c'è nulla con cui confrontare."
       },
       {
-        q: "Completa con il superlativo di kurz: «Dieser Weg ist am ___.»",
-        hint: "superlativo di kurz, con la ü",
-        why: "<b>kürzesten</b>: <i>kurz</i> prende l'Umlaut e <i>-esten</i> dopo <i>z</i>."
+        q: "In una recensione: «Das Ergebnis übertraf selbst die ___ Erwartungen.» (superlativo di kühn)",
+        hint: "superlativo attributivo dopo die, plurale",
+        why: "<b>kühnsten</b>: superlativo usato come attributo, con la desinenza <i>-en</i> dopo <i>die</i>; «superò perfino le aspettative più audaci»."
       },
       {
         q: "Completa: «Die Aussicht ist ___ beeindruckend.»",
@@ -394,7 +394,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "La nuova mostra merita davvero di essere vista. I quadri sono estremamente insoliti, e i visitatori sono rimasti oltremodo colpiti.",
-        why: "In <i>Ausstellung</i> l'accento cade su <b>Aus</b>; in <i>sehenswert</i> la <b>h</b> è muta; in <i>ungewöhnlich</i> l'accento cade su <b>un</b>."
+        why: "In <i>Ausstellung</i> l'accento cade su <b>Aus</b>; in <i>sehenswert</i> la <b>h</b> è muta; in <i>beeindruckt</i> la <b>ee</b> non è lunga: <i>be-</i> e <i>ein</i> si pronunciano separati."
       },
       {
         tr: "È un risultato estremamente notevole.",
@@ -415,7 +415,7 @@ LINGUAI.addStrings("it", {
     ],
     exercises: [
       {
-        q: "Completa: «Sie ist Ärztin ___.»",
+        q: "Completa: «Aus der Idee zweier Studenten ist ein erfolgreiches Unternehmen ___.»",
         hint: "participio di werden «diventare»",
         why: "<b>geworden</b>: con il significato di «diventare» il participio ha <i>ge-</i>."
       },
@@ -439,13 +439,13 @@ LINGUAI.addStrings("it", {
         why: "<i>werden</i> + participio + <i>haben</i> è il <b>Futur II</b>: qui una supposizione su qualcosa di già accaduto."
       },
       {
-        q: "Che cosa esprime «Er wird wohl krank sein»?",
+        q: "In un rapporto tecnico: quale frase formula la causa del guasto con più cautela?",
         opts: [
-          "una supposizione",
-          "un passivo",
-          "un ordine"
+          "Der Fehler wird wohl bei der Software liegen.",
+          "Der Fehler liegt bei der Software.",
+          "Der Fehler wird bei der Software gesucht."
         ],
-        why: "<i>werden</i> + infinito con <i>wohl</i>: <b>supposizione</b>, «sarà malato»."
+        why: "<i>werden</i> + infinito con <i>wohl</i> presenta la causa come <b>supposizione</b>; la seconda è un'affermazione, la terza un passivo («viene cercato»)."
       },
       {
         q: "Un ospite è in ritardo. Quale frase esprime la supposizione più debole?",
@@ -485,7 +485,7 @@ LINGUAI.addStrings("it", {
     ]
   },
   "unit:c1-u02": {
-    title: "Riuscire a realizzare",
+    title: "Riuscire a realizzare qualcosa",
     grammarNote: "Verbi di funzione (zur Verfügung stellen, in Frage kommen, eine Entscheidung treffen) · sostituti del passivo: sich lassen, sein + zu, aggettivi in -bar · prefissi separabili e inseparabili con senso diverso (umfahren) · modi di dire"
   },
   "lesson:c1-u02-l1": {
@@ -504,7 +504,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Il posto nella frase",
-        p: "I gruppi con preposizione (<em>zur Verfügung stellen, in Kraft treten, in Frage kommen</em>) si comportano come una particella separabile: il verbo si coniuga al suo posto e il gruppo va verso la fine. <em>Die Firma <strong>stellt</strong> uns die Räume <strong>zur Verfügung</strong>.</em> Al Perfekt e con un modale il gruppo precede il participio o l'infinito: <em>Die Firma hat uns die Räume zur Verfügung gestellt. Das Gesetz soll im Januar in Kraft treten.</em> I gruppi con un complemento oggetto (<em>eine Entscheidung treffen</em>) seguono invece l'ordine normale della frase: <em>Wir treffen heute eine Entscheidung über den Antrag. Wir müssen bis Freitag eine Entscheidung treffen.</em> La negazione di solito precede il gruppo: <em>Das kommt nicht in Frage.</em>"
+        p: "Di norma i gruppi con preposizione (<em>zur Verfügung stellen, in Kraft treten, in Frage kommen</em>) stanno verso la fine della frase, un po' come una particella separabile: il verbo si coniuga al suo posto e il gruppo lo completa. Non sono però prefissi del verbo, e per dare risalto possono andare al primo posto: <em>In Frage kommt nur diese Lösung.</em> <em>Die Firma <strong>stellt</strong> uns die Räume <strong>zur Verfügung</strong>.</em> Al Perfekt e con un modale il gruppo precede il participio o l'infinito: <em>Die Firma hat uns die Räume zur Verfügung gestellt. Das Gesetz soll im Januar in Kraft treten.</em> I gruppi con un complemento oggetto (<em>eine Entscheidung treffen</em>) seguono invece l'ordine normale della frase: <em>Wir treffen heute eine Entscheidung über den Antrag. Wir müssen bis Freitag eine Entscheidung treffen.</em> La negazione di solito precede il gruppo: <em>Das kommt nicht in Frage.</em>"
       },
       {
         contrast: "Molti di questi gruppi esistono anche in italiano con lo stesso schema (<em>mettere a disposizione</em>, <em>entrare in vigore</em>, <em>prendere una decisione</em>), ed è un buon appiglio. Il rischio è il calco quando il verbo non coincide: <em>prendere una decisione</em> è <em>eine Entscheidung treffen</em>, non <em>nehmen</em>; <em>fare una domanda</em> è <em>eine Frage stellen</em>, non <em>machen</em>."
@@ -518,7 +518,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Verbi di funzione",
-      note: "Nome + verbo quasi vuoto, gruppo fisso. Il verbo si coniuga al suo posto, il nome con la preposizione va verso la fine: <i>Die Firma stellt uns die Räume zur Verfügung.</i>",
+      note: "Nome + verbo quasi vuoto, gruppo fisso. Il verbo si coniuga al suo posto e il gruppo con preposizione di norma va verso la fine (<i>Die Firma stellt uns die Räume zur Verfügung</i>); la posizione può cambiare secondo la struttura della frase e ciò che si vuole mettere in rilievo.",
       table: {
         head: ["verbo di funzione", "significato", "verbo semplice"],
         rows: [
@@ -606,7 +606,7 @@ LINGUAI.addStrings("it", {
         why: "<i>Die Leitung hat einen Raum für die Besprechung zur Verfügung gestellt</i>: il gruppo <i>zur Verfügung</i> va prima del participio; va bene anche il Präteritum <i>stellte ... zur Verfügung</i>."
       },
       {
-        tr: "Dal mese prossimo in ufficio entra in vigore una nuova regola. La ditta mette a disposizione di tutti i dipendenti dei portatili; i dispositivi privati non saranno più ammessi.",
+        tr: "Dal mese prossimo in ufficio entra in vigore una nuova regola. La ditta mette a disposizione di tutti i dipendenti dei portatili; i dispositivi privati non saranno più un'opzione.",
         why: "In <i>Regelung</i> l'accento cade su <b>Re</b>; in <i>Verfügung</i> l'accento cade su <b>fü</b>; in <i>Geräte</i> la <b>ä</b> è lunga."
       },
       {
@@ -627,7 +627,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Tre modi di dire «si può» o «si deve»",
-        p: "Accanto al passivo con un modale (<em>Das Problem kann gelöst werden</em>) il tedesco ha forme più compatte. <strong>sich lassen</strong> + infinito significa «si può»: <em>Das Problem lässt sich leicht lösen.</em> <strong>sein + zu</strong> + infinito significa «si può» o «si deve», e negli avvisi di solito è un obbligo: <em>Der Antrag ist bis Freitag abzugeben.</em> Gli aggettivi in <strong>-bar</strong> dicono che una cosa si può fare: <em>lösbar, machbar, trinkbar</em>."
+        p: "Accanto al passivo con un modale (<em>Das Problem kann gelöst werden</em>) il tedesco ha forme più compatte. <strong>sich lassen</strong> + infinito significa «si può»: <em>Das Problem lässt sich leicht lösen.</em> <strong>sein + zu</strong> + infinito significa «si può» o «si deve», e negli avvisi di solito è un obbligo: <em>Der Antrag ist bis Freitag abzugeben.</em> Gli aggettivi in <strong>-bar</strong> formati da un verbo dicono che una cosa si può fare: <em>lösbar, machbar, trinkbar</em> (non tutti: <em>dankbar</em> e <em>fruchtbar</em> hanno altri significati)."
       },
       {
         h: "zu con i verbi separabili",
@@ -712,9 +712,9 @@ LINGUAI.addStrings("it", {
         why: "<b>bezahlen</b> (o <i>zahlen</i>): <i>ist zu bezahlen</i>, «va pagata»."
       },
       {
-        q: "Completa: «Das Wasser ist nicht ___.»",
-        hint: "che si può bere, aggettivo in -bar",
-        why: "<b>trinkbar</b>: «potabile»; il suffisso <i>-bar</i> dice che una cosa si può fare."
+        q: "In un rapporto: «Die Folgen der Entscheidung sind noch nicht ___.»",
+        hint: "da vorhersehen, aggettivo in -bar",
+        why: "<b>vorhersehbar</b> (o <i>absehbar</i>): «prevedibile»; il suffisso <i>-bar</i> dice che una cosa si può fare."
       },
       {
         q: "Completa l'avviso ai condomini.",
@@ -759,10 +759,10 @@ LINGUAI.addStrings("it", {
         p: "I modi di dire (<em>Redewendungen</em>) hanno un senso figurato che non si ricava dalle parole: <em>Das geht mir gegen den Strich</em> (mi dà fastidio), <em>den Nagel auf den Kopf treffen</em> (cogliere nel segno), <em>jemandem auf die Nerven gehen</em> (dare sui nervi), <em>etwas auf die lange Bank schieben</em> (rimandare). Si usano soprattutto nel parlato e nei testi giornalistici; in un testo molto formale si preferisce l'espressione diretta."
       },
       {
-        contrast: "L'italiano ha alcuni modi di dire vicini (<em>dare sui nervi</em> = <em>auf die Nerven gehen</em>), ma molti cambiano immagine: <em>cogliere nel segno</em> diventa «colpire il chiodo sulla testa», <em>rimandare alle calende greche</em> diventa «spingere sulla panca lunga». Tradurre parola per parola produce frasi incomprensibili."
+        contrast: "L'italiano ha alcuni modi di dire vicini (<em>dare sui nervi</em> = <em>auf die Nerven gehen</em>), ma molti cambiano immagine: <em>cogliere nel segno</em> diventa «colpire il chiodo sulla testa», <em>rimandare continuamente</em> diventa «spingere sulla panca lunga». Tradurre parola per parola produce frasi incomprensibili."
       },
       {
-        trap: "Con i verbi separabili e inseparabili il participio decide: <em>umgefahren</em> (abbattuto) o <em>umfahren</em> (aggirato). Scrivere <em>Wir haben den Stau umgefahren</em> vuol dire che avete abbattuto la coda, non che l'avete evitata."
+        trap: "In questa coppia il participio distingue i due verbi: <em>umgefahren</em> (abbattuto) o <em>umfahren</em> (aggirato). In generale contano anche l'accento e la separazione nelle forme coniugate, perché alcuni verbi separabili non prendono <em>ge-</em> (<em>anprobiert</em>). Scrivere <em>Wir haben den Stau umgefahren</em> vuol dire che avete abbattuto la coda, non che l'avete evitata."
       },
       {
         tip: "Quando incontri un modo di dire nuovo, annotalo con una frase intera e una situazione: <em>Er schiebt die Steuererklärung auf die lange Bank.</em> Da solo si dimentica, dentro una scena resta."
@@ -770,7 +770,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Prefissi separabili o inseparabili, e modi di dire",
-      note: "<b>Separabile</b>: accento sul prefisso, prefisso staccato, participio con <i>-ge-</i> se il verbo base lo prevede (<i>umgefahren</i>). <b>Inseparabile</b>: accento sul verbo dopo il prefisso (<i>wiederholen</i> con l'accento su <i>ho</i>), prefisso attaccato, participio senza <i>ge-</i> (<i>umfahren</i>).",
+      note: "<b>Separabile</b>: accento sul prefisso, prefisso staccato, participio con <i>-ge-</i> se il verbo base lo prevede (<i>umgefahren</i>). <b>Inseparabile</b>: accento su una sillaba dopo il prefisso (<i>wiederholen</i> con l'accento su <i>ho</i>), prefisso attaccato, participio senza <i>ge-</i> (<i>umfahren</i>).",
       table: {
         head: ["separabile", "significato", "inseparabile", "significato"],
         rows: [
@@ -784,7 +784,7 @@ LINGUAI.addStrings("it", {
         { tr: "Abbiamo aggirato la coda.", note: "inseparabile: umfahren" },
         { tr: "Ha tradotto la lettera in inglese.", note: "inseparabile: übersetzt" },
         { tr: "Il traghetto ci porta sull'altra riva.", note: "separabile: setzt ... über" },
-        { tr: "Questo mi dà proprio fastidio.", note: "modo di dire: gegen den Strich gehen" },
+        { tr: "Questa cosa non mi va proprio giù.", note: "modo di dire: gegen den Strich gehen, contrarietà" },
         { tr: "Hai colto nel segno.", note: "modo di dire: den Nagel auf den Kopf treffen" }
       ]
     },
@@ -800,7 +800,7 @@ LINGUAI.addStrings("it", {
       "guidare senza fermarsi (separabile); attraversare (inseparabile)",
       "conversare, chiacchierare",
       "ripetere",
-      "saper trattare (separabile); aggirare, eludere (inseparabile)"
+      "mit + dativo: saper trattare (separabile); etwas umgehen: aggirare, eludere (inseparabile)"
     ],
     exercises: [
       {
@@ -860,7 +860,7 @@ LINGUAI.addStrings("it", {
         why: "Le prime due: participio senza <i>ge-</i> (<i>umfahren, übersetzt</i>). Nella terza il participio ha <i>-ge-</i>, nella quarta il prefisso si stacca: sono separabili."
       },
       {
-        q: "Traduci: «Questo modo di dire non si può tradurre parola per parola.» (die Redewendung)",
+        q: "Traduci: «Questo modo di dire non si può tradurre letteralmente.» (die Redewendung, wörtlich)",
         why: "<i>Diese Redewendung lässt sich nicht wörtlich übersetzen</i>; vanno bene anche <i>ist nicht wörtlich zu übersetzen</i>, <i>kann man nicht ...</i>, <i>kann nicht ... übersetzt werden</i> e <i>Wort für Wort</i>."
       },
       {
@@ -875,7 +875,7 @@ LINGUAI.addStrings("it", {
   },
   "lesson:c1-u02-test": {
     theme: "Verifica",
-    title: "Test: Riuscire a realizzare",
+    title: "Test: Riuscire a realizzare qualcosa",
     objectives: [
       "verificare i verbi di funzione, i sostituti del passivo e i prefissi separabili e inseparabili"
     ],

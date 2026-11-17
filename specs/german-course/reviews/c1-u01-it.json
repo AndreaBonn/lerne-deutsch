@@ -1,10 +1,20 @@
 {
-  "bundleHash": "d4a13bd48fdf87ad4e2a1d6314225ac558ee4186758c408161f2256c99d03011",
+  "bundleHash": "a193ef007af993275e120aa6f99d7a3e78ec82b53407c6f4b2b56b958e256dea",
   "findings": [
     {
-      "kind": "cefr",
-      "msg": "L'unità etichettata C1 propone quasi esclusivamente riconoscimento di strutture di base, frasi isolate e completamenti fortemente guidati. Anche il test verifica soprattutto participi, desinenze e distinzioni esplicite, senza richiedere competenze C1. Mantenere questi contenuti come ripasso iniziale e aggiungere testi articolati, interpretazione contestuale delle sfumature epistemiche di werden, trasformazioni con passivi complessi e produzione in registri diversi; adeguare anche il test a tali obiettivi.",
-      "path": "merged.lessons"
+      "kind": "adeguatezza CEFR",
+      "msg": "La lezione introduce distinzioni utili, ma gli esercizi richiedono prevalentemente il riconoscimento di costruzioni di base come il passivo presente, würde + infinito e geworden/worden. Per un'unità C1, aumentare la complessità contestuale e includere distinzioni sottili tra supposizione, previsione e valore modale nelle stesse forme.",
+      "path": "merged.lessons[0].exercises"
+    },
+    {
+      "kind": "adeguatezza CEFR",
+      "msg": "La maggior parte degli esercizi verifica singole desinenze, lessico comune o l'ordinamento di una frase semplice. Per il C1, mantenendo i tipi e il numero di esercizi previsti, usare contesti più articolati e forme sostantivate con casi, determinanti e significati da distinguere nel contesto.",
+      "path": "merged.lessons[1].exercises"
+    },
+    {
+      "kind": "adeguatezza CEFR",
+      "msg": "Il test verifica soprattutto forme isolate e contrasti elementari, come am besten rispetto a äußerst gut. Non accerta in misura sufficiente la padronanza C1 degli argomenti dell'unità. Sostituire alcuni item con frasi contestualizzate che richiedano distinzioni grammaticali e di registro più fini, conservando il formato previsto.",
+      "path": "merged.test.exercises"
     }
   ],
   "lang": "it",

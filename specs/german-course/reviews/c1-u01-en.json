@@ -1,7 +1,23 @@
 {
-  "bundleHash": "6b09100f8b1af8e77d1b1b7aea69ca2fc1cc4aaaf322d879a68028923065f651",
-  "findings": [],
+  "bundleHash": "12ff7a5fcd6e118dd4f5a5ce2480db07724322895cf4a24f8393ba4936ba9ac6",
+  "findings": [
+    {
+      "kind": "livello CEFR",
+      "msg": "La lezione ripassa soprattutto funzioni e forme di base di «werden» attraverso frasi brevi e riconoscimento guidato. Anche la supposizione sul passato è esercitata quasi sempre con lo stesso esempio. Per C1, aggiungere distinzioni contestuali tra previsione, supposizione e passivo e frasi con maggiore complessità sintattica, mantenendo il formato degli esercizi.",
+      "path": "merged.lessons[0].exercises"
+    },
+    {
+      "kind": "livello CEFR",
+      "msg": "Gli esercizi si concentrano prevalentemente su declinazioni isolate e frasi elementari, senza portare l'uso degli aggettivi sostantivati alla complessità attesa a C1. Introdurre contesti più articolati, variazioni di caso e numero e scelte lessicali o di registro che richiedano un uso avanzato della struttura.",
+      "path": "merged.lessons[1].exercises"
+    },
+    {
+      "kind": "livello CEFR",
+      "msg": "Il test verifica perlopiù il riconoscimento di forme e significati in frasi semplici; non verifica con sufficiente profondità le distinzioni contestuali e di registro attese a C1. Riformulare alcuni quesiti con contesti e alternative più sfumati, mantenendo tipi e numero di esercizi.",
+      "path": "merged.test.exercises"
+    }
+  ],
   "lang": "en",
   "unit": "c1-u01",
-  "verdict": "pass"
+  "verdict": "fail"
 }

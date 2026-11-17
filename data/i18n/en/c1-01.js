@@ -28,13 +28,13 @@ LINGUAI.addStrings("en", {
         p: "In the Perfekt the full verb uses <strong>geworden</strong>: <em>Sie ist Ärztin geworden. Es ist dunkel geworden.</em> The passive uses <strong>worden</strong>, without <em>ge-</em>: <em>Das Haus ist 1950 gebaut worden.</em> Both take <em>sein</em> as their auxiliary."
       },
       {
-        contrast: "English spreads these functions over different words: <em>become</em> or <em>get</em>, <em>will</em> for the future, <em>must</em> or <em>will</em> for suppositions (<em>he must have forgotten</em>, <em>she'll have left already</em>), <em>be</em> in the passive, <em>would</em>. German always has <em>werden</em>, and the function only shows from the rest of the sentence."
+        contrast: "English spreads these functions over different words: <em>become</em> or <em>get</em>, <em>will</em> for the future, <em>must</em> or <em>will</em> for suppositions (<em>he must have forgotten</em>, <em>she'll have left already</em>), <em>be</em> in the passive, <em>would</em>. German always has <em>werden</em>, and the function comes from the construction and the context: the future and a supposition, for example, look the same (<em>Er wird zu Hause sein</em>) and can stay ambiguous without clues such as <em>wohl</em> or a time reference."
       },
       {
         trap: "<em>Der Antrag wird bearbeitet</em> is not a future: it is a present passive, “the application is being processed”. And German <em>bekommen</em> never means “to become”: it means “to get, to receive”. <em>Ich bekomme einen Brief</em> is “I'm getting a letter”."
       },
       {
-        tip: "Faced with a difficult <em>werden</em>, look at the end of the clause: a past participle (<em>bearbeitet</em>) signals the passive, an infinitive (<em>informieren, sein</em>) the future or a supposition, a participle + <em>haben/sein</em> the Futur II."
+        tip: "Faced with a difficult <em>werden</em>, look at the whole construction at the end of the clause: <em>werden</em> with another verb's past participle (<em>wird bearbeitet</em>) is the passive, while <em>geworden</em> (<em>ist müde geworden</em>) is the Perfekt of “become”; <em>werden</em> + participle + <em>haben/sein</em> (<em>wird vergessen haben</em>) the Futur II (a supposition about the past, or an action completed by a future point: <em>Bis morgen werde ich den Bericht fertiggestellt haben</em>), an infinitive (<em>informieren, sein</em>) the future or a supposition."
       }
     ],
     grammar: {
@@ -51,8 +51,8 @@ LINGUAI.addStrings("en", {
         ]
       },
       examples: [
-        { tr: "She is becoming a doctor.", note: "full verb, with a noun" },
-        { tr: "It's slowly getting dark.", note: "full verb, with an adjective" },
+        { tr: "The small start-up has since become a global corporation.", note: "full verb “become” in the Perfekt: aus ... ist ... geworden" },
+        { tr: "It is gradually becoming clear that the project could fail.", note: "full verb with a predicative adjective and a postponed subject clause (dass ...)" },
         { tr: "We will inform you in good time.", note: "future: werden + infinitive" },
         { tr: "The application is being processed right now.", note: "present passive, not a future" },
         { tr: "If I were you, I wouldn't do that.", note: "Konjunktiv II with würde" },
@@ -86,14 +86,14 @@ LINGUAI.addStrings("en", {
       {
         q: "A colleague is worried about a figure in a report. You answer: «Das wird schon stimmen.» What are you saying?",
         opts: [
-          "a reassuring supposition: “it'll be right, I'm sure”",
+          "a reassuring supposition: “you'll see, it'll be right”",
           "a prediction: “it will become right”",
           "a passive: “it is being corrected”"
         ],
         why: "<i>werden</i> + infinitive with <i>schon</i> expresses a reassuring <b>supposition</b>; <i>stimmen</i> is an infinitive, not a participle, so it isn't a passive."
       },
       {
-        q: "Fill in: «Er ist Arzt ___.»",
+        q: "In a business article: «Seit der Fusion ist aus zwei Konkurrenten ein einziger Konzern ___.»",
         opts: [
           "geworden",
           "worden",
@@ -136,7 +136,7 @@ LINGUAI.addStrings("en", {
       },
       {
         tr: "If I had more time, I would become a doctor.",
-        why: "In <i>hätte</i> the <b>ä</b> is short; in <i>Ärztin</i> the <b>ä</b> is long and the <b>z</b> is [ts]; in <i>werden</i> the <b>e</b> is long."
+        why: "In <i>hätte</i> the <b>ä</b> is short; in <i>Ärztin</i> the <b>z</b> is [ts]; in <i>werden</i> the <b>r</b> is vocalized."
       }
     ]
   },
@@ -162,7 +162,7 @@ LINGUAI.addStrings("en", {
         contrast: "English turns adjectives into nouns only in a few fixed cases (<em>the rich, the injured</em>) and otherwise needs a noun (<em>an acquaintance, an employee</em>). German does it freely, and the ending follows the article: <em>der Bekannte</em> but <em>ein Bekannter</em>. And <em>something new</em> is <em>etwas Neues</em>, with a capital and <em>-es</em>."
       },
       {
-        trap: "Don't treat these words as weak masculine nouns: <em>der Bekannte</em> behaves like an adjective, so <em>mit einem Bekannten</em>, but <em>ein Bekannter</em> in the nominative, not <em>ein Bekannte</em>. And in the plural with no article: <em>Wir haben Verwandte in Wien</em>, not <em>Verwandten</em>."
+        trap: "Don't treat these words as weak masculine nouns: <em>der Bekannte</em> behaves like an adjective, so <em>mit einem Bekannten</em>, but <em>ein Bekannter</em> in the nominative, not <em>ein Bekannte</em>. And in the plural with no article, in the nominative and accusative: <em>Wir haben Verwandte in Wien</em>, not <em>Verwandten</em>; in the dative, though, <em>mit Verwandten</em>."
       },
       {
         tip: "If you're unsure of the ending, imagine a noun after the adjective: <em>ein bekannter (Mann)</em> → <em>ein Bekannter</em>; <em>dem bekannten (Mann)</em> → <em>dem Bekannten</em>."
@@ -184,7 +184,7 @@ LINGUAI.addStrings("en", {
         { tr: "An acquaintance recommended the apartment to me.", note: "ein Bekannter: -er after ein" },
         { tr: "The employees are working longer today.", note: "die Angestellten: -en after die" },
         { tr: "The injured man was taken to the hospital.", note: "der Verletzte: a participle used as a noun" },
-        { tr: "I learned something new.", note: "etwas Neues: capital and -es" },
+        { tr: "There's hardly anything more annoying than a missed connection.", note: "etwas + nominalized comparative: etwas Ärgerlicheres" },
         { tr: "There's nothing better than fresh bread.", note: "nichts Besseres: a comparative used as a noun" },
         { tr: "Happy birthday!", note: "alles Gute: -e after alles" }
       ]
@@ -214,22 +214,22 @@ LINGUAI.addStrings("en", {
         why: "Genitive plural after <i>der</i>: the nominalized adjective takes <b>-en</b>, <i>die Zahl der Arbeitslosen</i>. <i>Arbeitslose</i> is the nominative or accusative plural with no article; <i>Arbeitsloser</i> is the singular after <i>ein</i> or the genitive plural with no article (<i>die Zahl Arbeitsloser</i>)."
       },
       {
-        q: "Fill in: «Ich habe mit dem ___ gesprochen.»",
+        q: "In a union statement: «Die Interessen der ___ wurden bei der Umstrukturierung kaum berücksichtigt.»",
         opts: [
-          "Angestellten",
-          "Angestellter",
-          "Angestellte"
+          "Beschäftigten",
+          "Beschäftigte",
+          "Beschäftigter"
         ],
-        why: "After <i>dem</i> (dative) the nominalized adjective takes <b>-en</b>: <i>dem Angestellten</i>."
+        why: "Genitive plural after <i>der</i>: the nominalized participle takes <b>-en</b>, <i>der Beschäftigten</i> (of the employees)."
       },
       {
-        q: "Fill in: «Ich wünsche dir alles ___!»",
+        q: "In a report on the merger: «Den Angestellten stand nach der Übernahme nichts ___ bevor.»",
         opts: [
-          "Gute",
           "Gutes",
+          "Gute",
           "Guten"
         ],
-        why: "After <i>alles</i> the nominalized adjective takes <b>-e</b>: <i>alles Gute</i>."
+        why: "After <i>nichts</i> the nominalized adjective is neuter with <b>-es</b>, even in a complex sentence: <i>nichts Gutes</i> (“nothing good”). <i>Gute</i> follows <i>alles</i>."
       },
       {
         q: "Fill in: «Es gibt nichts ___ als frisches Brot.»",
@@ -265,7 +265,7 @@ LINGUAI.addStrings("en", {
       },
       {
         tr: "Yesterday I ran into an old acquaintance. He told me something interesting: his company is looking for new employees.",
-        why: "In <i>Bekannten</i> the stress falls on <b>kann</b>; in <i>Interessantes</i> on <b>sant</b>; in <i>Angestellte</i> on <b>An</b>."
+        why: "In <i>Bekannten</i> the stress falls on <b>kann</b>; in <i>Interessantes</i> on <b>sant</b>."
       },
       {
         tr: "For adults, admission costs twelve euros.",
@@ -285,7 +285,7 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "A very high degree without comparison",
-        p: "To say that something has a quality to a very high degree, without comparing it to anything, German puts an adverb before the adjective: <em>sehr</em> and, in writing, <strong>höchst</strong>, <strong>äußerst</strong>, <strong>überaus</strong>, <strong>besonders</strong>. <em>Das ist ein höchst interessanter Vorschlag. Die Lage ist äußerst schwierig.</em> To tone it down: <strong>ziemlich</strong> (rather), <em>relativ</em>, <em>einigermaßen</em>."
+        p: "To say that something has a quality to a very high degree, without comparing it to anything, German puts an adverb before the adjective: <em>sehr</em> and, in writing, <strong>höchst</strong>, <strong>äußerst</strong>, <strong>überaus</strong>; <strong>besonders</strong> (“particularly”) instead highlights a quality, often against others. <em>Das ist ein höchst interessanter Vorschlag. Die Lage ist äußerst schwierig.</em> To tone it down: <strong>ziemlich</strong> (rather), <em>relativ</em>, <em>einigermaßen</em>."
       },
       {
         h: "The superlative stays a comparison",
@@ -303,7 +303,7 @@ LINGUAI.addStrings("en", {
     ],
     grammar: {
       title: "Very high degree and superlative",
-      note: "<b>höchst, äußerst, überaus, besonders</b> + adjective: very high degree, no comparison. <b>am</b> + superlative: comparison. <b>aufs</b> + superlative: very high degree, formal writing.",
+      note: "<b>höchst, äußerst, überaus</b> + adjective: very high degree, no comparison (stronger than <i>sehr</i>). <b>besonders</b> instead highlights a quality, often against others. <b>am</b> + superlative: comparison. <b>aufs</b> + superlative: very high degree, formal writing.",
       table: {
         head: ["form", "meaning", "example"],
         rows: [
@@ -338,13 +338,13 @@ LINGUAI.addStrings("en", {
     ],
     exercises: [
       {
-        q: "How do you say “extremely difficult”, without comparison?",
+        q: "In an expert report you want to soften your judgment of the results. Which sentence do you choose?",
         opts: [
-          "äußerst schwierig",
-          "am schwierigsten",
-          "schwierigst"
+          "Die Ergebnisse sind ziemlich widersprüchlich.",
+          "Die Ergebnisse sind äußerst widersprüchlich.",
+          "Die Ergebnisse sind höchst widersprüchlich."
         ],
-        why: "No comparison: adverb + adjective, <b>äußerst schwierig</b>. <i>am schwierigsten</i> is “the most difficult” in a comparison."
+        why: "<b>ziemlich</b> softens (“rather contradictory”); <i>äußerst</i> and <i>höchst</i> make the judgment stronger."
       },
       {
         q: "Of the three routes, this is the shortest: «Von den drei Wegen ist dieser ___.»",
@@ -365,9 +365,9 @@ LINGUAI.addStrings("en", {
         why: "In a formal letter you use <b>äußerst</b> (or <i>höchst</i>); <i>echt super</i> is informal speech. <i>am interessantesten</i> is a comparison, and here there is nothing to compare with."
       },
       {
-        q: "Fill in with the superlative of kurz: «Dieser Weg ist am ___.»",
-        hint: "superlative of kurz, with ü",
-        why: "<b>kürzesten</b>: <i>kurz</i> takes an umlaut and <i>-esten</i> after <i>z</i>."
+        q: "In a review: «Das Ergebnis übertraf selbst die ___ Erwartungen.» (superlative of kühn)",
+        hint: "attributive superlative after die, plural",
+        why: "<b>kühnsten</b>: a superlative used as an attribute, with <i>-en</i> after <i>die</i>; “exceeded even the boldest expectations”."
       },
       {
         q: "Fill in: «Die Aussicht ist ___ beeindruckend.»",
@@ -394,7 +394,7 @@ LINGUAI.addStrings("en", {
       },
       {
         tr: "The new exhibition is really worth seeing. The paintings are highly unusual, and the visitors were exceedingly impressed.",
-        why: "In <i>Ausstellung</i> the stress falls on <b>Aus</b>; in <i>sehenswert</i> the <b>h</b> is silent; in <i>ungewöhnlich</i> the stress falls on <b>un</b>."
+        why: "In <i>Ausstellung</i> the stress falls on <b>Aus</b>; in <i>sehenswert</i> the <b>h</b> is silent; in <i>beeindruckt</i> the <b>ee</b> is not a long vowel: <i>be-</i> and <i>ein</i> are pronounced separately."
       },
       {
         tr: "That is a highly remarkable result.",
@@ -415,7 +415,7 @@ LINGUAI.addStrings("en", {
     ],
     exercises: [
       {
-        q: "Fill in: «Sie ist Ärztin ___.»",
+        q: "Fill in: «Aus der Idee zweier Studenten ist ein erfolgreiches Unternehmen ___.»",
         hint: "participle of werden “to become”",
         why: "<b>geworden</b>: with the meaning “to become” the participle has <i>ge-</i>."
       },
@@ -439,13 +439,13 @@ LINGUAI.addStrings("en", {
         why: "<i>werden</i> + participle + <i>haben</i> is the <b>Futur II</b>: here a supposition about something that has already happened."
       },
       {
-        q: "What does «Er wird wohl krank sein» express?",
+        q: "In a technical report: which sentence states the cause of the fault most cautiously?",
         opts: [
-          "a supposition",
-          "a passive",
-          "an order"
+          "Der Fehler wird wohl bei der Software liegen.",
+          "Der Fehler liegt bei der Software.",
+          "Der Fehler wird bei der Software gesucht."
         ],
-        why: "<i>werden</i> + infinitive with <i>wohl</i>: a <b>supposition</b>, “he's probably ill”."
+        why: "<i>werden</i> + infinitive with <i>wohl</i> presents the cause as a <b>supposition</b>; the second is a statement, the third a passive (“is being looked for”)."
       },
       {
         q: "A guest is late. Which sentence expresses the weakest supposition?",
@@ -504,10 +504,10 @@ LINGUAI.addStrings("en", {
       },
       {
         h: "Position in the clause",
-        p: "Groups with a preposition (<em>zur Verfügung stellen, in Kraft treten, in Frage kommen</em>) behave like a separable particle: the verb is conjugated in its usual place and the group moves toward the end. <em>Die Firma <strong>stellt</strong> uns die Räume <strong>zur Verfügung</strong>.</em> In the Perfekt and with a modal the group comes before the participle or the infinitive: <em>Die Firma hat uns die Räume zur Verfügung gestellt. Das Gesetz soll im Januar in Kraft treten.</em> Groups with a direct object (<em>eine Entscheidung treffen</em>) follow normal word order: <em>Wir treffen heute eine Entscheidung über den Antrag. Wir müssen bis Freitag eine Entscheidung treffen.</em> Negation usually comes before the group: <em>Das kommt nicht in Frage.</em>"
+        p: "As a rule, groups with a preposition (<em>zur Verfügung stellen, in Kraft treten, in Frage kommen</em>) sit toward the end of the clause, much like a separable particle: the verb is conjugated in its usual place and the group completes it. They are not verb prefixes, though, and can take first position for emphasis: <em>In Frage kommt nur diese Lösung.</em> <em>Die Firma <strong>stellt</strong> uns die Räume <strong>zur Verfügung</strong>.</em> In the Perfekt and with a modal the group comes before the participle or the infinitive: <em>Die Firma hat uns die Räume zur Verfügung gestellt. Das Gesetz soll im Januar in Kraft treten.</em> Groups with a direct object (<em>eine Entscheidung treffen</em>) follow normal word order: <em>Wir treffen heute eine Entscheidung über den Antrag. Wir müssen bis Freitag eine Entscheidung treffen.</em> Negation usually comes before the group: <em>Das kommt nicht in Frage.</em>"
       },
       {
-        contrast: "English has similar collocations (<em>make a decision</em>, <em>come into force</em>, <em>take into account</em>), and the verbs often don't match: <em>make a decision</em> is <em>eine Entscheidung treffen</em>, not <em>machen</em>; <em>ask a question</em> is <em>eine Frage stellen</em>; <em>take into account</em> is <em>in Betracht ziehen</em> or <em>berücksichtigen</em>."
+        contrast: "English has similar collocations (<em>make a decision</em>, <em>come into force</em>, <em>take into account</em>), and the verbs often don't match: <em>make a decision</em> is <em>eine Entscheidung treffen</em>, not <em>machen</em>; <em>ask a question</em> is <em>eine Frage stellen</em>; <em>take into account</em> is usually <em>berücksichtigen</em>, while <em>in Betracht ziehen</em> is closer to “consider (as an option)”."
       },
       {
         trap: "<em>in Frage kommen</em> has nothing to do with asking questions: it means “to be an option, to be considered”. <em>Das kommt nicht in Frage</em> is a flat refusal, “that's out of the question”."
@@ -606,7 +606,7 @@ LINGUAI.addStrings("en", {
         why: "<i>Die Leitung hat einen Raum für die Besprechung zur Verfügung gestellt</i>: the group <i>zur Verfügung</i> comes before the participle; the Präteritum <i>stellte ... zur Verfügung</i> works too."
       },
       {
-        tr: "Starting next month, a new rule comes into force at the office. The company is providing laptops to all employees; private devices will then no longer be allowed.",
+        tr: "Starting next month, a new rule comes into force at the office. The company is providing laptops to all employees; private devices will then no longer be an option.",
         why: "In <i>Regelung</i> the stress falls on <b>Re</b>; in <i>Verfügung</i> on <b>fü</b>; in <i>Geräte</i> the <b>ä</b> is long."
       },
       {
@@ -627,7 +627,7 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "Three ways of saying “can be” or “must be”",
-        p: "Besides the passive with a modal (<em>Das Problem kann gelöst werden</em>), German has more compact forms. <strong>sich lassen</strong> + infinitive means “can be done”: <em>Das Problem lässt sich leicht lösen.</em> <strong>sein + zu</strong> + infinitive means “can be” or “must be”, and in notices it is usually an obligation: <em>Der Antrag ist bis Freitag abzugeben.</em> Adjectives in <strong>-bar</strong> say that something can be done: <em>lösbar, machbar, trinkbar</em>."
+        p: "Besides the passive with a modal (<em>Das Problem kann gelöst werden</em>), German has more compact forms. <strong>sich lassen</strong> + infinitive means “can be done”: <em>Das Problem lässt sich leicht lösen.</em> <strong>sein + zu</strong> + infinitive means “can be” or “must be”, and in notices it is usually an obligation: <em>Der Antrag ist bis Freitag abzugeben.</em> Adjectives in <strong>-bar</strong> formed from a verb say that something can be done: <em>lösbar, machbar, trinkbar</em> (not all of them: <em>dankbar</em> and <em>fruchtbar</em> mean something else)."
       },
       {
         h: "zu with separable verbs",
@@ -712,9 +712,9 @@ LINGUAI.addStrings("en", {
         why: "<b>bezahlen</b> (or <i>zahlen</i>): <i>ist zu bezahlen</i>, “is to be paid”."
       },
       {
-        q: "Fill in: «Das Wasser ist nicht ___.»",
-        hint: "that can be drunk, adjective in -bar",
-        why: "<b>trinkbar</b>: “drinkable”; the suffix <i>-bar</i> says that something can be done."
+        q: "In a report: «Die Folgen der Entscheidung sind noch nicht ___.»",
+        hint: "that can be foreseen, adjective in -bar",
+        why: "<b>vorhersehbar</b> (or <i>absehbar</i>, <i>voraussehbar</i>): “foreseeable”; the suffix <i>-bar</i> says that something can be done."
       },
       {
         q: "Complete the notice to the tenants.",
@@ -770,7 +770,7 @@ LINGUAI.addStrings("en", {
     ],
     grammar: {
       title: "Separable or inseparable prefixes, and idioms",
-      note: "<b>Separable</b>: stress on the prefix, prefix splits off, participle with <i>-ge-</i> if the base verb has it (<i>umgefahren</i>). <b>Inseparable</b>: stress on the verb after the prefix (<i>wiederholen</i> with stress on <i>ho</i>), prefix stays attached, participle without <i>ge-</i> (<i>umfahren</i>).",
+      note: "<b>Separable</b>: stress on the prefix, prefix splits off, participle with <i>-ge-</i> if the base verb has it (<i>umgefahren</i>). <b>Inseparable</b>: stress on a syllable after the prefix (<i>wiederholen</i> with stress on <i>ho</i>), prefix stays attached, participle without <i>ge-</i> (<i>umfahren</i>).",
       table: {
         head: ["separable", "meaning", "inseparable", "meaning"],
         rows: [
@@ -800,7 +800,7 @@ LINGUAI.addStrings("en", {
       "to drive without stopping (separable); to drive through (inseparable)",
       "to talk, to chat",
       "to repeat",
-      "to deal with (separable); to avoid, to get around (inseparable)"
+      "mit + dative: to deal with (separable); etwas umgehen: to get around, to avoid (inseparable)"
     ],
     exercises: [
       {
