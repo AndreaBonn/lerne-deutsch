@@ -159,3 +159,42 @@ test.describe("simulazione d'esame", () => {
     expect((await page.textContent(".js-clock-live")).trim()).toBe("");
   });
 });
+
+test("Goethe Teile collect matching answers and every writing production", async ({ page }) => {
+  await page.goto("/index.html#/esame");
+  await page.waitForSelector(".js-start");
+  await page.evaluate(() => {
+    const sections = window.CILS[0].sezioni;
+    sections[0].prove = [
+      { t: "abbina", consegna: "Anzeigen zuordnen", puntiPerItem: 5,
+        annunci: [{ titolo: "Kurs", testo: "Deutsch lernen" }], items: [{ q: "Sprache", a: 0 }, { q: "Musik", a: 1 }] },
+      { t: "jn", consegna: "Meinungen", testo: ["Leserbrief"], puntiPerItem: 5, items: [{ q: "Einverstanden?", a: 0 }] }
+    ];
+    sections[2].prove = [
+      { t: "schreiben", consegna: "Eine Mail", punti: ["Grund nennen"], parole: { min: 2, max: 3 }, richiede: [{ word: "Hallo", etichetta: "Gruß" }] },
+      { t: "schreiben", consegna: "Ein Beitrag", punti: ["Meinung sagen"], parole: { min: 4, max: 6 }, richiede: [{ word: "gern", etichetta: "Meinung" }] }
+    ];
+    sections[3].prove = [{ t: "sprechen", consegna: "Gemeinsam planen", punti: ["Termin finden"] }];
+  });
+  await page.locator(".js-start").first().click();
+  await page.locator('[name="p0i0"][value="0"]').check();
+  await page.locator('[name="p0i1"][value="1"]').check();
+  await page.locator('[name="p1i0"][value="0"]').check();
+  await expect(page.locator('input:checked')).toHaveCount(3);
+  await page.locator(".js-next").click();
+  await page.locator(".js-next").click();
+  await expect(page.locator(".js-text")).toHaveCount(2);
+  await page.locator(".js-text").nth(0).fill("Hallo Anna");
+  await page.locator(".js-text").nth(1).fill("Ich lerne wirklich sehr gern");
+  await expect(page.locator(".js-count").nth(0)).toContainText("2");
+  await expect(page.locator(".js-count").nth(1)).toContainText("6");
+  await page.locator(".js-next").click();
+  await expect(page.locator(".js-body")).toContainText("Termin finden");
+  await page.locator(".js-next").click();
+  await expect(page.locator(".js-body")).toContainText("Gemeinsam planen");
+  await page.locator(".js-next").click();
+  await expect(page.locator(".cils-tab tr").first()).toContainText("15 / 15");
+  await expect(page.locator(".js-lettura-scritta")).toHaveCount(2);
+  await expect(page.locator(".cils-check").nth(0)).toContainText("✓ Gruß");
+  await expect(page.locator(".cils-check").nth(1)).toContainText("✓ Meinung");
+});

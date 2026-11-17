@@ -1,5 +1,5 @@
 /* ============================================================
-   cils-run.js — the exam run: order, answers, result.
+   cils-run.js - the exam run: order, answers, result.
 
    Pulled out of views-cils.js. The split follows what can be checked
    without a browser: `cils.js` scores a single section, this file drives
@@ -9,7 +9,7 @@
 
    Why this is not a cosmetic split: a full simulation takes an hour and
    has four countdowns. A browser test walking through it would have to
-   either really wait that long or substitute the clock — so there was
+   either really wait that long or substitute the clock - so there was
    none, and the whole point tally along with the history entry ran without
    a single check.
 
@@ -17,7 +17,7 @@
    simulator you can return to and correct measures knowledge without time
    pressure, that is the knowledge the student does not have in the room.
 
-   Classic script. Requires cils.js (scoring) and core.js (state) — both
+   Classic script. Requires cils.js (scoring) and core.js (state) - both
    only at call time, not at load time.
    ============================================================ */
 (function (global) {
@@ -85,10 +85,14 @@
       zamknij: zamknij,
       scadla: scadla,
       dalej: dalej,
-      /** A section's answers — for inspection in tests and for scoring. */
+      /** A section's answers - for inspection in tests and for scoring. */
       odpowiedzi: function (id) { return run.risposte[id]; },
       czyScadla: function (id) { return !!run.scaduta[id]; },
-      zapiszScritta: function (traccia, testo) { run.scritta = { traccia: traccia, testo: testo }; },
+      zapiszScritta: function (traccia, testo) {
+        run.scritta = Array.isArray(traccia) ? traccia.map(function (task, index) {
+          return { traccia: task, testo: testo[index] };
+        }) : { traccia: traccia, testo: testo };
+      },
       /**
        * The oral part arrives in TWO steps, and that is the shape of the
        * decision rather than an accident of the code.
@@ -111,7 +115,7 @@
         run.orale.testo = String(testo == null ? "" : testo);
         return true;
       },
-      esito: function () { return global.Cils.esito(run.punti); },
+      esito: function () { return global.Cils.esito(run.szczegoly); },
       get krok() { return run.i + 1; },
       get ile() { return order.length; },
       get skonczone() { return run.i >= order.length; }
@@ -120,7 +124,7 @@
 
   /**
    * A history entry. We keep the points of the two skills the simulator can
-   * score, the list of sections whose time ran out and the verdict — not the
+   * score, the list of sections whose time ran out and the verdict - not the
    * answers: those are an exercise, not history.
    */
   function wpis(run, e, teraz) {
@@ -141,7 +145,7 @@
    * and the schema number does not move. Array.isArray, not truthy: an
    * import with a `cils.runs` of another type passes validation (which only
    * checks the top-level field), and `push` on a string would throw in the
-   * middle of drawing the summary — that is, after an hour of exam.
+   * middle of drawing the summary - that is, after an hour of exam.
    *
    * @returns {boolean} whether the entry went in
    */

@@ -494,7 +494,7 @@ LINGUAI.addUI("it", {
   "cils.resultTitle": "Risultato",
   "cils.notMeasured": "non conteggiato qui",
   "cils.expiredMark": "(tempo scaduto)",
-  "cils.threshold": "Soglia: {n} punti su {max} per ogni abilità.",
+  "cils.threshold": "Soglia: {n}% per ciascun modulo misurato.",
   "cils.verdictBelow": "Almeno un'abilità conteggiata è sotto la soglia del simulatore. Riprendi quella parte e riprova. Questa anteprima non dà un esito ufficiale.",
   "cils.verdictUnknown": "Le abilità conteggiate sono sopra la soglia del simulatore. Scrittura e parlato non sono valutati: il risultato complessivo resta indeterminato.",
   "cils.writingNotScored": "Senza punteggio: si verifica solo la presenza dei requisiti della traccia.",

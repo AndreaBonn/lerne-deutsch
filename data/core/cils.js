@@ -15,9 +15,16 @@
    The three unwritten sections stay as empty shells; Cils.conforme reports
    them as incomplete until their content arrives in later tasks.
 
-   Scoring: a section is worth at most 12 points (Cils.MAX_ABILITA). The one
-   reading task has 6 items worth 2 points each. A wrong answer and an
-   omitted one are worth the same, zero.
+   Every module keeps its Teile in sezioni[].prove. Legacy tracce,
+   presentazione and argomenti remain supported until seed content arrives.
+   Closed tasks carry puntiPerItem; their weighted item sums set the maximum.
+   - vf: items [{q, a:0|1}], testo[] or brani[][] of {it} lines.
+   - mc: items [{q, opts:[], a:index}], optional testo[] or brani[][].
+   - abbina: annunci [{titolo, testo}], items [{q, a:index}]; annunci.length
+     denotes option "0", no suitable advertisement.
+   - jn: testo[] reader letters and items [{q, a:0|1}] for Ja/Nein.
+   - schreiben: {t, consegna, punti:[], parole:{min,max}}, never scored.
+   - sprechen: {t, consegna, punti:[]}, never scored.
    ============================================================ */
 window.CILS_FORMATO = {
   official: false,

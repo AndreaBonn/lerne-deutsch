@@ -1,5 +1,5 @@
 /* ============================================================
-   cils.js — the engine of the CILS B1 Cittadinanza exam simulation.
+   cils.js - the engine of the unofficial Goethe B1 preview.
 
    Pure logic: points, thresholds, verdict. The view (views-cils.js) draws,
    counts time and makes sure a closed section cannot be reopened.
@@ -14,15 +14,10 @@
       the written part comes back as a list of task elements present and
       missing, and the oral part does not enter the result at all.
 
-   2. It does not announce "you passed". Centro CILS does NOT publish the
-      pass threshold for this module: 7/12 comes from their procedural
-      document and from the material of a state examination centre (see
-      cils-formato.md). On top of that, two of the four skills are left
-      ungraded here. That is why the verdict is asymmetric, and that
-      asymmetry is the whole of its honesty:
-        - below the threshold in a measured skill = DEFINITELY not passed;
-        - above the threshold = undetermined, because two skills are missing.
-      A simulator that says "passed" promises something it never checked.
+   2. It does not announce "you passed". The format sets a 60% threshold
+      per measured module. Two of the four modules remain unmeasured, so
+      a result below threshold rules passing out while a result above it
+      remains undetermined.
 
    3. It does not punish guessing, because the exam does not: a wrong answer
       and an omitted one are worth the same, that is zero.
@@ -33,15 +28,6 @@
   "use strict";
 
   var Cils = {};
-
-  /* Values from the official criteria; the threshold from cils-formato.md
-     together with its source. A string key, not a sentence: the view shows
-     the provenance in the student's language and links to the document. */
-  Cils.MAX_ABILITA = 12;
-  Cils.SOGLIA_ABILITA = 7;
-  Cils.MIN_TOTALE = 28;
-  Cils.MAX_TOTALE = 48;
-  Cils.FONTE_SOGLIA = "cils.thresholdSource";
 
   /** The skills in exam order. */
   Object.defineProperty(Cils, "ABILITA", { get: function () {
@@ -157,18 +143,13 @@
       out.totali += p.totali;
       out.max += quantiItem(prove[i]) * (prove[i].puntiPerItem || 0);
     }
-    /* Half points really exist: seven items worth 0.5 make 3.5 and the exam
-       awards them. Nothing is rounded here, we only remove the noise of
-       floating-point addition (0.5 + 0.5 + 0.5 is not always exactly 1.5):
-       the value returns to the nearest half point, which is the true one. */
-    out.punti = Math.round(out.punti * 2) / 2;
     return out;
   }
 
   /**
    * The overall outcome, with its uncertainty stated.
    *
-   * @param {{ascolto:number, lettura:number}} punti
+   * @param {object} punti weighted tallies keyed by measured module id
    * @returns {{abilita:object, verdetto:string, contate:Array, nonContate:Array}}
    */
   function esito(punti) {
@@ -183,9 +164,18 @@
         out.nonContate.push(a);
         return;
       }
-      var v = typeof punti[a] === "number" ? punti[a] : 0;
-      var ok = v >= Cils.SOGLIA_ABILITA;
-      out.abilita[a] = { misurata: true, punti: v, max: Cils.MAX_ABILITA, sopraSoglia: ok };
+      var tally = punti[a] || { punti: 0, max: 0 };
+      /* Nothing to score (empty shell, module never reached): not measured,
+         so it can neither pass nor fail the attempt. */
+      if (!(tally.max > 0)) {
+        out.abilita[a] = { misurata: false };
+        out.nonContate.push(a);
+        return;
+      }
+      var percentage = tally.punti / tally.max;
+      var ok = percentage >= formato().soglia;
+      out.abilita[a] = { misurata: true, punti: tally.punti, max: tally.max,
+        percentuale: percentage, sopraSoglia: ok };
       out.contate.push(a);
       if (!ok) sotto = true;
     });
@@ -207,11 +197,12 @@
    */
   function controlloScritta(traccia, testo) {
     var parole = String(testo || "").trim().split(/\s+/).filter(Boolean).length;
+    var limits = (traccia && traccia.parole) || { min: 80, max: 120 };
     return {
       parole: parole,
-      dentroLimite: parole >= 80 && parole <= 120,
-      minimo: 80,
-      massimo: 120,
+      dentroLimite: parole >= limits.min && parole <= limits.max,
+      minimo: limits.min,
+      massimo: limits.max,
       elementi: ((traccia && traccia.richiede) || []).map(function (e) { return { voce: e }; })
     };
   }

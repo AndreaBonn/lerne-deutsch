@@ -1,10 +1,10 @@
 /* ============================================================
-   cils-report.js — the model may describe the exam papers, never grade them.
+   cils-report.js - the model may describe the exam papers, never grade them.
 
    ADR-009 settled this before any model was involved: listening and reading
    get a real score, because the official criteria give a weight per item;
-   writing and speaking get a DETECTION — what the task asked for, what the
-   text contains — because at the real exam people grade those against a
+   writing and speaking get a DETECTION - what the task asked for, what the
+   text contains - because at the real exam people grade those against a
    rubric, and an automaton putting a number on them produces something that
    looks like a mark without being one. The document also refuses an
    aggregate and refuses to say "you would pass": two of the four skills are
@@ -21,7 +21,7 @@
 
    WHAT IT CANNOT DO, said here rather than discovered later. The filter
    works on numbers and on a closed list of words. A verdict that avoids both
-   — "sei pronto per l'esame" — goes through. The opening is narrower than it
+   - "sei pronto per l'esame" - goes through. The opening is narrower than it
    was and it is not shut, which is why the sentence saying the simulator
    does not grade production stands permanently next to the report instead of
    being replaced by this function.
@@ -42,7 +42,7 @@
    *
    * A CLOSED LIST on purpose. A general rule ("anything that sounds like a
    * judgement") cannot be written down, cannot be tested, and would take
-   * ordinary feedback with it — while this can be read, argued with, and
+   * ordinary feedback with it - while this can be read, argued with, and
    * extended when a real answer gets through.
    *
    * Stems rather than whole words, so that inflections are covered:
@@ -60,7 +60,7 @@
 
   /* A mark wearing its most common clothes. Four shapes, and the last two
      were added after probing this function by hand rather than after a test
-     failed — which is worth saying, because they are the likelier two.
+     failed - which is worth saying, because they are the likelier two.
 
      A model writing Italian to an Italian learner does not write "9/12", it
      writes "9 su 12"; and it may not write a digit at all ("otto punti su
@@ -69,8 +69,8 @@
 
      The denominators in NA_ILE are a CLOSED SET: twelve per skill and
      forty-eight in total, the only two this exam has. Without that, "hai
-     sbagliato due parole su venti" — the very feedback this feature exists
-     to deliver — would be thrown away as a score. */
+     sbagliato due parole su venti" - the very feedback this feature exists
+     to deliver - would be thrown away as a score. */
   var UŁAMEK = /\d+\s*\/\s*\d+/;
   var PROCENT = /\d+\s*%/;
   var PUNKTY = /\d+\s*(punt|point|punkt|puntos|punkte|punkty)/i;
@@ -108,6 +108,8 @@
 
   /** Whether this sentence carries a mark or a verdict. */
   function werdykt(zdanie) {
+    /* Lower-case only: German "Pass" (passport) is an ordinary noun. */
+    if (/\b(?:pass(?:ed)?|Passed)\b/.test(zdanie)) return true;
     if (UŁAMEK.test(zdanie) || PROCENT.test(zdanie) || PUNKTY.test(zdanie)) return true;
     if (NA_ILE.test(zdanie) || NA_SLOWNIE.test(zdanie) || OCENA.test(zdanie)) return true;
     var male = zdanie.toLowerCase();
@@ -150,7 +152,7 @@
        not a nicety: without it "75.5%" was cut into "75." and "5% degli item
        corretti." The second half carried the per cent sign and was dropped,
        the first half carried the number and stayed, so the report read "Hai
-       ottenuto il 75." — a score with its unit removed by the guard that was
+       ottenuto il 75." - a score with its unit removed by the guard that was
        supposed to remove the score. */
     var zdania = s.match(/(?:[^.!?]|\.(?=\d))+[.!?]*/g) || [s];
     var zostaje = [];

@@ -551,7 +551,7 @@ LINGUAI.addUI("en", {
   "cils.resultTitle": "Result",
   "cils.notMeasured": "not counted here",
   "cils.expiredMark": "(time ran out)",
-  "cils.threshold": "Threshold: {n} points out of {max} in each skill.",
+  "cils.threshold": "Threshold: {n}% in each measured module.",
   "cils.verdictBelow": "At least one skill counted here is below the simulator threshold. Practice that section and try again. This preview does not give an official result.",
   "cils.verdictUnknown": "The skills counted here are above the threshold. That does not mean a pass: writing and speaking are not marked by the simulator, and without them the result is undecided.",
   "cils.writingNotScored": "Not scored: we only check whether the whole brief was carried out.",

@@ -1,5 +1,5 @@
 /* ============================================================
-   cils-html.js — the exam simulation markup, without a single event.
+   cils-html.js - the exam simulation markup, without a single event.
 
    ONLY data -> string functions live here. The clock, wiring up handlers,
    recording and the absence of a way back stayed in views-cils.js, and the
@@ -12,7 +12,7 @@
    within one question and different across two, `data-p`/`data-i` matching
    the grid in cils-run.js. As long as these functions sat in the view,
    they could only be checked with Playwright, that is through an hour-long
-   attempt with four countdowns — so in practice they were not checked at
+   attempt with four countdowns - so in practice they were not checked at
    all.
 
    Interface strings and `esc` are read INSIDE the functions, not while the
@@ -96,10 +96,14 @@
 
     if (sez.id === "ascolto") testa += ascolti(p, n);
     if (p.titolo) testa += '<h3 class="cils-titolo">' + esc(p.titolo) + "</h3>";
-    if (p.t === "vf" && p.testo) testa += p.testo.map(function (x) {
+    if (p.t !== "cloze" && p.testo) testa += p.testo.map(function (x) {
       return '<p class="cils-testo">' + esc(x) + "</p>";
     }).join("");
     if (p.t === "cloze") testa += cloze(p);
+    if (p.t === "abbina") testa += (p.annunci || []).map(function (ad, index) {
+      return '<article><h3>' + esc(String.fromCharCode(97 + index) + ". " + ad.titolo) +
+        "</h3><p>" + esc(ad.testo) + "</p></article>";
+    }).join("");
 
     return testa + '<ol class="cils-items">' + (p.items || []).map(function (it, i) {
       return "<li>" + item(p, it, n, i) + "</li>";
@@ -125,15 +129,17 @@
 
   function item(p, it, n, i) {
     var nome = "p" + n + "i" + i;
-    if (p.t === "vf") {
-      return '<span class="cils-q">' + esc(it.q) + "</span>" +
-        '<span class="cils-opts">' + [["V", 0], ["F", 1]].map(function (o) {
-          return '<label><input type="radio" name="' + nome + '" data-p="' + n + '" data-i="' + i +
-            '" value="' + o[1] + '"> ' + o[0] + "</label>";
-        }).join("") + "</span>";
-    }
+    var options = it.opts || [];
+    if (p.t === "vf") options = ["richtig", "falsch"];
+    if (p.t === "jn") options = ["Ja", "Nein"];
+    if (p.t === "abbina") options = (p.annunci || []).map(function (_, index) {
+      return String.fromCharCode(97 + index);
+    }).concat(["0"]);
+    if (p.t === "mc") options = options.map(function (option, index) {
+      return String.fromCharCode(97 + index) + ". " + option;
+    });
     var testa = it.q ? '<span class="cils-q">' + esc(it.q) + "</span>" : "";
-    return testa + '<span class="cils-opts cils-opts--col">' + (it.opts || []).map(function (o, k) {
+    return testa + '<span class="cils-opts cils-opts--col">' + options.map(function (o, k) {
       return '<label><input type="radio" name="' + nome + '" data-p="' + n + '" data-i="' + i +
         '" value="' + k + '"> ' + esc(o) + "</label>";
     }).join("") + "</span>";
@@ -141,7 +147,19 @@
 
   /* ═══════════════════ Written production ═══════════════════ */
 
+  function productionPrompt(task, index) {
+    return '<h2 class="cils-h">' + esc(t("cils.testN", { n: index + 1 })) + "</h2>" +
+      '<p class="cils-consegna">' + esc(task.consegna) + "</p><ul>" +
+      (task.punti || []).map(function (point) { return "<li>" + esc(point) + "</li>"; }).join("") + "</ul>";
+  }
+
   function corpoScritto(sez) {
+    if (sez.prove && sez.prove.length) return '<div class="js-body">' + sez.prove.map(function (task, index) {
+      return '<div class="card">' + productionPrompt(task, index) +
+        '<label for="writing-' + index + '" class="sr-only">' + esc(t("cils.testN", { n: index + 1 })) + '</label>' +
+        '<textarea id="writing-' + index + '" class="field cils-ta js-text" rows="10" spellcheck="false"></textarea>' +
+        '<p class="cils-count js-count" role="status" aria-live="polite"></p></div>';
+    }).join("") + "</div>";
     return '<div class="js-body"><div class="card">' +
       '<p class="cils-consegna">' + esc(sez.consegna) + "</p>" +
       '<div class="cils-tracce">' + (sez.tracce || []).map(function (tr, i) {
@@ -161,13 +179,14 @@
   function corpoOrale(sez, powod) {
     return '<div class="js-body"><div class="card">' +
       '<p class="callout callout--info"><b>' + esc(t("cils.oralLabel")) + "</b> " + esc(t("cils.oralNotScored")) + "</p>" +
+      (sez.prove && sez.prove.length ? sez.prove.map(productionPrompt).join("") :
       "<h3 class=\"cils-h\">" + esc(t("cils.oralIntro")) + "</h3><ul class=\"cils-list\">" +
       (sez.presentazione || []).map(function (q) { return "<li>" + esc(q) + "</li>"; }).join("") + "</ul>" +
       "<h3 class=\"cils-h\">" + esc(t("cils.oralTopic")) + "</h3>" +
       '<div class="cils-tracce">' + (sez.argomenti || []).map(function (a, i) {
         return '<label class="cils-traccia"><input type="radio" name="arg" value="' + i + '"' +
           (i === 0 ? " checked" : "") + "> " + esc(a.it) + "</label>";
-      }).join("") + "</div>" +
+      }).join("") + "</div>") +
       (powod ? '<p class="cils-hint">' + esc(t(powod)) + "</p>" :
         '<div class="cils-acts"><button class="btn btn--primary js-rec" aria-pressed="false">' +
         esc(t("cils.record")) + '</button><button class="btn btn--ghost btn--sm js-play-mine" hidden>' +
@@ -185,7 +204,7 @@
    * The field is optional, and that is not softness. What the student writes
    * here is the only thing the course can read of a spoken answer, and a
    * required field would push whoever does not feel like writing into typing
-   * anything at all — which would then be analysed and reported as if it
+   * anything at all - which would then be analysed and reported as if it
    * were their speech.
    */
   function rewizja(ustna, powod) {
@@ -228,12 +247,13 @@
       var scad = czyScadla(a) ? " " + t("cils.expiredMark") : "";
       return "<tr><th>" + esc(t("cils.sec." + a)) + "</th><td>" + esc(val + scad) + "</td></tr>";
     }).join("") + "</tbody></table>" +
-      '<p class="cils-hint">' + esc(t("cils.threshold", { n: Cils.SOGLIA_ABILITA, max: Cils.MAX_ABILITA })) + "</p>";
+      '<p class="cils-hint">' + esc(t("cils.threshold", { n: Cils.formato().soglia * 100 })) + "</p>";
   }
 
   /** The written production card; "" when the student never reached that section. */
   function scritta(pisemna) {
     if (!pisemna) return "";
+    if (Array.isArray(pisemna)) return pisemna.map(scritta).join("");
     var c = global.Cils.controlloScritta(pisemna.traccia, pisemna.testo);
     var wynik = global.Writing.analyse(pisemna.testo, (pisemna.traccia || {}).richiede || []);
     return '<div class="card"><h2 class="cils-h">' + esc(t("cils.sec.scritta")) + "</h2>" +
@@ -264,7 +284,7 @@
    * called this a transcript would be claiming to have heard something.
    *
    * With no text there is nothing to detect, and the card says that instead
-   * of showing five crosses — a row of crosses reads as "you did none of
+   * of showing five crosses - a row of crosses reads as "you did none of
    * this", which is a verdict, and a wrong one.
    */
   function orale(ustna) {

@@ -165,16 +165,16 @@ describe("closed section: vero/falso", () => {
     assert.equal(ile(out, 'name="p0i1"'), 2);
   });
 
-  test("V and F carry the values 0 and 1, in that order", () => {
+  test("richtig and falsch carry the values 0 and 1, in that order", () => {
     const out = html().corpoChiuso(LETTURA);
-    assert.match(out, /value="0"> V<\/label>/);
-    assert.match(out, /value="1"> F<\/label>/);
+    assert.match(out, /value="0"> richtig<\/label>/);
+    assert.match(out, /value="1"> falsch<\/label>/);
   });
 
-  test("V and F stay Italian: this is exam content, not interface copy", () => {
+  test("binary labels stay German: this is exam content", () => {
     const out = html().corpoChiuso(LETTURA);
-    assert.match(out, /> V<\/label>/);
-    assert.match(out, /> F<\/label>/);
+    assert.match(out, /> richtig<\/label>/);
+    assert.match(out, /> falsch<\/label>/);
   });
 
   test("the data-p/data-i grid matches the task and item index", () => {
@@ -330,7 +330,7 @@ describe("oral production", () => {
 
 describe("the abilità table in the summary", () => {
   function esito(box, punti) {
-    return box.sandbox.Cils.esito(punti);
+    return box.sandbox.Cils.esito(Object.fromEntries(Object.entries(punti).map(([id, value]) => [id, { punti: value, max: 12 }])));
   }
 
   test("a skill above the threshold gets a ✓, below it a ✗", () => {
@@ -357,10 +357,10 @@ describe("the abilità table in the summary", () => {
     assert.ok(!bez.includes("cils.expiredMark"), "with time to spare there is no mark");
   });
 
-  test("the threshold and the maximum come from cils.js, not from a literal in the markup", () => {
+  test("the percentage threshold comes from the exam format", () => {
     const box = silnik();
     const out = box.sandbox.CilsHtml.abilita(esito(box, { ascolto: 9 }), () => false);
-    assert.match(out, /cils\.threshold\(max=12,n=7\)/);
+    assert.match(out, /cils\.threshold\(n=60\)/);
   });
 });
 
@@ -426,7 +426,7 @@ describe("the whole summary", () => {
 
   test("a skill below the threshold yields a negative verdict", () => {
     const box = silnik();
-    const e = box.sandbox.Cils.esito({ ascolto: 9, lettura: 3 });
+    const e = box.sandbox.Cils.esito({ ascolto: { punti: 9, max: 12 }, lettura: { punti: 3, max: 12 } });
     const out = box.sandbox.CilsHtml.podsumowanie(e, () => false, null, null);
     assert.equal(e.verdetto, "sotto-soglia");
     assert.ok(out.includes("cils.verdictBelow"), "a negative verdict");
@@ -443,7 +443,7 @@ describe("the whole summary", () => {
        measures two skills out of four, so it has no right to say "you will
        pass". */
     const box = silnik();
-    const e = box.sandbox.Cils.esito({ ascolto: 11, lettura: 10 });
+    const e = box.sandbox.Cils.esito({ ascolto: { punti: 11, max: 12 }, lettura: { punti: 10, max: 12 } });
     const out = box.sandbox.CilsHtml.podsumowanie(e, () => false, null, null);
     assert.ok(out.includes("cils.verdictUnknown"), `verdict: ${out}`);
     assert.ok(!out.includes("cils.verdictBelow"));
@@ -452,7 +452,7 @@ describe("the whole summary", () => {
   test("both ways out are on the screen", () => {
     const box = silnik();
     const out = box.sandbox.CilsHtml.podsumowanie(
-      box.sandbox.Cils.esito({ ascolto: 9, lettura: 9 }), () => false, null, null);
+      box.sandbox.Cils.esito({ ascolto: { punti: 9, max: 12 }, lettura: { punti: 9, max: 12 } }), () => false, null, null);
     assert.ok(out.includes("js-again"), "a fresh attempt");
     assert.ok(out.includes("js-list"), "back to the list");
   });
@@ -460,7 +460,7 @@ describe("the whole summary", () => {
   test("the production cards appear only when the student reached them", () => {
     const box = silnik();
     const H = box.sandbox.CilsHtml;
-    const e = box.sandbox.Cils.esito({ ascolto: 9, lettura: 9 });
+    const e = box.sandbox.Cils.esito({ ascolto: { punti: 9, max: 12 }, lettura: { punti: 9, max: 12 } });
     const zProdukcja = H.podsumowanie(e, () => false, PISEMNA, { argomento: { it: "Il lavoro", richiede: [] }, testo: "Lavoro in fabbrica." });
     const bez = H.podsumowanie(e, () => false, null, null);
     assert.ok(zProdukcja.includes("formula di chiusura"), "the requirement of the written part");
@@ -482,4 +482,39 @@ test("the oral card marks unmet requirements with a cross", () => {
   const argomento = ORALE.argomenti[0];
   assert.match(H.orale({ argomento, testo: "Lavoro in fabbrica." }), /<li>✗ gli orari<\/li>/);
   assert.match(H.orale({ argomento, testo: "Lavoro a turni." }), /<li>✓ gli orari<\/li>/);
+});
+
+test("Goethe closed Teile render texts, ads and independent answer groups", () => {
+  const out = html().corpoChiuso({ id: "lettura", prove: [
+    { t: "mc", testo: ["Lesetext"], items: [{ q: "Wohin?", opts: ["Berlin", "Bonn", "Köln"], a: 1 }] },
+    { t: "abbina", annunci: [{ titolo: "Kurs", testo: "Deutsch lernen" }, { titolo: "Sport", testo: "Schwimmen" }],
+      items: [{ q: "Sprache", a: 0 }, { q: "Musik", a: 2 }] },
+    { t: "jn", testo: ["Leserbrief"], items: [{ q: "Einverstanden?", a: 0 }] }
+  ] });
+  for (const text of ["Lesetext", "Leserbrief", "a. Kurs", "b. Sport", "Deutsch lernen", "Schwimmen"]) assert.ok(out.includes(text), text);
+  for (const i of [0, 1]) {
+    assert.equal(ile(out, `name="p1i${i}"`), 3);
+    assert.equal(ile(out, `data-p="1" data-i="${i}"`), 3);
+  }
+  assert.match(out, /value="2"> 0<\/label>/);
+  assert.match(out, /value="0"> a\. Berlin<\/label>/);
+  assert.match(out, /value="0"> Ja<\/label>/);
+  assert.match(out, /value="1"> Nein<\/label>/);
+});
+
+test("all production Teile have their own prompts and writing fields", () => {
+  const tasks = [
+    { t: "schreiben", consegna: "Eine Mail", punti: ["Grund nennen"], parole: { min: 30, max: 40 } },
+    { t: "schreiben", consegna: "Ein Beitrag", punti: ["Meinung sagen"], parole: { min: 60, max: 80 } }
+  ];
+  const out = html().corpoScritto({ prove: tasks });
+  assert.equal(ile(out, "js-text"), 2);
+  assert.equal(ile(out, "js-count"), 2);
+  assert.match(out, /id="writing-0"/);
+  assert.match(out, /for="writing-1"/);
+  for (const text of ["Eine Mail", "Grund nennen", "Ein Beitrag", "Meinung sagen"]) assert.ok(out.includes(text));
+  const oral = html().corpoOrale({ prove: tasks.map(p => ({ ...p, t: "sprechen" })) }, "rec.errNoMic");
+  assert.ok(oral.includes("Grund nennen"));
+  assert.ok(oral.includes("Meinung sagen"));
+  assert.equal(ile(oral, 'name="arg"'), 0);
 });

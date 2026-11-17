@@ -559,7 +559,7 @@ LINGUAI.addUI("fr", {
   "cils.resultTitle": "Résultat",
   "cils.notMeasured": "non compté ici",
   "cils.expiredMark": "(temps écoulé)",
-  "cils.threshold": "Seuil : {n} points sur {max} par compétence.",
+  "cils.threshold": "Seuil : {n}% par module mesuré.",
   "cils.verdictBelow": "Au moins une compétence évaluée est sous le seuil du simulateur. Reprends cette section et réessaie. Cette version préliminaire ne donne pas de résultat officiel.",
   "cils.verdictUnknown": "Les compétences comptées ici sont au-dessus du seuil. Cela ne veut pas dire réussi : l'écrit et l'oral ne sont pas corrigés par le simulateur, et sans eux le résultat n'est pas tranché.",
   "cils.writingNotScored": "Non noté : on vérifie seulement si la consigne a été traitée en entier.",

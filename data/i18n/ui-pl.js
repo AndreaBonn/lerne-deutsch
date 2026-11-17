@@ -562,7 +562,7 @@ LINGUAI.addUI("pl", {
   "cils.resultTitle": "Wynik",
   "cils.notMeasured": "nieliczone tutaj",
   "cils.expiredMark": "(czas minął)",
-  "cils.threshold": "Próg: {n} punktów na {max} w każdej sprawności.",
+  "cils.threshold": "Próg: {n}% w każdym mierzonym module.",
   "cils.verdictBelow": "Co najmniej jedna z uwzględnionych sprawności jest poniżej progu symulatora. Przećwicz tę sekcję i spróbuj ponownie. Ta wersja wstępna nie daje oficjalnego wyniku.",
   "cils.verdictUnknown": "Sprawności policzone tutaj są powyżej progu. To nie znaczy „zdane”: pisania i mówienia symulator nie ocenia, a bez nich wynik jest nierozstrzygnięty.",
   "cils.writingNotScored": "Bez oceny: sprawdzamy tylko, czy zadanie zostało wykonane w całości.",

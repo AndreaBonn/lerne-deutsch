@@ -211,7 +211,9 @@ describe("the history entry", () => {
     assert.equal(w.punti.lettura, 12);
     assert.equal(w.punti.ascolto, 0, "a section that was not played counts as zero, it does not disappear");
     assert.deepEqual(Array.from(w.scadute), ["lettura"]);
-    assert.equal(w.verdetto, "sotto-soglia");
+    /* The seed's listening module has no items: it is not measured, so the
+       full reading score cannot be turned into a definite "no". */
+    assert.equal(w.verdetto, "indeterminato");
     assert.equal(w.risposte, undefined);
   });
 
@@ -335,4 +337,27 @@ test("the browser load order derives exported orders after data arrives", () => 
   assert.deepEqual(Array.from(C.ABILITA), ["orale"]);
   assert.deepEqual(Array.from(C.PUNTEGGIABILI), []);
   assert.deepEqual(Array.from(CR.ORDINE), ["orale"]);
+});
+
+test("multiple writing tasks preserve separate texts and their task bounds", () => {
+  const run = podejscie(silnik());
+  const tasks = [{ consegna: "Mail", parole: { min: 30, max: 40 } }, { consegna: "Beitrag", parole: { min: 60, max: 80 } }];
+  run.zapiszScritta(tasks, ["Hallo Anna", "Meine Meinung"]);
+  assert.equal(run.dane.scritta.length, 2);
+  assert.equal(run.dane.scritta[0].testo, "Hallo Anna");
+  assert.equal(run.dane.scritta[1].traccia.parole.max, 80);
+  assert.equal(run.dane.scritta[1].testo, "Meine Meinung");
+});
+
+test("run outcomes retain the real weighted maximum instead of twelve", () => {
+  const box = silnik();
+  const section = { id: "lettura", prove: [{ puntiPerItem: 0.3, items: [{ a: 0 }, { a: 1 }] }] };
+  const run = box.sandbox.CilsRun.create({ sezioni: [section] });
+  run.przygotuj(section);
+  run.odpowiedz("lettura", 0, 0, 0);
+  run.odpowiedz("lettura", 0, 1, 1);
+  run.zamknij(section);
+  assert.equal(run.esito().abilita.lettura.punti, 0.6);
+  assert.equal(run.esito().abilita.lettura.max, 0.6);
+  assert.equal(run.esito().abilita.lettura.sopraSoglia, true);
 });

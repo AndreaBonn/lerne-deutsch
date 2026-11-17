@@ -563,7 +563,7 @@ LINGUAI.addUI("es", {
   "cils.resultTitle": "Resultado",
   "cils.notMeasured": "aquí no se cuenta",
   "cils.expiredMark": "(se acabó el tiempo)",
-  "cils.threshold": "Umbral: {n} puntos sobre {max} en cada destreza.",
+  "cils.threshold": "Umbral: {n}% en cada módulo evaluado.",
   "cils.verdictBelow": "Al menos una de las destrezas evaluadas está por debajo del umbral del simulador. Repasa esa sección y vuelve a intentarlo. Esta versión preliminar no ofrece un resultado oficial.",
   "cils.verdictUnknown": "Las destrezas contadas aquí están por encima del umbral. Eso no significa aprobado: la escritura y el habla no las corrige el simulador, y sin ellas el resultado queda sin decidir.",
   "cils.writingNotScored": "Sin nota: solo comprobamos si el encargo se ha hecho entero.",

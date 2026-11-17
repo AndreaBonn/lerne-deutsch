@@ -1,5 +1,5 @@
 /* ============================================================
-   views-cils.js — going through the exam simulation.
+   views-cils.js - going through the exam simulation.
 
    The scoring engine sits in cils.js, the run of a whole attempt (the order
    of the sections, the answer grid, the points, the sections whose time ran
@@ -88,7 +88,7 @@
 
   /* The button that closes a section goes dead the moment it is clicked. A
      double click would hit the same button on the already redrawn section
-     and skip it without a single answer — and it is clicked under a clock,
+     and skip it without a single answer - and it is clicked under a clock,
      so a nervous double click is the rule here, not the exception. */
   function razTylko(przycisk, akcja) {
     przycisk.addEventListener("click", function (e) {
@@ -154,7 +154,7 @@
   /**
    * What happens when the sections run out: first the review, then the report.
    *
-   * The review is skipped for whoever never reached the oral part — a
+   * The review is skipped for whoever never reached the oral part - a
    * student who left after the reading has nothing to listen back to, and a
    * screen asking them to write down what they said would be asking about
    * something that never happened.
@@ -227,26 +227,27 @@
     var scelta = 0;
     set(intestazione(sez) + H.corpoScritto(sez) + H.coda("cils.closeSection"));
 
-    var ta = el().querySelector(".js-text");
-    var licznik = el().querySelector(".js-count");
-    function odswiez() {
-      var n = Writing.wordCount(ta.value);
-      licznik.textContent = t("cils.wordsOf", { n: n, min: 80, max: 120 });
-    }
-    ta.addEventListener("input", odswiez);
-    odswiez();
+    var fields = el().querySelectorAll(".js-text");
+    var counters = el().querySelectorAll(".js-count");
+    fields.forEach(function (field, index) {
+      function refresh() {
+        var task = sez.prove && sez.prove.length ? sez.prove[index] : sez.tracce[scelta];
+        var check = Cils.controlloScritta(task, field.value);
+        counters[index].textContent = t("cils.wordsOf", { n: check.parole, min: check.minimo, max: check.massimo });
+      }
+      field.addEventListener("input", refresh);
+      refresh();
+    });
     el().querySelectorAll('input[name="traccia"]').forEach(function (r) {
       r.addEventListener("change", function () { scelta = Number(r.value); });
     });
-
-    razTylko(el().querySelector(".js-next"), function () {
-      run.zapiszScritta(sez.tracce[scelta], ta.value);
-      avanti();
-    });
-    avviaTimer(sez.minuti * 60, function () {
-      run.zapiszScritta(sez.tracce[scelta], ta.value);
-      scadi(sez.id);
-    });
+    function saveWriting() {
+      if (sez.prove && sez.prove.length) {
+        run.zapiszScritta(sez.prove, Array.prototype.map.call(fields, function (field) { return field.value; }));
+      } else run.zapiszScritta(sez.tracce[scelta], fields[0].value);
+    }
+    razTylko(el().querySelector(".js-next"), function () { saveWriting(); avanti(); });
+    avviaTimer(sez.minuti * 60, function () { saveWriting(); scadi(sez.id); });
   }
 
   /* ---------------- Oral production (not graded) ---------------- */
@@ -261,13 +262,20 @@
       r.addEventListener("change", function () { scelto = Number(r.value); });
     });
     if (!powod) podepnijNagranie();
+    function oralPrompt() {
+      if (!sez.prove || !sez.prove.length) return (sez.argomenti || [])[scelto];
+      return {
+        it: sez.prove.map(function (task) { return [task.consegna].concat(task.punti || []).join(" "); }).join(" "),
+        richiede: sez.prove.reduce(function (requirements, task) { return requirements.concat(task.richiede || []); }, [])
+      };
+    }
 
     razTylko(el().querySelector(".js-next"), function () {
-      run.zapiszOrale((sez.argomenti || [])[scelto]);
+      run.zapiszOrale(oralPrompt());
       avanti();
     });
     avviaTimer(sez.minuti * 60, function () {
-      run.zapiszOrale((sez.argomenti || [])[scelto]);
+      run.zapiszOrale(oralPrompt());
       scadi(sez.id);
     });
   }
@@ -277,9 +285,9 @@
    *
    * OUTSIDE the clock, deliberately. Under a countdown this would be a
    * second written task, and what it would measure is typing speed. The
-   * recording cannot be transcribed for the student — `Audio2.listen` closes
+   * recording cannot be transcribed for the student - `Audio2.listen` closes
    * at the first pause, and it would be contending for a microphone
-   * `MediaRecorder` already holds — so the words are theirs, and the report
+   * `MediaRecorder` already holds - so the words are theirs, and the report
    * says so rather than calling them a transcript.
    *
    * Skipping is a first-class way out: the button says "go to the report",
@@ -380,15 +388,16 @@
       if (typeof poprzednie === "function") poprzednie();
     };
 
-    [
-      { sel: ".js-lettura-scritta", sezione: "scritta", dane: run.dane.scritta,
-        traccia: run.dane.scritta && run.dane.scritta.traccia,
-        testo: run.dane.scritta && run.dane.scritta.testo },
-      { sel: ".js-lettura-orale", sezione: "orale", dane: run.dane.orale,
+    var written = Array.isArray(run.dane.scritta) ? run.dane.scritta : [run.dane.scritta];
+    written.map(function (production, index) {
+      return { sel: ".js-lettura-scritta", index: index, sezione: "scritta", dane: production,
+        traccia: production && production.traccia, testo: production && production.testo };
+    }).concat([
+      { sel: ".js-lettura-orale", index: 0, sezione: "orale", dane: run.dane.orale,
         traccia: run.dane.orale && run.dane.orale.argomento,
         testo: run.dane.orale && run.dane.orale.testo }
-    ].forEach(function (cel) {
-      var box = el().querySelector(cel.sel);
+    ]).forEach(function (cel) {
+      var box = el().querySelectorAll(cel.sel)[cel.index];
       if (!box || !cel.dane || !String(cel.testo || "").trim()) return;
 
       box.classList.add("is-waiting");
@@ -401,7 +410,7 @@
         box.classList.remove("is-waiting");
         /* Nothing to show is an EMPTY box, not a message: the stylesheet
            hides an empty one, so the report closes up as if the reading had
-           never been asked for — which is the report without a key. */
+           never been asked for - which is the report without a key. */
         if (!tekst) { box.textContent = ""; return; }
         /* textContent, never innerHTML: this is the only string on the
            report the course did not write, and it was produced by a model

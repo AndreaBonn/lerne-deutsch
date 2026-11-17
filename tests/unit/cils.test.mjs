@@ -88,30 +88,31 @@ describe("scoring the closed-answer tasks", () => {
 describe("werdykt", () => {
   test("one skill below the threshold settles a fail", () => {
     const C = silnik();
-    const e = C.esito({ ascolto: 12, lettura: 6 });
+    const e = C.esito({ ascolto: { punti: 12, max: 12 }, lettura: { punti: 6, max: 12 } });
     assert.equal(e.verdetto, "sotto-soglia");
     assert.equal(e.abilita.lettura.sopraSoglia, false);
   });
 
   test("everything above the threshold does NOT give a \"passed\" verdict", () => {
     const C = silnik();
-    const e = C.esito({ ascolto: 12, lettura: 12 });
+    const e = C.esito({ ascolto: { punti: 12, max: 12 }, lettura: { punti: 12, max: 12 } });
     assert.equal(e.verdetto, "indeterminato");
     assert.notEqual(e.verdetto, "superato");
   });
 
   test("writing and speaking stay outside the count", () => {
     const C = silnik();
-    const e = C.esito({ ascolto: 9, lettura: 9 });
+    const e = C.esito({ ascolto: { punti: 9, max: 12 }, lettura: { punti: 9, max: 12 } });
     assert.deepEqual(Array.from(e.nonContate), ["scritta", "orale"]);
     assert.equal(e.abilita.scritta.misurata, false);
     assert.equal(e.abilita.orale.misurata, false);
   });
 
-  test("a missing skill score counts as zero, not as the skill being absent", () => {
+  test("a module with items but no answers counts as zero, not as the module being absent", () => {
     const C = silnik();
-    const e = C.esito({ ascolto: 10 });
+    const e = C.esito({ ascolto: { punti: 10, max: 12 }, lettura: { punti: 0, max: 12 } });
     assert.equal(e.abilita.lettura.punti, 0);
+    assert.equal(e.abilita.lettura.misurata, true);
     assert.equal(e.verdetto, "sotto-soglia");
   });
 });
@@ -209,13 +210,13 @@ test("missing section answers score zero out of twelve", () => {
   assert.equal(result.max, 12);
 });
 
-test("seven meets the threshold and six and a half does not", () => {
+test("sixty percent meets the threshold and less does not", () => {
   const C = silnik();
   for (const skill of ["ascolto", "lettura"]) {
-    const passing = C.esito({ ascolto: 7, lettura: 7 });
+    const passing = C.esito({ ascolto: { punti: 7.2, max: 12 }, lettura: { punti: 7.2, max: 12 } });
     assert.equal(passing.abilita[skill].sopraSoglia, true);
     assert.equal(passing.verdetto, "indeterminato");
-    const failing = C.esito({ ascolto: 7, lettura: 7, [skill]: 6.5 });
+    const failing = C.esito({ ascolto: { punti: 7.2, max: 12 }, lettura: { punti: 7.2, max: 12 }, [skill]: { punti: 6.5, max: 12 } });
     assert.equal(failing.abilita[skill].sopraSoglia, false);
     assert.equal(failing.verdetto, "sotto-soglia");
   }
@@ -284,4 +285,35 @@ test("conforme reports each contract violation beside a conforming fixture", () 
   assert.deepEqual(Array.from(C.conforme(C.sim())), [
     "teile: lettura", "incompleta: ascolto", "incompleta: scritta", "incompleta: orale"
   ]);
+});
+
+test("each measured module uses its own weighted maximum and the format threshold", () => {
+  const C = silnik();
+  const e = C.esito({ lettura: { punti: 18, max: 30 }, ascolto: { punti: 11, max: 20 }, scritta: { punti: 100, max: 100 } });
+  assert.equal(e.abilita.lettura.percentuale, 0.6);
+  assert.equal(e.abilita.lettura.sopraSoglia, true);
+  assert.equal(e.abilita.ascolto.sopraSoglia, false);
+  assert.equal(e.verdetto, "sotto-soglia");
+  assert.deepEqual(JSON.parse(JSON.stringify(e.abilita.scritta)), { misurata: false });
+  assert.deepEqual(JSON.parse(JSON.stringify(e.abilita.orale)), { misurata: false });
+  /* A scored module with nothing to score (empty shell, never reached) is
+     not measured: it cannot turn the verdict into a definite "no". */
+  const vuoto = C.esito({ lettura: { punti: 30, max: 30 }, ascolto: { punti: 0, max: 0 } });
+  assert.equal(vuoto.abilita.ascolto.misurata, false);
+  assert.equal(vuoto.verdetto, "indeterminato");
+  assert.ok(vuoto.nonContate.includes("ascolto"));
+  assert.equal(C.esito({ lettura: { punti: 30, max: 30 } }).verdetto, "indeterminato");
+});
+
+test("each schreiben task uses its own inclusive word bounds and detected elements", () => {
+  const C = silnik();
+  const task = { parole: { min: 2, max: 3 }, richiede: [{ word: "Hallo", etichetta: "Gruß" }] };
+  for (const [text, accepted] of [["", false], ["Hallo", false], ["Hallo Anna", true], ["Hallo liebe Anna", true], ["Hallo meine liebe Anna", false]]) {
+    const result = C.controlloScritta(task, text);
+    assert.equal(result.dentroLimite, accepted);
+    assert.equal(result.minimo, 2);
+    assert.equal(result.massimo, 3);
+    assert.equal(result.elementi[0].voce.etichetta, "Gruß");
+    assert.equal(result.punti, undefined);
+  }
 });

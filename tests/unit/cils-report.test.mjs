@@ -195,3 +195,12 @@ describe("cils-report: shape of the answer", () => {
     }
   });
 });
+
+test("Schreiben and Sprechen model marks are stripped while useful feedback survives", () => {
+  const R = raport();
+  for (const mark of ["Schreiben: 70%.", "Schreiben: pass.", "Sprechen: bestanden."]) {
+    assert.equal(R.pulisci(mark + " Der Brief nennt den Grund."), "Der Brief nennt den Grund.");
+  }
+  /* German "Pass" is a passport, not a verdict: the sentence stays. */
+  assert.equal(R.pulisci("Du schreibst, dass dein Pass abgelaufen ist."), "Du schreibst, dass dein Pass abgelaufen ist.");
+});
