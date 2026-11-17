@@ -14,6 +14,7 @@
     "parity": "node scripts/parity.mjs",
     "check:precache": "node scripts/check_precache.mjs",
     "check:swversion": "node scripts/check_swversion.mjs",
+    "check:live": "node scripts/check_live.mjs",
     "lint": "eslint .",
     "serve": "node scripts/serve.mjs",
     "snapshot:target": "node scripts/snapshot_target.mjs",
