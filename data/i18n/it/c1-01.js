@@ -483,5 +483,472 @@ LINGUAI.addStrings("it", {
         why: "In <i>Abgeordneter</i> l'accento cade su <b>Ab</b>; in <i>geworden</i> la <b>o</b> è breve; in <i>Bekannter</i> l'accento cade su <b>kann</b>."
       }
     ]
+  },
+  "unit:c1-u02": {
+    title: "Farcela, cavarsela",
+    grammarNote: "Verbi di funzione (zur Verfügung stellen, in Frage kommen, eine Entscheidung treffen) · sostituti del passivo: sich lassen, sein + zu, aggettivi in -bar · prefissi separabili e inseparabili con senso diverso (umfahren) · modi di dire"
+  },
+  "lesson:c1-u02-l1": {
+    theme: "Lavoro e progetti",
+    title: "I verbi di funzione",
+    objectives: [
+      "capire e usare i verbi di funzione dei testi formali",
+      "scegliere il verbo giusto per il nome (eine Entscheidung treffen)",
+      "collocare il nome del gruppo verso la fine della frase",
+      "leggere un breve avviso o un verbale"
+    ],
+    theory: [
+      {
+        h: "Il nome porta il significato",
+        p: "Nei testi formali molte azioni si dicono con un <strong>nome</strong> che porta il significato e un <strong>verbo</strong> quasi vuoto: <em>eine Entscheidung treffen</em> (decidere), <em>zur Verfügung stellen</em> (mettere a disposizione), <em>in Kraft treten</em> (entrare in vigore), <em>in Frage kommen</em> (essere possibile), <em>zum Ausdruck bringen</em> (esprimere), <em>Rücksicht nehmen auf</em> (avere riguardo per). Il gruppo è fisso: la preposizione e l'articolo non si scelgono."
+      },
+      {
+        h: "Il posto nella frase",
+        p: "Il verbo si coniuga al suo posto, mentre il nome con la sua preposizione va verso la fine, come una particella separabile: <em>Die Firma <strong>stellt</strong> uns die Räume <strong>zur Verfügung</strong>.</em> Al Perfekt il participio va dopo il gruppo: <em>Die Firma hat uns die Räume zur Verfügung gestellt.</em> La negazione di solito precede il gruppo: <em>Das kommt nicht in Frage.</em>"
+      },
+      {
+        contrast: "Molti di questi gruppi esistono anche in italiano con lo stesso schema (<em>mettere a disposizione</em>, <em>entrare in vigore</em>, <em>prendere una decisione</em>), ed è un buon appiglio. Il rischio è il calco quando il verbo non coincide: <em>prendere una decisione</em> è <em>eine Entscheidung treffen</em>, non <em>nehmen</em>; <em>fare una domanda</em> è <em>eine Frage stellen</em>, non <em>machen</em>."
+      },
+      {
+        trap: "<em>in Frage kommen</em> non ha a che fare con le domande: significa «essere possibile, entrare in considerazione». <em>Das kommt nicht in Frage</em> è un rifiuto netto, «non se ne parla»."
+      },
+      {
+        tip: "Impara questi gruppi come blocchi interi, con preposizione e articolo: <em>zur Verfügung</em>, <em>in Kraft</em>, <em>zum Ausdruck</em>. Se ne ricordi solo il nome, il verbo sbagliato arriva subito."
+      }
+    ],
+    grammar: {
+      title: "Verbi di funzione",
+      note: "Nome + verbo quasi vuoto, gruppo fisso. Il verbo si coniuga al suo posto, il nome con la preposizione va verso la fine: <i>Die Firma stellt uns die Räume zur Verfügung.</i>",
+      table: {
+        head: ["verbo di funzione", "significato", "verbo semplice"],
+        rows: [
+          ["eine Entscheidung treffen", "prendere una decisione", "entscheiden"],
+          ["zur Verfügung stellen", "mettere a disposizione", "bereitstellen"],
+          ["in Kraft treten", "entrare in vigore", "gültig werden"],
+          ["in Frage kommen", "essere possibile, entrare in considerazione", "möglich sein"],
+          ["zum Ausdruck bringen", "esprimere", "ausdrücken"],
+          ["Rücksicht nehmen auf", "avere riguardo per", "berücksichtigen"]
+        ]
+      },
+      examples: [
+        { tr: "La ditta ci mette a disposizione i locali.", note: "il nome va verso la fine: zur Verfügung" },
+        { tr: "Dobbiamo prendere una decisione entro venerdì.", note: "treffen, non nehmen" },
+        { tr: "La nuova legge entra in vigore a gennaio.", note: "in Kraft treten" },
+        { tr: "Per questo posto sono in considerazione solo due candidati.", note: "in Frage kommen: essere possibile" },
+        { tr: "Ha espresso chiaramente la sua delusione.", note: "zum Ausdruck bringen, registro formale" },
+        { tr: "Abbiate riguardo per i vicini, per favore.", note: "Rücksicht nehmen auf + accusativo" }
+      ]
+    },
+    vocab: [
+      "il progetto, il proposito",
+      "il provvedimento, la misura",
+      "il permesso, l'autorizzazione",
+      "l'incarico, la commessa",
+      "il termine, la scadenza",
+      "l'influenza, l'influsso",
+      "entrare in vigore",
+      "mettere a disposizione",
+      "essere possibile, entrare in considerazione",
+      "prendere una decisione",
+      "avere riguardo, tenere conto",
+      "esprimere"
+    ],
+    exercises: [
+      {
+        q: "Leggi l'avviso: «Ab dem 1. März tritt die neue Hausordnung in Kraft. Die Verwaltung bittet alle Mieter, Rücksicht auf die Nachbarn zu nehmen.» Che cosa succede il 1° marzo?",
+        opts: [
+          "entra in vigore il nuovo regolamento del condominio",
+          "l'amministrazione prende una decisione sui vicini",
+          "i nuovi inquilini entrano negli appartamenti"
+        ],
+        why: "<i>in Kraft treten</i> significa «entrare in vigore»: dal 1° marzo vale il nuovo regolamento (<i>Hausordnung</i>)."
+      },
+      {
+        q: "In una riunione un collega dice: «Diese Lösung kommt für uns nicht in Frage.» Che cosa intende?",
+        opts: [
+          "che la soluzione è esclusa",
+          "che vuole fare una domanda sulla soluzione",
+          "che la soluzione è ancora in discussione"
+        ],
+        why: "<i>nicht in Frage kommen</i> è un rifiuto netto: la soluzione <b>non è possibile</b>. Non c'entra il fare domande."
+      },
+      {
+        q: "Completa: «Wir müssen bis Freitag eine Entscheidung ___.»",
+        hint: "il verbo di funzione di die Entscheidung",
+        why: "<b>treffen</b>: <i>eine Entscheidung treffen</i>, «prendere una decisione»; non <i>nehmen</i>."
+      },
+      {
+        q: "Completa: «Die Firma stellt den Mitarbeitern Laptops zur ___.»",
+        hint: "zur ... stellen: mettere a disposizione",
+        why: "<b>Verfügung</b>: <i>zur Verfügung stellen</i>, gruppo fisso con <i>zur</i>."
+      },
+      {
+        q: "Completa: «Sie hat ihre Kritik deutlich zum ___ gebracht.»",
+        hint: "zum ... bringen: esprimere",
+        why: "<b>Ausdruck</b>: <i>zum Ausdruck bringen</i>, «esprimere», tipico dello scritto formale."
+      },
+      {
+        q: "Completa il verbale.",
+        tr: "Ieri il consiglio comunale ha preso una decisione importante: la nuova regola entra in vigore a gennaio. Per l'attuazione la città mette a disposizione fondi aggiuntivi.",
+        why: "<i>getroffen</i> (Perfekt di <i>treffen</i>), <i>tritt</i> (con <i>in Kraft</i>), <i>stellt</i> (con <i>zur Verfügung</i>): ogni verbo va con il suo nome."
+      },
+      {
+        q: "Abbina ogni gruppo al suo significato.",
+        pairs: [
+          "entrare in vigore",
+          "essere possibile",
+          "avere riguardo",
+          "mettere a disposizione"
+        ]
+      },
+      {
+        q: "Traduci per un verbale: «La direzione ha messo a disposizione una sala per la riunione.» (die Leitung, der Raum, die Besprechung)",
+        why: "<i>Die Leitung hat einen Raum für die Besprechung zur Verfügung gestellt</i>: il gruppo <i>zur Verfügung</i> va prima del participio; va bene anche il Präteritum <i>stellte ... zur Verfügung</i>."
+      },
+      {
+        tr: "Dal mese prossimo in ufficio entra in vigore una nuova regola. La ditta mette a disposizione di tutti i dipendenti dei portatili; i dispositivi privati non saranno più ammessi.",
+        why: "In <i>Regelung</i> l'accento cade su <b>Re</b>; in <i>Verfügung</i> l'accento cade su <b>fü</b>; in <i>Geräte</i> la <b>ä</b> è lunga."
+      },
+      {
+        tr: "Dobbiamo prendere una decisione già oggi.",
+        why: "In <i>Entscheidung</i> l'accento cade su <b>schei</b> e <b>ei</b> si pronuncia [aɪ]; in <i>treffen</i> la <b>e</b> è breve."
+      }
+    ]
+  },
+  "lesson:c1-u02-l2": {
+    theme: "Pratiche e avvisi",
+    title: "Si può fare, è da sbrigare",
+    objectives: [
+      "usare sich lassen + infinito per «si può»",
+      "capire sein + zu + infinito negli avvisi e nei regolamenti",
+      "riconoscere e formare gli aggettivi in -bar",
+      "riformulare un passivo con un modale"
+    ],
+    theory: [
+      {
+        h: "Tre modi di dire «si può» o «si deve»",
+        p: "Accanto al passivo con un modale (<em>Das Problem kann gelöst werden</em>) il tedesco ha forme più compatte. <strong>sich lassen</strong> + infinito significa «si può»: <em>Das Problem lässt sich leicht lösen.</em> <strong>sein + zu</strong> + infinito significa «si può» o «si deve», e negli avvisi di solito è un obbligo: <em>Der Antrag ist bis Freitag abzugeben.</em> Gli aggettivi in <strong>-bar</strong> dicono che una cosa si può fare: <em>lösbar, machbar, trinkbar</em>."
+      },
+      {
+        h: "zu con i verbi separabili",
+        p: "Con un verbo separabile <em>zu</em> sta fra la particella e il verbo e si scrive attaccato: <em>abgeben → abzugeben, einreichen → einzureichen, ausfüllen → auszufüllen</em>. <em>Das Formular ist vollständig auszufüllen.</em>"
+      },
+      {
+        contrast: "L'italiano ha forme molto vicine: <em>il modulo è da consegnare entro venerdì</em> corrisponde a <em>ist bis Freitag abzugeben</em>, e <em>-abile, -ibile</em> funzionano come <em>-bar</em> (<em>risolvibile</em> = <em>lösbar</em>). <em>sich lassen</em> invece non si traduce alla lettera: <em>Das lässt sich machen</em> è «si può fare», non «si lascia fare»."
+      },
+      {
+        trap: "<em>sein + zu</em> non è un passivo al Perfekt: <em>Die Rechnung ist zu bezahlen</em> significa «la fattura va pagata», mentre <em>Die Rechnung ist bezahlt</em> significa «la fattura è pagata». Il <em>zu</em> cambia tutto."
+      },
+      {
+        tip: "Per capire un <em>sein + zu</em> in un regolamento, prova a sostituirlo con <em>muss ... werden</em>: <em>ist abzugeben</em> = <em>muss abgegeben werden</em>. Se il senso regge, è un obbligo."
+      }
+    ],
+    grammar: {
+      title: "Sostituti del passivo con valore modale",
+      note: "<b>sich lassen</b> + infinito: si può. <b>sein + zu</b> + infinito: si può o si deve (negli avvisi, di solito si deve). <b>-bar</b>: che si può. Con i verbi separabili: <i>abzugeben</i>.",
+      table: {
+        head: ["forma", "equivale a", "esempio"],
+        rows: [
+          ["sich lassen + infinito", "kann ... werden", "Das Problem lässt sich lösen."],
+          ["sein + zu + infinito", "muss / kann ... werden", "Der Antrag ist abzugeben."],
+          ["aggettivo in -bar", "kann ... werden", "Das Problem ist lösbar."],
+          ["man + attivo", "impersonale", "Das macht man so."]
+        ]
+      },
+      examples: [
+        { tr: "Il problema si può risolvere facilmente.", note: "sich lassen + infinito" },
+        { tr: "La domanda è da consegnare entro venerdì.", note: "sein + zu: obbligo" },
+        { tr: "La fattura va pagata entro 14 giorni.", note: "sein + zu negli avvisi" },
+        { tr: "Questo compito è difficilmente risolvibile.", note: "-bar come -ibile" },
+        { tr: "L'acqua non è potabile.", note: "trinkbar" },
+        { tr: "Qui non si può fumare.", note: "passivo con modale, per confronto" }
+      ]
+    },
+    vocab: [
+      "la norma, il regolamento",
+      "la tassa, il diritto (da pagare)",
+      "il certificato, l'attestato",
+      "la prova, la documentazione",
+      "la fattura, il conto",
+      "i documenti, la documentazione (plurale)",
+      "sbrigare, occuparsi di",
+      "presentare, inoltrare (una domanda)",
+      "compilare",
+      "risolvibile",
+      "fattibile",
+      "ammesso, consentito"
+    ],
+    exercises: [
+      {
+        q: "Leggi l'avviso: «Die Unterlagen sind bis zum 15. Mai beim Amt einzureichen.» Che cosa significa?",
+        opts: [
+          "i documenti devono essere presentati all'ufficio entro il 15 maggio",
+          "i documenti si possono presentare dopo il 15 maggio",
+          "l'ufficio invierà i documenti entro il 15 maggio"
+        ],
+        why: "<i>sind ... einzureichen</i> è <i>sein + zu</i>: in un avviso esprime un <b>obbligo</b>, «vanno presentati»."
+      },
+      {
+        q: "Un cliente ti chiede di anticipare una consegna. Rispondi: «Das lässt sich machen.» Che cosa gli dici?",
+        opts: [
+          "che si può fare",
+          "che non lo farai",
+          "che qualcuno ti lascia farlo"
+        ],
+        why: "<i>Das lässt sich machen</i> = <i>Das kann gemacht werden</i>: accetti, «si può fare»."
+      },
+      {
+        q: "Quale frase ha lo stesso significato di «Das Problem kann leicht gelöst werden»?",
+        opts: [
+          "Das Problem lässt sich leicht lösen.",
+          "Das Problem lässt leicht lösen.",
+          "Das Problem ist leicht gelöst worden."
+        ],
+        why: "<b>sich lassen</b> + infinito equivale a <i>kann ... werden</i>; senza <i>sich</i> la frase non funziona, e la terza è un Perfekt passivo con un altro significato."
+      },
+      {
+        q: "Completa l'avviso: «Die Rechnung ist innerhalb von 14 Tagen zu ___.»",
+        hint: "pagare",
+        why: "<b>bezahlen</b> (o <i>zahlen</i>): <i>ist zu bezahlen</i>, «va pagata»."
+      },
+      {
+        q: "Completa: «Das Wasser ist nicht ___.»",
+        hint: "che si può bere, aggettivo in -bar",
+        why: "<b>trinkbar</b>: «potabile»; il suffisso <i>-bar</i> dice che una cosa si può fare."
+      },
+      {
+        q: "Completa l'avviso ai condomini.",
+        tr: "Gentili inquilini, il riscaldamento purtroppo si potrà riparare solo la settimana prossima. Fino ad allora le finestre vanno tenute chiuse. Il guasto però è riparabile: il tecnico viene lunedì.",
+        why: "<i>lässt sich ... reparieren</i> (si può), <i>sind ... zu halten</i> (vanno tenute), <i>behebbar</i> o <i>reparierbar</i> (riparabile)."
+      },
+      {
+        q: "Metti in ordine le parole.",
+        tr: "La domanda è da consegnare in ufficio entro venerdì.",
+        why: "<i>Der Antrag ist bis Freitag beim Amt abzugeben.</i> <i>abzugeben</i> chiude la frase; <i>bis Freitag</i> e <i>beim Amt</i> possono scambiarsi di posto."
+      },
+      {
+        q: "Traduci: «Questo problema non si può risolvere in un giorno.»",
+        why: "<i>Dieses Problem lässt sich nicht an einem Tag lösen</i>; vanno bene anche <i>ist nicht ... zu lösen</i>, <i>kann nicht ... gelöst werden</i> e <i>kann man nicht ... lösen</i>."
+      },
+      {
+        tr: "Gentili signore e signori, il modulo va compilato in ogni sua parte e presentato entro la fine del mese. I documenti mancanti si possono consegnare anche in seguito.",
+        why: "In <i>vollständig</i> la <b>v</b> si pronuncia [f]; in <i>auszufüllen</i> l'accento cade su <b>aus</b>; in <i>nachreichen</i> l'accento cade su <b>nach</b>."
+      },
+      {
+        tr: "Questo si può sicuramente sbrigare entro domani.",
+        why: "In <i>lässt</i> la <b>ä</b> è breve; in <i>bestimmt</i> l'accento cade su <b>stimmt</b>; in <i>erledigen</i> l'accento cade su <b>le</b>."
+      }
+    ]
+  },
+  "lesson:c1-u02-l3": {
+    theme: "Traffico e modi di dire",
+    title: "umfahren o umfahren? Modi di dire",
+    objectives: [
+      "distinguere i prefissi separabili da quelli inseparabili con lo stesso verbo",
+      "capire un notiziario del traffico",
+      "riconoscere e usare alcuni modi di dire frequenti",
+      "capire quando un modo di dire non si traduce alla lettera"
+    ],
+    theory: [
+      {
+        h: "Lo stesso verbo, due verbi",
+        p: "Con <strong>durch-, über-, um-, unter-, wieder-</strong> lo stesso verbo può essere separabile o inseparabile, con significati diversi. <em>Er hat das Schild <strong>umgefahren</strong></em>: l'ha abbattuto con l'auto (separabile, accento su <em>um</em>). <em>Wir haben den Stau <strong>umfahren</strong></em>: l'abbiamo aggirato (inseparabile, accento su <em>fah</em>). Nelle forme coniugate il separabile si stacca (<em>Die Fähre setzt uns über</em>), l'inseparabile no (<em>Sie übersetzt den Text</em>)."
+      },
+      {
+        h: "I modi di dire",
+        p: "I modi di dire (<em>Redewendungen</em>) hanno un senso figurato che non si ricava dalle parole: <em>Das geht mir gegen den Strich</em> (mi dà fastidio), <em>den Nagel auf den Kopf treffen</em> (cogliere nel segno), <em>jemandem auf die Nerven gehen</em> (dare sui nervi), <em>etwas auf die lange Bank schieben</em> (rimandare). Si usano soprattutto nel parlato e nei testi giornalistici; in un testo molto formale si preferisce l'espressione diretta."
+      },
+      {
+        contrast: "L'italiano ha alcuni modi di dire vicini (<em>dare sui nervi</em> = <em>auf die Nerven gehen</em>), ma molti cambiano immagine: <em>cogliere nel segno</em> diventa «colpire il chiodo sulla testa», <em>rimandare alle calende greche</em> diventa «spingere sulla panca lunga». Tradurre parola per parola produce frasi incomprensibili."
+      },
+      {
+        trap: "Con i verbi separabili e inseparabili il participio decide: <em>umgefahren</em> (abbattuto) o <em>umfahren</em> (aggirato). Scrivere <em>Wir haben den Stau umgefahren</em> vuol dire che avete abbattuto la coda, non che l'avete evitata."
+      },
+      {
+        tip: "Quando incontri un modo di dire nuovo, annotalo con una frase intera e una situazione: <em>Er schiebt die Steuererklärung auf die lange Bank.</em> Da solo si dimentica, dentro una scena resta."
+      }
+    ],
+    grammar: {
+      title: "Prefissi separabili o inseparabili, e modi di dire",
+      note: "<b>Separabile</b>: accento sul prefisso, prefisso staccato, participio con <i>-ge-</i> se il verbo base lo prevede (<i>umgefahren</i>). <b>Inseparabile</b>: accento sulla radice, prefisso attaccato, participio senza <i>ge-</i> (<i>umfahren</i>).",
+      table: {
+        head: ["separabile", "significato", "inseparabile", "significato"],
+        rows: [
+          ["Er hat das Schild umgefahren.", "abbattere con l'auto", "Wir haben den Stau umfahren.", "aggirare"],
+          ["Die Fähre setzt uns über.", "traghettare", "Sie hat den Text übersetzt.", "tradurre"],
+          ["Wir sind durchgefahren.", "guidare senza fermarsi", "Wir haben die Schweiz durchfahren.", "attraversare"]
+        ]
+      },
+      examples: [
+        { tr: "Ha abbattuto il cartello stradale con l'auto.", note: "separabile: umgefahren" },
+        { tr: "Abbiamo aggirato la coda.", note: "inseparabile: umfahren" },
+        { tr: "Ha tradotto la lettera in inglese.", note: "inseparabile: übersetzt" },
+        { tr: "Il traghetto ci porta sull'altra riva.", note: "separabile: setzt ... über" },
+        { tr: "Questo mi dà proprio fastidio.", note: "modo di dire: gegen den Strich gehen" },
+        { tr: "Hai colto nel segno.", note: "modo di dire: den Nagel auf den Kopf treffen" }
+      ]
+    },
+    vocab: [
+      "il modo di dire",
+      "il proverbio",
+      "la deviazione, il giro più lungo",
+      "la riva",
+      "la deviazione (stradale)",
+      "la coda, l'ingorgo",
+      "aggirare (inseparabile); abbattere con l'auto (separabile)",
+      "tradurre (inseparabile); traghettare (separabile)",
+      "guidare senza fermarsi (separabile); attraversare (inseparabile)",
+      "conversare, chiacchierare",
+      "ripetere",
+      "saper trattare (separabile); aggirare, eludere (inseparabile)"
+    ],
+    exercises: [
+      {
+        q: "Notiziario del traffico: «Wegen eines Unfalls ist die A8 gesperrt. Autofahrer sollten den Bereich weiträumig umfahren.» Che cosa si consiglia?",
+        opts: [
+          "di aggirare la zona con ampio margine",
+          "di attraversare la zona lentamente",
+          "di abbattere gli ostacoli sulla strada"
+        ],
+        why: "Qui <i>umfahren</i> è inseparabile (accento su <i>fah</i>): «aggirare». <i>weiträumig</i> significa «con ampio margine»."
+      },
+      {
+        q: "Completa: «Der Fahrer hat das Schild ___.» (l'ha abbattuto con l'auto)",
+        opts: [
+          "umgefahren",
+          "umfahren",
+          "umgefährt"
+        ],
+        why: "Nel senso di «abbattere» <i>umfahren</i> è separabile, quindi il participio ha <i>-ge-</i>: <b>umgefahren</b>."
+      },
+      {
+        q: "In riunione una collega ti dice: «Da hast du den Nagel auf den Kopf getroffen.» Che cosa intende?",
+        opts: [
+          "che hai colto nel segno",
+          "che hai fatto un errore grave",
+          "che hai parlato in modo troppo diretto"
+        ],
+        why: "<i>den Nagel auf den Kopf treffen</i> = «cogliere nel segno»: è un complimento."
+      },
+      {
+        q: "Completa: «Die Fähre ___ uns ans andere Ufer über.»",
+        hint: "übersetzen separabile, terza persona singolare",
+        why: "<b>setzt</b>: nel senso di «traghettare» <i>übersetzen</i> è separabile, e <i>über</i> va in fondo."
+      },
+      {
+        q: "Completa il racconto.",
+        tr: "A causa del cantiere abbiamo dovuto aggirare il centro. Poi abbiamo guidato tutta la notte senza fermarci e siamo arrivati solo al mattino.",
+        why: "<i>umfahren</i> (inseparabile, infinito dopo <i>mussten</i>) e <i>durchgefahren</i> (separabile, participio con <i>-ge-</i>)."
+      },
+      {
+        q: "Abbina ogni modo di dire al suo significato.",
+        pairs: [
+          "dare fastidio, andare contro voglia",
+          "cogliere nel segno",
+          "dare sui nervi",
+          "rimandare"
+        ]
+      },
+      {
+        q: "In quali frasi il prefisso è inseparabile?",
+        opts: [
+          "Wir haben den Stau umfahren.",
+          "Sie hat den Text übersetzt.",
+          "Er hat das Schild umgefahren.",
+          "Die Fähre setzt uns über."
+        ],
+        why: "Le prime due: participio senza <i>ge-</i> (<i>umfahren, übersetzt</i>). Nella terza il participio ha <i>-ge-</i>, nella quarta il prefisso si stacca: sono separabili."
+      },
+      {
+        q: "Traduci: «Questo modo di dire non si può tradurre parola per parola.» (die Redewendung)",
+        why: "<i>Diese Redewendung lässt sich nicht wörtlich übersetzen</i>; vanno bene anche <i>ist nicht wörtlich zu übersetzen</i>, <i>kann man nicht ...</i>, <i>kann nicht ... übersetzt werden</i> e <i>Wort für Wort</i>."
+      },
+      {
+        tr: "A causa di un incidente sulla A8 c'è una deviazione. La cosa migliore è aggirare la zona passando per la statale; calcolate un giro più lungo di venti minuti.",
+        why: "In <i>umfahren</i> qui l'accento cade su <b>fah</b>; in <i>Umleitung</i> l'accento cade su <b>Um</b>; in <i>Bundesstraße</i> <b>ß</b> si pronuncia [s]."
+      },
+      {
+        tr: "Questo modo di dire si può tradurre a malapena.",
+        why: "In <i>Redewendung</i> l'accento cade su <b>Re</b>; in <i>kaum</i> <b>au</b> si pronuncia [aʊ]; in <i>übersetzen</i> l'accento cade su <b>set</b>."
+      }
+    ]
+  },
+  "lesson:c1-u02-test": {
+    theme: "Verifica",
+    title: "Test: Farcela, cavarsela",
+    objectives: [
+      "verificare i verbi di funzione, i sostituti del passivo e i prefissi separabili e inseparabili"
+    ],
+    theory: [
+      {
+        p: "Dieci domande su tutta l'unità. Si supera con il 70%. Non riguardare le lezioni mentre rispondi: se non ricordi qualcosa, meglio tornare indietro e ripassare."
+      }
+    ],
+    exercises: [
+      {
+        q: "Completa: «Wann ___ das neue Gesetz in Kraft?»",
+        hint: "treten, terza persona singolare",
+        why: "<b>tritt</b>: <i>in Kraft treten</i>, con il cambio vocalico al presente."
+      },
+      {
+        q: "Completa: «Das Problem ___ sich leicht lösen.»",
+        hint: "sich lassen, terza persona singolare",
+        why: "<b>lässt</b>: <i>lässt sich lösen</i> = <i>kann gelöst werden</i>."
+      },
+      {
+        q: "Completa l'avviso: «Der Bericht ist bis Montag ___.»",
+        hint: "abgeben con zu",
+        why: "<b>abzugeben</b>: <i>sein + zu</i>, con <i>zu</i> fra particella e verbo."
+      },
+      {
+        q: "Completa: «Wir haben die Baustelle ___.» (l'abbiamo aggirata)",
+        hint: "umfahren inseparabile, participio",
+        why: "<b>umfahren</b>: nel senso di «aggirare» il verbo è inseparabile e il participio non ha <i>ge-</i>."
+      },
+      {
+        q: "Leggi l'annuncio: «Für die Stelle kommen nur Bewerber mit Erfahrung in Frage.» Chi può essere scelto?",
+        opts: [
+          "solo candidati con esperienza",
+          "tutti i candidati che fanno domande",
+          "nessun candidato per ora"
+        ],
+        why: "<i>in Frage kommen</i> = «essere possibile»: <b>solo chi ha esperienza</b> entra in considerazione."
+      },
+      {
+        q: "Quale frase equivale a «Das kann man nicht ändern»?",
+        opts: [
+          "Das ist nicht zu ändern.",
+          "Das ist nicht geändert.",
+          "Das lässt nicht ändern."
+        ],
+        why: "<b>sein + zu</b>: <i>ist nicht zu ändern</i>, «non si può cambiare». <i>ist nicht geändert</i> descrive uno stato, e a <i>lässt</i> manca <i>sich</i>."
+      },
+      {
+        q: "Una collega dice della riunione del venerdì sera: «Das geht mir gegen den Strich.» Come si sente?",
+        opts: [
+          "infastidita",
+          "contenta",
+          "stanca"
+        ],
+        why: "<i>gegen den Strich gehen</i> = «dare fastidio, andare contro voglia»."
+      },
+      {
+        q: "Abbina ogni gruppo al suo significato.",
+        pairs: [
+          "mettere a disposizione",
+          "prendere una decisione",
+          "essere possibile",
+          "esprimere"
+        ]
+      },
+      {
+        tr: "Da gennaio entra in vigore una nuova norma: tutte le domande vanno presentate online. A questo scopo la città mette a disposizione dei computer in ogni biblioteca.",
+        why: "In <i>Vorschrift</i> l'accento cade su <b>Vor</b>; in <i>einzureichen</i> l'accento cade su <b>ein</b>; in <i>Bibliothek</i> l'accento cade su <b>thek</b>."
+      },
+      {
+        tr: "I documenti vanno presentati entro la fine del mese.",
+        why: "In <i>Unterlagen</i> l'accento cade su <b>Un</b>; in <i>Monats</i> la <b>o</b> è lunga; in <i>einzureichen</i> <b>ei</b> si pronuncia [aɪ]."
+      }
+    ]
   }
 });

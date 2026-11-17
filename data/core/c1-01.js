@@ -224,5 +224,236 @@ LINGUAI.addUnits("C1", [
         { t: "speak", it: "Ein Bekannter von mir ist Abgeordneter geworden." }
       ]
     }
+  },
+  {
+    id: "c1-u02",
+    icon: "🧩",
+    titleIt: "Zustande bringen",
+    lessons: [
+      {
+        id: "c1-u02-l1",
+        tags: ["g-funktionsverbgefuege"],
+        cefr: "C1",
+        titleIt: "Funktionsverbgefüge",
+        grammar: {
+          examples: [
+            { it: "Die Firma stellt uns die Räume zur Verfügung." },
+            { it: "Wir müssen bis Freitag eine Entscheidung treffen." },
+            { it: "Das neue Gesetz tritt im Januar in Kraft." },
+            { it: "Für diese Stelle kommen nur zwei Bewerber in Frage." },
+            { it: "Sie brachte ihre Enttäuschung deutlich zum Ausdruck." },
+            { it: "Bitte nehmen Sie Rücksicht auf die Nachbarn." }
+          ]
+        },
+        vocab: [
+          { it: "das Vorhaben", plural: "die Vorhaben", ex: "Das Vorhaben wurde vom Stadtrat genehmigt." },
+          { it: "die Maßnahme", plural: "die Maßnahmen", ex: "Die Regierung plant neue Maßnahmen gegen die Inflation." },
+          { it: "die Genehmigung", plural: "die Genehmigungen", ex: "Für den Umbau brauchen wir eine Genehmigung." },
+          { it: "der Auftrag", plural: "die Aufträge", ex: "Die Firma hat einen großen Auftrag bekommen." },
+          { it: "die Frist", plural: "die Fristen", ex: "Die Frist läuft am 30. Juni ab." },
+          { it: "der Einfluss", plural: "die Einflüsse", ex: "Das Wetter hat großen Einfluss auf die Ernte." },
+          { it: "in Kraft treten", ex: "Die Regel tritt am 1. Januar in Kraft." },
+          { it: "zur Verfügung stellen", ex: "Wir stellen Ihnen einen Laptop zur Verfügung." },
+          { it: "in Frage kommen", ex: "Dieser Termin kommt für mich nicht in Frage." },
+          { it: "eine Entscheidung treffen", ex: "Wer trifft hier die Entscheidung?" },
+          { it: "Rücksicht nehmen", ex: "Nimm bitte Rücksicht auf deine Kollegen." },
+          { it: "zum Ausdruck bringen", ex: "Er brachte seinen Dank zum Ausdruck." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["treffen"] },
+          { t: "fill", a: ["Verfügung"] },
+          { t: "fill", a: ["Ausdruck"] },
+          {
+            t: "cloze",
+            text: "Der Stadtrat hat gestern eine wichtige Entscheidung {{1}}: Die neue Regel {{2}} im Januar in Kraft. Für die Umsetzung {{3}} die Stadt zusätzliche Mittel zur Verfügung.",
+            gaps: [["getroffen"], ["tritt"], ["stellt"]]
+          },
+          {
+            t: "match",
+            pairs: [{ it: "in Kraft treten" }, { it: "in Frage kommen" }, { it: "Rücksicht nehmen" }, { it: "zur Verfügung stellen" }]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Die Leitung hat einen Raum für die Besprechung zur Verfügung gestellt",
+              "Die Leitung stellte einen Raum für die Besprechung zur Verfügung",
+              "Die Leitung hat für die Besprechung einen Raum zur Verfügung gestellt",
+              "Die Leitung stellte für die Besprechung einen Raum zur Verfügung"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Ab nächstem Monat tritt im Büro eine neue Regelung in Kraft. Die Firma stellt allen Mitarbeitern Laptops zur Verfügung; private Geräte kommen dann nicht mehr in Frage."
+          },
+          { t: "speak", it: "Wir müssen noch heute eine Entscheidung treffen." }
+        ]
+      },
+      {
+        id: "c1-u02-l2",
+        tags: ["g-passiv"],
+        cefr: "C1",
+        titleIt: "Das lässt sich machen, das ist zu erledigen",
+        grammar: {
+          examples: [
+            { it: "Das Problem lässt sich leicht lösen." },
+            { it: "Der Antrag ist bis Freitag abzugeben." },
+            { it: "Die Rechnung ist innerhalb von 14 Tagen zu bezahlen." },
+            { it: "Diese Aufgabe ist kaum lösbar." },
+            { it: "Das Wasser ist nicht trinkbar." },
+            { it: "Hier darf nicht geraucht werden." }
+          ]
+        },
+        vocab: [
+          { it: "die Vorschrift", plural: "die Vorschriften", ex: "Das ist gegen die Vorschriften." },
+          { it: "die Gebühr", plural: "die Gebühren", ex: "Die Gebühr beträgt 20 Euro." },
+          { it: "die Bescheinigung", plural: "die Bescheinigungen", ex: "Ich brauche eine Bescheinigung vom Arbeitgeber." },
+          { it: "der Nachweis", plural: "die Nachweise", ex: "Als Nachweis genügt eine Kopie." },
+          { it: "die Rechnung", plural: "die Rechnungen", ex: "Die Rechnung ist schon bezahlt." },
+          { it: "die Unterlagen", plural: "-", ex: "Bitte bringen Sie alle Unterlagen mit." },
+          { it: "erledigen", ex: "Das erledige ich morgen." },
+          { it: "einreichen", ex: "Die Bewerbung muss bis Montag eingereicht werden." },
+          { it: "ausfüllen", ex: "Füllen Sie bitte das Formular aus." },
+          { it: "lösbar", ex: "Das Problem ist lösbar." },
+          { it: "machbar", ex: "Der Plan ist machbar." },
+          { it: "zulässig", ex: "Diese Lösung ist nicht zulässig." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["bezahlen", "zahlen"] },
+          { t: "fill", a: ["trinkbar"] },
+          {
+            t: "cloze",
+            text: "Liebe Mieterinnen und Mieter, die Heizung {{1}} sich leider erst nächste Woche reparieren. Bis dahin {{2}} die Fenster geschlossen zu halten. Der Schaden ist aber {{3}}: Der Techniker kommt am Montag.",
+            gaps: [["lässt"], ["sind"], ["behebbar", "reparierbar"]]
+          },
+          {
+            t: "order",
+            tokens: ["Der", "Antrag", "ist", "bis", "Freitag", "beim", "Amt", "abzugeben"],
+            a: ["Der Antrag ist bis Freitag beim Amt abzugeben", "Der Antrag ist beim Amt bis Freitag abzugeben"]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Dieses Problem lässt sich nicht an einem Tag lösen",
+              "Dieses Problem ist nicht an einem Tag zu lösen",
+              "Dieses Problem kann nicht an einem Tag gelöst werden",
+              "Dieses Problem kann man nicht an einem Tag lösen",
+              "Dieses Problem lässt sich nicht in einem Tag lösen",
+              "Dieses Problem ist nicht in einem Tag zu lösen",
+              "Dieses Problem kann nicht in einem Tag gelöst werden",
+              "Dieses Problem kann man nicht in einem Tag lösen",
+              "Das Problem lässt sich nicht an einem Tag lösen",
+              "Das Problem ist nicht an einem Tag zu lösen",
+              "Das Problem kann nicht an einem Tag gelöst werden",
+              "Das Problem kann man nicht an einem Tag lösen",
+              "Das Problem lässt sich nicht in einem Tag lösen",
+              "Das Problem ist nicht in einem Tag zu lösen",
+              "Das Problem kann nicht in einem Tag gelöst werden",
+              "Das Problem kann man nicht in einem Tag lösen"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Sehr geehrte Damen und Herren, das Formular ist vollständig auszufüllen und bis Ende des Monats einzureichen. Fehlende Unterlagen lassen sich auch später nachreichen."
+          },
+          { t: "speak", it: "Das lässt sich bestimmt bis morgen erledigen." }
+        ]
+      },
+      {
+        id: "c1-u02-l3",
+        tags: ["g-trennbare-verben", "g-register"],
+        cefr: "C1",
+        titleIt: "umfahren oder umfahren? Redewendungen",
+        grammar: {
+          examples: [
+            { it: "Er hat das Verkehrsschild umgefahren." },
+            { it: "Wir haben den Stau umfahren." },
+            { it: "Sie hat den Brief ins Englische übersetzt." },
+            { it: "Die Fähre setzt uns ans andere Ufer über." },
+            { it: "Das geht mir gegen den Strich." },
+            { it: "Da hast du den Nagel auf den Kopf getroffen." }
+          ]
+        },
+        vocab: [
+          { it: "die Redewendung", plural: "die Redewendungen", ex: "Diese Redewendung kenne ich nicht." },
+          { it: "das Sprichwort", plural: "die Sprichwörter", ex: "Wie heißt das Sprichwort noch mal?" },
+          { it: "der Umweg", plural: "die Umwege", ex: "Wir haben einen Umweg gemacht." },
+          { it: "das Ufer", plural: "die Ufer", ex: "Am Ufer stehen viele Bäume." },
+          { it: "die Umleitung", plural: "die Umleitungen", ex: "Wegen der Baustelle gibt es eine Umleitung." },
+          { it: "der Stau", plural: "die Staus", ex: "Auf der Autobahn ist ein langer Stau." },
+          { it: "umfahren", ex: "Wir haben die Baustelle umfahren." },
+          { it: "übersetzen", ex: "Kannst du mir den Text übersetzen?" },
+          { it: "durchfahren", ex: "Wir sind die ganze Nacht durchgefahren." },
+          { it: "sich unterhalten", ex: "Wir haben uns lange unterhalten." },
+          { it: "wiederholen", ex: "Können Sie das bitte wiederholen?" },
+          { it: "umgehen", ex: "Sie kann gut mit Kindern umgehen." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["setzt"] },
+          {
+            t: "cloze",
+            text: "Wegen der Baustelle mussten wir die Innenstadt {{1}}. Danach sind wir die ganze Nacht {{2}} und kamen erst am Morgen an.",
+            gaps: [["umfahren"], ["durchgefahren"]]
+          },
+          {
+            t: "match",
+            pairs: [{ it: "gegen den Strich gehen" }, { it: "den Nagel auf den Kopf treffen" }, { it: "auf die Nerven gehen" }, { it: "auf die lange Bank schieben" }]
+          },
+          { t: "multi", a: [0, 1] },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Diese Redewendung lässt sich nicht wörtlich übersetzen",
+              "Diese Redewendung kann man nicht wörtlich übersetzen",
+              "Diese Redewendung ist nicht wörtlich zu übersetzen",
+              "Diese Redewendung kann nicht wörtlich übersetzt werden",
+              "Diese Redewendung lässt sich nicht Wort für Wort übersetzen",
+              "Diese Redewendung kann man nicht Wort für Wort übersetzen",
+              "Diese Redewendung ist nicht Wort für Wort zu übersetzen",
+              "Diese Redewendung kann nicht Wort für Wort übersetzt werden"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Wegen eines Unfalls auf der A8 gibt es eine Umleitung. Am besten umfahren Sie den Bereich über die Bundesstraße; rechnen Sie mit einem Umweg von zwanzig Minuten."
+          },
+          { t: "speak", it: "Diese Redewendung lässt sich kaum übersetzen." }
+        ]
+      }
+    ],
+    test: {
+      id: "c1-u02-test",
+      tags: ["g-funktionsverbgefuege", "g-passiv"],
+      cefr: "C1",
+      titleIt: "Test: Zustande bringen",
+      exercises: [
+        { t: "fill", a: ["tritt"] },
+        { t: "fill", a: ["lässt"] },
+        { t: "fill", a: ["abzugeben"] },
+        { t: "fill", a: ["umfahren"] },
+        { t: "mcq", a: 0 },
+        { t: "mcq", a: 0 },
+        { t: "mcq", a: 0 },
+        {
+          t: "match",
+          pairs: [{ it: "zur Verfügung stellen" }, { it: "eine Entscheidung treffen" }, { it: "in Frage kommen" }, { it: "zum Ausdruck bringen" }]
+        },
+        {
+          t: "listen",
+          it: "Ab Januar tritt eine neue Vorschrift in Kraft: Alle Anträge sind online einzureichen. Die Stadt stellt dafür in jeder Bibliothek Computer zur Verfügung."
+        },
+        { t: "speak", it: "Die Unterlagen sind bis Ende des Monats einzureichen." }
+      ]
+    }
   }
 ]);
