@@ -1,60 +1,20 @@
 {
-  "bundleHash": "bf9ed9530ae6c6ca7c88d6b40497a59b193a1f90e0094d8631a9a080ff2c61a8",
+  "bundleHash": "1f67352725801cae24350ee833117cbefa2c69f3e210395264ff24a4a4703ec4",
   "findings": [
     {
-      "kind": "traduzione",
-      "msg": "«Die gestiegenen Kosten» indica costi già aumentati; «les coûts en hausse» indica invece una crescita in corso. Usare «les coûts qui ont augmenté» o «les coûts accrus». La stessa correzione vale per le traduzioni dell'ascolto della lezione 1 e dell'esercizio orale del test.",
-      "path": "merged.lessons[0].grammar.examples[1].tr"
+      "kind": "Pronuncia",
+      "msg": "L’accento di «eingegangen» cade su «ein», non su «gan». Correggere l’indicazione, altrimenti l’esercizio insegna una pronuncia errata.",
+      "path": "merged.lessons[1].exercises[10].why"
     },
     {
-      "kind": "traduzione",
-      "msg": "«Die ... teilnehmenden Mitglieder stimmten» si riferisce ai membri che partecipavano alla riunione nel passato. Sostituire «qui participent à la séance» con «qui participaient à la séance».",
-      "path": "merged.lessons[0].grammar.examples[3].tr"
+      "kind": "Spiegazione contraddittoria",
+      "msg": "La spiegazione dice che la forma compatta funziona se la risposta è «sì» a tutte le domande, compresa «Devo conservare un tempo o un modo?». Questo contraddice la spiegazione precedente, secondo cui la nominalizzazione può far perdere proprio tali informazioni. Riformulare indicando che, se tempo o modo devono essere espliciti e la forma nominale non li conserva, è preferibile la subordinata.",
+      "path": "merged.lessons[2].theory[1].p"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "Il participio II transitivo attributivo non esprime necessariamente un'azione già conclusa: può anche rendere un passivo in corso, come «die gerade bearbeiteten Anträge» nel test. Presentare «passif et achevé» come tendenza dipendente dal verbo e dal contesto, non come regola generale. Correggere anche la stessa generalizzazione nella teoria.",
-      "path": "merged.lessons[0].grammar.note"
-    },
-    {
-      "kind": "contrasto linguistico",
-      "msg": "Il participio passato francese usato come epiteto si accorda visibilmente in genere e numero, per esempio «les données recueillies». Precisare che il tedesco distingue anche il caso mediante le terminazioni, mentre il francese non ha questa distinzione.",
-      "path": "merged.lessons[0].theory[2].contrast"
-    },
-    {
-      "kind": "progressione",
-      "msg": "La regola secondo cui il participio attributivo con «zu» e le costruzioni più lunghe apparterrebbero al C2 è troppo categorica per una lezione C1. Presentarli come costruzioni formali più complesse, senza assegnarli esclusivamente al C2; correggere anche la stessa affermazione nella nota grammaticale dell'unità.",
-      "path": "merged.lessons[0].theory[1].p"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "La nominalizzazione non trasforma necessariamente sia il soggetto sia l'oggetto in genitivi: gli argomenti possono essere omessi o espressi in altri modi. Riformulare come possibilità contestuale, anche nella teoria corrispondente.",
-      "path": "merged.lessons[1].grammar.note"
-    },
-    {
-      "kind": "contrasto linguistico",
-      "msg": "«Après avoir terminé» è un infinito passato, non un gérondif. Distinguere le due costruzioni francesi ed evitare di suggerire che entrambe siano equivalenti o prive di corrispondenze tedesche.",
-      "path": "merged.lessons[1].theory[2].contrast"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "«Nur dann ..., wenn» può essere reso anche con un gruppo preposizionale che conserva la restrizione, per esempio «Die Ergebnisse sind nur bei einer repräsentativen Stichprobe aussagekräftig». Eliminare l'affermazione che la forza di «nur dann» si perda necessariamente; correggere anche la nota dell'esempio grammaticale.",
-      "path": "merged.lessons[2].exercises[3].why"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "«Sollte» in una condizionale segnala un'eventualità ipotetica, ma non implica necessariamente che sia poco probabile. Sostituire le affermazioni categoriche sulla bassa probabilità con una spiegazione della sfumatura eventuale; lo stesso problema compare nella nota grammaticale, nel secondo quesito, nel suggerimento del secondo completamento e nella nota trap della lezione.",
-      "path": "merged.lessons[2].grammar.examples[2].note"
-    },
-    {
-      "kind": "contrasto linguistico",
-      "msg": "«Au cas où la vérification durerait plus longtemps» è una subordinata francese, non uno strumento compatto che manca al tedesco. Inoltre due soggetti diversi non impongono necessariamente «dass» o «weil»: sono possibili altre subordinate e costruzioni nominali. Riformulare il confronto e usare esempi effettivi di interferenza per francofoni.",
-      "path": "merged.lessons[2].theory[2].contrast"
-    },
-    {
-      "kind": "chiave di risposta",
-      "msg": "La spiegazione propone «mit Abschluss der Prüfung», ma «mit» non figura tra le risposte accettate. Inoltre «mit» indica il momento del completamento, mentre la traduzione richiesta dice «après». Eliminare questa alternativa dalla spiegazione oppure modificare testo e chiave se si intende accettare anche quel significato.",
-      "path": "merged.test.exercises[8].why"
+      "kind": "Risposta ambigua",
+      "msg": "La frase ammette anche «gewesen»: «Die Verhandlungen sind erst im Mai abgeschlossen gewesen», con passivo di stato al Perfekt. La consegna non specifica che si cerca il passivo d’azione. Precisare il significato richiesto oppure accettare e spiegare anche «gewesen».",
+      "path": "merged.test.exercises[1]"
     }
   ],
   "lang": "fr",

@@ -1,80 +1,30 @@
 {
-  "bundleHash": "1ce2245cdef4d42ada8d30bba390017437d44855381734950fb2d8ac2bb9bd98",
+  "bundleHash": "6ab2cac56834433ef0324852762a09f145321c2afcc43ac3d6e00b456cf7e218",
   "findings": [
     {
-      "kind": "traduzione",
-      "msg": "Il Präteritum «stimmten ... zu» descrive un consenso passato, mentre «que participan» lo colloca nel presente. Usare «Los miembros que participaban en la sesión aprobaron la solicitud».",
-      "path": "merged.lessons[0].grammar.examples[3].tr"
+      "kind": "spiegazione grammaticale",
+      "msg": "La forma «werden ... mitgeteilt» è una passiva al presente, non una forma che esprime di per sé il futuro. Può riferirsi al futuro grazie al contesto. Correggere la spiegazione distinguendo la passiva al presente dal Futur I passivo «werden ... mitgeteilt werden».",
+      "path": "merged.test.exercises[9].why"
     },
     {
       "kind": "spiegazione grammaticale",
-      "msg": "Il participio II attributivo di un verbo transitivo non indica sempre un'azione conclusa: «die gerade bearbeiteten Anträge» può descrivere una lavorazione in corso. Distinguere il valore generalmente passivo dalla conclusione, che dipende dal contesto; correggere anche le formulazioni equivalenti nella lezione.",
+      "msg": "La formula «infinitivo + -d» non copre il participio I di «sein»: «seiend», non «seind». Aggiungere l’eccezione sia nella nota sia nella teoria.",
       "path": "merged.lessons[0].grammar.note"
     },
     {
       "kind": "spiegazione grammaticale",
-      "msg": "Non è una regola che il participio debba trovarsi sempre immediatamente prima del sostantivo: possono seguirlo altri attributi, per esempio «die geprüften und freigegebenen Unterlagen». Presentare l'ordine come modello dell'attributo ampliato illustrato, non come vincolo assoluto.",
-      "path": "merged.lessons[0].theory[1].p"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "La relativa al presente non richiede necessariamente il participio I: una relativa passiva al presente può corrispondere al participio II, come «die Anträge, die gerade bearbeitet werden» → «die gerade bearbeiteten Anträge». Specificare che conta anche la diatesi.",
-      "path": "merged.lessons[0].theory[4].tip"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "Soggetto e oggetto non passano entrambi necessariamente al genitivo: possono richiedere complementi preposizionali e la nominalizzazione può rendere ambigua la relazione. Riformulare come possibilità dipendente dal sostantivo e dal contesto; correggere anche grammar.note.",
-      "path": "merged.lessons[1].theory[0].p"
-    },
-    {
-      "kind": "nota contrastiva",
-      "msg": "È falso che il tedesco non disponga di costruzioni con infinito o di equivalenti compatti: «nach Abschluss» e «beim Abschließen» possono rendere relazioni simili, e il tedesco possiede anche il participio presente. Inoltre il complemento del sostantivo non è sempre un genitivo: esistono reggenze preposizionali come «der Bedarf an Fachkräften». Riformulare il confronto con esempi e limiti precisi.",
-      "path": "merged.lessons[1].theory[2].contrast"
+      "msg": "La regola «infinitivo + -d» presenta un’eccezione rilevante: «sein» forma «seiend». Indicarla anche in questa spiegazione.",
+      "path": "merged.lessons[0].theory[0].p"
     },
     {
       "kind": "traduzione",
-      "msg": "«Dado que» introduce una proposizione causale, mentre «angesichts» è una preposizione che regge un sintagma nominale. Sostituire con «ante», «a la vista de» o «en vista de».",
-      "path": "merged.lessons[1].exercises[6].pairs[3].tr"
-    },
-    {
-      "kind": "chiave di risposta",
-      "msg": "La spiegazione accetta «mit Abschluss der Prüfung», ma la seconda lacuna accetta soltanto «nach». Aggiungere «mit» alle alternative oppure rimuoverlo dalla spiegazione.",
-      "path": "merged.test.exercises[8].gaps[1]"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "«Sollte» in questa condizionale presenta l'eventualità in modo distanziato o cautelativo, senza stabilire necessariamente che sia poco probabile. Correggere anche le altre occorrenze che insegnano come obbligatoria la bassa probabilità.",
-      "path": "merged.lessons[2].grammar.examples[2].note"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "La condizione necessaria può essere conservata in forma nominale, per esempio «Nur bei repräsentativer Stichprobe sind die Ergebnisse aussagekräftig». Sostituire l'affermazione secondo cui non sarebbe esprimibile con «bei» e correggere la spiegazione dell'esercizio 4.",
-      "path": "merged.lessons[2].grammar.examples[4].note"
-    },
-    {
-      "kind": "punteggiatura",
-      "msg": "Entrambe le risposte omettono la virgola obbligatoria che separa la subordinata temporale: «Die Auswertung begann, nachdem … hatten» e «Nachdem … hatten, begann die Auswertung». Adeguare anche i token o il trattamento della punteggiatura nell'esercizio.",
-      "path": "neutral.lessons[2].exercises[7].a"
-    },
-    {
-      "kind": "nota contrastiva",
-      "msg": "La spiegazione afferma erroneamente che il tedesco non abbia equivalenti compatti di «tras concluir» e «concluidos los trabajos» e che «um … zu» e «ohne zu» richiedano sempre lo stesso soggetto. Sono possibili, fra l'altro, costruzioni come «nach Abschluss der Arbeiten» e «ohne dass», e il soggetto implicito dell'infinitiva dipende dalla costruzione. Inoltre «en caso de que …» è una subordinata, non un esempio di forma compatta. Riformulare con confronti circoscritti.",
-      "path": "merged.lessons[2].theory[2].contrast"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "«Seitens der Teilnehmenden» non è un sostantivo: è un gruppo preposizionale che esplicita i partecipanti. Descrivere invece il possibile costo di leggibilità della costruzione nominale.",
-      "path": "merged.lessons[2].theory[3].trap"
+      "msg": "«El consejo haya aprobado» lascia senza complemento il verbo spagnolo e non rende chiaramente «zugestimmt hat», cioè l’aver dato il consenso. Usare, per esempio, «cuando el consejo haya dado su aprobación».",
+      "path": "merged.lessons[2].grammar.examples[1].tr"
     },
     {
       "kind": "traduzione",
-      "msg": "«Nach Abschluss der Arbeit» significa «tras la conclusione del lavoro», mentre «Trabajo terminado» elimina la relazione temporale. Usare, per esempio, «Tras concluir el trabajo» anche nel titolo del test.",
-      "path": "merged.title"
-    },
-    {
-      "kind": "traduzione",
-      "msg": "«Entfallen» in questo contesto significa che il finanziamento o la sovvenzione viene meno o cessa di essere concesso; «caduca» suggerisce una scadenza non espressa. Usare «La subvención deja de concederse si …».",
-      "path": "merged.lessons[2].grammar.examples[3].tr"
+      "msg": "«El consejo haya aprobado» non rende chiaramente «zugestimmt hat» e lascia senza complemento il verbo spagnolo. Sostituire con «cuando el consejo haya dado su aprobación».",
+      "path": "merged.lessons[2].exercises[5].tr"
     }
   ],
   "lang": "es",

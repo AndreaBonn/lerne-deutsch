@@ -1,55 +1,65 @@
 {
-  "bundleHash": "7cffe9becb96e6345cb8a484c56d20aab58fe1d407ad9b9b0d95c9e2074260b6",
+  "bundleHash": "051aa3e573ad176cae2fc8b379e924530156aca940e8fedf1fd5840cb9f48bcf",
   "findings": [
     {
-      "kind": "chiave di risposta",
-      "msg": "La spiegazione accetta «mit», ma il secondo spazio accetta solo «nach». Inoltre «mit Abschluss» indica il momento del completamento, mentre la traduzione richiede «dopo». Eliminare «mit» dalla spiegazione oppure modificare consegna e traduzione se si intende accettarlo.",
-      "path": "merged.test.exercises[8].why"
+      "kind": "Spiegazione grammaticale",
+      "msg": "La regola «always stays right before the noun» è troppo assoluta: tra participio attributivo e sostantivo possono comparire altri attributi, per esempio «die geprüften und vollständigen Unterlagen». Limitarla all'ordine del participio rispetto ai suoi complementi nella costruzione illustrata.",
+      "path": "merged.lessons[0].theory[1].p"
     },
     {
-      "kind": "traduzione",
-      "msg": "«Er» significa «he», non «she». Correggere in «He will have finished the report by Friday».",
-      "path": "merged.test.exercises[10].tr"
+      "kind": "Accento lessicale",
+      "msg": "In «abgeschlossen» l'accento cade su «ge», non su «schlos». Correggere l'indicazione di pronuncia.",
+      "path": "merged.lessons[0].exercises[9].why"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "Il participio II attributivo di un verbo transitivo passivo non indica sempre un'azione conclusa: il test stesso usa «die gerade bearbeiteten Anträge» per un'azione in corso. Precisare che può esprimere un processo o uno stato passivo secondo il contesto.",
-      "path": "merged.lessons[0].grammar.note"
+      "kind": "Accento lessicale",
+      "msg": "In «festgelegt» l'accento cade su «ge», non su «fest». Correggere l'indicazione di pronuncia.",
+      "path": "merged.lessons[2].exercises[9].why"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "«Simultaneous» non significa necessariamente «right now»: «die steigenden Kosten» esprime un aumento contemporaneo al riferimento temporale, anche passato o futuro. Correggere la spiegazione e la relativa alternativa.",
-      "path": "merged.lessons[0].exercises[0]"
+      "kind": "Accento lessicale",
+      "msg": "In «fertiggestellt» l'accento principale cade su «ge», non su «fer». Correggere l'indicazione di pronuncia.",
+      "path": "merged.test.exercises[10].why"
     },
     {
-      "kind": "contrasto linguistico",
-      "msg": "L'inglese può collocare prima del nome participi con modificatori liberi, come «rapidly rising costs» o «recently audited documents»; non accade solo in poche espressioni fisse. Riformulare il contrasto distinguendo questi modificatori dalle costruzioni postnominali.",
-      "path": "merged.lessons[0].theory[2].contrast"
+      "kind": "Traduzione",
+      "msg": "«Trotz mehrfacher Mahnung blieb die Zahlung aus» è al passato: «Despite repeated reminders, the payment did not arrive» rende il tempo del testo tedesco. L'attuale present perfect suggerisce un legame con il presente non espresso dall'originale.",
+      "path": "merged.lessons[1].grammar.examples[3].tr"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "Il soggetto e l'oggetto non passano automaticamente entrambi al genitivo: l'agente può essere omesso o espresso con «durch» o un'altra costruzione. Presentare il genitivo come una possibilità, non come regola generale.",
-      "path": "merged.lessons[1].theory[0].p"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "«Nur dann ..., wenn» può essere reso anche con una costruzione nominale esclusiva, per esempio «Die Ergebnisse sind nur bei einer repräsentativen Stichprobe aussagekräftig». Correggere l'affermazione che la forza di «nur dann» non sia esprimibile con «bei».",
-      "path": "merged.lessons[2].exercises[3].why"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "«Sollte» in una condizionale segnala un'eventualità o una cauta ipotesi, ma non implica necessariamente che sia improbabile. Sostituire «unlikely possibility» con una formulazione meno categorica; correggere anche le spiegazioni analoghe negli altri esercizi e nella teoria della lezione.",
-      "path": "merged.lessons[2].grammar.examples[2].note"
-    },
-    {
-      "kind": "contrasto linguistico",
-      "msg": "«Once the work is finished» e «should the review take longer» non sono strumenti che mancano al tedesco: esistono subordinate con «sobald» e la costruzione «Sollte die Prüfung länger dauern». Anche con due soggetti non è sempre necessaria una subordinata con «dass» o «weil». Riformulare il confronto con esempi equivalenti.",
+      "kind": "Spiegazione grammaticale",
+      "msg": "L'affermazione che gli infinitivi con «ohne zu» o «um ... zu» richiedano lo stesso soggetto è troppo rigida: il soggetto implicito può riferirsi a un complemento della principale, come in «Ich bat ihn, das zu tun, ohne ein Wort zu sagen». Spiegare che il referente deve essere recuperabile dal contesto e che spesso coincide con il soggetto della principale.",
       "path": "merged.lessons[2].theory[2].contrast"
     },
     {
-      "kind": "punteggiatura",
-      "msg": "Entrambe le risposte omettono la virgola obbligatoria che separa la subordinata temporale dalla principale. Inserire la virgola nelle soluzioni e prevederla anche nell'esercizio di ordinamento.",
-      "path": "merged.lessons[2].exercises[7].a"
+      "kind": "Chiave di risposta",
+      "msg": "«nachdem» è accettabile nel testo, ma esprime successione temporale e non necessariamente la condizione o l'immediatezza di «only when» nella traduzione proposta. Rimuoverlo dalle alternative oppure precisare che è una possibile riformulazione con sfumatura diversa e adeguare la consegna.",
+      "path": "merged.lessons[2].exercises[5].gaps[0]"
+    },
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "«Nach Abschluss der Prüfung» non richiede che la frase principale e l'azione nominalizzata abbiano lo stesso soggetto: per esempio, «Nach Abschluss der Prüfung veröffentlicht die Behörde den Bericht» è corretto anche se l'esame è stato concluso da altri. Presentare la coincidenza dei soggetti come possibile fattore di chiarezza, non come criterio della forma nominale.",
+      "path": "merged.lessons[2].grammar.note"
+    },
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "«Wenn weitere Unterlagen benötigt werden» significa che servono ulteriori documenti, mentre «Bei Bedarf» lascia più generica la necessità: può riferirsi anche all'esigenza di richiederli per altri motivi. Rendere la corrispondenza meno rigida, ad esempio «Wenn Bedarf besteht, können weitere Unterlagen angefordert werden».",
+      "path": "merged.lessons[1].exercises[2].opts[0]"
+    },
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "«Worden» non si forma eliminando «ge-» dal participio del verbo pieno: è la forma usata come ausiliare del passivo. Presentarla come distinzione d'uso tra «worden» nel passivo e «geworden» con il verbo pieno «werden».",
+      "path": "merged.test.exercises[1].why"
+    },
+    {
+      "kind": "Traduzione",
+      "msg": "«Die von uns vorgesehenen Maßnahmen» può significare misure previste o contemplate, mentre la traduzione «the measures we have planned» corrisponde più precisamente a «geplanten». Aggiungere «or envisaged» alla traduzione oppure distinguere le due soluzioni.",
+      "path": "merged.test.exercises[8].tr"
+    },
+    {
+      "kind": "Progressione CEFR",
+      "msg": "L'affermazione che il Gerundivum e le costruzioni participiali estese complete appartengano al C2 è categorica e rischia di escludere strutture pertinenti anche al C1. Presentarle come contenuti rinviati o approfondimenti successivi, senza attribuirle esclusivamente al C2.",
+      "path": "merged.lessons[0].theory[1].p"
     }
   ],
   "lang": "en",

@@ -1,75 +1,20 @@
 {
-  "bundleHash": "9cd23bf4b719be87aad214afe0ec1a5562527ee4eb0e1f3b38266e127fcc2407",
+  "bundleHash": "dab85b8c680f6a999d113ecb41f0b1e557d39f4da99d12c5a33418f114e46e4c",
   "findings": [
     {
-      "kind": "traduzione",
-      "msg": "Il tedesco è al presente, mentre la traduzione polacca indica un’azione conclusa: usare «Koszty, które wzrosły, są omawiane w sprawozdaniu».",
-      "path": "merged.lessons[0].grammar.examples[1].tr"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "Il participio II attributivo di un verbo transitivo non indica sempre un’azione conclusa: «die gerade bearbeiteten Anträge», presente nel test, può indicare un’azione passiva in corso. Precisare che l’interpretazione temporale dipende dal verbo e dal contesto; correggere anche la teoria e il riepilogo corrispondenti.",
-      "path": "merged.lessons[0].grammar.note"
-    },
-    {
-      "kind": "esercizio ambiguo",
-      "msg": "La richiesta non specifica il participio da usare: «ergriffenen» e «getroffenen» producono entrambe frasi corrette, ma sono accettate solo nel primo spazio; anche «gesenkten» è grammaticalmente possibile nel secondo. Fornire i verbi e vincolare il significato richiesto, oppure ampliare le risposte accettate.",
-      "path": "merged.lessons[0].exercises[5]"
-    },
-    {
-      "kind": "traduzione",
-      "msg": "«Offene Fragen» sono questioni aperte o ancora da chiarire, non necessariamente questioni controverse. Inoltre «wird ... einberufen» è al presente, mentre «zwołano» è passato. Usare per esempio «W celu wyjaśnienia otwartych kwestii zwołuje się posiedzenie» e correggere le traduzioni analoghe negli esercizi della lezione.",
-      "path": "merged.lessons[1].grammar.examples[4].tr"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "Non è una regola generale che soggetto e complemento del verbo diventino entrambi genitivi: possono essere espressi con altre costruzioni oppure omessi. Presentare il genitivo come una possibilità e mostrare almeno un esempio con una diversa costruzione.",
-      "path": "merged.lessons[1].grammar.note"
-    },
-    {
-      "kind": "risposta alternativa",
-      "msg": "«Nach Bedarf» significa «secondo necessità» e non coincide necessariamente con la condizione «in caso di necessità» richiesta dalla traduzione. Accettare «Bei» oppure modificare il contesto e la traduzione per distinguere i due significati.",
-      "path": "merged.lessons[1].exercises[5]"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "«Sollte» in una condizionale presenta un’eventualità ipotetica, spesso cauta, ma non afferma necessariamente che sia poco probabile. Eliminare questa attribuzione anche dalle domande, spiegazioni e note analoghe della lezione.",
-      "path": "merged.lessons[2].grammar.examples[2].note"
-    },
-    {
-      "kind": "traduzione",
-      "msg": "«Dofinansowanie wygasa, gdyby...» combina in modo poco naturale l’indicativo con «gdyby». Usare per esempio «Jeśli warunki ramowe miałyby się zmienić, dofinansowanie wygaśnie».",
-      "path": "merged.lessons[2].grammar.examples[3].tr"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "Il valore esclusivo di «nur dann ..., wenn» può essere conservato in una costruzione nominale, per esempio «nur bei einer repräsentativen Stichprobe». Correggere anche la spiegazione dell’esercizio corrispondente.",
-      "path": "merged.lessons[2].grammar.examples[4].note"
-    },
-    {
-      "kind": "nota di contrasto",
-      "msg": "«Po zakończeniu prac» ha un equivalente tedesco diretto, «nach Abschluss der Arbeiten»; anche l’eventualità successiva può essere resa con una subordinata tedesca. Distinguere l’imiesłów przysłówkowy dalle altre due costruzioni, senza presentarle come mezzi assenti in tedesco. Inoltre «um ... zu» e «ohne ... zu» non richiedono invariabilmente lo stesso soggetto della principale.",
-      "path": "merged.lessons[2].theory[2].contrast"
-    },
-    {
-      "kind": "nota di contrasto",
-      "msg": "«Seitens der Teilnehmenden» identifica esplicitamente i partecipanti: non li nasconde, benché la formulazione possa risultare burocratica. Inoltre «seitens» è una preposizione, non un sostantivo. Riformulare la nota.",
-      "path": "merged.lessons[2].theory[3].trap"
-    },
-    {
       "kind": "chiave di risposta",
-      "msg": "Le risposte accettate omettono la virgola obbligatoria che separa la subordinata con «nachdem». Inserirla in entrambe; se l’interfaccia costruisce la punteggiatura automaticamente, verificare che la frase mostrata la contenga.",
-      "path": "merged.lessons[2].exercises[7].a"
+      "msg": "La risposta «Nach» è accettata, ma la traduzione richiede «Bei Bedarf»; anche la spiegazione riconosce che le espressioni hanno significati diversi. Rimuovere «Nach» oppure modificare il testo polacco e la consegna per ammettere entrambi i significati.",
+      "path": "merged.lessons[1].exercises[5].gaps[1]"
     },
     {
-      "kind": "chiave di risposta",
-      "msg": "La spiegazione indica «mit Abschluss der Prüfung» come alternativa, ma il campo accetta solo «nach». Le due espressioni indicano inoltre rapporti temporali diversi: mantenere «nach» e rimuovere «mit» dalla spiegazione, oppure cambiare consegna e traduzione.",
-      "path": "merged.test.exercises[8]"
+      "kind": "spiegazione grammaticale",
+      "msg": "La regola secondo cui l’imiesłów stoi zawsze bezpośrednio przed rzeczownikiem è troppo assoluta: può essere coordinato o accompagnato da altri attributi, come in «die geprüften und genehmigten Unterlagen». Precisare che negli esempi presentati chiude il proprio gruppo attributivo davanti al sostantivo.",
+      "path": "merged.lessons[0].theory[1].p"
     },
     {
-      "kind": "esercizio ambiguo",
-      "msg": "La frase non specifica che i negoziati siano stati conclusi da qualcuno: «sind ... abgeschlossen» può anche essere una costruzione stativa completa. Aggiungere un contesto che richieda il Perfekt passivo con «worden».",
-      "path": "merged.test.exercises[1]"
+      "kind": "spiegazione grammaticale",
+      "msg": "Il criterio proposto per scegliere la nominalizzazione è incoerente: alla domanda se occorra conservare tempo o modo, una risposta affermativa favorisce il mantenimento della subordinata, non necessariamente la forma compatta. Riformulare le domande o la conclusione.",
+      "path": "merged.lessons[2].theory[1].p"
     }
   ],
   "lang": "pl",

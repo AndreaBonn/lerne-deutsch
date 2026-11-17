@@ -1,50 +1,45 @@
 {
-  "bundleHash": "a53e0cc10b5c2e1d9aee05453bb9298a660770c115892d97ad59a6025118946b",
+  "bundleHash": "b854a4db0ed2b68b63dd8c18774ef6fedd895b8122d439411af4a9b8575c51de",
   "findings": [
     {
-      "kind": "traduzione",
-      "msg": "«Sie» può indicare una donna o più persone, mentre «przeczytał» indica un uomo. Tradurre per esempio «Pewnie już przeczytała wiadomość» oppure esplicitare il plurale.",
-      "path": "merged.lessons[0].grammar.examples[3].tr"
+      "kind": "morfologia",
+      "msg": "Il plurale di «der Verdacht» è «die Verdächte», non «die Verdachte».",
+      "path": "neutral.lessons[0].vocab[1].plural"
     },
     {
       "kind": "traduzione",
-      "msg": "La traduzione attribuisce il messaggio a un uomo, ma «Sie» indica qui una donna o più persone. Usare per esempio «Pewnie już przeczytała wiadomość».",
-      "path": "merged.lessons[0].exercises[7].tr"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "La presenza di sein, haben o di un infinito passato non rende automaticamente soggettivo un modale: «Er muss zu Hause sein» può esprimere un obbligo e «Du musst bis Freitag angekommen sein» una scadenza. Distinguere i significati in base al contesto e includere anche usi soggettivi con verbi di azione, come «Er muss schlafen».",
-      "path": "merged.lessons[1].theory[0].p"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "L'infinito passato e sein non indicano quasi sempre un significato soggettivo, né un verbo di azione al presente indica necessariamente un ordine: «Er muss schlafen» può essere una deduzione. Presentare il contesto come criterio decisivo e aggiungere esempi contrastivi.",
-      "path": "merged.lessons[1].theory[4].tip"
+      "msg": "«Pozornie» suggerisce che la situazione sia solo apparente, mentre «anscheinend» indica qui una deduzione basata su indizi. Usare «jak się zdaje» o «najwyraźniej».",
+      "path": "merged.lessons[1].vocab[11].tr"
     },
     {
       "kind": "traduzione",
-      "msg": "«Czyżbyś znowu zapomniał klucza?» aggiunge «di nuovo», assente nel tedesco. Eliminare «znowu» dalla traduzione.",
-      "path": "merged.lessons[2].grammar.examples[5].tr"
-    },
-    {
-      "kind": "traduzione",
-      "msg": "«Nichts gewusst haben» riferisce la mancata conoscenza al passato; «nic o tym nie wie» la colloca nel presente. Usare «twierdzi, że nic o tym nie wiedział».",
-      "path": "merged.test.exercises[6].tr"
+      "msg": "«Będzie wtedy prawdopodobnie już odjechał» non è una costruzione polacca naturale. Usare, per esempio, «a pociąg przesiadkowy prawdopodobnie już wtedy odjedzie» oppure «do tego czasu prawdopodobnie już odjedzie».",
+      "path": "merged.lessons[0].exercises[9].tr"
     },
     {
       "kind": "spiegazione grammaticale",
-      "msg": "«Werden + infinito + schon» presenta un ordine che non corrisponde all'esempio, dove schon precede l'infinito. Scrivere «werden + schon + bezokolicznik».",
-      "path": "merged.lessons[0].grammar.table.rows[3]"
+      "msg": "L'affermazione che «werden + infinito» serva principalmente a esprimere supposizioni sul presente è troppo generale: la costruzione esprime anche futuro, previsioni e intenzioni. Precisare che può esprimere una supposizione sul presente quando il contesto lo indica.",
+      "path": "merged.lessons[0].theory[0].p"
+    },
+    {
+      "kind": "contrasto linguistico",
+      "msg": "«Niemiecki robi odwrotnie: stawia werden» lascia intendere che il tedesco debba usare werden per esprimere una supposizione, ma può usare anche il presente o il Perfekt con «wohl» o «vermutlich». Presentare Futur I e II come possibilità, non come forme obbligatorie.",
+      "path": "merged.lessons[0].theory[2].contrast"
     },
     {
       "kind": "spiegazione grammaticale",
-      "msg": "Il termine con «bis» non esclude una supposizione: «Bis morgen wird er wohl angekommen sein» può essere una previsione incerta. Precisare che è il contesto a distinguere previsione, supposizione e impegno.",
-      "path": "merged.lessons[0].theory[1].p"
+      "msg": "L'assenza di «wohl» non dimostra che la frase esprima un impegno: il Futur II può esprimere una previsione anche senza questo avverbio. L'interpretazione come promessa dipende dal contesto dell'annuncio.",
+      "path": "merged.lessons[0].exercises[1].why"
     },
     {
       "kind": "spiegazione grammaticale",
-      "msg": "«Abfahren» non seleziona sein semplicemente perché è un verbo di movimento: l'ausiliare dipende anche dall'uso. Precisare che qui è intransitivo e indica la partenza del treno.",
-      "path": "merged.lessons[0].exercises[9].why"
+      "msg": "«Muss» epistemico esprime una conclusione molto probabile, non una certezza assoluta. Sostituire «Dla pewności byłoby muss» con una spiegazione che distingua la forte inferenza dalla certezza.",
+      "path": "merged.test.exercises[3].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La regola secondo cui le particelle stanno dopo i pronomi è troppo assoluta: per esempio «Das hat ja er gesagt» è possibile con «er» contrastivo. Specificare che la posizione dipende anche da accento, funzione informativa e contesto.",
+      "path": "merged.lessons[2].theory[1].p"
     }
   ],
   "lang": "pl",

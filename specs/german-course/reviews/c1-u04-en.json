@@ -1,40 +1,40 @@
 {
-  "bundleHash": "975ae35fd86f356655c051e931b652d95f3e3f778eaa6646d5ae93c15d4048ae",
+  "bundleHash": "7a05d610a4ff1d5e09aa1c0ceaefb3808576c9801a9ba83b1d348fb67752f2ae",
   "findings": [
     {
-      "kind": "traduzione",
-      "msg": "«sie» indica una donna o ragazza, mentre la traduzione dice «he». Correggere in «The lights are off, so she'll be asleep by now».",
-      "path": "merged.lessons[0].grammar.examples[0].tr"
+      "kind": "plural",
+      "msg": "Il plurale indicato «die Verdachte» è errato. Sostituirlo con «die Verdächte»; il plurale è raro.",
+      "path": "neutral.lessons[0].vocab[1].plural"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "La presenza di «sein», «haben» o di un infinito perfetto non rende automaticamente soggettivo il modale: «Er muss zu Hause sein» può esprimere un obbligo e «Er muss gegangen sein» può indicare un obbligo di completamento entro un termine. Anche «Er soll kommen» può riportare una voce a seconda del contesto. Distinguere le letture tramite contesto e significato, non solo tramite la forma dell'infinito.",
-      "path": "merged.lessons[1].theory"
+      "kind": "plural",
+      "msg": "Anche nella versione unita compare il plurale errato «die Verdachte». Correggere in «die Verdächte».",
+      "path": "merged.lessons[0].vocab[1].plural"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "«Er muss nicht krank sein» può significare epistemicamente «non è necessariamente malato»; «he doesn't have to be ill» può invece suggerire l'assenza di un obbligo. Distinguere esplicitamente le due letture e usare «he isn't necessarily ill» per quella epistemica.",
-      "path": "merged.lessons[1].theory[2].trap"
+      "kind": "explanation",
+      "msg": "«werden + infinitive is used above all for a supposition about the present» presenta come funzione prevalente una lettura che dipende dal contesto. La costruzione può anche esprimere futuro, previsione o intenzione. Riformulare spiegando entrambe le letture senza attribuire una prevalenza generale alla supposizione.",
+      "path": "merged.lessons[0].theory[0].p"
     },
     {
-      "kind": "traduzione",
-      "msg": "«ausgerechnet heute» esprime che proprio oggi, fra tutti i giorni possibili, il treno non circola. «really» non rende questo significato: usare per esempio «of all days, today» o «today of all days».",
-      "path": "merged.lessons[2].vocab[9].tr"
+      "kind": "explanation",
+      "msg": "I riferimenti a presente o passato e la presenza di «bis» non determinano da soli una lettura di supposizione o di completamento futuro. Per esempio, «Er wird jetzt arbeiten» può riferirsi a un'azione imminente. Presentarli come indizi da interpretare nel contesto, non come regole determinanti; correggere anche il consiglio in theory[4].tip.",
+      "path": "merged.lessons[0].theory[1].p"
     },
     {
-      "kind": "esercizio ambiguo",
-      "msg": "La situazione specifica sospetto e la spiegazione inglese suggerisce una risposta negativa, mentre «denn» rende la domanda più neutra e non conserva necessariamente quella sfumatura. Limitare la risposta a «etwa» oppure riformulare consegna e suggerimento per accettare esplicitamente entrambe le sfumature.",
+      "kind": "explanation",
+      "msg": "L'affermazione che la lettura intenzionale di «will» sia impossibile con un infinito perfetto è troppo assoluta: «Ich will bis morgen fertig geworden sein» può esprimere un obiettivo di completamento. Spiegare che, nella frase proposta e nel suo contesto, «will» riporta invece l'affermazione del sindaco.",
+      "path": "merged.lessons[1].exercises[1].why"
+    },
+    {
+      "kind": "translation",
+      "msg": "«Die Resignation» qui indica rassegnazione; l'inglese «resignation» può anche significare dimissioni e, senza contesto, è fuorviante. Usare «resignation in the sense of acceptance» oppure «resigned acceptance».",
+      "path": "merged.lessons[2].vocab[4].tr"
+    },
+    {
+      "kind": "answer-key",
+      "msg": "«Denn» rende la domanda più neutra e non esprime la sospettosità richiesta dalla consegna; il fatto che sia grammaticalmente possibile non lo rende equivalente a «etwa» nel contesto. Limitare la risposta a «etwa» oppure modificare la consegna affinché ammetta esplicitamente entrambe le sfumature.",
       "path": "merged.test.exercises[2]"
-    },
-    {
-      "kind": "traduzione",
-      "msg": "«nichts gewusst haben» riguarda ciò che il ministro sapeva in passato. Correggere «he knows nothing» in «he knew nothing» o «he had known nothing».",
-      "path": "merged.test.exercises[6].tr"
-    },
-    {
-      "kind": "traduzione",
-      "msg": "«nichts gewusst haben» riguarda ciò che l'allenatore sapeva in passato. Correggere «he knows nothing» in «he knew nothing» o «he had known nothing».",
-      "path": "merged.test.exercises[8].tr"
     }
   ],
   "lang": "en",

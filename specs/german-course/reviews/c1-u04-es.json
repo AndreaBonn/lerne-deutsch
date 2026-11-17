@@ -1,40 +1,40 @@
 {
-  "bundleHash": "6db2e873003c6f19b36feceb00b2d580914b09d4d11e7e2a625fdfba98c42f4b",
+  "bundleHash": "b903d7e69a7346b26209520a2cd74f0c30e23ee07fd7da63674f49753102c043",
   "findings": [
     {
-      "kind": "grammatica",
-      "msg": "La presenza di sein o di un verbo d’azione non determina da sola il valore del modale: «Er muss um acht zu Hause sein» esprime un obbligo, mentre «Er muss noch arbeiten» può esprimere una deduzione. Correggere la regola e spiegare che il contesto distingue le letture.",
-      "path": "merged.lessons[1].theory[2].contrast"
+      "kind": "forma plurale",
+      "msg": "Il plurale di «der Verdacht» è «die Verdächte», non «die Verdachte».",
+      "path": "neutral.lessons[0].vocab[1].plural"
     },
     {
-      "kind": "grammatica",
-      "msg": "«Er soll kommen» può riferire anche ciò che altri dicono, per esempio che la persona arriverà. Inoltre sein può comparire in un obbligo. Presentare queste letture come dipendenti dal contesto, non come regole determinate dall’infinito.",
-      "path": "merged.lessons[1].theory[4].tip"
-    },
-    {
-      "kind": "spiegazione fuorviante",
-      "msg": "L’assenza di wohl non esclude una congettura: «Er wird krank sein» può esprimerne una senza avverbio. In questo esempio sono l’annuncio e il riferimento temporale a sostenere la lettura di azione futura completata; eliminare l’argomento basato sull’assenza dell’avverbio.",
+      "kind": "punteggiatura",
+      "msg": "Nella spiegazione compare una doppia virgola dopo «terminada». Eliminare la virgola in eccesso.",
       "path": "merged.lessons[0].exercises[1].why"
     },
     {
-      "kind": "chiave e ambiguità",
-      "msg": "La prima frase può esprimere anche una previsione o congettura sul futuro, quindi nächste Woche non basta a escludere una congettura. Aggiungere un contesto che presenti il ritorno come programma stabilito e riformulare la distinzione richiesta.",
-      "path": "merged.lessons[0].exercises[0]"
+      "kind": "spiegazione grammaticale",
+      "msg": "«Con seguridad sería muss» attribuisce a muss una certezza assoluta, mentre qui esprime una deduzione molto probabile. Sostituire con «Para una deducción de mayor certeza sería muss».",
+      "path": "merged.test.exercises[3].why"
+    },
+    {
+      "kind": "nota contrastiva",
+      "msg": "La frase «en español este futuro se entiende como conjetura casi siempre» è fuorviante: anche il futuro spagnolo senza avverbi può indicare un evento futuro, come «Mañana estará en casa». Il contesto distingue entrambe le letture in entrambe le lingue; riformulare il contrasto senza attribuire questa differenza allo spagnolo.",
+      "path": "merged.lessons[0].theory[2].contrast"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Gli indicatori elencati non determinano da soli una congettura: «inzwischen» può riferirsi anche a un'azione futura completata. Presentarli come indizi da interpretare nel contesto, non come criteri decisivi.",
+      "path": "merged.lessons[0].theory[1].p"
+    },
+    {
+      "kind": "nota contrastiva",
+      "msg": "«Donde el español cambia el tiempo del verbo, el alemán añade wohl» suggerisce che il tedesco debba aggiungere wohl e non possa usare il futuro, mentre la stessa unità insegna «Er wird wohl ... sein». Indicare che il tedesco può esprimere la congettura con il presente o con werden, eventualmente accompagnati da wohl.",
+      "path": "merged.lessons[2].theory[2].contrast"
     },
     {
       "kind": "traduzione",
-      "msg": "«Nichts gewusst haben» si riferisce al passato; «no sabe nada» lo presenta al presente. Sostituire con «asegura que no sabía nada».",
-      "path": "merged.test.exercises[6].tr"
-    },
-    {
-      "kind": "traduzione",
-      "msg": "«Nichts gewusst haben» si riferisce al passato; «no sabe nada» lo presenta al presente. Sostituire con «asegura que no sabía nada».",
-      "path": "merged.test.exercises[8].tr"
-    },
-    {
-      "kind": "vocabolario",
-      "msg": "Verdacht possiede il plurale «die Verdachte», anche se è raro. Indicarlo invece di «-», eventualmente segnalando che è poco frequente.",
-      "path": "neutral.lessons[0].vocab[1].plural"
+      "msg": "«Der Bus ist weg, da müssen wir halt laufen» esprime la necessità di andare a piedi, non soltanto l'azione di andarci. Tradurre, per esempio, «El autobús ya se ha ido, así que tendremos que ir andando, qué se le va a hacer».",
+      "path": "merged.lessons[2].grammar.examples[3].tr"
     }
   ],
   "lang": "es",
