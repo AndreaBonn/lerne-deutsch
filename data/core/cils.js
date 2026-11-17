@@ -11,29 +11,37 @@
    the engine reads them. The content is original; no official exam material
    is reproduced. The screen calls it an unofficial preview.
 
-   The runner walks four sections in a fixed order (cils-run.js ORDINE), so
-   the three sections that are not written yet stay as empty shells instead
-   of being removed: a missing section would end the attempt right there.
-   `ascolto`, `scritta` and `orale` get their content in later tasks.
+   CILS_FORMATO declares module order, duration and target task counts.
+   The three unwritten sections stay as empty shells; Cils.conforme reports
+   them as incomplete until their content arrives in later tasks.
 
    Scoring: a section is worth at most 12 points (Cils.MAX_ABILITA). The one
    reading task has 6 items worth 2 points each. A wrong answer and an
    omitted one are worth the same, zero.
    ============================================================ */
+window.CILS_FORMATO = {
+  official: false,
+  soglia: 0.6,
+  moduli: [
+    { id: "lettura", modulo: "Lesen", minuti: 65, teile: 5, punteggio: true },
+    { id: "ascolto", modulo: "Hören", minuti: 40, teile: 4, punteggio: true },
+    { id: "scritta", modulo: "Schreiben", minuti: 60, teile: 3, punteggio: false },
+    { id: "orale", modulo: "Sprechen", minuti: 15, teile: 3, punteggio: false }
+  ]
+};
 window.CILS = [
 
   {
     id: "sim-1",
+    official: false,
     titoloIt: "Modelltest 1",
     sezioni: [
-
-      /* Listening: not written yet. Empty shell, see the header. */
-      { id: "ascolto", minuti: 1, prove: [] },
 
       /* ---------------- LESEN: 1 task ---------------- */
       {
         id: "lettura",
-        minuti: 20,
+        modulo: "Lesen",
+        minuti: 65,
         prove: [
           {
             t: "vf",
@@ -59,11 +67,14 @@ window.CILS = [
         ]
       },
 
+      /* Listening: not written yet. Empty shell, see the header. */
+      { id: "ascolto", modulo: "Hören", minuti: 40, prove: [] },
+
       /* Writing: not written yet. Empty shell, see the header. */
-      { id: "scritta", minuti: 1, consegna: "", tracce: [] },
+      { id: "scritta", modulo: "Schreiben", minuti: 60, consegna: "", tracce: [] },
 
       /* Speaking: not written yet. Empty shell, see the header. */
-      { id: "orale", minuti: 1, presentazione: [], argomenti: [] }
+      { id: "orale", modulo: "Sprechen", minuti: 15, presentazione: [], argomenti: [] }
     ]
   }
 ];

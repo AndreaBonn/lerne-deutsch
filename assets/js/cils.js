@@ -44,10 +44,54 @@
   Cils.FONTE_SOGLIA = "cils.thresholdSource";
 
   /** The skills in exam order. */
-  Cils.ABILITA = ["ascolto", "lettura", "scritta", "orale"];
+  Object.defineProperty(Cils, "ABILITA", { get: function () {
+    return formato().moduli.map(function (m) { return m.id; });
+  } });
 
   /** The skills this simulator can score. The rest are declared, not measured. */
-  Cils.PUNTEGGIABILI = ["ascolto", "lettura"];
+  Object.defineProperty(Cils, "PUNTEGGIABILI", { get: function () {
+    return formato().moduli.filter(function (m) { return m.punteggio; })
+      .map(function (m) { return m.id; });
+  } });
+
+  function formato() { return global.CILS_FORMATO; }
+
+  function sectionProblems(section, descriptor) {
+    var problems = [];
+    var tasks = (section.prove || []).concat(section.tracce || []);
+    var id = descriptor.id;
+    if (section.minuti !== descriptor.minuti) problems.push("minuti: " + id);
+    if (!tasks.length) problems.push("incompleta: " + id);
+    else if (tasks.length !== descriptor.teile) problems.push("teile: " + id);
+    if (!descriptor.punteggio && (section.puntiPerItem !== undefined || tasks.some(function (task) {
+      return task.puntiPerItem !== undefined;
+    }))) problems.push("puntiPerItem: " + id);
+    /* A scored task without a positive weight would score zero in silence. */
+    if (descriptor.punteggio && tasks.some(function (task) {
+      return !(typeof task.puntiPerItem === "number" && task.puntiPerItem > 0);
+    })) problems.push("puntiPerItem: " + id);
+    return problems;
+  }
+
+  function conforme(simulation) {
+    var problems = [];
+    var sections = (simulation && simulation.sezioni) || [];
+    var ids = Cils.ABILITA;
+    if (!simulation || simulation.official !== false) problems.push("official: false required");
+    formato().moduli.forEach(function (descriptor, index) {
+      var section = sezione(simulation, descriptor.id);
+      if (!section) { problems.push("missing: " + descriptor.id); return; }
+      if (sections[index] !== section) problems.push("order: " + descriptor.id);
+      problems = problems.concat(sectionProblems(section, descriptor));
+    });
+    sections.forEach(function (section, index) {
+      if (ids.indexOf(section.id) < 0 || sections.indexOf(section) !== index ||
+          sections.some(function (other, i) { return i < index && other.id === section.id; })) {
+        problems.push("extra: " + section.id);
+      }
+    });
+    return problems;
+  }
 
   function simulazioni() { return global.CILS || []; }
 
@@ -172,6 +216,8 @@
     };
   }
 
+  Cils.formato = formato;
+  Cils.conforme = conforme;
   Cils.sim = sim;
   Cils.sezione = sezione;
   Cils.punteggioProva = punteggioProva;

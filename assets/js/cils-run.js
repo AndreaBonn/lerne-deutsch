@@ -23,15 +23,13 @@
 (function (global) {
   "use strict";
 
-  /* The order of sections is the order of the exam, not the order of the file. */
-  var ORDINE = ["ascolto", "lettura", "scritta", "orale"];
-
   /* How many attempts we keep in the history. An entry weighs a few dozen
      bytes, and localStorage is shared by the whole course: without this
      ceiling the history would be the only container growing without end. */
   var MAX_HISTORII = 50;
 
   function create(s) {
+    var order = (s.sezioni || []).map(function (section) { return section.id; });
     var run = {
       sim: s,
       i: 0,
@@ -44,7 +42,7 @@
     };
 
     function sekcja() {
-      var id = ORDINE[run.i];
+      var id = order[run.i];
       return id ? global.Cils.sezione(run.sim, id) : null;
     }
 
@@ -115,8 +113,8 @@
       },
       esito: function () { return global.Cils.esito(run.punti); },
       get krok() { return run.i + 1; },
-      get ile() { return ORDINE.length; },
-      get skonczone() { return run.i >= ORDINE.length; }
+      get ile() { return order.length; },
+      get skonczone() { return run.i >= order.length; }
     };
   }
 
@@ -160,7 +158,7 @@
     create: create,
     zapisz: zapisz,
     wpis: wpis,
-    ORDINE: ORDINE,
+    get ORDINE() { return global.Cils.ABILITA; },
     MAX_HISTORII: MAX_HISTORII
   };
 

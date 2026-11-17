@@ -114,6 +114,8 @@ test.describe("simulazione d'esame", () => {
 
   test("un testo d'ascolto si può sentire due volte, non tre", async ({ page }) => {
     await otworz(page);
+    /* Goethe order: Lesen comes first, Hören second. */
+    await page.locator(".js-next").click();
     const b = page.locator(".js-play").first();
     await b.click();
     await page.waitForTimeout(150);

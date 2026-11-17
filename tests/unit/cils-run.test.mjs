@@ -63,14 +63,14 @@ function wypelnijPoprawnie(run, sez) {
 }
 
 describe("the order of the sections", () => {
-  test("it starts with listening and follows the order of the exam", () => {
+  test("it starts with reading and follows the Goethe module order", () => {
     const run = podejscie(silnik());
     const kolejnosc = [];
     for (let n = 0; n < 4; n++) {
       kolejnosc.push(run.sekcja().id);
       run.dalej();
     }
-    assert.deepEqual(kolejnosc, ["ascolto", "lettura", "scritta", "orale"]);
+    assert.deepEqual(kolejnosc, ["lettura", "ascolto", "scritta", "orale"]);
   });
 
   test("the step is numbered from one, because that is how the student reads it", () => {
@@ -128,9 +128,9 @@ describe("section points", () => {
     const w = run.zamknij(sez);
 
     assert.equal(w.punti, 12);
-    assert.equal(run.dane.punti.ascolto, 12);
+    assert.equal(run.dane.punti.lettura, 12);
     assert.equal(w.esatte, 18);
-    assert.equal(run.dane.szczegoly.ascolto.esatte, 18);
+    assert.equal(run.dane.szczegoly.lettura.esatte, 18);
   });
 
   test("a section closed with not a single answer gives zero, not undefined", () => {
@@ -138,7 +138,7 @@ describe("section points", () => {
     const sez = run.sekcja();
     run.przygotuj(sez);
     assert.equal(run.zamknij(sez).punti, 0);
-    assert.equal(run.dane.punti.ascolto, 0);
+    assert.equal(run.dane.punti.lettura, 0);
   });
 });
 
@@ -184,7 +184,7 @@ describe("the verdict on the whole attempt", () => {
     const run = podejscie(silnik());
     const sez = run.sekcja();
     run.przygotuj(sez);
-    run.zamknij(sez);          // zero points from listening
+    run.zamknij(sez);          // zero points from reading
     assert.equal(run.esito().verdetto, "sotto-soglia");
   });
 });
@@ -208,8 +208,8 @@ describe("the history entry", () => {
 
     assert.equal(w.sim, "sim-1");
     assert.equal(w.ts, 1700000000000);
-    assert.equal(w.punti.ascolto, 12);
-    assert.equal(w.punti.lettura, 0, "a section that was not played counts as zero, it does not disappear");
+    assert.equal(w.punti.lettura, 12);
+    assert.equal(w.punti.ascolto, 0, "a section that was not played counts as zero, it does not disappear");
     assert.deepEqual(Array.from(w.scadute), ["lettura"]);
     assert.equal(w.verdetto, "sotto-soglia");
     assert.equal(w.risposte, undefined);
@@ -280,13 +280,13 @@ describe("answers to the open sections", () => {
 });
 
 
-test("listening never closed is recorded as zero points", () => {
+test("reading never closed is recorded as zero points", () => {
   const box = silnik();
   const run = podejscie(box);
   wypelnijPoprawnie(run, run.sekcja());
-  assert.equal(box.sandbox.CilsRun.wpis(run, run.esito(), 123).punti.ascolto, 0);
+  assert.equal(box.sandbox.CilsRun.wpis(run, run.esito(), 123).punti.lettura, 0);
   run.zamknij(run.sekcja());
-  assert.equal(box.sandbox.CilsRun.wpis(run, run.esito(), 123).punti.ascolto, 12);
+  assert.equal(box.sandbox.CilsRun.wpis(run, run.esito(), 123).punti.lettura, 12);
 });
 
 test("a transcript before the oral topic leaves the attempt unchanged", () => {
@@ -297,4 +297,42 @@ test("a transcript before the oral topic leaves the attempt unchanged", () => {
   run.zapiszOrale({ it: "La mia città", richiede: [] });
   assert.equal(run.zapiszTrascrizione("Abito a Roma."), true);
   assert.equal(run.dane.orale.testo, "Abito a Roma.");
+});
+
+
+test("the run follows simulation section order, length and durations", () => {
+  const box = silnik();
+  const sections = [
+    { id: "orale", minuti: 2.5 },
+    { id: "lettura", minuti: 7 }
+  ];
+  const run = box.sandbox.CilsRun.create({ sezioni: sections });
+  assert.equal(run.ile, 2);
+  assert.equal(run.skonczone, false);
+  assert.equal(run.sekcja(), sections[0]);
+  assert.equal(run.sekcja().minuti * 60, 150);
+  assert.equal(run.dalej(), sections[1]);
+  assert.equal(run.sekcja().minuti * 60, 420);
+  assert.equal(run.dalej(), null);
+  assert.equal(run.skonczone, true);
+  const empty = box.sandbox.CilsRun.create({ sezioni: [] });
+  assert.equal(empty.ile, 0);
+  assert.equal(empty.sekcja(), null);
+  assert.equal(empty.skonczone, true);
+});
+
+test("the browser load order derives exported orders after data arrives", () => {
+  const box = loadEngine({ files: ["assets/js/cils.js", "assets/js/cils-run.js", "data/core/cils.js"] });
+  const { Cils: C, CilsRun: CR, CILS_FORMATO: format } = box.sandbox;
+  assert.equal(C.formato(), format);
+  assert.deepEqual(Array.from(CR.ORDINE), ["lettura", "ascolto", "scritta", "orale"]);
+  const run = CR.create(C.sim());
+  assert.equal(run.sekcja().minuti * 60, 3900);
+  assert.equal(run.dalej().minuti * 60, 2400);
+  assert.equal(run.dalej().minuti * 60, 3600);
+  assert.equal(run.dalej().minuti * 60, 900);
+  format.moduli = [{ id: "orale", punteggio: false }];
+  assert.deepEqual(Array.from(C.ABILITA), ["orale"]);
+  assert.deepEqual(Array.from(C.PUNTEGGIABILI), []);
+  assert.deepEqual(Array.from(CR.ORDINE), ["orale"]);
 });

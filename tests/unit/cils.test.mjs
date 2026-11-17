@@ -129,11 +129,11 @@ describe("kontrola wypowiedzi pisemnej", () => {
 });
 
 describe("dane symulacji", () => {
-  test("both simulations have four sections in the same order", () => {
+  test("simulations follow the Goethe module order", () => {
     const C = silnik();
     C.simulazioni().forEach(s => {
       assert.deepEqual(Array.from(s.sezioni.map(x => x.id)),
-        ["ascolto", "lettura", "scritta", "orale"]);
+        ["lettura", "ascolto", "scritta", "orale"]);
     });
   });
 
@@ -228,4 +228,60 @@ test("the word limits include eighty and one hundred twenty", () => {
     assert.equal(result.parole, count);
     assert.equal(result.dentroLimite, accepted, count + " words");
   }
+});
+
+function conformingSimulation() {
+  return { official: false, sezioni: [
+    { id: "lettura", modulo: "Lesen", minuti: 65, prove: Array(5).fill({ puntiPerItem: 1 }) },
+    { id: "ascolto", modulo: "Hören", minuti: 40, prove: Array(4).fill({ puntiPerItem: 1 }) },
+    { id: "scritta", modulo: "Schreiben", minuti: 60, tracce: Array(3).fill({}) },
+    { id: "orale", modulo: "Sprechen", minuti: 15, prove: Array(3).fill({}) }
+  ] };
+}
+
+test("the format declares unofficial modules, times, Teile and scoring", () => {
+  const C = silnik();
+  assert.deepEqual(JSON.parse(JSON.stringify(C.formato())), { official: false, soglia: 0.6, moduli: [
+    { id: "lettura", modulo: "Lesen", minuti: 65, teile: 5, punteggio: true },
+    { id: "ascolto", modulo: "Hören", minuti: 40, teile: 4, punteggio: true },
+    { id: "scritta", modulo: "Schreiben", minuti: 60, teile: 3, punteggio: false },
+    { id: "orale", modulo: "Sprechen", minuti: 15, teile: 3, punteggio: false }
+  ] });
+  assert.deepEqual(Array.from(C.ABILITA), ["lettura", "ascolto", "scritta", "orale"]);
+  assert.deepEqual(Array.from(C.PUNTEGGIABILI), ["lettura", "ascolto"]);
+  C.simulazioni().forEach(s => {
+    assert.equal(s.official, false);
+    s.sezioni.forEach((section, i) => {
+      assert.equal(section.modulo, C.formato().moduli[i].modulo);
+      assert.equal(section.minuti, C.formato().moduli[i].minuti);
+    });
+  });
+});
+
+test("conforme reports each contract violation beside a conforming fixture", () => {
+  const C = silnik();
+  const cases = [
+    [s => { s.official = true; }, "official: false required"],
+    [s => { delete s.official; }, "official: false required"],
+    [s => { s.sezioni.shift(); }, "missing: lettura"],
+    [s => { s.sezioni.push({ id: "extra" }); }, "extra: extra"],
+    [s => { s.sezioni.reverse(); }, "order: lettura"],
+    [s => { s.sezioni[0].minuti = 20; }, "minuti: lettura"],
+    [s => { s.sezioni[0].prove.pop(); }, "teile: lettura"],
+    [s => { s.sezioni[2].tracce.pop(); }, "teile: scritta"],
+    [s => { s.sezioni[2].tracce[0] = { puntiPerItem: 0 }; }, "puntiPerItem: scritta"],
+    [s => { s.sezioni[3].puntiPerItem = 1; }, "puntiPerItem: orale"],
+    [s => { s.sezioni[0].prove = []; }, "incompleta: lettura"],
+    [s => { s.sezioni[0].prove = s.sezioni[0].prove.slice(); s.sezioni[0].prove[2] = {}; }, "puntiPerItem: lettura"],
+    [s => { s.sezioni[1].prove = s.sezioni[1].prove.slice(); s.sezioni[1].prove[0] = { puntiPerItem: 0 }; }, "puntiPerItem: ascolto"]
+  ];
+  cases.forEach(([mutate, problem]) => {
+    const fixture = conformingSimulation();
+    assert.deepEqual(Array.from(C.conforme(fixture)), []);
+    mutate(fixture);
+    assert.ok(C.conforme(fixture).includes(problem), problem);
+  });
+  assert.deepEqual(Array.from(C.conforme(C.sim())), [
+    "teile: lettura", "incompleta: ascolto", "incompleta: scritta", "incompleta: orale"
+  ]);
 });
