@@ -20,7 +20,7 @@
    ============================================================ */
 import { test, describe } from "node:test";
 import assert from "node:assert/strict";
-import { loadEngine, CORE, VERBS } from "./_harness.mjs";
+import { loadEngine, CORE, VERBS, UI } from "./_harness.mjs";
 
 const PLIKI = [
   ...CORE, ...VERBS,
@@ -37,6 +37,32 @@ function silnik() {
 }
 
 function html() { return silnik().sandbox.CilsHtml; }
+
+for (const [lang, unofficial, unaffiliated, noMaterial] of [
+  ["it", /non ufficiale/, /non affiliata al Goethe-Institut/, /Non utilizza materiali ufficiali/],
+  ["en", /Unofficial/, /not affiliated with the Goethe-Institut/, /uses no official.*material/],
+  ["es", /no oficial/, /sin afiliación al Goethe-Institut/, /No utiliza materiales oficiales/],
+  ["fr", /non officielle/, /sans affiliation au Goethe-Institut/, /n’utilise aucun matériel officiel/],
+  ["pl", /Nieoficjalna/, /niezwiązana z Goethe-Institut/, /Nie wykorzystuje oficjalnych materiałów/]
+]) {
+  test(`entry and report HTML carry the full unofficial disclaimer in ${lang}`, () => {
+    const { sandbox: box } = loadEngine({ files: [...PLIKI, ...UI] });
+    box.I18n.set(lang);
+    const disclaimer = box.I18n.t("cils.thresholdSource");
+    assert.match(disclaimer, /Goethe-Zertifikat B1/);
+    for (const meaning of [unofficial, unaffiliated, noMaterial]) assert.match(disclaimer, meaning);
+    const structure = box.I18n.t("cils.structure");
+    assert.match(structure, /Lesen.*Hören.*Schreiben.*Sprechen/);
+    assert.equal(box.I18n.t("cils.sectionsLine"), "Lesen, Hören, Schreiben, Sprechen");
+    const entry = box.CilsHtml.lista([{ id: "mock", titoloIt: "Modelltest" }]);
+    assert.ok(entry.includes(box.Core.esc(disclaimer)));
+    assert.ok(entry.includes(box.Core.esc(structure)));
+    const result = box.Cils.esito({ lettura: { punti: 1, max: 1 }, ascolto: { punti: 0, max: 1 } });
+    const report = box.CilsHtml.podsumowanie(result, () => false, null, null);
+    assert.ok(report.includes(box.Core.esc(disclaimer)));
+    assert.ok(report.includes("1 / 1"));
+  });
+}
 
 /** How many times a pattern occurs in a string. */
 function ile(hay, igla) {

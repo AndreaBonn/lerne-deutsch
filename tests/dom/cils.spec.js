@@ -46,6 +46,26 @@ async function otworz(page, sekundy) {
 }
 
 test.describe("simulazione d'esame", () => {
+  for (const lang of ["it", "en", "es", "fr", "pl"]) {
+    test(`unofficial disclaimer is visible on entry and report in ${lang}`, async ({ page }) => {
+      await page.goto("/index.html#/esame");
+      await page.waitForSelector(".js-start");
+      await page.evaluate(code => { I18n.set(code); Views.esame(); }, lang);
+      const disclaimer = await page.evaluate(() => I18n.t("cils.thresholdSource"));
+      expect(disclaimer).toContain("Goethe-Zertifikat B1");
+      expect(disclaimer).toContain("Goethe-Institut");
+      await expect(page.getByText(disclaimer, { exact: true })).toBeVisible();
+      const structure = await page.evaluate(() => I18n.t("cils.structure"));
+      expect(structure).toMatch(/Lesen.*Hören.*Schreiben.*Sprechen/);
+      await expect(page.getByText(structure, { exact: true })).toBeVisible();
+      await page.locator(".js-start").first().click();
+      for (let i = 0; i < 4; i++) await page.locator(".js-next").click();
+      await page.locator(".js-next").click();
+      await expect(page.locator(".cils-tab tr")).toHaveCount(4);
+      await expect(page.getByText(disclaimer, { exact: true })).toBeVisible();
+    });
+  }
+
   test("il limite del simulatore è detto prima di cominciare", async ({ page }) => {
     await page.goto("/index.html#/esame");
     await page.waitForSelector(".js-start");

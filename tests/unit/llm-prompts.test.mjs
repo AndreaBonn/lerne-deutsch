@@ -190,11 +190,43 @@ describe("the reading of a composition", () => {
 describe("the exam: what the model is told", () => {
   const TRACCIA = { it: "Scrivi una mail all'ufficio del Comune." };
 
+  test("both productions receive four descriptive criteria without level estimates", () => {
+    for (const section of ["scritta", "orale"]) {
+      const p = prompts().esame("en", section, {}, "Ich komme morgen.", "B1");
+      assert.match(p.system, /Task fulfilment:.*all.*required points/);
+      assert.match(p.system, /Coherence and connectors/);
+      assert.match(p.system, /Vocabulary range/);
+      assert.match(p.system, /Grammar accuracy/);
+      assert.match(p.system, /Quote the candidate's own words/);
+      assert.match(p.system, /give a mark, a score, a number of points or a percentage/);
+      assert.match(p.system, /pass or fail/);
+      assert.match(p.system, /estimate.*CEFR level/);
+    }
+  });
+
+  test("writing instructions and every required point reach the reader as task data", () => {
+    const task = { consegna: "Schreiben Sie eine E-Mail.", punti: ["Grund nennen", "Termin vorschlagen"] };
+    const p = prompts().esame("en", "scritta", task, "Ich komme morgen.");
+    assert.match(p.user, /<task>Schreiben Sie eine E-Mail\.<\/task>/);
+    assert.match(p.user, /<required_points>Grund nennen\nTermin vorschlagen<\/required_points>/);
+    assert.match(p.system, /Address each point in <required_points>/);
+    assert.match(p.user, /<answer>Ich komme morgen\.<\/answer>/);
+  });
+
+  test("legacy tasks retain their wording and absent points are omitted", () => {
+    const p = prompts().esame("en", "scritta", { it: "Eine Einladung" }, "Hallo!");
+    assert.match(p.user, /<task>Eine Einladung<\/task>/);
+    assert.match(p.user, /<answer>Hallo!<\/answer>/);
+    assert.doesNotMatch(p.user, /<required_points>/);
+    const withPoints = prompts().esame("en", "scritta", { punti: ["Ort nennen"] }, "Hallo!");
+    assert.match(withPoints.user, /<required_points>Ort nennen<\/required_points>/);
+  });
+
   test("the level reaches the model, and the exam is named", () => {
     const p = prompts().esame("pl", "scritta", TRACCIA, "Gentile ufficio…", "B1");
     assert.match(p.system, /level B1/);
     assert.match(p.system, /German/);
-    assert.match(p.system, /in the style of Goethe B1 \(an unofficial preview\)/);
+    assert.match(p.system, /in the style of Goethe-Zertifikat B1 \(unofficial\)/);
   });
 
   test("marks, verdicts and predictions are all three forbidden by name", () => {
