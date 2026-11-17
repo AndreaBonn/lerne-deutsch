@@ -250,8 +250,8 @@ LINGUAI.addStrings("it", {
       },
       {
         q: "Completa con muss, soll o will.",
-        tr: "Le persiane sono abbassate e la cassetta delle lettere è piena: la famiglia Albers dev'essere partita, difficile pensare altro. Secondo un vicino sarebbe partita già due settimane fa, ma il portiere sostiene di non essersi accorto di niente.",
-        why: "<i>muss</i>: deduzione dagli indizi. <i>soll</i>: lo dice un vicino (<i>einem Nachbarn zufolge</i>). <i>will</i>: lo sostiene il portiere stesso."
+        tr: "Le persiane sono abbassate e la cassetta delle lettere è piena: la famiglia Albers dev'essere partita, difficile pensare altro. Secondo un vicino sarebbe partita già due settimane fa, ma il portiere, a quanto dice lui stesso, non si sarebbe accorto di niente.",
+        why: "<i>muss</i>: deduzione dagli indizi. <i>soll</i>: lo dice un vicino (<i>einem Nachbarn zufolge</i>). <i>will</i>: l'indizio <i>nach eigener Aussage</i> dice che è il portiere stesso a sostenere di non aver saputo nulla, e solo <i>will</i> è compatibile con questa fonte."
       },
       {
         q: "Abbina ogni frase al suo significato.",
@@ -297,7 +297,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Posizione e registro",
-        p: "Le particelle sono atone e tendono a stare dopo il verbo e i pronomi, prima dell'informazione nuova (<em>Er wird wohl noch schlafen</em>); è una tendenza, la posizione dipende anche dalla frase (<em>Hast du den Schlüssel etwa schon wieder vergessen?</em>). Sono tipiche del parlato, delle chat e dei dialoghi: in un testo formale, come una relazione o una lettera a un cliente, di solito si evitano. <em>halt</em> è più colloquiale e si sente soprattutto nel sud, <em>eben</em> è più neutro, ma nella maggior parte dei casi sono intercambiabili."
+        p: "Le particelle sono atone e tendono a stare dopo il verbo e i pronomi, prima dell'informazione nuova (<em>Er wird wohl noch schlafen</em>); è una tendenza, la posizione dipende anche dalla frase (<em>Hast du den Schlüssel etwa schon wieder vergessen?</em>). Sono tipiche del parlato, delle chat e dei dialoghi; nei testi formali per lo più si evitano, ma dipende dalla particella e dal tipo di testo: <em>halt</em> è colloquiale, mentre <em>ja</em>, <em>wohl</em> ed <em>eben</em> compaiono anche in testi curati, per esempio in un commento o in una relazione dal tono discorsivo. <em>halt</em> è più colloquiale e si sente soprattutto nel sud, <em>eben</em> è più neutro, ma nella maggior parte dei casi sono intercambiabili."
       },
       {
         contrast: "L'italiano rende queste sfumature con l'intonazione e con parole come <em>mica</em>, <em>pazienza</em>, <em>mah</em>, <em>sarà</em>: <em>Hast du etwa ...?</em> è vicino a «non avrai mica ...?», <em>Dann warten wir halt</em> a «allora aspettiamo, pazienza». Dove l'italiano cambia il tempo del verbo (<em>sarà</em>), il tedesco aggiunge <em>wohl</em>. Nessuna delle cinque ha un equivalente fisso: si impara la funzione."
@@ -311,7 +311,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Particelle modali: wohl, ja, etwa, halt, eben",
-      note: "<b>wohl</b>: supposizione. <b>ja</b>: cosa nota o sorprendente. <b>etwa</b>: nelle domande sì/no, sorpresa o sospetto. <b>halt / eben</b>: rassegnazione. Registro: parlato, non formale.",
+      note: "<b>wohl</b>: supposizione. <b>ja</b>: cosa nota o sorprendente. <b>etwa</b>: nelle domande sì/no, sorpresa o sospetto. <b>halt / eben</b>: rassegnazione. Registro: parlato; nei testi formali per lo più evitate, soprattutto <i>halt</i>.",
       table: {
         head: ["particella", "effetto", "esempio"],
         rows: [
@@ -319,7 +319,7 @@ LINGUAI.addStrings("it", {
           ["ja", "cosa nota o sorprendente", "Du weißt ja, wie lange das dauert."],
           ["etwa", "sorpresa o sospetto in una domanda, ci si aspetta di no", "Hast du etwa den Schlüssel vergessen?"],
           ["halt, eben", "rassegnazione", "Da kann man eben nichts machen."],
-          ["registro", "parlato, evitare nello scritto formale", "Das ist halt so."]
+          ["registro", "soprattutto parlato; nei testi formali per lo più evitate, <i>halt</i> in particolare", "Das ist halt so."]
         ]
       },
       examples: [
@@ -371,7 +371,7 @@ LINGUAI.addStrings("it", {
           "Die Zugverbindung ist halt schlecht.",
           "Die Zugverbindung ist eben nicht so toll."
         ],
-        why: "Le particelle <i>halt</i> ed <i>eben</i>, insieme a un lessico come <i>schlecht</i> e <i>nicht so toll</i>, sono parlato: una relazione le evita e usa un lessico neutro come <i>unzureichend</i>."
+        why: "Le particelle <i>halt</i> ed <i>eben</i>, insieme a un lessico come <i>schlecht</i> e <i>nicht so toll</i>, sono parlato: una relazione formale di solito le evita, <i>halt</i> in particolare, e usa un lessico neutro come <i>unzureichend</i>."
       },
       {
         q: "Il treno è soppresso e cerchi un'alternativa con rassegnazione: «Der Zug fällt aus? Dann nehmen wir ___ ein Taxi.»",

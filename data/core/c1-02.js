@@ -123,7 +123,7 @@ LINGUAI.addUnits("C1", [
           { t: "fill", a: ["will"] },
           {
             t: "cloze",
-            text: "Die Rollläden sind unten und der Briefkasten quillt über: Familie Albers {{1}} verreist sein, etwas anderes ist kaum denkbar. Einem Nachbarn zufolge {{2}} sie schon vor zwei Wochen abgefahren sein, aber der Hausmeister selbst {{3}} davon nichts mitbekommen haben.",
+            text: "Die Rollläden sind unten und der Briefkasten quillt über: Familie Albers {{1}} verreist sein, etwas anderes ist kaum denkbar. Einem Nachbarn zufolge {{2}} sie schon vor zwei Wochen abgefahren sein, aber der Hausmeister {{3}} nach eigener Aussage davon nichts mitbekommen haben.",
             gaps: [["muss"], ["soll"], ["will"]]
           },
           {

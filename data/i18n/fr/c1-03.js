@@ -249,7 +249,7 @@ LINGUAI.addStrings("fr", {
       {
         q: "Complétez le communiqué avec les deux prépositions.",
         tr: "En raison du retard de la livraison, la date a dû être reportée. Si nécessaire, une nouvelle date sera convenue.",
-        why: "<i>Wegen</i> (ou <i>Aufgrund</i>, <i>Infolge</i>) + génitif pour la cause. <i>Bei Bedarf</i> pour la condition ; dans ce contexte, <i>Nach Bedarf</i>, « selon les besoins », convient aussi."
+        why: "<i>Wegen</i> (ou <i>Aufgrund</i>, <i>Infolge</i>) + génitif pour la cause. <i>Bei Bedarf</i> pour la condition."
       },
       {
         q: "Associez chaque expression à son sens.",
@@ -275,7 +275,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         tr: "Malgré des rappels répétés, le paiement n'est pas arrivé.",
-        why: "Dans <i>mehrfacher</i>, l'accent tombe sur <b>mehr</b> ; dans <i>Erinnerung</i>, l'accent tombe sur <b>in</b> ; dans <i>eingegangen</i>, l'accent tombe sur <b>gan</b>."
+        why: "Dans <i>mehrfacher</i>, l'accent tombe sur <b>mehr</b> ; dans <i>Erinnerung</i>, l'accent tombe sur <b>in</b> ; dans <i>eingegangen</i>, l'accent tombe sur <b>ein</b>."
       }
     ]
   },
@@ -295,7 +295,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         h: "Comment choisir",
-        p: "Avant de nominaliser, posez quatre questions. Qui agit, et le nom le dit-il ? Existe-t-il un nom naturel (<em>Abschluss, Klärung</em>) ? Dois-je garder un temps ou un mode ? Le lecteur comprend-il dès la première lecture ? Si la réponse est oui partout, la forme compacte fonctionne (<em>Nach Abschluss der Prüfung ...</em>) ; sinon la subordonnée est plus claire, et dans les textes destinés à un public non spécialiste elle l'est presque toujours."
+        p: "Avant de nominaliser, posez quatre questions. Qui agit, et le nom le dit-il ? Existe-t-il un nom naturel (<em>Abschluss, Klärung</em>) ? Puis-je me passer d'exprimer le temps et le mode ? Le lecteur comprend-il dès la première lecture ? Si la réponse est oui partout, la forme compacte fonctionne (<em>Nach Abschluss der Prüfung ...</em>) ; sinon la subordonnée est plus claire, et dans les textes destinés à un public non spécialiste elle l'est presque toujours."
       },
       {
         contrast: "Le français dispose lui aussi de tournures compactes : <em>après avoir terminé</em> (infinitif passé), <em>les travaux terminés</em> (participe absolu), et la subordonnée <em>au cas où la vérification durerait plus longtemps</em>, qui est une proposition et non un outil compact. En allemand, l'infinitif avec <em>ohne zu</em> ou <em>um ... zu</em> exige le même sujet ; avec deux sujets, on passe à une subordonnée (<em>dass, weil, nachdem</em>) ou, selon le cas, à un groupe nominal. Pour un francophone, le piège est de calquer la structure française : <em>après avoir terminé</em> n'a pas d'infinitif allemand équivalent (<em>nachdem er abgeschlossen hat</em> ou <em>nach Abschluss</em>). La nuance de <em>au cas où ... devrait</em> ou de <em>si jamais</em> se rend par <em>Sollte die Prüfung länger dauern, ...</em> ou <em>falls ... ändern sollten</em>."
@@ -433,9 +433,9 @@ LINGUAI.addStrings("fr", {
         why: "<b>sein</b> : <i>ausfallen</i> est un verbe de changement d'état et veut <i>sein</i> au Perfekt ; le Futur II de supposition est <i>wird ... ausgefallen sein</i>, « elle sera tombée en panne »."
       },
       {
-        q: "Complétez : « Die Verhandlungen sind erst im Mai abgeschlossen ___. »",
+        q: "Complétez avec le passif d'action au Perfekt (« les négociations ont été conclues seulement en mai ») : « Die Verhandlungen sind erst im Mai abgeschlossen ___. »",
         hint: "participe de werden au passif",
-        why: "<b>worden</b> : au Perfekt passif, le participe de <i>werden</i> perd <i>ge-</i>. <i>geworden</i> serait le verbe plein « devenir »."
+        why: "<b>worden</b> : au Perfekt passif, le participe de <i>werden</i> perd <i>ge-</i>. <i>geworden</i> serait le verbe plein « devenir ». La consigne demande le passif d'action ; <i>gewesen</i> donnerait un passif d'état, qui est un autre sens et n'est pas cherché ici."
       },
       {
         q: "Complétez avec le participe I de stehen et la bonne terminaison : « Die uns zur Verfügung ___ Mittel reichen nicht aus. »",

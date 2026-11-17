@@ -21,7 +21,7 @@ LINGUAI.addStrings("es", {
     theory: [
       {
         h: "El participio delante del sustantivo",
-        p: "En los textos formales una oración de relativo se puede comprimir en un participio colocado delante del sustantivo, que toma la terminación de un adjetivo. El <strong>participio I</strong> (infinitivo + <em>-d</em>) es activo y simultáneo: <em>die steigenden Kosten</em> = <em>die Kosten, die steigen</em>. El <strong>participio II</strong> de un verbo transitivo es pasivo y suele presentar la acción como completada, aunque el valor temporal depende del verbo y del contexto (<em>die gerade bearbeiteten Anträge</em> puede describir una tramitación en curso): <em>die geprüften Unterlagen</em> = <em>die Unterlagen, die geprüft wurden</em>. En cambio, el participio II de un verbo intransitivo (con <em>sein</em>) es activo y terminado: <em>die gestiegenen Kosten</em> = <em>die Kosten, die gestiegen sind</em>."
+        p: "En los textos formales una oración de relativo se puede comprimir en un participio colocado delante del sustantivo, que toma la terminación de un adjetivo. El <strong>participio I</strong> (infinitivo + <em>-d</em>; excepción: <em>sein</em> → <em>seiend</em>) es activo y simultáneo: <em>die steigenden Kosten</em> = <em>die Kosten, die steigen</em>. El <strong>participio II</strong> de un verbo transitivo es pasivo y suele presentar la acción como completada, aunque el valor temporal depende del verbo y del contexto (<em>die gerade bearbeiteten Anträge</em> puede describir una tramitación en curso): <em>die geprüften Unterlagen</em> = <em>die Unterlagen, die geprüft wurden</em>. En cambio, el participio II de un verbo intransitivo (con <em>sein</em>) es activo y terminado: <em>die gestiegenen Kosten</em> = <em>die Kosten, die gestiegen sind</em>."
       },
       {
         h: "El atributo ampliado, con moderación",
@@ -39,7 +39,7 @@ LINGUAI.addStrings("es", {
     ],
     grammar: {
       title: "Participio I y II como atributo",
-      note: "<b>Participio I</b> = infinitivo + <i>-d</i>: activo, simultáneo. <b>Participio II</b>: pasivo (verbos transitivos; suele indicar acción completada, pero el valor temporal depende del verbo y del contexto), activo y terminado (intransitivos con <i>sein</i>). Delante del sustantivo, con la terminación del adjetivo; los complementos van entre el artículo y el participio.",
+      note: "<b>Participio I</b> = infinitivo + <i>-d</i> (excepción: <i>sein</i> → <i>seiend</i>): activo, simultáneo. <b>Participio II</b>: pasivo (verbos transitivos; suele indicar acción completada, pero el valor temporal depende del verbo y del contexto), activo y terminado (intransitivos con <i>sein</i>). Delante del sustantivo, con la terminación del adjetivo; los complementos van entre el artículo y el participio.",
       table: {
         head: ["participio", "sentido", "relativa correspondiente", "ejemplo"],
         rows: [
@@ -249,7 +249,7 @@ LINGUAI.addStrings("es", {
       {
         q: "Completa el comunicado con las dos preposiciones.",
         tr: "A causa del retraso en la entrega hubo que aplazar la fecha. En caso necesario se acordará una nueva fecha.",
-        why: "<i>Wegen</i> (o <i>Aufgrund</i>, <i>Infolge</i>) + genitivo para la causa. <i>Bei Bedarf</i> para la condición; en este contexto también vale <i>Nach Bedarf</i>, «según necesidad»."
+        why: "<i>Wegen</i> (o <i>Aufgrund</i>, <i>Infolge</i>) + genitivo para la causa. <i>Bei Bedarf</i> para la condición; <i>Nach Bedarf</i> significaría «según necesidad», que es otro sentido y aquí no se acepta."
       },
       {
         q: "Relaciona cada expresión con su significado.",
@@ -295,7 +295,7 @@ LINGUAI.addStrings("es", {
       },
       {
         h: "Cómo elegir",
-        p: "Antes de nominalizar hazte cuatro preguntas. ¿Quién actúa, y lo dice el sustantivo? ¿Existe un sustantivo natural (<em>Abschluss, Klärung</em>)? ¿Tengo que mantener un tiempo o un modo? ¿El lector lo entiende a la primera lectura? Si respondes que sí a todas, la forma compacta funciona (<em>Nach Abschluss der Prüfung ...</em>); si no, la subordinada es más clara, y en los textos dirigidos a un público no especialista casi siempre lo es."
+        p: "Antes de nominalizar hazte cuatro preguntas. ¿Quién actúa, y lo dice el sustantivo? ¿Existe un sustantivo natural (<em>Abschluss, Klärung</em>)? ¿Puedo prescindir del tiempo y del modo? ¿El lector lo entiende a la primera lectura? Si respondes que sí a todas, la forma compacta funciona (<em>Nach Abschluss der Prüfung ...</em>); si no, la subordinada es más clara, y en los textos dirigidos a un público no especialista casi siempre lo es."
       },
       {
         contrast: "El español dispone de recursos compactos como <em>tras concluir</em> o <em>concluidos los trabajos</em>; el alemán tiene otros, no idénticos: <em>nach Abschluss der Arbeiten</em>, <em>ohne dass</em>, y no cuenta con el gerundio. Con <em>um ... zu</em> y <em>ohne ... zu</em> el sujeto implícito de la infinitiva depende de la construcción (normalmente coincide con el de la principal); cuando los sujetos son distintos suele hacer falta una subordinada con <em>dass</em>, <em>damit</em> o <em>weil</em>. El español, además, tiene el subjuntivo para marcar la eventualidad (<em>si la verificación se prolongara</em>); <em>en caso de que cambien las condiciones</em> es ya una subordinada, no una forma compacta. En alemán la eventualidad se expresa con <em>sollte</em> o <em>falls ... sollten</em>: <em>Sollte die Prüfung länger dauern, ...</em>, <em>falls sich die Bedingungen ändern sollten</em>."
@@ -322,7 +322,7 @@ LINGUAI.addStrings("es", {
       },
       examples: [
         { tr: "La sesión se aplazó porque el presidente estaba enfermo y la ponente estaba bloqueada en el extranjero.", note: "dos sujetos: la forma nominal ocultaría uno de los dos" },
-        { tr: "El contrato se firmará solo cuando el consejo haya aprobado y la financiación esté asegurada.", note: "dos condiciones con verbos distintos: subordinada" },
+        { tr: "El contrato se firmará solo cuando el consejo haya dado su aprobación y la financiación esté asegurada.", note: "dos condiciones con verbos distintos: subordinada" },
         { tr: "Si la verificación llegara a prolongarse, se aplazará la fecha.", note: "Sollte en primera posición: eventualidad hipotética, presentada con cautela" },
         { tr: "La subvención deja de concederse si las condiciones marco llegaran a cambiar.", note: "falls ... ändern sollten: matiz modal" },
         { tr: "Los resultados son significativos solo si la muestra es representativa.", note: "nur dann ..., wenn: condición necesaria; también puede conservarse en forma nominal (Nur bei repräsentativer Stichprobe ...), pero la subordinada la hace más explícita" },
@@ -383,7 +383,7 @@ LINGUAI.addStrings("es", {
       },
       {
         q: "Completa las dos condiciones de un contrato.",
-        tr: "El contrato se firmará solo cuando el consejo haya aprobado y la financiación esté asegurada.",
+        tr: "El contrato se firmará solo cuando el consejo haya dado su aprobación y la financiación esté asegurada.",
         why: "<i>wenn</i> (o <i>sobald</i>, <i>nachdem</i>) para la primera condición, <i>ist</i> para la segunda: <i>die Finanzierung gesichert ist</i>. Dos condiciones con sujetos distintos son un buen motivo para mantener la subordinada."
       },
       {
@@ -454,7 +454,7 @@ LINGUAI.addStrings("es", {
           "un futuro",
           "una pasiva"
         ],
-        why: "<i>werden</i> + infinitivo con <i>jetzt</i> es una <b>conjetura</b> sobre el presente: «estará en la reunión ahora». Sin <i>jetzt</i> o <i>wohl</i> también podría leerse como futuro."
+        why: "<i>werden</i> + infinitivo puede expresar futuro o conjetura según el contexto; con <i>jetzt</i> es una <b>conjetura</b> sobre el presente: «estará en la reunión ahora». El contexto decide: con otras pistas la misma forma puede leerse como futuro."
       },
       {
         q: "¿Qué grupo corresponde a «die Anträge, die gerade bearbeitet werden»?",
@@ -491,7 +491,7 @@ LINGUAI.addStrings("es", {
       },
       {
         q: "Traduce: «Las decisiones tomadas en la reunión se comunicarán tras la conclusión de la verificación.» (die Sitzung, die Entscheidung, mitteilen, der Abschluss, die Prüfung)",
-        why: "<i>Die in der Sitzung getroffenen Entscheidungen werden nach Abschluss der Prüfung mitgeteilt.</i> La pasiva con <i>werden</i> expresa el futuro del texto español; también se acepta la frase que empieza por <i>Nach Abschluss der Prüfung</i>."
+        why: "<i>Die in der Sitzung getroffenen Entscheidungen werden nach Abschluss der Prüfung mitgeteilt.</i> <i>werden ... mitgeteilt</i> es una pasiva de presente, que se refiere al futuro por el contexto (<i>nach Abschluss</i>); el Futur I pasivo sería <i>werden ... mitgeteilt werden</i>; también se acepta la frase que empieza por <i>Nach Abschluss der Prüfung</i>."
       },
       {
         tr: "Habrá terminado el informe para el viernes. Las decisiones hechas constar en acta se aplicarán tras la conclusión de la verificación.",

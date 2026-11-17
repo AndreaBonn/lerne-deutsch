@@ -25,10 +25,10 @@ LINGUAI.addStrings("es", {
       },
       {
         h: "Las pistas",
-        p: "Para decidir qué lectura tienes delante, fíjate en el momento y en los adverbios. Una referencia al presente (<em>jetzt, noch, gerade</em>) o al pasado (<em>inzwischen, längst</em>) indica una conjetura; un plazo con <em>bis</em> indica una acción terminada en el futuro. Los adverbios dosifican la certeza: <em>wohl</em> y <em>vermutlich</em> siguen siendo prudentes, <em>schon</em> tranquiliza (<em>Das wird schon klappen</em>), <em>sicher</em> y <em>bestimmt</em> la refuerzan."
+        p: "Para decidir qué lectura tienes delante, fíjate en el momento y en los adverbios. Una referencia al presente (<em>jetzt, noch, gerade</em>) o al pasado (<em>inzwischen, längst</em>) apunta a una conjetura; un plazo con <em>bis</em> apunta a una acción terminada en el futuro. Son indicios, no reglas: <em>inzwischen</em>, por ejemplo, también puede referirse a una acción futura ya completada, y decide el contexto. Los adverbios dosifican la certeza: <em>wohl</em> y <em>vermutlich</em> siguen siendo prudentes, <em>schon</em> tranquiliza (<em>Das wird schon klappen</em>), <em>sicher</em> y <em>bestimmt</em> la refuerzan."
       },
       {
-        contrast: "El español tiene el mismo uso y lo emplea muchísimo: el futuro simple de conjetura (<em>estará en la oficina</em>) y el futuro perfecto (<em>lo habrá leído</em>). Por eso te sale con naturalidad, pero hay una diferencia: en español este futuro se entiende como conjetura casi siempre, aunque no haya ningún adverbio, mientras que en alemán <em>Er wird zu Hause sein</em> a secas, sin contexto claro, también puede leerse como un futuro auténtico («estará en casa» más tarde). Por eso en alemán se añaden con tanta frecuencia <em>wohl</em>, <em>schon</em> o <em>sicher</em>, que marcan la conjetura. El futuro perfecto español de acción terminada (<em>para el viernes habremos acabado</em>) corresponde, en cambio, al Futur II con <em>bis</em>."
+        contrast: "El español tiene el mismo uso y lo emplea muchísimo: el futuro simple de conjetura (<em>estará en la oficina</em>) y el futuro perfecto (<em>lo habrá leído</em>). Por eso te sale con naturalidad. En ambas lenguas el contexto decide entre conjetura y futuro auténtico: <em>Er wird zu Hause sein</em> a secas, como «estará en casa», puede ser una suposición o un hecho previsto (<em>Morgen wird er zu Hause sein</em>). En alemán se añaden con frecuencia <em>wohl</em>, <em>schon</em> o <em>sicher</em> para marcar o matizar la conjetura. El futuro perfecto español de acción terminada (<em>para el viernes habremos acabado</em>) corresponde, en cambio, al Futur II con <em>bis</em>."
       },
       {
         trap: "Para el pasado no basta el Futur I: <em>Er wird gestern krank sein</em> no funciona, hace falta el Futur II, <em>Er wird gestern wohl krank gewesen sein</em>. Y el auxiliar del infinitivo perfecto es el del Perfekt del verbo, no el que te dicta el español (<em>haber</em> para todo): <em>Sie wird abgereist sein</em> (movimiento, <em>sein</em>), <em>Er wird es vergessen haben</em> (<em>haben</em>)."
@@ -90,7 +90,7 @@ LINGUAI.addStrings("es", {
           "una conjetura sobre algo que ya ha ocurrido",
           "una pasiva de presente"
         ],
-        why: "<i>bis Jahresende</i> fija el punto futuro antes del cual la acción estará terminada,, y el anuncio de la cadena expresa un compromiso, no una conjetura."
+        why: "<i>bis Jahresende</i> fija el punto futuro antes del cual la acción estará terminada, y el anuncio de la cadena expresa un compromiso, no una conjetura."
       },
       {
         q: "Sabes que la carta se entregó ayer, pero no sabes si el destinatario ya la ha leído. ¿Qué frase formula la conjetura correcta?",
@@ -300,7 +300,7 @@ LINGUAI.addStrings("es", {
         p: "Las partículas suelen ir sin acento detrás del verbo y de los pronombres, antes de la información nueva, una tendencia más que una regla (<em>Er wird wohl noch schlafen</em>). Son propias del habla, de los chats y de los diálogos: en un texto formal, como un informe o una carta a un cliente, normalmente se evitan. <em>halt</em> es más coloquial y se oye sobre todo en el sur, <em>eben</em> es más neutro, pero en la mayoría de los casos son intercambiables."
       },
       {
-        contrast: "El español expresa estos matices con la entonación y con palabras como <em>pues, ya, si, es que, acaso, no será que, qué se le va a hacer</em>: <em>Hast du etwa ...?</em> se parece a «¿acaso has ...?» o «¿no habrás ...?», <em>Dann warten wir halt</em> a «pues esperamos, qué se le va a hacer», <em>Das ist ja ein Ding!</em> a «¡mira qué cosa!» o «¡anda!». Donde el español cambia el tiempo del verbo (<em>estará</em>), el alemán añade <em>wohl</em>. Ninguna de las cinco tiene un equivalente fijo: se aprende la función."
+        contrast: "El español expresa estos matices con la entonación y con palabras como <em>pues, ya, si, es que, acaso, no será que, qué se le va a hacer</em>: <em>Hast du etwa ...?</em> se parece a «¿acaso has ...?» o «¿no habrás ...?», <em>Dann warten wir halt</em> a «pues esperamos, qué se le va a hacer», <em>Das ist ja ein Ding!</em> a «¡mira qué cosa!» o «¡anda!». Donde el español recurre al futuro de conjetura (<em>estará</em>), el alemán puede usar el presente o <em>werden</em>, con o sin <em>wohl</em> (<em>Er ist wohl krank</em>, <em>Er wird wohl krank sein</em>). Ninguna de las cinco tiene un equivalente fijo: se aprende la función."
       },
       {
         trap: "<em>etwa</em> tiene dos vidas. Delante de un número es un adverbio, <em>etwa zwei Stunden</em>, «unas dos horas». En una pregunta con sorpresa es una partícula, <em>Ist er etwa krank?</em>. También <em>wohl</em> puede ser un adverbio pleno: <em>Ich fühle mich hier wohl</em> quiere decir «aquí me siento a gusto»."
@@ -326,7 +326,7 @@ LINGUAI.addStrings("es", {
         { tr: "Seguirá durmiendo, probablemente.", note: "wohl: conjetura" },
         { tr: "Sabes bien cuánto tarda.", note: "ja: algo que ambos saben" },
         { tr: "¿No será que ya está todo?", note: "etwa: sorpresa, se espera un no" },
-        { tr: "El autobús se ha ido, así que vamos andando, qué se le va a hacer.", note: "halt: resignación" },
+        { tr: "El autobús ya se ha ido, así que tendremos que ir andando, qué se le va a hacer.", note: "halt: resignación" },
         { tr: "No se puede hacer nada.", note: "eben: resignación" },
         { tr: "¿No habrás olvidado la llave?", note: "etwa: sospecha en una pregunta de sí o no" }
       ]
@@ -451,7 +451,7 @@ LINGUAI.addStrings("es", {
           "está absolutamente seguro",
           "solo refiere lo que dicen otros"
         ],
-        why: "<b>dürfte</b> expresa probabilidad. Para la certeza sería <i>muss</i>, para referir rumores <i>soll</i>."
+        why: "<b>dürfte</b> expresa probabilidad. Para una deducción de mayor certeza sería <i>muss</i>, para referir rumores <i>soll</i>."
       },
       {
         q: "Un compañero entra en la oficina y encuentra el trabajo ya hecho: «Du hast ja schon alles erledigt!» ¿Qué expresa ja?",

@@ -25,7 +25,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         h: "Rozbudowana przydawka, z umiarem",
-        p: "Między rodzajnikiem a rzeczownikiem mogą stać też dopełnienia i okoliczniki, ale imiesłów zawsze stoi <strong>bezpośrednio przed rzeczownikiem</strong>: <em>die im letzten Quartal erzielten Umsätze</em>. W protokołach i raportach wystarczy jedno lub dwa takie dopowiedzenia; przy większej liczbie czytelnik gubi wątek i lepsze jest zdanie względne. Typ z <em>zu</em> (<em>die zu prüfenden Unterlagen</em>) i konstrukcje dłuższe należą do C2."
+        p: "Między rodzajnikiem a rzeczownikiem mogą stać też dopełnienia i okoliczniki, ale imiesłów zwykle stoi <strong>bezpośrednio przed rzeczownikiem</strong> (inne określenia mogą się z nim łączyć: <em>die geprüften und freigegebenen Unterlagen</em>): <em>die im letzten Quartal erzielten Umsätze</em>. W protokołach i raportach wystarczy jedno lub dwa takie dopowiedzenia; przy większej liczbie czytelnik gubi wątek i lepsze jest zdanie względne. Typ z <em>zu</em> (<em>die zu prüfenden Unterlagen</em>) i konstrukcje dłuższe należą do C2."
       },
       {
         contrast: "Po polsku imiesłów przymiotnikowy z dopełnieniem stoi zwykle <strong>za</strong> rzeczownikiem: <em>wyniki osiągnięte w drugim kwartale</em>, <em>dane zebrane przez urząd</em>. Po niemiecku wszystko, co w polskim zdaniu poszłoby za imiesłowem, przechodzi <strong>przed</strong> rzeczownik, między rodzajnik a imiesłów: <em>die vom Amt erhobenen Daten</em>. Sam imiesłów bez dopełnień stoi po polsku przed rzeczownikiem, tak jak po niemiecku (<em>rosnące koszty, sprawdzone dokumenty</em>). Imiesłów czynny na <em>-ący</em> jest w polskim tekście pisanym częsty (<em>rosnące, obowiązujące</em>), natomiast imiesłowu czynnego przeszłego (<em>koszty wzrosłe</em>) prawie się nie używa: po polsku powiemy raczej <em>koszty, które wzrosły</em>. Niemiecki Partizip II czasowników nieprzechodnich (<em>die gestiegenen Kosten</em>) jest za to zupełnie zwyczajny."
@@ -98,7 +98,7 @@ LINGUAI.addStrings("pl", {
           "im vierten Quartal erzielte",
           "erzielten im vierten Quartal"
         ],
-        why: "Imiesłów stoi bezpośrednio przed rzeczownikiem, a po <i>die</i> w liczbie mnogiej przyjmuje <b>-en</b>: <i>die im vierten Quartal erzielten Umsätze</i>. <i>erzielte</i> ma złą końcówkę; w <i>erzielten im vierten Quartal</i> okolicznik stoi za imiesłowem, co po polsku jest możliwe, ale po niemiecku nie."
+        why: "Imiesłów zwykle stoi bezpośrednio przed rzeczownikiem, a po <i>die</i> w liczbie mnogiej przyjmuje <b>-en</b>: <i>die im vierten Quartal erzielten Umsätze</i>. <i>erzielte</i> ma złą końcówkę; w <i>erzielten im vierten Quartal</i> okolicznik stoi za imiesłowem, co po polsku jest możliwe, ale po niemiecku nie."
       },
       {
         q: "Uzupełnij imiesłowem II od prüfen z właściwą końcówką: „Die vom Ausschuss ___ Unterlagen werden archiviert.”",
@@ -249,7 +249,7 @@ LINGUAI.addStrings("pl", {
       {
         q: "Uzupełnij komunikat dwoma przyimkami.",
         tr: "Z powodu opóźnienia dostawy termin trzeba było przesunąć. W razie potrzeby zostanie uzgodniony nowy termin.",
-        why: "<i>Wegen</i> (albo <i>Aufgrund</i>, <i>Infolge</i>) + dopełniacz dla przyczyny. <i>Bei Bedarf</i> („w razie potrzeby”) wyraża warunek. <i>Nach Bedarf</i> znaczy „stosownie do potrzeb” i to inne znaczenie; choć pole je przyjmuje, tłumaczenie wymaga <i>Bei</i>."
+        why: "<i>Wegen</i> (albo <i>Aufgrund</i>, <i>Infolge</i>) + dopełniacz dla przyczyny. <i>Bei Bedarf</i> („w razie potrzeby”) wyraża warunek. <i>Nach Bedarf</i> znaczy „stosownie do potrzeb”, czyli co innego, dlatego tu wchodzi tylko <i>Bei</i>."
       },
       {
         q: "Połącz każde wyrażenie z jego znaczeniem.",
@@ -295,7 +295,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         h: "Jak wybierać",
-        p: "Przed nominalizacją zadaj cztery pytania. Kto działa i czy mówi to rzeczownik? Czy istnieje naturalny rzeczownik (<em>Abschluss, Klärung</em>)? Czy muszę zachować czas albo tryb? Czy czytelnik zrozumie to od pierwszego czytania? Jeśli na wszystkie odpowiedź brzmi „tak”, forma zwarta się sprawdzi (<em>Nach Abschluss der Prüfung ...</em>), w przeciwnym razie zdanie podrzędne jest jaśniejsze, a w tekstach dla odbiorcy niespecjalistycznego niemal zawsze."
+        p: "Przed nominalizacją zadaj cztery pytania. Czy kto działa, jest jasne i bez czasownika? Czy istnieje naturalny rzeczownik (<em>Abschluss, Klärung</em>)? Czy mogę pominąć czas i tryb? Czy czytelnik zrozumie to od pierwszego czytania? Jeśli na wszystkie odpowiedź brzmi „tak”, forma zwarta się sprawdzi (<em>Nach Abschluss der Prüfung ...</em>), w przeciwnym razie zdanie podrzędne jest jaśniejsze, a w tekstach dla odbiorcy niespecjalistycznego niemal zawsze."
       },
       {
         contrast: "Polski ma kilka środków zwartych: imiesłów przysłówkowy (<em>zakończywszy kontrolę</em>), <em>po zakończeniu prac</em>, <em>w razie gdyby kontrola miała potrwać dłużej</em>. Niemiecki nie ma imiesłowu przysłówkowego, ale pozostałe dwie konstrukcje ma: <em>po zakończeniu prac</em> to <em>nach Abschluss der Arbeiten</em>, a ewentualność oddaje zdanie podrzędne (<em>Sollte die Prüfung länger dauern, ...</em> albo <em>falls ... ändern sollten</em>). Imiesłów przysłówkowy nie ma jednego odpowiednika: zależnie od zdania wybiera się grupę z <em>nach</em> albo zdanie podrzędne z <em>nachdem</em>. Bezokolicznik z <em>um ... zu</em> albo <em>ohne ... zu</em> zwykle odnosi się do podmiotu zdania głównego, ale nie zawsze; gdy podmiot byłby niejasny, jaśniejsze jest zdanie podrzędne z <em>dass</em> albo <em>weil</em>. Odcień <em>gdyby ... miała</em> po polsku oddaje zwykle tryb przypuszczający."

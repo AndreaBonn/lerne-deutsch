@@ -21,11 +21,11 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "Werden for guessing",
-        p: "In German the real future is often expressed with the present plus a time marker (<em>Morgen fliege ich nach Wien</em>). <strong>werden</strong> + infinitive is used above all for a <strong>supposition about the present</strong>: <em>Er wird wohl noch im Stau stehen. Es klingelt. Das wird der Postbote sein.</em> For a supposition about the <strong>past</strong> you use the <strong>Futur II</strong>, <em>werden</em> + past participle + <em>haben</em> or <em>sein</em>: <em>Sie wird die Nachricht inzwischen gelesen haben.</em> The same Futur II can also express an action that will be <strong>completed by a future point</strong>: <em>Bis Ende des Monats werden wir die Studie abgeschlossen haben.</em>"
+        p: "In German the real future is often expressed with the present plus a time marker (<em>Morgen fliege ich nach Wien</em>). <strong>werden</strong> + infinitive can express a future (<em>Es wird morgen regnen</em>) or a <strong>supposition about the present</strong> (<em>Er wird wohl noch im Stau stehen. Es klingelt. Das wird der Postbote sein.</em>); the context decides which reading you have. For a supposition about the <strong>past</strong> you use the <strong>Futur II</strong>, <em>werden</em> + past participle + <em>haben</em> or <em>sein</em>: <em>Sie wird die Nachricht inzwischen gelesen haben.</em> The same Futur II can also express an action that will be <strong>completed by a future point</strong>: <em>Bis Ende des Monats werden wir die Studie abgeschlossen haben.</em>"
       },
       {
         h: "The clues",
-        p: "To decide which reading you are looking at, check the time reference and the adverbs. A reference to the present (<em>jetzt, noch, gerade</em>) or to the past (<em>inzwischen, längst</em>) points to a supposition; a deadline with <em>bis</em> points to an action completed in the future. Adverbs adjust the certainty: <em>wohl</em> and <em>vermutlich</em> stay cautious, <em>schon</em> reassures (<em>Das wird schon klappen</em>), <em>sicher</em> and <em>bestimmt</em> strengthen it."
+        p: "To decide which reading you are looking at, read the whole sentence in its context. Time references and adverbs are clues, not rules: a reference to the present (<em>jetzt, noch, gerade</em>) or to the past (<em>inzwischen, längst</em>) often suggests a supposition, and a deadline with <em>bis</em> often suggests an action completed in the future, but <em>Er wird jetzt arbeiten</em> can also be an imminent action. Adverbs adjust the certainty: <em>wohl</em> and <em>vermutlich</em> stay cautious, <em>schon</em> reassures (<em>Das wird schon klappen</em>), <em>sicher</em> and <em>bestimmt</em> strengthen it."
       },
       {
         contrast: "English does the same thing: <em>will</em> for a guess about the present (<em>that'll be the postman</em>, <em>he'll be at the office</em>) and <em>will have</em> for a guess about the past (<em>she'll have read it by now</em>). So this should feel natural, but there is a difference in frequency: German leans on an adverb such as <em>wohl</em>, <em>schon</em> or <em>sicher</em> to mark the guess, while <em>Er wird zu Hause sein</em> on its own, without a clear context, can also be read as a plain future. English <em>will</em> works the other way round: it is the normal marker of the real future, whereas German usually says that with the present. The English future perfect of completion (<em>by Friday we'll have finished</em>) corresponds to the Futur II with <em>bis</em>."
@@ -34,19 +34,19 @@ LINGUAI.addStrings("en", {
         trap: "For the past the Futur I is not enough: <em>Er wird gestern krank sein</em> doesn't work, you need the Futur II, <em>Er wird gestern wohl krank gewesen sein</em>. And the auxiliary of the perfect infinitive is the one the verb takes in the Perfekt: <em>Sie wird abgereist sein</em> (motion, <em>sein</em>), <em>Er wird es vergessen haben</em> (<em>haben</em>). English always says <em>have</em>, so here you have to choose."
       },
       {
-        tip: "Always ask which moment the sentence refers to: present, past, or a future point with <em>bis</em>. The moment decides between the Futur I (supposition about the present), the Futur II (past) and the Futur II of completion."
+        tip: "Ask which moment the sentence refers to: present, past, or a future point with <em>bis</em>. The moment and the context, helped by clues such as <em>jetzt, längst</em> or <em>bis</em>, point to the Futur I (supposition about the present or a future), the Futur II (past) or the Futur II of completion."
       }
     ],
     grammar: {
       title: "Futur I and II as supposition",
-      note: "<b>werden + infinitive</b>: supposition about the present. <b>werden + past participle + haben/sein</b>: supposition about the past, or action completed by a future point (with <i>bis</i>). Adjusting the certainty: <i>wohl, vermutlich</i> (cautious), <i>schon</i> (reassuring), <i>sicher</i> (more certain).",
+      note: "<b>werden + infinitive</b>: future or supposition about the present, depending on the context. <b>werden + past participle + haben/sein</b>: supposition about the past, or action completed by a future point (with <i>bis</i>). Adjusting the certainty: <i>wohl, vermutlich</i> (cautious), <i>schon</i> (reassuring), <i>sicher</i> (more certain).",
       table: {
         head: ["construction", "meaning", "example"],
         rows: [
-          ["werden + infinitive", "supposition about the present", "Er wird wohl noch im Stau stehen."],
+          ["werden + infinitive", "supposition about the present (or future, depending on context)", "Er wird wohl noch im Stau stehen."],
           ["werden + past participle + haben/sein", "supposition about the past", "Sie wird die Nachricht inzwischen gelesen haben."],
           ["werden + past participle + haben/sein with bis", "action completed by a future point", "Bis Ende des Monats werden wir die Studie abgeschlossen haben."],
-          ["werden + schon + infinitive", "reassurance", "Das wird schon klappen."],
+          ["werden + schon + infinitive", "often reassurance", "Das wird schon klappen."],
           ["present + time expression", "scheduled future", "Morgen fliege ich nach Wien."]
         ]
       },
@@ -81,7 +81,7 @@ LINGUAI.addStrings("en", {
           "Der Chef wird jetzt im Urlaub sein, er hat es ja angekündigt.",
           "Der Chef wird die Mail längst gelesen haben."
         ],
-        why: "The first has <i>nächste Woche</i>: an event that will happen, so a future. In the others the moment is the present (<i>jetzt</i>) or the past (<i>längst gelesen haben</i>): they are suppositions."
+        why: "The first has <i>nächste Woche</i>, a clue that points to an event that will happen, so a future. In the others the moment is the present (<i>jetzt</i>) or the past (<i>längst gelesen haben</i>): they are suppositions."
       },
       {
         q: "A chain of stores announces: «Bis Jahresende werden wir alle Filialen modernisiert haben.» What does the Futur II express?",
@@ -149,7 +149,7 @@ LINGUAI.addStrings("en", {
     theme: "Certainty, rumors and claims",
     title: "Er muss krank sein, sie soll reich sein",
     objectives: [
-      "grade certainty with muss, dürfte, könnte, kann, mag",
+      "grade certainty with muss, dürfte, könnte, kann nicht, and recognize the concessive mag",
       "report what others say with soll",
       "report what the subject claims with will",
       "use the perfect infinitive to talk about the past"
@@ -157,7 +157,7 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "From obligation to certainty",
-        p: "Modals can express not only obligation or permission but also how sure the speaker is that something is true; context and meaning decide which reading you have (<em>Er muss zu Hause sein</em> can be an obligation, <em>Er soll kommen</em> an order or a rumor). With <em>sein</em>, <em>haben</em> or a perfect infinitive the certainty reading is the most frequent one. <strong>muss</strong> is an almost certain deduction (<em>Es muss geregnet haben, die Straße ist nass</em>), <strong>dürfte</strong> means it is probable (<em>Er dürfte schon angekommen sein</em>), <strong>könnte</strong> that it is possible (<em>Das könnte ein Irrtum sein</em>). <strong>kann nicht</strong> says it is impossible (<em>Das kann nicht stimmen</em>) and <strong>mag</strong> admits something, usually as a concession (<em>Das mag sein, aber ich sehe es anders</em>)."
+        p: "Modals can express not only obligation or permission but also how sure the speaker is that something is true; context and meaning decide which reading you have (<em>Er muss zu Hause sein</em> can be an obligation, <em>Er soll kommen</em> an order or a rumor). With <em>sein</em>, <em>haben</em> or a perfect infinitive the certainty reading is the most frequent one. <strong>muss</strong> is a very probable conclusion (<em>Es muss geregnet haben, die Straße ist nass</em>), <strong>dürfte</strong> means it is probable (<em>Er dürfte schon angekommen sein</em>), <strong>könnte</strong> that it is possible (<em>Das könnte ein Irrtum sein</em>). <strong>kann nicht</strong> says it is impossible (<em>Das kann nicht stimmen</em>) and <strong>mag</strong> in <em>Das mag sein</em> is concessive: it admits something without taking a place on the scale of certainty (<em>Das mag sein, aber ich sehe es anders</em>)."
       },
       {
         h: "Reporting: soll and will",
@@ -175,11 +175,11 @@ LINGUAI.addStrings("en", {
     ],
     grammar: {
       title: "Subjective modals",
-      note: "<b>muss</b>: almost certain. <b>dürfte</b>: probable. <b>kann / könnte</b>: possible. <b>mag</b>: concession. <b>soll</b>: others say so. <b>will</b>: the subject claims it. Past: modal + past participle + haben/sein.",
+      note: "<b>muss</b>: very probable conclusion. <b>dürfte</b>: probable. <b>kann / könnte</b>: possible. <b>mag</b>: concession (not a degree of certainty). <b>soll</b>: others say so. <b>will</b>: the subject claims it. Past: modal + past participle + haben/sein.",
       table: {
         head: ["modal", "certainty or source", "example"],
         rows: [
-          ["muss", "almost certain deduction", "Er muss krank sein."],
+          ["muss", "very probable conclusion", "Er muss krank sein."],
           ["dürfte", "probable", "Er dürfte krank sein."],
           ["kann / könnte", "possible", "Er könnte krank sein."],
           ["mag", "concession", "Das mag sein."],
@@ -227,7 +227,7 @@ LINGUAI.addStrings("en", {
           "some witnesses; the paper doesn't vouch for it",
           "nobody: it is the mayor's intention never to accept money"
         ],
-        why: "<b>will</b> + perfect infinitive: the claim is the subject's own. For “is said to” it would be <i>soll</i>; the reading “intends to” is not possible with a perfect infinitive."
+        why: "<b>will</b> + perfect infinitive: in this sentence and context the claim is the subject's own, so the mayor reports his own statement. For “is said to” it would be <i>soll</i>. (A perfect infinitive can sometimes express a goal, as in <i>Ich will bis morgen fertig geworden sein</i>, but here it does not.)"
       },
       {
         q: "An auditor comments on an error in the accounts and chooses the modal carefully. Which sequence goes from the greatest certainty to the least?",
@@ -236,7 +236,7 @@ LINGUAI.addStrings("en", {
           "Das könnte ein Irrtum sein. - Das dürfte ein Irrtum sein. - Das muss ein Irrtum sein.",
           "Das dürfte ein Irrtum sein. - Das muss ein Irrtum sein. - Das könnte ein Irrtum sein."
         ],
-        why: "<b>muss</b> is an almost certain deduction, <b>dürfte</b> indicates probability, <b>könnte</b> mere possibility. The second sequence is the reverse, the third swaps <i>muss</i> and <i>dürfte</i>."
+        why: "<b>muss</b> is a very probable conclusion, <b>dürfte</b> indicates probability, <b>könnte</b> mere possibility. The second sequence is the reverse, the third swaps <i>muss</i> and <i>dürfte</i>."
       },
       {
         q: "From the radio news: «Laut Augenzeugen ___ der Täter in einem roten Auto geflohen sein.»",
@@ -251,12 +251,12 @@ LINGUAI.addStrings("en", {
       {
         q: "Fill in muss, soll or will.",
         tr: "The shutters are down and the mailbox is full: the Albers family must be on vacation, it's hard to think otherwise. According to a neighbor they left two weeks ago, but the caretaker claims he didn't notice anything.",
-        why: "<i>muss</i>: deduction from the clues. <i>soll</i>: a neighbor says so (<i>einem Nachbarn zufolge</i>). <i>will</i>: the caretaker himself claims it."
+        why: "<i>muss</i>: deduction from the clues. <i>soll</i>: a neighbor says so (<i>einem Nachbarn zufolge</i>). <i>will</i>: the caretaker himself claims it; the cue <i>nach eigener Aussage ... nichts mitbekommen haben</i> (“by his own account”) makes <i>will</i> the only fit."
       },
       {
         q: "Match each sentence to its meaning.",
         pairs: [
-          "I deduce almost for certain that he is ill",
+          "I conclude from the clues that he must be ill",
           "he is probably ill",
           "he is said to be ill",
           "he claims to have been ill"
@@ -297,7 +297,7 @@ LINGUAI.addStrings("en", {
       },
       {
         h: "Position and register",
-        p: "Particles tend to stand unstressed after the verb and the pronouns, before the new information (<em>Er wird wohl noch schlafen</em>). They are typical of speech, chats and dialogues: in a formal text, such as a report or a letter to a client, they are usually avoided. <em>halt</em> is more colloquial and heard mostly in the south, <em>eben</em> is more neutral, but in most cases they are interchangeable."
+        p: "Particles tend to stand unstressed after the verb and the pronouns, before the new information (<em>Er wird wohl noch schlafen</em>). They are typical of speech, chats and dialogues: in formal writing, such as a report or a letter to a client, they are mostly avoided, though how well they fit depends on the text type. <em>halt</em> is more colloquial and heard mostly in the south, <em>eben</em> is more neutral, but in most cases they are interchangeable."
       },
       {
         contrast: "English has no particles of this kind and does the same work with intonation, tag questions and small words and phrases: <em>surely</em>, <em>after all</em>, <em>you know</em>, <em>I suppose</em>, <em>oh well</em>, <em>that's just how it is</em>. <em>Hast du etwa ...?</em> is close to “you haven't ..., have you?” or “don't tell me you ...”, <em>Dann warten wir halt</em> to “then we'll just wait, oh well”, and <em>Du weißt ja</em> to “you know” or “as you know”. Where English changes the verb (<em>he'll be</em>) or adds <em>I guess</em>, German adds <em>wohl</em>. None of the five has a fixed equivalent: you learn the function. Beware of one trap: English <em>just</em> is not always <em>halt</em>, because <em>just</em> also means “only” (<em>nur</em>) and “a moment ago” (<em>gerade</em>)."
@@ -311,7 +311,7 @@ LINGUAI.addStrings("en", {
     ],
     grammar: {
       title: "Modal particles: wohl, ja, etwa, halt, eben",
-      note: "<b>wohl</b>: supposition. <b>ja</b>: something known or surprising. <b>etwa</b>: in yes/no questions, surprise or suspicion. <b>halt / eben</b>: resignation. Register: spoken, not formal.",
+      note: "<b>wohl</b>: supposition. <b>ja</b>: something known or surprising. <b>etwa</b>: in yes/no questions, surprise or suspicion. <b>halt / eben</b>: resignation. Register: mostly spoken, mostly avoided in formal writing.",
       table: {
         head: ["particle", "effect", "example"],
         rows: [
@@ -319,7 +319,7 @@ LINGUAI.addStrings("en", {
           ["ja", "something known or surprising", "Du weißt ja, wie lange das dauert."],
           ["etwa", "surprise or suspicion in a question, a no is expected", "Hast du etwa den Schlüssel vergessen?"],
           ["halt, eben", "resignation", "Da kann man eben nichts machen."],
-          ["register", "spoken, avoid in formal writing", "Das ist halt so."]
+          ["register", "mostly spoken, mostly avoided in formal writing", "Das ist halt so."]
         ]
       },
       examples: [
@@ -336,7 +336,7 @@ LINGUAI.addStrings("en", {
       "the nuance",
       "the expectation",
       "the surprise",
-      "the resignation",
+      "the resigned acceptance (resignation in the sense of acceptance)",
       "the obviousness, the matter of course",
       "to hint, to imply",
       "to reproach, to accuse of",
@@ -371,7 +371,7 @@ LINGUAI.addStrings("en", {
           "Die Zugverbindung ist halt schlecht.",
           "Die Zugverbindung ist eben nicht so toll."
         ],
-        why: "The particles <i>halt</i> and <i>eben</i>, together with vocabulary such as <i>schlecht</i> and <i>nicht so toll</i>, are spoken language: a report avoids them and uses neutral vocabulary such as <i>unzureichend</i>."
+        why: "The particles <i>halt</i> and <i>eben</i>, together with vocabulary such as <i>schlecht</i> and <i>nicht so toll</i>, are spoken language: a formal report mostly avoids them and uses neutral vocabulary such as <i>unzureichend</i>."
       },
       {
         q: "The train is canceled and you look for an alternative, resigned: «Der Zug fällt aus? Dann nehmen wir ___ ein Taxi.»",

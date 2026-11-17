@@ -21,25 +21,25 @@ LINGUAI.addStrings("pl", {
     theory: [
       {
         h: "Werden do przypuszczeń",
-        p: "Prawdziwą przyszłość niemiecki często wyraża czasem teraźniejszym i okolicznikiem czasu (<em>Morgen fliege ich nach Wien</em>). <strong>werden</strong> + bezokolicznik służy głównie do <strong>przypuszczenia o teraźniejszości</strong>: <em>Er wird wohl noch im Stau stehen. Es klingelt. Das wird der Postbote sein.</em> Przypuszczenie o <strong>przeszłości</strong> wyraża się w <strong>Futur II</strong>, czyli <em>werden</em> + imiesłów II + <em>haben</em> albo <em>sein</em>: <em>Sie wird die Nachricht inzwischen gelesen haben.</em> Ten sam Futur II może oznaczać czynność, która będzie <strong>zakończona do przyszłego momentu</strong>: <em>Bis Ende des Monats werden wir die Studie abgeschlossen haben.</em>"
+        p: "Prawdziwą przyszłość niemiecki często wyraża czasem teraźniejszym i okolicznikiem czasu (<em>Morgen fliege ich nach Wien</em>). <strong>werden</strong> + bezokolicznik może wyrażać przyszłość, prognozę albo, gdy wskazuje na to kontekst, <strong>przypuszczenie o teraźniejszości</strong>: <em>Er wird wohl noch im Stau stehen. Es klingelt. Das wird der Postbote sein.</em> Przypuszczenie o <strong>przeszłości</strong> można wyrazić w <strong>Futur II</strong>, czyli <em>werden</em> + imiesłów II + <em>haben</em> albo <em>sein</em>: <em>Sie wird die Nachricht inzwischen gelesen haben.</em> Ten sam Futur II może oznaczać czynność, która będzie <strong>zakończona do przyszłego momentu</strong>: <em>Bis Ende des Monats werden wir die Studie abgeschlossen haben.</em>"
       },
       {
         h: "Wskazówki",
-        p: "Żeby ustalić, które znaczenie masz przed sobą, patrz na moment i okoliczniki. Odniesienie do teraźniejszości (<em>jetzt, noch, gerade</em>) albo do przeszłości (<em>inzwischen, längst</em>) wskazuje na przypuszczenie; termin z <em>bis</em> zwykle wskazuje na czynność zakończoną w przyszłości, ale może też towarzyszyć ostrożnej prognozie (<em>Bis morgen wird er wohl angekommen sein</em>); odróżnienie prognozy, przypuszczenia i zobowiązania zależy od kontekstu. Okoliczniki dawkują pewność: <em>wohl</em> i <em>vermutlich</em> są ostrożne, <em>schon</em> uspokaja (<em>Das wird schon klappen</em>), <em>sicher</em> i <em>bestimmt</em> ją wzmacniają."
+        p: "Żeby ustalić, które znaczenie masz przed sobą, patrz na moment i okoliczniki. Odniesienie do teraźniejszości (<em>jetzt, noch, gerade</em>) albo do przeszłości (<em>inzwischen, längst</em>) sugeruje przypuszczenie, ale to wskazówki, nie reguły; termin z <em>bis</em> zwykle wskazuje na czynność zakończoną w przyszłości, ale może też towarzyszyć ostrożnej prognozie (<em>Bis morgen wird er wohl angekommen sein</em>); odróżnienie prognozy, przypuszczenia i zobowiązania zależy od kontekstu. Okoliczniki dawkują pewność: <em>wohl</em> i <em>vermutlich</em> są ostrożne, <em>schon</em> w połączeniu z <em>werden</em> i bezokolicznikiem uspokaja (<em>Das wird schon klappen</em>), <em>sicher</em> i <em>bestimmt</em> ją wzmacniają."
       },
       {
-        contrast: "Po polsku przypuszczenie o teraźniejszości i o przeszłości wyraża się zwykle zwykłym czasem i słowem takim jak <em>pewnie</em>, <em>chyba</em>, <em>z pewnością</em>: <em>Pewnie jeszcze śpi. Pewnie już przeczytał wiadomość.</em> Osobnej formy czasu na to nie ma, a przyszłość złożona w rodzaju <em>będzie spał</em> brzmi jako przypuszczenie raczej rzadko. Niemiecki robi odwrotnie: stawia <em>werden</em> i dla przeszłości imiesłów z <em>haben</em> albo <em>sein</em> (Futur II), czego polski czas przeszły nie rozróżnia. Bez <em>wohl</em>, <em>schon</em> albo <em>sicher</em> samo <em>Er wird zu Hause sein</em> bywa więc czytane także jako zwykła przyszłość. Polskie <em>do końca miesiąca skończymy badanie</em> (czasownik dokonany w czasie przyszłym) odpowiada niemieckiemu Futur II z <em>bis</em>, tylko że po niemiecku widać to w formie czasownika, a po polsku w jego aspekcie."
+        contrast: "Po polsku przypuszczenie o teraźniejszości i o przeszłości wyraża się zwykle zwykłym czasem i słowem takim jak <em>pewnie</em>, <em>chyba</em>, <em>z pewnością</em>: <em>Pewnie jeszcze śpi. Pewnie już przeczytał wiadomość.</em> Osobnej formy czasu na to nie ma, a przyszłość złożona w rodzaju <em>będzie spał</em> brzmi jako przypuszczenie raczej rzadko. Niemiecki może to robić inaczej: obok czasu teraźniejszego albo Perfekt z <em>wohl</em> czy <em>vermutlich</em> ma też Futur I i Futur II (<em>werden</em> + imiesłów z <em>haben</em> albo <em>sein</em>), ale to możliwości, nie formy obowiązkowe. Samo <em>Er wird zu Hause sein</em> bywa czytane także jako zwykła przyszłość, więc o odczycie decyduje kontekst, często z pomocą <em>wohl</em>, <em>schon</em> albo <em>sicher</em>. Polskie <em>do końca miesiąca skończymy badanie</em> (czasownik dokonany w czasie przyszłym) odpowiada niemieckiemu Futur II z <em>bis</em>, tylko że po niemiecku widać to w formie czasownika, a po polsku w jego aspekcie."
       },
       {
         trap: "Przypuszczenia o przeszłości nie wyrazisz samym Futur I: <em>Er wird gestern krank sein</em> nie działa, potrzebny jest Futur II, <em>Er wird gestern wohl krank gewesen sein</em>. A czasownik posiłkowy w bezokoliczniku czasu przeszłego jest taki sam jak w Perfekcie danego czasownika: <em>Sie wird abgereist sein</em> (ruch, <em>sein</em>), <em>Er wird es vergessen haben</em> (<em>haben</em>)."
       },
       {
-        tip: "Zawsze zapytaj, do jakiego momentu odnosi się zdanie: teraźniejszość, przeszłość czy przyszły punkt z <em>bis</em>. O wyborze między Futur I (przypuszczenie o teraźniejszości), Futur II (przeszłość) i Futur II zakończenia decyduje właśnie moment."
+        tip: "Zawsze zapytaj, do jakiego momentu odnosi się zdanie: teraźniejszość, przeszłość czy przyszły punkt z <em>bis</em>. Przy wyborze między Futur I (przypuszczenie o teraźniejszości), Futur II (przeszłość) i Futur II zakończenia pomaga właśnie moment, razem z kontekstem."
       }
     ],
     grammar: {
       title: "Futur I i II jako przypuszczenie",
-      note: "<b>werden + bezokolicznik</b>: przypuszczenie o teraźniejszości. <b>werden + imiesłów II + haben/sein</b>: przypuszczenie o przeszłości albo czynność zakończona do przyszłego momentu (z <i>bis</i>). Dawkowanie: <i>wohl, vermutlich</i> (ostrożnie), <i>schon</i> (uspokajająco), <i>sicher</i> (pewniej).",
+      note: "<b>werden + bezokolicznik</b>: przyszłość albo, zależnie od kontekstu, przypuszczenie o teraźniejszości. <b>werden + imiesłów II + haben/sein</b>: przypuszczenie o przeszłości albo czynność zakończona do przyszłego momentu (z <i>bis</i>). Dawkowanie: <i>wohl, vermutlich</i> (ostrożnie), <i>schon</i> (uspokajająco), <i>sicher</i> (pewniej).",
       table: {
         head: ["konstrukcja", "znaczenie", "przykład"],
         rows: [
@@ -90,7 +90,7 @@ LINGUAI.addStrings("pl", {
           "przypuszczenie o czymś, co już się stało",
           "stronę bierną czasu teraźniejszego"
         ],
-        why: "<i>bis Jahresende</i> wyznacza przyszły punkt, najpóźniej do którego czynność będzie skończona, a mówiący bierze na siebie zobowiązanie, nie snuje domysłów: brakuje też okolicznika takiego jak <i>wohl</i>."
+        why: "<i>bis Jahresende</i> wyznacza przyszły punkt, najpóźniej do którego czynność będzie skończona, a w ogłoszeniu firma mówi o własnych planach, więc zdanie czyta się jako zapowiedź, nie domysł. Brak <i>wohl</i> sam tego nie dowodzi, bo Futur II bywa też prognozą: rozstrzyga kontekst."
       },
       {
         q: "Wiesz, że list dostarczono wczoraj, ale nie wiesz, czy adresat już go przeczytał. Które zdanie wyraża właściwe przypuszczenie?",
@@ -136,7 +136,7 @@ LINGUAI.addStrings("pl", {
         why: "<i>Die Bewerberinnen werden die Antwort wohl schon erhalten haben</i>: Futur II z <i>wohl</i> (albo <i>vermutlich, wahrscheinlich</i>); <i>schon</i> albo <i>bereits</i> dla „już”, a okolicznik może stać przed <i>die Antwort</i> albo po nim."
       },
       {
-        tr: "Pociąg z Monachium ma opóźnienie. Podróżni będą pewnie musieli czekać jeszcze pół godziny, a pociąg, na który mają przesiadkę, będzie wtedy prawdopodobnie już odjechał.",
+        tr: "Pociąg z Monachium ma opóźnienie. Podróżni będą pewnie musieli czekać jeszcze pół godziny, a pociąg, na który mają przesiadkę, do tego czasu prawdopodobnie już odjedzie.",
         why: "Dwa przypuszczenia: <i>werden ... warten müssen</i> (ostrożna prognoza) i <i>wird ... abgefahren sein</i> (Futur II z <i>sein</i>: <i>abfahren</i> jest tu nieprzechodnie i oznacza odjazd pociągu)."
       },
       {
@@ -208,7 +208,7 @@ LINGUAI.addStrings("pl", {
       "udokumentować, potwierdzić dowodami",
       "rzekomy, podobno (z powątpiewaniem)",
       "najwyraźniej, jak się okazuje",
-      "pozornie, jak się zdaje"
+      "jak się zdaje, z tego, co widać"
     ],
     exercises: [
       {
@@ -251,7 +251,7 @@ LINGUAI.addStrings("pl", {
       {
         q: "Uzupełnij za pomocą muss, soll albo will.",
         tr: "Rolety są opuszczone, a skrzynka na listy pełna: rodzina Albers musi być na wakacjach, trudno myśleć inaczej. Według sąsiada miała wyjechać już dwa tygodnie temu, ale dozorca twierdzi, że niczego nie zauważył.",
-        why: "<i>muss</i>: wniosek z poszlak. <i>soll</i>: mówi to sąsiad (<i>einem Nachbarn zufolge</i>). <i>will</i>: twierdzi to sam dozorca."
+        why: "<i>muss</i>: wniosek z poszlak. <i>soll</i>: mówi to sąsiad (<i>einem Nachbarn zufolge</i>). <i>will</i>: twierdzi to sam dozorca. Wskazówka <i>nach eigener Aussage</i> (według własnych słów) sprawia, że pasuje tylko <i>will</i>."
       },
       {
         q: "Połącz każde zdanie z jego znaczeniem.",
@@ -297,7 +297,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         h: "Miejsce i rejestr",
-        p: "Partykuły stoją bez akcentu po czasowniku i zaimkach, przed nową informacją (<em>Er wird wohl noch schlafen</em>). Są typowe dla mowy, czatów i dialogów: w tekście oficjalnym, takim jak sprawozdanie albo list do klienta, zwykle się ich unika. <em>halt</em> jest bardziej potoczne i słychać je głównie na południu, <em>eben</em> jest bardziej neutralne, ale w większości przypadków są wymienne."
+        p: "Partykuły zwykle stoją bez akcentu po czasowniku i zaimkach, przed nową informacją (<em>Er wird wohl noch schlafen</em>), ale to tendencja: miejsce zależy też od akcentu, funkcji informacyjnej i kontekstu (<em>Das hat ja er gesagt</em> jest możliwe, gdy <em>er</em> jest kontrastywne). Są typowe dla mowy, czatów i dialogów: w tekście oficjalnym, takim jak sprawozdanie albo list do klienta, zwykle się ich unika, choć zależy to od rodzaju tekstu. <em>halt</em> jest bardziej potoczne i słychać je głównie na południu, <em>eben</em> jest bardziej neutralne, ale w większości przypadków są wymienne."
       },
       {
         contrast: "Polski ma dla tych niuansów własne słowa, tylko że nie pokrywają się z niemieckimi jeden do jednego: <em>wohl</em> to najczęściej <em>chyba</em> albo <em>pewnie</em>, <em>ja</em> to <em>przecież</em> (<em>Przecież wiesz, ile to trwa</em>), <em>etwa</em> w pytaniu to <em>czyżby</em>, <em>czy aby nie</em> albo <em>chyba nie</em>, a <em>halt</em> i <em>eben</em> to <em>trudno</em>, <em>no cóż</em>, <em>po prostu</em> (<em>Dann warten wir halt</em> to „no to poczekamy, trudno”). Rolę niemieckich partykuł często pełni po polsku też intonacja i szyk zdania. Żadna z pięciu nie ma stałego odpowiednika: uczy się funkcji."
@@ -451,7 +451,7 @@ LINGUAI.addStrings("pl", {
           "jest absolutnie pewny",
           "tylko przekazuje to, co mówią inni"
         ],
-        why: "<b>dürfte</b> wyraża prawdopodobieństwo. Dla pewności byłoby <i>muss</i>, a dla przekazania pogłosek <i>soll</i>."
+        why: "<b>dürfte</b> wyraża prawdopodobieństwo. <i>muss</i> wyrażałoby wniosek bardzo prawdopodobny, ale to nadal nie pewność absolutna, a dla przekazania pogłosek użyłoby się <i>soll</i>."
       },
       {
         q: "Kolega wchodzi do biura i widzi, że praca jest już zrobiona: „Du hast ja schon alles erledigt!” Co wyraża ja?",

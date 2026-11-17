@@ -114,7 +114,7 @@ LINGUAI.addUnits("C1", [
           {
             t: "cloze",
             text: "{{1}} der Verzögerung der Lieferung musste der Termin verschoben werden. {{2}} Bedarf wird ein neuer Termin vereinbart.",
-            gaps: [["Wegen", "Aufgrund", "Infolge"], ["Bei", "Nach"]]
+            gaps: [["Wegen", "Aufgrund", "Infolge"], ["Bei"]]
           },
           {
             t: "match",

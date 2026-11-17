@@ -25,7 +25,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "L'attributo ampliato, con moderazione",
-        p: "Tra l'articolo e il nome possono stare anche complementi, ma il participio resta sempre <strong>subito prima del nome</strong>: <em>die im letzten Quartal erzielten Umsätze</em>. Nei verbali e nei rapporti basta un complemento o due; oltre, il lettore perde il filo e la relativa è la scelta migliore. Il tipo con <em>zu</em> (<em>die zu prüfenden Unterlagen</em>) e le costruzioni più lunghe sono strutture avanzate, che il corso approfondisce al C2."
+        p: "Tra l'articolo e il nome possono stare anche complementi, ma di solito il participio sta <strong>subito prima del nome</strong>: <em>die im letzten Quartal erzielten Umsätze</em>; possono inserirsi anche altri attributi, per esempio <em>die geprüften und freigegebenen Unterlagen</em>. Nei verbali e nei rapporti basta un complemento o due; oltre, il lettore perde il filo e la relativa è la scelta migliore. Il tipo con <em>zu</em> (<em>die zu prüfenden Unterlagen</em>) e le costruzioni più lunghe sono strutture avanzate, che il corso approfondisce al C2."
       },
       {
         contrast: "L'italiano mette il participio <strong>dopo</strong> il nome e il complemento lo segue: <em>i risultati ottenuti nel secondo trimestre</em>, <em>i dati raccolti dall'ufficio</em>. In tedesco tutto ciò che nell'italiano seguirebbe il participio passa <strong>davanti</strong> al nome, in mezzo fra articolo e participio: <em>die vom Amt erhobenen Daten</em>. Il participio presente italiano è raro (<em>le spese crescenti</em>, più spesso <em>in aumento</em>), mentre <em>steigend, laufend, vorliegend</em> sono ovunque nella lingua scritta."
@@ -136,7 +136,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Le decisioni messe a verbale valgono da subito. Le trattative in corso saranno concluse in autunno e i costi aumentati continuano a gravare sul bilancio.",
-        why: "In <i>Protokoll</i> l'accento cade su <b>koll</b>; in <i>Verhandlungen</i> l'accento cade su <b>hand</b>; in <i>abgeschlossen</i> l'accento cade su <b>schlos</b>; in <i>Haushalt</i> l'accento cade su <b>Haus</b>."
+        why: "In <i>Protokoll</i> l'accento cade su <b>koll</b>; in <i>Verhandlungen</i> l'accento cade su <b>hand</b>; in <i>abgeschlossen</i> l'accento cade su <b>ab</b>; in <i>Haushalt</i> l'accento cade su <b>Haus</b>."
       },
       {
         tr: "I ricavi ottenuti nell'ultimo trimestre sono stati superiori alle attese.",
@@ -249,7 +249,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa il comunicato con le due preposizioni.",
         tr: "A causa del ritardo della consegna la data ha dovuto essere rinviata. Se necessario sarà concordata una nuova data.",
-        why: "<i>Wegen</i> (o <i>Aufgrund</i>, <i>Infolge</i>) + genitivo per la causa. <i>Bei Bedarf</i> per la condizione; in questo contesto va bene anche <i>Nach Bedarf</i>, «secondo necessità»."
+        why: "<i>Wegen</i> (o <i>Aufgrund</i>, <i>Infolge</i>) + genitivo per la causa. <i>Bei Bedarf</i> per la condizione, «se serve». <i>Nach Bedarf</i> («secondo necessità») ha un altro significato e qui non è accettato."
       },
       {
         q: "Abbina ogni espressione al suo significato.",
@@ -275,7 +275,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Nonostante ripetuti solleciti il pagamento non è arrivato.",
-        why: "In <i>mehrfacher</i> l'accento cade su <b>mehr</b>; in <i>Erinnerung</i> l'accento cade su <b>in</b>; in <i>eingegangen</i> l'accento cade su <b>gan</b>."
+        why: "In <i>mehrfacher</i> l'accento cade su <b>mehr</b>; in <i>Erinnerung</i> l'accento cade su <b>in</b>; in <i>eingegangen</i> l'accento cade su <b>ein</b>."
       }
     ]
   },
@@ -295,10 +295,10 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Come scegliere",
-        p: "Prima di nominalizzare fai quattro domande. Chi agisce, e il nome lo dice? Esiste un nome naturale (<em>Abschluss, Klärung</em>)? Devo mantenere un tempo o un modo? Il lettore ci arriva alla prima lettura? Se rispondi sì a tutte, la forma compatta funziona (<em>Nach Abschluss der Prüfung ...</em>), altrimenti la subordinata è più chiara, e nei testi destinati a un pubblico non specialistico lo è quasi sempre."
+        p: "Prima di nominalizzare fai quattro domande. Chi agisce, e il nome lo dice? Esiste un nome naturale (<em>Abschluss, Klärung</em>)? Posso rinunciare a esprimere esplicitamente tempo e modo senza perdere informazioni? Il lettore ci arriva alla prima lettura? Se rispondi sì a tutte, la forma compatta funziona (<em>Nach Abschluss der Prüfung ...</em>), altrimenti la subordinata è più chiara, e nei testi destinati a un pubblico non specialistico lo è quasi sempre."
       },
       {
-        contrast: "L'italiano ha strumenti compatti come <em>dopo aver concluso</em> o <em>a lavori ultimati</em>; il tedesco li rende con una subordinata (<em>nachdem ...</em>) o con un nome (<em>nach Abschluss der Arbeiten</em>), ma non ha il gerundio. Con <em>ohne zu</em> e <em>um ... zu</em> il soggetto dell'infinito di norma è quello della principale: quando i soggetti sono due serve una subordinata con <em>ohne dass</em> o <em>damit</em>. La sfumatura di <em>qualora ... dovesse</em> si rende con <em>Sollte die Prüfung länger dauern, ...</em> o <em>falls ... ändern sollten</em>."
+        contrast: "L'italiano ha strumenti compatti come <em>dopo aver concluso</em> o <em>a lavori ultimati</em>; il tedesco li rende con una subordinata (<em>nachdem ...</em>) o con un nome (<em>nach Abschluss der Arbeiten</em>), ma non ha il gerundio. Con <em>ohne zu</em> e <em>um ... zu</em> il soggetto implicito dell'infinito di solito è quello della principale, ma può essere anche un complemento (<em>Ich bitte dich, früher zu kommen</em>); quando il referente non si ricava chiaramente dalla costruzione serve una subordinata con <em>ohne dass</em> o <em>damit</em>. La sfumatura di <em>qualora ... dovesse</em> si rende con <em>Sollte die Prüfung länger dauern, ...</em> o <em>falls ... ändern sollten</em>."
       },
       {
         trap: "Non nominalizzare tutto solo perché «suona formale»: il risultato è un tedesco da ufficio difficile da leggere, e un'espressione come <em>seitens der Teilnehmenden</em> nasconde il soggetto. E <em>sollte</em> in prima posizione non è «dovrebbe» di obbligo: <em>Sollte die Prüfung länger dauern</em> significa «se mai la verifica dovesse durare di più», una condizione ipotetica."
@@ -454,7 +454,7 @@ LINGUAI.addStrings("it", {
           "un futuro",
           "un passivo"
         ],
-        why: "<i>werden</i> + infinito con <i>jetzt</i> è una <b>supposizione</b> sul presente: «sarà in riunione adesso». Senza <i>jetzt</i> o <i>wohl</i> potrebbe essere letto anche come futuro."
+        why: "<i>werden</i> + infinito con <i>jetzt</i> qui è una <b>supposizione</b> sul presente: «sarà in riunione adesso». In generale <i>werden</i> + infinito può esprimere futuro o supposizione sul presente a seconda del contesto: <i>jetzt</i> e <i>wohl</i> sono indizi, non regole."
       },
       {
         q: "Quale gruppo corrisponde a «die Anträge, die gerade bearbeitet werden»?",
