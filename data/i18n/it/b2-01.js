@@ -911,5 +911,447 @@ LINGUAI.addStrings("it", {
         why: "In <i>verhindert</i> la <b>v</b> si legge [f]; in <i>rechtzeitig</i> la <b>ch</b> è [ç] e la <b>z</b> è [ts]; in <i>absagen</i> la <b>b</b> davanti a <i>s</i> si legge [p]."
       }
     ]
+  },
+  "unit:b2-u03": {
+    title: "Passivo e tempo del racconto",
+    grammarNote: "passivo al Perfekt e al Plusquamperfekt (ist gebaut worden) · passivo con i modali (muss ausgefüllt werden) · passivo di stato (ist geschlossen) · Präteritum narrativo · ohne ... zu, statt ... zu, ohne dass, anstatt dass"
+  },
+  "lesson:b2-u03-l1": {
+    theme: "Storia e processi tecnici",
+    title: "È stato costruito, è stato riparato",
+    objectives: [
+      "formare il passivo al Perfekt e al Plusquamperfekt con worden",
+      "usare il passivo con un verbo modale",
+      "distinguere il passivo di processo (wird geschlossen) da quello di stato (ist geschlossen)",
+      "raccontare la storia di un edificio o di un'invenzione"
+    ],
+    theory: [
+      {
+        h: "Il passivo al Perfekt",
+        p: "Al Perfekt il passivo si forma con <strong>sein</strong> + participio II + <strong>worden</strong>: <em>Die Brücke ist letztes Jahr renoviert worden</em> (il ponte è stato ristrutturato l'anno scorso). Al Plusquamperfekt <em>sein</em> va al Präteritum: <em>Der Fehler war schon vorher entdeckt worden</em> (l'errore era già stato scoperto). Nei testi scritti e nella storia si usa spesso anche il Präteritum: <em>Das Rathaus wurde im sechzehnten Jahrhundert gebaut.</em>"
+      },
+      {
+        h: "Con i modali e il passivo di stato",
+        p: "Con un <strong>verbo modale</strong> si coniuga il modale e il passivo resta all'infinito, participio + <em>werden</em>, in fondo: <em>Das Formular muss bis Freitag ausgefüllt werden. Die Daten konnten nicht gespeichert werden.</em> Il <strong>passivo di stato</strong> (Zustandspassiv) si forma con <strong>sein</strong> + participio e descrive il risultato di un'azione: <em>Das Geschäft ist sonntags geschlossen.</em> Il passivo di processo, con <em>werden</em>, descrive l'azione: <em>Das Geschäft wird um acht geschlossen.</em>"
+      },
+      {
+        contrast: "L'italiano usa <em>essere</em> sia per il processo sia per lo stato (<em>il negozio è chiuso</em>), e <em>venire</em> solo per il processo e solo nei tempi semplici (<em>viene chiuso alle otto</em>). Il tedesco separa sempre: <em>werden</em> per il processo, <em>sein</em> per lo stato. <em>È stato costruito</em> diventa <em>ist gebaut worden</em>: anche qui c'è <em>sein</em>, come in italiano, ma accanto al participio serve <em>worden</em>."
+      },
+      {
+        trap: "Nel passivo il participio di <em>werden</em> è <strong>worden</strong>, senza <em>ge-</em>: <em>ist gebaut worden</em>, non «ist gebaut geworden». <em>Geworden</em> è il participio di <em>werden</em> come verbo pieno, <em>diventare</em>: <em>Er ist Arzt geworden.</em> E <em>è stato costruito</em> non è «ist gebaut gewesen»: <em>gewesen</em> qui non si usa."
+      },
+      {
+        tip: "Per capire se serve <em>werden</em> o <em>sein</em>, chiediti: sta succedendo qualcosa, o descrivo come stanno le cose? <em>Die Tür wird geöffnet</em>: qualcuno la apre. <em>Die Tür ist geöffnet</em>: è aperta."
+      }
+    ],
+    grammar: {
+      title: "Il passivo: Perfekt, modali, passivo di stato",
+      note: "<b>Perfekt</b>: ist + participio + <b>worden</b>. <b>Plusquamperfekt</b>: war + participio + worden. <b>Con un modale</b>: modale + participio + werden. <b>Stato</b>: sein + participio.",
+      table: {
+        head: ["", "esempio", "italiano"],
+        rows: [
+          ["Präteritum", "Das Haus wurde 1900 gebaut.", "la casa fu costruita"],
+          ["Perfekt", "Das Haus ist 1900 gebaut worden.", "la casa è stata costruita"],
+          ["Plusquamperfekt", "Das Haus war schon gebaut worden.", "la casa era già stata costruita"],
+          ["con un modale", "Das Haus muss renoviert werden.", "la casa deve essere ristrutturata"],
+          ["passivo di stato", "Das Haus ist renoviert.", "la casa è ristrutturata"]
+        ]
+      },
+      examples: [
+        { tr: "Il municipio fu costruito nel sedicesimo secolo.", note: "Präteritum: tipico dei testi storici" },
+        { tr: "Il ponte è stato ristrutturato l'anno scorso.", note: "Perfekt: ist + participio + worden" },
+        { tr: "L'errore era già stato scoperto prima.", note: "Plusquamperfekt: war + participio + worden" },
+        { tr: "Il modulo deve essere compilato entro venerdì.", note: "modale + participio + werden" },
+        { tr: "Non è stato possibile salvare i dati.", note: "konnten ... gespeichert werden: modale al Präteritum" },
+        { tr: "Il negozio la domenica è chiuso.", note: "passivo di stato: sein + participio" }
+      ]
+    },
+    vocab: [
+      "il secolo",
+      "l'edificio",
+      "il ponte",
+      "la costruzione, l'edificio (plurale Bauten: le costruzioni)",
+      "l'invenzione",
+      "il procedimento",
+      "erigere, costruire",
+      "distruggere",
+      "inventare",
+      "produrre, fabbricare",
+      "scoprire",
+      "ristrutturare"
+    ],
+    exercises: [
+      {
+        q: "Come dici «Il ponte è stato ristrutturato»?",
+        opts: [
+          "Die Brücke ist renoviert worden.",
+          "Die Brücke ist renoviert geworden.",
+          "Die Brücke hat renoviert worden."
+        ],
+        why: "Passivo al Perfekt: <b>ist</b> + participio + <b>worden</b>. <i>Geworden</i> è il participio di <i>werden</i> come <i>diventare</i>, e l'ausiliare è <i>sein</i>, non <i>haben</i>."
+      },
+      {
+        q: "Quale frase descrive uno stato, «Il negozio è chiuso»?",
+        opts: [
+          "Das Geschäft ist geschlossen.",
+          "Das Geschäft wird geschlossen.",
+          "Das Geschäft ist geschlossen worden."
+        ],
+        why: "Lo stato si esprime con <b>sein</b> + participio. <i>Wird geschlossen</i> descrive l'azione di chiudere, <i>ist geschlossen worden</i> un'azione appena compiuta."
+      },
+      {
+        q: "Come dici «Il modulo deve essere compilato»?",
+        opts: [
+          "Das Formular muss ausgefüllt werden.",
+          "Das Formular muss ausfüllen werden.",
+          "Das Formular wird ausgefüllt müssen."
+        ],
+        why: "Con un modale: modale coniugato (<b>muss</b>) + participio + <b>werden</b> in fondo."
+      },
+      {
+        q: "Completa il passivo al Perfekt: «Die Kirche ist 1890 gebaut ___.»",
+        hint: "participio di werden nel passivo",
+        why: "<b>worden</b>: nel passivo al Perfekt il participio di <i>werden</i> perde il <i>ge-</i>."
+      },
+      {
+        q: "Completa al Plusquamperfekt: «Der Fehler ___ schon vorher entdeckt worden.»",
+        hint: "Präteritum di sein",
+        why: "<b>war</b>: il Plusquamperfekt del passivo ha <i>sein</i> al Präteritum, poi participio e <i>worden</i>."
+      },
+      {
+        q: "Completa: «Die Daten konnten nicht gespeichert ___.»",
+        hint: "infinito del passivo",
+        why: "<b>werden</b>: dopo un modale il passivo resta all'infinito, participio + <i>werden</i>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Qui dal 1950 si producono automobili.",
+        why: "<i>Hier werden seit 1950 Autos hergestellt</i>: il <i>si</i> passivante italiano diventa un passivo con <i>werden</i>, al plurale perché il soggetto è <i>Autos</i>."
+      },
+      {
+        q: "Traduci: «La città è stata distrutta durante la guerra.»",
+        why: "<i>Die Stadt ist im Krieg zerstört worden</i>, oppure al Präteritum <i>Die Stadt wurde im Krieg zerstört</i>. Al posto di <i>im Krieg</i> va bene <i>während des Krieges</i>."
+      },
+      {
+        tr: "Il vecchio municipio fu costruito nel sedicesimo secolo. In guerra è stato distrutto quasi completamente, ma dopo è stato ricostruito fedele all'originale.",
+        why: "In <i>Jahrhundert</i> la <b>J</b> si legge [j]; in <i>vollständig</i> la <b>v</b> si legge [f] e il <b>-ig</b> finale [ɪç]; in <i>originalgetreu</i> la <b>eu</b> è [ɔʏ]."
+      },
+      {
+        tr: "Il ponte è stato ristrutturato l'anno scorso e adesso è di nuovo aperto.",
+        why: "In <i>Brücke</i> la <b>ü</b> è breve; in <i>renoviert</i> la <b>v</b> si legge [v] perché la parola è di origine latina; in <i>geöffnet</i> la <b>ö</b> è breve e arrotondata."
+      }
+    ]
+  },
+  "lesson:b2-u03-l2": {
+    theme: "Racconti",
+    title: "Il Präteritum nel racconto",
+    objectives: [
+      "raccontare una storia al Präteritum",
+      "coniugare al Präteritum i verbi forti più frequenti",
+      "usare il Plusquamperfekt per ciò che era successo prima",
+      "riconoscere lo stile delle fiabe (Es war einmal ...)"
+    ],
+    theory: [
+      {
+        h: "Il tempo del racconto scritto",
+        p: "Nelle fiabe, nei romanzi, nelle biografie e negli articoli di cronaca il passato si racconta con il <strong>Präteritum</strong>: <em>Es war einmal ein armer Müller. Plötzlich klingelte das Telefon. Sie stand auf und ging zum Fenster.</em> I verbi deboli prendono <em>-te</em> (<em>klingelte, erzählte</em>); i verbi forti cambiano la vocale e alla prima e alla terza persona non hanno desinenza (<em>ich lief, er lief</em>). Ciò che era successo prima si dice con il <strong>Plusquamperfekt</strong>: <em>Als sie ankam, war der Zug schon abgefahren.</em>"
+      },
+      {
+        h: "Verbi forti da riconoscere",
+        p: "Nel racconto tornano sempre gli stessi verbi forti: <em>gehen → ging, kommen → kam, stehen → stand, sitzen → saß, liegen → lag, laufen → lief, rufen → rief, ziehen → zog, treffen → traf, finden → fand, schreiben → schrieb, erschrecken → erschrak</em>. Il Perfekt resta nelle battute dei personaggi, perché è il tempo del parlato: <em>«Ich habe einen Traum gehabt», sagte sie.</em>"
+      },
+      {
+        contrast: "La divisione assomiglia a quella italiana: nella lingua scritta si racconta con il passato remoto, nel parlato si usa il passato prossimo, come il tedesco usa Präteritum e Perfekt. La differenza è che il tedesco non ha un imperfetto separato: <em>Sie saß am Fenster</em> è <em>sedeva alla finestra</em>, <em>Plötzlich stand sie auf</em> è <em>all'improvviso si alzò</em>. Lo stesso tempo fa tutte e due le cose, e la differenza la danno gli avverbi (<em>plötzlich, immer, jeden Tag</em>)."
+      },
+      {
+        trap: "Le forme forti non si ricavano dall'infinito con una regola: vanno imparate insieme al participio (<em>laufen, lief, gelaufen</em>; <em>ziehen, zog, gezogen</em>). Attenzione a <em>erschrecken</em>: nel senso di «spaventarsi» è forte (<em>sie erschrak</em>), nel senso di «spaventare qualcuno» è debole (<em>er erschreckte das Kind</em>)."
+      },
+      {
+        tip: "Leggere una fiaba dei fratelli Grimm è il modo più rapido per fissare il Präteritum: quasi ogni frase ne ha uno, e le forme forti si ripetono di continuo."
+      }
+    ],
+    grammar: {
+      title: "Präteritum e Plusquamperfekt nel racconto",
+      note: "<b>Verbi deboli</b>: tema + <i>-te</i> (klingelte). <b>Verbi forti</b>: cambio di vocale, nessuna desinenza a ich ed er (lief, zog). <b>Plusquamperfekt</b>: hatte / war + participio, per ciò che è successo prima.",
+      table: {
+        head: ["infinito", "Präteritum (er)", "Perfekt (er)"],
+        rows: [
+          ["klingeln", "klingelte", "hat geklingelt"],
+          ["laufen", "lief", "ist gelaufen"],
+          ["ziehen", "zog", "hat gezogen"],
+          ["treffen", "traf", "hat getroffen"],
+          ["erschrecken (spaventarsi)", "erschrak", "ist erschrocken"]
+        ]
+      },
+      examples: [
+        { tr: "C'era una volta un povero mugnaio.", note: "Es war einmal: l'inizio delle fiabe" },
+        { tr: "All'improvviso squillò il telefono.", note: "verbo debole: klingelte" },
+        { tr: "Si alzò e andò alla finestra.", note: "verbi forti: stand, ging" },
+        { tr: "Correva più veloce che poteva.", note: "lief: Präteritum di laufen" },
+        { tr: "Quando arrivò, il treno era già partito.", note: "Plusquamperfekt per ciò che era successo prima" },
+        { tr: "Nessuno sapeva chi avesse scritto la lettera.", note: "wusste (verbo misto) e Plusquamperfekt hatte geschrieben" }
+      ]
+    },
+    vocab: [
+      "la storia, il racconto",
+      "la fiaba",
+      "l'eroe",
+      "il racconto, la narrazione",
+      "l'inizio",
+      "la fine",
+      "raccontare",
+      "accadere, succedere",
+      "spaventarsi (erschrak, ist erschrocken)",
+      "all'improvviso",
+      "allora, a quel tempo",
+      "infine, alla fine"
+    ],
+    exercises: [
+      {
+        tr: "Il Präteritum di laufen, tutte le persone.",
+        why: "<i>lief, liefst, lief, liefen, lieft, liefen</i>: vocale <i>ie</i>, nessuna desinenza alla prima e alla terza persona."
+      },
+      {
+        tr: "Il Präteritum di ziehen, tutte le persone.",
+        why: "<i>zog, zogst, zog, zogen, zogt, zogen</i>: la vocale diventa <i>o</i> e la <i>h</i> sparisce."
+      },
+      {
+        tr: "Il Präteritum di treffen, tutte le persone.",
+        why: "<i>traf, trafst, traf, trafen, traft, trafen</i>: la doppia <i>f</i> diventa semplice dopo la vocale lunga <i>a</i>."
+      },
+      {
+        q: "Quale frase usa il tempo tipico del racconto scritto?",
+        opts: [
+          "Sie stand auf und ging zum Fenster.",
+          "Sie ist aufgestanden und zum Fenster gegangen.",
+          "Sie steht auf und geht zum Fenster."
+        ],
+        why: "Il racconto scritto usa il <b>Präteritum</b>: <i>stand auf, ging</i>. Il Perfekt è il tempo del parlato; il presente si usa a volte per dare vivacità, ma non è il tempo normale del racconto."
+      },
+      {
+        q: "Qual è il Präteritum di laufen (er)?",
+        opts: [
+          "lief",
+          "laufte",
+          "lauf"
+        ],
+        why: "<i>laufen</i> è un verbo forte: <b>lief</b>. La forma debole <i>laufte</i> non esiste."
+      },
+      {
+        q: "Completa al Präteritum: «Plötzlich ___ das Telefon.» (klingeln)",
+        hint: "verbo debole, er/es",
+        why: "<b>klingelte</b>: verbo debole, tema <i>klingel-</i> + <i>-te</i>."
+      },
+      {
+        q: "Completa: «Als sie ankam, ___ der Zug schon abgefahren.» (era già partito)",
+        hint: "Präteritum di sein",
+        why: "<b>war</b>: il Plusquamperfekt di <i>abfahren</i> si forma con <i>sein</i>, perché è un verbo di movimento."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Correva più veloce che poteva.",
+        why: "<i>Er lief, so schnell er konnte</i>: <i>lief</i> da <i>laufen</i>, <i>konnte</i> da <i>können</i>. Al posto di <i>lief</i> va bene <i>rannte</i>, da <i>rennen</i>."
+      },
+      {
+        q: "Traduci: «All'improvviso si spense la luce.»",
+        why: "<i>Plötzlich ging das Licht aus</i>: <i>ausgehen</i> al Präteritum è <i>ging ... aus</i>, con la particella in fondo. Va bene anche <i>auf einmal</i>."
+      },
+      {
+        tr: "Era già buio quando tornò a casa. La porta era aperta e nessuno rispondeva. Si spaventò e chiamò la polizia.",
+        why: "In <i>dunkel</i> la <b>u</b> è breve; in <i>erschrak</i> la <b>sch</b> è [ʃ] e la <b>a</b> è lunga; in <i>Polizei</i> l'accento cade sull'ultima sillaba, <b>zei</b>."
+      },
+      {
+        tr: "A quel tempo non c'era ancora internet, e ci scrivevamo lunghe lettere.",
+        why: "In <i>damals</i> l'accento cade su <b>da</b>; in <i>schrieben</i> la <b>ie</b> è lunga; in <i>Briefe</i> la <b>ie</b> è di nuovo una <i>i</i> lunga."
+      }
+    ]
+  },
+  "lesson:b2-u03-l3": {
+    theme: "Modi di fare",
+    title: "Senza chiedere, invece di aspettare",
+    objectives: [
+      "usare ohne ... zu e statt ... zu con lo stesso soggetto",
+      "usare ohne dass e anstatt dass con soggetti diversi",
+      "mettere zu al posto giusto con i verbi separabili",
+      "raccontare come qualcuno ha fatto una cosa"
+    ],
+    theory: [
+      {
+        h: "ohne ... zu, statt ... zu",
+        p: "<strong>ohne ... zu</strong> (<em>senza</em> + infinito) e <strong>statt / anstatt ... zu</strong> (<em>invece di</em> + infinito) formano una frase infinitiva con lo <strong>stesso soggetto</strong> della principale. <em>zu</em> + infinito va in fondo: <em>Er ging, ohne sich zu verabschieden. Statt zu warten, rief sie sofort an. Anstatt zu lernen, sieht er fern.</em> Con un verbo separabile <em>zu</em> sta fra particella e verbo: <em>ohne nachzudenken, statt fernzusehen</em>."
+      },
+      {
+        h: "ohne dass, anstatt dass",
+        p: "Se il soggetto della seconda frase è <strong>diverso</strong>, non si può usare l'infinito: servono <strong>ohne dass</strong> o <strong>anstatt dass</strong> con il verbo coniugato in fondo. <em>Er ging, ohne dass ich es merkte</em> (se ne andò senza che me ne accorgessi). <em>Anstatt dass du hilfst, schaust du nur zu</em> (invece di aiutare, stai solo a guardare). Con lo stesso soggetto la forma con <em>zu</em> è più naturale."
+      },
+      {
+        contrast: "In italiano l'infinito segue subito la preposizione (<em>senza salutare</em>, <em>invece di aspettare</em>); in tedesco <em>zu</em> + infinito va alla fine della frase, dopo tutti i complementi: <em>ohne den Vertrag zu lesen</em>, <em>senza leggere il contratto</em>. E <em>senza che</em> vuole in italiano il congiuntivo (<em>senza che io me ne accorgessi</em>); <em>ohne dass</em> vuole l'indicativo: <em>ohne dass ich es merkte</em>."
+      },
+      {
+        trap: "Non dimenticare <em>zu</em>: <em>ohne sich verabschieden</em> è un errore, serve <em>ohne sich zu verabschieden</em>. E non usare l'infinito con un soggetto diverso: <em>Er ging, ohne mich es zu merken</em> non ha senso; si dice <em>ohne dass ich es merkte</em>."
+      },
+      {
+        tip: "Per verificare, sostituisci mentalmente con <em>um ... zu</em>, che conosci già: la costruzione è la stessa (<em>um zu lernen, ohne zu lernen, statt zu lernen</em>), cambia solo il significato."
+      }
+    ],
+    grammar: {
+      title: "ohne ... zu, statt ... zu, ohne dass, anstatt dass",
+      note: "<b>Stesso soggetto</b>: ohne / statt / anstatt + ... + <b>zu</b> + infinito in fondo. <b>Soggetto diverso</b>: ohne dass / anstatt dass + verbo coniugato in fondo, all'indicativo.",
+      table: {
+        head: ["", "stesso soggetto", "soggetto diverso"],
+        rows: [
+          ["senza", "Er ging, ohne sich zu verabschieden.", "Er ging, ohne dass ich es merkte."],
+          ["invece di", "Statt zu warten, rief sie an.", "Anstatt dass du hilfst, schaust du zu."],
+          ["verbo separabile", "..., ohne nachzudenken.", "..., ohne dass er nachdachte."]
+        ]
+      },
+      examples: [
+        { tr: "Se ne andò senza salutare.", note: "ohne ... zu: stesso soggetto" },
+        { tr: "Invece di aspettare, chiamò subito.", note: "statt ... zu all'inizio, poi il verbo della principale" },
+        { tr: "Ha firmato senza leggere il contratto.", note: "zu + infinito dopo tutti i complementi" },
+        { tr: "Invece di studiare, guarda la televisione.", note: "anstatt ... zu; fernsehen è separabile" },
+        { tr: "Se ne andò senza che me ne accorgessi.", note: "ohne dass: soggetto diverso, indicativo" },
+        { tr: "Invece di aiutare, stai solo a guardare.", note: "anstatt dass: soggetto espresso nella frase" }
+      ]
+    },
+    vocab: [
+      "il contratto",
+      "il permesso",
+      "il congedo, l'addio",
+      "il riguardo (Rücksicht nehmen auf: avere riguardo per)",
+      "la firma",
+      "firmare",
+      "congedarsi, salutare",
+      "stare a guardare",
+      "riflettere (über + accusativo: su)",
+      "notare, accorgersi di",
+      "semplicemente",
+      "di nascosto"
+    ],
+    exercises: [
+      {
+        q: "Come dici «Se ne andò senza salutare»?",
+        opts: [
+          "Er ging, ohne sich zu verabschieden.",
+          "Er ging, ohne zu verabschieden sich.",
+          "Er ging, ohne sich verabschieden."
+        ],
+        why: "<b>ohne ... zu</b> + infinito in fondo: <i>ohne sich zu verabschieden</i>. Il pronome riflessivo viene prima di <i>zu</i>, e <i>zu</i> non si può togliere."
+      },
+      {
+        q: "Come dici «Se ne andò senza che me ne accorgessi»?",
+        opts: [
+          "Er ging, ohne dass ich es merkte.",
+          "Er ging, ohne mich es zu merken.",
+          "Er ging, ohne dass ich es merken."
+        ],
+        why: "Il soggetto è diverso (<i>er</i>, <i>ich</i>), quindi serve <b>ohne dass</b> con il verbo coniugato in fondo: <i>merkte</i>."
+      },
+      {
+        q: "Completa: «Sie hat unterschrieben, ohne den Vertrag ___ lesen.»",
+        hint: "la particella dell'infinito",
+        why: "<b>zu</b>: <i>ohne ... zu lesen</i>, con <i>zu</i> subito prima dell'infinito in fondo."
+      },
+      {
+        q: "Completa con nachdenken: «Sie antwortete, ohne ___.»",
+        hint: "verbo separabile con zu",
+        why: "<b>nachzudenken</b>: con un verbo separabile <i>zu</i> si inserisce fra la particella <i>nach</i> e il verbo, in una parola sola."
+      },
+      {
+        q: "Completa: «___ du hilfst, schaust du nur zu.» (invece di)",
+        hint: "soggetto espresso: due parole",
+        why: "<b>Anstatt dass</b> (o <i>Statt dass</i>): c'è un soggetto espresso nella frase (<i>du hilfst</i>), quindi non l'infinito ma <i>dass</i> con il verbo in fondo."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Invece di aspettare, ha chiamato subito.",
+        why: "<i>Statt zu warten, rief sie sofort an</i>: la frase infinitiva occupa il primo posto, quindi segue subito il verbo <i>rief</i>; la particella <i>an</i> va in fondo."
+      },
+      {
+        q: "Metti in ordine le parole.",
+        tr: "Invece di studiare, guarda la televisione tutto il giorno.",
+        why: "<i>Anstatt zu lernen, sieht er den ganzen Tag fern.</i> La frase con <i>anstatt</i> è al primo posto, il verbo <i>sieht</i> viene subito dopo, la particella <i>fern</i> in fondo."
+      },
+      {
+        q: "Traduci: «Ha firmato il contratto senza leggerlo.» (lui)",
+        why: "<i>Er hat den Vertrag unterschrieben, ohne ihn zu lesen</i>. Va bene anche il Präteritum <i>unterschrieb</i>, o <i>ohne ihn gelesen zu haben</i>."
+      },
+      {
+        tr: "Si è licenziato senza parlarne con nessuno. Invece di chiedere, ha deciso subito.",
+        why: "In <i>gekündigt</i> la <b>ü</b> è breve e il <b>-igt</b> finale si legge [ɪçt]; in <i>jemandem</i> la <b>j</b> è [j]; in <i>entschieden</i> la <b>ie</b> è lunga."
+      },
+      {
+        tr: "Invece di aspettare, dovremmo chiamare subito.",
+        why: "In <i>anstatt</i> l'accento cade su <b>statt</b>; in <i>sollten</i> la <b>o</b> è breve; in <i>sofort</i> l'accento cade su <b>fort</b>."
+      }
+    ]
+  },
+  "lesson:b2-u03-test": {
+    theme: "Verifica",
+    title: "Test: Passivo e tempo del racconto",
+    objectives: [
+      "verificare il passivo al Perfekt e con i modali, il Präteritum narrativo e ohne ... zu"
+    ],
+    theory: [
+      {
+        p: "Dieci domande sull'intera unità. Si supera con il 70%. Non riguardare le lezioni mentre rispondi: se non ricordi qualcosa, è meglio tornare a ripassare."
+      }
+    ],
+    exercises: [
+      {
+        tr: "Il Präteritum di finden, tutte le persone.",
+        why: "<i>fand, fandest, fand, fanden, fandet, fanden</i>: dopo la <i>d</i> si inserisce una <i>e</i> davanti a <i>-st</i> e <i>-t</i>."
+      },
+      {
+        q: "Completa: «Das Museum ist 1910 eröffnet ___.»",
+        hint: "passivo al Perfekt",
+        why: "<b>worden</b>: <i>ist eröffnet worden</i>, passivo al Perfekt."
+      },
+      {
+        q: "Completa: «Der Antrag muss bis Montag abgegeben ___.»",
+        hint: "infinito del passivo dopo un modale",
+        why: "<b>werden</b>: modale + participio + <i>werden</i>."
+      },
+      {
+        q: "Completa al Präteritum: «Plötzlich ___ sie ein Geräusch.» (hören)",
+        hint: "verbo debole, sie (lei)",
+        why: "<b>hörte</b>: verbo debole, <i>hör-</i> + <i>-te</i>."
+      },
+      {
+        q: "Completa: «Er ging, ohne ein Wort ___ sagen.»",
+        hint: "la particella dell'infinito",
+        why: "<b>zu</b>: <i>ohne ein Wort zu sagen</i>."
+      },
+      {
+        q: "Come dici «Il ponte era già stato chiuso»?",
+        opts: [
+          "Die Brücke war schon gesperrt worden.",
+          "Die Brücke ist schon gesperrt geworden.",
+          "Die Brücke hatte schon gesperrt worden."
+        ],
+        why: "Plusquamperfekt del passivo: <b>war</b> + participio + <b>worden</b>. Nel passivo non si usa mai <i>haben</i>."
+      },
+      {
+        q: "Quale frase è corretta?",
+        opts: [
+          "Statt dass du hilfst, schaust du zu.",
+          "Statt zu du hilfst, schaust du zu.",
+          "Statt dass du helfen, schaust du zu."
+        ],
+        why: "Con un soggetto espresso serve <b>statt dass</b> + verbo coniugato in fondo: <i>du hilfst</i>."
+      },
+      {
+        q: "Traduci: «La lettera è stata scritta ieri.»",
+        why: "<i>Der Brief ist gestern geschrieben worden</i>, oppure al Präteritum <i>Der Brief wurde gestern geschrieben</i>."
+      },
+      {
+        tr: "Il castello fu costruito nel diciottesimo secolo. In seguito è stato trasformato più volte, senza che il suo carattere cambiasse.",
+        why: "In <i>Schloss</i> la <b>o</b> è breve; in <i>achtzehnten</i> la <b>ch</b> è [x] e la <b>z</b> è [ts]; in <i>Charakter</i> la <b>Ch</b> iniziale si legge [k]."
+      },
+      {
+        tr: "Invece di discutere a lungo, abbiamo semplicemente risolto il problema.",
+        why: "In <i>diskutieren</i> l'accento cade su <b>tie</b>; in <i>Problem</i> l'accento cade su <b>blem</b>; in <i>gelöst</i> la <b>ö</b> è lunga."
+      }
+    ]
   }
 });

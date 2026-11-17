@@ -456,5 +456,221 @@ LINGUAI.addUnits("B2", [
         { t: "speak", it: "Sollten Sie verhindert sein, sagen Sie bitte rechtzeitig ab." }
       ]
     }
+  },
+  {
+    id: "b2-u03",
+    icon: "🏛️",
+    titleIt: "Passiv und Erzählzeit",
+    lessons: [
+      {
+        id: "b2-u03-l1",
+        tags: ["g-passiv"],
+        cefr: "B2",
+        titleIt: "Es wurde gebaut, es ist repariert worden",
+        grammar: {
+          examples: [
+            { it: "Das Rathaus wurde im sechzehnten Jahrhundert gebaut." },
+            { it: "Die Brücke ist letztes Jahr renoviert worden." },
+            { it: "Der Fehler war schon vorher entdeckt worden." },
+            { it: "Das Formular muss bis Freitag ausgefüllt werden." },
+            { it: "Die Daten konnten nicht gespeichert werden." },
+            { it: "Das Geschäft ist sonntags geschlossen." }
+          ]
+        },
+        vocab: [
+          { it: "das Jahrhundert", plural: "die Jahrhunderte", ex: "Die Kirche stammt aus dem zwölften Jahrhundert." },
+          { it: "das Gebäude", plural: "die Gebäude", ex: "Das Gebäude ist sehr alt." },
+          { it: "die Brücke", plural: "die Brücken", ex: "Die Brücke wird gerade repariert." },
+          { it: "der Bau", plural: "die Bauten", ex: "Der Bau dauerte zehn Jahre." },
+          { it: "die Erfindung", plural: "die Erfindungen", ex: "Das Telefon war eine wichtige Erfindung." },
+          { it: "das Verfahren", plural: "die Verfahren", ex: "Das Verfahren ist kompliziert." },
+          { it: "errichten", ex: "Die Mauer wurde 1961 errichtet." },
+          { it: "zerstören", ex: "Die Stadt wurde im Krieg zerstört." },
+          { it: "erfinden", ex: "Wer hat das Telefon erfunden?" },
+          { it: "herstellen", ex: "Hier werden Autos hergestellt." },
+          { it: "entdecken", ex: "Der Fehler wurde zufällig entdeckt." },
+          { it: "renovieren", ex: "Das Haus ist frisch renoviert." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["worden"] },
+          { t: "fill", a: ["war"] },
+          { t: "fill", a: ["werden"] },
+          {
+            t: "cloze",
+            text: "Hier {{1}} seit 1950 Autos {{2}}.",
+            gaps: [["werden"], ["hergestellt"]]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Die Stadt ist im Krieg zerstört worden",
+              "Die Stadt wurde im Krieg zerstört",
+              "Die Stadt ist während des Krieges zerstört worden",
+              "Die Stadt wurde während des Krieges zerstört",
+              "Die Stadt ist während des Kriegs zerstört worden",
+              "Die Stadt wurde während des Kriegs zerstört"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Das alte Rathaus wurde im sechzehnten Jahrhundert gebaut. Im Krieg ist es fast vollständig zerstört worden, aber danach wurde es originalgetreu wieder aufgebaut."
+          },
+          { t: "speak", it: "Die Brücke ist letztes Jahr renoviert worden und ist jetzt wieder geöffnet." }
+        ]
+      },
+      {
+        id: "b2-u03-l2",
+        tags: ["g-praeteritum"],
+        cefr: "B2",
+        titleIt: "Das Präteritum im Erzählen",
+        grammar: {
+          examples: [
+            { it: "Es war einmal ein armer Müller." },
+            { it: "Plötzlich klingelte das Telefon." },
+            { it: "Sie stand auf und ging zum Fenster." },
+            { it: "Er lief, so schnell er konnte." },
+            { it: "Als sie ankam, war der Zug schon abgefahren." },
+            { it: "Niemand wusste, wer den Brief geschrieben hatte." }
+          ]
+        },
+        vocab: [
+          { it: "die Geschichte", plural: "die Geschichten", ex: "Erzähl mir eine Geschichte!" },
+          { it: "das Märchen", plural: "die Märchen", ex: "Kennst du das Märchen vom Froschkönig?" },
+          { it: "der Held", plural: "die Helden", ex: "Am Ende rettet der Held die Prinzessin." },
+          { it: "die Erzählung", plural: "die Erzählungen", ex: "Die Erzählung spielt im Mittelalter." },
+          { it: "der Anfang", plural: "die Anfänge", ex: "Am Anfang war alles ruhig." },
+          { it: "das Ende", plural: "die Enden", ex: "Das Ende der Geschichte ist traurig." },
+          { it: "erzählen", ex: "Meine Oma erzählte oft von früher." },
+          { it: "geschehen", ex: "Was geschah dann?" },
+          { it: "erschrecken", ex: "Sie erschrak, als es an der Tür klopfte." },
+          { it: "plötzlich", ex: "Plötzlich ging das Licht aus." },
+          { it: "damals", ex: "Damals gab es noch kein Internet." },
+          { it: "schließlich", ex: "Schließlich fanden sie den Weg nach Hause." }
+        ],
+        exercises: [
+          { t: "conj", verb: "laufen", tense: "praet", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "conj", verb: "ziehen", tense: "praet", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "conj", verb: "treffen", tense: "praet", persons: [0, 1, 2, 3, 4, 5] },
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["klingelte"] },
+          { t: "fill", a: ["war"] },
+          {
+            t: "cloze",
+            text: "Er {{1}}, so schnell er {{2}}.",
+            gaps: [["lief", "rannte"], ["konnte"]]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Plötzlich ging das Licht aus",
+              "Auf einmal ging das Licht aus",
+              "Das Licht ging plötzlich aus",
+              "Das Licht ging auf einmal aus"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Es war schon dunkel, als er nach Hause kam. Die Tür stand offen, und niemand antwortete. Er erschrak und rief die Polizei."
+          },
+          { t: "speak", it: "Damals gab es noch kein Internet, und wir schrieben uns lange Briefe." }
+        ]
+      },
+      {
+        id: "b2-u03-l3",
+        tags: ["g-infinitiv-zu"],
+        cefr: "B2",
+        titleIt: "Ohne zu fragen, statt zu warten",
+        grammar: {
+          examples: [
+            { it: "Er ging, ohne sich zu verabschieden." },
+            { it: "Statt zu warten, rief sie sofort an." },
+            { it: "Sie hat unterschrieben, ohne den Vertrag zu lesen." },
+            { it: "Anstatt zu lernen, sieht er fern." },
+            { it: "Er ging, ohne dass ich es merkte." },
+            { it: "Anstatt dass du hilfst, schaust du nur zu." }
+          ]
+        },
+        vocab: [
+          { it: "der Vertrag", plural: "die Verträge", ex: "Lies den Vertrag genau." },
+          { it: "die Erlaubnis", plural: "die Erlaubnisse", ex: "Sie hat ohne Erlaubnis telefoniert." },
+          { it: "der Abschied", plural: "die Abschiede", ex: "Der Abschied fiel uns schwer." },
+          { it: "die Rücksicht", plural: "-", ex: "Nimm bitte Rücksicht auf die anderen." },
+          { it: "die Unterschrift", plural: "die Unterschriften", ex: "Hier fehlt noch Ihre Unterschrift." },
+          { it: "unterschreiben", ex: "Bitte unterschreiben Sie hier." },
+          { it: "sich verabschieden", ex: "Er hat sich nicht verabschiedet." },
+          { it: "zuschauen", ex: "Die Kinder schauen beim Kochen zu." },
+          { it: "nachdenken", ex: "Denk mal darüber nach!" },
+          { it: "bemerken", ex: "Niemand hat den Fehler bemerkt." },
+          { it: "einfach", ex: "Er ist einfach gegangen." },
+          { it: "heimlich", ex: "Sie hat heimlich geraucht." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["zu"] },
+          { t: "fill", a: ["nachzudenken"] },
+          { t: "fill", a: ["Anstatt dass", "Statt dass"] },
+          {
+            t: "cloze",
+            text: "{{1}} zu warten, rief sie sofort {{2}}.",
+            gaps: [["Statt", "Anstatt"], ["an"]]
+          },
+          {
+            t: "order",
+            tokens: ["Anstatt", "zu", "lernen,", "sieht", "er", "den", "ganzen", "Tag", "fern"],
+            a: ["Anstatt zu lernen, sieht er den ganzen Tag fern"]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Er hat den Vertrag unterschrieben, ohne ihn zu lesen",
+              "Er unterschrieb den Vertrag, ohne ihn zu lesen",
+              "Er hat den Vertrag unterschrieben, ohne ihn gelesen zu haben",
+              "Er unterschrieb den Vertrag, ohne ihn gelesen zu haben"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Er hat einfach gekündigt, ohne mit jemandem darüber zu sprechen. Statt zu fragen, hat er sofort entschieden."
+          },
+          { t: "speak", it: "Anstatt zu warten, sollten wir sofort anrufen." }
+        ]
+      }
+    ],
+    test: {
+      id: "b2-u03-test",
+      tags: ["g-passiv", "g-praeteritum"],
+      cefr: "B2",
+      titleIt: "Test: Passiv und Erzählzeit",
+      exercises: [
+        { t: "conj", verb: "finden", tense: "praet", persons: [0, 1, 2, 3, 4, 5] },
+        { t: "fill", a: ["worden"] },
+        { t: "fill", a: ["werden"] },
+        { t: "fill", a: ["hörte"] },
+        { t: "fill", a: ["zu"] },
+        { t: "mcq", a: 0 },
+        { t: "mcq", a: 0 },
+        {
+          t: "trans",
+          dir: "toIt",
+          a: [
+            "Der Brief ist gestern geschrieben worden",
+            "Der Brief wurde gestern geschrieben"
+          ]
+        },
+        {
+          t: "listen",
+          it: "Das Schloss wurde im achtzehnten Jahrhundert gebaut. Später ist es mehrmals umgebaut worden, ohne dass sich sein Charakter verändert hat."
+        },
+        { t: "speak", it: "Statt lange zu diskutieren, haben wir das Problem einfach gelöst." }
+      ]
+    }
   }
 ]);
