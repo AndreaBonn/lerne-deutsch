@@ -1726,5 +1726,602 @@ LINGUAI.addStrings("es", {
         why: "En <i>Mietvertrag</i> la <b>ie</b> es larga [iː] y la <b>v</b> es [f]; en <i>unterschrieben</i> la <b>sch</b> es [ʃ]; en <i>überwiesen</i> la <b>ü</b> es una vocal anterior redondeada."
       }
     ]
+  },
+  "unit:b1-u04": {
+    title: "Opiniones y medios",
+    grammarNote: "dass en el estilo indirecto · Präteritum y Plusquamperfekt en los textos escritos · nachdem y bevor · zwar ... aber, sowohl ... als auch · declinación del adjetivo"
+  },
+  "lesson:b1-u04-l1": {
+    theme: "Referir",
+    title: "Ha dicho que ...",
+    objectives: [
+      "referir lo que alguien ha dicho con una subordinada con dass",
+      "adaptar los pronombres al punto de vista de quien refiere",
+      "referir una pregunta con ob o con una palabra interrogativa",
+      "usar los verbos de comunicación en Perfekt: gesagt, erzählt, berichtet, behauptet"
+    ],
+    theory: [
+      {
+        h: "Referir con dass",
+        p: "Para referir lo que alguien ha dicho se usa un verbo de comunicación (<em>sagen, erzählen, berichten, behaupten, meinen</em>) y una subordinada con <strong>dass</strong>. El verbo conjugado va <strong>al final</strong>, y delante de <em>dass</em> siempre hay coma: <em>Anna hat gesagt, dass sie keine Zeit hat.</em> Cuando se cuenta algo de palabra, el verbo de comunicación suele ir en Perfekt (<em>hat gesagt, hat erzählt</em>)."
+      },
+      {
+        h: "Los pronombres cambian con el punto de vista",
+        p: "Quien refiere habla desde otro punto de vista, así que las personas se adaptan. Anna dice <em>«Ich habe keine Zeit»</em>, y tú refieres <em>Anna hat gesagt, dass <strong>sie</strong> keine Zeit hat.</em> Si alguien te dice <em>«Ich helfe dir»</em>, tú refieres <em>Er hat gesagt, dass er <strong>mir</strong> hilft.</em> El sujeto se expresa siempre: en alemán no se puede omitir."
+      },
+      {
+        h: "Preguntas y peticiones referidas",
+        p: "Una pregunta de sí o no se convierte en una subordinada con <strong>ob</strong>, una pregunta con palabra interrogativa conserva esa palabra, y en los dos casos el verbo va al final: <em>Sie hat gefragt, ob ich mitkomme. Er hat gefragt, wann der Zug kommt.</em> Una petición se refiere normalmente con <em>sollen</em>: <em>Sie hat gesagt, dass ich bald kommen soll.</em>"
+      },
+      {
+        h: "Sin dass",
+        p: "Después de <em>sagen, meinen, glauben</em> se puede omitir <em>dass</em>: entonces el verbo queda en <strong>segunda posición</strong>, como en una oración normal. <em>Sie hat gesagt, sie hat keine Zeit.</em> es correcta, pero más coloquial; con <em>dass</em>, en cambio, el verbo conjugado va al final: <em>..., dass sie keine Zeit hat.</em>"
+      },
+      {
+        contrast: "En español, al referir algo dicho en el pasado, se suele desplazar el tiempo: «No tengo tiempo» pasa a <em>dijo que no tenía tiempo</em> (concordancia de tiempos). El alemán no tiene esa regla: después de <em>hat gesagt</em> o <em>sagte</em> se mantiene normalmente el tiempo de las palabras originales (el presente se refiere al momento en que se dijeron, no garantiza que el hecho siga siendo cierto hoy): <em>Anna hat gesagt, dass sie keine Zeit <strong>hat</strong>.</em> Traducir <em>tenía</em> por <em>hatte</em> sitúa la falta de tiempo en el pasado. Además, el sujeto se expresa siempre (<em>dass <strong>sie</strong> keine Zeit hat</em>), y una petición, que en español va en subjuntivo (<em>me dijo que viniera pronto</em>), en alemán se refiere con <em>sollen</em> en indicativo: <em>Sie hat gesagt, dass ich bald kommen soll.</em>"
+      },
+      {
+        trap: "El español usa <em>que</em> para todo: <em>dijo que no viene</em> y <em>el libro que leo</em>. El alemán separa las dos cosas: <em>dass</em>, con dos <em>s</em>, es la conjunción; <em>das</em>, con una sola, es artículo o pronombre relativo (<em>das Buch, das ich lese</em>). Y con <em>dass</em> el verbo conjugado va al final: <em>dass sie keine Zeit hat</em>, no <s>dass sie hat keine Zeit</s>. El verbo en segunda posición solo es posible en la versión sin <em>dass</em>, algo que el español, que no puede omitir el <em>que</em>, no conoce."
+      },
+      {
+        tip: "Procedimiento en tres pasos: 1) elige el verbo de comunicación en Perfekt; 2) añade la coma y <em>dass</em> (u <em>ob</em> para las preguntas de sí o no); 3) reescribe la frase con las personas correctas y el verbo al final."
+      }
+    ],
+    grammar: {
+      title: "Del estilo directo al estilo indirecto",
+      note: "verbo de comunicación en Perfekt + <b>dass</b> (afirmación) u <b>ob</b> (pregunta de sí o no) + verbo conjugado <b>al final</b>; los pronombres se adaptan a quien refiere.",
+      table: {
+        head: ["estilo directo", "estilo indirecto"],
+        rows: [
+          ["Anna: «Ich habe keine Zeit.»", "Anna hat gesagt, dass sie keine Zeit hat."],
+          ["Tom: «Ich komme morgen.»", "Tom hat erzählt, dass er morgen kommt."],
+          ["Anna und Tom: «Wir ziehen um.»", "Anna und Tom haben erzählt, dass sie umziehen."],
+          ["Er: «Kommst du mit?»", "Er hat gefragt, ob ich mitkomme."],
+          ["Sie: «Wann kommt der Zug?»", "Sie hat gefragt, wann der Zug kommt."]
+        ]
+      },
+      examples: [
+        { tr: "Anna ha dicho que no tiene tiempo.", note: "ich pasa a sie; verbo al final" },
+        { tr: "Tom cuenta que viene mañana.", note: "presente con valor de futuro (morgen); sin cambio automático de tiempo" },
+        { tr: "La noticia dice que los precios suben.", note: "también un texto puede «decir»" },
+        { tr: "Ha preguntado si voy con ella.", note: "pregunta de sí o no: ob" },
+        { tr: "Ha afirmado que no ha visto nada.", note: "behaupten + dass; Perfekt en la subordinada" },
+        { tr: "Ha dicho que venga pronto.", note: "petición referida con sollen, en indicativo" }
+      ]
+    },
+    vocab: [
+      "la noticia",
+      "la noticia breve, el comunicado",
+      "la afirmación",
+      "la declaración, el testimonio",
+      "el informe, el reportaje",
+      "el rumor",
+      "la respuesta",
+      "la pregunta",
+      "contar",
+      "afirmar, sostener",
+      "informar",
+      "responder, contestar"
+    ],
+    exercises: [
+      {
+        q: "Anna dice: «Ich habe keine Zeit.» ¿Cómo lo refieres?",
+        opts: [
+          "Anna sagt, dass sie keine Zeit hat.",
+          "Anna sagt, dass ich keine Zeit habe.",
+          "Anna sagt, dass sie hat keine Zeit."
+        ],
+        why: "<b>Sie</b> en lugar de <i>ich</i>, y el verbo <i>hat</i> al final de la subordinada. <i>Ich</i> seguiría siendo la persona de quien habla, no Anna."
+      },
+      {
+        q: "Completa: «Tom hat gesagt, ___ er morgen kommt.»",
+        hint: "conjunción, afirmación",
+        why: "<b>Dass</b>: introduce una afirmación referida y manda el verbo al final."
+      },
+      {
+        q: "Completa: «Sie fragt, ___ du mitkommst.»",
+        hint: "pregunta de sí o no referida",
+        why: "<b>Ob</b>: la pregunta original era «Kommst du mit?», de sí o no."
+      },
+      {
+        q: "Paul dice: «Ich bin müde.» Completa: «Paul sagt, dass ___ müde ist.»",
+        hint: "pronombre, 3.ª persona masculina",
+        why: "<b>Er</b>: Paul es un hombre, y quien refiere no dice <i>ich</i>."
+      },
+      {
+        q: "Completa: «Sie hat mir alles ___.»",
+        hint: "erzählen, participio",
+        why: "<b>Erzählt</b>: <i>hat erzählt</i>, el Perfekt de <i>erzählen</i>. El participio de los verbos débiles es <i>ge-</i> + raíz + <i>-t</i>, pero <i>erzählen</i> empieza por <i>er-</i> y no lleva <i>ge-</i>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "La noticia dice que los precios suben.",
+        why: "<i>Die Meldung sagt, dass die Preise steigen.</i> Después de <i>dass</i>, el verbo <i>steigen</i> va al final."
+      },
+      {
+        q: "Relaciona cada frase con su significado.",
+        pairs: [
+          "Afirma que es inocente.",
+          "Ha preguntado si vengo.",
+          "La noticia dice que nieva.",
+          "Tom cuenta que se muda."
+        ]
+      },
+      {
+        q: "Traduce: «Anna ha dicho que no tiene tiempo.»",
+        why: "<i>Anna hat gesagt, dass sie keine Zeit hat.</i> El presente <i>hat</i> repite el tiempo de las palabras de Anna; después de <i>hat gesagt</i> no hay que cambiar el tiempo automáticamente. También vale la versión sin <i>dass</i>, con el verbo en segunda posición: <i>Anna hat gesagt, sie hat keine Zeit.</i>"
+      },
+      {
+        tr: "¿Ya has oído la noticia? Anna ha contado que se muda. Ha dicho que el piso es muy grande y ha preguntado si la ayudamos.",
+        why: "En <i>Nachricht</i> la primera <b>ch</b> es [x] (después de <i>a</i>) y la segunda [ç] (después de <i>i</i>); en <i>umzieht</i> la <b>z</b> es [ts] y la <b>ie</b> es larga [iː]; en <i>sehr</i> la <b>e</b> es larga."
+      },
+      {
+        tr: "Mi colega ha contado que viene mañana por la mañana.",
+        why: "En <i>früh</i> la <b>ü</b> es redondeada y larga; en <i>kommt</i> la <b>o</b> es breve; en <i>dass</i> la <b>a</b> es breve y la <b>ss</b> es [s]."
+      }
+    ]
+  },
+  "lesson:b1-u04-l2": {
+    theme: "Prensa",
+    title: "Leer un artículo",
+    objectives: [
+      "reconocer y usar el Präteritum de los verbos débiles, fuertes y mixtos en los textos escritos",
+      "formar el Plusquamperfekt con hatte o war y el participio",
+      "usar nachdem con el Plusquamperfekt y bevor",
+      "entender cómo un texto periodístico ordena los hechos en el tiempo"
+    ],
+    theory: [
+      {
+        h: "El Präteritum en lo escrito",
+        p: "En los textos escritos que cuentan hechos pasados (artículos, informes, novelas), el tiempo narrativo normal es el <strong>Präteritum</strong>; en la conversación se usa más el Perfekt. Los verbos <strong>débiles</strong> toman <em>-te</em> (<em>meldete, machte</em>), los <strong>fuertes</strong> cambian la vocal de la raíz (<em>schrieb, ging, las</em>) y no tienen terminación en la 1.ª y la 3.ª persona del singular. Los verbos <strong>mixtos</strong> (<em>dachte, brachte</em>) cambian la raíz pero toman las terminaciones débiles. En lo hablado, <em>sein, haben</em> y los modales son muy frecuentes en Präteritum (<em>war, hatte, konnte</em>)."
+      },
+      {
+        h: "El Plusquamperfekt: antes de otro hecho pasado",
+        p: "Se forma con el auxiliar en Präteritum, <strong>hatte</strong> o <strong>war</strong>, y el participio al final: <em>Er hatte lange recherchiert. Der Zug war schon abgefahren.</em> El auxiliar es el mismo que en el Perfekt (<em>haben</em> o <em>sein</em>). Sirve para decir que un hecho ocurrió <strong>antes</strong> que otro: <em>Die Nachricht stand in der Zeitung, aber niemand hatte sie gelesen.</em>"
+      },
+      {
+        h: "nachdem y bevor",
+        p: "<strong>nachdem</strong> (después de que) introduce una subordinada con el verbo al final y, si la principal está en Präteritum, el <strong>Plusquamperfekt</strong>: <em>Nachdem der Minister gesprochen hatte, gingen die Gäste nach Hause.</em> <strong>bevor</strong> (antes de que) lleva normalmente el mismo tiempo que la principal: <em>Bevor die Zeitung den Artikel veröffentlichte, prüfte die Redaktion die Quelle.</em> Si la subordinada va delante, la principal empieza por el verbo conjugado."
+      },
+      {
+        contrast: "El Präteritum alemán cubre a la vez el indefinido y el imperfecto: <em>schrieb</em> es <em>escribió</em> y también <em>escribía</em>, y <em>Die Zeitung erschien jeden Morgen</em> es <em>el periódico salía cada mañana</em>. El Plusquamperfekt corresponde al pluscuamperfecto (<em>había leído</em> = <em>hatte gelesen</em>); el pretérito anterior (<em>hubo hablado</em>) no tiene forma propia. Con el mismo sujeto, el español prefiere el infinitivo (<em>después de hablar, antes de publicar</em>); con <em>nachdem</em> y <em>bevor</em> el alemán necesita una <strong>subordinada con sujeto</strong> y verbo conjugado: <em>Nachdem der Minister gesprochen hatte, ...</em> Y donde el español pone subjuntivo (<em>antes de que publicaran, después de que hablara</em>), en estas narraciones de hechos pasados el alemán usa el indicativo: <em>bevor sie veröffentlichten</em>. El subjuntivo español no se traduce automáticamente por un Konjunktiv."
+      },
+      {
+        trap: "El español dice <em>después de</em> tanto con un nombre (<em>después de la comida</em>) como con un infinitivo (<em>después de comer</em>). El alemán lo reparte: <em>nach</em> es una preposición y lleva un nombre en dativo (<em>nach dem Essen</em>); <em>nachdem</em> lleva una oración completa con el verbo al final, nunca un infinitivo. En la subordinada con <em>nachdem</em> los dos verbos van juntos al final, con el auxiliar en último lugar: <em>..., nachdem er gesprochen hatte</em>."
+      },
+      {
+        tip: "Cuando leas un artículo, busca primero los verbos en Präteritum: son la historia. Los verbos en Plusquamperfekt (<em>hatte ... gesagt, war ... gekommen</em>) señalan lo que pasó <em>antes</em> de la historia. Con las tres formas básicas (infinitivo, Präteritum, participio) entiendes la mayoría de los artículos."
+      }
+    ],
+    grammar: {
+      title: "Präteritum y Plusquamperfekt",
+      note: "<b>Präteritum</b> para la historia (<b>schrieb, ging, meldete</b>), <b>Plusquamperfekt</b> para lo que pasó antes (<b>hatte geschrieben, war gegangen</b>); <b>nachdem</b> + Plusquamperfekt; <b>bevor</b>: a menudo el mismo tiempo que la principal; también es posible el Plusquamperfekt en la principal para subrayar la anterioridad.",
+      table: {
+        head: ["infinitivo", "Präteritum (er/sie)", "participio"],
+        rows: [
+          ["schreiben", "schrieb", "geschrieben"],
+          ["lesen", "las", "gelesen"],
+          ["gehen", "ging", "gegangen"],
+          ["sprechen", "sprach", "gesprochen"],
+          ["erscheinen", "erschien", "erschienen"],
+          ["melden", "meldete", "gemeldet"],
+          ["denken", "dachte", "gedacht"],
+          ["bringen", "brachte", "gebracht"]
+        ]
+      },
+      examples: [
+        { tr: "El periodista escribió el artículo por la noche.", note: "Präteritum fuerte: schrieb" },
+        { tr: "El periódico salía cada mañana.", note: "erscheinen: erschien, también para el imperfecto" },
+        { tr: "Después de que el ministro hablara, los invitados se fueron a casa.", note: "nachdem + Plusquamperfekt" },
+        { tr: "Antes de que el periódico publicara el artículo, la redacción comprobó la fuente.", note: "bevor + Präteritum, en indicativo" },
+        { tr: "Había investigado durante mucho tiempo antes de escribir.", note: "Plusquamperfekt: hatte recherchiert" },
+        { tr: "La noticia estaba en el periódico, pero nadie la había leído.", note: "hatte ... gelesen: antes de la escena" }
+      ]
+    },
+    vocab: [
+      "el artículo",
+      "el periódico",
+      "el titular",
+      "el título (de un texto)",
+      "el periodista",
+      "la fuente",
+      "el lector",
+      "la redacción",
+      "publicar",
+      "salir, publicarse",
+      "investigar, documentarse",
+      "informar, dar la noticia"
+    ],
+    exercises: [
+      {
+        q: "Elige la forma correcta: «Der Journalist ___ den Artikel am Abend.»",
+        opts: ["schrieb", "schreibte", "geschrieben"],
+        why: "<b>Schrieb</b>: <i>schreiben</i> es un verbo fuerte, el Präteritum cambia la vocal. <i>Schreibte</i> no existe; <i>geschrieben</i> es el participio y necesita un auxiliar."
+      },
+      {
+        q: "Elige el auxiliar del Plusquamperfekt activo: «Nachdem die Redaktion die Quelle geprüft ___, veröffentlichte sie den Artikel.»",
+        opts: ["hatte", "wurde", "war"],
+        why: "<b>Hatte</b>: <i>prüfen</i> lleva <i>haben</i>, y con <i>nachdem</i> el tiempo es el Plusquamperfekt porque la principal está en Präteritum."
+      },
+      {
+        q: "¿Qué frase tiene el orden correcto?",
+        opts: [
+          "Nachdem er den Artikel gelesen hatte, rief er die Redaktion an.",
+          "Nachdem er hatte den Artikel gelesen, rief er die Redaktion an.",
+          "Nachdem er den Artikel gelesen hatte, er rief die Redaktion an."
+        ],
+        why: "En la subordinada, el participio y el auxiliar van al final (<i>gelesen hatte</i>); después, la principal empieza por el verbo conjugado (<i>rief er</i>)."
+      },
+      {
+        q: "Completa: «Die Zeitung ___ jeden Morgen.»",
+        hint: "erscheinen, Präteritum, 3.ª persona",
+        why: "<b>Erschien</b>: verbo fuerte, el Präteritum cambia la vocal de la raíz."
+      },
+      {
+        q: "Completa: «Bevor er den Artikel ___, recherchierte er lange.»",
+        hint: "schreiben, Präteritum, 3.ª persona",
+        why: "<b>Schrieb</b>: aquí <i>bevor</i> lleva el mismo tiempo que la principal (es lo habitual; el Plusquamperfekt en la principal subrayaría la anterioridad), y es un verbo fuerte sin terminación."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Después de que el ministro hablara, los invitados se fueron a casa.",
+        why: "<i>Nachdem der Minister gesprochen hatte, gingen die Gäste nach Hause.</i> El participio <i>gesprochen</i> y el auxiliar <i>hatte</i> van al final."
+      },
+      {
+        q: "Relaciona cada frase con su significado.",
+        pairs: [
+          "Leía el periódico.",
+          "Escribió un informe.",
+          "El artículo salió ayer.",
+          "La redacción comprobó la fuente."
+        ]
+      },
+      {
+        q: "Traduce: «El periodista escribió el artículo ayer por la noche.»",
+        why: "<i>Der Journalist schrieb den Artikel gestern Abend.</i> En la conversación también se dice <i>hat ... geschrieben</i>, y la frase puede empezar por <i>Gestern Abend</i>."
+      },
+      {
+        tr: "El periódico publicó el artículo el lunes. Después de que la redacción comprobara la fuente, el periodista escribió el título. Muchos lectores leyeron el artículo ya por la mañana.",
+        why: "En <i>veröffentlichte</i> la <b>v</b> es [f] y la <b>ö</b> es redondeada; en <i>Quelle</i> la <b>qu</b> es [kv]; en <i>Überschrift</i> la <b>sch</b> es [ʃ]; en <i>Leser</i> la <b>s</b> entre vocales es sonora [z]."
+      },
+      {
+        tr: "Después de haber escrito el informe, el periodista se fue a casa.",
+        why: "En <i>Journalist</i> la <b>J</b> inicial es [ʒ], como en francés <i>jour</i>; en <i>Bericht</i> la <b>ch</b> es [ç]; en <i>geschrieben</i> la <b>sch</b> es [ʃ]; en <i>Hause</i> la <b>au</b> es [aʊ]."
+      }
+    ]
+  },
+  "lesson:b1-u04-l3": {
+    theme: "Radio y pódcast",
+    title: "zwar ... aber, sowohl ... als auch",
+    objectives: [
+      "conceder algo y luego contraponerlo con zwar ... aber",
+      "unir dos elementos con sowohl ... als auch",
+      "mantener el orden de las palabras después de aber",
+      "hablar de radio, emisiones y pódcasts"
+    ],
+    theory: [
+      {
+        h: "zwar ... aber: es cierto, pero",
+        p: "<strong>zwar</strong> admite un hecho y <strong>aber</strong> introduce el contraste: <em>Die Sendung ist zwar lang, aber sie ist interessant.</em> <em>Zwar</em> suele ir después del verbo, pero también puede abrir la frase: <em>Zwar ist die Sendung lang, aber sie ist interessant.</em> <em>Aber</em> ocupa la posición cero: el verbo de la segunda oración se queda en su sitio normal, en segunda posición después del sujeto."
+      },
+      {
+        h: "sowohl ... als auch: tanto ... como",
+        p: "<strong>sowohl ... als auch</strong> une dos elementos del mismo tipo: <em>Der Sender bringt sowohl Nachrichten als auch Musik.</em> Pueden ser dos sujetos, dos objetos, dos complementos. Con dos sujetos el verbo va en plural: <em>Sowohl Anna als auch Tom hören den Podcast.</em> Normalmente no hay coma entre los dos elementos."
+      },
+      {
+        h: "Otra pareja: weder ... noch",
+        p: "Para negar dos elementos se usa <strong>weder ... noch</strong> (ni ... ni): <em>Ich habe weder Zeit noch Lust.</em> La pareja ya niega, así que no se añade <em>nicht</em> ni <em>kein</em>."
+      },
+      {
+        contrast: "<em>zwar ... aber</em> se parece a <em>si bien ...</em> o a <em>es cierto que ..., pero</em>, con una diferencia importante: <em>si bien</em> y <em>aunque</em> abren una subordinada, mientras que <em>zwar</em> es un simple adverbio dentro de una oración principal. Por eso el verbo sigue en segunda posición: <em>Die Sendung ist zwar lang</em>, sin mandar nada al final. <em>sowohl ... als auch</em> equivale a <em>tanto ... como</em>, y <em>weder ... noch</em> a <em>ni ... ni</em>. Cuando <em>ni ... ni</em> va detrás del verbo, el español exige un <em>no</em> delante (<em>no tengo ni tiempo ni ganas</em>); el alemán no lo admite: <em>Ich habe weder Zeit noch Lust.</em>"
+      },
+      {
+        trap: "Por el <em>como</em> de <em>tanto ... como</em> es fácil escribir <em>wie</em>. <em>sowohl ... wie (auch)</em> existe, pero es menos frecuente; la forma habitual, y la que pide este curso, es <em>sowohl ... als auch</em>. Tampoco vale <s>sowohl ... aber</s> ni <s>sowohl ... und auch</s>. Y <em>aber</em>, igual que <em>pero</em>, no cambia el orden: <em>..., aber sie ist interessant</em>, no <s>aber ist sie interessant</s> ni <s>aber sie interessant ist</s>."
+      },
+      {
+        tip: "Si quieres restar peso a un hecho y dárselo al segundo, pon el primero con <em>zwar</em> y deja que tu opinión llegue después de <em>aber</em>: <em>Der Podcast ist zwar neu, aber er ist wirklich gut.</em> Quien te lee entiende de dónde viene tu opinión."
+      }
+    ],
+    grammar: {
+      title: "zwar ... aber y sowohl ... als auch",
+      note: "<b>zwar ... aber</b> concede y contrapone; <b>aber</b> ocupa la posición cero. <b>sowohl ... als auch</b> une dos elementos; con dos sujetos el verbo va en plural.",
+      table: {
+        head: ["pareja", "significado", "ejemplo"],
+        rows: [
+          ["zwar ... aber", "es cierto que ..., pero", "Die Sendung ist zwar lang, aber sie ist interessant."],
+          ["sowohl ... als auch", "tanto ... como", "Ich höre sowohl Radio als auch Podcasts."],
+          ["weder ... noch", "ni ... ni", "Ich habe weder Zeit noch Lust."]
+        ]
+      },
+      examples: [
+        { tr: "La emisión es larga, es cierto, pero es interesante.", note: "aber: posición cero, orden normal" },
+        { tr: "El programa es bueno, es cierto, pero tengo poco tiempo.", note: "Zwar abre la frase: el verbo va justo después" },
+        { tr: "La emisora pone tanto noticias como música.", note: "sowohl ... als auch con dos objetos" },
+        { tr: "Escucho tanto la radio como pódcasts.", note: "sin coma entre los dos elementos" },
+        { tr: "Tanto Anna como Tom escuchan el pódcast.", note: "dos sujetos: verbo en plural" },
+        { tr: "Es cierto que no tiene mucho tiempo, pero escucha un pódcast cada día.", note: "zwar después del verbo, luego aber" }
+      ]
+    },
+    vocab: [
+      "la radio",
+      "la emisión, el programa",
+      "la emisora",
+      "el programa",
+      "el pódcast",
+      "la entrevista",
+      "el comentario",
+      "el oyente",
+      "escuchar, prestar atención",
+      "encender",
+      "apagar",
+      "suscribirse"
+    ],
+    exercises: [
+      {
+        q: "¿Qué frase tiene el orden correcto?",
+        opts: [
+          "Die Sendung ist zwar lang, aber sie ist interessant.",
+          "Die Sendung ist zwar lang, aber ist sie interessant.",
+          "Die Sendung ist zwar lang, aber sie interessant ist."
+        ],
+        why: "Después de <b>aber</b> el verbo se queda en segunda posición, detrás del sujeto: <i>aber sie ist interessant</i>. <i>Aber</i> no manda el verbo al final."
+      },
+      {
+        q: "¿Qué pareja significa «tanto ... como»?",
+        opts: ["sowohl ... als auch", "zwar ... aber", "weder ... noch"],
+        why: "<b>Sowohl ... als auch</b>: une dos elementos. <i>Zwar ... aber</i> concede y contrapone, <i>weder ... noch</i> niega."
+      },
+      {
+        q: "¿Qué frase significa «Escucho tanto la radio como pódcasts»?",
+        opts: [
+          "Ich höre sowohl Radio als auch Podcasts.",
+          "Ich höre zwar Radio als auch Podcasts.",
+          "Ich höre sowohl Radio aber Podcasts."
+        ],
+        why: "<b>Sowohl ... als auch</b> es la pareja correcta. <i>Zwar</i> pide <i>aber</i>, y <i>sowohl</i> pide <i>als auch</i>: las dos parejas no se mezclan."
+      },
+      {
+        q: "Completa: «Das Programm ist ___ gut, aber ich habe wenig Zeit.»",
+        hint: "concesión, antes de aber",
+        why: "<b>Zwar</b>: admite que el programa es bueno, y luego <i>aber</i> introduce el contraste."
+      },
+      {
+        q: "Completa: «Der Sender bringt sowohl Nachrichten ___ auch Musik.»",
+        hint: "segunda parte de la pareja, en la forma que enseña esta lección",
+        why: "<b>Als</b>: la pareja es <i>sowohl ... als auch</i>."
+      },
+      {
+        q: "Completa con la pareja zwar ... aber: «Die Sendung ist ___ kurz, ___ sie ist sehr interessant.»",
+        why: "<b>Zwar ... aber</b>: la primera palabra admite un hecho, la segunda introduce el contraste."
+      },
+      {
+        q: "Relaciona cada frase con su significado.",
+        pairs: [
+          "La entrevista es corta, es cierto, pero buena.",
+          "Escucho tanto la radio como pódcasts.",
+          "El pódcast sale todos los lunes.",
+          "Los oyentes encienden la radio."
+        ]
+      },
+      {
+        q: "Ordena las palabras.",
+        tr: "El programa es largo, es cierto, pero es interesante.",
+        why: "<i>Das Programm ist zwar lang, aber es ist interessant</i>: <i>zwar</i> después del verbo, luego <i>aber</i> y el verbo <i>ist</i> en segunda posición."
+      },
+      {
+        tr: "Escucho la radio todas las mañanas. La emisora pone tanto noticias como música. La emisión es larga, es cierto, pero es realmente interesante.",
+        why: "En <i>höre</i> la <b>ö</b> es larga y redondeada; en <i>sowohl</i> la <b>s</b> es sonora [z] y la <b>w</b> es [v]; en <i>Nachrichten</i> la primera <b>ch</b> es [x] y la segunda [ç]; en <i>wirklich</i> la <b>w</b> es [v] y la <b>ch</b> final es [ç]."
+      },
+      {
+        tr: "Escucho tanto la radio como pódcasts, pero no todos los días.",
+        why: "En <i>sowohl</i> la <b>s</b> es sonora [z] y la <b>w</b> es [v]; en <i>höre</i> la <b>ö</b> es redondeada; en <i>nicht</i> la <b>ch</b> es [ç]; en <i>auch</i> la <b>ch</b> es [x], después de <i>au</i>."
+      }
+    ]
+  },
+  "lesson:b1-u04-l4": {
+    theme: "Debate",
+    title: "Defender la propia opinión",
+    objectives: [
+      "usar las terminaciones del adjetivo después del artículo determinado, después de ein y sin artículo",
+      "expresar acuerdo y desacuerdo con fórmulas fijas",
+      "construir un argumento con zwar ... aber y sowohl ... als auch",
+      "leer y usar adjetivos con terminación en textos de opinión"
+    ],
+    theory: [
+      {
+        h: "Las tres series de terminaciones",
+        p: "Delante del nombre, el adjetivo toma una terminación que depende de lo que lo precede. Después del <strong>artículo determinado</strong> (<em>der, die, das</em>, y también <em>dieser, jeder</em>) las terminaciones son casi siempre <strong>-en</strong>; <strong>-e</strong> aparece en el nominativo singular de los tres géneros y en el acusativo del femenino y del neutro: <em>der gute Beitrag, die gute Idee, das gute Beispiel, die guten Argumente.</em>"
+      },
+      {
+        h: "Después de ein, kein y los posesivos",
+        p: "Donde <em>ein</em> no tiene terminación, la lleva el adjetivo: <strong>ein guter</strong> Standpunkt (masculino nominativo), <strong>ein gutes</strong> Argument (neutro nominativo y acusativo). En el resto valen las mismas terminaciones que con el artículo determinado: <em>eine gute Idee, einen guten Beitrag, mit einem guten Argument.</em>"
+      },
+      {
+        h: "Sin artículo",
+        p: "Sin artículo, el adjetivo es el que lleva la marca de género y caso, con las terminaciones del artículo: <em>interessante Kommentare</em> (plural), <em>guter Rat, gutes Wetter, gute Laune</em>. La excepción es el genitivo masculino y neutro, donde el adjetivo toma <strong>-en</strong> porque el nombre ya tiene <em>-(e)s</em>: <em>guten Weines, guten Wetters</em>. Varios adjetivos delante del mismo nombre suelen llevar la misma terminación: <em>ein klarer, gut begründeter Standpunkt.</em>"
+      },
+      {
+        h: "Fórmulas para debatir",
+        p: "Para expresar acuerdo: <em>Ich stimme dir zu. Das sehe ich auch so.</em> Para el desacuerdo: <em>Da muss ich widersprechen. Ich bin anderer Meinung.</em> Para presentar tu postura: <em>Ich bin der Meinung, dass ... Meiner Ansicht nach ...</em> Para reconocer un punto y luego rebatirlo: <em>Das ist zwar richtig, aber ...</em>; para sumar razones: <em>Das hat sowohl Vorteile als auch Nachteile.</em>"
+      },
+      {
+        contrast: "En español el adjetivo concuerda en género y número y suele ir detrás del nombre (<em>un comentario interesante</em>); el caso no cambia nada: <em>un buen argumento</em> es igual como sujeto que como complemento. En alemán el adjetivo atributivo va siempre <strong>delante</strong>, y su terminación depende también del <strong>caso</strong> y de lo que lo precede: <em>ein guter Standpunkt</em> (nominativo), <em>einen guten Standpunkt</em> (acusativo). Al revés que en español, el adjetivo después de <em>sein</em> no concuerda: <em>la idea es buena</em>, pero <em>Die Idee ist gut</em>, <em>Die Argumente sind gut</em>."
+      },
+      {
+        trap: "Muchos adjetivos españoles distinguen el género con <em>-o</em>/<em>-a</em> (otros, como <em>interesante</em>, no cambian), y es tentador buscar en alemán una terminación fija por género: <em>-er</em> siempre con el masculino. Pero después del artículo determinado no aparece <em>-er</em>: <em>der gute Standpunkt</em>, no <s>der guter Standpunkt</s>. <em>-er</em> o <em>-es</em> aparecen solo donde el artículo no muestra la marca: <em>ein guter Standpunkt</em>, <em>ein gutes Argument</em>. La terminación no depende solo del género, sino de lo que va delante."
+      },
+      {
+        tip: "Para elegir la terminación, pregúntate: ¿hay una marca de género y caso antes del adjetivo? Si la hay (<em>der, die, dem, einer</em>), el adjetivo toma <em>-e</em> o <em>-en</em>; si falta, la muestra el adjetivo."
+      }
+    ],
+    grammar: {
+      title: "El adjetivo después del artículo determinado",
+      note: "después de <b>der, die, das</b>: <b>-e</b> en el nominativo singular y en el acusativo del femenino y del neutro, <b>-en</b> en el resto. Después de <b>ein</b>, la terminación <b>-er / -es</b> aparece donde <i>ein</i> no la muestra.",
+      table: {
+        head: ["", "m.", "f.", "n.", "plural"],
+        rows: [
+          ["nominativo", "der gute Beitrag", "die gute Idee", "das gute Beispiel", "die guten Argumente"],
+          ["acusativo", "den guten Beitrag", "die gute Idee", "das gute Beispiel", "die guten Argumente"],
+          ["dativo", "dem guten Beitrag", "der guten Idee", "dem guten Beispiel", "den guten Argumenten"],
+          ["genitivo", "des guten Beitrags", "der guten Idee", "des guten Beispiels", "der guten Argumente"]
+        ]
+      },
+      examples: [
+        { tr: "Es un buen punto de vista.", note: "ein + masculino nominativo: -er" },
+        { tr: "Tengo un buen argumento.", note: "ein + neutro acusativo: -es" },
+        { tr: "Con el buen argumento convence a todos.", note: "dativo neutro después de dem: -en" },
+        { tr: "Escribe una contribución larga.", note: "einen + masculino acusativo: -en" },
+        { tr: "Leo con gusto comentarios interesantes.", note: "sin artículo, plural: -e" },
+        { tr: "Es cierto que defiende una opinión clara, pero también escucha.", note: "eine + femenino acusativo: -e" }
+      ]
+    },
+    vocab: [
+      "la opinión, el parecer",
+      "el argumento",
+      "el punto de vista",
+      "el debate, la discusión",
+      "el ejemplo",
+      "la ventaja",
+      "la desventaja",
+      "la contribución, la intervención",
+      "convencer",
+      "contradecir, llevar la contraria",
+      "justificar, fundamentar",
+      "estar de acuerdo"
+    ],
+    exercises: [
+      {
+        q: "¿Qué frase es correcta?",
+        opts: [
+          "Das ist ein guter Standpunkt.",
+          "Das ist ein gute Standpunkt.",
+          "Das ist ein guten Standpunkt."
+        ],
+        why: "<b>Ein guter Standpunkt</b>: masculino nominativo, y <i>ein</i> no tiene terminación, así que la muestra el adjetivo con <i>-er</i>."
+      },
+      {
+        q: "Completa: «mit der ___ Idee»",
+        opts: ["guten", "gute", "guter"],
+        why: "<b>Guten</b>: dativo femenino después del artículo determinado, así que <i>-en</i>."
+      },
+      {
+        q: "Completa: «Ich lese einen ___ Beitrag.»",
+        hint: "interessant, acusativo masculino después de einen",
+        why: "<b>Interessanten</b>: acusativo masculino después de <i>einen</i>, así que <i>-en</i>."
+      },
+      {
+        q: "Completa: «Sie hat ein ___ Argument.»",
+        hint: "stark, neutro acusativo después de ein",
+        why: "<b>Starkes</b>: neutro acusativo después de <i>ein</i>, que no tiene terminación, así que <i>-es</i>."
+      },
+      {
+        q: "Completa la frase: «Mit dem ___ Beispiel ___ sie alle.»",
+        why: "<b>Guten</b> (dativo neutro después de <i>dem</i>) y <b>überzeugt</b> (presente, 3.ª persona)."
+      },
+      {
+        q: "Relaciona cada fórmula con su significado.",
+        pairs: [
+          "Soy de la opinión de que ...",
+          "En esto tengo que llevar la contraria.",
+          "Estoy de acuerdo contigo.",
+          "Es un argumento de peso."
+        ]
+      },
+      {
+        q: "Ordena las palabras.",
+        tr: "Soy de la opinión de que es una gran ventaja.",
+        why: "<i>Ich bin der Meinung, dass das ein großer Vorteil ist.</i> <i>Dass</i> manda el verbo <i>ist</i> al final, y <i>ein großer Vorteil</i> es masculino nominativo."
+      },
+      {
+        q: "Traduce: «He leído un artículo largo.»",
+        why: "<i>Ich habe einen langen Artikel gelesen.</i> <i>Artikel</i> es masculino, acusativo: <i>einen langen</i>. También vale el Präteritum: <i>Ich las einen langen Artikel.</i>"
+      },
+      {
+        tr: "Soy de la opinión de que es un buen plan. Tiene tanto ventajas como desventajas, pero las ventajas son mayores. Es cierto que cuesta dinero, pero da un buen resultado.",
+        why: "En <i>Meinung</i> la <b>ei</b> es [aɪ]; en <i>Vorteile</i> la <b>V</b> es [f] y la <b>ei</b> es [aɪ]; en <i>Nachteile</i> la <b>ch</b> es [x]; en <i>größer</i> la <b>ö</b> es larga y redondeada y la <b>ß</b> es [s]."
+      },
+      {
+        tr: "Es un argumento de peso, pero yo soy de otra opinión.",
+        why: "En <i>starkes</i> la <b>st</b> inicial es [ʃt]; en <i>Argument</i> la <b>g</b> es [g]; en <i>aber</i> la <b>a</b> es larga; en <i>Meinung</i> la <b>ei</b> es [aɪ]."
+      }
+    ]
+  },
+  "lesson:b1-u04-test": {
+    theme: "Prueba",
+    title: "Test: Opiniones y medios",
+    objectives: [
+      "comprobar el estilo indirecto, nachdem y bevor, zwar ... aber y sowohl ... als auch, la declinación del adjetivo"
+    ],
+    theory: [
+      {
+        p: "Doce preguntas sobre toda la unidad. Se aprueba con el 70 %. No vuelvas a mirar las lecciones mientras respondes: si no recuerdas algo, es mejor volver a repasar."
+      }
+    ],
+    exercises: [
+      {
+        tr: "El Plusquamperfekt de gehen, todas las personas.",
+        why: "<i>War gegangen, warst gegangen, war gegangen, waren gegangen, wart gegangen, waren gegangen</i>: <i>sein</i> en Präteritum + participio."
+      },
+      {
+        q: "Completa: «Anna hat gesagt, ___ sie keine Zeit hat.»",
+        hint: "conjunción, afirmación referida",
+        why: "<b>Dass</b>: introduce una afirmación referida y manda el verbo al final."
+      },
+      {
+        q: "Completa: «Nachdem sie die Nachricht gelesen ___, rief sie an.»",
+        hint: "Plusquamperfekt, haben",
+        why: "<b>Hatte</b>: <i>nachdem</i> con la principal en Präteritum (<i>rief</i>) pide el Plusquamperfekt."
+      },
+      {
+        q: "Completa con el Präteritum de veröffentlichen: «Bevor die Zeitung den Artikel ___, prüfte die Redaktion die Quelle.»",
+        hint: "Präteritum, 3.ª persona del singular",
+        why: "<b>Veröffentlichte</b>: aquí <i>bevor</i> lleva el mismo tiempo que la principal (<i>prüfte</i>), el Präteritum. Verbo débil: raíz + <i>-te</i>."
+      },
+      {
+        q: "Completa: «Die Sendung ist ___ kurz, aber sie ist sehr interessant.»",
+        hint: "primer elemento de la pareja con aber",
+        why: "<b>Zwar</b>: <i>zwar ... aber</i> reconoce un punto y luego lo rebate."
+      },
+      {
+        q: "Completa: «Er hört sowohl Radio ___ auch Podcasts.»",
+        hint: "segundo elemento de la pareja con sowohl, en la forma de la lección",
+        why: "<b>Als</b>: la pareja es <i>sowohl ... als auch</i>."
+      },
+      {
+        q: "Completa con el adjetivo kurz: «Sie schreibt einen ___ Kommentar.»",
+        hint: "kurz, acusativo masculino después de einen",
+        why: "<b>Kurzen</b>: en el acusativo masculino después de <i>einen</i>, el adjetivo toma <i>-en</i>."
+      },
+      {
+        q: "Tom dice: «Ich komme morgen.» ¿Qué frase lo refiere sin dass?",
+        opts: [
+          "Tom hat gesagt, er kommt morgen.",
+          "Tom hat gesagt, er morgen kommt.",
+          "Tom hat gesagt, dass er kommt morgen."
+        ],
+        why: "<b>Tom hat gesagt, er kommt morgen.</b> Sin <i>dass</i> el verbo se queda en segunda posición; el verbo al final corresponde solo a la versión con <i>dass</i>, y con <i>dass</i> no puede ir en segunda posición."
+      },
+      {
+        q: "¿Qué frase es correcta?",
+        opts: [
+          "Das ist ein gutes Argument.",
+          "Das ist ein guter Argument.",
+          "Das ist ein gute Argument."
+        ],
+        why: "<b>Ein gutes Argument</b>: <i>Argument</i> es neutro y <i>ein</i> no muestra la terminación en el nominativo neutro, así que la lleva el adjetivo: <i>-es</i>."
+      },
+      {
+        q: "Traduce: «Tom ha dicho que tiene un buen argumento.»",
+        why: "<i>Tom hat gesagt, dass er ein gutes Argument hat.</i> También vale sin <i>dass</i>, con el verbo en segunda posición, o con <i>sagte</i>. El presente <i>hat</i> repite el tiempo de las palabras de Tom, sin cambio automático."
+      },
+      {
+        tr: "Anna ha contado que lee el periódico todas las mañanas. Después de haber leído el titular, llamó a una amiga. Es cierto que el artículo es largo, pero tiene un punto de vista claro.",
+        why: "En <i>Zeitung</i> la <b>z</b> es [ts] y la <b>ei</b> es [aɪ]; en <i>Schlagzeile</i> la <b>sch</b> es [ʃ]; en <i>Freundin</i> la <b>eu</b> es [ɔʏ]."
+      },
+      {
+        tr: "Ha dicho que escucha tanto la radio como pódcasts.",
+        why: "En <i>sowohl</i> la <b>w</b> es [v] y la <b>o</b> de <i>wohl</i> es larga; en <i>Radio</i> la <b>a</b> es larga; en <i>Podcasts</i> la <b>c</b> es [k] y la <b>ts</b> final es [ts]."
+      }
+    ]
   }
 });
