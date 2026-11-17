@@ -1,5 +1,5 @@
 /* ============================================================
-   cils.js - the engine of the unofficial Goethe B1 preview.
+   cils.js - the engine of the unofficial Goethe-Zertifikat B1 style simulation.
 
    Pure logic: points, thresholds, verdict. The view (views-cils.js) draws,
    counts time and makes sure a closed section cannot be reopened.

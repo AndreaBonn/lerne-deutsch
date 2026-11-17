@@ -171,18 +171,24 @@ wyniku, nie na ekranie) i każda sprawdza się jednym assertem w `node:test`.
 
 ### Produkcje egzaminacyjne: model czyta, ale nie ocenia
 
-Symulator egzaminu to **podgląd w stylu Goethe-Zertifikat B1, nieoficjalny** (cztery moduły:
-Lesen, Hören, Schreiben, Sprechen), a nie CILS B1 Cittadinanza jak w kursie włoskim. Dopisek o
-nieoficjalności stoi na ekranie, materiałów oficjalnych nie używa, punktuje wyłącznie Lesen i
-Hören. **Struktura danych została pod starymi nazwami**: `data/core/cils.js`, `cils-run.js`,
+Symulator egzaminu to **nieoficjalna symulacja w stylu Goethe-Zertifikat B1**: cztery moduły
+w kolejności Goethe (Lesen 65 min / 5 Teile, Hören 40 / 4, Schreiben 60 / 3, Sprechen 15 / 3),
+dwa pełne Modelltesty w `data/core/cils.js`. Format jest danymi, nie kodem: `CILS_FORMATO`
+deklaruje kolejność, czasy, liczbę Teile, próg 60% i to, które moduły się punktuje, a
+`Cils.conforme` sprawdza każdą symulację względem niego (test tego wymaga). Na ekranie i w
+raporcie stoi, że symulacja nie jest oficjalna, nie jest powiązana z Goethe-Institut i nie
+używa jego materiałów; punktuje wyłącznie Lesen i Hören. **Struktura danych została pod
+starymi nazwami**: `data/core/cils.js`, `cils-run.js`,
 `cils-html.js`, `cils-report.js`, `views-cils.js`, trasa `#/cils`, klucze `cils.*` (ta sama
 zasada co pola `it*`, D4). Zmienia się treść i napisy, nie nazwy. Poniżej „prowa" znaczy
 moduł egzaminu, bez względu na nazwę pliku.
 
 ADR-009 postanowił, że dwie prowy produkcyjne dostają **wykrycie, nigdy oceny**: słuchanie
 i czytanie mają wagę za pozycję w oficjalnych kryteriach, a pisanie i mówienie na prawdziwym
-egzaminie oceniają ludzie według siatki. Symulator, który mówi „9/12, zdałbyś", obiecuje
-coś, czego nie sprawdził, a ten egzamin decyduje o prawie pobytu.
+egzaminie oceniają ludzie według siatki. Symulator, który mówi „70%, zdałbyś", obiecuje
+coś, czego nie sprawdził, a od tego certyfikatu bywa zależny pobyt albo obywatelstwo.
+Moduł punktowany bez ani jednego pytania (pusta skorupa) jest „niezmierzony", nie „poniżej
+progu": inaczej pusta sekcja zamieniałaby wynik w pewne „nie".
 
 Kiedy model zaczął te dwie prowy czytać (ADR-009-bis), decyzja przestała dotyczyć naszej
 arytmetyki i zaczęła dotyczyć cudzej prozy. Dlatego reguła siedzi w **kodzie**:
