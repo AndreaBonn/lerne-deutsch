@@ -384,9 +384,9 @@ LINGUAI.addStrings("pl", {
         why: "<b>ja</b> wyraża zaskoczenie: <i>Das ist ja ein Ding!</i> to stały okrzyk, „no, to dopiero!”."
       },
       {
-        q: "Uzupełnij dialog właściwymi partykułami.",
+        q: "Uzupełnij dialog właściwymi partykułami (w pierwszej luce pasuje też przysłówek).",
         tr: "„Gdzie się podziewa Jonas?” „Pewnie stoi w korku.” „Czyżby znowu spóźnił autobus?” „Przecież wiesz, jaki jest: nic na to nie poradzisz.”",
-        why: "<i>wohl</i> dla przypuszczenia, <i>etwa</i> dla pytania z podejrzeniem, <i>ja</i> dla tego, co obaj wiedzą, <i>halt</i> albo <i>eben</i> dla rezygnacji. W drugiej luce pasuje też <i>denn</i>, w trzeciej także <i>doch</i>."
+        why: "<i>wohl</i> dla przypuszczenia, <i>etwa</i> dla pytania z podejrzeniem, <i>ja</i> dla tego, co obaj wiedzą, <i>halt</i> albo <i>eben</i> dla rezygnacji. W trzeciej luce pasuje także <i>doch</i>."
       },
       {
         q: "W których zdaniach etwa jest partykułą modalną i nie znaczy „około”?",
@@ -442,7 +442,7 @@ LINGUAI.addStrings("pl", {
       {
         q: "Kolega patrzy na ciebie podejrzliwie: „Hast du ___ schon wieder die Kaffeekasse geleert?”",
         hint: "„czyżbyś...”",
-        why: "<b>etwa</b>: podejrzenie w pytaniu rozstrzygnięcia, spodziewana odpowiedź „nie”. Pasuje też <i>denn</i>, bardziej neutralne."
+        why: "<b>etwa</b>: podejrzenie w pytaniu rozstrzygnięcia, spodziewana odpowiedź „nie”. <i>denn</i> nie wystarczy: pytanie stałoby się neutralne, bez wymaganego podejrzenia."
       },
       {
         q: "Rzeczoznawca pisze: „Der Brand dürfte durch einen Kurzschluss entstanden sein.” Na ile jest pewny?",

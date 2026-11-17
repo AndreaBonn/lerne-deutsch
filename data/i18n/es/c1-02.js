@@ -15,13 +15,13 @@ LINGUAI.addStrings("es", {
     objectives: [
       "reconocer el Futur I como conjetura sobre el presente",
       "hacer conjeturas sobre el pasado con el Futur II",
-      "distinguir la conjetura de la acción terminada antes de un momento futuro",
+      "distinguir la conjetura de la acción terminada a más tardar en un momento futuro",
       "dosificar la certeza con wohl, schon, sicher, vermutlich"
     ],
     theory: [
       {
         h: "Werden para conjeturar",
-        p: "En alemán el futuro propiamente dicho se expresa a menudo con el presente y un indicador de tiempo (<em>Morgen fliege ich nach Wien</em>). <strong>werden</strong> + infinitivo sirve sobre todo para una <strong>conjetura sobre el presente</strong>: <em>Er wird wohl noch im Stau stehen. Es klingelt. Das wird der Postbote sein.</em> Para una conjetura sobre el <strong>pasado</strong> se usa el <strong>Futur II</strong>, <em>werden</em> + participio II + <em>haben</em> o <em>sein</em>: <em>Sie wird die Nachricht inzwischen gelesen haben.</em> El mismo Futur II puede indicar una acción que estará <strong>terminada antes de un momento futuro</strong>: <em>Bis Ende des Monats werden wir die Studie abgeschlossen haben.</em>"
+        p: "En alemán el futuro propiamente dicho se expresa a menudo con el presente y un indicador de tiempo (<em>Morgen fliege ich nach Wien</em>). <strong>werden</strong> + infinitivo puede expresar un hecho futuro (<em>Es wird morgen regnen</em>) o una <strong>conjetura sobre el presente</strong>; el contexto decide la lectura: <em>Er wird wohl noch im Stau stehen. Es klingelt. Das wird der Postbote sein.</em> Para una conjetura sobre el <strong>pasado</strong> se usa el <strong>Futur II</strong>, <em>werden</em> + participio II + <em>haben</em> o <em>sein</em>: <em>Sie wird die Nachricht inzwischen gelesen haben.</em> El mismo Futur II puede indicar una acción que estará <strong>terminada a más tardar en un momento futuro</strong>: <em>Bis Ende des Monats werden wir die Studie abgeschlossen haben.</em>"
       },
       {
         h: "Las pistas",
@@ -39,13 +39,13 @@ LINGUAI.addStrings("es", {
     ],
     grammar: {
       title: "Futur I y II como conjetura",
-      note: "<b>werden + infinitivo</b>: conjetura sobre el presente. <b>werden + participio II + haben/sein</b>: conjetura sobre el pasado o acción terminada antes de un momento futuro (con <i>bis</i>). Dosificación: <i>wohl, vermutlich</i> (prudente), <i>schon</i> (tranquilizador), <i>sicher</i> (más seguro).",
+      note: "<b>werden + infinitivo</b>: conjetura sobre el presente. <b>werden + participio II + haben/sein</b>: conjetura sobre el pasado o acción terminada a más tardar en un momento futuro (con <i>bis</i>). Dosificación: <i>wohl, vermutlich</i> (prudente), <i>schon</i> (tranquilizador), <i>sicher</i> (más seguro).",
       table: {
         head: ["construcción", "valor", "ejemplo"],
         rows: [
           ["werden + infinitivo", "conjetura sobre el presente", "Er wird wohl noch im Stau stehen."],
           ["werden + participio II + haben/sein", "conjetura sobre el pasado", "Sie wird die Nachricht inzwischen gelesen haben."],
-          ["werden + participio II + haben/sein con bis", "acción terminada antes de un momento futuro", "Bis Ende des Monats werden wir die Studie abgeschlossen haben."],
+          ["werden + participio II + haben/sein con bis", "acción terminada a más tardar en un momento futuro", "Bis Ende des Monats werden wir die Studie abgeschlossen haben."],
           ["werden + infinitivo + schon", "tranquilización", "Das wird schon klappen."],
           ["presente + indicación de tiempo", "futuro programado", "Morgen fliege ich nach Wien."]
         ]
@@ -86,7 +86,7 @@ LINGUAI.addStrings("es", {
       {
         q: "Una cadena de tiendas anuncia: «Bis Jahresende werden wir alle Filialen modernisiert haben.» ¿Qué expresa el Futur II?",
         opts: [
-          "una acción que estará terminada antes de un momento futuro",
+          "una acción que estará terminada a más tardar en un momento futuro",
           "una conjetura sobre algo que ya ha ocurrido",
           "una pasiva de presente"
         ],
@@ -137,7 +137,7 @@ LINGUAI.addStrings("es", {
       },
       {
         tr: "El tren de Múnich viene con retraso. Los viajeros probablemente tendrán que esperar otra media hora, y para entonces el enlace probablemente ya habrá salido.",
-        why: "Dos conjeturas: <i>werden ... warten müssen</i> (previsión prudente) y <i>wird ... abgefahren sein</i> (Futur II con <i>sein</i>, porque <i>abfahren</i> es un verbo de movimiento)."
+        why: "Dos conjeturas: <i>werden ... warten müssen</i> (previsión prudente) y <i>wird ... abgefahren sein</i> (Futur II con <i>sein</i>, porque aquí <i>abfahren</i> es intransitivo e indica un cambio de lugar)."
       },
       {
         tr: "La luz sigue encendida, así que los compañeros probablemente seguirán trabajando.",
@@ -384,9 +384,9 @@ LINGUAI.addStrings("es", {
         why: "<b>ja</b> expresa sorpresa: <i>Das ist ja ein Ding!</i> es una exclamación fija, «¡anda, mira qué cosa!»."
       },
       {
-        q: "Completa el diálogo con las partículas adecuadas.",
+        q: "Completa el diálogo con las partículas adecuadas (en el primer hueco también vale un adverbio).",
         tr: "«¿Dónde se habrá metido Jonas?» «Estará en el atasco.» «¿No habrá perdido otra vez el autobús?» «Ya sabes cómo es: no se puede hacer nada.»",
-        why: "<i>wohl</i> para la conjetura, <i>etwa</i> para la pregunta con sospecha, <i>ja</i> para lo que ambos saben, <i>halt</i> o <i>eben</i> para la resignación. En el segundo hueco también sirve <i>denn</i>, y en el tercero <i>doch</i>."
+        why: "<i>wohl</i> para la conjetura, <i>etwa</i> para la pregunta con sospecha, <i>ja</i> para lo que ambos saben, <i>halt</i> o <i>eben</i> para la resignación. En el tercer hueco también sirve <i>doch</i>."
       },
       {
         q: "¿En qué frases es etwa una partícula modal y no significa «aproximadamente»?",
@@ -442,7 +442,7 @@ LINGUAI.addStrings("es", {
       {
         q: "Un compañero te mira con sospecha: «Hast du ___ schon wieder die Kaffeekasse geleert?»",
         hint: "«no habrás...»",
-        why: "<b>etwa</b>: sospecha en una pregunta de sí o no, se espera un no. También vale <i>denn</i>, más neutro."
+        why: "<b>etwa</b>: sospecha en una pregunta de sí o no, se espera un no. <i>denn</i> no basta: haría la pregunta neutra, sin la sospecha que se pide."
       },
       {
         q: "Un perito escribe: «Der Brand dürfte durch einen Kurzschluss entstanden sein.» ¿Cuán seguro está?",

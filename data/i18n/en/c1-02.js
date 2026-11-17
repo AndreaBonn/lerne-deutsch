@@ -90,7 +90,7 @@ LINGUAI.addStrings("en", {
           "a supposition about something that has already happened",
           "a present passive"
         ],
-        why: "<i>bis Jahresende</i> fixes the future point by which the action will be finished, and the speaker is making a commitment, not a guess: there is also no adverb such as <i>wohl</i>."
+        why: "<i>bis Jahresende</i> fixes the future point by which the action will be finished, and the speaker is making a commitment, not a guess."
       },
       {
         q: "You know the letter was delivered yesterday, but you don't know whether the recipient has read it yet. Which sentence makes the right supposition?",
@@ -137,7 +137,7 @@ LINGUAI.addStrings("en", {
       },
       {
         tr: "The train from Munich is late. The passengers will probably have to wait another half hour, and the connection will probably have left by then.",
-        why: "Two suppositions: <i>werden ... warten müssen</i> (cautious prediction) and <i>wird ... abgefahren sein</i> (Futur II with <i>sein</i>, because <i>abfahren</i> is a verb of motion)."
+        why: "Two suppositions: <i>werden ... warten müssen</i> (cautious prediction) and <i>wird ... abgefahren sein</i> (Futur II with <i>sein</i>, because here <i>abfahren</i> is intransitive and expresses a change of place)."
       },
       {
         tr: "The light is still on, so the colleagues will probably still be working.",
@@ -157,7 +157,7 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "From obligation to certainty",
-        p: "Modals can express not only obligation or permission but also how sure the speaker is that something is true; context and meaning decide which reading you have (<em>Er muss zu Hause sein</em> can be an obligation, <em>Er soll kommen</em> an order or a rumor). With <em>sein</em>, <em>haben</em> or a perfect infinitive the certainty reading is the most frequent one. <strong>muss</strong> is a very probable conclusion (<em>Es muss geregnet haben, die Straße ist nass</em>), <strong>dürfte</strong> means it is probable (<em>Er dürfte schon angekommen sein</em>), <strong>könnte</strong> that it is possible (<em>Das könnte ein Irrtum sein</em>). <strong>kann nicht</strong> says it is impossible (<em>Das kann nicht stimmen</em>) and <strong>mag</strong> in <em>Das mag sein</em> is concessive: it admits something without taking a place on the scale of certainty (<em>Das mag sein, aber ich sehe es anders</em>)."
+        p: "Modals can express not only obligation or permission but also how sure the speaker is that something is true; context and meaning decide which reading you have (<em>Er muss zu Hause sein</em> can be an obligation, <em>Er soll kommen</em> an order or a rumor). <em>sein</em>, <em>haben</em> or a perfect infinitive can point to the certainty reading, but only context settles it. <strong>muss</strong> is a very probable conclusion (<em>Es muss geregnet haben, die Straße ist nass</em>), <strong>dürfte</strong> means it is probable (<em>Er dürfte schon angekommen sein</em>), <strong>könnte</strong> that it is possible (<em>Das könnte ein Irrtum sein</em>). <strong>kann nicht</strong> says it is impossible (<em>Das kann nicht stimmen</em>) and <strong>mag</strong> in <em>Das mag sein</em> is concessive: it admits something without taking a place on the scale of certainty (<em>Das mag sein, aber ich sehe es anders</em>)."
       },
       {
         h: "Reporting: soll and will",
@@ -300,7 +300,7 @@ LINGUAI.addStrings("en", {
         p: "Particles tend to stand unstressed after the verb and the pronouns, before the new information (<em>Er wird wohl noch schlafen</em>). They are typical of speech, chats and dialogues: in formal writing, such as a report or a letter to a client, they are mostly avoided, though how well they fit depends on the text type. <em>halt</em> is more colloquial and heard mostly in the south, <em>eben</em> is more neutral, but in most cases they are interchangeable."
       },
       {
-        contrast: "English has no particles of this kind and does the same work with intonation, tag questions and small words and phrases: <em>surely</em>, <em>after all</em>, <em>you know</em>, <em>I suppose</em>, <em>oh well</em>, <em>that's just how it is</em>. <em>Hast du etwa ...?</em> is close to “you haven't ..., have you?” or “don't tell me you ...”, <em>Dann warten wir halt</em> to “then we'll just wait, oh well”, and <em>Du weißt ja</em> to “you know” or “as you know”. Where English changes the verb (<em>he'll be</em>) or adds <em>I guess</em>, German adds <em>wohl</em>. None of the five has a fixed equivalent: you learn the function. Beware of one trap: English <em>just</em> is not always <em>halt</em>, because <em>just</em> also means “only” (<em>nur</em>) and “a moment ago” (<em>gerade</em>)."
+        contrast: "English has no closed set of modal particles like German, although words such as <em>just</em> or <em>though</em> do similar work; it relies more on intonation, tag questions and small words and phrases, often in a different position in the sentence: <em>surely</em>, <em>after all</em>, <em>you know</em>, <em>I suppose</em>, <em>oh well</em>, <em>that's just how it is</em>. <em>Hast du etwa ...?</em> is close to “you haven't ..., have you?” or “don't tell me you ...”, <em>Dann warten wir halt</em> to “then we'll just wait, oh well”, and <em>Du weißt ja</em> to “you know” or “as you know”. Where English changes the verb (<em>he'll be</em>) or adds <em>I guess</em>, German adds <em>wohl</em>. None of the five has a fixed equivalent: you learn the function. Beware of one trap: English <em>just</em> is not always <em>halt</em>, because <em>just</em> also means “only” (<em>nur</em>) and “a moment ago” (<em>gerade</em>)."
       },
       {
         trap: "<em>etwa</em> has two lives. Before a number it is an adverb, <em>etwa zwei Stunden</em>, “about two hours”. In a question with surprise it is a particle, <em>Ist er etwa krank?</em>. <em>wohl</em> can also be a full adverb: <em>Ich fühle mich hier wohl</em> means “I feel comfortable here”."
@@ -384,9 +384,9 @@ LINGUAI.addStrings("en", {
         why: "<b>ja</b> expresses surprise: <i>Das ist ja ein Ding!</i> is a fixed exclamation, “well, that's something!”."
       },
       {
-        q: "Complete the dialogue with the right particles.",
+        q: "Complete the dialogue with the right particles (in the first gap an adverb also works).",
         tr: "“Where can Jonas be?” “He'll be stuck in traffic.” “He hasn't missed the bus again, has he?” “You know how it is: there's nothing you can do about it.”",
-        why: "<i>wohl</i> for the supposition, <i>etwa</i> for the suspicious question, <i>ja</i> for what both know, <i>halt</i> or <i>eben</i> for the resignation. In the second gap <i>denn</i> also works, in the third <i>doch</i>."
+        why: "<i>wohl</i> for the supposition, <i>etwa</i> for the suspicious question, <i>ja</i> for what both know, <i>halt</i> or <i>eben</i> for the resignation. In the third gap <i>doch</i> also works."
       },
       {
         q: "In which sentences is etwa a modal particle and does not mean “about”?",
@@ -441,8 +441,8 @@ LINGUAI.addStrings("en", {
       },
       {
         q: "A colleague looks at you with suspicion: «Hast du ___ schon wieder die Kaffeekasse geleert?»",
-        hint: "“you haven't, have you...”: etwa or denn",
-        why: "<b>etwa</b> or <b>denn</b>: <i>etwa</i> carries suspicion and suggests a no, while <i>denn</i> makes the question more neutral. Both are accepted."
+        hint: "“you haven't, have you...”",
+        why: "<b>etwa</b>: suspicion in a yes/no question, the speaker expects a no. <i>denn</i> is not enough here: it makes the question neutral and drops the suspicion."
       },
       {
         q: "An expert writes: «Der Brand dürfte durch einen Kurzschluss entstanden sein.» How sure is he?",

@@ -111,7 +111,7 @@ LINGUAI.addStrings("en", {
         why: "<b>geltenden</b>: participle I (active, simultaneous: “the regulations in force”), <b>-en</b> in the genitive plural after <i>der</i>."
       },
       {
-        q: "Complete the passage from a report with participle II and participle I.",
+        q: "Complete the passage from a report with the participle II of ergreifen (or treffen) and the participle I of steigen.",
         tr: "The measures taken last year have not reduced the steadily rising costs.",
         why: "<i>ergriffenen</i> (or <i>getroffenen</i>): passive participle II, “the measures that were taken”. <i>steigenden</i>: participle I, because the increase is still going on. Both take <b>-en</b> after plural <i>die</i>."
       },
@@ -166,7 +166,7 @@ LINGUAI.addStrings("en", {
         contrast: "English nominalizes too (<em>upon completion of the work</em>, <em>in case of need</em>, <em>for the clarification of open questions</em>), but it can also use an -ing form (<em>after completing the work</em>, <em>despite having been reminded</em>), which German does not have in this form. And where English links the nouns with <em>of</em> (<em>the clarification of open questions</em>), German uses a <strong>genitive with no preposition</strong>: <em>die Klärung offener Fragen</em>. The prepositions of cause and concession also take the genitive, with the endings that follow: <em>offener Fragen</em> without an article, <em>der gestiegenen Preise</em> with the article. English has no case endings at all, so every one of these has to be learned."
       },
       {
-        trap: "A wrong preposition changes the logical relation: <em>Nach mehrfacher Mahnung blieb die Zahlung aus</em> says that the payment is missing <em>after</em> the reminders, while <em>Trotz mehrfacher Mahnung</em> says it is missing <em>despite</em> the reminders. Watch the cases too: <em>infolge</em> and <em>trotz</em> take the genitive (<em>Infolge der gestiegenen Preise</em>), not the dative. English speakers are tempted by the colloquial dative after <em>wegen</em> and <em>trotz</em>, which exists in speech but not in formal writing."
+        trap: "A wrong preposition changes the logical relation: <em>Nach mehrfacher Mahnung blieb die Zahlung aus</em> says that the payment is missing <em>after</em> the reminders, while <em>Trotz mehrfacher Mahnung</em> says it is missing <em>despite</em> the reminders. Watch the cases too: <em>infolge</em> and <em>trotz</em> take the genitive (<em>Infolge der gestiegenen Preise</em>), not the dative. English does not mark case after prepositions, so the case each German preposition governs has to be learned with it: in formal writing these take the genitive."
       },
       {
         tip: "In front of a noun phrase, ask which conjunction is hiding in it: cause → <em>weil</em>, concession → <em>obwohl</em>, condition → <em>wenn</em>, time → <em>nachdem, bevor</em>, purpose → <em>um ... zu</em>. Then rewrite it as a subordinate clause and check that the meaning has not changed."
@@ -291,7 +291,7 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "The four cases where the subordinate clause stays",
-        p: "The compact form is not always the best. The subordinate clause is preferable when: (1) <strong>there is no suitable noun</strong> or the noun sounds unnatural; (2) there are <strong>several subjects</strong> or several predicates, and the noun phrase would hide who does what: <em>weil der Vorsitzende erkrankt war und die Referentin im Ausland festsaß</em>; (3) you need a <strong>modal nuance</strong> or a degree of probability (<em>sollte, könnte, offenbar, nur dann ..., wenn</em>), which a noun phrase often cannot carry; (4) <strong>readability</strong> suffers, for example with several genitives and complements in a row."
+        p: "The compact form is not always the best. The subordinate clause is preferable when: (1) <strong>there is no suitable noun</strong> or the noun sounds unnatural; (2) there are <strong>several subjects</strong> or several predicates, and the noun phrase would hide who does what: <em>weil der Vorsitzende erkrankt war und die Referentin im Ausland festsaß</em>; (3) you need a <strong>modal nuance</strong> or a degree of probability (<em>sollte, könnte, offenbar</em>), which a noun phrase often cannot carry; a necessary condition such as <em>nur dann ..., wenn</em>, on the other hand, often has a nominal form too (<em>nur bei repräsentativer Stichprobe</em>); (4) <strong>readability</strong> suffers, for example with several genitives and complements in a row."
       },
       {
         h: "How to choose",
@@ -301,7 +301,7 @@ LINGUAI.addStrings("en", {
         contrast: "English has compact tools such as <em>after completing the review</em>, <em>once the work is finished</em>, <em>should the review take longer</em>. German has equivalents for some of them: a subordinate clause with <em>sobald</em> for <em>once the work is finished</em>, and <em>Sollte die Prüfung länger dauern, ...</em> for <em>should the review take longer</em>; it has no -ing form, and the infinitive with <em>ohne zu</em> or <em>um ... zu</em> usually has the subject of the main clause as its implicit subject, though it can be an object (<em>Ich bitte dich, früher zu kommen</em>); when the referent is not clear from the context, a subordinate clause (often with <em>dass</em> or <em>weil</em>, but not always) is the usual choice. German <em>sollte</em> at the start of the clause behaves like English inverted <em>should</em>, with no <em>if</em>."
       },
       {
-        trap: "Do not nominalize everything just because it “sounds formal”: the result is office German that is hard to read, and a phrase with a preposition like <em>seitens der Teilnehmenden</em> can hide the subject. And <em>sollte</em> in first position is not the “should” of obligation: <em>Sollte die Prüfung länger dauern</em> means “if the review should happen to take longer”, a hypothetical condition. English speakers tend to read <em>sollte</em> as “ought to” and miss that it is the conditional."
+        trap: "Do not nominalize everything just because it “sounds formal”: the result is office German that is hard to read, and a phrase with a preposition like <em>seitens der Teilnehmenden</em> does name the participants, but it makes the sentence heavy and distances the agent from the action. And <em>sollte</em> in first position is not the “should” of obligation: <em>Sollte die Prüfung länger dauern</em> means “if the review should happen to take longer”, a hypothetical condition. English speakers tend to read <em>sollte</em> as “ought to” and miss that it is the conditional."
       },
       {
         tip: "Read the sentence aloud. If you have to catch your breath in the middle of a noun phrase, because there are two genitives and a <em>durch</em>, break it into a subordinate clause."
@@ -325,7 +325,7 @@ LINGUAI.addStrings("en", {
         { tr: "The contract will be signed only when the board has approved it and the financing is secured.", note: "two conditions with different verbs: subordinate clause" },
         { tr: "Should the review take longer, the date will be postponed.", note: "Sollte in first position: a hypothetical condition" },
         { tr: "The funding lapses if the general conditions should change.", note: "falls ... ändern sollten: modal nuance" },
-        { tr: "The results are significant only if the sample is representative.", note: "nur dann ..., wenn: a necessary condition; a noun phrase with bei can sometimes carry it too (nur bei einer repräsentativen Stichprobe)" },
+        { tr: "The results are informative only if the sample is representative.", note: "nur dann ..., wenn: a necessary condition; a noun phrase with bei can sometimes carry it too (nur bei einer repräsentativen Stichprobe)" },
         { tr: "The evaluation began after the participants had filled in the questionnaire.", note: "temporal subordinate clause in the pluperfect: more readable than a chain of genitives" }
       ]
     },
@@ -354,13 +354,13 @@ LINGUAI.addStrings("en", {
         why: "A cause can be nominalized (<i>wegen</i> + genitive), but here there are <b>two</b> facts with different subjects: the noun form would compress them heavily or lose one. The other two statements are false."
       },
       {
-        q: "«Sollte die Prüfung länger dauern, wird der Termin verschoben.» What is lost in the nominal version «Bei längerer Dauer der Prüfung wird der Termin verschoben»?",
+        q: "«Sollte die Prüfung länger dauern, wird der Termin verschoben.» What does the nominal version «Bei längerer Dauer der Prüfung wird der Termin verschoben» make less explicit?",
         opts: [
           "the hypothetical nuance (“should it happen to”) expressed by sollte",
           "the conditional value of the sentence",
           "the subject, because Prüfung disappears"
         ],
-        why: "<i>bei</i> keeps the <b>condition</b>, and <i>Prüfung</i> is still in the text. What is lost is the modal nuance of <i>sollte</i> (“should it happen to”), which a noun cannot carry."
+        why: "<i>bei</i> keeps the <b>condition</b>, and <i>Prüfung</i> is still in the text; the nominal version can also describe a possible case. What becomes less explicit is the hypothetical marking of <i>sollte</i> (“should it happen to”), which the noun phrase leaves to context."
       },
       {
         q: "In a report for a non-specialist audience, which wording is the most readable?",
@@ -384,7 +384,7 @@ LINGUAI.addStrings("en", {
       {
         q: "Complete the two conditions of a contract.",
         tr: "The contract will be signed only when the board has approved it and the financing is secured.",
-        why: "<i>wenn</i> (or <i>sobald</i>, <i>nachdem</i>) for the first condition, <i>ist</i> for the second: <i>die Finanzierung gesichert ist</i>. Two conditions with different subjects are a good reason to keep the subordinate clause."
+        why: "<i>wenn</i> for the first condition (<i>sobald</i> and <i>nachdem</i> would express a time relation, not a condition), <i>ist</i> for the second: <i>die Finanzierung gesichert ist</i>. Two conditions with different subjects are a good reason to keep the subordinate clause."
       },
       {
         q: "In which cases is it better to keep the subordinate clause? (two answers)",
@@ -485,13 +485,13 @@ LINGUAI.addStrings("en", {
         why: "The first two are correct: passive participle II with <b>-en</b> after <i>die</i>. <i>getroffene</i> lacks the <b>-n</b>; <i>stellenden</i> would give the funds an active role (“the funds that provide”)."
       },
       {
-        q: "Complete the notice with the participle II and the preposition.",
+        q: "Complete the notice with the participle II of planen (or vorsehen) and the preposition.",
         tr: "We will inform you in good time. The measures we have planned (or envisaged) will only take effect after the audit is completed.",
         why: "<i>geplanten</i> (or <i>vorgesehenen</i>): passive participle II with <b>-en</b>. <i>nach</i>: <i>nach Abschluss der Prüfung</i>, time with <i>nach</i> + dative, “after the completion”."
       },
       {
         q: "Translate: «The decisions made at the meeting will be announced after the audit is completed.» (die Sitzung, die Entscheidung, mitteilen, der Abschluss, die Prüfung)",
-        why: "<i>Die in der Sitzung getroffenen Entscheidungen werden nach Abschluss der Prüfung mitgeteilt.</i> The passive with <i>werden</i> renders the future of the English text; the sentence beginning with <i>Nach Abschluss der Prüfung</i> is also accepted."
+        why: "<i>Die in der Sitzung getroffenen Entscheidungen werden nach Abschluss der Prüfung mitgeteilt.</i> <i>werden ... mitgeteilt</i> is a present passive that refers to the future through context (<i>nach Abschluss</i>); the explicit future passive <i>werden ... mitgeteilt werden</i> is also accepted, and so is the sentence beginning with <i>Nach Abschluss der Prüfung</i> is also accepted."
       },
       {
         tr: "He will have finished the report by Friday. The decisions recorded in the minutes will be implemented after the audit is completed.",

@@ -34,7 +34,7 @@ LINGUAI.addStrings("it", {
         trap: "<em>die prüfenden Unterlagen</em> non è «i documenti esaminati»: sono documenti che <em>esaminano</em> qualcosa. Per il senso passivo ci vuole il participio II, <em>die geprüften Unterlagen</em>. E non scambiare i due tempi: <em>die steigenden Kosten</em> aumentano ancora, <em>die gestiegenen Kosten</em> sono già aumentate. Poi la desinenza: dopo <em>die</em> al plurale è <em>-en</em>, quindi <em>die geprüften Unterlagen</em>, mai <em>die geprüfte Unterlagen</em>."
       },
       {
-        tip: "Per capire un participio, o per sceglierlo, scioglilo in una relativa: se il verbo alla relativa è al presente attivo (<em>die steigen</em>) serve il participio I; se è un passivo (<em>die geprüft wurden</em>) o un perfetto con <em>sein</em> (<em>die gestiegen sind</em>) serve il participio II."
+        tip: "Per capire un participio, o per sceglierlo, scioglilo in una relativa: se nella relativa il verbo è attivo e l'azione è contemporanea a quella della frase (<em>die steigen</em>, ma anche <em>die teilnahmen</em> in un racconto al passato) serve il participio I; se è un passivo (<em>die geprüft wurden</em>) o un perfetto con <em>sein</em> (<em>die gestiegen sind</em>) serve il participio II."
       }
     ],
     grammar: {
@@ -111,7 +111,7 @@ LINGUAI.addStrings("it", {
         why: "<b>geltenden</b>: participio I (attivo, contemporaneo: «le norme in vigore»), <b>-en</b> al genitivo plurale dopo <i>der</i>."
       },
       {
-        q: "Completa il passaggio di un rapporto con il participio II e il participio I.",
+        q: "Completa il passaggio di un rapporto con il participio II di ergreifen (o treffen) e il participio I di steigen.",
         tr: "Le misure adottate l'anno scorso non hanno ridotto i costi in costante aumento.",
         why: "<i>ergriffenen</i> (o <i>getroffenen</i>): participio II passivo, «le misure che sono state adottate». <i>steigenden</i>: participio I, perché l'aumento è ancora in corso. Tutti e due prendono <b>-en</b> dopo <i>die</i> al plurale."
       },
@@ -291,7 +291,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "I quattro casi in cui la subordinata resta",
-        p: "La forma compatta non è sempre la migliore. La subordinata è preferibile quando: (1) <strong>non c'è un nome adatto</strong> o il nome suona innaturale; (2) ci sono <strong>più soggetti</strong> o più predicati, e il gruppo nominale nasconderebbe chi fa che cosa: <em>weil der Vorsitzende erkrankt war und die Referentin im Ausland festsaß</em>; (3) serve una <strong>sfumatura modale</strong> o di probabilità (<em>sollte, könnte, offenbar, nur dann ..., wenn</em>), che un nome non esprime; (4) la <strong>leggibilità</strong> ne soffre, per esempio con più genitivi e complementi in fila."
+        p: "La forma compatta non è sempre la migliore. La subordinata è preferibile quando: (1) <strong>non c'è un nome adatto</strong> o il nome suona innaturale; (2) ci sono <strong>più soggetti</strong> o più predicati, e il gruppo nominale nasconderebbe chi fa che cosa: <em>weil der Vorsitzende erkrankt war und die Referentin im Ausland festsaß</em>; (3) serve una <strong>sfumatura modale</strong> o di probabilità (<em>sollte, könnte, offenbar</em>), che un nome esprime a fatica; una condizione necessaria come <em>nur dann ..., wenn</em> invece ha spesso anche una forma nominale (<em>nur bei repräsentativer Stichprobe</em>); (4) la <strong>leggibilità</strong> ne soffre, per esempio con più genitivi e complementi in fila."
       },
       {
         h: "Come scegliere",
@@ -301,7 +301,7 @@ LINGUAI.addStrings("it", {
         contrast: "L'italiano ha strumenti compatti come <em>dopo aver concluso</em> o <em>a lavori ultimati</em>; il tedesco li rende con una subordinata (<em>nachdem ...</em>) o con un nome (<em>nach Abschluss der Arbeiten</em>), ma non ha il gerundio. Con <em>ohne zu</em> e <em>um ... zu</em> il soggetto implicito dell'infinito di solito è quello della principale, ma può essere anche un complemento (<em>Ich bitte dich, früher zu kommen</em>); quando il referente non si ricava chiaramente dalla costruzione serve una subordinata con <em>ohne dass</em> o <em>damit</em>. La sfumatura di <em>qualora ... dovesse</em> si rende con <em>Sollte die Prüfung länger dauern, ...</em> o <em>falls ... ändern sollten</em>."
       },
       {
-        trap: "Non nominalizzare tutto solo perché «suona formale»: il risultato è un tedesco da ufficio difficile da leggere, e un'espressione come <em>seitens der Teilnehmenden</em> nasconde il soggetto. E <em>sollte</em> in prima posizione non è «dovrebbe» di obbligo: <em>Sollte die Prüfung länger dauern</em> significa «se mai la verifica dovesse durare di più», una condizione ipotetica."
+        trap: "Non nominalizzare tutto solo perché «suona formale»: il risultato è un tedesco da ufficio difficile da leggere, e un'espressione come <em>seitens der Teilnehmenden</em> nomina sì i partecipanti, ma appesantisce la frase e allontana chi agisce dall'azione. E <em>sollte</em> in prima posizione non è «dovrebbe» di obbligo: <em>Sollte die Prüfung länger dauern</em> significa «se mai la verifica dovesse durare di più», una condizione ipotetica."
       },
       {
         tip: "Leggi la frase ad alta voce. Se in mezzo a un gruppo nominale devi riprendere fiato, perché ci sono due genitivi e un <em>durch</em>, spezzala in una subordinata."
@@ -354,13 +354,13 @@ LINGUAI.addStrings("it", {
         why: "Una causa si può nominalizzare (<i>wegen</i> + genitivo), ma qui i fatti sono <b>due</b>, con soggetti diversi: la forma nominale li comprimerebbe in modo pesante o ne perderebbe uno. Le altre due affermazioni sono false."
       },
       {
-        q: "«Sollte die Prüfung länger dauern, wird der Termin verschoben.» Che cosa si perde con la versione nominale «Bei längerer Dauer der Prüfung wird der Termin verschoben»?",
+        q: "«Sollte die Prüfung länger dauern, wird der Termin verschoben.» Che cosa rende meno esplicito la versione nominale «Bei längerer Dauer der Prüfung wird der Termin verschoben»?",
         opts: [
           "la sfumatura ipotetica di sollte («se mai dovesse»)",
           "il valore condizionale della frase",
           "il soggetto, perché Prüfung sparisce"
         ],
-        why: "<i>bei</i> mantiene la <b>condizione</b>, e <i>Prüfung</i> è ancora nel testo. Si perde la sfumatura modale di <i>sollte</i> («se mai dovesse»), che un nome non può portare."
+        why: "<i>bei</i> mantiene la <b>condizione</b>, e <i>Prüfung</i> è ancora nel testo; anche la versione nominale può descrivere un caso possibile. Diventa meno esplicita la marcatura ipotetica di <i>sollte</i> («se mai dovesse»), che il gruppo nominale lascia al contesto."
       },
       {
         q: "In un rapporto per un pubblico non specialistico, quale formulazione è la più leggibile?",
@@ -384,7 +384,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa le due condizioni di un contratto.",
         tr: "Il contratto sarà firmato solo quando il consiglio avrà approvato e il finanziamento sarà assicurato.",
-        why: "<i>wenn</i> (o <i>sobald</i>, <i>nachdem</i>) per la prima condizione, <i>ist</i> per la seconda: <i>die Finanzierung gesichert ist</i>. Due condizioni con soggetti diversi sono un buon motivo per tenere la subordinata."
+        why: "<i>wenn</i> per la prima condizione (<i>sobald</i> e <i>nachdem</i> direbbero un rapporto di tempo, non una condizione), <i>ist</i> per la seconda: <i>die Finanzierung gesichert ist</i>. Due condizioni con soggetti diversi sono un buon motivo per tenere la subordinata."
       },
       {
         q: "In quali casi conviene mantenere la subordinata? (due risposte)",
@@ -485,13 +485,13 @@ LINGUAI.addStrings("it", {
         why: "Le prime due sono corrette: participio II passivo con <b>-en</b> dopo <i>die</i>. In <i>getroffene</i> manca il <b>-n</b>; <i>stellenden</i> darebbe ai mezzi un ruolo attivo («i mezzi che mettono a disposizione»)."
       },
       {
-        q: "Completa il comunicato con il participio II e la preposizione.",
+        q: "Completa il comunicato con il participio II di planen (o vorsehen) e la preposizione.",
         tr: "La informeremo in tempo. Le misure pianificate da noi diventeranno efficaci solo dopo la conclusione della verifica.",
         why: "<i>geplanten</i> (o <i>vorgesehenen</i>): participio II passivo con <b>-en</b>. <i>nach Abschluss der Prüfung</i>: tempo con <i>nach</i> + dativo, «dopo la conclusione»."
       },
       {
         q: "Traduci: «Le decisioni prese nella riunione saranno comunicate dopo la conclusione della verifica.» (die Sitzung, die Entscheidung, mitteilen, der Abschluss, die Prüfung)",
-        why: "<i>Die in der Sitzung getroffenen Entscheidungen werden nach Abschluss der Prüfung mitgeteilt.</i> Il passivo con <i>werden</i> rende il futuro del testo italiano; è accettata anche la frase che comincia con <i>Nach Abschluss der Prüfung</i>."
+        why: "<i>Die in der Sitzung getroffenen Entscheidungen werden nach Abschluss der Prüfung mitgeteilt.</i> <i>werden ... mitgeteilt</i> è un passivo presente che si riferisce al futuro grazie al contesto (<i>nach Abschluss</i>); è accettato anche il Futur I passivo esplicito <i>werden ... mitgeteilt werden</i>, e anche la frase che comincia con <i>Nach Abschluss der Prüfung</i>."
       },
       {
         tr: "Avrà terminato la relazione entro venerdì. Le decisioni messe a verbale saranno attuate dopo la conclusione della verifica.",

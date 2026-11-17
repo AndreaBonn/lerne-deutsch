@@ -111,7 +111,7 @@ LINGUAI.addStrings("es", {
         why: "<b>geltenden</b>: participio I (activo, simultáneo: «las normas vigentes»), <b>-en</b> en genitivo plural después de <i>der</i>."
       },
       {
-        q: "Completa el pasaje de un informe con el participio II y el participio I.",
+        q: "Completa el pasaje de un informe con el participio II de ergreifen (o treffen) y el participio I de steigen.",
         tr: "Las medidas adoptadas el año pasado no han reducido los costes, que siguen en constante aumento.",
         why: "<i>ergriffenen</i> (o <i>getroffenen</i>): participio II pasivo, «las medidas que han sido adoptadas». <i>steigenden</i>: participio I, porque el aumento sigue en curso. Los dos toman <b>-en</b> después de <i>die</i> en plural."
       },
@@ -163,7 +163,7 @@ LINGUAI.addStrings("es", {
         p: "El grupo nominal es compacto pero más pobre: desaparecen el tiempo verbal, el modo y a menudo quién actúa. <em>Nach Abschluss der Prüfung</em> no dice quién ha concluido ni si se habla del pasado o del futuro; lo deduces del contexto. Por eso funciona bien cuando el sujeto y el tiempo son obvios, y mal cuando no lo son (véase la lección 3)."
       },
       {
-        contrast: "El español también nominaliza (<em>tras la conclusión de los trabajos</em>, <em>en caso de necesidad</em>, <em>para la aclaración de cuestiones pendientes</em>), pero puede usar además el infinitivo o el gerundio (<em>tras concluir</em>, <em>al concluir</em>). El alemán tiene también equivalentes compactos, aunque no idénticos: <em>nach Abschluss</em>, <em>beim Abschließen</em> (infinitivo nominalizado) y el participio de presente en función de atributo. Además, el español une el sustantivo con su complemento mediante <em>de</em> (<em>la aclaración de cuestiones pendientes</em>), mientras que en alemán lo que sigue al sustantivo suele ser un <strong>genitivo sin preposición</strong> (<em>die Klärung offener Fragen</em>), aunque no siempre: hay regencias con preposición (<em>der Bedarf an Fachkräften</em>). Las preposiciones de causa y concesión rigen el genitivo, y las preposiciones de causa y concesión rigen el genitivo, con las terminaciones que de ello se derivan: <em>offener Fragen</em> sin artículo, <em>der gestiegenen Preise</em> con artículo. También cambia la regencia: donde el español dice <em>a pesar de</em>, <em>a causa de</em> o <em>a raíz de</em> sin más, el alemán exige elegir entre genitivo y dativo."
+        contrast: "El español también nominaliza (<em>tras la conclusión de los trabajos</em>, <em>en caso de necesidad</em>, <em>para la aclaración de cuestiones pendientes</em>), pero puede usar además construcciones de infinitivo (<em>tras concluir</em>, <em>al concluir</em>) o el gerundio (<em>concluyendo los trabajos</em>). El alemán tiene también equivalentes compactos, aunque no idénticos: <em>nach Abschluss</em>, <em>beim Abschließen</em> (infinitivo nominalizado) y el participio de presente en función de atributo. Además, el español une el sustantivo con su complemento mediante <em>de</em> (<em>la aclaración de cuestiones pendientes</em>), mientras que en alemán lo que sigue al sustantivo suele ser un <strong>genitivo sin preposición</strong> (<em>die Klärung offener Fragen</em>), aunque no siempre: hay regencias con preposición (<em>der Bedarf an Fachkräften</em>). Las preposiciones de causa y concesión rigen el genitivo, con las terminaciones que de ello se derivan: <em>offener Fragen</em> sin artículo, <em>der gestiegenen Preise</em> con artículo. También cambia la regencia: donde el español dice <em>a pesar de</em>, <em>a causa de</em> o <em>a raíz de</em> sin más, el alemán exige elegir entre genitivo y dativo."
       },
       {
         trap: "Una preposición equivocada cambia la relación lógica: <em>Nach mehrfacher Mahnung blieb die Zahlung aus</em> dice que el pago falta <em>después de</em> los recordatorios, mientras que <em>Trotz mehrfacher Mahnung</em> dice que falta <em>a pesar de</em> los recordatorios. Cuidado también con los casos: <em>infolge</em> y <em>trotz</em> piden el genitivo (<em>Infolge der gestiegenen Preise</em>), no el dativo."
@@ -275,7 +275,7 @@ LINGUAI.addStrings("es", {
       },
       {
         tr: "A pesar de los reiterados recordatorios, el pago no ha llegado.",
-        why: "En <i>mehrfacher</i> el acento cae en <b>mehr</b>; en <i>Erinnerung</i> el acento cae en <b>in</b>; en <i>eingegangen</i> el acento cae en <b>gan</b>."
+        why: "En <i>mehrfacher</i> el acento cae en <b>mehr</b>; en <i>Erinnerung</i> el acento cae en <b>in</b>; en <i>eingegangen</i> el acento cae en <b>ein</b>."
       }
     ]
   },
@@ -291,7 +291,7 @@ LINGUAI.addStrings("es", {
     theory: [
       {
         h: "Los cuatro casos en que la subordinada se queda",
-        p: "La forma compacta no siempre es la mejor. La subordinada es preferible cuando: (1) <strong>no hay un sustantivo adecuado</strong> o el sustantivo suena poco natural; (2) hay <strong>varios sujetos</strong> o varios predicados, y el grupo nominal ocultaría quién hace qué: <em>weil der Vorsitzende erkrankt war und die Referentin im Ausland festsaß</em>; (3) hace falta un <strong>matiz modal</strong> o de probabilidad (<em>sollte, könnte, offenbar, nur dann ..., wenn</em>), que un sustantivo expresa con dificultad; (4) la <strong>legibilidad</strong> sufre, por ejemplo con varios genitivos y complementos seguidos."
+        p: "La forma compacta no siempre es la mejor. La subordinada es preferible cuando: (1) <strong>no hay un sustantivo adecuado</strong> o el sustantivo suena poco natural; (2) hay <strong>varios sujetos</strong> o varios predicados, y el grupo nominal ocultaría quién hace qué: <em>weil der Vorsitzende erkrankt war und die Referentin im Ausland festsaß</em>; (3) hace falta un <strong>matiz modal</strong> o de probabilidad (<em>sollte, könnte, offenbar</em>), que un sustantivo expresa con dificultad; una condición necesaria como <em>nur dann ..., wenn</em>, en cambio, suele tener también una forma nominal (<em>nur bei repräsentativer Stichprobe</em>); (4) la <strong>legibilidad</strong> sufre, por ejemplo con varios genitivos y complementos seguidos."
       },
       {
         h: "Cómo elegir",
@@ -354,13 +354,13 @@ LINGUAI.addStrings("es", {
         why: "Una causa sí se puede nominalizar (<i>wegen</i> + genitivo), pero aquí los hechos son <b>dos</b>, con sujetos distintos: la forma nominal los comprimiría de modo pesado o perdería uno. Las otras dos afirmaciones son falsas."
       },
       {
-        q: "«Sollte die Prüfung länger dauern, wird der Termin verschoben.» ¿Qué se pierde con la versión nominal «Bei längerer Dauer der Prüfung wird der Termin verschoben»?",
+        q: "«Sollte die Prüfung länger dauern, wird der Termin verschoben.» ¿Qué deja menos explícito la versión nominal «Bei längerer Dauer der Prüfung wird der Termin verschoben»?",
         opts: [
           "el matiz de eventualidad hipotética expresado por sollte",
           "el valor condicional de la frase",
           "el sujeto, porque Prüfung desaparece"
         ],
-        why: "<i>bei</i> mantiene la <b>condición</b>, y <i>Prüfung</i> sigue en el texto. Lo que se pierde es el matiz modal de <i>sollte</i> («si llegara a»), que un sustantivo difícilmente puede llevar."
+        why: "<i>bei</i> mantiene la <b>condición</b>, y <i>Prüfung</i> sigue en el texto; también la versión nominal puede describir un caso posible. Lo que queda menos explícito es la marca hipotética de <i>sollte</i> («si llegara a»), que el grupo nominal deja al contexto."
       },
       {
         q: "En un informe para un público no especialista, ¿qué formulación es la más legible?",
@@ -384,7 +384,7 @@ LINGUAI.addStrings("es", {
       {
         q: "Completa las dos condiciones de un contrato.",
         tr: "El contrato se firmará solo cuando el consejo haya dado su aprobación y la financiación esté asegurada.",
-        why: "<i>wenn</i> (o <i>sobald</i>, <i>nachdem</i>) para la primera condición, <i>ist</i> para la segunda: <i>die Finanzierung gesichert ist</i>. Dos condiciones con sujetos distintos son un buen motivo para mantener la subordinada."
+        why: "<i>wenn</i> para la primera condición (<i>sobald</i> y <i>nachdem</i> expresarían una relación temporal, no una condición), <i>ist</i> para la segunda: <i>die Finanzierung gesichert ist</i>. Dos condiciones con sujetos distintos son un buen motivo para mantener la subordinada."
       },
       {
         q: "¿En qué casos conviene mantener la subordinada? (dos respuestas)",
@@ -485,7 +485,7 @@ LINGUAI.addStrings("es", {
         why: "Las dos primeras son correctas: participio II pasivo con <b>-en</b> después de <i>die</i>. En <i>getroffene</i> falta la <b>-n</b>; <i>stellenden</i> daría a los medios un papel activo («los medios que ponen a disposición»)."
       },
       {
-        q: "Completa el comunicado con el participio II y la preposición.",
+        q: "Completa el comunicado con el participio II de planen (o vorsehen) y la preposición.",
         tr: "Le informaremos a tiempo. Las medidas planificadas por nosotros solo serán efectivas tras la conclusión de la verificación.",
         why: "<i>geplanten</i> (o <i>vorgesehenen</i>): participio II pasivo con <b>-en</b>. <i>nach</i>: tiempo con <i>nach</i> + dativo (<i>nach Abschluss der Prüfung</i>), «tras la conclusión»."
       },

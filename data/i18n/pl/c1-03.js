@@ -7,7 +7,7 @@
 LINGUAI.addStrings("pl", {
   "unit:c1-u05": {
     title: "Po zakończeniu pracy",
-    grammarNote: "Imiesłów I i II jako przydawka (rozbudowana przydawka z umiarem; pełny typ i Gerundivum należą do C2) · nominalizacja zamiast zdania podrzędnego (nach Abschluss, wegen, bei, trotz, zur, infolge) · przypadki, w których zdanie podrzędne musi zostać (brak odpowiedniego rzeczownika, kilka podmiotów, odcień modalny, czytelność)"
+    grammarNote: "Imiesłów I i II jako przydawka (rozbudowana przydawka z umiarem; pełny typ i Gerundivum zostaną omówione dokładniej później) · nominalizacja zamiast zdania podrzędnego (nach Abschluss, wegen, bei, trotz, zur, infolge) · przypadki, w których zdanie podrzędne musi zostać (brak odpowiedniego rzeczownika, kilka podmiotów, odcień modalny, czytelność)"
   },
   "lesson:c1-u05-l1": {
     theme: "Protokoły, raporty i teksty akademickie",
@@ -25,7 +25,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         h: "Rozbudowana przydawka, z umiarem",
-        p: "Między rodzajnikiem a rzeczownikiem mogą stać też dopełnienia i okoliczniki, ale imiesłów zwykle stoi <strong>bezpośrednio przed rzeczownikiem</strong> (inne określenia mogą się z nim łączyć: <em>die geprüften und freigegebenen Unterlagen</em>): <em>die im letzten Quartal erzielten Umsätze</em>. W protokołach i raportach wystarczy jedno lub dwa takie dopowiedzenia; przy większej liczbie czytelnik gubi wątek i lepsze jest zdanie względne. Typ z <em>zu</em> (<em>die zu prüfenden Unterlagen</em>) i konstrukcje dłuższe należą do C2."
+        p: "Między rodzajnikiem a rzeczownikiem mogą stać też dopełnienia i okoliczniki, ale imiesłów zwykle stoi <strong>bezpośrednio przed rzeczownikiem</strong> (inne określenia mogą się z nim łączyć: <em>die geprüften und freigegebenen Unterlagen</em>): <em>die im letzten Quartal erzielten Umsätze</em>. W protokołach i raportach wystarczy jedno lub dwa takie dopowiedzenia; przy większej liczbie czytelnik gubi wątek i lepsze jest zdanie względne. Typ z <em>zu</em> (<em>die zu prüfenden Unterlagen</em>) spotkasz już na C1; on i dłuższe konstrukcje zostaną omówione dokładniej w dalszej części kursu."
       },
       {
         contrast: "Po polsku imiesłów przymiotnikowy z dopełnieniem stoi zwykle <strong>za</strong> rzeczownikiem: <em>wyniki osiągnięte w drugim kwartale</em>, <em>dane zebrane przez urząd</em>. Po niemiecku wszystko, co w polskim zdaniu poszłoby za imiesłowem, przechodzi <strong>przed</strong> rzeczownik, między rodzajnik a imiesłów: <em>die vom Amt erhobenen Daten</em>. Sam imiesłów bez dopełnień stoi po polsku przed rzeczownikiem, tak jak po niemiecku (<em>rosnące koszty, sprawdzone dokumenty</em>). Imiesłów czynny na <em>-ący</em> jest w polskim tekście pisanym częsty (<em>rosnące, obowiązujące</em>), natomiast imiesłowu czynnego przeszłego (<em>koszty wzrosłe</em>) prawie się nie używa: po polsku powiemy raczej <em>koszty, które wzrosły</em>. Niemiecki Partizip II czasowników nieprzechodnich (<em>die gestiegenen Kosten</em>) jest za to zupełnie zwyczajny."
@@ -275,7 +275,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         tr: "Mimo wielokrotnych ponagleń płatność nie wpłynęła.",
-        why: "W <i>mehrfacher</i> akcent pada na <b>mehr</b>; w <i>Erinnerung</i> akcent pada na <b>in</b>; w <i>eingegangen</i> akcent pada na <b>gan</b>."
+        why: "W <i>mehrfacher</i> akcent pada na <b>mehr</b>; w <i>Erinnerung</i> akcent pada na <b>in</b>; w <i>eingegangen</i> akcent pada na <b>ein</b>."
       }
     ]
   },
@@ -323,7 +323,7 @@ LINGUAI.addStrings("pl", {
       examples: [
         { tr: "Posiedzenie przełożono, ponieważ przewodniczący zachorował, a referentka utknęła za granicą.", note: "dwa podmioty: forma nominalna ukryłaby jeden z nich" },
         { tr: "Umowa zostanie podpisana dopiero wtedy, gdy zarząd wyrazi zgodę, a finansowanie będzie zapewnione.", note: "dwa warunki z różnymi czasownikami: zdanie podrzędne" },
-        { tr: "Gdyby kontrola miała potrwać dłużej, termin zostanie przesunięty.", note: "Sollte na pierwszym miejscu: hipotetyczny, ostrożnie postawiony warunek" },
+        { tr: "Jeżeli kontrola miałaby potrwać dłużej, termin zostanie przesunięty.", note: "Sollte na pierwszym miejscu: hipotetyczny, ostrożnie postawiony warunek" },
         { tr: "Dofinansowanie wygasa, jeśli warunki ramowe miałyby się zmienić.", note: "falls ... ändern sollten: odcień modalny" },
         { tr: "Wyniki są wiarygodne tylko wtedy, gdy próba jest reprezentatywna.", note: "nur dann ..., wenn: warunek konieczny; w formie nominalnej da się go zachować (nur bei einer repräsentativen Stichprobe)" },
         { tr: "Ocena rozpoczęła się po tym, jak uczestnicy wypełnili kwestionariusz.", note: "zdanie czasowe w czasie zaprzeszłym: czytelniejsze niż szereg dopełniaczy" }
@@ -354,13 +354,13 @@ LINGUAI.addStrings("pl", {
         why: "Przyczynę można zrzeczownikować (<i>wegen</i> + dopełniacz), ale tu są <b>dwa</b> fakty z różnymi podmiotami: forma nominalna albo ściskałaby je w ciężki sposób, albo gubiła jeden z nich. Pozostałe dwa twierdzenia są fałszywe."
       },
       {
-        q: "„Sollte die Prüfung länger dauern, wird der Termin verschoben.” Co się traci w wersji nominalnej „Bei längerer Dauer der Prüfung wird der Termin verschoben”?",
+        q: "„Sollte die Prüfung länger dauern, wird der Termin verschoben.” Co wyraża mniej wyraźnie wersja nominalna „Bei längerer Dauer der Prüfung wird der Termin verschoben”?",
         opts: [
           "odcień hipotetycznej, ostrożnie postawionej ewentualności, który wyraża sollte",
           "warunkowy charakter zdania",
           "podmiot, bo Prüfung znika"
         ],
-        why: "<i>bei</i> zachowuje <b>warunek</b>, a <i>Prüfung</i> nadal jest w tekście. Traci się odcień modalny <i>sollte</i> („gdyby miała”), którego rzeczownik nie przeniesie."
+        why: "<i>bei</i> zachowuje <b>warunek</b>, a <i>Prüfung</i> nadal jest w tekście; także wersja nominalna może opisywać możliwy przypadek. Mniej wyraźne staje się hipotetyczne nacechowanie <i>sollte</i> („gdyby miała”), które grupa rzeczownikowa zostawia kontekstowi."
       },
       {
         q: "W raporcie dla odbiorcy niespecjalistycznego: które sformułowanie jest najczytelniejsze?",
@@ -384,7 +384,7 @@ LINGUAI.addStrings("pl", {
       {
         q: "Uzupełnij dwa warunki umowy.",
         tr: "Umowa zostanie podpisana dopiero wtedy, gdy zarząd wyrazi zgodę, a finansowanie będzie zapewnione.",
-        why: "<i>wenn</i> (albo <i>sobald</i>, <i>nachdem</i>) dla pierwszego warunku, <i>ist</i> dla drugiego: <i>die Finanzierung gesichert ist</i>. Dwa warunki z różnymi podmiotami to dobry powód, żeby zachować zdanie podrzędne."
+        why: "<i>wenn</i> dla pierwszego warunku (<i>sobald</i> i <i>nachdem</i> wyrażałyby relację czasową, a nie warunek), <i>ist</i> dla drugiego: <i>die Finanzierung gesichert ist</i>. Dwa warunki z różnymi podmiotami to dobry powód, żeby zachować zdanie podrzędne."
       },
       {
         q: "W jakich przypadkach warto zachować zdanie podrzędne? (dwie odpowiedzi)",
@@ -402,15 +402,15 @@ LINGUAI.addStrings("pl", {
         why: "<i>Die Auswertung begann, nachdem die Teilnehmenden den Fragebogen ausgefüllt hatten.</i> W zdaniu podrzędnym czasownik osobowy (<i>hatten</i>) stoi na końcu. Akceptowane jest też zdanie podrzędne na początku, z <i>begann</i> tuż po przecinku."
       },
       {
-        q: "Przetłumacz, zachowując ewentualność: „Gdyby komisja odrzuciła wniosek, termin zostanie przedłużony.” (der Ausschuss, der Antrag, ablehnen, die Frist, verlängern)",
+        q: "Przetłumacz, zachowując ewentualność: „Jeżeli komisja miałaby odrzucić wniosek, termin zostanie przedłużony.” (der Ausschuss, der Antrag, ablehnen, die Frist, verlängern)",
         why: "<i>Sollte der Ausschuss den Antrag ablehnen, wird die Frist verlängert.</i> Akceptowane są też <i>falls</i> i <i>wenn</i> (z <i>sollte</i> albo bez) oraz forma bez spójnika <i>Lehnt der Ausschuss den Antrag ab, ...</i>."
       },
       {
-        tr: "Posiedzenie przełożono, ponieważ przewodniczący zachorował, a referentka utknęła za granicą. Gdyby kontrola miała potrwać dłużej, termin zostanie wyznaczony na nowo.",
+        tr: "Posiedzenie przełożono, ponieważ przewodniczący zachorował, a referentka utknęła za granicą. Jeżeli kontrola miałaby potrwać dłużej, termin zostanie wyznaczony na nowo.",
         why: "W <i>Vorsitzende</i> akcent pada na <b>Vor</b>; w <i>Referentin</i> akcent pada na <b>ren</b>; w <i>Ausland</i> akcent pada na <b>Aus</b>; w <i>festgelegt</i> akcent pada na <b>fest</b>."
       },
       {
-        tr: "Gdyby kontrola miała potrwać dłużej, termin zostanie przesunięty.",
+        tr: "Jeżeli kontrola miałaby potrwać dłużej, termin zostanie przesunięty.",
         why: "W <i>Prüfung</i> akcent pada na <b>Prü</b>; w <i>dauern</i> akcent pada na <b>dau</b>; w <i>verschoben</i> akcent pada na <b>scho</b>."
       }
     ]
@@ -485,13 +485,13 @@ LINGUAI.addStrings("pl", {
         why: "Pierwsze dwa są poprawne: imiesłów II bierny z <b>-en</b> po <i>die</i>. W <i>getroffene</i> brakuje <b>-n</b>; <i>stellenden</i> przypisałoby środkom rolę czynną („środki, które oddają do dyspozycji”)."
       },
       {
-        q: "Uzupełnij komunikat imiesłowem II i przyimkiem.",
+        q: "Uzupełnij komunikat imiesłowem II od planen (albo vorsehen) i przyimkiem.",
         tr: "Poinformujemy Państwa na czas. Środki zaplanowane przez nas zaczną działać dopiero po zakończeniu kontroli.",
         why: "<i>geplanten</i> (albo <i>vorgesehenen</i>): imiesłów II bierny z <b>-en</b>. <i>nach</i>: czas z <i>nach</i> + celownik („po zakończeniu kontroli”)."
       },
       {
         q: "Przetłumacz: „Decyzje podjęte na posiedzeniu zostaną przekazane po zakończeniu kontroli.” (die Sitzung, die Entscheidung, mitteilen, der Abschluss, die Prüfung)",
-        why: "<i>Die in der Sitzung getroffenen Entscheidungen werden nach Abschluss der Prüfung mitgeteilt.</i> Strona bierna z <i>werden</i> oddaje przyszłość polskiego tekstu; akceptowane jest też zdanie zaczynające się od <i>Nach Abschluss der Prüfung</i>."
+        why: "<i>Die in der Sitzung getroffenen Entscheidungen werden nach Abschluss der Prüfung mitgeteilt.</i> <i>werden ... mitgeteilt</i> to strona bierna czasu teraźniejszego (Vorgangspassiv), która odnosi się do przyszłości dzięki kontekstowi (<i>nach Abschluss</i>); akceptowany jest też jawny Futur I strony biernej <i>werden ... mitgeteilt werden</i>, a także zdanie zaczynające się od <i>Nach Abschluss der Prüfung</i>."
       },
       {
         tr: "Najpóźniej w piątek będzie miał gotowe sprawozdanie. Decyzje zapisane w protokole zostaną wdrożone po zakończeniu kontroli.",

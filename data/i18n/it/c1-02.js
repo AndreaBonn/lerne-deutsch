@@ -137,7 +137,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Il treno da Monaco è in ritardo. I viaggiatori dovranno probabilmente aspettare ancora mezz'ora, e la coincidenza sarà allora probabilmente già partita.",
-        why: "Due supposizioni: <i>werden ... warten müssen</i> (previsione prudente) e <i>wird ... abgefahren sein</i> (Futur II con <i>sein</i>, perché <i>abfahren</i> è un verbo di moto)."
+        why: "Due supposizioni: <i>werden ... warten müssen</i> (previsione prudente) e <i>wird ... abgefahren sein</i> (Futur II con <i>sein</i>, perché qui <i>abfahren</i> è intransitivo e indica un cambiamento di luogo)."
       },
       {
         tr: "La luce è ancora accesa, quindi i colleghi staranno probabilmente ancora lavorando.",
@@ -384,9 +384,9 @@ LINGUAI.addStrings("it", {
         why: "<b>ja</b> esprime sorpresa: <i>Das ist ja ein Ding!</i> è un'esclamazione fissa, «questa sì che è bella!»."
       },
       {
-        q: "Completa il dialogo con le particelle giuste.",
+        q: "Completa il dialogo con le particelle giuste (nel primo vuoto va bene anche un avverbio).",
         tr: "«Dove sarà finito Jonas?» «Sarà in coda.» «Non avrà mica perso di nuovo l'autobus?» «Lo sai com'è: non ci si può fare niente.»",
-        why: "<i>wohl</i> per la supposizione (sono accettati anche gli avverbi <i>wahrscheinlich</i> e <i>vermutlich</i>, che dicono la stessa prudenza in modo esplicito), <i>etwa</i> per la domanda sospettosa, <i>ja</i> per ciò che entrambi sanno, <i>halt</i> o <i>eben</i> per la rassegnazione. Nel secondo vuoto va bene anche <i>denn</i>, nel terzo anche <i>doch</i>."
+        why: "<i>wohl</i> per la supposizione (sono accettati anche gli avverbi <i>wahrscheinlich</i> e <i>vermutlich</i>, che dicono la stessa prudenza in modo esplicito), <i>etwa</i> per la domanda sospettosa, <i>ja</i> per ciò che entrambi sanno, <i>halt</i> o <i>eben</i> per la rassegnazione. Nel terzo vuoto va bene anche <i>doch</i>."
       },
       {
         q: "In quali frasi etwa è una particella modale e non significa «circa»?",
@@ -442,7 +442,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Un collega ti guarda con sospetto: «Hast du ___ schon wieder die Kaffeekasse geleert?»",
         hint: "«non avrai mica...»",
-        why: "<b>etwa</b>: sospetto in una domanda sì/no, ci si aspetta di no. Va bene anche <i>denn</i>, più neutro."
+        why: "<b>etwa</b>: sospetto in una domanda sì/no, ci si aspetta di no. <i>denn</i> non basta: renderebbe la domanda neutra, senza il sospetto richiesto."
       },
       {
         q: "Un perito scrive: «Der Brand dürfte durch einen Kurzschluss entstanden sein.» Quanto è sicuro?",

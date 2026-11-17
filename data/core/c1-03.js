@@ -183,7 +183,7 @@ LINGUAI.addUnits("C1", [
           {
             t: "cloze",
             text: "Der Vertrag wird erst unterzeichnet, {{1}} der Vorstand zugestimmt hat und die Finanzierung gesichert {{2}}.",
-            gaps: [["wenn", "sobald", "nachdem"], ["ist"]]
+            gaps: [["wenn"], ["ist"]]
           },
           { t: "multi", a: [0, 1] },
           {
@@ -238,7 +238,9 @@ LINGUAI.addUnits("C1", [
           dir: "toIt",
           a: [
             "Die in der Sitzung getroffenen Entscheidungen werden nach Abschluss der Prüfung mitgeteilt",
-            "Nach Abschluss der Prüfung werden die in der Sitzung getroffenen Entscheidungen mitgeteilt"
+            "Nach Abschluss der Prüfung werden die in der Sitzung getroffenen Entscheidungen mitgeteilt",
+            "Die in der Sitzung getroffenen Entscheidungen werden nach Abschluss der Prüfung mitgeteilt werden",
+            "Nach Abschluss der Prüfung werden die in der Sitzung getroffenen Entscheidungen mitgeteilt werden"
           ]
         },
         {

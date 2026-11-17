@@ -15,13 +15,13 @@ LINGUAI.addStrings("fr", {
     objectives: [
       "reconnaître le Futur I comme supposition sur le présent",
       "faire des suppositions sur le passé avec le Futur II",
-      "distinguer la supposition de l'action achevée avant un moment futur",
+      "distinguer la supposition de l'action achevée au plus tard à un moment futur",
       "doser la certitude avec wohl, schon, sicher, vermutlich"
     ],
     theory: [
       {
         h: "Werden pour supposer",
-        p: "En allemand, le vrai futur s'exprime souvent avec le présent et une indication de temps (<em>Morgen fliege ich nach Wien</em>). <strong>werden</strong> + infinitif sert surtout pour une <strong>supposition sur le présent</strong> : <em>Er wird wohl noch im Stau stehen. Es klingelt. Das wird der Postbote sein.</em> Pour une supposition sur le <strong>passé</strong>, on emploie le <strong>Futur II</strong>, <em>werden</em> + participe II + <em>haben</em> ou <em>sein</em> : <em>Sie wird die Nachricht inzwischen gelesen haben.</em> Ce même Futur II peut aussi indiquer une action qui sera <strong>achevée avant un moment futur</strong> : <em>Bis Ende des Monats werden wir die Studie abgeschlossen haben.</em>"
+        p: "En allemand, le vrai futur s'exprime souvent avec le présent et une indication de temps (<em>Morgen fliege ich nach Wien</em>). <strong>werden</strong> + infinitif peut exprimer un fait futur (<em>Es wird morgen regnen</em>) ou une <strong>supposition sur le présent</strong> ; c'est le contexte qui tranche : <em>Er wird wohl noch im Stau stehen. Es klingelt. Das wird der Postbote sein.</em> Pour une supposition sur le <strong>passé</strong>, on emploie le <strong>Futur II</strong>, <em>werden</em> + participe II + <em>haben</em> ou <em>sein</em> : <em>Sie wird die Nachricht inzwischen gelesen haben.</em> Ce même Futur II peut aussi indiquer une action qui sera <strong>achevée au plus tard à un moment futur</strong> : <em>Bis Ende des Monats werden wir die Studie abgeschlossen haben.</em>"
       },
       {
         h: "Les indices",
@@ -39,13 +39,13 @@ LINGUAI.addStrings("fr", {
     ],
     grammar: {
       title: "Futur I et II comme supposition",
-      note: "<b>werden + infinitif</b> : supposition sur le présent. <b>werden + participe II + haben/sein</b> : supposition sur le passé ou action achevée avant un moment futur (avec <i>bis</i>). Dosage : <i>wohl, vermutlich</i> (prudent), <i>schon</i> (rassurant), <i>sicher</i> (plus certain).",
+      note: "<b>werden + infinitif</b> : supposition sur le présent. <b>werden + participe II + haben/sein</b> : supposition sur le passé ou action achevée au plus tard à un moment futur (avec <i>bis</i>). Dosage : <i>wohl, vermutlich</i> (prudent), <i>schon</i> (rassurant), <i>sicher</i> (plus certain).",
       table: {
         head: ["construction", "valeur", "exemple"],
         rows: [
           ["werden + infinitif", "supposition sur le présent", "Er wird wohl noch im Stau stehen."],
           ["werden + participe II + haben/sein", "supposition sur le passé", "Sie wird die Nachricht inzwischen gelesen haben."],
-          ["werden + participe II + haben/sein avec bis", "action achevée avant un moment futur", "Bis Ende des Monats werden wir die Studie abgeschlossen haben."],
+          ["werden + participe II + haben/sein avec bis", "action achevée au plus tard à un moment futur", "Bis Ende des Monats werden wir die Studie abgeschlossen haben."],
           ["werden + schon + infinitif", "assurance ou supposition, selon le contexte", "Das wird schon klappen."],
           ["présent + indication de temps", "futur prévu", "Morgen fliege ich nach Wien."]
         ]
@@ -86,7 +86,7 @@ LINGUAI.addStrings("fr", {
       {
         q: "Une chaîne de magasins annonce : « Bis Jahresende werden wir alle Filialen modernisiert haben. » Qu'exprime le Futur II ?",
         opts: [
-          "une action qui sera achevée avant un moment futur",
+          "une action qui sera achevée au plus tard à un moment futur",
           "une supposition sur quelque chose qui s'est déjà produit",
           "un passif au présent"
         ],
@@ -137,7 +137,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         tr: "Le train de Munich a du retard. Les voyageurs devront probablement attendre encore une demi-heure, et la correspondance sera alors probablement déjà partie.",
-        why: "Deux suppositions : <i>werden ... warten müssen</i> (prévision prudente) et <i>wird ... abgefahren sein</i> (Futur II avec <i>sein</i>, car <i>abfahren</i> est un verbe de mouvement)."
+        why: "Deux suppositions : <i>werden ... warten müssen</i> (prévision prudente) et <i>wird ... abgefahren sein</i> (Futur II avec <i>sein</i>, car ici <i>abfahren</i> est intransitif et exprime un changement de lieu)."
       },
       {
         tr: "La lumière est encore allumée, donc les collègues doivent probablement encore travailler.",
@@ -384,9 +384,9 @@ LINGUAI.addStrings("fr", {
         why: "<b>ja</b> exprime la surprise : <i>Das ist ja ein Ding!</i> est une exclamation figée, « ça alors ! »."
       },
       {
-        q: "Complète le dialogue avec les bonnes particules.",
+        q: "Complète le dialogue avec les bonnes particules (dans le premier blanc, un adverbe convient aussi).",
         tr: "« Où est passé Jonas ? » « Il doit être dans les embouteillages. » « Il n'aurait pas encore raté le bus ? » « Tu sais comment il est : on n'y peut rien. »",
-        why: "<i>wohl</i> pour la supposition, <i>etwa</i> pour la question soupçonneuse, <i>ja</i> pour ce que les deux savent, <i>halt</i> ou <i>eben</i> pour la résignation. Dans le deuxième blanc, <i>denn</i> convient aussi, dans le troisième <i>doch</i>."
+        why: "<i>wohl</i> pour la supposition, <i>etwa</i> pour la question soupçonneuse, <i>ja</i> pour ce que les deux savent, <i>halt</i> ou <i>eben</i> pour la résignation. Dans le troisième blanc, <i>doch</i> convient aussi."
       },
       {
         q: "Dans quelles phrases etwa est-il une particule modale et ne signifie-t-il pas « environ » ?",
@@ -442,7 +442,7 @@ LINGUAI.addStrings("fr", {
       {
         q: "Un collègue te regarde avec méfiance : « Hast du ___ schon wieder die Kaffeekasse geleert? »",
         hint: "« tu n'aurais pas... »",
-        why: "<b>etwa</b> : soupçon dans une question oui/non, on s'attend à un non. <i>denn</i>, plus neutre, convient aussi."
+        why: "<b>etwa</b> : soupçon dans une question oui/non, on s'attend à un non. <i>denn</i> ne suffit pas : il rendrait la question neutre, sans le soupçon demandé."
       },
       {
         q: "Un expert écrit : « Der Brand dürfte durch einen Kurzschluss entstanden sein. » Quel est son degré de certitude ?",
