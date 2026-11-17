@@ -950,5 +950,488 @@ LINGUAI.addStrings("it", {
         why: "In <i>Monats</i> la <b>o</b> è lunga; in <i>einzureichen</i> <b>ei</b> si pronuncia [aɪ]."
       }
     ]
+  },
+  "unit:c1-u03": {
+    title: "Registri e testualità",
+    grammarNote: "Stile nominale e lingua burocratica (Amtsdeutsch) · particelle ed ellissi del parlato · correlativi (darauf, dass; es, dass) e connettivi per costruire un testo coeso · ripasso delle unità 1-3"
+  },
+  "lesson:c1-u03-l1": {
+    theme: "Uffici e avvisi pubblici",
+    title: "Il tedesco burocratico",
+    objectives: [
+      "capire un avviso in Amtsdeutsch",
+      "riformulare lo stile nominale in stile verbale e viceversa",
+      "riconoscere i verbi tipici della burocrazia (erfolgen, erheben, gewähren)",
+      "scegliere il registro adatto al destinatario"
+    ],
+    theory: [
+      {
+        h: "Che cos'è l'Amtsdeutsch",
+        p: "La lingua degli uffici usa molto lo <strong>stile nominale</strong>: verbi trasformati in nomi (<em>die Antragstellung, die Nichtbeachtung, das Betreten</em>), secondarie sostituite da gruppi con una preposizione (<em>nach Abschluss, bei Nichtbeachtung, zur Vermeidung</em>), verbi poco espressivi come <em>erfolgen</em> (avvenire), <em>erheben</em> (riscuotere), <em>gewähren</em> (concedere). <em>Die Antragstellung erfolgt online</em> significa semplicemente «la domanda si presenta online»."
+      },
+      {
+        h: "Dallo stile nominale a quello verbale",
+        p: "Per capire un avviso, trasforma il gruppo nominale in una secondaria: <em>Nach Abschluss der Arbeiten</em> → <em>Nachdem die Arbeiten abgeschlossen sind</em>; <em>Bei Nichtbeachtung</em> → <em>Wenn man das nicht beachtet</em>; <em>Zur Vermeidung von Wartezeiten</em> → <em>Um Wartezeiten zu vermeiden</em>. Il genitivo del gruppo nominale (<em>der Arbeiten</em>) torna soggetto o oggetto della secondaria."
+      },
+      {
+        contrast: "Anche l'italiano burocratico ha queste forme (<em>a seguito della conclusione dei lavori</em>, <em>in caso di mancata osservanza</em>), quindi la struttura è familiare. La differenza è che in tedesco l'oggetto del verbo diventa un genitivo senza preposizione (<em>die Beachtung der Regeln</em>), e che negli avvisi lo stile nominale si combina con <em>sein + zu</em> (<em>ist ein Helm aufzusetzen</em>)."
+      },
+      {
+        trap: "Lo stile nominale è adatto agli avvisi e alle lettere ufficiali, non a una mail fra amici: <em>Nach Abschluss der Arbeiten erfolgt unser Treffen</em> in una mail privata suona ridicolo. Lì si scrive <em>Wir sehen uns, sobald die Arbeiten fertig sind</em>."
+      },
+      {
+        tip: "Davanti a un nome in <em>-ung</em> o a un infinito sostantivato (<em>das Betreten</em>), chiediti quale verbo c'è dietro (<em>betreten</em>) e chi fa l'azione: spesso è «chiunque», cioè <em>man</em>."
+      }
+    ],
+    grammar: {
+      title: "Stile nominale e stile verbale",
+      note: "<b>Nominale</b>: nome + genitivo + preposizione (<i>nach Abschluss der Arbeiten</i>). <b>Verbale</b>: secondaria con un verbo coniugato (<i>nachdem die Arbeiten abgeschlossen sind</i>). Verbi tipici: <i>erfolgen, erheben, gewähren</i>.",
+      table: {
+        head: ["stile nominale", "stile verbale"],
+        rows: [
+          ["Nach Abschluss der Arbeiten ...", "Nachdem die Arbeiten abgeschlossen sind, ..."],
+          ["Bei Nichtbeachtung ...", "Wenn man das nicht beachtet, ..."],
+          ["Zur Vermeidung von Wartezeiten ...", "Um Wartezeiten zu vermeiden, ..."],
+          ["Vor Betreten der Baustelle ...", "Bevor man die Baustelle betritt, ..."],
+          ["Die Antragstellung erfolgt online.", "Man stellt den Antrag online."]
+        ]
+      },
+      examples: [
+        { tr: "Al termine dei lavori la strada sarà riaperta.", note: "nach + genitivo al posto di nachdem" },
+        { tr: "In caso di mancata osservanza viene riscossa una multa.", note: "bei Nichtbeachtung = wenn man nicht beachtet" },
+        { tr: "Per evitare attese si prega di prenotare un appuntamento.", note: "zur Vermeidung = um ... zu vermeiden" },
+        { tr: "A causa della forte pioggia il concerto è stato annullato.", note: "wegen + genitivo al posto di weil" },
+        { tr: "La domanda si presenta online.", note: "erfolgen: avvenire, tipico degli uffici" },
+        { tr: "Prima di entrare nel cantiere è obbligatorio indossare il casco.", note: "vor Betreten + sein zu" }
+      ]
+    },
+    vocab: [
+      "il provvedimento, la comunicazione ufficiale",
+      "la multa, la sanzione",
+      "l'autorità, l'ente pubblico",
+      "la competenza (di un ufficio)",
+      "l'ordinanza, il decreto",
+      "la mancata osservanza",
+      "avvenire, aver luogo",
+      "riscuotere (una tassa); sollevare",
+      "concedere",
+      "richiedere (ufficialmente)",
+      "competente",
+      "secondo, conformemente a"
+    ],
+    exercises: [
+      {
+        q: "Leggi: «Bei Nichtbeachtung der Parkregeln wird ein Bußgeld erhoben.» Come lo spiegheresti a un amico?",
+        opts: [
+          "Wenn man sich nicht an die Parkregeln hält, muss man eine Strafe zahlen.",
+          "Wer die Parkregeln nicht kennt, bekommt Geld zurück.",
+          "Die Stadt beachtet die Parkregeln nicht."
+        ],
+        why: "<i>bei Nichtbeachtung</i> = «se non si rispettano»; <i>ein Bußgeld erheben</i> = «far pagare una multa». La prima frase dice lo stesso in stile verbale."
+      },
+      {
+        q: "Quale gruppo nominale corrisponde a «Weil es stark regnete, ...»?",
+        opts: [
+          "Wegen des starken Regens ...",
+          "Trotz des starken Regens ...",
+          "Während des starken Regens ..."
+        ],
+        why: "<i>weil</i> esprime una causa: <b>wegen</b> + genitivo. <i>trotz</i> è concessivo, <i>während</i> temporale."
+      },
+      {
+        q: "Scrivi un messaggio a un'amica sui lavori in casa. Quale frase è adatta al registro?",
+        opts: [
+          "Wir sehen uns, sobald die Arbeiten fertig sind.",
+          "Nach Abschluss der Arbeiten erfolgt unser Wiedersehen.",
+          "Bei Fertigstellung der Arbeiten wird ein Treffen durchgeführt."
+        ],
+        why: "Fra amici si usa lo stile verbale. Le altre due sono corrette ma in Amtsdeutsch, fuori luogo in un messaggio privato."
+      },
+      {
+        q: "Completa l'avviso: «Die Antragstellung ___ ausschließlich online.»",
+        hint: "verbo burocratico: «avviene»",
+        why: "<b>erfolgt</b>: <i>erfolgen</i> è il verbo tipico degli uffici per «avvenire, aver luogo»."
+      },
+      {
+        q: "Completa l'avviso del comune.",
+        tr: "Gentili cittadine e cittadini, al termine dei lavori la strada sarà riaperta. Per evitare attese chiediamo di prenotare un appuntamento.",
+        why: "<i>Nach Abschluss</i> e <i>Zur Vermeidung</i>: preposizione + nome + genitivo al posto di una secondaria."
+      },
+      {
+        q: "Abbina ogni parola al suo significato.",
+        pairs: [
+          "il provvedimento, la comunicazione ufficiale",
+          "l'autorità, l'ente pubblico",
+          "la multa",
+          "l'ordinanza"
+        ]
+      },
+      {
+        q: "Metti in ordine le parole del cartello.",
+        tr: "Prima di entrare nel cantiere è obbligatorio indossare il casco.",
+        why: "<i>Vor Betreten der Baustelle ist ein Helm aufzusetzen.</i> Gruppo nominale al primo posto, poi <i>ist</i>, e <i>aufzusetzen</i> in fondo."
+      },
+      {
+        q: "Riformula in stile verbale, con una secondaria: «Nach Abschluss der Arbeiten wird die Straße freigegeben.»",
+        why: "<i>Nachdem die Arbeiten abgeschlossen sind, wird die Straße freigegeben</i>: il genitivo <i>der Arbeiten</i> torna soggetto; vanno bene anche <i>sobald</i> o <i>wenn</i> e <i>abgeschlossen worden sind</i>."
+      },
+      {
+        tr: "Gentili signore e signori, secondo la nuova ordinanza da maggio la domanda si presenta esclusivamente online. Per domande rivolgetevi all'ufficio competente.",
+        why: "In <i>Verordnung</i> l'accento cade su <b>ord</b>; in <i>ausschließlich</i> l'accento cade su <b>aus</b>; in <i>zuständige</i> l'accento cade su <b>zu</b>."
+      },
+      {
+        tr: "Il pagamento avviene tramite bonifico.",
+        why: "In <i>Zahlung</i> la <b>a</b> è lunga e la <b>h</b> è muta; in <i>erfolgt</i> l'accento cade su <b>folgt</b>; in <i>Überweisung</i> l'accento cade su <b>wei</b>."
+      }
+    ]
+  },
+  "lesson:c1-u03-l2": {
+    theme: "Conversazione spontanea",
+    title: "Come si parla davvero",
+    objectives: [
+      "capire le particelle modali del parlato (doch, ja, mal, halt, eben)",
+      "riconoscere le ellissi tipiche del parlato (Weiß ich nicht, Passt schon)",
+      "rispondere in modo naturale in una conversazione informale",
+      "distinguere il parlato dallo scritto formale"
+    ],
+    theory: [
+      {
+        h: "Le particelle cambiano il tono",
+        p: "Nel parlato le particelle modali dicono come la pensa chi parla. <strong>doch</strong> incoraggia o ricorda (<em>Komm doch mit!</em>), <strong>ja</strong> presenta una cosa come nota o sorprendente (<em>Das hast du ja schon gesagt. Das ist ja toll!</em>), <strong>mal</strong> ammorbidisce una richiesta (<em>Hast du mal kurz Zeit?</em>), <strong>halt</strong> ed <strong>eben</strong> esprimono rassegnazione (<em>Das ist halt so</em>). Tolta la particella, la frase resta corretta ma diventa più secca."
+      },
+      {
+        h: "Ellissi e formule",
+        p: "Il parlato lascia cadere ciò che si capisce dal contesto, spesso il soggetto o il <em>das</em> iniziale: <em>Weiß ich nicht</em> (= <em>Das weiß ich nicht</em>), <em>Kann sein</em>, <em>Passt schon</em>, <em>Mal sehen</em>. Sono normali fra amici e colleghi; in una lettera o in un esame scritto si usano le frasi complete."
+      },
+      {
+        contrast: "L'italiano rende queste sfumature con l'intonazione o con parole come <em>dai</em>, <em>pure</em>, <em>mica</em>, <em>beh</em>: <em>Komm doch mit!</em> è vicino a «dai, vieni anche tu!», <em>Das ist halt so</em> a «è così, che ci vuoi fare». Non esiste un equivalente parola per parola: si impara la funzione."
+      },
+      {
+        trap: "Le particelle non stanno al primo posto con questo valore: <em>Komm doch mit</em>, non <em>Doch komm mit</em>. E <em>doch</em> come risposta a una domanda negativa (<em>Kommst du nicht? – Doch!</em>) è un'altra cosa: significa «sì, invece»."
+      },
+      {
+        tip: "Quando ascolti, nota dove cadono le particelle: di solito subito dopo il verbo e i pronomi, prima dell'informazione nuova. <em>Ich bin eigentlich ziemlich müde.</em>"
+      }
+    ],
+    grammar: {
+      title: "Particelle ed ellissi del parlato",
+      note: "<b>doch</b>: incoraggia, ricorda. <b>ja</b>: cosa nota, sorpresa. <b>mal</b>: ammorbidisce. <b>halt / eben</b>: rassegnazione. Ellissi: <i>Weiß ich nicht, Kann sein, Passt schon</i>.",
+      table: {
+        head: ["particella o forma", "effetto", "esempio"],
+        rows: [
+          ["doch", "incoraggia, ricorda", "Komm doch mit!"],
+          ["ja", "cosa nota, sorpresa", "Das ist ja unglaublich!"],
+          ["mal", "ammorbidisce una richiesta", "Hast du mal kurz Zeit?"],
+          ["halt, eben", "rassegnazione", "Das ist halt so."],
+          ["ellissi", "si omette ciò che è chiaro", "Weiß ich nicht. Passt schon."]
+        ]
+      },
+      examples: [
+        { tr: "Dai, vieni anche tu!", note: "doch + einfach: invito" },
+        { tr: "Ma è incredibile!", note: "ja: sorpresa" },
+        { tr: "Hai un momento?", note: "mal: richiesta più gentile" },
+        { tr: "Mah, può darsi.", note: "ellissi: Kann sein" },
+        { tr: "Non lo so.", note: "ellissi: manca das" },
+        { tr: "Va bene così, non importa.", note: "formula del parlato" }
+      ]
+    },
+    vocab: [
+      "la scusa, il pretesto",
+      "l'allusione, l'accenno",
+      "il tono (della voce)",
+      "la frase fatta, la formula di cortesia",
+      "il malinteso",
+      "la lingua parlata, il registro colloquiale",
+      "chiacchierare (colloquiale)",
+      "darsi appuntamento",
+      "chiedere di nuovo, informarsi",
+      "in realtà, veramente",
+      "comunque, in ogni caso",
+      "appunto, ecco (rassegnazione)"
+    ],
+    exercises: [
+      {
+        q: "Al bar un amico dice: «Komm doch mit!» Che cosa aggiunge doch?",
+        opts: [
+          "un invito incoraggiante",
+          "un rimprovero",
+          "un dubbio"
+        ],
+        why: "In una richiesta o in un invito <b>doch</b> incoraggia: «dai, vieni anche tu»."
+      },
+      {
+        q: "Un collega dice: «Das hast du ja schon gestern gesagt.» Che cosa segnala ja?",
+        opts: [
+          "che la cosa è già nota a entrambi",
+          "che non ci crede",
+          "che sta facendo una domanda"
+        ],
+        why: "Qui <b>ja</b> presenta l'informazione come già nota: «l'hai già detto ieri, lo sappiamo»."
+      },
+      {
+        q: "Un'amica ti chiede: «Kommst du heute Abend?» Quale risposta è più naturale nel parlato?",
+        opts: [
+          "Weiß ich noch nicht.",
+          "Das Wissen darüber besitze ich noch nicht.",
+          "Eine Entscheidung darüber ist noch nicht erfolgt."
+        ],
+        why: "Nel parlato si omette <i>das</i>: <b>Weiß ich noch nicht</b>. Le altre due sono stile burocratico, fuori luogo fra amici."
+      },
+      {
+        q: "Completa: «Hast du ___ kurz Zeit?»",
+        hint: "particella che rende gentile la richiesta",
+        why: "<b>mal</b>: ammorbidisce la richiesta, come «un attimo»."
+      },
+      {
+        q: "Completa: «Das ist ___ so, da kann man nichts machen.»",
+        hint: "particella di rassegnazione",
+        why: "<b>halt</b> (o <i>eben</i>): «è così, che ci vuoi fare»."
+      },
+      {
+        q: "Completa il dialogo.",
+        tr: "«Vieni al cinema stasera?» «Non so, in realtà sono piuttosto stanco.» «Ma dai, vieni, il film è davvero fantastico!»",
+        why: "<i>eigentlich</i> (in realtà), <i>doch</i> (incoraggia), <i>echt</i> o <i>wirklich</i> (davvero): tre parole tipiche del parlato."
+      },
+      {
+        q: "Quali frasi sono tipiche del parlato informale?",
+        opts: [
+          "Weiß ich nicht.",
+          "Passt schon.",
+          "Bei Nichtbeachtung erfolgt eine Mahnung.",
+          "Gemäß der Verordnung ist dies untersagt."
+        ],
+        why: "Le prime due sono ellissi del parlato. Le altre due sono Amtsdeutsch."
+      },
+      {
+        q: "Traduci, in tono informale: «Dai, vieni anche tu, tanto vai comunque in centro!» (mitkommen, sowieso, in die Stadt gehen)",
+        why: "<i>Komm doch mit, du gehst sowieso in die Stadt</i>: <i>doch</i> per l'invito, <i>sowieso</i> per «comunque»; si può aggiungere <i>ja</i> o <i>doch</i> davanti a <i>sowieso</i>."
+      },
+      {
+        tr: "«Allora, com'è andata ieri?» «Ah, tutto sommato bene. Il film era un po' lungo, ecco, ma per il resto davvero fantastico.»",
+        why: "In <i>eigentlich</i> l'accento cade su <b>ei</b>; in <i>bisschen</i> <b>ss</b> si pronuncia [s]; in <i>sonst</i> la <b>o</b> è breve."
+      },
+      {
+        tr: "Dai, vieni anche tu, sarà sicuramente divertente!",
+        why: "In <i>einfach</i> l'accento cade su <b>ein</b>; in <i>bestimmt</i> l'accento cade su <b>stimmt</b>; in <i>lustig</i> <b>g</b> finale si pronuncia [ç]."
+      }
+    ]
+  },
+  "lesson:c1-u03-l3": {
+    theme: "Relazioni e presentazioni",
+    title: "Coesione: darauf, dass ...",
+    objectives: [
+      "usare i correlativi darauf, daran, darüber prima di una secondaria",
+      "usare es come anticipatore",
+      "organizzare un testo con connettivi (zunächst, darüber hinaus, schließlich)",
+      "collegare le frasi di un paragrafo con rinvii (dadurch, deshalb)"
+    ],
+    theory: [
+      {
+        h: "Annunciare una frase",
+        p: "Quando un verbo regge una preposizione (<em>sich freuen auf, bestehen auf, sich einigen auf, hinweisen auf</em>) e il complemento è una frase, nella principale compare un avverbio pronominale che la annuncia: <em>Er besteht <strong>darauf</strong>, dass wir bleiben. Wir haben uns <strong>darauf</strong> geeinigt, den Termin zu verschieben.</em> Senza preposizione, l'anticipatore può essere <strong>es</strong>: <em>Es ist wichtig, dass alle pünktlich sind.</em> Se la secondaria passa al primo posto, l'<em>es</em> soggetto sparisce: <em>Dass alle pünktlich sind, ist wichtig.</em>"
+      },
+      {
+        h: "Tenere insieme un testo",
+        p: "Un testo coeso guida chi legge. Per l'ordine: <em>zunächst, zuerst, dann, anschließend, schließlich</em>. Per aggiungere: <em>darüber hinaus, außerdem</em>. Per rinviare a ciò che si è detto: <em>dadurch, deshalb, dabei, darauf</em>: <em>Die Mieten steigen. Dadurch wird Wohnen für viele unbezahlbar.</em>"
+      },
+      {
+        contrast: "In italiano la secondaria segue direttamente il verbo: <em>insiste perché restiamo</em>, <em>ci siamo accordati per rinviare</em>. In tedesco il verbo con preposizione annuncia la frase con <em>darauf, daran, darüber</em>: senza, la frase suona incompleta o cambia significato."
+      },
+      {
+        trap: "L'avverbio pronominale prende la preposizione del verbo: <em>bestehen auf → darauf</em>, <em>denken an → daran</em>, <em>sich ärgern über → darüber</em>. <em>Er besteht daran, dass ...</em> è sbagliato."
+      },
+      {
+        tip: "Impara i verbi con la loro preposizione e il loro avverbio insieme: <em>sich einigen auf / darauf</em>, <em>hinweisen auf / darauf</em>, <em>eingehen auf / darauf</em>. Nelle presentazioni compaiono di continuo."
+      }
+    ],
+    grammar: {
+      title: "Correlativi e connettivi testuali",
+      note: "Verbo + preposizione + frase: <b>da(r)- + preposizione</b> nella principale (<i>darauf, dass ...</i>). Senza preposizione: <b>es</b> (<i>Es ist wichtig, dass ...</i>). Ordine del testo: <i>zunächst, dann, schließlich</i>; aggiunta: <i>darüber hinaus</i>.",
+      table: {
+        head: ["verbo", "correlativo", "esempio"],
+        rows: [
+          ["bestehen auf", "darauf", "Er besteht darauf, dass wir bleiben."],
+          ["sich einigen auf", "darauf", "Wir haben uns darauf geeinigt, den Termin zu verschieben."],
+          ["hinweisen auf", "darauf", "Ich weise darauf hin, dass die Frist endet."],
+          ["denken an", "daran", "Denk daran, das Licht auszumachen."],
+          ["wichtig sein", "es", "Es ist wichtig, dass alle pünktlich sind."]
+        ]
+      },
+      examples: [
+        { tr: "Non vedo l'ora che tu venga.", note: "sich freuen auf → darauf" },
+        { tr: "È importante che tutti siano puntuali.", note: "es anticipa la secondaria" },
+        { tr: "Ci siamo accordati per rinviare l'appuntamento.", note: "sich einigen auf → darauf + infinito" },
+        { tr: "Insiste perché restiamo.", note: "bestehen auf → darauf" },
+        { tr: "Questo punto è decisivo, per questo vorrei approfondirlo.", note: "eingehen auf → darauf" },
+        { tr: "Inoltre ci sono altri problemi.", note: "darüber hinaus: aggiunge" }
+      ]
+    },
+    vocab: [
+      "il nesso, il contesto",
+      "l'introduzione",
+      "la conclusione, la fine",
+      "il paragrafo, il capoverso",
+      "il riferimento",
+      "la struttura, lo schema (di un testo)",
+      "accordarsi (auf: su)",
+      "insistere (auf: su)",
+      "approfondire, affrontare (auf: un tema)",
+      "far notare, segnalare (auf: qualcosa)",
+      "inoltre, oltre a ciò",
+      "infine, alla fine"
+    ],
+    exercises: [
+      {
+        q: "Completa: «Er besteht ___, dass wir bleiben.»",
+        opts: [
+          "darauf",
+          "daran",
+          "dafür"
+        ],
+        why: "<i>bestehen auf</i>: il correlativo prende la stessa preposizione, <b>darauf</b>."
+      },
+      {
+        q: "Quale frase è corretta?",
+        opts: [
+          "Dass alle pünktlich sind, ist wichtig.",
+          "Dass alle pünktlich sind, ist es wichtig.",
+          "Es, dass alle pünktlich sind, ist wichtig."
+        ],
+        why: "Quando la secondaria occupa il primo posto, l'<i>es</i> anticipatore soggetto sparisce."
+      },
+      {
+        q: "In un saggio: «Die Mieten steigen. ___ wird Wohnen für viele Familien unbezahlbar.» Quale connettivo crea il legame giusto?",
+        opts: [
+          "Dadurch",
+          "Trotzdem",
+          "Stattdessen"
+        ],
+        why: "La seconda frase è una conseguenza della prima: <b>dadurch</b>, «in questo modo, per questo»."
+      },
+      {
+        q: "Completa: «Wir haben uns ___ geeinigt, den Termin zu verschieben.»",
+        hint: "sich einigen auf + frase",
+        why: "<b>darauf</b>: annuncia l'infinito con <i>zu</i>."
+      },
+      {
+        q: "Completa: «Auf diese Frage gehe ich später ___.»",
+        hint: "particella di eingehen",
+        why: "<b>ein</b>: <i>eingehen auf</i> è separabile, «approfondire, rispondere a»."
+      },
+      {
+        q: "Completa lo schema della presentazione.",
+        tr: "Prima vorrei descrivere il problema. Poi indico possibili soluzioni e infine traggo una conclusione.",
+        why: "<i>Zuerst/Zunächst</i>, <i>Danach/Dann/Anschließend</i>, <i>schließlich/abschließend</i>: i connettivi guidano chi ascolta."
+      },
+      {
+        q: "Abbina ogni parola al suo significato.",
+        pairs: [
+          "l'introduzione",
+          "il paragrafo",
+          "il nesso, il contesto",
+          "la struttura (di un testo)"
+        ]
+      },
+      {
+        q: "Traduci: «(Lui) insiste perché tutti partecipino alla riunione.» (bestehen auf, die Besprechung)",
+        why: "<i>Er besteht darauf, dass alle an der Besprechung teilnehmen</i>: <i>darauf</i> annuncia la secondaria; dove l'italiano usa il congiuntivo, il tedesco usa l'indicativo."
+      },
+      {
+        tr: "Nella mia relazione affronto prima le cause. Inoltre vorrei far notare che ci sono già le prime soluzioni. Infine riassumo tutto brevemente.",
+        why: "In <i>Vortrag</i> l'accento cade su <b>Vor</b>; in <i>Ursachen</i> l'accento cade su <b>Ur</b>; in <i>zusammen</i> l'accento cade su <b>sam</b>."
+      },
+      {
+        tr: "Vorrei far notare che la scadenza termina domani.",
+        why: "In <i>hinweisen</i> l'accento cade su <b>hin</b>; in <i>Frist</i> la <b>i</b> è breve; in <i>endet</i> la prima <b>e</b> è breve."
+      }
+    ]
+  },
+  "lesson:c1-u03-test": {
+    theme: "Verifica",
+    title: "Test: Registri e testualità",
+    objectives: [
+      "verificare l'unità e ripassare werden, i verbi di funzione e lo stile nominale delle unità 1-3"
+    ],
+    theory: [
+      {
+        p: "Dodici domande sull'unità e sulle unità 1-3. Si supera con il 70%. Non riguardare le lezioni mentre rispondi: se non ricordi qualcosa, meglio tornare indietro e ripassare."
+      }
+    ],
+    exercises: [
+      {
+        q: "Completa: «Er ist Lehrer ___.»",
+        hint: "participio di werden «diventare»",
+        why: "<b>geworden</b>: verbo pieno, con <i>ge-</i>."
+      },
+      {
+        q: "Completa: «Das neue Gesetz tritt im Mai in ___.»",
+        hint: "entrare in vigore",
+        why: "<b>Kraft</b>: <i>in Kraft treten</i>."
+      },
+      {
+        q: "Completa l'avviso: «Die Zahlung ___ per Überweisung.»",
+        hint: "avviene",
+        why: "<b>erfolgt</b>: verbo tipico dell'Amtsdeutsch."
+      },
+      {
+        q: "Completa: «Wir müssen noch eine Entscheidung ___.»",
+        hint: "prendere (una decisione)",
+        why: "<b>treffen</b>: <i>eine Entscheidung treffen</i>."
+      },
+      {
+        q: "Completa: «Sie besteht ___, dass wir pünktlich sind.»",
+        hint: "correlativo di bestehen auf",
+        why: "<b>darauf</b>: annuncia la secondaria."
+      },
+      {
+        q: "Completa: «___ Abschluss der Arbeiten wird die Straße freigegeben.»",
+        hint: "preposizione: «dopo»",
+        why: "<b>Nach</b>: <i>nach</i> + nome + genitivo al posto di <i>nachdem</i>."
+      },
+      {
+        q: "Che cosa esprime «Er wird den Zug verpasst haben»?",
+        opts: [
+          "una supposizione sul passato",
+          "un futuro",
+          "un passivo"
+        ],
+        why: "Futur II con valore di <b>supposizione</b>: «avrà perso il treno»."
+      },
+      {
+        q: "Quale gruppo nominale corrisponde a «Um die Kosten zu senken, ...»?",
+        opts: [
+          "Zur Senkung der Kosten ...",
+          "Bei Senkung der Kosten ...",
+          "Trotz Senkung der Kosten ..."
+        ],
+        why: "Lo scopo (<i>um ... zu</i>) si rende con <b>zu</b> + nome: <i>zur Senkung der Kosten</i>."
+      },
+      {
+        q: "Al telefono una collega dice: «Das ist halt so.» Che atteggiamento esprime?",
+        opts: [
+          "rassegnazione",
+          "entusiasmo",
+          "rimprovero"
+        ],
+        why: "<i>halt</i> segnala che la cosa non si può cambiare: <b>rassegnazione</b>."
+      },
+      {
+        q: "In un regolamento: quale frase esprime un obbligo?",
+        opts: [
+          "Der Ausweis ist stets mitzuführen.",
+          "Der Ausweis lässt sich mitführen.",
+          "Der Ausweis ist mitgeführt."
+        ],
+        why: "<b>sein + zu</b> in un regolamento esprime un obbligo: «il documento va portato sempre con sé»."
+      },
+      {
+        q: "Riformula in stile nominale: «Weil es stark regnete, wurde das Konzert abgesagt.»",
+        why: "<i>Wegen des starken Regens wurde das Konzert abgesagt</i>: <i>wegen</i> (o <i>aufgrund</i>) + genitivo al posto di <i>weil</i>."
+      },
+      {
+        tr: "Al termine dei lavori la strada sarà riaperta.",
+        why: "In <i>Abschluss</i> l'accento cade su <b>Ab</b>; in <i>Arbeiten</i> l'accento cade su <b>Ar</b>; in <i>freigegeben</i> l'accento cade su <b>frei</b>."
+      }
+    ]
   }
 });

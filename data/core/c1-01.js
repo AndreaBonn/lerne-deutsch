@@ -455,5 +455,227 @@ LINGUAI.addUnits("C1", [
         { t: "speak", it: "Die Unterlagen sind bis Ende des Monats einzureichen." }
       ]
     }
+  },
+  {
+    id: "c1-u03",
+    icon: "📑",
+    titleIt: "Register und Textaufbau",
+    lessons: [
+      {
+        id: "c1-u03-l1",
+        tags: ["g-nominalstil", "g-register"],
+        cefr: "C1",
+        titleIt: "Amtsdeutsch",
+        grammar: {
+          examples: [
+            { it: "Nach Abschluss der Arbeiten wird die Straße wieder freigegeben." },
+            { it: "Bei Nichtbeachtung wird ein Bußgeld erhoben." },
+            { it: "Zur Vermeidung von Wartezeiten wird um Terminvereinbarung gebeten." },
+            { it: "Wegen des starken Regens fiel das Konzert aus." },
+            { it: "Die Antragstellung erfolgt online." },
+            { it: "Vor Betreten der Baustelle ist ein Helm aufzusetzen." }
+          ]
+        },
+        vocab: [
+          { it: "der Bescheid", plural: "die Bescheide", ex: "Den Bescheid erhalten Sie per Post." },
+          { it: "das Bußgeld", plural: "die Bußgelder", ex: "Für Falschparken droht ein Bußgeld." },
+          { it: "die Behörde", plural: "die Behörden", ex: "Wenden Sie sich an die zuständige Behörde." },
+          { it: "die Zuständigkeit", plural: "die Zuständigkeiten", ex: "Das fällt nicht in unsere Zuständigkeit." },
+          { it: "die Verordnung", plural: "die Verordnungen", ex: "Die neue Verordnung gilt ab Mai." },
+          { it: "die Nichtbeachtung", plural: "-", ex: "Bei Nichtbeachtung wird ein Bußgeld fällig." },
+          { it: "erfolgen", ex: "Die Zahlung erfolgt per Überweisung." },
+          { it: "erheben", ex: "Die Stadt erhebt eine Gebühr." },
+          { it: "gewähren", ex: "Wir gewähren Ihnen einen Rabatt." },
+          { it: "beantragen", ex: "Ich habe ein Visum beantragt." },
+          { it: "zuständig", ex: "Wer ist dafür zuständig?" },
+          { it: "gemäß", ex: "Gemäß der Verordnung ist das verboten." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["erfolgt"] },
+          {
+            t: "cloze",
+            text: "Sehr geehrte Bürgerinnen und Bürger, {{1}} Abschluss der Bauarbeiten wird die Straße wieder freigegeben. {{2}} Vermeidung von Wartezeiten bitten wir um Terminvereinbarung.",
+            gaps: [["nach", "Nach"], ["zur", "Zur"]]
+          },
+          {
+            t: "match",
+            pairs: [{ it: "der Bescheid" }, { it: "die Behörde" }, { it: "das Bußgeld" }, { it: "die Verordnung" }]
+          },
+          {
+            t: "order",
+            tokens: ["Vor", "Betreten", "der", "Baustelle", "ist", "ein", "Helm", "aufzusetzen"],
+            a: ["Vor Betreten der Baustelle ist ein Helm aufzusetzen"]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Nachdem die Arbeiten abgeschlossen sind, wird die Straße freigegeben",
+              "Nachdem die Arbeiten abgeschlossen worden sind, wird die Straße freigegeben",
+              "Sobald die Arbeiten abgeschlossen sind, wird die Straße freigegeben",
+              "Sobald die Arbeiten abgeschlossen worden sind, wird die Straße freigegeben",
+              "Wenn die Arbeiten abgeschlossen sind, wird die Straße freigegeben",
+              "Wenn die Arbeiten abgeschlossen worden sind, wird die Straße freigegeben"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Sehr geehrte Damen und Herren, gemäß der neuen Verordnung erfolgt die Antragstellung ab Mai ausschließlich online. Bei Fragen wenden Sie sich bitte an die zuständige Behörde."
+          },
+          { t: "speak", it: "Die Zahlung erfolgt per Überweisung." }
+        ]
+      },
+      {
+        id: "c1-u03-l2",
+        tags: ["g-modalpartikeln", "g-register"],
+        cefr: "C1",
+        titleIt: "So spricht man wirklich",
+        grammar: {
+          examples: [
+            { it: "Komm doch einfach mit!" },
+            { it: "Das ist ja unglaublich!" },
+            { it: "Hast du mal kurz Zeit?" },
+            { it: "Na ja, kann sein." },
+            { it: "Weiß ich nicht." },
+            { it: "Passt schon." }
+          ]
+        },
+        vocab: [
+          { it: "die Ausrede", plural: "die Ausreden", ex: "Das ist doch nur eine Ausrede." },
+          { it: "die Andeutung", plural: "die Andeutungen", ex: "Er hat eine Andeutung gemacht." },
+          { it: "der Tonfall", plural: "die Tonfälle", ex: "Ihr Tonfall war unfreundlich." },
+          { it: "die Floskel", plural: "die Floskeln", ex: "Das ist nur eine höfliche Floskel." },
+          { it: "das Missverständnis", plural: "die Missverständnisse", ex: "Das war ein Missverständnis." },
+          { it: "die Umgangssprache", plural: "-", ex: "In der Umgangssprache sagt man das anders." },
+          { it: "quatschen", ex: "Wir haben stundenlang gequatscht." },
+          { it: "sich verabreden", ex: "Wir haben uns fürs Kino verabredet." },
+          { it: "nachfragen", ex: "Ich frage morgen noch mal nach." },
+          { it: "eigentlich", ex: "Eigentlich habe ich keine Zeit." },
+          { it: "sowieso", ex: "Ich gehe sowieso einkaufen." },
+          { it: "halt", ex: "Das ist halt so." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["mal"] },
+          { t: "fill", a: ["halt", "eben"] },
+          {
+            t: "cloze",
+            text: "Kommst du heute mit ins Kino? Ich weiß nicht, ich bin {{1}} ziemlich müde. Ach, komm {{2}} mit, der Film ist {{3}} super!",
+            gaps: [["eigentlich"], ["doch"], ["echt", "wirklich"]]
+          },
+          { t: "multi", a: [0, 1] },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Komm doch mit, du gehst sowieso in die Stadt",
+              "Komm doch mit, du gehst ja sowieso in die Stadt",
+              "Komm doch mit, du gehst doch sowieso in die Stadt",
+              "Komm mit, du gehst sowieso in die Stadt",
+              "Komm mit, du gehst ja sowieso in die Stadt",
+              "Komm mit, du gehst doch sowieso in die Stadt"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Na, wie war es denn gestern? Ach, eigentlich ganz gut. Der Film war halt ein bisschen lang, aber sonst echt super."
+          },
+          { t: "speak", it: "Komm doch einfach mit, das wird bestimmt lustig!" }
+        ]
+      },
+      {
+        id: "c1-u03-l3",
+        tags: ["g-konnektoren", "g-es"],
+        cefr: "C1",
+        titleIt: "Kohäsion: darauf, dass ...",
+        grammar: {
+          examples: [
+            { it: "Ich freue mich darauf, dass du kommst." },
+            { it: "Es ist wichtig, dass alle pünktlich sind." },
+            { it: "Wir haben uns darauf geeinigt, den Termin zu verschieben." },
+            { it: "Er besteht darauf, dass wir bleiben." },
+            { it: "Dieser Punkt ist entscheidend, deshalb möchte ich näher darauf eingehen." },
+            { it: "Darüber hinaus gibt es weitere Probleme." }
+          ]
+        },
+        vocab: [
+          { it: "der Zusammenhang", plural: "die Zusammenhänge", ex: "In diesem Zusammenhang möchte ich etwas ergänzen." },
+          { it: "die Einleitung", plural: "die Einleitungen", ex: "In der Einleitung nennt die Autorin das Thema." },
+          { it: "der Schluss", plural: "die Schlüsse", ex: "Am Schluss fasst er alles zusammen." },
+          { it: "der Absatz", plural: "die Absätze", ex: "Lesen Sie bitte den zweiten Absatz." },
+          { it: "der Bezug", plural: "die Bezüge", ex: "Mit Bezug auf Ihre Anfrage sende ich Ihnen das Angebot." },
+          { it: "die Gliederung", plural: "die Gliederungen", ex: "Die Gliederung des Textes ist klar." },
+          { it: "sich einigen", ex: "Wir haben uns auf einen Termin geeinigt." },
+          { it: "bestehen", ex: "Sie besteht auf einer Antwort." },
+          { it: "eingehen", ex: "Auf diese Frage gehe ich später ein." },
+          { it: "hinweisen", ex: "Ich möchte darauf hinweisen, dass die Frist bald endet." },
+          { it: "darüber hinaus", ex: "Darüber hinaus gibt es weitere Probleme." },
+          { it: "schließlich", ex: "Schließlich haben wir doch eine Lösung gefunden." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["darauf"] },
+          { t: "fill", a: ["ein"] },
+          {
+            t: "cloze",
+            text: "{{1}} möchte ich das Problem beschreiben. {{2}} nenne ich mögliche Lösungen, und {{3}} ziehe ich ein Fazit.",
+            gaps: [["Zuerst", "Zunächst", "Erstens"], ["Danach", "Dann", "Anschließend", "Zweitens"], ["schließlich", "abschließend"]]
+          },
+          {
+            t: "match",
+            pairs: [{ it: "die Einleitung" }, { it: "der Absatz" }, { it: "der Zusammenhang" }, { it: "die Gliederung" }]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Er besteht darauf, dass alle an der Besprechung teilnehmen",
+              "Er besteht darauf, dass alle an der Sitzung teilnehmen"
+            ]
+          },
+          {
+            t: "listen",
+            it: "In meinem Vortrag gehe ich zuerst auf die Ursachen ein. Darüber hinaus möchte ich darauf hinweisen, dass es bereits erste Lösungen gibt. Schließlich fasse ich alles kurz zusammen."
+          },
+          { t: "speak", it: "Ich möchte darauf hinweisen, dass die Frist morgen endet." }
+        ]
+      }
+    ],
+    test: {
+      id: "c1-u03-test",
+      tags: ["g-werden", "g-funktionsverbgefuege", "g-nominalstil"],
+      cefr: "C1",
+      titleIt: "Test: Register und Textaufbau",
+      exercises: [
+        { t: "fill", a: ["geworden"] },
+        { t: "fill", a: ["Kraft"] },
+        { t: "fill", a: ["erfolgt"] },
+        { t: "fill", a: ["treffen"] },
+        { t: "fill", a: ["darauf"] },
+        { t: "fill", a: ["Nach"] },
+        { t: "mcq", a: 0 },
+        { t: "mcq", a: 0 },
+        { t: "mcq", a: 0 },
+        { t: "mcq", a: 0 },
+        {
+          t: "trans",
+          dir: "toIt",
+          a: [
+              "Wegen des starken Regens wurde das Konzert abgesagt",
+              "Aufgrund des starken Regens wurde das Konzert abgesagt",
+              "Das Konzert wurde wegen des starken Regens abgesagt",
+              "Das Konzert wurde aufgrund des starken Regens abgesagt"
+            ]
+        },
+        { t: "speak", it: "Nach Abschluss der Arbeiten wird die Straße wieder freigegeben." }
+      ]
+    }
   }
 ]);
