@@ -279,7 +279,7 @@ fissa cosa ogni unità presuppone). `c` e `d` sono `ok` fra loro. `e` è `seq` p
 - [?] T5.14 | F5 | (Q: vedi Q10) Nakładki fr+pl delle 2 prove, D8 | 3h | verify: `npm run check:porting -- exam --stage fr,pl` (rosso) | integrazione | dip: T5.07-T5.12 | par: ok | rollback: revert | R20, R21
 - [x] T5.15 | F5 | Audio Hören (due voci) | 0,5h | verify: `npm run check:porting -- exam --stage audio` (rosso) | integrazione | dip: T5.08, T5.11 | par: seq | rollback: revert + `audio:prune` | R22
 - [x] T5.16 | F5 | Rimozione del seme T1.83 e dei relativi mp3 | 0,25h | verify: `npm run audio:prune` riporta 0 orfani dopo `--apply` | integrazione | dip: T5.15 | par: seq | rollback: revert | R22
-- [ ] T5.17 | F5 | DOM: `cils.spec.js`, `cils-lettura.spec.js` sulle prove reali | 1h | verify: `npx playwright test tests/dom/cils*.spec.js` (rosso dopo T5.16) | e2e | dip: T5.16 | par: seq | rollback: revert | R23
+- [x] T5.17 | F5 | DOM: `cils.spec.js`, `cils-lettura.spec.js` sulle prove reali | 1h | verify: `npx playwright test tests/dom/cils*.spec.js` (rosso dopo T5.16) | e2e | dip: T5.16 | par: seq | rollback: revert | R23
 - [ ] T5.18 | F5 | Click-through completo di una prova (ogni controllo azionato, esito registrato) e `a11y-gate` sulla vista | 1h | verify: elenco controllo → esito nel report di fase, `a11y-gate` esce 0 | e2e | dip: T5.17 | par: seq | rollback: - | R23
 - [ ] T5.19 | F5 | `CLAUDE.md` § Produkcje egzaminacyjne allineata al formato Goethe | 0,5h | verify: `grep -c "CILS B1 Cittadinanza" CLAUDE.md` = 0 (rosso) | - | dip: T5.18 | par: ok | rollback: revert | R33
 - [ ] T5.20 | F5 | Chiusura F5: gate di fase | 0,5h | verify: `npm run test:all` esce 0 | e2e | dip: T5.01-T5.19 | par: seq | rollback: - | R31
