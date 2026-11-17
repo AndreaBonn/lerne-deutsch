@@ -1,0 +1,53 @@
+{
+  "bundleHash": "a53e0cc10b5c2e1d9aee05453bb9298a660770c115892d97ad59a6025118946b",
+  "findings": [
+    {
+      "kind": "traduzione",
+      "msg": "«Sie» può indicare una donna o più persone, mentre «przeczytał» indica un uomo. Tradurre per esempio «Pewnie już przeczytała wiadomość» oppure esplicitare il plurale.",
+      "path": "merged.lessons[0].grammar.examples[3].tr"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "La traduzione attribuisce il messaggio a un uomo, ma «Sie» indica qui una donna o più persone. Usare per esempio «Pewnie już przeczytała wiadomość».",
+      "path": "merged.lessons[0].exercises[7].tr"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La presenza di sein, haben o di un infinito passato non rende automaticamente soggettivo un modale: «Er muss zu Hause sein» può esprimere un obbligo e «Du musst bis Freitag angekommen sein» una scadenza. Distinguere i significati in base al contesto e includere anche usi soggettivi con verbi di azione, come «Er muss schlafen».",
+      "path": "merged.lessons[1].theory[0].p"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "L'infinito passato e sein non indicano quasi sempre un significato soggettivo, né un verbo di azione al presente indica necessariamente un ordine: «Er muss schlafen» può essere una deduzione. Presentare il contesto come criterio decisivo e aggiungere esempi contrastivi.",
+      "path": "merged.lessons[1].theory[4].tip"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Czyżbyś znowu zapomniał klucza?» aggiunge «di nuovo», assente nel tedesco. Eliminare «znowu» dalla traduzione.",
+      "path": "merged.lessons[2].grammar.examples[5].tr"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Nichts gewusst haben» riferisce la mancata conoscenza al passato; «nic o tym nie wie» la colloca nel presente. Usare «twierdzi, że nic o tym nie wiedział».",
+      "path": "merged.test.exercises[6].tr"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Werden + infinito + schon» presenta un ordine che non corrisponde all'esempio, dove schon precede l'infinito. Scrivere «werden + schon + bezokolicznik».",
+      "path": "merged.lessons[0].grammar.table.rows[3]"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Il termine con «bis» non esclude una supposizione: «Bis morgen wird er wohl angekommen sein» può essere una previsione incerta. Precisare che è il contesto a distinguere previsione, supposizione e impegno.",
+      "path": "merged.lessons[0].theory[1].p"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Abfahren» non seleziona sein semplicemente perché è un verbo di movimento: l'ausiliare dipende anche dall'uso. Precisare che qui è intransitivo e indica la partenza del treno.",
+      "path": "merged.lessons[0].exercises[9].why"
+    }
+  ],
+  "lang": "pl",
+  "unit": "c1-u04",
+  "verdict": "fail"
+}

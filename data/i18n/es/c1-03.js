@@ -6,8 +6,8 @@
    ============================================================ */
 LINGUAI.addStrings("es", {
   "unit:c1-u05": {
-    title: "Trabajo terminado",
-    grammarNote: "Participio I y II como atributo (atributo ampliado con moderación; el tipo completo y el Gerundivum son del C2) · nominalización en lugar de la subordinada (nach Abschluss, wegen, bei, trotz, zur, infolge) · casos en que la subordinada debe quedarse (ningún sustantivo adecuado, varios sujetos, matiz modal, legibilidad)"
+    title: "Tras concluir el trabajo",
+    grammarNote: "Participio I y II como atributo (atributo ampliado con moderación; el tipo completo y el Gerundivum son del C2) · nominalización en lugar de la subordinada (nach Abschluss, wegen, bei, trotz, zur, infolge) · casos en que suele convenir mantener la subordinada (ningún sustantivo adecuado, varios sujetos, matiz modal, legibilidad)"
   },
   "lesson:c1-u05-l1": {
     theme: "Actas, informes y textos académicos",
@@ -21,11 +21,11 @@ LINGUAI.addStrings("es", {
     theory: [
       {
         h: "El participio delante del sustantivo",
-        p: "En los textos formales una oración de relativo se puede comprimir en un participio colocado delante del sustantivo, que toma la terminación de un adjetivo. El <strong>participio I</strong> (infinitivo + <em>-d</em>) es activo y simultáneo: <em>die steigenden Kosten</em> = <em>die Kosten, die steigen</em>. El <strong>participio II</strong> de un verbo transitivo es pasivo y terminado: <em>die geprüften Unterlagen</em> = <em>die Unterlagen, die geprüft wurden</em>. En cambio, el participio II de un verbo intransitivo (con <em>sein</em>) es activo y terminado: <em>die gestiegenen Kosten</em> = <em>die Kosten, die gestiegen sind</em>."
+        p: "En los textos formales una oración de relativo se puede comprimir en un participio colocado delante del sustantivo, que toma la terminación de un adjetivo. El <strong>participio I</strong> (infinitivo + <em>-d</em>) es activo y simultáneo: <em>die steigenden Kosten</em> = <em>die Kosten, die steigen</em>. El <strong>participio II</strong> de un verbo transitivo es pasivo y suele presentar la acción como completada, aunque el valor temporal depende del verbo y del contexto (<em>die gerade bearbeiteten Anträge</em> puede describir una tramitación en curso): <em>die geprüften Unterlagen</em> = <em>die Unterlagen, die geprüft wurden</em>. En cambio, el participio II de un verbo intransitivo (con <em>sein</em>) es activo y terminado: <em>die gestiegenen Kosten</em> = <em>die Kosten, die gestiegen sind</em>."
       },
       {
         h: "El atributo ampliado, con moderación",
-        p: "Entre el artículo y el sustantivo también pueden ir complementos, pero el participio queda siempre <strong>justo antes del sustantivo</strong>: <em>die im letzten Quartal erzielten Umsätze</em>. En las actas y los informes basta uno o dos complementos; más allá, el lector pierde el hilo y lo mejor es la oración de relativo. El tipo con <em>zu</em> (<em>die zu prüfenden Unterlagen</em>) y las construcciones más largas pertenecen al C2."
+        p: "Entre el artículo y el sustantivo también pueden ir complementos, y en el modelo que ilustramos el participio queda <strong>justo antes del sustantivo</strong>: <em>die im letzten Quartal erzielten Umsätze</em>. No es un vínculo absoluto: pueden seguirle otros atributos (<em>die geprüften und freigegebenen Unterlagen</em>). En las actas y los informes basta uno o dos complementos; más allá, el lector pierde el hilo y lo mejor es la oración de relativo. El tipo con <em>zu</em> (<em>die zu prüfenden Unterlagen</em>) y las construcciones más largas pertenecen al C2."
       },
       {
         contrast: "El español pone el participio <strong>detrás</strong> del sustantivo y el complemento lo sigue: <em>los resultados obtenidos en el segundo trimestre</em>, <em>los datos recogidos por la oficina</em>. En alemán todo lo que en español iría detrás del participio pasa <strong>delante</strong> del sustantivo, entre el artículo y el participio: <em>die vom Amt erhobenen Daten</em>. El participio de presente español casi no existe como forma viva (existen <em>creciente</em>, <em>vigente</em>, <em>siguiente</em>, pero en general se usa una relativa: <em>los costes que aumentan</em>), mientras que <em>steigend, laufend, vorliegend</em> son corrientes en la lengua escrita alemana."
@@ -34,17 +34,17 @@ LINGUAI.addStrings("es", {
         trap: "<em>die prüfenden Unterlagen</em> no son «los documentos examinados»: son documentos que <em>examinan</em> algo. Para el sentido pasivo hace falta el participio II, <em>die geprüften Unterlagen</em>. Y no confundas los dos tiempos: <em>die steigenden Kosten</em> siguen aumentando, <em>die gestiegenen Kosten</em> ya han aumentado. Después, la terminación: tras <em>die</em> en plural es <em>-en</em>, así que <em>die geprüften Unterlagen</em>, nunca <em>die geprüfte Unterlagen</em> (en español el participio concuerda con el sustantivo en género y número, <em>los documentos revisados</em>; en alemán la concordancia está en la terminación de caso)."
       },
       {
-        tip: "Para entender un participio, o para elegirlo, deshazlo en una oración de relativo: si el verbo de la relativa está en presente activo (<em>die steigen</em>) hace falta el participio I; si es una pasiva (<em>die geprüft wurden</em>) o un perfecto con <em>sein</em> (<em>die gestiegen sind</em>) hace falta el participio II."
+        tip: "Para entender un participio, o para elegirlo, deshazlo en una oración de relativo: si el verbo de la relativa está en presente activo (<em>die steigen</em>) hace falta el participio I; si es una pasiva, también en presente (<em>die gerade bearbeitet werden</em> → <em>die gerade bearbeiteten Anträge</em>), o una pasiva de pasado (<em>die geprüft wurden</em>), o un perfecto con <em>sein</em> (<em>die gestiegen sind</em>), hace falta el participio II. Cuenta también la diátesis, no solo el tiempo."
       }
     ],
     grammar: {
       title: "Participio I y II como atributo",
-      note: "<b>Participio I</b> = infinitivo + <i>-d</i>: activo, simultáneo. <b>Participio II</b>: pasivo y terminado (verbos transitivos), activo y terminado (intransitivos con <i>sein</i>). Siempre delante del sustantivo, con la terminación del adjetivo; los complementos van entre el artículo y el participio.",
+      note: "<b>Participio I</b> = infinitivo + <i>-d</i>: activo, simultáneo. <b>Participio II</b>: pasivo (verbos transitivos; suele indicar acción completada, pero el valor temporal depende del verbo y del contexto), activo y terminado (intransitivos con <i>sein</i>). Delante del sustantivo, con la terminación del adjetivo; los complementos van entre el artículo y el participio.",
       table: {
         head: ["participio", "sentido", "relativa correspondiente", "ejemplo"],
         rows: [
           ["participio I", "activo, simultáneo", "die Kosten, die steigen", "die steigenden Kosten"],
-          ["participio II (transitivo)", "pasivo, terminado", "die Unterlagen, die geprüft wurden", "die geprüften Unterlagen"],
+          ["participio II (transitivo)", "pasivo, por lo general completado", "die Unterlagen, die geprüft wurden", "die geprüften Unterlagen"],
           ["participio II (intransitivo)", "activo, terminado", "die Kosten, die gestiegen sind", "die gestiegenen Kosten"],
           ["atributo ampliado", "complemento delante del participio", "die Umsätze, die im Quartal erzielt wurden", "die im Quartal erzielten Umsätze"]
         ]
@@ -52,8 +52,8 @@ LINGUAI.addStrings("es", {
       examples: [
         { tr: "Los costes energéticos en aumento pesan sobre las familias.", note: "participio I: el aumento está en curso" },
         { tr: "Los costes aumentados se explican en el informe.", note: "participio II de verbo intransitivo: activo y terminado" },
-        { tr: "Los documentos verificados se adjuntan al expediente.", note: "participio II transitivo: pasivo, «han sido verificados»" },
-        { tr: "Los miembros que participan en la sesión han aprobado la solicitud.", note: "participio I con complemento: an der Sitzung teilnehmenden" },
+        { tr: "Los documentos verificados se adjuntan al expediente.", note: "participio II transitivo: pasivo, normalmente «han sido verificados»" },
+        { tr: "Los miembros que participaban en la sesión aprobaron la solicitud.", note: "participio I con complemento: an der Sitzung teilnehmenden" },
         { tr: "El presupuesto aprobado por el consejo de administración entra en vigor en enero.", note: "vom Vorstand verabschiedete: el complemento agente va antes del participio" },
         { tr: "Los ingresos obtenidos en el último trimestre fueron superiores a lo esperado.", note: "atributo ampliado breve: im letzten Quartal erzielten" }
       ]
@@ -98,7 +98,7 @@ LINGUAI.addStrings("es", {
           "im vierten Quartal erzielte",
           "erzielten im vierten Quartal"
         ],
-        why: "El participio va justo delante del sustantivo y tras <i>die</i> en plural toma <b>-en</b>: <i>die im vierten Quartal erzielten Umsätze</i>. <i>erzielte</i> tiene la terminación equivocada; en <i>erzielten im vierten Quartal</i> el complemento va detrás del participio, un orden posible en español pero no en alemán."
+        why: "En este modelo el participio va justo delante del sustantivo y tras <i>die</i> en plural toma <b>-en</b>: <i>die im vierten Quartal erzielten Umsätze</i>. <i>erzielte</i> tiene la terminación equivocada; en <i>erzielten im vierten Quartal</i> el complemento va detrás del participio, un orden posible en español pero no en alemán."
       },
       {
         q: "Completa con el participio II de prüfen y la terminación correcta: «Die vom Ausschuss ___ Unterlagen werden archiviert.»",
@@ -123,7 +123,7 @@ LINGUAI.addStrings("es", {
           "Die einreichenden Unterlagen sind vollständig.",
           "Die eingereichte Unterlagen sind vollständig."
         ],
-        why: "Las dos primeras son correctas: participio I activo (los miembros <i>que participan</i>) y participio II pasivo (los documentos <i>que han sido presentados</i>). <i>einreichenden</i> daría a los documentos un papel activo, y en <i>eingereichte</i> falta la <b>-n</b> después de <i>die</i> en plural."
+        why: "Las dos primeras son correctas: participio I activo (los miembros <i>que participaban</i>) y participio II pasivo (los documentos <i>que han sido presentados</i>). <i>einreichenden</i> daría a los documentos un papel activo, y en <i>eingereichte</i> falta la <b>-n</b> después de <i>die</i> en plural."
       },
       {
         q: "Ordena las palabras de la frase de un acta.",
@@ -156,14 +156,14 @@ LINGUAI.addStrings("es", {
     theory: [
       {
         h: "De la subordinada al sustantivo",
-        p: "En los textos formales una subordinada se puede comprimir: el verbo se convierte en sustantivo (<em>abschließen</em> → <em>der Abschluss</em>), la conjunción se convierte en preposición, y el sujeto y el objeto del verbo pasan a un genitivo. <em>Nachdem die Prüfung abgeschlossen ist, ...</em> → <em>Nach Abschluss der Prüfung ...</em>. La preposición depende de la <strong>relación lógica</strong>: causa (<em>weil</em> → <em>wegen, aufgrund, infolge</em> + genitivo), concesión (<em>obwohl</em> → <em>trotz, ungeachtet</em> + genitivo), condición (<em>wenn</em> → <em>bei</em> + dativo), tiempo (<em>nachdem</em> → <em>nach</em> + dativo), finalidad (<em>um ... zu</em> → <em>zu</em> + dativo)."
+        p: "En los textos formales una subordinada se puede comprimir: el verbo se convierte en sustantivo (<em>abschließen</em> → <em>der Abschluss</em>), la conjunción se convierte en preposición, y el sujeto o el objeto del verbo pueden pasar a un genitivo, según el sustantivo y el contexto (a veces hace falta un complemento preposicional: <em>der Bedarf an Fachkräften</em>). <em>Nachdem die Prüfung abgeschlossen ist, ...</em> → <em>Nach Abschluss der Prüfung ...</em>. La preposición depende de la <strong>relación lógica</strong>: causa (<em>weil</em> → <em>wegen, aufgrund, infolge</em> + genitivo), concesión (<em>obwohl</em> → <em>trotz, ungeachtet</em> + genitivo), condición (<em>wenn</em> → <em>bei</em> + dativo), tiempo (<em>nachdem</em> → <em>nach</em> + dativo), finalidad (<em>um ... zu</em> → <em>zu</em> + dativo)."
       },
       {
         h: "Qué se pierde",
         p: "El grupo nominal es compacto pero más pobre: desaparecen el tiempo verbal, el modo y a menudo quién actúa. <em>Nach Abschluss der Prüfung</em> no dice quién ha concluido ni si se habla del pasado o del futuro; lo deduces del contexto. Por eso funciona bien cuando el sujeto y el tiempo son obvios, y mal cuando no lo son (véase la lección 3)."
       },
       {
-        contrast: "El español también nominaliza (<em>tras la conclusión de los trabajos</em>, <em>en caso de necesidad</em>, <em>para la aclaración de cuestiones pendientes</em>), pero puede usar el infinitivo o el gerundio (<em>tras concluir</em>, <em>al concluir</em>), que en alemán no existen. Además, el español une el sustantivo con su complemento mediante <em>de</em> (<em>la aclaración de cuestiones pendientes</em>), mientras que en alemán lo que sigue al sustantivo es un <strong>genitivo sin preposición</strong> (<em>die Klärung offener Fragen</em>), y las preposiciones de causa y concesión rigen el genitivo, con las terminaciones que de ello se derivan: <em>offener Fragen</em> sin artículo, <em>der gestiegenen Preise</em> con artículo. También cambia la regencia: donde el español dice <em>a pesar de</em>, <em>a causa de</em> o <em>a raíz de</em> sin más, el alemán exige elegir entre genitivo y dativo."
+        contrast: "El español también nominaliza (<em>tras la conclusión de los trabajos</em>, <em>en caso de necesidad</em>, <em>para la aclaración de cuestiones pendientes</em>), pero puede usar además el infinitivo o el gerundio (<em>tras concluir</em>, <em>al concluir</em>). El alemán tiene también equivalentes compactos, aunque no idénticos: <em>nach Abschluss</em>, <em>beim Abschließen</em> (infinitivo nominalizado) y el participio de presente en función de atributo. Además, el español une el sustantivo con su complemento mediante <em>de</em> (<em>la aclaración de cuestiones pendientes</em>), mientras que en alemán lo que sigue al sustantivo suele ser un <strong>genitivo sin preposición</strong> (<em>die Klärung offener Fragen</em>), aunque no siempre: hay regencias con preposición (<em>der Bedarf an Fachkräften</em>). Las preposiciones de causa y concesión rigen el genitivo, y las preposiciones de causa y concesión rigen el genitivo, con las terminaciones que de ello se derivan: <em>offener Fragen</em> sin artículo, <em>der gestiegenen Preise</em> con artículo. También cambia la regencia: donde el español dice <em>a pesar de</em>, <em>a causa de</em> o <em>a raíz de</em> sin más, el alemán exige elegir entre genitivo y dativo."
       },
       {
         trap: "Una preposición equivocada cambia la relación lógica: <em>Nach mehrfacher Mahnung blieb die Zahlung aus</em> dice que el pago falta <em>después de</em> los recordatorios, mientras que <em>Trotz mehrfacher Mahnung</em> dice que falta <em>a pesar de</em> los recordatorios. Cuidado también con los casos: <em>infolge</em> y <em>trotz</em> piden el genitivo (<em>Infolge der gestiegenen Preise</em>), no el dativo."
@@ -174,7 +174,7 @@ LINGUAI.addStrings("es", {
     ],
     grammar: {
       title: "Nominalización en lugar de la subordinada",
-      note: "El verbo se convierte en sustantivo, la conjunción en preposición: <b>nach, bei, zu</b> + dativo; <b>wegen, aufgrund, infolge, trotz</b> + genitivo. El sujeto y el objeto del verbo pasan a un genitivo.",
+      note: "El verbo se convierte en sustantivo, la conjunción en preposición: <b>nach, bei, zu</b> + dativo; <b>wegen, aufgrund, infolge, trotz</b> + genitivo. El sujeto o el objeto del verbo pueden pasar a un genitivo, pero depende del sustantivo y del contexto (a veces hace falta una preposición, como en <i>der Bedarf an Fachkräften</i>) y la relación puede resultar ambigua.",
       table: {
         head: ["subordinada", "grupo nominal", "ejemplo"],
         rows: [
@@ -257,7 +257,7 @@ LINGUAI.addStrings("es", {
           "a raíz de, como consecuencia de",
           "a pesar de",
           "en caso necesario",
-          "a la luz de, dado que"
+          "ante, a la vista de"
         ]
       },
       {
@@ -291,17 +291,17 @@ LINGUAI.addStrings("es", {
     theory: [
       {
         h: "Los cuatro casos en que la subordinada se queda",
-        p: "La forma compacta no siempre es la mejor. La subordinada es preferible cuando: (1) <strong>no hay un sustantivo adecuado</strong> o el sustantivo suena poco natural; (2) hay <strong>varios sujetos</strong> o varios predicados, y el grupo nominal ocultaría quién hace qué: <em>weil der Vorsitzende erkrankt war und die Referentin im Ausland festsaß</em>; (3) hace falta un <strong>matiz modal</strong> o de probabilidad (<em>sollte, könnte, offenbar, nur dann ..., wenn</em>), que un sustantivo no expresa; (4) la <strong>legibilidad</strong> sufre, por ejemplo con varios genitivos y complementos seguidos."
+        p: "La forma compacta no siempre es la mejor. La subordinada es preferible cuando: (1) <strong>no hay un sustantivo adecuado</strong> o el sustantivo suena poco natural; (2) hay <strong>varios sujetos</strong> o varios predicados, y el grupo nominal ocultaría quién hace qué: <em>weil der Vorsitzende erkrankt war und die Referentin im Ausland festsaß</em>; (3) hace falta un <strong>matiz modal</strong> o de probabilidad (<em>sollte, könnte, offenbar, nur dann ..., wenn</em>), que un sustantivo expresa con dificultad; (4) la <strong>legibilidad</strong> sufre, por ejemplo con varios genitivos y complementos seguidos."
       },
       {
         h: "Cómo elegir",
         p: "Antes de nominalizar hazte cuatro preguntas. ¿Quién actúa, y lo dice el sustantivo? ¿Existe un sustantivo natural (<em>Abschluss, Klärung</em>)? ¿Tengo que mantener un tiempo o un modo? ¿El lector lo entiende a la primera lectura? Si respondes que sí a todas, la forma compacta funciona (<em>Nach Abschluss der Prüfung ...</em>); si no, la subordinada es más clara, y en los textos dirigidos a un público no especialista casi siempre lo es."
       },
       {
-        contrast: "El español dispone de recursos compactos que el alemán no tiene: <em>tras concluir</em>, <em>concluidos los trabajos</em>, <em>en caso de que la verificación se prolongara</em>. En alemán falta el gerundio y el infinitivo con <em>ohne zu</em> o <em>um ... zu</em> exige el mismo sujeto: cuando los sujetos son dos hace falta una subordinada con <em>dass</em> o <em>weil</em>. El español, además, tiene el subjuntivo para marcar la eventualidad (<em>si la verificación se prolongara</em>, <em>en caso de que cambien las condiciones</em>); el alemán lo expresa con <em>sollte</em> o <em>falls ... sollten</em>: <em>Sollte die Prüfung länger dauern, ...</em>, <em>falls sich die Bedingungen ändern sollten</em>."
+        contrast: "El español dispone de recursos compactos como <em>tras concluir</em> o <em>concluidos los trabajos</em>; el alemán tiene otros, no idénticos: <em>nach Abschluss der Arbeiten</em>, <em>ohne dass</em>, y no cuenta con el gerundio. Con <em>um ... zu</em> y <em>ohne ... zu</em> el sujeto implícito de la infinitiva depende de la construcción (normalmente coincide con el de la principal); cuando los sujetos son distintos suele hacer falta una subordinada con <em>dass</em>, <em>damit</em> o <em>weil</em>. El español, además, tiene el subjuntivo para marcar la eventualidad (<em>si la verificación se prolongara</em>); <em>en caso de que cambien las condiciones</em> es ya una subordinada, no una forma compacta. En alemán la eventualidad se expresa con <em>sollte</em> o <em>falls ... sollten</em>: <em>Sollte die Prüfung länger dauern, ...</em>, <em>falls sich die Bedingungen ändern sollten</em>."
       },
       {
-        trap: "No nominalices todo solo porque «suena formal»: el resultado es un alemán de oficina difícil de leer, y un sustantivo como <em>seitens der Teilnehmenden</em> esconde el sujeto. Y <em>sollte</em> en primera posición no es el «debería» de obligación: <em>Sollte die Prüfung länger dauern</em> significa «si la verificación llegara a prolongarse», una condición poco probable (el español no lo traduce con <em>debería</em>, sino con el subjuntivo o con <em>en caso de que</em>)."
+        trap: "No nominalices todo solo porque «suena formal»: el resultado es un alemán de oficina difícil de leer, y una construcción como <em>seitens der Teilnehmenden</em> (<em>seitens</em> es una preposición) explicita a los participantes, pero recarga la frase y cuesta legibilidad. Y <em>sollte</em> en primera posición no es el «debería» de obligación: <em>Sollte die Prüfung länger dauern</em> significa «si la verificación llegara a prolongarse», una condición hipotética, presentada con cautela (el español no lo traduce con <em>debería</em>, sino con el subjuntivo o con <em>en caso de que</em>)."
       },
       {
         tip: "Lee la frase en voz alta. Si en medio de un grupo nominal tienes que tomar aire, porque hay dos genitivos y un <em>durch</em>, pártela en una subordinada."
@@ -323,9 +323,9 @@ LINGUAI.addStrings("es", {
       examples: [
         { tr: "La sesión se aplazó porque el presidente estaba enfermo y la ponente estaba bloqueada en el extranjero.", note: "dos sujetos: la forma nominal ocultaría uno de los dos" },
         { tr: "El contrato se firmará solo cuando el consejo haya aprobado y la financiación esté asegurada.", note: "dos condiciones con verbos distintos: subordinada" },
-        { tr: "Si la verificación llegara a prolongarse, se aplazará la fecha.", note: "Sollte en primera posición: eventualidad poco probable" },
-        { tr: "La subvención caduca si las condiciones marco llegaran a cambiar.", note: "falls ... ändern sollten: matiz modal" },
-        { tr: "Los resultados son significativos solo si la muestra es representativa.", note: "nur dann ..., wenn: condición necesaria, no expresable con bei" },
+        { tr: "Si la verificación llegara a prolongarse, se aplazará la fecha.", note: "Sollte en primera posición: eventualidad hipotética, presentada con cautela" },
+        { tr: "La subvención deja de concederse si las condiciones marco llegaran a cambiar.", note: "falls ... ändern sollten: matiz modal" },
+        { tr: "Los resultados son significativos solo si la muestra es representativa.", note: "nur dann ..., wenn: condición necesaria; también puede conservarse en forma nominal (Nur bei repräsentativer Stichprobe ...), pero la subordinada la hace más explícita" },
         { tr: "La evaluación comenzó después de que los participantes habían rellenado el cuestionario.", note: "subordinada temporal en pluscuamperfecto: más legible que una cadena de genitivos" }
       ]
     },
@@ -337,7 +337,7 @@ LINGUAI.addStrings("es", {
       "el presidente (de una sesión)",
       "el solicitante",
       "dejar vencer, no respetar (un plazo)",
-      "caducar, dejar de aplicarse",
+      "dejar de concederse, quedar sin efecto",
       "aprobar, dar el consentimiento",
       "rechazar, denegar",
       "significativo, fiable",
@@ -356,11 +356,11 @@ LINGUAI.addStrings("es", {
       {
         q: "«Sollte die Prüfung länger dauern, wird der Termin verschoben.» ¿Qué se pierde con la versión nominal «Bei längerer Dauer der Prüfung wird der Termin verschoben»?",
         opts: [
-          "el matiz de eventualidad poco probable expresado por sollte",
+          "el matiz de eventualidad hipotética expresado por sollte",
           "el valor condicional de la frase",
           "el sujeto, porque Prüfung desaparece"
         ],
-        why: "<i>bei</i> mantiene la <b>condición</b>, y <i>Prüfung</i> sigue en el texto. Lo que se pierde es el matiz modal de <i>sollte</i> («si llegara a»), que un sustantivo no puede llevar."
+        why: "<i>bei</i> mantiene la <b>condición</b>, y <i>Prüfung</i> sigue en el texto. Lo que se pierde es el matiz modal de <i>sollte</i> («si llegara a»), que un sustantivo difícilmente puede llevar."
       },
       {
         q: "En un informe para un público no especialista, ¿qué formulación es la más legible?",
@@ -374,12 +374,12 @@ LINGUAI.addStrings("es", {
       {
         q: "Completa: «Die Ergebnisse sind nur dann aussagekräftig, ___ die Stichprobe repräsentativ ist.»",
         hint: "conjunción condicional",
-        why: "<b>wenn</b>: <i>nur dann ..., wenn</i> expresa una condición necesaria. Con un grupo nominal (<i>bei repräsentativer Stichprobe</i>) se pierde la fuerza de <i>nur dann</i>."
+        why: "<b>wenn</b>: <i>nur dann ..., wenn</i> expresa una condición necesaria. Un grupo nominal también puede conservar la condición (<i>Nur bei repräsentativer Stichprobe sind die Ergebnisse aussagekräftig</i>), pero la subordinada la hace más explícita."
       },
       {
         q: "Completa con el verbo modal: «Falls sich die Rahmenbedingungen ändern ___, entfällt die Förderung.»",
-        hint: "Konjunktiv II de un modal: eventualidad poco probable",
-        why: "<b>sollten</b>: <i>falls ... sollten</i> señala una eventualidad remota, el matiz que en forma nominal no se puede expresar."
+        hint: "Konjunktiv II de un modal: eventualidad hipotética",
+        why: "<b>sollten</b>: <i>falls ... sollten</i> señala una eventualidad hipotética, un matiz difícil de expresar en forma nominal."
       },
       {
         q: "Completa las dos condiciones de un contrato.",
@@ -417,7 +417,7 @@ LINGUAI.addStrings("es", {
   },
   "lesson:c1-u05-test": {
     theme: "Prueba",
-    title: "Test: Trabajo terminado",
+    title: "Test: Tras concluir el trabajo",
     objectives: [
       "comprobar la unidad y repasar las funciones de werden y el Futur de conjetura del nivel"
     ],
@@ -487,7 +487,7 @@ LINGUAI.addStrings("es", {
       {
         q: "Completa el comunicado con el participio II y la preposición.",
         tr: "Le informaremos a tiempo. Las medidas planificadas por nosotros solo serán efectivas tras la conclusión de la verificación.",
-        why: "<i>geplanten</i> (o <i>vorgesehenen</i>): participio II pasivo con <b>-en</b>. <i>nach</i> o <i>mit Abschluss der Prüfung</i>: tiempo con <i>nach</i> + dativo, o bien «con la conclusión»."
+        why: "<i>geplanten</i> (o <i>vorgesehenen</i>): participio II pasivo con <b>-en</b>. <i>nach</i>: tiempo con <i>nach</i> + dativo (<i>nach Abschluss der Prüfung</i>), «tras la conclusión»."
       },
       {
         q: "Traduce: «Las decisiones tomadas en la reunión se comunicarán tras la conclusión de la verificación.» (die Sitzung, die Entscheidung, mitteilen, der Abschluss, die Prüfung)",

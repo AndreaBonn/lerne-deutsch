@@ -53,7 +53,7 @@ LINGUAI.addStrings("it", {
         { tr: "I costi energetici in aumento gravano sulle famiglie.", note: "participio I: l'aumento è in corso" },
         { tr: "I costi aumentati sono illustrati nella relazione.", note: "participio II di verbo intransitivo: attivo e concluso" },
         { tr: "I documenti verificati sono allegati al fascicolo.", note: "participio II transitivo: passivo, «sono stati verificati»" },
-        { tr: "I membri che partecipano alla seduta hanno approvato la richiesta.", note: "participio I con complemento: an der Sitzung teilnehmenden" },
+        { tr: "I membri che partecipavano alla seduta hanno approvato la richiesta.", note: "participio I con complemento: an der Sitzung teilnehmenden; la seduta è passata, quindi in italiano l'imperfetto" },
         { tr: "Il bilancio approvato dal consiglio di amministrazione entra in vigore a gennaio.", note: "vom Vorstand verabschiedete: il complemento d'agente sta prima del participio" },
         { tr: "I ricavi ottenuti nell'ultimo trimestre sono stati superiori alle attese.", note: "attributo ampliato breve: im letzten Quartal erzielten" }
       ]
@@ -156,14 +156,14 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Dalla subordinata al nome",
-        p: "Nei testi formali una subordinata si può comprimere: il verbo diventa un nome (<em>abschließen</em> → <em>der Abschluss</em>), la congiunzione diventa una preposizione, soggetto e oggetto del verbo passano a un genitivo. <em>Nachdem die Prüfung abgeschlossen ist, ...</em> → <em>Nach Abschluss der Prüfung ...</em>. La preposizione dipende dal <strong>rapporto logico</strong>: causa (<em>weil</em> → <em>wegen, aufgrund, infolge</em> + genitivo), concessione (<em>obwohl</em> → <em>trotz, ungeachtet</em> + genitivo), condizione (<em>wenn</em> → <em>bei</em> + dativo), tempo (<em>nachdem</em> → <em>nach</em> + dativo), scopo (<em>um ... zu</em> → <em>zu</em> + dativo)."
+        p: "Nei testi formali una subordinata si può comprimere: il verbo diventa un nome (<em>abschließen</em> → <em>der Abschluss</em>), la congiunzione diventa una preposizione, e soggetto e oggetto del verbo possono diventare genitivi (<em>der Prüfung</em>), ma possono anche restare impliciti o passare a un complemento con preposizione (<em>durch</em>, <em>von</em>). <em>Nachdem die Prüfung abgeschlossen ist, ...</em> → <em>Nach Abschluss der Prüfung ...</em>. La preposizione dipende dal <strong>rapporto logico</strong>: causa (<em>weil</em> → <em>wegen, aufgrund, infolge</em> + genitivo), concessione (<em>obwohl</em> → <em>trotz, ungeachtet</em> + genitivo), condizione (<em>wenn</em> → <em>bei</em> + dativo), tempo (<em>nachdem</em> → <em>nach</em> + dativo), scopo (<em>um ... zu</em> → <em>zu</em> + dativo)."
       },
       {
         h: "Che cosa si perde",
         p: "Il gruppo nominale è compatto ma più povero: scompaiono il tempo verbale, il modo e spesso chi agisce. <em>Nach Abschluss der Prüfung</em> non dice chi ha concluso né se si parla del passato o del futuro, lo deduci dal contesto. Per questo funziona bene quando soggetto e tempo sono ovvi, e male quando non lo sono (vedi la lezione 3)."
       },
       {
-        contrast: "Anche l'italiano nominalizza (<em>a seguito della conclusione dei lavori</em>, <em>in caso di necessità</em>, <em>per il chiarimento di questioni aperte</em>), ma può usare anche l'infinito passato (<em>dopo aver concluso</em>), che il tedesco rende di solito con una subordinata (<em>nachdem er die Arbeit abgeschlossen hat</em>) o con un nome (<em>nach Abschluss der Arbeit</em>). In tedesco ciò che segue il nome è un <strong>genitivo senza preposizione</strong> (<em>die Klärung offener Fragen</em>) e le preposizioni di causa e concessione reggono il genitivo, con le desinenze che ne derivano: <em>offener Fragen</em> senza articolo, <em>der gestiegenen Preise</em> con l'articolo."
+        contrast: "Anche l'italiano nominalizza (<em>a seguito della conclusione dei lavori</em>, <em>in caso di necessità</em>, <em>per il chiarimento di questioni aperte</em>), ma può usare anche l'infinito passato (<em>dopo aver concluso</em>), che il tedesco rende di solito con una subordinata (<em>nachdem er die Arbeit abgeschlossen hat</em>) o con un nome (<em>nach Abschluss der Arbeit</em>). In tedesco ciò che segue il nome è di solito un <strong>genitivo senza preposizione</strong> (<em>die Klärung offener Fragen</em>) e le preposizioni di causa e concessione reggono il genitivo, con le desinenze che ne derivano: <em>offener Fragen</em> senza articolo, <em>der gestiegenen Preise</em> con l'articolo."
       },
       {
         trap: "Una preposizione sbagliata cambia il rapporto logico: <em>Nach mehrfacher Mahnung blieb die Zahlung aus</em> dice che il pagamento manca <em>dopo</em> i solleciti, mentre <em>Trotz mehrfacher Mahnung</em> dice che manca <em>nonostante</em> i solleciti. Attenzione anche ai casi: <em>infolge</em> e <em>trotz</em> vogliono il genitivo (<em>Infolge der gestiegenen Preise</em>), non il dativo."
@@ -174,7 +174,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Nominalizzazione al posto della subordinata",
-      note: "Il verbo diventa un nome, la congiunzione una preposizione: <b>nach, bei, zu</b> + dativo; <b>wegen, aufgrund, infolge, trotz</b> + genitivo. Soggetto e oggetto del verbo passano a un genitivo.",
+      note: "Il verbo diventa un nome, la congiunzione una preposizione: <b>nach, bei, zu</b> + dativo; <b>wegen, aufgrund, infolge, trotz</b> + genitivo. Soggetto e oggetto possono diventare genitivi, restare impliciti o passare a un complemento con preposizione (<i>durch, von</i>).",
       table: {
         head: ["subordinata", "gruppo nominale", "esempio"],
         rows: [
@@ -301,7 +301,7 @@ LINGUAI.addStrings("it", {
         contrast: "L'italiano ha strumenti compatti come <em>dopo aver concluso</em> o <em>a lavori ultimati</em>; il tedesco li rende con una subordinata (<em>nachdem ...</em>) o con un nome (<em>nach Abschluss der Arbeiten</em>), ma non ha il gerundio. Con <em>ohne zu</em> e <em>um ... zu</em> il soggetto dell'infinito di norma è quello della principale: quando i soggetti sono due serve una subordinata con <em>ohne dass</em> o <em>damit</em>. La sfumatura di <em>qualora ... dovesse</em> si rende con <em>Sollte die Prüfung länger dauern, ...</em> o <em>falls ... ändern sollten</em>."
       },
       {
-        trap: "Non nominalizzare tutto solo perché «suona formale»: il risultato è un tedesco da ufficio difficile da leggere, e un nome come <em>seitens der Teilnehmenden</em> nasconde il soggetto. E <em>sollte</em> in prima posizione non è «dovrebbe» di obbligo: <em>Sollte die Prüfung länger dauern</em> significa «se mai la verifica dovesse durare di più», una condizione ipotetica."
+        trap: "Non nominalizzare tutto solo perché «suona formale»: il risultato è un tedesco da ufficio difficile da leggere, e un'espressione come <em>seitens der Teilnehmenden</em> nasconde il soggetto. E <em>sollte</em> in prima posizione non è «dovrebbe» di obbligo: <em>Sollte die Prüfung länger dauern</em> significa «se mai la verifica dovesse durare di più», una condizione ipotetica."
       },
       {
         tip: "Leggi la frase ad alta voce. Se in mezzo a un gruppo nominale devi riprendere fiato, perché ci sono due genitivi e un <em>durch</em>, spezzala in una subordinata."
@@ -309,11 +309,11 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Forma compatta o subordinata",
-      note: "Forma compatta: stesso soggetto, nome naturale, tempo ovvio. Subordinata: più soggetti, nessun nome adatto, sfumatura modale, genitivi in fila. Per l'eventualità: <i>Sollte ..., falls ... sollten</i>.",
+      note: "Forma compatta: agente chiaro dal contesto, nome naturale, tempo ovvio. Subordinata: più soggetti, nessun nome adatto, sfumatura modale, genitivi in fila. Per l'eventualità: <i>Sollte ..., falls ... sollten</i>.",
       table: {
         head: ["situazione", "scelta", "esempio"],
         rows: [
-          ["stesso soggetto, nome naturale", "forma compatta", "Nach Abschluss der Prüfung ..."],
+          ["agente chiaro dal contesto, nome naturale", "forma compatta", "Nach Abschluss der Prüfung ..."],
           ["due soggetti o più predicati", "subordinata", "..., weil der Vorsitzende erkrankt war und die Referentin festsaß."],
           ["sfumatura modale o di probabilità", "subordinata con sollte", "Sollte die Prüfung länger dauern, ..."],
           ["più condizioni insieme", "subordinata", "..., wenn der Vorstand zugestimmt hat und die Finanzierung gesichert ist."],

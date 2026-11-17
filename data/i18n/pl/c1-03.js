@@ -21,7 +21,7 @@ LINGUAI.addStrings("pl", {
     theory: [
       {
         h: "Imiesłów przed rzeczownikiem",
-        p: "W tekstach oficjalnych zdanie względne można skrócić do imiesłowu stojącego przed rzeczownikiem, który przyjmuje końcówkę przymiotnika. <strong>Imiesłów I</strong> (bezokolicznik + <em>-d</em>) jest czynny i równoczesny: <em>die steigenden Kosten</em> = <em>die Kosten, die steigen</em>. <strong>Imiesłów II</strong> czasownika przechodniego jest bierny i zakończony: <em>die geprüften Unterlagen</em> = <em>die Unterlagen, die geprüft wurden</em>. Imiesłów II czasownika nieprzechodniego (z <em>sein</em>) jest natomiast czynny i zakończony: <em>die gestiegenen Kosten</em> = <em>die Kosten, die gestiegen sind</em>."
+        p: "W tekstach oficjalnych zdanie względne można skrócić do imiesłowu stojącego przed rzeczownikiem, który przyjmuje końcówkę przymiotnika. <strong>Imiesłów I</strong> (bezokolicznik + <em>-d</em>) jest czynny i równoczesny: <em>die steigenden Kosten</em> = <em>die Kosten, die steigen</em>. <strong>Imiesłów II</strong> czasownika przechodniego jest bierny i zwykle zakończony: <em>die geprüften Unterlagen</em> = <em>die Unterlagen, die geprüft wurden</em>. Wartość czasowa zależy jednak od czasownika i kontekstu: <em>die gerade bearbeiteten Anträge</em> to wnioski, które są właśnie rozpatrywane. Imiesłów II czasownika nieprzechodniego (z <em>sein</em>) jest natomiast czynny i zakończony: <em>die gestiegenen Kosten</em> = <em>die Kosten, die gestiegen sind</em>."
       },
       {
         h: "Rozbudowana przydawka, z umiarem",
@@ -34,24 +34,24 @@ LINGUAI.addStrings("pl", {
         trap: "<em>die prüfenden Unterlagen</em> nie znaczy „sprawdzone dokumenty”: to dokumenty, które coś <em>sprawdzają</em>. Do znaczenia biernego potrzebny jest imiesłów II, <em>die geprüften Unterlagen</em>. Nie myl też obu czasów: <em>die steigenden Kosten</em> nadal rosną, <em>die gestiegenen Kosten</em> już wzrosły. Pamiętaj o końcówce: polska końcówka przymiotnika zależy od rodzaju, liczby i przypadka, a niemiecka dodatkowo od rodzajnika, którego po polsku nie ma. Po <em>die</em> w liczbie mnogiej jest <em>-en</em>, więc <em>die geprüften Unterlagen</em>, nigdy <em>die geprüfte Unterlagen</em>."
       },
       {
-        tip: "Żeby zrozumieć imiesłów albo go wybrać, rozpisz go na zdanie względne: jeśli czasownik w zdaniu względnym stoi w czasie teraźniejszym czynnym (<em>die steigen</em>), potrzebny jest imiesłów I; jeśli to strona bierna (<em>die geprüft wurden</em>) albo Perfekt z <em>sein</em> (<em>die gestiegen sind</em>), potrzebny jest imiesłów II."
+        tip: "Żeby zrozumieć imiesłów albo go wybrać, rozpisz go na zdanie względne: jeśli czasownik w zdaniu względnym stoi w czasie teraźniejszym czynnym (<em>die steigen</em>), potrzebny jest imiesłów I; jeśli to strona bierna (<em>die geprüft wurden</em>) albo Perfekt z <em>sein</em> (<em>die gestiegen sind</em>), potrzebny jest imiesłów II. Czy czynność jest zakończona, czy trwa, rozstrzyga czasownik i kontekst."
       }
     ],
     grammar: {
       title: "Imiesłów I i II jako przydawka",
-      note: "<b>Imiesłów I</b> = bezokolicznik + <i>-d</i>: czynny, równoczesny. <b>Imiesłów II</b>: bierny i zakończony (czasowniki przechodnie), czynny i zakończony (nieprzechodnie z <i>sein</i>). Zawsze przed rzeczownikiem, z końcówką przymiotnika; dopełnienia i okoliczniki stoją między rodzajnikiem a imiesłowem.",
+      note: "<b>Imiesłów I</b> = bezokolicznik + <i>-d</i>: czynny, równoczesny. <b>Imiesłów II</b>: bierny (czasowniki przechodnie), zwykle zakończony, ale wartość czasowa zależy od czasownika i kontekstu (<i>die gerade bearbeiteten Anträge</i>); czynny i zakończony (nieprzechodnie z <i>sein</i>). Zawsze przed rzeczownikiem, z końcówką przymiotnika; dopełnienia i okoliczniki stoją między rodzajnikiem a imiesłowem.",
       table: {
         head: ["imiesłów", "znaczenie", "odpowiadające zdanie względne", "przykład"],
         rows: [
           ["imiesłów I", "czynny, równoczesny", "die Kosten, die steigen", "die steigenden Kosten"],
-          ["imiesłów II (przechodni)", "bierny, zakończony", "die Unterlagen, die geprüft wurden", "die geprüften Unterlagen"],
+          ["imiesłów II (przechodni)", "bierny, zwykle zakończony", "die Unterlagen, die geprüft wurden", "die geprüften Unterlagen"],
           ["imiesłów II (nieprzechodni)", "czynny, zakończony", "die Kosten, die gestiegen sind", "die gestiegenen Kosten"],
           ["rozbudowana przydawka", "dopełnienie przed imiesłowem", "die Umsätze, die im Quartal erzielt wurden", "die im Quartal erzielten Umsätze"]
         ]
       },
       examples: [
         { tr: "Rosnące koszty energii obciążają gospodarstwa domowe.", note: "imiesłów I: wzrost trwa" },
-        { tr: "Koszty, które wzrosły, zostały omówione w sprawozdaniu.", note: "imiesłów II czasownika nieprzechodniego: czynny i zakończony" },
+        { tr: "Koszty, które wzrosły, są omawiane w sprawozdaniu.", note: "imiesłów II czasownika nieprzechodniego: czynny i zakończony" },
         { tr: "Sprawdzone dokumenty są dołączone do akt.", note: "imiesłów II przechodni: bierny, „zostały sprawdzone”" },
         { tr: "Członkowie uczestniczący w posiedzeniu przyjęli wniosek.", note: "imiesłów I z dopełnieniem: an der Sitzung teilnehmenden" },
         { tr: "Budżet przyjęty przez zarząd wchodzi w życie w styczniu.", note: "vom Vorstand verabschiedete: sprawca stoi przed imiesłowem" },
@@ -111,9 +111,9 @@ LINGUAI.addStrings("pl", {
         why: "<b>geltenden</b>: imiesłów I (czynny, równoczesny: „przepisy obowiązujące”), <b>-en</b> w dopełniaczu liczby mnogiej po <i>der</i>."
       },
       {
-        q: "Uzupełnij fragment raportu imiesłowem II i imiesłowem I.",
-        tr: "Środki przyjęte w zeszłym roku nie obniżyły stale rosnących kosztów.",
-        why: "<i>ergriffenen</i> (albo <i>getroffenen</i>): imiesłów II bierny, „środki, które zostały przyjęte”. <i>steigenden</i>: imiesłów I, bo wzrost nadal trwa. Oba przyjmują <b>-en</b> po <i>die</i> w liczbie mnogiej."
+        q: "Uzupełnij fragment raportu imiesłowem II od ergreifen (albo treffen) i imiesłowem I od steigen.",
+        tr: "Środki podjęte w zeszłym roku nie obniżyły stale rosnących kosztów.",
+        why: "<i>ergriffenen</i> (albo <i>getroffenen</i>): imiesłów II bierny, „środki, które zostały podjęte”. <i>steigenden</i>: imiesłów I, bo wzrost nadal trwa. Oba przyjmują <b>-en</b> po <i>die</i> w liczbie mnogiej."
       },
       {
         q: "W których zdaniach imiesłów jest użyty poprawnie jako przydawka? (dwie odpowiedzi)",
@@ -156,14 +156,14 @@ LINGUAI.addStrings("pl", {
     theory: [
       {
         h: "Od zdania podrzędnego do rzeczownika",
-        p: "W tekstach oficjalnych zdanie podrzędne można skrócić: czasownik zamienia się w rzeczownik (<em>abschließen</em> → <em>der Abschluss</em>), spójnik w przyimek, a podmiot i dopełnienie czasownika przechodzą do dopełniacza. <em>Nachdem die Prüfung abgeschlossen ist, ...</em> → <em>Nach Abschluss der Prüfung ...</em>. Przyimek zależy od <strong>relacji logicznej</strong>: przyczyna (<em>weil</em> → <em>wegen, aufgrund, infolge</em> + dopełniacz), przyzwolenie (<em>obwohl</em> → <em>trotz, ungeachtet</em> + dopełniacz), warunek (<em>wenn</em> → <em>bei</em> + celownik), czas (<em>nachdem</em> → <em>nach</em> + celownik), cel (<em>um ... zu</em> → <em>zu</em> + celownik)."
+        p: "W tekstach oficjalnych zdanie podrzędne można skrócić: czasownik zamienia się w rzeczownik (<em>abschließen</em> → <em>der Abschluss</em>), spójnik w przyimek, a podmiot albo dopełnienie czasownika może przejść do dopełniacza (<em>Abschluss der Prüfung</em>), ale bywa też wyrażone inaczej, na przykład przyimkiem (<em>Nach Abschluss der Prüfung durch den Gutachter</em>), albo pominięte. <em>Nachdem die Prüfung abgeschlossen ist, ...</em> → <em>Nach Abschluss der Prüfung ...</em>. Przyimek zależy od <strong>relacji logicznej</strong>: przyczyna (<em>weil</em> → <em>wegen, aufgrund, infolge</em> + dopełniacz), przyzwolenie (<em>obwohl</em> → <em>trotz, ungeachtet</em> + dopełniacz), warunek (<em>wenn</em> → <em>bei</em> + celownik), czas (<em>nachdem</em> → <em>nach</em> + celownik), cel (<em>um ... zu</em> → <em>zu</em> + celownik)."
       },
       {
         h: "Co się traci",
         p: "Grupa rzeczownikowa jest zwarta, ale uboższa: znikają czas, tryb i często wykonawca czynności. <em>Nach Abschluss der Prüfung</em> nie mówi, kto zakończył, ani czy chodzi o przeszłość, czy o przyszłość: trzeba to wywnioskować z kontekstu. Dlatego sprawdza się wtedy, gdy podmiot i czas są oczywiste, a gorzej, gdy nie są (zob. lekcja 3)."
       },
       {
-        contrast: "Polski też chętnie nominalizuje w stylu urzędowym (<em>po zakończeniu kontroli</em>, <em>w razie potrzeby</em>, <em>w celu wyjaśnienia kwestii spornych</em>, <em>w wyniku wzrostu cen</em>), a zależny rzeczownik też idzie do dopełniacza, więc <em>Abschluss der Prüfung</em> to niemal kalka. Różnica jest w przyimkach: po niemiecku trzeba dobrać go do przypadka (<em>nach, bei, zu</em> + Dativ; <em>wegen, trotz, infolge</em> + Genitiv), a polskie przyimki rządzą innymi przypadkami (<em>po</em> + miejscownik, <em>mimo, z powodu</em> + dopełniacz), i jeden polski przyimek nie ma jednego niemieckiego odpowiednika (<em>w razie</em> = <em>bei</em>, <em>w celu</em> = <em>zu</em>). Po polsku nie ma też rodzajników, więc końcówkę przymiotnika w dopełniaczu trzeba w niemieckim dobrać do ich obecności: <em>offener Fragen</em> bez rodzajnika, <em>der gestiegenen Preise</em> z rodzajnikiem."
+        contrast: "Polski też chętnie nominalizuje w stylu urzędowym (<em>po zakończeniu kontroli</em>, <em>w razie potrzeby</em>, <em>w celu wyjaśnienia otwartych kwestii</em>, <em>w wyniku wzrostu cen</em>), a zależny rzeczownik też idzie do dopełniacza, więc <em>Abschluss der Prüfung</em> to niemal kalka. Różnica jest w przyimkach: po niemiecku trzeba dobrać go do przypadka (<em>nach, bei, zu</em> + Dativ; <em>wegen, trotz, infolge</em> + Genitiv), a polskie przyimki rządzą innymi przypadkami (<em>po</em> + miejscownik, <em>mimo, z powodu</em> + dopełniacz), i jeden polski przyimek nie ma jednego niemieckiego odpowiednika (<em>w razie</em> = <em>bei</em>, <em>w celu</em> = <em>zu</em>). Po polsku nie ma też rodzajników, więc końcówkę przymiotnika w dopełniaczu trzeba w niemieckim dobrać do ich obecności: <em>offener Fragen</em> bez rodzajnika, <em>der gestiegenen Preise</em> z rodzajnikiem."
       },
       {
         trap: "Zły przyimek zmienia relację logiczną: <em>Nach mehrfacher Mahnung blieb die Zahlung aus</em> mówi, że płatności nie ma <em>po</em> ponagleniach (<em>po wielokrotnych ponagleniach</em>), a <em>Trotz mehrfacher Mahnung</em> mówi, że nie ma jej <em>mimo</em> ponagleń. Uważaj też na przypadki: <em>infolge</em> i <em>trotz</em> wymagają dopełniacza (<em>Infolge der gestiegenen Preise</em>), nie celownika."
@@ -174,7 +174,7 @@ LINGUAI.addStrings("pl", {
     ],
     grammar: {
       title: "Nominalizacja zamiast zdania podrzędnego",
-      note: "Czasownik staje się rzeczownikiem, spójnik przyimkiem: <b>nach, bei, zu</b> + celownik; <b>wegen, aufgrund, infolge, trotz</b> + dopełniacz. Podmiot i dopełnienie czasownika przechodzą do dopełniacza.",
+      note: "Czasownik staje się rzeczownikiem, spójnik przyimkiem: <b>nach, bei, zu</b> + celownik; <b>wegen, aufgrund, infolge, trotz</b> + dopełniacz. Podmiot albo dopełnienie czasownika często przechodzi do dopełniacza, ale bywa też wyrażone przyimkiem (<i>durch</i>, <i>von</i>) albo pominięte.",
       table: {
         head: ["zdanie podrzędne", "grupa rzeczownikowa", "przykład"],
         rows: [
@@ -190,7 +190,7 @@ LINGUAI.addStrings("pl", {
         { tr: "Z powodu opóźnienia dostawy termin trzeba było przesunąć.", note: "wegen + dopełniacz = weil" },
         { tr: "W razie potrzeby można zażądać dalszych dokumentów.", note: "bei + celownik = wenn man es braucht" },
         { tr: "Mimo wielokrotnych ponagleń płatność nie wpłynęła.", note: "trotz + dopełniacz; mehrfacher: dopełniacz rodzaju żeńskiego bez rodzajnika" },
-        { tr: "W celu wyjaśnienia kwestii spornych zwołano posiedzenie.", note: "zu + celownik = um ... zu klären; offener Fragen: dopełniacz liczby mnogiej bez rodzajnika" },
+        { tr: "W celu wyjaśnienia otwartych kwestii zwołuje się posiedzenie.", note: "zu + celownik = um ... zu klären; offener Fragen: dopełniacz liczby mnogiej bez rodzajnika" },
         { tr: "W następstwie wzrostu cen energii popyt spadł.", note: "infolge + dopełniacz: przyczyna, która wywołuje skutek" }
       ]
     },
@@ -249,7 +249,7 @@ LINGUAI.addStrings("pl", {
       {
         q: "Uzupełnij komunikat dwoma przyimkami.",
         tr: "Z powodu opóźnienia dostawy termin trzeba było przesunąć. W razie potrzeby zostanie uzgodniony nowy termin.",
-        why: "<i>Wegen</i> (albo <i>Aufgrund</i>, <i>Infolge</i>) + dopełniacz dla przyczyny. <i>Bei Bedarf</i> dla warunku; w tym kontekście pasuje też <i>Nach Bedarf</i>, „stosownie do potrzeb”."
+        why: "<i>Wegen</i> (albo <i>Aufgrund</i>, <i>Infolge</i>) + dopełniacz dla przyczyny. <i>Bei Bedarf</i> („w razie potrzeby”) wyraża warunek. <i>Nach Bedarf</i> znaczy „stosownie do potrzeb” i to inne znaczenie; choć pole je przyjmuje, tłumaczenie wymaga <i>Bei</i>."
       },
       {
         q: "Połącz każde wyrażenie z jego znaczeniem.",
@@ -262,7 +262,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         q: "Ułóż wyrazy zaproszenia we właściwej kolejności.",
-        tr: "W celu wyjaśnienia kwestii spornych zwołano posiedzenie.",
+        tr: "W celu wyjaśnienia otwartych kwestii zwołuje się posiedzenie.",
         why: "<i>Zur Klärung offener Fragen wird eine Sitzung einberufen.</i> Grupa rzeczownikowa z <i>zur</i> otwiera zdanie, a czasownik osobowy stoi na drugim miejscu. Poprawne jest też <i>Eine Sitzung wird zur Klärung offener Fragen einberufen</i>."
       },
       {
@@ -270,7 +270,7 @@ LINGUAI.addStrings("pl", {
         why: "<i>Bei Bedarf können weitere Unterlagen angefordert werden.</i> Akceptowane jest też położenie <i>bei Bedarf</i> za podmiotem oraz forma z <i>man</i>."
       },
       {
-        tr: "Po zakończeniu kontroli sprawozdanie zostanie opublikowane. W razie potrzeby można zażądać dalszych dokumentów. W celu wyjaśnienia kwestii spornych kierownictwo projektu chętnie służy pomocą.",
+        tr: "Po zakończeniu kontroli sprawozdanie zostanie opublikowane. W razie potrzeby można zażądać dalszych dokumentów. W celu wyjaśnienia otwartych kwestii kierownictwo projektu chętnie służy pomocą.",
         why: "W <i>Abschluss</i> akcent pada na <b>Ab</b>; w <i>veröffentlicht</i> akcent pada na <b>öf</b>; w <i>Klärung</i> akcent pada na <b>Klä</b>."
       },
       {
@@ -291,17 +291,17 @@ LINGUAI.addStrings("pl", {
     theory: [
       {
         h: "Cztery przypadki, w których zdanie podrzędne zostaje",
-        p: "Forma zwarta nie zawsze jest najlepsza. Zdanie podrzędne jest lepsze, gdy: (1) <strong>nie ma odpowiedniego rzeczownika</strong> albo brzmi on nienaturalnie; (2) są <strong>różne podmioty</strong> albo kilka orzeczeń, a grupa rzeczownikowa ukryłaby, kto co robi: <em>weil der Vorsitzende erkrankt war und die Referentin im Ausland festsaß</em>; (3) potrzebny jest <strong>odcień modalny</strong> albo prawdopodobieństwa (<em>sollte, könnte, offenbar, nur dann ..., wenn</em>), którego rzeczownik nie wyrazi; (4) cierpi na tym <strong>czytelność</strong>, na przykład przy kilku dopełniaczach i okolicznikach z rzędu."
+        p: "Forma zwarta nie zawsze jest najlepsza. Zdanie podrzędne jest lepsze, gdy: (1) <strong>nie ma odpowiedniego rzeczownika</strong> albo brzmi on nienaturalnie; (2) są <strong>różne podmioty</strong> albo kilka orzeczeń, a grupa rzeczownikowa ukryłaby, kto co robi: <em>weil der Vorsitzende erkrankt war und die Referentin im Ausland festsaß</em>; (3) potrzebny jest <strong>odcień modalny</strong> albo prawdopodobieństwa (<em>sollte, könnte, offenbar</em>), którego rzeczownik nie wyrazi; (4) cierpi na tym <strong>czytelność</strong>, na przykład przy kilku dopełniaczach i okolicznikach z rzędu."
       },
       {
         h: "Jak wybierać",
         p: "Przed nominalizacją zadaj cztery pytania. Kto działa i czy mówi to rzeczownik? Czy istnieje naturalny rzeczownik (<em>Abschluss, Klärung</em>)? Czy muszę zachować czas albo tryb? Czy czytelnik zrozumie to od pierwszego czytania? Jeśli na wszystkie odpowiedź brzmi „tak”, forma zwarta się sprawdzi (<em>Nach Abschluss der Prüfung ...</em>), w przeciwnym razie zdanie podrzędne jest jaśniejsze, a w tekstach dla odbiorcy niespecjalistycznego niemal zawsze."
       },
       {
-        contrast: "Polski ma środki zwarte, których niemiecki nie ma: imiesłów przysłówkowy (<em>zakończywszy kontrolę</em>), <em>po zakończeniu prac</em>, <em>w razie gdyby kontrola miała potrwać dłużej</em>. Po niemiecku imiesłowu przysłówkowego brak, a bezokolicznik z <em>ohne zu</em> albo <em>um ... zu</em> wymaga tego samego podmiotu, podobnie jak polski imiesłów przysłówkowy: gdy podmioty są dwa, potrzebne jest zdanie podrzędne z <em>dass</em> albo <em>weil</em>. Odcień <em>gdyby ... miała</em> oddaje się po niemiecku przez <em>Sollte die Prüfung länger dauern, ...</em> albo <em>falls ... ändern sollten</em>, a po polsku zwykle trybem przypuszczającym z <em>gdyby</em> i <em>miała</em>."
+        contrast: "Polski ma kilka środków zwartych: imiesłów przysłówkowy (<em>zakończywszy kontrolę</em>), <em>po zakończeniu prac</em>, <em>w razie gdyby kontrola miała potrwać dłużej</em>. Niemiecki nie ma imiesłowu przysłówkowego, ale pozostałe dwie konstrukcje ma: <em>po zakończeniu prac</em> to <em>nach Abschluss der Arbeiten</em>, a ewentualność oddaje zdanie podrzędne (<em>Sollte die Prüfung länger dauern, ...</em> albo <em>falls ... ändern sollten</em>). Imiesłów przysłówkowy nie ma jednego odpowiednika: zależnie od zdania wybiera się grupę z <em>nach</em> albo zdanie podrzędne z <em>nachdem</em>. Bezokolicznik z <em>um ... zu</em> albo <em>ohne ... zu</em> zwykle odnosi się do podmiotu zdania głównego, ale nie zawsze; gdy podmiot byłby niejasny, jaśniejsze jest zdanie podrzędne z <em>dass</em> albo <em>weil</em>. Odcień <em>gdyby ... miała</em> po polsku oddaje zwykle tryb przypuszczający."
       },
       {
-        trap: "Nie nominalizuj wszystkiego tylko dlatego, że „brzmi oficjalnie”: wychodzi niemiecki z biurokratycznego urzędu, trudny do czytania, a rzeczownik taki jak <em>seitens der Teilnehmenden</em> ukrywa podmiot. <em>sollte</em> na pierwszym miejscu nie oznacza też polskiego „powinien” w sensie powinności: <em>Sollte die Prüfung länger dauern</em> znaczy „gdyby kontrola miała potrwać dłużej”, czyli mało prawdopodobny warunek, a nie „kontrola powinna trwać dłużej”."
+        trap: "Nie nominalizuj wszystkiego tylko dlatego, że „brzmi oficjalnie”: wychodzi niemiecki urzędowy i trudny do czytania. Grupa z <em>seitens der Teilnehmenden</em> wprawdzie wskazuje uczestników (<em>seitens</em> to przyimek z dopełniaczem), ale brzmi biurokratycznie i zdanie podrzędne bywa zrozumialsze. <em>sollte</em> na pierwszym miejscu nie oznacza też polskiego „powinien” w sensie powinności: <em>Sollte die Prüfung länger dauern</em> znaczy „gdyby kontrola miała potrwać dłużej”, czyli hipotetyczny, ostrożnie postawiony warunek, a nie „kontrola powinna trwać dłużej”."
       },
       {
         tip: "Przeczytaj zdanie na głos. Jeśli w środku grupy rzeczownikowej musisz zaczerpnąć powietrza, bo stoją w niej dwa dopełniacze i <em>durch</em>, rozbij ją na zdanie podrzędne."
@@ -323,9 +323,9 @@ LINGUAI.addStrings("pl", {
       examples: [
         { tr: "Posiedzenie przełożono, ponieważ przewodniczący zachorował, a referentka utknęła za granicą.", note: "dwa podmioty: forma nominalna ukryłaby jeden z nich" },
         { tr: "Umowa zostanie podpisana dopiero wtedy, gdy zarząd wyrazi zgodę, a finansowanie będzie zapewnione.", note: "dwa warunki z różnymi czasownikami: zdanie podrzędne" },
-        { tr: "Gdyby kontrola miała potrwać dłużej, termin zostanie przesunięty.", note: "Sollte na pierwszym miejscu: mało prawdopodobna ewentualność" },
-        { tr: "Dofinansowanie wygasa, gdyby warunki ramowe miały się zmienić.", note: "falls ... ändern sollten: odcień modalny" },
-        { tr: "Wyniki są wiarygodne tylko wtedy, gdy próba jest reprezentatywna.", note: "nur dann ..., wenn: warunek konieczny, którego nie da się oddać przez bei" },
+        { tr: "Gdyby kontrola miała potrwać dłużej, termin zostanie przesunięty.", note: "Sollte na pierwszym miejscu: hipotetyczny, ostrożnie postawiony warunek" },
+        { tr: "Dofinansowanie wygasa, jeśli warunki ramowe miałyby się zmienić.", note: "falls ... ändern sollten: odcień modalny" },
+        { tr: "Wyniki są wiarygodne tylko wtedy, gdy próba jest reprezentatywna.", note: "nur dann ..., wenn: warunek konieczny; w formie nominalnej da się go zachować (nur bei einer repräsentativen Stichprobe)" },
         { tr: "Ocena rozpoczęła się po tym, jak uczestnicy wypełnili kwestionariusz.", note: "zdanie czasowe w czasie zaprzeszłym: czytelniejsze niż szereg dopełniaczy" }
       ]
     },
@@ -356,7 +356,7 @@ LINGUAI.addStrings("pl", {
       {
         q: "„Sollte die Prüfung länger dauern, wird der Termin verschoben.” Co się traci w wersji nominalnej „Bei längerer Dauer der Prüfung wird der Termin verschoben”?",
         opts: [
-          "odcień mało prawdopodobnej ewentualności, który wyraża sollte",
+          "odcień hipotetycznej, ostrożnie postawionej ewentualności, który wyraża sollte",
           "warunkowy charakter zdania",
           "podmiot, bo Prüfung znika"
         ],
@@ -374,12 +374,12 @@ LINGUAI.addStrings("pl", {
       {
         q: "Uzupełnij: „Die Ergebnisse sind nur dann aussagekräftig, ___ die Stichprobe repräsentativ ist.”",
         hint: "spójnik warunkowy",
-        why: "<b>wenn</b>: <i>nur dann ..., wenn</i> wyraża warunek konieczny. Przy grupie rzeczownikowej (<i>bei repräsentativer Stichprobe</i>) siła <i>nur dann</i> ginie."
+        why: "<b>wenn</b>: <i>nur dann ..., wenn</i> wyraża warunek konieczny. Warunek konieczny można zachować także w formie nominalnej (<i>nur bei einer repräsentativen Stichprobe</i>), ale zdanie podrzędne jest tu czytelniejsze."
       },
       {
         q: "Uzupełnij czasownikiem modalnym: „Falls sich die Rahmenbedingungen ändern ___, entfällt die Förderung.”",
-        hint: "Konjunktiv II czasownika modalnego: mało prawdopodobna ewentualność",
-        why: "<b>sollten</b>: <i>falls ... sollten</i> sygnalizuje odległą ewentualność, odcień, którego formą nominalną nie da się oddać."
+        hint: "Konjunktiv II czasownika modalnego: hipotetyczna ewentualność",
+        why: "<b>sollten</b>: <i>falls ... sollten</i> sygnalizuje hipotetyczną, ostrożnie postawioną ewentualność, odcień, którego formą nominalną nie da się oddać."
       },
       {
         q: "Uzupełnij dwa warunki umowy.",
@@ -433,7 +433,7 @@ LINGUAI.addStrings("pl", {
         why: "<b>sein</b>: <i>ausfallen</i> to czasownik zmiany stanu, a w Perfekcie wymaga <i>sein</i>; Futur II przypuszczenia to <i>wird ... ausgefallen sein</i>, „pewnie uległa awarii”."
       },
       {
-        q: "Uzupełnij: „Die Verhandlungen sind erst im Mai abgeschlossen ___.”",
+        q: "Uzupełnij Perfekt strony biernej (ktoś zakończył negocjacje dopiero w maju): „Die Verhandlungen sind erst im Mai abgeschlossen ___.”",
         hint: "imiesłów werden w stronie biernej",
         why: "<b>worden</b>: w Perfekcie strony biernej imiesłów <i>werden</i> traci <i>ge-</i>. <i>geworden</i> byłoby czasownikiem samodzielnym „stawać się”."
       },
@@ -487,7 +487,7 @@ LINGUAI.addStrings("pl", {
       {
         q: "Uzupełnij komunikat imiesłowem II i przyimkiem.",
         tr: "Poinformujemy Państwa na czas. Środki zaplanowane przez nas zaczną działać dopiero po zakończeniu kontroli.",
-        why: "<i>geplanten</i> (albo <i>vorgesehenen</i>): imiesłów II bierny z <b>-en</b>. <i>nach</i> albo <i>mit Abschluss der Prüfung</i>: czas z <i>nach</i> + celownik, albo „wraz z zakończeniem”."
+        why: "<i>geplanten</i> (albo <i>vorgesehenen</i>): imiesłów II bierny z <b>-en</b>. <i>nach</i>: czas z <i>nach</i> + celownik („po zakończeniu kontroli”)."
       },
       {
         q: "Przetłumacz: „Decyzje podjęte na posiedzeniu zostaną przekazane po zakończeniu kontroli.” (die Sitzung, die Entscheidung, mitteilen, der Abschluss, die Prüfung)",

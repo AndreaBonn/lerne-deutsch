@@ -1,0 +1,43 @@
+{
+  "bundleHash": "6db2e873003c6f19b36feceb00b2d580914b09d4d11e7e2a625fdfba98c42f4b",
+  "findings": [
+    {
+      "kind": "grammatica",
+      "msg": "La presenza di sein o di un verbo d’azione non determina da sola il valore del modale: «Er muss um acht zu Hause sein» esprime un obbligo, mentre «Er muss noch arbeiten» può esprimere una deduzione. Correggere la regola e spiegare che il contesto distingue le letture.",
+      "path": "merged.lessons[1].theory[2].contrast"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "«Er soll kommen» può riferire anche ciò che altri dicono, per esempio che la persona arriverà. Inoltre sein può comparire in un obbligo. Presentare queste letture come dipendenti dal contesto, non come regole determinate dall’infinito.",
+      "path": "merged.lessons[1].theory[4].tip"
+    },
+    {
+      "kind": "spiegazione fuorviante",
+      "msg": "L’assenza di wohl non esclude una congettura: «Er wird krank sein» può esprimerne una senza avverbio. In questo esempio sono l’annuncio e il riferimento temporale a sostenere la lettura di azione futura completata; eliminare l’argomento basato sull’assenza dell’avverbio.",
+      "path": "merged.lessons[0].exercises[1].why"
+    },
+    {
+      "kind": "chiave e ambiguità",
+      "msg": "La prima frase può esprimere anche una previsione o congettura sul futuro, quindi nächste Woche non basta a escludere una congettura. Aggiungere un contesto che presenti il ritorno come programma stabilito e riformulare la distinzione richiesta.",
+      "path": "merged.lessons[0].exercises[0]"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Nichts gewusst haben» si riferisce al passato; «no sabe nada» lo presenta al presente. Sostituire con «asegura que no sabía nada».",
+      "path": "merged.test.exercises[6].tr"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Nichts gewusst haben» si riferisce al passato; «no sabe nada» lo presenta al presente. Sostituire con «asegura que no sabía nada».",
+      "path": "merged.test.exercises[8].tr"
+    },
+    {
+      "kind": "vocabolario",
+      "msg": "Verdacht possiede il plurale «die Verdachte», anche se è raro. Indicarlo invece di «-», eventualmente segnalando che è poco frequente.",
+      "path": "neutral.lessons[0].vocab[1].plural"
+    }
+  ],
+  "lang": "es",
+  "unit": "c1-u04",
+  "verdict": "fail"
+}

@@ -25,7 +25,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         h: "Les indices",
-        p: "Pour savoir quelle lecture vous avez devant vous, regardez le moment et les adverbes. Une référence au présent (<em>jetzt, noch, gerade</em>) ou au passé (<em>inzwischen, längst</em>) indique une supposition ; une échéance avec <em>bis</em> indique une action achevée dans le futur. Les adverbes dosent la certitude : <em>wohl</em> et <em>vermutlich</em> restent prudents, <em>schon</em> rassure (<em>Das wird schon klappen</em>), <em>sicher</em> et <em>bestimmt</em> la renforcent."
+        p: "Pour savoir quelle lecture vous avez devant vous, regardez le contexte, le moment et les adverbes, à titre d'indices et non de règles. Une référence au présent (<em>jetzt, noch, gerade</em>) ou au passé (<em>inzwischen, längst</em>) oriente vers une supposition ; une échéance avec <em>bis</em> oriente le plus souvent vers une action achevée dans le futur, mais peut aussi porter une supposition. Les adverbes dosent la certitude : <em>wohl</em> et <em>vermutlich</em> restent prudents, <em>schon</em> rassure (<em>Das wird schon klappen</em>), <em>sicher</em> et <em>bestimmt</em> la renforcent."
       },
       {
         contrast: "Le français a le même emploi : le futur simple de supposition (<em>il sera au bureau</em>) et le futur antérieur (<em>elle aura lu le message</em>). Cela vous vient donc naturellement, mais en allemand la phrase est bien moins fréquente sans adverbe : <em>wohl</em>, <em>schon</em> ou <em>sicher</em> déclarent la supposition, alors que <em>Er wird zu Hause sein</em> tout seul, sans contexte clair, peut aussi se lire comme un vrai futur. Et le français préfère souvent <em>devoir</em> ou <em>sans doute</em> (<em>il doit être en train de dormir</em>), là où l'allemand garde <em>werden</em>. Le futur antérieur français d'achèvement (<em>d'ici vendredi, nous aurons terminé</em>) correspond en revanche au Futur II avec <em>bis</em>."
@@ -46,7 +46,7 @@ LINGUAI.addStrings("fr", {
           ["werden + infinitif", "supposition sur le présent", "Er wird wohl noch im Stau stehen."],
           ["werden + participe II + haben/sein", "supposition sur le passé", "Sie wird die Nachricht inzwischen gelesen haben."],
           ["werden + participe II + haben/sein avec bis", "action achevée avant un moment futur", "Bis Ende des Monats werden wir die Studie abgeschlossen haben."],
-          ["werden + infinitif + schon", "assurance", "Das wird schon klappen."],
+          ["werden + schon + infinitif", "assurance", "Das wird schon klappen."],
           ["présent + indication de temps", "futur prévu", "Morgen fliege ich nach Wien."]
         ]
       },
@@ -90,7 +90,7 @@ LINGUAI.addStrings("fr", {
           "une supposition sur quelque chose qui s'est déjà produit",
           "un passif au présent"
         ],
-        why: "<i>bis Jahresende</i> fixe le point futur avant lequel l'action sera terminée, et celui qui parle prend un engagement, il ne fait pas une conjecture : il n'y a d'ailleurs aucun adverbe comme <i>wohl</i>."
+        why: "<i>bis Jahresende</i> fixe le point futur avant lequel l'action sera terminée, et dans cette consigne celui qui parle annonce un engagement plutôt qu'une conjecture ; c'est le contexte qui le montre, pas l'absence d'un adverbe comme <i>wohl</i>."
       },
       {
         q: "Tu sais que la lettre a été remise hier, mais tu ignores si le destinataire l'a déjà lue. Quelle phrase formule la bonne supposition ?",
@@ -157,20 +157,20 @@ LINGUAI.addStrings("fr", {
     theory: [
       {
         h: "Du devoir à la certitude",
-        p: "Avec <em>sein</em>, <em>haben</em> ou un infinitif passé, les modaux n'expriment plus l'obligation ou la permission, mais le degré de certitude de celui qui parle. <strong>muss</strong> est une déduction presque certaine (<em>Es muss geregnet haben, die Straße ist nass</em>), <strong>dürfte</strong> indique que c'est probable (<em>Er dürfte schon angekommen sein</em>), <strong>könnte</strong> que c'est possible (<em>Das könnte ein Irrtum sein</em>). <strong>kann nicht</strong> dit que c'est impossible (<em>Das kann nicht stimmen</em>) et <strong>mag</strong> admet, le plus souvent en concédant (<em>Das mag sein, aber ich sehe es anders</em>)."
+        p: "Avec <em>sein</em>, <em>haben</em> ou un infinitif passé, les modaux expriment souvent, et non toujours, le degré de certitude de celui qui parle plutôt que l'obligation ou la permission ; le contexte, le sens du verbe et le temps décident de la lecture. <strong>muss</strong> est une déduction presque certaine (<em>Es muss geregnet haben, die Straße ist nass</em>), <strong>dürfte</strong> indique que c'est probable (<em>Er dürfte schon angekommen sein</em>), <strong>könnte</strong> que c'est possible (<em>Das könnte ein Irrtum sein</em>). <strong>kann nicht</strong> dit que c'est impossible (<em>Das kann nicht stimmen</em>) et <strong>mag</strong> admet, le plus souvent en concédant (<em>Das mag sein, aber ich sehe es anders</em>)."
       },
       {
         h: "Rapporter : soll et will",
         p: "Deux autres modaux rapportent une source. <strong>soll</strong> dit que d'autres l'affirment et que celui qui parle ne le garantit pas : <em>Der Zeuge soll den Täter gesehen haben</em>, « le témoin aurait vu le coupable ». <strong>will</strong> dit que c'est le sujet lui-même qui le soutient, souvent avec une pointe de scepticisme : <em>Die Firma will alle Unterlagen rechtzeitig eingereicht haben</em>, « l'entreprise prétend avoir remis tous les documents à temps ». Pour le passé : modal + participe II + <em>haben</em> ou <em>sein</em>."
       },
       {
-        contrast: "Le français a lui aussi le conditionnel journalistique (<em>le ministre aurait détruit les documents</em>), mais il ne dit pas qui parle : cela peut être la presse, un témoin ou le ministre lui-même. L'allemand choisit le modal selon la source : <em>soll</em> pour « on dit que », <em>will</em> pour « lui prétend que ». De même, <em>il doit être malade</em> correspond à <em>muss</em>, mais le français <em>doit</em> est ambigu, car il peut aussi dire une obligation (<em>il doit venir</em>) ; et <em>il devrait être là</em> est tantôt <em>dürfte</em> (probable), tantôt un conseil ou une obligation. En allemand, c'est l'infinitif qui aide à trancher."
+        contrast: "Le français a lui aussi le conditionnel journalistique (<em>le ministre aurait détruit les documents</em>), mais il ne dit pas qui parle : cela peut être la presse, un témoin ou le ministre lui-même. L'allemand choisit le modal selon la source : <em>soll</em> pour « on dit que », <em>will</em> pour « lui prétend que ». De même, <em>il doit être malade</em> correspond à <em>muss</em>, mais le français <em>doit</em> est ambigu, car il peut aussi dire une obligation (<em>il doit venir</em>) ; et <em>il devrait être là</em> est tantôt <em>dürfte</em> (probable), tantôt un conseil ou une obligation. En allemand, l'infinitif est un indice utile, mais ce sont le contexte et le sens de la phrase qui tranchent."
       },
       {
         trap: "La négation change le sens. <em>Er muss nicht krank sein</em> veut dire « il n'est pas forcément malade », et non « il ne peut pas être malade ». Pour l'impossibilité, il faut <em>kann nicht</em> : <em>Er kann nicht krank sein, ich habe ihn eben gesehen</em>. Et <em>dürfte</em> au sens de probabilité ne se confond pas avec <em>darf</em>, qui exprime une permission."
       },
       {
-        tip: "Avant de traduire un modal, regardez l'infinitif. Avec un infinitif passé (<em>gelesen haben, gewesen sein</em>) ou un verbe d'état (<em>sein</em>), la valeur est presque toujours subjective : certitude ou source. Avec un verbe d'action au présent (<em>Er soll kommen</em>), c'est un ordre."
+        tip: "Avant de traduire un modal, regardez l'infinitif, puis le contexte. Un infinitif passé (<em>gelesen haben, gewesen sein</em>) ou un verbe d'état (<em>sein</em>) oriente souvent vers une valeur subjective : certitude ou source. Un verbe d'action au présent (<em>Er soll kommen</em>) peut dire un ordre, ou rapporter ce qu'on dit (« il paraît qu'il vient ») : seul le contexte décide."
       }
     ],
     grammar: {
@@ -297,7 +297,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         h: "Position et registre",
-        p: "Les particules se placent sans accent après le verbe et les pronoms, avant l'information nouvelle (<em>Er wird wohl noch schlafen</em>). Elles sont typiques de l'oral, des messages et des dialogues : dans un texte formel, comme un rapport ou une lettre à un client, on les évite en général. <em>halt</em> est plus familier et s'entend surtout dans le sud, <em>eben</em> est plus neutre, mais dans la plupart des cas ils sont interchangeables."
+        p: "Les particules se placent sans accent après le verbe et les pronoms, avant l'information nouvelle (<em>Er wird wohl noch schlafen</em>). Elles sont surtout fréquentes à l'oral, dans les messages et les dialogues, mais cela dépend de la particule et de l'emploi : <em>wohl</em>, par exemple, apparaît aussi dans une prose soignée, alors que <em>halt</em>, plus familier, s'évite dans un rapport ou une lettre à un client. <em>eben</em> est plus neutre, et dans la plupart des cas les deux sont interchangeables."
       },
       {
         contrast: "Le français rend ces nuances par l'intonation et par des mots comme <em>sans doute</em>, <em>tout de même</em>, <em>tu sais bien</em>, <em>tant pis</em>, <em>on n'y peut rien</em>, ou par le conditionnel : <em>Hast du etwa ...?</em> est proche de « tu n'aurais pas ... ? », <em>Dann warten wir halt</em> de « alors on attend, tant pis ». Là où le français change le mode ou le tour de la phrase (<em>il sera</em>, <em>il doit</em>), l'allemand ajoute <em>wohl</em>. Aucune des cinq n'a d'équivalent fixe : on apprend la fonction."
@@ -311,7 +311,7 @@ LINGUAI.addStrings("fr", {
     ],
     grammar: {
       title: "Particules modales : wohl, ja, etwa, halt, eben",
-      note: "<b>wohl</b> : supposition. <b>ja</b> : chose connue ou surprenante. <b>etwa</b> : dans les questions oui/non, surprise ou soupçon. <b>halt / eben</b> : résignation. Registre : oral, pas formel.",
+      note: "<b>wohl</b> : supposition. <b>ja</b> : chose connue ou surprenante. <b>etwa</b> : dans les questions oui/non, surprise ou soupçon. <b>halt / eben</b> : résignation. Registre : surtout oral, <i>halt</i> est le plus familier.",
       table: {
         head: ["particule", "effet", "exemple"],
         rows: [
@@ -319,7 +319,7 @@ LINGUAI.addStrings("fr", {
           ["ja", "chose connue ou surprenante", "Du weißt ja, wie lange das dauert."],
           ["etwa", "surprise ou soupçon dans une question, on s'attend à un non", "Hast du etwa den Schlüssel vergessen?"],
           ["halt, eben", "résignation", "Da kann man eben nichts machen."],
-          ["registre", "oral, à éviter dans l'écrit formel", "Das ist halt so."]
+          ["registre", "surtout oral ; halt est le plus familier", "Das ist halt so."]
         ]
       },
       examples: [
@@ -473,7 +473,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         q: "Complète avec soll, will ou werden.",
-        tr: "Selon un article, le ministre aurait détruit des documents. Lui prétend n'en rien savoir, et son porte-parole promet : d'ici vendredi, nous aurons tout éclairci.",
+        tr: "Selon un article, le ministre aurait détruit des documents. Lui prétend n'en avoir rien su, et son porte-parole promet : d'ici vendredi, nous aurons tout éclairci.",
         why: "<i>soll</i> : c'est un article qui le dit. <i>will</i> : c'est le ministre lui-même qui le soutient. <i>werden</i> : Futur II d'achèvement avec <i>bis Freitag</i>."
       },
       {
@@ -487,7 +487,7 @@ LINGUAI.addStrings("fr", {
         why: "Les deux premières évaluent la probabilité : <i>dürfte</i> et <i>muss</i> avec <i>sein</i>. Dans les deux dernières, les modaux indiquent l'obligation et l'interdiction."
       },
       {
-        tr: "Le match a été annulé hier. Le terrain aurait été sous l'eau, mais l'entraîneur prétend n'en rien savoir. Les supporters seront probablement déçus, mais au football c'est comme ça, tant pis.",
+        tr: "Le match a été annulé hier. Le terrain aurait été sous l'eau, mais l'entraîneur prétend n'en avoir rien su. Les supporters seront probablement déçus, mais au football c'est comme ça, tant pis.",
         why: "<i>soll</i> (d'autres le disent), <i>will</i> (lui le soutient), <i>wohl</i> (supposition) et <i>eben</i> (résignation)."
       },
       {

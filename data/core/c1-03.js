@@ -190,8 +190,8 @@ LINGUAI.addUnits("C1", [
             t: "order",
             tokens: ["Die", "Auswertung", "begann", "nachdem", "die", "Teilnehmenden", "den", "Fragebogen", "ausgefüllt", "hatten"],
             a: [
-              "Die Auswertung begann nachdem die Teilnehmenden den Fragebogen ausgefüllt hatten",
-              "Nachdem die Teilnehmenden den Fragebogen ausgefüllt hatten begann die Auswertung"
+              "Die Auswertung begann, nachdem die Teilnehmenden den Fragebogen ausgefüllt hatten",
+              "Nachdem die Teilnehmenden den Fragebogen ausgefüllt hatten, begann die Auswertung"
             ]
           },
           {

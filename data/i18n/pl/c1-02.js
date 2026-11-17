@@ -25,7 +25,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         h: "Wskazówki",
-        p: "Żeby ustalić, które znaczenie masz przed sobą, patrz na moment i okoliczniki. Odniesienie do teraźniejszości (<em>jetzt, noch, gerade</em>) albo do przeszłości (<em>inzwischen, längst</em>) wskazuje na przypuszczenie; termin z <em>bis</em> wskazuje na czynność zakończoną w przyszłości. Okoliczniki dawkują pewność: <em>wohl</em> i <em>vermutlich</em> są ostrożne, <em>schon</em> uspokaja (<em>Das wird schon klappen</em>), <em>sicher</em> i <em>bestimmt</em> ją wzmacniają."
+        p: "Żeby ustalić, które znaczenie masz przed sobą, patrz na moment i okoliczniki. Odniesienie do teraźniejszości (<em>jetzt, noch, gerade</em>) albo do przeszłości (<em>inzwischen, längst</em>) wskazuje na przypuszczenie; termin z <em>bis</em> zwykle wskazuje na czynność zakończoną w przyszłości, ale może też towarzyszyć ostrożnej prognozie (<em>Bis morgen wird er wohl angekommen sein</em>); odróżnienie prognozy, przypuszczenia i zobowiązania zależy od kontekstu. Okoliczniki dawkują pewność: <em>wohl</em> i <em>vermutlich</em> są ostrożne, <em>schon</em> uspokaja (<em>Das wird schon klappen</em>), <em>sicher</em> i <em>bestimmt</em> ją wzmacniają."
       },
       {
         contrast: "Po polsku przypuszczenie o teraźniejszości i o przeszłości wyraża się zwykle zwykłym czasem i słowem takim jak <em>pewnie</em>, <em>chyba</em>, <em>z pewnością</em>: <em>Pewnie jeszcze śpi. Pewnie już przeczytał wiadomość.</em> Osobnej formy czasu na to nie ma, a przyszłość złożona w rodzaju <em>będzie spał</em> brzmi jako przypuszczenie raczej rzadko. Niemiecki robi odwrotnie: stawia <em>werden</em> i dla przeszłości imiesłów z <em>haben</em> albo <em>sein</em> (Futur II), czego polski czas przeszły nie rozróżnia. Bez <em>wohl</em>, <em>schon</em> albo <em>sicher</em> samo <em>Er wird zu Hause sein</em> bywa więc czytane także jako zwykła przyszłość. Polskie <em>do końca miesiąca skończymy badanie</em> (czasownik dokonany w czasie przyszłym) odpowiada niemieckiemu Futur II z <em>bis</em>, tylko że po niemiecku widać to w formie czasownika, a po polsku w jego aspekcie."
@@ -46,7 +46,7 @@ LINGUAI.addStrings("pl", {
           ["werden + bezokolicznik", "przypuszczenie o teraźniejszości", "Er wird wohl noch im Stau stehen."],
           ["werden + imiesłów II + haben/sein", "przypuszczenie o przeszłości", "Sie wird die Nachricht inzwischen gelesen haben."],
           ["werden + imiesłów II + haben/sein z bis", "czynność zakończona do przyszłego momentu", "Bis Ende des Monats werden wir die Studie abgeschlossen haben."],
-          ["werden + bezokolicznik + schon", "uspokojenie", "Das wird schon klappen."],
+          ["werden + schon + bezokolicznik", "uspokojenie", "Das wird schon klappen."],
           ["czas teraźniejszy + okolicznik czasu", "przyszłość zaplanowana", "Morgen fliege ich nach Wien."]
         ]
       },
@@ -54,7 +54,7 @@ LINGUAI.addStrings("pl", {
         { tr: "Światła są zgaszone, o tej porze pewnie już śpi.", note: "przypuszczenie o teraźniejszości z schon" },
         { tr: "Dzwonią. To pewnie listonosz.", note: "werden + sein: przypuszczenie" },
         { tr: "Pewnie jeszcze stoi w korku.", note: "werden + wohl + bezokolicznik" },
-        { tr: "Wiadomość pewnie już przeczytał.", note: "Futur II: przypuszczenie o przeszłości" },
+        { tr: "Pewnie już przeczytała wiadomość.", note: "Futur II: przypuszczenie o przeszłości" },
         { tr: "Najpóźniej do końca miesiąca zakończymy badanie.", note: "Futur II zakończenia z bis" },
         { tr: "Zobaczysz, wszystko się uda.", note: "werden + schon: uspokojenie" }
       ]
@@ -128,7 +128,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         q: "Ułóż przypuszczenie we właściwej kolejności.",
-        tr: "Wiadomość pewnie już przeczytał.",
+        tr: "Pewnie już przeczytała wiadomość.",
         why: "<i>Sie wird die Nachricht inzwischen gelesen haben.</i> Czasownik odmieniony stoi na drugim miejscu, <i>gelesen haben</i> zamyka zdanie; <i>inzwischen</i> może stać także przed <i>die Nachricht</i>."
       },
       {
@@ -137,7 +137,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         tr: "Pociąg z Monachium ma opóźnienie. Podróżni będą pewnie musieli czekać jeszcze pół godziny, a pociąg, na który mają przesiadkę, będzie wtedy prawdopodobnie już odjechał.",
-        why: "Dwa przypuszczenia: <i>werden ... warten müssen</i> (ostrożna prognoza) i <i>wird ... abgefahren sein</i> (Futur II z <i>sein</i>, bo <i>abfahren</i> to czasownik ruchu)."
+        why: "Dwa przypuszczenia: <i>werden ... warten müssen</i> (ostrożna prognoza) i <i>wird ... abgefahren sein</i> (Futur II z <i>sein</i>: <i>abfahren</i> jest tu nieprzechodnie i oznacza odjazd pociągu)."
       },
       {
         tr: "Światło wciąż się pali, więc koledzy pewnie jeszcze pracują.",
@@ -157,7 +157,7 @@ LINGUAI.addStrings("pl", {
     theory: [
       {
         h: "Od powinności do pewności",
-        p: "Z <em>sein</em>, <em>haben</em> albo bezokolicznikiem czasu przeszłego czasowniki modalne nie wyrażają już nakazu ani pozwolenia, tylko to, na ile mówiący jest pewien, że coś jest prawdą. <strong>muss</strong> to wniosek prawie pewny (<em>Es muss geregnet haben, die Straße ist nass</em>), <strong>dürfte</strong> oznacza, że jest to prawdopodobne (<em>Er dürfte schon angekommen sein</em>), <strong>könnte</strong>, że możliwe (<em>Das könnte ein Irrtum sein</em>). <strong>kann nicht</strong> mówi, że to niemożliwe (<em>Das kann nicht stimmen</em>), a <strong>mag</strong> dopuszcza, zwykle na zasadzie ustępstwa (<em>Das mag sein, aber ich sehe es anders</em>)."
+        p: "Czasowniki modalne mogą wyrażać nie nakaz ani pozwolenie, lecz to, na ile mówiący jest pewien, że coś jest prawdą. Często dzieje się tak z <em>sein</em>, <em>haben</em> albo bezokolicznikiem czasu przeszłego, ale o znaczeniu decyduje kontekst: <em>Er muss zu Hause sein</em> może być też nakazem, a <em>Er muss schlafen</em> wnioskiem. <strong>muss</strong> to wniosek prawie pewny (<em>Es muss geregnet haben, die Straße ist nass</em>), <strong>dürfte</strong> oznacza, że jest to prawdopodobne (<em>Er dürfte schon angekommen sein</em>), <strong>könnte</strong>, że możliwe (<em>Das könnte ein Irrtum sein</em>). <strong>kann nicht</strong> mówi, że to niemożliwe (<em>Das kann nicht stimmen</em>), a <strong>mag</strong> dopuszcza, zwykle na zasadzie ustępstwa (<em>Das mag sein, aber ich sehe es anders</em>)."
       },
       {
         h: "Przekazywanie: soll i will",
@@ -170,7 +170,7 @@ LINGUAI.addStrings("pl", {
         trap: "Zaprzeczenie zmienia znaczenie. <em>Er muss nicht krank sein</em> znaczy „nie musi być chory”, czyli „nie jest powiedziane, że jest chory”, a nie „nie może być chory”. Na niemożliwość potrzeba <em>kann nicht</em>: <em>Er kann nicht krank sein, ich habe ihn eben gesehen</em>. Po polsku jest podobnie, <em>nie musi</em> i <em>nie może</em> to dwa różne zdania, więc nie myl ich w tłumaczeniu. A <em>dürfte</em> w znaczeniu prawdopodobieństwa nie myl z <em>darf</em>, które oznacza pozwolenie."
       },
       {
-        tip: "Zanim przetłumaczysz czasownik modalny, spójrz na bezokolicznik. Z bezokolicznikiem czasu przeszłego (<em>gelesen haben, gewesen sein</em>) albo z czasownikiem stanu (<em>sein</em>) znaczenie jest prawie zawsze subiektywne: pewność albo źródło. Z czasownikiem czynności w teraźniejszości (<em>Er soll kommen</em>) to polecenie."
+        tip: "Zanim przetłumaczysz czasownik modalny, spójrz na kontekst, a dopiero potem na bezokolicznik. Bezokolicznik czasu przeszłego (<em>gelesen haben, gewesen sein</em>) i <em>sein</em> często towarzyszą znaczeniu subiektywnemu, ale go nie przesądzają: <em>Du musst bis Freitag angekommen sein</em> to termin. Czasownik czynności też może być subiektywny: <em>Er muss schlafen</em> bywa wnioskiem („na pewno śpi”), a <em>Er soll kommen</em> zwykle poleceniem."
       }
     ],
     grammar: {
@@ -328,7 +328,7 @@ LINGUAI.addStrings("pl", {
         { tr: "Chyba to nie wszystko?", note: "etwa: zaskoczenie, spodziewana odpowiedź „nie”" },
         { tr: "Autobus odjechał, no to pójdziemy pieszo, trudno.", note: "halt: rezygnacja" },
         { tr: "Nic na to nie poradzisz.", note: "eben: rezygnacja" },
-        { tr: "Czyżbyś znowu zapomniał klucza?", note: "etwa: podejrzenie w pytaniu rozstrzygnięcia" }
+        { tr: "Czyżbyś zapomniał klucza?", note: "etwa: podejrzenie w pytaniu rozstrzygnięcia" }
       ]
     },
     vocab: [
@@ -473,7 +473,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         q: "Uzupełnij za pomocą soll, will albo werden.",
-        tr: "Według artykułu minister miał zniszczyć dokumenty. On sam twierdzi, że nic o tym nie wie, a jego rzecznik obiecuje: najpóźniej w piątek wszystko wyjaśnimy.",
+        tr: "Według artykułu minister miał zniszczyć dokumenty. On sam twierdzi, że nic o tym nie wiedział, a jego rzecznik obiecuje: najpóźniej w piątek wszystko wyjaśnimy.",
         why: "<i>soll</i>: mówi to artykuł. <i>will</i>: twierdzi to sam minister. <i>werden</i>: Futur II zakończenia z <i>bis Freitag</i>."
       },
       {

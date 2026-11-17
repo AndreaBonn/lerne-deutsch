@@ -46,12 +46,12 @@ LINGUAI.addStrings("en", {
           ["werden + infinitive", "supposition about the present", "Er wird wohl noch im Stau stehen."],
           ["werden + past participle + haben/sein", "supposition about the past", "Sie wird die Nachricht inzwischen gelesen haben."],
           ["werden + past participle + haben/sein with bis", "action completed by a future point", "Bis Ende des Monats werden wir die Studie abgeschlossen haben."],
-          ["werden + infinitive + schon", "reassurance", "Das wird schon klappen."],
+          ["werden + schon + infinitive", "reassurance", "Das wird schon klappen."],
           ["present + time expression", "scheduled future", "Morgen fliege ich nach Wien."]
         ]
       },
       examples: [
-        { tr: "The lights are off, so he'll be asleep by now.", note: "supposition about the present with schon" },
+        { tr: "The lights are off, so she'll be asleep by now.", note: "supposition about the present with schon" },
         { tr: "Someone's ringing. That'll be the postman.", note: "werden + sein: supposition" },
         { tr: "He'll probably still be stuck in traffic.", note: "werden + wohl + infinitive" },
         { tr: "She'll have read the message by now.", note: "Futur II: supposition about the past" },
@@ -157,7 +157,7 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "From obligation to certainty",
-        p: "With <em>sein</em>, <em>haben</em> or a perfect infinitive, modals no longer express obligation or permission, but how sure the speaker is that something is true. <strong>muss</strong> is an almost certain deduction (<em>Es muss geregnet haben, die Straße ist nass</em>), <strong>dürfte</strong> means it is probable (<em>Er dürfte schon angekommen sein</em>), <strong>könnte</strong> that it is possible (<em>Das könnte ein Irrtum sein</em>). <strong>kann nicht</strong> says it is impossible (<em>Das kann nicht stimmen</em>) and <strong>mag</strong> admits something, usually as a concession (<em>Das mag sein, aber ich sehe es anders</em>)."
+        p: "Modals can express not only obligation or permission but also how sure the speaker is that something is true; context and meaning decide which reading you have (<em>Er muss zu Hause sein</em> can be an obligation, <em>Er soll kommen</em> an order or a rumor). With <em>sein</em>, <em>haben</em> or a perfect infinitive the certainty reading is the most frequent one. <strong>muss</strong> is an almost certain deduction (<em>Es muss geregnet haben, die Straße ist nass</em>), <strong>dürfte</strong> means it is probable (<em>Er dürfte schon angekommen sein</em>), <strong>könnte</strong> that it is possible (<em>Das könnte ein Irrtum sein</em>). <strong>kann nicht</strong> says it is impossible (<em>Das kann nicht stimmen</em>) and <strong>mag</strong> admits something, usually as a concession (<em>Das mag sein, aber ich sehe es anders</em>)."
       },
       {
         h: "Reporting: soll and will",
@@ -167,10 +167,10 @@ LINGUAI.addStrings("en", {
         contrast: "English has a very similar system for certainty: <em>must</em> (<em>he must be ill</em>), <em>should</em> (<em>he should be there by now</em>), <em>could</em> or <em>might</em> (<em>it could be a mistake</em>), <em>may</em> (<em>that may be so, but...</em>) and <em>can't</em> (<em>that can't be right</em>). The difference is in reporting. English uses adverbs and phrases such as <em>reportedly</em>, <em>is said to</em>, <em>claims to</em>, <em>allegedly</em>, and the verb itself doesn't change. German chooses the modal according to the source: <em>soll</em> for “is said to”, <em>will</em> for “claims to”. Note also that English <em>should</em> and <em>supposed to</em> cover both a probability and an obligation, whereas German keeps them apart: <em>dürfte</em> for the probability, <em>soll</em> for the obligation or the rumor."
       },
       {
-        trap: "Negation changes the meaning. <em>Er muss nicht krank sein</em> means “he doesn't have to be ill”, “it's not certain that he is”, not “he can't be ill”. For impossibility you need <em>kann nicht</em>: <em>Er kann nicht krank sein, ich habe ihn eben gesehen</em>. English works differently here, because <em>he mustn't be ill</em> is hardly used for this. And <em>dürfte</em> with the meaning of probability must not be confused with <em>darf</em>, which expresses permission, just as English <em>may</em> is not the same as <em>should</em>."
+        trap: "Negation changes the meaning. <em>Er muss nicht krank sein</em> can mean “he isn't necessarily ill” (the epistemic reading) or, in another context, “he doesn't have to be ill”, an absence of obligation; in neither case does it mean “he can't be ill”. For impossibility you need <em>kann nicht</em>: <em>Er kann nicht krank sein, ich habe ihn eben gesehen</em>. English works differently here, because <em>he mustn't be ill</em> is hardly used for this. And <em>dürfte</em> with the meaning of probability must not be confused with <em>darf</em>, which expresses permission, just as English <em>may</em> is not the same as <em>should</em>."
       },
       {
-        tip: "Before translating a modal, look at the infinitive. With a perfect infinitive (<em>gelesen haben, gewesen sein</em>) or a stative verb (<em>sein</em>) the meaning is almost always subjective: certainty or source. With an action verb in the present (<em>Er soll kommen</em>) it is an order."
+        tip: "Before translating a modal, look at the context. A perfect infinitive (<em>gelesen haben, gewesen sein</em>) or a stative verb (<em>sein</em>) often points to certainty or source, and an action verb in the present (<em>Er soll kommen</em>) often to an order, but these are only tendencies: the context and the meaning decide, not the form of the infinitive."
       }
     ],
     grammar: {
@@ -297,7 +297,7 @@ LINGUAI.addStrings("en", {
       },
       {
         h: "Position and register",
-        p: "Particles stand unstressed after the verb and the pronouns, before the new information (<em>Er wird wohl noch schlafen</em>). They are typical of speech, chats and dialogues: in a formal text, such as a report or a letter to a client, they are usually avoided. <em>halt</em> is more colloquial and heard mostly in the south, <em>eben</em> is more neutral, but in most cases they are interchangeable."
+        p: "Particles tend to stand unstressed after the verb and the pronouns, before the new information (<em>Er wird wohl noch schlafen</em>). They are typical of speech, chats and dialogues: in a formal text, such as a report or a letter to a client, they are usually avoided. <em>halt</em> is more colloquial and heard mostly in the south, <em>eben</em> is more neutral, but in most cases they are interchangeable."
       },
       {
         contrast: "English has no particles of this kind and does the same work with intonation, tag questions and small words and phrases: <em>surely</em>, <em>after all</em>, <em>you know</em>, <em>I suppose</em>, <em>oh well</em>, <em>that's just how it is</em>. <em>Hast du etwa ...?</em> is close to “you haven't ..., have you?” or “don't tell me you ...”, <em>Dann warten wir halt</em> to “then we'll just wait, oh well”, and <em>Du weißt ja</em> to “you know” or “as you know”. Where English changes the verb (<em>he'll be</em>) or adds <em>I guess</em>, German adds <em>wohl</em>. None of the five has a fixed equivalent: you learn the function. Beware of one trap: English <em>just</em> is not always <em>halt</em>, because <em>just</em> also means “only” (<em>nur</em>) and “a moment ago” (<em>gerade</em>)."
@@ -341,7 +341,7 @@ LINGUAI.addStrings("en", {
       "to hint, to imply",
       "to reproach, to accuse of",
       "to accept, to put up with (without reacting)",
-      "really (with a nuance of surprise or annoyance)",
+      "of all things, of all days (today of all days)",
       "anyway, in any case",
       "simply, completely"
     ],
@@ -441,8 +441,8 @@ LINGUAI.addStrings("en", {
       },
       {
         q: "A colleague looks at you with suspicion: «Hast du ___ schon wieder die Kaffeekasse geleert?»",
-        hint: "“you haven't, have you...”",
-        why: "<b>etwa</b>: suspicion in a yes/no question, a no is expected. <i>denn</i>, which is more neutral, also works."
+        hint: "“you haven't, have you...”: etwa or denn",
+        why: "<b>etwa</b> or <b>denn</b>: <i>etwa</i> carries suspicion and suggests a no, while <i>denn</i> makes the question more neutral. Both are accepted."
       },
       {
         q: "An expert writes: «Der Brand dürfte durch einen Kurzschluss entstanden sein.» How sure is he?",
@@ -473,7 +473,7 @@ LINGUAI.addStrings("en", {
       },
       {
         q: "Fill in soll, will or werden.",
-        tr: "According to an article the minister is said to have destroyed documents. He claims he knows nothing about it, and his spokesman promises: by Friday we will have cleared everything up.",
+        tr: "According to an article the minister is said to have destroyed documents. He claims he knew nothing about it, and his spokesman promises: by Friday we will have cleared everything up.",
         why: "<i>soll</i>: an article says so. <i>will</i>: the minister himself claims it. <i>werden</i>: Futur II of completion with <i>bis Freitag</i>."
       },
       {
@@ -487,7 +487,7 @@ LINGUAI.addStrings("en", {
         why: "The first two assess probability: <i>dürfte</i> and <i>muss</i> with <i>sein</i>. In the last two the modals express obligation and prohibition."
       },
       {
-        tr: "The match was canceled yesterday. The field is said to have been under water, but the coach claims he knows nothing about it. The fans will probably be disappointed, but that's football, oh well.",
+        tr: "The match was canceled yesterday. The field is said to have been under water, but the coach claims he knew nothing about it. The fans will probably be disappointed, but that's football, oh well.",
         why: "<i>soll</i> (others say so), <i>will</i> (he claims it), <i>wohl</i> (supposition) and <i>eben</i> (resignation)."
       },
       {

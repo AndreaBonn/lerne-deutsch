@@ -26,7 +26,7 @@ LINGUAI.addUnits("C1", [
         },
         vocab: [
           { it: "die Annahme", plural: "die Annahmen", ex: "Wir gehen von der Annahme aus, dass die Preise steigen." },
-          { it: "der Verdacht", plural: "-", ex: "Es besteht der Verdacht, dass die Daten falsch sind." },
+          { it: "der Verdacht", plural: "die Verdachte", ex: "Es besteht der Verdacht, dass die Daten falsch sind." },
           { it: "die Wahrscheinlichkeit", plural: "die Wahrscheinlichkeiten", ex: "Die Wahrscheinlichkeit für Regen liegt bei achtzig Prozent." },
           { it: "der Anhaltspunkt", plural: "die Anhaltspunkte", ex: "Dafür gibt es bisher keine Anhaltspunkte." },
           { it: "der Zweifel", plural: "die Zweifel", ex: "Daran habe ich keinen Zweifel." },
@@ -123,7 +123,7 @@ LINGUAI.addUnits("C1", [
           { t: "fill", a: ["will"] },
           {
             t: "cloze",
-            text: "Die Rollläden sind unten und der Briefkasten quillt über: Familie Albers {{1}} verreist sein, etwas anderes ist kaum denkbar. Einem Nachbarn zufolge {{2}} sie schon vor zwei Wochen abgefahren sein, aber der Hausmeister {{3}} davon nichts mitbekommen haben.",
+            text: "Die Rollläden sind unten und der Briefkasten quillt über: Familie Albers {{1}} verreist sein, etwas anderes ist kaum denkbar. Einem Nachbarn zufolge {{2}} sie schon vor zwei Wochen abgefahren sein, aber der Hausmeister selbst {{3}} davon nichts mitbekommen haben.",
             gaps: [["muss"], ["soll"], ["will"]]
           },
           {

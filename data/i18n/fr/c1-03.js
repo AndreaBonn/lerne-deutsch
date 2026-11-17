@@ -7,7 +7,7 @@
 LINGUAI.addStrings("fr", {
   "unit:c1-u05": {
     title: "Le travail terminé",
-    grammarNote: "Participe I et II comme épithète (épithète étendue avec modération ; le type complet et le Gerundivum relèvent du C2) · nominalisation à la place de la subordonnée (nach Abschluss, wegen, bei, trotz, zur, infolge) · cas où la subordonnée doit rester (aucun nom adapté, plusieurs sujets, nuance modale, lisibilité)"
+    grammarNote: "Participe I et II comme épithète (épithète étendue avec modération ; le type avec zu et les constructions plus longues sont plus formels et plus complexes) · nominalisation à la place de la subordonnée (nach Abschluss, wegen, bei, trotz, zur, infolge) · cas où la subordonnée doit rester (aucun nom adapté, plusieurs sujets, nuance modale, lisibilité)"
   },
   "lesson:c1-u05-l1": {
     theme: "Procès-verbaux, rapports et textes académiques",
@@ -21,14 +21,14 @@ LINGUAI.addStrings("fr", {
     theory: [
       {
         h: "Le participe devant le nom",
-        p: "Dans les textes formels, une relative se comprime en un participe placé devant le nom, qui prend la terminaison d'un adjectif. Le <strong>participe I</strong> (infinitif + <em>-d</em>) est actif et simultané : <em>die steigenden Kosten</em> = <em>die Kosten, die steigen</em>. Le <strong>participe II</strong> d'un verbe transitif est passif et achevé : <em>die geprüften Unterlagen</em> = <em>die Unterlagen, die geprüft wurden</em>. Le participe II d'un verbe intransitif (avec <em>sein</em>) est en revanche actif et achevé : <em>die gestiegenen Kosten</em> = <em>die Kosten, die gestiegen sind</em>."
+        p: "Dans les textes formels, une relative se comprime en un participe placé devant le nom, qui prend la terminaison d'un adjectif. Le <strong>participe I</strong> (infinitif + <em>-d</em>) est actif et simultané : <em>die steigenden Kosten</em> = <em>die Kosten, die steigen</em>. Le <strong>participe II</strong> d'un verbe transitif est passif et le plus souvent achevé : <em>die geprüften Unterlagen</em> = <em>die Unterlagen, die geprüft wurden</em> ; la valeur temporelle dépend toutefois du verbe et du contexte (<em>die gerade bearbeiteten Anträge</em> : passif en cours). Le participe II d'un verbe intransitif (avec <em>sein</em>) est en revanche actif et achevé : <em>die gestiegenen Kosten</em> = <em>die Kosten, die gestiegen sind</em>."
       },
       {
         h: "L'épithète étendue, avec modération",
-        p: "Entre l'article et le nom peuvent aussi se trouver des compléments, mais le participe reste toujours <strong>juste avant le nom</strong> : <em>die im letzten Quartal erzielten Umsätze</em>. Dans les procès-verbaux et les rapports, un complément ou deux suffisent ; au-delà, le lecteur perd le fil et la relative est le meilleur choix. Le type avec <em>zu</em> (<em>die zu prüfenden Unterlagen</em>) et les constructions plus longues relèvent du C2."
+        p: "Entre l'article et le nom peuvent aussi se trouver des compléments, mais le participe reste toujours <strong>juste avant le nom</strong> : <em>die im letzten Quartal erzielten Umsätze</em>. Dans les procès-verbaux et les rapports, un complément ou deux suffisent ; au-delà, le lecteur perd le fil et la relative est le meilleur choix. Le type avec <em>zu</em> (<em>die zu prüfenden Unterlagen</em>) et les constructions plus longues sont des tournures formelles plus complexes, à employer avec prudence."
       },
       {
-        contrast: "Le français place le participe <strong>après</strong> le nom, et le complément le suit : <em>les résultats obtenus au deuxième trimestre</em>, <em>les données recueillies par le service</em>. En allemand, tout ce qui suivrait le participe en français passe <strong>devant</strong> le nom, entre l'article et le participe : <em>die vom Amt erhobenen Daten</em>. Le participe présent français s'accorde rarement avec un nom en dehors de quelques adjectifs (<em>les coûts croissants</em>, plus souvent <em>en hausse</em> ou <em>qui augmentent</em>), alors que <em>steigend, laufend, vorliegend</em> sont partout dans la langue écrite. Et l'allemand accorde le participe en genre, en nombre et en cas par la terminaison, comme un adjectif, ce qui n'est pas visible en français avec un participe placé après le nom."
+        contrast: "Le français place le participe <strong>après</strong> le nom, et le complément le suit : <em>les résultats obtenus au deuxième trimestre</em>, <em>les données recueillies par le service</em>. En allemand, tout ce qui suivrait le participe en français passe <strong>devant</strong> le nom, entre l'article et le participe : <em>die vom Amt erhobenen Daten</em>. Le participe présent français s'accorde rarement avec un nom en dehors de quelques adjectifs (<em>les coûts croissants</em>, plus souvent <em>en hausse</em> ou <em>qui augmentent</em>), alors que <em>steigend, laufend, vorliegend</em> sont partout dans la langue écrite. Le participe passé français employé comme épithète s'accorde lui aussi en genre et en nombre (<em>les données recueillies</em>), mais il ne connaît pas le cas : l'allemand, lui, marque en plus le cas par la terminaison (<em>die erhobenen Daten</em>, <em>der erhobenen Daten</em>), comme pour un adjectif."
       },
       {
         trap: "<em>die prüfenden Unterlagen</em> ne veut pas dire « les documents examinés » : ce sont des documents qui <em>examinent</em> quelque chose. Pour le sens passif, il faut le participe II, <em>die geprüften Unterlagen</em>. Et ne confondez pas les deux temps : <em>die steigenden Kosten</em> augmentent encore, <em>die gestiegenen Kosten</em> ont déjà augmenté. Puis la terminaison : après <em>die</em> au pluriel, c'est <em>-en</em>, donc <em>die geprüften Unterlagen</em>, jamais <em>die geprüfte Unterlagen</em>."
@@ -39,21 +39,21 @@ LINGUAI.addStrings("fr", {
     ],
     grammar: {
       title: "Participe I et II comme épithète",
-      note: "<b>Participe I</b> = infinitif + <i>-d</i> : actif, simultané. <b>Participe II</b> : passif et achevé (verbes transitifs), actif et achevé (intransitifs avec <i>sein</i>). Toujours devant le nom, avec la terminaison de l'adjectif ; les compléments se placent entre l'article et le participe.",
+      note: "<b>Participe I</b> = infinitif + <i>-d</i> : actif, simultané. <b>Participe II</b> : passif et le plus souvent achevé (verbes transitifs ; la valeur temporelle dépend du verbe et du contexte), actif et achevé (intransitifs avec <i>sein</i>). Toujours devant le nom, avec la terminaison de l'adjectif ; les compléments se placent entre l'article et le participe.",
       table: {
         head: ["participe", "sens", "relative correspondante", "exemple"],
         rows: [
           ["participe I", "actif, simultané", "die Kosten, die steigen", "die steigenden Kosten"],
-          ["participe II (transitif)", "passif, achevé", "die Unterlagen, die geprüft wurden", "die geprüften Unterlagen"],
+          ["participe II (transitif)", "passif, le plus souvent achevé", "die Unterlagen, die geprüft wurden", "die geprüften Unterlagen"],
           ["participe II (intransitif)", "actif, achevé", "die Kosten, die gestiegen sind", "die gestiegenen Kosten"],
           ["épithète étendue", "complément devant le participe", "die Umsätze, die im Quartal erzielt wurden", "die im Quartal erzielten Umsätze"]
         ]
       },
       examples: [
         { tr: "Les coûts énergétiques en hausse pèsent sur les ménages.", note: "participe I : la hausse est en cours" },
-        { tr: "Les coûts en hausse sont expliqués dans le rapport.", note: "participe II d'un verbe intransitif : actif et achevé" },
+        { tr: "Les coûts qui ont augmenté sont expliqués dans le rapport.", note: "participe II d'un verbe intransitif : actif et achevé" },
         { tr: "Les documents vérifiés sont joints au dossier.", note: "participe II transitif : passif, « ont été vérifiés »" },
-        { tr: "Les membres qui participent à la séance ont approuvé la demande.", note: "participe I avec complément : an der Sitzung teilnehmenden" },
+        { tr: "Les membres qui participaient à la séance ont approuvé la demande.", note: "participe I avec complément (les membres qui participaient, simultanément au vote) : an der Sitzung teilnehmenden" },
         { tr: "Le budget adopté par le conseil d'administration entre en vigueur en janvier.", note: "vom Vorstand verabschiedete : le complément d'agent précède le participe" },
         { tr: "Les recettes réalisées au dernier trimestre ont été supérieures aux attentes.", note: "épithète étendue courte : im letzten Quartal erzielten" }
       ]
@@ -135,7 +135,7 @@ LINGUAI.addStrings("fr", {
         why: "<i>Die im zweiten Quartal erzielten Ergebnisse wurden in der Sitzung besprochen.</i> Le Perfekt passif (<i>sind ... besprochen worden</i>) et l'inversion avec <i>In der Sitzung</i> en tête sont aussi acceptés. Le complément <i>im zweiten Quartal</i> se place devant le participe."
       },
       {
-        tr: "Les décisions consignées au procès-verbal sont valables immédiatement. Les négociations en cours seront conclues à l'automne et les coûts en hausse continuent de peser sur le budget.",
+        tr: "Les décisions consignées au procès-verbal sont valables immédiatement. Les négociations en cours seront conclues à l'automne et les coûts accrus continuent de peser sur le budget.",
         why: "Dans <i>Protokoll</i>, l'accent tombe sur <b>koll</b> ; dans <i>Verhandlungen</i>, l'accent tombe sur <b>hand</b> ; dans <i>abgeschlossen</i>, l'accent tombe sur <b>schlos</b> ; dans <i>Haushalt</i>, l'accent tombe sur <b>Haus</b>."
       },
       {
@@ -156,14 +156,14 @@ LINGUAI.addStrings("fr", {
     theory: [
       {
         h: "De la subordonnée au nom",
-        p: "Dans les textes formels, une subordonnée peut se comprimer : le verbe devient un nom (<em>abschließen</em> → <em>der Abschluss</em>), la conjonction devient une préposition, le sujet et l'objet du verbe passent au génitif. <em>Nachdem die Prüfung abgeschlossen ist, ...</em> → <em>Nach Abschluss der Prüfung ...</em>. La préposition dépend du <strong>rapport logique</strong> : cause (<em>weil</em> → <em>wegen, aufgrund, infolge</em> + génitif), concession (<em>obwohl</em> → <em>trotz, ungeachtet</em> + génitif), condition (<em>wenn</em> → <em>bei</em> + datif), temps (<em>nachdem</em> → <em>nach</em> + datif), but (<em>um ... zu</em> → <em>zu</em> + datif)."
+        p: "Dans les textes formels, une subordonnée peut se comprimer : le verbe devient un nom (<em>abschließen</em> → <em>der Abschluss</em>), la conjonction devient une préposition, et le sujet ou l'objet du verbe peut passer au génitif (ou être omis, ou exprimé autrement selon le contexte). <em>Nachdem die Prüfung abgeschlossen ist, ...</em> → <em>Nach Abschluss der Prüfung ...</em>. La préposition dépend du <strong>rapport logique</strong> : cause (<em>weil</em> → <em>wegen, aufgrund, infolge</em> + génitif), concession (<em>obwohl</em> → <em>trotz, ungeachtet</em> + génitif), condition (<em>wenn</em> → <em>bei</em> + datif), temps (<em>nachdem</em> → <em>nach</em> + datif), but (<em>um ... zu</em> → <em>zu</em> + datif)."
       },
       {
         h: "Ce qu'on perd",
         p: "Le groupe nominal est compact mais plus pauvre : le temps, le mode et souvent l'agent disparaissent. <em>Nach Abschluss der Prüfung</em> ne dit ni qui a terminé ni s'il s'agit du passé ou du futur, on le déduit du contexte. C'est pourquoi cela fonctionne bien quand le sujet et le temps sont évidents, et mal quand ils ne le sont pas (voir la leçon 3)."
       },
       {
-        contrast: "Le français nominalise aussi (<em>à l'issue de la vérification</em>, <em>en cas de besoin</em>, <em>pour la clarification des questions ouvertes</em>), mais il dispose de l'infinitif et du gérondif (<em>après avoir terminé</em>), qui n'existent pas ainsi en allemand. En allemand, ce qui suit le nom est un <strong>génitif sans préposition</strong> (<em>die Klärung offener Fragen</em>, là où le français ajoute <em>de</em>), et les prépositions de cause et de concession se construisent avec le génitif, avec les terminaisons qui en découlent : <em>offener Fragen</em> sans article, <em>der gestiegenen Preise</em> avec l'article."
+        contrast: "Le français nominalise aussi (<em>à l'issue de la vérification</em>, <em>en cas de besoin</em>, <em>pour la clarification des questions ouvertes</em>), mais il dispose aussi de l'infinitif passé (<em>après avoir terminé</em>), à ne pas confondre avec le gérondif (<em>en terminant</em>) : l'allemand rend ces tournures par un nom (<em>nach Abschluss</em>) ou par une subordonnée (<em>nachdem ... abgeschlossen hat</em>). En allemand, ce qui suit le nom est un <strong>génitif sans préposition</strong> (<em>die Klärung offener Fragen</em>, là où le français ajoute <em>de</em>), et les prépositions de cause et de concession se construisent avec le génitif, avec les terminaisons qui en découlent : <em>offener Fragen</em> sans article, <em>der gestiegenen Preise</em> avec l'article."
       },
       {
         trap: "Une préposition fausse change le rapport logique : <em>Nach mehrfacher Mahnung blieb die Zahlung aus</em> dit que le paiement manque <em>après</em> les rappels, alors que <em>Trotz mehrfacher Mahnung</em> dit qu'il manque <em>malgré</em> les rappels. Attention aussi aux cas : <em>infolge</em> et <em>trotz</em> veulent le génitif (<em>Infolge der gestiegenen Preise</em>), pas le datif."
@@ -174,7 +174,7 @@ LINGUAI.addStrings("fr", {
     ],
     grammar: {
       title: "Nominalisation à la place de la subordonnée",
-      note: "Le verbe devient un nom, la conjonction une préposition : <b>nach, bei, zu</b> + datif ; <b>wegen, aufgrund, infolge, trotz</b> + génitif. Le sujet et l'objet du verbe passent au génitif.",
+      note: "Le verbe devient un nom, la conjonction une préposition : <b>nach, bei, zu</b> + datif ; <b>wegen, aufgrund, infolge, trotz</b> + génitif. Le sujet ou l'objet du verbe peut passer au génitif ; selon le contexte, ils peuvent aussi être omis ou exprimés autrement.",
       table: {
         head: ["subordonnée", "groupe nominal", "exemple"],
         rows: [
@@ -291,17 +291,17 @@ LINGUAI.addStrings("fr", {
     theory: [
       {
         h: "Les quatre cas où la subordonnée reste",
-        p: "La forme compacte n'est pas toujours la meilleure. La subordonnée est préférable quand : (1) il n'y a <strong>pas de nom adapté</strong> ou que le nom sonne de façon peu naturelle ; (2) il y a <strong>plusieurs sujets</strong> ou plusieurs prédicats, et que le groupe nominal cacherait qui fait quoi : <em>weil der Vorsitzende erkrankt war und die Referentin im Ausland festsaß</em> ; (3) il faut une <strong>nuance modale</strong> ou de probabilité (<em>sollte, könnte, offenbar, nur dann ..., wenn</em>), qu'un nom n'exprime pas ; (4) la <strong>lisibilité</strong> en souffre, par exemple avec plusieurs génitifs et compléments à la file."
+        p: "La forme compacte n'est pas toujours la meilleure. La subordonnée est préférable quand : (1) il n'y a <strong>pas de nom adapté</strong> ou que le nom sonne de façon peu naturelle ; (2) il y a <strong>plusieurs sujets</strong> ou plusieurs prédicats, et que le groupe nominal cacherait qui fait quoi : <em>weil der Vorsitzende erkrankt war und die Referentin im Ausland festsaß</em> ; (3) il faut une <strong>nuance modale</strong> ou de probabilité (<em>sollte, könnte, offenbar, nur dann ..., wenn</em>), qu'un nom exprime plus difficilement ; (4) la <strong>lisibilité</strong> en souffre, par exemple avec plusieurs génitifs et compléments à la file."
       },
       {
         h: "Comment choisir",
         p: "Avant de nominaliser, posez quatre questions. Qui agit, et le nom le dit-il ? Existe-t-il un nom naturel (<em>Abschluss, Klärung</em>) ? Dois-je garder un temps ou un mode ? Le lecteur comprend-il dès la première lecture ? Si la réponse est oui partout, la forme compacte fonctionne (<em>Nach Abschluss der Prüfung ...</em>) ; sinon la subordonnée est plus claire, et dans les textes destinés à un public non spécialiste elle l'est presque toujours."
       },
       {
-        contrast: "Le français dispose d'outils compacts que l'allemand n'a pas : <em>après avoir terminé</em>, <em>les travaux terminés</em>, <em>au cas où la vérification durerait plus longtemps</em>. En allemand, le gérondif manque, et l'infinitif avec <em>ohne zu</em> ou <em>um ... zu</em> exige le même sujet : quand il y a deux sujets, il faut une subordonnée avec <em>dass</em> ou <em>weil</em>. La nuance de <em>au cas où ... devrait</em> ou de <em>si jamais</em> se rend par <em>Sollte die Prüfung länger dauern, ...</em> ou <em>falls ... ändern sollten</em>."
+        contrast: "Le français dispose lui aussi de tournures compactes : <em>après avoir terminé</em> (infinitif passé), <em>les travaux terminés</em> (participe absolu), et la subordonnée <em>au cas où la vérification durerait plus longtemps</em>, qui est une proposition et non un outil compact. En allemand, l'infinitif avec <em>ohne zu</em> ou <em>um ... zu</em> exige le même sujet ; avec deux sujets, on passe à une subordonnée (<em>dass, weil, nachdem</em>) ou, selon le cas, à un groupe nominal. Pour un francophone, le piège est de calquer la structure française : <em>après avoir terminé</em> n'a pas d'infinitif allemand équivalent (<em>nachdem er abgeschlossen hat</em> ou <em>nach Abschluss</em>). La nuance de <em>au cas où ... devrait</em> ou de <em>si jamais</em> se rend par <em>Sollte die Prüfung länger dauern, ...</em> ou <em>falls ... ändern sollten</em>."
       },
       {
-        trap: "Ne nominalisez pas tout simplement parce que « ça fait formel » : le résultat est un allemand de bureau difficile à lire, et un nom comme <em>seitens der Teilnehmenden</em> cache le sujet. Et <em>sollte</em> en première position n'est pas le « devrait » d'obligation : <em>Sollte die Prüfung länger dauern</em> veut dire « si jamais la vérification devait durer plus longtemps », une condition peu probable."
+        trap: "Ne nominalisez pas tout simplement parce que « ça fait formel » : le résultat est un allemand de bureau difficile à lire, et une préposition comme <em>seitens der Teilnehmenden</em> cache le sujet. Et <em>sollte</em> en première position n'est pas le « devrait » d'obligation : <em>Sollte die Prüfung länger dauern</em> veut dire « si jamais la vérification devait durer plus longtemps », une condition hypothétique."
       },
       {
         tip: "Lisez la phrase à voix haute. Si vous devez reprendre votre souffle au milieu d'un groupe nominal, parce qu'il y a deux génitifs et un <em>durch</em>, coupez-la en une subordonnée."
@@ -309,7 +309,7 @@ LINGUAI.addStrings("fr", {
     ],
     grammar: {
       title: "Forme compacte ou subordonnée",
-      note: "Forme compacte : même sujet, nom naturel, temps évident. Subordonnée : plusieurs sujets, aucun nom adapté, nuance modale, génitifs à la file. Pour l'éventualité : <i>Sollte ..., falls ... sollten</i>.",
+      note: "Forme compacte : même sujet, nom naturel, temps évident. Subordonnée : plusieurs sujets, aucun nom adapté, nuance modale, génitifs à la file. Pour l'éventualité hypothétique : <i>Sollte ..., falls ... sollten</i>.",
       table: {
         head: ["situation", "choix", "exemple"],
         rows: [
@@ -323,9 +323,9 @@ LINGUAI.addStrings("fr", {
       examples: [
         { tr: "La séance a été reportée parce que le président était malade et que la rapporteuse était bloquée à l'étranger.", note: "deux sujets : la forme nominale en cacherait un" },
         { tr: "Le contrat ne sera signé que lorsque le conseil aura approuvé et que le financement sera assuré.", note: "deux conditions avec des verbes différents : subordonnée" },
-        { tr: "Si la vérification devait durer plus longtemps, la date sera reportée.", note: "Sollte en première position : éventualité peu probable" },
+        { tr: "Si la vérification devait durer plus longtemps, la date sera reportée.", note: "Sollte en première position : condition hypothétique (« si jamais »)" },
         { tr: "Le financement tombe si les conditions-cadres devaient changer.", note: "falls ... ändern sollten : nuance modale" },
-        { tr: "Les résultats ne sont significatifs que si l'échantillon est représentatif.", note: "nur dann ..., wenn : condition nécessaire, impossible à rendre avec bei" },
+        { tr: "Les résultats ne sont significatifs que si l'échantillon est représentatif.", note: "nur dann ..., wenn : condition nécessaire ; un groupe prépositionnel comme nur bei ... peut la conserver" },
         { tr: "L'évaluation a commencé après que les participants avaient rempli le questionnaire.", note: "subordonnée temporelle au plus-que-parfait : plus lisible qu'une chaîne de génitifs" }
       ]
     },
@@ -356,7 +356,7 @@ LINGUAI.addStrings("fr", {
       {
         q: "« Sollte die Prüfung länger dauern, wird der Termin verschoben. » Que perd-on avec la version nominale « Bei längerer Dauer der Prüfung wird der Termin verschoben » ?",
         opts: [
-          "la nuance d'éventualité peu probable exprimée par sollte",
+          "la nuance d'éventualité hypothétique (« si jamais ») exprimée par sollte",
           "la valeur conditionnelle de la phrase",
           "le sujet, parce que Prüfung disparaît"
         ],
@@ -374,12 +374,12 @@ LINGUAI.addStrings("fr", {
       {
         q: "Complétez : « Die Ergebnisse sind nur dann aussagekräftig, ___ die Stichprobe repräsentativ ist. »",
         hint: "conjonction conditionnelle",
-        why: "<b>wenn</b> : <i>nur dann ..., wenn</i> exprime une condition nécessaire. Avec un groupe nominal (<i>bei repräsentativer Stichprobe</i>), la force de <i>nur dann</i> se perd."
+        why: "<b>wenn</b> : <i>nur dann ..., wenn</i> exprime une condition nécessaire. Un groupe prépositionnel qui garde la restriction (<i>nur bei einer repräsentativen Stichprobe</i>) est possible aussi ; ici la réponse attendue est la conjonction."
       },
       {
         q: "Complétez avec le verbe modal : « Falls sich die Rahmenbedingungen ändern ___, entfällt die Förderung. »",
-        hint: "Konjunktiv II d'un modal : éventualité peu probable",
-        why: "<b>sollten</b> : <i>falls ... sollten</i> signale une éventualité lointaine, la nuance qu'une forme nominale ne peut pas rendre."
+        hint: "Konjunktiv II d'un modal : éventualité hypothétique",
+        why: "<b>sollten</b> : <i>falls ... sollten</i> signale une éventualité hypothétique (« si jamais »), nuance qu'une forme nominale rend plus difficilement."
       },
       {
         q: "Complétez les deux conditions d'un contrat.",
@@ -487,7 +487,7 @@ LINGUAI.addStrings("fr", {
       {
         q: "Complétez le communiqué avec le participe II et la préposition.",
         tr: "Nous vous informerons à temps. Les mesures prévues par nos soins ne deviendront effectives qu'après la fin de la vérification.",
-        why: "<i>geplanten</i> (ou <i>vorgesehenen</i>) : participe II passif avec <b>-en</b>. <i>nach</i> ou <i>mit Abschluss der Prüfung</i> : temps avec <i>nach</i> + datif, ou « avec la fin »."
+        why: "<i>geplanten</i> (ou <i>vorgesehenen</i>) : participe II passif avec <b>-en</b>. <i>nach</i> : temps avec <i>nach</i> + datif, <i>nach Abschluss der Prüfung</i> (« après la fin de la vérification »)."
       },
       {
         q: "Traduisez : « Les décisions prises en réunion seront communiquées après la fin de la vérification. » (die Sitzung, die Entscheidung, mitteilen, der Abschluss, die Prüfung)",
@@ -498,7 +498,7 @@ LINGUAI.addStrings("fr", {
         why: "Dans <i>fertiggestellt</i>, l'accent tombe sur <b>fer</b> ; dans <i>Beschlüsse</i>, l'accent tombe sur <b>schlüs</b> ; dans <i>umgesetzt</i>, l'accent tombe sur <b>um</b>."
       },
       {
-        tr: "Les coûts en hausse continueront de peser sur le budget.",
+        tr: "Les coûts accrus continueront de peser sur le budget.",
         why: "Dans <i>gestiegenen</i>, l'accent tombe sur <b>stie</b> ; dans <i>belasten</i>, l'accent tombe sur <b>las</b> ; dans <i>Haushalt</i>, l'accent tombe sur <b>Haus</b>."
       }
     ]

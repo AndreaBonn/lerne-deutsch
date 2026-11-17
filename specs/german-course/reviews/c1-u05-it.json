@@ -1,0 +1,43 @@
+{
+  "bundleHash": "9afb98a73a8e38231a97c149532bf213a0f3f759e454bdd8bcd903dbe5e89035",
+  "findings": [
+    {
+      "kind": "traduzione",
+      "msg": "«Teilnehmenden» è riferito alla seduta passata in cui i membri votarono; «che partecipano» sposta la partecipazione al presente. Correggere in «I membri che partecipavano alla seduta hanno approvato la richiesta».",
+      "path": "merged.lessons[0].grammar.examples[3].tr"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La nominalizzazione non trasforma necessariamente sia il soggetto sia l'oggetto in genitivi: può ometterli, usare un complemento preposizionale o richiedere un'altra costruzione. Sostituire la regola assoluta con una spiegazione delle possibilità, corredata da esempi.",
+      "path": "merged.lessons[1].grammar.note"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La regola secondo cui soggetto e oggetto diventano genitivi è troppo generale e fuorviante: entrambi possono anche non essere espressi oppure essere resi con altri complementi. Precisare che il genitivo è una possibilità, non una trasformazione obbligatoria.",
+      "path": "merged.lessons[1].theory[0].p"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Indicare «stesso soggetto» come criterio per la forma compatta è fuorviante: nell'esempio «Nach Abschluss der Prüfung wird der Bericht veröffentlicht» il soggetto grammaticale della principale è «der Bericht», che non compie l'esame. Formulare il criterio in termini di chiarezza degli attori e delle relazioni tra gli eventi.",
+      "path": "merged.lessons[2].grammar.note"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La tabella associa la forma compatta allo «stesso soggetto», ma l'esempio non dimostra tale requisito: «der Bericht» è il soggetto della principale e non l'agente della verifica. Sostituire il criterio con la chiarezza dell'agente nel contesto.",
+      "path": "merged.lessons[2].grammar.table.rows[0]"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Seitens der Teilnehmenden» non è un nome: «seitens» è una preposizione che regge il genitivo. Correggere «un nome come» in «un'espressione come».",
+      "path": "merged.lessons[2].theory[3].trap"
+    },
+    {
+      "kind": "punteggiatura",
+      "msg": "Entrambe le risposte omettono la virgola obbligatoria che separa la subordinata con «nachdem» dalla principale. Inserire la virgola dopo «begann» nella prima e dopo «hatten» nella seconda; prevedere anche la punteggiatura nei token o chiarire che viene aggiunta automaticamente.",
+      "path": "neutral.lessons[2].exercises[7].a"
+    }
+  ],
+  "lang": "it",
+  "unit": "c1-u05",
+  "verdict": "fail"
+}

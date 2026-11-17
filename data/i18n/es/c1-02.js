@@ -75,13 +75,13 @@ LINGUAI.addStrings("es", {
     ],
     exercises: [
       {
-        q: "En el chat de la oficina lees tres frases sobre el jefe. ¿Cuál describe una acción futura y no una conjetura?",
+        q: "En el chat de la oficina lees tres frases sobre el jefe. El regreso de las vacaciones está fijado en el calendario de la empresa. ¿Qué frase presenta ese regreso como una acción futura programada y no como una conjetura?",
         opts: [
           "Der Chef wird nächste Woche aus dem Urlaub zurückkehren.",
           "Der Chef wird jetzt im Urlaub sein, er hat es ja angekündigt.",
           "Der Chef wird die Mail längst gelesen haben."
         ],
-        why: "La primera lleva <i>nächste Woche</i>: un hecho que ocurrirá, es decir, un futuro. En las otras el momento es el presente (<i>jetzt</i>) o el pasado (<i>längst gelesen haben</i>): son conjeturas."
+        why: "Con el regreso ya fijado en el calendario, <i>nächste Woche</i> sitúa la primera frase como un hecho programado, es decir, un futuro. En las otras el momento es el presente (<i>jetzt</i>) o el pasado (<i>längst gelesen haben</i>): son conjeturas."
       },
       {
         q: "Una cadena de tiendas anuncia: «Bis Jahresende werden wir alle Filialen modernisiert haben.» ¿Qué expresa el Futur II?",
@@ -90,7 +90,7 @@ LINGUAI.addStrings("es", {
           "una conjetura sobre algo que ya ha ocurrido",
           "una pasiva de presente"
         ],
-        why: "<i>bis Jahresende</i> fija el punto futuro antes del cual la acción estará terminada, y quien habla asume un compromiso, no hace una conjetura: además falta un adverbio como <i>wohl</i>."
+        why: "<i>bis Jahresende</i> fija el punto futuro antes del cual la acción estará terminada,, y el anuncio de la cadena expresa un compromiso, no una conjetura."
       },
       {
         q: "Sabes que la carta se entregó ayer, pero no sabes si el destinatario ya la ha leído. ¿Qué frase formula la conjetura correcta?",
@@ -157,20 +157,20 @@ LINGUAI.addStrings("es", {
     theory: [
       {
         h: "Del deber a la certeza",
-        p: "Con <em>sein</em>, <em>haben</em> o un infinitivo perfecto, los modales ya no expresan obligación o permiso, sino cuán seguro está el hablante de que algo es verdad. <strong>muss</strong> es una deducción casi segura (<em>Es muss geregnet haben, die Straße ist nass</em>), <strong>dürfte</strong> indica que es probable (<em>Er dürfte schon angekommen sein</em>), <strong>könnte</strong> que es posible (<em>Das könnte ein Irrtum sein</em>). <strong>kann nicht</strong> dice que es imposible (<em>Das kann nicht stimmen</em>) y <strong>mag</strong> admite, normalmente como concesión (<em>Das mag sein, aber ich sehe es anders</em>)."
+        p: "Con <em>sein</em>, <em>haben</em> o un infinitivo perfecto, los modales suelen expresar, en lugar de obligación o permiso, cuán seguro está el hablante de que algo es verdad; lo decide el contexto. <strong>muss</strong> es una deducción casi segura (<em>Es muss geregnet haben, die Straße ist nass</em>), <strong>dürfte</strong> indica que es probable (<em>Er dürfte schon angekommen sein</em>), <strong>könnte</strong> que es posible (<em>Das könnte ein Irrtum sein</em>). <strong>kann nicht</strong> dice que es imposible (<em>Das kann nicht stimmen</em>) y <strong>mag</strong> admite, normalmente como concesión (<em>Das mag sein, aber ich sehe es anders</em>)."
       },
       {
         h: "Referir: soll y will",
         p: "Otros dos modales refieren una fuente. <strong>soll</strong> dice que lo afirman otros y el hablante no lo garantiza: <em>Der Zeuge soll den Täter gesehen haben</em>, «el testigo habría visto al culpable». <strong>will</strong> dice que lo sostiene el propio sujeto, a menudo con un matiz de escepticismo: <em>Die Firma will alle Unterlagen rechtzeitig eingereicht haben</em>, «la empresa asegura haber entregado todo a tiempo». Para el pasado: modal + participio II + <em>haben</em> o <em>sein</em>."
       },
       {
-        contrast: "El español usa el condicional periodístico (<em>el ministro habría destruido los documentos</em>), que no distingue quién lo dice: puede ser la prensa, un testigo o el propio ministro. Para eso hay que añadir una fórmula (<em>según un testigo, afirma que, dice que</em>). El alemán elige el modal según la fuente: <em>soll</em> para «se dice», <em>will</em> para «lo sostiene él». Para la deducción, el español tiene <em>deber de + infinitivo</em> (<em>debe de estar enfermo</em>), que corresponde a <em>muss</em> y también cubre el terreno de <em>dürfte</em>; no lo confundas con <em>deber + infinitivo</em> (<em>debe estar en cama</em>), que suele ser obligación. En alemán la misma forma <em>muss</em> sirve para ambos valores y los distingue el infinitivo: perfecto o <em>sein</em> da deducción, un verbo de acción da obligación."
+        contrast: "El español usa el condicional periodístico (<em>el ministro habría destruido los documentos</em>), que no distingue quién lo dice: puede ser la prensa, un testigo o el propio ministro. Para eso hay que añadir una fórmula (<em>según un testigo, afirma que, dice que</em>). El alemán elige el modal según la fuente: <em>soll</em> para «se dice», <em>will</em> para «lo sostiene él». Para la deducción, el español tiene <em>deber de + infinitivo</em> (<em>debe de estar enfermo</em>), que corresponde a <em>muss</em> y también cubre el terreno de <em>dürfte</em>; no lo confundas con <em>deber + infinitivo</em> (<em>debe estar en cama</em>), que suele ser obligación. En alemán la misma forma <em>muss</em> sirve para ambos valores y los distingue el contexto: <em>Er muss um acht zu Hause sein</em> es una obligación, mientras que <em>Er muss noch arbeiten</em> puede ser obligación o deducción. El infinitivo solo da una pista."
       },
       {
         trap: "La negación cambia el significado. <em>Er muss nicht krank sein</em> quiere decir «no tiene por qué estar enfermo», no «no puede estar enfermo». Para la imposibilidad hace falta <em>kann nicht</em>: <em>Er kann nicht krank sein, ich habe ihn eben gesehen</em>. Y <em>dürfte</em> con valor de probabilidad no debe confundirse con <em>darf</em>, que indica permiso."
       },
       {
-        tip: "Antes de traducir un modal, mira el infinitivo. Con un infinitivo perfecto (<em>gelesen haben, gewesen sein</em>) o con un verbo de estado (<em>sein</em>) el valor es casi siempre subjetivo: certeza o fuente. Con un verbo de acción en presente (<em>Er soll kommen</em>) es una orden."
+        tip: "Antes de traducir un modal, mira el contexto y, como pista, el infinitivo. Un infinitivo perfecto (<em>gelesen haben, gewesen sein</em>) suele apuntar a una lectura subjetiva: certeza o fuente. Pero <em>sein</em> también puede aparecer en una obligación, y <em>Er soll kommen</em> puede ser una orden o referir lo que otros dicen (que vendrá): lo decide el contexto, no la forma del infinitivo."
       }
     ],
     grammar: {
@@ -297,7 +297,7 @@ LINGUAI.addStrings("es", {
       },
       {
         h: "Posición y registro",
-        p: "Las partículas van sin acento detrás del verbo y de los pronombres, antes de la información nueva (<em>Er wird wohl noch schlafen</em>). Son propias del habla, de los chats y de los diálogos: en un texto formal, como un informe o una carta a un cliente, normalmente se evitan. <em>halt</em> es más coloquial y se oye sobre todo en el sur, <em>eben</em> es más neutro, pero en la mayoría de los casos son intercambiables."
+        p: "Las partículas suelen ir sin acento detrás del verbo y de los pronombres, antes de la información nueva, una tendencia más que una regla (<em>Er wird wohl noch schlafen</em>). Son propias del habla, de los chats y de los diálogos: en un texto formal, como un informe o una carta a un cliente, normalmente se evitan. <em>halt</em> es más coloquial y se oye sobre todo en el sur, <em>eben</em> es más neutro, pero en la mayoría de los casos son intercambiables."
       },
       {
         contrast: "El español expresa estos matices con la entonación y con palabras como <em>pues, ya, si, es que, acaso, no será que, qué se le va a hacer</em>: <em>Hast du etwa ...?</em> se parece a «¿acaso has ...?» o «¿no habrás ...?», <em>Dann warten wir halt</em> a «pues esperamos, qué se le va a hacer», <em>Das ist ja ein Ding!</em> a «¡mira qué cosa!» o «¡anda!». Donde el español cambia el tiempo del verbo (<em>estará</em>), el alemán añade <em>wohl</em>. Ninguna de las cinco tiene un equivalente fijo: se aprende la función."
@@ -473,7 +473,7 @@ LINGUAI.addStrings("es", {
       },
       {
         q: "Completa con soll, will o werden.",
-        tr: "Según un artículo, el ministro habría destruido unos documentos. Él asegura que no sabe nada, y su portavoz promete: para el viernes lo habremos aclarado todo.",
+        tr: "Según un artículo, el ministro habría destruido unos documentos. Él asegura que no sabía nada, y su portavoz promete: para el viernes lo habremos aclarado todo.",
         why: "<i>soll</i>: lo dice un artículo. <i>will</i>: lo sostiene el propio ministro. <i>werden</i>: Futur II de acción terminada con <i>bis Freitag</i>."
       },
       {
@@ -487,7 +487,7 @@ LINGUAI.addStrings("es", {
         why: "Las dos primeras valoran la probabilidad: <i>dürfte</i> y <i>muss</i> con <i>sein</i>. En las dos últimas los modales indican obligación y prohibición."
       },
       {
-        tr: "El partido se suspendió ayer. El campo habría estado bajo el agua, pero el entrenador asegura que no sabe nada. Los aficionados probablemente estarán decepcionados, pero en el fútbol es así, qué se le va a hacer.",
+        tr: "El partido se suspendió ayer. El campo habría estado bajo el agua, pero el entrenador asegura que no sabía nada. Los aficionados probablemente estarán decepcionados, pero en el fútbol es así, qué se le va a hacer.",
         why: "<i>soll</i> (lo dicen otros), <i>will</i> (lo sostiene él), <i>wohl</i> (conjetura) y <i>eben</i> (resignación)."
       },
       {

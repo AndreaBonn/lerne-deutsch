@@ -21,14 +21,14 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "The participle before the noun",
-        p: "In formal texts a relative clause can be compressed into a participle placed before the noun, which takes an adjective ending. <strong>Participle I</strong> (infinitive + <em>-d</em>) is active and simultaneous: <em>die steigenden Kosten</em> = <em>die Kosten, die steigen</em>. The <strong>participle II</strong> of a transitive verb is passive and completed: <em>die geprüften Unterlagen</em> = <em>die Unterlagen, die geprüft wurden</em>. The participle II of an intransitive verb (with <em>sein</em>) is active and completed: <em>die gestiegenen Kosten</em> = <em>die Kosten, die gestiegen sind</em>."
+        p: "In formal texts a relative clause can be compressed into a participle placed before the noun, which takes an adjective ending. <strong>Participle I</strong> (infinitive + <em>-d</em>) is active and simultaneous: <em>die steigenden Kosten</em> = <em>die Kosten, die steigen</em>. The <strong>participle II</strong> of a transitive verb is passive and usually completed (the time value depends on the verb and the context): <em>die geprüften Unterlagen</em> = <em>die Unterlagen, die geprüft wurden</em>. The participle II of an intransitive verb (with <em>sein</em>) is active and completed: <em>die gestiegenen Kosten</em> = <em>die Kosten, die gestiegen sind</em>."
       },
       {
         h: "The extended attribute, in moderation",
         p: "Complements can also stand between the article and the noun, but the participle always stays <strong>right before the noun</strong>: <em>die im letzten Quartal erzielten Umsätze</em>. In minutes and reports one or two complements are enough; beyond that the reader loses the thread and a relative clause is the better choice. The type with <em>zu</em> (<em>die zu prüfenden Unterlagen</em>) and longer constructions belong to C2."
       },
       {
-        contrast: "English puts a participle <strong>before</strong> the noun only when it stands alone (<em>the rising costs</em>, <em>the audited documents</em>); as soon as it has a complement it moves <strong>after</strong> the noun: <em>the figures obtained in the second quarter</em>, <em>the data collected by the office</em>. German never does this: everything that English would put after the participle goes <strong>in front</strong> of the noun, between the article and the participle: <em>die vom Amt erhobenen Daten</em>. English does have a similar order in a few fixed phrases (<em>a much-discussed proposal</em>, <em>the newly published report</em>), but German uses it freely and at length in written language, with <em>steigend, laufend, vorliegend</em> everywhere. German also adds an adjective ending to the participle, which English never does."
+        contrast: "English puts a participle <strong>before</strong> the noun when it stands alone or with a short modifier (<em>the rising costs</em>, <em>rapidly rising costs</em>, <em>recently audited documents</em>); a participle with a longer complement usually moves <strong>after</strong> the noun: <em>the figures obtained in the second quarter</em>, <em>the data collected by the office</em>. German does not use that postnominal order for this construction: the complements go <strong>in front</strong> of the noun, between the article and the participle: <em>die vom Amt erhobenen Daten</em>. So the short English pattern (<em>a much-discussed proposal</em>) is only the starting point: in written German the same slot can be filled at length, with <em>steigend, laufend, vorliegend</em> everywhere. German also adds an adjective ending to the participle, which English never does."
       },
       {
         trap: "<em>die prüfenden Unterlagen</em> does not mean “the audited documents”: they are documents that <em>examine</em> something. For the passive sense you need participle II, <em>die geprüften Unterlagen</em>. And do not swap the two: <em>die steigenden Kosten</em> are still rising, <em>die gestiegenen Kosten</em> have already risen. Then the ending: after plural <em>die</em> it is <em>-en</em>, so <em>die geprüften Unterlagen</em>, never <em>die geprüfte Unterlagen</em>."
@@ -39,7 +39,7 @@ LINGUAI.addStrings("en", {
     ],
     grammar: {
       title: "Participles I and II as attributes",
-      note: "<b>Participle I</b> = infinitive + <i>-d</i>: active, simultaneous. <b>Participle II</b>: passive and completed (transitive verbs), active and completed (intransitive verbs with <i>sein</i>). Always before the noun, with the adjective ending; complements go between the article and the participle.",
+      note: "<b>Participle I</b> = infinitive + <i>-d</i>: active, simultaneous. <b>Participle II</b>: passive and usually completed (transitive verbs; the time value depends on verb and context), active and completed (intransitive verbs with <i>sein</i>). Always before the noun, with the adjective ending; complements go between the article and the participle.",
       table: {
         head: ["participle", "meaning", "corresponding relative clause", "example"],
         rows: [
@@ -50,7 +50,7 @@ LINGUAI.addStrings("en", {
         ]
       },
       examples: [
-        { tr: "The rising energy costs are weighing on households.", note: "participle I: the increase is in progress" },
+        { tr: "The rising energy costs are weighing on households.", note: "participle I: the increase is going on at the time referred to" },
         { tr: "The increased costs are explained in the report.", note: "participle II of an intransitive verb: active and completed" },
         { tr: "The verified documents are attached to the file.", note: "transitive participle II: passive, “have been verified”" },
         { tr: "The members taking part in the meeting approved the motion.", note: "participle I with a complement: an der Sitzung teilnehmenden" },
@@ -76,11 +76,11 @@ LINGUAI.addStrings("en", {
       {
         q: "A quarterly report reads «die steigenden Kosten» in one place and «die gestiegenen Kosten» in another. What is the difference in meaning?",
         opts: [
-          "steigenden: the increase is in progress; gestiegenen: the increase has already happened",
-          "steigenden: the increase has already happened; gestiegenen: the increase is in progress",
+          "steigenden: the increase is going on at the time referred to; gestiegenen: the increase has already happened",
+          "steigenden: the increase has already happened; gestiegenen: the increase is going on at the time referred to",
           "none: they are free variants with the same meaning"
         ],
-        why: "Participle I (<i>steigend</i>) is active and <b>simultaneous</b>: the costs are rising right now. The participle II of <i>steigen</i> (<i>gestiegen</i>) is <b>completed</b>: the increase has already taken place. That is why they are not interchangeable."
+        why: "Participle I (<i>steigend</i>) is active and <b>simultaneous</b> with the time of reference (usually the present, but it can be a past or future moment): the costs are rising at that point. The participle II of <i>steigen</i> (<i>gestiegen</i>) is <b>completed</b>: the increase has already taken place. That is why they are not interchangeable."
       },
       {
         q: "From the minutes: «Der vom Gemeinderat ___ Haushaltsplan tritt am 1. Januar in Kraft.» Which form completes the sentence?",
@@ -156,14 +156,14 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "From clause to noun",
-        p: "In formal texts a subordinate clause can be compressed: the verb becomes a noun (<em>abschließen</em> → <em>der Abschluss</em>), the conjunction becomes a preposition, and the subject and object of the verb move into a genitive. <em>Nachdem die Prüfung abgeschlossen ist, ...</em> → <em>Nach Abschluss der Prüfung ...</em>. The preposition depends on the <strong>logical relation</strong>: cause (<em>weil</em> → <em>wegen, aufgrund, infolge</em> + genitive), concession (<em>obwohl</em> → <em>trotz, ungeachtet</em> + genitive), condition (<em>wenn</em> → <em>bei</em> + dative), time (<em>nachdem</em> → <em>nach</em> + dative), purpose (<em>um ... zu</em> → <em>zu</em> + dative)."
+        p: "In formal texts a subordinate clause can be compressed: the verb becomes a noun (<em>abschließen</em> → <em>der Abschluss</em>), the conjunction becomes a preposition, and the subject or object of the verb can move into a genitive (the agent may also be left out or expressed with <em>durch</em> or another construction). <em>Nachdem die Prüfung abgeschlossen ist, ...</em> → <em>Nach Abschluss der Prüfung ...</em>. The preposition depends on the <strong>logical relation</strong>: cause (<em>weil</em> → <em>wegen, aufgrund, infolge</em> + genitive), concession (<em>obwohl</em> → <em>trotz, ungeachtet</em> + genitive), condition (<em>wenn</em> → <em>bei</em> + dative), time (<em>nachdem</em> → <em>nach</em> + dative), purpose (<em>um ... zu</em> → <em>zu</em> + dative)."
       },
       {
         h: "What gets lost",
         p: "The noun phrase is compact but poorer: tense, mood and often the agent disappear. <em>Nach Abschluss der Prüfung</em> does not say who finished it or whether it is about the past or the future; you work that out from the context. That is why it works well when subject and tense are obvious, and badly when they are not (see lesson 3)."
       },
       {
-        contrast: "English nominalizes too (<em>upon completion of the work</em>, <em>in case of need</em>, <em>for the clarification of open questions</em>), but it can also use an -ing form (<em>after completing the work</em>, <em>despite having been reminded</em>), which German does not have. And where English links the nouns with <em>of</em> (<em>the clarification of open questions</em>), German uses a <strong>genitive with no preposition</strong>: <em>die Klärung offener Fragen</em>. The prepositions of cause and concession also take the genitive, with the endings that follow: <em>offener Fragen</em> without an article, <em>der gestiegenen Preise</em> with the article. English has no case endings at all, so every one of these has to be learned."
+        contrast: "English nominalizes too (<em>upon completion of the work</em>, <em>in case of need</em>, <em>for the clarification of open questions</em>), but it can also use an -ing form (<em>after completing the work</em>, <em>despite having been reminded</em>), which German does not have in this form. And where English links the nouns with <em>of</em> (<em>the clarification of open questions</em>), German uses a <strong>genitive with no preposition</strong>: <em>die Klärung offener Fragen</em>. The prepositions of cause and concession also take the genitive, with the endings that follow: <em>offener Fragen</em> without an article, <em>der gestiegenen Preise</em> with the article. English has no case endings at all, so every one of these has to be learned."
       },
       {
         trap: "A wrong preposition changes the logical relation: <em>Nach mehrfacher Mahnung blieb die Zahlung aus</em> says that the payment is missing <em>after</em> the reminders, while <em>Trotz mehrfacher Mahnung</em> says it is missing <em>despite</em> the reminders. Watch the cases too: <em>infolge</em> and <em>trotz</em> take the genitive (<em>Infolge der gestiegenen Preise</em>), not the dative. English speakers are tempted by the colloquial dative after <em>wegen</em> and <em>trotz</em>, which exists in speech but not in formal writing."
@@ -174,7 +174,7 @@ LINGUAI.addStrings("en", {
     ],
     grammar: {
       title: "Nominalization instead of a subordinate clause",
-      note: "The verb becomes a noun, the conjunction a preposition: <b>nach, bei, zu</b> + dative; <b>wegen, aufgrund, infolge, trotz</b> + genitive. Subject and object of the verb move into a genitive.",
+      note: "The verb becomes a noun, the conjunction a preposition: <b>nach, bei, zu</b> + dative; <b>wegen, aufgrund, infolge, trotz</b> + genitive. Subject or object of the verb can become a genitive, but they do not have to.",
       table: {
         head: ["subordinate clause", "noun phrase", "example"],
         rows: [
@@ -291,17 +291,17 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "The four cases where the subordinate clause stays",
-        p: "The compact form is not always the best. The subordinate clause is preferable when: (1) <strong>there is no suitable noun</strong> or the noun sounds unnatural; (2) there are <strong>several subjects</strong> or several predicates, and the noun phrase would hide who does what: <em>weil der Vorsitzende erkrankt war und die Referentin im Ausland festsaß</em>; (3) you need a <strong>modal nuance</strong> or a degree of probability (<em>sollte, könnte, offenbar, nur dann ..., wenn</em>), which a noun cannot express; (4) <strong>readability</strong> suffers, for example with several genitives and complements in a row."
+        p: "The compact form is not always the best. The subordinate clause is preferable when: (1) <strong>there is no suitable noun</strong> or the noun sounds unnatural; (2) there are <strong>several subjects</strong> or several predicates, and the noun phrase would hide who does what: <em>weil der Vorsitzende erkrankt war und die Referentin im Ausland festsaß</em>; (3) you need a <strong>modal nuance</strong> or a degree of probability (<em>sollte, könnte, offenbar, nur dann ..., wenn</em>), which a noun phrase often cannot carry; (4) <strong>readability</strong> suffers, for example with several genitives and complements in a row."
       },
       {
         h: "How to choose",
         p: "Before nominalizing, ask four questions. Who is acting, and does the noun say so? Is there a natural noun (<em>Abschluss, Klärung</em>)? Do I have to keep a tense or a mood? Will the reader get it on the first reading? If the answer is yes to all of them, the compact form works (<em>Nach Abschluss der Prüfung ...</em>); otherwise the subordinate clause is clearer, and in texts for a non-specialist audience it almost always is."
       },
       {
-        contrast: "English has compact tools that German lacks: <em>after completing the review</em>, <em>once the work is finished</em>, <em>should the review take longer</em>. German has no -ing form, and the infinitive with <em>ohne zu</em> or <em>um ... zu</em> requires the same subject: when there are two subjects you need a subordinate clause with <em>dass</em> or <em>weil</em>. The nuance of <em>should ... take longer</em> is rendered with <em>Sollte die Prüfung länger dauern, ...</em> or <em>falls ... ändern sollten</em>. German <em>sollte</em> at the start of the clause behaves like English inverted <em>should</em>, with no <em>if</em>."
+        contrast: "English has compact tools such as <em>after completing the review</em>, <em>once the work is finished</em>, <em>should the review take longer</em>. German has equivalents for some of them: a subordinate clause with <em>sobald</em> for <em>once the work is finished</em>, and <em>Sollte die Prüfung länger dauern, ...</em> for <em>should the review take longer</em>; it has no -ing form, and the infinitive with <em>ohne zu</em> or <em>um ... zu</em> requires the same subject, so with two subjects a subordinate clause (often with <em>dass</em> or <em>weil</em>, but not always) is the usual choice. German <em>sollte</em> at the start of the clause behaves like English inverted <em>should</em>, with no <em>if</em>."
       },
       {
-        trap: "Do not nominalize everything just because it “sounds formal”: the result is office German that is hard to read, and a noun like <em>seitens der Teilnehmenden</em> hides the subject. And <em>sollte</em> in first position is not the “should” of obligation: <em>Sollte die Prüfung länger dauern</em> means “if the review should happen to take longer”, an unlikely condition. English speakers tend to read <em>sollte</em> as “ought to” and miss that it is the conditional."
+        trap: "Do not nominalize everything just because it “sounds formal”: the result is office German that is hard to read, and a phrase with a preposition like <em>seitens der Teilnehmenden</em> can hide the subject. And <em>sollte</em> in first position is not the “should” of obligation: <em>Sollte die Prüfung länger dauern</em> means “if the review should happen to take longer”, a hypothetical condition. English speakers tend to read <em>sollte</em> as “ought to” and miss that it is the conditional."
       },
       {
         tip: "Read the sentence aloud. If you have to catch your breath in the middle of a noun phrase, because there are two genitives and a <em>durch</em>, break it into a subordinate clause."
@@ -323,9 +323,9 @@ LINGUAI.addStrings("en", {
       examples: [
         { tr: "The meeting was postponed because the chair was ill and the speaker was stranded abroad.", note: "two subjects: the noun form would hide one of them" },
         { tr: "The contract will be signed only when the board has approved it and the financing is secured.", note: "two conditions with different verbs: subordinate clause" },
-        { tr: "Should the review take longer, the date will be postponed.", note: "Sollte in first position: an unlikely possibility" },
+        { tr: "Should the review take longer, the date will be postponed.", note: "Sollte in first position: a hypothetical condition" },
         { tr: "The funding lapses if the general conditions should change.", note: "falls ... ändern sollten: modal nuance" },
-        { tr: "The results are significant only if the sample is representative.", note: "nur dann ..., wenn: a necessary condition, not expressible with bei" },
+        { tr: "The results are significant only if the sample is representative.", note: "nur dann ..., wenn: a necessary condition; a noun phrase with bei can sometimes carry it too (nur bei einer repräsentativen Stichprobe)" },
         { tr: "The evaluation began after the participants had filled in the questionnaire.", note: "temporal subordinate clause in the pluperfect: more readable than a chain of genitives" }
       ]
     },
@@ -356,7 +356,7 @@ LINGUAI.addStrings("en", {
       {
         q: "«Sollte die Prüfung länger dauern, wird der Termin verschoben.» What is lost in the nominal version «Bei längerer Dauer der Prüfung wird der Termin verschoben»?",
         opts: [
-          "the nuance of an unlikely possibility expressed by sollte",
+          "the hypothetical nuance (“should it happen to”) expressed by sollte",
           "the conditional value of the sentence",
           "the subject, because Prüfung disappears"
         ],
@@ -374,12 +374,12 @@ LINGUAI.addStrings("en", {
       {
         q: "Fill in: «Die Ergebnisse sind nur dann aussagekräftig, ___ die Stichprobe repräsentativ ist.»",
         hint: "conditional conjunction",
-        why: "<b>wenn</b>: <i>nur dann ..., wenn</i> expresses a necessary condition. With a noun phrase (<i>bei repräsentativer Stichprobe</i>) the force of <i>nur dann</i> is lost."
+        why: "<b>wenn</b>: <i>nur dann ..., wenn</i> expresses a necessary condition. A noun phrase is possible too (<i>nur bei einer repräsentativen Stichprobe</i>), but the clause with <i>wenn</i> states the condition more explicitly."
       },
       {
         q: "Fill in the modal verb: «Falls sich die Rahmenbedingungen ändern ___, entfällt die Förderung.»",
-        hint: "Konjunktiv II of a modal: an unlikely possibility",
-        why: "<b>sollten</b>: <i>falls ... sollten</i> signals a remote possibility, the nuance that cannot be rendered in noun form."
+        hint: "Konjunktiv II of a modal: a hypothetical condition",
+        why: "<b>sollten</b>: <i>falls ... sollten</i> signals a hypothetical condition (“should it happen that”), a nuance that a noun phrase usually cannot render."
       },
       {
         q: "Complete the two conditions of a contract.",
@@ -487,14 +487,14 @@ LINGUAI.addStrings("en", {
       {
         q: "Complete the notice with the participle II and the preposition.",
         tr: "We will inform you in good time. The measures we have planned will only take effect after the audit is completed.",
-        why: "<i>geplanten</i> (or <i>vorgesehenen</i>): passive participle II with <b>-en</b>. <i>nach</i> or <i>mit Abschluss der Prüfung</i>: time with <i>nach</i> + dative, or “with the completion”."
+        why: "<i>geplanten</i> (or <i>vorgesehenen</i>): passive participle II with <b>-en</b>. <i>nach</i>: <i>nach Abschluss der Prüfung</i>, time with <i>nach</i> + dative, “after the completion”."
       },
       {
         q: "Translate: «The decisions made at the meeting will be announced after the audit is completed.» (die Sitzung, die Entscheidung, mitteilen, der Abschluss, die Prüfung)",
         why: "<i>Die in der Sitzung getroffenen Entscheidungen werden nach Abschluss der Prüfung mitgeteilt.</i> The passive with <i>werden</i> renders the future of the English text; the sentence beginning with <i>Nach Abschluss der Prüfung</i> is also accepted."
       },
       {
-        tr: "She will have finished the report by Friday. The decisions recorded in the minutes will be implemented after the audit is completed.",
+        tr: "He will have finished the report by Friday. The decisions recorded in the minutes will be implemented after the audit is completed.",
         why: "In <i>fertiggestellt</i> the stress falls on <b>fer</b>; in <i>Beschlüsse</i> the stress falls on <b>schlüs</b>; in <i>umgesetzt</i> the stress falls on <b>um</b>."
       },
       {

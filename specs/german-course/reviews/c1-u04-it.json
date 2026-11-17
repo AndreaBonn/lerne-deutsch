@@ -1,0 +1,23 @@
+{
+  "bundleHash": "15fc19c092c76f9902c6a05d4f111d4218838ddb6b50eca8cc3c2687d84c1966",
+  "findings": [
+    {
+      "kind": "risposta ambigua",
+      "msg": "Il contesto non indica che sia il portiere a sostenere di non essersi accorto della partenza: «aber der Hausmeister soll davon nichts mitbekommen haben» è ugualmente possibile se la fonte resta il vicino. Aggiungere un indizio esplicito, per esempio «aber der Hausmeister selbst behauptet, er ...», riformulando la frase in modo che richieda «will».",
+      "path": "merged.lessons[1].exercises[5]"
+    },
+    {
+      "kind": "traduzione imprecisa",
+      "msg": "«Verreist sein» significa essere partiti o essere fuori casa, non necessariamente essere in vacanza. Sostituire «la famiglia Albers dev'essere in vacanza» con «la famiglia Albers dev'essere partita» o «dev'essere fuori».",
+      "path": "merged.lessons[1].exercises[5].tr"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La formulazione «werden + infinito serve soprattutto per una supposizione sul presente» sottostima il suo normale uso per eventi futuri. Spiegare che può esprimere sia un evento futuro sia una supposizione sul presente, secondo il contesto.",
+      "path": "merged.lessons[0].theory[0].p"
+    }
+  ],
+  "lang": "it",
+  "unit": "c1-u04",
+  "verdict": "fail"
+}

@@ -1,0 +1,58 @@
+{
+  "bundleHash": "c02849f236ec12b32a1c1dbd7abb8ae53262d714322c5eab2d94404a2eab23b0",
+  "findings": [
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La forma dell'infinito non determina da sola il valore del modale: «Er muss krank sein» può esprimere anche una necessità, «Er soll kommen» può riportare una voce, e un'azione presente può avere lettura epistemica, come in «Er muss gerade arbeiten». Distinguere le letture attraverso contesto, significato e tempo, eliminando le formulazioni assolute.",
+      "path": "merged.lessons[1].theory[0].p"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "L'infinito aiuta a interpretare il modale, ma non basta a distinguere certezza, permesso e obbligo. Sostituire la regola con esempi contestualizzati che mostrino le letture possibili.",
+      "path": "merged.lessons[1].theory[2].contrast"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Un infinito passato o un verbo di stato non garantisce quasi sempre una lettura soggettiva, e «Er soll kommen» non è necessariamente un ordine: può anche significare che si dice che stia arrivando. Presentare il contesto come criterio decisivo.",
+      "path": "merged.lessons[1].theory[4].tip"
+    },
+    {
+      "kind": "chiave di risposta ambigua",
+      "msg": "Il testo non indica che sia il custode stesso a sostenere di non essersi accorto di nulla: anche «soll» è compatibile con la fonte esterna. Aggiungere un indizio esplicito, per esempio «der Hausmeister behauptet jedoch, er ...», oppure accettare e spiegare entrambe le letture.",
+      "path": "merged.lessons[1].exercises[5].gaps[2]"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Jetzt», «inzwischen» e «bis» sono indizi contestuali, non determinano automaticamente una lettura: anche una previsione futura può contenere «jetzt», e un Futur II con «bis» può essere una supposizione anziché un impegno. Riformulare la regola come criterio orientativo.",
+      "path": "merged.lessons[0].theory[1].p"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "L'assenza di «wohl» non dimostra che il parlante prenda un impegno: la frase può anche esprimere una previsione. La consegna parla di un annuncio, ma la spiegazione deve attribuire la lettura al contesto, senza dedurla dall'assenza dell'avverbio.",
+      "path": "merged.lessons[0].exercises[1].why"
+    },
+    {
+      "kind": "schema grammaticale",
+      "msg": "Lo schema «werden + infinitif + schon» colloca l'infinito prima di «schon», mentre nell'esempio l'ordine è «wird schon klappen». Correggere in «werden + schon + infinitif».",
+      "path": "merged.lessons[0].grammar.table.rows[3][0]"
+    },
+    {
+      "kind": "spiegazione di registro",
+      "msg": "La classificazione generale di tutte le particelle come esclusivamente orali e non formali è troppo categorica: «wohl», per esempio, può comparire anche in prosa formale. Distinguere le particelle e gli usi, indicando che «halt» è più colloquiale.",
+      "path": "merged.lessons[2].grammar.note"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«N'en rien savoir» è al presente, mentre «will davon nichts gewusst haben» riporta un'affermazione riferita al passato. Tradurre «prétend n'en avoir rien su».",
+      "path": "merged.test.exercises[6].tr"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Will davon nichts gewusst haben» riguarda ciò che l'allenatore sostiene di non aver saputo in passato. Correggere «prétend n'en rien savoir» in «prétend n'en avoir rien su».",
+      "path": "merged.test.exercises[8].tr"
+    }
+  ],
+  "lang": "fr",
+  "unit": "c1-u04",
+  "verdict": "fail"
+}

@@ -1,0 +1,58 @@
+{
+  "bundleHash": "7cffe9becb96e6345cb8a484c56d20aab58fe1d407ad9b9b0d95c9e2074260b6",
+  "findings": [
+    {
+      "kind": "chiave di risposta",
+      "msg": "La spiegazione accetta «mit», ma il secondo spazio accetta solo «nach». Inoltre «mit Abschluss» indica il momento del completamento, mentre la traduzione richiede «dopo». Eliminare «mit» dalla spiegazione oppure modificare consegna e traduzione se si intende accettarlo.",
+      "path": "merged.test.exercises[8].why"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Er» significa «he», non «she». Correggere in «He will have finished the report by Friday».",
+      "path": "merged.test.exercises[10].tr"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Il participio II attributivo di un verbo transitivo passivo non indica sempre un'azione conclusa: il test stesso usa «die gerade bearbeiteten Anträge» per un'azione in corso. Precisare che può esprimere un processo o uno stato passivo secondo il contesto.",
+      "path": "merged.lessons[0].grammar.note"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Simultaneous» non significa necessariamente «right now»: «die steigenden Kosten» esprime un aumento contemporaneo al riferimento temporale, anche passato o futuro. Correggere la spiegazione e la relativa alternativa.",
+      "path": "merged.lessons[0].exercises[0]"
+    },
+    {
+      "kind": "contrasto linguistico",
+      "msg": "L'inglese può collocare prima del nome participi con modificatori liberi, come «rapidly rising costs» o «recently audited documents»; non accade solo in poche espressioni fisse. Riformulare il contrasto distinguendo questi modificatori dalle costruzioni postnominali.",
+      "path": "merged.lessons[0].theory[2].contrast"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Il soggetto e l'oggetto non passano automaticamente entrambi al genitivo: l'agente può essere omesso o espresso con «durch» o un'altra costruzione. Presentare il genitivo come una possibilità, non come regola generale.",
+      "path": "merged.lessons[1].theory[0].p"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Nur dann ..., wenn» può essere reso anche con una costruzione nominale esclusiva, per esempio «Die Ergebnisse sind nur bei einer repräsentativen Stichprobe aussagekräftig». Correggere l'affermazione che la forza di «nur dann» non sia esprimibile con «bei».",
+      "path": "merged.lessons[2].exercises[3].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Sollte» in una condizionale segnala un'eventualità o una cauta ipotesi, ma non implica necessariamente che sia improbabile. Sostituire «unlikely possibility» con una formulazione meno categorica; correggere anche le spiegazioni analoghe negli altri esercizi e nella teoria della lezione.",
+      "path": "merged.lessons[2].grammar.examples[2].note"
+    },
+    {
+      "kind": "contrasto linguistico",
+      "msg": "«Once the work is finished» e «should the review take longer» non sono strumenti che mancano al tedesco: esistono subordinate con «sobald» e la costruzione «Sollte die Prüfung länger dauern». Anche con due soggetti non è sempre necessaria una subordinata con «dass» o «weil». Riformulare il confronto con esempi equivalenti.",
+      "path": "merged.lessons[2].theory[2].contrast"
+    },
+    {
+      "kind": "punteggiatura",
+      "msg": "Entrambe le risposte omettono la virgola obbligatoria che separa la subordinata temporale dalla principale. Inserire la virgola nelle soluzioni e prevederla anche nell'esercizio di ordinamento.",
+      "path": "merged.lessons[2].exercises[7].a"
+    }
+  ],
+  "lang": "en",
+  "unit": "c1-u05",
+  "verdict": "fail"
+}

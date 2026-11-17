@@ -1,0 +1,43 @@
+{
+  "bundleHash": "975ae35fd86f356655c051e931b652d95f3e3f778eaa6646d5ae93c15d4048ae",
+  "findings": [
+    {
+      "kind": "traduzione",
+      "msg": "«sie» indica una donna o ragazza, mentre la traduzione dice «he». Correggere in «The lights are off, so she'll be asleep by now».",
+      "path": "merged.lessons[0].grammar.examples[0].tr"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La presenza di «sein», «haben» o di un infinito perfetto non rende automaticamente soggettivo il modale: «Er muss zu Hause sein» può esprimere un obbligo e «Er muss gegangen sein» può indicare un obbligo di completamento entro un termine. Anche «Er soll kommen» può riportare una voce a seconda del contesto. Distinguere le letture tramite contesto e significato, non solo tramite la forma dell'infinito.",
+      "path": "merged.lessons[1].theory"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Er muss nicht krank sein» può significare epistemicamente «non è necessariamente malato»; «he doesn't have to be ill» può invece suggerire l'assenza di un obbligo. Distinguere esplicitamente le due letture e usare «he isn't necessarily ill» per quella epistemica.",
+      "path": "merged.lessons[1].theory[2].trap"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«ausgerechnet heute» esprime che proprio oggi, fra tutti i giorni possibili, il treno non circola. «really» non rende questo significato: usare per esempio «of all days, today» o «today of all days».",
+      "path": "merged.lessons[2].vocab[9].tr"
+    },
+    {
+      "kind": "esercizio ambiguo",
+      "msg": "La situazione specifica sospetto e la spiegazione inglese suggerisce una risposta negativa, mentre «denn» rende la domanda più neutra e non conserva necessariamente quella sfumatura. Limitare la risposta a «etwa» oppure riformulare consegna e suggerimento per accettare esplicitamente entrambe le sfumature.",
+      "path": "merged.test.exercises[2]"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«nichts gewusst haben» riguarda ciò che il ministro sapeva in passato. Correggere «he knows nothing» in «he knew nothing» o «he had known nothing».",
+      "path": "merged.test.exercises[6].tr"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«nichts gewusst haben» riguarda ciò che l'allenatore sapeva in passato. Correggere «he knows nothing» in «he knew nothing» o «he had known nothing».",
+      "path": "merged.test.exercises[8].tr"
+    }
+  ],
+  "lang": "en",
+  "unit": "c1-u04",
+  "verdict": "fail"
+}

@@ -21,7 +21,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Werden per supporre",
-        p: "In tedesco il vero futuro si dice spesso con il presente e un indicatore di tempo (<em>Morgen fliege ich nach Wien</em>). <strong>werden</strong> + infinito serve soprattutto per una <strong>supposizione sul presente</strong>: <em>Er wird wohl noch im Stau stehen. Es klingelt. Das wird der Postbote sein.</em> Per una supposizione sul <strong>passato</strong> si usa il <strong>Futur II</strong>, <em>werden</em> + participio II + <em>haben</em> o <em>sein</em>: <em>Sie wird die Nachricht inzwischen gelesen haben.</em> Lo stesso Futur II può indicare un'azione che sarà <strong>conclusa entro un momento futuro</strong>: <em>Bis Ende des Monats werden wir die Studie abgeschlossen haben.</em>"
+        p: "In tedesco il vero futuro si dice spesso con il presente e un indicatore di tempo (<em>Morgen fliege ich nach Wien</em>). <strong>werden</strong> + infinito può esprimere un evento futuro (<em>Das wird nächste Woche passieren</em>) oppure una <strong>supposizione sul presente</strong>, secondo il contesto: <em>Er wird wohl noch im Stau stehen. Es klingelt. Das wird der Postbote sein.</em> Per una supposizione sul <strong>passato</strong> si usa il <strong>Futur II</strong>, <em>werden</em> + participio II + <em>haben</em> o <em>sein</em>: <em>Sie wird die Nachricht inzwischen gelesen haben.</em> Lo stesso Futur II può indicare un'azione che sarà <strong>conclusa entro un momento futuro</strong>: <em>Bis Ende des Monats werden wir die Studie abgeschlossen haben.</em>"
       },
       {
         h: "Gli indizi",
@@ -39,7 +39,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Futur I e II come supposizione",
-      note: "<b>werden + infinito</b>: supposizione sul presente. <b>werden + participio II + haben/sein</b>: supposizione sul passato oppure azione conclusa entro un momento futuro (con <i>bis</i>). Dosaggio: <i>wohl, vermutlich</i> (prudente), <i>schon</i> (rassicurante), <i>sicher</i> (più certo).",
+      note: "<b>werden + infinito</b>: evento futuro o supposizione sul presente, secondo il contesto. <b>werden + participio II + haben/sein</b>: supposizione sul passato oppure azione conclusa entro un momento futuro (con <i>bis</i>). Dosaggio: <i>wohl, vermutlich</i> (prudente), <i>schon</i> (rassicurante), <i>sicher</i> (più certo).",
       table: {
         head: ["costruzione", "valore", "esempio"],
         rows: [
@@ -250,7 +250,7 @@ LINGUAI.addStrings("it", {
       },
       {
         q: "Completa con muss, soll o will.",
-        tr: "Le persiane sono abbassate e la cassetta delle lettere è piena: la famiglia Albers dev'essere in vacanza, difficile pensare altro. Secondo un vicino sarebbe partita già due settimane fa, ma il portiere sostiene di non essersi accorto di niente.",
+        tr: "Le persiane sono abbassate e la cassetta delle lettere è piena: la famiglia Albers dev'essere partita, difficile pensare altro. Secondo un vicino sarebbe partita già due settimane fa, ma il portiere sostiene di non essersi accorto di niente.",
         why: "<i>muss</i>: deduzione dagli indizi. <i>soll</i>: lo dice un vicino (<i>einem Nachbarn zufolge</i>). <i>will</i>: lo sostiene il portiere stesso."
       },
       {
