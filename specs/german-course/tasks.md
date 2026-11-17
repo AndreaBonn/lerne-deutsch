@@ -282,7 +282,7 @@ fissa cosa ogni unità presuppone). `c` e `d` sono `ok` fra loro. `e` è `seq` p
 - [x] T5.17 | F5 | DOM: `cils.spec.js`, `cils-lettura.spec.js` sulle prove reali | 1h | verify: `npx playwright test tests/dom/cils*.spec.js` (rosso dopo T5.16) | e2e | dip: T5.16 | par: seq | rollback: revert | R23
 - [x] T5.18 | F5 | Click-through completo di una prova (ogni controllo azionato, esito registrato) e `a11y-gate` sulla vista | 1h | verify: elenco controllo → esito nel report di fase, `a11y-gate` esce 0 | e2e | dip: T5.17 | par: seq | rollback: - | R23
 - [x] T5.19 | F5 | `CLAUDE.md` § Produkcje egzaminacyjne allineata al formato Goethe | 0,5h | verify: `grep -c "CILS B1 Cittadinanza" CLAUDE.md` = 0 (rosso) | - | dip: T5.18 | par: ok | rollback: revert | R33
-- [ ] T5.20 | F5 | Chiusura F5: gate di fase | 0,5h | verify: `npm run test:all` esce 0 | e2e | dip: T5.01-T5.19 | par: seq | rollback: - | R31
+- [x] T5.20 | F5 | Chiusura F5: gate di fase (2026-11-17: unit 1917/1917, mutazioni 196/196, DOM 392/398 a 2 worker con 6 crash del browser per disco pieno, i 6 rilanciati a 1 worker passano; `test:all` in un solo passaggio non esce 0 finché il disco resta pieno, Q8 B) | 0,5h | verify: `npm run test:all` esce 0 | e2e | dip: T5.01-T5.19 | par: seq | rollback: - | R31
 
 ## F6 - B2 (dopo la fase: A1-B2)
 
