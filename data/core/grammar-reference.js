@@ -15,6 +15,7 @@ window.GRAMMAR_REF = [
       { id: "g-artikel-akk", cefr: "A1" },
       { id: "g-artikel-dat", cefr: "A1" },
       { id: "g-genitiv", cefr: "B1" },
+      { id: "g-n-deklination", cefr: "B2" },
       { id: "g-wortbildung", cefr: "A2" }
     ]
   },
@@ -54,6 +55,7 @@ window.GRAMMAR_REF = [
   {
     items: [
       { id: "g-konjunktiv2", cefr: "A2" },
+      { id: "g-konjunktiv1", cefr: "B2" },
       { id: "g-passiv", cefr: "B1" }
     ]
   },
