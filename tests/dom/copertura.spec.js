@@ -63,6 +63,35 @@ test("the ceiling counts every level, not only the ones already in memory", asyn
   expect(policzone, "the second level adds words, so counting A1 alone would be smaller").toBeGreaterThan(tylkoA1);
 });
 
+test("a frequency form maps to a C1 entry of the course", async ({ page }) => {
+  /* The last level is the one most likely to drop out silently: the screen
+     still shows numbers, just smaller, and "Bescheid" would move from the
+     course bar to nowhere. C1 is real data here, not a fixture, so the test
+     also fails if C1 stops being registered. */
+  await page.goto("/index.html#/copertura");
+  await page.waitForFunction(() => window.Core && window.Frequency && window.FREQUENCY);
+  await page.waitForFunction(
+    () => window.Core.registry.levels.every(lv => window.Core.registry.loaded[lv.code]),
+    null,
+    { timeout: 15000 }
+  );
+
+  const { poziomy, haslo } = await page.evaluate(() => {
+    const F = window.FREQUENCY;
+    const kurs = window.Frequency.slownikKursu();
+    const wpis = window.Frequency.brakujace(F.words, kurs, {}, 100000)
+      .filter(b => b.formy.indexOf("Bescheid") >= 0)[0];
+    return { poziomy: window.Core.registry.levels.map(lv => lv.code), haslo: wpis ? wpis.haslo : null };
+  });
+
+  expect(poziomy).toContain("C1");
+  /* Compared without case and article on purpose: which form the row SHOWS
+     ("bescheid" today, the course entry "der Bescheid" would be better) is a
+     separate question. This test pins that the link to C1 exists at all. */
+  const bare = haslo && haslo.toLowerCase().replace(/^(der|die|das) /, "");
+  expect(bare, "the frequency form Bescheid resolves to the C1 entry").toBe("bescheid");
+});
+
 test("the student's deck meets the frequency list at all", async ({ page }) => {
   await page.goto("/index.html");
   await page.waitForFunction(() => window.Core && window.Core.registry.levels.length > 0);
