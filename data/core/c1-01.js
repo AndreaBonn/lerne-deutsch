@@ -262,13 +262,13 @@ LINGUAI.addUnits("C1", [
         exercises: [
           { t: "mcq", a: 0 },
           { t: "mcq", a: 0 },
-          { t: "fill", a: ["treffen"] },
+          { t: "fill", a: ["treffen", "fällen"] },
           { t: "fill", a: ["Verfügung"] },
           { t: "fill", a: ["Ausdruck"] },
           {
             t: "cloze",
             text: "Der Stadtrat hat gestern eine wichtige Entscheidung {{1}}: Die neue Regel {{2}} im Januar in Kraft. Für die Umsetzung {{3}} die Stadt zusätzliche Mittel zur Verfügung.",
-            gaps: [["getroffen"], ["tritt"], ["stellt"]]
+            gaps: [["getroffen", "gefällt"], ["tritt"], ["stellt"]]
           },
           {
             t: "match",
@@ -329,7 +329,7 @@ LINGUAI.addUnits("C1", [
           {
             t: "cloze",
             text: "Liebe Mieterinnen und Mieter, die Heizung {{1}} sich leider erst nächste Woche reparieren. Bis dahin {{2}} die Fenster geschlossen zu halten. Der Schaden ist aber {{3}}: Der Techniker kommt am Montag.",
-            gaps: [["lässt"], ["sind"], ["behebbar", "reparierbar"]]
+            gaps: [["lässt"], ["sind"], ["behebbar", "reparierbar", "reparabel"]]
           },
           {
             t: "order",
@@ -401,7 +401,7 @@ LINGUAI.addUnits("C1", [
           { t: "fill", a: ["setzt"] },
           {
             t: "cloze",
-            text: "Wegen der Baustelle mussten wir die Innenstadt {{1}}. Danach sind wir die ganze Nacht {{2}} und kamen erst am Morgen an.",
+            text: "Die Innenstadt war wegen der Baustelle für den Verkehr gesperrt, deshalb mussten wir sie {{1}}. Danach sind wir die ganze Nacht {{2}} und kamen erst am Morgen an.",
             gaps: [["umfahren"], ["durchgefahren"]]
           },
           {
@@ -561,7 +561,7 @@ LINGUAI.addUnits("C1", [
           { t: "mcq", a: 0 },
           { t: "mcq", a: 0 },
           { t: "mcq", a: 0 },
-          { t: "fill", a: ["mal"] },
+          { t: "fill", a: ["mal", "eben"] },
           { t: "fill", a: ["halt", "eben"] },
           {
             t: "cloze",
@@ -626,7 +626,7 @@ LINGUAI.addUnits("C1", [
           {
             t: "cloze",
             text: "{{1}} möchte ich das Problem beschreiben. {{2}} nenne ich mögliche Lösungen, und {{3}} ziehe ich ein Fazit.",
-            gaps: [["Zuerst", "Zunächst", "Erstens"], ["Danach", "Dann", "Anschließend", "Zweitens"], ["schließlich", "abschließend", "zuletzt", "zum Schluss"]]
+            gaps: [["Zuerst", "Zunächst", "Erstens"], ["Danach", "Dann", "Anschließend", "Zweitens"], ["schließlich", "abschließend", "zuletzt", "zum Schluss", "drittens"]]
           },
           {
             t: "match",
@@ -657,7 +657,7 @@ LINGUAI.addUnits("C1", [
         { t: "fill", a: ["geworden"] },
         { t: "fill", a: ["Kraft"] },
         { t: "fill", a: ["erfolgt"] },
-        { t: "fill", a: ["treffen"] },
+        { t: "fill", a: ["treffen", "fällen"] },
         { t: "fill", a: ["darauf"] },
         { t: "fill", a: ["Nach"] },
         { t: "mcq", a: 0 },

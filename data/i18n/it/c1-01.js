@@ -485,7 +485,7 @@ LINGUAI.addStrings("it", {
     ]
   },
   "unit:c1-u02": {
-    title: "Portare a termine",
+    title: "Riuscire a realizzare",
     grammarNote: "Verbi di funzione (zur Verfügung stellen, in Frage kommen, eine Entscheidung treffen) · sostituti del passivo: sich lassen, sein + zu, aggettivi in -bar · prefissi separabili e inseparabili con senso diverso (umfahren) · modi di dire"
   },
   "lesson:c1-u02-l1": {
@@ -500,7 +500,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Il nome porta il significato",
-        p: "Nei testi formali molte azioni si dicono con un <strong>nome</strong> che porta il significato e un <strong>verbo</strong> quasi vuoto: <em>eine Entscheidung treffen</em> (decidere), <em>zur Verfügung stellen</em> (mettere a disposizione), <em>in Kraft treten</em> (entrare in vigore), <em>in Frage kommen</em> (essere possibile), <em>zum Ausdruck bringen</em> (esprimere), <em>Rücksicht nehmen auf</em> (avere riguardo per). Il gruppo è fisso: la preposizione e l'articolo non si scelgono."
+        p: "Nei testi formali molte azioni si dicono con un <strong>nome</strong> che porta il significato e un <strong>verbo</strong> quasi vuoto: <em>eine Entscheidung treffen</em> (decidere), <em>zur Verfügung stellen</em> (mettere a disposizione), <em>in Kraft treten</em> (entrare in vigore), <em>in Frage kommen</em> (essere possibile), <em>zum Ausdruck bringen</em> (esprimere), <em>Rücksicht nehmen auf</em> (avere riguardo per). Nei gruppi con preposizione la preposizione e l'articolo non si scelgono (<em>zur Verfügung</em>); in quelli con un oggetto l'articolo può cambiare (<em>eine Entscheidung treffen, die Entscheidung treffen</em>)."
       },
       {
         h: "Il posto nella frase",
@@ -575,7 +575,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa: «Wir müssen bis Freitag eine Entscheidung ___.»",
         hint: "il verbo di funzione di die Entscheidung",
-        why: "<b>treffen</b>: <i>eine Entscheidung treffen</i>, «prendere una decisione»; non <i>nehmen</i>."
+        why: "<b>treffen</b> (nello stile formale anche <i>fällen</i>): <i>eine Entscheidung treffen</i>, «prendere una decisione»; non <i>nehmen</i>."
       },
       {
         q: "Completa: «Die Firma stellt den Mitarbeitern Laptops zur ___.»",
@@ -719,7 +719,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa l'avviso ai condomini.",
         tr: "Gentili inquilini, il riscaldamento purtroppo si potrà riparare solo la settimana prossima. Fino ad allora le finestre vanno tenute chiuse. Il guasto però è riparabile: il tecnico viene lunedì.",
-        why: "<i>lässt sich ... reparieren</i> (si può), <i>sind ... zu halten</i> (vanno tenute), <i>behebbar</i> o <i>reparierbar</i> (riparabile)."
+        why: "<i>lässt sich ... reparieren</i> (si può), <i>sind ... zu halten</i> (vanno tenute), <i>behebbar</i>, <i>reparierbar</i> o <i>reparabel</i> (riparabile)."
       },
       {
         q: "Metti in ordine le parole.",
@@ -837,13 +837,13 @@ LINGUAI.addStrings("it", {
       },
       {
         q: "Completa il racconto.",
-        tr: "A causa del cantiere abbiamo dovuto aggirare il centro. Poi abbiamo guidato tutta la notte senza fermarci e siamo arrivati solo al mattino.",
+        tr: "Il centro era chiuso al traffico per il cantiere, quindi abbiamo dovuto aggirarlo. Poi abbiamo guidato tutta la notte senza fermarci e siamo arrivati solo al mattino.",
         why: "<i>umfahren</i> (inseparabile, infinito dopo <i>mussten</i>) e <i>durchgefahren</i> (separabile, participio con <i>-ge-</i>)."
       },
       {
         q: "Abbina ogni modo di dire al suo significato.",
         pairs: [
-          "dare fastidio, risultare sgradito",
+          "andare contro i propri principi o gusti",
           "cogliere nel segno",
           "dare sui nervi",
           "rimandare"
@@ -875,7 +875,7 @@ LINGUAI.addStrings("it", {
   },
   "lesson:c1-u02-test": {
     theme: "Verifica",
-    title: "Test: Portare a termine",
+    title: "Test: Riuscire a realizzare",
     objectives: [
       "verificare i verbi di funzione, i sostituti del passivo e i prefissi separabili e inseparabili"
     ],
@@ -985,7 +985,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Stile nominale e stile verbale",
-      note: "<b>Nominale</b>: preposizione + nome, spesso con un genitivo che dipende dal nome (<i>nach Abschluss der Arbeiten</i>). <b>Verbale</b>: secondaria con un verbo coniugato (<i>nachdem die Arbeiten abgeschlossen sind</i>). Verbi tipici: <i>erfolgen, erheben, gewähren</i>.",
+      note: "<b>Nominale</b>: preposizione + nome, spesso con un genitivo che dipende dal nome (<i>nach Abschluss der Arbeiten</i>). <b>Verbale</b>: costruzione con un verbo, cioè una secondaria (<i>nachdem die Arbeiten abgeschlossen sind</i>) o un infinito con <i>zu</i> (<i>um Wartezeiten zu vermeiden</i>). Verbi tipici: <i>erfolgen, erheben, gewähren</i>.",
       table: {
         head: ["stile nominale", "stile verbale"],
         rows: [
@@ -998,7 +998,7 @@ LINGUAI.addStrings("it", {
       },
       examples: [
         { tr: "Al termine dei lavori la strada sarà riaperta.", note: "nach regge il dativo (Abschluss); der Arbeiten è il genitivo che dipende da Abschluss" },
-        { tr: "In caso di mancata osservanza viene riscossa una multa.", note: "bei Nichtbeachtung = wenn man die Vorschriften nicht beachtet" },
+        { tr: "In caso di mancata osservanza viene comminata una multa.", note: "bei Nichtbeachtung = wenn man die Vorschriften nicht beachtet" },
         { tr: "Per evitare attese si prega di prenotare un appuntamento.", note: "zur Vermeidung = um ... zu vermeiden" },
         { tr: "A causa della forte pioggia il concerto è stato annullato.", note: "wegen + genitivo al posto di weil" },
         { tr: "La domanda si presenta online.", note: "erfolgen: avvenire, tipico degli uffici" },
@@ -1013,7 +1013,7 @@ LINGUAI.addStrings("it", {
       "l'ordinanza, il decreto",
       "la mancata osservanza",
       "avvenire, aver luogo",
-      "riscuotere (una tassa); sollevare",
+      "riscuotere (una tassa); infliggere (una multa)",
       "concedere",
       "richiedere (ufficialmente)",
       "competente",
@@ -1027,7 +1027,7 @@ LINGUAI.addStrings("it", {
           "Wer die Parkregeln nicht kennt, bekommt Geld zurück.",
           "Die Stadt beachtet die Parkregeln nicht."
         ],
-        why: "<i>bei Nichtbeachtung</i> = «se non si rispettano»; <i>ein Bußgeld erheben</i> = «far pagare una multa». La prima frase dice lo stesso in stile verbale."
+        why: "<i>bei Nichtbeachtung</i> = «se non si rispettano»; <i>ein Bußgeld erheben</i> = «infliggere una multa». La prima frase dice lo stesso in stile verbale."
       },
       {
         q: "Quale gruppo nominale corrisponde a «Weil es stark regnete, ...»?",
@@ -1097,7 +1097,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Le particelle cambiano il tono",
-        p: "Nel parlato le particelle modali dicono come la pensa chi parla. <strong>doch</strong> incoraggia o ricorda (<em>Komm doch mit!</em>), <strong>ja</strong> presenta una cosa come nota o sorprendente (<em>Das hast du ja schon gesagt. Das ist ja toll!</em>), <strong>mal</strong> ammorbidisce una richiesta (<em>Hast du mal kurz Zeit?</em>), <strong>halt</strong> ed <strong>eben</strong> esprimono rassegnazione (<em>Das ist halt so</em>). Tolta la particella, la frase resta corretta ma diventa più secca."
+        p: "Nel parlato le particelle modali dicono come la pensa chi parla. <strong>doch</strong> incoraggia o ricorda (<em>Komm doch mit!</em>), <strong>ja</strong> presenta una cosa come nota o sorprendente (<em>Das hast du ja schon gesagt. Das ist ja toll!</em>), <strong>mal</strong> ammorbidisce una richiesta (<em>Hast du mal kurz Zeit?</em>), <strong>halt</strong> ed <strong>eben</strong> esprimono rassegnazione (<em>Das ist halt so</em>). Tolta la particella, la frase resta corretta ma perde quella sfumatura: una richiesta può suonare più brusca, un'esclamazione perde la sorpresa o il richiamo a ciò che entrambi sanno."
       },
       {
         h: "Ellissi e formule",
@@ -1228,7 +1228,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Annunciare una frase",
-        p: "Quando un verbo regge una preposizione (<em>sich freuen auf, bestehen auf, sich einigen auf, hinweisen auf</em>) e il complemento è una frase, nella principale può comparire un avverbio pronominale che la annuncia; con alcuni verbi è obbligatorio (<em>bestehen auf</em>), con altri facoltativo (<em>Ich freue mich, dass du kommst</em> va bene anche senza <em>darauf</em>): <em>Er besteht <strong>darauf</strong>, dass wir bleiben. Wir haben uns <strong>darauf</strong> geeinigt, den Termin zu verschieben.</em> Senza preposizione, l'anticipatore può essere <strong>es</strong>: <em>Es ist wichtig, dass alle pünktlich sind.</em> Se la secondaria passa al primo posto, l'<em>es</em> soggetto sparisce: <em>Dass alle pünktlich sind, ist wichtig.</em>"
+        p: "Quando un verbo regge una preposizione (<em>sich freuen auf, bestehen auf, sich einigen auf, hinweisen auf</em>) e il complemento è una frase, nella principale può comparire un avverbio pronominale che la annuncia; con alcuni verbi è obbligatorio (<em>bestehen auf</em>), con altri è facoltativo o cambia la sfumatura (<em>Ich freue mich, dass du kommst</em> esprime gioia per il fatto, <em>Ich freue mich darauf, dass du kommst</em> l'attesa di un evento futuro): <em>Er besteht <strong>darauf</strong>, dass wir bleiben. Wir haben uns <strong>darauf</strong> geeinigt, den Termin zu verschieben.</em> Senza preposizione, l'anticipatore può essere <strong>es</strong>: <em>Es ist wichtig, dass alle pünktlich sind.</em> Se la secondaria passa al primo posto, l'<em>es</em> soggetto sparisce: <em>Dass alle pünktlich sind, ist wichtig.</em>"
       },
       {
         h: "Tenere insieme un testo",
@@ -1376,7 +1376,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa: «Wir müssen noch eine Entscheidung ___.»",
         hint: "prendere (una decisione)",
-        why: "<b>treffen</b>: <i>eine Entscheidung treffen</i>."
+        why: "<b>treffen</b>: <i>eine Entscheidung treffen</i> (nello stile formale anche <i>fällen</i>)."
       },
       {
         q: "Completa: «Sie besteht ___, dass wir pünktlich sind.»",

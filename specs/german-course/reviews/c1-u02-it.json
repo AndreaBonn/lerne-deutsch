@@ -1,10 +1,15 @@
 {
-  "bundleHash": "ba84e968c49522ef5b565dbee3a5d17082b21960772235a9bacb2d6c50dc347b",
+  "bundleHash": "710094d73683a1f4bd1db3ed73209f43d3080b4a561b724cf63deb572e6b9c63",
   "findings": [
     {
-      "kind": "livello CEFR e progressione didattica",
-      "msg": "L'intera unità, incluso il test, verifica soprattutto riconoscimento di espressioni frequenti e completamenti guidati di singole parole, con frasi brevi e distrattori palesemente estranei. Non emerge una richiesta linguistica adeguata al C1: anche i sostituti del passivo e i prefissi ambivalenti vengono trattati solo nei casi elementari. Per mantenere l'etichetta C1, aggiungere testi autentici articolati, riformulazioni contestualizzate, distinzioni di registro e interpretazioni del valore modale di sein + zu, con alternative grammaticalmente plausibili; includere queste competenze nel test. Altrimenti riclassificare il materiale come ripasso di livello inferiore.",
-      "path": "merged"
+      "kind": "livello CEFR",
+      "msg": "Il percorso etichettato C1 richiede quasi esclusivamente riconoscimento di espressioni frequenti, completamenti guidati e traduzioni di frasi semplici. Anche il test usa distrattori facilmente eliminabili, senza verificare controllo avanzato del registro, sfumature modali o produzione articolata. Mantenere questi esercizi come ripasso e aggiungere attività C1: riformulazione di testi amministrativi, scelta motivata fra costruzioni con diversa modalità e revisione di collocazioni e registro in testi complessi.",
+      "path": "merged.lessons"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Zustande bringen» significa «realizzare», «riuscire a fare» o «portare a compimento». «Portare a termine» sposta l'accento sulla conclusione di un'attività, normalmente «zu Ende bringen». Usare «Riuscire a realizzare» come titolo italiano e allineare anche merged.test.title.",
+      "path": "merged.title"
     }
   ],
   "lang": "it",
