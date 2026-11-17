@@ -43,7 +43,7 @@ LINGUAI.addUnits("C1", [
           { t: "mcq", a: 0 },
           { t: "mcq", a: 0 },
           { t: "fill", a: ["worden"] },
-          { t: "fill", a: ["wird"] },
+          { t: "fill", a: ["haben"] },
           {
             t: "cloze",
             text: "An deiner Stelle {{1}} ich das nicht {{2}}.",
@@ -54,12 +54,10 @@ LINGUAI.addUnits("C1", [
             t: "trans",
             dir: "toIt",
             a: [
-              "Der Antrag wird gerade bearbeitet",
-              "Der Antrag wird im Moment bearbeitet",
-              "Der Antrag wird momentan bearbeitet",
-              "Der Antrag wird zurzeit bearbeitet",
-              "Der Antrag wird jetzt bearbeitet",
-              "Der Antrag wird gerade geprüft"
+              "Er wird den Termin wohl vergessen haben",
+              "Er wird den Termin vermutlich vergessen haben",
+              "Er wird wohl den Termin vergessen haben",
+              "Er wird vermutlich den Termin vergessen haben"
             ]
           },
           {
@@ -121,9 +119,8 @@ LINGUAI.addUnits("C1", [
             t: "trans",
             dir: "toIt",
             a: [
-              "Ich habe etwas Neues gelernt",
-              "Ich lernte etwas Neues",
-              "Ich habe heute etwas Neues gelernt"
+              "Ich habe mit einem Bekannten des Verletzten gesprochen",
+              "Ich sprach mit einem Bekannten des Verletzten"
             ]
           },
           {
@@ -175,14 +172,24 @@ LINGUAI.addUnits("C1", [
           },
           {
             t: "match",
-            pairs: [{ it: "höchst" }, { it: "äußerst" }, { it: "ziemlich" }, { it: "überaus" }]
+            pairs: [{ it: "die Bewertung" }, { it: "das Urteil" }, { it: "der Maßstab" }, { it: "der Eindruck" }]
           },
           {
             t: "trans",
             dir: "toIt",
             a: [
-              "Der Film war ziemlich langweilig",
-              "Der Film ist ziemlich langweilig gewesen"
+              "Das Ergebnis ist äußerst bemerkenswert, auch wenn die Kosten ziemlich hoch waren",
+              "Das Ergebnis ist äußerst bemerkenswert, auch wenn die Kosten ziemlich hoch gewesen sind",
+              "Das Ergebnis ist äußerst bemerkenswert, obwohl die Kosten ziemlich hoch waren",
+              "Das Ergebnis ist äußerst bemerkenswert, obwohl die Kosten ziemlich hoch gewesen sind",
+              "Das Ergebnis ist höchst bemerkenswert, auch wenn die Kosten ziemlich hoch waren",
+              "Das Ergebnis ist höchst bemerkenswert, auch wenn die Kosten ziemlich hoch gewesen sind",
+              "Das Ergebnis ist höchst bemerkenswert, obwohl die Kosten ziemlich hoch waren",
+              "Das Ergebnis ist höchst bemerkenswert, obwohl die Kosten ziemlich hoch gewesen sind",
+              "Das Ergebnis ist überaus bemerkenswert, auch wenn die Kosten ziemlich hoch waren",
+              "Das Ergebnis ist überaus bemerkenswert, auch wenn die Kosten ziemlich hoch gewesen sind",
+              "Das Ergebnis ist überaus bemerkenswert, obwohl die Kosten ziemlich hoch waren",
+              "Das Ergebnis ist überaus bemerkenswert, obwohl die Kosten ziemlich hoch gewesen sind"
             ]
           },
           {
@@ -200,8 +207,8 @@ LINGUAI.addUnits("C1", [
       titleIt: "Test: Die Gesichter von werden",
       exercises: [
         { t: "fill", a: ["geworden"] },
-        { t: "fill", a: ["Bekannter"] },
-        { t: "fill", a: ["äußerst"] },
+        { t: "fill", a: ["Bekannten"] },
+        { t: "fill", a: ["Verwandten"] },
         { t: "mcq", a: 0 },
         { t: "mcq", a: 0 },
         { t: "mcq", a: 0 },

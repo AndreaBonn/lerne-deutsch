@@ -1,0 +1,18 @@
+{
+  "bundleHash": "f90598453eb5d56ba2a6a795af0b8afbf36b6433596012d79cdc5525a6484ce8",
+  "findings": [
+    {
+      "kind": "livello CEFR e progressione",
+      "msg": "L'unità etichettata C1 propone quasi esclusivamente riconoscimento e completamento di strutture A2-B2: werden, passivo, declinazione degli aggettivi sostantivati e superlativo. Anche il test richiede soprattutto forme isolate e traduzioni lessicali. Gli intensificatori formali, da soli, non rendono il percorso C1. Integrare testi articolati, interpretazione contestuale delle modalità epistemiche, trasformazioni complesse e produzione autonoma con vincoli di registro, verificando queste competenze anche nel test; altrimenti riclassificare il percorso come ripasso di livello inferiore.",
+      "path": "merged.lessons"
+    },
+    {
+      "kind": "spiegazione grammaticale inesatta",
+      "msg": "La spiegazione presenta Arbeitsloser soltanto come singolare dopo ein, ma è anche il genitivo plurale forte senza articolo: «die Zahl Arbeitsloser». La risposta Arbeitslosen resta corretta nella frase proposta, perché preceduta da der. Correggere così: «Arbeitsloser può essere nominativo maschile singolare dopo ein oppure genitivo plurale senza articolo; dopo der al genitivo plurale serve Arbeitslosen».",
+      "path": "merged.lessons[1].exercises[0].why"
+    }
+  ],
+  "lang": "it",
+  "unit": "c1-u01",
+  "verdict": "fail"
+}

@@ -14,14 +14,14 @@ LINGUAI.addStrings("it", {
     title: "Una parola, cinque funzioni",
     objectives: [
       "riconoscere le cinque funzioni di werden in un testo",
+      "fare supposizioni sul passato con il Futur II",
       "distinguere geworden da worden al Perfekt",
-      "non scambiare un passivo presente per un futuro",
-      "usare werden con wohl per una supposizione"
+      "non scambiare un passivo presente per un futuro"
     ],
     theory: [
       {
         h: "Che cosa accompagna werden",
-        p: "Per capire che cosa fa <strong>werden</strong> in una frase, guarda che cosa lo accompagna. Con un nome o un aggettivo è un verbo pieno, «diventare»: <em>Sie wird Ärztin. Es wird dunkel.</em> Con un infinito forma il <strong>futuro</strong> (<em>Wir werden Sie informieren</em>) o, spesso con <em>wohl</em>, una <strong>supposizione</strong> (<em>Er wird wohl im Büro sein</em>). Con un participio II forma il <strong>passivo</strong>: <em>Der Antrag wird bearbeitet.</em> La forma <strong>würde</strong> + infinito è il Konjunktiv II: <em>Ich würde das nicht tun.</em>"
+        p: "Per capire che cosa fa <strong>werden</strong> in una frase, guarda che cosa lo accompagna. Con un nome o un aggettivo è un verbo pieno, «diventare»: <em>Sie wird Ärztin. Es wird dunkel.</em> Con un infinito forma il <strong>futuro</strong> (<em>Wir werden Sie informieren</em>) o, spesso con <em>wohl</em>, una <strong>supposizione</strong> (<em>Er wird wohl im Büro sein</em>). Con un participio II forma il <strong>passivo</strong>: <em>Der Antrag wird bearbeitet.</em> La forma <strong>würde</strong> + infinito è il Konjunktiv II: <em>Ich würde das nicht tun.</em> Per una supposizione sul passato si usa il <strong>Futur II</strong>, <em>werden</em> + participio II + <em>haben</em> o <em>sein</em>: <em>Er wird den Termin wohl vergessen haben. Sie wird schon losgefahren sein.</em>"
       },
       {
         h: "geworden o worden",
@@ -31,7 +31,7 @@ LINGUAI.addStrings("it", {
         contrast: "L'italiano usa forme diverse per queste funzioni: <em>diventare</em>, il futuro (<em>vi informeremo</em>), il futuro di supposizione (<em>sarà in ufficio</em>), <em>venire</em> o <em>essere</em> nel passivo, il condizionale (<em>non lo farei</em>). In tedesco c'è sempre <em>werden</em>, e la funzione si capisce solo dal resto della frase."
       },
       {
-        trap: "<em>Der Antrag wird bearbeitet</em> non è un futuro: è un passivo presente, «la domanda viene elaborata». Il futuro del passivo è <em>Der Antrag wird bearbeitet werden</em>, raro nel parlato. E <em>bekommen</em> non significa «diventare»: significa «ricevere»."
+        trap: "<em>Der Antrag wird bearbeitet</em> non è un futuro: è un passivo presente, «la domanda viene elaborata». E la supposizione sul passato non si fa con il futuro semplice: <em>sarà stato stanco</em> è <em>Er wird müde gewesen sein</em> (Futur II), non <em>Er wird müde sein</em>, che riguarda il presente."
       },
       {
         tip: "Davanti a un <em>werden</em> difficile, cerca la fine della frase: un participio II (<em>bearbeitet</em>) segnala il passivo, un infinito (<em>informieren, sein</em>) il futuro o la supposizione."
@@ -75,22 +75,22 @@ LINGUAI.addStrings("it", {
     ],
     exercises: [
       {
-        q: "Che funzione ha werden in «Das Haus wird renoviert»?",
+        q: "In un messaggio dell'ospedale: «Ihr Vater wird morgen früh operiert.» Che cosa fa werden qui?",
         opts: [
-          "passivo",
-          "futuro",
-          "verbo pieno «diventare»"
+          "forma un passivo presente, con valore di futuro per via di morgen",
+          "forma un futuro attivo: il padre opererà",
+          "esprime una supposizione: forse verrà operato"
         ],
-        why: "Con il participio II <i>renoviert</i>, <b>werden</b> forma il passivo presente: «la casa viene ristrutturata»."
+        why: "Con il participio II <i>operiert</i> è un <b>passivo</b>; il presente ha valore di futuro grazie a <i>morgen früh</i>, come spesso in tedesco. Non c'è <i>wohl</i> né infinito: non è una supposizione."
       },
       {
-        q: "Che cosa esprime werden in «Sie wird wohl im Büro sein»?",
+        q: "Un collega è preoccupato per una cifra in un rapporto. Rispondi: «Das wird schon stimmen.» Che cosa comunichi?",
         opts: [
-          "una supposizione",
-          "un passivo",
-          "un cambiamento («diventare»)"
+          "una supposizione rassicurante: «sarà sicuramente giusto»",
+          "una previsione: «diventerà giusto»",
+          "un passivo: «viene corretto»"
         ],
-        why: "<i>werden</i> + infinito con <i>wohl</i>: una <b>supposizione</b> sul presente, «sarà in ufficio»."
+        why: "<i>werden</i> + infinito con <i>schon</i> esprime una <b>supposizione</b> che rassicura; <i>stimmen</i> è un infinito, non un participio, quindi non è un passivo."
       },
       {
         q: "Completa: «Er ist Arzt ___.»",
@@ -107,9 +107,9 @@ LINGUAI.addStrings("it", {
         why: "<b>worden</b>: nel Perfekt passivo il participio di <i>werden</i> perde <i>ge-</i>."
       },
       {
-        q: "Completa al presente: «Es ___ langsam dunkel.»",
-        hint: "werden, terza persona singolare",
-        why: "<b>wird</b>: qui <i>werden</i> è verbo pieno, «si sta facendo buio»."
+        q: "Il tuo amico non è venuto all'appuntamento. Supponi: «Er wird den Termin wohl vergessen ___.»",
+        hint: "Futur II: werden + participio + ausiliare",
+        why: "<b>haben</b>: supposizione sul passato con il Futur II, <i>wird ... vergessen haben</i>, «avrà dimenticato l'appuntamento»."
       },
       {
         q: "Completa la frase.",
@@ -127,8 +127,8 @@ LINGUAI.addStrings("it", {
         why: "Le prime due hanno un participio II (<i>geschickt, geöffnet</i>): passivo. Nella terza <i>werden</i> + infinito è un futuro, nella quarta con un nome è «diventare»."
       },
       {
-        q: "Traduci: «La domanda viene elaborata proprio adesso.» (der Antrag, bearbeiten)",
-        why: "<i>Der Antrag wird gerade bearbeitet</i>: passivo presente; al posto di <i>gerade</i> vanno bene anche <i>im Moment, momentan, zurzeit</i>."
+        q: "Riformula con il Futur II di supposizione: «Probabilmente (lui) ha dimenticato l'appuntamento.» (der Termin)",
+        why: "<i>Er wird den Termin wohl vergessen haben</i>: <i>werden</i> + participio + <i>haben</i>, con <i>wohl</i> o <i>vermutlich</i> al posto di «probabilmente» (<i>sicher</i> direbbe una certezza maggiore)."
       },
       {
         tr: "La città diventa sempre più grande. Fra dieci anni avrà probabilmente il doppio degli abitanti, e molte case vecchie verranno demolite.",
@@ -205,13 +205,13 @@ LINGUAI.addStrings("it", {
     ],
     exercises: [
       {
-        q: "Completa: «Ein ___ hat mir geholfen.»",
+        q: "In una notizia economica: «Die Zahl der ___ ist im Herbst gestiegen.»",
         opts: [
-          "Bekannter",
-          "Bekannte",
-          "Bekannten"
+          "Arbeitslosen",
+          "Arbeitslose",
+          "Arbeitsloser"
         ],
-        why: "Dopo <i>ein</i>, al maschile nominativo, l'aggettivo sostantivato prende <b>-er</b>: <i>ein Bekannter</i>."
+        why: "Genitivo plurale dopo <i>der</i>: l'aggettivo sostantivato prende <b>-en</b>, <i>die Zahl der Arbeitslosen</i>. <i>Arbeitslose</i> è il plurale nominativo o accusativo senza articolo; <i>Arbeitsloser</i> è il singolare dopo <i>ein</i> oppure il genitivo plurale senza articolo (<i>die Zahl Arbeitsloser</i>). Dopo <i>der</i> al genitivo plurale serve <i>Arbeitslosen</i>."
       },
       {
         q: "Completa: «Ich habe mit dem ___ gesprochen.»",
@@ -241,7 +241,7 @@ LINGUAI.addStrings("it", {
         why: "Dopo <i>nichts</i> l'aggettivo sostantivato è neutro con <b>-es</b>: <i>nichts Besseres</i>, anche al comparativo."
       },
       {
-        q: "Completa la frase.",
+        q: "Completa la frase: nella prima lacuna «ragazzi», nella seconda «adulti».",
         tr: "L'ingresso è gratuito per i ragazzi, gli adulti pagano dieci euro.",
         why: "<i>Jugendliche</i> ed <i>Erwachsene</i>: plurale senza articolo, quindi <i>-e</i> e non <i>-en</i>."
       },
@@ -260,8 +260,8 @@ LINGUAI.addStrings("it", {
         why: "<i>Der Verletzte wurde ins Krankenhaus gebracht.</i> <i>der Verletzte</i> è un participio sostantivato; <i>wurde ... gebracht</i> è un passivo al Präteritum."
       },
       {
-        q: "Traduci: «Ho imparato qualcosa di nuovo.»",
-        why: "<i>Ich habe etwas Neues gelernt</i>: niente preposizione dopo <i>etwas</i>, e <i>Neues</i> con la maiuscola e la desinenza <i>-es</i>."
+        q: "Traduci: «Ho parlato con un conoscente del ferito.»",
+        why: "<i>Ich habe mit einem Bekannten des Verletzten gesprochen</i>: due sostantivati, al dativo dopo <i>mit einem</i> (<i>Bekannten</i>) e al genitivo dopo <i>des</i> (<i>Verletzten</i>), tutti e due in <i>-en</i>."
       },
       {
         tr: "Ieri ho incontrato un vecchio conoscente. Mi ha raccontato una cosa interessante: la sua ditta cerca nuovi impiegati.",
@@ -289,7 +289,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Il superlativo resta un confronto",
-        p: "<em>am</em> + superlativo (<em>am kürzesten, am besten</em>) confronta una cosa con altre: <em>Von den drei Wegen ist dieser am kürzesten.</em> Nello scritto formale esiste anche <em>aufs</em> + superlativo con valore di grado molto alto: <em>Sie hat uns aufs Herzlichste begrüßt.</em>"
+        p: "Di norma <em>am</em> + superlativo (<em>am kürzesten, am besten</em>) confronta una cosa con altre; ci sono anche usi senza un confronto reale, come <em>Das weißt du am besten selbst</em>. Il valore ordinario, quello di questa lezione, è il confronto: <em>Von den drei Wegen ist dieser am kürzesten.</em> Nello scritto formale esiste anche <em>aufs</em> + superlativo, con la maiuscola o la minuscola, con valore di grado molto alto: <em>Sie hat uns aufs Herzlichste begrüßt.</em>"
       },
       {
         contrast: "L'italiano forma il superlativo assoluto con <em>-issimo</em> (<em>difficilissimo, interessantissimo</em>). Il tedesco non ha un suffisso così: <em>difficilissimo</em> è <em>äußerst schwierig</em> o <em>sehr schwierig</em>. E <em>am schwierigsten</em> non è «difficilissimo», ma «il più difficile» in un confronto."
@@ -356,13 +356,13 @@ LINGUAI.addStrings("it", {
         why: "Qui c'è un confronto fra tre percorsi: <b>am kürzesten</b>. <i>äußerst kurz</i> direbbe solo che è molto breve."
       },
       {
-        q: "Completa: «Das ist ein ___ interessanter Vorschlag.»",
+        q: "Rispondi per lettera a un'offerta commerciale. Quale frase esprime un interesse molto alto, senza confronto e nel registro adatto?",
         opts: [
-          "höchst",
-          "am höchsten",
-          "höchster"
+          "Ihr Angebot ist für uns äußerst interessant.",
+          "Ihr Angebot ist für uns echt super.",
+          "Ihr Angebot ist für uns am interessantesten."
         ],
-        why: "<b>höchst</b> è un avverbio davanti all'aggettivo e non si declina; la desinenza va su <i>interessanter</i>."
+        why: "In una lettera formale si usa <b>äußerst</b> (o <i>höchst</i>); <i>echt super</i> è parlato informale. <i>am interessantesten</i> è un confronto e qui non c'è nulla con cui confrontare."
       },
       {
         q: "Completa con il superlativo di kurz: «Dieser Weg ist am ___.»",
@@ -377,20 +377,20 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa la frase.",
         tr: "Ci ha salutati nel modo più cordiale.",
-        why: "<i>Sie hat uns aufs Herzlichste begrüßt</i>: <i>aufs</i> + superlativo con la maiuscola, formula dello scritto formale."
+        why: "<i>Sie hat uns aufs Herzlichste begrüßt</i> (si scrive anche <i>aufs herzlichste</i>): <i>aufs</i> + superlativo, formula dello scritto formale."
       },
       {
-        q: "Abbina ogni avverbio al suo significato.",
+        q: "Abbina ogni parola al suo significato.",
         pairs: [
-          "sommamente, in sommo grado",
-          "estremamente",
-          "piuttosto, abbastanza",
-          "oltremodo"
+          "la valutazione, la recensione",
+          "il giudizio",
+          "il criterio, il metro di misura",
+          "l'impressione"
         ]
       },
       {
-        q: "Traduci: «Il film era piuttosto noioso.»",
-        why: "<i>Der Film war ziemlich langweilig</i>: <i>ziemlich</i> attenua, come «piuttosto»."
+        q: "Scrivi in registro formale: «Il risultato è estremamente notevole, anche se i costi sono stati piuttosto alti.»",
+        why: "<i>Das Ergebnis ist äußerst bemerkenswert, auch wenn die Kosten ziemlich hoch waren</i>: <i>äußerst</i> (o <i>höchst, überaus</i>) per il grado alto, <i>ziemlich</i> per attenuare; vanno bene anche <i>obwohl</i> e il Perfekt <i>gewesen sind</i>."
       },
       {
         tr: "La nuova mostra merita davvero di essere vista. I quadri sono estremamente insoliti, e i visitatori sono rimasti oltremodo colpiti.",
@@ -398,7 +398,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "È un risultato estremamente notevole.",
-        why: "In <i>bemerkenswertes</i> l'accento cade su <b>mer</b>; in <i>Ergebnis</i> l'accento cade su <b>geb</b>; in <i>höchst</i> <b>ch</b> si pronuncia [ç] e la <b>ö</b> è lunga."
+        why: "In <i>bemerkenswertes</i> l'accento cade su <b>mer</b>; in <i>Ergebnis</i> l'accento cade su <b>geb</b>; in <i>höchst</i> <b>ch</b> si pronuncia [ç]."
       }
     ]
   },
@@ -420,23 +420,23 @@ LINGUAI.addStrings("it", {
         why: "<b>geworden</b>: con il significato di «diventare» il participio ha <i>ge-</i>."
       },
       {
-        q: "Completa: «Ein ___ von mir wohnt in Wien.»",
-        hint: "da bekannt, maschile, dopo ein",
-        why: "<b>Bekannter</b>: aggettivo sostantivato con la desinenza <i>-er</i> dopo <i>ein</i>."
+        q: "Completa: «Ich habe gestern mit einem ___ von dir gesprochen.»",
+        hint: "da bekannt, maschile, dativo dopo einem",
+        why: "<b>Bekannten</b>: dopo <i>einem</i> (dativo) l'aggettivo sostantivato prende <i>-en</i>."
       },
       {
-        q: "Completa: «Das ist ein ___ schwieriges Problem.»",
-        hint: "«estremamente», comincia con ä",
-        why: "<b>äußerst</b>: avverbio di grado davanti all'aggettivo, invariabile."
+        q: "Completa: «Wir wohnen zurzeit in der Wohnung eines ___.»",
+        hint: "da verwandt, maschile, genitivo dopo eines",
+        why: "<b>Verwandten</b>: dopo <i>eines</i> (genitivo) l'aggettivo sostantivato prende <i>-en</i>."
       },
       {
-        q: "Che funzione ha werden in «Der Brief wird morgen verschickt»?",
+        q: "La collega non risponde al telefono. Che cosa significa «Sie wird den Zug verpasst haben»?",
         opts: [
-          "passivo",
-          "supposizione",
-          "verbo pieno «diventare»"
+          "una supposizione sul passato: «avrà perso il treno»",
+          "un futuro: «perderà il treno»",
+          "un passivo: «il treno è stato perso»"
         ],
-        why: "Con il participio <i>verschickt</i> è un <b>passivo</b>; <i>morgen</i> colloca nel futuro l'azione, ma la forma resta un passivo presente."
+        why: "<i>werden</i> + participio + <i>haben</i> è il <b>Futur II</b>: qui una supposizione su qualcosa di già accaduto."
       },
       {
         q: "Che cosa esprime «Er wird wohl krank sein»?",
@@ -448,13 +448,13 @@ LINGUAI.addStrings("it", {
         why: "<i>werden</i> + infinito con <i>wohl</i>: <b>supposizione</b>, «sarà malato»."
       },
       {
-        q: "Completa: «Ich habe etwas ___ gehört.»",
+        q: "Un ospite è in ritardo. Quale frase esprime la supposizione più debole?",
         opts: [
-          "Neues",
-          "Neue",
-          "Neuen"
+          "Er wird vielleicht noch kommen.",
+          "Er wird sicher noch kommen.",
+          "Er kommt bestimmt noch."
         ],
-        why: "Dopo <i>etwas</i>: neutro con la maiuscola e <b>-es</b>, <i>etwas Neues</i>."
+        why: "<b>vielleicht</b> lascia aperta la possibilità; <i>sicher</i> e <i>bestimmt</i> esprimono una supposizione molto forte."
       },
       {
         q: "Fra tutti i candidati, lei è la migliore: «Von allen Kandidaten ist sie ___.»",
