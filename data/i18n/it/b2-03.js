@@ -34,7 +34,7 @@ LINGUAI.addStrings("it", {
         trap: "Nello scritto standard <em>trotzdem</em> è un avverbio, non una congiunzione: <em>Trotzdem gehen wir</em>, non <em>trotzdem wir gehen</em>. E <em>trotz</em> regge il genitivo: <em>trotz des Regens</em>. Nel parlato si sente anche <em>trotz dem Regen</em>, ma in un testo scritto si usa il genitivo."
       },
       {
-        tip: "Il genitivo maschile e neutro aggiunge <em>-s</em> o <em>-es</em> anche al nome: <em>trotz des Regens, trotz des schlechten Wetters</em>. Al femminile e al plurale non cambia niente sul nome: <em>trotz der Kälte, trotz der hohen Kosten</em>."
+        tip: "Nella declinazione forte il genitivo maschile e neutro aggiunge <em>-s</em> o <em>-es</em> anche al nome (i maschili deboli prendono invece <em>-(e)n</em>: <em>trotz des Studenten</em>): <em>trotz des Regens, trotz des schlechten Wetters</em>. Al femminile e al plurale non cambia niente sul nome: <em>trotz der Kälte, trotz der hohen Kosten</em>."
       }
     ],
     grammar: {
@@ -289,17 +289,17 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Contrapporre e limitare",
-        p: "<strong>jedoch</strong> («tuttavia») è tipico dello scritto: si comporta come un avverbio e può stare al primo posto, con il verbo subito dopo, oppure dentro la frase. <em>Der Vorschlag klingt gut. Er ist jedoch zu teuer.</em> <strong>allerdings</strong> («però, a dire il vero») limita quanto si è appena detto: <em>Die Wohnung ist schön, allerdings ziemlich laut.</em> <strong>hingegen</strong> («invece») mette a confronto due soggetti: <em>Ich trinke Kaffee, meine Frau hingegen trinkt Tee.</em> <strong>zwar ... aber</strong> concede e poi obietta: <em>Das Auto ist zwar alt, aber es fährt gut.</em>"
+        p: "<strong>jedoch</strong> («tuttavia») è tipico dello scritto: si comporta come un avverbio e può stare al primo posto, con il verbo subito dopo, oppure dentro la frase. <em>Der Vorschlag klingt gut. Er ist jedoch zu teuer.</em> <strong>allerdings</strong> («però, a dire il vero») limita quanto si è appena detto: <em>Die Wohnung ist schön, allerdings ziemlich laut.</em> <strong>hingegen</strong> («invece») contrappone due elementi o due situazioni: <em>Ich trinke Kaffee, meine Frau hingegen trinkt Tee.</em> <strong>zwar ... aber</strong> concede e poi obietta: <em>Das Auto ist zwar alt, aber es fährt gut.</em>"
       },
       {
         h: "Correggere",
         p: "<strong>sondern</strong> segue una negazione (<em>nicht</em>, <em>kein</em>) e mette al posto dell'elemento negato quello giusto: <em>Das Problem ist nicht das Geld, sondern die Zeit.</em> Fa parte anche di <em>nicht nur ... sondern auch</em>: <em>Er ist nicht nur Arzt, sondern auch Musiker.</em> <strong>vielmehr</strong> («anzi, piuttosto») corregge con più forza, spesso in una frase nuova: <em>Das war kein Zufall. Vielmehr hatte er alles geplant.</em>"
       },
       {
-        contrast: "L'italiano usa <em>ma</em> sia per aggiungere un'obiezione sia per correggere: <em>non è ricco, ma è felice</em> e <em>non è ricco, ma povero</em>. Il tedesco li distingue: <em>Er ist nicht reich, aber glücklich</em> (tutte e due le cose sono vere) e <em>Er ist nicht reich, sondern arm</em> (la seconda sostituisce la prima). E <em>non solo ... ma anche</em> è <em>nicht nur ... sondern auch</em>, non <em>aber auch</em>."
+        contrast: "L'italiano usa <em>ma</em> sia per aggiungere un'obiezione sia per correggere: <em>non è ricco, ma è felice</em> e <em>non è ricco, ma povero</em>. Il tedesco li distingue: <em>Er ist nicht reich, aber glücklich</em> (tutte e due le cose sono vere) e <em>Er ist nicht reich, sondern arm</em> (la seconda sostituisce la prima). E <em>non solo ... ma anche</em> si rende di norma con <em>nicht nur ... sondern auch</em>."
       },
       {
-        trap: "<em>sondern</em> va solo dopo una negazione e solo quando correggi: <em>Er kommt nicht heute, sondern morgen.</em> Se la prima affermazione resta vera e aggiungi un limite, serve <em>aber</em> o <em>allerdings</em>: <em>Das Essen war gut, aber teuer.</em>"
+        trap: "<em>sondern</em> introduce una correzione dopo una negazione (<em>Er kommt nicht heute, sondern morgen</em>); nella struttura <em>nicht nur ..., sondern auch</em> aggiunge invece un secondo elemento. Se la prima affermazione resta vera e aggiungi un limite, serve <em>aber</em> o <em>allerdings</em>: <em>Das Essen war gut, aber teuer.</em>"
       },
       {
         tip: "Prova a riformulare con «invece»: se «non oggi, invece domani» funziona, ti serve <em>sondern</em>. Se invece funziona «però», ti serve <em>aber</em> o <em>allerdings</em>."
@@ -307,13 +307,13 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Connettivi per contrapporre, limitare e correggere",
-      note: "<b>jedoch</b>, <b>allerdings</b>, <b>hingegen</b>, <b>vielmehr</b> si comportano come avverbi: al primo posto, il verbo segue subito. <b>sondern</b> dopo una negazione, per correggere.",
+      note: "<b>jedoch</b>, <b>allerdings</b>, <b>hingegen</b>, <b>vielmehr</b> si comportano come avverbi: al primo posto, il verbo segue subito. <b>sondern</b> dopo una negazione, per correggere, e in <i>nicht nur ... sondern auch</i>.",
       table: {
         head: ["connettivo", "significato", "uso"],
         rows: [
           ["jedoch", "tuttavia", "scritto; al primo posto o dentro la frase"],
           ["allerdings", "però, a dire il vero", "limita quanto si è appena detto"],
-          ["hingegen", "invece", "confronta due soggetti"],
+          ["hingegen", "invece", "contrappone due elementi o situazioni"],
           ["zwar ... aber", "è vero che ... ma", "concede e poi obietta"],
           ["sondern", "ma (al contrario)", "dopo nicht o kein, corregge"],
           ["vielmehr", "anzi, piuttosto", "corregge con più forza, spesso in una frase nuova"]
@@ -325,7 +325,7 @@ LINGUAI.addStrings("it", {
         { tr: "Il problema non è il denaro, ma il tempo.", note: "nicht ..., sondern: correzione" },
         { tr: "Non è solo medico, ma anche musicista.", note: "nicht nur ... sondern auch" },
         { tr: "Non è stato un caso. Anzi, aveva pianificato tutto.", note: "vielmehr al primo posto: hatte er" },
-        { tr: "Io bevo caffè, mia moglie invece beve tè.", note: "hingegen: confronto fra due soggetti" }
+        { tr: "Io bevo caffè, mia moglie invece beve tè.", note: "hingegen: contrapposizione fra due elementi" }
       ]
     },
     vocab: [
@@ -347,10 +347,10 @@ LINGUAI.addStrings("it", {
         q: "Completa: «Er kommt nicht heute, ___ morgen.»",
         opts: [
           "sondern",
-          "aber",
-          "oder"
+          "denn",
+          "obwohl"
         ],
-        why: "Dopo la negazione, <b>sondern</b> mette l'informazione giusta al posto di quella negata: non oggi, invece domani."
+        why: "Dopo la negazione, <b>sondern</b> mette l'informazione giusta al posto di quella negata: non oggi, invece domani. <i>denn</i> introduce una causa, <i>obwohl</i> una secondaria con il verbo in fondo."
       },
       {
         q: "Completa: «Das Essen war gut, ___ etwas teuer.»",
@@ -365,7 +365,7 @@ LINGUAI.addStrings("it", {
         q: "Completa: «Sie spricht nicht nur Deutsch, ___ auch Japanisch.»",
         opts: [
           "sondern",
-          "aber",
+          "denn",
           "vielmehr"
         ],
         why: "<i>nicht nur ... <b>sondern</b> auch</i> corrisponde a «non solo ... ma anche»."
@@ -391,7 +391,7 @@ LINGUAI.addStrings("it", {
           "tuttavia",
           "però, a dire il vero",
           "anzi, piuttosto",
-          "invece (fra due soggetti)"
+          "invece (in una contrapposizione)"
         ]
       },
       {
@@ -405,7 +405,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "È vero che lo studio mostra dei progressi, però i risultati non sono ancora sicuri. Il problema non è la tecnica, ma la mancanza di soldi.",
-        why: "In <i>Fortschritte</i> l'accento cade su <b>Fort</b>; in <i>Ergebnisse</i> l'accento cade su <b>Er</b>; in <i>Technik</i> <b>ch</b> si pronuncia [ç]."
+        why: "In <i>Fortschritte</i> l'accento cade su <b>Fort</b>; in <i>Ergebnisse</i> l'accento cade su <b>geb</b>; in <i>Technik</i> <b>ch</b> si pronuncia [ç]."
       },
       {
         tr: "Non è una questione di soldi, anzi è una questione di rispetto.",
@@ -470,7 +470,7 @@ LINGUAI.addStrings("it", {
           "gewusst",
           "wissen"
         ],
-        why: "<i>als ob</i> vuole il Konjunktiv II: <b>wüsste</b>."
+        why: "Nelle comparative irreali con <i>als ob</i> si usa normalmente il Konjunktiv II: fra queste opzioni <b>wüsste</b> è l'unica corretta."
       },
       {
         q: "Quali frasi sono corrette?",

@@ -193,7 +193,7 @@ LINGUAI.addUnits("B2", [
           {
             t: "order",
             tokens: ["Ich", "trinke", "Kaffee,", "meine", "Frau", "hingegen", "trinkt", "Tee"],
-            a: ["Ich trinke Kaffee, meine Frau hingegen trinkt Tee", "Ich trinke Kaffee, meine Frau trinkt hingegen Tee"]
+            a: ["Ich trinke Kaffee, meine Frau hingegen trinkt Tee", "Ich trinke Kaffee, meine Frau trinkt hingegen Tee", "Ich hingegen trinke Kaffee, meine Frau trinkt Tee"]
           },
           {
             t: "trans",
