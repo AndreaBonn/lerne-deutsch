@@ -396,7 +396,7 @@ LINGUAI.addStrings("it", {
     exercises: [
       {
         tr: "Il Konjunktiv II passato di fahren, tutte le persone.",
-        why: "<i>fahren</i> al Perfekt vuole <i>sein</i> (<i>ich bin gefahren</i>), quindi <i>wäre gefahren</i>. Con un complemento oggetto (<i>Ich hätte das Auto gefahren</i>) si usa <i>haben</i>, ma qui la tabella chiede il verbo di movimento."
+        why: "<i>fahren</i> al Perfekt vuole <i>sein</i> (<i>ich bin gefahren</i>), quindi <i>wäre gefahren</i>. La tabella chiede il verbo intransitivo di movimento; nel senso di guidare un veicolo, con un complemento oggetto, l'ausiliare abituale è <i>haben</i> (<i>Ich hätte das Auto gefahren</i>)."
       },
       {
         tr: "Il Konjunktiv II passato di lernen, tutte le persone.",
