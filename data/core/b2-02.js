@@ -199,9 +199,7 @@ LINGUAI.addUnits("B2", [
               "Sie fragte mich, wo ich wohnte",
               "Sie fragte mich, wo ich wohnen würde",
               "Sie hat mich gefragt, wo ich wohne",
-              "Sie hat mich gefragt, wo ich wohnte",
-              "Sie fragte, wo ich wohne",
-              "Sie fragte, wo ich wohnte"
+              "Sie hat mich gefragt, wo ich wohnte"
             ]
           },
           {
