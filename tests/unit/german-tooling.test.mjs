@@ -81,6 +81,7 @@ test('settings voice button speaks the same German sentence collected for record
   for (const name of [...CORE_FILES, 'interference', 'cils']) files[`data/core/${name}.js`] = '';
   const dir = fixture(files);
   copyFileSync(new URL('../../scripts/extract_strings.mjs', import.meta.url), join(dir, 'scripts/extract_strings.mjs'));
+  copyFileSync(new URL('../../scripts/spoken-strings.mjs', import.meta.url), join(dir, 'scripts/spoken-strings.mjs'));
   const result = run(dir, 'extract_strings.mjs');
   assert.equal(result.status, 0, result.stderr);
   assert.deepEqual(JSON.parse(readFileSync(join(dir, 'scripts/audio-strings.json'), 'utf8')), { primary: [spoken], other: [] });

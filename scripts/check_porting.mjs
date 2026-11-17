@@ -1,4 +1,6 @@
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, existsSync, statSync } from 'node:fs';
+import vm from 'node:vm';
+import { spokenStrings } from './spoken-strings.mjs';
 import { resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadCourse, unitLessons } from './snapshot_target.mjs';
@@ -17,7 +19,8 @@ Default: check core for all target units and course distribution.
 --level: every unit of the level on core, it, en, es, fr, pl and review (the phase gate).
 Language stages check overlay file existence. Review requires pass per requested language (default it).
 Human: n/a below B2; B2-C2 need <unit>-human.md with a nonempty ESITO: line after picked IDs.
-Audio: n/a (not implemented yet); explicitly requesting this stage exits 1.
+Audio: every spoken string of the unit's lessons and test has its hash in data/audio-index.js and a non-empty
+  mp3 under audio/. The library, readings, conversations, minimal pairs and exam are not covered.
 Curriculum: require curriculum.md listing all target unit IDs. Incomplete checks exit 1.`;
 
 export function parseOptions({ args, values, flags }) {
@@ -82,6 +85,40 @@ function humanErrors({ root, id, level }) {
   return /^ESITO:[ \t]*\S[^\r\n]*$/m.test(readFileSync(path, 'utf8')) ? [] : [`Missing ESITO: result for ${id}`];
 }
 
+/* The hash comes from the browser's own assets/js/recordings.js, loaded in a
+   sandbox, so the stage checks exactly what the course will look up. */
+function loadRecordings(root) {
+  const sandbox = { TextEncoder, BigInt };
+  sandbox.window = sandbox;
+  const index = join(root, 'data/audio-index.js');
+  if (existsSync(index)) {
+    try { vm.runInNewContext(readFileSync(index, 'utf8'), sandbox); }
+    catch (error) { throw new Error(`data/audio-index.js does not load: ${error.message}`, { cause: error }); }
+  }
+  vm.runInNewContext(readFileSync(join(ROOT, 'assets/js/recordings.js'), 'utf8'), sandbox);
+  return sandbox.Recordings;
+}
+
+const AUDIO_SHOWN = 3;
+
+function hasRecording(root, rec, text) {
+  const digest = rec.hash(rec.norm(text));
+  const file = join(root, rec.url(digest));
+  return rec.inIndex(digest) && existsSync(file) && statSync(file).size > 0;
+}
+
+export function audioErrors({ root, unit }) {
+  let rec;
+  try { rec = loadRecordings(root); } catch (error) { return [error.message]; }
+  const { primary, other } = spokenStrings(unit);
+  /* A unit that speaks nothing would pass having checked nothing. */
+  if (!primary.length && !other.length) return ['no spoken strings found: nothing to check'];
+  const missing = [...primary, ...other].filter(text => !hasRecording(root, rec, text));
+  if (!missing.length) return [];
+  const shown = missing.slice(0, AUDIO_SHOWN).map(text => `"${text}"`).join(', ');
+  return [`Missing recording for ${missing.length} of ${primary.length + other.length} spoken strings: ${shown}${missing.length > AUDIO_SHOWN ? ', ...' : ''}`];
+}
+
 function stageErrors({ stage, context }) {
   const { root, unit, target, id, course, languages, level } = context;
   if (stage === 'core') {
@@ -93,7 +130,7 @@ function stageErrors({ stage, context }) {
   }
   if (stage === 'review') return reviewErrors({ root, id, languages });
   if (stage === 'human') return humanErrors({ root, id, level });
-  return ['n/a (not implemented yet)'];
+  return audioErrors({ root, unit });
 }
 
 function distributionErrors(course, target) {

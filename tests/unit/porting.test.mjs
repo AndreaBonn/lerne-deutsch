@@ -116,16 +116,13 @@ test('human stage is n/a below B2 and requires an ESITO line above it', t => {
   assert.equal(check(root, '--stage', 'human').status, 0);
 });
 
-test('curriculum must list target units; audio is explicitly unsupported', t => {
+test('curriculum must list target units', t => {
   const root = fixture(t);
   assert.equal(check(root, '--curriculum').status, 1);
   put(root, 'specs/german-course/curriculum.md', 'a1-u010');
   assert.equal(check(root, '--curriculum').status, 1);
   put(root, 'specs/german-course/curriculum.md', '# Curriculum\na1-u01');
   assert.equal(check(root, '--curriculum').status, 0);
-  const audio = check(root, '--stage', 'audio');
-  assert.equal(audio.status, 1);
-  assert.match(audio.stdout, /n\/a \(not implemented yet\)/);
   const help = check(root, '--help');
   assert.equal(help.status, 0);
   assert.match(help.stdout, /ESITO:|audio/);
@@ -173,4 +170,56 @@ test('--level checks every unit of the level in every language and its reviews',
   const unknown = check(root, '--level', 'B1');
   assert.equal(unknown.status, 1);
   assert.match(unknown.stdout + unknown.stderr, /B1/);
+});
+
+/* The audio stage: every sentence the unit speaks has its hash in the index
+   and its mp3 on disk. The hash comes from assets/js/recordings.js, the same
+   function the browser uses, so the stage cannot drift from what plays. */
+function fnv(text) {
+  let h = 0xcbf29ce484222325n;
+  for (const byte of new TextEncoder().encode(text)) h = ((h ^ BigInt(byte)) * 0x100000001b3n) & 0xffffffffffffffffn;
+  return h.toString(16).padStart(16, '0');
+}
+
+test('audio stage fails without recordings and passes when every spoken string has one', t => {
+  const root = fixture(t);
+  const missing = check(root, '--unit', 'a1-u01', '--stage', 'audio');
+  assert.equal(missing.status, 1);
+  assert.match(missing.stdout, /a1-u01 audio: .*Missing recording.*die Straße/);
+  const digest = fnv('die Straße');
+  put(root, 'data/audio-index.js', `window.AUDIO_INDEX = "${digest}";`);
+  const noFile = check(root, '--unit', 'a1-u01', '--stage', 'audio');
+  assert.equal(noFile.status, 1, 'an index entry without the mp3 is still missing');
+  put(root, `audio/${digest.slice(0, 2)}/${digest}.mp3`, '');
+  assert.equal(check(root, '--unit', 'a1-u01', '--stage', 'audio').status, 1, 'an empty mp3 is not a recording');
+  put(root, `audio/${digest.slice(0, 2)}/${digest}.mp3`, 'x');
+  put(root, 'data/audio-index.js', 'window.AUDIO_INDEX = ');
+  const broken = check(root, '--unit', 'a1-u01', '--stage', 'audio');
+  assert.equal(broken.status, 1);
+  assert.match(broken.stdout, /a1-u01 audio: .*audio-index/, 'a broken index is a stage error, not a crash');
+  put(root, 'data/audio-index.js', `window.AUDIO_INDEX = "${digest}";`);
+  const ok = check(root, '--unit', 'a1-u01', '--stage', 'audio');
+  assert.equal(ok.status, 0, ok.stdout + ok.stderr);
+  assert.match(ok.stdout, /a1-u01 audio: pass/);
+});
+
+test('spoken strings follow the extract_strings rules', async () => {
+  const { spokenStrings } = await import('../../scripts/spoken-strings.mjs');
+  const unit = { lessons: [{
+    vocab: [{ it: 'der  Tisch' }], grammar: { examples: [{ it: 'Das ist gut.' }] },
+    dialogue: { lines: [{ it: 'Hallo!' }, { it: 'Hi!' }] },
+    exercises: [{ t: 'fill', a: ['x'] }, { t: 'listen', it: 'Ich höre.', alt: ['Ich hör.'] },
+      { t: 'mcq', say: 'Sag es.' }, { t: 'dialogue', lines: [{ sp: 'A', it: 'Wie geht es?' }, { sp: 'TY', choices: ['Gut.'] }] }]
+  }], test: { exercises: [{ t: 'speak', it: 'Danke schön.' }] } };
+  const { primary, other } = spokenStrings(unit);
+  assert.deepEqual(primary.sort(), ['Danke schön.', 'Das ist gut.', 'Gut.', 'Hi!', 'Ich hör.', 'Ich höre.', 'Sag es.', 'der Tisch'].sort());
+  assert.deepEqual(other.sort(), ['Hallo!', 'Wie geht es?'].sort());
+});
+
+test('audio stage refuses a unit with nothing to check', t => {
+  const root = fixture(t);
+  put(root, 'data/core/a1-01.js', "globalThis.LINGUAI.addUnits('A1', [{ id: 'a1-u01', lessons: [{ id: 'a1-u01-l1', titleIt: 'Leer', exercises: [{ t: 'fill', a: 'x' }, { t: 'mcq', a: 0 }] }] }]);");
+  const empty = check(root, '--unit', 'a1-u01', '--stage', 'audio');
+  assert.equal(empty.status, 1);
+  assert.match(empty.stdout, /no spoken strings/);
 });

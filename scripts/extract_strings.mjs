@@ -13,6 +13,7 @@ import { readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import vm from "node:vm";
+import { norm, collectLesson as collectLessonWith } from "./spoken-strings.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -66,40 +67,12 @@ run("cils.js");
 const primary = new Set();
 const other = new Set();
 
-function norm(s) {
-  return String(s == null ? "" : s).replace(/\s+/g, " ").trim();
-}
 function addP(s) { const t = norm(s); if (t.length > 1) primary.add(t); }
 function addO(s) { const t = norm(s); if (t.length > 1) other.add(t); }
 
-function collectExercise(ex) {
-  if (!ex || typeof ex !== "object") return;
-  if (ex.say) addP(ex.say);
-  if (ex.t === "listen" || ex.t === "speak") {
-    addP(ex.it);
-    (ex.alt || []).forEach(addP);
-  }
-  if (ex.t === "dialogue") {
-    (ex.lines || []).forEach(function (l) {
-      if (l.it) (l.sp === "TY" ? addP : addO)(l.it);
-      // the variants of the student's answer are played after a hit
-      (l.choices || []).forEach(addP);
-    });
-  }
-}
-
-function collectLesson(l) {
-  if (!l) return;
-  (l.vocab || []).forEach(function (v) { addP(v.it); });
-  if (l.grammar && l.grammar.examples) {
-    l.grammar.examples.forEach(function (e) { addP(e.it); });
-  }
-  if (l.dialogue && l.dialogue.lines) {
-    // in a lesson the lines alternate: even = the other speaker, odd = the student
-    l.dialogue.lines.forEach(function (ln, i) { (i % 2 ? addP : addO)(ln.it); });
-  }
-  (l.exercises || []).forEach(collectExercise);
-}
+/* The rule for lessons lives in spoken-strings.mjs, shared with the audio
+   stage of check_porting.mjs. */
+function collectLesson(l) { collectLessonWith(l, addP, addO); }
 
 levels.forEach(function (lv) {
   (lv.units || []).forEach(function (u) {
