@@ -7,7 +7,7 @@
 LINGUAI.addStrings("es", {
   "unit:c1-u05": {
     title: "Tras concluir el trabajo",
-    grammarNote: "Participio I y II como atributo (atributo ampliado con moderación; el tipo completo y el Gerundivum son del C2) · nominalización en lugar de la subordinada (nach Abschluss, wegen, bei, trotz, zur, infolge) · casos en que suele convenir mantener la subordinada (ningún sustantivo adecuado, varios sujetos, matiz modal, legibilidad)"
+    grammarNote: "Participio I y II como atributo (atributo ampliado con moderación; el tipo completo y el Gerundivum se profundizan más adelante) · nominalización en lugar de la subordinada (nach Abschluss, wegen, bei, trotz, zur, infolge) · casos en que suele convenir mantener la subordinada (ningún sustantivo adecuado, varios sujetos, matiz modal, legibilidad)"
   },
   "lesson:c1-u05-l1": {
     theme: "Actas, informes y textos académicos",
@@ -25,7 +25,7 @@ LINGUAI.addStrings("es", {
       },
       {
         h: "El atributo ampliado, con moderación",
-        p: "Entre el artículo y el sustantivo también pueden ir complementos, y en el modelo que ilustramos el participio queda <strong>justo antes del sustantivo</strong>: <em>die im letzten Quartal erzielten Umsätze</em>. No es un vínculo absoluto: pueden seguirle otros atributos (<em>die geprüften und freigegebenen Unterlagen</em>). En las actas y los informes basta uno o dos complementos; más allá, el lector pierde el hilo y lo mejor es la oración de relativo. El tipo con <em>zu</em> (<em>die zu prüfenden Unterlagen</em>) y las construcciones más largas pertenecen al C2."
+        p: "Entre el artículo y el sustantivo también pueden ir complementos, y en el modelo que ilustramos el participio queda <strong>justo antes del sustantivo</strong>: <em>die im letzten Quartal erzielten Umsätze</em>. No es un vínculo absoluto: pueden seguirle otros atributos (<em>die geprüften und freigegebenen Unterlagen</em>). En las actas y los informes basta uno o dos complementos; más allá, el lector pierde el hilo y lo mejor es la oración de relativo. El tipo con <em>zu</em> (<em>die zu prüfenden Unterlagen</em>) ya aparece en C1; él y las construcciones más largas se profundizan más adelante en el curso."
       },
       {
         contrast: "El español pone el participio <strong>detrás</strong> del sustantivo y el complemento lo sigue: <em>los resultados obtenidos en el segundo trimestre</em>, <em>los datos recogidos por la oficina</em>. En alemán todo lo que en español iría detrás del participio pasa <strong>delante</strong> del sustantivo, entre el artículo y el participio: <em>die vom Amt erhobenen Daten</em>. El participio de presente español casi no existe como forma viva (existen <em>creciente</em>, <em>vigente</em>, <em>siguiente</em>, pero en general se usa una relativa: <em>los costes que aumentan</em>), mientras que <em>steigend, laufend, vorliegend</em> son corrientes en la lengua escrita alemana."
@@ -34,7 +34,7 @@ LINGUAI.addStrings("es", {
         trap: "<em>die prüfenden Unterlagen</em> no son «los documentos examinados»: son documentos que <em>examinan</em> algo. Para el sentido pasivo hace falta el participio II, <em>die geprüften Unterlagen</em>. Y no confundas los dos tiempos: <em>die steigenden Kosten</em> siguen aumentando, <em>die gestiegenen Kosten</em> ya han aumentado. Después, la terminación: tras <em>die</em> en plural es <em>-en</em>, así que <em>die geprüften Unterlagen</em>, nunca <em>die geprüfte Unterlagen</em> (en español el participio concuerda con el sustantivo en género y número, <em>los documentos revisados</em>; en alemán la concordancia está en la terminación de caso)."
       },
       {
-        tip: "Para entender un participio, o para elegirlo, deshazlo en una oración de relativo: si el verbo de la relativa está en presente activo (<em>die steigen</em>) hace falta el participio I; si es una pasiva, también en presente (<em>die gerade bearbeitet werden</em> → <em>die gerade bearbeiteten Anträge</em>), o una pasiva de pasado (<em>die geprüft wurden</em>), o un perfecto con <em>sein</em> (<em>die gestiegen sind</em>), hace falta el participio II. Cuenta también la diátesis, no solo el tiempo."
+        tip: "Para entender un participio, o para elegirlo, deshazlo en una oración de relativo: si el verbo de la relativa es activo y su acción es simultánea a la de la principal (<em>die steigen</em>, pero también <em>die teilnahmen</em> en un relato en pasado) hace falta el participio I; si es una pasiva, también en presente (<em>die gerade bearbeitet werden</em> → <em>die gerade bearbeiteten Anträge</em>), o una pasiva de pasado (<em>die geprüft wurden</em>), o un perfecto con <em>sein</em> (<em>die gestiegen sind</em>), hace falta el participio II. Cuenta también la diátesis, no solo el tiempo."
       }
     ],
     grammar: {
@@ -52,7 +52,7 @@ LINGUAI.addStrings("es", {
       examples: [
         { tr: "Los costes energéticos en aumento pesan sobre las familias.", note: "participio I: el aumento está en curso" },
         { tr: "Los costes aumentados se explican en el informe.", note: "participio II de verbo intransitivo: activo y terminado" },
-        { tr: "Los documentos verificados se adjuntan al expediente.", note: "participio II transitivo: pasivo, normalmente «han sido verificados»" },
+        { tr: "Los documentos verificados constan en el expediente.", note: "participio II transitivo: pasivo, normalmente «han sido verificados»" },
         { tr: "Los miembros que participaban en la sesión aprobaron la solicitud.", note: "participio I con complemento: an der Sitzung teilnehmenden" },
         { tr: "El presupuesto aprobado por el consejo de administración entra en vigor en enero.", note: "vom Vorstand verabschiedete: el complemento agente va antes del participio" },
         { tr: "Los ingresos obtenidos en el último trimestre fueron superiores a lo esperado.", note: "atributo ampliado breve: im letzten Quartal erzielten" }
@@ -163,10 +163,10 @@ LINGUAI.addStrings("es", {
         p: "El grupo nominal es compacto pero más pobre: desaparecen el tiempo verbal, el modo y a menudo quién actúa. <em>Nach Abschluss der Prüfung</em> no dice quién ha concluido ni si se habla del pasado o del futuro; lo deduces del contexto. Por eso funciona bien cuando el sujeto y el tiempo son obvios, y mal cuando no lo son (véase la lección 3)."
       },
       {
-        contrast: "El español también nominaliza (<em>tras la conclusión de los trabajos</em>, <em>en caso de necesidad</em>, <em>para la aclaración de cuestiones pendientes</em>), pero puede usar además construcciones de infinitivo (<em>tras concluir</em>, <em>al concluir</em>) o el gerundio (<em>concluyendo los trabajos</em>). El alemán tiene también equivalentes compactos, aunque no idénticos: <em>nach Abschluss</em>, <em>beim Abschließen</em> (infinitivo nominalizado) y el participio de presente en función de atributo. Además, el español une el sustantivo con su complemento mediante <em>de</em> (<em>la aclaración de cuestiones pendientes</em>), mientras que en alemán lo que sigue al sustantivo suele ser un <strong>genitivo sin preposición</strong> (<em>die Klärung offener Fragen</em>), aunque no siempre: hay regencias con preposición (<em>der Bedarf an Fachkräften</em>). Las preposiciones de causa y concesión rigen el genitivo, con las terminaciones que de ello se derivan: <em>offener Fragen</em> sin artículo, <em>der gestiegenen Preise</em> con artículo. También cambia la regencia: donde el español dice <em>a pesar de</em>, <em>a causa de</em> o <em>a raíz de</em> sin más, el alemán exige elegir entre genitivo y dativo."
+        contrast: "El español también nominaliza (<em>tras la conclusión de los trabajos</em>, <em>en caso de necesidad</em>, <em>para la aclaración de cuestiones pendientes</em>), pero puede usar además construcciones de infinitivo (<em>tras concluir</em>, <em>al concluir</em>). El alemán tiene también equivalentes compactos, aunque no idénticos: <em>nach Abschluss</em>, <em>beim Abschließen</em> (infinitivo nominalizado) y el participio de presente en función de atributo. Además, el español une el sustantivo con su complemento mediante <em>de</em> (<em>la aclaración de cuestiones pendientes</em>), mientras que en alemán lo que sigue al sustantivo suele ser un <strong>genitivo sin preposición</strong> (<em>die Klärung offener Fragen</em>), aunque no siempre: hay regencias con preposición (<em>der Bedarf an Fachkräften</em>). Las preposiciones de causa y concesión rigen el genitivo, con las terminaciones que de ello se derivan: <em>offener Fragen</em> sin artículo, <em>der gestiegenen Preise</em> con artículo. También cambia la regencia: donde el español dice <em>a pesar de</em>, <em>a causa de</em> o <em>a raíz de</em> sin más, el alemán exige elegir entre genitivo y dativo."
       },
       {
-        trap: "Una preposición equivocada cambia la relación lógica: <em>Nach mehrfacher Mahnung blieb die Zahlung aus</em> dice que el pago falta <em>después de</em> los recordatorios, mientras que <em>Trotz mehrfacher Mahnung</em> dice que falta <em>a pesar de</em> los recordatorios. Cuidado también con los casos: <em>infolge</em> y <em>trotz</em> piden el genitivo (<em>Infolge der gestiegenen Preise</em>), no el dativo."
+        trap: "Una preposición equivocada cambia la relación lógica: <em>Nach mehrfacher Mahnung blieb die Zahlung aus</em> dice que el pago falta <em>después de</em> los recordatorios, mientras que <em>Trotz mehrfacher Mahnung</em> dice que falta <em>a pesar de</em> los recordatorios. Cuidado también con los casos: <em>infolge</em> y <em>trotz</em> piden el genitivo (<em>Infolge der gestiegenen Preise</em>), no el dativo; solo cuando el genitivo plural no se reconoce se recurre a <em>von</em> (<em>infolge von Umbauten</em>)."
       },
       {
         tip: "Ante un grupo nominal pregúntate qué conjunción se esconde: causa → <em>weil</em>, concesión → <em>obwohl</em>, condición → <em>wenn</em>, tiempo → <em>nachdem, bevor</em>, finalidad → <em>um ... zu</em>. Después reescríbelo como subordinada y comprueba que el sentido no cambie."
@@ -321,7 +321,7 @@ LINGUAI.addStrings("es", {
         ]
       },
       examples: [
-        { tr: "La sesión se aplazó porque el presidente estaba enfermo y la ponente estaba bloqueada en el extranjero.", note: "dos sujetos: la forma nominal ocultaría uno de los dos" },
+        { tr: "La sesión se aplazó porque el presidente estaba enfermo y la ponente estaba bloqueada en el extranjero.", note: "dos sujetos: la forma nominal podría nombrar a ambos, pero sería pesada y confundiría quién hace qué" },
         { tr: "El contrato se firmará solo cuando el consejo haya dado su aprobación y la financiación esté asegurada.", note: "dos condiciones con verbos distintos: subordinada" },
         { tr: "Si la verificación llegara a prolongarse, se aplazará la fecha.", note: "Sollte en primera posición: eventualidad hipotética, presentada con cautela" },
         { tr: "La subvención deja de concederse si las condiciones marco llegaran a cambiar.", note: "falls ... ändern sollten: matiz modal" },
@@ -332,7 +332,7 @@ LINGUAI.addStrings("es", {
     vocab: [
       "la comprensibilidad",
       "el requisito, la condición previa",
-      "las condiciones marco",
+      "la condición marco",
       "la muestra (estadística)",
       "el presidente (de una sesión)",
       "el solicitante",

@@ -167,7 +167,7 @@ LINGUAI.addStrings("pl", {
         contrast: "Polski ma na to kilka środków, ale każdy z nich pokrywa inny kawałek niemieckiego podziału. <em>Musi być chory</em> odpowiada <em>muss</em>, a <em>nie może być chory</em> odpowiada <em>kann nicht</em>. Pogłoskę zapowiadają <em>podobno</em>, <em>ponoć</em> albo forma <em>ma</em> (<em>minister ma być w Berlinie</em>, <em>świadek miał widzieć sprawcę</em>), czyli <em>soll</em>; to, co twierdzi sam podmiot, wprowadza <em>twierdzi, że</em> albo <em>utrzymuje, że</em> (<em>firma twierdzi, że złożyła dokumenty</em>), czyli <em>will</em>. Zdanie z <em>będzie</em> albo <em>pewnie</em> też da się odczytać jako przypuszczenie, ale polskie <em>powinien</em> ma kilka znaczeń: może oznaczać obowiązek, a w znaczeniu prawdopodobieństwa (<em>powinien już być w domu</em>) odpowiada <em>dürfte</em>. Różnica jest w sposobie wyrażania: niemiecki wybiera czasownik modalny i jego forma sama wskazuje źródło, a polski dodaje osobne słowo."
       },
       {
-        trap: "Zaprzeczenie zmienia znaczenie. <em>Er muss nicht krank sein</em> znaczy „nie musi być chory”, czyli „nie jest powiedziane, że jest chory”, a nie „nie może być chory”. Na niemożliwość potrzeba <em>kann nicht</em>: <em>Er kann nicht krank sein, ich habe ihn eben gesehen</em>. Po polsku jest podobnie, <em>nie musi</em> i <em>nie może</em> to dwa różne zdania, więc nie myl ich w tłumaczeniu. A <em>dürfte</em> w znaczeniu prawdopodobieństwa nie myl z <em>darf</em>, które oznacza pozwolenie."
+        trap: "Zaprzeczenie zmienia znaczenie. <em>Er muss nicht krank sein</em> znaczy „nie musi być chory”, czyli „nie jest powiedziane, że jest chory”, a nie „nie może być chory”. Na niemożliwość potrzeba <em>kann nicht</em>: <em>Er kann nicht zu Hause sein, ich habe ihn eben im Büro gesehen</em>. Po polsku jest podobnie, <em>nie musi</em> i <em>nie może</em> to dwa różne zdania, więc nie myl ich w tłumaczeniu. A <em>dürfte</em> w znaczeniu prawdopodobieństwa nie myl z <em>darf</em>, które oznacza pozwolenie."
       },
       {
         tip: "Zanim przetłumaczysz czasownik modalny, spójrz na kontekst, a dopiero potem na bezokolicznik. Bezokolicznik czasu przeszłego (<em>gelesen haben, gewesen sein</em>) i <em>sein</em> często towarzyszą znaczeniu subiektywnemu, ale go nie przesądzają: <em>Du musst bis Freitag angekommen sein</em> to termin. Czasownik czynności też może być subiektywny: <em>Er muss schlafen</em> bywa wnioskiem („na pewno śpi”), a <em>Er soll kommen</em> zwykle poleceniem."
@@ -244,7 +244,7 @@ LINGUAI.addStrings("pl", {
         why: "<b>soll</b>: <i>laut Augenzeugen</i> wprowadza źródło zewnętrzne, a mówiący za to nie ręczy."
       },
       {
-        q: "Mężczyzna się tłumaczy: „Der Zeuge ___ den Mann nie zuvor gesehen haben, das behauptet er zumindest.”",
+        q: "Świadek się tłumaczy: „Der Zeuge ___ den Mann nie zuvor gesehen haben, das behauptet er zumindest.”",
         hint: "twierdzi tak on sam",
         why: "<b>will</b>: <i>das behauptet er zumindest</i> pokazuje, że twierdzenie pochodzi od podmiotu."
       },
@@ -371,7 +371,7 @@ LINGUAI.addStrings("pl", {
           "Die Zugverbindung ist halt schlecht.",
           "Die Zugverbindung ist eben nicht so toll."
         ],
-        why: "Partykuły <i>halt</i> i <i>eben</i>, wraz ze słownictwem takim jak <i>schlecht</i> i <i>nicht so toll</i>, należą do mowy: sprawozdanie ich unika i używa neutralnego słownictwa, jak <i>unzureichend</i>."
+        why: "Partykuły <i>halt</i> i <i>eben</i>, wraz z potocznym wyrażeniem <i>nicht so toll</i>, należą do mowy: sprawozdanie ich unika i używa neutralnego słownictwa, jak <i>unzureichend</i>."
       },
       {
         q: "Pociąg został odwołany i szukasz alternatywy z rezygnacją: „Der Zug fällt aus? Dann nehmen wir ___ ein Taxi.”",
@@ -385,7 +385,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         q: "Uzupełnij dialog właściwymi partykułami (w pierwszej luce pasuje też przysłówek).",
-        tr: "„Gdzie się podziewa Jonas?” „Pewnie stoi w korku.” „Czyżby znowu spóźnił autobus?” „Przecież wiesz, jaki jest: nic na to nie poradzisz.”",
+        tr: "„Gdzie się podziewa Jonas?” „Pewnie stoi w korku.” „Czyżby znowu spóźnił się na autobus?” „Przecież wiesz, jaki jest: nic na to nie poradzisz.”",
         why: "<i>wohl</i> dla przypuszczenia, <i>etwa</i> dla pytania z podejrzeniem, <i>ja</i> dla tego, co obaj wiedzą, <i>halt</i> albo <i>eben</i> dla rezygnacji. W trzeciej luce pasuje także <i>doch</i>."
       },
       {

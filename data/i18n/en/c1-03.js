@@ -34,7 +34,7 @@ LINGUAI.addStrings("en", {
         trap: "<em>die prüfenden Unterlagen</em> does not mean “the audited documents”: they are documents that <em>examine</em> something. For the passive sense you need participle II, <em>die geprüften Unterlagen</em>. And do not swap the two: <em>die steigenden Kosten</em> are still rising, <em>die gestiegenen Kosten</em> have already risen. Then the ending: after plural <em>die</em> it is <em>-en</em>, so <em>die geprüften Unterlagen</em>, never <em>die geprüfte Unterlagen</em>."
       },
       {
-        tip: "To understand a participle, or to choose one, unpack it into a relative clause: if the verb in the relative clause is in the active present (<em>die steigen</em>) you need participle I; if it is a passive (<em>die geprüft wurden</em>) or a perfect with <em>sein</em> (<em>die gestiegen sind</em>) you need participle II."
+        tip: "To understand a participle, or to choose one, unpack it into a relative clause: if the verb in the relative clause is active and its action is simultaneous with the main clause (<em>die steigen</em>, but also <em>die teilnahmen</em> in a past narrative) you need participle I; if it is a passive (<em>die geprüft wurden</em>) or a perfect with <em>sein</em> (<em>die gestiegen sind</em>) you need participle II."
       }
     ],
     grammar: {
@@ -163,10 +163,10 @@ LINGUAI.addStrings("en", {
         p: "The noun phrase is compact but poorer: tense, mood and often the agent disappear. <em>Nach Abschluss der Prüfung</em> does not say who finished it or whether it is about the past or the future; you work that out from the context. That is why it works well when subject and tense are obvious, and badly when they are not (see lesson 3)."
       },
       {
-        contrast: "English nominalizes too (<em>upon completion of the work</em>, <em>in case of need</em>, <em>for the clarification of open questions</em>), but it can also use an -ing form (<em>after completing the work</em>, <em>despite having been reminded</em>), which German does not have in this form. And where English links the nouns with <em>of</em> (<em>the clarification of open questions</em>), German uses a <strong>genitive with no preposition</strong>: <em>die Klärung offener Fragen</em>. The prepositions of cause and concession also take the genitive, with the endings that follow: <em>offener Fragen</em> without an article, <em>der gestiegenen Preise</em> with the article. English has no case endings at all, so every one of these has to be learned."
+        contrast: "English nominalizes too (<em>upon completion of the work</em>, <em>in case of need</em>, <em>for the clarification of open questions</em>), but it can also use an -ing form (<em>after completing the work</em>, <em>despite having been reminded</em>), which German does not have in this form. And where English links the nouns with <em>of</em> (<em>the clarification of open questions</em>), German uses a <strong>genitive with no preposition</strong>: <em>die Klärung offener Fragen</em>. The prepositions of cause and concession also take the genitive, with the endings that follow: <em>offener Fragen</em> without an article, <em>der gestiegenen Preise</em> with the article. English nouns and adjectives have no case endings (only pronouns keep forms like <em>he/him</em>), so every one of these has to be learned."
       },
       {
-        trap: "A wrong preposition changes the logical relation: <em>Nach mehrfacher Mahnung blieb die Zahlung aus</em> says that the payment is missing <em>after</em> the reminders, while <em>Trotz mehrfacher Mahnung</em> says it is missing <em>despite</em> the reminders. Watch the cases too: <em>infolge</em> and <em>trotz</em> take the genitive (<em>Infolge der gestiegenen Preise</em>), not the dative. English does not mark case after prepositions, so the case each German preposition governs has to be learned with it: in formal writing these take the genitive."
+        trap: "A wrong preposition changes the logical relation: <em>Nach mehrfacher Mahnung blieb die Zahlung aus</em> says that the payment is missing <em>after</em> the reminders, while <em>Trotz mehrfacher Mahnung</em> says it is missing <em>despite</em> the reminders. Watch the cases too: <em>infolge</em> and <em>trotz</em> take the genitive (<em>Infolge der gestiegenen Preise</em>), not the dative; only where a genitive plural cannot be recognized does German switch to <em>von</em> (<em>infolge von Umbauten</em>). English does not mark case after prepositions, so the case each German preposition governs has to be learned with it: in formal writing these take the genitive."
       },
       {
         tip: "In front of a noun phrase, ask which conjunction is hiding in it: cause → <em>weil</em>, concession → <em>obwohl</em>, condition → <em>wenn</em>, time → <em>nachdem, bevor</em>, purpose → <em>um ... zu</em>. Then rewrite it as a subordinate clause and check that the meaning has not changed."
@@ -332,7 +332,7 @@ LINGUAI.addStrings("en", {
     vocab: [
       "the comprehensibility",
       "the prerequisite, the requirement",
-      "the general conditions, the framework",
+      "the general condition, the framework condition",
       "the sample (statistical)",
       "the chair (of a meeting)",
       "the applicant",
@@ -340,7 +340,7 @@ LINGUAI.addStrings("en", {
       "to lapse, to be dropped",
       "to approve, to give consent",
       "to reject, to turn down",
-      "significant, reliable",
+      "informative, meaningful",
       "representative"
     ],
     exercises: [
@@ -491,7 +491,7 @@ LINGUAI.addStrings("en", {
       },
       {
         q: "Translate: «The decisions made at the meeting will be announced after the audit is completed.» (die Sitzung, die Entscheidung, mitteilen, der Abschluss, die Prüfung)",
-        why: "<i>Die in der Sitzung getroffenen Entscheidungen werden nach Abschluss der Prüfung mitgeteilt.</i> <i>werden ... mitgeteilt</i> is a present passive that refers to the future through context (<i>nach Abschluss</i>); the explicit future passive <i>werden ... mitgeteilt werden</i> is also accepted, and so is the sentence beginning with <i>Nach Abschluss der Prüfung</i> is also accepted."
+        why: "<i>Die in der Sitzung getroffenen Entscheidungen werden nach Abschluss der Prüfung mitgeteilt.</i> <i>werden ... mitgeteilt</i> is a present passive that refers to the future through context (<i>nach Abschluss</i>); the explicit future passive <i>werden ... mitgeteilt werden</i> is also accepted, as is the sentence beginning with <i>Nach Abschluss der Prüfung</i>."
       },
       {
         tr: "He will have finished the report by Friday. The decisions recorded in the minutes will be implemented after the audit is completed.",

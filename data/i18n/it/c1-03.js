@@ -166,7 +166,7 @@ LINGUAI.addStrings("it", {
         contrast: "Anche l'italiano nominalizza (<em>a seguito della conclusione dei lavori</em>, <em>in caso di necessità</em>, <em>per il chiarimento di questioni aperte</em>), ma può usare anche l'infinito passato (<em>dopo aver concluso</em>), che il tedesco rende di solito con una subordinata (<em>nachdem er die Arbeit abgeschlossen hat</em>) o con un nome (<em>nach Abschluss der Arbeit</em>). In tedesco ciò che segue il nome è di solito un <strong>genitivo senza preposizione</strong> (<em>die Klärung offener Fragen</em>) e le preposizioni di causa e concessione reggono il genitivo, con le desinenze che ne derivano: <em>offener Fragen</em> senza articolo, <em>der gestiegenen Preise</em> con l'articolo."
       },
       {
-        trap: "Una preposizione sbagliata cambia il rapporto logico: <em>Nach mehrfacher Mahnung blieb die Zahlung aus</em> dice che il pagamento manca <em>dopo</em> i solleciti, mentre <em>Trotz mehrfacher Mahnung</em> dice che manca <em>nonostante</em> i solleciti. Attenzione anche ai casi: <em>infolge</em> e <em>trotz</em> vogliono il genitivo (<em>Infolge der gestiegenen Preise</em>), non il dativo."
+        trap: "Una preposizione sbagliata cambia il rapporto logico: <em>Nach mehrfacher Mahnung blieb die Zahlung aus</em> dice che il pagamento manca <em>dopo</em> i solleciti, mentre <em>Trotz mehrfacher Mahnung</em> dice che manca <em>nonostante</em> i solleciti. Attenzione anche ai casi: <em>infolge</em> e <em>trotz</em> vogliono il genitivo (<em>Infolge der gestiegenen Preise</em>), non il dativo; solo quando il genitivo plurale non si riconosce si ricorre a <em>von</em> (<em>infolge von Umbauten</em>)."
       },
       {
         tip: "Davanti a un gruppo nominale chiediti quale congiunzione si nasconde: causa → <em>weil</em>, concessione → <em>obwohl</em>, condizione → <em>wenn</em>, tempo → <em>nachdem, bevor</em>, scopo → <em>um ... zu</em>. Poi riscrivilo come subordinata e controlla che il senso non cambi."
@@ -298,7 +298,7 @@ LINGUAI.addStrings("it", {
         p: "Prima di nominalizzare fai quattro domande. Chi agisce, e il nome lo dice? Esiste un nome naturale (<em>Abschluss, Klärung</em>)? Posso rinunciare a esprimere esplicitamente tempo e modo senza perdere informazioni? Il lettore ci arriva alla prima lettura? Se rispondi sì a tutte, la forma compatta funziona (<em>Nach Abschluss der Prüfung ...</em>), altrimenti la subordinata è più chiara, e nei testi destinati a un pubblico non specialistico lo è quasi sempre."
       },
       {
-        contrast: "L'italiano ha strumenti compatti come <em>dopo aver concluso</em> o <em>a lavori ultimati</em>; il tedesco li rende con una subordinata (<em>nachdem ...</em>) o con un nome (<em>nach Abschluss der Arbeiten</em>), ma non ha il gerundio. Con <em>ohne zu</em> e <em>um ... zu</em> il soggetto implicito dell'infinito di solito è quello della principale, ma può essere anche un complemento (<em>Ich bitte dich, früher zu kommen</em>); quando il referente non si ricava chiaramente dalla costruzione serve una subordinata con <em>ohne dass</em> o <em>damit</em>. La sfumatura di <em>qualora ... dovesse</em> si rende con <em>Sollte die Prüfung länger dauern, ...</em> o <em>falls ... ändern sollten</em>."
+        contrast: "L'italiano ha strumenti compatti come <em>dopo aver concluso</em> o <em>a lavori ultimati</em>; il tedesco li rende con una subordinata (<em>nachdem ...</em>) o con un nome (<em>nach Abschluss der Arbeiten</em>), ma non ha il gerundio. Con <em>ohne zu</em> e <em>um ... zu</em> il soggetto implicito dell'infinito di solito è quello della principale, ma non sempre (<em>Das Paket ist zu schwer, um es allein zu tragen</em>, dove chi porta resta generico); quando il referente non si ricava chiaramente dalla costruzione serve una subordinata con <em>ohne dass</em> o <em>damit</em>. La sfumatura di <em>qualora ... dovesse</em> si rende con <em>Sollte die Prüfung länger dauern, ...</em> o <em>falls ... ändern sollten</em>."
       },
       {
         trap: "Non nominalizzare tutto solo perché «suona formale»: il risultato è un tedesco da ufficio difficile da leggere, e un'espressione come <em>seitens der Teilnehmenden</em> nomina sì i partecipanti, ma appesantisce la frase e allontana chi agisce dall'azione. E <em>sollte</em> in prima posizione non è «dovrebbe» di obbligo: <em>Sollte die Prüfung länger dauern</em> significa «se mai la verifica dovesse durare di più», una condizione ipotetica."
@@ -321,7 +321,7 @@ LINGUAI.addStrings("it", {
         ]
       },
       examples: [
-        { tr: "La seduta è stata rinviata perché il presidente era malato e la relatrice era bloccata all'estero.", note: "due soggetti: la forma nominale nasconderebbe uno dei due" },
+        { tr: "La seduta è stata rinviata perché il presidente era malato e la relatrice era bloccata all'estero.", note: "due soggetti: la forma nominale potrebbe nominarli entrambi, ma diventerebbe pesante e confonderebbe chi fa che cosa" },
         { tr: "Il contratto sarà firmato solo quando il consiglio avrà approvato e il finanziamento sarà assicurato.", note: "due condizioni con verbi diversi: subordinata" },
         { tr: "Se la verifica dovesse durare più a lungo, la data sarà rinviata.", note: "Sollte in prima posizione: condizione ipotetica, «se mai dovesse»" },
         { tr: "Il finanziamento decade se le condizioni quadro dovessero cambiare.", note: "falls ... ändern sollten: sfumatura modale" },
@@ -332,7 +332,7 @@ LINGUAI.addStrings("it", {
     vocab: [
       "la comprensibilità",
       "il presupposto, il requisito",
-      "le condizioni quadro",
+      "la condizione quadro",
       "il campione (statistico)",
       "il presidente (di una seduta)",
       "il richiedente",

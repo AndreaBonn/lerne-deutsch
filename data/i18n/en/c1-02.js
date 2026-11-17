@@ -167,7 +167,7 @@ LINGUAI.addStrings("en", {
         contrast: "English has a very similar system for certainty: <em>must</em> (<em>he must be ill</em>), <em>should</em> (<em>he should be there by now</em>), <em>could</em> or <em>might</em> (<em>it could be a mistake</em>), <em>may</em> (<em>that may be so, but...</em>) and <em>can't</em> (<em>that can't be right</em>). The difference is in reporting. English uses adverbs and phrases such as <em>reportedly</em>, <em>is said to</em>, <em>claims to</em>, <em>allegedly</em>, and the verb itself doesn't change. German chooses the modal according to the source: <em>soll</em> for “is said to”, <em>will</em> for “claims to”. Note also that English <em>should</em> and <em>supposed to</em> cover both a probability and an obligation, whereas German keeps them apart: <em>dürfte</em> for the probability, <em>soll</em> for the obligation or the rumor."
       },
       {
-        trap: "Negation changes the meaning. <em>Er muss nicht krank sein</em> can mean “he isn't necessarily ill” (the epistemic reading) or, in another context, “he doesn't have to be ill”, an absence of obligation; in neither case does it mean “he can't be ill”. For impossibility you need <em>kann nicht</em>: <em>Er kann nicht krank sein, ich habe ihn eben gesehen</em>. English works differently here, because <em>he mustn't be ill</em> is hardly used for this. And <em>dürfte</em> with the meaning of probability must not be confused with <em>darf</em>, which expresses permission, just as English <em>may</em> is not the same as <em>should</em>."
+        trap: "Negation changes the meaning. <em>Er muss nicht krank sein</em> can mean “he isn't necessarily ill” (the epistemic reading) or, in another context, “he doesn't have to be ill”, an absence of obligation; in neither case does it mean “he can't be ill”. For impossibility you need <em>kann nicht</em>: <em>Er kann nicht zu Hause sein, ich habe ihn eben im Büro gesehen</em>. English works differently here, because <em>he mustn't be ill</em> is hardly used for this. And <em>dürfte</em> with the meaning of probability must not be confused with <em>darf</em>, which expresses permission, just as English <em>may</em> is not the same as <em>should</em>."
       },
       {
         tip: "Before translating a modal, look at the context. A perfect infinitive (<em>gelesen haben, gewesen sein</em>) or a stative verb (<em>sein</em>) often points to certainty or source, and an action verb in the present (<em>Er soll kommen</em>) often to an order, but these are only tendencies: the context and the meaning decide, not the form of the infinitive."
@@ -244,7 +244,7 @@ LINGUAI.addStrings("en", {
         why: "<b>soll</b>: <i>laut Augenzeugen</i> introduces an external source, and the speaker doesn't vouch for it."
       },
       {
-        q: "A man defends himself: «Der Zeuge ___ den Mann nie zuvor gesehen haben, das behauptet er zumindest.»",
+        q: "The witness defends himself: «Der Zeuge ___ den Mann nie zuvor gesehen haben, das behauptet er zumindest.»",
         hint: "he says so himself",
         why: "<b>will</b>: <i>das behauptet er zumindest</i> shows that the claim is the subject's own."
       },
@@ -300,7 +300,7 @@ LINGUAI.addStrings("en", {
         p: "Particles tend to stand unstressed after the verb and the pronouns, before the new information (<em>Er wird wohl noch schlafen</em>). They are typical of speech, chats and dialogues: in formal writing, such as a report or a letter to a client, they are mostly avoided, though how well they fit depends on the text type. <em>halt</em> is more colloquial and heard mostly in the south, <em>eben</em> is more neutral, but in most cases they are interchangeable."
       },
       {
-        contrast: "English has no closed set of modal particles like German, although words such as <em>just</em> or <em>though</em> do similar work; it relies more on intonation, tag questions and small words and phrases, often in a different position in the sentence: <em>surely</em>, <em>after all</em>, <em>you know</em>, <em>I suppose</em>, <em>oh well</em>, <em>that's just how it is</em>. <em>Hast du etwa ...?</em> is close to “you haven't ..., have you?” or “don't tell me you ...”, <em>Dann warten wir halt</em> to “then we'll just wait, oh well”, and <em>Du weißt ja</em> to “you know” or “as you know”. Where English changes the verb (<em>he'll be</em>) or adds <em>I guess</em>, German adds <em>wohl</em>. None of the five has a fixed equivalent: you learn the function. Beware of one trap: English <em>just</em> is not always <em>halt</em>, because <em>just</em> also means “only” (<em>nur</em>) and “a moment ago” (<em>gerade</em>)."
+        contrast: "English has no closed set of modal particles like German, although words such as <em>just</em> or <em>though</em> do similar work; it relies more on intonation, tag questions and small words and phrases, often in a different position in the sentence: <em>surely</em>, <em>after all</em>, <em>you know</em>, <em>I suppose</em>, <em>oh well</em>, <em>that's just how it is</em>. <em>Hast du etwa ...?</em> is close to “you haven't ..., have you?” or “don't tell me you ...”, <em>Dann warten wir halt</em> to “then we'll just wait, oh well”, and <em>Du weißt ja</em> to “you know” or “as you know”. Where English changes the verb (<em>he'll be</em>) or adds <em>I guess</em>, German can use <em>werden</em> and often adds <em>wohl</em>. None of the five has a fixed equivalent: you learn the function. Beware of one trap: English <em>just</em> is not always <em>halt</em>, because <em>just</em> also means “only” (<em>nur</em>) and “a moment ago” (<em>gerade</em>)."
       },
       {
         trap: "<em>etwa</em> has two lives. Before a number it is an adverb, <em>etwa zwei Stunden</em>, “about two hours”. In a question with surprise it is a particle, <em>Ist er etwa krank?</em>. <em>wohl</em> can also be a full adverb: <em>Ich fühle mich hier wohl</em> means “I feel comfortable here”."
@@ -371,7 +371,7 @@ LINGUAI.addStrings("en", {
           "Die Zugverbindung ist halt schlecht.",
           "Die Zugverbindung ist eben nicht so toll."
         ],
-        why: "The particles <i>halt</i> and <i>eben</i>, together with vocabulary such as <i>schlecht</i> and <i>nicht so toll</i>, are spoken language: a formal report mostly avoids them and uses neutral vocabulary such as <i>unzureichend</i>."
+        why: "The particles <i>halt</i> and <i>eben</i>, together with a colloquial phrase such as <i>nicht so toll</i>, are spoken language: a formal report mostly avoids them and uses neutral vocabulary such as <i>unzureichend</i>."
       },
       {
         q: "The train is canceled and you look for an alternative, resigned: «Der Zug fällt aus? Dann nehmen wir ___ ein Taxi.»",
@@ -385,7 +385,7 @@ LINGUAI.addStrings("en", {
       },
       {
         q: "Complete the dialogue with the right particles (in the first gap an adverb also works).",
-        tr: "“Where can Jonas be?” “He'll be stuck in traffic.” “He hasn't missed the bus again, has he?” “You know how it is: there's nothing you can do about it.”",
+        tr: "“Where can Jonas be?” “He'll be stuck in traffic.” “He hasn't missed the bus again, has he?” “You know what he's like: there's nothing you can do about it.”",
         why: "<i>wohl</i> for the supposition, <i>etwa</i> for the suspicious question, <i>ja</i> for what both know, <i>halt</i> or <i>eben</i> for the resignation. In the third gap <i>doch</i> also works."
       },
       {
@@ -451,7 +451,7 @@ LINGUAI.addStrings("en", {
           "he is absolutely certain",
           "he only reports what others say"
         ],
-        why: "<b>dürfte</b> expresses probability. For certainty it would be <i>muss</i>, for reporting rumors <i>soll</i>."
+        why: "<b>dürfte</b> expresses probability. For a stronger inference you could use <i>muss</i>, for reporting rumors <i>soll</i>."
       },
       {
         q: "A colleague walks into the office and finds the work already done: «Du hast ja schon alles erledigt!» What does ja express?",

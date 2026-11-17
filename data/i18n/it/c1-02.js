@@ -244,7 +244,7 @@ LINGUAI.addStrings("it", {
         why: "<b>soll</b>: <i>laut Augenzeugen</i> introduce una fonte esterna, e chi parla non garantisce."
       },
       {
-        q: "Un uomo si discolpa: «Der Zeuge ___ den Mann nie zuvor gesehen haben, das behauptet er zumindest.»",
+        q: "Il testimone si discolpa: «Der Zeuge ___ den Mann nie zuvor gesehen haben, das behauptet er zumindest.»",
         hint: "lo afferma lui stesso",
         why: "<b>will</b>: <i>das behauptet er zumindest</i> mostra che l'affermazione è del soggetto."
       },
@@ -300,7 +300,7 @@ LINGUAI.addStrings("it", {
         p: "Le particelle sono atone e tendono a stare dopo il verbo e i pronomi, prima dell'informazione nuova (<em>Er wird wohl noch schlafen</em>); è una tendenza, la posizione dipende anche dalla frase (<em>Hast du den Schlüssel etwa schon wieder vergessen?</em>). Sono tipiche del parlato, delle chat e dei dialoghi; nei testi formali per lo più si evitano, ma dipende dalla particella e dal tipo di testo: <em>halt</em> è colloquiale, mentre <em>ja</em>, <em>wohl</em> ed <em>eben</em> compaiono anche in testi curati, per esempio in un commento o in una relazione dal tono discorsivo. <em>halt</em> è più colloquiale e si sente soprattutto nel sud, <em>eben</em> è più neutro, ma nella maggior parte dei casi sono intercambiabili."
       },
       {
-        contrast: "L'italiano rende queste sfumature con l'intonazione e con parole come <em>mica</em>, <em>pazienza</em>, <em>mah</em>, <em>sarà</em>: <em>Hast du etwa ...?</em> è vicino a «non avrai mica ...?», <em>Dann warten wir halt</em> a «allora aspettiamo, pazienza». Dove l'italiano cambia il tempo del verbo (<em>sarà</em>), il tedesco aggiunge <em>wohl</em>. Nessuna delle cinque ha un equivalente fisso: si impara la funzione."
+        contrast: "L'italiano rende queste sfumature con l'intonazione e con parole come <em>mica</em>, <em>pazienza</em>, <em>mah</em>, <em>sarà</em>: <em>Hast du etwa ...?</em> è vicino a «non avrai mica ...?», <em>Dann warten wir halt</em> a «allora aspettiamo, pazienza». Dove l'italiano cambia il tempo del verbo (<em>sarà</em>), il tedesco può usare <em>werden</em> e spesso aggiunge <em>wohl</em>. Nessuna delle cinque ha un equivalente fisso: si impara la funzione."
       },
       {
         trap: "<em>etwa</em> ha due vite. Davanti a un numero è un avverbio, <em>etwa zwei Stunden</em>, «circa due ore». In una domanda con sorpresa è una particella, <em>Ist er etwa krank?</em>. Anche <em>wohl</em> può essere un avverbio pieno: <em>Ich fühle mich hier wohl</em> vuol dire «mi trovo bene qui»."
@@ -371,7 +371,7 @@ LINGUAI.addStrings("it", {
           "Die Zugverbindung ist halt schlecht.",
           "Die Zugverbindung ist eben nicht so toll."
         ],
-        why: "Le particelle <i>halt</i> ed <i>eben</i>, insieme a un lessico come <i>schlecht</i> e <i>nicht so toll</i>, sono parlato: una relazione formale di solito le evita, <i>halt</i> in particolare, e usa un lessico neutro come <i>unzureichend</i>."
+        why: "Le particelle <i>halt</i> ed <i>eben</i>, insieme a un'espressione colloquiale come <i>nicht so toll</i>, sono parlato: una relazione formale di solito le evita, <i>halt</i> in particolare, e usa un lessico neutro come <i>unzureichend</i>."
       },
       {
         q: "Il treno è soppresso e cerchi un'alternativa con rassegnazione: «Der Zug fällt aus? Dann nehmen wir ___ ein Taxi.»",
@@ -451,7 +451,7 @@ LINGUAI.addStrings("it", {
           "è assolutamente certo",
           "riferisce solo ciò che dicono altri"
         ],
-        why: "<b>dürfte</b> esprime probabilità. Per la certezza sarebbe <i>muss</i>, per riferire voci <i>soll</i>."
+        why: "<b>dürfte</b> esprime probabilità. Per una deduzione più forte si potrebbe usare <i>muss</i>, per riferire voci <i>soll</i>."
       },
       {
         q: "Un collega entra in ufficio e trova il lavoro già fatto: «Du hast ja schon alles erledigt!» Che cosa esprime ja?",

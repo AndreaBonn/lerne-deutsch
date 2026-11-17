@@ -34,7 +34,7 @@ LINGUAI.addStrings("pl", {
         trap: "<em>die prüfenden Unterlagen</em> nie znaczy „sprawdzone dokumenty”: to dokumenty, które coś <em>sprawdzają</em>. Do znaczenia biernego potrzebny jest imiesłów II, <em>die geprüften Unterlagen</em>. Nie myl też obu czasów: <em>die steigenden Kosten</em> nadal rosną, <em>die gestiegenen Kosten</em> już wzrosły. Pamiętaj o końcówce: polska końcówka przymiotnika zależy od rodzaju, liczby i przypadka, a niemiecka dodatkowo od rodzajnika, którego po polsku nie ma. Po <em>die</em> w liczbie mnogiej jest <em>-en</em>, więc <em>die geprüften Unterlagen</em>, nigdy <em>die geprüfte Unterlagen</em>."
       },
       {
-        tip: "Żeby zrozumieć imiesłów albo go wybrać, rozpisz go na zdanie względne: jeśli czasownik w zdaniu względnym stoi w czasie teraźniejszym czynnym (<em>die steigen</em>), potrzebny jest imiesłów I; jeśli to strona bierna (<em>die geprüft wurden</em>) albo Perfekt z <em>sein</em> (<em>die gestiegen sind</em>), potrzebny jest imiesłów II. Czy czynność jest zakończona, czy trwa, rozstrzyga czasownik i kontekst."
+        tip: "Żeby zrozumieć imiesłów albo go wybrać, rozpisz go na zdanie względne: jeśli czasownik w zdaniu względnym jest w stronie czynnej, a czynność jest równoczesna z czynnością zdania głównego (<em>die steigen</em>, ale też <em>die teilnahmen</em> w relacji o przeszłości), potrzebny jest imiesłów I; jeśli to strona bierna (<em>die geprüft wurden</em>) albo Perfekt z <em>sein</em> (<em>die gestiegen sind</em>), potrzebny jest imiesłów II. Czy czynność jest zakończona, czy trwa, rozstrzyga czasownik i kontekst."
       }
     ],
     grammar: {
@@ -166,7 +166,7 @@ LINGUAI.addStrings("pl", {
         contrast: "Polski też chętnie nominalizuje w stylu urzędowym (<em>po zakończeniu kontroli</em>, <em>w razie potrzeby</em>, <em>w celu wyjaśnienia otwartych kwestii</em>, <em>w wyniku wzrostu cen</em>), a zależny rzeczownik też idzie do dopełniacza, więc <em>Abschluss der Prüfung</em> to niemal kalka. Różnica jest w przyimkach: po niemiecku trzeba dobrać go do przypadka (<em>nach, bei, zu</em> + Dativ; <em>wegen, trotz, infolge</em> + Genitiv), a polskie przyimki rządzą innymi przypadkami (<em>po</em> + miejscownik, <em>mimo, z powodu</em> + dopełniacz), i jeden polski przyimek nie ma jednego niemieckiego odpowiednika (<em>w razie</em> = <em>bei</em>, <em>w celu</em> = <em>zu</em>). Po polsku nie ma też rodzajników, więc końcówkę przymiotnika w dopełniaczu trzeba w niemieckim dobrać do ich obecności: <em>offener Fragen</em> bez rodzajnika, <em>der gestiegenen Preise</em> z rodzajnikiem."
       },
       {
-        trap: "Zły przyimek zmienia relację logiczną: <em>Nach mehrfacher Mahnung blieb die Zahlung aus</em> mówi, że płatności nie ma <em>po</em> ponagleniach (<em>po wielokrotnych ponagleniach</em>), a <em>Trotz mehrfacher Mahnung</em> mówi, że nie ma jej <em>mimo</em> ponagleń. Uważaj też na przypadki: <em>infolge</em> i <em>trotz</em> wymagają dopełniacza (<em>Infolge der gestiegenen Preise</em>), nie celownika."
+        trap: "Zły przyimek zmienia relację logiczną: <em>Nach mehrfacher Mahnung blieb die Zahlung aus</em> mówi, że płatności nie ma <em>po</em> ponagleniach (<em>po wielokrotnych ponagleniach</em>), a <em>Trotz mehrfacher Mahnung</em> mówi, że nie ma jej <em>mimo</em> ponagleń. Uważaj też na przypadki: <em>infolge</em> i <em>trotz</em> wymagają dopełniacza (<em>Infolge der gestiegenen Preise</em>), nie celownika; dopiero gdy dopełniacza liczby mnogiej nie da się rozpoznać, używa się <em>von</em> (<em>infolge von Umbauten</em>)."
       },
       {
         tip: "Przy grupie rzeczownikowej zapytaj, jaki spójnik się za nią kryje: przyczyna → <em>weil</em>, przyzwolenie → <em>obwohl</em>, warunek → <em>wenn</em>, czas → <em>nachdem, bevor</em>, cel → <em>um ... zu</em>. Potem napisz ją jako zdanie podrzędne i sprawdź, czy sens się nie zmienił."
@@ -321,7 +321,7 @@ LINGUAI.addStrings("pl", {
         ]
       },
       examples: [
-        { tr: "Posiedzenie przełożono, ponieważ przewodniczący zachorował, a referentka utknęła za granicą.", note: "dwa podmioty: forma nominalna ukryłaby jeden z nich" },
+        { tr: "Posiedzenie przełożono, ponieważ przewodniczący zachorował, a referentka utknęła za granicą.", note: "dwa podmioty: forma nominalna mogłaby nazwać oba, ale byłaby ciężka i zaciemniłaby, kto co robi" },
         { tr: "Umowa zostanie podpisana dopiero wtedy, gdy zarząd wyrazi zgodę, a finansowanie będzie zapewnione.", note: "dwa warunki z różnymi czasownikami: zdanie podrzędne" },
         { tr: "Jeżeli kontrola miałaby potrwać dłużej, termin zostanie przesunięty.", note: "Sollte na pierwszym miejscu: hipotetyczny, ostrożnie postawiony warunek" },
         { tr: "Dofinansowanie wygasa, jeśli warunki ramowe miałyby się zmienić.", note: "falls ... ändern sollten: odcień modalny" },
@@ -332,7 +332,7 @@ LINGUAI.addStrings("pl", {
     vocab: [
       "zrozumiałość",
       "warunek wstępny, wymóg",
-      "warunki ramowe",
+      "warunek ramowy",
       "próba (statystyczna)",
       "przewodniczący (posiedzenia)",
       "wnioskodawca",

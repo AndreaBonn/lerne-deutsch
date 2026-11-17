@@ -34,7 +34,7 @@ LINGUAI.addStrings("fr", {
         trap: "<em>die prüfenden Unterlagen</em> ne veut pas dire « les documents examinés » : ce sont des documents qui <em>examinent</em> quelque chose. Pour le sens passif, il faut le participe II, <em>die geprüften Unterlagen</em>. Et ne confondez pas les deux temps : <em>die steigenden Kosten</em> augmentent encore, <em>die gestiegenen Kosten</em> ont déjà augmenté. Puis la terminaison : après <em>die</em> au pluriel, c'est <em>-en</em>, donc <em>die geprüften Unterlagen</em>, jamais <em>die geprüfte Unterlagen</em>."
       },
       {
-        tip: "Pour comprendre un participe, ou pour le choisir, dénouez-le en relative : si le verbe de la relative est au présent actif (<em>die steigen</em>), il faut le participe I ; si c'est un passif (<em>die geprüft wurden</em>) ou un parfait avec <em>sein</em> (<em>die gestiegen sind</em>), il faut le participe II."
+        tip: "Pour comprendre un participe, ou pour le choisir, dénouez-le en relative : si le verbe de la relative est actif et que son action est simultanée à celle de la principale (<em>die steigen</em>, mais aussi <em>die teilnahmen</em> dans un récit au passé), il faut le participe I ; si c'est un passif (<em>die geprüft wurden</em>) ou un parfait avec <em>sein</em> (<em>die gestiegen sind</em>), il faut le participe II."
       }
     ],
     grammar: {
@@ -166,7 +166,7 @@ LINGUAI.addStrings("fr", {
         contrast: "Le français nominalise aussi (<em>à l'issue de la vérification</em>, <em>en cas de besoin</em>, <em>pour la clarification des questions ouvertes</em>), mais il dispose aussi de l'infinitif passé (<em>après avoir terminé</em>), à ne pas confondre avec le gérondif (<em>en terminant</em>) : l'allemand rend ces tournures par un nom (<em>nach Abschluss</em>) ou par une subordonnée (<em>nachdem ... abgeschlossen hat</em>). En allemand, le complément du nom est souvent un <strong>génitif sans préposition</strong> (<em>die Klärung offener Fragen</em>, là où le français ajoute <em>de</em>), mais il peut aussi être introduit par une préposition (<em>die Nachfrage nach Wohnungen</em>) ; et les prépositions de cause et de concession se construisent avec le génitif, avec les terminaisons qui en découlent : <em>offener Fragen</em> sans article, <em>der gestiegenen Preise</em> avec l'article."
       },
       {
-        trap: "Une préposition fausse change le rapport logique : <em>Nach mehrfacher Mahnung blieb die Zahlung aus</em> dit que le paiement manque <em>après</em> les rappels, alors que <em>Trotz mehrfacher Mahnung</em> dit qu'il manque <em>malgré</em> les rappels. Attention aussi aux cas : <em>infolge</em> et <em>trotz</em> veulent le génitif (<em>Infolge der gestiegenen Preise</em>), pas le datif."
+        trap: "Une préposition fausse change le rapport logique : <em>Nach mehrfacher Mahnung blieb die Zahlung aus</em> dit que le paiement manque <em>après</em> les rappels, alors que <em>Trotz mehrfacher Mahnung</em> dit qu'il manque <em>malgré</em> les rappels. Attention aussi aux cas : <em>infolge</em> et <em>trotz</em> veulent le génitif (<em>Infolge der gestiegenen Preise</em>), pas le datif ; c'est seulement quand le génitif pluriel ne se reconnaît pas qu'on passe à <em>von</em> (<em>infolge von Umbauten</em>)."
       },
       {
         tip: "Devant un groupe nominal, demandez-vous quelle conjonction s'y cache : cause → <em>weil</em>, concession → <em>obwohl</em>, condition → <em>wenn</em>, temps → <em>nachdem, bevor</em>, but → <em>um ... zu</em>. Puis réécrivez-le en subordonnée et vérifiez que le sens ne change pas."
@@ -298,7 +298,7 @@ LINGUAI.addStrings("fr", {
         p: "Avant de nominaliser, posez quatre questions. Qui agit, et le nom le dit-il ? Existe-t-il un nom naturel (<em>Abschluss, Klärung</em>) ? Puis-je me passer d'exprimer le temps et le mode ? Le lecteur comprend-il dès la première lecture ? Si la réponse est oui partout, la forme compacte fonctionne (<em>Nach Abschluss der Prüfung ...</em>) ; sinon la subordonnée est plus claire, et dans les textes destinés à un public non spécialiste elle l'est presque toujours."
       },
       {
-        contrast: "Le français dispose lui aussi de tournures compactes : <em>après avoir terminé</em> (infinitif passé), <em>les travaux terminés</em> (participe absolu), et la subordonnée <em>au cas où la vérification durerait plus longtemps</em>, qui est une proposition et non un outil compact. En allemand, l'infinitif avec <em>ohne zu</em> ou <em>um ... zu</em> exige le même sujet ; avec deux sujets, on passe à une subordonnée (<em>dass, weil, nachdem</em>) ou, selon le cas, à un groupe nominal. Pour un francophone, le piège est de calquer la structure française : <em>après avoir terminé</em> n'a pas d'infinitif allemand équivalent (<em>nachdem er abgeschlossen hat</em> ou <em>nach Abschluss</em>). La nuance de <em>au cas où ... devrait</em> ou de <em>si jamais</em> se rend par <em>Sollte die Prüfung länger dauern, ...</em> ou <em>falls ... ändern sollten</em>."
+        contrast: "Le français dispose lui aussi de tournures compactes : <em>après avoir terminé</em> (infinitif passé), <em>les travaux terminés</em> (participe absolu), et la subordonnée <em>au cas où la vérification durerait plus longtemps</em>, qui est une proposition et non un outil compact. En allemand, l'infinitif avec <em>ohne zu</em> ou <em>um ... zu</em> reprend en général le sujet de la principale (pas toujours : <em>Das Paket ist zu schwer, um es allein zu tragen</em>) ; avec deux sujets, on passe à une subordonnée (<em>dass, weil, nachdem</em>) ou, selon le cas, à un groupe nominal. Pour un francophone, le piège est de calquer la structure française : <em>après avoir terminé</em> n'a pas d'infinitif allemand équivalent (<em>nachdem er abgeschlossen hat</em> ou <em>nach Abschluss</em>). La nuance de <em>au cas où ... devrait</em> ou de <em>si jamais</em> se rend par <em>Sollte die Prüfung länger dauern, ...</em> ou <em>falls ... ändern sollten</em>."
       },
       {
         trap: "Ne nominalisez pas tout simplement parce que « ça fait formel » : le résultat est un allemand de bureau difficile à lire, et un groupe prépositionnel comme <em>seitens der Teilnehmenden</em> nomme bien les participants, mais alourdit la phrase et éloigne l'agent de l'action. Et <em>sollte</em> en première position n'est pas le « devrait » d'obligation : <em>Sollte die Prüfung länger dauern</em> veut dire « si jamais la vérification devait durer plus longtemps », une condition hypothétique."
@@ -321,10 +321,10 @@ LINGUAI.addStrings("fr", {
         ]
       },
       examples: [
-        { tr: "La séance a été reportée parce que le président était malade et que la rapporteuse était bloquée à l'étranger.", note: "deux sujets : la forme nominale en cacherait un" },
+        { tr: "La séance a été reportée parce que le président était malade et que la rapporteuse était bloquée à l'étranger.", note: "deux sujets : la forme nominale pourrait les nommer tous les deux, mais deviendrait lourde et brouillerait qui fait quoi" },
         { tr: "Le contrat ne sera signé que lorsque le conseil aura approuvé et que le financement sera assuré.", note: "deux conditions avec des verbes différents : subordonnée" },
         { tr: "Si la vérification devait durer plus longtemps, la date sera reportée.", note: "Sollte en première position : condition hypothétique (« si jamais »)" },
-        { tr: "Le financement tombe si les conditions-cadres devaient changer.", note: "falls ... ändern sollten : nuance modale" },
+        { tr: "L'aide est supprimée si les conditions-cadres devaient changer.", note: "falls ... ändern sollten : nuance modale" },
         { tr: "Les résultats ne sont significatifs que si l'échantillon est représentatif.", note: "nur dann ..., wenn : condition nécessaire ; un groupe prépositionnel comme nur bei ... peut la conserver" },
         { tr: "L'évaluation a commencé après que les participants avaient rempli le questionnaire.", note: "subordonnée temporelle au plus-que-parfait : plus lisible qu'une chaîne de génitifs" }
       ]
@@ -332,7 +332,7 @@ LINGUAI.addStrings("fr", {
     vocab: [
       "la compréhensibilité",
       "la condition préalable, l'exigence",
-      "les conditions-cadres",
+      "la condition-cadre",
       "l'échantillon (statistique)",
       "le président (d'une séance)",
       "le demandeur",

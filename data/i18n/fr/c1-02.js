@@ -167,7 +167,7 @@ LINGUAI.addStrings("fr", {
         contrast: "Le français a lui aussi le conditionnel journalistique (<em>le ministre aurait détruit les documents</em>), mais il ne dit pas qui parle : cela peut être la presse, un témoin ou le ministre lui-même. L'allemand choisit le modal selon la source : <em>soll</em> pour « on dit que », <em>will</em> pour « lui prétend que ». De même, <em>il doit être malade</em> correspond à <em>muss</em>, mais le français <em>doit</em> est ambigu, car il peut aussi dire une obligation (<em>il doit venir</em>) ; et <em>il devrait être là</em> est tantôt <em>dürfte</em> (probable), tantôt un conseil ou une obligation. En allemand, l'infinitif est un indice utile, mais ce sont le contexte et le sens de la phrase qui tranchent."
       },
       {
-        trap: "La négation change le sens. <em>Er muss nicht krank sein</em> veut dire « il n'est pas forcément malade », et non « il ne peut pas être malade ». Pour l'impossibilité, il faut <em>kann nicht</em> : <em>Er kann nicht krank sein, ich habe ihn eben gesehen</em>. Et <em>dürfte</em> au sens de probabilité ne se confond pas avec <em>darf</em>, qui exprime une permission."
+        trap: "La négation change le sens. <em>Er muss nicht krank sein</em> veut dire « il n'est pas forcément malade », et non « il ne peut pas être malade ». Pour l'impossibilité, il faut <em>kann nicht</em> : <em>Er kann nicht zu Hause sein, ich habe ihn eben im Büro gesehen</em>. Et <em>dürfte</em> au sens de probabilité ne se confond pas avec <em>darf</em>, qui exprime une permission."
       },
       {
         tip: "Avant de traduire un modal, regardez l'infinitif, puis le contexte. Un infinitif passé (<em>gelesen haben, gewesen sein</em>) ou un verbe d'état (<em>sein</em>) oriente souvent vers une valeur subjective : certitude ou source. Un verbe d'action au présent (<em>Er soll kommen</em>) peut dire un ordre, ou rapporter ce qu'on dit (« il paraît qu'il vient ») : seul le contexte décide."
@@ -244,7 +244,7 @@ LINGUAI.addStrings("fr", {
         why: "<b>soll</b> : <i>laut Augenzeugen</i> introduit une source extérieure, et celui qui parle ne garantit pas."
       },
       {
-        q: "Un homme se disculpe : « Der Zeuge ___ den Mann nie zuvor gesehen haben, das behauptet er zumindest. »",
+        q: "Le témoin se disculpe : « Der Zeuge ___ den Mann nie zuvor gesehen haben, das behauptet er zumindest. »",
         hint: "c'est lui qui l'affirme",
         why: "<b>will</b> : <i>das behauptet er zumindest</i> montre que l'affirmation vient du sujet."
       },
@@ -300,7 +300,7 @@ LINGUAI.addStrings("fr", {
         p: "Les particules ont tendance à se placer sans accent après le verbe et les pronoms, avant l'information nouvelle (<em>Er wird wohl noch schlafen</em>). Elles sont surtout fréquentes à l'oral, dans les messages et les dialogues, mais cela dépend de la particule et de l'emploi : <em>wohl</em>, par exemple, apparaît aussi dans une prose soignée, alors que <em>halt</em>, plus familier, tend à être évité dans un rapport ou une lettre à un client ; tout dépend du type de texte. <em>eben</em> est plus neutre, et dans la plupart des cas les deux sont interchangeables."
       },
       {
-        contrast: "Le français rend ces nuances par l'intonation et par des mots comme <em>sans doute</em>, <em>tout de même</em>, <em>tu sais bien</em>, <em>tant pis</em>, <em>on n'y peut rien</em>, ou par le conditionnel : <em>Hast du etwa ...?</em> est proche de « tu n'aurais pas ... ? », <em>Dann warten wir halt</em> de « alors on attend, tant pis ». Là où le français change le mode ou le tour de la phrase (<em>il sera</em>, <em>il doit</em>), l'allemand ajoute <em>wohl</em>. Aucune des cinq n'a d'équivalent fixe : on apprend la fonction."
+        contrast: "Le français rend ces nuances par l'intonation et par des mots comme <em>sans doute</em>, <em>tout de même</em>, <em>tu sais bien</em>, <em>tant pis</em>, <em>on n'y peut rien</em>, ou par le conditionnel : <em>Hast du etwa ...?</em> est proche de « tu n'aurais pas ... ? », <em>Dann warten wir halt</em> de « alors on attend, tant pis ». Là où le français change le mode ou le tour de la phrase (<em>il sera</em>, <em>il doit</em>), l'allemand peut employer <em>werden</em> et ajoute souvent <em>wohl</em>. Aucune des cinq n'a d'équivalent fixe : on apprend la fonction."
       },
       {
         trap: "<em>etwa</em> a deux vies. Devant un nombre, c'est un adverbe, <em>etwa zwei Stunden</em>, « environ deux heures ». Dans une question avec surprise, c'est une particule, <em>Ist er etwa krank?</em>. <em>wohl</em> peut aussi être un adverbe plein : <em>Ich fühle mich hier wohl</em> veut dire « je me sens bien ici »."
@@ -371,7 +371,7 @@ LINGUAI.addStrings("fr", {
           "Die Zugverbindung ist halt schlecht.",
           "Die Zugverbindung ist eben nicht so toll."
         ],
-        why: "Les particules <i>halt</i> et <i>eben</i>, avec un lexique comme <i>schlecht</i> et <i>nicht so toll</i>, relèvent de l'oral : un rapport les évite et emploie un lexique neutre comme <i>unzureichend</i>."
+        why: "Les particules <i>halt</i> et <i>eben</i>, avec une expression familière comme <i>nicht so toll</i>, relèvent de l'oral : un rapport les évite et emploie un lexique neutre comme <i>unzureichend</i>."
       },
       {
         q: "Le train est supprimé et tu cherches une solution avec résignation : « Der Zug fällt aus? Dann nehmen wir ___ ein Taxi. »",
@@ -451,7 +451,7 @@ LINGUAI.addStrings("fr", {
           "il en est absolument certain",
           "il ne fait que rapporter ce que disent d'autres"
         ],
-        why: "<b>dürfte</b> exprime la probabilité. Pour la certitude, ce serait <i>muss</i>, pour rapporter des rumeurs <i>soll</i>."
+        why: "<b>dürfte</b> exprime la probabilité. Pour une déduction plus forte, on pourrait employer <i>muss</i>, pour rapporter des rumeurs <i>soll</i>."
       },
       {
         q: "Un collègue entre au bureau et trouve le travail déjà fait : « Du hast ja schon alles erledigt! » Qu'exprime ja ?",

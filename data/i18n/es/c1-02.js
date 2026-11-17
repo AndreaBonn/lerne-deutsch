@@ -34,7 +34,7 @@ LINGUAI.addStrings("es", {
         trap: "Para el pasado no basta el Futur I: <em>Er wird gestern krank sein</em> no funciona, hace falta el Futur II, <em>Er wird gestern wohl krank gewesen sein</em>. Y el auxiliar del infinitivo perfecto es el del Perfekt del verbo, no el que te dicta el español (<em>haber</em> para todo): <em>Sie wird abgereist sein</em> (movimiento, <em>sein</em>), <em>Er wird es vergessen haben</em> (<em>haben</em>)."
       },
       {
-        tip: "Pregúntate siempre a qué momento se refiere la oración: presente, pasado o un punto futuro con <em>bis</em>. El momento decide entre Futur I (conjetura sobre el presente), Futur II (pasado) y Futur II de acción terminada."
+        tip: "Pregúntate siempre a qué momento se refiere la oración: presente, pasado o un punto futuro (a menudo marcado con <em>bis</em>). El momento decide entre Futur I (conjetura sobre el presente), Futur II (pasado) y Futur II de acción terminada."
       }
     ],
     grammar: {
@@ -46,7 +46,7 @@ LINGUAI.addStrings("es", {
           ["werden + infinitivo", "conjetura sobre el presente", "Er wird wohl noch im Stau stehen."],
           ["werden + participio II + haben/sein", "conjetura sobre el pasado", "Sie wird die Nachricht inzwischen gelesen haben."],
           ["werden + participio II + haben/sein con bis", "acción terminada a más tardar en un momento futuro", "Bis Ende des Monats werden wir die Studie abgeschlossen haben."],
-          ["werden + infinitivo + schon", "tranquilización", "Das wird schon klappen."],
+          ["werden + schon + infinitivo", "tranquilización", "Das wird schon klappen."],
           ["presente + indicación de tiempo", "futuro programado", "Morgen fliege ich nach Wien."]
         ]
       },
@@ -167,7 +167,7 @@ LINGUAI.addStrings("es", {
         contrast: "El español usa el condicional periodístico (<em>el ministro habría destruido los documentos</em>), que no distingue quién lo dice: puede ser la prensa, un testigo o el propio ministro. Para eso hay que añadir una fórmula (<em>según un testigo, afirma que, dice que</em>). El alemán elige el modal según la fuente: <em>soll</em> para «se dice», <em>will</em> para «lo sostiene él». Para la deducción, el español tiene <em>deber de + infinitivo</em> (<em>debe de estar enfermo</em>), que corresponde a <em>muss</em> y también cubre el terreno de <em>dürfte</em>; no lo confundas con <em>deber + infinitivo</em> (<em>debe estar en cama</em>), que suele ser obligación. En alemán la misma forma <em>muss</em> sirve para ambos valores y los distingue el contexto: <em>Er muss um acht zu Hause sein</em> es una obligación, mientras que <em>Er muss noch arbeiten</em> puede ser obligación o deducción. El infinitivo solo da una pista."
       },
       {
-        trap: "La negación cambia el significado. <em>Er muss nicht krank sein</em> quiere decir «no tiene por qué estar enfermo», no «no puede estar enfermo». Para la imposibilidad hace falta <em>kann nicht</em>: <em>Er kann nicht krank sein, ich habe ihn eben gesehen</em>. Y <em>dürfte</em> con valor de probabilidad no debe confundirse con <em>darf</em>, que indica permiso."
+        trap: "La negación cambia el significado. <em>Er muss nicht krank sein</em> quiere decir «no tiene por qué estar enfermo», no «no puede estar enfermo». Para la imposibilidad hace falta <em>kann nicht</em>: <em>Er kann nicht zu Hause sein, ich habe ihn eben im Büro gesehen</em>. Y <em>dürfte</em> con valor de probabilidad no debe confundirse con <em>darf</em>, que indica permiso."
       },
       {
         tip: "Antes de traducir un modal, mira el contexto y, como pista, el infinitivo. Un infinitivo perfecto (<em>gelesen haben, gewesen sein</em>) suele apuntar a una lectura subjetiva: certeza o fuente. Pero <em>sein</em> también puede aparecer en una obligación, y <em>Er soll kommen</em> puede ser una orden o referir lo que otros dicen (que vendrá): lo decide el contexto, no la forma del infinitivo."
@@ -244,7 +244,7 @@ LINGUAI.addStrings("es", {
         why: "<b>soll</b>: <i>laut Augenzeugen</i> introduce una fuente externa, y quien habla no lo garantiza."
       },
       {
-        q: "Un hombre se defiende: «Der Zeuge ___ den Mann nie zuvor gesehen haben, das behauptet er zumindest.»",
+        q: "El testigo se defiende: «Der Zeuge ___ den Mann nie zuvor gesehen haben, das behauptet er zumindest.»",
         hint: "lo afirma él mismo",
         why: "<b>will</b>: <i>das behauptet er zumindest</i> muestra que la afirmación es del sujeto."
       },
@@ -325,7 +325,7 @@ LINGUAI.addStrings("es", {
       examples: [
         { tr: "Seguirá durmiendo, probablemente.", note: "wohl: conjetura" },
         { tr: "Sabes bien cuánto tarda.", note: "ja: algo que ambos saben" },
-        { tr: "¿No será que ya está todo?", note: "etwa: sorpresa, se espera un no" },
+        { tr: "¿No será esto ya todo?", note: "etwa: sorpresa, se espera un no" },
         { tr: "El autobús ya se ha ido, así que tendremos que ir andando, qué se le va a hacer.", note: "halt: resignación" },
         { tr: "No se puede hacer nada.", note: "eben: resignación" },
         { tr: "¿No habrás olvidado la llave?", note: "etwa: sospecha en una pregunta de sí o no" }
@@ -371,7 +371,7 @@ LINGUAI.addStrings("es", {
           "Die Zugverbindung ist halt schlecht.",
           "Die Zugverbindung ist eben nicht so toll."
         ],
-        why: "Las partículas <i>halt</i> y <i>eben</i>, junto con un léxico como <i>schlecht</i> y <i>nicht so toll</i>, son propias del habla: un informe las evita y usa un léxico neutro como <i>unzureichend</i>."
+        why: "Las partículas <i>halt</i> y <i>eben</i>, junto con una expresión coloquial como <i>nicht so toll</i>, son propias del habla: un informe las evita y usa un léxico neutro como <i>unzureichend</i>."
       },
       {
         q: "El tren está suprimido y buscas una alternativa con resignación: «Der Zug fällt aus? Dann nehmen wir ___ ein Taxi.»",
