@@ -276,7 +276,9 @@ LINGUAI.addUnits("B2", [
             a: [
               "Wenn ich mehr Geld hätte, würde ich weniger arbeiten",
               "Hätte ich mehr Geld, würde ich weniger arbeiten",
-              "Wenn ich mehr Geld hätte, dann würde ich weniger arbeiten"
+              "Wenn ich mehr Geld hätte, dann würde ich weniger arbeiten",
+              "Wenn ich mehr Geld hätte, arbeitete ich weniger",
+              "Hätte ich mehr Geld, arbeitete ich weniger"
             ]
           },
           {
@@ -412,7 +414,9 @@ LINGUAI.addUnits("B2", [
               "Wenn du mir das bloß früher gesagt hättest",
               "Wenn du mir das nur früher gesagt hättest",
               "Hättest du mir das bloß früher gesagt",
-              "Hättest du mir das nur früher gesagt"
+              "Hättest du mir das nur früher gesagt",
+              "Wenn du mir das doch früher gesagt hättest",
+              "Hättest du mir das doch früher gesagt"
             ]
           },
           {

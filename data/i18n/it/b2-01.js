@@ -482,10 +482,10 @@ LINGUAI.addStrings("it", {
         contrast: "I tre tipi corrispondono a quelli italiani: <em>se piove, restiamo</em>; <em>se avessi più soldi, lavorerei meno</em>; <em>se mi avessi chiesto, ti avrei aiutato</em>. Due differenze. Nel tipo reale l'italiano usa spesso il futuro (<em>se pioverà, resteremo</em>), il tedesco il presente: <em>Wenn es regnet, bleiben wir</em>. Negli irreali l'italiano ha due modi (congiuntivo nella condizione, condizionale nella conseguenza), il tedesco uno solo, il Konjunktiv II, in tutte e due le parti."
       },
       {
-        trap: "Dopo una frase con <em>wenn</em> l'italiano mantiene l'ordine soggetto-verbo (<em>se piove, noi restiamo</em>); in tedesco la frase con <em>wenn</em> occupa il primo posto e il verbo viene subito dopo: <em>Wenn es regnet, bleiben wir</em>, non «Wenn es regnet, wir bleiben». E <em>würde</em> non si usa di solito nella frase con <em>wenn</em> insieme a <em>hätte</em> o <em>wäre</em>: <em>Wenn ich Zeit hätte</em>, non «Wenn ich Zeit haben würde»."
+        trap: "Dopo una frase con <em>wenn</em> l'italiano mantiene l'ordine soggetto-verbo (<em>se piove, noi restiamo</em>); in tedesco la frase con <em>wenn</em> occupa il primo posto e il verbo viene subito dopo: <em>Wenn es regnet, bleiben wir</em>, non «Wenn es regnet, wir bleiben». E con <em>haben</em> e <em>sein</em> nella frase con <em>wenn</em> si preferiscono normalmente <em>hätte</em> e <em>wäre</em>: <em>Wenn ich Zeit hätte</em> è più comune di <em>Wenn ich Zeit haben würde</em>, che è possibile ma pesante."
       },
       {
-        tip: "Per scegliere il tipo, chiediti: la condizione può ancora avverarsi? Se sì, indicativo. Se no e riguarda adesso, <em>hätte, wäre, würde</em>. Se no e riguarda il passato, <em>hätte</em> o <em>wäre</em> + participio."
+        tip: "Per scegliere il tipo, chiediti come presenti la condizione. Aperta, cioè possibile: indicativo. Immaginata, remota o contraria ai fatti di adesso: <em>hätte, wäre, würde</em>. Contraria a ciò che è successo: <em>hätte</em> o <em>wäre</em> + participio."
       }
     ],
     grammar: {
@@ -531,7 +531,7 @@ LINGUAI.addStrings("it", {
           "Wenn es morgen regnen würde, blieben wir zu Hause.",
           "Wenn es morgen regnet, wir bleiben zu Hause."
         ],
-        why: "Condizione possibile: indicativo, e dopo la frase con <i>wenn</i> il verbo viene subito: <b>bleiben wir</b>. La seconda è un irreale, cioè dice che non pioverà; la terza ha l'ordine sbagliato."
+        why: "Condizione possibile: indicativo, e dopo la frase con <i>wenn</i> il verbo viene subito: <b>bleiben wir</b>. La seconda presenta la pioggia come un'ipotesi più remota; la terza ha l'ordine sbagliato."
       },
       {
         q: "Che tipo di periodo ipotetico è «Wenn ich mehr Geld hätte, würde ich weniger arbeiten»?",
@@ -608,7 +608,7 @@ LINGUAI.addStrings("it", {
         p: "Si può togliere <em>wenn</em> e mettere il verbo coniugato al <strong>primo posto</strong>: <em>Hätte ich das gewusst, wäre ich gekommen.</em> Nelle lettere, negli avvisi e nelle mail di lavoro si usa spesso <strong>sollte</strong> al primo posto: <em>Sollten Sie Fragen haben, wenden Sie sich bitte an uns.</em> Lo stile formale preferisce anche un nome al posto della frase: <em>im Notfall</em> (in caso di emergenza), <em>im Falle eines Brandes</em> (in caso di incendio, con il genitivo)."
       },
       {
-        contrast: "<em>Nel caso in cui</em>, <em>purché</em>, <em>a meno che</em>, <em>qualora</em> vogliono in italiano il congiuntivo. Le congiunzioni tedesche corrispondenti vogliono l'<strong>indicativo</strong>: <em>falls es regnet</em>, <em>sofern nichts dazwischenkommt</em>. Il formale <em>Sollten Sie Fragen haben</em> corrisponde al <em>qualora aveste domande</em> delle lettere italiane."
+        contrast: "<em>Nel caso in cui</em>, <em>purché</em>, <em>a meno che</em>, <em>qualora</em> vogliono in italiano il congiuntivo. Con le congiunzioni tedesche corrispondenti la condizione aperta si esprime con l'<strong>indicativo</strong>, senza alcun congiuntivo: <em>falls es regnet</em>, <em>sofern nichts dazwischenkommt</em>. Per presentarla come più remota si può usare il Konjunktiv II: <em>Falls du Hilfe brauchen solltest, ...</em> Il formale <em>Sollten Sie Fragen haben</em> corrisponde al <em>qualora aveste domande</em> delle lettere italiane."
       },
       {
         trap: "<em>A meno che non piova</em>: l'italiano mette un <em>non</em> che non nega niente. <em>es sei denn</em> non lo vuole: <em>es sei denn, es regnet</em>. Con <em>nicht</em> la frase direbbe il contrario. E dopo <em>es sei denn</em> il verbo sta in seconda posizione, non in fondo."
@@ -631,7 +631,7 @@ LINGUAI.addStrings("it", {
       },
       examples: [
         { tr: "Nel caso avessi bisogno di aiuto, chiamami.", note: "falls: condizione possibile, indicativo" },
-        { tr: "Salvo imprevisti, saremo lì alle otto.", note: "sofern: formale; dazwischenkommen = capitare in mezzo" },
+        { tr: "Salvo imprevisti, saremo lì alle otto.", note: "sofern: formale; dazwischenkommen = sopraggiungere un imprevisto" },
         { tr: "Partiamo domani, a meno che non nevichi.", note: "es sei denn: nessuna negazione in tedesco" },
         { tr: "Se l'avessi saputo, sarei venuto.", note: "senza wenn: verbo al primo posto" },
         { tr: "Qualora abbiate domande, rivolgetevi a noi.", note: "Sollten Sie ...: formula delle lettere" },
@@ -721,30 +721,30 @@ LINGUAI.addStrings("it", {
       "esprimere un desiderio irreale con wenn ... bloß / nur / doch",
       "esprimere un rimpianto con il verbo al primo posto",
       "rafforzare un ordine con bloß",
-      "usare nur nella condizione nel senso di «basterebbe che»"
+      "capire nur dentro una vera condizione (Wenn du nur ...)"
     ],
     theory: [
       {
         h: "Desideri irreali",
-        p: "Un desiderio che non si può realizzare ha la forma di una condizione senza conseguenza, con il <strong>Konjunktiv II</strong> e una particella: <strong>bloß</strong>, <strong>nur</strong> o <strong>doch</strong>. Con <em>wenn</em> il verbo va in fondo: <em>Wenn ich bloß mehr Zeit hätte!</em> Senza <em>wenn</em> il verbo va al primo posto: <em>Hätte ich nur nicht so viel gegessen! Wäre ich doch zu Hause geblieben!</em> Per il presente si usa anche <em>würde</em>: <em>Wenn es doch endlich regnen würde!</em>"
+        p: "Un desiderio presentato come lontano dalla realtà di adesso, oppure un rimpianto per il passato, ha la forma di una condizione senza conseguenza, con il <strong>Konjunktiv II</strong> e una particella: <strong>bloß</strong>, <strong>nur</strong> o <strong>doch</strong>. Con <em>wenn</em> il verbo va in fondo: <em>Wenn ich bloß mehr Zeit hätte!</em> Senza <em>wenn</em> il verbo va al primo posto: <em>Hätte ich nur nicht so viel gegessen! Wäre ich doch zu Hause geblieben!</em> Per il presente si usa anche <em>würde</em>: <em>Wenn es doch endlich regnen würde!</em>"
       },
       {
         h: "bloß negli ordini e nur nella condizione",
-        p: "In un ordine <strong>bloß</strong> lo rende più insistente, quasi minaccioso: <em>Mach das bloß nicht!</em> (non provarci nemmeno). Dentro una condizione vera, <strong>nur</strong> significa «basterebbe che»: <em>Wenn du nur ein bisschen Geduld hättest, würdest du es schaffen.</em>"
+        p: "In un ordine <strong>bloß</strong> lo rende più insistente, quasi minaccioso: <em>Mach das bloß nicht!</em> (non provarci nemmeno). Dentro una vera condizione, <strong>nur</strong> può limitare ciò che segue o rafforzare il desiderio: <em>Wenn du nur ein bisschen Geduld hättest, würdest du es schaffen</em> si può rendere con «basterebbe un po' di pazienza e ce la faresti»."
       },
       {
-        contrast: "L'italiano esprime lo stesso desiderio con <em>se solo</em> o <em>magari</em>: <em>Se solo avessi più tempo! Magari fossi rimasto a casa!</em> Il tedesco usa <em>bloß</em>, <em>nur</em> o <em>doch</em>, che però non stanno all'inizio come <em>se solo</em>: vanno dopo il soggetto, e prima della negazione: <em>Hätte ich nur nicht so viel gegessen!</em>"
+        contrast: "L'italiano esprime lo stesso desiderio con <em>se solo</em> o <em>magari</em>: <em>Se solo avessi più tempo! Magari fossi rimasto a casa!</em> Il tedesco usa <em>bloß</em>, <em>nur</em> o <em>doch</em>, che però non stanno all'inizio come <em>se solo</em>: vanno dentro la frase, di solito dopo il soggetto e i pronomi e prima della negazione: <em>Hätte ich nur nicht so viel gegessen! Wenn du es mir bloß früher gesagt hättest!</em> La posizione esatta dipende anche da ciò che si vuole mettere in rilievo."
       },
       {
         trap: "Qui <em>nur</em> e <em>bloß</em> non significano <em>solo</em>: <em>Wenn ich bloß mehr Zeit hätte!</em> non vuol dire «se avessi soltanto più tempo», ma «se solo avessi più tempo». E <em>doch</em> in un desiderio non è il <em>doch</em> della risposta (<em>Doch!</em>, sì invece): qui rafforza il desiderio."
       },
       {
-        tip: "Le tre particelle sono quasi intercambiabili nei desideri; <em>bloß</em> è un po' più emotivo, <em>doch</em> un po' più letterario. Per non sbagliare l'ordine, prima scrivi la frase senza particella, poi mettila dopo il soggetto."
+        tip: "Le tre particelle sono quasi intercambiabili nei desideri; <em>bloß</em> è un po' più emotivo, <em>doch</em> un po' più letterario. Per non sbagliare l'ordine, prima scrivi la frase senza particella, poi mettila dopo il soggetto e gli eventuali pronomi."
       }
     ],
     grammar: {
       title: "Desideri irreali: wenn ... bloß / nur / doch + Konjunktiv II",
-      note: "<b>Wenn</b> + particella + verbo in fondo, oppure verbo al <b>primo posto</b> + particella. La particella sta dopo il soggetto e prima di <i>nicht</i>.",
+      note: "<b>Wenn</b> + particella + verbo in fondo, oppure verbo al <b>primo posto</b> + particella. La particella sta dentro la frase, di solito dopo il soggetto e i pronomi e prima di <i>nicht</i>.",
       table: {
         head: ["", "presente", "passato"],
         rows: [
@@ -759,7 +759,7 @@ LINGUAI.addStrings("it", {
         { tr: "Magari fossi rimasto a casa!", note: "doch: desiderio sul passato" },
         { tr: "Se solo finalmente piovesse!", note: "würde + infinito al presente" },
         { tr: "Non provarci nemmeno!", note: "bloß in un ordine: tono minaccioso" },
-        { tr: "Se avessi solo un po' di pazienza, ce la faresti.", note: "nur in una vera condizione: basterebbe che" }
+        { tr: "Basterebbe un po' di pazienza e ce la faresti.", note: "nur in una vera condizione: limita ciò che segue" }
       ]
     },
     vocab: [
@@ -782,9 +782,9 @@ LINGUAI.addStrings("it", {
         opts: [
           "Wenn ich bloß mehr Zeit hätte!",
           "Wenn ich bloß mehr Zeit habe!",
-          "Wenn bloß ich mehr Zeit hätte!"
+          "Wenn ich bloß hätte mehr Zeit!"
         ],
-        why: "Il desiderio irreale vuole il Konjunktiv II (<b>hätte</b>), e <b>bloß</b> sta dopo il soggetto. La seconda è all'indicativo, la terza mette la particella davanti al soggetto."
+        why: "Il desiderio irreale vuole il Konjunktiv II (<b>hätte</b>), e <b>bloß</b> sta dopo il soggetto. La seconda è all'indicativo; la terza non manda il verbo in fondo, come vuole <i>wenn</i>."
       },
       {
         q: "Che cosa significa «Mach das bloß nicht!»?",
@@ -834,7 +834,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Se solo avessi avuto un po' più di pazienza!",
-        why: "In <i>Geduld</i> l'accento cade su <b>duld</b>; in <i>bisschen</i> la <b>sch</b> è [ʃ]; in <i>gehabt</i> la <b>b</b> finale si legge [p]."
+        why: "In <i>Geduld</i> l'accento cade su <b>duld</b>; in <i>bisschen</i> la <b>s</b> e la <b>ch</b> si pronunciano separate, [sç]; in <i>gehabt</i> la <b>b</b> davanti a <i>t</i> si legge [p]."
       }
     ]
   },
@@ -884,7 +884,7 @@ LINGUAI.addStrings("it", {
         why: "<i>es sei denn</i>: niente negazione e verbo in seconda posizione (<i>ich bin krank</i>)."
       },
       {
-        q: "Completa: «Hätte ich gestern nicht so viel gearbeitet, ...»",
+        q: "Completa con una conseguenza che riguarda il presente (periodo ipotetico misto): «Hätte ich gestern nicht so viel gearbeitet, ...»",
         opts: [
           "wäre ich jetzt nicht so müde.",
           "wäre ich jetzt nicht so müde gewesen.",
