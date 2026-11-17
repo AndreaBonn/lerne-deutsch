@@ -320,7 +320,7 @@ LINGUAI.addUnits("B2", [
         exercises: [
           { t: "mcq", a: 0 },
           { t: "mcq", a: 0 },
-          { t: "fill", a: ["Falls"] },
+          { t: "fill", a: ["Falls", "Sofern"] },
           { t: "fill", a: ["Hätte"] },
           {
             t: "cloze",

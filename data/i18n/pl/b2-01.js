@@ -455,5 +455,461 @@ LINGUAI.addStrings("pl", {
         why: "W <i>bloß</i> <b>o</b> jest długie, a <b>ß</b> to bezdźwięczne <i>s</i>; w <i>früher</i> <b>h</b> jest nieme i wydłuża <i>ü</i>; w <i>entschieden</i> <b>sch</b> to <i>sz</i>."
       }
     ]
+  },
+  "unit:b2-u02": {
+    title: "Warunki",
+    grammarNote: "okres warunkowy rzeczywisty, nierzeczywisty teraźniejszy, nierzeczywisty przeszły i mieszany · falls, sofern, es sei denn, vorausgesetzt · warunek bez wenn (Hätte ich ..., Sollten Sie ...) · bloß, nur, doch w życzeniach"
+  },
+  "lesson:b2-u02-l1": {
+    theme: "Decyzje",
+    title: "Rzeczywisty, nierzeczywisty, mieszany",
+    objectives: [
+      "odróżniać warunek otwarty od nierzeczywistego",
+      "budować warunek nierzeczywisty dla teraźniejszości i przeszłości",
+      "łączyć warunek z przeszłości ze skutkiem w teraźniejszości",
+      "stawiać czasownik we właściwym miejscu po zdaniu z wenn"
+    ],
+    theory: [
+      {
+        h: "Trzy typy okresu warunkowego",
+        p: "Warunek <strong>otwarty</strong> przedstawia warunek jako możliwy i ma <strong>tryb oznajmujący</strong>: <em>Wenn es morgen regnet, bleiben wir zu Hause.</em> Warunek <strong>nierzeczywisty teraźniejszy</strong> wyobraża sobie coś, czego teraz nie ma, albo przedstawia to jako odległe, i ma <strong>Konjunktiv II teraźniejszy</strong>: <em>Wenn ich mehr Geld hätte, würde ich weniger arbeiten.</em> Warunek <strong>nierzeczywisty przeszły</strong> mówi o czymś, co się nie wydarzyło, i ma <strong>Konjunktiv II przeszły</strong>: <em>Wenn du mich gefragt hättest, hätte ich dir geholfen.</em>"
+      },
+      {
+        h: "Warunek mieszany",
+        p: "Warunek i skutek mogą dotyczyć różnych czasów. Warunek z przeszłości ze skutkiem w teraźniejszości: <em>Wenn er den Job angenommen hätte, würde er jetzt in München wohnen.</em> Pierwszy czasownik jest w Konjunktivie II przeszłym, drugi w teraźniejszym: każda część bierze czas tego, o czym mówi. Po zdaniu z <em>wenn</em> zdanie główne zaczyna się od czasownika osobowego: <em>Wenn das Wetter schön ist, <strong>gehen</strong> wir wandern.</em>"
+      },
+      {
+        contrast: "Polski warunek otwarty działa jak niemiecki: <em>jeśli pada, zostajemy</em>, z trybem oznajmującym. Różnica jest w warunkach nierzeczywistych: polskie <em>gdybyś mnie zapytał, pomógłbym ci</em> może dotyczyć teraz albo wtedy, a o czasie decyduje kontekst. Niemiecki zawsze to rozróżnia: <em>Wenn du mich fragen würdest, würde ich dir helfen</em> (teraz) i <em>Wenn du mich gefragt hättest, hätte ich dir geholfen</em> (wtedy). Przy tłumaczeniu z polskiego trzeba więc najpierw ustalić, o który czas chodzi."
+      },
+      {
+        trap: "Po polskim zdaniu z <em>jeśli</em> szyk się nie zmienia (<em>jeśli pada, my zostajemy</em>); w niemieckim zdanie z <em>wenn</em> zajmuje pierwsze miejsce, więc czasownik idzie zaraz po nim: <em>Wenn es regnet, bleiben wir</em>, nie <em>Wenn es regnet, wir bleiben</em>. A przy <em>haben</em> i <em>sein</em> w zdaniu z <em>wenn</em> zwykle stoją <em>hätte</em> i <em>wäre</em>: <em>Wenn ich Zeit hätte</em> jest dużo częstsze niż <em>Wenn ich Zeit haben würde</em>, które jest możliwe, ale ciężkie."
+      },
+      {
+        tip: "Żeby wybrać typ, zapytaj, jak przedstawiasz warunek. Otwarty, czyli możliwy: tryb oznajmujący. Wyobrażony, odległy albo sprzeczny z tym, jak jest teraz: <em>hätte, wäre, würde</em>. Sprzeczny z tym, co się stało: <em>hätte</em> albo <em>wäre</em> + imiesłów."
+      }
+    ],
+    grammar: {
+      title: "Okres warunkowy: rzeczywisty, nierzeczywisty, mieszany",
+      note: "<b>Otwarty</b>: tryb oznajmujący. <b>Nierzeczywisty teraźniejszy</b>: Konjunktiv II teraźniejszy. <b>Nierzeczywisty przeszły</b>: Konjunktiv II przeszły. <b>Mieszany</b>: każda część bierze czas tego, o czym mówi.",
+      table: {
+        head: ["typ", "warunek (wenn ...)", "skutek"],
+        rows: [
+          ["otwarty", "Wenn es regnet,", "bleiben wir zu Hause."],
+          ["nierzeczywisty teraźniejszy", "Wenn ich Zeit hätte,", "würde ich kommen."],
+          ["nierzeczywisty przeszły", "Wenn ich Zeit gehabt hätte,", "wäre ich gekommen."],
+          ["mieszany", "Wenn ich den Job angenommen hätte,", "würde ich jetzt in München wohnen."]
+        ]
+      },
+      examples: [
+        { tr: "Jeśli jutro będzie padać, zostaniemy w domu.", note: "otwarty: Präsens także dla przyszłości" },
+        { tr: "Gdybym miał więcej pieniędzy, pracowałbym mniej.", note: "nierzeczywisty teraźniejszy" },
+        { tr: "Gdybyś mnie wtedy zapytał, pomógłbym ci.", note: "nierzeczywisty przeszły" },
+        { tr: "Gdyby przyjął tę pracę, mieszkałby teraz w Monachium.", note: "mieszany: warunek w przeszłości, skutek teraz" },
+        { tr: "Jeśli jest ładna pogoda, wybieramy się na pieszą wędrówkę.", note: "otwarty: zdanie główne zaczyna się od czasownika" },
+        { tr: "Na twoim miejscu przyjąłbym tę ofertę.", note: "nierzeczywisty: klasyczna rada" }
+      ]
+    },
+    vocab: [
+      "warunek",
+      "oferta",
+      "możliwość",
+      "przypadek (in diesem Fall: w takim przypadku)",
+      "skutek, konsekwencja",
+      "ryzyko",
+      "przyjąć (ofertę)",
+      "odrzucić, odmówić",
+      "zależeć (von + celownik: od)",
+      "ryzykować",
+      "ewentualnie, w pewnych okolicznościach",
+      "poważnie"
+    ],
+    exercises: [
+      {
+        q: "Jak powiesz „Jeśli jutro będzie padać, zostaniemy w domu”?",
+        opts: [
+          "Wenn es morgen regnet, bleiben wir zu Hause.",
+          "Wenn es morgen regnen würde, blieben wir zu Hause.",
+          "Wenn es morgen regnet, wir bleiben zu Hause."
+        ],
+        why: "Warunek otwarty: tryb oznajmujący, a po zdaniu z <i>wenn</i> czasownik idzie od razu: <b>bleiben wir</b>. Drugie zdanie przedstawia deszcz jako bardziej odległą hipotezę; trzecie ma zły szyk."
+      },
+      {
+        q: "Jaki to typ okresu warunkowego: „Wenn ich mehr Geld hätte, würde ich weniger arbeiten”?",
+        opts: [
+          "nierzeczywisty teraźniejszy",
+          "otwarty",
+          "nierzeczywisty przeszły"
+        ],
+        why: "<i>hätte</i> i <i>würde arbeiten</i> to Konjunktiv II teraźniejszy: teraz nie mam więcej pieniędzy. Przeszłość wymagałaby <i>gehabt hätte</i>."
+      },
+      {
+        q: "Jak powiesz „Gdybyś mnie wtedy zapytał, pomógłbym ci”?",
+        opts: [
+          "Wenn du mich gefragt hättest, hätte ich dir geholfen.",
+          "Wenn du mich fragen würdest, würde ich dir helfen.",
+          "Wenn du mich gefragt hast, habe ich dir geholfen."
+        ],
+        why: "Nierzeczywisty przeszły: Konjunktiv II przeszły w obu częściach. Drugie zdanie dotyczy teraźniejszości, trzecie jest w trybie oznajmującym."
+      },
+      {
+        q: "Jak powiesz „Gdyby przyjął tę pracę, mieszkałby teraz w Monachium”?",
+        opts: [
+          "Wenn er den Job angenommen hätte, würde er jetzt in München wohnen.",
+          "Wenn er den Job angenommen hätte, hätte er jetzt in München gewohnt.",
+          "Wenn er den Job annehmen würde, hätte er jetzt in München gewohnt."
+        ],
+        why: "Warunek mieszany: warunek dotyczy przeszłości (<b>angenommen hätte</b>), skutek teraźniejszości (<b>würde ... wohnen</b>), jak mówi <i>jetzt</i>."
+      },
+      {
+        q: "Uzupełnij: „Wenn ich du ___, würde ich das Angebot annehmen.”",
+        hint: "Konjunktiv II od sein, ich",
+        why: "<b>Wäre</b>: <i>Wenn ich du wäre</i> to stała formuła rady, z <i>wäre</i> na końcu zdania z <i>wenn</i>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Jeśli jest ładna pogoda, wybieramy się na pieszą wędrówkę.",
+        why: "<i>Wenn das Wetter schön ist, gehen wir wandern</i>: <i>ist</i> na końcu zdania z <i>wenn</i>, potem zdanie główne zaczyna się od czasownika <i>gehen</i>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Gdybyś mnie wtedy zapytał, pomógłbym ci.",
+        why: "<i>Wenn du mich gefragt hättest, hätte ich dir geholfen</i>: Konjunktiv II przeszły w obu częściach."
+      },
+      {
+        q: "Przetłumacz: „Gdybym miał więcej pieniędzy, pracowałbym mniej.” (teraz)",
+        why: "<i>Wenn ich mehr Geld hätte, würde ich weniger arbeiten</i>. Bez <i>wenn</i>: <i>Hätte ich mehr Geld, würde ich weniger arbeiten</i>."
+      },
+      {
+        tr: "Gdybym przyjął tę ofertę, pracowałbym teraz w Hamburgu. Ale nie wszystko zależy od pieniędzy.",
+        why: "W <i>Angebot</i> akcent pada na <b>An</b>; w <i>Hamburg</i> końcowe <b>g</b> czyta się jak <i>k</i>; w <i>hängt</i> <b>ng</b> to dźwięk nosowy [ŋ], jak w polskim <i>bank</i>."
+      },
+      {
+        tr: "Jeśli jutro będzie padać, zostaniemy w domu i zagramy w karty.",
+        why: "W <i>regnet</i> <b>g</b> słychać przed <i>n</i>: <i>reg-net</i>; w <i>bleiben</i> <b>ei</b> to <i>aj</i>; w <i>spielen</i> początkowe <b>sp</b> to <i>szp</i>."
+      }
+    ]
+  },
+  "lesson:b2-u02-l2": {
+    theme: "Niespodzianki",
+    title: "Falls, sofern, es sei denn",
+    objectives: [
+      "wyrażać warunek przez falls, sofern i vorausgesetzt",
+      "mówić „chyba że” przez es sei denn",
+      "budować warunek bez wenn, z czasownikiem na początku",
+      "rozpoznawać formuły rejestru oficjalnego (Sollten Sie ..., im Notfall)"
+    ],
+    theory: [
+      {
+        h: "Inne spójniki warunkowe",
+        p: "<strong>falls</strong> (<em>jeśli, w razie gdyby</em>) przedstawia warunek jako możliwy, ale niepewny: <em>Falls du Hilfe brauchst, ruf mich an.</em> <strong>sofern</strong> (<em>o ile</em>) jest bardziej oficjalne: <em>Sofern nichts dazwischenkommt, sind wir um acht da.</em> <strong>vorausgesetzt</strong> (<em>pod warunkiem że</em>) łączy się z <em>dass</em> i czasownikiem na końcu albo ze zdaniem głównym po przecinku: <em>Wir grillen, vorausgesetzt, das Wetter ist gut.</em> <strong>es sei denn</strong> (<em>chyba że</em>) wprowadza zdanie z czasownikiem na drugim miejscu: <em>Wir fahren morgen los, es sei denn, es schneit.</em>"
+      },
+      {
+        h: "Warunek bez wenn i rejestr oficjalny",
+        p: "Można pominąć <em>wenn</em> i postawić czasownik osobowy na <strong>pierwszym miejscu</strong>: <em>Hätte ich das gewusst, wäre ich gekommen.</em> W listach, ogłoszeniach i mailach służbowych często na początku stoi <strong>sollte</strong>: <em>Sollten Sie Fragen haben, wenden Sie sich bitte an uns.</em> Styl oficjalny woli też rzeczownik zamiast zdania: <em>im Notfall</em> (w nagłym wypadku), <em>im Falle eines Brandes</em> (w razie pożaru, z dopełniaczem)."
+      },
+      {
+        contrast: "Tu polski bardzo pomaga: <em>jeśli</em>, <em>o ile</em>, <em>chyba że</em> łączą się, tak jak niemieckie spójniki, z trybem oznajmującym (<em>chyba że pada</em>, <em>es sei denn, es regnet</em>). Również polski styl urzędowy woli rzeczownik: <em>w razie pytań</em>, <em>w nagłym wypadku</em>. Nowa jest forma z czasownikiem na początku: w polskim warunek bez spójnika istnieje (<em>Będziesz miał czas, zadzwoń</em>), ale zwykle wprowadza go <em>gdyby</em> albo <em>jeśli</em>, a w niemieckim <em>Sollten Sie ...</em> czy <em>Hätte ich ...</em> to regularny wzór, częsty także w mowie."
+      },
+      {
+        trap: "<em>es sei denn</em> znaczy już „chyba że”: nie dodawaj <em>nicht</em> odruchowo, <em>es sei denn, es regnet</em>. Przeczenie ma tam sens tylko wtedy, gdy sam wyjątek jest przeczący (<em>es sei denn, du möchtest das nicht</em>), tak jak po polsku <em>chyba że nie chcesz</em>. I po <em>es sei denn</em> czasownik stoi na drugim miejscu, nie na końcu."
+      },
+      {
+        tip: "W mowie prawie zawsze wystarczy <em>wenn</em>; <em>falls</em> przydaje się, gdy chcesz podkreślić, że coś może się nie zdarzyć (<em>Falls ich mich verspäte, ...</em>). W oficjalnym mailu <em>Sollten Sie ...</em> od razu brzmi profesjonalnie."
+      }
+    ],
+    grammar: {
+      title: "falls, sofern, es sei denn i warunek bez wenn",
+      note: "<b>falls, sofern</b>: czasownik na końcu. <b>es sei denn,</b> + zdanie z czasownikiem na drugim miejscu. <b>Bez wenn</b>: czasownik osobowy na początku (<b>Hätte ich ..., Sollten Sie ...</b>).",
+      table: {
+        head: ["", "przykład", "po polsku"],
+        rows: [
+          ["falls", "Falls du Hilfe brauchst, ruf mich an.", "jeśli, w razie gdyby"],
+          ["sofern", "Sofern nichts dazwischenkommt, ...", "o ile"],
+          ["es sei denn", "..., es sei denn, es schneit.", "chyba że"],
+          ["bez wenn", "Sollten Sie Fragen haben, ...", "w razie pytań, gdyby Pan/Pani ..."]
+        ]
+      },
+      examples: [
+        { tr: "Jeśli będziesz potrzebować pomocy, zadzwoń do mnie.", note: "falls: warunek możliwy, tryb oznajmujący" },
+        { tr: "Jeśli nic nam nie wypadnie, będziemy o ósmej.", note: "sofern: oficjalne; dazwischenkommen = wypaść (o czymś nieprzewidzianym)" },
+        { tr: "Wyjeżdżamy jutro, chyba że spadnie śnieg.", note: "es sei denn: jak chyba że, z trybem oznajmującym" },
+        { tr: "Gdybym to wiedział, przyszedłbym.", note: "bez wenn: czasownik na początku" },
+        { tr: "W razie pytań prosimy o kontakt.", note: "Sollten Sie ...: formuła z listów" },
+        { tr: "W nagłym wypadku prosimy dzwonić pod ten numer.", note: "im Notfall: rzeczownik zamiast zdania" }
+      ]
+    },
+    vocab: [
+      "nagły wypadek",
+      "wyjątek",
+      "warunek wstępny",
+      "wątpliwość (im Zweifel: w razie wątpliwości)",
+      "zapytanie",
+      "wypaść (o czymś nieprzewidzianym)",
+      "zwracać się do",
+      "powiadomić",
+      "odwołać",
+      "przełożyć",
+      "w razie potrzeby, ewentualnie",
+      "pod warunkiem że"
+    ],
+    exercises: [
+      {
+        q: "Jak powiesz „Idziemy na spacer, chyba że będzie padać”?",
+        opts: [
+          "Wir gehen spazieren, es sei denn, es regnet.",
+          "Wir gehen spazieren, es sei denn, es regnet nicht.",
+          "Wir gehen spazieren, es sei denn, regnet es."
+        ],
+        why: "<b>es sei denn</b> znaczy już „chyba że”, więc nie potrzeba <i>nicht</i> (z nim warunek byłby odwrotny); po nim idzie zdanie z czasownikiem na drugim miejscu: <i>es regnet</i>."
+      },
+      {
+        q: "Które zdanie najlepiej pasuje do oficjalnego maila?",
+        opts: [
+          "Sollten Sie Fragen haben, wenden Sie sich bitte an uns.",
+          "Wenn du Fragen hast, frag einfach.",
+          "Falls du was wissen willst, sag Bescheid."
+        ],
+        why: "<b>Sollten Sie ...</b> na początku, z <i>Sie</i> i <i>sich wenden an</i>, to formuła listów i maili służbowych. Pozostałe dwa są na „ty” i potoczne."
+      },
+      {
+        q: "Uzupełnij: „___ du Hilfe brauchst, ruf mich an.” (w razie gdyby, nie wenn)",
+        hint: "spójnik możliwego warunku",
+        why: "<b>Falls</b>: przedstawia warunek jako możliwy, ale niepewny, i odsyła czasownik <i>brauchst</i> na koniec."
+      },
+      {
+        q: "Uzupełnij bez wenn: „___ ich das gewusst, wäre ich gekommen.”",
+        hint: "czasownik na początku, Konjunktiv II od haben",
+        why: "<b>Hätte</b>: bez <i>wenn</i> czasownik osobowy otwiera zdanie, a zdanie główne zaczyna się od <i>wäre</i>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Wyjeżdżamy jutro, chyba że spadnie śnieg.",
+        why: "<i>es sei denn</i> to stała formuła: dwa słowa po <i>es</i>, potem przecinek i zdanie z czasownikiem na drugim miejscu."
+      },
+      {
+        q: "Połącz każde wyrażenie z jego znaczeniem.",
+        pairs: [
+          "jeśli, w razie gdyby",
+          "o ile",
+          "chyba że",
+          "w razie potrzeby, ewentualnie"
+        ]
+      },
+      {
+        q: "Ułóż słowa we właściwej kolejności.",
+        tr: "W razie pytań prosimy zwracać się do nas.",
+        why: "<i>Sollten Sie Fragen haben, wenden Sie sich bitte an uns.</i> <i>Sollten</i> otwiera warunek, <i>haben</i> go zamyka; zdanie główne zaczyna się od czasownika <i>wenden</i>."
+      },
+      {
+        q: "Przetłumacz bez wenn: „Gdybym to wiedział, przyszedłbym.” (o przeszłości)",
+        why: "<i>Hätte ich das gewusst, wäre ich gekommen</i>. Można dodać <i>dann</i>: <i>Hätte ich das gewusst, dann wäre ich gekommen</i>."
+      },
+      {
+        tr: "Gdyby jutro spadł śnieg, przełożymy podróż. W razie pytań prosimy zwracać się do recepcji.",
+        why: "W <i>schneien</i> <b>sch</b> to <i>sz</i>, a <b>ei</b> to <i>aj</i>; w <i>verschieben</i> <b>v</b> czyta się jak <i>f</i>; w <i>Rezeption</i> <b>tion</b> czyta się [tsi̯oːn]."
+      },
+      {
+        tr: "Jeśli nic nam nie wypadnie, będziemy o ósmej.",
+        why: "W <i>dazwischenkommt</i> <b>z</b> to polskie <i>c</i>, a <b>sch</b> to <i>sz</i>; w <i>acht</i> <b>ch</b> po <i>a</i> to twarde polskie <i>ch</i>; w <i>Uhr</i> <b>h</b> wydłuża <i>u</i>."
+      }
+    ]
+  },
+  "lesson:b2-u02-l3": {
+    theme: "Życzenia i żale",
+    title: "Gdybym tylko ...",
+    objectives: [
+      "wyrażać nierzeczywiste życzenie przez wenn ... bloß / nur / doch",
+      "wyrażać żal z czasownikiem na początku",
+      "wzmacniać polecenie przez bloß",
+      "rozumieć nur w pełnym okresie warunkowym (Wenn du nur ..., würdest du ...)"
+    ],
+    theory: [
+      {
+        h: "Życzenia nierzeczywiste",
+        p: "Życzenie przedstawione jako dalekie od tego, jak jest teraz, albo żal za przeszłością mają formę warunku bez skutku, z <strong>Konjunktivem II</strong> i partykułą: <strong>bloß</strong>, <strong>nur</strong> albo <strong>doch</strong>. Z <em>wenn</em> czasownik idzie na koniec: <em>Wenn ich bloß mehr Zeit hätte!</em> Bez <em>wenn</em> czasownik idzie na początek: <em>Hätte ich nur nicht so viel gegessen! Wäre ich doch zu Hause geblieben!</em> W teraźniejszości używa się też <em>würde</em>: <em>Wenn es doch endlich regnen würde!</em>"
+      },
+      {
+        h: "bloß w poleceniach, nur w warunku",
+        p: "W poleceniu <strong>bloß</strong> sprawia, że brzmi ono natarczywie, prawie groźnie: <em>Mach das bloß nicht!</em> (ani mi się waż). W pełnym okresie warunkowym, ze skutkiem, <strong>nur</strong> może ograniczać to, co po nim następuje, albo wzmacniać życzenie: <em>Wenn du nur ein bisschen Geduld hättest, würdest du es schaffen</em> można oddać jako „wystarczyłoby trochę cierpliwości i dałbyś radę”."
+      },
+      {
+        contrast: "Po polsku to samo życzenie wyrażasz przez <em>gdybym tylko</em> albo <em>oby</em>: <em>Gdybym tylko miał więcej czasu! Obym zdążył!</em> W tej konstrukcji polskiemu <em>gdybym tylko</em> odpowiada zdanie z Konjunktivem II i partykułą <em>bloß</em>, <em>nur</em> albo <em>doch</em>, która stoi wewnątrz zdania, zwykle po podmiocie i zaimkach, a przed przeczeniem: <em>Hätte ich nur nicht so viel gegessen! Wenn du es mir bloß früher gesagt hättest!</em> Dokładne miejsce zależy też od tego, co chcesz uwypuklić."
+      },
+      {
+        trap: "Tu <em>nur</em> i <em>bloß</em> nie znaczą <em>tylko</em> w sensie „nic więcej”: <em>Wenn ich bloß mehr Zeit hätte!</em> to nie „gdybym miał wyłącznie więcej czasu”, tylko „gdybym tylko miał więcej czasu”. A <em>doch</em> w życzeniu to nie <em>doch</em> z odpowiedzi (<em>Doch!</em>, ależ tak): tu wzmacnia życzenie."
+      },
+      {
+        tip: "W życzeniach trzy partykuły są prawie wymienne; <em>doch</em> wzmacnia życzenie albo żal tak jak pozostałe, a wybór zależy bardziej od kontekstu i intonacji niż od rejestru. Żeby nie pomylić szyku, napisz najpierw zdanie bez partykuły, a potem wstaw ją po podmiocie i zaimkach."
+      }
+    ],
+    grammar: {
+      title: "Życzenia nierzeczywiste: wenn ... bloß / nur / doch + Konjunktiv II",
+      note: "<b>Wenn</b> + partykuła + czasownik na końcu albo czasownik na <b>początku</b> + partykuła. Partykuła stoi wewnątrz zdania, zwykle po podmiocie i zaimkach, a przed <i>nicht</i>.",
+      table: {
+        head: ["", "teraźniejszość", "przeszłość"],
+        rows: [
+          ["z wenn", "Wenn ich bloß mehr Zeit hätte!", "Wenn ich bloß früher gekommen wäre!"],
+          ["bez wenn", "Hätte ich nur mehr Zeit!", "Wäre ich doch früher gekommen!"],
+          ["z würde", "Wenn es doch endlich regnen würde!", "-"]
+        ]
+      },
+      examples: [
+        { tr: "Gdybym tylko miał więcej czasu!", note: "wenn + bloß, czasownik na końcu" },
+        { tr: "Gdybym tylko nie zjadł tak dużo!", note: "czasownik na początku, nur przed nicht" },
+        { tr: "Gdybym tylko został w domu!", note: "doch: życzenie dotyczące przeszłości" },
+        { tr: "Oby wreszcie spadł deszcz!", note: "würde + bezokolicznik w teraźniejszości" },
+        { tr: "Ani mi się waż tego robić!", note: "bloß w poleceniu: groźny ton" },
+        { tr: "Wystarczyłoby trochę cierpliwości i dałbyś radę.", note: "nur w pełnym okresie warunkowym: ogranicza to, co po nim" }
+      ]
+    },
+    vocab: [
+      "cierpliwość",
+      "pech (So ein Pech!: co za pech!)",
+      "przypadek, zbieg okoliczności",
+      "los, przeznaczenie",
+      "zmartwienie, troska",
+      "złość, kłopoty",
+      "złościć się",
+      "mieć nadzieję",
+      "tęsknić (nach + celownik: za)",
+      "wreszcie, nareszcie",
+      "koniecznie",
+      "na próżno"
+    ],
+    exercises: [
+      {
+        q: "Jak powiesz „Gdybym tylko miał więcej czasu!”?",
+        opts: [
+          "Wenn ich bloß mehr Zeit hätte!",
+          "Wenn ich bloß mehr Zeit habe!",
+          "Wenn ich bloß hätte mehr Zeit!"
+        ],
+        why: "Życzenie nierzeczywiste wymaga Konjunktivu II (<b>hätte</b>) na końcu zdania z <i>wenn</i>. Drugie jest w trybie oznajmującym; trzecie nie odsyła czasownika na koniec, jak wymaga <i>wenn</i>."
+      },
+      {
+        q: "Co znaczy „Mach das bloß nicht!”?",
+        opts: [
+          "Ani mi się waż tego robić!",
+          "Zrób to tylko raz.",
+          "Nie rób tylko tego."
+        ],
+        why: "W poleceniu <b>bloß</b> czyni zakaz natarczywym, prawie groźnym. Nie znaczy <i>tylko</i>."
+      },
+      {
+        q: "Uzupełnij partykułę: „Hätte ich ___ nicht so viel gegessen!”",
+        hint: "partykuła żalu, przed nicht",
+        why: "<b>nur</b>, <b>bloß</b> albo <b>doch</b>: wszystkie trzy wzmacniają żal i stoją przed <i>nicht</i>."
+      },
+      {
+        q: "Uzupełnij: „___ ich doch zu Hause geblieben!”",
+        hint: "czasownik na początku, Konjunktiv II od sein",
+        why: "<b>Wäre</b>: <i>bleiben</i> ma <i>sein</i>, a bez <i>wenn</i> czasownik osobowy otwiera zdanie."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Oby wreszcie spadł deszcz!",
+        why: "<i>Wenn es doch endlich regnen würde!</i> W teraźniejszości często używa się <i>würde</i> + bezokolicznik; <i>würde</i> zamyka zdanie z <i>wenn</i>."
+      },
+      {
+        q: "Połącz każde wyrażenie z jego znaczeniem.",
+        pairs: [
+          "Gdybym tylko ...!",
+          "wreszcie, nareszcie",
+          "koniecznie",
+          "na próżno"
+        ]
+      },
+      {
+        q: "Ułóż słowa we właściwej kolejności.",
+        tr: "Gdybym tylko nie zjadł tak dużo!",
+        why: "<i>Hätte ich nur nicht so viel gegessen!</i> Czasownik na początku, potem podmiot, partykuła <i>nur</i>, przeczenie i imiesłów na końcu."
+      },
+      {
+        q: "Przetłumacz: „Gdybyś mi to tylko wcześniej powiedział!”",
+        why: "<i>Wenn du es mir bloß früher gesagt hättest!</i> albo <i>Hättest du es mir bloß früher gesagt!</i> Zamiast <i>bloß</i> pasują też <i>nur</i> i <i>doch</i>."
+      },
+      {
+        tr: "Gdybym tylko nie czekał tak długo! Teraz mieszkanie przepadło. Co za pech.",
+        why: "W <i>bloß</i> <b>o</b> jest długie; w <i>gewartet</i> <b>w</b> to polskie <i>w</i>; w <i>Pech</i> <b>ch</b> po <i>e</i> to miękki dźwięk [ç], podobny do <i>ś</i>."
+      },
+      {
+        tr: "Gdybym tylko miał trochę więcej cierpliwości!",
+        why: "W <i>Geduld</i> akcent pada na <b>duld</b>; w <i>bisschen</i> <b>s</b> i <b>ch</b> czyta się osobno, [sç]; w <i>gehabt</i> <b>b</b> przed <i>t</i> czyta się jak <i>p</i>."
+      }
+    ]
+  },
+  "lesson:b2-u02-test": {
+    theme: "Sprawdzian",
+    title: "Test: Warunki",
+    objectives: [
+      "sprawdzić typy okresu warunkowego, falls, es sei denn i warunek bez wenn"
+    ],
+    theory: [
+      {
+        p: "Dziesięć pytań z całej jednostki. Zaliczenie od 70%. Nie zaglądaj do lekcji, kiedy odpowiadasz: jeśli czegoś nie pamiętasz, lepiej wrócić i powtórzyć."
+      }
+    ],
+    exercises: [
+      {
+        q: "Uzupełnij: „Wenn er früher losgefahren ___, hätte er den Zug erreicht.”",
+        hint: "Konjunktiv II od sein, er",
+        why: "<b>Wäre</b>: <i>losfahren</i> ma <i>sein</i>, a Konjunktiv II przeszły zamyka zdanie z <i>wenn</i>."
+      },
+      {
+        q: "Uzupełnij: „Wir kommen, es sei denn, es ___ etwas dazwischen.”",
+        hint: "dazwischenkommen, czas teraźniejszy, tryb oznajmujący",
+        why: "<b>kommt</b>: po <i>es sei denn</i> stoi zdanie główne w trybie oznajmującym, z czasownikiem na drugim miejscu i partykułą <i>dazwischen</i> na końcu."
+      },
+      {
+        q: "Uzupełnij oficjalną formułę: „___ Sie Fragen haben, wenden Sie sich an uns.”",
+        hint: "czasownik modalny na początku",
+        why: "<b>Sollten</b>: warunek bez <i>wenn</i> z oficjalnych listów, z <i>haben</i> na końcu."
+      },
+      {
+        q: "Które zdanie to nierzeczywisty okres warunkowy w przeszłości?",
+        opts: [
+          "Wenn sie angerufen hätte, wäre ich gekommen.",
+          "Wenn sie anruft, komme ich.",
+          "Wenn sie anrufen würde, käme ich."
+        ],
+        why: "Tylko pierwsze ma Konjunktiv II przeszły (<i>angerufen hätte</i>, <i>wäre gekommen</i>). Drugie jest otwarte, trzecie nierzeczywiste teraźniejsze."
+      },
+      {
+        q: "Które zdanie znaczy „Przyjdę jutro, chyba że będę chory”?",
+        opts: [
+          "Ich komme morgen, es sei denn, ich bin krank.",
+          "Ich komme morgen, es sei denn, ich bin nicht krank.",
+          "Ich komme morgen, es sei denn, ich krank bin."
+        ],
+        why: "<i>es sei denn</i>, jak <i>chyba że</i>, bez dodatkowego <i>nicht</i> i z czasownikiem na drugim miejscu (<i>ich bin krank</i>). Z <i>nicht</i> warunek byłby odwrotny."
+      },
+      {
+        q: "Uzupełnij skutkiem, który dotyczy teraźniejszości (warunek mieszany): „Hätte ich gestern nicht so viel gearbeitet, ...”",
+        opts: [
+          "wäre ich jetzt nicht so müde.",
+          "wäre ich jetzt nicht so müde gewesen.",
+          "bin ich jetzt nicht so müde."
+        ],
+        why: "Warunek mieszany: warunek dotyczy przeszłości, skutek teraźniejszości (<i>jetzt</i>), więc Konjunktiv II teraźniejszy: <b>wäre ... müde</b>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Gdybym miał więcej czasu, częściej uprawiałbym sport.",
+        why: "<i>Wenn ich mehr Zeit hätte, würde ich öfter Sport machen</i>: nierzeczywisty teraźniejszy, <i>hätte</i> na końcu i <i>würde</i> na początku zdania głównego."
+      },
+      {
+        q: "Uzupełnij zdanie bez wenn.",
+        tr: "Gdybym to wiedział, pomógłbym ci. (o przeszłości)",
+        why: "<i>Hätte ich das gewusst, hätte ich dir geholfen</i>: pierwsze <i>hätte</i> otwiera warunek, drugie zdanie główne."
+      },
+      {
+        tr: "Jeśli jutro będziesz mieć czas, wpadnij. Gdybym wiedział, że jesteś w mieście, zadzwoniłbym już wczoraj.",
+        why: "W <i>vorbei</i> <b>v</b> czyta się jak <i>f</i>; w <i>Stadt</i> końcowe <b>dt</b> to <i>t</i>; w <i>angerufen</i> akcent pada na <b>an</b>."
+      },
+      {
+        tr: "Gdyby nie mógł Pan przyjść, prosimy o odwołanie wizyty z wyprzedzeniem.",
+        why: "W <i>verhindert</i> <b>v</b> czyta się jak <i>f</i>; w <i>rechtzeitig</i> <b>ch</b> to [ç], a <b>z</b> to polskie <i>c</i>; w <i>absagen</i> <b>b</b> przed <i>s</i> czyta się jak <i>p</i>."
+      }
+    ]
   }
 });
