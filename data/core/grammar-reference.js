@@ -22,6 +22,7 @@ window.GRAMMAR_REF = [
   {
     items: [
       { id: "g-adjektivdeklination", cefr: "A1" },
+      { id: "g-partizipialattribut", cefr: "C1" },
       { id: "g-komparation", cefr: "A1" },
       { id: "g-possessiv", cefr: "A1" },
       { id: "g-adverbien", cefr: "A1" }
@@ -49,7 +50,9 @@ window.GRAMMAR_REF = [
       { id: "g-reflexivverben", cefr: "A2" },
       { id: "g-verben-dativ", cefr: "A2" },
       { id: "g-futur", cefr: "A2" },
-      { id: "g-praep-verben", cefr: "B1" }
+      { id: "g-werden", cefr: "C1" },
+      { id: "g-praep-verben", cefr: "B1" },
+      { id: "g-funktionsverbgefuege", cefr: "C1" }
     ]
   },
   {
@@ -87,7 +90,8 @@ window.GRAMMAR_REF = [
     items: [
       { id: "g-aussprache", cefr: "A1" },
       { id: "g-register", cefr: "A1" },
-      { id: "g-modalpartikeln", cefr: "A2" }
+      { id: "g-modalpartikeln", cefr: "A2" },
+      { id: "g-nominalstil", cefr: "C1" }
     ]
   }
 ];
