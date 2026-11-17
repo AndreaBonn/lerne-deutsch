@@ -57,6 +57,7 @@ LINGUAI.addUnits("B2", [
             a: [
               "Wenn du früher gekommen wärst, hättest du ihn gesehen",
               "Wärst du früher gekommen, hättest du ihn gesehen",
+              "Wärest du früher gekommen, hättest du ihn gesehen",
               "Wenn du früher gekommen wärest, hättest du ihn gesehen"
             ]
           },
@@ -163,7 +164,7 @@ LINGUAI.addUnits("B2", [
         exercises: [
           { t: "mcq", a: 0 },
           { t: "mcq", a: 0 },
-          { t: "fill", a: ["wärst"] },
+          { t: "fill", a: ["wärst", "wärest"] },
           { t: "fill", a: ["wäre"] },
           {
             t: "cloze",

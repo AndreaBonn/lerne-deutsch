@@ -25,21 +25,21 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Ipotesi irreale sul passato",
-        p: "Nel periodo ipotetico sul passato tutte e due le parti hanno il Konjunktiv II passato: <em>Wenn ich das gewusst hätte, wäre ich früher gekommen</em>. Dopo <em>wenn</em> l'ausiliare va in fondo, dopo il participio; la principale che segue comincia con l'ausiliare. Si può anche togliere <em>wenn</em> e cominciare con il verbo: <em>Hätte ich das gewusst, wäre ich früher gekommen.</em> Con <strong>bloß</strong>, <strong>nur</strong> o <strong>doch</strong> la stessa forma diventa un rimpianto: <em>Hätte ich bloß mehr gelernt!</em>"
+        p: "Quando condizione e conseguenza riguardano tutte e due il passato, tutte e due hanno il Konjunktiv II passato: <em>Wenn ich das gewusst hätte, wäre ich früher gekommen</em>. Se la conseguenza riguarda il presente, lì si usa il Konjunktiv II presente: <em>Hätte ich die Gelegenheit genutzt, wäre ich jetzt in Berlin.</em> Dopo <em>wenn</em> l'ausiliare va in fondo, dopo il participio; la principale che segue comincia con l'ausiliare. Si può anche togliere <em>wenn</em> e cominciare con il verbo: <em>Hätte ich das gewusst, wäre ich früher gekommen.</em> Con <strong>bloß</strong>, <strong>nur</strong> o <strong>doch</strong> la stessa forma diventa un rimpianto: <em>Hätte ich bloß mehr gelernt!</em>"
       },
       {
-        contrast: "L'italiano usa due forme diverse nelle due parti: <em>se l'avessi saputo</em> (congiuntivo trapassato) e <em>sarei venuto</em> (condizionale passato). Il tedesco ne ha una sola, il Konjunktiv II passato, in tutte e due: <em>Wenn ich das gewusst hätte, wäre ich gekommen</em>. Non c'è niente che corrisponda al <em>se</em> + congiuntivo da una parte e al condizionale dall'altra: è la stessa forma due volte."
+        contrast: "L'italiano usa due forme diverse nelle due parti: <em>se l'avessi saputo</em> (congiuntivo trapassato) e <em>sarei venuto</em> (condizionale passato). Il tedesco, quando tutte e due le parti riguardano il passato, usa in tutte e due il Konjunktiv II passato: <em>Wenn ich das gewusst hätte, wäre ich gekommen</em>. Non c'è una forma per il <em>se</em> e un'altra per la conseguenza: è lo stesso modo due volte."
       },
       {
-        trap: "<em>Wenn ich das gewusst habe</em> è un Perfekt, cioè un fatto reale: «quando l'ho saputo». Per l'ipotesi serve <em>hätte</em>. E attenzione a <em>wäre</em> con i verbi di movimento: <em>Ich wäre gekommen</em>, non «Ich hätte gekommen», perché al Perfekt si dice <em>ich bin gekommen</em>."
+        trap: "<em>Wenn ich das gewusst habe</em> è un Perfekt all'indicativo: può indicare un momento o una condizione aperta, ma non dice che non l'hai saputo. Per l'ipotesi controfattuale sul passato serve <em>gewusst hätte</em>. E attenzione a <em>wäre</em> con i verbi di movimento: <em>Ich wäre gekommen</em>, non «Ich hätte gekommen», perché al Perfekt si dice <em>ich bin gekommen</em>."
       },
       {
-        tip: "Per non sbagliare l'ausiliare, pensa prima al Perfekt: <em>ich habe gemacht</em> diventa <em>ich hätte gemacht</em>, <em>ich bin geblieben</em> diventa <em>ich wäre geblieben</em>. Cambia solo la vocale dell'ausiliare."
+        tip: "Per non sbagliare l'ausiliare, pensa prima al Perfekt: <em>ich habe gemacht</em> diventa <em>ich hätte gemacht</em>, <em>ich bin geblieben</em> diventa <em>ich wäre geblieben</em>. Si sostituisce l'ausiliare con la sua forma di Konjunktiv II e il participio resta uguale."
       }
     ],
     grammar: {
       title: "Konjunktiv II al passato: hätte / wäre + participio II",
-      note: "<b>hätte</b> + participio con i verbi che al Perfekt usano <i>haben</i>, <b>wäre</b> + participio con quelli che usano <i>sein</i>. Nel periodo ipotetico la stessa forma sta in tutte e due le parti.",
+      note: "<b>hätte</b> + participio con i verbi che al Perfekt usano <i>haben</i>, <b>wäre</b> + participio con quelli che usano <i>sein</i>. Se condizione e conseguenza riguardano tutte e due il passato, tutte e due hanno il Konjunktiv II passato; una conseguenza presente usa il Konjunktiv II presente.",
       table: {
         head: ["Perfekt", "Konjunktiv II passato", "italiano"],
         rows: [
@@ -52,7 +52,7 @@ LINGUAI.addStrings("it", {
       examples: [
         { tr: "Non l'avrei fatto.", note: "hätte + participio in fondo" },
         { tr: "Saremmo rimasti volentieri più a lungo.", note: "bleiben vuole sein: wäre" },
-        { tr: "Se l'avessi saputo, sarei venuto prima.", note: "Konjunktiv II passato in tutte e due le parti" },
+        { tr: "Se l'avessi saputo, sarei venuto prima.", note: "condizione e conseguenza nel passato: Konjunktiv II passato in tutte e due" },
         { tr: "Se solo avessi studiato di più!", note: "rimpianto: verbo in prima posizione + bloß" },
         { tr: "Per poco non arrivava in ritardo.", note: "fast + Konjunktiv II: qualcosa che non è successo per un pelo" },
         { tr: "Senza il tuo aiuto non ce l'avrei fatta.", note: "ohne + nome al posto della frase con wenn" }
@@ -148,10 +148,10 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Nella subordinata",
-        p: "Nella subordinata l'ausiliare non va in fondo come al solito: si mette <strong>davanti ai due infiniti</strong>. <em>Ich weiß, dass ich hätte fragen sollen. Es tut mir leid, dass ich nicht habe kommen können.</em> È l'unico caso frequente in cui il verbo coniugato di una subordinata non chiude la frase."
+        p: "Nella subordinata l'ausiliare non va in fondo come al solito: si mette <strong>davanti ai due infiniti</strong>. <em>Ich weiß, dass ich hätte fragen sollen. Es tut mir leid, dass ich nicht habe kommen können.</em> Con i modali nel doppio infinito questa posizione è obbligatoria."
       },
       {
-        contrast: "L'italiano dice <em>avrei dovuto chiamare</em> ma <em>sarei dovuto venire</em>: l'ausiliare cambia con il verbo che segue. Il tedesco ha sempre <em>haben</em>: <em>Ich hätte kommen sollen</em>, mai «Ich wäre kommen sollen». E l'ordine è rovesciato: in italiano il modale viene prima dell'infinito (<em>dovuto chiamare</em>), in tedesco dopo (<em>anrufen sollen</em>)."
+        contrast: "In italiano con i verbi di movimento si può usare <em>essere</em> (<em>sarei dovuto venire</em>, accanto ad <em>avrei dovuto venire</em>). Il tedesco, con un modale seguito da un altro infinito, ha sempre <em>haben</em>: <em>Ich hätte kommen sollen</em>, mai «Ich wäre kommen sollen». E l'ordine è rovesciato: in italiano il modale viene prima dell'infinito (<em>dovuto chiamare</em>), in tedesco dopo (<em>anrufen sollen</em>)."
       },
       {
         trap: "<em>Ich hätte das gekonnt</em> esiste, ma solo quando il modale è <strong>da solo</strong>, senza un altro verbo: «ne sarei stato capace». Appena c'è un secondo verbo, il participio sparisce: <em>Ich hätte das machen können</em>, non «Ich hätte das machen gekonnt»."
@@ -268,7 +268,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "als ob, als wenn",
-        p: "<strong>als ob</strong> e <strong>als wenn</strong> significano <em>come se</em> e introducono un paragone con qualcosa che non è vero. Vogliono il <strong>Konjunktiv II</strong> e il verbo in fondo: <em>Er tut so, als ob er nichts wüsste</em> (fa finta di non sapere niente). Si trovano spesso dopo <em>so tun</em> (fare finta), <em>aussehen</em> (sembrare, all'aspetto), <em>klingen</em> (suonare), <em>sich benehmen</em> (comportarsi)."
+        p: "<strong>als ob</strong> e <strong>als wenn</strong> significano <em>come se</em> e introducono un paragone ipotetico: un'impressione che può essere falsa o di cui non si sa se sia vera. Di solito vogliono il <strong>Konjunktiv II</strong>, che è la forma che si impara qui, e il verbo in fondo: <em>Er tut so, als ob er nichts wüsste</em> (fa finta di non sapere niente). Si trovano spesso dopo <em>so tun</em> (fare finta), <em>aussehen</em> (sembrare, all'aspetto), <em>klingen</em> (suonare), <em>sich benehmen</em> (comportarsi)."
       },
       {
         h: "Contemporaneo o anteriore",
@@ -374,7 +374,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Ha fatto finta di non avermi visto. Ma avevo l'impressione che mi avesse riconosciuto benissimo.",
-        why: "In <i>Eindruck</i> la <b>ei</b> è [aɪ] e la <b>u</b> è lunga; in <i>erkannt</i> la <b>r</b> dopo la <i>e</i> si sente appena; in <i>genau</i> la <b>au</b> è [aʊ]."
+        why: "In <i>Eindruck</i> la <b>ei</b> è [aɪ] e la <b>u</b> è breve [ʊ]; in <i>erkannt</i> la <b>r</b> dopo la <i>e</i> si sente appena; in <i>genau</i> la <b>au</b> è [aʊ]."
       },
       {
         tr: "Sembri uno che non ha dormito tutta la notte.",
@@ -433,7 +433,7 @@ LINGUAI.addStrings("it", {
           "Ich habe bloß mehr gelernt.",
           "Ich lerne bloß mehr."
         ],
-        why: "Il rimpianto vuole il Konjunktiv II passato con il verbo in prima posizione e <i>bloß</i>: <b>Hätte ich bloß mehr gelernt!</b> Le altre due sono indicativi."
+        why: "Qui il rimpianto è espresso dal Konjunktiv II passato, dal verbo in prima posizione e da <i>bloß</i> (vanno bene anche <i>nur</i>, <i>doch</i> o <i>Wenn ich doch ... hätte!</i>): <b>Hätte ich bloß mehr gelernt!</b> Le altre due sono indicativi."
       },
       {
         q: "Quali frasi sono corrette?",
