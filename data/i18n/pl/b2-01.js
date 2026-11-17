@@ -1353,5 +1353,468 @@ LINGUAI.addStrings("pl", {
         why: "W <i>diskutieren</i> akcent pada na <b>tie</b>; w <i>Problem</i> akcent pada na <b>blem</b>; w <i>gelöst</i> <b>ö</b> jest długie."
       }
     ]
+  },
+  "unit:b2-u04": {
+    title: "Społeczeństwo i debata",
+    grammarNote: "odmiana słaba rzeczowników męskich (der Kunde, den Kunden, des Kunden) · je ... desto / umso, immer + stopień wyższy · einerseits ... andererseits, zwar ... aber · bronienie stanowiska z Konjunktivem II (Ich würde sagen ..., Es wäre besser, wenn ...)"
+  },
+  "lesson:b2-u04-l1": {
+    theme: "Gospodarka i praca",
+    title: "Klient, klienta",
+    objectives: [
+      "rozpoznawać rzeczowniki męskie odmiany słabej",
+      "dodawać -n albo -en we wszystkich przypadkach poza mianownikiem liczby pojedynczej",
+      "używać Herr i Herrn w listach i mailach",
+      "mówić o klientach, kolegach i dostawcach"
+    ],
+    theory: [
+      {
+        h: "Czym jest n-Deklination",
+        p: "Grupa rzeczowników <strong>rodzaju męskiego</strong> dostaje <strong>-n</strong> albo <strong>-en</strong> we wszystkich przypadkach poza mianownikiem liczby pojedynczej: <em>der Kunde, den Kunden, dem Kunden, des Kunden</em>. To głównie męskie na <strong>-e</strong>, które oznaczają osoby albo zwierzęta (<em>der Kollege, der Experte, der Junge</em>), i wiele męskich obcego pochodzenia na <strong>-ent, -ant, -ist, -at, -oge</strong>, przede wszystkim nazw osób (<em>der Präsident, der Praktikant, der Lieferant, der Journalist</em>). Te zakończenia to wskazówka, nie reguła: <em>der Moment, des Moments</em> i <em>der Apparat, des Apparats</em> odmieniają się zwykle, więc odmianę pozostałych rzeczowników sprawdzaj w słowniku. Te rzeczowniki tworzą liczbę mnogą na <em>-n</em> albo <em>-en</em>: <em>die Kunden, die Präsidenten</em>."
+      },
+      {
+        h: "Herr, Herrn",
+        p: "Tak samo odmienia się <strong>Herr</strong>, z <em>-n</em> w liczbie pojedynczej i <em>-en</em> w mnogiej. W listach i mailach widać to cały czas: <em>Sehr geehrter Herr Müller</em> (mianownik, w nagłówku), ale <em>Ich habe Herrn Müller eine Mail geschrieben</em> (celownik) i <em>Kennen Sie Herrn Müller?</em> (biernik). <em>Meine Damen und Herren</em> to liczba mnoga."
+      },
+      {
+        contrast: "Tu polski pomaga: też odmienia rzeczowniki i też mówi <em>pan Müller, panu Müllerowi, pana Müllera</em>. Niemiecki ma jednak jedną końcówkę, <em>-n</em>, na trzy przypadki, i wygląda ona jak liczba mnoga: <em>den Kunden</em> to klient w bierniku albo klienci w celowniku, z tym samym rodzajnikiem. Rozstrzyga przypadek, którego wymaga czasownik: <em>Ich rufe den Kunden an</em> (jeden klient, biernik), <em>Ich helfe den Kunden</em> (klienci, celownik liczby mnogiej). Samo nazwisko po <em>Herrn</em> się nie zmienia."
+      },
+      {
+        trap: "Najczęstszy błąd to pominięcie końcówki: <em>Ich frage den Student</em> zamiast <em>den Studenten</em>, <em>mit dem Kollege</em> zamiast <em>mit dem Kollegen</em>. Rzeczowniki żeńskie tak się nie odmieniają (<em>die Kundin, der Kundin</em>), i nie wszystkie męskie też: <em>der Lehrer, den Lehrer</em>."
+      },
+      {
+        tip: "Kiedy uczysz się rzeczownika męskiego, który oznacza osobę, sprawdź w słowniku dopełniacz: <em>der Kunde, -n, -n</em> znaczy dopełniacz <em>des Kunden</em>, liczba mnoga <em>die Kunden</em>, i to jest znak odmiany słabej."
+      }
+    ],
+    grammar: {
+      title: "n-Deklination",
+      note: "Męskie na <b>-e</b> (osoby, zwierzęta) i wiele obcych męskich na <b>-ent, -ant, -ist, -at, -oge</b>, zwłaszcza nazw osób (sprawdzaj dopełniacz): <b>-n / -en</b> we wszystkich przypadkach poza mianownikiem liczby pojedynczej. Także <b>Herr → Herrn</b>.",
+      table: {
+        head: ["", "der Kunde", "der Präsident", "der Herr"],
+        rows: [
+          ["mianownik", "der Kunde", "der Präsident", "der Herr"],
+          ["biernik", "den Kunden", "den Präsidenten", "den Herrn"],
+          ["celownik", "dem Kunden", "dem Präsidenten", "dem Herrn"],
+          ["dopełniacz", "des Kunden", "des Präsidenten", "des Herrn"],
+          ["liczba mnoga", "die Kunden", "die Präsidenten", "die Herren"]
+        ]
+      },
+      examples: [
+        { tr: "Klient złożył skargę.", note: "mianownik: bez -n" },
+        { tr: "Od razu zadzwoniliśmy do klienta.", note: "biernik: den Kunden" },
+        { tr: "Jutro rozmawiam z kolegą.", note: "celownik po mit: dem Kollegen" },
+        { tr: "To jest gabinet prezydenta.", note: "dopełniacz: des Präsidenten, bez -s" },
+        { tr: "Praktykant pomaga dziennikarzowi.", note: "helfen + celownik: dem Journalisten" },
+        { tr: "Napisałem maila do pana Müllera.", note: "Herrn w celowniku" }
+      ]
+    },
+    vocab: [
+      "klient",
+      "kolega z pracy",
+      "praktykant",
+      "prezydent, prezes",
+      "dostawca",
+      "ekspert",
+      "firma",
+      "obrót",
+      "zlecenie, zamówienie (od klienta)",
+      "skarżyć się (über + biernik: na)",
+      "doradzać",
+      "zatrudniać"
+    ],
+    exercises: [
+      {
+        q: "Jak powiesz „Zadzwoniłem do klienta”?",
+        opts: [
+          "Ich habe den Kunden angerufen.",
+          "Ich habe den Kunde angerufen.",
+          "Ich habe dem Kunden angerufen."
+        ],
+        why: "<i>anrufen</i> łączy się z biernikiem, a <i>Kunde</i> dostaje <b>-n</b>: <b>den Kunden</b>. Trzecie zdanie ma celownik, którego <i>anrufen</i> nie wymaga, choć po polsku mówimy <i>do klienta</i>."
+      },
+      {
+        q: "Który rzeczownik ma odmianę słabą (den ...-en)?",
+        opts: [
+          "der Student",
+          "der Lehrer",
+          "die Studentin"
+        ],
+        why: "<b>der Student</b> to obcy rzeczownik męski na <i>-ent</i>: <i>den Studenten</i>. <i>der Lehrer</i> ma <i>den Lehrer</i>; rzeczowniki żeńskie tak się nie odmieniają."
+      },
+      {
+        q: "Uzupełnij: „Ich spreche morgen mit dem ___.” (der Kollege)",
+        hint: "celownik po mit",
+        why: "<b>Kollegen</b>: po <i>mit</i> stoi celownik, a <i>Kollege</i> dostaje <i>-n</i>."
+      },
+      {
+        q: "Uzupełnij: „Das ist das Büro des ___.” (der Präsident)",
+        hint: "dopełniacz",
+        why: "<b>Präsidenten</b>: w dopełniaczu te rzeczowniki dostają <i>-en</i>, a nie <i>-s</i> zwykłych rzeczowników męskich."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Praktykant pomaga dziennikarzowi.",
+        why: "<i>Der Praktikant hilft dem Journalisten</i>: <i>helfen</i> łączy się z celownikiem, jak polskie <i>pomagać komuś</i>, a <i>Journalist</i> dostaje <i>-en</i>."
+      },
+      {
+        q: "Połącz każdy rzeczownik z jego znaczeniem.",
+        pairs: [
+          "klient",
+          "dostawca",
+          "praktykant",
+          "ekspert"
+        ]
+      },
+      {
+        q: "Ułóż słowa we właściwej kolejności.",
+        tr: "Poprosiliśmy eksperta o radę.",
+        why: "<i>Wir haben einen Experten um Rat gefragt.</i> <i>fragen</i> łączy się z biernikiem: <i>einen Experten</i>, z <i>-n</i>; <i>um Rat</i> znaczy „o radę”."
+      },
+      {
+        q: "Przetłumacz: „Napisałem maila do pana Müllera.”",
+        why: "<i>Ich habe Herrn Müller eine Mail geschrieben</i>: w celowniku <i>Herr</i> zmienia się w <i>Herrn</i>, a nazwisko zostaje bez zmian. Pasuje też <i>E-Mail</i>."
+      },
+      {
+        tr: "Wczoraj klient poskarżył się na dostawcę. Nasz kolega od razu oddzwonił do klienta i mu doradził.",
+        why: "W <i>beschwert</i> <b>sch</b> to <i>sz</i>; w <i>Lieferanten</i> akcent pada na <b>ran</b>; w <i>zurückgerufen</i> akcent pada na <b>rück</b>."
+      },
+      {
+        tr: "Firma zatrudnia nowego praktykanta.",
+        why: "W <i>Firma</i> <b>i</b> jest krótkie; w <i>Praktikanten</i> akcent pada na <b>kan</b>; w <i>stellt ... ein</i> partykuła <b>ein</b> idzie na koniec."
+      }
+    ]
+  },
+  "lesson:b2-u04-l2": {
+    theme: "Środowisko i technika",
+    title: "Im więcej ..., tym ...",
+    objectives: [
+      "wyrażać proporcję przez je ... desto / umso",
+      "stawiać czasownik we właściwym miejscu w obu częściach",
+      "mówić, że coś rośnie albo maleje, przez immer + stopień wyższy",
+      "rozmawiać o zużyciu, odpadach i energii"
+    ],
+    theory: [
+      {
+        h: "je ... desto, je ... umso",
+        p: "Żeby wyrazić zależność między zmianami dwóch wielkości, które mogą się zmieniać w tym samym albo w przeciwnych kierunkach, używa się <strong>je</strong> + stopień wyższy w pierwszej części i <strong>desto</strong> albo <strong>umso</strong> + stopień wyższy w drugiej. Część z <em>je</em> to zdanie podrzędne, z czasownikiem <strong>na końcu</strong>; część z <em>desto</em> to zdanie główne, a czasownik idzie <strong>zaraz po</strong> grupie ze stopniem wyższym, która może zawierać rzeczownik: <em>Je mehr wir recyceln, desto weniger Müll gibt es. Je länger man wartet, umso teurer wird es. Je mehr Autos fahren, desto schlechter wird die Luft.</em>"
+      },
+      {
+        h: "Formy krótkie i immer + stopień wyższy",
+        p: "W mowie często używa się krótkiej formy, bez czasowników: <em>Je früher, desto besser.</em> Dla stopniowej zmiany używa się <strong>immer</strong> + stopień wyższy: <em>Solarstrom wird immer billiger</em> (prąd ze słońca jest coraz tańszy), <em>Die Winter werden immer wärmer.</em>"
+      },
+      {
+        contrast: "Polskie <em>im więcej recyklingu, tym mniej śmieci</em> ma ten sam szyk w obu częściach. Niemiecki ma dwa różne słowa (<em>je ... desto</em>) i dwa różne szyki: czasownik na końcu w pierwszej części, czasownik zaraz po grupie ze stopniem wyższym w drugiej. Polskiemu <em>coraz</em> + stopień wyższy odpowiada niemieckie <em>immer</em> + stopień wyższy: <em>coraz droższy</em> = <em>immer teurer</em>."
+      },
+      {
+        trap: "Po <em>desto</em> stoi grupa ze stopniem wyższym, a zaraz po niej czasownik osobowy: <em>desto weniger Müll gibt es</em>, nie <em>desto es gibt weniger Müll</em>. Podmiot idzie po czasowniku, chyba że sam należy do tej grupy (<em>desto mehr Menschen fahren mit</em>). I <em>je</em>, i <em>desto</em> wymagają stopnia wyższego, nie zwykłego przymiotnika: <em>je länger</em>, nie <em>je lang</em>."
+      },
+      {
+        tip: "Pomyśl o zdaniu jak o dwóch połówkach, które się zazębiają: pierwsza kończy się czasownikiem (<em>... wartet,</em>), druga zaczyna się od grupy ze stopniem wyższym, a potem czasownik (<em>umso teurer wird ...</em>, <em>desto weniger Müll gibt ...</em>)."
+      }
+    ],
+    grammar: {
+      title: "je ... desto / umso",
+      note: "<b>je</b> + stopień wyższy + ... + czasownik na końcu, <b>desto / umso</b> + grupa ze stopniem wyższym (także z rzeczownikiem) + czasownik, a potem podmiot, jeśli nie należy już do tej grupy. Dla stopniowej zmiany: <b>immer</b> + stopień wyższy (<i>immer teurer</i> = coraz droższy, <i>immer billiger</i> = coraz tańszy).",
+      table: {
+        head: ["pierwsza część (je ...)", "druga część (desto / umso ...)"],
+        rows: [
+          ["Je mehr wir recyceln,", "desto weniger Müll gibt es."],
+          ["Je länger man wartet,", "umso teurer wird es."],
+          ["Je weniger Energie wir verbrauchen,", "desto besser ist es für das Klima."],
+          ["Je früher,", "desto besser."]
+        ]
+      },
+      examples: [
+        { tr: "Im więcej przetwarzamy, tym mniej jest śmieci.", note: "je + czasownik na końcu, desto + weniger Müll + czasownik" },
+        { tr: "Im dłużej się czeka, tym drożej to wychodzi.", note: "umso zamiast desto" },
+        { tr: "Im wcześniej, tym lepiej.", note: "krótka forma bez czasowników" },
+        { tr: "Im więcej jeździ samochodów, tym gorsze jest powietrze.", note: "rzeczownik stoi zaraz po stopniu wyższym" },
+        { tr: "Prąd ze słońca jest coraz tańszy.", note: "immer + stopień wyższy" },
+        { tr: "Im mniej energii zużywamy, tym lepiej dla klimatu.", note: "weniger: stopień wyższy od wenig" }
+      ]
+    },
+    vocab: [
+      "środowisko",
+      "śmieci, odpady",
+      "energia (erneuerbare Energien: energia odnawialna)",
+      "zmiana klimatu",
+      "urządzenie",
+      "emisja",
+      "chronić",
+      "zużywać",
+      "oszczędzać",
+      "rosnąć",
+      "spadać, maleć",
+      "zrównoważony, w sposób zrównoważony"
+    ],
+    exercises: [
+      {
+        q: "Jak powiesz „Im więcej czytam, tym lepiej rozumiem”?",
+        opts: [
+          "Je mehr ich lese, desto besser verstehe ich.",
+          "Je mehr ich lese, desto ich verstehe besser.",
+          "Je mehr lese ich, desto besser verstehe ich."
+        ],
+        why: "W części z <b>je</b> czasownik idzie na koniec (<i>ich lese</i>); w części z <b>desto</b> czasownik stoi zaraz po stopniu wyższym (<i>besser verstehe ich</i>)."
+      },
+      {
+        q: "Jak powiesz „Im wcześniej, tym lepiej”?",
+        opts: [
+          "Je früher, desto besser.",
+          "Je früher, so besser.",
+          "Desto früher, je besser."
+        ],
+        why: "Stała krótka forma to <b>Je früher, desto besser</b>: <i>je</i> w pierwszej części, <i>desto</i> w drugiej."
+      },
+      {
+        q: "Uzupełnij: „Je länger man wartet, ___ teurer wird es.”",
+        hint: "druga część proporcji",
+        why: "<b>desto</b> albo <b>umso</b>: oba otwierają drugą część, po nich stopień wyższy i czasownik."
+      },
+      {
+        q: "Uzupełnij: „Je mehr Autos fahren, desto schlechter ___ die Luft.” (staje się)",
+        hint: "werden, trzecia osoba",
+        why: "<b>wird</b>: po <i>desto</i> + stopień wyższy od razu idzie czasownik, potem podmiot <i>die Luft</i>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Im mniej energii zużywamy, tym lepiej dla klimatu.",
+        why: "<i>Je weniger Energie wir verbrauchen, desto besser ist es für das Klima</i>: <i>verbrauchen</i> na końcu pierwszej części, <i>ist</i> zaraz po <i>besser</i>."
+      },
+      {
+        q: "Połącz każdy czasownik z jego znaczeniem.",
+        pairs: [
+          "rosnąć",
+          "spadać, maleć",
+          "oszczędzać",
+          "chronić"
+        ]
+      },
+      {
+        q: "Ułóż słowa we właściwej kolejności.",
+        tr: "Im więcej przetwarzamy, tym mniej jest śmieci.",
+        why: "<i>Je mehr wir recyceln, desto weniger Müll gibt es.</i> <i>recyceln</i> na końcu pierwszej części, <i>gibt es</i> po <i>weniger Müll</i>."
+      },
+      {
+        q: "Przetłumacz: „Im dłużej się czeka, tym drożej to wychodzi.”",
+        why: "<i>Je länger man wartet, desto teurer wird es</i> (albo <i>umso teurer</i>). <i>Im dłużej</i> dotyczy czasu, więc <i>länger</i>; polska forma bezosobowa to <i>man</i>."
+      },
+      {
+        tr: "Im więcej ludzi jeździ na rowerze, tym czystsze jest powietrze w mieście. Poza tym oszczędzają pieniądze.",
+        why: "W <i>sauberer</i> <b>au</b> to <i>ał</i>; w <i>Außerdem</i> <b>ß</b> to bezdźwięczne <i>s</i>; w <i>Fahrrad</i> <b>h</b> wydłuża <i>a</i>."
+      },
+      {
+        tr: "Im wcześniej zaczniemy oszczędzać energię, tym lepiej dla środowiska.",
+        why: "W <i>Energie</i> akcent pada na ostatnią sylabę, <b>gie</b>, a <b>g</b> czyta się jak polskie <i>g</i>; w <i>Umwelt</i> <b>w</b> to polskie <i>w</i>; w <i>sparen</i> początkowe <b>sp</b> to <i>szp</i>."
+      }
+    ]
+  },
+  "lesson:b2-u04-l3": {
+    theme: "Dyskusje",
+    title: "Bronić swojego stanowiska",
+    objectives: [
+      "przedstawiać dwie strony przez einerseits ... andererseits",
+      "przyznawać rację w jednym punkcie przez zwar ... aber",
+      "wyrażać opinię ostrożnie (Ich würde sagen ..., Es wäre besser, wenn ...)",
+      "uprzejmie się zgadzać albo nie zgadzać"
+    ],
+    theory: [
+      {
+        h: "einerseits ... andererseits, zwar ... aber",
+        p: "Żeby przedstawić dwie strony sprawy, używa się <strong>einerseits ... andererseits</strong> (<em>z jednej strony ... z drugiej strony</em>). Oba słowa zajmują pierwsze miejsce, więc czasownik idzie zaraz po nich: <em>Einerseits ist das Homeoffice praktisch, andererseits fehlt der Kontakt zu den Kollegen.</em> Żeby przyznać rację w jednym punkcie, a potem go ograniczyć, używa się <strong>zwar ... aber</strong>: <em>Zwar ist die Technik teuer, aber sie spart Zeit.</em> Po <em>aber</em> szyk jest zwykły (<em>aber sie spart</em>)."
+      },
+      {
+        h: "Opinia wyrażona ostrożnie",
+        p: "W dyskusji <strong>Konjunktiv II</strong> sprawia, że opinia brzmi mniej ostro: <em>Ich würde sagen, dass die Vorteile überwiegen. Es wäre besser, wenn die Stadt mehr Radwege bauen würde. Man sollte das Problem anders lösen.</em> Zgoda i niezgoda: <em>Da stimme ich Ihnen zu. Da muss ich Ihnen widersprechen.</em> Opinia: <em>Meiner Ansicht nach ..., Ich bin der Meinung, dass ...</em>"
+      },
+      {
+        contrast: "Polskie <em>z jednej strony ... z drugiej strony</em> nie zmienia szyku; <em>einerseits</em> i <em>andererseits</em> tak, bo zajmują pierwsze miejsce. <em>Wprawdzie ..., ale ...</em> odpowiada <em>zwar ..., aber ...</em>, które po niemiecku jest dużo częstsze. A <em>byłoby lepiej, gdyby miasto budowało</em> to po niemiecku <em>es wäre besser, wenn die Stadt ... bauen würde</em>: tryb przypuszczający w obu częściach, jak po polsku."
+      },
+      {
+        trap: "Po <em>andererseits</em> czasownik idzie od razu: <em>andererseits fehlt der Kontakt</em>, nie <em>andererseits der Kontakt fehlt</em>. Po <em>aber</em> natomiast nie ma inwersji: <em>aber der Kontakt ist wichtig</em>, nie <em>aber ist der Kontakt wichtig</em>."
+      },
+      {
+        tip: "W debacie, zanim się nie zgodzisz, przyznaj rozmówcy rację w jednym punkcie: <em>Da haben Sie zwar recht, aber ...</em> Brzmi to bardziej przekonująco niż krótkie „nie”."
+      }
+    ],
+    grammar: {
+      title: "Spójniki debaty i Konjunktiv II",
+      note: "<b>einerseits / andererseits / zwar</b> na pierwszym miejscu: czasownik zaraz po nich. <b>aber</b>: bez inwersji. Ostrożna opinia: <b>Ich würde sagen ..., Es wäre besser, wenn ...</b>",
+      table: {
+        head: ["funkcja", "przykład"],
+        rows: [
+          ["dwie strony", "Einerseits ist es praktisch, andererseits ist es teuer."],
+          ["ustępstwo", "Zwar ist es teuer, aber es lohnt sich."],
+          ["ostrożna opinia", "Ich würde sagen, dass ..."],
+          ["propozycja", "Es wäre besser, wenn ..."],
+          ["zgoda / niezgoda", "Da stimme ich zu. / Da muss ich widersprechen."]
+        ]
+      },
+      examples: [
+        { tr: "Z jednej strony praca zdalna jest praktyczna, z drugiej brakuje kontaktu z kolegami.", note: "einerseits / andererseits: czasownik zaraz po nich" },
+        { tr: "Powiedziałbym, że przeważają zalety.", note: "würde sagen: ostrożna opinia" },
+        { tr: "Byłoby lepiej, gdyby miasto zbudowało więcej ścieżek rowerowych.", note: "es wäre besser, wenn + Konjunktiv II" },
+        { tr: "Wprawdzie ta technologia jest droga, ale oszczędza czas.", note: "zwar ... aber" },
+        { tr: "Moim zdaniem trzeba by rozwiązać ten problem inaczej.", note: "meiner Ansicht nach + sollte" },
+        { tr: "Uważam, że powinniśmy więcej inwestować.", note: "der Meinung sein, dass ..." }
+      ]
+    },
+    vocab: [
+      "zaleta",
+      "wada",
+      "zdanie, pogląd",
+      "argument",
+      "rozwiązanie",
+      "społeczeństwo",
+      "przeważać",
+      "reprezentować, bronić (stanowiska)",
+      "sprzeciwiać się, zaprzeczać (+ celownik)",
+      "zgadzać się (+ celownik)",
+      "inwestować",
+      "przekonany"
+    ],
+    exercises: [
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: [
+          "Einerseits ist es praktisch, andererseits ist es teuer.",
+          "Einerseits es ist praktisch, andererseits es ist teuer.",
+          "Einerseits ist es praktisch, andererseits es ist teuer."
+        ],
+        why: "<b>einerseits</b> i <b>andererseits</b> zajmują pierwsze miejsce, więc czasownik idzie zaraz po nich w obu częściach."
+      },
+      {
+        q: "Uzupełnij: „Es ___ besser, wenn wir mehr Radwege hätten.” (byłoby)",
+        hint: "Konjunktiv II od sein",
+        why: "<b>wäre</b>: ostrożna propozycja w Konjunktivie II, a zdanie z <i>wenn</i> też ma Konjunktiv II (<i>hätten</i>)."
+      },
+      {
+        q: "Uzupełnij: „Da stimme ich Ihnen ___.” (tu się z Panem zgadzam)",
+        hint: "partykuła od zustimmen",
+        why: "<b>zu</b>: <i>zustimmen</i> jest rozdzielny, a partykuła idzie na koniec. Łączy się z celownikiem: <i>Ihnen</i>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Wprawdzie ta technologia jest droga, ale oszczędza czas.",
+        why: "<i>Zwar ist die Technik teuer, aber sie spart Zeit</i>: po <i>zwar</i> na pierwszym miejscu czasownik idzie od razu; po <i>aber</i> szyk jest zwykły."
+      },
+      {
+        q: "Połącz każde wyrażenie z jego znaczeniem.",
+        pairs: [
+          "zaleta",
+          "wada",
+          "zgadzać się",
+          "sprzeciwiać się"
+        ]
+      },
+      {
+        q: "Ułóż słowa we właściwej kolejności.",
+        tr: "Powiedziałbym, że przeważają zalety.",
+        why: "<i>Ich würde sagen, dass die Vorteile überwiegen.</i> <i>würde ... sagen</i> w zdaniu głównym, <i>überwiegen</i> na końcu zdania z <i>dass</i>."
+      },
+      {
+        q: "Koleżanka pyta, co myślisz o pracy zdalnej.",
+        setting: "Dyskusja w biurze: widzisz zalety i wady.",
+        lines: [
+          { tr: "Co Pan myśli o pracy zdalnej?" },
+          { tr: "Odpowiedz: z jednej strony jest praktyczna, z drugiej brakuje kontaktu z kolegami.", answerTr: "Z jednej strony jest praktyczna, z drugiej brakuje kontaktu z kolegami." },
+          { tr: "To firma powinna jej zakazać?" },
+          { tr: "Odpowiedz: nie, ale byłoby lepiej, gdyby wszyscy przychodzili do biura dwa razy w tygodniu.", answerTr: "Nie, ale byłoby lepiej, gdyby wszyscy przychodzili do biura dwa razy w tygodniu." },
+          { tr: "A koszty biura?" },
+          { tr: "Odpowiedz: wprawdzie biuro kosztuje, ale kontakt jest ważny.", answerTr: "Wprawdzie biuro kosztuje, ale kontakt jest ważny." }
+        ]
+      },
+      {
+        q: "Przetłumacz: „Moim zdaniem miasto powinno więcej inwestować.”",
+        why: "<i>Meiner Meinung nach sollte die Stadt mehr investieren</i>: po <i>meiner Meinung nach</i> czasownik idzie od razu. Pasują też <i>Meiner Ansicht nach</i>, <i>Ich finde, ...</i> i <i>Ich bin der Meinung, dass ...</i> z czasownikiem na końcu."
+      },
+      {
+        tr: "Z jednej strony rozumiem argumenty przeciwników, z drugiej jestem przekonany, że musimy działać. Byłoby błędem czekać jeszcze dłużej.",
+        why: "W <i>Argumente</i> akcent pada na <b>men</b>; w <i>überzeugt</i> <b>z</b> to polskie <i>c</i>, a <b>eu</b> to [ɔʏ], podobne do <i>oj</i>; w <i>handeln</i> początkowe <b>h</b> to lekki wydech, słabszy niż polskie <i>h</i>."
+      },
+      {
+        tr: "Moim zdaniem przeważają zalety, nawet jeśli są pewne wady.",
+        why: "W <i>Ansicht</i> <b>ch</b> to [ç], podobne do <i>ś</i>; w <i>überwiegen</i> akcent pada na <b>wie</b>; w <i>Nachteile</i> <b>ch</b> po <i>a</i> to twarde polskie <i>ch</i>."
+      }
+    ]
+  },
+  "lesson:b2-u04-test": {
+    theme: "Sprawdzian",
+    title: "Test: Społeczeństwo i debata",
+    objectives: [
+      "powtórzyć jednostki 1-4: Konjunktiv II przeszły, okres warunkowy, strona bierna, n-Deklination, je ... desto"
+    ],
+    theory: [
+      {
+        p: "Dwanaście pytań z pierwszych czterech jednostek poziomu. Zaliczenie od 70%. Nie zaglądaj do lekcji, kiedy odpowiadasz: jeśli czegoś nie pamiętasz, lepiej wrócić i powtórzyć."
+      }
+    ],
+    exercises: [
+      {
+        tr: "Konjunktiv II przeszły czasownika kommen, wszystkie osoby.",
+        why: "<i>kommen</i> ma w Perfekcie <i>sein</i>: <i>wäre gekommen</i>. Dla <i>du</i> i <i>ihr</i> poprawne są i <i>wärst, wärt</i>, i <i>wärest, wäret</i>."
+      },
+      {
+        q: "Uzupełnij: „Wir ___ gern länger geblieben.” (zostalibyśmy)",
+        hint: "Konjunktiv II od sein, wir",
+        why: "<b>wären</b>: <i>bleiben</i> ma w Perfekcie <i>sein</i>."
+      },
+      {
+        q: "Uzupełnij czasownik modalny: „Du hättest mich anrufen ___.” (powinieneś był do mnie zadzwonić)",
+        hint: "sollen albo müssen, w bezokoliczniku",
+        why: "<b>sollen</b> (albo <i>müssen</i>): podwójny bezokolicznik, modalny zostaje w bezokoliczniku na końcu."
+      },
+      {
+        q: "Uzupełnij: „Wir gehen spazieren, es sei denn, es ___.” (regnen)",
+        hint: "czas teraźniejszy, tryb oznajmujący",
+        why: "<b>regnet</b>: po <i>es sei denn</i> stoi zdanie w trybie oznajmującym z czasownikiem na drugim miejscu."
+      },
+      {
+        q: "Uzupełnij: „Die Brücke ist 1990 gebaut ___.”",
+        hint: "strona bierna w Perfekcie",
+        why: "<b>worden</b>: <i>ist gebaut worden</i>."
+      },
+      {
+        q: "Uzupełnij: „Ich habe gestern mit dem ___ gesprochen.” (der Kunde)",
+        hint: "celownik po mit",
+        why: "<b>Kunden</b>: n-Deklination, <i>-n</i> w celowniku."
+      },
+      {
+        q: "Uzupełnij: „Je mehr ich lerne, ___ besser verstehe ich.”",
+        hint: "druga część proporcji",
+        why: "<b>desto</b> albo <b>umso</b>, a po nich stopień wyższy i czasownik."
+      },
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: [
+          "Er tut so, als ob er nichts wüsste.",
+          "Er tut so, als ob er wüsste nichts.",
+          "Er tut so, als er nichts wüsste."
+        ],
+        why: "Po <b>als ob</b> czasownik idzie na koniec. Z samym <i>als</i> czasownik stałby od razu: <i>als wüsste er nichts</i>."
+      },
+      {
+        q: "Jak powiesz „Problem musi zostać rozwiązany”?",
+        opts: [
+          "Das Problem muss gelöst werden.",
+          "Das Problem muss lösen werden.",
+          "Das Problem muss gelöst worden."
+        ],
+        why: "Strona bierna z modalnym: modalny + imiesłów + <b>werden</b>."
+      },
+      {
+        q: "Uzupełnij zdanie bez wenn.",
+        tr: "Gdybym miał wtedy więcej czasu, poszedłbym z wami.",
+        why: "<i>Hätte ich mehr Zeit gehabt, wäre ich mitgekommen</i>: czasownik na początku, Konjunktiv II przeszły w obu częściach."
+      },
+      {
+        q: "Przetłumacz: „Mogliśmy wyjechać wcześniej.” (ale tego nie zrobiliśmy)",
+        why: "<i>Wir hätten früher losfahren können</i>: podwójny bezokolicznik z <i>hätten</i>. Pasują też <i>abfahren</i> i <i>aufbrechen</i>."
+      },
+      {
+        tr: "Z jednej strony miasto jest drogie, z drugiej jest tam dużo pracy.",
+        why: "W <i>einerseits</i> akcent pada na <b>ei</b>; w <i>andererseits</i> <b>r</b> na końcu sylaby prawie nie słychać; w <i>Jobs</i> <b>J</b> czyta się jak w angielskim, <i>dż</i>."
+      }
+    ]
   }
 });

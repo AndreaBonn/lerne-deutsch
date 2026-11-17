@@ -1370,7 +1370,7 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "What the n-Deklination is",
-        p: "A group of <strong>masculine</strong> nouns takes <strong>-n</strong> or <strong>-en</strong> in every case except the nominative singular: <em>der Kunde, den Kunden, dem Kunden, des Kunden</em>. They are mostly masculines in <strong>-e</strong> for people or animals (<em>der Kollege, der Experte, der Junge</em>) and masculines of foreign origin in <strong>-ent, -ant, -ist, -at, -oge</strong> (<em>der Präsident, der Praktikant, der Lieferant, der Journalist</em>). These nouns form their plural in <em>-n</em> or <em>-en</em>: <em>die Kunden, die Präsidenten</em>."
+        p: "A group of <strong>masculine</strong> nouns takes <strong>-n</strong> or <strong>-en</strong> in every case except the nominative singular: <em>der Kunde, den Kunden, dem Kunden, des Kunden</em>. They are mostly masculines in <strong>-e</strong> for people or animals (<em>der Kollege, der Experte, der Junge</em>) and many masculines of foreign origin in <strong>-ent, -ant, -ist, -at, -oge</strong> (<em>der Präsident, der Praktikant, der Lieferant, der Journalist</em>). These endings are clues, not a rule: <em>der Moment, des Moments</em> and <em>der Akzent, des Akzents</em> are ordinary, so check the genitive of each noun. These nouns form their plural in <em>-n</em> or <em>-en</em>: <em>die Kunden, die Präsidenten</em>."
       },
       {
         h: "Herr, Herrn",
@@ -1388,7 +1388,7 @@ LINGUAI.addStrings("en", {
     ],
     grammar: {
       title: "The n-Deklination",
-      note: "Masculines in <b>-e</b> (people, animals) and foreign masculines in <b>-ent, -ant, -ist, -at, -oge</b>: <b>-n / -en</b> in every case except the nominative singular. Also <b>Herr → Herrn</b>.",
+      note: "Masculines in <b>-e</b> (people, animals) and many foreign masculines in <b>-ent, -ant, -ist, -at, -oge</b> (check the genitive): <b>-n / -en</b> in every case except the nominative singular. Also <b>Herr → Herrn</b>.",
       table: {
         head: ["", "der Kunde", "der Präsident", "der Herr"],
         rows: [
@@ -1596,7 +1596,7 @@ LINGUAI.addStrings("en", {
         why: "<i>Je mehr wir recyceln, desto weniger Müll gibt es.</i> <i>recyceln</i> at the end of the first half, <i>gibt es</i> after <i>weniger Müll</i>."
       },
       {
-        q: "Translate: “The longer you wait, the more expensive it gets.”",
+        q: "Translate with man: “The longer you wait, the more expensive it gets.”",
         why: "<i>Je länger man wartet, desto teurer wird es</i> (or <i>umso teurer</i>). <i>The longer</i> is about time, so <i>länger</i>; general <i>you</i> is <i>man</i>."
       },
       {
@@ -1808,7 +1808,7 @@ LINGUAI.addStrings("en", {
         why: "<i>Hätte ich mehr Zeit gehabt, wäre ich mitgekommen</i>: verb first, past Konjunktiv II in both halves."
       },
       {
-        q: "Translate: “We could have left earlier.”",
+        q: "Translate: “We could have set off earlier.”",
         why: "<i>Wir hätten früher losfahren können</i>: double infinitive with <i>hätten</i>. <i>abfahren</i> and <i>aufbrechen</i> also work."
       },
       {

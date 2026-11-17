@@ -1353,5 +1353,468 @@ LINGUAI.addStrings("fr", {
         why: "Dans <i>diskutieren</i>, l'accent tombe sur <b>tie</b> ; dans <i>Problem</i>, l'accent tombe sur <b>blem</b> ; dans <i>gelöst</i>, le <b>ö</b> est long, proche du <i>eu</i> de <i>peu</i>."
       }
     ]
+  },
+  "unit:b2-u04": {
+    title: "Société et débat",
+    grammarNote: "déclinaison faible des masculins (der Kunde, den Kunden, des Kunden) · je ... desto / umso, immer + comparatif · einerseits ... andererseits, zwar ... aber · défendre une position au Konjunktiv II (Ich würde sagen ..., Es wäre besser, wenn ...)"
+  },
+  "lesson:b2-u04-l1": {
+    theme: "Économie et travail",
+    title: "Le client, du client",
+    objectives: [
+      "reconnaître les masculins de la déclinaison faible",
+      "ajouter -n ou -en à tous les cas sauf au nominatif singulier",
+      "employer Herr et Herrn dans les lettres et les courriels",
+      "parler de clients, de collègues et de fournisseurs"
+    ],
+    theory: [
+      {
+        h: "Qu'est-ce que la n-Deklination",
+        p: "Un groupe de noms <strong>masculins</strong> prend <strong>-n</strong> ou <strong>-en</strong> à tous les cas sauf au nominatif singulier : <em>der Kunde, den Kunden, dem Kunden, des Kunden</em>. Ce sont surtout des masculins en <strong>-e</strong> désignant des personnes ou des animaux (<em>der Kollege, der Experte, der Junge</em>) et des masculins d'origine étrangère en <strong>-ent, -ant, -ist, -at, -oge</strong> (<em>der Präsident, der Praktikant, der Lieferant, der Journalist</em>). Ces noms forment leur pluriel en <em>-n</em> ou <em>-en</em> : <em>die Kunden, die Präsidenten</em>."
+      },
+      {
+        h: "Herr, Herrn",
+        p: "<strong>Herr</strong> suit aussi cette déclinaison, avec <em>-n</em> au singulier et <em>-en</em> au pluriel. On le voit sans cesse dans les lettres et les courriels : <em>Sehr geehrter Herr Müller</em> (nominatif, dans la formule d'appel), mais <em>Ich habe Herrn Müller eine Mail geschrieben</em> (datif) et <em>Kennen Sie Herrn Müller?</em> (accusatif). <em>Meine Damen und Herren</em> est le pluriel."
+      },
+      {
+        contrast: "Le français ne marque pas le cas sur le nom : <em>le client</em>, <em>Monsieur Müller</em> ne changent pas, qu'ils soient sujet, complément ou après une préposition. Ces masculins allemands changent, et le <em>-n</em> ressemble à un pluriel : <em>den Kunden</em> peut être un client (accusatif singulier) ou les clients (datif pluriel), avec le même article. C'est le cas exigé par le verbe qui tranche : <em>Ich rufe den Kunden an</em> (un client, accusatif), <em>Ich helfe den Kunden</em> (les clients, datif pluriel)."
+      },
+      {
+        trap: "L'erreur la plus fréquente est d'oublier la terminaison : <em>Ich frage den Student</em> au lieu de <em>den Studenten</em>, <em>mit dem Kollege</em> au lieu de <em>mit dem Kollegen</em>. Les féminins ne suivent pas cette déclinaison (<em>die Kundin, der Kundin</em>), et tous les masculins non plus : <em>der Lehrer, den Lehrer</em>."
+      },
+      {
+        tip: "Quand vous apprenez un masculin désignant une personne, regardez le génitif dans le dictionnaire : <em>der Kunde, -n, -n</em> signifie génitif <em>des Kunden</em>, pluriel <em>die Kunden</em>, et c'est le signe de la déclinaison faible."
+      }
+    ],
+    grammar: {
+      title: "La n-Deklination",
+      note: "Masculins en <b>-e</b> (personnes, animaux) et masculins étrangers en <b>-ent, -ant, -ist, -at, -oge</b> : <b>-n / -en</b> à tous les cas sauf au nominatif singulier. Aussi <b>Herr → Herrn</b>.",
+      table: {
+        head: ["", "der Kunde", "der Präsident", "der Herr"],
+        rows: [
+          ["nominatif", "der Kunde", "der Präsident", "der Herr"],
+          ["accusatif", "den Kunden", "den Präsidenten", "den Herrn"],
+          ["datif", "dem Kunden", "dem Präsidenten", "dem Herrn"],
+          ["génitif", "des Kunden", "des Präsidenten", "des Herrn"],
+          ["pluriel", "die Kunden", "die Präsidenten", "die Herren"]
+        ]
+      },
+      examples: [
+        { tr: "Le client s'est plaint.", note: "nominatif : sans -n" },
+        { tr: "Nous avons appelé le client tout de suite.", note: "accusatif : den Kunden" },
+        { tr: "Je parle demain avec mon collègue.", note: "datif après mit : dem Kollegen" },
+        { tr: "C'est le bureau du président.", note: "génitif : des Präsidenten, sans -s" },
+        { tr: "Le stagiaire aide le journaliste.", note: "helfen + datif : dem Journalisten" },
+        { tr: "J'ai écrit un courriel à M. Müller.", note: "Herrn au datif" }
+      ]
+    },
+    vocab: [
+      "le client",
+      "le collègue",
+      "le stagiaire",
+      "le président",
+      "le fournisseur",
+      "l'expert",
+      "l'entreprise, la société",
+      "le chiffre d'affaires",
+      "la commande, la mission (d'un client)",
+      "se plaindre (über + accusatif : de)",
+      "conseiller",
+      "embaucher"
+    ],
+    exercises: [
+      {
+        q: "Comment dit-on « J'ai appelé le client » ?",
+        opts: [
+          "Ich habe den Kunden angerufen.",
+          "Ich habe den Kunde angerufen.",
+          "Ich habe dem Kunden angerufen."
+        ],
+        why: "<i>anrufen</i> se construit avec l'accusatif, et <i>Kunde</i> prend <b>-n</b> : <b>den Kunden</b>. La troisième emploie le datif, que <i>anrufen</i> n'exige pas."
+      },
+      {
+        q: "Quel nom suit la déclinaison faible (den ...-en) ?",
+        opts: [
+          "der Student",
+          "der Lehrer",
+          "die Studentin"
+        ],
+        why: "<b>der Student</b> est un masculin étranger en <i>-ent</i> : <i>den Studenten</i>. <i>der Lehrer</i> fait <i>den Lehrer</i> ; les féminins ne suivent pas cette déclinaison."
+      },
+      {
+        q: "Complétez : « Ich spreche morgen mit dem ___. » (der Kollege)",
+        hint: "datif après mit",
+        why: "<b>Kollegen</b> : après <i>mit</i> vient le datif, et <i>Kollege</i> prend <i>-n</i>."
+      },
+      {
+        q: "Complétez : « Das ist das Büro des ___. » (der Präsident)",
+        hint: "génitif",
+        why: "<b>Präsidenten</b> : au génitif, ces noms prennent <i>-en</i> et non le <i>-s</i> des masculins ordinaires."
+      },
+      {
+        q: "Complétez la phrase avec der Journalist.",
+        tr: "Le stagiaire aide le journaliste.",
+        why: "<i>Der Praktikant hilft dem Journalisten</i> : <i>helfen</i> se construit avec le datif, et <i>Journalist</i> prend <i>-en</i>."
+      },
+      {
+        q: "Associez chaque nom à son sens.",
+        pairs: [
+          "le client",
+          "le fournisseur",
+          "le stagiaire",
+          "l'expert"
+        ]
+      },
+      {
+        q: "Remettez les mots dans l'ordre.",
+        tr: "Nous avons demandé conseil à un expert.",
+        why: "<i>Wir haben einen Experten um Rat gefragt.</i> <i>fragen</i> se construit avec l'accusatif : <i>einen Experten</i>, avec <i>-n</i> ; <i>um Rat</i> signifie « un conseil »."
+      },
+      {
+        q: "Traduisez : « J'ai écrit un courriel à M. Müller. »",
+        why: "<i>Ich habe Herrn Müller eine Mail geschrieben</i> : au datif, <i>Herr</i> devient <i>Herrn</i>. <i>E-Mail</i> convient aussi."
+      },
+      {
+        tr: "Hier, un client s'est plaint du fournisseur. Notre collègue a rappelé le client tout de suite et l'a conseillé.",
+        why: "Dans <i>beschwert</i>, le <b>sch</b> se prononce <i>ch</i> ; dans <i>Lieferanten</i>, l'accent tombe sur <b>ran</b> ; dans <i>zurückgerufen</i>, l'accent tombe sur <b>rück</b>."
+      },
+      {
+        tr: "L'entreprise embauche un nouveau stagiaire.",
+        why: "Dans <i>Firma</i>, le <b>i</b> est bref ; dans <i>Praktikanten</i>, l'accent tombe sur <b>kan</b> ; dans <i>stellt ... ein</i>, la particule <b>ein</b> va à la fin."
+      }
+    ]
+  },
+  "lesson:b2-u04-l2": {
+    theme: "Environnement et technique",
+    title: "Plus ..., plus ...",
+    objectives: [
+      "exprimer une proportion avec je ... desto / umso",
+      "placer le verbe correctement dans les deux parties",
+      "dire que quelque chose augmente ou diminue avec immer + comparatif",
+      "parler de consommation, de déchets et d'énergie"
+    ],
+    theory: [
+      {
+        h: "je ... desto, je ... umso",
+        p: "Pour dire que deux choses augmentent ou diminuent ensemble, on emploie <strong>je</strong> + comparatif dans la première partie et <strong>desto</strong> ou <strong>umso</strong> + comparatif dans la seconde. La partie en <em>je</em> est une subordonnée, verbe <strong>à la fin</strong> ; la partie en <em>desto</em> est la principale, et le verbe vient <strong>juste après</strong> le groupe du comparatif, qui peut contenir un nom : <em>Je mehr wir recyceln, desto weniger Müll gibt es. Je länger man wartet, umso teurer wird es. Je mehr Autos fahren, desto schlechter wird die Luft.</em>"
+      },
+      {
+        h: "Formes brèves et immer + comparatif",
+        p: "À l'oral, on emploie souvent la forme brève, sans verbe : <em>Je früher, desto besser.</em> Pour une progression continue, on emploie <strong>immer</strong> + comparatif : <em>Solarstrom wird immer billiger</em> (devient de moins en moins cher), <em>Die Winter werden immer wärmer.</em>"
+      },
+      {
+        contrast: "Le français dit <em>plus nous recyclons, moins il y a de déchets</em>, avec l'ordre normal dans les deux parties. L'allemand emploie deux mots différents (<em>je ... desto</em>) et deux ordres différents : verbe à la fin dans la première partie, verbe juste après le groupe du comparatif dans la seconde. Et <em>de plus en plus cher</em> ne se calque pas : on dit <em>immer teurer</em>."
+      },
+      {
+        trap: "Après <em>desto</em> ne vient pas le sujet : <em>desto weniger Müll gibt es</em>, et non <em>desto es gibt weniger Müll</em>. Et <em>je</em> et <em>desto</em> exigent un comparatif, pas l'adjectif simple : <em>je länger</em>, et non <em>je lang</em>."
+      },
+      {
+        tip: "Voyez la phrase comme deux moitiés emboîtées : la première se termine par le verbe (<em>... wartet,</em>), la seconde commence par le groupe du comparatif puis le verbe (<em>umso teurer wird ...</em>, <em>desto weniger Müll gibt ...</em>)."
+      }
+    ],
+    grammar: {
+      title: "je ... desto / umso",
+      note: "<b>je</b> + comparatif + ... + verbe à la fin, <b>desto / umso</b> + groupe du comparatif (éventuellement avec un nom) + verbe + sujet. Pour une progression continue : <b>immer</b> + comparatif.",
+      table: {
+        head: ["première partie (je ...)", "seconde partie (desto / umso ...)"],
+        rows: [
+          ["Je mehr wir recyceln,", "desto weniger Müll gibt es."],
+          ["Je länger man wartet,", "umso teurer wird es."],
+          ["Je weniger Energie wir verbrauchen,", "desto besser ist es für das Klima."],
+          ["Je früher,", "desto besser."]
+        ]
+      },
+      examples: [
+        { tr: "Plus nous recyclons, moins il y a de déchets.", note: "je + verbe à la fin, desto + weniger Müll + verbe" },
+        { tr: "Plus on attend, plus ça coûte cher.", note: "umso à la place de desto" },
+        { tr: "Le plus tôt sera le mieux.", note: "forme brève sans verbe" },
+        { tr: "Plus il y a de voitures, plus l'air devient mauvais.", note: "le nom suit directement le comparatif" },
+        { tr: "L'électricité solaire devient de moins en moins chère.", note: "immer + comparatif" },
+        { tr: "Moins nous consommons d'énergie, mieux c'est pour le climat.", note: "weniger : comparatif de wenig" }
+      ]
+    },
+    vocab: [
+      "l'environnement",
+      "les déchets, les ordures",
+      "l'énergie (erneuerbare Energien : énergies renouvelables)",
+      "le changement climatique",
+      "l'appareil",
+      "l'émission",
+      "protéger",
+      "consommer",
+      "économiser",
+      "monter, augmenter",
+      "baisser, diminuer",
+      "durable, de façon durable"
+    ],
+    exercises: [
+      {
+        q: "Comment dit-on « Plus je lis, mieux je comprends » ?",
+        opts: [
+          "Je mehr ich lese, desto besser verstehe ich.",
+          "Je mehr ich lese, desto ich verstehe besser.",
+          "Je mehr lese ich, desto besser verstehe ich."
+        ],
+        why: "Dans la partie en <b>je</b>, le verbe va à la fin (<i>ich lese</i>) ; dans la partie en <b>desto</b>, le verbe vient juste après le comparatif (<i>besser verstehe ich</i>)."
+      },
+      {
+        q: "Comment dit-on « Le plus tôt sera le mieux » ?",
+        opts: [
+          "Je früher, desto besser.",
+          "Je früher, so besser.",
+          "Desto früher, je besser."
+        ],
+        why: "La forme brève figée est <b>Je früher, desto besser</b> : <i>je</i> dans la première partie, <i>desto</i> dans la seconde."
+      },
+      {
+        q: "Complétez : « Je länger man wartet, ___ teurer wird es. »",
+        hint: "seconde partie de la proportion",
+        why: "<b>desto</b> ou <b>umso</b> : les deux ouvrent la seconde partie, suivis du comparatif et du verbe."
+      },
+      {
+        q: "Complétez : « Je mehr Autos fahren, desto schlechter ___ die Luft. » (devient)",
+        hint: "werden, troisième personne",
+        why: "<b>wird</b> : après <i>desto</i> + comparatif vient tout de suite le verbe, puis le sujet <i>die Luft</i>."
+      },
+      {
+        q: "Complétez la phrase avec verbrauchen et sein.",
+        tr: "Moins nous consommons d'énergie, mieux c'est pour le climat.",
+        why: "<i>Je weniger Energie wir verbrauchen, desto besser ist es für das Klima</i> : <i>verbrauchen</i> à la fin de la première partie, <i>ist</i> juste après <i>besser</i>."
+      },
+      {
+        q: "Associez chaque verbe à son sens.",
+        pairs: [
+          "monter, augmenter",
+          "baisser, diminuer",
+          "économiser",
+          "protéger"
+        ]
+      },
+      {
+        q: "Remettez les mots dans l'ordre.",
+        tr: "Plus nous recyclons, moins il y a de déchets.",
+        why: "<i>Je mehr wir recyceln, desto weniger Müll gibt es.</i> <i>recyceln</i> à la fin de la première partie, <i>gibt es</i> après <i>weniger Müll</i>."
+      },
+      {
+        q: "Traduisez : « Plus on attend, plus ça coûte cher. »",
+        why: "<i>Je länger man wartet, desto teurer wird es</i> (ou <i>umso teurer</i>). <i>Plus on attend</i> concerne la durée, donc <i>länger</i> ; le <i>on</i> français devient <i>man</i>."
+      },
+      {
+        tr: "Plus il y a de gens à vélo, plus l'air de la ville devient propre. En plus, ils économisent de l'argent.",
+        why: "Dans <i>sauberer</i>, le <b>au</b> se prononce <i>aou</i> ; dans <i>Außerdem</i>, le <b>ß</b> est un <i>s</i> sourd ; dans <i>Fahrrad</i>, le <b>h</b> allonge le <i>a</i>."
+      },
+      {
+        tr: "Plus tôt nous économisons l'énergie, mieux c'est pour l'environnement.",
+        why: "Dans <i>Energie</i>, l'accent tombe sur la dernière syllabe, <b>gie</b>, et le <b>g</b> est dur, comme dans <i>gare</i> ; dans <i>Umwelt</i>, le <b>w</b> se prononce [v] ; dans <i>sparen</i>, le <b>sp</b> initial se prononce <i>chp</i>."
+      }
+    ]
+  },
+  "lesson:b2-u04-l3": {
+    theme: "Discussions",
+    title: "Défendre une position",
+    objectives: [
+      "présenter deux aspects avec einerseits ... andererseits",
+      "concéder un point avec zwar ... aber",
+      "exprimer une opinion avec prudence (Ich würde sagen ..., Es wäre besser, wenn ...)",
+      "approuver ou contredire poliment"
+    ],
+    theory: [
+      {
+        h: "einerseits ... andererseits, zwar ... aber",
+        p: "Pour présenter les deux faces d'une question, on emploie <strong>einerseits ... andererseits</strong> (<em>d'un côté ... de l'autre</em>). Les deux mots occupent la première place, le verbe vient donc juste après : <em>Einerseits ist das Homeoffice praktisch, andererseits fehlt der Kontakt zu den Kollegen.</em> Pour concéder un point puis le nuancer, on emploie <strong>zwar ... aber</strong> : <em>Zwar ist die Technik teuer, aber sie spart Zeit.</em> Après <em>aber</em>, l'ordre est normal (<em>aber sie spart</em>)."
+      },
+      {
+        h: "Une opinion formulée avec prudence",
+        p: "Dans une discussion, le <strong>Konjunktiv II</strong> rend l'opinion moins abrupte : <em>Ich würde sagen, dass die Vorteile überwiegen. Es wäre besser, wenn die Stadt mehr Radwege bauen würde. Man sollte das Problem anders lösen.</em> Pour approuver ou contredire : <em>Da stimme ich Ihnen zu. Da muss ich Ihnen widersprechen.</em> Pour donner son avis : <em>Meiner Ansicht nach ..., Ich bin der Meinung, dass ...</em>"
+      },
+      {
+        contrast: "<em>D'un côté ... de l'autre</em> ne change pas l'ordre des mots en français ; <em>einerseits</em> et <em>andererseits</em> si, car ils occupent la première place. <em>Certes ..., mais ...</em> correspond à <em>zwar ..., aber ...</em>, beaucoup plus fréquent en allemand. Et <em>il vaudrait mieux que la ville construise</em>, avec le subjonctif, devient <em>es wäre besser, wenn die Stadt ... bauen würde</em>, avec le Konjunktiv II dans les deux parties."
+      },
+      {
+        trap: "Après <em>andererseits</em>, le verbe vient tout de suite : <em>andererseits fehlt der Kontakt</em>, et non <em>andererseits der Kontakt fehlt</em>. Après <em>aber</em>, en revanche, pas d'inversion : <em>aber der Kontakt ist wichtig</em>, et non <em>aber ist der Kontakt wichtig</em>."
+      },
+      {
+        tip: "Dans un débat, avant de contredire, reconnaissez un point de l'autre : <em>Da haben Sie zwar recht, aber ...</em> C'est plus convaincant qu'un non sec."
+      }
+    ],
+    grammar: {
+      title: "Connecteurs du débat et Konjunktiv II",
+      note: "<b>einerseits / andererseits / zwar</b> en première place : verbe juste après. <b>aber</b> : pas d'inversion. Opinion prudente : <b>Ich würde sagen ..., Es wäre besser, wenn ...</b>",
+      table: {
+        head: ["fonction", "exemple"],
+        rows: [
+          ["deux aspects", "Einerseits ist es praktisch, andererseits ist es teuer."],
+          ["concession", "Zwar ist es teuer, aber es lohnt sich."],
+          ["opinion prudente", "Ich würde sagen, dass ..."],
+          ["proposition", "Es wäre besser, wenn ..."],
+          ["accord / désaccord", "Da stimme ich zu. / Da muss ich widersprechen."]
+        ]
+      },
+      examples: [
+        { tr: "D'un côté, le télétravail est pratique ; de l'autre, le contact avec les collègues manque.", note: "einerseits / andererseits : verbe juste après" },
+        { tr: "Je dirais que les avantages l'emportent.", note: "würde sagen : opinion prudente" },
+        { tr: "Il vaudrait mieux que la ville construise plus de pistes cyclables.", note: "es wäre besser, wenn + Konjunktiv II" },
+        { tr: "Certes, la technique est chère, mais elle fait gagner du temps.", note: "zwar ... aber" },
+        { tr: "À mon avis, il faudrait résoudre le problème autrement.", note: "meiner Ansicht nach + sollte" },
+        { tr: "Je suis d'avis que nous devrions investir davantage.", note: "der Meinung sein, dass ..." }
+      ]
+    },
+    vocab: [
+      "l'avantage",
+      "l'inconvénient",
+      "l'avis, l'opinion",
+      "l'argument",
+      "la solution",
+      "la société",
+      "l'emporter, prédominer",
+      "défendre (une position), représenter",
+      "contredire (+ datif)",
+      "approuver, être d'accord (+ datif)",
+      "investir",
+      "convaincu"
+    ],
+    exercises: [
+      {
+        q: "Quelle phrase est correcte ?",
+        opts: [
+          "Einerseits ist es praktisch, andererseits ist es teuer.",
+          "Einerseits es ist praktisch, andererseits es ist teuer.",
+          "Einerseits ist es praktisch, andererseits es ist teuer."
+        ],
+        why: "<b>einerseits</b> et <b>andererseits</b> occupent la première place, le verbe vient donc juste après dans les deux parties."
+      },
+      {
+        q: "Complétez : « Es ___ besser, wenn wir mehr Radwege hätten. » (ce serait)",
+        hint: "Konjunktiv II de sein",
+        why: "<b>wäre</b> : une proposition prudente au Konjunktiv II, et la proposition en <i>wenn</i> est elle aussi au Konjunktiv II (<i>hätten</i>)."
+      },
+      {
+        q: "Complétez : « Da stimme ich Ihnen ___. » (là, je suis d'accord avec vous)",
+        hint: "particule de zustimmen",
+        why: "<b>zu</b> : <i>zustimmen</i> est séparable, et la particule va à la fin. Il se construit avec le datif : <i>Ihnen</i>."
+      },
+      {
+        q: "Complétez la phrase.",
+        tr: "Certes, la technique est chère, mais elle fait gagner du temps.",
+        why: "<i>Zwar ist die Technik teuer, aber sie spart Zeit</i> : après <i>zwar</i> en première place, le verbe vient tout de suite ; après <i>aber</i>, l'ordre est normal."
+      },
+      {
+        q: "Associez chaque expression à son sens.",
+        pairs: [
+          "l'avantage",
+          "l'inconvénient",
+          "approuver, être d'accord",
+          "contredire"
+        ]
+      },
+      {
+        q: "Remettez les mots dans l'ordre.",
+        tr: "Je dirais que les avantages l'emportent.",
+        why: "<i>Ich würde sagen, dass die Vorteile überwiegen.</i> <i>würde ... sagen</i> dans la principale, <i>überwiegen</i> à la fin de la proposition en <i>dass</i>."
+      },
+      {
+        q: "Une collègue vous demande ce que vous pensez du télétravail.",
+        setting: "Discussion au bureau : vous voyez des avantages et des inconvénients.",
+        lines: [
+          { tr: "Que pensez-vous du télétravail ?" },
+          { tr: "Répondez : d'un côté c'est pratique, de l'autre le contact avec les collègues manque.", answerTr: "D'un côté c'est pratique, de l'autre le contact avec les collègues manque." },
+          { tr: "L'entreprise devrait donc l'interdire ?" },
+          { tr: "Répondez : non, mais il vaudrait mieux que tout le monde vienne au bureau deux fois par semaine.", answerTr: "Non, mais il vaudrait mieux que tout le monde vienne au bureau deux fois par semaine." },
+          { tr: "Et le coût du bureau ?" },
+          { tr: "Répondez : certes, le bureau coûte de l'argent, mais le contact est important.", answerTr: "Certes, le bureau coûte de l'argent, mais le contact est important." }
+        ]
+      },
+      {
+        q: "Traduisez : « À mon avis, la ville devrait investir davantage. »",
+        why: "<i>Meiner Meinung nach sollte die Stadt mehr investieren</i> : après <i>meiner Meinung nach</i>, le verbe vient tout de suite. <i>Meiner Ansicht nach</i>, <i>Ich finde, ...</i> et <i>Ich bin der Meinung, dass ...</i>, verbe à la fin, conviennent aussi."
+      },
+      {
+        tr: "D'un côté, je comprends les arguments des opposants ; de l'autre, je suis convaincu que nous devons agir. Ce serait une erreur d'attendre plus longtemps.",
+        why: "Dans <i>Argumente</i>, l'accent tombe sur <b>men</b> ; dans <i>überzeugt</i>, le <b>z</b> se prononce [ts] et le <b>eu</b> [ɔʏ] ; dans <i>handeln</i>, le <b>h</b> initial s'entend, c'est un souffle."
+      },
+      {
+        tr: "À mon avis, les avantages l'emportent, même s'il y a quelques inconvénients.",
+        why: "Dans <i>Ansicht</i>, le <b>ch</b> est [ç] ; dans <i>überwiegen</i>, l'accent tombe sur <b>wie</b> ; dans <i>Nachteile</i>, le <b>ch</b> après <i>a</i> est [x], au fond de la gorge."
+      }
+    ]
+  },
+  "lesson:b2-u04-test": {
+    theme: "Évaluation",
+    title: "Test : Société et débat",
+    objectives: [
+      "réviser les unités 1-4 : Konjunktiv II passé, système hypothétique, passif, n-Deklination, je ... desto"
+    ],
+    theory: [
+      {
+        p: "Douze questions sur les quatre premières unités du niveau. On réussit avec 70 %. Ne regardez pas les leçons pendant que vous répondez : si vous ne vous souvenez plus de quelque chose, mieux vaut retourner réviser."
+      }
+    ],
+    exercises: [
+      {
+        tr: "Le Konjunktiv II passé de kommen, à toutes les personnes.",
+        why: "<i>kommen</i> prend <i>sein</i> au Perfekt : <i>wäre gekommen</i>. Pour <i>du</i> et <i>ihr</i>, <i>wärst, wärt</i> et <i>wärest, wäret</i> sont également corrects."
+      },
+      {
+        q: "Complétez : « Wir ___ gern länger geblieben. » (nous serions restés)",
+        hint: "Konjunktiv II de sein, wir",
+        why: "<b>wären</b> : <i>bleiben</i> prend <i>sein</i> au Perfekt."
+      },
+      {
+        q: "Complétez avec le modal : « Du hättest mich anrufen ___. » (tu aurais dû)",
+        hint: "devoir, à l'infinitif",
+        why: "<b>sollen</b> (ou <i>müssen</i>) : double infinitif, le modal reste à l'infinitif à la fin."
+      },
+      {
+        q: "Complétez : « Wir gehen spazieren, es sei denn, es ___. » (regnen)",
+        hint: "présent de l'indicatif",
+        why: "<b>regnet</b> : après <i>es sei denn</i> vient une proposition à l'indicatif, verbe en deuxième position."
+      },
+      {
+        q: "Complétez : « Die Brücke ist 1990 gebaut ___. »",
+        hint: "passif au Perfekt",
+        why: "<b>worden</b> : <i>ist gebaut worden</i>."
+      },
+      {
+        q: "Complétez : « Ich habe gestern mit dem ___ gesprochen. » (der Kunde)",
+        hint: "datif après mit",
+        why: "<b>Kunden</b> : n-Deklination, <i>-n</i> au datif."
+      },
+      {
+        q: "Complétez : « Je mehr ich lerne, ___ besser verstehe ich. »",
+        hint: "seconde partie de la proportion",
+        why: "<b>desto</b> ou <b>umso</b>, suivis du comparatif et du verbe."
+      },
+      {
+        q: "Quelle phrase est correcte ?",
+        opts: [
+          "Er tut so, als ob er nichts wüsste.",
+          "Er tut so, als ob er wüsste nichts.",
+          "Er tut so, als er nichts wüsste."
+        ],
+        why: "Après <b>als ob</b>, le verbe va à la fin. Avec <i>als</i> seul, le verbe viendrait tout de suite : <i>als wüsste er nichts</i>."
+      },
+      {
+        q: "Comment dit-on « Le problème doit être résolu » ?",
+        opts: [
+          "Das Problem muss gelöst werden.",
+          "Das Problem muss lösen werden.",
+          "Das Problem muss gelöst worden."
+        ],
+        why: "Passif avec un modal : modal + participe + <b>werden</b>."
+      },
+      {
+        q: "Complétez la phrase sans wenn.",
+        tr: "Si j'avais eu plus de temps, je serais venu avec vous.",
+        why: "<i>Hätte ich mehr Zeit gehabt, wäre ich mitgekommen</i> : verbe en tête, Konjunktiv II passé dans les deux parties."
+      },
+      {
+        q: "Traduisez : « Nous aurions pu partir plus tôt. »",
+        why: "<i>Wir hätten früher losfahren können</i> : double infinitif avec <i>hätten</i>. <i>abfahren</i> et <i>aufbrechen</i> conviennent aussi."
+      },
+      {
+        tr: "D'un côté, la ville est chère ; de l'autre, il y a beaucoup d'emplois.",
+        why: "Dans <i>einerseits</i>, l'accent tombe sur <b>ei</b> ; dans <i>andererseits</i>, le <b>r</b> en fin de syllabe s'entend à peine ; dans <i>Jobs</i>, le <b>J</b> se prononce comme en anglais."
+      }
+    ]
   }
 });

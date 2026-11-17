@@ -1370,7 +1370,7 @@ LINGUAI.addStrings("es", {
     theory: [
       {
         h: "Qué es la n-Deklination",
-        p: "Un grupo de sustantivos <strong>masculinos</strong> toma <strong>-n</strong> o <strong>-en</strong> en todos los casos menos en el nominativo singular: <em>der Kunde, den Kunden, dem Kunden, des Kunden</em>. Son sobre todo masculinos en <strong>-e</strong> que designan personas o animales (<em>der Kollege, der Experte, der Junge</em>) y masculinos de origen extranjero en <strong>-ent, -ant, -ist, -at, -oge</strong> (<em>der Präsident, der Praktikant, der Lieferant, der Journalist</em>). Estos sustantivos forman el plural en <em>-n</em> o <em>-en</em>: <em>die Kunden, die Präsidenten</em>."
+        p: "Un grupo de sustantivos <strong>masculinos</strong> toma <strong>-n</strong> o <strong>-en</strong> en todos los casos menos en el nominativo singular: <em>der Kunde, den Kunden, dem Kunden, des Kunden</em>. Son sobre todo masculinos en <strong>-e</strong> que designan personas o animales (<em>der Kollege, der Experte, der Junge</em>) y muchos masculinos de origen extranjero en <strong>-ent, -ant, -ist, -at, -oge</strong> (<em>der Präsident, der Praktikant, der Lieferant, der Journalist</em>). Estas terminaciones son indicios, no una regla: <em>der Kontinent, des Kontinents</em> y <em>der Apparat, des Apparats</em> son normales, así que conviene comprobar el genitivo de cada sustantivo. Estos sustantivos forman el plural en <em>-n</em> o <em>-en</em>: <em>die Kunden, die Präsidenten</em>."
       },
       {
         h: "Herr, Herrn",
@@ -1388,7 +1388,7 @@ LINGUAI.addStrings("es", {
     ],
     grammar: {
       title: "La n-Deklination",
-      note: "Masculinos en <b>-e</b> (personas, animales) y masculinos extranjeros en <b>-ent, -ant, -ist, -at, -oge</b>: <b>-n / -en</b> en todos los casos menos el nominativo singular. También <b>Herr → Herrn</b>.",
+      note: "Masculinos en <b>-e</b> (personas, animales) y muchos masculinos extranjeros en <b>-ent, -ant, -ist, -at, -oge</b> (comprueba el genitivo): <b>-n / -en</b> en todos los casos menos el nominativo singular. También <b>Herr → Herrn</b>.",
       table: {
         head: ["", "der Kunde", "der Präsident", "der Herr"],
         rows: [
@@ -1506,7 +1506,7 @@ LINGUAI.addStrings("es", {
         contrast: "El español dice <em>cuanto más reciclamos, menos basura hay</em>, con el orden normal en las dos partes. El alemán usa dos palabras distintas (<em>je ... desto</em>) y dos órdenes distintos: verbo al final en la primera parte, verbo justo después del grupo del comparativo en la segunda. Y <em>cada vez más caro</em> no es <em>jedes Mal mehr teuer</em>: se dice <em>immer teurer</em>."
       },
       {
-        trap: "Tras <em>desto</em> no va el sujeto: <em>desto weniger Müll gibt es</em>, no <em>desto es gibt weniger Müll</em>. Y <em>je</em> y <em>desto</em> piden comparativo, no el adjetivo simple: <em>je länger</em>, no <em>je lang</em>."
+        trap: "Tras <em>desto</em> va el grupo del comparativo y enseguida el verbo: <em>desto weniger Müll gibt es</em>, no <em>desto es gibt weniger Müll</em>. El sujeto sigue al verbo, salvo que forme parte de ese grupo (<em>desto mehr Zeit vergeht</em>). Y <em>je</em> y <em>desto</em> piden comparativo, no el adjetivo simple: <em>je länger</em>, no <em>je lang</em>."
       },
       {
         tip: "Piensa en la frase como dos mitades encajadas: la primera termina con el verbo (<em>... wartet,</em>), la segunda empieza por el grupo del comparativo y luego el verbo (<em>umso teurer wird ...</em>, <em>desto weniger Müll gibt ...</em>)."
@@ -1514,7 +1514,7 @@ LINGUAI.addStrings("es", {
     ],
     grammar: {
       title: "je ... desto / umso",
-      note: "<b>je</b> + comparativo + ... + verbo al final, <b>desto / umso</b> + grupo del comparativo (también con sustantivo) + verbo + sujeto. Para un aumento continuo: <b>immer</b> + comparativo.",
+      note: "<b>je</b> + comparativo + ... + verbo al final, <b>desto / umso</b> + grupo del comparativo (también con sustantivo) + verbo, y después el sujeto si no forma parte de ese grupo. Para un aumento continuo: <b>immer</b> + comparativo.",
       table: {
         head: ["primera parte (je ...)", "segunda parte (desto / umso ...)"],
         rows: [

@@ -935,8 +935,7 @@ LINGUAI.addUnits("B2", [
             "Wir hätten früher losfahren können",
             "Wir hätten früher abfahren können",
             "Wir hätten früher fahren können",
-            "Wir hätten früher aufbrechen können",
-            "Wir hätten früher losgehen können"
+            "Wir hätten früher aufbrechen können"
           ]
         },
         { t: "speak", it: "Einerseits ist die Stadt teuer, andererseits gibt es dort viele Jobs." }
