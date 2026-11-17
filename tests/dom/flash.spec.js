@@ -613,6 +613,10 @@ for (const width of [375, 1280]) {
     await page.waitForFunction(() => window.FlashCards && window.Views);
     await page.evaluate(() => new Promise(resolve => window.Core.loadLevelData("A1", resolve)));
     await page.evaluate(() => {
+      /* The lesson view builds a listen exercise that, with autoplay on, speaks
+         320 ms later; under a loaded suite that timer lands after the card has
+         spoken and overwrites __spoken. This test is about plurals, not autoplay. */
+      window.Core.state.settings.autoplay = false;
       const lesson = window.Core.registry.levels[0].units[0].lessons[0];
       lesson.vocab = [{ it: "der Hund", tr: "dog", plural: "Hunde" }, { it: "das Wasser", tr: "water", plural: "-" }];
       window.Views.lezione({ id: lesson.id });
