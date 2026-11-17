@@ -455,5 +455,461 @@ LINGUAI.addStrings("en", {
         why: "In <i>bloß</i> the <b>o</b> is long and the <b>ß</b> is a voiceless <i>s</i>; in <i>früher</i> the <b>h</b> is silent and lengthens the <i>ü</i>; in <i>entschieden</i> the <b>sch</b> is [ʃ]."
       }
     ]
+  },
+  "unit:b2-u02": {
+    title: "Conditions",
+    grammarNote: "real, unreal present, unreal past and mixed conditionals · falls, sofern, es sei denn, vorausgesetzt · conditions without wenn (Hätte ich ..., Sollten Sie ...) · bloß, nur, doch in wishes"
+  },
+  "lesson:b2-u02-l1": {
+    theme: "Decisions",
+    title: "Real, unreal, mixed",
+    objectives: [
+      "tell an open conditional from an unreal one",
+      "build unreal conditionals about the present and the past",
+      "combine a past condition with a present result",
+      "put the verb in the right place after a wenn clause"
+    ],
+    theory: [
+      {
+        h: "Three types of conditional",
+        p: "An <strong>open</strong> conditional presents a condition as possible and uses the <strong>indicative</strong>: <em>Wenn es morgen regnet, bleiben wir zu Hause.</em> An <strong>unreal present</strong> conditional imagines something that is not the case now, or presents it as remote, and uses the <strong>present Konjunktiv II</strong>: <em>Wenn ich mehr Geld hätte, würde ich weniger arbeiten.</em> An <strong>unreal past</strong> conditional talks about something that did not happen and uses the <strong>past Konjunktiv II</strong>: <em>Wenn du mich gefragt hättest, hätte ich dir geholfen.</em>"
+      },
+      {
+        h: "Mixed conditionals",
+        p: "Condition and result can lie in different times. A past condition with a present result: <em>Wenn er den Job angenommen hätte, würde er jetzt in München wohnen.</em> The first verb is in the past Konjunktiv II, the second in the present: each half takes the time of what it says. After the wenn clause the main clause starts with the conjugated verb: <em>Wenn das Wetter schön ist, <strong>gehen</strong> wir wandern.</em>"
+      },
+      {
+        contrast: "The three types match the English first, second and third conditionals: <em>if it rains, we'll stay</em>; <em>if I had more money, I would work less</em>; <em>if you had asked me, I would have helped you</em>. Two differences. For open conditions about the future, English often uses <em>will</em> in the main clause, while German commonly uses the present in both halves: <em>Wenn es regnet, bleiben wir</em>. In the unreal types English has a past form in the if-clause and <em>would</em> in the main clause; German has the Konjunktiv II in both."
+      },
+      {
+        trap: "After an if-clause English keeps subject-verb order (<em>if it rains, we stay</em>); in German the wenn clause fills the first position, so the verb comes next: <em>Wenn es regnet, bleiben wir</em>, not <em>Wenn es regnet, wir bleiben</em>. And with <em>haben</em> and <em>sein</em> the wenn clause normally takes <em>hätte</em> and <em>wäre</em>: <em>Wenn ich Zeit hätte</em> is far more common than <em>Wenn ich Zeit haben würde</em>, which is possible but heavy."
+      },
+      {
+        tip: "To pick the type, ask how you present the condition. Open, that is possible: indicative. Imagined, remote or contrary to how things are now: <em>hätte, wäre, würde</em>. Contrary to what happened: <em>hätte</em> or <em>wäre</em> + participle."
+      }
+    ],
+    grammar: {
+      title: "Conditionals: real, unreal, mixed",
+      note: "<b>Open</b>: indicative. <b>Unreal present</b>: present Konjunktiv II. <b>Unreal past</b>: past Konjunktiv II. <b>Mixed</b>: each half takes the time of what it says.",
+      table: {
+        head: ["type", "condition (wenn ...)", "result"],
+        rows: [
+          ["open", "Wenn es regnet,", "bleiben wir zu Hause."],
+          ["unreal present", "Wenn ich Zeit hätte,", "würde ich kommen."],
+          ["unreal past", "Wenn ich Zeit gehabt hätte,", "wäre ich gekommen."],
+          ["mixed", "Wenn ich den Job angenommen hätte,", "würde ich jetzt in München wohnen."]
+        ]
+      },
+      examples: [
+        { tr: "If it rains tomorrow, we'll stay at home.", note: "open: Präsens even for the future" },
+        { tr: "If I had more money, I would work less.", note: "unreal present" },
+        { tr: "If you had asked me, I would have helped you.", note: "unreal past" },
+        { tr: "If he had taken the job, he would be living in Munich now.", note: "mixed: past condition, present result" },
+        { tr: "If the weather is nice, we go hiking.", note: "open: the main clause starts with the verb" },
+        { tr: "If I were you, I would accept the offer.", note: "unreal: the classic piece of advice" }
+      ]
+    },
+    vocab: [
+      "the condition",
+      "the offer",
+      "the possibility",
+      "the case (in diesem Fall: in that case)",
+      "the consequence",
+      "the risk",
+      "to accept (an offer)",
+      "to turn down, to refuse",
+      "to depend (von + dative: on)",
+      "to risk",
+      "possibly, under certain circumstances",
+      "seriously"
+    ],
+    exercises: [
+      {
+        q: "How do you say “If it rains tomorrow, we'll stay at home”?",
+        opts: [
+          "Wenn es morgen regnet, bleiben wir zu Hause.",
+          "Wenn es morgen regnen würde, blieben wir zu Hause.",
+          "Wenn es morgen regnet, wir bleiben zu Hause."
+        ],
+        why: "An open condition takes the indicative, and after the wenn clause the verb comes next: <b>bleiben wir</b>. The second presents the rain as a more remote hypothesis; the third has the wrong word order."
+      },
+      {
+        q: "What type of conditional is “Wenn ich mehr Geld hätte, würde ich weniger arbeiten”?",
+        opts: [
+          "unreal present",
+          "open",
+          "unreal past"
+        ],
+        why: "<i>hätte</i> and <i>würde arbeiten</i> are present Konjunktiv II: I don't have more money now. The past would need <i>gehabt hätte</i>."
+      },
+      {
+        q: "How do you say “If you had asked me, I would have helped you”?",
+        opts: [
+          "Wenn du mich gefragt hättest, hätte ich dir geholfen.",
+          "Wenn du mich fragen würdest, würde ich dir helfen.",
+          "Wenn du mich gefragt hast, habe ich dir geholfen."
+        ],
+        why: "Unreal past: past Konjunktiv II in both halves. The second sentence is about the present, the third is indicative."
+      },
+      {
+        q: "How do you say “If he had taken the job, he would be living in Munich now”?",
+        opts: [
+          "Wenn er den Job angenommen hätte, würde er jetzt in München wohnen.",
+          "Wenn er den Job angenommen hätte, hätte er jetzt in München gewohnt.",
+          "Wenn er den Job annehmen würde, hätte er jetzt in München gewohnt."
+        ],
+        why: "Mixed: the condition lies in the past (<b>angenommen hätte</b>), the result in the present (<b>würde ... wohnen</b>), as <i>jetzt</i> says."
+      },
+      {
+        q: "Fill in: “Wenn ich du ___, würde ich das Angebot annehmen.”",
+        hint: "Konjunktiv II of sein, ich",
+        why: "<b>Wäre</b>: <i>Wenn ich du wäre</i> is the fixed phrase for advice, with <i>wäre</i> at the end of the wenn clause."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "If the weather is nice, we go hiking.",
+        why: "<i>Wenn das Wetter schön ist, gehen wir wandern</i>: <i>ist</i> at the end of the wenn clause, then the main clause starts with the verb <i>gehen</i>."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "If you had asked me, I would have helped you.",
+        why: "<i>Wenn du mich gefragt hättest, hätte ich dir geholfen</i>: past Konjunktiv II in both halves."
+      },
+      {
+        q: "Translate: “If I had more money, I would work less.”",
+        why: "<i>Wenn ich mehr Geld hätte, würde ich weniger arbeiten</i>. Without <i>wenn</i>: <i>Hätte ich mehr Geld, würde ich weniger arbeiten</i>."
+      },
+      {
+        tr: "If I had accepted the offer, I would be working in Hamburg now. But not everything depends on money.",
+        why: "In <i>Angebot</i> the stress falls on <b>An</b>; in <i>Hamburg</i> the final <b>g</b> sounds like [k]; in <i>hängt</i> the <b>ng</b> is the nasal [ŋ], as in English <i>sing</i>."
+      },
+      {
+        tr: "If it rains tomorrow, we'll stay at home and play cards.",
+        why: "In <i>regnet</i> the <b>g</b> is heard before the <i>n</i>: <i>reg-net</i>; in <i>bleiben</i> the <b>ei</b> is [aɪ]; in <i>spielen</i> the initial <b>sp</b> is [ʃp], like <i>shp</i>."
+      }
+    ]
+  },
+  "lesson:b2-u02-l2": {
+    theme: "The unexpected",
+    title: "Falls, sofern, es sei denn",
+    objectives: [
+      "express a condition with falls, sofern and vorausgesetzt",
+      "say “unless” with es sei denn",
+      "build a condition without wenn, with the verb first",
+      "recognize formal-register phrases (Sollten Sie ..., im Notfall)"
+    ],
+    theory: [
+      {
+        h: "Other conjunctions for conditions",
+        p: "<strong>falls</strong> (<em>if, if it happens that</em>) presents the condition as possible but not certain: <em>Falls du Hilfe brauchst, ruf mich an.</em> <strong>sofern</strong> (<em>provided that, as long as</em>) is more formal: <em>Sofern nichts dazwischenkommt, sind wir um acht da.</em> <strong>vorausgesetzt</strong> (<em>provided that</em>) takes <em>dass</em> with the verb at the end, or a main clause after the comma: <em>Wir grillen, vorausgesetzt, das Wetter ist gut.</em> <strong>es sei denn</strong> (<em>unless</em>) is followed by a clause with the verb in second position: <em>Wir fahren morgen los, es sei denn, es schneit.</em>"
+      },
+      {
+        h: "Conditions without wenn and formal register",
+        p: "You can drop <em>wenn</em> and put the conjugated verb in <strong>first position</strong>: <em>Hätte ich das gewusst, wäre ich gekommen.</em> Letters, notices and work emails often put <strong>sollte</strong> first: <em>Sollten Sie Fragen haben, wenden Sie sich bitte an uns.</em> Formal style also prefers a noun to a clause: <em>im Notfall</em> (in an emergency), <em>im Falle eines Brandes</em> (in case of fire, with the genitive)."
+      },
+      {
+        contrast: "Here English is close: <em>Should you have any questions, please contact us</em> is exactly <em>Sollten Sie Fragen haben, wenden Sie sich bitte an uns</em>, and <em>Had I known, ...</em> is <em>Hätte ich das gewusst, ...</em>. The difference is register: in English the inversion sounds formal or literary, while in German <em>Hätte ich das gewusst</em> is normal even in speech. <em>es sei denn</em> already means <em>unless</em>, so do not add <em>nicht</em> by reflex: <em>unless it rains</em> is <em>es sei denn, es regnet</em>. A negation belongs there only when the exception itself is negative (<em>es sei denn, du möchtest das nicht</em>)."
+      },
+      {
+        trap: "English <em>in case</em> usually introduces a precaution: <em>Take an umbrella in case it rains</em> is <em>für den Fall, dass es regnet</em>, or, depending on context, <em>falls es regnet</em>. A condition that decides an action is normally English <em>if</em>: <em>Falls es regnet, nehmen wir den Bus</em> is <em>if it rains, we'll take the bus</em>. And after <em>es sei denn</em> the verb is in second position, not at the end: <em>es sei denn, es regnet</em>."
+      },
+      {
+        tip: "In speech <em>wenn</em> is almost always enough; <em>falls</em> is useful when you want to stress that something might not happen (<em>Falls ich mich verspäte, ...</em>). In formal emails, <em>Sollten Sie ...</em> sounds professional straight away."
+      }
+    ],
+    grammar: {
+      title: "falls, sofern, es sei denn and conditions without wenn",
+      note: "<b>falls, sofern</b>: verb at the end. <b>es sei denn,</b> + clause with the verb in second position. <b>Without wenn</b>: conjugated verb first (<b>Hätte ich ..., Sollten Sie ...</b>).",
+      table: {
+        head: ["", "example", "English"],
+        rows: [
+          ["falls", "Falls du Hilfe brauchst, ruf mich an.", "if (it happens that)"],
+          ["sofern", "Sofern nichts dazwischenkommt, ...", "provided that, as long as"],
+          ["es sei denn", "..., es sei denn, es schneit.", "unless"],
+          ["without wenn", "Sollten Sie Fragen haben, ...", "should you ..."]
+        ]
+      },
+      examples: [
+        { tr: "If you need help, call me.", note: "falls: a possible condition, indicative" },
+        { tr: "Unless something comes up, we'll be there at eight.", note: "sofern: formal; dazwischenkommen = something unexpected comes up" },
+        { tr: "We're leaving tomorrow unless it snows.", note: "es sei denn already means unless: no extra nicht" },
+        { tr: "Had I known, I would have come.", note: "without wenn: verb first, normal in German speech too" },
+        { tr: "Should you have any questions, please contact us.", note: "Sollten Sie ...: the letter formula" },
+        { tr: "In an emergency, please call this number.", note: "im Notfall: a noun instead of a clause" }
+      ]
+    },
+    vocab: [
+      "the emergency",
+      "the exception",
+      "the prerequisite, the requirement",
+      "the doubt (im Zweifel: when in doubt)",
+      "the inquiry, the request",
+      "to come up (something unexpected)",
+      "to contact, to turn to",
+      "to notify, to inform",
+      "to cancel",
+      "to postpone",
+      "if necessary, where applicable",
+      "provided that"
+    ],
+    exercises: [
+      {
+        q: "How do you say “We'll go for a walk unless it rains”?",
+        opts: [
+          "Wir gehen spazieren, es sei denn, es regnet.",
+          "Wir gehen spazieren, es sei denn, es regnet nicht.",
+          "Wir gehen spazieren, es sei denn, regnet es."
+        ],
+        why: "<b>es sei denn</b> already means <i>unless</i>, so no <i>nicht</i> is needed here (with it the condition would be the opposite); it is followed by a clause with the verb in second position: <i>es regnet</i>."
+      },
+      {
+        q: "Which sentence suits a formal email best?",
+        opts: [
+          "Sollten Sie Fragen haben, wenden Sie sich bitte an uns.",
+          "Wenn du Fragen hast, frag einfach.",
+          "Falls du was wissen willst, sag Bescheid."
+        ],
+        why: "<b>Sollten Sie ...</b> first, with <i>Sie</i> and <i>sich wenden an</i>, is the formula of letters and work emails. The other two use <i>du</i> and are colloquial."
+      },
+      {
+        q: "Fill in: “___ du Hilfe brauchst, ruf mich an.” (if it happens that, not wenn)",
+        hint: "conjunction for a possible condition",
+        why: "<b>Falls</b>: it presents the condition as possible but not certain, and sends the verb <i>brauchst</i> to the end."
+      },
+      {
+        q: "Fill in without wenn: “___ ich das gewusst, wäre ich gekommen.”",
+        hint: "verb first, Konjunktiv II of haben",
+        why: "<b>Hätte</b>: without <i>wenn</i> the conjugated verb opens the clause, and the main clause starts with <i>wäre</i>."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "We're leaving tomorrow unless it snows.",
+        why: "<i>es sei denn</i> is a fixed phrase: two words after <i>es</i>, then a comma and a clause with the verb in second position."
+      },
+      {
+        q: "Match each expression with its meaning.",
+        pairs: [
+          "if (it happens that)",
+          "provided that, as long as",
+          "unless",
+          "if necessary, where applicable"
+        ]
+      },
+      {
+        q: "Put the words in order.",
+        tr: "Should you have any questions, please contact us.",
+        why: "<i>Sollten Sie Fragen haben, wenden Sie sich bitte an uns.</i> <i>Sollten</i> opens the condition, <i>haben</i> closes it; the main clause starts with the verb <i>wenden</i>."
+      },
+      {
+        q: "Translate without wenn: “Had I known, I would have come.”",
+        why: "<i>Hätte ich das gewusst, wäre ich gekommen</i>. You can add <i>dann</i>: <i>Hätte ich das gewusst, dann wäre ich gekommen</i>."
+      },
+      {
+        tr: "Should it snow tomorrow, we'll postpone the trip. If you have any questions, please contact reception.",
+        why: "In <i>schneien</i> the <b>sch</b> is [ʃ] and the <b>ei</b> is [aɪ]; in <i>verschieben</i> the <b>v</b> sounds like [f]; in <i>Rezeption</i> the <b>tion</b> is [tsi̯oːn]."
+      },
+      {
+        tr: "Unless something comes up, we'll be there at eight o'clock.",
+        why: "In <i>dazwischenkommt</i> the <b>z</b> is [ts] and the <b>sch</b> is [ʃ]; in <i>acht</i> the <b>ch</b> after <i>a</i> is the hard [x], as in Scottish <i>loch</i>; in <i>Uhr</i> the <b>h</b> lengthens the <i>u</i>."
+      }
+    ]
+  },
+  "lesson:b2-u02-l3": {
+    theme: "Wishes and regrets",
+    title: "If only ...",
+    objectives: [
+      "express an unreal wish with wenn ... bloß / nur / doch",
+      "express a regret with the verb first",
+      "make a command more insistent with bloß",
+      "understand nur inside a full conditional sentence (Wenn du nur ..., würdest du ...)"
+    ],
+    theory: [
+      {
+        h: "Unreal wishes",
+        p: "A wish presented as far from how things are now, or a regret about the past, has the shape of a condition without a result, with the <strong>Konjunktiv II</strong> and a particle: <strong>bloß</strong>, <strong>nur</strong> or <strong>doch</strong>. With <em>wenn</em> the verb goes to the end: <em>Wenn ich bloß mehr Zeit hätte!</em> Without <em>wenn</em> the verb goes first: <em>Hätte ich nur nicht so viel gegessen! Wäre ich doch zu Hause geblieben!</em> For the present you can also use <em>würde</em>: <em>Wenn es doch endlich regnen würde!</em>"
+      },
+      {
+        h: "bloß in commands, nur in conditions",
+        p: "In a command, <strong>bloß</strong> makes it more insistent, almost threatening: <em>Mach das bloß nicht!</em> (don't you dare). Inside a full conditional sentence, one with a result, <strong>nur</strong> can limit what follows or strengthen the wish: <em>Wenn du nur ein bisschen Geduld hättest, würdest du es schaffen</em> can be rendered as “all it would take is a bit of patience and you'd make it”."
+      },
+      {
+        contrast: "English says <em>if only I had more time!</em> or <em>I wish I had more time</em>. German keeps the <em>if</em> shape: <em>Wenn ich bloß mehr Zeit hätte!</em>, or drops <em>wenn</em> and puts the verb first: <em>Hätte ich bloß mehr Zeit!</em> The particle does not stand at the front like <em>if only</em>: it goes inside the clause, usually after the subject and pronouns and before the negation: <em>Hätte ich nur nicht so viel gegessen! Wenn du es mir bloß früher gesagt hättest!</em> The exact position also depends on what you want to stress."
+      },
+      {
+        trap: "Here <em>nur</em> and <em>bloß</em> do not mean <em>only</em>: <em>Wenn ich bloß mehr Zeit hätte!</em> is not “if I merely had more time” but “if only I had more time”. And <em>doch</em> in a wish is not the <em>doch</em> of answers (<em>Doch!</em>, yes I do): here it strengthens the wish."
+      },
+      {
+        tip: "The three particles are almost interchangeable in wishes; <em>doch</em> strengthens the wish or the regret just like the others, and the choice depends on context and intonation rather than on register: <em>Hätte ich doch ...!</em> is everyday speech too. To get the order right, first write the clause without the particle, then put it after the subject and any pronouns."
+      }
+    ],
+    grammar: {
+      title: "Unreal wishes: wenn ... bloß / nur / doch + Konjunktiv II",
+      note: "<b>Wenn</b> + particle + verb at the end, or verb <b>first</b> + particle. The particle goes inside the clause, usually after the subject and pronouns and before <i>nicht</i>.",
+      table: {
+        head: ["", "present", "past"],
+        rows: [
+          ["with wenn", "Wenn ich bloß mehr Zeit hätte!", "Wenn ich bloß früher gekommen wäre!"],
+          ["without wenn", "Hätte ich nur mehr Zeit!", "Wäre ich doch früher gekommen!"],
+          ["with würde", "Wenn es doch endlich regnen würde!", "-"]
+        ]
+      },
+      examples: [
+        { tr: "If only I had more time!", note: "wenn + bloß, verb at the end" },
+        { tr: "If only I hadn't eaten so much!", note: "verb first, nur before nicht" },
+        { tr: "I wish I had stayed at home!", note: "doch: a wish about the past" },
+        { tr: "If only it would finally rain!", note: "würde + infinitive for the present" },
+        { tr: "Don't you dare do that!", note: "bloß in a command: a threatening tone" },
+        { tr: "All it would take is a bit of patience and you'd make it.", note: "nur in a full conditional sentence: it limits what follows" }
+      ]
+    },
+    vocab: [
+      "patience",
+      "bad luck (So ein Pech!: what bad luck!)",
+      "chance, coincidence",
+      "fate",
+      "the worry",
+      "trouble, annoyance",
+      "to get annoyed",
+      "to hope",
+      "to long for (nach + dative)",
+      "finally, at last",
+      "absolutely, by all means",
+      "in vain"
+    ],
+    exercises: [
+      {
+        q: "How do you say “If only I had more time!”?",
+        opts: [
+          "Wenn ich bloß mehr Zeit hätte!",
+          "Wenn ich bloß mehr Zeit habe!",
+          "Wenn ich bloß hätte mehr Zeit!"
+        ],
+        why: "An unreal wish takes the Konjunktiv II (<b>hätte</b>), at the end of the wenn clause. The second is indicative; the third does not send the verb to the end, as <i>wenn</i> requires."
+      },
+      {
+        q: "What does “Mach das bloß nicht!” mean?",
+        opts: [
+          "Don't you dare do that!",
+          "Do it only once.",
+          "Just don't do that one thing."
+        ],
+        why: "In a command <b>bloß</b> makes the ban insistent, almost threatening. It does not mean <i>only</i>."
+      },
+      {
+        q: "Fill in a particle: “Hätte ich ___ nicht so viel gegessen!”",
+        hint: "particle of regret, before nicht",
+        why: "<b>nur</b>, <b>bloß</b> or <b>doch</b>: all three strengthen the regret and stand before <i>nicht</i>."
+      },
+      {
+        q: "Fill in: “___ ich doch zu Hause geblieben!”",
+        hint: "verb first, Konjunktiv II of sein",
+        why: "<b>Wäre</b>: <i>bleiben</i> takes <i>sein</i>, and without <i>wenn</i> the conjugated verb opens the clause."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "If only it would finally rain!",
+        why: "<i>Wenn es doch endlich regnen würde!</i> For the present <i>würde</i> + infinitive is common; <i>würde</i> ends the wenn clause."
+      },
+      {
+        q: "Match each expression with its meaning.",
+        pairs: [
+          "If only ...!",
+          "finally, at last",
+          "absolutely, by all means",
+          "in vain"
+        ]
+      },
+      {
+        q: "Put the words in order.",
+        tr: "If only I hadn't eaten so much!",
+        why: "<i>Hätte ich nur nicht so viel gegessen!</i> Verb first, then the subject, the particle <i>nur</i>, the negation and the participle at the end."
+      },
+      {
+        q: "Translate: “If only you had told me earlier!”",
+        why: "<i>Wenn du es mir bloß früher gesagt hättest!</i> or <i>Hättest du es mir bloß früher gesagt!</i> <i>nur</i> and <i>doch</i> work instead of <i>bloß</i>."
+      },
+      {
+        tr: "If only I hadn't waited so long! Now the apartment is gone. What bad luck.",
+        why: "In <i>bloß</i> the <b>o</b> is long; in <i>gewartet</i> the <b>w</b> is [v]; in <i>Pech</i> the <b>ch</b> after <i>e</i> is the soft [ç]."
+      },
+      {
+        tr: "If only I'd had a little more patience!",
+        why: "In <i>Geduld</i> the stress falls on <b>duld</b>; in <i>bisschen</i> the <b>s</b> and the <b>ch</b> are pronounced separately, [sç]; in <i>gehabt</i> the <b>b</b> before <i>t</i> sounds like [p]."
+      }
+    ]
+  },
+  "lesson:b2-u02-test": {
+    theme: "Check",
+    title: "Test: Conditions",
+    objectives: [
+      "check the types of conditional, falls, es sei denn and conditions without wenn"
+    ],
+    theory: [
+      {
+        p: "Ten questions on the whole unit. You pass with 70%. Don't look back at the lessons while you answer: if you can't remember something, it's better to go back and review."
+      }
+    ],
+    exercises: [
+      {
+        q: "Fill in: “Wenn er früher losgefahren ___, hätte er den Zug erreicht.”",
+        hint: "Konjunktiv II of sein, er",
+        why: "<b>Wäre</b>: <i>losfahren</i> takes <i>sein</i>, and the past Konjunktiv II ends the wenn clause."
+      },
+      {
+        q: "Fill in: “Wir kommen, es sei denn, es ___ etwas dazwischen.”",
+        hint: "dazwischenkommen, present indicative",
+        why: "<b>kommt</b>: after <i>es sei denn</i> comes a main clause in the indicative, with the verb in second position and the particle <i>dazwischen</i> at the end."
+      },
+      {
+        q: "Fill in the formal phrase: “___ Sie Fragen haben, wenden Sie sich an uns.”",
+        hint: "modal verb in first position",
+        why: "<b>Sollten</b>: the condition without <i>wenn</i> used in formal letters, with <i>haben</i> at the end."
+      },
+      {
+        q: "Which sentence is an unreal past conditional?",
+        opts: [
+          "Wenn sie angerufen hätte, wäre ich gekommen.",
+          "Wenn sie anruft, komme ich.",
+          "Wenn sie anrufen würde, käme ich."
+        ],
+        why: "Only the first has the past Konjunktiv II (<i>angerufen hätte</i>, <i>wäre gekommen</i>). The second is open, the third unreal present."
+      },
+      {
+        q: "Which sentence means “I'll come tomorrow unless I'm ill”?",
+        opts: [
+          "Ich komme morgen, es sei denn, ich bin krank.",
+          "Ich komme morgen, es sei denn, ich bin nicht krank.",
+          "Ich komme morgen, es sei denn, ich krank bin."
+        ],
+        why: "<i>es sei denn</i> already means <i>unless</i>: no extra <i>nicht</i>, and the verb in second position (<i>ich bin krank</i>)."
+      },
+      {
+        q: "Complete with a result about the present (mixed conditional): “Hätte ich gestern nicht so viel gearbeitet, ...”",
+        opts: [
+          "wäre ich jetzt nicht so müde.",
+          "wäre ich jetzt nicht so müde gewesen.",
+          "bin ich jetzt nicht so müde."
+        ],
+        why: "Mixed: the condition lies in the past, the result is about the present (<i>jetzt</i>), so present Konjunktiv II: <b>wäre ... müde</b>."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "If I had more time, I would do sport more often.",
+        why: "<i>Wenn ich mehr Zeit hätte, würde ich öfter Sport machen</i>: unreal present, <i>hätte</i> at the end and <i>würde</i> at the start of the main clause."
+      },
+      {
+        q: "Complete the sentence without wenn.",
+        tr: "Had I known, I would have helped you.",
+        why: "<i>Hätte ich das gewusst, hätte ich dir geholfen</i>: the first <i>hätte</i> opens the condition, the second opens the main clause."
+      },
+      {
+        tr: "If you have time tomorrow, drop by. If I had known you were in town, I would have called you yesterday.",
+        why: "In <i>vorbei</i> the <b>v</b> sounds like [f]; in <i>Stadt</i> the final <b>dt</b> is [t]; in <i>angerufen</i> the stress falls on <b>an</b>."
+      },
+      {
+        tr: "Should you be unable to come, please cancel in good time.",
+        why: "In <i>verhindert</i> the <b>v</b> sounds like [f]; in <i>rechtzeitig</i> the <b>ch</b> is [ç] and the <b>z</b> is [ts]; in <i>absagen</i> the <b>b</b> before <i>s</i> sounds like [p]."
+      }
+    ]
   }
 });

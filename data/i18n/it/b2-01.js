@@ -632,7 +632,7 @@ LINGUAI.addStrings("it", {
       examples: [
         { tr: "Nel caso avessi bisogno di aiuto, chiamami.", note: "falls: condizione possibile, indicativo" },
         { tr: "Salvo imprevisti, saremo lì alle otto.", note: "sofern: formale; dazwischenkommen = sopraggiungere un imprevisto" },
-        { tr: "Partiamo domani, a meno che non nevichi.", note: "es sei denn: nessuna negazione in tedesco" },
+        { tr: "Partiamo domani, a meno che non nevichi.", note: "es sei denn: niente «non» espletivo in tedesco" },
         { tr: "Se l'avessi saputo, sarei venuto.", note: "senza wenn: verbo al primo posto" },
         { tr: "Qualora abbiate domande, rivolgetevi a noi.", note: "Sollten Sie ...: formula delle lettere" },
         { tr: "In caso di emergenza chiamate questo numero.", note: "im Notfall: un nome al posto della frase" }
@@ -660,7 +660,7 @@ LINGUAI.addStrings("it", {
           "Wir gehen spazieren, es sei denn, es regnet nicht.",
           "Wir gehen spazieren, es sei denn, regnet es."
         ],
-        why: "<b>es sei denn</b> non vuole la negazione (con <i>nicht</i> si dice il contrario) ed è seguito da una frase con il verbo in seconda posizione: <i>es regnet</i>."
+        why: "<b>es sei denn</b> significa già «a meno che» e non vuole il «non» espletivo dell'italiano (con <i>nicht</i> la condizione sarebbe la contraria); è seguito da una frase con il verbo in seconda posizione: <i>es regnet</i>."
       },
       {
         q: "Quale frase è più adatta a una mail formale?",
@@ -721,7 +721,7 @@ LINGUAI.addStrings("it", {
       "esprimere un desiderio irreale con wenn ... bloß / nur / doch",
       "esprimere un rimpianto con il verbo al primo posto",
       "rafforzare un ordine con bloß",
-      "capire nur dentro una vera condizione (Wenn du nur ...)"
+      "capire nur dentro un periodo ipotetico completo (Wenn du nur ..., würdest du ...)"
     ],
     theory: [
       {
@@ -730,7 +730,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "bloß negli ordini e nur nella condizione",
-        p: "In un ordine <strong>bloß</strong> lo rende più insistente, quasi minaccioso: <em>Mach das bloß nicht!</em> (non provarci nemmeno). Dentro una vera condizione, <strong>nur</strong> può limitare ciò che segue o rafforzare il desiderio: <em>Wenn du nur ein bisschen Geduld hättest, würdest du es schaffen</em> si può rendere con «basterebbe un po' di pazienza e ce la faresti»."
+        p: "In un ordine <strong>bloß</strong> lo rende più insistente, quasi minaccioso: <em>Mach das bloß nicht!</em> (non provarci nemmeno). Dentro un periodo ipotetico completo, cioè con la conseguenza, <strong>nur</strong> può limitare ciò che segue o rafforzare il desiderio: <em>Wenn du nur ein bisschen Geduld hättest, würdest du es schaffen</em> si può rendere con «basterebbe un po' di pazienza e ce la faresti»."
       },
       {
         contrast: "L'italiano esprime lo stesso desiderio con <em>se solo</em> o <em>magari</em>: <em>Se solo avessi più tempo! Magari fossi rimasto a casa!</em> Il tedesco usa <em>bloß</em>, <em>nur</em> o <em>doch</em>, che però non stanno all'inizio come <em>se solo</em>: vanno dentro la frase, di solito dopo il soggetto e i pronomi e prima della negazione: <em>Hätte ich nur nicht so viel gegessen! Wenn du es mir bloß früher gesagt hättest!</em> La posizione esatta dipende anche da ciò che si vuole mettere in rilievo."
@@ -739,7 +739,7 @@ LINGUAI.addStrings("it", {
         trap: "Qui <em>nur</em> e <em>bloß</em> non significano <em>solo</em>: <em>Wenn ich bloß mehr Zeit hätte!</em> non vuol dire «se avessi soltanto più tempo», ma «se solo avessi più tempo». E <em>doch</em> in un desiderio non è il <em>doch</em> della risposta (<em>Doch!</em>, sì invece): qui rafforza il desiderio."
       },
       {
-        tip: "Le tre particelle sono quasi intercambiabili nei desideri; <em>bloß</em> è un po' più emotivo, <em>doch</em> un po' più letterario. Per non sbagliare l'ordine, prima scrivi la frase senza particella, poi mettila dopo il soggetto e gli eventuali pronomi."
+        tip: "Le tre particelle sono quasi intercambiabili nei desideri; <em>doch</em> rafforza il desiderio o il rimpianto come le altre, e la scelta dipende dal contesto e dall'intonazione, non dal registro: <em>Hätte ich doch ...!</em> si sente anche nella conversazione di tutti i giorni. Per non sbagliare l'ordine, prima scrivi la frase senza particella, poi mettila dopo il soggetto e gli eventuali pronomi."
       }
     ],
     grammar: {
@@ -759,7 +759,7 @@ LINGUAI.addStrings("it", {
         { tr: "Magari fossi rimasto a casa!", note: "doch: desiderio sul passato" },
         { tr: "Se solo finalmente piovesse!", note: "würde + infinito al presente" },
         { tr: "Non provarci nemmeno!", note: "bloß in un ordine: tono minaccioso" },
-        { tr: "Basterebbe un po' di pazienza e ce la faresti.", note: "nur in una vera condizione: limita ciò che segue" }
+        { tr: "Basterebbe un po' di pazienza e ce la faresti.", note: "nur in un periodo ipotetico completo: limita ciò che segue" }
       ]
     },
     vocab: [
@@ -881,7 +881,7 @@ LINGUAI.addStrings("it", {
           "Ich komme morgen, es sei denn, ich bin nicht krank.",
           "Ich komme morgen, es sei denn, ich krank bin."
         ],
-        why: "<i>es sei denn</i>: niente negazione e verbo in seconda posizione (<i>ich bin krank</i>)."
+        why: "<i>es sei denn</i>: niente «non» espletivo e verbo in seconda posizione (<i>ich bin krank</i>)."
       },
       {
         q: "Completa con una conseguenza che riguarda il presente (periodo ipotetico misto): «Hätte ich gestern nicht so viel gearbeitet, ...»",

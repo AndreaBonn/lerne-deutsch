@@ -455,5 +455,461 @@ LINGUAI.addStrings("es", {
         why: "En <i>bloß</i> la <b>o</b> es larga y la <b>ß</b> es una <i>s</i> sorda; en <i>früher</i> la <b>h</b> no se pronuncia y alarga la <i>ü</i>; en <i>entschieden</i> la <b>sch</b> es [ʃ]."
       }
     ]
+  },
+  "unit:b2-u02": {
+    title: "Condiciones",
+    grammarNote: "condicional real, irreal de presente, irreal de pasado y mixta · falls, sofern, es sei denn, vorausgesetzt · condición sin wenn (Hätte ich ..., Sollten Sie ...) · bloß, nur, doch en los deseos"
+  },
+  "lesson:b2-u02-l1": {
+    theme: "Decisiones",
+    title: "Real, irreal, mixta",
+    objectives: [
+      "distinguir la condicional abierta de la irreal",
+      "construir la irreal de presente y de pasado",
+      "combinar una condición pasada con una consecuencia presente",
+      "colocar el verbo en su sitio después de la oración con wenn"
+    ],
+    theory: [
+      {
+        h: "Tres tipos de condicional",
+        p: "La condicional <strong>abierta</strong> presenta la condición como posible y usa el <strong>indicativo</strong>: <em>Wenn es morgen regnet, bleiben wir zu Hause.</em> La <strong>irreal de presente</strong> imagina algo que ahora no es así, o lo presenta como remoto, y usa el <strong>Konjunktiv II de presente</strong>: <em>Wenn ich mehr Geld hätte, würde ich weniger arbeiten.</em> La <strong>irreal de pasado</strong> habla de algo que no ocurrió y usa el <strong>Konjunktiv II de pasado</strong>: <em>Wenn du mich gefragt hättest, hätte ich dir geholfen.</em>"
+      },
+      {
+        h: "La condicional mixta",
+        p: "Condición y consecuencia pueden estar en tiempos distintos. Una condición pasada con una consecuencia presente: <em>Wenn er den Job angenommen hätte, würde er jetzt in München wohnen.</em> El primer verbo va en Konjunktiv II de pasado, el segundo en presente: cada parte toma el tiempo de lo que dice. Después de la oración con <em>wenn</em> la principal empieza por el verbo conjugado: <em>Wenn das Wetter schön ist, <strong>gehen</strong> wir wandern.</em>"
+      },
+      {
+        contrast: "Los tres tipos coinciden con los españoles: <em>si llueve, nos quedamos</em>; <em>si tuviera más dinero, trabajaría menos</em>; <em>si me hubieras preguntado, te habría ayudado</em>. Dos diferencias. En las abiertas referidas al futuro el español usa a menudo el futuro en la principal (<em>nos quedaremos</em>); el alemán usa normalmente el presente en las dos partes. En las irreales el español usa dos modos (subjuntivo tras <em>si</em>, condicional en la consecuencia); el alemán uno solo, el Konjunktiv II, en las dos."
+      },
+      {
+        trap: "Tras una oración con <em>si</em> el español mantiene el orden sujeto-verbo (<em>si llueve, nosotros nos quedamos</em>); en alemán la oración con <em>wenn</em> ocupa el primer lugar y el verbo va justo detrás: <em>Wenn es regnet, bleiben wir</em>, no <em>Wenn es regnet, wir bleiben</em>. Y con <em>haben</em> y <em>sein</em> la oración con <em>wenn</em> suele llevar <em>hätte</em> y <em>wäre</em>: <em>Wenn ich Zeit hätte</em> es mucho más frecuente que <em>Wenn ich Zeit haben würde</em>, que es posible pero pesado."
+      },
+      {
+        tip: "Para elegir el tipo, pregúntate cómo presentas la condición. Abierta, es decir posible: indicativo. Imaginada, remota o contraria a cómo están las cosas ahora: <em>hätte, wäre, würde</em>. Contraria a lo que pasó: <em>hätte</em> o <em>wäre</em> + participio."
+      }
+    ],
+    grammar: {
+      title: "La condicional: real, irreal, mixta",
+      note: "<b>Abierta</b>: indicativo. <b>Irreal de presente</b>: Konjunktiv II de presente. <b>Irreal de pasado</b>: Konjunktiv II de pasado. <b>Mixta</b>: cada parte toma el tiempo de lo que dice.",
+      table: {
+        head: ["tipo", "condición (wenn ...)", "consecuencia"],
+        rows: [
+          ["abierta", "Wenn es regnet,", "bleiben wir zu Hause."],
+          ["irreal de presente", "Wenn ich Zeit hätte,", "würde ich kommen."],
+          ["irreal de pasado", "Wenn ich Zeit gehabt hätte,", "wäre ich gekommen."],
+          ["mixta", "Wenn ich den Job angenommen hätte,", "würde ich jetzt in München wohnen."]
+        ]
+      },
+      examples: [
+        { tr: "Si mañana llueve, nos quedamos en casa.", note: "abierta: Präsens también para el futuro" },
+        { tr: "Si tuviera más dinero, trabajaría menos.", note: "irreal de presente" },
+        { tr: "Si me hubieras preguntado, te habría ayudado.", note: "irreal de pasado" },
+        { tr: "Si hubiera aceptado el trabajo, ahora viviría en Múnich.", note: "mixta: condición pasada, consecuencia presente" },
+        { tr: "Si hace buen tiempo, vamos de excursión.", note: "abierta: la principal empieza por el verbo" },
+        { tr: "Yo que tú, aceptaría la oferta.", note: "irreal: el consejo clásico" }
+      ]
+    },
+    vocab: [
+      "la condición",
+      "la oferta",
+      "la posibilidad",
+      "el caso (in diesem Fall: en ese caso)",
+      "la consecuencia",
+      "el riesgo",
+      "aceptar (una oferta)",
+      "rechazar",
+      "depender (von + dativo: de)",
+      "arriesgar",
+      "posiblemente, según las circunstancias",
+      "en serio"
+    ],
+    exercises: [
+      {
+        q: "¿Cómo se dice «Si mañana llueve, nos quedamos en casa»?",
+        opts: [
+          "Wenn es morgen regnet, bleiben wir zu Hause.",
+          "Wenn es morgen regnen würde, blieben wir zu Hause.",
+          "Wenn es morgen regnet, wir bleiben zu Hause."
+        ],
+        why: "Condición abierta: indicativo, y tras la oración con <i>wenn</i> el verbo va justo detrás: <b>bleiben wir</b>. La segunda presenta la lluvia como una hipótesis más remota; la tercera tiene el orden equivocado."
+      },
+      {
+        q: "¿Qué tipo de condicional es «Wenn ich mehr Geld hätte, würde ich weniger arbeiten»?",
+        opts: [
+          "irreal de presente",
+          "abierta",
+          "irreal de pasado"
+        ],
+        why: "<i>hätte</i> y <i>würde arbeiten</i> son Konjunktiv II de presente: ahora no tengo más dinero. Para el pasado haría falta <i>gehabt hätte</i>."
+      },
+      {
+        q: "¿Cómo se dice «Si me hubieras preguntado, te habría ayudado»?",
+        opts: [
+          "Wenn du mich gefragt hättest, hätte ich dir geholfen.",
+          "Wenn du mich fragen würdest, würde ich dir helfen.",
+          "Wenn du mich gefragt hast, habe ich dir geholfen."
+        ],
+        why: "Irreal de pasado: Konjunktiv II de pasado en las dos partes. La segunda frase está en presente, la tercera en indicativo."
+      },
+      {
+        q: "¿Cómo se dice «Si hubiera aceptado el trabajo, ahora viviría en Múnich»?",
+        opts: [
+          "Wenn er den Job angenommen hätte, würde er jetzt in München wohnen.",
+          "Wenn er den Job angenommen hätte, hätte er jetzt in München gewohnt.",
+          "Wenn er den Job annehmen würde, hätte er jetzt in München gewohnt."
+        ],
+        why: "Mixta: la condición es pasada (<b>angenommen hätte</b>), la consecuencia presente (<b>würde ... wohnen</b>), como indica <i>jetzt</i>."
+      },
+      {
+        q: "Completa: «Wenn ich du ___, würde ich das Angebot annehmen.»",
+        hint: "Konjunktiv II de sein, ich",
+        why: "<b>Wäre</b>: <i>Wenn ich du wäre</i> es la fórmula fija del consejo, con <i>wäre</i> al final de la oración con <i>wenn</i>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Si hace buen tiempo, vamos de excursión.",
+        why: "<i>Wenn das Wetter schön ist, gehen wir wandern</i>: <i>ist</i> al final de la oración con <i>wenn</i>, y la principal empieza por el verbo <i>gehen</i>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Si me hubieras preguntado, te habría ayudado.",
+        why: "<i>Wenn du mich gefragt hättest, hätte ich dir geholfen</i>: Konjunktiv II de pasado en las dos partes."
+      },
+      {
+        q: "Traduce: «Si tuviera más dinero, trabajaría menos.»",
+        why: "<i>Wenn ich mehr Geld hätte, würde ich weniger arbeiten</i>. Sin <i>wenn</i>: <i>Hätte ich mehr Geld, würde ich weniger arbeiten</i>."
+      },
+      {
+        tr: "Si hubiera aceptado la oferta, ahora trabajaría en Hamburgo. Pero no todo depende del dinero.",
+        why: "En <i>Angebot</i> el acento cae en <b>An</b>; en <i>Hamburg</i> la <b>g</b> final suena [k]; en <i>hängt</i> la <b>ng</b> es un sonido nasal [ŋ], como en <i>tengo</i>."
+      },
+      {
+        tr: "Si mañana llueve, nos quedamos en casa y jugamos a las cartas.",
+        why: "En <i>regnet</i> la <b>g</b> se oye delante de la <i>n</i>: <i>reg-net</i>; en <i>bleiben</i> la <b>ei</b> es [aɪ]; en <i>spielen</i> la <b>sp</b> inicial es [ʃp]."
+      }
+    ]
+  },
+  "lesson:b2-u02-l2": {
+    theme: "Imprevistos",
+    title: "Falls, sofern, es sei denn",
+    objectives: [
+      "expresar una condición con falls, sofern y vorausgesetzt",
+      "decir «a menos que» con es sei denn",
+      "construir la condición sin wenn, con el verbo en primer lugar",
+      "reconocer las fórmulas del registro formal (Sollten Sie ..., im Notfall)"
+    ],
+    theory: [
+      {
+        h: "Otras conjunciones para la condición",
+        p: "<strong>falls</strong> (<em>en caso de que</em>) presenta la condición como posible pero no segura: <em>Falls du Hilfe brauchst, ruf mich an.</em> <strong>sofern</strong> (<em>siempre que, con tal de que</em>) es más formal: <em>Sofern nichts dazwischenkommt, sind wir um acht da.</em> <strong>vorausgesetzt</strong> (<em>a condición de que</em>) va con <em>dass</em> y el verbo al final, o con una oración principal después de la coma: <em>Wir grillen, vorausgesetzt, das Wetter ist gut.</em> <strong>es sei denn</strong> (<em>a menos que</em>) va seguido de una oración con el verbo en segunda posición: <em>Wir fahren morgen los, es sei denn, es schneit.</em>"
+      },
+      {
+        h: "La condición sin wenn y el registro formal",
+        p: "Se puede quitar <em>wenn</em> y poner el verbo conjugado en <strong>primer lugar</strong>: <em>Hätte ich das gewusst, wäre ich gekommen.</em> En cartas, avisos y correos de trabajo se usa a menudo <strong>sollte</strong> en primer lugar: <em>Sollten Sie Fragen haben, wenden Sie sich bitte an uns.</em> El estilo formal prefiere también un sustantivo a la oración: <em>im Notfall</em> (en caso de emergencia), <em>im Falle eines Brandes</em> (en caso de incendio, con genitivo)."
+      },
+      {
+        contrast: "<em>En caso de que</em>, <em>siempre que</em>, <em>a menos que</em> piden en español el subjuntivo. Con las conjunciones alemanas correspondientes la condición abierta se expresa con el <strong>indicativo</strong>: <em>falls es regnet</em>, <em>sofern nichts dazwischenkommt</em>. Para presentarla como más remota se puede usar el Konjunktiv II: <em>Falls du Hilfe brauchen solltest, ...</em> La forma sin <em>wenn</em> se parece al español <em>de haberlo sabido, ...</em>, pero en alemán es normal también al hablar."
+      },
+      {
+        trap: "Con la negación el español y el alemán funcionan igual: <em>a menos que llueva</em> es <em>es sei denn, es regnet</em>, y <em>a menos que no llueva</em> es <em>es sei denn, es regnet nicht</em>. La trampa está en el modo y en el orden: el español pone un subjuntivo, el alemán un indicativo con el verbo en segunda posición, no al final."
+      },
+      {
+        tip: "En la lengua hablada casi siempre basta <em>wenn</em>; <em>falls</em> sirve para subrayar que algo podría no pasar (<em>Falls ich mich verspäte, ...</em>). En un correo formal, <em>Sollten Sie ...</em> suena enseguida profesional."
+      }
+    ],
+    grammar: {
+      title: "falls, sofern, es sei denn y la condición sin wenn",
+      note: "<b>falls, sofern</b>: verbo al final. <b>es sei denn,</b> + oración con el verbo en segunda posición. <b>Sin wenn</b>: verbo conjugado en primer lugar (<b>Hätte ich ..., Sollten Sie ...</b>).",
+      table: {
+        head: ["", "ejemplo", "español"],
+        rows: [
+          ["falls", "Falls du Hilfe brauchst, ruf mich an.", "en caso de que"],
+          ["sofern", "Sofern nichts dazwischenkommt, ...", "siempre que, con tal de que"],
+          ["es sei denn", "..., es sei denn, es schneit.", "a menos que"],
+          ["sin wenn", "Sollten Sie Fragen haben, ...", "si tuviera usted ..."]
+        ]
+      },
+      examples: [
+        { tr: "Si necesitas ayuda, llámame.", note: "falls: condición posible, indicativo" },
+        { tr: "Salvo imprevistos, estaremos allí a las ocho.", note: "sofern: formal; dazwischenkommen = surgir un imprevisto" },
+        { tr: "Salimos mañana, a menos que nieve.", note: "es sei denn: con indicativo y el verbo en segunda posición" },
+        { tr: "De haberlo sabido, habría venido.", note: "sin wenn: verbo en primer lugar" },
+        { tr: "Si tuviera alguna pregunta, diríjase a nosotros.", note: "Sollten Sie ...: la fórmula de las cartas" },
+        { tr: "En caso de emergencia, llame a este número.", note: "im Notfall: un sustantivo en lugar de la oración" }
+      ]
+    },
+    vocab: [
+      "la emergencia",
+      "la excepción",
+      "el requisito",
+      "la duda (im Zweifel: en caso de duda)",
+      "la consulta, la solicitud",
+      "surgir un imprevisto",
+      "dirigirse a",
+      "avisar, notificar",
+      "cancelar, anular",
+      "aplazar",
+      "en su caso, si es necesario",
+      "a condición de que"
+    ],
+    exercises: [
+      {
+        q: "¿Cómo se dice «Vamos a pasear, a menos que llueva»?",
+        opts: [
+          "Wir gehen spazieren, es sei denn, es regnet.",
+          "Wir gehen spazieren, es sei denn, es regnet nicht.",
+          "Wir gehen spazieren, es sei denn, regnet es."
+        ],
+        why: "Como en <i>a menos que llueva</i>, aquí no hace falta negación: con <i>nicht</i> la condición sería la contraria. <b>es sei denn</b> va seguido de una oración con el verbo en segunda posición: <i>es regnet</i>."
+      },
+      {
+        q: "¿Qué frase encaja mejor en un correo formal?",
+        opts: [
+          "Sollten Sie Fragen haben, wenden Sie sich bitte an uns.",
+          "Wenn du Fragen hast, frag einfach.",
+          "Falls du was wissen willst, sag Bescheid."
+        ],
+        why: "<b>Sollten Sie ...</b> en primer lugar, con <i>Sie</i> y <i>sich wenden an</i>, es la fórmula de las cartas y los correos de trabajo. Las otras dos tutean y son coloquiales."
+      },
+      {
+        q: "Completa: «___ du Hilfe brauchst, ruf mich an.» (en caso de que, no wenn)",
+        hint: "conjunción para una condición posible",
+        why: "<b>Falls</b>: presenta la condición como posible pero no segura, y manda el verbo <i>brauchst</i> al final."
+      },
+      {
+        q: "Completa sin wenn: «___ ich das gewusst, wäre ich gekommen.»",
+        hint: "verbo en primer lugar, Konjunktiv II de haben",
+        why: "<b>Hätte</b>: sin <i>wenn</i> el verbo conjugado abre la oración, y la principal empieza por <i>wäre</i>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Salimos mañana, a menos que nieve.",
+        why: "<i>es sei denn</i> es una fórmula fija: dos palabras después de <i>es</i>, luego coma y una oración con el verbo en segunda posición."
+      },
+      {
+        q: "Relaciona cada expresión con su significado.",
+        pairs: [
+          "en caso de que",
+          "siempre que, con tal de que",
+          "a menos que",
+          "en su caso, si es necesario"
+        ]
+      },
+      {
+        q: "Ordena las palabras.",
+        tr: "Si tuviera alguna pregunta, diríjase a nosotros.",
+        why: "<i>Sollten Sie Fragen haben, wenden Sie sich bitte an uns.</i> <i>Sollten</i> abre la condición, <i>haben</i> la cierra; la principal empieza por el verbo <i>wenden</i>."
+      },
+      {
+        q: "Traduce sin wenn: «De haberlo sabido, habría venido.»",
+        why: "<i>Hätte ich das gewusst, wäre ich gekommen</i>. Se puede añadir <i>dann</i>: <i>Hätte ich das gewusst, dann wäre ich gekommen</i>."
+      },
+      {
+        tr: "Si mañana nevara, aplazaríamos el viaje. Si tienen preguntas, diríjanse a la recepción.",
+        why: "En <i>schneien</i> la <b>sch</b> es [ʃ] y la <b>ei</b> es [aɪ]; en <i>verschieben</i> la <b>v</b> suena [f]; en <i>Rezeption</i> la <b>tion</b> suena [tsi̯oːn]."
+      },
+      {
+        tr: "Salvo imprevistos, estaremos allí a las ocho.",
+        why: "En <i>dazwischenkommt</i> la <b>z</b> es [ts] y la <b>sch</b> es [ʃ]; en <i>acht</i> la <b>ch</b> tras <i>a</i> es el sonido fuerte [x], como la <i>j</i> española; en <i>Uhr</i> la <b>h</b> alarga la <i>u</i>."
+      }
+    ]
+  },
+  "lesson:b2-u02-l3": {
+    theme: "Deseos y lamentos",
+    title: "Si al menos ...",
+    objectives: [
+      "expresar un deseo irreal con wenn ... bloß / nur / doch",
+      "expresar un lamento con el verbo en primer lugar",
+      "hacer más insistente una orden con bloß",
+      "entender nur dentro de una condicional completa (Wenn du nur ..., würdest du ...)"
+    ],
+    theory: [
+      {
+        h: "Deseos irreales",
+        p: "Un deseo presentado como lejano a la realidad de ahora, o un lamento por el pasado, tiene la forma de una condición sin consecuencia, con el <strong>Konjunktiv II</strong> y una partícula: <strong>bloß</strong>, <strong>nur</strong> o <strong>doch</strong>. Con <em>wenn</em> el verbo va al final: <em>Wenn ich bloß mehr Zeit hätte!</em> Sin <em>wenn</em> el verbo va en primer lugar: <em>Hätte ich nur nicht so viel gegessen! Wäre ich doch zu Hause geblieben!</em> Para el presente se usa también <em>würde</em>: <em>Wenn es doch endlich regnen würde!</em>"
+      },
+      {
+        h: "bloß en las órdenes y nur en la condición",
+        p: "En una orden, <strong>bloß</strong> la hace más insistente, casi amenazante: <em>Mach das bloß nicht!</em> (ni se te ocurra). Dentro de una condicional completa, es decir con consecuencia, <strong>nur</strong> puede limitar lo que sigue o reforzar el deseo: <em>Wenn du nur ein bisschen Geduld hättest, würdest du es schaffen</em> puede traducirse por «bastaría un poco de paciencia y lo conseguirías»."
+      },
+      {
+        contrast: "El español expresa el mismo deseo con <em>ojalá</em> o <em>si al menos</em>: <em>¡Ojalá tuviera más tiempo! ¡Si al menos me hubiera quedado en casa!</em> El alemán no tiene una palabra como <em>ojalá</em> al principio: usa <em>bloß</em>, <em>nur</em> o <em>doch</em> dentro de la oración, normalmente después del sujeto y los pronombres y antes de la negación: <em>Hätte ich nur nicht so viel gegessen! Wenn du es mir bloß früher gesagt hättest!</em> La posición exacta depende también de lo que se quiere resaltar."
+      },
+      {
+        trap: "Aquí <em>nur</em> y <em>bloß</em> no significan <em>solo</em>: <em>Wenn ich bloß mehr Zeit hätte!</em> no quiere decir «si tuviera solamente más tiempo», sino «si al menos tuviera más tiempo». Y el <em>doch</em> de un deseo no es el de las respuestas (<em>Doch!</em>, que sí): aquí refuerza el deseo."
+      },
+      {
+        tip: "Las tres partículas son casi intercambiables en los deseos; <em>doch</em> refuerza el deseo o el lamento como las otras, y la elección depende del contexto y de la entonación, no del registro: <em>Hätte ich doch ...!</em> es habitual también en la conversación. Para no equivocarte con el orden, escribe primero la oración sin partícula y luego colócala después del sujeto y los pronombres."
+      }
+    ],
+    grammar: {
+      title: "Deseos irreales: wenn ... bloß / nur / doch + Konjunktiv II",
+      note: "<b>Wenn</b> + partícula + verbo al final, o verbo en <b>primer lugar</b> + partícula. La partícula va dentro de la oración, normalmente después del sujeto y los pronombres y antes de <i>nicht</i>.",
+      table: {
+        head: ["", "presente", "pasado"],
+        rows: [
+          ["con wenn", "Wenn ich bloß mehr Zeit hätte!", "Wenn ich bloß früher gekommen wäre!"],
+          ["sin wenn", "Hätte ich nur mehr Zeit!", "Wäre ich doch früher gekommen!"],
+          ["con würde", "Wenn es doch endlich regnen würde!", "-"]
+        ]
+      },
+      examples: [
+        { tr: "¡Ojalá tuviera más tiempo!", note: "wenn + bloß, verbo al final" },
+        { tr: "¡Ojalá no hubiera comido tanto!", note: "verbo en primer lugar, nur antes de nicht" },
+        { tr: "¡Si al menos me hubiera quedado en casa!", note: "doch: deseo sobre el pasado" },
+        { tr: "¡Ojalá lloviera por fin!", note: "würde + infinitivo en presente" },
+        { tr: "¡Ni se te ocurra hacerlo!", note: "bloß en una orden: tono amenazante" },
+        { tr: "Bastaría un poco de paciencia y lo conseguirías.", note: "nur en una condicional completa: limita lo que sigue" }
+      ]
+    },
+    vocab: [
+      "la paciencia",
+      "la mala suerte (So ein Pech!: ¡qué mala suerte!)",
+      "la casualidad",
+      "el destino",
+      "la preocupación",
+      "el enfado, los problemas",
+      "enfadarse",
+      "esperar (tener esperanza)",
+      "añorar, anhelar (nach + dativo)",
+      "por fin",
+      "sin falta, a toda costa",
+      "en vano"
+    ],
+    exercises: [
+      {
+        q: "¿Cómo se dice «¡Ojalá tuviera más tiempo!»?",
+        opts: [
+          "Wenn ich bloß mehr Zeit hätte!",
+          "Wenn ich bloß mehr Zeit habe!",
+          "Wenn ich bloß hätte mehr Zeit!"
+        ],
+        why: "El deseo irreal pide el Konjunktiv II (<b>hätte</b>) al final de la oración con <i>wenn</i>. La segunda está en indicativo; la tercera no manda el verbo al final, como exige <i>wenn</i>."
+      },
+      {
+        q: "¿Qué significa «Mach das bloß nicht!»?",
+        opts: [
+          "¡Ni se te ocurra hacerlo!",
+          "Hazlo solo una vez.",
+          "No hagas solo eso."
+        ],
+        why: "En una orden <b>bloß</b> hace la prohibición insistente, casi amenazante. No significa <i>solo</i>."
+      },
+      {
+        q: "Completa con una partícula: «Hätte ich ___ nicht so viel gegessen!»",
+        hint: "partícula del lamento, antes de nicht",
+        why: "<b>nur</b>, <b>bloß</b> o <b>doch</b>: las tres refuerzan el lamento y van antes de <i>nicht</i>."
+      },
+      {
+        q: "Completa: «___ ich doch zu Hause geblieben!»",
+        hint: "verbo en primer lugar, Konjunktiv II de sein",
+        why: "<b>Wäre</b>: <i>bleiben</i> lleva <i>sein</i>, y sin <i>wenn</i> el verbo conjugado abre la oración."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "¡Ojalá lloviera por fin!",
+        why: "<i>Wenn es doch endlich regnen würde!</i> En presente es frecuente <i>würde</i> + infinitivo; <i>würde</i> cierra la oración con <i>wenn</i>."
+      },
+      {
+        q: "Relaciona cada expresión con su significado.",
+        pairs: [
+          "¡Si al menos ...!",
+          "por fin",
+          "sin falta, a toda costa",
+          "en vano"
+        ]
+      },
+      {
+        q: "Ordena las palabras.",
+        tr: "¡Ojalá no hubiera comido tanto!",
+        why: "<i>Hätte ich nur nicht so viel gegessen!</i> Verbo en primer lugar, luego el sujeto, la partícula <i>nur</i>, la negación y el participio al final."
+      },
+      {
+        q: "Traduce: «¡Si al menos me lo hubieras dicho antes!»",
+        why: "<i>Wenn du es mir bloß früher gesagt hättest!</i> o <i>Hättest du es mir bloß früher gesagt!</i> En lugar de <i>bloß</i> valen <i>nur</i> y <i>doch</i>."
+      },
+      {
+        tr: "¡Ojalá no hubiera esperado tanto! Ahora el piso ya no está. Qué mala suerte.",
+        why: "En <i>bloß</i> la <b>o</b> es larga; en <i>gewartet</i> la <b>w</b> es [v], como una <i>f</i> sonora; en <i>Pech</i> la <b>ch</b> tras <i>e</i> es el sonido suave [ç]."
+      },
+      {
+        tr: "¡Ojalá hubiera tenido un poco más de paciencia!",
+        why: "En <i>Geduld</i> el acento cae en <b>duld</b>; en <i>bisschen</i> la <b>s</b> y la <b>ch</b> se pronuncian separadas, [sç]; en <i>gehabt</i> la <b>b</b> delante de <i>t</i> suena [p]."
+      }
+    ]
+  },
+  "lesson:b2-u02-test": {
+    theme: "Evaluación",
+    title: "Test: Condiciones",
+    objectives: [
+      "comprobar los tipos de condicional, falls, es sei denn y la condición sin wenn"
+    ],
+    theory: [
+      {
+        p: "Diez preguntas sobre toda la unidad. Se aprueba con el 70%. No vuelvas a mirar las lecciones mientras respondes: si no recuerdas algo, es mejor volver a repasar."
+      }
+    ],
+    exercises: [
+      {
+        q: "Completa: «Wenn er früher losgefahren ___, hätte er den Zug erreicht.»",
+        hint: "Konjunktiv II de sein, er",
+        why: "<b>Wäre</b>: <i>losfahren</i> lleva <i>sein</i>, y el Konjunktiv II de pasado cierra la oración con <i>wenn</i>."
+      },
+      {
+        q: "Completa: «Wir kommen, es sei denn, es ___ etwas dazwischen.»",
+        hint: "dazwischenkommen, presente de indicativo",
+        why: "<b>kommt</b>: tras <i>es sei denn</i> viene una oración principal en indicativo, con el verbo en segunda posición y la partícula <i>dazwischen</i> al final."
+      },
+      {
+        q: "Completa la fórmula formal: «___ Sie Fragen haben, wenden Sie sich an uns.»",
+        hint: "verbo modal en primer lugar",
+        why: "<b>Sollten</b>: la condición sin <i>wenn</i> de las cartas formales, con <i>haben</i> al final."
+      },
+      {
+        q: "¿Qué frase es una condicional irreal de pasado?",
+        opts: [
+          "Wenn sie angerufen hätte, wäre ich gekommen.",
+          "Wenn sie anruft, komme ich.",
+          "Wenn sie anrufen würde, käme ich."
+        ],
+        why: "Solo la primera tiene el Konjunktiv II de pasado (<i>angerufen hätte</i>, <i>wäre gekommen</i>). La segunda es abierta, la tercera irreal de presente."
+      },
+      {
+        q: "¿Qué frase significa «Vengo mañana, a menos que esté enfermo»?",
+        opts: [
+          "Ich komme morgen, es sei denn, ich bin krank.",
+          "Ich komme morgen, es sei denn, ich bin nicht krank.",
+          "Ich komme morgen, es sei denn, ich krank bin."
+        ],
+        why: "<i>es sei denn</i> + <i>ich bin krank</i>: indicativo y verbo en segunda posición, aunque el español ponga un subjuntivo. Con <i>nicht</i> la condición sería la contraria."
+      },
+      {
+        q: "Completa con una consecuencia referida al presente (condicional mixta): «Hätte ich gestern nicht so viel gearbeitet, ...»",
+        opts: [
+          "wäre ich jetzt nicht so müde.",
+          "wäre ich jetzt nicht so müde gewesen.",
+          "bin ich jetzt nicht so müde."
+        ],
+        why: "Mixta: la condición es pasada, la consecuencia se refiere al presente (<i>jetzt</i>), así que Konjunktiv II de presente: <b>wäre ... müde</b>."
+      },
+      {
+        q: "Completa la frase.",
+        tr: "Si tuviera más tiempo, haría deporte más a menudo.",
+        why: "<i>Wenn ich mehr Zeit hätte, würde ich öfter Sport machen</i>: irreal de presente, <i>hätte</i> al final y <i>würde</i> al principio de la principal."
+      },
+      {
+        q: "Completa la frase sin wenn.",
+        tr: "De haberlo sabido, te habría ayudado.",
+        why: "<i>Hätte ich das gewusst, hätte ich dir geholfen</i>: el primer <i>hätte</i> abre la condición, el segundo abre la principal."
+      },
+      {
+        tr: "Si mañana tienes tiempo, pásate. Si hubiera sabido que estabas en la ciudad, te habría llamado ya ayer.",
+        why: "En <i>vorbei</i> la <b>v</b> suena [f]; en <i>Stadt</i> la <b>dt</b> final es [t]; en <i>angerufen</i> el acento cae en <b>an</b>."
+      },
+      {
+        tr: "Si no pudiera asistir, le rogamos que cancele con antelación.",
+        why: "En <i>verhindert</i> la <b>v</b> suena [f]; en <i>rechtzeitig</i> la <b>ch</b> es [ç] y la <b>z</b> es [ts]; en <i>absagen</i> la <b>b</b> delante de <i>s</i> suena [p]."
+      }
+    ]
   }
 });
