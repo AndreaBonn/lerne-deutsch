@@ -312,7 +312,7 @@ LINGUAI.addUnits("C1", [
           { it: "die Bescheinigung", plural: "die Bescheinigungen", ex: "Ich brauche eine Bescheinigung vom Arbeitgeber." },
           { it: "der Nachweis", plural: "die Nachweise", ex: "Als Nachweis genügt eine Kopie." },
           { it: "die Rechnung", plural: "die Rechnungen", ex: "Die Rechnung ist schon bezahlt." },
-          { it: "die Unterlagen", plural: "-", ex: "Bitte bringen Sie alle Unterlagen mit." },
+          { it: "die Unterlage", plural: "die Unterlagen", ex: "Bitte bringen Sie alle Unterlagen mit." },
           { it: "erledigen", ex: "Das erledige ich morgen." },
           { it: "einreichen", ex: "Die Bewerbung muss bis Montag eingereicht werden." },
           { it: "ausfüllen", ex: "Füllen Sie bitte das Formular aus." },

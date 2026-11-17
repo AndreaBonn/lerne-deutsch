@@ -485,7 +485,7 @@ LINGUAI.addStrings("it", {
     ]
   },
   "unit:c1-u02": {
-    title: "Farcela, cavarsela",
+    title: "Portare a termine",
     grammarNote: "Verbi di funzione (zur Verfügung stellen, in Frage kommen, eine Entscheidung treffen) · sostituti del passivo: sich lassen, sein + zu, aggettivi in -bar · prefissi separabili e inseparabili con senso diverso (umfahren) · modi di dire"
   },
   "lesson:c1-u02-l1": {
@@ -504,7 +504,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Il posto nella frase",
-        p: "Il verbo si coniuga al suo posto, mentre il nome con la sua preposizione va verso la fine, come una particella separabile: <em>Die Firma <strong>stellt</strong> uns die Räume <strong>zur Verfügung</strong>.</em> Al Perfekt il participio va dopo il gruppo: <em>Die Firma hat uns die Räume zur Verfügung gestellt.</em> La negazione di solito precede il gruppo: <em>Das kommt nicht in Frage.</em>"
+        p: "I gruppi con preposizione (<em>zur Verfügung stellen, in Kraft treten, in Frage kommen</em>) si comportano come una particella separabile: il verbo si coniuga al suo posto e il gruppo va verso la fine. <em>Die Firma <strong>stellt</strong> uns die Räume <strong>zur Verfügung</strong>.</em> Al Perfekt e con un modale il gruppo precede il participio o l'infinito: <em>Die Firma hat uns die Räume zur Verfügung gestellt. Das Gesetz soll im Januar in Kraft treten.</em> I gruppi con un complemento oggetto (<em>eine Entscheidung treffen</em>) seguono invece l'ordine normale della frase: <em>Wir treffen heute eine Entscheidung über den Antrag. Wir müssen bis Freitag eine Entscheidung treffen.</em> La negazione di solito precede il gruppo: <em>Das kommt nicht in Frage.</em>"
       },
       {
         contrast: "Molti di questi gruppi esistono anche in italiano con lo stesso schema (<em>mettere a disposizione</em>, <em>entrare in vigore</em>, <em>prendere una decisione</em>), ed è un buon appiglio. Il rischio è il calco quando il verbo non coincide: <em>prendere una decisione</em> è <em>eine Entscheidung treffen</em>, non <em>nehmen</em>; <em>fare una domanda</em> è <em>eine Frage stellen</em>, non <em>machen</em>."
@@ -534,7 +534,7 @@ LINGUAI.addStrings("it", {
         { tr: "La ditta ci mette a disposizione i locali.", note: "il nome va verso la fine: zur Verfügung" },
         { tr: "Dobbiamo prendere una decisione entro venerdì.", note: "treffen, non nehmen" },
         { tr: "La nuova legge entra in vigore a gennaio.", note: "in Kraft treten" },
-        { tr: "Per questo posto sono in considerazione solo due candidati.", note: "in Frage kommen: essere possibile" },
+        { tr: "Per questo posto possono essere presi in considerazione solo due candidati.", note: "in Frage kommen: essere possibile" },
         { tr: "Ha espresso chiaramente la sua delusione.", note: "zum Ausdruck bringen, registro formale" },
         { tr: "Abbiate riguardo per i vicini, per favore.", note: "Rücksicht nehmen auf + accusativo" }
       ]
@@ -610,7 +610,7 @@ LINGUAI.addStrings("it", {
         why: "In <i>Regelung</i> l'accento cade su <b>Re</b>; in <i>Verfügung</i> l'accento cade su <b>fü</b>; in <i>Geräte</i> la <b>ä</b> è lunga."
       },
       {
-        tr: "Dobbiamo prendere una decisione già oggi.",
+        tr: "Dobbiamo prendere una decisione oggi stesso.",
         why: "In <i>Entscheidung</i> l'accento cade su <b>schei</b> e <b>ei</b> si pronuncia [aɪ]; in <i>treffen</i> la <b>e</b> è breve."
       }
     ]
@@ -637,7 +637,7 @@ LINGUAI.addStrings("it", {
         contrast: "L'italiano ha forme molto vicine: <em>il modulo è da consegnare entro venerdì</em> corrisponde a <em>ist bis Freitag abzugeben</em>, e <em>-abile, -ibile</em> funzionano come <em>-bar</em> (<em>risolvibile</em> = <em>lösbar</em>). <em>sich lassen</em> invece non si traduce alla lettera: <em>Das lässt sich machen</em> è «si può fare», non «si lascia fare»."
       },
       {
-        trap: "<em>sein + zu</em> non è un passivo al Perfekt: <em>Die Rechnung ist zu bezahlen</em> significa «la fattura va pagata», mentre <em>Die Rechnung ist bezahlt</em> significa «la fattura è pagata». Il <em>zu</em> cambia tutto."
+        trap: "Il <em>zu</em> cambia tutto: <em>Die Rechnung ist zu bezahlen</em> esprime un obbligo, «la fattura va pagata»; <em>Die Rechnung ist bezahlt</em> descrive lo stato risultante (passivo di stato), «la fattura è pagata»; il Perfekt del passivo di processo è <em>Die Rechnung ist bezahlt worden</em>."
       },
       {
         tip: "Per capire un <em>sein + zu</em> in un regolamento, prova a sostituirlo con <em>muss ... werden</em>: <em>ist abzugeben</em> = <em>muss abgegeben werden</em>. Se il senso regge, è un obbligo."
@@ -670,7 +670,7 @@ LINGUAI.addStrings("it", {
       "il certificato, l'attestato",
       "la prova, la documentazione",
       "la fattura, il conto",
-      "i documenti, la documentazione (plurale)",
+      "il documento; al plurale, la documentazione",
       "sbrigare, occuparsi di",
       "presentare, inoltrare (una domanda)",
       "compilare",
@@ -843,7 +843,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Abbina ogni modo di dire al suo significato.",
         pairs: [
-          "dare fastidio, andare contro voglia",
+          "dare fastidio, risultare sgradito",
           "cogliere nel segno",
           "dare sui nervi",
           "rimandare"
@@ -875,7 +875,7 @@ LINGUAI.addStrings("it", {
   },
   "lesson:c1-u02-test": {
     theme: "Verifica",
-    title: "Test: Farcela, cavarsela",
+    title: "Test: Portare a termine",
     objectives: [
       "verificare i verbi di funzione, i sostituti del passivo e i prefissi separabili e inseparabili"
     ],
@@ -891,13 +891,13 @@ LINGUAI.addStrings("it", {
         why: "<b>tritt</b>: <i>in Kraft treten</i>, con il cambio vocalico al presente."
       },
       {
-        q: "Completa: «Das Problem ___ sich leicht lösen.»",
-        hint: "sich lassen, terza persona singolare",
+        q: "Completa: «Das Problem ___ sich leicht lösen.» (il problema si può risolvere facilmente)",
+        hint: "un verbo, terza persona singolare",
         why: "<b>lässt</b>: <i>lässt sich lösen</i> = <i>kann gelöst werden</i>."
       },
       {
         q: "Completa l'avviso: «Der Bericht ist bis Montag ___.»",
-        hint: "abgeben con zu",
+        hint: "il rapporto va consegnato entro lunedì (abgeben)",
         why: "<b>abzugeben</b>: <i>sein + zu</i>, con <i>zu</i> fra particella e verbo."
       },
       {
@@ -915,13 +915,13 @@ LINGUAI.addStrings("it", {
         why: "<i>in Frage kommen</i> = «essere possibile»: <b>solo chi ha esperienza</b> entra in considerazione."
       },
       {
-        q: "Quale frase equivale a «Das kann man nicht ändern»?",
+        q: "In un regolamento universitario: quale frase esprime un obbligo, e non solo una possibilità?",
         opts: [
-          "Das ist nicht zu ändern.",
-          "Das ist nicht geändert.",
-          "Das lässt nicht ändern."
+          "Die Hausarbeit ist bis zum 30. Juni abzugeben.",
+          "Die Hausarbeit lässt sich bis zum 30. Juni abgeben.",
+          "Die Hausarbeit kann bis zum 30. Juni abgegeben werden."
         ],
-        why: "<b>sein + zu</b>: <i>ist nicht zu ändern</i>, «non si può cambiare». <i>ist nicht geändert</i> descrive uno stato, e a <i>lässt</i> manca <i>sich</i>."
+        why: "In un regolamento <b>sein + zu</b> esprime di norma un obbligo («va consegnata»). Le altre due sono corrette ma dicono solo che la consegna è possibile."
       },
       {
         q: "Una collega dice della riunione del venerdì sera: «Das geht mir gegen den Strich.» Come si sente?",
@@ -930,7 +930,7 @@ LINGUAI.addStrings("it", {
           "contenta",
           "stanca"
         ],
-        why: "<i>gegen den Strich gehen</i> = «dare fastidio, andare contro voglia»."
+        why: "<i>gegen den Strich gehen</i> = «dare fastidio, risultare sgradito»."
       },
       {
         q: "Abbina ogni gruppo al suo significato.",
@@ -947,7 +947,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "I documenti vanno presentati entro la fine del mese.",
-        why: "In <i>Unterlagen</i> l'accento cade su <b>Un</b>; in <i>Monats</i> la <b>o</b> è lunga; in <i>einzureichen</i> <b>ei</b> si pronuncia [aɪ]."
+        why: "In <i>Monats</i> la <b>o</b> è lunga; in <i>einzureichen</i> <b>ei</b> si pronuncia [aɪ]."
       }
     ]
   }

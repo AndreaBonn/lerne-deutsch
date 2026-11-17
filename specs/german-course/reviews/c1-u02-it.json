@@ -1,0 +1,13 @@
+{
+  "bundleHash": "ba84e968c49522ef5b565dbee3a5d17082b21960772235a9bacb2d6c50dc347b",
+  "findings": [
+    {
+      "kind": "livello CEFR e progressione didattica",
+      "msg": "L'intera unità, incluso il test, verifica soprattutto riconoscimento di espressioni frequenti e completamenti guidati di singole parole, con frasi brevi e distrattori palesemente estranei. Non emerge una richiesta linguistica adeguata al C1: anche i sostituti del passivo e i prefissi ambivalenti vengono trattati solo nei casi elementari. Per mantenere l'etichetta C1, aggiungere testi autentici articolati, riformulazioni contestualizzate, distinzioni di registro e interpretazioni del valore modale di sein + zu, con alternative grammaticalmente plausibili; includere queste competenze nel test. Altrimenti riclassificare il materiale come ripasso di livello inferiore.",
+      "path": "merged"
+    }
+  ],
+  "lang": "it",
+  "unit": "c1-u02",
+  "verdict": "fail"
+}
