@@ -970,7 +970,7 @@ LINGUAI.addStrings("en", {
       "the century",
       "the building",
       "the bridge",
-      "the construction, the building (plural Bauten: buildings)",
+      "the structure, the building",
       "the invention",
       "the procedure, the process",
       "to erect, to build",
@@ -1054,7 +1054,7 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "The tense of written stories",
-        p: "Fairy tales, novels, biographies and news reports tell the past in the <strong>Präteritum</strong>: <em>Es war einmal ein armer Müller. Plötzlich klingelte das Telefon. Sie stand auf und ging zum Fenster.</em> Weak verbs take <em>-te</em> (<em>klingelte, erzählte</em>); strong verbs change their vowel and have no ending in the first and third person (<em>ich lief, er lief</em>). What had happened before goes into the <strong>Plusquamperfekt</strong>: <em>Als sie ankam, war der Zug schon abgefahren.</em>"
+        p: "Fairy tales, novels, biographies and news reports tell the past in the <strong>Präteritum</strong>: <em>Es war einmal ein armer Müller. Plötzlich klingelte das Telefon. Sie stand auf und ging zum Fenster.</em> Weak verbs take <em>-te</em> (<em>klingelte, erzählte</em>); strong verbs change their vowel and have no ending in the first and third person singular (<em>ich lief, er lief</em>). What had happened before goes into the <strong>Plusquamperfekt</strong>: <em>Als sie ankam, war der Zug schon abgefahren.</em>"
       },
       {
         h: "Strong verbs to recognize",
@@ -1109,7 +1109,7 @@ LINGUAI.addStrings("en", {
     exercises: [
       {
         tr: "The Präteritum of laufen, all persons.",
-        why: "<i>lief, liefst, lief, liefen, lieft, liefen</i>: vowel <i>ie</i>, no ending in the first and third person."
+        why: "<i>lief, liefst, lief, liefen, lieft, liefen</i>: vowel <i>ie</i>, no ending in the first and third person singular."
       },
       {
         tr: "The Präteritum of ziehen, all persons.",
@@ -1148,9 +1148,9 @@ LINGUAI.addStrings("en", {
         why: "<b>war</b>: the Plusquamperfekt of <i>abfahren</i> takes <i>sein</i>, because it is a verb of motion, while English always says <i>had</i>."
       },
       {
-        q: "Complete the sentence.",
+        q: "Complete the sentence with laufen in the Präteritum.",
         tr: "He ran as fast as he could.",
-        why: "<i>Er lief, so schnell er konnte</i>: <i>lief</i> from <i>laufen</i>, <i>konnte</i> from <i>können</i>. <i>rannte</i>, from <i>rennen</i>, also works instead of <i>lief</i>."
+        why: "<i>Er lief, so schnell er konnte</i>: <i>lief</i> from <i>laufen</i>, <i>konnte</i> from <i>können</i>."
       },
       {
         q: "Translate: “Suddenly the light went out.”",
@@ -1218,7 +1218,7 @@ LINGUAI.addStrings("en", {
       "the contract",
       "the permission",
       "the farewell, the goodbye",
-      "consideration (Rücksicht nehmen auf: to be considerate of)",
+      "the plan",
       "the signature",
       "to sign",
       "to say goodbye",

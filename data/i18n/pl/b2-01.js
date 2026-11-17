@@ -911,5 +911,447 @@ LINGUAI.addStrings("pl", {
         why: "W <i>verhindert</i> <b>v</b> czyta się jak <i>f</i>; w <i>rechtzeitig</i> <b>ch</b> to [ç], a <b>z</b> to polskie <i>c</i>; w <i>absagen</i> <b>b</b> przed <i>s</i> czyta się jak <i>p</i>."
       }
     ]
+  },
+  "unit:b2-u03": {
+    title: "Strona bierna i czas opowiadania",
+    grammarNote: "strona bierna w Perfekcie i Plusquamperfekcie (ist gebaut worden) · strona bierna z czasownikami modalnymi (muss ausgefüllt werden) · strona bierna stanu (ist geschlossen) · Präteritum w opowiadaniu · ohne ... zu, statt ... zu, ohne dass, anstatt dass"
+  },
+  "lesson:b2-u03-l1": {
+    theme: "Historia i procesy techniczne",
+    title: "Zbudowano, zostało naprawione",
+    objectives: [
+      "tworzyć stronę bierną w Perfekcie i Plusquamperfekcie z worden",
+      "używać strony biernej z czasownikiem modalnym",
+      "odróżniać stronę bierną czynności (wird geschlossen) od strony biernej stanu (ist geschlossen)",
+      "opowiadać historię budynku albo wynalazku"
+    ],
+    theory: [
+      {
+        h: "Strona bierna w Perfekcie",
+        p: "W Perfekcie stronę bierną tworzy <strong>sein</strong> + imiesłów II + <strong>worden</strong>: <em>Die Brücke ist letztes Jahr renoviert worden</em> (most został wyremontowany w zeszłym roku). W Plusquamperfekcie <em>sein</em> stoi w Präteritum: <em>Der Fehler war schon vorher entdeckt worden</em> (błąd został wykryty już wcześniej). W tekstach pisanych i w historii często używa się też Präteritum: <em>Das Rathaus wurde im sechzehnten Jahrhundert gebaut.</em>"
+      },
+      {
+        h: "Z czasownikami modalnymi i strona bierna stanu",
+        p: "Z <strong>czasownikiem modalnym</strong> odmienia się modalny, a strona bierna zostaje w bezokoliczniku, imiesłów + <em>werden</em>, na końcu: <em>Das Formular muss bis Freitag ausgefüllt werden. Die Daten konnten nicht gespeichert werden.</em> <strong>Strona bierna stanu</strong> (Zustandspassiv) to <strong>sein</strong> + imiesłów; opisuje wynik czynności: <em>Das Geschäft ist sonntags geschlossen.</em> Strona bierna czynności, z <em>werden</em>, opisuje samą czynność: <em>Das Geschäft wird um acht geschlossen.</em>"
+      },
+      {
+        contrast: "Polski ma tu podobny podział: <em>most został wyremontowany</em> (czynność, <em>zostać</em>) i <em>most jest wyremontowany</em> (stan, <em>być</em>). Odpowiednio: <em>ist renoviert worden</em> i <em>ist renoviert</em>. Polskie <em>był remontowany</em> (aspekt niedokonany, czynność w toku) to po niemiecku zwykle Präteritum: <em>wurde renoviert</em>. A tam, gdzie polski mówi bezosobowo <em>produkuje się samochody</em>, niemiecki chętnie używa strony biernej: <em>Autos werden hergestellt</em>."
+      },
+      {
+        trap: "W stronie biernej imiesłów od <em>werden</em> brzmi <strong>worden</strong>, bez <em>ge-</em>: <em>ist gebaut worden</em>, nie <em>ist gebaut geworden</em>. <em>Geworden</em> to imiesłów od <em>werden</em> w znaczeniu „zostać kimś”: <em>Er ist Arzt geworden</em> (został lekarzem). Polskie <em>został</em> pasuje do obu, więc łatwo je pomylić."
+      },
+      {
+        tip: "Żeby wybrać między <em>werden</em> a <em>sein</em>, zapytaj, czy zdanie opisuje czynność, czy stan, który z niej wynika: <em>drzwi są otwierane</em> to <em>Die Tür wird geöffnet</em>, <em>drzwi są otwarte</em> to <em>Die Tür ist geöffnet</em>. Samo polskie <em>być</em> nie rozstrzyga, bo występuje w obu."
+      }
+    ],
+    grammar: {
+      title: "Strona bierna: Perfekt, czasowniki modalne, strona bierna stanu",
+      note: "<b>Perfekt</b>: ist + imiesłów + <b>worden</b>. <b>Plusquamperfekt</b>: war + imiesłów + worden. <b>Z modalnym</b>: modalny + imiesłów + werden. <b>Stan</b>: sein + imiesłów.",
+      table: {
+        head: ["", "przykład", "po polsku"],
+        rows: [
+          ["Präteritum", "Das Haus wurde 1900 gebaut.", "dom zbudowano"],
+          ["Perfekt", "Das Haus ist 1900 gebaut worden.", "dom został zbudowany w 1900 roku"],
+          ["Plusquamperfekt", "Das Haus war schon gebaut worden.", "dom został już wcześniej zbudowany"],
+          ["z modalnym", "Das Haus muss renoviert werden.", "dom musi zostać wyremontowany"],
+          ["strona bierna stanu", "Das Haus ist renoviert.", "dom jest wyremontowany"]
+        ]
+      },
+      examples: [
+        { tr: "Ratusz zbudowano w szesnastym wieku.", note: "Präteritum: typowe dla tekstów historycznych" },
+        { tr: "Most został wyremontowany w zeszłym roku.", note: "Perfekt: ist + imiesłów + worden" },
+        { tr: "Błąd został wykryty już wcześniej.", note: "Plusquamperfekt: war + imiesłów + worden" },
+        { tr: "Formularz musi zostać wypełniony najpóźniej w piątek.", note: "modalny + imiesłów + werden" },
+        { tr: "Nie udało się zapisać danych.", note: "konnten ... gespeichert werden: modalny w Präteritum" },
+        { tr: "Sklep jest w niedziele zamknięty.", note: "strona bierna stanu: sein + imiesłów" }
+      ]
+    },
+    vocab: [
+      "wiek, stulecie",
+      "budynek",
+      "most",
+      "budowla",
+      "wynalazek",
+      "procedura, metoda",
+      "wznieść, postawić",
+      "zniszczyć",
+      "wynaleźć",
+      "produkować, wytwarzać",
+      "odkryć, wykryć",
+      "remontować"
+    ],
+    exercises: [
+      {
+        q: "Jak powiesz „Most został wyremontowany”?",
+        opts: [
+          "Die Brücke ist renoviert worden.",
+          "Die Brücke ist renoviert geworden.",
+          "Die Brücke hat renoviert worden."
+        ],
+        why: "Strona bierna w Perfekcie: <b>ist</b> + imiesłów + <b>worden</b>. <i>Geworden</i> to imiesłów od <i>werden</i> w znaczeniu „zostać kimś”, a czasownikiem posiłkowym jest <i>sein</i>, nie <i>haben</i>."
+      },
+      {
+        q: "Które zdanie opisuje stan, „Sklep jest zamknięty”?",
+        opts: [
+          "Das Geschäft ist geschlossen.",
+          "Das Geschäft wird geschlossen.",
+          "Das Geschäft ist geschlossen worden."
+        ],
+        why: "Stan wyraża <b>sein</b> + imiesłów, jak polskie <i>być</i>. <i>Wird geschlossen</i> opisuje czynność zamykania, <i>ist geschlossen worden</i> zamknięcie, które nastąpiło w przeszłości."
+      },
+      {
+        q: "Jak powiesz „Formularz musi zostać wypełniony”?",
+        opts: [
+          "Das Formular muss ausgefüllt werden.",
+          "Das Formular muss ausfüllen werden.",
+          "Das Formular wird ausgefüllt müssen."
+        ],
+        why: "Z modalnym: odmieniony modalny (<b>muss</b>) + imiesłów + <b>werden</b> na końcu."
+      },
+      {
+        q: "Uzupełnij stronę bierną w Perfekcie: „Die Kirche ist 1890 gebaut ___.”",
+        hint: "imiesłów od werden w stronie biernej",
+        why: "<b>worden</b>: w stronie biernej w Perfekcie imiesłów od <i>werden</i> traci <i>ge-</i>."
+      },
+      {
+        q: "Uzupełnij w Plusquamperfekcie: „Der Fehler ___ schon vorher entdeckt worden.”",
+        hint: "Präteritum od sein",
+        why: "<b>war</b>: Plusquamperfekt strony biernej ma <i>sein</i> w Präteritum, potem imiesłów i <i>worden</i>."
+      },
+      {
+        q: "Uzupełnij: „Die Daten konnten nicht gespeichert ___.”",
+        hint: "bezokolicznik strony biernej",
+        why: "<b>werden</b>: po czasowniku modalnym strona bierna zostaje w bezokoliczniku, imiesłów + <i>werden</i>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Od 1950 roku produkuje się tu samochody.",
+        why: "<i>Hier werden seit 1950 Autos hergestellt</i>: polska forma bezosobowa staje się stroną bierną z <i>werden</i>, w liczbie mnogiej, bo podmiotem są <i>Autos</i>."
+      },
+      {
+        q: "Przetłumacz: „Miasto zostało zniszczone w czasie wojny.”",
+        why: "<i>Die Stadt ist im Krieg zerstört worden</i> albo w Präteritum <i>Die Stadt wurde im Krieg zerstört</i>. Zamiast <i>im Krieg</i> pasuje też <i>während des Krieges</i>."
+      },
+      {
+        tr: "Stary ratusz zbudowano w szesnastym wieku. W czasie wojny został prawie całkowicie zniszczony, ale potem odbudowano go zgodnie z oryginałem.",
+        why: "W <i>Jahrhundert</i> <b>J</b> to polskie <i>j</i>; w <i>vollständig</i> <b>v</b> czyta się jak <i>f</i>, a końcowe <b>-ig</b> jak [ɪç]; w <i>originalgetreu</i> <b>eu</b> to [ɔʏ], podobne do <i>oj</i>."
+      },
+      {
+        tr: "Most został wyremontowany w zeszłym roku i znowu jest otwarty.",
+        why: "W <i>Brücke</i> <b>ü</b> jest krótkie; w <i>renoviert</i> <b>v</b> czyta się jak polskie <i>w</i>, bo słowo pochodzi z łaciny; w <i>geöffnet</i> <b>ö</b> jest krótkie i zaokrąglone."
+      }
+    ]
+  },
+  "lesson:b2-u03-l2": {
+    theme: "Opowieści",
+    title: "Präteritum w opowiadaniu",
+    objectives: [
+      "opowiadać historię w Präteritum",
+      "odmieniać w Präteritum najczęstsze czasowniki mocne",
+      "używać Plusquamperfektu dla tego, co wydarzyło się wcześniej",
+      "rozpoznawać styl baśni (Es war einmal ...)"
+    ],
+    theory: [
+      {
+        h: "Czas opowiadania pisanego",
+        p: "W baśniach, powieściach, biografiach i artykułach prasowych przeszłość opowiada się w <strong>Präteritum</strong>: <em>Es war einmal ein armer Müller. Plötzlich klingelte das Telefon. Sie stand auf und ging zum Fenster.</em> Czasowniki słabe dostają <em>-te</em> (<em>klingelte, erzählte</em>); mocne zmieniają samogłoskę i w pierwszej i trzeciej osobie liczby pojedynczej nie mają końcówki (<em>ich lief, er lief</em>). To, co wydarzyło się wcześniej, wyraża <strong>Plusquamperfekt</strong>: <em>Als sie ankam, war der Zug schon abgefahren.</em>"
+      },
+      {
+        h: "Czasowniki mocne do rozpoznania",
+        p: "W opowiadaniach wracają wciąż te same czasowniki mocne: <em>gehen → ging, kommen → kam, stehen → stand, sitzen → saß, liegen → lag, laufen → lief, rufen → rief, ziehen → zog, treffen → traf, finden → fand, schreiben → schrieb, erschrecken → erschrak</em>. Perfekt zostaje w wypowiedziach postaci, bo to czas mowy: <em>„Ich habe einen Traum gehabt“, sagte sie.</em>"
+      },
+      {
+        contrast: "Polski czas przeszły jest jeden, ale rozróżnia aspekt: <em>siedziała</em> (niedokonany) i <em>wstała</em> (dokonany). Niemiecki nie ma aspektu, więc jedno Präteritum służy do obu: <em>Sie saß am Fenster</em> (siedziała przy oknie) i <em>Plötzlich stand sie auf</em> (nagle wstała). Różnicę robią kontekst i przysłówki (<em>plötzlich, immer, jeden Tag</em>). Polski ma też ten sam czas w piśmie i w mowie; niemiecki w mowie woli Perfekt, poza <em>sein</em>, <em>haben</em> i czasownikami modalnymi."
+      },
+      {
+        trap: "Form mocnych nie da się wyprowadzić z bezokolicznika regułą: trzeba ich uczyć się razem z imiesłowem (<em>laufen, lief, gelaufen</em>; <em>ziehen, zog, gezogen</em>). Uważaj na <em>erschrecken</em>: w znaczeniu „przestraszyć się” jest mocny (<em>sie erschrak</em>), w znaczeniu „przestraszyć kogoś” słaby (<em>er erschreckte das Kind</em>)."
+      },
+      {
+        tip: "Przeczytanie baśni braci Grimm to najszybszy sposób, żeby utrwalić Präteritum: prawie każde zdanie je ma, a formy mocne powtarzają się bez przerwy."
+      }
+    ],
+    grammar: {
+      title: "Präteritum i Plusquamperfekt w opowiadaniu",
+      note: "<b>Czasowniki słabe</b>: temat + <i>-te</i> (klingelte). <b>Czasowniki mocne</b>: zmiana samogłoski, bez końcówki przy ich i er (lief, zog). <b>Plusquamperfekt</b>: hatte / war + imiesłów, dla tego, co stało się wcześniej.",
+      table: {
+        head: ["bezokolicznik", "Präteritum (er)", "Perfekt (er)"],
+        rows: [
+          ["klingeln", "klingelte", "hat geklingelt"],
+          ["laufen", "lief", "ist gelaufen"],
+          ["ziehen", "zog", "hat gezogen"],
+          ["treffen", "traf", "hat getroffen"],
+          ["erschrecken (przestraszyć się)", "erschrak", "ist erschrocken"]
+        ]
+      },
+      examples: [
+        { tr: "Był sobie raz biedny młynarz.", note: "Es war einmal: początek baśni" },
+        { tr: "Nagle zadzwonił telefon.", note: "czasownik słaby: klingelte" },
+        { tr: "Wstała i podeszła do okna.", note: "czasowniki mocne: stand, ging" },
+        { tr: "Biegł tak szybko, jak mógł.", note: "lief: Präteritum od laufen" },
+        { tr: "Kiedy przyjechała, pociąg już odjechał.", note: "Plusquamperfekt dla tego, co stało się wcześniej" },
+        { tr: "Nikt nie wiedział, kto napisał ten list.", note: "wusste (czasownik mieszany) i Plusquamperfekt hatte geschrieben" }
+      ]
+    },
+    vocab: [
+      "historia, opowieść",
+      "baśń",
+      "bohater",
+      "opowiadanie",
+      "początek",
+      "koniec",
+      "opowiadać",
+      "dziać się, wydarzyć się",
+      "przestraszyć się (erschrak, ist erschrocken)",
+      "nagle",
+      "wtedy, w tamtych czasach",
+      "w końcu, ostatecznie"
+    ],
+    exercises: [
+      {
+        tr: "Präteritum czasownika laufen, wszystkie osoby.",
+        why: "<i>lief, liefst, lief, liefen, lieft, liefen</i>: samogłoska <i>ie</i>, bez końcówki w pierwszej i trzeciej osobie liczby pojedynczej."
+      },
+      {
+        tr: "Präteritum czasownika ziehen, wszystkie osoby.",
+        why: "<i>zog, zogst, zog, zogen, zogt, zogen</i>: samogłoska zmienia się w <i>o</i>, a <i>h</i> znika."
+      },
+      {
+        tr: "Präteritum czasownika treffen, wszystkie osoby.",
+        why: "<i>traf, trafst, traf, trafen, traft, trafen</i>: podwójne <i>f</i> staje się pojedyncze po długim <i>a</i>."
+      },
+      {
+        q: "Które zdanie ma czas typowy dla opowiadania pisanego?",
+        opts: [
+          "Sie stand auf und ging zum Fenster.",
+          "Sie ist aufgestanden und zum Fenster gegangen.",
+          "Sie steht auf und geht zum Fenster."
+        ],
+        why: "Opowiadanie pisane używa <b>Präteritum</b>: <i>stand auf, ging</i>. Perfekt to czas mowy; czas teraźniejszy czasem ożywia opowieść, ale nie jest zwykłym czasem opowiadania."
+      },
+      {
+        q: "Jakie jest Präteritum od laufen (er)?",
+        opts: [
+          "lief",
+          "laufte",
+          "lauf"
+        ],
+        why: "<i>laufen</i> to czasownik mocny: <b>lief</b>. Słaba forma <i>laufte</i> nie istnieje."
+      },
+      {
+        q: "Uzupełnij w Präteritum: „Plötzlich ___ das Telefon.” (klingeln)",
+        hint: "czasownik słaby, er/es",
+        why: "<b>klingelte</b>: czasownik słaby, temat <i>klingel-</i> + <i>-te</i>."
+      },
+      {
+        q: "Uzupełnij: „Als sie ankam, ___ der Zug schon abgefahren.” (już odjechał)",
+        hint: "Präteritum od sein",
+        why: "<b>war</b>: Plusquamperfekt od <i>abfahren</i> tworzy się z <i>sein</i>, bo to czasownik ruchu."
+      },
+      {
+        q: "Uzupełnij zdanie czasownikiem laufen w Präteritum.",
+        tr: "Biegł tak szybko, jak mógł.",
+        why: "<i>Er lief, so schnell er konnte</i>: <i>lief</i> od <i>laufen</i>, <i>konnte</i> od <i>können</i>."
+      },
+      {
+        q: "Przetłumacz, używając Präteritum: „Nagle zgasło światło.”",
+        why: "<i>Plötzlich ging das Licht aus</i>: <i>ausgehen</i> w Präteritum to <i>ging ... aus</i>, z partykułą na końcu. Pasuje też <i>auf einmal</i>."
+      },
+      {
+        tr: "Było już ciemno, kiedy wrócił do domu. Drzwi były otwarte i nikt nie odpowiadał. Przestraszył się i zadzwonił na policję.",
+        why: "W <i>dunkel</i> <b>u</b> jest krótkie; w <i>erschrak</i> <b>sch</b> to <i>sz</i>, a <b>a</b> jest długie; w <i>Polizei</i> akcent pada na ostatnią sylabę, <b>zei</b>."
+      },
+      {
+        tr: "W tamtych czasach nie było jeszcze internetu i pisaliśmy do siebie długie listy.",
+        why: "W <i>damals</i> akcent pada na <b>da</b>; w <i>schrieben</i> <b>ie</b> jest długie; w <i>Briefe</i> <b>ie</b> to znowu długie <i>i</i>."
+      }
+    ]
+  },
+  "lesson:b2-u03-l3": {
+    theme: "Sposoby działania",
+    title: "Bez pytania, zamiast czekać",
+    objectives: [
+      "używać ohne ... zu i statt ... zu przy tym samym podmiocie",
+      "używać ohne dass i anstatt dass przy różnych podmiotach",
+      "stawiać zu we właściwym miejscu przy czasownikach rozdzielnych",
+      "opowiadać, jak ktoś coś zrobił"
+    ],
+    theory: [
+      {
+        h: "ohne ... zu, statt ... zu",
+        p: "<strong>ohne ... zu</strong> (<em>nie</em> + imiesłów na <em>-ąc</em>, <em>bez</em> + rzeczownik) i <strong>statt / anstatt ... zu</strong> (<em>zamiast</em> + bezokolicznik) tworzą zdanie bezokolicznikowe z <strong>tym samym podmiotem</strong> co zdanie główne. <em>zu</em> + bezokolicznik idzie na koniec: <em>Er ging, ohne sich zu verabschieden. Statt zu warten, rief sie sofort an. Anstatt zu lernen, sieht er fern.</em> Przy czasowniku rozdzielnym <em>zu</em> wchodzi między partykułę a czasownik: <em>ohne nachzudenken, statt fernzusehen</em>."
+      },
+      {
+        h: "ohne dass, anstatt dass",
+        p: "Jeśli drugie zdanie ma <strong>inny</strong> podmiot, bezokolicznik jest niemożliwy: potrzeba <strong>ohne dass</strong> albo <strong>anstatt dass</strong> z czasownikiem osobowym na końcu. <em>Er ging, ohne dass ich es merkte</em> (wyszedł, a ja tego nie zauważyłem). <em>Anstatt dass du alles allein machst, helfen wir dir</em> (zamiast żebyś robił wszystko sam, pomożemy ci). Konstrukcja z <em>dass</em> jest możliwa także przy tym samym podmiocie (<em>Anstatt dass du hilfst, schaust du nur zu</em>), ale wtedy forma z <em>zu</em> brzmi naturalniej."
+      },
+      {
+        contrast: "Po polsku mówisz <em>wyszedł, nie żegnając się</em> albo <em>bez pożegnania</em>: imiesłów albo rzeczownik. Niemiecki nie ma tu imiesłowu: potrzebny jest bezokolicznik z <em>zu</em> na końcu zdania, po wszystkich dopełnieniach: <em>ohne den Vertrag zu lesen</em>, <em>nie czytając umowy</em>. <em>Zamiast czekać</em> ma po polsku goły bezokolicznik, po niemiecku <em>statt zu warten</em>, z <em>zu</em>. Po <em>ohne dass</em> zwykle stoi tryb oznajmujący (Konjunktiv II jest możliwy, ale rzadszy: <em>ohne dass ich es bemerkt hätte</em>)."
+      },
+      {
+        trap: "Nie zapominaj o <em>zu</em>: <em>ohne sich verabschieden</em> to błąd, trzeba <em>ohne sich zu verabschieden</em>. I nie używaj bezokolicznika przy innym podmiocie: <em>Er ging, ohne mich es zu merken</em> nie ma sensu; mówi się <em>ohne dass ich es merkte</em>."
+      },
+      {
+        tip: "Żeby się sprawdzić, pomyśl o <em>um ... zu</em>, które już znasz: konstrukcja jest taka sama (<em>um zu lernen, ohne zu lernen, statt zu lernen</em>), zmienia się tylko znaczenie."
+      }
+    ],
+    grammar: {
+      title: "ohne ... zu, statt ... zu, ohne dass, anstatt dass",
+      note: "<b>Ten sam podmiot</b>: ohne / statt / anstatt + ... + <b>zu</b> + bezokolicznik na końcu. <b>Inny podmiot</b>: ohne dass / anstatt dass + czasownik osobowy na końcu, zwykle w trybie oznajmującym.",
+      table: {
+        head: ["", "ten sam podmiot", "inny podmiot"],
+        rows: [
+          ["bez", "Er ging, ohne sich zu verabschieden.", "Er ging, ohne dass ich es merkte."],
+          ["zamiast", "Statt zu warten, rief sie an.", "Anstatt dass du alles allein machst, helfen wir dir."],
+          ["czasownik rozdzielny", "..., ohne nachzudenken.", "..., ohne dass er nachdachte."]
+        ]
+      },
+      examples: [
+        { tr: "Wyszedł, nie żegnając się.", note: "ohne ... zu: ten sam podmiot" },
+        { tr: "Zamiast czekać, od razu zadzwoniła.", note: "statt ... zu na początku, potem czasownik zdania głównego" },
+        { tr: "Podpisała, nie czytając umowy.", note: "zu + bezokolicznik po wszystkich dopełnieniach" },
+        { tr: "Zamiast się uczyć, ogląda telewizję.", note: "anstatt ... zu; fernsehen jest rozdzielny" },
+        { tr: "Wyszedł, a ja tego nie zauważyłem.", note: "ohne dass: inny podmiot, zwykle tryb oznajmujący" },
+        { tr: "Zamiast pomóc, tylko się przyglądasz.", note: "anstatt dass: możliwe też przy tym samym podmiocie" }
+      ]
+    },
+    vocab: [
+      "umowa",
+      "pozwolenie",
+      "pożegnanie",
+      "plan",
+      "podpis",
+      "podpisać",
+      "pożegnać się",
+      "przyglądać się",
+      "zastanowić się (über + biernik: nad)",
+      "zauważyć",
+      "po prostu",
+      "potajemnie"
+    ],
+    exercises: [
+      {
+        q: "Jak powiesz „Wyszedł, nie żegnając się”?",
+        opts: [
+          "Er ging, ohne sich zu verabschieden.",
+          "Er ging, ohne zu verabschieden sich.",
+          "Er ging, ohne sich verabschieden."
+        ],
+        why: "<b>ohne ... zu</b> + bezokolicznik na końcu: <i>ohne sich zu verabschieden</i>. Zaimek zwrotny stoi przed <i>zu</i>, a <i>zu</i> nie można pominąć."
+      },
+      {
+        q: "Jak powiesz „Wyszedł, a ja tego nie zauważyłem”?",
+        opts: [
+          "Er ging, ohne dass ich es merkte.",
+          "Er ging, ohne mich es zu merken.",
+          "Er ging, ohne dass ich es merken."
+        ],
+        why: "Podmioty są różne (<i>er</i>, <i>ich</i>), więc potrzeba <b>ohne dass</b> z czasownikiem osobowym na końcu: <i>merkte</i>."
+      },
+      {
+        q: "Uzupełnij: „Sie hat unterschrieben, ohne den Vertrag ___ lesen.”",
+        hint: "partykuła bezokolicznika",
+        why: "<b>zu</b>: <i>ohne ... zu lesen</i>, z <i>zu</i> tuż przed bezokolicznikiem na końcu."
+      },
+      {
+        q: "Uzupełnij czasownikiem nachdenken: „Sie antwortete, ohne ___.”",
+        hint: "czasownik rozdzielny z zu",
+        why: "<b>nachzudenken</b>: przy czasowniku rozdzielnym <i>zu</i> wchodzi między partykułę <i>nach</i> a czasownik, w jednym słowie."
+      },
+      {
+        q: "Uzupełnij: „___ du hilfst, schaust du nur zu.” (zamiast)",
+        hint: "wyrażony podmiot: dwa słowa",
+        why: "<b>Anstatt dass</b> (albo <i>Statt dass</i>): zdanie ma własny podmiot (<i>du hilfst</i>), więc nie bezokolicznik, tylko <i>dass</i> z czasownikiem na końcu."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Zamiast czekać, od razu zadzwoniła.",
+        why: "<i>Statt zu warten, rief sie sofort an</i>: zdanie bezokolicznikowe zajmuje pierwsze miejsce, więc zaraz po nim idzie czasownik <i>rief</i>; partykuła <i>an</i> na końcu."
+      },
+      {
+        q: "Ułóż słowa we właściwej kolejności.",
+        tr: "Zamiast się uczyć, cały dzień ogląda telewizję.",
+        why: "<i>Anstatt zu lernen, sieht er den ganzen Tag fern.</i> Zdanie z <i>anstatt</i> na początku, czasownik <i>sieht</i> zaraz po nim, partykuła <i>fern</i> na końcu."
+      },
+      {
+        q: "Przetłumacz: „Podpisał umowę, nie czytając jej.”",
+        why: "<i>Er hat den Vertrag unterschrieben, ohne ihn zu lesen</i>. Pasuje też Präteritum <i>unterschrieb</i> albo <i>ohne ihn gelesen zu haben</i>. <i>Vertrag</i> jest rodzaju męskiego, więc zaimek to <i>ihn</i>, choć po polsku <i>jej</i>."
+      },
+      {
+        tr: "Po prostu złożył wypowiedzenie, nie rozmawiając o tym z nikim. Zamiast zapytać, od razu zdecydował.",
+        why: "W <i>gekündigt</i> <b>ü</b> jest krótkie i zaokrąglone; w <i>jemandem</i> <b>j</b> to polskie <i>j</i>; w <i>entschieden</i> <b>ie</b> jest długie."
+      },
+      {
+        tr: "Zamiast czekać, powinniśmy od razu zadzwonić.",
+        why: "W <i>anstatt</i> akcent pada na <b>statt</b>; w <i>sollten</i> <b>o</b> jest krótkie; w <i>sofort</i> akcent pada na <b>fort</b>."
+      }
+    ]
+  },
+  "lesson:b2-u03-test": {
+    theme: "Sprawdzian",
+    title: "Test: Strona bierna i czas opowiadania",
+    objectives: [
+      "sprawdzić stronę bierną w Perfekcie i z modalnymi, Präteritum w opowiadaniu i ohne ... zu"
+    ],
+    theory: [
+      {
+        p: "Dziesięć pytań z całej jednostki. Zaliczenie od 70%. Nie zaglądaj do lekcji, kiedy odpowiadasz: jeśli czegoś nie pamiętasz, lepiej wrócić i powtórzyć."
+      }
+    ],
+    exercises: [
+      {
+        tr: "Präteritum czasownika finden, wszystkie osoby.",
+        why: "<i>fand, fandest, fand, fanden, fandet, fanden</i>: po <i>d</i> wstawia się <i>e</i> przed <i>-st</i> i <i>-t</i>."
+      },
+      {
+        q: "Uzupełnij: „Das Museum ist 1910 eröffnet ___.”",
+        hint: "strona bierna w Perfekcie",
+        why: "<b>worden</b>: <i>ist eröffnet worden</i>, strona bierna w Perfekcie."
+      },
+      {
+        q: "Uzupełnij: „Der Antrag muss bis Montag abgegeben ___.”",
+        hint: "bezokolicznik strony biernej po modalnym",
+        why: "<b>werden</b>: modalny + imiesłów + <i>werden</i>."
+      },
+      {
+        q: "Uzupełnij w Präteritum: „Plötzlich ___ sie ein Geräusch.” (hören)",
+        hint: "czasownik słaby, sie (ona)",
+        why: "<b>hörte</b>: czasownik słaby, <i>hör-</i> + <i>-te</i>."
+      },
+      {
+        q: "Uzupełnij: „Er ging, ohne ein Wort ___ sagen.”",
+        hint: "partykuła bezokolicznika",
+        why: "<b>zu</b>: <i>ohne ein Wort zu sagen</i>."
+      },
+      {
+        q: "Jak powiesz „Most został zamknięty już wcześniej” (w opowiadaniu o przeszłości)?",
+        opts: [
+          "Die Brücke war schon gesperrt worden.",
+          "Die Brücke ist schon gesperrt geworden.",
+          "Die Brücke hatte schon gesperrt worden."
+        ],
+        why: "Plusquamperfekt strony biernej bez modalnego tworzy się z <b>war</b> + imiesłów + <b>worden</b>, nie z <i>hatte</i>."
+      },
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: [
+          "Statt dass du hilfst, schaust du zu.",
+          "Statt zu du hilfst, schaust du zu.",
+          "Statt dass du helfen, schaust du zu."
+        ],
+        why: "Przy wyrażonym podmiocie potrzeba <b>statt dass</b> + czasownik osobowy na końcu: <i>du hilfst</i>."
+      },
+      {
+        q: "Przetłumacz: „List został napisany wczoraj.”",
+        why: "<i>Der Brief ist gestern geschrieben worden</i> albo w Präteritum <i>Der Brief wurde gestern geschrieben</i>."
+      },
+      {
+        tr: "Zamek zbudowano w osiemnastym wieku. Później kilka razy go przebudowywano, a jego charakter się nie zmienił.",
+        why: "W <i>Schloss</i> <b>o</b> jest krótkie; w <i>achtzehnten</i> <b>ch</b> to twarde polskie <i>ch</i>, a <b>z</b> to polskie <i>c</i>; w <i>Charakter</i> początkowe <b>Ch</b> czyta się jak <i>k</i>."
+      },
+      {
+        tr: "Zamiast długo dyskutować, po prostu rozwiązaliśmy problem.",
+        why: "W <i>diskutieren</i> akcent pada na <b>tie</b>; w <i>Problem</i> akcent pada na <b>blem</b>; w <i>gelöst</i> <b>ö</b> jest długie."
+      }
+    ]
   }
 });

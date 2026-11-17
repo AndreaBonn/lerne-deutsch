@@ -481,7 +481,7 @@ LINGUAI.addUnits("B2", [
           { it: "das Jahrhundert", plural: "die Jahrhunderte", ex: "Die Kirche stammt aus dem zwölften Jahrhundert." },
           { it: "das Gebäude", plural: "die Gebäude", ex: "Das Gebäude ist sehr alt." },
           { it: "die Brücke", plural: "die Brücken", ex: "Die Brücke wird gerade repariert." },
-          { it: "der Bau", plural: "die Bauten", ex: "Der Bau dauerte zehn Jahre." },
+          { it: "das Bauwerk", plural: "die Bauwerke", ex: "Das Bauwerk ist über dreihundert Jahre alt." },
           { it: "die Erfindung", plural: "die Erfindungen", ex: "Das Telefon war eine wichtige Erfindung." },
           { it: "das Verfahren", plural: "die Verfahren", ex: "Das Verfahren ist kompliziert." },
           { it: "errichten", ex: "Die Mauer wurde 1961 errichtet." },
@@ -501,7 +501,7 @@ LINGUAI.addUnits("B2", [
           {
             t: "cloze",
             text: "Hier {{1}} seit 1950 Autos {{2}}.",
-            gaps: [["werden"], ["hergestellt"]]
+            gaps: [["werden"], ["hergestellt", "produziert", "gebaut", "gefertigt"]]
           },
           {
             t: "trans",
@@ -517,7 +517,7 @@ LINGUAI.addUnits("B2", [
           },
           {
             t: "listen",
-            it: "Das alte Rathaus wurde im sechzehnten Jahrhundert gebaut. Im Krieg ist es fast vollständig zerstört worden, aber danach wurde es originalgetreu wieder aufgebaut."
+            it: "Das alte Rathaus wurde im sechzehnten Jahrhundert gebaut. Im Krieg ist es fast vollständig zerstört worden, aber danach wurde es originalgetreu wiederaufgebaut."
           },
           { t: "speak", it: "Die Brücke ist letztes Jahr renoviert worden und ist jetzt wieder geöffnet." }
         ]
@@ -562,7 +562,7 @@ LINGUAI.addUnits("B2", [
           {
             t: "cloze",
             text: "Er {{1}}, so schnell er {{2}}.",
-            gaps: [["lief", "rannte"], ["konnte"]]
+            gaps: [["lief"], ["konnte"]]
           },
           {
             t: "trans",
@@ -600,7 +600,7 @@ LINGUAI.addUnits("B2", [
           { it: "der Vertrag", plural: "die Verträge", ex: "Lies den Vertrag genau." },
           { it: "die Erlaubnis", plural: "die Erlaubnisse", ex: "Sie hat ohne Erlaubnis telefoniert." },
           { it: "der Abschied", plural: "die Abschiede", ex: "Der Abschied fiel uns schwer." },
-          { it: "die Rücksicht", plural: "-", ex: "Nimm bitte Rücksicht auf die anderen." },
+          { it: "der Plan", plural: "die Pläne", ex: "Er hat seine Pläne geändert, ohne uns zu fragen." },
           { it: "die Unterschrift", plural: "die Unterschriften", ex: "Hier fehlt noch Ihre Unterschrift." },
           { it: "unterschreiben", ex: "Bitte unterschreiben Sie hier." },
           { it: "sich verabschieden", ex: "Er hat sich nicht verabschiedet." },

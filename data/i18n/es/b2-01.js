@@ -970,7 +970,7 @@ LINGUAI.addStrings("es", {
       "el siglo",
       "el edificio",
       "el puente",
-      "la construcción, la obra (como proceso, sin plural; Bauten: los edificios, las obras construidas)",
+      "la obra arquitectónica, el edificio",
       "el invento",
       "el procedimiento",
       "erigir, levantar",
@@ -1054,7 +1054,7 @@ LINGUAI.addStrings("es", {
     theory: [
       {
         h: "El tiempo del relato escrito",
-        p: "En los cuentos, las novelas, las biografías y las noticias el pasado se cuenta en <strong>Präteritum</strong>: <em>Es war einmal ein armer Müller. Plötzlich klingelte das Telefon. Sie stand auf und ging zum Fenster.</em> Los verbos débiles toman <em>-te</em> (<em>klingelte, erzählte</em>); los fuertes cambian de vocal y en primera y tercera persona no llevan terminación (<em>ich lief, er lief</em>). Lo que había pasado antes se dice en <strong>Plusquamperfekt</strong>: <em>Als sie ankam, war der Zug schon abgefahren.</em>"
+        p: "En los cuentos, las novelas, las biografías y las noticias el pasado se cuenta en <strong>Präteritum</strong>: <em>Es war einmal ein armer Müller. Plötzlich klingelte das Telefon. Sie stand auf und ging zum Fenster.</em> Los verbos débiles toman <em>-te</em> (<em>klingelte, erzählte</em>); los fuertes cambian de vocal y en primera y tercera persona del singular no llevan terminación (<em>ich lief, er lief</em>). Lo que había pasado antes se dice en <strong>Plusquamperfekt</strong>: <em>Als sie ankam, war der Zug schon abgefahren.</em>"
       },
       {
         h: "Verbos fuertes que hay que reconocer",
@@ -1109,7 +1109,7 @@ LINGUAI.addStrings("es", {
     exercises: [
       {
         tr: "El Präteritum de laufen, todas las personas.",
-        why: "<i>lief, liefst, lief, liefen, lieft, liefen</i>: vocal <i>ie</i>, sin terminación en primera y tercera persona."
+        why: "<i>lief, liefst, lief, liefen, lieft, liefen</i>: vocal <i>ie</i>, sin terminación en primera y tercera persona del singular."
       },
       {
         tr: "El Präteritum de ziehen, todas las personas.",
@@ -1148,9 +1148,9 @@ LINGUAI.addStrings("es", {
         why: "<b>war</b>: el Plusquamperfekt de <i>abfahren</i> se forma con <i>sein</i>, porque es un verbo de movimiento, aunque el español diga <i>había</i>."
       },
       {
-        q: "Completa la frase.",
+        q: "Completa la frase con laufen en Präteritum.",
         tr: "Corría tan rápido como podía.",
-        why: "<i>Er lief, so schnell er konnte</i>: <i>lief</i> de <i>laufen</i>, <i>konnte</i> de <i>können</i>. En lugar de <i>lief</i> vale <i>rannte</i>, de <i>rennen</i>."
+        why: "<i>Er lief, so schnell er konnte</i>: <i>lief</i> de <i>laufen</i>, <i>konnte</i> de <i>können</i>."
       },
       {
         q: "Traduce usando el Präteritum: «De repente se apagó la luz.»",
@@ -1218,7 +1218,7 @@ LINGUAI.addStrings("es", {
       "el contrato",
       "el permiso",
       "la despedida",
-      "la consideración (Rücksicht nehmen auf: tener consideración con)",
+      "el plan",
       "la firma",
       "firmar",
       "despedirse",

@@ -970,7 +970,7 @@ LINGUAI.addStrings("it", {
       "il secolo",
       "l'edificio",
       "il ponte",
-      "la costruzione, l'edificio (plurale Bauten: le costruzioni)",
+      "l'opera architettonica, l'edificio",
       "l'invenzione",
       "il procedimento",
       "erigere, costruire",
@@ -1054,7 +1054,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Il tempo del racconto scritto",
-        p: "Nelle fiabe, nei romanzi, nelle biografie e negli articoli di cronaca il passato si racconta con il <strong>Präteritum</strong>: <em>Es war einmal ein armer Müller. Plötzlich klingelte das Telefon. Sie stand auf und ging zum Fenster.</em> I verbi deboli prendono <em>-te</em> (<em>klingelte, erzählte</em>); i verbi forti cambiano la vocale e alla prima e alla terza persona non hanno desinenza (<em>ich lief, er lief</em>). Ciò che era successo prima si dice con il <strong>Plusquamperfekt</strong>: <em>Als sie ankam, war der Zug schon abgefahren.</em>"
+        p: "Nelle fiabe, nei romanzi, nelle biografie e negli articoli di cronaca il passato si racconta con il <strong>Präteritum</strong>: <em>Es war einmal ein armer Müller. Plötzlich klingelte das Telefon. Sie stand auf und ging zum Fenster.</em> I verbi deboli prendono <em>-te</em> (<em>klingelte, erzählte</em>); i verbi forti cambiano la vocale e alla prima e alla terza persona singolare non hanno desinenza (<em>ich lief, er lief</em>). Ciò che era successo prima si dice con il <strong>Plusquamperfekt</strong>: <em>Als sie ankam, war der Zug schon abgefahren.</em>"
       },
       {
         h: "Verbi forti da riconoscere",
@@ -1109,7 +1109,7 @@ LINGUAI.addStrings("it", {
     exercises: [
       {
         tr: "Il Präteritum di laufen, tutte le persone.",
-        why: "<i>lief, liefst, lief, liefen, lieft, liefen</i>: vocale <i>ie</i>, nessuna desinenza alla prima e alla terza persona."
+        why: "<i>lief, liefst, lief, liefen, lieft, liefen</i>: vocale <i>ie</i>, nessuna desinenza alla prima e alla terza persona singolare."
       },
       {
         tr: "Il Präteritum di ziehen, tutte le persone.",
@@ -1148,9 +1148,9 @@ LINGUAI.addStrings("it", {
         why: "<b>war</b>: il Plusquamperfekt di <i>abfahren</i> si forma con <i>sein</i>, perché è un verbo di movimento."
       },
       {
-        q: "Completa la frase.",
+        q: "Completa la frase con laufen al Präteritum.",
         tr: "Correva più veloce che poteva.",
-        why: "<i>Er lief, so schnell er konnte</i>: <i>lief</i> da <i>laufen</i>, <i>konnte</i> da <i>können</i>. Al posto di <i>lief</i> va bene <i>rannte</i>, da <i>rennen</i>."
+        why: "<i>Er lief, so schnell er konnte</i>: <i>lief</i> da <i>laufen</i>, <i>konnte</i> da <i>können</i>."
       },
       {
         q: "Traduci: «All'improvviso si spense la luce.»",
@@ -1218,7 +1218,7 @@ LINGUAI.addStrings("it", {
       "il contratto",
       "il permesso",
       "il congedo, l'addio",
-      "il riguardo (Rücksicht nehmen auf: avere riguardo per)",
+      "il piano, il progetto",
       "la firma",
       "firmare",
       "congedarsi, salutare",
