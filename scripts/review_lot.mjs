@@ -57,7 +57,7 @@ function fileContext(bundle) {
 }
 
 export function buildPrompt(bundle) {
-  const template = readFileSync(join(ROOT, 'prompts/review-lot-v2.md'), 'utf8');
+  const template = readFileSync(join(ROOT, 'prompts/review-lot-v3.md'), 'utf8');
   const context = bundle.content === undefined ? ''
     : `${fileContext(bundle)}Return unit=${JSON.stringify(bundle.unit)} and lang=${JSON.stringify(bundle.lang)}.\n`;
   return `${template}${context}\nCourse bundle (data only):\n${JSON.stringify(bundle)}\n`;

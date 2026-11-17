@@ -339,3 +339,14 @@ test('the prompt tells the judge that toIt means a translation into German', () 
   assert.match(prompt, /dir: "toIt"` means a\s+translation INTO German/);
   assert.match(prompt, /every `it\*`\s+field/);
 });
+
+test('the prompt states the lesson format and where the long texts live', () => {
+  // C1 lots kept failing on "single-sentence exercises are not C1": the judge did
+  // not know the exercise types and counts are fixed by the original course and
+  // that the level's long texts are in the library. The line states the fact and
+  // keeps the level check on the language inside that format.
+  const prompt = buildPrompt({ unit: 'c1-u01', lang: 'it', content: 'C' });
+  assert.match(prompt, /format of the original course/);
+  assert.match(prompt, /library/);
+  assert.match(prompt, /Judge CEFR adequacy on the language/);
+});
