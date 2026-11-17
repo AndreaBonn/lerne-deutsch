@@ -911,5 +911,447 @@ LINGUAI.addStrings("en", {
         why: "In <i>verhindert</i> the <b>v</b> sounds like [f]; in <i>rechtzeitig</i> the <b>ch</b> is [ç] and the <b>z</b> is [ts]; in <i>absagen</i> the <b>b</b> before <i>s</i> sounds like [p]."
       }
     ]
+  },
+  "unit:b2-u03": {
+    title: "Passive and narrative tense",
+    grammarNote: "passive in the Perfekt and Plusquamperfekt (ist gebaut worden) · passive with modals (muss ausgefüllt werden) · state passive (ist geschlossen) · narrative Präteritum · ohne ... zu, statt ... zu, ohne dass, anstatt dass"
+  },
+  "lesson:b2-u03-l1": {
+    theme: "History and technical processes",
+    title: "It was built, it has been repaired",
+    objectives: [
+      "form the passive in the Perfekt and Plusquamperfekt with worden",
+      "use the passive with a modal verb",
+      "tell the process passive (wird geschlossen) from the state passive (ist geschlossen)",
+      "tell the story of a building or an invention"
+    ],
+    theory: [
+      {
+        h: "The passive in the Perfekt",
+        p: "In the Perfekt the passive is <strong>sein</strong> + past participle + <strong>worden</strong>: <em>Die Brücke ist letztes Jahr renoviert worden</em> (the bridge was renovated last year). In the Plusquamperfekt <em>sein</em> goes into the Präteritum: <em>Der Fehler war schon vorher entdeckt worden</em> (the mistake had already been found). Written texts and history also use the Präteritum a lot: <em>Das Rathaus wurde im sechzehnten Jahrhundert gebaut.</em>"
+      },
+      {
+        h: "With modals, and the state passive",
+        p: "With a <strong>modal verb</strong> you conjugate the modal and the passive stays in the infinitive, participle + <em>werden</em>, at the end: <em>Das Formular muss bis Freitag ausgefüllt werden. Die Daten konnten nicht gespeichert werden.</em> The <strong>state passive</strong> (Zustandspassiv) is <strong>sein</strong> + participle and describes the result of an action: <em>Das Geschäft ist sonntags geschlossen.</em> The process passive, with <em>werden</em>, describes the action: <em>Das Geschäft wird um acht geschlossen.</em>"
+      },
+      {
+        contrast: "The usual English passive uses <em>be</em>: <em>the shop is closed</em> can be a state or a habit (<em>is closed at eight</em>). German always separates them: <em>werden</em> for the process, <em>sein</em> for the state. And <em>has been built</em> has <em>has</em> in English, but German uses <em>sein</em> as the auxiliary here: <em>ist gebaut worden</em>, never <em>hat gebaut worden</em>."
+      },
+      {
+        trap: "In the passive the participle of <em>werden</em> is <strong>worden</strong>, without <em>ge-</em>: <em>ist gebaut worden</em>, not <em>ist gebaut geworden</em>. <em>Geworden</em> is the participle of <em>werden</em> as a full verb, <em>to become</em>: <em>Er ist Arzt geworden.</em> And <em>has been built</em> is not <em>ist gebaut gewesen</em>: <em>gewesen</em> has no place here."
+      },
+      {
+        tip: "To choose between <em>werden</em> and <em>sein</em>, ask: is something happening, or am I describing how things are? <em>Die Tür wird geöffnet</em>: someone is opening it. <em>Die Tür ist geöffnet</em>: it is open."
+      }
+    ],
+    grammar: {
+      title: "The passive: Perfekt, modals, state passive",
+      note: "<b>Perfekt</b>: ist + participle + <b>worden</b>. <b>Plusquamperfekt</b>: war + participle + worden. <b>With a modal</b>: modal + participle + werden. <b>State</b>: sein + participle.",
+      table: {
+        head: ["", "example", "English"],
+        rows: [
+          ["Präteritum", "Das Haus wurde 1900 gebaut.", "the house was built"],
+          ["Perfekt", "Das Haus ist 1900 gebaut worden.", "the house was built in 1900"],
+          ["Plusquamperfekt", "Das Haus war schon gebaut worden.", "the house had already been built"],
+          ["with a modal", "Das Haus muss renoviert werden.", "the house must be renovated"],
+          ["state passive", "Das Haus ist renoviert.", "the house is renovated"]
+        ]
+      },
+      examples: [
+        { tr: "The town hall was built in the sixteenth century.", note: "Präteritum: typical of historical texts" },
+        { tr: "The bridge was renovated last year.", note: "Perfekt: ist + participle + worden" },
+        { tr: "The mistake had already been found before.", note: "Plusquamperfekt: war + participle + worden" },
+        { tr: "The form must be filled in by Friday.", note: "modal + participle + werden" },
+        { tr: "The data could not be saved.", note: "konnten ... gespeichert werden: modal in the Präteritum" },
+        { tr: "The shop is closed on Sundays.", note: "state passive: sein + participle" }
+      ]
+    },
+    vocab: [
+      "the century",
+      "the building",
+      "the bridge",
+      "the construction, the building (plural Bauten: buildings)",
+      "the invention",
+      "the procedure, the process",
+      "to erect, to build",
+      "to destroy",
+      "to invent",
+      "to produce, to manufacture",
+      "to discover",
+      "to renovate"
+    ],
+    exercises: [
+      {
+        q: "How do you say “The bridge has been renovated”?",
+        opts: [
+          "Die Brücke ist renoviert worden.",
+          "Die Brücke ist renoviert geworden.",
+          "Die Brücke hat renoviert worden."
+        ],
+        why: "Passive Perfekt: <b>ist</b> + participle + <b>worden</b>. <i>Geworden</i> is the participle of <i>werden</i> meaning <i>to become</i>, and the auxiliary is <i>sein</i>, not <i>haben</i>, whatever English <i>has</i> suggests."
+      },
+      {
+        q: "Which sentence describes a state, “The shop is closed”?",
+        opts: [
+          "Das Geschäft ist geschlossen.",
+          "Das Geschäft wird geschlossen.",
+          "Das Geschäft ist geschlossen worden."
+        ],
+        why: "A state is <b>sein</b> + participle. <i>Wird geschlossen</i> describes the action of closing, <i>ist geschlossen worden</i> a closing that took place in the past."
+      },
+      {
+        q: "How do you say “The form must be filled in”?",
+        opts: [
+          "Das Formular muss ausgefüllt werden.",
+          "Das Formular muss ausfüllen werden.",
+          "Das Formular wird ausgefüllt müssen."
+        ],
+        why: "With a modal: conjugated modal (<b>muss</b>) + participle + <b>werden</b> at the end."
+      },
+      {
+        q: "Fill in the passive Perfekt: “Die Kirche ist 1890 gebaut ___.”",
+        hint: "participle of werden in the passive",
+        why: "<b>worden</b>: in the passive Perfekt the participle of <i>werden</i> loses its <i>ge-</i>."
+      },
+      {
+        q: "Fill in the Plusquamperfekt: “Der Fehler ___ schon vorher entdeckt worden.”",
+        hint: "Präteritum of sein",
+        why: "<b>war</b>: the passive Plusquamperfekt has <i>sein</i> in the Präteritum, then the participle and <i>worden</i>."
+      },
+      {
+        q: "Fill in: “Die Daten konnten nicht gespeichert ___.”",
+        hint: "passive infinitive",
+        why: "<b>werden</b>: after a modal the passive stays in the infinitive, participle + <i>werden</i>."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "Cars have been made here since 1950.",
+        why: "<i>Hier werden seit 1950 Autos hergestellt</i>: German uses the present with <i>seit</i> for something that is still going on, where English uses the present perfect; <i>werden</i> is plural because the subject is <i>Autos</i>."
+      },
+      {
+        q: "Translate: “The city was destroyed during the war.”",
+        why: "<i>Die Stadt ist im Krieg zerstört worden</i>, or in the Präteritum <i>Die Stadt wurde im Krieg zerstört</i>. <i>während des Krieges</i> also works instead of <i>im Krieg</i>."
+      },
+      {
+        tr: "The old town hall was built in the sixteenth century. In the war it was almost completely destroyed, but afterwards it was rebuilt true to the original.",
+        why: "In <i>Jahrhundert</i> the <b>J</b> sounds like English <i>y</i>; in <i>vollständig</i> the <b>v</b> sounds like [f] and the final <b>-ig</b> is [ɪç]; in <i>originalgetreu</i> the <b>eu</b> is [ɔʏ], as in <i>boy</i>."
+      },
+      {
+        tr: "The bridge was renovated last year and is now open again.",
+        why: "In <i>Brücke</i> the <b>ü</b> is short; in <i>renoviert</i> the <b>v</b> sounds like [v] because the word comes from Latin; in <i>geöffnet</i> the <b>ö</b> is short and rounded."
+      }
+    ]
+  },
+  "lesson:b2-u03-l2": {
+    theme: "Stories",
+    title: "The Präteritum in narration",
+    objectives: [
+      "tell a story in the Präteritum",
+      "conjugate the most frequent strong verbs in the Präteritum",
+      "use the Plusquamperfekt for what had happened before",
+      "recognize fairy-tale style (Es war einmal ...)"
+    ],
+    theory: [
+      {
+        h: "The tense of written stories",
+        p: "Fairy tales, novels, biographies and news reports tell the past in the <strong>Präteritum</strong>: <em>Es war einmal ein armer Müller. Plötzlich klingelte das Telefon. Sie stand auf und ging zum Fenster.</em> Weak verbs take <em>-te</em> (<em>klingelte, erzählte</em>); strong verbs change their vowel and have no ending in the first and third person (<em>ich lief, er lief</em>). What had happened before goes into the <strong>Plusquamperfekt</strong>: <em>Als sie ankam, war der Zug schon abgefahren.</em>"
+      },
+      {
+        h: "Strong verbs to recognize",
+        p: "The same strong verbs keep coming back in stories: <em>gehen → ging, kommen → kam, stehen → stand, sitzen → saß, liegen → lag, laufen → lief, rufen → rief, ziehen → zog, treffen → traf, finden → fand, schreiben → schrieb, erschrecken → erschrak</em>. The Perfekt stays in the characters' lines, because it is the tense of speech: <em>„Ich habe einen Traum gehabt“, sagte sie.</em>"
+      },
+      {
+        contrast: "English uses its simple past both in writing and in speech, and adds a progressive form: <em>she was sitting</em> against <em>she stood up</em>. German has no progressive: <em>Sie saß am Fenster</em> is <em>she was sitting at the window</em>, <em>Plötzlich stand sie auf</em> is <em>suddenly she stood up</em>. And German splits by register instead: Präteritum for written narration, Perfekt for telling the same thing in conversation, except for <em>sein</em>, <em>haben</em> and the modals, whose Präteritum is normal in speech too."
+      },
+      {
+        trap: "Strong forms cannot be derived from the infinitive by rule: learn them with the participle (<em>laufen, lief, gelaufen</em>; <em>ziehen, zog, gezogen</em>), just as with English <em>run, ran, run</em>. Watch out for <em>erschrecken</em>: meaning “to get a fright” it is strong (<em>sie erschrak</em>), meaning “to frighten someone” it is weak (<em>er erschreckte das Kind</em>)."
+      },
+      {
+        tip: "Reading a Grimm fairy tale is the quickest way to fix the Präteritum: almost every sentence has one, and the strong forms repeat all the time."
+      }
+    ],
+    grammar: {
+      title: "Präteritum and Plusquamperfekt in narration",
+      note: "<b>Weak verbs</b>: stem + <i>-te</i> (klingelte). <b>Strong verbs</b>: vowel change, no ending with ich and er (lief, zog). <b>Plusquamperfekt</b>: hatte / war + participle, for what happened before.",
+      table: {
+        head: ["infinitive", "Präteritum (er)", "Perfekt (er)"],
+        rows: [
+          ["klingeln", "klingelte", "hat geklingelt"],
+          ["laufen", "lief", "ist gelaufen"],
+          ["ziehen", "zog", "hat gezogen"],
+          ["treffen", "traf", "hat getroffen"],
+          ["erschrecken (get a fright)", "erschrak", "ist erschrocken"]
+        ]
+      },
+      examples: [
+        { tr: "Once upon a time there was a poor miller.", note: "Es war einmal: how fairy tales begin" },
+        { tr: "Suddenly the phone rang.", note: "weak verb: klingelte" },
+        { tr: "She stood up and went to the window.", note: "strong verbs: stand, ging" },
+        { tr: "He ran as fast as he could.", note: "lief: Präteritum of laufen" },
+        { tr: "When she arrived, the train had already left.", note: "Plusquamperfekt for what had happened before" },
+        { tr: "Nobody knew who had written the letter.", note: "wusste (mixed verb) and Plusquamperfekt hatte geschrieben" }
+      ]
+    },
+    vocab: [
+      "the story",
+      "the fairy tale",
+      "the hero",
+      "the story, the narrative",
+      "the beginning",
+      "the end",
+      "to tell (a story)",
+      "to happen",
+      "to get a fright (erschrak, ist erschrocken)",
+      "suddenly",
+      "back then, at that time",
+      "finally, in the end"
+    ],
+    exercises: [
+      {
+        tr: "The Präteritum of laufen, all persons.",
+        why: "<i>lief, liefst, lief, liefen, lieft, liefen</i>: vowel <i>ie</i>, no ending in the first and third person."
+      },
+      {
+        tr: "The Präteritum of ziehen, all persons.",
+        why: "<i>zog, zogst, zog, zogen, zogt, zogen</i>: the vowel becomes <i>o</i> and the <i>h</i> disappears."
+      },
+      {
+        tr: "The Präteritum of treffen, all persons.",
+        why: "<i>traf, trafst, traf, trafen, traft, trafen</i>: the double <i>f</i> becomes single after the long vowel <i>a</i>."
+      },
+      {
+        q: "Which sentence uses the typical tense of written narration?",
+        opts: [
+          "Sie stand auf und ging zum Fenster.",
+          "Sie ist aufgestanden und zum Fenster gegangen.",
+          "Sie steht auf und geht zum Fenster."
+        ],
+        why: "Written narration uses the <b>Präteritum</b>: <i>stand auf, ging</i>. The Perfekt is the tense of speech; the present is sometimes used for vividness, but it is not the normal narrative tense."
+      },
+      {
+        q: "What is the Präteritum of laufen (er)?",
+        opts: [
+          "lief",
+          "laufte",
+          "lauf"
+        ],
+        why: "<i>laufen</i> is a strong verb: <b>lief</b>. The weak form <i>laufte</i> does not exist."
+      },
+      {
+        q: "Fill in the Präteritum: “Plötzlich ___ das Telefon.” (klingeln)",
+        hint: "weak verb, er/es",
+        why: "<b>klingelte</b>: weak verb, stem <i>klingel-</i> + <i>-te</i>."
+      },
+      {
+        q: "Fill in: “Als sie ankam, ___ der Zug schon abgefahren.” (had already left)",
+        hint: "Präteritum of sein",
+        why: "<b>war</b>: the Plusquamperfekt of <i>abfahren</i> takes <i>sein</i>, because it is a verb of motion, while English always says <i>had</i>."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "He ran as fast as he could.",
+        why: "<i>Er lief, so schnell er konnte</i>: <i>lief</i> from <i>laufen</i>, <i>konnte</i> from <i>können</i>. <i>rannte</i>, from <i>rennen</i>, also works instead of <i>lief</i>."
+      },
+      {
+        q: "Translate: “Suddenly the light went out.”",
+        why: "<i>Plötzlich ging das Licht aus</i>: <i>ausgehen</i> in the Präteritum is <i>ging ... aus</i>, with the particle at the end. <i>auf einmal</i> also works."
+      },
+      {
+        tr: "It was already dark when he came home. The door was open and nobody answered. He got a fright and called the police.",
+        why: "In <i>dunkel</i> the <b>u</b> is short; in <i>erschrak</i> the <b>sch</b> is [ʃ] and the <b>a</b> is long; in <i>Polizei</i> the stress falls on the last syllable, <b>zei</b>."
+      },
+      {
+        tr: "Back then there was no internet yet, and we wrote each other long letters.",
+        why: "In <i>damals</i> the stress falls on <b>da</b>; in <i>schrieben</i> the <b>ie</b> is long; in <i>Briefe</i> the <b>ie</b> is a long <i>ee</i> again."
+      }
+    ]
+  },
+  "lesson:b2-u03-l3": {
+    theme: "Ways of doing things",
+    title: "Without asking, instead of waiting",
+    objectives: [
+      "use ohne ... zu and statt ... zu with the same subject",
+      "use ohne dass and anstatt dass with different subjects",
+      "put zu in the right place with separable verbs",
+      "describe how someone did something"
+    ],
+    theory: [
+      {
+        h: "ohne ... zu, statt ... zu",
+        p: "<strong>ohne ... zu</strong> (<em>without</em> + -ing) and <strong>statt / anstatt ... zu</strong> (<em>instead of</em> + -ing) build an infinitive clause with the <strong>same subject</strong> as the main clause. <em>zu</em> + infinitive goes to the end: <em>Er ging, ohne sich zu verabschieden. Statt zu warten, rief sie sofort an. Anstatt zu lernen, sieht er fern.</em> With a separable verb, <em>zu</em> goes between the particle and the verb: <em>ohne nachzudenken, statt fernzusehen</em>."
+      },
+      {
+        h: "ohne dass, anstatt dass",
+        p: "If the second clause has a <strong>different</strong> subject, the infinitive is impossible: you need <strong>ohne dass</strong> or <strong>anstatt dass</strong> with the conjugated verb at the end. <em>Er ging, ohne dass ich es merkte</em> (he left without me noticing). <em>Anstatt dass du alles allein machst, helfen wir dir</em> (instead of you doing everything alone, we'll help you). The dass construction is also possible with the same subject (<em>Anstatt dass du hilfst, schaust du nur zu</em>), but there the zu form sounds more natural."
+      },
+      {
+        contrast: "English puts an <em>-ing</em> form right after the preposition: <em>without saying goodbye</em>, <em>instead of waiting</em>. German has no gerund here: it uses <em>zu</em> + infinitive at the end of the clause, after all the objects: <em>ohne den Vertrag zu lesen</em>, <em>without reading the contract</em>. And where English simply adds a subject (<em>without me noticing</em>), German switches to a full clause: <em>ohne dass ich es merkte</em>, usually in the indicative (the Konjunktiv II is possible but rarer: <em>ohne dass ich es bemerkt hätte</em>)."
+      },
+      {
+        trap: "Don't drop <em>zu</em>: <em>ohne sich verabschieden</em> is wrong, it has to be <em>ohne sich zu verabschieden</em>. And don't use the infinitive with a different subject: <em>Er ging, ohne mich es zu merken</em> makes no sense; say <em>ohne dass ich es merkte</em>."
+      },
+      {
+        tip: "To check yourself, think of <em>um ... zu</em>, which you already know: the construction is the same (<em>um zu lernen, ohne zu lernen, statt zu lernen</em>), only the meaning changes."
+      }
+    ],
+    grammar: {
+      title: "ohne ... zu, statt ... zu, ohne dass, anstatt dass",
+      note: "<b>Same subject</b>: ohne / statt / anstatt + ... + <b>zu</b> + infinitive at the end. <b>Different subject</b>: ohne dass / anstatt dass + conjugated verb at the end, usually in the indicative.",
+      table: {
+        head: ["", "same subject", "different subject"],
+        rows: [
+          ["without", "Er ging, ohne sich zu verabschieden.", "Er ging, ohne dass ich es merkte."],
+          ["instead of", "Statt zu warten, rief sie an.", "Anstatt dass du alles allein machst, helfen wir dir."],
+          ["separable verb", "..., ohne nachzudenken.", "..., ohne dass er nachdachte."]
+        ]
+      },
+      examples: [
+        { tr: "He left without saying goodbye.", note: "ohne ... zu: same subject" },
+        { tr: "Instead of waiting, she called straight away.", note: "statt ... zu first, then the verb of the main clause" },
+        { tr: "She signed without reading the contract.", note: "zu + infinitive after all the objects" },
+        { tr: "Instead of studying, he watches TV.", note: "anstatt ... zu; fernsehen is separable" },
+        { tr: "He left without me noticing.", note: "ohne dass: different subject, usually indicative" },
+        { tr: "Instead of helping, you just stand there watching.", note: "anstatt dass: also possible with the same subject" }
+      ]
+    },
+    vocab: [
+      "the contract",
+      "the permission",
+      "the farewell, the goodbye",
+      "consideration (Rücksicht nehmen auf: to be considerate of)",
+      "the signature",
+      "to sign",
+      "to say goodbye",
+      "to watch, to look on",
+      "to think about, to reflect (über + accusative)",
+      "to notice",
+      "simply, just",
+      "secretly"
+    ],
+    exercises: [
+      {
+        q: "How do you say “He left without saying goodbye”?",
+        opts: [
+          "Er ging, ohne sich zu verabschieden.",
+          "Er ging, ohne zu verabschieden sich.",
+          "Er ging, ohne sich verabschieden."
+        ],
+        why: "<b>ohne ... zu</b> + infinitive at the end: <i>ohne sich zu verabschieden</i>. The reflexive pronoun comes before <i>zu</i>, and <i>zu</i> cannot be left out."
+      },
+      {
+        q: "How do you say “He left without me noticing”?",
+        opts: [
+          "Er ging, ohne dass ich es merkte.",
+          "Er ging, ohne mich es zu merken.",
+          "Er ging, ohne dass ich es merken."
+        ],
+        why: "The subjects differ (<i>er</i>, <i>ich</i>), so you need <b>ohne dass</b> with the conjugated verb at the end: <i>merkte</i>."
+      },
+      {
+        q: "Fill in: “Sie hat unterschrieben, ohne den Vertrag ___ lesen.”",
+        hint: "the infinitive particle",
+        why: "<b>zu</b>: <i>ohne ... zu lesen</i>, with <i>zu</i> right before the infinitive at the end."
+      },
+      {
+        q: "Fill in with nachdenken: “Sie antwortete, ohne ___.”",
+        hint: "separable verb with zu",
+        why: "<b>nachzudenken</b>: with a separable verb, <i>zu</i> goes between the particle <i>nach</i> and the verb, all in one word."
+      },
+      {
+        q: "Fill in: “___ du hilfst, schaust du nur zu.” (instead of)",
+        hint: "subject expressed: two words",
+        why: "<b>Anstatt dass</b> (or <i>Statt dass</i>): the clause has its own subject (<i>du hilfst</i>), so not the infinitive but <i>dass</i> with the verb at the end."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "Instead of waiting, she called straight away.",
+        why: "<i>Statt zu warten, rief sie sofort an</i>: the infinitive clause fills the first position, so the verb <i>rief</i> comes next; the particle <i>an</i> goes to the end."
+      },
+      {
+        q: "Put the words in order.",
+        tr: "Instead of studying, he watches TV all day.",
+        why: "<i>Anstatt zu lernen, sieht er den ganzen Tag fern.</i> The anstatt clause comes first, the verb <i>sieht</i> right after it, the particle <i>fern</i> at the end."
+      },
+      {
+        q: "Translate: “He signed the contract without reading it.”",
+        why: "<i>Er hat den Vertrag unterschrieben, ohne ihn zu lesen</i>. The Präteritum <i>unterschrieb</i> also works, as does <i>ohne ihn gelesen zu haben</i>."
+      },
+      {
+        tr: "He simply quit without talking to anyone about it. Instead of asking, he decided straight away.",
+        why: "In <i>gekündigt</i> the <b>ü</b> is short and rounded; in <i>jemandem</i> the <b>j</b> sounds like English <i>y</i>; in <i>entschieden</i> the <b>ie</b> is long."
+      },
+      {
+        tr: "Instead of waiting, we should call straight away.",
+        why: "In <i>anstatt</i> the stress falls on <b>statt</b>; in <i>sollten</i> the <b>o</b> is short; in <i>sofort</i> the stress falls on <b>fort</b>."
+      }
+    ]
+  },
+  "lesson:b2-u03-test": {
+    theme: "Check",
+    title: "Test: Passive and narrative tense",
+    objectives: [
+      "check the passive in the Perfekt and with modals, the narrative Präteritum and ohne ... zu"
+    ],
+    theory: [
+      {
+        p: "Ten questions on the whole unit. You pass with 70%. Don't look back at the lessons while you answer: if you can't remember something, it's better to go back and review."
+      }
+    ],
+    exercises: [
+      {
+        tr: "The Präteritum of finden, all persons.",
+        why: "<i>fand, fandest, fand, fanden, fandet, fanden</i>: after the <i>d</i> an <i>e</i> is inserted before <i>-st</i> and <i>-t</i>."
+      },
+      {
+        q: "Fill in: “Das Museum ist 1910 eröffnet ___.”",
+        hint: "passive Perfekt",
+        why: "<b>worden</b>: <i>ist eröffnet worden</i>, passive Perfekt."
+      },
+      {
+        q: "Fill in: “Der Antrag muss bis Montag abgegeben ___.”",
+        hint: "passive infinitive after a modal",
+        why: "<b>werden</b>: modal + participle + <i>werden</i>."
+      },
+      {
+        q: "Fill in the Präteritum: “Plötzlich ___ sie ein Geräusch.” (hören)",
+        hint: "weak verb, sie (she)",
+        why: "<b>hörte</b>: weak verb, <i>hör-</i> + <i>-te</i>."
+      },
+      {
+        q: "Fill in: “Er ging, ohne ein Wort ___ sagen.”",
+        hint: "the infinitive particle",
+        why: "<b>zu</b>: <i>ohne ein Wort zu sagen</i>."
+      },
+      {
+        q: "How do you say “The bridge had already been closed”?",
+        opts: [
+          "Die Brücke war schon gesperrt worden.",
+          "Die Brücke ist schon gesperrt geworden.",
+          "Die Brücke hatte schon gesperrt worden."
+        ],
+        why: "The passive Plusquamperfekt without a modal is <b>war</b> + participle + <b>worden</b>, not <i>hatte</i>, whatever English <i>had</i> suggests."
+      },
+      {
+        q: "Which sentence is correct?",
+        opts: [
+          "Statt dass du hilfst, schaust du zu.",
+          "Statt zu du hilfst, schaust du zu.",
+          "Statt dass du helfen, schaust du zu."
+        ],
+        why: "With an expressed subject you need <b>statt dass</b> + the conjugated verb at the end: <i>du hilfst</i>."
+      },
+      {
+        q: "Translate: “The letter was written yesterday.”",
+        why: "<i>Der Brief ist gestern geschrieben worden</i>, or in the Präteritum <i>Der Brief wurde gestern geschrieben</i>."
+      },
+      {
+        tr: "The castle was built in the eighteenth century. Later it was rebuilt several times without its character changing.",
+        why: "In <i>Schloss</i> the <b>o</b> is short; in <i>achtzehnten</i> the <b>ch</b> is [x] and the <b>z</b> is [ts]; in <i>Charakter</i> the initial <b>Ch</b> sounds like [k]."
+      },
+      {
+        tr: "Instead of discussing it for a long time, we simply solved the problem.",
+        why: "In <i>diskutieren</i> the stress falls on <b>tie</b>; in <i>Problem</i> the stress falls on <b>blem</b>; in <i>gelöst</i> the <b>ö</b> is long."
+      }
+    ]
   }
 });
