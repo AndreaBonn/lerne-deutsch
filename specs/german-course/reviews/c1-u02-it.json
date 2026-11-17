@@ -1,7 +1,33 @@
 {
-  "bundleHash": "3240d086135780d6659545fc7900bcd09674e9e6df457d27fc96399c32704b19",
-  "findings": [],
+  "bundleHash": "fbc84bec31b8bf66e754507cb52ec9612039a9d55997b5358215e9dab401d508",
+  "findings": [
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La spiegazione attribuisce la distinzione a «derselbe Verb», ma si tratta di verbi omografi distinti, talvolta anche con diversa reggenza. Inoltre la subordinata «weil die Fähre uns übersetzt» è scritta come il verbo inseparabile «tradurre»: chiarire che qui l'accento è su «über» e che il contesto determina il significato.",
+      "path": "merged.lessons[2].theory[0].p"
+    },
+    {
+      "kind": "significato e alternative",
+      "msg": "«Wörtlich» e «Wort für Wort» non sono sempre equivalenti: una traduzione letterale può rispettare la struttura della lingua d'arrivo senza tradurre ogni parola isolatamente. Rimuovere le quattro alternative con «Wort für Wort» oppure modificare la consegna affinché accetti esplicitamente entrambi i sensi.",
+      "path": "merged.lessons[2].exercises[7].a"
+    },
+    {
+      "kind": "precisione lessicale",
+      "msg": "«Auf die lange Bank schieben» significa rimandare qualcosa a lungo o ripetutamente, spesso evitando di affrontarla; il solo «rimandare» perde questa sfumatura. Usare «continuare a rimandare» o «rinviare a lungo».",
+      "path": "merged.lessons[2].exercises[5].pairs[3].tr"
+    },
+    {
+      "kind": "progressione CEFR",
+      "msg": "La maggior parte degli esercizi verifica riconoscimento di singoli vocaboli, completamenti guidati e parafrasi elementari, senza richiedere le distinzioni di registro, sfumatura e uso contestuale attese a C1. Rendere più impegnativi gli item mantenendo il formato previsto, per esempio con alternative vicine per significato e scelte motivate dal registro.",
+      "path": "merged.lessons"
+    },
+    {
+      "kind": "progressione CEFR",
+      "msg": "Anche il test verifica prevalentemente riconoscimento e completamento guidato, senza discriminare in modo sufficiente la padronanza C1 delle sfumature e dei registri presentati nell'unità. Inserire distrattori semanticamente vicini e contesti che richiedano una scelta di registro o interpretazione.",
+      "path": "merged.test.exercises"
+    }
+  ],
   "lang": "it",
   "unit": "c1-u02",
-  "verdict": "pass"
+  "verdict": "fail"
 }

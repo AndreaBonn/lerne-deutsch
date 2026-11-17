@@ -1,7 +1,18 @@
 {
-  "bundleHash": "85f591f8790c66c84122605b1f4c2dc576e69fe020824ef017cb9ef426ec3885",
-  "findings": [],
+  "bundleHash": "5783fc938efff96e0c0d8a80a4bf4ab59a4fe025cc9ebb0f76fb2d39bc091ec7",
+  "findings": [
+    {
+      "kind": "CEFR level",
+      "msg": "The lesson presents basic conversational particles and short everyday exchanges without the nuanced differences in tone, register or context expected at C1. Add more demanding examples and questions, for instance contrasting how doch, ja and eben can signal reassurance, impatience or a shared assumption depending on context.",
+      "path": "merged.lessons[1]"
+    },
+    {
+      "kind": "CEFR level",
+      "msg": "The cohesion lesson mainly practices basic sequencing and familiar verb-preposition patterns. Its examples and exercises do not adequately test C1 control of nuanced logical relationships or cohesive references across a text. Introduce more demanding connectors and short contexts that require distinguishing concession, qualification and consequence.",
+      "path": "merged.lessons[2]"
+    }
+  ],
   "lang": "en",
   "unit": "c1-u03",
-  "verdict": "pass"
+  "verdict": "fail"
 }

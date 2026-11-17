@@ -717,9 +717,9 @@ LINGUAI.addStrings("en", {
         why: "<b>vorhersehbar</b> (or <i>absehbar</i>, <i>voraussehbar</i>): “foreseeable”; the suffix <i>-bar</i> says that something can be done."
       },
       {
-        q: "Complete the notice to the tenants.",
+        q: "Complete the notice to the tenants (third gap: an adjective in -bar from beheben).",
         tr: "Dear tenants, unfortunately the heating can only be repaired next week. Until then the windows are to be kept closed. The damage can be fixed, though: the technician is coming on Monday.",
-        why: "<i>lässt sich ... reparieren</i> (can be), <i>sind ... zu halten</i> (are to be kept), <i>behebbar</i>, <i>reparierbar</i> or <i>reparabel</i> (fixable)."
+        why: "<i>lässt sich ... reparieren</i> (can be), <i>sind ... zu halten</i> (are to be kept), <i>behebbar</i> (can be fixed): you fix damage (<i>beheben</i>), but you repair the object (<i>Die Heizung ist reparierbar</i>)."
       },
       {
         q: "Put the words in order.",
@@ -1160,7 +1160,7 @@ LINGUAI.addStrings("en", {
         why: "In a request or invitation <b>doch</b> encourages: “come on, come along”."
       },
       {
-        q: "A colleague says: «Das hast du ja schon gestern gesagt.» What does ja signal?",
+        q: "In a meeting, a colleague repeats a point you both discussed yesterday. You say: «Das hast du ja schon gestern gesagt.» What does ja signal?",
         opts: [
           "that both already know this",
           "that he doesn't believe it",
@@ -1180,7 +1180,7 @@ LINGUAI.addStrings("en", {
       {
         q: "Fill in: «Hast du ___ kurz Zeit?»",
         hint: "particle that makes the request polite",
-        why: "<b>mal</b> (regionally also <i>eben</i>): it softens the request, like “a sec”."
+        why: "<b>mal</b>: it softens the request, like “a sec”."
       },
       {
         q: "Fill in: «Das ist ___ so, da kann man nichts machen.»",

@@ -1,7 +1,23 @@
 {
-  "bundleHash": "24371085505ec721b2a4366271d5098db4d0e6c23335ea1034f2be19b113c813",
-  "findings": [],
+  "bundleHash": "5303d1e5739ab7f8468554342650a87c3a13feb99b85e18e9aebc16048debf1e",
+  "findings": [
+    {
+      "kind": "pronunciation",
+      "msg": "The primary stress in «Regelung» falls on «Re», so this is correct, but the primary stress in «Redewendung» falls on «Re» as well; no correction is needed.",
+      "path": "merged.lessons[2].exercises[9].why"
+    },
+    {
+      "kind": "answer key",
+      "msg": "The question asks learners to order the supplied tokens, but valid arrangements are omitted, including «Bis Freitag ist der Antrag beim Amt abzugeben» with the temporal phrase after the subject in «Beim Amt ist bis Freitag der Antrag abzugeben». Add the valid arrangements or clarify the intended order.",
+      "path": "merged.lessons[1].exercises[6].a"
+    },
+    {
+      "kind": "grammar explanation",
+      "msg": "The statement that «with separable and inseparable verbs the participle decides» is too broad: verbs with bases whose participles do not take ge-, such as separable «wiederholen» meaning to fetch again, can also lack ge-. Restrict the claim to the examples involving «umfahren».",
+      "path": "merged.lessons[2].theory[3].trap"
+    }
+  ],
   "lang": "en",
   "unit": "c1-u02",
-  "verdict": "pass"
+  "verdict": "fail"
 }

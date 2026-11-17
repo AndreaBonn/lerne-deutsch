@@ -1,0 +1,33 @@
+{
+  "bundleHash": "4e412cec0828c6057164006ce46688a25c95fca420ce8d36c2d427fdc7e98bc2",
+  "findings": [
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Es» non è un correlato obbligatorio in questa costruzione: «Wichtig ist, dass alle pünktlich sind» è corretto anche senza anticipazione. Precisare che «es» occupa la prima posizione quando la frase subordinata segue e nessun altro elemento la occupa.",
+      "path": "merged.lessons[2].theory[2].contrast"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Umgangssprache» indica il linguaggio o registro colloquiale, non il linguaggio parlato in generale, che può essere anche formale. Eliminare «język mówiony» o qualificarlo come colloquiale.",
+      "path": "merged.lessons[1].vocab[5].tr"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "«Doch komm mit!» può essere corretto come esortazione in contesto contrastivo; il divieto assoluto è fuorviante. Precisare che in «Komm doch mit» la particella modale occupa normalmente il campo centrale, mentre «doch» iniziale può avere un'altra funzione.",
+      "path": "merged.lessons[1].theory[3].trap"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Żeby wszyscy wzięli udział» esprime una subordinata volitiva, non un evento necessariamente passato. Sostituire «forma przeszła» con «forma na -ł użyta w konstrukcji z żeby», senza attribuirle valore temporale passato.",
+      "path": "merged.lessons[2].exercises[7].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La forma polacca in «żeby wszyscy wzięli udział» non indica necessariamente il passato. Descriverla come forma na -ł nella costruzione con «żeby», evitando «forma przeszła».",
+      "path": "merged.lessons[2].theory[2].contrast"
+    }
+  ],
+  "lang": "pl",
+  "unit": "c1-u03",
+  "verdict": "fail"
+}

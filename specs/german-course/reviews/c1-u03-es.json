@@ -1,0 +1,33 @@
+{
+  "bundleHash": "67c52c5b0b42cd02eec5e46b3677c4eab0ca40553f6afcb0ca19c93b7a57baa5",
+  "findings": [
+    {
+      "kind": "gramática",
+      "msg": "«Weiß ich nicht» no omite «das»: «Das weiß ich nicht» tiene un objeto anticipado, mientras que «Weiß ich nicht» deja vacío el primer campo. Sustituye la explicación por una descripción del orden coloquial.",
+      "path": "merged.lessons[1].grammar.examples[4].note"
+    },
+    {
+      "kind": "gramática",
+      "msg": "«Passt schon» no tiene necesariamente un sujeto sobrentendido: passen puede usarse impersonalmente. Elimina esa explicación o indica que la construcción se usa sin sujeto expreso.",
+      "path": "merged.lessons[1].exercises[6].why"
+    },
+    {
+      "kind": "gramática",
+      "msg": "La elipsis de «das» y la omisión del sujeto no explican todas estas fórmulas: «Weiß ich nicht» puede analizarse con el primer campo vacío y «Passt schon» como construcción impersonal. Distingue los casos en lugar de dar una explicación común.",
+      "path": "merged.lessons[1].theory[1].p"
+    },
+    {
+      "kind": "clave de respuestas",
+      "msg": "La frase admite otras respuestas naturales, por ejemplo «eigentlich», «denn» o «wohl». Especifica en la consigna que se busca la partícula que suaviza la petición o añade las alternativas pertinentes.",
+      "path": "merged.lessons[1].exercises[3]"
+    },
+    {
+      "kind": "clave de respuestas",
+      "msg": "También son posibles «Vor Abschluss der Arbeiten» o «Bei Abschluss der Arbeiten», con significados diferentes. La pista indica «tras», pero conviene explicitar en la consigna que la calle se abre después de terminar las obras.",
+      "path": "merged.test.exercises[5]"
+    }
+  ],
+  "lang": "es",
+  "unit": "c1-u03",
+  "verdict": "fail"
+}

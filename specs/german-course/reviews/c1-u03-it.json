@@ -1,7 +1,23 @@
 {
-  "bundleHash": "2657a8e7a03310ec988cef394603fc05ceb592df2e08ae340fd0eb144ad15b4b",
-  "findings": [],
+  "bundleHash": "4894761c5c4599a59a5e1d3530bd826e1c39848c3f35d7b8051f0a77b9c81203",
+  "findings": [
+    {
+      "kind": "livello CEFR",
+      "msg": "La progressione della lezione resta prevalentemente su strutture e scelte di registro elementari: gli esercizi contrappongono frasi colloquiali ovvie a formulazioni burocratiche caricaturali, senza richiedere di distinguere sfumature pragmatiche in contesti plausibili. Per il C1, introdurre contesti e alternative più vicini tra loro, chiedendo di valutare tono, intenzione e adeguatezza al destinatario.",
+      "path": "merged.lessons[1].exercises"
+    },
+    {
+      "kind": "livello CEFR",
+      "msg": "La lezione verifica soprattutto correlativi e connettivi frequenti con frasi brevi e alternative facilmente escludibili. Per raggiungere il C1 nel formato previsto, usare anche relazioni argomentative e rinvii meno prevedibili, con distrattori plausibili e differenze di significato dipendenti dal contesto.",
+      "path": "merged.lessons[2].exercises"
+    },
+    {
+      "kind": "contrasto linguistico",
+      "msg": "La nota presenta il genitivo senza preposizione come una differenza rispetto all'italiano, ma anche l'italiano può esprimere il complemento senza preposizione davanti all'articolo tedesco corrispondente, usando «di»: «l'osservanza delle regole». Spiegare invece che il tedesco usa il caso genitivo, mentre l'italiano ricorre normalmente alla preposizione «di».",
+      "path": "merged.lessons[0].theory[2].contrast"
+    }
+  ],
   "lang": "it",
   "unit": "c1-u03",
-  "verdict": "pass"
+  "verdict": "fail"
 }

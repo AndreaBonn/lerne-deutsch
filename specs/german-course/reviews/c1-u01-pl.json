@@ -1,0 +1,18 @@
+{
+  "bundleHash": "a439b7fd499ce3fbe10fc2176a02a225f14ef34b1310c70d2588d41c58b50e72",
+  "findings": [
+    {
+      "kind": "traduzione",
+      "msg": "«Un verpasster Anschluss» è una coincidenza persa, non semplicemente un ritardo alla coincidenza. Sostituire «spóźnienie się na przesiadkę» con «przegapienie przesiadki».",
+      "path": "merged.lessons[1].grammar.examples[3].tr"
+    },
+    {
+      "kind": "idiomaticità",
+      "msg": "«Niezwykle warta zobaczenia» non è una formulazione naturale in polacco. Usare per esempio «Nową wystawę zdecydowanie warto zobaczyć».",
+      "path": "merged.lessons[2].exercises[8].tr"
+    }
+  ],
+  "lang": "pl",
+  "unit": "c1-u01",
+  "verdict": "fail"
+}

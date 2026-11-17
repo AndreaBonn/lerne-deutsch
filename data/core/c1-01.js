@@ -331,12 +331,12 @@ LINGUAI.addUnits("C1", [
           {
             t: "cloze",
             text: "Liebe Mieterinnen und Mieter, die Heizung {{1}} sich leider erst nächste Woche reparieren. Bis dahin {{2}} die Fenster geschlossen zu halten. Der Schaden ist aber {{3}}: Der Techniker kommt am Montag.",
-            gaps: [["lässt"], ["sind"], ["behebbar", "reparierbar", "reparabel"]]
+            gaps: [["lässt"], ["sind"], ["behebbar"]]
           },
           {
             t: "order",
             tokens: ["Der", "Antrag", "ist", "bis", "Freitag", "beim", "Amt", "abzugeben"],
-            a: ["Der Antrag ist bis Freitag beim Amt abzugeben", "Der Antrag ist beim Amt bis Freitag abzugeben"]
+            a: ["Der Antrag ist bis Freitag beim Amt abzugeben", "Der Antrag ist beim Amt bis Freitag abzugeben", "Bis Freitag ist der Antrag beim Amt abzugeben", "Beim Amt ist der Antrag bis Freitag abzugeben"]
           },
           {
             t: "trans",
@@ -563,7 +563,7 @@ LINGUAI.addUnits("C1", [
           { t: "mcq", a: 0 },
           { t: "mcq", a: 0 },
           { t: "mcq", a: 0 },
-          { t: "fill", a: ["mal", "eben"] },
+          { t: "fill", a: ["mal"] },
           { t: "fill", a: ["halt", "eben"] },
           {
             t: "cloze",

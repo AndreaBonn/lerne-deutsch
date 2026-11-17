@@ -1,0 +1,23 @@
+{
+  "bundleHash": "20ccfe709f5258dd23531434d0763a6f95616476d23fc7e56b5282999fa9e08c",
+  "findings": [
+    {
+      "kind": "livello CEFR",
+      "msg": "L'unità è dichiarata C1, ma gli esercizi propongono prevalentemente riconoscimento e completamento di strutture e lessico comuni, con frasi brevi e significati espliciti. Anche il test riprende gli stessi esempi senza richiedere distinzioni di registro, sfumature o uso contestuale più avanzato. Mantenere il formato previsto, ma introdurre item che richiedano scelte tra costruzioni vicine per significato e registro, collocazioni meno trasparenti e interpretazione contestuale adeguata al C1.",
+      "path": "merged.lessons"
+    },
+    {
+      "kind": "spiegazione semantica",
+      "msg": "«nicht in Frage kommen» non esprime sempre un rifiuto deciso: può anche indicare che qualcosa non è adatto o non può essere preso in considerazione per ragioni oggettive. Precisare che «nie ma mowy» è una resa possibile quando il contesto esprime un rifiuto categorico.",
+      "path": "merged.lessons[0].theory[3].trap"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La spiegazione afferma che nei verbi inseparabili l'accento cade sulla sillaba immediatamente successiva al prefisso. Non è una regola generale: per esempio, in «unterhalten» l'accento cade su «hal», non sulla sillaba «ter». Indicare che il prefisso inseparabile è normalmente atono, senza fissare l'accento alla sillaba successiva.",
+      "path": "merged.lessons[2].grammar.note"
+    }
+  ],
+  "lang": "pl",
+  "unit": "c1-u02",
+  "verdict": "fail"
+}

@@ -1,0 +1,18 @@
+{
+  "bundleHash": "6bf81618e736d4188ffdd18dd35770cb9d4550e94054e38924c3ff22636d05ac",
+  "findings": [
+    {
+      "kind": "adeguatezza CEFR",
+      "msg": "La lezione è prevalentemente centrata su forme e operazioni già accessibili ai livelli intermedi: riconoscere le terminazioni dopo articoli espliciti, associare parole comuni e riordinare una frase semplice. Per un'unità C1 servono item più impegnativi anche nel formato breve, per esempio declinazioni in contesti sintattici complessi e distinzioni di registro o significato.",
+      "path": "merged.lessons[1].exercises"
+    },
+    {
+      "kind": "adeguatezza CEFR",
+      "msg": "Il test verifica soprattutto il riconoscimento di forme isolate e significati già espliciti, senza accertare un uso C1 delle strutture presentate. Sostituire alcuni item con scelte contestualizzate che richiedano di distinguere sfumature, registro e interpretazioni possibili.",
+      "path": "merged.test.exercises"
+    }
+  ],
+  "lang": "es",
+  "unit": "c1-u01",
+  "verdict": "fail"
+}

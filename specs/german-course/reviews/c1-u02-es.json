@@ -1,0 +1,28 @@
+{
+  "bundleHash": "72ecbdd90bdee950eb9ee0f3d8d0b23e2f3b0201f92ae30f2ffb69cfb24ddf90",
+  "findings": [
+    {
+      "kind": "livello CEFR",
+      "msg": "La lezione è etichettata C1, ma gli esempi e gli esercizi richiedono soprattutto il riconoscimento di locuzioni frequenti in frasi brevi e trasparenti, senza distinguere sfumature di significato o registro. Per il C1, introdurre alternative plausibili e contesti formali che richiedano di scegliere la locuzione in base alla sfumatura.",
+      "path": "merged.lessons[0].exercises"
+    },
+    {
+      "kind": "livello CEFR",
+      "msg": "Gli esercizi verificano prevalentemente trasformazioni dirette e riconoscimento di strutture comuni, con distrattori facilmente eliminabili. Per il C1, mantenendo i tipi e il numero di esercizi, richiedere distinzioni contestuali fra possibilità e obbligo e fra registri amministrativi.",
+      "path": "merged.lessons[1].exercises"
+    },
+    {
+      "kind": "livello CEFR",
+      "msg": "La distinzione fra umfahren separabile e inseparabile è pertinente, ma le domande rendono la risposta quasi sempre esplicita tramite traduzione, contesto o forma del participio; anche i modismi sono verificati con equivalenze dirette. Aggiungere scelte plausibili che richiedano di interpretare accento, contesto e registro a livello C1.",
+      "path": "merged.lessons[2].exercises"
+    },
+    {
+      "kind": "livello CEFR",
+      "msg": "Il test riprende principalmente completamenti guidati e domande con distrattori evidenti; così non verifica le distinzioni contestuali e di registro attese al C1. Riformulare gli elementi mantenendo i tipi e il numero previsti, con alternative plausibili e contesti che richiedano maggiore precisione.",
+      "path": "merged.test.exercises"
+    }
+  ],
+  "lang": "es",
+  "unit": "c1-u02",
+  "verdict": "fail"
+}

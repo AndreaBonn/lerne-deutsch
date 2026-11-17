@@ -717,9 +717,9 @@ LINGUAI.addStrings("it", {
         why: "<b>vorhersehbar</b> (o <i>absehbar</i>): «prevedibile»; il suffisso <i>-bar</i> dice che una cosa si può fare."
       },
       {
-        q: "Completa l'avviso ai condomini.",
-        tr: "Gentili inquilini, il riscaldamento purtroppo si potrà riparare solo la settimana prossima. Fino ad allora le finestre vanno tenute chiuse. Il guasto però è riparabile: il tecnico viene lunedì.",
-        why: "<i>lässt sich ... reparieren</i> (si può), <i>sind ... zu halten</i> (vanno tenute), <i>behebbar</i>, <i>reparierbar</i> o <i>reparabel</i> (riparabile)."
+        q: "Completa l'avviso ai condomini (nel terzo spazio un aggettivo in -bar da beheben).",
+        tr: "Gentili inquilini, il riscaldamento purtroppo si potrà riparare solo la settimana prossima. Fino ad allora le finestre vanno tenute chiuse. Il guasto però si può eliminare: il tecnico viene lunedì.",
+        why: "<i>lässt sich ... reparieren</i> (si può), <i>sind ... zu halten</i> (vanno tenute), <i>behebbar</i> (eliminabile): il danno si elimina (<i>beheben</i>), mentre si ripara l'oggetto (<i>Die Heizung ist reparierbar</i>)."
       },
       {
         q: "Metti in ordine le parole.",
@@ -752,7 +752,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Lo stesso verbo, due verbi",
-        p: "Con <strong>durch-, über-, um-, unter-, wieder-</strong> lo stesso verbo può essere separabile o inseparabile, con significati diversi. <em>Er hat das Schild <strong>umgefahren</strong></em>: l'ha abbattuto con l'auto (separabile, accento su <em>um</em>). <em>Wir haben den Stau <strong>umfahren</strong></em>: l'abbiamo aggirato (inseparabile, accento su <em>fah</em>). Nelle forme coniugate il separabile si stacca (<em>Die Fähre setzt uns über</em>), l'inseparabile no (<em>Sie übersetzt den Text</em>)."
+        p: "Con <strong>durch-, über-, um-, unter-, wieder-</strong> lo stesso verbo può essere separabile o inseparabile, con significati diversi. <em>Er hat das Schild <strong>umgefahren</strong></em>: l'ha abbattuto con l'auto (separabile, accento su <em>um</em>). <em>Wir haben den Stau <strong>umfahren</strong></em>: l'abbiamo aggirato (inseparabile, accento su <em>fah</em>). Quando il verbo coniugato è in prima o seconda posizione il separabile si stacca (<em>Die Fähre setzt uns über</em>), l'inseparabile no (<em>Sie übersetzt den Text</em>); in fondo alla subordinata anche il separabile resta unito (<em>..., weil die Fähre uns übersetzt</em>)."
       },
       {
         h: "I modi di dire",

@@ -1,0 +1,18 @@
+{
+  "bundleHash": "50cbc1e7b2d57c10735a044b5627c03ef3deb216ffa3d53d5288979877ca2ba9",
+  "findings": [
+    {
+      "kind": "niveau CECR",
+      "msg": "La leçon sur l’oral se limite à des particules et ellipses courantes, puis à des oppositions très faciles entre conversation et style administratif. Les items ne demandent pas de distinguer les nuances de ton ou les usages contextuels attendus au niveau C1. Introduire des contextes où une même particule peut encourager, rappeler ou reprocher selon la situation, avec des distracteurs plausibles.",
+      "path": "merged.lessons[1].exercises"
+    },
+    {
+      "kind": "niveau CECR",
+      "msg": "Le test évalue surtout des formes et associations élémentaires ou déjà données dans les leçons, avec des distracteurs très éloignés de la bonne réponse. Il ne vérifie pas une maîtrise C1 des nuances de registre et de cohésion annoncées pour l’unité. Ajouter des choix contextuels plus proches et des reformulations qui exigent de préserver précisément le sens et le registre.",
+      "path": "merged.test.exercises"
+    }
+  ],
+  "lang": "fr",
+  "unit": "c1-u03",
+  "verdict": "fail"
+}
