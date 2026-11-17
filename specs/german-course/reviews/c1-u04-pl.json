@@ -1,15 +1,15 @@
 {
-  "bundleHash": "e67882761e5e231e28b601d3808134251f9e597f78dbd1efbdad332ea3b39f60",
+  "bundleHash": "7c63db2b1864de918a7ed8d9943f5e3b7d60afff85e49e738488a1e2a3b21add",
   "findings": [
     {
-      "kind": "plurale errato",
-      "msg": "Il plurale di «der Verdacht» è «die Verdächte», non «die Verdachte». Correggere il valore nel core e nella versione risultante.",
-      "path": "neutral.lessons[0].vocab[1].plural"
+      "kind": "Tłumaczenie",
+      "msg": "Polskie „spóźnił autobus” jest niepoprawne. Zastąp je wyrażeniem „spóźnił się na autobus”.",
+      "path": "merged.lessons[2].exercises[5].tr"
     },
     {
-      "kind": "istruzione incoerente con le risposte",
-      "msg": "La consegna chiede di inserire particelle, ma nella prima lacuna accetta anche gli avverbi «wahrscheinlich» e «vermutlich». Ampliare la consegna alle espressioni adatte o limitare le risposte alle particelle.",
-      "path": "merged.lessons[2].exercises[5]"
+      "kind": "Objaśnienie rejestru",
+      "msg": "Objaśnienie błędnie zalicza przymiotnik „schlecht” do słownictwa właściwego mowie potocznej. Jest on neutralny; o potoczności podanych przykładów decydują przede wszystkim partykuły „halt” i „eben” oraz wyrażenie „nicht so toll”. Popraw uzasadnienie.",
+      "path": "merged.lessons[2].exercises[2].why"
     }
   ],
   "lang": "pl",

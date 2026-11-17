@@ -1,20 +1,25 @@
 {
-  "bundleHash": "1c5b5be94a2e39f2f5f20c5edec2a641eb0e8ac64f85e81da1d06e39ead2d362",
+  "bundleHash": "8c01b2e75fead278b74f9d1b40df1de1a73b1df08c92f23662141784d7e4e140",
   "findings": [
     {
-      "kind": "Spiegazione grammaticale",
-      "msg": "Il consiglio associa il participio I a una relativa al presente, ma può esprimere contemporaneità anche rispetto a un evento passato: «die an der Sitzung teilnehmenden Mitglieder» corrisponde qui a «die Mitglieder, die an der Sitzung teilnahmen». Sostituire il riferimento al presente con quello alla contemporaneità rispetto al verbo principale.",
-      "path": "merged.lessons[0].theory[4].tip"
+      "kind": "spiegazione grammaticale",
+      "msg": "L'esempio «Ich bitte dich, früher zu kommen» illustra un'infinitiva retta da bitten, non una costruzione con «ohne zu» o «um zu». Sostituiscilo con un esempio pertinente, per esempio «Ich gebe dir das Formular, um es auszufüllen» è ambiguo: meglio «Ich schicke dir das Formular, damit du es ausfüllst», spiegando che «damit» esplicita il soggetto diverso.",
+      "path": "merged.lessons[2].theory[2].contrast"
     },
     {
-      "kind": "Spiegazione grammaticale",
-      "msg": "«Nur dann ..., wenn» esprime una condizione necessaria, non una sfumatura modale o di probabilità che un nome non può rendere. La stessa unità propone «nur bei repräsentativer Stichprobe». Separare questo caso dagli esempi con «sollte» e «könnte» e riconoscere la possibile formulazione nominale.",
-      "path": "merged.lessons[2].theory[0].p"
+      "kind": "spiegazione grammaticale",
+      "msg": "La nota afferma che la nominalizzazione nasconderebbe necessariamente uno dei due soggetti, ma entrambi possono essere espressi: «Wegen der Erkrankung des Vorsitzenden und des Feststeckens der Referentin im Ausland ...». Il problema è soprattutto la pesantezza stilistica; formula la nota in questi termini.",
+      "path": "merged.lessons[2].grammar.examples[0].note"
     },
     {
-      "kind": "Risposte alternative",
-      "msg": "Manca una traduzione valida con il Futur I passivo esplicito: «Die in der Sitzung getroffenen Entscheidungen werden nach Abschluss der Prüfung mitgeteilt werden». Aggiungerla alle risposte accettate, insieme all'eventuale variante con il complemento temporale iniziale.",
-      "path": "merged.test.exercises[9].a"
+      "kind": "traduzione lessicale",
+      "msg": "«die Rahmenbedingung» è singolare, mentre «le condizioni quadro» è plurale. Correggi in «la condizione quadro» oppure presenta il lemma tedesco al plurale.",
+      "path": "merged.lessons[2].vocab[2].tr"
+    },
+    {
+      "kind": "quesito ambiguo",
+      "msg": "Anche «sobald» completa naturalmente la frase: «erst sobald ...» esprime che la firma avverrà solo al verificarsi di entrambe le condizioni. La distinzione assoluta fra tempo e condizione nella spiegazione è troppo netta. Accetta «sobald» oppure riformula il quesito imponendo esplicitamente «wenn» e correggi la spiegazione.",
+      "path": "merged.lessons[2].exercises[5]"
     }
   ],
   "lang": "it",

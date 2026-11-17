@@ -1,30 +1,25 @@
 {
-  "bundleHash": "2247f46a9b6bd7622608ed80ce015aaf67754273bb5bfc8f872240a5390e9007",
+  "bundleHash": "dceec14b4fa045ebe2fb8cb875545d03c32ad1712fb272f0451bf02bb1960a5a",
   "findings": [
     {
-      "kind": "pronuncia",
-      "msg": "L’accento di «Vorsitzende» cade su «sitz», non su «Vor». Correggere l’indicazione in polacco.",
-      "path": "merged.lessons[2].exercises[9].why"
+      "kind": "spiegazione grammaticale errata",
+      "msg": "Il consiglio associa il presente attivo nella relativa esclusivamente al Partizip I, ma anche una relativa al passato o al futuro può corrispondere a un Partizip I, per esempio «die Mitglieder, die an der Sitzung teilnahmen» → «die an der Sitzung teilnehmenden Mitglieder». Formulare la distinzione in termini di contemporaneità rispetto al contesto, non di tempo presente.",
+      "path": "merged.lessons[0].theory[4].tip"
     },
     {
-      "kind": "grammatica polacca",
-      "msg": "«Gdyby ... zostanie» combina in modo innaturale una condizione al condizionale con una principale al futuro. Per rendere il senso eventuale dell’originale usare, per esempio, «Jeśli kontrola potrwa dłużej, termin zostanie przesunięty». La stessa correzione serve nelle altre traduzioni e consegne che ripetono la costruzione.",
-      "path": "merged.lessons[2].grammar.examples[2].tr"
+      "kind": "spiegazione grammaticale errata",
+      "msg": "La spiegazione afferma che infolge richiede sempre il genitivo. In assenza di un articolo o di un aggettivo che rendano riconoscibile il genitivo plurale, si usa il dativo, per esempio «infolge Umbauten». Precisare questa eccezione sia qui sia nella nota sui casi della lezione.",
+      "path": "merged.lessons[1].theory[3].trap"
     },
     {
-      "kind": "grammatica polacca",
-      "msg": "La consegna «Gdyby komisja odrzuciła wniosek, termin zostanie przedłużony» combina una condizione al condizionale con una principale al futuro. Usare, per esempio, «Jeśli komisja odrzuci wniosek, termin zostanie przedłużony», oppure formulare coerentemente entrambe le proposizioni al condizionale e adeguare le risposte accettate.",
-      "path": "merged.lessons[2].exercises[8].q"
+      "kind": "chiave troppo restrittiva",
+      "msg": "«Falls» è grammaticalmente e semanticamente possibile in «Die Ergebnisse sind nur dann aussagekräftig, falls die Stichprobe repräsentativ ist». Accettarlo oppure specificare che si richiede la correlazione con «wenn».",
+      "path": "merged.lessons[2].exercises[3]"
     },
     {
-      "kind": "progressione CEFR",
-      "msg": "La nota presenta il participio attributivo con «zu» come esclusivo del C2, affermazione troppo categorica per una costruzione pertinente anche a un percorso C1. Introdurla al C1 o indicare che sarà approfondita più avanti, senza attribuirla esclusivamente al C2. Correggere anche «merged.grammarNote».",
-      "path": "merged.lessons[0].theory[1].p"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "«werden ... mitgeteilt» è qui presente della Vorgangspassiv; il riferimento futuro deriva dal contesto temporale, non dalla sola forma passiva con «werden». Distinguere questa costruzione dal futuro passivo «werden ... mitgeteilt werden».",
-      "path": "merged.test.exercises[9].why"
+      "kind": "spiegazione fuorviante",
+      "msg": "Il tempo verbale non è di per sé un motivo valido per scartare la terza opzione: un nome può esprimere un evento passato con l'aiuto del contesto. Riformulare il distrattore o la spiegazione, che attualmente lo dichiara falso senza chiarire la distinzione.",
+      "path": "merged.lessons[2].exercises[0]"
     }
   ],
   "lang": "pl",

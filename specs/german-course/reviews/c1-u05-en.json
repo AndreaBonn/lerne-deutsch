@@ -1,34 +1,29 @@
 {
-  "bundleHash": "86e6321942cb4f1ffa2ba95542d5d9a75d439c3ccdd2aa1429e48a00d24ef6aa",
+  "bundleHash": "2903950f8caa78297f477264d1260934586163e58ff1f48a9875de8cd7eb6db1",
   "findings": [
     {
-      "kind": "answer key",
-      "msg": "«Sobald» and «nachdem» express a temporal relation, while the English sentence and the stated task express a condition. Accepting them changes the meaning; retain «wenn» or add «falls» and adjust the explanation.",
-      "path": "merged.lessons[2].exercises[5].gaps[0]"
+      "kind": "risposta ambigua",
+      "msg": "Anche «sobald» e «nachdem» completano correttamente la frase e sono compatibili con il contesto temporale del contratto. Il quesito non impone una relazione esclusivamente condizionale. Accettarle oppure specificare che è richiesta la congiunzione condizionale «wenn».",
+      "path": "merged.lessons[2].exercises[5]"
     },
     {
-      "kind": "explanation",
-      "msg": "The nominal phrase does not necessarily lose the hypothetical meaning: «bei längerer Dauer der Prüfung» also describes a possible future condition. Reframe the item around the more explicit modal marking of «sollte», rather than claiming the nuance is lost.",
-      "path": "merged.lessons[2].exercises[1]"
+      "kind": "spiegazione grammaticale",
+      "msg": "«English has no case endings at all» è troppo assoluto: l’inglese conserva distinzioni di caso nei pronomi, come «he/him» e «who/whom». Precisare che i nomi e gli aggettivi inglesi non hanno un sistema di desinenze casuali paragonabile a quello tedesco.",
+      "path": "merged.lessons[1].theory[2].contrast"
     },
     {
-      "kind": "explanation",
-      "msg": "«Seitens der Teilnehmenden» explicitly identifies the participants as the agent; it does not hide the subject. Explain instead that the phrase can make the sentence cumbersome or obscure the relationship between agent and action.",
-      "path": "merged.lessons[2].theory[3].trap"
+      "kind": "spiegazione grammaticale",
+      "msg": "La forma «die gerade bearbeiteten Anträge» non indica necessariamente che l’elaborazione sia ancora in corso: può riferirsi anche a pratiche appena elaborate. Presentarla come corrispondenza possibile, dipendente dal contesto, e chiarire che «die Anträge, die gerade bearbeitet werden» esprime il processo in corso senza questa ambiguità.",
+      "path": "merged.test.exercises[5]"
     },
     {
-      "kind": "interference note",
-      "msg": "The claim that English speakers are tempted by the colloquial German dative after «wegen» and «trotz» is unsupported as an English-specific interference pattern. Replace it with the concrete contrast that English does not mark these cases, so learners must learn the German case governed by each preposition.",
-      "path": "merged.lessons[1].theory[3].trap"
+      "kind": "traduzione lessicale",
+      "msg": "«Aussagekräftig» significa «informative», «meaningful» o, secondo il contesto, «significant». «Reliable» traduce piuttosto «zuverlässig» e può confondere la capacità informativa dei dati con la loro affidabilità.",
+      "path": "merged.lessons[2].vocab[10].tr"
     },
     {
-      "kind": "translation",
-      "msg": "«Aussagekräftig» means informative or meaningful in this context; «significant» can suggest statistical significance, which the German does not assert. Use «The results are informative only if the sample is representative.»",
-      "path": "merged.lessons[2].grammar.examples[4].tr"
-    },
-    {
-      "kind": "explanation",
-      "msg": "The accepted answer is a present passive with a future interpretation supplied by context; «werden» here is the passive auxiliary, not a separate future marker. Revise the explanation accordingly.",
+      "kind": "lingua della spiegazione",
+      "msg": "La frase finale ripete «is also accepted» e risulta sgrammaticata. Correggere in «The explicit future passive … is also accepted, as is the sentence beginning with …».",
       "path": "merged.test.exercises[9].why"
     }
   ],

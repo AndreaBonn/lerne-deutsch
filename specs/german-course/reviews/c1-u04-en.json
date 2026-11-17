@@ -1,30 +1,20 @@
 {
-  "bundleHash": "6d8c2cae665dc3096df90de9015411fcc88ba5b646136b8bf0a2e34e33479fc8",
+  "bundleHash": "9545e3ff7108adac677d37b5dec6a75b5abb01d976fe79509229ceec69b5d701",
   "findings": [
     {
-      "kind": "plurale errato",
-      "msg": "Il plurale corretto di «der Verdacht» è «die Verdächte», non «die Verdachte». Correggere anche il valore corrispondente in merged.lessons[0].vocab[1].plural.",
-      "path": "neutral.lessons[0].vocab[1].plural"
+      "kind": "ambiguità della domanda",
+      "msg": "La prima frase può esprimere una previsione o supposizione su un evento futuro: «nächste Woche» indica il momento dell'evento, non il grado di certezza. Aggiungere un contesto che distingua chiaramente un impegno o programma da una supposizione, oppure riformulare la domanda.",
+      "path": "merged.lessons[0].exercises[0]"
     },
     {
-      "kind": "spiegazione fuorviante",
-      "msg": "L’assenza di un avverbio come «wohl» non esclude una supposizione: il contesto dell’annuncio sostiene qui la lettura di completamento futuro. Eliminare quel criterio dalla spiegazione.",
-      "path": "merged.lessons[0].exercises[1].why"
+      "kind": "esempio fuorviante",
+      "msg": "Aver visto una persona poco prima non dimostra che non sia malata. Sostituire l'esempio con un contesto che renda plausibile l'inferenza, per esempio «Er kann nicht zu Hause sein, ich habe ihn gerade im Büro gesehen».",
+      "path": "merged.lessons[1].theory[3].trap"
     },
     {
-      "kind": "alternativa e sfumatura",
-      "msg": "«denn» rende possibile la domanda, ma non conserva necessariamente il sospetto espresso da «etwa». Poiché la richiesta specifica un atteggiamento sospettoso e il suggerimento traduce proprio quella sfumatura, rimuovere «denn» dalle risposte accettate oppure modificare la richiesta per ammettere esplicitamente anche una domanda più neutra.",
-      "path": "merged.test.exercises[2]"
-    },
-    {
-      "kind": "spiegazione grammaticale imprecisa",
-      "msg": "Il perfetto infinito non implica in generale una lettura epistemica: per esempio, «Er muss bis morgen fertig geworden sein» può esprimere un obbligo da completare. Presentare forma e verbo come indizi dipendenti dal contesto, senza affermare che tale lettura sia la più frequente.",
-      "path": "merged.lessons[1].theory[0].p"
-    },
-    {
-      "kind": "contrasto linguistico impreciso",
-      "msg": "Anche l’inglese usa parole con funzioni pragmatiche simili alle particelle modali, per esempio «just» e «though». Sostituire l’affermazione assoluta che l’inglese non possieda particelle di questo tipo con un confronto delle differenze d’uso e posizione.",
-      "path": "merged.lessons[2].theory[2].contrast"
+      "kind": "traduzione imprecisa",
+      "msg": "«Du kennst ihn ja» significa «You know him» o «You know what he's like», riferito a Jonas. «You know how it is» elimina il riferimento alla persona; correggere la traduzione.",
+      "path": "merged.lessons[2].exercises[5].tr"
     }
   ],
   "lang": "en",

@@ -1,25 +1,20 @@
 {
-  "bundleHash": "e28b36b7b5505b79fb09b54af42e9a4e21303c95de6c6eee76fe7c96472b0c04",
+  "bundleHash": "1272a3ccbdda6f8b674ff4e605e485c8274f834493fd2ac7fb1d1bfbac4bf7d8",
   "findings": [
     {
-      "kind": "plurale errato",
-      "msg": "Il plurale di «der Verdacht» è «die Verdächte», con Umlaut. Correggere il valore in entrambe le versioni del bundle.",
-      "path": "neutral.lessons[0].vocab[1].plural"
+      "kind": "grammatica",
+      "msg": "Lo schema «werden + infinitivo + schon» indica un ordine errato: nell'esempio «Das wird schon klappen» la particella precede l'infinito. Correggere in «werden + schon + infinitivo».",
+      "path": "merged.lessons[0].grammar.table.rows[3][0]"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "La spiegazione «werden + infinitivo sirve sobre todo para una conjetura sobre el presente» presenta la congettura come uso prevalente della costruzione e trascura il suo comune valore futuro. Distinguere esplicitamente entrambi gli usi e precisare che il contesto determina l’interpretazione.",
-      "path": "merged.lessons[0].theory[0].p"
+      "kind": "traduzione",
+      "msg": "«Ist das etwa schon alles?» chiede se ciò che si è visto o ricevuto sia già tutto; «¿No será que ya está todo?» suggerisce invece che qualcosa sia completato o pronto. Una resa più fedele è «¿No será esto ya todo?».",
+      "path": "merged.lessons[2].grammar.examples[2].tr"
     },
     {
-      "kind": "spiegazione temporale",
-      "msg": "«Bis» indica che l’azione sarà conclusa entro il termine, che può coincidere con il momento indicato; «antes de un momento futuro» esclude questa possibilità. Sostituire con «a más tardar en un momento futuro» e correggere le formulazioni equivalenti nella lezione.",
-      "path": "merged.lessons[0].grammar.table.rows[2][1]"
-    },
-    {
-      "kind": "istruzione ambigua",
-      "msg": "La consegna chiede particelle, ma per il primo spazio accetta anche gli avverbi «wahrscheinlich» e «vermutlich». Chiedere «partículas o adverbios adecuados» e spiegare la distinzione, oppure limitare le risposte ammesse alle particelle.",
-      "path": "merged.lessons[2].exercises[5].q"
+      "kind": "spiegazione",
+      "msg": "Il testo presenta «bis» come necessario per esprimere un'azione completata entro un momento futuro, ma il Futur II può farlo anche senza questa preposizione, per esempio «Morgen werde ich die Arbeit abgeschlossen haben». Indicare che «bis» è un possibile indicatore del termine, non un requisito.",
+      "path": "merged.lessons[0].theory[4].tip"
     }
   ],
   "lang": "es",

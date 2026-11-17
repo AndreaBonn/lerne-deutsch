@@ -1,25 +1,20 @@
 {
-  "bundleHash": "8571cc7651b330c96ac3564600c5cd160a430fa2386c1a71b493f2d93dec505e",
+  "bundleHash": "8d9b0d6534dff3070410e75501f5a9bf956619db6de1ab800da2c3ee6c847afe",
   "findings": [
     {
-      "kind": "plurale errato",
-      "msg": "Il plurale di «der Verdacht» è «die Verdächte», non «die Verdachte». Correggere il campo in neutral; la correzione deve comparire anche in merged.",
-      "path": "neutral.lessons[0].vocab[1].plural"
+      "kind": "spiegazione fuorviante",
+      "msg": "L'affermazione che il tedesco aggiunga wohl quando l'italiano usa il futuro di supposizione è troppo assoluta: anche il tedesco può usare werden, come in «Er wird krank sein», con o senza wohl. Presenta wohl come una possibilità e confrontala con il Futur I epistemico già insegnato nella prima lezione.",
+      "path": "merged.lessons[2].theory[2].contrast"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "L'indicazione che «abfahren» richieda «sein» perché è un verbo di moto è troppo generale: la scelta dipende dall'uso del verbo, non dal solo movimento. Precisare che qui «abfahren» è intransitivo e forma il Perfekt con «sein».",
-      "path": "merged.lessons[0].exercises[9].why"
+      "kind": "precisione della spiegazione",
+      "msg": "La spiegazione associa muss alla certezza, mentre la lezione lo definisce correttamente come una deduzione quasi certa. Sostituisci «Per la certezza sarebbe muss» con «Per una deduzione più forte si potrebbe usare muss».",
+      "path": "merged.test.exercises[3].why"
     },
     {
-      "kind": "chiave di risposta",
-      "msg": "«denn» rende la domanda più neutra e non esprime di per sé il sospetto richiesto né la sfumatura italiana «mica». Eliminare «denn» dalle risposte accettate oppure modificare la consegna per ammettere anche una domanda neutra.",
-      "path": "merged.lessons[2].exercises[5].gaps[1]"
-    },
-    {
-      "kind": "chiave di risposta",
-      "msg": "«denn» non esprime di per sé il sospetto indicato dalla consegna e dal suggerimento «non avrai mica». Rimuoverlo dalle risposte accettate oppure rendere esplicito che è ammessa anche una domanda neutra.",
-      "path": "merged.test.exercises[2].a"
+      "kind": "ambiguità del contesto",
+      "msg": "La consegna parla di un uomo che si discolpa, ma la frase riporta una dichiarazione del testimone. Non è chiaro se siano la stessa persona. Specifica che è il testimone a discolparsi oppure elimina il riferimento alla discolpa.",
+      "path": "merged.lessons[1].exercises[4].q"
     }
   ],
   "lang": "it",

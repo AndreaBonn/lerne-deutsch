@@ -1,10 +1,10 @@
 {
-  "bundleHash": "7c91b94a1bb060d41a86ff210b969fce33006a8af119dc7337ee751e40f43e17",
+  "bundleHash": "c26dae4978130078695b0ad7fff83c78200b277605bb00d22abd575112935c11",
   "findings": [
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "L'affermazione « werden + infinitif sert surtout pour une supposition sur le présent » generalizza troppo: il Futur I esprime anche eventi futuri, previsioni, promesse e intenzioni, come mostrano gli stessi esercizi. Spiegare che può esprimere una supposizione sul presente quando il contesto lo indica, senza presentare questa lettura come il suo uso principale.",
-      "path": "merged.lessons[0].theory[0].p"
+      "kind": "explanation",
+      "msg": "L’affirmation selon laquelle la lecture d’intention est impossible avec un infinitif passé est trop générale. Elle reste possible avec un repère futur, par exemple « Er will bis Freitag angekommen sein ». Préciser que, dans cet énoncé, « nie » et le contexte orientent vers une affirmation portant sur le passé.",
+      "path": "merged.lessons[1].exercises[1].why"
     }
   ],
   "lang": "fr",

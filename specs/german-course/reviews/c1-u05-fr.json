@@ -1,15 +1,25 @@
 {
-  "bundleHash": "2510625c06c17325003d9c84353ce63fbc548a62096e26d652308050be646a53",
+  "bundleHash": "8394e800bfef9038ded87ec8962db7b9af5bcbc938444055bd0e0e1c43434f44",
   "findings": [
     {
-      "kind": "explication grammaticale",
-      "msg": "L’explication confond le participe présent français, qui est invariable, avec l’adjectif verbal, qui s’accorde : « croissants » est ici un adjectif verbal. Reformuler la comparaison pour distinguer ces deux formes et expliquer que le participe allemand employé comme épithète se décline.",
-      "path": "merged.lessons[0].theory[2].contrast"
+      "kind": "alternative corretta esclusa",
+      "msg": "La frase ammette anche «sobald»: «Der Vertrag wird erst unterzeichnet, sobald der Vorstand zugestimmt hat und die Finanzierung gesichert ist». La spiegazione esclude erroneamente questa soluzione perché temporale, benché il momento dipenda dal verificarsi di entrambe le condizioni. Accettarla oppure riformulare la consegna per richiedere esplicitamente «wenn».",
+      "path": "merged.lessons[2].exercises[5]"
     },
     {
-      "kind": "explication grammaticale",
-      "msg": "L’affirmation selon laquelle ce qui suit le nom allemand est un génitif sans préposition est trop générale : un complément nominal peut aussi être introduit par une préposition, par exemple « die Nachfrage nach Wohnungen », présent dans cette unité. Limiter la règle aux exemples de génitif étudiés et préciser que d’autres constructions existent.",
-      "path": "merged.lessons[1].theory[2].contrast"
+      "kind": "spiegazione grammaticale errata",
+      "msg": "La regola secondo cui le costruzioni con «ohne zu» e «um ... zu» richiedono sempre lo stesso soggetto è troppo assoluta. Esistono costruzioni di «um ... zu» con soggetto implicito diverso, come «Das Buch ist zu schwer, um es allein zu tragen». Distinguere la regola generale dalle eccezioni.",
+      "path": "merged.lessons[2].theory[2].contrast"
+    },
+    {
+      "kind": "spiegazione grammaticale fuorviante",
+      "msg": "Il participio I indica contemporaneità rispetto al riferimento temporale, non necessariamente presente. Una relativa con verbo al passato, come «die Mitglieder, die teilnahmen», può anch'essa corrispondere a «die teilnehmenden Mitglieder». Sostituire il criterio del presente con quello della contemporaneità.",
+      "path": "merged.lessons[0].theory[4].tip"
+    },
+    {
+      "kind": "traduzione poco idiomatica",
+      "msg": "«Le financement tombe» non è una resa francese naturale di «Die Förderung entfällt». Usare, secondo il contesto, «L'aide sera supprimée» oppure «Le financement ne sera plus accordé».",
+      "path": "merged.lessons[2].grammar.examples[3].tr"
     }
   ],
   "lang": "fr",

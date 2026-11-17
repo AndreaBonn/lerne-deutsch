@@ -1,25 +1,20 @@
 {
-  "bundleHash": "c08fc8f3d9fc85492a4d2bebaf48e240b89d3d2d7e50035c6f319249f4df0cbc",
+  "bundleHash": "960fa8b77f6839a32f6db2ce9bce4748b8325828967518b9cf55c4ae2a8e5d84",
   "findings": [
     {
-      "kind": "pronuncia",
-      "msg": "L'accento di «eingegangen» cade sulla prima sillaba, «ein», non su «gan». Correggere l'indicazione fonetica.",
-      "path": "merged.lessons[1].exercises[10].why"
+      "kind": "spiegazione grammaticale",
+      "msg": "L'affermazione che il Gerundivum e le costruzioni con «zu» appartengano al C2 è troppo categorica: «die zu prüfenden Unterlagen» è una costruzione utile anche a livello C1. Presentala come estensione del participio attributivo, eventualmente da trattare separatamente, senza attribuirla esclusivamente al C2.",
+      "path": "merged.lessons[0].theory[1].p"
     },
     {
-      "kind": "chiave di risposta",
-      "msg": "La consegna richiede solo un participio II e un participio I, quindi ammette anche soluzioni corrette non presenti nella chiave, per esempio «beschlossenen» o «durchgeführten» nel primo spazio e «wachsenden» nel secondo. Specificare i verbi richiesti oppure ampliare le alternative accettate.",
-      "path": "merged.lessons[0].exercises[5]"
-    },
-    {
-      "kind": "chiave di risposta",
-      "msg": "La consegna non specifica il verbo del participio: oltre a «geplanten» e «vorgesehenen», sono possibili per esempio «beschlossenen» e «entwickelten». Specificare il verbo richiesto oppure ampliare le alternative accettate.",
-      "path": "merged.test.exercises[8]"
-    },
-    {
-      "kind": "spiegazione",
-      "msg": "«Tras concluir» e «al concluir» contengono un infinito, non un gerundio. Riformulare il contrasto o aggiungere un esempio effettivo di gerundio spagnolo.",
+      "kind": "spiegazione contrastiva",
+      "msg": "«Concluyendo los trabajos» esprime normalmente un'azione contemporanea, non una conclusione anteriore equivalente a «tras concluir» o «nach Abschluss». Distingui esplicitamente i rapporti temporali oppure sostituisci il gerundio con «una vez concluidos los trabajos».",
       "path": "merged.lessons[1].theory[2].contrast"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Liegen der Akte bei» descrive documenti già presenti o allegati al fascicolo; «se adjuntan» suggerisce invece l'azione di allegarli. Usa «Los documentos verificados están adjuntos al expediente» o «constan en el expediente».",
+      "path": "merged.lessons[0].grammar.examples[2].tr"
     }
   ],
   "lang": "es",
