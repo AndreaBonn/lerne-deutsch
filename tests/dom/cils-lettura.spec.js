@@ -59,27 +59,22 @@ async function przygotuj(page, opcje) {
 async function przejdzEgzamin(page, cosPowiedzial) {
   await page.goto("/index.html#/esame");
   await page.waitForSelector(".js-start");
-  /* The seed's oral section is an empty shell (no topics), so the row of the
-     report would have nothing to detect: a fixture topic goes in, in the
-     shape of the real ones (`it` text, `richiede` requirements). */
+  /* The oral row of the report detects requirements; the mock exams carry
+     Sprechen Teile without a requirement list, so one goes into the first
+     Teil, the place the view reads it from. */
   await page.evaluate(() => {
     const orale = window.CILS[0].sezioni.find(s => s.id === "orale");
-    if (!orale.argomenti.length) {
-      orale.argomenti.push({
-        it: "Meine Arbeit",
-        richiede: [
-          { key: "schicht", any: ["Schicht", "Schichten"], etichetta: "Arbeitszeiten" },
-          { key: "ort", any: ["Fabrik", "Büro"], etichetta: "Arbeitsort" }
-        ]
-      });
-    }
+    orale.prove[0].richiede = [
+      { key: "schicht", any: ["Schicht", "Schichten"], etichetta: "Arbeitszeiten" },
+      { key: "ort", any: ["Fabrik", "Büro"], etichetta: "Arbeitsort" }
+    ];
   });
   await page.locator(".js-start").first().click();
   await page.waitForSelector(".js-next");
 
   for (let i = 0; i < 4; i++) {
-    if (await page.locator(".js-text").count()) {
-      await page.fill(".js-text", "Gentile ufficio, non posso venire giovedì perché lavoro. Cordiali saluti.");
+    for (const box of await page.locator(".js-text").all()) {
+      await box.fill("Gentile ufficio, non posso venire giovedì perché lavoro. Cordiali saluti.");
     }
     await page.click(".js-next");
     await page.waitForTimeout(250);
@@ -96,7 +91,8 @@ test("with no key the report is the one the course has always drawn", async ({ p
   await przejdzEgzamin(page, "Abito a Roma e faccio i turni in fabbrica.");
 
   expect(await page.evaluate(() => window.__llmZapytania), "nothing left the browser").toBe(0);
-  await expect(page.locator(".cils-lettura")).toHaveCount(2, "the slots exist");
+  /* One slot per production: three Schreiben Teile and the Sprechen recording. */
+  await expect(page.locator(".cils-lettura")).toHaveCount(4, "the slots exist");
   /* Empty, and CSS hides an empty one, so the report has no gap in it. */
   for (const box of await page.locator(".cils-lettura").all()) {
     expect((await box.textContent()).trim()).toBe("");

@@ -120,8 +120,8 @@ describe("werdykt", () => {
 describe("kontrola wypowiedzi pisemnej", () => {
   test("it counts the words and checks the limit, without issuing a grade", () => {
     const C = silnik();
-    const traccia = C.sim("sim-1").sezioni[2].tracce[0];
-    const krotki = C.controlloScritta(traccia, "Gentile ufficio, buongiorno.");
+    const traccia = C.sim("sim-1").sezioni[2].prove[0];
+    const krotki = C.controlloScritta(traccia, "Liebe Anna, danke.");
     assert.equal(krotki.parole, 3);
     assert.equal(krotki.dentroLimite, false);
     /* No points field at all: the marking rubric is run by a human. */
@@ -177,8 +177,10 @@ describe("dane symulacji", () => {
   test("ogni item ha una risposta valida fra le opzioni", () => {
     const C = silnik();
     C.simulazioni().forEach(s => s.sezioni.forEach(sez => (sez.prove || []).forEach(p => {
-      p.items.forEach((it, i) => {
-        const n = p.t === "vf" ? 2 : (it.opts || []).length;
+      (p.items || []).forEach((it, i) => {
+        const n = p.t === "vf" || p.t === "jn" ? 2
+          : p.t === "abbina" ? p.annunci.length + 1 : (it.opts || []).length;
+        assert.ok(n > 0, `${s.id}/${sez.id}: item ${i} has no options`);
         assert.ok(it.a >= 0 && it.a < n, `${s.id}/${sez.id}: item ${i} punta fuori dalle opzioni`);
       });
     })));
@@ -282,9 +284,9 @@ test("conforme reports each contract violation beside a conforming fixture", () 
     mutate(fixture);
     assert.ok(C.conforme(fixture).includes(problem), problem);
   });
-  assert.deepEqual(Array.from(C.conforme(C.sim())), [
-    "teile: lettura", "incompleta: ascolto", "incompleta: scritta", "incompleta: orale"
-  ]);
+  /* Every shipped simulation is a complete exam in the declared format. */
+  assert.ok(C.simulazioni().length >= 2);
+  C.simulazioni().forEach(sim => assert.deepEqual(Array.from(C.conforme(sim)), [], sim.id));
 });
 
 test("each measured module uses its own weighted maximum and the format threshold", () => {
