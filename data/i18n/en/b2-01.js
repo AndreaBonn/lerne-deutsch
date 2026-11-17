@@ -1353,5 +1353,468 @@ LINGUAI.addStrings("en", {
         why: "In <i>diskutieren</i> the stress falls on <b>tie</b>; in <i>Problem</i> the stress falls on <b>blem</b>; in <i>gelöst</i> the <b>ö</b> is long."
       }
     ]
+  },
+  "unit:b2-u04": {
+    title: "Society and debate",
+    grammarNote: "weak masculine nouns (der Kunde, den Kunden, des Kunden) · je ... desto / umso, immer + comparative · einerseits ... andererseits, zwar ... aber · arguing a position with the Konjunktiv II (Ich würde sagen ..., Es wäre besser, wenn ...)"
+  },
+  "lesson:b2-u04-l1": {
+    theme: "Business and work",
+    title: "The customer, of the customer",
+    objectives: [
+      "recognize weak masculine nouns",
+      "add -n or -en in every case except the nominative singular",
+      "use Herr and Herrn in letters and emails",
+      "talk about customers, colleagues and suppliers"
+    ],
+    theory: [
+      {
+        h: "What the n-Deklination is",
+        p: "A group of <strong>masculine</strong> nouns takes <strong>-n</strong> or <strong>-en</strong> in every case except the nominative singular: <em>der Kunde, den Kunden, dem Kunden, des Kunden</em>. They are mostly masculines in <strong>-e</strong> for people or animals (<em>der Kollege, der Experte, der Junge</em>) and masculines of foreign origin in <strong>-ent, -ant, -ist, -at, -oge</strong> (<em>der Präsident, der Praktikant, der Lieferant, der Journalist</em>). These nouns form their plural in <em>-n</em> or <em>-en</em>: <em>die Kunden, die Präsidenten</em>."
+      },
+      {
+        h: "Herr, Herrn",
+        p: "<strong>Herr</strong> follows this pattern too, with <em>-n</em> in the singular and <em>-en</em> in the plural. You see it all the time in letters and emails: <em>Sehr geehrter Herr Müller</em> (nominative, in the greeting), but <em>Ich habe Herrn Müller eine Mail geschrieben</em> (dative) and <em>Kennen Sie Herrn Müller?</em> (accusative). <em>Meine Damen und Herren</em> is the plural."
+      },
+      {
+        contrast: "English nouns only change for the plural and the possessive <em>'s</em>: <em>Mr Müller</em> stays <em>Mr Müller</em> whatever its role. These German masculines change, and the <em>-n</em> looks like a plural: <em>den Kunden</em> can be one customer (accusative singular) or the customers (dative plural), with the same article. The case the verb requires decides: <em>Ich rufe den Kunden an</em> (one customer, accusative), <em>Ich helfe den Kunden</em> (the customers, dative plural)."
+      },
+      {
+        trap: "The usual mistake is leaving the ending off: <em>Ich frage den Student</em> instead of <em>den Studenten</em>, <em>mit dem Kollege</em> instead of <em>mit dem Kollegen</em>. Feminine nouns never follow this pattern (<em>die Kundin, der Kundin</em>), and not every masculine does: <em>der Lehrer, den Lehrer</em>."
+      },
+      {
+        tip: "When you learn a masculine noun for a person, check the genitive in the dictionary: <em>der Kunde, -n, -n</em> means genitive <em>des Kunden</em>, plural <em>die Kunden</em>, and that is the sign of the weak declension."
+      }
+    ],
+    grammar: {
+      title: "The n-Deklination",
+      note: "Masculines in <b>-e</b> (people, animals) and foreign masculines in <b>-ent, -ant, -ist, -at, -oge</b>: <b>-n / -en</b> in every case except the nominative singular. Also <b>Herr → Herrn</b>.",
+      table: {
+        head: ["", "der Kunde", "der Präsident", "der Herr"],
+        rows: [
+          ["nominative", "der Kunde", "der Präsident", "der Herr"],
+          ["accusative", "den Kunden", "den Präsidenten", "den Herrn"],
+          ["dative", "dem Kunden", "dem Präsidenten", "dem Herrn"],
+          ["genitive", "des Kunden", "des Präsidenten", "des Herrn"],
+          ["plural", "die Kunden", "die Präsidenten", "die Herren"]
+        ]
+      },
+      examples: [
+        { tr: "The customer complained.", note: "nominative: no -n" },
+        { tr: "We called the customer straight away.", note: "accusative: den Kunden" },
+        { tr: "I'm talking to my colleague tomorrow.", note: "dative after mit: dem Kollegen" },
+        { tr: "This is the president's office.", note: "genitive: des Präsidenten, no -s" },
+        { tr: "The intern is helping the journalist.", note: "helfen + dative: dem Journalisten" },
+        { tr: "I wrote Mr Müller an email.", note: "Herrn in the dative" }
+      ]
+    },
+    vocab: [
+      "the customer, the client",
+      "the colleague",
+      "the intern",
+      "the president",
+      "the supplier",
+      "the expert",
+      "the company, the firm",
+      "sales, turnover",
+      "the order, the contract (from a client)",
+      "to complain (über + accusative: about)",
+      "to advise",
+      "to hire, to take on"
+    ],
+    exercises: [
+      {
+        q: "How do you say “I called the customer”?",
+        opts: [
+          "Ich habe den Kunden angerufen.",
+          "Ich habe den Kunde angerufen.",
+          "Ich habe dem Kunden angerufen."
+        ],
+        why: "<i>anrufen</i> takes the accusative, and <i>Kunde</i> takes <b>-n</b>: <b>den Kunden</b>. The third uses the dative, which <i>anrufen</i> does not take."
+      },
+      {
+        q: "Which noun follows the weak declension (den ...-en)?",
+        opts: [
+          "der Student",
+          "der Lehrer",
+          "die Studentin"
+        ],
+        why: "<b>der Student</b> is a foreign masculine in <i>-ent</i>: <i>den Studenten</i>. <i>der Lehrer</i> has <i>den Lehrer</i>; feminine nouns never follow this pattern."
+      },
+      {
+        q: "Fill in: “Ich spreche morgen mit dem ___.” (der Kollege)",
+        hint: "dative after mit",
+        why: "<b>Kollegen</b>: <i>mit</i> takes the dative, and <i>Kollege</i> takes <i>-n</i>."
+      },
+      {
+        q: "Fill in: “Das ist das Büro des ___.” (der Präsident)",
+        hint: "genitive",
+        why: "<b>Präsidenten</b>: in the genitive these nouns take <i>-en</i>, not the <i>-s</i> of ordinary masculines."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "The intern is helping the journalist.",
+        why: "<i>Der Praktikant hilft dem Journalisten</i>: <i>helfen</i> takes the dative, and <i>Journalist</i> takes <i>-en</i>."
+      },
+      {
+        q: "Match each noun with its meaning.",
+        pairs: [
+          "the customer",
+          "the supplier",
+          "the intern",
+          "the expert"
+        ]
+      },
+      {
+        q: "Put the words in order.",
+        tr: "We asked an expert for advice.",
+        why: "<i>Wir haben einen Experten um Rat gefragt.</i> <i>fragen</i> takes the accusative: <i>einen Experten</i>, with <i>-n</i>; <i>um Rat</i> means “for advice”."
+      },
+      {
+        q: "Translate: “I wrote Mr Müller an email.”",
+        why: "<i>Ich habe Herrn Müller eine Mail geschrieben</i>: in the dative <i>Herr</i> becomes <i>Herrn</i>. <i>E-Mail</i> also works."
+      },
+      {
+        tr: "Yesterday a customer complained about the supplier. Our colleague called the customer back straight away and advised him.",
+        why: "In <i>beschwert</i> the <b>sch</b> is [ʃ]; in <i>Lieferanten</i> the stress falls on <b>ran</b>; in <i>zurückgerufen</i> the stress falls on <b>rück</b>."
+      },
+      {
+        tr: "The company is hiring a new intern.",
+        why: "In <i>Firma</i> the <b>i</b> is short; in <i>Praktikanten</i> the stress falls on <b>kan</b>; in <i>stellt ... ein</i> the particle <b>ein</b> goes to the end."
+      }
+    ]
+  },
+  "lesson:b2-u04-l2": {
+    theme: "Environment and technology",
+    title: "The more ..., the more ...",
+    objectives: [
+      "express a proportion with je ... desto / umso",
+      "put the verb in the right place in both halves",
+      "say that something keeps growing or shrinking with immer + comparative",
+      "talk about consumption, waste and energy"
+    ],
+    theory: [
+      {
+        h: "je ... desto, je ... umso",
+        p: "To say that two things rise or fall together, use <strong>je</strong> + comparative in the first half and <strong>desto</strong> or <strong>umso</strong> + comparative in the second. The je half is a subordinate clause, with the verb <strong>at the end</strong>; the desto half is the main clause, and the verb comes <strong>right after</strong> the comparative group, which can include a noun: <em>Je mehr wir recyceln, desto weniger Müll gibt es. Je länger man wartet, umso teurer wird es. Je mehr Autos fahren, desto schlechter wird die Luft.</em>"
+      },
+      {
+        h: "Short forms and immer + comparative",
+        p: "In speech the short form without verbs is common: <em>Je früher, desto besser.</em> For steady growth, use <strong>immer</strong> + comparative: <em>Solarstrom wird immer billiger</em> (keeps getting cheaper), <em>Die Winter werden immer wärmer.</em>"
+      },
+      {
+        contrast: "English says <em>the more we recycle, the less waste there is</em>, with <em>the</em> twice and normal word order in both halves. German uses two different words (<em>je ... desto</em>) and two different word orders: verb at the end in the first half, verb right after the comparative group in the second. And <em>more and more expensive</em> is not <em>mehr und mehr teuer</em>: German says <em>immer teurer</em>."
+      },
+      {
+        trap: "The subject does not come right after <em>desto</em>: <em>desto weniger Müll gibt es</em>, not <em>desto es gibt weniger Müll</em>. And <em>je</em> and <em>desto</em> need a comparative, not the plain adjective: <em>je länger</em>, not <em>je lang</em>."
+      },
+      {
+        tip: "Think of the sentence as two interlocking halves: the first ends with the verb (<em>... wartet,</em>), the second starts with the comparative group and then the verb (<em>umso teurer wird ...</em>, <em>desto weniger Müll gibt ...</em>)."
+      }
+    ],
+    grammar: {
+      title: "je ... desto / umso",
+      note: "<b>je</b> + comparative + ... + verb at the end, <b>desto / umso</b> + comparative group (possibly with a noun) + verb + subject. For steady growth: <b>immer</b> + comparative.",
+      table: {
+        head: ["first half (je ...)", "second half (desto / umso ...)"],
+        rows: [
+          ["Je mehr wir recyceln,", "desto weniger Müll gibt es."],
+          ["Je länger man wartet,", "umso teurer wird es."],
+          ["Je weniger Energie wir verbrauchen,", "desto besser ist es für das Klima."],
+          ["Je früher,", "desto besser."]
+        ]
+      },
+      examples: [
+        { tr: "The more we recycle, the less waste there is.", note: "je + verb at the end, desto + weniger Müll + verb" },
+        { tr: "The longer you wait, the more expensive it gets.", note: "umso instead of desto" },
+        { tr: "The sooner, the better.", note: "short form without verbs" },
+        { tr: "The more cars there are on the road, the worse the air gets.", note: "the noun follows the comparative directly" },
+        { tr: "Solar power keeps getting cheaper.", note: "immer + comparative" },
+        { tr: "The less energy we use, the better it is for the climate.", note: "weniger: comparative of wenig" }
+      ]
+    },
+    vocab: [
+      "the environment",
+      "waste, trash",
+      "energy (erneuerbare Energien: renewable energy)",
+      "climate change",
+      "the device, the appliance",
+      "the emission",
+      "to protect",
+      "to consume, to use",
+      "to save",
+      "to rise, to go up",
+      "to fall, to go down",
+      "sustainable, sustainably"
+    ],
+    exercises: [
+      {
+        q: "How do you say “The more I read, the better I understand”?",
+        opts: [
+          "Je mehr ich lese, desto besser verstehe ich.",
+          "Je mehr ich lese, desto ich verstehe besser.",
+          "Je mehr lese ich, desto besser verstehe ich."
+        ],
+        why: "In the <b>je</b> half the verb goes to the end (<i>ich lese</i>); in the <b>desto</b> half the verb comes right after the comparative (<i>besser verstehe ich</i>)."
+      },
+      {
+        q: "How do you say “The sooner, the better”?",
+        opts: [
+          "Je früher, desto besser.",
+          "Je früher, so besser.",
+          "Desto früher, je besser."
+        ],
+        why: "The fixed short form is <b>Je früher, desto besser</b>: <i>je</i> in the first half, <i>desto</i> in the second."
+      },
+      {
+        q: "Fill in: “Je länger man wartet, ___ teurer wird es.”",
+        hint: "second half of the proportion",
+        why: "<b>desto</b> or <b>umso</b>: both open the second half, followed by the comparative and the verb."
+      },
+      {
+        q: "Fill in: “Je mehr Autos fahren, desto schlechter ___ die Luft.” (gets)",
+        hint: "werden, third person",
+        why: "<b>wird</b>: after <i>desto</i> + comparative the verb comes next, then the subject <i>die Luft</i>."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "The less energy we use, the better it is for the climate.",
+        why: "<i>Je weniger Energie wir verbrauchen, desto besser ist es für das Klima</i>: <i>verbrauchen</i> at the end of the first half, <i>ist</i> right after <i>besser</i>."
+      },
+      {
+        q: "Match each verb with its meaning.",
+        pairs: [
+          "to rise, to go up",
+          "to fall, to go down",
+          "to save",
+          "to protect"
+        ]
+      },
+      {
+        q: "Put the words in order.",
+        tr: "The more we recycle, the less waste there is.",
+        why: "<i>Je mehr wir recyceln, desto weniger Müll gibt es.</i> <i>recyceln</i> at the end of the first half, <i>gibt es</i> after <i>weniger Müll</i>."
+      },
+      {
+        q: "Translate: “The longer you wait, the more expensive it gets.”",
+        why: "<i>Je länger man wartet, desto teurer wird es</i> (or <i>umso teurer</i>). <i>The longer</i> is about time, so <i>länger</i>; general <i>you</i> is <i>man</i>."
+      },
+      {
+        tr: "The more people cycle, the cleaner the air in the city gets. They also save money.",
+        why: "In <i>sauberer</i> the <b>au</b> is [aʊ]; in <i>Außerdem</i> the <b>ß</b> is a voiceless <i>s</i>; in <i>Fahrrad</i> the <b>h</b> lengthens the <i>a</i>."
+      },
+      {
+        tr: "The sooner we save energy, the better it is for the environment.",
+        why: "In <i>Energie</i> the stress falls on the last syllable, <b>gie</b>, and the <b>g</b> is hard; in <i>Umwelt</i> the <b>w</b> is [v]; in <i>sparen</i> the initial <b>sp</b> is [ʃp]."
+      }
+    ]
+  },
+  "lesson:b2-u04-l3": {
+    theme: "Discussions",
+    title: "Arguing a position",
+    objectives: [
+      "present two sides with einerseits ... andererseits",
+      "concede a point with zwar ... aber",
+      "give an opinion cautiously (Ich würde sagen ..., Es wäre besser, wenn ...)",
+      "agree or disagree politely"
+    ],
+    theory: [
+      {
+        h: "einerseits ... andererseits, zwar ... aber",
+        p: "To present two sides of an issue, use <strong>einerseits ... andererseits</strong> (<em>on the one hand ... on the other</em>). Both words take the first position, so the verb comes right after them: <em>Einerseits ist das Homeoffice praktisch, andererseits fehlt der Kontakt zu den Kollegen.</em> To concede a point and then limit it, use <strong>zwar ... aber</strong>: <em>Zwar ist die Technik teuer, aber sie spart Zeit.</em> After <em>aber</em> the order is normal (<em>aber sie spart</em>)."
+      },
+      {
+        h: "A cautious opinion",
+        p: "In a discussion the <strong>Konjunktiv II</strong> makes an opinion sound less blunt: <em>Ich würde sagen, dass die Vorteile überwiegen. Es wäre besser, wenn die Stadt mehr Radwege bauen würde. Man sollte das Problem anders lösen.</em> Agreeing and disagreeing: <em>Da stimme ich Ihnen zu. Da muss ich Ihnen widersprechen.</em> Giving your view: <em>Meiner Ansicht nach ..., Ich bin der Meinung, dass ...</em>"
+      },
+      {
+        contrast: "<em>On the one hand ... on the other</em> leaves English word order untouched; <em>einerseits</em> and <em>andererseits</em> take the first position, so the verb follows them. <em>Admittedly ..., but ...</em> or <em>It's true that ..., but ...</em> corresponds to <em>zwar ..., aber ...</em>, which is far more frequent in German. And <em>it would be better if the city built more bike lanes</em> uses a past form after <em>if</em>; German uses the Konjunktiv II: <em>es wäre besser, wenn die Stadt mehr Radwege bauen würde</em>."
+      },
+      {
+        trap: "After <em>andererseits</em> the verb comes next: <em>andererseits fehlt der Kontakt</em>, not <em>andererseits der Kontakt fehlt</em>. After <em>aber</em>, by contrast, there is no inversion: <em>aber der Kontakt ist wichtig</em>, not <em>aber ist der Kontakt wichtig</em>."
+      },
+      {
+        tip: "In a debate, acknowledge the other side's point before disagreeing: <em>Da haben Sie zwar recht, aber ...</em> It sounds more convincing than a flat no."
+      }
+    ],
+    grammar: {
+      title: "Debate connectors and the Konjunktiv II",
+      note: "<b>einerseits / andererseits / zwar</b> in first position: verb right after. <b>aber</b>: no inversion. Cautious opinion: <b>Ich würde sagen ..., Es wäre besser, wenn ...</b>",
+      table: {
+        head: ["function", "example"],
+        rows: [
+          ["two sides", "Einerseits ist es praktisch, andererseits ist es teuer."],
+          ["concession", "Zwar ist es teuer, aber es lohnt sich."],
+          ["cautious opinion", "Ich würde sagen, dass ..."],
+          ["proposal", "Es wäre besser, wenn ..."],
+          ["agreeing / disagreeing", "Da stimme ich zu. / Da muss ich widersprechen."]
+        ]
+      },
+      examples: [
+        { tr: "On the one hand working from home is practical, on the other there's no contact with colleagues.", note: "einerseits / andererseits: verb right after" },
+        { tr: "I'd say the advantages outweigh the disadvantages.", note: "würde sagen: a cautious opinion" },
+        { tr: "It would be better if the city built more bike lanes.", note: "es wäre besser, wenn + Konjunktiv II" },
+        { tr: "Admittedly, the technology is expensive, but it saves time.", note: "zwar ... aber" },
+        { tr: "In my view, the problem should be solved differently.", note: "meiner Ansicht nach + sollte" },
+        { tr: "I'm of the opinion that we should invest more.", note: "der Meinung sein, dass ..." }
+      ]
+    },
+    vocab: [
+      "the advantage",
+      "the disadvantage",
+      "the view, the opinion",
+      "the argument",
+      "the solution",
+      "society",
+      "to outweigh, to predominate",
+      "to represent, to argue (a position)",
+      "to contradict, to disagree with (+ dative)",
+      "to agree with (+ dative)",
+      "to invest",
+      "convinced"
+    ],
+    exercises: [
+      {
+        q: "Which sentence is correct?",
+        opts: [
+          "Einerseits ist es praktisch, andererseits ist es teuer.",
+          "Einerseits es ist praktisch, andererseits es ist teuer.",
+          "Einerseits ist es praktisch, andererseits es ist teuer."
+        ],
+        why: "<b>einerseits</b> and <b>andererseits</b> take the first position, so the verb comes right after them in both halves."
+      },
+      {
+        q: "Fill in: “Es ___ besser, wenn wir mehr Radwege hätten.” (would be)",
+        hint: "Konjunktiv II of sein",
+        why: "<b>wäre</b>: a cautious proposal with the Konjunktiv II, and the wenn clause has the Konjunktiv II again (<i>hätten</i>)."
+      },
+      {
+        q: "Fill in: “Da stimme ich Ihnen ___.” (I agree with you there)",
+        hint: "particle of zustimmen",
+        why: "<b>zu</b>: <i>zustimmen</i> is separable, and the particle goes to the end. It takes the dative: <i>Ihnen</i>."
+      },
+      {
+        q: "Complete the sentence.",
+        tr: "Admittedly, the technology is expensive, but it saves time.",
+        why: "<i>Zwar ist die Technik teuer, aber sie spart Zeit</i>: after <i>zwar</i> in first position the verb comes next; after <i>aber</i> the order is normal."
+      },
+      {
+        q: "Match each expression with its meaning.",
+        pairs: [
+          "the advantage",
+          "the disadvantage",
+          "to agree with",
+          "to contradict"
+        ]
+      },
+      {
+        q: "Put the words in order.",
+        tr: "I'd say the advantages outweigh the disadvantages.",
+        why: "<i>Ich würde sagen, dass die Vorteile überwiegen.</i> <i>würde ... sagen</i> in the main clause, <i>überwiegen</i> at the end of the dass clause."
+      },
+      {
+        q: "A colleague asks what you think about working from home.",
+        setting: "An office discussion: you see advantages and disadvantages.",
+        lines: [
+          { tr: "What do you think of working from home?" },
+          { tr: "Answer: on the one hand it's practical, on the other there's no contact with colleagues.", answerTr: "On the one hand it's practical, on the other there's no contact with colleagues." },
+          { tr: "So should the company ban it?" },
+          { tr: "Answer: no, but it would be better if everyone came to the office twice a week.", answerTr: "No, but it would be better if everyone came to the office twice a week." },
+          { tr: "And the cost of the office?" },
+          { tr: "Answer: admittedly the office costs money, but contact is important.", answerTr: "Admittedly the office costs money, but contact is important." }
+        ]
+      },
+      {
+        q: "Translate: “In my opinion, the city should invest more.”",
+        why: "<i>Meiner Meinung nach sollte die Stadt mehr investieren</i>: after <i>meiner Meinung nach</i> the verb comes next. <i>Meiner Ansicht nach</i>, <i>Ich finde, ...</i> and <i>Ich bin der Meinung, dass ...</i> with the verb at the end also work."
+      },
+      {
+        tr: "On the one hand I understand the opponents' arguments, on the other I'm convinced that we have to act. It would be a mistake to wait any longer.",
+        why: "In <i>Argumente</i> the stress falls on <b>men</b>; in <i>überzeugt</i> the <b>z</b> is [ts] and the <b>eu</b> is [ɔʏ]; in <i>handeln</i> the initial <b>h</b> is pronounced."
+      },
+      {
+        tr: "In my view the advantages outweigh the disadvantages, even if there are some drawbacks.",
+        why: "In <i>Ansicht</i> the <b>ch</b> is [ç]; in <i>überwiegen</i> the stress falls on <b>wie</b>; in <i>Nachteile</i> the <b>ch</b> after <i>a</i> is [x]."
+      }
+    ]
+  },
+  "lesson:b2-u04-test": {
+    theme: "Check",
+    title: "Test: Society and debate",
+    objectives: [
+      "review units 1-4: past Konjunktiv II, conditionals, the passive, n-Deklination, je ... desto"
+    ],
+    theory: [
+      {
+        p: "Twelve questions on the first four units of the level. You pass with 70%. Don't look back at the lessons while you answer: if you can't remember something, it's better to go back and review."
+      }
+    ],
+    exercises: [
+      {
+        tr: "The past Konjunktiv II of kommen, all persons.",
+        why: "<i>kommen</i> takes <i>sein</i> in the Perfekt: <i>wäre gekommen</i>. For <i>du</i> and <i>ihr</i> both <i>wärst, wärt</i> and <i>wärest, wäret</i> are correct."
+      },
+      {
+        q: "Fill in: “Wir ___ gern länger geblieben.” (we would have stayed)",
+        hint: "Konjunktiv II of sein, wir",
+        why: "<b>wären</b>: <i>bleiben</i> takes <i>sein</i> in the Perfekt."
+      },
+      {
+        q: "Fill in the modal: “Du hättest mich anrufen ___.” (you should have)",
+        hint: "should, in the infinitive",
+        why: "<b>sollen</b> (or <i>müssen</i>): double infinitive, the modal stays in the infinitive at the end."
+      },
+      {
+        q: "Fill in: “Wir gehen spazieren, es sei denn, es ___.” (regnen)",
+        hint: "present indicative",
+        why: "<b>regnet</b>: after <i>es sei denn</i> comes a clause in the indicative with the verb in second position."
+      },
+      {
+        q: "Fill in: “Die Brücke ist 1990 gebaut ___.”",
+        hint: "passive Perfekt",
+        why: "<b>worden</b>: <i>ist gebaut worden</i>."
+      },
+      {
+        q: "Fill in: “Ich habe gestern mit dem ___ gesprochen.” (der Kunde)",
+        hint: "dative after mit",
+        why: "<b>Kunden</b>: n-Deklination, <i>-n</i> in the dative."
+      },
+      {
+        q: "Fill in: “Je mehr ich lerne, ___ besser verstehe ich.”",
+        hint: "second half of the proportion",
+        why: "<b>desto</b> or <b>umso</b>, followed by the comparative and the verb."
+      },
+      {
+        q: "Which sentence is correct?",
+        opts: [
+          "Er tut so, als ob er nichts wüsste.",
+          "Er tut so, als ob er wüsste nichts.",
+          "Er tut so, als er nichts wüsste."
+        ],
+        why: "After <b>als ob</b> the verb goes to the end. With <i>als</i> alone the verb would come straight away: <i>als wüsste er nichts</i>."
+      },
+      {
+        q: "How do you say “The problem must be solved”?",
+        opts: [
+          "Das Problem muss gelöst werden.",
+          "Das Problem muss lösen werden.",
+          "Das Problem muss gelöst worden."
+        ],
+        why: "Passive with a modal: modal + participle + <b>werden</b>."
+      },
+      {
+        q: "Complete the sentence without wenn.",
+        tr: "Had I had more time, I would have come along.",
+        why: "<i>Hätte ich mehr Zeit gehabt, wäre ich mitgekommen</i>: verb first, past Konjunktiv II in both halves."
+      },
+      {
+        q: "Translate: “We could have left earlier.”",
+        why: "<i>Wir hätten früher losfahren können</i>: double infinitive with <i>hätten</i>. <i>abfahren</i> and <i>aufbrechen</i> also work."
+      },
+      {
+        tr: "On the one hand the city is expensive, on the other there are lots of jobs there.",
+        why: "In <i>einerseits</i> the stress falls on <b>ei</b>; in <i>andererseits</i> the <b>r</b> at the end of syllables is barely heard; in <i>Jobs</i> the <b>J</b> is pronounced as in English."
+      }
+    ]
   }
 });
