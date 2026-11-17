@@ -219,5 +219,238 @@ LINGUAI.addUnits("B2", [
         { t: "speak", it: "Hätte ich das bloß früher gewusst, dann hätte ich mich anders entschieden." }
       ]
     }
+  },
+  {
+    id: "b2-u02",
+    icon: "🔀",
+    titleIt: "Bedingungen",
+    lessons: [
+      {
+        id: "b2-u02-l1",
+        tags: ["g-konditionalsatz"],
+        cefr: "B2",
+        titleIt: "Real, irreal, gemischt",
+        grammar: {
+          examples: [
+            { it: "Wenn es morgen regnet, bleiben wir zu Hause." },
+            { it: "Wenn ich mehr Geld hätte, würde ich weniger arbeiten." },
+            { it: "Wenn du mich gefragt hättest, hätte ich dir geholfen." },
+            { it: "Wenn er den Job angenommen hätte, würde er jetzt in München wohnen." },
+            { it: "Wenn das Wetter schön ist, gehen wir wandern." },
+            { it: "Wenn ich du wäre, würde ich das Angebot annehmen." }
+          ]
+        },
+        vocab: [
+          { it: "die Bedingung", plural: "die Bedingungen", ex: "Ich komme unter einer Bedingung." },
+          { it: "das Angebot", plural: "die Angebote", ex: "Das Angebot klingt gut." },
+          { it: "die Möglichkeit", plural: "die Möglichkeiten", ex: "Es gibt viele Möglichkeiten." },
+          { it: "der Fall", plural: "die Fälle", ex: "In diesem Fall bleibe ich zu Hause." },
+          { it: "die Folge", plural: "die Folgen", ex: "Die Entscheidung hat Folgen." },
+          { it: "das Risiko", plural: "die Risiken", ex: "Das Risiko ist zu groß." },
+          { it: "annehmen", ex: "Ich nehme das Angebot an." },
+          { it: "ablehnen", ex: "Sie hat die Einladung abgelehnt." },
+          { it: "abhängen", ex: "Das hängt vom Wetter ab." },
+          { it: "riskieren", ex: "Ich will nichts riskieren." },
+          { it: "unter Umständen", ex: "Unter Umständen komme ich später." },
+          { it: "ernsthaft", ex: "Denkst du ernsthaft darüber nach?" }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["wäre"] },
+          {
+            t: "cloze",
+            text: "Wenn das Wetter schön {{1}}, {{2}} wir wandern.",
+            gaps: [["ist"], ["gehen"]]
+          },
+          {
+            t: "cloze",
+            text: "Wenn du mich gefragt {{1}}, {{2}} ich dir geholfen.",
+            gaps: [["hättest"], ["hätte"]]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Wenn ich mehr Geld hätte, würde ich weniger arbeiten",
+              "Hätte ich mehr Geld, würde ich weniger arbeiten",
+              "Wenn ich mehr Geld hätte, dann würde ich weniger arbeiten"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Wenn ich das Angebot angenommen hätte, würde ich jetzt in Hamburg arbeiten. Aber nicht alles hängt vom Geld ab."
+          },
+          { t: "speak", it: "Wenn es morgen regnet, bleiben wir zu Hause und spielen Karten." }
+        ]
+      },
+      {
+        id: "b2-u02-l2",
+        tags: ["g-konditionalsatz", "g-register"],
+        cefr: "B2",
+        titleIt: "Falls, sofern, es sei denn",
+        grammar: {
+          examples: [
+            { it: "Falls du Hilfe brauchst, ruf mich an." },
+            { it: "Sofern nichts dazwischenkommt, sind wir um acht da." },
+            { it: "Wir fahren morgen los, es sei denn, es schneit." },
+            { it: "Hätte ich das gewusst, wäre ich gekommen." },
+            { it: "Sollten Sie Fragen haben, wenden Sie sich bitte an uns." },
+            { it: "Im Notfall rufen Sie bitte diese Nummer an." }
+          ]
+        },
+        vocab: [
+          { it: "der Notfall", plural: "die Notfälle", ex: "Im Notfall rufen Sie bitte die 112 an." },
+          { it: "die Ausnahme", plural: "die Ausnahmen", ex: "Das ist eine Ausnahme." },
+          { it: "die Voraussetzung", plural: "die Voraussetzungen", ex: "Gute Deutschkenntnisse sind eine Voraussetzung." },
+          { it: "der Zweifel", plural: "die Zweifel", ex: "Im Zweifel frag lieber nach." },
+          { it: "die Anfrage", plural: "die Anfragen", ex: "Vielen Dank für Ihre Anfrage." },
+          { it: "dazwischenkommen", ex: "Mir ist leider etwas dazwischengekommen." },
+          { it: "sich wenden an", ex: "Wenden Sie sich bitte an die Rezeption." },
+          { it: "benachrichtigen", ex: "Bitte benachrichtigen Sie uns rechtzeitig." },
+          { it: "absagen", ex: "Ich muss den Termin leider absagen." },
+          { it: "verschieben", ex: "Können wir das Treffen verschieben?" },
+          { it: "gegebenenfalls", ex: "Gegebenenfalls melden wir uns bei Ihnen." },
+          { it: "vorausgesetzt", ex: "Wir grillen, vorausgesetzt, das Wetter ist gut." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["Falls"] },
+          { t: "fill", a: ["Hätte"] },
+          {
+            t: "cloze",
+            text: "Wir fahren morgen los, es {{1}} {{2}}, es schneit.",
+            gaps: [["sei"], ["denn"]]
+          },
+          {
+            t: "match",
+            pairs: [{ it: "falls" }, { it: "sofern" }, { it: "es sei denn" }, { it: "gegebenenfalls" }]
+          },
+          {
+            t: "order",
+            tokens: ["Sollten", "Sie", "Fragen", "haben,", "wenden", "Sie", "sich", "bitte", "an", "uns"],
+            a: ["Sollten Sie Fragen haben, wenden Sie sich bitte an uns"]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Hätte ich das gewusst, wäre ich gekommen",
+              "Hätte ich es gewusst, wäre ich gekommen",
+              "Hätte ich das gewusst, dann wäre ich gekommen",
+              "Hätte ich es gewusst, dann wäre ich gekommen"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Sollte es morgen schneien, verschieben wir die Reise. Falls Sie Fragen haben, wenden Sie sich bitte an die Rezeption."
+          },
+          { t: "speak", it: "Sofern nichts dazwischenkommt, sind wir um acht Uhr da." }
+        ]
+      },
+      {
+        id: "b2-u02-l3",
+        tags: ["g-konditionalsatz", "g-modalpartikeln"],
+        cefr: "B2",
+        titleIt: "Wenn ich bloß ...",
+        grammar: {
+          examples: [
+            { it: "Wenn ich bloß mehr Zeit hätte!" },
+            { it: "Hätte ich nur nicht so viel gegessen!" },
+            { it: "Wäre ich doch zu Hause geblieben!" },
+            { it: "Wenn es doch endlich regnen würde!" },
+            { it: "Mach das bloß nicht!" },
+            { it: "Wenn du nur ein bisschen Geduld hättest, würdest du es schaffen." }
+          ]
+        },
+        vocab: [
+          { it: "die Geduld", plural: "-", ex: "Hab ein bisschen Geduld." },
+          { it: "das Pech", plural: "-", ex: "So ein Pech!" },
+          { it: "der Zufall", plural: "die Zufälle", ex: "Was für ein Zufall!" },
+          { it: "das Schicksal", plural: "die Schicksale", ex: "Das war Schicksal." },
+          { it: "die Sorge", plural: "die Sorgen", ex: "Mach dir keine Sorgen." },
+          { it: "der Ärger", plural: "-", ex: "Ich will keinen Ärger." },
+          { it: "sich ärgern", ex: "Ärgere dich nicht!" },
+          { it: "hoffen", ex: "Ich hoffe, dass alles gut geht." },
+          { it: "sich sehnen", ex: "Ich sehne mich nach Ruhe." },
+          { it: "endlich", ex: "Endlich ist der Winter vorbei." },
+          { it: "unbedingt", ex: "Du musst unbedingt kommen." },
+          { it: "vergeblich", ex: "Wir haben vergeblich gewartet." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["nur", "bloß", "doch"] },
+          { t: "fill", a: ["Wäre"] },
+          {
+            t: "cloze",
+            text: "Wenn es doch endlich {{1}} {{2}}!",
+            gaps: [["regnen"], ["würde"]]
+          },
+          {
+            t: "match",
+            pairs: [{ it: "Wenn ich bloß ...!" }, { it: "endlich" }, { it: "unbedingt" }, { it: "vergeblich" }]
+          },
+          {
+            t: "order",
+            tokens: ["Hätte", "ich", "nur", "nicht", "so", "viel", "gegessen"],
+            a: ["Hätte ich nur nicht so viel gegessen"]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Wenn du es mir bloß früher gesagt hättest",
+              "Wenn du es mir nur früher gesagt hättest",
+              "Wenn du es mir doch früher gesagt hättest",
+              "Hättest du es mir bloß früher gesagt",
+              "Hättest du es mir nur früher gesagt",
+              "Hättest du es mir doch früher gesagt",
+              "Wenn du mir das bloß früher gesagt hättest",
+              "Wenn du mir das nur früher gesagt hättest",
+              "Hättest du mir das bloß früher gesagt",
+              "Hättest du mir das nur früher gesagt"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Wenn ich bloß nicht so lange gewartet hätte! Jetzt ist die Wohnung weg. So ein Pech."
+          },
+          { t: "speak", it: "Hätte ich nur ein bisschen mehr Geduld gehabt!" }
+        ]
+      }
+    ],
+    test: {
+      id: "b2-u02-test",
+      tags: ["g-konditionalsatz", "g-konjunktiv2"],
+      cefr: "B2",
+      titleIt: "Test: Bedingungen",
+      exercises: [
+        { t: "fill", a: ["wäre"] },
+        { t: "fill", a: ["kommt"] },
+        { t: "fill", a: ["Sollten"] },
+        { t: "mcq", a: 0 },
+        { t: "mcq", a: 0 },
+        { t: "mcq", a: 0 },
+        {
+          t: "cloze",
+          text: "Wenn ich mehr Zeit {{1}}, {{2}} ich öfter Sport machen.",
+          gaps: [["hätte"], ["würde"]]
+        },
+        {
+          t: "cloze",
+          text: "{{1}} ich das gewusst, {{2}} ich dir geholfen.",
+          gaps: [["Hätte"], ["hätte"]]
+        },
+        {
+          t: "listen",
+          it: "Falls du morgen Zeit hast, komm doch vorbei. Wenn ich gewusst hätte, dass du in der Stadt bist, hätte ich dich schon gestern angerufen."
+        },
+        { t: "speak", it: "Sollten Sie verhindert sein, sagen Sie bitte rechtzeitig ab." }
+      ]
+    }
   }
 ]);
