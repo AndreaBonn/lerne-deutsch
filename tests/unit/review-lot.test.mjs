@@ -331,3 +331,11 @@ test('overlay path outside the root is still rejected', t => {
   assert.equal(result.status, 1);
   assert.match(result.stderr, /outside repository root/);
 });
+
+test('the prompt tells the judge that toIt means a translation into German', () => {
+  // Field names come from the Italian fork (D4). Without this line the judge read
+  // dir "toIt" as "into Italian" and failed a correct unit three times (b2-u01).
+  const prompt = buildPrompt({ unit: 'b2-u01', lang: 'it', content: 'C' });
+  assert.match(prompt, /dir: "toIt"` means a\s+translation INTO German/);
+  assert.match(prompt, /every `it\*`\s+field/);
+});
