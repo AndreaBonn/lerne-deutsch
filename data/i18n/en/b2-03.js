@@ -269,7 +269,7 @@ LINGUAI.addStrings("en", {
       },
       {
         tr: "Even though the majority was against it, the mayor stuck to his plan. Even if there are protests, he doesn't want to give in.",
-        why: "In <i>Mehrheit</i> the <b>e</b> is long and the <b>h</b> is silent; in <i>festgehalten</i> the stress falls on <b>fest</b>; in <i>Proteste</i> the stress falls on <b>tes</b>."
+        why: "In <i>Mehrheit</i> the <b>e</b> is long and the <b>h</b> of <i>-heit</i> is pronounced [h]; in <i>festgehalten</i> the stress falls on <b>fest</b>; in <i>Proteste</i> the stress falls on <b>tes</b>."
       },
       {
         tr: "Even if I had more money, I would keep living here.",
@@ -427,7 +427,7 @@ LINGUAI.addStrings("en", {
     exercises: [
       {
         q: "Fill in: “___ des Regens fand das Fest statt.”",
-        hint: "preposition + genitive",
+        hint: "concessive preposition + genitive",
         why: "<b>Trotz</b>: concessive preposition with the genitive <i>des Regens</i>."
       },
       {

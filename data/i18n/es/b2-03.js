@@ -161,13 +161,13 @@ LINGUAI.addStrings("es", {
         p: "Si el caso es irreal, entra el <strong>Konjunktiv II</strong> en las dos oraciones: <em>Selbst wenn ich Zeit hätte, würde ich nicht mitkommen.</em> En pasado: <em>Selbst wenn sie gewonnen hätte, wäre sie nicht zufrieden gewesen.</em> Una construcción cercana es <strong>wie ... auch</strong>, «por muy ... que»: <em>Wie schwer es auch sein mag, wir schaffen das.</em> Aquí la principal suele conservar su orden: <em>wir schaffen</em>."
       },
       {
-        contrast: "El español marca la diferencia con el modo: <em>aunque llueve</em> (un hecho) frente a <em>aunque llueva</em> (algo posible), y <em>aunque tuviera tiempo, no iría</em> para lo irreal. El alemán la marca con la conjunción: <em>obwohl es regnet</em> (hecho) frente a <em>auch wenn es regnet</em> (hecho o posibilidad), normalmente con indicativo en los dos casos; solo para lo irreal pasa al Konjunktiv II: <em>hätte ... würde</em>."
+        contrast: "En español, el modo después de <em>aunque</em> depende también de cómo presenta el hablante la información: <em>aunque llueva</em> puede ser una posibilidad, pero también un hecho conocido que no importa (<em>aunque tengas razón, no grites</em>). En alemán decide el sentido en el contexto, fáctico o hipotético, y se marca con la conjunción: <em>obwohl es regnet</em> (hecho) frente a <em>auch wenn es regnet</em> (hecho o posibilidad), normalmente con indicativo en los dos casos; solo para lo irreal pasa al Konjunktiv II: <em>hätte ... würde</em>."
       },
       {
         trap: "<em>selbst</em> aquí no significa «mismo»: <em>selbst wenn</em> es «incluso si». Y después de la subordinada no vuelvas al orden español: <em>Auch wenn es regnet, gehen wir</em>, no <em>Auch wenn es regnet, wir gehen</em>."
       },
       {
-        tip: "Si en español pondrías <em>aunque</em> con subjuntivo de posibilidad (<em>aunque llueva mañana</em>), en alemán te sirve <em>auch wenn</em>, con indicativo."
+        tip: "Pregúntate si lo que concedes es un hecho o solo una posibilidad: si es una posibilidad abierta (<em>aunque llueva mañana</em>), te sirve <em>auch wenn</em>, con indicativo; si es un hecho, <em>obwohl</em> o <em>auch wenn</em>."
       }
     ],
     grammar: {
@@ -269,7 +269,7 @@ LINGUAI.addStrings("es", {
       },
       {
         tr: "Aunque la mayoría estaba en contra, el alcalde mantuvo su plan. Incluso si hay protestas, no quiere ceder.",
-        why: "En <i>Mehrheit</i> la <b>e</b> es larga y la <b>h</b> no se pronuncia; en <i>festgehalten</i> el acento cae en <b>fest</b>; en <i>Proteste</i> el acento cae en <b>tes</b>."
+        why: "En <i>Mehrheit</i> la <b>e</b> es larga y la <b>h</b> de <i>-heit</i> se pronuncia [h]; en <i>festgehalten</i> el acento cae en <b>fest</b>; en <i>Proteste</i> el acento cae en <b>tes</b>."
       },
       {
         tr: "Aunque tuviera más dinero, seguiría viviendo aquí.",
@@ -427,7 +427,7 @@ LINGUAI.addStrings("es", {
     exercises: [
       {
         q: "Completa: «___ des Regens fand das Fest statt.»",
-        hint: "preposición + genitivo",
+        hint: "preposición concesiva + genitivo",
         why: "<b>Trotz</b>: preposición concesiva con el genitivo <i>des Regens</i>."
       },
       {

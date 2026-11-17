@@ -269,7 +269,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Anche se la maggioranza era contraria, il sindaco ha mantenuto il suo piano. Anche se ci sono proteste, non vuole cedere.",
-        why: "In <i>Mehrheit</i> la <b>e</b> è lunga e la <b>h</b> è muta; in <i>festgehalten</i> l'accento cade su <b>fest</b>; in <i>Proteste</i> l'accento cade su <b>tes</b>."
+        why: "In <i>Mehrheit</i> la <b>e</b> è lunga e la <b>h</b> di <i>-heit</i> si pronuncia [h]; in <i>festgehalten</i> l'accento cade su <b>fest</b>; in <i>Proteste</i> l'accento cade su <b>tes</b>."
       },
       {
         tr: "Anche se avessi più soldi, continuerei ad abitare qui.",
@@ -427,7 +427,7 @@ LINGUAI.addStrings("it", {
     exercises: [
       {
         q: "Completa: «___ des Regens fand das Fest statt.»",
-        hint: "preposizione + genitivo",
+        hint: "preposizione concessiva + genitivo",
         why: "<b>Trotz</b>: preposizione concessiva con il genitivo <i>des Regens</i>."
       },
       {
