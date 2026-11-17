@@ -31,23 +31,23 @@ LINGUAI.addStrings("it", {
         contrast: "L'italiano giornalistico ha un mezzo simile: il <strong>condizionale di dissociazione</strong>. <em>Secondo la polizia il conducente avrebbe guidato troppo veloce</em> corrisponde a <em>Laut Polizei sei der Fahrer zu schnell gefahren</em>: in tutte e due le lingue chi scrive non si assume la responsabilità del fatto. Nel discorso indiretto con <em>disse che</em> l'italiano usa invece indicativo o congiuntivo e sposta i tempi; il tedesco usa il Konjunktiv I e non sposta il tempo."
       },
       {
-        trap: "Il Konjunktiv I non è il congiuntivo italiano e non esprime dubbio: segnala solo che le parole sono di un altro. E nel parlato si usa poco: <em>Er hat gesagt, er ist krank</em> è normale in una conversazione. Nei testi scritti formali, invece, l'indicativo al posto del Konjunktiv I suona come se chi scrive garantisse la notizia."
+        trap: "Il Konjunktiv I non è il congiuntivo italiano e non esprime dubbio: segnala solo che le parole sono di un altro. E nel parlato si usa poco: <em>Er hat gesagt, er ist krank</em> è normale in una conversazione. Nei testi scritti il Konjunktiv I segnala esplicitamente che l'affermazione è attribuita a un altro; l'indicativo, soprattutto con <em>dass</em> e una fonte esplicita, è possibile e non significa per forza che chi scrive ci creda."
       },
       {
-        tip: "Per formare il Konjunktiv I alla terza persona singolare, togli <em>-n</em> dall'infinito: <em>haben → habe, kommen → komme, wissen → wisse, können → könne</em>. L'unica eccezione da ricordare è <em>sein → sei</em>."
+        tip: "Con i verbi in <em>-en</em>, per formare il Konjunktiv I alla terza persona singolare basta togliere <em>-n</em> dall'infinito: <em>haben → habe, kommen → komme, wissen → wisse, können → könne</em>. Fanno eccezione <em>sein → sei</em> e i verbi in <em>-eln</em> o come <em>tun</em> (<em>er handle, er tue</em>)."
       }
     ],
     grammar: {
       title: "Il Konjunktiv I nel discorso indiretto",
       note: "<b>Presente</b>: tema + <i>-e</i> (er habe, er komme; er sei). <b>Passato</b>: habe / sei + participio. <b>Futuro</b>: werde + infinito. Se coincide con l'indicativo: <b>Konjunktiv II</b> (sie hätten).",
       table: {
-        head: ["infinito", "indicativo (er)", "Konjunktiv I (er)", "Konjunktiv I (sie, plurale)"],
+        head: ["infinito", "indicativo (er)", "Konjunktiv I (er)", "Konjunktiv I (sie, plurale)", "sostituzione"],
         rows: [
-          ["sein", "er ist", "er sei", "sie seien"],
-          ["haben", "er hat", "er habe", "sie hätten (Konjunktiv II)"],
-          ["werden", "er wird", "er werde", "sie würden (Konjunktiv II)"],
-          ["wissen", "er weiß", "er wisse", "sie wüssten (Konjunktiv II)"],
-          ["können", "er kann", "er könne", "sie könnten (Konjunktiv II)"]
+          ["sein", "er ist", "er sei", "sie seien", "-"],
+          ["haben", "er hat", "er habe", "sie haben", "sie hätten"],
+          ["werden", "er wird", "er werde", "sie werden", "sie würden"],
+          ["wissen", "er weiß", "er wisse", "sie wissen", "sie wüssten"],
+          ["können", "er kann", "er könne", "sie können", "sie könnten"]
         ]
       },
       examples: [
@@ -71,7 +71,7 @@ LINGUAI.addStrings("it", {
       "sottolineare",
       "riferire, riportare (über + accusativo: su)",
       "secondo (+ dativo o genitivo)",
-      "presunto, a quanto pare"
+      "a quanto pare, stando a quanto si dice (come aggettivo: die angebliche Krankheit, la presunta malattia)"
     ],
     exercises: [
       {
@@ -93,7 +93,7 @@ LINGUAI.addStrings("it", {
         why: "Tema dell'infinito <i>hab-</i> + <i>-e</i>: <b>er habe</b>. <i>hat</i> è l'indicativo presente, <i>hatte</i> il Präteritum."
       },
       {
-        q: "Completa: «Sie sagten, sie ___ keine Zeit.»",
+        q: "Completa nello stile di un giornale, con la forma che sostituisce il Konjunktiv I: «Sie sagten, sie ___ keine Zeit.»",
         opts: [
           "hätten",
           "haben",
@@ -156,7 +156,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Che cosa cambia",
-        p: "Quando si riferiscono le parole di un altro cambiano la <strong>persona</strong> (<em>ich → er/sie, mein → sein/ihr</em>), il <strong>tempo</strong> espresso con avverbi (<em>heute → an diesem Tag, morgen → am nächsten Tag / am folgenden Tag, gestern → am Tag davor / am Vortag, nächste Woche → in der folgenden Woche</em>) e il <strong>luogo</strong> (<em>hier → dort</em>). „Ich komme morgen.“ → <em>Er sagte, er komme am nächsten Tag.</em> „Das ist mein Auto.“ → <em>Er sagte, das sei sein Auto.</em>"
+        p: "Quando si riferiscono le parole di un altro in un altro momento o in un altro luogo, cambiano la <strong>persona</strong> (<em>ich → er/sie, mein → sein/ihr</em>), il <strong>tempo</strong> espresso con avverbi (<em>heute → an diesem Tag, morgen → am nächsten Tag / am folgenden Tag, gestern → am Tag davor / am Vortag, nächste Woche → in der folgenden Woche</em>) e il <strong>luogo</strong> (<em>hier → dort</em>). Se chi riferisce si trova nello stesso giorno o nello stesso posto, <em>heute</em> o <em>hier</em> possono restare. „Ich komme morgen.“ → <em>Er sagte, er komme am nächsten Tag.</em> „Das ist mein Auto.“ → <em>Er sagte, das sei sein Auto.</em>"
       },
       {
         h: "Che cosa non cambia",
@@ -174,7 +174,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Spostamenti nel discorso indiretto",
-      note: "Cambiano <b>persona</b>, <b>avverbi di tempo</b> e <b>di luogo</b>; il <b>tempo verbale</b> resta quello della frase diretta, solo al Konjunktiv I.",
+      note: "Cambiano <b>persona</b> e, se il momento o il luogo di chi riferisce sono diversi, <b>avverbi di tempo</b> e <b>di luogo</b>; il <b>tempo verbale</b> resta quello della frase diretta, solo al Konjunktiv I.",
       table: {
         head: ["discorso diretto", "discorso indiretto"],
         rows: [
@@ -210,16 +210,16 @@ LINGUAI.addStrings("it", {
     ],
     exercises: [
       {
-        q: "Una settimana dopo riferisci «Ich komme morgen» (lui). Quale frase è corretta?",
+        q: "Una settimana dopo riferisci «Ich komme morgen» (lui). Quale frase lo riporta al Konjunktiv I?",
         opts: [
           "Er sagte, er komme am nächsten Tag.",
           "Er sagte, ich komme am nächsten Tag.",
           "Er sagte, er kam am nächsten Tag."
         ],
-        why: "Cambiano la persona (<i>ich → er</i>) e il tempo (<i>morgen → am nächsten Tag</i>); il verbo va al Konjunktiv I presente: <b>komme</b>. <i>kam</i> è un Präteritum."
+        why: "Cambiano la persona (<i>ich → er</i>) e il tempo (<i>morgen → am nächsten Tag</i>); il verbo va al Konjunktiv I presente: <b>komme</b>. <i>kam</i> è un Präteritum indicativo, non un Konjunktiv I."
       },
       {
-        q: "Come riferisci «Ich war gestern hier» (lei)?",
+        q: "Giorni dopo, da un'altra città, riferisci «Ich war gestern hier» (lei). Quale frase è corretta?",
         opts: [
           "Sie sagte, sie sei am Tag davor dort gewesen.",
           "Sie sagte, sie war gestern hier.",
@@ -242,7 +242,7 @@ LINGUAI.addStrings("it", {
         why: "<b>kenne</b>: tema <i>kenn-</i> + <i>-e</i>. Il tempo resta presente."
       },
       {
-        q: "«Wir haben heute keine Zeit.» → «Sie sagten, sie ___ an diesem Tag keine Zeit.»",
+        q: "Riferito giorni dopo: «Wir haben heute keine Zeit.» → «Sie sagten, sie ___ an diesem Tag keine Zeit.»",
         hint: "plurale: il Konjunktiv I coincide con l'indicativo",
         why: "<b>hätten</b>: <i>sie haben</i> sarebbe uguale all'indicativo, quindi Konjunktiv II. E <i>heute → an diesem Tag</i>."
       },
@@ -299,7 +299,7 @@ LINGUAI.addStrings("it", {
         p: "Un ordine si riferisce con <strong>sollen</strong> al Konjunktiv I: „Warte hier!“ → <em>Sie sagte, ich solle hier warten.</em> <em>Der Arzt sagte, ich solle mehr schlafen.</em> Una richiesta cortese si riferisce spesso con <strong>bitten</strong> o <strong>auffordern</strong> + <em>zu</em> + infinito: „Rufen Sie mich bitte an!“ → <em>Er bat mich, ihn anzurufen.</em>"
       },
       {
-        contrast: "L'italiano riferisce le domande con <em>se</em> + congiuntivo (<em>mi chiese se avessi tempo</em>) e gli ordini con <em>di</em> + infinito (<em>mi disse di aspettare</em>). Il tedesco usa <em>ob</em> + verbo in fondo, al Konjunktiv (<em>ob ich Zeit hätte</em>), e per l'ordine una frase con <em>sollen</em> (<em>ich solle warten</em>); la costruzione con l'infinito esiste, ma con <em>bitten</em> e <em>auffordern</em>, non con <em>sagen</em>."
+        contrast: "L'italiano riferisce le domande con <em>se</em> + indicativo o congiuntivo, secondo il contesto e il registro (<em>mi chiese se avevo tempo</em>, <em>se avessi tempo</em>) e gli ordini con <em>di</em> + infinito (<em>mi disse di aspettare</em>). Il tedesco usa <em>ob</em> + verbo in fondo, al Konjunktiv (<em>ob ich Zeit hätte</em>), e per l'ordine una frase con <em>sollen</em> (<em>Sie sagte, ich solle warten</em>); è possibile anche l'infinito, con il complemento della persona: <em>Sie sagte mir, hier zu warten</em>, e soprattutto con <em>bitten</em> e <em>auffordern</em>."
       },
       {
         trap: "<em>ob</em> non è <em>dass</em>: <em>Er fragte, dass ich Zeit hätte</em> non ha senso. E dopo <em>ob</em> o la parola interrogativa il verbo va in fondo, non in seconda posizione come nella domanda diretta: <em>wann der Zug fahre</em>, non <em>wann fährt der Zug</em>."
@@ -349,9 +349,9 @@ LINGUAI.addStrings("it", {
         opts: [
           "Er fragte, ob ich Zeit hätte.",
           "Er fragte, dass ich Zeit hätte.",
-          "Er fragte, hätte ich Zeit."
+          "Er fragte, ob hätte ich Zeit."
         ],
-        why: "Domanda sì/no: <b>ob</b> + verbo in fondo. <i>dass</i> non introduce domande, e senza <i>ob</i> il verbo non può stare al primo posto."
+        why: "Domanda sì/no: <b>ob</b> + verbo in fondo. <i>dass</i> non introduce domande, e dopo <i>ob</i> il verbo deve stare in fondo, non subito dopo."
       },
       {
         q: "Come riferisci «Warte hier!» (lei a me)?",
@@ -402,7 +402,7 @@ LINGUAI.addStrings("it", {
       },
       {
         q: "Traduci: «Mi ha chiesto dove abitavo.» (lei)",
-        why: "<i>Sie fragte mich, wo ich wohnte</i>, oppure <i>wo ich wohne</i>: il Konjunktiv I <i>ich wohne</i> coincide con l'indicativo, quindi nello scritto si preferisce <i>wohnte</i> o <i>wohnen würde</i>."
+        why: "<i>Sie fragte mich, wo ich wohnte</i>, oppure <i>wo ich wohne</i>, anch'essa corretta. Il Konjunktiv I <i>ich wohne</i> coincide con l'indicativo, e lo stesso vale per <i>wohnte</i>, uguale al Präteritum: se si vuole che il Konjunktiv si riconosca, si usa <i>wo ich wohnen würde</i>."
       },
       {
         tr: "Il poliziotto mi ha chiesto se avevo visto l'incidente. Poi mi ha invitato a mostrargli il documento.",
@@ -460,7 +460,7 @@ LINGUAI.addStrings("it", {
         why: "Ordine riferito: <b>sollen</b> al Konjunktiv I, e <i>mir</i> diventa <i>ihm</i>."
       },
       {
-        q: "Completa: «Die Kinder sagten, sie ___ Hunger.»",
+        q: "Completa nello stile di un giornale, con la forma che sostituisce il Konjunktiv I: «Die Kinder sagten, sie ___ Hunger.»",
         opts: [
           "hätten",
           "haben",
