@@ -132,19 +132,22 @@ test("the reading strings exist in five languages", async ({ page }) => {
    invisible until somebody opens the list from a cold profile.
    ============================================================ */
 test("the list shows texts from every level, not only the loaded one", async ({ page }) => {
-  /* A1, A2 and B1 are registered, so a fourth level is built here: the index is
-     served with one more registerLevel line, and the level's library file
-     (plus its overlay, whatever the learner language) exists only as a route.
-     The student never opens B2: the list has to pull it and draw it again. */
+  /* One more level is built here: the index is served with one more
+     registerLevel line, and the level's library file (plus its overlay,
+     whatever the learner language) exists only as a route. The student never
+     opens it: the list has to pull it and draw it again. Its code is
+     synthetic on purpose: registerLevel keeps the first registration of a
+     code, so a fixture named after a real level (it used to be B2) stops
+     loading its file the day that level is registered for real. */
   await page.route("**/data/core/curriculum-index.js", async route => {
     const res = await route.fetch();
     const body = (await res.text()) +
-      '\nLINGUAI.registerLevel({ code: "B2", cefrLabel: "B2", dataFiles: ["library-b2-fixture.js"] });\n';
+      '\nLINGUAI.registerLevel({ code: "X9", cefrLabel: "X9", dataFiles: ["library-b2-fixture.js"] });\n';
     await route.fulfill({ response: res, body });
   });
   await page.route("**/data/core/library-b2-fixture.js", route => route.fulfill({
     contentType: "application/javascript",
-    body: 'LINGUAI.addReadings([{ id: "lib-b2-fixture", cefr: "B2", tag: "g-praesens", titleIt: "Fixture Bergtour", ' +
+    body: 'LINGUAI.addReadings([{ id: "lib-b2-fixture", cefr: "X9", tag: "g-praesens", titleIt: "Fixture Bergtour", ' +
       'sentences: ["Am Sonntag fahren wir in die Berge."], glossIt: ["die Berge"], lexIt: ["fahren"], questions: [] }]);'
   }));
   await page.route("**/data/i18n/*/library-b2-fixture.js", route => {
@@ -162,7 +165,7 @@ test("the list shows texts from every level, not only the loaded one", async ({ 
   await page.waitForSelector('.js-open[data-id="lib-b2-fixture"]', { timeout: 15000 });
 
   const riga = page.locator(".list-row", { has: page.locator('.js-open[data-id="lib-b2-fixture"]') });
-  await expect(riga.locator(".chip--cefr")).toHaveText("B2");
+  await expect(riga.locator(".chip--cefr")).toHaveText("X9");
   await expect(page.locator('.js-open[data-id="r-a1-cafe"]'), "the loaded level is still there").toHaveCount(1);
 });
 
