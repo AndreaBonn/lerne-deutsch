@@ -1,30 +1,25 @@
 {
-  "bundleHash": "6ab2cac56834433ef0324852762a09f145321c2afcc43ac3d6e00b456cf7e218",
+  "bundleHash": "c08fc8f3d9fc85492a4d2bebaf48e240b89d3d2d7e50035c6f319249f4df0cbc",
   "findings": [
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "La forma «werden ... mitgeteilt» è una passiva al presente, non una forma che esprime di per sé il futuro. Può riferirsi al futuro grazie al contesto. Correggere la spiegazione distinguendo la passiva al presente dal Futur I passivo «werden ... mitgeteilt werden».",
-      "path": "merged.test.exercises[9].why"
+      "kind": "pronuncia",
+      "msg": "L'accento di «eingegangen» cade sulla prima sillaba, «ein», non su «gan». Correggere l'indicazione fonetica.",
+      "path": "merged.lessons[1].exercises[10].why"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "La formula «infinitivo + -d» non copre il participio I di «sein»: «seiend», non «seind». Aggiungere l’eccezione sia nella nota sia nella teoria.",
-      "path": "merged.lessons[0].grammar.note"
+      "kind": "chiave di risposta",
+      "msg": "La consegna richiede solo un participio II e un participio I, quindi ammette anche soluzioni corrette non presenti nella chiave, per esempio «beschlossenen» o «durchgeführten» nel primo spazio e «wachsenden» nel secondo. Specificare i verbi richiesti oppure ampliare le alternative accettate.",
+      "path": "merged.lessons[0].exercises[5]"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "La regola «infinitivo + -d» presenta un’eccezione rilevante: «sein» forma «seiend». Indicarla anche in questa spiegazione.",
-      "path": "merged.lessons[0].theory[0].p"
+      "kind": "chiave di risposta",
+      "msg": "La consegna non specifica il verbo del participio: oltre a «geplanten» e «vorgesehenen», sono possibili per esempio «beschlossenen» e «entwickelten». Specificare il verbo richiesto oppure ampliare le alternative accettate.",
+      "path": "merged.test.exercises[8]"
     },
     {
-      "kind": "traduzione",
-      "msg": "«El consejo haya aprobado» lascia senza complemento il verbo spagnolo e non rende chiaramente «zugestimmt hat», cioè l’aver dato il consenso. Usare, per esempio, «cuando el consejo haya dado su aprobación».",
-      "path": "merged.lessons[2].grammar.examples[1].tr"
-    },
-    {
-      "kind": "traduzione",
-      "msg": "«El consejo haya aprobado» non rende chiaramente «zugestimmt hat» e lascia senza complemento il verbo spagnolo. Sostituire con «cuando el consejo haya dado su aprobación».",
-      "path": "merged.lessons[2].exercises[5].tr"
+      "kind": "spiegazione",
+      "msg": "«Tras concluir» e «al concluir» contengono un infinito, non un gerundio. Riformulare il contrasto o aggiungere un esempio effettivo di gerundio spagnolo.",
+      "path": "merged.lessons[1].theory[2].contrast"
     }
   ],
   "lang": "es",

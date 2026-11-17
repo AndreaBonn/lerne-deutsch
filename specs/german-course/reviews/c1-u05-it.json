@@ -1,25 +1,20 @@
 {
-  "bundleHash": "79d379ee50580bad693f7caaa81231279a3f57bb21b9cf3ac40b9643d341dde2",
+  "bundleHash": "1c5b5be94a2e39f2f5f20c5edec2a641eb0e8ac64f85e81da1d06e39ead2d362",
   "findings": [
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "La regola sul soggetto di «um ... zu» è troppo rigida: può riferirsi anche a un complemento della principale, come in «Ich bitte dich, früher zu kommen, um den Bericht zu prüfen». Riformula distinguendo il soggetto della principale dal referente dell'infinito e specifica che «damit» serve quando il referente non è ricavabile chiaramente dalla costruzione con «um ... zu».",
-      "path": "merged.lessons[2].theory[2].contrast"
+      "kind": "Spiegazione grammaticale",
+      "msg": "Il consiglio associa il participio I a una relativa al presente, ma può esprimere contemporaneità anche rispetto a un evento passato: «die an der Sitzung teilnehmenden Mitglieder» corrisponde qui a «die Mitglieder, die an der Sitzung teilnahmen». Sostituire il riferimento al presente con quello alla contemporaneità rispetto al verbo principale.",
+      "path": "merged.lessons[0].theory[4].tip"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "Il criterio «se rispondi sì a tutte» è contraddittorio: alla domanda «Devo mantenere un tempo o un modo?» una risposta affermativa è un motivo per valutare la subordinata, non la forma compatta. Riformula la domanda, per esempio: «Posso rinunciare a esprimere esplicitamente tempo e modo senza perdere informazioni?»",
-      "path": "merged.lessons[2].theory[1].p"
+      "kind": "Spiegazione grammaticale",
+      "msg": "«Nur dann ..., wenn» esprime una condizione necessaria, non una sfumatura modale o di probabilità che un nome non può rendere. La stessa unità propone «nur bei repräsentativer Stichprobe». Separare questo caso dagli esempi con «sollte» e «könnte» e riconoscere la possibile formulazione nominale.",
+      "path": "merged.lessons[2].theory[0].p"
     },
     {
-      "kind": "chiave di risposta",
-      "msg": "«Nach Bedarf» significa «secondo necessità» e può indicare modalità o frequenza; non rende necessariamente la condizione «se necessario» della traduzione fornita. Eliminalo dalle risposte accettate oppure modifica il contesto e la traduzione per rendere esplicito anche quel significato.",
-      "path": "merged.lessons[1].exercises[5].gaps[1]"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "L'affermazione che il participio resti sempre subito prima del nome è troppo assoluta: possono intervenire altri attributi, per esempio «die gestiegenen und weiterhin steigenden Kosten». Limita la regola alla struttura dell'attributo ampliato presentata nell'esempio, senza escludere altri attributi.",
-      "path": "merged.lessons[0].theory[1].p"
+      "kind": "Risposte alternative",
+      "msg": "Manca una traduzione valida con il Futur I passivo esplicito: «Die in der Sitzung getroffenen Entscheidungen werden nach Abschluss der Prüfung mitgeteilt werden». Aggiungerla alle risposte accettate, insieme all'eventuale variante con il complemento temporale iniziale.",
+      "path": "merged.test.exercises[9].a"
     }
   ],
   "lang": "it",

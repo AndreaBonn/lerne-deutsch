@@ -1,65 +1,35 @@
 {
-  "bundleHash": "051aa3e573ad176cae2fc8b379e924530156aca940e8fedf1fd5840cb9f48bcf",
+  "bundleHash": "86e6321942cb4f1ffa2ba95542d5d9a75d439c3ccdd2aa1429e48a00d24ef6aa",
   "findings": [
     {
-      "kind": "Spiegazione grammaticale",
-      "msg": "La regola «always stays right before the noun» è troppo assoluta: tra participio attributivo e sostantivo possono comparire altri attributi, per esempio «die geprüften und vollständigen Unterlagen». Limitarla all'ordine del participio rispetto ai suoi complementi nella costruzione illustrata.",
-      "path": "merged.lessons[0].theory[1].p"
-    },
-    {
-      "kind": "Accento lessicale",
-      "msg": "In «abgeschlossen» l'accento cade su «ge», non su «schlos». Correggere l'indicazione di pronuncia.",
-      "path": "merged.lessons[0].exercises[9].why"
-    },
-    {
-      "kind": "Accento lessicale",
-      "msg": "In «festgelegt» l'accento cade su «ge», non su «fest». Correggere l'indicazione di pronuncia.",
-      "path": "merged.lessons[2].exercises[9].why"
-    },
-    {
-      "kind": "Accento lessicale",
-      "msg": "In «fertiggestellt» l'accento principale cade su «ge», non su «fer». Correggere l'indicazione di pronuncia.",
-      "path": "merged.test.exercises[10].why"
-    },
-    {
-      "kind": "Traduzione",
-      "msg": "«Trotz mehrfacher Mahnung blieb die Zahlung aus» è al passato: «Despite repeated reminders, the payment did not arrive» rende il tempo del testo tedesco. L'attuale present perfect suggerisce un legame con il presente non espresso dall'originale.",
-      "path": "merged.lessons[1].grammar.examples[3].tr"
-    },
-    {
-      "kind": "Spiegazione grammaticale",
-      "msg": "L'affermazione che gli infinitivi con «ohne zu» o «um ... zu» richiedano lo stesso soggetto è troppo rigida: il soggetto implicito può riferirsi a un complemento della principale, come in «Ich bat ihn, das zu tun, ohne ein Wort zu sagen». Spiegare che il referente deve essere recuperabile dal contesto e che spesso coincide con il soggetto della principale.",
-      "path": "merged.lessons[2].theory[2].contrast"
-    },
-    {
-      "kind": "Chiave di risposta",
-      "msg": "«nachdem» è accettabile nel testo, ma esprime successione temporale e non necessariamente la condizione o l'immediatezza di «only when» nella traduzione proposta. Rimuoverlo dalle alternative oppure precisare che è una possibile riformulazione con sfumatura diversa e adeguare la consegna.",
+      "kind": "answer key",
+      "msg": "«Sobald» and «nachdem» express a temporal relation, while the English sentence and the stated task express a condition. Accepting them changes the meaning; retain «wenn» or add «falls» and adjust the explanation.",
       "path": "merged.lessons[2].exercises[5].gaps[0]"
     },
     {
-      "kind": "Spiegazione grammaticale",
-      "msg": "«Nach Abschluss der Prüfung» non richiede che la frase principale e l'azione nominalizzata abbiano lo stesso soggetto: per esempio, «Nach Abschluss der Prüfung veröffentlicht die Behörde den Bericht» è corretto anche se l'esame è stato concluso da altri. Presentare la coincidenza dei soggetti come possibile fattore di chiarezza, non come criterio della forma nominale.",
-      "path": "merged.lessons[2].grammar.note"
+      "kind": "explanation",
+      "msg": "The nominal phrase does not necessarily lose the hypothetical meaning: «bei längerer Dauer der Prüfung» also describes a possible future condition. Reframe the item around the more explicit modal marking of «sollte», rather than claiming the nuance is lost.",
+      "path": "merged.lessons[2].exercises[1]"
     },
     {
-      "kind": "Spiegazione grammaticale",
-      "msg": "«Wenn weitere Unterlagen benötigt werden» significa che servono ulteriori documenti, mentre «Bei Bedarf» lascia più generica la necessità: può riferirsi anche all'esigenza di richiederli per altri motivi. Rendere la corrispondenza meno rigida, ad esempio «Wenn Bedarf besteht, können weitere Unterlagen angefordert werden».",
-      "path": "merged.lessons[1].exercises[2].opts[0]"
+      "kind": "explanation",
+      "msg": "«Seitens der Teilnehmenden» explicitly identifies the participants as the agent; it does not hide the subject. Explain instead that the phrase can make the sentence cumbersome or obscure the relationship between agent and action.",
+      "path": "merged.lessons[2].theory[3].trap"
     },
     {
-      "kind": "Spiegazione grammaticale",
-      "msg": "«Worden» non si forma eliminando «ge-» dal participio del verbo pieno: è la forma usata come ausiliare del passivo. Presentarla come distinzione d'uso tra «worden» nel passivo e «geworden» con il verbo pieno «werden».",
-      "path": "merged.test.exercises[1].why"
+      "kind": "interference note",
+      "msg": "The claim that English speakers are tempted by the colloquial German dative after «wegen» and «trotz» is unsupported as an English-specific interference pattern. Replace it with the concrete contrast that English does not mark these cases, so learners must learn the German case governed by each preposition.",
+      "path": "merged.lessons[1].theory[3].trap"
     },
     {
-      "kind": "Traduzione",
-      "msg": "«Die von uns vorgesehenen Maßnahmen» può significare misure previste o contemplate, mentre la traduzione «the measures we have planned» corrisponde più precisamente a «geplanten». Aggiungere «or envisaged» alla traduzione oppure distinguere le due soluzioni.",
-      "path": "merged.test.exercises[8].tr"
+      "kind": "translation",
+      "msg": "«Aussagekräftig» means informative or meaningful in this context; «significant» can suggest statistical significance, which the German does not assert. Use «The results are informative only if the sample is representative.»",
+      "path": "merged.lessons[2].grammar.examples[4].tr"
     },
     {
-      "kind": "Progressione CEFR",
-      "msg": "L'affermazione che il Gerundivum e le costruzioni participiali estese complete appartengano al C2 è categorica e rischia di escludere strutture pertinenti anche al C1. Presentarle come contenuti rinviati o approfondimenti successivi, senza attribuirle esclusivamente al C2.",
-      "path": "merged.lessons[0].theory[1].p"
+      "kind": "explanation",
+      "msg": "The accepted answer is a present passive with a future interpretation supplied by context; «werden» here is the passive auxiliary, not a separate future marker. Revise the explanation accordingly.",
+      "path": "merged.test.exercises[9].why"
     }
   ],
   "lang": "en",

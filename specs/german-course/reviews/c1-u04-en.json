@@ -1,40 +1,30 @@
 {
-  "bundleHash": "7a05d610a4ff1d5e09aa1c0ceaefb3808576c9801a9ba83b1d348fb67752f2ae",
+  "bundleHash": "6d8c2cae665dc3096df90de9015411fcc88ba5b646136b8bf0a2e34e33479fc8",
   "findings": [
     {
-      "kind": "plural",
-      "msg": "Il plurale indicato «die Verdachte» è errato. Sostituirlo con «die Verdächte»; il plurale è raro.",
+      "kind": "plurale errato",
+      "msg": "Il plurale corretto di «der Verdacht» è «die Verdächte», non «die Verdachte». Correggere anche il valore corrispondente in merged.lessons[0].vocab[1].plural.",
       "path": "neutral.lessons[0].vocab[1].plural"
     },
     {
-      "kind": "plural",
-      "msg": "Anche nella versione unita compare il plurale errato «die Verdachte». Correggere in «die Verdächte».",
-      "path": "merged.lessons[0].vocab[1].plural"
+      "kind": "spiegazione fuorviante",
+      "msg": "L’assenza di un avverbio come «wohl» non esclude una supposizione: il contesto dell’annuncio sostiene qui la lettura di completamento futuro. Eliminare quel criterio dalla spiegazione.",
+      "path": "merged.lessons[0].exercises[1].why"
     },
     {
-      "kind": "explanation",
-      "msg": "«werden + infinitive is used above all for a supposition about the present» presenta come funzione prevalente una lettura che dipende dal contesto. La costruzione può anche esprimere futuro, previsione o intenzione. Riformulare spiegando entrambe le letture senza attribuire una prevalenza generale alla supposizione.",
-      "path": "merged.lessons[0].theory[0].p"
-    },
-    {
-      "kind": "explanation",
-      "msg": "I riferimenti a presente o passato e la presenza di «bis» non determinano da soli una lettura di supposizione o di completamento futuro. Per esempio, «Er wird jetzt arbeiten» può riferirsi a un'azione imminente. Presentarli come indizi da interpretare nel contesto, non come regole determinanti; correggere anche il consiglio in theory[4].tip.",
-      "path": "merged.lessons[0].theory[1].p"
-    },
-    {
-      "kind": "explanation",
-      "msg": "L'affermazione che la lettura intenzionale di «will» sia impossibile con un infinito perfetto è troppo assoluta: «Ich will bis morgen fertig geworden sein» può esprimere un obiettivo di completamento. Spiegare che, nella frase proposta e nel suo contesto, «will» riporta invece l'affermazione del sindaco.",
-      "path": "merged.lessons[1].exercises[1].why"
-    },
-    {
-      "kind": "translation",
-      "msg": "«Die Resignation» qui indica rassegnazione; l'inglese «resignation» può anche significare dimissioni e, senza contesto, è fuorviante. Usare «resignation in the sense of acceptance» oppure «resigned acceptance».",
-      "path": "merged.lessons[2].vocab[4].tr"
-    },
-    {
-      "kind": "answer-key",
-      "msg": "«Denn» rende la domanda più neutra e non esprime la sospettosità richiesta dalla consegna; il fatto che sia grammaticalmente possibile non lo rende equivalente a «etwa» nel contesto. Limitare la risposta a «etwa» oppure modificare la consegna affinché ammetta esplicitamente entrambe le sfumature.",
+      "kind": "alternativa e sfumatura",
+      "msg": "«denn» rende possibile la domanda, ma non conserva necessariamente il sospetto espresso da «etwa». Poiché la richiesta specifica un atteggiamento sospettoso e il suggerimento traduce proprio quella sfumatura, rimuovere «denn» dalle risposte accettate oppure modificare la richiesta per ammettere esplicitamente anche una domanda più neutra.",
       "path": "merged.test.exercises[2]"
+    },
+    {
+      "kind": "spiegazione grammaticale imprecisa",
+      "msg": "Il perfetto infinito non implica in generale una lettura epistemica: per esempio, «Er muss bis morgen fertig geworden sein» può esprimere un obbligo da completare. Presentare forma e verbo come indizi dipendenti dal contesto, senza affermare che tale lettura sia la più frequente.",
+      "path": "merged.lessons[1].theory[0].p"
+    },
+    {
+      "kind": "contrasto linguistico impreciso",
+      "msg": "Anche l’inglese usa parole con funzioni pragmatiche simili alle particelle modali, per esempio «just» e «though». Sostituire l’affermazione assoluta che l’inglese non possieda particelle di questo tipo con un confronto delle differenze d’uso e posizione.",
+      "path": "merged.lessons[2].theory[2].contrast"
     }
   ],
   "lang": "en",

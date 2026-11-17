@@ -1,20 +1,25 @@
 {
-  "bundleHash": "2493254ac9605987245e50a69d3c18bc40151cd0ad0f52b37de9099d48b016d6",
+  "bundleHash": "8571cc7651b330c96ac3564600c5cd160a430fa2386c1a71b493f2d93dec505e",
   "findings": [
     {
-      "kind": "plurale",
-      "msg": "Il plurale di «der Verdacht» è «die Verdächte», non «die Verdachte». Correggere il valore in neutral e merged.",
+      "kind": "plurale errato",
+      "msg": "Il plurale di «der Verdacht» è «die Verdächte», non «die Verdachte». Correggere il campo in neutral; la correzione deve comparire anche in merged.",
       "path": "neutral.lessons[0].vocab[1].plural"
     },
     {
-      "kind": "esercizio ambiguo",
-      "msg": "Nel terzo spazio «der Hausmeister selbst» identifica il portiere, ma non dice che sia lui a sostenere di non aver saputo nulla. Aggiungere un indizio esplicito, per esempio «nach eigener Aussage», affinché «will» sia motivato dalla fonte indicata. Correggere il testo anche in neutral.",
-      "path": "merged.lessons[1].exercises[5].text"
+      "kind": "spiegazione grammaticale",
+      "msg": "L'indicazione che «abfahren» richieda «sein» perché è un verbo di moto è troppo generale: la scelta dipende dall'uso del verbo, non dal solo movimento. Precisare che qui «abfahren» è intransitivo e forma il Perfekt con «sein».",
+      "path": "merged.lessons[0].exercises[9].why"
     },
     {
-      "kind": "spiegazione del registro",
-      "msg": "L'indicazione che le particelle modali vadano evitate nello scritto formale è troppo generale per il C1: la loro appropriatezza dipende dalla particella, dalla funzione e dal genere testuale. Distinguere soprattutto il colloquiale «halt» da usi di «ja», «wohl» ed «eben» possibili anche in testi sorvegliati.",
-      "path": "merged.lessons[2].theory[1].p"
+      "kind": "chiave di risposta",
+      "msg": "«denn» rende la domanda più neutra e non esprime di per sé il sospetto richiesto né la sfumatura italiana «mica». Eliminare «denn» dalle risposte accettate oppure modificare la consegna per ammettere anche una domanda neutra.",
+      "path": "merged.lessons[2].exercises[5].gaps[1]"
+    },
+    {
+      "kind": "chiave di risposta",
+      "msg": "«denn» non esprime di per sé il sospetto indicato dalla consegna e dal suggerimento «non avrai mica». Rimuoverlo dalle risposte accettate oppure rendere esplicito che è ammessa anche una domanda neutra.",
+      "path": "merged.test.exercises[2].a"
     }
   ],
   "lang": "it",

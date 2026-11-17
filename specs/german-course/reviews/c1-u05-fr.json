@@ -1,20 +1,15 @@
 {
-  "bundleHash": "1f67352725801cae24350ee833117cbefa2c69f3e210395264ff24a4a4703ec4",
+  "bundleHash": "2510625c06c17325003d9c84353ce63fbc548a62096e26d652308050be646a53",
   "findings": [
     {
-      "kind": "Pronuncia",
-      "msg": "L’accento di «eingegangen» cade su «ein», non su «gan». Correggere l’indicazione, altrimenti l’esercizio insegna una pronuncia errata.",
-      "path": "merged.lessons[1].exercises[10].why"
+      "kind": "explication grammaticale",
+      "msg": "L’explication confond le participe présent français, qui est invariable, avec l’adjectif verbal, qui s’accorde : « croissants » est ici un adjectif verbal. Reformuler la comparaison pour distinguer ces deux formes et expliquer que le participe allemand employé comme épithète se décline.",
+      "path": "merged.lessons[0].theory[2].contrast"
     },
     {
-      "kind": "Spiegazione contraddittoria",
-      "msg": "La spiegazione dice che la forma compatta funziona se la risposta è «sì» a tutte le domande, compresa «Devo conservare un tempo o un modo?». Questo contraddice la spiegazione precedente, secondo cui la nominalizzazione può far perdere proprio tali informazioni. Riformulare indicando che, se tempo o modo devono essere espliciti e la forma nominale non li conserva, è preferibile la subordinata.",
-      "path": "merged.lessons[2].theory[1].p"
-    },
-    {
-      "kind": "Risposta ambigua",
-      "msg": "La frase ammette anche «gewesen»: «Die Verhandlungen sind erst im Mai abgeschlossen gewesen», con passivo di stato al Perfekt. La consegna non specifica che si cerca il passivo d’azione. Precisare il significato richiesto oppure accettare e spiegare anche «gewesen».",
-      "path": "merged.test.exercises[1]"
+      "kind": "explication grammaticale",
+      "msg": "L’affirmation selon laquelle ce qui suit le nom allemand est un génitif sans préposition est trop générale : un complément nominal peut aussi être introduit par une préposition, par exemple « die Nachfrage nach Wohnungen », présent dans cette unité. Limiter la règle aux exemples de génitif étudiés et préciser que d’autres constructions existent.",
+      "path": "merged.lessons[1].theory[2].contrast"
     }
   ],
   "lang": "fr",

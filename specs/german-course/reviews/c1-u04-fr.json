@@ -1,20 +1,10 @@
 {
-  "bundleHash": "555a431a2e3e7c23f69bf14f4c6c34ae4ff678152991976d14ed0f4cd5989d5c",
+  "bundleHash": "7c91b94a1bb060d41a86ff210b969fce33006a8af119dc7337ee751e40f43e17",
   "findings": [
     {
-      "kind": "plurale errato",
-      "msg": "Il plurale di «der Verdacht» è «die Verdächte», con Umlaut. Correggere sia il valore originale sia quello risultante dalla fusione.",
-      "path": "neutral.lessons[0].vocab[1].plural"
-    },
-    {
-      "kind": "spiegazione grammaticale fuorviante",
-      "msg": "L'affermazione secondo cui il tedesco usa questa costruzione molto meno spesso senza avverbio è troppo categorica: «Das wird der Postbote sein» è una supposizione naturale anche senza avverbio, come mostra la stessa lezione. Spiegare che sono il contesto e gli eventuali avverbi a orientare l'interpretazione.",
-      "path": "merged.lessons[0].theory[2].contrast"
-    },
-    {
-      "kind": "obiettivo didattico impreciso",
-      "msg": "«mag» nell'esempio della lezione esprime una concessione, non un grado di certezza sulla stessa scala di «muss», «dürfte» e «könnte». Separare la concessione dalla graduazione della certezza nell'obiettivo.",
-      "path": "merged.lessons[1].objectives[0]"
+      "kind": "spiegazione grammaticale",
+      "msg": "L'affermazione « werden + infinitif sert surtout pour une supposition sur le présent » generalizza troppo: il Futur I esprime anche eventi futuri, previsioni, promesse e intenzioni, come mostrano gli stessi esercizi. Spiegare che può esprimere una supposizione sul presente quando il contesto lo indica, senza presentare questa lettura come il suo uso principale.",
+      "path": "merged.lessons[0].theory[0].p"
     }
   ],
   "lang": "fr",

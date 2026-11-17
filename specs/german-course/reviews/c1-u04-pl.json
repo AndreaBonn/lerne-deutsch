@@ -1,45 +1,15 @@
 {
-  "bundleHash": "b854a4db0ed2b68b63dd8c18774ef6fedd895b8122d439411af4a9b8575c51de",
+  "bundleHash": "e67882761e5e231e28b601d3808134251f9e597f78dbd1efbdad332ea3b39f60",
   "findings": [
     {
-      "kind": "morfologia",
-      "msg": "Il plurale di «der Verdacht» è «die Verdächte», non «die Verdachte».",
+      "kind": "plurale errato",
+      "msg": "Il plurale di «der Verdacht» è «die Verdächte», non «die Verdachte». Correggere il valore nel core e nella versione risultante.",
       "path": "neutral.lessons[0].vocab[1].plural"
     },
     {
-      "kind": "traduzione",
-      "msg": "«Pozornie» suggerisce che la situazione sia solo apparente, mentre «anscheinend» indica qui una deduzione basata su indizi. Usare «jak się zdaje» o «najwyraźniej».",
-      "path": "merged.lessons[1].vocab[11].tr"
-    },
-    {
-      "kind": "traduzione",
-      "msg": "«Będzie wtedy prawdopodobnie już odjechał» non è una costruzione polacca naturale. Usare, per esempio, «a pociąg przesiadkowy prawdopodobnie już wtedy odjedzie» oppure «do tego czasu prawdopodobnie już odjedzie».",
-      "path": "merged.lessons[0].exercises[9].tr"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "L'affermazione che «werden + infinito» serva principalmente a esprimere supposizioni sul presente è troppo generale: la costruzione esprime anche futuro, previsioni e intenzioni. Precisare che può esprimere una supposizione sul presente quando il contesto lo indica.",
-      "path": "merged.lessons[0].theory[0].p"
-    },
-    {
-      "kind": "contrasto linguistico",
-      "msg": "«Niemiecki robi odwrotnie: stawia werden» lascia intendere che il tedesco debba usare werden per esprimere una supposizione, ma può usare anche il presente o il Perfekt con «wohl» o «vermutlich». Presentare Futur I e II come possibilità, non come forme obbligatorie.",
-      "path": "merged.lessons[0].theory[2].contrast"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "L'assenza di «wohl» non dimostra che la frase esprima un impegno: il Futur II può esprimere una previsione anche senza questo avverbio. L'interpretazione come promessa dipende dal contesto dell'annuncio.",
-      "path": "merged.lessons[0].exercises[1].why"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "«Muss» epistemico esprime una conclusione molto probabile, non una certezza assoluta. Sostituire «Dla pewności byłoby muss» con una spiegazione che distingua la forte inferenza dalla certezza.",
-      "path": "merged.test.exercises[3].why"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "La regola secondo cui le particelle stanno dopo i pronomi è troppo assoluta: per esempio «Das hat ja er gesagt» è possibile con «er» contrastivo. Specificare che la posizione dipende anche da accento, funzione informativa e contesto.",
-      "path": "merged.lessons[2].theory[1].p"
+      "kind": "istruzione incoerente con le risposte",
+      "msg": "La consegna chiede di inserire particelle, ma nella prima lacuna accetta anche gli avverbi «wahrscheinlich» e «vermutlich». Ampliare la consegna alle espressioni adatte o limitare le risposte alle particelle.",
+      "path": "merged.lessons[2].exercises[5]"
     }
   ],
   "lang": "pl",

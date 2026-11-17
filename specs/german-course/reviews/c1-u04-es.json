@@ -1,40 +1,25 @@
 {
-  "bundleHash": "b903d7e69a7346b26209520a2cd74f0c30e23ee07fd7da63674f49753102c043",
+  "bundleHash": "e28b36b7b5505b79fb09b54af42e9a4e21303c95de6c6eee76fe7c96472b0c04",
   "findings": [
     {
-      "kind": "forma plurale",
-      "msg": "Il plurale di «der Verdacht» è «die Verdächte», non «die Verdachte».",
+      "kind": "plurale errato",
+      "msg": "Il plurale di «der Verdacht» è «die Verdächte», con Umlaut. Correggere il valore in entrambe le versioni del bundle.",
       "path": "neutral.lessons[0].vocab[1].plural"
     },
     {
-      "kind": "punteggiatura",
-      "msg": "Nella spiegazione compare una doppia virgola dopo «terminada». Eliminare la virgola in eccesso.",
-      "path": "merged.lessons[0].exercises[1].why"
-    },
-    {
       "kind": "spiegazione grammaticale",
-      "msg": "«Con seguridad sería muss» attribuisce a muss una certezza assoluta, mentre qui esprime una deduzione molto probabile. Sostituire con «Para una deducción de mayor certeza sería muss».",
-      "path": "merged.test.exercises[3].why"
+      "msg": "La spiegazione «werden + infinitivo sirve sobre todo para una conjetura sobre el presente» presenta la congettura come uso prevalente della costruzione e trascura il suo comune valore futuro. Distinguere esplicitamente entrambi gli usi e precisare che il contesto determina l’interpretazione.",
+      "path": "merged.lessons[0].theory[0].p"
     },
     {
-      "kind": "nota contrastiva",
-      "msg": "La frase «en español este futuro se entiende como conjetura casi siempre» è fuorviante: anche il futuro spagnolo senza avverbi può indicare un evento futuro, come «Mañana estará en casa». Il contesto distingue entrambe le letture in entrambe le lingue; riformulare il contrasto senza attribuire questa differenza allo spagnolo.",
-      "path": "merged.lessons[0].theory[2].contrast"
+      "kind": "spiegazione temporale",
+      "msg": "«Bis» indica che l’azione sarà conclusa entro il termine, che può coincidere con il momento indicato; «antes de un momento futuro» esclude questa possibilità. Sostituire con «a más tardar en un momento futuro» e correggere le formulazioni equivalenti nella lezione.",
+      "path": "merged.lessons[0].grammar.table.rows[2][1]"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "Gli indicatori elencati non determinano da soli una congettura: «inzwischen» può riferirsi anche a un'azione futura completata. Presentarli come indizi da interpretare nel contesto, non come criteri decisivi.",
-      "path": "merged.lessons[0].theory[1].p"
-    },
-    {
-      "kind": "nota contrastiva",
-      "msg": "«Donde el español cambia el tiempo del verbo, el alemán añade wohl» suggerisce che il tedesco debba aggiungere wohl e non possa usare il futuro, mentre la stessa unità insegna «Er wird wohl ... sein». Indicare che il tedesco può esprimere la congettura con il presente o con werden, eventualmente accompagnati da wohl.",
-      "path": "merged.lessons[2].theory[2].contrast"
-    },
-    {
-      "kind": "traduzione",
-      "msg": "«Der Bus ist weg, da müssen wir halt laufen» esprime la necessità di andare a piedi, non soltanto l'azione di andarci. Tradurre, per esempio, «El autobús ya se ha ido, así que tendremos que ir andando, qué se le va a hacer».",
-      "path": "merged.lessons[2].grammar.examples[3].tr"
+      "kind": "istruzione ambigua",
+      "msg": "La consegna chiede particelle, ma per il primo spazio accetta anche gli avverbi «wahrscheinlich» e «vermutlich». Chiedere «partículas o adverbios adecuados» e spiegare la distinzione, oppure limitare le risposte ammesse alle particelle.",
+      "path": "merged.lessons[2].exercises[5].q"
     }
   ],
   "lang": "es",

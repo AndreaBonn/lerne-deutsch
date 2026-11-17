@@ -1,20 +1,30 @@
 {
-  "bundleHash": "dab85b8c680f6a999d113ecb41f0b1e557d39f4da99d12c5a33418f114e46e4c",
+  "bundleHash": "2247f46a9b6bd7622608ed80ce015aaf67754273bb5bfc8f872240a5390e9007",
   "findings": [
     {
-      "kind": "chiave di risposta",
-      "msg": "La risposta «Nach» è accettata, ma la traduzione richiede «Bei Bedarf»; anche la spiegazione riconosce che le espressioni hanno significati diversi. Rimuovere «Nach» oppure modificare il testo polacco e la consegna per ammettere entrambi i significati.",
-      "path": "merged.lessons[1].exercises[5].gaps[1]"
+      "kind": "pronuncia",
+      "msg": "L’accento di «Vorsitzende» cade su «sitz», non su «Vor». Correggere l’indicazione in polacco.",
+      "path": "merged.lessons[2].exercises[9].why"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "La regola secondo cui l’imiesłów stoi zawsze bezpośrednio przed rzeczownikiem è troppo assoluta: può essere coordinato o accompagnato da altri attributi, come in «die geprüften und genehmigten Unterlagen». Precisare che negli esempi presentati chiude il proprio gruppo attributivo davanti al sostantivo.",
+      "kind": "grammatica polacca",
+      "msg": "«Gdyby ... zostanie» combina in modo innaturale una condizione al condizionale con una principale al futuro. Per rendere il senso eventuale dell’originale usare, per esempio, «Jeśli kontrola potrwa dłużej, termin zostanie przesunięty». La stessa correzione serve nelle altre traduzioni e consegne che ripetono la costruzione.",
+      "path": "merged.lessons[2].grammar.examples[2].tr"
+    },
+    {
+      "kind": "grammatica polacca",
+      "msg": "La consegna «Gdyby komisja odrzuciła wniosek, termin zostanie przedłużony» combina una condizione al condizionale con una principale al futuro. Usare, per esempio, «Jeśli komisja odrzuci wniosek, termin zostanie przedłużony», oppure formulare coerentemente entrambe le proposizioni al condizionale e adeguare le risposte accettate.",
+      "path": "merged.lessons[2].exercises[8].q"
+    },
+    {
+      "kind": "progressione CEFR",
+      "msg": "La nota presenta il participio attributivo con «zu» come esclusivo del C2, affermazione troppo categorica per una costruzione pertinente anche a un percorso C1. Introdurla al C1 o indicare che sarà approfondita più avanti, senza attribuirla esclusivamente al C2. Correggere anche «merged.grammarNote».",
       "path": "merged.lessons[0].theory[1].p"
     },
     {
       "kind": "spiegazione grammaticale",
-      "msg": "Il criterio proposto per scegliere la nominalizzazione è incoerente: alla domanda se occorra conservare tempo o modo, una risposta affermativa favorisce il mantenimento della subordinata, non necessariamente la forma compatta. Riformulare le domande o la conclusione.",
-      "path": "merged.lessons[2].theory[1].p"
+      "msg": "«werden ... mitgeteilt» è qui presente della Vorgangspassiv; il riferimento futuro deriva dal contesto temporale, non dalla sola forma passiva con «werden». Distinguere questa costruzione dal futuro passivo «werden ... mitgeteilt werden».",
+      "path": "merged.test.exercises[9].why"
     }
   ],
   "lang": "pl",
