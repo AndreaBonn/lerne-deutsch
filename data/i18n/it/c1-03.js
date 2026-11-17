@@ -7,7 +7,7 @@
 LINGUAI.addStrings("it", {
   "unit:c1-u05": {
     title: "Finito il lavoro",
-    grammarNote: "Participio I e II come attributo (attributo ampliato con moderazione; il tipo completo e il Gerundivum sono del C2) · nominalizzazione al posto della subordinata (nach Abschluss, wegen, bei, trotz, zur, infolge) · casi in cui la subordinata deve restare (nessun nome adatto, più soggetti, sfumatura modale, leggibilità)"
+    grammarNote: "Participio I e II come attributo (attributo ampliato con moderazione; il tipo lungo e il Gerundivum si approfondiscono al C2) · nominalizzazione al posto della subordinata (nach Abschluss, wegen, bei, trotz, zur, infolge) · casi in cui la subordinata deve restare (nessun nome adatto, più soggetti, sfumatura modale, leggibilità)"
   },
   "lesson:c1-u05-l1": {
     theme: "Verbali, rapporti e testi accademici",
@@ -21,11 +21,11 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Il participio davanti al nome",
-        p: "Nei testi formali una relativa si comprime in un participio posto davanti al nome, che prende la desinenza di un aggettivo. Il <strong>participio I</strong> (infinito + <em>-d</em>) è attivo e contemporaneo: <em>die steigenden Kosten</em> = <em>die Kosten, die steigen</em>. Il <strong>participio II</strong> di un verbo transitivo è passivo e concluso: <em>die geprüften Unterlagen</em> = <em>die Unterlagen, die geprüft wurden</em>. Il participio II di un verbo intransitivo (con <em>sein</em>) è invece attivo e concluso: <em>die gestiegenen Kosten</em> = <em>die Kosten, die gestiegen sind</em>."
+        p: "Nei testi formali una relativa si comprime in un participio posto davanti al nome, che prende la desinenza di un aggettivo. Il <strong>participio I</strong> (infinito + <em>-d</em>) è attivo e contemporaneo: <em>die steigenden Kosten</em> = <em>die Kosten, die steigen</em>. Il <strong>participio II</strong> di un verbo transitivo è passivo e di solito concluso (ma in <em>die derzeit geprüften Unterlagen</em> la verifica è in corso): <em>die geprüften Unterlagen</em> = <em>die Unterlagen, die geprüft wurden</em>. Il participio II di un verbo intransitivo (con <em>sein</em>) è invece attivo e concluso: <em>die gestiegenen Kosten</em> = <em>die Kosten, die gestiegen sind</em>."
       },
       {
         h: "L'attributo ampliato, con moderazione",
-        p: "Tra l'articolo e il nome possono stare anche complementi, ma il participio resta sempre <strong>subito prima del nome</strong>: <em>die im letzten Quartal erzielten Umsätze</em>. Nei verbali e nei rapporti basta un complemento o due; oltre, il lettore perde il filo e la relativa è la scelta migliore. Il tipo con <em>zu</em> (<em>die zu prüfenden Unterlagen</em>) e le costruzioni più lunghe appartengono al C2."
+        p: "Tra l'articolo e il nome possono stare anche complementi, ma il participio resta sempre <strong>subito prima del nome</strong>: <em>die im letzten Quartal erzielten Umsätze</em>. Nei verbali e nei rapporti basta un complemento o due; oltre, il lettore perde il filo e la relativa è la scelta migliore. Il tipo con <em>zu</em> (<em>die zu prüfenden Unterlagen</em>) e le costruzioni più lunghe sono strutture avanzate, che il corso approfondisce al C2."
       },
       {
         contrast: "L'italiano mette il participio <strong>dopo</strong> il nome e il complemento lo segue: <em>i risultati ottenuti nel secondo trimestre</em>, <em>i dati raccolti dall'ufficio</em>. In tedesco tutto ciò che nell'italiano seguirebbe il participio passa <strong>davanti</strong> al nome, in mezzo fra articolo e participio: <em>die vom Amt erhobenen Daten</em>. Il participio presente italiano è raro (<em>le spese crescenti</em>, più spesso <em>in aumento</em>), mentre <em>steigend, laufend, vorliegend</em> sono ovunque nella lingua scritta."
@@ -39,12 +39,12 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Participio I e II come attributo",
-      note: "<b>Participio I</b> = infinito + <i>-d</i>: attivo, contemporaneo. <b>Participio II</b>: passivo e concluso (verbi transitivi), attivo e concluso (intransitivi con <i>sein</i>). Sempre davanti al nome, con la desinenza dell'aggettivo; i complementi vanno tra articolo e participio.",
+      note: "<b>Participio I</b> = infinito + <i>-d</i>: attivo, contemporaneo. <b>Participio II</b>: passivo e di solito concluso (verbi transitivi; il valore temporale dipende dal verbo e dal contesto), attivo e concluso (intransitivi con <i>sein</i>). Sempre davanti al nome, con la desinenza dell'aggettivo; i complementi vanno tra articolo e participio.",
       table: {
         head: ["participio", "senso", "relativa corrispondente", "esempio"],
         rows: [
           ["participio I", "attivo, contemporaneo", "die Kosten, die steigen", "die steigenden Kosten"],
-          ["participio II (transitivo)", "passivo, concluso", "die Unterlagen, die geprüft wurden", "die geprüften Unterlagen"],
+          ["participio II (transitivo)", "passivo, di solito concluso", "die Unterlagen, die geprüft wurden", "die geprüften Unterlagen"],
           ["participio II (intransitivo)", "attivo, concluso", "die Kosten, die gestiegen sind", "die gestiegenen Kosten"],
           ["attributo ampliato", "complemento davanti al participio", "die Umsätze, die im Quartal erzielt wurden", "die im Quartal erzielten Umsätze"]
         ]
@@ -163,7 +163,7 @@ LINGUAI.addStrings("it", {
         p: "Il gruppo nominale è compatto ma più povero: scompaiono il tempo verbale, il modo e spesso chi agisce. <em>Nach Abschluss der Prüfung</em> non dice chi ha concluso né se si parla del passato o del futuro, lo deduci dal contesto. Per questo funziona bene quando soggetto e tempo sono ovvi, e male quando non lo sono (vedi la lezione 3)."
       },
       {
-        contrast: "Anche l'italiano nominalizza (<em>a seguito della conclusione dei lavori</em>, <em>in caso di necessità</em>, <em>per il chiarimento di questioni aperte</em>), ma può usare l'infinito o il gerundio (<em>dopo aver concluso</em>), che in tedesco non esistono. In tedesco ciò che segue il nome è un <strong>genitivo senza preposizione</strong> (<em>die Klärung offener Fragen</em>) e le preposizioni di causa e concessione reggono il genitivo, con le desinenze che ne derivano: <em>offener Fragen</em> senza articolo, <em>der gestiegenen Preise</em> con l'articolo."
+        contrast: "Anche l'italiano nominalizza (<em>a seguito della conclusione dei lavori</em>, <em>in caso di necessità</em>, <em>per il chiarimento di questioni aperte</em>), ma può usare anche l'infinito passato (<em>dopo aver concluso</em>), che il tedesco rende di solito con una subordinata (<em>nachdem er die Arbeit abgeschlossen hat</em>) o con un nome (<em>nach Abschluss der Arbeit</em>). In tedesco ciò che segue il nome è un <strong>genitivo senza preposizione</strong> (<em>die Klärung offener Fragen</em>) e le preposizioni di causa e concessione reggono il genitivo, con le desinenze che ne derivano: <em>offener Fragen</em> senza articolo, <em>der gestiegenen Preise</em> con l'articolo."
       },
       {
         trap: "Una preposizione sbagliata cambia il rapporto logico: <em>Nach mehrfacher Mahnung blieb die Zahlung aus</em> dice che il pagamento manca <em>dopo</em> i solleciti, mentre <em>Trotz mehrfacher Mahnung</em> dice che manca <em>nonostante</em> i solleciti. Attenzione anche ai casi: <em>infolge</em> e <em>trotz</em> vogliono il genitivo (<em>Infolge der gestiegenen Preise</em>), non il dativo."
@@ -298,10 +298,10 @@ LINGUAI.addStrings("it", {
         p: "Prima di nominalizzare fai quattro domande. Chi agisce, e il nome lo dice? Esiste un nome naturale (<em>Abschluss, Klärung</em>)? Devo mantenere un tempo o un modo? Il lettore ci arriva alla prima lettura? Se rispondi sì a tutte, la forma compatta funziona (<em>Nach Abschluss der Prüfung ...</em>), altrimenti la subordinata è più chiara, e nei testi destinati a un pubblico non specialistico lo è quasi sempre."
       },
       {
-        contrast: "L'italiano ha strumenti compatti che il tedesco non ha: <em>dopo aver concluso</em>, <em>a lavori ultimati</em>, <em>qualora la verifica dovesse durare di più</em>. In tedesco il gerundio manca e l'infinito con <em>ohne zu</em> o <em>um ... zu</em> richiede lo stesso soggetto: quando i soggetti sono due serve una subordinata con <em>dass</em> o <em>weil</em>. La sfumatura di <em>qualora ... dovesse</em> si rende con <em>Sollte die Prüfung länger dauern, ...</em> o <em>falls ... ändern sollten</em>."
+        contrast: "L'italiano ha strumenti compatti come <em>dopo aver concluso</em> o <em>a lavori ultimati</em>; il tedesco li rende con una subordinata (<em>nachdem ...</em>) o con un nome (<em>nach Abschluss der Arbeiten</em>), ma non ha il gerundio. Con <em>ohne zu</em> e <em>um ... zu</em> il soggetto dell'infinito di norma è quello della principale: quando i soggetti sono due serve una subordinata con <em>ohne dass</em> o <em>damit</em>. La sfumatura di <em>qualora ... dovesse</em> si rende con <em>Sollte die Prüfung länger dauern, ...</em> o <em>falls ... ändern sollten</em>."
       },
       {
-        trap: "Non nominalizzare tutto solo perché «suona formale»: il risultato è un tedesco da ufficio difficile da leggere, e un nome come <em>seitens der Teilnehmenden</em> nasconde il soggetto. E <em>sollte</em> in prima posizione non è «dovrebbe» di obbligo: <em>Sollte die Prüfung länger dauern</em> significa «se mai la verifica dovesse durare di più», una condizione poco probabile."
+        trap: "Non nominalizzare tutto solo perché «suona formale»: il risultato è un tedesco da ufficio difficile da leggere, e un nome come <em>seitens der Teilnehmenden</em> nasconde il soggetto. E <em>sollte</em> in prima posizione non è «dovrebbe» di obbligo: <em>Sollte die Prüfung länger dauern</em> significa «se mai la verifica dovesse durare di più», una condizione ipotetica."
       },
       {
         tip: "Leggi la frase ad alta voce. Se in mezzo a un gruppo nominale devi riprendere fiato, perché ci sono due genitivi e un <em>durch</em>, spezzala in una subordinata."
@@ -323,9 +323,9 @@ LINGUAI.addStrings("it", {
       examples: [
         { tr: "La seduta è stata rinviata perché il presidente era malato e la relatrice era bloccata all'estero.", note: "due soggetti: la forma nominale nasconderebbe uno dei due" },
         { tr: "Il contratto sarà firmato solo quando il consiglio avrà approvato e il finanziamento sarà assicurato.", note: "due condizioni con verbi diversi: subordinata" },
-        { tr: "Se la verifica dovesse durare più a lungo, la data sarà rinviata.", note: "Sollte in prima posizione: eventualità poco probabile" },
+        { tr: "Se la verifica dovesse durare più a lungo, la data sarà rinviata.", note: "Sollte in prima posizione: condizione ipotetica, «se mai dovesse»" },
         { tr: "Il finanziamento decade se le condizioni quadro dovessero cambiare.", note: "falls ... ändern sollten: sfumatura modale" },
-        { tr: "I risultati sono significativi solo se il campione è rappresentativo.", note: "nur dann ..., wenn: condizione necessaria, non rendibile con bei" },
+        { tr: "I risultati sono significativi solo se il campione è rappresentativo.", note: "nur dann ..., wenn: condizione necessaria, esplicita (con un nome: nur bei ...)" },
         { tr: "La valutazione è iniziata dopo che i partecipanti avevano compilato il questionario.", note: "subordinata temporale al trapassato: più leggibile di una catena di genitivi" }
       ]
     },
@@ -356,7 +356,7 @@ LINGUAI.addStrings("it", {
       {
         q: "«Sollte die Prüfung länger dauern, wird der Termin verschoben.» Che cosa si perde con la versione nominale «Bei längerer Dauer der Prüfung wird der Termin verschoben»?",
         opts: [
-          "la sfumatura di eventualità poco probabile espressa da sollte",
+          "la sfumatura ipotetica di sollte («se mai dovesse»)",
           "il valore condizionale della frase",
           "il soggetto, perché Prüfung sparisce"
         ],
@@ -374,12 +374,12 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa: «Die Ergebnisse sind nur dann aussagekräftig, ___ die Stichprobe repräsentativ ist.»",
         hint: "congiunzione condizionale",
-        why: "<b>wenn</b>: <i>nur dann ..., wenn</i> esprime una condizione necessaria. Con un gruppo nominale (<i>bei repräsentativer Stichprobe</i>) la forza di <i>nur dann</i> si perde."
+        why: "<b>wenn</b>: <i>nur dann ..., wenn</i> esprime una condizione necessaria. Si può dire anche con un nome (<i>nur bei repräsentativer Stichprobe</i>), ma con la subordinata la condizione resta più esplicita."
       },
       {
         q: "Completa con il verbo modale: «Falls sich die Rahmenbedingungen ändern ___, entfällt die Förderung.»",
         hint: "Konjunktiv II di un modale: eventualità poco probabile",
-        why: "<b>sollten</b>: <i>falls ... sollten</i> segnala un'eventualità remota, la sfumatura che in forma nominale non si può rendere."
+        why: "<b>sollten</b>: <i>falls ... sollten</i> presenta il caso come ipotesi («se mai dovessero»), sfumatura che in forma nominale si perde."
       },
       {
         q: "Completa le due condizioni di un contratto.",
@@ -487,7 +487,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa il comunicato con il participio II e la preposizione.",
         tr: "La informeremo in tempo. Le misure pianificate da noi diventeranno efficaci solo dopo la conclusione della verifica.",
-        why: "<i>geplanten</i> (o <i>vorgesehenen</i>): participio II passivo con <b>-en</b>. <i>nach</i> o <i>mit Abschluss der Prüfung</i>: tempo con <i>nach</i> + dativo, oppure «con la conclusione»."
+        why: "<i>geplanten</i> (o <i>vorgesehenen</i>): participio II passivo con <b>-en</b>. <i>nach Abschluss der Prüfung</i>: tempo con <i>nach</i> + dativo, «dopo la conclusione»."
       },
       {
         q: "Traduci: «Le decisioni prese nella riunione saranno comunicate dopo la conclusione della verifica.» (die Sitzung, die Entscheidung, mitteilen, der Abschluss, die Prüfung)",

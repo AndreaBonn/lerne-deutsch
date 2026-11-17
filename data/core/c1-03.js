@@ -231,7 +231,7 @@ LINGUAI.addUnits("C1", [
         {
           t: "cloze",
           text: "Wir werden Sie rechtzeitig informieren. Die von uns {{1}} Maßnahmen werden erst {{2}} Abschluss der Prüfung wirksam.",
-          gaps: [["geplanten", "vorgesehenen"], ["nach", "mit"]]
+          gaps: [["geplanten", "vorgesehenen"], ["nach"]]
         },
         {
           t: "trans",

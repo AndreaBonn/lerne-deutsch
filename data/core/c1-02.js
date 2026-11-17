@@ -195,7 +195,7 @@ LINGUAI.addUnits("C1", [
             t: "cloze",
             text: "Wo bleibt Jonas? - Er wird {{1}} im Stau stehen. - Hat er {{2}} schon wieder den Bus verpasst? - Du kennst ihn {{3}}: Da kann man {{4}} nichts machen.",
             gaps: [
-              ["wohl", "wahrscheinlich", "vermutlich", "bestimmt", "sicher"],
+              ["wohl", "wahrscheinlich", "vermutlich"],
               ["etwa", "denn"],
               ["ja", "doch"],
               ["halt", "eben"]
