@@ -1726,5 +1726,602 @@ LINGUAI.addStrings("pl", {
         why: "W <i>Mietvertrag</i> <b>ie</b> jest długie [iː], a <b>v</b> to [f]; w <i>unterschrieben</i> <b>sch</b> to [ʃ]; w <i>überwiesen</i> <b>ü</b> jest zaokrąglone."
       }
     ]
+  },
+  "unit:b1-u04": {
+    title: "Opinie i media",
+    grammarNote: "dass w mowie zależnej · Präteritum i Plusquamperfekt w tekstach pisanych · nachdem i bevor · zwar ... aber, sowohl ... als auch · odmiana przymiotnika"
+  },
+  "lesson:b1-u04-l1": {
+    theme: "Relacjonowanie",
+    title: "Powiedziała, że ...",
+    objectives: [
+      "przekazywać, co ktoś powiedział, w zdaniu podrzędnym z dass",
+      "dopasowywać zaimki do punktu widzenia osoby, która relacjonuje",
+      "przekazywać pytanie za pomocą ob albo słowa pytającego",
+      "używać czasowników mówienia w Perfekt: gesagt, erzählt, berichtet, behauptet"
+    ],
+    theory: [
+      {
+        h: "Mowa zależna z dass",
+        p: "Żeby przekazać, co ktoś powiedział, używa się czasownika mówienia (<em>sagen, erzählen, berichten, behaupten, meinen</em>) i zdania podrzędnego z <strong>dass</strong>. Odmieniony czasownik idzie <strong>na koniec</strong>, a przed <em>dass</em> zawsze stoi przecinek: <em>Anna hat gesagt, dass sie keine Zeit hat.</em> Gdy opowiadasz coś ustnie, czasownik mówienia stoi zwykle w Perfekt (<em>hat gesagt, hat erzählt</em>)."
+      },
+      {
+        h: "Zaimki zmieniają się z punktem widzenia",
+        p: "Kto relacjonuje, mówi z innego punktu widzenia, więc osoby się zmieniają. Anna mówi <em>„Ich habe keine Zeit”</em>, a ty przekazujesz <em>Anna hat gesagt, dass <strong>sie</strong> keine Zeit hat.</em> Jeśli ktoś mówi do ciebie <em>„Ich helfe dir”</em>, przekazujesz <em>Er hat gesagt, dass er <strong>mir</strong> hilft.</em> Podmiot musi być zawsze wyrażony: po niemiecku nie można go pominąć."
+      },
+      {
+        h: "Przekazane pytania i prośby",
+        p: "Pytanie rozstrzygające (tak albo nie) staje się zdaniem podrzędnym z <strong>ob</strong>, pytanie ze słowem pytającym zachowuje to słowo, a czasownik w obu przypadkach idzie na koniec: <em>Sie hat gefragt, ob ich mitkomme. Er hat gefragt, wann der Zug kommt.</em> Prośbę przekazuje się zwykle z <em>sollen</em>: <em>Sie hat gesagt, dass ich bald kommen soll.</em>"
+      },
+      {
+        h: "Bez dass",
+        p: "Po <em>sagen, meinen, glauben</em> można też pominąć <em>dass</em>: wtedy czasownik zostaje na <strong>drugim miejscu</strong>, jak w zwykłym zdaniu. <em>Sie hat gesagt, sie hat keine Zeit.</em> jest poprawne, ale bardziej potoczne; z <em>dass</em> odmieniony czasownik idzie na koniec: <em>..., dass sie keine Zeit hat.</em>"
+      },
+      {
+        contrast: "Po polsku czas w mowie zależnej się nie przesuwa: <em>Anna powiedziała, że nie ma czasu.</em> W zdaniu z <em>dass</em> niemiecki zwykle robi tak samo, więc tu polski nawyk pomaga: <em>Anna hat gesagt, dass sie keine Zeit hat.</em> Różnice są trzy. Po pierwsze podmiot: po polsku można go pominąć (<em>powiedziała, że nie ma czasu</em>), po niemiecku musi być wyrażony (<em>dass <strong>sie</strong> keine Zeit hat</em>). Po drugie szyk: po polskim <em>że</em> jest swobodny, a po <em>dass</em> odmieniony czasownik stoi <strong>na końcu</strong>. Po trzecie prośba: polskie <em>żeby</em> z formą przeszłą (<em>powiedziała, żebym przyszedł</em> albo <em>przyszła</em>) to po niemiecku <em>dass</em> + <em>sollen</em>: <em>Sie hat gesagt, dass ich kommen soll.</em> Polskie <em>czy</em> w przekazanym pytaniu to <em>ob</em>."
+      },
+      {
+        trap: "<em>dass</em> z dwoma <em>s</em> to spójnik, polskie <em>że</em>; <em>das</em> z jednym <em>s</em> to rodzajnik albo zaimek (<em>das Buch, das ich lese</em>, czyli <em>książka, którą czytam</em>). Po <em>dass</em> odmieniony czasownik stoi na końcu: <em>dass sie keine Zeit hat</em>, a nie <s>dass sie hat keine Zeit</s>, choć polski szyk jest swobodniejszy i zależy od kontekstu oraz akcentu (<em>że ona czasu nie ma</em>, <em>że nie ma czasu</em>). Czasownik na drugim miejscu należy wyłącznie do wersji bez <em>dass</em>."
+      },
+      {
+        tip: "Trzy kroki: 1) wybierz czasownik mówienia w Perfekt; 2) dodaj przecinek i <em>dass</em> (albo <em>ob</em> przy pytaniu rozstrzygającym); 3) przepisz zdanie z właściwymi osobami i czasownikiem na końcu."
+      }
+    ],
+    grammar: {
+      title: "Od mowy niezależnej do zależnej",
+      note: "czasownik mówienia w Perfekt + <b>dass</b> (stwierdzenie) albo <b>ob</b> (pytanie rozstrzygające) + odmieniony czasownik <b>na końcu</b>; zaimki dopasowuje się do osoby, która relacjonuje.",
+      table: {
+        head: ["mowa niezależna", "mowa zależna"],
+        rows: [
+          ["Anna: «Ich habe keine Zeit.»", "Anna hat gesagt, dass sie keine Zeit hat."],
+          ["Tom: «Ich komme morgen.»", "Tom hat erzählt, dass er morgen kommt."],
+          ["Anna und Tom: «Wir ziehen um.»", "Anna und Tom haben erzählt, dass sie umziehen."],
+          ["Er: «Kommst du mit?»", "Er hat gefragt, ob ich mitkomme."],
+          ["Sie: «Wann kommt der Zug?»", "Sie hat gefragt, wann der Zug kommt."]
+        ]
+      },
+      examples: [
+        { tr: "Anna powiedziała, że nie ma czasu.", note: "ich zmienia się w sie; czasownik na końcu" },
+        { tr: "Tom opowiada, że jutro przyjdzie.", note: "Präsens z morgen wyraża przyszłość; w mowie zależnej nie trzeba automatycznie zmieniać czasu" },
+        { tr: "Komunikat mówi, że ceny rosną.", note: "także tekst może „mówić”" },
+        { tr: "Zapytała, czy pójdę z nią.", note: "pytanie rozstrzygające: ob" },
+        { tr: "Twierdził, że nic nie widział.", note: "behaupten + dass; Perfekt w zdaniu podrzędnym" },
+        { tr: "Powiedziała, żebym niedługo przyszedł.", note: "prośba przekazana z sollen; po polsku żeby" }
+      ]
+    },
+    vocab: [
+      "wiadomość",
+      "krótka wiadomość, komunikat",
+      "twierdzenie, teza",
+      "wypowiedź, zeznanie",
+      "sprawozdanie, relacja",
+      "plotka, pogłoska",
+      "odpowiedź",
+      "pytanie",
+      "opowiadać",
+      "twierdzić",
+      "relacjonować, donosić",
+      "odpowiadać"
+    ],
+    exercises: [
+      {
+        q: "Anna mówi: „Ich habe keine Zeit.” Jak to przekażesz?",
+        opts: [
+          "Anna sagt, dass sie keine Zeit hat.",
+          "Anna sagt, dass ich keine Zeit habe.",
+          "Anna sagt, dass sie hat keine Zeit."
+        ],
+        why: "<b>Sie</b> zamiast <i>ich</i>, a czasownik <i>hat</i> na końcu zdania podrzędnego. <i>Ich</i> oznaczałoby osobę, która relacjonuje, a nie Annę."
+      },
+      {
+        q: "Uzupełnij: „Tom hat gesagt, ___ er morgen kommt.”",
+        hint: "spójnik, stwierdzenie",
+        why: "<b>Dass</b>: wprowadza przekazane stwierdzenie i odsyła czasownik na koniec."
+      },
+      {
+        q: "Uzupełnij: „Sie fragt, ___ du mitkommst.”",
+        hint: "przekazane pytanie rozstrzygające",
+        why: "<b>Ob</b>: pierwotne pytanie brzmiało „Kommst du mit?”, odpowiedź to tak albo nie."
+      },
+      {
+        q: "Paul mówi: „Ich bin müde.” Uzupełnij: „Paul sagt, dass ___ müde ist.”",
+        hint: "zaimek, 3. osoba rodzaju męskiego",
+        why: "<b>Er</b>: Paul jest mężczyzną, a osoba, która relacjonuje, nie mówi <i>ich</i>."
+      },
+      {
+        q: "Uzupełnij: „Sie hat mir alles ___.”",
+        hint: "erzählen, Partizip II",
+        why: "<b>Erzählt</b>: <i>hat erzählt</i>, Perfekt od <i>erzählen</i>. Partizip II czasowników słabych to <i>ge-</i> + rdzeń + <i>-t</i>, ale <i>erzählen</i> zaczyna się od <i>er-</i> i nie dostaje <i>ge-</i>."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Komunikat mówi, że ceny rosną.",
+        why: "<i>Die Meldung sagt, dass die Preise steigen.</i> Po <i>dass</i> czasownik <i>steigen</i> idzie na koniec."
+      },
+      {
+        q: "Dopasuj każde zdanie do jego znaczenia.",
+        pairs: [
+          "Twierdzi, że jest niewinny.",
+          "Zapytała, czy przyjdę.",
+          "Komunikat mówi, że pada śnieg.",
+          "Tom opowiada, że się przeprowadza."
+        ]
+      },
+      {
+        q: "Przetłumacz: „Anna powiedziała, że nie ma czasu.”",
+        why: "<i>Anna hat gesagt, dass sie keine Zeit hat.</i> Po <i>hat gesagt</i> niemiecki, tak jak polski, nie wymaga automatycznego przesunięcia czasu: <i>hat</i> powtarza czas z wypowiedzi Anny. Dobra jest też wersja bez <i>dass</i>, z czasownikiem na drugim miejscu: <i>Anna hat gesagt, sie hat keine Zeit.</i>"
+      },
+      {
+        tr: "Słyszałeś już tę wiadomość? Anna opowiedziała, że się przeprowadza. Powiedziała, że mieszkanie jest bardzo duże, i zapytała, czy jej pomożemy.",
+        why: "W <i>Nachricht</i> pierwsze <b>ch</b> to [x] (po <i>a</i>), a drugie [ç] (po <i>i</i>); w <i>umzieht</i> <b>z</b> to [ts], a <b>ie</b> jest długie [iː]; w <i>sehr</i> <b>e</b> jest długie."
+      },
+      {
+        tr: "Mój kolega opowiedział, że przyjdzie jutro rano.",
+        why: "W <i>früh</i> <b>ü</b> jest zaokrąglone i długie; w <i>kommt</i> <b>o</b> jest krótkie; w <i>dass</i> <b>a</b> jest krótkie, a <b>ss</b> to [s]."
+      }
+    ]
+  },
+  "lesson:b1-u04-l2": {
+    theme: "Prasa",
+    title: "Czytanie artykułu",
+    objectives: [
+      "rozpoznawać i stosować Präteritum czasowników słabych, mocnych i mieszanych w tekstach pisanych",
+      "tworzyć Plusquamperfekt z hatte albo war i Partizip II",
+      "używać nachdem z Plusquamperfekt oraz bevor",
+      "rozumieć, jak tekst prasowy porządkuje zdarzenia w czasie"
+    ],
+    theory: [
+      {
+        h: "Präteritum w piśmie",
+        p: "W tekstach pisanych, które opowiadają o przeszłości (artykuły, sprawozdania, powieści), czasem narracji jest zwykle <strong>Präteritum</strong>; w rozmowie częściej używa się Perfekt. Czasowniki <strong>słabe</strong> dostają <em>-te</em> (<em>meldete, machte</em>), <strong>mocne</strong> zmieniają samogłoskę rdzenia (<em>schrieb, ging, las</em>) i nie mają końcówki w 1. i 3. osobie liczby pojedynczej. Czasowniki <strong>mieszane</strong> (<em>dachte, brachte</em>) zmieniają rdzeń, ale dostają końcówki słabe. W mowie <em>sein, haben</em> i czasowniki modalne są bardzo częste w Präteritum (<em>war, hatte, konnte</em>)."
+      },
+      {
+        h: "Plusquamperfekt: przed innym zdarzeniem z przeszłości",
+        p: "Tworzy się go z czasownikiem posiłkowym w Präteritum, <strong>hatte</strong> albo <strong>war</strong>, i Partizip II na końcu: <em>Er hatte lange recherchiert. Der Zug war schon abgefahren.</em> Czasownik posiłkowy jest ten sam co w Perfekt (<em>haben</em> albo <em>sein</em>). Mówi, że zdarzenie nastąpiło <strong>przed</strong> innym: <em>Die Nachricht stand in der Zeitung, aber niemand hatte sie gelesen.</em>"
+      },
+      {
+        h: "nachdem i bevor",
+        p: "<strong>nachdem</strong> (po tym, jak) wprowadza zdanie podrzędne z czasownikiem na końcu i, jeśli zdanie główne jest w Präteritum, z <strong>Plusquamperfekt</strong>: <em>Nachdem der Minister gesprochen hatte, gingen die Gäste nach Hause.</em> <strong>bevor</strong> (zanim) ma zwykle ten sam czas co zdanie główne: <em>Bevor die Zeitung den Artikel veröffentlichte, prüfte die Redaktion die Quelle.</em> Gdy zdanie podrzędne stoi na początku, zdanie główne zaczyna się od odmienionego czasownika."
+      },
+      {
+        contrast: "Polski ma w praktyce jeden czas przeszły, a kolejność zdarzeń oddają aspekt i kontekst: <em>Kiedy przyszła, pociąg już odjechał.</em> Czas zaprzeszły (<em>był odjechał</em>) jest dziś książkowy i rzadki. Po niemiecku w opowiadaniu o przeszłości wcześniejsze zdarzenie zwykle oznacza się Plusquamperfekt, zwłaszcza po <em>nachdem</em>: <em>Der Zug <strong>war</strong> schon <strong>abgefahren</strong>.</em> (gdy kolejność jasno wynika z kontekstu, Niemcy czasem go pomijają). Präteritum i Perfekt nie różnią się aspektem: <em>schrieb</em> może znaczyć i <em>pisał</em>, i <em>napisał</em>; różnica dotyczy rejestru, pisma albo mowy. <em>Po tym, jak</em> to <em>nachdem</em>, a <em>zanim</em> to <em>bevor</em>, ale polskie skróty bez podmiotu (<em>przeczytawszy artykuł</em>, <em>przed opublikowaniem</em>) w tej lekcji oddajemy po niemiecku <strong>zdaniem z własnym podmiotem</strong> i odmienionym czasownikiem (istnieją też formy rzeczownikowe, np. <em>vor der Veröffentlichung</em>): <em>Nachdem er den Artikel gelesen hatte, ...; Bevor die Zeitung den Artikel veröffentlichte, ...</em>"
+      },
+      {
+        trap: "Nie myl <em>nachdem</em> z <em>nach</em>. <em>nach</em> to przyimek z celownikiem (<em>nach dem Essen</em>, <em>po obiedzie</em>), a <em>nachdem</em> wprowadza zdanie z czasownikiem na końcu (<em>po tym, jak</em>): ta sama różnica co między polskim <em>po</em> a <em>po tym, jak</em>. W zdaniu z <em>nachdem</em> oba czasowniki stoją razem na końcu, a posiłkowy jest ostatni: <em>..., nachdem er gesprochen hatte</em>."
+      },
+      {
+        tip: "Kiedy czytasz artykuł, najpierw szukaj czasowników w Präteritum: to one niosą opowieść. Czasowniki w Plusquamperfekt (<em>hatte ... gesagt, war ... gekommen</em>) pokazują to, co wydarzyło się <em>wcześniej</em>. Z trzema formami podstawowymi (bezokolicznik, Präteritum, Partizip II) przeczytasz większość artykułów."
+      }
+    ],
+    grammar: {
+      title: "Präteritum i Plusquamperfekt",
+      note: "<b>Präteritum</b> dla samej opowieści (<b>schrieb, ging, meldete</b>), <b>Plusquamperfekt</b> dla tego, co stało się wcześniej (<b>hatte geschrieben, war gegangen</b>); <b>nachdem</b> + Plusquamperfekt, <b>bevor</b>: często ten sam czas co w zdaniu głównym; Plusquamperfekt w zdaniu głównym też jest możliwy, gdy chcesz podkreślić uprzedniość.",
+      table: {
+        head: ["bezokolicznik", "Präteritum (er/sie)", "Partizip II"],
+        rows: [
+          ["schreiben", "schrieb", "geschrieben"],
+          ["lesen", "las", "gelesen"],
+          ["gehen", "ging", "gegangen"],
+          ["sprechen", "sprach", "gesprochen"],
+          ["erscheinen", "erschien", "erschienen"],
+          ["melden", "meldete", "gemeldet"],
+          ["denken", "dachte", "gedacht"],
+          ["bringen", "brachte", "gebracht"]
+        ]
+      },
+      examples: [
+        { tr: "Dziennikarz napisał artykuł wieczorem.", note: "Präteritum czasownika mocnego: schrieb" },
+        { tr: "Gazeta ukazywała się każdego ranka.", note: "erscheinen: erschien" },
+        { tr: "Po tym, jak minister przemówił, goście poszli do domu.", note: "nachdem + Plusquamperfekt" },
+        { tr: "Zanim gazeta opublikowała artykuł, redakcja sprawdziła źródło.", note: "bevor + Präteritum" },
+        { tr: "Długo zbierał materiały, zanim zaczął pisać.", note: "Plusquamperfekt: hatte recherchiert" },
+        { tr: "Wiadomość była w gazecie, ale nikt jej nie przeczytał.", note: "hatte ... gelesen: przed opisywaną sceną" }
+      ]
+    },
+    vocab: [
+      "artykuł",
+      "gazeta",
+      "tytuł na pierwszej stronie, nagłówek prasowy",
+      "tytuł (tekstu)",
+      "dziennikarz",
+      "źródło",
+      "czytelnik",
+      "redakcja",
+      "publikować",
+      "ukazywać się (o gazecie, książce)",
+      "zbierać materiały, badać temat",
+      "informować, podawać (wiadomość)"
+    ],
+    exercises: [
+      {
+        q: "Wybierz właściwą formę: „Der Journalist ___ den Artikel am Abend.”",
+        opts: ["schrieb", "schreibte", "geschrieben"],
+        why: "<b>Schrieb</b>: <i>schreiben</i> to czasownik mocny, w Präteritum zmienia samogłoskę. <i>Schreibte</i> nie istnieje; <i>geschrieben</i> to Partizip II i wymaga czasownika posiłkowego."
+      },
+      {
+        q: "Wybierz czasownik posiłkowy: „Nachdem die Redaktion die Quelle geprüft ___, veröffentlichte sie den Artikel.”",
+        opts: ["hatte", "wurde", "war"],
+        why: "<b>Hatte</b>: <i>prüfen</i> łączy się z <i>haben</i>, a po <i>nachdem</i> stoi Plusquamperfekt, bo zdanie główne jest w Präteritum."
+      },
+      {
+        q: "Które zdanie ma właściwy szyk?",
+        opts: [
+          "Nachdem er den Artikel gelesen hatte, rief er die Redaktion an.",
+          "Nachdem er hatte den Artikel gelesen, rief er die Redaktion an.",
+          "Nachdem er den Artikel gelesen hatte, er rief die Redaktion an."
+        ],
+        why: "W zdaniu podrzędnym Partizip II i czasownik posiłkowy stoją na końcu (<i>gelesen hatte</i>); potem zdanie główne zaczyna się od odmienionego czasownika (<i>rief er</i>)."
+      },
+      {
+        q: "Uzupełnij: „Die Zeitung ___ jeden Morgen.”",
+        hint: "erscheinen, Präteritum, 3. osoba",
+        why: "<b>Erschien</b>: czasownik mocny, w Präteritum zmienia samogłoskę rdzenia."
+      },
+      {
+        q: "Uzupełnij: „Bevor er den Artikel ___, recherchierte er lange.”",
+        hint: "schreiben, Präteritum, 3. osoba",
+        why: "<b>Schrieb</b>: <i>bevor</i> ma tu ten sam czas co zdanie główne (często tak jest; Plusquamperfekt w zdaniu głównym podkreśliłby uprzedniość), a czasownik mocny nie ma końcówki."
+      },
+      {
+        q: "Uzupełnij zdanie.",
+        tr: "Po tym, jak minister przemówił, goście poszli do domu.",
+        why: "<i>Nachdem der Minister gesprochen hatte, gingen die Gäste nach Hause.</i> Partizip II <i>gesprochen</i> i czasownik posiłkowy <i>hatte</i> na końcu."
+      },
+      {
+        q: "Dopasuj każde zdanie do jego znaczenia.",
+        pairs: [
+          "Czytała gazetę.",
+          "Napisał sprawozdanie.",
+          "Artykuł ukazał się wczoraj.",
+          "Redakcja sprawdziła źródło."
+        ]
+      },
+      {
+        q: "Przetłumacz: „Dziennikarz napisał artykuł wczoraj wieczorem.”",
+        why: "<i>Der Journalist schrieb den Artikel gestern Abend.</i> W mowie mówi się też <i>hat ... geschrieben</i>, a zdanie może zaczynać się od <i>Gestern Abend</i>."
+      },
+      {
+        tr: "Gazeta opublikowała artykuł w poniedziałek. Po tym, jak redakcja sprawdziła źródło, dziennikarz napisał tytuł. Wielu czytelników przeczytało artykuł już rano.",
+        why: "W <i>veröffentlichte</i> <b>v</b> to [f], a <b>ö</b> jest zaokrąglone; w <i>Quelle</i> <b>qu</b> to [kv]; w <i>Überschrift</i> <b>sch</b> to [ʃ]; w <i>Leser</i> <b>s</b> między samogłoskami jest dźwięczne [z]."
+      },
+      {
+        tr: "Po tym, jak dziennikarz napisał sprawozdanie, poszedł do domu.",
+        why: "W <i>Journalist</i> początkowe <b>J</b> to [ʒ], jak we francuskim <i>jour</i>; w <i>Bericht</i> <b>ch</b> to [ç]; w <i>geschrieben</i> <b>sch</b> to [ʃ]; w <i>Hause</i> <b>au</b> to [aʊ]."
+      }
+    ]
+  },
+  "lesson:b1-u04-l3": {
+    theme: "Radio i podcasty",
+    title: "zwar ... aber, sowohl ... als auch",
+    objectives: [
+      "przyznawać coś, a potem się temu przeciwstawiać za pomocą zwar ... aber",
+      "łączyć dwa elementy za pomocą sowohl ... als auch",
+      "zachowywać szyk zdania po aber",
+      "rozmawiać o radiu, audycjach i podcastach"
+    ],
+    theory: [
+      {
+        h: "zwar ... aber: co prawda ..., ale",
+        p: "<strong>zwar</strong> przyznaje fakt, a <strong>aber</strong> wprowadza przeciwieństwo: <em>Die Sendung ist zwar lang, aber sie ist interessant.</em> <em>Zwar</em> stoi zwykle po czasowniku, ale może też otwierać zdanie: <em>Zwar ist die Sendung lang, aber sie ist interessant.</em> <em>Aber</em> stoi w pozycji zerowej: czasownik drugiego zdania zostaje na swoim zwykłym miejscu, na drugiej pozycji, po podmiocie."
+      },
+      {
+        h: "sowohl ... als auch: zarówno ..., jak i",
+        p: "<strong>sowohl ... als auch</strong> łączy dwa elementy tego samego rodzaju: <em>Der Sender bringt sowohl Nachrichten als auch Musik.</em> Mogą to być dwa podmioty, dwa dopełnienia, dwa okoliczniki. Przy dwóch podmiotach czasownik stoi w liczbie mnogiej: <em>Sowohl Anna als auch Tom hören den Podcast.</em> Zwykle między oboma elementami nie ma przecinka."
+      },
+      {
+        h: "Jeszcze jedna para: weder ... noch",
+        p: "Żeby zaprzeczyć dwóm elementom, używa się <strong>weder ... noch</strong> (ani ... ani): <em>Ich habe weder Zeit noch Lust.</em> Para już zaprzecza, więc nie dodaje się <em>nicht</em> ani <em>kein</em>."
+      },
+      {
+        contrast: "<em>zwar ... aber</em> to polskie <em>co prawda ... ale</em> albo <em>wprawdzie ... ale</em>; po niemiecku ta para jest dużo częstsza niż po polsku. <em>sowohl ... als auch</em> odpowiada polskiemu <em>zarówno ... jak i</em>, ale interpunkcja jest inna: po polsku przed <em>jak i</em> stawia się przecinek (<em>Słucham zarówno radia, jak i podcastów</em>), po niemiecku przecinka nie ma: <em>Ich höre sowohl Radio als auch Podcasts.</em> Podobnie <em>weder ... noch</em>: po polsku <em>ani ... ani</em> wymaga <em>nie</em> przy czasowniku i przecinka przed drugim <em>ani</em> (<em>Nie mam ani czasu, ani ochoty</em>), po niemiecku nie ma ani <em>nicht</em>, ani przecinka: <em>Ich habe weder Zeit noch Lust.</em>"
+      },
+      {
+        trap: "Po polskim <em>ale</em> szyk jest swobodny, a niemieckie <em>aber</em> nie zmienia szyku: <em>..., aber sie ist interessant</em>, a nie <s>aber ist sie interessant</s> i nie <s>aber sie interessant ist</s>. Czasownik na końcu jest typowy dla zdań podrzędnych (<em>obwohl, weil, dass</em>), a <em>aber</em> nie jest spójnikiem podrzędnym. Druga część pary z <em>sowohl</em> to <em>als auch</em>, a nie <s>aber</s> ani <s>und auch</s>. Polskie <em>jak i</em> podsuwa <em>wie auch</em>: taki wariant też się spotyka, ale w tym kursie odpowiedzią jest <em>als auch</em>."
+      },
+      {
+        tip: "Jeśli chcesz dać jednemu faktowi mniejszą wagę, a drugiemu większą, pierwszy wprowadź przez <em>zwar</em>, a swoją opinię umieść po <em>aber</em>: <em>Der Podcast ist zwar neu, aber er ist wirklich gut.</em> Czytelnik widzi, skąd bierze się twoje zdanie."
+      }
+    ],
+    grammar: {
+      title: "zwar ... aber i sowohl ... als auch",
+      note: "<b>zwar ... aber</b> przyznaje i przeciwstawia; <b>aber</b> stoi w pozycji zerowej. <b>sowohl ... als auch</b> łączy dwa elementy; przy dwóch podmiotach czasownik jest w liczbie mnogiej.",
+      table: {
+        head: ["para", "znaczenie", "przykład"],
+        rows: [
+          ["zwar ... aber", "co prawda ... ale", "Die Sendung ist zwar lang, aber sie ist interessant."],
+          ["sowohl ... als auch", "zarówno ... jak i", "Ich höre sowohl Radio als auch Podcasts."],
+          ["weder ... noch", "ani ... ani", "Ich habe weder Zeit noch Lust."]
+        ]
+      },
+      examples: [
+        { tr: "Audycja jest co prawda długa, ale interesująca.", note: "aber: pozycja zerowa, zwykły szyk" },
+        { tr: "Program jest co prawda dobry, ale mam mało czasu.", note: "Zwar otwiera zdanie: czasownik stoi zaraz po nim" },
+        { tr: "Stacja nadaje zarówno wiadomości, jak i muzykę.", note: "sowohl ... als auch z dwoma dopełnieniami" },
+        { tr: "Słucham zarówno radia, jak i podcastów.", note: "po niemiecku bez przecinka między elementami" },
+        { tr: "Zarówno Anna, jak i Tom słuchają tego podcastu.", note: "dwa podmioty: czasownik w liczbie mnogiej" },
+        { tr: "Nie ma co prawda dużo czasu, ale codziennie słucha jakiegoś podcastu.", note: "zwar po czasowniku, potem aber" }
+      ]
+    },
+    vocab: [
+      "radio",
+      "audycja",
+      "stacja (radiowa, telewizyjna)",
+      "program",
+      "podcast",
+      "wywiad",
+      "komentarz",
+      "słuchacz",
+      "słuchać (uważnie), przysłuchiwać się",
+      "włączać",
+      "wyłączać",
+      "subskrybować"
+    ],
+    exercises: [
+      {
+        q: "Które zdanie ma właściwy szyk?",
+        opts: [
+          "Die Sendung ist zwar lang, aber sie ist interessant.",
+          "Die Sendung ist zwar lang, aber ist sie interessant.",
+          "Die Sendung ist zwar lang, aber sie interessant ist."
+        ],
+        why: "Po <b>aber</b> czasownik zostaje na drugiej pozycji, po podmiocie: <i>aber sie ist interessant</i>. <i>Aber</i> nie odsyła czasownika na koniec."
+      },
+      {
+        q: "Która para znaczy „zarówno ... jak i”?",
+        opts: ["sowohl ... als auch", "zwar ... aber", "weder ... noch"],
+        why: "<b>Sowohl ... als auch</b>: łączy dwa elementy. <i>Zwar ... aber</i> przyznaje i przeciwstawia, <i>weder ... noch</i> zaprzecza."
+      },
+      {
+        q: "Które zdanie znaczy „Słucham zarówno radia, jak i podcastów”?",
+        opts: [
+          "Ich höre sowohl Radio als auch Podcasts.",
+          "Ich höre zwar Radio als auch Podcasts.",
+          "Ich höre sowohl Radio aber Podcasts."
+        ],
+        why: "<b>Sowohl ... als auch</b> to właściwa para. <i>Zwar</i> wymaga <i>aber</i>, a <i>sowohl</i> wymaga <i>als auch</i>: tych par się nie miesza."
+      },
+      {
+        q: "Uzupełnij: „Das Programm ist ___ gut, aber ich habe wenig Zeit.”",
+        hint: "przyznanie, przed aber",
+        why: "<b>Zwar</b>: przyznaje, że program jest dobry, a potem <i>aber</i> wprowadza przeciwieństwo."
+      },
+      {
+        q: "Uzupełnij: „Der Sender bringt sowohl Nachrichten ___ auch Musik.”",
+        hint: "druga część pary",
+        why: "<b>Als</b>: para to <i>sowohl ... als auch</i>."
+      },
+      {
+        q: "Uzupełnij parą zwar ... aber: „Die Sendung ist ___ kurz, ___ sie ist sehr interessant.”",
+        why: "<b>Zwar ... aber</b>: pierwsze słowo przyznaje fakt, drugie wprowadza przeciwieństwo."
+      },
+      {
+        q: "Dopasuj każde zdanie do jego znaczenia.",
+        pairs: [
+          "Wywiad jest co prawda krótki, ale dobry.",
+          "Słucham zarówno radia, jak i podcastów.",
+          "Podcast jest nadawany w każdy poniedziałek.",
+          "Słuchacze włączają radio."
+        ]
+      },
+      {
+        q: "Ułóż wyrazy w kolejności.",
+        tr: "Program jest co prawda długi, ale interesujący.",
+        why: "<i>Das Programm ist zwar lang, aber es ist interessant</i>: <i>zwar</i> po czasowniku, potem <i>aber</i> i czasownik <i>ist</i> na drugiej pozycji."
+      },
+      {
+        tr: "Codziennie rano słucham radia. Stacja nadaje zarówno wiadomości, jak i muzykę. Audycja jest co prawda długa, ale naprawdę interesująca.",
+        why: "W <i>höre</i> <b>ö</b> jest długie i zaokrąglone; w <i>sowohl</i> <b>s</b> jest dźwięczne [z], a <b>w</b> to [v]; w <i>Nachrichten</i> pierwsze <b>ch</b> to [x], a drugie [ç]; w <i>wirklich</i> <b>w</b> to [v], a końcowe <b>ch</b> to [ç]."
+      },
+      {
+        tr: "Słucham zarówno radia, jak i podcastów, ale nie codziennie.",
+        why: "W <i>sowohl</i> <b>s</b> jest dźwięczne [z], a <b>w</b> to [v]; w <i>höre</i> <b>ö</b> jest zaokrąglone; w <i>nicht</i> <b>ch</b> to [ç]; w <i>auch</i> <b>ch</b> to [x], po <i>au</i>."
+      }
+    ]
+  },
+  "lesson:b1-u04-l4": {
+    theme: "Dyskusja",
+    title: "Bronić swojego zdania",
+    objectives: [
+      "stosować końcówki przymiotnika po rodzajniku określonym, po ein i bez rodzajnika",
+      "wyrażać zgodę i sprzeciw stałymi zwrotami",
+      "budować argument za pomocą zwar ... aber i sowohl ... als auch",
+      "czytać teksty opiniotwórcze i używać w nich przymiotników z końcówkami"
+    ],
+    theory: [
+      {
+        h: "Trzy serie końcówek",
+        p: "Przed rzeczownikiem przymiotnik dostaje końcówkę, która zależy od tego, co go poprzedza. Po <strong>rodzajniku określonym</strong> (<em>der, die, das</em>, także <em>dieser, jeder</em>) końcówka to prawie zawsze <strong>-en</strong>; <strong>-e</strong> pojawia się w mianowniku liczby pojedynczej trzech rodzajów oraz w bierniku rodzaju żeńskiego i nijakiego: <em>der gute Beitrag, die gute Idee, das gute Beispiel, die guten Argumente.</em>"
+      },
+      {
+        h: "Po ein, kein i zaimkach dzierżawczych",
+        p: "Tam, gdzie <em>ein</em> nie ma końcówki, niesie ją przymiotnik: <strong>ein guter</strong> Standpunkt (mianownik rodzaju męskiego), <strong>ein gutes</strong> Argument (mianownik i biernik rodzaju nijakiego). W pozostałych miejscach końcówki są takie same jak po rodzajniku określonym: <em>eine gute Idee, einen guten Beitrag, mit einem guten Argument.</em>"
+      },
+      {
+        h: "Bez rodzajnika",
+        p: "Bez rodzajnika to przymiotnik daje sygnał rodzaju i przypadku, końcówkami rodzajnika: <em>interessante Kommentare</em> (liczba mnoga), <em>guter Rat, gutes Wetter, gute Laune</em>. Wyjątkiem jest dopełniacz rodzaju męskiego i nijakiego: przymiotnik dostaje tam <strong>-en</strong>, bo rzeczownik ma już <em>-(e)s</em>: <em>guten Weines, guten Wetters</em>. Kilka przymiotników przed tym samym rzeczownikiem ma zwykle tę samą końcówkę: <em>ein klarer, gut begründeter Standpunkt.</em>"
+      },
+      {
+        h: "Zwroty do dyskusji",
+        p: "Zgoda: <em>Ich stimme dir zu. Das sehe ich auch so.</em> Sprzeciw: <em>Da muss ich widersprechen. Ich bin anderer Meinung.</em> Wprowadzenie własnego stanowiska: <em>Ich bin der Meinung, dass ... Meiner Ansicht nach ...</em> Żeby uznać jakiś punkt, a potem odpowiedzieć: <em>Das ist zwar richtig, aber ...</em>; żeby zebrać racje: <em>Das hat sowohl Vorteile als auch Nachteile.</em>"
+      },
+      {
+        contrast: "Po polsku przymiotnik też odmienia się przez przypadki i zwykle stoi przed rzeczownikiem (<em>dobry argument, dobrego argumentu</em>), więc samo zjawisko znasz. Różnica: polski ma jeden zestaw końcówek bez względu na to, co stoi przed przymiotnikiem (<em>dobry punkt widzenia, ten dobry punkt widzenia, jakiś dobry punkt widzenia</em>), a niemiecki ma trzy serie: po <em>der</em> (<em>der gute Standpunkt</em>), po <em>ein</em> (<em>ein guter Standpunkt</em>) i bez rodzajnika (<em>guter Rat</em>). Druga różnica: po <em>być</em> polski przymiotnik nadal się uzgadnia (<em>argument jest dobry, idea jest dobra</em>), a niemiecki po <em>sein</em> zostaje <strong>bez końcówki</strong>: <em>Der Standpunkt ist gut. Die Idee ist gut.</em>"
+      },
+      {
+        trap: "Po rodzajniku określonym nie ma <em>-er</em>: <em>der gute Standpunkt</em>, a nie <s>der guter Standpunkt</s>. Polski nawyk podsuwa jedną formę mianownika (<em>dobry</em>) niezależnie od tego, co stoi przed przymiotnikiem; po niemiecku <em>-er</em> i <em>-es</em> pojawiają się tylko tam, gdzie rodzajnik ich nie pokazuje: <em>ein guter Standpunkt</em>, <em>ein gutes Argument</em>. Najczęstszy błąd to przeniesienie serii z <em>ein</em> na <em>der</em> albo odwrotnie."
+      },
+      {
+        tip: "Żeby wybrać końcówkę, zapytaj: czy przed przymiotnikiem jest sygnał rodzaju i przypadku? Jeśli jest (<em>der, die, dem, einer</em>), przymiotnik dostaje <em>-e</em> albo <em>-en</em>; jeśli go brakuje, pokazuje go przymiotnik."
+      }
+    ],
+    grammar: {
+      title: "Przymiotnik po rodzajniku określonym",
+      note: "po <b>der, die, das</b>: <b>-e</b> w mianowniku liczby pojedynczej oraz w bierniku rodzaju żeńskiego i nijakiego, <b>-en</b> w pozostałych miejscach. Po <b>ein</b> końcówka <b>-er / -es</b> pojawia się tam, gdzie <i>ein</i> jej nie pokazuje.",
+      table: {
+        head: ["", "r. m.", "r. ż.", "r. n.", "l. mn."],
+        rows: [
+          ["mianownik", "der gute Beitrag", "die gute Idee", "das gute Beispiel", "die guten Argumente"],
+          ["biernik", "den guten Beitrag", "die gute Idee", "das gute Beispiel", "die guten Argumente"],
+          ["celownik", "dem guten Beitrag", "der guten Idee", "dem guten Beispiel", "den guten Argumenten"],
+          ["dopełniacz", "des guten Beitrags", "der guten Idee", "des guten Beispiels", "der guten Argumente"]
+        ]
+      },
+      examples: [
+        { tr: "To dobry punkt widzenia.", note: "ein + mianownik r. m.: -er" },
+        { tr: "Mam dobry argument.", note: "ein + biernik r. n.: -es" },
+        { tr: "Tym dobrym argumentem przekonuje wszystkich.", note: "celownik r. n. po dem: -en" },
+        { tr: "Pisze długą wypowiedź.", note: "einen + biernik r. m.: -en (der Beitrag)" },
+        { tr: "Chętnie czytam ciekawe komentarze.", note: "bez rodzajnika, liczba mnoga: -e" },
+        { tr: "Ma co prawda wyraźne zdanie, ale też słucha innych.", note: "eine + biernik r. ż.: -e" }
+      ]
+    },
+    vocab: [
+      "zdanie, pogląd",
+      "argument",
+      "punkt widzenia, stanowisko",
+      "dyskusja",
+      "przykład",
+      "zaleta",
+      "wada",
+      "wypowiedź, głos (w dyskusji)",
+      "przekonywać",
+      "sprzeciwiać się, oponować",
+      "uzasadniać",
+      "zgadzać się (z kimś)"
+    ],
+    exercises: [
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: [
+          "Das ist ein guter Standpunkt.",
+          "Das ist ein gute Standpunkt.",
+          "Das ist ein guten Standpunkt."
+        ],
+        why: "<b>Ein guter Standpunkt</b>: mianownik rodzaju męskiego, a <i>ein</i> nie ma końcówki, więc pokazuje ją przymiotnik przez <i>-er</i>."
+      },
+      {
+        q: "Uzupełnij: „mit der ___ Idee”",
+        opts: ["guten", "gute", "guter"],
+        why: "<b>Guten</b>: celownik rodzaju żeńskiego po rodzajniku określonym, więc <i>-en</i>."
+      },
+      {
+        q: "Uzupełnij: „Ich lese einen ___ Beitrag.”",
+        hint: "interessant, biernik r. m. po einen",
+        why: "<b>Interessanten</b>: biernik rodzaju męskiego po <i>einen</i>, więc <i>-en</i>."
+      },
+      {
+        q: "Uzupełnij: „Sie hat ein ___ Argument.”",
+        hint: "stark, biernik r. n. po ein",
+        why: "<b>Starkes</b>: biernik rodzaju nijakiego po <i>ein</i>, które nie ma końcówki, więc <i>-es</i>."
+      },
+      {
+        q: "Uzupełnij zdanie: „Mit dem ___ Beispiel ___ sie alle.”",
+        why: "<b>Guten</b> (celownik rodzaju nijakiego po <i>dem</i>) i <b>überzeugt</b> (czas teraźniejszy, 3. osoba)."
+      },
+      {
+        q: "Dopasuj każdy zwrot do jego znaczenia.",
+        pairs: [
+          "Jestem zdania, że ...",
+          "Tu muszę się sprzeciwić.",
+          "Zgadzam się z tobą.",
+          "To mocny argument."
+        ]
+      },
+      {
+        q: "Ułóż wyrazy w kolejności.",
+        tr: "Jestem zdania, że to duża zaleta.",
+        why: "<i>Ich bin der Meinung, dass das ein großer Vorteil ist.</i> <i>Dass</i> odsyła czasownik <i>ist</i> na koniec, a <i>ein großer Vorteil</i> to mianownik rodzaju męskiego."
+      },
+      {
+        q: "Przetłumacz: „Przeczytałem długi artykuł.”",
+        why: "<i>Ich habe einen langen Artikel gelesen.</i> <i>Artikel</i> jest rodzaju męskiego, w bierniku: <i>einen langen</i>. Dobre jest też Präteritum: <i>Ich las einen langen Artikel.</i>"
+      },
+      {
+        tr: "Jestem zdania, że to dobry plan. Ma zarówno zalety, jak i wady, ale zalety są większe. Co prawda kosztuje pieniądze, ale przynosi dobry wynik.",
+        why: "W <i>Meinung</i> <b>ei</b> to [aɪ]; w <i>Vorteile</i> <b>V</b> to [f], a <b>ei</b> to [aɪ]; w <i>Nachteile</i> <b>ch</b> to [x]; w <i>größer</i> <b>ö</b> jest długie i zaokrąglone, a <b>ß</b> to [s]."
+      },
+      {
+        tr: "To mocny argument, ale ja jestem innego zdania.",
+        why: "W <i>starkes</i> początkowe <b>st</b> to [ʃt]; w <i>Argument</i> <b>g</b> to [g]; w <i>aber</i> <b>a</b> jest długie; w <i>Meinung</i> <b>ei</b> to [aɪ]."
+      }
+    ]
+  },
+  "lesson:b1-u04-test": {
+    theme: "Sprawdzian",
+    title: "Test: Opinie i media",
+    objectives: [
+      "sprawdzić mowę zależną, nachdem i bevor, zwar ... aber i sowohl ... als auch oraz odmianę przymiotnika"
+    ],
+    theory: [
+      {
+        p: "Dwanaście pytań z całej jednostki. Zaliczenie od 70%. Nie zaglądaj do lekcji w trakcie odpowiadania: jeśli czegoś nie pamiętasz, lepiej wrócić i powtórzyć."
+      }
+    ],
+    exercises: [
+      {
+        tr: "Plusquamperfekt czasownika gehen, wszystkie osoby.",
+        why: "<i>War gegangen, warst gegangen, war gegangen, waren gegangen, wart gegangen, waren gegangen</i>: <i>sein</i> w Präteritum + Partizip II."
+      },
+      {
+        q: "Uzupełnij: „Anna hat gesagt, ___ sie keine Zeit hat.”",
+        hint: "spójnik, przekazane stwierdzenie",
+        why: "<b>Dass</b>: wprowadza przekazane stwierdzenie i odsyła czasownik na koniec."
+      },
+      {
+        q: "Uzupełnij: „Nachdem sie die Nachricht gelesen ___, rief sie an.”",
+        hint: "Plusquamperfekt, haben",
+        why: "<b>Hatte</b>: <i>nachdem</i> przy zdaniu głównym w Präteritum (<i>rief</i>) wymaga Plusquamperfekt."
+      },
+      {
+        q: "Uzupełnij formą Präteritum od veröffentlichen: „Bevor die Zeitung den Artikel ___, prüfte die Redaktion die Quelle.”",
+        hint: "Präteritum, 3. osoba liczby pojedynczej",
+        why: "<b>Veröffentlichte</b>: <i>bevor</i> ma tu ten sam czas co zdanie główne (<i>prüfte</i>), czyli Präteritum. Czasownik słaby: rdzeń + <i>-te</i>."
+      },
+      {
+        q: "Uzupełnij: „Die Sendung ist ___ kurz, aber sie ist sehr interessant.”",
+        hint: "pierwsza część pary z aber",
+        why: "<b>Zwar</b>: <i>zwar ... aber</i> uznaje jakiś punkt, a potem mu się przeciwstawia."
+      },
+      {
+        q: "Uzupełnij: „Er hört sowohl Radio ___ auch Podcasts.”",
+        hint: "druga część pary z sowohl",
+        why: "<b>Als</b>: para to <i>sowohl ... als auch</i>."
+      },
+      {
+        q: "Uzupełnij przymiotnikiem kurz: „Sie schreibt einen ___ Kommentar.”",
+        hint: "kurz, biernik r. m. po einen",
+        why: "<b>Kurzen</b>: w bierniku rodzaju męskiego po <i>einen</i> przymiotnik dostaje <i>-en</i>."
+      },
+      {
+        q: "Tom mówi: „Ich komme morgen.” Które zdanie przekazuje to bez dass?",
+        opts: [
+          "Tom hat gesagt, er kommt morgen.",
+          "Tom hat gesagt, er morgen kommt.",
+          "Tom hat gesagt, dass er kommt morgen."
+        ],
+        why: "<b>Tom hat gesagt, er kommt morgen.</b> Bez <i>dass</i> czasownik zostaje na drugim miejscu; czasownik na końcu należy wyłącznie do wersji z <i>dass</i>, a z <i>dass</i> nie może stać na drugim miejscu."
+      },
+      {
+        q: "Które zdanie jest poprawne?",
+        opts: [
+          "Das ist ein gutes Argument.",
+          "Das ist ein guter Argument.",
+          "Das ist ein gute Argument."
+        ],
+        why: "<b>Ein gutes Argument</b>: <i>Argument</i> jest rodzaju nijakiego, a <i>ein</i> nie pokazuje końcówki w mianowniku rodzaju nijakiego, więc niesie ją przymiotnik: <i>-es</i>."
+      },
+      {
+        q: "Przetłumacz: „Tom powiedział, że ma dobry argument.”",
+        why: "<i>Tom hat gesagt, dass er ein gutes Argument hat.</i> Dobra jest też wersja bez <i>dass</i>, z czasownikiem na drugim miejscu, albo z <i>sagte</i>. Czas teraźniejszy <i>hat</i> powtarza czas z wypowiedzi Toma; jak po polsku, nie trzeba go automatycznie przesuwać."
+      },
+      {
+        tr: "Anna opowiedziała, że każdego ranka czyta gazetę. Po tym, jak przeczytała nagłówek, zadzwoniła do przyjaciółki. Artykuł jest co prawda długi, ale ma jasny punkt widzenia.",
+        why: "W <i>Zeitung</i> <b>z</b> to [ts], a <b>ei</b> to [aɪ]; w <i>Schlagzeile</i> <b>sch</b> to [ʃ]; w <i>Freundin</i> <b>eu</b> to [ɔʏ]."
+      },
+      {
+        tr: "Powiedział, że słucha zarówno radia, jak i podcastów.",
+        why: "W <i>sowohl</i> <b>w</b> to [v], a <b>o</b> w <i>wohl</i> jest długie; w <i>Radio</i> <b>a</b> jest długie; w <i>Podcasts</i> <b>c</b> to [k], a końcowe <b>ts</b> to [ts]."
+      }
+    ]
   }
 });
