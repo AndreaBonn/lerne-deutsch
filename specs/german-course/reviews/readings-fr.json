@@ -1,25 +1,15 @@
 {
-  "bundleHash": "c0d7cb6ddf38071095c106005300ca1ac3531f1f05ecd3c14e14b8dcc0ab1c76",
+  "bundleHash": "8ed588865871209069e63894756050200931b5485a0bf2b31a77dc68ffa55188",
   "findings": [
     {
-      "kind": "traduzione",
-      "msg": "La nota esclude erroneamente il significato di «pratique» per Praxis. Nel contesto indica un cabinet médical, ma Praxis può significare anche pratica: eliminare «pas la pratique» e distinguere i due usi.",
-      "path": "merged[4].gloss[1]"
+      "kind": "accuratezza e traduzione",
+      "msg": "Il testo presenta l'obbligo di una formulazione benevola come valido per ogni Arbeitszeugnis, ma il giudizio su prestazioni e comportamento riguarda lo Zeugnis qualificato; quello semplice si limita a natura e durata dell'attività. Precisare «Qualifizierte Arbeitszeugnisse …» e adeguare anche la domanda e la glossa francese.",
+      "path": "neutral[21].sentences[0]"
     },
     {
-      "kind": "lessico e rezione",
-      "msg": "La glossa attribuisce «+ datif» alla costruzione francese «tenir compte de», mentre il dativo è richiesto dal complemento tedesco: scrivere «tenir compte de ; jemandem/etwas Rechnung tragen (+ datif)».",
-      "path": "merged[19].gloss[10]"
-    },
-    {
-      "kind": "risposta ambigua",
-      "msg": "La risposta classificata come falsa non è esclusa dal testo: il capo può non aver inserito il registratore e avere comunque registrato l'intervista con un altro dispositivo. Chiedere se ha acceso il registratore durante l'intervista.",
-      "path": "neutral[15].questions[1]"
-    },
-    {
-      "kind": "risposta ambigua",
-      "msg": "La risposta classificata come falsa non è esclusa dal testo: la famiglia decide di attendere un anno, ma intende anche chiedere subito informazioni se si libera un appartamento più grande nello stesso edificio. Precisare «sofort aufs Land zu ziehen» è escluso, ma la domanda finale dovrebbe distinguere chiaramente il rinvio della decisione dall'eventuale richiesta al proprietario.",
-      "path": "neutral[13].questions[2]"
+      "kind": "spiegazione fuorviante",
+      "msg": "La glossa afferma senza riserve che il Betriebsrat ha un diritto di codeterminazione molto più forte del CSE francese, descritto come prevalentemente consultivo. I poteri dipendono dalla materia e dal contesto giuridico: eliminare il confronto generale oppure precisare che si riferisce, per esempio, all'organizzazione degli orari nel caso descritto.",
+      "path": "merged[19].gloss[2]"
     }
   ],
   "lang": "fr",
