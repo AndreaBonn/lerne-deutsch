@@ -200,5 +200,197 @@ LINGUAI.addReadings([
       { t: "truefalse", q: "In Wien möchte Karim zuerst ein Restaurant eröffnen.", a: 1 },
       { t: "mcq", q: "Wie lange dauert die Zugfahrt nach Wien laut Karim?", opts: ["ungefähr zehn Stunden", "ungefähr vier Stunden", "ungefähr zwei Tage"], a: 0 }
     ]
+  },
+
+  /* ---------------- B1 ---------------- */
+  {
+    id: "r-b1-fahrrad",
+    cefr: "B1",
+    tag: "g-plusquamperfekt",
+    titleIt: "Das verschwundene Fahrrad",
+    sentences: [
+      "Münster ist die Stadt der Fahrräder, und auch Jana fährt jeden Tag mit dem Rad zur Uni.",
+      "Letzten Dienstag stand sie nach der Vorlesung vor dem Fahrradständer und suchte ihr Rad vergeblich.",
+      "Am Morgen hatte sie es wie immer vor der Bibliothek abgestellt, aber sie hatte vergessen, es abzuschließen.",
+      "Nachdem sie eine Viertelstunde gesucht hatte, ging sie zur Polizei und erstattete Anzeige.",
+      "Der Polizist erklärte ihr, dass in der Stadt jedes Jahr Tausende Fahrräder verschwinden.",
+      "Zwei Wochen später bekam sie einen Anruf: Man hatte ihr Rad in einem Park am Stadtrand gefunden.",
+      "Jemand hatte es dort zurückgelassen, nur die Klingel fehlte.",
+      "Seitdem schließt Jana ihr Fahrrad immer ab, auch wenn sie nur kurz in einen Laden geht."
+    ],
+    glossIt: ["die Vorlesung", "der Fahrradständer", "vergeblich", "abschließen", "Anzeige erstatten", "der Stadtrand", "die Klingel"],
+    lexIt: ["Münster", "Fahrrad", "Uni", "Dienstag", "suchen", "Morgen", "Bibliothek", "abstellen", "vergessen", "Viertelstunde", "Polizei", "erklären", "verschwinden", "Woche", "Anruf", "Park", "finden", "fehlen", "Laden"],
+    questions: [
+      { t: "mcq", q: "Wo hatte Jana ihr Fahrrad am Morgen abgestellt?", opts: ["vor der Bibliothek", "vor der Polizei", "in einem Park"], a: 0 },
+      { t: "truefalse", q: "Jana hatte ihr Fahrrad abgeschlossen.", a: 1 },
+      { t: "mcq", q: "Was fehlte an dem Fahrrad, als man es fand?", opts: ["die Klingel", "das Licht", "der Sattel"], a: 0 },
+      { t: "truefalse", q: "Heute schließt Jana ihr Rad auch bei kurzen Einkäufen ab.", a: 0 }
+    ]
+  },
+  {
+    id: "r-b1-pfand",
+    cefr: "B1",
+    tag: "g-passiv",
+    titleIt: "Was mit der Dose passiert",
+    sentences: [
+      "In Deutschland wird auf viele Flaschen und Dosen ein Pfand bezahlt.",
+      "Wer zum Beispiel in einem Supermarkt in Bremen eine Dose Limonade kauft, zahlt fünfundzwanzig Cent mehr.",
+      "Das Geld bekommt man zurück, wenn die leere Dose in einen Automaten gesteckt wird.",
+      "Danach wird die Dose gepresst und zu einer Fabrik gebracht, wo das Metall wiederverwertet wird.",
+      "Viele Glasflaschen werden dagegen gereinigt und bis zu fünfzigmal neu gefüllt.",
+      "Früher wurden viele Dosen einfach in den Park oder auf die Straße geworfen.",
+      "Seit das Pfand 2003 eingeführt wurde, sieht man viel weniger Müll.",
+      "Und wer seine Flaschen nicht zurückbringt, stellt sie oft neben den Mülleimer, damit andere das Pfand sammeln können."
+    ],
+    glossIt: ["das Pfand", "die Dose", "der Automat", "pressen", "wiederverwerten", "einführen", "der Mülleimer"],
+    lexIt: ["Deutschland", "Flasche", "bezahlen", "Supermarkt", "Bremen", "Limonade", "Cent", "Geld", "leer", "Fabrik", "Metall", "reinigen", "füllen", "früher", "werfen", "Straße", "Müll", "sammeln"],
+    questions: [
+      { t: "mcq", q: "Wie viel Pfand zahlt man für eine Dose Limonade?", opts: ["fünfundzwanzig Cent", "fünf Cent", "einen Euro"], a: 0 },
+      { t: "truefalse", q: "Glasflaschen werden nach dem ersten Gebrauch gepresst.", a: 1 },
+      { t: "mcq", q: "Warum stellen manche Leute ihre Flaschen neben den Mülleimer?", opts: ["Damit andere das Pfand sammeln können.", "Weil der Automat kaputt ist.", "Weil Glas nicht wiederverwertet wird."], a: 0 }
+    ]
+  },
+  {
+    id: "r-b1-ausbildung",
+    cefr: "B1",
+    tag: "g-nebensatz-final",
+    titleIt: "Lieber in die Werkstatt",
+    sentences: [
+      "Nach dem Abitur wusste Selin nicht, ob sie studieren oder eine Ausbildung machen sollte.",
+      "Um Erfahrungen zu sammeln, machte sie zuerst ein Praktikum in einer Autowerkstatt in Stuttgart.",
+      "Dort merkte sie, dass ihr die Arbeit mit den Händen viel Spaß macht.",
+      "Heute macht sie eine Ausbildung zur Kfz-Mechatronikerin und ist drei Tage pro Woche im Betrieb und zwei Tage in der Berufsschule.",
+      "Ihr Chef erklärt ihr jeden neuen Arbeitsschritt genau, damit sie keine Fehler macht.",
+      "Abends wiederholt sie den Stoff aus der Berufsschule, um die Prüfungen gut zu bestehen.",
+      "Ihre Eltern hatten sich eigentlich ein Studium für sie gewünscht.",
+      "Aber Selin verdient schon jetzt ihr eigenes Geld und spart, damit sie später vielleicht eine eigene Werkstatt eröffnen kann."
+    ],
+    glossIt: ["das Abitur", "die Ausbildung", "die Werkstatt", "die Kfz-Mechatronikerin", "der Betrieb", "die Berufsschule", "der Arbeitsschritt", "der Stoff"],
+    lexIt: ["studieren", "Erfahrung", "sammeln", "Praktikum", "Stuttgart", "merken", "Hand", "Spaß", "Woche", "Chef", "Fehler", "wiederholen", "Prüfung", "bestehen", "Eltern", "wünschen", "verdienen", "sparen", "eröffnen"],
+    questions: [
+      { t: "truefalse", q: "Selin hat zuerst ein Praktikum gemacht, um Erfahrungen zu sammeln.", a: 0 },
+      { t: "mcq", q: "Wie viele Tage pro Woche ist Selin in der Berufsschule?", opts: ["zwei", "drei", "fünf"], a: 0 },
+      { t: "mcq", q: "Warum erklärt der Chef jeden Arbeitsschritt genau?", opts: ["Damit Selin keine Fehler macht.", "Damit Selin früher nach Hause gehen kann.", "Weil Selin die Prüfung schon bestanden hat."], a: 0 },
+      { t: "truefalse", q: "Selins Eltern wollten von Anfang an, dass sie eine Ausbildung macht.", a: 1 }
+    ]
+  },
+  {
+    id: "r-b1-tafel",
+    cefr: "B1",
+    tag: "g-relativsatz",
+    titleIt: "Samstags bei der Tafel",
+    sentences: [
+      "Herr Becker ist ein Rentner, der seit zwei Jahren bei der Tafel in Freiburg mitarbeitet.",
+      "Die Tafel ist ein Verein, der Lebensmittel von Supermärkten und Bäckereien abholt.",
+      "Das sind Produkte, die noch gut sind, die die Geschäfte aber nicht mehr verkaufen können.",
+      "Die Lebensmittel bekommen dann Menschen, die wenig Geld haben.",
+      "Am Samstag sortiert Herr Becker Obst und Gemüse, zusammen mit einer Studentin, mit der er sich gut versteht.",
+      "Die Frau, der er heute eine Tüte mit Brot gibt, kommt jede Woche und bedankt sich immer freundlich.",
+      "Für Herrn Becker ist das Ehrenamt eine Aufgabe, auf die er nicht mehr verzichten möchte.",
+      "Er sagt: „Hier treffe ich jede Woche Menschen, mit denen ich sonst nie sprechen würde.“"
+    ],
+    glossIt: ["der Rentner", "die Tafel", "der Verein", "die Lebensmittel", "abholen", "das Ehrenamt", "verzichten auf"],
+    lexIt: ["mitarbeiten", "Freiburg", "Supermarkt", "Bäckerei", "Produkt", "Geschäft", "verkaufen", "Geld", "sortieren", "Obst", "Gemüse", "Studentin", "sich verstehen", "Tüte", "Brot", "sich bedanken", "freundlich", "Aufgabe", "treffen"],
+    questions: [
+      { t: "mcq", q: "Was holt die Tafel von Supermärkten und Bäckereien ab?", opts: ["Lebensmittel, die die Geschäfte nicht mehr verkaufen können", "Geld für Menschen, die wenig haben", "Kleidung für Studenten"], a: 0 },
+      { t: "truefalse", q: "Herr Becker arbeitet bei der Tafel, weil er dort Geld verdient.", a: 1 },
+      { t: "mcq", q: "Mit wem sortiert Herr Becker am Samstag Obst und Gemüse?", opts: ["mit einer Studentin", "mit seiner Frau", "mit einem Bäcker"], a: 0 }
+    ]
+  },
+  {
+    id: "r-b1-graz",
+    cefr: "B1",
+    tag: "g-konditionalsatz",
+    titleIt: "Wenn die Wohnung größer wäre",
+    sentences: [
+      "Familie Hofer wohnt in einer Dreizimmerwohnung im Zentrum von Graz.",
+      "Seit das zweite Kind auf der Welt ist, ist die Wohnung eigentlich zu klein.",
+      "„Wenn wir ein Zimmer mehr hätten, könnte jedes Kind ein eigenes Zimmer haben“, sagt Frau Hofer.",
+      "Ihr Mann meint: „Wenn wir aufs Land ziehen würden, wäre die Miete viel billiger.“",
+      "Aber dann müsste er jeden Tag eine Stunde mit dem Auto zur Arbeit fahren.",
+      "„Und wenn wir hierbleiben, haben wir die Schule, den Park und den Markt direkt vor der Tür“, sagt sie.",
+      "Am Ende beschließen sie, noch ein Jahr zu warten und dann zu entscheiden.",
+      "Wenn bis dahin im selben Haus eine größere Wohnung frei wird, fragen sie sofort beim Vermieter nach."
+    ],
+    glossIt: ["die Dreizimmerwohnung", "auf der Welt sein", "aufs Land ziehen", "die Miete", "beschließen", "der Vermieter", "nachfragen"],
+    lexIt: ["Familie", "Zentrum", "Graz", "Kind", "klein", "Zimmer", "eigen", "billig", "Stunde", "Auto", "Arbeit", "Schule", "Park", "Markt", "Tür", "warten", "entscheiden", "frei"],
+    questions: [
+      { t: "truefalse", q: "Familie Hofer hat zwei Kinder.", a: 0 },
+      { t: "mcq", q: "Was wäre auf dem Land besser?", opts: ["Die Miete wäre billiger.", "Die Schule wäre näher.", "Der Weg zur Arbeit wäre kürzer."], a: 0 },
+      { t: "mcq", q: "Was beschließt die Familie am Ende?", opts: ["noch ein Jahr zu warten", "sofort aufs Land zu ziehen", "eine Wohnung zu kaufen"], a: 0 }
+    ]
+  },
+
+  /* ---------------- B2 ---------------- */
+  {
+    id: "r-b2-grenze",
+    cefr: "B2",
+    tag: "g-konzessiv",
+    titleIt: "Jeden Tag über die Grenze",
+    sentences: [
+      "Obwohl Marco in Lörrach wohnt, arbeitet er seit fünf Jahren bei einem Pharmaunternehmen in Basel.",
+      "Jeden Morgen fährt er mit der S-Bahn über die Grenze, ohne dass jemand seinen Ausweis sehen will.",
+      "Trotz des frühen Arbeitsbeginns lohnt sich die Stelle für ihn, denn in Basel verdient er deutlich mehr als in Deutschland.",
+      "Allerdings hat das Leben als Grenzgänger auch Nachteile: Bei der Steuererklärung braucht er jedes Jahr die Hilfe einer Beraterin.",
+      "Seine Kollegen kommen aus Deutschland, Frankreich und der Schweiz, und obgleich in der Firma meistens Englisch gesprochen wird, hört man in der Pause oft Baseldeutsch.",
+      "Marco versteht den Dialekt inzwischen ziemlich gut, sprechen kann er ihn jedoch noch nicht.",
+      "Selbst wenn er ein besseres Angebot aus Karlsruhe bekäme, würde er die Stelle wohl nicht wechseln.",
+      "„Die Grenze merke ich eigentlich nur noch, wenn ich in Basel einkaufe und die Preise sehe“, sagt er lachend."
+    ],
+    glossIt: ["der Arbeitsbeginn", "sich lohnen", "der Grenzgänger", "die Steuererklärung", "die Beraterin", "obgleich", "das Baseldeutsch", "das Angebot"],
+    lexIt: ["Lörrach", "Pharmaunternehmen", "Basel", "Grenze", "S-Bahn", "Ausweis", "Stelle", "verdienen", "deutlich", "Nachteil", "Kollege", "Frankreich", "Schweiz", "Firma", "Pause", "Dialekt", "inzwischen", "wechseln", "merken", "einkaufen", "Preis"],
+    questions: [
+      { t: "truefalse", q: "Marco wohnt in der Schweiz und arbeitet in Deutschland.", a: 1 },
+      { t: "mcq", q: "Was ist für Marco ein Nachteil seiner Situation?", opts: ["die komplizierte Steuererklärung", "die Kontrollen an der Grenze", "das niedrige Gehalt"], a: 0 },
+      { t: "mcq", q: "Welche Sprache hört man in der Pause oft?", opts: ["Baseldeutsch", "Französisch", "Englisch"], a: 0 },
+      { t: "truefalse", q: "Für ein besseres Angebot aus Karlsruhe würde Marco sofort wechseln.", a: 1 }
+    ]
+  },
+  {
+    id: "r-b2-dorfladen",
+    cefr: "B2",
+    tag: "g-passiv",
+    titleIt: "Ein Laden für das ganze Dorf",
+    sentences: [
+      "Vor sechs Jahren wurde der letzte Lebensmittelladen in einem kleinen Dorf im Allgäu geschlossen.",
+      "Seitdem mussten die Einkäufe mit dem Auto in der nächsten Stadt erledigt werden, was vor allem für ältere Menschen schwierig war.",
+      "Deshalb wurde im Gemeinderat eine Idee diskutiert, die zunächst etwas verrückt klang: Der Laden sollte von den Bewohnern selbst betrieben werden.",
+      "Innerhalb weniger Monate wurden mehr als zweihundert Anteile verkauft, und das alte Geschäft ist von Freiwilligen renoviert worden.",
+      "Heute ist der Dorfladen an sechs Tagen in der Woche geöffnet.",
+      "Milch, Käse und Eier werden direkt von Bauernhöfen aus der Umgebung geliefert.",
+      "Zwei Verkäuferinnen sind fest angestellt, alle anderen Schichten werden von Ehrenamtlichen übernommen.",
+      "Ob der Laden langfristig überleben kann, ist noch nicht entschieden, aber im Dorf wird oft gesagt: Endlich gibt es wieder einen Ort, an dem man sich trifft."
+    ],
+    glossIt: ["der Lebensmittelladen", "erledigen", "der Gemeinderat", "betreiben", "der Anteil", "die Freiwilligen", "die Schicht", "die Ehrenamtlichen"],
+    lexIt: ["Dorf", "Allgäu", "schließen", "Einkauf", "Auto", "Stadt", "schwierig", "Idee", "diskutieren", "verrückt", "Bewohner", "Monat", "verkaufen", "renovieren", "öffnen", "Milch", "Käse", "Ei", "Bauernhof", "Umgebung", "liefern", "Verkäuferin", "anstellen", "übernehmen", "überleben", "entscheiden"],
+    questions: [
+      { t: "truefalse", q: "Der Laden wird heute von einer Supermarktkette betrieben.", a: 1 },
+      { t: "mcq", q: "Wer hat das alte Geschäft renoviert?", opts: ["Freiwillige", "eine Baufirma", "der Gemeinderat"], a: 0 },
+      { t: "mcq", q: "Woher kommen Milch, Käse und Eier?", opts: ["von Bauernhöfen aus der Umgebung", "aus der nächsten Stadt", "aus dem Ausland"], a: 0 }
+    ]
+  },
+  {
+    id: "r-b2-redaktion",
+    cefr: "B2",
+    tag: "g-n-deklination",
+    titleIt: "Der neue Praktikant",
+    sentences: [
+      "Lukas hat ein Praktikum bei einer Tageszeitung in Innsbruck begonnen und ist der jüngste Praktikant in der Redaktion.",
+      "Am ersten Tag stellt ihn die Chefredakteurin den Kollegen vor, und jeder gibt dem neuen Praktikanten einen Tipp.",
+      "Ein erfahrener Journalist rät ihm, den Namen jedes Gesprächspartners zweimal zu überprüfen.",
+      "Schon in der zweiten Woche darf Lukas einen Experten für Lawinen interviewen, der an der Universität forscht.",
+      "Leider vergisst er bei dem Gespräch, das Aufnahmegerät einzuschalten, und muss den Inhalt aus seinen Notizen rekonstruieren.",
+      "Der Text des Praktikanten wird am nächsten Tag trotzdem gedruckt, wenn auch nur auf Seite zwölf.",
+      "Am Abend ruft ein Leser bei Herrn Moser, dem Chef vom Dienst, an und beschwert sich: Der Nachname des Experten sei falsch geschrieben.",
+      "Lukas wird rot, denn ausgerechnet diesen einen Namen hatte er nicht überprüft."
+    ],
+    glossIt: ["die Tageszeitung", "die Redaktion", "der Praktikant", "die Chefredakteurin", "der Gesprächspartner", "die Lawine", "das Aufnahmegerät", "der Chef vom Dienst", "sich beschweren", "ausgerechnet"],
+    lexIt: ["Praktikum", "Innsbruck", "jung", "vorstellen", "Kollege", "Tipp", "erfahren", "Journalist", "raten", "Name", "überprüfen", "Experte", "interviewen", "Universität", "forschen", "vergessen", "Gespräch", "einschalten", "Inhalt", "Notiz", "rekonstruieren", "drucken", "Seite", "Leser", "Nachname", "falsch", "rot"],
+    questions: [
+      { t: "mcq", q: "Welchen Tipp gibt der erfahrene Journalist dem Praktikanten?", opts: ["jeden Namen zweimal zu überprüfen", "jeden Tag früh zu kommen", "nur kurze Artikel zu schreiben"], a: 0 },
+      { t: "truefalse", q: "Lukas nimmt das Interview mit dem Experten auf.", a: 1 },
+      { t: "mcq", q: "Worüber beschwert sich der Leser?", opts: ["über den falsch geschriebenen Nachnamen des Experten", "über die Seite, auf der der Artikel steht", "über die Länge des Artikels"], a: 0 },
+      { t: "truefalse", q: "Der Artikel von Lukas wird gedruckt.", a: 0 }
+    ]
   }
 ]);
