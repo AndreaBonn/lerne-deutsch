@@ -1,7 +1,38 @@
 {
-  "bundleHash": "f44217c0804a01347c5f2f2fe60e725ceeb7e4f5a5cca894c097a8b491e33fd0",
-  "findings": [],
+  "bundleHash": "70829e536788a0e1e01b890d369734f47a92ea151d157dfec65b631bebf5988a",
+  "findings": [
+    {
+      "kind": "grammatica tedesca",
+      "msg": "«Es» in «es gibt» non è il soggetto: la costruzione è impersonale e il gruppo nominale è all'accusativo. Correggere la presentazione che lo definisce un soggetto vuoto.",
+      "path": "content.ref:g-es.body"
+    },
+    {
+      "kind": "coniugazione",
+      "msg": "L'affermazione che solo le coppie citate coincidano è smentita dalla stessa tabella: «du isst» ed «er isst» hanno la stessa forma. Precisare che anche altre forme personali possono coincidere.",
+      "path": "content.ref:g-praesens.body"
+    },
+    {
+      "kind": "concessione",
+      "msg": "La spiegazione esclude «obwohl» per le ipotesi, ma il congiuntivo è possibile, per esempio «Ich würde spazieren gehen, obwohl es regnen könnte». Presentare «auch wenn» e «selbst wenn» come forme tipiche della concessione ipotetica, senza vietare «obwohl» in ogni contesto ipotetico.",
+      "path": "content.ref:g-konzessiv.body"
+    },
+    {
+      "kind": "punteggiatura e sintassi",
+      "msg": "Una relativa posta alla fine della frase non è racchiusa tra due virgole: «Das ist der Mann, den ich kenne.» Sostituire «toujours entre virgules» con una regola che preveda la virgola iniziale e quella finale solo se la frase continua.",
+      "path": "content.ref:g-relativsatz.body"
+    },
+    {
+      "kind": "spiegazione contrastiva",
+      "msg": "«Des plus» in «une proposition des plus intéressantes» non è un avverbio davanti all'aggettivo: la locuzione è seguita normalmente da un aggettivo al plurale. Non presentarla come lo stesso procedimento di «extrêmement»; distinguerla dagli avverbi di grado.",
+      "path": "content.ref:g-komparation.body"
+    },
+    {
+      "kind": "traduzione e sintassi francese",
+      "msg": "«Je trouve bien que tu demandes» è poco naturale come equivalente generale di «Ich finde es gut, dass du fragst». Usare per esempio «Je trouve que c'est bien que tu poses la question» e spiegare che la costruzione francese può richiedere una riformulazione.",
+      "path": "content.ref:g-es.body"
+    }
+  ],
   "lang": "fr",
   "unit": "i18n-grammar-reference",
-  "verdict": "pass"
+  "verdict": "fail"
 }
