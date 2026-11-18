@@ -1,328 +1,211 @@
-[English](./README.md) | **Italiano** | [Polski](./README.pl.md)
+[English](./README.md) | **Italiano**
 
 # Deutsch lernen
 
-Un corso di tedesco statico, dall'A1 al C2, che gira tutto nel browser: niente account, niente server, niente build, niente da installare.
+Un corso di tedesco da A1 a C2 che gira interamente nel browser, con spiegazioni in italiano, inglese, spagnolo, francese o polacco.
 
+Corso online: <https://andreabonn.github.io/lerne-deutsch/>. Lo apri e cominci una lezione: non serve registrarsi.
+
+![License: MIT (code)](https://img.shields.io/badge/code-MIT-blue)
+![License: CC BY-SA 4.0 (content)](https://img.shields.io/badge/content-CC%20BY--SA%204.0-lightgrey)
 ![CI](https://github.com/AndreaBonn/lerne-deutsch/actions/workflows/ci.yml/badge.svg)
-![Codice: MIT](https://img.shields.io/badge/codice-MIT-blue)
-![Contenuto: CC BY--SA 4.0](https://img.shields.io/badge/contenuto-CC%20BY--SA%204.0-blue)
-![Node](https://img.shields.io/badge/node-%3E%3D24-339933)
-![Dipendenze runtime](https://img.shields.io/badge/dipendenze%20runtime-0-lightgrey)
+![Tests](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/AndreaBonn/lerne-deutsch/main/badges/test-badge.json)
+![Coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/AndreaBonn/lerne-deutsch/main/badges/coverage-badge.json)
+![Runtime dependencies: 0](https://img.shields.io/badge/runtime%20dependencies-0-brightgreen)
 
-170 lezioni, 1735 esercizi e 4248 registrazioni in tedesco (parole e frasi), spiegate nella lingua di chi studia. Si apre `index.html` e il corso parte.
+## Che cos'è
 
-Il programma di grammatica sale livello per livello dall'A1 al C2. Il tedesco è sempre la lingua che si studia; le spiegazioni esistono in cinque lingue (italiano, inglese americano, spagnolo, francese, polacco) e si cambiano quando si vuole, senza perdere i progressi. Tutto quello che lo studente fa resta nel suo browser. Dal dispositivo possono uscire due cose, e nessuna delle due parte finché non è lui ad accenderla: la registrazione della voce mandata al riconoscimento vocale, e una risposta che il corso ha già rifiutato, mandata a un modello linguistico che lo studente paga con la propria chiave.
+Deutsch lernen insegna il tedesco standard (`de-DE`) con grammatica, esercizi, audio registrato, ripasso a ripetizione dilazionata e una simulazione d'esame. Chi studia sceglie la lingua delle spiegazioni, e le note che confrontano il tedesco con quella lingua sono scritte apposta per ciascuna, non tradotte da una delle altre.
 
-**Online:** [andreabonn.github.io/lerne-deutsch](https://andreabonn.github.io/lerne-deutsch/)
+È un sito statico: HTML, CSS e JavaScript semplice, senza backend, senza build step e senza dipendenze a runtime. I progressi restano nel browser di chi studia. Il corso funziona da un web server, installato come app, offline dopo la prima visita e anche aperto direttamente dal disco (`file://`).
 
-## Indice
+Il corso nasce come fork di un corso di italiano (`versione-statica`) e ne condivide il motore. Le correzioni al motore comune arrivano prima lì e passano qui con un cherry-pick.
 
-- [Cosa c'è nel repository](#cosa-cè-nel-repository)
-- [Stack tecnologico](#stack-tecnologico)
-- [Architettura](#architettura)
-- [Struttura del repository](#struttura-del-repository)
-- [Prerequisiti](#prerequisiti)
-- [Installazione](#installazione)
-- [Esecuzione locale](#esecuzione-locale)
-- [I controlli di qualità](#i-controlli-di-qualità)
-- [Aggiungere contenuto al corso](#aggiungere-contenuto-al-corso)
-- [La pipeline audio](#la-pipeline-audio)
-- [Il controllo facoltativo con un modello](#il-controllo-facoltativo-con-un-modello)
-- [Deploy e CI](#deploy-e-ci)
-- [Sicurezza e privacy](#sicurezza-e-privacy)
-- [Licenza](#licenza)
-- [Supporta il progetto](#supporta-il-progetto)
+## In pratica
 
-## Cosa c'è nel repository
+![Una lezione: obiettivi, teoria e una nota scritta per chi parla la lingua delle spiegazioni](./docs/assets/lesson-it.webp)
 
-| Voce | Quantità |
+Cosa contiene oggi il corso, secondo `node scripts/baseline.mjs`:
+
+| Contenuto | Quantità |
 |---|---|
 | Unità / lezioni / esercizi | 37 / 170 / 1735 |
-| Voci di vocabolario | 1592 |
-| Tipi di esercizio | 14 (13 compaiono nei dati del corso) |
-| Conversazioni parlate | 14 |
-| Voci della grammatica di riferimento | 55 |
-| Letture / prove di scrittura / serie di coppie minime | 24 / 6 / 4 |
-| Biblioteca: testi / frasi / parole | 6 / 236 / 3411 |
-| Registrazioni | 4248 mp3, 58 MiB |
-| Lingue di spiegazione | 5, con 957 stringhe di interfaccia ciascuna |
-| File del motore | 84 file, 17 375 righe |
+| Voci di lessico / conversazioni guidate / argomenti di grammatica | 1592 / 14 / 55 |
+| Letture brevi / compiti di scrittura / serie di coppie minime | 24 / 6 / 4 |
+| Testi della biblioteca (400-800 parole ciascuno) | 6 testi, 3411 parole |
+| Frasi registrate (voci neurali `de-DE-KatjaNeural` e `de-DE-ConradNeural`) | 4248 file mp3 |
+| Lingue dell'interfaccia | 5, con 962 chiavi ciascuna |
 
-Questi numeri si rigenerano con `node scripts/baseline.mjs`.
+## Manuale utente
 
-Oltre alle lezioni il corso porta:
+Il manuale spiega ogni schermata a chi studia, senza presupporre competenze tecniche:
 
-- un mazzo di ripetizione dilazionata (FSRS per il vocabolario, SM-2 per il quaderno degli errori) e una sessione da cinque minuti costruita con le stesse schede;
-- esercizi generati da regole che non finiscono mai e un coniugatore che copre dieci tempi e modi;
-- una biblioteca di testi lunghi che si sbloccano con il livello e una modalità di conversazione libera con un modello linguistico (facoltativa, vedi sotto);
-- una simulazione d'esame in stile Goethe-Zertifikat B1 con il cronometro per sezione. Non è ufficiale, non ha legami con il Goethe-Institut e non usa suoi materiali. Si punteggiano soltanto Lesen e Hören;
-- una schermata di copertura che misura lo studente sulle forme più frequenti del tedesco reale, ricavate da una lista di frequenza di Tatoeba.
+- [User manual (English)](./docs/USER-MANUAL.md)
+- [Manuale utente (italiano)](./docs/MANUALE-UTENTE.md)
+
+## Funzionalità
+
+- **Lezioni**: teoria, tabella di grammatica, lessico, dialogo, nota di cultura ed esercizi. Il corso ha 14 tipi di esercizio: scelta multipla, scelta di più risposte, vero/falso, abbinamento, articoli, coppie minime, completamento, traduzione, testo da completare, costruzione della frase, coniugazione, ascolto, pronuncia e conversazione. Una lezione è superata con il 70% di risposte corrette.
+- **Oggi**: una sessione di dieci minuti costruita per te con i tuoi errori, un allenamento sull'argomento che va peggio e le carte in scadenza.
+- **Ripasso**: carte di lessico programmate con FSRS, più un quaderno degli errori che ti ripropone esattamente l'esercizio sbagliato, etichettato con l'argomento di grammatica.
+- **Cinque minuti**: una sessione di carte che si ferma dopo cinque minuti o venti carte.
+- **Allenamento**: esercizi generati da regole (numeri, orari, date, articoli, casi, preposizioni, ausiliare del Perfekt), quindi non finiscono mai.
+- **Parlato e ascolto**: conversazioni guidate a voce, shadowing, esercizi di velocità e coppie minime, tutti su audio registrato.
+- **Lettura e scrittura**: letture graduate, una biblioteca di testi lunghi con segnalibro per riprendere, e compiti di scrittura controllati sulle costruzioni che hai usato.
+- **Esame**: una simulazione non ufficiale nello stile del Goethe-Zertifikat B1, con due prove complete. Dà un punteggio solo a lettura e ascolto; non è affiliata al Goethe-Institut e non usa suo materiale.
+- **Consultazione**: programma completo di grammatica, un coniugatore per qualsiasi verbo, il tuo lessico salvato, i falsi amici e una schermata di copertura che mostra quanta parte del tedesco più frequente conosci già.
+- **Controllo facoltativo con un modello**: con una chiave API che hai già (Google Gemini, Groq, OpenAI o Anthropic Claude) e il tuo consenso esplicito, un modello dà un secondo parere sulle risposte che il corso ha rifiutato. Può solo trasformare un rifiuto in un'accettazione, mai il contrario.
+- **I tuoi dati restano tuoi**: backup e ripristino su file, esportazione e importazione di un mazzo Anki, un promemoria per il calendario (`.ics`), nessun account.
 
 ## Stack tecnologico
 
-**Applicazione (quello che arriva al browser)**
-
-- JavaScript ES5+, script classici, un globale per file. Nessun framework, nessun bundler, nessun polyfill.
-- CSS in un foglio unico, colori in OKLCH.
-- Spectral, Manrope e JetBrains Mono, ospitati nel repository come woff2 (7 file, 155 KB, licenza SIL Open Font). La pagina non carica niente da un dominio esterno: le uniche richieste che escono sono le due facoltative, il riconoscimento vocale e il controllo con un modello.
-- Service worker per il funzionamento offline e web app manifest per l'installazione.
-
-**Toolchain (solo per lo sviluppo)**
-
-- Node.js 24 per gli script e i test unitari (`node:test`, `node:vm`).
-- Playwright 1.63 per i test nel browser, ESLint 10 per la correttezza, axe-core 4.13 dentro i test di accessibilità.
-- Python via `uv` per la generazione delle registrazioni, che richiede `ffmpeg` e l'accesso a Edge TTS.
-
-`package.json` esiste per la toolchain di test. `index.html` non ne carica niente e il corso funziona anche senza `npm install`.
+| Area | Cosa si usa |
+|---|---|
+| Applicazione | HTML, CSS, JavaScript semplice (script classici, niente moduli, niente framework) |
+| Offline e installazione | Service worker (`sw.js`), web app manifest |
+| Memorizzazione | `localStorage` nel browser di chi studia |
+| Font | Spectral, Manrope, JetBrains Mono, ospitati in `assets/fonts/` |
+| Generazione dell'audio | Script Python eseguito con `uv` (`scripts/build_audio.py`) |
+| Strumenti (solo sviluppo) | Test runner di Node.js, Playwright, ESLint, axe-core |
+| CI e hosting | GitHub Actions, GitHub Pages |
 
 ## Architettura
 
-Due regole spiegano quasi tutto l'impianto. I dati del corso stanno separati dal motore e, dentro i dati, quello che è tedesco sta separato da quello che lo studente legge nella sua lingua.
-
 ```mermaid
-flowchart TD
-  html["index.html<br/>ordine degli script = ordine delle dipendenze"]
-  core["data/core/<br/>struttura, tedesco, chiavi di risposta"]
-  i18n["data/i18n/&lt;lang&gt;/<br/>spiegazioni, 5 lingue"]
-  merge["i18n-merge.js<br/>unisce per indice"]
-  engine["assets/js/<br/>84 moduli, un globale ciascuno"]
-  store["localStorage<br/>linguai.tedesco.v1"]
-  audio["audio/&lt;xx&gt;/&lt;hash&gt;.mp3<br/>nome dal contenuto"]
-  sw["sw.js<br/>cache offline"]
+%%{init: {'theme': 'default'}}%%
+flowchart LR
+    learner([Studente]) --> page["index.html"]
+    page --> engine["Motore: assets/js"]
+    engine --> core_data[("data/core: tedesco, soluzioni")]
+    engine --> overlay[("data/i18n: spiegazioni per lingua")]
+    engine --> audio[("audio: mp3 per hash del contenuto")]
+    engine --> storage[("localStorage: progressi")]
+    sw["Service worker"] -.->|cache| page
+    engine -.->|facoltativo, con chiave e consenso| llm["API del fornitore del modello"]
 
-  html --> engine
-  core --> merge
-  i18n --> merge
-  merge --> engine
-  engine --> store
-  engine --> audio
-  html --> sw
-  sw --> audio
+    classDef core fill:#2563eb,stroke:#1d4ed8,color:#fff
+    classDef data fill:#d97706,stroke:#b45309,color:#fff
+    classDef ext fill:#6b7280,stroke:#4b5563,color:#fff
+    classDef engine fill:#059669,stroke:#047857,color:#fff
+    class page,engine core
+    class core_data,overlay,audio,storage data
+    class llm ext
+    class sw engine
 ```
 
-Una frase tedesca esiste in un posto solo, in `data/core/`. Il nome del file di una registrazione è l'hash di quella frase, quindi non può divergere fra una lingua e l'altra, e aggiungere una sesta lingua di spiegazione non genera nemmeno un mp3 nuovo.
+I contenuti del corso stanno su due livelli. `data/core/` contiene tutto ciò che è in tedesco e tutto ciò che verifica una risposta; `data/i18n/<lingua>/` contiene il testo che chi studia legge nella propria lingua. Il motore li unisce per indice quando carica un livello, quindi una nuova lingua delle spiegazioni è una cartella in più e nessuna nuova registrazione. I file audio prendono il nome da un hash della frase che pronunciano, così le frasi invariate restano sullo stesso file tra una rigenerazione e l'altra.
 
-Il motore tiene le funzioni pure distinte da tutto ciò che tocca il browser. La metà pura si verifica con `node:test` per pochissimo; l'altra metà richiede Playwright. È questo confine a decidere se un modulo va spezzato. La lunghezza no: `store.js` e `verbs-data.js` restano interi perché dividerli separerebbe cose che devono restare d'accordo fra loro.
+L'unico traffico di rete verso l'esterno del sito è il controllo facoltativo con un modello, e solo se chi studia ha incollato una chiave e dato il consenso.
+
+## Prerequisiti
+
+Per usare il corso: un browser recente. Nient'altro.
+
+Per svilupparlo e testarlo:
+
+- Node.js 24 (la versione usata in CI)
+- [uv](https://docs.astral.sh/uv/), solo per rigenerare i file audio
+
+## Esecuzione locale
+
+1. Clona il repository:
+   ```bash
+   git clone https://github.com/AndreaBonn/lerne-deutsch.git
+   cd lerne-deutsch
+   ```
+2. Servilo con il server incluso, che non usa mai la cache:
+   ```bash
+   node scripts/serve.mjs 8080
+   ```
+3. Apri <http://localhost:8080/>.
+
+Funziona anche aprire `index.html` direttamente dal disco. La modalità offline e il controllo facoltativo con un modello richiedono `http(s)`, quindi lì sono disattivati.
+
+Non ci sono file di configurazione né variabili d'ambiente. Lingua delle spiegazioni, voce, velocità del parlato, ritmo del ripasso e chiavi API facoltative si impostano nella schermata Impostazioni.
+
+## Sviluppo
+
+Prima installa gli strumenti di test:
+
+```bash
+npm ci
+npx playwright install chromium
+```
+
+| Comando | Cosa fa |
+|---|---|
+| `npm run lint` | ESLint, solo regole di correttezza |
+| `node scripts/validate.mjs [it\|en\|es\|fr\|pl]` | Controlla i dati del corso dopo l'unione: id duplicati, esercizi completi, lunghezza dei testi della biblioteca |
+| `node scripts/parity.mjs` | Controlla che ogni lingua abbia la stessa forma di quella italiana |
+| `node scripts/check_precache.mjs` | Controlla che il service worker metta in cache tutto ciò che carica `index.html` |
+| `node scripts/check_swversion.mjs [--napraw]` | Controlla (o riscrive) l'impronta del contenuto nella versione del service worker |
+| `npm test` | Test unitari del motore (`node:test`) |
+| `npm run test:mutations` | Controllo a mutazioni: rompe una decisione alla volta e si aspetta che un test fallisca |
+| `npm run test:dom` | Test nel browser con Playwright |
+| `npm run test:all` | Test unitari, a mutazioni e nel browser |
+| `npm run coverage` | Copertura del motore misurata dai test unitari |
+
+### Aggiungere contenuti e audio
+
+```bash
+node scripts/extract_strings.mjs           # elenca ogni frase che richiede una registrazione
+uv run --script scripts/build_audio.py     # genera solo gli mp3 mancanti
+npm run audio:prune                        # elenca gli mp3 orfani; li cancella solo con --apply
+```
+
+Dopo aver aggiunto un file in `assets/js/` o `data/core/`, aggiungilo a `PRECACHE` in `sw.js` ed esegui `node scripts/check_swversion.mjs --napraw`.
 
 ## Struttura del repository
 
 ```text
-index.html              guscio dell'applicazione; l'ordine degli script è il grafo delle dipendenze
-sw.js                   strategia offline, versione con impronta calcolata da PRECACHE
-manifest.webmanifest    metadati per l'installazione come app
-404.html                pagina per GitHub Pages, solo percorsi relativi alla radice
-assets/
-  css/app.css           tutto il sistema visivo
-  fonts/                Spectral, Manrope e JetBrains Mono, con i rispettivi testi OFL
-  icons/                icone dell'app, compresa quella maskable
-  og/                   immagine di anteprima per i social, generata da scripts/build_og.mjs
-  js/                   84 moduli del motore, un oggetto globale per file
-data/
-  core/                 strato neutro: struttura, tedesco, chiavi di risposta
-  i18n/<lang>/          spiegazioni nella lingua dello studente (it, en, es, fr, pl)
-  audio-index.js        hash ordinati di tutte le frasi che hanno una registrazione
-audio/<xx>/<hash>.mp3   registrazioni, generate
-scripts/                validazione, parità, copertura, mutazioni e strumenti di build
-tests/
-  unit/                 69 file, eseguiti in node:vm, senza browser
-  dom/                  49 specifiche Playwright in Chromium
-docs/                   sorgente dell'informativa privacy (PRIVACY.it.md) e registro delle attività
-specs/                  piani e verbali di revisione
+.
+├── index.html            # l'intera interfaccia dell'applicazione
+├── sw.js                 # service worker: cache offline e avviso di aggiornamento
+├── 404.html              # pagina per gli indirizzi sconosciuti su GitHub Pages
+├── assets/
+│   ├── js/               # motore: un file, una responsabilità, un globale
+│   ├── css/              # stili
+│   ├── fonts/            # font ospitati in locale
+│   ├── icons/, og/       # icone dell'app e immagine di anteprima dei link
+├── data/
+│   ├── core/             # dati del corso neutri rispetto alla lingua (tedesco, soluzioni)
+│   ├── i18n/             # spiegazioni e testi dell'interfaccia, una cartella per lingua
+│   └── audio-index.js    # hash ordinati di tutte le frasi registrate
+├── audio/                # registrazioni mp3, nominate per hash del contenuto
+├── scripts/              # validazione, audio, gate di CI e script di supporto
+├── tests/
+│   ├── unit/             # test del motore in una sandbox node:vm
+│   └── dom/              # test nel browser con Playwright
+├── docs/                 # manuali utente, informativa privacy, screenshot
+└── badges/               # dati dei badge scritti dalla CI
 ```
 
-## Prerequisiti
+## Testing
 
-Per usare il corso non serve niente. Basta un browser che apra `index.html`.
+I test unitari eseguono i veri file del motore dentro una sandbox `node:vm`, con orologio e `localStorage` sostituiti (`tests/unit/`). I test nel browser girano con Playwright su `scripts/serve.mjs` (`tests/dom/`) e coprono il routing, ogni tipo di esercizio, la correzione, il contrasto per l'accessibilità in entrambi i temi, il backup, il service worker e la Content Security Policy. Il controllo a mutazioni in `scripts/mutations.mjs` verifica che i test unitari falliscano quando una decisione del motore viene rotta.
 
-Per gli strumenti di sviluppo:
+## Deploy e CI/CD
 
-| Requisito | Versione | Serve per |
-|---|---|---|
-| Node.js | 24 o superiore | script, test unitari, Playwright |
-| Python via `uv` | 3.10 o superiore | generare le registrazioni |
-| ffmpeg | recente | generare le registrazioni |
+`.github/workflows/ci.yml` gira a ogni push e pull request, dai controlli più economici ai più costosi: lint, validazione dei dati, avanzamento del porting, parità tra le lingue, elenco di precache, tag di anteprima dei link, pagina 404, versione del service worker, test unitari, controllo a mutazioni, copertura del motore (minimo 99%) e test nel browser. Su `main` committa anche i dati dei badge di test e copertura in `badges/`.
 
-Node 24 e non 20: `npm test` passa il glob `tests/unit/**/*.test.mjs` direttamente a `node --test`, che lo accetta solo dalla 21 in poi.
+Il sito è pubblicato con GitHub Pages su <https://andreabonn.github.io/lerne-deutsch/>. L'indirizzo è definito in un solo punto, il campo `homepage` di `package.json`.
 
-## Installazione
+## Privacy
 
-1. Clona il repository.
+Il corso non ha account, statistiche di utilizzo né un server proprio. Cosa memorizza, cosa può uscire dal dispositivo (il riconoscimento vocale del browser, il controllo facoltativo con un modello, i log del servizio di hosting) e come annullarlo è spiegato nella schermata Privacy dell'app. Il testo di riferimento è [docs/PRIVACY.it.md](./docs/PRIVACY.it.md).
 
-   ```bash
-   git clone git@github.com:AndreaBonn/lerne-deutsch.git
-   cd lerne-deutsch
-   ```
+## Sicurezza
 
-2. Installa le dipendenze di sviluppo. Se ti interessa solo usare il corso, salta questo passo.
-
-   ```bash
-   npm install
-   ```
-
-3. Installa il browser che Playwright pilota.
-
-   ```bash
-   npx playwright install --with-deps chromium
-   ```
-
-## Esecuzione locale
-
-Aprendo `index.html` dal disco il corso funziona, con due limiti imposti dal browser: il riconoscimento vocale richiede un contesto sicuro e il service worker non si registra su `file://`.
-
-Perché funzioni tutto, serve un server:
-
-```bash
-npm run serve          # http://localhost:8080
-npm run serve -- 3000  # su un'altra porta
-```
-
-Usa questo e non `python3 -m http.server`. Il secondo continua a servire gli script vecchi dopo una modifica, quindi la pagina mostra qualcosa che nel repository non c'è più e il bug si cerca in un codice già corretto. `scripts/serve.mjs` risponde sempre `Cache-Control: no-store` e si rifiuta di servire file fuori dalla cartella del progetto.
-
-## I controlli di qualità
-
-I controlli qui sotto girano a ogni `push` e a ogni `pull_request`, dal più economico al più costoso, così un errore nei dati si segnala in pochi secondi invece che dopo un minuto di test nel browser.
-
-| Comando | Cosa verifica |
-|---|---|
-| `npm run lint` | correttezza, non stile. ESLint flat config, cinque blocchi per cinque nature di file |
-| `node scripts/validate.mjs [lingua]` | id duplicati, completezza degli esercizi, lacune contro le risposte, parole della lingua dello studente finite nello strato neutro |
-| `node scripts/parity.mjs` | che ogni strato di lingua abbia la stessa forma di quello italiano |
-| `node scripts/check_precache.mjs` | che il service worker metta in cache tutto ciò che `index.html` carica |
-| `node scripts/check_ogtags.mjs` | che un link condiviso mostri un'anteprima |
-| `node scripts/check_404.mjs` | che la pagina 404 funzioni dove GitHub Pages la serve |
-| `node scripts/check_swversion.mjs [--napraw]` | che una versione nuova abbia un'impronta con cui annunciarsi |
-| `npm test` | 1949 test in 69 file, logica del motore dentro `node:vm` |
-| `npm run test:mutations` | 196 mutazioni deliberate in 24 file del motore; ciascuna deve far diventare rosso un file di test dichiarato |
-| `node scripts/coverage.mjs --min 99` | copertura del motore da parte dei test unitari, oggi al 100,0% di 5590 righe in 50 file |
-| `npm run test:dom` | 427 test in Chromium, compreso il contrasto misurato dal browser |
-| `npm run test:all` | unitari, mutazioni e DOM in un colpo solo |
-
-Il test di mutazione risponde alla domanda a cui la copertura non risponde. La copertura dice che una riga è stata eseguita, ed eseguire non è verificare. Un'asserzione come `assert.ok(!out.includes("js-play"))` passa anche su un risultato vuoto, con copertura piena e contenuto zero, e tre asserzioni scritte il giorno in cui quel controllo è nato erano esattamente così.
-
-Il test sul contrasto misura il colore attraverso il browser e non attraverso un parser. La palette è in OKLCH, e gli strumenti di accessibilità esterni leggono `oklch(0.31 0.035 350)` come una terna RGB e riportano un canale a 350: il loro numero è un artefatto, non una misura. Qui il colore passa per un canvas 1×1 e torna in sRGB, così la conversione la fa il motore e la soglia è vera.
-
-I conteggi dei test qui sopra sono stati letti dalle suite il 18 novembre 2026 e sono scritti a mano, quindi invecchiano tra una versione e l'altra. Dopo i controlli, `node scripts/badges.mjs` legge i report di quelle stesse esecuzioni e scrive `badges/test-badge.json` e `badges/coverage-badge.json`, che il README del profilo legge come endpoint shields.io e che la CI riscrive a ogni push su `main`.
-
-`npm run check:porting -- --all` gira nella CI: ogni unità e ogni modulo contro il target del porting (conteggi, cinque overlay di lingua, registrazioni, campioni umani); i verdetti del secondo giudice sono stampati come resoconto e non fanno fallire la build. Due script restano fuori dalla CI. `npm run check:live` confronta il sito pubblicato con la versione locale (il `SW_VERSION` servito e l'immagine di anteprima), e `npm run review:lot` chiede un verdetto al secondo giudice, come descritto in `CLAUDE.md`.
-
-Se `npm run lint` riporta ESLint 6.4.0, ha risposto l'eslint di sistema al posto di quello del progetto. Lancia `./node_modules/.bin/eslint .`.
-
-## Aggiungere contenuto al corso
-
-Un'unità vive in due file con lo stesso nome, uno per strato.
-
-In `data/core/` va tutto ciò che è tedesco, tutto ciò che verifica una risposta e la struttura:
-
-```js
-LINGUAI.addUnits("A1", [{
-  id: "a1-u01", icon: "☕", titleIt: "Im Café",
-  lessons: [{
-    id: "a1-u01-l1",
-    tags: ["g-praesens", "g-satz-v2", "g-aussprache"],
-    /* … */
-  }],
-  test: { /* … */ }
-}]);
-```
-
-I campi con nome `it*` (`it`, `titleIt`, `hintIt`, `dir: "toIt"`) sono un'eredità del corso di italiano da cui questo repository è stato derivato. Contengono la lingua che si studia, qui il tedesco: `vocab[].it` contiene `der Tisch`, non una parola italiana. I nomi sono rimasti perché le correzioni al motore si possano ancora portare con cherry-pick dal repository originale.
-
-In `data/i18n/<lang>/` va solo ciò che lo studente legge nella sua lingua, nello stesso ordine:
-
-```js
-LINGUAI.addStrings("pl", {
-  "unit:a1-u01": { title: "W kawiarni", grammarNote: "czas teraźniejszy · rodzaj i liczba mnoga" },
-  "lesson:a1-u01-l1": { title: "…", theme: "…", objectives: [ /* … */ ] }
-});
-```
-
-Gli array si uniscono **per indice**, quindi devono avere lo stesso numero di elementi da entrambe le parti. Una nota contrastiva («nella tua lingua funziona diversamente») si scrive da capo per ogni lingua invece di tradurla: quello che è una trappola per un polacco spesso a un americano non dice niente.
-
-Poi si lanciano i controlli:
-
-```bash
-node scripts/validate.mjs
-node scripts/parity.mjs
-```
-
-Due regole del validatore su cui è facile inciampare. Nello strato neutro non deve comparire nessuna parola nella lingua dello studente, quindi l'etichetta di una costruzione si scrive in tedesco (`Perfekt mit haben`) e così il prompt di un esercizio. E ogni lezione vuole almeno un `tags` che nomini un id vero di `GRAMMAR_REF`, perché è così che il quaderno degli errori dà un nome a quello che è andato storto.
-
-Dopo aver aggiunto un file in `assets/js/` o in `data/core/`, aggiungilo a `PRECACHE` in `sw.js`. Se te ne dimentichi `check_precache.mjs` fa fallire la build, e `check_swversion.mjs --napraw` rinfresca l'impronta.
-
-## La pipeline audio
-
-Le frasi del corso sono registrate, non sintetizzate dal browser. Su Linux la Web Speech API di solito ricade su espeak-ng, che suona meccanico, e sugli altri sistemi la qualità è imprevedibile. Un backend avrebbe risolto, al prezzo di un corso che non sarebbe più statico.
-
-```bash
-node scripts/extract_strings.mjs                    # raccoglie le frasi da data/core/
-uv run --script scripts/build_audio.py --dry-run    # quanti file mancano
-uv run --script scripts/build_audio.py              # genera solo quelli mancanti
-```
-
-Il nome del file è l'hash FNV-1a a 64 bit del testo della frase, calcolato da `audio_hash()` in Python e da `Recordings.hash()` in `assets/js/recordings.js`. Cambiare una delle due impone di cambiare l'altra, altrimenti tutte le registrazioni diventano irraggiungibili. Siccome il nome viene dal contenuto, una frase invariata tiene il suo file e le esecuzioni successive non muovono niente in git.
-
-Due voci: `de-DE-KatjaNeural` legge, `de-DE-ConradNeural` fa il secondo parlante nei dialoghi e nelle conversazioni.
-
-Quando aggiungi una coppia minima, lancia `uv run --script scripts/check_minpairs.py`. Una coppia che la voce rende con file identici byte per byte non si distingue a orecchio, e una coppia che nessuno distingue insegna solo a tirare a indovinare. Non lo mostrerebbe niente: né lo schermo, né il codice, né i test. Il corso ha quattro serie di coppie minime; il suono che il tedesco scrive `ch` non ne ha una di proposito, perché le sue due varianti dipendono dalla vocale che precede e le vere coppie minime richiederebbero parole marginali.
-
-## Il controllo facoltativo con un modello
-
-Le risposte aperte si giudicano confrontando testo, quindi una frase corretta ma formulata diversamente viene rifiutata. Un modello linguistico può dare un secondo parere su quel giudizio, e la chiave la mette lo studente.
-
-Di default non è acceso niente. Senza chiave, senza consenso o con la pagina aperta da disco, `Llm.available()` è falso e il corso si comporta come prima che la funzione esistesse: stessi verdetti, stesso punteggio, nemmeno una richiesta in uscita.
-
-**Cosa il modello può cambiare.** Lo si interroga soltanto su una risposta che il corso ha già rifiutato, e la sua replica arriva all'esercizio attraverso `LlmRules.clamp`, nella forma `ok || promote`. Non esiste un percorso che trasformi una risposta accettata in una rifiutata. Un modello che risponde a caso, che risponde nella lingua sbagliata o che è compromesso del tutto produce una promozione mancata, cioè il corso di oggi. La garanzia sta nel codice e non nel prompt, quindi sopravvive al cambio di fornitore.
-
-**Quattro fornitori, chiavi sul dispositivo.** Google Gemini, Groq, OpenAI e Anthropic, ciascuno nella fascia media del proprio catalogo e non in quella di punta: la domanda è chiusa, il testo da leggere è di un principiante e ogni chiamata la paga lo studente. Nelle Impostazioni incolla le chiavi che già ha e ne stabilisce l'ordine; la cascata interroga il primo fornitore che ha una chiave e passa al successivo solo quando quello fallisce. Una chiave rifiutata ritira il suo fornitore per la sessione e lo dice una volta. Un timeout non dice niente, perché il verdetto locale è già corretto e una funzione facoltativa che fallisce in mezzo a un esercizio è rumore.
-
-Le chiavi stanno in un contenitore `localStorage` tutto loro, `linguai.llm.v1`, che `store.js` non conosce. `exportState` serializza l'intero profilo nel file di backup che il corso invita a conservare, e una credenziale addebitata sulla carta dello studente non ha posto in un file che gli diciamo di portarsi in giro. Cancellare il profilo cancella anche le chiavi.
-
-**I budget.** Tre secondi per un fornitore, otto per l'intera catena, sessanta richieste a sessione. I verdetti restano in cache per la sessione e non finiscono mai su disco, dove accumulerebbero le frasi dello studente per risparmiare una richiesta che potrebbe non ripetersi mai. La conversazione libera ha un budget di sessione separato (`MAX_CHAT_PER_SESSION` in `llm.js`), così una chat lunga non esaurisce quello da cui dipende il giudice delle risposte.
-
-**Un secondo uso, orientato al contrario.** La schermata di scrittura offre un pulsante che chiede una lettura dell'intero testo. Quella risposta non cambia nessun punteggio, nessuna scheda e nessun progresso, quindi non c'è niente da fermare: torna come prosa e viene disegnata come testo. Le due istruzioni sono scritte in direzioni opposte. Il giudice risponde a una domanda chiusa e nel dubbio rifiuta, perché una frase sbagliata accettata è una frase sbagliata che poi si esercita. Il lettore non ha nessun verdetto da sbagliare, quindi la prudenza non gli compra niente: cita e si espone, perché un generico garbato costa soldi e non insegna niente a nessuno.
-
-**Un terzo uso, la simulazione d'esame.** La stessa lettura è disponibile per le sezioni di produzione scritta e orale della simulazione, e non le valuta mai. `CilsReport` toglie dalla risposta, prima che qualcuno la veda, ogni frase che contiene una frazione, una percentuale, un numero accanto alla parola «punti» o una parola di verdetto in una delle sei lingue. La regola sta nel codice, come il clamp. Restringe una fessura e non la chiude: un verdetto senza numeri e senza quelle parole passerebbe, ed è per questo che la schermata dichiara che il simulatore non valuta la produzione.
-
-| File | Cosa contiene |
-|---|---|
-| `llm-providers.js` | i quattro fornitori come dati: url, header, body e come si legge la risposta |
-| `llm-prompts.js` | cosa si chiede, che cambia per ragioni didattiche |
-| `llm-rules.js` | la cascata, la lettura del verdetto e il clamp, che cambiano per ragioni ingegneristiche |
-| `llm-keys.js` | le chiavi, strutturalmente fuori dallo stato |
-| `llm-net.js` | la richiesta, il suo orologio e la discesa lungo la catena |
-| `llm.js` | tre vie d'ingresso, `judge`, `review` e `test`, dietro i cancelli del protocollo, del consenso e del budget |
-
-I primi tre file sono funzioni pure e si verificano in `node:test` senza chiave e senza browser, iniettando il trasporto. Fra le loro mutazioni c'è quella che rompe il clamp e pretende che `tests/unit/llm-rules.test.mjs` diventi rosso. In `index.html` la direttiva `connect-src` nomina quei quattro host e nient'altro: è la CSP a dire con onestà dove questa pagina può mandare qualcosa.
-
-## Deploy e CI
-
-`.github/workflows/ci.yml` esegue i controlli elencati sopra, su Node 24 e con Chromium installato, poi riscrive i due file dei badge.
-
-Il sito è pubblicato su GitHub Pages dalla radice di `main`, quindi ogni push ridispiega. Non c'è nessun passo di build: quello che sta nel repository è quello che riceve il browser.
-
-Le nuove versioni si annunciano invece di prendere il posto della precedente. Un service worker nuovo aspetta in `waiting` finché la pagina non lo chiede allo studente, perché senza build i nomi dei file non portano un hash e un subentro silenzioso lascerebbe una scheda aperta con codice vecchio sopra file nuovi. La versione è `v35.<12 esadecimali>`, dove l'impronta è un hash del contenuto di `PRECACHE` scritta da `check_swversion.mjs --napraw` e sorvegliata in CI, così una correzione in `core.js` non può uscire come una versione che nessuno vedrà.
-
-## Sicurezza e privacy
-
-Il corso non ha server, non ha account e non fa nessuna richiesta a domini di terzi. Cosa questo esclude e cosa invece no sta scritto in [SECURITY.it.md](./SECURITY.it.md), insieme a come segnalare una vulnerabilità. L'informativa sulla privacy è una pagina dentro il corso (`#/privacy`), raggiungibile dal piè di pagina di ogni schermata e dalle Impostazioni; il testo sorgente, in italiano, è [docs/PRIVACY.it.md](./docs/PRIVACY.it.md).
-
-Una cosa va detta anche qui: il riconoscimento vocale manda una registrazione della voce dello studente al server del suo browser. A parte il controllo facoltativo con un modello, è l'unico traffico in uscita di tutto il corso, è protetto da un consenso esplicito, e rifiutarlo trasforma gli esercizi interessati in esercizi scritti.
+Per segnalare una vulnerabilità, consulta [SECURITY.it.md](./SECURITY.it.md).
 
 ## Licenza
 
-Il codice è rilasciato con licenza MIT. Il contenuto del corso, registrazioni comprese, è rilasciato con licenza CC BY-SA 4.0. Vedi [LICENSE](./LICENSE) e [LICENSE-CONTENT](./LICENSE-CONTENT).
+Il repository è coperto da due licenze, entrambe descritte in [LICENSE](./LICENSE):
 
-I font sono lavoro di terzi sotto SIL Open Font License, e i loro testi viaggiano con loro in `assets/fonts/`. La lista di frequenza deriva da frasi tedesche del [progetto Tatoeba](https://tatoeba.org) sotto CC BY 2.0 FR, e quell'attribuzione è dovuta.
+- Codice (`assets/js/`, `assets/css/`, `scripts/`, `tests/`, `sw.js`, `index.html`, configurazione): MIT.
+- Contenuti del corso (`data/`, `audio/`, `docs/`): CC BY-SA 4.0, vedi [LICENSE-CONTENT](./LICENSE-CONTENT).
+- Font in `assets/fonts/`: SIL Open Font License, dei rispettivi autori.
 
 ## Supporta il progetto
 
-Se il corso ti è stato utile, una stella su [GitHub](https://github.com/AndreaBonn/lerne-deutsch) aiuta altri studenti a trovarlo.
-
-Deutsch lernen è gratuito. Se vuoi contribuire, puoi lasciare un'offerta tramite PayPal. L'importo lo scegli tu ed è del tutto facoltativo.
-
-<div align="center">
-
-[![Dona con PayPal](https://img.shields.io/badge/Dona-PayPal-00457C?logo=paypal&logoColor=white&style=for-the-badge)](https://paypal.me/AndreaBonacci19)
-
-</div>
+Se il corso ti è utile, una stella su [GitHub](https://github.com/AndreaBonn/lerne-deutsch) aiuta altri a trovarlo. Le donazioni passano dal link nel pulsante Sponsor del repository.
