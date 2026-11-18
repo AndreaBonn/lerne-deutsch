@@ -65,7 +65,7 @@ LINGUAI.addStrings("en", {
 
   "read:r-b1-ausbildung": {
     title: "The Workshop Instead",
-    gloss: ["the Abitur (final exam of academic high school, needed for university)", "vocational training (apprenticeship)", "the workshop, the auto repair shop", "the auto mechatronics technician (f.)", "the company (where the trainee works)", "the vocational school", "the step (in a job)", "the material (to be learned)"],
+    gloss: ["the Abitur (school-leaving qualification from academic high school; the usual route to university)", "vocational training (apprenticeship)", "the workshop, the auto repair shop", "the auto mechatronics technician (f.)", "the company (where the trainee works)", "the vocational school", "the step (in a job)", "the material (to be learned)"],
     lex: ["to study (at a university), go to college", "experience", "to gather, collect", "internship", "Stuttgart", "to notice, realize", "hand", "fun", "week", "boss (not a cook)", "mistake", "to review, go over", "exam", "to pass (an exam)", "parents", "to wish, want", "to earn", "to save (money)", "to open (a business)"]
   },
 
@@ -126,7 +126,7 @@ LINGUAI.addStrings("en", {
   "read:r-c1-betriebsrat": {
     title: "The Works Council Speaks Up",
     gloss: ["to put up for discussion", "the working-hours policy", "the works council (elected employee body with legal rights; no direct US equivalent)", "to raise, bring up", "to take effect", "the right of codetermination (a legal say in decisions)", "to refer to", "to point out (as a concern)", "to reconcile", "the works agreement (between management and works council)", "to take into account (+ dative)", "to admit, concede"],
-    lex: ["midsize (of a company)", "mechanical engineering", "company", "Bielefeld", "management", "fall, autumn", "in the future", "employees", "shift", "to plan", "freedom", "consent, approval", "Works Constitution Act", "to be entitled to (+ dative)", "staff meeting", "similar", "company, workplace", "pressure", "to increase", "parents", "opening hours", "daycare (center)", "negotiation", "to come about", "to introduce", "to force", "at short notice", "to enter, sign up (in a schedule)", "influence", "to underestimate", "to come to like (an + dative)", "procedure"]
+    lex: ["midsize (of a company)", "mechanical engineering", "company", "Bielefeld", "management", "fall, autumn", "in the future", "employees", "shift", "to plan", "freedom", "consent, approval", "Works Constitution Act", "to be due to, belong to by right (the person is in the dative: ihm steht ... zu, he is entitled to ...)", "staff meeting", "similar", "company, workplace", "pressure", "to increase", "parents", "opening hours", "daycare (center)", "negotiation", "to come about", "to introduce", "to force", "at short notice", "to enter, sign up (in a schedule)", "influence", "to underestimate", "to come to like (an + dative)", "procedure"]
   },
 
   "read:r-c2-lob": {
