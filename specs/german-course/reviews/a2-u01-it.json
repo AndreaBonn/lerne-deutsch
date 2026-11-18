@@ -1,7 +1,18 @@
 {
-  "bundleHash": "1b9383aed32f05a80a7569c5338fddd07c6c17ef8374d956378c825cdcb185b3",
-  "findings": [],
+  "bundleHash": "2c2f7d7e3b83f43e04b22bfdeff7910e859d91a380df8f9d1814e395773e1da9",
+  "findings": [
+    {
+      "kind": "traduzione",
+      "msg": "«Früher waren wir jeden Sommer am Meer» descrive la presenza al mare, mentre «andavamo» esprime uno spostamento. Traduci «Un tempo eravamo ogni estate al mare». La stessa correzione riguarda la traduzione dell'esercizio speak in merged.lessons[0].exercises[9].tr.",
+      "path": "merged.lessons[0].grammar.examples[3].tr"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Non tutti i modali al Präteritum perdono l'Umlaut: anche sollen ne è privo già all'infinito. Specifica che müssen, können e dürfen lo perdono, mentre wollen e sollen non lo hanno.",
+      "path": "merged.lessons[2].grammar.note"
+    }
+  ],
   "lang": "it",
   "unit": "a2-u01",
-  "verdict": "pass"
+  "verdict": "fail"
 }

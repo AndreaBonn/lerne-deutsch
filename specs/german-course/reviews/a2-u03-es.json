@@ -1,7 +1,28 @@
 {
-  "bundleHash": "884a0f22139c4ac775201754fe29ee55b359da93663014316fe72a84826dac1c",
-  "findings": [],
+  "bundleHash": "209bcecbfb3a83f8b76f2cce1306104fd0f9393d5c780252f9c5291d8a6960c0",
+  "findings": [
+    {
+      "kind": "chiave di risposta",
+      "msg": "«Lo veo mañana» corrisponde a «Ich sehe ihn morgen». «Ich treffe ihn morgen» significa incontrarlo e aggiunge un'informazione non presente nella frase spagnola. Rimuovere le due alternative con treffen e correggere la spiegazione.",
+      "path": "merged.lessons[0].exercises[7]"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La teoria afferma che wir e ihr cambiano al caso accusativo, ma restano rispettivamente wir → uns e ihr → euch: questi due effettivamente cambiano. L'elenco omette però la forma di cortesia Sie, che rimane invariata. Aggiungere Sie alle forme che non cambiano.",
+      "path": "merged.lessons[0].theory[0].p"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Komm doch mal vorbei» invita a passare, ma non specifica né «un día» né «por mi casa». Usare per esempio «¡Pásate, anda, y tómate un momento!» oppure aggiungere tali dettagli alla frase tedesca.",
+      "path": "merged.lessons[3].exercises[9].tr"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La regola che aggiunge -e alle radici in -t o -d è troppo ampia: per esempio «halte» richiede -e, mentre «finde» e «warte» lo richiedono per ragioni morfologiche diverse; soprattutto la formulazione generale sulla formazione dalla sola radice non segnala che nei verbi regolari -e è spesso facoltativa, come «Mach/Mache». Precisare la facoltatività e presentare Warte e Arbeite come forme obbligatorie negli esempi trattati.",
+      "path": "merged.lessons[3].theory[0].p"
+    }
+  ],
   "lang": "es",
   "unit": "a2-u03",
-  "verdict": "pass"
+  "verdict": "fail"
 }

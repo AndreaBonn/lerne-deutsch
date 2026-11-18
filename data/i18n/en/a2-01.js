@@ -61,7 +61,7 @@ LINGUAI.addStrings("en", {
       "elementary school",
       "teacher (man)",
       "teacher (woman)",
-      "village, small town",
+      "village",
       "city",
       "garden, yard",
       "dog",
@@ -234,7 +234,7 @@ LINGUAI.addStrings("en", {
   },
   "lesson:a2-u01-l3": {
     theme: "Rules and permissions",
-    title: "I had to, I could, because ...",
+    title: "I had to, I was allowed to, because ...",
     objectives: [
       "use musste, konnte, wollte and durfte in the Präteritum",
       "give a reason with weil and the verb at the end",
@@ -257,7 +257,7 @@ LINGUAI.addStrings("en", {
     ],
     grammar: {
       title: "Modals in the Präteritum and weil",
-      note: "In the Präteritum the modals lose their Umlaut (except <b>wollte</b>, which never had one). After <b>weil</b> the finite verb goes to the end.",
+      note: "In the Präteritum <b>müssen</b>, <b>können</b> and <b>dürfen</b> lose their Umlaut (musste, konnte, durfte); <b>wollen</b> and <b>sollen</b> never had one. After <b>weil</b> the finite verb goes to the end.",
       table: {
         head: ["infinitive", "Präteritum (ich)", "meaning", "with weil"],
         rows: [
@@ -462,10 +462,10 @@ LINGUAI.addStrings("en", {
   "lesson:a2-u01-test": {
     theme: "Review",
     title: "Unit 1 review",
-    objectives: ["check the Präteritum, als, weil and the modals in the past"],
+    objectives: ["check the Präteritum, als and wenn, weil, the modals in the past and reflexive verbs with their preposition"],
     theory: [
       {
-        p: "Ten questions on the Präteritum, als, weil and the modals in the past (not the reflexive verbs of lesson 4). You pass with 70%. Don't look back at the lessons while you answer: if you don't remember something, it's better to go back and review."
+        p: "Ten questions on the whole unit. You pass with 70%. Don't look back at the lessons while you answer: if you don't remember something, it's better to go back and review."
       }
     ],
     exercises: [
@@ -478,9 +478,9 @@ LINGUAI.addStrings("en", {
         why: "<i>Musste, musstest, musste, mussten, musstet, mussten</i>: no Umlaut."
       },
       {
-        q: "Complete: “Gestern ___ wir keine Zeit.” (we didn't have, use haben)",
-        hint: "haben, Präteritum, wir",
-        why: "<b>Hatten</b>: stem <i>hatt-</i> and the ending <i>-en</i>."
+        q: "Complete: “Immer ___ ich Zeit hatte, habe ich gelesen.” (whenever, a repeated event)",
+        hint: "a repeated event in the past",
+        why: "A repeated event in the past: <b>wenn</b>, not <i>als</i>. In the subordinate clause <i>hatte</i> goes to the end."
       },
       {
         q: "Complete: “Meine Eltern haben viel gearbeitet, ___ ich klein war.” (when, a closed period)",
@@ -488,9 +488,9 @@ LINGUAI.addStrings("en", {
         why: "A closed period of the past: <b>als</b>."
       },
       {
-        q: "Complete: “Ich konnte nicht kommen, ___ ich krank war.” (because, use weil)",
-        hint: "use weil",
-        why: "<b>Weil</b> introduces the reason and sends the verb (<i>war</i>) to the end."
+        q: "Complete the sentence.",
+        tr: "I have fond memories of my childhood.",
+        why: "<i>Sich erinnern an</i> + accusative: the reflexive pronoun <i>mich</i> follows the verb, then comes the preposition <i>an</i>."
       },
       {
         q: "Which sentence is correct?",
@@ -1053,7 +1053,7 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "The accusative pronoun in place of the noun",
-        p: "To avoid repeating a noun that is the <b>direct object</b> you use the accusative pronoun: <em>mich, dich, ihn, sie, es, uns, euch, sie, Sie</em>. Compared with the nominative, <em>ich, du, er, wir, ihr</em> change; <em>sie</em> and <em>es</em> stay the same. The pronoun follows the <b>gender of the German noun</b>, even for things: <em>der Bruder → ihn</em>, <em>die Kollegin → sie</em>, <em>das Kind → es</em>, <em>der Schlüssel → ihn</em>. In a neutral main clause the pronoun comes right after the conjugated verb: <em>Ich kenne ihn gut.</em> If the sentence begins with another element, and the subject is a pronoun, the object pronoun follows it: <em>Morgen sehe ich ihn.</em> If the subject is a noun, the object pronoun normally comes before it: <em>Morgen sieht ihn mein Bruder.</em> In a subordinate clause with a pronoun subject it comes after the conjunction and the subject, before the verb at the end: <em>..., weil ich ihn gut kenne.</em> With a noun subject the pronoun comes first: <em>..., weil ihn mein Bruder kennt.</em>"
+        p: "To avoid repeating a noun that is the <b>direct object</b> you use the accusative pronoun: <em>mich, dich, ihn, sie, es, uns, euch, sie, Sie</em>. Compared with the nominative, <em>ich, du, er, wir, ihr</em> change; <em>sie</em> and <em>es</em> stay the same. The pronoun follows the <b>gender of the German noun</b>, even for things: <em>der Bruder → ihn</em>, <em>die Kollegin → sie</em>, <em>das Kind → es</em>, <em>der Schlüssel → ihn</em>. In a neutral main clause the pronoun comes right after the conjugated verb: <em>Ich kenne ihn gut.</em> If the sentence begins with another element, and the subject is a pronoun, the object pronoun follows it: <em>Morgen sehe ich ihn.</em> If the subject is a noun, the object pronoun often comes before it: <em>Morgen sieht ihn mein Bruder.</em> <em>Morgen sieht mein Bruder ihn</em> is also correct. In a subordinate clause with a pronoun subject it comes after the conjunction and the subject, before the verb at the end: <em>..., weil ich ihn gut kenne.</em> With a noun subject both orders are correct: <em>..., weil ihn mein Bruder kennt</em> or <em>..., weil mein Bruder ihn kennt.</em>"
       },
       {
         contrast: "English has almost the same set (<em>me, you, him, her, it, us, them</em>) and also puts the pronoun after the verb: “I see him”, <em>Ich sehe ihn</em>. The big difference is things: English calls every object <em>it</em> (“the key → I see it”), while German keeps the gender of the noun: <em>der Schlüssel → ihn</em>, <em>die Zeitung → sie</em>, <em>das Buch → es</em>. So “I read it” can be <em>Ich lese ihn</em>, <em>sie</em> or <em>es</em>, depending on the noun. English <em>him</em> also covers both cases (“I see him”, “I help him”), while German splits it into <em>ihn</em> and <em>ihm</em>."
@@ -1497,7 +1497,7 @@ LINGUAI.addStrings("en", {
         why: "In <i>Sag</i> the final <b>g</b> is usually read [k]; in <i>zusammen</i> the <b>z</b> is [ts] and the <b>s</b> before a vowel is usually voiced."
       },
       {
-        tr: "Come by my place sometime, come on, and take some time!",
+        tr: "Do come by sometime, and take a moment!",
         why: "In <i>vorbei</i> the <b>v</b> is read [f]; in <i>Moment</i> the stress falls on the second syllable."
       }
     ]
@@ -1540,7 +1540,7 @@ LINGUAI.addStrings("en", {
         why: "<b>Euch</b>: <i>danken</i> takes the dative, and the dative of <i>ihr</i> is <i>euch</i>."
       },
       {
-        q: "How do you say “I like this idea a lot”?",
+        q: "How do you say “I like the idea a lot”?",
         opts: ["Die Idee gefällt mich sehr.", "Die Idee gefällt mir sehr.", "Ich gefalle die Idee sehr."],
         why: "The thing is the subject (<i>die Idee</i>) and the person is in the dative (<i>mir</i>)."
       },

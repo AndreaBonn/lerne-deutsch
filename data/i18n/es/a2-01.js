@@ -257,7 +257,7 @@ LINGUAI.addStrings("es", {
     ],
     grammar: {
       title: "Modales en Präteritum y weil",
-      note: "En Präteritum los modales pierden la diéresis (Umlaut), salvo <b>wollte</b>, que no la tenía. Después de <b>weil</b> el verbo conjugado va al final.",
+      note: "En Präteritum <b>müssen</b>, <b>können</b> y <b>dürfen</b> pierden la diéresis (Umlaut): musste, konnte, durfte; <b>wollen</b> y <b>sollen</b> nunca la tuvieron. Después de <b>weil</b> el verbo conjugado va al final.",
       table: {
         head: ["infinitivo", "Präteritum (ich)", "significado", "con weil"],
         rows: [
@@ -462,10 +462,10 @@ LINGUAI.addStrings("es", {
   "lesson:a2-u01-test": {
     theme: "Verificación",
     title: "Verificación de la unidad 1",
-    objectives: ["comprobar el Präteritum, als, weil y los modales en pasado"],
+    objectives: ["comprobar el Präteritum, als y wenn, weil, los modales en pasado y los verbos reflexivos con su preposición"],
     theory: [
       {
-        p: "Preguntas sobre el Präteritum, als, weil y los modales en pasado. Se aprueba con el 70 %. No mires las lecciones mientras respondes: si no recuerdas algo, es mejor volver a repasar."
+        p: "Diez preguntas sobre toda la unidad. Se aprueba con el 70 %. No mires las lecciones mientras respondes: si no recuerdas algo, es mejor volver a repasar."
       }
     ],
     exercises: [
@@ -478,9 +478,9 @@ LINGUAI.addStrings("es", {
         why: "<i>Musste, musstest, musste, mussten, musstet, mussten</i>: sin diéresis."
       },
       {
-        q: "Completa: «Gestern ___ wir keine Zeit.» (no teníamos, usa haben)",
-        hint: "haben, Präteritum, wir",
-        why: "<b>Hatten</b>: raíz <i>hatt-</i> y terminación <i>-en</i>."
+        q: "Completa: «Immer ___ ich Zeit hatte, habe ich gelesen.» (cada vez que, un hecho repetido)",
+        hint: "un hecho repetido en el pasado",
+        why: "Un hecho repetido en el pasado: <b>wenn</b>, no <i>als</i>. En la subordinada <i>hatte</i> va al final."
       },
       {
         q: "Completa: «Meine Eltern haben viel gearbeitet, ___ ich klein war.» (cuando, un periodo cerrado)",
@@ -488,9 +488,9 @@ LINGUAI.addStrings("es", {
         why: "Un periodo cerrado del pasado: <b>als</b>."
       },
       {
-        q: "Completa: «Ich konnte nicht kommen, ___ ich krank war.» (porque, usa weil)",
-        hint: "usa weil",
-        why: "<b>Weil</b> introduce el motivo y manda el verbo (<i>war</i>) al final."
+        q: "Completa la frase.",
+        tr: "Recuerdo con gusto mi infancia.",
+        why: "<i>Sich erinnern an</i> + acusativo: el pronombre reflexivo <i>mich</i> sigue al verbo y después viene la preposición <i>an</i>."
       },
       {
         q: "¿Qué frase es correcta?",
@@ -1053,7 +1053,7 @@ LINGUAI.addStrings("es", {
     theory: [
       {
         h: "El pronombre de acusativo en lugar del nombre",
-        p: "Para no repetir un nombre que es <b>objeto directo</b> se usa el pronombre de acusativo: <em>mich, dich, ihn, sie, es, uns, euch, sie, Sie</em>. Respecto al nominativo cambian <em>ich, du, er, wir, ihr</em>; <em>sie</em> y <em>es</em> se quedan igual. El pronombre sigue el <b>género del nombre alemán</b>, también para las cosas: <em>der Bruder → ihn</em>, <em>die Kollegin → sie</em>, <em>das Kind → es</em>, <em>der Schlüssel → ihn</em>. En la oración principal neutra el pronombre va justo después del verbo conjugado: <em>Ich kenne ihn gut.</em> Si la frase empieza por otro elemento, y el sujeto es un pronombre, el pronombre de objeto lo sigue: <em>Morgen sehe ich ihn.</em> Si el sujeto es un nombre, el pronombre de objeto suele ir antes: <em>Morgen sieht ihn mein Bruder.</em> En una subordinada con sujeto pronominal va después de la conjunción y del sujeto, antes del verbo final: <em>..., weil ich ihn gut kenne.</em> Con un sujeto nominal el pronombre va primero: <em>..., weil ihn mein Bruder kennt.</em>"
+        p: "Para no repetir un nombre que es <b>objeto directo</b> se usa el pronombre de acusativo: <em>mich, dich, ihn, sie, es, uns, euch, sie, Sie</em>. Respecto al nominativo cambian <em>ich, du, er, wir, ihr</em>; <em>sie</em> y <em>es</em> se quedan igual. El pronombre sigue el <b>género del nombre alemán</b>, también para las cosas: <em>der Bruder → ihn</em>, <em>die Kollegin → sie</em>, <em>das Kind → es</em>, <em>der Schlüssel → ihn</em>. En la oración principal neutra el pronombre va justo después del verbo conjugado: <em>Ich kenne ihn gut.</em> Si la frase empieza por otro elemento, y el sujeto es un pronombre, el pronombre de objeto lo sigue: <em>Morgen sehe ich ihn.</em> Si el sujeto es un nombre, el pronombre de objeto suele ir antes: <em>Morgen sieht ihn mein Bruder.</em> También es correcto <em>Morgen sieht mein Bruder ihn</em>. En una subordinada con sujeto pronominal va después de la conjunción y del sujeto, antes del verbo final: <em>..., weil ich ihn gut kenne.</em> Con un sujeto nominal valen los dos órdenes: <em>..., weil ihn mein Bruder kennt</em> o <em>..., weil mein Bruder ihn kennt.</em>"
       },
       {
         contrast: "En español el pronombre átono va <b>antes</b> del verbo (<em>lo veo, la conozco</em>); en alemán es una palabra aparte. En una oración principal con el sujeto en primera posición, el pronombre suele ir después del verbo conjugado: <em>Ich sehe ihn.</em> También puede aparecer al principio: <em>Ihn sehe ich morgen.</em> En una subordinada: <em>..., weil ich ihn sehe.</em> Además, el género sigue la palabra alemana, no la española, y las dos lenguas no siempre coinciden: <em>la llave</em> es femenina (<em>la veo</em>), pero <em>der Schlüssel</em> es masculino: <em>Ich sehe ihn nicht</em>. Al revés, <em>el periódico</em> es masculino (<em>lo leo</em>), pero <em>die Zeitung</em> es femenina: <em>Ich lese sie</em>. El español distingue «lo» de «le» (acusativo y dativo), y el alemán distingue <em>ihn</em> de <em>ihm</em>, con la misma idea."
@@ -1540,7 +1540,7 @@ LINGUAI.addStrings("es", {
         why: "<b>Euch</b>: <i>danken</i> pide el dativo, y el dativo de <i>ihr</i> es <i>euch</i>."
       },
       {
-        q: "¿Cómo se dice «Esta idea me gusta mucho»?",
+        q: "¿Cómo se dice «Me gusta mucho la idea»?",
         opts: ["Die Idee gefällt mich sehr.", "Die Idee gefällt mir sehr.", "Ich gefalle die Idee sehr."],
         why: "La cosa es el sujeto (<i>die Idee</i>) y la persona va en dativo (<i>mir</i>)."
       },

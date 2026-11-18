@@ -133,7 +133,7 @@ LINGUAI.addStrings("fr", {
         contrast: "Le français n'a qu'un seul <em>quand</em> (ou <em>lorsque</em>), et il ne change pas l'ordre des mots : <em>quand j'étais petit, nous habitions au village</em>. En allemand, il faut choisir entre <em>als</em> et <em>wenn</em>, et le verbe conjugué va à la fin : <em>Als ich klein war, ...</em>, pas « Als ich war klein ». Quand la subordonnée est en tête, la principale reprend avec le verbe conjugué juste après la virgule : <em>Als ich klein war, haben wir in einem Dorf gewohnt.</em> Pour la question directe, on emploie encore un autre mot, <em>wann</em> (« quand ? »)."
       },
       {
-        trap: "Pour un fait répété dans le passé, le réflexe du francophone est « quand » = <em>als</em>, mais il faut <b>wenn</b> : <em>Immer wenn es geschneit hat, sind wir Schlitten gefahren</em> (chaque fois qu'il neigeait). Pour choisir, demande-toi si le fait a eu lieu une seule fois (<em>als</em>) ou plusieurs fois (<em>wenn</em>). <em>Als</em> ne s'emploie pas pour le présent ni pour le futur."
+        trap: "Pour un fait répété dans le passé, le réflexe du francophone est « quand » = <em>als</em>, mais il faut <b>wenn</b> : <em>Immer wenn es geschneit hat, sind wir Schlitten gefahren</em> (chaque fois qu'il neigeait). Pour choisir, demande-toi si le fait ou la période n'a eu lieu qu'une fois (<em>als</em>, même si d'autres choses s'y sont répétées : <em>Als wir in Wien gewohnt haben, bin ich oft Fahrrad gefahren</em>) ou si le fait s'est répété plusieurs fois (<em>wenn</em>). <em>Als</em> ne s'emploie pas pour le présent ni pour le futur."
       },
       {
         tip: "<em>Als</em> est le même mot que dans le comparatif (<em>älter als ich</em>), mais ici il joue un autre rôle : il relie deux propositions. Avec le Perfekt dans la subordonnée, le verbe conjugué (l'auxiliaire) se place à la fin, après le participe : <em>Als wir in Wien gewohnt haben, ...</em>"
@@ -257,7 +257,7 @@ LINGUAI.addStrings("fr", {
     ],
     grammar: {
       title: "Modaux au Präteritum et weil",
-      note: "Au Präteritum, les modaux perdent le tréma (sauf <b>wollte</b>, qui n'en avait pas). Après <b>weil</b>, le verbe conjugué va à la fin.",
+      note: "Au Präteritum, <b>müssen</b>, <b>können</b> et <b>dürfen</b> perdent le tréma (musste, konnte, durfte) ; <b>wollen</b> et <b>sollen</b> n'en ont jamais eu. Après <b>weil</b>, le verbe conjugué va à la fin.",
       table: {
         head: ["infinitif", "Präteritum (ich)", "sens", "avec weil"],
         rows: [
@@ -271,7 +271,7 @@ LINGUAI.addStrings("fr", {
         { tr: "Je devais faire mes devoirs tous les jours.", note: "ich musste + infinitif en fin de phrase" },
         { tr: "Nous n'avions pas le droit de regarder longtemps la télévision.", note: "dürfen : wir durften" },
         { tr: "Je voulais un chien, mais mes parents ne voulaient pas.", note: "wollen : ich wollte, sie wollten" },
-        { tr: "J'étais triste parce que je ne pouvais pas aller au cinéma.", note: "weil : le verbe durfte va à la fin" },
+        { tr: "J'étais triste parce que je n'avais pas le droit d'aller au cinéma.", note: "weil : le verbe durfte va à la fin" },
         { tr: "Je ne pouvais pas venir parce que je devais travailler.", note: "weil ich arbeiten musste" },
         { tr: "Nous pouvions jouer dans le jardin parce qu'il faisait beau.", note: "weil ... war" }
       ]
@@ -339,7 +339,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         tr: "Enfant, je n'avais pas le droit de manger des sucreries, parce que mes parents étaient sévères.",
-        why: "Dans <i>Süßigkeiten</i>, le <b>ü</b> est long et le <b>ß</b> est un <b>s</b> sourd ; <i>streng</i> commence par [ʃtr], : le <b>st</b> initial d'un mot se lit [ʃt], avec le son « ch » du français."
+        why: "Dans <i>Süßigkeiten</i>, le <b>ü</b> est long et le <b>ß</b> est un <b>s</b> sourd ; <i>streng</i> commence par [ʃtr] : le <b>st</b> initial d'un mot se lit [ʃt], avec le son « ch » du français."
       }
     ]
   },
@@ -462,7 +462,7 @@ LINGUAI.addStrings("fr", {
   "lesson:a2-u01-test": {
     theme: "Évaluation",
     title: "Évaluation de l'unité 1",
-    objectives: ["vérifier le Präteritum de sein, haben et des modaux, als pour une période révolue, weil et la place du verbe dans la subordonnée"],
+    objectives: ["vérifier le Präteritum de sein, haben et des modaux, als et wenn, weil et la place du verbe dans la subordonnée, les verbes réfléchis et leur préposition"],
     theory: [
       {
         p: "Dix questions sur toute l'unité. Il faut 70 % pour réussir. Ne relis pas les leçons pendant que tu réponds : si tu ne te souviens pas de quelque chose, mieux vaut revenir réviser."
@@ -478,9 +478,9 @@ LINGUAI.addStrings("fr", {
         why: "<i>Musste, musstest, musste, mussten, musstet, mussten</i> : sans tréma."
       },
       {
-        q: "Complète : « Gestern ___ wir keine Zeit. » (nous n'avions pas, avec haben)",
-        hint: "haben, Präteritum, wir",
-        why: "<b>Hatten</b> : radical <i>hatt-</i> et terminaison <i>-en</i>."
+        q: "Complète : « Immer ___ ich Zeit hatte, habe ich gelesen. » (chaque fois que, un fait répété)",
+        hint: "un fait répété dans le passé",
+        why: "Un fait répété dans le passé : <b>wenn</b>, pas <i>als</i>. Dans la subordonnée, <i>hatte</i> va à la fin."
       },
       {
         q: "Complète : « Meine Eltern haben viel gearbeitet, ___ ich klein war. » (quand, une période révolue)",
@@ -488,9 +488,9 @@ LINGUAI.addStrings("fr", {
         why: "Une période révolue du passé : <b>als</b>."
       },
       {
-        q: "Complète : « Ich konnte nicht kommen, ___ ich krank war. » (parce que, avec weil)",
-        hint: "emploie weil",
-        why: "<b>Weil</b> introduit la raison et envoie le verbe (<i>war</i>) à la fin."
+        q: "Complète la phrase.",
+        tr: "Je me souviens volontiers de mon enfance.",
+        why: "<i>Sich erinnern an</i> + accusatif : le pronom réfléchi <i>mich</i> suit le verbe, puis vient la préposition <i>an</i>."
       },
       {
         q: "Quelle phrase est correcte ?",
@@ -1540,7 +1540,7 @@ LINGUAI.addStrings("fr", {
         why: "<b>Euch</b> : <i>danken</i> prend le datif, et le datif de <i>ihr</i> est <i>euch</i>."
       },
       {
-        q: "Comment dis-tu « Cette idée me plaît beaucoup » ?",
+        q: "Comment dis-tu « L'idée me plaît beaucoup » ?",
         opts: ["Die Idee gefällt mich sehr.", "Die Idee gefällt mir sehr.", "Ich gefalle die Idee sehr."],
         why: "La chose est le sujet (<i>die Idee</i>) et la personne est au datif (<i>mir</i>)."
       },

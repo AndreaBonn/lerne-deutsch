@@ -1,7 +1,23 @@
 {
-  "bundleHash": "365ec32f6da87f598bb0e4cce2ebeecd03ee829601e2bd38dff45880f55899a6",
-  "findings": [],
+  "bundleHash": "aed6686ac44ad4f8b08c13110a9e6ff166dd39372085b6ae2ba8b74b98483ab1",
+  "findings": [
+    {
+      "kind": "chiave di risposta",
+      "msg": "La seconda risposta accetta «ich ausruhen», ma sich ausruhen richiede il pronome riflessivo. Eliminare l'alternativa senza «mich».",
+      "path": "neutral.test.exercises[7].a[1]"
+    },
+    {
+      "kind": "chiave di risposta",
+      "msg": "La seconda risposta accetta «ich ausruhen», ma sich ausruhen richiede il pronome riflessivo. Eliminare l'alternativa senza «mich».",
+      "path": "merged.test.exercises[7].a[1]"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In «spazieren» il gruppo iniziale sp si pronuncia [sp], non [ʃp]. Correggere la spiegazione.",
+      "path": "merged.lessons[3].exercises[9].why"
+    }
+  ],
   "lang": "it",
   "unit": "a2-u04",
-  "verdict": "pass"
+  "verdict": "fail"
 }

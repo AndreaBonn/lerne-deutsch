@@ -1,10 +1,10 @@
 {
-  "bundleHash": "32bd949ff3dc3c8dcb2cb738c44b4cd786117ca4cebf3766a00288039366a9be",
+  "bundleHash": "a8b94cc08cdef6df4ab7208365ab32b5bd132689b7def0bb060805aa562e3393",
   "findings": [
     {
-      "kind": "answer_key",
-      "msg": "La consegna richiede esplicitamente sollen, ma la chiave accetta anche «Der Arzt sagt, dass ich mehr schlafen muss». Muss esprime necessità e non riproduce il valore di istruzione riferita di soll; la spiegazione stessa riconosce questa differenza. Eliminare l'alternativa con muss sia da merged sia da neutral.lessons[3].exercises[7].a.",
-      "path": "merged.lessons[3].exercises[7].a[1]"
+      "kind": "chiave di risposta",
+      "msg": "La consegna richiede «sollen», ma la chiave accetta anche «muss», che esprime necessità e cambia il significato. Rimuovere «Der Arzt sagt, dass ich mehr schlafen muss» dalle risposte accettate.",
+      "path": "merged.lessons[3].exercises[7].a"
     }
   ],
   "lang": "pl",

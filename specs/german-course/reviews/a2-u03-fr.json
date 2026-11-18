@@ -1,15 +1,10 @@
 {
-  "bundleHash": "efeed471d6f6c09859838421786d60ae506b53a29a3b49aef0c6cdd472f215f2",
+  "bundleHash": "8aea34335630af05dea837403ccb9adf48ba1d056f79f7405ca26acf04514202",
   "findings": [
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "La maiuscola non identifica sempre la forma di cortesia: a inizio frase anche sie («lei», «loro») diventa Sie. Precisare che la maiuscola distingue la forma di cortesia all'interno della frase; a inizio frase servono contesto e concordanza verbale.",
-      "path": "merged.lessons[0].theory[2].trap"
-    },
-    {
-      "kind": "classificazione grammaticale",
-      "msg": "Il testo include nehmen tra i verbi con alternanza e → ie, ma nehmen presenta e → i (Nimm!). Distinguere esplicitamente lesen: e → ie, Lies! e nehmen: e → i, Nimm!, oppure indicare entrambe le alternanze nella frase introduttiva.",
-      "path": "merged.lessons[3].theory[4].trap"
+      "kind": "clés de réponse",
+      "msg": "La phrase française « Je le vois demain » demande sehen. Treffen signifie « rencontrer » et ne traduit pas fidèlement cet énoncé. Retirer « Ich treffe ihn morgen » et « Morgen treffe ich ihn » des réponses acceptées, ainsi que l'indication selon laquelle treffen convient.",
+      "path": "merged.lessons[0].exercises[7]"
     }
   ],
   "lang": "fr",

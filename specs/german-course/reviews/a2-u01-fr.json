@@ -1,10 +1,20 @@
 {
-  "bundleHash": "ddd5b33d552f912e5b4b69b38b61b1857ca0719ffe378766308d1e5313578110",
+  "bundleHash": "ed476a46f5738ab9f6949b3fdc7b89e86f37e341bf86257d0b82652cef8cbad4",
   "findings": [
     {
-      "kind": "grammar-explanation",
-      "msg": "La nota « früher + sein au pluriel : waren » generalizza erroneamente waren a tutte le persone plurali: con ihr si usa wart. Correggere in francese: « Avec wir et sie/Sie : waren ; avec ihr : wart. »",
-      "path": "merged.lessons[0].grammar.examples[3].note"
+      "kind": "traduzione",
+      "msg": "Il titolo tedesco contiene «ich durfte», che esprime un permesso; «je pouvais» può invece suggerire una capacità. Sostituire con «Je devais, j'avais le droit, parce que ...».",
+      "path": "merged.lessons[2].title"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La nota afferma che i verbi modali perdono la dieresi al Präteritum, salvo wollen, ma anche sollen non ha una dieresi da perdere. Precisare che müssen, können e dürfen perdono la dieresi, mentre wollen e sollen non la possiedono.",
+      "path": "merged.lessons[2].grammar.note"
+    },
+    {
+      "kind": "punteggiatura",
+      "msg": "La sequenza «[ʃtr], :» contiene due segni di punteggiatura consecutivi. Eliminare la virgola prima dei due punti.",
+      "path": "merged.lessons[2].exercises[9].why"
     }
   ],
   "lang": "fr",

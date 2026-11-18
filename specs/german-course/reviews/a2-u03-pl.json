@@ -1,9 +1,14 @@
 {
-  "bundleHash": "f43a1341d0eb948e76eb6a6df301c17cbcc10c5fa5e5c77d5a2c1e072497855c",
+  "bundleHash": "cbfacd3a6da09db7578b062992a078f08e49e6ab40f497b8217385a2b46013b5",
   "findings": [
     {
-      "kind": "translation_answer_key",
-      "msg": "Polecenie „Widzę go jutro” wymaga czasownika sehen. Warianty „Ich treffe ihn morgen” i „Morgen treffe ich ihn” znaczą „Jutro się z nim spotkam” i nie są wiernymi tłumaczeniami. Usuń je z klucza tutaj oraz w neutral.lessons[0].exercises[7].a; pozostaw warianty z sehe.",
+      "kind": "chiave di risposta",
+      "msg": "La frase polacca significa «Lo vedo domani». Le risposte con «treffe» significano invece «Lo incontro domani» e non sono equivalenti. Rimuovere «Ich treffe ihn morgen» e «Morgen treffe ich ihn» dalle risposte accettate.",
+      "path": "neutral.lessons[0].exercises[7].a"
+    },
+    {
+      "kind": "chiave di risposta",
+      "msg": "La traduzione richiesta usa «widzę» («vedo»), mentre le due risposte con «treffe» significano «incontro». Rimuoverle dalle alternative accettate.",
       "path": "merged.lessons[0].exercises[7].a"
     }
   ],

@@ -1,7 +1,13 @@
 {
-  "bundleHash": "96598d68a3c2588aee75a91217c357cc3bdefd129833bea693c0b36d223326a0",
-  "findings": [],
+  "bundleHash": "5a949734ef45897ee2659e31f51adfe323c7043b5df8cd4532b96e938029b3cd",
+  "findings": [
+    {
+      "kind": "pronuncia",
+      "msg": "In «spazieren», sp si pronuncia [sp], non [ʃp]: la sequenza è all’inizio della seconda parte del verbo, ma qui conserva la pronuncia [sp]. Correggere la spiegazione.",
+      "path": "merged.lessons[3].exercises[9].why"
+    }
+  ],
   "lang": "fr",
   "unit": "a2-u04",
-  "verdict": "pass"
+  "verdict": "fail"
 }

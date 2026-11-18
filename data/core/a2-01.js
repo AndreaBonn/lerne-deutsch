@@ -289,15 +289,19 @@ LINGUAI.addUnits("A2", [
     ],
     test: {
       id: "a2-u01-test",
-      tags: ["g-praeteritum", "g-nebensatz-temporal", "g-nebensatz-weil"],
+      tags: ["g-praeteritum", "g-nebensatz-temporal", "g-nebensatz-weil", "g-reflexivverben"],
       cefr: "A2",
       titleIt: "Test: Früher und heute",
       exercises: [
         { t: "conj", verb: "sein", tense: "praet", persons: [0, 1, 2, 3, 4, 5] },
         { t: "conj", verb: "müssen", tense: "praet", persons: [0, 1, 2, 3, 4, 5] },
-        { t: "fill", a: ["hatten"] },
+        { t: "fill", a: ["wenn"] },
         { t: "fill", a: ["als"] },
-        { t: "fill", a: ["weil"] },
+        {
+          t: "cloze",
+          text: "Ich erinnere {{1}} gern {{2}} meine Kindheit.",
+          gaps: [["mich"], ["an"]]
+        },
         { t: "mcq", a: 0 },
         {
           t: "cloze",

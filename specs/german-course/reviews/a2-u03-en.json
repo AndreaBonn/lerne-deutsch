@@ -1,13 +1,7 @@
 {
-  "bundleHash": "60c798ff438db7ecd47e95e21b7d26eb7bd469a35e1bfb033c65b146fdc69593",
-  "findings": [
-    {
-      "kind": "ambiguous_question",
-      "msg": "Il cloze ammette anche «Ich bedanke mich für deine Hilfe», ma le soluzioni accettano soltanto «danke / dir». Specificare nella consegna «usa danken; destinataria: du» per rendere univoca la risposta prevista, oppure accettare anche la coppia «bedanke / mich» con validazione congiunta dei due spazi.",
-      "path": "merged.lessons[1].exercises[5]"
-    }
-  ],
+  "bundleHash": "a84847bced193735583c2bc5d653975459d877f6a04fb4b29a278e9660335e7f",
+  "findings": [],
   "lang": "en",
   "unit": "a2-u03",
-  "verdict": "fail"
+  "verdict": "pass"
 }

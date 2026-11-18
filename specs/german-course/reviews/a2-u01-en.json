@@ -1,7 +1,33 @@
 {
-  "bundleHash": "2289114395f3e894bc7b2df66938323a3644909774f11569d2e00430297004a7",
-  "findings": [],
+  "bundleHash": "e5273dd717fa1a7f24166f942fc3f45438fc97aaabce49cd531c24cdef732272",
+  "findings": [
+    {
+      "kind": "grammatica",
+      "msg": "La spiegazione attribuisce a war e waren la desinenza -en partendo implicitamente da war, ma non chiarisce che la radice cambia: le forme sono war e waren. Riformulare indicando direttamente le forme, senza presentare -en come una desinenza aggiunta a war.",
+      "path": "merged.lessons[0].grammar.note"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "La spiegazione dice che la radice è hatt- e che le desinenze sono -e, -est, -e, -en, -et, -en: questo produrrebbe forme errate come hatteest. Usare la radice hatt- con -e, -est senza ripetere la e iniziale solo se si spiega la sovrapposizione, oppure presentare le forme complete senza segmentazione.",
+      "path": "merged.lessons[0].exercises[1].why"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "Le radici indicate finiscono già in -t, quindi aggiungere le desinenze -e, -est, -e, -en, -et, -en produrrebbe forme come musstest con una t aggiuntiva secondo la segmentazione proposta. Usare le radici muss-, konn-, durf- e woll- con -te, -test, -te, -ten, -tet, -ten, oppure elencare le forme complete.",
+      "path": "merged.lessons[2].theory[1].contrast"
+    },
+    {
+      "kind": "ambiguità",
+      "msg": "La frase inglese non specifica un divieto, ma la chiave accetta anche durfte nicht, che esprime una mancanza di permesso. Limitare le risposte a konnte oppure precisare nel testo inglese che non era consentito giocare.",
+      "path": "merged.lessons[2].exercises[7].a"
+    },
+    {
+      "kind": "reggenza",
+      "msg": "La regola finale «One verb, one preposition, one case» contraddice sich freuen auf/über e non indica il dativo richiesto da mit in sich treffen mit. Sostituirla con l'indicazione di imparare ogni costruzione con la propria preposizione e il proprio caso, esplicitando mit + dativo.",
+      "path": "merged.lessons[3].theory[3].tip"
+    }
+  ],
   "lang": "en",
   "unit": "a2-u01",
-  "verdict": "pass"
+  "verdict": "fail"
 }

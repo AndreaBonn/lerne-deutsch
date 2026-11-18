@@ -1,7 +1,18 @@
 {
-  "bundleHash": "ceb23ff01bd54382eda7014359a1041d3b9f1f827c5dcfc5d1cabc83583145dd",
-  "findings": [],
+  "bundleHash": "58c096ed8a7e17e25353cfb6c4b5baadb1e86b3c64eb2e608661eb9ff2a9fe81",
+  "findings": [
+    {
+      "kind": "pronuncia",
+      "msg": "In «gesund» la s è sorda [s], non sonora [z]. Correggere la spiegazione della pronuncia.",
+      "path": "merged.lessons[3].exercises[9].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La posizione del pronome riflessivo dopo il verbo coniugato non è generale: con un altro elemento in prima posizione si può dire «Heute ruhe ich mich aus». Precisare che la regola descrive l’ordine degli esempi forniti.",
+      "path": "merged.lessons[2].theory[1].p"
+    }
+  ],
   "lang": "en",
   "unit": "a2-u04",
-  "verdict": "pass"
+  "verdict": "fail"
 }

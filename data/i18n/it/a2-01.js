@@ -257,7 +257,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Modali al Präteritum e weil",
-      note: "I modali al Präteritum perdono l'Umlaut (eccetto <b>wollte</b>, che non l'aveva). Dopo <b>weil</b> il verbo coniugato va in fondo.",
+      note: "Al Präteritum <b>müssen</b>, <b>können</b> e <b>dürfen</b> perdono l'Umlaut (musste, konnte, durfte); <b>wollen</b> e <b>sollen</b> non l'hanno mai avuto. Dopo <b>weil</b> il verbo coniugato va in fondo.",
       table: {
         head: ["infinito", "Präteritum (ich)", "significato", "con weil"],
         rows: [
@@ -462,7 +462,7 @@ LINGUAI.addStrings("it", {
   "lesson:a2-u01-test": {
     theme: "Verifica",
     title: "Verifica dell'unità 1",
-    objectives: ["verificare Präteritum, als e wenn, weil e i modali al passato"],
+    objectives: ["verificare Präteritum, als e wenn, weil, i modali al passato e i verbi riflessivi con la loro preposizione"],
     theory: [
       {
         p: "Dieci domande su tutta l'unità. Si supera con il 70%. Non riguardare le lezioni mentre rispondi: se non ricordi qualcosa, è meglio tornare a ripassare."
@@ -478,9 +478,9 @@ LINGUAI.addStrings("it", {
         why: "<i>Musste, musstest, musste, mussten, musstet, mussten</i>: senza Umlaut."
       },
       {
-        q: "Completa: «Gestern ___ wir keine Zeit.» (non avevamo, usa haben)",
-        hint: "haben, Präteritum, wir",
-        why: "<b>Hatten</b>: radice <i>hatt-</i> e terminazione <i>-en</i>."
+        q: "Completa: «Immer ___ ich Zeit hatte, habe ich gelesen.» (ogni volta che, un fatto ripetuto)",
+        hint: "un fatto ripetuto nel passato",
+        why: "Un fatto ripetuto nel passato: <b>wenn</b>, non <i>als</i>. Nella subordinata <i>hatte</i> va in fondo."
       },
       {
         q: "Completa: «Meine Eltern haben viel gearbeitet, ___ ich klein war.» (quando, un periodo concluso)",
@@ -488,9 +488,9 @@ LINGUAI.addStrings("it", {
         why: "Un periodo concluso del passato: <b>als</b>."
       },
       {
-        q: "Completa: «Ich konnte nicht kommen, ___ ich krank war.» (perché, usa weil)",
-        hint: "usa weil",
-        why: "<b>Weil</b> introduce il motivo e manda il verbo (<i>war</i>) in fondo."
+        q: "Completa la frase.",
+        tr: "Mi ricordo volentieri della mia infanzia.",
+        why: "<i>Sich erinnern an</i> + accusativo: il pronome riflessivo <i>mich</i> segue il verbo, poi viene la preposizione <i>an</i>."
       },
       {
         q: "Quale frase è corretta?",
@@ -1540,7 +1540,7 @@ LINGUAI.addStrings("it", {
         why: "<b>Euch</b>: <i>danken</i> vuole il dativo, e il dativo di <i>ihr</i> è <i>euch</i>."
       },
       {
-        q: "Come dici «Questa idea mi piace molto»?",
+        q: "Come dici «L'idea mi piace molto»?",
         opts: ["Die Idee gefällt mich sehr.", "Die Idee gefällt mir sehr.", "Ich gefalle die Idee sehr."],
         why: "La cosa è il soggetto (<i>die Idee</i>) e la persona sta al dativo (<i>mir</i>)."
       },

@@ -1,7 +1,28 @@
 {
-  "bundleHash": "887637f477fb222f53cc25c0b6f532daea8759574abaac1d9bff31076873ff5b",
-  "findings": [],
+  "bundleHash": "92b10d7c9b5512e3640595d188f56d08c1c82ee17b4f3e9250c15eb85319fa41",
+  "findings": [
+    {
+      "kind": "pronuncia",
+      "msg": "In «ausruhen» la h è iniziale nella seconda componente e si pronuncia [h]: [ˈaʊ̯sˌʁuːən] non è la pronuncia standard. Correggere la spiegazione indicando che la h di «ruhen» non si pronuncia: la trascrizione corretta è [ˈaʊ̯sˌʁuːən].",
+      "path": "merged.lessons[2].exercises[9].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La spiegazione presenta l’indicativo dopo «dass» come obbligatorio. Anche il Konjunktiv è possibile, come mostra «dass ich mich ausruhen sollte» nel test. Precisare che negli esempi introduttivi si usa normalmente l’indicativo, senza escludere altri modi.",
+      "path": "merged.lessons[3].grammar.examples[0].note"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "L’affermazione che dopo «dass» si usa l’indicativo in entrambi i casi è troppo assoluta: sono possibili anche Konjunktiv I e II. Specificare che l’indicativo è normalmente usato negli esempi proposti e che il tedesco non richiede il congiuntivo per la sola presenza di una negazione.",
+      "path": "merged.lessons[3].theory[2].contrast"
+    },
+    {
+      "kind": "contraddizione nella consegna",
+      "msg": "La consegna richiede esplicitamente «sich ausruhen», ma la seconda risposta accettata omette il pronome riflessivo. Eliminare tale alternativa oppure modificare la consegna per consentire anche «ausruhen» senza pronome.",
+      "path": "merged.test.exercises[7]"
+    }
+  ],
   "lang": "es",
   "unit": "a2-u04",
-  "verdict": "pass"
+  "verdict": "fail"
 }

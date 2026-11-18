@@ -1,7 +1,23 @@
 {
-  "bundleHash": "0e5fcd90475295f8b76b88d13fa325b1e4a1234e6d9a2cb463e33573d087fcce",
-  "findings": [],
+  "bundleHash": "61eade1b89be8b1758bb9a5b57a8c31b7c59fd715a93a7f06663447d26551335",
+  "findings": [
+    {
+      "kind": "chiave di traduzione",
+      "msg": "La frase italiana «Lo vedo domani» richiede sehen; treffen significa «incontrare» e cambia il significato. Rimuovere le due risposte con treffen e correggere la spiegazione.",
+      "path": "merged.lessons[0].exercises[7]"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La regola secondo cui, con soggetto nominale, il pronome oggetto lo precede nella subordinata è troppo categorica: «weil mein Bruder ihn kennt» è anch'essa una frase corretta e neutra. Presentare entrambi gli ordini come possibili.",
+      "path": "merged.lessons[0].theory[0].p"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«I due pronomi si fondono» non descrive correttamente «te lo»: in italiano i pronomi restano due parole separate. Precisare che possono unirsi graficamente in forme come «glielo», mentre l'ordine resta dativo + accusativo.",
+      "path": "merged.lessons[2].theory[1].contrast"
+    }
+  ],
   "lang": "it",
   "unit": "a2-u03",
-  "verdict": "pass"
+  "verdict": "fail"
 }

@@ -1,7 +1,23 @@
 {
-  "bundleHash": "b5f6a78c7f83069a8d9f358ad2a61006dc1b8bbf7234171df1ec7f164ea0af27",
-  "findings": [],
+  "bundleHash": "0d32c8c69ea87fa692f4684729b6881ad31413e1d8b51b3d07299fbfd55af2e8",
+  "findings": [
+    {
+      "kind": "explanation",
+      "msg": "La explicación afirma que todos los verbos modales pierden la diéresis en Präteritum salvo wollen, pero sollen tampoco lleva diéresis en infinitivo. Indica que müssen, können, dürfen y mögen la pierden, mientras que wollen y sollen no la tienen.",
+      "path": "merged.lessons[2].grammar.note"
+    },
+    {
+      "kind": "explanation",
+      "msg": "La afirmación de que hatte significa «tenía», no «había», es demasiado general: hatte también puede ser el auxiliar del Plusquamperfekt, como en «Ich hatte gearbeitet» («había trabajado»). Limita la advertencia a hatte como verbo principal y distingue su uso como auxiliar.",
+      "path": "merged.lessons[0].theory[2].trap"
+    },
+    {
+      "kind": "explanation",
+      "msg": "La afirmación de que el sujeto alemán se expresa siempre es incorrecta: el imperativo puede omitirlo, por ejemplo «Komm!». Restringe la regla a las oraciones enunciativas ordinarias.",
+      "path": "merged.lessons[0].theory[1].contrast"
+    }
+  ],
   "lang": "es",
   "unit": "a2-u01",
-  "verdict": "pass"
+  "verdict": "fail"
 }

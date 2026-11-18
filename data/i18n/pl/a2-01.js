@@ -127,7 +127,7 @@ LINGUAI.addStrings("pl", {
     theory: [
       {
         h: "Als dla faktu jednorazowego, wenn dla powtarzającego się",
-        p: "Niemiecki ma dwa słowa na czasowe «kiedy». <strong>Als</strong> wprowadza fakt <b>jednorazowy</b> z przeszłości: <em>Als ich zehn war, sind wir nach Berlin umgezogen</em>. <strong>Wenn</strong> wprowadza fakt <b>powtarzający się</b> (także w przeszłości: <em>Immer wenn es geschneit hat, ...</em>) albo fakt <b>teraźniejszy lub przyszły</b>: <em>Wenn ich müde bin, gehe ich früh ins Bett</em>. W zdaniu podrzędnym odmieniony czasownik stoi <b>na końcu</b>."
+        p: "Niemiecki ma dwa słowa na czasowe «kiedy». <strong>Als</strong> wprowadza jednorazowy fakt albo jednorazowy, zamknięty <b>okres</b> z przeszłości: <em>Als ich zehn war, sind wir nach Berlin umgezogen</em>; <em>Als wir in Wien gewohnt haben, bin ich oft Fahrrad gefahren</em>. <strong>Wenn</strong> wprowadza fakt <b>powtarzający się</b> (także w przeszłości: <em>Immer wenn es geschneit hat, ...</em>) albo fakt <b>teraźniejszy lub przyszły</b>: <em>Wenn ich müde bin, gehe ich früh ins Bett</em>. W zdaniu podrzędnym odmieniony czasownik stoi <b>na końcu</b>."
       },
       {
         contrast: "Polski ma jedno «kiedy» (albo «gdy»), które nie zmienia szyku: <em>kiedy byłem mały, mieszkaliśmy na wsi</em>. W niemieckim trzeba wybrać między <em>als</em> a <em>wenn</em>, a odmieniony czasownik idzie na koniec: <em>Als ich klein war, ...</em>, a nie «Als ich war klein». Gdy zdanie podrzędne stoi na początku, zdanie główne zaczyna się zaraz po przecinku od odmienionego czasownika: <em>Als ich klein war, haben wir in einem Dorf gewohnt.</em> Polskie «kiedy/gdy» może stać zarówno przy zdarzeniu jednorazowym, jak i powtarzalnym, a powtarzalność doprecyzowują kontekst i określenia takie jak «za każdym razem». Niemiecki rozstrzyga to samym spójnikiem: <em>als</em> dla jednego razu, <em>wenn</em> dla powtarzalności. W pytaniu bezpośrednim jest jeszcze inne słowo, <em>wann</em> («kiedy?»). Uwaga: <em>wenn</em> znaczy też «jeśli» (<em>Wenn du willst, ...</em>), a <em>als</em> tego znaczenia nie ma."
@@ -257,7 +257,7 @@ LINGUAI.addStrings("pl", {
     ],
     grammar: {
       title: "Czasowniki modalne w Präteritum i weil",
-      note: "Czasowniki modalne w Präteritum tracą umlaut (oprócz <b>wollte</b>, które go nie miało). Po <b>weil</b> odmieniony czasownik idzie na koniec.",
+      note: "W Präteritum <b>müssen</b>, <b>können</b> i <b>dürfen</b> tracą umlaut (musste, konnte, durfte); <b>wollen</b> i <b>sollen</b> nigdy go nie miały. Po <b>weil</b> odmieniony czasownik idzie na koniec.",
       table: {
         head: ["bezokolicznik", "Präteritum (ich)", "znaczenie", "z weil"],
         rows: [
@@ -462,7 +462,7 @@ LINGUAI.addStrings("pl", {
   "lesson:a2-u01-test": {
     theme: "Sprawdzian",
     title: "Sprawdzian z jednostki 1",
-    objectives: ["sprawdzić Präteritum, als i wenn, weil i czasowniki modalne w przeszłości"],
+    objectives: ["sprawdzić Präteritum, als i wenn, weil, czasowniki modalne w przeszłości i czasowniki zwrotne z przyimkiem"],
     theory: [
       {
         p: "Dziesięć pytań z całej jednostki. Zaliczasz przy 70%. Nie zaglądaj do lekcji w trakcie odpowiadania: jeśli czegoś nie pamiętasz, lepiej wrócić do powtórki."
@@ -478,9 +478,9 @@ LINGUAI.addStrings("pl", {
         why: "<i>Musste, musstest, musste, mussten, musstet, mussten</i>: bez umlautu."
       },
       {
-        q: "Uzupełnij: «Gestern ___ wir keine Zeit.» (nie mieliśmy, użyj haben)",
-        hint: "haben, Präteritum, wir",
-        why: "<b>Hatten</b>: temat <i>hatt-</i> i końcówka <i>-en</i>."
+        q: "Uzupełnij: «Immer ___ ich Zeit hatte, habe ich gelesen.» (za każdym razem, gdy; fakt powtarzający się)",
+        hint: "fakt powtarzający się w przeszłości",
+        why: "Fakt powtarzający się w przeszłości: <b>wenn</b>, nie <i>als</i>. W zdaniu podrzędnym <i>hatte</i> idzie na koniec."
       },
       {
         q: "Uzupełnij: «Meine Eltern haben viel gearbeitet, ___ ich klein war.» (kiedy, zamknięty okres)",
@@ -488,9 +488,9 @@ LINGUAI.addStrings("pl", {
         why: "Zamknięty okres z przeszłości: <b>als</b>."
       },
       {
-        q: "Uzupełnij: «Ich konnte nicht kommen, ___ ich krank war.» (ponieważ, użyj weil)",
-        hint: "użyj weil",
-        why: "<b>Weil</b> wprowadza powód i odsyła czasownik (<i>war</i>) na koniec."
+        q: "Uzupełnij zdanie.",
+        tr: "Chętnie wspominam swoje dzieciństwo.",
+        why: "<i>Sich erinnern an</i> + biernik: zaimek zwrotny <i>mich</i> stoi po czasowniku, potem przyimek <i>an</i>."
       },
       {
         q: "Które zdanie jest poprawne?",
@@ -1703,7 +1703,7 @@ LINGUAI.addStrings("pl", {
         trap: "<em>Bei</em> i <em>zu</em> rządzą celownikiem. <em>Zum Arzt</em> i <em>zur Ärztin</em> to zwykłe formy ściągnięte; <em>zu dem</em> i <em>zu der</em> pojawiają się, gdy chce się uwypuklić rodzajnik. Żeby powiedzieć, że idziesz do lekarza, użyj <em>Ich gehe zum Arzt</em>; <em>beim Arzt</em> znaczy, że jesteś u lekarza. Po <em>seit</em> i <em>vor</em> także liczba mnoga stoi w celowniku, z <b>-n</b>: <em>seit drei Tagen</em>, a nie <em>seit drei Tage</em>."
       },
       {
-        tip: "Zapytaj najpierw: «jestem tam, czy idę tam?». <em>Wo?</em> prosi o <em>bei</em>, <em>wohin?</em> prosi o <em>zu</em>. Przy umawianiu wizyty trzymaj razem dzień i godzinę: <em>am Montag um zehn Uhr</em>."
+        tip: "Przy osobach (u lekarza, do lekarza) zapytaj najpierw: «jestem tam, czy idę tam?». <em>Wo?</em> prosi o <em>bei</em>, <em>wohin?</em> prosi o <em>zu</em>. Przy umawianiu wizyty trzymaj razem dzień i godzinę: <em>am Montag um zehn Uhr</em>."
       }
     ],
     grammar: {
@@ -1828,7 +1828,7 @@ LINGUAI.addStrings("pl", {
         p: "<em>Sich ausruhen, sich hinlegen, sich erholen, sich fühlen</em> są zwrotne z natury: zaimek jest częścią czasownika i nie znaczy «odpoczywać samego siebie». Zaimek stoi w <b>bierniku</b> i zmienia się z osobą: <em>mich, dich, sich, uns, euch, sich</em>. Stoi po czasowniku w formie osobowej: <em>Ich ruhe mich aus.</em> Z <em>sollen</em> i <em>würde</em> stoi przed bezokolicznikiem: <em>Du solltest dich ausruhen. Ich würde mich hinlegen.</em> W formie grzecznościowej: <em>Sie sollten sich hinlegen</em> (<em>sich</em> pisze się małą literą)."
       },
       {
-        contrast: "Po polsku radę można dać przez «powinieneś» («powinieneś odpocząć») albo przez tryb warunkowy («poszedłbym do lekarza»). Niemiecki używa Konjunktiv II czasownika <em>sollen</em> albo <em>würde</em> + bezokolicznik. Różnica w sile: <em>Du solltest</em> to rada, a <em>du sollst</em> brzmi jak polskie «masz» i oznacza nakaz. Zaimek zwrotny po polsku to niezmienne <em>się</em> («położyć się», «czuć się»), a po niemiecku zmienia się z osobą: <em>mich, dich, sich, uns, euch</em>. Czasowniki też nie zawsze się pokrywają: <em>sich ausruhen</em> odpowiada polskiemu «odpocząć», które nie jest zwrotne, <em>sich hinlegen</em> to «położyć się», a <em>sich erholen</em> to «wypocząć, dojść do siebie»."
+        contrast: "Po polsku radę można dać przez «powinieneś» («powinieneś odpocząć») albo przez tryb warunkowy («poszedłbym do lekarza»). Niemiecki używa Konjunktiv II czasownika <em>sollen</em> albo <em>würde</em> + bezokolicznik. Różnica w sile: <em>Du solltest</em> to rada, a <em>du sollst</em> brzmi jak polskie «masz»: przekazuje polecenie, zalecenie lub oczekiwanie kogoś innego, nie radę mówiącego. Zaimek zwrotny po polsku to niezmienne <em>się</em> («położyć się», «czuć się»), a po niemiecku zmienia się z osobą: <em>mich, dich, sich, uns, euch</em>. Czasowniki też nie zawsze się pokrywają: <em>sich ausruhen</em> odpowiada polskiemu «odpocząć», które nie jest zwrotne, <em>sich hinlegen</em> to «położyć się», a <em>sich erholen</em> to «wypocząć, dojść do siebie»."
       },
       {
         trap: "<em>Du solltest</em> to rada; <em>du sollst</em> to obowiązek albo polecenie kogoś innego i brzmi dużo mocniej. Nie przesuwaj zaimka na koniec: <em>Du solltest ausruhen dich</em> jest błędne, szyk to <em>dich ausruhen</em>. Z <em>würde</em> bezokolicznik zostaje na końcu: <em>Ich würde mich ausruhen</em>, a nie <em>Ich würde ausruhen mich</em>. Zdarza się też <em>Du solltest ausruhen</em> bez zaimka, bo <em>ausruhen</em> może występować bez <em>sich</em>; tu ćwiczymy formę z <em>sich ausruhen</em>."
@@ -1878,7 +1878,7 @@ LINGUAI.addStrings("pl", {
       {
         q: "Doradź zmęczonej przyjaciółce: «Powinnaś odpocząć.»",
         opts: ["Du sollst dich ausruhen.", "Du solltest dich ausruhen.", "Du solltest ausruhen dich."],
-        why: "<b>Du solltest dich ausruhen</b>: Konjunktiv II od <i>sollen</i> daje radę, a <i>dich</i> stoi przed bezokolicznikiem. <i>Du sollst</i> to nakaz; w trzecim zdaniu zaimek stoi w złym miejscu."
+        why: "<b>Du solltest dich ausruhen</b>: Konjunktiv II od <i>sollen</i> daje radę, a <i>dich</i> stoi przed bezokolicznikiem. <i>Du sollst</i> przekazuje polecenie albo oczekiwanie kogoś innego i brzmi tu dużo mocniej niż rada; w trzecim zdaniu zaimek stoi w złym miejscu."
       },
       {
         tr: "Konjunktiv II czasownika sollen, wszystkie osoby.",
