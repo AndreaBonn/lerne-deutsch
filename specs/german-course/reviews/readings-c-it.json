@@ -1,28 +1,7 @@
 {
-  "bundleHash": "ce15fea8a6e4a4ffe888449add103cab5f9853f2ae2d7e8dcc0563f007306e6e",
-  "findings": [
-    {
-      "kind": "traduzione e reggenza",
-      "msg": "«(+ acc.)» indica erroneamente una reggenza tedesca dopo la traduzione italiana. Per «sich aussprechen für» la reggenza è «für + Akkusativ»: spostare l'indicazione nella voce tedesca oppure esplicitarla nella spiegazione italiana.",
-      "path": "merged[1].lex[7]"
-    },
-    {
-      "kind": "traduzione e reggenza",
-      "msg": "«(+ dat.)» associato a «tenere conto di» può essere letto come reggenza italiana. Precisare che è l'espressione tedesca «jemandem/etwas Rechnung tragen» a richiedere il dativo.",
-      "path": "merged[4].gloss[10]"
-    },
-    {
-      "kind": "comprensione e chiave",
-      "msg": "Il testo dice che la consultazione «soll» svolgersi: è prevista, ma non è certo che avverrà. La domanda presenta il risultato come già determinato senza riprendere questa condizione. Formulare «Wäre das Ergebnis der geplanten Bürgerbefragung für die Stadt rechtlich bindend?» e mantenere la risposta falsa.",
-      "path": "neutral[2].questions[3].q"
-    },
-    {
-      "kind": "ambiguità della domanda",
-      "msg": "«Bei der ersten Abstimmung» suggerisce che quella del 1959 fosse la prima votazione in assoluto sul suffragio femminile; il testo afferma soltanto che precedette di dodici anni quella del 1971. Scrivere «Bei der Abstimmung zwölf Jahre zuvor …».",
-      "path": "neutral[1].questions[0].q"
-    }
-  ],
+  "bundleHash": "ec2d95b9012893b69728d8473e43c76b34e075e51aff40ebd68585a703b1c684",
+  "findings": [],
   "lang": "it",
   "unit": "readings-c",
-  "verdict": "fail"
+  "verdict": "pass"
 }
