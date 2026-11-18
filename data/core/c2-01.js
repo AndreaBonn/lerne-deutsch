@@ -416,7 +416,7 @@ LINGUAI.addUnits("C2", [
           {
             t: "cloze",
             text: "Die {{1}} der Verwaltung soll die Verfahren beschleunigen, doch über ihre {{2}} sind sich die Fachleute uneinig.",
-            gaps: [["Digitalisierung"], ["Wirksamkeit"]]
+            gaps: [["Digitalisierung"], ["Wirksamkeit", "Effektivität"]]
           },
           {
             t: "match",
@@ -640,7 +640,7 @@ LINGUAI.addUnits("C2", [
           {
             t: "cloze",
             text: "Die {{1}}, auf der die gesamte Studie beruht, hat sich als falsch erwiesen; die Ergebnisse sind damit {{2}}.",
-            gaps: [["Prämisse", "Annahme", "Grundannahme", "Voraussetzung"], ["hinfällig", "ungültig"]]
+            gaps: [["Prämisse", "Annahme", "Grundannahme", "Voraussetzung"], ["hinfällig", "ungültig", "gegenstandslos"]]
           },
           {
             t: "match",
@@ -652,7 +652,8 @@ LINGUAI.addUnits("C2", [
             a: [
               "Die These ist empirisch nicht verifizierbar",
               "Die These lässt sich empirisch nicht verifizieren",
-              "Die These ist empirisch nicht zu verifizieren"
+              "Die These ist empirisch nicht zu verifizieren",
+              "Die These kann empirisch nicht verifiziert werden"
             ]
           },
           {

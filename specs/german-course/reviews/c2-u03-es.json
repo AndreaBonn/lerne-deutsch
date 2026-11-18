@@ -23,6 +23,11 @@
   "archived": {
     "decision": "Q-C1-D8 esteso a C2 (N2)",
     "date": "2026-11-18",
-    "bundleHash": "ed8643866919cf1994e0b9dd1bb05e90951b8438d2871e0d0cb81eb2337a9bc7"
+    "bundleHash": "c32ab21bd1478e31ce2809180e2c6770393eae4c0ecb296009959efef797b924"
+  },
+  "rehashed": {
+    "reason": "Q4: accepted-answer variants added to core (Effektivität, gegenstandslos, verifiziert werden, welchen), no other change; rehash authorised by the user on 2026-11-18 (\"Q4 rehash ok\"), not re-judged by D8",
+    "date": "2026-11-18",
+    "previousHash": "ed8643866919cf1994e0b9dd1bb05e90951b8438d2871e0d0cb81eb2337a9bc7"
   }
 }

@@ -189,7 +189,7 @@ LINGUAI.addUnits("C2", [
           {
             t: "cloze",
             text: "Der Abgeordnete, {{1}} man der Bestechung beschuldigt, weist den Vorwurf zurück und besteht {{2}} einer unabhängigen Untersuchung.",
-            gaps: [["den"], ["auf"]]
+            gaps: [["den", "welchen"], ["auf"]]
           },
           { t: "multi", a: [0, 1] },
           {

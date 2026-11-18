@@ -1,7 +1,12 @@
 {
-  "bundleHash": "93997ae0915418915f3dd26f96f3c00e45ee86aa2a772904afec34354f23541a",
+  "bundleHash": "09a5ba731fa2567b3c5a49f29fa1a9a68ad615f5024e7c9baccff224f294042e",
   "findings": [],
   "lang": "fr",
   "unit": "c2-u04",
-  "verdict": "pass"
+  "verdict": "pass",
+  "rehashed": {
+    "reason": "Q4: accepted-answer variants added to core (Effektivität, gegenstandslos, verifiziert werden, welchen), no other change; rehash authorised by the user on 2026-11-18 (\"Q4 rehash ok\"), not re-judged by D8",
+    "date": "2026-11-18",
+    "previousHash": "93997ae0915418915f3dd26f96f3c00e45ee86aa2a772904afec34354f23541a"
+  }
 }
