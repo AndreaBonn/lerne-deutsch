@@ -210,7 +210,7 @@ LINGUAI.addReadings([
     titleIt: "Das verschwundene Fahrrad",
     sentences: [
       "Münster ist die Stadt der Fahrräder, und auch Jana fährt jeden Tag mit dem Rad zur Uni.",
-      "Letzten Dienstag stand sie nach der Vorlesung vor dem Fahrradständer und suchte ihr Rad vergeblich.",
+      "An einem Dienstag im Frühjahr stand sie nach der Vorlesung vor dem Fahrradständer und suchte ihr Rad vergeblich.",
       "Am Morgen hatte sie es wie immer vor der Bibliothek abgestellt, aber sie hatte vergessen, es abzuschließen.",
       "Nachdem sie eine Viertelstunde gesucht hatte, ging sie zur Polizei und erstattete Anzeige.",
       "Der Polizist erklärte ihr, dass in der Stadt jedes Jahr Tausende Fahrräder verschwinden.",
@@ -547,7 +547,7 @@ LINGUAI.addReadings([
     tag: "g-komparation",
     titleIt: "Stets zu unserer vollsten Zufriedenheit",
     sentences: [
-      "Arbeitszeugnisse müssen in Deutschland von Rechts wegen wohlwollend formuliert sein, zugleich aber der Wahrheit entsprechen.",
+      "Qualifizierte Arbeitszeugnisse, die auch Leistung und Verhalten beurteilen, müssen in Deutschland von Rechts wegen wohlwollend formuliert sein, zugleich aber der Wahrheit entsprechen.",
       "Aus diesem Zielkonflikt ist im Lauf der Jahrzehnte eine Geheimsprache hervorgegangen, deren Existenz offiziell niemand einräumt und die gleichwohl jede Personalabteilung beherrscht, obwohl das Gesetz Formulierungen, die etwas anderes aussagen sollen als ihr Wortlaut, ausdrücklich untersagt.",
       "Die Notenskala beginnt beim grammatisch fragwürdigen Superlativ „stets zu unserer vollsten Zufriedenheit“, der einer glatten Eins entspricht.",
       "Fehlt das Wörtchen „stets“, ist man bereits bei einer Zwei, und wer lediglich „zu unserer Zufriedenheit“ gearbeitet hat, liegt nur noch bei einem Ausreichend.",
@@ -559,7 +559,7 @@ LINGUAI.addReadings([
     glossIt: ["das Arbeitszeugnis", "von Rechts wegen", "der Zielkonflikt", "hervorgehen aus", "untersagen", "gleichwohl", "heimtückisch", "schmeicheln", "bescheinigen", "die Geselligkeit", "das Betriebsklima", "unterstellen", "aufschlussreich", "die Entschlüsselung", "die Textsorte"],
     lexIt: ["wohlwollend", "formulieren", "Wahrheit", "entsprechen", "Jahrzehnt", "Geheimsprache", "Existenz", "offiziell", "einräumen", "Gesetz", "aussagen", "ausdrücklich", "Personalabteilung", "beherrschen", "Notenskala", "fragwürdig", "Superlativ", "stets", "Zufriedenheit", "lediglich", "sich bemühen", "zustande bringen", "Verbesserung", "beitragen", "Verhältnis", "Ehrlichkeit", "Kassiererin", "erwähnen", "womöglich", "kursieren", "Ratgeber", "Personalverantwortliche", "Telefonhörer", "schaden", "hervorbringen"],
     questions: [
-      { t: "mcq", q: "Welche beiden Anforderungen muss ein Arbeitszeugnis gleichzeitig erfüllen?", opts: ["Es muss kurz und vollständig sein.", "Es muss wohlwollend und wahr sein.", "Es muss verschlüsselt und offiziell sein."], a: 1 },
+      { t: "mcq", q: "Welche beiden Anforderungen muss ein qualifiziertes Arbeitszeugnis gleichzeitig erfüllen?", opts: ["Es muss kurz und vollständig sein.", "Es muss wohlwollend und wahr sein.", "Es muss verschlüsselt und offiziell sein."], a: 1 },
       { t: "truefalse", q: "Das Gesetz erlaubt Formulierungen, die etwas anderes aussagen sollen als ihr Wortlaut.", a: 1 },
       { t: "mcq", q: "Wie wird „Er hat sich stets bemüht“ in der Zeugnissprache gewöhnlich gelesen?", opts: ["Er war besonders fleißig und erfolgreich.", "Er war bei den Kollegen beliebt.", "Seine Bemühungen blieben ohne Ergebnis."], a: 2 },
       { t: "mcq", q: "Welche Folge hat die Geheimsprache laut Text?", opts: ["Manche Personalverantwortliche verlassen sich lieber auf ein Telefonat.", "Zeugnisse werden immer länger.", "Arbeitgeber stellen keine Zeugnisse mehr aus."], a: 0 }
