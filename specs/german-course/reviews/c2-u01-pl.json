@@ -1,40 +1,20 @@
 {
-  "bundleHash": "fb7d2b9b148d0908c41d82c5bf97f25d200b8f39394ded79867df48987a960da",
+  "bundleHash": "65713bfaba3c42c5044e52e94c6b406738487271b6b416f67442317fc9d4651f",
   "findings": [
     {
-      "kind": "pronuncia",
-      "msg": "In «Ablehnung» la b precede una vocale e si pronuncia [b], non [p]. Correggere la spiegazione fonetica.",
-      "path": "merged.lessons[1].exercises[8].why"
+      "kind": "traduzione",
+      "msg": "Il testo polacco «podważa» significa «mette in discussione», mentre tutte le risposte accettate usano «widerspricht», che significa «contraddice». Sostituire «podważa» con «przeczy» nella consegna, oppure accettare una traduzione tedesca fedele a «podważa», come «stellt … in Frage».",
+      "path": "merged.lessons[0].exercises[7].q"
     },
     {
       "kind": "traduzione",
-      "msg": "«Vorliegen» indica che le domande sono disponibili o presenti da settimane, non che sono in attesa da settimane. Tradurre per esempio: «Wnioski, które urząd ma rozpatrzyć, są dostępne od tygodni».",
+      "msg": "«Leżą w nim» aggiunge che le domande si trovano presso l’ufficio, informazione non espressa da «liegen seit Wochen vor». Tradurre, per esempio, con «Wnioski, które urząd ma rozpatrzyć, są dostępne od tygodni».",
       "path": "merged.lessons[1].exercises[6].tr"
     },
     {
-      "kind": "spiegazione",
-      "msg": "L'assenza di zu in «prüfend» indica valore attivo, ma «geprüften» non implica necessariamente che la domanda sia già stata esaminata: il participio passato può descrivere anche uno stato passivo senza specificare il momento. Qualificare la spiegazione in base al contesto.",
-      "path": "merged.lessons[1].exercises[0].why"
-    },
-    {
-      "kind": "pronuncia",
-      "msg": "In «Abrede» la b precede una consonante sonora e si pronuncia [b], non [p]. Correggere la spiegazione fonetica.",
-      "path": "merged.lessons[2].exercises[9].why"
-    },
-    {
-      "kind": "spiegazione",
-      "msg": "«Nicht in Abrede stellen» afferma esplicitamente che l'autrice non nega la circostanza; sostenere che non ne parli direttamente è incompatibile con la frase riportata. Eliminare tale conclusione o precisare che la formula non equivale necessariamente a un'ammissione enfatica.",
-      "path": "merged.lessons[2].exercises[2].why"
-    },
-    {
-      "kind": "traduzione",
-      "msg": "«Daraus abzuleitenden Maßnahmen» indica misure da ricavare o dedurre dai risultati, mentre «wynikające z nich środki» presenta il nesso come già realizzato. Rendere per esempio con «Środki, które należy z nich wyprowadzić».",
-      "path": "merged.test.exercises[8].tr"
-    },
-    {
-      "kind": "spiegazione",
-      "msg": "«Auf heftige Kritik stoßen» è al passato e significa che la riforma ha incontrato forti critiche. La spiegazione polacca usa il presente «jest krytykowana»; sostituirlo con «została ostro skrytykowana».",
-      "path": "merged.test.exercises[6].why"
+      "kind": "spiegazione grammaticale",
+      "msg": "La spiegazione afferma che tra articolo e sostantivo tutto dipende dal participio, ma nell’esempio «die in der Studie befragten, überwiegend jungen Erwachsenen» anche «überwiegend jungen» si trova fra i due e dipende dall’aggettivo «jungen». Precisare che possono esserci più attributi coordinati, ciascuno con le proprie determinazioni.",
+      "path": "merged.lessons[0].theory[0].p"
     }
   ],
   "lang": "pl",

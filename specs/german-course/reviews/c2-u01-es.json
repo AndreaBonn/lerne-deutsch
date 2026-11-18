@@ -1,30 +1,20 @@
 {
-  "bundleHash": "d1b8e728c833ac93cde2ece25861c5c69714ccfee5154ce0319cb4f801a65378",
+  "bundleHash": "23b890a78f3a10b6a09e3832bd83fb4c33e10c1440dfcf399cf3c59838dda7d1",
   "findings": [
     {
-      "kind": "pronuncia",
-      "msg": "In «Ablehnung» la b si pronuncia [b], non [p], perché precede una consonante sonora. Correggere l'indicazione fonetica.",
-      "path": "merged.lessons[1].exercises[8].why"
-    },
-    {
-      "kind": "pronuncia",
-      "msg": "In «Abrede» la b si pronuncia [b], non [p], perché precede una consonante sonora. Correggere l'indicazione fonetica.",
-      "path": "merged.lessons[2].exercises[9].why"
-    },
-    {
       "kind": "traduzione",
-      "msg": "La traduzione perde sia il valore di obbligo di «sind ... einzureichen» sia l'idea di presentazione successiva espressa da «nachzureichenden». Per esempio: «Los documentos que el solicitante debe aportar posteriormente deberán presentarse antes de fin de mes».",
-      "path": "merged.lessons[1].exercises[8].tr"
+      "msg": "«Obran en su poder» attribuisce le domande all’autorità, ma la frase tedesca dice soltanto che sono disponibili da settimane. Correggere, per esempio, in «Las solicitudes que debe examinar la autoridad están disponibles desde hace semanas».",
+      "path": "merged.lessons[1].exercises[6].tr"
     },
     {
-      "kind": "traduzione",
-      "msg": "«Abzuleitenden» indica misure da ricavare o dedurre, mentre «que se derivan» presenta la derivazione come già avvenuta. Usare, per esempio, «las medidas que han de derivarse de ellos».",
-      "path": "merged.test.exercises[8].tr"
+      "kind": "vocabolario",
+      "msg": "«Reparar un defecto» significa correggerlo, mentre «beanstanden» significa contestarlo o rilevarlo come difetto. Sostituire con «objetar, señalar un defecto» o «formular una objeción».",
+      "path": "merged.lessons[1].vocab[7].tr"
     },
     {
       "kind": "spiegazione grammaticale",
-      "msg": "La regola secondo cui tutto ciò che si trova tra articolo e sostantivo dipende dal participio è troppo generale: nell'esempio della stessa lezione «die in der Studie befragten, überwiegend jungen Erwachsenen», «überwiegend jungen» è un attributo coordinato indipendente. Precisare che ogni complemento dipende dal rispettivo attributo.",
-      "path": "merged.lessons[0].theory[0].p"
+      "msg": "L’affermazione secondo cui il gerundio spagnolo non è ammesso come aggettivo è troppo categorica: in alcuni contesti sono ammesse costruzioni di gerundio con valore descrittivo. Distinguere questi usi dalle costruzioni considerate improprie e precisare che non costituiscono un equivalente generale del participio attributivo tedesco.",
+      "path": "merged.lessons[0].theory[2].contrast"
     }
   ],
   "lang": "es",

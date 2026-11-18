@@ -1,20 +1,10 @@
 {
-  "bundleHash": "c01a78b8de432ad90ea705ab16b650dffddfdd3dda0543dc8b9c506bbde0ddba",
+  "bundleHash": "32cfffc3fdc4e62bcba599ad31d4690511700eb5e51b5025b66dcb8c0a6f604a",
   "findings": [
     {
-      "kind": "Spiegazione contrastiva errata",
-      "msg": "La spiegazione afferma che in inglese un participio con elementi dipendenti deve seguire il sostantivo e che solo il tedesco può collocare elementi prima del participio. Sono possibili espressioni inglesi prenominali come “the widely discussed reform” e “the long-awaited report”. Riformulare il contrasto come tendenza, precisando quali gruppi inglesi possono precedere il sostantivo.",
-      "path": "merged.lessons[0].theory[2].contrast"
-    },
-    {
-      "kind": "Traduzione non fedele",
-      "msg": "“Seit Langem vorhergesagt” significa «previsto da tempo», non necessariamente «previsto molto tempo fa». Inoltre “treffen vor allem” significa «colpiscono soprattutto», senza il confronto esplicito di “hit ... hardest”. Correggere, per esempio: “The consequences of climate change, long predicted by numerous researchers, particularly affect the already disadvantaged regions of the South.”",
-      "path": "merged.lessons[0].exercises[4].tr"
-    },
-    {
-      "kind": "Traduzione e chiave",
-      "msg": "“Die bisher verbreiteten Annahmen” indica le ipotesi finora diffuse, mentre “the assumptions held until now” indica quelle finora sostenute o condivise. Modificare il testo inglese in “the assumptions widespread until now” oppure accettare una soluzione tedesca corrispondente a “held”, per esempio “die bisher vertretenen Annahmen”.",
-      "path": "merged.lessons[0].exercises[7]"
+      "kind": "pronunciation",
+      "msg": "The stress in «Ministerin» falls on «nis», not «te». Correct the pronunciation note to indicate «Mi-NIS-te-rin».",
+      "path": "merged.lessons[2].exercises[9].why"
     }
   ],
   "lang": "en",
