@@ -4,9 +4,11 @@ import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
+import { moduleDefinition } from './porting-modules.mjs';
+import { loadCourse } from './snapshot_target.mjs';
 import { stableJson, unitLessons } from './snapshot_target.mjs';
 import { parseOptions, LANGUAGES, ADVANCED_LEVELS } from './check_porting.mjs';
-import { buildBundle, buildFileBundle, hashBundle } from './review-bundle.mjs';
+import { buildBundle, buildFileBundle, buildModuleBundle, hashBundle } from './review-bundle.mjs';
 export { buildBundle } from './review-bundle.mjs';
 
 const ROOT = fileURLToPath(new URL('../', import.meta.url));
@@ -16,6 +18,7 @@ const MAX_SEED = 0xffffffff;
 const SAMPLE_BLOCK = 4;
 const STDERR_LINES = 20;
 const HELP = `Usage: node scripts/review_lot.mjs --unit <id> --lang <it|en|es|fr|pl>
+  Or: --module <id> --lang <it|en|es|fr|pl>
   Or: --file <path> --lang <it|en|es|fr|pl>
   [--root <dir>] [--dry-run] [--seed 1] [--help]
 Merge uses the repository's LINGUAI.applyStrings; the bundle also includes neutral values.
@@ -139,24 +142,28 @@ function saveReview({ root, bundle, review, seed }) {
   const directory = join(root, 'specs/german-course/reviews');
   mkdirSync(directory, { recursive: true });
   writeFileSync(join(directory, `${bundle.unit}-${bundle.lang}.json`), stableJson({ ...review, bundleHash: hashBundle(bundle) }));
-  if (!ADVANCED_LEVELS.includes(bundle.level)) return;
+  const isModule = Array.isArray(bundle.neutral);
+  const advanced = isModule ? moduleDefinition(bundle.unit, loadCourse(root), JSON.parse(readFileSync(join(root, 'scripts/porting-target.json'), 'utf8'))).advanced
+    : ADVANCED_LEVELS.includes(bundle.level);
+  if (!advanced) return;
   const human = join(directory, `${bundle.unit}-human.md`);
   if (existsSync(human)) return;
-  const ids = pickHumanLessons({ lessons: unitLessons(bundle.neutral), seed });
+  const ids = pickHumanLessons({ lessons: isModule ? bundle.neutral : unitLessons(bundle.neutral), seed });
   writeFileSync(human, `<!-- picked lessons -->\n${ids.join('\n')}\n`, { flag: 'wx' });
 }
 
 function main() {
-  const options = parseOptions({ args: process.argv.slice(2), values: ['root', 'unit', 'file', 'lang', 'seed'], flags: ['dry-run', 'help'] });
+  const options = parseOptions({ args: process.argv.slice(2), values: ['root', 'unit', 'module', 'file', 'lang', 'seed'], flags: ['dry-run', 'help'] });
   if (options.help) { console.log(HELP); return; }
-  if (options.file && options.unit) throw new Error('Choose either file or unit');
-  if (!options.file && !/^[a-c][12]-u\d+$/.test(options.unit || '')) throw new Error('Invalid or missing unit ID');
+  if ([options.file, options.unit, options.module].filter(Boolean).length !== 1) throw new Error('Choose exactly one file, unit or module');
+  if (!options.file && !options.module && !/^[a-c][12]-u\d+$/.test(options.unit || '')) throw new Error('Invalid or missing unit ID');
   if (!LANGUAGES.includes(options.lang)) throw new Error('Invalid or missing language');
   const seed = options.seed === undefined ? DEFAULT_SEED : Number(options.seed);
   if (!Number.isInteger(seed) || seed < 0 || seed > MAX_SEED) throw new Error('Invalid seed');
   const root = resolve(options.root || ROOT);
   const bundle = options.file ? buildFileBundle({ root, file: options.file, lang: options.lang })
-    : buildBundle({ root, unitId: options.unit, lang: options.lang });
+    : options.module ? buildModuleBundle({ root, module: options.module, lang: options.lang })
+      : buildBundle({ root, unitId: options.unit, lang: options.lang });
   const prompt = buildPrompt(bundle);
   if (options['dry-run']) {
     console.log(JSON.stringify({ bundleBytes: Buffer.byteLength(JSON.stringify(bundle)),

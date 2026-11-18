@@ -3,6 +3,7 @@ import { readFileSync, realpathSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { loadCourse, runDataFile } from './snapshot_target.mjs';
+import { moduleDefinition } from './porting-modules.mjs';
 
 const ROOT = fileURLToPath(new URL('../', import.meta.url));
 
@@ -46,6 +47,20 @@ export function buildBundle({ root, unitId, lang }) {
   if (!course.sandbox.LINGUAI.hasStrings(lang)) throw new Error(`Missing strings for ${lang}`);
   course.sandbox.LINGUAI.applyStrings(lang);
   return { unit: unitId, lang, level: level.code, neutral, merged: JSON.parse(JSON.stringify(unit)) };
+}
+
+export function buildModuleBundle({ root, module, lang }) {
+  const course = loadCourse(root);
+  const target = JSON.parse(readFileSync(join(root, 'scripts/porting-target.json'), 'utf8'));
+  const selection = moduleDefinition(module, course, target);
+  const neutral = JSON.parse(JSON.stringify(selection.items));
+  runDataFile({ sandbox: course.sandbox, path: join(ROOT, 'assets/js/i18n-merge.js') });
+  for (const file of selection.files) {
+    const path = join(root, 'data/i18n', lang, file);
+    if (existsSync(path)) runDataFile({ sandbox: course.sandbox, path });
+  }
+  course.sandbox.LINGUAI.applyStrings(lang);
+  return { unit: module, lang, neutral, merged: JSON.parse(JSON.stringify(selection.items)) };
 }
 
 export function hashBundle(bundle) {

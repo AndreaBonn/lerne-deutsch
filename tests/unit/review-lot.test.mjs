@@ -350,3 +350,31 @@ test('the prompt states the lesson format and where the long texts live', () => 
   assert.match(prompt, /library/);
   assert.match(prompt, /Judge CEFR adequacy on the language/);
 });
+
+test('module dry run builds a merged bundle without writing a verdict', t => {
+  const root = fixture(t);
+  put(root, 'data/core/readings.js', "LINGUAI.addReadings([{id:'r-c1-one',cefr:'C1'}]);");
+  put(root, 'data/i18n/it/readings.js', "LINGUAI.addStrings('it', {'read:r-c1-one':{title:'Uno'}});");
+  const result = cli('review_lot.mjs', ['--root', root, '--module', 'readings-c', '--lang', 'it', '--dry-run']);
+  assert.equal(result.status, 0, result.stderr);
+  assert.ok(JSON.parse(result.stdout).bundleBytes > 0);
+  assert.equal(existsSync(join(root, 'specs/german-course/reviews/readings-c-it.json')), false);
+});
+
+test('advanced module review saves verdict and a stable human sample', t => {
+  const ctx = setup(t);
+  const readings = Array.from({length: 5}, (_, i) => ({id:`r-c1-${i}`,cefr:'C1'}));
+  put(ctx.root, 'data/core/readings.js', `LINGUAI.addReadings(${JSON.stringify(readings)});`);
+  put(ctx.root, 'data/i18n/en/readings.js', "LINGUAI.addStrings('en', {});");
+  const args = ['--root', ctx.root, '--module', 'readings-c', '--lang', 'en'];
+  const env = {...ctx.env, FAKE_UNIT:'readings-c'};
+  const result = cli('review_lot.mjs', args, env);
+  assert.equal(result.status, 0, result.stderr);
+  const human = join(ctx.root, 'specs/german-course/reviews/readings-c-human.md');
+  assert.equal(JSON.parse(readFileSync(join(ctx.root, 'specs/german-course/reviews/readings-c-en.json'), 'utf8')).verdict, 'pass');
+  const sample = readFileSync(human, 'utf8');
+  assert.equal(sample.match(/^r-c1-/gm).length, 2);
+  put(ctx.root, 'specs/german-course/reviews/readings-c-human.md', 'ESITO: ok\n');
+  assert.equal(cli('review_lot.mjs', args, env).status, 0);
+  assert.equal(readFileSync(human, 'utf8'), 'ESITO: ok\n');
+});

@@ -1,11 +1,13 @@
 import { readFileSync, existsSync, statSync } from 'node:fs';
 import vm from 'node:vm';
-import { spokenStrings } from './spoken-strings.mjs';
+import { spokenStrings, collectSecondary, norm } from './spoken-strings.mjs';
 import { resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadCourse, unitLessons } from './snapshot_target.mjs';
 import { scanValues } from './neutral-letters.mjs';
-import { buildBundle, hashBundle } from './review-bundle.mjs';
+import { buildBundle, buildModuleBundle, hashBundle } from './review-bundle.mjs';
+
+import { moduleDefinition, moduleCoreErrors, moduleOverlayErrors } from './porting-modules.mjs';
 
 const ROOT = fileURLToPath(new URL('../', import.meta.url));
 export const LANGUAGES = ['it', 'en', 'es', 'fr', 'pl'];
@@ -13,14 +15,14 @@ export const ADVANCED_LEVELS = ['B2', 'C1', 'C2'];
 const STAGES = ['core', ...LANGUAGES, 'audio', 'review', 'human'];
 const LEVEL_STAGES = ['core', ...LANGUAGES, 'review'];
 const EXERCISE_TOLERANCE = 0.15;
-const HELP = `Usage: node scripts/check_porting.mjs [--root <dir>] [--unit <id>]
+const HELP = `Usage: node scripts/check_porting.mjs [module ...] [--root <dir>] [--unit <id>]
   [--level <A1..C2>] [--stage core,it,en,es,fr,pl,audio,review,human] [--curriculum] [--help]
 Default: check core for all target units and course distribution.
 --level: every unit of the level on core, it, en, es, fr, pl and review (the phase gate).
 Language stages check overlay file existence. Review requires pass per requested language (default it).
 Human: n/a below B2; B2-C2 need <unit>-human.md with a nonempty ESITO: line after picked IDs.
 Audio: every spoken string of the unit's lessons and test has its hash in data/audio-index.js and a non-empty
-  mp3 under audio/. The library, readings, conversations, minimal pairs and exam are not covered.
+  mp3 under audio/. Modules: readings[-a|-b|-c], library[-a1..-c2], writing, conv[-1|-2], chat, phonetics, interference.
 Curriculum: require curriculum.md listing all target unit IDs. Incomplete checks exit 1.`;
 
 export function parseOptions({ args, values, flags }) {
@@ -67,12 +69,12 @@ export function checkCore(unit, target) {
    (Q-C1-D8 A: the judge does not converge on C1 depth, a human sample
    checks it instead); the archive carries the hash of the content it
    accepted, so any later edit makes it stale like a pass would be. */
-function reviewOutcome({ root, id, lang }) {
+function reviewOutcome({ root, id, lang, module = false }) {
   const path = join(root, 'specs/german-course/reviews', `${id}-${lang}.json`);
   if (!existsSync(path)) return { error: `Missing review: ${id}-${lang}` };
   try {
     const review = JSON.parse(readFileSync(path, 'utf8'));
-    const current = () => hashBundle(buildBundle({ root, unitId: id, lang }));
+    const current = () => hashBundle(module ? buildModuleBundle({ root, module: id, lang }) : buildBundle({ root, unitId: id, lang }));
     const archived = review.verdict === 'fail' && review.archived?.decision ? review.archived : null;
     if (review.unit !== id || review.lang !== lang || (review.verdict !== 'pass' && !archived)) {
       return { error: `Review is not pass: ${id}-${lang}` };
@@ -88,8 +90,8 @@ function reviewOutcome({ root, id, lang }) {
 
 /* One pass over the verdicts: each outcome builds and hashes a bundle, so
    errors and archive notes come from the same list instead of two runs. */
-function reviewResult({ root, id, languages }) {
-  const outcomes = languages.map(lang => reviewOutcome({ root, id, lang }));
+function reviewResult({ root, id, languages, module = false }) {
+  const outcomes = languages.map(lang => reviewOutcome({ root, id, lang, module }));
   return {
     errors: outcomes.map(o => o.error).filter(Boolean),
     notes: outcomes.map(o => o.archived).filter(Boolean)
@@ -125,10 +127,10 @@ function hasRecording(root, rec, text) {
   return rec.inIndex(digest) && existsSync(file) && statSync(file).size > 0;
 }
 
-export function audioErrors({ root, unit }) {
+export function audioErrors({ root, unit, strings }) {
   let rec;
   try { rec = loadRecordings(root); } catch (error) { return [error.message]; }
-  const { primary, other } = spokenStrings(unit);
+  const { primary, other } = strings || spokenStrings(unit);
   /* A unit that speaks nothing would pass having checked nothing. */
   if (!primary.length && !other.length) return ['no spoken strings found: nothing to check'];
   const missing = [...primary, ...other].filter(text => !hasRecording(root, rec, text));
@@ -198,8 +200,59 @@ function checkUnits({ root, course, target, options, stages }) {
   return output;
 }
 
+function moduleAudio(module) {
+  const primary = new Set(), other = new Set();
+  const add = set => value => { const text = norm(value); if (text.length > 1) set.add(text); };
+  const source = {};
+  const names = { readings: 'READINGS', library: 'READINGS', conv: 'CONVERSATIONS',
+    phonetics: 'PHONETICS', interference: 'INTERFERENCE' };
+  const name = names[module.id.split('-')[0]];
+  if (name) source[name] = module.items;
+  collectSecondary(source, add(primary), add(other));
+  primary.forEach(text => other.delete(text));
+  return { primary: [...primary], other: [...other] };
+}
+
+function checkModules({ root, course, target, ids, stages }) {
+  const languages = stages.filter(stage => LANGUAGES.includes(stage));
+  const results = [];
+  for (const id of ids) {
+    const module = moduleDefinition(id, course, target);
+    for (const stage of stages) {
+      let errors = [], notes = [];
+      if (stage === 'core') errors = moduleCoreErrors(module);
+      else if (LANGUAGES.includes(stage)) {
+        if (!module.files.length) notes = ['n/a (no overlay by design: chat scenarios are in German)'];
+        else errors = moduleOverlayErrors({ root, module, lang: stage,
+          bundle: buildModuleBundle({ root, module: id, lang: stage }) });
+      } else if (stage === 'review') {
+        ({ errors, notes } = reviewResult({ root, id, languages: languages.length ? languages : ['it'], module: true }));
+      } else if (stage === 'human') {
+        errors = humanErrors({ root, id, level: module.advanced ? 'C1' : 'A1' });
+        if (!module.advanced) notes = ['n/a (not advanced)'];
+      } else {
+        const strings = moduleAudio(module);
+        if (!strings.primary.length && !strings.other.length && ['writing', 'chat'].includes(id)) notes = ['n/a (no recorded speech by design)'];
+        else errors = audioErrors({ root, strings });
+      }
+      results.push({ label: `${id} ${stage}`, errors, notes });
+    }
+  }
+  return results;
+}
+
 function main() {
-  const options = parseOptions({ args: process.argv.slice(2), values: ['root', 'unit', 'stage', 'level'], flags: ['curriculum', 'help'] });
+  const args = process.argv.slice(2);
+  const ids = [];
+  const optionArgs = [];
+  for (let index = 0; index < args.length; index++) {
+    if (args[index].startsWith('--')) {
+      optionArgs.push(args[index]);
+      if (['--root', '--unit', '--stage', '--level'].includes(args[index]) && index + 1 < args.length) optionArgs.push(args[++index]);
+    } else ids.push(args[index]);
+  }
+  const options = parseOptions({ args: optionArgs, values: ['root', 'unit', 'stage', 'level'], flags: ['curriculum', 'help'] });
+  if (ids.length && (options.unit || options.level || options.curriculum)) throw new Error('Choose modules or unit/level/curriculum');
   if (options.help) { console.log(HELP); return; }
   if (options.unit && !/^[a-c][12]-u\d+$/.test(options.unit)) throw new Error('Invalid unit ID');
   /* --level is the phase gate: all units of the level, all explanation
@@ -210,10 +263,11 @@ function main() {
   const target = JSON.parse(readFileSync(join(root, 'scripts/porting-target.json'), 'utf8'));
   const results = options.curriculum ? [{ label: 'curriculum', errors: curriculumErrors(root, target) }] : [];
   if (!options.curriculum || options.stage || options.unit) {
-    results.push(...checkUnits({ root, course: loadCourse(root), target, options, stages }));
+    results.push(...(ids.length ? checkModules({ root, course: loadCourse(root), target, ids, stages })
+      : checkUnits({ root, course: loadCourse(root), target, options, stages })));
   }
   results.forEach(({ label, errors, notes = [] }) => console.log(`${label}: ${errors.length ? errors.join('; ')
-    : notes.length ? `pass, archived (${notes.join(', ')})` : 'pass'}`));
+    : notes.length ? (notes[0].startsWith('n/a') ? notes.join(', ') : `pass, archived (${notes.join(', ')})`) : 'pass'}`));
   if (results.some(result => result.errors.length)) process.exitCode = 1;
 }
 
