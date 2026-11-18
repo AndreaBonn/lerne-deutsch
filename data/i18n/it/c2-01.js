@@ -497,7 +497,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Quando il plurale manca: i plurali sostitutivi",
-        p: "Altri nomi non hanno un plurale d'uso, e il tedesco lo ricava da un composto o da un derivato. <em>der Rat</em>, nel senso di consiglio, diventa <strong>Ratschläge</strong>: <em>Räte</em> sono invece gli organi collegiali o i loro membri (<em>die Stadträte</em>). <em>der Regen</em> diventa <strong>Regenfälle</strong>, <em>der Schnee</em> <strong>Schneefälle</strong>, <em>der Streit</em> <strong>Streitigkeiten</strong>, <em>der Sport</em> <strong>Sportarten</strong>. Il plurale sostitutivo è il punto in cui plurale e formazione delle parole si incontrano: si sceglie un composto con un secondo elemento che il plurale ce l'ha."
+        p: "Altri nomi non hanno un plurale d'uso, o lo hanno raro, e il tedesco lo ricava da un composto o da un derivato. <em>der Rat</em>, nel senso di consiglio, diventa <strong>Ratschläge</strong>: <em>Räte</em> sono invece gli organi collegiali o i loro membri (<em>die Stadträte</em>). <em>der Regen</em> diventa <strong>Regenfälle</strong>, <em>der Schnee</em> <strong>Schneefälle</strong>, <em>der Streit</em> di norma <strong>Streitigkeiten</strong> (<em>Streite</em> esiste, ma è raro), <em>der Sport</em> <strong>Sportarten</strong>. Il plurale sostitutivo è il punto in cui plurale e formazione delle parole si incontrano: si sceglie un composto con un secondo elemento che il plurale ce l'ha."
       },
       {
         contrast: "Anche l'italiano conosce i plurali doppi: <em>le braccia</em> del corpo e <em>i bracci</em> di una gru, <em>le mura</em> della città e <em>i muri</em> di casa, <em>le membra</em> e <em>i membri</em> di un'associazione, <em>le fondamenta</em> di un edificio e <em>i fondamenti</em> di una teoria. Il meccanismo è lo stesso, ma in tedesco i casi sono altri e non corrispondono ai nostri: per un italiano <em>le banche</em> e <em>le panchine</em> sono due parole diverse, e niente segnala che in tedesco bisogna scegliere fra <em>Banken</em> e <em>Bänke</em>."
@@ -619,7 +619,7 @@ LINGUAI.addStrings("it", {
       "scomporre un composto in Bestimmungswort e Grundwort",
       "ricavare il genere di un composto dall'ultimo elemento",
       "inserire l'elemento di giunzione giusto (-s-, -e-, -n-, -er-)",
-      "applicare la regola fissa dopo -ung, -heit, -keit, -tät"
+      "riconoscere i suffissi dopo cui la -s- è la norma (-ung, -heit, -keit, -tät)"
     ],
     theory: [
       {
@@ -628,7 +628,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "L'elemento di giunzione",
-        p: "Fra un elemento e l'altro può comparire un <strong>Fugenelement</strong>: <em>-s-</em> (<em>Arbeitszeit, Wohnungsmarkt</em>), <em>-es-</em> (<em>Tageslicht</em>), <em>-e-</em> (<em>Hundebesitzer</em>), <em>-n-</em> o <em>-en-</em> (<em>Sonnenenergie, Leinenpflicht</em>), <em>-er-</em> (<em>Kinderbuch</em>); a volte invece la <em>-e</em> finale del primo elemento cade (<em>die Schule</em> → <em>Schulpflicht</em>). Una regola tiene quasi senza eccezioni: dopo i suffissi <em>-ung, -heit, -keit, -schaft, -ion, -tät, -ling</em> la giunzione è <em>-s-</em> (<em>Gesundheitswesen, Freiheitsstrafe, Universitätsbibliothek, Lieblingsbuch</em>). Negli altri casi la giunzione si impara parola per parola, e a volte oscilla: <em>Schadensersatz</em> e <em>Schadenersatz</em> sono entrambi corretti, e in Austria si dice <em>Schweinsbraten</em> dove in Germania si dice <em>Schweinebraten</em>."
+        p: "Fra un elemento e l'altro può comparire un <strong>Fugenelement</strong>: <em>-s-</em> (<em>Arbeitszeit, Wohnungsmarkt</em>), <em>-es-</em> (<em>Tageslicht</em>), <em>-e-</em> (<em>Hundebesitzer</em>), <em>-n-</em> o <em>-en-</em> (<em>Sonnenenergie, Leinenpflicht</em>), <em>-er-</em> (<em>Kinderbuch</em>); a volte invece la <em>-e</em> finale del primo elemento cade (<em>die Schule</em> → <em>Schulpflicht</em>). Un indizio affidabile: dopo i suffissi <em>-ung, -heit, -keit, -schaft, -ion, -tät, -ling</em> la giunzione è di norma <em>-s-</em> (<em>Gesundheitswesen, Freiheitsstrafe, Universitätsbibliothek, Lieblingsbuch</em>). Ma è un indizio, non una garanzia, e negli altri casi la giunzione si impara parola per parola, e a volte oscilla: <em>Schadensersatz</em> e <em>Schadenersatz</em> sono entrambi corretti, e in Austria si dice <em>Schweinsbraten</em> dove in Germania si dice <em>Schweinebraten</em>."
       },
       {
         contrast: "L'italiano costruisce con una preposizione e mette il nome principale a sinistra: <em>il mercato degli alloggi, la biblioteca dell'università</em>. Il tedesco capovolge l'ordine: prima ciò che specifica, poi il nome principale, in una sola parola: <em>Wohnungsmarkt, Universitätsbibliothek</em>. Per tradurre si legge da destra a sinistra. E la <em>-s-</em> di giunzione non è un genitivo: compare anche dopo nomi femminili (<em>die Arbeit</em> → <em>Arbeitszeit</em>, <em>die Liebe</em> → <em>Liebesbrief</em>), che al genitivo non prendono mai <em>-s</em>."
@@ -642,7 +642,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Composti ed elemento di giunzione",
-      note: "<b>Bestimmungswort + (giunzione) + Grundwort</b>. Il Grundwort, a destra, decide genere e plurale; l'accento principale cade di norma sul primo elemento. Dopo <i>-ung, -heit, -keit, -schaft, -ion, -tät, -ling</i> la giunzione è quasi sempre <i>-s-</i>.",
+      note: "<b>Bestimmungswort + (giunzione) + Grundwort</b>. Il Grundwort, a destra, decide genere e plurale; l'accento principale cade di norma sul primo elemento. Dopo <i>-ung, -heit, -keit, -schaft, -ion, -tät, -ling</i> la giunzione è di norma <i>-s-</i>.",
       table: {
         head: ["elementi", "giunzione", "composto"],
         rows: [
@@ -760,7 +760,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Fremdwörter: il suffisso dà il genere",
-        p: "Anche nelle parole straniere il suffisso orienta il genere: <em>-ion, -ität, -ur, -ie</em> sono di norma femminili (<em>die Nation, die Qualität, die Kultur, die Demokratie</em>); <em>-ismus</em> è maschile (<em>der Realismus</em>); <em>-ment</em> è quasi sempre neutro (<em>das Dokument, das Argument</em>). I verbi in <em>-ieren</em> formano nomi in <em>-ierung</em>: <em>digitalisieren</em> → <em>die Digitalisierung</em>."
+        p: "Anche nelle parole straniere il suffisso orienta il genere: <em>-ion, -ität, -ur, -ie</em> sono di norma femminili (<em>die Nation, die Qualität, die Kultur, die Demokratie</em>); <em>-ismus</em> è maschile (<em>der Realismus</em>); <em>-ment</em> è quasi sempre neutro (<em>das Dokument, das Argument</em>). Molti verbi in <em>-ieren</em> formano nomi in <em>-ierung</em> (<em>digitalisieren</em> → <em>die Digitalisierung</em>), ma non tutti: <em>studieren</em> dà <em>das Studium</em>."
       },
       {
         contrast: "Per un italiano molti Fremdwörter sono trasparenti: <em>-ità</em> corrisponde a <em>-ität</em> (<em>qualità, Qualität</em>), <em>-zione</em> a <em>-tion</em> (<em>nazione, Nation</em>), <em>-ismo</em> a <em>-ismus</em>. Il genere però non si copia dall'italiano: <em>il problema</em> è <em>das Problem</em>, <em>il sistema</em> <em>das System</em>, <em>il metodo</em> <em>die Methode</em>. E ci sono falsi amici: <em>die Firma</em> è la ditta, non la firma (<em>die Unterschrift</em>); <em>der Konkurs</em> è il fallimento, non il concorso."
@@ -792,7 +792,7 @@ LINGUAI.addStrings("it", {
         { tr: "La sostenibilità del progetto è messa in dubbio dagli esperti.", note: "nachhaltig + -keit: -keit dopo -ig" },
         { tr: "Ho sbagliato a scrivere la data.", note: "sich verschreiben: ver- indica un errore" },
         { tr: "Durante la lite strappò la lettera in piccoli pezzi.", note: "zer-: rottura in pezzi; participio zerrissen, senza ge-" },
-        { tr: "La digitalizzazione della pubblica amministrazione procede solo lentamente.", note: "digitalisieren + -ung: dai verbi in -ieren nomi in -ierung" }
+        { tr: "La digitalizzazione della pubblica amministrazione procede solo lentamente.", note: "digitalisieren + -ung: schema frequente dei verbi in -ieren" }
       ]
     },
     vocab: [
@@ -845,7 +845,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa con due nomi derivati: nella prima lacuna da «digitalisieren», nella seconda da «wirksam».",
         tr: "La digitalizzazione dell'amministrazione dovrebbe accelerare le procedure, ma sulla sua efficacia gli esperti non sono d'accordo.",
-        why: "<b>Digitalisierung</b>: i verbi in <i>-ieren</i> formano nomi in <i>-ierung</i>. <b>Wirksamkeit</b>: dopo <i>-sam</i> il suffisso è <i>-keit</i>."
+        why: "<b>Digitalisierung</b>: da molti verbi in <i>-ieren</i> si forma un nome in <i>-ierung</i>. <b>Wirksamkeit</b>: dopo <i>-sam</i> il suffisso è <i>-keit</i>."
       },
       {
         q: "Abbina ogni verbo al suo significato.",
@@ -872,7 +872,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "La digitalizzazione cambia non solo il mondo del lavoro, ma anche la lingua. Molte parole straniere provenienti dall'inglese ormai si usano con assoluta naturalezza.",
-        why: "In <i>Digitalisierung</i> l'accento cade su <b>sie</b>; in <i>Fremdwörter</i> l'accento cade su <b>Fremd</b>; in <i>selbstverständlich</i> l'accento principale cade su <b>selbst</b>."
+        why: "In <i>Digitalisierung</i> l'accento cade su <b>sie</b>; in <i>Fremdwörter</i> l'accento cade su <b>Fremd</b>; in <i>Englischen</i> l'accento cade su <b>Eng</b> e <b>ng</b> si pronuncia [ŋ]."
       },
       {
         tr: "La sua calma mi ha colpito.",
@@ -900,7 +900,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa: «Die ___ zwischen Vermieter und Mieter landeten schließlich vor Gericht.» (le liti)",
         hint: "plurale usuale di der Streit",
-        why: "<b>Streitigkeiten</b>: al plurale <i>Streit</i> si sostituisce di norma con <i>Streitigkeiten</i>."
+        why: "<b>Streitigkeiten</b>: il plurale <i>Streite</i> esiste, ma è raro; di norma si usa <i>Streitigkeiten</i>."
       },
       {
         q: "Completa: «Das ___ hat die Schließung des Restaurants angeordnet.»",
@@ -934,10 +934,10 @@ LINGUAI.addStrings("it", {
         q: "Un critico ha giudicato molto male un romanzo. Quale frase usa il giornale?",
         opts: [
           "Der Kritiker hat den Roman verrissen.",
-          "Der Kritiker hat den Roman zerrissen.",
+          "Der Kritiker hat den Roman zerbrochen.",
           "Der Kritiker hat den Roman entrissen."
         ],
-        why: "<b>verreißen</b> significa «stroncare». <i>zerreißen</i> da solo è strappare materialmente in pezzi (con lo stesso senso di «stroncare» solo nell'espressione <i>in der Luft zerreißen</i>); <i>entreißen</i> è strappare di mano a qualcuno, e vuole il dativo della persona."
+        why: "<b>verreißen</b> significa «stroncare». <i>zerbrechen</i> è rompere un oggetto fragile; <i>entreißen</i> è strappare di mano a qualcuno, e vuole il dativo della persona."
       },
       {
         q: "Abbina ogni plurale al suo significato.",
