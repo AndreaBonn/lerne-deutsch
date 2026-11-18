@@ -1,30 +1,25 @@
 {
-  "bundleHash": "717694dd63c92162a6d63ff5329e44c46fa73f248319fac29d3c4b1da1a67a94",
+  "bundleHash": "ce15fea8a6e4a4ffe888449add103cab5f9853f2ae2d7e8dcc0563f007306e6e",
   "findings": [
     {
-      "kind": "traduzione",
-      "msg": "«Heftig» qualifica qui una controversia accesa, non necessariamente violenta. Sostituire «acceso (violento)» con «acceso, intenso».",
-      "path": "merged[2].lex[6]"
+      "kind": "traduzione e reggenza",
+      "msg": "«(+ acc.)» indica erroneamente una reggenza tedesca dopo la traduzione italiana. Per «sich aussprechen für» la reggenza è «für + Akkusativ»: spostare l'indicazione nella voce tedesca oppure esplicitarla nella spiegazione italiana.",
+      "path": "merged[1].lex[7]"
     },
     {
-      "kind": "traduzione",
-      "msg": "«Rasch einsetzend» significa «che inizia rapidamente»: «che si attiva in fretta» suggerisce invece un soggetto che si mette in azione. Usare «che si manifesta rapidamente».",
-      "path": "merged[3].gloss[7]"
+      "kind": "traduzione e reggenza",
+      "msg": "«(+ dat.)» associato a «tenere conto di» può essere letto come reggenza italiana. Precisare che è l'espressione tedesca «jemandem/etwas Rechnung tragen» a richiedere il dativo.",
+      "path": "merged[4].gloss[10]"
     },
     {
-      "kind": "traduzione",
-      "msg": "«Aufgeklärt» nel contesto significa «illuminato» o «di mentalità illuminista»; «progressista» non è un equivalente necessario. Usare «illuminato, di mentalità illuminista».",
-      "path": "merged[7].gloss[9]"
+      "kind": "comprensione e chiave",
+      "msg": "Il testo dice che la consultazione «soll» svolgersi: è prevista, ma non è certo che avverrà. La domanda presenta il risultato come già determinato senza riprendere questa condizione. Formulare «Wäre das Ergebnis der geplanten Bürgerbefragung für die Stadt rechtlich bindend?» e mantenere la risposta falsa.",
+      "path": "neutral[2].questions[3].q"
     },
     {
-      "kind": "lessico",
-      "msg": "«Sich aussprechen für» richiede l'accusativo. Indicare «sich für etwas/jemanden aussprechen», per rendere esplicita la reggenza.",
-      "path": "neutral[1].lexIt[7]"
-    },
-    {
-      "kind": "lessico",
-      "msg": "L'espressione richiede un complemento al dativo: indicare «jemandem/etwas Rechnung tragen» e riportare la stessa forma tedesca nel campo corrispondente di merged.",
-      "path": "neutral[4].glossIt[10]"
+      "kind": "ambiguità della domanda",
+      "msg": "«Bei der ersten Abstimmung» suggerisce che quella del 1959 fosse la prima votazione in assoluto sul suffragio femminile; il testo afferma soltanto che precedette di dodici anni quella del 1971. Scrivere «Bei der Abstimmung zwölf Jahre zuvor …».",
+      "path": "neutral[1].questions[0].q"
     }
   ],
   "lang": "it",

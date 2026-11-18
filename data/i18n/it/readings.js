@@ -108,7 +108,7 @@ LINGUAI.addStrings("it", {
   "read:r-c1-frauenstimmrecht": {
     title: "Il 7 febbraio 1971",
     gloss: ["la votazione popolare (referendum)", "a livello federale", "la richiesta (la causa)", "il diritto di voto", "la modifica costituzionale", "avente diritto di voto", "l'ordine (disposizione)", "la Landsgemeinde (assemblea cantonale all'aperto)", "celebrare (una ricorrenza)"],
-    lex: ["febbraio", "decidere", "eleggere (votare alle elezioni)", "votare (in una votazione)", "respingere", "terzo (frazione)", "voto", "pronunciarsi a favore di (+ acc.)", "ritardo", "democrazia", "parlamento", "insieme (totalità)", "cantone", "questione (faccenda)", "partecipare alle decisioni", "Appenzello Interno", "introdurre", "decisione (risoluzione)", "Tribunale federale", "assemblea", "giorno festivo", "data", "dibattito", "parità"]
+    lex: ["febbraio", "decidere", "eleggere (votare alle elezioni)", "votare (in una votazione)", "respingere", "terzo (frazione)", "voto", "pronunciarsi a favore di (in tedesco für + accusativo)", "ritardo", "democrazia", "parlamento", "insieme (totalità)", "cantone", "questione (faccenda)", "partecipare alle decisioni", "Appenzello Interno", "introdurre", "decisione (risoluzione)", "Tribunale federale", "assemblea", "giorno festivo", "data", "dibattito", "parità"]
   },
 
   "read:r-c1-innenstadt": {
@@ -125,7 +125,7 @@ LINGUAI.addStrings("it", {
 
   "read:r-c1-betriebsrat": {
     title: "Il consiglio aziendale prende la parola",
-    gloss: ["sottoporre a discussione (proporre al confronto)", "la regolamentazione dell'orario di lavoro", "il consiglio aziendale (rappresentanza dei lavoratori)", "sollevare (una questione)", "entrare in vigore", "il diritto di codeterminazione", "fare riferimento a", "far notare (obiettare)", "conciliare", "l'accordo aziendale", "tenere conto di (+ dat.)", "ammettere"],
+    gloss: ["sottoporre a discussione (proporre al confronto)", "la regolamentazione dell'orario di lavoro", "il consiglio aziendale (rappresentanza dei lavoratori)", "sollevare (una questione)", "entrare in vigore", "il diritto di codeterminazione", "fare riferimento a", "far notare (obiettare)", "conciliare", "l'accordo aziendale", "tenere conto di (in tedesco regge il dativo)", "ammettere"],
     lex: ["di medie dimensioni", "ingegneria meccanica", "impresa", "Bielefeld", "direzione aziendale", "autunno", "in futuro", "dipendenti", "turno", "pianificare", "libertà", "consenso", "legge sull'ordinamento aziendale", "spettare", "assemblea del personale", "simile", "azienda (stabilimento)", "pressione", "aumentare", "genitori", "orari di apertura", "asilo (struttura diurna per l'infanzia)", "trattativa", "realizzarsi (andare in porto)", "introdurre", "costringere", "con breve preavviso", "inserire (registrare)", "influenza", "sottovalutare", "prendere gusto a", "procedura"]
   },
 

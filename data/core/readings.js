@@ -437,7 +437,7 @@ LINGUAI.addReadings([
     glossIt: ["die Volksabstimmung", "auf Bundesebene", "das Anliegen", "das Stimmrecht", "die Verfassungsänderung", "stimmberechtigt", "die Anordnung", "die Landsgemeinde", "begehen (einen Tag)"],
     lexIt: ["Februar", "entscheiden", "wählen", "abstimmen", "ablehnen", "Drittel", "Stimme", "sich aussprechen für", "Verzögerung", "Demokratie", "Parlament", "Gesamtheit", "Kanton", "Angelegenheit", "mitbestimmen", "Appenzell Innerrhoden", "einführen", "Entschluss", "Bundesgericht", "Versammlung", "Feiertag", "Datum", "Debatte", "Gleichstellung"],
     questions: [
-      { t: "truefalse", q: "Bei der ersten Abstimmung zwölf Jahre zuvor lehnten die Männer das Frauenstimmrecht ab.", a: 0 },
+      { t: "truefalse", q: "Bei der Abstimmung zwölf Jahre zuvor lehnten die Männer das Frauenstimmrecht ab.", a: 0 },
       { t: "mcq", q: "Wie erklärt der Text die späte Einführung?", opts: ["mit dem Widerstand des Bundesgerichts", "mit der Funktionsweise der direkten Demokratie", "mit einem Beschluss des Parlaments"], a: 1 },
       { t: "mcq", q: "Wie kam das Frauenstimmrecht in Appenzell Innerrhoden zustande?", opts: ["durch einen Beschluss der Landsgemeinde", "durch eine nationale Volksabstimmung", "durch eine Anordnung des Bundesgerichts"], a: 2 },
       { t: "truefalse", q: "Der 7. Februar ist in der Schweiz ein Feiertag.", a: 1 }
@@ -464,7 +464,7 @@ LINGUAI.addReadings([
       { t: "mcq", q: "Welches Argument bringen die Befürworter vor?", opts: ["Das Einkaufszentrum am Stadtrand müsse geschlossen werden.", "Fußgängerzonen hätten anderswo den Umsatz eher gesteigert.", "Die Kunden aus dem Umland kämen ohnehin mit dem Bus."], a: 1 },
       { t: "truefalse", q: "Die Sprecherin der Einzelhändler lehnt jede Verringerung des Verkehrs ab.", a: 1 },
       { t: "mcq", q: "Wie bewertet der Text die Zusicherung der Stadtverwaltung?", opts: ["als erwiesen", "als eindeutig falsch", "als etwas, das sich derzeit nicht beurteilen lässt"], a: 2 },
-      { t: "truefalse", q: "Das Ergebnis der Bürgerbefragung wäre für die Stadt rechtlich verpflichtend.", a: 1 }
+      { t: "truefalse", q: "Das Ergebnis der geplanten Bürgerbefragung wäre für die Stadt rechtlich verpflichtend.", a: 1 }
     ]
   },
   {
