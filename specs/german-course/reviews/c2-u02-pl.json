@@ -1,0 +1,33 @@
+{
+  "bundleHash": "406e5ba2af94a352774aa01a82b63339ed1790edb88c6111baa695919681b82d",
+  "findings": [
+    {
+      "kind": "adeguatezza CEFR",
+      "msg": "L’unità è etichettata C2, ma la maggior parte delle attività verifica distinzioni lessicali e strutture di base o intermedie, come il genere dei composti, i suffissi comuni e semplici frasi dichiarative. Inserire nel formato previsto esempi e distrattori di livello avanzato, con ambiguità semantiche, restrizioni d’uso e sfumature di registro.",
+      "path": "merged.lessons"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In «missverstehen» l’accento principale cade su «stehen», non su «miss-». Sostituire l’esempio con un verbo nel quale «miss-» sia effettivamente accentato, oppure correggere la spiegazione.",
+      "path": "merged.lessons[2].theory[2].p"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "Dopo il polacco «składa się z», l’esempio tedesco richiede il dativo: «aus Worten»; in alternativa formulare «przemówienie zawiera Worte».",
+      "path": "merged.lessons[0].theory[3].trap"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«geschlossen blieb» è al passato: «oddział pozostaje zamknięty» lo rende erroneamente al presente. Correggere in «oddział pozostał zamknięty».",
+      "path": "merged.lessons[0].exercises[8].tr"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Nachhaltigkeit des Projekts» indica la sostenibilità o la durata del progetto; «trwałość efektów projektu» aggiunge il riferimento agli effetti, assente nel tedesco. Allineare la frase polacca e le soluzioni tedesche, per esempio usando «trwałość projektu».",
+      "path": "merged.lessons[2].exercises[7].q"
+    }
+  ],
+  "lang": "pl",
+  "unit": "c2-u02",
+  "verdict": "fail"
+}
