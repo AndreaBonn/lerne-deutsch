@@ -25,7 +25,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Come si legge",
-        p: "Se dopo un articolo trovi una preposizione o un secondo articolo (<em>die von der ..., der dem ...</em>), aspettati un attributo esteso: salta in avanti fino al primo participio declinato e al nome che lo segue, poi torna indietro e leggi i complementi. L'ordine interno è quello di una subordinata: complementi prima, participio in fondo, come il verbo in fondo alla relativa. Il pronome riflessivo resta dentro: <em>die sich verschärfende Wohnungsnot</em>. Due attributi coordinati senza congiunzione si separano con una virgola: <em>die in der Studie befragten, überwiegend jungen Erwachsenen</em>; con <em>und</em> la virgola non serve: <em>die angekündigte und vielfach kritisierte Reform</em>."
+        p: "Se dopo un articolo trovi una preposizione o un secondo articolo (<em>die von der ..., der dem ...</em>), aspettati un attributo esteso: salta in avanti fino al nome e individua i participi declinati che lo precedono (possono essere più d'uno, coordinati), poi torna indietro e leggi i complementi di ciascuno. L'ordine interno è quello di una subordinata: complementi prima, participio in fondo, come il verbo in fondo alla relativa. Il pronome riflessivo resta dentro: <em>die sich verschärfende Wohnungsnot</em>. Due attributi coordinati senza congiunzione si separano con una virgola: <em>die in der Studie befragten, überwiegend jungen Erwachsenen</em>; con <em>und</em> la virgola non serve: <em>die angekündigte und vielfach kritisierte Reform</em>."
       },
       {
         contrast: "In italiano il participio segue il nome e la frase si allunga verso destra: <em>la riforma chiesta da anni dagli esperti</em>. Il tedesco mette l'intero attributo a sinistra, fra l'articolo e il nome. I complementi possono conservare l'ordine italiano (<em>seit Jahren von Fachleuten</em>, «da anni dagli esperti»); quello che cambia posto è il participio, che va in fondo, subito prima del nome. Il participio presente italiano in <em>-ante, -ente</em> è raro e spesso lessicalizzato (<em>vigente, crescente</em>); il tedesco forma il participio I di quasi ogni verbo e lo usa liberamente come attributo: <em>die dem Gericht vorliegenden Gutachten</em>, «le perizie di cui dispone il tribunale»."
@@ -98,7 +98,7 @@ LINGUAI.addStrings("it", {
           "in Armut gelebten",
           "lebenden in Armut"
         ],
-        why: "Azione attiva e contemporanea: participio I, <b>lebenden</b>. Il complemento <i>in Armut</i> sta prima del participio, mai dopo; <i>gelebten</i> è un participio II e indicherebbe un'azione subita o conclusa."
+        why: "Azione attiva e contemporanea: participio I, <b>lebenden</b>. Dentro l'attributo esteso il complemento <i>in Armut</i> sta prima del participio, mai fra participio e nome; <i>gelebten</i> è un participio II e indicherebbe un'azione subita o conclusa."
       },
       {
         q: "Completa: «Das dem Ausschuss seit März ___ Gutachten wurde bislang nicht veröffentlicht.»",
@@ -367,9 +367,9 @@ LINGUAI.addStrings("it", {
         why: "<b>Rechnung</b>: <i>einer Sache Rechnung tragen</i>, «tenere conto di qualcosa», con il dativo (<i>den Einwänden</i>)."
       },
       {
-        q: "Completa: «Die Finanzierung des Projekts steht derzeit nicht zur ___.» (non è in discussione)",
+        q: "Completa: «Die Finanzierung des Projekts steht derzeit nicht zur ___.» (non è in discussione, o non è negoziabile)",
         hint: "zur ... stehen",
-        why: "<b>Debatte</b> o <b>Diskussion</b>: «non è in discussione». Si accetta anche <i>nicht zur Disposition stehen</i>, che sottolinea che il finanziamento non è negoziabile."
+        why: "<b>Debatte</b> o <b>Diskussion</b>: «non è in discussione». <b>Disposition</b> rende la seconda lettura: <i>nicht zur Disposition stehen</i>, «non è negoziabile, non si mette in questione»."
       },
       {
         q: "Completa: nella prima lacuna la preposizione, nella seconda il nome del Funktionsverbgefüge.",
