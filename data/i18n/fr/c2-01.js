@@ -748,7 +748,7 @@ LINGUAI.addStrings("fr", {
     theory: [
       {
         h: "Des suffixes qui décident du genre",
-        p: "Un suffixe fait passer un mot dans une autre catégorie et en fixe le genre. <em>-ung</em> forme des noms à partir de verbes : <em>verbessern</em> → <em>die Verbesserung</em>. <em>-heit</em>, <em>-keit</em> et <em>-igkeit</em> forment des noms à partir d'adjectifs : <em>frei</em> → <em>die Freiheit</em>, <em>nachhaltig</em> → <em>die Nachhaltigkeit</em>, <em>genau</em> → <em>die Genauigkeit</em>. Les noms en <strong>-ung, -heit, -keit, -schaft</strong> sont toujours féminins et, quand ils ont un pluriel, le font en <em>-en</em> ; beaucoup de noms abstraits, comme <em>Gelassenheit</em>, n'en ont pas."
+        p: "Un suffixe fait souvent passer un mot dans une autre catégorie (certains, comme <em>-schaft</em> dans <em>Freundschaft</em>, forment des noms à partir de noms), et le suffixe nominal fixe toujours le genre. <em>-ung</em> forme des noms à partir de verbes : <em>verbessern</em> → <em>die Verbesserung</em>. <em>-heit</em>, <em>-keit</em> et <em>-igkeit</em> forment des noms à partir d'adjectifs : <em>frei</em> → <em>die Freiheit</em>, <em>nachhaltig</em> → <em>die Nachhaltigkeit</em>, <em>genau</em> → <em>die Genauigkeit</em>. Les noms en <strong>-ung, -heit, -keit, -schaft</strong> sont toujours féminins et, quand ils ont un pluriel, le font en <em>-en</em> ; beaucoup de noms abstraits, comme <em>Gelassenheit</em>, n'en ont pas."
       },
       {
         h: "-heit ou -keit ?",
