@@ -1,10 +1,10 @@
 **English** | [Italiano](./README.it.md) | [Polski](./README.pl.md)
 
-# Impara l'Italiano
+# Deutsch lernen
 
 A static Italian course, A1 to C2, that runs entirely in the browser: no account, no server, no build step, and nothing to install.
 
-![CI](https://github.com/AndreaBonn/impara-italiano/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/AndreaBonn/impara-tedesco/actions/workflows/ci.yml/badge.svg)
 ![Code: MIT](https://img.shields.io/badge/code-MIT-blue)
 ![Content: CC BY--SA 4.0](https://img.shields.io/badge/content-CC%20BY--SA%204.0-blue)
 ![Node](https://img.shields.io/badge/node-%3E%3D24-339933)
@@ -14,7 +14,7 @@ A static Italian course, A1 to C2, that runs entirely in the browser: no account
 
 The grammar syllabus goes level by level from A1 to C2. Explanations exist in five languages (Polish, English, Spanish, French, German) and the learner picks one at any time, without losing progress. Everything the learner does stays in their browser. Two things can leave the device, and both are off until the learner turns them on: a voice recording sent for speech recognition, and an answer the course has already rejected, sent to a language model the learner pays for with their own key.
 
-**Live:** [andreabonn.github.io/impara-italiano](https://andreabonn.github.io/impara-italiano/)
+**Live:** [andreabonn.github.io/impara-tedesco](https://andreabonn.github.io/impara-tedesco/)
 
 ## Contents
 
@@ -141,8 +141,8 @@ Node 24 rather than 20: `npm test` hands the glob `tests/unit/**/*.test.mjs` str
 1. Clone the repository.
 
    ```bash
-   git clone git@github.com:AndreaBonn/impara-italiano.git
-   cd impara-italiano
+   git clone git@github.com:AndreaBonn/impara-tedesco.git
+   cd impara-tedesco
    ```
 
 2. Install the development dependencies. Skip this if you only want to use the course.
@@ -306,9 +306,9 @@ The fonts are third-party work under the SIL Open Font License, whose texts trav
 
 ## Support the project
 
-If the course was useful to you, a star on [GitHub](https://github.com/AndreaBonn/impara-italiano) helps other learners find it.
+If the course was useful to you, a star on [GitHub](https://github.com/AndreaBonn/impara-tedesco) helps other learners find it.
 
-Impara l'Italiano is free to use. If you want to give something back, you can leave a tip via PayPal. The amount is up to you and it is entirely optional.
+Deutsch lernen is free to use. If you want to give something back, you can leave a tip via PayPal. The amount is up to you and it is entirely optional.
 
 <div align="center">
 

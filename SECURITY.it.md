@@ -10,7 +10,7 @@ La costante di versione del service worker (`SW_VERSION` in `sw.js`) identifica 
 
 ## Segnalare una vulnerabilità
 
-La segnalazione passa da [GitHub Security Advisories](https://github.com/AndreaBonn/impara-italiano/security/advisories/new).
+La segnalazione passa da [GitHub Security Advisories](https://github.com/AndreaBonn/impara-tedesco/security/advisories/new).
 
 Nella segnalazione servono:
 

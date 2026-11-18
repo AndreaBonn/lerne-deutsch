@@ -1,6 +1,6 @@
 [English](./README.md) | [Italiano](./README.it.md) | **Polski**
 
-# Impara l'Italiano 🇮🇹
+# Deutsch lernen 🇩🇪
 
 Kurs języka włoskiego dla osób mówiących po polsku. Od zera (A1) do poziomu biegłości (C2).
 Działa w przeglądarce, nie wymaga konta ani internetu po pierwszym wczytaniu, a postępy zapisują się na Twoim urządzeniu.
@@ -191,7 +191,7 @@ referencyjnych dla włoskiego jako języka obcego. Fonty: Fraunces i Inter (SIL 
 
 ## Wesprzyj projekt
 
-Impara l'Italiano jest bezpłatna. Jeśli kurs Ci się przydał i chcesz się odwdzięczyć, możesz
+Kurs Deutsch lernen jest bezpłatny. Jeśli kurs Ci się przydał i chcesz się odwdzięczyć, możesz
 zostawić napiwek przez PayPal. Kwotę wybierasz sam, a wpłata jest całkowicie dobrowolna.
 
 <div align="center">
