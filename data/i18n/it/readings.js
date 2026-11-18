@@ -120,7 +120,7 @@ LINGUAI.addStrings("it", {
   "read:r-c1-hochwasser": {
     title: "Dopo l'alluvione",
     gloss: ["la confluenza (la foce)", "apposto (affisso)", "il livello idrometrico", "registrato", "il piano terra", "fradicio", "smaltire", "che si attiva in fretta", "la disponibilità ad aiutare", "il fango", "il sacco di sabbia"],
-    lex: ["Passavia", "Inn", "Ilz", "Danubio", "piena (inondazione)", "esperienza", "centro storico", "segno (tacca)", "ricordare", "alluvione", "segno (livello segnato)", "giugno", "livello", "vicolo", "cantina", "per giorni", "negozio", "merce", "notevole", "danno", "social network", "darsi appuntamento (organizzarsi)", "volontari", "studenti", "università", "spalare", "trascinare", "misura di protezione", "discutere", "muro", "vista", "fiume", "ricchezza", "pericolo"]
+    lex: ["Passavia", "Inn", "Ilz", "Danubio", "piena (inondazione)", "esperienza", "centro storico", "segno (tacca)", "ricordare", "alluvione", "segno (livello segnato)", "giugno", "livello", "vicolo", "cantina", "per giorni", "negozio", "merce", "notevole", "danno", "social network", "chiamare a raccolta", "volontari", "studenti", "università", "spalare", "trascinare", "misura di protezione", "discutere", "muro", "vista", "fiume", "ricchezza", "pericolo"]
   },
 
   "read:r-c1-betriebsrat": {

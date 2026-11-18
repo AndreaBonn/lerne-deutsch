@@ -478,12 +478,12 @@ LINGUAI.addReadings([
       "Eine der höchsten dieser Marken stammt aus dem Juni 2013, als das Wasser einen seit mehr als fünfhundert Jahren nicht mehr verzeichneten Stand erreichte.",
       "In den tiefer gelegenen Gassen standen Erdgeschosse und Keller tagelang unter Wasser, und zahlreiche Geschäfte mussten ihre durchnässte Ware entsorgen.",
       "Bemerkenswert war jedoch weniger der Schaden als die rasch einsetzende Hilfsbereitschaft.",
-      "Über soziale Netzwerke verabredete Freiwillige, viele von ihnen Studierende der örtlichen Universität, schaufelten Schlamm aus den Häusern und schleppten Sandsäcke.",
+      "Über soziale Netzwerke zusammengerufene Freiwillige, viele von ihnen Studierende der örtlichen Universität, schaufelten Schlamm aus den Häusern und schleppten Sandsäcke.",
       "Über weitergehende Schutzmaßnahmen wird seither immer wieder diskutiert, denn eine durchgehende Mauer würde den Blick auf den Fluss und damit das Gesicht der Altstadt verändern.",
       "So lebt die Stadt mit einem Fluss, der ihr Reichtum und Gefahr zugleich ist."
     ],
     glossIt: ["die Mündung", "angebracht", "der Pegelstand", "verzeichnet", "das Erdgeschoss", "durchnässt", "entsorgen", "rasch einsetzend", "die Hilfsbereitschaft", "der Schlamm", "der Sandsack"],
-    lexIt: ["Passau", "Inn", "Ilz", "Donau", "Hochwasser", "Erfahrung", "Altstadt", "Markierung", "erinnern", "Flut", "Marke", "Juni", "Stand", "Gasse", "Keller", "tagelang", "Geschäft", "Ware", "bemerkenswert", "Schaden", "soziale Netzwerke", "verabreden", "Freiwillige", "Studierende", "Universität", "schaufeln", "schleppen", "Schutzmaßnahme", "diskutieren", "Mauer", "Blick", "Fluss", "Reichtum", "Gefahr"],
+    lexIt: ["Passau", "Inn", "Ilz", "Donau", "Hochwasser", "Erfahrung", "Altstadt", "Markierung", "erinnern", "Flut", "Marke", "Juni", "Stand", "Gasse", "Keller", "tagelang", "Geschäft", "Ware", "bemerkenswert", "Schaden", "soziale Netzwerke", "zusammenrufen", "Freiwillige", "Studierende", "Universität", "schaufeln", "schleppen", "Schutzmaßnahme", "diskutieren", "Mauer", "Blick", "Fluss", "Reichtum", "Gefahr"],
     questions: [
       { t: "mcq", q: "Woran erkennt man in der Passauer Altstadt frühere Hochwasser?", opts: ["an Sandsäcken vor den Türen", "an Markierungen an den Häusern", "an Schildern der Universität"], a: 1 },
       { t: "truefalse", q: "Im Juni 2013 stieg das Wasser so hoch wie seit über fünf Jahrhunderten nicht mehr.", a: 0 },
@@ -535,7 +535,7 @@ LINGUAI.addReadings([
     glossIt: ["sich zu erkennen geben", "das Sprichwort", "das höchste der Gefühle", "überschwänglich", "stutzig machen", "vernichtend", "der Nachsatz", "artig", "die Spitze", "die Untertreibung", "gekränkt", "der Fehlgriff", "nachsagen"],
     lexIt: ["Raum", "Lob", "erwarten", "enttäuschen", "schwäbisch", "Haltung", "verbreitet", "beiläufig", "Vorgesetzte", "mitunter", "umgekehrt", "sich verbergen", "vorbringen", "Urteil", "entscheidend", "Wortlaut", "Betonung", "wörtlich", "Bedeutung", "sich bedanken", "wohlwollend", "Regelwerk", "abnehmen", "allenfalls", "Gewöhnung", "erwerben", "Direktheit", "Widerspruch"],
     questions: [
-      { t: "mcq", q: "Was kann ein beiläufiges „Passt schon“ einer Vorgesetzten bedeuten?", opts: ["ein deutliches Lob", "eine versteckte Kritik", "die Aufforderung, die Arbeit zu wiederholen"], a: 0 },
+      { t: "mcq", q: "Was kann ein beiläufiges „Passt schon“ einer Vorgesetzten bedeuten?", opts: ["eine zurückhaltend ausgedrückte Anerkennung", "eine versteckte Kritik", "die Aufforderung, die Arbeit zu wiederholen"], a: 0 },
       { t: "mcq", q: "Was verbirgt sich laut Text oft hinter „Kann man so machen“?", opts: ["eine ehrliche Zustimmung", "eine Bitte um Hilfe", "eine scharfe Ablehnung"], a: 2 },
       { t: "truefalse", q: "Nach Ansicht des Autors lassen sich solche Feinheiten mit klaren Regeln lernen.", a: 1 },
       { t: "mcq", q: "Worin sieht der Text einen Widerspruch?", opts: ["Schwaben loben häufiger als andere.", "Eine als direkt geltende Sprache sagt vieles nur indirekt.", "Vorgesetzte sprechen undeutlicher als Kollegen."], a: 1 }
@@ -562,7 +562,7 @@ LINGUAI.addReadings([
       { t: "mcq", q: "Welche beiden Anforderungen muss ein Arbeitszeugnis gleichzeitig erfüllen?", opts: ["Es muss kurz und vollständig sein.", "Es muss wohlwollend und wahr sein.", "Es muss verschlüsselt und offiziell sein."], a: 1 },
       { t: "truefalse", q: "Das Gesetz erlaubt verschlüsselte Formulierungen in Zeugnissen ausdrücklich.", a: 1 },
       { t: "mcq", q: "Was bedeutet „Er hat sich stets bemüht“ in der Zeugnissprache?", opts: ["Er war besonders fleißig und erfolgreich.", "Er war bei den Kollegen beliebt.", "Seine Bemühungen blieben ohne Ergebnis."], a: 2 },
-      { t: "mcq", q: "Welche Folge hat die Geheimsprache laut Text?", opts: ["Viele Personalverantwortliche verlassen sich lieber auf ein Telefonat.", "Zeugnisse werden immer länger.", "Arbeitgeber stellen keine Zeugnisse mehr aus."], a: 0 }
+      { t: "mcq", q: "Welche Folge hat die Geheimsprache laut Text?", opts: ["Manche Personalverantwortliche verlassen sich lieber auf ein Telefonat.", "Zeugnisse werden immer länger.", "Arbeitgeber stellen keine Zeugnisse mehr aus."], a: 0 }
     ]
   },
   {
@@ -585,7 +585,7 @@ LINGUAI.addReadings([
     questions: [
       { t: "mcq", q: "Wann wird einem laut Text die Bedeutung von Heimat meist bewusst?", opts: ["in der Kindheit", "wenn man weit weg ist", "beim Lesen von Wörterbüchern"], a: 1 },
       { t: "truefalse", q: "In der Nachkriegszeit wurde der Begriff vor allem durch Heimatfilme verharmlost.", a: 0 },
-      { t: "mcq", q: "Welche Lesart würde dem Begriff nach dem Text seine ausgrenzende Schärfe nehmen?", opts: ["Heimat als Frage der Herkunft", "Heimat als Begriff der Literatur", "Heimat als etwas, das man sich an einem Ort aneignet"], a: 2 },
+      { t: "mcq", q: "Welche Lesart könnte dem Begriff nach dem Text seine ausgrenzende Schärfe nehmen?", opts: ["Heimat als Frage der Herkunft", "Heimat als Begriff der Literatur", "Heimat als etwas, das man sich an einem Ort aneignet"], a: 2 },
       { t: "mcq", q: "Was zeigt der heftige Streit um das Wort laut Text?", opts: ["dass man ihm noch viel Bedeutung beimisst", "dass das Wort bald verschwinden wird", "dass die Politik es nicht mehr benutzt"], a: 0 }
     ]
   }
