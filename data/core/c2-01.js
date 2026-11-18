@@ -292,7 +292,7 @@ LINGUAI.addUnits("C2", [
           {
             t: "cloze",
             text: "Die heftigen {{1}} der letzten Wochen haben die Ernte vernichtet; nun bekommen die Landwirte von allen Seiten gut gemeinte {{2}}.",
-            gaps: [["Regenfälle", "Niederschläge"], ["Ratschläge"]]
+            gaps: [["Regenfälle"], ["Ratschläge"]]
           },
           {
             t: "match",

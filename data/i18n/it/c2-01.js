@@ -497,7 +497,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Quando il plurale manca: i plurali sostitutivi",
-        p: "Altri nomi non hanno un plurale d'uso, o lo hanno raro, e il tedesco lo ricava da un composto o da un derivato. <em>der Rat</em>, nel senso di consiglio, diventa <strong>Ratschläge</strong>: <em>Räte</em> sono invece gli organi collegiali o i loro membri (<em>die Stadträte</em>). <em>der Regen</em> diventa <strong>Regenfälle</strong>, <em>der Schnee</em> <strong>Schneefälle</strong>, <em>der Streit</em> di norma <strong>Streitigkeiten</strong> (<em>Streite</em> esiste, ma è raro), <em>der Sport</em> <strong>Sportarten</strong>. Il plurale sostitutivo è il punto in cui plurale e formazione delle parole si incontrano: si sceglie un composto con un secondo elemento che il plurale ce l'ha."
+        p: "Altri nomi non hanno un plurale d'uso, o lo hanno raro, e il tedesco lo ricava da un composto o da un derivato. <em>der Rat</em>, nel senso di consiglio, diventa <strong>Ratschläge</strong>: <em>Räte</em> sono invece gli organi collegiali o i loro membri (<em>die Stadträte</em>). <em>der Regen</em> diventa <strong>Regenfälle</strong>, <em>der Schnee</em> <strong>Schneefälle</strong>, <em>der Streit</em> di norma <strong>Streitigkeiten</strong> (<em>Streite</em> esiste, ma è raro), <em>der Sport</em> <strong>Sportarten</strong>. Il plurale sostitutivo è il punto in cui plurale e formazione delle parole si incontrano: si ricorre a un composto il cui ultimo elemento ha il plurale (<em>Regenfälle, Ratschläge, Sportarten</em>) o a un derivato (<em>Streitigkeiten</em>)."
       },
       {
         contrast: "Anche l'italiano conosce i plurali doppi: <em>le braccia</em> del corpo e <em>i bracci</em> di una gru, <em>le mura</em> della città e <em>i muri</em> di casa, <em>le membra</em> e <em>i membri</em> di un'associazione, <em>le fondamenta</em> di un edificio e <em>i fondamenti</em> di una teoria. Il meccanismo è lo stesso, ma in tedesco i casi sono altri e non corrispondono ai nostri: per un italiano <em>le banche</em> e <em>le panchine</em> sono due parole diverse, e niente segnala che in tedesco bisogna scegliere fra <em>Banken</em> e <em>Bänke</em>."
@@ -587,7 +587,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa con due plurali sostitutivi: nella prima lacuna il plurale di «der Regen», nella seconda quello di «der Rat» (consiglio).",
         tr: "Le forti piogge delle ultime settimane hanno distrutto il raccolto; ora gli agricoltori ricevono da ogni parte consigli ben intenzionati.",
-        why: "<i>Regen</i> non ha un plurale d'uso: si dice <b>Regenfälle</b> (o <b>Niederschläge</b>, più tecnico). Per i consigli serve <b>Ratschläge</b>. Entrambi senza <i>-n</i>: il primo è un nominativo, il secondo un accusativo plurale."
+        why: "<i>Regen</i> non ha un plurale d'uso: si dice <b>Regenfälle</b>. <i>Niederschläge</i> sarebbe più ampio: comprende anche neve e grandine. Per i consigli serve <b>Ratschläge</b>. Entrambi senza <i>-n</i>: il primo è un nominativo, il secondo un accusativo plurale."
       },
       {
         q: "Abbina ogni plurale al suo significato.",
@@ -657,7 +657,7 @@ LINGUAI.addStrings("it", {
       examples: [
         { tr: "Le condizioni di lavoro nell'assistenza sanitaria non sono quasi migliorate.", note: "Arbeit + s + Bedingungen: -s- anche dopo un femminile" },
         { tr: "Il proprietario del cane risponde dei danni.", note: "Hund + e + Besitzer" },
-        { tr: "L'energia solare copre già una parte del fabbisogno di elettricità.", note: "Sonne + n + Energie; Strom + Bedarf, con la -s del genitivo" },
+        { tr: "L'energia solare copre già una parte del fabbisogno di elettricità.", note: "Sonne + n + Energie; Strom + Bedarf senza giunzione: la -s di Strombedarfs è la desinenza del genitivo" },
         { tr: "Il libro per bambini è stato tradotto in venti lingue.", note: "Kind + er + Buch: la giunzione coincide con il plurale Kinder" },
         { tr: "La sua lettera d'amore non arrivò mai.", note: "Liebe + s + Brief: -s- dopo un femminile, quindi non è un genitivo" },
         { tr: "L'obbligo scolastico inizia di norma a sei anni.", note: "Schule + Pflicht: la -e finale cade" }
@@ -756,7 +756,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Prefissi verbali inseparabili",
-        p: "<em>ver-</em> ha più valori: cambiamento (<em>verändern</em>), errore nei riflessivi (<em>sich verschreiben, sich verrechnen, sich verlaufen</em>), consumo fino in fondo (<em>verbrauchen</em>). <em>zer-</em> indica la rottura in pezzi (<em>zerreißen, zerbrechen</em>). <em>ent-</em> indica allontanamento o privazione (<em>entfernen, entwerten</em>). <em>miss-</em> indica che qualcosa riesce male (<em>missverstehen, misslingen</em>). Sono tutti inseparabili, non accentati e senza <em>ge-</em> al participio: <em>zerrissen, missverstanden, entwertet</em>."
+        p: "<em>ver-</em> ha più valori: cambiamento (<em>verändern</em>), errore nei riflessivi (<em>sich verschreiben, sich verrechnen, sich verlaufen</em>), consumo fino in fondo (<em>verbrauchen</em>). <em>zer-</em> indica la rottura in pezzi (<em>zerreißen, zerbrechen</em>). <em>ent-</em> indica allontanamento o privazione (<em>entfernen, entwerten</em>). <em>miss-</em> indica che qualcosa riesce male (<em>missverstehen, misslingen</em>). Sono tutti inseparabili e non prendono <em>ge-</em> al participio: <em>zerrissen, missverstanden, entwertet</em>. <em>ver-, zer-, ent-</em> non portano mai l'accento; <em>miss-</em> lo porta in alcuni verbi (<em>missverstehen</em>) e non in altri (<em>misslingen</em>)."
       },
       {
         h: "Fremdwörter: il suffisso dà il genere",
@@ -787,7 +787,7 @@ LINGUAI.addStrings("it", {
         ]
       },
       examples: [
-        { tr: "Il miglioramento delle condizioni di lavoro è atteso da tempo.", note: "verbessern + -ung: nome femminile da un verbo" },
+        { tr: "Il miglioramento delle condizioni di lavoro avrebbe dovuto arrivare da tempo.", note: "verbessern + -ung: nome femminile da un verbo" },
         { tr: "Ammiro la sua calma nelle situazioni difficili.", note: "gelassen + -heit" },
         { tr: "La sostenibilità del progetto è messa in dubbio dagli esperti.", note: "nachhaltig + -keit: -keit dopo -ig" },
         { tr: "Ho sbagliato a scrivere la data.", note: "sich verschreiben: ver- indica un errore" },
