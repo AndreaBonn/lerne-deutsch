@@ -1,0 +1,28 @@
+{
+  "bundleHash": "1d904b0752f512cf6844fc864dd9a93778a9b9307a08cd07ac5bcc9bde5f8317",
+  "findings": [
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La spiegazione implica che qualsiasi subordinata introdotta da «als» richieda il verbo alla fine, ma «als» può anche introdurre una comparazione senza subordinata. Precisare che il verbo finito va alla fine quando «als» introduce una frase subordinata completa, come nell'esempio.",
+      "path": "merged[5].closing"
+    },
+    {
+      "kind": "accuratezza della spiegazione",
+      "msg": "L'affermazione che chiunque viva in Germania debba registrare il proprio indirizzo è troppo assoluta: esistono eccezioni. Sostituirla con una formulazione non assoluta, per esempio «zazwyczaj trzeba zameldować adres po wprowadzeniu się do mieszkania».",
+      "path": "merged[1].setting"
+    },
+    {
+      "kind": "accuratezza della spiegazione",
+      "msg": "La spiegazione presenta l'invio elettronico del certificato alla cassa malattia come universale, senza distinguere i casi in cui la procedura elettronica non si applica. Specificare che riguarda normalmente le persone assicurate presso una cassa malattia pubblica e che possono esistere eccezioni.",
+      "path": "merged[6].closing"
+    },
+    {
+      "kind": "progressione CEFR",
+      "msg": "La conversazione è etichettata B2, ma le risposte richieste sono brevi e usano prevalentemente strutture e lessico da B1. Per rendere l'attività coerente con B2, introdurre nelle battute e nelle risposte richieste argomentazioni più articolate, concessioni o sfumature, mantenendo il formato breve.",
+      "path": "neutral[2].turns"
+    }
+  ],
+  "lang": "pl",
+  "unit": "conv-2",
+  "verdict": "fail"
+}

@@ -1,0 +1,23 @@
+{
+  "bundleHash": "7439e4018f764558316b875e598a38f2bb1d62a0bc90a9a921e4d4418bc920a1",
+  "findings": [
+    {
+      "kind": "traduzione",
+      "msg": "«redaktor naczelna» è una forma polacca scorretta. Usare «redaktorka naczelna» oppure «redaktor naczelny» riferito a una donna.",
+      "path": "merged[7].gloss[3]"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "La glossa indica solo «impegno volontario senza retribuzione», mentre «Ehrenamt» può anche prevedere un compenso o un rimborso. Usare «wolontariusze» senza precisare «bez wynagrodzenia», oppure spiegare che svolgono un'attività sociale volontaria.",
+      "path": "merged[6].gloss[7]"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«fest angestellt» indica un rapporto di lavoro stabile o come dipendente, ma non necessariamente un contratto a tempo indeterminato. Sostituire «zatrudniony na stałe» con «zatrudniony jako pracownik etatowy» o una formulazione equivalente.",
+      "path": "merged[6].lex[21]"
+    }
+  ],
+  "lang": "pl",
+  "unit": "readings-b",
+  "verdict": "fail"
+}

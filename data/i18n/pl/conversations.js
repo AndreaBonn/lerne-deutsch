@@ -78,7 +78,7 @@ LINGUAI.addStrings("pl", {
   "conv:fahrkarte-kaufen": {
     title: "W kasie na dworcu",
     setting: "Reisezentrum Deutsche Bahn, kasa biletowa na dworcu. Twoja kolej przy okienku.",
-    closing: "Sparpreis to tańsza taryfa, ale z Zugbindung: bilet jest ważny tylko na wybrany pociąg.",
+    closing: "Sparpreis to tańsza taryfa, ale z Zugbindung: bilet jest ważny tylko na zarezerwowany pociąg dalekobieżny, tutaj ICE.",
     turns: [
       { tr: "Następna osoba, proszę. W czym mogę pomóc?" },
       { task: "Poproś o bilet do Hamburga na dzisiejsze popołudnie.", tr: "Poproszę bilet do Hamburga na dziś po południu." },
@@ -152,7 +152,7 @@ LINGUAI.addStrings("pl", {
   "conv:diskussion": {
     title: "Dyskusja wśród znajomych",
     setting: "Piwo po pracy. Kolega zaczyna temat pracy zdalnej.",
-    closing: "Żeby przyznać komuś rację tylko częściowo: „Teilweise gebe ich dir recht”, dosłownie „częściowo daję ci rację”. Żeby stanowczo się nie zgodzić: „Da bin ich überhaupt nicht deiner Meinung”. A abhängen łączy się z von, które zlewa się w davon: „Das hängt davon ab, wie…”, „to zależy od tego, jak…”.",
+    closing: "Żeby przyznać komuś rację tylko częściowo: „Teilweise gebe ich dir recht”, dosłownie „częściowo daję ci rację”. Żeby stanowczo się nie zgodzić: „Da bin ich überhaupt nicht deiner Meinung”. A abhängen łączy się z von. Gdy dalej idzie całe zdanie, von dostaje przed sobą da- i powstaje zaimek przysłówkowy davon, który to zdanie zapowiada: „Das hängt davon ab, wie…”, „to zależy od tego, jak…”.",
     turns: [
       { tr: "Moim zdaniem praca zdalna zabiła ducha zespołu. Jak ty to widzisz?" },
       { task: "Przyznaj mu częściowo rację, ale powiedz, że zmniejszyła też stres związany z dojazdami.", tr: "Częściowo masz rację, ale zmniejszyła też stres związany z dojazdami." },
@@ -227,8 +227,8 @@ LINGUAI.addStrings("pl", {
     ]
   },
   "conv:wohnung-ansehen": {
-    title: "Oglądanie kawalerki",
-    setting: "Pośrednik nieruchomości pokazuje ci kawalerkę. To, co powiesz, zdecyduje, czy będzie mowa o cenie, czy o terminach.",
+    title: "Oglądanie mieszkania",
+    setting: "Pośrednik nieruchomości pokazuje ci mieszkanie. To, co powiesz, zdecyduje, czy będzie mowa o cenie, czy o terminach.",
     closing: "W porównaniu als odpowiada polskiemu „niż”, a w zdaniu, które po nim następuje, czasownik w formie osobowej idzie na koniec: „kleiner, als es auf den Fotos aussah”. A żeby dać odpowiedź później: „Ich sage Ihnen Bescheid”, „dam Panu znać”.",
     turns: [
       { tr: "No więc, to jest salon. Co Pani o nim sądzi?" },
@@ -278,7 +278,7 @@ LINGUAI.addStrings("pl", {
         { tr: "Nie, tylko trochę drapie." }
       ] },
       { tr: "W takim razie zrobię wymaz z gardła. W zależności od wyniku zdecydujemy, czy potrzebuje Pani antybiotyku." },
-      { tr: "To wygląda na przeziębienie, na razie nie widzę powodu do antybiotyku. Proszę płukać gardło słoną wodą i dużo pić, najlepiej na ciepło." },
+      { tr: "To wygląda na przeziębienie, na razie nie widzę powodu do antybiotyku. Proszę płukać gardło słoną wodą i pić dużo ciepłych napojów." },
       { tr: "W każdym razie potrzebuje Pani odpoczynku. Jeśli za trzy dni nie będzie lepiej, proszę przyjść ponownie." },
       { task: "Zapytaj o pracę albo o sport.", opts: [
         { tr: "Muszę zostać w domu, czy mogę iść do pracy?" },

@@ -1,0 +1,18 @@
+{
+  "bundleHash": "92e8608dd720ec2e240e3bd4d5061982568744a577e752dbbb39e83de07c910c",
+  "findings": [
+    {
+      "kind": "traduction",
+      "msg": "« Scharf » désigne ici une soupe piquante, tandis que « épicée » peut simplement signifier qu’elle contient des épices. Remplacer « Elle est épicée ? » par « Elle est piquante ? » et adapter la consigne en conséquence.",
+      "path": "merged[3].turns[5]"
+    },
+    {
+      "kind": "réponse acceptée",
+      "msg": "La consigne demande de dire « professeure », mais les réponses masculines « ich bin lehrer » et « ich arbeite als lehrer » sont également acceptées. Les retirer ou modifier la consigne et la traduction pour accepter explicitement les deux genres.",
+      "path": "merged[1].turns[7].accept"
+    }
+  ],
+  "lang": "fr",
+  "unit": "conv-1",
+  "verdict": "fail"
+}

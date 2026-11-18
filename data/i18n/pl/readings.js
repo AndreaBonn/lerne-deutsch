@@ -71,7 +71,7 @@ LINGUAI.addStrings("pl", {
 
   "read:r-b1-tafel": {
     title: "Soboty w banku żywności",
-    gloss: ["emeryt", "Tafel (bank żywności; dosłownie „stół”)", "stowarzyszenie (tu: organizacja społeczna; Verein to także klub, np. sportowy)", "żywność, artykuły spożywcze (die Lebensmittel: zwykle w liczbie mnogiej)", "odbierać (coś z jakiegoś miejsca)", "wolontariat, praca społeczna", "rezygnować z (auf + biernik; po polsku z dopełniaczem: z czegoś)"],
+    gloss: ["emeryt", "Tafel (bank żywności; dosłownie „stół biesiadny”, także „tablica”)", "stowarzyszenie (tu: organizacja społeczna; Verein to także klub, np. sportowy)", "żywność, artykuły spożywcze (die Lebensmittel: zwykle w liczbie mnogiej)", "odbierać (coś z jakiegoś miejsca)", "wolontariat, praca społeczna", "rezygnować z (auf + biernik; po polsku z dopełniaczem: z czegoś)"],
     lex: ["współpracować, pomagać (razem z innymi)", "Fryburg Bryzgowijski", "supermarket", "piekarnia", "produkt", "sklep", "sprzedawać", "pieniądze", "sortować", "owoce", "warzywa", "studentka", "dogadywać się (sich gut verstehen mit + celownik)", "torba, torebka (foliowa lub papierowa)", "chleb", "dziękować (sich bedanken bei + celownik: komuś, für + biernik: za coś)", "uprzejmy, życzliwy", "zadanie", "spotykać (kogoś: + biernik bez przyimka)"]
   },
 
@@ -84,7 +84,7 @@ LINGUAI.addStrings("pl", {
   "read:r-b2-grenze": {
     title: "Codziennie przez granicę",
     gloss: ["początek pracy (godzina rozpoczęcia)", "opłacać się", "pracownik transgraniczny (mieszka w jednym kraju, pracuje w drugim)", "zeznanie podatkowe (odpowiednik polskiego PIT-u)", "doradczyni (tu: podatkowa)", "chociaż (książkowe, jak obwohl)", "dialekt bazylejski (szwajcarska odmiana niemieckiego z Bazylei)", "oferta (tu: pracy)"],
-    lex: ["Lörrach (miasto w Badenii przy granicy ze Szwajcarią)", "firma farmaceutyczna", "Bazylea", "granica", "kolej miejska, podmiejska", "dowód osobisty", "posada, miejsce pracy", "zarabiać", "wyraźnie, znacznie", "wada, minus", "kolega z pracy", "Francja", "Szwajcaria (zawsze z rodzajnikiem: in der Schweiz)", "firma", "przerwa", "dialekt, gwara", "z czasem, już (o czymś, co się zmieniło: versteht inzwischen ziemlich gut, z czasem nauczył się dobrze rozumieć; nie polskie „tymczasem”)", "zmieniać (pracę)", "zauważać, odczuwać", "robić zakupy", "cena"]
+    lex: ["Lörrach (miasto w Badenii przy granicy ze Szwajcarią)", "firma farmaceutyczna", "Bazylea", "granica", "kolej miejska, podmiejska", "dokument tożsamości (dowód osobisty, paszport)", "posada, miejsce pracy", "zarabiać", "wyraźnie, znacznie", "wada, minus", "kolega z pracy", "Francja", "Szwajcaria (zawsze z rodzajnikiem: in der Schweiz)", "firma", "przerwa", "dialekt, gwara", "z czasem, już (o czymś, co się zmieniło: versteht inzwischen ziemlich gut, z czasem nauczył się dobrze rozumieć; nie polskie „tymczasem”)", "zmieniać (pracę)", "zauważać, odczuwać", "robić zakupy", "cena"]
   },
 
   "read:r-b2-dorfladen": {
@@ -95,7 +95,7 @@ LINGUAI.addStrings("pl", {
 
   "read:r-b2-redaktion": {
     title: "Nowy praktykant",
-    gloss: ["dziennik, gazeta codzienna", "redakcja", "praktykant (rzeczownik słaby: dem Praktikanten, den Praktikanten)", "redaktor naczelna", "rozmówca", "lawina", "dyktafon", "kierownik wydania (odpowiada za bieżący numer gazety)", "skarżyć się (bei + celownik: komu, über + biernik: na co)", "akurat, właśnie (z odcieniem pecha lub irytacji)"],
+    gloss: ["dziennik, gazeta codzienna", "redakcja", "praktykant (rzeczownik słaby: dem Praktikanten, den Praktikanten)", "redaktorka naczelna", "rozmówca", "lawina", "dyktafon", "kierownik wydania (odpowiada za bieżący numer gazety)", "skarżyć się (bei + celownik: komu, über + biernik: na co)", "akurat, właśnie (z odcieniem pecha lub irytacji)"],
     lex: ["praktyka, staż", "Innsbruck", "młody", "przedstawiać (kogoś komuś: jemanden jemandem vorstellen)", "kolega z pracy (rzeczownik słaby: den Kollegen)", "rada, wskazówka", "doświadczony", "dziennikarz", "radzić (+ celownik: jemandem raten, jak po polsku radzić komuś)", "imię i nazwisko, nazwa (der Name dostaje -n: den Namen, a w dopełniaczu des Namens)", "sprawdzać", "ekspert (rzeczownik słaby: einen Experten)", "przeprowadzić wywiad (z kimś: + biernik bez przyimka)", "uniwersytet", "prowadzić badania", "zapomnieć", "rozmowa", "włączyć", "treść", "notatka", "odtworzyć, zrekonstruować", "drukować", "strona", "czytelnik", "nazwisko", "błędny (falsch geschrieben: źle napisany)", "czerwony (rot werden: zaczerwienić się)"]
   },
 

@@ -34,7 +34,7 @@ LINGUAI.addStrings("fr", {
   "conv:sich-vorstellen": {
     title: "Le premier jour de cours",
     setting: "Un cours d'allemand à la Volkshochschule, l'université populaire de la ville. Avant le début du cours, quelqu'un s'assoit à côté de vous.",
-    closing: "Entre camarades de cours, on se tutoie (du) dès la première phrase. Pour dire son métier, l'allemand se passe d'article, comme le français : « Ich bin Lehrerin », « je suis professeure ». Avec un adjectif, l'article revient : « Ich bin eine gute Lehrerin ». Le français passe alors à « c'est une bonne professeure », l'allemand garde « ich bin ».",
+    closing: "Entre camarades de cours, on se tutoie (du) dès la première phrase. Pour dire son métier, l'allemand se passe d'article, comme le français : « Ich bin Lehrerin », « je suis professeure ». Avec un adjectif, l'article revient, là aussi comme en français : « Ich bin eine gute Lehrerin », « je suis une bonne professeure ».",
     turns: [
       { tr: "Salut ! La place est encore libre ?" },
       { task: "Dites oui et invitez-le à s'asseoir.", tr: "Oui, bien sûr ! Assieds-toi." },
@@ -70,7 +70,7 @@ LINGUAI.addStrings("fr", {
       { tr: "Oui, bien sûr. Installez-vous, voici la carte. Qu'est-ce que vous désirez boire ?" },
       { task: "Commandez une bouteille d'eau gazeuse et un verre de vin rouge.", tr: "Une bouteille d'eau gazeuse et un verre de vin rouge, s'il vous plaît." },
       { tr: "Très bien. Et qu'est-ce que vous prendrez en entrée ?" },
-      { task: "Commandez la soupe de goulasch et demandez si elle est épicée.", tr: "Je prends la soupe de goulasch. Elle est épicée ?" },
+      { task: "Commandez la soupe de goulasch et demandez si elle est piquante.", tr: "Je prends la soupe de goulasch. Elle est piquante ?" },
       { tr: "Juste un peu, elle est assaisonnée au paprika. Vous prendrez aussi un plat ensuite ?" },
       { task: "Refusez poliment et demandez l'addition pour plus tard.", tr: "Non, merci. Et l'addition plus tard, s'il vous plaît." }
     ]
@@ -78,15 +78,15 @@ LINGUAI.addStrings("fr", {
   "conv:fahrkarte-kaufen": {
     title: "Au guichet de la gare",
     setting: "Un Reisezentrum de la Deutsche Bahn, le guichet des billets à la gare. C'est votre tour.",
-    closing: "Le Sparpreis est un tarif réduit, mais il impose la Zugbindung : le billet ne vaut que pour le train réservé.",
+    closing: "Le Sparpreis est un tarif réduit, mais il impose la Zugbindung : le billet ne vaut que pour le train grandes lignes réservé, ici l'ICE.",
     turns: [
       { tr: "Au suivant, s'il vous plaît. Que puis-je faire pour vous ?" },
       { task: "Demandez un billet pour Hambourg pour cet après-midi.", tr: "Un billet pour Hambourg pour cet après-midi, s'il vous plaît." },
       { tr: "En ICE ou en Regionalexpress ? L'ICE est plus rapide, mais plus cher." },
       { task: "Demandez combien coûte l'ICE.", tr: "Combien coûte l'ICE ?" },
       { tr: "Il reste un Sparpreis aujourd'hui : vingt-neuf euros quatre-vingt-dix-neuf en seconde classe." },
-      { task: "Prenez-le et demandez de quel quai il part.", tr: "Bien, je le prends. Il part de quel quai ?" },
-      { tr: "Du quai sept, dans vingt minutes. Avec le Sparpreis, vous avez la Zugbindung : vous ne pouvez prendre que ce train-là." }
+      { task: "Prenez-le et demandez de quelle voie il part.", tr: "Bien, je le prends. Il part de quelle voie ?" },
+      { tr: "De la voie sept, dans vingt minutes. Avec le Sparpreis, vous avez la Zugbindung : vous ne pouvez prendre que ce train-là." }
     ]
   },
   "conv:beim-arzt": {
@@ -152,7 +152,7 @@ LINGUAI.addStrings("fr", {
   "conv:diskussion": {
     title: "Une discussion entre amis",
     setting: "Une bière après le travail. Un ami lance le sujet du télétravail.",
-    closing: "Pour donner à moitié raison : « Teilweise gebe ich dir recht », mot à mot « en partie je te donne raison ». Pour être franchement en désaccord : « Da bin ich überhaupt nicht deiner Meinung ». Et abhängen se construit avec von, qui fusionne en davon : « Das hängt davon ab, wie… », « ça dépend de la façon dont… ».",
+    closing: "Pour donner à moitié raison : « Teilweise gebe ich dir recht », mot à mot « en partie je te donne raison ». Pour être franchement en désaccord : « Da bin ich überhaupt nicht deiner Meinung ». Et abhängen se construit avec von. Quand une proposition entière suit, von prend da- devant lui et devient l'adverbe pronominal davon, qui annonce cette proposition : « Das hängt davon ab, wie… », « ça dépend de la façon dont… ».",
     turns: [
       { tr: "Je trouve que le télétravail a tué l'esprit d'équipe. Tu en penses quoi ?" },
       { task: "Donnez-lui en partie raison, mais dites que cela a aussi réduit le stress des trajets.", tr: "Je te donne en partie raison, mais ça a aussi réduit le stress des trajets." },
@@ -214,13 +214,13 @@ LINGUAI.addStrings("fr", {
         { tr: "Bien, alors je prends le train de onze heures quarante." },
         { tr: "Il n'y a rien de plus tôt ?" }
       ] },
-      { tr: "Très bien. Il part du quai sept." },
+      { tr: "Très bien. Il part de la voie sept." },
       { tr: "Plus tôt, il n'y a qu'un Intercity à dix heures quinze, mais vous devez changer une fois." },
       { task: "Prenez l'Intercity ou attendez l'ICE.", opts: [
         { tr: "Ça m'est égal, je prends l'Intercity." },
         { tr: "Alors je préfère attendre l'ICE de onze heures quarante." }
       ] },
-      { tr: "Intercity à dix heures quinze, quai trois." },
+      { tr: "Intercity à dix heures quinze, voie trois." },
       { tr: "Je vous imprime l'itinéraire. Bon voyage !" },
       { task: "Remerciez et dites au revoir.", tr: "Merci beaucoup, bonne journée !" },
       { tr: "Au revoir." }

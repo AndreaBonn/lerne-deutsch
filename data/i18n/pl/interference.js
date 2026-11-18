@@ -15,9 +15,9 @@ LINGUAI.addStrings("pl", {
   "int:promotion": { looks: "promocja", mean: "doktorat (uzyskanie stopnia doktora)", why: "To uzyskanie stopnia DOKTORA. Promocja w sklepie to „das Sonderangebot”, a awans w pracy „die Beförderung”." },
   "int:artist": { looks: "artysta", mean: "artysta cyrkowy, akrobata", why: "To ARTYSTA CYRKOWY: akrobata, żongler, linoskoczek. Artysta w ogóle, malarz czy rzeźbiarz, to „der Künstler” albo „die Künstlerin”." },
   "int:tablett": { looks: "tabletka", mean: "taca", why: "To TACA do noszenia szklanek i talerzy. Tabletka to „die Tablette”, a tablet elektroniczny „das Tablet”." },
-  "int:kamera": { looks: "kamera", mean: "aparat fotograficzny (także kamera)", why: "Po niemiecku to przede wszystkim APARAT FOTOGRAFICZNY; to samo słowo oznacza też kamerę filmową. Gdy chodzi wyraźnie o kamerę do filmów, mówi się „die Videokamera”." },
+  "int:kamera": { looks: "kamera", mean: "aparat fotograficzny (także kamera)", why: "Po niemiecku to ogólne słowo na APARAT FOTOGRAFICZNY i na kamerę filmową: „mit der Kamera Fotos machen” brzmi zupełnie zwyczajnie. Gdy chodzi wyraźnie o aparat, można powiedzieć „der Fotoapparat”, a o kamerę do filmów „die Videokamera”." },
   "int:konkurs": { looks: "konkurs", mean: "upadłość, bankructwo", why: "To UPADŁOŚĆ firmy. Konkurs, czyli zawody albo rywalizacja, to „der Wettbewerb”." },
-  "int:panne": { looks: "panna", mean: "awaria", why: "To AWARIA, zwłaszcza samochodu w drodze. Panna, młoda niezamężna kobieta, to „die junge Frau”." },
+  "int:panne": { looks: "panna", mean: "awaria", why: "To AWARIA, zwłaszcza samochodu w drodze. Panna, czyli młoda kobieta, to „die junge Frau”, a gdy chodzi o stan cywilny, „eine unverheiratete Frau”." },
   "int:stock": { looks: "stok", mean: "piętro", why: "Tutaj to PIĘTRO budynku; bywa też kijem. Stok góry to „der Hang”." },
   "int:pickel": { looks: "pikle", mean: "pryszcz", why: "To PRYSZCZ na skórze. Pikle, warzywa w occie, to „das eingelegte Gemüse”." },
   "int:roman": { looks: "romans", mean: "powieść", why: "To POWIEŚĆ, książka. Romans, czyli przelotny związek, to „die Affäre”." },
@@ -32,6 +32,6 @@ LINGUAI.addStrings("pl", {
   "int:kater": { looks: "katar", mean: "kocur; kac", why: "To KOCUR, samiec kota, a potocznie także KAC. Katar to „der Schnupfen”." },
   "int:tor": { looks: "tor", mean: "brama; gol", why: "To BRAMA, a w piłce nożnej BRAMKA albo GOL. Tor kolejowy to „das Gleis”, a tor wyścigowy „die Rennstrecke”." },
   "int:wal": { looks: "wał", mean: "wieloryb", why: "To WIELORYB. Wał przeciwpowodziowy to „der Deich”." },
-  "int:sturm": { looks: "szturm", mean: "burza, wichura", why: "To BURZA z silnym wiatrem, WICHURA. Szturm, czyli atak na pozycję, to „der Angriff”." },
+  "int:sturm": { looks: "szturm", mean: "wichura, sztorm", why: "To WICHURA, bardzo silny wiatr, na morzu SZTORM. Burza z piorunami to „das Gewitter”. Szturm, czyli atak na pozycję, to „der Angriff”." },
   "int:pass": { looks: "pas", mean: "paszport", why: "To PASZPORT; bywa też przełęczą w górach. Pas do spodni to „der Gürtel”, a pas ruchu „die Fahrspur”." }
 });

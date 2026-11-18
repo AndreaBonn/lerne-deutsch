@@ -1,7 +1,18 @@
 {
-  "bundleHash": "0adf8d3f2c5df04fac106c73c00abda39cb5c28c82c3d0630e434cdb88f725bb",
-  "findings": [],
+  "bundleHash": "f459ef3a3e1371e7cec9dcd5f8d2fdd222607479d5f0fd070fbc951f0a4f2a19",
+  "findings": [
+    {
+      "kind": "spiegazione imprecisa",
+      "msg": "La spiegazione fa coincidere il fallimento con il semplice mancato pagamento dei debiti, condizione che non implica necessariamente un fallimento. Sostituire con «il fallimento o la procedura concorsuale di un'azienda»; «Konkurs anmelden» significa dichiarare fallimento.",
+      "path": "merged[id=konkurs].why"
+    },
+    {
+      "kind": "traduzione incompleta",
+      "msg": "«Ente» ha un significato più ampio di ente pubblico, mentre «Behörde» indica un'autorità o un ufficio pubblico e «Einrichtung» una struttura o istituzione. Precisare che la traduzione dipende dal contesto, per esempio «öffentliche Einrichtung» per un'istituzione pubblica.",
+      "path": "merged[id=ente].why"
+    }
+  ],
   "lang": "it",
   "unit": "interference",
-  "verdict": "pass"
+  "verdict": "fail"
 }

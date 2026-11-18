@@ -13,7 +13,7 @@ LINGUAI.addStrings("it", {
   "int:artist": { looks: "artista", mean: "artista di circo, acrobata", why: "È chi si esibisce al circo o nel varietà: acrobata, giocoliere, equilibrista. Il pittore, lo scultore o il musicista è «der Künstler»." },
   "int:tablett": { looks: "tablet", mean: "vassoio", why: "Significa VASSOIO. Il tablet, il dispositivo, è «das Tablet», con una t sola in fondo." },
   "int:note": { looks: "nota", mean: "voto scolastico", why: "A scuola la Note è il VOTO: «eine gute Note». È anche la nota musicale. Un appunto scritto si dice «die Notiz»." },
-  "int:konto": { looks: "conto", mean: "conto in banca", why: "È solo il CONTO IN BANCA. Il conto al ristorante è «die Rechnung»: «Die Rechnung, bitte!»" },
+  "int:konto": { looks: "conto", mean: "conto in banca", why: "È il CONTO in banca, o un altro conto o account (das Benutzerkonto, l'account utente), mai il conto da pagare. Il conto al ristorante è «die Rechnung»: «Die Rechnung, bitte!»" },
   "int:kamera": { looks: "camera", mean: "macchina fotografica, videocamera", why: "Significa MACCHINA FOTOGRAFICA o VIDEOCAMERA. La camera della casa è «das Zimmer», la camera da letto «das Schlafzimmer»." },
   "int:kantine": { looks: "cantina", mean: "mensa aziendale", why: "È la MENSA di un'azienda o di un ufficio. La cantina sotto casa è «der Keller»." },
   "int:firma": { looks: "firma", mean: "ditta, azienda", why: "Significa DITTA, AZIENDA. La firma sotto un documento è «die Unterschrift»." },
@@ -32,7 +32,7 @@ LINGUAI.addStrings("it", {
   "int:kostuem": { looks: "costume", mean: "tailleur; costume di scena", why: "Spesso è il TAILLEUR, giacca e gonna da donna; a carnevale e a teatro è anche il costume. Il costume da bagno è «der Badeanzug» o «die Badehose»." },
   "int:parole": { looks: "parole", mean: "slogan, motto", why: "Significa SLOGAN, MOTTO, per esempio di una manifestazione o di un partito. Le parole sono «die Wörter» o «die Worte»." },
   "int:patent": { looks: "patente", mean: "brevetto", why: "Significa BREVETTO di un'invenzione. La patente di guida è «der Führerschein»." },
-  "int:termin": { looks: "termine", mean: "appuntamento", why: "Significa APPUNTAMENTO, dal medico o in ufficio. Il termine come scadenza è «die Frist», come parola «der Begriff»." },
+  "int:termin": { looks: "termine", mean: "appuntamento", why: "Significa soprattutto APPUNTAMENTO, dal medico o in ufficio, e più in generale una data fissata: «der Abgabetermin» è la data di consegna. Il termine come periodo concesso per fare qualcosa è «die Frist», come parola «der Begriff»." },
   "int:tafel": { looks: "tavola", mean: "lavagna", why: "A scuola è la LAVAGNA; «eine Tafel Schokolade» è una tavoletta di cioccolato. La tavola da pranzo è «der Tisch»." },
   "int:weste": { looks: "veste", mean: "gilet", why: "Significa GILET, panciotto. Il vestito da donna è «das Kleid», una veste lunga o una tunica «das Gewand»." }
 });

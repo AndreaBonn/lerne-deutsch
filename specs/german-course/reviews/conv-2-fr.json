@@ -1,7 +1,23 @@
 {
-  "bundleHash": "19262dbde9edf006aa8f196b36b67f93b9d422d929b310a4258b0c7ac6871c06",
-  "findings": [],
+  "bundleHash": "949efa89bdb738f0a90abd4eb8bfc6be5ca8531727aa370f2e048361f1cca019",
+  "findings": [
+    {
+      "kind": "traduction",
+      "msg": "« Gleis » désigne ici la voie, pas le quai. Traduire par « voie sept » et corriger aussi les deux mentions de Gleis drei dans la même leçon.",
+      "path": "merged[4].turns[7].tr"
+    },
+    {
+      "kind": "explication grammaticale",
+      "msg": "La règle est trop générale : « als » ne place le verbe en fin de proposition que lorsqu’il introduit une subordonnée comparative complète. Il peut aussi introduire un simple groupe, comme dans « kleiner als auf den Fotos ». Préciser cette distinction.",
+      "path": "merged[5].closing"
+    },
+    {
+      "kind": "explication grammaticale",
+      "msg": "« Seit » avec une durée commencée dans le passé s’emploie avec le présent si la situation continue, mais peut aussi s’employer au passé selon le contexte. Préciser cette condition au lieu de présenter le présent comme obligatoire.",
+      "path": "merged[6].closing"
+    }
+  ],
   "lang": "fr",
   "unit": "conv-2",
-  "verdict": "pass"
+  "verdict": "fail"
 }

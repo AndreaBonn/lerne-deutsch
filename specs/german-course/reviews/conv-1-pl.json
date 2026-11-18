@@ -1,20 +1,50 @@
 {
-  "bundleHash": "b520773eb1ce7035f3910a9de71b4ebbea5445af8ee76205f3cdabbe63794b88",
+  "bundleHash": "a736348cfa2352e9b1b295d60eaf81df0fdd91b98b103c80e175a322f736c933",
   "findings": [
     {
-      "kind": "alternativa errata",
-      "msg": "La consegna e la traduzione richiedono «nauczycielka», cioè un'insegnante donna, ma «ich bin lehrer» e «ich arbeite als lehrer» indicano un uomo. Rimuovere queste alternative oppure rendere la consegna polacca compatibile con entrambi i generi.",
-      "path": "merged[1].turns[7].accept"
+      "kind": "risposta ambigua",
+      "msg": "«ja bitte» accetta genericamente il dolce proposto e non specifica l'Apfelkuchen indicato nell'opzione. Rimuovere questa alternativa oppure formulare la proposta precedente come offerta esplicita di Apfelkuchen.",
+      "path": "neutral[0].turns[7].opts[0].accept[1]"
     },
     {
-      "kind": "traduzione imprecisa",
-      "msg": "«Mit Paprika gewürzt» non specifica che la paprica sia in polvere. Sostituire «przyprawiona papryką w proszku» con «przyprawiona papryką», oppure precisare «Paprikapulver» nel testo tedesco.",
+      "kind": "traduzione non fedele",
+      "msg": "«Sie» non specifica il genere dell'interlocutore, mentre «Pani» indica una donna. Usare una formulazione neutra, per esempio «A jak się Pan/Pani nazywa?», oppure prevedere entrambe le forme.",
+      "path": "merged[0].turns[4].tr"
+    },
+    {
+      "kind": "traduzione non fedele",
+      "msg": "«Sie» non specifica il genere della persona che ha prenotato. Usare «Czy ma Pan/Pani rezerwację?» o una formulazione neutra.",
+      "path": "merged[3].turns[0].tr"
+    },
+    {
+      "kind": "traduzione non fedele",
+      "msg": "«Sie» non specifica il genere della persona a cui si rivolge il cameriere. Usare «Czy zamówi Pan/Pani potem także danie główne?» o una formulazione neutra.",
       "path": "merged[3].turns[6].tr"
     },
     {
-      "kind": "traduzione imprecisa",
-      "msg": "«Gern» esprime disponibilità o assenso, mentre «już podaję» aggiunge che la bevanda viene servita subito. Usare per esempio «Kawa, oczywiście» e «Herbata, oczywiście».",
-      "path": "merged[0].turns[2].tr e merged[0].turns[3].tr"
+      "kind": "traduzione non fedele",
+      "msg": "Il tedesco «Sie» non specifica il genere del viaggiatore. Rendere la frase neutra, per esempio «Taryfa Sparpreis wiąże się z Zugbindung: można jechać tylko tym pociągiem».",
+      "path": "merged[4].turns[6].tr"
+    },
+    {
+      "kind": "traduzione non fedele",
+      "msg": "Le traduzioni introducono un'interlocutrice donna dove il tedesco usa il «Sie» formale senza indicare il genere. Usare forme con Pan/Pani o formulazioni neutre.",
+      "path": "merged[5].turns[0].tr"
+    },
+    {
+      "kind": "traduzione non fedele",
+      "msg": "«Pani» restringe a una donna il «Sie» tedesco, che non specifica il genere. Usare «Od kiedy ma Pan/Pani te dolegliwości?» o una formulazione neutra.",
+      "path": "merged[5].turns[2].tr"
+    },
+    {
+      "kind": "traduzione non fedele",
+      "msg": "«Pani uczulona» attribuisce un genere non presente nell'originale. Usare «Czy ma Pan/Pani uczulenie na jakiś lek?».",
+      "path": "merged[5].turns[4].tr"
+    },
+    {
+      "kind": "traduzione non fedele",
+      "msg": "«Pani» attribuisce alla persona un genere non specificato dal tedesco. Usare «Wypiszę receptę na antybiotyk» o «Wypiszę Panu/Pani receptę na antybiotyk».",
+      "path": "merged[5].turns[6].tr"
     }
   ],
   "lang": "pl",

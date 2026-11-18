@@ -1,0 +1,28 @@
+{
+  "bundleHash": "3fa91704da2d57f3912f0c2bc149f150235b32a7607bfae4d9c01ab8656ac188",
+  "findings": [
+    {
+      "kind": "Spiegazione lessicale",
+      "msg": "« Rente » comprende anche pensioni non legate al pensionamento e rendite private; inoltre « die Zinsen » indica gli interessi, non una rendita in generale. Distinguere la pensione di vecchiaia nell'esempio dagli altri tipi di rendita, senza proporre « Einkommen » o « Zinsen » come equivalenti generali.",
+      "path": "merged[id=rente].why"
+    },
+    {
+      "kind": "Spiegazione lessicale",
+      "msg": "« Termin » può indicare anche una scadenza o una data fissata, non soltanto un appuntamento. Aggiungere questi significati e distinguere « rendez-vous » da « échéance » secondo il contesto.",
+      "path": "merged[id=termin].why"
+    },
+    {
+      "kind": "Spiegazione lessicale",
+      "msg": "« Dose » indica anche contenitori non metallici, per esempio una scatola di plastica. Sostituire la definizione limitata al metallo con una definizione più ampia, mantenendo scatola di conserve e lattina come esempi.",
+      "path": "merged[id=dose].why"
+    },
+    {
+      "kind": "Spiegazione lessicale",
+      "msg": "Una « Provision » può essere una commissione per una locazione o un'altra transazione, non necessariamente una percentuale sulla vendita. Indicare « rémunération ou commission d'un intermédiaire » e presentare la percentuale sulla vendita come esempio.",
+      "path": "merged[id=provision].why"
+    }
+  ],
+  "lang": "fr",
+  "unit": "interference",
+  "verdict": "fail"
+}

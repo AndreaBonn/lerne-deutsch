@@ -27,7 +27,7 @@ LINGUAI.addStrings("fr", {
     note: "Le ü allemand est une voyelle antérieure arrondie : la langue est placée comme pour i, les lèvres sont arrondies. Dans chaque paire seules les lèvres changent ; la durée reste la même : brève dans Kissen et küssen, Kiste et Küste, longue dans vier et für, spielen et spülen, Ziege et Züge, liegen et lügen.",
     contrast: "Ce son, vous l'avez déjà : le ü long est le u de « rue », simplement tenu plus longtemps (für, spülen, Züge, lügen). La difficulté est ailleurs, dans les paires brèves. Le ü de küssen et Küste est plus court et un peu plus ouvert que votre u, et le i de Kissen et Kiste est lui aussi plus ouvert que votre i. Ne prononcez pas ces brèves avec la tension du français : gardez seulement l'arrondi des lèvres comme différence.",
     pairs: [
-      { glossA: "le coussin, l'oreiller", glossB: "embrasser" },
+      { glossA: "le coussin, l'oreiller", glossB: "embrasser, donner un baiser" },
       { glossA: "la caisse", glossB: "la côte" },
       { glossA: "quatre", glossB: "pour" },
       { glossA: "jouer", glossB: "rincer, faire la vaisselle" },

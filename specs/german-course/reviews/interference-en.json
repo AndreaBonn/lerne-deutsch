@@ -1,0 +1,23 @@
+{
+  "bundleHash": "a3f6cfc668e2f600d828d37868aec7f8b0d89293569d0f98a1ac7408aaa02745",
+  "findings": [
+    {
+      "kind": "spiegazione imprecisa",
+      "msg": "«Die Promotion» indica il conseguimento del dottorato, non garantisce automaticamente che la persona porti già il titolo dopo qualunque fase denominata Promotion. Specificare «after completing the doctorate and receiving the doctoral degree»; inoltre «carries the title» è poco idiomatico in inglese: usare «holds the title».",
+      "path": "merged[19].why"
+    },
+    {
+      "kind": "interferenza lessicale",
+      "msg": "«Oldtimer» non significa necessariamente «never a person»: in tedesco può indicare anche una persona anziana o esperta, sebbene l'uso per veicoli d'epoca sia quello pertinente qui. Eliminare «never a person» e distinguere gli usi più comuni nelle due lingue.",
+      "path": "merged[58].why"
+    },
+    {
+      "kind": "traduzione imprecisa",
+      "msg": "«Sensible» nel senso di «easily hurt» è «sensitive», ma il tedesco comprende anche «perceptive» o «sensitive to others». Aggiungere almeno un secondo significato per evitare di presentare una definizione troppo restrittiva.",
+      "path": "merged[45].why"
+    }
+  ],
+  "lang": "en",
+  "unit": "interference",
+  "verdict": "fail"
+}
