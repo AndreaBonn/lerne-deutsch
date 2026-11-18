@@ -1,0 +1,38 @@
+{
+  "bundleHash": "9fc7fedb04c957fc1914ea5b156f66ed84151bcea8071312a597184c43b7bfe4",
+  "findings": [
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La regola sull'elemento di giunzione è troppo ampia: dopo -ion la -s- non compare quasi sempre, come mostrano Informationstechnologie, Kommunikationstechnik e Produktionskosten. Presenta le terminazioni come indizi non affidabili e invita a verificare il singolo composto.",
+      "path": "merged.lessons[1].theory[1].p"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "L'obiettivo presenta come fissa una regola che ammette eccezioni. Sostituisci «applicare la regola fissa» con una formulazione che indichi la frequenza della -s- e la necessità di verificare i singoli composti.",
+      "path": "merged.lessons[1].objectives[3]"
+    },
+    {
+      "kind": "chiave e ambiguità",
+      "msg": "Zerreißen può significare anche stroncare una recensione o un'opera in senso figurato, senza in der Luft. Anche la seconda opzione è quindi plausibile. Sostituisci il distrattore oppure modifica la domanda per richiedere esplicitamente verreißen; correggi anche la spiegazione.",
+      "path": "merged.test.exercises[6]"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In selbstverständlich l'accento principale cade su ständ, non su selbst. Correggi l'indicazione di pronuncia.",
+      "path": "merged.lessons[2].exercises[8].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Non tutti i verbi in -ieren formano un sostantivo corrispondente in -ierung: per esempio, studieren dà normalmente Studium. Presenta -ierung come schema produttivo, senza formularlo come regola universale.",
+      "path": "merged.lessons[2].theory[3].p"
+    },
+    {
+      "kind": "spiegazione lessicale",
+      "msg": "La spiegazione presenta Streit come privo di plurale d'uso, ma Streite è una forma plurale attestata. Streitigkeiten è spesso più naturale in questo contesto; formulalo come alternativa usuale, non come plurale obbligatoriamente sostitutivo.",
+      "path": "merged.test.exercises[1].why"
+    }
+  ],
+  "lang": "it",
+  "unit": "c2-u02",
+  "verdict": "fail"
+}
