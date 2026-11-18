@@ -1,7 +1,33 @@
 {
-  "bundleHash": "9dba2f7f81d7ff807fc0e07e84659a8a39cf208e5e82d6915ff9751d5750754f",
-  "findings": [],
+  "bundleHash": "08ea3732e440b180de671a1e919fc10cc2fba4afbee4f2c84fe7320992281fcb",
+  "findings": [
+    {
+      "kind": "grammatica tedesca",
+      "msg": "La spiegazione afferma che «um ... zu» richiede sempre lo stesso soggetto della principale, ma il soggetto implicito dell’infinito può riferirsi a un complemento: «Ich schicke ihn nach Berlin, um dort Deutsch zu lernen» può significare che è lui a studiare. Presentare la coincidenza dei soggetti come regola pratica e indicare l’eccezione.",
+      "path": "content.ref:g-nebensatz-final.body"
+    },
+    {
+      "kind": "grammatica tedesca",
+      "msg": "La parafrasi di «die von der Regierung beschlossene, aber heftig kritisierte Reform» introduce un contrasto temporale non espresso dall’attributo: «beschlossen wurde» è passato, mentre «kritisiert wird» è presente. Usare tempi coerenti, per esempio «die von der Regierung beschlossen und heftig kritisiert wurde».",
+      "path": "content.ref:g-partizipialattribut.body"
+    },
+    {
+      "kind": "contrasto linguistico",
+      "msg": "L’affermazione che in spagnolo «el plural siempre se forma igual» è falsa: esistono plurali con cambiamenti di accento o di forma, come «régimen → regímenes» e «carácter → caracteres». Limitare il confronto ai plurali citati o spiegare che lo spagnolo non distingue generalmente i significati di «banco» mediante due plurali.",
+      "path": "content.ref:g-plural.body"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La regola secondo cui «chs» suona [ks] solo quando la «s» appartiene alla radice non è affidabile: «Fuchs» si pronuncia [fʊks], mentre in «Büchse» la sequenza appartiene alla radice ma si pronuncia [çs]. Presentare [ks] come pronuncia presente in alcune parole da imparare singolarmente, distinguendola dalle sequenze con desinenza come «machst».",
+      "path": "content.ref:g-aussprache.body"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "L’affermazione che dopo «wenn» temporale al presente o al futuro si usa «siempre wenn» esclude impropriamente altri connettivi temporali e costruzioni. Precisare che «wenn» è la scelta tra «als» e «wenn» per situazioni presenti o future, mantenendo «wann» per le interrogative.",
+      "path": "content.ref:g-nebensatz-temporal.body"
+    }
+  ],
   "lang": "es",
   "unit": "i18n-grammar-reference",
-  "verdict": "pass"
+  "verdict": "fail"
 }
