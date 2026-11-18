@@ -1,0 +1,43 @@
+{
+  "bundleHash": "1c5305e11e245134c0ecf3544bd1137ea26ae7a2029ed2862d6f27c4a47aa30b",
+  "findings": [
+    {
+      "kind": "ortografia",
+      "msg": "Nella locuzione nominalizzata l’aggettivo va scritto con l’iniziale maiuscola: «Das Erste ist der Mietvertrag …».",
+      "path": "neutral[0].sentences[29]"
+    },
+    {
+      "kind": "ortografia",
+      "msg": "Scrivere «Das Zweite ist die Wohnungsgeberbestätigung …».",
+      "path": "neutral[0].sentences[30]"
+    },
+    {
+      "kind": "ortografia",
+      "msg": "Scrivere «Das Erste ist die Kaution.»",
+      "path": "neutral[0].sentences[36]"
+    },
+    {
+      "kind": "ortografia",
+      "msg": "Scrivere «Das Zweite sind die Nebenkosten.»",
+      "path": "neutral[0].sentences[41]"
+    },
+    {
+      "kind": "articolo",
+      "msg": "Il glossario attribuisce a «Brett» l’articolo femminile. Correggere in «das schwarze Brett»; nel testo la forma «Schwarzes Brett» è comunque ammissibile come denominazione fissa.",
+      "path": "neutral[0].glossIt[1]"
+    },
+    {
+      "kind": "progressione CEFR",
+      "msg": "Il testo concentra numerosi termini amministrativi e locativi specialistici, tra cui «Wohnungsgeberbestätigung», «Meldebescheinigung», «Kaution», «Kaltmiete» e «Nebenkosten», oltre a subordinate relative e interrogative ripetute. Per A2 semplificare e distribuire il lessico specialistico, mantenendo solo i termini essenziali con spiegazioni semplici.",
+      "path": "neutral[0].sentences"
+    }
+  ],
+  "lang": "en",
+  "unit": "library-a2",
+  "verdict": "fail",
+  "archived": {
+    "decision": "N2 (Q-C1-D8 A extended): round 2 has only neutral findings: das Erste/das Zweite capitalization disputed (elliptical reference to Papiere, it/es passed the same core), glossIt[1] gender claim factually wrong (glossIt already says das Schwarze Brett), A2 load is a core preference; overlay findings of round 1 applied",
+    "date": "2026-11-18",
+    "bundleHash": "1c5305e11e245134c0ecf3544bd1137ea26ae7a2029ed2862d6f27c4a47aa30b"
+  }
+}
