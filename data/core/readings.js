@@ -246,7 +246,7 @@ LINGUAI.addReadings([
     lexIt: ["Deutschland", "Flasche", "bezahlen", "Supermarkt", "Bremen", "Limonade", "Cent", "Geld", "leer", "Fabrik", "Metall", "reinigen", "füllen", "früher", "werfen", "Straße", "Müll", "sammeln"],
     questions: [
       { t: "mcq", q: "Wie viel Pfand zahlt man für eine Dose Limonade?", opts: ["fünfundzwanzig Cent", "fünf Cent", "einen Euro"], a: 0 },
-      { t: "truefalse", q: "Glasflaschen werden nach dem ersten Gebrauch gepresst.", a: 1 },
+      { t: "truefalse", q: "Die leeren Dosen werden gereinigt und neu gefüllt.", a: 1 },
       { t: "mcq", q: "Warum stellen manche Leute ihre Flaschen neben den Mülleimer?", opts: ["Damit andere das Pfand sammeln können.", "Weil der Automat kaputt ist.", "Weil Glas nicht wiederverwertet wird."], a: 0 }
     ]
   },
@@ -271,7 +271,7 @@ LINGUAI.addReadings([
       { t: "truefalse", q: "Selin hat zuerst ein Praktikum gemacht, um Erfahrungen zu sammeln.", a: 0 },
       { t: "mcq", q: "Wie viele Tage pro Woche ist Selin in der Berufsschule?", opts: ["zwei", "drei", "fünf"], a: 0 },
       { t: "mcq", q: "Warum erklärt der Chef jeden Arbeitsschritt genau?", opts: ["Damit Selin keine Fehler macht.", "Damit Selin früher nach Hause gehen kann.", "Weil Selin die Prüfung schon bestanden hat."], a: 0 },
-      { t: "truefalse", q: "Selins Eltern wollten von Anfang an, dass sie eine Ausbildung macht.", a: 1 }
+      { t: "truefalse", q: "Selins Eltern hätten sich für sie lieber eine Ausbildung gewünscht.", a: 1 }
     ]
   },
   {
@@ -304,7 +304,7 @@ LINGUAI.addReadings([
     titleIt: "Wenn die Wohnung größer wäre",
     sentences: [
       "Familie Hofer wohnt in einer Dreizimmerwohnung im Zentrum von Graz.",
-      "Seit das zweite Kind auf der Welt ist, ist die Wohnung eigentlich zu klein.",
+      "Seit das zweite Kind auf der Welt ist, ist die Wohnung für die vier eigentlich zu klein.",
       "„Wenn wir ein Zimmer mehr hätten, könnte jedes Kind ein eigenes Zimmer haben“, sagt Frau Hofer.",
       "Ihr Mann meint: „Wenn wir aufs Land ziehen würden, wäre die Miete viel billiger.“",
       "Aber dann müsste er jeden Tag eine Stunde mit dem Auto zur Arbeit fahren.",

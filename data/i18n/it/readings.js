@@ -65,7 +65,7 @@ LINGUAI.addStrings("it", {
 
   "read:r-b1-ausbildung": {
     title: "Meglio l'officina",
-    gloss: ["la maturità (esame di fine liceo)", "la formazione professionale (apprendistato)", "l'officina", "la tecnica meccatronica di autoveicoli (professione, donna)", "l'azienda", "la scuola professionale", "la fase di lavoro", "la materia (da studiare)"],
+    gloss: ["la maturità (esame di fine liceo)", "la formazione professionale (apprendistato)", "l'officina", "la meccatronica specializzata in autoveicoli", "l'azienda", "la scuola professionale", "la fase di lavoro", "la materia (da studiare)"],
     lex: ["studiare (all'università)", "esperienza", "raccogliere", "tirocinio", "Stoccarda", "accorgersi", "mano", "divertimento", "settimana", "capo", "errore", "ripassare", "esame", "superare (un esame)", "genitori", "desiderare", "guadagnare", "risparmiare", "aprire (un'attività)"]
   },
 
