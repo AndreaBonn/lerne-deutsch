@@ -1,15 +1,10 @@
 {
-  "bundleHash": "b2ffd5c9fbde661d6dda78a43bb0fc8931c7c04682cfb3529b6cc25b353365b9",
+  "bundleHash": "ebaca8c984d2be4ba70f9c926965b18d3737f5f315b3b4d299283314a2e62b39",
   "findings": [
     {
-      "kind": "traduzione",
-      "msg": "«Inzwischen» nel contesto significa «nel frattempo» o «ormai», riferito a una capacità acquisita nel tempo. Il polacco «tymczasem» introduce invece tipicamente un contrasto o un evento contemporaneo; «już teraz» non rende bene questa evoluzione. Sostituire con «w międzyczasie, już teraz» oppure, più naturalmente nel contesto, «obecnie, już» e fornire l’esempio «inzwischen rozumie dialekt całkiem dobrze».",
-      "path": "merged[13].lex[16]"
-    },
-    {
-      "kind": "spiegazione lessicale",
-      "msg": "La nota afferma che «der Chef» non significa «szef kuchni», ma in tedesco può riferirsi anche al capo cucina a seconda del contesto. Precisare che «Chef» significa normalmente «capo» e che «Küchenchef» identifica esplicitamente lo chef o responsabile della cucina.",
-      "path": "merged[7].lex[0]"
+      "kind": "spiegazione inesatta",
+      "msg": "La nota afferma che la tessera sanitaria va presentata a ogni visita, ma in Germania viene generalmente acquisita dalla pratica una volta per trimestre. Correggere in «zwykle okazuje się ją w gabinecie raz na kwartał» ed evitare di presentare la frequenza come una regola senza eccezioni.",
+      "path": "merged[4].gloss[2]"
     }
   ],
   "lang": "pl",
