@@ -120,7 +120,7 @@ LINGUAI.addStrings("es", {
   "read:r-c1-hochwasser": {
     title: "Después de la riada",
     gloss: ["la confluencia (donde un río desemboca en otro)", "colocado, fijado", "el nivel del agua (lectura del limnímetro)", "registrado", "la planta baja", "empapado", "desechar, llevar a la basura", "que empieza enseguida", "la disposición a ayudar, la solidaridad", "el barro, el lodo", "el saco de arena"],
-    lex: ["Passau", "Inn (río)", "Ilz (río)", "Danubio", "crecida, inundación", "experiencia", "casco antiguo", "marca, señal", "recordar (algo: erinnern an + acusativo; el reflexivo sich erinnern an es 'acordarse de')", "riada, inundación", "marca (aquí: de una crecida)", "junio", "nivel", "callejuela", "sótano", "durante días", "tienda", "mercancía", "notable", "daño", "redes sociales", "convocar, reunir", "voluntarios", "estudiantes", "universidad", "sacar a paladas", "arrastrar, acarrear", "medida de protección", "debatir", "muro", "vista", "río", "riqueza", "peligro"]
+    lex: ["Passau", "Inn (río)", "Ilz (río)", "Danubio", "crecida, inundación", "experiencia", "casco antiguo", "marca, señal", "evocar, recordar (algo a alguien: jemanden an etwas erinnern); el reflexivo sich an etwas erinnern es 'acordarse de algo'", "riada, inundación", "marca (aquí: de una crecida)", "junio", "nivel", "callejuela", "sótano", "durante días", "tienda", "mercancía", "notable", "daño", "redes sociales", "convocar, reunir", "voluntarios", "estudiantes", "universidad", "sacar a paladas", "arrastrar, acarrear", "medida de protección", "debatir", "muro", "vista", "río", "riqueza", "peligro"]
   },
 
   "read:r-c1-betriebsrat": {
