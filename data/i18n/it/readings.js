@@ -60,7 +60,7 @@ LINGUAI.addStrings("it", {
   "read:r-b1-pfand": {
     title: "Che fine fa la lattina",
     gloss: ["la cauzione (vuoto a rendere)", "la lattina", "la macchinetta (per il reso)", "pressare", "riciclare", "introdurre", "il bidone della spazzatura"],
-    lex: ["Germania", "bottiglia", "pagare", "supermercato", "Brema", "bibita", "centesimo", "soldi", "vuoto", "fabbrica", "metallo", "pulire", "riempire", "una volta (in passato)", "gettare", "strada", "rifiuti", "raccogliere"]
+    lex: ["Germania", "bottiglia", "pagare", "supermercato", "Brema", "bibita", "centesimo", "soldi", "vuoto", "fabbrica", "metallo", "pulire", "riempire", "una volta (in passato)", "gettare", "strada", "essere sparso in giro", "raccogliere"]
   },
 
   "read:r-b1-ausbildung": {

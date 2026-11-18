@@ -239,11 +239,11 @@ LINGUAI.addReadings([
       "Danach wird die Dose gepresst und zu einer Fabrik gebracht, wo das Metall wiederverwertet wird.",
       "Viele Glasflaschen werden dagegen gereinigt und bis zu fünfzigmal neu gefüllt.",
       "Früher wurden viele Dosen einfach in den Park oder auf die Straße geworfen.",
-      "Seit das Pfand 2003 eingeführt wurde, sieht man viel weniger Müll.",
+      "Seit das Pfand auf Einwegdosen 2003 eingeführt wurde, liegen dort viel weniger Dosen herum.",
       "Und wer seine Flaschen nicht zurückbringt, stellt sie oft neben den Mülleimer, damit andere das Pfand sammeln können."
     ],
     glossIt: ["das Pfand", "die Dose", "der Automat", "pressen", "wiederverwerten", "einführen", "der Mülleimer"],
-    lexIt: ["Deutschland", "Flasche", "bezahlen", "Supermarkt", "Bremen", "Limonade", "Cent", "Geld", "leer", "Fabrik", "Metall", "reinigen", "füllen", "früher", "werfen", "Straße", "Müll", "sammeln"],
+    lexIt: ["Deutschland", "Flasche", "bezahlen", "Supermarkt", "Bremen", "Limonade", "Cent", "Geld", "leer", "Fabrik", "Metall", "reinigen", "füllen", "früher", "werfen", "Straße", "herumliegen", "sammeln"],
     questions: [
       { t: "mcq", q: "Wie viel Pfand zahlt man für eine Dose Limonade?", opts: ["fünfundzwanzig Cent", "fünf Cent", "einen Euro"], a: 0 },
       { t: "truefalse", q: "Die leeren Dosen werden gereinigt und neu gefüllt.", a: 1 },
@@ -387,7 +387,7 @@ LINGUAI.addReadings([
     glossIt: ["die Tageszeitung", "die Redaktion", "der Praktikant", "die Chefredakteurin", "der Gesprächspartner", "die Lawine", "das Aufnahmegerät", "der Chef vom Dienst", "sich beschweren", "ausgerechnet"],
     lexIt: ["Praktikum", "Innsbruck", "jung", "vorstellen", "Kollege", "Tipp", "erfahren", "Journalist", "raten", "Name", "überprüfen", "Experte", "interviewen", "Universität", "forschen", "vergessen", "Gespräch", "einschalten", "Inhalt", "Notiz", "rekonstruieren", "drucken", "Seite", "Leser", "Nachname", "falsch", "rot"],
     questions: [
-      { t: "mcq", q: "Welchen Tipp gibt der erfahrene Journalist dem Praktikanten?", opts: ["jeden Namen zweimal zu überprüfen", "jeden Tag früh zu kommen", "nur kurze Artikel zu schreiben"], a: 0 },
+      { t: "mcq", q: "Welchen Tipp gibt der erfahrene Journalist dem Praktikanten?", opts: ["den Namen jedes Gesprächspartners zweimal zu überprüfen", "jeden Tag früh zu kommen", "nur kurze Artikel zu schreiben"], a: 0 },
       { t: "truefalse", q: "Lukas nimmt das Interview mit dem Experten auf.", a: 1 },
       { t: "mcq", q: "Worüber beschwert sich der Leser?", opts: ["über den falsch geschriebenen Nachnamen des Experten", "über die Seite, auf der der Artikel steht", "über die Länge des Artikels"], a: 0 },
       { t: "truefalse", q: "Der Artikel von Lukas wird gedruckt.", a: 0 }
