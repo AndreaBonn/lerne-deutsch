@@ -395,7 +395,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "La ministra ha negato ogni responsabilità.",
-        why: "In <i>Ministerin</i> l'accento cade su <b>te</b>; in <i>Verantwortung</i> l'accento cade su <b>ant</b>; in <i>Abrede</i> l'accento cade su <b>Ab</b> e la <b>b</b> si pronuncia [p]."
+        why: "In <i>Ministerin</i> l'accento cade su <b>nis</b>; in <i>Verantwortung</i> l'accento cade su <b>ant</b>; in <i>Abrede</i> l'accento cade su <b>Ab</b> e la <b>b</b> si pronuncia [p]."
       }
     ]
   },
