@@ -1,30 +1,35 @@
 {
-  "bundleHash": "fde0a0b9b41fd0ea47cdbef81e0bcd816cf5bb143b05421a7d2e5bf85d8e9658",
+  "bundleHash": "ef3fb3e674682739f305196053e9f710a5ebeb71b0fe571a8948e2c5dc2d03a9",
   "findings": [
     {
       "kind": "pronuncia",
-      "msg": "L’accento principale di «Angestellter» cade su «stell», non su «An». Correggere l’indicazione in «AngeSTELLter».",
-      "path": "merged.lessons[0].exercises[8].why"
-    },
-    {
-      "kind": "pronuncia",
-      "msg": "L’accento principale del composto «Universitätsstädten» cade su «Städ», mentre «tät» porta un accento secondario. Correggere la spiegazione.",
+      "msg": "L’accento principale di «Universitätsstädten» cade su «Städ», non su «tät»: correggere la spiegazione e, se utile, indicare l’accento secondario su «tät».",
       "path": "merged.lessons[1].exercises[8].why"
     },
     {
+      "kind": "pronuncia",
+      "msg": "In «Gelassenheit» l’accento principale cade su «heit», non su «las». Correggere l’indicazione dell’accento.",
+      "path": "merged.lessons[2].exercises[9].why"
+    },
+    {
       "kind": "morfologia",
-      "msg": "La spiegazione afferma che tutti i sostantivi in «-ung, -heit, -keit, -schaft» formano il plurale in «-en», ma molti non hanno un plurale nell’uso ordinario, come «Gelassenheit» e «Zuverlässigkeit», presentati nella stessa lezione. Precisare che, quando esiste, il plurale termina normalmente in «-en».",
+      "msg": "«-igkeit» non si aggiunge a tutti gli aggettivi in «-los»: per esempio, «mühelos» forma «Mühelosigkeit», ma «los» non è sufficiente come regola universale per ogni base. Presentare la formazione come schema produttivo, verificando la forma lessicalizzata.",
+      "path": "merged.lessons[2].theory[2].p"
+    },
+    {
+      "kind": "morfologia",
+      "msg": "L’affermazione che i sostantivi in «-schaft» formino sempre il plurale in «-en» è falsa: «die Landschaft» forma «die Landschaften», con aggiunta di «-en» solo se si considera la base senza la desinenza singolare, ma «die Mannschaft» forma «die Mannschaften»; chiarire la regola come aggiunta di «-en» alla forma singolare e distinguere le eventuali eccezioni.",
       "path": "merged.lessons[2].theory[0].p"
     },
     {
-      "kind": "spiegazione imprecisa",
-      "msg": "L’affermazione che ogni composto nominale tedesco sia scritto come un’unica parola è troppo assoluta: esistono composti scritti con trattini, per esempio «E-Mail-Adresse». Precisare che normalmente si scrive unito e introdurre i casi con trattino.",
-      "path": "merged.lessons[1].theory[2].contrast"
+      "kind": "livello CEFR",
+      "msg": "La maggior parte degli esercizi verifica forme lessicali, genere e composizione attraverso frasi brevi e strutture comuni, senza richiedere la precisione semantica, stilistica o di registro attesa a C2. Aumentare la complessità degli item entro i formati previsti, introducendo distinzioni lessicali e di registro avanzate e contesti più discriminanti.",
+      "path": "merged.lessons"
     },
     {
-      "kind": "traduzione",
-      "msg": "«Regenfall» indica una precipitazione o un episodio di pioggia; «rain shower» suggerisce specificamente un rovescio, che corrisponde più precisamente a «Regenschauer». Usare «rainfall» o «period of rain».",
-      "path": "merged.lessons[0].vocab[4].tr"
+      "kind": "spiegazione",
+      "msg": "«Regenfälle» non è il plurale di «Regen», ma il plurale del sostantivo distinto «Regenfall», usato come espressione sostitutiva. Riformulare la consegna per non presentarlo come una forma flessiva diretta.",
+      "path": "merged.lessons[0].exercises[5].q"
     }
   ],
   "lang": "en",

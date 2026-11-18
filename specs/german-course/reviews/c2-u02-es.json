@@ -1,25 +1,25 @@
 {
-  "bundleHash": "838b37bc30c265c26c67820d66469a674cb2eae07358692cb30dff58fb6865ca",
+  "bundleHash": "9ab1b8f902c3f101719b57c4ccadbbfff36a714c8ce1ebf2a5d49828fae6f0f7",
   "findings": [
     {
-      "kind": "pronuncia",
-      "msg": "L’accento principale di «Angestellter» cade su «stell», non su «An». Correggere la spiegazione della pronuncia.",
-      "path": "merged.lessons[0].exercises[8].why"
+      "kind": "Nivel CEFR",
+      "msg": "La unidad presenta principalmente identificación de género, plurales frecuentes y formación de palabras mediante pistas directas. Aunque emplea terminología lingüística, los ejercicios apenas exigen la precisión de significado, el registro o los matices propios de C2. Incorporar ejemplos y distractores más matizados dentro de los formatos actuales, por ejemplo variaciones de registro y usos contextuales de compuestos y derivados.",
+      "path": "merged.lessons"
     },
     {
-      "kind": "pronuncia",
-      "msg": "La vocale di «Worten» è lunga [ɔː], non breve [ɔ]. Correggere l’indicazione.",
-      "path": "merged.lessons[0].exercises[9].why"
+      "kind": "Explicación incorrecta",
+      "msg": "La afirmación «el neutro no existe en tu lengua» es falsa: el español tiene formas neutras como «lo», «esto» y «eso», aunque sus sustantivos no se clasifican generalmente en un género neutro. Precisar esa diferencia.",
+      "path": "merged.lessons[2].theory[4].contrast"
     },
     {
-      "kind": "grammatica",
-      "msg": "La spiegazione attribuisce a tutti i sostantivi con questi suffissi un plurale in «-en», ma diversi astratti non hanno un plurale d’uso, come «Gelassenheit» e «Nachhaltigkeit». Precisare che, quando esiste, il plurale si forma generalmente in «-en».",
-      "path": "merged.lessons[2].theory[0].p"
+      "kind": "Traducción poco idiomática",
+      "msg": "«Dio en el clavo del problema» resulta forzado en español. Traducir, por ejemplo, «Con pocas palabras expresó el problema con precisión».",
+      "path": "merged.lessons[0].grammar.examples[2].tr"
     },
     {
-      "kind": "grammatica",
-      "msg": "«-heit» non vale in tutti gli altri casi: esistono, per esempio, «Möglichkeit» da «möglich» e «Traurigkeit» da «traurig», già coperti dalla regola precedente, ma anche «Neuigkeit» da «neu» e «Schwierigkeit» da «schwierig». Presentare la scelta come tendenza con eccezioni, includendo «Neuigkeit» per il caso non coperto.",
-      "path": "merged.lessons[2].theory[1].p"
+      "kind": "Explicación ortográfica imprecisa",
+      "msg": "La explicación atribuye la diferencia entre «Muttern» y «Mütter» a la diéresis, pero las formas también difieren en la terminación: «-n» frente a «-er». Precisar ambos cambios.",
+      "path": "merged.lessons[0].theory[3].trap"
     }
   ],
   "lang": "es",
