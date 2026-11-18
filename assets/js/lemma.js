@@ -18,14 +18,15 @@
     return String(word).toLowerCase().replace(/[’']/g, "'").trim().replace(/\s+/g, " ");
   }
 
-  function addEntry(target, entry) {
+  function addEntry(target, entry, fromCourse) {
     if (!entry) return;
     var spelling = String(entry).trim().replace(/\s+/g, " ").replace(ARTICLE, "");
     var key = normalize(spelling);
     if (!key) return;
     target[key] = true;
-    canonical[key] = spelling;
-    if (ARTICLE.test(String(entry).trim()) && key.indexOf(" ") < 0) {
+    /* A deck card (fromCourse false) never renames what the course wrote. */
+    if (fromCourse) canonical[key] = spelling;
+    if (fromCourse && !entries[key] && ARTICLE.test(String(entry).trim()) && key.indexOf(" ") < 0) {
       entries[key] = String(entry).trim().replace(/\s+/g, " ");
     }
     if (key.indexOf(" ") < 0) return;
@@ -33,7 +34,7 @@
       var token = normalize(word);
       if (token.length <= 1 || M.posilkowy(token) || M.funkcyjny(token)) return;
       target[token] = true;
-      if (!canonical[token]) canonical[token] = word;
+      if (fromCourse && !canonical[token]) canonical[token] = word;
     });
   }
 
@@ -42,13 +43,13 @@
     (levels || []).forEach(function (level) {
       (level.units || []).forEach(function (unit) {
         (unit.lessons || []).forEach(function (lesson) {
-          (lesson.vocab || []).forEach(function (entry) { addEntry(result, entry.it); });
+          (lesson.vocab || []).forEach(function (entry) { addEntry(result, entry.it, true); });
         });
       });
     });
     (readings || []).forEach(function (reading) {
       (reading.glossIt || []).concat(reading.lexIt || []).forEach(function (word) {
-        addEntry(result, word);
+        addEntry(result, word, true);
       });
     });
     return result;
@@ -126,6 +127,12 @@
     return out;
   }
 
+  function wpisKursu(key, form) {
+    var first = form ? String(form).charAt(0) : "";
+    if (first && first !== first.toUpperCase()) return "";
+    return entries[key] || canonical[key] || "";
+  }
+
   function refresh() {
     dictionary = null;
     index = null;
@@ -149,9 +156,11 @@
     uzyjSlownika: function (predicate) { known = predicate; },
     dodajCzasowniki: addVerbs,
     zbudujSlownik: buildDictionary,
-    dodajHaslo: addEntry,
-    /** The course entry for a dictionary key: with article for a noun, else the spelling, else "". */
-    wpisKursu: function (key) { return entries[key] || canonical[key] || ""; },
+    dodajHaslo: function (target, entry) { addEntry(target, entry, false); },
+    /** The course entry for a dictionary key: with article for a noun, else the spelling, else "".
+        A lowercase frequency form is not a noun (the list keeps noun capitals),
+        so "trifft" -> treffen stays the verb and does not become das Treffen. */
+    wpisKursu: wpisKursu,
     odswiez: refresh,
     funkcyjne: M.funkcyjny,
     rozmiarIndeksu: function () { return Object.keys(buildIndex()).length; }

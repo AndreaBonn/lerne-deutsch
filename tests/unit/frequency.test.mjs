@@ -252,3 +252,38 @@ describe("frequency: the row carries the course entry", () => {
     assert.equal(braki[0].wpis, "haus");
   });
 });
+
+describe("frequency: the German course entry, edge cases", () => {
+  const LIVELLI = [{ units: [{ lessons: [{ vocab: [
+    { it: "das Treffen" }, { it: "treffen" }, { it: "der Kaffee" }, { it: "ein Kaffee" }
+  ] }] }] }];
+
+  test("a lowercase form keeps the verb, a capitalised one gets the noun entry", () => {
+    const s = silnik();
+    s.Lemma.zbudujSlownik(LIVELLI, []);
+    assert.equal(s.Lemma.wpisKursu("treffen", "Treffen"), "das Treffen");
+    assert.equal(s.Lemma.wpisKursu("treffen", "trifft"), "", "trifft is the verb: no entry, the row keeps the key treffen");
+  });
+
+  test("the first article entry wins, as in the Italian engine", () => {
+    const s = silnik();
+    s.Lemma.zbudujSlownik(LIVELLI, []);
+    assert.equal(s.Lemma.wpisKursu("kaffee", "Kaffee"), "der Kaffee");
+  });
+
+  test("a card of the student does not become a course entry", () => {
+    const s = silnik();
+    s.Lemma.zbudujSlownik([], []);
+    s.Lemma.dodajHaslo({}, "der Stuhl");
+    assert.equal(s.Lemma.wpisKursu("stuhl", "Stuhl"), "", "a deck card is not a course entry");
+  });
+
+  test("the entry survives a rebuild, and a bare capitalised word keeps its spelling", () => {
+    const s = silnik();
+    s.Lemma.zbudujSlownik([{ units: [{ lessons: [{ vocab: [{ it: "der Bescheid" }, { it: "Deutschland" }] }] }] }], []);
+    s.Lemma.zbudujSlownik([], []);
+    assert.equal(s.Lemma.wpisKursu("bescheid", "Bescheid"), "der Bescheid");
+    s.Lemma.zbudujSlownik([{ units: [{ lessons: [{ vocab: [{ it: "Deutschland" }] }] }] }], []);
+    assert.equal(s.Lemma.wpisKursu("deutschland", "Deutschland"), "Deutschland", "canonical spelling, not the key");
+  });
+});
