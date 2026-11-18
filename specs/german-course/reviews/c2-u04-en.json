@@ -3,8 +3,23 @@
   "findings": [
     {
       "kind": "pronuncia",
-      "msg": "L’indicazione dell’accento in «Autorin» è errata: cade su «rin», non su «to». Correggere la spiegazione in «the stress falls on rin».",
+      "msg": "L’accento principale di «zurückgezogen» cade su «zo», non su «rück». Correggere l’indicazione per la pronuncia.",
       "path": "merged.lessons[0].exercises[10].why"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "L’accento principale di «beunruhigt» cade su «ruh», non su «un». Correggere l’indicazione per la pronuncia.",
+      "path": "merged.lessons[1].exercises[9].why"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "L’affermazione che «neuen» sia un errore nello scritto sorvegliato è troppo categorica: dopo «dessen» e «deren» sono ammesse anche forme aggettivali deboli. Riformulare l’esercizio, poiché «mit deren neuem Vorschlag» e «mit deren neuen Vorschlag» sono entrambe accettabili.",
+      "path": "merged.lessons[0].exercises[2]"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "La nota presenta «mit dessen neuen Vorschlag» come errore, ma la flessione debole dopo «dessen» è ammessa accanto a quella forte. Correggere la spiegazione.",
+      "path": "merged.lessons[0].theory[3].trap"
     }
   ],
   "lang": "en",

@@ -1,20 +1,15 @@
 {
-  "bundleHash": "d3691d6ee73689f8081d47e75c059ca327e2c6cd0bd30cc12f1a4932ac5c96f0",
+  "bundleHash": "22678e6361a2c0771cda747fb7e357e35d3e1470e7ace958bd1bad7630d23727",
   "findings": [
     {
-      "kind": "chiave di risposta ambigua",
-      "msg": "«Auf welcher» è anch’esso un accusativo femminile e completa correttamente la frase: «Die Frage, auf welcher es eigentlich ankommt …». La spiegazione lo identifica erroneamente come dativo. Sostituire il distrattore oppure accettare entrambe le risposte e correggere la spiegazione.",
-      "path": "merged.test.exercises[5]"
+      "kind": "chiave di risposta incompleta",
+      "msg": "La frase polacca usa il singolare «ryzyka», che può tradurre sia «der Risiken» sia «des Risikos». Aggiungere alle risposte accettate anche le varianti «Wer sich des Risikos bewusst ist, ...», con e senza «der» e con le forme già ammesse di «Warnung».",
+      "path": "merged.test.exercises[9].a"
     },
     {
-      "kind": "spiegazione della reggenza",
-      "msg": "L’affermazione che «walczyć o» richieda «kämpfen für» e non «worum» è troppo categorica: «um etwas kämpfen» è corretto, per esempio «alles, worum sie gekämpft hat». Distinguere i significati di «kämpfen für» e «kämpfen um» e correggere il contrasto.",
+      "kind": "spiegazione contrastiva incoerente",
+      "msg": "La nota afferma che il polacco conserva la preposizione davanti a «co», ma include «to, czego się bałem», che non contiene alcuna preposizione. Distinguere gli esempi polacchi con preposizione, come «o czym», da quelli senza, precisando che il tedesco richiede comunque «vor» in «Angst haben vor».",
       "path": "merged.lessons[1].theory[2].contrast"
-    },
-    {
-      "kind": "spiegazione del tedesco",
-      "msg": "La spiegazione dichiara impossibile l’ordine tedesco equivalente a «z pomocą której», ma «mit Hilfe derer» esiste in registro formale, per esempio «die Kollegen, mit Hilfe derer wir das Projekt abgeschlossen haben». Presentare «mit deren Hilfe» come costruzione usuale senza escludere categoricamente l’altra.",
-      "path": "merged.lessons[0].exercises[3].why"
     }
   ],
   "lang": "pl",
