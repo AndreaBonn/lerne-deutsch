@@ -1,15 +1,10 @@
 {
-  "bundleHash": "75fca2da0514d958fde544c779cf357fef9f642fa8095d81781ee3715ab3d048",
+  "bundleHash": "0dabcce1362d3c31b0b081b20a19d8d8de20cf9ff72ba5a56d2aaeba510f8749",
   "findings": [
     {
-      "kind": "livello CEFR",
-      "msg": "L'unità ripassa relative e reggenze utili, ma gli esercizi richiedono soprattutto il riconoscimento di forme isolate e la costruzione di frasi brevi con lessico formale. Mancano distinzioni di significato, registro e sfumatura sufficientemente impegnative per un'unità C2. Mantenendo gli stessi tipi e conteggi, sostituire alcuni item con alternative plausibili che richiedano di valutare tali distinzioni in contesto.",
-      "path": "merged.lessons"
-    },
-    {
-      "kind": "traduzione",
-      "msg": "«Il che nessuno si aspettava» è poco naturale in italiano. Rendere la frase con «Ha superato l'esame, cosa che nessuno si aspettava» e usare la stessa formulazione nell'esempio della teoria.",
-      "path": "merged.lessons[1].grammar.examples[4].tr"
+      "kind": "traduzione e spiegazione",
+      "msg": "«Verdächtigen» significa «sospettare qualcuno di qualcosa», non «accusare qualcuno di qualcosa»: la spiegazione confonde un sospetto con un’accusa. Distinguere la traduzione di «jemanden einer Sache verdächtigen» da quelle di «beschuldigen» e «anklagen».",
+      "path": "merged.lessons[2].theory[0].p"
     }
   ],
   "lang": "it",
