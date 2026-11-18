@@ -48,7 +48,7 @@ LINGUAI.addStrings("pl", {
   "read:r-a2-wien": {
     title: "Za rok w Wiedniu",
     gloss: ["posada, miejsce pracy", "zamierzać, planować", "otworzyć (lokal, firmę)", "wiedeńska kawiarnia (tradycyjny lokal z kawą i gazetami)", "szukanie mieszkania"],
-    lex: ["kucharz (uwaga: der Chef to szef, przełożony, a nie szef kuchni)", "hotel", "Düsseldorf", "przeprowadzać się", "dziewczyna, partnerka (też: przyjaciółka)", "Wiedeń", "restauracja", "kuchnia (sztuka kulinarna, też pomieszczenie)", "znać (osobę, miejsce)", "wiedzieć (fakt)", "rodzice", "smutny", "daleko", "pociąg", "około", "godzina"]
+    lex: ["kucharz (der Chef to zwykle szef, przełożony; szefa kuchni nazywa się jednoznacznie der Küchenchef)", "hotel", "Düsseldorf", "przeprowadzać się", "dziewczyna, partnerka (też: przyjaciółka)", "Wiedeń", "restauracja", "kuchnia (sztuka kulinarna, też pomieszczenie)", "znać (osobę, miejsce)", "wiedzieć (fakt)", "rodzice", "smutny", "daleko", "pociąg", "około", "godzina"]
   },
 
   "read:r-b1-fahrrad": {
@@ -84,7 +84,7 @@ LINGUAI.addStrings("pl", {
   "read:r-b2-grenze": {
     title: "Codziennie przez granicę",
     gloss: ["początek pracy (godzina rozpoczęcia)", "opłacać się", "pracownik transgraniczny (mieszka w jednym kraju, pracuje w drugim)", "zeznanie podatkowe (odpowiednik polskiego PIT-u)", "doradczyni (tu: podatkowa)", "chociaż (książkowe, jak obwohl)", "dialekt bazylejski (szwajcarska odmiana niemieckiego z Bazylei)", "oferta (tu: pracy)"],
-    lex: ["Lörrach (miasto w Badenii przy granicy ze Szwajcarią)", "firma farmaceutyczna", "Bazylea", "granica", "kolej miejska, podmiejska", "dowód osobisty", "posada, miejsce pracy", "zarabiać", "wyraźnie, znacznie", "wada, minus", "kolega z pracy", "Francja", "Szwajcaria (zawsze z rodzajnikiem: in der Schweiz)", "firma", "przerwa", "dialekt, gwara", "tymczasem, już teraz", "zmieniać (pracę)", "zauważać, odczuwać", "robić zakupy", "cena"]
+    lex: ["Lörrach (miasto w Badenii przy granicy ze Szwajcarią)", "firma farmaceutyczna", "Bazylea", "granica", "kolej miejska, podmiejska", "dowód osobisty", "posada, miejsce pracy", "zarabiać", "wyraźnie, znacznie", "wada, minus", "kolega z pracy", "Francja", "Szwajcaria (zawsze z rodzajnikiem: in der Schweiz)", "firma", "przerwa", "dialekt, gwara", "z czasem, już (o czymś, co się zmieniło: versteht inzwischen ziemlich gut, z czasem nauczył się dobrze rozumieć; nie polskie „tymczasem”)", "zmieniać (pracę)", "zauważać, odczuwać", "robić zakupy", "cena"]
   },
 
   "read:r-b2-dorfladen": {
