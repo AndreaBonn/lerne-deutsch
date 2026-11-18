@@ -160,7 +160,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "was e wo(r)-",
-        p: "<strong>was</strong> sostituisce <em>das</em> quando l'antecedente non è un nome preciso: dopo <em>alles, nichts, etwas, vieles, manches, das</em> e dopo un superlativo neutro sostantivato (<em>das Beste, was ...</em>). Si usa anche senza antecedente (<em>Was mich beunruhigt, ist ...</em>) e per riprendere un'intera frase: <em>Er hat bestanden, was niemand erwartet hatte</em>, «il che nessuno si aspettava». Se il verbo vuole una preposizione, al posto di preposizione + <em>was</em> si usa <strong>wo(r)- + preposizione</strong>: <em>vieles, worüber wir uns nicht einig waren</em>. La <em>r</em> compare davanti a vocale: <em>woran, worauf, worüber</em>, ma <em>wofür, womit, wovon, wovor</em>."
+        p: "<strong>was</strong> sostituisce <em>das</em> quando l'antecedente non è un nome preciso: dopo <em>alles, nichts, etwas, vieles, manches, das</em> e dopo un superlativo neutro sostantivato (<em>das Beste, was ...</em>). Si usa anche senza antecedente (<em>Was mich beunruhigt, ist ...</em>) e per riprendere un'intera frase: <em>Er hat bestanden, was niemand erwartet hatte</em>, «cosa che nessuno si aspettava». Se il verbo vuole una preposizione, al posto di preposizione + <em>was</em> si usa <strong>wo(r)- + preposizione</strong>: <em>vieles, worüber wir uns nicht einig waren</em>. La <em>r</em> compare davanti a vocale: <em>woran, worauf, worüber</em>, ma <em>wofür, womit, wovon, wovor</em>."
       },
       {
         contrast: "L'italiano distingue <em>chi</em>, <em>ciò che</em> e <em>il che</em>, e il tedesco li copre con due parole: <em>wer</em> per le persone, <em>was</em> per tutto il resto, compreso «il che» riferito a una frase intera. Dove l'italiano dice <em>ciò di cui, ciò su cui, ciò per cui</em>, il tedesco fonde preposizione e pronome: <em>das, worüber wir sprechen</em>, <em>alles, wofür sie gekämpft hat</em>. E <em>chi</em> in italiano non vuole riprese (<em>chi tace acconsente</em>), mentre il tedesco deve aggiungere il correlativo quando cambia il caso: <em>Wem die Reform schadet, den hat man nicht gefragt</em>."
@@ -190,7 +190,7 @@ LINGUAI.addStrings("it", {
         { tr: "Ciò che mi preoccupa è l'indifferenza di molte persone.", note: "was senza antecedente, come soggetto" },
         { tr: "Tutto quello che ha affermato si è potuto confutare.", note: "dopo alles: was" },
         { tr: "La cosa migliore che potesse capitarci è stato questo rifiuto.", note: "dopo un superlativo neutro: was" },
-        { tr: "Ha superato l'esame, il che nessuno si aspettava.", note: "was riprende tutta la frase precedente" },
+        { tr: "Ha superato l'esame, cosa che nessuno si aspettava.", note: "was riprende tutta la frase precedente" },
         { tr: "C'erano molte cose su cui non eravamo d'accordo.", note: "sich einig sein über: worüber" }
       ]
     },
