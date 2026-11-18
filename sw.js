@@ -48,7 +48,7 @@
 
    A human raises "v35" when they want to name a release; the fingerprint
    is not their job. */
-var SW_VERSION = "v35.20180ddb4746";
+var SW_VERSION = "v35.ebef1539c2a7";
 
 var SHELL_CACHE = "impara-tedesco-shell-" + SW_VERSION;
 /* Recordings are content-addressed, so their cache survives a version change.
