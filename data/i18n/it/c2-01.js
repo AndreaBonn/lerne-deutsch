@@ -1327,7 +1327,7 @@ LINGUAI.addStrings("it", {
           "ordinario, normale",
           "ordinato, regolare"
         ],
-        why: "Falso amico: riferito a persone e comportamenti <b>ordinär</b> significa «volgare». Il senso di «comune, dozzinale» esiste solo per le cose (<i>ganz ordinäres Papier</i>)."
+        why: "Falso amico: in un giudizio su un comportamento <b>ordinär</b> significa «volgare». Esiste anche il senso di «comune, dozzinale» (<i>ganz ordinäres Papier</i>), ma qui il contesto lo esclude."
       },
       {
         q: "Completa: «Der Antrag wurde in mehreren ___ der Universität diskutiert.»",
@@ -1354,7 +1354,7 @@ LINGUAI.addStrings("it", {
         ]
       },
       {
-        q: "Traduci: «La tesi non è verificabile empiricamente.» (die These, empirisch, verifizierbar)",
+        q: "Traduci: «La tesi non è verificabile empiricamente.», nel senso che non si può accertarne la verità con i dati (die These, empirisch, verifizierbar)",
         why: "<i>Die These ist empirisch nicht verifizierbar</i>. Si accettano anche <i>lässt sich nicht verifizieren</i>, <i>ist nicht zu verifizieren</i>. Non vale invece <i>überprüfbar</i>: <i>überprüfen</i> significa «controllare» e non implica la conferma, mentre <i>verifizieren</i> significa accertare che qualcosa sia vero."
       },
       {
