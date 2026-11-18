@@ -35,7 +35,7 @@ LINGUAI.addStrings("en", {
 
   "read:r-a2-wg": {
     title: "A Room in Leipzig",
-    gloss: ["the shared apartment (short for Wohngemeinschaft)", "the ad, the listing", "including heat and utilities (said of rent)", "the viewing (of an apartment)", "the roommate (f.)"],
+    gloss: ["the shared apartment (short for Wohngemeinschaft)", "the ad, the listing", "including heating and the listed extra costs (said of rent; electricity is often extra)", "the viewing (of an apartment)", "the roommate (f.)"],
     lex: ["to study (at a university), go to college", "Leipzig", "to look for", "room", "square meter (about 10.8 square feet)", "apartment", "kitchen", "balcony", "plant", "empty", "bright", "quiet", "to put, place (standing up)", "wall", "desk", "window", "message", "to be happy, be glad"]
   },
 
@@ -144,6 +144,6 @@ LINGUAI.addStrings("en", {
   "read:r-c2-heimat": {
     title: "A Difficult Word",
     gloss: ["burdened, tainted (by history)", "the web, the tangle", "the dialect", "to dawn on (someone)", "to romanticize, idealize", "to narrow", "kitschy, schmaltzy", "the reinterpretation", "to avoid", "enlightened", "to make (something) one's own, appropriate", "exclusionary", "the reading, the interpretation", "fierce, bitter", "to believe (someone or something) capable of"],
-    lex: ["untranslatable", "Heimat (home, homeland, the place one belongs)", "to denote, refer to", "place", "landscape", "smell", "habit", "distance (being far away)", "century", "romantic (of Romanticism)", "National Socialism, Nazism", "ideology", "postwar period", "Heimatfilm (sentimental rural film genre of the 1950s)", "harmless", "concept, term", "dictionary", "willingly", "border, boundary", "to negotiate", "ministry (government department)", "writer (f.)", "migration background (family history of immigration)", "origin", "closed (off)", "to settle in", "to need (here: to be needed)", "sharp edge", "to prevail", "to argue, fight"]
+    lex: ["untranslatable", "Heimat (home, homeland, the place one belongs)", "to denote, refer to", "place", "landscape", "smell", "habit", "distance (being far away)", "century", "romantic (of Romanticism)", "National Socialism, Nazism", "ideology", "postwar period", "Heimatfilm (sentimental rural film genre of the 1950s)", "harmless", "concept, term", "dictionary", "willingly", "border, boundary", "to negotiate; here: to debate, redefine (a concept)", "ministry (government department)", "writer (f.)", "migration background (family history of immigration)", "origin", "closed (off)", "to settle in", "to need (here: to be needed)", "sharp edge", "to prevail", "to argue, fight"]
   }
 });
