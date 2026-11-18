@@ -29,7 +29,7 @@ LINGUAI.addStrings("fr", {
 
   "read:r-a2-arzt": {
     title: "Rendez-vous chez le médecin de famille",
-    gloss: ["le dos", "le cabinet (médical) ; pas « la pratique »", "la carte d'assurance maladie (l'équivalent de la carte Vitale)", "l'ordonnance (en cuisine, la recette ; le français « recette » ne veut jamais dire ordonnance)", "la pommade", "mettre en arrêt maladie"],
+    gloss: ["le dos", "le cabinet (médical) ; dans d'autres contextes, Praxis veut aussi dire « la pratique »", "la carte d'assurance maladie (l'équivalent de la carte Vitale)", "l'ordonnance (en cuisine, la recette ; le français « recette » ne veut jamais dire ordonnance)", "la pommade", "mettre en arrêt maladie"],
     lex: ["ordinateur", "faire mal", "appeler (au téléphone)", "rendez-vous", "emporter, prendre avec soi", "caisse d'assurance maladie", "médecin (femme)", "examiner (un patient)", "pause", "pharmacie", "expliquer", "pharmacienne", "appliquer (une crème, une pommade)", "mieux"]
   },
 
@@ -125,7 +125,7 @@ LINGUAI.addStrings("fr", {
 
   "read:r-c1-betriebsrat": {
     title: "Le conseil d'entreprise prend la parole",
-    gloss: ["soumettre à la discussion", "l'organisation du temps de travail", "le conseil d'entreprise (élu par le personnel ; la loi lui donne un droit de codécision bien plus fort que celui du CSE français, surtout consulté)", "soulever, aborder (un sujet)", "entrer en vigueur", "le droit de codécision (un droit légal de décider avec la direction)", "se référer à", "faire observer (comme objection)", "concilier", "l'accord d'entreprise (entre la direction et le conseil d'entreprise)", "tenir compte de (+ datif)", "admettre, concéder"],
+    gloss: ["soumettre à la discussion", "l'organisation du temps de travail", "le conseil d'entreprise (élu par le personnel ; la loi lui donne un droit de codécision bien plus fort que celui du CSE français, surtout consulté)", "soulever, aborder (un sujet)", "entrer en vigueur", "le droit de codécision (un droit légal de décider avec la direction)", "se référer à", "faire observer (comme objection)", "concilier", "l'accord d'entreprise (entre la direction et le conseil d'entreprise)", "tenir compte de (einer Sache Rechnung tragen : le complément allemand est au datif)", "admettre, concéder"],
     lex: ["de taille moyenne (dit d'une entreprise)", "construction mécanique", "entreprise", "Bielefeld", "direction (de l'entreprise)", "automne", "à l'avenir", "salariés", "poste, équipe (travail posté)", "planifier", "liberté", "accord, consentement", "loi sur l'organisation des entreprises (Betriebsverfassungsgesetz)", "revenir de droit (la personne est au datif : ihm steht ... zu, il a droit à ...)", "assemblée du personnel", "semblable", "entreprise, établissement", "pression", "augmenter", "parents", "horaires d'ouverture", "crèche", "négociation", "aboutir, voir le jour", "introduire, mettre en place", "obliger, contraindre", "au dernier moment, à court terme", "inscrire (un poste dans le planning)", "influence", "sous-estimer", "prendre goût à (an + datif)", "procédure"]
   },
 
