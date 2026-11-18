@@ -10,7 +10,7 @@ LINGUAI.addStrings("es", {
   "write:w-a2-gestern": {
     title: "¿Qué hiciste ayer?",
     brief: "Traduce las frases al alemán. No hace falta que coincidan palabra por palabra. Donde el español usa el pretérito indefinido (fui, comimos), el alemán hablado suele usar el Perfekt.",
-    checklist: ["¿Elegiste bien el auxiliar? gehen, ankommen y aufstehen van con sein; essen y verstehen, con haben. En español todos van con haber, así que esta es la elección que hay que vigilar.", "¿El participio está al final de la frase y no junto al auxiliar?", "¿Escribiste ich bin aufgestanden sin mich? Aufstehen no es reflexivo, aunque en español se diga me levanté."],
+    checklist: ["¿Elegiste bien el auxiliar? gehen, ankommen y aufstehen van con sein; essen y verstehen, con haben. En los tiempos compuestos del español (he ido, he comido) el auxiliar es siempre haber; en el Perfekt alemán hay que elegir entre haben y sein.", "¿El participio está al final de la frase y no junto al auxiliar?", "¿Escribiste ich bin aufgestanden sin mich? Aufstehen no es reflexivo, aunque en español se diga me levanté."],
     items: [{ q: "Ayer fui al cine." }, { q: "Comimos un escalope." }, { q: "No entendí la pregunta." }, { q: "El tren llegó tarde." }, { q: "Me levanté tarde." }]
   },
   "write:w-b1-absage": {
@@ -32,7 +32,7 @@ LINGUAI.addStrings("es", {
   "write:w-c1-zusammenfassung": {
     title: "Resumir sin copiar",
     brief: "Resume el texto «Se ruega prestar atención» de la sección Leer y escuchar. No copies sus frases: escribe qué sostiene el autor y en qué se basa, y refiere sus tesis en estilo indirecto.",
-    checklist: ["¿Referiste las tesis del autor con el Konjunktiv I (sei, nenne, gebe)? Este modo solo indica que la afirmación es del autor, sin añadir duda ni desacuerdo; el español confía esa tarea a palabras como según el autor.", "¿El resumen se entiende sin el texto original?", "¿Tu opinión quedó fuera, o ocupó el lugar de la del autor?"]
+    checklist: ["¿Referiste las tesis del autor con el Konjunktiv I (sei, nenne, gebe)? Aquí este modo sirve sobre todo para atribuir las tesis al autor; el español confía esa tarea a palabras como según el autor.", "¿El resumen se entiende sin el texto original?", "¿Tu opinión quedó fuera, o ocupó el lugar de la del autor?"]
   }
 
 });

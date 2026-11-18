@@ -11,7 +11,7 @@ LINGUAI.addStrings("fr", {
     title: "Qu'as-tu fait hier ?",
     brief: "Traduis les phrases en allemand. Pas besoin de coller au mot près.",
     checklist: ["As-tu choisi le bon auxiliaire ? gehen et ankommen prennent sein, comme aller et arriver prennent être ; essen et verstehen prennent haben.", "Le participe est-il en fin de phrase, loin de l'auxiliaire ?", "As-tu écrit ich bin aufgestanden sans mich ? Aufstehen n'est pas pronominal, même si l'on dit je me suis levé."],
-    items: [{ q: "Hier, je suis allé au cinéma." }, { q: "Nous avons mangé une escalope." }, { q: "Je n'ai pas compris la question." }, { q: "Le train est arrivé en retard." }, { q: "Je me suis levé tard." }]
+    items: [{ q: "Hier, je suis allé au cinéma." }, { q: "Nous avons mangé une escalope panée." }, { q: "Je n'ai pas compris la question." }, { q: "Le train est arrivé en retard." }, { q: "Je me suis levé tard." }]
   },
   "write:w-b1-absage": {
     title: "Annuler un rendez-vous",
@@ -26,12 +26,12 @@ LINGUAI.addStrings("fr", {
   },
   "write:w-b2-argumentieren": {
     title: "Défendre une position",
-    brief: "Choisis un sujet qui te tient à cœur, par exemple le télétravail, une limitation générale de vitesse sur les autoroutes allemandes ou l'ouverture des magasins le dimanche, et défends ta position. Présente au moins un argument contraire et réponds-y.",
+    brief: "Choisis un sujet qui te tient à cœur, par exemple le télétravail, une limitation générale de vitesse sur les autoroutes allemandes ou l'ouverture des magasins le dimanche, et défends ta position. Présente au moins un argument contraire et réponds-y. Utilise aussi les mots et les formes de la liste affichée au-dessus du champ de texte.",
     checklist: ["L'argument contraire est-il présenté honnêtement, et non comme un homme de paille ?", "Après außerdem, deshalb ou jedoch en début de phrase, le verbe vient-il tout de suite (Deshalb liegt das Problem ...) ? En français, après c'est pourquoi, le sujet reste devant le verbe.", "La conclusion est-elle une phrase et non un slogan ?"]
   },
   "write:w-c1-zusammenfassung": {
     title: "Résumer sans recopier",
-    brief: "Résume le texte « Prière d'en tenir compte » de la section Lire et écouter. Ne reprends pas ses phrases : écris ce que l'auteur affirme et sur quoi il s'appuie, et rapporte ses thèses au discours indirect.",
+    brief: "Résume le texte « Prière d'en tenir compte » de la section Lire et écouter. Ne reprends pas ses phrases : écris ce que l'auteur affirme et sur quoi il s'appuie, et rapporte ses thèses au discours indirect. Utilise aussi les mots et les formes de la liste affichée au-dessus du champ de texte.",
     checklist: ["As-tu rapporté les thèses de l'auteur au Konjunktiv I (sei, nenne, gebe) ? Ce mode indique seulement que l'affirmation vient de l'auteur, sans y ajouter de doute ; le français confie ce rôle à des mots comme selon l'auteur.", "Le résumé se comprend-il sans le texte original ?", "Ton opinion est-elle restée dehors, ou a-t-elle pris la place de celle de l'auteur ?"]
   }
 
