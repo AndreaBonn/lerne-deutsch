@@ -1,18 +1,7 @@
 {
-  "bundleHash": "60541d1f164516a9ca066aca030ca50999adb31cd3ec54896da66908021a262c",
-  "findings": [
-    {
-      "kind": "accuratezza culturale",
-      "msg": "La cauzione sulle bottiglie esisteva già prima del 2003; in quell'anno è stato introdotto il Pfand obbligatorio per molte confezioni monouso. Specificare «Seit das Pflichtpfand für viele Einweggetränkeverpackungen 2003 eingeführt wurde …» e precisare l'affermazione sulla riduzione dei rifiuti o ometterla se non documentata.",
-      "path": "neutral[1].sentences[6]"
-    },
-    {
-      "kind": "chiave di risposta",
-      "msg": "Il consiglio riguarda i nomi degli interlocutori, non tutti i nomi. Sostituire l'opzione corretta con «den Namen jedes Gesprächspartners zweimal zu überprüfen».",
-      "path": "neutral[7].questions[0].opts[0]"
-    }
-  ],
+  "bundleHash": "3991297b202f0ea11a174852faad4a062d12e4bbd02fabb34c782cf2f58c89ce",
+  "findings": [],
   "lang": "it",
   "unit": "readings-b",
-  "verdict": "fail"
+  "verdict": "pass"
 }
