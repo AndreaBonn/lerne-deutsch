@@ -1,1 +1,56 @@
-LINGUAI.addReadings([]);
+/* Neutral layer: the B2 library text. Long German text, same shape as a reading. */
+LINGUAI.addReadings([
+  {
+    id: "lib-b2-mundart",
+    cefr: "B2",
+    tag: "g-konditionalsatz",
+    titleIt: "Warum deine Kollegin nicht wie dein Lehrbuch spricht",
+    sentences: [
+      "Wer Deutsch mit einem Lehrbuch gelernt hat, kommt oft mit einer Sprache an, die zu Hause kaum jemand so spricht.",
+      "Das ist nicht die Schuld des Lehrbuchs, und es lohnt sich zu verstehen, warum.",
+      "Das Hochdeutsche ist über Jahrhunderte vor allem als Schriftsprache entstanden, nicht als Sprache einer bestimmten Stadt oder Region.",
+      "Gesprochen wurde lange Zeit fast überall Dialekt, und in manchen Gegenden ist das bis heute so geblieben.",
+      "Würden zwei ältere Menschen aus Flensburg und aus dem Berchtesgadener Land nur ihre Mundart sprechen, dann würden sie einander nur mit Mühe verstehen.",
+      "Nehmen wir an, du arbeitest seit ein paar Monaten in einem Betrieb in Regensburg.",
+      "Am ersten Tag sagt der Chef „Servus“ zu dir, obwohl du im Kurs gelernt hast, dass man den Chef mit „Guten Tag“ begrüßt.",
+      "Eine Kollegin fragt dich in der Kantine, ob du heuer schon im Urlaub warst, und du kennst das Wort nicht.",
+      "Beim Bäcker verlangen alle Semmeln, und das Wort „Brötchen“, das du so fleißig gelernt hast, hörst du nie.",
+      "Und wenn ein Kollege sagt: „Ich bin gestern lange im Biergarten gesessen“, dann macht er keinen Fehler.",
+      "Im Süden des deutschen Sprachraums bildet man das Perfekt von „sitzen“, „stehen“ und „liegen“ mit „sein“, und dort ist das auch korrekt.",
+      "Ziehst du später nach Österreich, heißt der erste Monat des Jahres auf manchem Formular plötzlich „Jänner“.",
+      "Besonders deutlich ist das alles in der Deutschschweiz: Dort spricht man im Alltag fast immer Schweizerdeutsch, auch im Büro, schreibt aber in der Regel Hochdeutsch.",
+      "Spätestens an dieser Stelle verlieren viele Lernende den Mut, und genau hier möchte ich kurz innehalten.",
+      "Die Entmutigung beruht auf einer falschen Vorstellung, nämlich dass es nur eine richtige Version der Sprache gibt und alles andere ein Fehler ist.",
+      "Wenn das wirklich so wäre, dann würde ein großer Teil der Menschen in Bayern, Österreich und der Schweiz falsches Deutsch sprechen.",
+      "Das würde aber wohl niemand ernsthaft behaupten.",
+      "Was es tatsächlich gibt, ist eine Standardsprache, die man in einem Brief an eine Behörde, in einer Bewerbung oder in den Nachrichten verwendet.",
+      "Daneben gibt es eine Umgangssprache, die sich von Region zu Region ändert und ihre eigenen, ganz regelmäßigen Regeln hat.",
+      "Man braucht beides, aber in verschiedenen Situationen.",
+      "Dein Lehrbuch hat dir die Standardsprache gegeben, und das war die richtige Entscheidung.",
+      "Von der Standardsprache aus kann man leicht in die Umgangssprache hinuntersteigen, während der umgekehrte Weg viel schwieriger ist.",
+      "Wer zuerst nur die Sprache eines Stadtviertels lernt und dann eine E-Mail an das Finanzamt schreiben muss, steht ohne Werkzeug da.",
+      "Wer dagegen zuerst die Standardsprache lernt, versteht in der Kantine ein paar Monate lang wenig, doch dann fallen ihm allmählich die Regelmäßigkeiten auf.",
+      "Denn es gibt sie, und es sind Regeln, kein Chaos.",
+      "Ein praktischer Rat ist allerdings mehr wert als diese ganze Erklärung.",
+      "Nimm die Gegend, in der du lebst, und lerne bewusst zwanzig Ausdrücke, die man dort benutzt.",
+      "Du musst sie nicht sofort selbst verwenden, aber du solltest sie erkennen, wenn sie dir begegnen.",
+      "Ob du denkst „Ich verstehe diese Sprache nicht“ oder „Ich kenne diesen Ausdruck, benutze ihn aber nicht“, macht einen riesigen Unterschied.",
+      "Und dieser Unterschied ist fast ganz psychologisch.",
+      "Hätte ich das in meinem ersten Jahr gewusst, hätte ich mir viele schlechte Abende erspart.",
+      "Wenn dir jemand sagt, dein Deutsch klinge wie aus dem Buch, dann nimm das als halbes Kompliment.",
+      "Es bedeutet, dass du den Teil beherrschst, den man nur durch Lernen bekommt.",
+      "Dir fehlt nur der Teil, den man durch das Dableiben bekommt.",
+      "Der kommt von allein, wenn du bleibst."
+    ],
+    glossIt: ["die Schriftsprache", "die Mundart", "heuer", "die Semmel", "die Standardsprache", "die Umgangssprache", "die Entmutigung", "die Regelmäßigkeit"],
+    lexIt: ["Lehrbuch", "Schuld", "sich lohnen", "entstehen", "Gegend", "Mühe", "Betrieb", "begrüßen", "Kantine", "verlangen", "innehalten", "beruhen auf", "Vorstellung", "behaupten", "Bewerbung", "hinuntersteigen", "Werkzeug", "allmählich", "auffallen", "bewusst", "begegnen", "ersparen", "beherrschen"],
+    questions: [
+      { t: "mcq", q: "Wie ist das Hochdeutsche laut Text vor allem entstanden?", opts: ["Als Dialekt einer bestimmten Stadt", "Als Schriftsprache", "Als Sprache des Fernsehens"], a: 1 },
+      { t: "truefalse", q: "Der Satz „Ich bin im Biergarten gesessen“ ist laut Text im Süden ein Fehler.", a: 1 },
+      { t: "mcq", q: "Was ist in der Deutschschweiz laut Text üblich?", opts: ["Man spricht im Alltag Schweizerdeutsch und schreibt meist Hochdeutsch.", "Man spricht und schreibt nur Hochdeutsch.", "Man schreibt Schweizerdeutsch und spricht Hochdeutsch."], a: 0 },
+      { t: "mcq", q: "Warum war es laut Text richtig, zuerst die Standardsprache zu lernen?", opts: ["Weil sie eleganter klingt", "Weil man von ihr leicht zur Umgangssprache kommt, der umgekehrte Weg aber schwieriger ist", "Weil man in der Kantine nur Standardsprache spricht"], a: 1 },
+      { t: "truefalse", q: "Der Text rät, zwanzig regionale Ausdrücke zu lernen, um sie sofort selbst zu benutzen.", a: 1 },
+      { t: "mcq", q: "Was ist der Satz „Dein Deutsch klingt wie aus dem Buch“ laut Text?", opts: ["Eine Kritik, die man zurückweisen sollte", "Ein halbes Kompliment", "Ein Zeichen für Grammatikfehler"], a: 1 }
+    ]
+  }
+]);
