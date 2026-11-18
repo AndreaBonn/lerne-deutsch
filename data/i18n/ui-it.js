@@ -545,7 +545,7 @@ LINGUAI.addUI("it", {
   "prog.accuracy": "risposte corrette",
   "prog.points": "punti",
   "prog.lastTwoWeeks": "Le ultime due settimane",
-  "prog.answers": "{n} risposte",
+  "prog.answers": { one: "{n} risposta", other: "{n} risposte" },
   "prog.levels": "Livelli",
   "prog.ofLessons": "{done} lezioni su {total}",
   "set.kicker": "CONFIGURAZIONE",

@@ -12,7 +12,7 @@ import { loadEngine, CORE } from "./_harness.mjs";
 
 function engine(lang) {
   const box = loadEngine({
-    files: [...CORE, "assets/js/i18n.js", "data/i18n/ui-pl.js", "data/i18n/ui-es.js"]
+    files: [...CORE, "assets/js/i18n.js", "data/i18n/ui-it.js", "data/i18n/ui-en.js", "data/i18n/ui-fr.js", "data/i18n/ui-pl.js", "data/i18n/ui-es.js"]
   });
   box.Core.load();
   box.sandbox.I18n.set(lang);
@@ -54,4 +54,17 @@ describe("Spanish counted strings", () => {
     assert.match(I18n.t("srs.allResting", { n: 2 }), /^Las 2 tarjetas están descansando\./);
     assert.match(I18n.t("srs.allResting", { n: 5 }), /^Las 5 tarjetas están descansando\./);
   });
+});
+
+describe("Progress screen counted strings", () => {
+  // a bar with one answer read "1 risposte" in every language except Polish
+  const ONE = { it: "1 risposta", en: "1 answer", es: "1 respuesta", fr: "1 réponse" };
+  const TWO = { it: "2 risposte", en: "2 answers", es: "2 respuestas", fr: "2 réponses" };
+  for (const lang of Object.keys(ONE)) {
+    test(`prog.answers agrees with the number in ${lang}`, () => {
+      const I18n = engine(lang);
+      assert.equal(I18n.t("prog.answers", { n: 1 }), ONE[lang]);
+      assert.equal(I18n.t("prog.answers", { n: 2 }), TWO[lang]);
+    });
+  }
 });

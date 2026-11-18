@@ -612,7 +612,7 @@ LINGUAI.addUI("en", {
   "prog.accuracy": "answer accuracy",
   "prog.points": "points",
   "prog.lastTwoWeeks": "The last two weeks",
-  "prog.answers": "{n} answers",
+  "prog.answers": { one: "{n} answer", other: "{n} answers" },
   "prog.levels": "Levels",
   "prog.ofLessons": "{done} of {total} lessons",
 
