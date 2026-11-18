@@ -222,6 +222,11 @@ Sklejenie wymaga składni zdania, nie wyszukiwania słowa. Formy rzeczowników z
 literę, bo lista frekwencyjna ją zachowuje.
 To jest podział na KANDYDATÓW i WERDYKT: reguła formy jest czystą
 funkcją napisu, werdykt wymaga zbudowanego słownika całego kursu.
+`Lemma.resolve` woła wyłącznie karta słowa w czytance, i tam forma z indeksu koniugatora, której
+bezokolicznika słownik kursu nie zna, i tak dostaje bezokolicznik („sitzt" → `sitzen`, pole
+znaczenia puste). Ekran pokrycia tego nie dziedziczy: „znane" liczy własną funkcją
+(`hasloKursu` w `frequency.js`) i znaczy „przerobione na lekcji". Rzeczowniki takiego zejścia
+nie mają, bo ich kandydaci to zgadywana liczba mnoga, a nie indeks.
 
 Kryterium podziału jest wszędzie to samo i nie jest nim długość pliku: **czysta funkcja
 osobno od tego, co dotyka przeglądarki**. Pierwsza połowa daje się sprawdzić w `node:test`

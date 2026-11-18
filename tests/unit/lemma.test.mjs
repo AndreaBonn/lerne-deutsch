@@ -53,13 +53,28 @@ test("course-only verbs from vocabulary and readings enter the index after refre
   assert.deepEqual(Array.from(L.resolve("werkelst")), ["werkeln"]);
 });
 
-test("COMMON forms remain available as candidates without a dictionary verdict", () => {
+/* resolve() answers the tapped word in a reading, and nothing else calls it:
+   the coverage screen decides "studied" with its own check on the course
+   dictionary (frequency.js, hasloKursu). A verb the conjugator knows is
+   therefore a lemma for the lookup even when no lesson lists it, so "ist" or
+   "wohnt" open a card on sein/wohnen instead of "unknown word" (Q-L1 A).
+   Nouns get no such fallback: the plural rules are a guess, the conjugator
+   index is not. */
+test("a conjugator form resolves to its infinitive, a noun guess does not", () => {
   const { Lemma: L } = engine();
   assert.ok(L.kandydaci("getrunken").includes("trinken"));
   assert.equal(L.lemat("getrunken"), "trinken");
-  assert.deepEqual(Array.from(L.resolve("getrunken")), []);
+  assert.deepEqual(Array.from(L.resolve("getrunken")), ["trinken"]);
+  assert.deepEqual(Array.from(L.resolve("ist")), ["sein"]);
   assert.ok(L.kandydaci("Häuser").includes("haus"));
   assert.deepEqual(Array.from(L.resolve("Häuser")), []);
+  assert.deepEqual(Array.from(L.resolve("Zentren")), []);
+});
+
+test("a course entry still wins over the conjugator fallback", () => {
+  const { Lemma: L } = engine(["der Hund"]);
+  assert.deepEqual(Array.from(L.resolve("Hunde")), ["Hund"]);
+  assert.deepEqual(Array.from(L.resolve("bin")), ["sein"]);
 });
 
 test("function words and numerals resolve independently of the dictionary", () => {
@@ -91,8 +106,10 @@ test("articles are stripped from nominal entries shared by course and deck", () 
 
 test("compound auxiliaries and detached particles do not create false verb matches", () => {
   const { Lemma: L } = engine(["gehen", "aufstehen"]);
-  assert.deepEqual(Array.from(L.resolve("bin")), []);
-  assert.deepEqual(Array.from(L.resolve("stehe")), []);
+  /* The auxiliary of "bin gegangen" is sein, never gehen; a detached "stehe"
+     is stehen, never aufstehen (gluing the particle back needs the sentence). */
+  assert.deepEqual(Array.from(L.resolve("bin")), ["sein"]);
+  assert.deepEqual(Array.from(L.resolve("stehe")), ["stehen"]);
   assert.deepEqual(Array.from(L.resolve("stehe heute früh auf")), []);
   assert.deepEqual(Array.from(L.resolve("aufgestanden")), ["aufstehen"]);
   assert.deepEqual(Array.from(L.resolve("gegangen")), ["gehen"]);
@@ -111,7 +128,10 @@ test("dictionary predicates and explicitly added infinitives retain their API", 
   assert.deepEqual(Array.from(L.resolve("tüftelst")), ["tüfteln"]);
   assert.deepEqual(Array.from(L.resolve("xyzzy")), []);
   L.uzyjSlownika(null);
-  assert.deepEqual(Array.from(L.resolve("tüftelst")), []);
+  /* Without the predicate the course does not list it, but the verb was added
+     to the conjugator index, so the lookup still finds its infinitive. */
+  assert.deepEqual(Array.from(L.resolve("tüftelst")), ["tüfteln"]);
+  assert.deepEqual(Array.from(L.resolve("xyzzy")), []);
 });
 
 test("the lazy index stays within the lookup budget and is stable across calls", () => {

@@ -124,6 +124,15 @@
       var entry = known ? candidate : canonical[candidate] || candidate;
       if (out.indexOf(entry) < 0) out.push(entry);
     });
+    /* Only the reading lookup calls resolve(): the coverage screen has its
+       own "studied" check. A form the conjugator generated is a certain
+       lemma even when no lesson lists the verb, so "ist" opens a card on
+       "sein" instead of "unknown word". Nouns get no such fallback: their
+       candidates are plural guesses, not an index. */
+    if (!out.length) {
+      var infinitive = (buildIndex()[key] || [])[0];
+      if (infinitive) out.push(infinitive);
+    }
     return out;
   }
 
