@@ -65,7 +65,7 @@ LINGUAI.addStrings("it", {
 
   "read:r-b1-ausbildung": {
     title: "Meglio l'officina",
-    gloss: ["la maturità (esame di fine liceo)", "la formazione professionale (apprendistato)", "l'officina", "la meccatronica d'auto (donna)", "l'azienda", "la scuola professionale", "la fase di lavoro", "la materia (da studiare)"],
+    gloss: ["la maturità (esame di fine liceo)", "la formazione professionale (apprendistato)", "l'officina", "la tecnica meccatronica di autoveicoli (professione, donna)", "l'azienda", "la scuola professionale", "la fase di lavoro", "la materia (da studiare)"],
     lex: ["studiare (all'università)", "esperienza", "raccogliere", "tirocinio", "Stoccarda", "accorgersi", "mano", "divertimento", "settimana", "capo", "errore", "ripassare", "esame", "superare (un esame)", "genitori", "desiderare", "guadagnare", "risparmiare", "aprire (un'attività)"]
   },
 
@@ -95,7 +95,7 @@ LINGUAI.addStrings("it", {
 
   "read:r-b2-redaktion": {
     title: "Il nuovo tirocinante",
-    gloss: ["il quotidiano", "la redazione", "il tirocinante", "la caporedattrice", "l'interlocutore", "la valanga", "il registratore", "il caporedattore di turno", "lamentarsi", "proprio (quello)"],
+    gloss: ["il quotidiano", "la redazione", "il tirocinante", "la caporedattrice", "l'interlocutore", "la valanga", "il registratore", "il responsabile di redazione di turno", "lamentarsi", "proprio (quello)"],
     lex: ["tirocinio", "Innsbruck", "giovane", "presentare", "collega", "consiglio", "esperto", "giornalista", "consigliare", "nome", "verificare", "esperto (specialista)", "intervistare", "università", "fare ricerca", "dimenticare", "colloquio", "accendere", "contenuto", "appunto", "ricostruire", "stampare", "pagina", "lettore", "cognome", "sbagliato", "rosso"]
   }
 });
