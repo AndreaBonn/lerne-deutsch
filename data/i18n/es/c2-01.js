@@ -503,7 +503,7 @@ LINGUAI.addStrings("es", {
         contrast: "Al hispanohablante <em>die Bank</em> le tiende una trampa doble: <em>banco</em> también significa a la vez la entidad financiera y el asiento, pero en español su plural es siempre <em>bancos</em>. El alemán comparte el doble sentido y, sin embargo, obliga a elegir entre <em>Banken</em> y <em>Bänke</em>, y nada en tu lengua te avisa. El español casi no tiene plurales dobles de este tipo; lo más parecido son plurales que se alejan del singular (<em>el bien</em> y <em>los bienes</em>, <em>el resto</em> y <em>los restos</em>). Con los plurales sustitutivos pasa lo contrario: en español <em>consejos</em>, <em>lluvias</em>, <em>nevadas</em> y <em>disputas</em> son plurales normales, mientras que el alemán necesita un compuesto o un derivado: <em>Ratschläge, Regenfälle, Schneefälle, Streitigkeiten</em>."
       },
       {
-        trap: "El diccionario contiene <em>Wörter</em>, nunca <em>Worte</em>; un discurso conmovedor está hecho de <em>Worte</em>. El español dice <em>palabras</em> en los dos casos (<em>en otras palabras</em>, <em>un diccionario de cien mil palabras</em>), así que el oído no te ayuda. El criterio no es el número (también <em>ein paar Worte</em> se cuentan), sino el punto de vista: unidad del léxico, <em>Wörter</em>; enunciado, lo que alguien dice, <em>Worte</em>. Y cuidado con la diéresis, que aquí distingue el significado: <em>Muttern</em> son tuercas, <em>Mütter</em> son madres; <em>Bänke</em> son bancos para sentarse, <em>Banken</em> entidades de crédito."
+        trap: "El diccionario contiene <em>Wörter</em>, nunca <em>Worte</em>; un discurso conmovedor está hecho de <em>Worte</em>. El español dice <em>palabras</em> en los dos casos (<em>en otras palabras</em>, <em>un diccionario de cien mil palabras</em>), así que el oído no te ayuda. El criterio no es el número (también <em>ein paar Worte</em> se cuentan), sino el punto de vista: unidad del léxico, <em>Wörter</em>; enunciado, lo que alguien dice, <em>Worte</em>. Y cuidado con la diéresis y la terminación, que aquí distinguen el significado: <em>Muttern</em> (sin diéresis, con <em>-n</em>) son tuercas, <em>Mütter</em> son madres; <em>Bänke</em> son bancos para sentarse, <em>Banken</em> entidades de crédito."
       },
       {
         tip: "Aprende el plural junto con el significado, no como una forma suelta. Los diccionarios monolingües (el Duden, por ejemplo) dan los dos plurales, cada uno con su definición: ahí es donde conviene comprobarlo."
@@ -526,7 +526,7 @@ LINGUAI.addStrings("es", {
       examples: [
         { tr: "Los bancos han vuelto a subir los tipos de interés.", note: "Banken: entidades de crédito" },
         { tr: "Delante del ayuntamiento se han colocado bancos nuevos.", note: "Bänke: bancos para sentarse, con diéresis" },
-        { tr: "Con pocas palabras dio en el clavo del problema.", note: "Worte: palabras como expresión, no como vocablos" },
+        { tr: "Con pocas palabras planteó el problema con toda precisión.", note: "Worte: palabras como expresión, no como vocablos" },
         { tr: "El diccionario registra más de cien mil palabras.", note: "Wörter: palabras como unidades del léxico" },
         { tr: "Aceptó agradecida los consejos de sus colegas.", note: "Ratschläge: plural sustitutivo de der Rat" },
         { tr: "Tras las fuertes lluvias el río se desbordó.", note: "Regenfälle: plural sustitutivo de der Regen" }
@@ -585,7 +585,7 @@ LINGUAI.addStrings("es", {
         why: "<b>Muttern</b> (o <b>Schraubenmuttern</b>): la tuerca hace el plural en <i>-n</i>, sin diéresis. <i>Mütter</i> son las madres."
       },
       {
-        q: "Completa con dos plurales sustitutivos: en el primer hueco el plural de «der Regen», en el segundo el de «der Rat» (consejo).",
+        q: "Completa con dos plurales sustitutivos: en el primer hueco el que sustituye a «der Regen», en el segundo el que sustituye a «der Rat» (consejo).",
         tr: "Las fuertes lluvias de las últimas semanas han arruinado la cosecha; ahora los agricultores reciben consejos bienintencionados por todas partes.",
         why: "<i>Regen</i> no tiene un plural de uso: se dice <b>Regenfälle</b>. <i>Niederschläge</i> sería más amplio, porque incluye también la nieve y el granizo. Para los consejos hace falta <b>Ratschläge</b>. Ambos sin <i>-n</i>: el primero es un nominativo plural, el segundo un acusativo plural."
       },
@@ -763,7 +763,7 @@ LINGUAI.addStrings("es", {
         p: "También en las palabras extranjeras el sufijo orienta el género: <em>-ion, -ität, -ur, -ie</em> son por lo general femeninos (<em>die Nation, die Qualität, die Kultur, die Demokratie</em>); <em>-ismus</em> es masculino (<em>der Realismus</em>); <em>-ment</em> es casi siempre neutro (<em>das Dokument, das Argument</em>). Muchos verbos en <em>-ieren</em> forman sustantivos en <em>-ierung</em> (<em>digitalisieren</em> → <em>die Digitalisierung</em>), pero no todos: <em>studieren</em> da <em>das Studium</em>."
       },
       {
-        contrast: "Para un hispanohablante muchos Fremdwörter son transparentes: <em>-idad</em> corresponde a <em>-ität</em> (<em>universidad, Universität</em>), <em>-ción</em> a <em>-tion</em> (<em>nación, Nation</em>), <em>-ismo</em> a <em>-ismus</em>, y el género a menudo coincide (<em>la nación, die Nation</em>; <em>el realismo, der Realismus</em>). Pero no se puede copiar sin más: <em>el problema</em> es <em>das Problem</em>, <em>el sistema</em> <em>das System</em>, <em>el documento</em> <em>das Dokument</em>, y el neutro no existe en tu lengua. Y hay falsos amigos: <em>die Firma</em> es la empresa, no la firma (<em>die Unterschrift</em>); <em>der Konkurs</em> es la quiebra, no el concurso."
+        contrast: "Para un hispanohablante muchos Fremdwörter son transparentes: <em>-idad</em> corresponde a <em>-ität</em> (<em>universidad, Universität</em>), <em>-ción</em> a <em>-tion</em> (<em>nación, Nation</em>), <em>-ismo</em> a <em>-ismus</em>, y el género a menudo coincide (<em>la nación, die Nation</em>; <em>el realismo, der Realismus</em>). Pero no se puede copiar sin más: <em>el problema</em> es <em>das Problem</em>, <em>el sistema</em> <em>das System</em>, <em>el documento</em> <em>das Dokument</em>, y en español los sustantivos no tienen género neutro. Y hay falsos amigos: <em>die Firma</em> es la empresa, no la firma (<em>die Unterschrift</em>); <em>der Konkurs</em> es la quiebra, no el concurso."
       },
       {
         trap: "<em>ver-</em> no indica siempre un error: <em>verkaufen</em> es vender, <em>verschreiben</em> sin reflexivo es recetar (<em>ein Medikament verschreiben</em>), y <em>sich einer Sache verschreiben</em> significa entregarse a algo. Y <em>verreißen</em> no es <em>zerreißen</em>: un crítico <em>verreißt</em> un libro, es decir, lo despedaza en su reseña, no lo rompe."

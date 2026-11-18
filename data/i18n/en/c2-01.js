@@ -503,7 +503,7 @@ LINGUAI.addStrings("en", {
         contrast: "English has a few double plurals of its own: <em>brothers</em> and <em>brethren</em>, <em>indexes</em> of books and <em>indices</em> in math, <em>cloths</em> and <em>clothes</em>. The German pairs are different ones, though, and for you a bank and a bench are two separate words, so nothing in English warns you that German makes you choose between <em>Banken</em> and <em>Bänke</em>. The substitute plurals, on the other hand, will feel familiar: English does not pluralize <em>advice</em> either and says <em>pieces of advice</em> or <em>tips</em>, and it gets around <em>rain</em> with <em>rainfall</em>. German solves the same problem with a compound: <em>Ratschläge, Regenfälle</em>."
       },
       {
-        trap: "A dictionary contains <em>Wörter</em>, never <em>Worte</em>; a moving speech is made of <em>Worte</em>. English <em>words</em> covers both, so your ear gives you no help here. The criterion is not number (even <em>ein paar Worte</em> can be counted) but point of view: units of vocabulary, <em>Wörter</em>; an utterance, what someone says, <em>Worte</em>. And watch the umlaut, which here changes the meaning: <em>Muttern</em> are nuts, <em>Mütter</em> are mothers; <em>Bänke</em> are benches, <em>Banken</em> are financial institutions."
+        trap: "A dictionary contains <em>Wörter</em>, never <em>Worte</em>; a moving speech is made of <em>Worte</em>. English <em>words</em> covers both, so your ear gives you no help here. The criterion is not number (even <em>ein paar Worte</em> can be counted) but point of view: units of vocabulary, <em>Wörter</em>; an utterance, what someone says, <em>Worte</em>. And watch the umlaut and the ending, which here change the meaning: <em>Muttern</em> (no umlaut, ending <em>-n</em>) are nuts, <em>Mütter</em> are mothers; <em>Bänke</em> are benches, <em>Banken</em> are financial institutions."
       },
       {
         tip: "Learn the plural together with the meaning, not as a form on its own. Monolingual dictionaries (the Duden, for example) give the two plurals each with its own definition: that is the place to check."
@@ -585,7 +585,7 @@ LINGUAI.addStrings("en", {
         why: "<b>Muttern</b> (or <b>Schraubenmuttern</b>): the nut forms its plural with <i>-n</i>, without an umlaut. <i>Mütter</i> are mothers."
       },
       {
-        q: "Complete with two substitute plurals: the plural of «der Regen» in the first gap, the plural of «der Rat» (advice) in the second.",
+        q: "Complete with two substitute plurals: the one that stands in for «der Regen» in the first gap, the one that stands in for «der Rat» (advice) in the second.",
         tr: "The heavy rains of the past few weeks have destroyed the harvest; now the farmers are getting well-meant advice from all sides.",
         why: "<i>Regen</i> has no plural in normal use: German says <b>Regenfälle</b>. <i>Niederschläge</i> would be broader, since it includes snow and hail. For the advice you need <b>Ratschläge</b>. Neither takes <i>-n</i>: the first is a nominative plural, the second an accusative plural."
       },

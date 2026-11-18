@@ -503,7 +503,7 @@ LINGUAI.addStrings("pl", {
         contrast: "Polszczyzna zna ten mechanizm z własnego podwórka: <em>oczy</em> to narząd wzroku, a <em>oka</em> to oczka sieci albo tłuszczu na rosole; <em>uszy</em> słyszą, a <em>ucha</em> ma garnek. Niemieckie pary są jednak inne i nie pokrywają się z polskimi: <em>bank</em> i <em>ławka</em> to dla Ciebie dwa różne słowa, więc nic nie podpowiada, że po niemiecku trzeba wybierać między <em>Banken</em> a <em>Bänke</em>. Z <em>Rat</em> jest odwrotnie: polska <em>rada</em> też znaczy i poradę, i gremium, ale w obu znaczeniach ma zwykłą liczbę mnogą <em>rady</em>, a niemiecki rozdziela <em>Ratschläge</em> i <em>Räte</em>. Za to <em>Regenfälle</em> brzmi znajomo: polskie <em>opady deszczu</em> robią to samo, co niemieckie złożenie."
       },
       {
-        trap: "Słownik zawiera <em>Wörter</em>, nigdy <em>Worte</em>; wzruszające przemówienie składa się z <em>Worte</em>. Polszczyzna częściowo pomaga: <em>Wörter</em> to mniej więcej <em>wyrazy</em>, a <em>Worte</em> to <em>słowa</em> w sensie wypowiedzi (<em>w kilku słowach</em>, <em>słowa podziękowania</em>). Ale po polsku słownik też „zawiera sto tysięcy słów”, więc ta para nie jest bezpiecznym drogowskazem. Kryterium nie jest liczba (<em>ein paar Worte</em> też da się policzyć), tylko punkt widzenia: jednostka słownika, <em>Wörter</em>; wypowiedź, to, co ktoś mówi, <em>Worte</em>. I uwaga na umlaut, który tu rozróżnia znaczenie: <em>Muttern</em> to nakrętki, <em>Mütter</em> to matki; <em>Bänke</em> to ławki, <em>Banken</em> to instytucje kredytowe."
+        trap: "Słownik zawiera <em>Wörter</em>, nigdy <em>Worte</em>; wzruszające przemówienie składa się z <em>Worte</em>. Polszczyzna częściowo pomaga: <em>Wörter</em> to mniej więcej <em>wyrazy</em>, a <em>Worte</em> to <em>słowa</em> w sensie wypowiedzi (<em>w kilku słowach</em>, <em>słowa podziękowania</em>). Ale po polsku słownik też „zawiera sto tysięcy słów”, więc ta para nie jest bezpiecznym drogowskazem. Kryterium nie jest liczba (<em>ein paar Worte</em> też da się policzyć), tylko punkt widzenia: jednostka słownika, <em>Wörter</em>; wypowiedź, to, co ktoś mówi, <em>Worte</em>. I uwaga na umlaut i końcówkę, które tu rozróżniają znaczenie: <em>Muttern</em> (bez umlautu, z <em>-n</em>) to nakrętki, <em>Mütter</em> to matki; <em>Bänke</em> to ławki, <em>Banken</em> to instytucje kredytowe."
       },
       {
         tip: "Ucz się liczby mnogiej razem ze znaczeniem, nie jako osobnej formy. Słowniki jednojęzyczne (na przykład Duden) podają obie formy, każdą z własną definicją: tam warto sprawdzać."
@@ -585,7 +585,7 @@ LINGUAI.addStrings("pl", {
         why: "<b>Muttern</b> (albo <b>Schraubenmuttern</b>): nakrętka tworzy liczbę mnogą na <i>-n</i>, bez umlautu. <i>Mütter</i> to matki."
       },
       {
-        q: "Uzupełnij dwiema formami zastępczej liczby mnogiej: w pierwszej luce liczbę mnogą od „der Regen”, w drugiej od „der Rat” (porada).",
+        q: "Uzupełnij dwiema formami zastępczej liczby mnogiej: w pierwszej luce formę zastępującą „der Regen”, w drugiej formę zastępującą „der Rat” (porada).",
         tr: "Ulewne deszcze ostatnich tygodni zniszczyły zbiory; teraz rolnicy dostają ze wszystkich stron życzliwe rady.",
         why: "<i>Regen</i> nie ma liczby mnogiej w zwykłym użyciu: mówi się <b>Regenfälle</b>. <i>Niederschläge</i> byłoby szersze, bo obejmuje też śnieg i grad. Dla porad potrzebne jest <b>Ratschläge</b>. Obie formy bez <i>-n</i>: pierwsza to mianownik liczby mnogiej, druga biernik liczby mnogiej."
       },
