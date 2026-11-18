@@ -640,7 +640,7 @@ LINGUAI.addUnits("C2", [
           {
             t: "cloze",
             text: "Die {{1}}, auf der die gesamte Studie beruht, hat sich als falsch erwiesen; die Ergebnisse sind damit {{2}}.",
-            gaps: [["Prämisse", "Annahme", "Grundannahme", "Voraussetzung"], ["hinfällig", "gegenstandslos", "ungültig"]]
+            gaps: [["Prämisse", "Annahme", "Grundannahme", "Voraussetzung"], ["hinfällig", "ungültig"]]
           },
           {
             t: "match",
