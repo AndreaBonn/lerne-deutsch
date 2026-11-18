@@ -34,7 +34,7 @@ LINGUAI.addStrings("es", {
         trap: "El participio de una pasiva en Perfekt no lleva <em>worden</em>: <em>die Daten, die erhoben worden sind</em> se convierte en <em>die erhobenen Daten</em>, nunca en <em>die erhoben wordenen Daten</em>. Y no confundas los dos participios: <em>die steigenden Kosten</em> siguen subiendo, <em>die gestiegenen Kosten</em> ya han subido."
       },
       {
-        tip: "Para traducir al español, deshaz el atributo en una oración de relativo o en un participio pospuesto. Para escribir en alemán, parte de la relativa: quita el pronombre relativo, convierte el verbo en participio, declínalo y colócalo justo antes del sustantivo."
+        tip: "Para traducir al español, deshaz el atributo en una oración de relativo o en un participio pospuesto. Para escribir en alemán, parte de una relativa en presente o en pasado sin verbo modal (con <em>müssen</em> hace falta el Gerundivum de la lección 2): quita el pronombre relativo, convierte el verbo en participio, declínalo y colócalo justo antes del sustantivo."
       }
     ],
     grammar: {
@@ -162,7 +162,7 @@ LINGUAI.addStrings("es", {
         p: "El valor se deduce del contexto, como con <em>sein + zu</em>. En las normas y los formularios predomina la obligación: <em>die einzureichenden Unterlagen</em>, los documentos que hay que presentar. Con una negación, el valor depende del verbo: <em>ein nicht zu unterschätzendes Risiko</em> es una advertencia, un riesgo que no se debe subestimar; <em>eine nicht zu lösende Aufgabe</em> expresa una imposibilidad, una tarea que no se puede resolver. Con <em>kaum</em> predomina la posibilidad: <em>eine kaum zu beziffernde Zahl</em>, una cifra difícilmente cuantificable. Con <em>erwarten</em> es una previsión: <em>die zu erwartenden Kosten</em>, los costes previsibles."
       },
       {
-        contrast: "El español tiene un equivalente cercano en <em>por</em> + infinitivo: <em>la tarea por resolver, las cuestiones pendientes por aclarar</em>; también se oye <em>a</em> + infinitivo (<em>los documentos a presentar</em>), que la norma culta desaconseja y prefiere sustituir por <em>que hay que presentar</em>. La diferencia está en la posición y en la forma: en español todo va detrás del sustantivo y el infinitivo no cambia; en alemán todo va delante del sustantivo y el verbo se convierte en un participio de presente con la terminación del adjetivo: <em>die zu lösende Aufgabe</em>, <em>bei der zu lösenden Aufgabe</em>."
+        contrast: "El español tiene un equivalente cercano en <em>por</em> + infinitivo: <em>la tarea por resolver, las cuestiones pendientes por aclarar</em>; también se oye <em>a</em> + infinitivo (<em>los documentos a presentar</em>), que se admite en algunos contextos fijos (<em>cantidad a pagar</em>) pero en muchos otros resulta forzado; la alternativa segura es <em>que hay que presentar</em>. La diferencia está en la posición y en la forma: en español todo va detrás del sustantivo y el infinitivo no cambia; en alemán todo va delante del sustantivo y el verbo se convierte en un participio de presente con la terminación del adjetivo: <em>die zu lösende Aufgabe</em>, <em>bei der zu lösenden Aufgabe</em>."
       },
       {
         trap: "No confundas <em>die zu prüfenden Anträge</em> (las solicitudes que hay que examinar, todavía pendientes) con <em>die geprüften Anträge</em> (las solicitudes ya examinadas). Y con los verbos separables <em>zu</em> se mete entre la partícula y el verbo, en una sola palabra: <em>einzureichenden, vorzunehmenden, abzugebenden</em>, no <em>zu einreichenden</em>."
@@ -328,7 +328,7 @@ LINGUAI.addStrings("es", {
       "tomar en consideración",
       "ser tenido en cuenta",
       "recibir críticas",
-      "negar, rebatir",
+      "negar, rechazar",
       "estar en discusión",
       "la toma de posición, el dictamen",
       "la costumbre, el uso"
