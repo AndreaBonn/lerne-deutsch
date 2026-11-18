@@ -1,1 +1,56 @@
-LINGUAI.addReadings([]);
+/* Neutral layer: the C1 library text. Long German text, same shape as a reading. */
+LINGUAI.addReadings([
+  {
+    id: "lib-c1-amt",
+    cefr: "C1",
+    tag: "g-konjunktiv1",
+    titleIt: "Lob der Umständlichkeit, mit Vorbehalt",
+    sentences: [
+      "Wer aus Südeuropa nach Deutschland zieht, verbringt die ersten beiden Jahre damit, über die Ämter zu klagen, und hat damit in vielem recht.",
+      "Bleibt man jedoch, bemerkt man allmählich, dass sich hinter dem Sammelbegriff „Bürokratie“ zweierlei verbirgt und dass nur ein Teil davon schlicht Ineffizienz ist.",
+      "Die Unterscheidung der beiden ist eine lohnende Übung, und zwar nicht nur zur Schonung der eigenen Nerven.",
+      "Zuerst sei die Umständlichkeit genannt, die nichts als Schaden anrichtet, denn keine kulturelle Betrachtung vermag sie zu rechtfertigen.",
+      "Ein Verfahren, das sechs Wochen dauern sollte und sich über acht Monate hinzieht, hat nichts Malerisches.",
+      "Es kostet Zeit, Geld und Gesundheit, und die Last trägt fast ausschließlich, wer über die geringsten Mittel verfügt, sich zu wehren.",
+      "Davon ist selten die Rede, weil die Betroffenen kaum je Leitartikel schreiben.",
+      "Neben dieser gibt es jedoch eine zweite Umständlichkeit, die der ersten für den fremden Blick zum Verwechseln ähnlich sieht und doch etwas anderes ist.",
+      "Gemeint ist die Sachbearbeiterin, die den seit drei Wochen auf ihrem Schreibtisch liegenden Antrag erst bearbeitet, wenn die fehlende Meldebescheinigung nachgereicht ist.",
+      "Gemeint ist ebenso die Auskunft, man möge das Formular vollständig ausfüllen, auch jene Felder, deren Sinn sich niemandem erschließt.",
+      "In meinen ersten Monaten in Dresden bat ich einmal um eine Ausnahme.",
+      "Der Beamte erklärte mir in ruhigem Ton, das stehe ihm nicht zu; er sei an die Vorschrift gebunden, und diese gelte für alle.",
+      "Ein Bekannter aus Lissabon schrieb mir damals, bei ihnen regle man so etwas mit einem Anruf.",
+      "Ich antwortete, das wolle ich gern glauben, nur müsse man dafür wissen, wen man anrufen könne.",
+      "Mit den Augen dessen betrachtet, der seine Tage in Terminen bemisst, ist all das vergeudete Zeit.",
+      "Aus der Nähe besehen ist es die Gewähr dafür, dass das Ergebnis nicht davon abhängt, wen man kennt.",
+      "Wer keine Beziehungen hat, kein „Vitamin B“, wie man umgangssprachlich sagt, erhält dieselbe Bearbeitung wie die Nichte des Bürgermeisters.",
+      "Das ist weder Gleichgültigkeit noch Misstrauen, sondern Gleichbehandlung.",
+      "Hinzu kommt, dass ein schriftlich ergangener Bescheid nachprüfbar ist: Man kann ihn anfechten, ein Gericht kann ihn aufheben, und niemand ist auf ein mündliches Versprechen angewiesen.",
+      "In einem System, dessen Regeln von Menschen angewandt werden, ist die Gewissheit, nicht auf deren Wohlwollen angewiesen zu sein, von messbarem Wert.",
+      "Hier ist allerdings Vorsicht geboten, denn an genau dieser Stelle droht das Lob zur Ausrede zu verkommen.",
+      "Dass die formale Strenge ihren Wert hat, bedeutet nicht, dass die andere Langsamkeit hinzunehmen sei.",
+      "Eine schnellere Verwaltung müsste keineswegs willkürlicher sein, denn das eine hängt mit dem anderen nicht zusammen.",
+      "Der typische Fehler der eben Angekommenen besteht darin, beides zu verwechseln und sich über beides zu empören.",
+      "Der typische Fehler der allzu gut Integrierten besteht darin, beides zu verwechseln und beides zu rechtfertigen.",
+      "Der zweite Fehler ist der elegantere, richtet aber den größeren Schaden an, weil er denjenigen das Wort entzieht, die sich zu Recht beschweren.",
+      "Ich habe Menschen kennengelernt, die nach zehn Jahren hier „Das ist halt so“ sagten, und zwar in demselben Ton, in dem man über das Wetter spricht.",
+      "Das Wetter lässt sich nicht ändern, eine Behörde schon.",
+      "Bleibt ein Antrag ohne zureichenden Grund liegen, kann man in der Regel nach drei Monaten eine Untätigkeitsklage erheben, was erstaunlich wenige wissen.",
+      "Was man lernen kann und was in keinem Lehrbuch steht, ist die Fähigkeit, beides zugleich im Blick zu behalten.",
+      "Konkret heißt das, jedes verlangte Dokument vollständig einzureichen und nach Ablauf der zugesagten Frist schriftlich nach dem Stand der Bearbeitung zu fragen.",
+      "Es heißt auch, sich für die Geduld am Schalter aufrichtig zu bedanken und mit derselben Aufrichtigkeit auf einer Antwort zu bestehen.",
+      "Wer hier mit Behörden gut zurechtkommt, tut genau das, ohne darin einen Widerspruch zu sehen.",
+      "Wer von außen kommt, sieht den Widerspruch sehr wohl und braucht einige Jahre, bis er ihn nicht mehr sieht.",
+      "Ist es so weit, hat er in der Regel auch aufgehört, zwei verschiedene Erscheinungen mit demselben Wort zu bezeichnen."
+    ],
+    glossIt: ["die Umständlichkeit", "der Sammelbegriff", "die Meldebescheinigung", "das Vitamin B", "der Bescheid", "anfechten", "die Untätigkeitsklage", "die Sachbearbeiterin"],
+    lexIt: ["klagen", "sich verbergen", "Schonung", "anrichten", "rechtfertigen", "sich hinziehen", "verfügen über", "Leitartikel", "zum Verwechseln ähnlich", "nachreichen", "sich erschließen", "zustehen", "Vorschrift", "bemessen", "vergeuden", "Gewähr", "Gleichbehandlung", "angewiesen sein auf", "Wohlwollen", "verkommen", "hinnehmen", "willkürlich", "sich empören", "entziehen", "zureichend", "Frist", "Schalter", "Aufrichtigkeit"],
+    questions: [
+      { t: "mcq", q: "Welche These vertritt der Text?", opts: ["Die deutsche Bürokratie ist immer ein Schaden.", "Hinter dem Wort „Bürokratie“ verbergen sich zwei verschiedene Dinge, die man unterscheiden sollte.", "Umständlichkeit ist eine kulturelle Tugend."], a: 1 },
+      { t: "truefalse", q: "Laut Text trifft die schädliche Langsamkeit alle Menschen gleich stark.", a: 1 },
+      { t: "mcq", q: "Warum sieht der Text in der formalen Strenge einen Wert?", opts: ["Weil sie die Ämter entlastet", "Weil das Ergebnis nicht davon abhängt, wen man kennt", "Weil sie die Beamten vor Kritik schützt"], a: 1 },
+      { t: "mcq", q: "Welchen der beiden Fehler hält der Text für schädlicher?", opts: ["Sich über beides zu empören", "Beides zu rechtfertigen", "Das Thema zu ignorieren"], a: 1 },
+      { t: "truefalse", q: "Der Satz „Das Wetter lässt sich nicht ändern, eine Behörde schon“ bedeutet, dass der Autor die Arbeitsweise der Behörden hinnimmt.", a: 1 },
+      { t: "mcq", q: "Was rät der Text konkret?", opts: ["Auf einer Ausnahme zu bestehen", "Alle Unterlagen vollständig einzureichen und nach Ablauf der Frist schriftlich nachzufragen", "Sich nur an Bekannte im Amt zu wenden"], a: 1 }
+    ]
+  }
+]);
