@@ -1,7 +1,7 @@
 /* ============================================================
    Language-neutral layer: German (de-DE), structure and answer keys.
    Learner-language texts live in data/i18n/<lang>/c2-01.js.
-   c2-u01 is a German unit.
+   c2-u01 and c2-u02 are German units.
    ============================================================ */
 LINGUAI.addUnits("C2", [
   {
@@ -246,6 +246,227 @@ LINGUAI.addUnits("C2", [
           it: "Die von der Expertenkommission vorgelegten Befunde stießen auf breite Zustimmung. Die daraus abzuleitenden Maßnahmen sollen im kommenden Jahr zur Anwendung kommen."
         },
         { t: "speak", it: "Die noch zu klärenden Fragen werden in der nächsten Sitzung zur Sprache gebracht." }
+      ]
+    }
+  },
+  {
+    id: "c2-u02",
+    icon: "🧩",
+    titleIt: "Plural und Wortbildung",
+    lessons: [
+      {
+        id: "c2-u02-l1",
+        tags: ["g-plural", "g-wortbildung"],
+        cefr: "C2",
+        titleIt: "Die Banken und die Bänke",
+        grammar: {
+          examples: [
+            { it: "Die Banken haben die Zinsen erneut angehoben." },
+            { it: "Vor dem Rathaus wurden neue Bänke aufgestellt." },
+            { it: "Mit wenigen Worten hat sie das Problem auf den Punkt gebracht." },
+            { it: "Das Wörterbuch verzeichnet über hunderttausend Wörter." },
+            { it: "Die Ratschläge ihrer Kollegen hat sie dankend angenommen." },
+            { it: "Nach den heftigen Regenfällen trat der Fluss über die Ufer." }
+          ]
+        },
+        vocab: [
+          { it: "das Geldinstitut", plural: "die Geldinstitute", ex: "Mehrere Geldinstitute haben ihre Gebühren erhöht." },
+          { it: "die Sitzbank", plural: "die Sitzbänke", ex: "Am Ufer stehen ein paar hölzerne Sitzbänke." },
+          { it: "die Schraubenmutter", plural: "die Schraubenmuttern", ex: "Die Schraubenmutter hat sich gelockert." },
+          { it: "die Streitigkeit", plural: "die Streitigkeiten", ex: "Die Streitigkeiten zwischen den Erben zogen sich über Jahre hin." },
+          { it: "der Regenfall", plural: "die Regenfälle", ex: "Heftige Regenfälle haben die Ernte vernichtet." },
+          { it: "der Schneefall", plural: "die Schneefälle", ex: "Starke Schneefälle legten den Verkehr lahm." },
+          { it: "die Sportart", plural: "die Sportarten", ex: "Fechten ist eine der ältesten olympischen Sportarten." },
+          { it: "die Redewendung", plural: "die Redewendungen", ex: "Die Redewendung klingt heute etwas altmodisch." },
+          { it: "der Bedeutungsunterschied", plural: "die Bedeutungsunterschiede", ex: "Zwischen den beiden Pluralformen besteht ein Bedeutungsunterschied." },
+          { it: "die Pluralform", plural: "die Pluralformen", ex: "Manche Substantive haben zwei Pluralformen." },
+          { it: "mehrdeutig", ex: "Der Begriff ist mehrdeutig." },
+          { it: "unterscheiden", ex: "Man muss die beiden Bedeutungen sorgfältig unterscheiden." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["Wörter"] },
+          { t: "fill", a: ["Muttern", "Schraubenmuttern"] },
+          {
+            t: "cloze",
+            text: "Die heftigen {{1}} der letzten Wochen haben die Ernte vernichtet; nun bekommen die Landwirte von allen Seiten gut gemeinte {{2}}.",
+            gaps: [["Regenfälle", "Niederschläge"], ["Ratschläge"]]
+          },
+          {
+            t: "match",
+            pairs: [{ it: "die Banken" }, { it: "die Bänke" }, { it: "die Worte" }, { it: "die Wörter" }]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Die Banken haben die Ratschläge der Experten ignoriert",
+              "Die Banken haben die Ratschläge der Fachleute ignoriert",
+              "Die Banken ignorierten die Ratschläge der Experten",
+              "Die Banken ignorierten die Ratschläge der Fachleute",
+              "Die Banken haben die Ratschläge der Experten missachtet",
+              "Die Banken haben die Ratschläge der Fachleute missachtet",
+              "Die Banken missachteten die Ratschläge der Experten",
+              "Die Banken missachteten die Ratschläge der Fachleute"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Auf den Bänken vor der Bank warteten die Kunden seit dem frühen Morgen. Mit wenigen Worten erklärte ein Angestellter, warum die Filiale geschlossen blieb."
+          },
+          { t: "speak", it: "Mit wenigen Worten hat sie alles gesagt." }
+        ]
+      },
+      {
+        id: "c2-u02-l2",
+        tags: ["g-wortbildung"],
+        cefr: "C2",
+        titleIt: "Komposita und Fugenelement",
+        grammar: {
+          examples: [
+            { it: "Die Arbeitsbedingungen in der Pflege haben sich kaum verbessert." },
+            { it: "Der Hundebesitzer haftet für die Schäden." },
+            { it: "Die Sonnenenergie deckt bereits einen Teil des Strombedarfs." },
+            { it: "Das Kinderbuch wurde in zwanzig Sprachen übersetzt." },
+            { it: "Ihr Liebesbrief kam nie an." },
+            { it: "Die Schulpflicht beginnt in der Regel mit sechs Jahren." }
+          ]
+        },
+        vocab: [
+          { it: "das Kompositum", plural: "die Komposita", ex: "Das Deutsche bildet Komposita fast ohne Grenzen." },
+          { it: "das Grundwort", plural: "die Grundwörter", ex: "Das Grundwort bestimmt das Genus des Kompositums." },
+          { it: "das Bestimmungswort", plural: "die Bestimmungswörter", ex: "Das Bestimmungswort steht immer vorn." },
+          { it: "das Fugenelement", plural: "die Fugenelemente", ex: "In „Arbeitszeit“ ist das s ein Fugenelement." },
+          { it: "die Arbeitsbedingung", plural: "die Arbeitsbedingungen", ex: "Die Gewerkschaft fordert bessere Arbeitsbedingungen." },
+          { it: "der Wohnungsmarkt", plural: "die Wohnungsmärkte", ex: "Der Wohnungsmarkt in den Großstädten ist angespannt." },
+          { it: "die Universitätsbibliothek", plural: "die Universitätsbibliotheken", ex: "Die Universitätsbibliothek ist auch am Sonntag geöffnet." },
+          { it: "die Freiheitsstrafe", plural: "die Freiheitsstrafen", ex: "Er wurde zu einer Freiheitsstrafe von zwei Jahren verurteilt." },
+          { it: "der Schadensersatz", plural: "-", ex: "Der Kläger fordert Schadensersatz." },
+          { it: "das Gesundheitswesen", plural: "-", ex: "Im Gesundheitswesen fehlen Fachkräfte." },
+          { it: "sich zusammensetzen aus", ex: "Das Wort setzt sich aus drei Teilen zusammen." },
+          { it: "zusammengesetzt", ex: "Zusammengesetzte Wörter schreibt man zusammen." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["Wohnungsmarkt"] },
+          { t: "fill", a: ["Universitätsbibliothek"] },
+          { t: "fill", a: ["Freiheitsstrafe"] },
+          { t: "fill", a: ["Schulpflicht"] },
+          {
+            t: "cloze",
+            text: "Viele {{1}} protestieren gegen die neue {{2}} in den städtischen Parks.",
+            gaps: [["Hundebesitzer"], ["Leinenpflicht"]]
+          },
+          { t: "multi", a: [0, 1] },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Die Arbeitsbedingungen im Gesundheitswesen haben sich verschlechtert",
+              "Die Arbeitsbedingungen im Gesundheitswesen sind schlechter geworden",
+              "Die Arbeitsbedingungen im Gesundheitswesen verschlechterten sich",
+              "Im Gesundheitswesen haben sich die Arbeitsbedingungen verschlechtert",
+              "Im Gesundheitswesen sind die Arbeitsbedingungen schlechter geworden",
+              "Im Gesundheitswesen verschlechterten sich die Arbeitsbedingungen"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Der Wohnungsmarkt in den Universitätsstädten ist seit Jahren angespannt. Viele Studierende finden erst nach monatelanger Suche ein bezahlbares Zimmer."
+          },
+          { t: "speak", it: "Die Arbeitsbedingungen haben sich deutlich verbessert." }
+        ]
+      },
+      {
+        id: "c2-u02-l3",
+        tags: ["g-wortbildung"],
+        cefr: "C2",
+        titleIt: "Ableitung und Fremdwörter",
+        grammar: {
+          examples: [
+            { it: "Die Verbesserung der Arbeitsbedingungen ist längst überfällig." },
+            { it: "Ihre Gelassenheit in schwierigen Situationen bewundere ich." },
+            { it: "Die Nachhaltigkeit des Projekts wird von Fachleuten bezweifelt." },
+            { it: "Ich habe mich beim Datum verschrieben." },
+            { it: "Im Streit zerriss sie den Brief in kleine Stücke." },
+            { it: "Die Digitalisierung der Verwaltung kommt nur langsam voran." }
+          ]
+        },
+        vocab: [
+          { it: "die Ableitung", plural: "die Ableitungen", ex: "„Freiheit“ ist eine Ableitung von „frei“." },
+          { it: "die Nachsilbe", plural: "die Nachsilben", ex: "Die Nachsilbe -ung bildet Substantive aus Verben." },
+          { it: "die Vorsilbe", plural: "die Vorsilben", ex: "Die Vorsilbe zer- drückt eine Zerstörung aus." },
+          { it: "das Fremdwort", plural: "die Fremdwörter", ex: "Der Text ist voller Fremdwörter." },
+          { it: "die Gelassenheit", plural: "-", ex: "Sie reagierte mit großer Gelassenheit." },
+          { it: "die Nachhaltigkeit", plural: "-", ex: "Nachhaltigkeit ist zum Modewort geworden." },
+          { it: "die Zuverlässigkeit", plural: "-", ex: "Seine Zuverlässigkeit wird von allen geschätzt." },
+          { it: "die Digitalisierung", plural: "die Digitalisierungen", ex: "Die Digitalisierung verändert die Arbeitswelt." },
+          { it: "zerreißen", ex: "Sie zerriss den Brief, ohne ihn zu lesen." },
+          { it: "sich verschreiben", ex: "Ich habe mich beim Datum verschrieben." },
+          { it: "missverstehen", ex: "Sie hat meine Bemerkung völlig missverstanden." },
+          { it: "entwerten", ex: "Die Inflation hat die Ersparnisse entwertet." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["Zuverlässigkeit"] },
+          {
+            t: "cloze",
+            text: "Die {{1}} der Verwaltung soll die Verfahren beschleunigen, doch über ihre {{2}} sind sich die Fachleute uneinig.",
+            gaps: [["Digitalisierung"], ["Wirksamkeit"]]
+          },
+          {
+            t: "match",
+            pairs: [{ it: "zerreißen" }, { it: "sich verlaufen" }, { it: "missverstehen" }, { it: "entwerten" }]
+          },
+          { t: "multi", a: [0, 1] },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Die Nachhaltigkeit des Projekts wurde in Zweifel gezogen",
+              "Die Nachhaltigkeit des Projektes wurde in Zweifel gezogen",
+              "Die Nachhaltigkeit des Projekts ist in Zweifel gezogen worden",
+              "Die Nachhaltigkeit des Projektes ist in Zweifel gezogen worden",
+              "Die Nachhaltigkeit des Projekts wurde bezweifelt",
+              "Die Nachhaltigkeit des Projektes wurde bezweifelt",
+              "Die Nachhaltigkeit des Projekts ist bezweifelt worden",
+              "Die Nachhaltigkeit des Projektes ist bezweifelt worden"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Die Digitalisierung verändert nicht nur die Arbeitswelt, sondern auch die Sprache. Viele Fremdwörter aus dem Englischen werden inzwischen ganz selbstverständlich verwendet."
+          },
+          { t: "speak", it: "Ihre Gelassenheit hat mich beeindruckt." }
+        ]
+      }
+    ],
+    test: {
+      id: "c2-u02-test",
+      tags: ["g-wortbildung", "g-plural"],
+      cefr: "C2",
+      titleIt: "Test: Plural und Wortbildung",
+      exercises: [
+        { t: "fill", a: ["Bänke", "Sitzbänke"] },
+        { t: "fill", a: ["Streitigkeiten"] },
+        { t: "fill", a: ["Gesundheitsamt"] },
+        { t: "fill", a: ["Besonnenheit"] },
+        { t: "mcq", a: 0 },
+        { t: "mcq", a: 0 },
+        { t: "mcq", a: 0 },
+        {
+          t: "match",
+          pairs: [{ it: "die Bänder" }, { it: "die Bände" }, { it: "die Banken" }, { it: "die Bänke" }]
+        },
+        {
+          t: "listen",
+          it: "Mit wenigen Worten erklärte die Sprachwissenschaftlerin den Unterschied zwischen Wörtern und Worten. Die Studierenden hörten ihr mit großer Aufmerksamkeit zu."
+        },
+        { t: "speak", it: "Das Gesundheitsamt hat die Schließung angeordnet." }
       ]
     }
   }
