@@ -62,7 +62,7 @@ LINGUAI.addReadings([
       { t: "truefalse", q: "Die Studentin aus dem Deutschkurs sagt: Alle guten Zimmer findet man im Internet.", a: 1 },
       { t: "mcq", q: "Was ist ein WG-Casting?", opts: ["Ein Termin im Bürgerbüro", "Ein Treffen, bei dem die WG eine Person wählt", "Ein Kurs an der Universität"], a: 1 },
       { t: "mcq", q: "Wozu braucht man die Wohnungsgeberbestätigung?", opts: ["Für die Kaution", "Für die Mensa", "Für die Anmeldung im Bürgerbüro"], a: 2 },
-      { t: "truefalse", q: "Der Erzähler hat die Kaution für sein Zimmer bar bezahlt.", a: 1 },
+      { t: "truefalse", q: "Der Erzähler hat die Kaution für sein Zimmer überwiesen.", a: 0 },
       { t: "mcq", q: "Was steht in vielen Anzeigen?", opts: ["Nur die Kaltmiete", "Die Miete mit Heizung, Wasser und Müll", "Die Telefonnummer des Bürgerbüros"], a: 0 }
     ]
   }

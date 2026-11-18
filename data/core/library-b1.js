@@ -46,7 +46,7 @@ LINGUAI.addReadings([
       { t: "truefalse", q: "Die Kollegin sagt, dass der Termin wichtiger ist als der Antrag.", a: 1 },
       { t: "mcq", q: "Was zeigt die Fiktionsbescheinigung?", opts: ["Dass der alte Aufenthaltstitel weitergilt", "Dass Amal einen neuen Arbeitsvertrag hat", "Dass der Termin am zwölften Mai ist"], a: 0 },
       { t: "mcq", q: "Was macht Amal, als die Personalabteilung anruft?", opts: ["Sie geht sofort zur Ausländerbehörde.", "Sie hört auf zu arbeiten.", "Sie schickt eine Kopie der Fiktionsbescheinigung und die Bestätigung vom Dezember."], a: 2 },
-      { t: "truefalse", q: "Bei der Migrationsberatung muss man für die Hilfe bezahlen.", a: 1 },
+      { t: "truefalse", q: "Die Hilfe bei der Migrationsberatung ist kostenlos.", a: 0 },
       { t: "mcq", q: "Wo wird die neue Karte hergestellt?", opts: ["In Berlin", "In Kassel", "Bei der Caritas"], a: 0 }
     ]
   }
