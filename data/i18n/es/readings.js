@@ -65,7 +65,7 @@ LINGUAI.addStrings("es", {
 
   "read:r-b1-ausbildung": {
     title: "Mejor al taller",
-    gloss: ["el Abitur (examen final del Gymnasium, que es el instituto y no un gimnasio; da acceso a la universidad)", "la formación profesional (en Alemania, dual: en la empresa y en la escuela)", "el taller (mecánico)", "la técnica en mecatrónica del automóvil", "la empresa (donde se forma la aprendiz)", "la escuela de formación profesional (la parte teórica de la formación dual)", "el paso (de un trabajo)", "la materia (que hay que aprender)"],
+    gloss: ["el Abitur (examen final del Gymnasium, que es el instituto y no un gimnasio; da acceso a la universidad)", "la formación profesional (aquí, dual: en la empresa y en la escuela; también existe una solo escolar)", "el taller (mecánico)", "la técnica en mecatrónica del automóvil", "la empresa (donde se forma la aprendiz)", "la escuela de formación profesional (la parte teórica de la formación dual)", "el paso (de un trabajo)", "la materia (que hay que aprender)"],
     lex: ["estudiar (una carrera universitaria)", "experiencia", "reunir, acumular", "prácticas", "Stuttgart", "darse cuenta", "mano", "diversión (Spaß machen: ser divertido)", "semana", "jefe (el cocinero es der Koch)", "error", "repasar, repetir", "examen", "aprobar (un examen)", "padres", "desear", "ganar (dinero)", "ahorrar", "abrir (un negocio)"]
   },
 
@@ -132,7 +132,7 @@ LINGUAI.addStrings("es", {
   "read:r-c2-lob": {
     title: "No regañar ya es bastante elogio",
     gloss: ["darse a conocer, mostrarse", "el refrán", "lo máximo a lo que se puede aspirar", "efusivo", "hacer sospechar, dar que pensar", "demoledor", "la coletilla (frase añadida al final)", "educadamente, como un niño obediente", "la pulla, la indirecta", "el quedarse corto a propósito (understatement)", "dolido, ofendido", "el desacierto, la metedura de pata", "atribuir (una cualidad) a alguien, decir de alguien"],
-    lex: ["ámbito (aquí: el mundo germanohablante)", "elogio", "esperar, contar con", "decepcionar", "suabo", "actitud", "extendido", "de pasada", "superior (jefe)", "a veces", "a la inversa", "esconderse", "exponer, alegar", "juicio, valoración", "decisivo", "tenor literal", "entonación, acento", "literal", "significado", "dar las gracias", "benévolo", "conjunto de reglas", "quitarle (algo) de encima a alguien", "como mucho", "costumbre, acostumbrarse", "adquirir", "franqueza", "contradicción"]
+    lex: ["ámbito (aquí: el mundo germanohablante)", "elogio", "esperar, contar con", "decepcionar", "suabo", "actitud", "extendido", "de pasada", "superior (jefe)", "a veces", "a la inversa", "esconderse", "exponer, alegar", "juicio, valoración", "decisivo", "tenor literal", "entonación, acento", "literal", "significado", "dar las gracias", "benévolo", "conjunto de reglas", "quitarle (algo) de encima a alguien", "como mucho", "adaptación, acostumbramiento", "adquirir", "franqueza", "contradicción"]
   },
 
   "read:r-c2-arbeitszeugnis": {
@@ -143,7 +143,7 @@ LINGUAI.addStrings("es", {
 
   "read:r-c2-heimat": {
     title: "Una palabra difícil",
-    gloss: ["lastrado, cargado (por la historia)", "el entramado, la red", "el dialecto", "quedarle claro a alguien de repente (es geht mir auf: de pronto lo veo claro)", "idealizar, romantizar", "estrechar, restringir", "cursi, kitsch", "la reinterpretación", "evitar", "ilustrado", "apropiarse de", "excluyente", "la lectura, la interpretación", "encarnizado", "creer (a alguien) capaz de"],
+    gloss: ["lastrado, cargado (por la historia)", "el entramado, la red", "el dialecto", "quedarle claro a alguien de repente (es geht mir auf: de pronto lo veo claro)", "idealizar, romantizar", "estrechar, restringir", "cursi, kitsch", "la reinterpretación", "evitar", "ilustrado", "apropiarse de", "excluyente", "la lectura, la interpretación", "encarnizado", "creer (a alguien) capaz de algo; aquí: atribuir potencial (a una palabra)"],
     lex: ["intraducible", "Heimat (tierra natal, el lugar al que uno pertenece)", "designar", "lugar", "paisaje", "olor", "costumbre", "lejanía", "siglo", "romántico (del Romanticismo)", "nacionalsocialismo, nazismo", "ideología", "posguerra", "Heimatfilm (género de cine rural sentimental de los años cincuenta)", "inofensivo", "concepto", "diccionario", "de buen grado", "frontera, límite", "negociar; aquí: debatir, redefinir (un concepto)", "ministerio", "escritora", "historia migratoria (familiar)", "origen", "cerrado", "instalarse, acomodarse", "necesitar (aquí, en pasiva: ser necesario, hacer falta)", "dureza, aspereza", "imponerse", "discutir, pelearse"]
   }
 });
