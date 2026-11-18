@@ -33,7 +33,7 @@ LINGUAI.addReadings([
       { t: "truefalse", q: "Anna bestellt einen Tee.", a: 1 },
       { t: "mcq", q: "Was ist Anna von Beruf?", opts: ["Lehrerin", "Kellnerin", "Ärztin"], a: 0 },
       { t: "mcq", q: "Wie heißt der Kellner?", opts: ["Jonas", "Tom", "Anna"], a: 0 },
-      { t: "truefalse", q: "Anna und Tom sagen am Ende du.", a: 0 }
+      { t: "truefalse", q: "Tom möchte mit Anna du sagen.", a: 0 }
     ]
   },
   {
