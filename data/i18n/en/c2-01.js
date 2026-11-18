@@ -21,14 +21,14 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "A relative clause squeezed in front of the noun",
-        p: "In written German a participle can take its phrases along and sit between the article and the noun: <em>die seit Jahren von Fachleuten geforderte Reform</em>. It is a compressed relative clause: <em>die Reform, die seit Jahren von Fachleuten gefordert wird</em>. The article opens the bracket, the noun closes it, and everything in between depends on the participle, which comes right before the noun and takes an adjective ending. <strong>Participle II</strong> describes something done to the noun or already finished (<em>die vorgelegten Daten</em>, the data presented); <strong>participle I</strong> an active, ongoing action (<em>die vorliegenden Gutachten</em>, the expert reports that are available)."
+        p: "In written German a participle can take its phrases along and sit between the article and the noun: <em>die seit Jahren von Fachleuten geforderte Reform</em>. It is a compressed relative clause: <em>die Reform, die seit Jahren von Fachleuten gefordert wird</em>. The article opens the bracket, the noun closes it, and everything in between belongs to the attribute: each phrase depends on its own participle, which comes right before the noun and takes an adjective ending. <strong>Participle II</strong> describes something done to the noun or already finished (<em>die vorgelegten Daten</em>, the data presented); <strong>participle I</strong> an active, ongoing action (<em>die vorliegenden Gutachten</em>, the expert reports that are available)."
       },
       {
         h: "How to read it",
         p: "If an article is followed by a preposition or a second article (<em>die von der ..., der dem ...</em>), expect an extended attribute: skip ahead to the noun and find the inflected participles right before it (there may be more than one, coordinated), then go back and read the phrases that belong to each. The internal order is that of a subordinate clause: phrases first, participle last, just as the verb comes last in a relative clause. A reflexive pronoun stays inside: <em>die sich verschärfende Wohnungsnot</em>. Two coordinated attributes without a conjunction are separated by a comma: <em>die in der Studie befragten, überwiegend jungen Erwachsenen</em>; with <em>und</em> no comma is needed: <em>die angekündigte und vielfach kritisierte Reform</em>."
       },
       {
-        contrast: "English puts a lone participle before the noun (<em>the rising costs, the published data</em>), but as soon as the participle has phrases of its own, the whole group moves after the noun: <em>the reform demanded by experts for years</em>, <em>the people living in poverty</em>. German never does that: the whole group stays on the left, between the article and the noun, and the participle closes it. So the English order is reversed, participle first and phrases after it; in German the phrases come first and the participle comes last, right before the noun. English <em>-ing</em> forms and German participle I are both formed from almost any verb, but only German can stack phrases in front of it: <em>die dem Gericht vorliegenden Gutachten</em>, “the expert reports before the court”."
+        contrast: "English puts a participle before the noun when it stands alone or with a short adverb (<em>the rising costs, the widely discussed reform, the long-awaited report</em>), but as soon as it has an agent, an object or a prepositional phrase, the group usually moves after the noun: <em>the reform demanded by experts for years</em>, <em>the people living in poverty</em>. German has no such limit: the whole group stays on the left, between the article and the noun, and the participle closes it. So the English order is reversed, participle first and phrases after it; in German the phrases come first and the participle comes last, right before the noun. English <em>-ing</em> forms and German participle I are both formed from almost any verb, but German stacks even long phrases in front of it: <em>die dem Gericht vorliegenden Gutachten</em>, “the expert reports before the court”."
       },
       {
         trap: "The participle of a passive in the Perfekt has no <em>worden</em>: <em>die Daten, die erhoben worden sind</em> becomes <em>die erhobenen Daten</em>, never <em>die erhoben wordenen Daten</em>. And don't mix up the two participles: <em>die steigenden Kosten</em> are still rising, <em>die gestiegenen Kosten</em> have already risen."
@@ -107,7 +107,7 @@ LINGUAI.addStrings("en", {
       },
       {
         q: "Complete with two participle II forms: “predicted” in the first gap, “disadvantaged” in the second.",
-        tr: "The consequences of climate change, predicted long ago by numerous researchers, hit the already disadvantaged regions of the South hardest.",
+        tr: "The consequences of climate change, long predicted by numerous researchers, particularly affect the already disadvantaged regions of the South.",
         why: "<i>vorhergesagten</i> (also <i>vorausgesagten</i> or <i>prognostizierten</i>) and <i>benachteiligten</i>: participle II with <i>-en</i> after the plural article <i>die</i>. <i>ohnehin</i> (“anyway, already”) sits inside the second attribute."
       },
       {
@@ -130,7 +130,7 @@ LINGUAI.addStrings("en", {
         why: "In the first two the participle and its phrases sit between the article and the noun (<i>die vom Gericht bestellte Gutachterin</i>, <i>die über Jahrzehnte gewachsenen Strukturen</i>). The third says the same thing as the first with a relative clause; in the fourth <i>gewachsen</i> is part of the Perfekt, not an attribute."
       },
       {
-        q: "Translate with an extended participial attribute: “The study presented by the university last week contradicts the assumptions held until now.” (vorlegen, die Annahme)",
+        q: "Translate with an extended participial attribute: “The study presented by the university last week contradicts the previously widespread assumptions.” (vorlegen, die Annahme)",
         why: "<i>Die von der Universität letzte Woche vorgelegte Studie widerspricht den bisher verbreiteten Annahmen</i>: what follows “study” in English goes before <i>Studie</i>, with the participle last. <i>widersprechen</i> takes the dative: <i>den ... Annahmen</i>."
       },
       {
@@ -251,7 +251,7 @@ LINGUAI.addStrings("en", {
       },
       {
         q: "Put the words in order.",
-        tr: "The applications the authority has to review have been pending for weeks.",
+        tr: "The applications the authority has to review have been in its hands for weeks.",
         why: "<i>Die von der Behörde zu prüfenden Anträge liegen seit Wochen vor.</i> The agent <i>von der Behörde</i> sits inside the attribute, before <i>zu prüfenden</i>; <i>vor</i>, the particle of <i>vorliegen</i>, goes at the end."
       },
       {
@@ -359,7 +359,7 @@ LINGUAI.addStrings("en", {
           "she denies that her sources are incomplete",
           "she proves that her sources are incomplete"
         ],
-        why: "<i>in Abrede stellen</i> = “to deny”; with <i>nicht</i> it becomes <b>“not to deny”</b>. It is a cautious concession, typical of academic writing: the author doesn't dispute the weakness, without stating it outright either."
+        why: "<i>in Abrede stellen</i> = “to deny”; with <i>nicht</i> it becomes <b>“not to deny”</b>. It is a cautious concession, typical of academic writing: the author doesn't dispute the weakness; how openly she admits it depends on the context."
       },
       {
         q: "Complete: «Der Entwurf trägt den Einwänden der Verbände kaum ___.» (takes into account)",
@@ -456,7 +456,7 @@ LINGUAI.addStrings("en", {
           "Die Reform kritisierte heftig.",
           "Die Reform hat heftige Kritik geübt."
         ],
-        why: "<i>auf Kritik stoßen</i> has a passive sense: the reform <b>is criticized</b>. <i>Kritik üben</i> is active: the subject is the one criticizing."
+        why: "<i>auf Kritik stoßen</i> has a passive sense: the reform <b>was criticized</b>. <i>Kritik üben</i> is active: the subject is the one criticizing."
       },
       {
         q: "Turn into an attribute: «die Fragen, die noch geklärt werden müssen»",

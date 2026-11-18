@@ -21,7 +21,7 @@ LINGUAI.addStrings("pl", {
     theory: [
       {
         h: "Zdanie względne ściśnięte przed rzeczownikiem",
-        p: "W niemczyźnie pisanej imiesłów może zabrać ze sobą swoje określenia i stanąć między rodzajnikiem a rzeczownikiem: <em>die seit Jahren von Fachleuten geforderte Reform</em>. To ściśnięte zdanie względne: <em>die Reform, die seit Jahren von Fachleuten gefordert wird</em>. Rodzajnik otwiera nawias, rzeczownik go zamyka, a wszystko pomiędzy zależy od imiesłowu, który stoi tuż przed rzeczownikiem i dostaje końcówkę przymiotnika. <strong>Imiesłów II</strong> oznacza czynność, której coś podlega albo która już się zakończyła (<em>die vorgelegten Daten</em>, przedstawione dane); <strong>imiesłów I</strong> czynność aktywną i równoczesną (<em>die vorliegenden Gutachten</em>, opinie, którymi się dysponuje)."
+        p: "W niemczyźnie pisanej imiesłów może zabrać ze sobą swoje określenia i stanąć między rodzajnikiem a rzeczownikiem: <em>die seit Jahren von Fachleuten geforderte Reform</em>. To ściśnięte zdanie względne: <em>die Reform, die seit Jahren von Fachleuten gefordert wird</em>. Rodzajnik otwiera nawias, rzeczownik go zamyka, a wszystko pomiędzy należy do przydawki: każde określenie zależy od własnego imiesłowu, który stoi tuż przed rzeczownikiem i dostaje końcówkę przymiotnika. <strong>Imiesłów II</strong> oznacza czynność, której coś podlega albo która już się zakończyła (<em>die vorgelegten Daten</em>, przedstawione dane); <strong>imiesłów I</strong> czynność aktywną i równoczesną (<em>die vorliegenden Gutachten</em>, opinie, którymi się dysponuje)."
       },
       {
         h: "Jak to czytać",
@@ -251,7 +251,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         q: "Ułóż słowa we właściwej kolejności.",
-        tr: "Wnioski, które urząd musi rozpatrzyć, czekają od tygodni.",
+        tr: "Wnioski, które urząd musi rozpatrzyć, leżą w nim od tygodni.",
         why: "<i>Die von der Behörde zu prüfenden Anträge liegen seit Wochen vor.</i> Wykonawca czynności <i>von der Behörde</i> stoi w przydawce, przed <i>zu prüfenden</i>; <i>vor</i>, przedrostek <i>vorliegen</i>, idzie na koniec."
       },
       {
@@ -359,7 +359,7 @@ LINGUAI.addStrings("pl", {
           "zaprzecza, że jej źródła są niepełne",
           "dowodzi, że jej źródła są niepełne"
         ],
-        why: "<i>in Abrede stellen</i> = „zaprzeczać”; z <i>nicht</i> daje <b>„nie zaprzeczać”</b>. To ostrożne ustępstwo, typowe dla prozy naukowej: autorka nie kwestionuje ograniczenia, ale też nie mówi o nim wprost."
+        why: "<i>in Abrede stellen</i> = „zaprzeczać”; z <i>nicht</i> daje <b>„nie zaprzeczać”</b>. To ostrożne ustępstwo, typowe dla prozy naukowej: autorka nie kwestionuje ograniczenia; to, jak otwarcie je przyznaje, zależy od kontekstu."
       },
       {
         q: "Uzupełnij: „Der Entwurf trägt den Einwänden der Verbände kaum ___.” (uwzględnia)",
@@ -456,7 +456,7 @@ LINGUAI.addStrings("pl", {
           "Die Reform kritisierte heftig.",
           "Die Reform hat heftige Kritik geübt."
         ],
-        why: "<i>auf Kritik stoßen</i> ma znaczenie bierne: reforma <b>jest krytykowana</b>. <i>Kritik üben</i> jest czynne: krytykuje podmiot."
+        why: "<i>auf Kritik stoßen</i> ma znaczenie bierne: reforma <b>została ostro skrytykowana</b>. <i>Kritik üben</i> jest czynne: krytykuje podmiot."
       },
       {
         q: "Zamień na przydawkę: „die Fragen, die noch geklärt werden müssen”",
@@ -468,7 +468,7 @@ LINGUAI.addStrings("pl", {
         why: "Strona bierna z <i>müssen</i> zmienia się w <b>Gerundivum</b>: <i>zu klärenden</i>. <i>geklärten</i> znaczyłoby, że są już wyjaśnione; <i>klärenden</i>, że to one coś wyjaśniają."
       },
       {
-        tr: "Wyniki przedstawione przez komisję ekspertów spotkały się z szerokim poparciem. Wynikające z nich środki mają zostać wdrożone w przyszłym roku.",
+        tr: "Wyniki przedstawione przez komisję ekspertów spotkały się z szerokim poparciem. Środki, które należy z nich wyprowadzić, mają zostać wdrożone w przyszłym roku.",
         why: "W <i>Expertenkommission</i> główny akcent pada na <b>per</b>; w <i>stießen</i> <b>ie</b> jest długie, a <b>ß</b> wymawia się [s]; w <i>Maßnahmen</i> akcent pada na <b>Maß</b>, z długim <b>a</b>."
       },
       {

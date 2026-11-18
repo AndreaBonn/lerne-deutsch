@@ -21,7 +21,7 @@ LINGUAI.addStrings("fr", {
     theory: [
       {
         h: "Une relative comprimée devant le nom",
-        p: "En allemand écrit, un participe peut emmener ses compléments et se placer entre l'article et le nom : <em>die seit Jahren von Fachleuten geforderte Reform</em>. C'est une relative comprimée : <em>die Reform, die seit Jahren von Fachleuten gefordert wird</em>. L'article ouvre la parenthèse, le nom la ferme, et tout ce qui se trouve entre les deux dépend du participe, placé juste avant le nom et doté de la terminaison de l'adjectif. Le <strong>participe II</strong> exprime une action subie ou déjà achevée (<em>die vorgelegten Daten</em>, les données présentées) ; le <strong>participe I</strong>, une action active et simultanée (<em>die vorliegenden Gutachten</em>, les expertises dont on dispose)."
+        p: "En allemand écrit, un participe peut emmener ses compléments et se placer entre l'article et le nom : <em>die seit Jahren von Fachleuten geforderte Reform</em>. C'est une relative comprimée : <em>die Reform, die seit Jahren von Fachleuten gefordert wird</em>. L'article ouvre la parenthèse, le nom la ferme, et tout ce qui se trouve entre les deux appartient à l'épithète : chaque complément dépend de son propre participe, placé juste avant le nom et doté de la terminaison de l'adjectif. Le <strong>participe II</strong> exprime une action subie ou déjà achevée (<em>die vorgelegten Daten</em>, les données présentées) ; le <strong>participe I</strong>, une action active et simultanée (<em>die vorliegenden Gutachten</em>, les expertises dont on dispose)."
       },
       {
         h: "Comment la lire",
@@ -251,7 +251,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         q: "Remettez les mots dans l'ordre.",
-        tr: "Les demandes que l'administration doit examiner sont en attente depuis des semaines.",
+        tr: "Les demandes que l'administration doit examiner sont entre ses mains depuis des semaines.",
         why: "<i>Die von der Behörde zu prüfenden Anträge liegen seit Wochen vor.</i> L'agent <i>von der Behörde</i> se trouve dans l'épithète, avant <i>zu prüfenden</i> ; <i>vor</i>, particule de <i>vorliegen</i>, va à la fin."
       },
       {
@@ -359,7 +359,7 @@ LINGUAI.addStrings("fr", {
           "elle nie que ses sources soient lacunaires",
           "elle démontre que ses sources sont lacunaires"
         ],
-        why: "<i>in Abrede stellen</i> = « nier » ; avec <i>nicht</i>, cela devient <b>« ne pas nier »</b>. C'est une concession prudente, typique des textes argumentatifs : l'autrice ne conteste pas la limite, sans pour autant la déclarer ouvertement."
+        why: "<i>in Abrede stellen</i> = « nier » ; avec <i>nicht</i>, cela devient <b>« ne pas nier »</b>. C'est une concession prudente, typique des textes argumentatifs : l'autrice ne conteste pas la limite ; le degré d'aveu dépend du contexte."
       },
       {
         q: "Complétez : « Der Entwurf trägt den Einwänden der Verbände kaum ___. » (tient compte)",
@@ -456,7 +456,7 @@ LINGUAI.addStrings("fr", {
           "Die Reform kritisierte heftig.",
           "Die Reform hat heftige Kritik geübt."
         ],
-        why: "<i>auf Kritik stoßen</i> a un sens passif : la réforme <b>est critiquée</b>. <i>Kritik üben</i> est actif : c'est le sujet qui critique."
+        why: "<i>auf Kritik stoßen</i> a un sens passif : la réforme <b>a été critiquée</b>. <i>Kritik üben</i> est actif : c'est le sujet qui critique."
       },
       {
         q: "Transformez en épithète : « die Fragen, die noch geklärt werden müssen »",

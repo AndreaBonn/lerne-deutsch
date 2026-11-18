@@ -21,7 +21,7 @@ LINGUAI.addStrings("es", {
     theory: [
       {
         h: "Una oración de relativo comprimida delante del sustantivo",
-        p: "En el alemán escrito un participio puede llevar consigo sus complementos y colocarse entre el artículo y el sustantivo: <em>die seit Jahren von Fachleuten geforderte Reform</em>. Es una oración de relativo comprimida: <em>die Reform, die seit Jahren von Fachleuten gefordert wird</em>. El artículo abre el paréntesis, el sustantivo lo cierra, y todo lo que queda en medio depende del participio, que va justo antes del sustantivo y lleva la terminación del adjetivo. El <strong>participio II</strong> indica una acción sufrida o ya terminada (<em>die vorgelegten Daten</em>, los datos presentados); el <strong>participio I</strong>, una acción activa y simultánea (<em>die vorliegenden Gutachten</em>, los peritajes de que se dispone)."
+        p: "En el alemán escrito un participio puede llevar consigo sus complementos y colocarse entre el artículo y el sustantivo: <em>die seit Jahren von Fachleuten geforderte Reform</em>. Es una oración de relativo comprimida: <em>die Reform, die seit Jahren von Fachleuten gefordert wird</em>. El artículo abre el paréntesis, el sustantivo lo cierra, y todo lo que queda en medio pertenece al atributo: cada complemento depende de su propio participio, que va justo antes del sustantivo y lleva la terminación del adjetivo. El <strong>participio II</strong> indica una acción sufrida o ya terminada (<em>die vorgelegten Daten</em>, los datos presentados); el <strong>participio I</strong>, una acción activa y simultánea (<em>die vorliegenden Gutachten</em>, los peritajes de que se dispone)."
       },
       {
         h: "Cómo se lee",
@@ -251,7 +251,7 @@ LINGUAI.addStrings("es", {
       },
       {
         q: "Ordena las palabras.",
-        tr: "Las solicitudes que la autoridad debe examinar llevan semanas pendientes.",
+        tr: "Las solicitudes que la autoridad debe examinar obran en su poder desde hace semanas.",
         why: "<i>Die von der Behörde zu prüfenden Anträge liegen seit Wochen vor.</i> El agente <i>von der Behörde</i> está dentro del atributo, antes de <i>zu prüfenden</i>; <i>vor</i>, partícula de <i>vorliegen</i>, va al final."
       },
       {
@@ -259,7 +259,7 @@ LINGUAI.addStrings("es", {
         why: "<i>Die am Vertrag vorzunehmenden Änderungen müssen von beiden Vertragsparteien genehmigt werden</i>, o bien, en estilo normativo, <i>... sind von beiden Vertragsparteien zu genehmigen</i>. <i>vornehmen</i> es separable: <i>vorzunehmenden</i>."
       },
       {
-        tr: "Los documentos que el solicitante debe completar se presentarán antes de fin de mes. De lo contrario, cabe esperar que se deniegue la solicitud.",
+        tr: "Los documentos que el solicitante debe aportar posteriormente deberán presentarse antes de fin de mes. De lo contrario, cabe esperar que se deniegue la solicitud.",
         why: "En <i>nachzureichenden</i> el acento recae en <b>nach</b>; en <i>Andernfalls</i> el acento recae en <b>An</b>; en <i>Ablehnung</i> el acento recae en <b>Ab</b> y la <b>b</b> se pronuncia [p]."
       },
       {
@@ -359,7 +359,7 @@ LINGUAI.addStrings("es", {
           "niega que sus fuentes sean incompletas",
           "demuestra que sus fuentes son incompletas"
         ],
-        why: "<i>in Abrede stellen</i> = «negar»; con <i>nicht</i> se convierte en <b>«no negar»</b>. Es una concesión prudente, típica del ensayo: la autora no discute la limitación, sin por ello declararla abiertamente."
+        why: "<i>in Abrede stellen</i> = «negar»; con <i>nicht</i> se convierte en <b>«no negar»</b>. Es una concesión prudente, típica del ensayo: la autora no discute la limitación; cuán abiertamente la admite depende del contexto."
       },
       {
         q: "Completa: «Der Entwurf trägt den Einwänden der Verbände kaum ___.» (tiene en cuenta)",
@@ -456,7 +456,7 @@ LINGUAI.addStrings("es", {
           "Die Reform kritisierte heftig.",
           "Die Reform hat heftige Kritik geübt."
         ],
-        why: "<i>auf Kritik stoßen</i> tiene sentido pasivo: la reforma <b>es criticada</b>. <i>Kritik üben</i> es activo: quien critica es el sujeto."
+        why: "<i>auf Kritik stoßen</i> tiene sentido pasivo: la reforma <b>fue criticada</b>. <i>Kritik üben</i> es activo: quien critica es el sujeto."
       },
       {
         q: "Transforma en atributo: «die Fragen, die noch geklärt werden müssen»",
@@ -468,7 +468,7 @@ LINGUAI.addStrings("es", {
         why: "Una pasiva con <i>müssen</i> se convierte en un <b>Gerundivum</b>: <i>zu klärenden</i>. <i>geklärten</i> diría que ya están aclaradas; <i>klärenden</i>, que son ellas las que aclaran algo."
       },
       {
-        tr: "Los resultados presentados por la comisión de expertos obtuvieron un amplio respaldo. Está previsto que las medidas que se derivan de ellos se apliquen el año próximo.",
+        tr: "Los resultados presentados por la comisión de expertos obtuvieron un amplio respaldo. Está previsto que las medidas que han de derivarse de ellos se apliquen el año próximo.",
         why: "En <i>Expertenkommission</i> el acento principal recae en <b>per</b>; en <i>stießen</i> la <b>ie</b> es larga y la <b>ß</b> se pronuncia [s]; en <i>Maßnahmen</i> el acento recae en <b>Maß</b>, con la <b>a</b> larga."
       },
       {
