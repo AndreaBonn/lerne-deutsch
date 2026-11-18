@@ -25,6 +25,7 @@ import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import vm from "node:vm";
+import { rejectedLetters } from "./neutral-letters.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const LANGS = ["it", "en", "es", "fr", "pl"];
@@ -118,11 +119,12 @@ if (bezAudio.length) {
 /* 4. A leak of the student's language into the neutral layer. The same test
    as in validate.mjs, repeated here, because this category is produced by a
    generator and a mistake in the source table would go straight into the
-   data. */
-const OBCE = /[ąęłżźćńśñçäöüßáíúõâêôõ]/;
+   data. The letters come from the one scanner in neutral-letters.mjs, so the
+   German alphabet is admitted here exactly as in validate.mjs. */
 for (const v of DANE) {
   for (const pole of ["it", "ex"]) {
-    if (OBCE.test(v[pole])) problemy.push(`${v.id}.${pole}: litera spoza alfabetu włoskiego`);
+    const obce = rejectedLetters(String(v[pole] || ""));
+    if (obce.length) problemy.push(`${v.id}.${pole}: letters outside the German alphabet: ${obce.join(" ")}`);
   }
 }
 
