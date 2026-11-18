@@ -1,30 +1,20 @@
 {
-  "bundleHash": "60742277199bb10a521716a8bf3b518d6ed6d6446d10eba359dc3a268f9ea44d",
+  "bundleHash": "2f2a7046f8059ddecf4c8fb2497ff36ca2b8cb8d20b5ba751e9742bfc7117503",
   "findings": [
     {
-      "kind": "traduction",
-      "msg": "« Untertreibung » signifie « litote » ou « sous-estimation / minimisation », selon le contexte ; « euphémisme » désigne une figure différente. Remplacer « l'euphémisme » par « la sous-estimation » ou « l'atténuation ».",
-      "path": "merged.lessons[0].vocab[2].tr"
+      "kind": "livello CEFR e distrattori",
+      "msg": "La domanda richiede soltanto di riconoscere un termine regionale, con distrattori appartenenti a categorie nettamente diverse. Per il livello C2, chiedere di distinguere la varietà standard dal dialetto o di valutare l'uso del termine in un contesto formale, con alternative linguisticamente plausibili.",
+      "path": "merged.lessons[1].exercises[1]"
     },
     {
-      "kind": "sens et traduction",
-      "msg": "« Preiswert » signifie « d'un bon rapport qualité-prix » et ne se réduit pas à « bon marché ». « Nicht gerade preiswert » peut donc critiquer le rapport qualité-prix plutôt que le prix élevé demandé par la phrase française. Retirer les réponses avec « preiswert » ou préciser un contexte de rapport qualité-prix.",
-      "path": "merged.lessons[0].exercises[7].a"
+      "kind": "livello CEFR e distrattori",
+      "msg": "La risposta è riconoscibile eliminando due parole di significato palesemente estraneo. Sostituire i distrattori con aggettivi plausibili nel contesto, che richiedano di distinguere «obsolet» da nozioni vicine come inefficace, controverso o superato dai risultati più recenti.",
+      "path": "merged.lessons[2].exercises[1]"
     },
     {
-      "kind": "explication trompeuse",
-      "msg": "« Nicht verifizierbar » signifie que la thèse ne peut pas être vérifiée ou établie, tandis que « lässt sich nicht verifizieren » peut aussi signifier qu'une tentative de vérification n'a pas abouti. Préciser cette distinction et employer « lässt sich nicht empirisch belegen » seulement si le contexte rend l'impossibilité claire.",
-      "path": "merged.lessons[2].exercises[7].why"
-    },
-    {
-      "kind": "progression grammaticale",
-      "msg": "L'explication présente sans réserve la transformation de tous les adjectifs en -ent en noms en -enz. C'est une tendance avec des exceptions, comme le précise correctement la théorie. Remplacer « les adjectifs » par « de nombreux adjectifs » et indiquer que le nom doit être vérifié.",
-      "path": "merged.lessons[2].exercises[4].why"
-    },
-    {
-      "kind": "précision linguistique",
-      "msg": "La formule « un latinisme par paragraphe » est une règle arbitraire : les latinismes courants ne rendent pas un texte pédant par leur seule fréquence. Conseiller plutôt de choisir les termes selon leur précision, le contexte et le public.",
-      "path": "merged.lessons[2].theory[4].tip"
+      "kind": "livello CEFR e distrattori",
+      "msg": "Anche nel test la domanda verifica unicamente la traduzione di un sostantivo concreto, con distrattori facilmente eliminabili. Verificare invece il riconoscimento di «Billett» come elvetismo standard e la scelta del registro o della varietà in un contesto dato.",
+      "path": "merged.test.exercises[6]"
     }
   ],
   "lang": "fr",

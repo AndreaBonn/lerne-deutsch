@@ -1,20 +1,15 @@
 {
-  "bundleHash": "88e17d4e091e52d550ef0678cc371c966ac51fefff70ded2628ec628e70d61fc",
+  "bundleHash": "3054141ecf898d5138bed36d63c120dc5a2491674cb170d7792732c09adb46d9",
   "findings": [
     {
-      "kind": "traduzione",
-      "msg": "«Film był wcale niezły» non è idiomatico in polacco: «wcale» richiede normalmente una negazione esplicita. Correggere in «Film wcale nie był taki zły» oppure «Film był całkiem niezły».",
-      "path": "merged.lessons[0].grammar.examples[1].tr"
+      "kind": "wymowa",
+      "msg": "W słowie „unproblematisch” akcent pada na sylabę „ma”, a nie na „un”. Usuń wskazanie akcentu na „un”.",
+      "path": "merged.lessons[0].exercises[9].why"
     },
     {
-      "kind": "spiegazione semantica",
-      "msg": "«Das kann sich sehen lassen» esprime una valutazione positiva, ma non implica necessariamente un risultato «znakomity». Sostituire «to znakomity wynik» con una formulazione come «to dobry wynik, którym można się pochwalić» e attenuare la stessa affermazione nella teoria e nella spiegazione dell'esercizio.",
-      "path": "merged.lessons[0].grammar.table.rows[4][2]"
-    },
-    {
-      "kind": "chiarezza concettuale",
-      "msg": "La premessa falsa di uno studio non rende automaticamente invalidi tutti i suoi risultati: possono restare validi indipendentemente da essa. Precisare nel testo che i risultati dipendono dalla premessa, oppure formulare la conclusione come una conseguenza da verificare.",
-      "path": "merged.lessons[2].exercises[5].text"
+      "kind": "wyjaśnienie",
+      "msg": "Polskie „kryterium” i „gremium” odmieniają się w liczbie pojedynczej, np. „kryterium/kryteria” oraz „gremium/gremium/gremia” w zależności od przypadku. Popraw zdanie o rzekomym braku odmiany, zachowując trafne porównanie liczby mnogiej.",
+      "path": "merged.lessons[2].theory[2].contrast"
     }
   ],
   "lang": "pl",

@@ -1,20 +1,20 @@
 {
-  "bundleHash": "254dcc27bbc9b11cf9a72762a1bb8639ca4414ce031a79b70744d76e423b0373",
+  "bundleHash": "fa4461530c865657f34e6b143d1d87bcab87202fc4eeef3b726024c34fe2f3ff",
   "findings": [
     {
-      "kind": "explicación incorrecta",
-      "msg": "La indicación «No formes el plural alemán con -s» se presenta como una prohibición general, aunque existen plurales alemanes en -s y la propia lección los menciona. Limítala a los ejemplos concretos: «No formes Gremien ni Kriterien añadiendo -s al singular».",
-      "path": "merged.lessons[2].theory[3].trap"
+      "kind": "Spiegazione fuorviante",
+      "msg": "«Konsistenz» nel senso di coerenza logica corrisponde anche allo spagnolo «consistencia»: non è un falso amico. Presentalo come termine polisemico in entrambe le lingue, distinguendo la coerenza argomentativa dalla consistenza materiale.",
+      "path": "merged.lessons[2].theory[2].contrast"
     },
     {
-      "kind": "explicación semántica",
-      "msg": "La explicación afirma que «obsolet» solo indica que algo ha quedado superado por el tiempo. También puede describir algo que ya no es necesario o aplicable por un cambio de circunstancias. Corrige la distinción con «hinfällig» sin atribuirle exclusivamente una causa temporal.",
-      "path": "merged.lessons[2].exercises[5].why"
+      "kind": "Spiegazione fuorviante",
+      "msg": "La frase esclude «consistencia» associandola solo alla solidità, ma in spagnolo il termine può indicare anche coerenza logica. Specifica che qui «consistencia» e «coherencia» sono entrambe traduzioni possibili.",
+      "path": "merged.lessons[2].exercises[4].why"
     },
     {
-      "kind": "razonamiento ambiguo",
-      "msg": "Que una premisa de un estudio resulte falsa no demuestra por sí solo que todos sus resultados carezcan de validez. Para que la segunda respuesta sea inequívoca, especifica que los resultados dependen de esa premisa o reformula la conclusión como una consecuencia posible.",
-      "path": "neutral.lessons[2].exercises[5].text"
+      "kind": "Ambiguità logica",
+      "msg": "Una premessa falsa non rende necessariamente invalidi tutti i risultati di uno studio: possono restare validi per altre ragioni. Specifica che i risultati dipendono interamente da quella premessa, oppure sostituisci «die Ergebnisse» con conclusioni che ne derivano necessariamente.",
+      "path": "merged.lessons[2].exercises[5].text"
     }
   ],
   "lang": "es",

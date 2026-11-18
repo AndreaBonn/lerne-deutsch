@@ -1,15 +1,15 @@
 {
-  "bundleHash": "e24ce636c4ff035d4954de60220085910ed7abee39fe084afd24fac98fa04da7",
+  "bundleHash": "6ad4ca3926dd381c1c38a6284338e39bcd06a7e697bd653eb04999c535ab988a",
   "findings": [
     {
       "kind": "ortografia",
-      "msg": "Il saluto svizzero si scrive «Grüezi» con l'iniziale maiuscola. Correggere anche la voce corrispondente nell'oggetto merged.",
-      "path": "neutral.lessons[1].exercises[6].pairs[3].it"
+      "msg": "Il saluto svizzero si scrive «Grüezi», con la maiuscola. Correggere la voce anche nella versione neutral.",
+      "path": "merged.lessons[1].exercises[6].pairs[3].it"
     },
     {
-      "kind": "livello CEFR",
-      "msg": "La maggior parte degli esercizi verifica il riconoscimento di singole parole, plurali regolari o contrasti di registro molto evidenti; anche il test ripropone prevalentemente questi contenuti. Per un'unità C2, introdurre negli esercizi esistenti distinzioni più sottili tra significati, registro, intenzione e interpretazioni dipendenti dal contesto, mantenendo i tipi e il numero di attività previsti.",
-      "path": "merged.lessons"
+      "kind": "spiegazione fuorviante",
+      "msg": "«nicht ganz ohne» può avere anche il significato letterale «non del tutto senza» quando introduce un complemento, per esempio «nicht ganz ohne Zucker». Precisare che «demanding» o «risky» è il significato idiomatico nell'uso pertinente, invece di escludere quello letterale in ogni contesto.",
+      "path": "merged.lessons[0].theory[3].trap"
     }
   ],
   "lang": "en",
