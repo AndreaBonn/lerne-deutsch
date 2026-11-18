@@ -1,4 +1,9 @@
 {
+  "archived": {
+    "bundleHash": "70829e536788a0e1e01b890d369734f47a92ea151d157dfec65b631bebf5988a",
+    "date": "2026-11-18",
+    "decision": "Q-C1-D8 esteso a C2 (N2)"
+  },
   "bundleHash": "70829e536788a0e1e01b890d369734f47a92ea151d157dfec65b631bebf5988a",
   "findings": [
     {
