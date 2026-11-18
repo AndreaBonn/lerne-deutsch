@@ -25,13 +25,13 @@ LINGUAI.addStrings("en", {
       },
       {
         h: "The preposition comes first",
-        p: "If the verb of the relative clause takes a preposition, the preposition opens the clause and governs the pronoun in its case: <em>die Kommission, mit der wir zusammenarbeiten</em> (mit + dative), <em>das Thema, für das sie sich interessiert</em> (für + accusative). The same goes for the genitive: <em>das Gesetz, auf dessen Grundlage die Behörde entschieden hat</em>; <em>die Kollegen, mit deren Hilfe wir das Projekt abgeschlossen haben</em>. The conjugated verb goes to the end, as in every subordinate clause."
+        p: "If the verb of the relative clause takes a preposition, the preposition opens the clause and governs the pronoun in its case: <em>die Kommission, mit der wir zusammenarbeiten</em> (mit + dative), <em>das Thema, für das sie sich interessiert</em> (für + accusative). With the genitive the preposition also comes first, but it governs the noun, not the pronoun: in <em>das Gesetz, auf dessen Grundlage die Behörde entschieden hat</em> and <em>die Kollegen, mit deren Hilfe wir das Projekt abgeschlossen haben</em>, <em>auf</em> and <em>mit</em> govern <em>Grundlage</em> and <em>Hilfe</em>, while <em>dessen</em> and <em>deren</em> stay in the genitive because they name the owner. The conjugated verb goes to the end, as in every subordinate clause."
       },
       {
         contrast: "English <em>whose</em> never changes: <em>the man whose car</em>, <em>the woman whose car</em>, <em>the companies whose cars</em>. German has to choose, and it looks at the possessor, that is, the antecedent: <em>dessen</em> for der and das nouns, <em>deren</em> for die nouns and plurals, whatever the gender of the noun that follows. <em>Das Unternehmen, dessen Chefin zurückgetreten ist</em>: <em>dessen</em> because <em>das Unternehmen</em> is neuter, even though <em>Chefin</em> is feminine. With prepositions, English usually leaves the preposition at the end and often drops the pronoun altogether: <em>the commission we work with</em>, <em>the topic she is interested in</em>. German allows neither: the relative pronoun is never left out, the preposition always stands in front of it, and the pronoun is declined: <em>die Kommission, mit der wir zusammenarbeiten</em>, <em>das Thema, für das sie sich interessiert</em>. And where formal English puts the possessor after the noun (<em>the law on the basis of which</em>), German puts it before: <em>auf dessen Grundlage</em>."
       },
       {
-        trap: "<em>deren</em> and <em>derer</em> are not the same thing: <em>derer</em> is a demonstrative that points ahead to a relative clause (<em>die Zahl derer, die das Angebot nutzen</em>, “the number of those who ...”), never the possessive relative. And the adjective after <em>dessen</em> and <em>deren</em> takes the strong ending, as if there were no article: <em>mit dessen neuem Vorschlag</em>, <em>deren letzter Roman</em>; <em>mit dessen neuen Vorschlag</em> is heard in speech, but in careful writing it is a mistake."
+        trap: "<em>deren</em> and <em>derer</em> are not the same thing: <em>derer</em> is mostly a demonstrative pointing ahead to a relative clause (<em>die Zahl derer, die das Angebot nutzen</em>, “the number of those who ...”), and as the possessive in front of a noun it is never used: there it is always <em>deren</em> (<em>die Forscherin, deren Ergebnisse</em>). And the adjective after <em>dessen</em> and <em>deren</em> takes the strong ending, as if there were no article: <em>mit dessen neuem Vorschlag</em>, <em>deren letzter Roman</em>; <em>mit dessen neuen Vorschlag</em> is heard in speech, but in careful writing it is a mistake."
       },
       {
         tip: "To build the relative clause, start from the main clause: <em>Die Regierung beruft sich auf ihre Ergebnisse.</em> The owner of <em>Ergebnisse</em> is <em>die Studie</em>, feminine: <em>ihre</em> becomes <em>deren</em>, and the whole group with the preposition moves to the front of the relative clause: <em>die Studie, auf deren Ergebnisse sich die Regierung beruft</em>."
@@ -156,7 +156,7 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "wer: “whoever” with no antecedent",
-        p: "<strong>wer</strong> opens a relative clause that has no noun to refer to: <em>Wer zu spät kommt, den bestraft das Leben</em>, “whoever comes too late is punished by life”. The main clause picks the relative clause up again with a demonstrative, the correlative, in the case it needs: <em>den</em> (accusative, <em>bestrafen</em>), <em>dem</em> (dative: <em>Wer viel verspricht, dem glaubt man nicht</em>). If the two cases are the same, the correlative can be left out: <em>Wer A sagt, (der) muss auch B sagen</em>. <em>wer</em> is declined too: <em>wem</em>, <em>wen</em>, <em>wessen</em>."
+        p: "<strong>wer</strong> opens a relative clause that has no noun to refer to: <em>Wer zu spät kommt, den bestraft das Leben</em>, “whoever comes too late is punished by life”. The main clause picks the relative clause up again with a demonstrative, the correlative, in the case it needs: <em>den</em> (accusative, <em>bestrafen</em>), <em>dem</em> (dative: <em>Wer viel verspricht, dem glaubt man nicht</em>). If the two cases are the same, the correlative can be left out: <em>Wer A sagt, (der) muss auch B sagen</em>. It can also be dropped when the case in the relative clause ranks lower than the one in the main clause (nominative, then accusative, then dative): <em>Wem das zu viel ist, (der) kann gehen</em>; most writers keep it anyway, for clarity. <em>wer</em> is declined too: <em>wem</em>, <em>wen</em>, <em>wessen</em>."
       },
       {
         h: "was and wo(r)-",
@@ -169,7 +169,7 @@ LINGUAI.addStrings("en", {
         trap: "Because English says <em>everything that</em>, <em>alles, das</em> looks natural; after <em>alles, nichts, etwas, das Einzige, das Beste</em> it has to be <em>was</em>: <em>Alles, was er sagt</em>. In formal writing avoid <em>über was, für was</em>: they are colloquial, the careful form is <em>worüber, wofür</em>. With an antecedent that is a specific noun, on the other hand, preposition + <em>der/die/das</em> stays: <em>die Frage, über die wir sprechen</em>."
       },
       {
-        tip: "To choose between <em>wer</em> and the correlative, ask two separate questions: what case does the verb of the relative clause want (<em>schaden</em> + dative: <em>wem</em>)? And what case does the verb of the main clause want (<em>fragen</em> + accusative: <em>den</em>)? The two answers can differ, and that is exactly where the correlative is needed."
+        tip: "To choose between <em>wer</em> and the correlative, ask two separate questions: what case does the verb of the relative clause want (<em>schaden</em> + dative: <em>wem</em>)? And what case does the verb of the main clause want (<em>fragen</em> + accusative: <em>den</em>)? The two answers can differ, and that is where the correlative is usually needed."
       }
     ],
     grammar: {
@@ -249,7 +249,7 @@ LINGUAI.addStrings("en", {
       {
         q: "Complete with declined wer and the correlative.",
         tr: "Those who are harmed most by the reform were consulted least.",
-        why: "<b>Wem</b>: <i>schaden</i> takes the dative. <b>den</b>: in the main clause <i>fragen</i> takes the accusative. The cases are different, so the correlative cannot be left out."
+        why: "<b>Wem</b>: <i>schaden</i> takes the dative. <b>den</b>: in the main clause <i>fragen</i> takes the accusative. The cases are different, so the correlative makes the sentence clear; strictly it could be dropped, because the dative <i>wem</i> ranks below the accusative, but careful writing keeps it."
       },
       {
         q: "Match each word with its meaning.",

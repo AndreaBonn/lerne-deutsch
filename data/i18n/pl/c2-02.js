@@ -25,13 +25,13 @@ LINGUAI.addStrings("pl", {
       },
       {
         h: "Przyimek stoi z przodu",
-        p: "Jeśli czasownik zdania względnego wymaga przyimka, przyimek otwiera zdanie względne i rządzi zaimkiem w swoim przypadku: <em>die Kommission, mit der wir zusammenarbeiten</em> (mit + celownik), <em>das Thema, für das sie sich interessiert</em> (für + biernik). Tak samo z dopełniaczem: <em>das Gesetz, auf dessen Grundlage die Behörde entschieden hat</em>; <em>die Kollegen, mit deren Hilfe wir das Projekt abgeschlossen haben</em>. Czasownik w formie osobowej idzie na koniec, jak w każdym zdaniu podrzędnym."
+        p: "Jeśli czasownik zdania względnego wymaga przyimka, przyimek otwiera zdanie względne i rządzi zaimkiem w swoim przypadku: <em>die Kommission, mit der wir zusammenarbeiten</em> (mit + celownik), <em>das Thema, für das sie sich interessiert</em> (für + biernik). Przy dopełniaczu przyimek też stoi z przodu, ale rządzi rzeczownikiem, a nie zaimkiem: w <em>das Gesetz, auf dessen Grundlage die Behörde entschieden hat</em> i <em>die Kollegen, mit deren Hilfe wir das Projekt abgeschlossen haben</em> <em>auf</em> i <em>mit</em> rządzą słowami <em>Grundlage</em> i <em>Hilfe</em>, a <em>dessen</em> i <em>deren</em> zostają w dopełniaczu, bo wskazują posiadacza. Czasownik w formie osobowej idzie na koniec, jak w każdym zdaniu podrzędnym."
       },
       {
         contrast: "Tu polski robi to samo co niemiecki: <em>którego, której, których</em> uzgadnia się z posiadaczem, czyli z poprzednikiem, a nie z rzeczą posiadaną. <em>Przedsiębiorstwo, którego szefowa ustąpiła</em> to dokładnie <em>Das Unternehmen, dessen Chefin zurückgetreten ist</em>: rodzaj nijaki przedsiębiorstwa, mimo że szefowa jest kobietą. Pułapki są gdzie indziej. Po pierwsze, podział form jest inny: <em>dessen</em> odpowiada polskiemu <em>którego</em> (rodzaj męski i nijaki), ale <em>deren</em> obejmuje i <em>której</em>, i <em>których</em>. Po drugie, rodzaj liczy się niemiecki, nie polski: <em>die Firma</em> to <em>deren</em>, choć „firma” też jest żeńska, ale <em>das Gesetz</em> to <em>dessen</em>, choć „ustawa” jest żeńska. Po trzecie, szyk: polski po przyimku stawia zaimek za rzeczownikiem (<em>na podstawie którego</em>, <em>z pomocą których</em>), a niemiecki zawsze przed nim: <em>auf dessen Grundlage</em>, <em>mit deren Hilfe</em>."
       },
       {
-        trap: "<em>deren</em> i <em>derer</em> to nie to samo: <em>derer</em> to zaimek wskazujący, który zapowiada zdanie względne (<em>die Zahl derer, die das Angebot nutzen</em>, „liczba tych, którzy ...”), nigdy zaimek dzierżawczy. A przymiotnik po <em>dessen</em> i <em>deren</em> dostaje odmianę mocną, tak jakby nie było rodzajnika: <em>mit dessen neuem Vorschlag</em>, <em>deren letzter Roman</em>; <em>mit dessen neuen Vorschlag</em> słychać w mowie potocznej, ale w starannym tekście pisanym to błąd."
+        trap: "<em>deren</em> i <em>derer</em> to nie to samo: <em>derer</em> to przeważnie zaimek wskazujący, który zapowiada zdanie względne (<em>die Zahl derer, die das Angebot nutzen</em>, „liczba tych, którzy ...”), a jako forma dzierżawcza przed rzeczownikiem nie występuje nigdy: tam zawsze stoi <em>deren</em> (<em>die Forscherin, deren Ergebnisse</em>). A przymiotnik po <em>dessen</em> i <em>deren</em> dostaje odmianę mocną, tak jakby nie było rodzajnika: <em>mit dessen neuem Vorschlag</em>, <em>deren letzter Roman</em>; <em>mit dessen neuen Vorschlag</em> słychać w mowie potocznej, ale w starannym tekście pisanym to błąd."
       },
       {
         tip: "Żeby zbudować zdanie względne, zacznij od zdania samodzielnego: <em>Die Regierung beruft sich auf ihre Ergebnisse.</em> Posiadaczem <em>Ergebnisse</em> jest <em>die Studie</em>, rodzaj żeński: <em>ihre</em> zamienia się w <em>deren</em>, a cała grupa z przyimkiem przechodzi na początek zdania względnego: <em>die Studie, auf deren Ergebnisse sich die Regierung beruft</em>."
@@ -156,7 +156,7 @@ LINGUAI.addStrings("pl", {
     theory: [
       {
         h: "wer: „kto” bez poprzednika",
-        p: "<strong>wer</strong> otwiera zdanie względne, które nie odnosi się do żadnego rzeczownika: <em>Wer zu spät kommt, den bestraft das Leben</em>, „kto się spóźnia, tego karze życie”. Zdanie główne podejmuje zdanie względne zaimkiem wskazującym, korelatem, w przypadku, którego samo potrzebuje: <em>den</em> (biernik, <em>bestrafen</em>), <em>dem</em> (celownik: <em>Wer viel verspricht, dem glaubt man nicht</em>). Jeśli oba przypadki są takie same, korelat można pominąć: <em>Wer A sagt, (der) muss auch B sagen</em>. Również <em>wer</em> się odmienia: <em>wem</em>, <em>wen</em>, <em>wessen</em>."
+        p: "<strong>wer</strong> otwiera zdanie względne, które nie odnosi się do żadnego rzeczownika: <em>Wer zu spät kommt, den bestraft das Leben</em>, „kto się spóźnia, tego karze życie”. Zdanie główne podejmuje zdanie względne zaimkiem wskazującym, korelatem, w przypadku, którego samo potrzebuje: <em>den</em> (biernik, <em>bestrafen</em>), <em>dem</em> (celownik: <em>Wer viel verspricht, dem glaubt man nicht</em>). Jeśli oba przypadki są takie same, korelat można pominąć: <em>Wer A sagt, (der) muss auch B sagen</em>. Może też odpaść, gdy przypadek w zdaniu względnym stoi niżej w hierarchii niż w zdaniu głównym (mianownik, potem biernik, potem celownik): <em>Wem das zu viel ist, (der) kann gehen</em>; większość piszących i tak go zostawia, dla jasności. Również <em>wer</em> się odmienia: <em>wem</em>, <em>wen</em>, <em>wessen</em>."
       },
       {
         h: "was i wo(r)-",
@@ -169,7 +169,7 @@ LINGUAI.addStrings("pl", {
         trap: "Po <em>alles, nichts, etwas, das Einzige, das Beste</em> stoi <em>was</em>, nie <em>das</em>: <em>Alles, was er sagt</em>, a nie <em>alles, das er sagt</em>. Dosłowne tłumaczenie „o czym”, „za co” daje <em>über was, für was</em>: w tekście formalnym to formy potoczne, staranna forma to <em>worüber, wofür</em>. Natomiast przy poprzedniku, który jest konkretnym rzeczownikiem, zostaje przyimek + <em>der/die/das</em>: <em>die Frage, über die wir sprechen</em>."
       },
       {
-        tip: "Żeby wybrać formę <em>wer</em> i korelat, zadaj dwa osobne pytania: jakiego przypadka wymaga czasownik zdania względnego (<em>schaden</em> + celownik: <em>wem</em>)? I jakiego przypadka wymaga czasownik zdania głównego (<em>fragen</em> + biernik: <em>den</em>)? Odpowiedzi mogą się różnić i właśnie wtedy korelat jest potrzebny. Uwaga: przypadek bierze się z czasownika niemieckiego. „Pytać kogoś” to po polsku dopełniacz, a <em>fragen</em> wymaga biernika."
+        tip: "Żeby wybrać formę <em>wer</em> i korelat, zadaj dwa osobne pytania: jakiego przypadka wymaga czasownik zdania względnego (<em>schaden</em> + celownik: <em>wem</em>)? I jakiego przypadka wymaga czasownik zdania głównego (<em>fragen</em> + biernik: <em>den</em>)? Odpowiedzi mogą się różnić i wtedy korelat jest zwykle potrzebny. Przypadek bierze się zawsze z czasownika niemieckiego, nie z polskiego: „szkodzić komuś” i <em>schaden</em> zgadzają się tu przypadkiem."
       }
     ],
     grammar: {
@@ -249,7 +249,7 @@ LINGUAI.addStrings("pl", {
       {
         q: "Uzupełnij odmienionym wer i korelatem.",
         tr: "Tych, którym reforma najbardziej szkodzi, najmniej pytano o zdanie.",
-        why: "<b>Wem</b>: <i>schaden</i> wymaga celownika. <b>den</b>: w zdaniu głównym <i>fragen</i> wymaga biernika, choć polskie „pytać kogoś” to dopełniacz. Przypadki są różne, więc korelatu nie można pominąć."
+        why: "<b>Wem</b>: <i>schaden</i> wymaga celownika. <b>den</b>: w zdaniu głównym <i>fragen</i> wymaga biernika, tak jak polskie „pytać kogoś”. Przypadki są różne, więc korelat czyni zdanie jasnym; ściśle biorąc można by go pominąć, bo celownik <i>wem</i> stoi w hierarchii niżej niż biernik, ale w starannym tekście się go zostawia."
       },
       {
         q: "Połącz każde słowo z jego znaczeniem.",
@@ -407,7 +407,7 @@ LINGUAI.addStrings("pl", {
         why: "<i>Wir sind uns der Verantwortung bewusst, die wir übernehmen.</i> <i>sich bewusst sein</i> wymaga dopełniacza, a zaimek zwrotny stoi w celowniku: <i>uns</i>. Zdanie względne może też stać zaraz po <i>Verantwortung</i>: <i>Wir sind uns der Verantwortung, die wir übernehmen, bewusst</i>."
       },
       {
-        tr: "Wniosek wymaga zgody wszystkich członków. Kto nie może wziąć udziału w głosowaniu, powinien wcześniej dowiedzieć się w zarządzie o terminy.",
+        tr: "Wniosek wymaga zgody wszystkich członków. Kto nie może wziąć udziału w głosowaniu, powinien wcześniej dowiedzieć się w zarządzie, jakie są terminy.",
         why: "W <i>Zustimmung</i> akcent pada na <b>Zu</b>; w <i>Abstimmung</i> akcent pada na <b>Ab</b>; w <i>erkundigen</i> akcent pada na <b>kun</b>."
       },
       {
@@ -487,7 +487,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         q: "Uzupełnij: w pierwszej luce zaimek względny dzierżawczy, w drugiej rodzajnik, którego wymaga sich schuldig machen.",
-        tr: "Ministra, której dymisji domagano się od tygodni, zaprzecza, jakoby dopuściła się niewłaściwego postępowania.",
+        tr: "Ministra, której dymisji od tygodni się domagają, zaprzecza, jakoby dopuściła się niewłaściwego postępowania.",
         why: "<b>deren</b>: <i>die Ministerin</i> jest rodzaju żeńskiego. <b>eines</b> (albo <b>des</b>): <i>sich einer Sache schuldig machen</i> rządzi dopełniaczem, a <i>Fehlverhalten</i> jest rodzaju nijakiego: <i>eines Fehlverhaltens</i>."
       },
       {
