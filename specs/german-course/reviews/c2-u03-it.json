@@ -1,40 +1,20 @@
 {
-  "bundleHash": "eefad5377c03515087372c60a37b9f3a8833d9b18e8322f1156b43f3d79d9179",
+  "bundleHash": "9a3989f3c9111959172ba748b4a8290f622a47aee75a16d70052062009d29eb2",
   "findings": [
     {
-      "kind": "pronuncia",
-      "msg": "In «Österreich» la sequenza finale è «reich», pronunciata [ʁaɪ̯ç]; «eich» corrisponde a [aɪ̯ç]. Correggere la spiegazione fonetica.",
-      "path": "merged.lessons[1].exercises[8].why"
-    },
-    {
-      "kind": "spiegazione linguistica",
-      "msg": "La regola «-um sostituito da -en» non descrive Spektrum → Spektren: qui cade anche la u. Distinguere il modello Gremium → Gremien dalla formazione Spektrum → Spektren, oppure indicare che il plurale va imparato per ogni parola.",
-      "path": "merged.lessons[2].grammar.note"
-    },
-    {
-      "kind": "spiegazione linguistica",
-      "msg": "La regola «-um sostituito da -en» non descrive Spektrum → Spektren. Correggere la generalizzazione e presentare le diverse forme con i rispettivi plurali.",
-      "path": "merged.lessons[2].theory[1].p"
-    },
-    {
-      "kind": "significato e alternative",
-      "msg": "«Verifizieren» significa accertare o confermare la verità, mentre «überprüfen» significa esaminare o controllare e non implica una conferma. Le tre risposte con «überprüfbar/überprüfen» cambiano quindi il significato richiesto: rimuoverle oppure riformulare la frase italiana e spiegare la distinzione.",
-      "path": "merged.lessons[2].exercises[7].a"
+      "kind": "traduzione e risposta ambigua",
+      "msg": "«Verificabile» in italiano può significare anche «controllabile» senza presupporre che la tesi sia vera. La consegna non distingue questo senso da quello di «verifizierbar», ma la spiegazione esclude «überprüfbar». Precisare nella frase italiana che si tratta di accertare la verità della tesi oppure accettare anche «Die These ist empirisch nicht überprüfbar».",
+      "path": "merged.lessons[2].exercises[7]"
     },
     {
       "kind": "spiegazione lessicale",
-      "msg": "«Überprüfen» e «bestätigen» non sono equivalenti intercambiabili di «verifizieren»: il primo indica un controllo, il secondo una conferma. Distinguere le fasi e i significati.",
-      "path": "merged.lessons[2].grammar.table.rows[1]"
+      "msg": "La distinzione è troppo categorica: «ordinär» può riferirsi anche a persone nel senso di «comune» o «ordinario», a seconda del contesto. Precisare che, riferito al comportamento descritto nell'esercizio, significa «volgare», senza limitare l'altra accezione alle cose.",
+      "path": "merged.lessons[2].exercises[2].why"
     },
     {
-      "kind": "ambiguità",
-      "msg": "La durata del viaggio e i due scali non dimostrano che la collega lo abbia trovato estenuante né che stia usando un understatement. Aggiungere un contesto esplicito, per esempio ritardi e una notte insonne, oppure chiedere quale interpretazione sia plausibile.",
-      "path": "merged.test.exercises[4].q"
-    },
-    {
-      "kind": "risposta errata",
-      "msg": "«Ein leicht schweizerischer Akzent» indica un accento solo vagamente svizzero, mentre la frase italiana chiede un accento svizzero leggero. Rimuovere questa alternativa; restano valide le forme con «einem leichten schweizerischen Akzent» o «leichtem schweizerischem Akzent».",
-      "path": "merged.lessons[1].exercises[7].a[4]"
+      "kind": "ortografia",
+      "msg": "Il saluto isolato è un'interiezione e va scritto con l'iniziale maiuscola: «Grüezi». Correggere anche la corrispondente voce in merged.",
+      "path": "neutral.lessons[1].exercises[6].pairs[3].it"
     }
   ],
   "lang": "it",
