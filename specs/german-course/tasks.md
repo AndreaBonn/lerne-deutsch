@@ -400,7 +400,7 @@ D8 per lingua, poi audio.
 - [x] T9.20 | F9 | Conversazioni 1-7 core + it, D8 | 3h | verify: `npm run check:porting -- conv-1 --stage core,it,review` (rosso) | integrazione | dip: F8 chiusa | par: ok | rollback: revert | R26
 - [x] T9.21 | F9 | Conversazioni 8-14 core + it, D8 | 3h | verify: `npm run check:porting -- conv-2 --stage core,it,review` (rosso) | integrazione | dip: F8 chiusa | par: ok | rollback: revert | R26
 - [x] T9.22 | F9 | Scenari chat core + it, D8 | 1,5h | verify: `npm run check:porting -- chat --stage core,it,review` (rosso) | integrazione | dip: F8 chiusa | par: ok | rollback: revert | R26
-- [ ] T9.23 | F9 | Conversazioni e chat: nakładki en, es, fr, pl con D8 | 5h | verify: `npm run check:porting -- conv chat --stage en,es,fr,pl` (rosso) | integrazione | dip: T9.20-T9.22 | par: ok | rollback: revert | R20, R26
+- [?] T9.23 | F9 | Conversazioni e chat: nakładki en, es, fr, pl con D8 | 5h | verify: `npm run check:porting -- conv chat --stage en,es,fr,pl` (rosso) | integrazione | dip: T9.20-T9.22 | par: ok | rollback: revert | R20, R26 (Q: Codex non risponde, D8 fr/pl da completare quando torna)
 - [ ] T9.24 | F9 | Audio conversazioni (due voci), rimozione semi T1.81 | 0,5h | verify: `npm run check:porting -- conv --stage audio` e 0 orfani | integrazione | dip: T9.23 | par: seq | rollback: revert + `audio:prune` | R22
 - [ ] T9.25 | F9 | DOM `conversazione`, `chat`, `llm-talk`; chiusura F9b | 1h | verify: `npm run test:all` esce 0 | e2e | dip: T9.20-T9.24 | par: seq | rollback: revert | R31
 
