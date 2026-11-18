@@ -1,7 +1,28 @@
 {
-  "bundleHash": "dc0a248b90cdfaae0d73264c237babb4111b0ac4c6e25d6ecb69c807837f9b37",
-  "findings": [],
+  "bundleHash": "022d00f6133e3f230d860be571075127035dfbb5fa6c400602cc417cb3acba1e",
+  "findings": [
+    {
+      "kind": "grammatica",
+      "msg": "«Ein Ausreichend» sostantiva il voto scolastico e richiede la flessione dell’aggettivo: «bei einem Ausreichenden».",
+      "path": "neutral[6].sentences[3]"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "Correggere «bei einem Ausreichend» in «bei einem Ausreichenden», come nel testo neutro.",
+      "path": "merged[6].sentences[3]"
+    },
+    {
+      "kind": "significato",
+      "msg": "La frase implica che chiunque sia nato altrove non possa avere una Heimat fondata sull’origine, ma non specifica rispetto a quale luogo. Chiarire il riferimento, per esempio «all jenen verschlossen, die nicht an diesem Ort geboren sind».",
+      "path": "neutral[7].sentences[5]"
+    },
+    {
+      "kind": "significato",
+      "msg": "Chiarire rispetto a quale luogo valga «anderswo zur Welt gekommen sind», per esempio con «nicht an diesem Ort geboren sind».",
+      "path": "merged[7].sentences[5]"
+    }
+  ],
   "lang": "it",
   "unit": "readings-c",
-  "verdict": "pass"
+  "verdict": "fail"
 }

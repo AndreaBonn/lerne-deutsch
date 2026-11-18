@@ -576,7 +576,7 @@ LINGUAI.addReadings([
       "Im neunzehnten Jahrhundert romantisch verklärt, im Nationalsozialismus zur Blut-und-Boden-Ideologie verengt und in der Nachkriegszeit durch kitschige Heimatfilme ins Harmlose gewendet, hat der Begriff mehr Umdeutungen erlebt als die meisten seiner Nachbarn im Wörterbuch.",
       "Lange Zeit mied ihn deshalb, wer sich für aufgeklärt hielt, und überließ ihn bereitwillig denen, die damit Grenzen ziehen wollten.",
       "Seit einigen Jahren jedoch wird das Wort neu verhandelt: Es gibt Ministerien, die es im Namen tragen, und Schriftstellerinnen mit Migrationsgeschichte fragen, ob man nicht auch mehrere Heimaten haben könne.",
-      "Wäre Heimat nur eine Frage der Herkunft, so bliebe sie all jenen verschlossen, die anderswo zur Welt gekommen sind.",
+      "Wäre Heimat nur eine Frage der Herkunft, so bliebe sie all jenen verschlossen, die nicht dort zur Welt gekommen sind, wo sie heute leben.",
       "Verstünde man sie hingegen als etwas, das man sich aneignet, indem man sich an einem Ort einrichtet und dort gebraucht wird, so verlöre sie womöglich ihre ausgrenzende Schärfe.",
       "Welche der beiden Lesarten sich durchsetzen wird, ist offen; dass um ein einziges Wort so erbittert gestritten wird, zeigt immerhin, wie viel man ihm noch zutraut."
     ],
