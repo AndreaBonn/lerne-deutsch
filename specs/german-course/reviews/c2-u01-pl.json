@@ -1,20 +1,20 @@
 {
-  "bundleHash": "f4ee076479436e916788077ec54d3812c385b112f0b7b8189d695a79ced58723",
+  "bundleHash": "66a9e6d9c656a89fe0c6749cb329fc86cd7ad7b92a4bc55942e2a6ae7ef60228",
   "findings": [
     {
-      "kind": "grammatica polacca",
-      "msg": "La frase polacca contiene una forma scorretta dopo «przeczy»: il verbo richiede il dativo. Sostituire «rozpowszechnionym dotąd założenia» con «rozpowszechnionym dotąd założeniom».",
-      "path": "merged.lessons[0].exercises[7].q"
+      "kind": "Spiegazione grammaticale",
+      "msg": "L’imiesłów I attributivo non indica necessariamente un’azione contemporanea: può riferirsi anche al futuro, come in «die morgen abreisenden Gäste». Presenta la contemporaneità come valore frequente, non come regola assoluta.",
+      "path": "merged.lessons[0].grammar.note"
     },
     {
-      "kind": "pronuncia",
-      "msg": "In «Verantwortung» l’accento cade su «wort», non su «ant». Correggere l’indicazione fonetica.",
-      "path": "merged.lessons[2].exercises[9].why"
+      "kind": "Traduzione e spiegazione",
+      "msg": "«Die Kosten sind zu erwarten» significa che ci si devono aspettare i costi, non semplicemente che è possibile prevederli. Sostituisci «można przewidzieć» con «należy się spodziewać» e usa un esempio come «Die Kosten sind kaum zu beziffern» per illustrare il valore di possibilità.",
+      "path": "merged.lessons[1].grammar.table.rows[3]"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "L’affermazione secondo cui in tedesco una lunga costruzione participiale non può seguire il sostantivo è troppo assoluta: esistono gruppi participiali posposti, per esempio «die Reform, seit Jahren von Fachleuten gefordert». Precisare che la costruzione prenominale trattata nella lezione precede il sostantivo, mentre la costruzione posposta ha forma e punteggiatura proprie.",
-      "path": "merged.lessons[0].theory[2].contrast"
+      "kind": "Spiegazione grammaticale",
+      "msg": "Il passaggio da «die zu erwartenden Kosten» a «die Kosten können erwartet werden» suggerisce una possibilità generica e non rende bene il valore di previsione della costruzione. Usa un esempio non ambiguo per mostrare l’equivalenza con la passiva modale e conserva «zu erwartende Kosten» per spiegare la previsione.",
+      "path": "merged.lessons[1].theory[4].tip"
     }
   ],
   "lang": "pl",
