@@ -1108,7 +1108,7 @@ LINGUAI.addStrings("fr", {
       "reconnaître les traits de la langue familière (hab, 'ne, was pour etwas)",
       "comprendre les austriacismes et helvétismes les plus courants (Jänner, Paradeiser, Velo, grüezi)",
       "distinguer dialecte et variété standard nationale",
-      "choisir l'allemand standard pour écrire ou parler dans un contexte formel"
+      "choisir une variété standard, et non la langue familière, pour écrire ou parler dans un contexte formel"
     ],
     theory: [
       {
@@ -1201,7 +1201,7 @@ LINGUAI.addStrings("fr", {
           "C'est une faute de prononciation.",
           "Il parle d'une autre matière."
         ],
-        why: "Devant <i>e</i> et <i>i</i>, le <i>ch</i> initial se prononce [ç] dans une grande partie de l'Allemagne et [k] dans beaucoup de régions d'Autriche et du Sud : ce sont des <b>variantes régionales, standard toutes les deux</b>."
+        why: "Dans des mots comme <i>Chemie</i> et <i>China</i>, le <i>ch</i> initial devant <i>e</i> et <i>i</i> se prononce [ç] dans une grande partie de l'Allemagne et [k] dans beaucoup de régions d'Autriche et du Sud : ce sont des <b>variantes régionales, standard toutes les deux</b>."
       },
       {
         q: "Complétez avec le mot du standard d'Allemagne : « In Wien sagt man Paradeiser, in Hamburg sagt man ___. »",

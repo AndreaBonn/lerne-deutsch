@@ -978,7 +978,7 @@ LINGUAI.addStrings("en", {
       },
       {
         h: "Irony in the particles",
-        p: "German irony often travels through modal particles and through a positive adjective in a negative situation. <em>Das ist <strong>ja</strong> eine schöne Bescherung!</em> (“well, this is a fine mess!”): <em>ja</em> in the exclamation signals surprise, and <em>schön</em> is read backwards. <em>Du bist <strong>mir</strong> ja ein schöner Freund!</em> is a reproach: the ethical dative <em>mir</em> brings the speaker into it, roughly “some friend you are!”. <em>Na, das hast du ja toll hingekriegt!</em> is said to someone who has just made a mess of things. The particles alone do not make a sentence ironic: they strengthen the exclamation and the speaker's involvement. The real signal is the clash between the word and the situation, together with the intonation: these are the cues that let you hear the reversed meaning."
+        p: "German irony often travels through modal particles and through a positive adjective in a negative situation. <em>Das ist <strong>ja</strong> eine schöne Bescherung!</em> (“well, this is a fine mess!”): <em>ja</em> in the exclamation signals surprise, and <em>schön</em> is meant ironically, in the opposite sense. <em>Du bist <strong>mir</strong> ja ein schöner Freund!</em> is a reproach: the ethical dative <em>mir</em> brings the speaker into it, roughly “some friend you are!”. <em>Na, das hast du ja toll hingekriegt!</em> is said to someone who has just made a mess of things. The particles alone do not make a sentence ironic: they strengthen the exclamation and the speaker's involvement. The real signal is the clash between the word and the situation, together with the intonation: these are the cues that let you hear the reversed meaning."
       },
       {
         contrast: "English has a famous tradition of understatement (“not bad”, “a bit of a problem”, “not the brightest bulb”), so the mechanism will feel familiar. The calibration is what differs. American workplace praise tends to run high (“awesome”, “great job!”), and against that background a German boss's <em>nicht schlecht</em> can sound lukewarm to you, when it may be the highest praise you will get. The reverse also holds: enthusiastic American praise in a German professional setting can come across as inflated, and therefore not quite believable."
@@ -1008,7 +1008,7 @@ LINGUAI.addStrings("en", {
         { tr: "The negotiations were not entirely free of problems.", note: "litotes: in this context, they were in fact difficult" },
         { tr: "The movie actually wasn't that bad.", note: "gar nicht mal so: low-key praise" },
         { tr: "He's not exactly the most hardworking.", note: "nicht gerade + superlative: softened criticism" },
-        { tr: "Well, this is a fine mess!", note: "irony: ja in the exclamation, schön read backwards" },
+        { tr: "Well, this is a fine mess!", note: "irony: ja in the exclamation, schön meant in the opposite sense" },
         { tr: "Some friend you are!", note: "ironic reproach with the ethical dative mir" },
         { tr: "The result is genuinely impressive.", note: "sich sehen lassen können: praise without fanfare" }
       ]
@@ -1053,7 +1053,7 @@ LINGUAI.addStrings("en", {
           "denn",
           "etwa"
         ],
-        why: "In an exclamation the particle is <b>ja</b>, which signals surprise; together with <i>schön</i> read backwards it gives “what a mess!”. <i>denn</i> and <i>etwa</i> are question particles."
+        why: "In an exclamation the particle is <b>ja</b>, which signals surprise; together with <i>schön</i> used ironically, in the opposite sense, it gives “what a mess!”. <i>denn</i> and <i>etwa</i> are question particles."
       },
       {
         q: "Which sentence is low-key praise for a very good result?",
@@ -1071,7 +1071,7 @@ LINGUAI.addStrings("en", {
           "He is paying you a compliment: you are a charming friend.",
           "He is telling you that you are his best friend."
         ],
-        why: "It is an ironic reproach: <i>schön</i> is read backwards, and the ethical dative <b>mir</b> stresses that the speaker is personally affected, much like English “some friend you are!”."
+        why: "It is an ironic reproach: <i>schön</i> means the opposite of what it says, and the ethical dative <b>mir</b> stresses that the speaker is personally affected, much like English “some friend you are!”."
       },
       {
         q: "Complete: in the first gap the adverb of the softening phrase “to put it mildly”, in the second a word describing the outcome (“successful”).",
@@ -1108,7 +1108,7 @@ LINGUAI.addStrings("en", {
       "recognize the features of colloquial speech (hab, 'ne, was for etwas)",
       "understand the most common Austrian and Swiss words (Jänner, Paradeiser, Velo, grüezi)",
       "tell dialect apart from a national standard variety",
-      "choose standard German when writing or speaking in a formal setting"
+      "choose a standard variety, not colloquial speech, when writing or speaking in a formal setting"
     ],
     theory: [
       {
@@ -1201,7 +1201,7 @@ LINGUAI.addStrings("en", {
           "It is a pronunciation mistake.",
           "He is talking about a different subject."
         ],
-        why: "Before <i>e</i> and <i>i</i>, initial <i>ch</i> is pronounced [ç] in most of Germany and [k] in many parts of Austria and the south: these are <b>regional variants, both standard</b>."
+        why: "In words like <i>Chemie</i> and <i>China</i>, initial <i>ch</i> before <i>e</i> and <i>i</i> is pronounced [ç] in most of Germany and [k] in many parts of Austria and the south: these are <b>regional variants, both standard</b>."
       },
       {
         q: "Complete with the word used in the German standard of Germany: “In Wien sagt man Paradeiser, in Hamburg sagt man ___.”",

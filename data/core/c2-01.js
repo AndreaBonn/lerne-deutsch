@@ -492,7 +492,7 @@ LINGUAI.addUnits("C2", [
         },
         vocab: [
           { it: "die Ironie", plural: "-", ex: "Ihre Ironie hat nicht jeder verstanden." },
-          { it: "das Understatement", plural: "-", ex: "„Nicht schlecht“ ist ein typisches Understatement." },
+          { it: "das Understatement", plural: "die Understatements", ex: "„Nicht schlecht“ ist ein typisches Understatement." },
           { it: "die Untertreibung", plural: "die Untertreibungen", ex: "„Etwas anstrengend“ war eine gewaltige Untertreibung." },
           { it: "die Übertreibung", plural: "die Übertreibungen", ex: "Seine Übertreibungen nimmt niemand mehr ernst." },
           { it: "die Anspielung", plural: "die Anspielungen", ex: "Die Anspielung auf seine Niederlage war unüberhörbar." },

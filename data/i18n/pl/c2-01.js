@@ -1010,7 +1010,7 @@ LINGUAI.addStrings("pl", {
         { tr: "Nie jest on akurat najpracowitszy.", note: "nicht gerade + stopień najwyższy: złagodzona krytyka" },
         { tr: "No to pięknie!", note: "ironia: ja w wykrzyknieniu, schön na odwrót" },
         { tr: "Ładny z ciebie przyjaciel!", note: "ironiczny wyrzut z celownikiem etycznym mir" },
-        { tr: "Wynik jest naprawdę imponujący.", note: "sich sehen lassen können: pochwała bez patosu" }
+        { tr: "Wynik jest naprawdę godny uwagi.", note: "sich sehen lassen können: pochwała bez patosu" }
       ]
     },
     vocab: [
@@ -1108,7 +1108,7 @@ LINGUAI.addStrings("pl", {
       "rozpoznawać cechy języka potocznego (hab, 'ne, was zamiast etwas)",
       "rozumieć najczęstsze austriacyzmy i helwetyzmy (Jänner, Paradeiser, Velo, grüezi)",
       "odróżniać dialekt od narodowej odmiany standardowej",
-      "wybierać standardowy niemiecki, gdy piszesz lub mówisz w sytuacji oficjalnej"
+      "wybierać odmianę standardową, a nie potoczną, gdy piszesz lub mówisz w sytuacji oficjalnej"
     ],
     theory: [
       {
@@ -1201,7 +1201,7 @@ LINGUAI.addStrings("pl", {
           "To błąd wymowy.",
           "Mówi o innym przedmiocie."
         ],
-        why: "Przed <i>e</i> i <i>i</i> nagłosowe <i>ch</i> wymawia się [ç] w większej części Niemiec i [k] w wielu rejonach Austrii i południa: to <b>warianty regionalne, oba standardowe</b>."
+        why: "W słowach takich jak <i>Chemie</i> i <i>China</i> nagłosowe <i>ch</i> przed <i>e</i> i <i>i</i> wymawia się [ç] w większej części Niemiec i [k] w wielu rejonach Austrii i południa: to <b>warianty regionalne, oba standardowe</b>."
       },
       {
         q: "Uzupełnij słowem ze standardu Niemiec: „In Wien sagt man Paradeiser, in Hamburg sagt man ___.”",
@@ -1337,7 +1337,7 @@ LINGUAI.addStrings("pl", {
       {
         q: "Uzupełnij: „Die ___ seiner Argumentation überzeugte die Kommission.”",
         hint: "rzeczownik od konsistent",
-        why: "<b>Konsistenz</b>: przymiotniki na <i>-ent</i> dają rzeczowniki żeńskie na <i>-enz</i>, jak <i>ambivalent → Ambivalenz</i>. Tu znaczy „spójność”, nie konsystencję."
+        why: "<b>Konsistenz</b>: przymiotniki na <i>-ent</i> dają rzeczowniki żeńskie na <i>-enz</i>, jak <i>ambivalent → Ambivalenz</i>. Tu znaczy „spójność, niesprzeczność” wywodu, a nie gęstość."
       },
       {
         q: "Uzupełnij: w pierwszej luce latynizm oznaczający „przesłankę”, w drugiej przymiotnik znaczący „bez mocy, nieważny”.",

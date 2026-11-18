@@ -1108,7 +1108,7 @@ LINGUAI.addStrings("es", {
       "reconocer los rasgos de la lengua coloquial (hab, 'ne, was por etwas)",
       "entender los austriacismos y helvetismos más comunes (Jänner, Paradeiser, Velo, grüezi)",
       "distinguir entre dialecto y variedad estándar nacional",
-      "elegir el estándar alemán al escribir o hablar en un contexto formal"
+      "elegir una variedad estándar, y no la lengua coloquial, al escribir o hablar en un contexto formal"
     ],
     theory: [
       {
@@ -1201,7 +1201,7 @@ LINGUAI.addStrings("es", {
           "Es un error de pronunciación.",
           "Está hablando de otra asignatura."
         ],
-        why: "Delante de <i>e</i> y de <i>i</i>, la <i>ch</i> inicial se pronuncia [ç] en gran parte de Alemania y [k] en muchas zonas de Austria y del sur: son <b>variantes regionales, ambas estándar</b>."
+        why: "En palabras como <i>Chemie</i> y <i>China</i>, la <i>ch</i> inicial delante de <i>e</i> y de <i>i</i> se pronuncia [ç] en gran parte de Alemania y [k] en muchas zonas de Austria y del sur: son <b>variantes regionales, ambas estándar</b>."
       },
       {
         q: "Completa con la palabra del estándar de Alemania: «In Wien sagt man Paradeiser, in Hamburg sagt man ___.»",
@@ -1255,7 +1255,7 @@ LINGUAI.addStrings("es", {
         p: "En muchos sustantivos neutros en <em>-um</em> la terminación <em>-um</em> cae y en su lugar entra <strong>-en</strong>: <em>Gremi|um → Gremi|en</em>, <em>Kriteri|um → Kriteri|en</em>, <em>Spektr|um → Spektr|en</em>, <em>Muse|um → Muse|en</em>. No es el único modelo: <em>das Visum</em> hace <em>die Visa</em> (o <em>Visen</em>), <em>das Praktikum</em> hace <em>die Praktika</em>, y alguna palabra entrada hace poco toma <em>-s</em>. El plural se comprueba palabra por palabra. Dos esquemas frecuentes de derivación, no reglas sin excepciones: muchos verbos en <em>-ieren</em> dan sustantivos en <em>-ation</em> o <em>-ierung</em> (<em>verifizieren → die Verifikation, die Verifizierung</em>); muchos adjetivos en <em>-ent</em> y <em>-ant</em> dan sustantivos en <em>-enz</em> y <em>-anz</em>: <em>konsistent → die Konsistenz</em>, <em>ambivalent → die Ambivalenz</em>, <em>tolerant → die Toleranz</em>. Estos sustantivos son femeninos; aun así, el derivado se comprueba en el diccionario."
       },
       {
-        contrast: "Para un hispanohablante la Bildungssprache es el registro más transparente del alemán: son los mismos <strong>cultismos</strong> que usa el español culto, y <em>Prämisse, Konsequenz, obsolet, ambivalent, implizieren</em> se entienden enseguida. El riesgo está en los <strong>falsos amigos</strong>. <em>konsistent</em>, en el registro culto, significa «coherente, sin contradicciones»; el sentido material de «sólido, compacto» existe, sobre todo en <em>die Konsistenz</em> de una masa, pero en un ensayo casi nunca es el que se busca; <em>konsequent</em> es «coherente con lo que uno dice, firme», no «consecuente» en el sentido de resultante. <em>ordinär</em>, en cambio, coincide con el español en sus dos sentidos: dicho de una persona o de un comportamiento es «vulgar», como una persona «ordinaria», y dicho de una cosa puede ser «común, corriente» (<em>ganz ordinäres Papier</em>); para «normal, habitual» sin matiz el alemán prefiere <em>gewöhnlich</em>. Y <em>die Konfession</em> es solo la confesión religiosa, mientras que confesar los pecados es <em>die Beichte</em>. El plural, por último, no sigue al español: <em>die Kriterien</em>, no <em>Kriterios</em> ni <em>Kriteria</em>."
+        contrast: "Para un hispanohablante la Bildungssprache es el registro más transparente del alemán: son los mismos <strong>cultismos</strong> que usa el español culto, y <em>Prämisse, Konsequenz, obsolet, ambivalent, implizieren</em> se entienden enseguida. El riesgo está en los <strong>falsos amigos</strong>. <em>konsistent</em>, en el registro culto, significa «coherente, sin contradicciones»; el sentido material de «sólido, compacto» existe, sobre todo en <em>die Konsistenz</em> de una masa, pero en un ensayo casi nunca es el que se busca; <em>konsequent</em>, en cambio, es un amigo fiel: «coherente con sus principios, firme», como una persona «consecuente». <em>ordinär</em>, en cambio, coincide con el español en sus dos sentidos: dicho de una persona o de un comportamiento es «vulgar», como una persona «ordinaria», y dicho de una cosa puede ser «común, corriente» (<em>ganz ordinäres Papier</em>); para «normal, habitual» sin matiz el alemán prefiere <em>gewöhnlich</em>. Y <em>die Konfession</em> es la confesión en el sentido de credo o comunidad religiosa (católica, protestante); confesar los pecados es <em>die Beichte</em>, y confesar un delito, <em>das Geständnis</em>. El plural, por último, no sigue al español: <em>die Kriterien</em>, no <em>Kriterios</em> ni <em>Kriteria</em>."
       },
       {
         trap: "No formes el plural alemán con <em>-s</em> ni con las terminaciones nativas: <em>die Gremiums</em> y <em>die Kriteriume</em> no existen. Y atención al acento, que en los Fremdwörter latinos y griegos como estos suele caer hacia el final; compruébalo palabra por palabra: <em>Phäno<b>men</b>, Prä<b>mis</b>se, konsis<b>tent</b>, verifi<b>zie</b>ren</em>."
@@ -1355,7 +1355,7 @@ LINGUAI.addStrings("es", {
       },
       {
         q: "Traduce: «La tesis no es verificable empíricamente.», en el sentido de que los datos no permiten comprobar que sea cierta (die These, empirisch, verifizierbar)",
-        why: "<i>Die These ist empirisch nicht verifizierbar</i>. Se aceptan también <i>lässt sich nicht verifizieren</i>, <i>ist nicht zu verifizieren</i>. No vale en cambio <i>überprüfbar</i>: <i>überprüfen</i> significa «revisar, controlar» y no implica la confirmación, mientras que <i>verifizieren</i> significa comprobar que algo es cierto."
+        why: "<i>Die These ist empirisch nicht verifizierbar</i>. Se aceptan también <i>lässt sich nicht verifizieren</i>, <i>ist nicht zu verifizieren</i>. Aquí no se acepta <i>überprüfbar</i>, porque la consigna pide establecer la verdad: <i>überprüfen</i> significa «revisar, controlar» y no implica la confirmación, mientras que <i>verifizieren</i> significa comprobar que algo es cierto."
       },
       {
         tr: "La premisa del estudio es controvertida. Los críticos consideran que los resultados no son verificables y que las consecuencias que se han sacado de ellos son precipitadas.",
