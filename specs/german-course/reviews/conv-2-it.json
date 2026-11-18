@@ -1,28 +1,7 @@
 {
-  "bundleHash": "8119599878f1fdee5e726abde0cd51e7bdb9fe7b985e27ad7767d44cee0755bb",
-  "findings": [
-    {
-      "kind": "grammatica",
-      "msg": "«Formular» è neutro: il pronome indefinito deve essere «eins», ma con «geben» è più naturale riprendere il sostantivo con «ein Formular»: «Kein Problem, ich gebe Ihnen ein Formular».",
-      "path": "neutral[1].turns[4].it"
-    },
-    {
-      "kind": "livello CEFR",
-      "msg": "Per A2 il dialogo concentra lessico amministrativo e ferroviario specialistico come «Sparpreis», «Zugbindung aufgehoben» e «mit einmal Umsteigen», senza spiegazioni lessicali sufficienti. Semplificare le battute tedesche o fornire un supporto mirato ai termini indispensabili.",
-      "path": "merged[4].turns[3:6]"
-    },
-    {
-      "kind": "traduzione",
-      "msg": "«Il certificato di residenza» può suggerire un documento che attesta la residenza in senso italiano; qui si tratta della conferma della registrazione anagrafica. Usare «certificato di registrazione anagrafica» in traduzione e consegna.",
-      "path": "merged[1].turns[5].tr"
-    },
-    {
-      "kind": "chiarezza",
-      "msg": "«Il comparativo con als e la frase dopo» è una spiegazione incompleta. Specificare che «als» introduce il secondo termine del confronto e che nella subordinata «als es auf den Fotos aussah» il verbo coniugato va alla fine.",
-      "path": "merged[5].closing"
-    }
-  ],
+  "bundleHash": "17cff58f9948d8ae13b59422843591edf7086aa5ae6bbe17bdbe85482a27d663",
+  "findings": [],
   "lang": "it",
   "unit": "conv-2",
-  "verdict": "fail"
+  "verdict": "pass"
 }
