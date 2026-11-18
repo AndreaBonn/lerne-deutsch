@@ -1,25 +1,20 @@
 {
-  "bundleHash": "59bac4269d846ff1d3efef5612c93863eb0ee8156df744f0e1622e9fc6e744fc",
+  "bundleHash": "e5dd225c2fa799fe254dd75b98e4ac952cb7ed3fb4747980288f1f85b7278534",
   "findings": [
     {
-      "kind": "livello CEFR",
-      "msg": "Gli esercizi verificano soprattutto distinzioni lessicali e regole di formazione delle parole introduttive, con frasi brevi e scelte spesso elementari. Anche considerando il formato fisso, l’unità non propone la precisione semantica, la variazione di registro o le scelte morfologiche contestuali attese a C2. Sostituire parte degli item con casi avanzati e sfumati mantenendo tipi e numero degli esercizi.",
+      "kind": "Niveau CECR",
+      "msg": "Les trois leçons et le test reposent surtout sur la reconnaissance de formes fréquentes, des phrases isolées et des traductions directes. Ils n'évaluent pas suffisamment la maîtrise fine attendue au C2. Conserver les formats et les nombres d'exercices prévus, mais introduire des choix de registre, des nuances sémantiques et des formations lexicales moins transparentes dans des contextes plus exigeants.",
       "path": "merged.lessons"
     },
     {
-      "kind": "livello CEFR",
-      "msg": "Il test ripropone principalmente riconoscimenti e completamenti elementari, senza verificare le sfumature lessicali o di registro attese a C2. Inserire item contestualizzati più impegnativi, mantenendo il formato previsto.",
-      "path": "merged.test.exercises"
+      "kind": "Note contrastive",
+      "msg": "La note présente des règles générales sur le genre et l'orthographe des composés sans expliquer une interférence propre aux francophones. La reformuler autour d'une erreur plausible liée à l'ordre français des éléments ou aux composés français écrits avec des espaces ou des traits d'union.",
+      "path": "merged.lessons[1].theory[3].trap"
     },
     {
-      "kind": "spiegazione imprecisa",
-      "msg": "La frase attribuisce a zer- sempre un significato di distruzione. Il prefisso può indicare anche dispersione o altri risultati, come in zerstreuen. Specificare che esprime spesso la rottura o la distruzione, senza presentarla come regola universale.",
-      "path": "neutral.lessons[2].vocab[2].ex"
-    },
-    {
-      "kind": "spiegazione imprecisa",
-      "msg": "La spiegazione afferma che per i sostantivi indicati il tedesco ha bisogno di un composto o derivato. È una generalizzazione eccessiva: per esempio, der Regen può essere usato come nome non numerabile senza ricorrere a Regenfälle. Presentare queste forme come modi per contare eventi o esprimere significati correlati, non come sostituzioni obbligatorie.",
-      "path": "merged.lessons[0].theory[2].contrast"
+      "kind": "Note contrastive",
+      "msg": "La note oppose les sens de préfixes allemands, mais ne les relie pas à une difficulté propre aux francophones. Ajouter un contraste avec les équivalents français et montrer pourquoi une traduction mot à mot ou une analogie de préfixe conduit à une erreur.",
+      "path": "merged.lessons[2].theory[5].trap"
     }
   ],
   "lang": "fr",
