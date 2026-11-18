@@ -1,20 +1,10 @@
 {
-  "bundleHash": "9b7bc088dfb66f243c0977d9da185828c2b95196414bbb57761d809306970527",
+  "bundleHash": "ec274e1605db120d52b5e9cba7752869c7a68d78a070076b360f8443c13e48fd",
   "findings": [
     {
-      "kind": "Grammatica e chiave di risposta",
-      "msg": "La forma «neuen» non è necessariamente errata: dopo «deren» sono ammesse sia la flessione forte «deren neuem Vorschlag» sia la flessione debole «deren neuen Vorschlag». La domanda ha quindi due risposte corrette. Sostituire il distrattore «neuen» con una forma non ammessa e correggere la spiegazione.",
-      "path": "merged.lessons[0].exercises[2]"
-    },
-    {
-      "kind": "Spiegazione grammaticale",
-      "msg": "La flessione forte dell’aggettivo dopo «dessen» e «deren» non è l’unica ammessa: è possibile anche la flessione debole. Riformulare la regola e indicare entrambe le possibilità.",
-      "path": "merged.lessons[0].grammar.note"
-    },
-    {
-      "kind": "Spiegazione grammaticale",
-      "msg": "La nota presenta «mit dessen neuen Vorschlag» come errore, ma la flessione debole dopo il relativo genitivo è ammessa. Correggere la spiegazione indicando anche «mit dessen neuem Vorschlag» come variante corretta.",
-      "path": "merged.lessons[0].theory[3].trap"
+      "kind": "pronuncia",
+      "msg": "L’indicazione dell’accento in «Autorin» è errata: cade su «rin», non su «to». Correggere la spiegazione in «the stress falls on rin».",
+      "path": "merged.lessons[0].exercises[10].why"
     }
   ],
   "lang": "en",

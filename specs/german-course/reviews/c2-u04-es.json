@@ -1,10 +1,15 @@
 {
-  "bundleHash": "eccdee6cca2e5d8109bc138c2b5bb5f842d6b9ffe93c304239adde2fe079e0f7",
+  "bundleHash": "0cdb9e9e64a6253786e069be6ea4e917794a4288d32ad07108be4aef0051c6ee",
   "findings": [
     {
       "kind": "pronuncia",
-      "msg": "L’indicazione dell’accento per «Autorin» è errata: cade su «rin», non su «to». Correggere la spiegazione per evitare che la pronuncia dell’esercizio orale venga appresa in modo scorretto.",
+      "msg": "L’accento di «Autorin» cade sull’ultima sillaba, «rin», non su «to». Correggere l’indicazione per l’esercizio orale.",
       "path": "merged.lessons[0].exercises[10].why"
+    },
+    {
+      "kind": "spiegazione contrastiva",
+      "msg": "La spiegazione afferma che lo spagnolo cambia l’ordine con la preposizione, ma «sobre cuya base» ha lo stesso ordine di «auf dessen Grundlage»: preposizione, relativo possessivo, sostantivo. Correggere il confronto, eventualmente affiancando «con cuya ayuda» a «mit deren Hilfe».",
+      "path": "merged.lessons[0].theory[2].contrast"
     }
   ],
   "lang": "es",

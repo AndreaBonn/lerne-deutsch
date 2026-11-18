@@ -1,20 +1,20 @@
 {
-  "bundleHash": "61f6b8fbb04fd54afd25612f0f7a8394b2816b462915a4c1d7e669e921c432f2",
+  "bundleHash": "d3691d6ee73689f8081d47e75c059ca327e2c6cd0bd30cc12f1a4932ac5c96f0",
   "findings": [
     {
-      "kind": "chiave di risposta incompleta",
-      "msg": "La frase polacca «mieszka w Wiedniu» ammette anche «wohnt in Wien», ma tutte le risposte accettate usano «lebt in Wien». Aggiungere le corrispondenti varianti con «wohnt».",
-      "path": "merged.lessons[0].exercises[8].a"
+      "kind": "chiave di risposta ambigua",
+      "msg": "«Auf welcher» è anch’esso un accusativo femminile e completa correttamente la frase: «Die Frage, auf welcher es eigentlich ankommt …». La spiegazione lo identifica erroneamente come dativo. Sostituire il distrattore oppure accettare entrambe le risposte e correggere la spiegazione.",
+      "path": "merged.test.exercises[5]"
     },
     {
-      "kind": "spiegazione contrastiva errata",
-      "msg": "L'affermazione che in polacco il pronome segue il sostantivo è falsa: lo stesso esercizio traduce «mit deren Hilfe» con «z której pomocą», dove il pronome precede il sostantivo. Correggere la spiegazione, distinguendo questa costruzione da «z pomocą której».",
+      "kind": "spiegazione della reggenza",
+      "msg": "L’affermazione che «walczyć o» richieda «kämpfen für» e non «worum» è troppo categorica: «um etwas kämpfen» è corretto, per esempio «alles, worum sie gekämpft hat». Distinguere i significati di «kämpfen für» e «kämpfen um» e correggere il contrasto.",
+      "path": "merged.lessons[1].theory[2].contrast"
+    },
+    {
+      "kind": "spiegazione del tedesco",
+      "msg": "La spiegazione dichiara impossibile l’ordine tedesco equivalente a «z pomocą której», ma «mit Hilfe derer» esiste in registro formale, per esempio «die Kollegen, mit Hilfe derer wir das Projekt abgeschlossen haben». Presentare «mit deren Hilfe» come costruzione usuale senza escludere categoricamente l’altra.",
       "path": "merged.lessons[0].exercises[3].why"
-    },
-    {
-      "kind": "spiegazione contrastiva errata",
-      "msg": "La regola secondo cui in polacco il pronome segue il sostantivo dopo una preposizione è troppo assoluta: sono possibili anche «na której podstawie» e «z których pomocą». Presentare «na podstawie której» e «z pomocą których» come alternative, senza escludere l'ordine opposto.",
-      "path": "merged.lessons[0].theory[2].contrast"
     }
   ],
   "lang": "pl",
