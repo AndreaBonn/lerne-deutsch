@@ -28,7 +28,7 @@ LINGUAI.addStrings("it", {
         p: "Se dopo un articolo trovi una preposizione o un secondo articolo (<em>die von der ..., der dem ...</em>), aspettati un attributo esteso: salta in avanti fino al primo participio declinato e al nome che lo segue, poi torna indietro e leggi i complementi. L'ordine interno è quello di una subordinata: complementi prima, participio in fondo, come il verbo in fondo alla relativa. Il pronome riflessivo resta dentro: <em>die sich verschärfende Wohnungsnot</em>. Due attributi coordinati si separano con una virgola: <em>die in der Studie befragten, überwiegend jungen Erwachsenen</em>."
       },
       {
-        contrast: "In italiano il participio segue il nome e la frase si allunga verso destra: <em>la riforma chiesta da anni dagli esperti</em>. Il tedesco mette tutto a sinistra, prima del nome, e l'ordine si rovescia: l'elemento che in italiano viene per ultimo sta in tedesco subito dopo l'articolo. Il participio presente italiano in <em>-ante, -ente</em> è raro e spesso lessicalizzato (<em>vigente, crescente</em>); il tedesco forma il participio I di quasi ogni verbo e lo usa liberamente come attributo: <em>die dem Gericht vorliegenden Gutachten</em>, «le perizie di cui dispone il tribunale»."
+        contrast: "In italiano il participio segue il nome e la frase si allunga verso destra: <em>la riforma chiesta da anni dagli esperti</em>. Il tedesco mette l'intero attributo a sinistra, fra l'articolo e il nome. I complementi possono conservare l'ordine italiano (<em>seit Jahren von Fachleuten</em>, «da anni dagli esperti»); quello che cambia posto è il participio, che va in fondo, subito prima del nome. Il participio presente italiano in <em>-ante, -ente</em> è raro e spesso lessicalizzato (<em>vigente, crescente</em>); il tedesco forma il participio I di quasi ogni verbo e lo usa liberamente come attributo: <em>die dem Gericht vorliegenden Gutachten</em>, «le perizie di cui dispone il tribunale»."
       },
       {
         trap: "Il participio di un passivo al Perfekt non porta <em>worden</em>: <em>die Daten, die erhoben worden sind</em> diventa <em>die erhobenen Daten</em>, mai <em>die erhoben wordenen Daten</em>. E non scambiare i due participi: <em>die steigenden Kosten</em> stanno ancora salendo, <em>die gestiegenen Kosten</em> sono già saliti."
@@ -159,7 +159,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Dovere o potere",
-        p: "Il valore si ricava dal contesto, come con <em>sein + zu</em>. Nelle norme e nei moduli prevale l'obbligo: <em>die einzureichenden Unterlagen</em>, i documenti da presentare. Con una negazione o con <em>kaum</em> prevale la possibilità: <em>ein nicht zu unterschätzendes Risiko</em>, un rischio che non si può sottovalutare; <em>eine kaum zu beziffernde Zahl</em>, un numero difficilmente quantificabile. Con <em>erwarten</em> è una previsione: <em>die zu erwartenden Kosten</em>, i costi prevedibili."
+        p: "Il valore si ricava dal contesto, come con <em>sein + zu</em>. Nelle norme e nei moduli prevale l'obbligo: <em>die einzureichenden Unterlagen</em>, i documenti da presentare. Con una negazione il valore dipende dal verbo: <em>ein nicht zu unterschätzendes Risiko</em> è un avvertimento, un rischio che non si deve sottovalutare; <em>eine nicht zu lösende Aufgabe</em> esprime un'impossibilità, un compito che non si può risolvere. Con <em>kaum</em> prevale la possibilità: <em>eine kaum zu beziffernde Zahl</em>, un numero difficilmente quantificabile. Con <em>erwarten</em> è una previsione: <em>die zu erwartenden Kosten</em>, i costi prevedibili."
       },
       {
         contrast: "L'italiano ha un equivalente molto vicino in <em>da</em> + infinito: <em>il compito da risolvere, i documenti da presentare</em>. La differenza è la posizione e la forma: in italiano tutto segue il nome e l'infinito non cambia; in tedesco tutto precede il nome e il verbo diventa un participio presente con la desinenza dell'aggettivo: <em>die zu lösende Aufgabe</em>, <em>bei der zu lösenden Aufgabe</em>."
@@ -179,14 +179,14 @@ LINGUAI.addStrings("it", {
         rows: [
           ["Die Aufgabe ist zu lösen.", "die zu lösende Aufgabe", "deve essere risolto"],
           ["Die Unterlagen sind einzureichen.", "die einzureichenden Unterlagen", "devono essere presentati"],
-          ["Das Risiko ist nicht zu unterschätzen.", "ein nicht zu unterschätzendes Risiko", "non può essere sottovalutato"],
+          ["Das Risiko ist nicht zu unterschätzen.", "ein nicht zu unterschätzendes Risiko", "non deve essere sottovalutato"],
           ["Die Kosten sind zu erwarten.", "die zu erwartenden Kosten", "sono prevedibili"]
         ]
       },
       examples: [
         { tr: "Il compito da risolvere è più complesso del previsto.", note: "zu + participio I: lösende" },
         { tr: "I documenti da presentare entro fine mese si trovano in allegato.", note: "verbo separabile: ein-zu-reichenden" },
-        { tr: "È un rischio da non sottovalutare.", note: "con nicht: valore di possibilità, «che non si può»" },
+        { tr: "È un rischio da non sottovalutare.", note: "con nicht: avvertimento, «che non si deve»" },
         { tr: "I costi prevedibili superano di gran lunga il budget.", note: "zu erwarten: previsione" },
         { tr: "Il compito va risolto entro venerdì.", note: "forma predicativa: sein + zu + infinito" },
         { tr: "Le questioni ancora da chiarire saranno trattate nella prossima seduta.", note: "noch: «ancora da»" }
@@ -284,7 +284,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Coppie che cambiano prospettiva",
-        p: "Molti Funktionsverbgefüge esistono in coppia. <strong>zur Anwendung kommen</strong> ha senso passivo (<em>wird angewendet</em>), <strong>zur Anwendung bringen</strong> senso attivo (<em>anwenden</em>). <strong>Berücksichtigung finden</strong> e <strong>auf Kritik stoßen</strong> sostituiscono un passivo: <em>Die Einwände fanden Berücksichtigung</em> = <em>wurden berücksichtigt</em>; <em>Der Plan stieß auf Kritik</em> = <em>wurde kritisiert</em>. Alcuni non hanno un verbo semplice equivalente: <em>Rechnung tragen</em> (tener conto di, con il dativo) dice più di <em>berücksichtigen</em>, e <em>zur Debatte stehen</em> non ne ha nessuno."
+        p: "Molti Funktionsverbgefüge esistono in coppia. <strong>zur Anwendung kommen</strong> ha senso passivo (<em>wird angewendet</em>), <strong>zur Anwendung bringen</strong> senso attivo (<em>anwenden</em>). <strong>Berücksichtigung finden</strong> e <strong>auf Kritik stoßen</strong> sostituiscono un passivo: <em>Die Einwände fanden Berücksichtigung</em> = <em>wurden berücksichtigt</em>; <em>Der Plan stieß auf Kritik</em> = <em>wurde kritisiert</em>. Altri affiancano un verbo semplice quasi sinonimo: <em>Rechnung tragen</em> (tener conto di, con il dativo) equivale di norma a <em>berücksichtigen</em>, con differenze solo di contesto e di registro. <em>zur Debatte stehen</em>, invece, non ha un verbo semplice equivalente."
       },
       {
         contrast: "Anche l'italiano ha costruzioni di questo tipo, e spesso coincidono: <em>mettere in dubbio</em> (<em>in Zweifel ziehen</em>), <em>prendere in considerazione</em> (<em>in Betracht ziehen</em>), <em>trovare applicazione</em> (<em>zur Anwendung kommen</em>). Ma il verbo funzionale non si traduce parola per parola: <em>unter Beweis stellen</em> non è «mettere sotto prova» ma «dimostrare», <em>zur Sprache bringen</em> è «sollevare», <em>in Abrede stellen</em> è «negare». Preposizione e articolo sono fissi: <em>zur Anwendung</em>, mai <em>in die Anwendung</em>."
@@ -395,7 +395,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "La ministra ha negato ogni responsabilità.",
-        why: "In <i>Ministerin</i> l'accento cade su <b>nis</b>; in <i>Verantwortung</i> l'accento cade su <b>ant</b>; in <i>Abrede</i> l'accento cade su <b>Ab</b> e la <b>b</b> si pronuncia [p]."
+        why: "In <i>Ministerin</i> l'accento cade su <b>te</b>; in <i>Verantwortung</i> l'accento cade su <b>ant</b>; in <i>Abrede</i> l'accento cade su <b>Ab</b> e la <b>b</b> si pronuncia [p]."
       }
     ]
   },
@@ -473,7 +473,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Le questioni ancora da chiarire verranno sollevate nella prossima seduta.",
-        why: "In <i>klärenden</i> la <b>ä</b> è lunga; in <i>nächsten</i> la <b>ä</b> è breve; in <i>Sitzung</i> <b>tz</b> si pronuncia [ts]."
+        why: "In <i>klärenden</i> la <b>ä</b> è lunga; in <i>nächsten</i> la <b>ä</b> è lunga anche davanti a <b>chst</b>; in <i>Sitzung</i> <b>tz</b> si pronuncia [ts]."
       }
     ]
   }
