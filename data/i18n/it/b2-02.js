@@ -39,7 +39,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Il Konjunktiv I nel discorso indiretto",
-      note: "<b>Presente</b>: tema + <i>-e</i> (er habe, er komme; er sei). <b>Passato</b>: habe / sei + participio. <b>Futuro</b>: werde + infinito. Se coincide con l'indicativo: <b>Konjunktiv II</b> (sie hätten).",
+      note: "<b>Presente</b>, alla 3ª persona singolare: tema + <i>-e</i> (er habe, er komme; er sei). <b>Passato</b>: habe / sei + participio. <b>Futuro</b>: werde + infinito. Se coincide con l'indicativo: <b>Konjunktiv II</b> (sie hätten).",
       table: {
         head: ["infinito", "indicativo (er)", "Konjunktiv I (er)", "Konjunktiv I (sie, plurale)", "sostituzione"],
         rows: [
@@ -53,7 +53,7 @@ LINGUAI.addStrings("it", {
       examples: [
         { tr: "Il ministro ha detto di essere soddisfatto del risultato.", note: "er sei: Konjunktiv I di sein" },
         { tr: "La testimone ha dichiarato di non aver visto niente.", note: "passato: habe + participio" },
-        { tr: "Secondo la polizia il conducente avrebbe guidato troppo veloce.", note: "laut + Konjunktiv I, come il condizionale giornalistico" },
+        { tr: "Secondo la polizia il conducente avrebbe guidato troppo veloce.", note: "il Konjunktiv I attribuisce la notizia alla polizia, come il condizionale giornalistico; laut da solo non lo richiede" },
         { tr: "Il portavoce ha sottolineato che l'azienda non taglierà posti di lavoro.", note: "futuro: werde + infinito" },
         { tr: "Hanno detto di non avere tempo.", note: "sie haben coincide con l'indicativo: hätten" },
         { tr: "Sostiene di non saperne niente.", note: "er wisse: Konjunktiv I di wissen" }
@@ -160,7 +160,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Che cosa non cambia",
-        p: "Il <strong>tempo verbale</strong> resta quello della frase diretta: cambia solo il modo. Presente → Konjunktiv I presente („Ich kenne ihn nicht.“ → <em>sie kenne ihn nicht</em>); passato → Konjunktiv I passato („Ich war gestern hier.“ → <em>sie sei am Tag davor dort gewesen</em>); futuro → <em>werde</em> + infinito („Ich werde anrufen.“ → <em>er werde anrufen</em>)."
+        p: "Resta il <strong>riferimento temporale</strong> della frase diretta, non la sua forma: di norma Präteritum, Perfekt e Plusquamperfekt confluiscono tutti nel Konjunktiv I passato. Presente → Konjunktiv I presente („Ich kenne ihn nicht.“ → <em>sie kenne ihn nicht</em>); passato → Konjunktiv I passato („Ich war gestern hier.“ → <em>sie sei am Tag davor dort gewesen</em>); futuro → <em>werde</em> + infinito („Ich werde anrufen.“ → <em>er werde anrufen</em>)."
       },
       {
         contrast: "L'italiano sposta il tempo verbale: <em>«Lo conosco»</em> diventa <em>disse che lo conosceva</em>, <em>«Ero qui ieri»</em> diventa <em>disse che era stata lì il giorno prima</em>, <em>«Chiamerò»</em> diventa <em>disse che avrebbe chiamato</em>. Il tedesco no: <em>sie kenne</em>, <em>sie sei ... gewesen</em>, <em>er werde anrufen</em>. Gli spostamenti di persona, tempo e luogo, invece, sono gli stessi dell'italiano."
@@ -169,12 +169,12 @@ LINGUAI.addStrings("it", {
         trap: "Non trasformare il futuro in un Konjunktiv II passato per imitare <em>avrebbe chiamato</em>: <em>er wäre angerufen worden</em> o <em>er hätte angerufen</em> dicono altro. Il futuro riferito è <em>er werde anrufen</em> (o, al plurale, <em>sie würden anrufen</em>)."
       },
       {
-        tip: "Prima di riportare una frase, sottolinea nella frase diretta i pronomi e gli avverbi di tempo e luogo: sono le sole parole che cambiano, oltre al modo del verbo."
+        tip: "Prima di riportare una frase, sottolinea nella frase diretta i pronomi e gli avverbi di tempo e luogo: sono le prime da cambiare, insieme al modo del verbo; poi controlla possessivi e dimostrativi (<em>mein → sein</em>, <em>dieser → jener</em>)."
       }
     ],
     grammar: {
       title: "Spostamenti nel discorso indiretto",
-      note: "Cambiano <b>persona</b> e, se il momento o il luogo di chi riferisce sono diversi, <b>avverbi di tempo</b> e <b>di luogo</b>; il <b>tempo verbale</b> resta quello della frase diretta, solo al Konjunktiv I.",
+      note: "Cambiano <b>persona</b> e, se il momento o il luogo di chi riferisce sono diversi, <b>avverbi di tempo</b> e <b>di luogo</b>; si conserva il <b>riferimento temporale</b> (presente, passato, futuro), non la forma: di norma ogni passato diretto diventa Konjunktiv I passato.",
       table: {
         head: ["discorso diretto", "discorso indiretto"],
         rows: [
@@ -275,7 +275,7 @@ LINGUAI.addStrings("it", {
         why: "In <i>Bürgermeisterin</i> l'accento cade su <b>Bür</b>; in <i>versicherte</i> la <b>v</b> si legge [f]; in <i>abgeschlossen</i> la <b>b</b> davanti a <i>g</i> si legge [p]."
       },
       {
-        tr: "Il ministro ha assicurato di non aver saputo niente del problema.",
+        tr: "Il ministro ha assicurato di non essere stato a conoscenza del problema.",
         why: "In <i>Minister</i> l'accento cade su <b>nis</b>; in <i>Problem</i> l'accento cade su <b>blem</b>; in <i>gewusst</i> la <b>u</b> è breve."
       }
     ]
@@ -299,7 +299,7 @@ LINGUAI.addStrings("it", {
         p: "Un ordine si riferisce con <strong>sollen</strong> al Konjunktiv I: „Warte hier!“ → <em>Sie sagte, ich solle hier warten.</em> <em>Der Arzt sagte, ich solle mehr schlafen.</em> Una richiesta cortese si riferisce spesso con <strong>bitten</strong> o <strong>auffordern</strong> + <em>zu</em> + infinito: „Rufen Sie mich bitte an!“ → <em>Er bat mich, ihn anzurufen.</em>"
       },
       {
-        contrast: "L'italiano riferisce le domande con <em>se</em> + indicativo o congiuntivo, secondo il contesto e il registro (<em>mi chiese se avevo tempo</em>, <em>se avessi tempo</em>) e gli ordini con <em>di</em> + infinito (<em>mi disse di aspettare</em>). Il tedesco usa <em>ob</em> + verbo in fondo, al Konjunktiv (<em>ob ich Zeit hätte</em>), e per l'ordine una frase con <em>sollen</em> (<em>Sie sagte, ich solle warten</em>); è possibile anche l'infinito, con il complemento della persona: <em>Sie sagte mir, hier zu warten</em>, e soprattutto con <em>bitten</em> e <em>auffordern</em>."
+        contrast: "L'italiano riferisce le domande con <em>se</em> + indicativo o congiuntivo, secondo il contesto e il registro (<em>mi chiese se avevo tempo</em>, <em>se avessi tempo</em>) e gli ordini con <em>di</em> + infinito (<em>mi disse di aspettare</em>). Il tedesco usa <em>ob</em> + verbo in fondo, al Konjunktiv (<em>ob ich Zeit hätte</em>), e per l'ordine una frase con <em>sollen</em> (<em>Sie sagte, ich solle warten</em>); con <em>sagen</em> l'infinito si sente nel parlato (<em>Sie sagte mir, hier zu warten</em>), ma la forma piena è quella con <em>sollen</em>; l'infinito è normale soprattutto con <em>bitten</em> e <em>auffordern</em> (<em>Sie bat mich, hier zu warten</em>)."
       },
       {
         trap: "<em>ob</em> non è <em>dass</em>: <em>Er fragte, dass ich Zeit hätte</em> non ha senso. E dopo <em>ob</em> o la parola interrogativa il verbo va in fondo, non in seconda posizione come nella domanda diretta: <em>wann der Zug fahre</em>, non <em>wann fährt der Zug</em>."

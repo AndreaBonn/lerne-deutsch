@@ -1,7 +1,23 @@
 {
-  "bundleHash": "188fffee6b4312b30b866ee1970dff7025380e6357b119720d7ec4f055c8ab43",
-  "findings": [],
+  "bundleHash": "540fd6f818ef411ef0150990cca9623fe1b40a27306b3d286fa5020ec5be3d15",
+  "findings": [
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "L'affermazione che ogni passato diretto diventa Konjunktiv I passato è troppo assoluta: il Plusquamperfekt può richiedere di conservare l'anteriorità rispetto a un altro evento passato. Spiegare che la forma composta è frequente, ma che il contesto può richiedere di mantenere esplicita la sequenza temporale.",
+      "path": "merged.lessons[1].grammar.note"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Dire che Präteritum, Perfekt e Plusquamperfekt confluiscono tutti nel Konjunktiv I passato trascura i casi in cui occorre distinguere un evento anteriore da un altro evento passato. Aggiungere questa distinzione con un esempio contestualizzato.",
+      "path": "merged.lessons[1].theory[1].p"
+    },
+    {
+      "kind": "spiegazione fuorviante",
+      "msg": "«laut + Konjunktiv I» può far credere che laut richieda questo modo, mentre è possibile anche l'indicativo. Riformulare: «Qui il Konjunktiv I segnala che l'informazione è attribuita alla polizia; laut non lo richiede».",
+      "path": "merged.lessons[0].grammar.examples[2].note"
+    }
+  ],
   "lang": "it",
   "unit": "b2-u05",
-  "verdict": "pass"
+  "verdict": "fail"
 }

@@ -540,7 +540,7 @@ LINGUAI.addStrings("it", {
           "reale",
           "irreale al passato"
         ],
-        why: "<i>hätte</i> e <i>würde arbeiten</i> sono Konjunktiv II presente: oggi non ho più soldi. Per il passato servirebbe <i>gehabt hätte</i>."
+        why: "<i>hätte</i> e <i>würde arbeiten</i> sono Konjunktiv II presente: oggi quei soldi in più non li ho. Per il passato servirebbe <i>gehabt hätte</i>."
       },
       {
         q: "Come dici «Se mi avessi chiesto, ti avrei aiutato»?",
@@ -736,7 +736,7 @@ LINGUAI.addStrings("it", {
         contrast: "L'italiano esprime lo stesso desiderio con <em>se solo</em> o <em>magari</em>: <em>Se solo avessi più tempo! Magari fossi rimasto a casa!</em> Il tedesco usa <em>bloß</em>, <em>nur</em> o <em>doch</em>, che però non stanno all'inizio come <em>se solo</em>: vanno dentro la frase, di solito dopo il soggetto e i pronomi e prima della negazione: <em>Hätte ich nur nicht so viel gegessen! Wenn du es mir bloß früher gesagt hättest!</em> La posizione esatta dipende anche da ciò che si vuole mettere in rilievo."
       },
       {
-        trap: "Qui <em>nur</em> e <em>bloß</em> non significano <em>solo</em>: <em>Wenn ich bloß mehr Zeit hätte!</em> non vuol dire «se avessi soltanto più tempo», ma «se solo avessi più tempo». E <em>doch</em> in un desiderio non è il <em>doch</em> della risposta (<em>Doch!</em>, sì invece): qui rafforza il desiderio."
+        trap: "Qui <em>nur</em> e <em>bloß</em> non significano <em>solo</em>: <em>Wenn ich bloß mehr Zeit hätte!</em> non limitano il tempo a quello e basta: non è «avessi più tempo e nient'altro», è il desiderio «se solo avessi più tempo!». E <em>doch</em> in un desiderio non è il <em>doch</em> della risposta (<em>Doch!</em>, sì invece): qui rafforza il desiderio."
       },
       {
         tip: "Le tre particelle sono quasi intercambiabili nei desideri; <em>doch</em> rafforza il desiderio o il rimpianto come le altre, e la scelta dipende dal contesto e dall'intonazione, non dal registro: <em>Hätte ich doch ...!</em> si sente anche nella conversazione di tutti i giorni. Per non sbagliare l'ordine, prima scrivi la frase senza particella, poi mettila dopo il soggetto e gli eventuali pronomi."
@@ -758,7 +758,7 @@ LINGUAI.addStrings("it", {
         { tr: "Se solo non avessi mangiato così tanto!", note: "verbo al primo posto, nur prima di nicht" },
         { tr: "Magari fossi rimasto a casa!", note: "doch: desiderio sul passato" },
         { tr: "Se solo finalmente piovesse!", note: "würde + infinito al presente" },
-        { tr: "Non provarci nemmeno!", note: "bloß in un ordine: tono minaccioso" },
+        { tr: "Non provarci nemmeno!", note: "bloß in un ordine: avvertimento pressante, minaccioso o preoccupato secondo il contesto" },
         { tr: "Basterebbe un po' di pazienza e ce la faresti.", note: "nur in un periodo ipotetico completo: limita ciò che segue" }
       ]
     },
