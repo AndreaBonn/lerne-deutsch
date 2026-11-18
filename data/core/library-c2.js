@@ -16,7 +16,7 @@ LINGUAI.addReadings([
       "In einer Hamburger Werbeagentur, in der ich einige Jahre gearbeitet habe, duzte man sich vom ersten Tag an, die Geschäftsführung eingeschlossen.",
       "Manches Möbelhaus duzt seine Kundschaft auf jedem Plakat, und unter Studierenden ist das Du ohnehin die Regel.",
       "Dieselbe Agentur schrieb ihren Kunden allerdings Briefe, in denen das Sie mit einer Sorgfalt gepflegt wurde, als hinge der Auftrag davon ab, was er vermutlich auch tat.",
-      "Zwischen den beiden Polen hat das Deutsche Zwischenformen hervorgebracht, die kaum ein Lehrbuch erwähnt und die jeder Einheimische beherrscht.",
+      "Zwischen den beiden Polen hat das Deutsche Zwischenformen hervorgebracht, die kaum ein Lehrbuch erwähnt und die viele Einheimische beherrschen.",
       "Das sogenannte Hamburger Sie verbindet den Vornamen mit dem Sie, wie in „Jan, haben Sie das Protokoll schon verschickt?“, und signalisiert Nähe ohne Vertraulichkeit.",
       "Sein Gegenstück, das Münchner Du, verbindet umgekehrt den Nachnamen mit dem Du und klingt in norddeutschen Ohren, als trüge jemand zum Anzug Hausschuhe.",
       "In Österreich wiederum wird man mitunter mit seinem akademischen Titel angesprochen, was die Frage nach dem Pronomen nicht löst, sondern lediglich um eine Dimension erweitert.",
@@ -44,7 +44,7 @@ LINGUAI.addReadings([
     lexIt: ["bereithalten", "beheben", "ausgeschildert", "gleichkommen", "verschlingen", "beiläufig", "ausschlagen", "verzeihen", "freilich", "verschweigen", "Sorgfalt", "hervorbringen", "Gegenstück", "sich verständigen", "auskommen", "ausklingen", "rückgängig machen", "kurzsichtig", "gekränkt", "allgegenwärtig", "aufbegehren", "Zusammenhang", "sich behaupten", "bedürfen", "Takt", "vorschnell", "sichtlich"],
     questions: [
       { t: "mcq", q: "Wie lautet laut Text die Grundregel?", opts: ["Das Du wird angeboten, und zwar von der älteren oder ranghöheren Person.", "Die jüngere Person bietet das Du an.", "Das Du darf man sich jederzeit nehmen."], a: 0 },
-      { t: "truefalse", q: "Laut Text kann man ohne Weiteres vom Du zum Sie zurückkehren.", a: 1 },
+      { t: "truefalse", q: "Laut Text ist es schwierig, vom Du zum Sie zurückzukehren.", a: 0 },
       { t: "mcq", q: "Was ist das „Hamburger Sie“?", opts: ["Der Nachname mit dem Du", "Der Vorname mit dem Sie", "Der akademische Titel mit dem Sie"], a: 1 },
       { t: "mcq", q: "Warum ist das allgegenwärtige Du mancher Unternehmen laut Text weniger demokratisch, als es aussieht?", opts: ["Weil es die Hierarchie unsichtbar macht, statt sie abzuschaffen", "Weil nur die Geschäftsführung duzen darf", "Weil es den Kunden gegenüber verboten ist"], a: 0 },
       { t: "truefalse", q: "Der Text rät Zugezogenen, so zu sprechen wie zu Hause.", a: 1 },

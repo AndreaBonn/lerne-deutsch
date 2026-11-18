@@ -34,7 +34,7 @@ LINGUAI.addReadings([
       "Der zweite Fehler ist der elegantere, richtet aber den größeren Schaden an, weil er denjenigen das Wort entzieht, die sich zu Recht beschweren.",
       "Ich habe Menschen kennengelernt, die nach zehn Jahren hier „Das ist halt so“ sagten, und zwar in demselben Ton, in dem man über das Wetter spricht.",
       "Das Wetter lässt sich nicht ändern, eine Behörde schon.",
-      "Bleibt ein Antrag ohne zureichenden Grund liegen, kann man in der Regel nach drei Monaten eine Untätigkeitsklage erheben, was erstaunlich wenige wissen.",
+      "Bleibt ein Antrag ohne zureichenden Grund liegen, kann man im allgemeinen Verwaltungsrecht in der Regel nach drei Monaten eine Untätigkeitsklage erheben, was erstaunlich wenige wissen.",
       "Was man lernen kann und was in keinem Lehrbuch steht, ist die Fähigkeit, beides zugleich im Blick zu behalten.",
       "Konkret heißt das, jedes verlangte Dokument vollständig einzureichen und nach Ablauf der zugesagten Frist schriftlich nach dem Stand der Bearbeitung zu fragen.",
       "Es heißt auch, sich für die Geduld am Schalter aufrichtig zu bedanken und mit derselben Aufrichtigkeit auf einer Antwort zu bestehen.",
@@ -46,7 +46,7 @@ LINGUAI.addReadings([
     lexIt: ["klagen", "sich verbergen", "Schonung", "anrichten", "rechtfertigen", "sich hinziehen", "verfügen über", "Leitartikel", "zum Verwechseln ähnlich", "nachreichen", "sich erschließen", "zustehen", "Vorschrift", "bemessen", "vergeuden", "Gewähr", "Gleichbehandlung", "angewiesen sein auf", "Wohlwollen", "verkommen", "hinnehmen", "willkürlich", "sich empören", "entziehen", "zureichend", "Frist", "Schalter", "Aufrichtigkeit"],
     questions: [
       { t: "mcq", q: "Welche These vertritt der Text?", opts: ["Die deutsche Bürokratie ist immer ein Schaden.", "Hinter dem Wort „Bürokratie“ verbergen sich zwei verschiedene Dinge, die man unterscheiden sollte.", "Umständlichkeit ist eine kulturelle Tugend."], a: 1 },
-      { t: "truefalse", q: "Laut Text trifft die schädliche Langsamkeit alle Menschen gleich stark.", a: 1 },
+      { t: "truefalse", q: "Laut Text trifft die schädliche Langsamkeit nicht alle Menschen gleich stark.", a: 0 },
       { t: "mcq", q: "Warum sieht der Text in der formalen Strenge einen Wert?", opts: ["Weil sie die Ämter entlastet", "Weil das Ergebnis nicht davon abhängt, wen man kennt", "Weil sie die Beamten vor Kritik schützt"], a: 1 },
       { t: "mcq", q: "Welchen der beiden Fehler hält der Text für schädlicher?", opts: ["Sich über beides zu empören", "Beides zu rechtfertigen", "Das Thema zu ignorieren"], a: 1 },
       { t: "truefalse", q: "Der Satz „Das Wetter lässt sich nicht ändern, eine Behörde schon“ bedeutet, dass der Autor die Arbeitsweise der Behörden hinnimmt.", a: 1 },

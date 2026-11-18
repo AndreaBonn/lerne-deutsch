@@ -11,7 +11,7 @@ LINGUAI.addReadings([
       "Das Hochdeutsche ist über Jahrhunderte vor allem als Schriftsprache entstanden, nicht als Sprache einer bestimmten Stadt oder Region.",
       "Gesprochen wurde lange Zeit fast überall Dialekt, und in manchen Gegenden ist das bis heute so geblieben.",
       "Würden zwei ältere Menschen aus Flensburg und aus dem Berchtesgadener Land nur ihre Mundart sprechen, dann würden sie einander nur mit Mühe verstehen.",
-      "Nehmen wir an, du arbeitest seit ein paar Monaten in einem Betrieb in Regensburg.",
+      "Nehmen wir an, du fängst gerade in einem Betrieb in Regensburg an.",
       "Am ersten Tag sagt der Chef „Servus“ zu dir, obwohl du im Kurs gelernt hast, dass man den Chef mit „Guten Tag“ begrüßt.",
       "Eine Kollegin fragt dich in der Kantine, ob du heuer schon im Urlaub warst, und du kennst das Wort nicht.",
       "Beim Bäcker verlangen alle Semmeln, und das Wort „Brötchen“, das du so fleißig gelernt hast, hörst du nie.",
@@ -46,7 +46,7 @@ LINGUAI.addReadings([
     lexIt: ["Lehrbuch", "Schuld", "sich lohnen", "entstehen", "Gegend", "Mühe", "Betrieb", "begrüßen", "Kantine", "verlangen", "innehalten", "beruhen auf", "Vorstellung", "behaupten", "Bewerbung", "hinuntersteigen", "Werkzeug", "allmählich", "auffallen", "bewusst", "begegnen", "ersparen", "beherrschen"],
     questions: [
       { t: "mcq", q: "Wie ist das Hochdeutsche laut Text vor allem entstanden?", opts: ["Als Dialekt einer bestimmten Stadt", "Als Schriftsprache", "Als Sprache des Fernsehens"], a: 1 },
-      { t: "truefalse", q: "Der Satz „Ich bin im Biergarten gesessen“ ist laut Text im Süden ein Fehler.", a: 1 },
+      { t: "truefalse", q: "Der Satz „Ich bin im Biergarten gesessen“ ist laut Text im Süden korrekt.", a: 0 },
       { t: "mcq", q: "Was ist in der Deutschschweiz laut Text üblich?", opts: ["Man spricht im Alltag Schweizerdeutsch und schreibt meist Hochdeutsch.", "Man spricht und schreibt nur Hochdeutsch.", "Man schreibt Schweizerdeutsch und spricht Hochdeutsch."], a: 0 },
       { t: "mcq", q: "Warum war es laut Text richtig, zuerst die Standardsprache zu lernen?", opts: ["Weil sie eleganter klingt", "Weil man von ihr leicht zur Umgangssprache kommt, der umgekehrte Weg aber schwieriger ist", "Weil man in der Kantine nur Standardsprache spricht"], a: 1 },
       { t: "truefalse", q: "Der Text rät, zwanzig regionale Ausdrücke zu lernen, um sie sofort selbst zu benutzen.", a: 1 },
