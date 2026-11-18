@@ -19,5 +19,10 @@
   ],
   "lang": "en",
   "unit": "c2-u02",
-  "verdict": "fail"
+  "verdict": "fail",
+  "archived": {
+    "decision": "Q-C1-D8 esteso a C2 (N2)",
+    "date": "2026-11-18",
+    "bundleHash": "1b9a37d5e553e26c993d27c537eb6ea4695f5174f5d4dc775883b76baad00474"
+  }
 }
