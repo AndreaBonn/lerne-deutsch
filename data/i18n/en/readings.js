@@ -29,7 +29,7 @@ LINGUAI.addStrings("en", {
 
   "read:r-a2-arzt": {
     title: "An Appointment with the Family Doctor",
-    gloss: ["the back", "the doctor's office", "the health insurance card", "the prescription (not a recipe)", "the ointment", "to put on sick leave (give a doctor's note)"],
+    gloss: ["the back", "the doctor's office", "the health insurance card", "the prescription (in a cooking context, a recipe)", "the ointment", "to put on sick leave (give a doctor's note)"],
     lex: ["computer", "to hurt", "to call (on the phone)", "appointment", "to take along", "health insurance (fund)", "doctor (f.)", "to examine", "break", "pharmacy", "to explain", "pharmacist (f.)", "to apply (a cream or ointment)", "better"]
   },
 
@@ -66,7 +66,7 @@ LINGUAI.addStrings("en", {
   "read:r-b1-ausbildung": {
     title: "The Workshop Instead",
     gloss: ["the Abitur (school-leaving qualification from academic high school; the usual route to university)", "vocational training (apprenticeship)", "the workshop, the auto repair shop", "the auto mechatronics technician (f.)", "the company (where the trainee works)", "the vocational school", "the step (in a job)", "the material (to be learned)"],
-    lex: ["to study (at a university), go to college", "experience", "to gather, collect", "internship", "Stuttgart", "to notice, realize", "hand", "fun", "week", "boss (not a cook)", "mistake", "to review, go over", "exam", "to pass (an exam)", "parents", "to wish, want", "to earn", "to save (money)", "to open (a business)"]
+    lex: ["to study (at a university), go to college", "experience", "to gather, collect", "internship", "Stuttgart", "to notice, realize", "hand", "fun", "week", "boss (a cook is der Koch)", "mistake", "to review, go over", "exam", "to pass (an exam)", "parents", "to wish, want", "to earn", "to save (money)", "to open (a business)"]
   },
 
   "read:r-b1-tafel": {
@@ -77,7 +77,7 @@ LINGUAI.addStrings("en", {
 
   "read:r-b1-graz": {
     title: "If the Apartment Were Bigger",
-    gloss: ["the three-room apartment (rooms other than kitchen and bath, so two bedrooms and a living room)", "to have been born (literally: to be in the world)", "to move to the country", "the rent", "to decide, resolve", "the landlord", "to ask, inquire"],
+    gloss: ["the three-room apartment (kitchen and bathroom are usually not counted)", "to have been born (literally: to be in the world)", "to move to the country", "the rent", "to decide, resolve", "the landlord", "to ask, inquire"],
     lex: ["family", "center (of town), downtown", "Graz", "child", "small", "room", "own", "cheap", "hour", "car", "work", "school", "park", "market", "door", "to wait", "to decide", "free, available"]
   },
 
