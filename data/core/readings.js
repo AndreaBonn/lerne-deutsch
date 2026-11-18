@@ -584,7 +584,7 @@ LINGUAI.addReadings([
     lexIt: ["unübersetzbar", "Heimat", "bezeichnen", "Ort", "Landschaft", "Geruch", "Gewohnheit", "Ferne", "Jahrhundert", "romantisch", "Nationalsozialismus", "Ideologie", "Nachkriegszeit", "Heimatfilm", "harmlos", "Begriff", "Wörterbuch", "bereitwillig", "Grenze", "verhandeln", "Ministerium", "Schriftstellerin", "Migrationsgeschichte", "Herkunft", "verschlossen", "sich einrichten", "brauchen", "Schärfe", "sich durchsetzen", "streiten"],
     questions: [
       { t: "mcq", q: "Wann wird einem laut Text die Bedeutung von Heimat meist bewusst?", opts: ["in der Kindheit", "wenn man weit weg ist", "beim Lesen von Wörterbüchern"], a: 1 },
-      { t: "truefalse", q: "In der Nachkriegszeit wurde der Begriff vor allem durch Heimatfilme verharmlost.", a: 0 },
+      { t: "truefalse", q: "In der Nachkriegszeit wurde der Begriff durch Heimatfilme verharmlost.", a: 0 },
       { t: "mcq", q: "Welche Lesart könnte dem Begriff nach dem Text seine ausgrenzende Schärfe nehmen?", opts: ["Heimat als Frage der Herkunft", "Heimat als Begriff der Literatur", "Heimat als etwas, das man sich an einem Ort aneignet"], a: 2 },
       { t: "mcq", q: "Was zeigt der heftige Streit um das Wort laut Text?", opts: ["dass man ihm noch viel Bedeutung beimisst", "dass das Wort bald verschwinden wird", "dass die Politik es nicht mehr benutzt"], a: 0 }
     ]
