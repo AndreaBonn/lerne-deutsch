@@ -25,7 +25,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Come si legge",
-        p: "Se dopo un articolo trovi una preposizione o un secondo articolo (<em>die von der ..., der dem ...</em>), aspettati un attributo esteso: salta in avanti fino al primo participio declinato e al nome che lo segue, poi torna indietro e leggi i complementi. L'ordine interno è quello di una subordinata: complementi prima, participio in fondo, come il verbo in fondo alla relativa. Il pronome riflessivo resta dentro: <em>die sich verschärfende Wohnungsnot</em>. Due attributi coordinati si separano con una virgola: <em>die in der Studie befragten, überwiegend jungen Erwachsenen</em>."
+        p: "Se dopo un articolo trovi una preposizione o un secondo articolo (<em>die von der ..., der dem ...</em>), aspettati un attributo esteso: salta in avanti fino al primo participio declinato e al nome che lo segue, poi torna indietro e leggi i complementi. L'ordine interno è quello di una subordinata: complementi prima, participio in fondo, come il verbo in fondo alla relativa. Il pronome riflessivo resta dentro: <em>die sich verschärfende Wohnungsnot</em>. Due attributi coordinati senza congiunzione si separano con una virgola: <em>die in der Studie befragten, überwiegend jungen Erwachsenen</em>; con <em>und</em> la virgola non serve: <em>die angekündigte und vielfach kritisierte Reform</em>."
       },
       {
         contrast: "In italiano il participio segue il nome e la frase si allunga verso destra: <em>la riforma chiesta da anni dagli esperti</em>. Il tedesco mette l'intero attributo a sinistra, fra l'articolo e il nome. I complementi possono conservare l'ordine italiano (<em>seit Jahren von Fachleuten</em>, «da anni dagli esperti»); quello che cambia posto è il participio, che va in fondo, subito prima del nome. Il participio presente italiano in <em>-ante, -ente</em> è raro e spesso lessicalizzato (<em>vigente, crescente</em>); il tedesco forma il participio I di quasi ogni verbo e lo usa liberamente come attributo: <em>die dem Gericht vorliegenden Gutachten</em>, «le perizie di cui dispone il tribunale»."
@@ -468,7 +468,7 @@ LINGUAI.addStrings("it", {
         why: "Un passivo con <i>müssen</i> diventa un <b>Gerundivum</b>: <i>zu klärenden</i>. <i>geklärten</i> direbbe che sono già chiarite; <i>klärenden</i> che sono loro a chiarire qualcosa."
       },
       {
-        tr: "I risultati presentati dalla commissione di esperti hanno incontrato un ampio consenso. Le misure che se ne devono trarre saranno applicate l'anno prossimo.",
+        tr: "I risultati presentati dalla commissione di esperti hanno incontrato un ampio consenso. È previsto che le misure che se ne devono trarre vengano applicate l'anno prossimo.",
         why: "In <i>Expertenkommission</i> l'accento principale cade su <b>per</b>; in <i>stießen</i> <b>ie</b> è lunga e <b>ß</b> si pronuncia [s]; in <i>Maßnahmen</i> l'accento cade su <b>Maß</b>, con la <b>a</b> lunga."
       },
       {
