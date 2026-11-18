@@ -66,7 +66,15 @@ LINGUAI.addUnits("C2", [
               "Die Autorin, deren letzter Roman in zwanzig Sprachen übersetzt wurde, lebt in Wien",
               "Die Autorin, deren letzter Roman in zwanzig Sprachen übersetzt worden ist, lebt in Wien",
               "Die Autorin, deren letzter Roman in 20 Sprachen übersetzt wurde, lebt in Wien",
-              "Die Autorin, deren letzter Roman in 20 Sprachen übersetzt worden ist, lebt in Wien"
+              "Die Autorin, deren letzter Roman in 20 Sprachen übersetzt worden ist, lebt in Wien",
+              "Die Schriftstellerin, deren letzter Roman in zwanzig Sprachen übersetzt wurde, wohnt in Wien",
+              "Die Schriftstellerin, deren letzter Roman in zwanzig Sprachen übersetzt worden ist, wohnt in Wien",
+              "Die Schriftstellerin, deren letzter Roman in 20 Sprachen übersetzt wurde, wohnt in Wien",
+              "Die Schriftstellerin, deren letzter Roman in 20 Sprachen übersetzt worden ist, wohnt in Wien",
+              "Die Autorin, deren letzter Roman in zwanzig Sprachen übersetzt wurde, wohnt in Wien",
+              "Die Autorin, deren letzter Roman in zwanzig Sprachen übersetzt worden ist, wohnt in Wien",
+              "Die Autorin, deren letzter Roman in 20 Sprachen übersetzt wurde, wohnt in Wien",
+              "Die Autorin, deren letzter Roman in 20 Sprachen übersetzt worden ist, wohnt in Wien"
             ]
           },
           {
