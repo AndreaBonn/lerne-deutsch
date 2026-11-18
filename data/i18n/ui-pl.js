@@ -741,6 +741,11 @@ LINGUAI.addUI("pl", {
   "chat.consentOn": "Zgoda na rozmowę włączona",
   "chat.consentOff": "Zgoda na rozmowę wycofana",
   "chat.sc.cafe": "W kawiarni",
+  "chat.sc.nachbar": "Sąsiadka",
+  "chat.sc.markt": "Na targu",
+  "chat.sc.buergeramt": "W urzędzie meldunkowym",
+  "chat.sc.vorstellung": "Rozmowa o pracę",
+  "chat.sc.arzt": "U lekarza",
 
   "anki.title": "Talia dla Anki",
   "anki.hint": "Słowa i tłumaczenia w formacie, który czyta Anki, arkusz i każdy inny program do fiszek.",

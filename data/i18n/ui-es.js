@@ -742,6 +742,11 @@ LINGUAI.addUI("es", {
   "chat.consentOn": "Consentimiento de conversación activado",
   "chat.consentOff": "Consentimiento de conversación retirado",
   "chat.sc.cafe": "En la cafetería",
+  "chat.sc.nachbar": "El vecino",
+  "chat.sc.markt": "En el mercado",
+  "chat.sc.buergeramt": "En la oficina de empadronamiento",
+  "chat.sc.vorstellung": "La entrevista de trabajo",
+  "chat.sc.arzt": "En el médico",
 
   "anki.title": "Mazo para Anki",
   "anki.hint": "Palabras y traducciones en el formato que leen Anki, una hoja de cálculo y cualquier otro programa de fichas.",

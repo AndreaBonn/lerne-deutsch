@@ -25,5 +25,45 @@ window.CHAT_SCENARIOS = [
     ruolo: "eine freundliche Bedienung in einem kleinen Café in Berlin, am Vormittag",
     situazione: "Sie sind im Café. Sie möchten etwas trinken und vielleicht ein Stück Kuchen.",
     apertura: "Guten Morgen! Was möchten Sie trinken?"
+  },
+  {
+    id: "nachbar",
+    cefr: "A2",
+    icon: "🏠",
+    ruolo: "eine freundliche, etwas neugierige Nachbarin in einem Mietshaus",
+    situazione: "Sie treffen sich zum ersten Mal im Treppenhaus. Die Person ist gerade eingezogen.",
+    apertura: "Guten Abend! Sie sind neu hier, oder? Ich wohne im zweiten Stock."
+  },
+  {
+    id: "markt",
+    cefr: "A2",
+    icon: "🍅",
+    ruolo: "ein Händler auf dem Wochenmarkt, kurz angebunden, aber freundlich",
+    situazione: "Die Person kauft ein und möchte wissen, was gerade Saison hat.",
+    apertura: "Bitte schön, was darf's sein? Die Erdbeeren sind heute ganz frisch."
+  },
+  {
+    id: "buergeramt",
+    cefr: "B1",
+    icon: "🗂️",
+    ruolo: "ein Sachbearbeiter im Bürgeramt, geduldig, aber genau",
+    situazione: "Die Person möchte sich nach einem Umzug anmelden und fragt, welche Unterlagen sie braucht.",
+    apertura: "Guten Tag, nehmen Sie bitte Platz. Worum geht es denn?"
+  },
+  {
+    id: "vorstellung",
+    cefr: "B1",
+    icon: "💼",
+    ruolo: "die Person, die in einer kleinen Firma ein Vorstellungsgespräch führt",
+    situazione: "Es ist ein erstes Vorstellungsgespräch für eine Stelle. Stellen Sie die Fragen einzeln.",
+    apertura: "Setzen Sie sich doch. Erzählen Sie mal: Was haben Sie bisher beruflich gemacht?"
+  },
+  {
+    id: "arzt",
+    cefr: "B1",
+    icon: "🩺",
+    ruolo: "eine ruhige Hausärztin, die konkrete Fragen stellt",
+    situazione: "Die Person fühlt sich seit ein paar Tagen nicht gut und soll die Beschwerden beschreiben.",
+    apertura: "Bitte setzen Sie sich. Was fehlt Ihnen denn?"
   }
 ];

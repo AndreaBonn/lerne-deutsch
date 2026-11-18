@@ -730,6 +730,11 @@ LINGUAI.addUI("en", {
   "chat.consentOn": "Conversation consent on",
   "chat.consentOff": "Conversation consent withdrawn",
   "chat.sc.cafe": "At the café",
+  "chat.sc.nachbar": "The neighbor",
+  "chat.sc.markt": "At the market",
+  "chat.sc.buergeramt": "At the registration office",
+  "chat.sc.vorstellung": "The job interview",
+  "chat.sc.arzt": "At the doctor’s",
 
   "anki.title": "Deck for Anki",
   "anki.hint": "Words and translations in the format Anki, a spreadsheet and every other flashcard program can read.",

@@ -738,6 +738,11 @@ LINGUAI.addUI("fr", {
   "chat.consentOn": "Consentement de conversation activé",
   "chat.consentOff": "Consentement de conversation retiré",
   "chat.sc.cafe": "Au café",
+  "chat.sc.nachbar": "La voisine",
+  "chat.sc.markt": "Au marché",
+  "chat.sc.buergeramt": "Au bureau de l’état civil",
+  "chat.sc.vorstellung": "L’entretien d’embauche",
+  "chat.sc.arzt": "Chez le médecin",
 
   "anki.title": "Paquet pour Anki",
   "anki.hint": "Mots et traductions au format que lisent Anki, un tableur et tout autre logiciel de cartes.",
