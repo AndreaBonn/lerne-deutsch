@@ -493,17 +493,17 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Un singolare, due plurali",
-        p: "Alcuni nomi hanno due plurali, e ciascuno porta un significato diverso. <em>die Bank</em> è sia la banca sia la panchina: le banche sono <strong>Banken</strong>, le panchine <strong>Bänke</strong>. <em>das Wort</em> fa <strong>Wörter</strong> quando si tratta di vocaboli isolati, che si contano o si elencano (<em>ein Wörterbuch mit 100 000 Wörtern</em>), e <strong>Worte</strong> quando si tratta di parole che formano un discorso o un'espressione (<em>mit anderen Worten, Worte des Dankes</em>). <em>die Mutter</em> fa <strong>Mütter</strong> (le madri) e <strong>Muttern</strong> (i dadi delle viti). A volte dietro la stessa forma ci sono due nomi di genere diverso: <em>der Band</em> (il volume) fa <strong>Bände</strong>, <em>das Band</em> (il nastro, il legamento) fa <strong>Bänder</strong>, e <em>die Band</em>, il gruppo musicale, fa <em>Bands</em>."
+        p: "Alcuni nomi hanno due plurali, e ciascuno porta un significato diverso. <em>die Bank</em> è sia la banca sia la panchina: le banche sono <strong>Banken</strong>, le panchine <strong>Bänke</strong>. <em>das Wort</em> fa <strong>Wörter</strong> quando si tratta di parole come unità del lessico, considerate una per una (<em>ein Wörterbuch mit 100 000 Wörtern</em>), e <strong>Worte</strong> quando si tratta di parole che formano un discorso o un'espressione (<em>mit anderen Worten, Worte des Dankes</em>). <em>die Mutter</em> fa <strong>Mütter</strong> (le madri) e <strong>Muttern</strong> (i dadi delle viti). A volte dietro la stessa forma ci sono due nomi di genere diverso: <em>der Band</em> (il volume) fa <strong>Bände</strong>, <em>das Band</em> (il nastro, il legamento) fa <strong>Bänder</strong>, e <em>die Band</em>, il gruppo musicale, fa <em>Bands</em>."
       },
       {
         h: "Quando il plurale manca: i plurali sostitutivi",
-        p: "Altri nomi non hanno un plurale d'uso, o lo hanno raro, e il tedesco lo ricava da un composto o da un derivato. <em>der Rat</em>, nel senso di consiglio, diventa <strong>Ratschläge</strong>: <em>Räte</em> sono invece gli organi collegiali o i loro membri (<em>die Stadträte</em>). <em>der Regen</em> diventa <strong>Regenfälle</strong>, <em>der Schnee</em> <strong>Schneefälle</strong>, <em>der Streit</em> di norma <strong>Streitigkeiten</strong> (<em>Streite</em> esiste, ma è raro), <em>der Sport</em> <strong>Sportarten</strong>. Il plurale sostitutivo è il punto in cui plurale e formazione delle parole si incontrano: si ricorre a un composto il cui ultimo elemento ha il plurale (<em>Regenfälle, Ratschläge, Sportarten</em>) o a un derivato (<em>Streitigkeiten</em>)."
+        p: "Altri nomi non hanno un plurale d'uso, o lo hanno raro, e il tedesco lo ricava da un composto o da un derivato. <em>der Rat</em>, nel senso di consiglio, diventa <strong>Ratschläge</strong>: <em>Räte</em> sono invece gli organi collegiali o i loro membri (<em>die Stadträte</em>). <em>der Regen</em> diventa <strong>Regenfälle</strong>, <em>der Schnee</em> <strong>Schneefälle</strong>, <em>der Streit</em> di norma <strong>Streitigkeiten</strong> (<em>Streite</em> esiste, ma è raro). Il plurale sostitutivo è il punto in cui plurale e formazione delle parole si incontrano: si ricorre a un composto il cui ultimo elemento ha il plurale (<em>Regenfälle, Ratschläge</em>) o a un derivato (<em>Streitigkeiten</em>)."
       },
       {
         contrast: "Anche l'italiano conosce i plurali doppi: <em>le braccia</em> del corpo e <em>i bracci</em> di una gru, <em>le mura</em> della città e <em>i muri</em> di casa, <em>le membra</em> e <em>i membri</em> di un'associazione, <em>le fondamenta</em> di un edificio e <em>i fondamenti</em> di una teoria. Il meccanismo è lo stesso, ma in tedesco i casi sono altri e non corrispondono ai nostri: per un italiano <em>le banche</em> e <em>le panchine</em> sono due parole diverse, e niente segnala che in tedesco bisogna scegliere fra <em>Banken</em> e <em>Bänke</em>."
       },
       {
-        trap: "Il dizionario contiene <em>Wörter</em>, mai <em>Worte</em>; un discorso commovente è fatto di <em>Worte</em>. Se le parole si contano o si elencano, sono <em>Wörter</em>. E attenzione all'Umlaut, che qui distingue il significato: <em>Muttern</em> sono dadi, <em>Mütter</em> sono madri; <em>Bänke</em> sono panchine, <em>Banken</em> istituti di credito."
+        trap: "Il dizionario contiene <em>Wörter</em>, mai <em>Worte</em>; un discorso commovente è fatto di <em>Worte</em>. Il criterio non è il numero (anche <em>ein paar Worte</em> si contano), ma il punto di vista: unità del lessico, <em>Wörter</em>; enunciato, ciò che qualcuno dice, <em>Worte</em>. E attenzione all'Umlaut, che qui distingue il significato: <em>Muttern</em> sono dadi, <em>Mütter</em> sono madri; <em>Bänke</em> sono panchine, <em>Banken</em> istituti di credito."
       },
       {
         tip: "Impara il plurale insieme al significato, non come forma a sé. I dizionari monolingui (il Duden, per esempio) danno i due plurali ciascuno con la sua glossa: è lì che conviene controllare."
@@ -527,7 +527,7 @@ LINGUAI.addStrings("it", {
         { tr: "Le banche hanno di nuovo alzato i tassi d'interesse.", note: "Banken: istituti di credito" },
         { tr: "Davanti al municipio sono state collocate nuove panchine.", note: "Bänke: panchine, con l'Umlaut" },
         { tr: "Con poche parole ha centrato il problema.", note: "Worte: parole come espressione, non come vocaboli" },
-        { tr: "Il dizionario registra più di centomila parole.", note: "Wörter: vocaboli che si contano" },
+        { tr: "Il dizionario registra più di centomila parole.", note: "Wörter: parole come unità del lessico" },
         { tr: "Ha accettato con gratitudine i consigli dei colleghi.", note: "Ratschläge: plurale sostitutivo di der Rat" },
         { tr: "Dopo le forti piogge il fiume è straripato.", note: "Regenfälle: plurale sostitutivo di der Regen" }
       ]
@@ -563,7 +563,7 @@ LINGUAI.addStrings("it", {
           "Wörter",
           "Worten"
         ],
-        why: "Parole che formano un discorso: <b>Worte</b>. <i>Wörter</i> sono vocaboli isolati, che si contano o si elencano; <i>Worten</i> è il dativo plurale (<i>mit wenigen Worten</i>), mentre qui serve l'accusativo."
+        why: "Parole che formano un discorso: <b>Worte</b>. <i>Wörter</i> sono parole considerate come unità del lessico; <i>Worten</i> è il dativo plurale (<i>mit wenigen Worten</i>), mentre qui serve l'accusativo."
       },
       {
         q: "Qual è il plurale usuale di «der Rat» nel senso di «consiglio», «suggerimento»?",
@@ -576,8 +576,8 @@ LINGUAI.addStrings("it", {
       },
       {
         q: "Completa: «Das neue Wörterbuch verzeichnet rund 140 000 ___.»",
-        hint: "plurale di das Wort: vocaboli che si contano",
-        why: "<b>Wörter</b>: un dizionario conta vocaboli isolati. Attenzione all'Umlaut: <i>Worter</i> non esiste."
+        hint: "plurale di das Wort: unità del lessico",
+        why: "<b>Wörter</b>: un dizionario registra le parole come unità del lessico. Attenzione all'Umlaut: <i>Worter</i> non esiste."
       },
       {
         q: "Completa: «An der Schraube fehlt eine Mutter; im Werkzeugkasten liegen aber noch zwei ___.»",
@@ -608,7 +608,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Con poche parole ha detto tutto.",
-        why: "In <i>Worten</i> la <b>o</b> è breve, [ɔ]; in <i>wenigen</i> l'accento cade su <b>we</b>; in <i>gesagt</i> l'accento cade su <b>sagt</b> e <b>gt</b> finale si pronuncia [kt]."
+        why: "In <i>Worten</i> la <b>o</b> è breve, [ɔ]; in <i>wenigen</i> l'accento cade su <b>we</b>; in <i>gesagt</i> l'accento cade su <b>sagt</b> e la <b>g</b> davanti alla <b>t</b> finale si pronuncia [k]."
       }
     ]
   },
@@ -919,7 +919,7 @@ LINGUAI.addStrings("it", {
           "Das Wörterbuch enthält 50 000 Worte.",
           "Er kennt schon viele Worte auf Englisch."
         ],
-        why: "Le parole di un discorso, che toccano o convincono, sono <b>Worte</b>. Nel dizionario e nel lessico che si conta servono <i>Wörter</i>."
+        why: "Le parole di un discorso, che toccano o convincono, sono <b>Worte</b>. Per le parole come unità del lessico, nel dizionario o nel vocabolario di una lingua, servono <i>Wörter</i>."
       },
       {
         q: "Che genere ha «Bahnhofsvorplatz» (il piazzale della stazione)?",
