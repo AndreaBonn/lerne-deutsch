@@ -86,12 +86,14 @@ function reviewOutcome({ root, id, lang }) {
   } catch (error) { return { error: `Invalid review ${id}-${lang}: ${error.message}` }; }
 }
 
-function reviewErrors({ root, id, languages }) {
-  return languages.map(lang => reviewOutcome({ root, id, lang }).error).filter(Boolean);
-}
-
-function reviewNotes({ root, id, languages }) {
-  return languages.map(lang => reviewOutcome({ root, id, lang }).archived).filter(Boolean);
+/* One pass over the verdicts: each outcome builds and hashes a bundle, so
+   errors and archive notes come from the same list instead of two runs. */
+function reviewResult({ root, id, languages }) {
+  const outcomes = languages.map(lang => reviewOutcome({ root, id, lang }));
+  return {
+    errors: outcomes.map(o => o.error).filter(Boolean),
+    notes: outcomes.map(o => o.archived).filter(Boolean)
+  };
 }
 
 function humanErrors({ root, id, level }) {
@@ -136,7 +138,7 @@ export function audioErrors({ root, unit }) {
 }
 
 function stageErrors({ stage, context }) {
-  const { root, unit, target, id, course, languages, level } = context;
+  const { root, unit, target, id, course, level } = context;
   if (stage === 'core') {
     return [...checkCore(unit, target), ...(level === target.level ? [] : [`Wrong level: ${level}, expected ${target.level}`])];
   }
@@ -144,7 +146,6 @@ function stageErrors({ stage, context }) {
     const file = course.unitFiles[id];
     return file && existsSync(join(root, 'data/i18n', stage, file)) ? [] : [`Missing ${stage} overlay for ${id}`];
   }
-  if (stage === 'review') return reviewErrors({ root, id, languages });
   if (stage === 'human') return humanErrors({ root, id, level });
   return audioErrors({ root, unit });
 }
@@ -189,8 +190,9 @@ function checkUnits({ root, course, target, options, stages }) {
     if (!unit || !target.units[id]) { output.push({ label: id, errors: ['Missing or unknown unit'] }); continue; }
     const context = { root, course, id, unit, target: target.units[id], level: level.code,
       languages: languages.length ? languages : ['it'] };
-    stages.forEach(stage => output.push({ label: `${id} ${stage}`, errors: stageErrors({ stage, context }),
-      notes: stage === 'review' ? reviewNotes({ root, id, languages: context.languages }) : [] }));
+    stages.forEach(stage => output.push({ label: `${id} ${stage}`,
+      ...(stage === 'review' ? reviewResult({ root, id, languages: context.languages })
+        : { errors: stageErrors({ stage, context }), notes: [] }) }));
   }
   if (!options.unit && !options.level && stages.includes('core')) output.push({ label: 'distribution', errors: distributionErrors(course, target) });
   return output;

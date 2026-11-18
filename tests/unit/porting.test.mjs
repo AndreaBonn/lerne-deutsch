@@ -1,8 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { checkCore } from '../../scripts/check_porting.mjs';
 import { buildBundle } from '../../scripts/review_lot.mjs';
+import { hashBundle } from '../../scripts/review-bundle.mjs';
 import { createHash } from 'node:crypto';
 import { fixture, put, cli, target } from './fixtures/porting/helpers.mjs';
 
@@ -228,8 +230,7 @@ test('audio stage refuses a unit with nothing to check', t => {
    content is the one that was archived: the archive carries its own bundle
    hash, so an edit after archiving goes red again. */
 function saveArchivedFail(root, lang, archived) {
-  const bundle = buildBundle({ root, unitId: 'a1-u01', lang });
-  const bundleHash = createHash('sha256').update(JSON.stringify(bundle)).digest('hex');
+  const bundleHash = hashBundle(buildBundle({ root, unitId: 'a1-u01', lang }));
   put(root, `specs/german-course/reviews/a1-u01-${lang}.json`, JSON.stringify({
     unit: 'a1-u01', lang, verdict: 'fail', bundleHash: 'older-round',
     findings: [{ path: '$', kind: 'level', msg: 'too easy for C1' }],
@@ -264,4 +265,29 @@ test('review rejects an archive without a decision', t => {
   const result = check(root, '--stage', 'en,review');
   assert.equal(result.status, 1);
   assert.match(result.stdout, /Review is not pass/);
+});
+
+test('review rejects an archive without its bundle hash', t => {
+  const root = fixture(t);
+  put(root, 'data/i18n/en/a1-01.js', "LINGUAI.addStrings('en', {});");
+  saveArchivedFail(root, 'en', { decision: 'Q-C1-D8' });
+  const result = check(root, '--stage', 'en,review');
+  assert.equal(result.status, 1);
+  assert.match(result.stdout, /stale archive/);
+});
+
+test('an archive on a pass verdict is ignored: the pass is checked as usual', t => {
+  const root = fixture(t);
+  put(root, 'data/i18n/en/a1-01.js', "LINGUAI.addStrings('en', {});");
+  savePass(root, 'en');
+  const path = 'specs/german-course/reviews/a1-u01-en.json';
+  const review = JSON.parse(readFileSync(join(root, path), 'utf8'));
+  put(root, path, JSON.stringify({ ...review, archived: { decision: 'Q-C1-D8', bundleHash: 'whatever' } }));
+  const ok = check(root, '--stage', 'en,review');
+  assert.equal(ok.status, 0);
+  assert.doesNotMatch(ok.stdout, /archived/, 'a real pass is not reported as archived');
+  put(root, path, JSON.stringify({ ...review, bundleHash: 'old', archived: { decision: 'Q-C1-D8', bundleHash: review.bundleHash } }));
+  const stale = check(root, '--stage', 'en,review');
+  assert.equal(stale.status, 1, 'the archive does not rescue a stale pass');
+  assert.match(stale.stdout, /stale verdict/);
 });
