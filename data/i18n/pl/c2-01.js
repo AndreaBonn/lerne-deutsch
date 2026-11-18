@@ -974,7 +974,7 @@ LINGUAI.addStrings("pl", {
     theory: [
       {
         h: "Powiedzieć mniej, żeby powiedzieć więcej",
-        p: "Niemiecki mówiony, a także prasowy, bardzo lubi <strong>litotę</strong>: zaprzecza się przeciwieństwu tego, co się myśli. <em>Nicht schlecht</em> to często pełna pochwała, <em>nicht ganz ohne</em> znaczy „wymagający, ryzykowny”, <em>nicht gerade billig</em> znaczy „drogi”, <em>nicht ganz unproblematisch</em> znaczy „problematyczny”, często bardziej, niż sugeruje forma. Siła litoty zależy od kontekstu i intonacji: <em>nicht schlecht</em> może być pełną pochwałą albo umiarkowaną aprobatą. Formuła <strong>gelinde gesagt</strong> („delikatnie mówiąc”, „łagodnie mówiąc”) uprzedza, że rzeczywistość jest gorsza niż wybrane słowo: <em>Die Lage ist, gelinde gesagt, angespannt.</em> Pochwała też bywa powściągliwa: <em>Das kann sich sehen lassen</em> docenia znakomity wynik bez patosu."
+        p: "Niemiecki mówiony, a także prasowy, bardzo lubi <strong>litotę</strong>: zaprzecza się przeciwieństwu tego, co się myśli. <em>Nicht schlecht</em> to często pełna pochwała, <em>nicht ganz ohne</em> znaczy „wymagający, ryzykowny”, <em>nicht gerade billig</em> znaczy „drogi”, <em>nicht ganz unproblematisch</em> znaczy „problematyczny”, często bardziej, niż sugeruje forma. Siła litoty zależy od kontekstu i intonacji: <em>nicht schlecht</em> może być pełną pochwałą albo umiarkowaną aprobatą. Formuła <strong>gelinde gesagt</strong> („delikatnie mówiąc”, „łagodnie mówiąc”) uprzedza, że rzeczywistość jest gorsza niż wybrane słowo: <em>Die Lage ist, gelinde gesagt, angespannt.</em> Pochwała też bywa powściągliwa: <em>Das kann sich sehen lassen</em> docenia dobry wynik, którym można się pochwalić, bez patosu."
       },
       {
         h: "Ironia w partykułach",
@@ -1000,13 +1000,13 @@ LINGUAI.addStrings("pl", {
           ["nicht ganz ohne", "nie całkiem bez", "wymagający, ryzykowny"],
           ["nicht gerade billig", "nie całkiem tani", "drogi"],
           ["nicht ganz unproblematisch", "nie całkiem bezproblemowy", "problematyczny, często wyraźnie"],
-          ["Das kann sich sehen lassen.", "to może się pokazać", "to znakomity wynik"],
+          ["Das kann sich sehen lassen.", "to może się pokazać", "to dobry wynik, którym można się pochwalić"],
           ["Das ist ja eine schöne Bescherung!", "piękny prezent!", "no to pięknie!"]
         ]
       },
       examples: [
         { tr: "Negocjacje nie były całkiem bezproblemowe.", note: "litota: w tym kontekście były w rzeczywistości trudne" },
-        { tr: "Film był wcale niezły.", note: "gar nicht mal so: powściągliwa pochwała" },
+        { tr: "Film wcale nie był taki zły.", note: "gar nicht mal so: powściągliwa pochwała" },
         { tr: "Nie jest on akurat najpracowitszy.", note: "nicht gerade + stopień najwyższy: złagodzona krytyka" },
         { tr: "No to pięknie!", note: "ironia: ja w wykrzyknieniu, schön na odwrót" },
         { tr: "Ładny z ciebie przyjaciel!", note: "ironiczny wyrzut z celownikiem etycznym mir" },
@@ -1062,7 +1062,7 @@ LINGUAI.addStrings("pl", {
           "Das lässt zu wünschen übrig.",
           "Das ist unter aller Kritik."
         ],
-        why: "<b>sich sehen lassen können</b> docenia znakomity wynik bez patosu. <i>zu wünschen übrig lassen</i> („pozostawiać wiele do życzenia”) to ocena negatywna; <i>unter aller Kritik</i> to miażdżąca krytyka bez niuansów."
+        why: "<b>sich sehen lassen können</b> docenia dobry wynik, którym można się pochwalić, bez patosu. <i>zu wünschen übrig lassen</i> („pozostawiać wiele do życzenia”) to ocena negatywna; <i>unter aller Kritik</i> to miażdżąca krytyka bez niuansów."
       },
       {
         q: "Zapomniałeś o urodzinach przyjaciela. Mówi do ciebie: „Du bist mir ja ein schöner Freund!” Co ma na myśli?",
@@ -1258,7 +1258,7 @@ LINGUAI.addStrings("pl", {
         contrast: "Polszczyzna ma tych samych łacińskich gości co niemiecki: <em>teza, przesłanka, fenomen, kryterium, gremium, spektrum, konsekwencja</em>. Pułapka siedzi w liczbie mnogiej. Polskie <em>kryterium</em> i <em>gremium</em> w liczbie pojedynczej się nie odmieniają, a w mnogiej dają <em>kryteria</em> i <em>gremia</em>, i ta polska końcówka podsuwa formę <em>die Kriteria</em>, której po niemiecku nie ma: jest <em>die Kriterien, die Gremien</em>. Druga pułapka to <strong>fałszywi przyjaciele</strong>. <em>die Konsistenz</em> w Bildungssprache to „spójność, niesprzeczność” wywodu, a nie tylko polska <em>konsystencja</em> sosu; <em>der Konkurs</em> to upadłość firmy, a polski konkurs to <em>der Wettbewerb</em>; <em>die Konfession</em> to wyznanie, nie spowiedź (<em>die Beichte</em>). <em>ordinär</em> za to pokrywa się z polskim <em>ordynarny</em>: znaczy „wulgarny, prostacki”."
       },
       {
-        trap: "Nie twórz niemieckiej liczby mnogiej z <em>-s</em> ani z rodzimymi końcówkami: <em>die Gremiums</em> i <em>die Kriteriume</em> nie istnieją. I uważaj na akcent, który w łacińskich i greckich Fremdwörter takich jak te zwykle pada pod koniec słowa, a nie na przedostatnią sylabę, jak w polskim; sprawdzaj go słowo po słowie: <em>Phäno<b>men</b>, Prä<b>mis</b>se, konsis<b>tent</b>, verifi<b>zie</b>ren</em>."
+        trap: "Nie twórz liczby mnogiej tych rzeczowników na <em>-um</em> z <em>-s</em> ani z rodzimymi końcówkami: <em>die Gremiums</em> i <em>die Kriteriume</em> nie istnieją. I uważaj na akcent, który w łacińskich i greckich Fremdwörter takich jak te zwykle pada pod koniec słowa, a nie na przedostatnią sylabę, jak w polskim; sprawdzaj go słowo po słowie: <em>Phäno<b>men</b>, Prä<b>mis</b>se, konsis<b>tent</b>, verifi<b>zie</b>ren</em>."
       },
       {
         tip: "Jeden latynizm na akapit daje precyzję; pięć w jednym zdaniu daje pedanterię. Jeśli niemiecki odpowiednik mówi to samo, w tekstach popularnych to często lepszy wybór."
@@ -1337,12 +1337,12 @@ LINGUAI.addStrings("pl", {
       {
         q: "Uzupełnij: „Die ___ seiner Argumentation überzeugte die Kommission.”",
         hint: "rzeczownik od konsistent",
-        why: "<b>Konsistenz</b>: przymiotniki na <i>-ent</i> dają rzeczowniki żeńskie na <i>-enz</i>, jak <i>ambivalent → Ambivalenz</i>. Tu znaczy „spójność, niesprzeczność” wywodu, a nie gęstość."
+        why: "<b>Konsistenz</b>: wiele przymiotników na <i>-ent</i> daje rzeczowniki żeńskie na <i>-enz</i>, jak <i>ambivalent → Ambivalenz</i>. Tu znaczy „spójność, niesprzeczność” wywodu, a nie gęstość."
       },
       {
         q: "Uzupełnij: w pierwszej luce latynizm oznaczający „przesłankę”, w drugiej przymiotnik znaczący „bez mocy, nieważny”.",
         tr: "Przesłanka, na której opiera się całe badanie, okazała się fałszywa; wyniki są więc nieważne.",
-        why: "<b>Prämisse</b> (przyjmowane są też <i>Annahme</i>, <i>Grundannahme</i>, <i>Voraussetzung</i>) i <b>hinfällig</b> (albo <i>ungültig</i>): unieważniony wynik jest <i>hinfällig</i>, a <i>obsolet</i> mówi tylko, że coś przestarzało. <i>Prämisse</i> jest rodzaju żeńskiego: <i>die Prämisse, auf der</i>."
+        why: "<b>Prämisse</b> (przyjmowane są też <i>Annahme</i>, <i>Grundannahme</i>, <i>Voraussetzung</i>) i <b>hinfällig</b> (albo <i>ungültig</i>): unieważniony wynik jest <i>hinfällig</i>, a <i>obsolet</i> mówi tylko, że coś jest przestarzałe albo już nie ma zastosowania. <i>Prämisse</i> jest rodzaju żeńskiego: <i>die Prämisse, auf der</i>."
       },
       {
         q: "Połącz każdy latynizm z jego znaczeniem.",

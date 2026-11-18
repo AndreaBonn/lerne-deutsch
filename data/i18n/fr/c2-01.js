@@ -1016,7 +1016,7 @@ LINGUAI.addStrings("fr", {
     vocab: [
       "l'ironie",
       "l'understatement, la formulation volontairement en retrait",
-      "l'euphémisme, la minimisation",
+      "l'atténuation, la minimisation",
       "l'exagération",
       "l'allusion",
       "le sous-entendu, le ton sous-jacent",
@@ -1258,7 +1258,7 @@ LINGUAI.addStrings("fr", {
         contrast: "Le français a l'habitude de ce registre : c'est l'écart entre <strong>mot savant</strong> et mot populaire, entre « fragile » et « frêle », « potion » et « poison ». Le couple <em>obsolet</em> / <em>veraltet</em> fonctionne de la même façon, et <em>Prämisse, Konsequenz, ambivalent, implizieren</em> vous sont transparents. Le risque est dans les <strong>faux amis</strong>. <em>konsequent</em> veut dire « cohérent, qui va jusqu'au bout », jamais « conséquent » au sens familier d'« important, considérable ». <em>die Konfession</em> désigne surtout l'appartenance religieuse, et en histoire une profession de foi (<em>die Augsburger Konfession</em>) ; la confession des péchés, elle, se dit <em>die Beichte</em>. <em>ordinär</em>, dit d'une personne, signifie « vulgaire » : c'est le sens péjoratif que « ordinaire » n'a qu'à la marge en français, et non « habituel », qui se dit <em>gewöhnlich</em>. Enfin, le pluriel ne suit pas le français : <em>die Kriterien</em>, pas <em>Kriteriums</em> ni <em>Kriteria</em>."
       },
       {
-        trap: "Ne formez pas le pluriel allemand avec un <em>-s</em> ou avec les terminaisons natives : <em>die Gremiums</em> et <em>die Kriteriume</em> n'existent pas. Et attention à l'accent, qui dans les Fremdwörter latins et grecs comme ceux-ci tombe le plus souvent vers la fin, comme en français, mais avec une intensité que le français ne connaît pas ; vérifiez-le mot par mot : <em>Phäno<b>men</b>, Prä<b>mis</b>se, konsis<b>tent</b>, verifi<b>zie</b>ren</em>."
+        trap: "Ne formez pas le pluriel de ces noms en <em>-um</em> avec un <em>-s</em> ou avec les terminaisons natives : <em>die Gremiums</em> et <em>die Kriteriume</em> n'existent pas. Et attention à l'accent, qui dans les Fremdwörter latins et grecs comme ceux-ci tombe le plus souvent vers la fin, comme en français, mais avec une intensité que le français ne connaît pas ; vérifiez-le mot par mot : <em>Phäno<b>men</b>, Prä<b>mis</b>se, konsis<b>tent</b>, verifi<b>zie</b>ren</em>."
       },
       {
         tip: "Un latinisme par paragraphe donne de la précision ; cinq dans une phrase donnent de la pédanterie. Si l'équivalent allemand dit la même chose, c'est souvent le meilleur choix dans un texte de vulgarisation."
@@ -1337,12 +1337,12 @@ LINGUAI.addStrings("fr", {
       {
         q: "Complétez : « Die ___ seiner Argumentation überzeugte die Kommission. »",
         hint: "nom formé sur konsistent",
-        why: "<b>Konsistenz</b> : les adjectifs en <i>-ent</i> donnent des noms féminins en <i>-enz</i>, comme <i>ambivalent → Ambivalenz</i>."
+        why: "<b>Konsistenz</b> : beaucoup d'adjectifs en <i>-ent</i> donnent des noms féminins en <i>-enz</i>, comme <i>ambivalent → Ambivalenz</i> ; le nom se vérifie dans le dictionnaire."
       },
       {
         q: "Complétez : dans le premier blanc, le latinisme pour « prémisse » ; dans le second, un adjectif qui signifie « sans validité ».",
         tr: "La prémisse sur laquelle repose toute l'étude s'est révélée fausse ; les résultats sont donc sans validité.",
-        why: "<b>Prämisse</b> (on accepte aussi <i>Annahme</i>, <i>Grundannahme</i>, <i>Voraussetzung</i>) et <b>hinfällig</b> (ou <i>ungültig</i>) : un résultat invalidé est <i>hinfällig</i>, alors que <i>obsolet</i> dit seulement que quelque chose a été dépassé par le temps. <i>Prämisse</i> est féminin : <i>die Prämisse, auf der</i>."
+        why: "<b>Prämisse</b> (on accepte aussi <i>Annahme</i>, <i>Grundannahme</i>, <i>Voraussetzung</i>) et <b>hinfällig</b> (ou <i>ungültig</i>) : un résultat invalidé est <i>hinfällig</i>, alors que <i>obsolet</i> dit seulement que quelque chose est dépassé ou ne s'applique plus. <i>Prämisse</i> est féminin : <i>die Prämisse, auf der</i>."
       },
       {
         q: "Associez chaque latinisme à son sens.",

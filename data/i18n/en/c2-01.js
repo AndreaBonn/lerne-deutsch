@@ -1258,7 +1258,7 @@ LINGUAI.addStrings("en", {
         contrast: "English knows this register well: it is the gap between <em>begin</em> and <em>commence</em>, <em>use</em> and <em>utilize</em>, <em>show</em> and <em>demonstrate</em>. That is exactly the gap between <em>veraltet</em> and <em>obsolet</em>, so <em>Prämisse, Konsequenz, ambivalent, implizieren</em> will be transparent to you. The danger lies in the <strong>false friends</strong>: <em>ordinär</em>, said of people, means “vulgar, crude”, not “ordinary” (that is <em>gewöhnlich</em>); <em>die Konfession</em> is a religious denomination, while confessing a sin is <em>die Beichte</em>; and <em>konsistent</em> means “internally consistent”, while being consistent in your behavior is <em>konsequent</em>. The plurals do not follow English either: English keeps <em>criteria</em> and <em>spectra</em>, German says <em>die Kriterien</em> and <em>die Spektren</em>."
       },
       {
-        trap: "Do not build the German plural with <em>-s</em> or with native endings: <em>die Gremiums</em> and <em>die Kriteriume</em> do not exist, and neither does <em>die Kriteria</em>. And watch the stress, which in Latin and Greek Fremdwörter like these usually falls near the end; check it word by word: <em>Phäno<b>men</b>, Prä<b>mis</b>se, konsis<b>tent</b>, verifi<b>zie</b>ren</em>."
+        trap: "Do not build the plural of these <em>-um</em> nouns with <em>-s</em> or with native endings: <em>die Gremiums</em> and <em>die Kriteriume</em> do not exist, and neither does <em>die Kriteria</em>. And watch the stress, which in Latin and Greek Fremdwörter like these usually falls near the end; check it word by word: <em>Phäno<b>men</b>, Prä<b>mis</b>se, konsis<b>tent</b>, verifi<b>zie</b>ren</em>."
       },
       {
         tip: "One Latinism per paragraph gives precision; five in one sentence give pedantry. If the German equivalent says the same thing, it is often the better choice in texts for a general audience."
@@ -1337,12 +1337,12 @@ LINGUAI.addStrings("en", {
       {
         q: "Complete: “Die ___ seiner Argumentation überzeugte die Kommission.”",
         hint: "noun from konsistent",
-        why: "<b>Konsistenz</b>: adjectives in <i>-ent</i> give feminine nouns in <i>-enz</i>, like <i>ambivalent → Ambivalenz</i>."
+        why: "<b>Konsistenz</b>: many adjectives in <i>-ent</i> give feminine nouns in <i>-enz</i>, like <i>ambivalent → Ambivalenz</i>; check the noun in a dictionary."
       },
       {
         q: "Complete: in the first gap the Latinism for “premise”, in the second an adjective meaning “no longer valid”.",
         tr: "The premise on which the entire study rests has turned out to be false; the results are therefore no longer valid.",
-        why: "<b>Prämisse</b> (<i>Annahme</i>, <i>Grundannahme</i>, <i>Voraussetzung</i> are accepted too) and <b>hinfällig</b> (or <i>ungültig</i>): an invalidated result is <i>hinfällig</i>, while <i>obsolet</i> only says that time has overtaken something. <i>Prämisse</i> is feminine: <i>die Prämisse, auf der</i>."
+        why: "<b>Prämisse</b> (<i>Annahme</i>, <i>Grundannahme</i>, <i>Voraussetzung</i> are accepted too) and <b>hinfällig</b> (or <i>ungültig</i>): an invalidated result is <i>hinfällig</i>, while <i>obsolet</i> only says that something is outdated or no longer applicable. <i>Prämisse</i> is feminine: <i>die Prämisse, auf der</i>."
       },
       {
         q: "Match each Latinism with its meaning.",

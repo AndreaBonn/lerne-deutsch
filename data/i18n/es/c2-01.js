@@ -1258,7 +1258,7 @@ LINGUAI.addStrings("es", {
         contrast: "Para un hispanohablante la Bildungssprache es el registro más transparente del alemán: son los mismos <strong>cultismos</strong> que usa el español culto, y <em>Prämisse, Konsequenz, obsolet, ambivalent, implizieren</em> se entienden enseguida. El riesgo está en los <strong>falsos amigos</strong>. <em>konsistent</em>, en el registro culto, significa «coherente, sin contradicciones»; el sentido material de «sólido, compacto» existe, sobre todo en <em>die Konsistenz</em> de una masa, pero en un ensayo casi nunca es el que se busca; <em>konsequent</em>, en cambio, es un amigo fiel: «coherente con sus principios, firme», como una persona «consecuente». <em>ordinär</em>, en cambio, coincide con el español en sus dos sentidos: dicho de una persona o de un comportamiento es «vulgar», como una persona «ordinaria», y dicho de una cosa puede ser «común, corriente» (<em>ganz ordinäres Papier</em>); para «normal, habitual» sin matiz el alemán prefiere <em>gewöhnlich</em>. Y <em>die Konfession</em> es la confesión en el sentido de credo o comunidad religiosa (católica, protestante); confesar los pecados es <em>die Beichte</em>, y confesar un delito, <em>das Geständnis</em>. El plural, por último, no sigue al español: <em>die Kriterien</em>, no <em>Kriterios</em> ni <em>Kriteria</em>."
       },
       {
-        trap: "No formes el plural alemán con <em>-s</em> ni con las terminaciones nativas: <em>die Gremiums</em> y <em>die Kriteriume</em> no existen. Y atención al acento, que en los Fremdwörter latinos y griegos como estos suele caer hacia el final; compruébalo palabra por palabra: <em>Phäno<b>men</b>, Prä<b>mis</b>se, konsis<b>tent</b>, verifi<b>zie</b>ren</em>."
+        trap: "No formes el plural de estos sustantivos en <em>-um</em> con <em>-s</em> ni con las terminaciones nativas: <em>die Gremiums</em> y <em>die Kriteriume</em> no existen. Y atención al acento, que en los Fremdwörter latinos y griegos como estos suele caer hacia el final; compruébalo palabra por palabra: <em>Phäno<b>men</b>, Prä<b>mis</b>se, konsis<b>tent</b>, verifi<b>zie</b>ren</em>."
       },
       {
         tip: "Un latinismo por párrafo da precisión; cinco en una frase dan pedantería. Si el equivalente alemán dice lo mismo, en los textos divulgativos suele ser la mejor opción."
@@ -1337,12 +1337,12 @@ LINGUAI.addStrings("es", {
       {
         q: "Completa: «Die ___ seiner Argumentation überzeugte die Kommission.»",
         hint: "sustantivo de konsistent",
-        why: "<b>Konsistenz</b>: los adjetivos en <i>-ent</i> dan sustantivos femeninos en <i>-enz</i>, como <i>ambivalent → Ambivalenz</i>. Aquí es «coherencia», no «consistencia» en el sentido de solidez."
+        why: "<b>Konsistenz</b>: muchos adjetivos en <i>-ent</i> dan sustantivos femeninos en <i>-enz</i>, como <i>ambivalent → Ambivalenz</i>. Aquí es «coherencia», no «consistencia» en el sentido de solidez."
       },
       {
         q: "Completa: en el primer hueco el latinismo por «premisa», en el segundo un adjetivo que significa «sin validez».",
         tr: "La premisa en la que se basa todo el estudio ha resultado ser falsa; por tanto, los resultados carecen de validez.",
-        why: "<b>Prämisse</b> (se aceptan también <i>Annahme</i>, <i>Grundannahme</i>, <i>Voraussetzung</i>) y <b>hinfällig</b> (o <i>ungültig</i>): un resultado invalidado es <i>hinfällig</i>, mientras que <i>obsolet</i> solo dice que algo ha quedado superado por el tiempo. <i>Prämisse</i> es femenino: <i>die Prämisse, auf der</i>."
+        why: "<b>Prämisse</b> (se aceptan también <i>Annahme</i>, <i>Grundannahme</i>, <i>Voraussetzung</i>) y <b>hinfällig</b> (o <i>ungültig</i>): un resultado invalidado es <i>hinfällig</i>, mientras que <i>obsolet</i> solo dice que algo está superado o ya no es aplicable. <i>Prämisse</i> es femenino: <i>die Prämisse, auf der</i>."
       },
       {
         q: "Relaciona cada latinismo con su significado.",
