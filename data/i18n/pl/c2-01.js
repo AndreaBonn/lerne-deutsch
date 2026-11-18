@@ -21,7 +21,7 @@ LINGUAI.addStrings("pl", {
     theory: [
       {
         h: "Zdanie względne ściśnięte przed rzeczownikiem",
-        p: "W niemczyźnie pisanej imiesłów może zabrać ze sobą swoje określenia i stanąć między rodzajnikiem a rzeczownikiem: <em>die seit Jahren von Fachleuten geforderte Reform</em>. To ściśnięte zdanie względne: <em>die Reform, die seit Jahren von Fachleuten gefordert wird</em>. Rodzajnik otwiera nawias, rzeczownik go zamyka, a wszystko pomiędzy należy do przydawki: każde określenie zależy od własnego imiesłowu, który stoi tuż przed rzeczownikiem i dostaje końcówkę przymiotnika. <strong>Imiesłów II</strong> oznacza czynność, której coś podlega albo która już się zakończyła (<em>die vorgelegten Daten</em>, przedstawione dane); <strong>imiesłów I</strong> czynność aktywną i równoczesną (<em>die vorliegenden Gutachten</em>, opinie, którymi się dysponuje)."
+        p: "W niemczyźnie pisanej imiesłów może zabrać ze sobą swoje określenia i stanąć między rodzajnikiem a rzeczownikiem: <em>die seit Jahren von Fachleuten geforderte Reform</em>. To ściśnięte zdanie względne: <em>die Reform, die seit Jahren von Fachleuten gefordert wird</em>. Rodzajnik otwiera nawias, rzeczownik go zamyka, a wszystko pomiędzy należy do przydawki. Przydawek współrzędnych może być kilka i każda ma własne określenia; imiesłów stoi tuż przed rzeczownikiem i dostaje końcówkę przymiotnika. <strong>Imiesłów II</strong> oznacza czynność, której coś podlega albo która już się zakończyła (<em>die vorgelegten Daten</em>, przedstawione dane); <strong>imiesłów I</strong> czynność aktywną i równoczesną (<em>die vorliegenden Gutachten</em>, opinie, którymi się dysponuje)."
       },
       {
         h: "Jak to czytać",
@@ -130,7 +130,7 @@ LINGUAI.addStrings("pl", {
         why: "W dwóch pierwszych imiesłów ze swoimi określeniami stoi między rodzajnikiem a rzeczownikiem (<i>die vom Gericht bestellte Gutachterin</i>, <i>die über Jahrzehnte gewachsenen Strukturen</i>). Trzecie mówi to samo co pierwsze, ale zdaniem względnym; w czwartym <i>gewachsen</i> należy do Perfekt i nie jest przydawką."
       },
       {
-        q: "Przetłumacz z rozbudowaną przydawką imiesłowową: „Badanie przedstawione w zeszłym tygodniu przez uniwersytet podważa rozpowszechnione dotąd założenia.” (vorlegen, die Annahme)",
+        q: "Przetłumacz z rozbudowaną przydawką imiesłowową: „Badanie przedstawione w zeszłym tygodniu przez uniwersytet przeczy rozpowszechnionym dotąd założenia.” (vorlegen, die Annahme)",
         why: "<i>Die von der Universität letzte Woche vorgelegte Studie widerspricht den bisher verbreiteten Annahmen</i>: to, co po polsku stoi za słowem „badanie”, po niemiecku idzie przed <i>Studie</i>, z imiesłowem na ostatnim miejscu. <i>widersprechen</i> łączy się z celownikiem: <i>den ... Annahmen</i>."
       },
       {
@@ -251,7 +251,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         q: "Ułóż słowa we właściwej kolejności.",
-        tr: "Wnioski, które urząd musi rozpatrzyć, leżą w nim od tygodni.",
+        tr: "Wnioski, które urząd musi rozpatrzyć, są dostępne od tygodni.",
         why: "<i>Die von der Behörde zu prüfenden Anträge liegen seit Wochen vor.</i> Wykonawca czynności <i>von der Behörde</i> stoi w przydawce, przed <i>zu prüfenden</i>; <i>vor</i>, przedrostek <i>vorliegen</i>, idzie na koniec."
       },
       {
@@ -395,7 +395,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         tr: "Pani minister wyparła się wszelkiej odpowiedzialności.",
-        why: "W <i>Ministerin</i> akcent pada na <b>te</b>; w <i>Verantwortung</i> akcent pada na <b>ant</b>; w <i>Abrede</i> akcent pada na <b>Ab</b>, a <b>b</b> wymawia się [p]."
+        why: "W <i>Ministerin</i> akcent pada na <b>nis</b>; w <i>Verantwortung</i> akcent pada na <b>ant</b>; w <i>Abrede</i> akcent pada na <b>Ab</b>, a <b>b</b> wymawia się [p]."
       }
     ]
   },

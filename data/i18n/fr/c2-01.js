@@ -251,7 +251,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         q: "Remettez les mots dans l'ordre.",
-        tr: "Les demandes que l'administration doit examiner sont entre ses mains depuis des semaines.",
+        tr: "Les demandes que l'administration doit examiner sont disponibles depuis des semaines.",
         why: "<i>Die von der Behörde zu prüfenden Anträge liegen seit Wochen vor.</i> L'agent <i>von der Behörde</i> se trouve dans l'épithète, avant <i>zu prüfenden</i> ; <i>vor</i>, particule de <i>vorliegen</i>, va à la fin."
       },
       {
@@ -395,7 +395,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         tr: "La ministre a nié toute responsabilité.",
-        why: "Dans <i>Ministerin</i>, l'accent tombe sur <b>te</b> ; dans <i>Verantwortung</i>, l'accent tombe sur <b>ant</b> ; dans <i>Abrede</i>, l'accent tombe sur <b>Ab</b> et le <b>b</b> se prononce [p]."
+        why: "Dans <i>Ministerin</i>, l'accent tombe sur <b>nis</b> ; dans <i>Verantwortung</i>, l'accent tombe sur <b>ant</b> ; dans <i>Abrede</i>, l'accent tombe sur <b>Ab</b> et le <b>b</b> se prononce [p]."
       }
     ]
   },

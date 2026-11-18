@@ -28,7 +28,7 @@ LINGUAI.addStrings("es", {
         p: "Si después de un artículo encuentras una preposición o un segundo artículo (<em>die von der ..., der dem ...</em>), espera un atributo ampliado: salta hacia delante hasta el sustantivo y localiza los participios declinados que lo preceden (puede haber más de uno, coordinados), luego vuelve atrás y lee los complementos de cada uno. El orden interno es el de una subordinada: complementos primero, participio al final, como el verbo al final de la oración de relativo. El pronombre reflexivo se queda dentro: <em>die sich verschärfende Wohnungsnot</em>. Dos atributos coordinados sin conjunción se separan con una coma: <em>die in der Studie befragten, überwiegend jungen Erwachsenen</em>; con <em>und</em> la coma no hace falta: <em>die angekündigte und vielfach kritisierte Reform</em>."
       },
       {
-        contrast: "En español el participio va detrás del sustantivo y la frase crece hacia la derecha: <em>la reforma reclamada desde hace años por los expertos</em>. El alemán pone todo el atributo a la izquierda, entre el artículo y el sustantivo. Los complementos pueden conservar el orden español (<em>seit Jahren von Fachleuten</em>, «desde hace años por los expertos»); lo que cambia de sitio es el participio, que pasa al final, justo antes del sustantivo. El participio de presente español en <em>-ante, -ente</em> es raro y casi siempre está lexicalizado (<em>vigente, creciente</em>); donde el alemán usa un participio I, el español recurre a una relativa con <em>que</em> o a un gerundio, que como adjetivo no se admite (<em>una caja conteniendo libros</em> es incorrecto). El alemán forma el participio I de casi cualquier verbo y lo usa libremente como atributo: <em>die dem Gericht vorliegenden Gutachten</em>, «los peritajes de que dispone el tribunal»."
+        contrast: "En español el participio va detrás del sustantivo y la frase crece hacia la derecha: <em>la reforma reclamada desde hace años por los expertos</em>. El alemán pone todo el atributo a la izquierda, entre el artículo y el sustantivo. Los complementos pueden conservar el orden español (<em>seit Jahren von Fachleuten</em>, «desde hace años por los expertos»); lo que cambia de sitio es el participio, que pasa al final, justo antes del sustantivo. El participio de presente español en <em>-ante, -ente</em> es raro y casi siempre está lexicalizado (<em>vigente, creciente</em>); donde el alemán usa un participio I, el español recurre a una relativa con <em>que</em> o a un gerundio, que en función de adjetivo especificativo la norma considera incorrecto (<em>una caja conteniendo libros</em>) y que en ningún caso equivale al participio atributivo alemán. El alemán forma el participio I de casi cualquier verbo y lo usa libremente como atributo: <em>die dem Gericht vorliegenden Gutachten</em>, «los peritajes de que dispone el tribunal»."
       },
       {
         trap: "El participio de una pasiva en Perfekt no lleva <em>worden</em>: <em>die Daten, die erhoben worden sind</em> se convierte en <em>die erhobenen Daten</em>, nunca en <em>die erhoben wordenen Daten</em>. Y no confundas los dos participios: <em>die steigenden Kosten</em> siguen subiendo, <em>die gestiegenen Kosten</em> ya han subido."
@@ -200,7 +200,7 @@ LINGUAI.addStrings("es", {
       "la condición, el requisito (de una autorización)",
       "los hechos, el supuesto de hecho",
       "presentar con posterioridad, completar (documentos)",
-      "objetar, reparar (un defecto)",
+      "objetar, señalar (un defecto)",
       "subestimar",
       "garantizar, asegurar",
       "imprescindible",
@@ -251,7 +251,7 @@ LINGUAI.addStrings("es", {
       },
       {
         q: "Ordena las palabras.",
-        tr: "Las solicitudes que la autoridad debe examinar obran en su poder desde hace semanas.",
+        tr: "Las solicitudes que la autoridad debe examinar están disponibles desde hace semanas.",
         why: "<i>Die von der Behörde zu prüfenden Anträge liegen seit Wochen vor.</i> El agente <i>von der Behörde</i> está dentro del atributo, antes de <i>zu prüfenden</i>; <i>vor</i>, partícula de <i>vorliegen</i>, va al final."
       },
       {
@@ -395,7 +395,7 @@ LINGUAI.addStrings("es", {
       },
       {
         tr: "La ministra negó toda responsabilidad.",
-        why: "En <i>Ministerin</i> el acento recae en <b>te</b>; en <i>Verantwortung</i> el acento recae en <b>ant</b>; en <i>Abrede</i> el acento recae en <b>Ab</b> y la <b>b</b> se pronuncia [p]."
+        why: "En <i>Ministerin</i> el acento recae en <b>nis</b>; en <i>Verantwortung</i> el acento recae en <b>ant</b>; en <i>Abrede</i> el acento recae en <b>Ab</b> y la <b>b</b> se pronuncia [p]."
       }
     ]
   },

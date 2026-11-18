@@ -251,7 +251,7 @@ LINGUAI.addStrings("en", {
       },
       {
         q: "Put the words in order.",
-        tr: "The applications the authority has to review have been in its hands for weeks.",
+        tr: "The applications the authority has to review have been available for weeks.",
         why: "<i>Die von der Behörde zu prüfenden Anträge liegen seit Wochen vor.</i> The agent <i>von der Behörde</i> sits inside the attribute, before <i>zu prüfenden</i>; <i>vor</i>, the particle of <i>vorliegen</i>, goes at the end."
       },
       {
@@ -395,7 +395,7 @@ LINGUAI.addStrings("en", {
       },
       {
         tr: "The minister denied any responsibility.",
-        why: "In <i>Ministerin</i> the stress falls on <b>te</b>; in <i>Verantwortung</i> the stress falls on <b>ant</b>; in <i>Abrede</i> the stress falls on <b>Ab</b> and the <b>b</b> is pronounced [p]."
+        why: "In <i>Ministerin</i> the stress falls on <b>nis</b>; in <i>Verantwortung</i> the stress falls on <b>ant</b>; in <i>Abrede</i> the stress falls on <b>Ab</b> and the <b>b</b> is pronounced [p]."
       }
     ]
   },
