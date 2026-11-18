@@ -1,7 +1,7 @@
 /* ============================================================
    Language-neutral layer: German (de-DE), structure and answer keys.
    Learner-language texts live in data/i18n/<lang>/c2-01.js.
-   c2-u01 and c2-u02 are German units.
+   c2-u01, c2-u02 and c2-u03 are German units.
    ============================================================ */
 LINGUAI.addUnits("C2", [
   {
@@ -467,6 +467,240 @@ LINGUAI.addUnits("C2", [
           it: "Mit wenigen Worten erklärte die Sprachwissenschaftlerin den Unterschied zwischen Wörtern und Worten. Die Studierenden hörten ihr mit großer Aufmerksamkeit zu."
         },
         { t: "speak", it: "Das Gesundheitsamt hat die Schließung angeordnet." }
+      ]
+    }
+  },
+  {
+    id: "c2-u03",
+    icon: "🎭",
+    titleIt: "Zwischentöne",
+    lessons: [
+      {
+        id: "c2-u03-l1",
+        tags: ["g-register", "g-modalpartikeln"],
+        cefr: "C2",
+        titleIt: "Ironie und Understatement",
+        grammar: {
+          examples: [
+            { it: "Die Verhandlungen waren nicht ganz unproblematisch." },
+            { it: "Der Film war gar nicht mal so schlecht." },
+            { it: "Er ist nicht gerade der Fleißigste." },
+            { it: "Das ist ja eine schöne Bescherung!" },
+            { it: "Du bist mir ja ein schöner Freund!" },
+            { it: "Das Ergebnis kann sich durchaus sehen lassen." }
+          ]
+        },
+        vocab: [
+          { it: "die Ironie", plural: "-", ex: "Ihre Ironie hat nicht jeder verstanden." },
+          { it: "das Understatement", plural: "-", ex: "„Nicht schlecht“ ist ein typisches Understatement." },
+          { it: "die Untertreibung", plural: "die Untertreibungen", ex: "„Etwas anstrengend“ war eine gewaltige Untertreibung." },
+          { it: "die Übertreibung", plural: "die Übertreibungen", ex: "Seine Übertreibungen nimmt niemand mehr ernst." },
+          { it: "die Anspielung", plural: "die Anspielungen", ex: "Die Anspielung auf seine Niederlage war unüberhörbar." },
+          { it: "der Unterton", plural: "die Untertöne", ex: "In ihrer Stimme lag ein spöttischer Unterton." },
+          { it: "der Seitenhieb", plural: "die Seitenhiebe", ex: "Den Seitenhieb auf die Opposition konnte er sich nicht verkneifen." },
+          { it: "die Andeutung", plural: "die Andeutungen", ex: "Sie machte nur vage Andeutungen." },
+          { it: "zweideutig", ex: "Die Bemerkung war bewusst zweideutig formuliert." },
+          { it: "augenzwinkernd", ex: "Augenzwinkernd bedankte er sich für die „konstruktive“ Kritik." },
+          { it: "herunterspielen", ex: "Die Regierung versuchte, die Krise herunterzuspielen." },
+          { it: "jemanden auf den Arm nehmen", ex: "Glaub ihm kein Wort, er nimmt dich nur auf den Arm." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          {
+            t: "cloze",
+            text: "Die Präsentation war, {{1}} gesagt, nicht ganz {{2}}: Der Beamer fiel aus, und die Rednerin hatte ihre Notizen vergessen.",
+            gaps: [["gelinde", "milde", "vorsichtig"], ["gelungen", "geglückt", "glücklich", "reibungslos"]]
+          },
+          {
+            t: "match",
+            pairs: [{ it: "nicht schlecht" }, { it: "nicht ganz ohne" }, { it: "nicht gerade billig" }, { it: "nicht unbedingt" }]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Das Restaurant war nicht gerade billig",
+              "Das Restaurant war nicht gerade günstig",
+              "Das Restaurant war nicht gerade preiswert",
+              "Das Restaurant war nicht eben billig",
+              "Das Restaurant war nicht eben günstig",
+              "Das Restaurant war nicht eben preiswert",
+              "Das Restaurant ist nicht gerade billig gewesen",
+              "Das Restaurant ist nicht gerade günstig gewesen",
+              "Das Restaurant ist nicht gerade preiswert gewesen"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Das Essen war angebrannt, der Wein war warm, und draußen regnete es in Strömen. „Nicht ganz der Abend, den ich mir vorgestellt hatte“, meinte der Gastgeber trocken."
+          },
+          { t: "speak", it: "Das war, gelinde gesagt, nicht ganz unproblematisch." }
+        ]
+      },
+      {
+        id: "c2-u03-l2",
+        tags: ["g-register", "g-aussprache"],
+        cefr: "C2",
+        titleIt: "Umgangssprache, Dialekt, Varietäten",
+        grammar: {
+          examples: [
+            { it: "Grüß Gott! Ich hätte gern ein Kilo Paradeiser." },
+            { it: "Im Jänner liegt in Innsbruck meistens Schnee." },
+            { it: "Grüezi! Wo kann ich hier parkieren?" },
+            { it: "Sie fährt jeden Tag mit dem Velo zur Arbeit." },
+            { it: "Hast du mal 'ne Minute? Ich muss dir was erzählen." },
+            { it: "Auf den ganzen Papierkram hab ich echt keinen Bock." }
+          ]
+        },
+        vocab: [
+          { it: "die Umgangssprache", plural: "-", ex: "In der Umgangssprache fallen viele Endungen weg." },
+          { it: "die Standardsprache", plural: "die Standardsprachen", ex: "Im Unterricht wird die Standardsprache verwendet." },
+          { it: "die Mundart", plural: "die Mundarten", ex: "Ihre Großeltern sprechen noch Mundart." },
+          { it: "der Dialekt", plural: "die Dialekte", ex: "Den Dialekt aus dem Allgäu verstehe ich kaum." },
+          { it: "die Varietät", plural: "die Varietäten", ex: "Das österreichische Deutsch ist eine eigene Varietät." },
+          { it: "der Austriazismus", plural: "die Austriazismen", ex: "„Jänner“ ist ein typischer Austriazismus." },
+          { it: "der Helvetismus", plural: "die Helvetismen", ex: "„Velo“ ist ein Helvetismus." },
+          { it: "der Akzent", plural: "die Akzente", ex: "Er spricht mit einem leichten Akzent." },
+          { it: "die Färbung", plural: "die Färbungen", ex: "Ihre Aussprache hat eine deutlich süddeutsche Färbung." },
+          { it: "mundartlich", ex: "Der Roman ist teilweise mundartlich geschrieben." },
+          { it: "salopp", ex: "Für einen Geschäftsbrief ist der Ton zu salopp." },
+          { it: "sich verständigen", ex: "Trotz der verschiedenen Dialekte konnten wir uns gut verständigen." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["Tomaten", "Tomate"] },
+          {
+            t: "cloze",
+            text: "Das österreichische und das Schweizer Hochdeutsch sind keine {{1}}, sondern gleichberechtigte {{2}} der deutschen Sprache.",
+            gaps: [["Dialekte", "Mundarten"], ["Varietäten", "Standardvarietäten"]]
+          },
+          {
+            t: "match",
+            pairs: [{ it: "der Jänner" }, { it: "der Paradeiser" }, { it: "das Velo" }, { it: "grüezi" }]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Sie spricht mit einem leichten Schweizer Akzent",
+              "Sie spricht mit leichtem Schweizer Akzent",
+              "Sie spricht mit einem leichten schweizerischen Akzent",
+              "Sie spricht mit leichtem schweizerischem Akzent",
+              "Sie spricht mit einem leicht schweizerischen Akzent"
+            ]
+          },
+          {
+            t: "listen",
+            it: "In Wien sagt man Paradeiser statt Tomaten und Erdäpfel statt Kartoffeln. Wer zum ersten Mal in Österreich einkauft, sollte sich darüber also nicht wundern."
+          },
+          { t: "speak", it: "Er spricht Dialekt, versteht aber auch die Standardsprache." }
+        ]
+      },
+      {
+        id: "c2-u03-l3",
+        tags: ["g-register", "g-wortbildung"],
+        cefr: "C2",
+        titleIt: "Latinismen und Bildungssprache",
+        grammar: {
+          examples: [
+            { it: "Die These lässt sich empirisch kaum verifizieren." },
+            { it: "Der Vorschlag wurde vom Gremium einstimmig akzeptiert." },
+            { it: "Seine Argumentation ist in sich nicht konsistent." },
+            { it: "Das Phänomen lässt sich nicht monokausal erklären." },
+            { it: "Die Ergebnisse sind mit Vorsicht zu interpretieren." },
+            { it: "Die bisherigen Kriterien gelten als obsolet." }
+          ]
+        },
+        vocab: [
+          { it: "die These", plural: "die Thesen", ex: "Die These ist gewagt, aber gut begründet." },
+          { it: "das Phänomen", plural: "die Phänomene", ex: "Das Phänomen ist seit Langem bekannt." },
+          { it: "das Gremium", plural: "die Gremien", ex: "Das Gremium tagt zweimal im Jahr." },
+          { it: "das Kriterium", plural: "die Kriterien", ex: "Die Kriterien für die Auswahl sind nicht transparent." },
+          { it: "das Spektrum", plural: "die Spektren", ex: "Das Spektrum der Meinungen ist breit." },
+          { it: "die Prämisse", plural: "die Prämissen", ex: "Die Prämisse der Studie ist umstritten." },
+          { it: "die Konsequenz", plural: "die Konsequenzen", ex: "Die Konsequenzen sind noch nicht absehbar." },
+          { it: "konsistent", ex: "Die Daten sind nicht konsistent." },
+          { it: "obsolet", ex: "Das Verfahren ist längst obsolet." },
+          { it: "ambivalent", ex: "Sie steht dem Projekt ambivalent gegenüber." },
+          { it: "verifizieren", ex: "Die Angaben ließen sich nicht verifizieren." },
+          { it: "implizieren", ex: "Die Reform impliziert höhere Kosten." }
+        ],
+        exercises: [
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "mcq", a: 0 },
+          { t: "fill", a: ["Gremien"] },
+          { t: "fill", a: ["Konsistenz"] },
+          {
+            t: "cloze",
+            text: "Die {{1}}, auf der die gesamte Studie beruht, hat sich als falsch erwiesen; die Ergebnisse sind damit {{2}}.",
+            gaps: [["Prämisse", "Annahme", "Grundannahme", "Voraussetzung"], ["obsolet", "hinfällig", "gegenstandslos"]]
+          },
+          {
+            t: "match",
+            pairs: [{ it: "obsolet" }, { it: "konziliant" }, { it: "ambivalent" }, { it: "marginal" }]
+          },
+          {
+            t: "trans",
+            dir: "toIt",
+            a: [
+              "Die These ist empirisch nicht verifizierbar",
+              "Die These lässt sich empirisch nicht verifizieren",
+              "Die These ist empirisch nicht zu verifizieren",
+              "Die These ist empirisch nicht überprüfbar",
+              "Die These lässt sich empirisch nicht überprüfen",
+              "Die These ist empirisch nicht zu überprüfen"
+            ]
+          },
+          {
+            t: "listen",
+            it: "Die Prämisse der Studie ist umstritten. Kritiker halten die Ergebnisse für nicht verifizierbar und die daraus gezogenen Konsequenzen für voreilig."
+          },
+          { t: "speak", it: "Das Phänomen lässt sich nicht monokausal erklären." }
+        ]
+      }
+    ],
+    test: {
+      id: "c2-u03-test",
+      tags: ["g-register", "g-wortbildung", "g-partizipialattribut"],
+      cefr: "C2",
+      titleIt: "Test: Zwischentöne",
+      exercises: [
+        { t: "fill", a: ["gestellten"] },
+        { t: "fill", a: ["Kriterien"] },
+        { t: "fill", a: ["gelinde", "milde", "vorsichtig"] },
+        { t: "fill", a: ["Ambivalenz"] },
+        { t: "mcq", a: 0 },
+        { t: "mcq", a: 0 },
+        { t: "mcq", a: 0 },
+        { t: "mcq", a: 0 },
+        { t: "mcq", a: 0 },
+        {
+          t: "match",
+          pairs: [{ it: "das Gremium" }, { it: "die Prämisse" }, { it: "der Seitenhieb" }, { it: "die Mundart" }]
+        },
+        {
+          t: "trans",
+          dir: "toIt",
+          a: [
+            "Die von der Kommission vorgeschlagenen Maßnahmen sind obsolet",
+            "Die von der Kommission vorgeschlagenen Maßnahmen sind veraltet",
+            "Die Maßnahmen, die die Kommission vorgeschlagen hat, sind obsolet",
+            "Die Maßnahmen, die die Kommission vorgeschlagen hat, sind veraltet",
+            "Die Maßnahmen, die von der Kommission vorgeschlagen wurden, sind obsolet",
+            "Die Maßnahmen, die von der Kommission vorgeschlagen wurden, sind veraltet",
+            "Die Maßnahmen, die von der Kommission vorgeschlagen worden sind, sind obsolet",
+            "Die Maßnahmen, die von der Kommission vorgeschlagen worden sind, sind veraltet"
+          ]
+        },
+        { t: "speak", it: "Die von der Kommission vorgeschlagenen Maßnahmen sind, gelinde gesagt, umstritten." }
       ]
     }
   }
