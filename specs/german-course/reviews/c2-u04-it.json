@@ -1,10 +1,30 @@
 {
-  "bundleHash": "0dabcce1362d3c31b0b081b20a19d8d8de20cf9ff72ba5a56d2aaeba510f8749",
+  "bundleHash": "e207710f40442e2bfd3a26577e3786f35c1298739975376001346462cb7127df",
   "findings": [
     {
-      "kind": "traduzione e spiegazione",
-      "msg": "«Verdächtigen» significa «sospettare qualcuno di qualcosa», non «accusare qualcuno di qualcosa»: la spiegazione confonde un sospetto con un’accusa. Distinguere la traduzione di «jemanden einer Sache verdächtigen» da quelle di «beschuldigen» e «anklagen».",
-      "path": "merged.lessons[2].theory[0].p"
+      "kind": "spiegazione grammaticale",
+      "msg": "La spiegazione afferma che il correlativo è obbligatorio quando i casi differiscono. Non è una regola generale: per esempio, «Wer viel verspricht, glaubt man nicht» è possibile. Presenta il correlativo come una ripresa spesso usata e mantienilo nella soluzione proposta, senza dichiararlo sempre obbligatorio.",
+      "path": "merged.lessons[1].theory[2].contrast"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Anche qui si afferma che, poiché i casi differiscono, il correlativo non può essere omesso. Correggi la spiegazione distinguendo la soluzione proposta da una presunta obbligatorietà generale.",
+      "path": "merged.lessons[1].exercises[5].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«dessen/deren» non eliminano necessariamente l'articolo: sono possibili costruzioni come «dessen einflussreicher Vater» o «dessen beide Bücher». Riformula la regola indicando che normalmente non compare un articolo davanti al nome e precisa la declinazione degli aggettivi nei casi pertinenti.",
+      "path": "merged.lessons[0].grammar.note"
+    },
+    {
+      "kind": "fedeltà della traduzione",
+      "msg": "«verfilmt» significa adattato per lo schermo e non specifica necessariamente una distribuzione cinematografica. Sostituisci «portato al cinema» con «adattato per lo schermo»; la stessa correzione riguarda le altre occorrenze della traduzione nell'unità.",
+      "path": "merged.lessons[0].grammar.examples[0].tr"
+    },
+    {
+      "kind": "progressione didattica",
+      "msg": "Il test presenta «beanstandeten» come attributo participiale, ma la richiesta italiana fornisce soltanto «contestare», senza indicare il verbo tedesco: sono possibili anche altre soluzioni, per esempio «kritisierten». Fornisci l'infinito tedesco «beanstanden» oppure accetta alternative appropriate.",
+      "path": "merged.test.exercises[3]"
     }
   ],
   "lang": "it",
