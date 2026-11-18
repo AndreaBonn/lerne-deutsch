@@ -1,25 +1,15 @@
 {
-  "bundleHash": "b8b82a973394bd7dc6979ac3fd41317034298d4d1ba181248e67681082b7849b",
+  "bundleHash": "f66b2b5296917be6b327bbcf9a86ac76417eea6680f209d5d12723b2cdcfe66a",
   "findings": [
     {
-      "kind": "Livello CEFR",
-      "msg": "L'unità è classificata C2, ma gli esercizi richiedono soprattutto riconoscimento di forme e costruzioni comuni, senza verificare la precisione lessicale e le sfumature attese a questo livello. Aumentare la difficoltà degli item mantenendo il formato previsto, per esempio distinguendo accezioni, registri e composti o derivati meno trasparenti in contesti appropriati.",
+      "kind": "livello CEFR",
+      "msg": "La progressione resta prevalentemente su strutture e lessico elementari o intermedi: riconoscimento di genere, plurali comuni, composti trasparenti e suffissi frequenti. Anche la verifica ripropone gli stessi riconoscimenti, senza richiedere distinzioni lessicali, morfologiche o di registro proprie del C2. Mantenendo i tipi e il numero di esercizi previsti, introdurre contesti più sfumati, eccezioni e alternative plausibili che richiedano scelte avanzate.",
       "path": "merged.lessons"
     },
     {
-      "kind": "Spiegazione lessicale",
-      "msg": "Sportarten significa «discipline sportive», non è un plurale sostitutivo equivalente a Sport: «praticare diversi sport» può riferirsi alle discipline, ma Sport indica anche l'attività sportiva in generale. Presentare Sportarten come termine più specifico, non come plurale di Sport.",
-      "path": "merged.lessons[0].theory[1].p"
-    },
-    {
-      "kind": "Spiegazione troppo assoluta",
-      "msg": "Il criterio del conteggio non distingue sempre Wörter da Worte: anche «ein paar Worte» o «wenige Worte» sono parole contate nel senso di discorso, come mostrano gli esercizi dell'unità. Distinguere parole considerate come unità lessicali da parole considerate come enunciato, senza usare il conteggio come regola assoluta.",
-      "path": "merged.lessons[0].theory[3].trap"
-    },
-    {
-      "kind": "Spiegazione fonetica",
-      "msg": "In «gesagt» la sequenza finale si pronuncia [kt], ma la spiegazione attribuisce [kt] alle sole lettere «gt»: la [k] corrisponde alla g e la [t] alla t. Indicare separatamente la pronuncia delle due consonanti per evitare ambiguità.",
-      "path": "merged.lessons[0].exercises[9].why"
+      "kind": "risposte alternative",
+      "msg": "La spiegazione riconosce che «Streite» è un plurale esistente, ma la chiave accetta solo «Streitigkeiten». La frase consente entrambe le forme; aggiungere «Streite» alle risposte accettate oppure formulare la consegna in modo da richiedere esplicitamente il derivato «Streitigkeit».",
+      "path": "merged.test.exercises[1].a"
     }
   ],
   "lang": "it",
