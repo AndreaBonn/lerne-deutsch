@@ -14,5 +14,10 @@
   ],
   "lang": "es",
   "unit": "c1-u01",
-  "verdict": "fail"
+  "verdict": "fail",
+  "archived": {
+    "decision": "Q-C1-D8",
+    "date": "2026-11-18",
+    "bundleHash": "6bf81618e736d4188ffdd18dd35770cb9d4550e94054e38924c3ff22636d05ac"
+  }
 }
