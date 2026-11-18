@@ -293,7 +293,7 @@ LINGUAI.addReadings([
     lexIt: ["mitarbeiten", "Freiburg", "Supermarkt", "Bäckerei", "Produkt", "Geschäft", "verkaufen", "Geld", "sortieren", "Obst", "Gemüse", "Studentin", "sich verstehen", "Tüte", "Brot", "sich bedanken", "freundlich", "Aufgabe", "treffen"],
     questions: [
       { t: "mcq", q: "Was holt die Tafel von Supermärkten und Bäckereien ab?", opts: ["Lebensmittel, die die Geschäfte nicht mehr verkaufen können", "Geld für Menschen, die wenig haben", "Kleidung für Studenten"], a: 0 },
-      { t: "truefalse", q: "Herr Becker arbeitet bei der Tafel, weil er dort Geld verdient.", a: 1 },
+      { t: "truefalse", q: "Herr Becker arbeitet erst seit ein paar Wochen bei der Tafel.", a: 1 },
       { t: "mcq", q: "Mit wem sortiert Herr Becker am Samstag Obst und Gemüse?", opts: ["mit einer Studentin", "mit seiner Frau", "mit einem Bäcker"], a: 0 }
     ]
   },
@@ -364,7 +364,7 @@ LINGUAI.addReadings([
     glossIt: ["der Lebensmittelladen", "erledigen", "der Gemeinderat", "betreiben", "der Anteil", "die Freiwilligen", "die Schicht", "die Ehrenamtlichen"],
     lexIt: ["Dorf", "Allgäu", "schließen", "Einkauf", "Auto", "Stadt", "schwierig", "Idee", "diskutieren", "verrückt", "Bewohner", "Monat", "verkaufen", "renovieren", "öffnen", "Milch", "Käse", "Ei", "Bauernhof", "Umgebung", "liefern", "Verkäuferin", "anstellen", "übernehmen", "überleben", "entscheiden"],
     questions: [
-      { t: "truefalse", q: "Der Laden wird heute von einer Supermarktkette betrieben.", a: 1 },
+      { t: "truefalse", q: "Der Dorfladen ist heute jeden Tag geöffnet.", a: 1 },
       { t: "mcq", q: "Wer hat das alte Geschäft renoviert?", opts: ["Freiwillige", "eine Baufirma", "der Gemeinderat"], a: 0 },
       { t: "mcq", q: "Woher kommen Milch, Käse und Eier?", opts: ["von Bauernhöfen aus der Umgebung", "aus der nächsten Stadt", "aus dem Ausland"], a: 0 }
     ]
