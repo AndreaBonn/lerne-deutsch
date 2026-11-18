@@ -23,7 +23,7 @@ LINGUAI.addStrings("es", {
 
   "read:r-a2-zug": {
     title: "Con retraso a Salzburgo",
-    gloss: ["la máquina (expendedora de billetes)", "el panel de salidas", "el retraso", "la vía (el número del andén)", "pasar (el tiempo)"],
+    gloss: ["la máquina (expendedora de billetes)", "el panel de salidas", "el retraso", "la vía (el número de vía, no el del andén)", "pasar (el tiempo)"],
     lex: ["viernes", "Múnich", "Salzburgo", "levantarse", "billete", "comprar", "mirar", "salir (un tren), partir", "beber", "Brezel (pan salado en forma de lazo)", "comer", "Linz (ciudad de Austria)", "conocer (a alguien)", "trayecto, viaje", "hablar, charlar", "número de teléfono", "intercambiar"]
   },
 
@@ -126,7 +126,7 @@ LINGUAI.addStrings("es", {
   "read:r-c1-betriebsrat": {
     title: "El comité de empresa toma la palabra",
     gloss: ["someter a debate", "la regulación de la jornada laboral", "el comité de empresa (elegido por la plantilla; la ley alemana le da derecho de codecisión, más amplio que el de un comité español)", "sacar a colación, plantear", "entrar en vigor", "el derecho de codecisión (voz legal en las decisiones)", "hacer referencia a", "advertir, plantear (como reparo)", "conciliar, compaginar", "el acuerdo de empresa (entre la dirección y el comité)", "tener en cuenta (con dativo)", "admitir, reconocer"],
-    lex: ["mediano (dicho de una empresa)", "construcción de maquinaria", "empresa", "Bielefeld", "dirección (de la empresa), gerencia", "otoño", "en el futuro", "empleados, plantilla", "turno", "planificar", "libertad", "consentimiento, aprobación", "Ley de Organización de la Empresa (Betriebsverfassungsgesetz)", "corresponder por derecho (la persona va en dativo: ihm steht ... zu, le corresponde ...)", "asamblea de trabajadores", "parecido", "empresa, centro de trabajo", "presión", "aumentar", "padres", "horario de apertura", "guardería", "negociación", "llegar a producirse, materializarse", "introducir, implantar", "obligar", "con poca antelación", "apuntarse (en un cuadrante)", "influencia", "subestimar", "tomarle el gusto a (an + dativo)", "procedimiento"]
+    lex: ["mediano (dicho de una empresa)", "construcción de maquinaria", "empresa", "Bielefeld", "dirección (de la empresa), gerencia", "otoño", "en el futuro", "empleados, plantilla", "turno", "planificar", "libertad", "consentimiento, aprobación", "Ley de Organización de la Empresa (Betriebsverfassungsgesetz)", "corresponder por derecho (la persona va en dativo: ihm steht ... zu, le corresponde ...)", "asamblea de trabajadores", "parecido", "empresa, centro de trabajo", "presión", "aumentar", "padres", "horario de apertura", "guardería", "negociación", "llegar a producirse, materializarse", "introducir, implantar", "obligar", "con poca antelación", "anotar, incluir (un turno en el cuadrante)", "influencia", "subestimar", "tomarle el gusto a (an + dativo)", "procedimiento"]
   },
 
   "read:r-c2-lob": {
@@ -143,7 +143,7 @@ LINGUAI.addStrings("es", {
 
   "read:r-c2-heimat": {
     title: "Una palabra difícil",
-    gloss: ["lastrado, cargado (por la historia)", "el entramado, la red", "el dialecto", "caer en la cuenta (es geht mir auf: me doy cuenta)", "idealizar, romantizar", "estrechar, restringir", "cursi, kitsch", "la reinterpretación", "evitar", "ilustrado", "apropiarse de", "excluyente", "la lectura, la interpretación", "encarnizado", "creer (a alguien) capaz de"],
+    gloss: ["lastrado, cargado (por la historia)", "el entramado, la red", "el dialecto", "quedarle claro a alguien de repente (es geht mir auf: de pronto lo veo claro)", "idealizar, romantizar", "estrechar, restringir", "cursi, kitsch", "la reinterpretación", "evitar", "ilustrado", "apropiarse de", "excluyente", "la lectura, la interpretación", "encarnizado", "creer (a alguien) capaz de"],
     lex: ["intraducible", "Heimat (tierra natal, el lugar al que uno pertenece)", "designar", "lugar", "paisaje", "olor", "costumbre", "lejanía", "siglo", "romántico (del Romanticismo)", "nacionalsocialismo, nazismo", "ideología", "posguerra", "Heimatfilm (género de cine rural sentimental de los años cincuenta)", "inofensivo", "concepto", "diccionario", "de buen grado", "frontera, límite", "negociar; aquí: debatir, redefinir (un concepto)", "ministerio", "escritora", "historia migratoria (familiar)", "origen", "cerrado", "instalarse, acomodarse", "necesitar (aquí: hacer falta)", "dureza, aspereza", "imponerse", "discutir, pelearse"]
   }
 });
