@@ -29,7 +29,7 @@ LINGUAI.addStrings("pl", {
 
   "read:r-a2-arzt": {
     title: "Wizyta u lekarza rodzinnego",
-    gloss: ["plecy (der Rücken: w niemieckim liczba pojedyncza)", "gabinet lekarski (w innych kontekstach Praxis to też „praktyka”)", "karta ubezpieczenia zdrowotnego (pokazuje się ją przy każdej wizycie)", "recepta (jak po polsku; ale das Rezept to także przepis kulinarny)", "maść", "dać zwolnienie lekarskie (jemanden krankschreiben; potocznie po polsku „wystawić L4”)"],
+    gloss: ["plecy (der Rücken: w niemieckim liczba pojedyncza)", "gabinet lekarski (w innych kontekstach Praxis to też „praktyka”)", "karta ubezpieczenia zdrowotnego (okazuje się ją w gabinecie, zwykle przy pierwszej wizycie w danym kwartale)", "recepta (jak po polsku; ale das Rezept to także przepis kulinarny)", "maść", "dać zwolnienie lekarskie (jemanden krankschreiben; potocznie po polsku „wystawić L4”)"],
     lex: ["komputer", "boleć (osoba w celowniku: der Rücken tut ihm weh; po polsku „boli go” z biernikiem)", "dzwonić (do kogoś: jemanden anrufen, z biernikiem bez przyimka)", "termin, umówiona wizyta", "zabrać ze sobą", "kasa chorych (ubezpieczyciel zdrowotny, w Polsce jego rolę pełni NFZ)", "lekarka", "badać (pacjenta)", "przerwa", "apteka", "wyjaśniać", "farmaceutka", "nakładać (maść, krem)", "lepiej (es geht ihm besser: czuje się lepiej)"]
   },
 
