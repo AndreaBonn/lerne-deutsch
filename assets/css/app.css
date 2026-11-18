@@ -1011,6 +1011,66 @@ textarea.field{max-width:min(720px, 100%);line-height:1.7;font-weight:500;resize
 .stat-card b{display:block;font-family:var(--display);font-size:2rem;font-weight:700;line-height:1.1;color:var(--salvia-deep);}
 .stat-card span{font-size:.82rem;color:var(--ink-soft);font-weight:600;}
 
+/* Progress screen. Four counters in one row (two by two on a phone)
+   instead of three plus an orphan; the streak leads, because it is the
+   number the student can still move today. */
+.prog-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:32px;}
+.prog-stat{
+  display:flex;flex-direction:column;gap:2px;
+  border:1.5px solid var(--line);border-radius:var(--r-l);background:var(--paper-2);padding:16px 18px;
+}
+.prog-stat b{font-family:var(--display);font-size:2.1rem;font-weight:700;line-height:1.05;color:var(--salvia-deep);
+  font-variant-numeric:tabular-nums;}
+.prog-stat__label{font-size:.84rem;color:var(--ink-soft);font-weight:600;}
+.prog-stat__extra{font-size:.76rem;color:var(--ink-faint);margin-top:auto;padding-top:6px;}
+.prog-stat--lead{background:var(--salvia);border-color:var(--salvia-deep);}
+.prog-stat--lead .prog-stat__label{color:var(--on-tonal);}
+.prog-stat--lead .prog-stat__extra{color:var(--ink-soft);}
+@media (max-width: 880px){ .prog-stats{grid-template-columns:repeat(2,minmax(0,1fr));} }
+@media (max-width: 420px){
+  .prog-stats{gap:10px;margin-bottom:26px;}
+  .prog-stat{padding:12px 14px;}
+  .prog-stat b{font-size:1.7rem;}
+}
+
+.prog-h{font-size:1.2rem;margin:0 0 12px;}
+.prog-chart{margin-bottom:32px;padding:20px 22px 16px;}
+.prog-chart__sum{margin:0 0 14px;font-size:.88rem;color:var(--ink-soft);}
+.prog-chart__scroll{overflow-x:auto;}
+.prog-chart__bars{display:flex;gap:6px;align-items:flex-end;min-width:320px;}
+.prog-bar{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;min-width:0;}
+.prog-bar i{display:block;width:100%;max-width:40px;background:var(--salvia-deep);border-radius:5px 5px 0 0;}
+.prog-bar--zero i{background:var(--line);}
+.prog-bar--today i{background:var(--rosa-deep);}
+.prog-bar__n{font-size:.66rem;font-weight:700;color:var(--ink-faint);font-family:var(--mono);margin-bottom:3px;min-height:1em;}
+.prog-bar__day{margin-top:6px;padding-top:4px;width:100%;text-align:center;overflow:hidden;border-top:1.5px solid var(--line);font-size:.68rem;color:var(--ink-faint);white-space:nowrap;}
+.prog-bar--today .prog-bar__day{color:var(--rosa-deep);font-weight:700;}
+.prog-bar__wd{display:none;}
+@media (max-width: 420px){
+  .prog-chart{padding:16px 14px 12px;}
+  .prog-chart__bars{gap:3px;min-width:0;}
+  .prog-bar__n{font-size:.58rem;}
+  .prog-bar__day{font-size:.6rem;}
+  .prog-bar__wd{display:inline;}
+  .prog-bar__td{display:none;}
+}
+.prog-chart--empty{text-align:center;padding:32px 24px;}
+.prog-chart--empty p{margin:0 0 16px;color:var(--ink-soft);}
+.prog-chart--empty .btn{text-decoration:none;}
+
+.prog-levels{gap:10px;}
+.prog-level{
+  display:flex;align-items:center;gap:14px;padding:14px 18px;
+  border:1.5px solid var(--line);border-radius:var(--r-m);background:var(--paper-2);
+}
+.prog-level--started{border-color:var(--salvia-mid);}
+.prog-level__main{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px;}
+.prog-level__top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;}
+.prog-level__top b{font-size:.98rem;}
+.prog-level__pct{font-family:var(--mono);font-size:.8rem;font-weight:700;color:var(--ink-soft);}
+.prog-level .level-pill__bar{margin-top:0;}
+.prog-level__sub{font-size:.8rem;color:var(--ink-faint);}
+
 .list-row{
   display:flex;align-items:center;gap:12px;padding:12px 16px;
   border:1.5px solid var(--line);border-radius:var(--r-m);background:var(--paper-2);
