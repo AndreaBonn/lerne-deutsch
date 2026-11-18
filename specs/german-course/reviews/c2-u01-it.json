@@ -1,35 +1,15 @@
 {
-  "bundleHash": "8657dfddd5c97d72835c0a9b4cfd1dbe25bb6bd0b142324d91e348d248e6d539",
+  "bundleHash": "c81cad300f9aa1a2a06ef32ffde407511443105dad01756d57e627eb5e14d670",
   "findings": [
     {
-      "kind": "pronuncia",
-      "msg": "L'accento di Ministerin cade su «te», non su «nis». Correggere l'indicazione di pronuncia.",
-      "path": "merged.lessons[2].exercises[9].why"
-    },
-    {
-      "kind": "pronuncia",
-      "msg": "In «nächsten» la ä è lunga, non breve. Correggere l'indicazione di pronuncia.",
-      "path": "merged.test.exercises[9].why"
-    },
-    {
       "kind": "spiegazione grammaticale",
-      "msg": "«Ein nicht zu unterschätzendes Risiko» indica normalmente un rischio che non si deve sottovalutare, non che non si può sottovalutare. Correggere la spiegazione e la traduzione della tabella; la negazione non implica sempre un valore di possibilità.",
-      "path": "merged.lessons[1].grammar"
+      "msg": "La virgola non separa sempre due attributi coordinati: con «und» normalmente non si usa, come nell'esercizio con «angekündigte und ... kritisierte Reform». Precisare che la virgola separa attributi coordinati non uniti da una congiunzione.",
+      "path": "merged.lessons[0].theory[1].p"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "L'esempio «ein nicht zu unterschätzendes Risiko» esprime un avvertimento: il rischio non deve essere sottovalutato. Sostituirlo con un esempio di impossibilità, come «eine nicht zu lösende Aufgabe», e distinguere i due valori.",
-      "path": "merged.lessons[1].theory[1].p"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "L'ordine dei complementi tedeschi non è un'inversione obbligatoria dell'ordine italiano: «seit Jahren von Fachleuten» conserva lo stesso ordine di «da anni dagli esperti». Spiegare che l'intero attributo precede il nome, senza affermare che l'ultimo elemento italiano debba seguire subito l'articolo.",
-      "path": "merged.lessons[0].theory[2].contrast"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "«Rechnung tragen» e «berücksichtigen» sono normalmente equivalenti nel senso di «tenere conto di»; l'affermazione che il primo dica necessariamente di più è infondata. Presentare eventuali differenze come sfumature contestuali.",
-      "path": "merged.lessons[2].theory[1].p"
+      "kind": "traduzione",
+      "msg": "«Sollen ... zur Anwendung kommen» indica un'applicazione prevista o stabilita, non un futuro certo. Tradurre per esempio: «È previsto che le misure che ne derivano vengano applicate l'anno prossimo».",
+      "path": "merged.test.exercises[8].tr"
     }
   ],
   "lang": "it",
