@@ -21,7 +21,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Il genitivo del pronome relativo",
-        p: "Per dire «il cui, la cui, i cui» il tedesco usa il genitivo del pronome relativo: <strong>dessen</strong> se l'antecedente è maschile o neutro, <strong>deren</strong> se è femminile o plurale. <em>Der Autor, dessen Roman verfilmt wurde</em>, «l'autore il cui romanzo è stato portato al cinema»; <em>die Forscherin, deren Ergebnisse umstritten sind</em>, «la ricercatrice i cui risultati sono contestati». Dopo <em>dessen</em> e <em>deren</em> non c'è articolo: il pronome ne prende il posto, e il nome che segue ha il caso richiesto dalla relativa."
+        p: "Per dire «il cui, la cui, i cui» il tedesco usa il genitivo del pronome relativo: <strong>dessen</strong> se l'antecedente è maschile o neutro, <strong>deren</strong> se è femminile o plurale. <em>Der Autor, dessen Roman verfilmt wurde</em>, «l'autore il cui romanzo è stato trasposto sullo schermo»; <em>die Forscherin, deren Ergebnisse umstritten sind</em>, «la ricercatrice i cui risultati sono contestati». Dopo <em>dessen</em> e <em>deren</em> non c'è articolo: il pronome ne prende il posto, e il nome che segue ha il caso richiesto dalla relativa."
       },
       {
         h: "La preposizione sta davanti",
@@ -50,7 +50,7 @@ LINGUAI.addStrings("it", {
         ]
       },
       examples: [
-        { tr: "L'autore, il cui romanzo è stato portato al cinema, vive molto ritirato.", note: "dessen: der Autor è maschile" },
+        { tr: "L'autore, il cui romanzo è stato trasposto sullo schermo, vive molto ritirato.", note: "dessen: der Autor è maschile" },
         { tr: "La ricercatrice, i cui risultati sono contestati, ha reso pubblici i suoi dati.", note: "deren: die Forscherin è femminile, anche se Ergebnisse è plurale" },
         { tr: "I colleghi con il cui aiuto abbiamo concluso il progetto nel frattempo se ne sono andati.", note: "preposizione + deren: antecedente plurale" },
         { tr: "La legge sulla cui base l'autorità ha deciso viene sottoposta al vaglio di un tribunale.", note: "auf dessen Grundlage: das Gesetz è neutro" },
@@ -139,7 +139,7 @@ LINGUAI.addStrings("it", {
         why: "In <i>Veröffentlichung</i> l'accento cade su <b>öf</b>; in <i>Urteil</i> l'accento cade su <b>Ur</b>; in <i>anonym</i> l'accento cade su <b>nym</b>."
       },
       {
-        tr: "L'autrice, il cui romanzo è stato portato al cinema, vive molto ritirata.",
+        tr: "L'autrice, il cui romanzo è stato trasposto sullo schermo, vive molto ritirata.",
         why: "In <i>Autorin</i> l'accento cade su <b>to</b>; in <i>verfilmt</i> l'accento cade su <b>filmt</b>; in <i>zurückgezogen</i> l'accento cade su <b>rück</b>."
       }
     ]
@@ -163,7 +163,7 @@ LINGUAI.addStrings("it", {
         p: "<strong>was</strong> sostituisce <em>das</em> quando l'antecedente non è un nome preciso: dopo <em>alles, nichts, etwas, vieles, manches, das</em> e dopo un superlativo neutro sostantivato (<em>das Beste, was ...</em>). Si usa anche senza antecedente (<em>Was mich beunruhigt, ist ...</em>) e per riprendere un'intera frase: <em>Er hat bestanden, was niemand erwartet hatte</em>, «cosa che nessuno si aspettava». Se il verbo vuole una preposizione, al posto di preposizione + <em>was</em> si usa <strong>wo(r)- + preposizione</strong>: <em>vieles, worüber wir uns nicht einig waren</em>. La <em>r</em> compare davanti a vocale: <em>woran, worauf, worüber</em>, ma <em>wofür, womit, wovon, wovor</em>."
       },
       {
-        contrast: "L'italiano distingue <em>chi</em>, <em>ciò che</em> e <em>il che</em>, e il tedesco li copre con due parole: <em>wer</em> per le persone, <em>was</em> per tutto il resto, compreso «il che» riferito a una frase intera. Dove l'italiano dice <em>ciò di cui, ciò su cui, ciò per cui</em>, il tedesco fonde preposizione e pronome: <em>das, worüber wir sprechen</em>, <em>alles, wofür sie gekämpft hat</em>. E <em>chi</em> in italiano non vuole riprese (<em>chi tace acconsente</em>), mentre il tedesco deve aggiungere il correlativo quando cambia il caso: <em>Wem die Reform schadet, den hat man nicht gefragt</em>."
+        contrast: "L'italiano distingue <em>chi</em>, <em>ciò che</em> e <em>il che</em>, e il tedesco li copre con due parole: <em>wer</em> per le persone, <em>was</em> per tutto il resto, compreso «il che» riferito a una frase intera. Dove l'italiano dice <em>ciò di cui, ciò su cui, ciò per cui</em>, il tedesco fonde preposizione e pronome: <em>das, worüber wir sprechen</em>, <em>alles, wofür sie gekämpft hat</em>. E <em>chi</em> in italiano non vuole riprese (<em>chi tace acconsente</em>), mentre il tedesco di regola aggiunge il correlativo quando cambia il caso: <em>Wem die Reform schadet, den hat man nicht gefragt</em>."
       },
       {
         trap: "Dopo <em>alles, nichts, etwas, das Einzige, das Beste</em> ci vuole <em>was</em>, non <em>das</em>: <em>Alles, was er sagt</em>, non <em>alles, das er sagt</em>. Nello scritto formale evita <em>über was, für was</em>: sono colloquiali, la forma curata è <em>worüber, wofür</em>. Con un antecedente che è un nome preciso, invece, resta preposizione + <em>der/die/das</em>: <em>die Frage, über die wir sprechen</em>."
@@ -444,7 +444,7 @@ LINGUAI.addStrings("it", {
         why: "<b>einer</b> (o <b>der</b>): <i>bedürfen</i> regge il genitivo, e il genitivo femminile dell'articolo è <i>einer</i> o <i>der</i>."
       },
       {
-        q: "Completa con l'attributo participiale: «Die im Bericht ___ Mängel wurden inzwischen behoben.» (contestare)",
+        q: "Completa con l'attributo participiale: «Die im Bericht ___ Mängel wurden inzwischen behoben.» (contestare: beanstanden)",
         hint: "participio II di beanstanden, plurale dopo die",
         why: "<b>beanstandeten</b>: participio II con senso passivo («le carenze contestate nel rapporto»), desinenza <i>-en</i> dopo l'articolo plurale <i>die</i>. <i>beanstanden</i> è inseparabile: niente <i>ge-</i>."
       },
