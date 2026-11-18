@@ -23,7 +23,7 @@ window.CHAT_SCENARIOS = [
     cefr: "A1",
     icon: "☕",
     ruolo: "eine freundliche Bedienung in einem kleinen Café in Berlin, am Vormittag",
-    situazione: "Sie sind im Café. Sie möchten etwas trinken und vielleicht ein Stück Kuchen.",
+    situazione: "Die Person ist im Café und möchte etwas trinken und vielleicht ein Stück Kuchen.",
     apertura: "Guten Morgen! Was möchten Sie trinken?"
   },
   {
