@@ -1,0 +1,33 @@
+{
+  "bundleHash": "17837793171790705bd0b2f0f477077530cc5734cf1c182d9f652caa9e7aa7cc",
+  "findings": [
+    {
+      "kind": "Ortografia tedesca",
+      "msg": "Nella narrazione di discorso diretto il pronome va scritto con l’iniziale minuscola: «mit „grüezi“». Anche la forma citata «guten Tag» richiede l’iniziale minuscola in questo contesto. Correggere entrambe le occorrenze nelle versioni neutral e merged.",
+      "path": "neutral[6].sentences[7]"
+    },
+    {
+      "kind": "Spiegazione lessicale",
+      "msg": "La nota presenta tutti i percorsi di Ausbildung in Germania come duali, ma esistono anche formazioni professionali scolastiche. Specificare che quella descritta nel testo è una formazione duale.",
+      "path": "merged[10].gloss[1]"
+    },
+    {
+      "kind": "Traduzione e Rektion",
+      "msg": "«Verdient deutlich mehr als in Deutschland» confronta il guadagno con quello che Marco otterrebbe in Germania, non con un guadagno accertato. Per evitare un confronto ambiguo, precisare «als er in Deutschland verdienen würde».",
+      "path": "neutral[13].sentences[2]"
+    },
+    {
+      "kind": "Spiegazione lessicale",
+      "msg": "«Gewöhnung» indica l’adattamento o l’assuefazione, non propriamente una «costumbre». Sostituire con «adaptación, acostumbramiento».",
+      "path": "merged[20].lex[24]"
+    },
+    {
+      "kind": "Traduzione lessicale",
+      "msg": "Qui «zutrauen» significa attribuire al termine una capacità o un potenziale; «creer a alguien capaz de» descrive solo la costruzione riferita a una persona. Aggiungere «atribuir potencial a algo» o una spiegazione contestuale.",
+      "path": "merged[22].gloss[14]"
+    }
+  ],
+  "lang": "es",
+  "unit": "readings",
+  "verdict": "fail"
+}
