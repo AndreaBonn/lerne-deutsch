@@ -1,20 +1,30 @@
 {
-  "bundleHash": "e4609dd46f43fe8939dfefd8c7697e66ddcffd569ce56d326386159dc9052c63",
+  "bundleHash": "49c16e7083c9ca017305f0bfb1bd16c999980563924382a7d847b1c6c8197e92",
   "findings": [
     {
-      "kind": "spiegazione lessicale",
-      "msg": "«konsistent» può indicare anche una consistenza fisica o una struttura compatta; non significa soltanto «coerente, senza contraddizioni». Spiega che il significato dipende dal contesto, senza presentare l'accezione materiale come un falso amico.",
+      "kind": "spiegazione grammaticale errata",
+      "msg": "La formula «delante de e y de i» estende erroneamente a tutti i casi la pronuncia iniziale [ç] o [k]: per esempio Chef e China non seguono entrambi la stessa distribuzione. Limita la spiegazione a Chemie e, se necessario, precisa separatamente le varianti di China.",
+      "path": "merged.lessons[1].exercises[3].why"
+    },
+    {
+      "kind": "progressione didattica",
+      "msg": "L’obiettivo prescrive lo standard della Germania in ogni contesto formale, in contrasto con la spiegazione delle varietà nazionali: anche lo standard austriaco e quello svizzero sono appropriati in contesti formali. Chiedi di scegliere una varietà standard adatta al contesto.",
+      "path": "merged.lessons[1].objectives[3]"
+    },
+    {
+      "kind": "spiegazione lessicale errata",
+      "msg": "Il contrasto attribuisce a «consecuente» il significato di «resultante», ma in spagnolo «consecuente» può anche indicare una persona coerente o costante, come il tedesco konsequent. Riformula il confronto distinguendo i significati secondo il contesto.",
       "path": "merged.lessons[2].theory[2].contrast"
     },
     {
-      "kind": "spiegazione lessicale",
-      "msg": "La spiegazione esclude dal tedesco il significato «normale» di «ordinär», ma l'aggettivo può anche significare «comune» o «ordinario» in contesti appropriati. Distingui questa accezione da quella spregiativa di «volgare».",
+      "kind": "spiegazione lessicale errata",
+      "msg": "«Die Konfession» non indica solo la confessione religiosa: può indicare anche una denominazione o comunità confessionale. Inoltre la confessione dei peccati è anche «das Geständnis» in senso più generale, mentre «die Beichte» designa specificamente la confessione religiosa. Precisa la distinzione.",
       "path": "merged.lessons[2].theory[2].contrast"
     },
     {
-      "kind": "sfumatura semantica",
-      "msg": "«Nicht ganz unproblematisch» segnala che qualcosa presenta problemi, ma non significa necessariamente «claramente problemático»: la forza del giudizio dipende dal contesto e dall'intonazione. Formula la spiegazione in modo da conservare questa ambiguità.",
-      "path": "merged.lessons[0].grammar.table.rows[3]"
+      "kind": "spiegazione lessicale imprecisa",
+      "msg": "«Überprüfbar» non è sempre escluso dalla traduzione: può esprimere che un’affermazione è verificabile o controllabile empiricamente, anche senza implicarne la conferma. Se si vuole verificare precisamente verifizierbar, richiedi esplicitamente quel termine invece di dichiarare errata l’alternativa in generale.",
+      "path": "merged.lessons[2].exercises[7].why"
     }
   ],
   "lang": "es",

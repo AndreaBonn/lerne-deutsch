@@ -1,20 +1,15 @@
 {
-  "bundleHash": "91a2341dcbfc489133be4686b588cf5700dc2853c33cc98aec186100a21c766c",
+  "bundleHash": "9c2798486cf681a3e6a7f6ffc4651c9750849e84f504ebecd759d95a40e0e9df",
   "findings": [
     {
-      "kind": "exactitude linguistique",
-      "msg": "« die Konfession » ne désigne pas uniquement l’appartenance religieuse : le mot peut aussi désigner une confession ou une déclaration de foi. Préciser que « die Beichte » désigne la confession des péchés, sans présenter cette opposition comme exhaustive.",
-      "path": "merged.lessons[2].theory[2].contrast"
-    },
-    {
-      "kind": "explication grammaticale",
-      "msg": "La structure « sein + zu + infinitif » ne marque pas toujours l’obligation : elle peut aussi exprimer la possibilité, notamment avec une négation. Préciser que, dans cet exemple, elle exprime une recommandation ou une nécessité.",
-      "path": "merged.lessons[2].grammar.examples[4].note"
+      "kind": "pluriel",
+      "msg": "Le nom est dénombrable, comme le montre l’exemple avec « ein » ; son pluriel est « die Understatements ». Remplacer « - » par cette forme.",
+      "path": "neutral.lessons[0].vocab[1].plural"
     },
     {
       "kind": "traduction",
-      "msg": "« Toute cette paperasse, j'ai vraiment pas envie » est une phrase française incomplète : « avoir envie » exige ici « de ». Proposer par exemple « Toute cette paperasse, j'ai vraiment pas envie de m'en occuper. »",
-      "path": "merged.lessons[1].grammar.examples[5].tr"
+      "msg": "« Preiswert » signifie généralement « d’un bon rapport qualité-prix » : « nicht gerade preiswert » ne signifie donc pas nécessairement « pas vraiment bon marché ». Retirer les réponses avec « preiswert » ou modifier la phrase source et la consigne pour faire porter le jugement sur le rapport qualité-prix.",
+      "path": "merged.lessons[0].exercises[7].a"
     }
   ],
   "lang": "fr",

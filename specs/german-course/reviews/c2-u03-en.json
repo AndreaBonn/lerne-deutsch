@@ -1,15 +1,35 @@
 {
-  "bundleHash": "3f80975fef0873fd02ed3563e35a4995406aa8c3f74a6dbecd8805d17936d809",
+  "bundleHash": "566e4f5f536a7632b35100e954640da3e3db78d0041fdbfb0d058b6a3eb5d45b",
   "findings": [
     {
-      "kind": "meaning and pragmatic nuance",
-      "msg": "The explanation treats the strength of a litotes as fixed. «Nicht ganz unproblematisch» can mean «somewhat problematic» and does not necessarily imply that the negotiations were difficult or seriously problematic; «nicht schlecht» can also express moderate approval. Explain that context and intonation determine the intended strength, and qualify the corresponding table and theory entries.",
-      "path": "merged.lessons[0].grammar.examples[0].note"
+      "kind": "forme plurali",
+      "msg": "Il trattino indica che il sostantivo non ha plurale, ma «die Ironie» ammette «die Ironien». Indicare la forma plurale.",
+      "path": "neutral.lessons[0].vocab[0].plural"
     },
     {
-      "kind": "grammar explanation",
-      "msg": "«Zu + infinitive» with «sein» can express possibility as well as necessity. In «Die Ergebnisse sind mit Vorsicht zu interpretieren», the interpretation is a recommendation or requirement arising from context, not an inherent meaning of the construction. Qualify the note accordingly.",
-      "path": "merged.lessons[2].grammar.examples[4].note"
+      "kind": "forme plurali",
+      "msg": "Il trattino indica che il sostantivo non ha plurale, ma «das Understatement» ammette «die Understatements». Indicare la forma plurale.",
+      "path": "neutral.lessons[0].vocab[1].plural"
+    },
+    {
+      "kind": "spiegazione poco chiara",
+      "msg": "«schön read backwards» può suggerire di leggere la parola al contrario lettera per lettera. Spiegare invece che «schön» è usato ironicamente con un significato opposto a quello letterale nel contesto.",
+      "path": "merged.lessons[0].grammar.examples[3].note"
+    },
+    {
+      "kind": "spiegazione poco chiara",
+      "msg": "Sostituire «schön read backwards» con una spiegazione del significato ironicamente opposto di «schön» nel contesto.",
+      "path": "merged.lessons[0].exercises[2].why"
+    },
+    {
+      "kind": "spiegazione poco chiara",
+      "msg": "Sostituire «schön is read backwards» con una spiegazione del significato ironicamente opposto di «schön» nel contesto.",
+      "path": "merged.lessons[0].exercises[4].why"
+    },
+    {
+      "kind": "spiegazione poco chiara",
+      "msg": "Sostituire «schön is read backwards» con una spiegazione del significato ironicamente opposto di «schön» nel contesto.",
+      "path": "merged.lessons[0].theory[1].p"
     }
   ],
   "lang": "en",

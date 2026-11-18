@@ -1,20 +1,20 @@
 {
-  "bundleHash": "02e6a3ba04c876c772f8a4b74a064af7afbfd3f23f94fbe9479ebc5a7b3fdc3a",
+  "bundleHash": "63912f8181bfd885da98858aeeab392e0f7898000526e67f2a0fd463fd1a18a0",
   "findings": [
     {
-      "kind": "traduzione",
-      "msg": "«Film był wcale nie najgorszy» non è una formulazione polacca idiomatica: correggere in «Film wcale nie był najgorszy».",
-      "path": "merged.lessons[0].grammar.examples[1].tr"
+      "kind": "traduzione e spiegazione",
+      "msg": "«Kann sich durchaus sehen lassen» esprime un giudizio positivo, ma non implica necessariamente un risultato davvero impressionante. Rendere la traduzione, per esempio, con «Wynik jest całkiem niezły» e attenuare anche le spiegazioni che parlano categoricamente di un risultato eccellente.",
+      "path": "merged.lessons[0].grammar.examples[5].tr"
     },
     {
-      "kind": "traduzione lessicale",
-      "msg": "«Niedopowiedzenie» indica ciò che è lasciato sottinteso, non necessariamente una minimizzazione. Per «Untertreibung» usare «umniejszenie, bagatelizowanie» o «niedoszacowanie», secondo il contesto.",
-      "path": "merged.lessons[0].vocab[2].tr"
+      "kind": "ortografia",
+      "msg": "Il saluto, presentato come voce autonoma, va scritto con l’iniziale maiuscola: «Grüezi». Correggere la stessa voce anche nell’oggetto merged.",
+      "path": "neutral.lessons[1].exercises[6].pairs[3].it"
     },
     {
-      "kind": "spiegazione della pronuncia",
-      "msg": "L'affermazione che nei Fremdwörter l'accento cada quasi sempre verso la fine è troppo generale: esistono numerosi prestiti accentati all'inizio, come «Computer», «Internet» e «Auto». Limitare l'osservazione agli esempi trattati e invitare a verificare l'accento parola per parola.",
-      "path": "merged.lessons[2].theory[3].trap"
+      "kind": "spiegazione lessicale",
+      "msg": "La frase «Tu znaczy “spójność”, nie konsystencję» presenta una falsa opposizione: anche il polacco «konsystencja» può indicare coerenza o consistenza logica. Spiegare che in questo contesto «Konsistenz» significa «spójność, niesprzeczność», senza escludere categoricamente l’equivalente polacco.",
+      "path": "merged.lessons[2].exercises[4].why"
     }
   ],
   "lang": "pl",
