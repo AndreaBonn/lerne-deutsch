@@ -39,7 +39,7 @@ LINGUAI.addStrings("pl", {
     ],
     grammar: {
       title: "Rozbudowana przydawka imiesłowowa",
-      note: "<b>rodzajnik + określenia + odmieniony imiesłów + rzeczownik</b>. Imiesłów II: znaczenie bierne albo czynność zakończona (<i>die vorgelegten Daten</i>). Imiesłów I: znaczenie czynne, czynność równoczesna (<i>die vorliegenden Gutachten</i>). Imiesłów dostaje końcówkę przymiotnika; <i>worden</i> znika.",
+      note: "<b>rodzajnik + określenia + odmieniony imiesłów + rzeczownik</b>. Imiesłów II: znaczenie bierne albo czynność zakończona (<i>die vorgelegten Daten</i>). Imiesłów I: znaczenie czynne, zwykle czynność równoczesna (<i>die vorliegenden Gutachten</i>). Imiesłów dostaje końcówkę przymiotnika; <i>worden</i> znika.",
       table: {
         head: ["zdanie względne", "rozbudowana przydawka"],
         rows: [
@@ -180,7 +180,7 @@ LINGUAI.addStrings("pl", {
           ["Die Aufgabe ist zu lösen.", "die zu lösende Aufgabe", "trzeba rozwiązać"],
           ["Die Unterlagen sind einzureichen.", "die einzureichenden Unterlagen", "trzeba złożyć"],
           ["Das Risiko ist nicht zu unterschätzen.", "ein nicht zu unterschätzendes Risiko", "nie należy lekceważyć"],
-          ["Die Kosten sind zu erwarten.", "die zu erwartenden Kosten", "można przewidzieć"]
+          ["Die Kosten sind zu erwarten.", "die zu erwartenden Kosten", "należy się spodziewać"]
         ]
       },
       examples: [
