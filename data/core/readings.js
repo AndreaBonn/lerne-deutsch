@@ -353,7 +353,7 @@ LINGUAI.addReadings([
     titleIt: "Ein Laden für das ganze Dorf",
     sentences: [
       "Vor sechs Jahren wurde der letzte Lebensmittelladen in einem kleinen Dorf im Allgäu geschlossen.",
-      "Seitdem mussten die Einkäufe mit dem Auto in der nächsten Stadt erledigt werden, was vor allem für ältere Menschen schwierig war.",
+      "Danach mussten die Einkäufe mit dem Auto in der nächsten Stadt erledigt werden, was vor allem für ältere Menschen schwierig war.",
       "Deshalb wurde im Gemeinderat eine Idee diskutiert, die zunächst etwas verrückt klang: Der Laden sollte von den Bewohnern selbst betrieben werden.",
       "Innerhalb weniger Monate wurden mehr als zweihundert Anteile verkauft, und das alte Geschäft ist von Freiwilligen renoviert worden.",
       "Heute ist der Dorfladen an sechs Tagen in der Woche geöffnet.",
