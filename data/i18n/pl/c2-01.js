@@ -1,5 +1,5 @@
 /* ============================================================
-   Learner-language text (pl) for data/core/c2-01.js, units c2-u01 and c2-u02.
+   Learner-language text (pl) for data/core/c2-01.js, units c2-u01, c2-u02 and c2-u03.
    Keys point at ids in the neutral layer; arrays merge by index,
    so their length has to match core.
    Checked by scripts/parity.mjs.
@@ -955,6 +955,511 @@ LINGUAI.addStrings("pl", {
       {
         tr: "Inspekcja sanitarna zarządziła zamknięcie.",
         why: "W <i>Gesundheitsamt</i> akcent pada na <b>sund</b>; w <i>Schließung</i> <b>ie</b> jest długie, a <b>ß</b> wymawia się [s]; w <i>angeordnet</i> akcent pada na <b>an</b>."
+      }
+    ]
+  },
+  "unit:c2-u03": {
+    title: "Odcienie znaczeń",
+    grammarNote: "Litota i understatement (nicht schlecht, nicht ganz ohne, nicht gerade billig) · ironia w partykułach (Das ist ja eine schöne Bescherung!) · Umgangssprache i rejestr · austriacyzmy i helwetyzmy do rozpoznawania (Jänner, Paradeiser, Velo, grüezi) · latynizmy i Bildungssprache (obsolet, konsistent, die Prämisse) oraz liczba mnoga Fremdwörter (Kriterien, Gremien)"
+  },
+  "lesson:c2-u03-l1": {
+    theme: "Rozmowa i krytyka",
+    title: "Ironia i understatement",
+    objectives: [
+      "rozpoznawać litotę i understatement (nicht schlecht, nicht ganz ohne, nicht gerade)",
+      "rozumieć, kiedy pochwała albo wykrzyknienie są ironiczne",
+      "rozpoznawać rolę ja i mir w ironicznych wykrzyknieniach",
+      "łagodzić negatywną ocenę za pomocą gelinde gesagt i nicht ganz"
+    ],
+    theory: [
+      {
+        h: "Powiedzieć mniej, żeby powiedzieć więcej",
+        p: "Niemiecki mówiony, a także prasowy, bardzo lubi <strong>litotę</strong>: zaprzecza się przeciwieństwu tego, co się myśli. <em>Nicht schlecht</em> to często pełna pochwała, <em>nicht ganz ohne</em> znaczy „wymagający, ryzykowny”, <em>nicht gerade billig</em> znaczy „drogi”, <em>nicht ganz unproblematisch</em> znaczy „wyraźnie problematyczny”. Formuła <strong>gelinde gesagt</strong> („delikatnie mówiąc”, „łagodnie mówiąc”) uprzedza, że rzeczywistość jest gorsza niż wybrane słowo: <em>Die Lage ist, gelinde gesagt, angespannt.</em> Pochwała też bywa powściągliwa: <em>Das kann sich sehen lassen</em> docenia znakomity wynik bez patosu."
+      },
+      {
+        h: "Ironia w partykułach",
+        p: "Niemiecka ironia często przechodzi przez partykuły modalne i przez pozytywny przymiotnik w negatywnej sytuacji. <em>Das ist <strong>ja</strong> eine schöne Bescherung!</em> („no to pięknie!”, „ładne rzeczy!”): <em>ja</em> w wykrzyknieniu sygnalizuje zdziwienie, a <em>schön</em> czyta się na odwrót. <em>Du bist <strong>mir</strong> ja ein schöner Freund!</em> to wyrzut: celownik etyczny <em>mir</em> angażuje mówiącego, a całość znaczy mniej więcej „ładny z ciebie przyjaciel!”. <em>Na, das hast du ja toll hingekriegt!</em> mówi się komuś, kto właśnie narobił bałaganu. Same partykuły nie czynią zdania ironicznym: wzmacniają wykrzyknienie i zaangażowanie mówiącego. Prawdziwym sygnałem jest zderzenie słowa z sytuacją, razem z intonacją: to te wskazówki pozwalają rozpoznać odwrócone znaczenie."
+      },
+      {
+        contrast: "Polski zna ten mechanizm doskonale, i to od strony gramatyki. <em>Niezły</em> i <em>nie najgorszy</em> to polskie <em>nicht schlecht</em>, a ironiczne „no to pięknie!” albo „ładnie się urządziłeś!” odwracają przymiotnik dokładnie tak jak <em>schön</em>. Polski ma też celownik etyczny i to w tej samej osobie: „tylko mi się nie spóźnij!”, „ty mi tu nie mędrkuj!”. <em>Du bist mir ja ein schöner Freund!</em> brzmi więc dla Polaka znajomo. Różnica leży w dawce: polska ironia bywa bardziej teatralna, a niemiecka litota częściej jest neutralną oceną, nie żartem. <em>Nicht schlecht</em> z ust niemieckiego przełożonego może być najwyższą pochwałą, jaką usłyszysz, choć dla polskiego ucha brzmi chłodno."
+      },
+      {
+        trap: "Nie bierz dosłownie <em>nicht ganz ohne</em>: to nie „nie całkiem bez”, tylko „wcale nie łatwe”. A <em>nicht unbedingt</em> nie znaczy „absolutnie nie”, tylko „niekoniecznie”: <em>Das ist nicht unbedingt nötig</em> zostawia furtkę. Uważaj też na <em>jemanden auf den Arm nehmen</em>: w przenośni to „nabierać kogoś, robić kogoś w konia”; dosłownie to „wziąć kogoś na ręce”, i rozróżnia je tylko kontekst."
+      },
+      {
+        tip: "Kiedy nie masz pewności co do tonu, patrz na intonację i kontekst, nie na słowa: <em>Na toll!</em> wypowiedziane płasko i przeciągle jest ironiczne prawie zawsze."
+      }
+    ],
+    grammar: {
+      title: "Litota, understatement i ironia",
+      note: "<b>nicht + przeciwieństwo</b>: <i>nicht schlecht</i> (dobry), <i>nicht gerade billig</i> (drogi), <i>nicht ganz ohne</i> (wymagający). <b>gelinde gesagt</b> łagodzi negatywną ocenę. Ironia rodzi się ze zderzenia pozytywnego przymiotnika z sytuacją; <b>ja</b> w wykrzyknieniu i celownik etyczny <b>mir</b> ją wzmacniają, ale same nie wystarczą.",
+      table: {
+        head: ["wyrażenie", "dosłownie", "rzeczywiste znaczenie"],
+        rows: [
+          ["nicht schlecht", "nieźle, nie najgorzej", "dobrze, imponująco"],
+          ["nicht ganz ohne", "nie całkiem bez", "wymagający, ryzykowny"],
+          ["nicht gerade billig", "nie całkiem tani", "drogi"],
+          ["nicht ganz unproblematisch", "nie całkiem bezproblemowy", "wyraźnie problematyczny"],
+          ["Das kann sich sehen lassen.", "to może się pokazać", "to znakomity wynik"],
+          ["Das ist ja eine schöne Bescherung!", "piękny prezent!", "no to pięknie!"]
+        ]
+      },
+      examples: [
+        { tr: "Negocjacje nie były całkiem bezproblemowe.", note: "litota: w rzeczywistości były trudne" },
+        { tr: "Film był wcale nie najgorszy.", note: "gar nicht mal so: powściągliwa pochwała" },
+        { tr: "Nie jest on akurat najpracowitszy.", note: "nicht gerade + stopień najwyższy: złagodzona krytyka" },
+        { tr: "No to pięknie!", note: "ironia: ja w wykrzyknieniu, schön na odwrót" },
+        { tr: "Ładny z ciebie przyjaciel!", note: "ironiczny wyrzut z celownikiem etycznym mir" },
+        { tr: "Wynik jest naprawdę imponujący.", note: "sich sehen lassen können: pochwała bez patosu" }
+      ]
+    },
+    vocab: [
+      "ironia",
+      "understatement, celowo powściągliwe sformułowanie",
+      "niedopowiedzenie, pomniejszanie",
+      "przesada",
+      "aluzja",
+      "podtekst, ukryty ton",
+      "przytyk, szpila",
+      "napomknienie, niejasna aluzja",
+      "dwuznaczny",
+      "z przymrużeniem oka",
+      "bagatelizować",
+      "nabierać kogoś, robić kogoś w konia"
+    ],
+    exercises: [
+      {
+        q: "Koleżanka mówi o nowym szefie: „Er ist nicht gerade ein Organisationstalent.” Co ma na myśli?",
+        opts: [
+          "Szef źle się organizuje.",
+          "Szef świetnie organizuje.",
+          "Szef nie zajmuje się organizacją."
+        ],
+        why: "<b>nicht gerade</b> + pozytywne wyrażenie to złagodzona krytyka: szef jest chaotyczny, ale mówi się to taktownie."
+      },
+      {
+        q: "Po sześciogodzinnym podejściu w górach przewodnik mówi: „Die Tour war nicht ganz ohne.” Co to znaczy?",
+        opts: [
+          "Wycieczka była dość wymagająca.",
+          "Wycieczka była łatwa i przyjemna.",
+          "Wycieczka była niepełna."
+        ],
+        why: "<b>nicht ganz ohne</b> to utarta litota: „wcale nie łatwe, z ryzykiem”. Nie ma nic wspólnego z czymś, czego brakuje."
+      },
+      {
+        q: "Kolega wylewa kawę na klawiaturę. Uzupełnij ironiczne wykrzyknienie: „Das ist ___ eine schöne Bescherung!”",
+        opts: [
+          "ja",
+          "denn",
+          "etwa"
+        ],
+        why: "W wykrzyknieniu partykułą jest <b>ja</b>, które sygnalizuje zdziwienie; razem z <i>schön</i> czytanym na odwrót daje sens „no to pięknie!”. <i>denn</i> i <i>etwa</i> to partykuły pytań."
+      },
+      {
+        q: "Które zdanie jest powściągliwą pochwałą bardzo dobrego wyniku?",
+        opts: [
+          "Das kann sich sehen lassen.",
+          "Das lässt zu wünschen übrig.",
+          "Das ist unter aller Kritik."
+        ],
+        why: "<b>sich sehen lassen können</b> docenia znakomity wynik bez patosu. <i>zu wünschen übrig lassen</i> („pozostawiać wiele do życzenia”) to ocena negatywna; <i>unter aller Kritik</i> to miażdżąca krytyka bez niuansów."
+      },
+      {
+        q: "Zapomniałeś o urodzinach przyjaciela. Mówi do ciebie: „Du bist mir ja ein schöner Freund!” Co ma na myśli?",
+        opts: [
+          "Robi ci wyrzut: jesteś kiepskim przyjacielem.",
+          "Prawi ci komplement: jesteś uroczym przyjacielem.",
+          "Mówi, że jesteś jego najlepszym przyjacielem."
+        ],
+        why: "To ironiczny wyrzut: <i>schön</i> czyta się na odwrót, a celownik etyczny <b>mir</b> podkreśla, że mówiącego to dotknęło, jak w polskim „ładny mi z ciebie przyjaciel!”."
+      },
+      {
+        q: "Uzupełnij: w pierwszej luce przysłówek z łagodzącej formuły „delikatnie mówiąc”, w drugiej słowo opisujące wynik („udany”).",
+        tr: "Prezentacja, delikatnie mówiąc, nie całkiem się udała: rzutnik się zepsuł, a prelegentka zapomniała notatek.",
+        why: "<b>gelinde gesagt</b> (także <i>milde</i> albo <i>vorsichtig gesagt</i>) uprzedza, że rzeczywistość jest gorsza niż wybrane słowo; <b>nicht ganz gelungen</b> (albo <i>geglückt</i>, <i>glücklich</i>, <i>reibungslos</i>) to litota: „nie całkiem udana”, a kontekst pokazuje, że poszło źle."
+      },
+      {
+        q: "Połącz każde wyrażenie z jego rzeczywistym znaczeniem.",
+        pairs: [
+          "dobry, imponujący",
+          "wymagający, ryzykowny",
+          "dość drogi",
+          "niekoniecznie"
+        ]
+      },
+      {
+        q: "Przetłumacz z litotą: „Restauracja nie była akurat tania.” (nicht gerade, billig)",
+        why: "<i>Das Restaurant war nicht gerade billig</i>: <i>nicht gerade</i> łagodzi i daje do zrozumienia, że rachunek był słony. Przyjmowane są też <i>günstig</i> albo <i>preiswert</i>, <i>nicht eben</i> i Perfekt <i>ist ... gewesen</i>."
+      },
+      {
+        tr: "Jedzenie było przypalone, wino ciepłe, a na dworze lało jak z cebra. „Niezupełnie taki wieczór sobie wyobrażałem” – stwierdził sucho gospodarz.",
+        why: "W <i>angebrannt</i> akcent pada na <b>an</b>; w <i>Strömen</i> <b>ö</b> jest długie, [øː]; w <i>vorgestellt</i> akcent pada na <b>vor</b>. Ironia rodzi się ze zderzenia opisanej katastrofy z łagodną uwagą; suchy ton ją wzmacnia."
+      },
+      {
+        tr: "To było, delikatnie mówiąc, nie całkiem bezproblemowe.",
+        why: "W <i>gelinde</i> akcent pada na <b>lin</b>; w <i>unproblematisch</i> akcent pada na <b>un</b> albo na <b>ma</b>: Duden podaje obie wymowy. Dwie pauzy wokół <i>gelinde gesagt</i> pozwalają usłyszeć wtrącenie."
+      }
+    ]
+  },
+  "lesson:c2-u03-l2": {
+    theme: "Odmiany niemieckiego",
+    title: "Język potoczny, dialekt, odmiany",
+    objectives: [
+      "rozpoznawać cechy języka potocznego (hab, 'ne, was zamiast etwas)",
+      "rozumieć najczęstsze austriacyzmy i helwetyzmy (Jänner, Paradeiser, Velo, grüezi)",
+      "odróżniać dialekt od narodowej odmiany standardowej",
+      "wybierać standardowy niemiecki, gdy piszesz lub mówisz w sytuacji oficjalnej"
+    ],
+    theory: [
+      {
+        h: "Trzy standardy, wiele dialektów",
+        p: "Niemiecki jest językiem <strong>policentrycznym</strong>: Niemcy, Austria i Szwajcaria mają każda własną odmianę standardową, z innymi słowami, wymową, a czasem formami gramatycznymi, i wszystkie są poprawne. W Austrii styczeń to <em>der Jänner</em>, pomidor to <em>der Paradeiser</em>, ziemniak to <em>der Erdapfel</em>, morela to <em>die Marille</em>; w Szwajcarii rower to <em>das Velo</em>, mówi się <em>parkieren</em> zamiast <em>parken</em>, a bilet kolejowy to <em>das Billett</em>. To słowa standardowe w swoim kraju, nie dialekt: austriacyzm pojawia się w gazetach, w dokumentach urzędowych i w podręcznikach szkolnych. <strong>Dialekt</strong> (<em>Mundart</em>) to coś innego: bawarskie, szwabskie czy szwajcarskoniemieckie grupy dialektów, których Niemiec z północy czasem w ogóle nie rozumie."
+      },
+      {
+        h: "Język potoczny",
+        p: "<strong>Umgangssprache</strong> przechodzi przez wszystkie regiony. Skraca formy (<em>ich hab</em> zamiast <em>ich habe</em>, <em>'ne</em> zamiast <em>eine</em>, <em>was</em> zamiast <em>etwas</em>, <em>mal</em> zamiast <em>einmal</em>), używa nieformalnego słownictwa (<em>keinen Bock haben</em>, „nie mieć ochoty”; <em>der Kram</em>, „graty, rzeczy”) i woli Perfekt od Präteritum. W rozmowie z przyjaciółmi jest naturalna; w mailu do profesora albo klienta brzmi niedbale, czyli <em>salopp</em>."
+      },
+      {
+        contrast: "Polszczyzna też ma regionalizmy w języku ogólnym: w Krakowie wychodzi się <em>na pole</em>, w Warszawie <em>na dwór</em>, w Poznaniu je się <em>pyry</em>. Wszystkie one mieszczą się jednak w jednym standardzie, który obowiązuje od Szczecina po Rzeszów. Niemiecki ma trzy standardy, każdy z własnymi słownikami i podręcznikami: Austriak, który pisze <em>Jänner</em>, albo mieszkaniec Zurychu, który pisze <em>parkieren</em>, nie robi błędu, nawet w piśmie urzędowym. Dla uczącego się zasada praktyczna jest prosta: rozpoznaje się wszystkie, a samemu używa się jednej, konsekwentnie, zwykle niemieckiej."
+      },
+      {
+        trap: "<em>Im Jänner fahre ich mit dem Velo</em> łączy austriacyzm z helwetyzmem: to nie błąd i w prawdziwym użyciu się zdarza, ale uczący się dobrze zrobi, jeśli wybierze jedną odmianę i utrzyma ją w całym tekście. I nie bierz regionalnej wymowy za błąd: w wielu rejonach Austrii i południowych Niemiec <em>Chemie</em> i <em>China</em> wymawia się z [k] na początku, i to jest poprawne."
+      },
+      {
+        tip: "Słowniki oznaczają regionalizmy: <em>österr.</em> to Austria, <em>schweiz.</em> Szwajcaria, <em>südd.</em> południe Niemiec, <em>ugs.</em> rejestr potoczny. Ten skrót mówi ci, gdzie i kiedy słowo jest na miejscu."
+      }
+    ],
+    grammar: {
+      title: "Trzy odmiany standardowe",
+      note: "Niemcy, Austria i Szwajcaria mają każda własny standard. <b>Austriacyzmy</b> i <b>helwetyzmy</b> to słowa standardowe w swoim kraju: rozpoznaje się wszystkie; gdy ćwiczenie wymaga podania formy, polecenie mówi, o którą odmianę chodzi, zwykle o standard Niemiec. <b>Umgangssprache</b> skraca formy (<i>hab</i>, <i>'ne</i>, <i>was</i>) i w oficjalnym piśmie lepiej jej unikać.",
+      table: {
+        head: ["Niemcy", "Austria", "Szwajcaria", "polski"],
+        rows: [
+          ["der Januar", "der Jänner", "der Januar", "styczeń"],
+          ["die Tomate", "der Paradeiser", "die Tomate", "pomidor"],
+          ["die Kartoffel", "der Erdapfel", "die Kartoffel", "ziemniak"],
+          ["das Fahrrad", "das Fahrrad", "das Velo", "rower"],
+          ["parken", "parken", "parkieren", "parkować"],
+          ["Guten Tag", "Grüß Gott", "Grüezi", "dzień dobry"]
+        ]
+      },
+      examples: [
+        { tr: "Dzień dobry! Poproszę kilo pomidorów.", note: "austriackie: Grüß Gott, der Paradeiser" },
+        { tr: "W styczniu w Innsbrucku zwykle leży śnieg.", note: "austriackie: der Jänner" },
+        { tr: "Dzień dobry! Gdzie mogę tu zaparkować?", note: "szwajcarskie: Grüezi, parkieren" },
+        { tr: "Codziennie jeździ do pracy rowerem.", note: "szwajcarskie: das Velo" },
+        { tr: "Masz chwilę? Muszę ci coś opowiedzieć.", note: "potoczne: 'ne zamiast eine, was zamiast etwas" },
+        { tr: "Na całą tę papierologię naprawdę nie mam ochoty.", note: "potoczne: hab, keinen Bock haben, der Papierkram" }
+      ]
+    },
+    vocab: [
+      "język potoczny",
+      "język standardowy",
+      "gwara, dialekt (także w sensie literackim)",
+      "dialekt",
+      "odmiana (języka)",
+      "austriacyzm",
+      "helwetyzm",
+      "akcent (w wymowie)",
+      "zabarwienie, naleciałość",
+      "gwarowy",
+      "swobodny, niedbały (o rejestrze)",
+      "porozumiewać się, dogadać się"
+    ],
+    exercises: [
+      {
+        q: "W wiedeńskiej restauracji czytasz w karcie „Erdäpfelsalat”. Co zamawiasz?",
+        opts: [
+          "sałatkę ziemniaczaną",
+          "sałatkę z pomidorów",
+          "sałatkę z jabłek"
+        ],
+        why: "<b>der Erdapfel</b> (liczba mnoga <i>Erdäpfel</i>) to austriacyzm zamiast <i>die Kartoffel</i>. Pomidory w Wiedniu to <i>Paradeiser</i>."
+      },
+      {
+        q: "W Zurychu tabliczka głosi: „Velos abstellen verboten”. Czego nie wolno?",
+        opts: [
+          "zostawiać rowerów",
+          "parkować samochodów",
+          "zatrzymywać skuterów"
+        ],
+        why: "<b>das Velo</b> (liczba mnoga <i>Velos</i>) to rower w Szwajcarii; w Niemczech mówi się <i>das Fahrrad</i>."
+      },
+      {
+        q: "Które zdanie pasuje do maila do rektora z prośbą o przedłużenie terminu?",
+        opts: [
+          "Ich möchte Sie fragen, ob eine Verlängerung der Frist möglich wäre.",
+          "Ich wollt' mal fragen, ob ich noch 'n bisschen mehr Zeit krieg.",
+          "Geht das klar mit der Frist, oder was?"
+        ],
+        why: "Tylko pierwsze jest standardowe i oficjalne: <i>Sie</i>, grzecznościowy Konjunktiv II, rzeczownik abstrakcyjny <i>Verlängerung</i>. Drugie jest potoczne (<i>wollt'</i>, <i>'n</i>, <i>krieg</i>), trzecie wręcz niegrzeczne."
+      },
+      {
+        q: "Wiedeńczyk wymawia „Chemie” z [k] na początku. Co to oznacza?",
+        opts: [
+          "To poprawna wymowa regionalna, rozpowszechniona w Austrii i w południowych Niemczech.",
+          "To błąd wymowy.",
+          "Mówi o innym przedmiocie."
+        ],
+        why: "Przed <i>e</i> i <i>i</i> nagłosowe <i>ch</i> wymawia się [ç] w większej części Niemiec i [k] w wielu rejonach Austrii i południa: to <b>warianty regionalne, oba standardowe</b>."
+      },
+      {
+        q: "Uzupełnij słowem ze standardu Niemiec: „In Wien sagt man Paradeiser, in Hamburg sagt man ___.”",
+        hint: "pomidory, w standardowym niemieckim Niemiec",
+        why: "<b>Tomaten</b> (albo <b>Tomate</b>): <i>der Paradeiser</i> to austriacyzm, <i>die Tomate</i> to słowo używane w Niemczech i w Szwajcarii."
+      },
+      {
+        q: "Uzupełnij: w pierwszej luce liczbę mnogą od „der Dialekt”, w drugiej od „die Varietät”.",
+        tr: "Austriacki i szwajcarski niemiecki standardowy to nie dialekty, tylko równorzędne odmiany języka niemieckiego.",
+        why: "<b>Dialekte</b> (albo <i>Mundarten</i>) i <b>Varietäten</b>: odmiany narodowe są pełnoprawnymi standardami, a dialekty to odmiany regionalne, używane głównie w mowie. Językoznawca powie też <i>Standardvarietäten</i>."
+      },
+      {
+        q: "Połącz każde słowo regionalne z jego znaczeniem.",
+        pairs: [
+          "styczeń (Austria)",
+          "pomidor (Austria)",
+          "rower (Szwajcaria)",
+          "dzień dobry (Szwajcaria)"
+        ]
+      },
+      {
+        q: "Przetłumacz: „Ona mówi z lekkim szwajcarskim akcentem.” (leicht, der Akzent)",
+        why: "<i>Sie spricht mit einem leichten Schweizer Akzent</i>. <i>Schweizer</i> jako przymiotnik od nazwy kraju się nie odmienia i pisze się go wielką literą. Przyjmowane są też <i>mit leichtem Schweizer Akzent</i> i przymiotnik <i>schweizerisch</i>, który się odmienia."
+      },
+      {
+        tr: "W Wiedniu mówi się Paradeiser zamiast Tomaten i Erdäpfel zamiast Kartoffeln. Kto robi zakupy w Austrii po raz pierwszy, nie powinien się więc temu dziwić.",
+        why: "W <i>Paradeiser</i> akcent pada na <b>dei</b>; w <i>Erdäpfel</i> akcent pada na <b>Erd</b>; w <i>Österreich</i> <b>Ö</b> jest długie, a końcową sylabę <b>reich</b> wymawia się [ʁaɪ̯ç]."
+      },
+      {
+        tr: "Mówi gwarą, ale rozumie też język standardowy.",
+        why: "W <i>Dialekt</i> akcent pada na <b>lekt</b>; w <i>versteht</i> akcent pada na <b>steht</b>, a <b>st</b> wymawia się [ʃt]; w <i>Standardsprache</i> główny akcent pada na <b>Stan</b>."
+      }
+    ]
+  },
+  "lesson:c2-u03-l3": {
+    theme: "Eseistyka i uczelnia",
+    title: "Latynizmy i Bildungssprache",
+    objectives: [
+      "rozpoznawać latynizmy typowe dla języka wykształconych (These, Prämisse, obsolet, konsistent)",
+      "tworzyć liczbę mnogą Fremdwörter na -um (Kriterien, Gremien)",
+      "tworzyć rzeczowniki od łacińskich przymiotników (konsistent, Konsistenz)",
+      "nie dać się złapać fałszywym przyjaciołom (Konsistenz, Konkurs)"
+    ],
+    theory: [
+      {
+        h: "Język eseju",
+        p: "<strong>Bildungssprache</strong> to rejestr eseistyki, uczelni i ambitnego dziennikarstwa. Obok słownictwa rodzimego używa wielu <strong>latynizmów</strong> (i grecyzmów): <em>die These, die Prämisse, das Phänomen, das Kriterium, obsolet, konsistent, ambivalent, verifizieren, implizieren</em>. Często istnieje odpowiednik niemiecki (<em>veraltet</em> zamiast <em>obsolet</em>, <em>bestätigen</em> zamiast <em>verifizieren</em>), a wybór zależy od kontekstu: latynizm bywa bardziej techniczny, a w eseju jest częsty."
+      },
+      {
+        h: "Liczba mnoga i derywaty Fremdwörter",
+        p: "W wielu rzeczownikach nijakich na <em>-um</em> końcówka <em>-um</em> odpada, a na jej miejsce wchodzi <strong>-en</strong>: <em>Gremi|um → Gremi|en</em>, <em>Kriteri|um → Kriteri|en</em>, <em>Spektr|um → Spektr|en</em>, <em>Muse|um → Muse|en</em>. To nie jedyny wzorzec: <em>das Visum</em> daje <em>die Visa</em> (albo <em>Visen</em>), <em>das Praktikum</em> daje <em>die Praktika</em>, a niektóre świeże zapożyczenia dostają <em>-s</em>. Liczbę mnogą sprawdza się słowo po słowie. Dwa częste schematy słowotwórcze, nie reguły bez wyjątków: wiele czasowników na <em>-ieren</em> daje rzeczowniki na <em>-ation</em> albo <em>-ierung</em> (<em>verifizieren → die Verifikation, die Verifizierung</em>); wiele przymiotników na <em>-ent</em> i <em>-ant</em> daje rzeczowniki na <em>-enz</em> i <em>-anz</em>: <em>konsistent → die Konsistenz</em>, <em>ambivalent → die Ambivalenz</em>, <em>tolerant → die Toleranz</em>. Te rzeczowniki są rodzaju żeńskiego; derywat i tak warto sprawdzić w słowniku."
+      },
+      {
+        contrast: "Polszczyzna ma tych samych łacińskich gości co niemiecki: <em>teza, przesłanka, fenomen, kryterium, gremium, spektrum, konsekwencja</em>. Pułapka siedzi w liczbie mnogiej. Polskie <em>kryterium</em> i <em>gremium</em> w liczbie pojedynczej się nie odmieniają, a w mnogiej dają <em>kryteria</em> i <em>gremia</em>, i ta polska końcówka podsuwa formę <em>die Kriteria</em>, której po niemiecku nie ma: jest <em>die Kriterien, die Gremien</em>. Druga pułapka to <strong>fałszywi przyjaciele</strong>. <em>die Konsistenz</em> w Bildungssprache to „spójność, niesprzeczność” wywodu, a nie tylko polska <em>konsystencja</em> sosu; <em>der Konkurs</em> to upadłość firmy, a polski konkurs to <em>der Wettbewerb</em>; <em>die Konfession</em> to wyznanie, nie spowiedź (<em>die Beichte</em>). <em>ordinär</em> za to pokrywa się z polskim <em>ordynarny</em>: znaczy „wulgarny, prostacki”."
+      },
+      {
+        trap: "Nie twórz niemieckiej liczby mnogiej z <em>-s</em> ani z rodzimymi końcówkami: <em>die Gremiums</em> i <em>die Kriteriume</em> nie istnieją. I uważaj na akcent, który w Fremdwörter pada prawie zawsze pod koniec słowa, a nie na przedostatnią sylabę, jak w polskim: <em>Phäno<b>men</b>, Prä<b>mis</b>se, konsis<b>tent</b>, verifi<b>zie</b>ren</em>."
+      },
+      {
+        tip: "Jeden latynizm na akapit daje precyzję; pięć w jednym zdaniu daje pedanterię. Jeśli niemiecki odpowiednik mówi to samo, w tekstach popularnych to często lepszy wybór."
+      }
+    ],
+    grammar: {
+      title: "Latynizmy, liczba mnoga i derywaty",
+      note: "W wielu rzeczownikach na <b>-um</b> końcówka <i>-um</i> odpada, a na jej miejsce wchodzi <b>-en</b> (<i>Gremi|um → Gremi|en, Spektr|um → Spektr|en</i>), ale nie we wszystkich (<i>Visa, Praktika</i>): liczby mnogiej uczy się razem ze słowem. Częste schematy, do sprawdzenia słowo po słowie: przymiotniki na <b>-ent/-ant</b> → rzeczownik żeński na <b>-enz/-anz</b> (<i>Konsistenz, Ambivalenz</i>); czasowniki na <b>-ieren</b> → rzeczownik na <b>-ation</b> albo <b>-ierung</b>.",
+      table: {
+        head: ["latynizm", "odpowiednik niemiecki", "polski"],
+        rows: [
+          ["obsolet", "veraltet, überholt", "przestarzały, nieaktualny"],
+          ["verifizieren", "als richtig bestätigen", "zweryfikować, potwierdzić prawdziwość"],
+          ["implizieren", "mit sich bringen", "implikować, pociągać za sobą"],
+          ["die Prämisse", "die Voraussetzung", "przesłanka"],
+          ["das Gremium, die Gremien", "der Ausschuss", "gremium, komisja"],
+          ["konsistent, die Konsistenz", "widerspruchsfrei", "spójny, spójność"]
+        ]
+      },
+      examples: [
+        { tr: "Tezy niemal nie da się zweryfikować empirycznie.", note: "verifizieren: czasownik na -ieren" },
+        { tr: "Gremium jednogłośnie przyjęło propozycję.", note: "das Gremium, liczba mnoga die Gremien" },
+        { tr: "Jego wywód nie jest wewnętrznie spójny.", note: "konsistent, rzeczownik: die Konsistenz" },
+        { tr: "Zjawiska nie da się wyjaśnić jedną przyczyną.", note: "monokausal: jedna przyczyna; akcent pada na sal" },
+        { tr: "Wyniki należy interpretować ostrożnie.", note: "zu + bezokolicznik w znaczeniu powinności" },
+        { tr: "Dotychczasowe kryteria uchodzą za przestarzałe.", note: "das Kriterium, liczba mnoga die Kriterien" }
+      ]
+    },
+    vocab: [
+      "teza",
+      "fenomen, zjawisko",
+      "gremium, komisja",
+      "kryterium",
+      "spektrum, wachlarz",
+      "przesłanka",
+      "konsekwencja, skutek",
+      "spójny, niesprzeczny",
+      "przestarzały, nieaktualny",
+      "ambiwalentny",
+      "weryfikować",
+      "implikować, pociągać za sobą"
+    ],
+    exercises: [
+      {
+        q: "Jaka jest liczba mnoga od „das Kriterium”?",
+        opts: [
+          "die Kriterien",
+          "die Kriteriums",
+          "die Kriteriume"
+        ],
+        why: "W <i>Kriterium</i> końcówkę <i>-um</i> zastępuje <b>-en</b>: <i>Kriteri|um → Kriteri|en</i>, jak <i>Gremium → Gremien</i>. To najczęstszy wzorzec, ale nie jedyny (<i>Visum → Visa</i>)."
+      },
+      {
+        q: "W eseju „Die Methode ist veraltet” zamienia się w:",
+        opts: [
+          "Die Methode ist obsolet.",
+          "Die Methode ist absolut.",
+          "Die Methode ist obszön."
+        ],
+        why: "<b>obsolet</b> to latynizm zamiast <i>veraltet, überholt</i>. <i>absolut</i> znaczy „absolutny”, <i>obszön</i> „obsceniczny”."
+      },
+      {
+        q: "Krytyk nazywa zachowanie polityka „ordinär”. Co ma na myśli?",
+        opts: [
+          "wulgarne, prostackie",
+          "zwyczajne, normalne",
+          "uporządkowane, regularne"
+        ],
+        why: "W ocenie zachowania <b>ordinär</b> znaczy „wulgarny”, tak jak polskie <i>ordynarny</i>. Istnieje też znaczenie „pospolity, lichy” (<i>ganz ordinäres Papier</i>), ale tu kontekst je wyklucza."
+      },
+      {
+        q: "Uzupełnij: „Der Antrag wurde in mehreren ___ der Universität diskutiert.”",
+        hint: "liczba mnoga od das Gremium",
+        why: "<b>Gremien</b>: <i>-um</i> zastępuje <i>-en</i> (<i>Gremi|um → Gremi|en</i>), a nie polskie <i>-a</i>. Tu to celownik liczby mnogiej, ale forma się nie zmienia."
+      },
+      {
+        q: "Uzupełnij: „Die ___ seiner Argumentation überzeugte die Kommission.”",
+        hint: "rzeczownik od konsistent",
+        why: "<b>Konsistenz</b>: przymiotniki na <i>-ent</i> dają rzeczowniki żeńskie na <i>-enz</i>, jak <i>ambivalent → Ambivalenz</i>. Tu znaczy „spójność”, nie konsystencję."
+      },
+      {
+        q: "Uzupełnij: w pierwszej luce latynizm oznaczający „przesłankę”, w drugiej przymiotnik znaczący „bez mocy, nieważny”.",
+        tr: "Przesłanka, na której opiera się całe badanie, okazała się fałszywa; wyniki są więc nieważne.",
+        why: "<b>Prämisse</b> (przyjmowane są też <i>Annahme</i>, <i>Grundannahme</i>, <i>Voraussetzung</i>) i <b>hinfällig</b> (albo <i>ungültig</i>): unieważniony wynik jest <i>hinfällig</i>, a <i>obsolet</i> mówi tylko, że coś przestarzało. <i>Prämisse</i> jest rodzaju żeńskiego: <i>die Prämisse, auf der</i>."
+      },
+      {
+        q: "Połącz każdy latynizm z jego znaczeniem.",
+        pairs: [
+          "przestarzały, wyszły z użycia",
+          "ugodowy, skłonny do kompromisu",
+          "ambiwalentny, pełen sprzecznych uczuć",
+          "marginalny, drugorzędny"
+        ]
+      },
+      {
+        q: "Przetłumacz: „Tezy nie da się zweryfikować empirycznie.”, w sensie: dane nie pozwalają potwierdzić, że jest prawdziwa (die These, empirisch, verifizierbar)",
+        why: "<i>Die These ist empirisch nicht verifizierbar</i>. Przyjmowane są też <i>lässt sich nicht verifizieren</i>, <i>ist nicht zu verifizieren</i>. Nie pasuje natomiast <i>überprüfbar</i>: <i>überprüfen</i> to „sprawdzić” i nie zakłada potwierdzenia, a <i>verifizieren</i> to ustalić, że coś jest prawdą."
+      },
+      {
+        tr: "Przesłanka badania jest kontrowersyjna. Krytycy uważają wyniki za nieweryfikowalne, a wyciągnięte z nich wnioski za pochopne.",
+        why: "W <i>Prämisse</i> akcent pada na <b>mis</b>; w <i>verifizierbar</i> akcent pada na <b>zier</b>; w <i>Konsequenzen</i> akcent pada na <b>quen</b>, a <b>qu</b> wymawia się [kv]."
+      },
+      {
+        tr: "Zjawiska nie da się wyjaśnić jedną przyczyną.",
+        why: "W <i>Phänomen</i> akcent pada na <b>men</b>, z długim <b>e</b>; w <i>monokausal</i> akcent pada na <b>sal</b>; <b>ph</b> wymawia się [f]."
+      }
+    ]
+  },
+  "lesson:c2-u03-test": {
+    theme: "Sprawdzian",
+    title: "Test: Odcienie znaczeń",
+    objectives: [
+      "sprawdzić understatement, odmiany regionalne i Bildungssprache, z powtórką jednostek 1-3"
+    ],
+    theory: [
+      {
+        p: "Dwanaście pytań z całej jednostki, z powtórką przydawek imiesłowowych (jednostka 1) i Fremdwörter (jednostka 2). Próg zaliczenia to 70%. Nie zaglądaj do lekcji w trakcie odpowiadania: jeśli czegoś nie pamiętasz, lepiej wrócić i powtórzyć."
+      }
+    ],
+    exercises: [
+      {
+        q: "Uzupełnij przydawką imiesłowową: „Die von den Bürgern ___ Fragen blieben unbeantwortet.”",
+        hint: "imiesłów II od stellen, odmieniony",
+        why: "<b>gestellten</b>: imiesłów II w funkcji przydawki, ze słabą końcówką <i>-en</i> po rodzajniku <i>die</i> w liczbie mnogiej."
+      },
+      {
+        q: "Uzupełnij: „Die ___ für die Vergabe der Stipendien sind streng.”",
+        hint: "liczba mnoga od das Kriterium",
+        why: "<b>Kriterien</b>: <i>-um</i> zastępuje <i>-en</i> (<i>Kriteri|um → Kriteri|en</i>), nie polskie <i>kryteria</i>."
+      },
+      {
+        q: "Uzupełnij łagodzącą formułę: „Die Lage ist, ___ gesagt, angespannt.”",
+        hint: "„delikatnie mówiąc”",
+        why: "<b>gelinde gesagt</b> (także <i>milde</i> albo <i>vorsichtig gesagt</i>): rzeczywistość jest gorsza, niż mówi wybrane słowo."
+      },
+      {
+        q: "Uzupełnij: „Die ___ ihrer Gefühle war nicht zu übersehen.”",
+        hint: "rzeczownik od ambivalent",
+        why: "<b>Ambivalenz</b>: <i>-ent</i> przechodzi w <i>-enz</i>, rodzaj żeński."
+      },
+      {
+        q: "Po czternastogodzinnym locie, dwóch przesiadkach, zgubionym bagażu i nieprzespanej nocy koleżanka mówi: „Die Reise war etwas anstrengend.” Ton jest:",
+        opts: [
+          "understatementem: podróż była wyczerpująca",
+          "przesadą: podróż była spokojna",
+          "ironicznym komplementem dla linii lotniczej"
+        ],
+        why: "<i>etwas anstrengend</i> po takiej podróży to <b>understatement</b>: mówi się mniej, niż się myśli."
+      },
+      {
+        q: "W Grazu sprzedawca owoców proponuje ci „Marillen”. Co to jest?",
+        opts: [
+          "morele",
+          "borówki",
+          "śliwki"
+        ],
+        why: "<b>die Marille</b> to austriacyzm zamiast <i>die Aprikose</i>."
+      },
+      {
+        q: "Na szwajcarskim dworcu konduktor mówi: „Ihr Billett, bitte.” O co prosi?",
+        opts: [
+          "o bilet",
+          "o dowód osobisty",
+          "o bagaż"
+        ],
+        why: "<b>das Billett</b> to bilet w Szwajcarii; w Niemczech mówi się <i>die Fahrkarte</i> albo <i>das Ticket</i>."
+      },
+      {
+        q: "Które zdanie zawiera poprawną rozbudowaną przydawkę imiesłowową?",
+        opts: [
+          "Die von der Regierung geplanten Maßnahmen stoßen auf Kritik.",
+          "Die Maßnahmen von der Regierung geplanten stoßen auf Kritik.",
+          "Die geplanten von der Regierung Maßnahmen stoßen auf Kritik."
+        ],
+        why: "Rozbudowana przydawka stoi między rodzajnikiem a rzeczownikiem, a imiesłów tuż przed rzeczownikiem: <i>die [von der Regierung geplanten] Maßnahmen</i>."
+      },
+      {
+        q: "Które zdanie należy do języka wykształconych (Bildungssprache)?",
+        opts: [
+          "Die Befunde implizieren eine Revision der bisherigen These.",
+          "Aus den Befunden folgt, dass die alte Meinung nicht mehr stimmt.",
+          "Die Befunde zeigen, dass die alte These Quatsch ist."
+        ],
+        why: "Pierwsze używa latynizmów (<i>implizieren, Revision, These</i>) i stylu nominalnego, typowych dla rejestru wykształconych. Drugie jest neutralne, trzecie potoczne (<i>Quatsch</i>)."
+      },
+      {
+        q: "Połącz każde słowo z jego znaczeniem.",
+        pairs: [
+          "gremium, komisja",
+          "przesłanka",
+          "przytyk, szpila",
+          "gwara, dialekt"
+        ]
+      },
+      {
+        q: "Przetłumacz z przydawką imiesłowową: „Środki zaproponowane przez komisję są przestarzałe.” (vorschlagen, obsolet)",
+        why: "<i>Die von der Kommission vorgeschlagenen Maßnahmen sind obsolet</i>: rozbudowana przydawka stoi między <i>die</i> a <i>Maßnahmen</i>. Przyjmowane są też <i>veraltet</i> i <i>überholt</i>. Zdanie względne (<i>die Maßnahmen, die die Kommission vorgeschlagen hat</i>) jest poprawne, ale polecenie wymaga przydawki."
+      },
+      {
+        tr: "Środki zaproponowane przez komisję są, delikatnie mówiąc, kontrowersyjne.",
+        why: "W <i>vorgeschlagenen</i> akcent pada na <b>vor</b>; w <i>Kommission</i> akcent pada na <b>sion</b>; w <i>umstritten</i> akcent pada na <b>strit</b>."
       }
     ]
   }
