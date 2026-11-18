@@ -1,7 +1,23 @@
 {
-  "bundleHash": "491d89ad9b2d4d50251e2f160c342b33f30cf30acc10729a9d032b3804466945",
-  "findings": [],
+  "bundleHash": "a32290d52cc73f6a0388e1ec0f42cd504de2209e683da8d0cf425dacdf5f6d82",
+  "findings": [
+    {
+      "kind": "istruzione grammaticale",
+      "msg": "La spiegazione presenta l’indicativo dopo dass come una regola generale, ma il Konjunktiv può comparire nel discorso indiretto. Precisare che nelle frasi dell’esercizio si usa normalmente l’indicativo e che il congiuntivo italiano non richiede automaticamente il Konjunktiv tedesco.",
+      "path": "merged[3].checklist[1]"
+    },
+    {
+      "kind": "esempio non verificabile",
+      "msg": "Il modello riassume un testo esterno che non è incluso nel bundle. Non è quindi possibile verificare se ne riporti fedelmente tesi e argomenti.",
+      "path": "merged[5].model"
+    }
+  ],
   "lang": "it",
   "unit": "writing",
-  "verdict": "pass"
+  "verdict": "fail",
+  "archived": {
+    "decision": "N2 (Q-C1-D8 A extended): round 5 has no concrete findings: the dass note is a precision on an edge case the exercise does not use; the C1 summary cannot be checked because the source reading is outside the bundle, a tool limit",
+    "date": "2026-11-18",
+    "bundleHash": "a32290d52cc73f6a0388e1ec0f42cd504de2209e683da8d0cf425dacdf5f6d82"
+  }
 }
