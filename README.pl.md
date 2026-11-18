@@ -28,8 +28,8 @@ Wyjaśnienia są po polsku i wprost mówią, gdzie niemiecki działa inaczej ni�
 **Zalecane** (pełna funkcjonalność, bez ograniczeń przeglądarki):
 
 ```bash
-git clone git@github.com:AndreaBonn/impara-tedesco.git
-cd impara-tedesco
+git clone git@github.com:AndreaBonn/lerne-deutsch.git
+cd lerne-deutsch
 npm run serve
 ```
 

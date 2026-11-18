@@ -10,7 +10,7 @@ The service worker version constant (`SW_VERSION` in `sw.js`) identifies a relea
 
 ## Reporting a Vulnerability
 
-Report through [GitHub Security Advisories](https://github.com/AndreaBonn/impara-tedesco/security/advisories/new).
+Report through [GitHub Security Advisories](https://github.com/AndreaBonn/lerne-deutsch/security/advisories/new).
 
 Please include:
 

@@ -4,7 +4,7 @@
 
 Un corso di tedesco statico, dall'A1 al C2, che gira tutto nel browser: niente account, niente server, niente build, niente da installare.
 
-![CI](https://github.com/AndreaBonn/impara-tedesco/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/AndreaBonn/lerne-deutsch/actions/workflows/ci.yml/badge.svg)
 ![Codice: MIT](https://img.shields.io/badge/codice-MIT-blue)
 ![Contenuto: CC BY--SA 4.0](https://img.shields.io/badge/contenuto-CC%20BY--SA%204.0-blue)
 ![Node](https://img.shields.io/badge/node-%3E%3D24-339933)
@@ -14,7 +14,7 @@ Un corso di tedesco statico, dall'A1 al C2, che gira tutto nel browser: niente a
 
 Il programma di grammatica sale livello per livello dall'A1 al C2. Il tedesco è sempre la lingua che si studia; le spiegazioni esistono in cinque lingue (italiano, inglese americano, spagnolo, francese, polacco) e si cambiano quando si vuole, senza perdere i progressi. Tutto quello che lo studente fa resta nel suo browser. Dal dispositivo possono uscire due cose, e nessuna delle due parte finché non è lui ad accenderla: la registrazione della voce mandata al riconoscimento vocale, e una risposta che il corso ha già rifiutato, mandata a un modello linguistico che lo studente paga con la propria chiave.
 
-**Online:** [andreabonn.github.io/impara-tedesco](https://andreabonn.github.io/impara-tedesco/)
+**Online:** [andreabonn.github.io/lerne-deutsch](https://andreabonn.github.io/lerne-deutsch/)
 
 ## Indice
 
@@ -150,8 +150,8 @@ Node 24 e non 20: `npm test` passa il glob `tests/unit/**/*.test.mjs` direttamen
 1. Clona il repository.
 
    ```bash
-   git clone git@github.com:AndreaBonn/impara-tedesco.git
-   cd impara-tedesco
+   git clone git@github.com:AndreaBonn/lerne-deutsch.git
+   cd lerne-deutsch
    ```
 
 2. Installa le dipendenze di sviluppo. Se ti interessa solo usare il corso, salta questo passo.
@@ -317,7 +317,7 @@ I font sono lavoro di terzi sotto SIL Open Font License, e i loro testi viaggian
 
 ## Supporta il progetto
 
-Se il corso ti è stato utile, una stella su [GitHub](https://github.com/AndreaBonn/impara-tedesco) aiuta altri studenti a trovarlo.
+Se il corso ti è stato utile, una stella su [GitHub](https://github.com/AndreaBonn/lerne-deutsch) aiuta altri studenti a trovarlo.
 
 Deutsch lernen è gratuito. Se vuoi contribuire, puoi lasciare un'offerta tramite PayPal. L'importo lo scegli tu ed è del tutto facoltativo.
 

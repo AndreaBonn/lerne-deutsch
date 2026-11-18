@@ -2,7 +2,7 @@
    The not-found page, opened the way GitHub Pages serves it.
 
    404.html refers to everything from the root, under the prefix the site is
-   published at (`/impara-tedesco/...`). That is what makes it correct at
+   published at (`/lerne-deutsch/...`). That is what makes it correct at
    any depth Pages hands it out at — and what makes it unopenable from the
    local server, where that prefix is not a directory. Opened by hand it
    arrives without its stylesheet, which looks like a bug and is not one.
@@ -20,7 +20,7 @@
 const { test, expect } = require("@playwright/test");
 
 /** The prefix the site is published at, as it appears inside 404.html. */
-const PREFIKS = "/impara-tedesco/";
+const PREFIKS = "/lerne-deutsch/";
 
 /** The five languages of explanation, in the order of I18n.LANGS. */
 const JEZYKI = ["it", "en", "es", "fr", "pl"];

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Deutsch lernen · GitHub social preview</title>
+
+<!-- The GitHub social preview (1280x640, uploaded by hand in the repository
+     settings). Same rule as og-template.html: painted with the course's own
+     stylesheet, so palette and fonts cannot drift from the product.
+
+     The screenshot on the right is NOT a file in the repository.
+     build_social.mjs photographs the real start screen and injects its path
+     into #shot, so the card shows the course as it is today. -->
+<link rel="stylesheet" href="../assets/css/app.css">
+
+<style>
+  body{
+    width:1280px; height:640px; margin:0;
+    overflow:hidden;
+    display:flex;
+    background:var(--paper);
+  }
+
+  /* The brand panel, the same warm charcoal ramp as the rail. */
+  .sp__panel{
+    position:relative;
+    width:580px; flex:0 0 580px;
+    padding:72px 64px 0 80px;
+    box-sizing:border-box;
+    background:linear-gradient(180deg, oklch(0.330 0.010 62), oklch(0.205 0.008 62));
+    color:var(--paper);
+  }
+
+  /* The flag as an edge, black-red-gold, as on the link preview. */
+  .sp__rule{
+    position:absolute; left:0; top:0; bottom:0; width:10px;
+    display:flex; flex-direction:column;
+  }
+  .sp__rule > span{flex:1;}
+  .sp__rule > span:nth-child(1){background:var(--tri-black);}
+  .sp__rule > span:nth-child(2){background:var(--tri-red);}
+  .sp__rule > span:nth-child(3){background:var(--tri-gold);}
+
+  .sp__brand{display:flex; align-items:center; gap:18px;}
+  .sp__brand img{width:58px; height:58px; display:block;}
+  .sp__brand b{font-family:var(--display); font-size:30px; font-weight:600;}
+
+  .sp__title{
+    margin:84px 0 0;
+    font-family:var(--display);
+    font-size:54px; font-weight:700; line-height:1.04;
+    letter-spacing:-.015em;
+    color:var(--paper);
+  }
+  .sp__title span{color:var(--tri-gold);}
+
+  .sp__lead{
+    margin:24px 0 0;
+    font-family:var(--sans);
+    font-size:22px; line-height:1.5;
+    color:oklch(0.880 0.008 80);
+  }
+
+  .sp__pills{
+    position:absolute; left:80px; bottom:62px;
+    display:flex; gap:12px;
+    font-family:var(--sans); font-size:17px; font-weight:700;
+  }
+  .sp__pills span{padding:9px 16px; border-radius:999px;}
+  .sp__pills span:nth-child(1){background:var(--tri-black); color:var(--paper);}
+  .sp__pills span:nth-child(2){background:var(--tri-red); color:var(--paper);}
+
+  .sp__stage{flex:1; position:relative;}
+  .sp__shot{
+    position:absolute; left:48px; top:56px;
+    width:596px; height:528px;
+    border-radius:18px; overflow:hidden;
+    border:1px solid oklch(0.880 0.008 80);
+    box-shadow:0 24px 60px oklch(0.211 0.007 67 / .18);
+  }
+  .sp__shot img{display:block; width:auto; height:100%;}
+</style>
+</head>
+<body>
+
+<section class="sp__panel">
+  <div class="sp__rule" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="sp__brand">
+    <img src="../assets/icons/icon-192.png" alt="">
+    <b>Deutsch lernen</b>
+  </div>
+  <h1 class="sp__title">Learn German<br><span>in your browser.</span></h1>
+  <p class="sp__lead">A free course from A1 to C2, with explanations in
+    five languages. No account, no server, and it works offline.</p>
+  <p class="sp__pills"><span>A1 to C2</span><span>No account</span></p>
+</section>
+
+<section class="sp__stage">
+  <div class="sp__shot"><img id="shot" alt=""></div>
+</section>
+
+</body>
+</html>

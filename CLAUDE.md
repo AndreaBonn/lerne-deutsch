@@ -483,7 +483,7 @@ jednemu kursowi wyczyścić drugiemu cache. `activate` w `sw.js` kasuje wyłącz
 Z tego samego powodu stan ucznia leży pod kluczem `linguai.tedesco.v1` (zob. „Czego nie zmieniać"):
 profil włoski (`linguai.italiano.*`) w tym samym `localStorage` nie jest czytany, importowany
 ani kasowany. Marka kursu to **„Deutsch lernen"** (manifest, szyna, `og:*`, ścieżka
-`/impara-tedesco/`). Strategie:
+`/lerne-deutsch/`). Strategie:
 
 - **Nagrania** — cache-first, bez unieważniania. Nazwa pliku jest skrótem treści zdania,
   więc plik pod danym adresem nigdy nie zmienia zawartości; poprawione zdanie dostaje
@@ -670,13 +670,13 @@ a kurs działa dalej.
 pliku wyglądają na przeoczenie i są decyzją.
 
 **Ani jednej ścieżki względnej.** Pages odpowiada tym plikiem na KAŻDY nieznany adres,
-zachowując głębokość, o którą poprosił odwiedzający: `/impara-tedesco/a/b/c/nic` dostaje
+zachowując głębokość, o którą poprosił odwiedzający: `/lerne-deutsch/a/b/c/nic` dostaje
 te bajty, a przeglądarka nadal uważa, że stoi w `/a/b/c/`. Względny `href` rozwiązałby się
 więc względem katalogu, którego nie ma. Wszystko idzie od korzenia, spod prefiksu z pola
 `homepage` w `package.json`, i tego pilnuje `node scripts/check_404.mjs`.
 
 Cena jest realna: **otwarty przez `scripts/serve.mjs` ten plik przychodzi bez arkusza
-stylów**, bo `/impara-tedesco/` nie jest ścieżką w drzewie roboczym. To nie jest usterka.
+stylów**, bo `/lerne-deutsch/` nie jest ścieżką w drzewie roboczym. To nie jest usterka.
 Bramka czyta atrybuty zamiast ładować stronę, a `tests/dom/notfound.spec.js` przepisuje
 prefiks przed otwarciem - i dopiero dzięki temu może sprawdzić rzecz najważniejszą:
 że po przepisaniu arkusz NAPRAWDĘ się wczytuje, czyli że ścieżki wskazują na pliki,

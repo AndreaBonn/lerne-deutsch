@@ -1,9 +1,9 @@
 {
-  "name": "impara-tedesco",
+  "name": "lerne-deutsch",
   "version": "2.0.0",
   "private": true,
   "description": "Static German course. The manifest exists for the test toolchain only: the application itself has no runtime dependency and no build step.",
-  "homepage": "https://andreabonn.github.io/impara-tedesco/",
+  "homepage": "https://andreabonn.github.io/lerne-deutsch/",
   "scripts": {
     "test": "node --test \"tests/unit/**/*.test.mjs\"",
     "test:dom": "playwright test",
