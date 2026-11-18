@@ -452,7 +452,7 @@ LINGUAI.addUnits("C2", [
       titleIt: "Test: Plural und Wortbildung",
       exercises: [
         { t: "fill", a: ["Bänke", "Sitzbänke"] },
-        { t: "fill", a: ["Streitigkeiten"] },
+        { t: "fill", a: ["Streitigkeiten", "Streite"] },
         { t: "fill", a: ["Gesundheitsamt"] },
         { t: "fill", a: ["Besonnenheit"] },
         { t: "mcq", a: 0 },

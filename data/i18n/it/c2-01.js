@@ -900,7 +900,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa: «Die ___ zwischen Vermieter und Mieter landeten schließlich vor Gericht.» (le liti)",
         hint: "plurale usuale di der Streit",
-        why: "<b>Streitigkeiten</b>: il plurale <i>Streite</i> esiste, ma è raro; di norma si usa <i>Streitigkeiten</i>."
+        why: "<b>Streitigkeiten</b>: di norma il plurale di <i>Streit</i> è <i>Streitigkeiten</i>; si accetta anche <i>Streite</i>, corretto ma raro."
       },
       {
         q: "Completa: «Das ___ hat die Schließung des Restaurants angeordnet.»",
