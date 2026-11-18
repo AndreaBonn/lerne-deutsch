@@ -1,20 +1,25 @@
 {
-  "bundleHash": "edc9302b59785f141931722aee4ebaadd01eea6572635d318eeafdc82d7a7137",
+  "bundleHash": "c0d7cb6ddf38071095c106005300ca1ac3531f1f05ecd3c14e14b8dcc0ab1c76",
   "findings": [
     {
-      "kind": "coerenza temporale",
-      "msg": "«Letzten Dienstag» colloca la scomparsa nella settimana appena trascorsa, ma il ritrovamento avviene due settimane dopo. Sostituire l'apertura con «Vor einigen Wochen» oppure indicare un intervallo compatibile prima del ritrovamento.",
-      "path": "neutral[8].sentences[1]"
-    },
-    {
-      "kind": "rektion",
-      "msg": "La spiegazione omette il complemento oggetto della costruzione tedesca: «etwas erinnert jemanden an etwas» corrisponde a «quelque chose rappelle quelque chose à quelqu’un». Aggiungere un esempio completo, distinguendolo da «sich an etwas erinnern».",
-      "path": "merged[18].lex[8]"
-    },
-    {
       "kind": "traduzione",
-      "msg": "Nel brano «einer Vorgesetzten» designa una superiore donna, mentre «supérieur» è maschile. Usare «supérieure hiérarchique» oppure indicare entrambe le forme e chiarire quella del contesto.",
-      "path": "merged[20].lex[8]"
+      "msg": "La nota esclude erroneamente il significato di «pratique» per Praxis. Nel contesto indica un cabinet médical, ma Praxis può significare anche pratica: eliminare «pas la pratique» e distinguere i due usi.",
+      "path": "merged[4].gloss[1]"
+    },
+    {
+      "kind": "lessico e rezione",
+      "msg": "La glossa attribuisce «+ datif» alla costruzione francese «tenir compte de», mentre il dativo è richiesto dal complemento tedesco: scrivere «tenir compte de ; jemandem/etwas Rechnung tragen (+ datif)».",
+      "path": "merged[19].gloss[10]"
+    },
+    {
+      "kind": "risposta ambigua",
+      "msg": "La risposta classificata come falsa non è esclusa dal testo: il capo può non aver inserito il registratore e avere comunque registrato l'intervista con un altro dispositivo. Chiedere se ha acceso il registratore durante l'intervista.",
+      "path": "neutral[15].questions[1]"
+    },
+    {
+      "kind": "risposta ambigua",
+      "msg": "La risposta classificata come falsa non è esclusa dal testo: la famiglia decide di attendere un anno, ma intende anche chiedere subito informazioni se si libera un appartamento più grande nello stesso edificio. Precisare «sofort aufs Land zu ziehen» è escluso, ma la domanda finale dovrebbe distinguere chiaramente il rinvio della decisione dall'eventuale richiesta al proprietario.",
+      "path": "neutral[13].questions[2]"
     }
   ],
   "lang": "fr",
