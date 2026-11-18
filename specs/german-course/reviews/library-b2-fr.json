@@ -1,0 +1,28 @@
+{
+  "bundleHash": "77e4e443f4a797de7e9006af5d52b97ec2e2a4d82cdb124910acf705bcd81b08",
+  "findings": [
+    {
+      "kind": "accuratezza linguistica",
+      "msg": "Il testo usa «Umgangssprache» come categoria che comprenderebbe tutte le varietà regionali appena descritte. Dialetto e lingua colloquiale sono però categorie distinte: lo Schweizerdeutsch, per esempio, comprende dialetti e non coincide con la Umgangssprache. Distinguere Standardsprache, Umgangssprache e Dialekt, chiarendo che possono sovrapporsi.",
+      "path": "neutral[0].sentences[18]"
+    },
+    {
+      "kind": "generalizzazione grammaticale",
+      "msg": "L'uso di «sein» con questi verbi varia secondo la regione e il parlante; la frase presenta invece la forma come uniforme in tutto il Sud. Formulare, per esempio: «In Teilen des süddeutschen Sprachraums bildet man das Perfekt ... häufig mit sein».",
+      "path": "neutral[0].sentences[10]"
+    },
+    {
+      "kind": "coerenza della verifica",
+      "msg": "La risposta attesa riprende senza precisazioni l'affermazione che dalla lingua standard si passi facilmente alla Umgangssprache, senza distinguere quest'ultima dai dialetti discussi nel testo. Adeguare domanda e risposta dopo aver chiarito la distinzione nel brano.",
+      "path": "neutral[0].questions[3]"
+    }
+  ],
+  "lang": "fr",
+  "unit": "library-b2",
+  "verdict": "fail",
+  "archived": {
+    "decision": "N2 (Q-C1-D8 A extended): round 2 only neutral findings on core sentences and questions, round 1 claim beruhen auf plus accusative factually wrong, beruhen auf takes the dative",
+    "date": "2026-11-18",
+    "bundleHash": "77e4e443f4a797de7e9006af5d52b97ec2e2a4d82cdb124910acf705bcd81b08"
+  }
+}
