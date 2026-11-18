@@ -8,20 +8,13 @@ import { scanValues } from './neutral-letters.mjs';
 import { buildBundle, buildModuleBundle, hashBundle } from './review-bundle.mjs';
 
 import { moduleDefinition, moduleCoreErrors, moduleOverlayErrors } from './porting-modules.mjs';
+import { checkAll, formatResult } from './porting-all.mjs';
 
 const ROOT = fileURLToPath(new URL('../', import.meta.url));
 export const LANGUAGES = ['it', 'en', 'es', 'fr', 'pl'];
 export const ADVANCED_LEVELS = ['B2', 'C1', 'C2'];
 const STAGES = ['core', ...LANGUAGES, 'audio', 'review', 'human'];
 const LEVEL_STAGES = ['core', ...LANGUAGES, 'review'];
-/* --all, the CI gate (Q7 A): structural stages decide the exit code, review
-   is printed as a report. The second judge is a model that may not answer,
-   and a gate that is red by construction stops being read. */
-const ALL_STAGES = ['core', ...LANGUAGES, 'audio', 'human'];
-const ALL_MODULES = { readings: ['readings-a', 'readings-b', 'readings-c'],
-  library: ['library-a1', 'library-a2', 'library-b1', 'library-b2', 'library-c1', 'library-c2'],
-  writing: ['writing'], conversations: ['conv-1', 'conv-2'], chat: ['chat'],
-  minimalPairs: ['phonetics'], interference: ['interference'] };
 const EXERCISE_TOLERANCE = 0.15;
 const HELP = `Usage: node scripts/check_porting.mjs [module ...] [--root <dir>] [--unit <id>]
   [--level <A1..C2>] [--stage core,it,en,es,fr,pl,audio,review,human] [--curriculum] [--all] [--help]
@@ -250,28 +243,6 @@ function checkModules({ root, course, target, ids, stages }) {
   return results;
 }
 
-function checkAll({ root, target }) {
-  const course = loadCourse(root);
-  const modules = Object.keys(target.secondary || {}).flatMap(key => ALL_MODULES[key] || []);
-  const results = [{ label: 'curriculum', errors: curriculumErrors(root, target) },
-    ...checkUnits({ root, course, target, options: {}, stages: ALL_STAGES }),
-    ...checkModules({ root, course, target, ids: modules, stages: ALL_STAGES })];
-  const reviewed = [...Object.keys(target.units).map(id => ({ id, module: false })),
-    ...modules.map(id => ({ id, module: true }))];
-  for (const { id, module } of reviewed) {
-    const { errors, notes } = reviewResult({ root, id, languages: LANGUAGES, module });
-    results.push({ label: `${id} review (report only)`, errors: [], report: errors, notes });
-  }
-  return results;
-}
-
-function formatResult({ label, errors, notes = [], report = [] }) {
-  if (errors.length) return `${label}: ${errors.join('; ')}`;
-  if (report.length) return `${label}: ${report.join('; ')}`;
-  if (!notes.length) return `${label}: pass`;
-  return `${label}: ${notes[0].startsWith('n/a') ? notes.join(', ') : `pass, archived (${notes.join(', ')})`}`;
-}
-
 function main() {
   const args = process.argv.slice(2);
   const ids = [];
@@ -295,7 +266,8 @@ function main() {
   if (stages.some(stage => !STAGES.includes(stage))) throw new Error('Invalid stage');
   const root = resolve(options.root || ROOT);
   const target = JSON.parse(readFileSync(join(root, 'scripts/porting-target.json'), 'utf8'));
-  const results = options.all ? checkAll({ root, target })
+  const results = options.all ? checkAll({ root, target, course: loadCourse(root),
+    checks: { curriculumErrors, checkUnits, checkModules, reviewResult } })
     : options.curriculum ? [{ label: 'curriculum', errors: curriculumErrors(root, target) }] : [];
   if (!options.all && (!options.curriculum || options.stage || options.unit)) {
     results.push(...(ids.length ? checkModules({ root, course: loadCourse(root), target, ids, stages })

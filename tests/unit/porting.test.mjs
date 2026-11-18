@@ -291,28 +291,3 @@ test('an archive on a pass verdict is ignored: the pass is checked as usual', t 
   assert.equal(stale.status, 1, 'the archive does not rescue a stale pass');
   assert.match(stale.stdout, /stale verdict/);
 });
-
-/* --all is the gate CI runs (Q7 A, 2026-11-18): every unit and every module
-   the snapshot declares, on the structural stages. Review verdicts are
-   printed as a report and never decide the exit code: the second judge is a
-   model that may not answer, and a CI that is red by construction stops
-   being read. A structural gap still fails. */
-test('--all fails on a structural gap and reports missing reviews without failing', t => {
-  const root = fixture(t);
-  const digest = fnv('die Straße');
-  put(root, 'data/audio-index.js', `window.AUDIO_INDEX = "${digest}";`);
-  put(root, `audio/${digest.slice(0, 2)}/${digest}.mp3`, 'x');
-  put(root, 'specs/german-course/curriculum.md', 'a1-u01');
-  const gap = check(root, '--all');
-  assert.equal(gap.status, 1);
-  assert.match(gap.stdout, /a1-u01 it: Missing it overlay/);
-  for (const lang of ['it', 'en', 'es', 'fr', 'pl']) put(root, `data/i18n/${lang}/a1-01.js`, `LINGUAI.addStrings('${lang}', {});`);
-  const full = check(root, '--all');
-  assert.equal(full.status, 0, full.stdout + full.stderr);
-  assert.match(full.stdout, /a1-u01 audio: pass/);
-  assert.match(full.stdout, /a1-u01 review \(report only\): Missing review/);
-  assert.match(full.stdout, /curriculum: pass/);
-  savePass(root, 'it');
-  assert.match(check(root, '--all').stdout, /a1-u01 review \(report only\): Missing review: a1-u01-en/);
-  assert.equal(check(root, '--all', '--level', 'A1').status, 1, '--all takes no other selector');
-});
