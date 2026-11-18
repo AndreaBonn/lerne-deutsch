@@ -1,0 +1,83 @@
+{
+  "bundleHash": "0b9a678ad4f20a607300ec496f1df94bb6b2422e67587f7311775bf7605a8ce7",
+  "findings": [
+    {
+      "kind": "pronuncia",
+      "msg": "L'accento principale di «unproblematisch» cade su «ma», non su «un». Correggere l'indicazione dell'accento.",
+      "path": "merged.lessons[0].exercises[9].why"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "L'accento principale di «monokausal» cade su «kau», non su «sal», come indicato correttamente anche nell'esempio grammaticale. Correggere la spiegazione.",
+      "path": "merged.lessons[2].exercises[9].why"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "La regola sul plurale è falsa: «Gremium → Gremien» e «Kriterium → Kriterien» sostituiscono «-ium» con «-ien», mentre «Spektrum → Spektren» perde «-um» e aggiunge «-en». Inoltre esistono plurali in «-a» e «-s». Presentare i modelli con esempi, senza una regola universale.",
+      "path": "merged.lessons[2].grammar.note"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "L'esercizio generalizza erroneamente il plurale in «-en» a tutti i nomi neutri in «-um». Spiegare invece il modello specifico «Kriterium → Kriterien» e indicare che esistono altri modelli.",
+      "path": "merged.lessons[2].exercises[0].why"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "«Gremien» non si forma aggiungendo «-en» a «Gremium»: «-ium» diventa «-ien». Correggere la spiegazione.",
+      "path": "merged.lessons[2].exercises[3].why"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "Anche qui la regola universale del plurale in «-en» è errata. Spiegare la trasformazione specifica «Kriterium → Kriterien».",
+      "path": "merged.test.exercises[1].why"
+    },
+    {
+      "kind": "risposta",
+      "msg": "«Obsolet» significa soprattutto «superato» o «caduto in disuso» e non segue necessariamente dal fatto che una premessa sia falsa. Per risultati invalidati sono più adatti «hinfällig» o «ungültig»; adeguare anche la traduzione italiana e la spiegazione.",
+      "path": "merged.lessons[2].exercises[5]"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "La consegna chiede un participio, ma tra le risposte ammesse figurano gli aggettivi «glücklich» e «reibungslos». Chiedere una parola che descriva l'esito della presentazione, oppure limitare le risposte ai participi.",
+      "path": "merged.lessons[0].exercises[5].q"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "«Nicht unbedingt» significa «non necessariamente» e non è di per sé una litote: la consegna classifica erroneamente tutte le coppie come litoti. Sostituire «ogni litote» con «ogni espressione».",
+      "path": "merged.lessons[0].exercises[6].q"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "La spiegazione attribuisce a «ja» e «mir» il rovesciamento del significato dell'aggettivo. Le particelle possono rafforzare il coinvolgimento o l'esclamazione, ma l'interpretazione ironica dipende dal contesto e dall'intonazione. Riformulare senza attribuire loro un effetto automatico.",
+      "path": "merged.lessons[0].grammar.note"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "«Prendere in braccio» non si limita letteralmente a bambini o animali: può riferirsi anche a un adulto. Eliminare la restrizione.",
+      "path": "merged.lessons[0].theory[3].trap"
+    },
+    {
+      "kind": "varietà",
+      "msg": "La frase «non appartiene a nessuno standard» presenta come errore assoluto una combinazione di regionalismi. È preferibile raccomandare coerenza nella varietà scelta, precisando che l'uso misto può comparire in contesti reali e non rende automaticamente scorretta la frase.",
+      "path": "merged.lessons[1].theory[3].trap"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "La regola secondo cui nelle risposte si usa lo standard della Germania contraddice il riconoscimento delle tre varietà standard e il consiglio successivo di produrne una coerentemente. Consentire anche risposte standard austriache e svizzere, salvo esercizi che chiedano esplicitamente la forma tedesca di Germania.",
+      "path": "merged.lessons[1].grammar.note"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Die Untertreibung» significa «la sottovalutazione» o «la minimizzazione»; «eufemismo» indica una figura distinta e non è un equivalente generale. Correggere la traduzione.",
+      "path": "merged.lessons[0].vocab[2].tr"
+    },
+    {
+      "kind": "esercizio",
+      "msg": "Le risposte accettate includono frasi relative, benché la consegna richieda un attributo participiale. Escludere le relative dalle soluzioni oppure modificare la consegna per ammettere esplicitamente entrambe le costruzioni.",
+      "path": "merged.test.exercises[10]"
+    }
+  ],
+  "lang": "it",
+  "unit": "c2-u03",
+  "verdict": "fail"
+}
