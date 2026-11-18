@@ -1228,7 +1228,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "A Vienna si dice Paradeiser invece di Tomaten ed Erdäpfel invece di Kartoffeln. Chi fa la spesa per la prima volta in Austria non deve quindi stupirsene.",
-        why: "In <i>Paradeiser</i> l'accento cade su <b>dei</b>; in <i>Erdäpfel</i> l'accento cade su <b>Erd</b>; in <i>Österreich</i> la <b>Ö</b> è lunga e <b>eich</b> si pronuncia [aɪç]."
+        why: "In <i>Paradeiser</i> l'accento cade su <b>dei</b>; in <i>Erdäpfel</i> l'accento cade su <b>Erd</b>; in <i>Österreich</i> la <b>Ö</b> è lunga e la sillaba finale <b>reich</b> si pronuncia [ʁaɪ̯ç]."
       },
       {
         tr: "Parla dialetto, ma capisce anche la lingua standard.",
@@ -1248,11 +1248,11 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "La lingua dei saggi",
-        p: "La <strong>Bildungssprache</strong> è il registro della saggistica, dell'università e del giornalismo colto. Accanto al lessico tedesco usa molti <strong>latinismi</strong> (e grecismi): <em>die These, die Prämisse, das Phänomen, das Kriterium, obsolet, konsistent, ambivalent, verifizieren, implizieren</em>. Spesso esiste un equivalente tedesco (<em>veraltet</em> per <em>obsolet</em>, <em>überprüfen</em> per <em>verifizieren</em>), ma il latinismo è più preciso o più tecnico, e in un saggio è la scelta attesa."
+        p: "La <strong>Bildungssprache</strong> è il registro della saggistica, dell'università e del giornalismo colto. Accanto al lessico tedesco usa molti <strong>latinismi</strong> (e grecismi): <em>die These, die Prämisse, das Phänomen, das Kriterium, obsolet, konsistent, ambivalent, verifizieren, implizieren</em>. Spesso esiste un equivalente tedesco (<em>veraltet</em> per <em>obsolet</em>, <em>bestätigen</em> per <em>verifizieren</em>), ma il latinismo è più preciso o più tecnico, e in un saggio è la scelta attesa."
       },
       {
         h: "Plurali e derivati dei Fremdwörter",
-        p: "Molti nomi neutri in <em>-um</em> sostituiscono <em>-um</em> con <strong>-en</strong>: <em>das Gremium → die Gremien</em>, <em>das Kriterium → die Kriterien</em>, <em>das Spektrum → die Spektren</em>, <em>das Museum → die Museen</em>. Non è l'unico modello: <em>das Visum</em> fa <em>die Visa</em> (o <em>Visen</em>), <em>das Praktikum</em> fa <em>die Praktika</em>, e qualche parola entrata di recente prende la <em>-s</em>. Il plurale si controlla parola per parola. I verbi in <em>-ieren</em> danno nomi in <em>-ation</em> o <em>-ierung</em> (<em>verifizieren → die Verifikation, die Verifizierung</em>); gli aggettivi in <em>-ent</em> e <em>-ant</em> danno nomi in <em>-enz</em> e <em>-anz</em>: <em>konsistent → die Konsistenz</em>, <em>ambivalent → die Ambivalenz</em>, <em>tolerant → die Toleranz</em>. Questi nomi sono femminili."
+        p: "In molti nomi neutri in <em>-um</em> la desinenza <em>-um</em> cade e al suo posto entra <strong>-en</strong>: <em>Gremi|um → Gremi|en</em>, <em>Kriteri|um → Kriteri|en</em>, <em>Spektr|um → Spektr|en</em>, <em>Muse|um → Muse|en</em>. Non è l'unico modello: <em>das Visum</em> fa <em>die Visa</em> (o <em>Visen</em>), <em>das Praktikum</em> fa <em>die Praktika</em>, e qualche parola entrata di recente prende la <em>-s</em>. Il plurale si controlla parola per parola. I verbi in <em>-ieren</em> danno nomi in <em>-ation</em> o <em>-ierung</em> (<em>verifizieren → die Verifikation, die Verifizierung</em>); gli aggettivi in <em>-ent</em> e <em>-ant</em> danno nomi in <em>-enz</em> e <em>-anz</em>: <em>konsistent → die Konsistenz</em>, <em>ambivalent → die Ambivalenz</em>, <em>tolerant → die Toleranz</em>. Questi nomi sono femminili."
       },
       {
         contrast: "Per un italiano la Bildungssprache è il registro più trasparente del tedesco: <em>Prämisse, Konsequenz, obsolet, ambivalent</em> si capiscono subito. Il rischio sta nei <strong>falsi amici</strong>: <em>ordinär</em>, detto di persone, significa «volgare», non «ordinario»; <em>die Konfession</em> è la confessione religiosa, mentre la confessione dei peccati è <em>die Beichte</em>. E il plurale latino non segue l'italiano: <em>die Kriterien</em>, non <em>Kriteria</em>."
@@ -1266,12 +1266,12 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Latinismi, plurali e derivati",
-      note: "Molti nomi in <b>-um</b> sostituiscono <i>-um</i> con <b>-en</b> (<i>Gremien, Kriterien, Spektren</i>), ma non tutti (<i>Visa, Praktika</i>). Aggettivi in <b>-ent/-ant</b>: nome femminile in <b>-enz/-anz</b> (<i>Konsistenz, Ambivalenz</i>). Verbi in <b>-ieren</b>: nome in <b>-ation</b> o <b>-ierung</b>.",
+      note: "In molti nomi in <b>-um</b> la desinenza <i>-um</i> cade e al suo posto entra <b>-en</b> (<i>Gremi|um → Gremi|en, Spektr|um → Spektr|en</i>), ma non in tutti (<i>Visa, Praktika</i>): il plurale va imparato con la parola. Aggettivi in <b>-ent/-ant</b>: nome femminile in <b>-enz/-anz</b> (<i>Konsistenz, Ambivalenz</i>). Verbi in <b>-ieren</b>: nome in <b>-ation</b> o <b>-ierung</b>.",
       table: {
         head: ["latinismo", "equivalente tedesco", "italiano"],
         rows: [
           ["obsolet", "veraltet, überholt", "superato, obsoleto"],
-          ["verifizieren", "überprüfen, bestätigen", "verificare"],
+          ["verifizieren", "als richtig bestätigen", "verificare, accertare la verità"],
           ["implizieren", "mit sich bringen", "implicare, comportare"],
           ["die Prämisse", "die Voraussetzung", "la premessa"],
           ["das Gremium, die Gremien", "der Ausschuss", "l'organo collegiale"],
@@ -1355,7 +1355,7 @@ LINGUAI.addStrings("it", {
       },
       {
         q: "Traduci: «La tesi non è verificabile empiricamente.» (die These, empirisch, verifizierbar)",
-        why: "<i>Die These ist empirisch nicht verifizierbar</i>. Si accettano anche <i>lässt sich nicht verifizieren</i>, <i>ist nicht zu verifizieren</i> e l'equivalente tedesco <i>überprüfbar</i> / <i>überprüfen</i>."
+        why: "<i>Die These ist empirisch nicht verifizierbar</i>. Si accettano anche <i>lässt sich nicht verifizieren</i>, <i>ist nicht zu verifizieren</i>. Non vale invece <i>überprüfbar</i>: <i>überprüfen</i> significa «controllare» e non implica la conferma, mentre <i>verifizieren</i> significa accertare che qualcosa sia vero."
       },
       {
         tr: "La premessa dello studio è controversa. I critici ritengono i risultati non verificabili e le conseguenze che ne sono state tratte affrettate.",
@@ -1400,13 +1400,13 @@ LINGUAI.addStrings("it", {
         why: "<b>Ambivalenz</b>: <i>-ent</i> diventa <i>-enz</i>, femminile."
       },
       {
-        q: "Dopo un volo di quattordici ore con due scali una collega dice: «Die Reise war etwas anstrengend.» Il tono è:",
+        q: "Dopo un volo di quattordici ore, due scali, un bagaglio smarrito e una notte senza dormire, una collega dice: «Die Reise war etwas anstrengend.» Il tono è:",
         opts: [
           "un understatement: il viaggio è stato estenuante",
           "un'esagerazione: il viaggio è stato tranquillo",
           "un complimento ironico alla compagnia aerea"
         ],
-        why: "<i>etwas anstrengend</i> dopo quattordici ore e due scali è un <b>understatement</b>: si dice meno di quanto si pensi."
+        why: "<i>etwas anstrengend</i> dopo un viaggio del genere è un <b>understatement</b>: si dice meno di quanto si pensi."
       },
       {
         q: "A Graz il fruttivendolo ti offre «Marillen». Che cosa sono?",

@@ -592,8 +592,7 @@ LINGUAI.addUnits("C2", [
               "Sie spricht mit einem leichten Schweizer Akzent",
               "Sie spricht mit leichtem Schweizer Akzent",
               "Sie spricht mit einem leichten schweizerischen Akzent",
-              "Sie spricht mit leichtem schweizerischem Akzent",
-              "Sie spricht mit einem leicht schweizerischen Akzent"
+              "Sie spricht mit leichtem schweizerischem Akzent"
             ]
           },
           {
@@ -653,10 +652,7 @@ LINGUAI.addUnits("C2", [
             a: [
               "Die These ist empirisch nicht verifizierbar",
               "Die These lässt sich empirisch nicht verifizieren",
-              "Die These ist empirisch nicht zu verifizieren",
-              "Die These ist empirisch nicht überprüfbar",
-              "Die These lässt sich empirisch nicht überprüfen",
-              "Die These ist empirisch nicht zu überprüfen"
+              "Die These ist empirisch nicht zu verifizieren"
             ]
           },
           {
