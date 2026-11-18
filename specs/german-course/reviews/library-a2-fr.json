@@ -1,0 +1,23 @@
+{
+  "bundleHash": "619be9f159926c44fe24029113ab9b59a93399775acb2eafd4ef811edbd16d51",
+  "findings": [
+    {
+      "kind": "Espressione ambigua",
+      "msg": "«Mit zwei Koffern und einem Bett» può far capire che il narratore sia arrivato portando con sé anche un letto. Per distinguere i bagagli dall’alloggio, scrivere per esempio: «Ich bin im September mit zwei Koffern nach Göttingen gekommen. Ich hatte ein Bett in einer Jugendherberge.»",
+      "path": "neutral[0].sentences[0]"
+    },
+    {
+      "kind": "Genere dei sostantivi",
+      "msg": "I sostantivi della lista sono presentati senza articolo, quindi la lista non permette di impararne il genere. Aggiungere gli articoli, per esempio «der Koffer», «die Jugendherberge», «das Zimmer» dove pertinente, e indicare anche i plurali.",
+      "path": "neutral[0].lexIt"
+    }
+  ],
+  "lang": "fr",
+  "unit": "library-a2",
+  "verdict": "fail",
+  "archived": {
+    "decision": "N2 (Q-C1-D8 A extended): round 2 only neutral findings, sentence 0 wording and lexIt without articles, overlay without remarks",
+    "date": "2026-11-18",
+    "bundleHash": "619be9f159926c44fe24029113ab9b59a93399775acb2eafd4ef811edbd16d51"
+  }
+}
