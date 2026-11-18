@@ -131,7 +131,7 @@ LINGUAI.addStrings("es", {
 
   "read:r-c2-lob": {
     title: "No regañar ya es bastante elogio",
-    gloss: ["darse a conocer, mostrarse", "el refrán", "lo máximo a lo que se puede aspirar", "efusivo", "hacer sospechar, dar que pensar", "demoledor", "la coletilla (frase añadida al final)", "educadamente, como un niño obediente", "la pulla, la indirecta", "el quedarse corto a propósito (understatement)", "dolido, ofendido", "el desacierto, la metedura de pata", "atribuir (una cualidad) a alguien, decir de alguien"],
+    gloss: ["revelarse como tal, dejarse reconocer", "el refrán", "lo máximo a lo que se puede aspirar", "efusivo", "hacer sospechar, dar que pensar", "demoledor", "la coletilla (frase añadida al final)", "educadamente, como un niño obediente", "la pulla, la indirecta", "el quedarse corto a propósito (understatement)", "dolido, ofendido", "el desacierto, la metedura de pata", "atribuir (una cualidad) a alguien, decir de alguien"],
     lex: ["ámbito (aquí: el mundo germanohablante)", "elogio", "esperar, contar con", "decepcionar", "suabo", "actitud", "extendido", "de pasada", "superior (jefe)", "a veces", "a la inversa", "esconderse", "exponer, alegar", "juicio, valoración", "decisivo", "tenor literal", "entonación, acento", "literal", "significado", "dar las gracias", "benévolo", "conjunto de reglas", "quitarle (algo) de encima a alguien", "como mucho", "adaptación, acostumbramiento", "adquirir", "franqueza", "contradicción"]
   },
 
