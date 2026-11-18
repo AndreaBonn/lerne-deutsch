@@ -1,0 +1,23 @@
+{
+  "bundleHash": "e4609dd46f43fe8939dfefd8c7697e66ddcffd569ce56d326386159dc9052c63",
+  "findings": [
+    {
+      "kind": "spiegazione lessicale",
+      "msg": "«konsistent» può indicare anche una consistenza fisica o una struttura compatta; non significa soltanto «coerente, senza contraddizioni». Spiega che il significato dipende dal contesto, senza presentare l'accezione materiale come un falso amico.",
+      "path": "merged.lessons[2].theory[2].contrast"
+    },
+    {
+      "kind": "spiegazione lessicale",
+      "msg": "La spiegazione esclude dal tedesco il significato «normale» di «ordinär», ma l'aggettivo può anche significare «comune» o «ordinario» in contesti appropriati. Distingui questa accezione da quella spregiativa di «volgare».",
+      "path": "merged.lessons[2].theory[2].contrast"
+    },
+    {
+      "kind": "sfumatura semantica",
+      "msg": "«Nicht ganz unproblematisch» segnala che qualcosa presenta problemi, ma non significa necessariamente «claramente problemático»: la forza del giudizio dipende dal contesto e dall'intonazione. Formula la spiegazione in modo da conservare questa ambiguità.",
+      "path": "merged.lessons[0].grammar.table.rows[3]"
+    }
+  ],
+  "lang": "es",
+  "unit": "c2-u03",
+  "verdict": "fail"
+}

@@ -1,0 +1,18 @@
+{
+  "bundleHash": "3f80975fef0873fd02ed3563e35a4995406aa8c3f74a6dbecd8805d17936d809",
+  "findings": [
+    {
+      "kind": "meaning and pragmatic nuance",
+      "msg": "The explanation treats the strength of a litotes as fixed. «Nicht ganz unproblematisch» can mean «somewhat problematic» and does not necessarily imply that the negotiations were difficult or seriously problematic; «nicht schlecht» can also express moderate approval. Explain that context and intonation determine the intended strength, and qualify the corresponding table and theory entries.",
+      "path": "merged.lessons[0].grammar.examples[0].note"
+    },
+    {
+      "kind": "grammar explanation",
+      "msg": "«Zu + infinitive» with «sein» can express possibility as well as necessity. In «Die Ergebnisse sind mit Vorsicht zu interpretieren», the interpretation is a recommendation or requirement arising from context, not an inherent meaning of the construction. Qualify the note accordingly.",
+      "path": "merged.lessons[2].grammar.examples[4].note"
+    }
+  ],
+  "lang": "en",
+  "unit": "c2-u03",
+  "verdict": "fail"
+}

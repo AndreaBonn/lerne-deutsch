@@ -1,0 +1,23 @@
+{
+  "bundleHash": "91a2341dcbfc489133be4686b588cf5700dc2853c33cc98aec186100a21c766c",
+  "findings": [
+    {
+      "kind": "exactitude linguistique",
+      "msg": "« die Konfession » ne désigne pas uniquement l’appartenance religieuse : le mot peut aussi désigner une confession ou une déclaration de foi. Préciser que « die Beichte » désigne la confession des péchés, sans présenter cette opposition comme exhaustive.",
+      "path": "merged.lessons[2].theory[2].contrast"
+    },
+    {
+      "kind": "explication grammaticale",
+      "msg": "La structure « sein + zu + infinitif » ne marque pas toujours l’obligation : elle peut aussi exprimer la possibilité, notamment avec une négation. Préciser que, dans cet exemple, elle exprime une recommandation ou une nécessité.",
+      "path": "merged.lessons[2].grammar.examples[4].note"
+    },
+    {
+      "kind": "traduction",
+      "msg": "« Toute cette paperasse, j'ai vraiment pas envie » est une phrase française incomplète : « avoir envie » exige ici « de ». Proposer par exemple « Toute cette paperasse, j'ai vraiment pas envie de m'en occuper. »",
+      "path": "merged.lessons[1].grammar.examples[5].tr"
+    }
+  ],
+  "lang": "fr",
+  "unit": "c2-u03",
+  "verdict": "fail"
+}

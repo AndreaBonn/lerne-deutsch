@@ -1,0 +1,23 @@
+{
+  "bundleHash": "02e6a3ba04c876c772f8a4b74a064af7afbfd3f23f94fbe9479ebc5a7b3fdc3a",
+  "findings": [
+    {
+      "kind": "traduzione",
+      "msg": "«Film był wcale nie najgorszy» non è una formulazione polacca idiomatica: correggere in «Film wcale nie był najgorszy».",
+      "path": "merged.lessons[0].grammar.examples[1].tr"
+    },
+    {
+      "kind": "traduzione lessicale",
+      "msg": "«Niedopowiedzenie» indica ciò che è lasciato sottinteso, non necessariamente una minimizzazione. Per «Untertreibung» usare «umniejszenie, bagatelizowanie» o «niedoszacowanie», secondo il contesto.",
+      "path": "merged.lessons[0].vocab[2].tr"
+    },
+    {
+      "kind": "spiegazione della pronuncia",
+      "msg": "L'affermazione che nei Fremdwörter l'accento cada quasi sempre verso la fine è troppo generale: esistono numerosi prestiti accentati all'inizio, come «Computer», «Internet» e «Auto». Limitare l'osservazione agli esempi trattati e invitare a verificare l'accento parola per parola.",
+      "path": "merged.lessons[2].theory[3].trap"
+    }
+  ],
+  "lang": "pl",
+  "unit": "c2-u03",
+  "verdict": "fail"
+}
