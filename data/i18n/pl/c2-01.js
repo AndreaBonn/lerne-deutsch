@@ -634,7 +634,7 @@ LINGUAI.addStrings("pl", {
         contrast: "Polszczyzna też ma złożenia z elementem łączącym, najczęściej <em>-o-</em>: <em>językoznawca, gwiazdozbiór, wodociąg</em>, i w nich też człon główny stoi na końcu (<em>gwiazdozbiór</em> to zbiór gwiazd). Ale takich słów jest ograniczona liczba i nie tworzy się ich swobodnie: na co dzień polski stawia rzeczownik główny na początku i dookreśla go przymiotnikiem albo dopełniaczem: <em>rynek mieszkaniowy</em>, <em>biblioteka uniwersytecka</em>, <em>warunki pracy</em>. Niemiecki tworzy złożenia bez ograniczeń i zwykle zapisuje je łącznie: <em>Wohnungsmarkt, Universitätsbibliothek, Arbeitsbedingungen</em>. Przy tłumaczeniu czyta się od prawej do lewej, a polski przymiotnik albo dopełniacz odpowiada zwykle pierwszemu członowi. I właśnie dlatego <em>-s-</em> łączące nie jest dopełniaczem, choć polskie <em>warunki pracy</em> to sugerują: pojawia się też po rzeczownikach żeńskich (<em>die Arbeit</em> → <em>Arbeitszeit</em>, <em>die Liebe</em> → <em>Liebesbrief</em>), które w dopełniaczu nigdy nie dostają <em>-s</em>."
       },
       {
-        trap: "Rodzaj pochodzi zawsze od ostatniego członu, nawet gdy pierwszy jest bardziej „widoczny”: <em>das Arbeitsamt</em> jest nijakie jak <em>das Amt</em>, choć <em>Arbeit</em> jest żeńska; <em>der Wohnungsmarkt</em> jest męski jak <em>der Markt</em>. Uwaga, bo polski odpowiednik często ma inny rodzaj (<em>rynek</em> się zgadza, ale <em>urząd pracy</em> jest męski). I złożenia się nie rozdziela: <em>Arbeitsbedingungen</em>, nie <em>Arbeits Bedingungen</em>. Łącznik stosuje się tylko dla przejrzystości albo przy skrótowcach i nazwach własnych (<em>E-Mail-Adresse</em>)."
+        trap: "Rodzaj pochodzi zawsze od ostatniego członu, nawet gdy pierwszy jest bardziej „widoczny”: <em>das Arbeitsamt</em> jest nijakie jak <em>das Amt</em>, choć <em>Arbeit</em> jest żeńska; <em>der Wohnungsmarkt</em> jest męski jak <em>der Markt</em>. Uwaga, bo polski odpowiednik często ma inny rodzaj (<em>rynek</em> się zgadza, ale <em>urząd pracy</em> jest męski). I złożenia się nie rozdziela: <em>Arbeitsbedingungen</em>, nie <em>Arbeits Bedingungen</em>. Łącznik pojawia się zwykle dla przejrzystości albo przy skrótowcach i nazwach własnych (<em>E-Mail-Adresse</em>)."
       },
       {
         tip: "Żeby zrozumieć długie złożenie, zacznij od prawej: <em>Arbeits|bedingungen</em> to warunki, a pierwszy człon mówi jakie (pracy). Odetnij ewentualny element łączący i szukaj części w słowniku po kolei."
@@ -748,7 +748,7 @@ LINGUAI.addStrings("pl", {
     theory: [
       {
         h: "Przyrostki, które decydują o rodzaju",
-        p: "Przyrostek przenosi wyraz do innej części mowy i ustala jego rodzaj. <em>-ung</em> tworzy rzeczowniki od czasowników: <em>verbessern</em> → <em>die Verbesserung</em>. <em>-heit</em>, <em>-keit</em> i <em>-igkeit</em> tworzą rzeczowniki od przymiotników: <em>frei</em> → <em>die Freiheit</em>, <em>nachhaltig</em> → <em>die Nachhaltigkeit</em>, <em>genau</em> → <em>die Genauigkeit</em>. Rzeczowniki na <strong>-ung, -heit, -keit, -schaft</strong> są zawsze żeńskie, a jeśli mają liczbę mnogą, tworzą ją na <em>-en</em>; wiele rzeczowników abstrakcyjnych, jak <em>Gelassenheit</em>, jej nie ma."
+        p: "Przyrostek często przenosi wyraz do innej części mowy (niektóre, jak <em>-schaft</em> w <em>Freundschaft</em>, tworzą rzeczowniki od rzeczowników) i zawsze ustala jego rodzaj. <em>-ung</em> tworzy rzeczowniki od czasowników: <em>verbessern</em> → <em>die Verbesserung</em>. <em>-heit</em>, <em>-keit</em> i <em>-igkeit</em> tworzą rzeczowniki od przymiotników: <em>frei</em> → <em>die Freiheit</em>, <em>nachhaltig</em> → <em>die Nachhaltigkeit</em>, <em>genau</em> → <em>die Genauigkeit</em>. Rzeczowniki na <strong>-ung, -heit, -keit, -schaft</strong> są zawsze żeńskie, a jeśli mają liczbę mnogą, tworzą ją na <em>-en</em>; wiele rzeczowników abstrakcyjnych, jak <em>Gelassenheit</em>, jej nie ma."
       },
       {
         h: "-heit czy -keit?",
@@ -780,7 +780,7 @@ LINGUAI.addStrings("pl", {
         rows: [
           ["verbessern", "die Verbesserung", "poprawa, ulepszenie"],
           ["gelassen", "die Gelassenheit", "spokój, opanowanie"],
-          ["nachhaltig", "die Nachhaltigkeit", "zrównoważony rozwój, trwałość"],
+          ["nachhaltig", "die Nachhaltigkeit", "zrównoważony charakter, trwałość"],
           ["reißen", "zerreißen", "podrzeć, rozedrzeć na kawałki"],
           ["verstehen", "missverstehen", "źle zrozumieć"],
           ["digitalisieren", "die Digitalisierung", "cyfryzacja"]
@@ -801,7 +801,7 @@ LINGUAI.addStrings("pl", {
       "przedrostek",
       "wyraz obcy, zapożyczenie",
       "spokój, opanowanie",
-      "zrównoważony rozwój, trwałość",
+      "zrównoważony charakter, trwałość",
       "niezawodność, rzetelność",
       "cyfryzacja",
       "podrzeć (na kawałki)",
