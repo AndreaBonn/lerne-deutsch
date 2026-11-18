@@ -11,7 +11,7 @@ LINGUAI.addStrings("es", {
 
   "read:r-a1-markt": {
     title: "Sábado en el mercado",
-    gloss: ["la verdura, las hortalizas", "el puesto", "la vendedora", "en total (zusammen: también 'juntos')", "la cesta"],
+    gloss: ["la verdura, las hortalizas", "el puesto", "la vendedora", "en total (en otros contextos: 'juntos')", "la cesta"],
     lex: ["sábado", "mercado", "Berna (capital de Suiza)", "necesitar", "fruta", "fin de semana", "comprar", "lechuga, ensalada", "kilo", "tomate", "manzana", "costar", "franco (suizo)", "bolsa", "queso", "pan"]
   },
 
@@ -72,7 +72,7 @@ LINGUAI.addStrings("es", {
   "read:r-b1-tafel": {
     title: "Los sábados en la Tafel",
     gloss: ["el jubilado", "la Tafel (banco de alimentos)", "la asociación, el club", "los alimentos", "recoger (ir a buscar)", "el voluntariado", "renunciar a, prescindir de"],
-    lex: ["colaborar", "Friburgo", "supermercado", "panadería", "producto", "tienda, comercio", "vender", "dinero", "clasificar, ordenar", "fruta", "verdura", "estudiante (universitaria)", "llevarse bien", "bolsa", "pan", "dar las gracias", "amable", "tarea", "quedar, encontrarse (con alguien)"]
+    lex: ["colaborar", "Friburgo", "supermercado", "panadería", "producto", "tienda, comercio", "vender", "dinero", "clasificar, ordenar", "fruta", "verdura", "estudiante (universitaria)", "llevarse bien", "bolsa", "pan", "dar las gracias", "amable", "tarea", "encontrarse con, conocer (a gente)"]
   },
 
   "read:r-b1-graz": {
@@ -102,7 +102,7 @@ LINGUAI.addStrings("es", {
   "read:r-c1-amtsdeutsch": {
     title: "Se ruega prestar atención",
     gloss: ["la resolución (decisión escrita de un organismo público)", "la atención, la observancia (formal)", "adjunto", "el solicitante", "el beneficiario (de una prestación)", "el uso, la utilización (de un servicio o un derecho)", "la apariencia", "el autor", "presentar un recurso (administrativo); Widerspruch también es 'contradicción'", "cercano al ciudadano, en lenguaje claro"],
-    lex: ["oficina pública, organismo", "recibir", "toparse con", "con cuidado, con esmero", "evitar", "indicación, aviso", "reconocible, evidente", "ciudadano", "escrito, carta (oficial)", "afectado, interesado", "predilección", "sustantivo", "presentación de la solicitud", "conferir, dar", "objetividad", "distancia", "casual, fortuito", "inofensivo", "administración", "nombrar, designar", "dificultar", "decisión", "autoridad, organismo público", "guía, manual", "ocasión", "citar", "sorprendentemente", "aplicar"]
+    lex: ["oficina pública, organismo", "recibir", "toparse con", "con cuidado, con esmero", "evitar", "indicación, aviso", "reconocible, evidente", "ciudadano", "escrito, carta (oficial)", "afectado, interesado", "predilección", "sustantivo", "presentación de la solicitud", "conferir, dar", "objetividad", "distancia", "casual, fortuito", "inofensivo", "administración", "nombrar, mencionar explícitamente", "dificultar", "decisión", "autoridad, organismo público", "guía, manual", "ocasión", "citar", "sorprendentemente", "aplicar"]
   },
 
   "read:r-c1-frauenstimmrecht": {
@@ -131,19 +131,19 @@ LINGUAI.addStrings("es", {
 
   "read:r-c2-lob": {
     title: "No regañar ya es bastante elogio",
-    gloss: ["darse a conocer, mostrarse", "el refrán", "lo máximo a lo que se puede aspirar", "efusivo", "hacer sospechar, dar que pensar", "demoledor", "la coletilla (frase añadida al final)", "formalito, como un niño bien educado", "la pulla, la indirecta", "el quedarse corto a propósito (understatement)", "dolido, ofendido", "el desacierto, la metedura de pata", "atribuir (una cualidad) a alguien, decir de alguien"],
+    gloss: ["darse a conocer, mostrarse", "el refrán", "lo máximo a lo que se puede aspirar", "efusivo", "hacer sospechar, dar que pensar", "demoledor", "la coletilla (frase añadida al final)", "educadamente, como un niño obediente", "la pulla, la indirecta", "el quedarse corto a propósito (understatement)", "dolido, ofendido", "el desacierto, la metedura de pata", "atribuir (una cualidad) a alguien, decir de alguien"],
     lex: ["ámbito (aquí: el mundo germanohablante)", "elogio", "esperar, contar con", "decepcionar", "suabo", "actitud", "extendido", "de pasada", "superior (jefe)", "a veces", "a la inversa", "esconderse", "exponer, alegar", "juicio, valoración", "decisivo", "tenor literal", "entonación, acento", "literal", "significado", "dar las gracias", "benévolo", "conjunto de reglas", "quitarle (algo) de encima a alguien", "como mucho", "costumbre, acostumbrarse", "adquirir", "franqueza", "contradicción"]
   },
 
   "read:r-c2-arbeitszeugnis": {
     title: "Siempre a nuestra más plena satisfacción",
-    gloss: ["el certificado de trabajo (documento formal al que todo empleado en Alemania tiene derecho)", "por ley", "el conflicto de objetivos", "desprenderse de", "prohibir", "no obstante", "insidioso, pérfido", "halagar", "certificar, dar fe de", "la sociabilidad", "el ambiente laboral", "insinuar, atribuir (a alguien)", "revelador", "el descifrado", "el género textual"],
-    lex: ["benévolo, favorable", "formular, redactar", "verdad", "corresponder a (con dativo)", "década", "lenguaje cifrado, código", "existencia", "oficialmente", "admitir", "ley", "expresar, declarar", "expresamente", "departamento de personal", "dominar", "escala de notas (en Alemania va de 1, la mejor, a 6: al revés que el 0-10 español)", "cuestionable", "superlativo", "siempre (culto)", "satisfacción", "meramente", "esforzarse", "lograr, conseguir", "mejora", "contribuir", "relación", "honradez", "cajera", "mencionar", "posiblemente, a lo mejor", "circular", "manual, guía práctica", "responsables de personal", "auricular (del teléfono)", "perjudicar (con dativo)", "producir, generar"]
+    gloss: ["el certificado de trabajo (documento formal al que todo empleado en Alemania tiene derecho)", "por ley", "el conflicto de objetivos", "surgir de, derivarse de", "prohibir", "no obstante", "insidioso, pérfido", "halagar", "certificar, dar fe de", "la sociabilidad", "el ambiente laboral", "insinuar, atribuir (a alguien)", "revelador", "el descifrado", "el género textual"],
+    lex: ["benévolo, favorable", "formular, redactar", "verdad", "corresponder a (con dativo)", "década", "lenguaje cifrado, código", "existencia", "oficialmente", "admitir", "ley", "expresar, declarar", "expresamente", "departamento de personal", "dominar", "escala de notas (en Alemania va de 1, la mejor, a 6: al revés que el 0-10 español)", "cuestionable", "superlativo", "siempre (culto)", "satisfacción", "meramente", "esforzarse", "lograr, conseguir", "mejora", "contribuir", "relación", "honradez", "cajera", "mencionar", "posiblemente, a lo mejor", "circular", "manual, guía práctica", "responsables de personal", "auricular del teléfono (la parte que se descuelga)", "perjudicar (con dativo)", "producir, generar"]
   },
 
   "read:r-c2-heimat": {
     title: "Una palabra difícil",
     gloss: ["lastrado, cargado (por la historia)", "el entramado, la red", "el dialecto", "quedarle claro a alguien de repente (es geht mir auf: de pronto lo veo claro)", "idealizar, romantizar", "estrechar, restringir", "cursi, kitsch", "la reinterpretación", "evitar", "ilustrado", "apropiarse de", "excluyente", "la lectura, la interpretación", "encarnizado", "creer (a alguien) capaz de"],
-    lex: ["intraducible", "Heimat (tierra natal, el lugar al que uno pertenece)", "designar", "lugar", "paisaje", "olor", "costumbre", "lejanía", "siglo", "romántico (del Romanticismo)", "nacionalsocialismo, nazismo", "ideología", "posguerra", "Heimatfilm (género de cine rural sentimental de los años cincuenta)", "inofensivo", "concepto", "diccionario", "de buen grado", "frontera, límite", "negociar; aquí: debatir, redefinir (un concepto)", "ministerio", "escritora", "historia migratoria (familiar)", "origen", "cerrado", "instalarse, acomodarse", "necesitar (aquí: hacer falta)", "dureza, aspereza", "imponerse", "discutir, pelearse"]
+    lex: ["intraducible", "Heimat (tierra natal, el lugar al que uno pertenece)", "designar", "lugar", "paisaje", "olor", "costumbre", "lejanía", "siglo", "romántico (del Romanticismo)", "nacionalsocialismo, nazismo", "ideología", "posguerra", "Heimatfilm (género de cine rural sentimental de los años cincuenta)", "inofensivo", "concepto", "diccionario", "de buen grado", "frontera, límite", "negociar; aquí: debatir, redefinir (un concepto)", "ministerio", "escritora", "historia migratoria (familiar)", "origen", "cerrado", "instalarse, acomodarse", "necesitar (aquí, en pasiva: ser necesario, hacer falta)", "dureza, aspereza", "imponerse", "discutir, pelearse"]
   }
 });
