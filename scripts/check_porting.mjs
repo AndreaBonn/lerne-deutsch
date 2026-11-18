@@ -62,20 +62,36 @@ export function checkCore(unit, target) {
   return errors;
 }
 
+/* One verdict file -> { error } or { archived }. A pass must match the
+   current bundle. A fail passes only when the user archived it by decision
+   (Q-C1-D8 A: the judge does not converge on C1 depth, a human sample
+   checks it instead); the archive carries the hash of the content it
+   accepted, so any later edit makes it stale like a pass would be. */
+function reviewOutcome({ root, id, lang }) {
+  const path = join(root, 'specs/german-course/reviews', `${id}-${lang}.json`);
+  if (!existsSync(path)) return { error: `Missing review: ${id}-${lang}` };
+  try {
+    const review = JSON.parse(readFileSync(path, 'utf8'));
+    const current = () => hashBundle(buildBundle({ root, unitId: id, lang }));
+    const archived = review.verdict === 'fail' && review.archived?.decision ? review.archived : null;
+    if (review.unit !== id || review.lang !== lang || (review.verdict !== 'pass' && !archived)) {
+      return { error: `Review is not pass: ${id}-${lang}` };
+    }
+    if (archived) {
+      return archived.bundleHash === current() ? { archived: `${id}-${lang} ${archived.decision}` }
+        : { error: `stale archive: ${id}-${lang}` };
+    }
+    if (!review.bundleHash) return { error: `stale verdict: ${id}-${lang}` };
+    return review.bundleHash === current() ? {} : { error: `stale verdict: ${id}-${lang}` };
+  } catch (error) { return { error: `Invalid review ${id}-${lang}: ${error.message}` }; }
+}
+
 function reviewErrors({ root, id, languages }) {
-  return languages.flatMap(lang => {
-    const path = join(root, 'specs/german-course/reviews', `${id}-${lang}.json`);
-    if (!existsSync(path)) return [`Missing review: ${id}-${lang}`];
-    try {
-      const review = JSON.parse(readFileSync(path, 'utf8'));
-      if (review.unit !== id || review.lang !== lang || review.verdict !== 'pass') {
-        return [`Review is not pass: ${id}-${lang}`];
-      }
-      if (!review.bundleHash) return [`stale verdict: ${id}-${lang}`];
-      const bundle = buildBundle({ root, unitId: id, lang });
-      return review.bundleHash === hashBundle(bundle) ? [] : [`stale verdict: ${id}-${lang}`];
-    } catch (error) { return [`Invalid review ${id}-${lang}: ${error.message}`]; }
-  });
+  return languages.map(lang => reviewOutcome({ root, id, lang }).error).filter(Boolean);
+}
+
+function reviewNotes({ root, id, languages }) {
+  return languages.map(lang => reviewOutcome({ root, id, lang }).archived).filter(Boolean);
 }
 
 function humanErrors({ root, id, level }) {
@@ -173,7 +189,8 @@ function checkUnits({ root, course, target, options, stages }) {
     if (!unit || !target.units[id]) { output.push({ label: id, errors: ['Missing or unknown unit'] }); continue; }
     const context = { root, course, id, unit, target: target.units[id], level: level.code,
       languages: languages.length ? languages : ['it'] };
-    stages.forEach(stage => output.push({ label: `${id} ${stage}`, errors: stageErrors({ stage, context }) }));
+    stages.forEach(stage => output.push({ label: `${id} ${stage}`, errors: stageErrors({ stage, context }),
+      notes: stage === 'review' ? reviewNotes({ root, id, languages: context.languages }) : [] }));
   }
   if (!options.unit && !options.level && stages.includes('core')) output.push({ label: 'distribution', errors: distributionErrors(course, target) });
   return output;
@@ -193,7 +210,8 @@ function main() {
   if (!options.curriculum || options.stage || options.unit) {
     results.push(...checkUnits({ root, course: loadCourse(root), target, options, stages }));
   }
-  results.forEach(({ label, errors }) => console.log(`${label}: ${errors.length ? errors.join('; ') : 'pass'}`));
+  results.forEach(({ label, errors, notes = [] }) => console.log(`${label}: ${errors.length ? errors.join('; ')
+    : notes.length ? `pass, archived (${notes.join(', ')})` : 'pass'}`));
   if (results.some(result => result.errors.length)) process.exitCode = 1;
 }
 

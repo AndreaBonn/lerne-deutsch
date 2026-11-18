@@ -223,3 +223,45 @@ test('audio stage refuses a unit with nothing to check', t => {
   assert.equal(empty.status, 1);
   assert.match(empty.stdout, /no spoken strings/);
 });
+
+/* A fail verdict the user chose to keep (Q-C1-D8 A) passes only while the
+   content is the one that was archived: the archive carries its own bundle
+   hash, so an edit after archiving goes red again. */
+function saveArchivedFail(root, lang, archived) {
+  const bundle = buildBundle({ root, unitId: 'a1-u01', lang });
+  const bundleHash = createHash('sha256').update(JSON.stringify(bundle)).digest('hex');
+  put(root, `specs/german-course/reviews/a1-u01-${lang}.json`, JSON.stringify({
+    unit: 'a1-u01', lang, verdict: 'fail', bundleHash: 'older-round',
+    findings: [{ path: '$', kind: 'level', msg: 'too easy for C1' }],
+    archived: archived === undefined ? { decision: 'Q-C1-D8', bundleHash } : archived
+  }));
+}
+
+test('review accepts an archived fail verdict while the content is unchanged', t => {
+  const root = fixture(t);
+  put(root, 'data/i18n/en/a1-01.js', "LINGUAI.addStrings('en', {});");
+  saveArchivedFail(root, 'en');
+  const result = check(root, '--stage', 'en,review');
+  assert.equal(result.status, 0, result.stdout);
+  assert.match(result.stdout, /pass, archived \(a1-u01-en Q-C1-D8\)/);
+});
+
+test('review rejects an archived fail verdict after the content changes', t => {
+  const root = fixture(t);
+  put(root, 'data/i18n/en/a1-01.js', "LINGUAI.addStrings('en', {});");
+  saveArchivedFail(root, 'en');
+  put(root, 'data/core/a1-01.js', readFileSync(new URL('./fixtures/porting/german/data/core/a1-01.js', import.meta.url), 'utf8')
+    .replace('Guten Tag', 'Guten Morgen'));
+  const result = check(root, '--stage', 'en,review');
+  assert.equal(result.status, 1);
+  assert.match(result.stdout, /stale archive/);
+});
+
+test('review rejects an archive without a decision', t => {
+  const root = fixture(t);
+  put(root, 'data/i18n/en/a1-01.js', "LINGUAI.addStrings('en', {});");
+  saveArchivedFail(root, 'en', { bundleHash: 'x' });
+  const result = check(root, '--stage', 'en,review');
+  assert.equal(result.status, 1);
+  assert.match(result.stdout, /Review is not pass/);
+});
