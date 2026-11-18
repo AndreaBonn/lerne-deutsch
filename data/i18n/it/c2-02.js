@@ -249,7 +249,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa con wer declinato e il correlativo.",
         tr: "Chi è più danneggiato dalla riforma è stato il meno consultato.",
-        why: "<b>Wem</b>: <i>schaden</i> vuole il dativo. <b>den</b>: nella principale <i>fragen</i> vuole l'accusativo. I casi sono diversi, quindi il correlativo non si può omettere."
+        why: "<b>Wem</b>: <i>schaden</i> vuole il dativo. <b>den</b>: nella principale <i>fragen</i> vuole l'accusativo. I casi sono diversi, quindi il correlativo rende la frase chiara; a rigore si potrebbe omettere, perché il dativo <i>wem</i> sta più in basso dell'accusativo nella gerarchia dei casi, ma lo scritto curato lo mantiene."
       },
       {
         q: "Abbina ogni parola al suo significato.",
