@@ -290,7 +290,7 @@ LINGUAI.addStrings("it", {
         contrast: "Anche l'italiano ha costruzioni di questo tipo, e spesso coincidono: <em>mettere in dubbio</em> (<em>in Zweifel ziehen</em>), <em>prendere in considerazione</em> (<em>in Betracht ziehen</em>), <em>trovare applicazione</em> (<em>zur Anwendung kommen</em>). Ma il verbo funzionale non si traduce parola per parola: <em>unter Beweis stellen</em> non è «mettere sotto prova» ma «dimostrare», <em>zur Sprache bringen</em> è «sollevare», <em>in Abrede stellen</em> è «negare». Preposizione e articolo sono fissi: <em>zur Anwendung</em>, mai <em>in die Anwendung</em>."
       },
       {
-        trap: "<em>in Abrede stellen</em> significa «negare»: quindi <em>Sie stellt nicht in Abrede, dass ...</em> vuol dire «non nega, cioè ammette, che ...». E <em>Rechnung tragen</em> vuole il dativo senza preposizione: <em>den Bedenken Rechnung tragen</em>, non <em>auf die Bedenken</em>."
+        trap: "<em>in Abrede stellen</em> significa «negare»: quindi <em>Sie stellt nicht in Abrede, dass ...</em> vuol dire «non nega che ...»: una concessione prudente, che non equivale per forza a un'ammissione esplicita. E <em>Rechnung tragen</em> vuole il dativo senza preposizione: <em>den Bedenken Rechnung tragen</em>, non <em>auf die Bedenken</em>."
       },
       {
         tip: "Nei testi formali il Funktionsverbgefüge dà peso al nome e permette di cambiare prospettiva senza un passivo; in un testo che vuole essere scorrevole un verbo semplice è spesso migliore. Scrivendo, usalo dove aggiunge qualcosa (prospettiva, inizio di un processo, registro), non per allungare la frase."
@@ -355,11 +355,11 @@ LINGUAI.addStrings("it", {
       {
         q: "In una recensione: «Die Verfasserin stellt nicht in Abrede, dass ihre Quellen lückenhaft sind.» Che cosa fa l'autrice?",
         opts: [
-          "ammette che le sue fonti sono lacunose",
+          "non nega che le sue fonti siano lacunose",
           "nega che le sue fonti siano lacunose",
           "dimostra che le sue fonti sono lacunose"
         ],
-        why: "<i>in Abrede stellen</i> = «negare»; con <i>nicht</i> diventa «non negare», cioè <b>ammettere</b>. È un modo prudente, tipico della saggistica, di riconoscere un limite."
+        why: "<i>in Abrede stellen</i> = «negare»; con <i>nicht</i> diventa <b>«non negare»</b>. È una concessione prudente, tipica della saggistica: l'autrice non contesta il limite, senza per questo dichiararlo apertamente."
       },
       {
         q: "Completa: «Der Entwurf trägt den Einwänden der Verbände kaum ___.» (tiene conto)",
