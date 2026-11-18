@@ -35,7 +35,7 @@ LINGUAI.addStrings("it", {
 
   "read:r-a2-wg": {
     title: "Una stanza a Lipsia",
-    gloss: ["l'appartamento condiviso", "l'annuncio", "spese incluse (affitto)", "la visita (dell'appartamento)", "la coinquilina"],
+    gloss: ["l'appartamento condiviso", "l'annuncio", "affitto con riscaldamento e spese condominiali", "la visita (dell'appartamento)", "la coinquilina"],
     lex: ["studiare (all'università)", "Lipsia", "cercare", "stanza", "metro quadrato", "appartamento", "cucina", "balcone", "pianta", "vuoto", "luminoso", "tranquillo", "mettere (in piedi)", "parete", "scrivania", "finestra", "messaggio", "essere contento"]
   },
 

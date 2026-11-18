@@ -30,7 +30,7 @@ LINGUAI.addReadings([
     glossIt: ["der Feierabend", "die Theke", "der Kellner", "der Nachbartisch", "Entschuldigung"],
     lexIt: ["Café", "Lehrerin", "Beruf", "arbeiten", "Köln", "Milch", "Wasser", "Zeitung", "lesen", "lachen", "heiß", "schön"],
     questions: [
-      { t: "truefalse", q: "Anna arbeitet in einem Café.", a: 1 },
+      { t: "truefalse", q: "Anna bestellt einen Tee.", a: 1 },
       { t: "mcq", q: "Was ist Anna von Beruf?", opts: ["Lehrerin", "Kellnerin", "Ärztin"], a: 0 },
       { t: "mcq", q: "Wie heißt der Kellner?", opts: ["Jonas", "Tom", "Anna"], a: 0 },
       { t: "truefalse", q: "Anna und Tom sagen am Ende du.", a: 0 }
@@ -56,7 +56,7 @@ LINGUAI.addReadings([
     questions: [
       { t: "mcq", q: "Wo ist der Markt?", opts: ["in Bern", "in Wien", "in Köln"], a: 0 },
       { t: "truefalse", q: "Lena hat einen Korb.", a: 1 },
-      { t: "mcq", q: "Wie viel bezahlt Lena am ersten Stand?", opts: ["acht Franken", "acht Euro", "zehn Franken"], a: 0 }
+      { t: "mcq", q: "Wie viel kostet alles am ersten Stand?", opts: ["acht Franken", "acht Euro", "zehn Franken"], a: 0 }
     ]
   },
 
@@ -129,7 +129,7 @@ LINGUAI.addReadings([
       { t: "mcq", q: "Was tut Jan weh?", opts: ["der Rücken", "der Kopf", "der Bauch"], a: 0 },
       { t: "truefalse", q: "Die Ärztin sagt, Jan muss ins Krankenhaus.", a: 1 },
       { t: "mcq", q: "Wie oft soll Jan die Salbe auftragen?", opts: ["zweimal am Tag", "einmal am Tag", "dreimal am Tag"], a: 0 },
-      { t: "truefalse", q: "Jan muss zwei Tage nicht arbeiten.", a: 0 }
+      { t: "truefalse", q: "Die Ärztin schreibt Jan für zwei Tage krank.", a: 0 }
     ]
   },
   {
@@ -196,9 +196,9 @@ LINGUAI.addReadings([
     glossIt: ["die Stelle", "vorhaben", "eröffnen", "das Kaffeehaus", "die Wohnungssuche"],
     lexIt: ["Koch", "Hotel", "Düsseldorf", "ziehen", "Freundin", "Wien", "Restaurant", "Küche", "kennen", "wissen", "Eltern", "traurig", "weit", "Zug", "ungefähr", "Stunde"],
     questions: [
-      { t: "mcq", q: "Warum zieht Karim nach Wien?", opts: ["Seine Freundin hat dort eine Stelle gefunden.", "Er hat dort eine Wohnung gekauft.", "Seine Eltern wohnen dort."], a: 0 },
+      { t: "mcq", q: "Warum möchte Karim nach Wien ziehen?", opts: ["Seine Freundin hat dort eine Stelle gefunden.", "Er hat dort eine Wohnung gekauft.", "Seine Eltern wohnen dort."], a: 0 },
       { t: "truefalse", q: "In Wien möchte Karim zuerst ein Restaurant eröffnen.", a: 1 },
-      { t: "mcq", q: "Wie lange fährt man mit dem Zug von Düsseldorf nach Wien?", opts: ["ungefähr zehn Stunden", "ungefähr vier Stunden", "ungefähr zwei Tage"], a: 0 }
+      { t: "mcq", q: "Wie lange dauert die Zugfahrt nach Wien laut Karim?", opts: ["ungefähr zehn Stunden", "ungefähr vier Stunden", "ungefähr zwei Tage"], a: 0 }
     ]
   }
 ]);
