@@ -31,7 +31,7 @@ LINGUAI.addReadings([
       "Alle haben gelacht.",
       "Das Zimmer war klein, und das Fenster ging auf einen grauen Hof.",
       "Aber es war hell, und die Küche war groß.",
-      "Die Miete war dreihundertachtzig Euro warm, also mit Heizung und Wasser.",
+      "Die Miete war dreihundertachtzig Euro warm, also mit allen Nebenkosten.",
       "Zwei Tage später hat Jonas wieder angerufen: „Wir möchten dich gern als Mitbewohner.“",
       "Ich habe sofort Ja gesagt.",
       "Vor dem Einzug habe ich nach zwei Papieren gefragt.",
