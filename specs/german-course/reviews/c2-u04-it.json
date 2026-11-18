@@ -1,40 +1,15 @@
 {
-  "bundleHash": "03e21c0fc803e7accf780fcda41eb95ae23289d5119cf6f1a4cf78dabff1cbf3",
+  "bundleHash": "75fca2da0514d958fde544c779cf357fef9f642fa8095d81781ee3715ab3d048",
   "findings": [
     {
-      "kind": "traduzione",
-      "msg": "«Was mich beunruhigt» significa «Ciò che mi preoccupa», non «Il che mi preoccupa»: «il che» riprende una frase precedente e qui non è autonomo. Correggere anche il titolo italiano del test.",
-      "path": "merged.title"
+      "kind": "livello CEFR",
+      "msg": "L'unità ripassa relative e reggenze utili, ma gli esercizi richiedono soprattutto il riconoscimento di forme isolate e la costruzione di frasi brevi con lessico formale. Mancano distinzioni di significato, registro e sfumatura sufficientemente impegnative per un'unità C2. Mantenendo gli stessi tipi e conteggi, sostituire alcuni item con alternative plausibili che richiedano di valutare tali distinzioni in contesto.",
+      "path": "merged.lessons"
     },
     {
       "kind": "traduzione",
-      "msg": "Correggere «Test: Il che mi preoccupa» in «Test: Ciò che mi preoccupa».",
-      "path": "merged.test.title"
-    },
-    {
-      "kind": "pronuncia",
-      "msg": "In «zurückgezogen» l'accento principale cade su «zo», non su «rück». Correggere l'indicazione per la pronuncia.",
-      "path": "merged.lessons[0].exercises[10].why"
-    },
-    {
-      "kind": "pronuncia",
-      "msg": "In «durchaus» l'accento principale cade su «durch», non su «aus».",
-      "path": "merged.lessons[2].exercises[10].why"
-    },
-    {
-      "kind": "grammatica",
-      "msg": "«Auf welcher» è accusativo femminile e può sostituire «auf die» in registro formale. La domanda ha quindi due risposte corrette: sostituire il distrattore o accettare entrambe e correggere la spiegazione.",
-      "path": "merged.test.exercises[5]"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "Non tutte le costruzioni elencate sono di registro alto: «sich einer Sache bewusst sein» è comune anche nell'uso corrente. Limitare l'indicazione di registro ai verbi e alle costruzioni effettivamente formali.",
-      "path": "merged.lessons[2].theory[0].p"
-    },
-    {
-      "kind": "consegna ambigua",
-      "msg": "La consegna chiede un articolo, ma la chiave accetta anche «jeglichen», che non è un articolo e cambia il significato in «di qualsiasi comportamento scorretto». Chiedere un determinante al genitivo oppure rimuovere «jeglichen» dalle risposte accettate.",
-      "path": "merged.test.exercises[8]"
+      "msg": "«Il che nessuno si aspettava» è poco naturale in italiano. Rendere la frase con «Ha superato l'esame, cosa che nessuno si aspettava» e usare la stessa formulazione nell'esempio della teoria.",
+      "path": "merged.lessons[1].grammar.examples[4].tr"
     }
   ],
   "lang": "it",
