@@ -71,7 +71,7 @@ LINGUAI.addStrings("en", {
 
   "read:r-b1-tafel": {
     title: "Saturdays at the Food Bank",
-    gloss: ["the retiree", "the Tafel (food bank)", "the association (registered nonprofit)", "groceries, food", "to pick up", "volunteer work", "to do without, give up"],
+    gloss: ["the retiree", "the Tafel (food bank)", "the association, the club", "groceries, food", "to pick up", "volunteer work", "to do without, give up"],
     lex: ["to help out, work (alongside others)", "Freiburg", "supermarket", "bakery", "product", "store, shop", "to sell", "money", "to sort", "fruit", "vegetables", "(college) student (f.)", "to get along", "bag", "bread", "to say thank you", "friendly", "task, job", "to meet"]
   },
 
