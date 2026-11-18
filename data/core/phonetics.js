@@ -36,5 +36,41 @@ window.PHONETICS = [
       { a: "Ofen", b: "offen" },
       { a: "Beet", b: "Bett" }
     ]
+  },
+  {
+    id: "ph-ue-i",
+    cefr: "A2",
+    tag: "g-aussprache",
+    pairs: [
+      { a: "Kissen", b: "küssen" },
+      { a: "Kiste", b: "Küste" },
+      { a: "vier", b: "für" },
+      { a: "spielen", b: "spülen" },
+      { a: "Ziege", b: "Züge" },
+      { a: "liegen", b: "lügen" }
+    ]
+  },
+  {
+    id: "ph-oe-e",
+    cefr: "A2",
+    tag: "g-aussprache",
+    pairs: [
+      { a: "kennen", b: "können" },
+      { a: "lesen", b: "lösen" },
+      { a: "Sehne", b: "Söhne" },
+      { a: "Hefe", b: "Höfe" },
+      { a: "helle", b: "Hölle" }
+    ]
+  },
+  {
+    id: "ph-s-z",
+    cefr: "A2",
+    tag: "g-aussprache",
+    pairs: [
+      { a: "seit", b: "Zeit" },
+      { a: "Seile", b: "Zeile" },
+      { a: "Saal", b: "Zahl" },
+      { a: "Sinn", b: "Zinn" }
+    ]
   }
 ];

@@ -460,6 +460,14 @@ bajt w bajt takie samo. Para nie do odróżnienia ze słuchu uczy tylko zgadywan
 tego ani w kodzie, ani w testach, ani na ekranie. Z tego powodu w kursie nie ma zbioru dla
 „o" otwartego i zamkniętego: żadna z trzech par nie przeszła.
 
+Kurs niemiecki ma cztery zbiory: długie i krótkie samogłoski, `ü`/`i`, `ö`/`e` oraz `s`/`z`
+na początku wyrazu (wszystkie 21 par przeszło `check_minpairs.py`). **Zbioru `ch` [ç]/[x]
+nie ma i nie będzie**: to dwa warianty jednego fonemu zależne od poprzedzającej samogłoski,
+więc prawdziwe pary minimalne istnieją tylko z wyrazami marginalnymi („Kuhchen"/„Kuchen"),
+a ten plik przyjmuje wyłącznie zwykłe wyrazy standardowego niemieckiego po obu stronach.
+Uwaga przy czytaniu wyniku: krótkie wyrazy mają u głosu stałą minimalną długość (1,92 s),
+więc ta sama liczba bajtów przy każdym wyrazie to nie błąd; o różnicy decyduje skrót.
+
 ## Praca bez sieci
 
 `sw.js` (w katalogu głównym, bo tam sięga scope) plus `manifest.webmanifest`.
