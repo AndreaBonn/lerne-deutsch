@@ -503,7 +503,7 @@ LINGUAI.addStrings("pl", {
         contrast: "Polszczyzna zna ten mechanizm z własnego podwórka: <em>oczy</em> to narząd wzroku, a <em>oka</em> to oczka sieci albo tłuszczu na rosole; <em>uszy</em> słyszą, a <em>ucha</em> ma garnek. Niemieckie pary są jednak inne i nie pokrywają się z polskimi: <em>bank</em> i <em>ławka</em> to dla Ciebie dwa różne słowa, więc nic nie podpowiada, że po niemiecku trzeba wybierać między <em>Banken</em> a <em>Bänke</em>. Z <em>Rat</em> jest odwrotnie: polska <em>rada</em> też znaczy i poradę, i gremium, ale w obu znaczeniach ma zwykłą liczbę mnogą <em>rady</em>, a niemiecki rozdziela <em>Ratschläge</em> i <em>Räte</em>. Za to <em>Regenfälle</em> brzmi znajomo: polskie <em>opady deszczu</em> robią to samo, co niemieckie złożenie."
       },
       {
-        trap: "Słownik zawiera <em>Wörter</em>, nigdy <em>Worte</em>; wzruszające przemówienie składa się z <em>Worte</em>. Polszczyzna częściowo pomaga: <em>Wörter</em> to mniej więcej <em>wyrazy</em>, a <em>Worte</em> to <em>słowa</em> w sensie wypowiedzi (<em>w kilku słowach</em>, <em>słowa podziękowania</em>). Ale po polsku słownik też „zawiera sto tysięcy słów”, więc ta para nie jest bezpiecznym drogowskazem. Kryterium nie jest liczba (<em>ein paar Worte</em> też da się policzyć), tylko punkt widzenia: jednostka słownika, <em>Wörter</em>; wypowiedź, to, co ktoś mówi, <em>Worte</em>. I uwaga na umlaut i końcówkę, które tu rozróżniają znaczenie: <em>Muttern</em> (bez umlautu, z <em>-n</em>) to nakrętki, <em>Mütter</em> to matki; <em>Bänke</em> to ławki, <em>Banken</em> to instytucje kredytowe."
+        trap: "Słownik zawiera <em>Wörter</em>, nigdy <em>Worte</em>; na wzruszające przemówienie składają się <em>Worte</em>. Polszczyzna częściowo pomaga: <em>Wörter</em> to mniej więcej <em>wyrazy</em>, a <em>Worte</em> to <em>słowa</em> w sensie wypowiedzi (<em>w kilku słowach</em>, <em>słowa podziękowania</em>). Ale po polsku słownik też „zawiera sto tysięcy słów”, więc ta para nie jest bezpiecznym drogowskazem. Kryterium nie jest liczba (<em>ein paar Worte</em> też da się policzyć), tylko punkt widzenia: jednostka słownika, <em>Wörter</em>; wypowiedź, to, co ktoś mówi, <em>Worte</em>. I uwaga na umlaut i końcówkę, które tu rozróżniają znaczenie: <em>Muttern</em> (bez umlautu, z <em>-n</em>) to nakrętki, <em>Mütter</em> to matki; <em>Bänke</em> to ławki, <em>Banken</em> to instytucje kredytowe."
       },
       {
         tip: "Ucz się liczby mnogiej razem ze znaczeniem, nie jako osobnej formy. Słowniki jednojęzyczne (na przykład Duden) podają obie formy, każdą z własną definicją: tam warto sprawdzać."
@@ -603,7 +603,7 @@ LINGUAI.addStrings("pl", {
         why: "<i>Die Banken haben die Ratschläge der Experten ignoriert</i>. Dwie formy liczby mnogiej do starannego wyboru: <i>Banken</i>, nie <i>Bänke</i>, oraz <i>Ratschläge</i>, bo <i>Rat</i> w znaczeniu porady nie ma liczby mnogiej. Przyjmowane są też <i>Fachleute</i>, Präteritum <i>ignorierten</i> i czasownik <i>missachten</i>."
       },
       {
-        tr: "Na ławkach przed bankiem klienci czekali od wczesnego rana. W kilku słowach jeden z pracowników wyjaśnił, dlaczego oddział pozostaje zamknięty.",
+        tr: "Na ławkach przed bankiem klienci czekali od wczesnego rana. W kilku słowach jeden z pracowników wyjaśnił, dlaczego oddział był nadal zamknięty.",
         why: "W <i>Bänken</i> <b>ä</b> jest krótkie, [ɛ]; w <i>Angestellter</i> akcent pada na <b>An</b>; w <i>Filiale</i> akcent pada na długie <b>a</b>: fi-li-<b>a</b>-le."
       },
       {
@@ -789,7 +789,7 @@ LINGUAI.addStrings("pl", {
       examples: [
         { tr: "Poprawa warunków pracy powinna była nastąpić już dawno.", note: "verbessern + -ung: rzeczownik żeński od czasownika" },
         { tr: "Podziwiam jej spokój w trudnych sytuacjach.", note: "gelassen + -heit" },
-        { tr: "Specjaliści podają w wątpliwość trwałość efektów projektu.", note: "nachhaltig + -keit: -keit po -ig" },
+        { tr: "Specjaliści podają w wątpliwość zrównoważony charakter projektu.", note: "nachhaltig + -keit: -keit po -ig" },
         { tr: "Pomyliłem się, wpisując datę.", note: "sich verschreiben: ver- oznacza pomyłkę" },
         { tr: "W trakcie kłótni podarła list na drobne kawałki.", note: "zer-: rozpad na kawałki; imiesłów zerrissen, bez ge-" },
         { tr: "Cyfryzacja administracji publicznej postępuje bardzo powoli.", note: "digitalisieren + -ung: częsty wzorzec czasowników na -ieren" }
@@ -867,7 +867,7 @@ LINGUAI.addStrings("pl", {
         why: "<i>die Nation</i> i <i>die Qualität</i>: <b>-ion</b> i <b>-ität</b> dają rodzaj żeński. <i>das Dokument</i> jest nijakie, <i>der Optimismus</i> męski."
       },
       {
-        q: "Przetłumacz: „Trwałość efektów projektu została podana w wątpliwość.” (die Nachhaltigkeit, in Zweifel ziehen)",
+        q: "Przetłumacz: „Zrównoważony charakter projektu został podany w wątpliwość.” (die Nachhaltigkeit, in Zweifel ziehen)",
         why: "<i>Die Nachhaltigkeit des Projekts wurde in Zweifel gezogen</i> (albo <i>ist ... in Zweifel gezogen worden</i>). Przyjmowane są też czasownik prosty <i>bezweifeln</i> i dopełniacz <i>Projektes</i>."
       },
       {
