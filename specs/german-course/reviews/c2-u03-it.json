@@ -1,20 +1,95 @@
 {
-  "bundleHash": "9a3989f3c9111959172ba748b4a8290f622a47aee75a16d70052062009d29eb2",
+  "bundleHash": "903503411ff6660b7cc8b273657a5195c6523f5bcf53149b9e4b706f55f21410",
   "findings": [
     {
-      "kind": "traduzione e risposta ambigua",
-      "msg": "«Verificabile» in italiano può significare anche «controllabile» senza presupporre che la tesi sia vera. La consegna non distingue questo senso da quello di «verifizierbar», ma la spiegazione esclude «überprüfbar». Precisare nella frase italiana che si tratta di accertare la verità della tesi oppure accettare anche «Die These ist empirisch nicht überprüfbar».",
-      "path": "merged.lessons[2].exercises[7]"
+      "kind": "progressione didattica",
+      "msg": "Il test richiede ripetutamente attributi participiali estesi, ma nessuna delle lezioni dell’unità introduce o esercita questa struttura. Aggiungere un richiamo didattico prima della verifica oppure sostituire gli esercizi con contenuti insegnati nell’unità.",
+      "path": "merged.test.exercises[0]"
+    },
+    {
+      "kind": "progressione didattica",
+      "msg": "La scelta dell’attributo participiale esteso verifica una struttura che non compare nelle lezioni dell’unità. Prepararla esplicitamente prima del test oppure sostituire la domanda.",
+      "path": "merged.test.exercises[7]"
+    },
+    {
+      "kind": "progressione didattica",
+      "msg": "La traduzione richiede un attributo participiale esteso non presentato nelle lezioni dell’unità. Inserire prima un ripasso della struttura oppure verificare un contenuto già insegnato.",
+      "path": "merged.test.exercises[10]"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«zu wünschen übrig lassen» significa «lasciare a desiderare» ed esprime un giudizio negativo diretto; definirlo necessariamente una critica attenuata induce a confonderlo con una litote. Descriverlo come valutazione negativa.",
+      "path": "merged.lessons[0].exercises[3].why"
     },
     {
       "kind": "spiegazione lessicale",
-      "msg": "La distinzione è troppo categorica: «ordinär» può riferirsi anche a persone nel senso di «comune» o «ordinario», a seconda del contesto. Precisare che, riferito al comportamento descritto nell'esercizio, significa «volgare», senza limitare l'altra accezione alle cose.",
-      "path": "merged.lessons[2].exercises[2].why"
+      "msg": "«nicht ganz gelungen» significa «non del tutto riuscita» e, anche nel contesto dato, non equivale necessariamente a «fallita». Presentare «fallita» come possibile interpretazione più forte, dipendente dal contesto.",
+      "path": "merged.lessons[0].exercises[5].why"
     },
     {
-      "kind": "ortografia",
-      "msg": "Il saluto isolato è un'interiezione e va scritto con l'iniziale maiuscola: «Grüezi». Correggere anche la corrispondente voce in merged.",
-      "path": "neutral.lessons[1].exercises[6].pairs[3].it"
+      "kind": "spiegazione fonetica",
+      "msg": "L’ironia della battuta emerge dal contrasto fra la descrizione disastrosa e la formulazione attenuata; il tono asciutto la rafforza, ma non è l’unico segnale. Correggere «sta tutta nel tono piatto».",
+      "path": "merged.lessons[0].exercises[8].why"
+    },
+    {
+      "kind": "spiegazione didattica",
+      "msg": "La frase sostiene che l’ambiguità senza contesto renda ironica l’espressione. L’ambiguità, da sola, non produce ironia: occorrono indizi contestuali o intonativi che rendano riconoscibile il significato implicito. Riformulare.",
+      "path": "merged.lessons[0].theory[1].p"
+    },
+    {
+      "kind": "registro e varietà",
+      "msg": "La regola «Non mescolare le varietà in uno stesso testo» è troppo categorica: regionalismi condivisi, mobilità dei parlanti e scelte stilistiche possono coesistere anche in testi curati. Presentare la coerenza come indicazione contestuale, senza qualificare la combinazione come scorretta.",
+      "path": "merged.lessons[1].theory[3].trap"
+    },
+    {
+      "kind": "spiegazione fonetica",
+      "msg": "La distribuzione delle pronunce di «Chemie» è semplificata eccessivamente: [k] non caratterizza indistintamente tutta l’Austria e tutto il sud della Germania, e [ç] non è limitato al nord. Parlare di varianti regionali diffuse, senza attribuire a tutte le aree una pronuncia unica.",
+      "path": "merged.lessons[1].exercises[3].why"
+    },
+    {
+      "kind": "spiegazione fonetica",
+      "msg": "L’affermazione che «Chemie» e «China» in Austria e nel sud della Germania si dicano con [k] generalizza a intere aree una distribuzione regionale variabile. Precisare che [k] è una variante diffusa in alcune zone.",
+      "path": "merged.lessons[1].theory[3].trap"
+    },
+    {
+      "kind": "chiave di risposta",
+      "msg": "La chiave accetta «Tomate», ma nel contesto generico e in parallelismo con il plurale «Paradeiser» la risposta naturale è «Tomaten». Eliminare il singolare oppure riformulare la frase per renderlo appropriato.",
+      "path": "merged.lessons[1].exercises[4].a"
+    },
+    {
+      "kind": "spiegazione linguistica",
+      "msg": "Definire i dialetti semplicemente «lingue parlate regionali» esclude il loro uso scritto e presenta come netta una distinzione fra lingua e dialetto che non lo è. Descriverli come varietà linguistiche regionali, spesso soprattutto orali.",
+      "path": "merged.lessons[1].exercises[5].why"
+    },
+    {
+      "kind": "spiegazione linguistica",
+      "msg": "«Bavarese», «svevo» e «svizzero tedesco» designano insiemi di dialetti, non singoli dialetti omogenei. Precisare che sono gruppi o varietà dialettali.",
+      "path": "merged.lessons[1].theory[0].p"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Il fenomeno non si può spiegare con una causa sola» suggerisce che una spiegazione monocausale sia impossibile, mentre «nicht monokausal erklären» afferma che non lo si può spiegare in termini monocausali. Rendere più precisa la traduzione: «Il fenomeno non si può spiegare con un’unica causa».",
+      "path": "merged.lessons[2].grammar.examples[3].tr"
+    },
+    {
+      "kind": "spiegazione lessicale",
+      "msg": "La risposta presenta «gegenstandslos» come equivalente generale di «privo di validità» riferito a risultati di studio. Di norma significa che qualcosa è diventato privo di oggetto o irrilevante, non semplicemente invalido. Rimuoverlo dalle alternative o cambiare il contesto.",
+      "path": "merged.lessons[2].exercises[5].gaps[1]"
+    },
+    {
+      "kind": "spiegazione lessicale",
+      "msg": "«verifizieren» può significare verificare o accertare la correttezza di un’affermazione; la distinzione proposta non giustifica l’esclusione categorica di «überprüfbar» dalla traduzione italiana «verificabile». Chiedere esplicitamente una formulazione con «verifizieren» oppure accettare anche «überprüfbar» quando il contesto consente il senso di controllabilità.",
+      "path": "merged.lessons[2].exercises[7].why"
+    },
+    {
+      "kind": "spiegazione didattica",
+      "msg": "Affermare che il latinismo sia generalmente più preciso o tecnico e la scelta attesa in un saggio è una generalizzazione: la scelta dipende dal significato, dal registro e dal contesto. Riformulare come possibilità, non come regola.",
+      "path": "merged.lessons[2].theory[0].p"
+    },
+    {
+      "kind": "spiegazione morfologica",
+      "msg": "Le derivazioni in -enz/-anz e -ation/-ierung sono presentate come regole produttive senza eccezioni. Non ogni aggettivo in -ent/-ant o verbo in -ieren forma un nome secondo questi modelli. Specificare che sono schemi frequenti e che i derivati vanno verificati caso per caso.",
+      "path": "merged.lessons[2].grammar.note"
     }
   ],
   "lang": "it",
