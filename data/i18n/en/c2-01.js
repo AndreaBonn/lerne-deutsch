@@ -537,7 +537,7 @@ LINGUAI.addStrings("en", {
       "bench",
       "nut (for a bolt)",
       "dispute, quarrel",
-      "rainfall, rain shower",
+      "rainfall, spell of rain",
       "snowfall",
       "sport, type of sport",
       "idiom, set phrase",
@@ -631,7 +631,7 @@ LINGUAI.addStrings("en", {
         p: "A <strong>Fugenelement</strong> can appear between one element and the next: <em>-s-</em> (<em>Arbeitszeit, Wohnungsmarkt</em>), <em>-es-</em> (<em>Tageslicht</em>), <em>-e-</em> (<em>Hundebesitzer</em>), <em>-n-</em> or <em>-en-</em> (<em>Sonnenenergie, Leinenpflicht</em>), <em>-er-</em> (<em>Kinderbuch</em>); sometimes, instead, the final <em>-e</em> of the first element drops (<em>die Schule</em> → <em>Schulpflicht</em>). A reliable clue: after the suffixes <em>-ung, -heit, -keit, -schaft, -ion, -tät, -ling</em> the linking element is usually <em>-s-</em> (<em>Gesundheitswesen, Freiheitsstrafe, Universitätsbibliothek, Lieblingsbuch</em>). But it is a clue, not a guarantee, and in other cases the linking element has to be learned word by word, and sometimes it varies: <em>Schadensersatz</em> and <em>Schadenersatz</em> are both correct, and in Austria people say <em>Schweinsbraten</em> where Germany says <em>Schweinebraten</em>."
       },
       {
-        contrast: "English puts the modifier first, just like German: <em>housing market</em>, <em>university library</em>, <em>front door key</em>. The order is the same; the spelling is not. English mostly writes its compounds open, with spaces (<em>prison sentence, health care system</em>), sometimes with a hyphen, and closes them into one word only once they are well settled (<em>bookstore, toothbrush</em>). German closes every noun compound into a single word, however long: <em>Wohnungsmarkt, Universitätsbibliothek, Haustürschlüssel</em>. Read the German word as an English compound with the spaces taken out. English has almost no linking elements (<em>craftsman</em> and <em>statesman</em> are fossils), and the German <em>-s-</em> is not a possessive <em>'s</em>: it also appears after feminine nouns (<em>die Arbeit</em> → <em>Arbeitszeit</em>, <em>die Liebe</em> → <em>Liebesbrief</em>), which never take <em>-s</em> in the genitive."
+        contrast: "English puts the modifier first, just like German: <em>housing market</em>, <em>university library</em>, <em>front door key</em>. The order is the same; the spelling is not. English mostly writes its compounds open, with spaces (<em>prison sentence, health care system</em>), sometimes with a hyphen, and closes them into one word only once they are well settled (<em>bookstore, toothbrush</em>). German normally closes a noun compound into a single word, however long (a hyphen appears only in the cases described below): <em>Wohnungsmarkt, Universitätsbibliothek, Haustürschlüssel</em>. Read the German word as an English compound with the spaces taken out. English has almost no linking elements (<em>craftsman</em> and <em>statesman</em> are fossils), and the German <em>-s-</em> is not a possessive <em>'s</em>: it also appears after feminine nouns (<em>die Arbeit</em> → <em>Arbeitszeit</em>, <em>die Liebe</em> → <em>Liebesbrief</em>), which never take <em>-s</em> in the genitive."
       },
       {
         trap: "The gender always comes from the last element, even when the first one is more “visible”: <em>das Arbeitsamt</em> is neuter like <em>das Amt</em>, although <em>Arbeit</em> is feminine; <em>der Wohnungsmarkt</em> is masculine like <em>der Markt</em>. And the compound is never split, however natural a space looks to you: <em>Arbeitsbedingungen</em>, not <em>Arbeits Bedingungen</em>. A hyphen is used only for clarity or with abbreviations and proper names (<em>E-Mail-Adresse</em>)."
@@ -748,11 +748,11 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "Suffixes that decide the gender",
-        p: "A suffix moves a word into another word class and fixes its gender. <em>-ung</em> makes nouns from verbs: <em>verbessern</em> → <em>die Verbesserung</em>. <em>-heit</em>, <em>-keit</em> and <em>-igkeit</em> make nouns from adjectives: <em>frei</em> → <em>die Freiheit</em>, <em>nachhaltig</em> → <em>die Nachhaltigkeit</em>, <em>genau</em> → <em>die Genauigkeit</em>. Nouns in <strong>-ung, -heit, -keit, -schaft</strong> are always feminine and form their plural with <em>-en</em>."
+        p: "A suffix moves a word into another word class and fixes its gender. <em>-ung</em> makes nouns from verbs: <em>verbessern</em> → <em>die Verbesserung</em>. <em>-heit</em>, <em>-keit</em> and <em>-igkeit</em> make nouns from adjectives: <em>frei</em> → <em>die Freiheit</em>, <em>nachhaltig</em> → <em>die Nachhaltigkeit</em>, <em>genau</em> → <em>die Genauigkeit</em>. Nouns in <strong>-ung, -heit, -keit, -schaft</strong> are always feminine and, when they have a plural, form it with <em>-en</em>; many abstract nouns, such as <em>Gelassenheit</em>, have none."
       },
       {
         h: "-heit or -keit?",
-        p: "<strong>-keit</strong> follows adjectives in <em>-bar, -ig, -lich, -sam</em> (<em>Dankbarkeit, Nachhaltigkeit, Höflichkeit, Wirksamkeit</em>) and usually those in <em>-el</em> and <em>-er</em> (<em>Eitelkeit, Sauberkeit</em>), with exceptions such as <em>Sicherheit</em> and <em>Dunkelheit</em>. <strong>-heit</strong> applies in the other cases (<em>Freiheit, Gelassenheit, Schönheit</em>). <strong>-igkeit</strong> is added to adjectives in <em>-los</em> and to a few others: <em>Arbeitslosigkeit, Genauigkeit</em>."
+        p: "<strong>-keit</strong> follows adjectives in <em>-bar, -ig, -lich, -sam</em> (<em>Dankbarkeit, Nachhaltigkeit, Höflichkeit, Wirksamkeit</em>) and usually those in <em>-el</em> and <em>-er</em> (<em>Eitelkeit, Sauberkeit</em>), with exceptions such as <em>Sicherheit</em> and <em>Dunkelheit</em>. <strong>-heit</strong> applies in most other cases (<em>Freiheit, Gelassenheit, Schönheit</em>). <strong>-igkeit</strong> is added to adjectives in <em>-los</em> and to a few others: <em>Arbeitslosigkeit, Genauigkeit</em>."
       },
       {
         h: "Inseparable verb prefixes",
