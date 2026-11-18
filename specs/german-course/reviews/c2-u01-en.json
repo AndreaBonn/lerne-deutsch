@@ -1,10 +1,15 @@
 {
-  "bundleHash": "32cfffc3fdc4e62bcba599ad31d4690511700eb5e51b5025b66dcb8c0a6f604a",
+  "bundleHash": "f628b26c85e9be3b94518f3230efe5ee1fd5553cdaab55852451074166f6e146",
   "findings": [
     {
-      "kind": "pronunciation",
-      "msg": "The stress in «Ministerin» falls on «nis», not «te». Correct the pronunciation note to indicate «Mi-NIS-te-rin».",
-      "path": "merged.lessons[2].exercises[9].why"
+      "kind": "traduzione",
+      "msg": "La frase tedesca invita a consultare i documenti nell’allegato; non afferma che siano i documenti da presentare a essere allegati. Tradurre per esempio: “You will find the documents to be submitted by the end of the month in the appendix.”",
+      "path": "merged.lessons[1].grammar.examples[1].tr"
+    },
+    {
+      "kind": "spiegazione contrastiva",
+      "msg": "L’affermazione secondo cui un participio inglese con agente o complemento si sposta dopo il nome appena è espanso è troppo categorica: esistono gruppi prenominali come “government-funded research” ed “expert-approved proposals”. Precisare che la posizione postnominale è frequente, soprattutto con gruppi più lunghi, ma ammette eccezioni.",
+      "path": "merged.lessons[0].theory[2].contrast"
     }
   ],
   "lang": "en",

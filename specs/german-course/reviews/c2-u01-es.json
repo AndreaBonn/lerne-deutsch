@@ -1,20 +1,20 @@
 {
-  "bundleHash": "23b890a78f3a10b6a09e3832bd83fb4c33e10c1440dfcf399cf3c59838dda7d1",
+  "bundleHash": "bf0a39e60fa816b9118cff25b74d3d2f646b00f59eb07e041154e627ce523349",
   "findings": [
     {
       "kind": "traduzione",
-      "msg": "«Obran en su poder» attribuisce le domande all’autorità, ma la frase tedesca dice soltanto che sono disponibili da settimane. Correggere, per esempio, in «Las solicitudes que debe examinar la autoridad están disponibles desde hace semanas».",
-      "path": "merged.lessons[1].exercises[6].tr"
+      "msg": "«In Abrede stellen» significa «negar», non «rebatir», che implica una confutazione. Eliminare «rebatir» o sostituirlo con «rechazar» nel senso di negare.",
+      "path": "merged.lessons[2].vocab[8].tr"
     },
     {
-      "kind": "vocabolario",
-      "msg": "«Reparar un defecto» significa correggerlo, mentre «beanstanden» significa contestarlo o rilevarlo come difetto. Sostituire con «objetar, señalar un defecto» o «formular una objeción».",
-      "path": "merged.lessons[1].vocab[7].tr"
+      "kind": "spiegazione",
+      "msg": "L'affermazione che la norma colta spagnola sconsigli «a + infinito» in generale è troppo categorica: la costruzione è ammessa in alcuni contesti, anche se può risultare artificiosa o impropria in altri. Precisare le condizioni d'uso e presentare «que hay que presentar» come alternativa.",
+      "path": "merged.lessons[1].theory[2].contrast"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "L’affermazione secondo cui il gerundio spagnolo non è ammesso come aggettivo è troppo categorica: in alcuni contesti sono ammesse costruzioni di gerundio con valore descrittivo. Distinguere questi usi dalle costruzioni considerate improprie e precisare che non costituiscono un equivalente generale del participio attributivo tedesco.",
-      "path": "merged.lessons[0].theory[2].contrast"
+      "kind": "spiegazione",
+      "msg": "La procedura proposta per trasformare una relativa in attributo non conserva sempre il significato: una relativa con «müssen», per esempio, richiede un Gerundivum, mentre una relativa al futuro o con valore controfattuale non può essere ridotta automaticamente a un participio. Limitare la regola alle relative compatibili e precisare che modalità e tempo vanno verificati.",
+      "path": "merged.lessons[0].theory[4].tip"
     }
   ],
   "lang": "es",

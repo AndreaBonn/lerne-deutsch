@@ -1,20 +1,20 @@
 {
-  "bundleHash": "65713bfaba3c42c5044e52e94c6b406738487271b6b416f67442317fc9d4651f",
+  "bundleHash": "f4ee076479436e916788077ec54d3812c385b112f0b7b8189d695a79ced58723",
   "findings": [
     {
-      "kind": "traduzione",
-      "msg": "Il testo polacco «podważa» significa «mette in discussione», mentre tutte le risposte accettate usano «widerspricht», che significa «contraddice». Sostituire «podważa» con «przeczy» nella consegna, oppure accettare una traduzione tedesca fedele a «podważa», come «stellt … in Frage».",
+      "kind": "grammatica polacca",
+      "msg": "La frase polacca contiene una forma scorretta dopo «przeczy»: il verbo richiede il dativo. Sostituire «rozpowszechnionym dotąd założenia» con «rozpowszechnionym dotąd założeniom».",
       "path": "merged.lessons[0].exercises[7].q"
     },
     {
-      "kind": "traduzione",
-      "msg": "«Leżą w nim» aggiunge che le domande si trovano presso l’ufficio, informazione non espressa da «liegen seit Wochen vor». Tradurre, per esempio, con «Wnioski, które urząd ma rozpatrzyć, są dostępne od tygodni».",
-      "path": "merged.lessons[1].exercises[6].tr"
+      "kind": "pronuncia",
+      "msg": "In «Verantwortung» l’accento cade su «wort», non su «ant». Correggere l’indicazione fonetica.",
+      "path": "merged.lessons[2].exercises[9].why"
     },
     {
       "kind": "spiegazione grammaticale",
-      "msg": "La spiegazione afferma che tra articolo e sostantivo tutto dipende dal participio, ma nell’esempio «die in der Studie befragten, überwiegend jungen Erwachsenen» anche «überwiegend jungen» si trova fra i due e dipende dall’aggettivo «jungen». Precisare che possono esserci più attributi coordinati, ciascuno con le proprie determinazioni.",
-      "path": "merged.lessons[0].theory[0].p"
+      "msg": "L’affermazione secondo cui in tedesco una lunga costruzione participiale non può seguire il sostantivo è troppo assoluta: esistono gruppi participiali posposti, per esempio «die Reform, seit Jahren von Fachleuten gefordert». Precisare che la costruzione prenominale trattata nella lezione precede il sostantivo, mentre la costruzione posposta ha forma e punteggiatura proprie.",
+      "path": "merged.lessons[0].theory[2].contrast"
     }
   ],
   "lang": "pl",

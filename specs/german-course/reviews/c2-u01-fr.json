@@ -1,13 +1,7 @@
 {
-  "bundleHash": "08143009c4e8d50db502f86c2f137b72e3fc31d96ac3db966ad15f3c75ef3b07",
-  "findings": [
-    {
-      "kind": "traduction",
-      "msg": "La traduction « sont entre ses mains » affirme que l’administration possède les demandes, alors que la phrase allemande indique seulement qu’elles sont disponibles depuis des semaines. Corriger par exemple en « Les demandes que l’administration doit examiner sont disponibles depuis des semaines. »",
-      "path": "merged.lessons[1].exercises[6].tr"
-    }
-  ],
+  "bundleHash": "e419b6a0732c83c1c769b956667d69bfd00dce3b21584ddef218780f37c6cd52",
+  "findings": [],
   "lang": "fr",
   "unit": "c2-u01",
-  "verdict": "fail"
+  "verdict": "pass"
 }
