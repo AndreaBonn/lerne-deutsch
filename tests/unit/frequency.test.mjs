@@ -225,3 +225,30 @@ describe("frequency: the student's set without the lemma resolver", () => {
     assert.equal(uczen["das haus"], undefined, "no resolver, so no splitting of the card text");
   });
 });
+
+describe("frequency: the row carries the course entry", () => {
+  /* The dictionary key is lowercase and without article: right for matching,
+     wrong for a German card. "bescheid" added from the coverage screen lost
+     both the capital and the article ("der Bescheid"), and Txt.checkOpen
+     compares the capital strictly (D7). */
+  const LIVELLI = [{ units: [{ lessons: [{ vocab: [
+    { it: "Bescheid sagen" }, { it: "der Bescheid" }, { it: "das Haus" }, { it: "schnell" }
+  ] }] }] }];
+
+  test("an article + noun entry is what the row shows, whatever came first", () => {
+    const s = silnik();
+    const kurs = s.Lemma.zbudujSlownik(LIVELLI, []);
+    const braki = Array.from(s.Frequency.brakujace([["Bescheid", 9], ["Haus", 7], ["schnell", 5]], kurs, {}, 10));
+    const wpis = h => (braki.filter(b => b.haslo === h)[0] || {}).wpis;
+    assert.equal(wpis("bescheid"), "der Bescheid", "the noun gets its article and capital back");
+    assert.equal(wpis("haus"), "das Haus");
+    assert.equal(wpis("schnell"), "schnell", "a word without article stays as it is");
+  });
+
+  test("without Lemma.wpisKursu the row falls back to the key", () => {
+    const s = silnik();
+    s.Lemma.wpisKursu = undefined;
+    const braki = Array.from(s.Frequency.brakujace([["Haus", 9]], { haus: true }, {}, 10));
+    assert.equal(braki[0].wpis, "haus");
+  });
+});

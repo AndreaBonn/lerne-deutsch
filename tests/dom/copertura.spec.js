@@ -76,20 +76,23 @@ test("a frequency form maps to a C1 entry of the course", async ({ page }) => {
     { timeout: 15000 }
   );
 
-  const { poziomy, haslo } = await page.evaluate(() => {
+  const { poziomy, wpis, wiersze } = await page.evaluate(() => {
     const F = window.FREQUENCY;
     const kurs = window.Frequency.slownikKursu();
-    const wpis = window.Frequency.brakujace(F.words, kurs, {}, 100000)
-      .filter(b => b.formy.indexOf("Bescheid") >= 0)[0];
-    return { poziomy: window.Core.registry.levels.map(lv => lv.code), haslo: wpis ? wpis.haslo : null };
+    const b = window.Frequency.brakujace(F.words, kurs, {}, 100000)
+      .filter(x => x.formy.indexOf("Bescheid") >= 0)[0];
+    return {
+      poziomy: window.Core.registry.levels.map(lv => lv.code),
+      wpis: b ? b.wpis : null,
+      wiersze: Array.from(document.querySelectorAll("#covList .list-row")).map(r => r.getAttribute("data-haslo"))
+    };
   });
 
   expect(poziomy).toContain("C1");
-  /* Compared without case and article on purpose: which form the row SHOWS
-     ("bescheid" today, the course entry "der Bescheid" would be better) is a
-     separate question. This test pins that the link to C1 exists at all. */
-  const bare = haslo && haslo.toLowerCase().replace(/^(der|die|das) /, "");
-  expect(bare, "the frequency form Bescheid resolves to the C1 entry").toBe("bescheid");
+  expect(wpis, "the frequency form Bescheid resolves to the C1 entry, with article and capital").toBe("der Bescheid");
+  /* The screen itself: the rows are course entries, so the nouns among the
+     top gaps carry their article. Lowercase bare keys were what it showed. */
+  expect(wiersze.some(w => /^(der|die|das) [A-ZÄÖÜ]/.test(w)), wiersze.join(", ")).toBe(true);
 });
 
 test("the student's deck meets the frequency list at all", async ({ page }) => {

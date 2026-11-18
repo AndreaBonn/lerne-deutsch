@@ -7,6 +7,11 @@
   var dictionary = null;
   var known = null;
   var canonical = Object.create(null);
+  /* Bare noun key -> the entry the course teaches it with ("bescheid" ->
+     "der Bescheid"), for the coverage screen, whose card must keep article
+     and capital. Never reset: lemat() rebuilds the course dictionary in the
+     middle of a caller's pass, and a noun keeps its article across rebuilds. */
+  var entries = Object.create(null);
   var ARTICLE = /^(der|die|das|den|dem|des|ein|eine|einen|einem|einer|eines)\s+/i;
 
   function normalize(word) {
@@ -20,6 +25,9 @@
     if (!key) return;
     target[key] = true;
     canonical[key] = spelling;
+    if (ARTICLE.test(String(entry).trim()) && key.indexOf(" ") < 0) {
+      entries[key] = String(entry).trim().replace(/\s+/g, " ");
+    }
     if (key.indexOf(" ") < 0) return;
     spelling.split(/\s+/).forEach(function (word) {
       var token = normalize(word);
@@ -142,6 +150,8 @@
     dodajCzasowniki: addVerbs,
     zbudujSlownik: buildDictionary,
     dodajHaslo: addEntry,
+    /** The course entry for a dictionary key: with article for a noun, else the spelling, else "". */
+    wpisKursu: function (key) { return entries[key] || canonical[key] || ""; },
     odswiez: refresh,
     funkcyjne: M.funkcyjny,
     rozmiarIndeksu: function () { return Object.keys(buildIndex()).length; }
