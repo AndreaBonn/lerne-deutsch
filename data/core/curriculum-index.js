@@ -3,4 +3,4 @@ LINGUAI.registerLevel({ code: "A2", cefrLabel: "A2", dataFiles: ["a2-01.js", "a2
 LINGUAI.registerLevel({ code: "B1", cefrLabel: "B1", dataFiles: ["b1-01.js", "library-b1.js"] });
 LINGUAI.registerLevel({ code: "B2", cefrLabel: "B2", dataFiles: ["b2-01.js", "b2-02.js", "b2-03.js", "library-b2.js"] });
 LINGUAI.registerLevel({ code: "C1", cefrLabel: "C1", dataFiles: ["c1-01.js", "c1-02.js", "c1-03.js", "library-c1.js"] });
-LINGUAI.registerLevel({ code: "C2", cefrLabel: "C2", dataFiles: ["c2-01.js", "library-c2.js"] });
+LINGUAI.registerLevel({ code: "C2", cefrLabel: "C2", dataFiles: ["c2-01.js", "c2-02.js", "library-c2.js"] });
