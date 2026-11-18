@@ -35,7 +35,7 @@ LINGUAI.addStrings("fr", {
 
   "read:r-a2-wg": {
     title: "Une chambre à Leipzig",
-    gloss: ["la colocation (abréviation de Wohngemeinschaft)", "l'annonce", "charges comprises (dit du loyer : chauffage et charges indiquées inclus ; l'électricité se paie souvent à part)", "la visite (d'un logement)", "la colocataire"],
+    gloss: ["la colocation (abréviation de Wohngemeinschaft)", "l'annonce", "charges comprises (dit du loyer : chauffage compris, ainsi que les charges indiquées ; l'électricité se paie souvent à part)", "la visite (d'un logement)", "la colocataire"],
     lex: ["faire des études (à l'université)", "Leipzig", "chercher", "chambre, pièce", "mètre carré", "appartement", "cuisine", "balcon", "plante", "vide", "lumineux, clair", "calme", "poser, mettre (debout)", "mur", "bureau (le meuble)", "fenêtre", "message", "se réjouir, être content"]
   },
 
@@ -131,7 +131,7 @@ LINGUAI.addStrings("fr", {
 
   "read:r-c2-lob": {
     title: "Ne pas être grondé, c'est déjà un éloge",
-    gloss: ["se faire reconnaître (pour ce qu'on est)", "le proverbe", "le maximum qu'on puisse espérer", "exubérant, débordant", "mettre la puce à l'oreille, rendre méfiant", "cinglant, accablant", "la phrase ajoutée à la fin", "sagement, poliment (comme un enfant sage)", "la pique", "la litote, l'euphémisme", "vexé, blessé", "la bévue, l'impair", "prêter (une qualité) à quelqu'un"],
+    gloss: ["se faire reconnaître (pour ce qu'on est)", "le proverbe", "le maximum qu'on puisse espérer", "exubérant, débordant", "mettre la puce à l'oreille, rendre méfiant", "cinglant, accablant", "la phrase ajoutée à la fin", "sagement, poliment (comme un enfant sage)", "la pique", "l'atténuation, le fait de minimiser (proche de la litote)", "vexé, blessé", "la bévue, l'impair", "prêter (une qualité) à quelqu'un"],
     lex: ["espace (ici : le monde germanophone)", "éloge, compliment", "attendre", "décevoir", "souabe", "attitude", "répandu", "en passant", "supérieur (hiérarchique)", "parfois", "inversement", "se cacher", "avancer, formuler", "jugement", "décisif", "formulation exacte, teneur", "intonation, accentuation", "littéral", "sens", "remercier", "bienveillant", "ensemble de règles", "épargner (quelque chose à quelqu'un), décharger de", "tout au plus", "accoutumance, le fait de s'habituer", "acquérir", "franc-parler, franchise", "contradiction"]
   },
 
