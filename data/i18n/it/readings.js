@@ -120,25 +120,25 @@ LINGUAI.addStrings("it", {
   "read:r-c1-hochwasser": {
     title: "Dopo l'alluvione",
     gloss: ["la confluenza (la foce)", "apposto (affisso)", "il livello idrometrico", "registrato", "il piano terra", "fradicio", "smaltire", "che si attiva in fretta", "la disponibilità ad aiutare", "il fango", "il sacco di sabbia"],
-    lex: ["Passavia", "Inn", "Ilz", "Danubio", "piena (inondazione)", "esperienza", "centro storico", "segno (tacca)", "ricordare", "alluvione", "segno (livello segnato)", "giugno", "livello", "vicolo", "cantina", "per giorni", "negozio", "merce", "notevole", "danno", "social network", "chiamare a raccolta", "volontari", "studenti", "università", "spalare", "trascinare", "misura di protezione", "discutere", "muro", "vista", "fiume", "ricchezza", "pericolo"]
+    lex: ["Passavia", "Inn", "Ilz", "Danubio", "piena (inondazione)", "esperienza", "centro storico", "segno (tacca)", "ricordare", "alluvione", "segno (livello segnato)", "giugno", "livello", "vicolo", "cantina", "per giorni", "negozio", "merce", "notevole", "danno", "social network", "chiamare a raccolta", "volontari", "studenti", "università", "spalare", "trasportare a fatica", "misura di protezione", "discutere", "muro", "vista", "fiume", "ricchezza", "pericolo"]
   },
 
   "read:r-c1-betriebsrat": {
     title: "Il consiglio aziendale prende la parola",
     gloss: ["mettere in discussione (proporre al confronto)", "la regolamentazione dell'orario di lavoro", "il consiglio aziendale (rappresentanza dei lavoratori)", "sollevare (una questione)", "entrare in vigore", "il diritto di codeterminazione", "fare riferimento a", "far notare (obiettare)", "conciliare", "l'accordo aziendale", "tenere conto di", "ammettere"],
-    lex: ["di medie dimensioni", "ingegneria meccanica", "impresa", "Bielefeld", "direzione aziendale", "autunno", "in futuro", "dipendenti", "turno", "pianificare", "libertà", "consenso", "legge sull'ordinamento aziendale", "spettare", "assemblea del personale", "simile", "azienda (stabilimento)", "pressione", "aumentare", "genitori", "orari di apertura", "asilo nido", "trattativa", "realizzarsi (andare in porto)", "introdurre", "costringere", "con breve preavviso", "inserire (registrare)", "influenza", "sottovalutare", "prendere gusto a", "procedura"]
+    lex: ["di medie dimensioni", "ingegneria meccanica", "impresa", "Bielefeld", "direzione aziendale", "autunno", "in futuro", "dipendenti", "turno", "pianificare", "libertà", "consenso", "legge sull'ordinamento aziendale", "spettare", "assemblea del personale", "simile", "azienda (stabilimento)", "pressione", "aumentare", "genitori", "orari di apertura", "asilo (struttura diurna per l'infanzia)", "trattativa", "realizzarsi (andare in porto)", "introdurre", "costringere", "con breve preavviso", "inserire (registrare)", "influenza", "sottovalutare", "prendere gusto a", "procedura"]
   },
 
   "read:r-c2-lob": {
     title: "Se non ti sgrido, ti sto lodando",
     gloss: ["rendersi riconoscibile (dichiararsi)", "il proverbio", "il massimo che si possa sperare", "esuberante (entusiasta oltre misura)", "insospettire", "devastante (stroncante)", "la frase aggiunta in coda", "educatamente (da bravo bambino)", "la frecciata", "l'understatement (minimizzazione)", "offeso", "la gaffe (il passo falso)", "attribuire (una qualità a qualcuno)"],
-    lex: ["area (ambito)", "lode", "aspettarsi", "deludere", "svevo", "atteggiamento", "diffuso", "casuale (buttato lì)", "superiore (capo)", "talvolta", "al contrario", "nascondersi", "esporre (formulare)", "giudizio", "decisivo", "formulazione letterale", "intonazione", "letterale", "significato", "ringraziare", "benevolo", "insieme di regole", "risparmiare (togliere un compito a qualcuno)", "tutt'al più", "abitudine", "acquisire", "franchezza", "contraddizione"]
+    lex: ["area (ambito)", "lode", "aspettarsi", "deludere", "svevo", "atteggiamento", "diffuso", "detto di sfuggita (con noncuranza)", "superiore (capo)", "talvolta", "al contrario", "nascondersi", "esporre (formulare)", "giudizio", "decisivo", "formulazione esatta", "intonazione", "letterale", "significato", "ringraziare", "benevolo", "insieme di regole", "risparmiare (togliere un compito a qualcuno)", "tutt'al più", "abitudine", "acquisire", "franchezza", "contraddizione"]
   },
 
   "read:r-c2-arbeitszeugnis": {
     title: "Sempre con la nostra più piena soddisfazione",
     gloss: ["il certificato di servizio (referenza del datore di lavoro)", "per legge", "il conflitto di obiettivi", "nascere da", "vietare", "ciononostante", "subdolo", "lusingare", "attestare", "la socievolezza", "il clima aziendale", "insinuare (attribuire)", "rivelatore", "la decifrazione", "il genere testuale"],
-    lex: ["benevolo", "formulare", "verità", "corrispondere", "decennio", "lingua segreta", "esistenza", "ufficialmente", "ammettere", "legge", "cifrato", "espressamente", "ufficio del personale", "padroneggiare", "scala dei voti", "discutibile", "superlativo", "sempre (costantemente)", "soddisfazione", "soltanto", "sforzarsi", "combinare (portare a termine)", "miglioramento", "contribuire", "rapporto", "onestà", "cassiera", "menzionare", "forse", "circolare", "manuale (guida pratica)", "responsabili del personale", "cornetta del telefono", "nuocere", "produrre (generare)"]
+    lex: ["benevolo", "formulare", "verità", "corrispondere", "decennio", "lingua segreta", "esistenza", "ufficialmente", "ammettere", "legge", "esprimere (dire)", "espressamente", "ufficio del personale", "padroneggiare", "scala dei voti", "discutibile", "superlativo", "sempre (costantemente)", "soddisfazione", "soltanto", "sforzarsi", "combinare (portare a termine)", "miglioramento", "contribuire", "rapporto", "onestà", "cassiera", "menzionare", "forse", "circolare", "manuale (guida pratica)", "responsabili del personale", "cornetta del telefono", "nuocere", "produrre (generare)"]
   },
 
   "read:r-c2-heimat": {
