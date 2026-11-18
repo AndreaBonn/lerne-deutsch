@@ -1299,7 +1299,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         tr: "Masz ochotę przyjść w sobotę na moje przyjęcie? Niestety nie mam czasu, ale dziękuję za zaproszenie!",
-        why: "W <i>Einladung</i> <b>ei</b> to [aɪ]; w <i>Samstag</i> początkowe <b>s</b> jest dźwięczne [z]; w <i>besuchen</i> <b>ch</b> po <b>u</b> to [x], a <b>s</b> między samogłoskami jest dźwięczne [z]."
+        why: "W <i>Einladung</i> <b>ei</b> to [aɪ]; w <i>Samstag</i> początkowe <b>s</b> jest dźwięczne [z]; w <i>Zeit</i> <b>z</b> to [ts], a <b>ei</b> to [aɪ]."
       },
       {
         tr: "Masz ochotę pójść ze mną do kina?",
@@ -1415,7 +1415,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         tr: "Na południu Niemiec i w Austrii często mówi się Grüß Gott. W Szwajcarii często mówi się Grüezi. Między przyjaciółmi mówi się też Hallo.",
-        why: "W <i>Grüß</i> <b>ü</b> jest długie [yː], a <b>ß</b> to bezdźwięczne <b>s</b>; w <i>Österreich</i> <b>ö</b> jest długie [øː], a końcowe <b>ch</b> po <b>ei</b> to [ç]; w <i>Servus</i> początkowe <b>s</b> jest dźwięczne [z], a <b>v</b> to [v]."
+        why: "W <i>Grüß</i> <b>ü</b> jest długie [yː], a <b>ß</b> to bezdźwięczne <b>s</b>; w <i>Österreich</i> <b>ö</b> jest długie [øː], a końcowe <b>ch</b> po <b>ei</b> to [ç]; w <i>Schweiz</i> <b>sch</b> to [ʃ], a <b>w</b> to [v]."
       },
       {
         tr: "Zwyczaje są często różne w różnych regionach.",
@@ -1444,7 +1444,7 @@ LINGUAI.addStrings("pl", {
         contrast: "Po polsku przysłówek odprzymiotnikowy ma własną końcówkę: <em>wolny</em> → <em>wolno</em>, <em>szybki</em> → <em>szybko</em>, <em>głośny</em> → <em>głośno</em>. Po niemiecku nic się nie zmienia: <em>langsam</em> znaczy zarówno „wolny”, jak i „powoli”. Drugą różnicą jest szyk. Po polsku szyk jest swobodny i <em>Niestety nie mam czasu</em> nie wymaga niczego szczególnego, a po niemieckim przysłówku na początku czasownik musi być zaraz za nim: <em>Leider habe ich keine Zeit</em>. <em>Hoffentlich</em> jest przysłówkiem samym w sobie: po polsku jest <em>mam nadzieję, że przyjdziesz</em> albo <em>obyś przyszedł</em> (<em>obyś przyszła</em>), a po niemiecku <em>Hoffentlich kommst du</em>, bez <em>dass</em>."
       },
       {
-        trap: "<em>normal</em> to przymiotnik (<em>Das ist normal</em>), a „zwykle” mówi się <em>normalerweise</em>. Gdy jedno z tych słów otwiera zdanie, czasownik idzie zaraz po nim: <em>Leider habe ich keine Zeit</em>, nie «Leider ich habe keine Zeit» (polski szyk). I nie dodawaj do przysłówka końcówki: <em>Er spricht langsam</em>, nie «Er spricht langsame»."
+        trap: "<em>normal</em> znaczy „normalny” (<em>Das ist normal</em>), a jako przysłówek „normalnie, w zwykły sposób” (<em>Er spricht normal</em>); „zwykle” mówi się <em>normalerweise</em>. Gdy jedno z tych słów otwiera zdanie, czasownik idzie zaraz po nim: <em>Leider habe ich keine Zeit</em>, nie «Leider ich habe keine Zeit» (polski szyk). I nie dodawaj do przysłówka końcówki: <em>Er spricht langsam</em>, nie «Er spricht langsame»."
       },
       {
         tip: "Inne przydatne przysłówki do nauki razem z tymi: <em>deutlich</em> (wyraźnie), <em>leise</em> (cicho), <em>später</em> (później), <em>natürlich</em> (oczywiście)."
@@ -1538,7 +1538,7 @@ LINGUAI.addStrings("pl", {
   "lesson:a2-u07-test": {
     theme: "Sprawdzian",
     title: "Test: Święta i zwyczaje",
-    objectives: ["sprawdzić gratulieren i celownik, daty, zu + bezokolicznik, pozdrowienia w trzech obszarach i przysłówki"],
+    objectives: ["sprawdzić gratulieren i celownik, daty, zu + bezokolicznik i przysłówki"],
     theory: [
       {
         p: "Dziesięć pytań o jednostce. Zaliczenie od 70%. Nie zaglądaj do lekcji, odpowiadając: jeśli czegoś nie pamiętasz, lepiej wrócić do powtórki."

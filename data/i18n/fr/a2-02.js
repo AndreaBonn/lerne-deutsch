@@ -1197,7 +1197,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         h: "Verbes séparables et virgule",
-        p: "Avec un verbe séparable, <strong>zu se place au milieu</strong>, entre le préfixe et le verbe, et tout s'écrit en un seul mot : <em>mitkommen</em> → <em>Hast du Lust, mitzukommen?</em> ; <em>einladen</em> → <em>Es ist schön, Freunde einzuladen.</em> On met la <strong>virgule</strong> quand le groupe avec <em>zu</em> est étoffé, c'est-à-dire qu'il comprend d'autres mots que l'infinitif (<em>..., am Samstag zu meiner Party zu kommen</em>) ; après un nom comme <em>Lust</em> ou <em>Zeit</em>, on l'écrit en général toujours. Après un verbe, avec l'infinitif seul (<em>Ich versuche zu schlafen</em>), la virgule est facultative."
+        p: "Avec un verbe séparable, <strong>zu se place au milieu</strong>, entre le préfixe et le verbe, et tout s'écrit en un seul mot : <em>mitkommen</em> → <em>Hast du Lust, mitzukommen?</em> ; <em>einladen</em> → <em>Es ist schön, Freunde einzuladen.</em> La <strong>virgule</strong> est obligatoire quand le groupe avec <em>zu</em> dépend d'un nom comme <em>Lust</em> ou <em>Zeit</em> (<em>Hast du Lust, mitzukommen?</em>) ou d'un mot qui l'annonce ; dans les autres cas, par exemple après un verbe (<em>Ich versuche zu schlafen</em>), elle est souvent facultative."
       },
       {
         contrast: "Le français emploie <em>de</em> + infinitif : <em>tu as envie de venir ?</em>, <em>je n'ai pas le temps de cuisiner</em>. L'allemand a <em>zu</em> + infinitif, et le groupe de l'infinitif place l'infinitif à la fin : <em>am Samstag zu meiner Party zu kommen</em>, alors qu'en français les compléments restent après l'infinitif (<em>venir samedi à ma fête</em>). Le français n'a pas de verbes à préfixe séparable : <em>mitzukommen</em> (avec <em>zu</em> à l'intérieur du mot) est donc nouveau, alors qu'en français on dirait <em>venir avec</em>, en deux mots. Après les verbes modaux (<em>können, müssen, wollen</em>), en allemand il n'y a <strong>pas</strong> de <em>zu</em>, comme en français il n'y a pas de <em>de</em> après <em>pouvoir</em> ou <em>vouloir</em> : <em>Kannst du kommen?</em> (tu peux venir ?)."
@@ -1211,19 +1211,19 @@ LINGUAI.addStrings("fr", {
     ],
     grammar: {
       title: "zu + infinitif",
-      note: "<b>zu</b> + infinitif <b>à la fin</b> : <i>Ich habe Lust, ins Kino zu gehen.</i> Verbe séparable : <b>zu</b> au milieu (<i>mitzukommen</i>). Groupe étoffé : <b>virgule</b>. Après un verbe modal, pas de <i>zu</i>.",
+      note: "<b>zu</b> + infinitif <b>à la fin</b> : <i>Ich habe Lust, ins Kino zu gehen.</i> Verbe séparable : <b>zu</b> au milieu (<i>mitzukommen</i>). Après un nom (<i>Lust</i>, <i>Zeit</i>) : <b>virgule</b> obligatoire. Après un verbe modal, pas de <i>zu</i>.",
       table: {
         head: ["construction", "exemple", "remarque"],
         rows: [
           ["Lust haben", "Ich habe Lust, ins Kino zu gehen.", "zu devant l'infinitif, à la fin"],
-          ["keine Zeit haben", "Ich habe keine Zeit, am Samstag zu kommen.", "groupe étoffé : virgule"],
+          ["keine Zeit haben", "Ich habe keine Zeit, am Samstag zu kommen.", "après le nom Zeit : virgule obligatoire"],
           ["verbe séparable", "Hast du Lust, mitzukommen?", "zu au milieu : mitzukommen"],
           ["verbe modal", "Kannst du kommen?", "pas de zu"]
         ]
       },
       examples: [
         { tr: "Tu as envie de venir aussi ?", note: "mitkommen : zu au milieu, mitzukommen" },
-        { tr: "Tu as envie de venir samedi à ma fête ?", note: "groupe étoffé : virgule après Lust" },
+        { tr: "Tu as envie de venir samedi à ma fête ?", note: "après le nom Lust : virgule obligatoire" },
         { tr: "J'ai envie d'aller au cinéma.", note: "zu gehen : zu devant l'infinitif" },
         { tr: "Je n'ai pas le temps de venir samedi.", note: "keine Zeit, ... zu kommen" },
         { tr: "C'est agréable d'inviter des amis.", note: "einladen : zu au milieu, einzuladen" },
@@ -1299,7 +1299,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         tr: "Tu as envie de venir à ma fête samedi ? Malheureusement je n'ai pas le temps, mais merci pour l'invitation !",
-        why: "Dans <i>Einladung</i>, le <b>ei</b> est [aɪ] ; dans <i>Samstag</i>, le <b>s</b> initial est sonore [z] ; dans <i>besuchen</i>, le <b>ch</b> après <b>u</b> est [x] et le <b>s</b> entre deux voyelles est sonore [z]."
+        why: "Dans <i>Einladung</i>, le <b>ei</b> est [aɪ] ; dans <i>Samstag</i>, le <b>s</b> initial est sonore [z] ; dans <i>Zeit</i>, le <b>z</b> est [ts] et le <b>ei</b> est [aɪ]."
       },
       {
         tr: "Tu as envie de venir avec moi au cinéma ?",
@@ -1415,7 +1415,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         tr: "Dans le sud de l'Allemagne et en Autriche, on dit souvent Grüß Gott. En Suisse, on dit souvent Grüezi. Entre amis, on dit aussi Hallo.",
-        why: "Dans <i>Grüß</i>, le <b>ü</b> est long [yː] et le <b>ß</b> est un <b>s</b> sourd ; dans <i>Österreich</i>, le <b>ö</b> est long [øː] et le <b>ch</b> final après <b>ei</b> est [ç] ; dans <i>Servus</i>, le <b>s</b> initial est sonore [z] et le <b>v</b> est [v]."
+        why: "Dans <i>Grüß</i>, le <b>ü</b> est long [yː] et le <b>ß</b> est un <b>s</b> sourd ; dans <i>Österreich</i>, le <b>ö</b> est long [øː] et le <b>ch</b> final après <b>ei</b> est [ç] ; dans <i>Schweiz</i>, le <b>sch</b> est [ʃ] et le <b>w</b> est [v]."
       },
       {
         tr: "Les coutumes sont souvent différentes d'une région à l'autre.",
@@ -1444,7 +1444,7 @@ LINGUAI.addStrings("fr", {
         contrast: "Le français forme beaucoup d'adverbes avec <em>-ment</em> (<em>lentement, rapidement</em>) ou emploie l'adjectif tel quel (<em>il parle fort</em>) ; l'allemand emploie presque toujours l'adjectif tel quel : <em>langsam</em> veut dire à la fois « lent » et « lentement ». L'ordre des mots est l'autre différence : en français, <em>Malheureusement, je n'ai pas le temps</em> garde le sujet avant le verbe, mais en allemand, quand l'adverbe ouvre la phrase, le verbe vient tout de suite : <em>Leider habe ich keine Zeit</em>. Quant à <em>hoffentlich</em>, c'est un adverbe à lui seul : le français construit la phrase avec <em>j'espère que</em> ou <em>espérons que</em>, l'allemand non : <em>Hoffentlich kommst du</em>, sans <em>dass</em>."
       },
       {
-        trap: "<em>normal</em> est un adjectif (<em>Das ist normal</em>), alors que « normalement » se dit <em>normalerweise</em>. Quand l'un de ces mots ouvre la phrase, le verbe vient juste après : <em>Leider habe ich keine Zeit</em>, pas «Leider ich habe keine Zeit». Et n'ajoute pas de terminaison à l'adverbe : <em>Er spricht langsam</em>, pas «Er spricht langsame»."
+        trap: "<em>normal</em> veut dire « normal » (<em>Das ist normal</em>) et, comme adverbe, « de façon normale » (<em>Er spricht normal</em>) ; « normalement » au sens de « d'habitude » se dit <em>normalerweise</em>. Quand l'un de ces mots ouvre la phrase, le verbe vient juste après : <em>Leider habe ich keine Zeit</em>, pas «Leider ich habe keine Zeit». Et n'ajoute pas de terminaison à l'adverbe : <em>Er spricht langsam</em>, pas «Er spricht langsame»."
       },
       {
         tip: "D'autres adverbes utiles à apprendre avec ceux-ci : <em>deutlich</em> (clairement), <em>leise</em> (doucement, à voix basse), <em>später</em> (plus tard), <em>natürlich</em> (naturellement, bien sûr)."
@@ -1538,7 +1538,7 @@ LINGUAI.addStrings("fr", {
   "lesson:a2-u07-test": {
     theme: "Contrôle",
     title: "Test : Fêtes et coutumes",
-    objectives: ["vérifier gratulieren et le datif, les dates, zu + infinitif, les salutations dans les trois régions et les adverbes"],
+    objectives: ["vérifier gratulieren et le datif, les dates, zu + infinitif et les adverbes"],
     theory: [
       {
         p: "Dix questions sur l'unité. On réussit avec 70 %. Ne relis pas les leçons pendant que tu réponds : si tu ne te souviens pas de quelque chose, mieux vaut retourner réviser."

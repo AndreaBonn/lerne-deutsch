@@ -1119,7 +1119,7 @@ LINGUAI.addStrings("it", {
       "la torta, il dolce",
       "festeggiare",
       "la festa (tra amici)",
-      "la candelina"
+      "la candela"
     ],
     exercises: [
       {
@@ -1197,10 +1197,10 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Verbi separabili e virgola",
-        p: "Con un verbo separabile <strong>zu va in mezzo</strong>, tra il prefisso e il verbo, e si scrive tutto in una parola: <em>mitkommen</em> → <em>Hast du Lust, mitzukommen?</em>; <em>einladen</em> → <em>Es ist schön, Freunde einzuladen.</em> La <strong>virgola</strong> si mette quando il gruppo con <em>zu</em> è ampliato, cioè ha altre parole oltre all'infinito (<em>..., am Samstag zu meiner Party zu kommen</em>); dopo un nome come <em>Lust</em> o <em>Zeit</em> in genere si scrive sempre. Dopo un verbo, con l'infinito semplice (<em>Ich versuche zu schlafen</em>) la virgola è facoltativa."
+        p: "Con un verbo separabile <strong>zu va in mezzo</strong>, tra il prefisso e il verbo, e si scrive tutto in una parola: <em>mitkommen</em> → <em>Hast du Lust, mitzukommen?</em>; <em>einladen</em> → <em>Es ist schön, Freunde einzuladen.</em> La <strong>virgola</strong> è obbligatoria quando il gruppo con <em>zu</em> dipende da un nome come <em>Lust</em> o <em>Zeit</em> (<em>Hast du Lust, mitzukommen?</em>) o da una parola che lo anticipa; negli altri casi, per esempio dopo un verbo (<em>Ich versuche zu schlafen</em>), è spesso facoltativa."
       },
       {
-        contrast: "L'italiano usa <em>di</em> + infinito: <em>hai voglia di venire?</em>, <em>non ho tempo di cucinare</em>. Il tedesco ha <em>zu</em> + infinito, che sta sempre direttamente davanti al verbo e in fondo alla frase, mentre in italiano <em>di venire</em> segue subito il verbo principale. Dopo i verbi modali (<em>können, müssen, wollen</em>) in tedesco <strong>non</strong> c'è <em>zu</em>, come in italiano non c'è <em>di</em>: <em>Kannst du kommen?</em> (puoi venire?)."
+        contrast: "L'italiano usa <em>di</em> + infinito: <em>hai voglia di venire?</em>, <em>non ho tempo di cucinare</em>. Il tedesco ha <em>zu</em> + infinito, che sta davanti all'infinito e in fondo alla frase (nei verbi separabili entra fra prefisso e radice: <em>mitzukommen</em>), mentre in italiano <em>di venire</em> segue subito il verbo principale. Dopo i verbi modali (<em>können, müssen, wollen</em>) in tedesco <strong>non</strong> c'è <em>zu</em>, come in italiano non c'è <em>di</em>: <em>Kannst du kommen?</em> (puoi venire?)."
       },
       {
         trap: "Non si scrive «zu mitkommen» né «mit zu kommen»: la forma è <em>mitzukommen</em>, in una parola. E non si dice «Hast du Lust, kommen?»: serve <em>zu</em>, <em>Hast du Lust, zu kommen?</em>. Dopo un modale invece <em>zu</em> manca: <em>Ich kann kommen</em>, non «Ich kann zu kommen»."
@@ -1211,19 +1211,19 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "zu + infinito",
-      note: "<b>zu</b> + infinito <b>in fondo</b>: <i>Ich habe Lust, ins Kino zu gehen.</i> Verbo separabile: <b>zu</b> in mezzo (<i>mitzukommen</i>). Gruppo ampliato: <b>virgola</b>. Dopo un verbo modale nessun <i>zu</i>.",
+      note: "<b>zu</b> + infinito <b>in fondo</b>: <i>Ich habe Lust, ins Kino zu gehen.</i> Verbo separabile: <b>zu</b> in mezzo (<i>mitzukommen</i>). Dopo un nome (<i>Lust</i>, <i>Zeit</i>): <b>virgola</b> obbligatoria. Dopo un verbo modale nessun <i>zu</i>.",
       table: {
         head: ["costruzione", "esempio", "nota"],
         rows: [
           ["Lust haben", "Ich habe Lust, ins Kino zu gehen.", "zu davanti all'infinito, in fondo"],
-          ["keine Zeit haben", "Ich habe keine Zeit, am Samstag zu kommen.", "gruppo ampliato: virgola"],
+          ["keine Zeit haben", "Ich habe keine Zeit, am Samstag zu kommen.", "dopo il nome Zeit: virgola obbligatoria"],
           ["verbo separabile", "Hast du Lust, mitzukommen?", "zu in mezzo: mitzukommen"],
           ["verbo modale", "Kannst du kommen?", "nessun zu"]
         ]
       },
       examples: [
         { tr: "Hai voglia di venire anche tu?", note: "mitkommen: zu in mezzo, mitzukommen" },
-        { tr: "Hai voglia di venire sabato alla mia festa?", note: "gruppo ampliato: virgola dopo Lust" },
+        { tr: "Hai voglia di venire sabato alla mia festa?", note: "dopo il nome Lust: virgola obbligatoria" },
         { tr: "Ho voglia di andare al cinema.", note: "zu gehen: zu davanti all'infinito" },
         { tr: "Non ho tempo di venire sabato.", note: "keine Zeit, ... zu kommen" },
         { tr: "È bello invitare gli amici.", note: "einladen: zu in mezzo, einzuladen" },
@@ -1299,7 +1299,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Hai voglia di venire alla mia festa sabato? Purtroppo non ho tempo, ma grazie per l'invito!",
-        why: "In <i>Einladung</i> la <b>ei</b> è [aɪ]; in <i>Samstag</i> la <b>s</b> iniziale è sonora [z]; in <i>besuchen</i> la <b>ch</b> dopo <b>u</b> è [x] e la <b>s</b> tra due vocali è sonora [z]."
+        why: "In <i>Einladung</i> la <b>ei</b> è [aɪ]; in <i>Samstag</i> la <b>s</b> iniziale è sonora [z]; in <i>Zeit</i> la <b>z</b> è [ts] e la <b>ei</b> è [aɪ]."
       },
       {
         tr: "Hai voglia di venire con me al cinema?",
@@ -1415,7 +1415,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Nel sud della Germania e in Austria si dice spesso Grüß Gott. In Svizzera si dice spesso Grüezi. Tra amici si dice anche Hallo.",
-        why: "In <i>Grüß</i> la <b>ü</b> è lunga [yː] e la <b>ß</b> è una <b>s</b> sorda; in <i>Österreich</i> la <b>ö</b> è lunga [øː] e la <b>ch</b> finale dopo <b>ei</b> è [ç]; in <i>Servus</i> la <b>s</b> iniziale è sonora [z] e la <b>v</b> è [v]."
+        why: "In <i>Grüß</i> la <b>ü</b> è lunga [yː] e la <b>ß</b> è una <b>s</b> sorda; in <i>Österreich</i> la <b>ö</b> è lunga [øː] e la <b>ch</b> finale dopo <b>ei</b> è [ç]; in <i>Schweiz</i> la <b>sch</b> è [ʃ] e la <b>w</b> è [v]."
       },
       {
         tr: "Le usanze sono spesso diverse da una regione all'altra.",
@@ -1444,7 +1444,7 @@ LINGUAI.addStrings("it", {
         contrast: "L'italiano forma molti avverbi con <em>-mente</em> (<em>lentamente, velocemente</em>) o usa l'aggettivo uguale (<em>parla forte</em>); il tedesco usa quasi sempre l'aggettivo così com'è: <em>langsam</em> è sia «lento» sia «lentamente». <em>Hoffentlich</em> poi è un avverbio da solo: l'italiano costruisce la frase con un verbo (<em>spero che tu venga</em>, <em>speriamo che venga</em>), il tedesco no: <em>Hoffentlich kommst du</em>, senza <em>dass</em>."
       },
       {
-        trap: "<em>normal</em> è un aggettivo (<em>Das ist normal</em>), mentre «di solito» si dice <em>normalerweise</em>. Quando una di queste parole apre la frase, il verbo viene subito dopo: <em>Leider habe ich keine Zeit</em>, non «Leider ich habe keine Zeit». E non aggiungere una desinenza all'avverbio: <em>Er spricht langsam</em>, non «Er spricht langsame»."
+        trap: "<em>normal</em> vuol dire «normale» (<em>Das ist normal</em>) e, come avverbio, «in modo normale» (<em>Er spricht normal</em>), mentre «di solito» si dice <em>normalerweise</em>. Quando una di queste parole apre la frase, il verbo viene subito dopo: <em>Leider habe ich keine Zeit</em>, non «Leider ich habe keine Zeit». E non aggiungere una desinenza all'avverbio: <em>Er spricht langsam</em>, non «Er spricht langsame»."
       },
       {
         tip: "Altri avverbi utili da imparare insieme a questi: <em>deutlich</em> (chiaramente), <em>leise</em> (piano), <em>später</em> (più tardi), <em>natürlich</em> (naturalmente, certo)."
@@ -1527,7 +1527,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Di solito festeggio il compleanno a casa. Purtroppo sabato non ho tempo, ma forse festeggiamo più tardi.",
-        why: "In <i>normalerweise</i> la <b>w</b> è [v] e la <b>ei</b> è [aɪ]; in <i>vielleicht</i> la <b>v</b> è [f], la prima <b>i</b> è senza accento, che cade sulla seconda sillaba [fiˈlaɪçt], e la <b>ch</b> dopo <b>ei</b> è [ç]; in <i>später</i> la <b>sp</b> iniziale è [ʃp]."
+        why: "In <i>normalerweise</i> la <b>w</b> è [v] e la <b>ei</b> è [aɪ]; in <i>vielleicht</i> la <b>v</b> è [f], la prima <b>i</b> è breve e senza accento, che cade sulla seconda sillaba [fɪˈlaɪçt], e la <b>ch</b> dopo <b>ei</b> è [ç]; in <i>später</i> la <b>sp</b> iniziale è [ʃp]."
       },
       {
         tr: "Speriamo che tu venga alla festa. Forse festeggiamo più tardi.",
@@ -1538,7 +1538,7 @@ LINGUAI.addStrings("it", {
   "lesson:a2-u07-test": {
     theme: "Verifica",
     title: "Test: Feste e usanze",
-    objectives: ["verificare gratulieren e il dativo, le date, zu + infinito, i saluti nelle tre aree e gli avverbi"],
+    objectives: ["verificare gratulieren e il dativo, le date, zu + infinito e gli avverbi"],
     theory: [
       {
         p: "Dieci domande sull'unità. Si supera con il 70%. Non riguardare le lezioni mentre rispondi: se non ricordi qualcosa, è meglio tornare a ripassare."

@@ -1,15 +1,15 @@
 {
-  "bundleHash": "e195300be52769380d00788b05f971be875cacb4713e1bdc1e546dc2d9a773b5",
+  "bundleHash": "4cf9511e52064d4935791fc0e33e978e2d955439773fe0b575bde3189151dd4b",
   "findings": [
     {
       "kind": "pronuncia",
-      "msg": "La prima i di vielleicht è lunga, non breve: la pronuncia standard è [fiˈlaɪçt], con [i] non accentata. Eliminare «breve» dalla spiegazione; la trascrizione già riportata non indica [ɪ].",
+      "msg": "La trascrizione [fiˈlaɪçt] rappresenta la prima vocale come [i], mentre in «vielleicht» è breve e rilassata: [fɪˈlaɪçt]. Correggere la trascrizione fonetica.",
       "path": "merged.lessons[3].exercises[8].why"
     },
     {
-      "kind": "risposte_ambigue",
-      "msg": "Il cloze non determina risposte uniche: «Er spricht deutlich» è altrettanto coerente con «ich verstehe ihn gut»; nella seconda lacuna sono grammaticalmente possibili anche Vielleicht e Natürlich. La traduzione italiana suggerisce le risposte previste, ma la consegna non richiede di seguirla. Specificare «Completa seguendo la traduzione italiana» oppure aggiungere indizi espliciti («lentamente», «speriamo che») alle singole lacune.",
-      "path": "merged.lessons[3].exercises[7]"
+      "kind": "spiegazione grammaticale",
+      "msg": "La spiegazione afferma che «zu» sta sempre direttamente davanti al verbo, ma nei verbi separabili si inserisce tra prefisso e radice, come in «mitzukommen». Precisare che precede l'infinito nei verbi non separabili e si inserisce nel verbo separabile.",
+      "path": "merged.lessons[1].theory[2].contrast"
     }
   ],
   "lang": "it",

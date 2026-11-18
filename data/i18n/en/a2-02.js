@@ -1119,7 +1119,7 @@ LINGUAI.addStrings("en", {
       "the cake",
       "to celebrate",
       "the party (among friends)",
-      "the little candle"
+      "the candle"
     ],
     exercises: [
       {
@@ -1197,7 +1197,7 @@ LINGUAI.addStrings("en", {
       },
       {
         h: "Separable verbs and the comma",
-        p: "With a separable verb <strong>zu goes in the middle</strong>, between the prefix and the verb, and everything is written as one word: <em>mitkommen</em> → <em>Hast du Lust, mitzukommen?</em>; <em>einladen</em> → <em>Es ist schön, Freunde einzuladen.</em> The <strong>comma</strong> is used when the group with <em>zu</em> is expanded, that is, it has other words besides the infinitive (<em>..., am Samstag zu meiner Party zu kommen</em>); after a noun like <em>Lust</em> or <em>Zeit</em> it is generally always written. After a verb, with a plain infinitive (<em>Ich versuche zu schlafen</em>), the comma is optional."
+        p: "With a separable verb <strong>zu goes in the middle</strong>, between the prefix and the verb, and everything is written as one word: <em>mitkommen</em> → <em>Hast du Lust, mitzukommen?</em>; <em>einladen</em> → <em>Es ist schön, Freunde einzuladen.</em> The <strong>comma</strong> is required when the group with <em>zu</em> depends on a noun like <em>Lust</em> or <em>Zeit</em> (<em>Hast du Lust, mitzukommen?</em>) or on a word that announces it; in other cases, for example after a verb (<em>Ich versuche zu schlafen</em>), it is often optional."
       },
       {
         contrast: "English also has “to” + infinitive, so <em>zu</em> looks familiar, but the match is partial. <em>Hast du Lust</em> is “do you feel like”, and English follows “feel like” with an <em>-ing</em> form (“feel like coming”), while German uses <em>zu</em> + infinitive. German <em>zu</em> also stands directly before the infinitive at the end of the clause, and with a separable verb it moves inside the word: <em>mitzukommen</em>, where English keeps “to come along” as separate words. The biggest trap is <em>wollen</em>: English says “I want <b>to</b> come”, but German modal verbs take no <em>zu</em>: <em>Ich will kommen</em>, <em>Kannst du kommen?</em>"
@@ -1211,19 +1211,19 @@ LINGUAI.addStrings("en", {
     ],
     grammar: {
       title: "zu + infinitive",
-      note: "<b>zu</b> + infinitive <b>at the end</b>: <i>Ich habe Lust, ins Kino zu gehen.</i> Separable verb: <b>zu</b> in the middle (<i>mitzukommen</i>). Expanded group: <b>comma</b>. After a modal verb no <i>zu</i>.",
+      note: "<b>zu</b> + infinitive <b>at the end</b>: <i>Ich habe Lust, ins Kino zu gehen.</i> Separable verb: <b>zu</b> in the middle (<i>mitzukommen</i>). After a noun (<i>Lust</i>, <i>Zeit</i>): <b>comma</b> required. After a modal verb no <i>zu</i>.",
       table: {
         head: ["construction", "example", "note"],
         rows: [
           ["Lust haben", "Ich habe Lust, ins Kino zu gehen.", "zu before the infinitive, at the end"],
-          ["keine Zeit haben", "Ich habe keine Zeit, am Samstag zu kommen.", "expanded group: comma"],
+          ["keine Zeit haben", "Ich habe keine Zeit, am Samstag zu kommen.", "after the noun Zeit: comma required"],
           ["separable verb", "Hast du Lust, mitzukommen?", "zu in the middle: mitzukommen"],
           ["modal verb", "Kannst du kommen?", "no zu"]
         ]
       },
       examples: [
         { tr: "Do you feel like coming along too?", note: "mitkommen: zu in the middle, mitzukommen" },
-        { tr: "Do you feel like coming to my party on Saturday?", note: "expanded group: comma after Lust" },
+        { tr: "Do you feel like coming to my party on Saturday?", note: "after the noun Lust: comma required" },
         { tr: "I feel like going to the movies.", note: "zu gehen: zu before the infinitive" },
         { tr: "I don't have time to come on Saturday.", note: "keine Zeit, ... zu kommen" },
         { tr: "It is nice to invite friends.", note: "einladen: zu in the middle, einzuladen" },
@@ -1292,14 +1292,14 @@ LINGUAI.addStrings("en", {
           },
           { tr: "Great! Can you bring a cake?" },
           {
-            tr: "Say yes and say you feel like making a cake.",
-            answerTr: "Yes, gladly. I feel like making a cake."
+            tr: "Say yes and say you feel like baking a cake.",
+            answerTr: "Yes, gladly. I feel like baking a cake."
           }
         ]
       },
       {
         tr: "Do you feel like coming to my party on Saturday? Unfortunately I don't have time, but thank you for the invitation!",
-        why: "In <i>Einladung</i> the <b>ei</b> is [aɪ]; in <i>Samstag</i> the initial <b>s</b> is voiced [z]; in <i>besuchen</i> the <b>ch</b> after <b>u</b> is [x] and the <b>s</b> between two vowels is voiced [z]."
+        why: "In <i>Einladung</i> the <b>ei</b> is [aɪ]; in <i>Samstag</i> the initial <b>s</b> is voiced [z]; in <i>Zeit</i> the <b>z</b> is [ts] and the <b>ei</b> is [aɪ]."
       },
       {
         tr: "Do you feel like coming to the movies with me?",
@@ -1415,7 +1415,7 @@ LINGUAI.addStrings("en", {
       },
       {
         tr: "In southern Germany and in Austria people often say Grüß Gott. In Switzerland people often say Grüezi. Among friends people also say Hallo.",
-        why: "In <i>Grüß</i> the <b>ü</b> is long [yː] and the <b>ß</b> is a voiceless <b>s</b>; in <i>Österreich</i> the <b>ö</b> is long [øː] and the final <b>ch</b> after <b>ei</b> is [ç]; in <i>Servus</i> the initial <b>s</b> is voiced [z] and the <b>v</b> is [v]."
+        why: "In <i>Grüß</i> the <b>ü</b> is long [yː] and the <b>ß</b> is a voiceless <b>s</b>; in <i>Österreich</i> the <b>ö</b> is long [øː] and the final <b>ch</b> after <b>ei</b> is [ç]; in <i>Schweiz</i> the <b>sch</b> is [ʃ] and the <b>w</b> is [v]."
       },
       {
         tr: "Customs are often different from one region to another.",
@@ -1444,7 +1444,7 @@ LINGUAI.addStrings("en", {
         contrast: "English forms most adverbs with <em>-ly</em> (<em>slowly, quickly</em>), though some keep the adjective form (“talk loud”, “drive fast”); German uses the adjective as it is almost every time: <em>langsam</em> is both “slow” and “slowly”. Word order is the other difference. In English a sentence adverb at the start changes nothing (“Unfortunately I have no time”), but in German the verb must come second: <em>Leider habe ich keine Zeit</em>. <em>Hoffentlich</em> is close to English “hopefully”, but it also stands for a whole clause, “I hope you come”, with no <em>dass</em> and no extra verb: <em>Hoffentlich kommst du</em>."
       },
       {
-        trap: "<em>normal</em> is an adjective (<em>Das ist normal</em>), while “usually” is <em>normalerweise</em>. When one of these words opens the sentence, the verb comes right after it: <em>Leider habe ich keine Zeit</em>, not “Leider ich habe keine Zeit” (the English order). And don't add an ending to the adverb: <em>Er spricht langsam</em>, not “Er spricht langsame”."
+        trap: "<em>normal</em> means “normal” (<em>Das ist normal</em>) and, as an adverb, “in a normal way” (<em>Er spricht normal</em>), while “usually” is <em>normalerweise</em>. When one of these words opens the sentence, the verb comes right after it: <em>Leider habe ich keine Zeit</em>, not “Leider ich habe keine Zeit” (the English order). And don't add an ending to the adverb: <em>Er spricht langsam</em>, not “Er spricht langsame”."
       },
       {
         tip: "Other useful adverbs to learn together with these: <em>deutlich</em> (clearly), <em>leise</em> (quietly), <em>später</em> (later), <em>natürlich</em> (naturally, of course)."
@@ -1538,7 +1538,7 @@ LINGUAI.addStrings("en", {
   "lesson:a2-u07-test": {
     theme: "Test",
     title: "Test: Celebrations and Customs",
-    objectives: ["check gratulieren and the dative, dates, zu + infinitive, greetings in the three areas and adverbs"],
+    objectives: ["check gratulieren and the dative, dates, zu + infinitive and adverbs"],
     theory: [
       {
         p: "Ten questions on the unit. You pass with 70%. Don't look back at the lessons while you answer: if you don't remember something, it is better to go back and review."

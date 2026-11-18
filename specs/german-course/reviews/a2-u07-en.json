@@ -1,15 +1,25 @@
 {
-  "bundleHash": "7d92d02094385f28ee4882b153e404681ce31d327ccea1a8c607b93612d3f3af",
+  "bundleHash": "fb67f33a7f7d1a34625e8958be1b61f61bc9213ccab3de38d6cfe2c7f7351501",
   "findings": [
     {
-      "kind": "ambiguous-exercise",
-      "msg": "Il testo non determina le risposte previste: nel primo spazio sono corretti anche «deutlich» e «leise», già insegnati nella lezione; nel secondo sono possibili, fra gli altri, «Vielleicht» e «Natürlich». Aggiungere indicazioni inglesi per ciascuno spazio, per esempio «slowly» e «hopefully», oppure accettare le alternative coerenti. Correggere anche neutral.lessons[3].exercises[7].",
-      "path": "merged.lessons[3].exercises[7]"
+      "kind": "pronuncia",
+      "msg": "La s iniziale di «Samstag» è sorda [z] non è corretta: nella pronuncia standard tedesca è [z] solo in alcune varianti regionali; indicare [z̥] o [s] secondo la pronuncia adottata e non presentare [z] come universale.",
+      "path": "merged.lessons[1].exercises[8].why"
     },
     {
-      "kind": "ambiguous-exercise",
-      "msg": "Il secondo spazio ammette anche «Bayern»: «In Bayern sagt man oft Servus» è corretto ed è coerente con la spiegazione della lezione, ma la chiave accetta soltanto «Österreich». Specificare «Austria» come suggerimento oppure aggiungere «Bayern» alle risposte accettate, anche in neutral.lessons[2].exercises[7].",
-      "path": "merged.lessons[2].exercises[7]"
+      "kind": "pronuncia",
+      "msg": "La stessa indicazione sulla s iniziale di «Samstag» va corretta anche nel test: la pronuncia standard consueta è sorda [s], non sonora [z].",
+      "path": "merged.test.exercises[8].why"
+    },
+    {
+      "kind": "ambiguità",
+      "msg": "Il primo spazio ammette anche «deutlich»: «Er spricht deutlich, und ich verstehe ihn gut» è naturale, ma la chiave accetta solo «langsam». Aggiungere «deutlich» alle risposte oppure fornire un indizio che specifichi «slowly».",
+      "path": "merged.lessons[3].exercises[7].gaps[0]"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«making a cake» non specifica la cottura, mentre «einen Kuchen backen» significa «baking a cake». Usare «baking a cake» sia nell'istruzione sia nella traduzione della risposta.",
+      "path": "merged.lessons[1].exercises[7].lines[3]"
     }
   ],
   "lang": "en",

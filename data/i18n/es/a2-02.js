@@ -1119,7 +1119,7 @@ LINGUAI.addStrings("es", {
       "la tarta, el pastel",
       "celebrar",
       "la fiesta (entre amigos)",
-      "la velita"
+      "la vela"
     ],
     exercises: [
       {
@@ -1197,7 +1197,7 @@ LINGUAI.addStrings("es", {
       },
       {
         h: "Verbos separables y coma",
-        p: "Con un verbo separable <strong>zu va en medio</strong>, entre el prefijo y el verbo, y todo se escribe en una palabra: <em>mitkommen</em> → <em>Hast du Lust, mitzukommen?</em>; <em>einladen</em> → <em>Es ist schön, Freunde einzuladen.</em> La <strong>coma</strong> se pone cuando el grupo con <em>zu</em> está ampliado, es decir, tiene otras palabras además del infinitivo (<em>..., am Samstag zu meiner Party zu kommen</em>); tras un sustantivo como <em>Lust</em> o <em>Zeit</em> suele escribirse siempre. Tras un verbo, con el infinitivo simple (<em>Ich versuche zu schlafen</em>), la coma es facultativa."
+        p: "Con un verbo separable <strong>zu va en medio</strong>, entre el prefijo y el verbo, y todo se escribe en una palabra: <em>mitkommen</em> → <em>Hast du Lust, mitzukommen?</em>; <em>einladen</em> → <em>Es ist schön, Freunde einzuladen.</em> La <strong>coma</strong> es obligatoria cuando el grupo con <em>zu</em> depende de un sustantivo como <em>Lust</em> o <em>Zeit</em> (<em>Hast du Lust, mitzukommen?</em>) o de una palabra que lo anticipa; en los demás casos, por ejemplo tras un verbo (<em>Ich versuche zu schlafen</em>), suele ser facultativa."
       },
       {
         contrast: "El español usa <em>de</em> + infinitivo: <em>¿tienes ganas de venir?</em>, <em>no tengo tiempo de cocinar</em>. El alemán tiene <em>zu</em> + infinitivo, y en español el infinitivo sigue a <em>ganas de</em> o <em>tiempo de</em>, mientras que en alemán los complementos suelen ir antes de <em>zu</em> + infinitivo: <em>Lust, am Samstag ins Kino zu gehen</em>. Como el español no tiene verbos con prefijo separable, <em>mitzukommen</em> (con <em>zu</em> dentro de la palabra) es nuevo: en español sería <em>venir con</em>, en dos palabras. Tras los verbos modales (<em>können, müssen, wollen</em>) en alemán <strong>no</strong> hay <em>zu</em>, igual que en español no hay <em>de</em> tras <em>poder</em> o <em>querer</em>: <em>Kannst du kommen?</em> (¿puedes venir?)."
@@ -1211,19 +1211,19 @@ LINGUAI.addStrings("es", {
     ],
     grammar: {
       title: "zu + infinitivo",
-      note: "<b>zu</b> + infinitivo <b>al final</b>: <i>Ich habe Lust, ins Kino zu gehen.</i> Verbo separable: <b>zu</b> en medio (<i>mitzukommen</i>). Grupo ampliado: <b>coma</b>. Tras un verbo modal no hay <i>zu</i>.",
+      note: "<b>zu</b> + infinitivo <b>al final</b>: <i>Ich habe Lust, ins Kino zu gehen.</i> Verbo separable: <b>zu</b> en medio (<i>mitzukommen</i>). Tras un sustantivo (<i>Lust</i>, <i>Zeit</i>): <b>coma</b> obligatoria. Tras un verbo modal no hay <i>zu</i>.",
       table: {
         head: ["construcción", "ejemplo", "nota"],
         rows: [
           ["Lust haben", "Ich habe Lust, ins Kino zu gehen.", "zu delante del infinitivo, al final"],
-          ["keine Zeit haben", "Ich habe keine Zeit, am Samstag zu kommen.", "grupo ampliado: coma"],
+          ["keine Zeit haben", "Ich habe keine Zeit, am Samstag zu kommen.", "tras el sustantivo Zeit: coma obligatoria"],
           ["verbo separable", "Hast du Lust, mitzukommen?", "zu en medio: mitzukommen"],
           ["verbo modal", "Kannst du kommen?", "sin zu"]
         ]
       },
       examples: [
         { tr: "¿Tienes ganas de venir tú también?", note: "mitkommen: zu en medio, mitzukommen" },
-        { tr: "¿Tienes ganas de venir el sábado a mi fiesta?", note: "grupo ampliado: coma tras Lust" },
+        { tr: "¿Tienes ganas de venir el sábado a mi fiesta?", note: "tras el sustantivo Lust: coma obligatoria" },
         { tr: "Tengo ganas de ir al cine.", note: "zu gehen: zu delante del infinitivo" },
         { tr: "No tengo tiempo de venir el sábado.", note: "keine Zeit, ... zu kommen" },
         { tr: "Es bonito invitar a los amigos.", note: "einladen: zu en medio, einzuladen" },
@@ -1269,7 +1269,7 @@ LINGUAI.addStrings("es", {
         pairs: ["invitar", "cancelar, declinar", "aceptar (una invitación)", "sorpresa"]
       },
       {
-        tr: "¿Tienes ganas de venir a visitarnos?",
+        tr: "¿Tienes ganas de visitarnos?",
         why: "<i>Hast du Lust, uns zu besuchen?</i>: la coma tras <i>Lust</i>, <i>zu</i> directamente delante de <i>besuchen</i>, al final."
       },
       {
@@ -1415,7 +1415,7 @@ LINGUAI.addStrings("es", {
       },
       {
         tr: "En el sur de Alemania y en Austria se dice a menudo Grüß Gott. En Suiza se dice a menudo Grüezi. Entre amigos se dice también Hallo.",
-        why: "En <i>Grüß</i> la <b>ü</b> es larga [yː] y la <b>ß</b> es una <b>s</b> sorda; en <i>Österreich</i> la <b>ö</b> es larga [øː] y la <b>ch</b> final tras <b>ei</b> es [ç]; en <i>Servus</i> la <b>s</b> inicial es sonora [z] y la <b>v</b> es [v]."
+        why: "En <i>Grüß</i> la <b>ü</b> es larga [yː] y la <b>ß</b> es una <b>s</b> sorda; en <i>Österreich</i> la <b>ö</b> es larga [øː] y la <b>ch</b> final tras <b>ei</b> es [ç]; en <i>Schweiz</i> la <b>sch</b> es [ʃ] y la <b>w</b> es [v]."
       },
       {
         tr: "Las costumbres suelen ser distintas de una región a otra.",
@@ -1444,7 +1444,7 @@ LINGUAI.addStrings("es", {
         contrast: "El español forma muchos adverbios con <em>-mente</em> (<em>lentamente, rápidamente</em>) o usa el adjetivo en masculino (<em>habla alto</em>, <em>conduce rápido</em>); el alemán usa casi siempre el adjetivo tal cual: <em>langsam</em> es a la vez «lento» y «lentamente». Hay otra diferencia en el orden de las palabras: en español se dice <em>Lamentablemente, yo no tengo tiempo</em>, pero el sujeto puede omitirse (<em>Lamentablemente no tengo tiempo</em>); en alemán el sujeto es obligatorio y, si el adverbio abre la frase, va detrás del verbo: <em>Leider habe ich keine Zeit</em>. Y <em>hoffentlich</em> es un adverbio por sí solo: el español construye la frase con <em>espero que</em> o con <em>ojalá</em> y subjuntivo (<em>ojalá vengas</em>), el alemán usa el indicativo y no pone <em>dass</em>: <em>Hoffentlich kommst du</em>."
       },
       {
-        trap: "<em>normal</em> es un adjetivo (<em>Das ist normal</em>), mientras que «normalmente» se dice <em>normalerweise</em>. Cuando una de estas palabras abre la frase, el verbo va justo después: <em>Leider habe ich keine Zeit</em>, no «Leider ich habe keine Zeit». Y no añadas terminación al adverbio: <em>Er spricht langsam</em>, no «Er spricht langsame»."
+        trap: "<em>normal</em> significa «normal» (<em>Das ist normal</em>) y, como adverbio, «de forma normal» (<em>Er spricht normal</em>); «normalmente» en el sentido de «por lo general» se dice <em>normalerweise</em>. Cuando una de estas palabras abre la frase, el verbo va justo después: <em>Leider habe ich keine Zeit</em>, no «Leider ich habe keine Zeit». Y no añadas terminación al adverbio: <em>Er spricht langsam</em>, no «Er spricht langsame»."
       },
       {
         tip: "Otros adverbios útiles para aprender junto con estos: <em>deutlich</em> (claramente), <em>leise</em> (bajito, en voz baja), <em>später</em> (más tarde), <em>natürlich</em> (naturalmente, claro)."
@@ -1538,7 +1538,7 @@ LINGUAI.addStrings("es", {
   "lesson:a2-u07-test": {
     theme: "Prueba",
     title: "Test: Fiestas y costumbres",
-    objectives: ["comprobar gratulieren y el dativo, las fechas, zu + infinitivo, los saludos en las tres zonas y los adverbios"],
+    objectives: ["comprobar gratulieren y el dativo, las fechas, zu + infinitivo y los adverbios"],
     theory: [
       {
         p: "Diez preguntas sobre la unidad. Se supera con el 70%. No vuelvas a mirar las lecciones mientras respondes: si no recuerdas algo, es mejor volver a repasar."

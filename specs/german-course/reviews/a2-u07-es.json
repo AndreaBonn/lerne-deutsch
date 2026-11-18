@@ -1,7 +1,28 @@
 {
-  "bundleHash": "d4245c1718e657e3580726fa35ef832dbea4fa40e1799cfc8c48689830f9f4c0",
-  "findings": [],
+  "bundleHash": "8c29d967e5dfd2ae5508d5e09ace37285230175f97ef49d4152218293b96d4c7",
+  "findings": [
+    {
+      "kind": "grammatica",
+      "msg": "La spiegazione afferma che dopo un verbo modale non compare «zu» in generale, ma esistono costruzioni come «Ich habe kommen müssen» e «Das muss nicht zu bedeuten haben». Limitare la regola all’infinito retto direttamente dai modali negli esempi introdotti, per esempio «Kannst du kommen?».",
+      "path": "merged.lessons[1].grammar.note"
+    },
+    {
+      "kind": "chiarezza",
+      "msg": "Le due battute rappresentano una domanda e una risposta di persone diverse, ma sono presentate come un unico testo senza indicazione del cambio di interlocutore. Distinguere le voci o aggiungere un contesto che chiarisca il dialogo.",
+      "path": "merged.lessons[1].exercises[8].it"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "«El alemán usa casi siempre el adjetivo tal cual» generalizza oltre i casi trattati: esistono avverbi derivati o forme distinte. Precisare che molti aggettivi tedeschi possono essere usati come avverbi senza terminazione.",
+      "path": "merged.lessons[3].theory[2].contrast"
+    },
+    {
+      "kind": "ambiguità",
+      "msg": "La frase spagnola «¿Tienes ganas de venir a visitarnos?» aggiunge l’idea di venire, che «uns besuchen» non esprime necessariamente. Usare «¿Tienes ganas de visitarnos?» per corrispondere alla risposta tedesca.",
+      "path": "merged.lessons[1].exercises[4].tr"
+    }
+  ],
   "lang": "es",
   "unit": "a2-u07",
-  "verdict": "pass"
+  "verdict": "fail"
 }

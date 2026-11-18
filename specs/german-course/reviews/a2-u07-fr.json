@@ -1,18 +1,7 @@
 {
-  "bundleHash": "5b92ea0e3146a2050ebc5b9714d264d430ef62231ac01e52be0447c1e5cd2b7d",
-  "findings": [
-    {
-      "kind": "traduzione lessicale",
-      "msg": "La traduzione omette il significato usato nell’esempio: «die Party absagen» significa annullare la festa, non declinare un invito. Aggiungere «annuler (une fête)» e distinguere «décliner une invitation»; aggiornare anche exercises[3].pairs[1].tr.",
-      "path": "merged.lessons[1].vocab[4].tr"
-    },
-    {
-      "kind": "coerenza della spiegazione grammaticale",
-      "msg": "La riga «Geburtstag haben» colloca «Ich habe» nella colonna «personne (datif)», benché «ich» sia nominativo e questa costruzione non richieda una persona al dativo. Spostare l’esempio nella sezione sulle date o in una tabella separata.",
-      "path": "merged.lessons[0].grammar.table.rows[3]"
-    }
-  ],
+  "bundleHash": "8862631331cce57f188acc0e856888fb3dd9b05300959d0dc8a901141cfa34f9",
+  "findings": [],
   "lang": "fr",
   "unit": "a2-u07",
-  "verdict": "fail"
+  "verdict": "pass"
 }
