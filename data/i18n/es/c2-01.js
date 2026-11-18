@@ -974,7 +974,7 @@ LINGUAI.addStrings("es", {
     theory: [
       {
         h: "Decir menos para decir más",
-        p: "El alemán hablado, y también el periodístico, es muy aficionado a la <strong>lítote</strong>: se niega lo contrario de lo que se piensa. <em>Nicht schlecht</em> es a menudo un elogio pleno, <em>nicht ganz ohne</em> quiere decir «exigente, arriesgado», <em>nicht gerade billig</em> quiere decir «caro», <em>nicht ganz unproblematisch</em> quiere decir «claramente problemático». La fórmula <strong>gelinde gesagt</strong> («por decirlo suavemente», «por no decir algo peor») avisa de que la realidad es peor que la palabra elegida: <em>Die Lage ist, gelinde gesagt, angespannt.</em> También el elogio puede ser comedido: <em>Das kann sich sehen lassen</em> reconoce un resultado notable sin énfasis."
+        p: "El alemán hablado, y también el periodístico, es muy aficionado a la <strong>lítote</strong>: se niega lo contrario de lo que se piensa. <em>Nicht schlecht</em> es a menudo un elogio pleno, <em>nicht ganz ohne</em> quiere decir «exigente, arriesgado», <em>nicht gerade billig</em> quiere decir «caro», <em>nicht ganz unproblematisch</em> quiere decir «problemático», a menudo bastante. La fuerza de la lítote depende del contexto y de la entonación: <em>nicht schlecht</em> puede ser un elogio pleno o una aprobación moderada. La fórmula <strong>gelinde gesagt</strong> («por decirlo suavemente», «por no decir algo peor») avisa de que la realidad es peor que la palabra elegida: <em>Die Lage ist, gelinde gesagt, angespannt.</em> También el elogio puede ser comedido: <em>Das kann sich sehen lassen</em> reconoce un resultado notable sin énfasis."
       },
       {
         h: "La ironía en las partículas",
@@ -999,13 +999,13 @@ LINGUAI.addStrings("es", {
           ["nicht schlecht", "no está mal", "bueno, notable"],
           ["nicht ganz ohne", "no del todo sin", "exigente, arriesgado"],
           ["nicht gerade billig", "no precisamente barato", "caro"],
-          ["nicht ganz unproblematisch", "no del todo libre de problemas", "claramente problemático"],
+          ["nicht ganz unproblematisch", "no del todo libre de problemas", "problemático, a menudo claramente"],
           ["Das kann sich sehen lassen.", "puede dejarse ver", "es un resultado notable"],
           ["Das ist ja eine schöne Bescherung!", "¡qué bonito regalo!", "¡menudo lío!"]
         ]
       },
       examples: [
-        { tr: "Las negociaciones no estuvieron del todo libres de problemas.", note: "lítote: en realidad fueron difíciles" },
+        { tr: "Las negociaciones no estuvieron del todo libres de problemas.", note: "lítote: en este contexto, en realidad fueron difíciles" },
         { tr: "La película no estaba nada mal, la verdad.", note: "gar nicht mal so: elogio comedido" },
         { tr: "No es precisamente el más trabajador.", note: "nicht gerade + superlativo: crítica suavizada" },
         { tr: "¡Pues estamos buenos!", note: "ironía: ja en la exclamación, schön al revés" },
@@ -1255,10 +1255,10 @@ LINGUAI.addStrings("es", {
         p: "En muchos sustantivos neutros en <em>-um</em> la terminación <em>-um</em> cae y en su lugar entra <strong>-en</strong>: <em>Gremi|um → Gremi|en</em>, <em>Kriteri|um → Kriteri|en</em>, <em>Spektr|um → Spektr|en</em>, <em>Muse|um → Muse|en</em>. No es el único modelo: <em>das Visum</em> hace <em>die Visa</em> (o <em>Visen</em>), <em>das Praktikum</em> hace <em>die Praktika</em>, y alguna palabra entrada hace poco toma <em>-s</em>. El plural se comprueba palabra por palabra. Dos esquemas frecuentes de derivación, no reglas sin excepciones: muchos verbos en <em>-ieren</em> dan sustantivos en <em>-ation</em> o <em>-ierung</em> (<em>verifizieren → die Verifikation, die Verifizierung</em>); muchos adjetivos en <em>-ent</em> y <em>-ant</em> dan sustantivos en <em>-enz</em> y <em>-anz</em>: <em>konsistent → die Konsistenz</em>, <em>ambivalent → die Ambivalenz</em>, <em>tolerant → die Toleranz</em>. Estos sustantivos son femeninos; aun así, el derivado se comprueba en el diccionario."
       },
       {
-        contrast: "Para un hispanohablante la Bildungssprache es el registro más transparente del alemán: son los mismos <strong>cultismos</strong> que usa el español culto, y <em>Prämisse, Konsequenz, obsolet, ambivalent, implizieren</em> se entienden enseguida. El riesgo está en los <strong>falsos amigos</strong>. <em>konsistent</em> significa «coherente, sin contradicciones», no «consistente» en el sentido de sólido o espeso; <em>konsequent</em> es «coherente con lo que uno dice, firme», no «consecuente» en el sentido de resultante. <em>ordinär</em>, en cambio, coincide con un uso del español: igual que una persona «ordinaria» es vulgar, una persona <em>ordinär</em> también lo es; lo que el alemán no tiene es el sentido de «normal», que es <em>gewöhnlich</em>. Y <em>die Konfession</em> es solo la confesión religiosa, mientras que confesar los pecados es <em>die Beichte</em>. El plural, por último, no sigue al español: <em>die Kriterien</em>, no <em>Kriterios</em> ni <em>Kriteria</em>."
+        contrast: "Para un hispanohablante la Bildungssprache es el registro más transparente del alemán: son los mismos <strong>cultismos</strong> que usa el español culto, y <em>Prämisse, Konsequenz, obsolet, ambivalent, implizieren</em> se entienden enseguida. El riesgo está en los <strong>falsos amigos</strong>. <em>konsistent</em>, en el registro culto, significa «coherente, sin contradicciones»; el sentido material de «sólido, compacto» existe, sobre todo en <em>die Konsistenz</em> de una masa, pero en un ensayo casi nunca es el que se busca; <em>konsequent</em> es «coherente con lo que uno dice, firme», no «consecuente» en el sentido de resultante. <em>ordinär</em>, en cambio, coincide con el español en sus dos sentidos: dicho de una persona o de un comportamiento es «vulgar», como una persona «ordinaria», y dicho de una cosa puede ser «común, corriente» (<em>ganz ordinäres Papier</em>); para «normal, habitual» sin matiz el alemán prefiere <em>gewöhnlich</em>. Y <em>die Konfession</em> es solo la confesión religiosa, mientras que confesar los pecados es <em>die Beichte</em>. El plural, por último, no sigue al español: <em>die Kriterien</em>, no <em>Kriterios</em> ni <em>Kriteria</em>."
       },
       {
-        trap: "No formes el plural alemán con <em>-s</em> ni con las terminaciones nativas: <em>die Gremiums</em> y <em>die Kriteriume</em> no existen. Y atención al acento, que en los Fremdwörter cae casi siempre hacia el final: <em>Phäno<b>men</b>, Prä<b>mis</b>se, konsis<b>tent</b>, verifi<b>zie</b>ren</em>."
+        trap: "No formes el plural alemán con <em>-s</em> ni con las terminaciones nativas: <em>die Gremiums</em> y <em>die Kriteriume</em> no existen. Y atención al acento, que en los Fremdwörter latinos y griegos como estos suele caer hacia el final; compruébalo palabra por palabra: <em>Phäno<b>men</b>, Prä<b>mis</b>se, konsis<b>tent</b>, verifi<b>zie</b>ren</em>."
       },
       {
         tip: "Un latinismo por párrafo da precisión; cinco en una frase dan pedantería. Si el equivalente alemán dice lo mismo, en los textos divulgativos suele ser la mejor opción."
@@ -1283,7 +1283,7 @@ LINGUAI.addStrings("es", {
         { tr: "El órgano colegiado aceptó la propuesta por unanimidad.", note: "das Gremium, plural die Gremien" },
         { tr: "Su argumentación no es coherente en sí misma.", note: "konsistent, sustantivo: die Konsistenz" },
         { tr: "El fenómeno no puede explicarse por una única causa.", note: "monokausal: una sola causa; el acento cae en sal" },
-        { tr: "Los resultados deben interpretarse con cautela.", note: "zu + infinitivo con valor de obligación" },
+        { tr: "Los resultados deben interpretarse con cautela.", note: "sein + zu + infinitivo: aquí una recomendación; la construcción también puede expresar posibilidad" },
         { tr: "Los criterios aplicados hasta ahora se consideran obsoletos.", note: "das Kriterium, plural die Kriterien" }
       ]
     },

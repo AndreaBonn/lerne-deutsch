@@ -974,7 +974,7 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "Saying less to mean more",
-        p: "Spoken German, and journalistic German too, loves <strong>litotes</strong>: you deny the opposite of what you think. <em>Nicht schlecht</em> is often full praise, <em>nicht ganz ohne</em> means “demanding, risky”, <em>nicht gerade billig</em> means “expensive”, <em>nicht ganz unproblematisch</em> means “seriously problematic”. The phrase <strong>gelinde gesagt</strong> (“to put it mildly”) warns you that reality is worse than the word chosen: <em>Die Lage ist, gelinde gesagt, angespannt.</em> Praise can be low-key as well: <em>Das kann sich sehen lassen</em> acknowledges a remarkable result without any fanfare."
+        p: "Spoken German, and journalistic German too, loves <strong>litotes</strong>: you deny the opposite of what you think. <em>Nicht schlecht</em> is often full praise, <em>nicht ganz ohne</em> means “demanding, risky”, <em>nicht gerade billig</em> means “expensive”, <em>nicht ganz unproblematisch</em> means “problematic”, often more than a little. How strong the litotes is depends on context and intonation: <em>nicht schlecht</em> can be full praise or just moderate approval. The phrase <strong>gelinde gesagt</strong> (“to put it mildly”) warns you that reality is worse than the word chosen: <em>Die Lage ist, gelinde gesagt, angespannt.</em> Praise can be low-key as well: <em>Das kann sich sehen lassen</em> acknowledges a remarkable result without any fanfare."
       },
       {
         h: "Irony in the particles",
@@ -999,13 +999,13 @@ LINGUAI.addStrings("en", {
           ["nicht schlecht", "not bad", "good, impressive"],
           ["nicht ganz ohne", "not entirely without", "demanding, risky"],
           ["nicht gerade billig", "not exactly cheap", "expensive"],
-          ["nicht ganz unproblematisch", "not entirely free of problems", "seriously problematic"],
+          ["nicht ganz unproblematisch", "not entirely free of problems", "problematic, often seriously so"],
           ["Das kann sich sehen lassen.", "it can let itself be seen", "that is an impressive result"],
           ["Das ist ja eine schöne Bescherung!", "what a lovely present!", "what a mess!"]
         ]
       },
       examples: [
-        { tr: "The negotiations were not entirely free of problems.", note: "litotes: in fact they were difficult" },
+        { tr: "The negotiations were not entirely free of problems.", note: "litotes: in this context, they were in fact difficult" },
         { tr: "The movie actually wasn't that bad.", note: "gar nicht mal so: low-key praise" },
         { tr: "He's not exactly the most hardworking.", note: "nicht gerade + superlative: softened criticism" },
         { tr: "Well, this is a fine mess!", note: "irony: ja in the exclamation, schön read backwards" },
@@ -1258,7 +1258,7 @@ LINGUAI.addStrings("en", {
         contrast: "English knows this register well: it is the gap between <em>begin</em> and <em>commence</em>, <em>use</em> and <em>utilize</em>, <em>show</em> and <em>demonstrate</em>. That is exactly the gap between <em>veraltet</em> and <em>obsolet</em>, so <em>Prämisse, Konsequenz, ambivalent, implizieren</em> will be transparent to you. The danger lies in the <strong>false friends</strong>: <em>ordinär</em>, said of people, means “vulgar, crude”, not “ordinary” (that is <em>gewöhnlich</em>); <em>die Konfession</em> is a religious denomination, while confessing a sin is <em>die Beichte</em>; and <em>konsistent</em> means “internally consistent”, while being consistent in your behavior is <em>konsequent</em>. The plurals do not follow English either: English keeps <em>criteria</em> and <em>spectra</em>, German says <em>die Kriterien</em> and <em>die Spektren</em>."
       },
       {
-        trap: "Do not build the German plural with <em>-s</em> or with native endings: <em>die Gremiums</em> and <em>die Kriteriume</em> do not exist, and neither does <em>die Kriteria</em>. And watch the stress, which in Fremdwörter almost always falls near the end: <em>Phäno<b>men</b>, Prä<b>mis</b>se, konsis<b>tent</b>, verifi<b>zie</b>ren</em>."
+        trap: "Do not build the German plural with <em>-s</em> or with native endings: <em>die Gremiums</em> and <em>die Kriteriume</em> do not exist, and neither does <em>die Kriteria</em>. And watch the stress, which in Latin and Greek Fremdwörter like these usually falls near the end; check it word by word: <em>Phäno<b>men</b>, Prä<b>mis</b>se, konsis<b>tent</b>, verifi<b>zie</b>ren</em>."
       },
       {
         tip: "One Latinism per paragraph gives precision; five in one sentence give pedantry. If the German equivalent says the same thing, it is often the better choice in texts for a general audience."
@@ -1283,7 +1283,7 @@ LINGUAI.addStrings("en", {
         { tr: "The proposal was accepted unanimously by the committee.", note: "das Gremium, plural die Gremien" },
         { tr: "His line of argument is not internally consistent.", note: "konsistent, noun: die Konsistenz" },
         { tr: "The phenomenon cannot be explained by a single cause.", note: "monokausal: one single cause; the stress falls on sal" },
-        { tr: "The results are to be interpreted with caution.", note: "zu + infinitive expressing necessity" },
+        { tr: "The results are to be interpreted with caution.", note: "sein + zu + infinitive: here a recommendation; the construction can also express possibility" },
         { tr: "The criteria used so far are considered obsolete.", note: "das Kriterium, plural die Kriterien" }
       ]
     },

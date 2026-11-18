@@ -974,7 +974,7 @@ LINGUAI.addStrings("pl", {
     theory: [
       {
         h: "Powiedzieć mniej, żeby powiedzieć więcej",
-        p: "Niemiecki mówiony, a także prasowy, bardzo lubi <strong>litotę</strong>: zaprzecza się przeciwieństwu tego, co się myśli. <em>Nicht schlecht</em> to często pełna pochwała, <em>nicht ganz ohne</em> znaczy „wymagający, ryzykowny”, <em>nicht gerade billig</em> znaczy „drogi”, <em>nicht ganz unproblematisch</em> znaczy „wyraźnie problematyczny”. Formuła <strong>gelinde gesagt</strong> („delikatnie mówiąc”, „łagodnie mówiąc”) uprzedza, że rzeczywistość jest gorsza niż wybrane słowo: <em>Die Lage ist, gelinde gesagt, angespannt.</em> Pochwała też bywa powściągliwa: <em>Das kann sich sehen lassen</em> docenia znakomity wynik bez patosu."
+        p: "Niemiecki mówiony, a także prasowy, bardzo lubi <strong>litotę</strong>: zaprzecza się przeciwieństwu tego, co się myśli. <em>Nicht schlecht</em> to często pełna pochwała, <em>nicht ganz ohne</em> znaczy „wymagający, ryzykowny”, <em>nicht gerade billig</em> znaczy „drogi”, <em>nicht ganz unproblematisch</em> znaczy „problematyczny”, często bardziej, niż sugeruje forma. Siła litoty zależy od kontekstu i intonacji: <em>nicht schlecht</em> może być pełną pochwałą albo umiarkowaną aprobatą. Formuła <strong>gelinde gesagt</strong> („delikatnie mówiąc”, „łagodnie mówiąc”) uprzedza, że rzeczywistość jest gorsza niż wybrane słowo: <em>Die Lage ist, gelinde gesagt, angespannt.</em> Pochwała też bywa powściągliwa: <em>Das kann sich sehen lassen</em> docenia znakomity wynik bez patosu."
       },
       {
         h: "Ironia w partykułach",
@@ -999,14 +999,14 @@ LINGUAI.addStrings("pl", {
           ["nicht schlecht", "nieźle, nie najgorzej", "dobrze, imponująco"],
           ["nicht ganz ohne", "nie całkiem bez", "wymagający, ryzykowny"],
           ["nicht gerade billig", "nie całkiem tani", "drogi"],
-          ["nicht ganz unproblematisch", "nie całkiem bezproblemowy", "wyraźnie problematyczny"],
+          ["nicht ganz unproblematisch", "nie całkiem bezproblemowy", "problematyczny, często wyraźnie"],
           ["Das kann sich sehen lassen.", "to może się pokazać", "to znakomity wynik"],
           ["Das ist ja eine schöne Bescherung!", "piękny prezent!", "no to pięknie!"]
         ]
       },
       examples: [
-        { tr: "Negocjacje nie były całkiem bezproblemowe.", note: "litota: w rzeczywistości były trudne" },
-        { tr: "Film był wcale nie najgorszy.", note: "gar nicht mal so: powściągliwa pochwała" },
+        { tr: "Negocjacje nie były całkiem bezproblemowe.", note: "litota: w tym kontekście były w rzeczywistości trudne" },
+        { tr: "Film był wcale niezły.", note: "gar nicht mal so: powściągliwa pochwała" },
         { tr: "Nie jest on akurat najpracowitszy.", note: "nicht gerade + stopień najwyższy: złagodzona krytyka" },
         { tr: "No to pięknie!", note: "ironia: ja w wykrzyknieniu, schön na odwrót" },
         { tr: "Ładny z ciebie przyjaciel!", note: "ironiczny wyrzut z celownikiem etycznym mir" },
@@ -1016,7 +1016,7 @@ LINGUAI.addStrings("pl", {
     vocab: [
       "ironia",
       "understatement, celowo powściągliwe sformułowanie",
-      "niedopowiedzenie, pomniejszanie",
+      "pomniejszanie, bagatelizowanie",
       "przesada",
       "aluzja",
       "podtekst, ukryty ton",
@@ -1258,7 +1258,7 @@ LINGUAI.addStrings("pl", {
         contrast: "Polszczyzna ma tych samych łacińskich gości co niemiecki: <em>teza, przesłanka, fenomen, kryterium, gremium, spektrum, konsekwencja</em>. Pułapka siedzi w liczbie mnogiej. Polskie <em>kryterium</em> i <em>gremium</em> w liczbie pojedynczej się nie odmieniają, a w mnogiej dają <em>kryteria</em> i <em>gremia</em>, i ta polska końcówka podsuwa formę <em>die Kriteria</em>, której po niemiecku nie ma: jest <em>die Kriterien, die Gremien</em>. Druga pułapka to <strong>fałszywi przyjaciele</strong>. <em>die Konsistenz</em> w Bildungssprache to „spójność, niesprzeczność” wywodu, a nie tylko polska <em>konsystencja</em> sosu; <em>der Konkurs</em> to upadłość firmy, a polski konkurs to <em>der Wettbewerb</em>; <em>die Konfession</em> to wyznanie, nie spowiedź (<em>die Beichte</em>). <em>ordinär</em> za to pokrywa się z polskim <em>ordynarny</em>: znaczy „wulgarny, prostacki”."
       },
       {
-        trap: "Nie twórz niemieckiej liczby mnogiej z <em>-s</em> ani z rodzimymi końcówkami: <em>die Gremiums</em> i <em>die Kriteriume</em> nie istnieją. I uważaj na akcent, który w Fremdwörter pada prawie zawsze pod koniec słowa, a nie na przedostatnią sylabę, jak w polskim: <em>Phäno<b>men</b>, Prä<b>mis</b>se, konsis<b>tent</b>, verifi<b>zie</b>ren</em>."
+        trap: "Nie twórz niemieckiej liczby mnogiej z <em>-s</em> ani z rodzimymi końcówkami: <em>die Gremiums</em> i <em>die Kriteriume</em> nie istnieją. I uważaj na akcent, który w łacińskich i greckich Fremdwörter takich jak te zwykle pada pod koniec słowa, a nie na przedostatnią sylabę, jak w polskim; sprawdzaj go słowo po słowie: <em>Phäno<b>men</b>, Prä<b>mis</b>se, konsis<b>tent</b>, verifi<b>zie</b>ren</em>."
       },
       {
         tip: "Jeden latynizm na akapit daje precyzję; pięć w jednym zdaniu daje pedanterię. Jeśli niemiecki odpowiednik mówi to samo, w tekstach popularnych to często lepszy wybór."
@@ -1283,7 +1283,7 @@ LINGUAI.addStrings("pl", {
         { tr: "Gremium jednogłośnie przyjęło propozycję.", note: "das Gremium, liczba mnoga die Gremien" },
         { tr: "Jego wywód nie jest wewnętrznie spójny.", note: "konsistent, rzeczownik: die Konsistenz" },
         { tr: "Zjawiska nie da się wyjaśnić jedną przyczyną.", note: "monokausal: jedna przyczyna; akcent pada na sal" },
-        { tr: "Wyniki należy interpretować ostrożnie.", note: "zu + bezokolicznik w znaczeniu powinności" },
+        { tr: "Wyniki należy interpretować ostrożnie.", note: "sein + zu + bezokolicznik: tu zalecenie; konstrukcja może też wyrażać możliwość" },
         { tr: "Dotychczasowe kryteria uchodzą za przestarzałe.", note: "das Kriterium, liczba mnoga die Kriterien" }
       ]
     },

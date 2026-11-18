@@ -974,7 +974,7 @@ LINGUAI.addStrings("fr", {
     theory: [
       {
         h: "Dire moins pour dire plus",
-        p: "L'allemand parlé, et aussi celui des journaux, aime la <strong>litote</strong> : on nie le contraire de ce qu'on pense. <em>Nicht schlecht</em> est souvent un éloge sans réserve, <em>nicht ganz ohne</em> veut dire « exigeant, risqué », <em>nicht gerade billig</em> veut dire « cher », <em>nicht ganz unproblematisch</em> veut dire « franchement problématique ». La formule <strong>gelinde gesagt</strong> (« c'est peu dire », « pour rester poli ») prévient que la réalité est pire que le mot choisi : <em>Die Lage ist, gelinde gesagt, angespannt.</em> L'éloge aussi peut être sobre : <em>Das kann sich sehen lassen</em> salue un résultat remarquable sans emphase."
+        p: "L'allemand parlé, et aussi celui des journaux, aime la <strong>litote</strong> : on nie le contraire de ce qu'on pense. <em>Nicht schlecht</em> est souvent un éloge sans réserve, <em>nicht ganz ohne</em> veut dire « exigeant, risqué », <em>nicht gerade billig</em> veut dire « cher », <em>nicht ganz unproblematisch</em> veut dire « problématique », souvent plus qu'un peu. La force de la litote dépend du contexte et de l'intonation : <em>nicht schlecht</em> peut être un éloge sans réserve ou une approbation mesurée. La formule <strong>gelinde gesagt</strong> (« c'est peu dire », « pour rester poli ») prévient que la réalité est pire que le mot choisi : <em>Die Lage ist, gelinde gesagt, angespannt.</em> L'éloge aussi peut être sobre : <em>Das kann sich sehen lassen</em> salue un résultat remarquable sans emphase."
       },
       {
         h: "L'ironie dans les particules",
@@ -999,13 +999,13 @@ LINGUAI.addStrings("fr", {
           ["nicht schlecht", "pas mauvais", "bon, remarquable"],
           ["nicht ganz ohne", "pas tout à fait sans", "exigeant, risqué"],
           ["nicht gerade billig", "pas vraiment bon marché", "cher"],
-          ["nicht ganz unproblematisch", "pas tout à fait sans problèmes", "franchement problématique"],
+          ["nicht ganz unproblematisch", "pas tout à fait sans problèmes", "problématique, souvent franchement"],
           ["Das kann sich sehen lassen.", "cela peut se laisser voir", "c'est un résultat remarquable"],
           ["Das ist ja eine schöne Bescherung!", "quel beau cadeau !", "nous voilà dans de beaux draps !"]
         ]
       },
       examples: [
-        { tr: "Les négociations n'ont pas été tout à fait sans problèmes.", note: "litote : en réalité, elles ont été difficiles" },
+        { tr: "Les négociations n'ont pas été tout à fait sans problèmes.", note: "litote : dans ce contexte, elles ont en réalité été difficiles" },
         { tr: "Le film n'était finalement pas si mal.", note: "gar nicht mal so : éloge sobre" },
         { tr: "Ce n'est pas vraiment le plus travailleur.", note: "nicht gerade + superlatif : critique atténuée" },
         { tr: "Nous voilà dans de beaux draps !", note: "ironie : ja dans l'exclamation, schön à l'envers" },
@@ -1149,7 +1149,7 @@ LINGUAI.addStrings("fr", {
         { tr: "Bonjour ! Où est-ce que je peux me garer ici ?", note: "suisse : Grüezi, parkieren" },
         { tr: "Elle va au travail à vélo tous les jours.", note: "suisse : das Velo" },
         { tr: "Tu as une minute ? Il faut que je te raconte un truc.", note: "familier : 'ne pour eine, was pour etwas" },
-        { tr: "Toute cette paperasse, j'ai vraiment pas envie.", note: "familier : hab, keinen Bock haben, der Papierkram" }
+        { tr: "Toute cette paperasse, j'ai vraiment pas envie de m'en occuper.", note: "familier : hab, keinen Bock haben, der Papierkram" }
       ]
     },
     vocab: [
@@ -1255,10 +1255,10 @@ LINGUAI.addStrings("fr", {
         p: "Dans beaucoup de noms neutres en <em>-um</em>, la terminaison <em>-um</em> tombe et <strong>-en</strong> prend sa place : <em>Gremi|um → Gremi|en</em>, <em>Kriteri|um → Kriteri|en</em>, <em>Spektr|um → Spektr|en</em>, <em>Muse|um → Muse|en</em>. Ce n'est pas le seul modèle : <em>das Visum</em> fait <em>die Visa</em> (ou <em>Visen</em>), <em>das Praktikum</em> fait <em>die Praktika</em>, et quelques mots entrés récemment prennent un <em>-s</em>. Le pluriel se vérifie mot par mot. Deux schémas fréquents de dérivation, pas des règles sans exceptions : beaucoup de verbes en <em>-ieren</em> donnent des noms en <em>-ation</em> ou <em>-ierung</em> (<em>verifizieren → die Verifikation, die Verifizierung</em>) ; beaucoup d'adjectifs en <em>-ent</em> et <em>-ant</em> donnent des noms en <em>-enz</em> et <em>-anz</em> : <em>konsistent → die Konsistenz</em>, <em>ambivalent → die Ambivalenz</em>, <em>tolerant → die Toleranz</em>. Ces noms sont féminins ; le dérivé se vérifie quand même dans le dictionnaire."
       },
       {
-        contrast: "Le français a l'habitude de ce registre : c'est l'écart entre <strong>mot savant</strong> et mot populaire, entre « fragile » et « frêle », « potion » et « poison ». Le couple <em>obsolet</em> / <em>veraltet</em> fonctionne de la même façon, et <em>Prämisse, Konsequenz, ambivalent, implizieren</em> vous sont transparents. Le risque est dans les <strong>faux amis</strong>. <em>konsequent</em> veut dire « cohérent, qui va jusqu'au bout », jamais « conséquent » au sens familier d'« important, considérable ». <em>die Konfession</em> est uniquement l'appartenance religieuse : là où le français dit « confession » pour les deux sens, l'allemand sépare <em>Konfession</em> et <em>die Beichte</em>, la confession des péchés. <em>ordinär</em>, dit d'une personne, signifie « vulgaire » : c'est le sens péjoratif que « ordinaire » n'a qu'à la marge en français, et non « habituel », qui se dit <em>gewöhnlich</em>. Enfin, le pluriel ne suit pas le français : <em>die Kriterien</em>, pas <em>Kriteriums</em> ni <em>Kriteria</em>."
+        contrast: "Le français a l'habitude de ce registre : c'est l'écart entre <strong>mot savant</strong> et mot populaire, entre « fragile » et « frêle », « potion » et « poison ». Le couple <em>obsolet</em> / <em>veraltet</em> fonctionne de la même façon, et <em>Prämisse, Konsequenz, ambivalent, implizieren</em> vous sont transparents. Le risque est dans les <strong>faux amis</strong>. <em>konsequent</em> veut dire « cohérent, qui va jusqu'au bout », jamais « conséquent » au sens familier d'« important, considérable ». <em>die Konfession</em> désigne surtout l'appartenance religieuse, et en histoire une profession de foi (<em>die Augsburger Konfession</em>) ; la confession des péchés, elle, se dit <em>die Beichte</em>. <em>ordinär</em>, dit d'une personne, signifie « vulgaire » : c'est le sens péjoratif que « ordinaire » n'a qu'à la marge en français, et non « habituel », qui se dit <em>gewöhnlich</em>. Enfin, le pluriel ne suit pas le français : <em>die Kriterien</em>, pas <em>Kriteriums</em> ni <em>Kriteria</em>."
       },
       {
-        trap: "Ne formez pas le pluriel allemand avec un <em>-s</em> ou avec les terminaisons natives : <em>die Gremiums</em> et <em>die Kriteriume</em> n'existent pas. Et attention à l'accent, qui dans les Fremdwörter tombe presque toujours vers la fin, comme en français, mais avec une intensité que le français ne connaît pas : <em>Phäno<b>men</b>, Prä<b>mis</b>se, konsis<b>tent</b>, verifi<b>zie</b>ren</em>."
+        trap: "Ne formez pas le pluriel allemand avec un <em>-s</em> ou avec les terminaisons natives : <em>die Gremiums</em> et <em>die Kriteriume</em> n'existent pas. Et attention à l'accent, qui dans les Fremdwörter latins et grecs comme ceux-ci tombe le plus souvent vers la fin, comme en français, mais avec une intensité que le français ne connaît pas ; vérifiez-le mot par mot : <em>Phäno<b>men</b>, Prä<b>mis</b>se, konsis<b>tent</b>, verifi<b>zie</b>ren</em>."
       },
       {
         tip: "Un latinisme par paragraphe donne de la précision ; cinq dans une phrase donnent de la pédanterie. Si l'équivalent allemand dit la même chose, c'est souvent le meilleur choix dans un texte de vulgarisation."
@@ -1283,7 +1283,7 @@ LINGUAI.addStrings("fr", {
         { tr: "La proposition a été acceptée à l'unanimité par l'instance.", note: "das Gremium, pluriel die Gremien" },
         { tr: "Son argumentation n'est pas cohérente en elle-même.", note: "konsistent, nom : die Konsistenz" },
         { tr: "Le phénomène ne s'explique pas par une cause unique.", note: "monokausal : une seule cause ; l'accent tombe sur sal" },
-        { tr: "Les résultats sont à interpréter avec prudence.", note: "zu + infinitif à valeur d'obligation" },
+        { tr: "Les résultats sont à interpréter avec prudence.", note: "sein + zu + infinitif : ici une recommandation ; la construction peut aussi exprimer la possibilité" },
         { tr: "Les critères appliqués jusqu'ici sont considérés comme obsolètes.", note: "das Kriterium, pluriel die Kriterien" }
       ]
     },
