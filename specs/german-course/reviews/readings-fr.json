@@ -1,15 +1,20 @@
 {
-  "bundleHash": "7f9a912549a2ec724ba296a1174638dca9731197ad814324bf6e20bfaaddef2d",
+  "bundleHash": "edc9302b59785f141931722aee4ebaadd01eea6572635d318eeafdc82d7a7137",
   "findings": [
     {
-      "kind": "français : accord grammatical",
-      "msg": "« Charges indiquées inclus » contient une erreur d’accord : écrire « chauffage et charges indiquées incluses » ou reformuler « chauffage et charges indiquées compris ».",
-      "path": "merged[5].gloss[2]"
+      "kind": "coerenza temporale",
+      "msg": "«Letzten Dienstag» colloca la scomparsa nella settimana appena trascorsa, ma il ritrovamento avviene due settimane dopo. Sostituire l'apertura con «Vor einigen Wochen» oppure indicare un intervallo compatibile prima del ritrovamento.",
+      "path": "neutral[8].sentences[1]"
     },
     {
-      "kind": "traduction lexicale",
-      "msg": "« Untertreibung » signifie « atténuation » ou « sous-estimation ». Une litote ou un euphémisme peuvent en relever, mais ne sont pas des équivalents généraux. Proposer « l’atténuation, le fait de minimiser » et conserver éventuellement les deux figures comme exemples.",
-      "path": "merged[19].gloss[9]"
+      "kind": "rektion",
+      "msg": "La spiegazione omette il complemento oggetto della costruzione tedesca: «etwas erinnert jemanden an etwas» corrisponde a «quelque chose rappelle quelque chose à quelqu’un». Aggiungere un esempio completo, distinguendolo da «sich an etwas erinnern».",
+      "path": "merged[18].lex[8]"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "Nel brano «einer Vorgesetzten» designa una superiore donna, mentre «supérieur» è maschile. Usare «supérieure hiérarchique» oppure indicare entrambe le forme e chiarire quella del contesto.",
+      "path": "merged[20].lex[8]"
     }
   ],
   "lang": "fr",
