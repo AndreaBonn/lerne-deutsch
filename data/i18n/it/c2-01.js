@@ -978,13 +978,13 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "L'ironia nelle particelle",
-        p: "L'ironia tedesca passa spesso per le particelle modali e per un aggettivo positivo in un contesto negativo. <em>Das ist <strong>ja</strong> eine schöne Bescherung!</em> («che bel guaio!»): <em>ja</em> nell'esclamazione segnala stupore, e <em>schön</em> si legge al contrario. <em>Du bist <strong>mir</strong> ja ein schöner Freund!</em> è un rimprovero: il dativo etico <em>mir</em> coinvolge chi parla, come l'italiano «sei proprio un bell'amico». <em>Na, das hast du ja toll hingekriegt!</em> si dice a chi ha appena combinato un disastro. Il segnale è il contrasto fra la parola e la situazione: senza la situazione la frase è ambigua, ed è proprio questo che la rende ironica."
+        p: "L'ironia tedesca passa spesso per le particelle modali e per un aggettivo positivo in un contesto negativo. <em>Das ist <strong>ja</strong> eine schöne Bescherung!</em> («che bel guaio!»): <em>ja</em> nell'esclamazione segnala stupore, e <em>schön</em> si legge al contrario. <em>Du bist <strong>mir</strong> ja ein schöner Freund!</em> è un rimprovero: il dativo etico <em>mir</em> coinvolge chi parla, come l'italiano «sei proprio un bell'amico». <em>Na, das hast du ja toll hingekriegt!</em> si dice a chi ha appena combinato un disastro. Le particelle da sole non rendono ironica una frase: rafforzano l'esclamazione e il coinvolgimento di chi parla. Il segnale vero è il contrasto fra la parola e la situazione, insieme all'intonazione: senza la situazione la frase è ambigua, ed è proprio questo che la rende ironica."
       },
       {
         contrast: "Anche l'italiano usa la litote («non è un genio», «non è proprio economico»), ma il tedesco ne fa un uso più sistematico e più neutro: in Germania <em>nicht schlecht</em> detto da un capo può essere il complimento massimo, mentre un italiano rischia di sentirlo come un giudizio tiepido. Al contrario, gli elogi entusiasti all'italiana («fantastico, bravissimo!») in un contesto professionale tedesco possono suonare esagerati e quindi poco credibili."
       },
       {
-        trap: "Non prendere alla lettera <em>nicht ganz ohne</em>: non vuol dire «non del tutto senza», ma «tutt'altro che facile». E <em>nicht unbedingt</em> non significa «non assolutamente», ma «non necessariamente»: <em>Das ist nicht unbedingt nötig</em> lascia aperta la possibilità. Attenzione anche a <em>jemanden auf den Arm nehmen</em>: in senso figurato è «prendere in giro»; il senso letterale, «prendere in braccio», vale solo per un bambino o un animale, e lo chiarisce il contesto."
+        trap: "Non prendere alla lettera <em>nicht ganz ohne</em>: non vuol dire «non del tutto senza», ma «tutt'altro che facile». E <em>nicht unbedingt</em> non significa «non assolutamente», ma «non necessariamente»: <em>Das ist nicht unbedingt nötig</em> lascia aperta la possibilità. Attenzione anche a <em>jemanden auf den Arm nehmen</em>: in senso figurato è «prendere in giro»; il senso letterale è «prendere in braccio», e lo distingue solo il contesto."
       },
       {
         tip: "Quando non sei sicuro del tono, guarda l'intonazione e il contesto, non le parole: un <em>Na toll!</em> pronunciato piatto e strascicato è ironico quasi sempre."
@@ -992,7 +992,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Litote, understatement e ironia",
-      note: "<b>nicht + il contrario</b>: <i>nicht schlecht</i> (buono), <i>nicht gerade billig</i> (caro), <i>nicht ganz ohne</i> (impegnativo). <b>gelinde gesagt</b> attenua un giudizio negativo. Nell'esclamazione ironica <b>ja</b> e il dativo etico <b>mir</b> rovesciano il senso di un aggettivo positivo.",
+      note: "<b>nicht + il contrario</b>: <i>nicht schlecht</i> (buono), <i>nicht gerade billig</i> (caro), <i>nicht ganz ohne</i> (impegnativo). <b>gelinde gesagt</b> attenua un giudizio negativo. L'ironia nasce dal contrasto fra un aggettivo positivo e la situazione; <b>ja</b> nell'esclamazione e il dativo etico <b>mir</b> la rafforzano, ma non bastano da soli.",
       table: {
         head: ["espressione", "letteralmente", "significato effettivo"],
         rows: [
@@ -1016,7 +1016,7 @@ LINGUAI.addStrings("it", {
     vocab: [
       "l'ironia",
       "l'understatement, l'espressione volutamente sottotono",
-      "l'eufemismo, l'attenuazione",
+      "la minimizzazione, l'understatement",
       "l'esagerazione",
       "l'allusione",
       "il sottinteso, il tono sotteso",
@@ -1074,12 +1074,12 @@ LINGUAI.addStrings("it", {
         why: "È un rimprovero ironico: <i>schön</i> si legge al contrario, e il dativo etico <b>mir</b> sottolinea che chi parla ne è toccato, come l'italiano «sei proprio un bell'amico»."
       },
       {
-        q: "Completa: nella prima lacuna l'avverbio della formula attenuante «a dir poco», nella seconda un participio che significa «riuscito».",
+        q: "Completa: nella prima lacuna l'avverbio della formula attenuante «a dir poco», nella seconda una parola che descriva l'esito («riuscito»).",
         tr: "La presentazione, a dir poco, non è stata del tutto riuscita: il proiettore si è guastato e la relatrice aveva dimenticato gli appunti.",
         why: "<b>gelinde gesagt</b> (anche <i>milde</i> o <i>vorsichtig gesagt</i>) avverte che la realtà è peggiore della parola scelta; <b>nicht ganz gelungen</b> (o <i>geglückt</i>, <i>glücklich</i>, <i>reibungslos</i>) è una litote per «fallita»."
       },
       {
-        q: "Abbina ogni litote al suo significato effettivo.",
+        q: "Abbina ogni espressione al suo significato effettivo.",
         pairs: [
           "buono, notevole",
           "impegnativo, rischioso",
@@ -1097,7 +1097,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "È stato, a dir poco, non del tutto privo di problemi.",
-        why: "In <i>gelinde</i> l'accento cade su <b>lin</b>; in <i>unproblematisch</i> l'accento principale cade su <b>un</b> e un secondo accento su <b>ma</b>. Le due pause attorno a <i>gelinde gesagt</i> fanno sentire l'inciso."
+        why: "In <i>gelinde</i> l'accento cade su <b>lin</b>; in <i>unproblematisch</i> l'accento cade su <b>un</b> oppure su <b>ma</b>: il Duden registra entrambe le pronunce. Le due pause attorno a <i>gelinde gesagt</i> fanno sentire l'inciso."
       }
     ]
   },
@@ -1123,7 +1123,7 @@ LINGUAI.addStrings("it", {
         contrast: "Anche l'italiano ha varietà regionali dello standard (a Milano si dice <em>michetta</em>, a Roma <em>rosetta</em>), ma resta un solo standard nazionale. Il tedesco ne ha tre: un austriaco che scrive <em>Jänner</em> o uno zurighese che scrive <em>parkieren</em> non commette un errore. Per chi impara la regola pratica è semplice: si riconoscono tutte, se ne produce una in modo coerente, di solito quella della Germania."
       },
       {
-        trap: "Non mescolare le varietà in uno stesso testo: <em>Im Jänner fahre ich mit dem Velo</em> combina un austriacismo e un elvetismo e non appartiene a nessuno standard. E non scambiare la pronuncia regionale per un errore: in Austria e nel sud della Germania <em>Chemie</em> e <em>China</em> si dicono con [k] iniziale, ed è corretto."
+        trap: "Non mescolare le varietà in uno stesso testo: <em>Im Jänner fahre ich mit dem Velo</em> combina un austriacismo e un elvetismo: nell'uso reale capita, ma in un testo curato si sceglie una varietà e la si mantiene. E non scambiare la pronuncia regionale per un errore: in Austria e nel sud della Germania <em>Chemie</em> e <em>China</em> si dicono con [k] iniziale, ed è corretto."
       },
       {
         tip: "Sui dizionari i regionalismi sono marcati: <em>österr.</em> per l'Austria, <em>schweiz.</em> per la Svizzera, <em>südd.</em> per il sud della Germania, <em>ugs.</em> per il colloquiale. Quella sigla ti dice dove e quando la parola è appropriata."
@@ -1131,7 +1131,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Tre varietà standard",
-      note: "Germania, Austria e Svizzera hanno ciascuna il proprio standard. <b>Austriacismi</b> ed <b>elvetismi</b> sono parole standard nel loro paese: si riconoscono, ma nelle risposte si usa lo standard tedesco di Germania. La <b>Umgangssprache</b> accorcia le forme (<i>hab</i>, <i>'ne</i>, <i>was</i>) e va evitata nello scritto formale.",
+      note: "Germania, Austria e Svizzera hanno ciascuna il proprio standard. <b>Austriacismi</b> ed <b>elvetismi</b> sono parole standard nel loro paese: si riconoscono tutte; quando un esercizio chiede una forma da produrre, la consegna dice quale varietà vuole, di solito lo standard di Germania. La <b>Umgangssprache</b> accorcia le forme (<i>hab</i>, <i>'ne</i>, <i>was</i>) e va evitata nello scritto formale.",
       table: {
         head: ["Germania", "Austria", "Svizzera", "italiano"],
         rows: [
@@ -1252,7 +1252,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Plurali e derivati dei Fremdwörter",
-        p: "I nomi neutri in <em>-um</em> fanno il plurale in <strong>-en</strong> o <strong>-a</strong>: <em>das Gremium → die Gremien</em>, <em>das Kriterium → die Kriterien</em>, <em>das Spektrum → die Spektren</em>, <em>das Visum → die Visa</em> (o <em>Visen</em>). I verbi in <em>-ieren</em> danno nomi in <em>-ation</em> o <em>-ierung</em> (<em>verifizieren → die Verifikation, die Verifizierung</em>); gli aggettivi in <em>-ent</em> e <em>-ant</em> danno nomi in <em>-enz</em> e <em>-anz</em>: <em>konsistent → die Konsistenz</em>, <em>ambivalent → die Ambivalenz</em>, <em>tolerant → die Toleranz</em>. Questi nomi sono femminili."
+        p: "Molti nomi neutri in <em>-um</em> sostituiscono <em>-um</em> con <strong>-en</strong>: <em>das Gremium → die Gremien</em>, <em>das Kriterium → die Kriterien</em>, <em>das Spektrum → die Spektren</em>, <em>das Museum → die Museen</em>. Non è l'unico modello: <em>das Visum</em> fa <em>die Visa</em> (o <em>Visen</em>), <em>das Praktikum</em> fa <em>die Praktika</em>, e qualche parola entrata di recente prende la <em>-s</em>. Il plurale si controlla parola per parola. I verbi in <em>-ieren</em> danno nomi in <em>-ation</em> o <em>-ierung</em> (<em>verifizieren → die Verifikation, die Verifizierung</em>); gli aggettivi in <em>-ent</em> e <em>-ant</em> danno nomi in <em>-enz</em> e <em>-anz</em>: <em>konsistent → die Konsistenz</em>, <em>ambivalent → die Ambivalenz</em>, <em>tolerant → die Toleranz</em>. Questi nomi sono femminili."
       },
       {
         contrast: "Per un italiano la Bildungssprache è il registro più trasparente del tedesco: <em>Prämisse, Konsequenz, obsolet, ambivalent</em> si capiscono subito. Il rischio sta nei <strong>falsi amici</strong>: <em>ordinär</em>, detto di persone, significa «volgare», non «ordinario»; <em>die Konfession</em> è la confessione religiosa, mentre la confessione dei peccati è <em>die Beichte</em>. E il plurale latino non segue l'italiano: <em>die Kriterien</em>, non <em>Kriteria</em>."
@@ -1266,7 +1266,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Latinismi, plurali e derivati",
-      note: "Nomi in <b>-um</b>: plurale in <b>-en</b> (<i>Gremien, Kriterien, Spektren</i>). Aggettivi in <b>-ent/-ant</b>: nome femminile in <b>-enz/-anz</b> (<i>Konsistenz, Ambivalenz</i>). Verbi in <b>-ieren</b>: nome in <b>-ation</b> o <b>-ierung</b>.",
+      note: "Molti nomi in <b>-um</b> sostituiscono <i>-um</i> con <b>-en</b> (<i>Gremien, Kriterien, Spektren</i>), ma non tutti (<i>Visa, Praktika</i>). Aggettivi in <b>-ent/-ant</b>: nome femminile in <b>-enz/-anz</b> (<i>Konsistenz, Ambivalenz</i>). Verbi in <b>-ieren</b>: nome in <b>-ation</b> o <b>-ierung</b>.",
       table: {
         head: ["latinismo", "equivalente tedesco", "italiano"],
         rows: [
@@ -1282,7 +1282,7 @@ LINGUAI.addStrings("it", {
         { tr: "La tesi si può difficilmente verificare in modo empirico.", note: "verifizieren: verbo in -ieren" },
         { tr: "La proposta è stata accettata all'unanimità dall'organo collegiale.", note: "das Gremium, plurale die Gremien" },
         { tr: "La sua argomentazione non è coerente in sé.", note: "konsistent, nome: die Konsistenz" },
-        { tr: "Il fenomeno non si può spiegare con una causa sola.", note: "monokausal: una sola causa; l'accento cade su kau" },
+        { tr: "Il fenomeno non si può spiegare con una causa sola.", note: "monokausal: una sola causa; l'accento cade su sal" },
         { tr: "I risultati vanno interpretati con cautela.", note: "zu + infinito con valore di dovere" },
         { tr: "I criteri adottati finora sono considerati superati.", note: "das Kriterium, plurale die Kriterien" }
       ]
@@ -1309,7 +1309,7 @@ LINGUAI.addStrings("it", {
           "die Kriteriums",
           "die Kriteriume"
         ],
-        why: "I nomi neutri in <i>-um</i> fanno il plurale in <b>-en</b>: <i>Kriterium → Kriterien</i>, come <i>Gremium → Gremien</i>."
+        why: "In <i>Kriterium</i> la desinenza <i>-um</i> è sostituita da <b>-en</b>: <i>Kriteri|um → Kriteri|en</i>, come <i>Gremium → Gremien</i>. È il modello più frequente, non l'unico (<i>Visum → Visa</i>)."
       },
       {
         q: "In un saggio, «Die Methode ist veraltet» diventa:",
@@ -1332,7 +1332,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa: «Der Antrag wurde in mehreren ___ der Universität diskutiert.»",
         hint: "plurale di das Gremium",
-        why: "<b>Gremien</b>: plurale in <i>-en</i> dei nomi in <i>-um</i>. Qui è un dativo plurale, ma la forma non cambia."
+        why: "<b>Gremien</b>: <i>-um</i> è sostituito da <i>-en</i> (<i>Gremi|um → Gremi|en</i>). Qui è un dativo plurale, ma la forma non cambia."
       },
       {
         q: "Completa: «Die ___ seiner Argumentation überzeugte die Kommission.»",
@@ -1340,9 +1340,9 @@ LINGUAI.addStrings("it", {
         why: "<b>Konsistenz</b>: gli aggettivi in <i>-ent</i> danno nomi femminili in <i>-enz</i>, come <i>ambivalent → Ambivalenz</i>."
       },
       {
-        q: "Completa: nella prima lacuna il latinismo per «premessa», nella seconda un aggettivo che significa «superato, privo di valore».",
-        tr: "La premessa su cui si fonda l'intero studio si è rivelata falsa; i risultati sono quindi superati.",
-        why: "<b>Prämisse</b> (si accettano anche <i>Annahme</i>, <i>Grundannahme</i>, <i>Voraussetzung</i>) e <b>obsolet</b> (o <i>hinfällig</i>, <i>gegenstandslos</i>). <i>Prämisse</i> è femminile: <i>die Prämisse, auf der</i>."
+        q: "Completa: nella prima lacuna il latinismo per «premessa», nella seconda un aggettivo che significa «privo di validità».",
+        tr: "La premessa su cui si fonda l'intero studio si è rivelata falsa; i risultati sono quindi privi di validità.",
+        why: "<b>Prämisse</b> (si accettano anche <i>Annahme</i>, <i>Grundannahme</i>, <i>Voraussetzung</i>) e <b>hinfällig</b> (o <i>gegenstandslos</i>, <i>ungültig</i>): un risultato invalidato è <i>hinfällig</i>, mentre <i>obsolet</i> dice solo che qualcosa è superato dal tempo. <i>Prämisse</i> è femminile: <i>die Prämisse, auf der</i>."
       },
       {
         q: "Abbina ogni latinismo al suo significato.",
@@ -1387,7 +1387,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa: «Die ___ für die Vergabe der Stipendien sind streng.»",
         hint: "plurale di das Kriterium",
-        why: "<b>Kriterien</b>: i nomi neutri in <i>-um</i> fanno il plurale in <i>-en</i>."
+        why: "<b>Kriterien</b>: <i>-um</i> è sostituito da <i>-en</i> (<i>Kriteri|um → Kriteri|en</i>)."
       },
       {
         q: "Completa la formula attenuante: «Die Lage ist, ___ gesagt, angespannt.»",
@@ -1455,7 +1455,7 @@ LINGUAI.addStrings("it", {
       },
       {
         q: "Traduci con un attributo participiale: «Le misure proposte dalla commissione sono superate.» (vorschlagen, obsolet)",
-        why: "<i>Die von der Kommission vorgeschlagenen Maßnahmen sind obsolet</i>: l'attributo esteso sta fra <i>die</i> e <i>Maßnahmen</i>. Si accettano anche <i>veraltet</i> e la relativa (<i>die Maßnahmen, die die Kommission vorgeschlagen hat</i>)."
+        why: "<i>Die von der Kommission vorgeschlagenen Maßnahmen sind obsolet</i>: l'attributo esteso sta fra <i>die</i> e <i>Maßnahmen</i>. Si accettano anche <i>veraltet</i> e <i>überholt</i>. La relativa (<i>die Maßnahmen, die die Kommission vorgeschlagen hat</i>) è corretta, ma qui la consegna chiede l'attributo."
       },
       {
         tr: "Le misure proposte dalla commissione sono, a dir poco, controverse.",

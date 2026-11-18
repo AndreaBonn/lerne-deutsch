@@ -641,7 +641,7 @@ LINGUAI.addUnits("C2", [
           {
             t: "cloze",
             text: "Die {{1}}, auf der die gesamte Studie beruht, hat sich als falsch erwiesen; die Ergebnisse sind damit {{2}}.",
-            gaps: [["Prämisse", "Annahme", "Grundannahme", "Voraussetzung"], ["obsolet", "hinfällig", "gegenstandslos"]]
+            gaps: [["Prämisse", "Annahme", "Grundannahme", "Voraussetzung"], ["hinfällig", "gegenstandslos", "ungültig"]]
           },
           {
             t: "match",
@@ -692,12 +692,7 @@ LINGUAI.addUnits("C2", [
           a: [
             "Die von der Kommission vorgeschlagenen Maßnahmen sind obsolet",
             "Die von der Kommission vorgeschlagenen Maßnahmen sind veraltet",
-            "Die Maßnahmen, die die Kommission vorgeschlagen hat, sind obsolet",
-            "Die Maßnahmen, die die Kommission vorgeschlagen hat, sind veraltet",
-            "Die Maßnahmen, die von der Kommission vorgeschlagen wurden, sind obsolet",
-            "Die Maßnahmen, die von der Kommission vorgeschlagen wurden, sind veraltet",
-            "Die Maßnahmen, die von der Kommission vorgeschlagen worden sind, sind obsolet",
-            "Die Maßnahmen, die von der Kommission vorgeschlagen worden sind, sind veraltet"
+            "Die von der Kommission vorgeschlagenen Maßnahmen sind überholt"
           ]
         },
         { t: "speak", it: "Die von der Kommission vorgeschlagenen Maßnahmen sind, gelinde gesagt, umstritten." }
