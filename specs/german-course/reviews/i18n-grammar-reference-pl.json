@@ -1,7 +1,38 @@
 {
-  "bundleHash": "be6541c4ba4cd60700b1a2536d872ffb852c944e6a085b6fd71f4d466b5df0b6",
-  "findings": [],
+  "bundleHash": "da85e75e7469de1c6555ea86eb9953b251067337efe5549978c156ed387057f2",
+  "findings": [
+    {
+      "kind": "grammatica tedesca",
+      "msg": "La spiegazione afferma che dopo la negazione non si usa mai il genitivo. La negazione non elimina il genitivo richiesto da un verbo: per esempio, «Er bedarf keiner Hilfe». Precisare che la negazione non trasforma automaticamente l’accusativo in genitivo, come invece accade spesso in polacco.",
+      "path": "content.ref:g-genitiv.body"
+    },
+    {
+      "kind": "grammatica tedesca",
+      "msg": "«Sie ist gegangen» con la maiuscola è ambiguo all’inizio della frase e può riferirsi a «lei», ma l’esempio vuole mostrare esplicitamente il genere del soggetto. Usare soggetti non ambigui, per esempio «Der Mann ist gegangen, die Frau ist gegangen, die Kinder sind gegangen».",
+      "path": "content.ref:g-perfekt.body"
+    },
+    {
+      "kind": "grammatica tedesca",
+      "msg": "La regola secondo cui dopo «nachdem» si usa il Plusquamperfekt è presentata come obbligatoria. Si tratta di uno schema standard per esprimere anteriorità rispetto a un evento passato, non di un obbligo in ogni contesto; chiarire la relazione temporale e ammettere le variazioni d’uso.",
+      "path": "content.ref:g-plusquamperfekt.body"
+    },
+    {
+      "kind": "spiegazione fuorviante",
+      "msg": "La nota afferma che «ob» compare solo nelle subordinate. Può comparire anche in domande indipendenti di dubbio, per esempio «Ob er wohl kommt?». Limitare la regola al confronto con il normale «czy» interrogativo.",
+      "path": "content.ref:g-nebensatz-dass.body"
+    },
+    {
+      "kind": "traduzione polacca",
+      "msg": "«Sie wird den Zug wohl verpasst haben» significa probabilmente che ha perso il treno, non necessariamente che è arrivata in ritardo al treno. Sostituire «pewnie spóźniła się na pociąg» con «pewnie nie zdążyła na pociąg».",
+      "path": "content.ref:g-futur.body"
+    },
+    {
+      "kind": "ortografia polacca",
+      "msg": "Nell’intestazione della tabella «bierń.» è un’abbreviazione errata di «biernik». Usare «biern.» oppure scrivere «biernik».",
+      "path": "content.ref:g-indefinitpron.body"
+    }
+  ],
   "lang": "pl",
   "unit": "i18n-grammar-reference",
-  "verdict": "pass"
+  "verdict": "fail"
 }
