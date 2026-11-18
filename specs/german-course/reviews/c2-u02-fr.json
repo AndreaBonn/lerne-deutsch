@@ -1,15 +1,20 @@
 {
-  "bundleHash": "97bde04667b23533752eb10b091cacf9dc94ee26bd0b3dd03883a0ac8fc65839",
+  "bundleHash": "41b009a145605553bd7c69a59e93ea73558d15b827b812f37dcd66ec6491460e",
   "findings": [
     {
-      "kind": "progression CECR",
-      "msg": "La majorité des exercices demande de reconnaître des pluriels courants, le genre du dernier élément d’un composé ou des dérivés transparents, avec des indices explicites. Ces tâches relèvent largement des niveaux intermédiaires et ne mobilisent pas la précision lexicale et les nuances attendues au C2. Conserver le format court, mais introduire des distinctions morphologiques moins prévisibles, des variantes de registre et des emplois contextuels plus subtils.",
+      "kind": "livello CEFR",
+      "msg": "La progressione dell’unità è prevalentemente di livello intermedio: riconoscere Banken/Bänke, ricavare il genere di un composto dall’ultimo elemento e formare nomi con suffissi frequenti sono attività che non richiedono una padronanza C2. Mantenendo il formato breve, introdurre scelte contestuali più sottili, composti specialistici ambigui e derivati con sfumature di registro e significato; verificare poi tali distinzioni anche nel test.",
       "path": "merged.lessons"
     },
     {
-      "kind": "explication grammaticale",
-      "msg": "L’affirmation selon laquelle les mots allemands en « -ment » sont neutres est trop absolue : « der Moment » et « der Zement » sont masculins. Indiquer qu’ils sont souvent neutres et signaler les exceptions.",
-      "path": "merged.lessons[2].theory[4].contrast"
+      "kind": "spiegazione grammaticale",
+      "msg": "La frase «Un suffixe fait passer un mot dans une autre catégorie» generalizza troppo: un suffisso può lasciare invariata la categoria, come nel diminutivo Haus → Häuschen. Precisare che alcuni suffissi cambiano categoria e che quelli nominali presentati orientano o determinano il genere.",
+      "path": "merged.lessons[2].theory[0].p"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "L’affermazione «Le dictionnaire contient des Wörter, jamais des Worte» è troppo assoluta: un dizionario può riportare Worte come forma o come parte di espressioni. Distinguere invece tra Wörter quando si contano le unità lessicali e Worte quando si intendono enunciati o parole considerate come discorso.",
+      "path": "merged.lessons[0].theory[3].trap"
     }
   ],
   "lang": "fr",
