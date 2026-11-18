@@ -392,5 +392,201 @@ LINGUAI.addReadings([
       { t: "mcq", q: "Worüber beschwert sich der Leser?", opts: ["über den falsch geschriebenen Nachnamen des Experten", "über die Seite, auf der der Artikel steht", "über die Länge des Artikels"], a: 0 },
       { t: "truefalse", q: "Der Artikel von Lukas wird gedruckt.", a: 0 }
     ]
+  },
+
+  /* ---------------- C1 ---------------- */
+  {
+    id: "r-c1-amtsdeutsch",
+    cefr: "C1",
+    tag: "g-nominalstil",
+    titleIt: "Um Beachtung wird gebeten",
+    sentences: [
+      "Wer einen Bescheid vom Amt erhält, stößt schnell auf eine Sprache, die sorgfältig vermeidet zu sagen, wer eigentlich was tut.",
+      "„Um Beachtung der beigefügten Hinweise wird gebeten“, heißt es dann, doch weder ist erkennbar, wer bittet, noch, wer die Hinweise zu beachten hat.",
+      "Der Bürger selbst tritt in solchen Schreiben nicht als Mensch auf, sondern als Antragsteller, Leistungsempfänger oder Betroffener.",
+      "Die Vorliebe für schwerfällige Substantive wie „Inanspruchnahme“ oder „Antragstellung“ verleiht den Texten den Anschein strenger Sachlichkeit.",
+      "Diese Distanz ist jedoch weder zufällig noch harmlos.",
+      "Eine Verwaltung, die den Urheber einer Entscheidung nicht benennt, erschwert es den Betroffenen, gegen diese Entscheidung Widerspruch einzulegen.",
+      "Seit Jahren geben Behörden in Deutschland, Österreich und der Schweiz Leitfäden für bürgernahe Sprache heraus.",
+      "Sie werden bei jeder Gelegenheit zitiert und erstaunlich selten angewandt, was auf seine Weise ebenfalls eine Antwort ist."
+    ],
+    glossIt: ["der Bescheid", "die Beachtung", "beigefügt", "der Antragsteller", "der Leistungsempfänger", "die Inanspruchnahme", "der Anschein", "der Urheber", "Widerspruch einlegen", "bürgernah"],
+    lexIt: ["Amt", "erhalten", "stoßen auf", "sorgfältig", "vermeiden", "Hinweis", "erkennbar", "Bürger", "Schreiben", "Betroffene", "Vorliebe", "Substantiv", "Antragstellung", "verleihen", "Sachlichkeit", "Distanz", "zufällig", "harmlos", "Verwaltung", "benennen", "erschweren", "Entscheidung", "Behörde", "Leitfaden", "Gelegenheit", "zitieren", "erstaunlich", "anwenden"],
+    questions: [
+      { t: "mcq", q: "Welche Eigenschaft der Behördensprache steht im Mittelpunkt des Textes?", opts: ["Sie verwendet viele Fremdwörter.", "Sie lässt offen, wer handelt.", "Sie ist besonders knapp."], a: 1 },
+      { t: "truefalse", q: "Der Autor hält die Distanz der Behördensprache für unbedenklich.", a: 1 },
+      { t: "mcq", q: "Welche Folge hat es laut Text, wenn der Urheber einer Entscheidung ungenannt bleibt?", opts: ["Man kann sich schwerer gegen die Entscheidung wehren.", "Die Entscheidung wird schneller getroffen.", "Der Bescheid wird kürzer."], a: 0 },
+      { t: "mcq", q: "Was deutet der letzte Satz über die Leitfäden an?", opts: ["Sie sind zu kompliziert geschrieben.", "Es gibt noch zu wenige davon.", "Dass sie kaum befolgt werden, verrät etwas über die Verwaltung."], a: 2 }
+    ]
+  },
+  {
+    id: "r-c1-frauenstimmrecht",
+    cefr: "C1",
+    tag: "g-praeteritum",
+    titleIt: "Der 7. Februar 1971",
+    sentences: [
+      "Am 7. Februar 1971 entschieden die Schweizer Männer in einer Volksabstimmung darüber, ob Frauen auf Bundesebene wählen und abstimmen dürften.",
+      "Zwölf Jahre zuvor hatten sie dasselbe Anliegen noch mit rund zwei Dritteln der Stimmen abgelehnt.",
+      "Diesmal sprachen sich knapp zwei Drittel dafür aus, und doch gehörte die Schweiz damit zu den letzten Ländern Europas, in denen Frauen das Stimmrecht erhielten.",
+      "Die Verzögerung erklärt sich zum Teil aus der direkten Demokratie selbst: Über eine Verfassungsänderung entschied nicht das Parlament allein, sondern die Gesamtheit der stimmberechtigten Männer.",
+      "In manchen Kantonen dauerte es noch erheblich länger, bis Frauen auch über lokale Angelegenheiten mitbestimmen konnten.",
+      "Appenzell Innerrhoden führte das Frauenstimmrecht auf kantonaler Ebene erst 1990 ein, und zwar nicht aus eigenem Entschluss, sondern auf Anordnung des Bundesgerichts.",
+      "Dort wurde bis dahin auf der Landsgemeinde, einer jährlichen Versammlung unter freiem Himmel, mit erhobener Hand abgestimmt.",
+      "Heute wird der 7. Februar in der Schweiz nicht als Feiertag begangen, doch kaum ein Datum taucht in Debatten über Gleichstellung häufiger auf."
+    ],
+    glossIt: ["die Volksabstimmung", "auf Bundesebene", "das Anliegen", "das Stimmrecht", "die Verfassungsänderung", "stimmberechtigt", "die Anordnung", "die Landsgemeinde", "begehen (einen Tag)"],
+    lexIt: ["Februar", "entscheiden", "wählen", "abstimmen", "ablehnen", "Drittel", "Stimme", "sich aussprechen für", "Verzögerung", "Demokratie", "Parlament", "Gesamtheit", "Kanton", "Angelegenheit", "mitbestimmen", "Appenzell Innerrhoden", "einführen", "Entschluss", "Bundesgericht", "Versammlung", "Feiertag", "Datum", "Debatte", "Gleichstellung"],
+    questions: [
+      { t: "truefalse", q: "Bei der ersten Abstimmung zwölf Jahre zuvor lehnten die Männer das Frauenstimmrecht ab.", a: 0 },
+      { t: "mcq", q: "Wie erklärt der Text die späte Einführung?", opts: ["mit dem Widerstand des Bundesgerichts", "mit der Funktionsweise der direkten Demokratie", "mit einem Beschluss des Parlaments"], a: 1 },
+      { t: "mcq", q: "Wie kam das Frauenstimmrecht in Appenzell Innerrhoden zustande?", opts: ["durch einen Beschluss der Landsgemeinde", "durch eine nationale Volksabstimmung", "durch eine Anordnung des Bundesgerichts"], a: 2 },
+      { t: "truefalse", q: "Der 7. Februar ist in der Schweiz ein gesetzlicher Feiertag.", a: 1 }
+    ]
+  },
+  {
+    id: "r-c1-innenstadt",
+    cefr: "C1",
+    tag: "g-konjunktiv1",
+    titleIt: "Streit um die Innenstadt",
+    sentences: [
+      "Der Plan, die Innenstadt einer norddeutschen Hafenstadt weitgehend vom Autoverkehr zu befreien, sorgt seit Monaten für heftige Auseinandersetzungen.",
+      "Die Befürworter argumentieren, eine autofreie Innenstadt sei leiser, sicherer und für Familien deutlich attraktiver.",
+      "Zudem habe sich in anderen Städten gezeigt, dass Fußgängerzonen den Umsatz eher steigerten als senkten.",
+      "Der Verband der Einzelhändler hält dagegen, viele Kundinnen und Kunden aus dem Umland kämen nur mit dem Auto und würden künftig lieber im Einkaufszentrum am Stadtrand einkaufen.",
+      "Man habe nichts gegen weniger Verkehr, betont dessen Sprecherin, wohl aber gegen eine Planung, die über die Köpfe der Betroffenen hinweg erfolge.",
+      "Die Stadtverwaltung wiederum versichert, sämtliche Einwände würden geprüft und in den endgültigen Entwurf einbezogen.",
+      "Ob dies mehr ist als eine Floskel, lässt sich derzeit nicht beurteilen.",
+      "Fest steht nur, dass im kommenden Frühjahr eine Bürgerbefragung stattfinden soll, deren Ergebnis allerdings rechtlich nicht bindend wäre."
+    ],
+    glossIt: ["die Auseinandersetzung", "der Befürworter", "der Umsatz", "der Einzelhändler", "dagegenhalten", "das Umland", "über die Köpfe hinweg", "der Einwand", "die Floskel", "rechtlich bindend"],
+    lexIt: ["Plan", "Innenstadt", "Hafenstadt", "weitgehend", "Autoverkehr", "befreien", "heftig", "argumentieren", "autofrei", "leise", "sicher", "attraktiv", "Fußgängerzone", "steigern", "senken", "Verband", "Einkaufszentrum", "Stadtrand", "betonen", "Sprecherin", "Planung", "Betroffene", "Stadtverwaltung", "versichern", "prüfen", "Entwurf", "einbeziehen", "beurteilen", "Frühjahr", "Bürgerbefragung", "Ergebnis"],
+    questions: [
+      { t: "mcq", q: "Welches Argument bringen die Befürworter vor?", opts: ["Das Einkaufszentrum am Stadtrand müsse geschlossen werden.", "Fußgängerzonen hätten anderswo den Umsatz eher gesteigert.", "Die Kunden aus dem Umland kämen ohnehin mit dem Bus."], a: 1 },
+      { t: "truefalse", q: "Die Sprecherin der Einzelhändler lehnt jede Verringerung des Verkehrs ab.", a: 1 },
+      { t: "mcq", q: "Wie bewertet der Text die Zusicherung der Stadtverwaltung?", opts: ["als erwiesen", "als eindeutig falsch", "als derzeit nicht überprüfbar"], a: 2 },
+      { t: "truefalse", q: "Das Ergebnis der Bürgerbefragung wäre für die Stadt rechtlich verpflichtend.", a: 1 }
+    ]
+  },
+  {
+    id: "r-c1-hochwasser",
+    cefr: "C1",
+    tag: "g-partizipialattribut",
+    titleIt: "Nach der Flut",
+    sentences: [
+      "Passau, an der Mündung von Inn und Ilz in die Donau gelegen, hat mit Hochwasser jahrhundertelange Erfahrung.",
+      "Die an vielen Häusern der Altstadt angebrachten Markierungen erinnern an die Pegelstände vergangener Fluten.",
+      "Eine der höchsten dieser Marken stammt aus dem Juni 2013, als das Wasser einen seit mehr als fünfhundert Jahren nicht mehr verzeichneten Stand erreichte.",
+      "In den tiefer gelegenen Gassen standen Erdgeschosse und Keller tagelang unter Wasser, und zahlreiche Geschäfte mussten ihre durchnässte Ware entsorgen.",
+      "Bemerkenswert war jedoch weniger der Schaden als die rasch einsetzende Hilfsbereitschaft.",
+      "Über soziale Netzwerke verabredete Freiwillige, viele von ihnen Studierende der örtlichen Universität, schaufelten Schlamm aus den Häusern und schleppten Sandsäcke.",
+      "Über weitergehende Schutzmaßnahmen wird seither immer wieder diskutiert, denn eine durchgehende Mauer würde den Blick auf den Fluss und damit das Gesicht der Altstadt verändern.",
+      "So lebt die Stadt mit einem Fluss, der ihr Reichtum und Gefahr zugleich ist."
+    ],
+    glossIt: ["die Mündung", "angebracht", "der Pegelstand", "verzeichnet", "das Erdgeschoss", "durchnässt", "entsorgen", "rasch einsetzend", "die Hilfsbereitschaft", "der Schlamm", "der Sandsack"],
+    lexIt: ["Passau", "Inn", "Ilz", "Donau", "Hochwasser", "Erfahrung", "Altstadt", "Markierung", "erinnern", "Flut", "Marke", "Juni", "Stand", "Gasse", "Keller", "tagelang", "Geschäft", "Ware", "bemerkenswert", "Schaden", "soziale Netzwerke", "verabreden", "Freiwillige", "Studierende", "Universität", "schaufeln", "schleppen", "Schutzmaßnahme", "diskutieren", "Mauer", "Blick", "Fluss", "Reichtum", "Gefahr"],
+    questions: [
+      { t: "mcq", q: "Woran erkennt man in der Passauer Altstadt frühere Hochwasser?", opts: ["an Sandsäcken vor den Türen", "an Markierungen an den Häusern", "an Schildern der Universität"], a: 1 },
+      { t: "truefalse", q: "Im Juni 2013 stieg das Wasser so hoch wie seit über fünf Jahrhunderten nicht mehr.", a: 0 },
+      { t: "mcq", q: "Was hebt der Text als besonders bemerkenswert hervor?", opts: ["die schnelle Hilfe vieler Freiwilliger", "die Höhe des Schadens", "die Arbeit der Feuerwehr"], a: 0 },
+      { t: "mcq", q: "Warum ist eine durchgehende Mauer umstritten?", opts: ["Sie wäre zu teuer.", "Sie würde den Schiffsverkehr behindern.", "Sie würde das Bild der Altstadt verändern."], a: 2 }
+    ]
+  },
+  {
+    id: "r-c1-betriebsrat",
+    cefr: "C1",
+    tag: "g-funktionsverbgefuege",
+    titleIt: "Der Betriebsrat meldet sich zu Wort",
+    sentences: [
+      "In einem mittelständischen Maschinenbauunternehmen bei Bielefeld hat die Geschäftsführung im Herbst eine neue Arbeitszeitregelung zur Diskussion gestellt.",
+      "Künftig sollten die Beschäftigten ihre Schichten über eine App selbst planen, was zunächst nach mehr Freiheit klang.",
+      "Der Betriebsrat brachte jedoch bald zur Sprache, dass die Regelung ohne seine Zustimmung gar nicht in Kraft treten dürfe.",
+      "Nach dem Betriebsverfassungsgesetz steht ihm bei Fragen der Arbeitszeit nämlich ein Mitbestimmungsrecht zu.",
+      "Auf der Betriebsversammlung nahmen mehrere Beschäftigte Bezug auf ähnliche Systeme in früheren Betrieben, die in der Praxis vor allem den Druck erhöht hätten.",
+      "Andere gaben zu bedenken, dass Eltern auf diese Weise endlich ihre Arbeitszeit mit den Öffnungszeiten der Kita in Einklang bringen könnten.",
+      "Nach wochenlangen Verhandlungen kam schließlich eine Betriebsvereinbarung zustande, die beiden Seiten Rechnung trägt: Die App wird eingeführt, doch niemand darf gezwungen werden, kurzfristig eingetragene Schichten zu übernehmen.",
+      "Die Geschäftsführerin räumte später ein, sie habe den Einfluss des Betriebsrats anfangs unterschätzt, inzwischen aber Gefallen an dem Verfahren gefunden."
+    ],
+    glossIt: ["zur Diskussion stellen", "die Arbeitszeitregelung", "der Betriebsrat", "zur Sprache bringen", "in Kraft treten", "das Mitbestimmungsrecht", "Bezug nehmen auf", "zu bedenken geben", "in Einklang bringen", "die Betriebsvereinbarung", "Rechnung tragen", "einräumen"],
+    lexIt: ["mittelständisch", "Maschinenbau", "Unternehmen", "Bielefeld", "Geschäftsführung", "Herbst", "künftig", "Beschäftigte", "Schicht", "planen", "Freiheit", "Zustimmung", "Betriebsverfassungsgesetz", "zustehen", "Betriebsversammlung", "ähnlich", "Betrieb", "Druck", "erhöhen", "Eltern", "Öffnungszeiten", "Kita", "Verhandlung", "zustande kommen", "einführen", "zwingen", "kurzfristig", "eintragen", "Einfluss", "unterschätzen", "Gefallen finden an", "Verfahren"],
+    questions: [
+      { t: "truefalse", q: "Die Geschäftsführung durfte die neue Regelung ohne den Betriebsrat einführen.", a: 1 },
+      { t: "mcq", q: "Welchen Vorteil sahen manche Beschäftigte in der App?", opts: ["höhere Löhne", "Arbeitszeiten, die sich besser mit der Kinderbetreuung vereinbaren lassen", "weniger Nachtschichten"], a: 1 },
+      { t: "mcq", q: "Was legt die Betriebsvereinbarung fest?", opts: ["Die App wird nicht eingeführt.", "Kurzfristige Schichten sind für alle Pflicht.", "Niemand muss kurzfristig eingetragene Schichten übernehmen."], a: 2 },
+      { t: "truefalse", q: "Die Geschäftsführerin sieht das Verfahren inzwischen positiv.", a: 0 }
+    ]
+  },
+
+  /* ---------------- C2 ---------------- */
+  {
+    id: "r-c2-lob",
+    cefr: "C2",
+    tag: "g-register",
+    titleIt: "Nicht geschimpft ist genug gelobt",
+    sentences: [
+      "Wer im deutschsprachigen Raum ein Lob erwartet, das sich auch als solches zu erkennen gibt, wird nicht selten enttäuscht.",
+      "„Nicht geschimpft ist genug gelobt“, lautet ein schwäbisches Sprichwort, und es beschreibt eine Haltung, die weit über Schwaben hinaus verbreitet ist.",
+      "Ein beiläufiges „Passt schon“ kann aus dem Mund einer Vorgesetzten das höchste der Gefühle sein, während ein überschwängliches „Ganz toll!“ mitunter eher stutzig machen sollte.",
+      "Umgekehrt verbirgt sich hinter einem freundlich vorgebrachten „Kann man so machen“ oft ein vernichtendes Urteil, dem nur der Nachsatz fehlt, man könne es eben auch lassen.",
+      "Entscheidend ist dabei weniger der Wortlaut als die Betonung, die Pause und die Frage, wer zu wem spricht.",
+      "Wer nur die wörtliche Bedeutung gelernt hat, bedankt sich artig für eine Spitze oder fühlt sich durch eine wohlwollende Untertreibung gekränkt.",
+      "Ein Regelwerk, das einem diese Unterscheidungen abnähme, gibt es nicht; es gibt allenfalls die Gewöhnung, die man sich durch eine gewisse Anzahl öffentlich begangener Fehlgriffe erwirbt.",
+      "Dass ausgerechnet eine Sprache, der man gern Direktheit nachsagt, so viel zwischen den Zeilen verhandelt, gehört zu ihren hübscheren Widersprüchen."
+    ],
+    glossIt: ["sich zu erkennen geben", "das Sprichwort", "das höchste der Gefühle", "überschwänglich", "stutzig machen", "vernichtend", "der Nachsatz", "artig", "die Spitze", "die Untertreibung", "gekränkt", "der Fehlgriff", "nachsagen"],
+    lexIt: ["Raum", "Lob", "erwarten", "enttäuschen", "schwäbisch", "Haltung", "verbreitet", "beiläufig", "Vorgesetzte", "mitunter", "umgekehrt", "sich verbergen", "vorbringen", "Urteil", "entscheidend", "Wortlaut", "Betonung", "wörtlich", "Bedeutung", "sich bedanken", "wohlwollend", "Regelwerk", "abnehmen", "allenfalls", "Gewöhnung", "erwerben", "Direktheit", "Widerspruch"],
+    questions: [
+      { t: "mcq", q: "Was kann ein beiläufiges „Passt schon“ einer Vorgesetzten bedeuten?", opts: ["ein deutliches Lob", "eine versteckte Kritik", "die Aufforderung, die Arbeit zu wiederholen"], a: 0 },
+      { t: "mcq", q: "Was verbirgt sich laut Text oft hinter „Kann man so machen“?", opts: ["eine ehrliche Zustimmung", "eine Bitte um Hilfe", "eine scharfe Ablehnung"], a: 2 },
+      { t: "truefalse", q: "Nach Ansicht des Autors lassen sich solche Feinheiten mit klaren Regeln lernen.", a: 1 },
+      { t: "mcq", q: "Worin sieht der Text einen Widerspruch?", opts: ["Schwaben loben häufiger als andere.", "Eine als direkt geltende Sprache sagt vieles nur indirekt.", "Vorgesetzte sprechen undeutlicher als Kollegen."], a: 1 }
+    ]
+  },
+  {
+    id: "r-c2-arbeitszeugnis",
+    cefr: "C2",
+    tag: "g-komparation",
+    titleIt: "Stets zu unserer vollsten Zufriedenheit",
+    sentences: [
+      "Arbeitszeugnisse müssen in Deutschland von Rechts wegen wohlwollend formuliert sein, zugleich aber der Wahrheit entsprechen.",
+      "Aus diesem Zielkonflikt ist im Lauf der Jahrzehnte eine Geheimsprache hervorgegangen, deren Existenz offiziell niemand einräumt, obwohl das Gesetz verschlüsselte Formulierungen ausdrücklich untersagt, und die gleichwohl jede Personalabteilung beherrscht.",
+      "Die Notenskala beginnt beim grammatisch fragwürdigen Superlativ „stets zu unserer vollsten Zufriedenheit“, der einer glatten Eins entspricht.",
+      "Fehlt das Wörtchen „stets“, ist man bereits bei einer Zwei, und wer lediglich „zu unserer Zufriedenheit“ gearbeitet hat, liegt nur noch bei einem Ausreichend.",
+      "Heimtückischer sind Sätze, die auf den ersten Blick schmeicheln: Wer „sich stets bemühte“, hat erkennbar nichts zustande gebracht, und wem bescheinigt wird, er habe „durch seine Geselligkeit zur Verbesserung des Betriebsklimas beigetragen“, dem wird mitunter ein allzu entspanntes Verhältnis zum Alkohol unterstellt.",
+      "Ebenso aufschlussreich ist, was fehlt: Ein Zeugnis, das die Ehrlichkeit einer Kassiererin mit keinem Wort erwähnt, sagt über sie womöglich mehr, als ihr lieb sein kann.",
+      "Inzwischen kursieren derart viele Ratgeber zur Entschlüsselung, dass manche Personalverantwortliche Zeugnisse kaum noch ernst nehmen und lieber zum Telefonhörer greifen.",
+      "So hat ausgerechnet das Bemühen, niemandem zu schaden, eine Textsorte hervorgebracht, der kaum noch jemand glaubt."
+    ],
+    glossIt: ["das Arbeitszeugnis", "von Rechts wegen", "der Zielkonflikt", "hervorgehen aus", "untersagen", "gleichwohl", "heimtückisch", "schmeicheln", "bescheinigen", "die Geselligkeit", "das Betriebsklima", "unterstellen", "aufschlussreich", "die Entschlüsselung", "die Textsorte"],
+    lexIt: ["wohlwollend", "formulieren", "Wahrheit", "entsprechen", "Jahrzehnt", "Geheimsprache", "Existenz", "offiziell", "einräumen", "Gesetz", "verschlüsselt", "ausdrücklich", "Personalabteilung", "beherrschen", "Notenskala", "fragwürdig", "Superlativ", "stets", "Zufriedenheit", "lediglich", "sich bemühen", "zustande bringen", "Verbesserung", "beitragen", "Verhältnis", "Ehrlichkeit", "Kassiererin", "erwähnen", "womöglich", "kursieren", "Ratgeber", "Personalverantwortliche", "Telefonhörer", "schaden", "hervorbringen"],
+    questions: [
+      { t: "mcq", q: "Welche beiden Anforderungen muss ein Arbeitszeugnis gleichzeitig erfüllen?", opts: ["Es muss kurz und vollständig sein.", "Es muss wohlwollend und wahr sein.", "Es muss verschlüsselt und offiziell sein."], a: 1 },
+      { t: "truefalse", q: "Das Gesetz erlaubt verschlüsselte Formulierungen in Zeugnissen ausdrücklich.", a: 1 },
+      { t: "mcq", q: "Was bedeutet „Er hat sich stets bemüht“ in der Zeugnissprache?", opts: ["Er war besonders fleißig und erfolgreich.", "Er war bei den Kollegen beliebt.", "Seine Bemühungen blieben ohne Ergebnis."], a: 2 },
+      { t: "mcq", q: "Welche Folge hat die Geheimsprache laut Text?", opts: ["Viele Personalverantwortliche verlassen sich lieber auf ein Telefonat.", "Zeugnisse werden immer länger.", "Arbeitgeber stellen keine Zeugnisse mehr aus."], a: 0 }
+    ]
+  },
+  {
+    id: "r-c2-heimat",
+    cefr: "C2",
+    tag: "g-konjunktiv2",
+    titleIt: "Ein schwieriges Wort",
+    sentences: [
+      "Kaum ein deutsches Wort gilt als so unübersetzbar und zugleich so belastet wie „Heimat“.",
+      "Es bezeichnet nicht bloß den Ort, an dem man geboren wurde, sondern ein Geflecht aus Landschaft, Mundart, Gerüchen und Gewohnheiten, dessen Bedeutung einem meist erst in der Ferne aufgeht.",
+      "Im neunzehnten Jahrhundert romantisch verklärt, im Nationalsozialismus zur Blut-und-Boden-Ideologie verengt und in der Nachkriegszeit durch kitschige Heimatfilme ins Harmlose gewendet, hat der Begriff mehr Umdeutungen erlebt als die meisten seiner Nachbarn im Wörterbuch.",
+      "Lange Zeit mied ihn deshalb, wer sich für aufgeklärt hielt, und überließ ihn bereitwillig denen, die damit Grenzen ziehen wollten.",
+      "Seit einigen Jahren jedoch wird das Wort neu verhandelt: Es gibt Ministerien, die es im Namen tragen, und Schriftstellerinnen mit Migrationsgeschichte fragen, ob man nicht auch mehrere Heimaten haben könne.",
+      "Wäre Heimat nur eine Frage der Herkunft, so bliebe sie all jenen verschlossen, die anderswo zur Welt gekommen sind.",
+      "Verstünde man sie hingegen als etwas, das man sich aneignet, indem man sich an einem Ort einrichtet und dort gebraucht wird, so verlöre sie womöglich ihre ausgrenzende Schärfe.",
+      "Welche der beiden Lesarten sich durchsetzen wird, ist offen; dass um ein einziges Wort so erbittert gestritten wird, zeigt immerhin, wie viel man ihm noch zutraut."
+    ],
+    glossIt: ["belastet", "das Geflecht", "die Mundart", "aufgehen (jemandem)", "verklären", "verengen", "kitschig", "die Umdeutung", "meiden", "aufgeklärt", "sich aneignen", "ausgrenzend", "die Lesart", "erbittert", "zutrauen"],
+    lexIt: ["unübersetzbar", "Heimat", "bezeichnen", "Ort", "Landschaft", "Geruch", "Gewohnheit", "Ferne", "Jahrhundert", "romantisch", "Nationalsozialismus", "Ideologie", "Nachkriegszeit", "Heimatfilm", "harmlos", "Begriff", "Wörterbuch", "bereitwillig", "Grenze", "verhandeln", "Ministerium", "Schriftstellerin", "Migrationsgeschichte", "Herkunft", "verschlossen", "sich einrichten", "brauchen", "Schärfe", "sich durchsetzen", "streiten"],
+    questions: [
+      { t: "mcq", q: "Wann wird einem laut Text die Bedeutung von Heimat meist bewusst?", opts: ["in der Kindheit", "wenn man weit weg ist", "beim Lesen von Wörterbüchern"], a: 1 },
+      { t: "truefalse", q: "In der Nachkriegszeit wurde der Begriff vor allem durch Heimatfilme verharmlost.", a: 0 },
+      { t: "mcq", q: "Welche Lesart würde dem Begriff nach dem Text seine ausgrenzende Schärfe nehmen?", opts: ["Heimat als Frage der Herkunft", "Heimat als Begriff der Literatur", "Heimat als etwas, das man sich an einem Ort aneignet"], a: 2 },
+      { t: "mcq", q: "Was zeigt der heftige Streit um das Wort laut Text?", opts: ["dass man ihm noch viel Bedeutung beimisst", "dass das Wort bald verschwinden wird", "dass die Politik es nicht mehr benutzt"], a: 0 }
+    ]
   }
 ]);

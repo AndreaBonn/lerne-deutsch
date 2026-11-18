@@ -97,5 +97,53 @@ LINGUAI.addStrings("it", {
     title: "Il nuovo tirocinante",
     gloss: ["il quotidiano", "la redazione", "il tirocinante", "la caporedattrice", "l'interlocutore", "la valanga", "il registratore", "il responsabile di redazione di turno", "lamentarsi", "proprio (quello)"],
     lex: ["tirocinio", "Innsbruck", "giovane", "presentare", "collega", "consiglio", "esperto", "giornalista", "consigliare", "nome", "verificare", "esperto (specialista)", "intervistare", "università", "fare ricerca", "dimenticare", "colloquio", "accendere", "contenuto", "appunto", "ricostruire", "stampare", "pagina", "lettore", "cognome", "sbagliato", "rosso"]
+  },
+
+  "read:r-c1-amtsdeutsch": {
+    title: "Si prega di prendere visione",
+    gloss: ["il provvedimento (dell'autorità)", "l'osservanza (nel linguaggio formale)", "allegato", "il richiedente", "il beneficiario di prestazioni", "la fruizione (di un servizio, di un diritto)", "l'apparenza", "l'autore (di un atto)", "presentare opposizione (ricorso amministrativo)", "vicino al cittadino (comprensibile)"],
+    lex: ["ufficio pubblico", "ricevere", "imbattersi in", "accurato (con cura)", "evitare", "avvertenza", "riconoscibile", "cittadino", "lettera (ufficiale)", "interessato (la persona coinvolta)", "predilezione", "sostantivo", "presentazione della domanda", "conferire", "oggettività", "distanza", "casuale", "innocuo", "amministrazione", "nominare", "rendere difficile", "decisione", "autorità (ente pubblico)", "guida (vademecum)", "occasione", "citare", "sorprendente", "applicare"]
+  },
+
+  "read:r-c1-frauenstimmrecht": {
+    title: "Il 7 febbraio 1971",
+    gloss: ["la votazione popolare (referendum)", "a livello federale", "la richiesta (la causa)", "il diritto di voto", "la modifica costituzionale", "avente diritto di voto", "l'ordine (disposizione)", "la Landsgemeinde (assemblea cantonale all'aperto)", "celebrare (una ricorrenza)"],
+    lex: ["febbraio", "decidere", "eleggere (votare alle elezioni)", "votare (in una votazione)", "respingere", "terzo (frazione)", "voto", "pronunciarsi a favore di", "ritardo", "democrazia", "parlamento", "insieme (totalità)", "cantone", "questione (faccenda)", "partecipare alle decisioni", "Appenzello Interno", "introdurre", "decisione (risoluzione)", "Tribunale federale", "assemblea", "giorno festivo", "data", "dibattito", "parità"]
+  },
+
+  "read:r-c1-innenstadt": {
+    title: "Lite sul centro città",
+    gloss: ["lo scontro (la controversia)", "il sostenitore", "il fatturato", "il commerciante al dettaglio", "obiettare", "l'hinterland (i dintorni)", "scavalcando (senza consultare)", "l'obiezione", "la formula di rito (frase vuota)", "giuridicamente vincolante"],
+    lex: ["piano (progetto)", "centro città", "città portuale", "in larga misura", "traffico automobilistico", "liberare", "acceso (violento)", "argomentare", "senza auto", "silenzioso", "sicuro", "attraente", "zona pedonale", "aumentare", "ridurre", "associazione di categoria", "centro commerciale", "periferia", "sottolineare", "portavoce (donna)", "pianificazione", "interessati (le persone coinvolte)", "amministrazione comunale", "assicurare", "esaminare", "bozza", "includere", "giudicare", "primavera", "consultazione dei cittadini", "risultato"]
+  },
+
+  "read:r-c1-hochwasser": {
+    title: "Dopo l'alluvione",
+    gloss: ["la confluenza (la foce)", "apposto (affisso)", "il livello idrometrico", "registrato", "il piano terra", "fradicio", "smaltire", "che si attiva in fretta", "la disponibilità ad aiutare", "il fango", "il sacco di sabbia"],
+    lex: ["Passavia", "Inn", "Ilz", "Danubio", "piena (inondazione)", "esperienza", "centro storico", "segno (tacca)", "ricordare", "alluvione", "segno (livello segnato)", "giugno", "livello", "vicolo", "cantina", "per giorni", "negozio", "merce", "notevole", "danno", "social network", "darsi appuntamento (organizzarsi)", "volontari", "studenti", "università", "spalare", "trascinare", "misura di protezione", "discutere", "muro", "vista", "fiume", "ricchezza", "pericolo"]
+  },
+
+  "read:r-c1-betriebsrat": {
+    title: "Il consiglio aziendale prende la parola",
+    gloss: ["mettere in discussione (proporre al confronto)", "la regolamentazione dell'orario di lavoro", "il consiglio aziendale (rappresentanza dei lavoratori)", "sollevare (una questione)", "entrare in vigore", "il diritto di codeterminazione", "fare riferimento a", "far notare (obiettare)", "conciliare", "l'accordo aziendale", "tenere conto di", "ammettere"],
+    lex: ["di medie dimensioni", "ingegneria meccanica", "impresa", "Bielefeld", "direzione aziendale", "autunno", "in futuro", "dipendenti", "turno", "pianificare", "libertà", "consenso", "legge sull'ordinamento aziendale", "spettare", "assemblea del personale", "simile", "azienda (stabilimento)", "pressione", "aumentare", "genitori", "orari di apertura", "asilo nido", "trattativa", "realizzarsi (andare in porto)", "introdurre", "costringere", "con breve preavviso", "inserire (registrare)", "influenza", "sottovalutare", "prendere gusto a", "procedura"]
+  },
+
+  "read:r-c2-lob": {
+    title: "Se non ti sgrido, ti sto lodando",
+    gloss: ["rendersi riconoscibile (dichiararsi)", "il proverbio", "il massimo che si possa sperare", "esuberante (entusiasta oltre misura)", "insospettire", "devastante (stroncante)", "la frase aggiunta in coda", "educatamente (da bravo bambino)", "la frecciata", "l'understatement (minimizzazione)", "offeso", "la gaffe (il passo falso)", "attribuire (una qualità a qualcuno)"],
+    lex: ["area (ambito)", "lode", "aspettarsi", "deludere", "svevo", "atteggiamento", "diffuso", "casuale (buttato lì)", "superiore (capo)", "talvolta", "al contrario", "nascondersi", "esporre (formulare)", "giudizio", "decisivo", "formulazione letterale", "intonazione", "letterale", "significato", "ringraziare", "benevolo", "insieme di regole", "risparmiare (togliere un compito a qualcuno)", "tutt'al più", "abitudine", "acquisire", "franchezza", "contraddizione"]
+  },
+
+  "read:r-c2-arbeitszeugnis": {
+    title: "Sempre con la nostra più piena soddisfazione",
+    gloss: ["il certificato di servizio (referenza del datore di lavoro)", "per legge", "il conflitto di obiettivi", "nascere da", "vietare", "ciononostante", "subdolo", "lusingare", "attestare", "la socievolezza", "il clima aziendale", "insinuare (attribuire)", "rivelatore", "la decifrazione", "il genere testuale"],
+    lex: ["benevolo", "formulare", "verità", "corrispondere", "decennio", "lingua segreta", "esistenza", "ufficialmente", "ammettere", "legge", "cifrato", "espressamente", "ufficio del personale", "padroneggiare", "scala dei voti", "discutibile", "superlativo", "sempre (costantemente)", "soddisfazione", "soltanto", "sforzarsi", "combinare (portare a termine)", "miglioramento", "contribuire", "rapporto", "onestà", "cassiera", "menzionare", "forse", "circolare", "manuale (guida pratica)", "responsabili del personale", "cornetta del telefono", "nuocere", "produrre (generare)"]
+  },
+
+  "read:r-c2-heimat": {
+    title: "Una parola difficile",
+    gloss: ["gravato (compromesso dalla storia)", "l'intreccio", "il dialetto", "diventare chiaro (a qualcuno)", "idealizzare (trasfigurare)", "restringere", "kitsch (sdolcinato)", "la reinterpretazione", "evitare", "illuminato (progressista)", "appropriarsi di", "escludente", "la lettura (interpretazione)", "accanito", "ritenere capace di (attribuire)"],
+    lex: ["intraducibile", "Heimat (patria, luogo d'appartenenza)", "designare", "luogo", "paesaggio", "odore", "abitudine", "lontananza", "secolo", "romantico", "nazionalsocialismo", "ideologia", "dopoguerra", "film di genere Heimat", "innocuo", "concetto", "dizionario", "volentieri (di buon grado)", "confine", "negoziare (ridiscutere)", "ministero", "scrittrice", "storia migratoria", "origine", "precluso", "sistemarsi", "avere bisogno di (qualcuno)", "asprezza", "affermarsi", "litigare"]
   }
 });
