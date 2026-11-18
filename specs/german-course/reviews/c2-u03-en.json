@@ -1,35 +1,15 @@
 {
-  "bundleHash": "566e4f5f536a7632b35100e954640da3e3db78d0041fdbfb0d058b6a3eb5d45b",
+  "bundleHash": "e24ce636c4ff035d4954de60220085910ed7abee39fe084afd24fac98fa04da7",
   "findings": [
     {
-      "kind": "forme plurali",
-      "msg": "Il trattino indica che il sostantivo non ha plurale, ma «die Ironie» ammette «die Ironien». Indicare la forma plurale.",
-      "path": "neutral.lessons[0].vocab[0].plural"
+      "kind": "ortografia",
+      "msg": "Il saluto svizzero si scrive «Grüezi» con l'iniziale maiuscola. Correggere anche la voce corrispondente nell'oggetto merged.",
+      "path": "neutral.lessons[1].exercises[6].pairs[3].it"
     },
     {
-      "kind": "forme plurali",
-      "msg": "Il trattino indica che il sostantivo non ha plurale, ma «das Understatement» ammette «die Understatements». Indicare la forma plurale.",
-      "path": "neutral.lessons[0].vocab[1].plural"
-    },
-    {
-      "kind": "spiegazione poco chiara",
-      "msg": "«schön read backwards» può suggerire di leggere la parola al contrario lettera per lettera. Spiegare invece che «schön» è usato ironicamente con un significato opposto a quello letterale nel contesto.",
-      "path": "merged.lessons[0].grammar.examples[3].note"
-    },
-    {
-      "kind": "spiegazione poco chiara",
-      "msg": "Sostituire «schön read backwards» con una spiegazione del significato ironicamente opposto di «schön» nel contesto.",
-      "path": "merged.lessons[0].exercises[2].why"
-    },
-    {
-      "kind": "spiegazione poco chiara",
-      "msg": "Sostituire «schön is read backwards» con una spiegazione del significato ironicamente opposto di «schön» nel contesto.",
-      "path": "merged.lessons[0].exercises[4].why"
-    },
-    {
-      "kind": "spiegazione poco chiara",
-      "msg": "Sostituire «schön is read backwards» con una spiegazione del significato ironicamente opposto di «schön» nel contesto.",
-      "path": "merged.lessons[0].theory[1].p"
+      "kind": "livello CEFR",
+      "msg": "La maggior parte degli esercizi verifica il riconoscimento di singole parole, plurali regolari o contrasti di registro molto evidenti; anche il test ripropone prevalentemente questi contenuti. Per un'unità C2, introdurre negli esercizi esistenti distinzioni più sottili tra significati, registro, intenzione e interpretazioni dipendenti dal contesto, mantenendo i tipi e il numero di attività previsti.",
+      "path": "merged.lessons"
     }
   ],
   "lang": "en",

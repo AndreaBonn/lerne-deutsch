@@ -1,20 +1,20 @@
 {
-  "bundleHash": "63912f8181bfd885da98858aeeab392e0f7898000526e67f2a0fd463fd1a18a0",
+  "bundleHash": "88e17d4e091e52d550ef0678cc371c966ac51fefff70ded2628ec628e70d61fc",
   "findings": [
     {
-      "kind": "traduzione e spiegazione",
-      "msg": "«Kann sich durchaus sehen lassen» esprime un giudizio positivo, ma non implica necessariamente un risultato davvero impressionante. Rendere la traduzione, per esempio, con «Wynik jest całkiem niezły» e attenuare anche le spiegazioni che parlano categoricamente di un risultato eccellente.",
-      "path": "merged.lessons[0].grammar.examples[5].tr"
+      "kind": "traduzione",
+      "msg": "«Film był wcale niezły» non è idiomatico in polacco: «wcale» richiede normalmente una negazione esplicita. Correggere in «Film wcale nie był taki zły» oppure «Film był całkiem niezły».",
+      "path": "merged.lessons[0].grammar.examples[1].tr"
     },
     {
-      "kind": "ortografia",
-      "msg": "Il saluto, presentato come voce autonoma, va scritto con l’iniziale maiuscola: «Grüezi». Correggere la stessa voce anche nell’oggetto merged.",
-      "path": "neutral.lessons[1].exercises[6].pairs[3].it"
+      "kind": "spiegazione semantica",
+      "msg": "«Das kann sich sehen lassen» esprime una valutazione positiva, ma non implica necessariamente un risultato «znakomity». Sostituire «to znakomity wynik» con una formulazione come «to dobry wynik, którym można się pochwalić» e attenuare la stessa affermazione nella teoria e nella spiegazione dell'esercizio.",
+      "path": "merged.lessons[0].grammar.table.rows[4][2]"
     },
     {
-      "kind": "spiegazione lessicale",
-      "msg": "La frase «Tu znaczy “spójność”, nie konsystencję» presenta una falsa opposizione: anche il polacco «konsystencja» può indicare coerenza o consistenza logica. Spiegare che in questo contesto «Konsistenz» significa «spójność, niesprzeczność», senza escludere categoricamente l’equivalente polacco.",
-      "path": "merged.lessons[2].exercises[4].why"
+      "kind": "chiarezza concettuale",
+      "msg": "La premessa falsa di uno studio non rende automaticamente invalidi tutti i suoi risultati: possono restare validi indipendentemente da essa. Precisare nel testo che i risultati dipendono dalla premessa, oppure formulare la conclusione come una conseguenza da verificare.",
+      "path": "merged.lessons[2].exercises[5].text"
     }
   ],
   "lang": "pl",

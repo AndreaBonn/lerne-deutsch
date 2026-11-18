@@ -1,30 +1,20 @@
 {
-  "bundleHash": "49c16e7083c9ca017305f0bfb1bd16c999980563924382a7d847b1c6c8197e92",
+  "bundleHash": "254dcc27bbc9b11cf9a72762a1bb8639ca4414ce031a79b70744d76e423b0373",
   "findings": [
     {
-      "kind": "spiegazione grammaticale errata",
-      "msg": "La formula «delante de e y de i» estende erroneamente a tutti i casi la pronuncia iniziale [ç] o [k]: per esempio Chef e China non seguono entrambi la stessa distribuzione. Limita la spiegazione a Chemie e, se necessario, precisa separatamente le varianti di China.",
-      "path": "merged.lessons[1].exercises[3].why"
+      "kind": "explicación incorrecta",
+      "msg": "La indicación «No formes el plural alemán con -s» se presenta como una prohibición general, aunque existen plurales alemanes en -s y la propia lección los menciona. Limítala a los ejemplos concretos: «No formes Gremien ni Kriterien añadiendo -s al singular».",
+      "path": "merged.lessons[2].theory[3].trap"
     },
     {
-      "kind": "progressione didattica",
-      "msg": "L’obiettivo prescrive lo standard della Germania in ogni contesto formale, in contrasto con la spiegazione delle varietà nazionali: anche lo standard austriaco e quello svizzero sono appropriati in contesti formali. Chiedi di scegliere una varietà standard adatta al contesto.",
-      "path": "merged.lessons[1].objectives[3]"
+      "kind": "explicación semántica",
+      "msg": "La explicación afirma que «obsolet» solo indica que algo ha quedado superado por el tiempo. También puede describir algo que ya no es necesario o aplicable por un cambio de circunstancias. Corrige la distinción con «hinfällig» sin atribuirle exclusivamente una causa temporal.",
+      "path": "merged.lessons[2].exercises[5].why"
     },
     {
-      "kind": "spiegazione lessicale errata",
-      "msg": "Il contrasto attribuisce a «consecuente» il significato di «resultante», ma in spagnolo «consecuente» può anche indicare una persona coerente o costante, come il tedesco konsequent. Riformula il confronto distinguendo i significati secondo il contesto.",
-      "path": "merged.lessons[2].theory[2].contrast"
-    },
-    {
-      "kind": "spiegazione lessicale errata",
-      "msg": "«Die Konfession» non indica solo la confessione religiosa: può indicare anche una denominazione o comunità confessionale. Inoltre la confessione dei peccati è anche «das Geständnis» in senso più generale, mentre «die Beichte» designa specificamente la confessione religiosa. Precisa la distinzione.",
-      "path": "merged.lessons[2].theory[2].contrast"
-    },
-    {
-      "kind": "spiegazione lessicale imprecisa",
-      "msg": "«Überprüfbar» non è sempre escluso dalla traduzione: può esprimere che un’affermazione è verificabile o controllabile empiricamente, anche senza implicarne la conferma. Se si vuole verificare precisamente verifizierbar, richiedi esplicitamente quel termine invece di dichiarare errata l’alternativa in generale.",
-      "path": "merged.lessons[2].exercises[7].why"
+      "kind": "razonamiento ambiguo",
+      "msg": "Que una premisa de un estudio resulte falsa no demuestra por sí solo que todos sus resultados carezcan de validez. Para que la segunda respuesta sea inequívoca, especifica que los resultados dependen de esa premisa o reformula la conclusión como una consecuencia posible.",
+      "path": "neutral.lessons[2].exercises[5].text"
     }
   ],
   "lang": "es",

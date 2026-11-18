@@ -1,15 +1,30 @@
 {
-  "bundleHash": "9c2798486cf681a3e6a7f6ffc4651c9750849e84f504ebecd759d95a40e0e9df",
+  "bundleHash": "60742277199bb10a521716a8bf3b518d6ed6d6446d10eba359dc3a268f9ea44d",
   "findings": [
     {
-      "kind": "pluriel",
-      "msg": "Le nom est dénombrable, comme le montre l’exemple avec « ein » ; son pluriel est « die Understatements ». Remplacer « - » par cette forme.",
-      "path": "neutral.lessons[0].vocab[1].plural"
+      "kind": "traduction",
+      "msg": "« Untertreibung » signifie « litote » ou « sous-estimation / minimisation », selon le contexte ; « euphémisme » désigne une figure différente. Remplacer « l'euphémisme » par « la sous-estimation » ou « l'atténuation ».",
+      "path": "merged.lessons[0].vocab[2].tr"
     },
     {
-      "kind": "traduction",
-      "msg": "« Preiswert » signifie généralement « d’un bon rapport qualité-prix » : « nicht gerade preiswert » ne signifie donc pas nécessairement « pas vraiment bon marché ». Retirer les réponses avec « preiswert » ou modifier la phrase source et la consigne pour faire porter le jugement sur le rapport qualité-prix.",
+      "kind": "sens et traduction",
+      "msg": "« Preiswert » signifie « d'un bon rapport qualité-prix » et ne se réduit pas à « bon marché ». « Nicht gerade preiswert » peut donc critiquer le rapport qualité-prix plutôt que le prix élevé demandé par la phrase française. Retirer les réponses avec « preiswert » ou préciser un contexte de rapport qualité-prix.",
       "path": "merged.lessons[0].exercises[7].a"
+    },
+    {
+      "kind": "explication trompeuse",
+      "msg": "« Nicht verifizierbar » signifie que la thèse ne peut pas être vérifiée ou établie, tandis que « lässt sich nicht verifizieren » peut aussi signifier qu'une tentative de vérification n'a pas abouti. Préciser cette distinction et employer « lässt sich nicht empirisch belegen » seulement si le contexte rend l'impossibilité claire.",
+      "path": "merged.lessons[2].exercises[7].why"
+    },
+    {
+      "kind": "progression grammaticale",
+      "msg": "L'explication présente sans réserve la transformation de tous les adjectifs en -ent en noms en -enz. C'est une tendance avec des exceptions, comme le précise correctement la théorie. Remplacer « les adjectifs » par « de nombreux adjectifs » et indiquer que le nom doit être vérifié.",
+      "path": "merged.lessons[2].exercises[4].why"
+    },
+    {
+      "kind": "précision linguistique",
+      "msg": "La formule « un latinisme par paragraphe » est une règle arbitraire : les latinismes courants ne rendent pas un texte pédant par leur seule fréquence. Conseiller plutôt de choisir les termes selon leur précision, le contexte et le public.",
+      "path": "merged.lessons[2].theory[4].tip"
     }
   ],
   "lang": "fr",
