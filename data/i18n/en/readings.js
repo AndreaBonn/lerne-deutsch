@@ -120,7 +120,7 @@ LINGUAI.addStrings("en", {
   "read:r-c1-hochwasser": {
     title: "After the Flood",
     gloss: ["the confluence (where rivers meet)", "put up, attached", "the water level (gauge reading)", "recorded", "the ground floor (first floor in American usage)", "soaked", "to dispose of", "quick to start", "the willingness to help", "the mud", "the sandbag"],
-    lex: ["Passau", "Inn (river)", "Ilz (river)", "Danube", "flood (high water)", "experience", "old town (historic center)", "marking", "to remind (an + accusative)", "flood", "mark (here: flood mark)", "June", "level", "lane, alley", "basement, cellar", "for days", "store, shop", "goods, merchandise", "remarkable", "damage", "social media", "to call together", "volunteers", "students", "university", "to shovel", "to haul, drag", "protective measure", "to discuss", "wall (freestanding)", "view", "river", "wealth", "danger"]
+    lex: ["Passau", "Inn (river)", "Ilz (river)", "Danube", "flood (high water)", "experience", "old town (historic center)", "marking", "to recall, be a reminder of (erinnern an + accusative; reflexive sich erinnern an means to remember)", "flood", "mark (here: flood mark)", "June", "level", "lane, alley", "basement, cellar", "for days", "store, shop", "goods, merchandise", "remarkable", "damage", "social media", "to call together", "volunteers", "students", "university", "to shovel", "to haul, drag", "protective measure", "to discuss", "wall (freestanding)", "view", "river", "wealth", "danger"]
   },
 
   "read:r-c1-betriebsrat": {
