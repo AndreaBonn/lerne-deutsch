@@ -33,6 +33,12 @@ jobs:
           node-version: '24'
           cache: npm
 
+      # tests/unit/german-tooling.test.mjs runs the audio scripts the way they
+      # are run by hand, `uv run --script`, offline and with the runner's own
+      # Python. Without uv on PATH that test dies with ENOENT. Pinned to a
+      # commit, not a tag: a tag can be moved. The commit is v10.3.3.
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2
+
       - name: Install the dev dependencies
         run: npm ci
 
