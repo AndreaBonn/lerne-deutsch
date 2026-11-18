@@ -108,24 +108,24 @@ LINGUAI.addStrings("it", {
   "read:r-c1-frauenstimmrecht": {
     title: "Il 7 febbraio 1971",
     gloss: ["la votazione popolare (referendum)", "a livello federale", "la richiesta (la causa)", "il diritto di voto", "la modifica costituzionale", "avente diritto di voto", "l'ordine (disposizione)", "la Landsgemeinde (assemblea cantonale all'aperto)", "celebrare (una ricorrenza)"],
-    lex: ["febbraio", "decidere", "eleggere (votare alle elezioni)", "votare (in una votazione)", "respingere", "terzo (frazione)", "voto", "pronunciarsi a favore di", "ritardo", "democrazia", "parlamento", "insieme (totalità)", "cantone", "questione (faccenda)", "partecipare alle decisioni", "Appenzello Interno", "introdurre", "decisione (risoluzione)", "Tribunale federale", "assemblea", "giorno festivo", "data", "dibattito", "parità"]
+    lex: ["febbraio", "decidere", "eleggere (votare alle elezioni)", "votare (in una votazione)", "respingere", "terzo (frazione)", "voto", "pronunciarsi a favore di (+ acc.)", "ritardo", "democrazia", "parlamento", "insieme (totalità)", "cantone", "questione (faccenda)", "partecipare alle decisioni", "Appenzello Interno", "introdurre", "decisione (risoluzione)", "Tribunale federale", "assemblea", "giorno festivo", "data", "dibattito", "parità"]
   },
 
   "read:r-c1-innenstadt": {
     title: "Lite sul centro città",
     gloss: ["lo scontro (la controversia)", "il sostenitore", "il fatturato", "il commerciante al dettaglio", "obiettare", "l'hinterland (i dintorni)", "scavalcando (senza consultare)", "l'obiezione", "la formula di rito (frase vuota)", "giuridicamente vincolante"],
-    lex: ["piano (progetto)", "centro città", "città portuale", "in larga misura", "traffico automobilistico", "liberare", "acceso (violento)", "argomentare", "senza auto", "silenzioso", "sicuro", "attraente", "zona pedonale", "aumentare", "ridurre", "associazione di categoria", "centro commerciale", "periferia", "sottolineare", "portavoce (donna)", "pianificazione", "interessati (le persone coinvolte)", "amministrazione comunale", "assicurare", "esaminare", "bozza", "includere", "giudicare", "primavera", "consultazione dei cittadini", "risultato"]
+    lex: ["piano (progetto)", "centro città", "città portuale", "in larga misura", "traffico automobilistico", "liberare", "acceso, intenso", "argomentare", "senza auto", "silenzioso", "sicuro", "attraente", "zona pedonale", "aumentare", "ridurre", "associazione di categoria", "centro commerciale", "periferia", "sottolineare", "portavoce (donna)", "pianificazione", "interessati (le persone coinvolte)", "amministrazione comunale", "assicurare", "esaminare", "bozza", "includere", "giudicare", "primavera", "consultazione dei cittadini", "risultato"]
   },
 
   "read:r-c1-hochwasser": {
     title: "Dopo l'alluvione",
-    gloss: ["la confluenza (la foce)", "apposto (affisso)", "il livello idrometrico", "registrato", "il piano terra", "fradicio", "smaltire", "che si attiva in fretta", "la disponibilità ad aiutare", "il fango", "il sacco di sabbia"],
+    gloss: ["la confluenza (la foce)", "apposto (affisso)", "il livello idrometrico", "registrato", "il piano terra", "fradicio", "smaltire", "che si manifesta rapidamente", "la disponibilità ad aiutare", "il fango", "il sacco di sabbia"],
     lex: ["Passavia", "Inn", "Ilz", "Danubio", "piena (inondazione)", "esperienza", "centro storico", "segno (tacca)", "ricordare", "alluvione", "segno (livello segnato)", "giugno", "livello", "vicolo", "cantina", "per giorni", "negozio", "merce", "notevole", "danno", "social network", "chiamare a raccolta", "volontari", "studenti", "università", "spalare", "trasportare a fatica", "misura di protezione", "discutere", "muro", "vista", "fiume", "ricchezza", "pericolo"]
   },
 
   "read:r-c1-betriebsrat": {
     title: "Il consiglio aziendale prende la parola",
-    gloss: ["sottoporre a discussione (proporre al confronto)", "la regolamentazione dell'orario di lavoro", "il consiglio aziendale (rappresentanza dei lavoratori)", "sollevare (una questione)", "entrare in vigore", "il diritto di codeterminazione", "fare riferimento a", "far notare (obiettare)", "conciliare", "l'accordo aziendale", "tenere conto di", "ammettere"],
+    gloss: ["sottoporre a discussione (proporre al confronto)", "la regolamentazione dell'orario di lavoro", "il consiglio aziendale (rappresentanza dei lavoratori)", "sollevare (una questione)", "entrare in vigore", "il diritto di codeterminazione", "fare riferimento a", "far notare (obiettare)", "conciliare", "l'accordo aziendale", "tenere conto di (+ dat.)", "ammettere"],
     lex: ["di medie dimensioni", "ingegneria meccanica", "impresa", "Bielefeld", "direzione aziendale", "autunno", "in futuro", "dipendenti", "turno", "pianificare", "libertà", "consenso", "legge sull'ordinamento aziendale", "spettare", "assemblea del personale", "simile", "azienda (stabilimento)", "pressione", "aumentare", "genitori", "orari di apertura", "asilo (struttura diurna per l'infanzia)", "trattativa", "realizzarsi (andare in porto)", "introdurre", "costringere", "con breve preavviso", "inserire (registrare)", "influenza", "sottovalutare", "prendere gusto a", "procedura"]
   },
 
@@ -143,7 +143,7 @@ LINGUAI.addStrings("it", {
 
   "read:r-c2-heimat": {
     title: "Una parola difficile",
-    gloss: ["gravato (compromesso dalla storia)", "l'intreccio", "il dialetto", "diventare chiaro (a qualcuno)", "idealizzare (trasfigurare)", "restringere", "kitsch (sdolcinato)", "la reinterpretazione", "evitare", "illuminato (progressista)", "appropriarsi di", "escludente", "la lettura (interpretazione)", "accanito", "ritenere capace di (attribuire)"],
+    gloss: ["gravato (compromesso dalla storia)", "l'intreccio", "il dialetto", "diventare chiaro (a qualcuno)", "idealizzare (trasfigurare)", "restringere", "kitsch (sdolcinato)", "la reinterpretazione", "evitare", "illuminato, di mentalità illuminista", "appropriarsi di", "escludente", "la lettura (interpretazione)", "accanito", "ritenere capace di (attribuire)"],
     lex: ["intraducibile", "Heimat (patria, luogo d'appartenenza)", "designare", "luogo", "paesaggio", "odore", "abitudine", "lontananza", "secolo", "romantico", "nazionalsocialismo", "ideologia", "dopoguerra", "film di genere Heimat", "innocuo", "concetto", "dizionario", "volentieri (di buon grado)", "confine", "negoziare (ridiscutere)", "ministero", "scrittrice", "storia migratoria", "origine", "precluso", "sistemarsi", "avere bisogno di (qualcuno)", "asprezza", "affermarsi", "litigare"]
   }
 });

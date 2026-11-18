@@ -1,25 +1,30 @@
 {
-  "bundleHash": "022d00f6133e3f230d860be571075127035dfbb5fa6c400602cc417cb3acba1e",
+  "bundleHash": "717694dd63c92162a6d63ff5329e44c46fa73f248319fac29d3c4b1da1a67a94",
   "findings": [
     {
-      "kind": "grammatica",
-      "msg": "«Ein Ausreichend» sostantiva il voto scolastico e richiede la flessione dell’aggettivo: «bei einem Ausreichenden».",
-      "path": "neutral[6].sentences[3]"
+      "kind": "traduzione",
+      "msg": "«Heftig» qualifica qui una controversia accesa, non necessariamente violenta. Sostituire «acceso (violento)» con «acceso, intenso».",
+      "path": "merged[2].lex[6]"
     },
     {
-      "kind": "grammatica",
-      "msg": "Correggere «bei einem Ausreichend» in «bei einem Ausreichenden», come nel testo neutro.",
-      "path": "merged[6].sentences[3]"
+      "kind": "traduzione",
+      "msg": "«Rasch einsetzend» significa «che inizia rapidamente»: «che si attiva in fretta» suggerisce invece un soggetto che si mette in azione. Usare «che si manifesta rapidamente».",
+      "path": "merged[3].gloss[7]"
     },
     {
-      "kind": "significato",
-      "msg": "La frase implica che chiunque sia nato altrove non possa avere una Heimat fondata sull’origine, ma non specifica rispetto a quale luogo. Chiarire il riferimento, per esempio «all jenen verschlossen, die nicht an diesem Ort geboren sind».",
-      "path": "neutral[7].sentences[5]"
+      "kind": "traduzione",
+      "msg": "«Aufgeklärt» nel contesto significa «illuminato» o «di mentalità illuminista»; «progressista» non è un equivalente necessario. Usare «illuminato, di mentalità illuminista».",
+      "path": "merged[7].gloss[9]"
     },
     {
-      "kind": "significato",
-      "msg": "Chiarire rispetto a quale luogo valga «anderswo zur Welt gekommen sind», per esempio con «nicht an diesem Ort geboren sind».",
-      "path": "merged[7].sentences[5]"
+      "kind": "lessico",
+      "msg": "«Sich aussprechen für» richiede l'accusativo. Indicare «sich für etwas/jemanden aussprechen», per rendere esplicita la reggenza.",
+      "path": "neutral[1].lexIt[7]"
+    },
+    {
+      "kind": "lessico",
+      "msg": "L'espressione richiede un complemento al dativo: indicare «jemandem/etwas Rechnung tragen» e riportare la stessa forma tedesca nel campo corrispondente di merged.",
+      "path": "neutral[4].glossIt[10]"
     }
   ],
   "lang": "it",
