@@ -1,0 +1,18 @@
+{
+  "bundleHash": "f6377f7f44d8aafe7afdc1ecbbb95b14ef4434cf00cfe25bea444e86eaddfcb6",
+  "findings": [
+    {
+      "kind": "risposta ambigua",
+      "msg": "«auf welcher» è un relativo femminile all’accusativo ed è corretto quanto «auf die»; la spiegazione lo classifica erroneamente come dativo. Sostituire il distrattore con una forma inequivocabilmente scorretta e correggere la spiegazione.",
+      "path": "merged.test.exercises[5]"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«derer» non è esclusivamente un dimostrativo che anticipa una relativa: può anche riprendere un antecedente plurale. Sostituire «jamais le relatif possessif» con una distinzione che descriva gli usi anaforici e cataforici di «derer» e chiarisca che in questo esempio possessivo si usa «deren».",
+      "path": "merged.lessons[0].theory[3].trap"
+    }
+  ],
+  "lang": "fr",
+  "unit": "c2-u04",
+  "verdict": "fail"
+}

@@ -1,0 +1,13 @@
+{
+  "bundleHash": "e4b342aea8a9c0f5c340b84bff0859e2dd41408228a30edc4bcf0709cf338955",
+  "findings": [
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La spiegazione afferma che la preposizione regge il pronome relativo nel caso richiesto e che lo stesso vale per il genitivo. In «auf dessen Grundlage», però, «auf» regge il gruppo nominale «dessen Grundlage» all’accusativo; «dessen» resta al genitivo perché esprime il possessore. Distinguere questo caso da «mit der», dove la preposizione regge direttamente il pronome.",
+      "path": "merged.lessons[0].theory[1].p"
+    }
+  ],
+  "lang": "es",
+  "unit": "c2-u04",
+  "verdict": "fail"
+}

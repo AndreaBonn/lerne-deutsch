@@ -1,0 +1,23 @@
+{
+  "bundleHash": "70f6aeeac8ec0b4644e6945f18875b760ec74a30b41be59d16880e17742ed1f9",
+  "findings": [
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La regola secondo cui il correlativo è necessario ogni volta che i casi differiscono è troppo assoluta. Può essere omesso anche in alcuni casi diversi, per esempio «Wem das zu viel ist, kann gehen». Distinguere questi casi da quelli in cui il correlativo è obbligatorio e aggiornare anche la spiegazione del cloze e il tip della lezione. Riferimento: https://www.duden.de/sprachwissen/sprachratgeber/Die-Rangfolge-der-F%C3%A4lle",
+      "path": "merged.lessons[1].theory[2].contrast"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La formulazione presenta «derer» solo come dimostrativo. Può anche essere un pronome relativo in funzione di complemento genitivo, per esempio «die Argumente, derer er sich bediente». Precisare che non si usa invece come attributo possessivo davanti a un sostantivo. Riferimento: https://www.duden.de/sprachwissen/sprachratgeber/deren-derer",
+      "path": "merged.lessons[0].theory[3].trap"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La preposizione non regge direttamente «dessen» o «deren» negli esempi possessivi: regge il gruppo nominale, mentre il pronome resta un attributo al genitivo. Distinguere «mit der» da «auf dessen Grundlage» nella spiegazione.",
+      "path": "merged.lessons[0].theory[1].p"
+    }
+  ],
+  "lang": "en",
+  "unit": "c2-u04",
+  "verdict": "fail"
+}
