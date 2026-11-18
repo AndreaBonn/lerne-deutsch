@@ -1,0 +1,38 @@
+{
+  "bundleHash": "1b23d6deb9d20853841c59b383a93f3d9c79fbee623321bc3da7be373eb82f34",
+  "findings": [
+    {
+      "kind": "idiomaticità",
+      "msg": "«Mit zwei Koffern und einem Bett» fa sembrare che il narratore sia arrivato portando con sé anche un letto. Per esprimere la sistemazione già trovata, usare per esempio «mit zwei Koffern und einer Reservierung in einer Jugendherberge».",
+      "path": "neutral[1].sentences[0]"
+    },
+    {
+      "kind": "idiomaticità",
+      "msg": "L'espressione «auf einen grauen Hof gehen» è innaturale riferita a una finestra. Usare «Das Fenster ging zu einem grauen Hof hinaus» oppure «Das Fenster blickte auf einen grauen Hof».",
+      "path": "neutral[1].sentences[23]"
+    },
+    {
+      "kind": "accuratezza grammaticale",
+      "msg": "La subordinata «als hinge der Auftrag davon ab» lascia intendere che l'incarico dipenda dalla cura con cui si usa il Sie, ma «was er vermutlich auch tat» si riferisce grammaticalmente all'incarico e non riprende in modo chiaro la dipendenza. Riformulare: «… als hinge der Auftrag davon ab, ob man das Sie sorgfältig verwendete, was vermutlich auch der Fall war.»",
+      "path": "neutral[5].sentences[9]"
+    },
+    {
+      "kind": "accuratezza sociolinguistica",
+      "msg": "«Das Münchner Du» non designa il cognome con «du»: questa combinazione è comunemente chiamata «Kasseler Du». Il Münchner Du associa invece il nome di battesimo a «Sie», come l'Hamburger Sie. Correggere il termine e adeguare la relativa voce spagnola in merged[5].gloss[4].",
+      "path": "neutral[5].sentences[12]"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Llamar la atención» rende solo alcuni usi di «auffallen» e qui può suggerire che il soggetto attiri attenzione volontariamente. Nel contesto «Regelmäßigkeiten fallen ihm auf» significa che lui nota delle regolarità: aggiungere «resultar evidente para alguien; alguien se da cuenta de algo» e mantenere l'indicazione del dativo.",
+      "path": "merged[3].lex[18]"
+    }
+  ],
+  "lang": "es",
+  "unit": "library",
+  "verdict": "fail",
+  "archived": {
+    "decision": "N2 (Q-C1-D8 A extended): final round of the declared budget; every per-level verdict passes on the same files; the aggregate residue is contradictory between judges (beruhen auf case, Muenchner Du definition), wrong on the facts (kandydat already listed, das erste as ellipsis, was er refers to Auftrag) or preference (register, level, regional nuance)",
+    "date": "2026-11-18",
+    "bundleHash": "1b23d6deb9d20853841c59b383a93f3d9c79fbee623321bc3da7be373eb82f34"
+  }
+}

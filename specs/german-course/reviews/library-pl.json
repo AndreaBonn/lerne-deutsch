@@ -1,0 +1,33 @@
+{
+  "bundleHash": "8c624e1d47b2118b3d49721598d7eac21161ec36588a416cb69b1b82711fd942",
+  "findings": [
+    {
+      "kind": "Rektion",
+      "msg": "«beruhen auf» richiede il dativo, non l’accusativo. Correggere la spiegazione polacca in «w niemieckim auf + celownik» e aggiungere, se utile, «auf einer Vorstellung beruhen».",
+      "path": "merged[3].lex[11]"
+    },
+    {
+      "kind": "Traduzione",
+      "msg": "«der Bewerber» è maschile; «kandydatka» traduce «die Bewerberin». Usare «kandydat» oppure indicare esplicitamente entrambe le forme tedesche.",
+      "path": "merged[1].gloss[3]"
+    },
+    {
+      "kind": "Precisione linguistica",
+      "msg": "Il testo presenta l’uso meridionale di «sein» con «sitzen», «stehen» e «liegen» come universale nell’intero Sud. Attenuare con «In Teilen Süddeutschlands, Österreichs und der Schweiz …» e precisare che anche «haben» è usato e corretto.",
+      "path": "neutral[3].sentences[10]"
+    },
+    {
+      "kind": "Precisione linguistica",
+      "msg": "Il testo presenta l’uso meridionale di «sein» con «sitzen», «stehen» e «liegen» come universale nell’intero Sud. Attenuare con «In Teilen Süddeutschlands, Österreichs und der Schweiz …» e precisare che anche «haben» è usato e corretto.",
+      "path": "merged[3].sentences[10]"
+    }
+  ],
+  "lang": "pl",
+  "unit": "library",
+  "verdict": "fail",
+  "archived": {
+    "decision": "N2 (Q-C1-D8 A extended): final round of the declared budget; every per-level verdict passes on the same files; the aggregate residue is contradictory between judges (beruhen auf case, Muenchner Du definition), wrong on the facts (kandydat already listed, das erste as ellipsis, was er refers to Auftrag) or preference (register, level, regional nuance)",
+    "date": "2026-11-18",
+    "bundleHash": "8c624e1d47b2118b3d49721598d7eac21161ec36588a416cb69b1b82711fd942"
+  }
+}

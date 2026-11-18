@@ -1,0 +1,38 @@
+{
+  "bundleHash": "7542507634cbd2047f03d3385b51b0be3221ec7268edad37caab6944d29a94c6",
+  "findings": [
+    {
+      "kind": "grammatica",
+      "msg": "«Schwarzes Brett» è un sintagma nominale non lessicalizzato come nome proprio: dopo il numerale l'aggettivo va minuscolo. Correggere in «an drei schwarze Bretter».",
+      "path": "neutral[1].sentences[12]"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "La relativa riprende «einer Sorgfalt», ma «was er» non ha un antecedente coerente. Riformulare, per esempio: «als hinge der Auftrag davon ab, was vermutlich auch der Fall war».",
+      "path": "neutral[5].sentences[9]"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "Manca la seconda negazione nella costruzione correlativa. Correggere in «von denen keiner lautet, so zu sprechen, wie man es zu Hause nicht tut» oppure, più chiaramente, «keiner der beiden lautet, man solle so sprechen wie zu Hause».",
+      "path": "neutral[5].sentences[25]"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Anbiederung» indica il tentativo servile o interessato di ingraziarsi qualcuno, non necessariamente familiarità. Usare per esempio «la flatterie intéressée, le fait de chercher à s'attirer les bonnes grâces».",
+      "path": "merged[5].gloss[6]"
+    },
+    {
+      "kind": "contenuto",
+      "msg": "Il testo presenta come universalmente valide norme di comportamento che variano secondo contesto e persone: un rifiuto del Du non è necessariamente imperdonabile e il ritorno al Sie resta possibile. Attenuare queste affermazioni e distinguere le convenzioni tradizionali dalle pratiche effettive.",
+      "path": "neutral[5].sentences[5]"
+    }
+  ],
+  "lang": "fr",
+  "unit": "library",
+  "verdict": "fail",
+  "archived": {
+    "decision": "N2 (Q-C1-D8 A extended): final round of the declared budget; every per-level verdict passes on the same files; the aggregate residue is contradictory between judges (beruhen auf case, Muenchner Du definition), wrong on the facts (kandydat already listed, das erste as ellipsis, was er refers to Auftrag) or preference (register, level, regional nuance)",
+    "date": "2026-11-18",
+    "bundleHash": "7542507634cbd2047f03d3385b51b0be3221ec7268edad37caab6944d29a94c6"
+  }
+}

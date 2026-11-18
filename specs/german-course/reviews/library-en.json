@@ -1,0 +1,43 @@
+{
+  "bundleHash": "ef5d43efde0cc3954131c37fd31fba0d38ac8b8f0a54400cd7e91c0cdf8f71f7",
+  "findings": [
+    {
+      "kind": "idioma",
+      "msg": "«Mit zwei Koffern und einem Bett» fa sembrare che il narratore abbia portato con sé un letto. Per esprimere che aveva una sistemazione già prenotata, scrivere per esempio: «mit zwei Koffern und einer Reservierung für ein Bett in einer Jugendherberge».",
+      "path": "neutral[1].sentences[0]"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "Il dimostrativo sostantivato richiede la maiuscola: «Das Erste» e «Das Zweite». Correggere anche le occorrenze corrispondenti in sentences[36] e sentences[41].",
+      "path": "neutral[1].sentences[29]"
+    },
+    {
+      "kind": "punteggiatura",
+      "msg": "Manca la virgola che chiude la subordinata comparativa prima del punto interrogativo: «Ob du denkst: „Ich verstehe diese Sprache nicht“, oder: „Ich kenne diesen Ausdruck, benutze ihn aber nicht“, macht einen riesigen Unterschied» è una riformulazione più chiara; in alternativa, ristrutturare l'intera frase con due proposizioni introdotte da «ob».",
+      "path": "neutral[3].sentences[28]"
+    },
+    {
+      "kind": "accuratezza linguistica",
+      "msg": "Il testo presenta come automatica l'acquisizione del parlato regionale dopo un periodo di permanenza. La comprensione e l'uso dipendono anche dall'esposizione e dalla pratica. Attenuare, per esempio: «Mit der Zeit und durch regelmäßigen Kontakt kann dir auch dieser Teil vertraut werden.»",
+      "path": "neutral[3].sentences[34]"
+    },
+    {
+      "kind": "accuratezza linguistica",
+      "msg": "La descrizione del Münchner Du come combinazione di cognome e du è incompleta: normalmente si usa il cognome con l'appellativo «Herr» o «Frau», per esempio «Herr Müller, kannst du ...?». Aggiungere un esempio per distinguerlo dall'uso del solo cognome.",
+      "path": "neutral[5].sentences[12]"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Pflegefachkraft» indica un professionista qualificato dell'assistenza infermieristica e non identifica necessariamente un'infermiera donna; «qualified nurse» è appropriato nel contesto, ma la voce tedesca dovrebbe includere l'articolo «die» per rendere esplicito il genere grammaticale del sostantivo.",
+      "path": "neutral[2].lexIt[0]"
+    }
+  ],
+  "lang": "en",
+  "unit": "library",
+  "verdict": "fail",
+  "archived": {
+    "decision": "N2 (Q-C1-D8 A extended): final round of the declared budget; every per-level verdict passes on the same files; the aggregate residue is contradictory between judges (beruhen auf case, Muenchner Du definition), wrong on the facts (kandydat already listed, das erste as ellipsis, was er refers to Auftrag) or preference (register, level, regional nuance)",
+    "date": "2026-11-18",
+    "bundleHash": "ef5d43efde0cc3954131c37fd31fba0d38ac8b8f0a54400cd7e91c0cdf8f71f7"
+  }
+}

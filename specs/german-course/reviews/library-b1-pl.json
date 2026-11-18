@@ -1,23 +1,7 @@
 {
-  "bundleHash": "9592d4110d255344ab29b5cc91e8bb1831a433882e2fe3b7af9475015d10f39b",
-  "findings": [
-    {
-      "kind": "Interpunktion",
-      "msg": "Między dwoma zdaniami podrzędnymi połączonymi przez „und” przecinek jest zbędny. Popraw: „Sie weiß jetzt, was ein Aktenzeichen ist und dass ein ‚Titel‘ hier nichts mit Büchern zu tun hat.“",
-      "path": "neutral[0].sentences[21]"
-    },
-    {
-      "kind": "Interpunktion",
-      "msg": "Usuń przecinek przed „und dass”: „Sie weiß jetzt, was ein Aktenzeichen ist und dass ein ‚Titel‘ hier nichts mit Büchern zu tun hat.“",
-      "path": "merged[0].sentences[21]"
-    }
-  ],
+  "bundleHash": "70d0a564314533d4c59bb9e091ae119717babe63ff015ad31c011c002891c132",
+  "findings": [],
   "lang": "pl",
   "unit": "library-b1",
-  "verdict": "fail",
-  "archived": {
-    "decision": "N2 (Q-C1-D8 A extended): only neutral findings, punctuation in core sentence 21, overlay without remarks",
-    "date": "2026-11-18",
-    "bundleHash": "9592d4110d255344ab29b5cc91e8bb1831a433882e2fe3b7af9475015d10f39b"
-  }
+  "verdict": "pass"
 }
