@@ -1,15 +1,30 @@
 {
-  "bundleHash": "c81cad300f9aa1a2a06ef32ffde407511443105dad01756d57e627eb5e14d670",
+  "bundleHash": "9c340a427677d85dc77c7d335a04a0c5890bdc3b8c43f40b4ea35348dbbf36b1",
   "findings": [
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "La virgola non separa sempre due attributi coordinati: con «und» normalmente non si usa, come nell'esercizio con «angekündigte und ... kritisierte Reform». Precisare che la virgola separa attributi coordinati non uniti da una congiunzione.",
-      "path": "merged.lessons[0].theory[1].p"
+      "kind": "pronuncia",
+      "msg": "In «Ablehnung» la b si pronuncia [b], non [p]: è seguita da una vocale e non è soggetta a desonorizzazione finale. Correggere la nota fonetica.",
+      "path": "merged.lessons[1].exercises[8].why"
     },
     {
-      "kind": "traduzione",
-      "msg": "«Sollen ... zur Anwendung kommen» indica un'applicazione prevista o stabilita, non un futuro certo. Tradurre per esempio: «È previsto che le misure che ne derivano vengano applicate l'anno prossimo».",
-      "path": "merged.test.exercises[8].tr"
+      "kind": "pronuncia",
+      "msg": "In «Abrede» la b si pronuncia [b], non [p]: precede una consonante sonora. Correggere la nota fonetica.",
+      "path": "merged.lessons[2].exercises[9].why"
+    },
+    {
+      "kind": "chiave di risposta",
+      "msg": "«Nicht zur Disposition stehen» significa che il finanziamento non è negoziabile o non può essere messo in questione, non semplicemente che non è attualmente in discussione. Rimuovere «Disposition» dalle risposte accettate oppure modificare la traccia per ammettere esplicitamente quel significato.",
+      "path": "merged.lessons[2].exercises[4].a[2]"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La regola secondo cui i complementi stanno sempre prima del participio è troppo assoluta: possono comparire anche dopo il nome, come nelle risposte accettate «die vorzunehmenden Änderungen am Vertrag». Precisare che qui si tratta dell'ordine interno all'attributo esteso.",
+      "path": "merged.lessons[0].exercises[2].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "L'indicazione di cercare il primo participio declinato e il nome immediatamente successivo non funziona con attributi coordinati come «die angekündigte und vielfach kritisierte Reform», presentato nella stessa sezione. Invitare a individuare tutti gli attributi coordinati e il nome che li segue.",
+      "path": "merged.lessons[0].theory[1].p"
     }
   ],
   "lang": "it",
