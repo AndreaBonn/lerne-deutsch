@@ -189,3 +189,34 @@ test("with the conversation consent withdrawn, nothing leaves", async ({ page })
   await page.waitForTimeout(400);
   expect(await page.evaluate(() => window.__zapytania)).toBe(0);
 });
+
+/* The six scenes came in two batches, and a scene is three things that must
+   agree: its entry in chat-scenarios.js, its title key `chat.sc.<id>` in the
+   interface language, and the line it opens with. A missing key does not show
+   up as a raw key: t() falls back to another language, so the list looks
+   complete and one button speaks Italian to a Polish student. The titles are
+   therefore compared with the Polish dictionary itself, read from disk. */
+const UI_PL = (() => {
+  const box = { LINGUAI: { addUI: (_lang, dict) => { box.dict = dict; } } };
+  require("node:vm").runInNewContext(
+    require("node:fs").readFileSync(require("node:path").join(__dirname, "..", "..", "data", "i18n", "ui-pl.js"), "utf8"), box);
+  return box.dict;
+})();
+test("every scene is on the list with a title, and opens on its own first line", async ({ page }) => {
+  await przygotuj(page);
+  await page.goto("/index.html#/chiacchiere");
+  await page.waitForSelector(".list-row[data-scena]", { timeout: 30000 });
+  const sceny = await page.evaluate(() => window.CHAT_SCENARIOS.map(s => ({ id: s.id, apertura: s.apertura })));
+  expect(sceny.length).toBe(6);
+  await expect(page.locator(".list-row[data-scena]")).toHaveCount(sceny.length);
+  const tytuly = await page.locator(".list-row[data-scena] b").allInnerTexts();
+  expect(tytuly).toEqual(sceny.map(s => UI_PL["chat.sc." + s.id]));
+
+  for (const s of sceny) {
+    await page.goto(`/index.html#/chiacchiere?id=${s.id}`);
+    await page.waitForSelector(".js-in", { timeout: 30000 });
+    const bolle = await page.locator(".dlg__line").allInnerTexts();
+    expect(bolle.length, s.id).toBe(1);
+    expect(bolle[0], s.id).toContain(s.apertura);
+  }
+});
