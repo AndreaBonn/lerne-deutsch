@@ -66,3 +66,16 @@ test('interference uses the German target count for Italian learners', t => {
   put(root, 'data/core/interference.js', 'window.INTERFERENCE=[];');
   assert.match(check(root, 'interference', '--stage', 'core').stdout, /it: 0 of 1/);
 });
+
+test('chat language stage requires a scene title in the UI dictionary of that language', t => {
+  const root = fixture(t);
+  put(root, 'data/core/chat-scenarios.js', "window.CHAT_SCENARIOS = [{id:'cafe'},{id:'bahn'}];");
+  put(root, 'data/i18n/ui-it.js', "LINGUAI.addUI('it', {'chat.sc.cafe':'Al caffè','chat.sc.bahn':''});");
+  const result = check(root, 'chat', '--stage', 'it');
+  assert.equal(result.status, 1);
+  assert.match(result.stdout, /Missing it scene title: bahn/);
+  assert.doesNotMatch(result.stdout, /scene title: cafe/);
+  assert.match(check(root, 'chat', '--stage', 'en').stdout, /Missing en UI dictionary/);
+  put(root, 'data/i18n/ui-it.js', "LINGUAI.addUI('it', {'chat.sc.cafe':'Al caffè','chat.sc.bahn':'In treno'});");
+  assert.equal(check(root, 'chat', '--stage', 'it').status, 0);
+});

@@ -222,9 +222,8 @@ function checkModules({ root, course, target, ids, stages }) {
       let errors = [], notes = [];
       if (stage === 'core') errors = moduleCoreErrors(module);
       else if (LANGUAGES.includes(stage)) {
-        if (!module.files.length) notes = ['n/a (no overlay by design: chat scenarios are in German)'];
-        else errors = moduleOverlayErrors({ root, module, lang: stage,
-          bundle: buildModuleBundle({ root, module: id, lang: stage }) });
+        errors = moduleOverlayErrors({ root, module, lang: stage,
+          bundle: module.files.length ? buildModuleBundle({ root, module: id, lang: stage }) : null });
       } else if (stage === 'review') {
         ({ errors, notes } = reviewResult({ root, id, languages: languages.length ? languages : ['it'], module: true }));
       } else if (stage === 'human') {

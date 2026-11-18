@@ -1,4 +1,5 @@
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
+import vm from 'node:vm';
 import { join } from 'node:path';
 import { scanValues } from './neutral-letters.mjs';
 
@@ -66,7 +67,21 @@ export function moduleCoreErrors(module) {
   return errors;
 }
 
+/* Chat scenes have no data overlay (every line is German, spoken by the
+   partner), but the scene list shows a title per language from the UI
+   dictionary, key chat.sc.<id>: without it the screen prints the raw key. */
+export function chatTitleErrors({ root, module, lang }) {
+  const path = join(root, 'data/i18n', `ui-${lang}.js`);
+  if (!existsSync(path)) return [`Missing ${lang} UI dictionary`];
+  const ui = {};
+  const sandbox = { LINGUAI: { addUI: (_, strings) => Object.assign(ui, strings) } };
+  vm.runInNewContext(readFileSync(path, 'utf8'), sandbox, { filename: path, timeout: 5000 });
+  return module.items.filter(item => !String(ui[`chat.sc.${item.id}`] || '').trim())
+    .map(item => `Missing ${lang} scene title: ${item.id}`);
+}
+
 export function moduleOverlayErrors({ root, module, lang, bundle }) {
+  if (module.id === 'chat') return chatTitleErrors({ root, module, lang });
   if (!module.files.length) return [];
   const missing = module.files.filter(file => !existsSync(join(root, 'data/i18n', lang, file)));
   if (missing.length) return [`Missing ${lang} overlay: ${missing.join(', ')}`];
