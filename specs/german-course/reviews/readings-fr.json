@@ -1,18 +1,7 @@
 {
-  "bundleHash": "8ed588865871209069e63894756050200931b5485a0bf2b31a77dc68ffa55188",
-  "findings": [
-    {
-      "kind": "accuratezza e traduzione",
-      "msg": "Il testo presenta l'obbligo di una formulazione benevola come valido per ogni Arbeitszeugnis, ma il giudizio su prestazioni e comportamento riguarda lo Zeugnis qualificato; quello semplice si limita a natura e durata dell'attività. Precisare «Qualifizierte Arbeitszeugnisse …» e adeguare anche la domanda e la glossa francese.",
-      "path": "neutral[21].sentences[0]"
-    },
-    {
-      "kind": "spiegazione fuorviante",
-      "msg": "La glossa afferma senza riserve che il Betriebsrat ha un diritto di codeterminazione molto più forte del CSE francese, descritto come prevalentemente consultivo. I poteri dipendono dalla materia e dal contesto giuridico: eliminare il confronto generale oppure precisare che si riferisce, per esempio, all'organizzazione degli orari nel caso descritto.",
-      "path": "merged[19].gloss[2]"
-    }
-  ],
+  "bundleHash": "229c8cf592dc7d420b76333e81cbd2631a6f9813c9971840757d6d281af48744",
+  "findings": [],
   "lang": "fr",
   "unit": "readings",
-  "verdict": "fail"
+  "verdict": "pass"
 }
