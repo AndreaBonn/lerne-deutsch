@@ -1,35 +1,15 @@
 {
-  "bundleHash": "f893d78027f500bd76b4db82354dd6f9c171c8344c42dbe93a96e102fd3f5d9a",
+  "bundleHash": "fb4bd6e2ec64b0572d095fd1e99fc9296981baf65565879cfb27b46942a9e2b8",
   "findings": [
     {
-      "kind": "pronuncia",
-      "msg": "L'accento di «Angestellter» cade su «stell», non su «An». Correggere la spiegazione della pronuncia.",
-      "path": "merged.lessons[0].exercises[8].why"
-    },
-    {
-      "kind": "precisione della traduzione",
-      "msg": "«Nachhaltigkeit» indica sostenibilità o durevolezza; «zrównoważony rozwój» significa «sviluppo sostenibile» e aggiunge l'idea di sviluppo. Sostituirlo con «zrównoważony charakter» o «trwałość», secondo il contesto.",
-      "path": "merged.lessons[2].vocab[5].tr"
-    },
-    {
-      "kind": "precisione della traduzione",
-      "msg": "La stessa equivalenza imprecisa compare nella tabella: «Nachhaltigkeit» non significa di per sé «zrównoważony rozwój». Usare «zrównoważony charakter» o «trwałość».",
-      "path": "merged.lessons[2].grammar.table.rows[2][2]"
-    },
-    {
-      "kind": "livello CEFR",
-      "msg": "L'unità è etichettata C2, ma la maggior parte degli esercizi richiede riconoscimento di plurali comuni, genere di composti e derivati frequenti, senza il grado di sfumatura lessicale o contestuale atteso a questo livello. Mantenendo formati e quantità previsti, introdurre esempi meno frequenti, ambiguità semantiche e distinzioni di registro pertinenti al C2, anche nel test.",
+      "kind": "Livello CEFR",
+      "msg": "L’unità è etichettata C2, ma gli esercizi verificano soprattutto forme e regole di base: plurali comuni, genere dei composti, suffissi frequenti e traduzioni di frasi semplici. Rafforzare gli item con lessico e distinzioni semantiche avanzate, composti meno trasparenti e contesti che richiedano di scegliere tra varianti vicine per significato o registro, mantenendo i tipi e il numero di esercizi previsti.",
       "path": "merged.lessons"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "La regola secondo cui il suffisso trasferisce una parola a un'altra parte del discorso è troppo generale: per esempio «-schaft» può derivare un sostantivo da un altro sostantivo, come «Freund» → «Freundschaft». Precisare che alcuni suffissi cambiano la categoria, mentre altri formano sostantivi da sostantivi.",
-      "path": "merged.lessons[2].theory[0].p"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "La spiegazione limita impropriamente il trattino a chiarezza, sigle e nomi propri. Esistono anche altri usi ortografici, per esempio nelle forme coordinate con un elemento comune omesso: «Ein- und Ausgang». Presentare quelli elencati come casi frequenti, senza «tylko».",
-      "path": "merged.lessons[1].theory[3].trap"
+      "kind": "Livello CEFR",
+      "msg": "Anche il test ripropone prevalentemente riconoscimenti e completamenti elementari, senza verificare padronanza C2 della sfumatura lessicale o del registro. Sostituire gli item con esercizi più discriminanti sugli stessi argomenti e negli stessi formati.",
+      "path": "merged.test.exercises"
     }
   ],
   "lang": "pl",
