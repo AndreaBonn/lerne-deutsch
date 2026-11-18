@@ -1,13 +1,7 @@
 {
-  "bundleHash": "ebaca8c984d2be4ba70f9c926965b18d3737f5f315b3b4d299283314a2e62b39",
-  "findings": [
-    {
-      "kind": "spiegazione inesatta",
-      "msg": "La nota afferma che la tessera sanitaria va presentata a ogni visita, ma in Germania viene generalmente acquisita dalla pratica una volta per trimestre. Correggere in «zwykle okazuje się ją w gabinecie raz na kwartał» ed evitare di presentare la frequenza come una regola senza eccezioni.",
-      "path": "merged[4].gloss[2]"
-    }
-  ],
+  "bundleHash": "5288ceb43f78b4dd87d3f1920680a44d8de7d70fb3945ac451ff99a563530a8f",
+  "findings": [],
   "lang": "pl",
   "unit": "readings",
-  "verdict": "fail"
+  "verdict": "pass"
 }
