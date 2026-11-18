@@ -1,10 +1,10 @@
 {
-  "bundleHash": "e4b342aea8a9c0f5c340b84bff0859e2dd41408228a30edc4bcf0709cf338955",
+  "bundleHash": "eccdee6cca2e5d8109bc138c2b5bb5f842d6b9ffe93c304239adde2fe079e0f7",
   "findings": [
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "La spiegazione afferma che la preposizione regge il pronome relativo nel caso richiesto e che lo stesso vale per il genitivo. In «auf dessen Grundlage», però, «auf» regge il gruppo nominale «dessen Grundlage» all’accusativo; «dessen» resta al genitivo perché esprime il possessore. Distinguere questo caso da «mit der», dove la preposizione regge direttamente il pronome.",
-      "path": "merged.lessons[0].theory[1].p"
+      "kind": "pronuncia",
+      "msg": "L’indicazione dell’accento per «Autorin» è errata: cade su «rin», non su «to». Correggere la spiegazione per evitare che la pronuncia dell’esercizio orale venga appresa in modo scorretto.",
+      "path": "merged.lessons[0].exercises[10].why"
     }
   ],
   "lang": "es",

@@ -1,30 +1,20 @@
 {
-  "bundleHash": "6c59a1d534b562316c7bf6382e7527cc783ed2fcd3aa524dcd07ff7e37a0f90f",
+  "bundleHash": "61f6b8fbb04fd54afd25612f0f7a8394b2816b462915a4c1d7e669e921c432f2",
   "findings": [
     {
-      "kind": "chiave di risposta",
-      "msg": "«Auf welcher» è un accusativo femminile corretto, equivalente formale di «auf die», quindi anche la terza opzione completa correttamente la frase. Sostituire il distrattore e correggere la spiegazione che lo definisce dativo.",
-      "path": "merged.test.exercises[5]"
+      "kind": "chiave di risposta incompleta",
+      "msg": "La frase polacca «mieszka w Wiedniu» ammette anche «wohnt in Wien», ma tutte le risposte accettate usano «lebt in Wien». Aggiungere le corrispondenti varianti con «wohnt».",
+      "path": "merged.lessons[0].exercises[8].a"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "Il polacco «pytać kogoś» regge l’accusativo, non il genitivo. Correggere il confronto: entrambi i verbi richiedono qui l’accusativo della persona.",
-      "path": "merged.lessons[1].exercises[5].why"
+      "kind": "spiegazione contrastiva errata",
+      "msg": "L'affermazione che in polacco il pronome segue il sostantivo è falsa: lo stesso esercizio traduce «mit deren Hilfe» con «z której pomocą», dove il pronome precede il sostantivo. Correggere la spiegazione, distinguendo questa costruzione da «z pomocą której».",
+      "path": "merged.lessons[0].exercises[3].why"
     },
     {
-      "kind": "nota contrastiva",
-      "msg": "«Pytać kogoś» usa l’accusativo anche in polacco. Eliminare il presunto contrasto con il tedesco e mantenere la distinzione pertinente tra «wem» al dativo e «den» all’accusativo.",
-      "path": "merged.lessons[1].theory[4].tip"
-    },
-    {
-      "kind": "traduzione",
-      "msg": "«Dowiedzieć się w zarządzie o terminy» non è idiomatico e presenta una reggenza scorretta. Usare «powinien wcześniej zapytać zarząd o terminy» oppure «dowiedzieć się w zarządzie, jakie są terminy».",
-      "path": "merged.lessons[2].exercises[9].tr"
-    },
-    {
-      "kind": "traduzione",
-      "msg": "«Gefordert wird» è al presente, mentre «domagano się» presenta la richiesta al passato. Correggere in «której dymisji od tygodni się domagają».",
-      "path": "merged.test.exercises[8].tr"
+      "kind": "spiegazione contrastiva errata",
+      "msg": "La regola secondo cui in polacco il pronome segue il sostantivo dopo una preposizione è troppo assoluta: sono possibili anche «na której podstawie» e «z których pomocą». Presentare «na podstawie której» e «z pomocą których» come alternative, senza escludere l'ordine opposto.",
+      "path": "merged.lessons[0].theory[2].contrast"
     }
   ],
   "lang": "pl",

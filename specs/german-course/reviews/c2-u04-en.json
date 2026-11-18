@@ -1,20 +1,20 @@
 {
-  "bundleHash": "70f6aeeac8ec0b4644e6945f18875b760ec74a30b41be59d16880e17742ed1f9",
+  "bundleHash": "9b7bc088dfb66f243c0977d9da185828c2b95196414bbb57761d809306970527",
   "findings": [
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "La regola secondo cui il correlativo è necessario ogni volta che i casi differiscono è troppo assoluta. Può essere omesso anche in alcuni casi diversi, per esempio «Wem das zu viel ist, kann gehen». Distinguere questi casi da quelli in cui il correlativo è obbligatorio e aggiornare anche la spiegazione del cloze e il tip della lezione. Riferimento: https://www.duden.de/sprachwissen/sprachratgeber/Die-Rangfolge-der-F%C3%A4lle",
-      "path": "merged.lessons[1].theory[2].contrast"
+      "kind": "Grammatica e chiave di risposta",
+      "msg": "La forma «neuen» non è necessariamente errata: dopo «deren» sono ammesse sia la flessione forte «deren neuem Vorschlag» sia la flessione debole «deren neuen Vorschlag». La domanda ha quindi due risposte corrette. Sostituire il distrattore «neuen» con una forma non ammessa e correggere la spiegazione.",
+      "path": "merged.lessons[0].exercises[2]"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "La formulazione presenta «derer» solo come dimostrativo. Può anche essere un pronome relativo in funzione di complemento genitivo, per esempio «die Argumente, derer er sich bediente». Precisare che non si usa invece come attributo possessivo davanti a un sostantivo. Riferimento: https://www.duden.de/sprachwissen/sprachratgeber/deren-derer",
+      "kind": "Spiegazione grammaticale",
+      "msg": "La flessione forte dell’aggettivo dopo «dessen» e «deren» non è l’unica ammessa: è possibile anche la flessione debole. Riformulare la regola e indicare entrambe le possibilità.",
+      "path": "merged.lessons[0].grammar.note"
+    },
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "La nota presenta «mit dessen neuen Vorschlag» come errore, ma la flessione debole dopo il relativo genitivo è ammessa. Correggere la spiegazione indicando anche «mit dessen neuem Vorschlag» come variante corretta.",
       "path": "merged.lessons[0].theory[3].trap"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "La preposizione non regge direttamente «dessen» o «deren» negli esempi possessivi: regge il gruppo nominale, mentre il pronome resta un attributo al genitivo. Distinguere «mit der» da «auf dessen Grundlage» nella spiegazione.",
-      "path": "merged.lessons[0].theory[1].p"
     }
   ],
   "lang": "en",
