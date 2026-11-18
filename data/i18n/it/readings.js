@@ -125,7 +125,7 @@ LINGUAI.addStrings("it", {
 
   "read:r-c1-betriebsrat": {
     title: "Il consiglio aziendale prende la parola",
-    gloss: ["mettere in discussione (proporre al confronto)", "la regolamentazione dell'orario di lavoro", "il consiglio aziendale (rappresentanza dei lavoratori)", "sollevare (una questione)", "entrare in vigore", "il diritto di codeterminazione", "fare riferimento a", "far notare (obiettare)", "conciliare", "l'accordo aziendale", "tenere conto di", "ammettere"],
+    gloss: ["sottoporre a discussione (proporre al confronto)", "la regolamentazione dell'orario di lavoro", "il consiglio aziendale (rappresentanza dei lavoratori)", "sollevare (una questione)", "entrare in vigore", "il diritto di codeterminazione", "fare riferimento a", "far notare (obiettare)", "conciliare", "l'accordo aziendale", "tenere conto di", "ammettere"],
     lex: ["di medie dimensioni", "ingegneria meccanica", "impresa", "Bielefeld", "direzione aziendale", "autunno", "in futuro", "dipendenti", "turno", "pianificare", "libertà", "consenso", "legge sull'ordinamento aziendale", "spettare", "assemblea del personale", "simile", "azienda (stabilimento)", "pressione", "aumentare", "genitori", "orari di apertura", "asilo (struttura diurna per l'infanzia)", "trattativa", "realizzarsi (andare in porto)", "introdurre", "costringere", "con breve preavviso", "inserire (registrare)", "influenza", "sottovalutare", "prendere gusto a", "procedura"]
   },
 
