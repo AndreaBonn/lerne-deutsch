@@ -38,7 +38,7 @@ Un requisito per riga. "Originale" = `upstream` (`../versione-statica`) al commi
 - R18 - Il corso ha 37 unità e 170 lezioni con la stessa distribuzione per livello e per unità dell'originale; per lezione il numero di esercizi sta entro ±15% dell'originale e ogni tipo di esercizio presente in un'unità dell'originale è presente nell'unità tedesca corrispondente (12 tipi nelle lezioni: `truefalse` vive solo nelle letture e `minpair` è generato a runtime da `phonetics.js`).
 - R19 - La progressione grammaticale segue Profile Deutsch ed è fissata in `specs/german-course/curriculum.md`; ogni tag di lezione esiste in `GRAMMAR_REF`.
 - R20 - I blocchi `{contrast}` e `{trap}` sono scritti per ciascuna lingua di spiegazione sul contrasto di quella lingua col tedesco, non tradotti dall'italiano.
-- R21 - Ogni lotto di contenuto generato ha un verdetto `pass` del secondo modello registrato in `specs/german-course/reviews/`; le unità B2-C2 hanno in più un esito umano su campione.
+- R21 - Ogni lotto di contenuto generato ha un verdetto `pass` del secondo modello registrato in `specs/german-course/reviews/`; le unità B2-C2 hanno in più un esito umano su campione. Eccezioni decise dall'utente il 2026-11-18: Q1 B chiude conversazioni, chat fr/pl e falsi amici senza D8; Q7 A rende lo stadio review un report che non fa fallire `--all` né la CI. Senza `pass` a quella data: a2-u01, a2-u03, a2-u04, a2-u07 (lingue varie), b2-u05-it, readings-a/b/c en-es-fr-pl, phonetics, conv-1/conv-2/chat fr-pl, interference; l'elenco aggiornato lo stampa `npm run check:porting -- --all`. I campioni B2, C1 e C2 hanno l'ESITO scritto da Claude da una lettura modello, dichiarato in ogni riga (N13, Q1 B di T8.99).
 - R22 - Ogni frase dello strato neutro destinata alla voce ha un mp3 de-DE; nessun mp3 orfano resta nel repo; `audio_hash()` e `Recordings.hash()` restano gemelli e invariati.
 - R23 - Il simulatore "in stile Goethe-Zertifikat B1" ha 4 moduli (Lesen, Hören, Schreiben, Sprechen), dichiara a schermo di non essere ufficiale, non usa materiali ufficiali, assegna punteggio solo a Lesen e Hören e non mostra verdetti del modello su Schreiben e Sprechen.
 - R24 - I falsi amici esistono per ciascuna coppia IT/EN/ES/FR/PL→DE, scritti per lingua; `check-falsi-amici.mjs` è verde.
@@ -49,12 +49,12 @@ Un requisito per riga. "Originale" = `upstream` (`../versione-statica`) al commi
 - R29 - PWA: `check_precache.mjs` e `check_swversion.mjs` verdi a ogni fase; l'app funziona da `file://`.
 - R30 - Il test di piazzamento funziona con qualunque numero di livelli registrati (1-6).
 - R31 - A ogni chiusura di fase sono verdi: lint, `npm test`, mutazioni, DOM, `validate.mjs` per le 5 lingue, `parity.mjs`, precache, swversion, coverage ≥ 99.
-- R32 - L'originale `versione-statica` non viene modificato; nessun push dal piano.
+- R32 - Il ramo `main` dell'originale `versione-statica` non viene modificato; nessun push dal piano. Eccezione (T0.13 B, Q2 A, Q3 A): un difetto del motore condiviso si corregge nell'originale su un branch locale `fix/<descrizione>`, senza push, e arriva qui per cherry-pick.
 - R33 - `CLAUDE.md` descrive il tedesco come lingua insegnata, il significato D4 dei campi `it*` e le nuove voci e prefissi.
 
 ## Definition of Done
 
-- [ ] `npm run check:porting -- --all` esce 0: 37/37 unità con stadi core-de, it, en, es, fr, pl, audio, review (e human per B2-C2) completi.
+- [ ] `npm run check:porting -- --all` esce 0: 37/37 unità e tutti i moduli secondari con stadi core-de, it, en, es, fr, pl, audio (e human per B2-C2) completi; lo stadio review è stampato come report e non decide l'esito (Q7 A).
 - [ ] `node scripts/validate.mjs <lang>` esce 0 per it, en, es, fr, pl e le statistiche stampano 37 unità / 170 lezioni con la distribuzione A1 10/50, A2 8/40, B1 4/20, B2 6/24, C1 5/20, C2 4/16.
 - [ ] `node scripts/parity.mjs` esce 0 con riferimento `it`.
 - [ ] `npm run test:all` e `node scripts/coverage.mjs --min 99` verdi.

@@ -110,6 +110,8 @@ ogni stadio, quindi il verify di ogni lotto parte rosso per costruzione.
 - `scripts/prune_audio.mjs` (dry-run di default) → serve a R22: ogni fase rende orfani i mp3 italiani o le frasi corrette | scartata: `git rm` a mano, perché la cancellazione massiva riscritta ogni volta è quella che sbaglia il filtro.
 - `scripts/neutral-letters.mjs` (regex e scansione dello strato neutro estratte da `validate.mjs`) → serve a R16, condivisa da `validate.mjs` e `check_porting.mjs` e testabile | scartata: due copie della regex, perché divergerebbero in silenzio.
 - Campo neutro `plural` sul vocabolo → serve a R15 | scartata: plurale dentro `it`, perché cambia chiave flashcard e nome dei file audio (subordinato a DA-3).
+- `scripts/porting-all.mjs` → serve a R21 e alla DoD (`--all`, Q7 A): decide cosa controlla il gate della CI e stampa la review come report | scartata: tutto dentro `check_porting.mjs`, perché lo portava oltre le 300 righe.
+- Target di 4 set di coppie minime invece dei 5 dello snapshot (`GERMAN_PHONETIC_SETS` in `porting-modules.mjs`) → serve a R25: il quinto candidato, ch [ç]/[x], è un solo fonema in due varianti posizionali e non ha coppie fra parole comuni (T9.30) | scartata: un set con parole marginali, che `phonetics.js` non ammette.
 - Nessuna dipendenza npm o Python nuova; nessun livello di astrazione nel motore (il tedesco sostituisce l'italiano nelle stesse tabelle e funzioni).
 
 ## Operazioni
