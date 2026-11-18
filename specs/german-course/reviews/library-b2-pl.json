@@ -1,0 +1,28 @@
+{
+  "bundleHash": "9d8cf6be963ab6dd315c5322016b99507ff994f18da626806ef704a312cb1ea4",
+  "findings": [
+    {
+      "kind": "Rektion",
+      "msg": "Polskie objaśnienie podaje błędny przypadek: „beruhen auf” łączy się z celownikiem (Dativ), czyli „auf + Dativ”, a nie z biernikiem. Ponieważ polski „celownik” oznacza Dativ, obecny zapis jest poprawny i nie wymaga zmiany.",
+      "path": "merged[0].lex[11]"
+    },
+    {
+      "kind": "Adeguatezza linguistica",
+      "msg": "Espressione poco naturale: «Von der Standardsprache aus kann man leicht in die Umgangssprache hinuntersteigen» suggerisce una gerarchia di valore e usa un verbo inadatto al passaggio fra registri. Sostituire, per esempio, con «Von der Standardsprache aus kann man sich nach und nach mit der Umgangssprache vertraut machen».",
+      "path": "neutral[0].sentences[21]"
+    },
+    {
+      "kind": "Adeguatezza linguistica",
+      "msg": "«Den Teil, den man durch das Dableiben bekommt» è poco idiomatico e vago. Formulare, per esempio: «Dir fehlt nur noch die Vertrautheit mit der Sprache vor Ort, die du mit der Zeit durch den Alltag erwirbst.»",
+      "path": "neutral[0].sentences[33]"
+    }
+  ],
+  "lang": "pl",
+  "unit": "library-b2",
+  "verdict": "fail",
+  "archived": {
+    "decision": "N2 (Q-C1-D8 A extended): no concrete overlay finding: lex 11 remark self-declares the gloss correct, other remarks neutral style preferences",
+    "date": "2026-11-18",
+    "bundleHash": "9d8cf6be963ab6dd315c5322016b99507ff994f18da626806ef704a312cb1ea4"
+  }
+}
