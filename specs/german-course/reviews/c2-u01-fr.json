@@ -1,0 +1,23 @@
+{
+  "bundleHash": "aff4cc71ec05de197225600344ce728d156f8b6ceff2b42f5461d7fe2f979625",
+  "findings": [
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "La spiegazione afferma che tutto ciò che si trova fra articolo e nome dipende dal participio. Non è sempre vero: nell’esempio «die in der Studie befragten, überwiegend jungen Erwachsenen», «überwiegend jungen» è un attributo coordinato distinto, non un complemento di «befragten». Precisare che l’intervallo può contenere anche altri attributi.",
+      "path": "merged.lessons[0].theory[0].p"
+    },
+    {
+      "kind": "Spiegazione semantica",
+      "msg": "«Nicht in Abrede stellen» significa non negare, ma non implica che l’autrice eviti di riconoscere apertamente il fatto. Eliminare «sans pour autant la déclarer ouvertement» e spiegare che il grado di esplicitazione dipende dal contesto.",
+      "path": "merged.lessons[2].exercises[2].why"
+    },
+    {
+      "kind": "Traduzione",
+      "msg": "«Vorliegen» indica qui che le domande sono già disponibili o presenti presso l’autorità; «sont en attente depuis des semaines» suggerisce invece che attendano di essere trattate, informazione non espressa dal tedesco. Tradurre, per esempio, «Les demandes que l’administration doit examiner sont à sa disposition depuis des semaines».",
+      "path": "merged.lessons[1].exercises[6].tr"
+    }
+  ],
+  "lang": "fr",
+  "unit": "c2-u01",
+  "verdict": "fail"
+}

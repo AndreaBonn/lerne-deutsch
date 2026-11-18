@@ -1,0 +1,43 @@
+{
+  "bundleHash": "fb7d2b9b148d0908c41d82c5bf97f25d200b8f39394ded79867df48987a960da",
+  "findings": [
+    {
+      "kind": "pronuncia",
+      "msg": "In «Ablehnung» la b precede una vocale e si pronuncia [b], non [p]. Correggere la spiegazione fonetica.",
+      "path": "merged.lessons[1].exercises[8].why"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Vorliegen» indica che le domande sono disponibili o presenti da settimane, non che sono in attesa da settimane. Tradurre per esempio: «Wnioski, które urząd ma rozpatrzyć, są dostępne od tygodni».",
+      "path": "merged.lessons[1].exercises[6].tr"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "L'assenza di zu in «prüfend» indica valore attivo, ma «geprüften» non implica necessariamente che la domanda sia già stata esaminata: il participio passato può descrivere anche uno stato passivo senza specificare il momento. Qualificare la spiegazione in base al contesto.",
+      "path": "merged.lessons[1].exercises[0].why"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In «Abrede» la b precede una consonante sonora e si pronuncia [b], non [p]. Correggere la spiegazione fonetica.",
+      "path": "merged.lessons[2].exercises[9].why"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "«Nicht in Abrede stellen» afferma esplicitamente che l'autrice non nega la circostanza; sostenere che non ne parli direttamente è incompatibile con la frase riportata. Eliminare tale conclusione o precisare che la formula non equivale necessariamente a un'ammissione enfatica.",
+      "path": "merged.lessons[2].exercises[2].why"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Daraus abzuleitenden Maßnahmen» indica misure da ricavare o dedurre dai risultati, mentre «wynikające z nich środki» presenta il nesso come già realizzato. Rendere per esempio con «Środki, które należy z nich wyprowadzić».",
+      "path": "merged.test.exercises[8].tr"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "«Auf heftige Kritik stoßen» è al passato e significa che la riforma ha incontrato forti critiche. La spiegazione polacca usa il presente «jest krytykowana»; sostituirlo con «została ostro skrytykowana».",
+      "path": "merged.test.exercises[6].why"
+    }
+  ],
+  "lang": "pl",
+  "unit": "c2-u01",
+  "verdict": "fail"
+}

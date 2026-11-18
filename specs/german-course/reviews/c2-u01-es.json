@@ -1,0 +1,33 @@
+{
+  "bundleHash": "d1b8e728c833ac93cde2ece25861c5c69714ccfee5154ce0319cb4f801a65378",
+  "findings": [
+    {
+      "kind": "pronuncia",
+      "msg": "In «Ablehnung» la b si pronuncia [b], non [p], perché precede una consonante sonora. Correggere l'indicazione fonetica.",
+      "path": "merged.lessons[1].exercises[8].why"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In «Abrede» la b si pronuncia [b], non [p], perché precede una consonante sonora. Correggere l'indicazione fonetica.",
+      "path": "merged.lessons[2].exercises[9].why"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "La traduzione perde sia il valore di obbligo di «sind ... einzureichen» sia l'idea di presentazione successiva espressa da «nachzureichenden». Per esempio: «Los documentos que el solicitante debe aportar posteriormente deberán presentarse antes de fin de mes».",
+      "path": "merged.lessons[1].exercises[8].tr"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Abzuleitenden» indica misure da ricavare o dedurre, mentre «que se derivan» presenta la derivazione come già avvenuta. Usare, per esempio, «las medidas que han de derivarse de ellos».",
+      "path": "merged.test.exercises[8].tr"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La regola secondo cui tutto ciò che si trova tra articolo e sostantivo dipende dal participio è troppo generale: nell'esempio della stessa lezione «die in der Studie befragten, überwiegend jungen Erwachsenen», «überwiegend jungen» è un attributo coordinato indipendente. Precisare che ogni complemento dipende dal rispettivo attributo.",
+      "path": "merged.lessons[0].theory[0].p"
+    }
+  ],
+  "lang": "es",
+  "unit": "c2-u01",
+  "verdict": "fail"
+}
