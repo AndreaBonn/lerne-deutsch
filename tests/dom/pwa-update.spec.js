@@ -142,6 +142,10 @@ test("\"later\" leaves the version in the queue and the message returns on openi
 });
 
 test("two tabs: accepting in one brings the other into line", async ({ browser }) => {
+  /* Two full shell installs in two tabs: alone this takes 7-20 s, and the
+     waits below already allow up to 75 s, so the default 30 s test budget
+     was the first thing to run out under the load of the full suite. */
+  test.setTimeout(90000);
   const ctx = await browser.newContext();
   const pierwsza = await ctx.newPage();
   const druga = await ctx.newPage();
