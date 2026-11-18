@@ -33,7 +33,7 @@ LINGUAI.addReadings([
       { t: "truefalse", q: "Anna bestellt einen Tee.", a: 1 },
       { t: "mcq", q: "Was ist Anna von Beruf?", opts: ["Lehrerin", "Kellnerin", "Ärztin"], a: 0 },
       { t: "mcq", q: "Wie heißt der Kellner?", opts: ["Jonas", "Tom", "Anna"], a: 0 },
-      { t: "truefalse", q: "Tom möchte mit Anna per du sein.", a: 0 }
+      { t: "truefalse", q: "Tom möchte zu Anna du sagen.", a: 0 }
     ]
   },
   {
@@ -431,7 +431,7 @@ LINGUAI.addReadings([
       "Die Verzögerung erklärt sich zum Teil aus der direkten Demokratie selbst: Über eine Verfassungsänderung entschied nicht das Parlament allein, sondern die Gesamtheit der stimmberechtigten Männer.",
       "In manchen Kantonen dauerte es noch erheblich länger, bis Frauen auch über lokale Angelegenheiten mitbestimmen konnten.",
       "Appenzell Innerrhoden führte das Frauenstimmrecht auf kantonaler Ebene erst 1990 ein, und zwar nicht aus eigenem Entschluss, sondern auf Anordnung des Bundesgerichts.",
-      "Dort wurde bis dahin auf der Landsgemeinde, einer jährlichen Versammlung unter freiem Himmel, mit erhobener Hand abgestimmt.",
+      "Dort wird bis heute auf der Landsgemeinde, einer jährlichen Versammlung unter freiem Himmel, mit erhobener Hand abgestimmt, bis 1990 allerdings ausschließlich von Männern.",
       "Heute wird der 7. Februar in der Schweiz nicht als Feiertag begangen, doch kaum ein Datum taucht in Debatten über Gleichstellung häufiger auf."
     ],
     glossIt: ["die Volksabstimmung", "auf Bundesebene", "das Anliegen", "das Stimmrecht", "die Verfassungsänderung", "stimmberechtigt", "die Anordnung", "die Landsgemeinde", "begehen (einen Tag)"],
