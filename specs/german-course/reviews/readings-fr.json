@@ -1,7 +1,18 @@
 {
-  "bundleHash": "229c8cf592dc7d420b76333e81cbd2631a6f9813c9971840757d6d281af48744",
-  "findings": [],
+  "bundleHash": "740ceffa4a685aafbe4961b04704b7eefb36e13538bee0f915d79a7a7931f84e",
+  "findings": [
+    {
+      "kind": "traduction",
+      "msg": "« Auf der Welt sein » signifie « être au monde », et non « être né ». Dans le contexte, traduire par « Depuis la naissance du deuxième enfant » ; pour l’entrée de vocabulaire, donner « être au monde » et, si utile, préciser que la tournure peut évoquer une naissance récente.",
+      "path": "merged[13].gloss[1]"
+    }
+  ],
   "lang": "fr",
   "unit": "readings",
-  "verdict": "pass"
+  "verdict": "fail",
+  "archived": {
+    "decision": "N2 (Q-C1-D8 A extended): final round of the declared budget, no concrete findings; gloss of auf der Welt sein as etre ne is correct in context, the finding is a nuance",
+    "date": "2026-11-18",
+    "bundleHash": "740ceffa4a685aafbe4961b04704b7eefb36e13538bee0f915d79a7a7931f84e"
+  }
 }

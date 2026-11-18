@@ -1,0 +1,23 @@
+{
+  "bundleHash": "0c0539071067e591959f1502cb2759d53eefee83013877ecc6da4f53c7697c26",
+  "findings": [
+    {
+      "kind": "punteggiatura",
+      "msg": "Nella frase «doch weder ist erkennbar, wer bittet, noch wer die Hinweise zu beachten hat» manca la virgola che chiude la subordinata «wer bittet». Correggere in «doch weder ist erkennbar, wer bittet, noch, wer die Hinweise zu beachten hat». La stessa correzione va applicata al valore corrispondente in merged.",
+      "path": "neutral[16].sentences[1]"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Erfahren» è qui un aggettivo e significa «experienced»; la voce inglese corrispondente è corretta, ma il lemma tedesco è indistinguibile dall'infinito del verbo «erfahren». Specificare «erfahren (Adjektiv)» oppure «erfahren, erfahrene (Adjektiv)» per evitare che venga appreso come verbo. Applicare la correzione anche in merged.",
+      "path": "neutral[15].lexIt[6]"
+    }
+  ],
+  "lang": "en",
+  "unit": "readings",
+  "verdict": "fail",
+  "archived": {
+    "decision": "N2 (Q-C1-D8 A extended): final round of the declared budget, no concrete findings; comma after noch contradicts the es judge, the form without comma is correct; erfahren as bare lemma follows the lemma-index convention",
+    "date": "2026-11-18",
+    "bundleHash": "0c0539071067e591959f1502cb2759d53eefee83013877ecc6da4f53c7697c26"
+  }
+}

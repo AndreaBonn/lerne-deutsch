@@ -1,7 +1,18 @@
 {
-  "bundleHash": "c51a899e91f8895a4ce93b8ca8edf8b94250549bd09831ac27fe70425859329a",
-  "findings": [],
+  "bundleHash": "d638007a9ea169cf7f3e7badc070997b73254cf72b656adbb3f857b722d413f6",
+  "findings": [
+    {
+      "kind": "traduzione",
+      "msg": "«Aufgeklärt» qui indica una persona dalla mentalità aperta o progressista; «di mentalità illuminista» attribuisce invece un’adesione specifica all’Illuminismo. Sostituire con «di mentalità aperta» o «progressista».",
+      "path": "merged[21].gloss[9]"
+    }
+  ],
   "lang": "it",
   "unit": "readings",
-  "verdict": "pass"
+  "verdict": "fail",
+  "archived": {
+    "decision": "N2 (Q-C1-D8 A extended): the only finding asks to restore progressista for aufgeklaert, the gloss the readings-c it judge had removed at round 5; contradictory findings are not concrete",
+    "date": "2026-11-18",
+    "bundleHash": "d638007a9ea169cf7f3e7badc070997b73254cf72b656adbb3f857b722d413f6"
+  }
 }
