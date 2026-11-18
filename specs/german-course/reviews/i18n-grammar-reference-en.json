@@ -1,7 +1,38 @@
 {
-  "bundleHash": "328e12035fe59fd1e90801839c11d50c36d38091f4d44b012af515bee406c563",
-  "findings": [],
+  "bundleHash": "5114838dbed826ac4b9e05ad5b101044e4b91735c6b5112c85af15b1e3ce306c",
+  "findings": [
+    {
+      "kind": "grammar",
+      "msg": "La spiegazione afferma che, senza un infinito finale, werden non indica il futuro. È troppo categorica: in una frase come «Morgen wird das Haus renoviert» il Präsens passivo esprime un evento futuro. Precisare che l'assenza dell'infinito esclude la costruzione Futur I con werden, ma non un significato futuro.",
+      "path": "content.ref:g-futur.body"
+    },
+    {
+      "kind": "grammar",
+      "msg": "«German always adds -er» esclude erroneamente le costruzioni con «mehr» usate anche con alcuni aggettivi, per esempio «mehr oder weniger interessant». Presentare -er come formazione ordinaria del comparativo, senza definirla l'unica possibilità.",
+      "path": "content.ref:g-komparation.body"
+    },
+    {
+      "kind": "grammar",
+      "msg": "La regola secondo cui «wenn» richiede il Konjunktiv II in entrambe le proposizioni per una condizione ipotetica è troppo assoluta: sono possibili conseguenze all'imperativo o con altre forme, per esempio «Wenn du Zeit hättest, komm doch mit!». Presentare le due forme al Konjunktiv II come schema di base, non come obbligo universale.",
+      "path": "content.ref:g-konditionalsatz.body"
+    },
+    {
+      "kind": "grammar",
+      "msg": "L'affermazione «German uses no preposition here: the case on the article does the job» non copre esempi senza articolo come «großer Geduld», citato poco prima. Precisare che il genitivo è espresso dalla forma del gruppo nominale, eventualmente dall'aggettivo, e che non tutti i nomi mostrano un articolo.",
+      "path": "content.ref:g-genitiv.body"
+    },
+    {
+      "kind": "explanation",
+      "msg": "La frase «German has no gerund: you need a subordinate clause with its own subject ... or a noun» esclude alternative infinitive pertinenti, per esempio «Nach dem Essen» è già una nominalizzazione, ma costruzioni come «ohne zu essen» e «statt zu essen» rendono altre funzioni dell'inglese in -ing. Limitare la regola al significato temporale di «after» e agli esempi trattati.",
+      "path": "content.ref:g-plusquamperfekt.body"
+    },
+    {
+      "kind": "explanation",
+      "msg": "«The noun moves toward the end, like a separable particle» presenta come regola generale una posizione che dipende dalla costruzione e dall'ordine della frase. In «Die Firma stellt uns die Räume zur Verfügung» è il sintagma preposizionale «zur Verfügung» a comparire verso la fine, non un nome separabile. Descrivere l'ordine dell'esempio senza generalizzarlo a tutti i Funktionsverbgefüge.",
+      "path": "content.ref:g-funktionsverbgefuege.body"
+    }
+  ],
   "lang": "en",
   "unit": "i18n-grammar-reference",
-  "verdict": "pass"
+  "verdict": "fail"
 }
