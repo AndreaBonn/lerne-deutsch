@@ -1,7 +1,78 @@
 {
-  "bundleHash": "2136b62c799566f82be466180da6de606c457312b9965bf02b3ffd2a9139afb8",
-  "findings": [],
+  "bundleHash": "da46725aaa843a0eeb69b98cf0a394488d11d252c7316365096fc937708e6130",
+  "findings": [
+    {
+      "kind": "grammatica",
+      "msg": "La regola secondo cui il dimostrativo è obbligatorio quando i casi differiscono è troppo rigida: «Wer mir hilft, danke ich» è possibile. Presentare la ripresa con «dem» come esplicita e spesso preferita, non come obbligatoria nello standard.",
+      "path": "content.ref:g-relativsatz.body"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "La subordinata con «nachdem» non richiede sempre il Plusquamperfekt quando la principale è al passato: sono possibili anche altre combinazioni, soprattutto nel parlato. Presentare il Plusquamperfekt come forma standard per esprimere anteriorità rispetto a un riferimento passato, non come obbligo assoluto.",
+      "path": "content.ref:g-plusquamperfekt.body"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "La frase «il tedesco usa sempre ... l'indicativo» dopo «nachdem» e «bevor» esclude erroneamente il Konjunktiv nel discorso indiretto o nelle ipotesi. Limitare la regola ai fatti presentati come reali e correggere anche la prescrizione assoluta sui tempi dopo «nachdem».",
+      "path": "content.ref:g-nebensatz-temporal.body"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "«Non esiste la doppia negazione» e «nicht kein è sbagliato» sono affermazioni assolute errate: «Das ist nicht kein Problem» è possibile con negazione contrastiva, pur essendo marcato. Specificare che nella negazione ordinaria «kein» basta da solo.",
+      "path": "content.ref:g-negation.body"
+    },
+    {
+      "kind": "reggenza",
+      "msg": "«Ich warte darauf, dich zu sehen» è una costruzione poco naturale per l'esempio didattico. Usare «Ich freue mich darauf, dich zu sehen» oppure «Ich warte darauf, dass du kommst».",
+      "path": "content.ref:g-praep-verben.body"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "«chs suona ks solo quando la s fa parte del tema» non è una regola affidabile: per esempio «Dachs» si pronuncia con [ks], ma il plurale «Dachse» conserva [ks] anche prima della desinenza. Presentare [ks] come proprietà lessicale di alcune parole e distinguere esempi come «machst».",
+      "path": "content.ref:g-aussprache.body"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "La spiegazione sostiene che «den Kunden» con «sehen» sia singolare perché il verbo regge l'accusativo, ma la forma potrebbe anche essere un dativo plurale retto da un altro elemento nella frase. Nell'esempio dato «sehen» identifica l'oggetto all'accusativo; chiarire che è la funzione sintattica specifica, non soltanto la presenza del verbo, a disambiguare.",
+      "path": "content.ref:g-n-deklination.body"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "L'asserzione che tutti i suffissi «-ung, -heit, -keit, -schaft» diano sempre un plurale in «-en» è errata: per esempio «die Wissenschaft» ha plurale «die Wissenschaften», ma molte parole come «die Gesundheit» o «die Freiheit» sono frequentemente non numerabili e non hanno un plurale ordinario in ogni significato. Precisare che, quando formano un plurale, questo è normalmente in «-en».",
+      "path": "content.ref:g-wortbildung.body"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "La lettura del Futur I come supposizione non dipende dalla presenza di «wohl», «sicher» o «vermutlich». Sostituire «Con ... il Futur I esprime» con una formulazione che chiarisca che il contesto determina la lettura e gli avverbi possono esplicitarla.",
+      "path": "content.ref:g-futur.body"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "La frase «il tedesco non fa questo spostamento» nel discorso indiretto è troppo assoluta: i tempi possono essere adattati al contesto e il rapporto temporale non coincide necessariamente con il tempo verbale della citazione. Precisare che il Konjunktiv I normalmente conserva il rapporto temporale rispetto all'enunciazione riferita.",
+      "path": "content.ref:g-konjunktiv1.body"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "«L'italiano ... usa non + infinito» descrive solo il divieto alla seconda persona singolare: «Non fumate!» e «Non fumi!» usano forme finite. Specificare che il confronto riguarda il «tu».",
+      "path": "content.ref:g-imperativ.body"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "La regola «i pronomi ... stanno dopo il verbo» è formulata senza limitazioni, ma un pronome può occupare il primo posto («Ihn sehe ich») e nella subordinata precede il verbo finale. Limitare l'affermazione all'ordine neutro della principale con soggetto iniziale.",
+      "path": "content.ref:g-pron-akk.body"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "«Es bedarf großer Geduld» contiene un nome senza articolo e contraddice l'invito a evitare il «nome nudo» se inteso come nome privo di articolo. Chiarire che il genitivo deve essere segnalato almeno da una desinenza, qui quella dell'aggettivo «großer».",
+      "path": "content.ref:g-genitiv.body"
+    },
+    {
+      "kind": "punteggiatura",
+      "msg": "Dopo «senza -er» la frase successiva inizia con «nel» minuscolo. Correggere in «Nel confronto ...».",
+      "path": "content.ref:g-komparation.body"
+    }
+  ],
   "lang": "it",
   "unit": "i18n-grammar-reference",
-  "verdict": "pass"
+  "verdict": "fail"
 }
