@@ -1,0 +1,18 @@
+{
+  "bundleHash": "266e86ec009dad9237bc8a322e8f2f4fe365c678c5fe523662e53a09a1b1b9f7",
+  "findings": [
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La spiegazione presenta verpasst, vermisst e verliert come verbi pronominali con «se», ma non lo sono: verpasst e vermisst richiedono un complemento oggetto all’accusativo, mentre per un portafoglio smarrito si usa verlieren. Per chiarire anche l’interferenza con il francese, sostituire con esempi completi: «Ich habe den Zug verpasst» (j’ai raté le train), «Du fehlst mir» (tu me manques) oppure «Ich vermisse dich» (tu me manques), e «Ich habe meine Geldbörse verloren» (j’ai perdu mon portefeuille).",
+      "path": "merged[4].closing"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Verbindung» indica qui l’itinerario o la soluzione di viaggio, non necessariamente una coincidenza. Tradurre «Je vous imprime l’itinéraire. Bon voyage !».",
+      "path": "merged[4].turns[12].tr"
+    }
+  ],
+  "lang": "fr",
+  "unit": "conv-2",
+  "verdict": "fail"
+}
