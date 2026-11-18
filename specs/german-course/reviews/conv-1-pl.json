@@ -1,0 +1,23 @@
+{
+  "bundleHash": "b520773eb1ce7035f3910a9de71b4ebbea5445af8ee76205f3cdabbe63794b88",
+  "findings": [
+    {
+      "kind": "alternativa errata",
+      "msg": "La consegna e la traduzione richiedono «nauczycielka», cioè un'insegnante donna, ma «ich bin lehrer» e «ich arbeite als lehrer» indicano un uomo. Rimuovere queste alternative oppure rendere la consegna polacca compatibile con entrambi i generi.",
+      "path": "merged[1].turns[7].accept"
+    },
+    {
+      "kind": "traduzione imprecisa",
+      "msg": "«Mit Paprika gewürzt» non specifica che la paprica sia in polvere. Sostituire «przyprawiona papryką w proszku» con «przyprawiona papryką», oppure precisare «Paprikapulver» nel testo tedesco.",
+      "path": "merged[3].turns[6].tr"
+    },
+    {
+      "kind": "traduzione imprecisa",
+      "msg": "«Gern» esprime disponibilità o assenso, mentre «już podaję» aggiunge che la bevanda viene servita subito. Usare per esempio «Kawa, oczywiście» e «Herbata, oczywiście».",
+      "path": "merged[0].turns[2].tr e merged[0].turns[3].tr"
+    }
+  ],
+  "lang": "pl",
+  "unit": "conv-1",
+  "verdict": "fail"
+}
