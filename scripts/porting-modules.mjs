@@ -6,6 +6,13 @@ import { scanValues } from './neutral-letters.mjs';
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 const GROUPS = { a: ['A1', 'A2'], b: ['B1', 'B2'], c: ['C1', 'C2'] };
 
+/* The snapshot of the Italian course asks for 5 sets of minimal pairs. The
+   German course has 4 by decision (T9.30, Q7 A): the fifth candidate, ch [ç]
+   against [x], is one phoneme in two positional variants, so its only real
+   pairs use marginal words, which phonetics.js does not take. Its 21 pairs
+   still match the snapshot. */
+const GERMAN_PHONETIC_SETS = 4;
+
 export function moduleDefinition(id, course, target) {
   const readings = (course.READINGS || []).filter(item => !course.library.includes(item));
   const secondary = target.secondary || {};
@@ -36,7 +43,7 @@ export function moduleDefinition(id, course, target) {
     items = course[global] || [];
     if (id === 'conv-1') items = items.slice(0, 7);
     if (id === 'conv-2') items = items.slice(7, 14);
-    count = id === 'phonetics' ? (secondary.minimalPairs?.sets ?? fallback)
+    count = id === 'phonetics' ? GERMAN_PHONETIC_SETS
       : id === 'interference' ? secondary.interference || {} : (id.startsWith('conv-') ? fallback : secondary[key] ?? fallback);
     files = file ? [file] : []; prefix = patch;
   }

@@ -45,6 +45,11 @@ jobs:
       - name: Consistency of the course data
         run: node scripts/validate.mjs
 
+      # Every unit and module against the ported target: counts, five overlays,
+      # recordings, human samples. Second-judge reviews are printed, not gated.
+      - name: The whole course is ported
+        run: npm run check:porting -- --all
+
       - name: Shape of the language overlays
         run: node scripts/parity.mjs
 

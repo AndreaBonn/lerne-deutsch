@@ -14,11 +14,21 @@ export const LANGUAGES = ['it', 'en', 'es', 'fr', 'pl'];
 export const ADVANCED_LEVELS = ['B2', 'C1', 'C2'];
 const STAGES = ['core', ...LANGUAGES, 'audio', 'review', 'human'];
 const LEVEL_STAGES = ['core', ...LANGUAGES, 'review'];
+/* --all, the CI gate (Q7 A): structural stages decide the exit code, review
+   is printed as a report. The second judge is a model that may not answer,
+   and a gate that is red by construction stops being read. */
+const ALL_STAGES = ['core', ...LANGUAGES, 'audio', 'human'];
+const ALL_MODULES = { readings: ['readings-a', 'readings-b', 'readings-c'],
+  library: ['library-a1', 'library-a2', 'library-b1', 'library-b2', 'library-c1', 'library-c2'],
+  writing: ['writing'], conversations: ['conv-1', 'conv-2'], chat: ['chat'],
+  minimalPairs: ['phonetics'], interference: ['interference'] };
 const EXERCISE_TOLERANCE = 0.15;
 const HELP = `Usage: node scripts/check_porting.mjs [module ...] [--root <dir>] [--unit <id>]
-  [--level <A1..C2>] [--stage core,it,en,es,fr,pl,audio,review,human] [--curriculum] [--help]
+  [--level <A1..C2>] [--stage core,it,en,es,fr,pl,audio,review,human] [--curriculum] [--all] [--help]
 Default: check core for all target units and course distribution.
 --level: every unit of the level on core, it, en, es, fr, pl and review (the phase gate).
+--all: curriculum, every unit and every module the target declares on core, it, en, es, fr, pl,
+  audio and human; reviews in all five languages are printed as a report and do not fail.
 Language stages check overlay file existence. Review requires pass per requested language (default it).
 Human: n/a below B2; B2-C2 need <unit>-human.md with a nonempty ESITO: line after picked IDs.
 Audio: every spoken string of the unit's lessons and test has its hash in data/audio-index.js and a non-empty
@@ -240,6 +250,28 @@ function checkModules({ root, course, target, ids, stages }) {
   return results;
 }
 
+function checkAll({ root, target }) {
+  const course = loadCourse(root);
+  const modules = Object.keys(target.secondary || {}).flatMap(key => ALL_MODULES[key] || []);
+  const results = [{ label: 'curriculum', errors: curriculumErrors(root, target) },
+    ...checkUnits({ root, course, target, options: {}, stages: ALL_STAGES }),
+    ...checkModules({ root, course, target, ids: modules, stages: ALL_STAGES })];
+  const reviewed = [...Object.keys(target.units).map(id => ({ id, module: false })),
+    ...modules.map(id => ({ id, module: true }))];
+  for (const { id, module } of reviewed) {
+    const { errors, notes } = reviewResult({ root, id, languages: LANGUAGES, module });
+    results.push({ label: `${id} review (report only)`, errors: [], report: errors, notes });
+  }
+  return results;
+}
+
+function formatResult({ label, errors, notes = [], report = [] }) {
+  if (errors.length) return `${label}: ${errors.join('; ')}`;
+  if (report.length) return `${label}: ${report.join('; ')}`;
+  if (!notes.length) return `${label}: pass`;
+  return `${label}: ${notes[0].startsWith('n/a') ? notes.join(', ') : `pass, archived (${notes.join(', ')})`}`;
+}
+
 function main() {
   const args = process.argv.slice(2);
   const ids = [];
@@ -250,9 +282,12 @@ function main() {
       if (['--root', '--unit', '--stage', '--level'].includes(args[index]) && index + 1 < args.length) optionArgs.push(args[++index]);
     } else ids.push(args[index]);
   }
-  const options = parseOptions({ args: optionArgs, values: ['root', 'unit', 'stage', 'level'], flags: ['curriculum', 'help'] });
+  const options = parseOptions({ args: optionArgs, values: ['root', 'unit', 'stage', 'level'], flags: ['curriculum', 'all', 'help'] });
   if (ids.length && (options.unit || options.level || options.curriculum)) throw new Error('Choose modules or unit/level/curriculum');
   if (options.help) { console.log(HELP); return; }
+  if (options.all && (ids.length || options.unit || options.level || options.curriculum || options.stage)) {
+    throw new Error('--all takes no modules, unit, level, curriculum or stage');
+  }
   if (options.unit && !/^[a-c][12]-u\d+$/.test(options.unit)) throw new Error('Invalid unit ID');
   /* --level is the phase gate: all units of the level, all explanation
      languages and their reviews, unless --stage narrows it. */
@@ -260,13 +295,13 @@ function main() {
   if (stages.some(stage => !STAGES.includes(stage))) throw new Error('Invalid stage');
   const root = resolve(options.root || ROOT);
   const target = JSON.parse(readFileSync(join(root, 'scripts/porting-target.json'), 'utf8'));
-  const results = options.curriculum ? [{ label: 'curriculum', errors: curriculumErrors(root, target) }] : [];
-  if (!options.curriculum || options.stage || options.unit) {
+  const results = options.all ? checkAll({ root, target })
+    : options.curriculum ? [{ label: 'curriculum', errors: curriculumErrors(root, target) }] : [];
+  if (!options.all && (!options.curriculum || options.stage || options.unit)) {
     results.push(...(ids.length ? checkModules({ root, course: loadCourse(root), target, ids, stages })
       : checkUnits({ root, course: loadCourse(root), target, options, stages })));
   }
-  results.forEach(({ label, errors, notes = [] }) => console.log(`${label}: ${errors.length ? errors.join('; ')
-    : notes.length ? (notes[0].startsWith('n/a') ? notes.join(', ') : `pass, archived (${notes.join(', ')})`) : 'pass'}`));
+  results.forEach(result => console.log(formatResult(result)));
   if (results.some(result => result.errors.length)) process.exitCode = 1;
 }
 
