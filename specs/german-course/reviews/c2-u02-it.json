@@ -1,40 +1,25 @@
 {
-  "bundleHash": "dd3e6130df2ba3497894f5bc0a762b6619323baebff116423e1512cb821068aa",
+  "bundleHash": "b8b82a973394bd7dc6979ac3fd41317034298d4d1ba181248e67681082b7849b",
   "findings": [
     {
-      "kind": "livello CEFR",
-      "msg": "L'unità è dichiarata C2, ma propone prevalentemente distinzioni lessicali e costruzioni elementari o intermedie, con frasi brevi e prevedibili e distrattori spesso manifestamente errati. La terminologia grammaticale specialistica non basta a portare gli esercizi al C2. Mantenendo tipi e numero di esercizi previsti, introdurre lessico meno frequente, contesti più sfumati, registri differenziati e alternative più vicine tra loro in tutte le lezioni e nella verifica.",
+      "kind": "Livello CEFR",
+      "msg": "L'unità è classificata C2, ma gli esercizi richiedono soprattutto riconoscimento di forme e costruzioni comuni, senza verificare la precisione lessicale e le sfumature attese a questo livello. Aumentare la difficoltà degli item mantenendo il formato previsto, per esempio distinguendo accezioni, registri e composti o derivati meno trasparenti in contesti appropriati.",
       "path": "merged.lessons"
     },
     {
-      "kind": "traduzione",
-      "msg": "«Längst überfällig» significa che il miglioramento avrebbe dovuto avvenire già da tempo; «è atteso da tempo» non esprime il ritardo. Tradurre, per esempio, «Il miglioramento delle condizioni di lavoro è ormai atteso da troppo tempo» oppure «avrebbe dovuto avvenire già da tempo».",
-      "path": "merged.lessons[2].grammar.examples[0].tr"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "La nota definisce la -s- finale di «Strombedarfs» come elemento di giunzione, ma è la desinenza del genitivo di «Strombedarf»; tra «Strom» e «Bedarf» non compare alcun elemento di giunzione. Correggere la scomposizione e distinguere la desinenza dalla giunzione.",
-      "path": "merged.lessons[1].grammar.examples[2].note"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "La spiegazione afferma che tutti i prefissi elencati sono non accentati, ma «miss-» può essere accentato, per esempio in «misslingen». Distinguere l'inseparabilità dall'accentazione e precisare che l'accento varia secondo il verbo.",
-      "path": "merged.lessons[2].theory[2].p"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "La spiegazione presenta tutti i plurali sostitutivi elencati come composti con un secondo elemento, ma «Streitigkeiten» è un derivato, non un composto di questo tipo. Distinguere esplicitamente composti come «Regenfälle» da derivati come «Streitigkeiten».",
+      "kind": "Spiegazione lessicale",
+      "msg": "Sportarten significa «discipline sportive», non è un plurale sostitutivo equivalente a Sport: «praticare diversi sport» può riferirsi alle discipline, ma Sport indica anche l'attività sportiva in generale. Presentare Sportarten come termine più specifico, non come plurale di Sport.",
       "path": "merged.lessons[0].theory[1].p"
     },
     {
-      "kind": "alternative e fedeltà semantica",
-      "msg": "«Niederschläge» comprende anche precipitazioni diverse dalla pioggia, per esempio la neve, quindi non equivale sempre a «Regenfälle» né alla traduzione fornita. Eliminare l'alternativa oppure modificare la consegna e la traduzione affinché si riferiscano alle precipitazioni in generale.",
-      "path": "merged.lessons[0].exercises[5].gaps[0]"
+      "kind": "Spiegazione troppo assoluta",
+      "msg": "Il criterio del conteggio non distingue sempre Wörter da Worte: anche «ein paar Worte» o «wenige Worte» sono parole contate nel senso di discorso, come mostrano gli esercizi dell'unità. Distinguere parole considerate come unità lessicali da parole considerate come enunciato, senza usare il conteggio come regola assoluta.",
+      "path": "merged.lessons[0].theory[3].trap"
     },
     {
-      "kind": "verifica del livello CEFR",
-      "msg": "La verifica ripropone soprattutto riconoscimenti lessicali e morfologici di base, con alternative spesso palesemente scorrette; non verifica la padronanza fine richiesta al C2. Conservare il formato e il numero di esercizi, ma usare contesti e distrattori più sfumati e impegnativi.",
-      "path": "merged.test.exercises"
+      "kind": "Spiegazione fonetica",
+      "msg": "In «gesagt» la sequenza finale si pronuncia [kt], ma la spiegazione attribuisce [kt] alle sole lettere «gt»: la [k] corrisponde alla g e la [t] alla t. Indicare separatamente la pronuncia delle due consonanti per evitare ambiguità.",
+      "path": "merged.lessons[0].exercises[9].why"
     }
   ],
   "lang": "it",
