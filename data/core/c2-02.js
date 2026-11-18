@@ -224,7 +224,7 @@ LINGUAI.addUnits("C2", [
         {
           t: "cloze",
           text: "Die Ministerin, {{1}} Rücktritt seit Wochen gefordert wird, bestreitet, sich {{2}} Fehlverhaltens schuldig gemacht zu haben.",
-          gaps: [["deren"], ["eines", "des", "jeglichen"]]
+          gaps: [["deren"], ["eines", "des"]]
         },
         {
           t: "trans",

@@ -6,7 +6,7 @@
    ============================================================ */
 LINGUAI.addStrings("it", {
   "unit:c2-u04": {
-    title: "Il che mi preoccupa",
+    title: "Ciò che mi preoccupa",
     grammarNote: "Relative con il genitivo dessen e deren (die Forscherin, deren Ergebnisse ...) e con la preposizione davanti al pronome (mit dem, auf dessen Grundlage) · relative con wer, was e wo(r)- + preposizione (Wer zu spät kommt, den ...; alles, was ...; vieles, worüber ...) · reggenze di verbi e aggettivi che non si deducono dall'italiano: genitivo (bedürfen, sich enthalten, beschuldigen, sich bewusst sein) e preposizioni (zweifeln an, stolz auf, bestehen auf/in)"
   },
   "lesson:c2-u04-l1": {
@@ -291,7 +291,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Verbi e aggettivi con il genitivo",
-        p: "Un piccolo gruppo di verbi regge un complemento al genitivo: <em>bedürfen</em> (aver bisogno di), <em>gedenken</em> (commemorare), <em>sich enthalten</em> (astenersi da), <em>sich vergewissern</em> (accertarsi di), <em>sich bedienen</em> (servirsi di). Alcuni hanno un accusativo e un genitivo: <em>jemanden einer Sache beschuldigen, anklagen, verdächtigen</em>, «accusare qualcuno di qualcosa». Lo stesso vale per alcuni aggettivi: <em>sich einer Sache bewusst sein</em>, <em>einer Sache würdig</em>, <em>sich einer Sache schuldig machen</em>. Sono tutti di registro alto: nella lingua di tutti i giorni si dice <em>brauchen</em> al posto di <em>bedürfen</em>."
+        p: "Un piccolo gruppo di verbi regge un complemento al genitivo: <em>bedürfen</em> (aver bisogno di), <em>gedenken</em> (commemorare), <em>sich enthalten</em> (astenersi da), <em>sich vergewissern</em> (accertarsi di), <em>sich bedienen</em> (servirsi di). Alcuni hanno un accusativo e un genitivo: <em>jemanden einer Sache beschuldigen, anklagen, verdächtigen</em>, «accusare qualcuno di qualcosa». Lo stesso vale per alcuni aggettivi: <em>sich einer Sache bewusst sein</em>, <em>einer Sache würdig</em>, <em>sich einer Sache schuldig machen</em>. Verbi come <em>bedürfen</em>, <em>gedenken</em>, <em>sich enthalten</em> e <em>beschuldigen</em> appartengono al registro alto: nella lingua di tutti i giorni si dice <em>brauchen</em> al posto di <em>bedürfen</em>. <em>sich einer Sache bewusst sein</em> invece è comune anche nell'uso corrente."
       },
       {
         h: "La preposizione va imparata con il verbo",
@@ -309,7 +309,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Reggenze di verbi e aggettivi",
-      note: "<b>Genitivo</b>: bedürfen, gedenken, sich enthalten, sich vergewissern; jemanden einer Sache beschuldigen; sich einer Sache bewusst sein, einer Sache würdig. <b>Preposizioni</b>: zweifeln an + Dat., stolz auf + Akk., angewiesen auf + Akk., bestehen auf / aus / in + Dat. Il genitivo è di registro formale.",
+      note: "<b>Genitivo</b>: bedürfen, gedenken, sich enthalten, sich vergewissern; jemanden einer Sache beschuldigen; sich einer Sache bewusst sein, einer Sache würdig. <b>Preposizioni</b>: zweifeln an + Dat., stolz auf + Akk., angewiesen auf + Akk., bestehen auf / aus / in + Dat. I verbi con il genitivo sono di registro formale.",
       table: {
         head: ["tedesco", "italiano"],
         rows: [
@@ -412,13 +412,13 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "È assolutamente consapevole dei rischi.",
-        why: "In <i>Risiken</i> l'accento cade su <b>Ri</b>; in <i>durchaus</i> l'accento cade su <b>aus</b>; in <i>bewusst</i> la <b>u</b> è breve."
+        why: "In <i>Risiken</i> l'accento cade su <b>Ri</b>; in <i>durchaus</i> l'accento può cadere su <b>durch</b> o su <b>aus</b>; in <i>bewusst</i> la <b>u</b> è breve."
       }
     ]
   },
   "lesson:c2-u04-test": {
     theme: "Verifica",
-    title: "Test: Il che mi preoccupa",
+    title: "Test: Ciò che mi preoccupa",
     objectives: [
       "verificare le relative e le reggenze dell'unità e ripassare il livello C2 nell'esame finale"
     ],
@@ -488,7 +488,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa: nella prima lacuna il relativo possessivo, nella seconda l'articolo retto da sich schuldig machen.",
         tr: "La ministra, di cui da settimane si chiedono le dimissioni, nega di essersi resa colpevole di un comportamento scorretto.",
-        why: "<b>deren</b>: <i>die Ministerin</i> è femminile. <b>eines</b> (o <b>des</b>): <i>sich einer Sache schuldig machen</i> regge il genitivo, e <i>Fehlverhalten</i> è neutro: <i>eines Fehlverhaltens</i>. Va bene anche <i>jeglichen Fehlverhaltens</i>."
+        why: "<b>deren</b>: <i>die Ministerin</i> è femminile. <b>eines</b> (o <b>des</b>): <i>sich einer Sache schuldig machen</i> regge il genitivo, e <i>Fehlverhalten</i> è neutro: <i>eines Fehlverhaltens</i>."
       },
       {
         q: "Traduci in registro formale: «Chi è consapevole dei rischi non ha bisogno di ulteriori avvertimenti.» (sich bewusst sein, bedürfen)",
