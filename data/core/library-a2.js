@@ -18,7 +18,7 @@ LINGUAI.addReadings([
       "Also habe ich meine Methode geändert.",
       "Jeden Morgen bin ich zur Mensa gegangen und habe die neuen Zettel gelesen.",
       "Am Nachmittag habe ich selbst einen Zettel geschrieben: „Suche Zimmer, bin ruhig und koche gern.“",
-      "Ich habe ihn an drei Bretter gehängt, mit meiner Telefonnummer zum Abreißen.",
+      "Ich habe ihn an drei Schwarze Bretter gehängt, mit meiner Telefonnummer zum Abreißen.",
       "Am Anfang war mir das peinlich, weil ich noch langsam Deutsch gesprochen habe.",
       "Aber dann habe ich gemerkt: Mein Akzent ist den Leuten egal.",
       "Nach vier Tagen hat ein junger Mann angerufen.",
