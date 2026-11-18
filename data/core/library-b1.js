@@ -27,7 +27,7 @@ LINGUAI.addReadings([
       "Amal schickt ihr eine Kopie der Fiktionsbescheinigung und die Bestätigung vom Dezember.",
       "Danach ist die Frage geklärt, aber Amal merkt, wie wichtig ihr Ordner ist.",
       "In diesen Monaten lernt sie Wörter, die in keinem Sprachkurs unterrichtet werden.",
-      "Sie weiß jetzt, was ein Aktenzeichen ist, und dass ein „Titel“ hier nichts mit Büchern zu tun hat.",
+      "Sie weiß jetzt, was ein Aktenzeichen ist und dass ein „Titel“ hier nichts mit Büchern zu tun hat.",
       "Sie hat auch erlebt, dass zwei Mitarbeiter am Telefon auf dieselbe Frage zwei verschiedene Antworten geben.",
       "Das liegt nicht daran, dass jemand lügt, sondern daran, dass die Regeln kompliziert sind und sich oft ändern.",
       "Deshalb schreibt sie bei jedem Anruf den Namen der Person und das Datum auf.",
