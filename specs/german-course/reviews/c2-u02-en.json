@@ -1,0 +1,33 @@
+{
+  "bundleHash": "fde0a0b9b41fd0ea47cdbef81e0bcd816cf5bb143b05421a7d2e5bf85d8e9658",
+  "findings": [
+    {
+      "kind": "pronuncia",
+      "msg": "L’accento principale di «Angestellter» cade su «stell», non su «An». Correggere l’indicazione in «AngeSTELLter».",
+      "path": "merged.lessons[0].exercises[8].why"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "L’accento principale del composto «Universitätsstädten» cade su «Städ», mentre «tät» porta un accento secondario. Correggere la spiegazione.",
+      "path": "merged.lessons[1].exercises[8].why"
+    },
+    {
+      "kind": "morfologia",
+      "msg": "La spiegazione afferma che tutti i sostantivi in «-ung, -heit, -keit, -schaft» formano il plurale in «-en», ma molti non hanno un plurale nell’uso ordinario, come «Gelassenheit» e «Zuverlässigkeit», presentati nella stessa lezione. Precisare che, quando esiste, il plurale termina normalmente in «-en».",
+      "path": "merged.lessons[2].theory[0].p"
+    },
+    {
+      "kind": "spiegazione imprecisa",
+      "msg": "L’affermazione che ogni composto nominale tedesco sia scritto come un’unica parola è troppo assoluta: esistono composti scritti con trattini, per esempio «E-Mail-Adresse». Precisare che normalmente si scrive unito e introdurre i casi con trattino.",
+      "path": "merged.lessons[1].theory[2].contrast"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Regenfall» indica una precipitazione o un episodio di pioggia; «rain shower» suggerisce specificamente un rovescio, che corrisponde più precisamente a «Regenschauer». Usare «rainfall» o «period of rain».",
+      "path": "merged.lessons[0].vocab[4].tr"
+    }
+  ],
+  "lang": "en",
+  "unit": "c2-u02",
+  "verdict": "fail"
+}

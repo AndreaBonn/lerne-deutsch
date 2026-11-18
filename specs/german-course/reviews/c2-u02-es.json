@@ -1,0 +1,28 @@
+{
+  "bundleHash": "838b37bc30c265c26c67820d66469a674cb2eae07358692cb30dff58fb6865ca",
+  "findings": [
+    {
+      "kind": "pronuncia",
+      "msg": "L’accento principale di «Angestellter» cade su «stell», non su «An». Correggere la spiegazione della pronuncia.",
+      "path": "merged.lessons[0].exercises[8].why"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "La vocale di «Worten» è lunga [ɔː], non breve [ɔ]. Correggere l’indicazione.",
+      "path": "merged.lessons[0].exercises[9].why"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "La spiegazione attribuisce a tutti i sostantivi con questi suffissi un plurale in «-en», ma diversi astratti non hanno un plurale d’uso, come «Gelassenheit» e «Nachhaltigkeit». Precisare che, quando esiste, il plurale si forma generalmente in «-en».",
+      "path": "merged.lessons[2].theory[0].p"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "«-heit» non vale in tutti gli altri casi: esistono, per esempio, «Möglichkeit» da «möglich» e «Traurigkeit» da «traurig», già coperti dalla regola precedente, ma anche «Neuigkeit» da «neu» e «Schwierigkeit» da «schwierig». Presentare la scelta come tendenza con eccezioni, includendo «Neuigkeit» per il caso non coperto.",
+      "path": "merged.lessons[2].theory[1].p"
+    }
+  ],
+  "lang": "es",
+  "unit": "c2-u02",
+  "verdict": "fail"
+}
