@@ -1,25 +1,15 @@
 {
-  "bundleHash": "9ab1b8f902c3f101719b57c4ccadbbfff36a714c8ce1ebf2a5d49828fae6f0f7",
+  "bundleHash": "b20863cd9cbfca9028d4580806ace8d42236dc82fa09072208310e7fdbb3027a",
   "findings": [
     {
-      "kind": "Nivel CEFR",
-      "msg": "La unidad presenta principalmente identificación de género, plurales frecuentes y formación de palabras mediante pistas directas. Aunque emplea terminología lingüística, los ejercicios apenas exigen la precisión de significado, el registro o los matices propios de C2. Incorporar ejemplos y distractores más matizados dentro de los formatos actuales, por ejemplo variaciones de registro y usos contextuales de compuestos y derivados.",
+      "kind": "adeguatezza CEFR",
+      "msg": "Le tre lezioni e il test verificano soprattutto riconoscimento e produzione guidata di plurali comuni, composti e derivati, con frasi brevi e suggerimenti che indicano direttamente le basi da usare. Nel complesso la difficoltà lessicale e sintattica è sensibilmente inferiore al C2. Mantenendo tipi e numero degli esercizi, introdurre contesti più sfumati, lessico specialistico o raro, distinzioni semantiche e di registro e distrattori più vicini alla risposta corretta.",
       "path": "merged.lessons"
     },
     {
-      "kind": "Explicación incorrecta",
-      "msg": "La afirmación «el neutro no existe en tu lengua» es falsa: el español tiene formas neutras como «lo», «esto» y «eso», aunque sus sustantivos no se clasifican generalmente en un género neutro. Precisar esa diferencia.",
-      "path": "merged.lessons[2].theory[4].contrast"
-    },
-    {
-      "kind": "Traducción poco idiomática",
-      "msg": "«Dio en el clavo del problema» resulta forzado en español. Traducir, por ejemplo, «Con pocas palabras expresó el problema con precisión».",
-      "path": "merged.lessons[0].grammar.examples[2].tr"
-    },
-    {
-      "kind": "Explicación ortográfica imprecisa",
-      "msg": "La explicación atribuye la diferencia entre «Muttern» y «Mütter» a la diéresis, pero las formas también difieren en la terminación: «-n» frente a «-er». Precisar ambos cambios.",
-      "path": "merged.lessons[0].theory[3].trap"
+      "kind": "adeguatezza CEFR",
+      "msg": "Anche il test controlla prevalentemente forme e significati già esplicitati nelle lezioni, spesso con suggerimenti diretti, senza richiedere le distinzioni fini attese al C2. Riformulare gli item entro gli stessi formati e quantità, usando contesti e alternative più sottili.",
+      "path": "merged.test.exercises"
     }
   ],
   "lang": "es",

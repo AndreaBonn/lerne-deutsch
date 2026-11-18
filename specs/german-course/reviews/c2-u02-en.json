@@ -1,35 +1,20 @@
 {
-  "bundleHash": "ef3fb3e674682739f305196053e9f710a5ebeb71b0fe571a8948e2c5dc2d03a9",
+  "bundleHash": "1b9a37d5e553e26c993d27c537eb6ea4695f5174f5d4dc775883b76baad00474",
   "findings": [
     {
       "kind": "pronuncia",
-      "msg": "L’accento principale di «Universitätsstädten» cade su «Städ», non su «tät»: correggere la spiegazione e, se utile, indicare l’accento secondario su «tät».",
-      "path": "merged.lessons[1].exercises[8].why"
-    },
-    {
-      "kind": "pronuncia",
-      "msg": "In «Gelassenheit» l’accento principale cade su «heit», non su «las». Correggere l’indicazione dell’accento.",
-      "path": "merged.lessons[2].exercises[9].why"
-    },
-    {
-      "kind": "morfologia",
-      "msg": "«-igkeit» non si aggiunge a tutti gli aggettivi in «-los»: per esempio, «mühelos» forma «Mühelosigkeit», ma «los» non è sufficiente come regola universale per ogni base. Presentare la formazione come schema produttivo, verificando la forma lessicalizzata.",
-      "path": "merged.lessons[2].theory[2].p"
-    },
-    {
-      "kind": "morfologia",
-      "msg": "L’affermazione che i sostantivi in «-schaft» formino sempre il plurale in «-en» è falsa: «die Landschaft» forma «die Landschaften», con aggiunta di «-en» solo se si considera la base senza la desinenza singolare, ma «die Mannschaft» forma «die Mannschaften»; chiarire la regola come aggiunta di «-en» alla forma singolare e distinguere le eventuali eccezioni.",
-      "path": "merged.lessons[2].theory[0].p"
+      "msg": "La spiegazione colloca erroneamente l’accento di «Angestellter» su «An». L’accento cade su «stell»: Ange-STELL-ter.",
+      "path": "merged.lessons[0].exercises[8].why"
     },
     {
       "kind": "livello CEFR",
-      "msg": "La maggior parte degli esercizi verifica forme lessicali, genere e composizione attraverso frasi brevi e strutture comuni, senza richiedere la precisione semantica, stilistica o di registro attesa a C2. Aumentare la complessità degli item entro i formati previsti, introducendo distinzioni lessicali e di registro avanzate e contesti più discriminanti.",
+      "msg": "La progressione è troppo elementare per C2: distinguere Banken/Bänke, ricavare il genere dall’ultimo elemento dei composti e riconoscere suffissi come -ung e -keit sono attività prevalentemente di livello intermedio. Sostituire o ampliare gli item con distinzioni lessicali e morfologiche più sottili, forme concorrenti, registro e casi contestuali avanzati, mantenendo il formato previsto.",
       "path": "merged.lessons"
     },
     {
-      "kind": "spiegazione",
-      "msg": "«Regenfälle» non è il plurale di «Regen», ma il plurale del sostantivo distinto «Regenfall», usato come espressione sostitutiva. Riformulare la consegna per non presentarlo come una forma flessiva diretta.",
-      "path": "merged.lessons[0].exercises[5].q"
+      "kind": "livello CEFR",
+      "msg": "Anche il test verifica soprattutto riconoscimenti e formazioni lessicali di base, senza accertare la padronanza avanzata richiesta a C2. Adeguare gli item alla maggiore complessità e alle distinzioni introdotte nelle lezioni riviste.",
+      "path": "merged.test.exercises"
     }
   ],
   "lang": "en",
