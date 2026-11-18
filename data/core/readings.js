@@ -402,7 +402,7 @@ LINGUAI.addReadings([
     titleIt: "Um Beachtung wird gebeten",
     sentences: [
       "Wer einen Bescheid vom Amt erhält, stößt schnell auf eine Sprache, die sorgfältig vermeidet zu sagen, wer eigentlich was tut.",
-      "„Um Beachtung der beigefügten Hinweise wird gebeten“, heißt es dann, doch weder ist erkennbar, wer bittet, noch, wer die Hinweise zu beachten hat.",
+      "„Um Beachtung der beigefügten Hinweise wird gebeten“, heißt es dann, doch weder ist erkennbar, wer bittet, noch wer die Hinweise zu beachten hat.",
       "Der Bürger selbst tritt in solchen Schreiben nicht als Mensch auf, sondern als Antragsteller, Leistungsempfänger oder Betroffener.",
       "Die Vorliebe für schwerfällige Substantive wie „Inanspruchnahme“ oder „Antragstellung“ verleiht den Texten den Anschein strenger Sachlichkeit.",
       "Diese Distanz ist jedoch weder zufällig noch harmlos.",
