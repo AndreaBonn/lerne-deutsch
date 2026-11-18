@@ -72,6 +72,22 @@ test.describe("false friends", () => {
     expect(await page.evaluate(() => window.__n)).toBe(1);
   });
 
+  /* The sets grew in two batches (it/en, then es/fr/pl), and an entry whose
+     `for` lists a language but whose overlay key is missing still draws a
+     card: with the German word and an empty explanation. parity.mjs checks
+     the keys; this checks what the student sees, in every language. */
+  test("in every language each card of its set has an explanation", async ({ page }) => {
+    for (const lang of ["it", "en", "es", "fr", "pl"]) {
+      await otworz(page, lang);
+      const ile = await page.evaluate(l => window.INTERFERENCE.filter(w => w.for.includes(l)).length, lang);
+      expect(ile, lang).toBeGreaterThanOrEqual(30);
+      await expect(page.locator(".fa-card"), lang).toHaveCount(ile);
+      const why = await page.locator(".fa-card .js-why").allTextContents();
+      expect(why.length, lang).toBe(ile);
+      expect(why.filter(w => !w.trim()), lang + ": empty explanations").toEqual([]);
+    }
+  });
+
   test("the explanation enters as text, not as markup", async ({ page }) => {
     await otworz(page, "pl");
     expect(await page.locator(".fa-card .js-why img").count()).toBe(0);
