@@ -374,3 +374,46 @@ describe("false friends", () => {
     assert.equal(v.it, "la targa", "the Italian entry stays: it is the headword");
   });
 });
+
+describe("an overlay split over several files of one language", () => {
+  /* Every language has many data/i18n/<lang>/*.js files, each calling
+     addStrings once. A second call that replaced the first file's patches
+     would leave the course half in the previous language, with no error. */
+  test("the patches of two files of the same language are both applied", () => {
+    const box = swiezy();
+    const L = lekcjaNeutralna();
+    const L2 = { ...lekcjaNeutralna(), id: "a1-u01-l2", exercises: [] };
+    box.Registry.registerLevel({ code: "A1", dataFiles: [], units: [{ id: "a1-u01", lessons: [L, L2] }] });
+    box.LINGUAI.addStrings("pl", nakladkaPl());
+    box.LINGUAI.addStrings("pl", { "lesson:a1-u01-l2": { title: "Herbata" } });
+    box.LINGUAI.applyStrings("pl");
+    assert.equal(L.title, "Kawa", "the first file survives the second");
+    assert.equal(L2.title, "Herbata");
+  });
+});
+
+describe("the exercise fields the overlay may and may not set", () => {
+  test("hint, tr and setting come from the overlay", () => {
+    const box = swiezy();
+    const L = lekcjaNeutralna();
+    L.exercises = [{ t: "trans", dir: "toIt", a: ["der Kaffee"] }];
+    box.Registry.registerLevel({ code: "A1", dataFiles: [], units: [{ id: "a1-u01", lessons: [L] }] });
+    box.LINGUAI.addStrings("pl", { "lesson:a1-u01-l1": { exercises: [{ q: "Przetłumacz", hint: "rodzaj męski", tr: "kawa", setting: "W kawiarni" }] } });
+    box.LINGUAI.applyStrings("pl");
+    const ex = L.exercises[0];
+    assert.equal(ex.hint, "rodzaj męski");
+    assert.equal(ex.tr, "kawa");
+    assert.equal(ex.setting, "W kawiarni");
+  });
+
+  test("an answer key in the overlay does not overwrite the neutral one", () => {
+    const box = swiezy();
+    const L = lekcjaNeutralna();
+    box.Registry.registerLevel({ code: "A1", dataFiles: [], units: [{ id: "a1-u01", lessons: [L] }] });
+    box.LINGUAI.addStrings("pl", { "lesson:a1-u01-l1": { exercises: [{ q: "Co?", a: 0, t: "fill" }] } });
+    box.LINGUAI.applyStrings("pl");
+    assert.equal(L.exercises[0].q, "Co?", "the overlay was applied");
+    assert.equal(L.exercises[0].a, 1);
+    assert.equal(L.exercises[0].t, "mcq");
+  });
+});
