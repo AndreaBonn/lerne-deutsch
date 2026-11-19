@@ -191,3 +191,25 @@ describe("fsrs: relearning steps", () => {
     assert.equal(karta.due - teraz, 15 * 60000);
   });
 });
+
+describe("fsrs: whole days since the last review", () => {
+  /* fsrs.js, dniOd: the reference truncates, so 23 hours is still zero days
+     and still the same-day branch. The vectors only have 0.2 h and 24 h or
+     more, so a rounding instead of a truncation passes all of them. */
+  const GODZINA = 3600 * 1000;
+  const teraz = Date.UTC(2026, 0, 5, 12);
+  const po = (godzin) => silnik().powtorz(
+    { st: "review", step: null, s: 10, d: 5, due: teraz, last: teraz - godzin * GODZINA },
+    3, teraz
+  );
+
+  test("23 hours after the last review counts like 1 hour: zero days", () => {
+    const godzina = po(1), prawieDoba = po(23);
+    assert.equal(prawieDoba.s, godzina.s);
+    assert.equal(prawieDoba.d, godzina.d);
+  });
+
+  test("25 hours after it is already a day later", () => {
+    assert.notEqual(po(25).s, po(1).s);
+  });
+});
