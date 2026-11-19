@@ -100,3 +100,21 @@ test("at 375 px the message fits in the window", async ({ page }) => {
   expect(pole.x, "the left edge inside the window").toBeGreaterThanOrEqual(0);
   expect(pole.x + pole.width, "the right edge inside the window").toBeLessThanOrEqual(375);
 });
+
+/* "Erase everything" asks first. A dismissed dialog must leave the progress
+   exactly where it was: the confirm is the only thing between a mis-tap and
+   months of lessons, and no unit test reaches the click handler. */
+test("dismissing the reset dialog keeps the progress, accepting it clears it", async ({ page }) => {
+  await page.evaluate(() => window.Core.recordLesson("a1-u01-l1", 9, 10, 60));
+  await page.evaluate(() => { location.hash = "#/impostazioni"; });
+  const reset = page.locator(".js-reset");
+  await expect(reset).toBeVisible();
+
+  page.once("dialog", (d) => d.dismiss());
+  await reset.click();
+  expect(await page.evaluate(() => window.Core.state.stats.lessonsDone)).toBe(1);
+
+  page.once("dialog", (d) => d.accept());
+  await reset.click();
+  await expect.poll(() => page.evaluate(() => window.Core.state.stats.lessonsDone)).toBe(0);
+});
