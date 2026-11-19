@@ -80,7 +80,7 @@ LINGUAI.addStrings("fr", {
       "Je comprends que vous soyez inquiet. Le médecin en parlera avec vous.",
       "Il passe encore aujourd'hui ?",
       "Je lui dis que vous avez encore des questions. Il y a autre chose qui n'est pas clair ?",
-      "Non, merci. Vous m'avez bien expliqué."
+      "Non, merci. Vous m'avez bien expliqué tout ça."
     ],
     culture: {
       title: "Côté allemand : qui informe le patient",
@@ -179,7 +179,7 @@ LINGUAI.addStrings("fr", {
         p: "Pour demander ou proposer avec égards, on utilise le <strong>Konjunktiv II</strong>, comme le conditionnel français : <em><b>Könnten</b> Sie mir sagen, wo es weh tut?</em> <em><b>Wäre</b> es Ihnen recht, wenn ich kurz bei Ihnen bleibe?</em> <em>Es <b>wäre</b> gut, wenn Sie heute ein paar Schritte gehen.</em> Les formes les plus fréquentes sont peu nombreuses : <em>könnte, wäre, hätte, würde</em>. <em>Könnte</em> vient du Präteritum <em>konnte</em> avec l'Umlaut. Dans la question, le verbe conjugué est en première position, comme dans toute question fermée."
       },
       {
-        contrast: "Le français n'a pas de classe de particules comme l'allemand, mais il en a des morceaux : « asseyez-vous <i>donc</i> », « venez <i>quand même</i> », « respirez <i>un peu</i> », et surtout l'intonation. Ces équivalents ne couvrent qu'une partie du terrain : « donc » à l'impératif peut sonner impatient, et rien en français ne fait exactement ce que fait <em>ja</em> (« vous savez bien que je suis là »). Sans <em>doch</em>, <em>mal</em> ou <em>ja</em>, la phrase allemande reste correcte, mais elle sonne plus froide et plus comme un ordre (<em>Setzen Sie sich hin.</em>). Le Konjunktiv II, en revanche, t'est familier : <em>Könnten Sie...?</em> correspond presque mot pour mot à « Pourriez-vous...? ». Mais il ne faut pas le confondre avec le subjonctif : le subjonctif français vient après « que » et une volonté ou un sentiment (« il faut que vous mangiez »), alors que le Konjunktiv II, c'est le conditionnel. Et un <em>doch</em> dit avec impatience sonne comme un reproche (« mais asseyez-vous donc, enfin »)."
+        contrast: "Le français n'a pas de classe de particules comme l'allemand, mais il en a des morceaux : « asseyez-vous <i>donc</i> », « venez <i>quand même</i> », « respirez <i>un peu</i> », et surtout l'intonation. Ces équivalents ne couvrent qu'une partie du terrain : « donc » à l'impératif peut sonner impatient, et rien en français ne fait exactement ce que fait <em>ja</em> (« vous savez bien que je suis là »). Sans <em>doch</em>, <em>mal</em> ou <em>ja</em>, la phrase allemande reste correcte, mais elle sonne plus froide et plus comme un ordre (<em>Setzen Sie sich hin.</em>). Le Konjunktiv II, en revanche, t'est familier : <em>Könnten Sie...?</em> correspond presque mot pour mot à « Pourriez-vous...? ». Mais il ne faut pas le confondre avec le subjonctif : le subjonctif français vient après « que » et une volonté ou un sentiment (« il faut que vous mangiez »), alors que le Konjunktiv II de politesse correspond ici au conditionnel. Et un <em>doch</em> dit avec impatience sonne comme un reproche (« mais asseyez-vous donc, enfin »)."
       },
       {
         trap: "<em>doch</em> ne veut pas dire ici « pourtant » ou « mais », et <em>mal</em> n'a rien à voir avec « mal » en français : c'est la forme courte de <em>einmal</em>. Attention aussi à <em>versprechen</em> et <em>sich versprechen</em> : <em>Ich kann Ihnen nichts versprechen</em> veut dire « je ne peux rien vous promettre », mais <em>Ich habe mich versprochen</em> veut dire « je me suis trompé en parlant ». Et les phrases qui semblent rassurantes, <em>Alles wird gut</em> ou <em>Sie fallen nicht</em>, sont des promesses qui ne dépendent pas de toi : dis plutôt ce que tu fais, <em>Ich bleibe bei Ihnen.</em>"
@@ -228,7 +228,7 @@ LINGUAI.addStrings("fr", {
       "J'ai tellement peur de me lever. Hier, j'ai eu la tête qui tournait.",
       "Je comprends que vous ayez peur. Asseyez-vous donc d'abord au bord du lit.",
       "Et si je tombe ?",
-      "Je suis juste à côté de vous, vous le voyez bien. Inspirez et expirez calmement.",
+      "Je suis là, juste à côté de vous. Inspirez et expirez calmement.",
       "D'accord. Vous pourriez me donner la main, s'il vous plaît ?",
       "Bien sûr. Cela vous irait si nous allions jusqu'à la fenêtre ?",
       "J'essaie. Ouf, c'est dur.",
@@ -259,7 +259,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         q: "Complète avec les particules doch et ja.",
-        tr: "Asseyez-vous donc d'abord. Je suis juste à côté de vous, vous le voyez bien.",
+        tr: "Asseyez-vous donc d'abord. Je suis là, juste à côté de vous.",
         why: "<i>Setzen Sie sich <b>doch</b> erst mal hin</i> : invitation encourageante. <i>Ich bin <b>ja</b> direkt neben Ihnen</i> : rappelle une chose que la patiente voit déjà, et la rassure."
       },
       {
@@ -303,7 +303,7 @@ LINGUAI.addStrings("fr", {
         ]
       },
       {
-        tr: "Je suis juste à côté de vous, vous le voyez bien. Inspirez et expirez calmement.",
+        tr: "Je suis là, juste à côté de vous. Inspirez et expirez calmement.",
         why: "<i>ja</i> se prononce [jaː], le <b>j</b> comme le « y » de « yeux » ; dans <i>ruhig</i>, le <b>g</b> final se prononce [ç] ; dans <i>ein</i>, la diphtongue <b>ei</b> se prononce [aɪ]. La particule <i>ja</i> n'est pas accentuée ici."
       },
       {
@@ -328,10 +328,10 @@ LINGUAI.addStrings("fr", {
       },
       {
         h: "Le Konjunktiv I pour rapporter",
-        p: "Pour rapporter les paroles de quelqu'un d'autre, l'allemand a le <strong>Konjunktiv I</strong> : radical du verbe + <em>-e</em>. <em>Ich habe gut geschlafen</em> devient <em>Er sagt, er <b>habe</b> gut geschlafen.</em> <em>Sein</em> est irrégulier : <em>ich sei, er sei, wir seien, sie seien</em>. On l'utilise surtout à la troisième personne du singulier, parce que c'est là qu'il se distingue de l'indicatif. Quand le Konjunktiv I se confond avec l'indicatif (<em>sie haben</em>), on prend le Konjunktiv II : <em>Sie sagen, sie <b>hätten</b> Angst.</em> À l'oral, beaucoup utilisent simplement <em>dass</em> avec l'indicatif : <em>Sie hat gesagt, dass sie gut geschlafen hat.</em> Dans le rapport de soins, le Konjunktiv I est la forme typique : <em>Patientin gibt an, sie <b>habe</b> keine Schmerzen.</em> Il indique qu'il s'agit d'une déclaration du patient, pas d'un fait que tu as vérifié."
+        p: "Pour rapporter les paroles de quelqu'un d'autre, l'allemand a le <strong>Konjunktiv I</strong> ; à la troisième personne du singulier, c'est radical du verbe + <em>-e</em>. <em>Ich habe gut geschlafen</em> devient <em>Er sagt, er <b>habe</b> gut geschlafen.</em> <em>Sein</em> est irrégulier : <em>ich sei, er sei, wir seien, sie seien</em>. On l'utilise surtout à la troisième personne du singulier, parce que c'est là qu'il se distingue de l'indicatif. Quand le Konjunktiv I se confond avec l'indicatif (<em>sie haben</em>), on prend le Konjunktiv II : <em>Sie sagen, sie <b>hätten</b> Angst.</em> À l'oral, beaucoup utilisent simplement <em>dass</em> avec l'indicatif : <em>Sie hat gesagt, dass sie gut geschlafen hat.</em> Dans le rapport de soins, le Konjunktiv I est la forme typique : <em>Patientin gibt an, sie <b>habe</b> keine Schmerzen.</em> Il indique qu'il s'agit d'une déclaration du patient, pas d'un fait que tu as vérifié."
       },
       {
-        contrast: "En français, le discours indirect n'a pas de mode à lui : on garde l'indicatif et on fait la concordance des temps (« il dit qu'il a bien dormi », « il a dit qu'il avait bien dormi »). Le subjonctif n'y entre pas : « il dit qu'il ait dormi » est faux. Le seul outil français pour prendre ses distances avec ce qu'on rapporte, c'est le conditionnel journalistique (« il aurait bien dormi ») ou une formule (« selon la patiente », « la patiente déclare »). L'allemand a une forme exprès, le Konjunktiv I, qu'on entend peu à l'oral mais qui est utile dans la documentation : <em>sie sei müde</em> marque la distance entre ce que la patiente dit et ce que tu as observé, comme le « patiente dit être fatiguée » des transmissions. Pour les proches, la logique est proche de la règle française : en France aussi, le secret professionnel vaut envers la famille, et la personne de confiance n'a pas accès d'office au dossier. En Allemagne, la règle est nette : c'est le patient qui décide qui peut savoir quoi, et le fils ou l'épouse n'ont pas automatiquement droit aux informations."
+        contrast: "En français, le discours indirect n'a pas de mode à lui : on garde l'indicatif et on fait la concordance des temps (« il dit qu'il a bien dormi », « il a dit qu'il avait bien dormi »). Le subjonctif n'y entre pas : « il dit qu'il ait dormi » est faux. Pour prendre ses distances avec ce qu'on rapporte, le français utilise surtout le conditionnel journalistique (« il aurait bien dormi ») ou une formule (« selon la patiente », « la patiente déclare »). L'allemand a une forme exprès, le Konjunktiv I, qu'on entend peu à l'oral mais qui est utile dans la documentation : <em>sie sei müde</em> marque la distance entre ce que la patiente dit et ce que tu as observé, comme le « patiente dit être fatiguée » des transmissions. Pour les proches, la logique est proche de la règle française : en France aussi, le secret professionnel vaut envers la famille, et la personne de confiance n'a pas accès d'office au dossier. En Allemagne, la règle est nette : c'est le patient qui décide qui peut savoir quoi, et le fils ou l'épouse n'ont pas automatiquement droit aux informations."
       },
       {
         trap: "<em>er habe</em> n'est pas une faute pour <em>er hat</em> : c'est la forme du discours indirect, et ce n'est pas un subjonctif au sens français. <em>sie sei müde</em> se traduit « (elle dit qu')elle est fatiguée », à l'indicatif. <em>der Angehörige</em> est un adjectif employé comme nom et change de terminaison : <em>der Angehörige</em>, mais <em>ein Angehöriger</em>, et au pluriel <em>die Angehörigen</em>. <em>Auskunft geben</em>, c'est « donner des renseignements sur demande » ; ne le confonds pas avec <em>Aufklärung</em>, l'entretien d'information du médecin."
@@ -342,7 +342,7 @@ LINGUAI.addStrings("fr", {
     ],
     grammar: {
       title: "Rapporter avec le Konjunktiv I",
-      note: "Konjunktiv I = radical + <b>-e</b> : er <b>habe</b>, sie <b>fühle</b>. <b>sein</b> : sei, seien. S'il se confond avec l'indicatif, on prend le Konjunktiv II : sie <b>hätten</b>.",
+      note: "Konjunktiv I, 3e personne du singulier = radical + <b>-e</b> : er <b>habe</b>, sie <b>fühle</b>. <b>sein</b> : sei, seien. S'il se confond avec l'indicatif, on prend le Konjunktiv II : sie <b>hätten</b>.",
       table: {
         head: ["dit par le patient", "rapporté"],
         rows: [
@@ -422,7 +422,7 @@ LINGUAI.addStrings("fr", {
           "Der Patient im Nachbarbett hat das auch.",
           "Ich frage Ihren Vater, ob wir Sie informieren dürfen."
         ],
-        why: "On ne donne pas d'informations au téléphone, c'est le médecin qui annonce le diagnostic, et avant d'informer un proche on demande au patient. Les deux autres phrases révèlent des données qui ne concernent ni le proche ni toi."
+        why: "Dans ce service, on ne donne pas d'informations au téléphone, c'est le médecin qui annonce le diagnostic, et avant d'informer un proche on demande au patient. Les deux autres phrases révèlent des données qui ne concernent ni le proche ni toi."
       },
       {
         q: "Choisis le bon article défini pour chaque nom.",
@@ -479,13 +479,13 @@ LINGUAI.addStrings("fr", {
       },
       {
         h: "La validation",
-        p: "La <strong>Validation</strong> part d'une idée simple : les souvenirs se perdent, les émotions restent. Si Madame Lehmann veut rentrer chez elle parce que ses enfants sortent de l'école, la corriger (<em>Ihre Kinder sind doch erwachsen</em>) la met face à une perte et ne la calme pas. On nomme plutôt l'émotion (<em>Sie machen sich Sorgen um Ihre Kinder</em>) et on l'invite à raconter (<em>Erzählen Sie mir von Ihren Kindern</em>). Connaître sa <strong>Biografie</strong> aide à comprendre de quoi elle parle. Une chose est à distinguer : si une personne devient <strong>confuse tout à coup</strong>, ce n'est pas la démence que tu connais, et c'est un changement à signaler tout de suite au médecin."
+        p: "La <strong>Validation</strong> part d'une idée simple : les souvenirs se perdent, les émotions restent. Si Madame Lehmann veut rentrer chez elle parce que ses enfants sortent de l'école, la corriger (<em>Ihre Kinder sind doch erwachsen</em>) la met face à une perte et ne la calme pas. On nomme plutôt l'émotion (<em>Sie machen sich Sorgen um Ihre Kinder</em>) et on l'invite à raconter (<em>Erzählen Sie mir von Ihren Kindern</em>). Connaître sa <strong>Biografie</strong> aide à comprendre de quoi elle parle. Une chose est à distinguer : si une personne devient <strong>confuse tout à coup</strong>, ce n'est peut-être pas la démence que tu connais mais une cause nouvelle, et c'est un changement à signaler tout de suite au médecin."
       },
       {
         contrast: "En France aussi, on entend parfois « mamie », « ma puce » ou le tutoiement avec les personnes âgées en établissement, souvent dit avec affection. En Allemagne, ce ton sonne infantilisant : même avec une personne atteinte de démence, on dit <em>Sie</em> et <em>Frau Lehmann</em>, sauf si c'est elle qui demande autre chose. C'est pareil pour le « nous » des soins (« alors, on a bien mangé ? »), qu'en allemand on appelle souvent avec ironie le <em>Pflege-Wir</em> (<em>Haben wir heute schon gegessen?</em>) : on dit <em>Sie</em> quand c'est la personne qui agit. La syntaxe aide aussi : en allemand, la principale garde le verbe en deuxième position, alors que la subordonnée l'envoie à la fin, après tout le reste, et pour comprendre qui fait quoi il faut garder toute la phrase en tête. Le français, qui place le verbe tôt dans les deux cas, n'a pas ce problème. Des principales courtes enlèvent cet effort."
       },
       {
-        trap: "<em>Demenz</em> et <em>Vergesslichkeit</em> ne sont pas synonymes : les oublis arrivent à tout le monde, la démence est une maladie qui change la vie de tous les jours. Au patient et aux proches, on ne dit pas <em>Sie ist halt dement</em>, mais <em>Frau Lehmann lebt mit einer Demenz.</em> Et <em>verwirrt</em> décrit un état, pas la personne : une <em>plötzliche Verwirrtheit</em> peut avoir une nouvelle cause physique, et on la signale, on ne la considère pas comme allant de soi."
+        trap: "<em>Demenz</em> et <em>Vergesslichkeit</em> ne sont pas synonymes : les oublis arrivent à tout le monde, la démence est un syndrome, dû à différentes maladies, qui change la vie de tous les jours. Au patient et aux proches, on ne dit pas <em>Sie ist halt dement</em>, mais <em>Frau Lehmann lebt mit einer Demenz.</em> Et <em>verwirrt</em> décrit un état, pas la personne : une <em>plötzliche Verwirrtheit</em> peut avoir une nouvelle cause physique, et on la signale, on ne la considère pas comme allant de soi."
       },
       {
         tip: "Avant de parler, place-toi devant la personne, à hauteur de ses yeux, et attends qu'elle te regarde. Puis une phrase, une pause, la phrase suivante. Si elle ne répond pas, répète avec les mêmes mots : pour elle, une phrase reformulée est une nouvelle phrase à comprendre."

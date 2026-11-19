@@ -1,0 +1,38 @@
+{
+  "bundleHash": "41b92b82a96164b8ac32625b441c5aba8d0c02ffd97d5df04f8205bd45e274b3",
+  "findings": [
+    {
+      "kind": "Terminologia",
+      "msg": "«Vorsorgevollmacht» indica la procura preventiva, non la persona che la riceve. Sostituire «la persona que decide por el paciente» con «el poder otorgado a una persona para que actúe en nombre del paciente» e, se utile, introdurre «Bevollmächtigte» per la persona incaricata.",
+      "path": "merged.lessons[2].theory[3].trap"
+    },
+    {
+      "kind": "Spiegazione imprecisa",
+      "msg": "«Aufklärung» è il colloquio informativo preliminare, non l'equivalente del consenso informato stesso. Distinguere l'informazione fornita al paziente dal successivo «Einwilligung», cioè il consenso.",
+      "path": "merged.lessons[0].theory[3].trap"
+    },
+    {
+      "kind": "Consenso e contesto",
+      "msg": "Il consenso descritto riguarda la figlia presente, ma il dialogo invita anche la sorella al colloquio senza verificare che il padre autorizzi la sua presenza. Aggiungere tale verifica prima dell'invito.",
+      "path": "merged.lessons[2].dialogue.lines[7]"
+    },
+    {
+      "kind": "Traduzione",
+      "msg": "«Ich kann das nicht mehr» significa qui «Ya no puedo hacer esto» o «Ya no soy capaz de hacerlo», non necessariamente «Ya no puedo más». La traduzione attuale cambia la difficoltà relativa all'azione in un'espressione generale di esaurimento.",
+      "path": "merged.lessons[3].exercises[8].lines[4].tr"
+    },
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "La frase «El alemán no cambia de modo detrás de dass» è troppo assoluta: dopo «dass» può comparire anche il Konjunktiv, per esempio nel discorso indiretto. Precisare che negli esempi della lezione si usa l'indicativo.",
+      "path": "merged.lessons[0].theory[2].contrast"
+    },
+    {
+      "kind": "Spiegazione sociolinguistica",
+      "msg": "L'affermazione che in tedesco i diminutivi non siano usati per attenuare il tono in reparto è troppo categorica. Presentare le particelle come una risorsa frequente, senza escludere diminutivi o altre strategie di cortesia.",
+      "path": "merged.lessons[1].theory[2].contrast"
+    }
+  ],
+  "lang": "es",
+  "unit": "pfl-u07",
+  "verdict": "fail"
+}

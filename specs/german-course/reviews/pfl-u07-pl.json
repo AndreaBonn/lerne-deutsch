@@ -1,0 +1,43 @@
+{
+  "bundleHash": "6a6d7dd44f80ec0312df8dc2de4eafab2cbb4bcb2c3d1372c16d46240f475552",
+  "findings": [
+    {
+      "kind": "pronuncia",
+      "msg": "In «verstehe» la sequenza st appartiene a «steh» e si pronuncia [ʃt], ma in «bespricht» il gruppo sp si pronuncia [ʃp] all’inizio della base «sprech», non genericamente per la posizione indicata. Precisare la regola per i prefissi non accentati e le basi verbali.",
+      "path": "merged.lessons[0].exercises[10].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La formula «Konjunktiv I = rdzeń + -e» non descrive tutte le persone e omette le terminazioni personali. Specificare che «-e» caratterizza qui la terza persona singolare e presentare la regola completa con le eccezioni di «sein».",
+      "path": "merged.lessons[2].grammar.note"
+    },
+    {
+      "kind": "articolo",
+      "msg": "«Einverständnis» è neutro: scrivere «das Einverständnis» oppure eliminare l’articolo polacco «jest potrzebna» e riformulare la frase.",
+      "path": "merged.lessons[2].theory[0].p"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Il Konjunktiv I segnala il discorso riportato, ma non garantisce di per sé che il contenuto non sia stato verificato. Sostituire l’affermazione categorica con una spiegazione che distingua la fonte della dichiarazione dalla sua eventuale verifica.",
+      "path": "merged.lessons[2].theory[1].p"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Ich helfe Ihnen heute» significa «Dziś pani pomagam» o «Dziś pani pomogę». L’aggiunta «to ja» introduce un’enfasi contrastiva assente nell’originale; correggere anche la stessa traduzione nel dialogo dell’esercizio.",
+      "path": "merged.lessons[3].grammar.examples[0].tr"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In «Angst» la sequenza «ng» è seguita da una [k]: la pronuncia standard è [aŋkst], non semplicemente [ŋ] senza un’ulteriore occlusiva. Indicare l’intera sequenza [ŋk] e distinguere il suono [k] dalla lettera g.",
+      "path": "merged.test.exercises[9].why"
+    },
+    {
+      "kind": "accuratezza professionale",
+      "msg": "L’affermazione che per telefono non si forniscano informazioni è presentata come divieto generale, mentre il testo teorico parla correttamente di regole di molte strutture. Contestualizzare la risposta come politica della struttura e richiamare verifica dell’identità e consenso; allineare dialogo, esercizi e spiegazioni correlati.",
+      "path": "merged.lessons[2].dialogue.lines[7]"
+    }
+  ],
+  "lang": "pl",
+  "unit": "pfl-u07",
+  "verdict": "fail"
+}

@@ -1,0 +1,33 @@
+{
+  "bundleHash": "722b8f56ea89abbde787885f7b35078355ed46da96c66e5097f27dda4afabb81",
+  "findings": [
+    {
+      "kind": "Grammatica e spiegazione",
+      "msg": "La spiegazione identifica il Konjunktiv II con il condizionale francese in termini assoluti. Può anche esprimere irrealtà, desiderio o altre sfumature e non corrisponde sempre al condizionale. Limitare il confronto alle richieste di cortesia presentate nella lezione.",
+      "path": "merged.lessons[1].theory[2].contrast"
+    },
+    {
+      "kind": "Traduzione e registro",
+      "msg": "« Je suis juste à côté de vous, vous le voyez bien » aggiunge un richiamo potenzialmente brusco che non è necessario per rendere la particella ja in questo contesto rassicurante. Usare per esempio « Je suis juste à côté de vous » anche nelle altre occorrenze della stessa traduzione.",
+      "path": "merged.lessons[1].dialogue.lines[3].tr"
+    },
+    {
+      "kind": "Precisione della spiegazione",
+      "msg": "Il condizionale giornalistico e le formule introduttive non sono gli unici mezzi francesi per prendere distanza da un'affermazione riportata. Sostituire « Le seul outil français » con una formulazione non esclusiva, per esempio « Le français peut notamment utiliser le conditionnel journalistique ou une formule introductive ».",
+      "path": "merged.lessons[2].theory[2].contrast"
+    },
+    {
+      "kind": "Precisione clinica",
+      "msg": "La spiegazione presenta la demenza come una singola malattia. È più preciso descriverla come una sindrome dovuta a diverse malattie o lesioni cerebrali, distinguendola dalla normale tendenza a dimenticare.",
+      "path": "merged.lessons[3].theory[3].trap"
+    },
+    {
+      "kind": "Traduzione",
+      "msg": "« Vous m'avez bien expliqué » lascia il verbo senza complemento e suona incompleto in francese. Scrivere « Vous m'avez bien expliqué ce qui va se passer » oppure « Vos explications étaient claires ».",
+      "path": "merged.lessons[0].dialogue.lines[7].tr"
+    }
+  ],
+  "lang": "fr",
+  "unit": "pfl-u07",
+  "verdict": "fail"
+}

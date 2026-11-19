@@ -328,10 +328,10 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Il Konjunktiv I per riferire",
-        p: "Per riferire le parole di un altro il tedesco ha il <strong>Konjunktiv I</strong>: radice del verbo + <em>-e</em>. <em>Ich habe gut geschlafen</em> diventa <em>Er sagt, er <b>habe</b> gut geschlafen.</em> <em>Sein</em> è irregolare: <em>ich sei, er sei, wir seien, sie seien</em>. Si usa soprattutto alla terza persona singolare, perché lì si distingue dall'indicativo. Dove il Konjunktiv I coincide con l'indicativo (<em>sie haben</em>), si prende il Konjunktiv II: <em>Sie sagen, sie <b>hätten</b> Angst.</em> A voce molti usano semplicemente <em>dass</em> con l'indicativo: <em>Sie hat gesagt, dass sie gut geschlafen hat.</em> Nel rapporto di cura il Konjunktiv I è la forma tipica: <em>Patientin gibt an, sie <b>habe</b> keine Schmerzen.</em> Dice che è un'affermazione del paziente, non un fatto che hai verificato."
+        p: "Per riferire le parole di un altro il tedesco ha il <strong>Konjunktiv I</strong>; alla terza persona singolare è radice del verbo + <em>-e</em>. <em>Ich habe gut geschlafen</em> diventa <em>Er sagt, er <b>habe</b> gut geschlafen.</em> <em>Sein</em> è irregolare: <em>ich sei, er sei, wir seien, sie seien</em>. Si usa soprattutto alla terza persona singolare, perché lì si distingue dall'indicativo. Dove il Konjunktiv I coincide con l'indicativo (<em>sie haben</em>), si prende il Konjunktiv II: <em>Sie sagen, sie <b>hätten</b> Angst.</em> A voce molti usano semplicemente <em>dass</em> con l'indicativo: <em>Sie hat gesagt, dass sie gut geschlafen hat.</em> Nel rapporto di cura il Konjunktiv I è la forma tipica: <em>Patientin gibt an, sie <b>habe</b> keine Schmerzen.</em> Dice che è un'affermazione del paziente, non un fatto che hai verificato."
       },
       {
-        contrast: "In italiano il discorso indiretto si fa con «che» e il congiuntivo o l'indicativo: «dice che ha dormito bene», «dice che abbia dormito bene». Il tedesco ha una forma apposta, il Konjunktiv I, che a voce si sente poco ma nella documentazione è utile: <em>sie sei müde</em> tiene la distanza tra ciò che la paziente dice e ciò che tu hai osservato. Anche le abitudini con i familiari sono diverse. In Italia per molto tempo è stato normale informare prima la famiglia, a volte più del paziente; oggi anche la legge italiana mette al centro il paziente. In Germania la regola è netta: decide il paziente chi può sapere che cosa, e il figlio o la moglie non hanno automaticamente diritto alle informazioni."
+        contrast: "In italiano il discorso indiretto si fa con «che» e il congiuntivo o l'indicativo: «dice che ha dormito bene» o, per prendere le distanze, «sostiene che abbia dormito bene». Il tedesco ha una forma apposta, il Konjunktiv I, che a voce si sente poco ma nella documentazione è utile: <em>sie sei müde</em> tiene la distanza tra ciò che la paziente dice e ciò che tu hai osservato. Anche le abitudini con i familiari sono diverse. In Italia per molto tempo è stato normale informare prima la famiglia, a volte più del paziente; oggi anche la legge italiana mette al centro il paziente. In Germania la regola è netta: decide il paziente chi può sapere che cosa, e il figlio o la moglie non hanno automaticamente diritto alle informazioni."
       },
       {
         trap: "<em>sei</em> in tedesco non vuol dire «sei»: <em>sie sei müde</em> è «(dice che) è stanca», al Konjunktiv I. E <em>er habe</em> non è un errore per <em>er hat</em>: è la forma del discorso indiretto. <em>der Angehörige</em> è un aggettivo usato come nome e cambia desinenza: <em>der Angehörige</em>, ma <em>ein Angehöriger</em>, e al plurale <em>die Angehörigen</em>. <em>Auskunft geben</em> è «dare informazioni su richiesta»; non confonderlo con <em>Aufklärung</em>, il colloquio informativo del medico."
@@ -342,7 +342,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Riferire con il Konjunktiv I",
-      note: "Konjunktiv I = radice + <b>-e</b>: er <b>habe</b>, sie <b>fühle</b>. <b>sein</b>: sei, seien. Se coincide con l'indicativo, si usa il Konjunktiv II: sie <b>hätten</b>.",
+      note: "Konjunktiv I, 3ª persona singolare = radice + <b>-e</b>: er <b>habe</b>, sie <b>fühle</b>. <b>sein</b>: sei, seien. Se coincide con l'indicativo, si usa il Konjunktiv II: sie <b>hätten</b>.",
       table: {
         head: ["detto dal paziente", "riferito"],
         rows: [
@@ -422,7 +422,7 @@ LINGUAI.addStrings("it", {
           "Der Patient im Nachbarbett hat das auch.",
           "Ich frage Ihren Vater, ob wir Sie informieren dürfen."
         ],
-        why: "Non si danno informazioni al telefono, la diagnosi la comunica il medico, e prima di informare un familiare si chiede al paziente. Le altre due frasi rivelano dati che non spettano né al familiare né a te."
+        why: "In questa struttura non si danno informazioni al telefono, la diagnosi la comunica il medico, e prima di informare un familiare si chiede al paziente. Le altre due frasi rivelano dati che non spettano né al familiare né a te."
       },
       {
         q: "Scegli l'articolo determinativo giusto per ogni nome.",
@@ -479,13 +479,13 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "La validazione",
-        p: "La <strong>Validation</strong> parte da un'idea semplice: i ricordi si perdono, le emozioni restano. Se la signora Lehmann vuole tornare a casa perché i figli escono da scuola, correggerla (<em>Ihre Kinder sind doch erwachsen</em>) la mette davanti a una perdita e non la calma. Si dà invece un nome all'emozione (<em>Sie machen sich Sorgen um Ihre Kinder</em>) e si invita a raccontare (<em>Erzählen Sie mir von Ihren Kindern</em>). La conoscenza della sua <strong>Biografie</strong> aiuta a capire di che cosa parla. Una cosa va distinta: se una persona diventa <strong>confusa all'improvviso</strong>, non è la demenza che conosci, ed è un cambiamento da segnalare subito al medico."
+        p: "La <strong>Validation</strong> parte da un'idea semplice: i ricordi si perdono, le emozioni restano. Se la signora Lehmann vuole tornare a casa perché i figli escono da scuola, correggerla (<em>Ihre Kinder sind doch erwachsen</em>) la mette davanti a una perdita e non la calma. Si dà invece un nome all'emozione (<em>Sie machen sich Sorgen um Ihre Kinder</em>) e si invita a raccontare (<em>Erzählen Sie mir von Ihren Kindern</em>). La conoscenza della sua <strong>Biografie</strong> aiuta a capire di che cosa parla. Una cosa va distinta: se una persona diventa <strong>confusa all'improvviso</strong>, può non dipendere dalla demenza che conosci ma da una causa nuova, ed è un cambiamento da segnalare subito al medico."
       },
       {
         contrast: "In Italia capita di sentire «nonnina», «tesoro» o il tu con gli anziani in struttura, ed è spesso inteso come affetto. In Germania lo stesso tono suona infantile: anche con una persona con demenza si dice <em>Sie</em> e <em>Frau Lehmann</em>, a meno che sia lei a chiedere altro. Lo stesso vale per il «noi» delle cure (<em>Haben wir heute schon gegessen?</em>), che in tedesco si chiama spesso con ironia <em>Pflege-Wir</em>: si dice <em>Sie</em> quando lo fa la persona. Anche la sintassi aiuta: in tedesco la frase principale tiene il verbo al secondo posto, mentre la subordinata lo manda in fondo, dopo tutto il resto: per capire chi fa che cosa bisogna tenere a mente la frase intera. Frasi principali brevi tolgono questa fatica."
       },
       {
-        trap: "<em>Demenz</em> e <em>Vergesslichkeit</em> non sono sinonimi: la smemoratezza capita a tutti, la demenza è una malattia che cambia la vita di tutti i giorni. Al paziente e ai familiari non si dice <em>Sie ist halt dement</em>, ma <em>Frau Lehmann lebt mit einer Demenz.</em> E <em>verwirrt</em> descrive uno stato, non la persona: una <em>plötzliche Verwirrtheit</em> può avere una causa fisica nuova, e si riferisce, non si dà per scontata."
+        trap: "<em>Demenz</em> e <em>Vergesslichkeit</em> non sono sinonimi: la smemoratezza capita a tutti, la demenza è una sindrome, dovuta a diverse malattie, che cambia la vita di tutti i giorni. Al paziente e ai familiari non si dice <em>Sie ist halt dement</em>, ma <em>Frau Lehmann lebt mit einer Demenz.</em> E <em>verwirrt</em> descrive uno stato, non la persona: una <em>plötzliche Verwirrtheit</em> può avere una causa fisica nuova, e si riferisce, non si dà per scontata."
       },
       {
         tip: "Prima di parlare, mettiti davanti alla persona, all'altezza dei suoi occhi, e aspetta che ti guardi. Poi una frase, una pausa, la frase successiva. Se non risponde, ripeti con le stesse parole: una frase riformulata è, per lei, una frase nuova da capire."

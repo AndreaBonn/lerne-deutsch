@@ -1,0 +1,33 @@
+{
+  "bundleHash": "6ac476a452a3338b44540be620b675092489528dda831e0409e80f231aba5a0f",
+  "findings": [
+    {
+      "kind": "pronuncia",
+      "msg": "In «verstehe» la sequenza st non si pronuncia [ʃt]: la parola si pronuncia [fɛɐ̯ˈʃteːə], quindi è la s iniziale della radice steh- a formare [ʃt]. La spiegazione attribuisce erroneamente il suono alle lettere st in «verstehe», dove t è seguita da e: chiarire che si tratta della sequenza st all’inizio della radice.",
+      "path": "merged.lessons[0].exercises[10].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Il Konjunktiv I non si forma sempre aggiungendo semplicemente -e alla radice: le desinenze variano secondo la persona e sein è irregolare. Presentare habe e fühle come forme della terza persona singolare e precisare che il Konjunktiv II può sostituire forme coincidenti con l’indicativo.",
+      "path": "merged.lessons[2].grammar.note"
+    },
+    {
+      "kind": "italiano",
+      "msg": "«Dice che abbia dormito bene» non è un esempio idiomatico del discorso indiretto con il verbo dichiarativo affermativo «dice». Sostituirlo con «dice che ha dormito bene» e, se serve un confronto con il congiuntivo, usare un verbo come «ritiene che abbia dormito bene».",
+      "path": "merged.lessons[2].theory[2].contrast"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La regola «radice del verbo + -e» generalizza una desinenza valida per alcune persone; le forme del Konjunktiv I variano secondo la persona. Spiegare la formazione attraverso la radice e le relative desinenze, mantenendo habe come esempio di terza persona singolare.",
+      "path": "merged.lessons[2].theory[1].p"
+    },
+    {
+      "kind": "contenuto professionale",
+      "msg": "La spiegazione presenta il divieto di dare informazioni al telefono come una regola generale. Dipende invece da consenso, verifica dell’identità e procedure della struttura. Specificare che la frase descrive la procedura della struttura nell’esempio e che non si comunicano dati se identità o autorizzazione non sono verificate.",
+      "path": "merged.lessons[2].exercises[4].why"
+    }
+  ],
+  "lang": "it",
+  "unit": "pfl-u07",
+  "verdict": "fail"
+}

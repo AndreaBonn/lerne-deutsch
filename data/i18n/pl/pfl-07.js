@@ -324,11 +324,11 @@ LINGUAI.addStrings("pl", {
     theory: [
       {
         h: "Co wolno powiedzieć i komu",
-        p: "Pielęgniarki i pielęgniarzy także obowiązuje <strong>Schweigepflicht</strong>, tajemnica zawodowa, i obowiązuje ona również wobec bliskich. Zanim poinformujesz <strong>Angehöriger</strong>, potrzebna jest <strong>Einverständnis</strong> pacjenta: <em>Ihr Vater ist damit einverstanden, dass wir Sie informieren.</em> Nawet wtedy przekazujesz, jak się pacjent czuje i co mówi; diagnozę, wyniki badań i rokowanie przekazuje lekarz: <em>Das bespricht der Arzt mit Ihnen. Ich kann gern ein Arztgespräch für Sie vereinbaren.</em> Przez telefon nie widać, kto dzwoni, dlatego wiele placówek nie udziela w ten sposób informacji: <em>Am Telefon darf ich leider keine Auskunft geben.</em>"
+        p: "Pielęgniarki i pielęgniarzy także obowiązuje <strong>Schweigepflicht</strong>, tajemnica zawodowa, i obowiązuje ona również wobec bliskich. Zanim poinformujesz <strong>Angehöriger</strong>, potrzebna jest zgoda pacjenta, <strong>das Einverständnis</strong>: <em>Ihr Vater ist damit einverstanden, dass wir Sie informieren.</em> Nawet wtedy przekazujesz, jak się pacjent czuje i co mówi; diagnozę, wyniki badań i rokowanie przekazuje lekarz: <em>Das bespricht der Arzt mit Ihnen. Ich kann gern ein Arztgespräch für Sie vereinbaren.</em> Przez telefon nie widać, kto dzwoni, dlatego wiele placówek nie udziela w ten sposób informacji: <em>Am Telefon darf ich leider keine Auskunft geben.</em>"
       },
       {
         h: "Konjunktiv I do relacjonowania",
-        p: "Do przytaczania cudzych słów niemiecki ma <strong>Konjunktiv I</strong>: rdzeń czasownika + <em>-e</em>. <em>Ich habe gut geschlafen</em> zmienia się w <em>Er sagt, er <b>habe</b> gut geschlafen.</em> <em>Sein</em> jest nieregularne: <em>ich sei, er sei, wir seien, sie seien</em>. Używa się go głównie w trzeciej osobie liczby pojedynczej, bo tam różni się od trybu oznajmującego. Tam, gdzie Konjunktiv I brzmi tak samo jak tryb oznajmujący (<em>sie haben</em>), bierze się Konjunktiv II: <em>Sie sagen, sie <b>hätten</b> Angst.</em> W mowie wielu po prostu używa <em>dass</em> z trybem oznajmującym: <em>Sie hat gesagt, dass sie gut geschlafen hat.</em> W dokumentacji pielęgniarskiej Konjunktiv I to forma typowa: <em>Patientin gibt an, sie <b>habe</b> keine Schmerzen.</em> Mówi, że to wypowiedź pacjenta, a nie fakt, który sprawdziłaś."
+        p: "Do przytaczania cudzych słów niemiecki ma <strong>Konjunktiv I</strong>; w trzeciej osobie liczby pojedynczej to rdzeń czasownika + <em>-e</em>. <em>Ich habe gut geschlafen</em> zmienia się w <em>Er sagt, er <b>habe</b> gut geschlafen.</em> <em>Sein</em> jest nieregularne: <em>ich sei, er sei, wir seien, sie seien</em>. Używa się go głównie w trzeciej osobie liczby pojedynczej, bo tam różni się od trybu oznajmującego. Tam, gdzie Konjunktiv I brzmi tak samo jak tryb oznajmujący (<em>sie haben</em>), bierze się Konjunktiv II: <em>Sie sagen, sie <b>hätten</b> Angst.</em> W mowie wielu po prostu używa <em>dass</em> z trybem oznajmującym: <em>Sie hat gesagt, dass sie gut geschlafen hat.</em> W dokumentacji pielęgniarskiej Konjunktiv I to forma typowa: <em>Patientin gibt an, sie <b>habe</b> keine Schmerzen.</em> Mówi, że to wypowiedź pacjenta, a nie fakt, który sprawdziłaś."
       },
       {
         contrast: "W polskim mowa zależna nie ma osobnego trybu: «mówi, że dobrze spał», «powiedział, że dobrze spał», tryb oznajmujący i ten sam czas co w wypowiedzi. Trybu przypuszczającego z «by» używa się tylko po czasownikach woli i prośby («prosił, żeby przyszła»), nie do zwykłej relacji. Jeśli w polskim chcesz zaznaczyć dystans do cudzych słów, dokładasz słowa: «podobno», «według pacjentki», «pacjentka podaje, że». Niemiecki ma na to formę czasownika, Konjunktiv I, rzadką w mowie, ale przydatną w dokumentacji: <em>sie sei müde</em> oddziela to, co pacjentka mówi, od tego, co sama zaobserwowałaś, tak jak w polskiej dokumentacji «pacjentka zgłasza zmęczenie». Także zasady wobec bliskich są ci znane: polska tajemnica zawodowa pielęgniarki też obowiązuje wobec rodziny, a informacje dostaje osoba upoważniona przez pacjenta. W Niemczech zasada jest równie jasna: to pacjent decyduje, kto i co może wiedzieć, a syn czy żona nie mają automatycznie prawa do informacji."
@@ -342,7 +342,7 @@ LINGUAI.addStrings("pl", {
     ],
     grammar: {
       title: "Relacjonować w Konjunktiv I",
-      note: "Konjunktiv I = rdzeń + <b>-e</b>: er <b>habe</b>, sie <b>fühle</b>. <b>sein</b>: sei, seien. Jeśli brzmi jak tryb oznajmujący, bierze się Konjunktiv II: sie <b>hätten</b>.",
+      note: "Konjunktiv I, 3. osoba l. poj. = rdzeń + <b>-e</b>: er <b>habe</b>, sie <b>fühle</b>. <b>sein</b>: sei, seien. Jeśli brzmi jak tryb oznajmujący, bierze się Konjunktiv II: sie <b>hätten</b>.",
       table: {
         head: ["powiedział pacjent", "zrelacjonowane"],
         rows: [
@@ -422,7 +422,7 @@ LINGUAI.addStrings("pl", {
           "Der Patient im Nachbarbett hat das auch.",
           "Ich frage Ihren Vater, ob wir Sie informieren dürfen."
         ],
-        why: "Przez telefon nie udziela się informacji, diagnozę przekazuje lekarz, a przed poinformowaniem bliskiego pyta się pacjenta. Pozostałe dwa zdania ujawniają dane, które nie należą ani do bliskiego, ani do ciebie."
+        why: "W tej placówce nie udziela się informacji przez telefon, diagnozę przekazuje lekarz, a przed poinformowaniem bliskiego pyta się pacjenta. Pozostałe dwa zdania ujawniają dane, które nie należą ani do bliskiego, ani do ciebie."
       },
       {
         q: "Wybierz właściwy rodzajnik określony dla każdego rzeczownika.",
@@ -479,13 +479,13 @@ LINGUAI.addStrings("pl", {
       },
       {
         h: "Walidacja",
-        p: "<strong>Validation</strong> wychodzi z prostej myśli: wspomnienia giną, emocje zostają. Jeśli pani Lehmann chce iść do domu, bo dzieci wracają ze szkoły, poprawianie jej (<em>Ihre Kinder sind doch erwachsen</em>) stawia ją wobec straty i jej nie uspokaja. Zamiast tego nazywa się emocję (<em>Sie machen sich Sorgen um Ihre Kinder</em>) i zachęca do opowiadania (<em>Erzählen Sie mir von Ihren Kindern</em>). Znajomość jej <strong>Biografie</strong> pomaga zrozumieć, o czym mówi. Jedną rzecz trzeba odróżnić: jeśli ktoś <strong>nagle</strong> staje się splątany, to nie jest znana ci demencja, tylko zmiana, którą trzeba od razu zgłosić lekarzowi."
+        p: "<strong>Validation</strong> wychodzi z prostej myśli: wspomnienia giną, emocje zostają. Jeśli pani Lehmann chce iść do domu, bo dzieci wracają ze szkoły, poprawianie jej (<em>Ihre Kinder sind doch erwachsen</em>) stawia ją wobec straty i jej nie uspokaja. Zamiast tego nazywa się emocję (<em>Sie machen sich Sorgen um Ihre Kinder</em>) i zachęca do opowiadania (<em>Erzählen Sie mir von Ihren Kindern</em>). Znajomość jej <strong>Biografie</strong> pomaga zrozumieć, o czym mówi. Jedną rzecz trzeba odróżnić: jeśli ktoś <strong>nagle</strong> staje się splątany, może to nie być znana ci demencja, tylko nowa przyczyna; to zmiana, którą trzeba od razu zgłosić lekarzowi."
       },
       {
         contrast: "W Polsce w placówkach dla seniorów zdarza się słyszeć «babciu», «kochanieńka» czy mówienie na ty, często z czułością. W Niemczech taki ton brzmi infantylnie: także do osoby z demencją mówi się <em>Sie</em> i <em>Frau Lehmann</em>, chyba że ona sama poprosi o coś innego. To samo dotyczy pielęgniarskiego «my» («no to co, zjemy obiadek?»), które po niemiecku nazywa się z przekąsem <em>Pflege-Wir</em> (<em>Haben wir heute schon gegessen?</em>): mówi się <em>Sie</em>, kiedy to ta osoba coś robi. Pomaga też składnia. W polskim końcówki pokazują, kto co robi, i szyk może być luźny. W niemieckim zdanie główne trzyma czasownik na drugim miejscu, a zdanie podrzędne wysyła go na sam koniec, za wszystko inne: żeby zrozumieć, kto co robi, trzeba zapamiętać całe zdanie. Krótkie zdania główne zdejmują ten wysiłek."
       },
       {
-        trap: "<em>Demenz</em> i <em>Vergesslichkeit</em> to nie synonimy: zapominanie zdarza się każdemu, demencja to choroba, która zmienia codzienne życie. Do pacjenta i bliskich nie mówi się <em>Sie ist halt dement</em>, tylko <em>Frau Lehmann lebt mit einer Demenz.</em> A <em>verwirrt</em> opisuje stan, nie osobę: <em>plötzliche Verwirrtheit</em> może mieć nową przyczynę somatyczną, więc się ją zgłasza, a nie przyjmuje za oczywistość."
+        trap: "<em>Demenz</em> i <em>Vergesslichkeit</em> to nie synonimy: zapominanie zdarza się każdemu, demencja to zespół objawów wywołany różnymi chorobami, który zmienia codzienne życie. Do pacjenta i bliskich nie mówi się <em>Sie ist halt dement</em>, tylko <em>Frau Lehmann lebt mit einer Demenz.</em> A <em>verwirrt</em> opisuje stan, nie osobę: <em>plötzliche Verwirrtheit</em> może mieć nową przyczynę somatyczną, więc się ją zgłasza, a nie przyjmuje za oczywistość."
       },
       {
         tip: "Zanim zaczniesz mówić, stań przed osobą, na wysokości jej oczu, i poczekaj, aż na ciebie spojrzy. Potem jedno zdanie, pauza, następne zdanie. Jeśli nie odpowiada, powtórz tymi samymi słowami: zdanie powiedziane inaczej jest dla niej nowym zdaniem do zrozumienia."
@@ -504,7 +504,7 @@ LINGUAI.addStrings("pl", {
         ]
       },
       examples: [
-        { tr: "Jestem Anna. Dziś to ja pani pomagam.", note: "przedstawiać się za każdym razem, dwa krótkie zdania" },
+        { tr: "Jestem Anna. Dziś będę pani pomagać.", note: "przedstawiać się za każdym razem, dwa krótkie zdania" },
         { tr: "Teraz myje pani twarz.", note: "jetzt na pierwszym miejscu, czasownik waschen na drugim" },
         { tr: "Proszę, oto pani myjka.", note: "nazywać przedmiot, podając go" },
         { tr: "Martwi się pani o swoje dzieci.", note: "walidacja: nazwać emocję" },
@@ -595,7 +595,7 @@ LINGUAI.addStrings("pl", {
           { tr: "Muszę iść do domu. Dzieci na mnie czekają." },
           { tr: "Przyjmij jej niepokój, nie poprawiając jej.", answerTr: "Martwi się pani o swoje dzieci." },
           { tr: "A pani kim jest?" },
-          { tr: "Przedstaw się spokojnie.", answerTr: "Jestem Anna. Dziś to ja pani pomagam." },
+          { tr: "Przedstaw się spokojnie.", answerTr: "Jestem Anna. Dziś będę pani pomagać." },
           { tr: "Już nie dam rady." },
           { tr: "Dodaj jej otuchy i podaj myjkę.", answerTr: "Ależ da pani radę. Proszę, oto pani myjka." }
         ]

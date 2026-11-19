@@ -1,0 +1,53 @@
+{
+  "bundleHash": "7d1c73f9558260e96194639dbc5cd3c51477bc8e1197011b88198ebe5466cc22",
+  "findings": [
+    {
+      "kind": "pronuncia",
+      "msg": "In «verstehe» la sequenza st si pronuncia [ʃt], ma in «bespricht» sp segue il prefisso inseparabile be- e si pronuncia [ʃp]; in «bespricht» la ch è [ç]. Tuttavia «verstehe» contiene st all'inizio della radice, mentre la formulazione dovrebbe chiarire che il prefisso non cambia questa pronuncia.",
+      "path": "merged.lessons[0].exercises[10].why"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In «Arztgespräch» la ch dopo ä si pronuncia [x], non [ç]. Correggere la trascrizione.",
+      "path": "merged.lessons[2].exercises[10].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«In English you already switch registers» è pertinente, ma l'affermazione che in tedesco «dass» non possa essere omesso è falsa: una subordinata oggettiva può comparire senza congiunzione, per esempio «Ich sage dem Arzt, Sie haben noch Fragen». Precisare che, quando si usa «dass», il verbo finito va alla fine.",
+      "path": "merged.lessons[0].theory[2].contrast"
+    },
+    {
+      "kind": "confidenzialità",
+      "msg": "Il divieto assoluto di dare informazioni al telefono viene presentato come regola generale, ma dipende da consenso, verifica dell'identità e procedure della struttura. Formulare la frase come regola della struttura o del caso specifico e allineare dialogo, esercizi e obiettivo.",
+      "path": "merged.lessons[2].dialogue.lines[7].it"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Il Konjunktiv I non si forma sempre con la sola desinenza -e: le desinenze variano secondo persona e numero. Presentare «radice + -e» come regola per la terza persona singolare e mostrare le altre desinenze, mantenendo «sein» come eccezione.",
+      "path": "merged.lessons[2].grammar.note"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Il passaggio al Konjunktiv II quando il Konjunktiv I coincide con l'indicativo è una possibilità per distinguere il discorso indiretto, non un obbligo assoluto. Sostituire «you take» con una formulazione che indichi l'alternativa.",
+      "path": "merged.lessons[2].theory[1].p"
+    },
+    {
+      "kind": "accuratezza didattica",
+      "msg": "Un'improvvisa confusione può avere molte cause, inclusa una condizione acuta sovrapposta alla demenza. Sostituire l'affermazione categorica «that is not the dementia you know» con l'indicazione di segnalare subito il cambiamento per una valutazione.",
+      "path": "merged.lessons[3].theory[1].p"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "L'inglese non mantiene sempre soggetto e verbo adiacenti, e nelle subordinate tedesche il verbo finito va normalmente alla fine, mentre soggetto e altri costituenti possono precederlo. Riformulare il confronto senza attribuire la difficoltà a una regola inglese assoluta.",
+      "path": "merged.lessons[3].theory[2].contrast"
+    },
+    {
+      "kind": "istruzione non contestualizzata",
+      "msg": "Ripetere sempre esattamente le stesse parole se la persona non risponde è una prescrizione assoluta e può non essere adatto a tutte le situazioni. Suggerire di lasciare tempo per rispondere e, se necessario, ripetere o riformulare in base alla persona.",
+      "path": "merged.lessons[3].theory[4].tip"
+    }
+  ],
+  "lang": "en",
+  "unit": "pfl-u07",
+  "verdict": "fail"
+}
