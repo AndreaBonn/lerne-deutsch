@@ -110,6 +110,12 @@ const T_WRITING = "tests/unit/writing.test.mjs";
  * says.
  */
 const MUTACJE = [
+  { plik: "assets/js/cils.js", test: "tests/unit/cils.test.mjs", opis: "telc Sprechen: missing parts accepted",
+    z: 'if (order !== "1A,1B,2A,2B,3") return ["sprechen: parti"];', na: "" },
+  { plik: "assets/js/cils-run.js", test: "tests/unit/cils-run.test.mjs", opis: "telc Sprechen: preparation step skipped",
+    z: "return (m && m.preparazione) || 0;", na: "return 0;" },
+  { plik: "assets/js/cils-run.js", test: "tests/unit/cils-run.test.mjs", opis: "telc Sprechen: 2A choice ignored",
+    z: "var topic = part.scelta[scelta || 0];", na: "var topic = part.scelta[0];" },
   { plik: "assets/js/cils-run.js", test: "tests/unit/cils-run.test.mjs", opis: "writing choice index ignored",
     z: "task.scelta[(choices || [])[index] || 0]", na: "task.scelta[0]" },
   { plik: HTML, test: T_HTML, opis: "writing form cells unescaped",

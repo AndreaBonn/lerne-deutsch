@@ -499,7 +499,7 @@ LINGUAI.addUI("it", {
   "cils.prepSheet2": "Foglio della parte 2: due temi, ne scegli uno",
   "cils.prepSheet3": "Foglio della parte 3: discussione",
   "cils.prepNotes": "I tuoi appunti",
-  "cils.prepNotesHint": "Gli appunti restano solo su questo schermo, non entrano nel resoconto.",
+  "cils.prepNotesHint": "Gli appunti restano solo in questo tentativo, non entrano nel resoconto.",
   "cils.prepStart": "Inizia la prova orale",
   "cils.partN": "Parte {id}",
   "cils.imageText": "Immagine, descritta a parole",

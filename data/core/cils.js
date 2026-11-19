@@ -31,6 +31,11 @@
      righe:[[campo,valore], ...]}, richiede:[], parole:{min,max}}, ...]};
      exactly two choices, never scored.
    - sprechen: {t, consegna, punti:[]}, never scored.
+   - telc sprechen: three tasks (Teil 1-3), each {t:"sprechen", parti:[...]}; the
+     parts in order 1A {consegna, bild:{alt, beschreibung}} (the picture as text),
+     1B {fragen:[]}, 2A {scelta:[{thema, stichworte:[]}, {...}]} (exactly two
+     topics), 2B {fragen:[]}, 3 {thema, aussagen:[]}. Preparation minutes come from
+     the format (`preparazione`); never scored.
    ============================================================ */
 window.CILS_FORMATO = {
   official: false,

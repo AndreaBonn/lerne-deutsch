@@ -556,7 +556,7 @@ LINGUAI.addUI("en", {
   "cils.prepSheet2": "Part 2 sheet: two topics, you choose one",
   "cils.prepSheet3": "Part 3 sheet: discussion",
   "cils.prepNotes": "Your notes",
-  "cils.prepNotesHint": "The notes stay on this screen only and do not enter the report.",
+  "cils.prepNotesHint": "The notes stay only in this attempt and do not enter the report.",
   "cils.prepStart": "Start the oral part",
   "cils.partN": "Part {id}",
   "cils.imageText": "Picture, described in words",

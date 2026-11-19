@@ -92,6 +92,45 @@
     return problems;
   }
 
+  /** The oral parts of a section (telc: 1A, 1B, 2A, 2B, 3), flattened in order. */
+  function parti(section) {
+    return ((section && section.prove) || []).reduce(function (all, task) {
+      return all.concat(Array.isArray(task.parti) ? task.parti : []);
+    }, []);
+  }
+
+  function texts(list) {
+    return Array.isArray(list) && list.length > 0 && list.every(function (x) {
+      return typeof x === "string" && x.trim() !== "";
+    });
+  }
+
+  var PART_RULES = {
+    "1A": function (p) {
+      return !!p.bild && typeof p.bild.alt === "string" && typeof p.bild.beschreibung === "string" &&
+        typeof p.consegna === "string";
+    },
+    "1B": function (p) { return texts(p.fragen); },
+    "2A": function (p) {
+      return Array.isArray(p.scelta) && p.scelta.length === 2 && p.scelta.every(function (topic) {
+        return !!topic && typeof topic.thema === "string" && texts(topic.stichworte);
+      });
+    },
+    "2B": function (p) { return texts(p.fragen); },
+    "3": function (p) { return typeof p.thema === "string" && texts(p.aussagen); }
+  };
+
+  /* telc Sprechen: exactly 1A, 1B, 2A, 2B, 3, each with what the examiner
+     hands over. Without two topics in 2A there is no choice to make. */
+  function sprechenProblems(section) {
+    var list = parti(section);
+    var order = list.map(function (p) { return p.id; }).join(",");
+    if (order !== "1A,1B,2A,2B,3") return ["sprechen: parti"];
+    return list.filter(function (p) { return !PART_RULES[p.id](p); }).map(function (p) {
+      return "sprechen: " + p.id;
+    });
+  }
+
   function conforme(simulation) {
     var problems = [];
     var sections = (simulation && simulation.sezioni) || [];
@@ -104,6 +143,9 @@
       if (!section) { problems.push("missing: " + descriptor.id); return; }
       if (sections[index] !== section) problems.push("order: " + descriptor.id);
       problems = problems.concat(sectionProblems(section, descriptor));
+      if (simulation.formato === "telc-pflege" && descriptor.id === "orale") {
+        problems = problems.concat(sprechenProblems(section));
+      }
       if (simulation.formato === "telc-pflege" && descriptor.id === "scritta") {
         (section.prove || []).forEach(function (task, index) {
           if (!Array.isArray(task.scelta) || task.scelta.length !== 2 || task.scelta.some(function (option) {
@@ -268,6 +310,7 @@
 
   Cils.formato = formato;
   Cils.conforme = conforme;
+  Cils.parti = parti;
   Cils.sim = sim;
   Cils.sezione = sezione;
   Cils.punteggioProva = punteggioProva;

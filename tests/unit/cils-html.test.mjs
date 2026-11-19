@@ -716,3 +716,59 @@ test("final report shows the title of the chosen writing option, escaped", () =>
   assert.ok(!out.includes("<Aufnahmebericht>"));
   assert.ok(!html().scritta({ traccia: { parole: { min: 1, max: 9 }, richiede: [] }, testo: "x" }).includes("cils-titolo"));
 });
+
+/* ---------------- telc Sprechen: the preparation and the five parts ---------------- */
+
+const SPRECHEN = {
+  id: "orale", minuti: 16,
+  prove: [
+    { t: "sprechen", parti: [
+      { id: "1A", consegna: "Erzählen Sie von Ihrem Beruf.", bild: { alt: "Pflegerin am Bett", beschreibung: "Eine Pflegerin misst den Blutdruck." } },
+      { id: "1B", fragen: ["Wie lange arbeiten Sie schon?"] }] },
+    { t: "sprechen", parti: [
+      { id: "2A", scelta: [{ thema: "Schichtarbeit", stichworte: ["Familie", "Schlaf"] }, { thema: "Hygiene", stichworte: ["Handschuhe"] }] },
+      { id: "2B", fragen: ["Und bei Ihnen?"] }] },
+    { t: "sprechen", parti: [{ id: "3", thema: "Nachtdienst", aussagen: ["Nachtdienst ist zu hart.", "Man verdient mehr."] }] }
+  ]
+};
+
+describe("telc Sprechen markup", () => {
+  test("the preparation shows the Teil 2 topics with their keywords and the Teil 3 statements", () => {
+    const out = html().preparazione(SPRECHEN, 20, "");
+    for (const w of ["Schichtarbeit", "Familie", "Schlaf", "Hygiene", "Handschuhe", "Nachtdienst", "Nachtdienst ist zu hart.", "Man verdient mehr."]) {
+      assert.ok(out.includes(w), w);
+    }
+    assert.ok(!out.includes("Pflegerin"), "Teil 1 has no sheet to prepare");
+    assert.ok(out.includes("js-notes"), "a field for the student's notes");
+    assert.equal(ile(out, "js-rec"), 0, "nothing is recorded during the preparation");
+  });
+
+  test("the preparation keeps notes the student already wrote", () => {
+    assert.ok(html().preparazione(SPRECHEN, 20, "meine <b>Notiz</b>").includes("meine &lt;b&gt;Notiz&lt;/b&gt;"));
+  });
+
+  test("the oral body lists the five parts, the 2A topics as radios with the first selected", () => {
+    const out = html().corpoOrale(SPRECHEN, "", "");
+    for (const id of ["1A", "1B", "2A", "2B", "3"]) assert.ok(out.includes('data-part="' + id + '"'), id);
+    assert.equal(ile(out, 'name="arg2a"'), 2);
+    assert.match(out, /name="arg2a" value="0" checked/);
+    assert.ok(out.includes("Eine Pflegerin misst den Blutdruck."), "the picture as text");
+    assert.ok(out.includes("Wie lange arbeiten Sie schon?"));
+    assert.ok(out.includes("Nachtdienst ist zu hart."));
+    assert.equal(ile(out, 'name="arg"'), 0, "no legacy topic radios");
+    assert.ok(out.includes("cils.oralNotScored"), "still marked as not scored");
+  });
+
+  test("the oral body shows the preparation notes read-only, and no record button without a microphone", () => {
+    const out = html().corpoOrale(SPRECHEN, "rec.errNoMic", "meine Notiz");
+    assert.ok(out.includes("meine Notiz"));
+    assert.equal(ile(out, "<textarea"), 0, "notes are not editable during the oral part");
+    assert.equal(ile(out, "js-rec"), 0);
+    assert.ok(html().corpoOrale(SPRECHEN, "", "").includes("js-rec"), "with a microphone the button is there");
+  });
+
+  test("an empty notes block is not drawn", () => {
+    assert.ok(!html().corpoOrale(SPRECHEN, "", "").includes("js-notes-ro"));
+    assert.ok(html().corpoOrale(SPRECHEN, "", "x").includes("js-notes-ro"));
+  });
+});

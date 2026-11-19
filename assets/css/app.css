@@ -1436,6 +1436,10 @@ mark{background:var(--oro);color:var(--on-oro);border-radius:3px;padding:0 2px;}
 .cils-opts label{display:inline-flex;gap:6px;align-items:baseline;cursor:pointer;min-height:32px;}
 .cils-tracce{display:flex;flex-direction:column;gap:10px;margin-bottom:14px;}
 .cils-traccia{display:flex;gap:8px;align-items:flex-start;line-height:1.5;cursor:pointer;}
+.cils-parte{margin:16px 0;padding-top:12px;border-top:1px solid var(--line);}
+.cils-parte fieldset{border:0;padding:0;margin:0;}
+.cils-bild{margin:8px 0;padding:12px 14px;border:1px dashed var(--line);border-radius:8px;}
+.cils-bild figcaption{line-height:1.5;}
 .cils-ta{width:100%;min-height:220px;font-family:inherit;line-height:1.6;resize:vertical;}
 .cils-count{font-size:.88rem;color:var(--ink-soft);margin:8px 0 0;}
 .cils-list{margin:0 0 14px;padding-left:22px;}

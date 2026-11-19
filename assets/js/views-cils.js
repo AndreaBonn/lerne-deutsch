@@ -156,6 +156,8 @@
     if (!sez) return poEgzaminie();
     if (sez.id === "ascolto" || sez.id === "lettura") return sezioneChiusa(sez);
     if (sez.id === "scritta") return sezioneScritta(sez);
+    var preparazione = run.preparazione();
+    if (preparazione) return sezionePreparazione(sez, preparazione);
     return sezioneOrale(sez);
   }
 
@@ -282,22 +284,51 @@
 
   /* ---------------- Oral production (not graded) ---------------- */
 
+  /**
+   * telc: the preparation comes BEFORE the oral part and has its own clock.
+   * Leaving early is allowed (the same button), and when the time runs out
+   * the oral part starts by itself: a preparation that waited for a click
+   * would never end for a student who walked away.
+   */
+  function sezionePreparazione(sez, minuti) {
+    set(H.barra(run.krok, run.ile) +
+      pageHead(kicker() + " · " + esc(run.dane.sim.titoloIt), t("cils.prepTitle", { n: minuti }), "") +
+      H.preparazione(sez, minuti, run.appunti()) + H.coda("cils.prepStart"));
+    function concludi(scaduta) {
+      run.finePreparazione(el().querySelector(".js-notes").value);
+      entraInOrale();
+      if (!scaduta) return;
+      /* The redraw drops both the focus and the time-up notice the timer wrote
+         into the old page: put them back on the new one. */
+      var h1 = el().querySelector("h1");
+      if (h1) { h1.setAttribute("tabindex", "-1"); h1.focus(); }
+      var voce = el().querySelector(".js-clock-live");
+      if (voce) voce.textContent = t("cils.timeUp");
+    }
+    razTylko(el().querySelector(".js-next"), function () { concludi(false); });
+    avviaTimer(minuti * 60, function () { concludi(true); });
+  }
+
+  /* Redraws the same step: the preparation is done, so it now draws the oral part. */
+  function entraInOrale() { fermaTimer(); rysujSezione(); }
+
   function sezioneOrale(sez) {
     var powod = global.Recorder ? Recorder.powodBraku() : "rec.errNoRecorder";
     var scelto = 0;
+    var conParti = global.Cils.parti(sez).length > 0;
 
-    set(intestazione(sez) + H.corpoOrale(sez, powod) + H.coda("cils.finish"));
+    set(intestazione(sez) + H.corpoOrale(sez, powod, run.appunti()) + H.coda("cils.finish"));
 
     el().querySelectorAll('input[name="arg"]').forEach(function (r) {
       r.addEventListener("change", function () { scelto = Number(r.value); });
     });
     if (!powod) podepnijNagranie();
     function oralPrompt() {
-      if (!sez.prove || !sez.prove.length) return (sez.argomenti || [])[scelto];
-      return {
-        it: sez.prove.map(function (task) { return [task.consegna].concat(task.punti || []).join(" "); }).join(" "),
-        richiede: sez.prove.reduce(function (requirements, task) { return requirements.concat(task.richiede || []); }, [])
-      };
+      if (conParti) {
+        var picked = el().querySelector('input[name="arg2a"]:checked');
+        return CilsRun.promptOrale(sez, picked ? Number(picked.value) : 0);
+      }
+      return CilsRun.promptOrale(sez, scelto);
     }
 
     razTylko(el().querySelector(".js-next"), function () {

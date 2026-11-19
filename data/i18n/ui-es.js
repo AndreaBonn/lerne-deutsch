@@ -568,7 +568,7 @@ LINGUAI.addUI("es", {
   "cils.prepSheet2": "Hoja de la parte 2: dos temas, eliges uno",
   "cils.prepSheet3": "Hoja de la parte 3: debate",
   "cils.prepNotes": "Tus apuntes",
-  "cils.prepNotesHint": "Los apuntes se quedan solo en esta pantalla y no entran en el informe.",
+  "cils.prepNotesHint": "Los apuntes se quedan solo en este intento y no entran en el informe.",
   "cils.prepStart": "Empezar la prueba oral",
   "cils.partN": "Parte {id}",
   "cils.imageText": "Imagen, descrita con palabras",

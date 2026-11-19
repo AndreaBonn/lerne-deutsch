@@ -567,7 +567,7 @@ LINGUAI.addUI("pl", {
   "cils.prepSheet2": "Arkusz części 2: dwa tematy, wybierasz jeden",
   "cils.prepSheet3": "Arkusz części 3: dyskusja",
   "cils.prepNotes": "Twoje notatki",
-  "cils.prepNotesHint": "Notatki zostają tylko na tym ekranie i nie trafiają do raportu.",
+  "cils.prepNotesHint": "Notatki zostają tylko w tym podejściu i nie trafiają do raportu.",
   "cils.prepStart": "Zacznij część ustną",
   "cils.partN": "Część {id}",
   "cils.imageText": "Obraz, opisany słowami",

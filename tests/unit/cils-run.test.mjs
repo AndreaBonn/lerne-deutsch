@@ -467,3 +467,62 @@ test("writing records the selected choice and analyses its requirements", () => 
   assert.equal(check.dentroLimite, true);
   assert.equal(check.elementi[0].voce.etichetta, "Name");
 });
+
+/* ---------------- telc Sprechen: preparation and the 2A choice ---------------- */
+
+function simSprechen(withParts = true) {
+  const sim = simTelc();
+  const topic = n => ({ thema: "Thema " + n, stichworte: ["Wort " + n] });
+  sim.sezioni[4].prove = withParts ? [
+    { t: "sprechen", parti: [{ id: "1A", consegna: "Erzählen Sie.", bild: { alt: "A", beschreibung: "B" } }, { id: "1B", fragen: ["Frage 1B"] }] },
+    { t: "sprechen", parti: [{ id: "2A", scelta: [topic(1), topic(2)] }, { id: "2B", fragen: ["Frage 2B"] }] },
+    { t: "sprechen", parti: [{ id: "3", thema: "Nachtdienst", aussagen: ["Aussage"] }] }
+  ] : [];
+  return sim;
+}
+
+function allaOrale(run) { while (run.sekcja() && run.sekcja().id !== "orale") run.dalej(); }
+
+describe("telc Sprechen run", () => {
+  test("the oral part asks for the declared 20 minutes of preparation before it, once", () => {
+    const run = silnik().sandbox.CilsRun.create(simSprechen());
+    assert.equal(run.preparazione(), 0, "not before reaching Sprechen");
+    allaOrale(run);
+    assert.equal(run.preparazione(), 20);
+    run.finePreparazione("meine Notizen");
+    assert.equal(run.preparazione(), 0, "the step is not shown twice");
+    assert.equal(run.appunti(), "meine Notizen");
+  });
+
+  test("no parts, no preparation: a simulation without the telc sheets draws as before", () => {
+    const run = silnik().sandbox.CilsRun.create(simSprechen(false));
+    allaOrale(run);
+    assert.equal(run.preparazione(), 0);
+  });
+
+  test("the prompt carries the 2A topic the student picked, never the first by default", () => {
+    const box = silnik();
+    const sez = simSprechen().sezioni[4];
+    const second = box.sandbox.CilsRun.promptOrale(sez, 1);
+    assert.match(second.it, /Thema 2/);
+    assert.ok(!/Thema 1/.test(second.it), second.it);
+    assert.match(box.sandbox.CilsRun.promptOrale(sez, 0).it, /Thema 1/);
+    assert.match(second.it, /Nachtdienst/, "the Teil 3 topic is part of what was spoken about");
+    assert.equal(second.richiede.length, 0, "no requirements to detect: nothing is scored");
+  });
+
+  test("the legacy oral section (argomenti) still picks by index", () => {
+    const box = silnik();
+    const sez = { prove: [], argomenti: [{ it: "uno" }, { it: "zwei" }] };
+    assert.equal(box.sandbox.CilsRun.promptOrale(sez, 1).it, "zwei");
+  });
+
+  test("the oral part never enters the result: the band is the receptive total", () => {
+    const run = silnik().sandbox.CilsRun.create(simSprechen());
+    allaOrale(run);
+    run.zapiszOrale(silnik().sandbox.CilsRun.promptOrale(simSprechen().sezioni[4], 0));
+    const e = run.esito();
+    assert.equal(e.verdetto, undefined);
+    assert.equal(e.abilita, undefined);
+  });
+});

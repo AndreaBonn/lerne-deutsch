@@ -329,7 +329,7 @@ test.describe("telc Pflege simulation", () => {
     await iniettaTelc(page, 60, true);
     await page.locator('.js-start[data-id="telc-fix"]').click();
     await page.waitForSelector(".cils-clock");
-    for (let i = 0; i < 3; i++) await page.locator(".js-next").click();
+    for (let i = 0; i < 2; i++) await page.locator(".js-next").click();
     await page.fill(".js-text", "eins zwei drei");
     await expect(page.locator(".js-count")).toContainText("3");
     await expect(page.locator(".js-count")).toContainText("4");
@@ -338,6 +338,7 @@ test.describe("telc Pflege simulation", () => {
     await expect(page.locator(".js-count")).toContainText("9");
     await expect(page.locator('.js-writing-option[data-choice="1"]')).toBeVisible();
     await expect(page.locator('.js-writing-option[data-choice="0"]')).toBeHidden();
+    await page.locator(".js-next").click();
     await page.locator(".js-next").click();
     await page.locator(".js-next").click();
     await expect(page.locator(".cils-titolo")).toHaveText("Biografiebericht");
@@ -352,5 +353,84 @@ test.describe("telc Pflege simulation", () => {
       [...document.querySelectorAll(".js-body input")].every(i => i.disabled));
     expect(tutti).toBe(true);
     await expect(page.locator(".js-body").nth(1)).toHaveAttribute("aria-disabled", "true");
+  });
+});
+
+test.describe("telc Sprechen with preparation", () => {
+  async function conParti(page, minutiPrep) {
+    await iniettaTelc(page, 60, true);
+    await page.evaluate(prep => {
+      const sim = window.CILS.find(x => x.id === "telc-fix");
+      const topic = (n, k) => ({ thema: n, stichworte: k });
+      const orale = sim.sezioni.find(x => x.id === "orale");
+      orale.argomenti = undefined;
+      orale.prove = [
+        { t: "sprechen", parti: [
+          { id: "1A", consegna: "Erzählen Sie von Ihrem Beruf.", bild: { alt: "Pflegerin am Bett", beschreibung: "Eine Pflegerin misst den Blutdruck." } },
+          { id: "1B", fragen: ["Wie lange arbeiten Sie schon?"] }] },
+        { t: "sprechen", parti: [
+          { id: "2A", scelta: [topic("Schichtarbeit", ["Familie", "Schlaf"]), topic("Hygiene", ["Handschuhe"])] },
+          { id: "2B", fragen: ["Und bei Ihnen?"] }] },
+        { t: "sprechen", parti: [{ id: "3", thema: "Nachtdienst", aussagen: ["Nachtdienst ist zu hart."] }] }
+      ];
+      if (prep) sim.formato = "telc-pflege";
+      window.EXAM_FORMATS["telc-pflege"].moduli.find(m => m.id === "orale").preparazione = 20;
+    }, minutiPrep);
+    await page.locator('.js-start[data-id="telc-fix"]').click();
+    await page.waitForSelector(".cils-clock");
+    await page.locator(".js-next").click();
+    await page.locator(".js-next").click();
+    await page.fill(".js-text", "eins zwei drei");
+    await page.locator(".js-next").click();
+  }
+
+  test("the preparation shows the Teil 2 and Teil 3 sheets, then the five parts follow; no oral score in the report", async ({ page }) => {
+    await conParti(page, true);
+    await expect(page.locator(".cils-clock")).toHaveCount(1);
+    await expect(page.locator(".js-notes")).toBeVisible();
+    for (const w of ["Schichtarbeit", "Schlaf", "Hygiene", "Handschuhe", "Nachtdienst", "Nachtdienst ist zu hart."]) {
+      await expect(page.locator(".js-body").getByText(w).first()).toBeVisible();
+    }
+    await expect(page.getByText("Pflegerin")).toHaveCount(0);
+    await expect(page.locator(".js-rec")).toHaveCount(0);
+    await page.fill(".js-notes", "Schlaf und Familie");
+    await page.locator(".js-next").click();
+
+    for (const id of ["1A", "1B", "2A", "2B", "3"]) await expect(page.locator('[data-part="' + id + '"]')).toBeVisible();
+    await expect(page.getByText("Eine Pflegerin misst den Blutdruck.")).toBeVisible();
+    await expect(page.locator(".js-notes-ro")).toContainText("Schlaf und Familie");
+    await page.locator('input[name="arg2a"][value="1"]').check();
+    await page.locator(".js-next").click();
+    await page.locator(".js-next").click();
+
+    await expect(page.locator(".cils-band")).toBeVisible();
+    await expect(page.locator(".card", { hasText: "Sprechen" }).last()).toContainText("Hygiene");
+    await expect(page.locator(".card", { hasText: "Sprechen" }).last()).not.toContainText("Schichtarbeit");
+    const corpo = await page.locator("main, body").first().innerText();
+    expect(corpo).not.toMatch(/bestanden|superato|passed|promosso/i);
+    expect(corpo).not.toMatch(/Sprechen[^\n]*\d+\s*(%|\/\s*\d+)/);
+  });
+
+  test("when the preparation time runs out the oral part gets the focus on its h1 and the time-up notice", async ({ page }) => {
+    await conParti(page, true);
+    /* The preparation is already drawn with 20 minutes: restart the run with a 3 second one. */
+    await page.evaluate(() => {
+      window.EXAM_FORMATS["telc-pflege"].moduli.find(m => m.id === "orale").preparazione = 0.05;
+      Views.esame({ id: "telc-fix" });
+    });
+    for (let i = 0; i < 2; i++) await page.locator(".js-next").click();
+    await page.fill(".js-text", "eins");
+    await page.locator(".js-next").click();
+    await page.waitForSelector('[data-part="2A"]', { timeout: 15000 });
+    await expect(page.locator("h1")).toBeFocused();
+    await expect(page.locator(".js-clock-live")).toHaveText(await page.evaluate(() => I18n.t("cils.timeUp")));
+  });
+
+  test("the preparation can be skipped with no notes", async ({ page }) => {
+    await conParti(page, true);
+    await page.evaluate(() => { document.querySelector(".js-clock").textContent = "20:00"; });
+    await page.locator(".js-next").click();
+    await expect(page.locator('[data-part="2A"]')).toBeVisible();
+    await expect(page.locator(".js-notes-ro")).toHaveCount(0);
   });
 });

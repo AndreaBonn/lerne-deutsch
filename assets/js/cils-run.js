@@ -28,6 +28,32 @@
      ceiling the history would be the only container growing without end. */
   var MAX_HISTORII = 50;
 
+  /**
+   * What the student was asked to speak about, in the shape `zapiszOrale`
+   * keeps and the report reads (`it` + `richiede`).
+   *
+   * @param {object} sez    the oral section
+   * @param {number} scelta the radio chosen: the 2A topic of a telc section
+   *   with parts, the topic of a legacy section otherwise
+   */
+  function promptOrale(sez, scelta) {
+    var parts = global.Cils.parti(sez);
+    if (parts.length) {
+      return { it: parts.map(function (part) {
+        if (part.scelta) {
+          var topic = part.scelta[scelta || 0];
+          return part.id + ": " + topic.thema;
+        }
+        return part.id + ": " + (part.thema || part.consegna || (part.fragen || []).join(" "));
+      }).join(" "), richiede: [] };
+    }
+    if (!sez.prove || !sez.prove.length) return (sez.argomenti || [])[scelta];
+    return {
+      it: sez.prove.map(function (task) { return [task.consegna].concat(task.punti || []).join(" "); }).join(" "),
+      richiede: sez.prove.reduce(function (requirements, task) { return requirements.concat(task.richiede || []); }, [])
+    };
+  }
+
   function create(s) {
     /* A STEP is a group of sections under one clock. For Goethe every group
        has one section; in the telc Pflege format Sprachbausteine declares
@@ -50,7 +76,9 @@
       punti: {},        // section id -> points
       szczegoly: {},    // section id -> the full tally from Cils.punteggioSezione
       scritta: null,
-      orale: null
+      orale: null,
+      preparata: false, // the preparation before Sprechen has been through
+      appunti: ""       // the student's notes from it, kept in memory only
     };
 
     function sekcja() {
@@ -92,6 +120,25 @@
 
     function dalej() { run.i++; return sekcja(); }
 
+    /**
+     * The minutes of preparation owed BEFORE the current section, 0 when
+     * none. Only telc Sprechen has them, and only when the data carries the
+     * parts whose sheets are handed over: an oral section without parts has
+     * nothing to prepare.
+     */
+    function preparazione() {
+      var sez = sekcja();
+      if (!sez || sez.id !== "orale" || run.preparata) return 0;
+      if (!global.Cils.parti(sez).length) return 0;
+      var m = format.moduli.filter(function (x) { return x.id === sez.id; })[0];
+      return (m && m.preparazione) || 0;
+    }
+
+    function finePreparazione(appunti) {
+      run.preparata = true;
+      run.appunti = String(appunti == null ? "" : appunti);
+    }
+
     return {
       dane: run,
       sekcja: sekcja,
@@ -101,6 +148,9 @@
       zamknij: zamknij,
       scadla: scadla,
       dalej: dalej,
+      preparazione: preparazione,
+      finePreparazione: finePreparazione,
+      appunti: function () { return run.appunti; },
       /** A section's answers - for inspection in tests and for scoring. */
       odpowiedzi: function (id) { return run.risposte[id]; },
       czyScadla: function (id) { return !!run.scaduta[id]; },
@@ -185,6 +235,7 @@
 
   global.CilsRun = {
     create: create,
+    promptOrale: promptOrale,
     zapisz: zapisz,
     wpis: wpis,
     get ORDINE() { return global.Cils.ABILITA; },

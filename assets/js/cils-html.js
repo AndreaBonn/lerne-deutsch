@@ -224,14 +224,72 @@
 
   /* ═══════════════════ Oral production (not graded) ═══════════════════ */
 
+  /* ---------------- telc Sprechen: preparation and parts ---------------- */
+
+  function ul(list) { return "<ul>" + list.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>"; }
+
+  function topicSheet(topic) {
+    return "<p><b>" + esc(topic.thema) + "</b></p><p class=\"cils-hint\">" + esc(t("cils.keywords")) + "</p>" + ul(topic.stichworte);
+  }
+
+  function partOf(sez, id) {
+    return global.Cils.parti(sez).filter(function (p) { return p.id === id; })[0];
+  }
+
+  /**
+   * The preparation before the oral part: the sheets of Teil 2 and Teil 3
+   * (Teil 1 is answered on the spot) and a field for notes.
+   *
+   * @param {object} sez     the oral section
+   * @param {number} minuti  the declared preparation time
+   * @param {string} appunti notes already written
+   */
+  function preparazione(sez, minuti, appunti) {
+    var due = partOf(sez, "2A"), tre = partOf(sez, "3");
+    return '<div class="js-body"><div class="card">' +
+      '<p class="callout callout--info"><b>' + esc(t("cils.oralLabel")) + "</b> " +
+      esc(t("cils.prepIntro", { n: minuti })) + "</p>" +
+      '<p class="cils-hint">' + esc(t("cils.prepT1")) + "</p>" +
+      '<section class="cils-parte" data-sheet="2"><h3 class="cils-h">' + esc(t("cils.prepSheet2")) + "</h3>" +
+      due.scelta.map(topicSheet).join("") + "</section>" +
+      '<section class="cils-parte" data-sheet="3"><h3 class="cils-h">' + esc(t("cils.prepSheet3")) + "</h3>" +
+      "<p><b>" + esc(tre.thema) + "</b></p><p class=\"cils-hint\">" + esc(t("cils.statements")) + "</p>" +
+      ul(tre.aussagen) + "</section>" +
+      '<label for="prep-notes" class="cils-h" style="display:block">' + esc(t("cils.prepNotes")) + "</label>" +
+      '<textarea id="prep-notes" class="field js-notes" rows="6" spellcheck="false">' + esc(appunti || "") + "</textarea>" +
+      '<p class="cils-hint">' + esc(t("cils.prepNotesHint")) + "</p></div></div>";
+  }
+
+  function oralPart(p) {
+    var out = '<section class="cils-parte" data-part="' + esc(p.id) + '"><h3 class="cils-h">' + esc(t("cils.partN", { id: p.id })) + "</h3>";
+    if (p.consegna) out += '<p class="cils-consegna">' + esc(p.consegna) + "</p>";
+    if (p.bild) out += '<figure class="cils-bild" role="group" aria-label="' + esc(p.bild.alt) + '"><figcaption><b>' +
+      esc(t("cils.imageText")) + ":</b> " + esc(p.bild.beschreibung) + "</figcaption></figure>";
+    if (p.fragen) out += '<p class="cils-hint">' + esc(t("cils.examinerAsks")) + "</p>" + ul(p.fragen);
+    if (p.scelta) out += "<fieldset><legend>" + esc(t("cils.pickTopic")) + "</legend>" + p.scelta.map(function (topic, i) {
+      return '<label class="cils-traccia"><input type="radio" name="arg2a" value="' + i + '"' + (i === 0 ? " checked" : "") +
+        '> <span>' + topicSheet(topic) + "</span></label>";
+    }).join("") + "</fieldset>";
+    if (p.aussagen) out += "<p><b>" + esc(p.thema) + '</b></p><p class="cils-hint">' + esc(t("cils.statements")) + "</p>" + ul(p.aussagen);
+    return out + "</section>";
+  }
+
+  function oralNotes(appunti) {
+    return appunti ? '<details class="js-notes-ro"><summary>' + esc(t("cils.prepNotes")) + "</summary><p>" +
+      esc(appunti).replace(/\n/g, "<br>") + "</p></details>" : "";
+  }
+
   /**
    * @param {object} sez   the oral section from the course data
    * @param {string} powod string key for "nothing to record with"; "" when there is
+   * @param {string} [appunti] the preparation notes, shown read-only
    */
-  function corpoOrale(sez, powod) {
+  function corpoOrale(sez, powod, appunti) {
+    var parts = global.Cils.parti(sez);
     return '<div class="js-body"><div class="card">' +
       '<p class="callout callout--info"><b>' + esc(t("cils.oralLabel")) + "</b> " + esc(t("cils.oralNotScored")) + "</p>" +
-      (sez.prove && sez.prove.length ? sez.prove.map(productionPrompt).join("") :
+      (parts.length ? oralNotes(appunti) + parts.map(oralPart).join("") :
+      sez.prove && sez.prove.length ? sez.prove.map(productionPrompt).join("") :
       "<h3 class=\"cils-h\">" + esc(t("cils.oralIntro")) + "</h3><ul class=\"cils-list\">" +
       (sez.presentazione || []).map(function (q) { return "<li>" + esc(q) + "</li>"; }).join("") + "</ul>" +
       "<h3 class=\"cils-h\">" + esc(t("cils.oralTopic")) + "</h3>" +
@@ -428,6 +486,7 @@
     item: item,
     corpoScritto: corpoScritto,
     corpoOrale: corpoOrale,
+    preparazione: preparazione,
     rewizja: rewizja,
     abilita: abilita,
     scritta: scritta,

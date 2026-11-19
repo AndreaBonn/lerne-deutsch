@@ -338,12 +338,26 @@ test("telc format declares timing, item counts and receptive bands", () => {
   ]);
 });
 
+
+function sprechenTasks() {
+  const topic = n => ({ thema: "Thema " + n, stichworte: ["Wort a", "Wort b"] });
+  return [
+    { t: "sprechen", parti: [
+      { id: "1A", consegna: "Erzählen Sie.", bild: { alt: "Pflegerin am Bett", beschreibung: "Eine Pflegerin hilft einem Patienten." } },
+      { id: "1B", fragen: ["Wie war Ihr Tag?"] }] },
+    { t: "sprechen", parti: [
+      { id: "2A", scelta: [topic(1), topic(2)] },
+      { id: "2B", fragen: ["Was meinen Sie?"] }] },
+    { t: "sprechen", parti: [{ id: "3", thema: "Nachtdienst", aussagen: ["Nachtdienst ist hart."] }] }
+  ];
+}
+
 function telcFixture(C) {
   const f = C.formato({ formato: "telc-pflege" });
   const option = () => ({ titolo: "Bericht", consegna: "Schreiben Sie.", parole: { min: 2, max: 5 }, modulo: { intestazione: "Bogen", righe: [["Name", "Anna"]] } });
   return { official: false, formato: "telc-pflege", sezioni: f.moduli.map(m => ({
     id: m.id, minuti: m.minuti,
-    prove: m.punteggio ? m.items.map(n => ({ puntiPerItem: 1, items: Array(n).fill({ a: 0 }) })) : Array.from({ length: m.teile }, () => m.id === "scritta" ? { t: "schreiben", scelta: [option(), option()] } : ({}))
+    prove: m.punteggio ? m.items.map(n => ({ puntiPerItem: 1, items: Array(n).fill({ a: 0 }) })) : m.id === "scritta" ? Array.from({ length: m.teile }, () => ({ t: "schreiben", scelta: [option(), option()] })) : m.id === "orale" ? sprechenTasks() : Array.from({ length: m.teile }, () => ({}))
   })) };
 }
 
@@ -454,4 +468,32 @@ test("telc band result: the maximum is the weighted sum of the tallies, and an o
     change(sim.sezioni[3].prove[0]);
     assert.ok(C.conforme(sim).includes("scelta: scritta-1"));
   }
+});
+
+test("telc Sprechen requires the five parts and two topics in 2A", () => {
+  const C = silnik();
+  const base = C.conforme(telcFixture(C));
+  assert.deepEqual(Array.from(base), []);
+  const cases = [
+    ["a missing part", t => { t[2].parti.pop(); }, "sprechen: parti"],
+    ["parts out of order", t => { t[0].parti.reverse(); }, "sprechen: parti"],
+    ["only one topic in 2A", t => { t[1].parti[0].scelta.pop(); }, "sprechen: 2A"],
+    ["a topic without keywords", t => { t[1].parti[0].scelta[1].stichworte = []; }, "sprechen: 2A"],
+    ["1A without the picture description", t => { delete t[0].parti[0].bild.beschreibung; }, "sprechen: 1A"],
+    ["1B without questions", t => { t[0].parti[1].fragen = []; }, "sprechen: 1B"],
+    ["2B without questions", t => { delete t[1].parti[1].fragen; }, "sprechen: 2B"],
+    ["3 without statements", t => { t[2].parti[0].aussagen = []; }, "sprechen: 3"]
+  ];
+  for (const [name, change, expected] of cases) {
+    const sim = telcFixture(C);
+    change(sim.sezioni[4].prove);
+    assert.ok(C.conforme(sim).includes(expected), name + " -> " + JSON.stringify(Array.from(C.conforme(sim))));
+  }
+});
+
+test("Cils.parti flattens the parts of an oral section in order", () => {
+  const C = silnik();
+  const sim = telcFixture(C);
+  assert.deepEqual(Array.from(C.parti(sim.sezioni[4]), p => p.id), ["1A", "1B", "2A", "2B", "3"]);
+  assert.deepEqual(Array.from(C.parti({ prove: [] })), []);
 });
