@@ -2246,7 +2246,7 @@ window.CILS = [
             ],
             items: [
               {
-                q: "Frau Ostermann hatte in der Nacht Fieber.",
+                q: "Bei der Messung um sechs Uhr hatte Frau Ostermann Fieber.",
                 opts: [
                   "richtig",
                   "falsch"
@@ -2322,7 +2322,7 @@ window.CILS = [
                 a: 1
               },
               {
-                q: "Wann soll Herr Brenner seinen Vater besuchen?",
+                q: "Wann soll der Sohn seinen Vater besuchen?",
                 opts: [
                   "in seiner Mittagspause um zwölf Uhr",
                   "ab halb zwei",
@@ -3246,7 +3246,7 @@ window.CILS = [
                 { it: "Es geht um die Teststreifen für das Blutzuckermessgerät von Herrn Albers, die Sie heute früh bestellt haben.", sp: "A" },
                 { it: "Diese Sorte haben wir im Moment leider nicht da. Der Großhandel liefert erst morgen früh.", sp: "A" },
                 { it: "Ab zehn Uhr können Sie die Streifen dann bei uns abholen.", sp: "A" },
-                { it: "Wenn es schneller gehen muss, bringt unser Bote sie morgen Nachmittag auch vorbei. Dann rufen Sie mich bitte kurz an.", sp: "A" }
+                { it: "Wenn Sie die Streifen nicht selbst abholen können, bringt unser Bote sie morgen Nachmittag auch vorbei. Dann rufen Sie mich bitte kurz an.", sp: "A" }
               ],
               [
                 { it: "Guten Tag, hier spricht Bernd Schäfer. Ich bin der Sohn von Elfriede Schäfer aus der Lindenstraße.", sp: "B" },
@@ -3439,7 +3439,7 @@ window.CILS = [
               {
                 q: "Bis wann müssen die Wünsche für freie Tage in der App stehen?",
                 opts: [
-                  "bis zum ersten des Monats",
+                  "bis zum Ersten des Monats",
                   "bis zum Fünfzehnten des Vormonats",
                   "bis Mittwoch nach der Übergabe"
                 ],
@@ -3618,7 +3618,7 @@ window.CILS = [
                 q: "Text B: Wer darf den Wohnbereich 2 im Moment besuchen?",
                 opts: [
                   "alle Angehörigen, wenn sie einen Schutzkittel tragen",
-                  "nur Angehörige von schwer kranken oder sterbenden Bewohnern nach Anmeldung",
+                  "nur Besucher von schwer kranken oder sterbenden Bewohnern nach telefonischer Anmeldung",
                   "niemand, auch nicht in Ausnahmefällen"
                 ],
                 a: 1

@@ -1,20 +1,35 @@
 {
-  "bundleHash": "2406336a5ce8007b2a842dbd7978b959a6930c480fe82c0b09c1d9e5b29d3f7b",
+  "bundleHash": "5ee5af8e2316d074e851e7b9ef6530c96f6faaa55ad22895747721b3f12ab833",
   "findings": [
     {
-      "kind": "ambiguità della risposta",
-      "msg": "La frase con «denn» è grammaticalmente corretta e offre una spiegazione plausibile, quindi la soluzione prevista «weil» non è univoca. Riformulare il contesto o sostituire «denn» tra le opzioni.",
-      "path": "CILS[pfl-sim-1].sezioni[sprachbausteine].prove[0].items[0]"
+      "kind": "ambiguità",
+      "msg": "La domanda chiede se Petra sia favorevole all'apertura domenicale senza articolo. In tedesco standard è più naturale e corretto formulare «Ist Petra für eine Sonntagsöffnung?»; applicare la stessa correzione alla consegna e alle altre domande della prova.",
+      "path": "CILS[0].sezioni[0].prove[3].items"
     },
     {
-      "kind": "informazione non supportata",
-      "msg": "Il dialogo non identifica la persona che parla con Herr Kaya come medica. Sostituire «die Ärztin» con «die Kollegin» o identificarne esplicitamente il ruolo nel dialogo.",
-      "path": "CILS[pfl-sim-1].sezioni[ascolto].prove[1].items[5].q"
+      "kind": "chiave ambigua",
+      "msg": "Il testo dice che Frau Ostermann non aveva più febbre e che la misurazione delle sei era normale, ma non esclude esplicitamente che abbia avuto febbre durante la notte. Precisare che non ha avuto febbre per tutta la notte oppure riferire l'affermazione alla misurazione delle sei.",
+      "path": "CILS[2].sezioni[0].prove[1].items[0]"
     },
     {
-      "kind": "formulazione ambigua",
-      "msg": "«Herr Brenner hat seinen Vater» attribuisce senza conferma il cognome del paziente al figlio, il cui nome non viene dato. Usare «Der Sohn hat seinen Vater ...» anche nella domanda sulla visita.",
-      "path": "CILS[pfl-sim-1].sezioni[ascolto].prove[1].items[4].q"
+      "kind": "identificazione del personaggio",
+      "msg": "Il dialogo non indica né il nome né il cognome del figlio: «Herr Brenner» identifica invece il padre. Formulare «Wann soll der Sohn seinen Vater besuchen?».",
+      "path": "CILS[2].sezioni[0].prove[1].items[9].q"
+    },
+    {
+      "kind": "logica del testo",
+      "msg": "Il ritiro è possibile domani dalle 10, mentre la consegna è prevista domani pomeriggio: «Wenn es schneller gehen muss» contraddice la cronologia. Sostituire con «Wenn Sie die Streifen nicht selbst abholen können».",
+      "path": "CILS[3].sezioni[0].prove[0].brani[0][4].it"
+    },
+    {
+      "kind": "comprensione del testo",
+      "msg": "L'avviso consente visite a persone gravemente malate o morenti previa telefonata, senza limitarle ai familiari. Sostituire l'opzione corretta con «Besuche bei schwer kranken oder sterbenden Bewohnern nach telefonischer Anmeldung».",
+      "path": "CILS[3].sezioni[1].prove[2].items[2].opts[1]"
+    },
+    {
+      "kind": "ortografia",
+      "msg": "L'ordinale sostantivato richiede la maiuscola: «bis zum Ersten des Monats».",
+      "path": "CILS[3].sezioni[0].prove[2].items[1].opts[0]"
     }
   ],
   "lang": "it",
