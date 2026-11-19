@@ -1,15 +1,20 @@
 {
-  "bundleHash": "82254ecc96c57135eb375c7646c36b9c4d6595229b3f361ff87004550e70d5d3",
+  "bundleHash": "91c321fa5ac0bb8e853da80cf4b5d340720011825a16698607300759088263d6",
   "findings": [
     {
-      "kind": "pronuncia",
-      "msg": "In «spazieren», la sequenza iniziale «sp» si pronuncia [sp], non [ʃp]. Correggere la spiegazione fonetica.",
-      "path": "merged.lessons[3].exercises[9].why"
+      "kind": "Spiegazione grammaticale",
+      "msg": "L’affermazione secondo cui il pronome riflessivo segue il verbo coniugato è troppo generale: con un soggetto nominale dopo il verbo, il pronome può precederlo, come in «Heute ruht sich Anna aus». Precisare che gli esempi descrivono l’ordine con un soggetto pronominale.",
+      "path": "merged.lessons[2].theory[1].p"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "La frase afferma che «deshalb» impone sempre il verbo subito dopo, ma questo vale quando occupa la prima posizione. Precisare la condizione, come già fa la teoria con «Ich bin deshalb müde».",
-      "path": "merged.lessons[3].theory[2].contrast"
+      "kind": "Contrasto linguistico",
+      "msg": "La spiegazione presenta come obbligatoria l’enclisi spagnola all’infinito, ma sono corrette sia «deberías acostarte» sia «te deberías acostar». Presentare entrambe le posizioni prima di confrontarle con «dich hinlegen».",
+      "path": "merged.lessons[2].theory[2].contrast"
+    },
+    {
+      "kind": "Chiarezza grammaticale",
+      "msg": "«El subjuntivo es posible» può far pensare che il Konjunktiv tedesco corrisponda al congiuntivo richiesto in spagnolo. In «Ich finde, dass Sport wichtig ist» si può esprimere invece un contenuto ipotetico o riportato con il Konjunktiv, a seconda del significato. Chiarire la distinzione o eliminare l’inciso.",
+      "path": "merged.lessons[3].grammar.examples[0].note"
     }
   ],
   "lang": "es",

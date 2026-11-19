@@ -1,7 +1,28 @@
 {
   "bundleHash": "96598d68a3c2588aee75a91217c357cc3bdefd129833bea693c0b36d223326a0",
-  "findings": [],
+  "findings": [
+    {
+      "kind": "pronuncia",
+      "msg": "In «spazieren», sp iniziale si pronuncia [ʃp], ma la s sonora davanti alla vocale seguente è [z]: la spiegazione omette questa distinzione. Indicare la pronuncia completa, per esempio [ʃpaˈtsiːʁən], oppure mantenere solo la spiegazione di sp e z senza attribuire a entrambi lo stesso suono.",
+      "path": "merged.lessons[3].exercises[9].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La regola «après deshalb, le verbe vient tout de suite, puis le sujet» vale quando deshalb occupa la prima posizione, non per ogni sua collocazione. Precisare «Lorsque deshalb est en première position…», come già fa la teoria.",
+      "path": "merged.lessons[3].grammar.note"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La spiegazione «le pronom réfléchi se place après le verbe conjugué» è troppo generale: con un altro elemento in prima posizione si può avere «Heute ruhe ich mich aus», dove il soggetto precede il pronome. Limitare la regola agli esempi con il soggetto iniziale e precisare che l'ordine dipende dalla struttura della frase.",
+      "path": "merged.lessons[2].theory[1].p"
+    },
+    {
+      "kind": "progressione didattica",
+      "msg": "L'esercizio chiede il Konjunktiv II di «sich ausruhen» senza specificare nella consegna strutturale che si richiede la forma con «würde». La traduzione e la spiegazione lo indicano, ma una forma sintetica come «ich ruhte mich aus» coincide con il Präteritum ed è grammaticalmente possibile. Specificare esplicitamente nella consegna che si deve usare «würde + infinitif».",
+      "path": "merged.lessons[2].exercises[2]"
+    }
+  ],
   "lang": "fr",
   "unit": "a2-u04",
-  "verdict": "pass"
+  "verdict": "fail"
 }

@@ -1,15 +1,10 @@
 {
-  "bundleHash": "04725a33fd153f901d9cb5ce681ba856f02ae9a575dfdb36d0b51aa921c69a4b",
+  "bundleHash": "e4224f491c88e7ad637958b423be158842a300102e6ebb50d24f0c836947fc3c",
   "findings": [
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "La frase «Nel Perfekt l'ausiliare è haben» generalizza a tutti i verbi riflessivi, ma esistono eccezioni, per esempio «Ich habe mich verlaufen» rispetto a «Wir sind uns begegnet». Specificare che i verbi presentati nella lezione formano il Perfekt con haben; «sich begegnen» è un verbo reciproco con pronome al dativo.",
-      "path": "merged.lessons[3].theory[0].p"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "«Als non si usa mai al presente o al futuro» è troppo assoluto: nella stessa lezione compare il comparativo «älter als ich», utilizzabile anche al presente. Precisare che il divieto riguarda als come congiunzione temporale.",
-      "path": "merged.lessons[1].theory[2].trap"
+      "kind": "pronuncia",
+      "msg": "In «Grundschule» la d non si pronuncia [t]: davanti a [ʃ] resta normalmente sonora, [d]. Elimina questa indicazione dalla spiegazione.",
+      "path": "merged.lessons[3].exercises[9].why"
     }
   ],
   "lang": "it",

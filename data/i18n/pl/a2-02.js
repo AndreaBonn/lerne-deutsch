@@ -1222,7 +1222,7 @@ LINGUAI.addStrings("pl", {
         ]
       },
       examples: [
-        { tr: "Masz ochotę pójść z nami?", note: "mitkommen: zu w środku, mitzukommen" },
+        { tr: "Masz ochotę pójść ze mną?", note: "mitkommen: zu w środku, mitzukommen" },
         { tr: "Masz ochotę przyjść w sobotę na moje przyjęcie?", note: "po rzeczowniku Lust: przecinek obowiązkowy" },
         { tr: "Mam ochotę iść do kina.", note: "zu gehen: zu przed bezokolicznikiem" },
         { tr: "Nie mam czasu przyjść w sobotę.", note: "keine Zeit, ... zu kommen" },
@@ -1246,7 +1246,7 @@ LINGUAI.addStrings("pl", {
     ],
     exercises: [
       {
-        q: "Jak powiesz po niemiecku: «Masz ochotę pójść z nami?»",
+        q: "Jak powiesz po niemiecku: «Masz ochotę pójść ze mną?»",
         opts: [
           "Hast du Lust, mitzukommen?",
           "Hast du Lust, zu mitkommen?",
@@ -1523,7 +1523,7 @@ LINGUAI.addStrings("pl", {
       {
         q: "Uzupełnij zdanie.",
         tr: "On mówi powoli i dobrze go rozumiem. Mam nadzieję, że przyjdziesz na przyjęcie!",
-        why: "<i>Langsam</i> (do pierwszej luki pasuje też <i>deutlich</i>) to przymiotnik bez końcówki w roli przysłówka; <i>Hoffentlich</i> otwiera zdanie, a czasownik <i>kommst</i> zostaje na drugim miejscu."
+        why: "<i>Langsam</i> to przymiotnik bez końcówki w roli przysłówka; <i>Hoffentlich</i> otwiera zdanie, a czasownik <i>kommst</i> zostaje na drugim miejscu."
       },
       {
         tr: "Zwykle świętuję urodziny w domu. Niestety w sobotę nie mam czasu, ale może będziemy świętować później.",

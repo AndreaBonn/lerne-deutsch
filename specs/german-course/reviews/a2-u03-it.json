@@ -1,20 +1,10 @@
 {
-  "bundleHash": "6614c2400f2a6c1c30ca8cb3d0bf2c0fd3187af37642b9f5b73d278fafbb46a8",
+  "bundleHash": "6d929a5c4f0dbf107bacfe9ef2cdccf04806fc22d5313b9dd21ff9d0ed24cae7",
   "findings": [
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "La frase secondo cui il pronome oggetto sta subito dopo il verbo nella frase principale neutra è troppo generale: con inversione e soggetto pronominale segue il soggetto, come nello stesso esempio «Morgen sehe ich ihn». Specificare che l'ordine dipende anche dal soggetto e dalla posizione iniziale.",
-      "path": "merged.lessons[0].theory[0].p"
-    },
-    {
-      "kind": "spiegazione contraddittoria",
-      "msg": "La spiegazione afferma che «sie» segue il soggetto, ma accetta anche «Sie treffe ich heute im Café», dove lo precede. Precisare che l'oggetto segue il soggetto negli ordini neutri illustrati, mentre può occupare la prima posizione per contrasto.",
-      "path": "merged.lessons[0].exercises[6].why"
-    },
-    {
-      "kind": "traduzione",
-      "msg": "«Komm ... vorbei» significa «passa» o «vieni a trovarmi» secondo il contesto; «da me» non è espresso e restringe inutilmente il significato. Tradurre per esempio «Dai, passa a trovarmi e prenditi un momento!» oppure «Dai, passa e prenditi un momento!».",
-      "path": "merged.lessons[3].exercises[9].tr"
+      "kind": "Copertura della verifica",
+      "msg": "La verifica dell'unità non contiene domande sull'imperativo né sulle particelle modali mal e doch, argomenti dell'intera quarta lezione. Inserire almeno un esercizio che verifichi la formazione dell'imperativo e l'uso delle particelle, rispettando il numero e i tipi di esercizi previsti.",
+      "path": "merged.test.exercises"
     }
   ],
   "lang": "it",

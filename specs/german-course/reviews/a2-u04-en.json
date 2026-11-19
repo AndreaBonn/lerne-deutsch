@@ -2,9 +2,19 @@
   "bundleHash": "bac242ceaa56a0c673e9cb4567b5bb8f098777d73f63ef959409af57c6e8d66e",
   "findings": [
     {
-      "kind": "pronuncia",
-      "msg": "In «spazieren» il gruppo iniziale «sp» si pronuncia [sp], non [ʃp]. Correggere la spiegazione distinguendolo da «Sport», in cui «sp» si pronuncia [ʃp].",
-      "path": "merged.lessons[3].exercises[9].why"
+      "kind": "traduzione e spiegazione",
+      "msg": "«Soll» riferisce la prescrizione o raccomandazione del medico, mentre «muss» esprime una necessità o un obbligo. La spiegazione li presenta come equivalenti senza chiarire la differenza, in contrasto con la distinzione insegnata nella lezione 3. Usa «The doctor says I should sleep more» come frase di partenza e mantieni «soll» come risposta; oppure specifica il contesto che giustifica ciascuna alternativa.",
+      "path": "merged.lessons[3].exercises[7]"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«I have to drink more water» presenta «soll» come necessità personale e può far perdere il riferimento alla raccomandazione del medico. Usa «The doctor says I should drink more water».",
+      "path": "merged.lessons[3].grammar.examples[1].tr"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«I have to sleep more» appiattisce la distinzione tra «soll» e «muss». Usa «The doctor says I should sleep more».",
+      "path": "merged.lessons[3].exercises[8].tr"
     }
   ],
   "lang": "en",

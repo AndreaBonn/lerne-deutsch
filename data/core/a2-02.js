@@ -862,7 +862,7 @@ LINGUAI.addUnits("A2", [
           {
             t: "cloze",
             text: "Er spricht {{1}}, und ich verstehe ihn gut. {{2}} kommst du zur Party!",
-            gaps: [["langsam", "deutlich"], ["Hoffentlich"]]
+            gaps: [["langsam"], ["Hoffentlich"]]
           },
           {
             t: "listen",

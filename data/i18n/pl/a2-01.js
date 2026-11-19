@@ -234,7 +234,7 @@ LINGUAI.addStrings("pl", {
   },
   "lesson:a2-u01-l3": {
     theme: "Zasady i pozwolenia",
-    title: "Musiałem, mogłem, ponieważ ...",
+    title: "Musiałem, wolno mi było, ponieważ ...",
     objectives: [
       "używać musste, konnte, wollte i durfte w Präteritum",
       "podawać powód za pomocą weil i czasownika na końcu",
@@ -354,7 +354,7 @@ LINGUAI.addStrings("pl", {
     theory: [
       {
         h: "Czasowniki zwrotne: mich, dich, sich, uns, euch",
-        p: "Niektóre czasowniki niemieckie wymagają zaimka <b>zwrotnego</b>, choć nie musi on oznaczać czynności wykonywanej na sobie: <em>Ich erinnere mich</em> (przypominam sobie, pamiętam), <em>Ich interessiere mich</em> (interesuję się). Zaimek zmienia się z osobą: <em>mich, dich, sich, uns, euch, sich</em>. W zdaniu głównym z podmiotem na pierwszym miejscu stoi po odmienionym czasowniku: <em>Du erinnerst dich an unsere Schule.</em> W pytaniach czasownik jest pierwszy, a zaimek idzie za podmiotem: <em>Erinnerst du dich an unsere Schule?</em> W Perfekt czasownikiem posiłkowym jest <em>haben</em>, a zaimek stoi zwykle blisko początku Mittelfeldu, po ewentualnym podmiocie wyrażonym zaimkiem: <em>Wir haben uns am Bahnhof getroffen. Gestern haben wir uns getroffen. Gestern habe ich mich mit Anna getroffen.</em> W zdaniu podrzędnym idzie za podmiotem: <em>weil ich mich erinnere</em>. Przy <em>sich erinnern</em> i <em>sich freuen</em> należy uczyć się przyimka i wymaganego przypadka razem z czasownikiem: <em>sich erinnern an</em> + biernik, <em>sich freuen auf</em> + biernik (cieszyć się na coś, co dopiero będzie), <em>sich freuen über</em> + biernik (cieszyć się z czegoś, co jest teraz lub było)."
+        p: "Niektóre czasowniki niemieckie wymagają zaimka <b>zwrotnego</b>, choć nie musi on oznaczać czynności wykonywanej na sobie: <em>Ich erinnere mich</em> (przypominam sobie, pamiętam), <em>Ich interessiere mich</em> (interesuję się). Zaimek zmienia się z osobą: <em>mich, dich, sich, uns, euch, sich</em>. W zdaniu głównym z podmiotem na pierwszym miejscu stoi po odmienionym czasowniku: <em>Du erinnerst dich an unsere Schule.</em> W pytaniach czasownik jest pierwszy, a zaimek idzie za podmiotem: <em>Erinnerst du dich an unsere Schule?</em> W Perfekt czasowniki z tej lekcji tworzą czas z <em>haben</em>, a zaimek stoi zwykle blisko początku Mittelfeldu, po ewentualnym podmiocie wyrażonym zaimkiem: <em>Wir haben uns am Bahnhof getroffen. Gestern haben wir uns getroffen. Gestern habe ich mich mit Anna getroffen.</em> W zdaniu podrzędnym idzie za podmiotem: <em>weil ich mich erinnere</em>. Przy <em>sich erinnern</em> i <em>sich freuen</em> należy uczyć się przyimka i wymaganego przypadka razem z czasownikiem: <em>sich erinnern an</em> + biernik, <em>sich freuen auf</em> + biernik (cieszyć się na coś, co dopiero będzie), <em>sich freuen über</em> + biernik (cieszyć się z czegoś, co jest teraz lub było)."
       },
       {
         contrast: "Polski ma jedno słowo, <em>się</em>, dla wszystkich osób: <em>cieszę się, cieszysz się, cieszymy się</em>. Niemiecki zmienia zaimek wraz z osobą: <em>mich, dich, sich, uns, euch</em>. Czasowniki zwrotne w obu językach też się nie pokrywają. «Pamiętać» jest po polsku niezwrotne i bierze biernik (<em>pamiętam szkołę</em>), a niemieckie <em>sich erinnern</em> jest zwrotne i wymaga przyimka <em>an</em>: <em>Ich erinnere mich an meine Schule</em>. Polskie «obudzić się» jest zwrotne, a niemieckie <em>aufwachen</em> nie; polskie «usiąść» nie jest zwrotne, a niemieckie <em>sich setzen</em> jest. Zwrotne w obu językach są natomiast m.in. «złościć się» i <em>sich ärgern</em>, «interesować się» i <em>sich interessieren</em>. Przypadek też bywa inny: po polsku «interesować się» bierze narzędnik (<em>interesuję się starymi zdjęciami</em>), a po niemiecku <em>sich interessieren für</em> bierze biernik. Uwaga na «spotykać się z» + narzędnik: <em>sich treffen mit</em> + celownik."
@@ -1971,7 +1971,7 @@ LINGUAI.addStrings("pl", {
         { tr: "Lekarz mówi, że powinienem pić więcej wody.", note: "modalny soll zamyka zdanie po trinken" },
         { tr: "Wiem, że papierosy są niezdrowe.", note: "dass ... sind: czasownik na końcu" },
         { tr: "Źle śpię. Dlatego jestem zmęczony.", note: "deshalb na pierwszym miejscu, potem bin ich" },
-        { tr: "Je dużo warzyw. Dlatego rzadko choruje.", note: "deshalb, potem ist sie" },
+        { tr: "Ona je dużo warzyw. Dlatego rzadko choruje.", note: "deshalb, potem ist sie" },
         { tr: "Uważam, że spacer jest zdrowy.", note: "dass ... gesund ist" }
       ]
     },

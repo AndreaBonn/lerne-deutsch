@@ -1,50 +1,15 @@
 {
-  "bundleHash": "0b4974a4d3e3ac02c6a066eee4c555c5a96d9a73d9c189810cd6e06953ff44b3",
+  "bundleHash": "38ec8ab1a733294cb4c7865bf970c52ec8b9a1faf530193dca6a06ec653528a5",
   "findings": [
     {
-      "kind": "grammaire",
-      "msg": "L’explication affirme que « sie » et « es » restent identiques au nominatif et à l’accusatif, mais l’accusatif de politesse « Sie » doit également figurer dans cette précision. Distinguer « sie » au singulier et au pluriel de « Sie » de politesse.",
-      "path": "merged.lessons[0].theory[0].p"
+      "kind": "traduzione",
+      "msg": "L'esempio francese « je la vois » è affermativo, mentre « Ich sehe ihn nicht » è negativo. Scrivere « je ne la vois pas » oppure togliere « nicht » dalla frase tedesca.",
+      "path": "merged.lessons[0].theory[1].contrast"
     },
     {
-      "kind": "explication grammaticale",
-      "msg": "La règle selon laquelle le pronom vient juste après le verbe est trop générale : dans « Heute treffe ich sie », le sujet intervient, et un pronom accentué peut aussi occuper la première position. Présenter cet ordre comme celui des exemples à sujet initial et préciser les autres positions possibles.",
-      "path": "merged.lessons[0].theory[0].p"
-    },
-    {
-      "kind": "prononciation",
-      "msg": "Dans « manchmal », le groupe « ch » se prononce [ç] après la voyelle antérieure [a] dans une réalisation courante de la syllabe « manch », mais l’explication « après le n » donne une règle trompeuse : le son dépend du contexte phonétique et morphologique. Donner simplement la prononciation du mot, par exemple [ˈmançmaːl].",
-      "path": "merged.lessons[0].exercises[9].why"
-    },
-    {
-      "kind": "explication grammaticale",
-      "msg": "« Me » dans « la veste me plaît » est un pronom complément indirect français, mais le français n’a pas de cas datif morphologique comparable à l’allemand. Réserver « datif » à « mir » et qualifier « me » de complément indirect.",
-      "path": "merged.lessons[1].theory[1].contrast"
-    },
-    {
-      "kind": "explication grammaticale",
-      "msg": "L’affirmation que les deux pronoms suivent toujours l’ordre accusatif puis datif est trop absolue : des ordres marqués existent selon l’accentuation et le contexte. Dire qu’il s’agit de l’ordre habituel pour les pronoms non accentués.",
-      "path": "merged.lessons[2].theory[1].contrast"
-    },
-    {
-      "kind": "explication grammaticale",
-      "msg": "L’astuce « place son pronom juste après le verbe » ne vaut pas lorsque le sujet suit le verbe, par exemple « Morgen gebe ich es dir ». Préciser qu’il faut placer le pronom accusatif avant le pronom datif, après le sujet dans cet exemple.",
-      "path": "merged.lessons[2].theory[3].tip"
-    },
-    {
-      "kind": "explication grammaticale",
-      "msg": "« Lese! » n’est pas une forme standard de l’impératif singulier de « lesen », mais la formulation « ne dis pas Lese! mais Lies!, et non Nehm! mais Nimm! » associe maladroitement les deux corrections. Séparer les exemples : « dis Lies!, pas Lese! ; dis Nimm!, pas Nehm! »",
-      "path": "merged.lessons[3].theory[3].trap"
-    },
-    {
-      "kind": "explication grammaticale",
-      "msg": "Présenter « doch » et « mal » comme des particules qui adoucissent systématiquement une demande est trompeur : selon le contexte et l’intonation, elles peuvent aussi exprimer l’impatience ou l’insistance. Préciser qu’elles peuvent adoucir une demande dans les exemples donnés.",
-      "path": "merged.lessons[3].grammar.note"
-    },
-    {
-      "kind": "explication grammaticale",
-      "msg": "L’instruction de retirer « -en » ne permet pas de former correctement l’impératif de verbes réguliers dont l’infinitif finit en « -n », par exemple « sammeln → Sammle! ». Limiter la règle aux exemples en « -en » et signaler que d’autres terminaisons existent.",
-      "path": "merged.lessons[3].theory[4].tip"
+      "kind": "copertura del test",
+      "msg": "Il test dell'unità non verifica l'imperativo né le particelle modali mal e doch, argomenti dell'intera quarta lezione. Sostituire una o più domande ridondanti con esercizi su questi contenuti, mantenendo il numero previsto.",
+      "path": "merged.test.exercises"
     }
   ],
   "lang": "fr",

@@ -1,10 +1,15 @@
 {
-  "bundleHash": "987e7579d8677dfb260d6f7cef413b84f3b3aff4b9ba42f0fdf273f10e55b72a",
+  "bundleHash": "540fcb8ca6185fb2a09624beccaa5bfd1e616fe7f9c5fdc4a8e87f1186baf32e",
   "findings": [
     {
-      "kind": "traduzione e risposta alternativa",
-      "msg": "Il cloze accetta «deutlich» (chiaramente), ma la traduzione fornita dice solo «lentamente». Aggiungi «o chiaramente» alla traduzione e spiega entrambe le risposte, oppure rimuovi «deutlich» dalle soluzioni accettate.",
-      "path": "merged.lessons[3].exercises[7]"
+      "kind": "Spiegazione grammaticale errata",
+      "msg": "La nota afferma che la persona è al dativo anche con «schenken», ma l'esempio «ich schenke dir» è incompleto senza la cosa regalata. Indica la costruzione completa: «jemandem etwas schenken», per esempio «Ich schenke dir ein Buch».",
+      "path": "merged.lessons[0].theory[3].contrast"
+    },
+    {
+      "kind": "Contrasto impreciso",
+      "msg": "«Di venire» non segue subito il verbo principale nell'esempio «hai voglia di venire»: segue il nome «voglia». Correggi il confronto distinguendo la posizione del gruppo infinitivo da quella del solo verbo principale.",
+      "path": "merged.lessons[1].theory[2].contrast"
     }
   ],
   "lang": "it",

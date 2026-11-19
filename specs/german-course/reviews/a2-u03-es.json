@@ -1,20 +1,10 @@
 {
-  "bundleHash": "0c6d778bc5eab560301e480e6d1edc9d3ec7a4256985bc111fd10bcae7252437",
+  "bundleHash": "527d0a58c38ca4de21eed8c3c4fe5fcfb118afd53cab1100b3139ba2c27089a1",
   "findings": [
     {
-      "kind": "chiave di risposta incompleta",
-      "msg": "La consegna non specifica il destinatario, ma accetta soltanto «dir». Anche «ihm», «ihr» e altri pronomi dativi sono grammaticalmente possibili. Indica nella consegna che la lettera è destinata alla persona a cui ci si rivolge, oppure accetta le altre risposte pertinenti.",
-      "path": "merged.lessons[2].exercises[5]"
-    },
-    {
-      "kind": "traduzione imprecisa",
-      "msg": "«Komm doch mal vorbei» invita a passare, ma non significa «Pásate cuando quieras»: l'espressione aggiunge una disponibilità temporale assente nell'originale. Per esempio: «Pásate un día, anda, y tómate un momento».",
-      "path": "merged.lessons[3].exercises[9].tr"
-    },
-    {
-      "kind": "spiegazione eccessivamente generale",
-      "msg": "La frase afferma che il pronome oggetto segue subito il verbo in una principale neutra, ma con un elemento diverso dal soggetto in prima posizione il soggetto pronominale interviene prima dell'oggetto, come mostra l'esempio successivo «Morgen sehe ich ihn». Limita la regola ai casi in cui il soggetto precede il verbo.",
-      "path": "merged.lessons[0].theory[0].p"
+      "kind": "traduzione",
+      "msg": "«Ich treffe sie oft» significa «Me encuentro con ella a menudo», non semplicemente «La veo a menudo». La traduzione attuale confonde treffen con sehen, già insegnato nella stessa lezione. Correggere entrambe le traduzioni.",
+      "path": "merged.lessons[0].exercises[5].tr; merged.lessons[0].exercises[9].tr"
     }
   ],
   "lang": "es",

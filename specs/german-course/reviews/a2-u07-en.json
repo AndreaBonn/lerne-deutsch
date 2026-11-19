@@ -1,25 +1,25 @@
 {
-  "bundleHash": "8fa1cf4a21119d8d753981d9bb3463035f401d8610bf5c7bfe00b28d2798fe9a",
+  "bundleHash": "6dc8932dcffe4cf0bb53942dfda86d49a403ddd4a1d79e864c80e851cb53591e",
   "findings": [
     {
       "kind": "pronuncia",
-      "msg": "L’iniziale di «Samstag» è sorda [z̥] o [s] nella pronuncia standard, non la sonora [z]. Correggere la nota fonetica.",
-      "path": "merged.lessons[1].exercises[8].why"
+      "msg": "In Geburtstag l'accento cade su «tags», non su «bur». Correggere la spiegazione della pronuncia.",
+      "path": "merged.lessons[0].exercises[9].why"
     },
     {
       "kind": "pronuncia",
-      "msg": "L’iniziale di «Samstag» è sorda [z̥] o [s] nella pronuncia standard, non la sonora [z]. Correggere la nota fonetica.",
-      "path": "merged.test.exercises[8].why"
+      "msg": "In Geburtstag l'accento cade su «tags», non su «bur». Correggere la spiegazione della pronuncia.",
+      "path": "merged.test.exercises[9].why"
     },
     {
-      "kind": "traduzione e chiave",
-      "msg": "La traduzione inglese specifica «slowly», ma la chiave accetta anche «deutlich» («clearly»). Rendere la traduzione compatibile con entrambe le risposte oppure accettare soltanto «langsam».",
-      "path": "merged.lessons[3].exercises[7]"
+      "kind": "traduzione",
+      "msg": "«Coming to the movies with me» introduce l'idea di venire con il parlante, assente in «mit mir ins Kino zu gehen». Usare «Do you feel like going to the movies with me?».",
+      "path": "merged.lessons[1].exercises[9].tr"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "L’affermazione che l’inglese non mostri mai il caso dei pronomi è falsa: per esempio «I/me» e «he/him» distinguono soggetto e oggetto. Precisare che «you» ha la stessa forma nei due casi e che l’inglese non distingue qui dativo e accusativo.",
-      "path": "merged.lessons[0].theory[3].contrast"
+      "kind": "spiegazione",
+      "msg": "La frase afferma erroneamente che hoffentlich non può essere seguito da dass. È possibile dire «Hoffentlich, dass ...» in alcune costruzioni? Meglio evitare la generalizzazione e spiegare che nell'esempio hoffentlich introduce direttamente una frase principale con verbo in seconda posizione.",
+      "path": "merged.test.exercises[3].why"
     }
   ],
   "lang": "en",

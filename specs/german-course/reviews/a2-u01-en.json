@@ -1,38 +1,7 @@
 {
-  "bundleHash": "9a32dead432e3b6b5146a484cd09db393e2d241e1de57d9239c068238c087e2f",
-  "findings": [
-    {
-      "kind": "grammatica",
-      "msg": "L’espressione «German has a form for every person» suggerisce sei forme distinte, ma alcune coincidono. Specificare che il verbo si accorda con la persona e che più persone possono condividere la stessa forma.",
-      "path": "merged.lessons[0].theory[1].contrast"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "La forma «had to» non è presa in prestito dal modale inglese «may»: è una perifrasi con «be allowed to». Sostituire «can and may borrow ...» con «could is the past form of can; was allowed to expresses past permission».",
-      "path": "merged.lessons[2].theory[1].contrast"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "La definizione secondo cui l’azione riflessiva ricade sul soggetto non spiega adeguatamente verbi come «sich erinnern» né l’uso reciproco di «sich treffen». Distinguere i verbi che richiedono un pronome riflessivo dall’uso reciproco, in cui «uns» significa «each other».",
-      "path": "merged.lessons[3].theory[0].p"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "Non tutti i verbi riflessivi formano il Perfekt con «haben»: per esempio, «sich begegnen» usa «sein». Limitare l’affermazione ai verbi presentati nella lezione.",
-      "path": "merged.lessons[3].theory[0].p"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "«Mir» e «dir» sono le forme dative della prima e seconda persona singolare, non di tutte le prime e seconde persone. Aggiungere «singular» alla frase.",
-      "path": "merged.lessons[3].theory[2].trap"
-    },
-    {
-      "kind": "chiarezza",
-      "msg": "L’interlocutore non è identificato come uomo: «remember him» introduce un’informazione assente dal dialogo. Usare «Say yes, and that you remember the classmate».",
-      "path": "merged.lessons[3].exercises[7].lines[1].tr"
-    }
-  ],
+  "bundleHash": "071783986d71da16d85166f221e50a29300040773d6fa84687a601fb9abc8b9b",
+  "findings": [],
   "lang": "en",
   "unit": "a2-u01",
-  "verdict": "fail"
+  "verdict": "pass"
 }

@@ -1,10 +1,30 @@
 {
-  "bundleHash": "fd5013f43993a14234415e7ccb2a70344dd8f2d9f60666971e9696fc653fd269",
+  "bundleHash": "7749d8bbd1ed3ac191240d0d298bd3e5b1d68aeba867d28730f425e67a131577",
   "findings": [
     {
       "kind": "spiegazione grammaticale",
-      "msg": "La definizione secondo cui un verbo è riflessivo quando l’azione ricade sul soggetto non descrive correttamente l’esempio «Ich erinnere mich»: «sich erinnern» è un verbo pronominale il cui pronome non indica un’azione compiuta su sé stessi. Distinguere i verbi riflessivi in senso proprio dai verbi che richiedono un pronome riflessivo, oppure presentare qui i verbi pronominali senza attribuire loro tutti lo stesso significato.",
-      "path": "merged.lessons[3].theory[0].p"
+      "msg": "Il tema indicato è «hatt-» o «konnt-», quindi con wir e sie la desinenza è -en, ma con ich ed er/sie/es è -e. La spiegazione iniziale omette queste forme: specifica le desinenze complete -e, -est, -e, -en, -et, -en.",
+      "path": "merged.lessons[0].grammar.note"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Con il tema «hatt-», la desinenza -en di «hatten» non è quella dell'infinito «haben», il cui tema è diverso. Elimina «comme à l'infinitif» o chiarisci che coincide solo la desinenza.",
+      "path": "merged.lessons[0].exercises[4].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La desinenza -en di «hatten» e «waren» coincide con quella dell'infinito, ma i temi cambiano. Precisalo per evitare che la nota suggerisca forme identiche agli infiniti.",
+      "path": "merged.lessons[0].theory[2].trap"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Le français parlé [...] emploie plutôt l'imparfait» generalizza troppo: anche il passato composto è comune, secondo il contesto. Sostituisci con un confronto che distingua azioni abituali o in corso da eventi conclusi.",
+      "path": "merged.lessons[2].theory[1].contrast"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "La frase tedesca dice che l'azione di prendere appuntamento con Anna è stata reciproca o che l'ho incontrata; «j'ai retrouvé Anna» può suggerire che fosse stata cercata. Per maggiore chiarezza usa «Hier, j'ai rencontré Anna et nous nous sommes souvenus de l'école».",
+      "path": "merged.lessons[3].exercises[5].tr"
     }
   ],
   "lang": "fr",

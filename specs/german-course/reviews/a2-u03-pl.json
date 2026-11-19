@@ -3,18 +3,33 @@
   "findings": [
     {
       "kind": "spiegazione grammaticale",
-      "msg": "La regola suggerisce di formare l’imperativo di tutti i verbi regolari eliminando -en e aggiungendo -e solo dopo -t o -d. Non copre verbi regolari come öffnen e atmen, che richiedono Öffne! e Atme! Specifica che la procedura è semplificata e aggiungi queste forme.",
-      "path": "merged.lessons[3].theory[3].tip"
+      "msg": "La spiegazione colloca il pronome oggetto sempre dopo il soggetto pronominale, ma la risposta accettata «Sie treffe ich heute im Café» lo colloca correttamente all’inizio per enfatizzarlo. Precisare che la regola descrive l’ordine neutro e ammettere l’anteposizione enfatica.",
+      "path": "merged.lessons[0].exercises[6].why"
+    },
+    {
+      "kind": "chiave di risposta",
+      "msg": "L’esercizio chiede di ordinare le parole senza ulteriori vincoli, ma manca l’alternativa grammaticale «Sehr gefällt mir die Jacke», con «sehr» in posizione iniziale per enfasi. Aggiungerla oppure richiedere esplicitamente l’ordine neutro.",
+      "path": "merged.lessons[1].exercises[6].a"
     },
     {
       "kind": "traduzione",
-      "msg": "«Jutro mu go oddam» significa «domani glielo restituirò»: il tedesco «Ich gebe ihn ihm morgen» dice soltanto che glielo darò. Sostituisci «oddam» con «dam».",
+      "msg": "«Ich gebe ihn ihm morgen» significa «Glielo darò domani»; «oddam» implica una restituzione non espressa dal tedesco. Sostituire con «Jutro mu go dam».",
       "path": "merged.lessons[2].exercises[9].tr"
     },
     {
-      "kind": "copertura del test",
-      "msg": "Il test verifica pronomi, verbi con dativo e ordine dei complementi, ma non verifica l’imperativo né l’uso di mal e doch, introdotti nella quarta lezione. Inserisci almeno un esercizio su questi contenuti mantenendo il numero previsto di esercizi.",
-      "path": "merged.test.exercises"
+      "kind": "traduzione",
+      "msg": "«Komm doch mal vorbei» invita a passare, ma non specifica «da me». Sostituire «Wpadnij do mnie» con «Wpadnij kiedyś» o un’altra formulazione che non aggiunga una destinazione.",
+      "path": "merged.lessons[3].exercises[9].tr"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La formula dice che per il singolare si usa il solo tema, ma subito dopo presenta correttamente «Warte!», che aggiunge -e. Precisare che il tema è la base e che in alcuni casi si aggiunge -e, con cambiamenti vocalici per alcuni verbi forti.",
+      "path": "merged.lessons[3].grammar.note"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Il confronto afferma che l’imperativo tedesco per «du» prende semplicemente il tema, ma «Warte!» include la desinenza -e e i verbi forti possono cambiare vocale. Riformulare indicando queste eccezioni.",
+      "path": "merged.lessons[3].theory[2].contrast"
     }
   ],
   "lang": "pl",

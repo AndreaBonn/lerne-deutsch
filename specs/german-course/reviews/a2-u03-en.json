@@ -1,10 +1,25 @@
 {
-  "bundleHash": "bee1a4aa3ee5e4a0a68c5176f337b9104fa190c6a4a4ff060b010e28d657a8e6",
+  "bundleHash": "76229836643c5b2244b09edc642313710bd2edffba01b15a6c16a91312f59048",
   "findings": [
     {
-      "kind": "explanation",
-      "msg": "The claim that omitting mal or doch makes a sentence sound more curt is too categorical. These particles can also convey impatience or insistence depending on context and intonation. Explain that they often soften a request in the examples given, but do not invariably make it friendlier.",
-      "path": "merged.lessons[3].theory[3].trap"
+      "kind": "answer alternatives",
+      "msg": "The English sentence also permits the German future tense. Add correct alternatives such as «Ich werde ihn morgen sehen» and «Morgen werde ich ihn sehen».",
+      "path": "merged.lessons[0].exercises[7].a"
+    },
+    {
+      "kind": "answer alternatives",
+      "msg": "The German future tense is also a faithful translation. Add «Ich werde es dir morgen geben» and «Morgen werde ich es dir geben».",
+      "path": "merged.lessons[2].exercises[7].a"
+    },
+    {
+      "kind": "answer alternatives",
+      "msg": "The German future tense is also a correct translation. Add «Ich werde ihm das Buch morgen geben», «Ich werde ihm morgen das Buch geben» and «Morgen werde ich ihm das Buch geben».",
+      "path": "merged.test.exercises[7].a"
+    },
+    {
+      "kind": "grammar explanation",
+      "msg": "The statement that the object pronoun comes right after the conjugated verb in a neutral main clause is too broad: when another element begins the sentence, a subject pronoun intervenes, as in «Morgen sehe ich ihn». Restrict the statement to clauses with the subject first.",
+      "path": "merged.lessons[0].theory[0].p"
     }
   ],
   "lang": "en",

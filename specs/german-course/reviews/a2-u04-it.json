@@ -1,15 +1,15 @@
 {
-  "bundleHash": "365ec32f6da87f598bb0e4cce2ebeecd03ee829601e2bd38dff45880f55899a6",
+  "bundleHash": "f75ef5f96fae43a005c30f85cf2a1a576b23d22fe79cb8a38765ac91a95ae8fa",
   "findings": [
     {
-      "kind": "pronuncia",
-      "msg": "In «spazieren» la sequenza iniziale sp si pronuncia [sp], non [ʃp]. Correggere la spiegazione fonetica, eventualmente indicando [spaˈtsiːʁən].",
-      "path": "merged.lessons[3].exercises[9].why"
+      "kind": "spiegazione grammaticale",
+      "msg": "L'affermazione che sich hinlegen e sich fühlen siano riflessivi «per natura» è troppo generale: entrambi possono avere anche un oggetto non riflessivo, per esempio «Sie legt das Kind hin» e «Ich fühle den Puls». Spiega che negli esempi della lezione sono usati con un pronome riflessivo; sich ausruhen e sich erholen sono invece verbi intrinsecamente riflessivi.",
+      "path": "merged.lessons[2].theory[1].p"
     },
     {
       "kind": "spiegazione grammaticale",
-      "msg": "La nota afferma che sollen al Konjunktiv II e würde + infinito escludono una desinenza propria sul verbo principale, ma il tedesco dispone anche di forme sintetiche come «ich ginge». Precisare che würde + infinito è la costruzione presentata qui, senza escludere le altre forme.",
-      "path": "merged.lessons[2].theory[2].contrast"
+      "msg": "La frase «in tedesco entrambe le frasi con dass usano l'indicativo» va limitata agli esempi presentati: dass non richiede sempre l'indicativo e può introdurre anche il Konjunktiv, come nel test «Ich denke, dass ich mich ausruhen sollte». Scrivi che negli esempi «Ich denke, dass Sport wichtig ist» e «Ich weiß, dass Sport wichtig ist» si usa l'indicativo.",
+      "path": "merged.lessons[3].theory[2].contrast"
     }
   ],
   "lang": "it",

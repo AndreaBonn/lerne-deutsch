@@ -1,20 +1,25 @@
 {
-  "bundleHash": "4840646863a506a59226ad70642aa24a767456bd6ad08a5281e91ace83077129",
+  "bundleHash": "dc963230840deb50aa766f46a92dd89bc84fb42215e361cd1e31070d95ec6ccc",
   "findings": [
     {
-      "kind": "pronuncia",
-      "msg": "In «solltest» la sequenza finale «st» si pronuncia [ʃt], non [st]. Correggere la spiegazione fonetica.",
-      "path": "merged.lessons[2].exercises[8].why"
+      "kind": "answer_key",
+      "msg": "L’esercizio richiede esplicitamente sollen, ma accetta anche muss, che esprime necessità anziché il consiglio o l’indicazione riferita dal medico. Rimuovere l’alternativa con muss dalla chiave e aggiornare la spiegazione.",
+      "path": "merged.lessons[3].exercises[7].a"
     },
     {
-      "kind": "chiave di risposta",
-      "msg": "L’alternativa con «muss» esprime necessità e non rispetta la richiesta esplicita di usare «sollen». Rimuoverla dalle risposte accettate e aggiornare la spiegazione.",
-      "path": "merged.lessons[3].exercises[7].a[1]"
+      "kind": "pronunciation",
+      "msg": "In spazieren, sp si pronuncia [sp], non [ʃp], perché è seguito da a all’inizio di una parola di origine straniera. Correggere la spiegazione fonetica.",
+      "path": "merged.lessons[3].exercises[9].why"
     },
     {
-      "kind": "traduzione",
-      "msg": "«Sie isst viel Gemüse» specifica che il soggetto è una donna; «Je dużo warzyw» omette questa informazione. Usare «Ona je dużo warzyw».",
-      "path": "merged.lessons[3].grammar.examples[4].tr"
+      "kind": "grammar_explanation",
+      "msg": "La frase afferma che Deshalb è sempre seguito immediatamente dal verbo e poi dal soggetto. Questo vale quando Deshalb occupa la prima posizione, ma non in «Ich bin deshalb müde», presentato correttamente nella stessa lezione. Limitare esplicitamente la regola al caso in cui Deshalb inizi la frase.",
+      "path": "merged.lessons[3].grammar.note"
+    },
+    {
+      "kind": "grammar_explanation",
+      "msg": "Il suggerimento presenta «dopo deshalb il verbo subito» come regola generale, mentre deshalb può occupare anche una posizione interna. Precisare che il verbo segue immediatamente deshalb quando questo è in prima posizione.",
+      "path": "merged.lessons[3].theory[4].tip"
     }
   ],
   "lang": "pl",

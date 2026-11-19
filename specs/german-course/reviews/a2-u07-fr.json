@@ -1,13 +1,7 @@
 {
-  "bundleHash": "7e6be5174289af9c3b35fe73b2787ba4fb814d87524301dac88f43cbddb5693a",
-  "findings": [
-    {
-      "kind": "traduction et réponses acceptées",
-      "msg": "La traduction française impose « lentement », mais le corrigé accepte aussi « deutlich », qui signifie « clairement » ou « distinctement ». Modifier la traduction pour présenter les deux possibilités, ou retirer « deutlich » des réponses acceptées.",
-      "path": "merged.lessons[3].exercises[7]"
-    }
-  ],
+  "bundleHash": "8862631331cce57f188acc0e856888fb3dd9b05300959d0dc8a901141cfa34f9",
+  "findings": [],
   "lang": "fr",
   "unit": "a2-u07",
-  "verdict": "fail"
+  "verdict": "pass"
 }

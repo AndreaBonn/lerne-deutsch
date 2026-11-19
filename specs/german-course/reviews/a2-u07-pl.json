@@ -1,33 +1,7 @@
 {
-  "bundleHash": "d3183571ba4f25f6594795660d24d8b3b5107b8d6580baf7d9ce0cdc4e0cec1d",
-  "findings": [
-    {
-      "kind": "tłumaczenie",
-      "msg": "„Mitzukommen” oznacza przyjść lub pójść razem z mówiącym, ale nie określa liczby osób. Polskie „z nami” dodaje informację nieobecną w zdaniu niemieckim. Zmień tłumaczenie na „Masz ochotę pójść ze mną?” albo doprecyzuj niemiecki tekst przez „mit uns mitzukommen”.",
-      "path": "merged.lessons[1].grammar.examples[0].tr"
-    },
-    {
-      "kind": "tłumaczenie i klucz odpowiedzi",
-      "msg": "Pytanie zawiera „z nami”, natomiast poprawna odpowiedź „mitzukommen” nie określa, czy chodzi o jedną osobę, czy o grupę. Zmień polskie pytanie na „Masz ochotę pójść ze mną?” albo dodaj „mit uns” do odpowiedzi niemieckiej.",
-      "path": "merged.lessons[1].exercises[0].q"
-    },
-    {
-      "kind": "wymowa",
-      "msg": "W standardowej wymowie niemieckiej początkowe „s” w „Samstag” jest bezdźwięczne [z̥] lub [s], a nie dźwięczne [z]. Popraw objaśnienie wymowy.",
-      "path": "merged.lessons[1].exercises[8].why"
-    },
-    {
-      "kind": "wymowa",
-      "msg": "Początkowe „s” w „Samstag” jest w standardowej wymowie bezdźwięczne [z̥] lub [s], a nie dźwięczne [z]. Popraw objaśnienie.",
-      "path": "merged.test.exercises[8].why"
-    },
-    {
-      "kind": "tłumaczenie i alternatywy",
-      "msg": "Wersja z „deutlich” oznacza „wyraźnie”, a polskie tłumaczenie podaje wyłącznie „powoli”. Dodaj wariant „wyraźnie” do tłumaczenia albo usuń „deutlich” z akceptowanych odpowiedzi.",
-      "path": "merged.lessons[3].exercises[7]"
-    }
-  ],
+  "bundleHash": "a7e9f97443848b50a88e3a1fada7748d42804248cb26da7264710701856170da",
+  "findings": [],
   "lang": "pl",
   "unit": "a2-u07",
-  "verdict": "fail"
+  "verdict": "pass"
 }

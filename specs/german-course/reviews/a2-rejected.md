@@ -15,3 +15,14 @@ Giudice: Codex (review_lot.mjs). Motivo per ogni scarto; i rilievi accettati son
 - a2-u07 pl lessons[0].theory[2].p: «am sechsten» è regolare (sechs + -te); le eccezioni sono erste, dritte, siebte, achte.
 - a2-u01 fr lessons[2].exercises[9].why: il testo è già «[ʃtr] :», senza la virgola che il giudice cita.
 - a2-u07 es lessons[1].exercises[8]: esercizio listen senza campo di consegna nella nakładka; cambiare il campo tedesco `it` cambierebbe la registrazione per tutte le lingue.
+
+## Secondo giro (2026-11-19, sera)
+- a2-u07 cloze lessons[3].exercises[7]: «deutlich» aggiunto al primo giro su richiesta en/pl e tolto di nuovo al secondo su richiesta es; resta solo «langsam», coerente con la traduzione mostrata («slowly», «despacio», «powoli»).
+- a2-u01 es (lines[1].choices[0]): «Ja, ich erinnere dich an mich!» significa «ti ricordo me», non risponde alla domanda; resta distrattore.
+- a2-u01 es grammar.note ed exercises[1].why: hatt- + -e/-est/-en/-et è una segmentazione coerente (hattest, hattet).
+- a2-u03 es lessons[?] (te la mando): la traduzione mostrata fissa il destinatario, la consegna non è ambigua.
+- a2-u03 fr manchmal: ch dopo n è [ç] nello standard; la spiegazione è corretta.
+- a2-u04 it/en/es spazieren: sp iniziale di radice = [ʃp] (Duden).
+- a2-u04 pl solltest: st interno di parola = [st]; [ʃt] solo a inizio radice.
+- a2-u04 pl muss: decisione dell'utente (Q3 A).
+- a2-u07 en/pl Samstag (lezione e test): s iniziale davanti a vocale = [z] (Duden).

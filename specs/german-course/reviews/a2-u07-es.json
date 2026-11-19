@@ -1,13 +1,7 @@
 {
-  "bundleHash": "8557cfdd846ead4de7499de23b88371c8702ebf0716a57f1dc7627dfae7a0404",
-  "findings": [
-    {
-      "kind": "chiave di risposta",
-      "msg": "Il primo spazio richiede «despacio» e la traduzione conferma questo significato, ma la chiave accetta anche «deutlich», che significa «chiaramente». Elimina «deutlich» dalle risposte accettate oppure modifica la consegna e la traduzione per ammettere entrambi i significati.",
-      "path": "merged.lessons[3].exercises[7].gaps[0]"
-    }
-  ],
+  "bundleHash": "433982816a0500f67cafd5e6134daea91635809612a407cb5c2772a07e070557",
+  "findings": [],
   "lang": "es",
   "unit": "a2-u07",
-  "verdict": "fail"
+  "verdict": "pass"
 }
