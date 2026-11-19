@@ -37,15 +37,23 @@ describe("zanieczyszczenie prototypu", () => {
     assert.equal(probePrototype(box, "zagniezdzone"), undefined);
   });
 
-  test("constructor.prototype is not a way around", () => {
+  /* Object.prototype cannot be reached through "constructor" here either way:
+     merge() replaces an own key rather than walking into the inherited
+     function. What the guard does is keep the key out of the state, and that
+     is what is checked; an ordinary unknown key next to it IS copied, so the
+     assertion can fail. */
+  test("constructor is dropped from an import, an ordinary unknown key is not", () => {
     const box = loadEngine();
     box.Core.load();
 
-    const wrogi = '{"schema":2,"constructor":{"prototype":{"obejscie":"yes"}}}';
-    try { box.Core.importState(wrogi); } catch { /* jw. */ }
+    box.Core.importState('{"schema":2,"constructor":{"prototype":{"obejscie":"yes"}},"zwykly":1}');
 
+    const own = k => Object.prototype.hasOwnProperty.call(box.Core.state, k);
+    assert.equal(own("zwykly"), true, "merge copies keys the defaults do not list");
+    assert.equal(own("constructor"), false, "constructor became a field of the state");
     assert.equal(probePrototype(box, "obejscie"), undefined);
   });
+
 
   test("an ordinary import still works after the sealing", () => {
     const box = loadEngine();
