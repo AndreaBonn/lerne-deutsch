@@ -571,6 +571,16 @@ LINGUAI.addUI("es", {
   "cils.writingNotScored": "Sin nota: solo comprobamos si el encargo se ha hecho entero.",
   "cils.again": "Otra vez",
   "cils.backToList": "Otras simulaciones",
+  "cils.familyGoethe": "Goethe-Zertifikat B1 (estilo)",
+  "cils.familyPflege": "Pflege: telc B1·B2 (estilo)",
+  "cils.structurePflege": "Cuatro pasos, en orden: Hören (25 minutos), Lesen y Sprachbausteine (60 minutos, un solo temporizador), Schreiben (30 minutos), Sprechen (16 minutos).",
+  "cils.sectionsLinePflege": "Hören, Lesen + Sprachbausteine, Schreiben, Sprechen",
+  "cils.pflegeNote": "Simulación no oficial al estilo de telc Deutsch B1·B2 Pflege, sin afiliación a telc gGmbH. No utiliza materiales oficiales de telc. Solo puntúa la parte receptiva (Hören, Lesen, Sprachbausteine) e indica la franja en la que cae el total: no certifica un nivel.",
+  "cils.kickerPflege": "Al estilo de telc Deutsch B1·B2 Pflege · Simulación no oficial",
+  "cils.sec.sprachbausteine": "Sprachbausteine (textos con huecos)",
+  "cils.scoreLabel": "puntos en la parte receptiva (Hören, Lesen, Sprachbausteine)",
+  "cils.band": "Franja {name} ({min}-{max})",
+  "cils.fasceNote": "Schreiben y Sprechen no los puntúa este simulador, y el certificado de telc depende también del examen oral: esta puntuación no dice si obtendrías el certificado.",
   "cils.oralSummary": "Sin calificar: solo comprobamos si lo que escribiste cubre lo que pedía el tema.",
 
   /* ---------------- Gramática ---------------- */

@@ -376,3 +376,83 @@ test("run outcomes retain the real weighted maximum instead of twelve", () => {
   assert.equal(run.esito().abilita.lettura.max, 0.6);
   assert.equal(run.esito().abilita.lettura.sopraSoglia, true);
 });
+
+/* ============================================================
+   The telc Pflege format: shared timer, receptive bands, no verdict.
+   The simulation is a fixture built here: real content arrives later.
+   ============================================================ */
+function simTelc() {
+  const mc = (ile) => ({
+    t: "mc", puntiPerItem: 1, consegna: "Wählen Sie a, b oder c.",
+    items: Array.from({ length: ile }, (_, i) => ({ q: `Frage ${i + 1}`, opts: ["a", "b", "c"], a: 0 }))
+  });
+  return {
+    id: "telc-fix", titoloIt: "Pflege Modelltest", official: false, formato: "telc-pflege",
+    sezioni: [
+      { id: "ascolto", modulo: "Hören", minuti: 25, prove: [mc(4), mc(10), mc(6), mc(3)] },
+      { id: "lettura", modulo: "Lesen", minuti: 60, prove: [mc(4), mc(5), mc(6), mc(3)] },
+      { id: "sprachbausteine", modulo: "Sprachbausteine", minuti: 60, prove: [mc(8), mc(10)] },
+      { id: "scritta", modulo: "Schreiben", minuti: 30, prove: [] },
+      { id: "orale", modulo: "Sprechen", minuti: 16, prove: [] }
+    ]
+  };
+}
+
+/** Answers the first `quante` items of a section correctly (index 0 is the key). */
+function rispondi(run, sez, quante) {
+  run.przygotuj(sez);
+  let resta = quante;
+  sez.prove.forEach((p, n) => p.items.forEach((_, i) => {
+    if (resta-- > 0) run.odpowiedz(sez.id, n, i, 0);
+  }));
+}
+
+describe("telc Pflege run", () => {
+  test("Lesen and Sprachbausteine are one step with one timer", () => {
+    const run = silnik().sandbox.CilsRun.create(simTelc());
+    assert.equal(run.ile, 4, "five sections, four steps");
+    assert.deepEqual(Array.from(run.grupa(), (s) => s.id), ["ascolto"]);
+    run.dalej();
+    assert.deepEqual(Array.from(run.grupa(), (s) => s.id), ["lettura", "sprachbausteine"]);
+    assert.equal(run.krok, 2);
+    assert.equal(run.dalej().id, "scritta", "one dalej() leaves the whole group");
+    assert.equal(run.krok, 3);
+  });
+
+  test("a Goethe attempt keeps one section per step", () => {
+    const box = silnik();
+    const run = box.sandbox.CilsRun.create(symulacja(box.sandbox.Cils));
+    assert.equal(run.ile, 4);
+    assert.equal(run.grupa().length, 1);
+  });
+
+  test("the result is read with the simulation's own format: 31 points, band B1, no verdict", () => {
+    const box = silnik();
+    const run = box.sandbox.CilsRun.create(simTelc());
+    rispondi(run, run.sekcja(), 23);
+    run.zamknij(run.sekcja());
+    run.dalej();
+    const [lesen, sprach] = run.grupa();
+    rispondi(run, lesen, 8);
+    run.zamknij(lesen);
+    rispondi(run, sprach, 0);
+    run.zamknij(sprach);
+    const e = run.esito();
+    assert.equal(e.punti, 31);
+    assert.equal(e.fascia.etichetta, "B1");
+    assert.equal(e.abilita, undefined, "not the per-module shape of Goethe");
+  });
+
+  test("the history entry of a band result carries the total and the band, not a verdict", () => {
+    const box = silnik();
+    const run = box.sandbox.CilsRun.create(simTelc());
+    rispondi(run, run.sekcja(), 23);
+    run.zamknij(run.sekcja());
+    const w = box.sandbox.CilsRun.wpis(run, run.esito(), 5);
+    assert.equal(w.ricettivo, 23);
+    assert.equal(w.fascia, "unter B1");
+    assert.equal(w.verdetto, undefined);
+    assert.equal(w.punti.ascolto, 23);
+    assert.equal(w.punti.sprachbausteine, 0);
+  });
+});

@@ -610,3 +610,90 @@ test("all production Teile have their own prompts and writing fields", () => {
   assert.ok(oral.includes("Meinung sagen"));
   assert.equal(ile(oral, 'name="arg"'), 0);
 });
+
+/* ============================================================
+   telc Pflege: the receptive result is a total and a band, never a verdict.
+   ============================================================ */
+describe("summary of a band result", () => {
+  function riepilogo(punti) {
+    const { sandbox: box } = loadEngine({ files: [...PLIKI, ...UI] });
+    box.Core.load();
+    box.I18n.set("it");
+    const fmt = box.EXAM_FORMATS["telc-pflege"];
+    const e = box.Cils.esito({ ascolto: { punti, max: 23 }, lettura: { punti: 0, max: 18 }, sprachbausteine: { punti: 0, max: 18 } }, fmt);
+    return box.CilsHtml.podsumowanie(e, () => false, null, null, fmt);
+  }
+
+  test("shows X/59, the band with its range and the fixed sentence", () => {
+    const out = riepilogo(31);
+    assert.ok(out.includes("31/59"), "the total over 59");
+    assert.ok(out.includes("Fascia B1 (27-42)"), "the band");
+    assert.ok(out.includes("cils-fasce-note"), "the fixed sentence is there");
+    assert.ok(out.includes("orale"), "the sentence mentions the oral exam");
+  });
+
+  test("names the band below B1 too, and the one above", () => {
+    assert.ok(riepilogo(10).includes("Fascia unter B1 (0-26)"));
+    assert.ok(riepilogo(50).includes("Fascia B2 (43-59)"));
+  });
+
+  test("the maximum follows the weighted tallies, not the item count", () => {
+    const { sandbox: box } = loadEngine({ files: [...PLIKI, ...UI] });
+    box.Core.load();
+    box.I18n.set("it");
+    const fmt = box.EXAM_FORMATS["telc-pflege"];
+    const e = box.Cils.esito({ ascolto: { punti: 20, max: 46 }, lettura: { punti: 11, max: 18 }, sprachbausteine: { punti: 0, max: 18 } }, fmt);
+    assert.ok(box.CilsHtml.podsumowanie(e, () => false, null, null, fmt).includes("31/82"));
+  });
+
+  test("timed-out modules are named; an out-of-range total shows no band", () => {
+    const { sandbox: box } = loadEngine({ files: [...PLIKI, ...UI] });
+    box.Core.load();
+    box.I18n.set("it");
+    const fmt = box.EXAM_FORMATS["telc-pflege"];
+    const e = box.Cils.esito({ ascolto: { punti: 60, max: 60 } }, fmt);
+    const out = box.CilsHtml.podsumowanie(e, (id) => id === "lettura", null, null, fmt);
+    assert.ok(out.includes("Lesen (lettura) (tempo scaduto)"));
+    assert.ok(!out.includes("Hören (ascolto) (tempo scaduto)"));
+    assert.equal(ile(out, "cils-band"), 0);
+    assert.equal(ile(riepilogo(31), "cils-band"), 1, "paired case: the band does show up");
+  });
+
+  test("with both families the Goethe card sits under its own title, not above the Pflege one", () => {
+    const { sandbox: box } = loadEngine({ files: [...PLIKI, ...UI] });
+    box.Core.load();
+    box.I18n.set("it");
+    const out = box.CilsHtml.lista([{ id: "g", titoloIt: "G" }, { id: "p", titoloIt: "P", formato: "telc-pflege" }]);
+    const goethe = out.indexOf(box.Core.esc(box.I18n.t("cils.familyGoethe")));
+    assert.ok(goethe >= 0);
+    assert.ok(out.indexOf(box.Core.esc(box.I18n.t("cils.structure"))) > goethe);
+    assert.ok(out.indexOf(box.Core.esc(box.I18n.t("cils.thresholdSource"))) > goethe);
+  });
+
+  test("no pass verdict, no Goethe threshold, no per-module table", () => {
+    const out = riepilogo(31);
+    assert.doesNotMatch(out, /bestanden|superato|passed|cils-verdict|Soglia/i);
+    assert.equal(ile(out, "cils-tab"), 0);
+  });
+
+  test("the list shows both families, each with its own unofficial note", () => {
+    const { sandbox: box } = loadEngine({ files: [...PLIKI, ...UI] });
+    box.Core.load();
+    box.I18n.set("it");
+    const out = box.CilsHtml.lista([
+      { id: "g", titoloIt: "Modelltest G" },
+      { id: "p", titoloIt: "Pflege P", formato: "telc-pflege" }
+    ]);
+    assert.ok(out.includes("Pflege: telc B1·B2"));
+    assert.ok(out.includes("telc gGmbH"));
+    assert.ok(out.indexOf("Modelltest G") < out.indexOf("Pflege P"), "Goethe first");
+    assert.equal(ile(out, "js-start"), 2);
+  });
+
+  test("a closed section can be drawn with a name prefix so two share one page", () => {
+    const sec = { id: "sprachbausteine", prove: [{ t: "mc", items: [{ q: "x", opts: ["a", "b", "c"], a: 0 }] }] };
+    const out = html().corpoChiuso(sec, { prefix: "sprachbausteine-" });
+    assert.ok(out.includes('name="sprachbausteine-p0i0"'));
+    assert.equal(ile(out, 'name="p0i0"'), 0);
+  });
+});

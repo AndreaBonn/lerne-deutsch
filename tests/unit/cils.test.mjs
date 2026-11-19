@@ -426,10 +426,19 @@ test("telc conformance checks each fixed item count", () => {
 test("telc receptive totals select bands without granting a pass", () => {
   const C = silnik();
   const f = C.formato({ formato: "telc-pflege" });
-  for (const [n, band, verdict] of [[26, "unter B1", "sotto-soglia"], [27, "B1", "indeterminato"], [42, "B1", "indeterminato"], [43, "B2", "indeterminato"], [59, "B2", "indeterminato"]]) {
+  for (const [n, band] of [[26, "unter B1"], [27, "B1"], [42, "B1"], [43, "B2"], [59, "B2"]]) {
     const e = C.esito({ ascolto: { punti: 10, max: 23 }, lettura: { punti: n - 10, max: 18 }, sprachbausteine: { punti: 0, max: 18 } }, f);
     assert.equal(e.punti, n);
     assert.equal(e.fascia.etichetta, band);
-    assert.equal(e.verdetto, verdict);
+    assert.equal(e.verdetto, undefined, "a band is not a verdict, not even a negative one");
+    assert.equal(e.max, 59, "the maximum is the sum of the module maxima");
   }
+});
+
+test("telc band result: the maximum is the weighted sum of the tallies, and an out-of-range total has no band", () => {
+  const C = silnik();
+  const f = C.formato({ formato: "telc-pflege" });
+  const e = C.esito({ ascolto: { punti: 20, max: 46 }, lettura: { punti: 11, max: 18 }, sprachbausteine: { punti: 0, max: 18 } }, f);
+  assert.equal(e.max, 82);
+  assert.equal(C.esito({ ascolto: { punti: 60, max: 60 } }, f).fascia, null);
 });

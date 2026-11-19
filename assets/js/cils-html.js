@@ -39,17 +39,44 @@
    * The page title is set by the view: `pageHead` lives in Views, and this
    * file touches neither Views nor the DOM.
    */
+  /** A heading inside a step that holds more than one section. */
+  function sottotitolo(testo) { return '<h2 class="cils-family">' + esc(testo) + "</h2>"; }
+
+  /** Whether a simulation (or format) scores by receptive bands, as telc Pflege does. */
+  function ricettiva(formato) { return !!formato && formato.punteggio === "fasceRicettive"; }
+
+  function righe(symulacje, kluczLinii) {
+    return '<div class="stack">' + symulacje.map(function (s) {
+      return '<div class="list-row"><span class="list-row__main"><b>' + esc(s.titoloIt) + "</b>" +
+        "<span>" + esc(t(kluczLinii)) + "</span></span>" +
+        '<button class="btn btn--primary btn--sm js-start" data-id="' + esc(s.id) + '">' +
+        esc(t("cils.start")) + "</button></div>";
+    }).join("") + "</div>";
+  }
+
+  /**
+   * The list has two families when the data has both: the Goethe ones keep
+   * the markup they always had, the Pflege ones sit under their own heading
+   * with their own unofficial note. With Goethe alone nothing changes.
+   */
   function lista(symulacje) {
-    return '<div class="callout callout--info"><b>' + esc(t("cils.limitLabel")) + "</b> " +
-      esc(t("cils.limit")) + "</div>" +
-      '<div class="card"><p class="cils-struct">' + esc(t("cils.structure")) + "</p>" +
-      '<p class="cils-src">' + esc(t("cils.thresholdSource")) + "</p></div>" +
-      '<div class="stack">' + (symulacje || []).map(function (s) {
-        return '<div class="list-row"><span class="list-row__main"><b>' + esc(s.titoloIt) + "</b>" +
-          "<span>" + esc(t("cils.sectionsLine")) + "</span></span>" +
-          '<button class="btn btn--primary btn--sm js-start" data-id="' + esc(s.id) + '">' +
-          esc(t("cils.start")) + "</button></div>";
-      }).join("") + "</div>";
+    var tutte = symulacje || [];
+    var pflege = tutte.filter(function (s) { return ricettiva(global.Cils.formato(s)); });
+    var goethe = tutte.filter(function (s) { return pflege.indexOf(s) < 0; });
+    var testa = '<div class="callout callout--info"><b>' + esc(t("cils.limitLabel")) + "</b> " +
+      esc(t("cils.limit")) + "</div>";
+    var schedaGoethe = '<div class="card"><p class="cils-struct">' + esc(t("cils.structure")) + "</p>" +
+      '<p class="cils-src">' + esc(t("cils.thresholdSource")) + "</p></div>";
+    if (!pflege.length) return testa + schedaGoethe + righe(goethe, "cils.sectionsLine");
+    /* The Goethe card describes the Goethe family only: with two families it
+       goes under its own title, so it cannot read as covering telc too. */
+    return testa +
+      '<h2 class="cils-family">' + esc(t("cils.familyGoethe")) + "</h2>" + schedaGoethe +
+      righe(goethe, "cils.sectionsLine") +
+      '<h2 class="cils-family">' + esc(t("cils.familyPflege")) + "</h2>" +
+      '<div class="card"><p class="cils-struct">' + esc(t("cils.structurePflege")) + "</p>" +
+      '<p class="cils-src">' + esc(t("cils.pflegeNote")) + "</p></div>" +
+      righe(pflege, "cils.sectionsLinePflege");
   }
 
   /* ═══════════════════ The section frame ═══════════════════ */
@@ -83,13 +110,20 @@
 
   /* ═══════════════════ Listening and reading: closed answers ═══════════════════ */
 
-  function corpoChiuso(sez) {
+  /**
+   * @param {object} sez
+   * @param {{prefix?:string}} [opzioni] a prefix for the radio names, so a
+   *   second section on the same page (Sprachbausteine under Lesen) cannot
+   *   share a group with the first
+   */
+  function corpoChiuso(sez, opzioni) {
+    var prefix = (opzioni && opzioni.prefix) || "";
     return '<div class="js-body">' + (sez.prove || []).map(function (p, n) {
-      return prova(sez, p, n);
+      return prova(sez, p, n, prefix);
     }).join("") + "</div>";
   }
 
-  function prova(sez, p, n) {
+  function prova(sez, p, n, prefix) {
     var testa = '<div class="card cils-prova"><h2 class="cils-h">' +
       esc(t("cils.testN", { n: n + 1 })) + "</h2>" +
       '<p class="cils-consegna">' + esc(p.consegna) + "</p>";
@@ -106,7 +140,7 @@
     }).join("");
 
     return testa + '<ol class="cils-items">' + (p.items || []).map(function (it, i) {
-      return "<li>" + item(p, it, n, i) + "</li>";
+      return "<li>" + item(p, it, n, i, prefix) + "</li>";
     }).join("") + "</ol></div>";
   }
 
@@ -127,8 +161,8 @@
     }).join("") + "</p>";
   }
 
-  function item(p, it, n, i) {
-    var nome = "p" + n + "i" + i;
+  function item(p, it, n, i, prefix) {
+    var nome = (prefix || "") + "p" + n + "i" + i;
     var options = it.opts || [];
     if (p.t === "lueckeAbbina") options = p.opts || [];
     if (p.t === "vf") options = ["richtig", "falsch"];
@@ -327,19 +361,50 @@
    * threshold is enough to say no, no number of skills above it is enough to
    * say yes. Here we only read the field, so that two places do not decide it.
    */
-  function podsumowanie(esito, czyScadla, pisemna, ustna) {
-    return '<div class="card">' + abilita(esito, czyScadla) +
-      '<p class="cils-verdict">' +
-      esc(t(esito.verdetto === "sotto-soglia" ? "cils.verdictBelow" : "cils.verdictUnknown")) + "</p>" +
-      '<p class="cils-src">' + esc(t("cils.thresholdSource")) + "</p></div>" +
-      scritta(pisemna) + orale(ustna) +
+  /** The production cards and the two exit buttons, common to both summaries. */
+  function chiusura(pisemna, ustna) {
+    return scritta(pisemna) + orale(ustna) +
       '<div class="cils-acts">' +
       '<button class="btn btn--primary js-again">' + esc(t("cils.again")) + "</button>" +
       '<button class="btn btn--ghost js-list">' + esc(t("cils.backToList")) + "</button></div>";
   }
 
+  function podsumowanie(esito, czyScadla, pisemna, ustna, formato) {
+    if (ricettiva(formato)) return podsumowanieFasce(esito, czyScadla, pisemna, ustna, formato);
+    return '<div class="card">' + abilita(esito, czyScadla) +
+      '<p class="cils-verdict">' +
+      esc(t(esito.verdetto === "sotto-soglia" ? "cils.verdictBelow" : "cils.verdictUnknown")) + "</p>" +
+      '<p class="cils-src">' + esc(t("cils.thresholdSource")) + "</p></div>" +
+      chiusura(pisemna, ustna);
+  }
+
+  /**
+   * The summary of a band result (telc Pflege).
+   *
+   * A total and the band it falls in, then the sentence that says what the
+   * number is not. There is no verdict field here on purpose: the simulation
+   * scores the receptive part only, and the certificate also depends on the
+   * oral exam it cannot grade.
+   */
+  function podsumowanieFasce(esito, czyScadla, pisemna, ustna, formato) {
+    var f = esito.fascia;
+    var scadute = formato.moduli.filter(function (m) { return czyScadla(m.id); }).map(function (m) {
+      return t("cils.sec." + m.id) + " " + t("cils.expiredMark");
+    });
+    return '<div class="card"><p class="cils-score">' +
+      '<span class="cils-score__n">' + esc(esito.punti + "/" + esito.max) + "</span> " +
+      "<span>" + esc(t("cils.scoreLabel")) + "</span></p>" +
+      (f ? '<p class="cils-band">' + esc(t("cils.band", { name: f.etichetta, min: f.min, max: f.max })) + "</p>" : "") +
+      (scadute.length ? '<p class="cils-hint">' + esc(scadute.join(", ")) + "</p>" : "") +
+      '<p class="cils-fasce-note">' + esc(t("cils.fasceNote")) + "</p>" +
+      '<p class="cils-src">' + esc(t("cils.pflegeNote")) + "</p></div>" +
+      chiusura(pisemna, ustna);
+  }
+
   global.CilsHtml = {
     lista: lista,
+    ricettiva: ricettiva,
+    sottotitolo: sottotitolo,
     barra: barra,
     coda: coda,
     corpoChiuso: corpoChiuso,

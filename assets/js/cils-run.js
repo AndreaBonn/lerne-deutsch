@@ -29,7 +29,19 @@
   var MAX_HISTORII = 50;
 
   function create(s) {
-    var order = (s.sezioni || []).map(function (section) { return section.id; });
+    /* A STEP is a group of sections under one clock. For Goethe every group
+       has one section; in the telc Pflege format Sprachbausteine declares
+       `tempoCondiviso: "lettura"` and sits in the same group as Lesen, so
+       the two share one 60-minute timer and one "close" button. */
+    var format = global.Cils.formato(s);
+    var groups = [];
+    (s.sezioni || []).forEach(function (section) {
+      var module = format.moduli.filter(function (m) { return m.id === section.id; })[0];
+      var last = groups[groups.length - 1];
+      if (module && module.tempoCondiviso && last && last[0].id === module.tempoCondiviso) last.push(section);
+      else groups.push([section]);
+    });
+    var order = groups.map(function (group) { return group[0].id; });
     var run = {
       sim: s,
       i: 0,
@@ -45,6 +57,9 @@
       var id = order[run.i];
       return id ? global.Cils.sezione(run.sim, id) : null;
     }
+
+    /** Every section of the current step (one, except where a timer is shared). */
+    function grupa() { return groups[run.i] || []; }
 
     /**
      * An empty answer grid: one list per task, as long as its items.
@@ -80,6 +95,7 @@
     return {
       dane: run,
       sekcja: sekcja,
+      grupa: grupa,
       przygotuj: przygotuj,
       odpowiedz: odpowiedz,
       zamknij: zamknij,
@@ -115,7 +131,7 @@
         run.orale.testo = String(testo == null ? "" : testo);
         return true;
       },
-      esito: function () { return global.Cils.esito(run.szczegoly); },
+      esito: function () { return global.Cils.esito(run.szczegoly, global.Cils.formato(run.sim)); },
       get krok() { return run.i + 1; },
       get ile() { return order.length; },
       get skonczone() { return run.i >= order.length; }
@@ -129,13 +145,22 @@
    */
   function wpis(run, e, teraz) {
     var d = run.dane;
-    return {
+    var entry = {
       sim: d.sim.id,
       ts: teraz,
       punti: { ascolto: d.punti.ascolto || 0, lettura: d.punti.lettura || 0 },
-      scadute: Object.keys(d.scaduta),
-      verdetto: e.verdetto
+      scadute: Object.keys(d.scaduta)
     };
+    if (global.Cils.formato(d.sim).punteggio !== "fasceRicettive") {
+      entry.verdetto = e.verdetto;
+      return entry;
+    }
+    /* A band result has no verdict to remember: the total and the band
+       are all it says. */
+    entry.punti.sprachbausteine = d.punti.sprachbausteine || 0;
+    entry.ricettivo = e.punti;
+    entry.fascia = e.fascia ? e.fascia.etichetta : null;
+    return entry;
   }
 
   /**

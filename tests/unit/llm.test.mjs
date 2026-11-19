@@ -567,6 +567,21 @@ describe("reading an exam production", () => {
     assert.doesNotMatch(ciala[0], /<answer>Scrivi una mail/, "the task is not sent as the answer");
   });
 
+  test("the prompt names the exam format of the task: telc Pflege, else Goethe", async () => {
+    const corpi = [];
+    for (const formato of [{ nome: "telc Deutsch B1·B2 Pflege" }, undefined]) {
+      const c = course({ order: ["openai"] });
+      c.box.sandbox.Llm.useTransport((req) => {
+        corpi.push(JSON.stringify(req.body));
+        return Promise.resolve(proza("openai", "La struttura è chiara."));
+      });
+      await czytaj(c.Llm, { ...PRODUKCJA, formato });
+    }
+    assert.match(corpi[0], /telc Deutsch B1·B2 Pflege \(unofficial\)/);
+    assert.doesNotMatch(corpi[0], /Goethe-Zertifikat/);
+    assert.match(corpi[1], /Goethe-Zertifikat B1 \(unofficial\)/);
+  });
+
   test("ordinary feedback comes back as it was written", async () => {
     const c = course({ answers: { gemini: proza("gemini", "Hai scritto «non posso venire»: va bene così.") } });
     const out = await czytaj(c.Llm, PRODUKCJA);

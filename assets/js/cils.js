@@ -225,12 +225,15 @@
 
   function esitoFasce(punti, selected) {
     var total = 0;
+    var max = 0;
     selected.moduli.forEach(function (module) {
-      if (module.punteggio && punti[module.id]) total += punti[module.id].punti || 0;
+      if (!module.punteggio || !punti[module.id]) return;
+      total += punti[module.id].punti || 0;
+      max += punti[module.id].max || 0;
     });
     var band = selected.fasce.filter(function (f) { return total >= f.min && total <= f.max; })[0];
-    return { punti: total, fascia: band || null,
-      verdetto: band && band.min === 0 ? "sotto-soglia" : "indeterminato" };
+    /* No verdict field: even "below B1" is a band, not a pass/fail call. */
+    return { punti: total, max: max, fascia: band || null };
   }
 
   /**

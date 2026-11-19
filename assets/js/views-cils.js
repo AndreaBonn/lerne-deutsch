@@ -136,9 +136,17 @@
 
   /* ═══════════════════ The sections ═══════════════════ */
 
+  /** The kicker names the exam style of THIS simulation, not always Goethe. */
+  function kicker() {
+    return t(H.ricettiva(Cils.formato(run.dane.sim)) ? "cils.kickerPflege" : "cils.kicker");
+  }
+
+  /* A step with a shared timer (Lesen + Sprachbausteine) is titled with all
+     of its sections and counts the minutes once. */
   function intestazione(sez) {
+    var titolo = run.grupa().map(function (s) { return t("cils.sec." + s.id); }).join(" + ");
     return H.barra(run.krok, run.ile) +
-      pageHead(t("cils.kicker") + " · " + esc(run.dane.sim.titoloIt), t("cils.sec." + sez.id),
+      pageHead(kicker() + " · " + esc(run.dane.sim.titoloIt), titolo,
         t("cils.minutes", { n: sez.minuti }));
   }
 
@@ -172,8 +180,7 @@
 
   function scadi(id) {
     run.scadla(id);
-    var box = el().querySelector(".js-body");
-    if (box) box.setAttribute("aria-disabled", "true");
+    el().querySelectorAll(".js-body").forEach(function (box) { box.setAttribute("aria-disabled", "true"); });
     var avvisoEl = el().querySelector(".js-expired");
     if (avvisoEl) avvisoEl.hidden = false;
     el().querySelectorAll(".js-body input, .js-body button, .js-body textarea")
@@ -183,21 +190,32 @@
   /* ---------------- Listening and reading: closed answers ---------------- */
 
   function sezioneChiusa(sez) {
-    run.przygotuj(sez);
+    var gruppo = run.grupa();
+    gruppo.forEach(function (s) { run.przygotuj(s); });
 
-    set(intestazione(sez) + H.corpoChiuso(sez) + H.coda("cils.closeSection"));
+    /* Only the first section of a step keeps the bare radio names; the
+       others carry their id, or two sections would share answer groups. */
+    var corpo = gruppo.map(function (s, k) {
+      return k ? H.sottotitolo(t("cils.sec." + s.id)) + H.corpoChiuso(s, { prefix: s.id + "-" })
+        : H.corpoChiuso(s);
+    }).join("");
+    set(intestazione(sez) + corpo + H.coda("cils.closeSection"));
 
-    podepnijRisposte(sez);
+    podepnijRisposte(gruppo);
     if (sez.id === "ascolto") podepnijAscolti(sez);
-    razTylko(el().querySelector(".js-next"), function () { chiudiChiusa(sez); });
-    avviaTimer(sez.minuti * 60, function () { scadi(sez.id); });
+    razTylko(el().querySelector(".js-next"), function () { chiudiChiusa(gruppo); });
+    avviaTimer(sez.minuti * 60, function () { gruppo.forEach(function (s) { scadi(s.id); }); });
   }
 
-  function podepnijRisposte(sez) {
-    el().querySelectorAll('.js-body input[type="radio"]').forEach(function (r) {
-      r.addEventListener("change", function () {
-        var p = Number(r.getAttribute("data-p")), i = Number(r.getAttribute("data-i"));
-        run.odpowiedz(sez.id, p, i, Number(r.value));
+  /** One `.js-body` per section of the step, in order. */
+  function podepnijRisposte(gruppo) {
+    var corpi = el().querySelectorAll(".js-body");
+    gruppo.forEach(function (sez, k) {
+      corpi[k].querySelectorAll('input[type="radio"]').forEach(function (r) {
+        r.addEventListener("change", function () {
+          var p = Number(r.getAttribute("data-p")), i = Number(r.getAttribute("data-i"));
+          run.odpowiedz(sez.id, p, i, Number(r.value));
+        });
       });
     });
   }
@@ -216,8 +234,8 @@
     });
   }
 
-  function chiudiChiusa(sez) {
-    run.zamknij(sez);
+  function chiudiChiusa(gruppo) {
+    gruppo.forEach(function (s) { run.zamknij(s); });
     avanti();
   }
 
@@ -297,7 +315,7 @@
   function rewizja() {
     Views.onLeave = fermaTimer;
     var powod = !nagranie;
-    set(pageHead(t("cils.kicker") + " · " + esc(run.dane.sim.titoloIt), t("cils.reviewTitle"), "") +
+    set(pageHead(kicker() + " · " + esc(run.dane.sim.titoloIt), t("cils.reviewTitle"), "") +
       H.rewizja(run.dane.orale, powod) + H.coda("cils.reviewDone"));
 
     if (!powod) {
@@ -356,8 +374,8 @@
     var e = run.esito();
     salva(e);
 
-    set(pageHead(t("cils.kicker") + " · " + esc(run.dane.sim.titoloIt), t("cils.resultTitle"), "") +
-      H.podsumowanie(e, run.czyScadla, run.dane.scritta, run.dane.orale));
+    set(pageHead(kicker() + " · " + esc(run.dane.sim.titoloIt), t("cils.resultTitle"), "") +
+      H.podsumowanie(e, run.czyScadla, run.dane.scritta, run.dane.orale, Cils.formato(run.dane.sim)));
 
     el().querySelector(".js-again").addEventListener("click", function () { App.go("esame", { id: run.dane.sim.id }); });
     el().querySelector(".js-list").addEventListener("click", function () { App.go("esame"); });
@@ -404,7 +422,8 @@
       box.textContent = t("cils.reading");
 
       Llm.reportProduction({
-        sezione: cel.sezione, traccia: cel.traccia, testo: cel.testo, cefr: "B1"
+        sezione: cel.sezione, traccia: cel.traccia, testo: cel.testo, cefr: "B1",
+        formato: Cils.formato(run.dane.sim)
       }, function (tekst) {
         if (!zywy) return;
         box.classList.remove("is-waiting");

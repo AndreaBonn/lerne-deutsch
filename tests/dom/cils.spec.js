@@ -218,3 +218,112 @@ test("Goethe Teile collect matching answers and every writing production", async
   await expect(page.locator(".cils-check").nth(0)).toContainText("✓ Gruß");
   await expect(page.locator(".cils-check").nth(1)).toContainText("✓ Meinung");
 });
+
+/* ============================================================
+   telc Pflege: two families in the list, Lesen + Sprachbausteine under one
+   clock, and a result that is a total and a band, never a verdict.
+   The simulation is a fixture injected here: real content comes later.
+   ============================================================ */
+async function iniettaTelc(page, lettura) {
+  await page.goto("/index.html#/esame");
+  await page.waitForSelector(".js-start");
+  await page.evaluate(minutiLettura => {
+    I18n.set("it");
+    const mc = ile => ({
+      t: "mc", puntiPerItem: 1, consegna: "Wählen Sie a, b oder c.",
+      items: Array.from({ length: ile }, (_, i) => ({ q: "Frage " + (i + 1), opts: ["x", "y", "z"], a: 0 }))
+    });
+    window.CILS.push({
+      id: "telc-fix", titoloIt: "Pflege Modelltest", official: false, formato: "telc-pflege",
+      sezioni: [
+        { id: "ascolto", modulo: "Hören", minuti: 25, prove: [mc(4), mc(10), mc(6), mc(3)] },
+        { id: "lettura", modulo: "Lesen", minuti: minutiLettura, prove: [mc(4), mc(5), mc(6), mc(3)] },
+        { id: "sprachbausteine", modulo: "Sprachbausteine", minuti: minutiLettura, prove: [
+          { t: "lueckeAbbina", puntiPerItem: 1, consegna: "Ordnen Sie zu.",
+            opts: Array.from({ length: 9 }, (_, i) => "Wort " + i),
+            testo: Array.from({ length: 9 }, (_, i) => "Teil " + i),
+            items: Array.from({ length: 8 }, () => ({ a: 0 })) },
+          { t: "lueckeMc", puntiPerItem: 1, consegna: "Wählen Sie.",
+            testo: Array.from({ length: 11 }, (_, i) => "Satz " + i),
+            items: Array.from({ length: 10 }, () => ({ opts: ["x", "y", "z"], a: 0 })) }
+        ] },
+        { id: "scritta", modulo: "Schreiben", minuti: 30, prove: [],
+          consegna: "Schreiben Sie einen Bericht.",
+          tracce: [{ it: "Aufnahmebericht", parole: { min: 3, max: 50 }, richiede: [] }] },
+        { id: "orale", modulo: "Sprechen", minuti: 16, prove: [], presentazione: [],
+          argomenti: [{ it: "Pflegealltag", richiede: [] }] }
+      ]
+    });
+    Views.esame();
+  }, lettura);
+}
+
+/** Ticks the first `n` radios with value 0 among those found inside `scope`. */
+async function segnaGiuste(page, scope, n) {
+  const radios = page.locator(`${scope} input[type="radio"][value="0"]`);
+  for (let i = 0; i < n; i++) await radios.nth(i).check();
+}
+
+test.describe("telc Pflege simulation", () => {
+  test("the list shows both families, Goethe first, each with its unofficial note", async ({ page }) => {
+    await iniettaTelc(page, 60);
+    const titoli = await page.locator(".cils-family").allTextContents();
+    expect(titoli).toEqual(["Goethe-Zertifikat B1 (stile)", "Pflege: telc B1·B2 (stile)"]);
+    await expect(page.getByText(/non affiliata a telc gGmbH/)).toBeVisible();
+    await expect(page.getByText(/non affiliata al Goethe-Institut/).first()).toBeVisible();
+    await expect(page.locator(".js-start").first()).toHaveAttribute("data-id", "sim-1");
+    await expect(page.locator('.js-start[data-id="telc-fix"]')).toBeVisible();
+  });
+
+  test("Lesen and Sprachbausteine share one clock and one step; 31 right answers give 31/59 and the B1 band", async ({ page }) => {
+    await iniettaTelc(page, 60);
+    await page.locator('.js-start[data-id="telc-fix"]').click();
+    await page.waitForSelector(".cils-clock");
+    await expect(page.locator(".cils-step")).toContainText(/1\D+4/);
+    await segnaGiuste(page, ".js-body", 23);
+    await page.locator(".js-next").click();
+
+    await expect(page.locator(".cils-step")).toContainText(/2\D+4/);
+    await expect(page.locator(".cils-clock")).toHaveCount(1);
+    await expect(page.locator(".js-body")).toHaveCount(2);
+    await expect(page.locator("h1, h2").filter({ hasText: "Lesen" }).first()).toContainText("Sprachbausteine");
+    /* Two sections on one page must not share radio groups. */
+    const nomi = await page.locator('.js-body input[type="radio"]').evaluateAll(
+      els => els.map(e => e.name));
+    const gruppi = new Set(nomi);
+    const attesi = 18 + 8 + 10;
+    expect(gruppi.size).toBe(attesi);
+    await page.locator('input[name="p0i0"][value="0"]').check();
+    await page.locator('input[name="p0i1"][value="0"]').check();
+    await page.locator('input[name="p0i2"][value="0"]').check();
+    await page.locator('input[name="p0i3"][value="0"]').check();
+    await page.locator('input[name="p1i0"][value="0"]').check();
+    await page.locator('input[name="p1i1"][value="0"]').check();
+    await page.locator('input[name="p1i2"][value="0"]').check();
+    await page.locator('input[name="p1i3"][value="0"]').check();
+    await page.locator(".js-next").click();
+
+    await page.fill(".js-text", "Bericht");
+    await page.locator(".js-next").click();
+    await page.locator(".js-next").click();
+    await page.locator(".js-next").click();
+
+    await expect(page.locator(".cils-score__n")).toHaveText("31/59");
+    await expect(page.locator(".cils-band")).toHaveText("Fascia B1 (27-42)");
+    await expect(page.locator(".cils-fasce-note")).toContainText("esame orale");
+    await expect(page.locator(".cils-tab")).toHaveCount(0);
+    const corpo = await page.locator("main, body").first().innerText();
+    expect(corpo).not.toMatch(/bestanden|superato|passed|promosso/i);
+  });
+
+  test("when the shared time runs out both sections are locked", async ({ page }) => {
+    await iniettaTelc(page, 0.05);
+    await page.locator('.js-start[data-id="telc-fix"]').click();
+    await page.locator(".js-next").click();
+    await page.waitForSelector(".js-expired:not([hidden])", { timeout: 20000 });
+    const tutti = await page.evaluate(() =>
+      [...document.querySelectorAll(".js-body input")].every(i => i.disabled));
+    expect(tutti).toBe(true);
+    await expect(page.locator(".js-body").nth(1)).toHaveAttribute("aria-disabled", "true");
+  });
+});

@@ -189,7 +189,7 @@
    * rewritten the text in between, and a key carrying the whole text to tell
    * the two apart would be the text itself.
    *
-   * @param {object} task  {sezione:"scritta"|"orale", traccia, testo, cefr}
+   * @param {object} task  {sezione:"scritta"|"orale", traccia, testo, cefr, formato}
    * @param {function} cb  receives a string, or null when there is nothing to show
    */
   function reportProduction(task, cb) {
@@ -206,7 +206,7 @@
 
     global.Consent.zZgodaLlm(function () {
       spent++;
-      var prompt = global.LlmPrompts.esame(settings.lang, t.sezione, t.traccia, t.testo, t.cefr);
+      var prompt = global.LlmPrompts.esame(settings.lang, t.sezione, t.traccia, t.testo, t.cefr, t.formato);
       var deadline = global.Date.now() + TOTAL_MS;
       global.LlmNet.askChain(order, keys, prompt, deadline, function (out, failures) {
         if (out === null) {

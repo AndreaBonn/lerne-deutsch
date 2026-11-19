@@ -1453,6 +1453,11 @@ mark{background:var(--oro);color:var(--on-oro);border-radius:3px;padding:0 2px;}
 /* nie szare do granicy niewidzialności. */
 .cils-src{font-size:.88rem;color:var(--ink-soft);line-height:1.55;margin:10px 0 0;}
 .cils-struct{margin:0;line-height:1.6;}
+.cils-family{font-size:1.1rem;margin:22px 0 10px;}
+.cils-score{margin:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;}
+.cils-score__n{font-size:2rem;font-weight:700;font-variant-numeric:tabular-nums;}
+.cils-band{margin:6px 0 0;font-weight:600;line-height:1.5;}
+.cils-fasce-note{margin:12px 0 0;line-height:1.6;}
 
 /* Conjugator: long German forms wrap inside the cell instead of being clipped. */
 .conj-note{margin:0 0 12px;padding:8px 12px;border:1px solid var(--line-strong);border-radius:var(--r-m);background:var(--paper-2);font-size:.88rem;}

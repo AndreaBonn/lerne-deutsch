@@ -559,6 +559,16 @@ LINGUAI.addUI("en", {
   "cils.writingNotScored": "Not scored: we only check whether the whole brief was carried out.",
   "cils.again": "Try again",
   "cils.backToList": "Other simulations",
+  "cils.familyGoethe": "Goethe-Zertifikat B1 (style)",
+  "cils.familyPflege": "Pflege: telc B1·B2 style",
+  "cils.structurePflege": "Four steps, in order: Hören (25 minutes), Lesen and Sprachbausteine (60 minutes, one timer), Schreiben (30 minutes), Sprechen (16 minutes).",
+  "cils.sectionsLinePflege": "Hören, Lesen + Sprachbausteine, Schreiben, Sprechen",
+  "cils.pflegeNote": "Unofficial simulation in the style of telc Deutsch B1·B2 Pflege, not affiliated with telc gGmbH. It uses no official telc material. It scores the receptive part only (Hören, Lesen, Sprachbausteine) and shows the band the total falls in: it does not certify a level.",
+  "cils.kickerPflege": "In the style of telc Deutsch B1·B2 Pflege · Unofficial simulation",
+  "cils.sec.sprachbausteine": "Sprachbausteine (gap texts)",
+  "cils.scoreLabel": "points in the receptive part (Hören, Lesen, Sprachbausteine)",
+  "cils.band": "Band {name} ({min}-{max})",
+  "cils.fasceNote": "Schreiben and Sprechen are not scored by this simulator, and the telc certificate also depends on the oral exam: this score does not tell you whether you would get the certificate.",
   "cils.oralSummary": "Not scored: we only check whether what you wrote down covers what the topic asked for.",
 
   /* ---------------- Grammar ---------------- */
