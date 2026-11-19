@@ -73,7 +73,7 @@ Le tabelle sotto restano il dettaglio di ogni voce. Già fatte prima della notte
 - [x] T6.3 cils.spec con 4 simulazioni | dip: T6.1
 - [x] T6.4 swversion + click-through finale | dip: T6.2,T6.3
 - [?] T7.1 revisione dell'infermiera direttamente nell'app (Q: in attesa del riscontro dell'infermiera)
-- [ ] T8.1 coniugatore: stürzen al Perfekt con sein, hinfallen con prefisso separabile hin- (Q10 A)
+- [x] T8.1 coniugatore: stürzen al Perfekt con sein, hinfallen con prefisso separabile hin- (Q10 A)
 
 ## Fase 1 - Pseudo-livello e unità pilota
 
