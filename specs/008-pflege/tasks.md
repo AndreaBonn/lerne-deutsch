@@ -70,7 +70,7 @@ Le tabelle sotto restano il dettaglio di ogni voce. Già fatte prima della notte
 - [x] T5.14 CLAUDE.md fasceRicettive | dip: T5.6
 - [x] T6.1 contenuto Modelltest Pflege 2 | dip: T5.13
 - [ ] T6.2 audio + human in attesa | dip: T6.1
-- [ ] T6.3 cils.spec con 4 simulazioni | dip: T6.1
+- [x] T6.3 cils.spec con 4 simulazioni | dip: T6.1
 - [ ] T6.4 swversion + click-through finale | dip: T6.2,T6.3
 - [?] T7.1 revisione dell'infermiera (Q: esterna, a fine flusso, la porta l'utente)
 
