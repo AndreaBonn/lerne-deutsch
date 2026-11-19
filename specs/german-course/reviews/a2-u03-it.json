@@ -1,20 +1,20 @@
 {
-  "bundleHash": "61eade1b89be8b1758bb9a5b57a8c31b7c59fd715a93a7f06663447d26551335",
+  "bundleHash": "6614c2400f2a6c1c30ca8cb3d0bf2c0fd3187af37642b9f5b73d278fafbb46a8",
   "findings": [
     {
-      "kind": "chiave di traduzione",
-      "msg": "La frase italiana «Lo vedo domani» richiede sehen; treffen significa «incontrare» e cambia il significato. Rimuovere le due risposte con treffen e correggere la spiegazione.",
-      "path": "merged.lessons[0].exercises[7]"
-    },
-    {
       "kind": "spiegazione grammaticale",
-      "msg": "La regola secondo cui, con soggetto nominale, il pronome oggetto lo precede nella subordinata è troppo categorica: «weil mein Bruder ihn kennt» è anch'essa una frase corretta e neutra. Presentare entrambi gli ordini come possibili.",
+      "msg": "La frase secondo cui il pronome oggetto sta subito dopo il verbo nella frase principale neutra è troppo generale: con inversione e soggetto pronominale segue il soggetto, come nello stesso esempio «Morgen sehe ich ihn». Specificare che l'ordine dipende anche dal soggetto e dalla posizione iniziale.",
       "path": "merged.lessons[0].theory[0].p"
     },
     {
-      "kind": "spiegazione grammaticale",
-      "msg": "«I due pronomi si fondono» non descrive correttamente «te lo»: in italiano i pronomi restano due parole separate. Precisare che possono unirsi graficamente in forme come «glielo», mentre l'ordine resta dativo + accusativo.",
-      "path": "merged.lessons[2].theory[1].contrast"
+      "kind": "spiegazione contraddittoria",
+      "msg": "La spiegazione afferma che «sie» segue il soggetto, ma accetta anche «Sie treffe ich heute im Café», dove lo precede. Precisare che l'oggetto segue il soggetto negli ordini neutri illustrati, mentre può occupare la prima posizione per contrasto.",
+      "path": "merged.lessons[0].exercises[6].why"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Komm ... vorbei» significa «passa» o «vieni a trovarmi» secondo il contesto; «da me» non è espresso e restringe inutilmente il significato. Tradurre per esempio «Dai, passa a trovarmi e prenditi un momento!» oppure «Dai, passa e prenditi un momento!».",
+      "path": "merged.lessons[3].exercises[9].tr"
     }
   ],
   "lang": "it",

@@ -712,9 +712,7 @@ LINGUAI.addUnits("A2", [
             dir: "toIt",
             a: [
               "Ich sehe ihn morgen",
-              "Morgen sehe ich ihn",
-              "Ich treffe ihn morgen",
-              "Morgen treffe ich ihn"
+              "Morgen sehe ich ihn"
             ]
           },
           { t: "listen", it: "Kennst du meinen Bruder? Ich sehe ihn jeden Tag, und er besucht mich oft." },

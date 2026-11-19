@@ -1,20 +1,10 @@
 {
-  "bundleHash": "ed476a46f5738ab9f6949b3fdc7b89e86f37e341bf86257d0b82652cef8cbad4",
+  "bundleHash": "fd5013f43993a14234415e7ccb2a70344dd8f2d9f60666971e9696fc653fd269",
   "findings": [
     {
-      "kind": "traduzione",
-      "msg": "Il titolo tedesco contiene «ich durfte», che esprime un permesso; «je pouvais» può invece suggerire una capacità. Sostituire con «Je devais, j'avais le droit, parce que ...».",
-      "path": "merged.lessons[2].title"
-    },
-    {
       "kind": "spiegazione grammaticale",
-      "msg": "La nota afferma che i verbi modali perdono la dieresi al Präteritum, salvo wollen, ma anche sollen non ha una dieresi da perdere. Precisare che müssen, können e dürfen perdono la dieresi, mentre wollen e sollen non la possiedono.",
-      "path": "merged.lessons[2].grammar.note"
-    },
-    {
-      "kind": "punteggiatura",
-      "msg": "La sequenza «[ʃtr], :» contiene due segni di punteggiatura consecutivi. Eliminare la virgola prima dei due punti.",
-      "path": "merged.lessons[2].exercises[9].why"
+      "msg": "La definizione secondo cui un verbo è riflessivo quando l’azione ricade sul soggetto non descrive correttamente l’esempio «Ich erinnere mich»: «sich erinnern» è un verbo pronominale il cui pronome non indica un’azione compiuta su sé stessi. Distinguere i verbi riflessivi in senso proprio dai verbi che richiedono un pronome riflessivo, oppure presentare qui i verbi pronominali senza attribuire loro tutti lo stesso significato.",
+      "path": "merged.lessons[3].theory[0].p"
     }
   ],
   "lang": "fr",

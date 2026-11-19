@@ -1,25 +1,30 @@
 {
-  "bundleHash": "3b95af32ae919fd7547bbca7cb019b8aa544d7956fd61c384dbf190ff8707671",
+  "bundleHash": "d3183571ba4f25f6594795660d24d8b3b5107b8d6580baf7d9ce0cdc4e0cec1d",
   "findings": [
     {
-      "kind": "pronuncia",
-      "msg": "L'accento di «Geburtstag» cade sulla prima sillaba, «Ge-», non su «-bur-». Correggere entrambe le spiegazioni della pronuncia.",
-      "path": "merged.lessons[0].exercises[9].why; merged.test.exercises[9].why"
+      "kind": "tłumaczenie",
+      "msg": "„Mitzukommen” oznacza przyjść lub pójść razem z mówiącym, ale nie określa liczby osób. Polskie „z nami” dodaje informację nieobecną w zdaniu niemieckim. Zmień tłumaczenie na „Masz ochotę pójść ze mną?” albo doprecyzuj niemiecki tekst przez „mit uns mitzukommen”.",
+      "path": "merged.lessons[1].grammar.examples[0].tr"
     },
     {
-      "kind": "traduzione",
-      "msg": "«Mitzukommen» significa venire o andare insieme a qualcuno, ma non specifica «z nami» (con noi). Usare una traduzione generica oppure aggiungere «mit uns» alla frase tedesca e adeguare le opzioni.",
-      "path": "merged.lessons[1].grammar.examples[0].tr; merged.lessons[1].exercises[0].q"
+      "kind": "tłumaczenie i klucz odpowiedzi",
+      "msg": "Pytanie zawiera „z nami”, natomiast poprawna odpowiedź „mitzukommen” nie określa, czy chodzi o jedną osobę, czy o grupę. Zmień polskie pytanie na „Masz ochotę pójść ze mną?” albo dodaj „mit uns” do odpowiedzi niemieckiej.",
+      "path": "merged.lessons[1].exercises[0].q"
     },
     {
-      "kind": "chiave di risposta",
-      "msg": "La prima lacuna ammette anche «deutlich», vocabolo della lezione: «Er spricht deutlich, und ich verstehe ihn gut». Aggiungerlo alle risposte accettate oppure fornire un indizio che richieda «langsam».",
-      "path": "merged.lessons[3].exercises[7].gaps[0]"
+      "kind": "wymowa",
+      "msg": "W standardowej wymowie niemieckiej początkowe „s” w „Samstag” jest bezdźwięczne [z̥] lub [s], a nie dźwięczne [z]. Popraw objaśnienie wymowy.",
+      "path": "merged.lessons[1].exercises[8].why"
     },
     {
-      "kind": "grammatica",
-      "msg": "La regola sulla formazione degli ordinali fino a 19 omette «am sechsten», forma irregolare di «sechs». Aggiungerla all'elenco delle eccezioni.",
-      "path": "merged.lessons[0].theory[2].p"
+      "kind": "wymowa",
+      "msg": "Początkowe „s” w „Samstag” jest w standardowej wymowie bezdźwięczne [z̥] lub [s], a nie dźwięczne [z]. Popraw objaśnienie.",
+      "path": "merged.test.exercises[8].why"
+    },
+    {
+      "kind": "tłumaczenie i alternatywy",
+      "msg": "Wersja z „deutlich” oznacza „wyraźnie”, a polskie tłumaczenie podaje wyłącznie „powoli”. Dodaj wariant „wyraźnie” do tłumaczenia albo usuń „deutlich” z akceptowanych odpowiedzi.",
+      "path": "merged.lessons[3].exercises[7]"
     }
   ],
   "lang": "pl",

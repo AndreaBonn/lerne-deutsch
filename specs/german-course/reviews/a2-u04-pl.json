@@ -1,10 +1,20 @@
 {
-  "bundleHash": "a8b94cc08cdef6df4ab7208365ab32b5bd132689b7def0bb060805aa562e3393",
+  "bundleHash": "4840646863a506a59226ad70642aa24a767456bd6ad08a5281e91ace83077129",
   "findings": [
     {
+      "kind": "pronuncia",
+      "msg": "In «solltest» la sequenza finale «st» si pronuncia [ʃt], non [st]. Correggere la spiegazione fonetica.",
+      "path": "merged.lessons[2].exercises[8].why"
+    },
+    {
       "kind": "chiave di risposta",
-      "msg": "La consegna richiede «sollen», ma la chiave accetta anche «muss», che esprime necessità e cambia il significato. Rimuovere «Der Arzt sagt, dass ich mehr schlafen muss» dalle risposte accettate.",
-      "path": "merged.lessons[3].exercises[7].a"
+      "msg": "L’alternativa con «muss» esprime necessità e non rispetta la richiesta esplicita di usare «sollen». Rimuoverla dalle risposte accettate e aggiornare la spiegazione.",
+      "path": "merged.lessons[3].exercises[7].a[1]"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Sie isst viel Gemüse» specifica che il soggetto è una donna; «Je dużo warzyw» omette questa informazione. Usare «Ona je dużo warzyw».",
+      "path": "merged.lessons[3].grammar.examples[4].tr"
     }
   ],
   "lang": "pl",

@@ -1,7 +1,18 @@
 {
-  "bundleHash": "261df77696a67d6a1d1f57cd168fb49f591d3e0bb298508c738d0ae384b5c9c2",
-  "findings": [],
+  "bundleHash": "15162b8751a36022e3e45598e44f6a3714060542016c21750a875e55bb0475fc",
+  "findings": [
+    {
+      "kind": "grammatica",
+      "msg": "La spiegazione afferma che i verbi riflessivi formano il Perfekt con haben in generale. Esistono eccezioni, per esempio «Er ist sich selbst treu geblieben» e «Sie ist sich der Gefahr bewusst geworden». Limitare la regola ai verbi esercitati nella lezione o precisare che esistono eccezioni.",
+      "path": "merged.lessons[3].theory[0].p"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "Il titolo tedesco distingue «musste» da «durfte», ma quello polacco rende il secondo con «mogłem», che non esprime chiaramente il permesso. Sostituire con «Musiałem, wolno mi było, ponieważ ...».",
+      "path": "merged.lessons[2].title"
+    }
+  ],
   "lang": "pl",
   "unit": "a2-u01",
-  "verdict": "pass"
+  "verdict": "fail"
 }

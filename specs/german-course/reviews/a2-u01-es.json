@@ -1,20 +1,20 @@
 {
-  "bundleHash": "0d32c8c69ea87fa692f4684729b6881ad31413e1d8b51b3d07299fbfd55af2e8",
+  "bundleHash": "f8395912d19869d16c2acbf3595f29a7e88bc0516c195f2f64d7a05f1970d56a",
   "findings": [
     {
-      "kind": "explanation",
-      "msg": "La explicación afirma que todos los verbos modales pierden la diéresis en Präteritum salvo wollen, pero sollen tampoco lleva diéresis en infinitivo. Indica que müssen, können, dürfen y mögen la pierden, mientras que wollen y sollen no la tienen.",
-      "path": "merged.lessons[2].grammar.note"
+      "kind": "ambiguità della risposta",
+      "msg": "«Ja, ich erinnere dich an mich!» è grammaticalmente corretta: significa «Sì, ti ricordo me stesso». Anche se meno naturale nel contesto, risponde affermativamente alla domanda. Sostituirla con un distrattore chiaramente scorretto o incompatibile con la consegna.",
+      "path": "merged.lessons[3].exercises[7].lines[1].choices[0]"
     },
     {
-      "kind": "explanation",
-      "msg": "La afirmación de que hatte significa «tenía», no «había», es demasiado general: hatte también puede ser el auxiliar del Plusquamperfekt, como en «Ich hatte gearbeitet» («había trabajado»). Limita la advertencia a hatte como verbo principal y distingue su uso como auxiliar.",
-      "path": "merged.lessons[0].theory[2].trap"
+      "kind": "spiegazione grammaticale",
+      "msg": "La nota presenta -en come desinenza aggiunta alle radici hatt- e konnt-, ma hatten e konnten si formano con -en aggiunto a hatt- e konnt- solo se si conta una t doppia inesistente nella radice mostrata: hatt- + en produce hatten, mentre konnt- + en produce konnten. Per il singolare e ihr, invece, le desinenze indicate -est e -et producono forme con una e in più: hatt-est darebbe hattest solo se la radice è hat-, e konnt-est darebbe konntest solo se la radice è konnt-. Esplicitare la segmentazione coerente delle forme o presentare direttamente la coniugazione senza analisi delle desinenze.",
+      "path": "merged.lessons[0].grammar.note"
     },
     {
-      "kind": "explanation",
-      "msg": "La afirmación de que el sujeto alemán se expresa siempre es incorrecta: el imperativo puede omitirlo, por ejemplo «Komm!». Restringe la regla a las oraciones enunciativas ordinarias.",
-      "path": "merged.lessons[0].theory[1].contrast"
+      "kind": "spiegazione grammaticale",
+      "msg": "La segmentazione proposta è incoerente: alla radice hatt- si aggiungono -e, -est, -e, -en, -et, -en solo se si considera la doppia t già nella radice; hatt- + -est produrrebbe una t di troppo rispetto a hattest. Presentare le forme complete oppure usare una segmentazione coerente.",
+      "path": "merged.lessons[0].exercises[1].why"
     }
   ],
   "lang": "es",

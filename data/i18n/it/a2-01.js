@@ -50,7 +50,7 @@ LINGUAI.addStrings("it", {
         { tr: "Da bambino ero spesso malato.", note: "als Kind: senza articolo" },
         { tr: "Avevamo un grande giardino.", note: "wir hatten" },
         { tr: "Mio nonno aveva un cane.", note: "er hatte, come ich hatte" },
-        { tr: "Un tempo andavamo ogni estate al mare.", note: "früher + sein: wir/sie/Sie waren, ma ihr wart" },
+        { tr: "Un tempo ogni estate eravamo al mare.", note: "früher + sein: wir/sie/Sie waren, ma ihr wart" },
         { tr: "A quel tempo non avevo il cellulare.", note: "damals" },
         { tr: "Com'era la tua infanzia?", note: "Wie war ...?" }
       ]
@@ -111,7 +111,7 @@ LINGUAI.addStrings("it", {
         why: "In <i>Hund</i> la <b>u</b> è breve e la <b>d</b> finale si pronuncia come una <b>t</b>; <i>lieb</i> finisce con una <b>p</b> sorda."
       },
       {
-        tr: "Un tempo andavamo ogni estate al mare e ci divertivamo molto.",
+        tr: "Un tempo ogni estate eravamo al mare e ci divertivamo molto.",
         why: "In <i>Früher</i> la <b>ü</b> è lunga e si pronuncia con le labbra della <i>u</i> e la lingua della <i>i</i>; in <i>Spaß</i> la <b>sp</b> iniziale suona [ʃp] e la <b>ß</b> è una <b>s</b> sorda."
       }
     ]
@@ -257,7 +257,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Modali al Präteritum e weil",
-      note: "Al Präteritum <b>müssen</b>, <b>können</b> e <b>dürfen</b> perdono l'Umlaut (musste, konnte, durfte); <b>wollen</b> e <b>sollen</b> non l'hanno mai avuto. Dopo <b>weil</b> il verbo coniugato va in fondo.",
+      note: "Al Präteritum <b>müssen</b>, <b>können</b> e <b>dürfen</b> perdono l'Umlaut (musste, konnte, durfte; anche <b>mögen</b> diventa mochte); <b>wollen</b> e <b>sollen</b> non ce l'hanno nemmeno all'infinito. Dopo <b>weil</b> il verbo coniugato va in fondo.",
       table: {
         head: ["infinito", "Präteritum (ich)", "significato", "con weil"],
         rows: [
@@ -1053,7 +1053,7 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "Il pronome all'accusativo al posto del nome",
-        p: "Per non ripetere un nome che è <b>oggetto diretto</b> si usa il pronome all'accusativo: <em>mich, dich, ihn, sie, es, uns, euch, sie, Sie</em>. Rispetto al nominativo cambiano <em>ich, du, er, wir, ihr</em>; <em>sie</em> ed <em>es</em> restano uguali. Il pronome segue il <b>genere del nome tedesco</b>, anche per le cose: <em>der Bruder → ihn</em>, <em>die Kollegin → sie</em>, <em>das Kind → es</em>, <em>der Schlüssel → ihn</em>. Nella frase principale neutra il pronome sta subito dopo il verbo coniugato: <em>Ich kenne ihn gut.</em> Se la frase comincia con un altro elemento, e il soggetto è un pronome, il pronome oggetto lo segue: <em>Morgen sehe ich ihn.</em> Se il soggetto è un nome, il pronome oggetto di norma lo precede: <em>Morgen sieht ihn mein Bruder.</em> In una subordinata con soggetto pronominale sta dopo la congiunzione e il soggetto, prima del verbo in fondo: <em>..., weil ich ihn gut kenne.</em> Con un soggetto nominale il pronome viene prima: <em>..., weil ihn mein Bruder kennt.</em>"
+        p: "Per non ripetere un nome che è <b>oggetto diretto</b> si usa il pronome all'accusativo: <em>mich, dich, ihn, sie, es, uns, euch, sie, Sie</em>. Rispetto al nominativo cambiano <em>ich, du, er, wir, ihr</em>; <em>sie</em> ed <em>es</em> restano uguali. Il pronome segue il <b>genere del nome tedesco</b>, anche per le cose: <em>der Bruder → ihn</em>, <em>die Kollegin → sie</em>, <em>das Kind → es</em>, <em>der Schlüssel → ihn</em>. Nella frase principale neutra il pronome sta subito dopo il verbo coniugato: <em>Ich kenne ihn gut.</em> Se la frase comincia con un altro elemento, e il soggetto è un pronome, il pronome oggetto lo segue: <em>Morgen sehe ich ihn.</em> Se il soggetto è un nome, il pronome oggetto di norma lo precede: <em>Morgen sieht ihn mein Bruder.</em> In una subordinata con soggetto pronominale sta dopo la congiunzione e il soggetto, prima del verbo in fondo: <em>..., weil ich ihn gut kenne.</em> Con un soggetto nominale sono possibili entrambi gli ordini: <em>..., weil ihn mein Bruder kennt</em> e <em>..., weil mein Bruder ihn kennt</em> (il secondo è neutro e molto frequente)."
       },
       {
         contrast: "In italiano il pronome atono sta <b>prima</b> del verbo (<em>lo vedo, la conosco</em>); in tedesco è una parola a sé e sta dopo il verbo: <em>Ich sehe ihn.</em> Inoltre il genere segue la parola tedesca, non quella italiana: <em>il giornale</em> è maschile (<em>lo leggo</em>), ma <em>die Zeitung</em> è femminile, quindi <em>Ich lese sie</em>. Al contrario <em>la chiave</em> è femminile (<em>la vedo</em>), ma <em>der Schlüssel</em> è maschile: <em>Ich sehe ihn nicht</em>."
@@ -1147,7 +1147,7 @@ LINGUAI.addStrings("it", {
       },
       {
         q: "Traduci (parli di tuo fratello): «Lo vedo domani.»",
-        why: "<i>Ich sehe ihn morgen</i>: il pronome segue il verbo. Con <i>morgen</i> in testa il verbo resta in seconda posizione e il soggetto lo segue (<i>Morgen sehe ich ihn</i>). Va bene anche <i>treffen</i>."
+        why: "<i>Ich sehe ihn morgen</i>: il pronome segue il verbo. Con <i>morgen</i> in testa il verbo resta in seconda posizione e il soggetto lo segue (<i>Morgen sehe ich ihn</i>)."
       },
       {
         tr: "Conosci mio fratello? Lo vedo ogni giorno, e lui mi viene spesso a trovare.",
@@ -1286,7 +1286,7 @@ LINGUAI.addStrings("it", {
         p: "Con verbi come <em>geben, schenken, zeigen, schicken, leihen, erklären</em> ci sono due oggetti: la persona (dativo) e la cosa (accusativo). L'ordine abituale, nella frase neutra, è questo. Con <b>due nomi</b> il dativo precede l'accusativo: <em>Ich schenke meiner Schwester ein Buch.</em> Con <b>un pronome e un nome</b> il pronome viene prima, qualunque sia il suo caso: <em>Ich gebe ihm das Buch. Ich gebe es meinem Bruder.</em> Con <b>due pronomi</b> l'accusativo precede il dativo: <em>Ich gebe es ihm.</em> Sono ordini abituali, non regole assolute: un nome o un pronome tonico si può spostare in prima posizione per metterlo in risalto (<em>Das gebe ich ihm</em>), ma il pronome atono <em>es</em> non va in prima posizione come complemento: non <s>Es gebe ich ihm</s>."
       },
       {
-        contrast: "In italiano i due pronomi si fondono davanti al verbo e il dativo viene <b>prima</b>: <em>glielo do</em>, <em>te lo do</em> (dativo + accusativo). In tedesco vanno dopo il verbo e l'ordine è l'inverso, accusativo + dativo: <em>Ich gebe es ihm</em>, <em>Ich gebe es dir</em>. Se traduci a pezzi, rimetti l'ordine: prima <em>es</em> (il «lo»), poi <em>dir</em> o <em>ihm</em> (il «te» o il «gli»)."
+        contrast: "In italiano i due pronomi stanno davanti al verbo e il dativo viene <b>prima</b>: <em>te lo do</em>, <em>glielo do</em> (dativo + accusativo). «Te lo» resta in due parole; si fondono graficamente solo forme come <em>glielo</em> o <em>dammelo</em>. In tedesco vanno dopo il verbo e l'ordine è l'inverso, accusativo + dativo: <em>Ich gebe es ihm</em>, <em>Ich gebe es dir</em>. Se traduci a pezzi, rimetti l'ordine: prima <em>es</em> (il «lo»), poi <em>dir</em> o <em>ihm</em> (il «te» o il «gli»)."
       },
       {
         trap: "Nell'ordine abituale <em>Ich gebe ihm es</em> suona sbagliato: con due pronomi viene prima l'accusativo, <em>Ich gebe es ihm</em>. Scegli il genere dalla parola tedesca: <em>das Foto → es</em>, <em>der Brief → ihn</em>, <em>die Postkarte → sie</em>. Con un nome maschile i due pronomi sono diversi: <em>Ich gebe ihn ihm</em> (il primo è accusativo, il secondo dativo)."

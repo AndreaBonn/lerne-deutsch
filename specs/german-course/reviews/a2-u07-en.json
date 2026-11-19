@@ -1,25 +1,25 @@
 {
-  "bundleHash": "fb67f33a7f7d1a34625e8958be1b61f61bc9213ccab3de38d6cfe2c7f7351501",
+  "bundleHash": "8fa1cf4a21119d8d753981d9bb3463035f401d8610bf5c7bfe00b28d2798fe9a",
   "findings": [
     {
       "kind": "pronuncia",
-      "msg": "La s iniziale di «Samstag» è sorda [z] non è corretta: nella pronuncia standard tedesca è [z] solo in alcune varianti regionali; indicare [z̥] o [s] secondo la pronuncia adottata e non presentare [z] come universale.",
+      "msg": "L’iniziale di «Samstag» è sorda [z̥] o [s] nella pronuncia standard, non la sonora [z]. Correggere la nota fonetica.",
       "path": "merged.lessons[1].exercises[8].why"
     },
     {
       "kind": "pronuncia",
-      "msg": "La stessa indicazione sulla s iniziale di «Samstag» va corretta anche nel test: la pronuncia standard consueta è sorda [s], non sonora [z].",
+      "msg": "L’iniziale di «Samstag» è sorda [z̥] o [s] nella pronuncia standard, non la sonora [z]. Correggere la nota fonetica.",
       "path": "merged.test.exercises[8].why"
     },
     {
-      "kind": "ambiguità",
-      "msg": "Il primo spazio ammette anche «deutlich»: «Er spricht deutlich, und ich verstehe ihn gut» è naturale, ma la chiave accetta solo «langsam». Aggiungere «deutlich» alle risposte oppure fornire un indizio che specifichi «slowly».",
-      "path": "merged.lessons[3].exercises[7].gaps[0]"
+      "kind": "traduzione e chiave",
+      "msg": "La traduzione inglese specifica «slowly», ma la chiave accetta anche «deutlich» («clearly»). Rendere la traduzione compatibile con entrambe le risposte oppure accettare soltanto «langsam».",
+      "path": "merged.lessons[3].exercises[7]"
     },
     {
-      "kind": "traduzione",
-      "msg": "«making a cake» non specifica la cottura, mentre «einen Kuchen backen» significa «baking a cake». Usare «baking a cake» sia nell'istruzione sia nella traduzione della risposta.",
-      "path": "merged.lessons[1].exercises[7].lines[3]"
+      "kind": "spiegazione grammaticale",
+      "msg": "L’affermazione che l’inglese non mostri mai il caso dei pronomi è falsa: per esempio «I/me» e «he/him» distinguono soggetto e oggetto. Precisare che «you» ha la stessa forma nei due casi e che l’inglese non distingue qui dativo e accusativo.",
+      "path": "merged.lessons[0].theory[3].contrast"
     }
   ],
   "lang": "en",

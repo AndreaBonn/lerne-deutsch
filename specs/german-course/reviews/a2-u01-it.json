@@ -1,15 +1,15 @@
 {
-  "bundleHash": "2c2f7d7e3b83f43e04b22bfdeff7910e859d91a380df8f9d1814e395773e1da9",
+  "bundleHash": "04725a33fd153f901d9cb5ce681ba856f02ae9a575dfdb36d0b51aa921c69a4b",
   "findings": [
     {
-      "kind": "traduzione",
-      "msg": "«Früher waren wir jeden Sommer am Meer» descrive la presenza al mare, mentre «andavamo» esprime uno spostamento. Traduci «Un tempo eravamo ogni estate al mare». La stessa correzione riguarda la traduzione dell'esercizio speak in merged.lessons[0].exercises[9].tr.",
-      "path": "merged.lessons[0].grammar.examples[3].tr"
+      "kind": "spiegazione grammaticale",
+      "msg": "La frase «Nel Perfekt l'ausiliare è haben» generalizza a tutti i verbi riflessivi, ma esistono eccezioni, per esempio «Ich habe mich verlaufen» rispetto a «Wir sind uns begegnet». Specificare che i verbi presentati nella lezione formano il Perfekt con haben; «sich begegnen» è un verbo reciproco con pronome al dativo.",
+      "path": "merged.lessons[3].theory[0].p"
     },
     {
       "kind": "spiegazione grammaticale",
-      "msg": "Non tutti i modali al Präteritum perdono l'Umlaut: anche sollen ne è privo già all'infinito. Specifica che müssen, können e dürfen lo perdono, mentre wollen e sollen non lo hanno.",
-      "path": "merged.lessons[2].grammar.note"
+      "msg": "«Als non si usa mai al presente o al futuro» è troppo assoluto: nella stessa lezione compare il comparativo «älter als ich», utilizzabile anche al presente. Precisare che il divieto riguarda als come congiunzione temporale.",
+      "path": "merged.lessons[1].theory[2].trap"
     }
   ],
   "lang": "it",

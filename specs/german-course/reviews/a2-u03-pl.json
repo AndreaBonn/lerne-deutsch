@@ -1,15 +1,20 @@
 {
-  "bundleHash": "cbfacd3a6da09db7578b062992a078f08e49e6ab40f497b8217385a2b46013b5",
+  "bundleHash": "b4389c4c03de17ece779f90512e7cded298da5ce81d7ff398b9be82d74f8c9b4",
   "findings": [
     {
-      "kind": "chiave di risposta",
-      "msg": "La frase polacca significa «Lo vedo domani». Le risposte con «treffe» significano invece «Lo incontro domani» e non sono equivalenti. Rimuovere «Ich treffe ihn morgen» e «Morgen treffe ich ihn» dalle risposte accettate.",
-      "path": "neutral.lessons[0].exercises[7].a"
+      "kind": "spiegazione grammaticale",
+      "msg": "La regola suggerisce di formare l’imperativo di tutti i verbi regolari eliminando -en e aggiungendo -e solo dopo -t o -d. Non copre verbi regolari come öffnen e atmen, che richiedono Öffne! e Atme! Specifica che la procedura è semplificata e aggiungi queste forme.",
+      "path": "merged.lessons[3].theory[3].tip"
     },
     {
-      "kind": "chiave di risposta",
-      "msg": "La traduzione richiesta usa «widzę» («vedo»), mentre le due risposte con «treffe» significano «incontro». Rimuoverle dalle alternative accettate.",
-      "path": "merged.lessons[0].exercises[7].a"
+      "kind": "traduzione",
+      "msg": "«Jutro mu go oddam» significa «domani glielo restituirò»: il tedesco «Ich gebe ihn ihm morgen» dice soltanto che glielo darò. Sostituisci «oddam» con «dam».",
+      "path": "merged.lessons[2].exercises[9].tr"
+    },
+    {
+      "kind": "copertura del test",
+      "msg": "Il test verifica pronomi, verbi con dativo e ordine dei complementi, ma non verifica l’imperativo né l’uso di mal e doch, introdotti nella quarta lezione. Inserisci almeno un esercizio su questi contenuti mantenendo il numero previsto di esercizi.",
+      "path": "merged.test.exercises"
     }
   ],
   "lang": "pl",

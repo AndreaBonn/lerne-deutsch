@@ -234,7 +234,7 @@ LINGUAI.addStrings("fr", {
   },
   "lesson:a2-u01-l3": {
     theme: "Règles et permissions",
-    title: "Je devais, je pouvais, parce que ...",
+    title: "Je devais, j'avais le droit, parce que ...",
     objectives: [
       "employer musste, konnte, wollte et durfte au Präteritum",
       "donner une raison avec weil et le verbe en fin de proposition",
@@ -257,7 +257,7 @@ LINGUAI.addStrings("fr", {
     ],
     grammar: {
       title: "Modaux au Präteritum et weil",
-      note: "Au Präteritum, <b>müssen</b>, <b>können</b> et <b>dürfen</b> perdent le tréma (musste, konnte, durfte) ; <b>wollen</b> et <b>sollen</b> n'en ont jamais eu. Après <b>weil</b>, le verbe conjugué va à la fin.",
+      note: "Au Präteritum, <b>müssen</b>, <b>können</b> et <b>dürfen</b> perdent le tréma (musste, konnte, durfte ; <b>mögen</b> devient aussi mochte) ; <b>wollen</b> et <b>sollen</b> n'en ont même pas à l'infinitif. Après <b>weil</b>, le verbe conjugué va à la fin.",
       table: {
         head: ["infinitif", "Präteritum (ich)", "sens", "avec weil"],
         rows: [
@@ -1147,7 +1147,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         q: "Traduis (tu parles de ton frère) : « Je le vois demain. »",
-        why: "<i>Ich sehe ihn morgen</i> : le pronom suit le verbe. Avec <i>morgen</i> en tête, le verbe reste en deuxième position et le sujet le suit (<i>Morgen sehe ich ihn</i>). <i>Treffen</i> convient aussi."
+        why: "<i>Ich sehe ihn morgen</i> : le pronom suit le verbe. Avec <i>morgen</i> en tête, le verbe reste en deuxième position et le sujet le suit (<i>Morgen sehe ich ihn</i>)."
       },
       {
         tr: "Tu connais mon frère ? Je le vois tous les jours, et il vient souvent me rendre visite.",

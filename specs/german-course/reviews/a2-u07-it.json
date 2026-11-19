@@ -1,15 +1,10 @@
 {
-  "bundleHash": "4cf9511e52064d4935791fc0e33e978e2d955439773fe0b575bde3189151dd4b",
+  "bundleHash": "987e7579d8677dfb260d6f7cef413b84f3b3aff4b9ba42f0fdf273f10e55b72a",
   "findings": [
     {
-      "kind": "pronuncia",
-      "msg": "La trascrizione [fiˈlaɪçt] rappresenta la prima vocale come [i], mentre in «vielleicht» è breve e rilassata: [fɪˈlaɪçt]. Correggere la trascrizione fonetica.",
-      "path": "merged.lessons[3].exercises[8].why"
-    },
-    {
-      "kind": "spiegazione grammaticale",
-      "msg": "La spiegazione afferma che «zu» sta sempre direttamente davanti al verbo, ma nei verbi separabili si inserisce tra prefisso e radice, come in «mitzukommen». Precisare che precede l'infinito nei verbi non separabili e si inserisce nel verbo separabile.",
-      "path": "merged.lessons[1].theory[2].contrast"
+      "kind": "traduzione e risposta alternativa",
+      "msg": "Il cloze accetta «deutlich» (chiaramente), ma la traduzione fornita dice solo «lentamente». Aggiungi «o chiaramente» alla traduzione e spiega entrambe le risposte, oppure rimuovi «deutlich» dalle soluzioni accettate.",
+      "path": "merged.lessons[3].exercises[7]"
     }
   ],
   "lang": "it",

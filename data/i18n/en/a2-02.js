@@ -1523,7 +1523,7 @@ LINGUAI.addStrings("en", {
       {
         q: "Complete the sentence.",
         tr: "He speaks slowly and I understand him well. I hope you come to the party!",
-        why: "<i>Langsam</i> is the adjective without an ending working as an adverb; <i>Hoffentlich</i> opens the sentence and the verb <i>kommst</i> stays in second position."
+        why: "<i>Langsam</i> (<i>deutlich</i> also fits the first gap) is the adjective without an ending working as an adverb; <i>Hoffentlich</i> opens the sentence and the verb <i>kommst</i> stays in second position."
       },
       {
         tr: "I usually celebrate my birthday at home. Unfortunately I don't have time on Saturday, but maybe we'll celebrate later.",

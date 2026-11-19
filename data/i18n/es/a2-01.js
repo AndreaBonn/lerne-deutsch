@@ -23,10 +23,10 @@ LINGUAI.addStrings("es", {
         p: "Para describir cómo eran las cosas en el pasado, sobre todo al hablar, el alemán usa las formas simples de <strong>sein</strong> y <strong>haben</strong>: <em>ich war</em>, <em>ich hatte</em>. En lugar del Perfekt (<em>Ich bin gewesen</em>, <em>Ich habe gehabt</em>), el alemán hablado casi siempre prefiere estas formas cortas: <em>Als Kind war ich oft krank</em>, <em>Wir hatten einen großen Garten</em>. En la primera y la tercera persona del singular la forma es igual: <em>ich war, er war</em>; <em>ich hatte, er hatte</em>."
       },
       {
-        contrast: "El español distingue el <b>imperfecto</b> (<em>era, tenía</em>) del <b>indefinido</b> (<em>fui, tuve</em>). El Präteritum no hace esa distinción: <em>Ich war müde</em> puede ser «estaba cansado» o «estuve cansado» según el contexto. <em>Als Kind war ich oft krank</em> = «De niño estaba enfermo a menudo»; <em>Gestern war ich beim Arzt</em> = «Ayer estuve en el médico». Además, <em>sein</em> cubre <em>ser</em> y <em>estar</em>, así que <em>war</em> puede traducir <em>era, estaba, fue y estuvo</em>. Otra diferencia: en español puedes callar el sujeto («era pequeño»), pero en alemán el sujeto se expresa siempre, con un pronombre o con un nombre (<em>Mein Opa war müde</em>). Y como <em>ich war</em> y <em>er war</em> son iguales, sin sujeto expreso no se sabría quién es. Por último, <em>als Kind</em> no lleva artículo (como «de niño»), pero <em>Kind</em> es neutro y sirve tanto para niño como para niña, sin forma femenina."
+        contrast: "El español distingue el <b>imperfecto</b> (<em>era, tenía</em>) del <b>indefinido</b> (<em>fui, tuve</em>). El Präteritum no hace esa distinción: <em>Ich war müde</em> puede ser «estaba cansado» o «estuve cansado» según el contexto. <em>Als Kind war ich oft krank</em> = «De niño estaba enfermo a menudo»; <em>Gestern war ich beim Arzt</em> = «Ayer estuve en el médico». Además, <em>sein</em> cubre <em>ser</em> y <em>estar</em>, así que <em>war</em> puede traducir <em>era, estaba, fue y estuvo</em>. Otra diferencia: en español puedes callar el sujeto («era pequeño»), pero en alemán el sujeto se expresa siempre en las oraciones enunciativas e interrogativas normales, con un pronombre o con un nombre (<em>Mein Opa war müde</em>); la excepción es el imperativo (<em>Komm!</em>). Y como <em>ich war</em> y <em>er war</em> son iguales, sin sujeto expreso no se sabría quién es. Por último, <em>als Kind</em> no lleva artículo (como «de niño»), pero <em>Kind</em> es neutro y sirve tanto para niño como para niña, sin forma femenina."
       },
       {
-        trap: "No mezcles las dos formas: <em>Ich habe war</em> no existe. Con <em>sein</em> y <em>haben</em> se elige el Präteritum (<em>Ich war</em>, <em>Ich hatte</em>) o el Perfekt (<em>Ich bin gewesen</em>, <em>Ich habe gehabt</em>), nunca una forma híbrida. Cuidado también con <em>hatte</em>: significa «tenía», no «había». El auxiliar «había» del español no se corresponde con <em>hatte</em> como verbo principal. Y fíjate en <em>wir hatten</em> y <em>wir waren</em>: en la primera persona del plural la terminación es <em>-en</em>, como en el infinitivo."
+        trap: "No mezcles las dos formas: <em>Ich habe war</em> no existe. Con <em>sein</em> y <em>haben</em> se elige el Präteritum (<em>Ich war</em>, <em>Ich hatte</em>) o el Perfekt (<em>Ich bin gewesen</em>, <em>Ich habe gehabt</em>), nunca una forma híbrida. Cuidado también con <em>hatte</em>: como verbo principal significa «tenía» (<em>Ich hatte ein Fahrrad</em>); como auxiliar del Plusquamperfekt corresponde a «había» (<em>Ich hatte gearbeitet</em> = había trabajado). Y fíjate en <em>wir hatten</em> y <em>wir waren</em>: en la primera persona del plural la terminación es <em>-en</em>, como en el infinitivo."
       },
       {
         tip: "Indicadores de tiempo útiles para el pasado: <em>früher</em> (antes, en el pasado), <em>damals</em> (entonces, en aquella época), <em>als Kind</em> (de niño), <em>als Jugendlicher</em> (de adolescente). Si empiezas la frase con uno de ellos, el verbo sigue en segunda posición: <em>Früher hatte ich ein rotes Fahrrad.</em>"
@@ -257,7 +257,7 @@ LINGUAI.addStrings("es", {
     ],
     grammar: {
       title: "Modales en Präteritum y weil",
-      note: "En Präteritum <b>müssen</b>, <b>können</b> y <b>dürfen</b> pierden la diéresis (Umlaut): musste, konnte, durfte; <b>wollen</b> y <b>sollen</b> nunca la tuvieron. Después de <b>weil</b> el verbo conjugado va al final.",
+      note: "En Präteritum <b>müssen</b>, <b>können</b>, <b>dürfen</b> (y <b>mögen</b> → <i>mochte</i>) pierden la diéresis (Umlaut): musste, konnte, durfte; <b>wollen</b> y <b>sollen</b> no la tienen ni siquiera en el infinitivo. Después de <b>weil</b> el verbo conjugado va al final.",
       table: {
         head: ["infinitivo", "Präteritum (ich)", "significado", "con weil"],
         rows: [
@@ -1053,7 +1053,7 @@ LINGUAI.addStrings("es", {
     theory: [
       {
         h: "El pronombre de acusativo en lugar del nombre",
-        p: "Para no repetir un nombre que es <b>objeto directo</b> se usa el pronombre de acusativo: <em>mich, dich, ihn, sie, es, uns, euch, sie, Sie</em>. Respecto al nominativo cambian <em>ich, du, er, wir, ihr</em>; <em>sie</em> y <em>es</em> se quedan igual. El pronombre sigue el <b>género del nombre alemán</b>, también para las cosas: <em>der Bruder → ihn</em>, <em>die Kollegin → sie</em>, <em>das Kind → es</em>, <em>der Schlüssel → ihn</em>. En la oración principal neutra el pronombre va justo después del verbo conjugado: <em>Ich kenne ihn gut.</em> Si la frase empieza por otro elemento, y el sujeto es un pronombre, el pronombre de objeto lo sigue: <em>Morgen sehe ich ihn.</em> Si el sujeto es un nombre, el pronombre de objeto suele ir antes: <em>Morgen sieht ihn mein Bruder.</em> También es correcto <em>Morgen sieht mein Bruder ihn</em>. En una subordinada con sujeto pronominal va después de la conjunción y del sujeto, antes del verbo final: <em>..., weil ich ihn gut kenne.</em> Con un sujeto nominal valen los dos órdenes: <em>..., weil ihn mein Bruder kennt</em> o <em>..., weil mein Bruder ihn kennt.</em>"
+        p: "Para no repetir un nombre que es <b>objeto directo</b> se usa el pronombre de acusativo: <em>mich, dich, ihn, sie, es, uns, euch, sie, Sie</em>. Respecto al nominativo cambian <em>ich, du, er, wir, ihr</em>; <em>sie</em>, <em>es</em> y la forma de cortesía <em>Sie</em> se quedan igual. El pronombre sigue el <b>género del nombre alemán</b>, también para las cosas: <em>der Bruder → ihn</em>, <em>die Kollegin → sie</em>, <em>das Kind → es</em>, <em>der Schlüssel → ihn</em>. En la oración principal neutra el pronombre va justo después del verbo conjugado: <em>Ich kenne ihn gut.</em> Si la frase empieza por otro elemento, y el sujeto es un pronombre, el pronombre de objeto lo sigue: <em>Morgen sehe ich ihn.</em> Si el sujeto es un nombre, el pronombre de objeto suele ir antes: <em>Morgen sieht ihn mein Bruder.</em> También es correcto <em>Morgen sieht mein Bruder ihn</em>. En una subordinada con sujeto pronominal va después de la conjunción y del sujeto, antes del verbo final: <em>..., weil ich ihn gut kenne.</em> Con un sujeto nominal valen los dos órdenes: <em>..., weil ihn mein Bruder kennt</em> o <em>..., weil mein Bruder ihn kennt.</em>"
       },
       {
         contrast: "En español el pronombre átono va <b>antes</b> del verbo (<em>lo veo, la conozco</em>); en alemán es una palabra aparte. En una oración principal con el sujeto en primera posición, el pronombre suele ir después del verbo conjugado: <em>Ich sehe ihn.</em> También puede aparecer al principio: <em>Ihn sehe ich morgen.</em> En una subordinada: <em>..., weil ich ihn sehe.</em> Además, el género sigue la palabra alemana, no la española, y las dos lenguas no siempre coinciden: <em>la llave</em> es femenina (<em>la veo</em>), pero <em>der Schlüssel</em> es masculino: <em>Ich sehe ihn nicht</em>. Al revés, <em>el periódico</em> es masculino (<em>lo leo</em>), pero <em>die Zeitung</em> es femenina: <em>Ich lese sie</em>. El español distingue «lo» de «le» (acusativo y dativo), y el alemán distingue <em>ihn</em> de <em>ihm</em>, con la misma idea."
@@ -1147,7 +1147,7 @@ LINGUAI.addStrings("es", {
       },
       {
         q: "Traduce (hablas de tu hermano): «Lo veo mañana.»",
-        why: "<i>Ich sehe ihn morgen</i>: el pronombre sigue al verbo. Con <i>morgen</i> al principio el verbo se queda en segunda posición y el sujeto lo sigue (<i>Morgen sehe ich ihn</i>). También vale <i>treffen</i>."
+        why: "<i>Ich sehe ihn morgen</i>: el pronombre sigue al verbo. Con <i>morgen</i> al principio el verbo se queda en segunda posición y el sujeto lo sigue (<i>Morgen sehe ich ihn</i>)."
       },
       {
         tr: "¿Conoces a mi hermano? Lo veo todos los días, y él me visita a menudo.",
@@ -1399,7 +1399,7 @@ LINGUAI.addStrings("es", {
     theory: [
       {
         h: "El imperativo con du y con ihr",
-        p: "Para decirle a una persona a la que tuteas que haga algo se usa la <b>raíz del verbo</b>, sin <em>du</em>: <em>Komm! Ruf mich an! Mach das Fenster zu!</em> Con los verbos débiles cuya raíz termina en <em>-t</em> o <em>-d</em> se añade normalmente una <b>-e</b>: <em>Warte! Arbeite! Antworte!</em> Los verbos fuertes con cambio <em>e → i/ie</em> usan la raíz cambiada y no llevan <em>-e</em>: <em>Nimm! Lies! Gib! Sprich!</em> Sin Umlaut: <em>Fahr!</em>, no <em>Fähr!</em> <em>Sein</em> es irregular: <em>Sei!</em> Para varias personas (<em>ihr</em>) el imperativo tiene la forma de <em>ihr</em> sin pronombre: <em>Kommt! Wartet! Ruft an!</em> El verbo separable deja el prefijo al final: <em>Ruf mich an!</em>"
+        p: "Para decirle a una persona a la que tuteas que haga algo se usa la <b>raíz del verbo</b>, sin <em>du</em>: <em>Komm! Ruf mich an! Mach das Fenster zu!</em> En los verbos regulares la <b>-e</b> del imperativo singular es facultativa (<em>Mach!</em> / <em>Mache!</em>); es obligatoria cuando la raíz termina en <em>-t</em> o <em>-d</em> y en casos parecidos: <em>Warte! Arbeite! Antworte! Finde!</em> Los verbos fuertes con cambio <em>e → i/ie</em> usan la raíz cambiada y no llevan <em>-e</em>: <em>Nimm! Lies! Gib! Sprich!</em> Sin Umlaut: <em>Fahr!</em>, no <em>Fähr!</em> <em>Sein</em> es irregular: <em>Sei!</em> Para varias personas (<em>ihr</em>) el imperativo tiene la forma de <em>ihr</em> sin pronombre: <em>Kommt! Wartet! Ruft an!</em> El verbo separable deja el prefijo al final: <em>Ruf mich an!</em>"
       },
       {
         h: "mal y doch: palabras pequeñas que cambian el tono",
@@ -1497,7 +1497,7 @@ LINGUAI.addStrings("es", {
         why: "En <i>Sag</i> la <b>g</b> final se lee por lo general [k]; en <i>zusammen</i> la <b>z</b> es [ts] y la <b>s</b> ante vocal suele ser sonora."
       },
       {
-        tr: "Pásate un día por mi casa, venga, y tómate un poco de tiempo.",
+        tr: "Pásate cuando quieras, venga, y tómate un poco de tiempo.",
         why: "En <i>vorbei</i> la <b>v</b> se lee [f]; en <i>Moment</i> el acento cae en la segunda sílaba."
       }
     ]
@@ -1945,7 +1945,7 @@ LINGUAI.addStrings("es", {
         p: "<b>Deshalb</b> («por eso») une dos oraciones principales y suele ocupar la <b>primera posición</b> de la segunda (no es obligatorio: <em>Ich bin deshalb müde</em> también es correcto); cuando va primero, el verbo conjugado viene justo después y el sujeto lo sigue. <em>Ich schlafe schlecht. Deshalb bin ich müde.</em> Sinónimos: <em>deswegen, darum</em>. También puede ir tras una coma: <em>Ich schlafe schlecht, deshalb bin ich müde.</em>"
       },
       {
-        contrast: "En español, «creo que» con una afirmación va con indicativo («creo que el deporte es importante»), pero «no creo que» pide subjuntivo («no creo que sea importante»). En alemán la frase con <em>dass</em> usa el indicativo en ambos casos: <em>Ich denke, dass Sport wichtig <b>ist</b></em>, <em>Ich glaube nicht, dass Sport schlecht <b>ist</b></em>. En español no se pone coma delante de «que»; en alemán la coma antes de <em>dass</em> es obligatoria. Y «por eso» no cambia el orden en español (<em>duermo mal, por eso estoy cansado</em> o <em>por eso yo estoy cansado</em>), mientras que <em>deshalb</em> obliga a poner el verbo primero: <em>Deshalb bin ich müde</em>."
+        contrast: "En español, «creo que» con una afirmación va con indicativo («creo que el deporte es importante»), pero «no creo que» pide subjuntivo («no creo que sea importante»). En los ejemplos de la lección la frase con <em>dass</em> usa el indicativo, también tras la negación: <em>Ich denke, dass Sport wichtig <b>ist</b></em>, <em>Ich glaube nicht, dass Sport schlecht <b>ist</b></em>. El subjuntivo es posible (<em>..., dass ich mich ausruhen sollte</em>), pero el alemán no lo exige ni por la negación ni por el verbo principal, como sí hace el español con «no creo que». En español no se pone coma delante de «que»; en alemán la coma antes de <em>dass</em> es obligatoria. Y «por eso» no cambia el orden en español (<em>duermo mal, por eso estoy cansado</em> o <em>por eso yo estoy cansado</em>), mientras que <em>deshalb</em> obliga a poner el verbo primero: <em>Deshalb bin ich müde</em>."
       },
       {
         trap: "<em>Deshalb</em> no manda el verbo al final como hace <em>dass</em>: <em>Deshalb ich bin müde</em> y <em>Deshalb ich müde bin</em> son incorrectas. Y con <em>dass</em> el verbo no se queda en segunda posición: <em>Ich finde, dass Sport ist wichtig</em> es incorrecto. No confundas <em>dass</em> con <em>das</em>: <em>dass</em> = «que» (conjunción), <em>das</em> = «que» (pronombre relativo) o <em>das</em> = artículo neutro («el», «la»). El alemán distingue por escrito la conjunción del resto."
@@ -1967,7 +1967,7 @@ LINGUAI.addStrings("es", {
         ]
       },
       examples: [
-        { tr: "Creo que el deporte es importante.", note: "dass + verbo al final; en alemán el verbo de la frase con dass va en indicativo" },
+        { tr: "Creo que el deporte es importante.", note: "dass + verbo al final; aquí el verbo va en indicativo (el subjuntivo es posible, pero no obligatorio)" },
         { tr: "El médico dice que tengo que beber más agua.", note: "el modal soll cierra la frase tras trinken" },
         { tr: "Sé que los cigarrillos no son sanos.", note: "dass ... sind: el verbo al final" },
         { tr: "Duermo mal. Por eso estoy cansado.", note: "deshalb en primera posición, luego bin ich" },

@@ -1523,7 +1523,7 @@ LINGUAI.addStrings("pl", {
       {
         q: "Uzupełnij zdanie.",
         tr: "On mówi powoli i dobrze go rozumiem. Mam nadzieję, że przyjdziesz na przyjęcie!",
-        why: "<i>Langsam</i> to przymiotnik bez końcówki w roli przysłówka; <i>Hoffentlich</i> otwiera zdanie, a czasownik <i>kommst</i> zostaje na drugim miejscu."
+        why: "<i>Langsam</i> (do pierwszej luki pasuje też <i>deutlich</i>) to przymiotnik bez końcówki w roli przysłówka; <i>Hoffentlich</i> otwiera zdanie, a czasownik <i>kommst</i> zostaje na drugim miejscu."
       },
       {
         tr: "Zwykle świętuję urodziny w domu. Niestety w sobotę nie mam czasu, ale może będziemy świętować później.",

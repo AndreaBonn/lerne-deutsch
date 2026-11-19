@@ -34,7 +34,7 @@ LINGUAI.addStrings("en", {
     ],
     grammar: {
       title: "Präteritum of sein, haben and können",
-      note: "In the 1st and 3rd person singular the form is the same. <i>Sein</i> takes the plain endings <b>-st</b> (du warst) and <b>-t</b> (ihr wart), and <b>-en</b> for wir and sie. <i>Haben</i> and <i>können</i> have the stems <i>hatt-</i> and <i>konnt-</i> and take <b>-est</b> and <b>-et</b> (hattest, hattet, konntest, konntet), and <b>-en</b> for wir and sie.",
+      note: "In the 1st and 3rd person singular the form is the same. <i>Sein</i> is irregular and has its own whole forms: <b>war</b> (ich, er/sie/es), <b>warst</b>, <b>waren</b> (wir, sie/Sie) and <b>wart</b>. <i>Haben</i> and <i>können</i> have the stems <i>hatt-</i> and <i>konnt-</i> and take <b>-est</b> and <b>-et</b> (hattest, hattet, konntest, konntet), and <b>-en</b> for wir and sie.",
       table: {
         head: ["person", "sein", "haben", "können"],
         rows: [
@@ -76,7 +76,7 @@ LINGUAI.addStrings("en", {
       },
       {
         tr: "The Präteritum of haben, all persons.",
-        why: "<i>Hatte, hattest, hatte, hatten, hattet, hatten</i>: <i>haben</i> is irregular in the Präteritum. The stem is <i>hatt-</i>, with the endings <i>-e, -est, -e, -en, -et, -en</i>."
+        why: "<i>Hatte, hattest, hatte, hatten, hattet, hatten</i>: <i>haben</i> is irregular in the Präteritum. Learn the whole forms: <i>hatte, hattest, hatte, hatten, hattet, hatten</i>."
       },
       {
         tr: "The Präteritum of können, all persons.",
@@ -246,7 +246,7 @@ LINGUAI.addStrings("en", {
         p: "To say what you had to, wanted to or could do as a child, use the modals in the <strong>Präteritum</strong>: <em>ich musste</em> (I had to), <em>ich konnte</em> (I could, was able to), <em>ich durfte</em> (I was allowed to), <em>ich wollte</em> (I wanted to). In the Präteritum <em>müssen, können, dürfen</em> lose their Umlaut, while <em>wollen</em> and <em>sollen</em> never had one. The modal goes with an infinitive at the end of the clause: <em>Ich musste jeden Tag Hausaufgaben machen.</em>"
       },
       {
-        contrast: "English modals are defective: <em>must</em> has no past (we say “had to”), and <em>can</em> and <em>may</em> borrow “could” and “was allowed to”. All four German verbs have their own Präteritum forms; learn the stems <em>konnt-</em>, <em>musst-</em>, <em>durft-</em> and <em>wollt-</em> and add the endings <em>-e, -est, -e, -en, -et, -en</em>. English “could” is also ambiguous: “I couldn't go out” can mean I was unable to or I wasn't allowed to. German makes you choose: <em>Ich konnte nicht ausgehen</em> (unable) or <em>Ich durfte nicht ausgehen</em> (not permitted). <em>Können</em> is ability or possibility, <em>dürfen</em> is permission. As with <em>sein</em> and <em>haben</em>, spoken German prefers the Präteritum of modals to the Perfekt: <em>Ich konnte nicht kommen</em> is more natural than <em>Ich habe nicht kommen können</em>."
+        contrast: "English modals are defective: <em>must</em> has no past (we say “had to”), and <em>can</em> and <em>may</em> borrow “could” and “was allowed to”. All four German verbs have their own Präteritum forms; learn the whole forms (<em>musste, konnte, durfte, wollte</em>, ...) or the stems <em>muss-</em>, <em>konn-</em>, <em>durf-</em> and <em>woll-</em> plus <em>-te, -test, -te, -ten, -tet, -ten</em>. English “could” is also ambiguous: “I couldn't go out” can mean I was unable to or I wasn't allowed to. German makes you choose: <em>Ich konnte nicht ausgehen</em> (unable) or <em>Ich durfte nicht ausgehen</em> (not permitted). <em>Können</em> is ability or possibility, <em>dürfen</em> is permission. As with <em>sein</em> and <em>haben</em>, spoken German prefers the Präteritum of modals to the Perfekt: <em>Ich konnte nicht kommen</em> is more natural than <em>Ich habe nicht kommen können</em>."
       },
       {
         trap: "After <b>weil</b> (“because”) the finite verb goes to the end, after the infinitive: <em>..., weil ich arbeiten musste</em>, not “weil ich musste arbeiten” and not “weil musste ich arbeiten”. In English the order does not change after “because” (“because I had to work”), which is exactly why this error is so common. The comma before <em>weil</em> is mandatory."
@@ -363,7 +363,7 @@ LINGUAI.addStrings("en", {
         trap: "In the 1st and 2nd person the pronoun has two forms: the accusative <em>mich, dich</em> and the dative <em>mir, dir</em>. English “I remember” has no reflexive pronoun, but German requires <em>mich</em> here. Learn <em>sich erinnern</em> with an accusative reflexive pronoun, not <em>mir</em>: <em>Ich erinnere mich</em>, not “Ich erinnere mir”. Watch out also for <em>erinnern</em> without a pronoun: <em>Ich erinnere dich an den Termin</em> means “I remind you of the appointment”, which is a different thing from “I remember”."
       },
       {
-        tip: "Always learn a reflexive verb together with its preposition: <em>sich erinnern an</em>, <em>sich freuen auf/über</em>, <em>sich interessieren für</em>, <em>sich ärgern über</em>, <em>sich treffen mit</em>. One verb, one preposition, one case."
+        tip: "Always learn a reflexive verb together with its preposition: <em>sich erinnern an</em>, <em>sich freuen auf/über</em>, <em>sich interessieren für</em>, <em>sich ärgern über</em>, <em>sich treffen mit</em>. Learn each verb with its preposition and its case (<em>sich freuen auf</em> + acc. / <em>über</em> + acc., <em>sich treffen mit</em> + dat.)."
       }
     ],
     grammar: {
@@ -1147,7 +1147,7 @@ LINGUAI.addStrings("en", {
       },
       {
         q: "Translate (you are talking about your brother): “I'll see him tomorrow.”",
-        why: "<i>Ich sehe ihn morgen</i>: the pronoun follows the verb. With <i>morgen</i> first, the verb stays in second position and the subject follows it (<i>Morgen sehe ich ihn</i>). <i>Treffen</i> also works."
+        why: "<i>Ich sehe ihn morgen</i>: the pronoun follows the verb. With <i>morgen</i> first, the verb stays in second position and the subject follows it (<i>Morgen sehe ich ihn</i>)."
       },
       {
         tr: "Do you know my brother? I see him every day, and he often comes to visit me.",
@@ -1825,7 +1825,7 @@ LINGUAI.addStrings("en", {
       },
       {
         h: "Reflexive verbs with a fixed pronoun",
-        p: "<em>Sich ausruhen, sich hinlegen, sich erholen, sich fühlen</em> are the reflexive constructions practised in this lesson; <em>sich ausruhen</em> is the usual form taught. The pronoun is not “rest oneself” in a literal sense. The pronoun is in the <b>accusative</b> and changes with the person: <em>mich, dich, sich, uns, euch, sich</em>. It comes after the conjugated verb: <em>Ich ruhe mich aus.</em> With <em>sollen</em> and <em>würde</em> it stands before the infinitive: <em>Du solltest dich ausruhen. Ich würde mich hinlegen.</em> With the polite form: <em>Sie sollten sich hinlegen</em> (<em>sich</em> stays lowercase)."
+        p: "<em>Sich ausruhen, sich hinlegen, sich erholen, sich fühlen</em> are the reflexive constructions practised in this lesson; <em>sich ausruhen</em> is the usual form taught. The pronoun is not “rest oneself” in a literal sense. The pronoun is in the <b>accusative</b> and changes with the person: <em>mich, dich, sich, uns, euch, sich</em>. It follows the conjugated verb, even when something else fills the first position: <em>Ich ruhe mich aus.</em> and <em>Heute ruhe ich mich aus.</em> With <em>sollen</em> and <em>würde</em> it stands before the infinitive: <em>Du solltest dich ausruhen. Ich würde mich hinlegen.</em> With the polite form: <em>Sie sollten sich hinlegen</em> (<em>sich</em> stays lowercase)."
       },
       {
         contrast: "English builds advice with <em>should</em> and <em>would</em>: “you should rest”, “I would go to the doctor”. German is very close: <em>solltest</em> is the Konjunktiv II of <em>sollen</em> and <em>würde</em> is “would”, with the infinitive at the end. But <em>sollte</em> has personal endings (<em>du solltest, ihr solltet</em>), while English <em>should</em> never changes. The real difference is the reflexive: English often has no pronoun (“you should rest”, “lie down”, “recover”), while German needs it: <em>sich ausruhen</em>, <em>sich hinlegen</em>, <em>sich erholen</em>. “To feel” is the same: “I feel tired” is <em>Ich fühle mich müde</em>."

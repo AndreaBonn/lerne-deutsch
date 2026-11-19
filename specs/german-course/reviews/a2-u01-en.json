@@ -1,30 +1,35 @@
 {
-  "bundleHash": "e5273dd717fa1a7f24166f942fc3f45438fc97aaabce49cd531c24cdef732272",
+  "bundleHash": "9a32dead432e3b6b5146a484cd09db393e2d241e1de57d9239c068238c087e2f",
   "findings": [
     {
       "kind": "grammatica",
-      "msg": "La spiegazione attribuisce a war e waren la desinenza -en partendo implicitamente da war, ma non chiarisce che la radice cambia: le forme sono war e waren. Riformulare indicando direttamente le forme, senza presentare -en come una desinenza aggiunta a war.",
-      "path": "merged.lessons[0].grammar.note"
+      "msg": "L’espressione «German has a form for every person» suggerisce sei forme distinte, ma alcune coincidono. Specificare che il verbo si accorda con la persona e che più persone possono condividere la stessa forma.",
+      "path": "merged.lessons[0].theory[1].contrast"
     },
     {
-      "kind": "grammatica",
-      "msg": "La spiegazione dice che la radice è hatt- e che le desinenze sono -e, -est, -e, -en, -et, -en: questo produrrebbe forme errate come hatteest. Usare la radice hatt- con -e, -est senza ripetere la e iniziale solo se si spiega la sovrapposizione, oppure presentare le forme complete senza segmentazione.",
-      "path": "merged.lessons[0].exercises[1].why"
-    },
-    {
-      "kind": "grammatica",
-      "msg": "Le radici indicate finiscono già in -t, quindi aggiungere le desinenze -e, -est, -e, -en, -et, -en produrrebbe forme come musstest con una t aggiuntiva secondo la segmentazione proposta. Usare le radici muss-, konn-, durf- e woll- con -te, -test, -te, -ten, -tet, -ten, oppure elencare le forme complete.",
+      "kind": "spiegazione grammaticale",
+      "msg": "La forma «had to» non è presa in prestito dal modale inglese «may»: è una perifrasi con «be allowed to». Sostituire «can and may borrow ...» con «could is the past form of can; was allowed to expresses past permission».",
       "path": "merged.lessons[2].theory[1].contrast"
     },
     {
-      "kind": "ambiguità",
-      "msg": "La frase inglese non specifica un divieto, ma la chiave accetta anche durfte nicht, che esprime una mancanza di permesso. Limitare le risposte a konnte oppure precisare nel testo inglese che non era consentito giocare.",
-      "path": "merged.lessons[2].exercises[7].a"
+      "kind": "spiegazione grammaticale",
+      "msg": "La definizione secondo cui l’azione riflessiva ricade sul soggetto non spiega adeguatamente verbi come «sich erinnern» né l’uso reciproco di «sich treffen». Distinguere i verbi che richiedono un pronome riflessivo dall’uso reciproco, in cui «uns» significa «each other».",
+      "path": "merged.lessons[3].theory[0].p"
     },
     {
-      "kind": "reggenza",
-      "msg": "La regola finale «One verb, one preposition, one case» contraddice sich freuen auf/über e non indica il dativo richiesto da mit in sich treffen mit. Sostituirla con l'indicazione di imparare ogni costruzione con la propria preposizione e il proprio caso, esplicitando mit + dativo.",
-      "path": "merged.lessons[3].theory[3].tip"
+      "kind": "spiegazione grammaticale",
+      "msg": "Non tutti i verbi riflessivi formano il Perfekt con «haben»: per esempio, «sich begegnen» usa «sein». Limitare l’affermazione ai verbi presentati nella lezione.",
+      "path": "merged.lessons[3].theory[0].p"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Mir» e «dir» sono le forme dative della prima e seconda persona singolare, non di tutte le prime e seconde persone. Aggiungere «singular» alla frase.",
+      "path": "merged.lessons[3].theory[2].trap"
+    },
+    {
+      "kind": "chiarezza",
+      "msg": "L’interlocutore non è identificato come uomo: «remember him» introduce un’informazione assente dal dialogo. Usare «Say yes, and that you remember the classmate».",
+      "path": "merged.lessons[3].exercises[7].lines[1].tr"
     }
   ],
   "lang": "en",
