@@ -166,7 +166,7 @@ LINGUAI.addStrings("en", {
         contrast: "American charts are full of Latin abbreviations: <em>AC</em> (before meals), <em>PC</em> (after meals), <em>HS</em> (at bedtime), <em>PRN</em> (as needed), <em>NPO</em> (nothing by mouth), and you say “PRN” and “NPO” out loud to coworkers. German charts use German: <em>vor dem Essen</em>, <em>nach dem Essen</em>, <em>zur Nacht</em>, <em>bei Bedarf</em> (written <em>b.B.</em>), <em>nüchtern</em>. If you say “PRN” or “NPO” to a German coworker, you will get a blank look. English also does not mark case: “before breakfast”, “with a glass of water”. In German each preposition in this lesson triggers the dative, and <em>vor das Frühstück</em> sounds wrong right away. One more pair: patients say <em>der Blutverdünner</em>, just like “blood thinner” in English, while <em>das Antikoagulans</em> stays a word for the physician and the chart."
       },
       {
-        trap: "<em>Nüchtern</em> on the unit means “fasting, NPO”, but in everyday German it also means “sober, not drunk” and even “matter-of-fact, plain”. If you tell a patient <em>Bleiben Sie bitte nüchtern</em>, add what it means: <em>Bitte nichts essen und nichts trinken.</em> Do not mix up <em>nach dem Essen</em> (preposition + noun) with <em>nachdem</em>, which is a conjunction and sends the verb to the end. <em>Zur Nacht</em> is “at bedtime”, <em>in der Nacht</em> is “during the night”: on a medication plan they are not the same thing. And <em>morgens</em> means “in the morning, every morning”, not “tomorrow”, which is <em>morgen</em>."
+        trap: "<em>Nüchtern</em> on the unit means “fasting, NPO”, but in everyday German it also means “sober, not drunk” and even “matter-of-fact, plain”. If you tell a patient <em>Bleiben Sie bitte nüchtern</em>, add what it means for that test: <em>Bitte nichts essen.</em> and, depending on the order, <em>Wasser dürfen Sie trinken</em> or <em>Bitte auch nichts trinken.</em> Do not mix up <em>nach dem Essen</em> (preposition + noun) with <em>nachdem</em>, which is a conjunction and sends the verb to the end. <em>Zur Nacht</em> is “at bedtime”, <em>in der Nacht</em> is “during the night”: on a medication plan they are not the same thing. And <em>morgens</em> means “in the morning, every morning”, not “tomorrow”, which is <em>morgen</em>."
       },
       {
         tip: "If a patient says they missed a tablet, never decide yourself what to do: <em>Dann sagen Sie es mir bitte. Ich frage den Arzt.</em> Making up a dose or skipping it is the physician's decision, and the right answer changes from drug to drug."
@@ -174,7 +174,7 @@ LINGUAI.addStrings("en", {
     ],
     grammar: {
       title: "Times and prepositions with the dative",
-      note: "<b>vor, nach, mit, seit, zu, bei</b> + <b>dative</b>. Time adverbs (<b>morgens, abends, täglich</b>) take no article.",
+      note: "<b>vor</b> (time)<b>, nach, mit, seit, zu, bei</b> + <b>dative</b>. Time adverbs (<b>morgens, abends, täglich</b>) take no article.",
       table: {
         head: ["phrase", "dative of", "English"],
         rows: [
@@ -189,7 +189,7 @@ LINGUAI.addStrings("en", {
       examples: [
         { tr: "Please take the tablet before breakfast.", note: "vor dem: dative of das Frühstück" },
         { tr: "Always take the antibiotic after meals.", note: "nach dem Essen" },
-        { tr: "For the blood draw you need to stay NPO tomorrow.", note: "nüchtern bleiben: no food and no drinks" },
+        { tr: "For the blood draw you need to stay NPO tomorrow.", note: "nüchtern bleiben: no food; what may be drunk depends on the test's instructions" },
         { tr: "You get the blood thinner in the evening.", note: "Blutverdünner: the patient's word" },
         { tr: "As needed, you get a pain pill.", note: "bei Bedarf, often b.B. in the chart" },
         { tr: "I've been taking Dolorex for a week.", note: "seit + dative, verb in the present" }
@@ -225,7 +225,7 @@ LINGUAI.addStrings("en", {
       {
         q: "The physician says that tomorrow morning, before the blood draw, the patient has to be “nüchtern”. What does that mean?",
         opts: ["fasting, NPO", "in bed, without getting up", "without medications"],
-        why: "On the unit <b>nüchtern</b> means “fasting”: no food and usually no drinks. In everyday German it also means “sober”."
+        why: "On the unit <b>nüchtern</b> means “fasting”: no food; whether water is allowed depends on the test. In everyday German it also means “sober”."
       },
       {
         tr: "The present tense of einnehmen, all persons.",
@@ -248,7 +248,7 @@ LINGUAI.addStrings("en", {
       {
         q: "Which phrases are correct?",
         opts: ["nach dem Essen", "vor das Frühstück", "mit einem Glas Wasser", "seit eine Woche", "zu den Mahlzeiten"],
-        why: "<i>Vor</i> and <i>seit</i> take the dative here: <i>vor dem Frühstück</i>, <i>seit einer Woche</i>. The other three are already in the dative."
+        why: "<i>Vor</i> and <i>seit</i> take the dative here: <i>vor dem Frühstück</i>, <i>seit einer Woche</i>. So the two options with <i>vor</i> and <i>seit</i> are wrong; <i>nach dem Essen</i>, <i>mit einem Glas Wasser</i> and <i>zu den Mahlzeiten</i> are correct."
       },
       {
         q: "Put the words in order.",
@@ -297,13 +297,13 @@ LINGUAI.addStrings("en", {
       },
       {
         h: "Wenn and falls",
-        p: "The insert is full of conditional clauses. After <strong>wenn</strong> or <strong>falls</strong> the conjugated verb goes <strong>to the end</strong>: <em>Wenn Sie schwanger sind, ...</em>, <em>Falls Sie eine Einnahme vergessen haben, ...</em> If the conditional clause comes first, the main clause starts with the <strong>verb</strong>, because the conditional clause fills first position on its own: <em>Wenn Sie Fragen haben, <b>rufen</b> Sie die Apotheke an.</em> <em>Falls</em> only means “in case”; <em>wenn</em> also means “when”."
+        p: "The insert is full of conditional clauses. After <strong>wenn</strong> or <strong>falls</strong> the conjugated verb goes <strong>to the end</strong>: <em>Wenn Sie schwanger sind, ...</em>, <em>Falls Sie eine Einnahme vergessen haben, ...</em> If the conditional clause comes first, the main clause starts with the <strong>verb</strong>, because the conditional clause fills first position on its own: <em>Wenn Sie Fragen haben, <b>rufen</b> Sie die Apotheke an.</em> <em>Falls</em> is only conditional, “if, in case”; <em>wenn</em> also means “when”."
       },
       {
         contrast: "In the US, the leaflet in the box is a “package insert” written for prescribers, and patients mostly get a separate pharmacy printout or a Medication Guide. In Germany every box contains a <em>Beipackzettel</em> written for the patient, and everybody reads it. Its vocabulary is plain German, not Latin: <em>Gegenanzeigen</em> instead of <em>Kontraindikationen</em>, <em>Nebenwirkungen</em> instead of “adverse effects”, <em>Wechselwirkungen</em> instead of “drug interactions”. <em>Die Kontraindikation</em> is the physician's word. The syntax is the other trap. English keeps the same word order in both halves: “If you have questions, you call the pharmacy”. In German <em>haben</em> moves to the end of the conditional clause and <em>rufen</em> opens the main clause. “Wenn Sie Fragen haben, Sie rufen ...” is the typical mistake of someone thinking in English."
       },
       {
-        trap: "In the insert, <em>häufig</em> is not an impression but a number: by European convention <em>sehr häufig</em> means more than 1 in 10 people, <em>häufig</em> 1 in 100 to 1 in 10, <em>selten</em> 1 in 10,000 to 1 in 1,000. <em>Das Rezept</em> is the prescription (in the kitchen it is also a recipe), and it is not the insert. <em>Die Drogerie</em> is not a drugstore in the American sense: it sells cosmetics and household goods but almost no medications. Medications are bought in <em>der Apotheke</em>, and there is no German equivalent of picking up pills at the supermarket pharmacy counter. Also note: <em>bekommen</em> means “to get”, never “to become”: <em>Wenn Sie Atemnot bekommen</em> is “if you get short of breath”."
+        trap: "In the insert, <em>häufig</em> is not an impression but a number: by European convention <em>sehr häufig</em> means 1 in 10 people or more, <em>häufig</em> 1 in 100 to 1 in 10, <em>selten</em> 1 in 10,000 to 1 in 1,000. <em>Das Rezept</em> is the prescription (in the kitchen it is also a recipe), and it is not the insert. <em>Die Drogerie</em> is not a drugstore in the American sense: it sells cosmetics and household goods but almost no medications. Medications are bought in <em>der Apotheke</em>, and there is no German equivalent of picking up pills at the supermarket pharmacy counter. Also note: <em>bekommen</em> means “to get”, never “to become”: <em>Wenn Sie Atemnot bekommen</em> is “if you get short of breath”."
       },
       {
         tip: "When a patient asks you “can I take it together with ...?”, do not answer by reading the insert: <em>Das klären wir mit dem Arzt oder der Apotheke.</em> The insert helps you understand what to ask, not decide."
@@ -437,13 +437,13 @@ LINGUAI.addStrings("en", {
         p: "Before every administration you check six “R's”, from <em>richtig</em>: <em>die richtige Person</em>, <em>das richtige Medikament</em>, <em>die richtige Dosierung</em>, <em>die richtige Applikationsart</em>, <em>der richtige Zeitpunkt</em>, <em>die richtige Dokumentation</em>. Here the rule is a language topic: notice how <em>richtig</em> changes its ending with the article (<em>der richtige</em>, <em>die richtige</em>, <em>das richtige</em>). Some facilities count more than six; your facility's standard always applies."
       },
       {
-        contrast: "In nursing school in the US you learned the “five rights”: right patient, right drug, right dose, right route, right time, often with a sixth, right documentation, and sometimes more. German uses the same idea, and conveniently the German word also starts with R: <em>richtig</em>. The difference is grammar: “right” never changes in English, while <em>richtig</em> takes a different ending after <em>der</em>, <em>die</em> and <em>das</em>. The passive also looks close to English: “the medications are prepared” is <em>die Medikamente werden gerichtet</em>. But German uses <em>werden</em>, not <em>sein</em>, and puts the participle at the end; with a modal both the participle and <em>werden</em> go to the end, while English keeps “must be checked” together in the middle. Where English says “we document everything” or “you document everything”, German often says <em>Alles wird dokumentiert</em> or <em>Man dokumentiert alles</em>."
+        contrast: "In nursing school in the US you learned the “five rights”: right patient, right drug, right dose, right route, right time, often with a sixth, right documentation, and sometimes more. German uses the same idea, and conveniently the German word also starts with R: <em>richtig</em>. The difference is grammar: “right” never changes in English, while <em>richtig</em> takes a different ending after <em>der</em>, <em>die</em> and <em>das</em>. The passive also looks close to English: “the medications are prepared” is <em>die Medikamente werden gerichtet</em>. But for the action German uses <em>werden</em> (<em>sein</em> + participle describes the resulting state: <em>die Medikamente sind gerichtet</em>), and puts the participle at the end; with a modal both the participle and <em>werden</em> go to the end, while English keeps “must be checked” together in the middle. Where English says “we document everything” or “you document everything”, German often says <em>Alles wird dokumentiert</em> or <em>Man dokumentiert alles</em>."
       },
       {
         trap: "<em>Richten</em> here means “to prepare medications” (many units also say <em>stellen</em>), not “to direct” or “to judge”. <em>Verabreichen</em> is to give the medication; <em>verschreiben</em> is to prescribe it, and that is the physician's job. <em>Die Dosierung</em> is the regimen (how much and when), <em>die Dosis</em> is a single amount. And a classic false friend: <em>Die Medikamente werden gerichtet</em> is a passive, not a future “will”: <em>werden</em> + participle is “are being prepared”, <em>werden</em> + infinitive is the future. Watch the form too: the participle of <em>dokumentieren</em> is <em>dokumentiert</em>, without <em>ge-</em>, like all verbs in <em>-ieren</em>; the participle of <em>verabreichen</em> is <em>verabreicht</em>, without <em>ge-</em> because of the inseparable prefix <em>ver-</em>."
       },
       {
-        tip: "The most important sentence in this lesson is the one that passes the doubt on: <em>Das müssen wir in der Apotheke nachfragen</em> or <em>Das klären wir mit dem Arzt.</em> Splitting a tablet, crushing it or changing the time are decisions you do not make from memory."
+        tip: "The most important sentence in this lesson is the one that passes the doubt on: <em>Da müssen wir in der Apotheke nachfragen</em> or <em>Das klären wir mit dem Arzt.</em> Splitting a tablet, crushing it or changing the time are decisions you do not make from memory."
       }
     ],
     grammar: {

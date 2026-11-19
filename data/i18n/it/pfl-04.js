@@ -25,7 +25,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "L'aggettivo davanti al nome cambia desinenza",
-        p: "Quando l'aggettivo sta <strong>davanti</strong> al nome prende una desinenza che dipende dall'articolo, dal genere e dal caso: <em>ein drückend<b>er</b> Schmerz</em> (nominativo, articolo indeterminativo), <em>einen stechend<b>en</b> Schmerz</em> (accusativo), <em>der dumpf<b>e</b> Schmerz</em> (dopo l'articolo determinativo). Al plurale senza articolo la desinenza è <b>-e</b>: <em>starke Schmerzen</em>; dopo <em>die</em> o <em>diese</em> è <b>-en</b>: <em>diese starken Schmerzen</em>. Quando invece l'aggettivo sta <strong>dopo</strong> <em>sein</em>, non prende nessuna desinenza: <em>Der Schmerz ist dumpf.</em>"
+        p: "Quando l'aggettivo sta <strong>davanti</strong> al nome prende una desinenza che dipende dall'articolo, dal genere e dal caso: <em>ein drückend<b>er</b> Schmerz</em> (nominativo, articolo indeterminativo), <em>einen stechend<b>en</b> Schmerz</em> (accusativo), <em>der dumpf<b>e</b> Schmerz</em> (dopo l'articolo determinativo). Al plurale senza articolo la desinenza è <b>-e</b> al nominativo e all'accusativo (<em>starke Schmerzen</em>) e <b>-en</b> al dativo (<em>bei leichten Schmerzen</em>); dopo <em>die</em> o <em>diese</em> è <b>-en</b>: <em>diese starken Schmerzen</em>. Quando invece l'aggettivo sta <strong>dopo</strong> <em>sein</em>, non prende nessuna desinenza: <em>Der Schmerz ist dumpf.</em>"
       },
       {
         contrast: "Per chi parla italiano <em>Analgetikum</em> e <em>Analgesie</em> sono trasparenti: analgesico, analgesia. È il registro dei medici e della documentazione (<em>Analgetikum nach ärztlicher Anordnung</em>). Con il paziente la parola è tedesca e composta: <em>das Schmerzmittel</em>, <em>die Schmerzlinderung</em>; un paziente italiano capisce «analgesico», molti pazienti tedeschi non dicono mai <em>Analgetikum</em>. Sull'aggettivo: in italiano concorda sempre con il nome, anche dopo il verbo («il dolore è forte», «i dolori sono forti»); in tedesco dopo <em>sein</em> resta nudo (<em>Die Schmerzen sind stark</em>) e la desinenza compare solo davanti al nome, dove l'italiano di solito mette l'aggettivo dopo: «dolori forti», ma <em>starke Schmerzen</em>."
@@ -39,7 +39,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "L'aggettivo che descrive il dolore",
-      note: "Davanti al nome l'aggettivo prende una <b>desinenza</b>; dopo <b>sein</b> non ne prende nessuna. Al plurale senza articolo: <b>-e</b>; dopo <i>die</i>, <i>diese</i>: <b>-en</b>.",
+      note: "Davanti al nome l'aggettivo prende una <b>desinenza</b>; dopo <b>sein</b> non ne prende nessuna. Al plurale senza articolo: <b>-e</b> (nominativo, accusativo), <b>-en</b> (dativo); dopo <i>die</i>, <i>diese</i>: <b>-en</b>.",
       table: {
         head: ["caso", "esempio", "desinenza"],
         rows: [
@@ -123,7 +123,7 @@ LINGUAI.addStrings("it", {
       },
       {
         q: "Traduci, rivolto al paziente: «Ha forti dolori?»",
-        why: "<i>Haben Sie starke Schmerzen?</i> Nel parlato si sente anche <i>große Schmerzen</i>. Il dolore si dice al plurale, e l'aggettivo davanti al plurale senza articolo prende <b>-e</b>."
+        why: "<i>Haben Sie starke Schmerzen?</i> Nel parlato si sente anche <i>große Schmerzen</i>. Per chiedere del dolore si usa di solito il plurale, e l'aggettivo davanti al plurale senza articolo prende <b>-e</b>."
       },
       {
         q: "Quali frasi hanno la desinenza giusta?",
@@ -253,7 +253,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Il Präteritum di kommen, tutte le persone.",
-        why: "<i>Kam, kamst, kam, kamen, kamt, kamen</i>: verbo forte, la vocale cambia in <b>a</b>. Alla prima e alla terza persona singolare non c'è desinenza: <i>ich kam, sie kam</i>. È la forma che si usa dopo <i>als</i> nel racconto."
+        why: "<i>Kam, kamst, kam, kamen, kamt, kamen</i>: verbo forte, la vocale cambia in <b>a</b>. Alla prima e alla terza persona singolare non c'è desinenza: <i>ich kam, sie kam</i>. È la forma che di solito si usa dopo <i>als</i> nel racconto; nel parlato si sente anche il Perfekt."
       },
       {
         q: "Completa la frase.",
@@ -290,7 +290,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Quando è cominciato?",
-        why: "In <i>Wann</i> la <b>w</b> si legge [v]; in <i>angefangen</i> il prefisso <b>an</b> e il <b>ge</b> si pronunciano staccati, mentre il <b>-ngen</b> finale è [ŋən], senza una <b>g</b> dura."
+        why: "In <i>Wann</i> la <b>w</b> si legge [v]; in <i>angefangen</i> il prefisso <b>an</b> e il <b>ge</b> si leggono di seguito, senza pausa e con l'accento su <b>an</b>, mentre il <b>-ngen</b> finale è [ŋən], senza una <b>g</b> dura."
       }
     ]
   },
@@ -316,7 +316,7 @@ LINGUAI.addStrings("it", {
         contrast: "In italiano l'imperativo di cortesia usa il congiuntivo: «chiami il 112», «resti con lui». In tedesco si usa l'infinito più <em>Sie</em>, sempre nello stesso ordine: <em>Rufen Sie</em>, <em>Bleiben Sie</em>. La coppia di questa lezione inganna proprio chi parla italiano: <em>die Reanimation</em> è la rianimazione cardiopolmonare, l'azione, e la parola del paziente è <em>die Wiederbelebung</em>. Il reparto che in Italia si chiama «rianimazione» in Germania è la <em>Intensivstation</em>. In Italia, a seconda della regione, per l'ambulanza si chiama il 112 unico oppure ancora il 118; in Germania il numero è il 112."
       },
       {
-        trap: "<em>Die Notaufnahme</em> è il pronto soccorso, <em>der Notarzt</em> il medico d'emergenza che arriva con il soccorso, <em>der Rettungswagen</em> l'ambulanza. Nessuna di queste è <em>die Ambulanz</em>, che è l'ambulatorio. E non chiudere tu la chiamata con la centrale: <em>Bleiben Sie am Telefon</em> vuol dire restare in linea finché è la <em>Leitstelle</em> a chiudere."
+        trap: "<em>Die Notaufnahme</em> è il pronto soccorso, <em>der Notarzt</em> il medico d'emergenza che arriva con il soccorso, <em>der Rettungswagen</em> l'ambulanza. <em>Die Ambulanz</em>, in un ospedale tedesco, è di solito l'ambulatorio; per il mezzo di soccorso di' <em>der Rettungswagen</em>. E non chiudere tu la chiamata con la centrale: <em>Bleiben Sie am Telefon</em> vuol dire restare in linea finché è la <em>Leitstelle</em> a chiudere."
       },
       {
         tip: "Il primo giorno in un reparto nuovo chiedi due cose: dov'è il pulsante di allarme e qual è il numero interno di emergenza della struttura. Cambiano da ospedale a ospedale, e in un'emergenza non c'è tempo per cercarli."
@@ -460,7 +460,7 @@ LINGUAI.addStrings("it", {
         contrast: "<em>Fraktur</em> ed <em>Hämatom</em> per chi parla italiano non richiedono studio: frattura, ematoma. Al paziente però si dice <em>der Knochenbruch</em> (o semplicemente <em>Ist das Bein gebrochen?</em>) e <em>der Bluterguss</em>, che corrisponde al nostro «livido». Sui tempi: l'imperfetto italiano («era sveglia, aveva dolore») descrive uno stato; il Präteritum tedesco non porta questa sfumatura, è solo un tempo del passato, e <em>Sie war wach</em> si usa al posto di <em>Sie ist wach gewesen</em> perché è più corto, non perché descrive. Il passato prossimo italiano e il Perfekt si somigliano di più: «è caduta» → <em>sie ist gestürzt</em>."
       },
       {
-        trap: "«Cadere» ha tre traduzioni. <em>stürzen</em> è la parola del reparto e della documentazione (<em>der Sturz</em>); <em>hinfallen</em> è quella di tutti i giorni (<em>Ich bin hingefallen</em>); <em>fallen</em> da solo indica un oggetto che cade (<em>Das Glas ist gefallen</em>). Attenzione a <em>gefallen</em>: è anche il participio di <em>gefallen</em>, «piacere», con <em>haben</em> (<em>Es hat mir gefallen</em>). <em>Sie ist gefallen</em> e <em>Es hat ihr gefallen</em> sono due frasi diverse. Infine <em>Platzwunde</em> non viene da «piazza»: è la ferita che si apre per un colpo, da <em>platzen</em>, scoppiare."
+        trap: "«Cadere» ha tre traduzioni. <em>stürzen</em> è la parola del reparto e della documentazione (<em>der Sturz</em>); <em>hinfallen</em> è quella di tutti i giorni (<em>Ich bin hingefallen</em>); <em>fallen</em> da solo vale per un oggetto (<em>Das Glas ist gefallen</em>) e anche per una persona (<em>Sie ist gefallen</em>), ma in cartella si scrive <em>gestürzt</em>. Attenzione a <em>gefallen</em>: è anche il participio di <em>gefallen</em>, «piacere», con <em>haben</em> (<em>Es hat mir gefallen</em>). <em>Sie ist gefallen</em> e <em>Es hat ihr gefallen</em> sono due frasi diverse. Infine <em>Platzwunde</em> non viene da «piazza»: è la ferita che si apre per un colpo, da <em>platzen</em>, scoppiare."
       },
       {
         tip: "Nel verbale scrivi separato quello che hai visto e quello che ti ha detto il paziente: <em>Patientin um 3:00 Uhr auf dem Boden im Bad aufgefunden</em> è un'osservazione; <em>laut Patientin ausgerutscht</em> è il suo racconto. Chi legge dopo deve poter distinguere le due cose."
@@ -621,7 +621,7 @@ LINGUAI.addStrings("it", {
           "Als ich ins Zimmer kam, sie lag auf dem Boden.",
           "Haben Sie starke Schmerzen?",
           "Ich habe die Ärztin sofort informiert.",
-          "Wenn ich gestern ins Zimmer kam, war sie wach."
+          "Wenn ich gestern um acht Uhr ins Zimmer kam, war sie wach."
         ],
         why: "Dopo la subordinata la principale comincia con il verbo: <i>lag sie</i>. Per un fatto unico nel passato si usa <i>als</i>, non <i>wenn</i>. <i>informiert</i> non prende <i>ge-</i>."
       },

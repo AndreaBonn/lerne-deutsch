@@ -431,7 +431,7 @@ LINGUAI.addUnits("PFL", [
         {
           t: "cloze",
           text: "{{1}} ich ins Zimmer kam, {{2}} Frau Keller auf dem Boden.",
-          gaps: [["Als"], ["lag"]]
+          gaps: [["Als"], ["lag", "war", "saß"]]
         },
         {
           t: "order",

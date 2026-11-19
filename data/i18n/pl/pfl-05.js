@@ -166,7 +166,7 @@ LINGUAI.addStrings("pl", {
         contrast: "Przypadki po przyimkach nie są dla ciebie nowością, ale polski rozdaje je inaczej: «przed śniadaniem» i «z wodą» to narzędnik, «po jedzeniu» miejscownik, «od tygodnia» dopełniacz. Niemiecki ma w tej lekcji jeden przypadek dla wszystkich sześciu przyimków, celownik, i widać go na rodzajniku, nie na końcówce rzeczownika: <em>vor dem Frühstück</em>, <em>nach dem Essen</em>. Nie przenoś polskiego przypadku na niemiecki: «przed śniadaniem» z narzędnikiem to i tak <em>vor dem Frühstück</em> z celownikiem. Czas teraźniejszy z <em>seit</em> działa za to jak po polsku: «od tygodnia biorę Dolorex». Polski pacjent mówi «lek przeciwzakrzepowy» albo «coś na rozrzedzenie krwi»; niemiecki mówi prawie zawsze <em>der Blutverdünner</em>, dosłownie «rozrzedzacz krwi», a <em>das Antikoagulans</em> zostaje słowem lekarza i dokumentacji."
       },
       {
-        trap: "<em>Nüchtern</em> na oddziale znaczy «na czczo», ale w języku codziennym znaczy też «trzeźwy» i nawet «rzeczowy, suchy» o stylu. Kiedy mówisz pacjentowi <em>Bleiben Sie bitte nüchtern</em>, dodaj, co to znaczy: <em>Bitte nichts essen und nichts trinken.</em> Nie myl <em>nach dem Essen</em> (przyimek + rzeczownik) z <em>nachdem</em>, które jest spójnikiem i wysyła czasownik na koniec. <em>Zur Nacht</em> to «wieczorem przed snem», <em>in der Nacht</em> to «w nocy»: w planie leków to nie to samo."
+        trap: "<em>Nüchtern</em> na oddziale znaczy «na czczo», ale w języku codziennym znaczy też «trzeźwy» i nawet «rzeczowy, suchy» o stylu. Kiedy mówisz pacjentowi <em>Bleiben Sie bitte nüchtern</em>, dodaj, co to znaczy przy tym badaniu: <em>Bitte nichts essen.</em> i, zależnie od zalecenia, <em>Wasser dürfen Sie trinken</em> albo <em>Bitte auch nichts trinken.</em> Nie myl <em>nach dem Essen</em> (przyimek + rzeczownik) z <em>nachdem</em>, które jest spójnikiem i wysyła czasownik na koniec. <em>Zur Nacht</em> to «wieczorem przed snem», <em>in der Nacht</em> to «w nocy»: w planie leków to nie to samo."
       },
       {
         tip: "Jeśli pacjent mówi, że zapomniał tabletki, nigdy sam nie mów mu, co ma zrobić: <em>Dann sagen Sie es mir bitte. Ich frage den Arzt.</em> Czy dawkę nadrobić, czy pominąć, decyduje lekarz, a właściwa odpowiedź zależy od leku."
@@ -174,7 +174,7 @@ LINGUAI.addStrings("pl", {
     ],
     grammar: {
       title: "Pory i przyimki z celownikiem",
-      note: "<b>vor, nach, mit, seit, zu, bei</b> + <b>celownik</b>. Przysłówki czasu (<b>morgens, abends, täglich</b>) nie mają rodzajnika.",
+      note: "<b>vor</b> (o czasie)<b>, nach, mit, seit, zu, bei</b> + <b>celownik</b>. Przysłówki czasu (<b>morgens, abends, täglich</b>) nie mają rodzajnika.",
       table: {
         head: ["wyrażenie", "celownik od", "po polsku"],
         rows: [
@@ -189,7 +189,7 @@ LINGUAI.addStrings("pl", {
       examples: [
         { tr: "Proszę przyjąć tabletkę przed śniadaniem.", note: "vor dem: celownik od das Frühstück" },
         { tr: "Antybiotyk przyjmuje Pan zawsze po jedzeniu.", note: "nach dem Essen" },
-        { tr: "Na pobranie krwi musi Pani jutro przyjść na czczo.", note: "nüchtern bleiben: bez jedzenia i picia" },
+        { tr: "Na pobranie krwi musi Pani jutro przyjść na czczo.", note: "nüchtern bleiben: bez jedzenia; co wolno pić, zależy od zaleceń do badania" },
         { tr: "Lek przeciwzakrzepowy dostaje Pan wieczorem.", note: "Blutverdünner: słowo pacjenta" },
         { tr: "W razie potrzeby dostanie Pani tabletkę przeciwbólową.", note: "bei Bedarf, w dokumentacji często b.B." },
         { tr: "Od tygodnia biorę Dolorex.", note: "seit + celownik, czasownik w teraźniejszym" }
@@ -225,7 +225,7 @@ LINGUAI.addStrings("pl", {
       {
         q: "Lekarz mówi, że jutro rano, przed pobraniem krwi, pacjent ma być «nüchtern». Co to znaczy?",
         opts: ["na czczo", "w łóżku, bez wstawania", "bez leków"],
-        why: "Na oddziale <b>nüchtern</b> znaczy «na czczo»: bez jedzenia i zwykle bez picia. W języku codziennym znaczy też «trzeźwy»."
+        why: "Na oddziale <b>nüchtern</b> znaczy «na czczo»: bez jedzenia; czy wolno pić wodę, zależy od badania. W języku codziennym znaczy też «trzeźwy»."
       },
       {
         tr: "Czas teraźniejszy einnehmen, wszystkie osoby.",
@@ -248,7 +248,7 @@ LINGUAI.addStrings("pl", {
       {
         q: "Które wyrażenia są poprawne?",
         opts: ["nach dem Essen", "vor das Frühstück", "mit einem Glas Wasser", "seit eine Woche", "zu den Mahlzeiten"],
-        why: "<i>Vor</i> i <i>seit</i> wymagają tu celownika: <i>vor dem Frühstück</i>, <i>seit einer Woche</i>. Pozostałe trzy już są w celowniku."
+        why: "<i>Vor</i> i <i>seit</i> wymagają tu celownika: <i>vor dem Frühstück</i>, <i>seit einer Woche</i>. Dlatego dwie opcje z <i>vor</i> i <i>seit</i> są błędne; poprawne są <i>nach dem Essen</i>, <i>mit einem Glas Wasser</i> i <i>zu den Mahlzeiten</i>."
       },
       {
         q: "Ułóż słowa we właściwej kolejności.",
@@ -297,13 +297,13 @@ LINGUAI.addStrings("pl", {
       },
       {
         h: "Wenn i falls",
-        p: "Ulotka jest pełna zdań warunkowych. Po <strong>wenn</strong> albo <strong>falls</strong> odmieniony czasownik idzie <strong>na koniec</strong>: <em>Wenn Sie schwanger sind, ...</em>, <em>Falls Sie eine Einnahme vergessen haben, ...</em> Jeśli zdanie warunkowe stoi na początku, zdanie główne zaczyna się od <strong>czasownika</strong>, bo warunkowe samo zajmuje pierwsze miejsce: <em>Wenn Sie Fragen haben, <b>rufen</b> Sie die Apotheke an.</em> <em>Falls</em> to tylko «w razie gdyby»; <em>wenn</em> znaczy też «kiedy»."
+        p: "Ulotka jest pełna zdań warunkowych. Po <strong>wenn</strong> albo <strong>falls</strong> odmieniony czasownik idzie <strong>na koniec</strong>: <em>Wenn Sie schwanger sind, ...</em>, <em>Falls Sie eine Einnahme vergessen haben, ...</em> Jeśli zdanie warunkowe stoi na początku, zdanie główne zaczyna się od <strong>czasownika</strong>, bo warunkowe samo zajmuje pierwsze miejsce: <em>Wenn Sie Fragen haben, <b>rufen</b> Sie die Apotheke an.</em> <em>Falls</em> jest tylko warunkowe, «jeśli, w razie gdyby»; <em>wenn</em> znaczy też «kiedy»."
       },
       {
         contrast: "Budowa nie będzie ci obca: polska «ulotka dołączona do opakowania» ma te same punkty według wspólnego wzoru unijnego. Ciekawe jest słownictwo: polski, tak jak niemiecki ulotkowy, woli słowa rodzime od łacińskich. <em>Die Gegenanzeige</em> jest zbudowana dokładnie jak «przeciwwskazanie» (<em>gegen</em> = przeciw, <em>Anzeige</em> = wskazanie), a <em>die Kontraindikation</em> zostaje słowem lekarza. Różnią się za to inne pary: «działania niepożądane» to <em>Nebenwirkungen</em>, dosłownie «działania uboczne», a «interakcje» to <em>Wechselwirkungen</em>, «działania wzajemne»; słowo <em>Interaktion</em> w ulotce prawie się nie pojawia. Największa różnica jest w szyku: polskie «jeśli ma Pan pytania, proszę zadzwonić do apteki» nie przestawia słów, a w niemieckim <em>haben</em> idzie na koniec zdania warunkowego i <em>rufen</em> otwiera zdanie główne. «Wenn Sie Fragen haben, Sie rufen ...» to typowy błąd kogoś, kto myśli po polsku."
       },
       {
-        trap: "W ulotce <em>häufig</em> to nie wrażenie, tylko liczba: według konwencji unijnej <em>sehr häufig</em> znaczy więcej niż 1 osoba na 10, <em>häufig</em> od 1 na 100 do 1 na 10, <em>selten</em> od 1 na 10 000 do 1 na 1000. Polska «ulotka» ma dwa znaczenia, a niemiecki dwa różne słowa: ulotka przy leku to <em>Beipackzettel</em>, a ulotka reklamowa to <em>der Flyer</em> albo <em>das Flugblatt</em>. <em>Der Apotheker</em> to farmaceuta w aptece; potoczne polskie «aptekarz» tu pasuje, ale w niemieckim to zwykłe, aktualne słowo, nie archaizm."
+        trap: "W ulotce <em>häufig</em> to nie wrażenie, tylko liczba: według konwencji unijnej <em>sehr häufig</em> znaczy 1 osoba na 10 lub więcej, <em>häufig</em> od 1 na 100 do 1 na 10, <em>selten</em> od 1 na 10 000 do 1 na 1000. Polska «ulotka» ma dwa znaczenia, a niemiecki dwa różne słowa: ulotka przy leku to <em>Beipackzettel</em>, a ulotka reklamowa to <em>der Flyer</em> albo <em>das Flugblatt</em>. <em>Der Apotheker</em> to farmaceuta w aptece; potoczne polskie «aptekarz» tu pasuje, ale w niemieckim to zwykłe, aktualne słowo, nie archaizm."
       },
       {
         tip: "Pacjentowi, który pyta «czy mogę to brać razem z ...?», nie odpowiadaj, czytając ulotkę: <em>Das klären wir mit dem Arzt oder der Apotheke.</em> Ulotka pomaga ci zrozumieć, o co zapytać, a nie podjąć decyzję."
@@ -443,7 +443,7 @@ LINGUAI.addStrings("pl", {
         trap: "<em>Richten</em> znaczy tu «przygotowywać leki» (na wielu oddziałach mówi się też <em>stellen</em>), a nie «kierować» ani «sądzić», jak <em>richten</em> w sądzie. <em>Verabreichen</em> to podać lek; <em>verschreiben</em> to go przepisać, i robi to lekarz. <em>Die Dosierung</em> to dawkowanie (ile i kiedy), <em>die Dosis</em> to pojedyncza dawka: ta sama para co po polsku, więc łatwo ją zapamiętać, ale też łatwo pomylić w pośpiechu. Uważaj na formę: imiesłów od <em>dokumentieren</em> to <em>dokumentiert</em>, bez <em>ge-</em>, jak we wszystkich czasownikach na <em>-ieren</em>; od <em>verabreichen</em> to <em>verabreicht</em>, bez <em>ge-</em> z powodu nierozdzielnego przedrostka <em>ver-</em>."
       },
       {
-        tip: "Najważniejsze zdanie tej lekcji to to, które przekazuje wątpliwość dalej: <em>Das müssen wir in der Apotheke nachfragen</em> albo <em>Das klären wir mit dem Arzt.</em> Dzielenie tabletki, rozkruszanie jej czy zmiana pory to decyzje, których nie podejmuje się z pamięci."
+        tip: "Najważniejsze zdanie tej lekcji to to, które przekazuje wątpliwość dalej: <em>Da müssen wir in der Apotheke nachfragen</em> albo <em>Das klären wir mit dem Arzt.</em> Dzielenie tabletki, rozkruszanie jej czy zmiana pory to decyzje, których nie podejmuje się z pamięci."
       }
     ],
     grammar: {

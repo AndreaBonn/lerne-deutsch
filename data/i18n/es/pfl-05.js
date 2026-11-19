@@ -166,7 +166,7 @@ LINGUAI.addStrings("es", {
         contrast: "En español «antes del desayuno», «después de comer», «con un vaso de agua» no cambian el artículo. En alemán cada preposición de esta lección dispara el dativo, y el error <em>vor das Frühstück</em> se nota enseguida. <em>Seit</em> además funciona como nuestro «desde hace» con presente: «tomo Dolorex desde hace una semana» es <em>Seit einer Woche nehme ich Dolorex</em>, nunca con Perfekt. Y en la historia clínica española quizá escribas «a demanda» o «si precisa» (s/p); en Alemania es <em>bei Bedarf</em>, abreviado <em>b.B.</em> El paciente hispanohablante dice «el anticoagulante» o «la pastilla para la sangre»; el alemán dice casi siempre <em>der Blutverdünner</em>, mientras que <em>das Antikoagulans</em> queda para el médico y la historia."
       },
       {
-        trap: "<em>Nüchtern</em> en planta significa «en ayunas», pero en la lengua de todos los días también quiere decir «sobrio, que no ha bebido» e incluso «sobrio, sin adornos». Si le dices al paciente <em>Bleiben Sie bitte nüchtern</em>, añade qué significa: <em>Bitte nichts essen und nichts trinken.</em> No confundas <em>nach dem Essen</em> (preposición + sustantivo) con <em>nachdem</em>, que es una conjunción y manda el verbo al final. <em>Zur Nacht</em> es «al acostarse», <em>in der Nacht</em> es «durante la noche»: en el plan de medicación no son lo mismo. Y <em>morgens</em> es «por la mañana», mientras que <em>morgen</em> es «mañana», el día siguiente: el español usa la misma palabra para las dos cosas, el alemán no."
+        trap: "<em>Nüchtern</em> en planta significa «en ayunas», pero en la lengua de todos los días también quiere decir «sobrio, que no ha bebido» e incluso «sobrio, sin adornos». Si le dices al paciente <em>Bleiben Sie bitte nüchtern</em>, añade qué significa para esa prueba: <em>Bitte nichts essen.</em> y, según la indicación, <em>Wasser dürfen Sie trinken</em> o <em>Bitte auch nichts trinken.</em> No confundas <em>nach dem Essen</em> (preposición + sustantivo) con <em>nachdem</em>, que es una conjunción y manda el verbo al final. <em>Zur Nacht</em> es «al acostarse», <em>in der Nacht</em> es «durante la noche»: en el plan de medicación no son lo mismo. Y <em>morgens</em> es «por la mañana», mientras que <em>morgen</em> es «mañana», el día siguiente: el español usa la misma palabra para las dos cosas, el alemán no."
       },
       {
         tip: "Si un paciente dice que ha olvidado una pastilla, nunca le digas tú lo que tiene que hacer: <em>Dann sagen Sie es mir bitte. Ich frage den Arzt.</em> Recuperar o saltarse una dosis es una decisión del médico, y la respuesta correcta cambia de un medicamento a otro."
@@ -174,7 +174,7 @@ LINGUAI.addStrings("es", {
     ],
     grammar: {
       title: "Horarios y preposiciones con dativo",
-      note: "<b>vor, nach, mit, seit, zu, bei</b> + <b>dativo</b>. Los adverbios de tiempo (<b>morgens, abends, täglich</b>) no llevan artículo.",
+      note: "<b>vor</b> (de tiempo)<b>, nach, mit, seit, zu, bei</b> + <b>dativo</b>. Los adverbios de tiempo (<b>morgens, abends, täglich</b>) no llevan artículo.",
       table: {
         head: ["expresión", "dativo de", "español"],
         rows: [
@@ -189,7 +189,7 @@ LINGUAI.addStrings("es", {
       examples: [
         { tr: "Tómese la pastilla antes del desayuno, por favor.", note: "vor dem: dativo de das Frühstück" },
         { tr: "El antibiótico tómelo siempre después de comer.", note: "nach dem Essen" },
-        { tr: "Para la analítica de mañana tiene que estar en ayunas.", note: "nüchtern bleiben: sin comer ni beber" },
+        { tr: "Para la analítica de mañana tiene que estar en ayunas.", note: "nüchtern bleiben: sin comer; qué se puede beber lo dice la indicación de esa prueba" },
         { tr: "El anticoagulante se lo damos por la noche.", note: "Blutverdünner: la palabra del paciente" },
         { tr: "Si lo necesita, le damos una pastilla para el dolor.", note: "bei Bedarf, en la historia a menudo b.B." },
         { tr: "Tomo Dolorex desde hace una semana.", note: "seit + dativo, verbo en presente" }
@@ -225,7 +225,7 @@ LINGUAI.addStrings("es", {
       {
         q: "El médico dice que mañana por la mañana, antes de la analítica, el paciente tiene que estar «nüchtern». ¿Qué significa?",
         opts: ["en ayunas", "en la cama, sin levantarse", "sin medicamentos"],
-        why: "En planta <b>nüchtern</b> significa «en ayunas»: sin comer y, normalmente, sin beber. En la lengua de todos los días también quiere decir «sobrio»."
+        why: "En planta <b>nüchtern</b> significa «en ayunas»: sin comer; si se puede beber agua depende de la prueba. En la lengua de todos los días también quiere decir «sobrio»."
       },
       {
         tr: "El presente de einnehmen, todas las personas.",
@@ -248,7 +248,7 @@ LINGUAI.addStrings("es", {
       {
         q: "¿Qué expresiones son correctas?",
         opts: ["nach dem Essen", "vor das Frühstück", "mit einem Glas Wasser", "seit eine Woche", "zu den Mahlzeiten"],
-        why: "<i>Vor</i> y <i>seit</i> rigen aquí dativo: <i>vor dem Frühstück</i>, <i>seit einer Woche</i>. Las otras tres ya están en dativo."
+        why: "<i>Vor</i> y <i>seit</i> rigen aquí dativo: <i>vor dem Frühstück</i>, <i>seit einer Woche</i>. Por eso las dos opciones con <i>vor</i> y <i>seit</i> son incorrectas; <i>nach dem Essen</i>, <i>mit einem Glas Wasser</i> y <i>zu den Mahlzeiten</i> son correctas."
       },
       {
         q: "Ordena las palabras.",
@@ -297,13 +297,13 @@ LINGUAI.addStrings("es", {
       },
       {
         h: "Wenn y falls",
-        p: "El prospecto está lleno de oraciones condicionales. Después de <strong>wenn</strong> o <strong>falls</strong> el verbo conjugado va <strong>al final</strong>: <em>Wenn Sie schwanger sind, ...</em>, <em>Falls Sie eine Einnahme vergessen haben, ...</em> Si la condicional va delante, la principal empieza con el <strong>verbo</strong>, porque la condicional ocupa ella sola el primer lugar: <em>Wenn Sie Fragen haben, <b>rufen</b> Sie die Apotheke an.</em> <em>Falls</em> es solo «en caso de que»; <em>wenn</em> significa también «cuando»."
+        p: "El prospecto está lleno de oraciones condicionales. Después de <strong>wenn</strong> o <strong>falls</strong> el verbo conjugado va <strong>al final</strong>: <em>Wenn Sie schwanger sind, ...</em>, <em>Falls Sie eine Einnahme vergessen haben, ...</em> Si la condicional va delante, la principal empieza con el <strong>verbo</strong>, porque la condicional ocupa ella sola el primer lugar: <em>Wenn Sie Fragen haben, <b>rufen</b> Sie die Apotheke an.</em> <em>Falls</em> es solo condicional, «si, en caso de que»; <em>wenn</em> significa también «cuando»."
       },
       {
         contrast: "El <em>Beipackzettel</em> es nuestro «prospecto», y las secciones te sonarán: el prospecto español también sigue el modelo europeo. La diferencia está en el vocabulario. El prospecto español dice «contraindicaciones», «reacciones adversas», «interacciones», las mismas palabras latinas que usa el médico, y el paciente las entiende. El prospecto alemán prefiere palabras alemanas: <em>Gegenanzeigen</em>, o la fórmula <em>... darf nicht eingenommen werden, wenn ...</em>; <em>Nebenwirkungen</em>; <em>Wechselwirkungen</em>. <em>Die Kontraindikation</em> es la palabra del médico. También cambia la sintaxis: en español «si tiene preguntas, llame a la farmacia» no altera el orden de las palabras; en alemán <em>haben</em> va al final de la condicional y <em>rufen</em> abre la principal. «Wenn Sie Fragen haben, Sie rufen ...» es el error típico de quien piensa en español."
       },
       {
-        trap: "En el prospecto <em>häufig</em> no es una impresión, es un número: por convención europea <em>sehr häufig</em> significa más de 1 de cada 10 personas, <em>häufig</em> entre 1 de cada 100 y 1 de cada 10, <em>selten</em> entre 1 de cada 10.000 y 1 de cada 1000. El prospecto no es <em>der Prospekt</em>, que es un folleto publicitario; ni tampoco <em>das Rezept</em>, que es la receta. <em>Die Drogerie</em> se parece a «droguería», pero no vende medicamentos: es una tienda de cosmética y productos para el hogar; los medicamentos se compran en <em>der Apotheke</em>. Y <em>bekommen</em> no es «convenir»: significa «recibir» o, con un síntoma, que te da algo: <em>Wenn Sie Atemnot bekommen</em> es «si le falta el aire»."
+        trap: "En el prospecto <em>häufig</em> no es una impresión, es un número: por convención europea <em>sehr häufig</em> significa 1 de cada 10 personas o más, <em>häufig</em> entre 1 de cada 100 y 1 de cada 10, <em>selten</em> entre 1 de cada 10.000 y 1 de cada 1000. El prospecto no es <em>der Prospekt</em>, que es un folleto publicitario; ni tampoco <em>das Rezept</em>, que es la receta. <em>Die Drogerie</em> se parece a «droguería», pero no es una farmacia: vende cosmética, productos para el hogar y como mucho algún producto de venta libre; los medicamentos de farmacia y los de receta se compran en <em>der Apotheke</em>. Y <em>bekommen</em> no es «convenir»: significa «recibir» o, con un síntoma, que te da algo: <em>Wenn Sie Atemnot bekommen</em> es «si le falta el aire»."
       },
       {
         tip: "Al paciente que te pregunta «¿puedo tomarlo junto con ...?» no le respondas leyendo el prospecto: <em>Das klären wir mit dem Arzt oder der Apotheke.</em> El prospecto te sirve para entender qué preguntar, no para decidir."
@@ -443,7 +443,7 @@ LINGUAI.addStrings("es", {
         trap: "<em>Richten</em> aquí significa «preparar la medicación» (en muchas plantas se dice también <em>stellen</em>), no «dirigir» ni «juzgar». <em>Verabreichen</em> es administrar el medicamento; <em>verschreiben</em> es recetarlo, y eso lo hace el médico. <em>Die Dosierung</em> es la pauta (cuánto y cuándo), <em>die Dosis</em> es la cantidad de una toma. <em>Kontrollieren</em> es «comprobar», no «controlar» en el sentido de dominar algo. Ojo también con la forma: el participio de <em>dokumentieren</em> es <em>dokumentiert</em>, sin <em>ge-</em>, como todos los verbos en <em>-ieren</em>; el de <em>verabreichen</em> es <em>verabreicht</em>, sin <em>ge-</em> por el prefijo inseparable <em>ver-</em>."
       },
       {
-        tip: "La frase más importante de la lección es la que remite la duda: <em>Das müssen wir in der Apotheke nachfragen</em> o <em>Das klären wir mit dem Arzt.</em> Partir una pastilla, triturarla o cambiar el horario son decisiones que no se toman de memoria."
+        tip: "La frase más importante de la lección es la que remite la duda: <em>Da müssen wir in der Apotheke nachfragen</em> o <em>Das klären wir mit dem Arzt.</em> Partir una pastilla, triturarla o cambiar el horario son decisiones que no se toman de memoria."
       }
     ],
     grammar: {

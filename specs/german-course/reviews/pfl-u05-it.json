@@ -1,0 +1,48 @@
+{
+  "bundleHash": "2ceb1074be2f92c7a7b447918fd56fa045e1db138d5c905c5d77eb55e849a993",
+  "findings": [
+    {
+      "kind": "reggenza",
+      "msg": "«Das müssen wir in der Apotheke nachfragen» usa nachfragen con un oggetto accusativo che qui non è idiomatico. Sostituire con «Das müssen wir in der Apotheke erfragen» oppure «Danach müssen wir in der Apotheke fragen». La frase ricorre anche nel dialogo e nel tip della lezione.",
+      "path": "neutral.lessons[3].grammar.examples[4].it"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Vor» non regge sempre il dativo: come preposizione locale può reggere anche l'accusativo per indicare una direzione. Specificare che negli esempi temporali della lezione regge il dativo; correggere analogamente l'obiettivo e il contrasto.",
+      "path": "merged.lessons[1].grammar.note"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La spiegazione attribuisce il dativo a «vor» e «seit» mentre le due opzioni che li contengono sono scorrette. Indicare che le forme corrette sarebbero «vor dem Frühstück» e «seit einer Woche» e che le tre risposte selezionate sono già corrette.",
+      "path": "merged.lessons[1].exercises[5].why"
+    },
+    {
+      "kind": "precisione clinica",
+      "msg": "«Nüchtern» non significa sempre assenza di qualsiasi bevanda: le istruzioni dipendono dall'esame e dal protocollo, e spesso l'acqua è consentita. Sostituire la definizione assoluta con un rinvio alle indicazioni specifiche; correggere anche il trap che prescrive di non bere nulla.",
+      "path": "merged.lessons[1].grammar.examples[2].note"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In «werden» la vocale accentata è normalmente breve e aperta [ɛ], non lunga. Correggere la spiegazione fonetica.",
+      "path": "merged.lessons[3].exercises[10].why"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In «Arzt» la z rappresenta l'affricata [ts]: la t finale non va presentata come un suono separato aggiuntivo. Spiegare che la sequenza finale si realizza normalmente [tst].",
+      "path": "merged.lessons[2].exercises[10].why"
+    },
+    {
+      "kind": "accuratezza lessicale",
+      "msg": "«Die Tropfen» non è generalmente il plurale abituale di «der Tropfen» in ogni significato: la precisazione vale per i medicinali in gocce. Limitare l'affermazione a quel contesto, anche nella teoria.",
+      "path": "merged.lessons[0].vocab[2].tr"
+    },
+    {
+      "kind": "completezza delle alternative",
+      "msg": "La traduzione ammette anche «Nehmen Sie morgens vor dem Frühstück die Tablette» con «am Morgen» al posto di «morgens», senza o con «ein». Aggiungere queste varianti alla chiave.",
+      "path": "neutral.lessons[1].exercises[7].a"
+    }
+  ],
+  "lang": "it",
+  "unit": "pfl-u05",
+  "verdict": "fail"
+}

@@ -25,7 +25,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         h: "L'adjectif devant le nom change de terminaison",
-        p: "Quand l'adjectif est placé <strong>devant</strong> le nom, il prend une terminaison qui dépend de l'article, du genre et du cas : <em>ein drückend<b>er</b> Schmerz</em> (nominatif, article indéfini), <em>einen stechend<b>en</b> Schmerz</em> (accusatif), <em>der dumpf<b>e</b> Schmerz</em> (après l'article défini). Au pluriel sans article, la terminaison est <b>-e</b> : <em>starke Schmerzen</em> ; après <em>die</em> ou <em>diese</em>, elle est <b>-en</b> : <em>diese starken Schmerzen</em>. Quand l'adjectif est placé <strong>après</strong> <em>sein</em>, il ne prend aucune terminaison : <em>Der Schmerz ist dumpf.</em>"
+        p: "Quand l'adjectif est placé <strong>devant</strong> le nom, il prend une terminaison qui dépend de l'article, du genre et du cas : <em>ein drückend<b>er</b> Schmerz</em> (nominatif, article indéfini), <em>einen stechend<b>en</b> Schmerz</em> (accusatif), <em>der dumpf<b>e</b> Schmerz</em> (après l'article défini). Au pluriel sans article, la terminaison est <b>-e</b> au nominatif et à l'accusatif (<em>starke Schmerzen</em>) et <b>-en</b> au datif (<em>bei leichten Schmerzen</em>) ; après <em>die</em> ou <em>diese</em>, elle est <b>-en</b> : <em>diese starken Schmerzen</em>. Quand l'adjectif est placé <strong>après</strong> <em>sein</em>, il ne prend aucune terminaison : <em>Der Schmerz ist dumpf.</em>"
       },
       {
         contrast: "Pour un francophone, <em>Analgetikum</em> et <em>Analgesie</em> sont transparents : analgésique, analgésie. C'est le registre des médecins et des transmissions écrites (<em>Analgetikum nach ärztlicher Anordnung</em>). En France, un patient dit volontiers « antalgique » ou « antidouleur » ; un patient allemand ne dit presque jamais <em>Analgetikum</em> : il dit <em>das Schmerzmittel</em>, et le soulagement est <em>die Schmerzlinderung</em>. Les qualificatifs ne se superposent pas non plus : la douleur « lancinante » du français, qui revient par élancements, n'est pas exactement <em>stechend</em>, qui pique comme une aiguille ou un couteau ; la douleur « oppressante » de la poitrine correspond bien à <em>drückend</em>. Côté grammaire, le français accorde l'adjectif aussi après le verbe (« la douleur est forte », « les douleurs sont fortes ») ; l'allemand le laisse nu après <em>sein</em> (<em>Die Schmerzen sind stark</em>). Devant le nom, en revanche, les deux langues se rejoignent : « de fortes douleurs », <em>starke Schmerzen</em>."
@@ -39,7 +39,7 @@ LINGUAI.addStrings("fr", {
     ],
     grammar: {
       title: "L'adjectif qui décrit la douleur",
-      note: "Devant le nom, l'adjectif prend une <b>terminaison</b> ; après <b>sein</b>, il n'en prend aucune. Au pluriel sans article : <b>-e</b> ; après <i>die</i>, <i>diese</i> : <b>-en</b>.",
+      note: "Devant le nom, l'adjectif prend une <b>terminaison</b> ; après <b>sein</b>, il n'en prend aucune. Au pluriel sans article : <b>-e</b> (nominatif, accusatif), <b>-en</b> (datif) ; après <i>die</i>, <i>diese</i> : <b>-en</b>.",
       table: {
         head: ["cas", "exemple", "terminaison"],
         rows: [
@@ -123,7 +123,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         q: "Traduis, en t'adressant au patient : « Avez-vous de fortes douleurs ? »",
-        why: "<i>Haben Sie starke Schmerzen?</i> À l'oral, on entend aussi <i>große Schmerzen</i>. La douleur se dit au pluriel, et l'adjectif devant un pluriel sans article prend <b>-e</b>."
+        why: "<i>Haben Sie starke Schmerzen?</i> À l'oral, on entend aussi <i>große Schmerzen</i>. Pour parler de la douleur, on emploie le plus souvent le pluriel, et l'adjectif devant un pluriel sans article prend <b>-e</b>."
       },
       {
         q: "Quelles phrases ont la bonne terminaison ?",
@@ -177,7 +177,7 @@ LINGUAI.addStrings("fr", {
         p: "Les conjonctions de temps ouvrent une subordonnée avec le verbe conjugué <strong>à la fin</strong> : <em>bis das Team kommt</em>, <em>während ich mit ihr sprach</em>, <em>sobald das Team da ist</em>. Si la subordonnée vient en premier, la principale commence par le verbe : <em>Als ich ins Zimmer kam, <b>war</b> sie nicht ansprechbar.</em> Deux conjonctions traduisent « quand » : <strong>als</strong> pour un fait <b>unique dans le passé</b> (<em>Als ich ins Zimmer kam</em>), <strong>wenn</strong> pour le présent, le futur et ce qui se répète (<em>Wenn ein Patient nicht reagiert, rufe ich sofort Hilfe</em>). <em>Wann</em>, lui, sert à poser la question : <em>Wann hat das angefangen?</em>"
       },
       {
-        contrast: "En France, on parle d'« AVC », et le patient comme sa famille emploient le sigle sans hésiter. En allemand, l'équivalent technique est <em>der Apoplex</em> (ou <em>der Hirninfarkt</em> dans les comptes rendus), mais à l'oral, avec le patient, il n'y a qu'un mot : <em>der Schlaganfall</em>. N'attends pas de sigle de la famille, et ne traduis pas « AVC » lettre par lettre. Les autres termes techniques te sont transparents (<em>Synkope</em> syncope, <em>Myokardinfarkt</em> infarctus du myocarde, <em>somnolent</em> somnolent) ; les mots du patient le sont moins : <em>die Ohnmacht</em> (l'évanouissement), <em>der Herzinfarkt</em> (la crise cardiaque), <em>schläfrig</em>. Enfin, le français dit « quand » (ou « lorsque ») dans tous les cas ; l'allemand a trois mots (<em>als, wenn, wann</em>), et confondre <em>als</em> et <em>wenn</em> est l'erreur la plus fréquente quand on raconte un fait."
+        contrast: "En France, on parle d'« AVC », et le patient comme sa famille emploient le sigle sans hésiter. En allemand, l'équivalent technique est <em>der Apoplex</em> (et, pour la seule forme ischémique, <em>der Hirninfarkt</em>), mais à l'oral, avec le patient, il n'y a qu'un mot : <em>der Schlaganfall</em>. N'attends pas de sigle de la famille, et ne traduis pas « AVC » lettre par lettre. Les autres termes techniques te sont transparents (<em>Synkope</em> syncope, <em>Myokardinfarkt</em> infarctus du myocarde, <em>somnolent</em> somnolent) ; les mots du patient le sont moins : <em>die Ohnmacht</em> (l'évanouissement), <em>der Herzinfarkt</em> (la crise cardiaque), <em>schläfrig</em>. Enfin, le français dit « quand » (ou « lorsque ») dans tous les cas ; l'allemand a trois mots (<em>als, wenn, wann</em>), et confondre <em>als</em> et <em>wenn</em> est l'erreur la plus fréquente quand on raconte un fait."
       },
       {
         trap: "Le « malaise » si courant dans les services français (« il a fait un malaise ») n'a pas d'équivalent direct : <em>die Malaise</em> désigne une situation pénible, jamais un patient qui se sent mal. On décrit ce qu'on voit : <em>Ihm ist schwarz vor Augen geworden</em>, <em>Sie ist ohnmächtig geworden</em>. <em>Ansprechbar</em> ne veut pas dire « qui parle » : le patient <b>répond</b> quand on lui parle. Un patient peut être <em>wach</em> (réveillé) sans être <em>ansprechbar</em>. Et <em>somnolent</em> n'est pas simplement « fatigué » : le patient dort beaucoup mais se réveille si on l'appelle, ce qui se note et se signale."
@@ -204,7 +204,7 @@ LINGUAI.addStrings("fr", {
         { tr: "Si un patient ne réagit pas, j'appelle tout de suite à l'aide.", note: "wenn : une règle qui vaut toujours" },
         { tr: "Je reste avec la patiente jusqu'à ce que l'équipe arrive.", note: "bis : le verbe kommt à la fin" },
         { tr: "Pendant que je lui parlais, elle est devenue soudain toute pâle.", note: "während : deux choses au même moment" },
-        { tr: "Quand elle s'est levée, elle a vu trouble.", note: "jemandem wird schwarz vor Augen : expression courante" },
+        { tr: "Quand elle s'est levée, elle a vu noir.", note: "jemandem wird schwarz vor Augen : expression courante" },
         { tr: "Dès que l'équipe est là, je rapporte brièvement ce qui s'est passé.", note: "sobald : tout de suite après" }
       ]
     },
@@ -253,7 +253,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         tr: "Le Präteritum de kommen, à toutes les personnes.",
-        why: "<i>Kam, kamst, kam, kamen, kamt, kamen</i> : verbe fort, la voyelle devient <b>a</b>. À la première et à la troisième personne du singulier, il n'y a pas de terminaison : <i>ich kam, sie kam</i>. C'est la forme qu'on emploie après <i>als</i> dans un récit."
+        why: "<i>Kam, kamst, kam, kamen, kamt, kamen</i> : verbe fort, la voyelle devient <b>a</b>. À la première et à la troisième personne du singulier, il n'y a pas de terminaison : <i>ich kam, sie kam</i>. C'est la forme qu'on emploie le plus souvent après <i>als</i> dans un récit ; à l'oral, on entend aussi le Perfekt."
       },
       {
         q: "Complète la phrase.",
@@ -290,7 +290,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         tr: "Quand est-ce que ça a commencé ?",
-        why: "Dans <i>Wann</i>, le <b>w</b> se lit [v] ; dans <i>angefangen</i>, le préfixe <b>an</b> et le <b>ge</b> se prononcent séparément, et le <b>-ngen</b> final est [ŋən], sans <b>g</b> dur."
+        why: "Dans <i>Wann</i>, le <b>w</b> se lit [v] ; dans <i>angefangen</i>, le préfixe <b>an</b> et le <b>ge</b> s'enchaînent sans pause, avec l'accent sur <b>an</b>, et le <b>-ngen</b> final est [ŋən], sans <b>g</b> dur."
       }
     ]
   },
@@ -316,7 +316,7 @@ LINGUAI.addStrings("fr", {
         contrast: "En France, on a appris plusieurs numéros : le 15 pour le SAMU, le 18 pour les pompiers, le 17 pour la police, et le 112 européen qui aboutit à l'un d'eux. En Allemagne, le réflexe est plus simple : <strong>112</strong> pour tout ce qui est médical et pour les pompiers, <strong>110</strong> pour la police ; il n'y a pas de « 15 ». L'impératif de politesse français se passe de pronom : « Appelez le 112 », « Restez avec lui ». L'allemand, lui, exige <em>Sie</em> juste après le verbe : <em>Rufen Sie</em>, <em>Bleiben Sie</em>. Enfin, le piège de cette leçon : en France, « la réa » est d'abord un service, la réanimation, alors que <em>die Reanimation</em> est le geste de réanimation cardio-pulmonaire, et le mot du patient pour ce geste est <em>die Wiederbelebung</em>. Le service s'appelle <em>die Intensivstation</em>."
       },
       {
-        trap: "<em>Die Ambulanz</em> n'est pas l'ambulance : c'est le service de consultations externes. L'ambulance se dit <em>der Rettungswagen</em>, et le médecin d'urgence qui arrive avec les secours, <em>der Notarzt</em>. Les urgences de l'hôpital sont <em>die Notaufnahme</em>. Et ne raccroche pas toi-même avec le centre de régulation : <em>Bleiben Sie am Telefon</em> veut dire rester en ligne jusqu'à ce que la <em>Leitstelle</em> mette fin à l'appel."
+        trap: "<em>Die Ambulanz</em>, dans un hôpital allemand, désigne le plus souvent le service de consultations externes ; pour le véhicule, on dit <em>der Rettungswagen</em>. L'ambulance se dit <em>der Rettungswagen</em>, et le médecin d'urgence qui arrive avec les secours, <em>der Notarzt</em>. Les urgences de l'hôpital sont <em>die Notaufnahme</em>. Et ne raccroche pas toi-même avec le centre de régulation : <em>Bleiben Sie am Telefon</em> veut dire rester en ligne jusqu'à ce que la <em>Leitstelle</em> mette fin à l'appel."
       },
       {
         tip: "Le premier jour dans un nouveau service, demande deux choses : où se trouve le bouton d'alarme et quel est le numéro d'urgence interne de l'établissement. Ils changent d'un hôpital à l'autre, et en urgence on n'a pas le temps de les chercher."
@@ -460,7 +460,7 @@ LINGUAI.addStrings("fr", {
         contrast: "Bonne nouvelle pour un francophone : « elle est tombée » se construit avec être, et <em>sie ist gestürzt</em>, <em>sie ist gefallen</em> avec <em>sein</em>. Ton réflexe est le bon pour les verbes de chute. Il te trahit ailleurs : « elle a glissé » prend avoir, alors que <em>sie ist ausgerutscht</em> prend <em>sein</em> ; « je l'ai trouvée » et <em>ich habe sie gefunden</em>, eux, concordent. Vérifie l'auxiliaire verbe par verbe. Sur les temps : l'imparfait français (« elle était réveillée, elle avait mal ») décrit un état ; le Präteritum allemand n'a pas cette nuance, c'est simplement un temps du passé, et <em>Sie war wach</em> remplace <em>Sie ist wach gewesen</em> parce qu'il est plus court, pas parce qu'il décrit. Pour le vocabulaire, <em>Fraktur</em> et <em>Hämatom</em> te sont transparents ; au patient on dit <em>der Knochenbruch</em> (ou simplement <em>Ist das Bein gebrochen?</em>) et <em>der Bluterguss</em>, notre « bleu »."
       },
       {
-        trap: "« Tomber » a trois traductions. <em>stürzen</em> est le mot du service et de la documentation (<em>der Sturz</em>) ; <em>hinfallen</em> est celui de tous les jours (<em>Ich bin hingefallen</em>) ; <em>fallen</em> seul se dit plutôt d'un objet qui tombe (<em>Das Glas ist gefallen</em>). Attention à <em>gefallen</em> : c'est aussi le participe de <em>gefallen</em>, « plaire », avec <em>haben</em> (<em>Es hat mir gefallen</em>). <em>Sie ist gefallen</em> et <em>Es hat ihr gefallen</em> sont deux phrases différentes. Enfin, <em>die Platzwunde</em> n'a rien à voir avec une « place » : c'est la plaie qui s'ouvre sous un choc, de <em>platzen</em>, éclater ; en français, une plaie contuse."
+        trap: "« Tomber » a trois traductions. <em>stürzen</em> est le mot du service et de la documentation (<em>der Sturz</em>) ; <em>hinfallen</em> est celui de tous les jours (<em>Ich bin hingefallen</em>) ; <em>fallen</em> seul se dit d'un objet (<em>Das Glas ist gefallen</em>) comme d'une personne (<em>Sie ist gefallen</em>), mais dans le dossier on écrit <em>gestürzt</em>. Attention à <em>gefallen</em> : c'est aussi le participe de <em>gefallen</em>, « plaire », avec <em>haben</em> (<em>Es hat mir gefallen</em>). <em>Sie ist gefallen</em> et <em>Es hat ihr gefallen</em> sont deux phrases différentes. Enfin, <em>die Platzwunde</em> n'a rien à voir avec une « place » : c'est la plaie qui s'ouvre sous un choc, de <em>platzen</em>, éclater ; en français, une plaie contuse."
       },
       {
         tip: "Dans la fiche, écris séparément ce que tu as vu et ce que le patient t'a dit : <em>Patientin um 3:00 Uhr auf dem Boden im Bad aufgefunden</em> est une observation ; <em>laut Patientin ausgerutscht</em> est son récit. Celui qui lit après toi doit pouvoir distinguer les deux."
@@ -621,7 +621,7 @@ LINGUAI.addStrings("fr", {
           "Als ich ins Zimmer kam, sie lag auf dem Boden.",
           "Haben Sie starke Schmerzen?",
           "Ich habe die Ärztin sofort informiert.",
-          "Wenn ich gestern ins Zimmer kam, war sie wach."
+          "Wenn ich gestern um acht Uhr ins Zimmer kam, war sie wach."
         ],
         why: "Après la subordonnée, la principale commence par le verbe : <i>lag sie</i>. Pour un fait unique dans le passé, on emploie <i>als</i>, pas <i>wenn</i>. <i>informiert</i> ne prend pas <i>ge-</i>."
       },

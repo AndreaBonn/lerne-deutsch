@@ -1,0 +1,33 @@
+{
+  "bundleHash": "ac4f7f1d972fb5e05d0c6d3a34659c24273bacd452973da2c7f1901f89c8fa22",
+  "findings": [
+    {
+      "kind": "traduzione",
+      "msg": "«Wurde ihr schwarz vor Augen» indica che le si è oscurata la vista o che ha visto nero, non semplicemente che ha visto sfocato. Correggere la traduzione, per esempio: «Quand elle s'est levée, elle a vu noir.»",
+      "path": "merged.lessons[1].grammar.examples[4].tr"
+    },
+    {
+      "kind": "accuratezza lessicale",
+      "msg": "«Hirninfarkt» indica un infarto cerebrale ischemico, non ogni tipo di ictus: esclude quelli emorragici. Presentarlo come un tipo di «Schlaganfall», non come equivalente generale di «AVC».",
+      "path": "merged.lessons[1].theory[2].contrast"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "La regola sull'imperativo con «du» è troppo generale: il cambiamento da e a i o ie si conserva, ma non tutti i verbi che cambiano vocale al presente conservano tale cambiamento, per esempio «du fährst» → «fahr». Precisare la regola e includere anche e → ie, come «du liest» → «lies».",
+      "path": "merged.lessons[2].grammar.note"
+    },
+    {
+      "kind": "risposte incomplete",
+      "msg": "La frase con due lacune non specifica gli aggettivi richiesti: anche «stechenden» o «brennenden» nella prima lacuna e «schwach» nella seconda sono grammaticalmente possibili. Fornire gli aggettivi da declinare oppure accettare le alternative coerenti.",
+      "path": "merged.lessons[0].exercises[5]"
+    },
+    {
+      "kind": "risposte incomplete",
+      "msg": "La seconda lacuna non determina «lag»: anche «saß» o «war» producono frasi corrette e compatibili con la traduzione francese. Indicare il verbo «liegen» e il tempo richiesto oppure accettare le altre soluzioni appropriate.",
+      "path": "merged.test.exercises[6]"
+    }
+  ],
+  "lang": "fr",
+  "unit": "pfl-u04",
+  "verdict": "fail"
+}

@@ -25,7 +25,7 @@ LINGUAI.addStrings("es", {
       },
       {
         h: "El adjetivo delante del sustantivo cambia de terminación",
-        p: "Cuando el adjetivo va <strong>delante</strong> del sustantivo, lleva una terminación que depende del artículo, del género y del caso: <em>ein drückend<b>er</b> Schmerz</em> (nominativo, artículo indeterminado), <em>einen stechend<b>en</b> Schmerz</em> (acusativo), <em>der dumpf<b>e</b> Schmerz</em> (tras el artículo determinado). En plural sin artículo la terminación es <b>-e</b>: <em>starke Schmerzen</em>; tras <em>die</em> o <em>diese</em> es <b>-en</b>: <em>diese starken Schmerzen</em>. Cuando el adjetivo va <strong>después</strong> de <em>sein</em>, no lleva ninguna terminación: <em>Der Schmerz ist dumpf.</em>"
+        p: "Cuando el adjetivo va <strong>delante</strong> del sustantivo, lleva una terminación que depende del artículo, del género y del caso: <em>ein drückend<b>er</b> Schmerz</em> (nominativo, artículo indeterminado), <em>einen stechend<b>en</b> Schmerz</em> (acusativo), <em>der dumpf<b>e</b> Schmerz</em> (tras el artículo determinado). En plural sin artículo la terminación es <b>-e</b> en nominativo y acusativo (<em>starke Schmerzen</em>) y <b>-en</b> en dativo (<em>bei leichten Schmerzen</em>); tras <em>die</em> o <em>diese</em> es <b>-en</b>: <em>diese starken Schmerzen</em>. Cuando el adjetivo va <strong>después</strong> de <em>sein</em>, no lleva ninguna terminación: <em>Der Schmerz ist dumpf.</em>"
       },
       {
         contrast: "En español el adjetivo concuerda siempre, también después del verbo («el dolor es fuerte», «los dolores son fuertes»), y casi siempre va detrás del sustantivo: «un dolor punzante», «dolores fuertes». En alemán va delante y la terminación solo aparece ahí: <em>starke Schmerzen</em>, pero <em>Die Schmerzen sind stark</em>, sin nada. Los adjetivos del dolor se corresponden bien con los que ya usas en la valoración: <em>stechend</em> es punzante, <em>brennend</em> quemante o urente, <em>dumpf</em> sordo, <em>drückend</em> opresivo; <em>ziehend</em> no tiene un equivalente tan fijo: es el dolor «que tira», tirante. Sobre el registro: en España y en América Latina el paciente dice «analgésico» o «calmante» sin problema; el paciente alemán casi nunca dice <em>Analgetikum</em>, que es la palabra de la historia clínica. Con él la palabra es <em>das Schmerzmittel</em>."
@@ -39,7 +39,7 @@ LINGUAI.addStrings("es", {
     ],
     grammar: {
       title: "El adjetivo que describe el dolor",
-      note: "Delante del sustantivo el adjetivo lleva <b>terminación</b>; después de <b>sein</b>, ninguna. En plural sin artículo: <b>-e</b>; tras <i>die</i>, <i>diese</i>: <b>-en</b>.",
+      note: "Delante del sustantivo el adjetivo lleva <b>terminación</b>; después de <b>sein</b>, ninguna. En plural sin artículo: <b>-e</b> (nominativo, acusativo), <b>-en</b> (dativo); tras <i>die</i>, <i>diese</i>: <b>-en</b>.",
       table: {
         head: ["caso", "ejemplo", "terminación"],
         rows: [
@@ -123,7 +123,7 @@ LINGUAI.addStrings("es", {
       },
       {
         q: "Traduce, dirigiéndote al paciente: «¿Tiene dolores fuertes?»",
-        why: "<i>Haben Sie starke Schmerzen?</i> En la lengua hablada también se oye <i>große Schmerzen</i>. El dolor se dice en plural, y el adjetivo delante de un plural sin artículo lleva <b>-e</b>."
+        why: "<i>Haben Sie starke Schmerzen?</i> En la lengua hablada también se oye <i>große Schmerzen</i>. Para preguntar por el dolor se usa normalmente el plural, y el adjetivo delante de un plural sin artículo lleva <b>-e</b>."
       },
       {
         q: "¿Qué frases tienen la terminación correcta?",
@@ -177,7 +177,7 @@ LINGUAI.addStrings("es", {
         p: "Las conjunciones temporales abren una subordinada con el verbo conjugado <strong>al final</strong>: <em>bis das Team kommt</em>, <em>während ich mit ihr sprach</em>, <em>sobald das Team da ist</em>. Si la subordinada va primero, la principal empieza por el verbo: <em>Als ich ins Zimmer kam, <b>war</b> sie nicht ansprechbar.</em> Dos conjunciones traducen «cuando»: <strong>als</strong> para un hecho <b>único en el pasado</b> (<em>Als ich ins Zimmer kam</em>), <strong>wenn</strong> para el presente, el futuro y lo que se repite (<em>Wenn ein Patient nicht reagiert, rufe ich sofort Hilfe</em>). <em>Wann</em> es la pregunta: <em>Wann hat das angefangen?</em>"
       },
       {
-        contrast: "Los términos técnicos de esta lección son casi españoles: <em>Synkope</em> síncope, <em>Apoplex</em> apoplejía, <em>Myokardinfarkt</em> infarto de miocardio, <em>somnolent</em> somnoliento. Pero el paciente y la familia usan las palabras alemanas: <em>die Ohnmacht</em> (el desmayo), <em>der Schlaganfall</em>, <em>der Herzinfarkt</em>, <em>schläfrig</em>. En España se dice «ictus», y en buena parte de América Latina «derrame cerebral» o «ACV»; en alemán el paciente no dice ninguna de las dos cosas: dice <em>Schlaganfall</em>. Para «cuando» el español tiene una sola palabra; el alemán tiene tres (<em>als, wenn, wann</em>), y equivocarse entre <em>als</em> y <em>wenn</em> es el error más frecuente al contar un hecho."
+        contrast: "Los términos técnicos de esta lección son casi españoles: <em>Synkope</em> síncope, <em>Apoplex</em> apoplejía, <em>Myokardinfarkt</em> infarto de miocardio, <em>somnolent</em> somnoliento. Pero el paciente y la familia usan las palabras alemanas: <em>die Ohnmacht</em> (el desmayo), <em>der Schlaganfall</em>, <em>der Herzinfarkt</em>, <em>schläfrig</em>. En España se dice «ictus», y en buena parte de América Latina «ACV» o, en el habla, «derrame cerebral» (que en rigor es la hemorragia); en alemán el paciente no dice ninguna de las dos cosas: dice <em>Schlaganfall</em>. Para «cuando» el español tiene una sola palabra; el alemán tiene tres (<em>als, wenn, wann</em>), y equivocarse entre <em>als</em> y <em>wenn</em> es el error más frecuente al contar un hecho."
       },
       {
         trap: "<em>Ansprechbar</em> no significa «que habla»: significa que el paciente <b>responde</b> cuando se le habla. Un paciente puede estar <em>wach</em> (despierto) y no <em>ansprechbar</em>. <em>Die Ohnmacht</em> es el desmayo, pero en la lengua común también significa impotencia (<em>Ohnmacht und Wut</em>); en la unidad vale el primer sentido. Y <em>somnolent</em> no es simplemente «cansado»: es un estado en el que el paciente duerme mucho pero se despierta si lo llamas, y hay que registrarlo y comunicarlo."
@@ -213,7 +213,7 @@ LINGUAI.addStrings("es", {
       "el síncope (término técnico)",
       "el desmayo (palabra para el paciente)",
       "el ictus, la apoplejía (término técnico)",
-      "el ictus, el derrame cerebral (palabra para el paciente)",
+      "el ictus, el ACV (palabra para el paciente)",
       "el infarto de miocardio (término técnico)",
       "el infarto, el ataque al corazón (palabra para el paciente)",
       "inconsciente",
@@ -253,7 +253,7 @@ LINGUAI.addStrings("es", {
       },
       {
         tr: "El Präteritum de kommen, todas las personas.",
-        why: "<i>Kam, kamst, kam, kamen, kamt, kamen</i>: verbo fuerte, la vocal cambia a <b>a</b>. En la primera y la tercera persona del singular no hay terminación: <i>ich kam, sie kam</i>. Es la forma que se usa tras <i>als</i> al contar algo."
+        why: "<i>Kam, kamst, kam, kamen, kamt, kamen</i>: verbo fuerte, la vocal cambia a <b>a</b>. En la primera y la tercera persona del singular no hay terminación: <i>ich kam, sie kam</i>. Es la forma que se suele usar tras <i>als</i> al contar algo; en el habla también se oye el Perfekt."
       },
       {
         q: "Completa la frase.",
@@ -290,7 +290,7 @@ LINGUAI.addStrings("es", {
       },
       {
         tr: "¿Cuándo empezó?",
-        why: "En <i>Wann</i> la <b>w</b> se lee [v], con los dientes sobre el labio; en <i>angefangen</i> el prefijo <b>an</b> y el <b>ge</b> se pronuncian separados, y el <b>-ngen</b> final es [ŋən], sin <b>g</b> fuerte."
+        why: "En <i>Wann</i> la <b>w</b> se lee [v], con los dientes sobre el labio; en <i>angefangen</i> el prefijo <b>an</b> y el <b>ge</b> se pronuncian seguidos, sin pausa y con el acento en <b>an</b>, y el <b>-ngen</b> final es [ŋən], sin <b>g</b> fuerte."
       }
     ]
   },
@@ -316,7 +316,7 @@ LINGUAI.addStrings("es", {
         contrast: "Si vienes de España, el 112 ya lo conoces: es el mismo número de emergencias. En América Latina el número cambia según el país (en México, por ejemplo, es el 911), así que conviene aprenderse el 112 alemán antes del primer turno a domicilio, y recordar que la policía tiene otro número, el 110. En español el imperativo de cortesía usa el subjuntivo: «llame al 112», «quédese con él». En alemán se usa el infinitivo más <em>Sie</em>, siempre en el mismo orden: <em>Rufen Sie</em>, <em>Bleiben Sie</em>. <em>Die Reanimation</em> es la reanimación cardiopulmonar, la RCP, la acción; la palabra del paciente es <em>die Wiederbelebung</em>. Si en tu hospital «Reanimación» era también el nombre de una unidad, en alemán no se llama así: la UCI es la <em>Intensivstation</em>."
       },
       {
-        trap: "<em>Die Ambulanz</em> parece «la ambulancia», y no lo es: es el ambulatorio, la consulta externa del hospital. La ambulancia es <em>der Rettungswagen</em>. <em>Die Notaufnahme</em> es urgencias, el servicio del hospital, y <em>der Notarzt</em> es el médico de emergencias que llega con el servicio de rescate. Y no cuelgues tú a la central: <em>Bleiben Sie am Telefon</em> quiere decir seguir en línea hasta que sea la <em>Leitstelle</em> la que cuelgue."
+        trap: "<em>Die Ambulanz</em> parece «la ambulancia», pero en un hospital alemán suele ser el ambulatorio, la consulta externa; para el vehículo se dice <em>der Rettungswagen</em>. La ambulancia es <em>der Rettungswagen</em>. <em>Die Notaufnahme</em> es urgencias, el servicio del hospital, y <em>der Notarzt</em> es el médico de emergencias que llega con el servicio de rescate. Y no cuelgues tú a la central: <em>Bleiben Sie am Telefon</em> quiere decir seguir en línea hasta que sea la <em>Leitstelle</em> la que cuelgue."
       },
       {
         tip: "El primer día en una unidad nueva pregunta dos cosas: dónde está el botón de alarma y cuál es el número de emergencia interno del centro. Cambian de un hospital a otro, y en una urgencia no hay tiempo para buscarlos."
@@ -457,10 +457,10 @@ LINGUAI.addStrings("es", {
         p: "Cuando se cuenta algo de palabra se usa sobre todo el <strong>Perfekt</strong>: <em>Frau Keller ist im Bad gestürzt. Ich habe sie auf dem Boden gefunden.</em> Con <em>sein</em>, <em>haben</em> y los modales se usa normalmente el <strong>Präteritum</strong>, también al hablar: <em>Sie war wach und hatte Schmerzen. Ich wollte allein zur Toilette gehen.</em> El auxiliar: los verbos intransitivos de movimiento y de cambio de estado suelen llevar <em>sein</em> (<em>ist gestürzt, ist ausgerutscht, ist gefallen</em>), los demás <em>haben</em>; es una tendencia, el auxiliar se aprende con el verbo. Los verbos en <em>-ieren</em> no llevan <em>ge-</em>: <em>informiert</em>, <em>dokumentiert</em>; los separables lo ponen detrás del prefijo: <em>ausgerutscht</em>."
       },
       {
-        contrast: "En español «caerse» es pronominal: «me caí», «se ha caído». En alemán no hay pronombre: <em>Ich bin gestürzt</em>, <em>Ich bin hingefallen</em>, y «ich habe mich gefallen» no existe. Tampoco hay «haber»: el auxiliar es <em>sein</em>, porque caer es movimiento. Sobre los tiempos: en buena parte de América Latina se cuenta con el indefinido («se cayó anoche»), en España a menudo con el perfecto («se ha caído esta noche»); en alemán, al hablar, se usa el Perfekt en los dos casos: <em>Sie ist heute Nacht gestürzt</em>. El imperfecto español («estaba despierta, tenía dolor») describe un estado; el Präteritum alemán no lleva ese matiz y <em>Sie war wach</em> se usa porque es más corto que <em>Sie ist wach gewesen</em>. <em>Fraktur</em> y <em>Hämatom</em> no necesitan estudio: fractura, hematoma. Al paciente, en cambio, se le dice <em>der Knochenbruch</em> (o simplemente <em>Ist das Bein gebrochen?</em>) y <em>der Bluterguss</em>, nuestro «moratón» o «moretón»."
+        contrast: "En español «caerse» es pronominal: «me caí», «se ha caído». En alemán no hay pronombre: <em>Ich bin gestürzt</em>, <em>Ich bin hingefallen</em>, y «ich habe mich gefallen» no quiere decir «me caí» (viene de <em>sich gefallen</em>, «complacerse»). Tampoco hay «haber»: el auxiliar es <em>sein</em>, porque caer es movimiento. Sobre los tiempos: en buena parte de América Latina se cuenta con el indefinido («se cayó anoche»), en España a menudo con el perfecto («se ha caído esta noche»); en alemán, al hablar, se usa el Perfekt en los dos casos: <em>Sie ist heute Nacht gestürzt</em>. El imperfecto español («estaba despierta, tenía dolor») describe un estado; el Präteritum alemán no lleva ese matiz y <em>Sie war wach</em> se usa porque es más corto que <em>Sie ist wach gewesen</em>. <em>Fraktur</em> y <em>Hämatom</em> no necesitan estudio: fractura, hematoma. Al paciente, en cambio, se le dice <em>der Knochenbruch</em> (o simplemente <em>Ist das Bein gebrochen?</em>) y <em>der Bluterguss</em>, nuestro «moratón» o «moretón»."
       },
       {
-        trap: "«Caerse» tiene tres traducciones. <em>stürzen</em> es la palabra de la unidad y de la documentación (<em>der Sturz</em>, la caída); <em>hinfallen</em> es la de todos los días (<em>Ich bin hingefallen</em>); <em>fallen</em>, sin más, se dice sobre todo de un objeto que cae (<em>Das Glas ist gefallen</em>). Cuidado con <em>gefallen</em>: también es el verbo «gustar», con <em>haben</em> (<em>Es hat mir gefallen</em>, «me gustó»). <em>Sie ist gefallen</em> y <em>Es hat ihr gefallen</em> son dos frases distintas. Por último, <em>Platzwunde</em> no viene de «plaza»: es la herida que se abre por un golpe, de <em>platzen</em>, reventar."
+        trap: "«Caerse» tiene tres traducciones. <em>stürzen</em> es la palabra de la unidad y de la documentación (<em>der Sturz</em>, la caída); <em>hinfallen</em> es la de todos los días (<em>Ich bin hingefallen</em>); <em>fallen</em>, sin más, sirve para un objeto (<em>Das Glas ist gefallen</em>) y también para una persona (<em>Sie ist gefallen</em>), pero en la documentación se escribe <em>gestürzt</em>. Cuidado con <em>gefallen</em>: también es el verbo «gustar», con <em>haben</em> (<em>Es hat mir gefallen</em>, «me gustó»). <em>Sie ist gefallen</em> y <em>Es hat ihr gefallen</em> son dos frases distintas. Por último, <em>Platzwunde</em> no viene de «plaza»: es la herida que se abre por un golpe, de <em>platzen</em>, reventar."
       },
       {
         tip: "En el registro escribe por separado lo que has visto y lo que te ha dicho el paciente: <em>Patientin um 3:00 Uhr auf dem Boden im Bad aufgefunden</em> es una observación; <em>laut Patientin ausgerutscht</em> es su relato. Quien lo lea después tiene que poder distinguir las dos cosas."
@@ -621,7 +621,7 @@ LINGUAI.addStrings("es", {
           "Als ich ins Zimmer kam, sie lag auf dem Boden.",
           "Haben Sie starke Schmerzen?",
           "Ich habe die Ärztin sofort informiert.",
-          "Wenn ich gestern ins Zimmer kam, war sie wach."
+          "Wenn ich gestern um acht Uhr ins Zimmer kam, war sie wach."
         ],
         why: "Tras la subordinada la principal empieza por el verbo: <i>lag sie</i>. Para un hecho único en el pasado se usa <i>als</i>, no <i>wenn</i>. <i>informiert</i> no lleva <i>ge-</i>."
       },

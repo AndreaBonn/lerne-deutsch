@@ -1,0 +1,28 @@
+{
+  "bundleHash": "084283c1639cb219ae0660db30a2e79ed3f0a0d570c79e893a0103d9cb86a246",
+  "findings": [
+    {
+      "kind": "pronuncia",
+      "msg": "In «werden» la prima vocale è breve [ɛ], non lunga. Correggere la spiegazione fonetica.",
+      "path": "merged.lessons[3].exercises[11].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La spiegazione dice che le altre tre espressioni sono già al dativo, ma «vor das Frühstück» e «seit eine Woche» non lo sono e sono indicate come errate. Spiegare che le tre risposte corrette sono «nach dem Essen», «mit einem Glas Wasser» e «zu den Mahlzeiten», mentre le forme corrette degli altri due esempi sono «vor dem Frühstück» e «seit einer Woche».",
+      "path": "merged.lessons[1].exercises[5].why"
+    },
+    {
+      "kind": "spiegazione imprecisa",
+      "msg": "L'indicazione che «nüchtern» significhi sempre non mangiare né bere è troppo assoluta: le istruzioni sul digiuno dipendono dall'esame e dalle prescrizioni. Precisare che il personale deve comunicare le indicazioni specifiche per il paziente; correggere anche la nota grammaticale che presenta l'astensione dal bere come regola generale.",
+      "path": "merged.lessons[1].theory[3].trap"
+    },
+    {
+      "kind": "accuratezza",
+      "msg": "La categoria «sehr häufig» comprende anche il limite di 1 persona su 10, quindi non significa soltanto più di 1 su 10. Precisare anche i limiti delle altre categorie: «häufig» da almeno 1 su 100 a meno di 1 su 10; «selten» da almeno 1 su 10.000 a meno di 1 su 1.000.",
+      "path": "merged.lessons[2].theory[3].trap"
+    }
+  ],
+  "lang": "pl",
+  "unit": "pfl-u05",
+  "verdict": "fail"
+}

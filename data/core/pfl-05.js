@@ -199,7 +199,9 @@ LINGUAI.addUnits("PFL", [
               "Nehmen Sie morgens vor dem Frühstück die Tablette",
               "Nehmen Sie morgens vor dem Frühstück die Tablette ein",
               "Nehmen Sie die Tablette am Morgen vor dem Frühstück",
-              "Nehmen Sie die Tablette am Morgen vor dem Frühstück ein"
+              "Nehmen Sie die Tablette am Morgen vor dem Frühstück ein",
+              "Nehmen Sie am Morgen vor dem Frühstück die Tablette",
+              "Nehmen Sie am Morgen vor dem Frühstück die Tablette ein"
             ]
           },
           {
@@ -336,7 +338,7 @@ LINGUAI.addUnits("PFL", [
             { it: "Jede Gabe wird sofort dokumentiert." },
             { it: "Vor der Gabe muss der Name kontrolliert werden." },
             { it: "Darf die Tablette geteilt werden?" },
-            { it: "Das müssen wir in der Apotheke nachfragen." },
+            { it: "Da müssen wir in der Apotheke nachfragen." },
             { it: "Bei Unklarheiten wird der Arzt gefragt." }
           ]
         },
@@ -362,7 +364,7 @@ LINGUAI.addUnits("PFL", [
             { who: "🧑‍⚕️", it: "Die richtige Person: Frau Kühn, Zimmer vier. Das richtige Medikament: Cardiomin." },
             { who: "👩‍⚕️", it: "Die richtige Dosierung und die richtige Applikationsart: so, wie es in der Anordnung steht. Oral." },
             { who: "🧑‍⚕️", it: "Darf die Tablette geteilt werden? Frau Kühn kann schlecht schlucken." },
-            { who: "👩‍⚕️", it: "Das weiß ich nicht. Das müssen wir in der Apotheke nachfragen." },
+            { who: "👩‍⚕️", it: "Das weiß ich nicht. Da müssen wir in der Apotheke nachfragen." },
             { who: "🧑‍⚕️", it: "Gut. Der richtige Zeitpunkt ist zur Nacht." },
             { who: "👩‍⚕️", it: "Genau. Und nach der Gabe wird alles dokumentiert. Das ist das sechste R." }
           ]

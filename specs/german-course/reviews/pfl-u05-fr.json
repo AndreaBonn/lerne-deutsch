@@ -1,0 +1,43 @@
+{
+  "bundleHash": "b7ca8f36f9f74bef0c7f56851f7f95aef3267eb552966c946f20cc94b031f2c6",
+  "findings": [
+    {
+      "kind": "Rektion",
+      "msg": "«Das müssen wir in der Apotheke nachfragen» presenta nachfragen come transitivo con un oggetto diretto. Usare «Das müssen wir in der Apotheke erfragen» oppure «Das müssen wir in der Apotheke klären». Correggere anche la stessa frase nel dialogo e nel consiglio finale della lezione.",
+      "path": "neutral.lessons[3].grammar.examples[4].it"
+    },
+    {
+      "kind": "Risposta ambigua",
+      "msg": "Senza un'indicazione sul significato richiesto, anche «nach dem Frühstück» e «vor dem Essen» completano correttamente la frase. Aggiungere la traduzione francese alla consegna oppure accettare le altre preposizioni plausibili.",
+      "path": "merged.lessons[1].exercises[3]"
+    },
+    {
+      "kind": "Spiegazione errata",
+      "msg": "La spiegazione dice che le altre tre espressioni sono già al dativo, ma due di esse sono i distrattori scorretti. Precisare che «nach dem Essen», «mit einem Glas Wasser» e «zu den Mahlzeiten» sono corrette.",
+      "path": "merged.lessons[1].exercises[5].why"
+    },
+    {
+      "kind": "Spiegazione della coniugazione",
+      "msg": "Nel presente di dürfen la radice cambia da «dürf-» a «darf-» al singolare; non è soltanto la vocale «ü» a diventare «a».",
+      "path": "merged.lessons[3].exercises[1].why"
+    },
+    {
+      "kind": "Pronuncia",
+      "msg": "In «werden» la prima e è breve, /ˈvɛʁdn̩/, non lunga. Correggere la spiegazione.",
+      "path": "merged.lessons[3].exercises[10].why"
+    },
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "La spiegazione oppone erroneamente la direzione alla possibilità che il farmaco si trovi sotto la pelle. L'accusativo indica qui la destinazione dell'iniezione; «unter der Haut» può descriverne la posizione risultante. Inoltre «über den Mund» usa l'accusativo perché über è qui una preposizione a doppio caso impiegata per indicare la via.",
+      "path": "merged.lessons[0].theory[1].p"
+    },
+    {
+      "kind": "Chiarezza clinica",
+      "msg": "La nota definisce nüchtern come divieto assoluto di mangiare e bere, mentre le istruzioni sul bere dipendono dall'esame e dal protocollo. Specificare che occorre seguire le indicazioni ricevute; correggere anche il consiglio «Bitte nichts essen und nichts trinken» nella sezione trap.",
+      "path": "merged.lessons[1].grammar.examples[2].note"
+    }
+  ],
+  "lang": "fr",
+  "unit": "pfl-u05",
+  "verdict": "fail"
+}

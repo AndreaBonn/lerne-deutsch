@@ -1,0 +1,43 @@
+{
+  "bundleHash": "21c27e9a888494f397c045e6614813453e5a05016bb2817aaf6fd1214a075bfd",
+  "findings": [
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La regola «En plural sin artículo: -e» è troppo ampia: vale per nominativo e accusativo, mentre al dativo plurale la terminazione è -en, come nell'esempio con «bei leichten Schmerzen». Precisare i casi.",
+      "path": "merged.lessons[0].grammar.note"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La spiegazione presenta il Präteritum come la forma usata dopo «als», ma anche il Perfekt è possibile, per esempio «Als ich ins Zimmer gekommen bin». Presentare il Präteritum come scelta narrativa, non come requisito di «als».",
+      "path": "merged.lessons[1].exercises[3].why"
+    },
+    {
+      "kind": "risposta ambigua",
+      "msg": "Anche «Wenn ich gestern ins Zimmer kam, war sie wach» può descrivere ingressi ripetuti ieri. Rendere esplicito che si tratta di un unico ingresso, per esempio aggiungendo «ein einziges Mal», oppure sostituire il distrattore.",
+      "path": "merged.test.exercises[5].opts[4]"
+    },
+    {
+      "kind": "esercizio ambiguo",
+      "msg": "Il primo spazio ammette anche «Wenn» per un'azione ripetuta e il secondo diversi verbi compatibili con la traduzione, per esempio «war» o «saß». Aggiungere indizi che richiedano un evento unico e il verbo «liegen».",
+      "path": "merged.test.exercises[6]"
+    },
+    {
+      "kind": "registro e lessico",
+      "msg": "«Derrame cerebral» indica comunemente un'emorragia cerebrale e non copre tutti gli ictus. Usare «ictus» o «accidente cerebrovascular (ACV)» come equivalente generale, riservando «derrame cerebral» al contesto appropriato.",
+      "path": "merged.lessons[1].vocab[4].tr"
+    },
+    {
+      "kind": "spiegazione contrastiva",
+      "msg": "La nota presenta «derrame cerebral» come equivalente generale di «Schlaganfall», ma può riferirsi più precisamente a un'emorragia. Distinguere l'ACV o ictus come categoria generale dall'emorragia cerebrale.",
+      "path": "merged.lessons[1].theory[2].contrast"
+    },
+    {
+      "kind": "spiegazione contrastiva",
+      "msg": "«Ich habe mich gefallen» non significa «sono caduto», ma è una frase possibile con il verbo «gefallen», nel senso di piacere a sé stessi. Sostituire «no existe» con una spiegazione che distingua i due verbi e significati.",
+      "path": "merged.lessons[3].theory[2].contrast"
+    }
+  ],
+  "lang": "es",
+  "unit": "pfl-u04",
+  "verdict": "fail"
+}

@@ -25,7 +25,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         h: "Przymiotnik przed rzeczownikiem zmienia końcówkę",
-        p: "Przymiotnik stojący <strong>przed</strong> rzeczownikiem dostaje końcówkę zależną od rodzajnika, rodzaju i przypadku: <em>ein drückend<b>er</b> Schmerz</em> (mianownik, rodzajnik nieokreślony), <em>einen stechend<b>en</b> Schmerz</em> (biernik), <em>der dumpf<b>e</b> Schmerz</em> (po rodzajniku określonym). W liczbie mnogiej bez rodzajnika końcówka to <b>-e</b>: <em>starke Schmerzen</em>; po <em>die</em> albo <em>diese</em> to <b>-en</b>: <em>diese starken Schmerzen</em>. Gdy natomiast przymiotnik stoi <strong>po</strong> <em>sein</em>, nie dostaje żadnej końcówki: <em>Der Schmerz ist dumpf.</em>"
+        p: "Przymiotnik stojący <strong>przed</strong> rzeczownikiem dostaje końcówkę zależną od rodzajnika, rodzaju i przypadku: <em>ein drückend<b>er</b> Schmerz</em> (mianownik, rodzajnik nieokreślony), <em>einen stechend<b>en</b> Schmerz</em> (biernik), <em>der dumpf<b>e</b> Schmerz</em> (po rodzajniku określonym). W liczbie mnogiej bez rodzajnika końcówka to <b>-e</b> w mianowniku i bierniku (<em>starke Schmerzen</em>) i <b>-en</b> w celowniku (<em>bei leichten Schmerzen</em>); po <em>die</em> albo <em>diese</em> to <b>-en</b>: <em>diese starken Schmerzen</em>. Gdy natomiast przymiotnik stoi <strong>po</strong> <em>sein</em>, nie dostaje żadnej końcówki: <em>Der Schmerz ist dumpf.</em>"
       },
       {
         contrast: "Termin <em>Analgetikum</em> znasz z polskich studiów i dokumentacji: analgetyk, analgezja. To rejestr lekarzy i zapisów (<em>Analgetikum nach ärztlicher Anordnung</em>). Z pacjentem mówi się po niemiecku i złożeniem, którego z łaciny nie odgadniesz: <em>das Schmerzmittel</em> (lek przeciwbólowy) i <em>die Schmerzlinderung</em> (złagodzenie bólu). Przymiotniki bólu też trzeba przestawić: polski «kłujący» to <em>stechend</em>, «piekący» to <em>brennend</em>, «tępy» to <em>dumpf</em>, «uciskający» albo «gniotący» to <em>drückend</em>, a «ciągnący» to <em>ziehend</em>. Odmiana przymiotnika nie jest dla ciebie nowością, ale niemiecka działa inaczej niż polska. Po polsku przymiotnik zgadza się z rzeczownikiem zawsze, także po czasowniku («ból jest silny», «bóle są silne»), a jego końcówka zależy tylko od rodzaju, liczby i przypadku. Po niemiecku po <em>sein</em> przymiotnik nie ma końcówki wcale (<em>Die Schmerzen sind stark</em>), a przed rzeczownikiem końcówka zależy jeszcze od tego, czy stoi rodzajnik i jaki: <em>ein drückender</em>, ale <em>der drückende</em>."
@@ -39,7 +39,7 @@ LINGUAI.addStrings("pl", {
     ],
     grammar: {
       title: "Przymiotnik opisujący ból",
-      note: "Przed rzeczownikiem przymiotnik dostaje <b>końcówkę</b>; po <b>sein</b> nie dostaje żadnej. W liczbie mnogiej bez rodzajnika: <b>-e</b>; po <i>die</i>, <i>diese</i>: <b>-en</b>.",
+      note: "Przed rzeczownikiem przymiotnik dostaje <b>końcówkę</b>; po <b>sein</b> nie dostaje żadnej. W liczbie mnogiej bez rodzajnika: <b>-e</b> (mianownik, biernik), <b>-en</b> (celownik); po <i>die</i>, <i>diese</i>: <b>-en</b>.",
       table: {
         head: ["przypadek", "przykład", "końcówka"],
         rows: [
@@ -123,7 +123,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         q: "Przetłumacz, zwracając się do pacjenta: «Czy ma Pan silne bóle?»",
-        why: "<i>Haben Sie starke Schmerzen?</i> W mowie potocznej słychać też <i>große Schmerzen</i>. O bólu mówi się w liczbie mnogiej, a przymiotnik przed liczbą mnogą bez rodzajnika dostaje <b>-e</b>."
+        why: "<i>Haben Sie starke Schmerzen?</i> W mowie potocznej słychać też <i>große Schmerzen</i>. Pytając o ból, zwykle używa się liczby mnogiej, a przymiotnik przed liczbą mnogą bez rodzajnika dostaje <b>-e</b>."
       },
       {
         q: "Które zdania mają poprawną końcówkę?",
@@ -229,7 +229,7 @@ LINGUAI.addStrings("pl", {
       "Kiedy to się zaczęło?",
       "Jakieś dziesięć minut temu, kiedy jadł.",
       "Panie Brandt, proszę podnieść obie ręce.",
-      "Prawa ręka opada. I usta opadają na jedną stronę.",
+      "Prawa ręka zostaje na dole. I usta opadają na jedną stronę.",
       "To może być udar. Teraz naciskam przycisk alarmowy i zostaję z nim, aż przyjdzie zespół."
     ],
     culture: {
@@ -253,7 +253,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         tr: "Präteritum czasownika kommen we wszystkich osobach.",
-        why: "<i>Kam, kamst, kam, kamen, kamt, kamen</i>: czasownik mocny, samogłoska zmienia się na <b>a</b>. W pierwszej i trzeciej osobie liczby pojedynczej nie ma końcówki: <i>ich kam, sie kam</i>. Tej formy używa się po <i>als</i> w relacji."
+        why: "<i>Kam, kamst, kam, kamen, kamt, kamen</i>: czasownik mocny, samogłoska zmienia się na <b>a</b>. W pierwszej i trzeciej osobie liczby pojedynczej nie ma końcówki: <i>ich kam, sie kam</i>. Tej formy zwykle używa się po <i>als</i> w relacji; w mowie słychać też Perfekt."
       },
       {
         q: "Uzupełnij zdanie.",
@@ -290,7 +290,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         tr: "Kiedy to się zaczęło?",
-        why: "W <i>Wann</i> <b>w</b> czyta się jak polskie «w» [v]; w <i>angefangen</i> przedrostek <b>an</b> i <b>ge</b> wymawia się osobno, a końcowe <b>-ngen</b> to [ŋən], bez twardego <b>g</b>."
+        why: "W <i>Wann</i> <b>w</b> czyta się jak polskie «w» [v]; w <i>angefangen</i> przedrostek <b>an</b> i <b>ge</b> wymawia się łącznie, bez przerwy, z akcentem na <b>an</b>, a końcowe <b>-ngen</b> to [ŋən], bez twardego <b>g</b>."
       }
     ]
   },
@@ -316,7 +316,7 @@ LINGUAI.addStrings("pl", {
         contrast: "W Polsce działa 112, a obok niego wciąż 999 na pogotowie (oraz 998 straż, 997 policja). W Niemczech <strong>999</strong> nie istnieje: na karetkę i straż jest <strong>112</strong>, na policję <strong>110</strong>. Inaczej brzmią też polecenia w nagłym wypadku. Po polsku grzeczne polecenie to zwykle «Proszę zadzwonić pod 112» albo «Niech Pan zostanie z żoną», z formą Pan/Pani i trzecią osobą. Niemiecki nie ma ani «proszę» z bezokolicznikiem w tej funkcji, ani rozróżnienia Pan/Pani: jest jedno <em>Sie</em>, zawsze zaraz po czasowniku w bezokoliczniku (<em>Rufen Sie</em>, <em>Bleiben Sie</em>), i to samo zdanie mówisz do mężczyzny i do kobiety. «Proszę dzwonić!» przetłumaczone dosłownie jako «Bitte anrufen!» brzmi jak napis na tabliczce, nie jak prośba do osoby. Dobra wiadomość: polska «reanimacja» to, jak niemiecka <em>Reanimation</em>, sama czynność resuscytacji, a oddział to <em>die Intensivstation</em>, polski OIOM. Słowo dla pacjenta to jednak <em>die Wiederbelebung</em>."
       },
       {
-        trap: "<em>Die Ambulanz</em> to nie ambulans: to przyszpitalna przychodnia. Karetka to <em>der Rettungswagen</em>, a lekarz, który z nią przyjeżdża, to <em>der Notarzt</em>. SOR, szpitalny oddział ratunkowy, to <em>die Notaufnahme</em>. I nie rozłączaj się pierwsza z dyspozytorem: <em>Bleiben Sie am Telefon</em> znaczy, że zostajesz na linii, dopóki to <em>Leitstelle</em> nie zakończy rozmowy."
+        trap: "<em>Die Ambulanz</em> w niemieckim szpitalu to zwykle przyszpitalna przychodnia; na pojazd mówi się <em>der Rettungswagen</em>. Karetka to <em>der Rettungswagen</em>, a lekarz, który z nią przyjeżdża, to <em>der Notarzt</em>. SOR, szpitalny oddział ratunkowy, to <em>die Notaufnahme</em>. I nie rozłączaj się pierwsza z dyspozytorem: <em>Bleiben Sie am Telefon</em> znaczy, że zostajesz na linii, dopóki to <em>Leitstelle</em> nie zakończy rozmowy."
       },
       {
         tip: "Pierwszego dnia na nowym oddziale zapytaj o dwie rzeczy: gdzie jest przycisk alarmowy i jaki jest wewnętrzny numer alarmowy placówki. Różnią się w zależności od szpitala, a w nagłym wypadku nie ma czasu ich szukać."
@@ -457,10 +457,10 @@ LINGUAI.addStrings("pl", {
         p: "Gdy opowiada się ustnie, używa się przede wszystkim <strong>Perfekt</strong>: <em>Frau Keller ist im Bad gestürzt. Ich habe sie auf dem Boden gefunden.</em> Przy <em>sein</em>, <em>haben</em> i czasownikach modalnych zwykle używa się <strong>Präteritum</strong>, także w mowie: <em>Sie war wach und hatte Schmerzen. Ich wollte allein zur Toilette gehen.</em> Czasownik posiłkowy: nieprzechodnie czasowniki ruchu i zmiany stanu zwykle biorą <em>sein</em> (<em>ist gestürzt, ist ausgerutscht, ist gefallen</em>), pozostałe <em>haben</em>; to tendencja, posiłkowy uczy się razem z czasownikiem. Czasowniki na <em>-ieren</em> nie dostają <em>ge-</em>: <em>informiert</em>, <em>dokumentiert</em>; rozdzielne wstawiają je za przedrostkiem: <em>ausgerutscht</em>."
       },
       {
-        contrast: "Po polsku przy opowiadaniu o przeszłości wybierasz <strong>aspekt</strong>: «upadła» (dokonany, zdarzenie zamknięte) albo «padała» (niedokonany, coś trwało lub się powtarzało). Niemiecki tego wyboru nie ma, a Perfekt i Präteritum to <strong>nie</strong> są odpowiedniki aspektów. <em>Sie ist gestürzt</em> i <em>sie stürzte</em> znaczą to samo «upadła»; różni je rejestr: Perfekt w mowie, Präteritum raczej w tekście pisanym. Dlatego <em>Sie war wach und hatte Schmerzen</em> nie znaczy «była przytomna» w sensie trwania w odróżnieniu od zdarzenia: przy <em>sein</em> i <em>haben</em> Präteritum jest po prostu krótsze od <em>ist wach gewesen</em>. Trwanie wyraża się słowem (<em>lange</em>, <em>die ganze Zeit</em>), nie czasem. Druga różnica: polski czas przeszły nie ma czasownika posiłkowego, a niemiecki Perfekt musi go mieć, i to raz <em>sein</em>, raz <em>haben</em>. Słownictwo: <em>Fraktur</em> i <em>Hämatom</em> znasz z zajęć, ale pacjentowi mówi się <em>der Knochenbruch</em> (albo po prostu <em>Ist das Bein gebrochen?</em>) i <em>der Bluterguss</em>, nasz «siniak»."
+        contrast: "Po polsku przy opowiadaniu o przeszłości wybierasz <strong>aspekt</strong>: «upadła» (dokonany, zdarzenie zamknięte) albo «padała» (niedokonany, coś trwało lub się powtarzało). Niemiecki tego wyboru nie ma, a Perfekt i Präteritum to <strong>nie</strong> są odpowiedniki aspektów. <em>Sie ist gestürzt</em> i <em>sie stürzte</em> znaczą to samo «upadła»; różni je rejestr: Perfekt w mowie, Präteritum raczej w tekście pisanym. Dlatego <em>Sie war wach und hatte Schmerzen</em> nie znaczy «nie spała» w sensie trwania w odróżnieniu od zdarzenia: przy <em>sein</em> i <em>haben</em> Präteritum jest po prostu krótsze od <em>ist wach gewesen</em>. Trwanie wyraża się słowem (<em>lange</em>, <em>die ganze Zeit</em>), nie czasem. Druga różnica: polski czas przeszły nie ma czasownika posiłkowego, a niemiecki Perfekt musi go mieć, i to raz <em>sein</em>, raz <em>haben</em>. Słownictwo: <em>Fraktur</em> i <em>Hämatom</em> znasz z zajęć, ale pacjentowi mówi się <em>der Knochenbruch</em> (albo po prostu <em>Ist das Bein gebrochen?</em>) i <em>der Bluterguss</em>, nasz «siniak»."
       },
       {
-        trap: "«Upaść» ma trzy tłumaczenia. <em>stürzen</em> to słowo oddziału i dokumentacji (<em>der Sturz</em>); <em>hinfallen</em> to słowo codzienne (<em>Ich bin hingefallen</em>); samo <em>fallen</em> mówi się raczej o przedmiocie (<em>Das Glas ist gefallen</em>). Uwaga na <em>gefallen</em>: to także imiesłów czasownika <em>gefallen</em>, «podobać się», z <em>haben</em> (<em>Es hat mir gefallen</em>). <em>Sie ist gefallen</em> i <em>Es hat ihr gefallen</em> to dwa różne zdania. Wreszcie <em>die Platzwunde</em> nie ma nic wspólnego z placem: to rana, która pęka od uderzenia, od <em>platzen</em>, pękać; po polsku rana tłuczona."
+        trap: "«Upaść» ma trzy tłumaczenia. <em>stürzen</em> to słowo oddziału i dokumentacji (<em>der Sturz</em>); <em>hinfallen</em> to słowo codzienne (<em>Ich bin hingefallen</em>); samo <em>fallen</em> mówi się o przedmiocie (<em>Das Glas ist gefallen</em>) i o osobie (<em>Sie ist gefallen</em>), ale w dokumentacji pisze się <em>gestürzt</em>. Uwaga na <em>gefallen</em>: to także imiesłów czasownika <em>gefallen</em>, «podobać się», z <em>haben</em> (<em>Es hat mir gefallen</em>). <em>Sie ist gefallen</em> i <em>Es hat ihr gefallen</em> to dwa różne zdania. Wreszcie <em>die Platzwunde</em> nie ma nic wspólnego z placem: to rana, która pęka od uderzenia, od <em>platzen</em>, pękać; po polsku rana tłuczona."
       },
       {
         tip: "W protokole zapisuj osobno to, co widziałaś, i to, co powiedział pacjent: <em>Patientin um 3:00 Uhr auf dem Boden im Bad aufgefunden</em> to obserwacja; <em>laut Patientin ausgerutscht</em> to jej relacja. Kto czyta po tobie, musi umieć odróżnić jedno od drugiego."
@@ -483,7 +483,7 @@ LINGUAI.addStrings("pl", {
       examples: [
         { tr: "Pani Keller upadła dziś w nocy w łazience.", note: "stürzen: Perfekt z sein" },
         { tr: "Znalazłam ją o trzeciej na podłodze.", note: "finden: Perfekt z haben" },
-        { tr: "Była przytomna i bolało ją lewe biodro.", note: "sein i haben w Präteritum" },
+        { tr: "Nie spała i bolało ją lewe biodro.", note: "sein i haben w Präteritum" },
         { tr: "Chciałam sama pójść do toalety.", note: "modalny w Präteritum" },
         { tr: "Poślizgnęłam się na mokrej podłodze.", note: "ausrutschen: rozdzielny, z sein" },
         { tr: "Od razu zawiadomiliśmy panią doktor.", note: "informieren: bez ge-" }
@@ -509,8 +509,8 @@ LINGUAI.addStrings("pl", {
       "Uderzyła się Pani w głowę?",
       "Nie, ale boli mnie biodro.",
       "Panie doktorze, pani Keller upadła o trzeciej w łazience. Znalazłam ją na podłodze.",
-      "Była przytomna i odpowiadała?",
-      "Tak, była przytomna i zorientowana. Boli ją lewe biodro i ma mały krwiak na łokciu.",
+      "Nie spała i odpowiadała?",
+      "Tak, nie spała i była zorientowana. Boli ją lewe biodro i ma mały krwiak na łokciu.",
       "Dobrze, już idę. Proszę udokumentować upadek w protokole upadku."
     ],
     culture: {
@@ -542,7 +542,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         q: "Uzupełnij zdanie w Präteritum.",
-        tr: "Była przytomna i bolało ją biodro.",
+        tr: "Nie spała i bolało ją biodro.",
         why: "<i>Sie war wach und hatte Schmerzen in der Hüfte</i>: przy <i>sein</i> i <i>haben</i> Präteritum to zwykła forma, także w mowie."
       },
       {
@@ -570,7 +570,7 @@ LINGUAI.addStrings("pl", {
         why: "<i>Haben Sie sich den Kopf angeschlagen?</i> Zaimek zwrotny <i>sich</i> stoi w celowniku, a głowa jest dopełnieniem. Poprawne jest też <i>gestoßen</i>."
       },
       {
-        tr: "Pani Keller upadła o trzeciej w łazience. Była przytomna i bolało ją lewe biodro.",
+        tr: "Pani Keller upadła o trzeciej w łazience. Nie spała i bolało ją lewe biodro.",
         why: "W <i>gestürzt</i> <b>ü</b> jest krótkie, a grupę <b>rzt</b> wymawia się w całości, bez polskiego «ż»; w <i>Hüfte</i> <b>ü</b> jest krótkie; w <i>linken</i> <b>n</b> przed <b>k</b> to [ŋ], jak w polskim «bank»."
       },
       {
@@ -621,7 +621,7 @@ LINGUAI.addStrings("pl", {
           "Als ich ins Zimmer kam, sie lag auf dem Boden.",
           "Haben Sie starke Schmerzen?",
           "Ich habe die Ärztin sofort informiert.",
-          "Wenn ich gestern ins Zimmer kam, war sie wach."
+          "Wenn ich gestern um acht Uhr ins Zimmer kam, war sie wach."
         ],
         why: "Po zdaniu podrzędnym zdanie główne zaczyna się od czasownika: <i>lag sie</i>. Dla jednorazowego zdarzenia w przeszłości używa się <i>als</i>, nie <i>wenn</i>. <i>informiert</i> nie dostaje <i>ge-</i>."
       },

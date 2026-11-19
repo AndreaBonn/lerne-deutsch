@@ -1,0 +1,53 @@
+{
+  "bundleHash": "767626485bcd9077cba6b2465906e9c4ede01d6eff6cceac9ec3bb836cbd8c13",
+  "findings": [
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "La regola «Plural with no article: -e» è troppo generale: vale negli esempi al nominativo e all'accusativo, ma il dativo plurale richiede -en, come mostra la stessa tabella con «bei leichten Schmerzen». Precisare i casi.",
+      "path": "merged.lessons[0].grammar.note"
+    },
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "Anche qui la regola sul plurale senza articolo omette il dativo. Specificare che -e vale al nominativo e all'accusativo e aggiungere il dativo plurale in -en.",
+      "path": "merged.lessons[0].theory[1].p"
+    },
+    {
+      "kind": "Pronuncia",
+      "msg": "In «ansprechbar», il gruppo sp non è iniziale di parola o sillaba del tema: si pronuncia [sp], non [ʃp]. Correggere la spiegazione.",
+      "path": "merged.lessons[1].exercises[8].why"
+    },
+    {
+      "kind": "Pronuncia",
+      "msg": "La sequenza finale di «angefangen» è [ŋən], ma non corrisponde alla pronuncia standard della fine dell'inglese «singing», normalmente [ɪŋ]. Eliminare il paragone o sostituirlo con una spiegazione fonetica accurata.",
+      "path": "merged.lessons[1].exercises[9].why"
+    },
+    {
+      "kind": "Sicurezza e accuratezza",
+      "msg": "L'affermazione assoluta che il 911 in Germania non raggiunga nessuno non è affidabile: l'instradamento può dipendere dalla rete e dal dispositivo. Insegnare di chiamare direttamente il 112 per soccorso e vigili del fuoco e il 110 per la polizia, senza affermare che il 911 non funzioni mai.",
+      "path": "merged.lessons[2].theory[2].contrast"
+    },
+    {
+      "kind": "Lessico",
+      "msg": "«Ambulanz» non indica esclusivamente un ambulatorio: può indicare anche un servizio di emergenza o un veicolo di soccorso, secondo il contesto. Presentare «Ambulanz» come termine polisemico e distinguere gli usi da «Notaufnahme» e «Rettungswagen».",
+      "path": "merged.lessons[2].theory[3].trap"
+    },
+    {
+      "kind": "Nota contrastiva",
+      "msg": "«Fallen» si usa comunemente anche per persone, per esempio «Die Patientin ist gefallen»; non è prevalentemente limitato agli oggetti. Spiegare invece che «stürzen» è frequente nella documentazione clinica e «hinfallen» nel parlato quotidiano.",
+      "path": "merged.lessons[3].theory[3].trap"
+    },
+    {
+      "kind": "Risposta ambigua",
+      "msg": "Senza traduzione o indicazione del verbo, il secondo spazio ammette anche altre forme grammaticali e sensate, per esempio «saß» o «stand». Aggiungere la frase inglese alla consegna o indicare «liegen» e il Präteritum.",
+      "path": "merged.test.exercises[6]"
+    },
+    {
+      "kind": "Risposta ambigua",
+      "msg": "L'ultima frase può essere corretta in una lettura abituale: «ieri, ogni volta che entravo nella stanza, era sveglia». Rendere esplicito che si tratta di un unico ingresso, oppure sostituire il distrattore con una frase inequivocabilmente scorretta.",
+      "path": "merged.test.exercises[5].opts[4]"
+    }
+  ],
+  "lang": "en",
+  "unit": "pfl-u04",
+  "verdict": "fail"
+}

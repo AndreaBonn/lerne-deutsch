@@ -166,7 +166,7 @@ LINGUAI.addStrings("fr", {
         contrast: "En français, « avant le petit-déjeuner », « après le repas », « avec un verre d'eau » ne touchent pas à l'article. En allemand, chaque préposition de cette leçon déclenche le datif, et l'erreur <em>vor das Frühstück</em> s'entend tout de suite. Le présent avec <em>seit</em> ne te posera pas de problème : c'est exactement le « depuis » français, « je prends Dolorex depuis une semaine ». Côté vocabulaire, le patient français dit « l'anticoagulant », parfois « le fluidifiant » ; le patient allemand dit presque toujours <em>der Blutverdünner</em>, alors que <em>das Antikoagulans</em> reste un mot de médecin et de dossier."
       },
       {
-        trap: "<em>Nüchtern</em> veut dire « à jeun » dans le service, mais dans la langue de tous les jours il veut aussi dire « sobre, pas ivre » et même « sobre, dépouillé » pour un style. Si tu dis au patient <em>Bleiben Sie bitte nüchtern</em>, ajoute ce que ça veut dire : <em>Bitte nichts essen und nichts trinken.</em> Ne confonds pas <em>nach dem Essen</em> (préposition + nom) avec <em>nachdem</em>, qui est une conjonction et envoie le verbe à la fin. <em>Zur Nacht</em>, c'est « le soir au coucher », <em>in der Nacht</em>, c'est « pendant la nuit » : sur le plan de traitement, ce n'est pas la même chose."
+        trap: "<em>Nüchtern</em> veut dire « à jeun » dans le service, mais dans la langue de tous les jours il veut aussi dire « sobre, pas ivre » et même « sobre, dépouillé » pour un style. Si tu dis au patient <em>Bleiben Sie bitte nüchtern</em>, ajoute ce que ça veut dire pour cet examen : <em>Bitte nichts essen.</em> et, selon la consigne, <em>Wasser dürfen Sie trinken</em> ou <em>Bitte auch nichts trinken.</em> Ne confonds pas <em>nach dem Essen</em> (préposition + nom) avec <em>nachdem</em>, qui est une conjonction et envoie le verbe à la fin. <em>Zur Nacht</em>, c'est « le soir au coucher », <em>in der Nacht</em>, c'est « pendant la nuit » : sur le plan de traitement, ce n'est pas la même chose."
       },
       {
         tip: "Si un patient dit avoir oublié un comprimé, ne lui dis jamais toi-même ce qu'il faut faire : <em>Dann sagen Sie es mir bitte. Ich frage den Arzt.</em> Rattraper ou sauter une prise est une décision du médecin, et la bonne réponse change d'un médicament à l'autre."
@@ -174,7 +174,7 @@ LINGUAI.addStrings("fr", {
     ],
     grammar: {
       title: "Horaires et prépositions avec le datif",
-      note: "<b>vor, nach, mit, seit, zu, bei</b> + <b>datif</b>. Les adverbes de temps (<b>morgens, abends, täglich</b>) n'ont pas d'article.",
+      note: "<b>vor</b> (temps)<b>, nach, mit, seit, zu, bei</b> + <b>datif</b>. Les adverbes de temps (<b>morgens, abends, täglich</b>) n'ont pas d'article.",
       table: {
         head: ["expression", "datif de", "français"],
         rows: [
@@ -189,7 +189,7 @@ LINGUAI.addStrings("fr", {
       examples: [
         { tr: "Prenez le comprimé avant le petit-déjeuner, s'il vous plaît.", note: "vor dem : datif de das Frühstück" },
         { tr: "L'antibiotique, vous le prenez toujours après le repas.", note: "nach dem Essen" },
-        { tr: "Pour la prise de sang, demain vous devez rester à jeun.", note: "nüchtern bleiben : ni manger ni boire" },
+        { tr: "Pour la prise de sang, demain vous devez rester à jeun.", note: "nüchtern bleiben : rien à manger ; ce qu'on peut boire dépend de la consigne de l'examen" },
         { tr: "L'anticoagulant, vous le recevez le soir.", note: "Blutverdünner : le mot du patient" },
         { tr: "Si besoin, vous recevez un comprimé contre la douleur.", note: "bei Bedarf, souvent b.B. dans le dossier" },
         { tr: "Je prends Dolorex depuis une semaine.", note: "seit + datif, verbe au présent" }
@@ -225,7 +225,7 @@ LINGUAI.addStrings("fr", {
       {
         q: "Le médecin dit que demain matin, avant la prise de sang, le patient doit être « nüchtern ». Qu'est-ce que ça veut dire ?",
         opts: ["à jeun", "au lit, sans se lever", "sans médicaments"],
-        why: "Dans le service, <b>nüchtern</b> veut dire « à jeun » : rien à manger et, en général, rien à boire. Dans la langue de tous les jours, il veut aussi dire « sobre »."
+        why: "Dans le service, <b>nüchtern</b> veut dire « à jeun » : rien à manger ; boire de l'eau ou non dépend de l'examen. Dans la langue de tous les jours, il veut aussi dire « sobre »."
       },
       {
         tr: "Le présent de einnehmen, à toutes les personnes.",
@@ -248,7 +248,7 @@ LINGUAI.addStrings("fr", {
       {
         q: "Quelles expressions sont correctes ?",
         opts: ["nach dem Essen", "vor das Frühstück", "mit einem Glas Wasser", "seit eine Woche", "zu den Mahlzeiten"],
-        why: "<i>Vor</i> et <i>seit</i> veulent ici le datif : <i>vor dem Frühstück</i>, <i>seit einer Woche</i>. Les trois autres sont déjà au datif."
+        why: "<i>Vor</i> et <i>seit</i> veulent ici le datif : <i>vor dem Frühstück</i>, <i>seit einer Woche</i>. Les deux options avec <i>vor</i> et <i>seit</i> sont donc fausses ; <i>nach dem Essen</i>, <i>mit einem Glas Wasser</i> et <i>zu den Mahlzeiten</i> sont correctes."
       },
       {
         q: "Remets les mots dans l'ordre.",
@@ -297,13 +297,13 @@ LINGUAI.addStrings("fr", {
       },
       {
         h: "Wenn et falls",
-        p: "La notice est pleine de phrases conditionnelles. Après <strong>wenn</strong> ou <strong>falls</strong>, le verbe conjugué va <strong>à la fin</strong> : <em>Wenn Sie schwanger sind, ...</em>, <em>Falls Sie eine Einnahme vergessen haben, ...</em> Si la conditionnelle vient en premier, la principale commence par le <strong>verbe</strong>, parce que la conditionnelle occupe à elle seule la première place : <em>Wenn Sie Fragen haben, <b>rufen</b> Sie die Apotheke an.</em> <em>Falls</em>, c'est seulement « au cas où » ; <em>wenn</em> veut aussi dire « quand »."
+        p: "La notice est pleine de phrases conditionnelles. Après <strong>wenn</strong> ou <strong>falls</strong>, le verbe conjugué va <strong>à la fin</strong> : <em>Wenn Sie schwanger sind, ...</em>, <em>Falls Sie eine Einnahme vergessen haben, ...</em> Si la conditionnelle vient en premier, la principale commence par le <strong>verbe</strong>, parce que la conditionnelle occupe à elle seule la première place : <em>Wenn Sie Fragen haben, <b>rufen</b> Sie die Apotheke an.</em> <em>Falls</em> est seulement conditionnel, « si, au cas où » ; <em>wenn</em> veut aussi dire « quand »."
       },
       {
         contrast: "La structure te sera familière : une notice française est découpée selon le même modèle européen, avec les mêmes rubriques (« Qu'est-ce que ... et dans quel cas est-il utilisé ? », « Quels sont les effets indésirables éventuels ? »). La différence est dans les mots. La notice française dit « contre-indications », le même mot savant que le médecin ; la notice allemande préfère les mots allemands : <em>Gegenanzeigen</em>, ou la formule <em>... darf nicht eingenommen werden, wenn ...</em> ; <em>die Kontraindikation</em> est le mot du médecin. De même, « effets indésirables » devient <em>Nebenwirkungen</em> et « interactions » <em>Wechselwirkungen</em>. Et la syntaxe : en français, « si vous avez des questions, appelez la pharmacie » ne change pas l'ordre des mots ; en allemand, <em>haben</em> va à la fin de la conditionnelle et <em>rufen</em> ouvre la principale. « Wenn Sie Fragen haben, Sie rufen ... » est l'erreur typique de qui pense en français."
       },
       {
-        trap: "Dans la notice, <em>häufig</em> n'est pas une impression, c'est un chiffre : par convention européenne, <em>sehr häufig</em> veut dire plus d'1 personne sur 10, <em>häufig</em> de 1 sur 100 à 1 sur 10, <em>selten</em> de 1 sur 10 000 à 1 sur 1000. La « notice » se dit <em>Beipackzettel</em>, et non <em>die Notiz</em>, qui est une note qu'on prend. L'ordonnance est <em>das Rezept</em>, qui n'a rien d'une recette de cuisine dans ce contexte. Et <em>die Drogerie</em> n'est pas une pharmacie (ni un lieu où l'on vend de la drogue) : on y vend cosmétiques et produits ménagers ; les médicaments s'achètent à <em>der Apotheke</em>."
+        trap: "Dans la notice, <em>häufig</em> n'est pas une impression, c'est un chiffre : par convention européenne, <em>sehr häufig</em> veut dire 1 personne sur 10 ou plus, <em>häufig</em> de 1 sur 100 à 1 sur 10, <em>selten</em> de 1 sur 10 000 à 1 sur 1000. La « notice » se dit <em>Beipackzettel</em>, et non <em>die Notiz</em>, qui est une note qu'on prend. L'ordonnance est <em>das Rezept</em>, qui n'a rien d'une recette de cuisine dans ce contexte. Et <em>die Drogerie</em> n'est pas une pharmacie (ni un lieu où l'on vend de la drogue) : on y vend cosmétiques, produits ménagers et tout au plus quelques produits en vente libre ; les médicaments de pharmacie et sur ordonnance s'achètent à <em>der Apotheke</em>."
       },
       {
         tip: "Au patient qui te demande « je peux le prendre avec ... ? », ne réponds pas en lisant la notice : <em>Das klären wir mit dem Arzt oder der Apotheke.</em> La notice te sert à comprendre ce qu'il faut demander, pas à décider."
@@ -443,7 +443,7 @@ LINGUAI.addStrings("fr", {
         trap: "<em>Richten</em> veut dire ici « préparer les médicaments » (beaucoup de services disent aussi <em>stellen</em>), pas « diriger » et pas « juger » comme <em>richten</em> au tribunal. <em>Verabreichen</em>, c'est administrer le médicament ; <em>verschreiben</em>, c'est le prescrire, et c'est le médecin qui le fait. <em>Die Dosierung</em> est la posologie (combien et quand), <em>die Dosis</em> est la quantité d'une seule prise. Attention aussi à la forme : le participe de <em>dokumentieren</em> est <em>dokumentiert</em>, sans <em>ge-</em>, comme tous les verbes en <em>-ieren</em> ; celui de <em>verabreichen</em> est <em>verabreicht</em>, sans <em>ge-</em> à cause du préfixe inséparable <em>ver-</em>."
       },
       {
-        tip: "La phrase la plus importante de la leçon est celle qui renvoie le doute : <em>Das müssen wir in der Apotheke nachfragen</em> ou <em>Das klären wir mit dem Arzt.</em> Couper un comprimé, l'écraser ou changer l'horaire sont des décisions qu'on ne prend pas de mémoire."
+        tip: "La phrase la plus importante de la leçon est celle qui renvoie le doute : <em>Da müssen wir in der Apotheke nachfragen</em> ou <em>Das klären wir mit dem Arzt.</em> Couper un comprimé, l'écraser ou changer l'horaire sont des décisions qu'on ne prend pas de mémoire."
       }
     ],
     grammar: {

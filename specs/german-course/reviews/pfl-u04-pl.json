@@ -1,0 +1,68 @@
+{
+  "bundleHash": "c2d532409182aacc2360e533af84c1cec27b871991bd970b8fb40ac46c33ee4a",
+  "findings": [
+    {
+      "kind": "grammatica",
+      "msg": "La spiegazione presenta la desinenza -e come valida per tutto il plurale senza articolo, ma vale qui per nominativo e accusativo; al dativo è -en, come mostra l’esempio leichten Schmerzen. Specificare i casi nella spiegazione e nella tabella.",
+      "path": "merged.lessons[0].grammar.note"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "Anche qui la regola -e per il plurale senza articolo è generalizzata a tutti i casi. Precisare che riguarda nominativo e accusativo e distinguere il dativo plurale in -en.",
+      "path": "merged.lessons[0].theory[1].p"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "L’articolo indeterminativo ein segnala il maschile al nominativo anche se non ha una desinenza esplicita. Spiegare invece che la desinenza -er dell’aggettivo marca il nominativo maschile dopo ein.",
+      "path": "merged.test.exercises[0].why"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In ansprechbar, sp segue il prefisso an- e si pronuncia [ʃp], ma il suono [ç] non corrisponde al normale ch polacco, neppure in chichot. Descriverlo come una fricativa palatale sorda, simile a ś ma articolata diversamente.",
+      "path": "merged.lessons[1].exercises[9].why"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "Sein rechter Arm bleibt unten significa che il braccio destro rimane abbassato, non che si abbassa. Sostituire «Prawa ręka opada» con «Prawe ramię pozostaje opuszczone».",
+      "path": "merged.lessons[1].dialogue.lines[6].tr"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Als non richiede il Präteritum: anche «Als ich ins Zimmer gekommen bin» è possibile. Presentare kam come una forma usata nell’esempio, non come forma richiesta dopo als.",
+      "path": "merged.lessons[1].exercises[3].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "L’affermazione che il polacco non abbia un ausiliare nel passato è troppo assoluta: forme come zrobiłem contengono desinenze personali storicamente derivate dall’ausiliare być. Per il confronto pratico, dire che nelle forme polacche comuni non compare normalmente un ausiliare separato come nel Perfekt tedesco.",
+      "path": "merged.lessons[3].theory[2].contrast"
+    },
+    {
+      "kind": "chiave di risposta",
+      "msg": "Il cloze non specifica il tempo e ammette anche soluzioni coerenti come «Als ich ins Zimmer kam, war Frau Keller auf dem Boden» o «saß Frau Keller auf dem Boden». Aggiungere un’indicazione che richieda liegen al Präteritum.",
+      "path": "merged.test.exercises[6]"
+    },
+    {
+      "kind": "ambiguità",
+      "msg": "«Wenn ich gestern ins Zimmer kam, war sie wach» può descrivere ingressi ripetuti nel corso di ieri; senza un contesto che imponga un solo ingresso non è necessariamente scorretta. Sostituirla con un distrattore inequivocabilmente errato o precisare il contesto.",
+      "path": "merged.test.exercises[5].opts[4]"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "L’indicazione «Sie zawsze zaraz po czasowniku» è troppo assoluta: per esempio «Bitte rufen Sie …» contiene bitte prima del verbo e nelle istruzioni coordinate il pronome può essere omesso nel secondo membro. Limitare la regola all’ordine dell’esempio con verbo iniziale.",
+      "path": "merged.lessons[2].theory[2].contrast"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Wach» significa sveglia, mentre «przytomna» significa cosciente: la distinzione conta anche perché la lezione distingue wach da ansprechbar. Tradurre «Była sveglia» in polacco come «Była obudzona» o, più naturalmente nel contesto, «Nie spała», mantenendo separata la capacità di rispondere.",
+      "path": "merged.lessons[3].dialogue.lines[5].tr"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "L’imperativo di cortesia «Rufen Sie» usa formalmente la forma finita della terza persona plurale, coincidente con l’infinito per questi verbi. Formulare la regola come «forma verbale rufen/bleiben + Sie» evita di insegnare che il verbo resti all’infinito.",
+      "path": "merged.lessons[2].grammar.note"
+    }
+  ],
+  "lang": "pl",
+  "unit": "pfl-u04",
+  "verdict": "fail"
+}

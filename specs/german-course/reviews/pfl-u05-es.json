@@ -1,0 +1,38 @@
+{
+  "bundleHash": "50cd7b2b703b1c2aec0bd00efaf0c9af7d87ef93d4897dd454ab9232bb5bd99f",
+  "findings": [
+    {
+      "kind": "Rektion",
+      "msg": "«Etwas in der Apotheke nachfragen» usa nachfragen con un complemento directo que aquí no es idiomático. Usa «Das müssen wir in der Apotheke erfragen» o «Danach müssen wir in der Apotheke fragen». La misma frase aparece en neutral.lessons[3].dialogue.lines[5] y merged.lessons[3].theory[4].tip.",
+      "path": "neutral.lessons[3].grammar.examples[4].it"
+    },
+    {
+      "kind": "Spiegazione della risposta",
+      "msg": "La spiegazione cita «vor dem Frühstück» e «seit einer Woche», ma entrambe sono le correzioni delle opzioni errate, non risposte selezionabili. Inoltre, le risposte corrette sono tre in totale, non «las otras tres». Spiega che sono corrette «nach dem Essen», «mit einem Glas Wasser» e «zu den Mahlzeiten».",
+      "path": "merged.lessons[1].exercises[5].why"
+    },
+    {
+      "kind": "Pronuncia",
+      "msg": "La vocale accentata di «werden» è breve, [ɛ], non lunga. Correggi l'indicazione fonetica.",
+      "path": "merged.lessons[3].exercises[10].why"
+    },
+    {
+      "kind": "Nota fuorviante",
+      "msg": "La frase «Die Tablette no es una tableta de chocolate» presenta una falsa esclusione: in tedesco Tablette indica normalmente una compressa, ma in spagnolo «tableta» può indicare sia un medicinale sia una tavoletta di cioccolato. Spiega la differenza d'uso senza negare il significato spagnolo.",
+      "path": "merged.lessons[0].theory[3].trap"
+    },
+    {
+      "kind": "Informazione inesatta",
+      "msg": "L'affermazione che una Drogerie non venda medicinali contraddice la sezione culturale, che riconosce la vendita di prodotti «freiverkäuflich». Specifica che non vende medicinali riservati alle farmacie, ma può vendere alcuni medicinali di libera vendita.",
+      "path": "merged.lessons[2].theory[3].trap"
+    },
+    {
+      "kind": "Spiegazione clinica",
+      "msg": "«Nüchtern» viene spiegato senza qualificazioni come «sin comer ni beber», e il consiglio ripete «nichts trinken». Le istruzioni sui liquidi dipendono dall'esame e dal protocollo: distingui il significato generale di «en ayunas» dalle indicazioni specifiche comunicate al paziente. Correggi anche merged.lessons[1].theory[3].trap e qualifica merged.lessons[1].exercises[0].why.",
+      "path": "merged.lessons[1].grammar.examples[2].note"
+    }
+  ],
+  "lang": "es",
+  "unit": "pfl-u05",
+  "verdict": "fail"
+}

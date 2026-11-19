@@ -1,0 +1,43 @@
+{
+  "bundleHash": "e7215190c26ac7faad4881ad624ea292828da1db5c4cf6963fc2ace621cb4afd",
+  "findings": [
+    {
+      "kind": "Rektion",
+      "msg": "«Das müssen wir in der Apotheke nachfragen» usa nachfragen con un oggetto diretto improprio. Sostituire con «Das müssen wir in der Apotheke erfragen» oppure «Dazu müssen wir in der Apotheke nachfragen»; correggere anche la battuta del dialogo e il tip corrispondenti.",
+      "path": "neutral.lessons[3].grammar.examples[4].it"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "La e di «werden» è breve e aperta [ɛ], non lunga. Correggere la spiegazione.",
+      "path": "merged.lessons[3].exercises[10].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Vor dem Frühstück» e «seit einer Woche» non compaiono tra le tre risposte corrette. La spiegazione deve giustificare «nach dem Essen», «mit einem Glas Wasser» e «zu den Mahlzeiten», eventualmente indicando perché le altre due forme sono errate.",
+      "path": "merged.lessons[1].exercises[5].why"
+    },
+    {
+      "kind": "istruzione sanitaria",
+      "msg": "«Nüchtern» non equivale sempre a un divieto assoluto di bere: le istruzioni dipendono dall'esame e dal protocollo. Evitare di insegnare «no food and no drinks» come definizione universale e specificare che le indicazioni sui liquidi vanno verificate; correggere anche le traduzioni e il trap che impongono sempre il divieto di bere.",
+      "path": "merged.lessons[1].grammar.examples[2].note"
+    },
+    {
+      "kind": "precisione grammaticale",
+      "msg": "Il passivo tedesco può usare anche «sein» per descrivere uno stato risultante, per esempio «Die Medikamente sind gerichtet». Precisare che qui «werden» forma il passivo di processo, anziché affermare che il tedesco usa «werden, not sein».",
+      "path": "merged.lessons[3].theory[2].contrast"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Il futuro «Die Medikamente werden im Stationszimmer richten» non è privo di senso per il solo fatto di essere futuro: è anomalo perché presenta i medicinali come soggetto dell'azione transitiva «richten» senza complemento. Spiegare questa differenza rispetto al passivo.",
+      "path": "merged.lessons[3].exercises[0].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Falls» può significare anche «if», come riconosciuto nel vocabolario e nelle traduzioni della stessa lezione. Sostituire «only means in case» con una spiegazione che includa «if» e distingua l'uso condizionale di «falls» da quello anche temporale di «wenn».",
+      "path": "merged.lessons[2].theory[1].p"
+    }
+  ],
+  "lang": "en",
+  "unit": "pfl-u05",
+  "verdict": "fail"
+}

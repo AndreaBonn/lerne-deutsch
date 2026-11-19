@@ -25,7 +25,7 @@ LINGUAI.addStrings("en", {
       },
       {
         h: "An adjective in front of a noun takes an ending",
-        p: "When an adjective comes <strong>before</strong> a noun, it takes an ending that depends on the article, the gender and the case: <em>ein drückend<b>er</b> Schmerz</em> (nominative, indefinite article), <em>einen stechend<b>en</b> Schmerz</em> (accusative), <em>der dumpf<b>e</b> Schmerz</em> (after the definite article). In the plural with no article the ending is <b>-e</b>: <em>starke Schmerzen</em>; after <em>die</em> or <em>diese</em> it is <b>-en</b>: <em>diese starken Schmerzen</em>. When the adjective comes <strong>after</strong> <em>sein</em>, it takes no ending at all: <em>Der Schmerz ist dumpf.</em>"
+        p: "When an adjective comes <strong>before</strong> a noun, it takes an ending that depends on the article, the gender and the case: <em>ein drückend<b>er</b> Schmerz</em> (nominative, indefinite article), <em>einen stechend<b>en</b> Schmerz</em> (accusative), <em>der dumpf<b>e</b> Schmerz</em> (after the definite article). In the plural with no article the ending is <b>-e</b> in the nominative and accusative (<em>starke Schmerzen</em>) and <b>-en</b> in the dative (<em>bei leichten Schmerzen</em>); after <em>die</em> or <em>diese</em> it is <b>-en</b>: <em>diese starken Schmerzen</em>. When the adjective comes <strong>after</strong> <em>sein</em>, it takes no ending at all: <em>Der Schmerz ist dumpf.</em>"
       },
       {
         contrast: "English adjectives never change: “a sharp pain”, “sharp pains”, “the pain is sharp”. German adds an ending whenever the adjective stands before the noun, so “einen stechend Schmerz” sounds broken to a German ear, even though every word is right. The pain words themselves map only roughly. <em>Stechend</em> is your “sharp” or “stabbing”; <em>drückend</em> is “pressing”, “pressure-like”, the pain a patient describes as “like something heavy on my chest”; <em>ziehend</em> is “pulling” or “dragging”, and many patients use it where an American patient would say “aching” or “it pulls down my leg”. <em>Dumpf</em> is “dull”. On register, English already has two levels: you chart “analgesic”, the patient asks for “pain meds” or “something for the pain”. German works the same way: <em>das Analgetikum</em> in the chart, <em>das Schmerzmittel</em> at the bedside."
@@ -39,7 +39,7 @@ LINGUAI.addStrings("en", {
     ],
     grammar: {
       title: "Adjectives that describe pain",
-      note: "Before a noun the adjective takes an <b>ending</b>; after <b>sein</b> it takes none. Plural with no article: <b>-e</b>; after <i>die</i>, <i>diese</i>: <b>-en</b>.",
+      note: "Before a noun the adjective takes an <b>ending</b>; after <b>sein</b> it takes none. Plural with no article: <b>-e</b> (nominative, accusative), <b>-en</b> (dative); after <i>die</i>, <i>diese</i>: <b>-en</b>.",
       table: {
         head: ["case", "example", "ending"],
         rows: [
@@ -123,7 +123,7 @@ LINGUAI.addStrings("en", {
       },
       {
         q: "Translate, speaking to the patient: “Are you in a lot of pain?”",
-        why: "<i>Haben Sie starke Schmerzen?</i> In speech you also hear <i>große Schmerzen</i>. Pain is said in the plural, and an adjective before a plural noun with no article takes <b>-e</b>."
+        why: "<i>Haben Sie starke Schmerzen?</i> In speech you also hear <i>große Schmerzen</i>. When asking about pain, German usually uses the plural, and an adjective before a plural noun with no article takes <b>-e</b>."
       },
       {
         q: "Which sentences have the right ending?",
@@ -253,7 +253,7 @@ LINGUAI.addStrings("en", {
       },
       {
         tr: "The Präteritum of kommen, all persons.",
-        why: "<i>Kam, kamst, kam, kamen, kamt, kamen</i>: a strong verb, the vowel changes to <b>a</b>, like English “come, came”. The first and third person singular have no ending: <i>ich kam, sie kam</i>. This is the form used after <i>als</i> when telling a story."
+        why: "<i>Kam, kamst, kam, kamen, kamt, kamen</i>: a strong verb, the vowel changes to <b>a</b>, like English “come, came”. The first and third person singular have no ending: <i>ich kam, sie kam</i>. This is the form usually used after <i>als</i> when telling a story; in speech the Perfekt is also heard."
       },
       {
         q: "Complete the sentence.",
@@ -290,7 +290,7 @@ LINGUAI.addStrings("en", {
       },
       {
         tr: "When did this start?",
-        why: "In <i>Wann</i> the <b>w</b> sounds like English [v]; in <i>angefangen</i> the prefix <b>an</b> and the <b>ge</b> are pronounced separately, and the final <b>-ngen</b> is [ŋən], as in “singing”, with no hard <b>g</b>."
+        why: "In <i>Wann</i> the <b>w</b> sounds like English [v]; in <i>angefangen</i> the prefix <b>an</b> and the <b>ge</b> run together with no break, stress on <b>an</b>, and the final <b>-ngen</b> is [ŋən], like the <b>ng</b> in “singer”, with no hard <b>g</b>."
       }
     ]
   },
@@ -313,10 +313,10 @@ LINGUAI.addStrings("en", {
         p: "With <strong>Sie</strong> the imperative is the infinitive followed by <em>Sie</em>: <em>Rufen Sie bitte die 112 an! Bleiben Sie bitte bei Ihrem Mann!</em> With <strong>du</strong>, which many units use among coworkers, it is the verb stem, often without <b>-e</b>: <em>Hol bitte schnell Hilfe! Lös bitte den Alarm aus!</em> Verbs that change <b>e</b> to <b>i</b> in the present do so here too: <em>du gibst</em> → <em>Gib mir bitte das Telefon!</em> The separable prefix goes to the end: <em>Rufen Sie ... an</em>, <em>Lös ... aus</em>. <em>Bitte</em> softens it, but in an emergency the sentence stays short."
       },
       {
-        contrast: "In the US one number, 911, covers police, fire and ambulance. Germany splits them: <strong>112</strong> for EMS and fire, <strong>110</strong> for the police. Dialing 911 in Germany does not reach anyone. English imperatives have no subject: “Call 911!”, “Stay with him!”. The polite German imperative needs <em>Sie</em> right after the verb, every time: <em>Rufen Sie die 112 an</em>, not “Rufen die 112 an”. On the unit, the American “call a code” or “code blue” has no single German equivalent: you <em>den Alarm auslösen</em> or call the <em>Reanimationsteam</em>. <em>Die Reanimation</em> is CPR, the action, and the patient's word is <em>die Wiederbelebung</em>; the ICU is the <em>Intensivstation</em>."
+        contrast: "In the US one number, 911, covers police, fire and ambulance. Germany splits them: <strong>112</strong> for EMS and fire, <strong>110</strong> for the police. Do not count on 911: some cell phones route it to 112, landlines do not. Dial 112 or 110 directly. English imperatives have no subject: “Call 911!”, “Stay with him!”. The polite German imperative needs <em>Sie</em> right after the verb, every time: <em>Rufen Sie die 112 an</em>, not “Rufen die 112 an”. On the unit, the American “call a code” or “code blue” has no single German equivalent: you <em>den Alarm auslösen</em> or call the <em>Reanimationsteam</em>. <em>Die Reanimation</em> is CPR, the action, and the patient's word is <em>die Wiederbelebung</em>; the ICU is the <em>Intensivstation</em>."
       },
       {
-        trap: "<em>Die Notaufnahme</em> is the ER, <em>der Rettungswagen</em> is the ambulance, and <em>der Notarzt</em> is an emergency physician who comes out to the scene with EMS, something most American nurses have never seen. None of these is <em>die Ambulanz</em>, which is the outpatient clinic. Floors are counted differently too: the ground floor is <em>das Erdgeschoss</em>, so <em>im zweiten Stock</em> is what Americans call the third floor. And don't hang up on the dispatcher: <em>Bleiben Sie am Telefon</em> means stay on the line until the <em>Leitstelle</em> ends the call."
+        trap: "<em>Die Notaufnahme</em> is the ER, <em>der Rettungswagen</em> is the ambulance, and <em>der Notarzt</em> is an emergency physician who comes out to the scene with EMS, something most American nurses have never seen. In a German hospital <em>die Ambulanz</em> usually means the outpatient clinic; for the vehicle, say <em>der Rettungswagen</em>. Floors are counted differently too: the ground floor is <em>das Erdgeschoss</em>, so <em>im zweiten Stock</em> is what Americans call the third floor. And don't hang up on the dispatcher: <em>Bleiben Sie am Telefon</em> means stay on the line until the <em>Leitstelle</em> ends the call."
       },
       {
         tip: "On your first day on a new unit, ask two things: where the emergency button is and what the facility's internal emergency number is. They change from hospital to hospital, and in an emergency there is no time to look for them."
@@ -460,7 +460,7 @@ LINGUAI.addStrings("en", {
         contrast: "English tells a fall in the simple past: “She fell in the bathroom. I found her on the floor.” Spoken German uses the <strong>Perfekt</strong> for the same report: <em>Sie ist im Bad gestürzt. Ich habe sie auf dem Boden gefunden.</em> It looks like the English present perfect, but it is just the everyday past. And the auxiliary is the trap: English always says “has”, German says <em>ist gestürzt</em>, <em>ist gefallen</em>, <em>ist ausgerutscht</em>, because falling is movement. “Sie hat gestürzt” is wrong. <em>Fraktur</em> and <em>Hämatom</em> are close to your chart words “fracture” and “hematoma”; with the patient you say <em>der Knochenbruch</em> (or simply <em>Ist das Bein gebrochen?</em>, “is the leg broken?”) and <em>der Bluterguss</em>, the bruise."
       },
       {
-        trap: "English “fall” is close to German <em>fallen</em>, and that is the trap: <em>fallen</em> on its own is mostly for objects (<em>Das Glas ist gefallen</em>). For a person, the unit and the chart say <em>stürzen</em> (<em>der Sturz</em>, the fall), and everyday speech says <em>hinfallen</em> (<em>Ich bin hingefallen</em>). Watch <em>gefallen</em>: it is also the verb “to please”, with <em>haben</em> (<em>Es hat mir gefallen</em>, “I liked it”). <em>Sie ist gefallen</em> and <em>Es hat ihr gefallen</em> are two different sentences. Last, <em>die Platzwunde</em> is a laceration from a blow, from <em>platzen</em>, to burst."
+        trap: "English “fall” is close to German <em>fallen</em>, and that is the trap: <em>fallen</em> works for objects (<em>Das Glas ist gefallen</em>) and for people (<em>Sie ist gefallen</em>), but it is not the word for the chart. For a person, the unit and the chart say <em>stürzen</em> (<em>der Sturz</em>, the fall), and everyday speech says <em>hinfallen</em> (<em>Ich bin hingefallen</em>). Watch <em>gefallen</em>: it is also the verb “to please”, with <em>haben</em> (<em>Es hat mir gefallen</em>, “I liked it”). <em>Sie ist gefallen</em> and <em>Es hat ihr gefallen</em> are two different sentences. Last, <em>die Platzwunde</em> is a laceration from a blow, from <em>platzen</em>, to burst."
       },
       {
         tip: "In the report, keep what you saw apart from what the patient told you: <em>Patientin um 3:00 Uhr auf dem Boden im Bad aufgefunden</em> is an observation; <em>laut Patientin ausgerutscht</em> is her account. Whoever reads it later has to be able to tell the two apart."
@@ -621,7 +621,7 @@ LINGUAI.addStrings("en", {
           "Als ich ins Zimmer kam, sie lag auf dem Boden.",
           "Haben Sie starke Schmerzen?",
           "Ich habe die Ärztin sofort informiert.",
-          "Wenn ich gestern ins Zimmer kam, war sie wach."
+          "Wenn ich gestern um acht Uhr ins Zimmer kam, war sie wach."
         ],
         why: "After the subordinate clause the main clause starts with the verb: <i>lag sie</i>, unlike English “she was lying”. For a single event in the past you use <i>als</i>, not <i>wenn</i>. <i>informiert</i> takes no <i>ge-</i>."
       },

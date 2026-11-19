@@ -166,7 +166,7 @@ LINGUAI.addStrings("it", {
         contrast: "In italiano «prima di colazione», «dopo mangiato», «con un bicchiere d'acqua» non cambiano l'articolo. In tedesco ogni preposizione di questa lezione fa scattare il dativo, e l'errore <em>vor das Frühstück</em> si sente subito. Anche il paziente italiano dice «prendo l'anticoagulante» o «la pastiglia per il sangue»; il paziente tedesco dice quasi sempre <em>der Blutverdünner</em>, mentre <em>das Antikoagulans</em> resta parola da medico e da cartella."
       },
       {
-        trap: "<em>Nüchtern</em> in reparto vuol dire «a digiuno», ma nella lingua di tutti i giorni vuol dire anche «sobrio, non ubriaco» e perfino «asciutto, senza fronzoli». Se dici al paziente <em>Bleiben Sie bitte nüchtern</em>, aggiungi cosa significa: <em>Bitte nichts essen und nichts trinken.</em> Non confondere <em>nach dem Essen</em> (preposizione + nome) con <em>nachdem</em>, che è una congiunzione e manda il verbo in fondo. <em>Zur Nacht</em> è «la sera prima di dormire», <em>in der Nacht</em> è «durante la notte»: sul piano dei farmaci non sono la stessa cosa."
+        trap: "<em>Nüchtern</em> in reparto vuol dire «a digiuno», ma nella lingua di tutti i giorni vuol dire anche «sobrio, non ubriaco» e perfino «asciutto, senza fronzoli». Se dici al paziente <em>Bleiben Sie bitte nüchtern</em>, aggiungi cosa significa per quell'esame: <em>Bitte nichts essen.</em> e, secondo l'indicazione, <em>Wasser dürfen Sie trinken</em> oppure <em>Bitte auch nichts trinken.</em> Non confondere <em>nach dem Essen</em> (preposizione + nome) con <em>nachdem</em>, che è una congiunzione e manda il verbo in fondo. <em>Zur Nacht</em> è «la sera prima di dormire», <em>in der Nacht</em> è «durante la notte»: sul piano dei farmaci non sono la stessa cosa."
       },
       {
         tip: "Se un paziente dice di aver dimenticato una pastiglia, non dire mai tu che cosa fare: <em>Dann sagen Sie es mir bitte. Ich frage den Arzt.</em> Recuperare o saltare una dose è una decisione del medico, e la risposta giusta cambia da farmaco a farmaco."
@@ -174,7 +174,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Orari e preposizioni con il dativo",
-      note: "<b>vor, nach, mit, seit, zu, bei</b> + <b>dativo</b>. Gli avverbi di tempo (<b>morgens, abends, täglich</b>) non hanno articolo.",
+      note: "<b>vor</b> (di tempo)<b>, nach, mit, seit, zu, bei</b> + <b>dativo</b>. Gli avverbi di tempo (<b>morgens, abends, täglich</b>) non hanno articolo.",
       table: {
         head: ["espressione", "dativo di", "italiano"],
         rows: [
@@ -189,7 +189,7 @@ LINGUAI.addStrings("it", {
       examples: [
         { tr: "Prenda la pastiglia prima di colazione, per favore.", note: "vor dem: dativo di das Frühstück" },
         { tr: "L'antibiotico lo prende sempre dopo mangiato.", note: "nach dem Essen" },
-        { tr: "Per il prelievo domani deve restare a digiuno.", note: "nüchtern bleiben: niente cibo né bevande" },
+        { tr: "Per il prelievo domani deve restare a digiuno.", note: "nüchtern bleiben: niente cibo; cosa si può bere lo dice l'indicazione per quell'esame" },
         { tr: "L'anticoagulante lo riceve la sera.", note: "Blutverdünner: la parola del paziente" },
         { tr: "Al bisogno riceve una pastiglia contro il dolore.", note: "bei Bedarf, in cartella spesso b.B." },
         { tr: "Da una settimana prendo Dolorex.", note: "seit + dativo, verbo al presente" }
@@ -225,7 +225,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Il medico dice che domani mattina, prima del prelievo, il paziente deve essere «nüchtern». Che cosa significa?",
         opts: ["a digiuno", "a letto, senza alzarsi", "senza farmaci"],
-        why: "In reparto <b>nüchtern</b> significa «a digiuno»: niente cibo e, di solito, niente bevande. Nella lingua di tutti i giorni vuol dire anche «sobrio»."
+        why: "In reparto <b>nüchtern</b> significa «a digiuno»: niente cibo; se si può bere acqua dipende dall'esame. Nella lingua di tutti i giorni vuol dire anche «sobrio»."
       },
       {
         tr: "Il presente di einnehmen, tutte le persone.",
@@ -248,7 +248,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Quali espressioni sono corrette?",
         opts: ["nach dem Essen", "vor das Frühstück", "mit einem Glas Wasser", "seit eine Woche", "zu den Mahlzeiten"],
-        why: "<i>Vor</i> e <i>seit</i> qui vogliono il dativo: <i>vor dem Frühstück</i>, <i>seit einer Woche</i>. Le altre tre sono già al dativo."
+        why: "<i>Vor</i> e <i>seit</i> qui vogliono il dativo: <i>vor dem Frühstück</i>, <i>seit einer Woche</i>. Sono quindi sbagliate le due opzioni con <i>vor</i> e <i>seit</i>; corrette <i>nach dem Essen</i>, <i>mit einem Glas Wasser</i> e <i>zu den Mahlzeiten</i>."
       },
       {
         q: "Metti in ordine le parole.",
@@ -297,13 +297,13 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Wenn e falls",
-        p: "Il foglietto è pieno di frasi condizionali. Dopo <strong>wenn</strong> o <strong>falls</strong> il verbo coniugato va <strong>in fondo</strong>: <em>Wenn Sie schwanger sind, ...</em>, <em>Falls Sie eine Einnahme vergessen haben, ...</em> Se la condizionale viene prima, la principale comincia con il <strong>verbo</strong>, perché la condizionale occupa da sola il primo posto: <em>Wenn Sie Fragen haben, <b>rufen</b> Sie die Apotheke an.</em> <em>Falls</em> è solo «nel caso in cui»; <em>wenn</em> vuol dire anche «quando»."
+        p: "Il foglietto è pieno di frasi condizionali. Dopo <strong>wenn</strong> o <strong>falls</strong> il verbo coniugato va <strong>in fondo</strong>: <em>Wenn Sie schwanger sind, ...</em>, <em>Falls Sie eine Einnahme vergessen haben, ...</em> Se la condizionale viene prima, la principale comincia con il <strong>verbo</strong>, perché la condizionale occupa da sola il primo posto: <em>Wenn Sie Fragen haben, <b>rufen</b> Sie die Apotheke an.</em> <em>Falls</em> è solo condizionale, «se, nel caso in cui»; <em>wenn</em> vuol dire anche «quando»."
       },
       {
         contrast: "In italiano il foglietto dice «controindicazioni», la stessa parola latina che usa il medico, e il paziente la capisce. Il foglietto tedesco preferisce le parole tedesche: <em>Gegenanzeigen</em>, o la formula <em>... darf nicht eingenommen werden, wenn ...</em>; <em>die Kontraindikation</em> è la parola del medico. Anche la sintassi è diversa: in italiano «se ha domande, chiami la farmacia» non cambia l'ordine delle parole; in tedesco <em>haben</em> va in fondo alla condizionale e <em>rufen</em> apre la principale. «Wenn Sie Fragen haben, Sie rufen ...» è l'errore tipico di chi pensa in italiano."
       },
       {
-        trap: "Nel foglietto <em>häufig</em> non è un'impressione, è un numero: per convenzione europea <em>sehr häufig</em> vuol dire più di 1 persona su 10, <em>häufig</em> da 1 su 100 a 1 su 10, <em>selten</em> da 1 su 10.000 a 1 su 1000. Il «bugiardino» italiano corrisponde al <em>Beipackzettel</em>, non al <em>Rezept</em>, che è la ricetta. E <em>die Drogerie</em> non è una farmacia: vende cosmetici e prodotti per la casa; i farmaci si comprano in <em>der Apotheke</em>."
+        trap: "Nel foglietto <em>häufig</em> non è un'impressione, è un numero: per convenzione europea <em>sehr häufig</em> vuol dire 1 persona su 10 o più, <em>häufig</em> da 1 su 100 a 1 su 10, <em>selten</em> da 1 su 10.000 a 1 su 1000. Il «bugiardino» italiano corrisponde al <em>Beipackzettel</em>, non al <em>Rezept</em>, che è la ricetta. E <em>die Drogerie</em> non è una farmacia: vende cosmetici, prodotti per la casa e al massimo qualche prodotto di libera vendita; i farmaci da farmacia e quelli con ricetta si comprano in <em>der Apotheke</em>."
       },
       {
         tip: "Al paziente che ti chiede «posso prenderlo insieme a ...?» non rispondere leggendo il foglietto: <em>Das klären wir mit dem Arzt oder der Apotheke.</em> Il foglietto serve a te per capire che cosa chiedere, non per decidere."
@@ -443,7 +443,7 @@ LINGUAI.addStrings("it", {
         trap: "<em>Richten</em> qui vuol dire «preparare i farmaci» (molti reparti dicono anche <em>stellen</em>), non «dirigere» e non «richiedere». <em>Verabreichen</em> è dare il farmaco; <em>verschreiben</em> è prescriverlo, e lo fa il medico. <em>Die Dosierung</em> è lo schema (quanto e quando), <em>die Dosis</em> è la singola quantità. Attenzione anche alla forma: il participio di <em>dokumentieren</em> è <em>dokumentiert</em>, senza <em>ge-</em>, come tutti i verbi in <em>-ieren</em>; quello di <em>verabreichen</em> è <em>verabreicht</em>, senza <em>ge-</em> per via del prefisso inseparabile <em>ver-</em>."
       },
       {
-        tip: "La frase più importante della lezione è quella che rimanda il dubbio: <em>Das müssen wir in der Apotheke nachfragen</em> oppure <em>Das klären wir mit dem Arzt.</em> Dividere una pastiglia, scioglierla o cambiare orario sono decisioni che non si prendono a memoria."
+        tip: "La frase più importante della lezione è quella che rimanda il dubbio: <em>Da müssen wir in der Apotheke nachfragen</em> oppure <em>Das klären wir mit dem Arzt.</em> Dividere una pastiglia, scioglierla o cambiare orario sono decisioni che non si prendono a memoria."
       }
     ],
     grammar: {

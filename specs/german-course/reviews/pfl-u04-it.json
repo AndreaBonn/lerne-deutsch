@@ -1,0 +1,58 @@
+{
+  "bundleHash": "f1b9e813db6c95011b74b2b6a7b0cf8314a315f32885501bd06ea6ad3b10ef8e",
+  "findings": [
+    {
+      "kind": "grammatica",
+      "msg": "La regola «al plurale senza articolo: -e» è troppo generale: al dativo plurale la desinenza è -en, come nell'esempio «bei leichten Schmerzen». Specificare che -e vale qui per nominativo e accusativo plurale.",
+      "path": "merged.lessons[0].grammar.note"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "Anche qui la regola sul plurale senza articolo omette il dativo. Precisare «al nominativo e all'accusativo plurale senza articolo» e mantenere distinto il dativo in -en.",
+      "path": "merged.lessons[0].theory[1].p"
+    },
+    {
+      "kind": "punteggiatura",
+      "msg": "La virgola unisce due frasi principali autonome senza congiunzione. Scrivere «Ich sage es sofort der Ärztin. Sie entscheidet über ein Schmerzmittel.» oppure usare un punto e virgola.",
+      "path": "neutral.lessons[0].dialogue.lines[6].it"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "«Il dolore si dice al plurale» è una regola assoluta falsa: la stessa lezione usa correttamente «der Schmerz» al singolare. Precisare che per riferire la presenza di dolore si usa comunemente «Schmerzen» al plurale.",
+      "path": "merged.lessons[0].exercises[6].why"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In «angefangen» le parti «an» e «ge» non si pronunciano staccate come parole separate. Indicare invece la pronuncia continua, con accento su «an», e conservare la spiegazione sul suono [ŋ].",
+      "path": "merged.lessons[1].exercises[10].why"
+    },
+    {
+      "kind": "spiegazione",
+      "msg": "Il Präteritum non è obbligatorio dopo «als»: è possibile anche il Perfekt, per esempio «Als ich ins Zimmer gekommen bin». Formulare la spiegazione come scelta del tempo usata in questo racconto.",
+      "path": "merged.lessons[1].exercises[3].why"
+    },
+    {
+      "kind": "lessico",
+      "msg": "L'affermazione che «die Ambulanz» significhi soltanto ambulatorio è troppo categorica: il termine può indicare anche un pronto soccorso o un servizio ospedaliero, a seconda del contesto. Distinguere «Ambulanz» da «Rettungswagen» come veicolo e spiegare che il significato dipende dal contesto.",
+      "path": "merged.lessons[2].theory[3].trap"
+    },
+    {
+      "kind": "lessico",
+      "msg": "«Fallen» non indica soltanto la caduta di un oggetto: può riferirsi anche a una persona. Presentare «hinfallen» e «stürzen» come alternative comuni per una persona, senza escludere «fallen».",
+      "path": "merged.lessons[3].theory[3].trap"
+    },
+    {
+      "kind": "chiave di risposta",
+      "msg": "Il cloze non fornisce un contesto che imponga «lag»: sono grammaticalmente e semanticamente possibili anche «saß», «stand» e «war» auf dem Boden. Aggiungere un'indicazione sul verbo o accettare le alternative appropriate.",
+      "path": "merged.test.exercises[6]"
+    },
+    {
+      "kind": "ambiguità",
+      "msg": "«Wenn ich gestern ins Zimmer kam, war sie wach» può descrivere eventi ripetuti ieri, quindi non è necessariamente scorretta. Per rendere il distrattore univoco, aggiungere un riferimento esplicito a un singolo evento, per esempio «Wenn ich gestern einmal ins Zimmer kam ...», riformulando la frase in modo naturale, oppure scegliere un errore inequivocabile.",
+      "path": "merged.test.exercises[5].opts[4]"
+    }
+  ],
+  "lang": "it",
+  "unit": "pfl-u04",
+  "verdict": "fail"
+}
