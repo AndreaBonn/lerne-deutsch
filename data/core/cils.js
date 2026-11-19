@@ -36,6 +36,26 @@ window.CILS_FORMATO = {
     { id: "orale", modulo: "Sprechen", minuti: 15, teile: 3, punteggio: false }
   ]
 };
+Object.defineProperty(window.CILS_FORMATO, "punteggio", { value: "perModulo" });
+Object.defineProperty(window.CILS_FORMATO, "nome", { value: "Goethe-Zertifikat B1" });
+window.EXAM_FORMATS = {
+  "goethe-b1": window.CILS_FORMATO,
+  "telc-pflege": {
+    official: false, nome: "telc Deutsch B1·B2 Pflege", punteggio: "fasceRicettive",
+    fasce: [
+      { min: 0, max: 26, etichetta: "unter B1" },
+      { min: 27, max: 42, etichetta: "B1" },
+      { min: 43, max: 59, etichetta: "B2" }
+    ],
+    moduli: [
+      { id: "ascolto", modulo: "Hören", minuti: 25, teile: 4, punteggio: true, items: [4, 10, 6, 3] },
+      { id: "lettura", modulo: "Lesen", minuti: 60, teile: 4, punteggio: true, items: [4, 5, 6, 3] },
+      { id: "sprachbausteine", modulo: "Sprachbausteine", minuti: 60, tempoCondiviso: "lettura", teile: 2, punteggio: true, items: [8, 10] },
+      { id: "scritta", modulo: "Schreiben", minuti: 30, teile: 1, punteggio: false },
+      { id: "orale", modulo: "Sprechen", minuti: 16, preparazione: 20, teile: 3, punteggio: false }
+    ]
+  }
+};
 window.CILS = [
   {
     id: "sim-1",

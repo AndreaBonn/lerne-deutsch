@@ -211,10 +211,10 @@
    * their own recording, so it is not how they wrote and not how they spoke.
    * Commenting on a comma in it would be commenting on the typing.
    */
-  function esameSystem(lang, sezione, cefr) {
+  function esameSystem(lang, sezione, cefr, formato) {
     var mowione = sezione === "orale";
     var kto = "a candidate at level " + (cefr || "B1") + " of the CEFR practising for a " +
-      "German exam in the style of Goethe-Zertifikat B1 (unofficial)";
+      "German exam in the style of " + ((formato && formato.nome) || "Goethe-Zertifikat B1") + " (unofficial)";
 
     return [
       mowione
@@ -263,10 +263,10 @@
    * @param {string} testo    what they produced
    * @param {string} [cefr]
    */
-  function esame(lang, sezione, traccia, testo, cefr) {
+  function esame(lang, sezione, traccia, testo, cefr, formato) {
     var tr = traccia || {};
     return {
-      system: esameSystem(lang, sezione, cefr),
+      system: esameSystem(lang, sezione, cefr, formato),
       user: [
         "<task>" + String(tr.consegna || tr.it || "") + "</task>",
         Array.isArray(tr.punti) && tr.punti.length

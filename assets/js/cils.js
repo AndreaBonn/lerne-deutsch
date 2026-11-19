@@ -40,7 +40,9 @@
       .map(function (m) { return m.id; });
   } });
 
-  function formato() { return global.CILS_FORMATO; }
+  function formato(simulation) {
+    return global.EXAM_FORMATS[(simulation && simulation.formato) || "goethe-b1"];
+  }
 
   function sectionProblems(section, descriptor) {
     var problems = [];
@@ -56,15 +58,20 @@
     if (descriptor.punteggio && tasks.some(function (task) {
       return !(typeof task.puntiPerItem === "number" && task.puntiPerItem > 0);
     })) problems.push("puntiPerItem: " + id);
+    if (descriptor.items) descriptor.items.forEach(function (count, index) {
+      if (quantiItem(tasks[index]) !== count) problems.push("items: " + id + "-" + (index + 1));
+    });
     return problems;
   }
 
   function conforme(simulation) {
     var problems = [];
     var sections = (simulation && simulation.sezioni) || [];
-    var ids = Cils.ABILITA;
+    var selected = formato(simulation);
+    if (!selected) return ["formato: unknown"];
+    var ids = selected.moduli.map(function (m) { return m.id; });
     if (!simulation || simulation.official !== false) problems.push("official: false required");
-    formato().moduli.forEach(function (descriptor, index) {
+    selected.moduli.forEach(function (descriptor, index) {
       var section = sezione(simulation, descriptor.id);
       if (!section) { problems.push("missing: " + descriptor.id); return; }
       if (sections[index] !== section) problems.push("order: " + descriptor.id);
@@ -152,8 +159,10 @@
    * @param {object} punti weighted tallies keyed by measured module id
    * @returns {{abilita:object, verdetto:string, contate:Array, nonContate:Array}}
    */
-  function esito(punti) {
+  function esito(punti, selected) {
     punti = punti || {};
+    selected = selected || formato();
+    if (selected.punteggio === "fasceRicettive") return esitoFasce(punti, selected);
     var out = { abilita: {}, contate: [], nonContate: [], verdetto: "indeterminato" };
     var sotto = false;
 
@@ -173,7 +182,7 @@
         return;
       }
       var percentage = tally.punti / tally.max;
-      var ok = percentage >= formato().soglia;
+      var ok = percentage >= selected.soglia;
       out.abilita[a] = { misurata: true, punti: tally.punti, max: tally.max,
         percentuale: percentage, sopraSoglia: ok };
       out.contate.push(a);
@@ -184,6 +193,16 @@
        no, no number of skills above it is enough to say yes. */
     out.verdetto = sotto ? "sotto-soglia" : "indeterminato";
     return out;
+  }
+
+  function esitoFasce(punti, selected) {
+    var total = 0;
+    selected.moduli.forEach(function (module) {
+      if (module.punteggio && punti[module.id]) total += punti[module.id].punti || 0;
+    });
+    var band = selected.fasce.filter(function (f) { return total >= f.min && total <= f.max; })[0];
+    return { punti: total, fascia: band || null,
+      verdetto: band && band.min === 0 ? "sotto-soglia" : "indeterminato" };
   }
 
   /**

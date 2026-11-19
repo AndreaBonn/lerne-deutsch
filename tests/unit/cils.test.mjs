@@ -319,3 +319,48 @@ test("each schreiben task uses its own inclusive word bounds and detected elemen
     assert.equal(result.punti, undefined);
   }
 });
+
+test("telc format declares timing, item counts and receptive bands", () => {
+  const C = silnik();
+  const f = C.formato({ formato: "telc-pflege" });
+  assert.equal(C.formato().punteggio, "perModulo");
+  assert.equal(f.nome, "telc Deutsch B1·B2 Pflege");
+  assert.equal(f.punteggio, "fasceRicettive");
+  assert.deepEqual(JSON.parse(JSON.stringify(f.moduli.map(m => [m.id, m.minuti, m.teile, m.items]))), [
+    ["ascolto", 25, 4, [4, 10, 6, 3]], ["lettura", 60, 4, [4, 5, 6, 3]],
+    ["sprachbausteine", 60, 2, [8, 10]], ["scritta", 30, 1, null], ["orale", 16, 3, null]
+  ]);
+  assert.equal(f.moduli[2].tempoCondiviso, "lettura");
+  assert.equal(f.moduli[4].preparazione, 20);
+  assert.deepEqual(JSON.parse(JSON.stringify(f.fasce)), [
+    { min: 0, max: 26, etichetta: "unter B1" }, { min: 27, max: 42, etichetta: "B1" },
+    { min: 43, max: 59, etichetta: "B2" }
+  ]);
+});
+
+function telcFixture(C) {
+  const f = C.formato({ formato: "telc-pflege" });
+  return { official: false, formato: "telc-pflege", sezioni: f.moduli.map(m => ({
+    id: m.id, minuti: m.minuti,
+    prove: m.punteggio ? m.items.map(n => ({ puntiPerItem: 1, items: Array(n).fill({ a: 0 }) })) : Array.from({ length: m.teile }, () => ({}))
+  })) };
+}
+
+test("telc conformance checks each fixed item count", () => {
+  const C = silnik();
+  const sim = telcFixture(C);
+  assert.deepEqual(Array.from(C.conforme(sim)), []);
+  sim.sezioni[2].prove[0].items.pop();
+  assert.ok(C.conforme(sim).includes("items: sprachbausteine-1"));
+});
+
+test("telc receptive totals select bands without granting a pass", () => {
+  const C = silnik();
+  const f = C.formato({ formato: "telc-pflege" });
+  for (const [n, band, verdict] of [[26, "unter B1", "sotto-soglia"], [27, "B1", "indeterminato"], [42, "B1", "indeterminato"], [43, "B2", "indeterminato"], [59, "B2", "indeterminato"]]) {
+    const e = C.esito({ ascolto: { punti: 10, max: 23 }, lettura: { punti: n - 10, max: 18 }, sprachbausteine: { punti: 0, max: 18 } }, f);
+    assert.equal(e.punti, n);
+    assert.equal(e.fascia.etichetta, band);
+    assert.equal(e.verdetto, verdict);
+  }
+});

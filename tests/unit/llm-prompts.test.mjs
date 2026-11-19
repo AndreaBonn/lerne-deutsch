@@ -336,3 +336,9 @@ describe("what reaches the model in edge cases", () => {
     assert.match(p.system, /a friendly German speaker/);
   });
 });
+
+test("exam prompt names the selected telc format", () => {
+  const p = prompts().esame("it", "scritta", {}, "Testo", "B1", { nome: "telc Deutsch B1·B2 Pflege" });
+  assert.match(p.system, /telc Deutsch B1·B2 Pflege \(unofficial\)/);
+  assert.doesNotMatch(p.system, /Goethe/);
+});
