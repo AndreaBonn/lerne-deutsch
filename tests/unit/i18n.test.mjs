@@ -146,3 +146,24 @@ test("the shell dictionaries render Italian by default and switch without reload
   sandbox.I18n.set("it");
   assert.equal(sandbox.I18n.t("nav.settings"), "Impostazioni");
 });
+
+describe("edge values and the remaining attributes", () => {
+  test("a variable equal to zero is written as 0, not left as {n}", () => {
+    const I18n = zNapisami({ left: "{n} lessons left" });
+    assert.equal(I18n.t("left", { n: 0 }), "0 lessons left");
+    assert.equal(I18n.t("left", { n: 3 }), "3 lessons left");
+  });
+
+  test("apply sets aria-label and content from their data attributes", () => {
+    const I18n = zNapisami({ close: "Zamknij", desc: "Kurs niemieckiego" });
+    const attrs = { "data-i18n-label": "close", "data-i18n-content": "desc" };
+    const el = {
+      getAttribute: (name) => attrs[name] ?? null,
+      setAttribute: (name, value) => { attrs[name] = value; }
+    };
+    const elements = { "[data-i18n-label]": [el], "[data-i18n-content]": [el] };
+    I18n.apply({ querySelectorAll: (selector) => elements[selector] || [] });
+    assert.equal(attrs["aria-label"], "Zamknij");
+    assert.equal(attrs.content, "Kurs niemieckiego");
+  });
+});
