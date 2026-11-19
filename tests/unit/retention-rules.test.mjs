@@ -121,6 +121,12 @@ describe("retention: the number on the badge", () => {
     assert.equal(R.odznaka([talia(TERAZ + R.HORYZONT_MS + 1)], TERAZ), 0);
   });
 
+  test("the horizon is one day: 23 hours ahead counts, 25 hours does not", () => {
+    const R = reguly();
+    assert.equal(R.odznaka([talia(TERAZ + 23 * GODZINA)], TERAZ), 1);
+    assert.equal(R.odznaka([talia(TERAZ + 25 * GODZINA)], TERAZ), 0);
+  });
+
   test("an empty deck gives zero, not something falsy of another kind", () => {
     assert.equal(reguly().odznaka([{}], TERAZ), 0);
   });
