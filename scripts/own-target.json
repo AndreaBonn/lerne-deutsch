@@ -3,8 +3,8 @@
     "PFL": {
       "cefrLabel": "B1-B2",
       "human": true,
-      "units": 3,
-      "lessons": 15
+      "units": 5,
+      "lessons": 25
     }
   },
   "units": {
@@ -285,6 +285,196 @@
             "multi": 1,
             "cloze": 1,
             "order": 1,
+            "gender": 1,
+            "listen": 1,
+            "speak": 1
+          },
+          "vocab": 0,
+          "dialogueLines": 0
+        }
+      }
+    },
+    "pfl-u04": {
+      "level": "PFL",
+      "lessonCount": 5,
+      "lessons": {
+        "pfl-u04-l1": {
+          "exercises": 11,
+          "exerciseTypes": {
+            "mcq": 1,
+            "fill": 1,
+            "gender": 1,
+            "match": 1,
+            "order": 1,
+            "cloze": 1,
+            "trans": 1,
+            "multi": 1,
+            "dialogue": 1,
+            "listen": 1,
+            "speak": 1
+          },
+          "vocab": 12,
+          "dialogueLines": 8
+        },
+        "pfl-u04-l2": {
+          "exercises": 11,
+          "exerciseTypes": {
+            "match": 1,
+            "mcq": 1,
+            "fill": 1,
+            "conj": 1,
+            "cloze": 1,
+            "order": 1,
+            "multi": 1,
+            "gender": 1,
+            "trans": 1,
+            "listen": 1,
+            "speak": 1
+          },
+          "vocab": 12,
+          "dialogueLines": 8
+        },
+        "pfl-u04-l3": {
+          "exercises": 11,
+          "exerciseTypes": {
+            "conj": 1,
+            "mcq": 1,
+            "fill": 1,
+            "order": 1,
+            "cloze": 1,
+            "match": 1,
+            "multi": 1,
+            "trans": 1,
+            "dialogue": 1,
+            "listen": 1,
+            "speak": 1
+          },
+          "vocab": 12,
+          "dialogueLines": 8
+        },
+        "pfl-u04-l4": {
+          "exercises": 11,
+          "exerciseTypes": {
+            "conj": 1,
+            "mcq": 1,
+            "fill": 1,
+            "match": 1,
+            "cloze": 1,
+            "order": 1,
+            "multi": 1,
+            "gender": 1,
+            "trans": 1,
+            "listen": 1,
+            "speak": 1
+          },
+          "vocab": 12,
+          "dialogueLines": 8
+        },
+        "pfl-u04-test": {
+          "exercises": 11,
+          "exerciseTypes": {
+            "mcq": 1,
+            "fill": 2,
+            "conj": 1,
+            "match": 1,
+            "multi": 1,
+            "cloze": 1,
+            "order": 1,
+            "gender": 1,
+            "listen": 1,
+            "speak": 1
+          },
+          "vocab": 0,
+          "dialogueLines": 0
+        }
+      }
+    },
+    "pfl-u05": {
+      "level": "PFL",
+      "lessonCount": 5,
+      "lessons": {
+        "pfl-u05-l1": {
+          "exercises": 11,
+          "exerciseTypes": {
+            "mcq": 1,
+            "match": 1,
+            "gender": 1,
+            "fill": 1,
+            "multi": 1,
+            "cloze": 1,
+            "order": 1,
+            "trans": 1,
+            "dialogue": 1,
+            "listen": 1,
+            "speak": 1
+          },
+          "vocab": 12,
+          "dialogueLines": 9
+        },
+        "pfl-u05-l2": {
+          "exercises": 11,
+          "exerciseTypes": {
+            "mcq": 1,
+            "conj": 1,
+            "fill": 1,
+            "cloze": 1,
+            "match": 1,
+            "multi": 1,
+            "order": 1,
+            "trans": 1,
+            "dialogue": 1,
+            "listen": 1,
+            "speak": 1
+          },
+          "vocab": 12,
+          "dialogueLines": 10
+        },
+        "pfl-u05-l3": {
+          "exercises": 11,
+          "exerciseTypes": {
+            "truefalse": 2,
+            "mcq": 1,
+            "fill": 1,
+            "cloze": 1,
+            "order": 1,
+            "match": 1,
+            "multi": 1,
+            "trans": 1,
+            "listen": 1,
+            "speak": 1
+          },
+          "vocab": 12,
+          "dialogueLines": 8
+        },
+        "pfl-u05-l4": {
+          "exercises": 12,
+          "exerciseTypes": {
+            "mcq": 1,
+            "conj": 1,
+            "fill": 1,
+            "cloze": 1,
+            "order": 1,
+            "match": 1,
+            "gender": 1,
+            "multi": 1,
+            "trans": 1,
+            "dialogue": 1,
+            "listen": 1,
+            "speak": 1
+          },
+          "vocab": 12,
+          "dialogueLines": 8
+        },
+        "pfl-u05-test": {
+          "exercises": 11,
+          "exerciseTypes": {
+            "mcq": 1,
+            "fill": 2,
+            "match": 1,
+            "multi": 1,
+            "cloze": 1,
+            "order": 1,
+            "truefalse": 1,
             "gender": 1,
             "listen": 1,
             "speak": 1
