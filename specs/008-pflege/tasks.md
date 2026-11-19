@@ -26,11 +26,11 @@ Le tabelle sotto restano il dettaglio di ogni voce. Già fatte prima della notte
 - [x] T1.20 click-through 375/1280 di PFL, a11y-gate, contrast.spec
 - [x] T1.11 CLAUDE.md: pseudo-livello, sequential, notice, own-target, REVISORE
 - [x] T1.21 ri-stima fasi 2-3 in plan.md col costo misurato di pfl-u01 | dip: T1.18
-- [ ] T2.2.a pfl-u02: core + overlay it, own-target, curriculum pointer | dip: T1.21
-- [ ] T2.2.c pfl-u02: overlay en es fr pl | dip: T2.2.a
+- [x] T2.2.a pfl-u02: core + overlay it, own-target, curriculum pointer | dip: T1.21
+- [x] T2.2.c pfl-u02: overlay en es fr pl | dip: T2.2.a
 - [ ] T2.2.d pfl-u02: audio, registrazione in dataFiles, gate, review_lot 5 lingue, human in attesa | dip: T2.2.c
-- [ ] T2.3.a pfl-u03: core + overlay it, own-target, curriculum pointer | dip: T1.21
-- [ ] T2.3.c pfl-u03: overlay en es fr pl | dip: T2.3.a
+- [x] T2.3.a pfl-u03: core + overlay it, own-target, curriculum pointer | dip: T1.21
+- [x] T2.3.c pfl-u03: overlay en es fr pl | dip: T2.3.a
 - [ ] T2.3.d pfl-u03: audio, registrazione in dataFiles, gate, review_lot 5 lingue, human in attesa | dip: T2.3.c
 - [ ] T2.4.a pfl-u04: core + overlay it, own-target, curriculum pointer | dip: T1.21
 - [ ] T2.4.c pfl-u04: overlay en es fr pl | dip: T2.4.a
