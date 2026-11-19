@@ -189,11 +189,21 @@ test("a digit picks an answer in the visible exercise, not in a hidden one", asy
 });
 
 test("a digit does nothing while the student types in a text field", async ({ page }) => {
-  await page.goto("/index.html#/cerca");
-  await page.waitForSelector("#searchQ");
-  await page.locator("#searchQ").click();
-  await page.locator("#searchQ").type("1");
-  await expect(page.locator("#searchQ"), "the digit must go into the field, not pick an option").toHaveValue("1");
+  await page.goto("/index.html");
+  await page.waitForFunction(() => window.Ex && window.Keys);
+  /* An option on the page as well, otherwise there is nothing the digit
+     could wrongly pick and the test passes with the guard gone. */
+  await page.evaluate(() => {
+    const host = document.createElement("div");
+    document.getElementById("main").appendChild(host);
+    const b = window.Ex.build({ t: "mcq", q: "Pytanie", opts: ["pierwsza", "druga"], a: 0 }, 0, "klawisze");
+    host.innerHTML = b.html + '<input id="pole" type="text">';
+    b.wire(host.querySelector(".exq"), () => {});
+  });
+  await page.locator("#pole").click();
+  await page.locator("#pole").type("1");
+  await expect(page.locator("#pole"), "the digit must go into the field").toHaveValue("1");
+  await expect(page.locator(".exq .opts .opt").first(), "and must not pick an option").not.toHaveClass(/is-sel/);
 });
 
 /* The bar floats above the content, so it can cover what is under the field
