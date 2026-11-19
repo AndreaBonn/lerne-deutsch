@@ -105,6 +105,11 @@ export function testBadge({ passed, failed }) {
   };
 }
 
+/** The two suites as one count: they answer for two halves of one engine. */
+export function combineSuites(unit, dom) {
+  return { passed: unit.passed + dom.passed, failed: unit.failed + dom.failed };
+}
+
 /** The same, for coverage. */
 export function coverageBadge(percent) {
   const { colour } = COVERAGE_COLOURS.find((row) => percent >= row.min);
@@ -131,10 +136,7 @@ function main(argv) {
   const out = join(ROOT, outIdx >= 0 && argv[outIdx + 1] ? argv[outIdx + 1] : "badges");
   mkdirSync(out, { recursive: true });
 
-  const tests = testBadge({
-    passed: unit.passed + dom.passed,
-    failed: unit.failed + dom.failed
-  });
+  const tests = testBadge(combineSuites(unit, dom));
   const cov = coverageBadge(coverage);
 
   writeFileSync(join(out, "test-badge.json"), JSON.stringify(tests) + "\n");

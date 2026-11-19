@@ -10,7 +10,7 @@
    ============================================================ */
 import { test, describe } from "node:test";
 import assert from "node:assert/strict";
-import { parseNodeTest, parsePlaywright, parseCoverage, testBadge, coverageBadge } from "../../scripts/badges.mjs";
+import { parseNodeTest, parsePlaywright, parseCoverage, testBadge, coverageBadge, combineSuites } from "../../scripts/badges.mjs";
 
 /* The shape `npm test` really writes, down to the indented line carrying a
    test name that looks like the summary. */
@@ -100,5 +100,19 @@ describe("kształt odznak", () => {
 
   test("the coverage message carries the percent sign", () => {
     assert.equal(coverageBadge(99.3).message, "99.3%");
+  });
+});
+
+describe("combineSuites", () => {
+  /* The badge counts the unit and the DOM suite together (CLAUDE.md, badges):
+     a failure in either one has to turn the badge red. */
+  test("adds passes and failures of both suites", () => {
+    assert.deepEqual(combineSuites({ passed: 1955, failed: 0 }, { passed: 430, failed: 2 }), { passed: 2385, failed: 2 });
+  });
+
+  test("a failure only in the DOM suite makes the combined badge red", () => {
+    const badge = testBadge(combineSuites({ passed: 10, failed: 0 }, { passed: 4, failed: 1 }));
+    assert.equal(badge.color, "red");
+    assert.equal(badge.message, "14/15 passed");
   });
 });
