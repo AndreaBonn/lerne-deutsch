@@ -129,9 +129,12 @@ test("a closed session is recorded under today's date", async ({ page }) => {
   expect(zapis.s.date, "the session is stored under today's date").toBe(zapis.dzis);
   expect(zapis.s.total, "with the number of tasks it had").toBeGreaterThan(0);
 
-  /* save() is debounced by 180 ms: without waiting, the reload would
-     overtake the save and the test would measure a race, not behaviour. */
-  await page.waitForTimeout(300);
+  /* save() is debounced by 180 ms: the reload waits for the session to be
+     in storage, otherwise it would overtake the save and measure a race. */
+  await expect.poll(() => page.evaluate(d => {
+    const zapis = JSON.parse(localStorage.getItem(window.Store.KEY) || "{}");
+    return (zapis.session || {}).date === d;
+  }, zapis.dzis)).toBe(true);
   await page.reload();
   await page.waitForSelector(".list-row");
   await expect(page.locator(".today-done"), "the notice about a closed session").toBeVisible();
