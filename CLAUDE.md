@@ -265,6 +265,28 @@ nie tłumaczy: dla Polaka chodzi o rodzaj nijaki i deklinację, dla Amerykanina 
 nie ma rodzaju gramatycznego w ogóle. Zawartość `p`, `trap`, `contrast`, `tip` jest wstawiana jako
 HTML (celowo, dla wyróżnień) — nie wolno tam wstawiać treści pochodzącej od użytkownika.
 
+### Pseudopoziom PFL: niemiecki dla pielęgniarek (specs/008-pflege)
+
+`PFL` („Deutsch für die Pflege") jest rejestrowany jak poziom CEFR, ale nim nie jest: to ścieżka
+równoległa dla personelu pielęgniarskiego, od B1 ogólnego. Trzy pola `registerLevel` go odróżniają:
+
+- **`sequential: false`** — poziom nie wchodzi do testu poziomującego ani do łańcucha „następna
+  lekcja" (`placement.js`, `views-placement.js`, `core.js`, `app.js`, `views-path.js`). Poziom bez
+  tego pola jest sekwencyjny, więc A1-C2 zachowują się jak dawniej.
+- **`notice`** — klucz napisu pokazywany w bloku `role="note"` na ścieżce poziomu i w nagłówku
+  każdej jego lekcji. Dla PFL mówi, że treść jest wygenerowana, jeszcze nie przejrzana przez
+  personel medyczny i nie jest poradą medyczną. Po recenzji pielęgniarki (faza 7) zdanie o braku
+  recenzji znika, reszta zostaje.
+- Lekcje PFL mają w `cefr` **prawdziwy** poziom (`B1`/`B2`), nigdy `PFL`: pole trafia do promptów
+  LLM („level X of the CEFR"). Poziom lekcji czyta się z prefiksu id przez `Registry.levelCodeOf`
+  (`pfl-u01-l1` → `PFL`), a nie wyrażeniem `[a-z]\d`, które znało tylko kody CEFR.
+
+Jednostki PFL nie mają odpowiednika w `versione-statica`, więc ich cel liczbowy leży w ręcznie
+pisanym `scripts/own-target.json` (`porting-target.json` jest regenerowany i nadpisałby wpis).
+Etap `human` dla poziomu z `human: true` wymaga wierszy `ESITO:` i `REVISORE:`; `REVISORE: in attesa`
+jest ważne do recenzji na końcu przebiegu. Nic z PFL nie idzie do upstreamu: tamten kurs jest
+kursem włoskiego i tych części nie potrzebuje (decyzja użytkownika, 2026-11-19).
+
 ### Pola `it*` niosą język uczony (D4)
 
 Kurs powstał jako rozwidlenie kursu włoskiego i **nazwy wewnętrzne nie zostały zmienione**:
