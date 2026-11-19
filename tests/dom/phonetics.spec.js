@@ -81,31 +81,6 @@ test("both options of the pair are shown and only one word is played", async ({ 
   expect(new Set(opcje).size, "two different words").toBe(2);
 });
 
-test("a mistake in discrimination reaches the mistake notebook", async ({ page }) => {
-  await suoni(page);
-  await page.locator('.js-set[data-set="ph-lang-kurz"]').click();
-  await expect(page.locator(".exq")).toBeVisible();
-
-  /* The exercise has something to choose from. Which option was NOT played
-     cannot be read from the DOM — so below we click them in turn until one
-     turns out to be wrong. */
-  const zla = await page.evaluate(() => {
-    const opts = [...document.querySelectorAll(".exq .opt")];
-    return opts.length ? 0 : -1;
-  });
-  expect(zla).toBe(0);
-
-  await page.locator(".exq .js-play").click();
-  const przed = await page.evaluate(() => Object.keys(window.Core.state.errors).length);
-  for (const o of await page.locator(".exq .opt").all()) {
-    await o.click();
-    await page.locator(".exq .js-check").click();
-    if (await page.locator(".js-next").isVisible()) break;
-  }
-  const po = await page.evaluate(() => Object.keys(window.Core.state.errors).length);
-  expect(po >= przed, "a wrong answer creates a card, a correct one does not").toBe(true);
-});
-
 test("the sound strings exist in five languages", async ({ page }) => {
   await suoni(page);
   const braki = await page.evaluate(async () => {
@@ -124,10 +99,9 @@ test("the sound strings exist in five languages", async ({ page }) => {
   expect(braki, JSON.stringify(braki)).toEqual({});
 });
 
-/* The test above clicks options until one is wrong and accepts "no change"
-   too. Here the played word is read from the synthesiser call, so the wrong
-   option is known: a mistake adds exactly one notebook card, a right answer
-   adds none. */
+/* Which option was played cannot be read from the DOM, so the played word is
+   read from the synthesiser call: the wrong option is then known, and a
+   mistake adds exactly one notebook card while a right answer adds none. */
 test("a wrong discrimination adds exactly one notebook card, a right one adds none", async ({ page }) => {
   await suoni(page);
   await page.evaluate(() => {
