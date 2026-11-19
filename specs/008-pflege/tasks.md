@@ -51,7 +51,7 @@ Le tabelle sotto restano il dettaglio di ogni voce. Già fatte prima della notte
 - [ ] T3.9.c pfl-u09: overlay en es fr pl | dip: T3.9.a
 - [ ] T3.9.d pfl-u09: audio, registrazione in dataFiles, gate, review_lot 5 lingue, human in attesa | dip: T3.9.c
 - [ ] T4.1 2 conversazioni ramificate Pflege, 5 overlay, audio | dip: T1.21
-- [ ] T4.2 3 scenari chat Pflege | dip: T1.21
+- [x] T4.2 3 scenari chat Pflege | dip: T1.21
 - [ ] T4.3 library-pfl.js 3 testi + F1 (library-pfl in --all) | dip: T1.21
 - [ ] T4.4 human in attesa dei moduli | dip: T4.1,T4.2,T4.3
 - [x] T5.1 telc-formato.md con fonte
