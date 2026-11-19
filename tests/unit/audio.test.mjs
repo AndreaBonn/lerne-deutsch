@@ -173,6 +173,23 @@ describe("interruption", () => {
 
     assert.equal(domkniete, 0, "another screen's onend would advance the lesson by one step");
   });
+
+  test("a load failure that arrives after stop() does not read the sentence on the next screen", async () => {
+    const zatrzymany = silnik();
+    zatrzymany.sandbox.Audio2.speak(Z_KURSU);
+    const gracz = zatrzymany.audio.odtwarzacze[0];
+    zatrzymany.sandbox.Audio2.stop();
+    gracz.onerror();
+    await mikrozadania();
+    assert.equal(zatrzymany.audio.wypowiedzi.length, 0, "the synthesiser spoke for a screen that is gone");
+
+    /* Paired: without stop() the same failure falls back to the synthesiser. */
+    const zywy = silnik();
+    zywy.sandbox.Audio2.speak(Z_KURSU);
+    zywy.audio.odtwarzacze[0].onerror();
+    await mikrozadania();
+    assert.equal(zywy.audio.wypowiedzi.length, 1);
+  });
 });
 
 describe("the system voice", () => {
