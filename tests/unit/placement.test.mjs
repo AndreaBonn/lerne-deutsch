@@ -164,6 +164,34 @@ describe("the task pool", () => {
     assert.deepEqual(JSON.stringify(typy), JSON.stringify(["fill", "mcq"]));
   });
 
+  test("of the fourteen exercise types it keeps exactly the seven quick ones", () => {
+    /* placement.js: no microphone, no long dialogues, decidable in a dozen
+       seconds - mcq, truefalse, fill, trans, cloze, gender, conj. */
+    const box = silnik();
+    const wszystkie = ["mcq", "truefalse", "multi", "match", "gender", "minpair", "fill", "trans",
+      "cloze", "order", "conj", "listen", "speak", "dialogue"];
+    box.Core.registry.byCode.B1.units = [{
+      id: "u", lessons: [], test: { id: "b1-test", exercises: wszystkie.map((t) => ({ t })) }
+    }];
+    const typy = box.sandbox.Placement.pulaDla("B1", "s").map((x) => x.ex.t).sort();
+    assert.deepEqual(JSON.stringify(typy),
+      JSON.stringify(["cloze", "conj", "fill", "gender", "mcq", "trans", "truefalse"]));
+  });
+
+  test("the order is shuffled by the seed: the same seed repeats it, another seed changes it", () => {
+    const box = silnik();
+    box.Core.registry.byCode.B1.units = [{
+      id: "u", lessons: [],
+      test: { id: "b1-test", exercises: Array.from({ length: 12 }, (_, i) => ({ t: "mcq", a: i })) }
+    }];
+    const P = box.sandbox.Placement;
+    const kolejnosc = (seed) => P.pulaDla("B1", seed).map((x) => x.index).join(",");
+    const naturalna = Array.from({ length: 12 }, (_, i) => i).join(",");
+    assert.equal(kolejnosc("s1"), kolejnosc("s1"));
+    assert.notEqual(kolejnosc("s1"), naturalna, "the pool is not left in the authored order");
+    assert.notEqual(kolejnosc("s1"), kolejnosc("s2"));
+  });
+
   test("an unknown level gives an empty pool, not an exception", () => {
     assert.equal(silnik().sandbox.Placement.pulaDla("Z9", "s").length, 0);
   });
