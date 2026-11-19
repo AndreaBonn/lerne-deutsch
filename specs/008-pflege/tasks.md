@@ -34,10 +34,10 @@ Le tabelle sotto restano il dettaglio di ogni voce. Già fatte prima della notte
 - [x] T2.3.d pfl-u03: audio, registrazione in dataFiles, gate, review_lot 5 lingue, human in attesa | dip: T2.3.c
 - [x] T2.4.a pfl-u04: core + overlay it, own-target, curriculum pointer | dip: T1.21
 - [x] T2.4.c pfl-u04: overlay en es fr pl | dip: T2.4.a
-- [ ] T2.4.d pfl-u04: audio, registrazione in dataFiles, gate, review_lot 5 lingue, human in attesa | dip: T2.4.c
+- [x] T2.4.d pfl-u04: audio, registrazione in dataFiles, gate, review_lot 5 lingue, human in attesa | dip: T2.4.c
 - [x] T2.5.a pfl-u05: core + overlay it, own-target, curriculum pointer | dip: T1.21
 - [x] T2.5.c pfl-u05: overlay en es fr pl | dip: T2.5.a
-- [ ] T2.5.d pfl-u05: audio, registrazione in dataFiles, gate, review_lot 5 lingue, human in attesa | dip: T2.5.c
+- [x] T2.5.d pfl-u05: audio, registrazione in dataFiles, gate, review_lot 5 lingue, human in attesa | dip: T2.5.c
 - [x] T3.6.a pfl-u06: core + overlay it, own-target, curriculum pointer | dip: T1.21
 - [x] T3.6.c pfl-u06: overlay en es fr pl | dip: T3.6.a
 - [ ] T3.6.d pfl-u06: audio, registrazione in dataFiles, gate, review_lot 5 lingue, human in attesa | dip: T3.6.c
