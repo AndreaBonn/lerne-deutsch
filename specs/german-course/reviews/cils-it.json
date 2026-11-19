@@ -1,7 +1,23 @@
 {
-  "bundleHash": "aef9d674236553b02c8770a1934ddfbfd581febe4748eb0ac8cbfdf6b19fc7ae",
-  "findings": [],
+  "bundleHash": "2406336a5ce8007b2a842dbd7978b959a6930c480fe82c0b09c1d9e5b29d3f7b",
+  "findings": [
+    {
+      "kind": "ambiguità della risposta",
+      "msg": "La frase con «denn» è grammaticalmente corretta e offre una spiegazione plausibile, quindi la soluzione prevista «weil» non è univoca. Riformulare il contesto o sostituire «denn» tra le opzioni.",
+      "path": "CILS[pfl-sim-1].sezioni[sprachbausteine].prove[0].items[0]"
+    },
+    {
+      "kind": "informazione non supportata",
+      "msg": "Il dialogo non identifica la persona che parla con Herr Kaya come medica. Sostituire «die Ärztin» con «die Kollegin» o identificarne esplicitamente il ruolo nel dialogo.",
+      "path": "CILS[pfl-sim-1].sezioni[ascolto].prove[1].items[5].q"
+    },
+    {
+      "kind": "formulazione ambigua",
+      "msg": "«Herr Brenner hat seinen Vater» attribuisce senza conferma il cognome del paziente al figlio, il cui nome non viene dato. Usare «Der Sohn hat seinen Vater ...» anche nella domanda sulla visita.",
+      "path": "CILS[pfl-sim-1].sezioni[ascolto].prove[1].items[4].q"
+    }
+  ],
   "lang": "it",
   "unit": "cils",
-  "verdict": "pass"
+  "verdict": "fail"
 }

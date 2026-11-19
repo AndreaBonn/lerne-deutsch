@@ -10,3 +10,8 @@ REVISORE: in attesa
 - Moduli di Schreiben (Anamnesebogen e Biografiebogen): campi verosimili per un reparto tedesco; limiti di parole 100-150 scelti dal kurs (il formato telc non li fissa).
 - Temi di Sprechen (Schichtarbeit, igiene, turno di notte o simili): adatti alla discussione d'esame.
 - Somiglianza con materiali telc: tutto è originale; il secondo giudice è stato interrogato anche su questo (review di data/core/cils.js).
+
+## Secondo giudice (review_lot su data/core/cils.js): esito
+
+- Corretti: la domanda su «Herr Brenner» (era il padre, ora «Der Sohn ...»); la parlante del dialogo con Herr Kaya ora si presenta come Stationsärztin.
+- Respinto: Sprachbausteine T1, lacuna 1, «denn» come alternativa a «weil». Dopo la lacuna il verbo è in fondo («... sie Schmerzen im linken Bein hatte»), quindi «denn», che vuole il verbo in seconda posizione, è sbagliato e «weil» resta univoco.

@@ -2111,7 +2111,7 @@ window.CILS = [
             brani: [
               [
                 {
-                  it: "Guten Morgen, Herr Kaya. Wie war die Nacht bei Frau Ostermann?",
+                  it: "Guten Morgen, Herr Kaya. Ich bin heute die Stationsärztin. Wie war die Nacht bei Frau Ostermann?",
                   sp: "A"
                 },
                 {
@@ -2278,7 +2278,7 @@ window.CILS = [
                 a: 0
               },
               {
-                q: "Herr Brenner hat seinen Vater zu Hause schon öfter so verwirrt erlebt.",
+                q: "Der Sohn hat seinen Vater zu Hause schon öfter so verwirrt erlebt.",
                 opts: [
                   "richtig",
                   "falsch"
