@@ -95,6 +95,16 @@ describe("frequency: the nearest gaps", () => {
     assert.deepEqual(Array.from(haben.formy), ["habe", "hat", "hast"]);
   });
 
+  test("a verb form that is also a word of the course collapses into the infinitive", () => {
+    /* frequency.js, hasloKursu: the infinitive is checked BEFORE the literal
+       form, because multi-word entries put "hat" in the course dictionary as
+       a word of its own; the gap list must still offer "haben", once. */
+    const s = silnik();
+    const lista = [["hat", 80], ["habe", 70]];
+    const hasla = Array.from(s.Frequency.brakujace(lista, { hat: true, haben: true }, {}, 10)).map(b => b.haslo);
+    assert.deepEqual(hasla, ["haben"]);
+  });
+
   test("function words do not make it onto the clickable list", () => {
     const s = silnik();
     const hasla = Array.from(s.Frequency.brakujace(LISTA, { dass: true, haus: true }, {}, 10)).map(b => b.haslo);
