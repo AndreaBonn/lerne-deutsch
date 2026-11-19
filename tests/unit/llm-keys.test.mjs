@@ -205,3 +205,18 @@ function makeBlockedStorage() {
     clear: blocked, key: blocked, get length() { return 0; }
   };
 }
+
+describe("what is read back from a container edited by hand", () => {
+  /* localStorage can hold anything: an extension, an old version, a student
+     with DevTools open. Only providers the course offers, with a key long
+     enough to be one, count as stored keys. */
+  test("an unknown provider name in storage is not returned as a key", () => {
+    const probe = box();
+    const STORE_KEY = probe.sandbox.LlmKeys.STORE_KEY;
+    const b = loadEngine({ files: FILES, seed: { [STORE_KEY]: { mistral: KEY, openai: KEY } } });
+    b.Core.load();
+    const wszystkie = Object.assign({}, b.sandbox.LlmKeys.all());
+    assert.deepEqual(Object.keys(wszystkie), ["openai"]);
+    assert.equal(wszystkie.openai, KEY);
+  });
+});
