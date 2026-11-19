@@ -123,3 +123,42 @@ test("the sound strings exist in five languages", async ({ page }) => {
   });
   expect(braki, JSON.stringify(braki)).toEqual({});
 });
+
+/* The test above clicks options until one is wrong and accepts "no change"
+   too. Here the played word is read from the synthesiser call, so the wrong
+   option is known: a mistake adds exactly one notebook card, a right answer
+   adds none. */
+test("a wrong discrimination adds exactly one notebook card, a right one adds none", async ({ page }) => {
+  await suoni(page);
+  await page.evaluate(() => {
+    window.__slowo = null;
+    const mow = window.Audio2.speak;
+    window.Audio2.speak = function (tekst, opts) { window.__slowo = tekst; return mow.call(this, tekst, opts); };
+  });
+  await page.locator('.js-set[data-set="ph-lang-kurz"]').click();
+  await expect(page.locator(".exq")).toBeVisible();
+
+  const odpowiedz = async (dobrze) => {
+    await page.locator(".exq .js-play").click();
+    await expect.poll(() => page.evaluate(() => window.__slowo)).not.toBeNull();
+    const slowo = await page.evaluate(() => window.__slowo);
+    const opcje = page.locator(".exq .opt");
+    const n = await opcje.count();
+    for (let i = 0; i < n; i++) {
+      const trafiona = (await opcje.nth(i).innerText()).includes(slowo);
+      if (trafiona === dobrze) { await opcje.nth(i).click(); break; }
+    }
+    await page.locator(".exq .js-check").click();
+    await expect(page.locator(".js-next")).toBeVisible();
+  };
+  const ile = () => page.evaluate(() => Object.keys(window.Core.state.errors).length);
+
+  const przed = await ile();
+  await odpowiedz(false);
+  expect(await ile()).toBe(przed + 1);
+
+  await page.evaluate(() => { window.__slowo = null; });
+  await page.locator(".js-next").click();
+  await odpowiedz(true);
+  expect(await ile()).toBe(przed + 1);
+});
