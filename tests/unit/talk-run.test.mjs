@@ -365,3 +365,44 @@ test("an out of range choice leaves the turn and score unchanged", () => {
   assert.equal(run.choose(1).punkt, true);
   assert.equal(run.index, 2);
 });
+
+describe("a jump from a line that is not a branch", () => {
+  /* data/core/conversations.js puts `go` on the other speaker's turns too:
+     a scene that ignored it there would play the line it was meant to skip. */
+  function zeSkokiem() {
+    return {
+      id: "c3",
+      turns: [
+        { sp: "A", it: "Allora?", go: "dalej" },
+        { sp: "A", it: "Questa riga non si sente." },
+        { id: "dalej", sp: "TY", accept: ["sì"], hintIt: "Sì", tr: "Tak" }
+      ]
+    };
+  }
+
+  test("the other speaker's `go` skips the lines in between", () => {
+    const run = Talk().create(zeSkokiem());
+    const potem = run.advance();
+    assert.equal(potem.id, "dalej");
+    assert.equal(run.mine(), true);
+  });
+});
+
+describe("a branch picked after a wrong attempt", () => {
+  test("gives no point: the point is for the first try only", () => {
+    const run = Talk().create(zRozwidleniem());
+    run.advance(); run.beginTurn(0);
+    run.answer("completamente diverso");
+    const w = run.choose(1);
+    assert.equal(w.punkt, false);
+    assert.equal(run.score, 0);
+  });
+
+  test("picked first, it gives the point", () => {
+    const run = Talk().create(zRozwidleniem());
+    run.advance(); run.beginTurn(0);
+    const w = run.choose(1);
+    assert.equal(w.punkt, true);
+    assert.equal(run.score, 1);
+  });
+});
