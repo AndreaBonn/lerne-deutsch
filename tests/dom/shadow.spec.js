@@ -143,3 +143,32 @@ test.describe("zgoda na rozpoznawanie mowy", () => {
     await expect(box).toHaveCount(0);
   });
 });
+
+/* The microphone has to go off when the recording ends. A track left live
+   keeps the browser's recording indicator on and the device open after the
+   student is done: nothing in the course looks wrong, and it is the one
+   place where the course holds something private. */
+test("after a recording every microphone track is stopped", async ({ page }) => {
+  await page.addInitScript(() => {
+    window.__sciezki = [];
+    const oryginal = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+    navigator.mediaDevices.getUserMedia = (c) => oryginal(c).then((s) => {
+      window.__sciezki.push(...s.getTracks());
+      return s;
+    });
+  });
+  await page.goto("/index.html#/shadowing");
+  await page.waitForSelector(".sh-it");
+  const rec = page.locator(".js-rec");
+
+  await rec.click();
+  await expect(rec).toHaveAttribute("aria-pressed", "true");
+  expect(await page.evaluate(() => window.__sciezki.map((t) => t.readyState)), "live while recording")
+    .toContain("live");
+
+  await rec.click();
+  await expect(page.locator(".js-mine")).toBeVisible();
+  const stany = await page.evaluate(() => window.__sciezki.map((t) => t.readyState));
+  expect(stany.length).toBeGreaterThan(0);
+  expect(stany.every((s) => s === "ended"), JSON.stringify(stany)).toBe(true);
+});
