@@ -223,6 +223,25 @@ describe("reading a failure", () => {
     }
   });
 
+  test("a forbidden key and an unknown model are permanent too", () => {
+    const P = providers();
+    for (const id of P.ORDER) {
+      const p = P.get(id);
+      assert.equal(p.read(403, { error: { message: "forbidden" } }).kind, "permanent", id);
+      assert.equal(p.read(404, { error: { message: "no such model" } }).kind, "permanent", id);
+    }
+  });
+
+  test("each provider gets the key in the header it reads, and a JSON content type", () => {
+    const P = providers();
+    const naglowki = (id) => P.request(id, "k", PROMPT, {}).headers;
+    assert.equal(naglowki("gemini")["x-goog-api-key"], "k");
+    assert.equal(naglowki("openai").authorization, "Bearer k");
+    assert.equal(naglowki("groq").authorization, "Bearer k");
+    assert.equal(naglowki("anthropic")["x-api-key"], "k");
+    for (const id of P.ORDER) assert.equal(naglowki(id)["content-type"], "application/json", id);
+  });
+
   test("a bad request does not retire the provider for the session", () => {
     const P = providers();
     /* 400 reads like a configuration fault and usually is not: it is most
