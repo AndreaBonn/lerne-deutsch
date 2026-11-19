@@ -135,3 +135,14 @@ test("student text is trimmed before entering history", () => {
   assert.equal(run.dodajStudenta("  buongiorno  "), true);
   assert.deepEqual(Array.from(run.historia, entry => ({ ...entry })), [{ role: "student", text: "buongiorno" }]);
 });
+
+describe("chat-run: the summary counts", () => {
+  test("turns count the student's lines only, also when the sides are uneven", () => {
+    const r = rozmowa();
+    r.dodajPartnera({ risposta: "Guten Tag!", correzione: "" });
+    r.dodajStudenta("hallo");
+    r.dodajStudenta("ich möchte Kaffee");
+    r.dodajStudenta("bitte");
+    assert.equal(r.tury, 3);
+  });
+});
