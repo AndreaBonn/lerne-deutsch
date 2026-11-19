@@ -68,7 +68,7 @@ Le tabelle sotto restano il dettaglio di ogni voce. Già fatte prima della notte
 - [x] T5.12 6 mutazioni d'esame | dip: T5.4,T5.5,T5.7
 - [x] T5.13 click-through esame, a11y-gate, chiavi cils.* x5 | dip: T5.11
 - [x] T5.14 CLAUDE.md fasceRicettive | dip: T5.6
-- [ ] T6.1 contenuto Modelltest Pflege 2 | dip: T5.13
+- [x] T6.1 contenuto Modelltest Pflege 2 | dip: T5.13
 - [ ] T6.2 audio + human in attesa | dip: T6.1
 - [ ] T6.3 cils.spec con 4 simulazioni | dip: T6.1
 - [ ] T6.4 swversion + click-through finale | dip: T6.2,T6.3
