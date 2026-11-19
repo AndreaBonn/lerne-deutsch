@@ -198,6 +198,17 @@ sześciu języków. `llm.js` przepuszcza przez nią odpowiedź, zanim ktokolwiek
 to ten sam układ co `clamp`: własność programu, nie prośba w instrukcji, więc przeżywa
 model, który zignoruje polecenie, i podmianę dostawcy.
 
+**Drugi format: telc Deutsch B1·B2 Pflege (specs/008-pflege).** `EXAM_FORMATS` w
+`data/core/cils.js` trzyma dwa formaty: `goethe-b1` (to samo co `CILS_FORMATO`, zachowanie bez
+zmian) i `telc-pflege` (Hören 4 Teile, Lesen 4 + Sprachbausteine 2 pod jednym zegarem 60 min,
+Schreiben, Sprechen; stała liczba itemów w każdym Teil, źródło w `specs/008-pflege/telc-formato.md`).
+Symulacja deklaruje `formato:`, a `Cils.formato(sim)` zwraca jej format. Goethe liczy się
+trybem `perModulo` (próg 60% na moduł), telc trybem **`fasceRicettive`**: suma punktów części
+receptywnej i pasmo (0-26 / 27-42 / 43-59), **bez pola `verdetto`**. Pasmo to nie wynik:
+prawdziwy certyfikat telc zależy od egzaminu ustnego, którego symulator nie ocenia, więc
+ekran pokazuje `X/max`, nazwę pasma i stałe zdanie, że certyfikat zależy też od części ustnej.
+Słowa „zdane" nie ma w żadnym języku i nie ma pola, z którego dałoby się je kiedyś wyczytać.
+
 **Czego to nie łapie, i jest to napisane w pliku:** werdykt bez liczb i bez tych słów
 („sei pronto per l'esame") przechodzi. Filtr zwęża szczelinę i jej nie zamyka, dlatego
 zdanie o tym, że symulator nie ocenia produkcji, stoi przy referacie na stałe.
