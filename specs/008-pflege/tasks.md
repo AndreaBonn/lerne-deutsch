@@ -55,12 +55,12 @@ Le tabelle sotto restano il dettaglio di ogni voce. Già fatte prima della notte
 - [ ] T4.3 library-pfl.js 3 testi + F1 (library-pfl in --all) | dip: T1.21
 - [ ] T4.4 human in attesa dei moduli | dip: T4.1,T4.2,T4.3
 - [x] T5.1 telc-formato.md con fonte
-- [ ] T5.2 EXAM_FORMATS e Cils.formato(sim) | dip: T5.1
-- [ ] T5.3 conforme con item per Teil | dip: T5.2
-- [ ] T5.4 esito fasceRicettive | dip: T5.2
+- [x] T5.2 EXAM_FORMATS e Cils.formato(sim) | dip: T5.1
+- [x] T5.3 conforme con item per Teil | dip: T5.2
+- [x] T5.4 esito fasceRicettive | dip: T5.2
 - [ ] T5.5 tipi di prova lueckeAbbina e lueckeMc | dip: T5.2
-- [ ] T5.6 views-cils due famiglie, avviso telc, risultato X/59 | dip: T5.4,T5.5
-- [ ] T5.7 prompt LLM d'esame dal formato | dip: T5.2
+- [ ] T5.6 views-cils due famiglie, avviso telc, risultato X/59; cablaggio formato in llm.js:209, cils-run.js:118 e consumatori di esito (cils-html.js:250, views-cils.js:356) | dip: T5.4,T5.5
+- [x] T5.7 prompt LLM d'esame dal formato | dip: T5.2
 - [ ] T5.8 Schreiben Aufnahme-/Biografiebericht | dip: T5.5
 - [ ] T5.9 Sprechen T1-T3 con preparazione 20 min | dip: T5.6
 - [ ] T5.10 contenuto Modelltest Pflege 1 | dip: T5.3,T5.8,T5.9
