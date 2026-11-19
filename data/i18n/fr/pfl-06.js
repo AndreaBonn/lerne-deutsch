@@ -176,7 +176,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         h: "Style nominal et passif",
-        p: "La documentation allemande préfère les <strong>noms</strong> aux verbes : <em>Die Patientin wollte nichts essen</em> devient <em>Verweigerung der Nahrungsaufnahme</em>. Le nom en <em>-ung</em> est toujours féminin et le complément qui le suit se met au génitif : <em>die Verweigerung <b>der</b> Nahrungsaufnahme</em>. Quand l'action compte plus que celui qui l'a faite, on utilise le <strong>passif</strong>, au Präteritum : <em>Der Verband <b>wurde</b> gewechselt. Die Ärztin <b>wurde</b> informiert.</em> Dans les entrées brèves, l'auxiliaire tombe souvent : <em>Verband gewechselt. Ärztin informiert.</em>"
+        p: "La documentation allemande préfère les <strong>noms</strong> aux verbes : <em>Die Patientin verweigerte das Essen</em> devient <em>Verweigerung der Nahrungsaufnahme</em>. Le nom en <em>-ung</em> est toujours féminin ; ici, le complément qui le suit se met au génitif, sans préposition : <em>die Verweigerung <b>der</b> Nahrungsaufnahme</em> (d'autres noms demandent une préposition : <em>Rücksprache <b>mit</b></em>). Quand l'action compte plus que celui qui l'a faite, on utilise le <strong>passif</strong>, au Präteritum : <em>Der Verband <b>wurde</b> gewechselt. Die Ärztin <b>wurde</b> informiert.</em> Dans les entrées brèves, l'auxiliaire tombe souvent : <em>Verband gewechselt. Ärztin informiert.</em>"
       },
       {
         contrast: "Si tu as écrit des transmissions ciblées en France, le style bref allemand te sera familier : « refus alimentaire, médecin prévenu, pansement refait » ressemble beaucoup à <em>Verweigerung der Nahrungsaufnahme, Ärztin informiert, Verband gewechselt</em>. Deux différences. D'abord, le français construit le groupe avec un adjectif (« refus <b>alimentaire</b> »), l'allemand avec un génitif et un mot composé : <em>die Verweigerung der Nahrungsaufnahme</em>, <em>Nahrung</em> + <em>Aufnahme</em>. Ensuite, le <em>Pflegebericht</em> n'est en général pas découpé en cibles et en DAR : c'est un texte suivi, entrée après entrée. Quand on y écrit des phrases complètes, on met le Präteritum (<em>Der Patient verweigerte das Mittagessen</em>), là où le français mettrait le passé composé (« le patient a refusé le repas »)."
@@ -190,22 +190,22 @@ LINGUAI.addStrings("fr", {
     ],
     grammar: {
       title: "Du verbe au nom",
-      note: "Verbe → nom en <b>-ung</b> (toujours féminin) + complément au <b>génitif</b>. Pour l'action sans celui qui la fait : <b>wurde</b> + participe.",
+      note: "Verbe → nom en <b>-ung</b> (toujours féminin), souvent + complément au <b>génitif</b> (<i>der Nahrungsaufnahme</i>). Pour l'action sans celui qui la fait : <b>wurde</b> + participe.",
       table: {
         head: ["style verbal", "style nominal ou passif"],
         rows: [
-          ["Die Patientin wollte nichts essen.", "Verweigerung der Nahrungsaufnahme."],
+          ["Die Patientin verweigerte das Essen.", "Verweigerung der Nahrungsaufnahme."],
           ["Ich habe die Ärztin angerufen.", "Ärztin informiert. / Die Ärztin wurde informiert."],
           ["Ich habe den Verband gewechselt.", "Verbandswechsel. / Der Verband wurde gewechselt."],
           ["Er hat wenig getrunken.", "Geringe Flüssigkeitsaufnahme."]
         ]
       },
       examples: [
-        { tr: "Aujourd'hui à midi, la patiente ne voulait rien manger.", note: "style verbal : convient à l'oral et dans le rapport" },
+        { tr: "Aujourd'hui à midi, la patiente a refusé son repas.", note: "style verbal : convient à l'oral et dans le rapport" },
         { tr: "Refus alimentaire à midi.", note: "style nominal : Verweigerung + génitif der" },
         { tr: "Le pansement a été changé à dix heures.", note: "passif au Präteritum : wurde + gewechselt" },
         { tr: "Le médecin a été prévenu.", note: "informiert : verbe en -ieren, sans ge-" },
-        { tr: "Après accord du médecin, le premier lever a été reporté.", note: "nach Rücksprache mit : formule figée de la documentation" },
+        { tr: "Après concertation avec le médecin, la mobilisation a été reportée.", note: "nach Rücksprache mit : formule figée de la documentation" },
         { tr: "Pour prévenir les chutes, le lit a été mis en position basse.", note: "zur + nom : le but en style nominal" }
       ]
     },
@@ -218,13 +218,13 @@ LINGUAI.addStrings("fr", {
       "les apports hydriques (terme technique)",
       "refuser",
       "le refus",
-      "l'échange, l'accord (avec le médecin)",
+      "la concertation, l'échange (avec le médecin)",
       "l'état ressenti, comment va le patient",
       "sans particularité, normal",
       "l'élimination (urines et selles)"
     ],
     dialogue: [
-      "Tu peux jeter un œil à mon rapport ? J'ai écrit : aujourd'hui à midi, madame Keller ne voulait rien manger.",
+      "Tu peux jeter un œil à mon rapport ? J'ai écrit : aujourd'hui à midi, madame Keller a refusé son repas.",
       "C'est juste. Dans le rapport, on écrit souvent plus court : refus alimentaire à midi.",
       "Et je dois écrire qui a appelé le médecin ?",
       "Écris simplement : médecin prévenu. Ton paraphe est déjà à côté de l'entrée.",
@@ -238,7 +238,7 @@ LINGUAI.addStrings("fr", {
     },
     exercises: [
       {
-        q: "Comment écrit-on en style nominal « Die Patientin wollte nichts essen » ?",
+        q: "Comment écrit-on en style nominal « Die Patientin verweigerte das Essen » ?",
         opts: [
           "Verweigerung von der Nahrungsaufnahme essen.",
           "Verweigerung der Nahrungsaufnahme.",
@@ -281,7 +281,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         q: "Remets les mots dans l'ordre.",
-        tr: "Après accord du médecin, le premier lever a été reporté.",
+        tr: "Après concertation avec le médecin, la mobilisation a été reportée.",
         why: "<i>Nach Rücksprache mit der Ärztin wurde die Mobilisation verschoben.</i> La formule <i>nach Rücksprache mit</i> occupe la première place, puis <i>wurde</i>, puis le sujet, et le participe <i>verschoben</i> à la fin."
       },
       {
@@ -292,7 +292,7 @@ LINGUAI.addStrings("fr", {
         q: "Une entrée du rapport.",
         setting: "Une nouvelle collègue te demande comment écrire le rapport de soins.",
         lines: [
-          { tr: "Aujourd'hui à midi, madame Keller ne voulait rien manger. Comment je l'écris ?" },
+          { tr: "Aujourd'hui à midi, madame Keller a refusé son repas. Comment je l'écris ?" },
           { tr: "Dicte la forme brève : refus alimentaire à midi.", answerTr: "Refus alimentaire à midi." },
           { tr: "Et que j'ai appelé le médecin ?" },
           { tr: "Dicte la forme brève : médecin prévenu.", answerTr: "Médecin prévenu." },
@@ -329,7 +329,7 @@ LINGUAI.addStrings("fr", {
         p: "Le but d'une action s'exprime par une subordonnée finale. Si le sujet de la finale est <strong>différent</strong> de celui de la principale, on utilise <strong>damit</strong>, avec le verbe conjugué à la fin : <em>Wir bieten ihr Tee an, damit <b>sie</b> mehr trinkt.</em> Si le sujet est <strong>le même</strong>, on peut utiliser <strong>um ... zu</strong> avec l'infinitif : <em>Wir führen ein Trinkprotokoll, um die Trinkmenge zu kontrollieren</em> (c'est nous qui tenons la feuille et nous qui contrôlons). Avec les verbes séparables, <em>zu</em> se glisse au milieu : <em>um aufzustehen</em>."
       },
       {
-        contrast: "Le français fait la même division que l'allemand : « pour » + infinitif quand le sujet est le même, « pour que » ou « afin que » + subjonctif quand il change : « on lui propose du thé pour qu'elle boive plus ». L'allemand n'a pas de subjonctif ici : <em>damit sie mehr trinkt</em> est à l'indicatif, et « damit sie mehr trinke » serait faux. Côté vocabulaire, la démarche de soins française parle de « diagnostic infirmier », d'« objectifs », d'« actions » et d'« évaluation ». Le service allemand dit plus volontiers <em>Pflegeproblem</em> que diagnostic, et <em>Ressource</em>, <em>Evaluation</em> te seront transparents. Avec le patient, on ne les utilise pas : au lieu de <em>Ihre Ressource</em>, on dit <em>Das können Sie schon gut allein</em>."
+        contrast: "Le français fait la même division que l'allemand : « pour » + infinitif quand le sujet est le même, « pour que » ou « afin que » + subjonctif quand il change : « on lui propose du thé pour qu'elle boive plus ». L'allemand courant n'a pas de subjonctif ici : <em>damit sie mehr trinkt</em> est à l'indicatif ; le Konjunktiv « damit sie mehr trinke » existe, mais il est vieilli ou très soutenu. Côté vocabulaire, la démarche de soins française parle de « diagnostic infirmier », d'« objectifs », d'« actions » et d'« évaluation ». Le service allemand dit plus volontiers <em>Pflegeproblem</em> que diagnostic, et <em>Ressource</em>, <em>Evaluation</em> te seront transparents. Avec le patient, on ne les utilise pas : au lieu de <em>Ihre Ressource</em>, on dit <em>Das können Sie schon gut allein</em>."
       },
       {
         trap: "Faux ami : <em>die Maßnahme</em> est l'action, l'intervention de soins, alors que le français « mesure » désigne aussi une mesure chiffrée ; celle-ci se dit <em>die Messung</em> (<em>die Blutdruckmessung</em>). <em>damit</em> a deux sens : comme conjonction, il introduit le but et envoie le verbe à la fin (<em>damit sie mehr trinkt</em>) ; comme adverbe, il veut dire « avec ça » : <em>Was machen wir damit?</em> Et <em>erhalten</em> veut ici dire « conserver, maintenir » (<em>die Selbstständigkeit erhalten</em>), pas seulement « recevoir »."
@@ -444,7 +444,7 @@ LINGUAI.addStrings("fr", {
           { tr: "Et quelle action est-ce qu'on prévoit ?" },
           { tr: "Réponds que vous le changez régulièrement de position pour qu'une escarre ne se forme pas.", answerTr: "On le change régulièrement de position pour qu'une escarre ne se forme pas." },
           { tr: "Quelle ressource a-t-il ?" },
-          { tr: "Réponds qu'avec de l'aide il peut se tourner lui-même.", answerTr: "Avec de l'aide, il peut se tourner lui-même." }
+          { tr: "Réponds qu'en se tenant à la barrière du lit, il peut se tourner seul.", answerTr: "En se tenant à la barrière du lit, il peut se tourner seul." }
         ]
       },
       {
@@ -562,14 +562,14 @@ LINGUAI.addStrings("fr", {
         opts: [
           "Ihr Blutzucker ist in Ordnung.",
           "Ihr BZ ist o.B.",
-          "Sie bekommen ein Schmerzmittel, wenn Sie Schmerzen haben.",
+          "Sagen Sie mir bitte Bescheid, wenn Sie Schmerzen haben.",
           "Ihr AZ ist reduziert.",
           "Ihre Werte sind unauffällig."
         ],
         why: "Avec le patient, on parle sans sigles et sans formules de la documentation. <i>BZ o.B.</i> et <i>AZ reduziert</i> sont corrects entre collègues, mais le patient ne les comprend pas."
       },
       {
-        q: "Écris les deux abréviations en toutes lettres.",
+        q: "Écris en toutes lettres les deux abréviations de « AZ reduziert, EZ gut ».",
         tr: "État général altéré, état nutritionnel bon.",
         why: "<i>AZ</i> veut dire <b>Allgemeinzustand</b>, <i>EZ</i> <b>Ernährungszustand</b>. Les deux sont masculins : <i>der Zustand</i>."
       },

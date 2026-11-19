@@ -28,7 +28,7 @@ LINGUAI.addStrings("pl", {
         p: "Także w mowie <em>sein</em>, <em>haben</em> i czasowniki modalne stoją prawie zawsze w <strong>Präteritum</strong>: <em>war, hatte, konnte, wollte, musste</em>. Pozostałe czasowniki w mowie często idą w Perfekt: <em>Ich habe die Ärztin informiert.</em> Spójniki <em>deshalb</em> (dlatego), <em>trotzdem</em> (mimo to), <em>außerdem</em> (poza tym) zajmują pierwsze miejsce w zdaniu, więc odmieniony czasownik stoi zaraz po nich: <em>deshalb <b>habe</b> ich</em>, <em>trotzdem <b>fühlte</b> sie sich wohl</em>. Natomiast <em>weil</em> otwiera zdanie podrzędne i czasownik idzie na koniec: <em>weil er Schmerzen <b>hatte</b></em>."
       },
       {
-        contrast: "Polski raport pielęgniarski opowiada noc jednym czasem przeszłym, a różnicę niesie <strong>aspekt</strong>: «była niespokojna, miała bóle brzucha, wezwałam lekarza dyżurnego». Niemiecki aspektu nie ma. <em>War</em> i <em>hatte</em> obejmują zarówno stan trwający («była niespokojna»), jak i zamknięty, a to, czy czynność się zakończyła, wynika z kontekstu. Zamiast aspektu niemiecki ma <strong>dwa czasy</strong>, wybierane według czasownika i sytuacji: <em>war, hatte, konnte</em> w Präteritum brzmią naturalnie także w mowie, a <em>ist gewesen</em> czy <em>hat gehabt</em> w raporcie brzmią ciężko; inne czasowniki w mowie zostają w Perfekt (<em>ich habe informiert</em>), a w raporcie pisemnym przechodzą w Präteritum (<em>Die Ärztin kam</em>). Nie szukaj więc w «wezwałam» i «wzywałam» dwóch różnych form niemieckich: obie to <em>ich habe gerufen</em>. Uwaga też na szyk: polskie «dlatego zadzwoniłam» niczego nie przestawia, a w niemieckim <em>deshalb</em> zajmuje pierwsze miejsce i czasownik stoi tuż za nim: <em>deshalb habe ich angerufen</em>, nigdy <em>deshalb ich habe</em>."
+        contrast: "Polski raport pielęgniarski opowiada noc jednym czasem przeszłym, a różnicę niesie <strong>aspekt</strong>: «była niespokojna, miała bóle brzucha, wezwałam lekarza dyżurnego». Niemiecki aspektu nie ma. <em>War</em> i <em>hatte</em> obejmują zarówno stan trwający («była niespokojna»), jak i zamknięty, a to, czy czynność się zakończyła, wynika z kontekstu. Zamiast aspektu niemiecki ma <strong>dwa czasy</strong>, wybierane według czasownika i sytuacji: <em>war, hatte, konnte</em> w Präteritum brzmią naturalnie także w mowie, a <em>ist gewesen</em> czy <em>hat gehabt</em> w raporcie brzmią ciężko; inne czasowniki w mowie zwykle zostają w Perfekt (<em>ich habe informiert</em>), a w raporcie pisemnym najczęściej przechodzą w Präteritum (<em>Die Ärztin kam</em>). Nie szukaj więc w «wezwałam» i «wzywałam» dwóch różnych form czasownika: zwykle oddaje je ten sam czas (<em>ich habe gerufen</em> albo <em>ich rief</em>), a powtarzanie się czynności wyrażają słowa, np. <em>mehrmals</em> czy <em>immer wieder</em>. Uwaga też na szyk: polskie «dlatego zadzwoniłam» niczego nie przestawia, a w niemieckim <em>deshalb</em> zajmuje pierwsze miejsce i czasownik stoi tuż za nim: <em>deshalb habe ich angerufen</em>, nigdy <em>deshalb ich habe</em>."
       },
       {
         trap: "<em>übergeben</em> znaczy «przekazać», ale <em>sich übergeben</em> znaczy «wymiotować»: <em>Ich übergebe dir Zimmer zwölf</em> to przekazanie dyżuru, <em>Die Patientin hat sich übergeben</em> to obserwacja do zgłoszenia. Przedrostek <em>über-</em> się tu nie odrywa: <em>ich übergebe</em>, w Perfekt <em>ich habe übergeben</em>, bez <em>ge-</em> na początku. A <em>stabil</em> opisuje stałe wartości i stan, nie ocenia pacjenta jako człowieka."
@@ -176,7 +176,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         h: "Styl nominalny i strona bierna",
-        p: "Niemiecka dokumentacja woli <strong>rzeczowniki</strong> od czasowników: <em>Die Patientin wollte nichts essen</em> zmienia się w <em>Verweigerung der Nahrungsaufnahme</em>. Rzeczownik na <em>-ung</em> jest zawsze rodzaju żeńskiego, a dopełnienie po nim stoi w dopełniaczu: <em>die Verweigerung <b>der</b> Nahrungsaufnahme</em>. Gdy ważna jest czynność, a nie to, kto ją wykonał, używa się <strong>strony biernej</strong> w Präteritum: <em>Der Verband <b>wurde</b> gewechselt. Die Ärztin <b>wurde</b> informiert.</em> W krótkich wpisach czasownik posiłkowy często odpada: <em>Verband gewechselt. Ärztin informiert.</em>"
+        p: "Niemiecka dokumentacja woli <strong>rzeczowniki</strong> od czasowników: <em>Die Patientin verweigerte das Essen</em> zmienia się w <em>Verweigerung der Nahrungsaufnahme</em>. Rzeczownik na <em>-ung</em> jest zawsze rodzaju żeńskiego; tutaj dopełnienie po nim stoi w dopełniaczu, bez przyimka: <em>die Verweigerung <b>der</b> Nahrungsaufnahme</em> (inne rzeczowniki wymagają przyimka: <em>Rücksprache <b>mit</b></em>). Gdy ważna jest czynność, a nie to, kto ją wykonał, używa się <strong>strony biernej</strong> w Präteritum: <em>Der Verband <b>wurde</b> gewechselt. Die Ärztin <b>wurde</b> informiert.</em> W krótkich wpisach czasownik posiłkowy często odpada: <em>Verband gewechselt. Ärztin informiert.</em>"
       },
       {
         contrast: "Polska dokumentacja pielęgniarska zna ten styl dobrze: «odmowa przyjmowania posiłków», «zmiana opatrunku», «lekarz powiadomiony». Mechanizm masz więc w ręku, a dopełniacz po rzeczowniku odczasownikowym działa jak po polsku: odmowa <b>przyjmowania</b>, <em>Verweigerung <b>der</b> Nahrungsaufnahme</em>. Różnica polega na tym, że polski dopełniacz siedzi w końcówce rzeczownika, a niemiecki przede wszystkim w <strong>rodzajniku</strong>: bez <em>der</em> wpis brzmi jak hasło z kartki. Polskie «przyjmowania posiłków» to dwa słowa, niemieckie <em>Nahrungsaufnahme</em> to jedno złożenie. A gdy w raporcie piszesz pełne zdanie, polskie «pacjent odmówił obiadu» w czasie dokonanym oddaje się po prostu Präteritum: <em>Der Patient verweigerte das Mittagessen.</em> Krótka forma <em>Arzt informiert</em> odpowiada dokładnie polskiemu imiesłowowi «lekarz powiadomiony»."
@@ -190,22 +190,22 @@ LINGUAI.addStrings("pl", {
     ],
     grammar: {
       title: "Od czasownika do rzeczownika",
-      note: "Czasownik → rzeczownik na <b>-ung</b> (zawsze żeński) + dopełnienie w <b>dopełniaczu</b>. Czynność bez wykonawcy: <b>wurde</b> + imiesłów.",
+      note: "Czasownik → rzeczownik na <b>-ung</b> (zawsze żeński), często + dopełnienie w <b>dopełniaczu</b> (<i>der Nahrungsaufnahme</i>). Czynność bez wykonawcy: <b>wurde</b> + imiesłów.",
       table: {
         head: ["styl czasownikowy", "styl nominalny lub bierny"],
         rows: [
-          ["Die Patientin wollte nichts essen.", "Verweigerung der Nahrungsaufnahme."],
+          ["Die Patientin verweigerte das Essen.", "Verweigerung der Nahrungsaufnahme."],
           ["Ich habe die Ärztin angerufen.", "Ärztin informiert. / Die Ärztin wurde informiert."],
           ["Ich habe den Verband gewechselt.", "Verbandswechsel. / Der Verband wurde gewechselt."],
           ["Er hat wenig getrunken.", "Geringe Flüssigkeitsaufnahme."]
         ]
       },
       examples: [
-        { tr: "Dziś w południe pacjentka nie chciała nic jeść.", note: "styl czasownikowy: dobry w mowie i w raporcie" },
+        { tr: "Dziś w południe pacjentka odmówiła jedzenia.", note: "styl czasownikowy: dobry w mowie i w raporcie" },
         { tr: "Odmowa przyjmowania posiłku w południe.", note: "styl nominalny: Verweigerung + dopełniacz der" },
         { tr: "Opatrunek zmieniono o dziesiątej.", note: "strona bierna w Präteritum: wurde + gewechselt" },
         { tr: "Lekarka została powiadomiona.", note: "informiert: czasownik na -ieren, bez ge-" },
-        { tr: "Po konsultacji z lekarką pionizację przełożono.", note: "nach Rücksprache mit: stała formuła dokumentacji" },
+        { tr: "Po konsultacji z lekarką mobilizację przełożono.", note: "nach Rücksprache mit: stała formuła dokumentacji" },
         { tr: "W ramach profilaktyki upadków łóżko obniżono.", note: "zur + rzeczownik: cel w stylu nominalnym" }
       ]
     },
@@ -224,7 +224,7 @@ LINGUAI.addStrings("pl", {
       "wydalanie (mocz i stolec)"
     ],
     dialogue: [
-      "Możesz rzucić okiem na mój raport? Napisałem: dziś w południe pani Keller nie chciała nic jeść.",
+      "Możesz rzucić okiem na mój raport? Napisałem: dziś w południe pani Keller odmówiła jedzenia.",
       "Tak może być. W raporcie pisze się często krócej: odmowa przyjmowania posiłku w południe.",
       "A muszę pisać, kto zadzwonił do lekarki?",
       "Napisz po prostu: lekarka powiadomiona. Twoja parafa i tak stoi przy wpisie.",
@@ -238,7 +238,7 @@ LINGUAI.addStrings("pl", {
     },
     exercises: [
       {
-        q: "Jak zapisać w stylu nominalnym «Die Patientin wollte nichts essen»?",
+        q: "Jak zapisać w stylu nominalnym «Die Patientin verweigerte das Essen»?",
         opts: [
           "Verweigerung von der Nahrungsaufnahme essen.",
           "Verweigerung der Nahrungsaufnahme.",
@@ -281,7 +281,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         q: "Ułóż wyrazy we właściwej kolejności.",
-        tr: "Po konsultacji z lekarką pionizację przełożono.",
+        tr: "Po konsultacji z lekarką mobilizację przełożono.",
         why: "<i>Nach Rücksprache mit der Ärztin wurde die Mobilisation verschoben.</i> Formuła <i>nach Rücksprache mit</i> zajmuje pierwsze miejsce, potem <i>wurde</i>, potem podmiot, a imiesłów <i>verschoben</i> na końcu."
       },
       {
@@ -292,7 +292,7 @@ LINGUAI.addStrings("pl", {
         q: "Wpis do raportu.",
         setting: "Nowa koleżanka pyta cię, jak pisać raport pielęgniarski.",
         lines: [
-          { tr: "Dziś w południe pani Keller nie chciała nic jeść. Jak to zapisać?" },
+          { tr: "Dziś w południe pani Keller odmówiła jedzenia. Jak to zapisać?" },
           { tr: "Podyktuj krótką formę: odmowa przyjmowania posiłku w południe.", answerTr: "Odmowa przyjmowania posiłku w południe." },
           { tr: "A to, że zadzwoniłam do lekarki?" },
           { tr: "Podyktuj krótką formę: lekarka powiadomiona.", answerTr: "Lekarka powiadomiona." },
@@ -329,7 +329,7 @@ LINGUAI.addStrings("pl", {
         p: "Cel działania wyraża zdanie celowe. Jeśli podmiot zdania celowego jest <strong>inny</strong> niż w zdaniu głównym, używa się <strong>damit</strong>, z odmienionym czasownikiem na końcu: <em>Wir bieten ihr Tee an, damit <b>sie</b> mehr trinkt.</em> Jeśli podmiot jest <strong>ten sam</strong>, można użyć <strong>um ... zu</strong> z bezokolicznikiem: <em>Wir führen ein Trinkprotokoll, um die Trinkmenge zu kontrollieren</em> (to my prowadzimy kartę i my kontrolujemy). Przy czasownikach rozdzielnych <em>zu</em> wchodzi do środka: <em>um aufzustehen</em>."
       },
       {
-        contrast: "Polski robi ten podział jednym słowem: «żeby» z bezokolicznikiem, gdy podmiot jest ten sam («prowadzimy kartę, żeby kontrolować ilość»), i «żeby» z formą przeszłą, gdy się zmienia («proponujemy jej herbatę, żeby więcej piła»). Niemiecki ma na to dwie konstrukcje i nie zna polskiego «żeby piła»: po <em>damit</em> stoi zwykły czas teraźniejszy, <em>damit sie mehr trinkt</em>, a nie «damit sie mehr trank». Słownictwo planu będzie ci znane z procesu pielęgnowania: <em>Pflegeproblem</em> to problem pielęgnacyjny (w polskiej szkole często «diagnoza pielęgniarska»), <em>Ressource</em> to zasoby pacjenta, <em>Pflegeziel</em> to cel opieki, <em>Maßnahme</em> to działanie, interwencja, a <em>Evaluation</em> to ocena. Z pacjentem tych słów się nie używa: zamiast <em>Ihre Ressource</em> mówi się <em>Das können Sie schon gut allein</em>."
+        contrast: "Polski robi ten podział jednym słowem: «żeby» z bezokolicznikiem, gdy podmiot jest ten sam («prowadzimy kartę, żeby kontrolować ilość»), i «żeby» z formą przeszłą, gdy się zmienia («proponujemy jej herbatę, żeby więcej piła»). Niemiecki ma na to dwie konstrukcje i nie zna polskiego «żeby piła»: po <em>damit</em> stoi zwykły tryb oznajmujący w czasie, którego wymaga kontekst, tu teraźniejszy: <em>damit sie mehr trinkt</em>; Präteritum <em>damit sie mehr trank</em> pasuje dopiero do opowieści o przeszłości. Słownictwo planu będzie ci znane z procesu pielęgnowania: <em>Pflegeproblem</em> to problem pielęgnacyjny (w polskiej szkole często «diagnoza pielęgniarska»), <em>Ressource</em> to zasoby pacjenta, <em>Pflegeziel</em> to cel opieki, <em>Maßnahme</em> to działanie, interwencja, a <em>Evaluation</em> to ocena. Z pacjentem tych słów się nie używa: zamiast <em>Ihre Ressource</em> mówi się <em>Das können Sie schon gut allein</em>."
       },
       {
         trap: "<em>damit</em> ma dwa znaczenia. Jako spójnik wprowadza cel i wysyła czasownik na koniec: <em>damit sie mehr trinkt</em>. Jako przysłówek znaczy «z tym»: <em>Was machen wir damit?</em> «Co z tym zrobimy?». <em>Die Maßnahme</em> to działanie, interwencja, a nie pomiar: pomiar to <em>die Messung</em> (<em>die Blutdruckmessung</em>). I <em>erhalten</em> znaczy tu «zachować, utrzymać» (<em>die Selbstständigkeit erhalten</em>), a nie tylko «otrzymać»."
@@ -444,7 +444,7 @@ LINGUAI.addStrings("pl", {
           { tr: "A jakie działanie planujemy?" },
           { tr: "Odpowiedz, że regularnie zmieniacie jego ułożenie, żeby nie powstała odleżyna.", answerTr: "Regularnie zmieniamy jego ułożenie, żeby nie powstała odleżyna." },
           { tr: "Jakie ma zasoby?" },
-          { tr: "Odpowiedz, że z pomocą potrafi sam się obrócić.", answerTr: "Z pomocą potrafi sam się obrócić." }
+          { tr: "Odpowiedz, że trzymając się barierki łóżka, potrafi sam się obrócić.", answerTr: "Trzymając się barierki łóżka, potrafi sam się obrócić." }
         ]
       },
       {
@@ -562,14 +562,14 @@ LINGUAI.addStrings("pl", {
         opts: [
           "Ihr Blutzucker ist in Ordnung.",
           "Ihr BZ ist o.B.",
-          "Sie bekommen ein Schmerzmittel, wenn Sie Schmerzen haben.",
+          "Sagen Sie mir bitte Bescheid, wenn Sie Schmerzen haben.",
           "Ihr AZ ist reduziert.",
           "Ihre Werte sind unauffällig."
         ],
         why: "Z pacjentem mówi się bez skrótów i bez formuł z dokumentacji. <i>BZ o.B.</i> i <i>AZ reduziert</i> są poprawne w zespole, ale pacjent ich nie rozumie."
       },
       {
-        q: "Rozpisz oba skróty.",
+        q: "Rozpisz oba skróty z wpisu «AZ reduziert, EZ gut».",
         tr: "Stan ogólny obniżony, stan odżywienia dobry.",
         why: "<i>AZ</i> to <b>Allgemeinzustand</b>, <i>EZ</i> to <b>Ernährungszustand</b>. Oba są rodzaju męskiego: <i>der Zustand</i>."
       },

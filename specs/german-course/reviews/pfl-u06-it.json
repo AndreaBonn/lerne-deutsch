@@ -1,0 +1,38 @@
+{
+  "bundleHash": "fc4c173c3c02c91248078340a8fe7ee08b6212c93bb5e0f9e501f50354ce5d8d",
+  "findings": [
+    {
+      "kind": "significato e documentazione",
+      "msg": "«Non voleva mangiare» non equivale necessariamente a un rifiuto esplicito dell'alimentazione. La trasformazione insegna ad attribuire alla paziente un comportamento non documentato. Usare come frase di partenza «Die Patientin verweigerte das Essen» oppure mantenere nella forma nominale la sola osservazione documentata. Correggere anche il dialogo e gli esercizi che ripetono l'equivalenza.",
+      "path": "merged.lessons[1].grammar.table.rows[0]"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La spiegazione presenta il genitivo come obbligatorio dopo ogni nome in -ung, ma la reggenza dipende dal nome e dal complemento. Precisare che «der Nahrungsaufnahme» è il genitivo usato in questo esempio, senza generalizzare a tutti i nomi in -ung. Correggere anche la spiegazione nella teoria.",
+      "path": "merged.lessons[1].grammar.note"
+    },
+    {
+      "kind": "chiave di risposta incompleta",
+      "msg": "La frase ammette anche «sodass» con il verbo finale: «Sie war unruhig, sodass habe ich…» non è corretto, ma «Sie war unruhig, folglich habe ich…» è una soluzione corretta e coerente con la traduzione. Aggiungere almeno «folglich» alle alternative oppure specificare il connettivo richiesto.",
+      "path": "merged.test.exercises[6].gaps[1]"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In «unauffällig» l'accento principale cade su «fäl», non su «un». Correggere l'indicazione di accento.",
+      "path": "merged.lessons[3].exercises[10].why"
+    },
+    {
+      "kind": "registro e promessa terapeutica",
+      "msg": "«Sie bekommen ein Schmerzmittel, wenn Sie Schmerzen haben» promette la somministrazione senza richiamare la prescrizione e le sue condizioni, mentre la lezione insegna che la terapia al bisogno le richiede. Riformulare l'opzione, per esempio: «Bitte sagen Sie mir Bescheid, wenn Sie Schmerzen haben. Ich prüfe die ärztliche Anordnung.»",
+      "path": "merged.lessons[3].exercises[4].opts[2]"
+    },
+    {
+      "kind": "chiarezza dell'obiettivo assistenziale",
+      "msg": "«Die Patientin trinkt ausreichend» non è verificabile senza una quantità o un criterio e un intervallo temporale, sebbene la teoria lo presenti come esempio di obiettivo verificabile. Specificare che la quantità individuale e il termine di verifica devono essere definiti, oppure inserirli nell'esempio.",
+      "path": "merged.lessons[2].theory[0].p"
+    }
+  ],
+  "lang": "it",
+  "unit": "pfl-u06",
+  "verdict": "fail"
+}

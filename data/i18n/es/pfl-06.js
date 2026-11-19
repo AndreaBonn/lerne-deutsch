@@ -176,10 +176,10 @@ LINGUAI.addStrings("es", {
       },
       {
         h: "Estilo nominal y pasiva",
-        p: "La documentación alemana prefiere los <strong>sustantivos</strong> a los verbos: <em>Die Patientin wollte nichts essen</em> se convierte en <em>Verweigerung der Nahrungsaufnahme</em>. El sustantivo en <em>-ung</em> es siempre femenino y el complemento que lo sigue va en genitivo: <em>die Verweigerung <b>der</b> Nahrungsaufnahme</em>. Cuando importa la acción y no quién la hizo se usa la <strong>pasiva</strong>, en Präteritum: <em>Der Verband <b>wurde</b> gewechselt. Die Ärztin <b>wurde</b> informiert.</em> En las entradas breves el auxiliar a menudo desaparece: <em>Verband gewechselt. Ärztin informiert.</em>"
+        p: "La documentación alemana prefiere los <strong>sustantivos</strong> a los verbos: <em>Die Patientin verweigerte das Essen</em> se convierte en <em>Verweigerung der Nahrungsaufnahme</em>. El sustantivo en <em>-ung</em> es siempre femenino; aquí el complemento que lo sigue va en genitivo, sin preposición: <em>die Verweigerung <b>der</b> Nahrungsaufnahme</em> (otros sustantivos piden preposición: <em>Rücksprache <b>mit</b></em>). Cuando importa la acción y no quién la hizo se usa la <strong>pasiva</strong>, en Präteritum: <em>Der Verband <b>wurde</b> gewechselt. Die Ärztin <b>wurde</b> informiert.</em> En las entradas breves el auxiliar a menudo desaparece: <em>Verband gewechselt. Ärztin informiert.</em>"
       },
       {
-        contrast: "El estilo nominal no te va a sonar raro: el español administrativo y clínico lo usa a diario («rechazo de la ingesta», «se procede a la retirada de la sonda», «toma de constantes»). Tampoco la forma breve: «Se avisa a médico de guardia», «Cura realizada» funcionan igual que <em>Ärztin informiert</em>, <em>Verband gewechselt</em>. Lo nuevo es la mecánica alemana: el verbo <em>verweigern</em> da <em>die Verweigerung</em>, el complemento pasa a genitivo (<em>der Nahrungsaufnahme</em>, sin preposición, donde tú pondrías «de la») y las palabras se sueldan en un compuesto (<em>Nahrung</em> + <em>Aufnahme</em>). Otra diferencia: en España es muy común escribir el registro en presente («Paciente refiere dolor, se administra analgesia pautada»). El registro alemán no usa ese presente narrativo: escribe en Präteritum o en forma breve sin auxiliar: <em>Der Patient verweigerte das Mittagessen. Arzt informiert.</em> El Perfekt queda para el habla."
+        contrast: "El estilo nominal no te va a sonar raro: el español administrativo y clínico lo usa a diario («rechazo de la ingesta», «se procede a la retirada de la sonda», «toma de constantes»). Tampoco la forma breve: «Se avisa a médico de guardia», «Cura realizada» funcionan igual que <em>Ärztin informiert</em>, <em>Verband gewechselt</em>. Lo nuevo es la mecánica alemana: el verbo <em>verweigern</em> da <em>die Verweigerung</em>, el complemento pasa a genitivo (<em>der Nahrungsaufnahme</em>, sin preposición, donde tú pondrías «de la») y las palabras se sueldan en un compuesto (<em>Nahrung</em> + <em>Aufnahme</em>). Otra diferencia: en España es muy común escribir el registro en presente («Paciente refiere dolor, se administra analgesia pautada»). En el registro alemán ese presente también aparece, pero en las frases completas lo más habitual es el Präteritum o la forma breve sin auxiliar: <em>Der Patient verweigerte das Mittagessen. Arzt informiert.</em> El Perfekt es más propio del habla, aunque en el registro no es un error."
       },
       {
         trap: "Los verbos en <em>-ieren</em> no llevan <em>ge-</em> en el participio: <em>informiert</em>, <em>dokumentiert</em>, <em>mobilisiert</em>, nunca <em>geinformiert</em>. Y ojo con el sujeto: <em>Die Ärztin wurde informiert</em> quiere decir que alguien avisó a la médica; <em>Die Ärztin hat informiert</em>, que fue ella quien avisó a alguien. Para el apósito el verbo es <em>wechseln</em>, no <em>ändern</em>: <em>Der Verband wurde gewechselt.</em> Y <em>die Rücksprache</em> no es una «réplica»: es la consulta con el médico."
@@ -190,18 +190,18 @@ LINGUAI.addStrings("es", {
     ],
     grammar: {
       title: "Del verbo al sustantivo",
-      note: "Verbo → sustantivo en <b>-ung</b> (siempre femenino) + complemento en <b>genitivo</b>. Para la acción sin quien la hace: <b>wurde</b> + participio.",
+      note: "Verbo → sustantivo en <b>-ung</b> (siempre femenino), a menudo + complemento en <b>genitivo</b> (<i>der Nahrungsaufnahme</i>). Para la acción sin quien la hace: <b>wurde</b> + participio.",
       table: {
         head: ["estilo verbal", "estilo nominal o pasiva"],
         rows: [
-          ["Die Patientin wollte nichts essen.", "Verweigerung der Nahrungsaufnahme."],
+          ["Die Patientin verweigerte das Essen.", "Verweigerung der Nahrungsaufnahme."],
           ["Ich habe die Ärztin angerufen.", "Ärztin informiert. / Die Ärztin wurde informiert."],
           ["Ich habe den Verband gewechselt.", "Verbandswechsel. / Der Verband wurde gewechselt."],
           ["Er hat wenig getrunken.", "Geringe Flüssigkeitsaufnahme."]
         ]
       },
       examples: [
-        { tr: "Hoy en la comida la paciente no quería comer nada.", note: "estilo verbal: vale hablando y en el registro" },
+        { tr: "Hoy a mediodía la paciente ha rechazado la comida.", note: "estilo verbal: vale hablando y en el registro" },
         { tr: "Rechazo de la ingesta en la comida.", note: "estilo nominal: Verweigerung + genitivo der" },
         { tr: "El apósito se cambió a las diez.", note: "pasiva en Präteritum: wurde + gewechselt" },
         { tr: "Se avisó a la médica.", note: "informiert: verbo en -ieren, sin ge-" },
@@ -224,7 +224,7 @@ LINGUAI.addStrings("es", {
       "la eliminación (orina y heces)"
     ],
     dialogue: [
-      "¿Puedes echar un vistazo a mi registro? He escrito: hoy en la comida la señora Keller no quería comer nada.",
+      "¿Puedes echar un vistazo a mi registro? He escrito: hoy a mediodía la señora Keller ha rechazado la comida.",
       "Así está bien. En el registro se suele escribir más breve: rechazo de la ingesta en la comida.",
       "¿Y tengo que escribir quién llamó a la médica?",
       "Escribe simplemente: se avisa a la médica. Tus iniciales ya están junto a la entrada.",
@@ -238,7 +238,7 @@ LINGUAI.addStrings("es", {
     },
     exercises: [
       {
-        q: "¿Cómo se escribe en estilo nominal «Die Patientin wollte nichts essen»?",
+        q: "¿Cómo se escribe en estilo nominal «Die Patientin verweigerte das Essen»?",
         opts: [
           "Verweigerung von der Nahrungsaufnahme essen.",
           "Verweigerung der Nahrungsaufnahme.",
@@ -292,7 +292,7 @@ LINGUAI.addStrings("es", {
         q: "Una entrada del registro.",
         setting: "Una compañera nueva te pregunta cómo se escribe el registro de enfermería.",
         lines: [
-          { tr: "Hoy en la comida la señora Keller no quería comer nada. ¿Cómo lo escribo?" },
+          { tr: "Hoy a mediodía la señora Keller ha rechazado la comida. ¿Cómo lo escribo?" },
           { tr: "Díctale la forma breve: rechazo de la ingesta en la comida.", answerTr: "Rechazo de la ingesta en la comida." },
           { tr: "¿Y que he llamado a la médica?" },
           { tr: "Díctale la forma breve: se avisa a la médica.", answerTr: "Se avisa a la médica." },
@@ -353,7 +353,7 @@ LINGUAI.addStrings("es", {
       examples: [
         { tr: "Cambiamos de posición a la señora Keller con regularidad para que no se forme una úlcera por presión.", note: "sujetos distintos (wir / kein Dekubitus): damit" },
         { tr: "Le ofrecemos té a menudo para que beba más.", note: "sujetos distintos (wir / sie): damit, con indicativo" },
-        { tr: "El señor Brandt camina todos los días con el andador para seguir siendo autónomo.", note: "mismo sujeto: um ... zu" },
+        { tr: "El señor Brandt camina todos los días con el andador para mantener la movilidad.", note: "mismo sujeto: um ... zu" },
         { tr: "Llevamos un registro de líquidos para controlar lo que bebe.", note: "mismo sujeto: um ... zu, infinitivo al final" },
         { tr: "Recurso: la paciente puede sostener el vaso sola.", note: "el recurso dice qué hace todavía el paciente por sí mismo" },
         { tr: "Objetivo: la paciente bebe lo suficiente.", note: "el objetivo se escribe en presente, como un estado que alcanzar" }
@@ -404,7 +404,7 @@ LINGUAI.addStrings("es", {
       },
       {
         q: "Completa la frase.",
-        tr: "Le ofrecemos té a menudo para que beba más. Él camina todos los días con el andador para seguir siendo autónomo.",
+        tr: "Le ofrecemos té a menudo para que beba más. Él camina todos los días con el andador para mantener la movilidad.",
         why: "<i><b>damit</b> sie mehr trinkt</i>: los sujetos son distintos. <i>um mobil zu <b>bleiben</b></i>: mismo sujeto, el infinitivo va al final después de <i>zu</i>."
       },
       {
@@ -444,7 +444,7 @@ LINGUAI.addStrings("es", {
           { tr: "¿Y qué intervención planificamos?" },
           { tr: "Responde que lo cambiáis de posición con regularidad para que no se forme una úlcera.", answerTr: "Lo cambiamos de posición con regularidad para que no se forme una úlcera por presión." },
           { tr: "¿Qué recurso tiene?" },
-          { tr: "Responde que con ayuda puede girarse solo.", answerTr: "Con ayuda puede girarse solo." }
+          { tr: "Responde que, agarrándose a la barandilla de la cama, puede girarse solo.", answerTr: "Agarrándose a la barandilla de la cama, puede girarse solo." }
         ]
       },
       {
@@ -476,7 +476,7 @@ LINGUAI.addStrings("es", {
         p: "Las abreviaturas son <strong>Fachsprache</strong> escrita: sirven entre compañeros y en los documentos. Con el paciente se vuelve a la <strong>Laiensprache</strong>: no <em>Ihr AZ ist reduziert</em>, sino <em>Sie sind im Moment etwas geschwächt</em>; no <em>VZ o.B.</em>, sino <em>Ihr Blutdruck, Ihr Puls und Ihre Temperatur sind in Ordnung.</em> Y <em>b.B.</em> no es una decisión de la enfermera: quiere decir que el médico ha prescrito un fármaco para dar cuando haga falta, en las condiciones escritas en la prescripción."
       },
       {
-        contrast: "Muchas de estas siglas tienen un equivalente directo en tu registro. <em>b.B.</em> es tu «s.p.», si precisa; <em>p.o.</em> es tu «v.o.», vía oral (el alemán usa el latín, el español no); <em>BZ</em> es la glucemia capilar, que en España mucha gente sigue llamando «BM-test». La sorpresa es <em>RR</em>: donde tú escribes TA, el alemán escribe <em>RR</em>, por Riva-Rocci, el médico italiano que inventó el esfigmomanómetro de manguito, y lo dice así también en voz alta. Otras no tienen equivalente: nadie escribe «EG disminuido» para el estado general, mientras que <em>AZ reduziert</em> es una fórmula diaria en una planta alemana. Y donde tú escribes «sin alteraciones» o «normal», el alemán abrevia: <em>o.B.</em> El estilo nominal de la lección anterior acaba a menudo en una línea de siglas: <em>AZ reduziert, EZ gut, VZ o.B.</em>"
+        contrast: "Muchas de estas siglas tienen un equivalente directo en tu registro. <em>b.B.</em> es tu «s.p.», si precisa; <em>p.o.</em> es tu «v.o.», vía oral (el alemán usa el latín, el español no); <em>BZ</em> es la glucemia, sin decir cómo se mide; la capilar de planta es la que en España mucha gente sigue llamando «BM-test». La sorpresa es <em>RR</em>: donde tú escribes TA, el alemán escribe <em>RR</em>, por Riva-Rocci, el médico italiano que inventó el esfigmomanómetro de manguito, y lo dice así también en voz alta. Otras no tienen equivalente: nadie escribe «EG disminuido» para el estado general, mientras que <em>AZ reduziert</em> es una fórmula diaria en una planta alemana. Y donde tú escribes «sin alteraciones» o «normal», el alemán abrevia: <em>o.B.</em> El estilo nominal de la lección anterior acaba a menudo en una línea de siglas: <em>AZ reduziert, EZ gut, VZ o.B.</em>"
       },
       {
         trap: "<em>ohne Befund</em> no significa «sin prueba» ni «no explorado»: significa que la exploración se hizo y no mostró nada patológico. <em>Die Kurve</em> en planta no es la curva de un gráfico: es la gráfica donde se registran constantes y tratamientos. Y <em>der Befund</em> solo es el informe o el hallazgo: <em>Der Befund ist da</em> quiere decir que ha llegado el resultado, no que sea positivo. Cuidado también con «s.p.»: no lo escribas en un registro alemán, nadie lo entenderá; allí es <em>b.B.</em>"
@@ -562,14 +562,14 @@ LINGUAI.addStrings("es", {
         opts: [
           "Ihr Blutzucker ist in Ordnung.",
           "Ihr BZ ist o.B.",
-          "Sie bekommen ein Schmerzmittel, wenn Sie Schmerzen haben.",
+          "Sagen Sie mir bitte Bescheid, wenn Sie Schmerzen haben.",
           "Ihr AZ ist reduziert.",
           "Ihre Werte sind unauffällig."
         ],
         why: "Con el paciente se habla sin siglas y sin fórmulas de la documentación. <i>BZ o.B.</i> y <i>AZ reduziert</i> son correctas entre compañeros, pero el paciente no las entiende."
       },
       {
-        q: "Escribe completas las dos abreviaturas.",
+        q: "Escribe completas las dos abreviaturas de «AZ reduziert, EZ gut».",
         tr: "Estado general disminuido, estado nutricional bueno.",
         why: "<i>AZ</i> significa <b>Allgemeinzustand</b>, <i>EZ</i> <b>Ernährungszustand</b>. Los dos son masculinos: <i>der Zustand</i>."
       },

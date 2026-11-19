@@ -1,0 +1,38 @@
+{
+  "bundleHash": "c78728357b51286c40611036cbaf169d28e3e470ce5b2a5c0bd7389b336b17be",
+  "findings": [
+    {
+      "kind": "traduction",
+      "msg": "« Nach Rücksprache mit » signifie « après concertation avec », sans impliquer un accord, et « Mobilisation » ne désigne pas nécessairement un premier lever. Traduire : « Après concertation avec le médecin, la mobilisation a été reportée. » Corriger aussi la traduction de l’exercice d’ordre correspondant.",
+      "path": "merged.lessons[1].grammar.examples[4].tr"
+    },
+    {
+      "kind": "explication grammaticale",
+      "msg": "La note présente tout complément d’un nom en -ung comme un génitif obligatoire. Ce n’est pas une règle générale : la construction dépend du nom et d’autres compléments sont possibles. Préciser que le génitif est employé dans l’exemple « Verweigerung der Nahrungsaufnahme » ; corriger aussi la même généralisation dans la théorie.",
+      "path": "merged.lessons[1].grammar.note"
+    },
+    {
+      "kind": "explication grammaticale",
+      "msg": "« Damit sie mehr trinke » n’est pas intrinsèquement faux : c’est une forme de Konjunktiv I possible notamment au discours indirect. Indiquer que l’indicatif « trinkt » est la forme habituelle dans cet exemple, sans déclarer l’autre forme incorrecte.",
+      "path": "merged.lessons[2].theory[2].contrast"
+    },
+    {
+      "kind": "consigne ambiguë",
+      "msg": "La phrase à trous ne contient ni AZ ni EZ : rien ne permet de déterminer l’ordre des deux noms demandés. Afficher « AZ reduziert, EZ gut » dans la consigne ou fournir une phrase source explicite.",
+      "path": "merged.lessons[3].exercises[5].q"
+    },
+    {
+      "kind": "traduction et vocabulaire professionnel",
+      "msg": "« Rücksprache » désigne une concertation ou un échange, pas nécessairement un accord. Remplacer « l’accord » par « la concertation » ; vérifier les autres occurrences traduites par « accord » dans la leçon.",
+      "path": "merged.lessons[1].vocab[8].tr"
+    },
+    {
+      "kind": "progression pédagogique",
+      "msg": "La consigne demande une ressource mais définit ailleurs celle-ci comme ce que le patient fait seul, alors que la réponse exige une aide. Clarifier qu’une ressource peut être une capacité conservée même avec assistance, et corriger les définitions restrictives correspondantes.",
+      "path": "merged.lessons[2].exercises[8].lines[5]"
+    }
+  ],
+  "lang": "fr",
+  "unit": "pfl-u06",
+  "verdict": "fail"
+}

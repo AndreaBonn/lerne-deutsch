@@ -55,7 +55,7 @@ LINGUAI.addUnits("PFL", [
         exercises: [
           { t: "mcq", a: 1 },
           { t: "conj", verb: "schlafen", tense: "praet", persons: [0, 1, 2, 3, 4, 5] },
-          { t: "fill", a: ["deshalb", "darum", "daher", "deswegen"] },
+          { t: "fill", a: ["deshalb", "darum", "daher", "deswegen", "folglich", "also"] },
           {
             t: "cloze",
             text: "Der Blutdruck {{1}} am Abend erhöht, {{2}} fühlte sie sich wohl.",
@@ -133,7 +133,7 @@ LINGUAI.addUnits("PFL", [
         titleIt: "Der Pflegebericht",
         grammar: {
           examples: [
-            { it: "Die Patientin wollte heute Mittag nichts essen." },
+            { it: "Die Patientin verweigerte heute Mittag das Essen." },
             { it: "Verweigerung der Nahrungsaufnahme am Mittag." },
             { it: "Der Verband wurde um zehn Uhr gewechselt." },
             { it: "Die Ärztin wurde informiert." },
@@ -158,7 +158,7 @@ LINGUAI.addUnits("PFL", [
         dialogue: {
           titleIt: "Was gehört in den Bericht?",
           lines: [
-            { who: "🧑‍⚕️", it: "Kannst du kurz auf meinen Bericht schauen? Ich habe geschrieben: Frau Keller wollte heute Mittag nichts essen." },
+            { who: "🧑‍⚕️", it: "Kannst du kurz auf meinen Bericht schauen? Ich habe geschrieben: Frau Keller hat heute Mittag das Essen verweigert." },
             { who: "👩‍⚕️", it: "Das stimmt so. Im Bericht schreibt man oft kürzer: Verweigerung der Nahrungsaufnahme am Mittag." },
             { who: "🧑‍⚕️", it: "Und muss ich schreiben, wer die Ärztin angerufen hat?" },
             { who: "👩‍⚕️", it: "Du schreibst einfach: Ärztin informiert. Dein Kürzel steht ja beim Eintrag." },
@@ -213,7 +213,7 @@ LINGUAI.addUnits("PFL", [
           {
             t: "dialogue",
             lines: [
-              { sp: "A", it: "Frau Keller wollte heute Mittag nichts essen. Wie schreibe ich das?" },
+              { sp: "A", it: "Frau Keller hat heute Mittag das Essen verweigert. Wie schreibe ich das?" },
               {
                 sp: "TY",
                 choices: [
@@ -355,9 +355,9 @@ LINGUAI.addUnits("PFL", [
               {
                 sp: "TY",
                 choices: [
-                  "Er kann sich mit Hilfe selbst gedreht.",
-                  "Er kann sich mit Hilfe selbst zu drehen.",
-                  "Er kann sich mit Hilfe selbst drehen."
+                  "Er kann sich am Bettgitter selbst gedreht.",
+                  "Er kann sich am Bettgitter selbst zu drehen.",
+                  "Er kann sich am Bettgitter selbst drehen."
                 ],
                 a: 2
               }
@@ -508,7 +508,7 @@ LINGUAI.addUnits("PFL", [
         {
           t: "cloze",
           text: "Sie {{1}} unruhig, {{2}} habe ich die Ärztin informiert.",
-          gaps: [["war"], ["deshalb", "darum", "daher", "deswegen"]]
+          gaps: [["war"], ["deshalb", "darum", "daher", "deswegen", "folglich", "also"]]
         },
         {
           t: "order",

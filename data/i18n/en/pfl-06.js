@@ -176,10 +176,10 @@ LINGUAI.addStrings("en", {
       },
       {
         h: "Nominal style and passive",
-        p: "German documentation prefers <strong>nouns</strong> to verbs: <em>Die Patientin wollte nichts essen</em> becomes <em>Verweigerung der Nahrungsaufnahme</em>. A noun in <em>-ung</em> is always feminine, and the phrase that follows it goes into the genitive: <em>die Verweigerung <b>der</b> Nahrungsaufnahme</em>. When the action matters more than who did it, you use the <strong>passive</strong>, in the Präteritum: <em>Der Verband <b>wurde</b> gewechselt. Die Ärztin <b>wurde</b> informiert.</em> In short entries the auxiliary is often dropped: <em>Verband gewechselt. Ärztin informiert.</em>"
+        p: "German documentation prefers <strong>nouns</strong> to verbs: <em>Die Patientin verweigerte das Essen</em> becomes <em>Verweigerung der Nahrungsaufnahme</em>. A noun in <em>-ung</em> is always feminine. Here the phrase that follows it is in the genitive, with no preposition: <em>die Verweigerung <b>der</b> Nahrungsaufnahme</em>; other nouns take a preposition (<em>Rücksprache <b>mit</b></em>). When the action matters more than who did it, you use the <strong>passive</strong>, in the Präteritum: <em>Der Verband <b>wurde</b> gewechselt. Die Ärztin <b>wurde</b> informiert.</em> In short entries the auxiliary is often dropped: <em>Verband gewechselt. Ärztin informiert.</em>"
       },
       {
-        contrast: "American charting is short too, but it stays verbal: “Pt refused lunch. MD notified. Dressing changed at 1000.” Part of that carries straight over: <em>Ärztin informiert. Verband gewechselt.</em> is exactly the same participle shorthand. The part that does not carry over is the noun chain. English rarely writes “refusal of food intake” in a note; German documentation does it all the time, turning the verb <em>verweigern</em> into <em>die Verweigerung</em>, putting the next phrase in the genitive (<em>der Nahrungsaufnahme</em>) and fusing words into a compound (<em>Nahrung</em> + <em>Aufnahme</em>). Full sentences in a German note use the Präteritum, the same simple past you use in English: <em>Der Patient verweigerte das Mittagessen.</em> The Perfekt is for speaking. One more habit to drop: English notes often abbreviate “patient” as “pt”; German notes write <em>Patient</em> or <em>Patientin</em>, or use <em>Pat.</em> only if your unit's list allows it."
+        contrast: "American charting is short too, but it stays verbal: “Pt refused lunch. MD notified. Dressing changed at 1000.” Part of that carries straight over: <em>Ärztin informiert. Verband gewechselt.</em> is exactly the same participle shorthand. The part that does not carry over is the noun chain. English rarely writes “refusal of food intake” in a note; German documentation does it all the time, turning the verb <em>verweigern</em> into <em>die Verweigerung</em>, putting the next phrase in the genitive (<em>der Nahrungsaufnahme</em>) and fusing words into a compound (<em>Nahrung</em> + <em>Aufnahme</em>). Full sentences in a German note mostly use the Präteritum, the same simple past you use in English: <em>Der Patient verweigerte das Mittagessen.</em> The Perfekt is more typical of speech, though it is not wrong in a note. One more habit to drop: English notes often abbreviate “patient” as “pt”; German notes write <em>Patient</em> or <em>Patientin</em>, or use <em>Pat.</em> only if your unit's list allows it."
       },
       {
         trap: "Verbs in <em>-ieren</em> take no <em>ge-</em> in the participle: <em>informiert</em>, <em>dokumentiert</em>, <em>mobilisiert</em>, never <em>geinformiert</em>. And watch the subject: <em>Die Ärztin wurde informiert</em> means someone notified the doctor; <em>Die Ärztin hat informiert</em> means the doctor notified someone else. The verb for a dressing is <em>wechseln</em>, not <em>ändern</em>, even though both translate as “change”: <em>Der Verband wurde gewechselt.</em>"
@@ -190,18 +190,18 @@ LINGUAI.addStrings("en", {
     ],
     grammar: {
       title: "From verb to noun",
-      note: "Verb → noun in <b>-ung</b> (always feminine) + following phrase in the <b>genitive</b>. For the action without the person who did it: <b>wurde</b> + participle.",
+      note: "Verb → noun in <b>-ung</b> (always feminine), often + a phrase in the <b>genitive</b> (<i>der Nahrungsaufnahme</i>). For the action without the person who did it: <b>wurde</b> + participle.",
       table: {
         head: ["verbal style", "nominal or passive style"],
         rows: [
-          ["Die Patientin wollte nichts essen.", "Verweigerung der Nahrungsaufnahme."],
+          ["Die Patientin verweigerte das Essen.", "Verweigerung der Nahrungsaufnahme."],
           ["Ich habe die Ärztin angerufen.", "Ärztin informiert. / Die Ärztin wurde informiert."],
           ["Ich habe den Verband gewechselt.", "Verbandswechsel. / Der Verband wurde gewechselt."],
           ["Er hat wenig getrunken.", "Geringe Flüssigkeitsaufnahme."]
         ]
       },
       examples: [
-        { tr: "The patient didn't want to eat anything at lunch today.", note: "verbal style: fine when speaking and in the note" },
+        { tr: "The patient refused her food at lunch today.", note: "verbal style: fine when speaking and in the note" },
         { tr: "Refusal of food at lunch.", note: "nominal style: Verweigerung + genitive der" },
         { tr: "The dressing was changed at ten.", note: "passive in the Präteritum: wurde + gewechselt" },
         { tr: "The doctor was notified.", note: "informiert: a verb in -ieren, no ge-" },
@@ -224,7 +224,7 @@ LINGUAI.addStrings("en", {
       "elimination, output (urine and stool)"
     ],
     dialogue: [
-      "Can you take a quick look at my note? I wrote: Mrs. Keller didn't want to eat anything at lunch today.",
+      "Can you take a quick look at my note? I wrote: Mrs. Keller refused her food at lunch today.",
       "That's correct. In the notes people often write it shorter: refusal of food at lunch.",
       "And do I have to write who called the doctor?",
       "Just write: doctor notified. Your initials are already next to the entry.",
@@ -238,7 +238,7 @@ LINGUAI.addStrings("en", {
     },
     exercises: [
       {
-        q: "How do you write “Die Patientin wollte nichts essen” in the nominal style?",
+        q: "How do you write “Die Patientin verweigerte das Essen” in the nominal style?",
         opts: [
           "Verweigerung von der Nahrungsaufnahme essen.",
           "Verweigerung der Nahrungsaufnahme.",
@@ -292,7 +292,7 @@ LINGUAI.addStrings("en", {
         q: "An entry in the notes.",
         setting: "A new coworker asks you how to write the nursing note.",
         lines: [
-          { tr: "Mrs. Keller didn't want to eat anything at lunch today. How do I write that?" },
+          { tr: "Mrs. Keller refused her food at lunch today. How do I write that?" },
           { tr: "Give her the short form: refusal of food at lunch.", answerTr: "Refusal of food at lunch." },
           { tr: "And that I called the doctor?" },
           { tr: "Give her the short form: doctor notified.", answerTr: "Doctor notified." },
@@ -444,7 +444,7 @@ LINGUAI.addStrings("en", {
           { tr: "And what intervention do we plan?" },
           { tr: "Say that you reposition him regularly so that no pressure injury develops.", answerTr: "We reposition him regularly so that no pressure injury develops." },
           { tr: "What resource does he have?" },
-          { tr: "Say that with help he can turn himself.", answerTr: "With help he can turn himself." }
+          { tr: "Say that, holding on to the bed rail, he can turn himself.", answerTr: "Holding on to the bed rail, he can turn himself." }
         ]
       },
       {
@@ -562,14 +562,14 @@ LINGUAI.addStrings("en", {
         opts: [
           "Ihr Blutzucker ist in Ordnung.",
           "Ihr BZ ist o.B.",
-          "Sie bekommen ein Schmerzmittel, wenn Sie Schmerzen haben.",
+          "Sagen Sie mir bitte Bescheid, wenn Sie Schmerzen haben.",
           "Ihr AZ ist reduziert.",
           "Ihre Werte sind unauffällig."
         ],
         why: "With the patient you speak without abbreviations and without documentation phrases. <i>BZ o.B.</i> and <i>AZ reduziert</i> are correct between coworkers, but the patient won't understand them."
       },
       {
-        q: "Spell out the two abbreviations.",
+        q: "Spell out the two abbreviations in “AZ reduziert, EZ gut”.",
         tr: "General condition decreased, nutritional status good.",
         why: "<i>AZ</i> stands for <b>Allgemeinzustand</b>, <i>EZ</i> for <b>Ernährungszustand</b>. Both are masculine: <i>der Zustand</i>."
       },

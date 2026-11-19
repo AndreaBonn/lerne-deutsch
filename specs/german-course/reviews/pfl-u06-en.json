@@ -1,0 +1,38 @@
+{
+  "bundleHash": "f665ac9716a798aee8fa45f193f9d3ef42ea7a96b1656a2e02d90a2833a08662",
+  "findings": [
+    {
+      "kind": "fedeltà semantica",
+      "msg": "La frase «wollte ... nichts essen» non stabilisce necessariamente un rifiuto esplicito, mentre «Verweigerung» lo afferma. Sostituire la riformulazione con «Keine Nahrungsaufnahme am Mittag» oppure precisare nel testo di partenza che la paziente ha rifiutato il pasto. Correggere anche le ripetizioni nella lezione e nei relativi esercizi.",
+      "path": "merged.lessons[1].grammar.table.rows[0]"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La regola secondo cui la frase successiva a un nome in -ung va al genitivo è troppo generale: il complemento dipende dal nome e può anche richiedere una preposizione. Presentare «Verweigerung der Nahrungsaufnahme» come costruzione specifica e correggere la stessa generalizzazione nella teoria.",
+      "path": "merged.lessons[1].grammar.note"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In «unauffällig» l'accento principale cade su «fäl», non su «un». Correggere l'indicazione fonetica.",
+      "path": "merged.lessons[3].exercises[9].why"
+    },
+    {
+      "kind": "spiegazione professionale",
+      "msg": "«Bei Bedarf» indica un bisogno eventuale; non implica di per sé che sia stata prescritta una medicazione né elimina il giudizio infermieristico sull'esistenza del bisogno. Distinguere il significato dell'abbreviazione dalle condizioni della specifica prescrizione farmacologica e correggere anche l'obiettivo corrispondente.",
+      "path": "merged.lessons[3].theory[1].p"
+    },
+    {
+      "kind": "precisione didattica",
+      "msg": "«Die Patientin trinkt ausreichend» non specifica quantità né intervallo, quindi da sola non rende verificabile l'obiettivo come affermato. Aggiungere criteri individualizzati e un periodo di osservazione oppure chiarire che l'esempio è incompleto.",
+      "path": "merged.lessons[2].theory[0].p"
+    },
+    {
+      "kind": "esercizio ambiguo",
+      "msg": "«Er kann sich mit Hilfe selbst drehen» presenta come risorsa autonoma un'azione svolta con aiuto, mentre la lezione definisce la risorsa come ciò che il paziente sa fare da solo. Precisare quale parte del movimento svolge autonomamente e quale aiuto riceve, oppure usare «Er kann sich selbst drehen».",
+      "path": "merged.lessons[2].exercises[8].lines[5]"
+    }
+  ],
+  "lang": "en",
+  "unit": "pfl-u06",
+  "verdict": "fail"
+}

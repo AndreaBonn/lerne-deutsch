@@ -176,10 +176,10 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Stile nominale e passivo",
-        p: "La documentazione tedesca preferisce i <strong>nomi</strong> ai verbi: <em>Die Patientin wollte nichts essen</em> diventa <em>Verweigerung der Nahrungsaufnahme</em>. Il nome in <em>-ung</em> è sempre femminile e il complemento che lo segue va al genitivo: <em>die Verweigerung <b>der</b> Nahrungsaufnahme</em>. Quando conta l'azione e non chi l'ha fatta si usa il <strong>passivo</strong>, al Präteritum: <em>Der Verband <b>wurde</b> gewechselt. Die Ärztin <b>wurde</b> informiert.</em> Nelle voci brevi spesso l'ausiliare cade: <em>Verband gewechselt. Ärztin informiert.</em>"
+        p: "La documentazione tedesca preferisce i <strong>nomi</strong> ai verbi: <em>Die Patientin verweigerte das Essen</em> diventa <em>Verweigerung der Nahrungsaufnahme</em>. Il nome in <em>-ung</em> è sempre femminile; qui il complemento che lo segue va al genitivo, senza preposizione: <em>die Verweigerung <b>der</b> Nahrungsaufnahme</em> (altri nomi vogliono una preposizione: <em>Rücksprache <b>mit</b></em>). Quando conta l'azione e non chi l'ha fatta si usa il <strong>passivo</strong>, al Präteritum: <em>Der Verband <b>wurde</b> gewechselt. Die Ärztin <b>wurde</b> informiert.</em> Nelle voci brevi spesso l'ausiliare cade: <em>Verband gewechselt. Ärztin informiert.</em>"
       },
       {
-        contrast: "Anche l'italiano dei servizi conosce lo stile nominale («rifiuto dell'alimentazione», «rilevazione dei parametri»), quindi il meccanismo ti è familiare. La differenza è che in tedesco il nome si costruisce con regole precise: il verbo <em>verweigern</em> dà <em>die Verweigerung</em>, il complemento passa al genitivo (<em>der Nahrungsaufnahme</em>), e le parole si saldano in un composto (<em>Nahrung</em> + <em>Aufnahme</em>). L'italiano, invece, scrive spesso al passato prossimo («il paziente ha rifiutato il pranzo, è stato avvisato il medico»); il rapporto tedesco usa il Präteritum o la forma breve senza ausiliare: <em>Der Patient verweigerte das Mittagessen. Arzt informiert.</em> Il passato prossimo resta per il parlato."
+        contrast: "Anche l'italiano dei servizi conosce lo stile nominale («rifiuto dell'alimentazione», «rilevazione dei parametri»), quindi il meccanismo ti è familiare. La differenza è che in tedesco il nome si costruisce con regole precise: il verbo <em>verweigern</em> dà <em>die Verweigerung</em>, il complemento passa al genitivo (<em>der Nahrungsaufnahme</em>), e le parole si saldano in un composto (<em>Nahrung</em> + <em>Aufnahme</em>). L'italiano, invece, scrive spesso al passato prossimo («il paziente ha rifiutato il pranzo, è stato avvisato il medico»); il rapporto tedesco usa il Präteritum o la forma breve senza ausiliare: <em>Der Patient verweigerte das Mittagessen. Arzt informiert.</em> Il Perfekt, che corrisponde al passato prossimo, è più tipico del parlato, anche se nel rapporto non è un errore."
       },
       {
         trap: "I verbi in <em>-ieren</em> non prendono <em>ge-</em> al participio: <em>informiert</em>, <em>dokumentiert</em>, <em>mobilisiert</em>, mai <em>geinformiert</em>. E attenzione al soggetto: <em>Die Ärztin wurde informiert</em> vuol dire che qualcuno ha avvisato la dottoressa; <em>Die Ärztin hat informiert</em> vuol dire che è stata lei ad avvisare qualcuno. Il verbo per la medicazione è <em>wechseln</em>, non <em>ändern</em>: <em>Der Verband wurde gewechselt.</em>"
@@ -190,18 +190,18 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Dal verbo al nome",
-      note: "Verbo → nome in <b>-ung</b> (sempre femminile) + complemento al <b>genitivo</b>. Per l'azione senza chi la fa: <b>wurde</b> + participio.",
+      note: "Verbo → nome in <b>-ung</b> (sempre femminile), spesso + complemento al <b>genitivo</b> (<i>der Nahrungsaufnahme</i>). Per l'azione senza chi la fa: <b>wurde</b> + participio.",
       table: {
         head: ["stile verbale", "stile nominale o passivo"],
         rows: [
-          ["Die Patientin wollte nichts essen.", "Verweigerung der Nahrungsaufnahme."],
+          ["Die Patientin verweigerte das Essen.", "Verweigerung der Nahrungsaufnahme."],
           ["Ich habe die Ärztin angerufen.", "Ärztin informiert. / Die Ärztin wurde informiert."],
           ["Ich habe den Verband gewechselt.", "Verbandswechsel. / Der Verband wurde gewechselt."],
           ["Er hat wenig getrunken.", "Geringe Flüssigkeitsaufnahme."]
         ]
       },
       examples: [
-        { tr: "Oggi a pranzo la paziente non voleva mangiare niente.", note: "stile verbale: va bene a voce e nel rapporto" },
+        { tr: "Oggi a pranzo la paziente ha rifiutato il cibo.", note: "stile verbale: va bene a voce e nel rapporto" },
         { tr: "Rifiuto dell'alimentazione a pranzo.", note: "stile nominale: Verweigerung + genitivo der" },
         { tr: "La medicazione è stata cambiata alle dieci.", note: "passivo al Präteritum: wurde + gewechselt" },
         { tr: "La dottoressa è stata informata.", note: "informiert: verbo in -ieren, senza ge-" },
@@ -224,7 +224,7 @@ LINGUAI.addStrings("it", {
       "l'eliminazione (urine e feci)"
     ],
     dialogue: [
-      "Puoi dare un'occhiata al mio rapporto? Ho scritto: oggi a pranzo la signora Keller non voleva mangiare niente.",
+      "Puoi dare un'occhiata al mio rapporto? Ho scritto: oggi a pranzo la signora Keller ha rifiutato il cibo.",
       "Va bene così. Nel rapporto spesso si scrive più breve: rifiuto dell'alimentazione a pranzo.",
       "E devo scrivere chi ha chiamato la dottoressa?",
       "Scrivi semplicemente: dottoressa informata. La tua sigla c'è già accanto alla voce.",
@@ -238,7 +238,7 @@ LINGUAI.addStrings("it", {
     },
     exercises: [
       {
-        q: "Come si scrive in stile nominale «Die Patientin wollte nichts essen»?",
+        q: "Come si scrive in stile nominale «Die Patientin verweigerte das Essen»?",
         opts: [
           "Verweigerung von der Nahrungsaufnahme essen.",
           "Verweigerung der Nahrungsaufnahme.",
@@ -292,7 +292,7 @@ LINGUAI.addStrings("it", {
         q: "Una voce del rapporto.",
         setting: "Una collega nuova ti chiede come scrivere il rapporto di cura.",
         lines: [
-          { tr: "Oggi a pranzo la signora Keller non voleva mangiare niente. Come lo scrivo?" },
+          { tr: "Oggi a pranzo la signora Keller ha rifiutato il cibo. Come lo scrivo?" },
           { tr: "Detta la forma breve: rifiuto dell'alimentazione a pranzo.", answerTr: "Rifiuto dell'alimentazione a pranzo." },
           { tr: "E che ho chiamato la dottoressa?" },
           { tr: "Detta la forma breve: dottoressa informata.", answerTr: "Dottoressa informata." },
@@ -444,7 +444,7 @@ LINGUAI.addStrings("it", {
           { tr: "E quale intervento pianifichiamo?" },
           { tr: "Rispondi che gli cambiate posizione regolarmente perché non si formi un decubito.", answerTr: "Gli cambiamo regolarmente posizione perché non si formi un decubito." },
           { tr: "Quale risorsa ha?" },
-          { tr: "Rispondi che con un aiuto riesce a girarsi da solo.", answerTr: "Con un aiuto riesce a girarsi da solo." }
+          { tr: "Rispondi che, tenendosi alla sponda del letto, riesce a girarsi da solo.", answerTr: "Tenendosi alla sponda del letto, riesce a girarsi da solo." }
         ]
       },
       {
@@ -562,14 +562,14 @@ LINGUAI.addStrings("it", {
         opts: [
           "Ihr Blutzucker ist in Ordnung.",
           "Ihr BZ ist o.B.",
-          "Sie bekommen ein Schmerzmittel, wenn Sie Schmerzen haben.",
+          "Sagen Sie mir bitte Bescheid, wenn Sie Schmerzen haben.",
           "Ihr AZ ist reduziert.",
           "Ihre Werte sind unauffällig."
         ],
         why: "Con il paziente si parla senza sigle e senza formule della documentazione. <i>BZ o.B.</i> e <i>AZ reduziert</i> sono corrette tra colleghi, ma il paziente non le capisce."
       },
       {
-        q: "Scrivi per esteso le due abbreviazioni.",
+        q: "Scrivi per esteso le due abbreviazioni di «AZ reduziert, EZ gut».",
         tr: "Stato generale ridotto, stato nutrizionale buono.",
         why: "<i>AZ</i> sta per <b>Allgemeinzustand</b>, <i>EZ</i> per <b>Ernährungszustand</b>. Tutti e due sono maschili: <i>der Zustand</i>."
       },

@@ -1,0 +1,38 @@
+{
+  "bundleHash": "486bdc1f7833d4db4f4a449a2eedd1ca0ae0f0a66580cfbcbfc7dda135159fe5",
+  "findings": [
+    {
+      "kind": "significato e documentazione",
+      "msg": "«Wollte nichts essen» indica che la paziente non voleva mangiare; trasformarlo in «Verweigerung der Nahrungsaufnahme» presenta come rifiuto esplicito ciò che non è necessariamente stato osservato. Usare una formulazione fedele, per esempio «Patientin wollte mittags nichts essen», e riservare «Verweigerung» a un rifiuto documentato. Correggere anche gli esempi e gli esercizi della lezione che ripetono questa equivalenza.",
+      "path": "merged.lessons[1].dialogue.lines[1].it"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La nota afferma erroneamente che nella documentazione tedesca non si usa il presente narrativo e che il Perfekt è riservato al parlato. Entrambi possono comparire anche nella documentazione; descrivere Präteritum e forme ellittiche come possibilità frequenti, senza escludere gli altri tempi.",
+      "path": "merged.lessons[1].theory[2].contrast"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Mobil bleiben» significa «mantenerse móvil» o «conservar la movilidad», non necessariamente «seguir siendo autónomo». Correggere la traduzione qui e nel cloze della stessa lezione.",
+      "path": "merged.lessons[2].grammar.examples[2].tr"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In «unruhig» l'accento principale cade su «ruh», non su «un». Correggere l'indicazione per evitare che il discente pronunci la parola con l'accento sbagliato.",
+      "path": "merged.test.exercises[9].why"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In «unauffällig» l'accento principale cade su «auf», non su «un». Correggere l'indicazione.",
+      "path": "merged.lessons[3].exercises[9].why"
+    },
+    {
+      "kind": "precisione lessicale",
+      "msg": "«BZ» significa «Blutzucker», cioè glicemia, e non specifica da solo che sia capillare. Sostituire «la glucemia capilar» con «la glucemia»; la modalità di misurazione va specificata a parte.",
+      "path": "merged.lessons[3].theory[2].contrast"
+    }
+  ],
+  "lang": "es",
+  "unit": "pfl-u06",
+  "verdict": "fail"
+}

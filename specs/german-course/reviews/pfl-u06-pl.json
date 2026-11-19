@@ -1,0 +1,38 @@
+{
+  "bundleHash": "f2c5fd54c48e6a9b9b36e872d6b0f1ffe94366abe988784fb224962fea09aef1",
+  "findings": [
+    {
+      "kind": "significato e documentazione",
+      "msg": "«Wollte nichts essen» esprime la volontà di non mangiare, ma non accerta che il pasto sia stato offerto e rifiutato. Il dialogo, la tabella grammaticale, l'esercizio a scelta multipla e il dialogo dell'esercizio presentano invece «Verweigerung der Nahrungsaufnahme» come equivalenza certa. Aggiungere il rifiuto osservato alla situazione di partenza oppure scegliere una formulazione documentale che non introduca fatti non accertati.",
+      "path": "merged.lessons[1].dialogue.lines[1].it"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Mobilisation» indica la mobilizzazione e non necessariamente la sola verticalizzazione. Sostituire «pionizację» con «mobilizację» anche nella traduzione dell'esercizio di riordino.",
+      "path": "merged.lessons[1].grammar.examples[4].tr"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La nota afferma che «damit sie mehr trank» sia scorretto, ma il Präteritum è possibile quando il contesto è al passato. Spiegare che dopo «damit» si usa un verbo coniugato nel tempo richiesto dal contesto, con «trinkt» nell'esempio al presente.",
+      "path": "merged.lessons[2].theory[2].contrast"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La nota presenta «wezwałam» e «wzywałam» come sempre traducibili con «ich habe gerufen» e oppone in modo troppo rigido Perfekt orale e Präteritum scritto. La scelta dipende anche dal contesto e dal valore aspettuale; una chiamata ripetuta o in corso può richiedere altri mezzi. Distinguere le tendenze d'uso dalle equivalenze obbligatorie e fornire esempi contestualizzati.",
+      "path": "merged.lessons[0].theory[2].contrast"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In «unauffällig» l'accento principale cade su «auf», non su «un». Correggere l'indicazione di pronuncia.",
+      "path": "merged.lessons[3].exercises[9].why"
+    },
+    {
+      "kind": "quesito ambiguo",
+      "msg": "Si chiede di sviluppare due abbreviazioni, ma nel testo dell'esercizio non compaiono né AZ né EZ. Aggiungere «AZ reduziert, EZ gut» alla consegna, così da rendere determinabili entrambe le risposte.",
+      "path": "merged.lessons[3].exercises[5].q"
+    }
+  ],
+  "lang": "pl",
+  "unit": "pfl-u06",
+  "verdict": "fail"
+}
