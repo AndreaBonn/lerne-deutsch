@@ -171,7 +171,7 @@
     "starten", "klettern", "segeln", "aufstehen", "aufwachen", "einschlafen",
     "erblühen", "folgen", "begegnen", "scheitern", "erwachen", "umziehen",
     "entkommen", "entlaufen", "entstehen", "entgehen", "vergehen", "verfallen",
-    "verlaufen", "erscheinen", "verreisen", "ausscheiden"
+    "verlaufen", "erscheinen", "verreisen", "ausscheiden", "stürzen"
   ]);
   /* über-, unter-, durch-, wieder- and um- can be separable or inseparable.
      Verbs not listed here default to inseparable for über-, unter-, durch- and

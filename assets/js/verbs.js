@@ -4,12 +4,12 @@
   var D = global.VERB_TABLES;
   /* Closed list of separable prefixes. Longer prefixes come first so that
      zurück- wins over zu- and vorbei- over vor-. */
-  var SEPARABLE_PREFIXES = /^(zusammen|zurück|vorbei|heraus|hinein|hinaus|herein|herunter|hinauf|weiter|fern|teil|statt|fest|fort|auf|aus|ein|ab|an|bei|los|mit|nach|vor|weg|zu)/;
+  var SEPARABLE_PREFIXES = /^(zusammen|zurück|vorbei|heraus|hinein|hinaus|herein|herunter|hinauf|hinunter|weiter|fern|teil|statt|fest|fort|auf|aus|ein|ab|an|bei|los|mit|nach|vor|weg|hin|zu)/;
   /* über-, unter-, durch-, wieder- and um- are decided per verb by PREFIX_KIND. */
   var VARIABLE_PREFIXES = /^(über|unter|durch|wieder|um)/;
   var INSEPARABLE_PREFIXES = /^(be|ver|er|ent|emp|ge|miss|zer|über|unter|durch|wieder)/;
   /* A beginning that looks like a prefix but is part of the stem. */
-  var UNSPLIT_VERBS = /^(antworten|angeln|ankern|analysieren|abonnieren|einen|einigen|losen|zupfen|zucken|zurren)$/;
+  var UNSPLIT_VERBS = /^(antworten|angeln|ankern|analysieren|abonnieren|einen|einigen|losen|zupfen|zucken|zurren|hindern|hinken)$/;
   /* be-, er-, ge-, zer- that are part of the stem, so the participle keeps ge-. */
   var STEM_INITIAL_VERBS = /^(beten|bellen|beben|erben|ernten|geigen|zerren)$/;
   /* Prefix + strong verb that is only spelling: bereiten is not be + reiten. */

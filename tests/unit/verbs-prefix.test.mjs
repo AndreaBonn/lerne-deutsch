@@ -243,3 +243,18 @@ describe("verbs: strong verbs of the IRR table that are easy to miss", () => {
     assert.equal(rows("beschreiten", "perf")[2], "hat beschritten");
   });
 });
+
+/* Found while writing the nursing unit on falls (pfl-u04): "Die Patientin ist
+   gestürzt" came out with haben, and hin- was not a separable prefix. */
+describe('falls: stürzen and hinfallen', () => {
+  test('stürzen (to fall) forms the Perfekt with sein', () => {
+    assert.equal(rows('stürzen', 'perf')[2], 'ist gestürzt');
+  });
+  test('hinfallen is separable: hingefallen, fällt hin', () => {
+    assert.equal(rows('hinfallen', 'perf')[2], 'ist hingefallen');
+    assert.equal(rows('hinfallen', 'praes')[2], 'fällt hin');
+  });
+  test('a weak verb without hin- keeps haben (paired positive case)', () => {
+    assert.equal(rows('machen', 'perf')[2], 'hat gemacht');
+  });
+});
