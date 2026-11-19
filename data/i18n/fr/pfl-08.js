@@ -28,7 +28,7 @@ LINGUAI.addStrings("fr", {
         p: "Pendant la Visite, on parle surtout de <strong>ce qu'on fait</strong>, pas de qui le fait. C'est pourquoi on utilise le <strong>passif</strong> : <em>werden</em> conjugué + participe à la fin. Au présent : <em>Der Verband <b>wird</b> morgen <b>gewechselt</b>.</em> Au Präteritum : <em>Die Röntgenaufnahme <b>wurde</b> gestern <b>gemacht</b>.</em> Avec un modal, c'est le modal qui se conjugue, et à la fin on trouve le participe puis <em>werden</em> à l'infinitif : <em>Frau Lang <b>soll</b> heute <b>mobilisiert werden</b>.</em> Souvent, celle qui fait l'action, c'est toi : <em>Bei Herrn Wolf wird ein Blutbild abgenommen</em> veut dire qu'après la visite la prise de sang revient à l'équipe soignante."
       },
       {
-        contrast: "À la visite, le français passe surtout par « on » : « on poursuit le traitement », « on refait une NFS demain », « on refait le pansement ». L'allemand a bien <em>man</em>, mais à la Visite il sonne vague ; il préfère le passif avec <em>werden</em> : <em>Die Therapie wird fortgesetzt</em>. Le piège vient du passif français, qui se fait avec « être » : « le pansement est refait ». Si tu le calques avec <em>sein</em>, tu obtiens <em>Der Verband ist gewechselt</em>, qui décrit un état (« le pansement est déjà changé »), pas un soin à faire. L'action à faire, c'est <em>wird gewechselt</em>. Et ne confonds pas passif et futur : <em>wird gewechselt</em> (participe) est un passif, « est changé » ; <em>wird wechseln</em> (infinitif) est un futur, « changera ». Le signal à saisir au vol, c'est <em>wird</em> ou <em>wurde</em> avec un participe en fin de phrase : c'est une prescription que quelqu'un doit exécuter."
+        contrast: "À la visite, le français passe surtout par « on » : « on poursuit le traitement », « on refait une NFS demain », « on refait le pansement ». L'allemand a bien <em>man</em>, mais à la Visite il sonne vague ; il préfère le passif avec <em>werden</em> : <em>Die Therapie wird fortgesetzt</em>. Le piège vient du passif français, qui se fait avec « être » : « le pansement est refait ». Si tu le calques avec <em>sein</em>, tu obtiens <em>Der Verband ist gewechselt</em>, qui décrit un état (« le pansement est déjà changé »), pas un soin à faire. L'action à faire, c'est <em>wird gewechselt</em>. Et ne confonds pas passif et futur : <em>wird gewechselt</em> (participe) est un passif, « est changé » ; <em>wird wechseln</em> (infinitif) est un futur, « changera ». Le signal à saisir au vol, c'est <em>wird</em> ou <em>wurde</em> avec un participe en fin de phrase. À la Visite, <em>wird</em> + participe est presque toujours une prescription que quelqu'un doit exécuter ; avec <em>wurde</em>, c'est déjà fait. Le passif décrit une action : c'est le contexte qui en fait une prescription."
       },
       {
         trap: "<em>fortsetzen</em> est un verbe séparable et prend <em>ge-</em> après le préfixe : <em>fortgesetzt</em>, jamais <em>gefortsetzt</em>. <em>mobilisieren</em>, lui, se termine en <em>-ieren</em> et son participe n'a pas de <em>ge-</em> : <em>mobilisiert</em>, jamais <em>gemobilisiert</em>. Et <em>der Befund</em> n'est pas seulement le compte rendu écrit : <em>ohne Befund</em> veut dire « normal, RAS ». Un examen « sans Befund » est donc une bonne nouvelle, pas un résultat manquant."
@@ -129,11 +129,11 @@ LINGUAI.addStrings("fr", {
       {
         q: "Remets les mots dans l'ordre.",
         tr: "Le traitement est poursuivi comme jusqu'à présent.",
-        why: "<i>Die Therapie wird wie bisher fortgesetzt.</i> Le verbe conjugué <i>wird</i> en deuxième position, le participe <i>fortgesetzt</i> à la fin ; <i>wie bisher</i> se place au milieu."
+        why: "<i>Die Therapie wird wie bisher fortgesetzt.</i> Le verbe conjugué <i>wird</i> en deuxième position, le participe <i>fortgesetzt</i> à la fin ; <i>wie bisher</i> se place normalement au milieu ; à l'oral, on l'entend aussi après le participe, <i>wird fortgesetzt wie bisher</i>, et cet ordre est accepté aussi."
       },
       {
         q: "Traduis (à la Visite) : « Demain matin, on fait une NFS. »",
-        why: "<i>Morgen früh wird ein Blutbild abgenommen.</i> Le « on » français devient un passif avec <i>wird</i>. Pour la prise de sang, le verbe habituel est <i>abnehmen</i> ; <i>gemacht</i> est aussi accepté. <i>morgen früh</i> veut dire « demain matin »."
+        why: "<i>Morgen früh wird ein Blutbild abgenommen.</i> Le « on » français devient un passif avec <i>wird</i>. Pour la prise de sang, le verbe habituel est <i>abnehmen</i> ; <i>gemacht</i> est aussi accepté. À strictement parler, on prélève le sang (<i>Blut abnehmen</i>) et la NFS se fait sur l'échantillon : <i>ein Blutbild abnehmen</i> est le raccourci courant dans le service. <i>morgen früh</i> veut dire « demain matin »."
       },
       {
         q: "À la Visite.",
@@ -247,7 +247,7 @@ LINGUAI.addStrings("fr", {
       {
         q: "Complète : « Ich bin nicht sicher, ___ die Anordnung noch gilt. »",
         hint: "interrogation indirecte oui/non",
-        why: "<b>ob</b> : la phrase cache une question fermée (« la prescription est-elle encore valable ? »). <i>wenn</i> serait une condition, le « si » de « s'il pleut » ; <i>dass</i> présenterait un fait certain, ce qui manque ici."
+        why: "<b>ob</b> : la phrase cache une question fermée (« la prescription est-elle encore valable ? »). <i>wenn</i> serait une condition, le « si » de « s'il pleut » ; <i>dass</i> rapporte un contenu sans poser de question, et après <i>nicht sicher</i> le choix normal est <i>ob</i>."
       },
       {
         q: "Complète la phrase.",
@@ -566,7 +566,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         q: "Associe chaque verbe à son sens.",
-        pairs: ["transmettre (par téléphone)", "rappeler", "épeler", "passer un appel"]
+        pairs: ["transmettre (par téléphone)", "rappeler", "épeler", "mettre en relation (au téléphone)"]
       },
       {
         q: "Remets les mots dans l'ordre.",
@@ -613,7 +613,7 @@ LINGUAI.addStrings("fr", {
     exercises: [
       {
         q: "Une prescription te semble inhabituelle. Que fais-tu ?",
-        opts: ["Ich führe sie trotzdem aus.", "Ich frage noch einmal bei der Ärztin nach.", "Ich ändere sie selbst."],
+        opts: ["Ich führe die Anordnung trotzdem aus.", "Ich frage noch einmal bei der Ärztin nach.", "Ich ändere die Anordnung selbst."],
         why: "Une prescription inhabituelle se clarifie avec le médecin avant de l'exécuter : <b>Ich frage noch einmal bei der Ärztin nach</b>. L'exécuter quand même ou la modifier soi-même ne sont pas des voies sûres."
       },
       {

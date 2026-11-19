@@ -1,0 +1,48 @@
+{
+  "bundleHash": "3a7111ced23f6b7c0ffca13a2c4253ad4b130b5dcc120155823e0f753ae463fb",
+  "findings": [
+    {
+      "kind": "lessico e collocazione",
+      "msg": "«Ein Blutbild abnehmen» non è la collocazione precisa: si preleva sangue e si esegue un emocromo. Sostituire con «Blut abnehmen» oppure «ein Blutbild erstellen lassen» e adeguare traduzioni ed esercizi. La formulazione ricorre anche nel dialogo, nel vocabolario e nel test.",
+      "path": "neutral.lessons[0].grammar.examples[0].it"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In «erkundigt» la g davanti a t si pronuncia normalmente [k], non [ç]. Correggere la spiegazione.",
+      "path": "merged.lessons[2].exercises[10].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Sprechen von» è una costruzione tedesca corretta e può significare «hablar de». Presentare «sprechen über» come soluzione prevista senza escludere «von» in assoluto; valutare anche le alternative equivalenti nella risposta.",
+      "path": "merged.lessons[2].exercises[8].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Wird ... abgenommen» indica un'azione al passivo, non necessariamente un ordine da eseguire. Distinguere il significato grammaticale dall'eventuale valore di disposizione dato dal contesto.",
+      "path": "merged.lessons[0].theory[2].contrast"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Mobilisiert werden» significa essere mobilizzata o aiutata a muoversi; «levantarla» restringe il significato. Usare «movilizar a la señora Lang» o una formulazione equivalente.",
+      "path": "merged.lessons[0].grammar.examples[3].tr"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "La frase tedesca dice che oggi si preleva sangue per un emocromo, senza esprimere necessariamente «hay que». Tradurre con «En la historia pone que hoy se realiza un hemograma», adeguando anche la formulazione tedesca secondo la correzione lessicale.",
+      "path": "merged.test.exercises[5].tr"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "La spiegazione paragona l'accento finale di «Therapie» a quello di «terapia», ma in spagnolo l'accento cade su «ra». Specificare che l'accento tedesco cade sull'ultima sillaba, diversamente dallo spagnolo.",
+      "path": "merged.lessons[0].exercises[10].why"
+    },
+    {
+      "kind": "chiave di risposta e spiegazione",
+      "msg": "La sequenza accettata «Die Therapie wird fortgesetzt wie bisher» colloca «wie bisher» dopo il participio, mentre la spiegazione sostiene che debba stare in mezzo e il participio alla fine. Spiegare questa possibilità di posizione finale oppure rimuoverla se si vuole esercitare esclusivamente l'ordine presentato.",
+      "path": "merged.lessons[0].exercises[7]"
+    }
+  ],
+  "lang": "es",
+  "unit": "pfl-u08",
+  "verdict": "fail"
+}

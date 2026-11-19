@@ -28,7 +28,7 @@ LINGUAI.addStrings("pl", {
         p: "Na obchodzie mówi się przede wszystkim o tym, <strong>co się robi</strong>, a nie kto to robi. Dlatego używa się <strong>strony biernej</strong>: odmienione <em>werden</em> + imiesłów na końcu. W czasie teraźniejszym: <em>Der Verband <b>wird</b> morgen <b>gewechselt</b>.</em> W Präteritum: <em>Die Röntgenaufnahme <b>wurde</b> gestern <b>gemacht</b>.</em> Z czasownikiem modalnym odmienia się modalny, a na końcu stoją imiesłów i <em>werden</em> w bezokoliczniku: <em>Frau Lang <b>soll</b> heute <b>mobilisiert werden</b>.</em> Często osobą, która ma to zrobić, jesteś właśnie ty: <em>Bei Herrn Wolf wird ein Blutbild abgenommen</em> znaczy, że po obchodzie pobranie krwi należy do zespołu pielęgniarskiego."
       },
       {
-        contrast: "Polski obchód mówi formami bezosobowymi: «kontynuuje się leczenie», «jutro pobieramy morfologię», «zlecono RTG», «opatrunek do zmiany». Niemiecki ma wprawdzie <em>man</em>, ale na obchodzie brzmi ono ogólnikowo; zamiast tego jest strona bierna z <em>werden</em>: <em>Die Therapie wird fortgesetzt</em>. Uwaga na pozorne podobieństwo: polskie «zostanie zmieniony» to czas przyszły, a niemieckie <em>wird gewechselt</em> to strona bierna w czasie <strong>teraźniejszym</strong>, która w praktyce oznacza «zmienia się», «jest do zmiany». Polskie «jest zmieniony» z kolei opisuje stan i odpowiada niemieckiemu <em>ist gewechselt</em>, czyli «już zmieniony», a nie zleceniu. I nie myl strony biernej z czasem przyszłym: <em>wird gewechselt</em> (imiesłów) to strona bierna, <em>wird wechseln</em> (bezokolicznik) to «zmieni». Sygnał do wyłapania w locie to <em>wird</em> albo <em>wurde</em> z imiesłowem na końcu zdania: to zlecenie, które ktoś musi wykonać."
+        contrast: "Polski obchód mówi formami bezosobowymi: «kontynuuje się leczenie», «jutro pobieramy morfologię», «zlecono RTG», «opatrunek do zmiany». Niemiecki ma wprawdzie <em>man</em>, ale na obchodzie brzmi ono ogólnikowo; zamiast tego jest strona bierna z <em>werden</em>: <em>Die Therapie wird fortgesetzt</em>. Uwaga na pozorne podobieństwo: polskie «zostanie zmieniony» to czas przyszły, a niemieckie <em>wird gewechselt</em> to strona bierna w czasie <strong>teraźniejszym</strong>, która w praktyce oznacza «zmienia się», «jest do zmiany». Polskie «jest zmieniony» z kolei opisuje stan i odpowiada niemieckiemu <em>ist gewechselt</em>, czyli «już zmieniony», a nie zleceniu. I nie myl strony biernej z czasem przyszłym: <em>wird gewechselt</em> (imiesłów) to strona bierna, <em>wird wechseln</em> (bezokolicznik) to «zmieni». Sygnał do wyłapania w locie to <em>wird</em> albo <em>wurde</em> z imiesłowem na końcu zdania. Na obchodzie <em>wird</em> z imiesłowem to prawie zawsze zlecenie, które ktoś musi wykonać; z <em>wurde</em> to coś już zrobionego. Sama strona bierna opisuje czynność: zleceniem czyni ją kontekst."
       },
       {
         trap: "<em>fortsetzen</em> to czasownik rozdzielny i przyjmuje <em>ge-</em> po przedrostku: <em>fortgesetzt</em>, nigdy <em>gefortsetzt</em>. <em>mobilisieren</em> kończy się natomiast na <em>-ieren</em> i jego imiesłów nie ma <em>ge-</em>: <em>mobilisiert</em>, nigdy <em>gemobilisiert</em>. A <em>der Befund</em> to nie tylko opis badania: <em>ohne Befund</em> znaczy «bez zmian, w normie». Badanie «bez Befund» to więc dobra wiadomość, a nie brakujący wynik."
@@ -129,11 +129,11 @@ LINGUAI.addStrings("pl", {
       {
         q: "Ułóż słowa we właściwej kolejności.",
         tr: "Leczenie jest kontynuowane jak dotychczas.",
-        why: "<i>Die Therapie wird wie bisher fortgesetzt.</i> Odmieniony czasownik <i>wird</i> na drugim miejscu, imiesłów <i>fortgesetzt</i> na końcu; <i>wie bisher</i> stoi pośrodku."
+        why: "<i>Die Therapie wird wie bisher fortgesetzt.</i> Odmieniony czasownik <i>wird</i> na drugim miejscu, imiesłów <i>fortgesetzt</i> na końcu; <i>wie bisher</i> zwykle stoi pośrodku; w mowie może też stanąć po imiesłowie, <i>wird fortgesetzt wie bisher</i>, i ten szyk też jest przyjmowany."
       },
       {
         q: "Przetłumacz (na obchodzie): «Jutro rano pobieramy krew na morfologię.»",
-        why: "<i>Morgen früh wird ein Blutbild abgenommen.</i> Polska forma «pobieramy» albo «pobiera się» przechodzi w stronę bierną z <i>wird</i>. Przy pobraniu krwi typowy czasownik to <i>abnehmen</i>; <i>gemacht</i> też jest przyjmowane. <i>morgen früh</i> znaczy «jutro rano»."
+        why: "<i>Morgen früh wird ein Blutbild abgenommen.</i> Polska forma «pobieramy» albo «pobiera się» przechodzi w stronę bierną z <i>wird</i>. Przy pobraniu krwi typowy czasownik to <i>abnehmen</i>; <i>gemacht</i> też jest przyjmowane. Ściśle biorąc pobiera się krew (<i>Blut abnehmen</i>), a morfologię robi się z próbki: <i>ein Blutbild abnehmen</i> to zwykły skrót oddziałowy. <i>morgen früh</i> znaczy «jutro rano»."
       },
       {
         q: "Na obchodzie.",
@@ -176,7 +176,7 @@ LINGUAI.addStrings("pl", {
         p: "Żeby powiedzieć, co jest zapisane albo co zostało zlecone, używa się <em>dass</em>: <em>In der Akte steht, <b>dass</b> sie heute nüchtern bleibt.</em> Żeby wyrazić wątpliwość, używa się <em>ob</em>, czyli pytania zależnego typu tak/nie: <em>Ich bin nicht sicher, <b>ob</b> die Anordnung noch gilt.</em> W obu zdaniach podrzędnych odmieniony czasownik idzie na koniec. Do łączenia dwóch zdań głównych: <em>deshalb</em> (skutek, czasownik stoi zaraz po nim), <em>aber</em> i <em>denn</em> (nie zmieniają szyku): <em>Die Anordnung ist unklar, <b>deshalb frage</b> ich nach. Ich frage nach, <b>denn</b> ich <b>möchte</b> keinen Fehler machen.</em>"
       },
       {
-        contrast: "Tu polski bardzo pomaga: «nie wiem, <b>czy</b> zlecenie jest aktualne» to dokładnie niemieckie <em>ob</em>, a «jeśli» to <em>wenn</em>. Trudność leży gdzie indziej. Po pierwsze, szyk: po polsku czasownik stoi, gdzie chce («czy jest nadal aktualne», «czy nadal obowiązuje»), a po <em>ob</em> i <em>dass</em> odmieniony czasownik zawsze idzie na sam koniec: <em>ob die Anordnung noch <b>gilt</b></em>. Po drugie, polskie «czy» otwiera też zwykłe pytanie («Czy zlecenie jest aktualne?»), a niemieckie <em>ob</em> nigdy: pytanie bezpośrednie zaczyna się od czasownika, <em>Gilt die Anordnung noch?</em> Zdanie <em>Ob die Anordnung noch gilt?</em> brzmi jak urwane w połowie. Ramy są ci znane: w Polsce zlecenie też trafia do karty zleceń, a zlecenie ustne to wyjątek, który lekarz potem potwierdza na piśmie. Zmienia się słowo: tam, gdzie powiesz «pani doktor, mam pytanie», na niemieckim oddziale często mówi się <em>Ich habe eine Rückfrage</em>, czyli właśnie prośba o wyjaśnienie czegoś, co już zostało powiedziane albo zapisane."
+        contrast: "Tu polski bardzo pomaga: «nie wiem, <b>czy</b> zlecenie jest aktualne» to dokładnie niemieckie <em>ob</em>, a «jeśli» to <em>wenn</em>. Trudność leży gdzie indziej. Po pierwsze, szyk: po polsku czasownik stoi, gdzie chce («czy jest nadal aktualne», «czy nadal obowiązuje»), a po <em>ob</em> i <em>dass</em> odmieniony czasownik zawsze idzie na sam koniec: <em>ob die Anordnung noch <b>gilt</b></em>. Po drugie, polskie «czy» otwiera też zwykłe pytanie («Czy zlecenie jest aktualne?»), a niemieckie <em>ob</em> nigdy: pytanie bezpośrednie zaczyna się od czasownika, <em>Gilt die Anordnung noch?</em> Samodzielne <em>Ob die Anordnung noch gilt?</em> nie jest zwykłym pytaniem: wyraża zastanawianie się, jak polskie «ciekawe, czy zlecenie jest aktualne». Ramy są ci znane: w Polsce zlecenie też trafia do karty zleceń, a zlecenie ustne to wyjątek, który lekarz potem potwierdza na piśmie. Zmienia się słowo: tam, gdzie powiesz «pani doktor, mam pytanie», na niemieckim oddziale często mówi się <em>Ich habe eine Rückfrage</em>, czyli właśnie prośba o wyjaśnienie czegoś, co już zostało powiedziane albo zapisane."
       },
       {
         trap: "<em>anordnen</em> jest rozdzielny: <em>Die Ärztin <b>ordnet</b> ein Blutbild <b>an</b></em>, w Perfekt <em>hat ... ange<b>ordnet</b></em>. Nie myl go z <em>ordnen</em>, «porządkować». <em>die Indikation</em> to medyczne «wskazanie» do leczenia, a nie «wskazówka» czy polecenie: polecenie to <em>die Anweisung</em>. Pacjentowi nie mówi się <em>Indikation</em>, tylko <em>der Grund für die Behandlung</em>."
@@ -247,7 +247,7 @@ LINGUAI.addStrings("pl", {
       {
         q: "Uzupełnij: «Ich bin nicht sicher, ___ die Anordnung noch gilt.»",
         hint: "pytanie zależne tak/nie",
-        why: "<b>ob</b>: w zdaniu kryje się pytanie tak/nie («czy zlecenie jest aktualne?»), czyli polskie «czy». <i>wenn</i> byłoby warunkiem («jeśli»), a <i>dass</i> pewnym faktem («że»), którego tu brakuje."
+        why: "<b>ob</b>: w zdaniu kryje się pytanie tak/nie («czy zlecenie jest aktualne?»), czyli polskie «czy». <i>wenn</i> byłoby warunkiem («jeśli»), a <i>dass</i> («że») relacjonuje treść i nie zadaje pytania; po <i>nicht sicher</i> normalnym wyborem jest <i>ob</i>."
       },
       {
         q: "Uzupełnij zdanie.",
@@ -349,7 +349,7 @@ LINGUAI.addStrings("pl", {
         { tr: "Ja się zajmę nowym przyjęciem.", note: "um die Neuaufnahme: biernik rodzaju żeńskiego" },
         { tr: "Dziś rozmawiamy o grafiku dyżurów.", note: "sprechen über + biernik: über den Dienstplan, a nie miejscownik" },
         { tr: "Córka dowiadywała się o wynik badania.", note: "sich erkundigen nach + celownik: nach dem Befund; erkundigt bez ge-" },
-        { tr: "Wciąż czekam na wypis od lekarza.", note: "warten auf + biernik: auf den Arztbrief, jak polskie «czekać na»" },
+        { tr: "Wciąż czekam na list lekarski.", note: "warten auf + biernik: auf den Arztbrief, jak polskie «czekać na»" },
         { tr: "Porozmawiamy o tym na końcu.", note: "darüber nawiązuje do tematu, który już padł, jak polskie «o tym»" }
       ]
     },
@@ -374,7 +374,7 @@ LINGUAI.addStrings("pl", {
       "Wczoraj jego córka pytała o wynik badania. Powiedziałam jej, że porozmawia z nią o tym lekarz.",
       "Ja dopilnuję, żeby lekarz dziś do niej zadzwonił.",
       "Dobrze. A kto się zajmie popołudniowym przyjęciem?",
-      "Ja to wezmę. Ale wciąż czekam na wypis od lekarza.",
+      "Ja to wezmę. Ale wciąż czekam na list lekarski.",
       "W porządku. O grafiku porozmawiamy na końcu."
     ],
     culture: {
@@ -438,7 +438,7 @@ LINGUAI.addStrings("pl", {
           { tr: "Czy ktoś o niego pytał?" },
           { tr: "Odpowiedz, że wczoraj pytała o niego jego córka.", answerTr: "Tak, wczoraj pytała o niego jego córka." },
           { tr: "Na co jeszcze czekasz?" },
-          { tr: "Odpowiedz, że wciąż czekasz na wypis od lekarza.", answerTr: "Wciąż czekam na wypis od lekarza." }
+          { tr: "Odpowiedz, że wciąż czekasz na list lekarski.", answerTr: "Wciąż czekam na list lekarski." }
         ]
       },
       {
@@ -613,7 +613,7 @@ LINGUAI.addStrings("pl", {
     exercises: [
       {
         q: "Zlecenie wydaje ci się nietypowe. Co robisz?",
-        opts: ["Ich führe sie trotzdem aus.", "Ich frage noch einmal bei der Ärztin nach.", "Ich ändere sie selbst."],
+        opts: ["Ich führe die Anordnung trotzdem aus.", "Ich frage noch einmal bei der Ärztin nach.", "Ich ändere die Anordnung selbst."],
         why: "Nietypowe zlecenie wyjaśnia się z lekarzem przed wykonaniem: <b>Ich frage noch einmal bei der Ärztin nach</b>. Wykonanie go mimo wszystko albo samodzielna zmiana nie są bezpieczne."
       },
       {

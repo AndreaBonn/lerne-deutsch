@@ -28,7 +28,7 @@ LINGUAI.addStrings("es", {
         p: "En la Visite se habla sobre todo de <strong>qué se hace</strong>, no de quién lo hace. Por eso se usa la <strong>pasiva</strong>: <em>werden</em> conjugado + participio al final. En presente: <em>Der Verband <b>wird</b> morgen <b>gewechselt</b>.</em> En Präteritum: <em>Die Röntgenaufnahme <b>wurde</b> gestern <b>gemacht</b>.</em> Con un modal, se conjuga el modal y al final van el participio y <em>werden</em> en infinitivo: <em>Frau Lang <b>soll</b> heute <b>mobilisiert werden</b>.</em> Muchas veces quien hace la acción eres tú: <em>Bei Herrn Wolf wird ein Blutbild abgenommen</em> quiere decir que, después de la visita, la extracción le toca a enfermería."
       },
       {
-        contrast: "En español el pase de visita se cuenta sobre todo con la pasiva refleja: «se sigue con el tratamiento», «mañana se saca un hemograma», «se cambia la cura». El alemán no tiene ese «se» tan cómodo para las acciones (<em>man</em> existe, pero en la Visite suena genérico): usa la pasiva con <em>werden</em>, <em>Die Therapie wird fortgesetzt</em>. Tampoco te apoyes en la pasiva con «ser» o «estar»: <em>Der Verband ist gewechselt</em> se parece a «la cura está cambiada» y describe un estado ya terminado, no la orden. La señal que hay que captar al vuelo es <em>wird</em> o <em>wurde</em> con un participio al final de la frase: cuando oyes <em>wird ... abgenommen</em>, es una orden que alguien tiene que cumplir. Y no la confundas con el futuro: <em>wird gewechselt</em> (participio) es pasiva, «se cambia»; <em>wird wechseln</em> (infinitivo) es futuro, «cambiará». Los cargos tampoco coinciden: el <em>Assistenzarzt</em> está en formación de especialidad, más o menos un residente; el <em>Oberarzt</em> es un especialista con responsabilidad sobre una sección, cerca de un médico adjunto; el <em>Chefarzt</em> es el jefe de servicio."
+        contrast: "En español el pase de visita se cuenta sobre todo con la pasiva refleja: «se sigue con el tratamiento», «mañana se saca un hemograma», «se cambia la cura». El alemán no tiene ese «se» tan cómodo para las acciones (<em>man</em> existe, pero en la Visite suena genérico): usa la pasiva con <em>werden</em>, <em>Die Therapie wird fortgesetzt</em>. Tampoco te apoyes en la pasiva con «ser» o «estar»: <em>Der Verband ist gewechselt</em> se parece a «la cura está cambiada» y describe un estado ya terminado, no la orden. La señal que hay que captar al vuelo es <em>wird</em> o <em>wurde</em> con un participio al final de la frase: cuando oyes <em>wird ... abgenommen</em> en la Visite, casi siempre es una orden que alguien tiene que cumplir; con <em>wurde</em>, en cambio, es algo ya hecho. La pasiva en sí describe una acción: que sea una orden lo dice el contexto. Y no la confundas con el futuro: <em>wird gewechselt</em> (participio) es pasiva, «se cambia»; <em>wird wechseln</em> (infinitivo) es futuro, «cambiará». Los cargos tampoco coinciden: el <em>Assistenzarzt</em> está en formación de especialidad, más o menos un residente; el <em>Oberarzt</em> es un especialista con responsabilidad sobre una sección, cerca de un médico adjunto; el <em>Chefarzt</em> es el jefe de servicio."
       },
       {
         trap: "<em>fortsetzen</em> es un verbo separable y lleva <em>ge-</em> después del prefijo: <em>fortgesetzt</em>, nunca <em>gefortsetzt</em>. <em>mobilisieren</em> en cambio termina en <em>-ieren</em> y su participio no lleva <em>ge-</em>: <em>mobilisiert</em>, nunca <em>gemobilisiert</em>. <em>Der Befund</em> no es solo el informe escrito: <em>ohne Befund</em> significa «sin hallazgos, normal», así que un informe «sin hallazgos» es una buena noticia, no un informe que falta. Y <em>die Visite</em> no es la visita de los familiares, que se dice <em>der Besuch</em>."
@@ -53,7 +53,7 @@ LINGUAI.addStrings("es", {
         { tr: "Al señor Wolf hoy se le saca un hemograma.", note: "wird ... abgenommen: la extracción suele hacerla enfermería" },
         { tr: "La cura se cambia mañana.", note: "pasiva en presente: wird + gewechselt al final" },
         { tr: "La radiografía se hizo ayer.", note: "pasiva en Präteritum: wurde gemacht" },
-        { tr: "A la señora Lang hay que levantarla hoy.", note: "modal soll + mobilisiert werden; mobilisiert sin ge-" },
+        { tr: "Hoy hay que movilizar a la señora Lang.", note: "modal soll + mobilisiert werden; mobilisiert sin ge-" },
         { tr: "El tratamiento sigue como hasta ahora.", note: "fortsetzen es separable: fortgesetzt" },
         { tr: "¿Cuándo le dan el alta al señor Wolf?", note: "pregunta con pasiva: entlassen al final" }
       ]
@@ -129,11 +129,11 @@ LINGUAI.addStrings("es", {
       {
         q: "Ordena las palabras.",
         tr: "El tratamiento sigue como hasta ahora.",
-        why: "<i>Die Therapie wird wie bisher fortgesetzt.</i> El verbo conjugado <i>wird</i> en segunda posición, el participio <i>fortgesetzt</i> al final; <i>wie bisher</i> va en medio."
+        why: "<i>Die Therapie wird wie bisher fortgesetzt.</i> El verbo conjugado <i>wird</i> en segunda posición, el participio <i>fortgesetzt</i> al final; <i>wie bisher</i> normalmente va en medio; hablando también puede ir tras el participio, <i>wird fortgesetzt wie bisher</i>, y ese orden también se acepta."
       },
       {
         q: "Traduce (en la Visite): «Mañana por la mañana se saca un hemograma.»",
-        why: "<i>Morgen früh wird ein Blutbild abgenommen.</i> El «se» español se convierte en pasiva con <i>wird</i>. Para la extracción el verbo típico es <i>abnehmen</i>; también vale <i>gemacht</i>. <i>morgen früh</i> significa «mañana por la mañana»."
+        why: "<i>Morgen früh wird ein Blutbild abgenommen.</i> El «se» español se convierte en pasiva con <i>wird</i>. Para la extracción el verbo típico es <i>abnehmen</i>; también vale <i>gemacht</i>. En sentido estricto se extrae la sangre (<i>Blut abnehmen</i>) y el hemograma se hace con la muestra: <i>ein Blutbild abnehmen</i> es la forma abreviada habitual en planta. <i>morgen früh</i> significa «mañana por la mañana»."
       },
       {
         q: "En la Visite.",
@@ -149,7 +149,7 @@ LINGUAI.addStrings("es", {
       },
       {
         tr: "La radiografía de ayer es normal. El tratamiento sigue como hasta ahora.",
-        why: "En <i>Röntgenaufnahme</i> la <b>ö</b> es breve y el acento cae en <b>Rönt</b>; en <i>unauffällig</i> el acento cae en <b>un</b> y la <b>g</b> final suena [ç]; en <i>Therapie</i> la <b>th</b> es una simple [t] y el acento cae en la última sílaba, <b>pie</b>, como en «terapia» pero sin la <b>a</b> final."
+        why: "En <i>Röntgenaufnahme</i> la <b>ö</b> es breve y el acento cae en <b>Rönt</b>; en <i>unauffällig</i> el acento cae en <b>un</b> y la <b>g</b> final suena [ç]; en <i>Therapie</i> la <b>th</b> es una simple [t] y el acento cae en la última sílaba, <b>pie</b>, y no en <b>ra</b> como en «terapia»."
       },
       {
         tr: "Al señor Wolf hoy se le saca un hemograma.",
@@ -247,7 +247,7 @@ LINGUAI.addStrings("es", {
       {
         q: "Completa: «Ich bin nicht sicher, ___ die Anordnung noch gilt.»",
         hint: "pregunta indirecta de sí o no",
-        why: "<b>ob</b>: la frase esconde una pregunta de sí o no («¿sigue vigente la orden?»). Es el «si» de «no sé si», no el de «si llueve». <i>wenn</i> sería una condición y <i>dass</i> un hecho seguro, que aquí falta."
+        why: "<b>ob</b>: la frase esconde una pregunta de sí o no («¿sigue vigente la orden?»). Es el «si» de «no sé si», no el de «si llueve». <i>wenn</i> sería una condición; <i>dass</i> refiere un contenido y no plantea ninguna pregunta, y tras <i>nicht sicher</i> lo normal es <i>ob</i>."
       },
       {
         q: "Completa la frase.",
@@ -427,7 +427,7 @@ LINGUAI.addStrings("es", {
       },
       {
         q: "Traduce: «Mañana hablamos del cuadrante de turnos.»",
-        why: "<i>Morgen sprechen wir über den Dienstplan</i> o <i>Wir sprechen morgen über den Dienstplan</i>. «hablar de» es <i>sprechen über</i> + acusativo, no <i>von</i>; también vale <i>reden über</i>."
+        why: "<i>Morgen sprechen wir über den Dienstplan</i> o <i>Wir sprechen morgen über den Dienstplan</i>. para tratar un tema, «hablar de» es <i>sprechen über</i> + acusativo; <i>sprechen von</i> existe, pero sirve más bien para mencionar algo. También vale <i>reden über</i>."
       },
       {
         q: "En la reunión de equipo.",
@@ -613,7 +613,7 @@ LINGUAI.addStrings("es", {
     exercises: [
       {
         q: "Una orden te parece inusual. ¿Qué haces?",
-        opts: ["Ich führe sie trotzdem aus.", "Ich frage noch einmal bei der Ärztin nach.", "Ich ändere sie selbst."],
+        opts: ["Ich führe die Anordnung trotzdem aus.", "Ich frage noch einmal bei der Ärztin nach.", "Ich ändere die Anordnung selbst."],
         why: "Una orden inusual se aclara con el médico antes de ejecutarla: <b>Ich frage noch einmal bei der Ärztin nach</b>. Ejecutarla de todos modos o cambiarla por tu cuenta no son vías seguras."
       },
       {
@@ -642,7 +642,7 @@ LINGUAI.addStrings("es", {
       },
       {
         q: "Completa la frase.",
-        tr: "En la historia pone que hoy hay que sacar un hemograma.",
+        tr: "En la historia pone que hoy se saca un hemograma.",
         why: "<i><b>dass</b></i> refiere lo que pone; en la subordinada la pasiva termina en <i>abgenommen <b>wird</b></i>."
       },
       {

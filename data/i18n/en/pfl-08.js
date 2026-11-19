@@ -28,7 +28,7 @@ LINGUAI.addStrings("en", {
         p: "On rounds people talk mostly about <strong>what gets done</strong>, not about who does it. That is why German uses the <strong>passive</strong>: conjugated <em>werden</em> + past participle at the end. In the present: <em>Der Verband <b>wird</b> morgen <b>gewechselt</b>.</em> In the Präteritum: <em>Die Röntgenaufnahme <b>wurde</b> gestern <b>gemacht</b>.</em> With a modal, the modal is conjugated and the participle plus the infinitive <em>werden</em> go to the end: <em>Frau Lang <b>soll</b> heute <b>mobilisiert werden</b>.</em> Often the person doing it is you: <em>Bei Herrn Wolf wird ein Blutbild abgenommen</em> means that after rounds the blood draw is a nursing task."
       },
       {
-        contrast: "English uses the passive on rounds too (“labs will be drawn in the morning”, “the dressing gets changed today”), so the idea is not new to you. The trap is the auxiliary. English builds the passive with <em>be</em> or <em>get</em>; German uses <em>werden</em>, and <em>sein</em> + participle describes a state, not an action: <em>Der Verband ist gewechselt</em> means “the dressing is (already) changed”, while <em>Der Verband wird gewechselt</em> means “the dressing is being / will be changed”, which is the order. The second trap is the future: <em>werden</em> also builds the future, so watch the last word. <em>wird gewechselt</em> (participle) is passive, “gets changed”; <em>wird wechseln</em> (infinitive) is future, “will change”. And the cast on rounds does not map one to one onto a US team: there are no residents and attendings by those names. The <em>Assistenzarzt</em> is a physician in specialty training (roughly a resident), the <em>Oberarzt</em> is a senior specialist supervising a section (roughly an attending), and the <em>Chefarzt</em> heads the whole department."
+        contrast: "English uses the passive on rounds too (“labs will be drawn in the morning”, “the dressing gets changed today”), so the idea is not new to you. The trap is the auxiliary. English builds the passive with <em>be</em> or <em>get</em>; German uses <em>werden</em>, and <em>sein</em> + participle describes a state, not an action: <em>Der Verband ist gewechselt</em> means “the dressing is (already) changed”, while <em>Der Verband wird gewechselt</em> means “the dressing is being / will be changed”, which on rounds is usually the order. The second trap is the future: <em>werden</em> also builds the future, so watch the last word. <em>wird gewechselt</em> (participle) is passive, “gets changed”; <em>wird wechseln</em> (infinitive) is future, “will change”. And the cast on rounds does not map one to one onto a US team: there are no residents and attendings by those names. The <em>Assistenzarzt</em> is a physician in specialty training (roughly a resident), the <em>Oberarzt</em> is a senior specialist supervising a section (roughly an attending), and the <em>Chefarzt</em> heads the whole department."
       },
       {
         trap: "<em>fortsetzen</em> is a separable verb and takes <em>ge-</em> after the prefix: <em>fortgesetzt</em>, never <em>gefortsetzt</em>. <em>mobilisieren</em> ends in <em>-ieren</em>, so its participle has no <em>ge-</em>: <em>mobilisiert</em>, never <em>gemobilisiert</em>. And <em>der Befund</em> is a result or finding, not only the written report: <em>ohne Befund</em> means “normal, nothing found”, so a report “without findings” is good news, not a missing report. Do not confuse <em>die Visite</em> with an English “visit”: a visit from family is <em>der Besuch</em>."
@@ -129,11 +129,11 @@ LINGUAI.addStrings("en", {
       {
         q: "Put the words in order.",
         tr: "The treatment continues as before.",
-        why: "<i>Die Therapie wird wie bisher fortgesetzt.</i> The conjugated verb <i>wird</i> in second position, the participle <i>fortgesetzt</i> at the end; <i>wie bisher</i> goes in the middle."
+        why: "<i>Die Therapie wird wie bisher fortgesetzt.</i> The conjugated verb <i>wird</i> in second position, the participle <i>fortgesetzt</i> at the end; <i>wie bisher</i> normally goes in the middle; in speech it can also follow the participle, <i>wird fortgesetzt wie bisher</i>, and that order is accepted too."
       },
       {
         q: "Translate (on rounds): “A CBC will be drawn tomorrow morning.”",
-        why: "<i>Morgen früh wird ein Blutbild abgenommen.</i> English “will be drawn” becomes <i>wird</i> + participle, not <i>wird ... sein</i>. The usual verb for a blood draw is <i>abnehmen</i>; <i>gemacht</i> also works. <i>morgen früh</i> means “tomorrow morning”."
+        why: "<i>Morgen früh wird ein Blutbild abgenommen.</i> English “will be drawn” becomes <i>wird</i> + participle, not <i>wird ... sein</i>. The usual verb for a blood draw is <i>abnehmen</i>; <i>gemacht</i> also works. Strictly, what is drawn is the blood (<i>Blut abnehmen</i>) and the CBC is run on the sample: <i>ein Blutbild abnehmen</i> is everyday ward shorthand. <i>morgen früh</i> means “tomorrow morning”."
       },
       {
         q: "On rounds.",
@@ -247,7 +247,7 @@ LINGUAI.addStrings("en", {
       {
         q: "Complete: “Ich bin nicht sicher, ___ die Anordnung noch gilt.”",
         hint: "indirect yes/no question",
-        why: "<b>ob</b>: the clause hides a yes/no question (“is the order still valid?”). In English you could say “whether” here, which is the sign. <i>wenn</i> would be a condition and <i>dass</i> a certain fact, which is missing here."
+        why: "<b>ob</b>: the clause hides a yes/no question (“is the order still valid?”). In English you could say “whether” here, which is the sign. <i>wenn</i> would be a condition; <i>dass</i> reports a content and asks nothing, and after <i>nicht sicher</i> the normal choice is <i>ob</i>."
       },
       {
         q: "Complete the sentence.",
@@ -349,7 +349,7 @@ LINGUAI.addStrings("en", {
         { tr: "I'll take care of the new admission.", note: "um die Neuaufnahme: feminine accusative" },
         { tr: "Today we're talking about the schedule.", note: "sprechen über + accusative: über den Dienstplan" },
         { tr: "The daughter asked about the results.", note: "sich erkundigen nach + dative: nach dem Befund; erkundigt without ge-" },
-        { tr: "I'm still waiting for the discharge letter.", note: "warten auf + accusative: auf den Arztbrief" },
+        { tr: "I'm still waiting for the doctor's letter.", note: "warten auf + accusative: auf den Arztbrief" },
         { tr: "We'll talk about that at the end.", note: "darüber refers back to a topic already mentioned" }
       ]
     },
@@ -374,7 +374,7 @@ LINGUAI.addStrings("en", {
       "His daughter asked about the results yesterday. I told her the doctor will talk to her.",
       "I'll make sure the doctor calls her today.",
       "Good. And who's taking care of the new admission this afternoon?",
-      "I'll do it. But I'm still waiting for the discharge letter.",
+      "I'll do it. But I'm still waiting for the doctor's letter.",
       "Okay. We'll talk about the schedule at the end."
     ],
     culture: {
@@ -399,7 +399,7 @@ LINGUAI.addStrings("en", {
       {
         q: "Complete the sentence.",
         tr: "The daughter asked about the results.",
-        why: "<i>sich erkundigen <b>nach</b></i> + dative: <i>nach dem Befund</i>, not <i>über</i>, even though English says “about”. The participle <i><b>erkundigt</b></i> has no <i>ge-</i>, because <i>er-</i> is an inseparable prefix."
+        why: "<i>sich erkundigen <b>nach</b></i> + dative: <i>nach dem Befund</i>: to ask after a result or a person German uses <i>nach</i>, even though English says “about”. <i>sich über etwas erkundigen</i> exists, but it means gathering information on a topic. The participle <i><b>erkundigt</b></i> has no <i>ge-</i>, because <i>er-</i> is an inseparable prefix."
       },
       {
         q: "Which sentences are correct?",
@@ -438,7 +438,7 @@ LINGUAI.addStrings("en", {
           { tr: "Has anyone asked about him?" },
           { tr: "Say that his daughter asked about him yesterday.", answerTr: "Yes, his daughter asked about him yesterday." },
           { tr: "What are you still waiting for?" },
-          { tr: "Say that you are still waiting for the discharge letter.", answerTr: "I'm still waiting for the discharge letter." }
+          { tr: "Say that you are still waiting for the doctor's letter.", answerTr: "I'm still waiting for the doctor's letter." }
         ]
       },
       {
@@ -470,7 +470,7 @@ LINGUAI.addStrings("en", {
         p: "To ask for something politely, German uses the <strong>Konjunktiv II</strong>, the equivalent of “would” and “could”. Four phrases cover almost every call: <em>Ich <b>hätte</b> eine Frage zu ...</em> (I'd have a question, i.e. I have a question), <em><b>Könnten</b> Sie mir ... durchgeben?</em> (could you ...?), <em><b>Wäre</b> es möglich, ... zu schicken?</em> (would it be possible ...?), <em><b>Würden</b> Sie mich bitte zurückrufen?</em> (would you call me back?). For a wish: <em>Ich <b>würde</b> gern mit Doktor Becker sprechen.</em> After <em>Wäre es möglich</em> comes the infinitive with <em>zu</em>, at the end: <em>den Befund heute noch <b>zu schicken</b></em>."
       },
       {
-        contrast: "English makes requests polite in the same way, with “could you” and “would you”, so you already have the reflex. Two things differ. First, German has its own short forms only for a few frequent verbs (<em>hätte, wäre, könnte</em>, and <em>würde</em> itself); for all others it uses <em>würde</em> + infinitive, just like English “would” + verb: “would you call me back?” is <em>Würden Sie mich zurückrufen?</em>, and the infinitive goes to the end of the clause, not right after “would”. Second, English often softens with “can you” or even a plain “I need the labs on room five”; on a German phone line <em>Können Sie ...?</em> is acceptable, but a bare statement sounds abrupt. <em>Geben Sie mir die Werte!</em> is an order, and <em>Sie können mir die Werte durchgeben</em> sounds like you are granting permission. The safe default on the phone is <em>Könnten Sie ...?</em> or <em>Würden Sie ...?</em>"
+        contrast: "English makes requests polite in the same way, with “could you” and “would you”, so you already have the reflex. Two things differ. First, German uses its own short forms with <em>haben</em>, <em>sein</em>, the modals and a few other frequent verbs (<em>hätte, wäre, könnte, müsste, dürfte</em>, and <em>würde</em> itself); for most other verbs it uses <em>würde</em> + infinitive, just like English “would” + verb: “would you call me back?” is <em>Würden Sie mich zurückrufen?</em>, and the infinitive goes to the end of the clause, not right after “would”. Second, English often softens with “can you” or even a plain “I need the labs on room five”; on a German phone line <em>Können Sie ...?</em> is acceptable, but a bare statement sounds abrupt. <em>Geben Sie mir die Werte!</em> is an order, and <em>Sie können mir die Werte durchgeben</em> sounds like you are granting permission. The safe default on the phone is <em>Könnten Sie ...?</em> or <em>Würden Sie ...?</em>"
       },
       {
         trap: "<em>Ich hätte eine Frage</em> does not mean the question is hypothetical: it is simply the polite way to say “I have a question”, like English “I'd like to ask”. Do not confuse <em>hätte</em> (would have) with <em>hatte</em> (had): the only difference is the umlaut, and on the phone you hear it in the vowel, [ɛ] versus [a]. <em>durchgeben</em> is separable: <em>Könnten Sie mir die Werte <b>durchgeben</b>?</em>, but <em>Das Labor <b>gibt</b> die Werte <b>durch</b>.</em> And <em>der Hausarzt</em> is the primary care doctor, not a doctor who makes house calls."
@@ -558,7 +558,7 @@ LINGUAI.addStrings("en", {
           "Ich würde gern mit Doktor Becker sprechen.",
           "Ich würde gern mit Doktor Becker zu sprechen."
         ],
-        why: "<i>hätte</i> is the correct polite form; <i>gern</i> goes with <i>würde</i>, not with <i>habe eine Frage</i>. After <i>Wäre es möglich</i> you need <i>zu</i>; after <i>würde gern</i> the infinitive has no <i>zu</i>, just as English “I'd like to speak” loses the “to” after “would”."
+        why: "<i>hätte</i> is the correct polite form; <i>gern</i> goes with <i>würde</i>, not with <i>habe eine Frage</i>. After <i>Wäre es möglich</i> you need <i>zu</i>; after <i>würde gern</i> the infinitive has no <i>zu</i>, just as English “I would speak” has no “to” after “would”."
       },
       {
         q: "Pick the right definite article for each noun.",
@@ -613,7 +613,7 @@ LINGUAI.addStrings("en", {
     exercises: [
       {
         q: "An order seems unusual to you. What do you do?",
-        opts: ["Ich führe sie trotzdem aus.", "Ich frage noch einmal bei der Ärztin nach.", "Ich ändere sie selbst."],
+        opts: ["Ich führe die Anordnung trotzdem aus.", "Ich frage noch einmal bei der Ärztin nach.", "Ich ändere die Anordnung selbst."],
         why: "An unusual order is clarified with the physician before you carry it out: <b>Ich frage noch einmal bei der Ärztin nach</b>. Carrying it out anyway or changing it yourself are not safe options."
       },
       {
@@ -656,7 +656,7 @@ LINGUAI.addStrings("en", {
       },
       {
         q: "Translate: “The dressing will be changed tomorrow.”",
-        why: "<i>Morgen wird der Verband gewechselt</i> or <i>Der Verband wird morgen gewechselt</i>: present passive with <i>wird</i> and the participle at the end. No <i>sein</i> and no future auxiliary on top."
+        why: "<i>Morgen wird der Verband gewechselt</i> or <i>Der Verband wird morgen gewechselt</i>: present passive with <i>wird</i> and the participle at the end. No <i>sein</i>. <i>Der Verband wird morgen gewechselt werden</i> is also correct and accepted, but the present passive is what you hear on the ward."
       },
       {
         tr: "The treatment continues as before.",

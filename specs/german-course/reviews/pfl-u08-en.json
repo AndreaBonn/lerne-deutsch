@@ -1,0 +1,38 @@
+{
+  "bundleHash": "5fd3ebb5386b361c548d15731a0f1fea4d858d0790e3913ee4eb7b8e96cf8a0a",
+  "findings": [
+    {
+      "kind": "Lessico e collocazione",
+      "msg": "«Ein Blutbild abnehmen» ricorre nell’unità, ma si preleva il sangue, mentre l’emocromo viene eseguito o determinato. Usare per esempio «Bei Herrn Wolf wird heute Blut für ein Blutbild abgenommen» e adeguare gli esercizi e le traduzioni che ripetono la collocazione.",
+      "path": "neutral.lessons[0].grammar.examples[0].it"
+    },
+    {
+      "kind": "Risposte corrette e Rektion",
+      "msg": "Anche «sich über jemanden erkundigen» è corretto: la seconda scelta è quindi una risposta valida oltre a quella indicata. Sostituirla con un distrattore realmente scorretto oppure accettare entrambe. Correggere anche la spiegazione del cloze che esclude «über».",
+      "path": "merged.lessons[2].exercises[9].lines[3].choices[1]"
+    },
+    {
+      "kind": "Pronuncia",
+      "msg": "In «unauffällig» l’accento principale cade su «auf», non su «un». Correggere l’indicazione per l’ascolto.",
+      "path": "merged.lessons[0].exercises[10].why"
+    },
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "L’affermazione che solo pochi verbi abbiano forme proprie di Konjunktiv II e che tutti gli altri usino «würde» è falsa: per esempio «müsste», «dürfte», «sollte» e «wollte» sono forme comuni. Presentare «würde» come alternativa frequente per molti altri verbi, senza escludere le forme proprie.",
+      "path": "merged.lessons[3].theory[2].contrast"
+    },
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "La frase inglese «I'd like to speak» conserva «to» davanti a «speak»: non è un esempio della sua omissione dopo «would». Usare «I would speak» per il confronto, oppure eliminare il paragone.",
+      "path": "merged.lessons[3].exercises[4].why"
+    },
+    {
+      "kind": "Risposte alternative",
+      "msg": "La traduzione futura passiva «Der Verband wird morgen gewechselt werden» è grammaticalmente corretta e fedele, ma non compare tra le risposte accettate. Aggiungerla e precisare che il presente passivo è più naturale, anziché affermare che non si usa un ausiliare del futuro.",
+      "path": "merged.test.exercises[8]"
+    }
+  ],
+  "lang": "en",
+  "unit": "pfl-u08",
+  "verdict": "fail"
+}

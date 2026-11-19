@@ -362,7 +362,7 @@ LINGUAI.addUnits("PFL", [
                 sp: "TY",
                 choices: [
                   "Ja, seine Tochter hat gestern nach ihm erkundigt.",
-                  "Ja, seine Tochter hat sich gestern über ihn erkundigt.",
+                  "Ja, seine Tochter hat sich gestern auf ihn erkundigt.",
                   "Ja, seine Tochter hat sich gestern nach ihm erkundigt."
                 ],
                 a: 2
@@ -547,7 +547,12 @@ LINGUAI.addUnits("PFL", [
         {
           t: "trans",
           dir: "toIt",
-          a: ["Morgen wird der Verband gewechselt", "Der Verband wird morgen gewechselt"]
+          a: [
+            "Morgen wird der Verband gewechselt",
+            "Der Verband wird morgen gewechselt",
+            "Morgen wird der Verband gewechselt werden",
+            "Der Verband wird morgen gewechselt werden"
+          ]
         },
         {
           t: "listen",

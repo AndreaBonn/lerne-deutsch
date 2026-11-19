@@ -1,0 +1,38 @@
+{
+  "bundleHash": "938e579628f610fe88e33b2720e42be3a89e12c3ff1a18002e87837f2b11ce5a",
+  "findings": [
+    {
+      "kind": "Lessico medico e idiomaticità",
+      "msg": "«Ein Blutbild abnehmen» confonde il prelievo di sangue con l'emocromo, che viene eseguito o determinato sul campione. Correggere in tutta l'unità con «Blut abnehmen» per il prelievo oppure «ein Blutbild machen/bestimmen» per l'esame, adeguando traduzioni e risposte.",
+      "path": "neutral.lessons[0].grammar.examples[0].it"
+    },
+    {
+      "kind": "Pronuncia",
+      "msg": "In «unauffällig» l'accento principale cade su «auf», non su «un». Correggere l'indicazione per l'ascolto.",
+      "path": "merged.lessons[0].exercises[10].why"
+    },
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "Il passivo con «werden» non segnala necessariamente una prescrizione: può descrivere anche un fatto presente o passato, come «wurde gestern gemacht». Distinguere la forma passiva dall'interpretazione come prescrizione, che dipende dal contesto.",
+      "path": "merged.lessons[0].theory[2].contrast"
+    },
+    {
+      "kind": "Risposte alternative",
+      "msg": "«Ich bin nicht sicher, dass die Anordnung noch gilt» è una frase tedesca possibile con il senso richiesto dal francese «Je ne suis pas sûr que...». Accettare anche «dass» oppure rendere esplicito che si esercita l'interrogativa indiretta con «ob» e correggere la spiegazione che presenta «dass» come necessariamente certo.",
+      "path": "merged.lessons[1].exercises[2]"
+    },
+    {
+      "kind": "Pronuncia",
+      "msg": "In «erkundigt» il gruppo finale si pronuncia normalmente [ɪkt], con [k], non con [ç]. Correggere la trascrizione.",
+      "path": "merged.lessons[2].exercises[10].why"
+    },
+    {
+      "kind": "Traduzione lessicale",
+      "msg": "«Verbinden» in questo contesto significa mettere in comunicazione o passare una chiamata a qualcuno; «passer un appel» significa normalmente effettuare una chiamata. Sostituire con «mettre en relation» o «transférer un appel».",
+      "path": "merged.lessons[3].exercises[6].pairs[3].tr"
+    }
+  ],
+  "lang": "fr",
+  "unit": "pfl-u08",
+  "verdict": "fail"
+}

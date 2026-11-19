@@ -1,0 +1,43 @@
+{
+  "bundleHash": "3c7ae67fe55c21e46d701d68a242ea30938577572c69e714e38c06b6b8391767",
+  "findings": [
+    {
+      "kind": "lessico e collocazione",
+      "msg": "«Ein Blutbild abnehmen» associa il prelievo al referto invece che al sangue. Usare «Blut für ein Blutbild abnehmen» oppure «ein Blutbild machen/erstellen» e correggere le occorrenze analoghe, comprese quelle nel test.",
+      "path": "neutral.lessons[0].grammar.examples[0].it"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In «Röntgen» la ö è lunga, non breve. Correggere la spiegazione in «ö jest długie».",
+      "path": "merged.lessons[0].exercises[10].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Wird» con un participio segnala il passivo, ma non necessariamente un ordine da eseguire: può descrivere anche un fatto o un'azione abituale. Limitare l'interpretazione come zlecenie ai contesti in cui è chiara.",
+      "path": "merged.lessons[0].theory[2].contrast"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Ob die Anordnung noch gilt?» può essere una domanda autonoma che esprime dubbio o riflessione. Spiegare che una domanda diretta neutra usa «Gilt die Anordnung noch?», senza presentare la forma con «ob» come sempre incompleta.",
+      "path": "merged.lessons[1].theory[2].contrast"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In «erkundigt» la g davanti a t si pronuncia normalmente [k], non [ç]. Correggere la trascrizione.",
+      "path": "merged.lessons[2].exercises[10].why"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Arztbrief» è una lettera o relazione medica e non indica necessariamente una lettera di dimissione. Usare «list lekarski» o «dokumentacja od lekarza» e correggere le altre traduzioni della stessa espressione nella lezione.",
+      "path": "merged.lessons[2].grammar.examples[4].tr"
+    },
+    {
+      "kind": "chiave di risposta",
+      "msg": "Le opzioni «Ich führe sie trotzdem aus» e «Ich ändere sie selbst» riprendono grammaticalmente «die Anordnung», ma la consegna polacca non introduce un antecedente tedesco. Rendere autonome le opzioni, per esempio «Ich führe die Anordnung trotzdem aus» e «Ich ändere die Anordnung selbst».",
+      "path": "merged.test.exercises[0].opts"
+    }
+  ],
+  "lang": "pl",
+  "unit": "pfl-u08",
+  "verdict": "fail"
+}

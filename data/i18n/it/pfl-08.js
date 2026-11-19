@@ -28,7 +28,7 @@ LINGUAI.addStrings("it", {
         p: "Alla Visite si parla soprattutto di <strong>che cosa si fa</strong>, non di chi lo fa. Per questo si usa il <strong>passivo</strong>: <em>werden</em> coniugato + participio in fondo. Al presente: <em>Der Verband <b>wird</b> morgen <b>gewechselt</b>.</em> Al Präteritum: <em>Die Röntgenaufnahme <b>wurde</b> gestern <b>gemacht</b>.</em> Con un modale il modale si coniuga e alla fine stanno participio e <em>werden</em> all'infinito: <em>Frau Lang <b>soll</b> heute <b>mobilisiert werden</b>.</em> Spesso chi fa l'azione sei proprio tu: <em>Bei Herrn Wolf wird ein Blutbild abgenommen</em> vuol dire che dopo la visita il prelievo tocca all'assistenza."
       },
       {
-        contrast: "In italiano il giro visita usa soprattutto il «si» impersonale: «si continua la terapia», «domani si fa un emocromo», «si cambia la medicazione». Il tedesco non ha un «si» impersonale così comodo per le azioni (<em>man</em> esiste, ma alla Visite suona generico): usa il passivo con <em>werden</em>, <em>Die Therapie wird fortgesetzt</em>. Il segnale da cogliere al volo è <em>wird</em> o <em>wurde</em> con un participio alla fine della frase: quando senti <em>wird ... abgenommen</em>, <em>wird ... gewechselt</em>, è una prescrizione che qualcuno deve eseguire. Attenzione a non confondere il passivo con il futuro: <em>wird gewechselt</em> (participio) è passivo, «viene cambiato»; <em>wird wechseln</em> (infinito) è futuro, «cambierà»."
+        contrast: "In italiano il giro visita usa soprattutto il «si» impersonale: «si continua la terapia», «domani si fa un emocromo», «si cambia la medicazione». Il tedesco non ha un «si» impersonale così comodo per le azioni (<em>man</em> esiste, ma alla Visite suona generico): usa il passivo con <em>werden</em>, <em>Die Therapie wird fortgesetzt</em>. Il segnale da cogliere al volo è <em>wird</em> o <em>wurde</em> con un participio alla fine della frase: quando senti <em>wird ... abgenommen</em>, <em>wird ... gewechselt</em>, alla Visite è quasi sempre una prescrizione che qualcuno deve eseguire; con <em>wurde</em> invece è una cosa già fatta. Il passivo in sé descrive un'azione: che sia una prescrizione lo dice il contesto. Attenzione a non confondere il passivo con il futuro: <em>wird gewechselt</em> (participio) è passivo, «viene cambiato»; <em>wird wechseln</em> (infinito) è futuro, «cambierà»."
       },
       {
         trap: "<em>fortsetzen</em> è un verbo separabile e prende <em>ge-</em> dopo il prefisso: <em>fortgesetzt</em>, mai <em>gefortsetzt</em>. <em>mobilisieren</em> invece finisce in <em>-ieren</em> e il participio non ha <em>ge-</em>: <em>mobilisiert</em>, mai <em>gemobilisiert</em>. E <em>der Befund</em> non è solo il referto scritto: <em>ohne Befund</em> vuol dire «nella norma», quindi un referto «senza reperti» è una buona notizia, non un referto mancante."
@@ -129,11 +129,11 @@ LINGUAI.addStrings("it", {
       {
         q: "Metti in ordine le parole.",
         tr: "La terapia prosegue come finora.",
-        why: "<i>Die Therapie wird wie bisher fortgesetzt.</i> Il verbo coniugato <i>wird</i> al secondo posto, il participio <i>fortgesetzt</i> in fondo; <i>wie bisher</i> sta nel mezzo."
+        why: "<i>Die Therapie wird wie bisher fortgesetzt.</i> Il verbo coniugato <i>wird</i> al secondo posto, il participio <i>fortgesetzt</i> in fondo; <i>wie bisher</i> di norma sta nel mezzo; a voce si sente anche dopo il participio, <i>wird fortgesetzt wie bisher</i>, e anche quell'ordine è accettato."
       },
       {
         q: "Traduci (alla Visite): «Domani mattina si fa un emocromo.»",
-        why: "<i>Morgen früh wird ein Blutbild abgenommen.</i> Il «si» italiano diventa passivo con <i>wird</i>. Per il prelievo il verbo tipico è <i>abnehmen</i>; va bene anche <i>gemacht</i>. <i>morgen früh</i> vuol dire «domani mattina»."
+        why: "<i>Morgen früh wird ein Blutbild abgenommen.</i> Il «si» italiano diventa passivo con <i>wird</i>. Per il prelievo il verbo tipico è <i>abnehmen</i>; va bene anche <i>gemacht</i>. A rigore si preleva il sangue (<i>Blut abnehmen</i>) e l'emocromo si fa sul campione: <i>ein Blutbild abnehmen</i> è l'abbreviazione corrente in reparto. <i>morgen früh</i> vuol dire «domani mattina»."
       },
       {
         q: "Alla Visite.",
@@ -247,7 +247,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Completa: «Ich bin nicht sicher, ___ die Anordnung noch gilt.»",
         hint: "domanda indiretta sì/no",
-        why: "<b>ob</b>: la frase nasconde una domanda sì/no («la prescrizione vale ancora?»). <i>wenn</i> sarebbe una condizione e <i>dass</i> un fatto certo, che qui manca."
+        why: "<b>ob</b>: la frase nasconde una domanda sì/no («la prescrizione vale ancora?»). <i>wenn</i> sarebbe una condizione; <i>dass</i> riferisce un contenuto e non apre una domanda, e dopo <i>nicht sicher</i> la scelta normale è <i>ob</i>."
       },
       {
         q: "Completa la frase.",
@@ -494,7 +494,7 @@ LINGUAI.addStrings("it", {
       },
       examples: [
         { tr: "Avrei una domanda su un farmaco.", note: "hätte: forma cortese di haben" },
-        { tr: "Potrebbe comunicarmi gli esami di laboratorio del signor Wolf?", note: "könnten + durchgeben in fondo" },
+        { tr: "Potrebbe comunicarmi i valori di laboratorio del signor Wolf?", note: "könnten + durchgeben in fondo" },
         { tr: "Sarebbe possibile mandare il referto ancora oggi?", note: "Wäre es möglich + infinito con zu in fondo" },
         { tr: "Mi richiamerebbe, per favore?", note: "würden + infinito: zurückrufen in fondo" },
         { tr: "Vorrei parlare con il dottor Becker.", note: "würde gern + infinito" },
@@ -613,7 +613,7 @@ LINGUAI.addStrings("it", {
     exercises: [
       {
         q: "Una prescrizione ti sembra insolita. Che cosa fai?",
-        opts: ["Ich führe sie trotzdem aus.", "Ich frage noch einmal bei der Ärztin nach.", "Ich ändere sie selbst."],
+        opts: ["Ich führe die Anordnung trotzdem aus.", "Ich frage noch einmal bei der Ärztin nach.", "Ich ändere die Anordnung selbst."],
         why: "Una prescrizione insolita si chiarisce con il medico prima di eseguirla: <b>Ich frage noch einmal bei der Ärztin nach</b>. Eseguirla comunque o cambiarla da sola non sono vie sicure."
       },
       {
@@ -647,7 +647,7 @@ LINGUAI.addStrings("it", {
       },
       {
         q: "Metti in ordine le parole.",
-        tr: "Stiamo ancora aspettando gli esami di laboratorio.",
+        tr: "Stiamo ancora aspettando i valori di laboratorio.",
         why: "<i>Wir warten noch auf die Laborwerte.</i> <i>warten auf</i> + accusativo; <i>noch</i> viene prima della preposizione."
       },
       {

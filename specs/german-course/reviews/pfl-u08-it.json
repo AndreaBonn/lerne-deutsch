@@ -1,0 +1,28 @@
+{
+  "bundleHash": "6f1cf100ead36c1b6472ab3ebce5716a6e2fa3b60fce18f9764e7ccd02a776d2",
+  "findings": [
+    {
+      "kind": "lessico medico e collocazione",
+      "msg": "«Ein Blutbild abnehmen» non è una collocazione appropriata: si preleva il sangue e si esegue l'emocromo. Sostituire per esempio con «Bei Herrn Wolf wird heute Blut für ein Blutbild abgenommen» oppure «Heute wird ein Blutbild erstellt». Correggere anche le altre occorrenze della stessa formulazione nelle lezioni e nel test, comprese le soluzioni accettate.",
+      "path": "neutral.lessons[0].grammar.examples[0].it"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Dass» non introduce necessariamente un fatto certo: dopo «Ich bin nicht sicher, dass ...» può esprimere incertezza. In questo esercizio «ob» è la scelta attesa perché introduce una domanda indiretta sì/no; riformulare la spiegazione senza attribuire certezza a tutte le subordinate con «dass».",
+      "path": "merged.lessons[1].exercises[2].why"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In «erkundigt» la sequenza finale si pronuncia normalmente [ɪkt], non [ɪçt]: davanti a «t» la g finale della radice è [k]. Correggere la nota fonetica.",
+      "path": "merged.lessons[2].exercises[10].why"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Laborwerte» significa «valori di laboratorio», non «esami di laboratorio». Correggere la traduzione per conservare la distinzione tra risultati numerici ed esami, anche nel test.",
+      "path": "merged.lessons[3].grammar.examples[1].tr"
+    }
+  ],
+  "lang": "it",
+  "unit": "pfl-u08",
+  "verdict": "fail"
+}
