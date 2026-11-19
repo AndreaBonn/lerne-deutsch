@@ -250,3 +250,25 @@ describe("the backup file", () => {
     assert.equal(box.pobrania.zwolnione.length, 1);
   });
 });
+
+describe("the daily activity and study time", () => {
+  /* The weekly bars on the progress screen read stats.days (views-progress.js);
+     the DOM tests write that map by hand, so only here does recordLesson
+     have to fill it. */
+  test("the correct answers of two lessons on the same day add up in that day's bar", () => {
+    const box = silnik("2026-03-10");
+    box.Core.recordLesson("a1-u01-l1", 8, 10, 0);
+    box.Core.recordLesson("a1-u01-l2", 5, 10, 0);
+    const dni = box.Core.state.stats.days;
+    const wpisy = Object.keys(dni).filter((k) => dni[k] > 0);
+    assert.equal(wpisy.length, 1, "both lessons land on one day");
+    assert.equal(dni[wpisy[0]], 13);
+  });
+
+  test("the seconds of a lesson are added to the study time in whole minutes", () => {
+    const box = silnik("2026-03-10");
+    box.Core.recordLesson("a1-u01-l1", 8, 10, 120);
+    box.Core.recordLesson("a1-u01-l2", 8, 10, 200);
+    assert.equal(box.Core.state.minutes, 2 + 3);
+  });
+});
