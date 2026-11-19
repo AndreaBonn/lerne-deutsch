@@ -55,6 +55,12 @@ describe("whether the server may be asked again", () => {
     assert.equal(R.sprawdzac(1000, 1000 + R.PRZERWA), true);
   });
 
+  test("the interval is fifteen minutes, as CLAUDE.md promises", () => {
+    const MINUTA = 60 * 1000;
+    assert.equal(R.sprawdzac(1000, 1000 + 14 * MINUTA), false);
+    assert.equal(R.sprawdzac(1000, 1000 + 15 * MINUTA), true);
+  });
+
   /* A timezone change or a clock correction yields a negative gap. Without a
      branch of its own that would read as "not yet" for as long as the
      correction was — that is, silence until the page is reloaded. */
