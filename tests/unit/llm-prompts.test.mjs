@@ -330,6 +330,24 @@ describe("what reaches the model in edge cases", () => {
     assert.match(p.system, /Du kaufst Brötchen\./);
   });
 
+  test("a nursing scene sends its real CEFR level, never the PFL track code", () => {
+    /* PFL is a parallel track registered like a level, not a CEFR level. The
+       chat prompt reads `cefr` straight from the scene, so a scene tagged
+       "PFL" would ask the model for "level PFL of the CEFR" and get a guess. */
+    const box = loadEngine({ files: ["data/core/chat-scenarios.js", "assets/js/llm-prompts.js"] }).sandbox;
+    const sceny = Array.from(box.CHAT_SCENARIOS);
+    const atteso = { "pflege-schmerz": "B1", "pflege-angehoerige": "B2", "pflege-uebergabe": "B2" };
+    for (const id of Object.keys(atteso)) {
+      const sc = sceny.find((s) => s.id === id);
+      assert.ok(sc, "missing scene " + id);
+      const p = box.LlmPrompts.chat("it", sc.cefr, sc, "Guten Tag");
+      assert.match(p.system, new RegExp("level " + atteso[id] + " of the CEFR"), id);
+      assert.doesNotMatch(p.system, /PFL/, id);
+      /* Paired: the scene's own role reaches the prompt, so the check above ran on it. */
+      assert.ok(p.system.indexOf(sc.ruolo) > 0, id);
+    }
+  });
+
   test("without a scene the conversation falls back to A2 and a friendly speaker", () => {
     const p = prompts().chat("pl", null, null, "Hallo");
     assert.match(p.system, /level A2/);

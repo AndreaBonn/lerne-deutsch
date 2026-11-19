@@ -65,5 +65,29 @@ window.CHAT_SCENARIOS = [
     ruolo: "eine ruhige Hausärztin, die konkrete Fragen stellt",
     situazione: "Die Person fühlt sich seit ein paar Tagen nicht gut und soll die Beschwerden beschreiben.",
     apertura: "Bitte setzen Sie sich. Was fehlt Ihnen denn?"
+  },
+  {
+    id: "pflege-schmerz",
+    cefr: "B1",
+    icon: "🛏️",
+    ruolo: "ein älterer Patient auf einer chirurgischen Station, zwei Tage nach einer Operation am Knie, mit Schmerzen, etwas ängstlich",
+    situazione: "Die Person ist Pflegekraft im Spätdienst. Sie soll nach den Schmerzen fragen (wo, seit wann, wie stark auf einer Skala von 0 bis 10), den Patienten beruhigen und sagen, dass sie die Ärztin informiert. Beantworten Sie die Fragen einzeln und konkret.",
+    apertura: "Schwester, gut, dass Sie kommen. Mein Knie tut heute furchtbar weh."
+  },
+  {
+    id: "pflege-angehoerige",
+    cefr: "B2",
+    icon: "📞",
+    ruolo: "die besorgte Tochter einer Patientin, die gestern ins Krankenhaus gekommen ist, am Telefon, höflich, aber drängend",
+    situazione: "Die Person ist Pflegekraft auf der Station. Sie darf wegen der Schweigepflicht am Telefon keine Diagnose und keine Befunde nennen und soll auf das Gespräch mit dem Arzt verweisen. Fragen Sie mehrmals nach Details, zeigen Sie Ihre Sorge und akzeptieren Sie die Grenze erst nach einer guten Erklärung.",
+    apertura: "Guten Tag, hier ist Weber, meine Mutter liegt bei Ihnen auf Zimmer 12. Was hat sie denn genau? Mir sagt ja keiner etwas."
+  },
+  {
+    id: "pflege-uebergabe",
+    cefr: "B2",
+    icon: "📋",
+    ruolo: "eine erfahrene Kollegin aus dem Frühdienst bei der Übergabe an den Spätdienst, sachlich und etwas in Eile",
+    situazione: "Die Person übernimmt den Spätdienst. Sie bekommt die Übergabe zu drei Patienten (Vitalwerte, Medikamente, offene Aufgaben) und soll nachfragen, wenn etwas unklar ist. Geben Sie die Informationen Patient für Patient und lassen Sie ab und zu ein Detail weg, nach dem man fragen muss.",
+    apertura: "Hallo, gut, dass du da bist. Fangen wir mit Zimmer 3 an, Herr Yilmaz: Der Blutdruck war heute Mittag etwas hoch."
   }
 ];

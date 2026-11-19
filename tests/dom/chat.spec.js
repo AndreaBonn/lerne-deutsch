@@ -190,7 +190,7 @@ test("with the conversation consent withdrawn, nothing leaves", async ({ page })
   expect(await page.evaluate(() => window.__zapytania)).toBe(0);
 });
 
-/* The six scenes came in two batches, and a scene is three things that must
+/* The nine scenes came in three batches, and a scene is three things that must
    agree: its entry in chat-scenarios.js, its title key `chat.sc.<id>` in the
    interface language, and the line it opens with. A missing key does not show
    up as a raw key: t() falls back to another language, so the list looks
@@ -207,7 +207,7 @@ test("every scene is on the list with a title, and opens on its own first line",
   await page.goto("/index.html#/chiacchiere");
   await page.waitForSelector(".list-row[data-scena]", { timeout: 30000 });
   const sceny = await page.evaluate(() => window.CHAT_SCENARIOS.map(s => ({ id: s.id, apertura: s.apertura })));
-  expect(sceny.length).toBe(6);
+  expect(sceny.length).toBe(9);
   await expect(page.locator(".list-row[data-scena]")).toHaveCount(sceny.length);
   const tytuly = await page.locator(".list-row[data-scena] b").allInnerTexts();
   expect(tytuly).toEqual(sceny.map(s => UI_PL["chat.sc." + s.id]));
