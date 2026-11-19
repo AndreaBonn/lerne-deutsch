@@ -28,6 +28,28 @@ function raport() {
   return loadEngine({ files: ["assets/js/cils-report.js"] }).sandbox.CilsReport;
 }
 
+describe("cils-report: every verdict stem is cut, in every language it lists", () => {
+  /* One sentence per stem of WERDYKT (cils-report.js). The list is the rule
+     written in code; a stem that silently drops out lets a pass/fail verdict
+     in that language through to the student. Each case keeps a neutral
+     sentence beside it, so an empty output cannot pass for a cut. */
+  const ZDANIA = [
+    "Saresti promossa senza problemi.", "Temo che saresti bocciato.", "Il testo è sufficiente.",
+    "Il testo è insufficiente.", "Supereresti la prova.", "La prova è superata.", "Sei idoneo.",
+    "Moim zdaniem zdałbyś.", "Egzamin zdany.", "Raczej oblany.", "Poziom jest wystarczający.",
+    "You would pass this part.", "I think you pass.", "You passed the writing.", "This would fail.",
+    "Estarías aprobado.", "Me temo que suspenso.", "Serías admis.", "Tu as échoué.", "C'est suffisant.",
+    "Sie haben bestanden.", "Leider durchgefallen.", "Das ist ausreichend."
+  ];
+  for (const zdanie of ZDANIA) {
+    test(`"${zdanie}" does not reach the student`, () => {
+      const out = raport().pulisci("Die Struktur ist klar. " + zdanie);
+      assert.ok(out.includes("Die Struktur ist klar."), out);
+      assert.ok(!out.includes(zdanie), out);
+    });
+  }
+});
+
 describe("cils-report: what may not pass", () => {
   test("a mark out of twelve is dropped, the sentence around it survives", () => {
     const out = raport().pulisci(
