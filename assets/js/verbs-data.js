@@ -50,6 +50,7 @@
     "brechen": {"praet": "brach", "pp": "gebrochen", "aux": "haben", "presentStem": "brich"},
     "brennen": {"praet": "brannte", "pp": "gebrannt", "aux": "haben"},
     "bringen": {"praet": "brachte", "pp": "gebracht", "aux": "haben", "konj2": "brächt"},
+    "dringen": {"praet": "drang", "pp": "gedrungen", "aux": "sein"},
     "denken": {"praet": "dachte", "pp": "gedacht", "aux": "haben", "konj2": "dächt"},
     "entscheiden": {"praet": "entschied", "pp": "entschieden", "aux": "haben"},
     "empfehlen": {"praet": "empfahl", "pp": "empfohlen", "aux": "haben", "presentStem": "empfiehl"},
@@ -76,6 +77,7 @@
     "gewinnen": {"praet": "gewann", "pp": "gewonnen", "aux": "haben"},
     "gießen": {"praet": "goss", "pp": "gegossen", "aux": "haben"},
     "gleichen": {"praet": "glich", "pp": "geglichen", "aux": "haben"},
+    "gleiten": {"praet": "glitt", "pp": "geglitten", "aux": "sein"},
     "graben": {"praet": "grub", "pp": "gegraben", "aux": "haben", "presentStem": "gräb"},
     "greifen": {"praet": "griff", "pp": "gegriffen", "aux": "haben"},
     "halten": {"praet": "hielt", "pp": "gehalten", "aux": "haben", "presentStem": "hält"},
@@ -86,6 +88,7 @@
     "kennen": {"praet": "kannte", "pp": "gekannt", "aux": "haben"},
     "klingen": {"praet": "klang", "pp": "geklungen", "aux": "haben"},
     "kommen": {"praet": "kam", "pp": "gekommen", "aux": "sein", "konj2": "käm"},
+    "kriechen": {"praet": "kroch", "pp": "gekrochen", "aux": "sein"},
     "laden": {"praet": "lud", "pp": "geladen", "aux": "haben", "presentStem": "läd"},
     "lassen": {"praet": "ließ", "pp": "gelassen", "aux": "haben", "presentStem": "läss"},
     "laufen": {"praet": "lief", "pp": "gelaufen", "aux": "sein", "presentStem": "läuf"},
@@ -107,6 +110,7 @@
     "riechen": {"praet": "roch", "pp": "gerochen", "aux": "haben"},
     "rufen": {"praet": "rief", "pp": "gerufen", "aux": "haben"},
     "schaffen": {"praet": "schuf", "pp": "geschaffen", "aux": "haben"},
+    "scheiden": {"praet": "schied", "pp": "geschieden", "aux": "haben"},
     "scheinen": {"praet": "schien", "pp": "geschienen", "aux": "haben"},
     "schieben": {"praet": "schob", "pp": "geschoben", "aux": "haben"},
     "schießen": {"praet": "schoss", "pp": "geschossen", "aux": "haben"},
@@ -117,6 +121,7 @@
     "schneiden": {"praet": "schnitt", "pp": "geschnitten", "aux": "haben"},
     "schreiben": {"praet": "schrieb", "pp": "geschrieben", "aux": "haben"},
     "schreien": {"praet": "schrie", "pp": "geschrien", "aux": "haben"},
+    "schreiten": {"praet": "schritt", "pp": "geschritten", "aux": "sein"},
     "schweigen": {"praet": "schwieg", "pp": "geschwiegen", "aux": "haben"},
     "schwimmen": {"praet": "schwamm", "pp": "geschwommen", "aux": "sein"},
     "sehen": {"praet": "sah", "pp": "gesehen", "aux": "haben", "presentStem": "sieh"},
@@ -126,10 +131,12 @@
     "sitzen": {"praet": "saß", "pp": "gesessen", "aux": "haben"},
     "sprechen": {"praet": "sprach", "pp": "gesprochen", "aux": "haben", "presentStem": "sprich"},
     "springen": {"praet": "sprang", "pp": "gesprungen", "aux": "sein"},
+    "stechen": {"praet": "stach", "pp": "gestochen", "aux": "haben", "presentStem": "stich"},
     "stehen": {"praet": "stand", "pp": "gestanden", "aux": "haben"},
     "stehlen": {"praet": "stahl", "pp": "gestohlen", "aux": "haben", "presentStem": "stiehl"},
     "steigen": {"praet": "stieg", "pp": "gestiegen", "aux": "sein"},
     "sterben": {"praet": "starb", "pp": "gestorben", "aux": "sein", "presentStem": "stirb"},
+    "stinken": {"praet": "stank", "pp": "gestunken", "aux": "haben"},
     "stoßen": {"praet": "stieß", "pp": "gestoßen", "aux": "haben", "presentStem": "stöß"},
     "streichen": {"praet": "strich", "pp": "gestrichen", "aux": "haben"},
     "streiten": {"praet": "stritt", "pp": "gestritten", "aux": "haben"},
@@ -144,11 +151,13 @@
     "verschwinden": {"praet": "verschwand", "pp": "verschwunden", "aux": "sein"},
     "wachsen": {"praet": "wuchs", "pp": "gewachsen", "aux": "sein", "presentStem": "wächs"},
     "waschen": {"praet": "wusch", "pp": "gewaschen", "aux": "haben", "presentStem": "wäsch"},
+    "weisen": {"praet": "wies", "pp": "gewiesen", "aux": "haben"},
     "wenden": {"praet": "wandte", "pp": "gewandt", "aux": "haben"},
     "werben": {"praet": "warb", "pp": "geworben", "aux": "haben", "presentStem": "wirb"},
     "werfen": {"praet": "warf", "pp": "geworfen", "aux": "haben", "presentStem": "wirf"},
     "wiegen": {"praet": "wog", "pp": "gewogen", "aux": "haben"},
     "ziehen": {"praet": "zog", "pp": "gezogen", "aux": "haben"},
+    "zwingen": {"praet": "zwang", "pp": "gezwungen", "aux": "haben"},
   };
   var REFLEXIVE = ["mich", "dich", "sich", "uns", "euch", "sich"];
   var PRESENT_ONLY = { "möchten": ["möchte", "möchtest", "möchte", "möchten", "möchtet", "möchten"] };
@@ -162,7 +171,7 @@
     "starten", "klettern", "segeln", "aufstehen", "aufwachen", "einschlafen",
     "erblühen", "folgen", "begegnen", "scheitern", "erwachen", "umziehen",
     "entkommen", "entlaufen", "entstehen", "entgehen", "vergehen", "verfallen",
-    "verlaufen", "erscheinen", "verreisen"
+    "verlaufen", "erscheinen", "verreisen", "ausscheiden"
   ]);
   /* über-, unter-, durch-, wieder- and um- can be separable or inseparable.
      Verbs not listed here default to inseparable for über-, unter-, durch- and

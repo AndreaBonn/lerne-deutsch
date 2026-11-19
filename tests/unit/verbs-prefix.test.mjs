@@ -171,3 +171,75 @@ describe("verbs: an inseparable prefix on a base that has its own present table"
       ["vermag", "vermagst", "vermag", "vermögen", "vermögt", "vermögen"]);
   });
 });
+
+describe("verbs: an inseparable prefix on a verb whose stem begins with ge-", () => {
+  /* gehen, gelten and geben take the participle ge- on top of their own
+     ge-stem (ge-gangen, ge-golten, ge-geben); an inseparable prefix replaces
+     that participle ge- and keeps the stem. Verbs that are themselves an
+     inseparable ge- verb (gewinnen) have no extra ge- to drop. */
+  const cases = [
+    ["begehen", "begangen"], ["vergehen", "vergangen"], ["entgehen", "entgangen"],
+    ["vergelten", "vergolten"], ["begeben", "begeben"], ["vergeben", "vergeben"]
+  ];
+  for (const [inf, pp] of cases) {
+    test(`${inf} -> ${pp}`, () => {
+      assert.equal(engine().participle(inf), pp);
+    });
+  }
+
+  test("vergehen keeps sein: ist vergangen", () => {
+    assert.equal(rows("vergehen", "perf")[2], "ist vergangen");
+  });
+});
+
+describe("verbs: a word that only begins like a separable prefix", () => {
+  test("teilen is a plain weak verb, not teil + en", () => {
+    assert.equal(engine().participle("teilen"), "geteilt");
+    assert.deepEqual(rows("teilen", "praes"), ["teile", "teilst", "teilt", "teilen", "teilt", "teilen"]);
+    assert.equal(rows("teilen", "praet")[0], "teilte");
+  });
+
+  test("teilnehmen and mitteilen still split", () => {
+    assert.equal(engine().participle("teilnehmen"), "teilgenommen");
+    assert.equal(engine().participle("mitteilen"), "mitgeteilt");
+    assert.equal(rows("mitteilen", "praes")[2], "teilt mit");
+  });
+});
+
+describe("verbs: strong verbs of the IRR table that are easy to miss", () => {
+  const cases = [
+    ["weisen", "wies", "gewiesen"], ["beweisen", "bewies", "bewiesen"],
+    ["zwingen", "zwang", "gezwungen"], ["dringen", "drang", "gedrungen"],
+    ["stechen", "stach", "gestochen"], ["stinken", "stank", "gestunken"],
+    ["scheiden", "schied", "geschieden"], ["schreiten", "schritt", "geschritten"],
+    ["gleiten", "glitt", "geglitten"], ["kriechen", "kroch", "gekrochen"]
+  ];
+  for (const [inf, praet, pp] of cases) {
+    test(`${inf}: ${praet}, ${pp}`, () => {
+      assert.equal(rows(inf, "praet")[0], praet);
+      assert.equal(engine().participle(inf), pp);
+    });
+  }
+
+  test("stechen changes e to i in du and er/sie/es: sticht", () => {
+    assert.deepEqual(rows("stechen", "praes"), ["steche", "stichst", "sticht", "stechen", "stecht", "stechen"]);
+  });
+
+  test("verbs of movement among them take sein", () => {
+    assert.equal(rows("kriechen", "perf")[2], "ist gekrochen");
+    assert.equal(rows("gleiten", "perf")[2], "ist geglitten");
+    assert.equal(rows("schreiten", "perf")[2], "ist geschritten");
+    assert.equal(rows("zwingen", "perf")[2], "hat gezwungen");
+  });
+
+  test("ausscheiden (to drop out) takes sein, though scheiden (to separate) takes haben", () => {
+    assert.equal(rows("ausscheiden", "perf")[2], "ist ausgeschieden");
+    assert.equal(rows("scheiden", "perf")[2], "hat geschieden");
+  });
+
+  test("inseparable derivatives used transitively keep haben", () => {
+    assert.equal(rows("überschreiten", "perf")[2], "hat überschritten");
+    assert.equal(rows("durchdringen", "perf")[2], "hat durchdrungen");
+    assert.equal(rows("beschreiten", "perf")[2], "hat beschritten");
+  });
+});

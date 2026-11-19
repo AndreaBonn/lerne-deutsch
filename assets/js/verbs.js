@@ -25,8 +25,10 @@
     return inf.replace(/(?:en|n)$/, "");
   }
 
+  /* The rest has to be a verb with a stem: teilen is not teil + en. */
   function cut(inf, prefix) {
-    return inf.length > prefix.length ? { prefix: prefix, rest: inf.slice(prefix.length) } : null;
+    var rest = inf.slice(prefix.length);
+    return stemOf(rest) ? { prefix: prefix, rest: rest } : null;
   }
 
   /* Splits a separable prefix off: { prefix, rest } or null. */
@@ -41,9 +43,12 @@
     return plain ? cut(inf, plain[0]) : null;
   }
 
+  /* gehen/gelten/geben put the participle ge- in front of their own ge-stem
+     (ge-gangen, ge-golten, ge-geben), so the stem after it starts with g.
+     An inseparable ge- verb (gewinnen -> gewonnen) has no second ge- to drop. */
   function stripGe(inf, pp) {
     if (pp.indexOf("ge") !== 0) return pp;
-    if (inf.indexOf("ge") === 0 && pp.indexOf("gege") !== 0) return pp;
+    if (inf.indexOf("ge") === 0 && pp.charAt(2) !== "g") return pp;
     return pp.slice(2);
   }
 
