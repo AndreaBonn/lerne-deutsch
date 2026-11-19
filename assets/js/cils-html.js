@@ -96,10 +96,10 @@
 
     if (sez.id === "ascolto") testa += ascolti(p, n);
     if (p.titolo) testa += '<h3 class="cils-titolo">' + esc(p.titolo) + "</h3>";
-    if (p.t !== "cloze" && p.testo) testa += p.testo.map(function (x) {
+    if (p.t !== "cloze" && p.t !== "lueckeAbbina" && p.t !== "lueckeMc" && p.testo) testa += p.testo.map(function (x) {
       return '<p class="cils-testo">' + esc(x) + "</p>";
     }).join("");
-    if (p.t === "cloze") testa += cloze(p);
+    if (p.t === "cloze" || p.t === "lueckeAbbina" || p.t === "lueckeMc") testa += cloze(p);
     if (p.t === "abbina") testa += (p.annunci || []).map(function (ad, index) {
       return '<article><h3>' + esc(String.fromCharCode(97 + index) + ". " + ad.titolo) +
         "</h3><p>" + esc(ad.testo) + "</p></article>";
@@ -130,19 +130,24 @@
   function item(p, it, n, i) {
     var nome = "p" + n + "i" + i;
     var options = it.opts || [];
+    if (p.t === "lueckeAbbina") options = p.opts || [];
     if (p.t === "vf") options = ["richtig", "falsch"];
     if (p.t === "jn") options = ["Ja", "Nein"];
     if (p.t === "abbina") options = (p.annunci || []).map(function (_, index) {
       return String.fromCharCode(97 + index);
     }).concat(["0"]);
-    if (p.t === "mc") options = options.map(function (option, index) {
+    if (p.t === "mc" || p.t === "lueckeMc") options = options.map(function (option, index) {
       return String.fromCharCode(97 + index) + ". " + option;
     });
     var testa = it.q ? '<span class="cils-q">' + esc(it.q) + "</span>" : "";
-    return testa + '<span class="cils-opts cils-opts--col">' + options.map(function (o, k) {
+    var group = '<span class="cils-opts cils-opts--col">' + options.map(function (o, k) {
       return '<label><input type="radio" name="' + nome + '" data-p="' + n + '" data-i="' + i +
         '" value="' + k + '"> ' + esc(o) + "</label>";
     }).join("") + "</span>";
+    if (p.t !== "lueckeAbbina" && p.t !== "lueckeMc") return testa + group;
+    /* A gap has no question text: the legend is what a screen reader announces. */
+    return testa + '<fieldset class="cils-choices"><legend class="sr-only">' +
+      esc(t("cils.gapN", { n: i + 1 })) + "</legend>" + group + "</fieldset>";
   }
 
   /* ═══════════════════ Written production ═══════════════════ */

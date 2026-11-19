@@ -279,6 +279,72 @@ describe("closed section: cloze", () => {
   });
 });
 
+const GAP_TASKS = {
+  lueckeAbbina: { t: "lueckeAbbina", consegna: "Ergänzen", testo: ["A", "B", "C"],
+    opts: ["eins", "zwei", "drei", "vier"], items: [{ a: 0 }, { a: 1 }] },
+  lueckeMc: { t: "lueckeMc", consegna: "Ergänzen", testo: ["A", "B", "C"],
+    items: [{ opts: ["eins", "zwei", "drei"], a: 0 }, { opts: ["vier", "fünf", "sechs"], a: 1 }] }
+};
+
+function gapRadios(out) {
+  return [...out.matchAll(/name="([^"]+)" data-p="(\d+)" data-i="(\d+)" value="(\d+)"> ([^<]*)</g)];
+}
+
+for (const type of ["lueckeAbbina", "lueckeMc"]) {
+  test(`${type} renders numbered gaps and independent answer groups`, () => {
+    const out = html().corpoChiuso({ id: "sprachbausteine", prove: [GAP_TASKS[type]] });
+    assert.equal(ile(out, "cils-gap"), 2);
+    assert.match(out, /\(1\).*\(2\)/);
+    const radios = gapRadios(out);
+    const per = type === "lueckeAbbina" ? 4 : 3;
+    assert.equal(radios.length, 2 * per);
+    for (const gap of [0, 1]) {
+      const group = radios.filter(r => r[3] === String(gap));
+      assert.equal(group.length, per);
+      assert.deepEqual(group.map(r => r[4]), Array.from({ length: per }, (_, k) => String(k)));
+      assert.equal(new Set(group.map(r => r[1])).size, 1);
+      assert.equal(group[0][1], "p0i" + gap);
+    }
+    assert.notEqual(radios[0][1], radios[per][1]);
+  });
+}
+
+test("lueckeAbbina offers the shared list in full to every gap", () => {
+  const out = html().corpoChiuso({ id: "sprachbausteine", prove: [GAP_TASKS.lueckeAbbina] });
+  const radios = gapRadios(out);
+  for (const gap of ["0", "1"]) {
+    assert.deepEqual(radios.filter(r => r[3] === gap).map(r => r[5].trim()),
+      ["eins", "zwei", "drei", "vier"]);
+  }
+});
+
+test("Sprachbausteine escape markup in the text and in the options", () => {
+  const evil = "<b>&";
+  const abbina = { t: "lueckeAbbina", consegna: "x", testo: [evil, "z"], opts: [evil, "y"], items: [{ a: 0 }] };
+  const mc = { t: "lueckeMc", consegna: "x", testo: [evil, "z"], items: [{ opts: [evil, "b", "c"], a: 0 }] };
+  for (const task of [abbina, mc]) {
+    const out = html().corpoChiuso({ id: "sprachbausteine", prove: [task] });
+    assert.ok(out.includes("&lt;b&gt;&amp;"));
+    assert.ok(!out.includes("<b>&"));
+  }
+  assert.ok(html().corpoChiuso({ id: "sprachbausteine", prove: [mc] })
+    .includes("a. &lt;b&gt;&amp;"));
+});
+
+for (const lang of ["it", "en", "es", "fr", "pl"]) {
+  test(`each Sprachbausteine gap is a named radio group in ${lang}`, () => {
+    const { sandbox: box } = loadEngine({ files: [...PLIKI, ...UI] });
+    box.I18n.set(lang);
+    for (const type of ["lueckeAbbina", "lueckeMc"]) {
+      const out = box.CilsHtml.corpoChiuso({ id: "sprachbausteine", prove: [GAP_TASKS[type]] });
+      const legends = [...out.matchAll(/<fieldset[^>]*>\s*<legend[^>]*>([^<]+)<\/legend>/g)].map(m => m[1]);
+      assert.deepEqual(legends, [box.I18n.t("cils.gapN", { n: 1 }), box.I18n.t("cils.gapN", { n: 2 })]);
+      assert.ok(legends[0] !== "cils.gapN" && /1/.test(legends[0]) && !/\{n\}/.test(legends[0]));
+      assert.equal(ile(out, "<fieldset"), 2);
+    }
+  });
+}
+
 describe("written production", () => {
   test("the first traccia is selected, the others are not", () => {
     const out = html().corpoScritto(SCRITTA);

@@ -44,6 +44,29 @@
     return global.EXAM_FORMATS[(simulation && simulation.formato) || "goethe-b1"];
   }
 
+  /* Sprachbausteine: the text has one more piece than there are gaps, every
+     key points at a real option, and a shared list is used at most once. */
+  function gapProblems(task) {
+    var out = [];
+    var items = task.items || [];
+    if (task.t !== "lueckeAbbina" && task.t !== "lueckeMc") return out;
+    var shared = task.t === "lueckeAbbina";
+    if (shared ? (!Array.isArray(task.opts) || task.opts.length <= items.length) :
+      items.some(function (it) { return !Array.isArray(it.opts) || it.opts.length !== 3; })) out.push("options");
+    if (!Array.isArray(task.testo) || task.testo.length !== items.length + 1) out.push("testo");
+    var seen = {};
+    var repeated = false;
+    var outside = items.some(function (it) {
+      var size = shared ? (task.opts || []).length : (it.opts || []).length;
+      if (!(typeof it.a === "number" && it.a % 1 === 0 && it.a >= 0 && it.a < size)) return true;
+      if (shared) { if (seen[it.a]) repeated = true; seen[it.a] = true; }
+      return false;
+    });
+    if (outside) out.push("risposta");
+    if (repeated) out.push("duplicata");
+    return out;
+  }
+
   function sectionProblems(section, descriptor) {
     var problems = [];
     var tasks = (section.prove || []).concat(section.tracce || []);
@@ -60,6 +83,11 @@
     })) problems.push("puntiPerItem: " + id);
     if (descriptor.items) descriptor.items.forEach(function (count, index) {
       if (quantiItem(tasks[index]) !== count) problems.push("items: " + id + "-" + (index + 1));
+    });
+    tasks.forEach(function (task, index) {
+      gapProblems(task).forEach(function (kind) {
+        problems.push(kind + ": " + id + "-" + (index + 1));
+      });
     });
     return problems;
   }

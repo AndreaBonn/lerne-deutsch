@@ -446,6 +446,7 @@ LINGUAI.addUI("it", {
   "cils.kicker": "In stile Goethe-Zertifikat B1 · Simulazione non ufficiale",
   "cils.title": "Simulazione d'esame",
   "cils.intro": "Le prove e le istruzioni sono in tedesco. Simulazione non ufficiale in stile Goethe-Zertifikat B1, non affiliata al Goethe-Institut e senza materiali ufficiali del Goethe-Institut.",
+  "cils.gapN": "Lacuna {n}",
   "cils.limitLabel": "Prima di cominciare:",
   "cils.limit": "Il simulatore attribuisce un punteggio solo ad ascolto e lettura. Per la scrittura rileva quali requisiti della traccia sono presenti; per il parlato può leggere ciò che riporti dopo la prova. Non valuta queste due produzioni, che richiedono un esaminatore.",
   "cils.structure": "Quattro moduli, in ordine: Lesen, Hören, Schreiben, Sprechen. Tempi e tracce sono indicati nelle singole sezioni.",

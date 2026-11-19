@@ -346,6 +346,75 @@ function telcFixture(C) {
   })) };
 }
 
+test("Sprachbausteine score each answered gap with its weight", () => {
+  const C = silnik();
+  for (const type of ["lueckeAbbina", "lueckeMc"]) {
+    const result = C.punteggioProva({ t: type, puntiPerItem: 1, items: [{ a: 2 }, { a: 1 }, { a: 0 }] }, [2, 0, null]);
+    assert.deepEqual(JSON.parse(JSON.stringify(result)), { punti: 1, esatte: 1, date: 2, totali: 3 });
+  }
+});
+
+function sprachFixture(C) {
+  const sim = telcFixture(C);
+  const tasks = sim.sezioni[2].prove;
+  tasks[0].t = "lueckeAbbina";
+  tasks[0].opts = Array.from({ length: 9 }, (_, k) => "Wort" + k);
+  tasks[0].testo = Array(9).fill("Text");
+  tasks[0].items = Array.from({ length: 8 }, (_, k) => ({ a: k }));
+  tasks[1].t = "lueckeMc";
+  tasks[1].testo = Array(11).fill("Text");
+  tasks[1].items = Array.from({ length: 10 }, () => ({ a: 0, opts: ["a", "b", "c"] }));
+  return { sim, tasks };
+}
+
+test("a well-formed Sprachbausteine pair is conformant", () => {
+  const C = silnik();
+  assert.deepEqual(Array.from(C.conforme(sprachFixture(C).sim)), []);
+});
+
+test("conformance rejects missing Sprachbausteine options", () => {
+  const C = silnik();
+  const { sim, tasks } = sprachFixture(C);
+  delete tasks[0].opts;
+  tasks[1].items[1].opts = [];
+  assert.ok(C.conforme(sim).includes("options: sprachbausteine-1"));
+  assert.ok(C.conforme(sim).includes("options: sprachbausteine-2"));
+});
+
+test("conformance rejects a Sprachbausteine text with the wrong number of pieces", () => {
+  const C = silnik();
+  for (const [index, pieces] of [[0, 8], [0, 10], [1, 10], [1, 12]]) {
+    const { sim, tasks } = sprachFixture(C);
+    tasks[index].testo = Array(pieces).fill("Text");
+    assert.ok(C.conforme(sim).includes("testo: sprachbausteine-" + (index + 1)), `${index}/${pieces}`);
+  }
+  const { sim, tasks } = sprachFixture(C);
+  delete tasks[1].testo;
+  assert.ok(C.conforme(sim).includes("testo: sprachbausteine-2"));
+});
+
+test("conformance rejects a Sprachbausteine answer outside the options", () => {
+  const C = silnik();
+  for (const bad of [-1, 9, 1.5, "0", null]) {
+    const { sim, tasks } = sprachFixture(C);
+    tasks[0].items[3].a = bad;
+    assert.ok(C.conforme(sim).includes("risposta: sprachbausteine-1"), String(bad));
+  }
+  for (const bad of [-1, 3, 0.5]) {
+    const { sim, tasks } = sprachFixture(C);
+    tasks[1].items[4].a = bad;
+    assert.ok(C.conforme(sim).includes("risposta: sprachbausteine-2"), String(bad));
+  }
+});
+
+test("conformance rejects a repeated answer in lueckeAbbina but not in lueckeMc", () => {
+  const C = silnik();
+  const { sim, tasks } = sprachFixture(C);
+  tasks[0].items[5].a = 2;
+  assert.ok(C.conforme(sim).includes("duplicata: sprachbausteine-1"));
+  assert.ok(!C.conforme(sim).includes("duplicata: sprachbausteine-2"));
+});
+
 test("telc conformance checks each fixed item count", () => {
   const C = silnik();
   const sim = telcFixture(C);

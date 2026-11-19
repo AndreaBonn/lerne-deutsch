@@ -57,6 +57,8 @@ import { spawnSync } from "node:child_process";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
 const HTML = "assets/js/cils-html.js";
+const CILS = "assets/js/cils.js";
+const T_CILS = "tests/unit/cils.test.mjs";
 const MORF = "assets/js/lemma-morf.js";
 const LEMMA = "assets/js/lemma.js";
 const T_LEMMA = "tests/unit/lemma.test.mjs";
@@ -108,12 +110,18 @@ const T_WRITING = "tests/unit/writing.test.mjs";
  * says.
  */
 const MUTACJE = [
+  { plik: HTML, test: T_HTML, opis: "Sprachbausteine: independent radio groups per gap",
+    z: "var nome = \"p\" + n + \"i\" + i;", na: "var nome = \"p\" + n;" },
+  { plik: HTML, test: T_HTML, opis: "lueckeAbbina: shared list missing from the gaps",
+    z: "if (p.t === \"lueckeAbbina\") options = p.opts || [];", na: "" },
+  { plik: CILS, test: T_CILS, opis: "lueckeMc: score the selected option",
+    z: "if (dato === items[i].a) { out.esatte++; out.punti += peso; }", na: "if (false) { out.esatte++; out.punti += peso; }" },
   { plik: "assets/js/placement.js", test: "tests/unit/placement.test.mjs", opis: "placement skips non-sequential levels",
     z: "return Core.registry.levels.filter(function (lv) { return lv.sequential !== false; });", na: "return Core.registry.levels;" },
   { plik: "assets/js/core.js", test: "tests/unit/registry.test.mjs", opis: "next lesson skips non-sequential levels",
     z: "if (levels[i].sequential === false) continue;", na: "if (false) continue;" },
   { plik: "assets/js/cils-html.js", test: "tests/unit/cils-html.test.mjs", opis: "Teil: reading text omitted outside vf",
-    z: "if (p.t !== \"cloze\" && p.testo)", na: "if (p.t === \"vf\" && p.testo)" },
+    z: "if (p.t !== \"cloze\" && p.t !== \"lueckeAbbina\" && p.t !== \"lueckeMc\" && p.testo)", na: "if (p.t === \"vf\" && p.testo)" },
   { plik: "assets/js/cils-html.js", test: "tests/unit/cils-html.test.mjs", opis: "Teil: ads disappear",
     z: "if (p.t === \"abbina\") testa +=", na: "if (false) testa +=" },
   { plik: "assets/js/cils-html.js", test: "tests/unit/cils-html.test.mjs", opis: "Teil: no suitable ad loses option zero",

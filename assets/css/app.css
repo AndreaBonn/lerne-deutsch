@@ -1461,3 +1461,6 @@ mark{background:var(--oro);color:var(--on-oro);border-radius:3px;padding:0 2px;}
 #conjOut table.gt td.it{white-space:normal;overflow-wrap:anywhere;}
 #conjOut .say-btn{flex-basis:44px;width:44px;height:44px;margin-inline-start:4px;}
 #conjOut .grid-2{grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));}
+
+/* Exam gap groups: a fieldset only to name the radio group for screen readers. */
+.cils-choices{border:0;margin:0;padding:0;min-width:0}

@@ -503,6 +503,7 @@ LINGUAI.addUI("en", {
   "cils.kicker": "In the style of Goethe-Zertifikat B1 · Unofficial simulation",
   "cils.title": "Exam simulation",
   "cils.intro": "The tasks and instructions are in German. This is an unofficial simulation in the style of Goethe-Zertifikat B1, not affiliated with the Goethe-Institut and using no official Goethe-Institut material.",
+  "cils.gapN": "Gap {n}",
   "cils.limitLabel": "Before you start:",
   "cils.limit": "This simulator scores two of the four skills, listening and reading. The written task comes back as a list of the parts of the brief that are there and the parts that are missing, and the spoken task does not count towards the result at all: those two are marked by a human, and an automatic number would look like a grade without being one.",
   "cils.structure": "Four modules, in order: Lesen, Hören, Schreiben, Sprechen. Times and tasks are listed in each section.",

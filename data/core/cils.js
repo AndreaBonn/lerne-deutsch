@@ -23,6 +23,9 @@
    - abbina: annunci [{titolo, testo}], items [{q, a:index}]; annunci.length
      denotes option "0", no suitable advertisement.
    - jn: testo[] reader letters and items [{q, a:0|1}] for Ja/Nein.
+   - lueckeAbbina: testo[] chunks around gaps, opts[] shared choices,
+     items [{a:index}] with more choices than gaps.
+   - lueckeMc: testo[] chunks around gaps, items [{opts:[a,b,c], a:index}].
    - schreiben: {t, consegna, punti:[], parole:{min,max}}, never scored.
    - sprechen: {t, consegna, punti:[]}, never scored.
    ============================================================ */

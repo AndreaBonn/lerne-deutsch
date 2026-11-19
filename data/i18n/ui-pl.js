@@ -514,6 +514,7 @@ LINGUAI.addUI("pl", {
   "cils.kicker": "W stylu Goethe-Zertifikat B1 · Nieoficjalna symulacja",
   "cils.title": "Symulacja egzaminu",
   "cils.intro": "Zadania i polecenia są po niemiecku. To nieoficjalna symulacja w stylu Goethe-Zertifikat B1, niezwiązana z Goethe-Institut i niewykorzystująca oficjalnych materiałów Goethe-Institut.",
+  "cils.gapN": "Luka {n}",
   "cils.limitLabel": "Zanim zaczniesz:",
   "cils.limit": "Ten symulator liczy punkty z dwóch sprawności na cztery, ze słuchania i z czytania. Wypracowanie wraca jako lista elementów zadania, które są i których brakuje, a wypowiedź ustna nie wchodzi do wyniku w ogóle: te dwie siatki ocenia człowiek, a automat udawałby ocenę, której nie ma.",
   "cils.structure": "Cztery moduły, w kolejności: Lesen, Hören, Schreiben, Sprechen. Czas i zadania podano w poszczególnych sekcjach.",

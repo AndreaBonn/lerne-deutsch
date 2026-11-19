@@ -511,6 +511,7 @@ LINGUAI.addUI("fr", {
   "cils.kicker": "Dans le style du Goethe-Zertifikat B1 · Simulation non officielle",
   "cils.title": "Simulation d'examen",
   "cils.intro": "Les épreuves et les consignes sont en allemand. Cette simulation non officielle dans le style du Goethe-Zertifikat B1 n’est pas affiliée au Goethe-Institut et n’utilise aucun matériel officiel du Goethe-Institut.",
+  "cils.gapN": "Trou {n}",
   "cils.limitLabel": "Avant de commencer :",
   "cils.limit": "Ce simulateur note deux compétences sur quatre, la compréhension orale et écrite. La production écrite revient sous forme de liste des éléments de la consigne présents et manquants, et la production orale ne compte pas du tout dans le résultat : ces deux-là sont corrigées par une personne, et un chiffre automatique ressemblerait à une note sans en être une.",
   "cils.structure": "Quatre modules, dans cet ordre : Lesen, Hören, Schreiben, Sprechen. Les durées et les sujets figurent dans chaque section.",

@@ -90,6 +90,21 @@ describe("the order of the sections", () => {
 });
 
 describe("the answer grid", () => {
+  test("Sprachbausteine answers land in their task and gap", () => {
+    const box = silnik();
+    const sez = { id: "sprachbausteine", prove: [
+      { t: "lueckeAbbina", items: [{ a: 1 }, { a: 2 }] },
+      { t: "lueckeMc", items: [{ a: 0 }, { a: 1 }] }
+    ] };
+    const run = box.sandbox.CilsRun.create({ sezioni: [sez] });
+    const grid = run.przygotuj(sez);
+    run.odpowiedz(sez.id, 0, 1, 2);
+    run.odpowiedz(sez.id, 1, 0, 1);
+    assert.equal(grid[0][1], 2);
+    assert.equal(grid[1][0], 1);
+    assert.equal(grid[0][0], undefined);
+    assert.equal(grid[1][1], undefined);
+  });
   test("it is created empty and sized to the tasks, before the student clicks anything", () => {
     /* Scoring walks by index: a list one item short would shift the
        answers onto somebody else's questions and produce a score nobody
