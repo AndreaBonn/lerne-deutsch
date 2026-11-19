@@ -290,7 +290,7 @@ LINGUAI.addUnits("PFL", [
             { who: "👩‍⚕️", it: "Herr Lang, ich messe kurz Ihren Blutzucker. Das ist ein kleiner Stich in den Finger." },
             { who: "🧓", it: "Ich zittere ein bisschen, und ich schwitze." },
             { who: "👩‍⚕️", it: "Der Wert ist niedriger als heute Morgen. Ich sage sofort dem Arzt Bescheid." },
-            { who: "👩‍⚕️", it: "Herr Doktor Weber, Herr Lang zittert und schwitzt. Der Blutzucker liegt bei 60, ich vermute eine Hypoglykämie." },
+            { who: "👩‍⚕️", it: "Herr Doktor Weber, Herr Lang zittert und schwitzt. Der Blutzucker liegt bei 60 Milligramm pro Deziliter, ich vermute eine Hypoglykämie." },
             { who: "👨‍⚕️", it: "Danke. Ich komme sofort." },
             { who: "🧓", it: "Schwester, was ist eine Hypoglykämie?" },
             { who: "👩‍⚕️", it: "Das ist eine Unterzuckerung. Ihr Blutzucker ist zu niedrig. Der Arzt kommt gleich." }

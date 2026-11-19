@@ -25,13 +25,13 @@ LINGUAI.addStrings("fr", {
       },
       {
         h: "Les verbes pronominaux",
-        p: "Beaucoup de verbes de la toilette sont pronominaux : <em>sich waschen, sich anziehen, sich ausziehen, sich rasieren, sich kämmen</em>. Le pronom suit le verbe conjugué : <em>Ich wasche mich. Er zieht sich an.</em> Avec le Sie de politesse, le pronom réfléchi est <strong>sich</strong>, en minuscule, et non <em>Sie</em> : <em>Können Sie sich allein anziehen?</em> Quand la phrase a un complément (une partie du corps, un vêtement), le réfléchi passe au <strong>datif</strong> : <em>Ich wasche mich</em>, mais <em>Ich wasche mir das Gesicht</em>. La différence ne se voit qu'avec <em>ich</em> et <em>du</em> (mich/mir, dich/dir) : <em>sich</em>, <em>uns</em> et <em>euch</em> ne changent pas. Au Perfekt, les verbes pronominaux prennent <em>haben</em> : <em>Er hat sich schon angezogen.</em>"
+        p: "Beaucoup de verbes de la toilette sont pronominaux : <em>sich waschen, sich anziehen, sich ausziehen, sich rasieren, sich kämmen</em>. Dans la principale, le pronom suit le verbe conjugué : <em>Ich wasche mich. Er zieht sich an.</em> Avec le Sie de politesse, le pronom réfléchi est <strong>sich</strong>, en minuscule, et non <em>Sie</em> : <em>Können Sie sich allein anziehen?</em> Quand la phrase a aussi un complément d'objet à l'accusatif (une partie du corps, un vêtement), le réfléchi passe au <strong>datif</strong> : <em>Ich wasche mich</em>, mais <em>Ich wasche mir das Gesicht</em>. La différence ne se voit qu'avec <em>ich</em> et <em>du</em> (mich/mir, dich/dir) : <em>sich</em>, <em>uns</em> et <em>euch</em> ne changent pas. Au Perfekt, les verbes pronominaux prennent <em>haben</em> : <em>Er hat sich schon angezogen.</em>"
       },
       {
         contrast: "Le français connaît bien les verbes pronominaux, et cela aide : <em>Waschen Sie sich?</em> correspond mot pour mot à « vous vous lavez ? », avec le même pronom double, <em>Sie sich</em> comme « vous vous ». Deux différences pourtant. La place : le français met le pronom devant le verbe (« vous vous habillez seul ? »), l'allemand derrière le verbe conjugué (<em>Ziehen Sie sich allein an?</em>). Et le cas : dans « je me lave les mains », le « me » français est déjà un complément indirect, mais sa forme ne change pas ; l'allemand rend la différence visible : <em>Ich wasche mir die Hände</em>, pas <em>mich</em>. Attention aussi au passé : « il s'est rasé » prend « être », <em>er hat sich rasiert</em> prend <em>haben</em>. Côté registre, la documentation et les collègues parlent d'<em>Intimpflege</em> et d'<em>Intimbereich</em> ; beaucoup de patients âgés disent <em>untenherum</em>. Inutile de les corriger : comprends le mot et réponds avec calme, sans termes plus explicites que ceux que le patient a choisis."
       },
       {
-        trap: "En français, « faire sa toilette » veut dire se laver ; en allemand, <em>die Toilette</em> est uniquement le WC. La toilette du patient se dit <em>Körperpflege</em>, et la toilette complète au lit <em>die Ganzkörperwäsche</em>. <em>Baden</em> n'est pas « se laver » en général : c'est prendre un bain dans la baignoire. Se laver au lavabo, c'est <em>sich waschen</em>, la douche <em>duschen</em>. <em>Die Wäsche</em> est la lessive ou le linge. Et <em>das Hemd</em> est la chemise, la chemise de nuit <em>das Nachthemd</em>."
+        trap: "En français, « faire sa toilette » veut dire se laver ; en allemand courant, <em>die Toilette</em> est le WC (le sens « soins, habillage » existe, mais reste soutenu). La toilette du patient se dit <em>Körperpflege</em>, et la toilette complète au lit <em>die Ganzkörperwäsche</em>. <em>Baden</em> n'est pas « se laver » en général : c'est prendre un bain dans la baignoire. Se laver au lavabo, c'est <em>sich waschen</em>, la douche <em>duschen</em>. <em>Die Wäsche</em> est la lessive ou le linge, mais aussi le lavage, comme dans <em>Ganzkörperwäsche</em>. Et <em>das Hemd</em> est la chemise, la chemise de nuit <em>das Nachthemd</em>."
       },
       {
         tip: "Annonce chaque geste avant de le faire : <em>Ich wasche Ihnen jetzt den Rücken.</em> Une phrase courte avant de toucher le patient rassure plus que n'importe quelle explication, et avec le pronominal ou le datif elle t'entraîne au schéma qui compte le plus dans cette leçon."
@@ -39,7 +39,7 @@ LINGUAI.addStrings("fr", {
     ],
     grammar: {
       title: "mich ou mir ?",
-      note: "Sans complément, le réfléchi est à l'<b>accusatif</b> (<b>mich</b>). Avec un complément, la partie du corps ou le vêtement, il passe au <b>datif</b> (<b>mir</b>). Avec le patient : toujours <b>sich</b>.",
+      note: "Sans autre complément d'objet, le réfléchi est à l'<b>accusatif</b> (<b>mich</b>). Avec un complément d'objet à l'accusatif, la partie du corps ou le vêtement, il passe au <b>datif</b> (<b>mir</b>). Avec le patient : toujours <b>sich</b>.",
       table: {
         head: ["personne", "sans complément (accusatif)", "avec un complément (datif)"],
         rows: [
@@ -178,10 +178,10 @@ LINGUAI.addStrings("fr", {
       },
       {
         h: "Wohin? ou wo?",
-        p: "Les prépositions <em>an, auf, in, neben, unter, über, vor, hinter, zwischen</em> régissent deux cas. S'il y a un déplacement vers un but (<strong>wohin?</strong>), elles veulent l'<strong>accusatif</strong> : <em>Ich setze Sie an die Bettkante.</em> Si on décrit une position (<strong>wo?</strong>), elles veulent le <strong>datif</strong> : <em>Sie sitzen an der Bettkante.</em> Les verbes vont par paires : <em>setzen, legen, stellen</em> indiquent le mouvement et prennent l'accusatif ; <em>sitzen, liegen, stehen</em> indiquent la position et prennent le datif. Contractions fréquentes : <em>an das → ans</em>, <em>in das → ins</em>, <em>an dem → am</em>, <em>in dem → im</em>."
+        p: "Les prépositions <em>an, auf, in, neben, unter, über, vor, hinter, zwischen</em> régissent deux cas. S'il y a un déplacement vers un but (<strong>wohin?</strong>), elles veulent l'<strong>accusatif</strong> : <em>Ich setze Sie an die Bettkante.</em> Si on décrit une position (<strong>wo?</strong>), elles veulent le <strong>datif</strong> : <em>Sie sitzen an der Bettkante.</em> Les verbes vont par paires : <em>setzen, legen, stellen</em> indiquent le mouvement et, avec la préposition qui dit le but, prennent l'accusatif ; <em>sitzen, liegen, stehen</em> indiquent la position et prennent le datif. Contractions fréquentes : <em>an das → ans</em>, <em>in das → ins</em>, <em>an dem → am</em>, <em>in dem → im</em>."
       },
       {
-        contrast: "Pour un francophone, <em>Mobilisation</em> est transparent, mais <em>Dekubitus</em> est un piège : en français, le « décubitus » est une position (« décubitus latéral », couché sur le côté), alors qu'en allemand <em>der Dekubitus</em> est l'<strong>escarre</strong>. Une transmission « Dekubitus links » ne parle donc pas de la position du patient, mais d'une plaie. Le patient allemand, lui, ne dit pas <em>Dekubitus</em> : il dit <em>Druckgeschwür</em> (« ulcère de pression ») ou emploie le verbe <em>sich wundliegen</em> : <em>Ich habe mich wundgelegen.</em> Pour la <em>Kontraktur</em>, il dit <em>Gelenkversteifung</em> ou simplement <em>Das Knie wird steif.</em> Et aucun patient ne dit <em>Mobilisation</em> ou <em>Lagerung</em> : il dit <em>aufstehen</em>, <em>sich hinsetzen</em>, <em>sich umdrehen</em>. Le terme technique est le bon en transmission et dans le dossier ; avec le patient, le verbe marche mieux."
+        contrast: "Pour un francophone, <em>Mobilisation</em> est transparent, mais <em>Dekubitus</em> est un piège : en français, le « décubitus » est une position (« décubitus latéral », couché sur le côté), alors qu'en allemand <em>der Dekubitus</em> est l'<strong>escarre</strong>. Une transmission « Dekubitus links » ne parle donc pas de la position du patient, mais d'une plaie. Le patient allemand, lui, ne dit pas <em>Dekubitus</em> : il dit <em>Druckgeschwür</em> (« ulcère de pression ») ou emploie le verbe <em>sich wundliegen</em> : <em>Ich habe mich wundgelegen.</em> Pour la <em>Kontraktur</em>, il dit <em>Gelenkversteifung</em> ou simplement <em>Das Knie wird steif.</em> Et le patient dit rarement <em>Mobilisation</em> ou <em>Lagerung</em> : il dit <em>aufstehen</em>, <em>sich hinsetzen</em>, <em>sich umdrehen</em>. Le terme technique est le bon en transmission et dans le dossier ; avec le patient, le verbe marche mieux."
       },
       {
         trap: "<em>Die Kontraktur</em> n'est pas la « contracture » française, qui est une contraction musculaire involontaire : c'est la <strong>rétraction articulaire</strong>, l'articulation qui ne s'étend plus. <em>Die Lagerung</em> est l'installation du patient dans le service, mais dans l'allemand de tous les jours c'est le stockage des marchandises : ne l'emploie pas avec le patient, il se sentirait traité comme un objet. Dis plutôt <em>Ich helfe Ihnen, sich auf die Seite zu drehen.</em> Ne confonds pas <em>setzen</em> et <em>sitzen</em> : <em>Ich sitze Sie</em> n'existe pas."
@@ -192,7 +192,7 @@ LINGUAI.addStrings("fr", {
     ],
     grammar: {
       title: "Mouvement et position",
-      note: "<b>Wohin?</b> Verbe de mouvement + <b>accusatif</b>. <b>Wo?</b> Verbe de position + <b>datif</b>. La préposition est la même, c'est le cas qui change.",
+      note: "<b>Wohin?</b> But du mouvement + <b>accusatif</b>. <b>Wo?</b> Position, ou mouvement à l'intérieur d'un lieu, + <b>datif</b>. La préposition est la même, c'est le cas qui change.",
       table: {
         head: ["wohin? (accusatif)", "wo? (datif)"],
         rows: [
@@ -455,7 +455,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         tr: "Un verre d'eau, s'il vous plaît. Et après, je dois aller aux toilettes.",
-        why: "<i>Toilette</i> vient du français, mais se prononce à l'allemande : l'accent tombe sur <b>let</b>, <b>oi</b> se lit [oa] et le <b>e</b> final s'entend ; dans <i>Wasser</i>, le <b>w</b> est le « v » français ; dans <i>danach</i>, le <b>ch</b> après <b>a</b> est [x], un souffle rauque au fond de la gorge."
+        why: "<i>Toilette</i> vient du français, mais se prononce à l'allemande : l'accent tombe sur <b>let</b>, <b>oi</b> se lit [o̯a] et le <b>e</b> final s'entend ; dans <i>Wasser</i>, le <b>w</b> est le « v » français ; dans <i>danach</i>, le <b>ch</b> après <b>a</b> est [x], un souffle rauque au fond de la gorge."
       },
       {
         tr: "Puis-je vous aider à manger ?",
@@ -573,7 +573,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         q: "Associe chaque terme technique au mot qu'emploie le patient.",
-        pairs: ["das Blutgerinnsel", "die Vorbeugung", "das Druckgeschwür", "die Gelenkversteifung"]
+        pairs: ["der Gefäßverschluss durch ein Blutgerinnsel", "die Vorbeugung", "das Druckgeschwür", "die Gelenkversteifung"]
       },
       {
         q: "Choisis le bon article défini pour chaque nom.",

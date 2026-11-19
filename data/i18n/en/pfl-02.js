@@ -21,14 +21,14 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "The polite imperative",
-        p: "To give a patient an instruction you use the <strong>imperative with Sie</strong>: the infinitive first, then <em>Sie</em> right after it. <em>Machen Sie bitte den Oberarm frei. Legen Sie den Arm auf den Tisch.</em> The form is the same as a yes/no question; what tells them apart is the falling intonation and the word <em>bitte</em>, which you will almost never leave out on the unit. <em>Bitte</em> can come after <em>Sie</em> or at the start: <em>Bitte sprechen Sie während der Messung nicht.</em> With a reflexive verb there are two pronouns: <em>Setzen Sie sich bitte hin.</em>"
+        p: "To give a patient an instruction you use the <strong>imperative with Sie</strong>: the verb first, in the same form as the infinitive but without a separable prefix, which goes to the end; then <em>Sie</em> right after it. <em>Machen Sie bitte den Oberarm frei. Legen Sie den Arm auf den Tisch.</em> The form is the same as a yes/no question; what tells them apart is the falling intonation and the word <em>bitte</em>, which you will almost never leave out on the unit. <em>Bitte</em> can come after <em>Sie</em> or at the start: <em>Bitte sprechen Sie während der Messung nicht.</em> With a reflexive verb there are two pronouns: <em>Setzen Sie sich bitte hin.</em>"
       },
       {
         h: "The separable verbs of measuring",
         p: "Almost everything you say while taking a reading uses a separable verb: <em>anlegen</em> (put the cuff on), <em>ablesen</em> (read the value), <em>einatmen</em> and <em>ausatmen</em> (breathe in, breathe out), <em>freimachen</em> (uncover, roll up the sleeve), <em>sich hinsetzen</em>, <em>sich hinlegen</em>, <em>aufstehen</em>. In the imperative and the present tense the prefix goes <strong>to the end</strong>: <em>Atmen Sie tief ein. Ich lege Ihnen die Manschette an. Ich lese den Wert ab.</em> After a modal the verb stays in one piece, at the end: <em>Muss ich aufstehen?</em>"
       },
       {
-        contrast: "English gives instructions with no pronoun at all: “Sit down, please”, “Breathe in”. German always says <em>Sie</em>, after the verb, and a reflexive verb adds <em>sich</em> on top: <em>Setzen Sie sich hin</em>, literally “seat yourself down”. Typical mistakes from English speakers are <em>Setzen Sie hin</em> (no <em>sich</em>) and <em>Sie setzen sich hin</em>, which is a statement, not a request. The good news: English phrasal verbs are a real model for separable verbs. You already say “put the cuff on” and “breathe in”, with the particle at the end. German just makes it compulsory and pushes it to the very end of the clause, however long it is: <em>Ich lege Ihnen jetzt die Manschette an</em>. Drop the <em>an</em> and the sentence is left hanging: <em>Ich lege Ihnen die Manschette</em> only means “I'm laying the cuff down for you”."
+        contrast: "English gives instructions with no pronoun at all: “Sit down, please”, “Breathe in”. German always says <em>Sie</em>, after the verb, and a reflexive verb adds <em>sich</em> on top: <em>Setzen Sie sich hin</em>, literally “seat yourself down”. Typical mistakes from English speakers are <em>Setzen Sie hin</em> (no <em>sich</em>) and <em>Sie setzen sich hin</em>, which is a statement, not a request. The good news: English phrasal verbs are a real model for separable verbs. You already say “put the cuff on” and “breathe in”, with the particle at the end. German just makes it compulsory and pushes it to the very end of the clause, however long it is: <em>Ich lege Ihnen jetzt die Manschette an</em>. Drop the <em>an</em> and the sentence is left hanging: <em>Ich lege Ihnen die Manschette</em> is not a complete sentence, because without <em>an</em> the verb <em>legen</em> still asks where (<em>auf den Tisch</em>)."
       },
       {
         trap: "<em>Der Puls</em> is only the pulse as a heartbeat; the wrist is <em>das Handgelenk</em>: <em>Ich messe den Puls am Handgelenk.</em> Blood pressure, “BP” on a US floor, is <em>der Blutdruck</em>, and you say <em>den Blutdruck messen</em>, not “nehmen”. <em>Die Manschette</em> is the BP cuff, and also a shirt cuff. <em>Den Arm freimachen</em> does not mean “free the arm”: it means uncover it, roll up the sleeve. And <em>die Kurve</em> on the unit is not a curve: it is the patient's vitals chart, the flowsheet."
@@ -328,7 +328,7 @@ LINGUAI.addStrings("en", {
           ["die Tachykardie", "das Herzrasen", "tachycardia"],
           ["die Bradykardie", "der langsame Puls", "bradycardia"],
           ["die Hypotonie", "der niedrige Blutdruck", "hypotension"],
-          ["die Hyperthermie; das Fieber", "das Fieber", "hyperthermia; fever"],
+          ["die Hyperthermie", "die Überwärmung", "hyperthermia"],
           ["die Hypoglykämie", "die Unterzuckerung", "hypoglycemia"],
           ["die Hyperglykämie", "der hohe Blutzucker", "hyperglycemia"],
           ["die Sauerstoffsättigung", "der Sauerstoffwert", "oxygen saturation"]
@@ -361,7 +361,7 @@ LINGUAI.addStrings("en", {
       "Mr. Lang, I'm just going to check your blood sugar. It's a little prick in your finger.",
       "I'm a bit shaky, and I'm sweating.",
       "The reading is lower than this morning. I'll let the doctor know right away.",
-      "Dr. Weber, Mr. Lang is shaky and sweating. His blood sugar is at 60, I suspect hypoglycemia.",
+      "Dr. Weber, Mr. Lang is shaky and sweating. His blood sugar is at 60 mg/dl, I suspect hypoglycemia.",
       "Thanks. I'm coming right now.",
       "Nurse, what's a “Hypoglykämie”?",
       "It means your sugar is too low. Your blood sugar is too low. The doctor will be here in a moment."
@@ -565,7 +565,7 @@ LINGUAI.addStrings("en", {
       },
       {
         tr: "Mrs. Keller's blood pressure is lower than this morning. The reading is reported right away to the unit physician.",
-        why: "In <i>Stationsarzt</i> the initial <b>st</b> is [ʃt] and the <b>ti</b> in <i>Station</i> is read [tsi]; in <i>gemeldet</i> the final <b>d</b> sounds like [t]."
+        why: "In <i>Stationsarzt</i> the initial <b>st</b> is [ʃt] and the <b>ti</b> in <i>Station</i> is read [tsi]; in <i>wird</i> the final <b>d</b> sounds like [t]."
       },
       {
         tr: "An abnormal reading is reported right away.",

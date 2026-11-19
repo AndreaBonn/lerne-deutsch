@@ -21,14 +21,14 @@ LINGUAI.addStrings("it", {
     theory: [
       {
         h: "L'imperativo di cortesia",
-        p: "Per dare un'istruzione al paziente si usa l'<strong>imperativo con Sie</strong>: il verbo all'infinito in testa, subito dopo <em>Sie</em>. <em>Machen Sie bitte den Oberarm frei. Legen Sie den Arm auf den Tisch.</em> La forma è uguale a quella della domanda sì/no; a distinguerle sono l'intonazione che scende e la parola <em>bitte</em>, che in reparto non manca quasi mai. <em>Bitte</em> può stare dopo <em>Sie</em> o in testa: <em>Bitte sprechen Sie während der Messung nicht.</em> Con un verbo riflessivo ci sono due pronomi: <em>Setzen Sie sich bitte hin.</em>"
+        p: "Per dare un'istruzione al paziente si usa l'<strong>imperativo con Sie</strong>: il verbo in testa, nella stessa forma dell'infinito ma senza il prefisso separabile, che va in fondo; subito dopo <em>Sie</em>. <em>Machen Sie bitte den Oberarm frei. Legen Sie den Arm auf den Tisch.</em> La forma è uguale a quella della domanda sì/no; a distinguerle sono l'intonazione che scende e la parola <em>bitte</em>, che in reparto non manca quasi mai. <em>Bitte</em> può stare dopo <em>Sie</em> o in testa: <em>Bitte sprechen Sie während der Messung nicht.</em> Con un verbo riflessivo ci sono due pronomi: <em>Setzen Sie sich bitte hin.</em>"
       },
       {
         h: "I verbi separabili della misurazione",
         p: "Quasi tutto quello che si dice durante una misurazione usa un verbo separabile: <em>anlegen</em> (mettere il bracciale), <em>ablesen</em> (leggere il valore), <em>einatmen</em> e <em>ausatmen</em> (inspirare, espirare), <em>freimachen</em> (scoprire), <em>sich hinsetzen</em>, <em>sich hinlegen</em>, <em>aufstehen</em>. All'imperativo e al presente il prefisso va <strong>in fondo</strong>: <em>Atmen Sie tief ein. Ich lege Ihnen die Manschette an. Ich lese den Wert ab.</em> Dopo un modale il verbo resta intero, in fondo: <em>Muss ich aufstehen?</em>"
       },
       {
-        contrast: "In italiano l'imperativo di cortesia è una parola sola con il pronome attaccato: «si sieda», «si sdrai», «respiri». In tedesco il <em>Sie</em> va detto sempre, dopo il verbo, e con i riflessivi si aggiunge <em>sich</em>: <em>Setzen Sie sich hin</em>. Gli errori tipici di chi parla italiano sono <em>Setzen sich</em> (manca <em>Sie</em>) e <em>Sie setzen sich hin</em>, che è un'affermazione e non un invito. L'italiano non ha nulla di simile al prefisso separabile: «metta il bracciale» diventa <em>legen Sie die Manschette an</em>, con il pezzo <em>an</em> che arriva solo alla fine. Se te lo dimentichi, la frase resta a metà: <em>Ich lege Ihnen die Manschette</em> vuol dire solo «Le appoggio il bracciale»."
+        contrast: "In italiano l'imperativo di cortesia non nomina il Lei: «si sieda», «si sdrai», «respiri»; a chi è rivolto lo dice la desinenza. In tedesco il <em>Sie</em> va detto sempre, dopo il verbo, e con i riflessivi si aggiunge <em>sich</em>: <em>Setzen Sie sich hin</em>. Gli errori tipici di chi parla italiano sono <em>Setzen sich</em> (manca <em>Sie</em>) e <em>Sie setzen sich hin</em>, che è un'affermazione e non un invito. L'italiano non ha nulla di simile al prefisso separabile: «metta il bracciale» diventa <em>legen Sie die Manschette an</em>, con il pezzo <em>an</em> che arriva solo alla fine. Se te lo dimentichi, la frase resta a metà: <em>Ich lege Ihnen die Manschette</em> non è una frase finita, perché <em>legen</em> senza <em>an</em> chiede ancora dove (<em>auf den Tisch</em>)."
       },
       {
         trap: "<em>Der Puls</em> è solo il polso come battito; il polso come parte del braccio è <em>das Handgelenk</em>: <em>Ich messe den Puls am Handgelenk.</em> La «pressione» non è <em>Pression</em> ma <em>der Blutdruck</em>, e si dice <em>den Blutdruck messen</em>. <em>Die Manschette</em> è il bracciale dello sfigmomanometro, ma anche il polsino della camicia. <em>Den Arm freimachen</em> non vuol dire «liberare il braccio», ma scoprirlo, tirare su la manica. E <em>die Kurve</em> in reparto non è una curva qualunque: è la scheda dei parametri del paziente."
@@ -328,7 +328,7 @@ LINGUAI.addStrings("it", {
           ["die Tachykardie", "das Herzrasen", "tachicardia"],
           ["die Bradykardie", "der langsame Puls", "bradicardia"],
           ["die Hypotonie", "der niedrige Blutdruck", "ipotensione"],
-          ["die Hyperthermie; das Fieber", "das Fieber", "ipertermia; febbre"],
+          ["die Hyperthermie", "die Überwärmung", "ipertermia"],
           ["die Hypoglykämie", "die Unterzuckerung", "ipoglicemia"],
           ["die Hyperglykämie", "der hohe Blutzucker", "iperglicemia"],
           ["die Sauerstoffsättigung", "der Sauerstoffwert", "saturazione di ossigeno"]
@@ -361,7 +361,7 @@ LINGUAI.addStrings("it", {
       "Signor Lang, Le misuro velocemente la glicemia. È una piccola puntura sul dito.",
       "Tremo un po', e sudo.",
       "Il valore è più basso di stamattina. Avviso subito il medico.",
-      "Dottor Weber, il signor Lang trema e suda. La glicemia è a 60, sospetto un'ipoglicemia.",
+      "Dottor Weber, il signor Lang trema e suda. La glicemia è a 60 mg/dl, sospetto un'ipoglicemia.",
       "Grazie. Arrivo subito.",
       "Infermiera, che cos'è una «Hypoglykämie»?",
       "È quando lo zucchero è troppo basso. La Sua glicemia è troppo bassa. Il medico arriva subito."
@@ -565,7 +565,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "La pressione della signora Keller è più bassa di stamattina. Il valore viene segnalato subito al medico di reparto.",
-        why: "In <i>Stationsarzt</i> la <b>st</b> iniziale è [ʃt] e la <b>ti</b> di <i>Station</i> si legge [tsi]; in <i>gemeldet</i> la <b>d</b> finale suona [t]."
+        why: "In <i>Stationsarzt</i> la <b>st</b> iniziale è [ʃt] e la <b>ti</b> di <i>Station</i> si legge [tsi]; in <i>wird</i> la <b>d</b> finale suona [t]."
       },
       {
         tr: "Un valore alterato viene segnalato subito.",

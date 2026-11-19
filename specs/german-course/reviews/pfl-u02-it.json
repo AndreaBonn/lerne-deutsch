@@ -1,0 +1,43 @@
+{
+  "bundleHash": "9a3b63d0e9b0711090c5973edffb63ab791855bcb228b619b5eb4457a767f33f",
+  "findings": [
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "L’italiano «si sieda» contiene un pronome separato, non attaccato al verbo. Riformulare il confronto distinguendo il pronome riflessivo italiano «si» da «Sie» e «sich» in tedesco.",
+      "path": "merged.lessons[0].theory[2].contrast"
+    },
+    {
+      "kind": "Pronuncia",
+      "msg": "In «während» la d non è finale di parola e non si pronuncia [t]; è seguita dalla vocale della sillaba finale. Correggere la spiegazione.",
+      "path": "merged.lessons[0].exercises[10].why"
+    },
+    {
+      "kind": "Risposta ambigua",
+      "msg": "La consegna chiede un comparativo e un superlativo, ma senza ulteriori indizi sono possibili anche altre coppie grammaticalmente corrette. Aggiungere indicazioni per entrambi gli aggettivi oppure accettare le alternative coerenti.",
+      "path": "merged.lessons[1].exercises[3]"
+    },
+    {
+      "kind": "Equivalenza lessicale",
+      "msg": "«Tachykardie» indica una frequenza cardiaca elevata, mentre «Herzrasen» descrive la sensazione soggettiva di cuore che corre: possono coesistere, ma non sono equivalenti. Presentare «Herzrasen» come possibile sintomo e spiegare la tachicardia al paziente con «schneller Herzschlag» o «schneller Puls». Correggere anche gli abbinamenti e le spiegazioni che li trattano come sinonimi.",
+      "path": "merged.lessons[2].grammar.table.rows[0]"
+    },
+    {
+      "kind": "Equivalenza lessicale",
+      "msg": "La domanda chiede se il paziente ha una tachicardia, ma «Haben Sie Herzrasen?» chiede se avverte il cuore correre e non stabilisce la presenza di una tachicardia. Riformulare la consegna sul sintomo avvertito o scegliere una formulazione che descriva la frequenza cardiaca elevata.",
+      "path": "merged.lessons[2].exercises[1]"
+    },
+    {
+      "kind": "Equivalenza lessicale",
+      "msg": "«Haben Sie Herzrasen?» significa «Sente il cuore battere molto velocemente?», non necessariamente «Ha la tachicardia?». Modificare la frase italiana da tradurre o la risposta attesa.",
+      "path": "merged.lessons[2].exercises[7]"
+    },
+    {
+      "kind": "Pronuncia",
+      "msg": "In «gemeldet» la d è all’interno della parola, prima di una vocale, e non è una consonante finale pronunciata [t]. Eliminare o correggere l’indicazione.",
+      "path": "merged.lessons[3].exercises[9].why"
+    }
+  ],
+  "lang": "it",
+  "unit": "pfl-u02",
+  "verdict": "fail"
+}

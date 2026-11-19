@@ -1,0 +1,43 @@
+{
+  "bundleHash": "2d5a287dfea35f339305a66b56a340ef6d109011fa336f4ba876a4054ef92ccf",
+  "findings": [
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "«Ich lege Ihnen die Manschette» è una frase incompleta: senza il complemento separabile «an» non significa «le poso il bracciale lì». Presentala come frase incompleta, oppure aggiungi un complemento di luogo se intendi usare «legen» nel senso di posare.",
+      "path": "merged.lessons[0].theory[2].contrast"
+    },
+    {
+      "kind": "Esercizio ambiguo",
+      "msg": "La consegna non specifica quali aggettivi usare: «höher» e «niedriger» possono entrambi completare il primo spazio, mentre «niedrigsten» è possibile nel secondo. Indica gli aggettivi di partenza oppure accetta le alternative coerenti.",
+      "path": "merged.lessons[1].exercises[3]"
+    },
+    {
+      "kind": "Terminologia medica",
+      "msg": "«Tachykardie» indica una frequenza cardiaca elevata; «Herzrasen» descrive una sensazione soggettiva e non è sempre presente. La coppia è proposta come equivalenza esatta anche nella tabella, negli esercizi e nel test. Distinguere la diagnosi dal sintomo e usare, per spiegarla a un paziente, «Ihr Herz schlägt zu schnell».",
+      "path": "merged.lessons[2].grammar.table.rows[0]"
+    },
+    {
+      "kind": "Esercizio ambiguo",
+      "msg": "Una glicemia più bassa rispetto al mattino non implica necessariamente un'ipoglicemia, e il primo spazio può accogliere anche «höher». Aggiungi un valore con unità e un'indicazione sugli aggettivi richiesti, oppure riformula l'esercizio per rendere univoche le risposte.",
+      "path": "merged.lessons[2].exercises[5]"
+    },
+    {
+      "kind": "Completezza della comunicazione clinica",
+      "msg": "La glicemia è comunicata come «60» senza unità, benché la lezione spieghi che in Germania si usano sia mg/dl sia mmol/l e che l'unità va detta durante le consegne. Aggiungi «mg/dl» alla battuta tedesca e alla traduzione francese.",
+      "path": "neutral.lessons[2].dialogue.lines[3].it"
+    },
+    {
+      "kind": "Chiave di risposta",
+      "msg": "«Noch einmal gemessen» significa «misurata di nuovo», mentre la frase francese chiede che il valore sia ricontrollato. Rimuovi le due risposte con «gemessen» oppure specifica nella consegna che si tratta di una nuova misurazione.",
+      "path": "merged.lessons[3].exercises[5].a"
+    },
+    {
+      "kind": "Esercizio ambiguo",
+      "msg": "Il comparativo non è determinato dalla frase: anche «höher» e altri comparativi sono grammaticalmente possibili. Fornisci l'aggettivo di partenza o un contesto che richieda «niedriger».",
+      "path": "merged.test.exercises[6]"
+    }
+  ],
+  "lang": "fr",
+  "unit": "pfl-u02",
+  "verdict": "fail"
+}

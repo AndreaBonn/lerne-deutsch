@@ -302,7 +302,7 @@ LINGUAI.addUnits("PFL", [
           { t: "multi", a: [0, 1, 2] },
           {
             t: "match",
-            pairs: [{ it: "die Dysphagie" }, { it: "die Miktion" }, { it: "die Defäkation" }, { it: "die Inkontinenz" }]
+            pairs: [{ it: "die Dysphagie" }, { it: "die Miktion" }, { it: "die Defäkation" }, { it: "die Harninkontinenz" }]
           },
           {
             t: "gender",
@@ -497,7 +497,7 @@ LINGUAI.addUnits("PFL", [
         { t: "conj", verb: "sich anziehen", tense: "praes", persons: [0, 1, 2, 3, 4, 5] },
         {
           t: "match",
-          pairs: [{ it: "die Dysphagie" }, { it: "die Inkontinenz" }, { it: "der Dekubitus" }, { it: "die Prophylaxe" }]
+          pairs: [{ it: "die Dysphagie" }, { it: "die Harninkontinenz" }, { it: "der Dekubitus" }, { it: "die Prophylaxe" }]
         },
         { t: "multi", a: [0, 2, 3] },
         {

@@ -1,0 +1,63 @@
+{
+  "bundleHash": "470c2ec06ce4b130c00955da763030b7814f6ace80cf52086d991c16298f5e27",
+  "findings": [
+    {
+      "kind": "Pronuncia",
+      "msg": "In «Toilette» la sequenza «oi» si pronuncia generalmente [o̯a], non [oa] come due vocali distinte; indica la trascrizione [to̯aˈlɛtə].",
+      "path": "merged.lessons[2].exercises[10].why"
+    },
+    {
+      "kind": "Significato e abbinamento",
+      "msg": "«Inkontinenz» comprende anche l'incontinenza fecale, mentre «Blasenschwäche» indica un disturbo della vescica. Specifica «Harninkontinenz» come termine tecnico oppure modifica l'abbinamento per evitare una falsa equivalenza.",
+      "path": "merged.lessons[2].exercises[5].pairs[3]"
+    },
+    {
+      "kind": "Significato e abbinamento",
+      "msg": "«Inkontinenz» è più ampio di «Blasenschwäche»: l'abbinamento esclude l'incontinenza fecale. Usa «Harninkontinenz» come termine tecnico o una formulazione che distingua i due significati.",
+      "path": "merged.test.exercises[4].pairs[1]"
+    },
+    {
+      "kind": "Significato e abbinamento",
+      "msg": "«Thrombose» è una condizione patologica, mentre «Blutgerinnsel» è un coagulo: non sono sinonimi. Riformula l'esercizio come associazione tra condizione e spiegazione, oppure usa una definizione comprensibile della trombosi.",
+      "path": "merged.lessons[3].exercises[4].pairs[0]"
+    },
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "La regola «con un oggetto» è troppo ampia: il dativo riflessivo dipende dalla costruzione, non dalla semplice presenza di qualsiasi oggetto. Limitala agli esempi trattati con un ulteriore oggetto all'accusativo, come parti del corpo e indumenti.",
+      "path": "merged.lessons[0].grammar.note"
+    },
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "«Il pronome segue il verbo coniugato» non vale in generale, per esempio nelle subordinate con verbo finale. Specifica che negli esempi della frase principale il pronome segue il verbo coniugato.",
+      "path": "merged.lessons[0].theory[1].p"
+    },
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "La presenza di un verbo di movimento non determina da sola l'accusativo: conta se il complemento con la preposizione esprime una meta. Sostituisci la regola con «meta, wohin: accusativo; posizione o percorso entro un luogo, wo: dativo».",
+      "path": "merged.lessons[1].grammar.note"
+    },
+    {
+      "kind": "Traduzione",
+      "msg": "«Heute noch» significa «ancora oggi», cioè prima della fine della giornata; «andare ancora» può suggerire una ripetizione. Usa «Vuole andare sulla sedia a rotelle anche oggi, più tardi?» o «Vuole andare sulla sedia a rotelle prima della fine della giornata?».",
+      "path": "merged.lessons[1].dialogue.lines[8].tr"
+    },
+    {
+      "kind": "Traduzione",
+      "msg": "«Heute noch» indica «ancora oggi», non necessariamente che il paziente ripeta l'azione. Correggi in «Vuole andare sulla sedia a rotelle prima della fine della giornata?».",
+      "path": "merged.lessons[1].exercises[10].tr"
+    },
+    {
+      "kind": "Registro e significato",
+      "msg": "La nota presenta come universale l'uso di «Druckgeschwür» e afferma che nessun paziente dice «Mobilisation» o «Lagerung». Gli usi variano e «Druckgeschwür» non è necessariamente la parola abituale del paziente. Presenta i termini come possibili formulazioni e proponi anche una spiegazione semplice, per esempio «eine wunde Stelle durch Druck».",
+      "path": "merged.lessons[1].theory[2].contrast"
+    },
+    {
+      "kind": "Pronuncia",
+      "msg": "«Anzuziehen» contiene una sola lettera z, anche se presenta due suoni [ts], uno nella sequenza «zu» e uno nella z di «ziehen». Correggi la spiegazione distinguendo lettere e suoni.",
+      "path": "merged.lessons[3].exercises[11].why"
+    }
+  ],
+  "lang": "it",
+  "unit": "pfl-u03",
+  "verdict": "fail"
+}

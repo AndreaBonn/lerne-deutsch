@@ -1,0 +1,38 @@
+{
+  "bundleHash": "5942b8780c3c563ef73c6caa2885a0a44219e75fb61830ed0712b00094c71236",
+  "findings": [
+    {
+      "kind": "pronunciación",
+      "msg": "En el alemán estándar, la ch de «Tachykardie» se pronuncia [k], no [x]. Corrige la indicación de pronunciación.",
+      "path": "merged.lessons[2].exercises[9].why"
+    },
+    {
+      "kind": "pronunciación",
+      "msg": "La d de «gemeldet» no está al final de la palabra y se pronuncia [d]; la consonante final es t. Corrige la explicación.",
+      "path": "merged.lessons[3].exercises[9].why"
+    },
+    {
+      "kind": "precisión terminológica",
+      "msg": "«Herzrasen» describe una percepción subjetiva y no equivale siempre a una taquicardia objetivamente medida. Sustituye la equivalencia absoluta por una explicación que distinga síntoma y hallazgo clínico.",
+      "path": "merged.lessons[2].grammar.table.rows[0]"
+    },
+    {
+      "kind": "precisión terminológica",
+      "msg": "La pregunta presenta «tener taquicardia» y «notar Herzrasen» como equivalentes. Pregunta por la sensación de corazón acelerado o aclara que la respuesta explora un síntoma, sin confirmar una taquicardia.",
+      "path": "merged.lessons[2].exercises[1]"
+    },
+    {
+      "kind": "explicación gramatical",
+      "msg": "En «Ich lege Ihnen die Manschette» falta el complemento de lugar exigido por «legen»; la frase aislada no significa simplemente «le dejo el manguito». Explica que sin «an» queda incompleta para expresar la colocación del manguito.",
+      "path": "merged.lessons[0].theory[2].contrast"
+    },
+    {
+      "kind": "pronunciación",
+      "msg": "El diptongo alemán [aɪ] de «frei» no coincide con el de «rey», que en español suele ser [ei]. Usa una aproximación más fiel, como «aire», o conserva solo la transcripción fonética.",
+      "path": "merged.lessons[0].exercises[9].why"
+    }
+  ],
+  "lang": "es",
+  "unit": "pfl-u02",
+  "verdict": "fail"
+}

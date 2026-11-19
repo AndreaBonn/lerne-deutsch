@@ -1,0 +1,53 @@
+{
+  "bundleHash": "56493b8f7c4c648b0a0f197111a9a988ae7369af04f6088ff04cf27f26080b8b",
+  "findings": [
+    {
+      "kind": "grammatica",
+      "msg": "La regola è troppo ampia: un complemento qualsiasi non impone il dativo al pronome riflessivo. Precisare che, negli esempi con waschen e anziehen, è la presenza di un oggetto diretto all’accusativo, come das Gesicht o die Jacke, a richiedere mir invece di mich.",
+      "path": "merged.lessons[0].grammar.note"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "La posizione del pronome dopo il verbo flesso vale per gli esempi in frase principale, non come regola generale: in una subordinata si dice per esempio «weil er sich wäscht». Circoscrivere la spiegazione alle frasi principali e alle domande illustrate.",
+      "path": "merged.lessons[0].theory[1].p"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "Il caso delle Wechselpräpositionen dipende dalla direzione o dalla posizione espressa dal sintagma, non semplicemente dal verbo di movimento: «Ich gehe im Zimmer» descrive movimento in un luogo e richiede il dativo. Riformulare la regola in termini di Wohin? e Wo?.",
+      "path": "merged.lessons[1].grammar.note"
+    },
+    {
+      "kind": "grammatica",
+      "msg": "Anche setzen, legen e stellen possono comparire con un sintagma locativo al dativo, per esempio «Ich stelle im Zimmer einen Stuhl auf». Precisare che l’accusativo riguarda il complemento che indica la destinazione, non tutti i complementi retti da questi verbi.",
+      "path": "merged.lessons[1].theory[1].p"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In «Toilette» la sequenza oi si pronuncia [ɔa̯], non [oa]. Correggere la trascrizione fonetica.",
+      "path": "merged.lessons[2].exercises[10].why"
+    },
+    {
+      "kind": "chiave di risposta",
+      "msg": "Inkontinenz comprende anche il nietrzymanie stolca, mentre Blasenschwäche riguarda la vescica: la coppia non è un’equivalenza generale. Specificare «Harninkontinenz» oppure scegliere un’alternativa che mantenga il significato più ampio.",
+      "path": "merged.lessons[2].exercises[5].pairs[3]"
+    },
+    {
+      "kind": "chiave di risposta",
+      "msg": "La trombosi è una condizione patologica; Blutgerinnsel è il coagulo e non ne è sinonimo. La stessa lezione riconosce questa distinzione. Sostituire la coppia con un’equivalenza fedele oppure formulare l’esercizio come associazione tra concetti collegati.",
+      "path": "merged.lessons[3].exercises[4].pairs[0]"
+    },
+    {
+      "kind": "chiave di risposta",
+      "msg": "Inkontinenz può riguardare urina o feci, mentre Blasenschwäche indica soltanto un problema della vescica. Usare «Harninkontinenz» come termine da abbinare oppure correggere l’alternativa.",
+      "path": "merged.test.exercises[4].pairs[1]"
+    },
+    {
+      "kind": "lessico e registro",
+      "msg": "La nota presenta Druckgeschwür come termine usato dai pazienti e sostiene che nessun paziente direbbe Mobilisation o Lagerung. Sono generalizzazioni troppo categoriche: i registri variano. Presentare i termini come possibili formulazioni e proporre anche spiegazioni semplici, senza attribuirli a tutti i pazienti.",
+      "path": "merged.lessons[1].theory[2].contrast"
+    }
+  ],
+  "lang": "pl",
+  "unit": "pfl-u03",
+  "verdict": "fail"
+}

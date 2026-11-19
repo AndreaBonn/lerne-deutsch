@@ -1,0 +1,28 @@
+{
+  "bundleHash": "a0d95f6fc2215549e9aa96af0d71d33f12da45f4369f9671b996c469f7a601cb",
+  "findings": [
+    {
+      "kind": "Grammatica",
+      "msg": "La regola attribuisce il dativo alla presenza di qualsiasi complemento, ma anche «Ich wasche mich am Waschbecken» contiene un complemento e mantiene l'accusativo. Precisare che, con questi verbi, il riflessivo è al dativo quando un altro complemento oggetto all'accusativo indica la parte del corpo o il capo di abbigliamento. Correggere anche le spiegazioni analoghe negli esercizi della lezione e del test.",
+      "path": "merged.lessons[0].grammar.note"
+    },
+    {
+      "kind": "Lessico",
+      "msg": "«Toilette» non indica esclusivamente il WC: può anche riferirsi alla cura o preparazione personale. Anche «Wäsche» può indicare il lavaggio, per esempio in «Ganzkörperwäsche», oltre a biancheria e bucato. Riformulare distinguendo i significati secondo il contesto.",
+      "path": "merged.lessons[0].theory[3].trap"
+    },
+    {
+      "kind": "Chiave di abbinamento",
+      "msg": "«Inkontinenz» comprende anche l'incontinenza fecale, mentre «Blasenschwäche» riguarda quella urinaria. Sostituire il termine tecnico con «Harninkontinenz» o specificare il tipo nel quesito; correggere lo stesso abbinamento nel test.",
+      "path": "merged.lessons[2].exercises[5].pairs[3]"
+    },
+    {
+      "kind": "Chiave di abbinamento",
+      "msg": "Una «Thrombose» è una condizione causata dalla formazione di un trombo, mentre «Blutgerinnsel» indica il coagulo: non sono sinonimi. Sostituire la coppia con termini equivalenti oppure chiedere esplicitamente di associare la condizione al coagulo che la causa.",
+      "path": "merged.lessons[3].exercises[4].pairs[0]"
+    }
+  ],
+  "lang": "fr",
+  "unit": "pfl-u03",
+  "verdict": "fail"
+}

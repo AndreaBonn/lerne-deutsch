@@ -25,10 +25,10 @@ LINGUAI.addStrings("en", {
       },
       {
         h: "Reflexive verbs",
-        p: "Many hygiene verbs are reflexive: <em>sich waschen, sich anziehen, sich ausziehen, sich rasieren, sich kämmen</em>. The pronoun follows the conjugated verb: <em>Ich wasche mich. Er zieht sich an.</em> With formal Sie the reflexive is <strong>sich</strong>, lowercase, not <em>Sie</em>: <em>Können Sie sich allein anziehen?</em> When the sentence has an object (a body part, a piece of clothing), the reflexive switches to the <strong>dative</strong>: <em>Ich wasche mich</em>, but <em>Ich wasche mir das Gesicht</em>. You only see the difference with <em>ich</em> and <em>du</em> (mich/mir, dich/dir): <em>sich</em>, <em>uns</em> and <em>euch</em> stay the same. In the Perfekt reflexive verbs take <em>haben</em>: <em>Er hat sich schon angezogen.</em>"
+        p: "Many hygiene verbs are reflexive: <em>sich waschen, sich anziehen, sich ausziehen, sich rasieren, sich kämmen</em>. In a main clause the pronoun follows the conjugated verb: <em>Ich wasche mich. Er zieht sich an.</em> With formal Sie the reflexive is <strong>sich</strong>, lowercase, not <em>Sie</em>: <em>Können Sie sich allein anziehen?</em> When the sentence also has an accusative object (a body part, a piece of clothing), the reflexive switches to the <strong>dative</strong>: <em>Ich wasche mich</em>, but <em>Ich wasche mir das Gesicht</em>. You only see the difference with <em>ich</em> and <em>du</em> (mich/mir, dich/dir): <em>sich</em>, <em>uns</em> and <em>euch</em> stay the same. In the Perfekt reflexive verbs take <em>haben</em>: <em>Er hat sich schon angezogen.</em>"
       },
       {
-        contrast: "English mostly drops the reflexive: you say “I wash”, “he gets dressed”, “can you shave?”, and “I wash myself” sounds odd outside a care plan. German needs the pronoun every time: <em>Ich wasche mich</em>, <em>Er zieht sich an</em>, <em>Können Sie sich rasieren?</em> Without it the sentence is incomplete, and “Ich wasche” leaves the listener waiting for an object. English also says “I wash <strong>my</strong> hands” with a possessive; German uses the dative reflexive and the article instead: <em>Ich wasche mir die Hände</em>, not “meine Hände”. In a US facility the bed bath and perineal care are often done by a CNA; in Germany basic care is part of the nurse's job too, done by the <em>Pflegefachkraft</em> or a <em>Pflegehelfer</em>. In documentation you will read <em>Intimpflege</em> and <em>Intimbereich</em>, the German equivalents of “peri care”. Many older patients do not use these words and say <em>untenherum</em>. There is no need to correct them: understand the word and answer calmly, without being more explicit than the patient chose to be."
+        contrast: "English mostly drops the reflexive: you say “I wash”, “he gets dressed”, “can you shave?”, and “I wash myself” sounds odd outside a care plan. German needs the pronoun every time: <em>Ich wasche mich</em>, <em>Er zieht sich an</em>, <em>Können Sie sich rasieren?</em> Without it the sentence is incomplete, and “Ich wasche” leaves the listener waiting for an object. English also says “I wash <strong>my</strong> hands” with a possessive; German uses the dative reflexive and the article instead: <em>Ich wasche mir die Hände</em>; “meine Hände” is not wrong, just less natural. In a US facility the bed bath and perineal care are often done by a CNA; in Germany basic care is part of the nurse's job too, done by the <em>Pflegefachkraft</em> or a <em>Pflegehelfer</em>. In documentation you will read <em>Intimpflege</em> and <em>Intimbereich</em>, the German equivalents of “peri care”. Many older patients do not use these words and say <em>untenherum</em>. There is no need to correct them: understand the word and answer calmly, without being more explicit than the patient chose to be."
       },
       {
         trap: "<em>baden</em> does not mean washing in general: it means taking a bath in a tub. Washing at the sink is <em>sich waschen</em>, a shower is <em>duschen</em>. <em>Das Bad</em> is both the bathroom and the bath itself. <em>Die Wäsche</em> is laundry or linen, but on the unit <em>die Ganzkörperwäsche</em> is a full-body wash, often a bed bath. And <em>das Hemd</em> is a shirt, while a nightgown is <em>das Nachthemd</em>. Note that <em>der Waschlappen</em> is a washcloth, often sewn as a mitt."
@@ -39,7 +39,7 @@ LINGUAI.addStrings("en", {
     ],
     grammar: {
       title: "mich or mir?",
-      note: "Without an object the reflexive is <b>accusative</b> (<b>mich</b>). With an object, a body part or a piece of clothing, it becomes <b>dative</b> (<b>mir</b>). With the patient: always <b>sich</b>.",
+      note: "Without another object the reflexive is <b>accusative</b> (<b>mich</b>). With a separate accusative object, a body part or a piece of clothing, it becomes <b>dative</b> (<b>mir</b>). With the patient: always <b>sich</b>.",
       table: {
         head: ["person", "no object (accusative)", "with an object (dative)"],
         rows: [
@@ -75,7 +75,7 @@ LINGUAI.addStrings("en", {
     dialogue: [
       "Good morning, Mrs. Keller. Did you sleep well?",
       "Good morning. So-so.",
-      "Would you like to wash at the sink today, or would you rather stay in bed?",
+      "Would you like to wash at the sink today, or would you rather wash in bed?",
       "At the sink, if you help me.",
       "Of course. You wash your face and arms yourself, and I'll wash your back.",
       "And down there I'd rather do it myself.",
@@ -178,13 +178,13 @@ LINGUAI.addStrings("en", {
       },
       {
         h: "Wohin? or wo?",
-        p: "The prepositions <em>an, auf, in, neben, unter, über, vor, hinter, zwischen</em> take two cases. If there is movement toward a destination (<strong>wohin?</strong>) they take the <strong>accusative</strong>: <em>Ich setze Sie an die Bettkante.</em> If you describe a position (<strong>wo?</strong>) they take the <strong>dative</strong>: <em>Sie sitzen an der Bettkante.</em> The verbs come in pairs: <em>setzen, legen, stellen</em> describe the movement and take the accusative; <em>sitzen, liegen, stehen</em> describe the position and take the dative. Common contractions: <em>an das → ans</em>, <em>in das → ins</em>, <em>an dem → am</em>, <em>in dem → im</em>."
+        p: "The prepositions <em>an, auf, in, neben, unter, über, vor, hinter, zwischen</em> take two cases. If there is movement toward a destination (<strong>wohin?</strong>) they take the <strong>accusative</strong>: <em>Ich setze Sie an die Bettkante.</em> If you describe a position (<strong>wo?</strong>) they take the <strong>dative</strong>: <em>Sie sitzen an der Bettkante.</em> The verbs come in pairs: <em>setzen, legen, stellen</em> describe the movement and take the accusative after the preposition that names the destination; <em>sitzen, liegen, stehen</em> describe the position and take the dative. Common contractions: <em>an das → ans</em>, <em>in das → ins</em>, <em>an dem → am</em>, <em>in dem → im</em>."
       },
       {
-        contrast: "In American nursing, plain English wins even between colleagues: you chart and hand off a “pressure injury” or “bedsore”, you “turn and reposition” the patient, you get them up “to the chair”. In a German handover the Latin terms are spoken aloud: <em>Dekubitus</em>, <em>Kontraktur</em>, <em>Mobilisation</em>, <em>Lagerung</em>. They will feel more like a textbook than a ward to you, but they are what your colleagues say. The patient, on the other hand, says <em>Druckgeschwür</em> (literally “pressure ulcer”) or uses the verb <em>sich wundliegen</em>: <em>Ich habe mich wundgelegen.</em> For a contracture he says <em>Gelenkversteifung</em> or simply <em>Das Knie wird steif.</em> And no patient says <em>Mobilisation</em> or <em>Lagerung</em>: he says <em>aufstehen</em>, <em>sich hinsetzen</em>, <em>sich umdrehen</em>. English has one verb, “put”, for every direction; German makes you choose between <em>setzen</em>, <em>legen</em> and <em>stellen</em>, depending on whether the result is sitting, lying or standing."
+        contrast: "In American nursing, plain English wins even between colleagues: you chart and hand off a “pressure injury” or “bedsore”, you “turn and reposition” the patient, you get them up “to the chair”. In a German handover the Latin terms are spoken aloud: <em>Dekubitus</em>, <em>Kontraktur</em>, <em>Mobilisation</em>, <em>Lagerung</em>. They will feel more like a textbook than a ward to you, but they are what your colleagues say. The patient, on the other hand, says <em>Druckgeschwür</em> (literally “pressure ulcer”) or uses the verb <em>sich wundliegen</em>: <em>Ich habe mich wundgelegen.</em> For a contracture he says <em>Gelenkversteifung</em> or simply <em>Das Knie wird steif.</em> And patients rarely say <em>Mobilisation</em> or <em>Lagerung</em>: they say <em>aufstehen</em>, <em>sich hinsetzen</em>, <em>sich umdrehen</em>. English has one verb, “put”, for every direction; German makes you choose between <em>setzen</em>, <em>legen</em> and <em>stellen</em>, depending on whether the result is sitting, lying or standing."
       },
       {
-        trap: "<em>Die Lagerung</em> on the unit is patient positioning, but in everyday German it means storing goods in a warehouse: do not use it with the patient, who would feel treated like a package. Say instead <em>Ich helfe Ihnen, sich auf die Seite zu drehen.</em> Do not mix up <em>setzen</em> and <em>sitzen</em>: <em>Ich sitze Sie</em> does not exist, just as you cannot “sit” someone in English and mean “seat”. And <em>der Rollstuhl</em> is the wheelchair, while <em>der Rollator</em> is a rolling walker, not a roller."
+        trap: "<em>Die Lagerung</em> on the unit is patient positioning, but in everyday German it means storing goods in a warehouse: do not use it with the patient, who would feel treated like a package. Say instead <em>Ich helfe Ihnen, sich auf die Seite zu drehen.</em> Do not mix up <em>setzen</em> and <em>sitzen</em>: <em>Ich sitze Sie</em> does not exist. And <em>der Rollstuhl</em> is the wheelchair, while <em>der Rollator</em> is a rolling walker, not a roller."
       },
       {
         tip: "To pick the case, ask yourself whether the patient is moving toward a place or is already there: <em>wohin?</em> or <em>wo?</em> In practice, almost every time you talk about what you are about to do you use <em>setzen, legen, stellen</em> with the accusative; when you describe how the patient is settled you use <em>sitzen, liegen, stehen</em> with the dative."
@@ -192,7 +192,7 @@ LINGUAI.addStrings("en", {
     ],
     grammar: {
       title: "Movement and position",
-      note: "<b>Wohin?</b> Movement verb + <b>accusative</b>. <b>Wo?</b> Position verb + <b>dative</b>. Same preposition, different case.",
+      note: "<b>Wohin?</b> Destination of a movement + <b>accusative</b>. <b>Wo?</b> Position, or movement within a place, + <b>dative</b>. Same preposition, different case.",
       table: {
         head: ["wohin? (accusative)", "wo? (dative)"],
         rows: [
@@ -455,7 +455,7 @@ LINGUAI.addStrings("en", {
       },
       {
         tr: "A glass of water, please. And afterwards I need to use the bathroom.",
-        why: "In <i>Toilette</i>, a word of French origin, the stress falls on <b>let</b> and <b>oi</b> is pronounced [oa]; in <i>Wasser</i> the <b>w</b> sounds like English “v”; in <i>danach</i> <b>ch</b> after <b>a</b> is [x], a throaty sound English does not have."
+        why: "In <i>Toilette</i>, a word of French origin, the stress falls on <b>let</b> and <b>oi</b> is pronounced [o̯a]; in <i>Wasser</i> the <b>w</b> sounds like English “v”; in <i>danach</i> <b>ch</b> after <b>a</b> is [x], a throaty sound English does not have."
       },
       {
         tr: "May I help you with your meal?",
@@ -521,7 +521,7 @@ LINGUAI.addStrings("en", {
       "to try",
       "to manage, to make it",
       "to get up",
-      "thrombosis, DVT",
+      "thrombosis (DVT is one kind)",
       "the blood clot (patient's word)",
       "prophylaxis (technical term)",
       "prevention (patient's word)",
@@ -573,7 +573,7 @@ LINGUAI.addStrings("en", {
       },
       {
         q: "Match each technical term with the word the patient uses.",
-        pairs: ["das Blutgerinnsel", "die Vorbeugung", "das Druckgeschwür", "die Gelenkversteifung"]
+        pairs: ["der Gefäßverschluss durch ein Blutgerinnsel", "die Vorbeugung", "das Druckgeschwür", "die Gelenkversteifung"]
       },
       {
         q: "Choose the right definite article for each noun.",

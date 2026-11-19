@@ -25,7 +25,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         h: "Czasowniki zwrotne",
-        p: "Wiele czasowników związanych z myciem jest zwrotnych: <em>sich waschen, sich anziehen, sich ausziehen, sich rasieren, sich kämmen</em>. Zaimek stoi za odmienionym czasownikiem: <em>Ich wasche mich. Er zieht sich an.</em> Przy grzecznościowym Sie zaimek zwrotny to <strong>sich</strong>, małą literą, a nie <em>Sie</em>: <em>Können Sie sich allein anziehen?</em> Gdy w zdaniu jest dopełnienie (część ciała, ubranie), zaimek zwrotny przechodzi do <strong>celownika</strong>: <em>Ich wasche mich</em>, ale <em>Ich wasche mir das Gesicht</em>. Różnicę widać tylko przy <em>ich</em> i <em>du</em> (mich/mir, dich/dir): <em>sich</em>, <em>uns</em> i <em>euch</em> się nie zmieniają. W Perfekt czasowniki zwrotne łączą się z <em>haben</em>: <em>Er hat sich schon angezogen.</em>"
+        p: "Wiele czasowników związanych z myciem jest zwrotnych: <em>sich waschen, sich anziehen, sich ausziehen, sich rasieren, sich kämmen</em>. W zdaniu głównym zaimek stoi za odmienionym czasownikiem: <em>Ich wasche mich. Er zieht sich an.</em> Przy grzecznościowym Sie zaimek zwrotny to <strong>sich</strong>, małą literą, a nie <em>Sie</em>: <em>Können Sie sich allein anziehen?</em> Gdy w zdaniu jest jeszcze dopełnienie w bierniku (część ciała, ubranie), zaimek zwrotny przechodzi do <strong>celownika</strong>: <em>Ich wasche mich</em>, ale <em>Ich wasche mir das Gesicht</em>. Różnicę widać tylko przy <em>ich</em> i <em>du</em> (mich/mir, dich/dir): <em>sich</em>, <em>uns</em> i <em>euch</em> się nie zmieniają. W Perfekt czasowniki zwrotne łączą się z <em>haben</em>: <em>Er hat sich schon angezogen.</em>"
       },
       {
         contrast: "Polskie «się» to jedno słowo dla wszystkich osób: myję się, myjesz się, myje się. Niemiecki zaimek zwrotny zmienia się z osobą: <em>ich wasche mich, du wäschst dich, er wäscht sich</em>. Do tego «się» lubi stać przed czasownikiem («Czy Pani się sama umyje?»), a <em>sich</em> stoi za odmienionym czasownikiem: <em>Waschen Sie sich selbst?</em> Przy Pan/Pani zaimek to zawsze <em>sich</em>, nigdy «Sie Sie». Dobra wiadomość: rozróżnienie mich/mir polszczyzna już ma, to «się» i «sobie». «Ubieram się», ale «zakładam sobie kurtkę», dokładnie jak <em>Ich ziehe mich an</em> i <em>Ich ziehe mir die Jacke an</em>. Różnica jest jedna: po polsku «sobie» często się opuszcza («myję ręce»), po niemiecku celownik zostaje: <em>Ich wasche mir die Hände</em>. Także tu są dwa rejestry. W dokumentacji i między kolegami mówi się <em>Intimpflege</em> i <em>Intimbereich</em>; wielu starszych pacjentów tych słów nie używa i mówi <em>untenherum</em> («tam na dole»). Nie trzeba ich poprawiać: zrozum słowo i odpowiedz spokojnie, nie używając nazw dosadniejszych niż te, które wybrał pacjent."
@@ -39,7 +39,7 @@ LINGUAI.addStrings("pl", {
     ],
     grammar: {
       title: "mich czy mir?",
-      note: "Bez dopełnienia zaimek zwrotny stoi w <b>bierniku</b> (<b>mich</b>). Z dopełnieniem, częścią ciała albo ubraniem, przechodzi do <b>celownika</b> (<b>mir</b>). Do pacjenta: zawsze <b>sich</b>.",
+      note: "Bez innego dopełnienia zaimek zwrotny stoi w <b>bierniku</b> (<b>mich</b>). Z osobnym dopełnieniem w bierniku, częścią ciała albo ubraniem, przechodzi do <b>celownika</b> (<b>mir</b>). Do pacjenta: zawsze <b>sich</b>.",
       table: {
         head: ["osoba", "bez dopełnienia (biernik)", "z dopełnieniem (celownik)"],
         rows: [
@@ -178,10 +178,10 @@ LINGUAI.addStrings("pl", {
       },
       {
         h: "Wohin? czy wo?",
-        p: "Przyimki <em>an, auf, in, neben, unter, über, vor, hinter, zwischen</em> łączą się z dwoma przypadkami. Gdy jest ruch w stronę celu (<strong>wohin?</strong>), wymagają <strong>biernika</strong>: <em>Ich setze Sie an die Bettkante.</em> Gdy opisuje się położenie (<strong>wo?</strong>), wymagają <strong>celownika</strong>: <em>Sie sitzen an der Bettkante.</em> Czasowniki idą parami: <em>setzen, legen, stellen</em> oznaczają ruch i łączą się z biernikiem; <em>sitzen, liegen, stehen</em> oznaczają położenie i łączą się z celownikiem. Częste ściągnięcia: <em>an das → ans</em>, <em>in das → ins</em>, <em>an dem → am</em>, <em>in dem → im</em>."
+        p: "Przyimki <em>an, auf, in, neben, unter, über, vor, hinter, zwischen</em> łączą się z dwoma przypadkami. Gdy jest ruch w stronę celu (<strong>wohin?</strong>), wymagają <strong>biernika</strong>: <em>Ich setze Sie an die Bettkante.</em> Gdy opisuje się położenie (<strong>wo?</strong>), wymagają <strong>celownika</strong>: <em>Sie sitzen an der Bettkante.</em> Czasowniki idą parami: <em>setzen, legen, stellen</em> oznaczają ruch i przy przyimku, który wskazuje cel, łączą się z biernikiem; <em>sitzen, liegen, stehen</em> oznaczają położenie i łączą się z celownikiem. Częste ściągnięcia: <em>an das → ans</em>, <em>in das → ins</em>, <em>an dem → am</em>, <em>in dem → im</em>."
       },
       {
-        contrast: "Łacinę znasz z wykształcenia: <em>Dekubitus</em>, <em>Kontraktur</em>, <em>Mobilisation</em> brzmią znajomo. Trudność leży gdzie indziej: po polsku jedno słowo, «odleżyna», służy wszystkim, i lekarzowi, i pacjentowi, a po niemiecku słowa są dwa. Lekarz pisze <em>Dekubitus</em>, pacjent mówi <em>Druckgeschwür</em> (dosłownie «wrzód z ucisku») albo używa czasownika <em>sich wundliegen</em>: <em>Ich habe mich wundgelegen</em>, «zrobiła mi się odleżyna». Przykurcz to w dokumentacji <em>Kontraktur</em>, a u pacjenta <em>Gelenkversteifung</em> albo po prostu <em>Das Knie wird steif.</em> Uwaga na rodzaj: odleżyna jest żeńska, a <em>der Dekubitus</em> męski i <em>das Druckgeschwür</em> nijakie; za to <em>die Mobilisation</em> i <em>die Kontraktur</em> są żeńskie jak mobilizacja i kontraktura. Przypadki: polski też odróżnia ruch od położenia («obracamy Pana na bok», ale «leży Pan na boku»), tyle że położenie wyraża miejscownikiem, którego niemiecki nie ma, a niemiecki celownikiem. I przy posadzić, położyć, postawić polszczyzna często i tak bierze miejscownik («posadzę Pana na krześle»), a niemieckie <em>setzen, legen, stellen</em> zawsze żądają biernika: <em>Ich setze Sie auf den Stuhl.</em> Żaden pacjent nie powie też <em>Mobilisation</em> ani <em>Lagerung</em>: mówi <em>aufstehen</em>, <em>sich hinsetzen</em>, <em>sich umdrehen</em>."
+        contrast: "Łacinę znasz z wykształcenia: <em>Dekubitus</em>, <em>Kontraktur</em>, <em>Mobilisation</em> brzmią znajomo. Trudność leży gdzie indziej: po polsku jedno słowo, «odleżyna», służy wszystkim, i lekarzowi, i pacjentowi, a po niemiecku słowa są dwa. Lekarz pisze <em>Dekubitus</em>, pacjent mówi <em>Druckgeschwür</em> (dosłownie «wrzód z ucisku») albo używa czasownika <em>sich wundliegen</em>: <em>Ich habe mich wundgelegen</em>, «zrobiła mi się odleżyna». Przykurcz to w dokumentacji <em>Kontraktur</em>, a u pacjenta <em>Gelenkversteifung</em> albo po prostu <em>Das Knie wird steif.</em> Uwaga na rodzaj: odleżyna jest żeńska, a <em>der Dekubitus</em> męski i <em>das Druckgeschwür</em> nijakie; za to <em>die Mobilisation</em> i <em>die Kontraktur</em> są żeńskie jak mobilizacja i kontraktura. Przypadki: polski też odróżnia ruch od położenia («obracamy Pana na bok», ale «leży Pan na boku»), tyle że położenie wyraża miejscownikiem, którego niemiecki nie ma, a niemiecki celownikiem. I przy posadzić, położyć, postawić polszczyzna często i tak bierze miejscownik («posadzę Pana na krześle»), a niemieckie <em>setzen, legen, stellen</em> przy celu ruchu żądają biernika: <em>Ich setze Sie auf den Stuhl.</em> Pacjent rzadko powie też <em>Mobilisation</em> ani <em>Lagerung</em>: mówi <em>aufstehen</em>, <em>sich hinsetzen</em>, <em>sich umdrehen</em>."
       },
       {
         trap: "<em>Die Lagerung</em> to na oddziale układanie pacjenta, ale w codziennym niemieckim to magazynowanie towaru: nie używaj tego słowa wobec pacjenta, bo poczuje się jak przedmiot. Powiedz raczej <em>Ich helfe Ihnen, sich auf die Seite zu drehen.</em> Nie myl <em>setzen</em> i <em>sitzen</em>: <em>Ich sitze Sie</em> nie istnieje, tak jak nie istnieje «siedzę Pana». I <em>der Rollator</em> to chodzik, balkonik na kółkach, a nie wózek: wózek inwalidzki to <em>der Rollstuhl</em>."
@@ -192,7 +192,7 @@ LINGUAI.addStrings("pl", {
     ],
     grammar: {
       title: "Ruch i położenie",
-      note: "<b>Wohin?</b> Czasownik ruchu + <b>biernik</b>. <b>Wo?</b> Czasownik położenia + <b>celownik</b>. Przyimek ten sam, zmienia się przypadek.",
+      note: "<b>Wohin?</b> Cel ruchu + <b>biernik</b>. <b>Wo?</b> Położenie albo ruch w obrębie miejsca + <b>celownik</b>. Przyimek ten sam, zmienia się przypadek.",
       table: {
         head: ["wohin? (biernik)", "wo? (celownik)"],
         rows: [
@@ -455,7 +455,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         tr: "Szklankę wody, proszę. A potem muszę do toalety.",
-        why: "W <i>Toilette</i>, słowie pochodzenia francuskiego, akcent pada na <b>let</b>, a <b>oi</b> czyta się [oa]; w <i>Wasser</i> <b>w</b> to polskie «w»; w <i>danach</i> <b>ch</b> po <b>a</b> to [x], jak polskie «ch»."
+        why: "W <i>Toilette</i>, słowie pochodzenia francuskiego, akcent pada na <b>let</b>, a <b>oi</b> czyta się [o̯a]; w <i>Wasser</i> <b>w</b> to polskie «w»; w <i>danach</i> <b>ch</b> po <b>a</b> to [x], jak polskie «ch»."
       },
       {
         tr: "Czy mogę pomóc Pani przy jedzeniu?",
@@ -573,7 +573,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         q: "Połącz każdy termin fachowy ze słowem, którego używa pacjent.",
-        pairs: ["das Blutgerinnsel", "die Vorbeugung", "das Druckgeschwür", "die Gelenkversteifung"]
+        pairs: ["der Gefäßverschluss durch ein Blutgerinnsel", "die Vorbeugung", "das Druckgeschwür", "die Gelenkversteifung"]
       },
       {
         q: "Wybierz właściwy rodzajnik określony dla każdego rzeczownika.",

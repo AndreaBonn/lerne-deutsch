@@ -25,7 +25,7 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "I verbi riflessivi",
-        p: "Molti verbi dell'igiene sono riflessivi: <em>sich waschen, sich anziehen, sich ausziehen, sich rasieren, sich kämmen</em>. Il pronome segue il verbo coniugato: <em>Ich wasche mich. Er zieht sich an.</em> Con il Sie di cortesia il riflessivo è <strong>sich</strong>, minuscolo, non <em>Sie</em>: <em>Können Sie sich allein anziehen?</em> Quando nella frase c'è un oggetto (la parte del corpo, un indumento), il riflessivo passa al <strong>dativo</strong>: <em>Ich wasche mich</em>, ma <em>Ich wasche mir das Gesicht</em>. La differenza si vede solo con <em>ich</em> e <em>du</em> (mich/mir, dich/dir): <em>sich</em>, <em>uns</em> ed <em>euch</em> restano uguali. Al Perfekt i verbi riflessivi usano <em>haben</em>: <em>Er hat sich schon angezogen.</em>"
+        p: "Molti verbi dell'igiene sono riflessivi: <em>sich waschen, sich anziehen, sich ausziehen, sich rasieren, sich kämmen</em>. Nella frase principale il pronome segue il verbo coniugato: <em>Ich wasche mich. Er zieht sich an.</em> Con il Sie di cortesia il riflessivo è <strong>sich</strong>, minuscolo, non <em>Sie</em>: <em>Können Sie sich allein anziehen?</em> Quando nella frase c'è anche un oggetto all'accusativo (la parte del corpo, un indumento), il riflessivo passa al <strong>dativo</strong>: <em>Ich wasche mich</em>, ma <em>Ich wasche mir das Gesicht</em>. La differenza si vede solo con <em>ich</em> e <em>du</em> (mich/mir, dich/dir): <em>sich</em>, <em>uns</em> ed <em>euch</em> restano uguali. Al Perfekt i verbi riflessivi usano <em>haben</em>: <em>Er hat sich schon angezogen.</em>"
       },
       {
         contrast: "L'italiano conosce bene i riflessivi, e questo aiuta: «mi lavo», «si veste». Ma l'italiano mette il pronome prima del verbo («si lava da solo?»), il tedesco dopo il verbo coniugato (<em>Waschen Sie sich selbst?</em>). E l'italiano dice «mi lavo le mani» con lo stesso «mi» di «mi lavo»; il tedesco cambia caso: <em>Ich wasche mir die Hände</em>, non <em>mich</em>. Anche qui ci sono due registri. In documentazione e tra colleghi si parla di <em>Intimpflege</em> e <em>Intimbereich</em>; molti pazienti anziani non usano queste parole e dicono <em>untenherum</em>. Non serve correggerli: capisci la parola e rispondi con calma, senza nomi più espliciti di quelli che ha scelto il paziente."
@@ -39,7 +39,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "mich o mir?",
-      note: "Senza oggetto il riflessivo è all'<b>accusativo</b> (<b>mich</b>). Con un oggetto, la parte del corpo o l'indumento, passa al <b>dativo</b> (<b>mir</b>). Con il paziente: sempre <b>sich</b>.",
+      note: "Senza altro oggetto il riflessivo è all'<b>accusativo</b> (<b>mich</b>). Con un altro oggetto all'accusativo, la parte del corpo o l'indumento, passa al <b>dativo</b> (<b>mir</b>). Con il paziente: sempre <b>sich</b>.",
       table: {
         head: ["persona", "senza oggetto (accusativo)", "con un oggetto (dativo)"],
         rows: [
@@ -178,10 +178,10 @@ LINGUAI.addStrings("it", {
       },
       {
         h: "Wohin? o wo?",
-        p: "Le preposizioni <em>an, auf, in, neben, unter, über, vor, hinter, zwischen</em> reggono due casi. Se c'è uno spostamento verso una meta (<strong>wohin?</strong>) vogliono l'<strong>accusativo</strong>: <em>Ich setze Sie an die Bettkante.</em> Se si descrive una posizione (<strong>wo?</strong>) vogliono il <strong>dativo</strong>: <em>Sie sitzen an der Bettkante.</em> I verbi vanno a coppie: <em>setzen, legen, stellen</em> indicano il movimento e prendono l'accusativo; <em>sitzen, liegen, stehen</em> indicano la posizione e prendono il dativo. Contrazioni frequenti: <em>an das → ans</em>, <em>in das → ins</em>, <em>an dem → am</em>, <em>in dem → im</em>."
+        p: "Le preposizioni <em>an, auf, in, neben, unter, über, vor, hinter, zwischen</em> reggono due casi. Se c'è uno spostamento verso una meta (<strong>wohin?</strong>) vogliono l'<strong>accusativo</strong>: <em>Ich setze Sie an die Bettkante.</em> Se si descrive una posizione (<strong>wo?</strong>) vogliono il <strong>dativo</strong>: <em>Sie sitzen an der Bettkante.</em> I verbi vanno a coppie: <em>setzen, legen, stellen</em> indicano il movimento e, con la preposizione che dice la meta, prendono l'accusativo; <em>sitzen, liegen, stehen</em> indicano la posizione e prendono il dativo. Contrazioni frequenti: <em>an das → ans</em>, <em>in das → ins</em>, <em>an dem → am</em>, <em>in dem → im</em>."
       },
       {
-        contrast: "Per chi parla italiano i termini tecnici sono trasparenti: <em>Dekubitus</em> è il decubito, <em>Kontraktur</em> la contrattura, <em>Mobilisation</em> la mobilizzazione. In Italia anche molti pazienti dicono «piaga da decubito». Il paziente tedesco, invece, dice di solito <em>Druckgeschwür</em> («ulcera da pressione») o usa il verbo <em>sich wundliegen</em>: <em>Ich habe mich wundgelegen.</em> Per la contrattura dice <em>Gelenkversteifung</em> o semplicemente <em>Das Knie wird steif.</em> E nessun paziente dice <em>Mobilisation</em> o <em>Lagerung</em>: dice <em>aufstehen</em>, <em>sich hinsetzen</em>, <em>sich umdrehen</em>. Il termine tecnico è quello giusto in consegna e nella documentazione; con il paziente funziona meglio il verbo."
+        contrast: "Per chi parla italiano i termini tecnici sono trasparenti: <em>Dekubitus</em> è il decubito, <em>Kontraktur</em> la contrattura, <em>Mobilisation</em> la mobilizzazione. In Italia anche molti pazienti dicono «piaga da decubito». Il paziente tedesco, invece, dice spesso <em>Druckgeschwür</em> («ulcera da pressione») o usa il verbo <em>sich wundliegen</em>: <em>Ich habe mich wundgelegen.</em> Per la contrattura dice <em>Gelenkversteifung</em> o semplicemente <em>Das Knie wird steif.</em> E il paziente di solito non dice <em>Mobilisation</em> o <em>Lagerung</em>: dice <em>aufstehen</em>, <em>sich hinsetzen</em>, <em>sich umdrehen</em>. Il termine tecnico è quello giusto in consegna e nella documentazione; con il paziente funziona meglio il verbo."
       },
       {
         trap: "<em>Die Lagerung</em> in reparto è il posizionamento del paziente, ma nel tedesco di tutti i giorni è l'immagazzinamento delle merci: non usarla con il paziente, che si sentirebbe trattato come un oggetto. Di' piuttosto <em>Ich helfe Ihnen, sich auf die Seite zu drehen.</em> Non confondere <em>setzen</em> e <em>sitzen</em>: <em>Ich sitze Sie</em> non esiste. E <em>die Kante</em> è il bordo, non il «canto»."
@@ -192,7 +192,7 @@ LINGUAI.addStrings("it", {
     ],
     grammar: {
       title: "Movimento e posizione",
-      note: "<b>Wohin?</b> Verbo di movimento + <b>accusativo</b>. <b>Wo?</b> Verbo di posizione + <b>dativo</b>. La preposizione è la stessa, cambia il caso.",
+      note: "<b>Wohin?</b> Meta del movimento + <b>accusativo</b>. <b>Wo?</b> Posizione, o movimento dentro un luogo, + <b>dativo</b>. La preposizione è la stessa, cambia il caso.",
       table: {
         head: ["wohin? (accusativo)", "wo? (dativo)"],
         rows: [
@@ -234,7 +234,7 @@ LINGUAI.addStrings("it", {
       "Mi gira un po' la testa.",
       "Allora per adesso resti seduto tranquillo sul bordo del letto. Siamo qui con Lei.",
       "Adesso va già meglio.",
-      "Bene. La sedia a rotelle è accanto al letto. Vuole andare ancora sulla sedia a rotelle oggi?"
+      "Bene. La sedia a rotelle è accanto al letto. Oggi, più tardi, vuole andare sulla sedia a rotelle?"
     ],
     culture: {
       title: "Uno sguardo tedesco: Rollator e Kinästhetik",
@@ -306,7 +306,7 @@ LINGUAI.addStrings("it", {
         ]
       },
       {
-        tr: "La sedia a rotelle è accanto al letto. Vuole andare ancora sulla sedia a rotelle oggi?",
+        tr: "La sedia a rotelle è accanto al letto. Oggi, più tardi, vuole andare sulla sedia a rotelle?",
         why: "In <i>Rollstuhl</i> la <b>st</b> all'inizio di <i>Stuhl</i> si legge [ʃt], anche dentro il composto; in <i>steht</i> la <b>h</b> allunga la <b>e</b>; in <i>neben</i> la prima <b>e</b> è lunga."
       },
       {
@@ -455,7 +455,7 @@ LINGUAI.addStrings("it", {
       },
       {
         tr: "Un bicchiere d'acqua, per favore. E dopo devo andare in bagno.",
-        why: "In <i>Toilette</i>, parola di origine francese, l'accento cade su <b>let</b> e <b>oi</b> si legge [oa]; in <i>Wasser</i> la <b>w</b> è [v]; in <i>danach</i> la <b>ch</b> dopo <b>a</b> è [x]."
+        why: "In <i>Toilette</i>, parola di origine francese, l'accento cade su <b>let</b> e <b>oi</b> si legge [o̯a]; in <i>Wasser</i> la <b>w</b> è [v]; in <i>danach</i> la <b>ch</b> dopo <b>a</b> è [x]."
       },
       {
         tr: "Posso aiutarLa a mangiare?",
@@ -573,7 +573,7 @@ LINGUAI.addStrings("it", {
       },
       {
         q: "Abbina ogni termine tecnico alla parola che usa il paziente.",
-        pairs: ["das Blutgerinnsel", "die Vorbeugung", "das Druckgeschwür", "die Gelenkversteifung"]
+        pairs: ["der Gefäßverschluss durch ein Blutgerinnsel", "die Vorbeugung", "das Druckgeschwür", "die Gelenkversteifung"]
       },
       {
         q: "Scegli l'articolo determinativo giusto per ogni nome.",

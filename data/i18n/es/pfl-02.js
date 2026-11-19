@@ -21,14 +21,14 @@ LINGUAI.addStrings("es", {
     theory: [
       {
         h: "El imperativo de cortesía",
-        p: "Para dar una instrucción al paciente se usa el <strong>imperativo con Sie</strong>: el infinitivo delante y justo después <em>Sie</em>. <em>Machen Sie bitte den Oberarm frei. Legen Sie den Arm auf den Tisch.</em> La forma es igual a la de la pregunta de sí o no; lo que las distingue es la entonación descendente y la palabra <em>bitte</em>, que en planta casi nunca falta. <em>Bitte</em> puede ir detrás de <em>Sie</em> o al principio: <em>Bitte sprechen Sie während der Messung nicht.</em> Con un verbo reflexivo hay dos pronombres: <em>Setzen Sie sich bitte hin.</em>"
+        p: "Para dar una instrucción al paciente se usa el <strong>imperativo con Sie</strong>: el verbo delante, con la misma forma que el infinitivo pero sin el prefijo separable, que va al final, y justo después <em>Sie</em>. <em>Machen Sie bitte den Oberarm frei. Legen Sie den Arm auf den Tisch.</em> La forma es igual a la de la pregunta de sí o no; lo que las distingue es la entonación descendente y la palabra <em>bitte</em>, que en planta casi nunca falta. <em>Bitte</em> puede ir detrás de <em>Sie</em> o al principio: <em>Bitte sprechen Sie während der Messung nicht.</em> Con un verbo reflexivo hay dos pronombres: <em>Setzen Sie sich bitte hin.</em>"
       },
       {
         h: "Los verbos separables de la medición",
         p: "Casi todo lo que se dice durante una medición lleva un verbo separable: <em>anlegen</em> (poner el manguito), <em>ablesen</em> (leer el valor), <em>einatmen</em> y <em>ausatmen</em> (inspirar, espirar), <em>freimachen</em> (descubrir, subir la manga), <em>sich hinsetzen</em>, <em>sich hinlegen</em>, <em>aufstehen</em>. En el imperativo y en el presente el prefijo va <strong>al final</strong>: <em>Atmen Sie tief ein. Ich lege Ihnen die Manschette an. Ich lese den Wert ab.</em> Detrás de un modal el verbo queda entero, al final: <em>Muss ich aufstehen?</em>"
       },
       {
-        contrast: "En español el imperativo de usted es una sola palabra con el pronombre pegado detrás: «siéntese», «túmbese», «respire». En alemán el <em>Sie</em> se dice siempre, separado y detrás del verbo, y con los reflexivos se añade además <em>sich</em>: <em>Setzen Sie sich hin</em>. Los errores típicos de quien habla español son <em>Setzen sich</em> (falta <em>Sie</em>, porque en «siéntese» el usted no se oye) y <em>Sie setzen sich hin</em>, que es una afirmación y no una invitación. El español no tiene nada parecido al prefijo separable: «póngale el manguito» se convierte en <em>legen Sie die Manschette an</em>, y el trozo <em>an</em> llega solo al final. Si lo olvidas, la frase queda a medias: <em>Ich lege Ihnen die Manschette</em> solo significa «le dejo el manguito»."
+        contrast: "En español el imperativo de usted es una sola palabra con el pronombre pegado detrás: «siéntese», «túmbese», «respire». En alemán el <em>Sie</em> se dice siempre, separado y detrás del verbo, y con los reflexivos se añade además <em>sich</em>: <em>Setzen Sie sich hin</em>. Los errores típicos de quien habla español son <em>Setzen sich</em> (falta <em>Sie</em>, porque en «siéntese» el usted no se oye) y <em>Sie setzen sich hin</em>, que es una afirmación y no una invitación. El español no tiene nada parecido al prefijo separable: «póngale el manguito» se convierte en <em>legen Sie die Manschette an</em>, y el trozo <em>an</em> llega solo al final. Si lo olvidas, la frase queda a medias: <em>Ich lege Ihnen die Manschette</em> no es una frase completa, porque sin <em>an</em> el verbo <em>legen</em> sigue pidiendo dónde (<em>auf den Tisch</em>)."
       },
       {
         trap: "La «tensión» o la «presión arterial» no es <em>Spannung</em> ni <em>Pression</em>: es <em>der Blutdruck</em>, y se dice <em>den Blutdruck messen</em>, «tomar la tensión». <em>Der Puls</em> es solo el pulso como latido; la muñeca es <em>das Handgelenk</em>: <em>Ich messe den Puls am Handgelenk.</em> <em>Die Manschette</em> es el manguito del tensiómetro, pero también el puño de la camisa. <em>Den Arm freimachen</em> no es «liberar el brazo», sino descubrirlo, subir la manga. Y <em>die Kurve</em> en planta no es una curva cualquiera: es la gráfica de constantes del paciente."
@@ -143,7 +143,7 @@ LINGUAI.addStrings("es", {
       },
       {
         tr: "Ahora le tomo la tensión. Descúbrase el brazo izquierdo, por favor, y mantenga el brazo quieto.",
-        why: "En <i>Oberarm</i> el acento cae en la primera sílaba, <b>O</b>; en <i>frei</i> la <b>ei</b> es [aɪ], como en «rey»; en <i>ruhig</i> la <b>h</b> no se pronuncia y la <b>g</b> final suena [ç]."
+        why: "En <i>Oberarm</i> el acento cae en la primera sílaba, <b>O</b>; en <i>frei</i> la <b>ei</b> es [aɪ], como en «aire»; en <i>ruhig</i> la <b>h</b> no se pronuncia y la <b>g</b> final suena [ç]."
       },
       {
         tr: "Por favor, no hable durante la medición.",
@@ -328,7 +328,7 @@ LINGUAI.addStrings("es", {
           ["die Tachykardie", "das Herzrasen", "taquicardia"],
           ["die Bradykardie", "der langsame Puls", "bradicardia"],
           ["die Hypotonie", "der niedrige Blutdruck", "hipotensión"],
-          ["die Hyperthermie; das Fieber", "das Fieber", "hipertermia; fiebre"],
+          ["die Hyperthermie", "die Überwärmung", "hipertermia"],
           ["die Hypoglykämie", "die Unterzuckerung", "hipoglucemia"],
           ["die Hyperglykämie", "der hohe Blutzucker", "hiperglucemia"],
           ["die Sauerstoffsättigung", "der Sauerstoffwert", "saturación de oxígeno"]
@@ -361,7 +361,7 @@ LINGUAI.addStrings("es", {
       "Señor Lang, le voy a mirar un momento el azúcar. Es un pinchacito en el dedo.",
       "Estoy un poco tembloroso, y sudo.",
       "El valor es más bajo que esta mañana. Aviso enseguida al médico.",
-      "Doctor Weber, el señor Lang tiembla y suda. La glucosa está en 60, sospecho una hipoglucemia.",
+      "Doctor Weber, el señor Lang tiembla y suda. La glucosa está en 60 mg/dl, sospecho una hipoglucemia.",
       "Gracias. Voy enseguida.",
       "Enfermera, ¿qué es una «Hypoglykämie»?",
       "Es una bajada de azúcar. Tiene el azúcar demasiado bajo. El médico viene ahora mismo."
@@ -565,7 +565,7 @@ LINGUAI.addStrings("es", {
       },
       {
         tr: "La tensión de la señora Keller está más baja que esta mañana. El valor se comunica enseguida al médico de planta.",
-        why: "En <i>Stationsarzt</i> la <b>st</b> inicial es [ʃt] y la <b>ti</b> de <i>Station</i> se lee [tsi]; en <i>gemeldet</i> la <b>d</b> final suena [t]."
+        why: "En <i>Stationsarzt</i> la <b>st</b> inicial es [ʃt] y la <b>ti</b> de <i>Station</i> se lee [tsi]; en <i>wird</i> la <b>d</b> final suena [t]."
       },
       {
         tr: "Un valor alterado se comunica enseguida.",

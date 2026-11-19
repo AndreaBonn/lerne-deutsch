@@ -21,17 +21,17 @@ LINGUAI.addStrings("pl", {
     theory: [
       {
         h: "Grzecznościowy tryb rozkazujący",
-        p: "Polecenie dla pacjenta wydaje się w <strong>trybie rozkazującym z Sie</strong>: bezokolicznik na początku, zaraz za nim <em>Sie</em>. <em>Machen Sie bitte den Oberarm frei. Legen Sie den Arm auf den Tisch.</em> Forma jest taka sama jak w pytaniu rozstrzygającym; odróżnia je opadająca intonacja i słowo <em>bitte</em>, którego na oddziale prawie nigdy nie brakuje. <em>Bitte</em> może stać po <em>Sie</em> albo na początku: <em>Bitte sprechen Sie während der Messung nicht.</em> Przy czasowniku zwrotnym są dwa zaimki: <em>Setzen Sie sich bitte hin.</em>"
+        p: "Polecenie dla pacjenta wydaje się w <strong>trybie rozkazującym z Sie</strong>: czasownik na początku, w formie bezokolicznika, ale bez rozdzielnego przedrostka, który idzie na koniec; zaraz za nim <em>Sie</em>. <em>Machen Sie bitte den Oberarm frei. Legen Sie den Arm auf den Tisch.</em> Forma jest taka sama jak w pytaniu rozstrzygającym; odróżnia je opadająca intonacja i słowo <em>bitte</em>, którego na oddziale prawie nigdy nie brakuje. <em>Bitte</em> może stać po <em>Sie</em> albo na początku: <em>Bitte sprechen Sie während der Messung nicht.</em> Przy czasowniku zwrotnym są dwa zaimki: <em>Setzen Sie sich bitte hin.</em>"
       },
       {
         h: "Czasowniki rozdzielnie złożone przy pomiarze",
         p: "Prawie wszystko, co mówi się podczas pomiaru, to czasownik rozdzielnie złożony: <em>anlegen</em> (założyć mankiet), <em>ablesen</em> (odczytać wynik), <em>einatmen</em> i <em>ausatmen</em> (wdychać, wydychać), <em>freimachen</em> (odsłonić), <em>sich hinsetzen</em>, <em>sich hinlegen</em>, <em>aufstehen</em>. W trybie rozkazującym i w czasie teraźniejszym przedrostek idzie <strong>na koniec</strong> zdania: <em>Atmen Sie tief ein. Ich lege Ihnen die Manschette an. Ich lese den Wert ab.</em> Po czasowniku modalnym czasownik zostaje w całości, na końcu: <em>Muss ich aufstehen?</em>"
       },
       {
-        contrast: "Po polsku prośbę do pacjenta wyraża się zwykle przez «proszę» z bezokolicznikiem («Proszę odsłonić ramię», «Proszę usiąść») albo przez «niech Pan / niech Pani» («Niech Pani usiądzie»). Po niemiecku nie ma ani bezokolicznika, ani trzeciej osoby: czasownik stoi na początku, zaraz za nim <em>Sie</em>, a <em>bitte</em> dochodzi jako dodatek: <em>Setzen Sie sich bitte hin.</em> Kalka «Bitte hinsetzen» brzmi jak komenda wydana grupie, a <em>Sie setzen sich hin</em> to stwierdzenie («siada Pani»), nie prośba. Polskie <em>Pan</em>/<em>Pani</em> zdradza płeć, <em>Sie</em> nie: ta sama forma dla pani Keller i pana Langa. Drugiej rzeczy polski w ogóle nie zna: przedrostek polskiego czasownika jest przyklejony na stałe (<em>od-czytać</em>, <em>za-łożyć</em>, <em>wy-dychać</em>) i nigdy się nie odrywa. Niemieckie <em>ablesen</em>, <em>anlegen</em>, <em>einatmen</em> rozpadają się: <em>Ich lese den Wert ab</em>, <em>Atmen Sie tief ein</em>. Jeśli zapomnisz końcówki zdania, zostaje połowa: <em>Ich lege Ihnen die Manschette</em> znaczy tylko «kładę Pani mankiet»."
+        contrast: "Po polsku prośbę do pacjenta wyraża się zwykle przez «proszę» z bezokolicznikiem («Proszę odsłonić ramię», «Proszę usiąść») albo przez «niech Pan / niech Pani» («Niech Pani usiądzie»). Uprzejma prośba po niemiecku nie używa ani bezokolicznika, ani trzeciej osoby: czasownik stoi na początku, zaraz za nim <em>Sie</em>, a <em>bitte</em> dochodzi jako dodatek: <em>Setzen Sie sich bitte hin.</em> Forma «Bitte hinsetzen» istnieje, ale brzmi jak bezosobowe polecenie z tablicy (<em>Bitte anschnallen</em>), zbyt szorstko wobec pacjenta, a <em>Sie setzen sich hin</em> to stwierdzenie («siada Pani»), nie prośba. Polskie <em>Pan</em>/<em>Pani</em> zdradza płeć, <em>Sie</em> nie: ta sama forma dla pani Keller i pana Langa. Drugiej rzeczy polski w ogóle nie zna: przedrostek polskiego czasownika jest przyklejony na stałe (<em>od-czytać</em>, <em>za-łożyć</em>, <em>wy-dychać</em>) i nigdy się nie odrywa. Niemieckie <em>ablesen</em>, <em>anlegen</em>, <em>einatmen</em> rozpadają się: <em>Ich lese den Wert ab</em>, <em>Atmen Sie tief ein</em>. Jeśli zapomnisz końcówki zdania, zostaje połowa: <em>Ich lege Ihnen die Manschette</em> to zdanie niedokończone, bo bez <em>an</em> czasownik <em>legen</em> wciąż pyta, gdzie (<em>auf den Tisch</em>)."
       },
       {
-        trap: "Polskie «ciśnienie» to po niemiecku zawsze pełne <em>der Blutdruck</em>: samo <em>der Druck</em> to ucisk albo nacisk (<em>Die Manschette drückt</em>, «mankiet uciska»), więc mierzy się <em>den Blutdruck</em>, nie «den Druck». <em>Der Puls</em> to tętno, a nie miejsce, gdzie się je bada; nadgarstek to <em>das Handgelenk</em>: <em>Ich messe den Puls am Handgelenk.</em> <em>Die Manschette</em>, jak polski mankiet, to zarówno część ciśnieniomierza, jak i rękawa koszuli: tu akurat polski pomaga. <em>Den Arm freimachen</em> nie znaczy «uwolnić rękę», tylko odsłonić ją, podwinąć rękaw. A <em>die Kurve</em> na oddziale to nie zakręt ani krzywa, tylko karta obserwacji pacjenta."
+        trap: "Polskie «ciśnienie» to po niemiecku <em>der Blutdruck</em>: samo <em>der Druck</em> to przede wszystkim ucisk albo nacisk (<em>Die Manschette drückt</em>, «mankiet uciska»), a jako skrót ciśnienia słychać je najwyżej w mowie personelu; do pacjenta i w dokumentacji mierzy się <em>den Blutdruck</em>. <em>Der Puls</em> to tętno, a nie miejsce, gdzie się je bada; nadgarstek to <em>das Handgelenk</em>: <em>Ich messe den Puls am Handgelenk.</em> <em>Die Manschette</em>, jak polski mankiet, to zarówno część ciśnieniomierza, jak i rękawa koszuli: tu akurat polski pomaga. <em>Den Arm freimachen</em> nie znaczy «uwolnić rękę», tylko odsłonić ją, podwinąć rękaw. A <em>die Kurve</em> na oddziale to nie zakręt ani krzywa, tylko karta obserwacji pacjenta."
       },
       {
         tip: "Zanim dotkniesz pacjenta, powiedz, co robisz i co poczuje: <em>Ich lege Ihnen jetzt die Manschette an. Sie drückt kurz ein bisschen.</em> Uprzedzony pacjent mniej się spina, a pomiar jest bardziej wiarygodny."
@@ -170,7 +170,7 @@ LINGUAI.addStrings("pl", {
         p: "Stopień wyższy tworzy się końcówką <strong>-er</strong>, a drugi człon porównania wprowadza <strong>als</strong>: <em>schneller als gestern</em>, <em>niedriger als heute Morgen</em>. Wiele krótkich przymiotników dostaje Umlaut: <em>hoch → höher</em> (i znika <b>c</b>), <em>lang → länger</em>, <em>warm → wärmer</em>; <em>langsam</em> nie: <em>langsamer</em>. Stopień najwyższy przy czasowniku: <em>am höchsten</em>, <em>am niedrigsten</em>. Równość: <em>genauso hoch wie gestern</em>."
       },
       {
-        contrast: "Polski i niemiecki tworzą stopień wyższy podobnie, jednym słowem z końcówką: «wyższy», «szybszy», <em>höher</em>, <em>schneller</em>. Błąd <em>mehr hoch</em> grozi więc Polakowi rzadko, chyba że przeniesie polskie «bardziej», które stoi przy imiesłowach: «bardziej podwyższony». Tak po niemiecku się nie mówi. Para z dokumentacji, <em>erhöht</em> / <em>erniedrigt</em>, odpowiada polskiemu «podwyższony» / «obniżony»: «podwyższona temperatura» to <em>erhöhte Temperatur</em>, «obniżone ciśnienie» to <em>erniedrigter</em> albo po prostu <em>niedriger Blutdruck</em>. To imiesłowy, nie stopień wyższy, i porównania z <em>als</em> nie tworzą. Polskie «niż» i «od» to w porównaniu zawsze <strong>als</strong>: <em>höher als gestern</em>, nigdy «höher von gestern»; «tak samo jak» to <em>genauso ... wie</em>. Liczby idą prosto: przecinek dziesiętny jest ten sam, tylko «na» w ciśnieniu zamienia się w <em>zu</em>. A «skurczowe i rozkurczowe» w rozmowie z pacjentem to <em>der obere und der untere Wert</em>."
+        contrast: "Polski i niemiecki tworzą stopień wyższy podobnie, jednym słowem z końcówką: «wyższy», «szybszy», <em>höher</em>, <em>schneller</em>. Błąd <em>mehr hoch</em> grozi więc Polakowi rzadko, chyba że przeniesie polskie «bardziej», które stoi przy imiesłowach: «bardziej podwyższony». Tak po niemiecku się nie mówi. Para z dokumentacji, <em>erhöht</em> / <em>erniedrigt</em>, odpowiada polskiemu «podwyższony» / «obniżony»: «podwyższona temperatura» to <em>erhöhte Temperatur</em>, «obniżone ciśnienie» to <em>erniedrigter</em> albo po prostu <em>niedriger Blutdruck</em>. To imiesłowy, nie stopień wyższy; porównanie tworzy się przez <em>stärker</em>: <em>stärker erhöht als gestern</em>, nie «mehr erhöht». Polskie «niż» i «od» to w porównaniu zawsze <strong>als</strong>: <em>höher als gestern</em>, nigdy «höher von gestern»; «tak samo jak» to <em>genauso ... wie</em>. Liczby idą prosto: przecinek dziesiętny jest ten sam, tylko «na» w ciśnieniu zamienia się w <em>zu</em>. A «skurczowe i rozkurczowe» w rozmowie z pacjentem to <em>der obere und der untere Wert</em>."
       },
       {
         trap: "<em>Schneller wie gestern</em> słychać w mowie potocznej, ale w języku standardowym i w dokumentacji porównanie wymaga <em>als</em>. <em>Am höchsten</em> ma Umlaut tak jak <em>höher</em>, a sam przymiotnik nie: <em>hoch</em>. <em>Erhöht</em> znaczy «podwyższony» (<em>leicht erhöhte Temperatur</em>), to nie czasownik do odmiany. Niskie ciśnienie to w Niemczech <em>niedriger Blutdruck</em>; <em>tiefer Blutdruck</em> słychać głównie w Szwajcarii. A polskie «wysokie ciśnienie» jako choroba to jedno słowo: <em>der Bluthochdruck</em>."
@@ -328,7 +328,7 @@ LINGUAI.addStrings("pl", {
           ["die Tachykardie", "das Herzrasen", "tachykardia"],
           ["die Bradykardie", "der langsame Puls", "bradykardia"],
           ["die Hypotonie", "der niedrige Blutdruck", "hipotonia, niedociśnienie"],
-          ["die Hyperthermie; das Fieber", "das Fieber", "hipertermia (przegrzanie); gorączka"],
+          ["die Hyperthermie", "die Überwärmung", "hipertermia (przegrzanie)"],
           ["die Hypoglykämie", "die Unterzuckerung", "hipoglikemia"],
           ["die Hyperglykämie", "der hohe Blutzucker", "hiperglikemia"],
           ["die Sauerstoffsättigung", "der Sauerstoffwert", "saturacja, wysycenie krwi tlenem"]
@@ -361,7 +361,7 @@ LINGUAI.addStrings("pl", {
       "Panie Lang, szybko zmierzę Panu cukier. To małe ukłucie w palec.",
       "Trochę się trzęsę i się pocę.",
       "Wynik jest niższy niż rano. Od razu dam znać lekarzowi.",
-      "Panie doktorze, pan Lang drży i się poci. Cukier wynosi 60, podejrzewam hipoglikemię.",
+      "Panie doktorze, pan Lang drży i się poci. Cukier wynosi 60 mg/dl, podejrzewam hipoglikemię.",
       "Dziękuję. Zaraz przyjdę.",
       "Siostro, co to jest «Hypoglykämie»?",
       "To niedocukrzenie. Ma Pan za niski cukier. Lekarz zaraz przyjdzie."
@@ -565,7 +565,7 @@ LINGUAI.addStrings("pl", {
       },
       {
         tr: "Ciśnienie pani Keller jest niższe niż rano. Wartość zostaje od razu zgłoszona lekarzowi oddziałowemu.",
-        why: "W <i>Stationsarzt</i> początkowe <b>st</b> to [ʃt], polskie «szt», a <b>ti</b> w <i>Station</i> czyta się [tsi], «cy»; w <i>gemeldet</i> końcowe <b>d</b> brzmi [t], jak w polskim."
+        why: "W <i>Stationsarzt</i> początkowe <b>st</b> to [ʃt], polskie «szt», a <b>ti</b> w <i>Station</i> czyta się [tsi], «cy»; w <i>wird</i> końcowe <b>d</b> brzmi [t], jak w polskim."
       },
       {
         tr: "Nieprawidłowa wartość zostaje od razu zgłoszona.",

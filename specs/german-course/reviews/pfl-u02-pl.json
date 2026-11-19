@@ -1,0 +1,53 @@
+{
+  "bundleHash": "b816b2a3063c987e2b8c6c83c62c7eef138cc5e2b2ec4e8cd3c42badd8927b8d",
+  "findings": [
+    {
+      "kind": "accuratezza medica e lessicale",
+      "msg": "Tachykardie indica una frequenza cardiaca elevata, mentre Herzrasen descrive una percezione soggettiva e può mancare anche in presenza di tachicardia. La domanda non verifica in modo affidabile la tachicardia; riformulare il quesito sul sintomo e non presentare i due termini come equivalenti esatti. Correggere anche la tabella grammaticale, l'ascolto e la stessa associazione nel test.",
+      "path": "merged.lessons[2].exercises[1]"
+    },
+    {
+      "kind": "accuratezza medica",
+      "msg": "La tabella presenta Hyperthermie e Fieber come se avessero entrambe Fieber quale equivalente comune, ma il corso stesso distingue ipertermia e febbre. Separare le voci e spiegare Hyperthermie con una perifrasi come Überhitzung des Körpers.",
+      "path": "merged.lessons[2].grammar.table.rows[3]"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "L'affermazione che i participi erhöht ed erniedrigt non possano formare comparazioni con als è falsa: per esempio, stärker erhöht als gestern è corretto. Distinguere gli aggettivi al comparativo da espressioni comparative con stärker.",
+      "path": "merged.lessons[1].theory[2].contrast"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La spiegazione esclude l'infinito dagli imperativi di cortesia tedeschi e attribuisce Bitte hinsetzen soltanto a un comando rivolto a un gruppo. L'infinito può invece esprimere una richiesta anche a una singola persona, sebbene Setzen Sie sich bitte hin sia più esplicito e cortese. Riformulare il confronto.",
+      "path": "merged.lessons[0].theory[2].contrast"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Il prefisso separabile non va sempre alla fine della frase: nelle subordinate resta unito al verbo finale, per esempio weil ich den Wert ablese. Limitare la regola alle proposizioni principali nei tempi semplici; correggere anche le analoghe formulazioni assolute nelle spiegazioni di coniugazione e nel test.",
+      "path": "merged.lessons[0].exercises[2].why"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "In gemeldet la d non è finale e non si pronuncia [t]: il gruppo finale è pronunciato circa [dət]. Sostituire la spiegazione con un esempio effettivo di desonorizzazione finale.",
+      "path": "merged.lessons[3].exercises[9].why"
+    },
+    {
+      "kind": "chiave di risposta",
+      "msg": "La frase consente anche höher e, senza un'indicazione più precisa, altre comparazioni. Aggiungere un suggerimento come contrario di höher oppure accettare le risposte semanticamente possibili.",
+      "path": "merged.lessons[2].exercises[5]"
+    },
+    {
+      "kind": "chiave di risposta",
+      "msg": "Il testo polacco chiede di controllare il valore, mentre gemessen significa misurarlo. La misura può essere un modo di controllare, ma non è una traduzione equivalente in ogni contesto. Rimuovere le due alternative con gemessen o specificare nella consegna che si tratta di una nuova misurazione.",
+      "path": "merged.lessons[3].exercises[5].a"
+    },
+    {
+      "kind": "lessico e registro",
+      "msg": "L'affermazione che Druck non si usi per la pressione arteriosa è troppo assoluta: nel contesto clinico può riferirsi ellitticamente alla pressione già identificata. Insegnare Blutdruck come forma esplicita e non ambigua, senza dichiarare impossibile Druck.",
+      "path": "merged.lessons[0].theory[3].trap"
+    }
+  ],
+  "lang": "pl",
+  "unit": "pfl-u02",
+  "verdict": "fail"
+}

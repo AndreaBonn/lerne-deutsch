@@ -1,0 +1,58 @@
+{
+  "bundleHash": "6863c483f860564aaaf6516f17c7b977707fba53d0de5842cce544c0de2abeae",
+  "findings": [
+    {
+      "kind": "traduzione",
+      "msg": "La domanda tedesca offre due luoghi in cui lavarsi, al lavandino o a letto. La traduzione inglese suggerisce invece di restare a letto senza lavarsi. Correggere in: “Would you like to wash at the sink today, or would you rather wash in bed?”",
+      "path": "merged.lessons[0].dialogue.lines[2].tr"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La regola secondo cui la presenza di un oggetto rende il riflessivo dativo è troppo generale. Per questi verbi il dativo si usa quando il complemento diretto è la parte del corpo o l'indumento interessato: “Ich wasche mir das Gesicht”. Esistono però verbi con riflessivo accusativo e un altro complemento, come “Ich erinnere mich an den Termin”. Precisare il campo della regola anche nelle spiegazioni degli esercizi che la ripetono.",
+      "path": "merged.lessons[0].grammar.note"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "“Ich wasche mir die Hände” è la forma usuale, ma “Ich wasche meine Hände” non è scorretta. Presentare l'articolo con il riflessivo dativo come costruzione preferita, senza escludere il possessivo.",
+      "path": "merged.lessons[0].theory[2].contrast"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "I verbi setzen, legen e stellen non richiedono sempre l'accusativo dopo una preposizione: il caso dipende dal significato del complemento. Per esempio, “Ich setze Sie an der Bettkante hin” usa il dativo per indicare il luogo dell'azione. Limitare la regola al complemento di destinazione con una Wechselpräposition.",
+      "path": "merged.lessons[1].theory[1].p"
+    },
+    {
+      "kind": "spiegazione contrastiva",
+      "msg": "In inglese “sit someone” può significare far sedere qualcuno: per esempio, “I'll sit you up”, formulazione usata nella stessa lezione. Eliminare l'affermazione che tale uso inglese sia impossibile e mantenere la distinzione tedesca tra “setzen” e “sitzen”.",
+      "path": "merged.lessons[1].theory[3].trap"
+    },
+    {
+      "kind": "associazione lessicale",
+      "msg": "“Inkontinenz” comprende anche l'incontinenza fecale, mentre “Blasenschwäche” riguarda la vescica. L'abbinamento li presenta come equivalenti generali. Specificare “Harninkontinenz” oppure usare una spiegazione che copra entrambi i tipi. Lo stesso abbinamento compare nel test.",
+      "path": "merged.lessons[2].exercises[5].pairs[3]"
+    },
+    {
+      "kind": "associazione lessicale",
+      "msg": "“Thrombose” indica la formazione o presenza di un trombo in un vaso; “Blutgerinnsel” indica il coagulo stesso. L'esercizio li presenta come equivalenti, benché la nota contrastiva della lezione distingua correttamente i due concetti. Riformulare l'abbinamento come spiegazione, per esempio “Gefäßverschluss durch ein Blutgerinnsel”.",
+      "path": "merged.lessons[3].exercises[4].pairs[0]"
+    },
+    {
+      "kind": "risposta ambigua",
+      "msg": "La consegna specifica soltanto la presenza o assenza di “zu” e non indica quali azioni inserire. Anche “anziehen” nel primo spazio e “anzuziehen” nel secondo producono frasi corrette. Fornire i verbi richiesti o un banco di parole che renda univoca la soluzione.",
+      "path": "merged.lessons[3].exercises[2]"
+    },
+    {
+      "kind": "traduzione lessicale",
+      "msg": "“Thrombose” è più ampio di “DVT”, che indica specificamente una trombosi venosa profonda. Tradurre con “thrombosis” e presentare “deep vein thrombosis (DVT)” come un tipo specifico.",
+      "path": "merged.lessons[3].vocab[7].tr"
+    },
+    {
+      "kind": "associazione lessicale",
+      "msg": "Il test ripete l'equivalenza troppo ampia tra “Inkontinenz” e “Blasenschwäche”. Sostituire il termine tecnico con “Harninkontinenz” o scegliere una spiegazione che comprenda anche l'incontinenza fecale.",
+      "path": "merged.test.exercises[4].pairs[1]"
+    }
+  ],
+  "lang": "en",
+  "unit": "pfl-u03",
+  "verdict": "fail"
+}

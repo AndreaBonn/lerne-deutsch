@@ -1,0 +1,53 @@
+{
+  "bundleHash": "18c1a9464c24df2c23e38643a469d8a83c1c3d033910a241f21f9bfbf4085df0",
+  "findings": [
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "L'imperativo di cortesia non si forma mettendo l'infinito completo prima di Sie: con i verbi separabili si usa la forma finita e il prefisso si separa, come in «Setzen Sie sich hin», non «Hinsetzen Sie sich». Precisare la regola.",
+      "path": "merged.lessons[0].theory[0].p"
+    },
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "«German always says Sie» generalizza a tutti gli imperativi una regola valida qui per la forma di cortesia. Specificare che l'imperativo con Sie richiede Sie, mentre le forme con du e ihr seguono altre regole.",
+      "path": "merged.lessons[0].theory[2].contrast"
+    },
+    {
+      "kind": "Pronuncia",
+      "msg": "In «während» la d non è finale: precede la desinenza e normalmente si pronuncia [d], non [t]. Correggere la spiegazione.",
+      "path": "merged.lessons[0].exercises[10].why"
+    },
+    {
+      "kind": "Pronuncia",
+      "msg": "In «Tachykardie» il gruppo ch si pronuncia [k], non [x]. Correggere l'indicazione fonetica.",
+      "path": "merged.lessons[2].exercises[9].why"
+    },
+    {
+      "kind": "Equivalenza lessicale",
+      "msg": "«Tachykardie» indica una frequenza cardiaca elevata; «Herzrasen» è la sensazione soggettiva del cuore che corre. Non sono equivalenti in ogni caso: una tachicardia può non essere percepita. Usare «schneller Puls» come parafrasi generale e presentare «Herzrasen» come possibile sintomo. Adeguare anche gli esercizi e il test che trattano la coppia come equivalenza.",
+      "path": "merged.lessons[2].grammar.table.rows[0]"
+    },
+    {
+      "kind": "Domanda ambigua",
+      "msg": "Senza il vincolo «comparative of langsam» o una traduzione, «schneller», «höher» e altri comparativi sono grammaticalmente possibili. Rendere il vincolo parte della consegna anziché affidarlo soltanto al suggerimento.",
+      "path": "merged.test.exercises[2]"
+    },
+    {
+      "kind": "Risposta ambigua",
+      "msg": "La consegna chiede un comparativo ma non specifica se la glicemia sia più bassa: anche «höher» è possibile. Indicare nella consegna che è diminuita oppure accettare le altre risposte coerenti.",
+      "path": "merged.test.exercises[6]"
+    },
+    {
+      "kind": "Pronuncia",
+      "msg": "In «gemeldet» la d è interna e normalmente si pronuncia [d]; la consonante finale è la t. Correggere la spiegazione.",
+      "path": "merged.lessons[3].exercises[9].why"
+    },
+    {
+      "kind": "Traduzione",
+      "msg": "«Den Oberarm frei machen» significa scoprire la parte superiore del braccio; arrotolare la manica è solo un possibile modo per farlo. Tradurre «Please uncover your upper arm» e mantenere l'azione specifica anche nelle altre traduzioni e consegne corrispondenti dell'unità.",
+      "path": "merged.lessons[0].grammar.examples[0].tr"
+    }
+  ],
+  "lang": "en",
+  "unit": "pfl-u02",
+  "verdict": "fail"
+}

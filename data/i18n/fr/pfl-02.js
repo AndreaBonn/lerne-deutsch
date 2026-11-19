@@ -21,14 +21,14 @@ LINGUAI.addStrings("fr", {
     theory: [
       {
         h: "L'impératif de politesse",
-        p: "Pour donner une consigne au patient, on utilise l'<strong>impératif avec Sie</strong> : le verbe à l'infinitif en tête, <em>Sie</em> juste après. <em>Machen Sie bitte den Oberarm frei. Legen Sie den Arm auf den Tisch.</em> La forme est identique à celle de la question fermée ; ce qui les distingue, c'est l'intonation descendante et le mot <em>bitte</em>, qui ne manque presque jamais dans le service. <em>Bitte</em> peut se placer après <em>Sie</em> ou en tête : <em>Bitte sprechen Sie während der Messung nicht.</em> Avec un verbe pronominal, il y a deux pronoms : <em>Setzen Sie sich bitte hin.</em>"
+        p: "Pour donner une consigne au patient, on utilise l'<strong>impératif avec Sie</strong> : le verbe en tête, sous la forme de l'infinitif mais sans la particule séparable, qui part à la fin, et <em>Sie</em> juste après. <em>Machen Sie bitte den Oberarm frei. Legen Sie den Arm auf den Tisch.</em> La forme est identique à celle de la question fermée ; ce qui les distingue, c'est l'intonation descendante et le mot <em>bitte</em>, qui ne manque presque jamais dans le service. <em>Bitte</em> peut se placer après <em>Sie</em> ou en tête : <em>Bitte sprechen Sie während der Messung nicht.</em> Avec un verbe pronominal, il y a deux pronoms : <em>Setzen Sie sich bitte hin.</em>"
       },
       {
         h: "Les verbes séparables de la mesure",
         p: "Presque tout ce qu'on dit pendant une mesure passe par un verbe séparable : <em>anlegen</em> (poser le brassard), <em>ablesen</em> (lire la valeur), <em>einatmen</em> et <em>ausatmen</em> (inspirer, expirer), <em>freimachen</em> (découvrir), <em>sich hinsetzen</em>, <em>sich hinlegen</em>, <em>aufstehen</em>. À l'impératif et au présent, la particule part <strong>à la fin</strong> : <em>Atmen Sie tief ein. Ich lege Ihnen die Manschette an. Ich lese den Wert ab.</em> Après un modal, le verbe reste entier, à la fin : <em>Muss ich aufstehen?</em>"
       },
       {
-        contrast: "En français, l'impératif de politesse se passe de pronom sujet : « asseyez-vous », « allongez-vous », « respirez ». La terminaison <em>-ez</em> suffit à dire à qui l'on parle. En allemand, la terminaison ne suffit pas : <em>Sie</em> se dit toujours, après le verbe, et le verbe pronominal ajoute <em>sich</em> : <em>Setzen Sie sich hin</em>, là où le français n'a qu'un « vous » collé au verbe. Les fautes typiques d'un francophone sont <em>Setzen sich hin</em> (il manque <em>Sie</em>) et <em>Sie setzen sich hin</em>, qui est une affirmation (« vous vous asseyez ») et non une invitation. Le français n'a rien de comparable à la particule séparable : « posez le brassard » devient <em>legen Sie die Manschette an</em>, et le morceau <em>an</em> n'arrive qu'à la fin. Si tu l'oublies, la phrase reste en suspens : <em>Ich lege Ihnen die Manschette</em> veut seulement dire « je vous pose le brassard là »."
+        contrast: "En français, l'impératif de politesse se passe de pronom sujet : « asseyez-vous », « allongez-vous », « respirez ». La terminaison <em>-ez</em> suffit à dire à qui l'on parle. En allemand, la terminaison ne suffit pas : <em>Sie</em> se dit toujours, après le verbe, et le verbe pronominal ajoute <em>sich</em> : <em>Setzen Sie sich hin</em>, là où le français n'a qu'un « vous » collé au verbe. Les fautes typiques d'un francophone sont <em>Setzen sich hin</em> (il manque <em>Sie</em>) et <em>Sie setzen sich hin</em>, qui est une affirmation (« vous vous asseyez ») et non une invitation. Le français n'a rien de comparable à la particule séparable : « posez le brassard » devient <em>legen Sie die Manschette an</em>, et le morceau <em>an</em> n'arrive qu'à la fin. Si tu l'oublies, la phrase reste en suspens : <em>Ich lege Ihnen die Manschette</em> n'est pas une phrase complète, car sans <em>an</em> le verbe <em>legen</em> demande encore où (<em>auf den Tisch</em>)."
       },
       {
         trap: "« Prendre la tension » ne se traduit pas avec <em>Spannung</em> ni avec <em>nehmen</em> : on dit <em>den Blutdruck messen</em>, et <em>die Spannung</em> reste la tension électrique ou nerveuse. <em>Der Puls</em> est le pouls ; le poignet, où on le prend, est <em>das Handgelenk</em> : <em>Ich messe den Puls am Handgelenk.</em> <em>Die Manschette</em> ressemble à « manchette » et en a d'ailleurs aussi le sens de poignet de chemise, mais dans le service c'est le <strong>brassard</strong> du tensiomètre. <em>Den Arm freimachen</em> ne veut pas dire « libérer le bras », mais le découvrir, remonter la manche. Et <em>die Kurve</em>, dans le service, n'est pas une courbe quelconque : c'est la feuille de surveillance du patient, la « pancarte »."
@@ -328,7 +328,7 @@ LINGUAI.addStrings("fr", {
           ["die Tachykardie", "das Herzrasen", "tachycardie"],
           ["die Bradykardie", "der langsame Puls", "bradycardie"],
           ["die Hypotonie", "der niedrige Blutdruck", "hypotension"],
-          ["die Hyperthermie; das Fieber", "das Fieber", "hyperthermie (surchauffe) ; fièvre"],
+          ["die Hyperthermie", "die Überwärmung", "hyperthermie (surchauffe)"],
           ["die Hypoglykämie", "die Unterzuckerung", "hypoglycémie"],
           ["die Hyperglykämie", "der hohe Blutzucker", "hyperglycémie"],
           ["die Sauerstoffsättigung", "der Sauerstoffwert", "saturation en oxygène"]
@@ -361,7 +361,7 @@ LINGUAI.addStrings("fr", {
       "Monsieur Lang, je vais rapidement mesurer votre glycémie. C'est une petite piqûre au doigt.",
       "Je tremble un peu, et je transpire.",
       "La valeur est plus basse que ce matin. Je préviens tout de suite le médecin.",
-      "Docteur Weber, monsieur Lang tremble et transpire. Sa glycémie est à 60, je suspecte une hypoglycémie.",
+      "Docteur Weber, monsieur Lang tremble et transpire. Sa glycémie est à 60 mg/dl, je suspecte une hypoglycémie.",
       "Merci. J'arrive tout de suite.",
       "Madame, c'est quoi, une « Hypoglykämie » ?",
       "C'est quand le sucre est trop bas. Votre glycémie est trop basse. Le médecin arrive tout de suite."
@@ -565,7 +565,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         tr: "La tension de madame Keller est plus basse que ce matin. La valeur est signalée immédiatement au médecin du service.",
-        why: "Dans <i>Stationsarzt</i>, le <b>st</b> initial se prononce [ʃt], « cht », et le <b>ti</b> de <i>Station</i> se lit [tsi] ; dans <i>gemeldet</i>, le <b>d</b> final sonne [t]."
+        why: "Dans <i>Stationsarzt</i>, le <b>st</b> initial se prononce [ʃt], « cht », et le <b>ti</b> de <i>Station</i> se lit [tsi] ; dans <i>wird</i>, le <b>d</b> final sonne [t]."
       },
       {
         tr: "Une valeur anormale est signalée immédiatement.",

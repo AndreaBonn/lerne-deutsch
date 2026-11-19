@@ -1,0 +1,53 @@
+{
+  "bundleHash": "4c68913c28411d0092d19ec48728664f7740238829bbd410a4c7a2a9da5703ad",
+  "findings": [
+    {
+      "kind": "pronuncia",
+      "msg": "La s iniziale di «sich» è sorda [zɪç] è errato: la pronuncia standard è [zɪç]? In realtà «sich» si pronuncia [zɪç] con s sonora; correggere invece l'indicazione solo se si intende un'altra varietà.",
+      "path": "merged.lessons[0].exercises[11].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La presenza di un complemento qualsiasi non determina il dativo riflessivo: conta un complemento oggetto all'accusativo. Precisare la regola per i verbi presentati e correggere le formulazioni analoghe nella teoria e negli esercizi.",
+      "path": "merged.lessons[0].grammar.note"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Il pronome riflessivo non segue sempre il verbo coniugato: nelle subordinate può precederlo, come in «weil Sie sich waschen». Limitare la regola alle principali illustrate.",
+      "path": "merged.lessons[0].theory[2].contrast"
+    },
+    {
+      "kind": "significato",
+      "msg": "«Dekubitus» indica un'ulcera da pressione, mentre «decúbito» in spagnolo indica la posizione del corpo. Sostituire con «úlcera por decúbito» o «úlcera por presión».",
+      "path": "merged.lessons[1].theory[2].contrast"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Il movimento da solo non impone l'accusativo e questi verbi non reggono sempre quel caso con una preposizione: per esempio «Ich gehe im Zimmer umher» e «Ich stelle die Flasche auf den Tisch im Zimmer». Spiegare che conta la destinazione espressa dalla specifica preposizione a doppio caso.",
+      "path": "merged.lessons[1].grammar.note"
+    },
+    {
+      "kind": "chiave di risposta",
+      "msg": "«Inkontinenz» comprende anche l'incontinenza fecale, mentre «Blasenschwäche» riguarda quella urinaria. Specificare «Harninkontinenz» come termine tecnico oppure evitare di presentarli come equivalenti generali; lo stesso problema ricorre nel test.",
+      "path": "merged.lessons[2].exercises[5].pairs[3]"
+    },
+    {
+      "kind": "chiave di risposta",
+      "msg": "«Thrombose» è la formazione o presenza patologica di un trombo in un vaso, non semplicemente un coagulo. La stessa nota contrastiva riconosce che non sono sinonimi: sostituire la coppia con una descrizione equivalente della trombosi.",
+      "path": "merged.lessons[3].exercises[4].pairs[0]"
+    },
+    {
+      "kind": "ambiguità",
+      "msg": "La domanda chiede quali frasi siano corrette «con un paciente», ma «Es fällt mir schwer, allein aufzustehen» è pronunciata dal paziente. Specificare che si considerano corrette anche le frasi dette dal paziente.",
+      "path": "merged.test.exercises[5].q"
+    },
+    {
+      "kind": "traduzione",
+      "msg": "«Soll ich Ihnen beim Essen helfen?» significa «¿Quiere que le ayude a comer?» e non esattamente «¿Puedo ayudarle a comer?». Distinguere le intenzioni nella traduzione o limitare la chiave alle alternative coerenti con essa.",
+      "path": "merged.lessons[2].exercises[3]"
+    }
+  ],
+  "lang": "es",
+  "unit": "pfl-u03",
+  "verdict": "fail"
+}
