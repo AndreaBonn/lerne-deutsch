@@ -313,3 +313,26 @@ describe("the conversation partner", () => {
     }
   });
 });
+
+describe("what reaches the model in edge cases", () => {
+  test("a task without a question sends an empty question tag, not the word undefined", () => {
+    const p = prompts().judge("en", { accepted: ["Ich gehe"], given: "Ich geh" });
+    assert.match(p.user, /<question><\/question>/);
+    assert.doesNotMatch(p.user, /undefined/);
+    /* Paired: a question that exists is sent. */
+    assert.match(prompts().judge("en", { question: "Wohin?", accepted: ["x"], given: "y" }).user, /<question>Wohin\?<\/question>/);
+  });
+
+  test("the free conversation carries the scene's role, situation and level", () => {
+    const p = prompts().chat("pl", "B1", { ruolo: "eine Bäckerin in Köln", situazione: "Du kaufst Brötchen." }, "Hallo");
+    assert.match(p.system, /level B1/);
+    assert.match(p.system, /eine Bäckerin in Köln/);
+    assert.match(p.system, /Du kaufst Brötchen\./);
+  });
+
+  test("without a scene the conversation falls back to A2 and a friendly speaker", () => {
+    const p = prompts().chat("pl", null, null, "Hallo");
+    assert.match(p.system, /level A2/);
+    assert.match(p.system, /a friendly German speaker/);
+  });
+});
