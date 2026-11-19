@@ -6,6 +6,7 @@
    Checked by scripts/parity.mjs.
    ============================================================ */
 LINGUAI.addStrings("it", {
+  "level:PFL": { name: "Deutsch für die Pflege", desc: "Comunichi in tedesco nelle situazioni quotidiane dell’assistenza infermieristica." },
   "level:A1": {
     name: "Primo contatto",
     desc: "Ti presenti, ordini al caffè e al ristorante, chiedi la strada e racconti il tuo fine settimana. Presente, articoli al nominativo e all'accusativo, verbi modali, verbi separabili, Perfekt."

@@ -35,6 +35,7 @@ LINGUAI.addUI("it", {
   "a11y.listenTo": "Ascolta {what}",
   "audio.noGermanVoice": "Sul dispositivo non è disponibile una voce tedesca. La frase non verrà letta: una voce di un'altra lingua insegnerebbe una pronuncia sbagliata. Le registrazioni del corso funzionano comunque.",
   "audio.recordingFailed": "La registrazione è nell'indice, ma il file non si carica. Verifica che la cartella audio/ sia accanto a index.html e che la pagina venga servita dalla stessa posizione.",
+  "pfl.notice": "Tedesco specialistico per il personale infermieristico. Contenuti generati e non ancora revisionati da professionisti sanitari; non costituiscono consulenza medica: segui sempre i protocolli del tuo reparto.",
   "path.noData": "Dati del corso non disponibili",
   "path.noDataHint": "Impossibile caricare i file nella cartella <code>data/</code>.",
   "path.levelsGroup": "Livelli QCER",

@@ -57,6 +57,7 @@ LINGUAI.addUI("fr", {
   "audio.recordingFailed": "L'enregistrement est dans l'index mais le fichier n'a pas pu être chargé. Vérifie que le dossier audio/ est bien à côté d'index.html et que la page est servie depuis le même endroit.",
 
   /* ---------------- Parcours ---------------- */
+  "pfl.notice": "Allemand spécialisé pour le personnel infirmier. Contenu généré, pas encore relu par des professionnels de santé ; il ne constitue pas un avis médical : suivez toujours les protocoles de votre service.",
   "path.noData": "Aucune donnée de cours",
   "path.noDataHint": "Les fichiers de <code>data/</code> n'ont pas pu être chargés.",
   "path.levelsGroup": "Niveaux CECRL",

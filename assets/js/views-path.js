@@ -64,6 +64,7 @@
 
     set(podpowiedzPoziomu() + strip +
       pageHead(t("path.levelKicker", { code: level.code, cefr: level.cefrLabel }), level.name, level.desc) +
+      (level.notice ? '<div class="callout callout--info" role="note">' + esc(t(level.notice)) + "</div>" : "") +
       body);
 
     var doTestu = el().querySelector(".js-place");

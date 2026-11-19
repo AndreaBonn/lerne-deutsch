@@ -53,6 +53,7 @@ LINGUAI.addUI("en", {
   "audio.recordingFailed": "The recording is in the index but the file could not be loaded. Check that the audio/ folder sits next to index.html and that the page is served from the same place.",
 
   /* ---------------- Learning path ---------------- */
+  "pfl.notice": "Specialist German for nursing staff. Generated content, not yet reviewed by healthcare professionals; it is not medical advice: always follow your ward’s protocols.",
   "path.noData": "No course data",
   "path.noDataHint": "The files in <code>data/</code> could not be loaded.",
   "path.levelsGroup": "CEFR levels",

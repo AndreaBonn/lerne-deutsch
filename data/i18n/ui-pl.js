@@ -56,6 +56,7 @@ LINGUAI.addUI("pl", {
   "audio.recordingFailed": "Nagranie jest w indeksie, ale plik się nie wczytał. Sprawdź, czy katalog audio/ jest obok index.html i czy strona jest serwowana z tego samego miejsca.",
 
   /* ---------------- Ścieżka nauki ---------------- */
+  "pfl.notice": "Specjalistyczny język niemiecki dla personelu pielęgniarskiego. Treści wygenerowane, jeszcze niezweryfikowane przez pracowników ochrony zdrowia; nie stanowią porady medycznej: zawsze przestrzegaj procedur swojego oddziału.",
   "path.noData": "Brak danych kursu",
   "path.noDataHint": "Nie udało się wczytać plików w katalogu <code>data/</code>.",
   "path.levelsGroup": "Poziomy CEFR",

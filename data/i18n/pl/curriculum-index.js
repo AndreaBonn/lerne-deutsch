@@ -6,6 +6,7 @@
    Checked by scripts/parity.mjs.
    ============================================================ */
 LINGUAI.addStrings("pl", {
+  "level:PFL": { name: "Deutsch für die Pflege", desc: "Komunikuj się po niemiecku w codziennych sytuacjach opieki pielęgniarskiej." },
   "level:A1": {
     name: "Pierwszy kontakt",
     desc: "Przedstawiasz się, zamawiasz w kawiarni i restauracji, pytasz o drogę i opowiadasz o swoim weekendzie. Czas teraźniejszy, rodzajniki w mianowniku i bierniku, czasowniki modalne, czasowniki rozdzielnie złożone, Perfekt."

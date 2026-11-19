@@ -61,3 +61,11 @@ test("each unit toggle names its unit", async ({ page }) => {
   const nazwy = await page.locator(".js-unit-toggle").evaluateAll(bs => bs.map(b => b.textContent.trim()));
   expect(new Set(nazwy).size).toBe(nazwy.length);
 });
+
+test("a level notice is visible on its path and absent from a level without one", async ({ page }) => {
+  await sciezka(page);
+  await page.evaluate(() => { window.Core.registry.byCode.A1.notice = "place.title"; window.Views.percorso({ level: "A1" }); });
+  await expect(page.getByRole("note")).toHaveText(await page.evaluate(() => window.I18n.t("place.title")));
+  await page.evaluate(() => window.Views.percorso({ level: "A2" }));
+  await expect(page.getByRole("note")).toHaveCount(0);
+});

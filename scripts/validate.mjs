@@ -4,7 +4,7 @@
    It checks: duplicate ids, missing fields, exercise correctness, whether
    the mcq answer agrees with the number of options, and the statistics.
    ============================================================ */
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync } from "node:fs";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, join } from "node:path";
 import vm from "node:vm";
@@ -89,11 +89,6 @@ const LANG = process.argv[2] || "it";
 run("assets/js/i18n.js");
 run("assets/js/i18n-merge.js");
 run(join("data", "core", "curriculum-index.js"));
-const ownPath = join(ROOT, "scripts", "own-target.json");
-const own = existsSync(ownPath) ? JSON.parse(readFileSync(ownPath, "utf8")) : { levels: {} };
-for (const [code, level] of Object.entries(own.levels || {})) {
-  if (!byCode[code]) sandbox.LINGUAI.registerLevel({ code, ...level });
-}
 const files = [...new Set(levels.flatMap(level => level.dataFiles || []))].sort();
 const dataFiles = files.filter(f => !f.startsWith("library-"));
 const ALL = [...dataFiles, "conversations.js", "grammar-reference.js", "phonetics.js", "readings.js", "writing.js"];

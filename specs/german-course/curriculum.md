@@ -259,3 +259,9 @@ B2-C2 non esiste una lista di riferimento; la copertura si giudica in revisione.
 - Tempi passivi nel coniugatore `Verbs` (A11): il passivo si insegna nelle lezioni.
 - Il numero degli id di `GRAMMAR_REF` non deve coincidere con i 42 dell'originale: l'elenco
   sopra è chiuso per il tedesco, e un id nuovo entra solo modificando questo file.
+
+## PFL - Deutsch für die Pflege (percorso parallelo, non sequenziale)
+
+Pseudo-livello senza originale italiano, unità dichiarate in `scripts/own-target.json`.
+Contratto completo in `specs/008-pflege/curriculum.md`. Unità registrate: pfl-u01 (Aufnahme
+und Anamnese).

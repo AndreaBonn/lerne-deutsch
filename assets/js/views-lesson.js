@@ -70,6 +70,7 @@
       "</div>");
 
     parts.push('<header class="view-head"><h1>' + esc(L.titleIt) + "</h1><p>" + esc(L.title) + "</p></header>");
+    if (LV.notice) parts.push('<div class="callout callout--info" role="note">' + esc(t(LV.notice)) + "</div>");
     parts.push(steps(L));
 
     if (L.objectives && L.objectives.length) {

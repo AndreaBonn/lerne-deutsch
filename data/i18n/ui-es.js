@@ -57,6 +57,7 @@ LINGUAI.addUI("es", {
   "audio.recordingFailed": "La grabación está en el índice pero el archivo no se ha podido cargar. Comprueba que la carpeta audio/ esté junto a index.html y que la página se sirva desde el mismo sitio.",
 
   /* ---------------- Ruta de aprendizaje ---------------- */
+  "pfl.notice": "Alemán especializado para el personal de enfermería. Contenido generado que aún no ha sido revisado por profesionales sanitarios; no constituye asesoramiento médico: sigue siempre los protocolos de tu unidad.",
   "path.noData": "No hay datos del curso",
   "path.noDataHint": "No se han podido cargar los archivos de <code>data/</code>.",
   "path.levelsGroup": "Niveles MCER",

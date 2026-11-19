@@ -20,10 +20,10 @@ test("every level shows its real lesson count, not 0 of 0", async ({ page }) => 
   await page.waitForFunction(() => window.Core.registry.loaded.A1 === true);
   await page.evaluate(() => window.App.go("progressi"));
   const rows = page.locator(".prog-level");
-  await expect(rows).toHaveCount(6);
+  await expect(rows).toHaveCount(7);
   // wait for the lazy levels to be drawn again
-  await expect(rows.nth(5).locator(".prog-level__sub")).toHaveText(/^0 z [1-9]\d* lekcji$/);
-  for (let i = 0; i < 6; i++) {
+  await expect(rows.nth(6).locator(".prog-level__sub")).toHaveText(/^0 z [1-9]\d* lekcji$/);
+  for (let i = 0; i < 7; i++) {
     // the suite runs in Polish: "{done} z {total} lekcji"
     await expect(rows.nth(i).locator(".prog-level__sub")).not.toHaveText(/ z 0 /);
   }

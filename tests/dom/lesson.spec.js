@@ -221,3 +221,11 @@ test("a cold bookmark opens a lesson from a non-sequential level", async ({ page
   await expect(page.locator("main h1")).toHaveText("Pflege");
   await expect(page.locator("main")).toContainText("Pflege bookmark");
 });
+
+test("a level notice is visible in its lessons and absent from lessons without one", async ({ page }) => {
+  await lezione(page, "a1-u01-l1");
+  await page.evaluate(() => { window.Core.registry.byCode.A1.notice = "place.title"; window.Views.lezione({ id: "a1-u01-l1" }); });
+  await expect(page.getByRole("note")).toHaveText(await page.evaluate(() => window.I18n.t("place.title")));
+  await page.evaluate(() => { delete window.Core.registry.byCode.A1.notice; window.Views.lezione({ id: "a1-u01-l1" }); });
+  await expect(page.getByRole("note")).toHaveCount(0);
+});
