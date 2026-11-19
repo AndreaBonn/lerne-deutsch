@@ -279,6 +279,20 @@ describe("trying a key from the settings page", () => {
     const out = await new Promise((r) => c.Llm.test("gemini", "new-key", r));
     assert.equal(out.ok, true);
   });
+
+  test("a key that passes the test brings its retired provider back into the judge's chain", async () => {
+    const c = course({ order: ["gemini", "openai"], answers: { gemini: REJECTED } });
+    await judge(c.Llm);
+    const kolejne = [];
+    c.box.sandbox.Llm.useTransport((req) => {
+      kolejne.push(idOf(req.url));
+      return Promise.resolve(answer(idOf(req.url), "SI"));
+    });
+    await new Promise((r) => c.Llm.test("gemini", "new-key", r));
+    kolejne.length = 0;
+    await judge(c.Llm, { ...TASK, given: "a different answer" });
+    assert.deepEqual(kolejne, ["gemini"], "the repaired provider is asked first again");
+  });
 });
 
 describe("the budget", () => {
@@ -481,6 +495,14 @@ describe("reading a composition", () => {
     assert.equal(c.calls.length, 2);
   });
 
+  test("each reading spends the shared ceiling, so a judge after the last one sends nothing", async () => {
+    const c = course({ order: ["openai"], answers: { openai: proza("openai", "ok") } });
+    for (let i = 0; i < c.Llm.MAX_PER_SESSION; i++) await opinia(c.Llm);
+    const wyslane = c.calls.length;
+    assert.equal(await judge(c.Llm), null);
+    assert.equal(c.calls.length, wyslane, "no request after the ceiling");
+  });
+
   test("it draws on the same session ceiling as the judge", async () => {
     const c = course({ order: ["openai"], answers: { openai: proza("openai", "ok") } });
     for (let i = 0; i < c.Llm.MAX_PER_SESSION; i++) {
@@ -529,6 +551,20 @@ describe("reading an exam production", () => {
     const fresh = course({ answers: { gemini: proza("gemini", "La struttura è chiara.") } });
     assert.equal(await czytaj(fresh.Llm, PRODUKCJA), "La struttura è chiara.");
     assert.deepEqual(fresh.calls, ["gemini"]);
+  });
+
+  test("the request carries the student's text and the task, each in its own place", async () => {
+    const c = course({ order: ["openai"] });
+    const ciala = [];
+    c.box.sandbox.Llm.useTransport((req) => {
+      ciala.push(JSON.stringify(req.body));
+      return Promise.resolve(proza("openai", "La struttura è chiara."));
+    });
+    await czytaj(c.Llm, PRODUKCJA);
+    assert.equal(ciala.length, 1);
+    assert.match(ciala[0], /<answer>Gentile ufficio, non posso venire giovedì perché lavoro\.<\/answer>/);
+    assert.match(ciala[0], /Scrivi una mail all'ufficio\./);
+    assert.doesNotMatch(ciala[0], /<answer>Scrivi una mail/, "the task is not sent as the answer");
   });
 
   test("ordinary feedback comes back as it was written", async () => {
@@ -789,5 +825,16 @@ describe("a turn of a free conversation", () => {
   test("a chain that runs out gives no turn and does not throw", async () => {
     const c = rozmowa({ answers: { gemini: REJECTED, openai: REJECTED } });
     assert.equal(await rozmawiaj(c.Llm, { scenario: SCENA, message: "ciao", history: [] }), null);
+  });
+});
+
+describe("an empty provider order in the settings", () => {
+  /* An order saved as [] (every provider unticked and ticked again, an old
+     profile) must fall back to the default chain, not to no chain at all. */
+  test("the judge falls back to the default chain", async () => {
+    const c = course({ order: [] });
+    const out = await judge(c.Llm);
+    assert.equal(out.promote, true);
+    assert.equal(c.calls[0], "gemini");
   });
 });
