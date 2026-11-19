@@ -791,7 +791,7 @@ npm run review:lot -- --unit <id> --lang <it|en|es|fr|pl> [--dry-run]   # drugi 
 uv run --script scripts/build_audio.py --dry-run   # ile plików brakuje
 node scripts/serve.mjs 8080         # serwer do testów, zawsze no-store
 npm test                            # logika silnika, node:test w piaskownicy node:vm
-npm run test:mutations              # czy testy widzą czerwone (196 mutacji, 24 pliki)
+npm run test:mutations              # czy testy widzą czerwone (197 mutacji, 24 pliki)
 npm run test:dom                    # zachowanie w przeglądarce, Playwright
 npm run test:all                    # obie suity; warunek zamknięcia każdej fazy
 node scripts/coverage.mjs [--pelne] [--min 99]   # ile silnika wykonują testy jednostkowe
@@ -875,7 +875,7 @@ tabeli. Trzy deklaracje, nie trzy przeoczenia.
 sprawdza**. Pokrycie mówi, że linia się wykonała, a wykonanie nie jest sprawdzeniem —
 `assert.ok(!out.includes("js-play"))` przechodzi przez cały generator także wtedy, gdy
 generator nie produkuje niczego, i ma przy tym 100% pokrycia. Bramka psuje po jednej
-decyzji w silniku (196 mutacji w 24 plikach: `cils-html.js`, `cils.js`, `cils-report.js`,
+decyzji w silniku (197 mutacji w 24 plikach: `cils-html.js`, `cils.js`, `cils-report.js`,
 `cils-run.js`, `writing.js`, `lemma.js`, `lemma-morf.js`, `pwa-rules.js`, `pwa.js`, `llm-rules.js`,
 `llm-providers.js`, `llm-prompts.js`, `retention-rules.js`, `ics.js`, `chat-rules.js`, `store.js`,
 `flash-rules.js`, `flash-run.js`, `flash-modes.js`, `srs.js`, `drills-lex.js`, `drills.js`,
@@ -887,8 +887,8 @@ puste właśnie tak: pusty blok audio wchodzący do sekcji czytania, `cils-h` ł
 
 Trzy rzeczy, które trzeba o niej wiedzieć:
 
-- **Zasięg jest wąski i zadeklarowany.** Dwadzieścia cztery pliki z osiemdziesięciu czterech. „196/196"
-  nie znaczy „silnik sprawdzony", znaczy „te 196 decyzji sprawdzonych". Nowy plik z czystymi funkcjami
+- **Zasięg jest wąski i zadeklarowany.** Dwadzieścia cztery pliki z osiemdziesięciu czterech. „197/197"
+  nie znaczy „silnik sprawdzony", znaczy „te 197 decyzji sprawdzonych". Nowy plik z czystymi funkcjami
   to dobry moment na dopisanie wiersza; obowiązku pokrycia całego silnika nie ma.
 - **Fragment `z` musi występować w pliku dokładnie raz.** Zero wystąpień (tabela zgniła po
   refaktorze) i wiele wystąpień kończą się błędem, nie ostrzeżeniem: mutacja, która po
