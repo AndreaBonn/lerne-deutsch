@@ -291,5 +291,74 @@ LINGUAI.addStrings("it", {
       { task: "Ringrazia e saluta.", tr: "Grazie, arrivederci." },
       { tr: "Arrivederci." }
     ]
+  },
+  "conv:pflege-aufnahme": {
+    title: "Ricovero in reparto",
+    setting: "Reparto di medicina interna. Sei l'infermiera di turno e accogli il signor Wagner, 82 anni, appena arrivato per il ricovero.",
+    closing: "Al paziente si dà sempre del Sie, anche se è anziano e affettuoso: il du a un adulto sconosciuto suona paternalistico. Wassertablette («pastiglia per l'acqua») è il modo comune di dire diuretico. La Klingel, il campanello, si mostra subito all'arrivo, e farla provare aiuta chi non vuole «disturbare».",
+    turns: [
+      { tr: "Buongiorno. Mi hanno detto di presentarmi qui, al reparto sette." },
+      { task: "Presentati e di' che fai l'accettazione.", tr: "Buongiorno, sono Lena, la sua infermiera. Adesso faccio la sua accettazione." },
+      { tr: "Ah, bene. Sono un po' agitato, sa." },
+      { task: "Chiedi nome completo e data di nascita.", tr: "Qual è il suo nome completo, e quando è nato?" },
+      { tr: "Heinrich Wagner, nato il dodici marzo millenovecentoquarantaquattro." },
+      { task: "Ringrazia e chiedi quali disturbi ha.", tr: "Grazie, signor Wagner. Che disturbi ha?" },
+      { tr: "Da una settimana respiro male, soprattutto di notte. E le gambe mi si sono gonfiate molto." },
+      { task: "Chiedi se ha allergie, per esempio ai farmaci.", tr: "Ha allergie, per esempio a qualche farmaco?" },
+      { tr: "Sì, alla penicillina. Mi viene un'eruzione cutanea." },
+      { task: "Di' che lo annoti subito in cartella.", tr: "Lo segno subito nella sua cartella." },
+      { tr: "E le mie pastiglie? Le ho tutte nella borsa." },
+      { task: "Chiedi il piano terapeutico del medico di base, oppure le confezioni.", opts: [
+        { tr: "Ha con sé il piano terapeutico del medico di base?" },
+        { tr: "Mi mostri le confezioni, per favore, così le trascrivo." }
+      ] },
+      { tr: "Sì, eccolo. Me l'ha stampato il medico di base la settimana scorsa." },
+      { tr: "Ecco: un diuretico, un anticoagulante e una pastiglia per la pressione." },
+      { tr: "Le pastiglie qui devo prenderle da solo?" },
+      { task: "Di' che i farmaci glieli date voi.", tr: "No, qui i farmaci glieli diamo noi." },
+      { tr: "Bene. E se di notte ho bisogno di qualcosa?" },
+      { task: "Indicagli il campanello accanto al letto.", tr: "Allora prema il campanello qui accanto al letto, per favore." },
+      { tr: "Il tasto rosso qui? Me lo ricordo." },
+      { task: "Proponigli di provarlo, oppure chiedi se gli serve altro.", opts: [
+        { tr: "Esatto. Vuole provarlo una volta?" },
+        { tr: "Esatto. Le serve ancora qualcosa, per ora?" }
+      ] },
+      { tr: "Oh, sopra la porta si accende una luce. Allora so che funziona." },
+      { tr: "No, grazie, per ora ho tutto." },
+      { tr: "Grazie mille, lei è molto gentile." },
+      { task: "Rispondi e di' che il medico arriva fra poco.", tr: "Prego. Il medico arriva da lei fra poco." },
+      { tr: "Grazie." }
+    ]
+  },
+  "conv:pflege-telefon-angehoerige": {
+    title: "Al telefono con una familiare",
+    setting: "Reparto sette, pomeriggio. Squilla il telefono: è la figlia del signor Wagner, ricoverato ieri. Vuole sapere tutto, subito.",
+    closing: "Al telefono non vedi chi parla: prima di dire qualcosa controlli in cartella se il paziente ha indicato quella persona. È la Schweigepflicht, il segreto professionale. La diagnosi spetta al medico, e «Das bespricht der Arzt mit Ihnen» è la frase con cui l'infermiera lo dice senza chiudere la porta. Al telefono ci si saluta con «Auf Wiederhören», non con «Auf Wiedersehen»: ci si è sentiti, non visti.",
+    turns: [
+      { tr: "Buongiorno, è il reparto sette? Mio padre, Heinrich Wagner, è stato ricoverato da voi ieri." },
+      { task: "Conferma il reparto e presentati.", tr: "Sì, qui è il reparto sette, parla con Lena dell'assistenza infermieristica." },
+      { tr: "Sono così preoccupata. Come sta? Che cos'ha di preciso?" },
+      { task: "Prima di dare informazioni: chiedi il nome oppure spiega il segreto professionale.", opts: [
+        { tr: "Mi dice il suo nome, per favore? Devo verificare se suo padre l'ha indicata come persona di riferimento." },
+        { tr: "Sono tenuta al segreto professionale e posso dare informazioni solo alle persone indicate da suo padre." }
+      ] },
+      { tr: "Sabine Schneider, sono sua figlia." },
+      { tr: "Capisco. Sono sua figlia, Sabine Schneider. Mi ha indicata lui al momento del ricovero." },
+      { task: "Conferma che il nome è in cartella e di' com'è andata la notte.", tr: "Grazie, signora Schneider, il suo nome è in cartella. Suo padre ha passato una notte tranquilla." },
+      { tr: "Grazie al cielo. E la diagnosi? È il cuore? Lo devono operare?" },
+      { task: "Rimanda la diagnosi al medico.", tr: "Di questo le parlerà il medico. Sulla diagnosi, come infermiera, non posso dirle niente." },
+      { tr: "E quando posso parlare con il medico? Lavoro fino alle diciassette." },
+      { task: "Proponi una richiamata oggi o un colloquio domani.", opts: [
+        { tr: "Chiedo al dottor Krüger di richiamarla oggi dopo le diciassette." },
+        { tr: "Può venire domani alle quattordici per un colloquio con il medico. Le va bene?" }
+      ] },
+      { tr: "Sarebbe molto gentile. Il mio numero di cellulare ce l'avete, l'ho lasciato ieri al ricovero." },
+      { tr: "Le quattordici mi vanno bene, mi prendo il pomeriggio libero." },
+      { tr: "Può dire a mio padre che ho chiamato?" },
+      { task: "Di' che glielo riferisci volentieri.", tr: "Certo, glielo riferisco volentieri." },
+      { tr: "Grazie mille. E mi scusi se prima ero così impaziente." },
+      { task: "Rassicurala e saluta come si fa al telefono.", tr: "Nessun problema, la capisco bene. Arrivederci, signora Schneider." },
+      { tr: "Arrivederci." }
+    ]
   }
 });

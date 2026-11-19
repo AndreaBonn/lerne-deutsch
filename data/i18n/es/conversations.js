@@ -291,5 +291,74 @@ LINGUAI.addStrings("es", {
       { task: "Da las gracias y despídete.", tr: "Gracias, adiós." },
       { tr: "Adiós." }
     ]
+  },
+  "conv:pflege-aufnahme": {
+    title: "Ingreso en planta",
+    setting: "Una planta de medicina interna. Eres la enfermera de turno y recibes al señor Wagner, de 82 años, que acaba de llegar para ingresar.",
+    closing: "Con el paciente, siempre Sie, como el usted, aunque sea mayor y cariñoso: tutear a un adulto desconocido suena condescendiente. Wassertablette («pastilla del agua») es el nombre coloquial del diurético, igual que en español. La Klingel, el timbre, se enseña nada más llegar, y conviene que el paciente la pruebe: muchos mayores no llaman por no «molestar».",
+    turns: [
+      { tr: "Buenos días. Me han dicho que me presente aquí, en la planta siete." },
+      { task: "Preséntate y di que vas a hacer el ingreso.", tr: "Buenos días, soy Lena, su enfermera. Ahora le hago el ingreso." },
+      { tr: "Ah, bien. Estoy un poco nervioso, ¿sabe?" },
+      { task: "Pregunta el nombre completo y la fecha de nacimiento.", tr: "¿Cuál es su nombre completo y cuándo nació?" },
+      { tr: "Heinrich Wagner, nacido el doce de marzo de mil novecientos cuarenta y cuatro." },
+      { task: "Da las gracias y pregunta qué molestias tiene.", tr: "Gracias, señor Wagner. ¿Qué molestias tiene?" },
+      { tr: "Desde hace una semana me falta el aire, sobre todo por la noche. Y se me han hinchado mucho las piernas." },
+      { task: "Pregunta si tiene alergias, por ejemplo a medicamentos.", tr: "¿Tiene alergias, por ejemplo a algún medicamento?" },
+      { tr: "Sí, a la penicilina. Me sale un sarpullido." },
+      { task: "Di que lo anotas enseguida en su historia.", tr: "Lo apunto enseguida en su historia clínica." },
+      { tr: "¿Y mis pastillas? Las tengo todas en la bolsa." },
+      { task: "Pide la lista de medicación del médico de cabecera, o las cajas.", opts: [
+        { tr: "¿Trae la lista de medicación de su médico de cabecera?" },
+        { tr: "Enséñeme las cajas, por favor, y las apunto." }
+      ] },
+      { tr: "Sí, aquí está. Me la imprimió mi médico de cabecera la semana pasada." },
+      { tr: "Aquí: una pastilla del agua, un anticoagulante y algo para la tensión." },
+      { tr: "¿Aquí tengo que tomarme yo las pastillas?" },
+      { task: "Dile que la medicación se la da la planta.", tr: "No, aquí la medicación se la damos nosotros." },
+      { tr: "Bien. ¿Y si por la noche necesito algo?" },
+      { task: "Enséñale el timbre junto a la cama.", tr: "Entonces pulse el timbre que tiene aquí junto a la cama, por favor." },
+      { tr: "¿El botón rojo de aquí? Eso me lo puedo acordar." },
+      { task: "Propón que lo pruebe, o pregunta si necesita algo más.", opts: [
+        { tr: "Exacto. ¿Quiere probarlo una vez?" },
+        { tr: "Exacto. ¿Necesita algo más ahora mismo?" }
+      ] },
+      { tr: "Oh, encima de la puerta se enciende una luz. Así sé que funciona." },
+      { tr: "No, gracias, de momento tengo de todo." },
+      { tr: "Muchas gracias, es usted muy amable." },
+      { task: "Contesta y di que el médico viene enseguida.", tr: "De nada. El médico viene a verle enseguida." },
+      { tr: "Gracias." }
+    ]
+  },
+  "conv:pflege-telefon-angehoerige": {
+    title: "Al teléfono con una familiar",
+    setting: "Planta siete, por la tarde. Suena el teléfono: es la hija del señor Wagner, que ingresó ayer. Quiere saberlo todo, ya.",
+    closing: "Por teléfono no ves quién llama: antes de decir nada compruebas en la historia si el paciente ha autorizado a esa persona. Es la Schweigepflicht, el secreto profesional. El diagnóstico lo da el médico, y «Das bespricht der Arzt mit Ihnen» es la frase para decirlo sin cerrar la puerta. Al teléfono uno se despide con «Auf Wiederhören» («hasta oírnos»), no con «Auf Wiedersehen».",
+    turns: [
+      { tr: "Buenas tardes, ¿es la planta siete? Mi padre, Heinrich Wagner, ingresó ayer con ustedes." },
+      { task: "Confirma la planta y preséntate.", tr: "Sí, esta es la planta siete, habla con Lena, de enfermería." },
+      { tr: "Estoy tan preocupada. ¿Cómo está? ¿Qué tiene exactamente?" },
+      { task: "Antes de informar: pide su nombre o explica el secreto profesional.", opts: [
+        { tr: "¿Me dice su nombre, por favor? Tengo que comprobar si su padre la ha indicado como persona de contacto." },
+        { tr: "Estoy sujeta al secreto profesional y solo puedo informar a las personas que su padre ha autorizado." }
+      ] },
+      { tr: "Sabine Schneider, soy su hija." },
+      { tr: "Lo entiendo. Soy su hija, Sabine Schneider. Me indicó él al ingresar." },
+      { task: "Confirma que su nombre está en la historia y di cómo ha pasado la noche.", tr: "Gracias, señora Schneider, su nombre está en la historia. Su padre ha pasado una noche tranquila." },
+      { tr: "Gracias a Dios. ¿Y el diagnóstico? ¿Es el corazón? ¿Hay que operarle?" },
+      { task: "Remite el diagnóstico al médico.", tr: "Eso lo hablará el médico con usted. Como enfermera no puedo decirle nada sobre el diagnóstico." },
+      { tr: "¿Y cuándo puedo hablar con el médico? Trabajo hasta las cinco." },
+      { task: "Ofrece una llamada hoy o una cita mañana.", opts: [
+        { tr: "Le pido al doctor Krüger que la llame hoy después de las cinco." },
+        { tr: "Puede venir mañana a las dos para hablar con el médico. ¿Le viene bien?" }
+      ] },
+      { tr: "Sería muy amable. Mi móvil lo tienen, lo dejé ayer en el ingreso." },
+      { tr: "Las dos me vienen bien, me tomo la tarde libre." },
+      { tr: "¿Puede decirle a mi padre que he llamado?" },
+      { task: "Di que se lo dirás con gusto.", tr: "Claro, se lo digo con mucho gusto." },
+      { tr: "Muchas gracias. Y perdone que antes estuviera tan impaciente." },
+      { task: "Tranquilízala y despídete como se hace al teléfono.", tr: "No se preocupe, la entiendo muy bien. Adiós, señora Schneider." },
+      { tr: "Adiós." }
+    ]
   }
 });

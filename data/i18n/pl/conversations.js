@@ -290,5 +290,74 @@ LINGUAI.addStrings("pl", {
       { task: "Podziękuj i pożegnaj się.", tr: "Dziękuję, do widzenia." },
       { tr: "Do widzenia." }
     ]
+  },
+  "conv:pflege-aufnahme": {
+    title: "Przyjęcie na oddział",
+    setting: "Oddział chorób wewnętrznych. Jesteś pielęgniarką na dyżurze i przyjmujesz pana Wagnera, 82 lata, który właśnie przyszedł do szpitala.",
+    closing: "Do pacjenta zawsze Sie, nawet do starszego i serdecznego: du wobec obcego dorosłego brzmi protekcjonalnie. Po polsku mówisz „pan” z czasownikiem w 3. osobie liczby pojedynczej, a niemieckie Sie bierze formę 3. osoby liczby mnogiej i jest takie samo dla kobiety i mężczyzny: „Haben Sie Allergien?”. Wassertablette („tabletka na wodę”) to potoczna nazwa leku moczopędnego. Klingel, czyli dzwonek, pokazuje się od razu i warto dać go wypróbować: starsi pacjenci często nie chcą „przeszkadzać”.",
+    turns: [
+      { tr: "Dzień dobry. Powiedziano mi, że mam się zgłosić tutaj, na oddział siódmy." },
+      { task: "Przedstaw się i powiedz, że przeprowadzasz przyjęcie.", tr: "Dzień dobry, jestem Lena, pana pielęgniarka. Teraz pana przyjmę." },
+      { tr: "A, dobrze. Trochę się denerwuję, wie pani." },
+      { task: "Zapytaj o pełne imię i nazwisko oraz datę urodzenia.", tr: "Jak brzmi pana pełne imię i nazwisko i kiedy się pan urodził?" },
+      { tr: "Heinrich Wagner, urodzony dwunastego marca tysiąc dziewięćset czterdziestego czwartego roku." },
+      { task: "Podziękuj i zapytaj o dolegliwości.", tr: "Dziękuję, panie Wagner. Jakie ma pan dolegliwości?" },
+      { tr: "Od tygodnia brakuje mi tchu, zwłaszcza w nocy. A nogi bardzo mi spuchły." },
+      { task: "Zapytaj o alergie, na przykład na leki.", tr: "Czy ma pan jakieś alergie, na przykład na leki?" },
+      { tr: "Tak, na penicylinę. Dostaję po niej wysypki." },
+      { task: "Powiedz, że od razu wpisujesz to do dokumentacji.", tr: "Od razu wpiszę to do pana dokumentacji." },
+      { tr: "A moje tabletki? Mam je wszystkie w torbie." },
+      { task: "Poproś o wykaz leków od lekarza rodzinnego albo o opakowania.", opts: [
+        { tr: "Czy ma pan przy sobie wykaz leków od lekarza rodzinnego?" },
+        { tr: "Proszę mi pokazać opakowania, to je przepiszę." }
+      ] },
+      { tr: "Tak, proszę. Lekarz rodzinny wydrukował mi go w zeszłym tygodniu." },
+      { tr: "Proszę: tabletka na wodę, lek na rozrzedzenie krwi i coś na ciśnienie." },
+      { tr: "Czy tutaj mam sam brać tabletki?" },
+      { task: "Powiedz, że leki podaje oddział.", tr: "Nie, leki dostanie pan tutaj od nas." },
+      { tr: "Dobrze. A jeśli w nocy będę czegoś potrzebował?" },
+      { task: "Pokaż mu dzwonek przy łóżku.", tr: "Wtedy proszę nacisnąć dzwonek, tutaj przy łóżku." },
+      { tr: "Ten czerwony przycisk? To zapamiętam." },
+      { task: "Zaproponuj, żeby spróbował, albo zapytaj, czy czegoś jeszcze potrzebuje.", opts: [
+        { tr: "Właśnie. Chce pan raz spróbować?" },
+        { tr: "Właśnie. Czy czegoś pan jeszcze teraz potrzebuje?" }
+      ] },
+      { tr: "O, nad drzwiami zapaliło się światło. To wiem, że działa." },
+      { tr: "Nie, dziękuję, na razie mam wszystko." },
+      { tr: "Bardzo dziękuję, jest pani bardzo miła." },
+      { task: "Odpowiedz i powiedz, że lekarz zaraz przyjdzie.", tr: "Proszę bardzo. Lekarz zaraz do pana przyjdzie." },
+      { tr: "Dziękuję." }
+    ]
+  },
+  "conv:pflege-telefon-angehoerige": {
+    title: "Telefon od krewnej",
+    setting: "Oddział siódmy, popołudnie. Dzwoni telefon: to córka pana Wagnera, przyjętego wczoraj. Chce wiedzieć wszystko, i to od razu.",
+    closing: "Przez telefon nie widzisz, kto dzwoni: zanim cokolwiek powiesz, sprawdzasz w dokumentacji, czy pacjent upoważnił tę osobę. To Schweigepflicht, tajemnica zawodowa. Diagnozę przekazuje lekarz, a „Das bespricht der Arzt mit Ihnen” to zdanie, którym pielęgniarka to mówi, nie ucinając rozmowy. Przez telefon żegna się „Auf Wiederhören” („do usłyszenia”), nie „Auf Wiedersehen”. Do rozmówczyni mówi się „Frau Schneider”, z nazwiskiem: polskie „proszę pani” bez nazwiska nie ma w niemieckim odpowiednika.",
+    turns: [
+      { tr: "Dzień dobry, czy to oddział siódmy? Mój ojciec, Heinrich Wagner, został wczoraj u państwa przyjęty." },
+      { task: "Potwierdź oddział i przedstaw się.", tr: "Tak, tu oddział siódmy, rozmawia pani z Leną z zespołu pielęgniarskiego." },
+      { tr: "Tak się martwię. Jak on się czuje? Co mu dokładnie jest?" },
+      { task: "Zanim udzielisz informacji: zapytaj o nazwisko albo wyjaśnij tajemnicę zawodową.", opts: [
+        { tr: "Jak się pani nazywa? Muszę sprawdzić, czy ojciec wskazał panią jako osobę do kontaktu." },
+        { tr: "Obowiązuje mnie tajemnica zawodowa i mogę udzielać informacji tylko osobom, które wskazał pani ojciec." }
+      ] },
+      { tr: "Sabine Schneider, jestem jego córką." },
+      { tr: "Rozumiem. Jestem jego córką, Sabine Schneider. Wskazał mnie przy przyjęciu." },
+      { task: "Potwierdź, że nazwisko jest w dokumentacji, i powiedz, jak minęła noc.", tr: "Dziękuję, pani Schneider, pani nazwisko jest w dokumentacji. Ojciec spędził spokojną noc." },
+      { tr: "Dzięki Bogu. A diagnoza? Czy to serce? Czy trzeba go operować?" },
+      { task: "Odeślij pytanie o diagnozę do lekarza.", tr: "O tym porozmawia z panią lekarz. Jako pielęgniarka nie mogę nic powiedzieć o diagnozie." },
+      { tr: "A kiedy mogę porozmawiać z lekarzem? Pracuję do siedemnastej." },
+      { task: "Zaproponuj oddzwonienie dziś albo rozmowę jutro.", opts: [
+        { tr: "Poproszę doktora Krügera, żeby oddzwonił do pani dziś po siedemnastej." },
+        { tr: "Może pani przyjść jutro o czternastej na rozmowę z lekarzem. Czy to pani pasuje?" }
+      ] },
+      { tr: "To bardzo miło. Mój numer komórki państwo mają, zostawiłam go wczoraj przy przyjęciu." },
+      { tr: "Czternasta mi pasuje, wezmę wolne popołudnie." },
+      { tr: "Czy może pani przekazać ojcu, że dzwoniłam?" },
+      { task: "Powiedz, że chętnie przekażesz.", tr: "Oczywiście, chętnie mu przekażę." },
+      { tr: "Bardzo dziękuję. I przepraszam, że byłam wcześniej taka niecierpliwa." },
+      { task: "Uspokój ją i pożegnaj się tak, jak przez telefon.", tr: "Nic nie szkodzi, dobrze panią rozumiem. Do usłyszenia, pani Schneider." },
+      { tr: "Do usłyszenia." }
+    ]
   }
 });

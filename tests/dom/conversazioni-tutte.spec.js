@@ -1,7 +1,7 @@
 /* ============================================================
    Every scene of conversations.js, played to the end with its own keys.
 
-   conversazione.spec.js checks the engine on the seed. The other thirteen
+   conversazione.spec.js checks the engine on the seed. The other fifteen
    scenes were written later, in batches, and each can break in a way the
    engine tests never see: a `go` pointing at an id that is not there, an
    `accept` that no longer matches what the hint asks for, a branch that
@@ -60,7 +60,7 @@ for (const s of SCENES) {
 }
 
 test("the list holds every scene of the data file", () => {
-  expect(SCENES.length).toBe(14);
+  expect(SCENES.length).toBe(16);
 });
 
 for (const [scene, pick] of RUNS) {

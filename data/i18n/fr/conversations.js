@@ -290,5 +290,74 @@ LINGUAI.addStrings("fr", {
       { task: "Remerciez et dites au revoir.", tr: "Merci, au revoir." },
       { tr: "Au revoir." }
     ]
+  },
+  "conv:pflege-aufnahme": {
+    title: "Admission dans le service",
+    setting: "Un service de médecine interne. Vous êtes l'infirmière de garde et vous accueillez M. Wagner, 82 ans, qui vient d'arriver pour son hospitalisation.",
+    closing: "Avec le patient, toujours Sie, comme le vouvoiement, même s'il est âgé et chaleureux : le du à un adulte inconnu sonne infantilisant. Wassertablette (« cachet pour l'eau ») est le nom courant du diurétique. On montre la Klingel, la sonnette, dès l'arrivée, et on la fait essayer : beaucoup de patients âgés n'osent pas « déranger ».",
+    turns: [
+      { tr: "Bonjour. On m'a dit de me présenter ici, au service sept." },
+      { task: "Présentez-vous et dites que vous faites son admission.", tr: "Bonjour, je suis Lena, votre infirmière. Je fais votre admission maintenant." },
+      { tr: "Ah, bien. Je suis un peu nerveux, vous savez." },
+      { task: "Demandez son nom complet et sa date de naissance.", tr: "Quel est votre nom complet, et quand êtes-vous né ?" },
+      { tr: "Heinrich Wagner, né le douze mars mille neuf cent quarante-quatre." },
+      { task: "Remerciez-le et demandez quels symptômes il a.", tr: "Merci, monsieur Wagner. Quels symptômes avez-vous ?" },
+      { tr: "Depuis une semaine, j'ai du mal à respirer, surtout la nuit. Et mes jambes ont beaucoup gonflé." },
+      { task: "Demandez s'il a des allergies, par exemple à des médicaments.", tr: "Avez-vous des allergies, par exemple à des médicaments ?" },
+      { tr: "Oui, à la pénicilline. Ça me donne une éruption." },
+      { task: "Dites que vous le notez tout de suite dans son dossier.", tr: "Je le note tout de suite dans votre dossier." },
+      { tr: "Et mes cachets ? Je les ai tous dans mon sac." },
+      { task: "Demandez la liste de traitement du médecin traitant, ou les boîtes.", opts: [
+        { tr: "Avez-vous sur vous la liste de traitement de votre médecin traitant ?" },
+        { tr: "Montrez-moi les boîtes, s'il vous plaît, je les recopie." }
+      ] },
+      { tr: "Oui, la voici. Mon médecin traitant me l'a imprimée la semaine dernière." },
+      { tr: "Voilà : un diurétique, un anticoagulant et quelque chose pour la tension." },
+      { tr: "Ici, je dois prendre mes cachets moi-même ?" },
+      { task: "Dites-lui que c'est le service qui donne les médicaments.", tr: "Non, ici, vos médicaments, c'est nous qui vous les donnons." },
+      { tr: "Bien. Et si j'ai besoin de quelque chose la nuit ?" },
+      { task: "Montrez-lui la sonnette près du lit.", tr: "Alors appuyez sur la sonnette, ici près du lit, s'il vous plaît." },
+      { tr: "Le bouton rouge, là ? Ça, je peux m'en souvenir." },
+      { task: "Proposez-lui de l'essayer, ou demandez s'il a besoin d'autre chose.", opts: [
+        { tr: "Exactement. Vous voulez l'essayer une fois ?" },
+        { tr: "Exactement. Vous avez besoin d'autre chose pour le moment ?" }
+      ] },
+      { tr: "Oh, une lumière s'allume au-dessus de la porte. Comme ça, je sais que ça marche." },
+      { tr: "Non, merci, pour le moment j'ai tout ce qu'il me faut." },
+      { tr: "Merci beaucoup, vous êtes très aimable." },
+      { task: "Répondez et dites que le médecin arrive bientôt.", tr: "Je vous en prie. Le médecin passe vous voir dans un instant." },
+      { tr: "Merci bien." }
+    ]
+  },
+  "conv:pflege-telefon-angehoerige": {
+    title: "Au téléphone avec une proche",
+    setting: "Service sept, l'après-midi. Le téléphone sonne : c'est la fille de M. Wagner, hospitalisé hier. Elle veut tout savoir, tout de suite.",
+    closing: "Au téléphone, vous ne voyez pas qui appelle : avant de dire quoi que ce soit, vous vérifiez dans le dossier si le patient a désigné cette personne. C'est la Schweigepflicht, le secret professionnel. Le diagnostic revient au médecin, et « Das bespricht der Arzt mit Ihnen » est la formule pour le dire sans fermer la porte. Au téléphone, on se quitte sur « Auf Wiederhören » (« au plaisir de vous entendre »), pas sur « Auf Wiedersehen ».",
+    turns: [
+      { tr: "Bonjour, je suis bien au service sept ? Mon père, Heinrich Wagner, a été hospitalisé chez vous hier." },
+      { task: "Confirmez le service et présentez-vous.", tr: "Oui, ici le service sept, vous parlez avec Lena, de l'équipe infirmière." },
+      { tr: "Je suis tellement inquiète. Comment va-t-il ? Qu'est-ce qu'il a exactement ?" },
+      { task: "Avant de donner des informations : demandez son nom, ou expliquez le secret professionnel.", opts: [
+        { tr: "Quel est votre nom, s'il vous plaît ? Je dois vérifier si votre père vous a désignée comme personne à contacter." },
+        { tr: "Je suis tenue au secret professionnel et je ne peux informer que les personnes désignées par votre père." }
+      ] },
+      { tr: "Sabine Schneider, je suis sa fille." },
+      { tr: "Je comprends. Je suis sa fille, Sabine Schneider. Il m'a désignée lors de son admission." },
+      { task: "Confirmez que son nom est dans le dossier et dites comment s'est passée la nuit.", tr: "Merci, madame Schneider, votre nom figure dans le dossier. Votre père a passé une nuit calme." },
+      { tr: "Dieu merci. Et le diagnostic ? C'est le cœur ? Il faut l'opérer ?" },
+      { task: "Renvoyez la question du diagnostic au médecin.", tr: "C'est le médecin qui en parlera avec vous. En tant qu'infirmière, je ne peux rien vous dire sur le diagnostic." },
+      { tr: "Et quand est-ce que je peux parler au médecin ? Je travaille jusqu'à dix-sept heures." },
+      { task: "Proposez un rappel aujourd'hui ou un entretien demain.", opts: [
+        { tr: "Je demande au docteur Krüger de vous rappeler aujourd'hui après dix-sept heures." },
+        { tr: "Vous pouvez venir demain à quatorze heures pour un entretien avec le médecin. Ça vous convient ?" }
+      ] },
+      { tr: "Ce serait très gentil. Vous avez mon numéro de portable, je l'ai laissé hier à l'admission." },
+      { tr: "Quatorze heures, ça me va, je prendrai mon après-midi." },
+      { tr: "Vous pouvez dire à mon père que j'ai appelé ?" },
+      { task: "Dites que vous le lui transmettrez volontiers.", tr: "Bien sûr, je le lui dirai volontiers." },
+      { tr: "Merci beaucoup. Et excusez-moi d'avoir été si impatiente tout à l'heure." },
+      { task: "Rassurez-la et prenez congé comme on le fait au téléphone.", tr: "Pas de problème, je vous comprends très bien. Au revoir, madame Schneider." },
+      { tr: "Au revoir." }
+    ]
   }
 });

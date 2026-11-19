@@ -692,5 +692,173 @@ window.CONVERSATIONS = [
       },
       { sp: "A", it: "Auf Wiedersehen." }
     ]
+  },
+  {
+    id: "pflege-aufnahme",
+    cefr: "B1",
+    icon: "🛏️",
+    titleIt: "Aufnahme auf der Station",
+    turns: [
+      { sp: "A", it: "Guten Tag. Man hat mir gesagt, ich soll mich hier auf Station sieben melden." },
+      {
+        sp: "TY",
+        hintIt: "Guten Tag, ich bin Lena, Ihre Pflegekraft. Ich nehme Sie jetzt auf.",
+        accept: ["guten tag ich bin lena ihre pflegekraft ich nehme sie jetzt auf", "ich bin lena ihre pflegekraft ich nehme sie jetzt auf", "guten tag ich bin lena ihre pflegekraft"]
+      },
+      { sp: "A", it: "Ach, gut. Ich bin ein bisschen aufgeregt, wissen Sie." },
+      {
+        sp: "TY",
+        hintIt: "Wie ist Ihr vollständiger Name, und wann sind Sie geboren?",
+        accept: ["wie ist ihr vollständiger name und wann sind sie geboren", "wie ist ihr name und wann sind sie geboren", "wie heißen sie und wann sind sie geboren"]
+      },
+      { sp: "A", it: "Heinrich Wagner, geboren am zwölften März neunzehnhundertvierundvierzig." },
+      {
+        sp: "TY",
+        hintIt: "Danke, Herr Wagner. Welche Beschwerden haben Sie?",
+        accept: ["danke herr wagner welche beschwerden haben sie", "welche beschwerden haben sie", "danke welche beschwerden haben sie"]
+      },
+      { sp: "A", it: "Seit einer Woche bekomme ich schlecht Luft, vor allem nachts. Und meine Beine sind ganz dick geworden." },
+      {
+        sp: "TY",
+        hintIt: "Haben Sie Allergien, zum Beispiel gegen Medikamente?",
+        accept: ["haben sie allergien zum beispiel gegen medikamente", "haben sie allergien", "haben sie eine allergie gegen medikamente"]
+      },
+      { sp: "A", it: "Ja, gegen Penicillin. Davon bekomme ich einen Ausschlag." },
+      {
+        sp: "TY",
+        hintIt: "Das trage ich sofort in Ihre Akte ein.",
+        accept: ["das trage ich sofort in ihre akte ein", "das trage ich in ihre akte ein", "danke das trage ich sofort in ihre akte ein"]
+      },
+      { sp: "A", it: "Und meine Tabletten? Die habe ich alle in der Tasche." },
+      {
+        sp: "TY",
+        opts: [
+          {
+            hintIt: "Haben Sie einen Medikamentenplan vom Hausarzt dabei?",
+            accept: ["haben sie einen medikamentenplan vom hausarzt dabei", "haben sie einen medikamentenplan dabei", "haben sie einen medikationsplan dabei"],
+            go: "plan"
+          },
+          {
+            hintIt: "Zeigen Sie mir bitte die Packungen, dann schreibe ich sie ab.",
+            accept: ["zeigen sie mir bitte die packungen dann schreibe ich sie ab", "zeigen sie mir bitte die packungen", "zeigen sie mir die packungen bitte"],
+            go: "packungen"
+          }
+        ]
+      },
+      { sp: "A", id: "plan", it: "Ja, hier ist er. Den hat mir mein Hausarzt letzte Woche ausgedruckt.", go: "abgeben" },
+      { sp: "A", id: "packungen", it: "Hier: eine Wassertablette, ein Blutverdünner und etwas für den Blutdruck." },
+      { sp: "A", id: "abgeben", it: "Muss ich die Tabletten hier selbst nehmen?" },
+      {
+        sp: "TY",
+        hintIt: "Nein, Ihre Medikamente bekommen Sie hier von uns.",
+        accept: ["nein ihre medikamente bekommen sie hier von uns", "ihre medikamente bekommen sie hier von uns", "nein die medikamente bekommen sie von uns"]
+      },
+      { sp: "A", it: "Gut. Und wenn ich nachts etwas brauche?" },
+      {
+        sp: "TY",
+        hintIt: "Dann drücken Sie bitte auf die Klingel hier am Bett.",
+        accept: ["dann drücken sie bitte auf die klingel hier am bett", "drücken sie bitte auf die klingel hier am bett", "dann drücken sie bitte auf die klingel"]
+      },
+      { sp: "A", it: "Die rote Taste hier? Das kann ich mir merken." },
+      {
+        sp: "TY",
+        opts: [
+          {
+            hintIt: "Genau. Möchten Sie es einmal ausprobieren?",
+            accept: ["genau möchten sie es einmal ausprobieren", "möchten sie es einmal ausprobieren", "möchten sie es ausprobieren"],
+            go: "probe"
+          },
+          {
+            hintIt: "Genau. Brauchen Sie im Moment noch etwas?",
+            accept: ["genau brauchen sie im moment noch etwas", "brauchen sie im moment noch etwas", "brauchen sie noch etwas"],
+            go: "sonst"
+          }
+        ]
+      },
+      { sp: "A", id: "probe", it: "Oh, über der Tür leuchtet ein Licht. Dann weiß ich ja, dass es funktioniert.", go: "ende" },
+      { sp: "A", id: "sonst", it: "Nein, danke, im Moment habe ich alles." },
+      { sp: "A", id: "ende", it: "Vielen Dank, Sie sind sehr freundlich." },
+      {
+        sp: "TY",
+        hintIt: "Gern. Der Arzt kommt gleich zu Ihnen.",
+        accept: ["gern der arzt kommt gleich zu ihnen", "der arzt kommt gleich zu ihnen", "gerne der arzt kommt gleich zu ihnen"]
+      },
+      { sp: "A", it: "Danke schön." }
+    ]
+  },
+  {
+    id: "pflege-telefon-angehoerige",
+    cefr: "B2",
+    icon: "📞",
+    titleIt: "Telefonat mit einer Angehörigen",
+    turns: [
+      { sp: "A", it: "Guten Tag, bin ich hier richtig auf Station sieben? Mein Vater, Heinrich Wagner, ist gestern bei Ihnen aufgenommen worden." },
+      {
+        sp: "TY",
+        hintIt: "Ja, hier ist Station sieben, Sie sprechen mit Lena aus der Pflege.",
+        accept: ["ja hier ist station sieben sie sprechen mit lena aus der pflege", "hier ist station sieben sie sprechen mit lena aus der pflege", "ja station sieben sie sprechen mit lena"]
+      },
+      { sp: "A", it: "Ich mache mir solche Sorgen. Wie geht es ihm denn? Was hat er genau?" },
+      {
+        sp: "TY",
+        opts: [
+          {
+            hintIt: "Wie ist bitte Ihr Name? Ich muss nachsehen, ob Ihr Vater Sie als Ansprechpartnerin angegeben hat.",
+            accept: ["wie ist bitte ihr name ich muss nachsehen ob ihr vater sie als ansprechpartnerin angegeben hat", "wie ist bitte ihr name", "ich muss nachsehen ob ihr vater sie als ansprechpartnerin angegeben hat"],
+            go: "name"
+          },
+          {
+            hintIt: "Ich unterliege der Schweigepflicht und darf nur Personen Auskunft geben, die Ihr Vater benannt hat.",
+            accept: ["ich unterliege der schweigepflicht und darf nur personen auskunft geben die ihr vater benannt hat", "ich unterliege der schweigepflicht", "ich darf nur personen auskunft geben die ihr vater benannt hat"],
+            go: "schweigepflicht"
+          }
+        ]
+      },
+      { sp: "A", id: "name", it: "Sabine Schneider, ich bin seine Tochter.", go: "stand" },
+      { sp: "A", id: "schweigepflicht", it: "Das verstehe ich. Ich bin seine Tochter, Sabine Schneider. Er hat mich bei der Aufnahme angegeben." },
+      {
+        sp: "TY",
+        id: "stand",
+        hintIt: "Danke, Frau Schneider, Ihr Name steht in der Akte. Ihr Vater hat die Nacht ruhig verbracht.",
+        accept: ["danke frau schneider ihr name steht in der akte ihr vater hat die nacht ruhig verbracht", "ihr name steht in der akte ihr vater hat die nacht ruhig verbracht", "ihr vater hat die nacht ruhig verbracht"]
+      },
+      { sp: "A", it: "Gott sei Dank. Und die Diagnose? Ist es das Herz? Muss er operiert werden?" },
+      {
+        sp: "TY",
+        hintIt: "Das bespricht der Arzt mit Ihnen. Zur Diagnose kann ich Ihnen als Pflegekraft nichts sagen.",
+        accept: ["das bespricht der arzt mit ihnen zur diagnose kann ich ihnen als pflegekraft nichts sagen", "das bespricht der arzt mit ihnen", "das bespricht der arzt persönlich mit ihnen"]
+      },
+      { sp: "A", it: "Und wann kann ich mit dem Arzt sprechen? Ich arbeite bis siebzehn Uhr." },
+      {
+        sp: "TY",
+        opts: [
+          {
+            hintIt: "Ich bitte Dr. Krüger, Sie heute nach siebzehn Uhr zurückzurufen.",
+            accept: ["ich bitte dr krüger sie heute nach siebzehn uhr zurückzurufen", "ich bitte doktor krüger sie heute nach siebzehn uhr zurückzurufen", "ich bitte den arzt sie heute nach siebzehn uhr zurückzurufen"],
+            go: "rueckruf"
+          },
+          {
+            hintIt: "Sie können morgen um vierzehn Uhr zu einem Gespräch mit dem Arzt kommen. Passt Ihnen das?",
+            accept: ["sie können morgen um vierzehn uhr zu einem gespräch mit dem arzt kommen passt ihnen das", "sie können morgen um vierzehn uhr zu einem gespräch mit dem arzt kommen", "morgen um vierzehn uhr zu einem gespräch mit dem arzt passt ihnen das"],
+            go: "termin"
+          }
+        ]
+      },
+      { sp: "A", id: "rueckruf", it: "Das wäre sehr nett. Meine Handynummer haben Sie, die habe ich gestern bei der Aufnahme angegeben.", go: "ausrichten" },
+      { sp: "A", id: "termin", it: "Vierzehn Uhr passt mir gut, dann nehme ich mir den Nachmittag frei." },
+      { sp: "A", id: "ausrichten", it: "Können Sie meinem Vater sagen, dass ich angerufen habe?" },
+      {
+        sp: "TY",
+        hintIt: "Natürlich, das richte ich ihm gern aus.",
+        accept: ["natürlich das richte ich ihm gern aus", "das richte ich ihm gern aus", "natürlich das richte ich ihm gerne aus"]
+      },
+      { sp: "A", it: "Vielen Dank. Und entschuldigen Sie, dass ich vorhin so ungeduldig war." },
+      {
+        sp: "TY",
+        hintIt: "Kein Problem, das verstehe ich gut. Auf Wiederhören, Frau Schneider.",
+        accept: ["kein problem das verstehe ich gut auf wiederhören frau schneider", "kein problem auf wiederhören frau schneider", "das verstehe ich gut auf wiederhören"]
+      },
+      { sp: "A", it: "Auf Wiederhören." }
+    ]
   }
 ];

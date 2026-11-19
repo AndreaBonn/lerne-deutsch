@@ -291,5 +291,74 @@ LINGUAI.addStrings("en", {
       { task: "Say thank you and goodbye.", tr: "Thank you, goodbye." },
       { tr: "Goodbye." }
     ]
+  },
+  "conv:pflege-aufnahme": {
+    title: "Admitting a patient on the ward",
+    setting: "An internal medicine ward. You're the nurse on shift, and you admit Mr. Wagner, 82, who has just arrived.",
+    closing: "German has no neutral \"you\": with a patient it's always Sie, however old or friendly he is, and du to an adult stranger sounds patronizing. Wassertablette (\"water pill\") is everyday talk for a diuretic, just as in English. Show the Klingel, the call button, right away, and let the patient try it: older patients often don't want to \"bother\" anyone.",
+    turns: [
+      { tr: "Hello. They told me to check in here on Ward Seven." },
+      { task: "Introduce yourself and say you're doing his admission.", tr: "Hello, I'm Lena, your nurse. I'm going to admit you now." },
+      { tr: "Oh, good. I'm a little nervous, you know." },
+      { task: "Ask for his full name and date of birth.", tr: "What's your full name, and when were you born?" },
+      { tr: "Heinrich Wagner, born March twelfth, nineteen forty-four." },
+      { task: "Thank him and ask about his symptoms.", tr: "Thank you, Mr. Wagner. What symptoms are you having?" },
+      { tr: "For a week now I've been short of breath, especially at night. And my legs have gotten really swollen." },
+      { task: "Ask whether he has allergies, for example to medications.", tr: "Do you have any allergies, for example to medications?" },
+      { tr: "Yes, to penicillin. It gives me a rash." },
+      { task: "Say you'll note it in his chart right away.", tr: "I'll put that in your chart right away." },
+      { tr: "And my pills? I have them all in my bag." },
+      { task: "Ask for his doctor's medication list, or for the packages.", opts: [
+        { tr: "Do you have a medication list from your family doctor with you?" },
+        { tr: "Please show me the packages, and I'll write them down." }
+      ] },
+      { tr: "Yes, here it is. My family doctor printed it out for me last week." },
+      { tr: "Here: a water pill, a blood thinner, and something for my blood pressure." },
+      { tr: "Do I have to take the pills myself here?" },
+      { task: "Tell him the ward gives him his medications.", tr: "No, you'll get your medications from us here." },
+      { tr: "Good. And if I need something at night?" },
+      { task: "Show him the call button by the bed.", tr: "Then please press the call button here by the bed." },
+      { tr: "The red button here? I can remember that." },
+      { task: "Suggest he try it, or ask whether he needs anything else.", opts: [
+        { tr: "Exactly. Would you like to try it once?" },
+        { tr: "Exactly. Do you need anything else right now?" }
+      ] },
+      { tr: "Oh, a light is on over the door. So I know it works." },
+      { tr: "No, thank you, I have everything for now." },
+      { tr: "Thank you so much, you're very kind." },
+      { task: "Reply and say the doctor will be in shortly.", tr: "You're welcome. The doctor will be with you shortly." },
+      { tr: "Thank you." }
+    ]
+  },
+  "conv:pflege-telefon-angehoerige": {
+    title: "A phone call with a relative",
+    setting: "Ward Seven, afternoon. The phone rings: it's the daughter of Mr. Wagner, admitted yesterday. She wants to know everything, right now.",
+    closing: "On the phone you can't see who's calling, so before saying anything you check the chart for the people the patient named. That's Schweigepflicht, professional confidentiality, and in Germany breaking it is a criminal offense. The diagnosis is the doctor's to give, and \"Das bespricht der Arzt mit Ihnen\" is how a nurse says so without shutting the caller out. On the phone, Germans say goodbye with \"Auf Wiederhören\" (\"till we hear each other again\"), not \"Auf Wiedersehen\".",
+    turns: [
+      { tr: "Hello, is this Ward Seven? My father, Heinrich Wagner, was admitted to your ward yesterday." },
+      { task: "Confirm the ward and introduce yourself.", tr: "Yes, this is Ward Seven, you're speaking with Lena from nursing." },
+      { tr: "I'm so worried. How is he? What exactly is wrong with him?" },
+      { task: "Before giving any information: ask her name, or explain confidentiality.", opts: [
+        { tr: "May I have your name, please? I need to check whether your father listed you as a contact person." },
+        { tr: "I'm bound by confidentiality and can only give information to people your father has named." }
+      ] },
+      { tr: "Sabine Schneider, I'm his daughter." },
+      { tr: "I understand. I'm his daughter, Sabine Schneider. He listed me when he was admitted." },
+      { task: "Confirm her name is in the chart and say how the night went.", tr: "Thank you, Ms. Schneider, your name is in the chart. Your father had a quiet night." },
+      { tr: "Thank God. And the diagnosis? Is it his heart? Does he need surgery?" },
+      { task: "Refer the diagnosis to the doctor.", tr: "The doctor will discuss that with you. As a nurse, I can't tell you anything about the diagnosis." },
+      { tr: "And when can I talk to the doctor? I work until five p.m." },
+      { task: "Offer a callback today or a meeting tomorrow.", opts: [
+        { tr: "I'll ask Dr. Krüger to call you back today after five." },
+        { tr: "You can come in tomorrow at two p.m. to talk with the doctor. Does that work for you?" }
+      ] },
+      { tr: "That would be very kind. You have my cell number, I gave it yesterday at the admission." },
+      { tr: "Two o'clock works for me, I'll take the afternoon off." },
+      { tr: "Could you tell my father that I called?" },
+      { task: "Say you'll gladly pass it on.", tr: "Of course, I'll be glad to pass that on." },
+      { tr: "Thank you so much. And I'm sorry I was so impatient earlier." },
+      { task: "Reassure her and say goodbye the way you do on the phone.", tr: "No problem, I completely understand. Goodbye, Ms. Schneider." },
+      { tr: "Goodbye." }
+    ]
   }
 });

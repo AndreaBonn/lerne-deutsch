@@ -884,6 +884,7 @@
     "library-pfl": 3
   },
   "extra": {
-    "chat": 3
+    "chat": 3,
+    "conversations": 2
   }
 }
