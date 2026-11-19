@@ -411,3 +411,17 @@ describe("readings arriving with a level", () => {
     assert.deepEqual(Array.from(box.sandbox.READINGS, reading => reading.id), ["r1"]);
   });
 });
+
+describe("a level known only from the curriculum index", () => {
+  /* At startup a level may be registered with its metadata alone; its units
+     arrive later, file by file, through addUnits. */
+  test("addUnits gives units to a level registered without any", () => {
+    const box = swiezy();
+    const meta = poziom();
+    delete meta.units;
+    R(box).registerLevel(meta);
+    R(box).addUnits("A1", [jednostka("a1-u01")]);
+    assert.equal(R(box).registry.byCode.A1.units.length, 1);
+    assert.ok(R(box).getLesson("a1-u01-l1"));
+  });
+});
