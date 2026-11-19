@@ -54,7 +54,7 @@ Le tabelle sotto restano il dettaglio di ogni voce. Già fatte prima della notte
 - [ ] T4.2 3 scenari chat Pflege | dip: T1.21
 - [ ] T4.3 library-pfl.js 3 testi + F1 (library-pfl in --all) | dip: T1.21
 - [ ] T4.4 human in attesa dei moduli | dip: T4.1,T4.2,T4.3
-- [ ] T5.1 telc-formato.md con fonte
+- [x] T5.1 telc-formato.md con fonte
 - [ ] T5.2 EXAM_FORMATS e Cils.formato(sim) | dip: T5.1
 - [ ] T5.3 conforme con item per Teil | dip: T5.2
 - [ ] T5.4 esito fasceRicettive | dip: T5.2
