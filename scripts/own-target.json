@@ -3,8 +3,8 @@
     "PFL": {
       "cefrLabel": "B1-B2",
       "human": true,
-      "units": 7,
-      "lessons": 35
+      "units": 8,
+      "lessons": 40
     }
   },
   "units": {
@@ -671,6 +671,106 @@
             "cloze": 1,
             "order": 1,
             "gender": 1,
+            "listen": 1,
+            "speak": 1
+          },
+          "vocab": 0,
+          "dialogueLines": 0
+        }
+      }
+    },
+    "pfl-u08": {
+      "level": "PFL",
+      "lessonCount": 5,
+      "lessons": {
+        "pfl-u08-l1": {
+          "exercises": 12,
+          "exerciseTypes": {
+            "mcq": 1,
+            "conj": 1,
+            "fill": 1,
+            "cloze": 1,
+            "multi": 1,
+            "gender": 1,
+            "match": 1,
+            "order": 1,
+            "trans": 1,
+            "dialogue": 1,
+            "listen": 1,
+            "speak": 1
+          },
+          "vocab": 12,
+          "dialogueLines": 9
+        },
+        "pfl-u08-l2": {
+          "exercises": 12,
+          "exerciseTypes": {
+            "mcq": 1,
+            "conj": 1,
+            "fill": 1,
+            "cloze": 1,
+            "multi": 1,
+            "gender": 1,
+            "match": 1,
+            "order": 1,
+            "trans": 1,
+            "dialogue": 1,
+            "listen": 1,
+            "speak": 1
+          },
+          "vocab": 12,
+          "dialogueLines": 7
+        },
+        "pfl-u08-l3": {
+          "exercises": 12,
+          "exerciseTypes": {
+            "mcq": 1,
+            "conj": 1,
+            "fill": 1,
+            "cloze": 1,
+            "multi": 1,
+            "gender": 1,
+            "match": 1,
+            "order": 1,
+            "trans": 1,
+            "dialogue": 1,
+            "listen": 1,
+            "speak": 1
+          },
+          "vocab": 12,
+          "dialogueLines": 8
+        },
+        "pfl-u08-l4": {
+          "exercises": 12,
+          "exerciseTypes": {
+            "mcq": 1,
+            "conj": 1,
+            "fill": 1,
+            "cloze": 1,
+            "multi": 1,
+            "gender": 1,
+            "match": 1,
+            "order": 1,
+            "trans": 1,
+            "dialogue": 1,
+            "listen": 1,
+            "speak": 1
+          },
+          "vocab": 12,
+          "dialogueLines": 8
+        },
+        "pfl-u08-test": {
+          "exercises": 11,
+          "exerciseTypes": {
+            "mcq": 1,
+            "fill": 1,
+            "conj": 1,
+            "match": 1,
+            "multi": 1,
+            "cloze": 1,
+            "order": 1,
+            "gender": 1,
+            "trans": 1,
             "listen": 1,
             "speak": 1
           },
