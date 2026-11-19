@@ -22,7 +22,7 @@
        node scripts/check_lookup.mjs            # a report
        node scripts/check_lookup.mjs --gate     # exit code 1 below the threshold
    ============================================================ */
-import { readFileSync, readdirSync } from "node:fs";
+import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import vm from "node:vm";
@@ -56,11 +56,14 @@ for (const p of [
   "assets/js/lemma-morf.js",
   "assets/js/lemma.js",
   "data/core/curriculum-index.js",
-  ...readdirSync(join(ROOT, "data", "core")).filter(f => /^[abc]\d-\d+\.js$/.test(f)).sort()
-    .map(f => join("data", "core", f)),
-  "data/core/readings.js"
 ]) {
   vm.runInContext(readFileSync(join(ROOT, p), "utf8"), box, { filename: p });
+}
+
+const files = [...new Set(levels.flatMap(level => level.dataFiles || []))].sort();
+for (const file of [...files.filter(f => !f.startsWith("library-")), "readings.js"]) {
+  const path = join("data", "core", file);
+  vm.runInContext(readFileSync(join(ROOT, path), "utf8"), box, { filename: path });
 }
 
 /* We build the dictionary with the SAME code as the browser:

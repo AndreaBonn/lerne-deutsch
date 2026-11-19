@@ -101,11 +101,14 @@ function reviewResult({ root, id, languages, module = false }) {
   };
 }
 
-function humanErrors({ root, id, level }) {
-  if (!ADVANCED_LEVELS.includes(level)) return [];
+function humanErrors({ root, id, level, ownLevel }) {
+  if (!ADVANCED_LEVELS.includes(level) && !ownLevel?.human) return [];
   const path = join(root, 'specs/german-course/reviews', `${id}-human.md`);
   if (!existsSync(path)) return [`Missing human review: ${id}`];
-  return /^ESITO:[ \t]*\S[^\r\n]*$/m.test(readFileSync(path, 'utf8')) ? [] : [`Missing ESITO: result for ${id}`];
+  const content = readFileSync(path, 'utf8');
+  const errors = /^ESITO:[ \t]*\S[^\r\n]*$/m.test(content) ? [] : [`Missing ESITO: result for ${id}`];
+  if (ownLevel?.human && !/^REVISORE:[ \t]*\S/m.test(content)) errors.push(`Missing REVISORE: result for ${id}`);
+  return errors;
 }
 
 /* The hash comes from the browser's own assets/js/recordings.js, loaded in a
@@ -143,7 +146,7 @@ export function audioErrors({ root, unit, strings }) {
 }
 
 function stageErrors({ stage, context }) {
-  const { root, unit, target, id, course, level } = context;
+  const { root, unit, target, id, course, level, ownLevels } = context;
   if (stage === 'core') {
     return [...checkCore(unit, target), ...(level === target.level ? [] : [`Wrong level: ${level}, expected ${target.level}`])];
   }
@@ -151,7 +154,7 @@ function stageErrors({ stage, context }) {
     const file = course.unitFiles[id];
     return file && existsSync(join(root, 'data/i18n', stage, file)) ? [] : [`Missing ${stage} overlay for ${id}`];
   }
-  if (stage === 'human') return humanErrors({ root, id, level });
+  if (stage === 'human') return humanErrors({ root, id, level, ownLevel: ownLevels[level] });
   return audioErrors({ root, unit });
 }
 
@@ -176,11 +179,11 @@ function distributionErrors(course, target) {
 function curriculumErrors(root, target) {
   const path = join(root, 'specs/german-course/curriculum.md');
   if (!existsSync(path)) return ['Missing curriculum.md'];
-  const ids = new Set(readFileSync(path, 'utf8').match(/\b[a-c][12]-u\d+\b/gi) || []);
+  const ids = new Set(readFileSync(path, 'utf8').match(/\b[a-z][a-z0-9]*-u\d+\b/gi) || []);
   return Object.keys(target.units).filter(id => !ids.has(id)).map(id => `Curriculum missing ${id}`);
 }
 
-function checkUnits({ root, course, target, options, stages }) {
+function checkUnits({ root, course, target, options, stages, ownLevels = {} }) {
   const output = [];
   const languages = stages.filter(stage => LANGUAGES.includes(stage));
   const ids = options.unit ? [options.unit]
@@ -193,7 +196,7 @@ function checkUnits({ root, course, target, options, stages }) {
     const level = course.levels.find(item => item.units.some(unit => unit.id === id));
     const unit = level?.units.find(item => item.id === id);
     if (!unit || !target.units[id]) { output.push({ label: id, errors: ['Missing or unknown unit'] }); continue; }
-    const context = { root, course, id, unit, target: target.units[id], level: level.code,
+    const context = { root, course, id, unit, target: target.units[id], level: level.code, ownLevels,
       languages: languages.length ? languages : ['it'] };
     stages.forEach(stage => output.push({ label: `${id} ${stage}`,
       ...(stage === 'review' ? reviewResult({ root, id, languages: context.languages })
@@ -259,19 +262,35 @@ function main() {
   if (options.all && (ids.length || options.unit || options.level || options.curriculum || options.stage)) {
     throw new Error('--all takes no modules, unit, level, curriculum or stage');
   }
-  if (options.unit && !/^[a-c][12]-u\d+$/.test(options.unit)) throw new Error('Invalid unit ID');
+  if (options.unit && !/^[a-z][a-z0-9]*-u\d+$/.test(options.unit)) throw new Error('Invalid unit ID');
   /* --level is the phase gate: all units of the level, all explanation
      languages and their reviews, unless --stage narrows it. */
   const stages = options.stage ? options.stage.split(',') : options.level ? LEVEL_STAGES : ['core'];
   if (stages.some(stage => !STAGES.includes(stage))) throw new Error('Invalid stage');
   const root = resolve(options.root || ROOT);
   const target = JSON.parse(readFileSync(join(root, 'scripts/porting-target.json'), 'utf8'));
-  const results = options.all ? checkAll({ root, target, course: loadCourse(root),
-    checks: { curriculumErrors, checkUnits, checkModules, reviewResult } })
+  const ownPath = join(root, 'scripts/own-target.json');
+  const own = existsSync(ownPath) ? JSON.parse(readFileSync(ownPath, 'utf8')) : { levels: {}, units: {} };
+  const ownLevels = own.levels || {};
+  const course = loadCourse(root);
+  for (const [code, level] of Object.entries(ownLevels)) {
+    if (course.levels.some(item => item.code === code) || Object.values(own.units || {}).some(unit => unit.level === code)) {
+      target.levels[code] = level;
+    }
+  }
+  target.units = target.units || {};
+  for (const [id, unit] of Object.entries(own.units || {})) {
+    /* An own unit must never shadow an upstream one in silence. */
+    if (target.units[id]) throw new Error(`own-target.json redefines upstream unit ${id}`);
+    target.units[id] = unit;
+  }
+  const checkOwnUnits = args => checkUnits({ ...args, ownLevels });
+  const results = options.all ? checkAll({ root, target, course,
+    checks: { curriculumErrors, checkUnits: checkOwnUnits, checkModules, reviewResult } })
     : options.curriculum ? [{ label: 'curriculum', errors: curriculumErrors(root, target) }] : [];
   if (!options.all && (!options.curriculum || options.stage || options.unit)) {
-    results.push(...(ids.length ? checkModules({ root, course: loadCourse(root), target, ids, stages })
-      : checkUnits({ root, course: loadCourse(root), target, options, stages })));
+    results.push(...(ids.length ? checkModules({ root, course, target, ids, stages })
+      : checkOwnUnits({ root, course, target, options, stages })));
   }
   results.forEach(result => console.log(formatResult(result)));
   if (results.some(result => result.errors.length)) process.exitCode = 1;

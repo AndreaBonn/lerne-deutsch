@@ -81,11 +81,10 @@ function need(name) {
   return v;
 }
 
-const lessonFiles = readdirSync(join(ROOT, "data", "core"))
-  .filter((f) => /^[abc]\d-\d+\.js$/.test(f))
-  .sort();
-
-["curriculum-index.js", ...lessonFiles, "conversations.js", "grammar-reference.js",
+run(join("data", "core", "curriculum-index.js"));
+const files = [...new Set(levels.flatMap(level => level.dataFiles || []))].sort();
+const lessonFiles = files.filter(f => !f.startsWith("library-"));
+[...lessonFiles, "conversations.js", "grammar-reference.js",
   "phonetics.js", "readings.js", "writing.js", "interference.js", "cils.js", "frequenza.js"]
   .forEach((f) => run(join("data", "core", f)));
 
@@ -95,10 +94,7 @@ const ILE_KROTKICH = wszystkieCzytanki.length;
 
 /* The library, one file per level: it does not load at startup in the
    browser either, and here it has to be asked for by name. */
-readdirSync(join(ROOT, "data", "core"))
-  .filter((f) => /^library-[abc]\d\.js$/.test(f))
-  .sort()
-  .forEach((f) => run(join("data", "core", f)));
+files.filter(f => f.startsWith("library-")).forEach(f => run(join("data", "core", f)));
 
 const czytanki = wszystkieCzytanki.slice(0, ILE_KROTKICH);
 const biblioteka = wszystkieCzytanki.slice(ILE_KROTKICH);

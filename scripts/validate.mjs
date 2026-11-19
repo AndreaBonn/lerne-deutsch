@@ -4,7 +4,7 @@
    It checks: duplicate ids, missing fields, exercise correctness, whether
    the mcq answer agrees with the number of options, and the statistics.
    ============================================================ */
-import { readFileSync, readdirSync } from "node:fs";
+import { readFileSync, existsSync } from "node:fs";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, join } from "node:path";
 import vm from "node:vm";
@@ -88,10 +88,15 @@ const LANG = process.argv[2] || "it";
 
 run("assets/js/i18n.js");
 run("assets/js/i18n-merge.js");
-const dataFiles = readdirSync(join(ROOT, "data", "core"))
-  .filter(f => /^[abc]\d-\d+\.js$/.test(f))
-  .sort();
-const ALL = ["curriculum-index.js", ...dataFiles, "conversations.js", "grammar-reference.js", "phonetics.js", "readings.js", "writing.js"];
+run(join("data", "core", "curriculum-index.js"));
+const ownPath = join(ROOT, "scripts", "own-target.json");
+const own = existsSync(ownPath) ? JSON.parse(readFileSync(ownPath, "utf8")) : { levels: {} };
+for (const [code, level] of Object.entries(own.levels || {})) {
+  if (!byCode[code]) sandbox.LINGUAI.registerLevel({ code, ...level });
+}
+const files = [...new Set(levels.flatMap(level => level.dataFiles || []))].sort();
+const dataFiles = files.filter(f => !f.startsWith("library-"));
+const ALL = [...dataFiles, "conversations.js", "grammar-reference.js", "phonetics.js", "readings.js", "writing.js"];
 /* Loaded but NOT overlaid: the free-conversation scenes have no student-language
    layer at all. Their titles live in the interface dictionaries, because every
    other field is Italian spoken by the partner. They are read here for one
@@ -104,9 +109,7 @@ ALL.forEach(f => run(join("data", "core", f)));
    below — and the tag check is one of them, so an invented topic id would
    reach the student's mistake notebook as a raw string. That is exactly how
    three of them got in. */
-const biblioteka = readdirSync(join(ROOT, "data", "core"))
-  .filter(f => /^library-[abc]\d\.js$/.test(f))
-  .sort();
+const biblioteka = files.filter(f => f.startsWith("library-"));
 /* Which text came from which library file. The length check below applies to
    these and not to the short readings of `readings.js`, and the difference
    cannot be guessed from the data: it is where the text is declared. */
@@ -130,7 +133,7 @@ const neutralneDane = JSON.parse(JSON.stringify({
   chat: sandbox.CHAT_SCENARIOS || []
 }));
 
-ALL.forEach(f => run(join("data", "i18n", LANG, f)));
+["curriculum-index.js", ...ALL].forEach(f => run(join("data", "i18n", LANG, f)));
 /* …and the library's own overlays, by the same names as its neutral files.
    Without them every long text reports a missing title, which is what this
    gate is for: the same complaint a student would see as an empty heading. */

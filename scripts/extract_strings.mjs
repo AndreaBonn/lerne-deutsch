@@ -9,7 +9,7 @@
 
    Usage:  node scripts/extract_strings.mjs
    ============================================================ */
-import { readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import vm from "node:vm";
@@ -50,7 +50,8 @@ function run(file) {
 }
 
 run("curriculum-index.js");
-readdirSync(CORE).filter(f => /^[abc]\d-\d+\.js$/.test(f)).sort().forEach(run);
+const files = [...new Set(levels.flatMap(level => level.dataFiles || []))].sort();
+files.filter(f => !f.startsWith("library-")).forEach(run);
 run("conversations.js");
 run("phonetics.js");
 run("readings.js");
@@ -58,7 +59,7 @@ run("readings.js");
    a text added to a level that nobody remembered to name here would have no
    recordings at all, and the course would fall back to system synthesis
    without saying a word about it. */
-readdirSync(CORE).filter(f => /^library-[abc]\d\.js$/.test(f)).sort().forEach(run);
+files.filter(f => f.startsWith("library-")).forEach(run);
 run("interference.js");
 run("cils.js");
 

@@ -156,7 +156,7 @@ function main() {
   const options = parseOptions({ args: process.argv.slice(2), values: ['root', 'unit', 'module', 'file', 'lang', 'seed'], flags: ['dry-run', 'help'] });
   if (options.help) { console.log(HELP); return; }
   if ([options.file, options.unit, options.module].filter(Boolean).length !== 1) throw new Error('Choose exactly one file, unit or module');
-  if (!options.file && !options.module && !/^[a-c][12]-u\d+$/.test(options.unit || '')) throw new Error('Invalid or missing unit ID');
+  if (!options.file && !options.module && !/^[a-z][a-z0-9]*-u\d+$/.test(options.unit || '')) throw new Error('Invalid or missing unit ID');
   if (!LANGUAGES.includes(options.lang)) throw new Error('Invalid or missing language');
   const seed = options.seed === undefined ? DEFAULT_SEED : Number(options.seed);
   if (!Number.isInteger(seed) || seed < 0 || seed > MAX_SEED) throw new Error('Invalid seed');

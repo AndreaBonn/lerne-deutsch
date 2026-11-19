@@ -22,6 +22,13 @@ export function moduleDefinition(id, course, target) {
     items = readings.filter(item => levels.includes(item.cefr) || levels.includes(item.id?.match(/(?:^|[-_])([abc][12])(?:[-_]|$)/i)?.[1]?.toUpperCase()));
     count = id === 'readings' ? (secondary.readings || 24) : 8;
     files = ['readings.js']; prefix = 'read';
+  } else if (id.startsWith('library-') && target.levels?.[id.slice(8).toUpperCase()]?.cefrLabel) {
+    const code = id.slice(8);
+    // A pseudo-level groups content whose CEFR remains a real proficiency level.
+    levels = target.levels[code.toUpperCase()].cefrLabel.split('-');
+    items = course.library.filter(item => item.id?.split(/[-_]/).includes(code));
+    count = secondary[id] ?? 1;
+    files = [`library-${code}.js`]; prefix = 'read';
   } else if (id === 'library' || /^library-[abc][12]$/.test(id)) {
     levels = id === 'library' ? LEVELS : [id.slice(-2).toUpperCase()];
     items = course.library.filter(item => levels.includes(item.cefr) || levels.includes(item.id?.match(/(?:^|[-_])([abc][12])(?:[-_]|$)/i)?.[1]?.toUpperCase()));
