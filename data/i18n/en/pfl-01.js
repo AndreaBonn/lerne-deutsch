@@ -15,7 +15,7 @@ LINGUAI.addStrings("en", {
     objectives: [
       "introduce yourself to a patient with first name, last name and role",
       "check the patient's identity (name, date of birth, ID band)",
-      "always use Sie with patients and family members",
+      "always use Sie with adult patients and family members",
       "keep the conjugated verb in second position even when the sentence starts with jetzt, gleich, heute"
     ],
     theory: [
@@ -25,10 +25,10 @@ LINGUAI.addStrings("en", {
       },
       {
         h: "The verb in second position",
-        p: "In a main clause the conjugated verb is <strong>in second place</strong>. If you start with a time adverb, the subject moves <strong>after</strong> the verb: <em>Jetzt bringe ich Sie auf Ihr Zimmer. Gleich mache ich mit Ihnen das Aufnahmegespräch.</em> The same goes for questions with a question word (<em>Wie heißen Sie?</em>); in a yes/no question the verb comes first (<em>Haben Sie noch Fragen?</em>). With a modal, the modal is in second place and the infinitive goes at the end: <em>Darf ich Ihnen kurz ein paar Fragen stellen?</em>"
+        p: "In a main clause the conjugated verb is <strong>in second place</strong>. If you start with a time adverb, the subject moves <strong>after</strong> the verb: <em>Jetzt bringe ich Sie auf Ihr Zimmer. Gleich mache ich mit Ihnen das Aufnahmegespräch.</em> The same goes for questions with a question word (<em>Wie heißen Sie?</em>); in a yes/no question the verb comes first (<em>Haben Sie noch Fragen?</em>). With a modal, the modal is in second place and the infinitive goes at the end: <em>Ich möchte Ihnen kurz ein paar Fragen stellen.</em> In a yes/no question the modal moves to first place and the infinitive still goes at the end: <em>Darf ich Ihnen kurz ein paar Fragen stellen?</em>"
       },
       {
-        contrast: "English has a single <em>you</em>, and in American hospitals first names are common: patients are often called by their first name, and your badge may say just “Elena, RN”. German splits <em>you</em> in two. With patients and family members you <strong>always use Sie</strong> and their last name (<em>Herr Brandt</em>, never just “Klaus”); <em>du</em> is for coworkers, if your unit uses it. Sie also changes the possessive and the dative: <em>Ihre Pflegefachkraft, Ihr Zimmer, Kann ich Ihnen helfen?</em>, all capitalized. The word order is the other trap for English speakers. English keeps subject before verb even after an adverb (“Now I'll take you to your room”), so “Jetzt ich bringe Sie” comes out naturally, and it is wrong. German puts the verb second: <em>Jetzt bringe ich Sie</em>."
+        contrast: "English has a single <em>you</em>, and in American hospitals first names are common: patients are often called by their first name, and your badge may say just “Elena, RN”. German splits <em>you</em> in two. With adult patients and family members you <strong>always use Sie</strong> and their last name (<em>Herr Brandt</em>, never just “Klaus”); <em>du</em> is for coworkers, if your unit uses it. Sie also changes the possessive and the dative: <em>Ihre Pflegefachkraft, Ihr Zimmer, Kann ich Ihnen helfen?</em>, all capitalized. The word order is the other trap for English speakers. English keeps subject before verb even after an adverb (“Now I'll take you to your room”), so “Jetzt ich bringe Sie” comes out naturally, and it is wrong. German puts the verb second: <em>Jetzt bringe ich Sie</em>."
       },
       {
         trap: "<em>Krankenschwester</em> is still used in everyday speech, but it is no longer the name of the profession: since 2020 the title is <em>Pflegefachfrau</em> / <em>Pflegefachmann</em>, and <em>Pflegefachkraft</em> is the gender-neutral term. To “admit” a patient is <em>stationär aufnehmen</em> (<em>Wir nehmen Sie heute stationär auf</em>), and <em>die Aufnahme</em> is both the admission and the admissions office. Two false friends: <em>die Station</em> is the hospital unit or ward (“auf Station”), not the nurses' station; and <em>die Ambulanz</em> is the hospital outpatient clinic, not an ambulance, which is <em>der Krankenwagen</em> or <em>der Rettungswagen</em>."
@@ -152,7 +152,7 @@ LINGUAI.addStrings("en", {
       },
       {
         tr: "May I ask you a few quick questions?",
-        why: "In <i>Darf</i> the final <b>r</b> is barely there; in <i>Ihnen</i> the <b>h</b> is silent and makes the <b>i</b> long; in <i>stellen</i> the initial <b>st</b> is [ʃt], like “sht”."
+        why: "In <i>Darf</i> the <b>r</b> after the vowel is usually vocalized and barely there; in <i>Ihnen</i> the <b>h</b> is silent and makes the <b>i</b> long; in <i>stellen</i> the initial <b>st</b> is [ʃt], like “sht”."
       }
     ]
   },
@@ -175,10 +175,10 @@ LINGUAI.addStrings("en", {
         p: "<strong>helfen</strong> (to help) and <strong>fehlen</strong> (to be missing) also take the dative: <em>Kann ich Ihnen helfen?</em>, <em>Was fehlt Ihnen?</em> The second is the classic way to ask “what seems to be the problem?”. The dative pronouns to know by heart: <em>mir, dir, ihm, ihr, uns, euch, ihnen</em> and formal <em>Ihnen</em>."
       },
       {
-        contrast: "English puts the sick person in the subject slot: <em>I feel sick, I'm dizzy, my head hurts</em>. German moves that person into the dative: <em>Mir ist übel</em>, literally “to me is sick”. Translating word for word gives <em>Ich bin übel</em>, which does not mean “I am sick” at all; to a German ear it sounds like “I am nasty”. Likewise <em>Ich bin schwindelig</em> is wrong: it is <em>Mir ist schwindelig</em>. English “Can I help you?” takes a direct object, but <em>helfen</em> takes the dative: <em>Kann ich Ihnen helfen?</em>, not “Kann ich Sie helfen?”. One more difference: English says <em>a headache</em>, singular; German patients almost always use the plural: <em>Ich habe Kopfschmerzen</em>."
+        contrast: "English puts the sick person in the subject slot: <em>I feel sick, I'm dizzy, my head hurts</em>. German moves that person into the dative: <em>Mir ist übel</em>, literally “to me is sick”. Translating word for word gives <em>Ich bin übel</em>, which does not mean “I am sick” at all; to a German ear it sounds like “I am nasty”. Likewise, say <em>Mir ist schwindelig</em>: <em>Ich bin schwindelig</em> is heard in casual speech, but it is not the standard form. English “Can I help you?” takes a direct object, but <em>helfen</em> takes the dative: <em>Kann ich Ihnen helfen?</em>, not “Kann ich Sie helfen?”. One more difference: English says <em>a headache</em>, singular; German patients almost always use the plural: <em>Ich habe Kopfschmerzen</em>."
       },
       {
-        trap: "<em>Wo tut es Sie weh?</em> is wrong: with <em>wehtun</em> the person is in the dative, <em>Ihnen</em>. Do not read <em>Mir ist schlecht</em> as a vague “I feel bad”: in speech it almost always means nausea, like <em>Mir ist übel</em>. If the patient says it, ask: <em>Ist Ihnen übel? Müssen Sie erbrechen?</em> And English <em>sick</em> is not one German word: “I'm sick” in the sense of “I'm ill” is <em>Ich bin krank</em>; “I feel sick to my stomach” is <em>Mir ist übel</em>. Last, <em>der Schwindel</em> is dizziness, but it also means “scam”; on the unit it is always the first meaning."
+        trap: "<em>Wo tut es Sie weh?</em> is wrong: with <em>wehtun</em> the person is in the dative, <em>Ihnen</em>. <em>Mir ist schlecht</em> can mean nausea, like <em>Mir ist übel</em>, but also feeling unwell in general, so ask what exactly the patient feels. If the patient says it, ask: <em>Ist Ihnen übel? Müssen Sie erbrechen?</em> And English <em>sick</em> is not one German word: “I'm sick” in the sense of “I'm ill” is <em>Ich bin krank</em>; “I feel sick to my stomach” is <em>Mir ist übel</em>. Last, <em>der Schwindel</em> is dizziness, but it also means “scam”; on the unit it is always the first meaning."
       },
       {
         tip: "Have the patient point to the spot: <em>Können Sie es mir zeigen?</em> It is faster and more precise than any description, and it works even when the patient uses different words from yours. Then ask since when: <em>Seit wann?</em>"
@@ -265,7 +265,7 @@ LINGUAI.addStrings("en", {
       },
       {
         q: "Translate (to the patient): “Do you feel dizzy?”",
-        why: "<i>Ist Ihnen schwindelig?</i> With <i>sein</i> and the dative, not with <i>haben</i>, and not “Sind Sie schwindelig”. It is also spelled <i>schwindlig</i>."
+        why: "<i>Ist Ihnen schwindelig?</i> With <i>sein</i> and the dative, not with <i>haben</i>, the standard form, rather than the colloquial “Sind Sie schwindelig”. It is also spelled <i>schwindlig</i>."
       },
       {
         q: "A patient presses the call button.",
@@ -305,10 +305,10 @@ LINGUAI.addStrings("en", {
       },
       {
         h: "The Perfekt of the medical history",
-        p: "What has already happened is told in the <strong>Perfekt</strong>: auxiliary in second position, participle at the end. Most verbs use <strong>haben</strong>: <em>Haben Sie Ihre Tabletten genommen? Ich habe nichts gegessen. Ich habe das Antibiotikum nicht vertragen.</em> Verbs of motion or change of state use <strong>sein</strong>: <em>Sind Sie gestürzt?</em> In separable verbs <em>ge-</em> goes after the prefix: <em>einweisen</em> → <em>eingewiesen</em>, <em>einnehmen</em> → <em>eingenommen</em>. With <em>sein</em> and <em>haben</em> themselves the Präteritum is more common: <em>Ich hatte eine Operation. Ich war im Krankenhaus.</em>"
+        p: "What has already happened is told in the <strong>Perfekt</strong>: auxiliary in second position, participle at the end. Most verbs use <strong>haben</strong>: <em>Haben Sie Ihre Tabletten genommen? Ich habe nichts gegessen. Ich habe das Antibiotikum nicht vertragen.</em> Intransitive verbs of movement from place to place or of change of state usually use <strong>sein</strong>: <em>Sind Sie gestürzt?</em> This is a tendency, not a law: the verb and its meaning decide (<em>Ich habe getanzt</em>), so learn the auxiliary together with the verb. In separable verbs <em>ge-</em> goes after the prefix: <em>einweisen</em> → <em>eingewiesen</em>, <em>einnehmen</em> → <em>eingenommen</em>; if the base verb already has an inseparable prefix, there is no <em>ge-</em>: <em>vorbereiten</em> → <em>vorbereitet</em>. With <em>sein</em> and <em>haben</em> themselves the Präteritum is more common: <em>Ich hatte eine Operation. Ich war im Krankenhaus.</em>"
       },
       {
-        contrast: "American English asks about the past with the simple past: <em>Did you take your pills today? Did you fall recently?</em> German, in conversation, uses the <strong>Perfekt</strong> for the same questions: <em>Haben Sie heute schon Ihre Tabletten genommen? Sind Sie in letzter Zeit gestürzt?</em> It looks like the English present perfect, but it does not carry the English meaning of “up to now”: it is simply the spoken past. Two things are new for English speakers. First, the participle goes <strong>to the very end</strong>, with everything else in between. Second, English always uses <em>have</em>, while German uses <em>sein</em> for motion and change of state: “I have fallen” is <em>ich bin gestürzt</em>, never “ich habe gestürzt”. When in doubt: a transitive verb with a direct object takes <em>haben</em>."
+        contrast: "American English asks about the past with the simple past: <em>Did you take your pills today? Did you fall recently?</em> German, in conversation, uses the <strong>Perfekt</strong> for the same questions: <em>Haben Sie heute schon Ihre Tabletten genommen? Sind Sie in letzter Zeit gestürzt?</em> It looks like the English present perfect, but it does not carry the English meaning of “up to now”: it is simply the spoken past. Two things are new for English speakers. First, in a main clause the participle goes <strong>to the very end</strong>, with everything else in between. Second, English always uses <em>have</em>, while German uses <em>sein</em> for intransitive verbs of movement and change of state: “I have fallen” is <em>ich bin gestürzt</em>, never “ich habe gestürzt” in the sense of falling. When in doubt: a transitive verb with a direct object takes <em>haben</em>."
       },
       {
         trap: "The classic false friend for English speakers: <em>bekommen</em> means “to get, to receive”, not “to become” (that is <em>werden</em>). <em>Sie bekommen eine Infusion</em> means “you are getting an IV”, given by the staff; to “take” a medication is <em>nehmen</em> or, more formally, <em>einnehmen</em>. <em>Die Allergie</em> looks like English, but the stress falls on the last syllable, <em>Aller-<b>gie</b></em>, and the <b>g</b> is hard, as in “go”, never as in “allergy”. <em>Vertragen</em> works like this: <em>Ich vertrage kein Penicillin</em>, “I can't tolerate penicillin”. Last, <em>die Einweisung</em> has two meanings: the doctor's referral for admission and, on the unit, training on a device (<em>Geräteeinweisung</em>)."
@@ -319,7 +319,7 @@ LINGUAI.addStrings("en", {
     ],
     grammar: {
       title: "Perfekt with haben and with sein",
-      note: "Auxiliary in <b>second position</b> (or first in a yes/no question), participle <b>at the end</b>. <b>sein</b> with verbs of motion and change of state, <b>haben</b> with almost all the others.",
+      note: "Auxiliary in <b>second position</b> (or first in a yes/no question), participle <b>at the end</b>. usually <b>sein</b> with intransitive verbs of movement and change of state, <b>haben</b> with almost all the others.",
       table: {
         head: ["infinitive", "sentence in the Perfekt", "note"],
         rows: [
@@ -366,7 +366,7 @@ LINGUAI.addStrings("en", {
     ],
     culture: {
       title: "A German view: the Medikationsplan",
-      text: "<p>In Germany anyone who regularly takes at least three medications is entitled to a <i>Medikationsplan</i> on a single nationwide form, filled out by the family doctor, with a barcode that the pharmacy and the hospital can scan. Many patients carry it in their wallet, and many simply call it <i>Medikamentenplan</i> or <i>mein Zettel</i>.</p><p>On admission the plan does not replace your question: always ask whether the patient takes anything that is not on it, such as an over-the-counter product or an ointment. The answer goes on the medical history form, and the decision about what to continue belongs to the physician.</p>"
+      text: "<p>In Germany anyone with statutory health insurance who takes at least three systemically acting prescription drugs at the same time for at least 28 days is entitled to a <i>Medikationsplan</i> on a single nationwide form, filled out by the family doctor, with a barcode that the pharmacy and the hospital can scan. Many patients carry it in their wallet, and many simply call it <i>Medikamentenplan</i> or <i>mein Zettel</i>.</p><p>On admission the plan does not replace your question: always ask whether the patient takes anything that is not on it, such as an over-the-counter product or an ointment. The answer goes on the medical history form, and the decision about what to continue belongs to the physician.</p>"
     },
     exercises: [
       {
@@ -396,7 +396,7 @@ LINGUAI.addStrings("en", {
           "Hatten Sie schon einmal eine Operation?",
           "Haben Sie schon einmal eine Operation gehabt worden?"
         ],
-        why: "In a W- question the verb comes right after the question word: <i>Welche Medikamente nehmen Sie</i>. The last one mixes Perfekt and passive: you say <i>Hatten Sie</i> or <i>Haben Sie ... gehabt</i>."
+        why: "In a W- question the verb comes right after the question phrase, which can be more than one word: <i>Welche Medikamente nehmen Sie</i>. The last one mixes Perfekt and passive: you say <i>Hatten Sie</i> or <i>Haben Sie ... gehabt</i>."
       },
       {
         q: "Complete the sentence in the Perfekt.",
@@ -450,17 +450,17 @@ LINGUAI.addStrings("en", {
     theory: [
       {
         h: "Two languages on the same unit",
-        p: "Every clinical concept has two names. <strong>Fachsprache</strong>, with Latin or Greek roots, is used with physicians, at shift handover and in documentation: <em>Hypertonie, Dyspnoe, Obstipation, Emesis</em>. <strong>Laiensprache</strong>, made of German words, is used with patients and family members: <em>Bluthochdruck, Atemnot, Verstopfung, Erbrechen</em>. A nurse switches between them dozens of times a day, sometimes in the same sentence: <em>Er hat eine Hypertonie</em> to the physician, <em>Sie haben Bluthochdruck</em> to the patient."
+        p: "Many clinical concepts have two names. <strong>Fachsprache</strong>, with Latin or Greek roots, is used with physicians, at shift handover and in documentation: <em>Hypertonie, Dyspnoe, Obstipation, Emesis</em>. <strong>Laiensprache</strong>, made of German words, is used with patients and family members: <em>Bluthochdruck, Atemnot, Verstopfung, Erbrechen</em>. A nurse switches between them dozens of times a day, sometimes in the same sentence: <em>Er hat eine Hypertonie</em> to the physician, <em>Sie haben Bluthochdruck</em> to the patient."
       },
       {
         h: "The patient's words are compounds",
         p: "Laiensprache builds nouns by joining simple words: <em>Blut + hoch + Druck</em> = <em>der Bluthochdruck</em>, <em>Zucker + Krankheit</em> = <em>die Zuckerkrankheit</em>, <em>Atem + Not</em> = <em>die Atemnot</em>. <strong>The last element decides the article</strong>: <em>der Druck</em>, so <em>der Bluthochdruck</em>; <em>die Krankheit</em>, so <em>die Zuckerkrankheit</em>; <em>das Gespräch</em>, so <em>das Aufnahmegespräch</em>. Patients often shorten it further: <em>Ich habe Zucker</em> means “I have diabetes”."
       },
       {
-        contrast: "In American hospitals the Latin layer is mostly written, not spoken: a nurse charts “hypertension” but says “high blood pressure”, even to the physician, and “short of breath” rather than “dyspneic”. German works the other way around. At handover and on rounds the Latin terms are <strong>expected</strong>: <em>Der Patient hat eine bekannte Hypertonie</em> is normal spoken German between professionals, and only plain words can sound unprofessional there. So you need both columns, and the Latin one is less of a gift than it seems: <em>Zephalgie</em> (headache) or <em>Emesis</em> (vomiting) are rare in American speech. The other new thing is gender. English has none, but in German every term has its article, and the two registers often differ: <em>die Hypertonie</em> but <em>der Bluthochdruck</em>, <em>das Abdomen</em> but <em>der Bauch</em>. Learn each word with <em>der/die/das</em> from the start."
+        contrast: "In American hospitals the Latin layer is mostly written, not spoken: a nurse charts “hypertension” but says “high blood pressure”, even to the physician, and “short of breath” rather than “dyspneic”. German works the other way around. At handover and on rounds the Latin terms are <strong>expected</strong>: <em>Der Patient hat eine bekannte Hypertonie</em> is normal spoken German between professionals, and the more precise choice there; plain words are not a mistake, but the Latin term is what colleagues usually use. So you need both columns, and the Latin one is less of a gift than it seems: <em>Zephalgie</em> (headache) or <em>Emesis</em> (vomiting) are rare in American speech. The other new thing is gender. English has none, but in German every term has its article, and the two registers often differ: <em>die Hypertonie</em> but <em>der Bluthochdruck</em>, <em>das Abdomen</em> but <em>der Bauch</em>. Learn each word with <em>der/die/das</em> from the start."
       },
       {
-        trap: "<em>Hypertonie</em> is not English “hypertonia”: in English that word means increased muscle tone, while in German <em>Hypertonie</em> on a chart means high blood pressure. One letter changes everything: <em>Hypotonie</em> is low blood pressure, and in a quick spoken handover the two are easy to confuse, so when in doubt ask for confirmation. <em>Obstipation</em> looks like a stranger to English speakers, but it is simply constipation; the patient says <em>Verstopfung</em>. And <em>Diarrhö</em> is also spelled <em>Diarrhoe</em>: both spellings are correct, the English “Diarrhea” is not."
+        trap: "<em>Hypertonie</em> is not English “hypertonia”: in English that word means increased muscle tone, while in German <em>Hypertonie</em> on a chart normally means high blood pressure (<em>arterielle Hypertonie</em>). German also uses the word for raised muscle tone, in neurology, so the context decides. One letter changes everything: <em>Hypotonie</em> is low blood pressure, and in a quick spoken handover the two are easy to confuse, so when in doubt ask for confirmation. <em>Obstipation</em> looks like a stranger to English speakers, but it is simply constipation; the patient says <em>Verstopfung</em>. And <em>Diarrhö</em> is also spelled <em>Diarrhoe</em>: both spellings are correct, the English “Diarrhea” is not."
       },
       {
         tip: "When you explain to a patient what the physician said, repeat the technical word once and then translate it: <em>Das ist eine Hypertonie, also Bluthochdruck.</em> The patient will find it again in the discharge letter and will know what it means."
@@ -512,7 +512,7 @@ LINGUAI.addStrings("en", {
       "Nausea yes, no emesis. Also diarrhea since yesterday.",
       "Ms. Marin, what did the doctor say? I don't understand these words.",
       "Don't worry, Mr. Brandt. He just asked whether you feel nauseous and whether you have vomited.",
-      "Oh, I see. And what is a Hypertonie?",
+      "Oh, I see. And what is a “Hypertonie”?",
       "That's high blood pressure. You already know about that."
     ],
     exercises: [
@@ -597,7 +597,7 @@ LINGUAI.addStrings("en", {
       {
         q: "The patient says “I feel nauseous.” Fill in: “___ ist übel.”",
         hint: "ich in the dative",
-        why: "<b>Mir</b>: <i>Mir ist übel</i>, with <i>sein</i> and the dative. “Ich bin übel” is not said."
+        why: "<b>Mir</b>: <i>Mir ist übel</i>, with <i>sein</i> and the dative. “Ich bin übel” does not mean feeling nauseous."
       },
       {
         tr: "The Perfekt of einnehmen, all persons.",

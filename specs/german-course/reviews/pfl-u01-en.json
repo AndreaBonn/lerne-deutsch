@@ -1,0 +1,33 @@
+{
+  "bundleHash": "f8d5527918a0252f707ce5a0b261dadc59d3cbb1ad8fc65bf7098b608ca58b57",
+  "findings": [
+    {
+      "kind": "Spiegazione culturale e sanitaria",
+      "msg": "La frase attribuisce il diritto al Medikationsplan a chiunque assuma almeno tre farmaci, omettendo condizioni rilevanti. Precisare che, per gli assicurati del sistema sanitario pubblico, il diritto riguarda in particolare l’assunzione contemporanea di almeno tre farmaci ad azione sistemica per almeno 28 giorni.",
+      "path": "merged.lessons[2].culture.text"
+    },
+    {
+      "kind": "Registro",
+      "msg": "La regola «always use Sie» è troppo assoluta: con bambini, adolescenti o pazienti che concordano un diverso appellativo può essere appropriato du. Insegnare Sie come scelta iniziale rispettosa con pazienti adulti sconosciuti, adattandosi poi alla persona e al contesto.",
+      "path": "merged.lessons[0].theory[2].contrast"
+    },
+    {
+      "kind": "Registro",
+      "msg": "Anche l’obiettivo prescrive «always use Sie» con tutti i pazienti e familiari. Riformularlo come scelta iniziale con adulti sconosciuti, coerentemente con la correzione della spiegazione sul registro.",
+      "path": "merged.lessons[0].objectives[2]"
+    },
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "«The participle goes to the very end» è presentato come regola senza distinguere la frase principale dalla subordinata, dove il participio precede normalmente l’ausiliare finale: «weil ich meine Tabletten genommen habe». Circoscrivere la spiegazione alle frasi principali illustrate.",
+      "path": "merged.lessons[2].theory[2].contrast"
+    },
+    {
+      "kind": "Spiegazione del registro",
+      "msg": "«Every clinical concept has two names» e la rigida associazione tra termini tecnici, professionisti e parole comuni, pazienti, generalizzano eccessivamente: esistono più denominazioni e i registri si sovrappongono. Presentare le coppie come esempi e spiegare che la scelta dipende dall’interlocutore e dalla situazione.",
+      "path": "merged.lessons[3].theory[0].p"
+    }
+  ],
+  "lang": "en",
+  "unit": "pfl-u01",
+  "verdict": "fail"
+}

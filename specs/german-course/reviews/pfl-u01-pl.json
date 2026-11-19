@@ -1,0 +1,13 @@
+{
+  "bundleHash": "f9a7902c763e8bafccf1f63219580e4de81eb63b30b1e9e3418b16abd1a040dd",
+  "findings": [
+    {
+      "kind": "chiave di risposta",
+      "msg": "La frase polacca contiene «już» («già»), ma la seconda risposta accettata omette «schon» e non ne conserva il significato. Rimuovere «Haben Sie heute etwas gegessen» oppure modificare il testo polacco eliminando «już».",
+      "path": "merged.lessons[2].exercises[7].a[1]"
+    }
+  ],
+  "lang": "pl",
+  "unit": "pfl-u01",
+  "verdict": "fail"
+}

@@ -15,7 +15,7 @@ LINGUAI.addStrings("es", {
     objectives: [
       "presentarse al paciente con nombre, apellido y función",
       "comprobar la identidad del paciente (nombre, fecha de nacimiento, pulsera)",
-      "usar siempre el Sie con pacientes y familiares",
+      "usar siempre el Sie con pacientes adultos y familiares",
       "mantener el verbo conjugado en segunda posición también cuando la frase empieza con jetzt, gleich, heute"
     ],
     theory: [
@@ -25,10 +25,10 @@ LINGUAI.addStrings("es", {
       },
       {
         h: "El verbo en segunda posición",
-        p: "En la oración principal el verbo conjugado va <strong>en segundo lugar</strong>. Si al principio pones un adverbio de tiempo, el sujeto pasa <strong>detrás</strong> del verbo: <em>Jetzt bringe ich Sie auf Ihr Zimmer. Gleich mache ich mit Ihnen das Aufnahmegespräch.</em> En la pregunta con partícula interrogativa pasa lo mismo (<em>Wie heißen Sie?</em>); en la pregunta de sí o no el verbo va en primer lugar (<em>Haben Sie noch Fragen?</em>). Con un modal, el modal va en segundo lugar y el infinitivo al final: <em>Darf ich Ihnen kurz ein paar Fragen stellen?</em>"
+        p: "En la oración principal el verbo conjugado va <strong>en segundo lugar</strong>. Si al principio pones un adverbio de tiempo, el sujeto pasa <strong>detrás</strong> del verbo: <em>Jetzt bringe ich Sie auf Ihr Zimmer. Gleich mache ich mit Ihnen das Aufnahmegespräch.</em> En la pregunta con partícula interrogativa pasa lo mismo (<em>Wie heißen Sie?</em>); en la pregunta de sí o no el verbo va en primer lugar (<em>Haben Sie noch Fragen?</em>). Con un modal, el modal va en segundo lugar y el infinitivo al final: <em>Ich möchte Ihnen kurz ein paar Fragen stellen.</em> En la pregunta de sí o no el modal pasa al primer lugar y el infinitivo sigue al final: <em>Darf ich Ihnen kurz ein paar Fragen stellen?</em>"
       },
       {
-        contrast: "El español también tiene un trato formal, y <em>usted</em> se parece mucho a <em>Sie</em>. La diferencia está en cuándo se abandona. En muchos hospitales de España es habitual tutear a los pacientes, sobre todo a los mayores y con cariño («¿cómo estamos hoy, Manolo?»), y en buena parte de Latinoamérica el <em>usted</em> se mantiene, pero junto a «mi amor» o «mi reina». En Alemania no hay término medio: con pacientes y familiares se usa <strong>siempre el Sie</strong> y el apellido, aunque el paciente lleve semanas en la planta, y el <em>du</em> queda para los compañeros, si la planta lo usa. El Sie arrastra también el posesivo y el dativo: <em>Ihre Pflegefachkraft, Ihr Zimmer, Kann ich Ihnen helfen?</em>, todo con mayúscula. Otra cosa: el español omite el sujeto («Ahora lo llevo a su habitación»); el alemán lo exige siempre, y tras un adverbio inicial lo pone detrás del verbo: <em>Jetzt bringe ich Sie</em>. «Jetzt ich bringe Sie» es un error que se nota enseguida."
+        contrast: "El español también tiene un trato formal, y <em>usted</em> se parece mucho a <em>Sie</em>. La diferencia está en cuándo se abandona. En muchos hospitales de España es habitual tutear a los pacientes, sobre todo a los mayores y con cariño («¿cómo estamos hoy, Manolo?»), y en buena parte de Latinoamérica el <em>usted</em> se mantiene, pero junto a «mi amor» o «mi reina». En Alemania, con pacientes adultos y familiares la norma profesional es <strong>el Sie</strong> y el apellido, aunque el paciente lleve semanas en la planta, salvo que él mismo proponga otra cosa, y el <em>du</em> queda para los compañeros, si la planta lo usa. El Sie arrastra también el posesivo y el dativo: <em>Ihre Pflegefachkraft, Ihr Zimmer, Kann ich Ihnen helfen?</em>, todo con mayúscula. Otra cosa: el español omite el sujeto («Ahora lo llevo a su habitación»); el alemán normalmente no lo omite, y tras un adverbio inicial lo pone detrás del verbo: <em>Jetzt bringe ich Sie</em>. «Jetzt ich bringe Sie» es un error que se nota enseguida."
       },
       {
         trap: "<em>Krankenschwester</em> sigue existiendo en el habla común, pero ya no es el nombre de la profesión: desde 2020 el título es <em>Pflegefachfrau</em> / <em>Pflegefachmann</em>, y <em>Pflegefachkraft</em> es el término neutro. «Ingresar» a un paciente no se traduce con un verbo inventado: se dice <em>stationär aufnehmen</em> (<em>Wir nehmen Sie heute stationär auf</em>), y <em>die Aufnahme</em> es a la vez el ingreso y la oficina de admisión. Cuidado con <em>die Station</em>: es la planta o la unidad, no la estación. Y <em>die Ambulanz</em> en Alemania es la consulta externa del hospital, no la ambulancia, que se llama <em>der Krankenwagen</em> o <em>der Rettungswagen</em>."
@@ -152,7 +152,7 @@ LINGUAI.addStrings("es", {
       },
       {
         tr: "¿Puedo hacerle rápidamente unas preguntas?",
-        why: "En <i>Darf</i> la <b>r</b> final apenas se oye, nunca vibrante; en <i>Ihnen</i> la <b>h</b> no suena y alarga la <b>i</b>; en <i>stellen</i> la <b>st</b> inicial es [ʃt], sin «e» de apoyo delante."
+        why: "En <i>Darf</i> la <b>r</b> detrás de vocal apenas se oye: casi siempre se vocaliza; en <i>Ihnen</i> la <b>h</b> no suena y alarga la <b>i</b>; en <i>stellen</i> la <b>st</b> inicial es [ʃt], sin «e» de apoyo delante."
       }
     ]
   },
@@ -175,10 +175,10 @@ LINGUAI.addStrings("es", {
         p: "También <strong>helfen</strong> (ayudar) y <strong>fehlen</strong> (faltar) piden dativo: <em>Kann ich Ihnen helfen?</em>, <em>Was fehlt Ihnen?</em> La segunda es la pregunta clásica para «¿qué le pasa?», «¿qué molestias tiene?». Los pronombres en dativo que hay que saber de memoria: <em>mir, dir, ihm, ihr, uns, euch, ihnen</em> y <em>Ihnen</em> de cortesía."
       },
       {
-        contrast: "En español «me duele la cabeza» ya tiene el pronombre en dativo, y eso ayuda: <em>Mir tut der Kopf weh</em> sigue el mismo esquema, con la parte del cuerpo como sujeto. Pero «tengo náuseas» y «estoy mareado» no se construyen ni con <em>haben</em> ni con <em>sein</em> + persona como sujeto: <em>Mir ist übel</em>, <em>Mir ist schwindelig</em>, con <em>sein</em> y el dativo. «Ich habe übel» o «Ich bin schwindelig» no se dicen. Ojo también con <em>helfen</em>: en español se ayuda «a alguien» con complemento directo («lo ayudo»), en alemán con dativo (<em>Ich helfe Ihnen</em>). Y el español dice «dolor de cabeza» en singular; el paciente alemán dice casi siempre el plural: <em>Ich habe Kopfschmerzen</em>."
+        contrast: "En español «me duele la cabeza» ya tiene el pronombre en dativo, y eso ayuda: <em>Mir tut der Kopf weh</em> sigue el mismo esquema, con la parte del cuerpo como sujeto. Pero «tengo náuseas» y «estoy mareado» no se construyen ni con <em>haben</em> ni con <em>sein</em> + persona como sujeto: <em>Mir ist übel</em>, <em>Mir ist schwindelig</em>, con <em>sein</em> y el dativo. «Ich habe übel» no se dice, y «Ich bin schwindelig» se oye en el habla coloquial, pero la forma idiomática es <em>Mir ist schwindelig</em>. Ojo también con <em>helfen</em>: en español se ayuda «a alguien» con complemento directo («lo ayudo»), en alemán con dativo (<em>Ich helfe Ihnen</em>). Y el español dice «dolor de cabeza» en singular; el paciente alemán dice casi siempre el plural: <em>Ich habe Kopfschmerzen</em>."
       },
       {
-        trap: "<em>Wo tut es Sie weh?</em> es incorrecto: con <em>wehtun</em> la persona va en dativo, <em>Ihnen</em>. No confundas <em>Mir ist übel</em> con un malestar general: <em>Mir ist schlecht</em> también significa casi siempre náuseas en el habla, no «me encuentro mal» en general. Si el paciente lo dice, pregunta: <em>Ist Ihnen übel? Müssen Sie erbrechen?</em> Otro falso amigo: <em>der Schwindel</em> es el mareo, pero también significa «estafa»; en planta el sentido es siempre el primero. Y <em>der Bauch</em> es la barriga o el vientre, nunca «el estómago» en sentido anatómico, que es <em>der Magen</em>."
+        trap: "<em>Wo tut es Sie weh?</em> es incorrecto: con <em>wehtun</em> la persona va en dativo, <em>Ihnen</em>. No confundas <em>Mir ist übel</em> con un malestar general: <em>Mir ist schlecht</em> puede significar náuseas, pero también un malestar general, así que pregunta qué siente exactamente. Si el paciente lo dice, pregunta: <em>Ist Ihnen übel? Müssen Sie erbrechen?</em> Otro falso amigo: <em>der Schwindel</em> es el mareo, pero también significa «estafa»; en planta el sentido es siempre el primero. Y <em>der Bauch</em> es la barriga o el vientre, nunca «el estómago» en sentido anatómico, que es <em>der Magen</em>."
       },
       {
         tip: "Pide que te señale el sitio: <em>Können Sie es mir zeigen?</em> Es más rápido y más preciso que cualquier descripción, y funciona también cuando el paciente usa palabras distintas de las tuyas. Luego pregunta desde cuándo: <em>Seit wann?</em>"
@@ -265,7 +265,7 @@ LINGUAI.addStrings("es", {
       },
       {
         q: "Traduce (al paciente): «¿Está mareado?»",
-        why: "<i>Ist Ihnen schwindelig?</i> Con <i>sein</i> y el dativo, no con <i>haben</i>, y no «Sind Sie schwindelig». También se escribe <i>schwindlig</i>."
+        why: "<i>Ist Ihnen schwindelig?</i> Con <i>sein</i> y el dativo, no con <i>haben</i>, la forma estándar, mejor que el coloquial «Sind Sie schwindelig». También se escribe <i>schwindlig</i>."
       },
       {
         q: "Una paciente toca el timbre.",
@@ -305,10 +305,10 @@ LINGUAI.addStrings("es", {
       },
       {
         h: "El Perfekt de la historia clínica",
-        p: "Lo que ya ha pasado se cuenta en <strong>Perfekt</strong>: auxiliar en segunda posición, participio al final. La mayoría de los verbos usa <strong>haben</strong>: <em>Haben Sie Ihre Tabletten genommen? Ich habe nichts gegessen. Ich habe das Antibiotikum nicht vertragen.</em> Los verbos de movimiento o de cambio de estado usan <strong>sein</strong>: <em>Sind Sie gestürzt?</em> En los verbos separables el <em>ge-</em> va detrás del prefijo: <em>einweisen</em> → <em>eingewiesen</em>, <em>einnehmen</em> → <em>eingenommen</em>. Con <em>sein</em> y <em>haben</em> se usa más el Präteritum: <em>Ich hatte eine Operation. Ich war im Krankenhaus.</em>"
+        p: "Lo que ya ha pasado se cuenta en <strong>Perfekt</strong>: auxiliar en segunda posición, participio al final. La mayoría de los verbos usa <strong>haben</strong>: <em>Haben Sie Ihre Tabletten genommen? Ich habe nichts gegessen. Ich habe das Antibiotikum nicht vertragen.</em> Los verbos intransitivos de desplazamiento o de cambio de estado suelen usar <strong>sein</strong>: <em>Sind Sie gestürzt?</em> Es una tendencia, no una ley: decide el verbo con su significado (<em>Ich habe getanzt</em>), así que el auxiliar se aprende junto con el verbo. En los verbos separables el <em>ge-</em> va detrás del prefijo: <em>einweisen</em> → <em>eingewiesen</em>, <em>einnehmen</em> → <em>eingenommen</em>; si el verbo base ya tiene un prefijo inseparable, no hay <em>ge-</em>: <em>vorbereiten</em> → <em>vorbereitet</em>. Con <em>sein</em> y <em>haben</em> se usa más el Präteritum: <em>Ich hatte eine Operation. Ich war im Krankenhaus.</em>"
       },
       {
-        contrast: "En español «¿Ha tomado las pastillas?» pone el participio justo detrás del auxiliar, y en buena parte de Latinoamérica se diría incluso «¿Tomó las pastillas?», en indefinido. El alemán hablado usa el <strong>Perfekt</strong> para todo el pasado de la conversación, también donde tú usarías el indefinido, y manda el participio <strong>al final</strong>, con todo lo demás en medio: <em>Haben Sie heute schon Ihre Tabletten genommen?</em> La otra novedad es el auxiliar. El español usa siempre <em>haber</em>; el alemán usa <em>sein</em> con los verbos de movimiento y de cambio de estado: «se ha caído» es <em>er ist gestürzt</em>, nunca «er hat gestürzt». En caso de duda: el verbo transitivo con complemento directo lleva <em>haben</em>."
+        contrast: "En español «¿Ha tomado las pastillas?» pone el participio justo detrás del auxiliar, y en buena parte de Latinoamérica se diría incluso «¿Tomó las pastillas?», en indefinido. El alemán hablado usa el <strong>Perfekt</strong> para casi todo el pasado de la conversación (con <em>sein</em>, <em>haben</em> y los modales prefiere el Präteritum), también donde tú usarías el indefinido, y en la oración principal manda el participio <strong>al final</strong>, con todo lo demás en medio: <em>Haben Sie heute schon Ihre Tabletten genommen?</em> La otra novedad es el auxiliar. El español usa siempre <em>haber</em>; el alemán usa <em>sein</em> con los verbos intransitivos de desplazamiento y de cambio de estado: «se ha caído» es <em>er ist gestürzt</em>, nunca «er hat gestürzt» en el sentido de caerse. En caso de duda: el verbo transitivo con complemento directo lleva <em>haben</em>."
       },
       {
         trap: "<em>Die Allergie</em> se parece a «alergia», pero el acento cae en la última sílaba, <em>Aller-<b>gie</b></em>, la <b>ie</b> es una «i» larga y la <b>g</b> es dura, como en «guitarra», nunca como la jota de «alergia». «Tomar» un medicamento es <em>nehmen</em> o, más formal, <em>einnehmen</em>; no uses <em>bekommen</em>, que es «recibir» (<em>Sie bekommen eine Infusion</em>: es el personal quien la pone). <em>Vertragen</em> se usa así: <em>Ich vertrage kein Penicillin</em>, «no tolero la penicilina». Por último, <em>die Einweisung</em> tiene dos sentidos: el volante de ingreso del médico y, en planta, la formación en el uso de un aparato (<em>Geräteeinweisung</em>)."
@@ -319,7 +319,7 @@ LINGUAI.addStrings("es", {
     ],
     grammar: {
       title: "Perfekt con haben y con sein",
-      note: "Auxiliar en <b>segunda posición</b> (o primera en la pregunta de sí o no), participio <b>al final</b>. <b>sein</b> con los verbos de movimiento y de cambio de estado, <b>haben</b> con casi todos los demás.",
+      note: "Auxiliar en <b>segunda posición</b> (o primera en la pregunta de sí o no), participio <b>al final</b>. normalmente <b>sein</b> con los verbos intransitivos de desplazamiento y de cambio de estado, <b>haben</b> con casi todos los demás.",
       table: {
         head: ["infinitivo", "frase en Perfekt", "nota"],
         rows: [
@@ -366,7 +366,7 @@ LINGUAI.addStrings("es", {
     ],
     culture: {
       title: "Una mirada alemana: el Medikationsplan",
-      text: "<p>En Alemania quien toma regularmente al menos tres medicamentos tiene derecho a un <i>Medikationsplan</i> en un formulario único nacional, rellenado por el médico de cabecera y con un código de barras que la farmacia y el hospital pueden leer. Muchos pacientes lo llevan en la cartera, y muchos lo llaman simplemente <i>Medikamentenplan</i> o <i>mein Zettel</i>.</p><p>Al ingreso el plan no sustituye a tu pregunta: pregunta siempre si el paciente toma algo que no está apuntado, por ejemplo un producto comprado sin receta o una pomada. La respuesta va al formulario de anamnesis, y la decisión sobre qué continuar le corresponde al médico.</p>"
+      text: "<p>En Alemania quien tiene seguro público y toma a la vez al menos tres medicamentos de acción sistémica durante al menos 28 días tiene derecho a un <i>Medikationsplan</i> en un formulario único nacional, rellenado por el médico de cabecera y con un código de barras que la farmacia y el hospital pueden leer. Muchos pacientes lo llevan en la cartera, y muchos lo llaman simplemente <i>Medikamentenplan</i> o <i>mein Zettel</i>.</p><p>Al ingreso el plan no sustituye a tu pregunta: pregunta siempre si el paciente toma algo que no está apuntado, por ejemplo un producto comprado sin receta o una pomada. La respuesta va al formulario de anamnesis, y la decisión sobre qué continuar le corresponde al médico.</p>"
     },
     exercises: [
       {
@@ -450,17 +450,17 @@ LINGUAI.addStrings("es", {
     theory: [
       {
         h: "Dos lenguas en la misma planta",
-        p: "Cada concepto clínico tiene dos nombres. La <strong>Fachsprache</strong>, de raíz latina o griega, se usa con los médicos, en el relevo y en la documentación: <em>Hypertonie, Dyspnoe, Obstipation, Emesis</em>. La <strong>Laiensprache</strong>, alemana, se usa con pacientes y familiares: <em>Bluthochdruck, Atemnot, Verstopfung, Erbrechen</em>. Una enfermera pasa de una a otra decenas de veces al día, incluso en la misma frase: <em>Er hat eine Hypertonie</em> al médico, <em>Sie haben Bluthochdruck</em> al paciente."
+        p: "Muchos conceptos clínicos tienen dos nombres. La <strong>Fachsprache</strong>, de raíz latina o griega, se usa con los médicos, en el relevo y en la documentación: <em>Hypertonie, Dyspnoe, Obstipation, Emesis</em>. La <strong>Laiensprache</strong>, alemana, se usa con pacientes y familiares: <em>Bluthochdruck, Atemnot, Verstopfung, Erbrechen</em>. Una enfermera pasa de una a otra decenas de veces al día, incluso en la misma frase: <em>Er hat eine Hypertonie</em> al médico, <em>Sie haben Bluthochdruck</em> al paciente."
       },
       {
         h: "Las palabras del paciente son compuestos",
         p: "La Laiensprache forma los sustantivos uniendo palabras simples: <em>Blut + hoch + Druck</em> = <em>der Bluthochdruck</em>, <em>Zucker + Krankheit</em> = <em>die Zuckerkrankheit</em>, <em>Atem + Not</em> = <em>die Atemnot</em>. <strong>El artículo lo decide el último elemento</strong>: <em>der Druck</em>, así que <em>der Bluthochdruck</em>; <em>die Krankheit</em>, así que <em>die Zuckerkrankheit</em>; <em>das Gespräch</em>, así que <em>das Aufnahmegespräch</em>. El paciente a menudo acorta aún más: <em>Ich habe Zucker</em> quiere decir «tengo diabetes», como el «tener azúcar» que se oye en muchos países hispanohablantes."
       },
       {
-        contrast: "Para quien habla español la Fachsprache sale casi gratis: <em>Hypertonie</em> es hipertensión, <em>Dyspnoe</em> disnea, <em>Zephalgie</em> cefalea, <em>Emesis</em> emesis, <em>Diarrhö</em> diarrea. Ahí está precisamente el riesgo. En español muchas de estas palabras las entiende también el paciente («tengo hipertensión»), mientras que para un paciente alemán <em>Hypertonie</em> es una palabra opaca, que asusta o que no siente suya. La palabra que te falta, y la que tienes que estudiar, es la alemana de todos los días: <em>Bluthochdruck</em>, <em>Atemnot</em>, <em>Verstopfung</em>, <em>Kopfschmerzen</em>, <em>Erbrechen</em>. Y no tiene nada de latino: no hay forma de adivinarla. Al revés, en el relevo, usar solo las palabras comunes puede sonar poco profesional."
+        contrast: "Para quien habla español la Fachsprache sale casi gratis: <em>Hypertonie</em> es hipertensión, <em>Dyspnoe</em> disnea, <em>Zephalgie</em> cefalea, <em>Emesis</em> emesis, <em>Diarrhö</em> diarrea. Ahí está precisamente el riesgo. En español muchas de estas palabras las entiende también el paciente («tengo hipertensión»), mientras que para muchos pacientes alemanes <em>Hypertonie</em> es una palabra opaca, que asusta o que no siente suya. La palabra que te falta, y la que tienes que estudiar, es la alemana de todos los días: <em>Bluthochdruck</em>, <em>Atemnot</em>, <em>Verstopfung</em>, <em>Kopfschmerzen</em>, <em>Erbrechen</em>. Y no tiene nada de latino: no hay forma de adivinarla. En el relevo, en cambio, lo habitual es el término técnico, porque es más preciso, aunque las palabras comunes no son un error."
       },
       {
-        trap: "El falso amigo de esta lección: en España «estar constipado» significa estar resfriado, no estreñido. El estreñimiento es <em>die Obstipation</em> en la documentación y <em>die Verstopfung</em> con el paciente; el resfriado es <em>die Erkältung</em>. En algunos países de Latinoamérica, en cambio, «constipación» sí se usa por estreñimiento: si dudas, pregunta con la palabra alemana. Una letra lo cambia todo: <em>Hypertonie</em> es la tensión alta, <em>Hypotonie</em> la baja, igual que hiper- e hipo- en español; en un relevo rápido se confunden con facilidad, y ante la duda conviene pedir confirmación. Por último, <em>das Abdomen</em> es neutro, mientras que la palabra del paciente es masculina: <em>der Bauch</em>."
+        trap: "El falso amigo de esta lección: en España «estar constipado» significa estar resfriado, no estreñido. El estreñimiento es <em>die Obstipation</em> en la documentación y <em>die Verstopfung</em> con el paciente; el resfriado es <em>die Erkältung</em>. En algunos países de Latinoamérica, en cambio, «constipación» sí se usa por estreñimiento: si dudas, pregunta con la palabra alemana. En planta, <em>Hypertonie</em> sola indica la hipertensión arterial (<em>arterielle Hypertonie</em>); en neurología la misma palabra designa también un tono muscular aumentado, y decide el contexto. Una letra lo cambia todo: <em>Hypertonie</em> es la tensión alta, <em>Hypotonie</em> la baja, igual que hiper- e hipo- en español; en un relevo rápido se confunden con facilidad, y ante la duda conviene pedir confirmación. Por último, <em>das Abdomen</em> es neutro, mientras que la palabra del paciente es masculina: <em>der Bauch</em>."
       },
       {
         tip: "Cuando expliques al paciente lo que ha dicho el médico, repite una vez la palabra técnica y luego tradúcela: <em>Das ist eine Hypertonie, also Bluthochdruck.</em> El paciente la volverá a encontrar en el informe de alta y sabrá a qué corresponde."
@@ -512,7 +512,7 @@ LINGUAI.addStrings("es", {
       "Náuseas sí, vómitos no. Además diarrea desde ayer.",
       "Señora Marin, ¿qué ha dicho el médico? No entiendo estas palabras.",
       "No se preocupe, señor Brandt. Solo ha preguntado si tiene náuseas y si ha vomitado.",
-      "Ah, ya. ¿Y qué es una Hypertonie?",
+      "Ah, ya. ¿Y qué es una «Hypertonie»?",
       "Es la tensión alta. Eso ya lo conoce."
     ],
     exercises: [
@@ -597,7 +597,7 @@ LINGUAI.addStrings("es", {
       {
         q: "El paciente dice «Tengo náuseas». Completa: «___ ist übel.»",
         hint: "ich en dativo",
-        why: "<b>Mir</b>: <i>Mir ist übel</i>, con <i>sein</i> y el dativo. «Ich bin übel» no se dice."
+        why: "<b>Mir</b>: <i>Mir ist übel</i>, con <i>sein</i> y el dativo. «Ich bin übel» no significa tener náuseas."
       },
       {
         tr: "El Perfekt de einnehmen, todas las personas.",

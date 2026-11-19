@@ -1,0 +1,13 @@
+{
+  "bundleHash": "cf0bb6fe9bd5863346b6b247509fc0feb53ee7c791348d2d91e8fdc69a72d93a",
+  "findings": [
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La spiegazione afferma che il verbo segue subito la parola interrogativa, ma nell’esempio segue l’intero gruppo interrogativo «Welche Medikamente». Correggere in: «Nelle domande con parola interrogativa, il verbo coniugato segue il costituente interrogativo, che può comprendere più parole».",
+      "path": "merged.lessons[2].exercises[3].why"
+    }
+  ],
+  "lang": "it",
+  "unit": "pfl-u01",
+  "verdict": "fail"
+}

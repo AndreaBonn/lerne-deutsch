@@ -1,0 +1,18 @@
+{
+  "bundleHash": "fb36e710f833cf62edbd914f3916c6e0022cf0b009f481fb6c2ac1fa9b741b47",
+  "findings": [
+    {
+      "kind": "traduction",
+      "msg": "« Ich habe Zucker » signifie familièrement « je suis diabétique » ou « j'ai du diabète ». La traduction « j'ai du sucre » est un calque qui ne transmet pas ce sens en français. Remplacer la traduction par « je suis diabétique », éventuellement en précisant que la formulation allemande est familière.",
+      "path": "merged.lessons[3].grammar.examples[5].tr"
+    },
+    {
+      "kind": "formation des mots",
+      "msg": "« Vorgeschichte » est un nom dérivé avec le préfixe vor-, non un nom composé de deux mots autonomes. Son genre est bien celui de « Geschichte », mais cet exemple ne démontre pas la règle énoncée sur les composés. Le remplacer par un véritable composé féminin, par exemple « Krankengeschichte ».",
+      "path": "merged.lessons[3].exercises[4].items[5]"
+    }
+  ],
+  "lang": "fr",
+  "unit": "pfl-u01",
+  "verdict": "fail"
+}

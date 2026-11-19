@@ -1,0 +1,28 @@
+{
+  "bundleHash": "64cbe9c9294ea42f048ab3c6000b51b9341794cecd31943a76d1f0165f927670",
+  "findings": [
+    {
+      "kind": "chiave di risposta",
+      "msg": "La frase spagnola contiene «ya», ma la seconda risposta accettata omette «schon» e non esprime esplicitamente questa sfumatura. Eliminarla oppure riformulare la consegna senza «ya».",
+      "path": "merged.lessons[2].exercises[7].a[1]"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La spiegazione presenta «ge-» come regola generale per i verbi separabili, ma participi come «vorbereitet» non lo contengono perché il verbo base ha il prefisso inseparabile «be-». Precisare che «ge-» compare dopo il prefisso separabile quando il participio lo prevede.",
+      "path": "merged.lessons[2].theory[1].p"
+    },
+    {
+      "kind": "generalizzazione grammaticale",
+      "msg": "«Il tedesco, nella frase dichiarativa, richiede sempre il soggetto» è troppo assoluto: esistono frasi senza soggetto, come «Mir ist übel», insegnata nella lezione successiva. Limitare l'affermazione alle frasi dichiarative che hanno un soggetto espresso, spiegando che di norma il tedesco non lo omette come lo spagnolo.",
+      "path": "merged.lessons[0].theory[2].contrast"
+    },
+    {
+      "kind": "spiegazione clinica",
+      "msg": "La frase «Ich bin übel» non esprime le proprie náusee, ma non è sempre impossibile in tedesco: «übel» può avere altri significati. Sostituire «no se dice» con una spiegazione circoscritta al significato di «tener náuseas».",
+      "path": "merged.test.exercises[2].why"
+    }
+  ],
+  "lang": "es",
+  "unit": "pfl-u01",
+  "verdict": "fail"
+}

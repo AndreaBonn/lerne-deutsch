@@ -316,7 +316,7 @@ LINGUAI.addUnits("PFL", [
           {
             t: "trans",
             dir: "toIt",
-            a: ["Haben Sie heute schon etwas gegessen", "Haben Sie schon etwas gegessen"]
+            a: ["Haben Sie heute schon etwas gegessen", "Haben Sie heute etwas gegessen"]
           },
           {
             t: "dialogue",
@@ -438,9 +438,7 @@ LINGUAI.addUnits("PFL", [
             dir: "toIt",
             a: [
               "Haben Sie Bluthochdruck",
-              "Haben Sie hohen Blutdruck",
-              "Ist Ihr Blutdruck zu hoch",
-              "Ist Ihr Blutdruck hoch"
+              "Haben Sie hohen Blutdruck"
             ]
           },
           { t: "fill", a: ["Zuckerkrankheit"] },

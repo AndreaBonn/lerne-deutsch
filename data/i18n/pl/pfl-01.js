@@ -15,7 +15,7 @@ LINGUAI.addStrings("pl", {
     objectives: [
       "przedstawić się pacjentowi imieniem, nazwiskiem i funkcją",
       "sprawdzić tożsamość pacjenta (nazwisko, data urodzenia, opaska)",
-      "zawsze mówić do pacjentów i ich bliskich per Sie",
+      "zawsze mówić do dorosłych pacjentów i ich bliskich per Sie",
       "trzymać odmieniony czasownik na drugim miejscu, także gdy zdanie zaczyna się od jetzt, gleich, heute"
     ],
     theory: [
@@ -25,13 +25,13 @@ LINGUAI.addStrings("pl", {
       },
       {
         h: "Czasownik na drugim miejscu",
-        p: "W zdaniu głównym odmieniony czasownik stoi <strong>na drugim miejscu</strong>. Jeśli na początek wstawisz okolicznik czasu, podmiot przechodzi <strong>za</strong> czasownik: <em>Jetzt bringe ich Sie auf Ihr Zimmer. Gleich mache ich mit Ihnen das Aufnahmegespräch.</em> W pytaniu z zaimkiem pytającym jest tak samo (<em>Wie heißen Sie?</em>); w pytaniu rozstrzygającym czasownik stoi na pierwszym miejscu (<em>Haben Sie noch Fragen?</em>). Z czasownikiem modalnym modalny jest na drugim miejscu, a bezokolicznik na końcu: <em>Darf ich Ihnen kurz ein paar Fragen stellen?</em>"
+        p: "W zdaniu głównym odmieniony czasownik stoi <strong>na drugim miejscu</strong>. Jeśli na początek wstawisz okolicznik czasu, podmiot przechodzi <strong>za</strong> czasownik: <em>Jetzt bringe ich Sie auf Ihr Zimmer. Gleich mache ich mit Ihnen das Aufnahmegespräch.</em> W pytaniu z zaimkiem pytającym jest tak samo (<em>Wie heißen Sie?</em>); w pytaniu rozstrzygającym czasownik stoi na pierwszym miejscu (<em>Haben Sie noch Fragen?</em>). Z czasownikiem modalnym modalny jest na drugim miejscu, a bezokolicznik na końcu: <em>Ich möchte Ihnen kurz ein paar Fragen stellen.</em> W pytaniu rozstrzygającym modalny przechodzi na pierwsze miejsce, a bezokolicznik nadal stoi na końcu: <em>Darf ich Ihnen kurz ein paar Fragen stellen?</em>"
       },
       {
-        contrast: "Polska forma grzecznościowa to <em>Pan</em>/<em>Pani</em> z czasownikiem w <strong>trzeciej osobie liczby pojedynczej</strong>: «Jak się Pan nazywa?», «Czy Pani ma pytania?». Niemieckie <em>Sie</em> działa inaczej: jest jedno dla kobiety i mężczyzny, i czasownik stoi w <strong>trzeciej osobie liczby mnogiej</strong>: <em>Wie heißen Sie?</em>, <em>Haben Sie Fragen?</em>, nigdy «Wie heißt Sie». Zaimek dzierżawczy i celownik też nie zdradzają płci: <em>Ihr Zimmer</em> to zarówno «Pana pokój», jak i «Pani pokój», <em>Kann ich Ihnen helfen?</em> to «Czy mogę Panu / Pani pomóc?», zawsze wielką literą. Na polskim oddziale zdarza się czułe «dziadku» czy «babciu»; w Niemczech z pacjentami i rodziną mówi się <strong>zawsze per Sie</strong>, a <em>du</em> zostaje dla kolegów z zespołu, jeśli oddział go używa. Do tego szyk: polski może opuścić podmiot i dowolnie go przestawić («Teraz zaprowadzę Pana do pokoju»), niemiecki wymaga podmiotu i po okoliczniku stawia go za czasownikiem: <em>Jetzt bringe ich Sie</em>. «Jetzt ich bringe Sie» słychać od razu."
+        contrast: "Polska forma grzecznościowa to <em>Pan</em>/<em>Pani</em> z czasownikiem w <strong>trzeciej osobie liczby pojedynczej</strong>: «Jak się Pan nazywa?», «Czy Pani ma pytania?». Niemieckie <em>Sie</em> działa inaczej: jest jedno dla kobiety i mężczyzny, i czasownik stoi w <strong>trzeciej osobie liczby mnogiej</strong>: <em>Wie heißen Sie?</em>, <em>Haben Sie Fragen?</em>, nigdy «Wie heißt Sie». Zaimek dzierżawczy i celownik też nie zdradzają płci: <em>Ihr Zimmer</em> to zarówno «Pana pokój», jak i «Pani pokój», <em>Kann ich Ihnen helfen?</em> to «Czy mogę Panu / Pani pomóc?», zawsze wielką literą. Na polskim oddziale zdarza się czułe «dziadku» czy «babciu»; w Niemczech z dorosłymi pacjentami i rodziną mówi się <strong>zawsze per Sie</strong>, a <em>du</em> zostaje dla kolegów z zespołu, jeśli oddział go używa. Do tego szyk: polski może opuścić podmiot i dowolnie go przestawić («Teraz zaprowadzę Pana do pokoju»), niemiecki wymaga podmiotu i po okoliczniku stawia go za czasownikiem: <em>Jetzt bringe ich Sie</em>. «Jetzt ich bringe Sie» słychać od razu."
       },
       {
-        trap: "<em>Die Station</em> to oddział, nie stacja. <em>Die Ambulanz</em> to przyszpitalna przychodnia, a nie ambulans: karetka to <em>der Krankenwagen</em> albo <em>der Rettungswagen</em>. <em>Krankenschwester</em> wciąż istnieje w mowie potocznej, ale nie jest już nazwą zawodu: od 2020 roku tytuł brzmi <em>Pflegefachfrau</em> / <em>Pflegefachmann</em>, a <em>Pflegefachkraft</em> to określenie neutralne. «Przyjąć do szpitala» to <em>stationär aufnehmen</em> (<em>Wir nehmen Sie heute stationär auf</em>), a <em>die Aufnahme</em> to zarówno przyjęcie, jak i izba przyjęć, czyli biuro przyjęć."
+        trap: "<em>Die Station</em> to oddział, nie stacja. <em>Die Ambulanz</em> to przyszpitalna przychodnia, a nie ambulans: karetka to <em>der Krankenwagen</em> albo <em>der Rettungswagen</em>. <em>Krankenschwester</em> wciąż istnieje w mowie potocznej, ale nie jest już nazwą zawodu: od 2020 roku tytuł brzmi <em>Pflegefachfrau</em> / <em>Pflegefachmann</em>, a <em>Pflegefachkraft</em> to określenie neutralne. «Przyjąć do szpitala» to <em>stationär aufnehmen</em> (<em>Wir nehmen Sie heute stationär auf</em>), a <em>die Aufnahme</em> to zarówno samo przyjęcie, jak i miejsce, gdzie się je załatwia (dokładniej <em>die Patientenaufnahme</em>, dział przyjęć). Izba przyjęć dla nagłych przypadków to <em>die Notaufnahme</em>."
       },
       {
         tip: "Zanim wyjdziesz z sali, zawsze pokaż dzwonek: <em>Wenn Sie Hilfe brauchen, drücken Sie bitte die Klingel.</em> To zdanie powiesz kilkadziesiąt razy dziennie: naucz się go na pamięć, z czasownikiem na końcu po <em>wenn</em>, a głowa będzie wolna na resztę."
@@ -55,7 +55,7 @@ LINGUAI.addStrings("pl", {
         { tr: "Jaka jest Pana data urodzenia?", note: "drugie sprawdzenie tożsamości" },
         { tr: "Teraz zaprowadzę Pana do pokoju.", note: "jetzt na początku: podmiot ich za czasownikiem" },
         { tr: "Czy ma Pan jeszcze pytania?", note: "pytanie rozstrzygające: czasownik na pierwszym miejscu" },
-        { tr: "Czy mogę zadać Panu szybko kilka pytań?", note: "modalne dürfen, bezokolicznik stellen na końcu" }
+        { tr: "Czy mogę zadać Panu kilka pytań? To zajmie tylko chwilę.", note: "modalne dürfen, bezokolicznik stellen na końcu" }
       ]
     },
     vocab: [
@@ -64,7 +64,7 @@ LINGUAI.addStrings("pl", {
       "pielęgniarka (tytuł zawodowy)",
       "pielęgniarz (tytuł zawodowy)",
       "pacjent (die Patientin: pacjentka)",
-      "przyjęcie, izba przyjęć",
+      "przyjęcie (do szpitala), dział przyjęć",
       "rozmowa przy przyjęciu",
       "pokój, sala",
       "dzwonek przywoławczy",
@@ -151,8 +151,8 @@ LINGUAI.addStrings("pl", {
         why: "W <i>Pflegefachkraft</i> <b>pf</b> wymawia się z obiema spółgłoskami, a <b>ch</b> po <b>a</b> to [x], jak polskie «ch»; w <i>heute</i> <b>eu</b> czyta się [ɔʏ]; w <i>Zimmer</i> <b>z</b> to [ts], czyli polskie «c»."
       },
       {
-        tr: "Czy mogę zadać Panu szybko kilka pytań?",
-        why: "W <i>Darf</i> końcowe <b>r</b> jest ledwie słyszalne; w <i>Ihnen</i> <b>h</b> się nie czyta i wydłuża <b>i</b>; w <i>stellen</i> początkowe <b>st</b> to [ʃt], czyli «szt»."
+        tr: "Czy mogę zadać Panu kilka pytań? To zajmie tylko chwilę.",
+        why: "W <i>Darf</i> <b>r</b> po samogłosce zwykle się wokalizuje i jest ledwie słyszalne; w <i>Ihnen</i> <b>h</b> się nie czyta i wydłuża <b>i</b>; w <i>stellen</i> początkowe <b>st</b> to [ʃt], czyli «szt»."
       }
     ]
   },
@@ -178,7 +178,7 @@ LINGUAI.addStrings("pl", {
         contrast: "Polski też ma przypadki, i to pomaga, ale nie wszędzie w tę samą stronę. «Boli <strong>mnie</strong> brzuch» to biernik, a niemiecki stawia tu <strong>celownik</strong>: <em>Mir tut der Bauch weh</em>, nigdy «Mich tut der Bauch weh». To najczęstszy błąd polskiego ucznia w tej lekcji. Za to «jest <strong>mi</strong> niedobrze» i «kręci <strong>mi</strong> się w głowie» mają celownik tak jak niemiecki: <em>Mir ist übel</em>, <em>Mir ist schwindelig</em>, z czasownikiem <em>sein</em>. Zgadzają się też «pomóc <strong>Panu</strong>» (<em>Ihnen helfen</em>) i «co <strong>Panu</strong> dolega?» (<em>Was fehlt Ihnen?</em>). Krótko: przy bólu uważaj na przypadek, przy nudnościach, zawrotach i pomocy zaufaj polskiemu celownikowi. I jeszcze jedno: po polsku «boli mnie głowa», a niemiecki pacjent mówi zwykle <em>Ich habe Kopfschmerzen</em>, w liczbie mnogiej."
       },
       {
-        trap: "<em>Wo tut es Sie weh?</em> jest błędem: przy <em>wehtun</em> osoba stoi w celowniku, <em>Ihnen</em>. Nie myl też <em>Mir ist übel</em> z <em>Mir ist schlecht</em>: w mowie potocznej to drugie też prawie zawsze znaczy nudności, a nie ogólne złe samopoczucie. Jeśli pacjent mówi <em>Mir ist schlecht</em>, zapytaj: <em>Ist Ihnen übel? Müssen Sie erbrechen?</em> Ostatni fałszywy przyjaciel: <em>der Schwindel</em> to zawroty głowy, ale też «oszustwo»; na oddziale zawsze chodzi o to pierwsze."
+        trap: "<em>Wo tut es Sie weh?</em> jest błędem: przy <em>wehtun</em> osoba stoi w celowniku, <em>Ihnen</em>. Nie myl też <em>Mir ist übel</em> z <em>Mir ist schlecht</em>: w mowie potocznej to drugie może znaczyć nudności, ale też ogólne złe samopoczucie. Jeśli pacjent mówi <em>Mir ist schlecht</em>, zapytaj: <em>Ist Ihnen übel? Müssen Sie erbrechen?</em> Ostatni fałszywy przyjaciel: <em>der Schwindel</em> to zawroty głowy, ale też «oszustwo»; na oddziale zawsze chodzi o to pierwsze."
       },
       {
         tip: "Poproś, żeby pacjent pokazał miejsce: <em>Können Sie es mir zeigen?</em> To szybsze i dokładniejsze niż każdy opis, i działa nawet wtedy, gdy pacjent używa innych słów niż ty. Potem zapytaj, od kiedy: <em>Seit wann?</em>"
@@ -301,14 +301,14 @@ LINGUAI.addStrings("pl", {
     theory: [
       {
         h: "Pytania z formularza",
-        p: "<strong>Anamnesebogen</strong> to formularz wywiadu wypełniany przy przyjęciu. Stałe pytania: <em>Haben Sie Vorerkrankungen?</em> (przebyte choroby), <em>Hatten Sie schon einmal eine Operation?</em>, <em>Haben Sie Allergien?</em>, <em>Welche Medikamente nehmen Sie regelmäßig ein?</em>, <em>Sind Sie in letzter Zeit gestürzt?</em> Przy alergii zawsze pytaj też o <strong>reakcję</strong> (<em>Was ist dann passiert?</em>), a jeśli pacjent nie pamięta nazwy leku, zanotuj, kto ją zna: lekarz rodzinny, <em>der Hausarzt</em>."
+        p: "<strong>Anamnesebogen</strong> to formularz wywiadu wypełniany przy przyjęciu. Stałe pytania: <em>Haben Sie Vorerkrankungen?</em> (choroby przebyte i przewlekłe), <em>Hatten Sie schon einmal eine Operation?</em>, <em>Haben Sie Allergien?</em>, <em>Welche Medikamente nehmen Sie regelmäßig ein?</em>, <em>Sind Sie in letzter Zeit gestürzt?</em> Przy alergii zawsze pytaj też o <strong>reakcję</strong> (<em>Was ist dann passiert?</em>), a jeśli pacjent nie pamięta nazwy leku, zanotuj, kto ją zna: lekarz rodzinny, <em>der Hausarzt</em>."
       },
       {
         h: "Perfekt w wywiadzie",
-        p: "To, co już się wydarzyło, opowiada się w czasie <strong>Perfekt</strong>: czasownik posiłkowy na drugim miejscu, imiesłów na końcu. Większość czasowników łączy się z <strong>haben</strong>: <em>Haben Sie Ihre Tabletten genommen? Ich habe nichts gegessen. Ich habe das Antibiotikum nicht vertragen.</em> Czasowniki ruchu albo zmiany stanu łączą się z <strong>sein</strong>: <em>Sind Sie gestürzt?</em> W czasownikach rozdzielnych <em>ge-</em> stoi za przedrostkiem: <em>einweisen</em> → <em>eingewiesen</em>, <em>einnehmen</em> → <em>eingenommen</em>. Przy samych <em>sein</em> i <em>haben</em> częściej używa się Präteritum: <em>Ich hatte eine Operation. Ich war im Krankenhaus.</em>"
+        p: "To, co już się wydarzyło, opowiada się w czasie <strong>Perfekt</strong>: czasownik posiłkowy na drugim miejscu, imiesłów na końcu. Większość czasowników łączy się z <strong>haben</strong>: <em>Haben Sie Ihre Tabletten genommen? Ich habe nichts gegessen. Ich habe das Antibiotikum nicht vertragen.</em> Nieprzechodnie czasowniki przemieszczania się albo zmiany stanu łączą się zwykle z <strong>sein</strong>: <em>Sind Sie gestürzt?</em> To tendencja, nie prawo: decyduje czasownik i jego znaczenie (<em>Ich habe getanzt</em>), więc posiłkowy trzeba uczyć się razem z czasownikiem. W czasownikach rozdzielnych <em>ge-</em> stoi za przedrostkiem: <em>einweisen</em> → <em>eingewiesen</em>, <em>einnehmen</em> → <em>eingenommen</em>; jeśli czasownik podstawowy ma już przedrostek nierozdzielny, <em>ge-</em> nie ma: <em>vorbereiten</em> → <em>vorbereitet</em>. Przy samych <em>sein</em> i <em>haben</em> częściej używa się Präteritum: <em>Ich hatte eine Operation. Ich war im Krankenhaus.</em>"
       },
       {
-        contrast: "Polski ma jeden czas przeszły, bez czasownika posiłkowego: «Czy wziął Pan już tabletki?», «Upadł Pan?». Niemiecki Perfekt buduje się z dwóch części: <em>haben</em> albo <em>sein</em> na drugim miejscu i imiesłów <strong>na samym końcu</strong>, a wszystko inne stoi pomiędzy: <em>Haben Sie heute schon Ihre Tabletten genommen?</em> Wybór posiłkowego to coś, czego polski w ogóle nie zna, więc trzeba go nauczyć się razem z czasownikiem: ruch i zmiana stanu z <em>sein</em> (<em>ich bin gestürzt</em>), prawie cała reszta z <em>haben</em> (<em>ich habe genommen</em>). W razie wątpliwości czasownik przechodni z dopełnieniem bierze <em>haben</em>. Odwrotnie niż w polskim nie ma też aspektu: <em>Ich habe genommen</em> to zarówno «brałem», jak i «wziąłem», a różnicę niosą słowa w rodzaju <em>schon</em>, <em>heute</em>, <em>regelmäßig</em>."
+        contrast: "Polski ma jeden czas przeszły i nie wybiera między dwoma czasownikami posiłkowymi: «Czy wziął Pan już tabletki?», «Upadł Pan?». Niemiecki Perfekt buduje się z dwóch części: <em>haben</em> albo <em>sein</em> na drugim miejscu (w pytaniu rozstrzygającym na pierwszym) i imiesłów <strong>na samym końcu</strong> zdania głównego, a wszystko inne stoi pomiędzy: <em>Haben Sie heute schon Ihre Tabletten genommen?</em> Wyboru między <em>haben</em> a <em>sein</em> polski w ogóle nie zna, więc trzeba go nauczyć się razem z czasownikiem: nieprzechodnie czasowniki przemieszczania się i zmiany stanu z <em>sein</em> (<em>ich bin gestürzt</em>), prawie cała reszta z <em>haben</em> (<em>ich habe genommen</em>). W razie wątpliwości czasownik przechodni z dopełnieniem bierze <em>haben</em>. Odwrotnie niż w polskim nie ma też aspektu: <em>Ich habe genommen</em> to zarówno «brałem», jak i «wziąłem», a różnicę niosą słowa w rodzaju <em>schon</em>, <em>heute</em>, <em>regelmäßig</em>."
       },
       {
         trap: "<em>Die Allergie</em> wygląda jak polska alergia, ale akcent pada na ostatnią sylabę, <em>Aller-<b>gie</b></em>, a <b>g</b> jest twarde. «Brać» lek to <em>nehmen</em> albo, bardziej oficjalnie, <em>einnehmen</em>; nie używaj <em>bekommen</em>, które znaczy «dostawać» (<em>Sie bekommen eine Infusion</em>: podaje ją personel). Czasownika <em>vertragen</em> używa się tak: <em>Ich vertrage kein Penicillin</em>, «nie toleruję penicyliny». Wreszcie <em>die Einweisung</em> ma dwa znaczenia: skierowanie do szpitala i, na oddziale, instruktaż obsługi urządzenia (<em>Geräteeinweisung</em>)."
@@ -319,7 +319,7 @@ LINGUAI.addStrings("pl", {
     ],
     grammar: {
       title: "Perfekt z haben i z sein",
-      note: "Czasownik posiłkowy na <b>drugim miejscu</b> (albo na pierwszym w pytaniu rozstrzygającym), imiesłów <b>na końcu</b>. <b>sein</b> przy czasownikach ruchu i zmiany stanu, <b>haben</b> przy prawie wszystkich pozostałych.",
+      note: "Czasownik posiłkowy na <b>drugim miejscu</b> (albo na pierwszym w pytaniu rozstrzygającym), imiesłów <b>na końcu</b>. zwykle <b>sein</b> przy nieprzechodnich czasownikach przemieszczania się i zmiany stanu, <b>haben</b> przy prawie wszystkich pozostałych.",
       table: {
         head: ["bezokolicznik", "zdanie w Perfekt", "uwaga"],
         rows: [
@@ -353,7 +353,7 @@ LINGUAI.addStrings("pl", {
       "regularnie"
     ],
     dialogue: [
-      "Panie Brandt, teraz razem wypełnimy formularz wywiadu. Czy ma Pan jakieś przebyte choroby?",
+      "Panie Brandt, teraz razem wypełnimy formularz wywiadu. Czy choruje Pan albo chorował wcześniej na jakieś choroby?",
       "Tak, mam nadciśnienie. A dwa lata temu miałem operację kolana.",
       "Czy ma Pan alergie?",
       "Kiedyś nie tolerowałem jednego antybiotyku. Dostałem wysypki.",
@@ -366,7 +366,7 @@ LINGUAI.addStrings("pl", {
     ],
     culture: {
       title: "Niemieckie spojrzenie: Medikationsplan",
-      text: "<p>W Niemczech każdy, kto regularnie przyjmuje co najmniej trzy leki, ma prawo do <i>Medikationsplan</i> na jednolitym ogólnokrajowym formularzu, wypełnianym przez lekarza rodzinnego i opatrzonym kodem kreskowym, który może odczytać apteka i szpital. Wielu pacjentów nosi go w portfelu, a wielu nazywa go po prostu <i>Medikamentenplan</i> albo <i>mein Zettel</i>.</p><p>Przy przyjęciu plan nie zastępuje twojego pytania: zawsze zapytaj, czy pacjent bierze coś, czego tam nie ma, na przykład środek kupiony bez recepty albo maść. Odpowiedź trafia do formularza wywiadu, a decyzja, co kontynuować, należy do lekarza.</p>"
+      text: "<p>W Niemczech każdy ubezpieczony w publicznej kasie chorych, kto przyjmuje jednocześnie co najmniej trzy leki o działaniu ogólnoustrojowym przez co najmniej 28 dni, ma prawo do <i>Medikationsplan</i> na jednolitym ogólnokrajowym formularzu, wypełnianym przez lekarza rodzinnego i opatrzonym kodem kreskowym, który może odczytać apteka i szpital. Wielu pacjentów nosi go w portfelu, a wielu nazywa go po prostu <i>Medikamentenplan</i> albo <i>mein Zettel</i>.</p><p>Przy przyjęciu plan nie zastępuje twojego pytania: zawsze zapytaj, czy pacjent bierze coś, czego tam nie ma, na przykład środek kupiony bez recepty albo maść. Odpowiedź trafia do formularza wywiadu, a decyzja, co kontynuować, należy do lekarza.</p>"
     },
     exercises: [
       {
@@ -396,7 +396,7 @@ LINGUAI.addStrings("pl", {
           "Hatten Sie schon einmal eine Operation?",
           "Haben Sie schon einmal eine Operation gehabt worden?"
         ],
-        why: "W pytaniu z W- czasownik stoi zaraz po wyrazie pytającym: <i>Welche Medikamente nehmen Sie</i>. Ostatnie miesza Perfekt ze stroną bierną: mówi się <i>Hatten Sie</i> albo <i>Haben Sie ... gehabt</i>."
+        why: "W pytaniu z W- czasownik stoi zaraz po części pytającej, która może mieć kilka słów: <i>Welche Medikamente nehmen Sie</i>. Ostatnie miesza Perfekt ze stroną bierną: mówi się <i>Hatten Sie</i> albo <i>Haben Sie ... gehabt</i>."
       },
       {
         q: "Uzupełnij zdanie w czasie Perfekt.",
@@ -450,7 +450,7 @@ LINGUAI.addStrings("pl", {
     theory: [
       {
         h: "Dwa języki na jednym oddziale",
-        p: "Każde pojęcie kliniczne ma dwie nazwy. <strong>Fachsprache</strong>, o rdzeniu łacińskim lub greckim, służy do rozmowy z lekarzami, przy przekazaniu dyżuru i w dokumentacji: <em>Hypertonie, Dyspnoe, Obstipation, Emesis</em>. <strong>Laiensprache</strong>, niemiecka, służy do rozmowy z pacjentami i rodziną: <em>Bluthochdruck, Atemnot, Verstopfung, Erbrechen</em>. Pielęgniarka przechodzi z jednej do drugiej kilkadziesiąt razy dziennie, czasem w jednym zdaniu: <em>Er hat eine Hypertonie</em> do lekarza, <em>Sie haben Bluthochdruck</em> do pacjenta."
+        p: "Wiele pojęć klinicznych ma dwie nazwy. <strong>Fachsprache</strong>, o rdzeniu łacińskim lub greckim, służy do rozmowy z lekarzami, przy przekazaniu dyżuru i w dokumentacji: <em>Hypertonie, Dyspnoe, Obstipation, Emesis</em>. <strong>Laiensprache</strong>, niemiecka, służy do rozmowy z pacjentami i rodziną: <em>Bluthochdruck, Atemnot, Verstopfung, Erbrechen</em>. Pielęgniarka przechodzi z jednej do drugiej kilkadziesiąt razy dziennie, czasem w jednym zdaniu: <em>Er hat eine Hypertonie</em> do lekarza, <em>Sie haben Bluthochdruck</em> do pacjenta."
       },
       {
         h: "Słowa pacjenta to złożenia",
@@ -460,7 +460,7 @@ LINGUAI.addStrings("pl", {
         contrast: "Łacińskie terminy znasz z kształcenia, więc kolumna Fachsprache przyjdzie ci łatwo: <em>Hypertonie</em> to hypertensio, <em>Dyspnoe</em> to dyspnoe, <em>Obstipation</em> to obstipatio. Trudność leży gdzie indziej. Polska pielęgniarka na co dzień mówi i pisze po polsku: nadciśnienie, duszność, zaparcie, wymioty. Niemiecki lekarz i niemiecka dokumentacja używają łaciny znacznie częściej, a niemiecki pacjent ma własne słowa, z którymi polski nie dzieli <strong>żadnego rdzenia</strong>: <em>Bluthochdruck</em>, <em>Atemnot</em>, <em>Verstopfung</em>, <em>Erbrechen</em> nie przypominają niczego, co znasz. Tych słów nie da się zgadnąć, trzeba się ich nauczyć. Pomaga rozkładanie złożeń na części: <em>Blut-hoch-druck</em> to dosłownie «krew-wysokie-ciśnienie», czyli polskie «wysokie ciśnienie krwi» czytane od końca. I uwaga na rodzaj: zgadza się w <em>die Allergie</em> / alergia i <em>die Operation</em> / operacja, ale <em>das Medikament</em> jest nijakie, a polski medykament męski, a <em>die Hypertonie</em> jest żeńska, choć polskie nadciśnienie jest nijakie. Rodzajnik bierz zawsze ze słownika, nie z polskiego odpowiednika."
       },
       {
-        trap: "Jedna litera zmienia wszystko: <em>Hypertonie</em> to wysokie ciśnienie, <em>Hypotonie</em> niskie, tak jak hiper- i hipo-; na głos, przy szybkim przekazaniu dyżuru, łatwo je pomylić, więc w razie wątpliwości warto dopytać. <em>Das Abdomen</em> jest nijakie, a słowo pacjenta męskie: <em>der Bauch</em>. A <em>Diarrhö</em> pisze się też <em>Diarrhoe</em>: obie pisownie są poprawne, «Diarrhea» nie."
+        trap: "Na oddziale samo <em>Hypertonie</em> oznacza nadciśnienie tętnicze (<em>arterielle Hypertonie</em>); w neurologii to samo słowo znaczy też wzmożone napięcie mięśni, więc rozstrzyga kontekst. Jedna litera zmienia wszystko: <em>Hypertonie</em> to wysokie ciśnienie, <em>Hypotonie</em> niskie, tak jak hiper- i hipo-; na głos, przy szybkim przekazaniu dyżuru, łatwo je pomylić, więc w razie wątpliwości warto dopytać. <em>Das Abdomen</em> jest nijakie, a słowo pacjenta męskie: <em>der Bauch</em>. A <em>Diarrhö</em> pisze się też <em>Diarrhoe</em>: obie pisownie są poprawne, «Diarrhea» nie."
       },
       {
         tip: "Kiedy tłumaczysz pacjentowi, co powiedział lekarz, powtórz raz termin fachowy, a potem go przełóż: <em>Das ist eine Hypertonie, also Bluthochdruck.</em> Pacjent znajdzie to słowo w wypisie ze szpitala i będzie wiedział, co znaczy."
@@ -512,7 +512,7 @@ LINGUAI.addStrings("pl", {
       "Nudności tak, wymiotów nie. Do tego biegunka od wczoraj.",
       "Pani Marin, co powiedział lekarz? Nie rozumiem tych słów.",
       "Proszę się nie martwić, panie Brandt. Pytał tylko, czy jest Panu niedobrze i czy Pan wymiotował.",
-      "Aha. A co to jest Hypertonie?",
+      "Aha. A co to jest „Hypertonie”?",
       "To wysokie ciśnienie. To już Pan zna."
     ],
     exercises: [
@@ -597,7 +597,7 @@ LINGUAI.addStrings("pl", {
       {
         q: "Pacjent mówi «Jest mi niedobrze». Uzupełnij: «___ ist übel.»",
         hint: "ich w celowniku",
-        why: "<b>Mir</b>: <i>Mir ist übel</i>, z <i>sein</i> i celownikiem, tak jak polskie «mi». «Ich bin übel» się nie mówi."
+        why: "<b>Mir</b>: <i>Mir ist übel</i>, z <i>sein</i> i celownikiem, tak jak polskie «mi». «Ich bin übel» nie znaczy, że ma się nudności."
       },
       {
         tr: "Perfekt od einnehmen, wszystkie osoby.",
