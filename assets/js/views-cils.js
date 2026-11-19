@@ -243,6 +243,7 @@
 
   function sezioneScritta(sez) {
     var scelta = 0;
+    var choices = [];
     set(intestazione(sez) + H.corpoScritto(sez) + H.coda("cils.closeSection"));
 
     var fields = el().querySelectorAll(".js-text");
@@ -250,10 +251,21 @@
     fields.forEach(function (field, index) {
       function refresh() {
         var task = sez.prove && sez.prove.length ? sez.prove[index] : sez.tracce[scelta];
+        if (task.scelta) task = task.scelta[choices[index] || 0];
         var check = Cils.controlloScritta(task, field.value);
         counters[index].textContent = t("cils.wordsOf", { n: check.parole, min: check.minimo, max: check.massimo });
       }
       field.addEventListener("input", refresh);
+      var card = field.parentNode;
+      card.querySelectorAll('input[name="writing-choice-' + index + '"]').forEach(function (radio) {
+        radio.addEventListener("change", function () {
+          choices[index] = Number(radio.value);
+          card.querySelectorAll(".js-writing-option").forEach(function (option) {
+            option.hidden = Number(option.getAttribute("data-choice")) !== choices[index];
+          });
+          refresh();
+        });
+      });
       refresh();
     });
     el().querySelectorAll('input[name="traccia"]').forEach(function (r) {
@@ -261,7 +273,7 @@
     });
     function saveWriting() {
       if (sez.prove && sez.prove.length) {
-        run.zapiszScritta(sez.prove, Array.prototype.map.call(fields, function (field) { return field.value; }));
+        run.zapiszScritta(sez.prove, Array.prototype.map.call(fields, function (field) { return field.value; }), choices);
       } else run.zapiszScritta(sez.tracce[scelta], fields[0].value);
     }
     razTylko(el().querySelector(".js-next"), function () { saveWriting(); avanti(); });

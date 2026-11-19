@@ -224,10 +224,10 @@ test("Goethe Teile collect matching answers and every writing production", async
    clock, and a result that is a total and a band, never a verdict.
    The simulation is a fixture injected here: real content comes later.
    ============================================================ */
-async function iniettaTelc(page, lettura) {
+async function iniettaTelc(page, lettura, scelta) {
   await page.goto("/index.html#/esame");
   await page.waitForSelector(".js-start");
-  await page.evaluate(minutiLettura => {
+  await page.evaluate(([minutiLettura, conScelta]) => {
     I18n.set("it");
     const mc = ile => ({
       t: "mc", puntiPerItem: 1, consegna: "Wählen Sie a, b oder c.",
@@ -247,15 +247,24 @@ async function iniettaTelc(page, lettura) {
             testo: Array.from({ length: 11 }, (_, i) => "Satz " + i),
             items: Array.from({ length: 10 }, () => ({ opts: ["x", "y", "z"], a: 0 })) }
         ] },
-        { id: "scritta", modulo: "Schreiben", minuti: 30, prove: [],
-          consegna: "Schreiben Sie einen Bericht.",
-          tracce: [{ it: "Aufnahmebericht", parole: { min: 3, max: 50 }, richiede: [] }] },
+        conScelta
+          ? { id: "scritta", modulo: "Schreiben", minuti: 30, prove: [{
+              t: "schreiben",
+              scelta: [
+                { titolo: "Aufnahmebericht", consegna: "Schreiben Sie.", parole: { min: 2, max: 4 },
+                  modulo: { intestazione: "Anamnesebogen", righe: [["Name", "Anna"]] }, richiede: [] },
+                { titolo: "Biografiebericht", consegna: "Schreiben Sie.", parole: { min: 5, max: 9 },
+                  modulo: { intestazione: "Biografiebogen", righe: [["Name", "Otto"]] }, richiede: [] }
+              ] }] }
+          : { id: "scritta", modulo: "Schreiben", minuti: 30, prove: [],
+              consegna: "Schreiben Sie einen Bericht.",
+              tracce: [{ it: "Aufnahmebericht", parole: { min: 3, max: 50 }, richiede: [] }] },
         { id: "orale", modulo: "Sprechen", minuti: 16, prove: [], presentazione: [],
           argomenti: [{ it: "Pflegealltag", richiede: [] }] }
       ]
     });
     Views.esame();
-  }, lettura);
+  }, [lettura, !!scelta]);
 }
 
 /** Ticks the first `n` radios with value 0 among those found inside `scope`. */
@@ -314,6 +323,24 @@ test.describe("telc Pflege simulation", () => {
     await expect(page.locator(".cils-tab")).toHaveCount(0);
     const corpo = await page.locator("main, body").first().innerText();
     expect(corpo).not.toMatch(/bestanden|superato|passed|promosso/i);
+  });
+
+  test("switching the writing option keeps the text, follows the counter and reaches the report", async ({ page }) => {
+    await iniettaTelc(page, 60, true);
+    await page.locator('.js-start[data-id="telc-fix"]').click();
+    await page.waitForSelector(".cils-clock");
+    for (let i = 0; i < 3; i++) await page.locator(".js-next").click();
+    await page.fill(".js-text", "eins zwei drei");
+    await expect(page.locator(".js-count")).toContainText("3");
+    await expect(page.locator(".js-count")).toContainText("4");
+    await page.locator('input[name="writing-choice-0"][value="1"]').check();
+    await expect(page.locator(".js-text")).toHaveValue("eins zwei drei");
+    await expect(page.locator(".js-count")).toContainText("9");
+    await expect(page.locator('.js-writing-option[data-choice="1"]')).toBeVisible();
+    await expect(page.locator('.js-writing-option[data-choice="0"]')).toBeHidden();
+    await page.locator(".js-next").click();
+    await page.locator(".js-next").click();
+    await expect(page.locator(".cils-titolo")).toHaveText("Biografiebericht");
   });
 
   test("when the shared time runs out both sections are locked", async ({ page }) => {

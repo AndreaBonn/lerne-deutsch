@@ -192,9 +192,22 @@
       (task.punti || []).map(function (point) { return "<li>" + esc(point) + "</li>"; }).join("") + "</ul>";
   }
 
+  function writingChoice(task, index) {
+    return '<fieldset><legend>Aufgabe wählen</legend>' + task.scelta.map(function (option, i) {
+      return '<label><input type="radio" name="writing-choice-' + index + '" value="' + i + '"' +
+        (i === 0 ? ' checked' : '') + '> ' + esc(option.titolo) + '</label>';
+    }).join('') + '</fieldset>' + task.scelta.map(function (option, i) {
+      return '<div class="js-writing-option" data-choice="' + i + '"' + (i ? ' hidden' : '') + '>' +
+        '<p>' + esc(option.consegna) + '</p><table><caption>' + esc(option.modulo.intestazione) +
+        '</caption><tbody>' + option.modulo.righe.map(function (row) {
+          return '<tr><th scope="row">' + esc(row[0]) + '</th><td>' + esc(row[1]) + '</td></tr>';
+        }).join('') + '</tbody></table></div>';
+    }).join('');
+  }
+
   function corpoScritto(sez) {
     if (sez.prove && sez.prove.length) return '<div class="js-body">' + sez.prove.map(function (task, index) {
-      return '<div class="card">' + productionPrompt(task, index) +
+      return '<div class="card">' + (task.scelta ? writingChoice(task, index) : productionPrompt(task, index)) +
         '<label for="writing-' + index + '" class="sr-only">' + esc(t("cils.testN", { n: index + 1 })) + '</label>' +
         '<textarea id="writing-' + index + '" class="field cils-ta js-text" rows="10" spellcheck="false"></textarea>' +
         '<p class="cils-count js-count" role="status" aria-live="polite"></p></div>';
@@ -296,6 +309,7 @@
     var c = global.Cils.controlloScritta(pisemna.traccia, pisemna.testo);
     var wynik = global.Writing.analyse(pisemna.testo, (pisemna.traccia || {}).richiede || []);
     return '<div class="card"><h2 class="cils-h">' + esc(t("cils.sec.scritta")) + "</h2>" +
+      ((pisemna.traccia || {}).titolo ? '<p class="cils-titolo">' + esc(pisemna.traccia.titolo) + "</p>" : "") +
       '<p class="cils-hint">' + esc(t("cils.writingNotScored")) + "</p>" +
       '<p class="cils-count">' + esc(t("cils.wordsOf", { n: c.parole, min: c.minimo, max: c.massimo })) +
       (c.dentroLimite ? "" : " " + esc(t("cils.outOfRange"))) + "</p>" +

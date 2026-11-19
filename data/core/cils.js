@@ -27,6 +27,9 @@
      items [{a:index}] with more choices than gaps.
    - lueckeMc: testo[] chunks around gaps, items [{opts:[a,b,c], a:index}].
    - schreiben: {t, consegna, punti:[], parole:{min,max}}, never scored.
+   - telc schreiben: {t, scelta:[{titolo, consegna, modulo:{intestazione,
+     righe:[[campo,valore], ...]}, richiede:[], parole:{min,max}}, ...]};
+     exactly two choices, never scored.
    - sprechen: {t, consegna, punti:[]}, never scored.
    ============================================================ */
 window.CILS_FORMATO = {

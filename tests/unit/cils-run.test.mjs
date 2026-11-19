@@ -456,3 +456,14 @@ describe("telc Pflege run", () => {
     assert.equal(w.punti.sprachbausteine, 0);
   });
 });
+
+test("writing records the selected choice and analyses its requirements", () => {
+  const box = silnik();
+  const run = podejscie(box);
+  const task = { scelta: [{ parole: { min: 10, max: 20 }, richiede: [] }, { parole: { min: 1, max: 3 }, richiede: [{ etichetta: "Name", forme: ["Anna"] }] }] };
+  run.zapiszScritta([task], ["Anna"], [1]);
+  assert.equal(run.dane.scritta[0].traccia, task.scelta[1]);
+  const check = box.sandbox.Cils.controlloScritta(run.dane.scritta[0].traccia, "Anna");
+  assert.equal(check.dentroLimite, true);
+  assert.equal(check.elementi[0].voce.etichetta, "Name");
+});

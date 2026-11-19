@@ -104,9 +104,9 @@
       /** A section's answers - for inspection in tests and for scoring. */
       odpowiedzi: function (id) { return run.risposte[id]; },
       czyScadla: function (id) { return !!run.scaduta[id]; },
-      zapiszScritta: function (traccia, testo) {
+      zapiszScritta: function (traccia, testo, choices) {
         run.scritta = Array.isArray(traccia) ? traccia.map(function (task, index) {
-          return { traccia: task, testo: testo[index] };
+          return { traccia: task.scelta ? task.scelta[(choices || [])[index] || 0] : task, testo: testo[index] };
         }) : { traccia: traccia, testo: testo };
       },
       /**

@@ -104,6 +104,15 @@
       if (!section) { problems.push("missing: " + descriptor.id); return; }
       if (sections[index] !== section) problems.push("order: " + descriptor.id);
       problems = problems.concat(sectionProblems(section, descriptor));
+      if (simulation.formato === "telc-pflege" && descriptor.id === "scritta") {
+        (section.prove || []).forEach(function (task, index) {
+          if (!Array.isArray(task.scelta) || task.scelta.length !== 2 || task.scelta.some(function (option) {
+            return !option || !option.parole || !option.modulo || !Array.isArray(option.modulo.righe) || !option.modulo.righe.length ||
+              typeof option.titolo !== "string" || typeof option.consegna !== "string" || typeof option.modulo.intestazione !== "string" ||
+              typeof option.parole.min !== "number" || typeof option.parole.max !== "number";
+          })) problems.push("scelta: scritta-" + (index + 1));
+        });
+      }
     });
     sections.forEach(function (section, index) {
       if (ids.indexOf(section.id) < 0 || sections.indexOf(section) !== index ||

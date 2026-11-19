@@ -697,3 +697,22 @@ describe("summary of a band result", () => {
     assert.equal(ile(out, 'name="p0i0"'), 0);
   });
 });
+
+test("writing choices render accessible escaped form tables", () => {
+  const option = { titolo: "Bericht", consegna: "Schreiben", modulo: { intestazione: "<Bogen>", righe: [["<Name>", "<Anna>"]] } };
+  const result = html().corpoScritto({ prove: [{ t: "schreiben", scelta: [option, option] }] });
+  assert.match(result, /<fieldset/);
+  assert.match(result, /<legend/);
+  assert.match(result, /name="writing-choice-0"/);
+  assert.match(result, /<table/);
+  assert.match(result, /<th scope="row">&lt;Name&gt;<\/th>/);
+  assert.match(result, /&lt;Anna&gt;/);
+  assert.match(result, /&lt;Bogen&gt;/);
+});
+
+test("final report shows the title of the chosen writing option, escaped", () => {
+  const out = html().scritta({ traccia: { titolo: "<Aufnahmebericht>", parole: { min: 1, max: 9 }, richiede: [] }, testo: "ein Wort" });
+  assert.ok(out.includes("&lt;Aufnahmebericht&gt;"));
+  assert.ok(!out.includes("<Aufnahmebericht>"));
+  assert.ok(!html().scritta({ traccia: { parole: { min: 1, max: 9 }, richiede: [] }, testo: "x" }).includes("cils-titolo"));
+});

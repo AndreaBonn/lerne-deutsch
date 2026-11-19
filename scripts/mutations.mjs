@@ -110,6 +110,10 @@ const T_WRITING = "tests/unit/writing.test.mjs";
  * says.
  */
 const MUTACJE = [
+  { plik: "assets/js/cils-run.js", test: "tests/unit/cils-run.test.mjs", opis: "writing choice index ignored",
+    z: "task.scelta[(choices || [])[index] || 0]", na: "task.scelta[0]" },
+  { plik: HTML, test: T_HTML, opis: "writing form cells unescaped",
+    z: "esc(row[0]) + '</th><td>' + esc(row[1])", na: "row[0] + '</th><td>' + row[1]" },
   { plik: HTML, test: T_HTML, opis: "Sprachbausteine: independent radio groups per gap",
     z: 'var nome = (prefix || "") + "p" + n + "i" + i;', na: 'var nome = (prefix || "") + "p" + n;' },
   { plik: HTML, test: T_HTML, opis: "lueckeAbbina: shared list missing from the gaps",

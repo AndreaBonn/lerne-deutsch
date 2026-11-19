@@ -340,9 +340,10 @@ test("telc format declares timing, item counts and receptive bands", () => {
 
 function telcFixture(C) {
   const f = C.formato({ formato: "telc-pflege" });
+  const option = () => ({ titolo: "Bericht", consegna: "Schreiben Sie.", parole: { min: 2, max: 5 }, modulo: { intestazione: "Bogen", righe: [["Name", "Anna"]] } });
   return { official: false, formato: "telc-pflege", sezioni: f.moduli.map(m => ({
     id: m.id, minuti: m.minuti,
-    prove: m.punteggio ? m.items.map(n => ({ puntiPerItem: 1, items: Array(n).fill({ a: 0 }) })) : Array.from({ length: m.teile }, () => ({}))
+    prove: m.punteggio ? m.items.map(n => ({ puntiPerItem: 1, items: Array(n).fill({ a: 0 }) })) : Array.from({ length: m.teile }, () => m.id === "scritta" ? { t: "schreiben", scelta: [option(), option()] } : ({}))
   })) };
 }
 
@@ -441,4 +442,16 @@ test("telc band result: the maximum is the weighted sum of the tallies, and an o
   const e = C.esito({ ascolto: { punti: 20, max: 46 }, lettura: { punti: 11, max: 18 }, sprachbausteine: { punti: 0, max: 18 } }, f);
   assert.equal(e.max, 82);
   assert.equal(C.esito({ ascolto: { punti: 60, max: 60 } }, f).fascia, null);
+});
+
+ test("telc writing requires two complete form choices", () => {
+  const C = silnik();
+  for (const change of [t => { t.scelta.pop(); }, t => { delete t.scelta[1].parole; }, t => { t.scelta[1].modulo.righe = []; },
+    t => { t.scelta[1].titolo = 3; }, t => { delete t.scelta[0].consegna; }, t => { t.scelta[1].modulo.intestazione = null; },
+    t => { t.scelta[0].parole.min = "2"; }, t => { t.scelta[1].parole.max = undefined; }]) {
+    const sim = telcFixture(C);
+    assert.deepEqual(Array.from(C.conforme(sim)), []);
+    change(sim.sezioni[3].prove[0]);
+    assert.ok(C.conforme(sim).includes("scelta: scritta-1"));
+  }
 });
