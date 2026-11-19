@@ -114,6 +114,8 @@ test('human stage is n/a below B2 and requires an ESITO line above it', t => {
   assert.equal(check(root, '--stage', 'human').status, 1);
   put(root, 'specs/german-course/reviews/b2-u01-human.md', '<!-- picked lessons -->\nb2-u01-l1\n');
   assert.equal(check(root, '--stage', 'human').status, 1);
+  put(root, 'specs/german-course/reviews/b2-u01-human.md', '<!-- picked lessons -->\nb2-u01-l1\nESITO:   \n');
+  assert.equal(check(root, '--stage', 'human').status, 1, 'an ESITO with no result is not a review');
   put(root, 'specs/german-course/reviews/b2-u01-human.md', '<!-- picked lessons -->\nb2-u01-l1\nESITO: ok\n');
   assert.equal(check(root, '--stage', 'human').status, 0);
 });
