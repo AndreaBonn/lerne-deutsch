@@ -223,6 +223,17 @@ describe("the cache key", () => {
       R.cacheKey("de", TASK, "prendo un caffè"));
   });
 
+  test("the same sentence asked against different accepted answers is a different question", () => {
+    /* The verdict answers "is this a valid variant of THESE answers?". Two
+       exercises that share a student sentence but expect different things
+       must not share a cached promotion. */
+    const R = rules();
+    const kawa = { ...TASK, accepted: ["Ich nehme einen Kaffee"] };
+    const herbata = { ...TASK, accepted: ["Ich nehme einen Tee"] };
+    assert.notEqual(R.cacheKey("pl", kawa, "Ich nehme Kaffee"), R.cacheKey("pl", herbata, "Ich nehme Kaffee"));
+    assert.equal(R.cacheKey("pl", kawa, "Ich nehme Kaffee"), R.cacheKey("pl", { ...kawa }, "Ich nehme Kaffee"));
+  });
+
   test("a different sentence is a different question", () => {
     const R = rules();
     assert.notEqual(R.cacheKey("pl", TASK, "prendo un caffè"),
