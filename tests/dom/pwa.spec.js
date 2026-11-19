@@ -87,15 +87,21 @@ test("with the network gone the page still opens", async ({ page, context }) => 
    version is the constant in sw.js. Cache-first would freeze the student on
    old code after a forgotten bump — irreversibly from their side and
    invisibly from ours. */
-test("the code is fetched from the network while there is a network", async ({ page }) => {
+test("the code is fetched from the network while there is a network", async ({ page, context }) => {
   await workerGotowy(page);
 
-  const zadania = [];
-  page.on("request", r => { if (r.url().includes("/assets/js/core.js")) zadania.push(r.url()); });
+  /* The network answers with a marked core.js. Cache-first would serve the
+     copy cached at install, which has no mark: a listener on "request" could
+     not tell the two apart, since the page asks either way. */
+  await context.route("**/assets/js/core.js", async route => {
+    const res = await route.fetch();
+    await route.fulfill({ response: res, body: (await res.text()) + "\nwindow.__zSieci = true;" });
+  });
   await page.reload();
   await page.waitForFunction(() => window.Core);
 
-  expect(zadania.length, "core.js went to the network rather than straight to the cache").toBeGreaterThan(0);
+  expect(await page.evaluate(() => window.__zSieci === true),
+    "core.js came from the cache although the network answered").toBe(true);
 });
 
 test("recordings are not fetched a second time", async ({ page }) => {
@@ -126,18 +132,36 @@ test("recordings are not fetched a second time", async ({ page }) => {
   expect(wynik.wPamieci, `the recording ${wynik.url} did not reach the cache ${wynik.nazwy}`).toBe(true);
 });
 
-test("a foreign origin is not intercepted", async ({ page }) => {
-  await workerGotowy(page);
-  const obce = await page.evaluate(async () => {
-    const nazwy = await caches.keys();
-    const wszystkie = [];
-    for (const n of nazwy) {
-      const c = await caches.open(n);
-      for (const k of await c.keys()) {
-        if (new URL(k.url).origin !== location.origin) wszystkie.push(k.url);
+/* The course CSP allows connect-src 'self' only, so the page itself cannot
+   reach a foreign origin; what the guard defends against is an extension's
+   request, which CSP does not stop. Bypassing CSP stands in for that. */
+test.describe("a foreign request", () => {
+  test.use({ bypassCSP: true });
+
+  test("a foreign origin is not intercepted", async ({ page, context }) => {
+    await workerGotowy(page);
+    /* A foreign request that really happens and answers with CORS, so that a
+       worker without the origin guard would get an ok response and cache it.
+       Without the request the cache is empty of foreign entries by default. */
+    const obcy = "https://obcy.example/skrypt.js";
+    await context.route(obcy, route => route.fulfill({
+      status: 200, body: "1", headers: { "access-control-allow-origin": "*", "content-type": "text/javascript" }
+    }));
+    const odpowiedz = await page.evaluate(async u => (await fetch(u)).status, obcy);
+    expect(odpowiedz, "the foreign request did not happen, so the test proves nothing").toBe(200);
+    await page.waitForTimeout(300);
+
+    const obce = await page.evaluate(async () => {
+      const nazwy = await caches.keys();
+      const wszystkie = [];
+      for (const n of nazwy) {
+        const c = await caches.open(n);
+        for (const k of await c.keys()) {
+          if (new URL(k.url).origin !== location.origin) wszystkie.push(k.url);
+        }
       }
-    }
-    return wszystkie;
+      return wszystkie;
+    });
+    expect(obce, `foreign addresses landed in the cache: ${obce.join(", ")}`).toEqual([]);
   });
-  expect(obce, `foreign addresses landed in the cache: ${obce.join(", ")}`).toEqual([]);
 });
