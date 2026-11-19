@@ -21,7 +21,7 @@ export function moduleDefinition(id, course, target) {
   const codes = [...(course.levels || []).map(level => level.code), ...Object.keys(target.levels || {})];
   const pseudo = codes.filter(code => code && !LEVELS.includes(code)).map(code => code.toLowerCase());
   const cefrLibrary = course.library.filter(item => !item.id?.split(/[-_]/).some(token => pseudo.includes(token)));
-  let items, count, files, prefix, levels;
+  let items, count, files, prefix, levels, ownLevel;
   if (id === 'readings' || /^readings-[abc]$/.test(id)) {
     levels = id === 'readings' ? LEVELS : GROUPS[id.slice(-1)];
     items = readings.filter(item => levels.includes(item.cefr) || levels.includes(item.id?.match(/(?:^|[-_])([abc][12])(?:[-_]|$)/i)?.[1]?.toUpperCase()));
@@ -32,7 +32,8 @@ export function moduleDefinition(id, course, target) {
     /* A pseudo-level groups content whose CEFR remains a real proficiency
        level. The review bundle reads porting-target.json alone, without the
        own levels: there the CEFR check is skipped, the selection is the same. */
-    levels = target.levels?.[code.toUpperCase()]?.cefrLabel?.split('-');
+    ownLevel = target.levels?.[code.toUpperCase()];
+    levels = ownLevel?.cefrLabel?.split('-');
     items = course.library.filter(item => item.id?.split(/[-_]/).includes(code));
     count = secondary[id] ?? 1;
     files = [`library-${code}.js`]; prefix = 'read';
@@ -56,13 +57,16 @@ export function moduleDefinition(id, course, target) {
     const [global, key, file, patch, fallback] = definition;
     items = course[global] || [];
     if (id === 'conv-1') items = items.slice(0, 7);
-    if (id === 'conv-2') items = items.slice(7, 14);
+    /* Own scenes are appended, so conv-2 runs to the end: a fixed slice would
+       drop them in silence. `extra` (own-target.json) adds their count. */
+    if (id === 'conv-2') items = items.slice(7);
+    const extra = id === 'conv-1' ? 0 : target.extra?.[key] ?? 0;
     count = id === 'phonetics' ? GERMAN_PHONETIC_SETS
-      : id === 'interference' ? secondary.interference || {} : (id.startsWith('conv-') ? fallback : secondary[key] ?? fallback);
+      : id === 'interference' ? secondary.interference || {} : (id.startsWith('conv-') ? fallback : secondary[key] ?? fallback) + extra;
     files = file ? [file] : []; prefix = patch;
   }
   const advanced = ['readings', 'readings-c', 'library', 'library-b2', 'library-c1', 'library-c2'].includes(id);
-  return { id, items, count, files, prefix, levels, advanced, pairCount: secondary.minimalPairs?.pairs ?? 21 };
+  return { id, items, count, files, prefix, levels, advanced, ownLevel, pairCount: secondary.minimalPairs?.pairs ?? 21 };
 }
 
 export function moduleCoreErrors(module) {

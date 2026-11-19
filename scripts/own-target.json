@@ -882,5 +882,8 @@
   },
   "secondary": {
     "library-pfl": 3
+  },
+  "extra": {
+    "chat": 3
   }
 }

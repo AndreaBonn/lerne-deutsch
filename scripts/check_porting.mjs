@@ -233,8 +233,8 @@ function checkModules({ root, course, target, ids, stages }) {
       } else if (stage === 'review') {
         ({ errors, notes } = reviewResult({ root, id, languages: languages.length ? languages : ['it'], module: true }));
       } else if (stage === 'human') {
-        errors = humanErrors({ root, id, level: module.advanced ? 'C1' : 'A1' });
-        if (!module.advanced) notes = ['n/a (not advanced)'];
+        errors = humanErrors({ root, id, level: module.advanced ? 'C1' : 'A1', ownLevel: module.ownLevel });
+        if (!module.advanced && !module.ownLevel?.human) notes = ['n/a (not advanced)'];
       } else {
         const strings = moduleAudio(module);
         if (!strings.primary.length && !strings.other.length && ['writing', 'chat'].includes(id)) notes = ['n/a (no recorded speech by design)'];
@@ -286,9 +286,17 @@ function main() {
   }
   /* Own secondary modules (library-pfl) follow the same rule as own units. */
   target.secondary = target.secondary || {};
+  const upstreamSecondary = new Set(Object.keys(target.secondary));
   for (const [key, count] of Object.entries(own.secondary || {})) {
     if (key in target.secondary) throw new Error(`own-target.json redefines upstream secondary ${key}`);
     target.secondary[key] = count;
+  }
+  /* Own items appended to an upstream module add to its count; a key upstream
+     does not count would be a module of its own, not an addition. */
+  target.extra = {};
+  for (const [key, count] of Object.entries(own.extra || {})) {
+    if (!upstreamSecondary.has(key)) throw new Error(`own-target.json extra ${key} has no upstream count`);
+    target.extra[key] = count;
   }
   const checkOwnUnits = args => checkUnits({ ...args, ownLevels });
   const results = options.all ? checkAll({ root, target, course,
