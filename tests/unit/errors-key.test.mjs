@@ -84,6 +84,37 @@ describe("the content signature", () => {
       box.sandbox.Errors.sigOf({ say: "io sono", a: ["sono"], t: "fill" })
     );
   });
+
+  /* The signature is part of every saved card key. Equality tests above stay
+     green when the hash itself changes, and a changed hash orphans the whole
+     mistake notebook of every student. The oracle is FNV-1a 32 written again
+     here with BigInt, checked against the published FNV test vectors, over the
+     canonical string "t=mcq&a=1". */
+  test("it is FNV-1a over the canonical string, so saved card keys stay valid across releases", () => {
+    const fnv1a = (s, seed) => {
+      let h = BigInt(seed);
+      for (let i = 0; i < s.length; i++) {
+        h ^= BigInt(s.charCodeAt(i));
+        h = (h * 16777619n) & 0xffffffffn;
+      }
+      return h.toString(16).padStart(8, "0");
+    };
+    assert.equal(fnv1a("foobar", 2166136261), "bf9cf968", "the reference matches the FNV test vector");
+
+    const box = silnik();
+    const canon = "t=mcq&a=1";
+    assert.equal(box.sandbox.Errors.sigOf({ t: "mcq", a: 1 }), fnv1a(canon, 2166136261) + fnv1a(canon, 40389));
+    assert.equal(box.sandbox.Errors.sigOf({ t: "mcq", a: 1 }), "ebcc496e5e38496e");
+  });
+
+  test("two conjugation drills that differ only in tense or persons get different signatures", () => {
+    const box = silnik();
+    const sig = box.sandbox.Errors.sigOf;
+    const praes = { t: "conj", verb: "sein", tense: "praes", persons: [0, 1] };
+    assert.notEqual(sig(praes), sig({ ...praes, tense: "praet" }));
+    assert.notEqual(sig(praes), sig({ ...praes, persons: [2, 3] }));
+    assert.equal(sig(praes), sig({ ...praes }), "the same exercise keeps its signature");
+  });
 });
 
 describe("the card key", () => {
