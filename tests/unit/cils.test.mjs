@@ -289,10 +289,12 @@ test("conforme reports each contract violation beside a conforming fixture", () 
   /* Every shipped simulation is a complete exam in the declared format. */
   assert.ok(C.simulazioni().length >= 2);
   C.simulazioni().forEach(sim => assert.deepEqual(Array.from(C.conforme(sim)), [], sim.id));
-  /* The telc Pflege mock exam ships and is complete in its own format. */
-  const pflege = C.sim("pfl-sim-1");
-  assert.ok(pflege && pflege.formato === "telc-pflege");
-  assert.deepEqual(Array.from(C.conforme(pflege)), []);
+  /* Both telc Pflege mock exams ship and are complete in their own format. */
+  for (const id of ["pfl-sim-1", "pfl-sim-2"]) {
+    const pflege = C.sim(id);
+    assert.ok(pflege && pflege.formato === "telc-pflege", id);
+    assert.deepEqual(Array.from(C.conforme(pflege)), [], id);
+  }
 });
 
 test("each measured module uses its own weighted maximum and the format threshold", () => {

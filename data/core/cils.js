@@ -8,7 +8,7 @@
    and `parity.mjs` has nothing to compare.
 
    Two complete Goethe mock exams (Modelltest 1 and 2, all four modules) and
-   one telc Pflege mock exam (pfl-sim-1, all five modules). The file
+   two telc Pflege mock exams (pfl-sim-1 and pfl-sim-2, all five modules). The file
    keeps its old name and its Italian field names (`sezioni`, `prove`,
    `lettura`, `titoloIt`) by design, because the engine reads them. The
    content is original; no official exam material is reproduced. The screen
@@ -3217,6 +3217,657 @@ window.CILS = [
                   "Ich brauche mein Handy, damit meine Familie mich im Notfall erreichen kann.",
                   "Mit einer Übersetzungs-App kann ich mich mit Patienten verständigen, die kein Deutsch sprechen.",
                   "Fotos und Nachrichten auf privaten Geräten sind ein Risiko für den Datenschutz."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: "pfl-sim-2",
+    titoloIt: "Pflege Modelltest 2",
+    official: false,
+    formato: "telc-pflege",
+    sezioni: [
+      {
+        id: "ascolto",
+        modulo: "Hören",
+        minuti: 25,
+        prove: [
+          {
+            t: "mc",
+            puntiPerItem: 1,
+            consegna: "Sie hören vier Nachrichten auf dem Anrufbeantworter des ambulanten Pflegedienstes Elbaue. Zu jeder Nachricht lösen Sie eine Aufgabe. Wählen Sie die richtige Lösung a, b oder c. Sie hören jede Nachricht zweimal.",
+            brani: [
+              [
+                { it: "Guten Tag, hier ist Petra Lohmann von der Apotheke am Markt.", sp: "A" },
+                { it: "Es geht um die Teststreifen für das Blutzuckermessgerät von Herrn Albers, die Sie heute früh bestellt haben.", sp: "A" },
+                { it: "Diese Sorte haben wir im Moment leider nicht da. Der Großhandel liefert erst morgen früh.", sp: "A" },
+                { it: "Ab zehn Uhr können Sie die Streifen dann bei uns abholen.", sp: "A" },
+                { it: "Wenn es schneller gehen muss, bringt unser Bote sie morgen Nachmittag auch vorbei. Dann rufen Sie mich bitte kurz an.", sp: "A" }
+              ],
+              [
+                { it: "Guten Tag, hier spricht Bernd Schäfer. Ich bin der Sohn von Elfriede Schäfer aus der Lindenstraße.", sp: "B" },
+                { it: "Meine Mutter hat am nächsten Dienstag um neun Uhr einen Termin beim Augenarzt, und ich fahre sie hin.", sp: "B" },
+                { it: "Könnte Ihre Kollegin an diesem Tag schon um halb acht kommen und nicht wie sonst um halb neun?", sp: "B" },
+                { it: "Ich hole meine Mutter um Viertel nach acht ab.", sp: "B" },
+                { it: "Bitte rufen Sie mich zurück und sagen Sie mir, ob das möglich ist. Meine Handynummer haben Sie.", sp: "B" }
+              ],
+              [
+                { it: "Guten Tag, Andrea Voss aus der Hausarztpraxis Dr. Mehnert.", sp: "A" },
+                { it: "Ich rufe wegen Herrn Albers und seiner Wunde am Fuß an. Dr. Mehnert hat sich Ihre Fotos von gestern angesehen.", sp: "A" },
+                { it: "Er möchte die Wunde am Donnerstag bei seinem Hausbesuch selbst untersuchen.", sp: "A" },
+                { it: "Bis dahin versorgen Sie die Wunde bitte weiter wie bisher.", sp: "A" },
+                { it: "Und machen Sie bei jedem Verbandwechsel ein Foto für die Dokumentation.", sp: "A" }
+              ],
+              [
+                { it: "Hallo zusammen, hier ist Uwe Kaminski aus dem Büro.", sp: "B" },
+                { it: "Unser blauer Dienstwagen muss am Montag für zwei Tage in die Werkstatt.", sp: "B" },
+                { it: "Wer am Montag die Tour Nord fährt, nimmt bitte das kleine Elektroauto.", sp: "B" },
+                { it: "Der Schlüssel dafür hängt nicht wie sonst im Schlüsselkasten, sondern liegt bei mir im Büro.", sp: "B" },
+                { it: "Ich bin am Montag ab sieben Uhr da.", sp: "B" }
+              ]
+            ],
+            items: [
+              {
+                q: "Wann kann der Pflegedienst die Teststreifen abholen?",
+                opts: ["heute Nachmittag", "morgen ab zehn Uhr", "morgen früh vor der Lieferung"],
+                a: 1
+              },
+              {
+                q: "Was möchte Herr Schäfer?",
+                opts: [
+                  "dass der Pflegedienst seine Mutter zum Augenarzt bringt",
+                  "dass der Besuch am Dienstag ausfällt",
+                  "dass die Pflegekraft am Dienstag früher kommt"
+                ],
+                a: 2
+              },
+              {
+                q: "Was soll der Pflegedienst bis Donnerstag tun?",
+                opts: [
+                  "die Wunde wie bisher versorgen und fotografieren",
+                  "mit Herrn Albers in die Praxis kommen",
+                  "neues Verbandmaterial in der Praxis abholen"
+                ],
+                a: 0
+              },
+              {
+                q: "Was muss die Pflegekraft der Tour Nord am Montag tun?",
+                opts: [
+                  "mit ihrem privaten Auto fahren",
+                  "die Tour erst um sieben Uhr beginnen",
+                  "den Autoschlüssel im Büro abholen"
+                ],
+                a: 2
+              }
+            ]
+          },
+          {
+            t: "mc",
+            puntiPerItem: 1,
+            consegna: "Sie hören drei Gespräche aus dem Pflegealltag. Lösen Sie zuerst die Aufgaben 1 bis 5: Sind die Aussagen richtig oder falsch? Lösen Sie dann die Aufgaben 6 bis 10: Wählen Sie die richtige Lösung a, b oder c. Sie hören jedes Gespräch zweimal.",
+            brani: [
+              [
+                { it: "Guten Morgen, Herr Berger. Ich bin Dr. Neumann und heute die Stationsärztin. Wie geht es Herrn Hahn?", sp: "A" },
+                { it: "Die Wunde an seiner Fußsohle sieht besser aus. Sie ist kleiner geworden, und der Rand ist nicht mehr gerötet.", sp: "B" },
+                { it: "Das freut mich. Dann bleibt es beim Verbandwechsel jeden zweiten Tag.", sp: "A" },
+                { it: "Sorgen macht mir eher sein Blutzucker. Heute früh war der Wert deutlich zu hoch.", sp: "B" },
+                { it: "Gestern Abend hat ihm seine Frau Kuchen mitgebracht, und er hat zwei Stücke gegessen.", sp: "B" },
+                { it: "Das erklärt einiges. Sprechen Sie bitte mit den beiden, aber ohne Vorwurf.", sp: "A" },
+                { it: "Morgen um zehn kommt die Diabetesberaterin. Es wäre gut, wenn Frau Hahn dabei sein könnte.", sp: "A" },
+                { it: "Ich rufe sie nachher an. Noch etwas: Herr Hahn geht nachts ohne seinen Spezialschuh zur Toilette.", sp: "B" },
+                { it: "Das ist schlecht für die Wunde. Er muss den Schuh bei jedem Schritt tragen, auch auf kurzen Wegen.", sp: "A" },
+                { it: "Stellen Sie ihn abends direkt vor das Bett, dann vergisst er ihn nicht.", sp: "A" }
+              ],
+              [
+                { it: "Kemal, zuerst Frau Brunner aus Zimmer zwölf. Sie ist gestern Abend im Bad gestürzt.", sp: "A" },
+                { it: "Oh nein. Hat sie sich verletzt?", sp: "B" },
+                { it: "Zum Glück nicht. Der Nachtdienst hat sie gründlich angesehen und nichts gefunden.", sp: "A" },
+                { it: "Die Hausärztin weiß Bescheid und schaut morgen bei ihr vorbei. Aber Frau Brunner hat jetzt Angst, allein ins Bad zu gehen.", sp: "A" },
+                { it: "Trägt sie die Hüftschutzhose, die wir ihr letzte Woche gegeben haben?", sp: "B" },
+                { it: "Nein, die findet sie unbequem und zu dick unter dem Rock.", sp: "A" },
+                { it: "Biete sie ihr bitte heute noch einmal an und erklär ihr in Ruhe, wofür sie gut ist. Zwingen dürfen wir sie nicht.", sp: "A" },
+                { it: "Gut. Und wie geht es Herrn Lehmann?", sp: "B" },
+                { it: "Er hat heute seinen neunzigsten Geburtstag. Um drei kommt die ganze Familie, sie feiern im kleinen Aufenthaltsraum.", sp: "A" },
+                { it: "Sein Hörgerät hat heute früh gepfiffen. Neue Batterien liegen in seiner Nachttischschublade.", sp: "A" },
+                { it: "Setz sie ihm bitte vor dem Besuch ein, sonst versteht er niemanden.", sp: "A" }
+              ],
+              [
+                { it: "Frau Stein, ich wollte Sie etwas fragen. Ich messe meinen Blutzucker jetzt seit drei Wochen allein. Das klappt doch gut, oder?", sp: "B" },
+                { it: "Ja, das machen Sie sehr ordentlich, Herr Wolff. Ich trage Ihre Werte jeden Morgen ein, und sie sind stabil.", sp: "A" },
+                { it: "Dann brauche ich Sie morgens doch eigentlich nicht mehr. Ich würde gern einmal ausschlafen.", sp: "B" },
+                { it: "Das verstehe ich gut. Allein entscheiden kann ich das aber nicht.", sp: "A" },
+                { it: "Unsere Besuche hat Ihre Hausärztin verordnet, und nur sie kann die Verordnung ändern.", sp: "A" },
+                { it: "Ich spreche heute mit meiner Pflegedienstleitung, und dann rufen wir in der Praxis an.", sp: "A" },
+                { it: "Das wäre schön. Noch etwas anderes: Meine Fußnägel sind wieder zu lang. Kann ich die selbst schneiden?", sp: "B" },
+                { it: "Bitte nicht. Bei Diabetes heilen schon kleine Verletzungen am Fuß schlecht.", sp: "A" },
+                { it: "Das macht besser eine Podologin. Ich gebe Ihnen nachher eine Adresse hier im Viertel.", sp: "A" },
+                { it: "Und das Eincremen?", sp: "B" },
+                { it: "Das dürfen Sie gern selbst machen, aber nicht zwischen den Zehen. Dort muss die Haut trocken bleiben.", sp: "A" }
+              ]
+            ],
+            items: [
+              { q: "Die Wunde von Herrn Hahn ist kleiner geworden.", opts: ["richtig", "falsch"], a: 0 },
+              { q: "Herr Hahn hatte heute Morgen einen zu niedrigen Blutzucker.", opts: ["richtig", "falsch"], a: 1 },
+              { q: "Frau Brunner hat sich beim Sturz nicht verletzt.", opts: ["richtig", "falsch"], a: 0 },
+              { q: "Die Hausärztin kommt noch heute zu Frau Brunner.", opts: ["richtig", "falsch"], a: 1 },
+              { q: "Herr Wolff möchte, dass der Pflegedienst morgens nicht mehr kommt.", opts: ["richtig", "falsch"], a: 0 },
+              {
+                q: "Was sagt Dr. Neumann über den Spezialschuh?",
+                opts: [
+                  "Herr Hahn braucht ihn nur tagsüber.",
+                  "Herr Hahn soll ihn auch auf kurzen Wegen tragen.",
+                  "Herr Hahn soll ihn nachts neben die Tür stellen."
+                ],
+                a: 1
+              },
+              {
+                q: "Was soll Kemal bei Frau Brunner tun?",
+                opts: [
+                  "ihr die Hüftschutzhose noch einmal anbieten und erklären",
+                  "sie nur noch im Rollstuhl ins Bad bringen",
+                  "für sie eine dünnere Hüftschutzhose bestellen"
+                ],
+                a: 0
+              },
+              {
+                q: "Was soll Kemal vor dem Besuch bei Herrn Lehmann tun?",
+                opts: [
+                  "den Tisch im Aufenthaltsraum decken",
+                  "die Familie am Eingang abholen",
+                  "neue Batterien in das Hörgerät einsetzen"
+                ],
+                a: 2
+              },
+              {
+                q: "Was sagt Frau Stein zu den Besuchen am Morgen?",
+                opts: [
+                  "Sie fallen ab nächster Woche weg.",
+                  "Über eine Änderung entscheidet die Hausärztin.",
+                  "Herr Wolff kann sie selbst beim Pflegedienst absagen."
+                ],
+                a: 1
+              },
+              {
+                q: "Was rät Frau Stein Herrn Wolff zur Fußpflege?",
+                opts: [
+                  "die Nägel selbst kurz zu schneiden",
+                  "die Füße auch zwischen den Zehen einzucremen",
+                  "die Nägel von einer Podologin schneiden zu lassen"
+                ],
+                a: 2
+              }
+            ]
+          },
+          {
+            t: "mc",
+            puntiPerItem: 1,
+            consegna: "Sie hören eine Teambesprechung im Seniorenheim Haus Birkenhof. Es sprechen die Pflegedienstleitung Frau Kowalski, Martin Jansen und Julia Marx. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c. Sie hören das Gespräch zweimal.",
+            brani: [
+              [
+                { it: "Frau Kowalski: Guten Tag zusammen. Heute geht es um drei Dinge: die neue Dienstplan-App, die Fortbildungen im Herbst und die Hitze in den nächsten Wochen.", sp: "A" },
+                { it: "Frau Kowalski: Ab dem ersten Juli planen wir die Dienste nur noch über die App. Eure Wünsche für freie Tage tragt ihr dort bis zum Fünfzehnten des Vormonats ein.", sp: "A" },
+                { it: "Martin Jansen: Ich habe kein Diensthandy, und mein privates Handy möchte ich dafür eigentlich nicht benutzen.", sp: "B" },
+                { it: "Frau Kowalski: Das musst du auch nicht, Martin. Im Dienstzimmer steht ein Tablet, darauf kannst du dich genauso anmelden.", sp: "A" },
+                { it: "Julia Marx: Bekommen wir eine Einführung in die App?", sp: "A" },
+                { it: "Frau Kowalski: Ja, am Mittwoch um halb drei, direkt nach der Übergabe. Sie dauert etwa eine halbe Stunde.", sp: "A" },
+                { it: "Frau Kowalski: Zweites Thema: Für die Fortbildung zur Wundversorgung im Oktober haben wir zwei Plätze. Wer Interesse hat, meldet sich bis Ende der Woche bei mir.", sp: "A" },
+                { it: "Julia Marx: Ich hätte großes Interesse. Wir haben im Moment drei Bewohner mit chronischen Wunden, und ich möchte da sicherer werden.", sp: "A" },
+                { it: "Martin Jansen: Ich würde lieber die Fortbildung über Demenz machen. Gibt es die dieses Jahr wieder?", sp: "B" },
+                { it: "Frau Kowalski: Die gibt es, aber erst im November, und sie findet online statt. Anmelden kannst du dich ab September im Intranet.", sp: "A" },
+                { it: "Frau Kowalski: Zum Schluss die Hitze. Für nächste Woche sind über dreißig Grad angesagt.", sp: "A" },
+                { it: "Frau Kowalski: Bitte bietet den Bewohnern jede Stunde etwas zu trinken an, auch wenn sie nicht danach fragen. Auf jedem Flur stellen wir eine Trinkstation mit Wasser und Tee auf.", sp: "A" },
+                { it: "Julia Marx: Sollen wir die Spaziergänge im Garten dann ausfallen lassen?", sp: "A" },
+                { it: "Frau Kowalski: Ausfallen lassen nicht, aber auf den Vormittag vor elf Uhr verlegen. Und die Rollläden auf der Südseite bleiben ab Mittag unten.", sp: "A" },
+                { it: "Martin Jansen: Ich sorge dafür, dass die Ventilatoren aus dem Keller geholt werden.", sp: "B" },
+                { it: "Frau Kowalski: Danke, Martin. Dann bis morgen.", sp: "A" }
+              ]
+            ],
+            items: [
+              {
+                q: "Wie können Mitarbeitende ohne Diensthandy ihre Wünsche eintragen?",
+                opts: [
+                  "über ein Tablet im Dienstzimmer",
+                  "mit dem privaten Smartphone",
+                  "auf einem Zettel bei Frau Kowalski"
+                ],
+                a: 0
+              },
+              {
+                q: "Bis wann müssen die Wünsche für freie Tage in der App stehen?",
+                opts: [
+                  "bis zum ersten des Monats",
+                  "bis zum Fünfzehnten des Vormonats",
+                  "bis Mittwoch nach der Übergabe"
+                ],
+                a: 1
+              },
+              {
+                q: "Warum möchte Julia Marx an der Fortbildung zur Wundversorgung teilnehmen?",
+                opts: [
+                  "Sie muss sie für ihre Ausbildung machen.",
+                  "Sie leitet ab Oktober das Wundteam.",
+                  "Sie möchte bei chronischen Wunden sicherer werden."
+                ],
+                a: 2
+              },
+              {
+                q: "Was erfährt man über die Fortbildung zum Thema Demenz?",
+                opts: [
+                  "Sie findet im Oktober im Haus statt.",
+                  "Sie ist im November und findet online statt.",
+                  "Es gibt dafür keine freien Plätze mehr."
+                ],
+                a: 1
+              },
+              {
+                q: "Was gilt bei Hitze für die Spaziergänge im Garten?",
+                opts: [
+                  "Sie finden nur am Vormittag statt.",
+                  "Sie fallen aus.",
+                  "Sie werden auf den Abend verlegt."
+                ],
+                a: 0
+              },
+              {
+                q: "Was übernimmt Martin Jansen?",
+                opts: [
+                  "Er stellt die Trinkstationen auf.",
+                  "Er schließt mittags die Rollläden.",
+                  "Er sorgt dafür, dass die Ventilatoren geholt werden."
+                ],
+                a: 2
+              }
+            ]
+          },
+          {
+            t: "abbina",
+            puntiPerItem: 1,
+            consegna: "Sie hören drei Personen zum Thema: Sollen in der Pflege mehr Roboter und digitale Geräte eingesetzt werden? Welche Aussage a bis e passt zu welcher Person? Zwei Aussagen passen zu keiner Person. Wenn keine Aussage passt, wählen Sie 0. Sie hören jede Person zweimal.",
+            brani: [
+              [
+                { it: "Ich heiße Jonas Reuter und arbeite seit zwölf Jahren als Altenpfleger.", sp: "B" },
+                { it: "Mein Rücken ist nach so vielen Jahren nicht mehr der beste. Ein Gerät, das mir hilft, einen schweren Bewohner aus dem Bett zu heben, nehme ich sofort.", sp: "B" },
+                { it: "Aber trösten, zuhören, eine Hand halten: Das kann keine Maschine. Das muss bei uns Menschen bleiben.", sp: "B" }
+              ],
+              [
+                { it: "Mein Name ist Elke Hansen. Meine Mutter lebt seit einem Jahr in einem Pflegeheim, zweihundert Kilometer von mir entfernt.", sp: "A" },
+                { it: "Dort gibt es jetzt ein Tablet, mit dem wir uns jeden Sonntag per Video sehen. Sie freut sich jedes Mal riesig.", sp: "A" },
+                { it: "Ohne diese Technik würde ich sie nur alle paar Monate sehen. Für Familien wie unsere ist das ein großes Geschenk.", sp: "A" }
+              ],
+              [
+                { it: "Ich bin Frank Oberländer und leite die Weiterbildung in einem großen Klinikverbund.", sp: "B" },
+                { it: "Wir haben schon viele teure Geräte gekauft, die heute im Schrank liegen. Das Problem ist nicht die Technik selbst.", sp: "B" },
+                { it: "Den Kolleginnen und Kollegen fehlte einfach die Zeit, den Umgang damit richtig zu lernen. Ohne Schulung in der Arbeitszeit bringt die beste Technik gar nichts.", sp: "B" }
+              ]
+            ],
+            annunci: [
+              { titolo: "Zu teuer", testo: "Das Geld für Technik fehlt dann für zusätzliches Personal." },
+              { titolo: "Hilfe für den Körper", testo: "Maschinen sollen schwere körperliche Arbeit übernehmen, die Zuwendung bleibt bei Menschen." },
+              { titolo: "Kein Platz für Roboter", testo: "Roboter haben in einem Pflegeheim grundsätzlich nichts zu suchen." },
+              { titolo: "Erst lernen", testo: "Neue Technik nützt nur, wenn die Beschäftigten Zeit bekommen, sie richtig zu lernen." },
+              { titolo: "Nähe trotz Entfernung", testo: "Digitale Geräte helfen Familien, in Kontakt zu bleiben." }
+            ],
+            items: [
+              { q: "Jonas Reuter, Altenpfleger", a: 1 },
+              { q: "Elke Hansen, Tochter einer Bewohnerin", a: 4 },
+              { q: "Frank Oberländer, Leiter der Weiterbildung", a: 3 }
+            ]
+          }
+        ]
+      },
+      {
+        id: "lettura",
+        modulo: "Lesen",
+        minuti: 60,
+        prove: [
+          {
+            t: "abbina",
+            puntiPerItem: 1,
+            consegna: "Lesen Sie die vier E-Mails und die Betreffzeilen a bis f. Welche Betreffzeile passt zu welcher E-Mail? Jede Betreffzeile passt höchstens einmal. Zwei Betreffzeilen bleiben übrig. Wenn keine Betreffzeile passt, wählen Sie 0.",
+            testo: [
+              "E-Mail 1: Liebe Kolleginnen und Kollegen der Wohnbereiche, ab dem 1. Mai bestellen Sie Sonderkost, also zum Beispiel Diabeteskost, passierte Kost oder vegetarische Gerichte, bitte nur noch über das Formular im Intranet. Bestellungen für den nächsten Tag müssen bis vierzehn Uhr bei uns sein. Zettel und Anrufe können wir dann leider nicht mehr berücksichtigen. Vielen Dank, Holger Brandl, Küche Haus Birkenhof",
+              "E-Mail 2: Sehr geehrte Damen und Herren, mein Großvater, Herr Georg Wendland, wohnt seit März im Wohnbereich 3. Er hatte früher immer Hunde und erzählt oft von ihnen. Ich habe einen ruhigen, älteren Labrador und würde ihn gern zu meinem nächsten Besuch mitbringen. Ist das bei Ihnen erlaubt, und muss ich dabei etwas beachten? Freundliche Grüße, Laura Wendland",
+              "E-Mail 3: Hallo zusammen, ich war letzte Woche drei Tage auf einer Fortbildung zur Kinästhetik. Ich habe viele praktische Ideen mitgebracht, wie wir Bewohner beim Aufstehen unterstützen können, ohne selbst schwer zu heben. Wenn ihr einverstanden seid, zeige ich euch die wichtigsten Übungen in der Teambesprechung am Dienstag. Bringt bequeme Kleidung mit! Liebe Grüße, Nadine",
+              "E-Mail 4: Liebe Kolleginnen und Kollegen, am Donnerstag wird die Heizungsanlage im Wohnbereich 1 gewartet. Zwischen acht und vierzehn Uhr bleiben die Heizkörper dort kalt. Bitte achten Sie darauf, dass die Bewohnerinnen und Bewohner warm genug angezogen sind, und legen Sie bei Bedarf zusätzliche Decken bereit. Mit freundlichen Grüßen, Peter Haag, Haustechnik"
+            ],
+            annunci: [
+              { titolo: "Einladung zum Sommerfest", testo: "" },
+              { titolo: "Arbeiten an der Heizung", testo: "" },
+              { titolo: "Frage nach einem Besuch mit Hund", testo: "" },
+              { titolo: "Neue Regel für die Bestellung von Sonderkost", testo: "" },
+              { titolo: "Beschwerde über das Essen", testo: "" },
+              { titolo: "Bericht von einer Fortbildung", testo: "" }
+            ],
+            items: [
+              { q: "E-Mail 1", a: 3 },
+              { q: "E-Mail 2", a: 2 },
+              { q: "E-Mail 3", a: 5 },
+              { q: "E-Mail 4", a: 1 }
+            ]
+          },
+          {
+            t: "abbina",
+            puntiPerItem: 1,
+            consegna: "Lesen Sie den Auszug aus einer Pflegeplanung und die Maßnahmen a bis g. Welche Maßnahme passt zu welchem Pflegeproblem? Jede Maßnahme passt höchstens einmal. Zwei Maßnahmen bleiben übrig. Wenn keine Maßnahme passt, wählen Sie 0.",
+            titolo: "Pflegeplanung, Pflegedienst Elbaue, ambulante Versorgung",
+            testo: [
+              "Klientin: Margarete Hübner, 77 Jahre. Frau Hübner hat seit fünfzehn Jahren Diabetes Typ 2 und lebt allein in einer Wohnung im zweiten Stock. Ihr Mann ist im letzten Winter gestorben. Wegen einer Augenerkrankung sieht sie schlecht, sie ist aber geistig sehr wach und möchte so lange wie möglich zu Hause bleiben. Der Pflegedienst kommt morgens und abends.",
+              "Pflegeziele: Frau Hübner misst ihren Blutzucker sicher selbst, stürzt nicht, isst regelmäßig, bleibt an den Füßen ohne Verletzung und hat wieder Kontakt zu anderen Menschen."
+            ],
+            annunci: [
+              { titolo: "Kompressionsstrümpfe", testo: "Morgens vor dem Aufstehen die Kompressionsstrümpfe anziehen und abends wieder ausziehen." },
+              { titolo: "Fußkontrolle", testo: "Die Füße täglich auf Druckstellen und kleine Wunden ansehen, eincremen, aber nicht zwischen den Zehen." },
+              { titolo: "Geeignetes Messgerät", testo: "Ein Messgerät mit großer Anzeige und Sprachausgabe besorgen und die Messung gemeinsam üben, bis sie sicher klappt." },
+              { titolo: "Lagerungsplan", testo: "Im Bett alle zwei Stunden die Position wechseln und jede Lagerung dokumentieren." },
+              { titolo: "Kontakt zur Gemeinde", testo: "Über den Seniorentreff der Kirchengemeinde informieren und den Kontakt zum Chor herstellen." },
+              { titolo: "Sicherheit im Bad", testo: "Haltegriffe und eine rutschfeste Matte anbringen lassen und beim Duschen in der Nähe bleiben." },
+              { titolo: "Feste Mahlzeiten", testo: "Mittagessen über einen Menüdienst bestellen, beim Abendbesuch nachfragen, was sie gegessen hat, und es dokumentieren." }
+            ],
+            items: [
+              { q: "Frau Hübner kann die Zahlen auf ihrem Blutzuckermessgerät kaum noch lesen.", a: 2 },
+              { q: "Frau Hübner ist vor drei Wochen in der Dusche ausgerutscht und hat seitdem Angst vor dem Duschen.", a: 5 },
+              { q: "Frau Hübner vergisst oft, mittags zu essen, und ihr Blutzucker schwankt stark.", a: 6 },
+              { q: "Die Haut an den Füßen ist trocken und rissig, kleine Verletzungen spürt Frau Hübner nicht.", a: 1 },
+              { q: "Seit dem Tod ihres Mannes hat Frau Hübner kaum Kontakte. Früher hat sie gern im Chor gesungen.", a: 4 }
+            ]
+          },
+          {
+            t: "mc",
+            puntiPerItem: 1,
+            consegna: "Lesen Sie die drei Texte und die Aufgaben 1 bis 6. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.",
+            testo: [
+              "Text A: Gebrauchsinformation Sanovell Wundgel (Auszug)",
+              "Wofür wird Sanovell Wundgel verwendet? Das Gel hält chronische Wunden feucht, zum Beispiel offene Stellen an den Beinen oder Druckgeschwüre. Ein feuchtes Wundklima unterstützt die Heilung.",
+              "Wann darf Sanovell Wundgel nicht verwendet werden? Bei stark blutenden oder infizierten Wunden und wenn eine Allergie gegen einen der Bestandteile bekannt ist.",
+              "Wie wird Sanovell Wundgel angewendet? Reinigen Sie die Wunde vorher mit einer sterilen Spüllösung. Tragen Sie das Gel nur auf die Wunde auf, nicht auf die gesunde Haut am Rand, und decken Sie es mit einer geeigneten Wundauflage ab.",
+              "Was ist bei der Aufbewahrung zu beachten? Nach dem ersten Öffnen ist die Tube acht Wochen haltbar. Schreiben Sie das Datum des Öffnens auf die Tube. Eine Tube darf nur für eine Person verwendet werden.",
+              "Text B: Aushang der Heimleitung, Haus Birkenhof. Betreff: Magen-Darm-Infektion im Wohnbereich 2",
+              "Im Wohnbereich 2 sind seit Montag mehrere Bewohnerinnen und Bewohner an einer ansteckenden Magen-Darm-Infektion erkrankt. Damit sich die Infektion nicht weiter ausbreitet, sind Besuche dort bis auf Weiteres nicht möglich.",
+              "Ausgenommen sind Besuche bei schwer kranken und sterbenden Menschen. Bitte melden Sie sich in diesem Fall vorher telefonisch im Wohnbereich an.",
+              "Wer den Wohnbereich betritt, zieht am Eingang einen Schutzkittel an und desinfiziert sich vor und nach dem Besuch die Hände. Bitte bringen Sie keine Lebensmittel mit. Die übrigen Wohnbereiche können Sie wie gewohnt besuchen.",
+              "Text C: Verfahrensanweisung Sturzprophylaxe, Pflegedienst Elbaue (Auszug)",
+              "Erstens: Beim Erstbesuch schätzt die Pflegefachkraft das Sturzrisiko ein. Die Einschätzung wird wiederholt, wenn sich der Zustand der Person verändert, und nach jedem Sturz.",
+              "Zweitens: Bei erhöhtem Risiko werden die Wohnung und die Hilfsmittel gemeinsam mit der Person und ihren Angehörigen angesehen. Stolperfallen wie lose Teppiche oder Kabel werden besprochen. Ob etwas verändert wird, entscheidet die Person selbst.",
+              "Drittens: Nach einem Sturz wird noch in derselben Schicht ein Sturzprotokoll ausgefüllt. Hat sich die Person verletzt oder klagt sie über Schmerzen, wird die Hausärztin oder der Hausarzt sofort informiert, in allen anderen Fällen am nächsten Werktag.",
+              "Viertens: Alle Pflegekräfte nehmen einmal im Jahr an der internen Schulung zur Sturzprophylaxe teil."
+            ],
+            items: [
+              {
+                q: "Text A: Wohin wird das Gel aufgetragen?",
+                opts: [
+                  "auf die Wunde und die Haut am Rand",
+                  "nur auf die Wunde",
+                  "auf die Wundauflage, nicht auf die Wunde"
+                ],
+                a: 1
+              },
+              {
+                q: "Text A: Was gilt für eine geöffnete Tube?",
+                opts: [
+                  "Sie darf für mehrere Bewohner benutzt werden.",
+                  "Sie muss im Kühlschrank aufbewahrt werden.",
+                  "Man notiert darauf, wann sie geöffnet wurde."
+                ],
+                a: 2
+              },
+              {
+                q: "Text B: Wer darf den Wohnbereich 2 im Moment besuchen?",
+                opts: [
+                  "alle Angehörigen, wenn sie einen Schutzkittel tragen",
+                  "nur Angehörige von schwer kranken oder sterbenden Bewohnern nach Anmeldung",
+                  "niemand, auch nicht in Ausnahmefällen"
+                ],
+                a: 1
+              },
+              {
+                q: "Text B: Was gilt für die anderen Wohnbereiche?",
+                opts: [
+                  "Dort sind Besuche normal möglich.",
+                  "Dort dürfen keine Lebensmittel mitgebracht werden.",
+                  "Dort müssen alle Besucher einen Schutzkittel tragen."
+                ],
+                a: 0
+              },
+              {
+                q: "Text C: Wer entscheidet, ob ein loser Teppich entfernt wird?",
+                opts: [
+                  "die Pflegefachkraft",
+                  "die Angehörigen",
+                  "die Person, die in der Wohnung lebt"
+                ],
+                a: 2
+              },
+              {
+                q: "Text C: Wann wird die Hausärztin nach einem Sturz ohne Verletzung und ohne Schmerzen informiert?",
+                opts: [
+                  "sofort",
+                  "am nächsten Werktag",
+                  "nur wenn die Person es wünscht"
+                ],
+                a: 1
+              }
+            ]
+          },
+          {
+            t: "vf",
+            puntiPerItem: 1,
+            consegna: "Lesen Sie den Text aus der Informationsmappe für neue Mitarbeitende. Sind die Aussagen 1 bis 3 richtig oder falsch?",
+            titolo: "Lernen im Beruf: Fortbildungen beim Pflegedienst Elbaue",
+            testo: [
+              "Der Pflegedienst Elbaue unterstützt alle Mitarbeitenden dabei, sich fachlich weiterzuentwickeln. Jede Pflegekraft hat im Jahr drei Fortbildungstage, die als Arbeitszeit bezahlt werden. Die Themen wählen Sie selbst aus dem Programm der Bildungsakademie aus.",
+              "Für längere Weiterbildungen, zum Beispiel zur Wundexpertin oder zum Wundexperten, übernimmt der Pflegedienst die Kosten vollständig. Bedingung ist, dass Sie nach dem Abschluss noch mindestens zwei Jahre bei uns arbeiten. Wer vorher kündigt, zahlt einen Teil der Kosten zurück.",
+              "Viele Kurse gibt es inzwischen auch online. Online-Kurse können Sie während der Arbeitszeit besuchen, wenn Sie den Termin vorher mit der Pflegedienstleitung abgesprochen haben. Während einer Tour sind Online-Kurse nicht möglich.",
+              "Nach jeder Fortbildung stellen Sie die wichtigsten Inhalte kurz in der Teambesprechung vor. So profitiert das ganze Team von dem, was Sie gelernt haben."
+            ],
+            items: [
+              { q: "Die Fortbildungstage müssen die Mitarbeitenden in ihrer Freizeit nehmen.", a: 1 },
+              { q: "Wer schon ein Jahr nach der Weiterbildung zur Wundexpertin kündigt, zahlt einen Teil der Kosten zurück.", a: 0 },
+              { q: "Für Online-Kurse in der Arbeitszeit braucht man eine Absprache mit der Pflegedienstleitung.", a: 0 }
+            ]
+          }
+        ]
+      },
+      {
+        id: "sprachbausteine",
+        modulo: "Sprachbausteine",
+        minuti: 60,
+        prove: [
+          {
+            t: "lueckeAbbina",
+            puntiPerItem: 1,
+            consegna: "Lesen Sie den Pflegebericht. Welches Wort passt in die Lücken 1 bis 8? Jedes Wort passt nur einmal. Vier Wörter bleiben übrig.",
+            titolo: "Pflegebericht Spätdienst, Herr Bruno Faber, Zimmer 15, Haus Birkenhof",
+            opts: ["trotzdem", "ob", "seit", "als", "damit", "aber", "oder", "dass", "wenn", "sondern", "deshalb", "zwar"],
+            testo: [
+              "Herr Faber hat beim Mittagessen gesagt,",
+              "er in der Nacht kaum geschlafen hat. Die große Zehe am rechten Fuß war gerötet, geschwollen und warm,",
+              "ich mir um fünfzehn Uhr seine Füße angesehen habe. Schmerzen hat Herr Faber nicht angegeben,",
+              "wegen seines Diabetes spürt er an den Füßen nur wenig. Am Abend hatte er leichtes Fieber,",
+              "habe ich die Hausärztin angerufen. Sie kommt morgen früh zum Hausbesuch. Bis dahin soll der Fuß hochgelagert und gekühlt werden,",
+              "die Schwellung zurückgeht. Ich habe Herrn Faber erklärt, warum feste Hausschuhe für seine Füße wichtig sind,",
+              "wollte er barfuß zum Waschbecken gehen. Bitte im Nachtdienst die Temperatur messen und den ärztlichen Bereitschaftsdienst anrufen,",
+              "sie über achtunddreißig Grad steigt. Die Tochter von Herrn Faber hat am Abend angerufen und gefragt,",
+              "sie ihren Vater morgen besuchen darf. Sie kommt nach dem Hausbesuch der Ärztin."
+            ],
+            items: [{ a: 7 }, { a: 3 }, { a: 5 }, { a: 10 }, { a: 4 }, { a: 0 }, { a: 8 }, { a: 1 }]
+          },
+          {
+            t: "lueckeMc",
+            puntiPerItem: 1,
+            consegna: "Lesen Sie die Wunddokumentation. Welches Wort passt in die Lücken 1 bis 10? Wählen Sie bei jeder Lücke a, b oder c.",
+            titolo: "Wunddokumentation, Frau Ilse Ramm, Pflegedienst Elbaue",
+            testo: [
+              "Frau Ramm wird seit vier Wochen vom Pflegedienst Elbaue zu Hause versorgt. Am linken Unterschenkel hat sie eine chronische Wunde, die nach einer kleinen",
+              "nicht mehr abgeheilt ist. Die Wunde wird einmal pro Woche",
+              "und fotografiert. Bei der letzten Kontrolle war sie etwas kleiner, der Wundrand war jedoch leicht",
+              "und warm. Beim Verbandwechsel gibt Frau Ramm starke",
+              "an. Deshalb bekommt sie nach ärztlicher",
+              "eine halbe Stunde vor dem Verbandwechsel ein Schmerzmittel. Die Wunde wird zuerst mit einer sterilen Lösung",
+              "und dann mit einer Wundauflage",
+              "und mit einer Binde fixiert. Morgens hilft ihr die Pflegekraft beim",
+              "der Kompressionsstrümpfe, weil sie sich nicht mehr gut bücken kann. Im Sitzen soll Frau Ramm die Beine möglichst",
+              "und sich regelmäßig bewegen. Ihre Tochter wurde in der Hautpflege",
+              "und cremt ihr abends die Beine ein."
+            ],
+            items: [
+              { opts: ["Verlegung", "Verletzung", "Verpflegung"], a: 1 },
+              { opts: ["vermessen", "vergessen", "verlassen"], a: 0 },
+              { opts: ["gerichtet", "geregelt", "gerötet"], a: 2 },
+              { opts: ["Schmerzmittel", "Schmerzen", "Schmerzskala"], a: 1 },
+              { opts: ["Anordnung", "Einordnung", "Ordnung"], a: 0 },
+              { opts: ["gespielt", "gespült", "gespeichert"], a: 1 },
+              { opts: ["entdeckt", "aufgedeckt", "abgedeckt"], a: 2 },
+              { opts: ["Anziehen", "Anzeigen", "Anzünden"], a: 0 },
+              { opts: ["hochlegen", "hochladen", "hochrechnen"], a: 0 },
+              { opts: ["angemeldet", "angeleitet", "angelegt"], a: 1 }
+            ]
+          }
+        ]
+      },
+      {
+        id: "scritta",
+        modulo: "Schreiben",
+        minuti: 30,
+        prove: [
+          {
+            t: "schreiben",
+            scelta: [
+              {
+                titolo: "Aufnahmebericht",
+                consegna: "Sie arbeiten beim ambulanten Pflegedienst Elbaue. Heute waren Sie zum ersten Mal bei Herrn Konrad Wilms zu Hause. Schreiben Sie mit Hilfe des Auszugs aus dem Anamnesebogen einen Aufnahmebericht für die Pflegedokumentation. Schreiben Sie in ganzen Sätzen und gehen Sie auf alle Angaben ein.",
+                modulo: {
+                  intestazione: "Anamnesebogen (Auszug), Pflegedienst Elbaue",
+                  righe: [
+                    ["Name", "Konrad Wilms, 79 Jahre"],
+                    ["Erstbesuch", "heute um neun Uhr, seine Ehefrau war dabei"],
+                    ["Diagnosen", "Diabetes Typ 2, Bluthochdruck, Sehschwäche"],
+                    ["Wohnsituation", "Wohnung im Erdgeschoss mit seiner Frau, Badewanne ohne Haltegriffe"],
+                    ["Mobilität", "geht ohne Hilfsmittel, ist im Frühjahr zweimal gestolpert"],
+                    ["Körperpflege", "wäscht sich selbst, braucht Hilfe beim Ein- und Aussteigen aus der Badewanne"],
+                    ["Ernährung", "isst gern Süßes, trinkt viel Kaffee und kaum Wasser"],
+                    ["Leistungen des Pflegedienstes", "morgens Blutzucker messen und Insulin nach ärztlichem Plan spritzen"],
+                    ["Besonderheiten", "Haut an den Füßen trocken, an der linken Ferse eine kleine Druckstelle"]
+                  ]
+                },
+                richiede: [
+                  { etichetta: "Blutzucker", any: ["Blutzucker", "Diabetes", "Insulin"] },
+                  { etichetta: "Sturzgefahr", any: ["gestolpert", "Sturz", "Sturzgefahr", "stolpert", "Haltegriffe"] },
+                  { etichetta: "Körperpflege", any: ["Badewanne", "wäscht", "waschen", "Körperpflege"] },
+                  { etichetta: "Ernährung", any: ["isst", "essen", "trinkt", "trinken", "Ernährung"] },
+                  { etichetta: "Füße", any: ["Ferse", "Druckstelle", "Füße", "Füßen"] }
+                ],
+                parole: { min: 100, max: 150 }
+              },
+              {
+                titolo: "Biografiebericht",
+                consegna: "Frau Erna Sommerfeld ist vor zwei Wochen in das Seniorenheim Haus Birkenhof eingezogen. Ihr Sohn hat mit Ihnen den Biografiebogen ausgefüllt. Schreiben Sie mit Hilfe des Auszugs einen Biografiebericht für das Pflegeteam. Gehen Sie auf alle Angaben ein und schreiben Sie auch, was das Team daraus für den Alltag mit Frau Sommerfeld ableiten kann.",
+                modulo: {
+                  intestazione: "Biografiebogen (Auszug), Seniorenheim Haus Birkenhof",
+                  righe: [
+                    ["Name", "Erna Sommerfeld, 91 Jahre"],
+                    ["Herkunft", "geboren auf einem Bauernhof in Ostfriesland, ältestes von drei Kindern"],
+                    ["Beruf", "Hebamme, über vierzig Jahre in einem Kreiskrankenhaus"],
+                    ["Familie", "verwitwet, ein Sohn, eine Enkelin, die in Kanada lebt"],
+                    ["Hobbys", "Handarbeiten, Plattdeutsch sprechen, Kirchenlieder"],
+                    ["Gewohnheiten", "schläft gern lange, frühstückt erst um neun Uhr, isst abends warm"],
+                    ["Das mag sie nicht", "Hektik, kalte Räume, wenn man sie duzt"],
+                    ["Das ist ihr wichtig", "Briefe von der Enkelin, ein Platz am Fenster, ihre Brosche"]
+                  ]
+                },
+                richiede: [
+                  { etichetta: "Beruf", any: ["Hebamme", "Beruf"] },
+                  { etichetta: "Familie", any: ["Sohn", "Enkelin", "verwitwet"] },
+                  { etichetta: "Hobbys", any: ["Handarbeit", "Handarbeiten", "Plattdeutsch", "Lieder", "Kirchenlieder", "Hobbys"] },
+                  { etichetta: "Tagesablauf", any: ["lange", "neun Uhr", "frühstückt", "Frühstück", "ausschlafen"] },
+                  { etichetta: "Hinweise für das Team", any: ["sollte", "sollten", "empfehlen", "wichtig"] }
+                ],
+                parole: { min: 100, max: 150 }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: "orale",
+        modulo: "Sprechen",
+        minuti: 16,
+        prove: [
+          {
+            t: "sprechen",
+            parti: [
+              {
+                id: "1A",
+                consegna: "Sehen Sie sich das Bild an. Erzählen Sie: Was sehen Sie? Welche Erfahrungen haben Sie mit solchen Situationen in Ihrem Berufsalltag gemacht?",
+                bild: {
+                  alt: "Pflegekraft zeigt einer älteren Frau in ihrer Küche ein Blutzuckermessgerät",
+                  beschreibung: "In einer kleinen, gemütlichen Küche sitzt eine ältere Frau am Tisch. Vor ihr liegen ein Blutzuckermessgerät, eine Kaffeetasse und eine aufgeschlagene Zeitung. Neben ihr sitzt eine Pflegekraft in einer roten Jacke mit dem Logo eines Pflegedienstes und zeigt ihr etwas auf dem Display. Auf der Fensterbank stehen Blumen, an der Wand hängt ein Kalender mit vielen Notizen. Die Frau schaut konzentriert, die Pflegekraft lächelt."
+                }
+              },
+              {
+                id: "1B",
+                fragen: [
+                  "Welche Unterschiede gibt es zwischen der Pflege zu Hause und der Pflege im Heim oder im Krankenhaus?",
+                  "Wie erklären Sie einer älteren Person, wie ein neues Hilfsmittel funktioniert?",
+                  "Was ist Ihnen wichtig, wenn Sie in die Wohnung einer fremden Person kommen?"
+                ]
+              }
+            ]
+          },
+          {
+            t: "sprechen",
+            parti: [
+              {
+                id: "2A",
+                consegna: "Wählen Sie eines der beiden Themen und halten Sie einen kurzen Vortrag von etwa zwei Minuten. Die Stichworte helfen Ihnen.",
+                scelta: [
+                  {
+                    thema: "Stürze im Alter vermeiden",
+                    stichworte: [
+                      "Ursachen für Stürze",
+                      "Gefahren in der Wohnung oder auf der Station",
+                      "Hilfsmittel und Bewegung",
+                      "Beispiele aus Ihrem Berufsalltag"
+                    ]
+                  },
+                  {
+                    thema: "Fortbildungen im Pflegeberuf",
+                    stichworte: [
+                      "Themen, die Sie interessieren",
+                      "Fortbildung in der Freizeit oder in der Arbeitszeit",
+                      "Nutzen für Patienten und Team",
+                      "Ihre eigenen Erfahrungen"
+                    ]
+                  }
+                ]
+              },
+              {
+                id: "2B",
+                consegna: "Ihre Gesprächspartnerin oder Ihr Gesprächspartner und die Prüfenden stellen Ihnen Fragen zu Ihrem Vortrag.",
+                fragen: [
+                  "Was tun Sie, wenn jemand ein Hilfsmittel wie den Rollator nicht benutzen möchte?",
+                  "Wie wird an Ihrem Arbeitsplatz ein Sturz dokumentiert?",
+                  "Welche Fortbildung hat Ihnen bisher am meisten gebracht?",
+                  "Sollten Fortbildungen für Pflegekräfte Pflicht sein?"
+                ]
+              }
+            ]
+          },
+          {
+            t: "sprechen",
+            parti: [
+              {
+                id: "3",
+                consegna: "Diskutieren Sie mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner über das Thema. Sagen Sie Ihre Meinung, begründen Sie sie und reagieren Sie auf die Argumente der anderen Person.",
+                thema: "Sollen Bewohnerinnen und Bewohner ihr eigenes Haustier mit ins Pflegeheim bringen dürfen?",
+                aussagen: [
+                  "Ein Tier macht alten Menschen Freude und gibt ihnen eine Aufgabe für den Tag.",
+                  "Wer kümmert sich um das Tier, wenn die Bewohnerin krank wird?",
+                  "Manche Bewohner haben Angst vor Hunden oder eine Allergie gegen Katzen.",
+                  "Wer sich von seinem Tier trennen muss, dem fällt der Umzug ins Heim noch schwerer."
                 ]
               }
             ]
