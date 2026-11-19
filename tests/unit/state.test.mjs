@@ -301,6 +301,41 @@ describe("importState / exportState", () => {
     assert.equal(drugi.Core.state.stats.lessonsDone, 1);
   });
 
+  test("an imported backup reaches the disk, so closing the tab right after keeps it", () => {
+    const zrodlo = loadEngine();
+    zrodlo.Core.load();
+    zrodlo.Core.recordLesson("a1-u01-l1", 8, 10, 30);
+    const dump = zrodlo.Core.exportState();
+
+    const box = loadEngine();
+    box.Core.load();
+    box.Core.importState(dump);
+    box.flush();
+
+    const poZamknieciu = loadEngine({ storage: box.storage });
+    poZamknieciu.Core.load();
+    assert.equal(poZamknieciu.Core.state.lessons["a1-u01-l1"].done, true);
+    assert.equal(poZamknieciu.Core.state.stats.lessonsDone, 1);
+  });
+
+  test("clearing the progress reaches the disk, so a reload does not bring it back", () => {
+    const box = loadEngine();
+    box.Core.load();
+    box.Core.recordLesson("a1-u01-l1", 8, 10, 30);
+    box.flush();
+    const przed = loadEngine({ storage: box.storage });
+    przed.Core.load();
+    assert.equal(przed.Core.state.stats.lessonsDone, 1, "the progress was on disk before clearing");
+
+    box.Core.resetState();
+    box.flush();
+
+    const poPrzeladowaniu = loadEngine({ storage: box.storage });
+    poPrzeladowaniu.Core.load();
+    assert.equal(poPrzeladowaniu.Core.state.stats.lessonsDone, 0);
+    assert.equal(poPrzeladowaniu.Core.state.lessons["a1-u01-l1"], undefined);
+  });
+
   test("a file from the future is rejected", () => {
     const box = loadEngine();
     box.Core.load();
@@ -830,6 +865,47 @@ describe("the review log", () => {
     const weak = Array.from({ length: 15 }, (_, i) => "w" + i).sort();
     assert.deepEqual(left, ["m14", ...weak].sort(),
       "14 best-mastered cards (oldest first) fill the batch; every weak card stays");
+  });
+
+  /* Among mistake cards the batch takes the best-mastered first: more correct
+     reps make a card more expendable, more lapses make it less. 19 strong
+     fillers plus the pair make 21 cards, so a batch of 20 leaves exactly the
+     card of the pair that is more needed. */
+  function przytnijJedenRaz(para) {
+    const storage = makeStorage();
+    const box = loadEngine({ storage });
+    box.Core.load();
+    for (let i = 0; i < 19; i++) box.Core.state.errors["f" + i] = { kind: "authored", reps: 100, lapses: 0, ts: i };
+    Object.assign(box.Core.state.errors, para);
+    let refusals = 0;
+    const setItem = storage.setItem;
+    storage.setItem = (key, value) => {
+      if (refusals++ === 0) {
+        const error = new Error("QuotaExceededError");
+        error.name = "QuotaExceededError";
+        throw error;
+      }
+      setItem(key, value);
+    };
+    box.Core.save();
+    box.flush();
+    return Object.keys(box.stored(KEY).errors);
+  }
+
+  test("a card answered right several times goes before a card never answered right", () => {
+    const left = przytnijJedenRaz({
+      mocna: { kind: "authored", reps: 3, lapses: 0, ts: 1 },
+      nowa: { kind: "authored", reps: 0, lapses: 0, ts: 0 }
+    });
+    assert.deepEqual(left, ["nowa"]);
+  });
+
+  test("a card failed several times stays longer than a clean one", () => {
+    const left = przytnijJedenRaz({
+      trudna: { kind: "authored", reps: 1, lapses: 3, ts: 0 },
+      czysta: { kind: "authored", reps: 0, lapses: 0, ts: 0 }
+    });
+    assert.deepEqual(left, ["trudna"]);
   });
 
   /* Within one batch drills and journal both go, so their relative order
