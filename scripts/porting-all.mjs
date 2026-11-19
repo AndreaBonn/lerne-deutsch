@@ -19,7 +19,9 @@ const ALL_MODULES = { readings: ['readings-a', 'readings-b', 'readings-c'],
 
 export function checkAll({ root, target, course, checks }) {
   const { curriculumErrors, checkUnits, checkModules, reviewResult } = checks;
-  const modules = Object.keys(target.secondary || {}).flatMap(key => ALL_MODULES[key] || []);
+  /* A pseudo-level library (library-pfl, from own-target.json) is its own module id. */
+  const ownLibrary = key => /^library-/.test(key) && target.levels?.[key.slice(8).toUpperCase()] ? [key] : [];
+  const modules = Object.keys(target.secondary || {}).flatMap(key => ALL_MODULES[key] || ownLibrary(key));
   const results = [{ label: 'curriculum', errors: curriculumErrors(root, target) },
     ...checkUnits({ root, course, target, options: {}, stages: ALL_STAGES }),
     ...checkModules({ root, course, target, ids: modules, stages: ALL_STAGES })];

@@ -16,22 +16,29 @@ const GERMAN_PHONETIC_SETS = 4;
 export function moduleDefinition(id, course, target) {
   const readings = (course.READINGS || []).filter(item => !course.library.includes(item));
   const secondary = target.secondary || {};
+  /* Texts of a pseudo-level (lib-pfl-*) carry a real CEFR, so the CEFR library
+     modules would count them a second time without this filter. */
+  const codes = [...(course.levels || []).map(level => level.code), ...Object.keys(target.levels || {})];
+  const pseudo = codes.filter(code => code && !LEVELS.includes(code)).map(code => code.toLowerCase());
+  const cefrLibrary = course.library.filter(item => !item.id?.split(/[-_]/).some(token => pseudo.includes(token)));
   let items, count, files, prefix, levels;
   if (id === 'readings' || /^readings-[abc]$/.test(id)) {
     levels = id === 'readings' ? LEVELS : GROUPS[id.slice(-1)];
     items = readings.filter(item => levels.includes(item.cefr) || levels.includes(item.id?.match(/(?:^|[-_])([abc][12])(?:[-_]|$)/i)?.[1]?.toUpperCase()));
     count = id === 'readings' ? (secondary.readings || 24) : 8;
     files = ['readings.js']; prefix = 'read';
-  } else if (id.startsWith('library-') && target.levels?.[id.slice(8).toUpperCase()]?.cefrLabel) {
+  } else if (/^library-[a-z]+$/.test(id) && pseudo.includes(id.slice(8))) {
     const code = id.slice(8);
-    // A pseudo-level groups content whose CEFR remains a real proficiency level.
-    levels = target.levels[code.toUpperCase()].cefrLabel.split('-');
+    /* A pseudo-level groups content whose CEFR remains a real proficiency
+       level. The review bundle reads porting-target.json alone, without the
+       own levels: there the CEFR check is skipped, the selection is the same. */
+    levels = target.levels?.[code.toUpperCase()]?.cefrLabel?.split('-');
     items = course.library.filter(item => item.id?.split(/[-_]/).includes(code));
     count = secondary[id] ?? 1;
     files = [`library-${code}.js`]; prefix = 'read';
   } else if (id === 'library' || /^library-[abc][12]$/.test(id)) {
     levels = id === 'library' ? LEVELS : [id.slice(-2).toUpperCase()];
-    items = course.library.filter(item => levels.includes(item.cefr) || levels.includes(item.id?.match(/(?:^|[-_])([abc][12])(?:[-_]|$)/i)?.[1]?.toUpperCase()));
+    items = cefrLibrary.filter(item => levels.includes(item.cefr) || levels.includes(item.id?.match(/(?:^|[-_])([abc][12])(?:[-_]|$)/i)?.[1]?.toUpperCase()));
     count = id === 'library' ? (secondary.library || 6) : 1;
     files = levels.map(level => `library-${level.toLowerCase()}.js`); prefix = 'read';
   } else {

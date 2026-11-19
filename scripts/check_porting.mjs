@@ -284,6 +284,12 @@ function main() {
     if (target.units[id]) throw new Error(`own-target.json redefines upstream unit ${id}`);
     target.units[id] = unit;
   }
+  /* Own secondary modules (library-pfl) follow the same rule as own units. */
+  target.secondary = target.secondary || {};
+  for (const [key, count] of Object.entries(own.secondary || {})) {
+    if (key in target.secondary) throw new Error(`own-target.json redefines upstream secondary ${key}`);
+    target.secondary[key] = count;
+  }
   const checkOwnUnits = args => checkUnits({ ...args, ownLevels });
   const results = options.all ? checkAll({ root, target, course,
     checks: { curriculumErrors, checkUnits: checkOwnUnits, checkModules, reviewResult } })
