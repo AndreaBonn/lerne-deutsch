@@ -209,3 +209,34 @@ describe("the mode in the review journal", () => {
     assert.equal("m" in box.Core.state.reviews[0], false);
   });
 });
+
+describe("gradeCard: the interface grades map onto FSRS ratings", () => {
+  /* The interface keeps its 0/3/4/5 scale (srs.js), meaning again / hard /
+     good / easy. The oracle is the FSRS engine itself, asked directly with
+     the rating each label names: a shifted mapping schedules every review on
+     the wrong curve and no other test notices, because all of them grade 4. */
+  const TERAZ = Date.UTC(2026, 10, 19, 9, 0, 0);
+  const RATING = { 0: 1, 3: 2, 4: 3, 5: 4 };
+
+  for (const q of [0, 3, 4, 5]) {
+    test(`grade ${q} schedules a new card like FSRS rating ${RATING[q]}`, () => {
+      const box = loadEngine({ now: TERAZ });
+      box.Core.load();
+      const k = karta(box, "der Tisch", TERAZ);
+      box.Core.gradeCard(k, q);
+      const oczekiwane = box.sandbox.Fsrs.silnik({ retencja: 0.9 }).powtorz(null, RATING[q], TERAZ);
+      assert.equal(box.Core.state.srs[k].due, oczekiwane.due);
+    });
+  }
+
+  test("the four grades give four different due dates, longest for easy", () => {
+    const due = [0, 3, 4, 5].map((q) => {
+      const box = loadEngine({ now: TERAZ });
+      box.Core.load();
+      const k = karta(box, "der Tisch", TERAZ);
+      box.Core.gradeCard(k, q);
+      return box.Core.state.srs[k].due;
+    });
+    assert.ok(due[0] < due[1] && due[1] < due[2] && due[2] < due[3], `due dates: ${due.join(", ")}`);
+  });
+});
