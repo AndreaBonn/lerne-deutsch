@@ -21,8 +21,8 @@ con `REVISORE: in attesa`, la revisione vera si fa in un lotto unico alla fine (
 
 Le tabelle sotto restano il dettaglio di ogni voce. Già fatte prima della notte: 1.1-1.10, 1.12-1.14, 1.16, 1.17, 1.19 (commit cd89874, fab5ade, ffe6c7e).
 
-- [ ] T1.15 review_lot (secondo giudice) di pfl-u01 per it en es fr pl
-- [ ] T1.18 pfl-u01-human.md con ESITO e REVISORE: in attesa | dip: T1.15
+- [x] T1.15 review_lot (secondo giudice) di pfl-u01 per it en es fr pl
+- [x] T1.18 pfl-u01-human.md con ESITO e REVISORE: in attesa | dip: T1.15
 - [x] T1.20 click-through 375/1280 di PFL, a11y-gate, contrast.spec
 - [x] T1.11 CLAUDE.md: pseudo-livello, sequential, notice, own-target, REVISORE
 - [ ] T1.21 ri-stima fasi 2-3 in plan.md col costo misurato di pfl-u01 | dip: T1.18
