@@ -55,15 +55,8 @@ test("the session lists only the parts that hold something, and counts them", as
   expect(etykieta, "the button carries the number of tasks").toMatch(/\d/);
 });
 
-test("the run shows the tasks and ends with a summary", async ({ page }) => {
-  await oggi(page);
-  await zalegleBledy(page, 2);
-  await page.reload();
-  await page.waitForSelector(".js-start");
-  await page.locator(".js-start").click();
-
-  await expect(page.locator(".exq")).toBeVisible();
-
+/** Answers every task of a started run until the summary appears. */
+async function doKonca(page) {
   /* We walk through every task: the answer does not matter, what counts is
      that the run reaches the end and loses no step. */
   let poprzednie = null, zablokowane = 0;
@@ -108,20 +101,37 @@ test("the run shows the tasks and ends with a summary", async ({ page }) => {
   }
 
   await expect(page.locator(".summary")).toBeVisible();
+}
+
+test("the run shows the tasks and ends with a summary", async ({ page }) => {
+  await oggi(page);
+  await zalegleBledy(page, 2);
+  await page.reload();
+  await page.waitForSelector(".js-start");
+  await page.locator(".js-start").click();
+
+  await expect(page.locator(".exq")).toBeVisible();
+
+  await doKonca(page);
 });
 
+/* The record is read after a real run, not written by the test: what is
+   under test is that finishing the session stores it under today's date, so
+   a reload knows the day is done. */
 test("a closed session is recorded under today's date", async ({ page }) => {
   await oggi(page);
-  const zapis = await page.evaluate(async () => {
-    window.Core.state.session = { date: window.Core.today(), score: 5, total: 8 };
-    window.Core.save();
-    /* save() is debounced by 180 ms: without waiting, the reload would
-       overtake the save and the test would measure a race, not behaviour. */
-    await new Promise(r => setTimeout(r, 300));
-    return window.Core.state.session.date;
-  });
-  expect(zapis).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+  await expect(page.locator(".today-done"), "no notice before any session").toHaveCount(0);
+  await page.locator(".js-start").click();
+  await expect(page.locator(".exq")).toBeVisible();
+  await doKonca(page);
 
+  const zapis = await page.evaluate(() => ({ s: window.Core.state.session, dzis: window.Core.today() }));
+  expect(zapis.s.date, "the session is stored under today's date").toBe(zapis.dzis);
+  expect(zapis.s.total, "with the number of tasks it had").toBeGreaterThan(0);
+
+  /* save() is debounced by 180 ms: without waiting, the reload would
+     overtake the save and the test would measure a race, not behaviour. */
+  await page.waitForTimeout(300);
   await page.reload();
   await page.waitForSelector(".list-row");
   await expect(page.locator(".today-done"), "the notice about a closed session").toBeVisible();
