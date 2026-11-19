@@ -71,6 +71,13 @@ describe("norm", () => {
     assert.equal(T.norm("Ja! Klar… (wirklich?)"), "ja klar wirklich");
   });
 
+  test("semicolon, colon, straight quotes and brackets are punctuation too", () => {
+    assert.equal(T.norm("Ja; klar"), "ja klar");
+    assert.equal(T.norm("Achtung: heiß"), "achtung heiß");
+    assert.equal(T.norm('er sagt "hallo"'), "er sagt hallo");
+    assert.equal(T.norm("das [neue] Haus"), "das neue haus");
+  });
+
   test("the spaces around an apostrophe are pulled together: \"l ' autore\" is \"l'autore\"", () => {
     assert.equal(T.norm("l ' autore"), "l'autore");
     assert.equal(T.norm("l'autore"), "l'autore");
