@@ -64,7 +64,7 @@ Le tabelle sotto restano il dettaglio di ogni voce. Già fatte prima della notte
 - [x] T5.8 Schreiben Aufnahme-/Biografiebericht | dip: T5.5
 - [x] T5.9 Sprechen T1-T3 con preparazione 20 min | dip: T5.6
 - [x] T5.10 contenuto Modelltest Pflege 1 | dip: T5.3,T5.8,T5.9
-- [ ] T5.11 audio Hören + check:porting + human in attesa | dip: T5.10
+- [x] T5.11 audio Hören + check:porting + human in attesa | dip: T5.10
 - [x] T5.12 6 mutazioni d'esame | dip: T5.4,T5.5,T5.7
 - [ ] T5.13 click-through esame, a11y-gate, chiavi cils.* x5 | dip: T5.11
 - [x] T5.14 CLAUDE.md fasceRicettive | dip: T5.6
