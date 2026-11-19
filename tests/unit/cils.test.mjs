@@ -130,12 +130,13 @@ describe("kontrola wypowiedzi pisemnej", () => {
 });
 
 describe("dane symulacji", () => {
-  test("simulations follow the Goethe module order", () => {
+  test("simulations follow the module order of their own format", () => {
     const C = silnik();
     C.simulazioni().forEach(s => {
       assert.deepEqual(Array.from(s.sezioni.map(x => x.id)),
-        ["lettura", "ascolto", "scritta", "orale"]);
+        Array.from(C.formato(s).moduli.map(m => m.id)), s.id);
     });
+    assert.ok(C.simulazioni().some(s => s.formato === "telc-pflege"), "a telc simulation ships");
   });
 
   /* Every sentence a simulation shows: reading texts (`testo`) and passages (`brani`). */
@@ -179,7 +180,8 @@ describe("dane symulacji", () => {
     C.simulazioni().forEach(s => s.sezioni.forEach(sez => (sez.prove || []).forEach(p => {
       (p.items || []).forEach((it, i) => {
         const n = p.t === "vf" || p.t === "jn" ? 2
-          : p.t === "abbina" ? p.annunci.length + 1 : (it.opts || []).length;
+          : p.t === "abbina" ? p.annunci.length + 1
+          : p.t === "lueckeAbbina" ? p.opts.length : (it.opts || []).length;
         assert.ok(n > 0, `${s.id}/${sez.id}: item ${i} has no options`);
         assert.ok(it.a >= 0 && it.a < n, `${s.id}/${sez.id}: item ${i} punta fuori dalle opzioni`);
       });
@@ -255,8 +257,8 @@ test("the format declares unofficial modules, times, Teile and scoring", () => {
   C.simulazioni().forEach(s => {
     assert.equal(s.official, false);
     s.sezioni.forEach((section, i) => {
-      assert.equal(section.modulo, C.formato().moduli[i].modulo);
-      assert.equal(section.minuti, C.formato().moduli[i].minuti);
+      assert.equal(section.modulo, C.formato(s).moduli[i].modulo);
+      assert.equal(section.minuti, C.formato(s).moduli[i].minuti);
     });
   });
 });
@@ -287,6 +289,10 @@ test("conforme reports each contract violation beside a conforming fixture", () 
   /* Every shipped simulation is a complete exam in the declared format. */
   assert.ok(C.simulazioni().length >= 2);
   C.simulazioni().forEach(sim => assert.deepEqual(Array.from(C.conforme(sim)), [], sim.id));
+  /* The telc Pflege mock exam ships and is complete in its own format. */
+  const pflege = C.sim("pfl-sim-1");
+  assert.ok(pflege && pflege.formato === "telc-pflege");
+  assert.deepEqual(Array.from(C.conforme(pflege)), []);
 });
 
 test("each measured module uses its own weighted maximum and the format threshold", () => {

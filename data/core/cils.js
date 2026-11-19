@@ -1,12 +1,14 @@
 /* ============================================================
-   Language-neutral layer: exam simulation in the style of Goethe-Zertifikat B1.
+   Language-neutral layer: exam simulations in the style of Goethe-Zertifikat B1
+   and telc Deutsch B1·B2 Pflege.
 
    THE WHOLE FILE IS IN GERMAN AND HAS NO OVERLAY. Tasks, instructions and
    reading texts are what the learner meets in the room, so translating them
    would change the task. Adding an explanation language costs nothing here,
    and `parity.mjs` has nothing to compare.
 
-   Two complete mock exams (Modelltest 1 and 2), all four modules. The file
+   Two complete Goethe mock exams (Modelltest 1 and 2, all four modules) and
+   one telc Pflege mock exam (pfl-sim-1, all five modules). The file
    keeps its old name and its Italian field names (`sezioni`, `prove`,
    `lettura`, `titoloIt`) by design, because the engine reads them. The
    content is original; no official exam material is reproduced. The screen
@@ -1952,6 +1954,1271 @@ window.CILS = [
               "Nennen Sie einen Punkt, der für Sie neu oder besonders interessant war.",
               "Stellen Sie eine Frage zum Thema der Präsentation.",
               "Antworten Sie auf Fragen zu Ihrer eigenen Präsentation."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: "pfl-sim-1",
+    titoloIt: "Pflege Modelltest 1",
+    official: false,
+    formato: "telc-pflege",
+    sezioni: [
+      {
+        id: "ascolto",
+        modulo: "Hören",
+        minuti: 25,
+        prove: [
+          {
+            t: "mc",
+            puntiPerItem: 1,
+            consegna: "Sie hören vier Nachrichten auf dem Anrufbeantworter der Station 4B im Klinikum Lindenhain. Zu jeder Nachricht lösen Sie eine Aufgabe. Wählen Sie die richtige Lösung a, b oder c. Sie hören jede Nachricht zweimal.",
+            brani: [
+              [
+                {
+                  it: "Guten Tag, hier spricht Sabine Kroll aus dem Labor des Klinikums Lindenhain.",
+                  sp: "A"
+                },
+                {
+                  it: "Ich rufe wegen Herrn Petersen auf Zimmer zwölf an.",
+                  sp: "A"
+                },
+                {
+                  it: "Die Blutprobe von heute Morgen können wir leider nicht auswerten, weil das Röhrchen nicht richtig beschriftet war.",
+                  sp: "A"
+                },
+                {
+                  it: "Bitte nehmen Sie Herrn Petersen noch einmal Blut ab und schicken Sie die Probe bis zwölf Uhr zu uns.",
+                  sp: "A"
+                },
+                {
+                  it: "Dann haben Sie das Ergebnis heute Nachmittag im System.",
+                  sp: "A"
+                }
+              ],
+              [
+                {
+                  it: "Hallo, hier ist Jens Albrecht vom Sanitätshaus Weber.",
+                  sp: "B"
+                },
+                {
+                  it: "Es geht um das Pflegebett für Frau Demir auf Zimmer vier.",
+                  sp: "B"
+                },
+                {
+                  it: "Am Mittwoch schaffen wir die Lieferung leider nicht, unser zweiter Wagen ist in der Werkstatt.",
+                  sp: "B"
+                },
+                {
+                  it: "Wir kommen deshalb am Donnerstag zwischen acht und zehn Uhr.",
+                  sp: "B"
+                },
+                {
+                  it: "Das alte Bett nehmen wir gleich mit, darum müssen Sie sich nicht kümmern.",
+                  sp: "B"
+                }
+              ],
+              [
+                {
+                  it: "Guten Abend, hier ist Monika Hartwig, die Tochter von Herrn Hartwig auf Zimmer acht.",
+                  sp: "A"
+                },
+                {
+                  it: "Mein Vater hat mir vorhin am Telefon gesagt, dass er morgen nach Hause darf.",
+                  sp: "A"
+                },
+                {
+                  it: "Ich habe aber bis Freitag Spätdienst und kann ihn frühestens am Samstag abholen.",
+                  sp: "A"
+                },
+                {
+                  it: "Kann er vielleicht so lange bleiben, oder gibt es eine andere Möglichkeit, zum Beispiel einen Krankentransport?",
+                  sp: "A"
+                },
+                {
+                  it: "Bitte rufen Sie mich morgen früh zurück, meine Nummer liegt bei Ihnen in der Akte.",
+                  sp: "A"
+                }
+              ],
+              [
+                {
+                  it: "Guten Morgen, Thomas Riedel aus der Personalabteilung.",
+                  sp: "B"
+                },
+                {
+                  it: "Ich melde mich wegen der Pflichtfortbildung zur Händehygiene am kommenden Dienstag.",
+                  sp: "B"
+                },
+                {
+                  it: "Der Termin fällt leider aus, weil der Referent erkrankt ist.",
+                  sp: "B"
+                },
+                {
+                  it: "Alle, die angemeldet sind, buchen wir automatisch auf den Ersatztermin zwei Wochen später um.",
+                  sp: "B"
+                },
+                {
+                  it: "Nur wer an diesem Tag nicht kann, schreibt mir bitte bis Freitag eine kurze E-Mail.",
+                  sp: "B"
+                }
+              ]
+            ],
+            items: [
+              {
+                q: "Was soll die Station tun?",
+                opts: [
+                  "das Ergebnis am Nachmittag im Labor abholen",
+                  "Herrn Petersen noch einmal Blut abnehmen",
+                  "das falsch beschriftete Röhrchen zurückschicken"
+                ],
+                a: 1
+              },
+              {
+                q: "Was erfährt man über die Lieferung des Pflegebetts?",
+                opts: [
+                  "Das Bett kommt einen Tag später als geplant.",
+                  "Die Station muss das alte Bett selbst entsorgen.",
+                  "Das Bett wird am Mittwochnachmittag geliefert."
+                ],
+                a: 0
+              },
+              {
+                q: "Warum ruft Frau Hartwig an?",
+                opts: [
+                  "Sie möchte ihren Vater schon heute abholen.",
+                  "Sie kann ihren Vater am Entlassungstag nicht abholen.",
+                  "Sie hat für ihren Vater einen Krankentransport bestellt."
+                ],
+                a: 1
+              },
+              {
+                q: "Was müssen angemeldete Mitarbeitende tun, wenn sie am Ersatztermin Zeit haben?",
+                opts: [
+                  "nichts",
+                  "sich per E-Mail neu anmelden",
+                  "bis Freitag in der Personalabteilung anrufen"
+                ],
+                a: 0
+              }
+            ]
+          },
+          {
+            t: "mc",
+            puntiPerItem: 1,
+            consegna: "Sie hören drei Gespräche auf einer Station. Lösen Sie zuerst die Aufgaben 1 bis 5: Sind die Aussagen richtig oder falsch? Lösen Sie dann die Aufgaben 6 bis 10: Wählen Sie die richtige Lösung a, b oder c. Sie hören jedes Gespräch zweimal.",
+            brani: [
+              [
+                {
+                  it: "Guten Morgen, Herr Kaya. Wie war die Nacht bei Frau Ostermann?",
+                  sp: "A"
+                },
+                {
+                  it: "Ruhiger als die Nacht davor. Sie hat bis etwa vier Uhr geschlafen, dann hat sie lange gehustet.",
+                  sp: "B"
+                },
+                {
+                  it: "Fieber hatte sie keins mehr, die Messung um sechs Uhr war ganz normal.",
+                  sp: "B"
+                },
+                {
+                  it: "Das ist gut, dann wirkt das Antibiotikum. Und wie klappt es mit dem Trinken?",
+                  sp: "A"
+                },
+                {
+                  it: "Da haben wir noch ein Problem. Gestern hat sie nur etwa einen Liter getrunken. Sie sagt, sie hat einfach keinen Durst.",
+                  sp: "B"
+                },
+                {
+                  it: "Dann führen Sie bitte ab heute ein Trinkprotokoll. Wenn sie bis morgen nicht mehr trinkt, sprechen wir über eine Infusion.",
+                  sp: "A"
+                },
+                {
+                  it: "Mache ich. Sie möchte übrigens gern wieder selbst zur Toilette gehen und nicht mehr den Toilettenstuhl benutzen.",
+                  sp: "B"
+                },
+                {
+                  it: "Das darf sie, aber nur in Begleitung. Mit dem Husten wird ihr noch schnell schwindelig.",
+                  sp: "A"
+                },
+                {
+                  it: "Die Physiotherapie kommt heute Nachmittag auch zu ihr.",
+                  sp: "A"
+                },
+                {
+                  it: "Gut, ich gebe das an den Spätdienst weiter.",
+                  sp: "B"
+                }
+              ],
+              [
+                {
+                  it: "Lukas, kurz zu Zimmer neun, Herr Schuster. Er ist gestern am Knie operiert worden und hat seit heute Mittag deutlich weniger Schmerzen.",
+                  sp: "A"
+                },
+                {
+                  it: "Hat er schon etwas gegessen?",
+                  sp: "B"
+                },
+                {
+                  it: "Ja, mittags eine Suppe, und die hat er gut vertragen. Den Verband habe ich um zwei Uhr kontrolliert, er ist trocken.",
+                  sp: "A"
+                },
+                {
+                  it: "Und die Drainage?",
+                  sp: "B"
+                },
+                {
+                  it: "Die zieht der Arzt morgen bei der Visite. Schau bitte heute Abend noch einmal, wie viel Flüssigkeit im Beutel ist, und trag die Menge in die Kurve ein.",
+                  sp: "A"
+                },
+                {
+                  it: "In Ordnung. Gibt es bei ihm sonst noch etwas?",
+                  sp: "B"
+                },
+                {
+                  it: "Seine Frau hat angerufen. Sie kommt erst gegen sieben, weil sie vorher noch einen Termin beim Hausarzt hat.",
+                  sp: "A"
+                },
+                {
+                  it: "Sie bringt ihm seine Brille mit, die hat er zu Hause liegen lassen.",
+                  sp: "A"
+                },
+                {
+                  it: "Gut. Und Zimmer zehn?",
+                  sp: "B"
+                },
+                {
+                  it: "Frau Lindner ist unverändert, sie schläft sehr viel. Bei ihr musst du alle zwei Stunden die Position wechseln, der Lagerungsplan hängt am Bett.",
+                  sp: "A"
+                }
+              ],
+              [
+                {
+                  it: "Entschuldigung, sind Sie heute für meinen Vater zuständig? Karl Brenner, Zimmer drei.",
+                  sp: "B"
+                },
+                {
+                  it: "Ja, ich bin heute seine Bezugspflegekraft, mein Name ist Wendt. Was kann ich für Sie tun?",
+                  sp: "A"
+                },
+                {
+                  it: "Mein Vater ist heute so durcheinander. Er hat mich gefragt, wo er ist, und mich zuerst gar nicht erkannt. So habe ich ihn noch nie erlebt.",
+                  sp: "B"
+                },
+                {
+                  it: "Das verstehe ich, so etwas ist erschreckend. Nach einer Operation werden ältere Menschen leider öfter für einige Tage verwirrt.",
+                  sp: "A"
+                },
+                {
+                  it: "Meistens geht das wieder vorbei. Die Ärztin weiß Bescheid und sieht ihn sich heute noch einmal an.",
+                  sp: "A"
+                },
+                {
+                  it: "Kann ich irgendetwas für ihn tun?",
+                  sp: "B"
+                },
+                {
+                  it: "Ja, sogar eine ganze Menge. Vertraute Dinge geben ihm Halt, zum Beispiel Fotos von zu Hause oder seine eigene Armbanduhr.",
+                  sp: "A"
+                },
+                {
+                  it: "Und kommen Sie lieber jeden Tag kurz vorbei als einmal in der Woche für lange Zeit.",
+                  sp: "A"
+                },
+                {
+                  it: "Das schaffe ich. Ich arbeite hier in der Nähe und könnte in meiner Mittagspause kommen.",
+                  sp: "B"
+                },
+                {
+                  it: "Sehr gut. Nur zwischen zwölf und eins ist bei uns Mittagsruhe. Kommen Sie am besten ab halb zwei.",
+                  sp: "A"
+                },
+                {
+                  it: "Und darf ich ihm Kuchen aus seiner Lieblingsbäckerei mitbringen?",
+                  sp: "B"
+                },
+                {
+                  it: "Im Moment lieber nicht, er bekommt nach der Operation noch Schonkost. Fragen Sie in ein paar Tagen gern noch einmal nach.",
+                  sp: "A"
+                }
+              ]
+            ],
+            items: [
+              {
+                q: "Frau Ostermann hatte in der Nacht Fieber.",
+                opts: [
+                  "richtig",
+                  "falsch"
+                ],
+                a: 1
+              },
+              {
+                q: "Für Frau Ostermann soll ab heute ein Trinkprotokoll geführt werden.",
+                opts: [
+                  "richtig",
+                  "falsch"
+                ],
+                a: 0
+              },
+              {
+                q: "Herr Schuster hat das Mittagessen nicht vertragen.",
+                opts: [
+                  "richtig",
+                  "falsch"
+                ],
+                a: 1
+              },
+              {
+                q: "Lukas soll am Abend die Menge in der Drainage dokumentieren.",
+                opts: [
+                  "richtig",
+                  "falsch"
+                ],
+                a: 0
+              },
+              {
+                q: "Herr Brenner hat seinen Vater zu Hause schon öfter so verwirrt erlebt.",
+                opts: [
+                  "richtig",
+                  "falsch"
+                ],
+                a: 1
+              },
+              {
+                q: "Was sagt die Ärztin über den Toilettengang von Frau Ostermann?",
+                opts: [
+                  "Sie soll weiter den Toilettenstuhl benutzen.",
+                  "Sie darf nur mit Begleitung zur Toilette gehen.",
+                  "Sie darf erst nach der Physiotherapie aufstehen."
+                ],
+                a: 1
+              },
+              {
+                q: "Warum kommt Frau Schuster heute später?",
+                opts: [
+                  "Sie muss zuerst die Brille ihres Mannes reparieren lassen.",
+                  "Sie hat vorher einen Termin beim Hausarzt.",
+                  "Sie arbeitet heute bis sieben Uhr."
+                ],
+                a: 1
+              },
+              {
+                q: "Was gilt für Frau Lindner?",
+                opts: [
+                  "Ihre Position im Bett muss regelmäßig gewechselt werden.",
+                  "Sie soll tagsüber wach gehalten werden.",
+                  "Ihr Zustand hat sich seit gestern verschlechtert."
+                ],
+                a: 0
+              },
+              {
+                q: "Was empfiehlt Frau Wendt dem Sohn?",
+                opts: [
+                  "seltener, aber dafür länger zu Besuch zu kommen",
+                  "vertraute Gegenstände von zu Hause mitzubringen",
+                  "einen Gesprächstermin bei der Ärztin zu vereinbaren"
+                ],
+                a: 1
+              },
+              {
+                q: "Wann soll Herr Brenner seinen Vater besuchen?",
+                opts: [
+                  "in seiner Mittagspause um zwölf Uhr",
+                  "ab halb zwei",
+                  "abends nach der Arbeit"
+                ],
+                a: 1
+              }
+            ]
+          },
+          {
+            t: "mc",
+            puntiPerItem: 1,
+            consegna: "Sie hören eine Teambesprechung auf der Station 4B. Es sprechen die Stationsleitung Frau Brandt, Daniel Weber und Svetlana Hoffmann. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c. Sie hören das Gespräch zweimal.",
+            brani: [
+              [
+                {
+                  it: "Frau Brandt: Guten Morgen zusammen. Wir haben heute drei Themen: den Dienstplan für Dezember, die Sturzprotokolle und unsere neue Auszubildende.",
+                  sp: "A"
+                },
+                {
+                  it: "Frau Brandt: Zuerst der Dienstplan. Über die Feiertage fehlen uns noch zwei Nachtdienste, am vierundzwanzigsten und am sechsundzwanzigsten. Wer kann einspringen?",
+                  sp: "A"
+                },
+                {
+                  it: "Daniel Weber: Den sechsundzwanzigsten kann ich übernehmen. Dafür hätte ich gern an Silvester frei, wenn das möglich ist.",
+                  sp: "B"
+                },
+                {
+                  it: "Frau Brandt: Das schaue ich mir an, Daniel, Silvester ist noch nicht verteilt. Und wer nimmt Heiligabend?",
+                  sp: "A"
+                },
+                {
+                  it: "Svetlana Hoffmann: Das mache ich. Meine Familie feiert ohnehin erst am fünfundzwanzigsten.",
+                  sp: "A"
+                },
+                {
+                  it: "Frau Brandt: Danke, Svetlana. Dann ist der Plan fast fertig, ich hänge ihn bis Freitag im Stationszimmer aus.",
+                  sp: "A"
+                },
+                {
+                  it: "Frau Brandt: Zweites Thema, die Stürze. Im letzten Monat hatten wir vier, und drei davon passierten nachts auf dem Weg zur Toilette.",
+                  sp: "A"
+                },
+                {
+                  it: "Daniel Weber: Das passt zu meinen Beobachtungen. Viele Patienten klingeln nachts nicht, weil sie uns nicht stören wollen. Und in den Zimmern ist es dann sehr dunkel.",
+                  sp: "B"
+                },
+                {
+                  it: "Frau Brandt: Genau deshalb bekommen alle Zimmer ab nächster Woche kleine Nachtlichter an der Steckdose.",
+                  sp: "A"
+                },
+                {
+                  it: "Frau Brandt: Außerdem sagen wir Patienten mit Sturzrisiko abends noch einmal ausdrücklich, dass sie jederzeit klingeln sollen.",
+                  sp: "A"
+                },
+                {
+                  it: "Svetlana Hoffmann: Und das Sturzprotokoll, füllen wir das weiter auf Papier aus?",
+                  sp: "A"
+                },
+                {
+                  it: "Frau Brandt: Nein, ab dem ersten Dezember nur noch elektronisch im Dokumentationssystem. Papierbögen werden dann nicht mehr angenommen.",
+                  sp: "A"
+                },
+                {
+                  it: "Frau Brandt: Eine kurze Schulung dazu gibt es am Montag um vierzehn Uhr im Besprechungsraum.",
+                  sp: "A"
+                },
+                {
+                  it: "Frau Brandt: Zum Schluss: Am Montag beginnt Frau Okafor ihren Einsatz bei uns. Sie ist im zweiten Ausbildungsjahr, und Svetlana ist ihre Praxisanleiterin.",
+                  sp: "A"
+                },
+                {
+                  it: "Svetlana Hoffmann: Ich habe schon mit der Pflegeschule gesprochen. In der ersten Woche arbeitet sie nur mit mir im Frühdienst, damit sie die Abläufe kennenlernt.",
+                  sp: "A"
+                },
+                {
+                  it: "Daniel Weber: Wenn Svetlana einmal frei hat, kann ich die Anleitung gern übernehmen.",
+                  sp: "B"
+                },
+                {
+                  it: "Frau Brandt: Prima, vielen Dank euch allen. Dann machen wir für heute Schluss.",
+                  sp: "A"
+                }
+              ]
+            ],
+            items: [
+              {
+                q: "Welchen Nachtdienst übernimmt Daniel Weber?",
+                opts: [
+                  "den an Heiligabend",
+                  "den am sechsundzwanzigsten",
+                  "den an Silvester"
+                ],
+                a: 1
+              },
+              {
+                q: "Was sagt Frau Brandt zum Dienstplan?",
+                opts: [
+                  "Sie hängt ihn bis Freitag aus.",
+                  "An Silvester sind schon alle Dienste vergeben.",
+                  "Es fehlen noch drei Nachtdienste."
+                ],
+                a: 0
+              },
+              {
+                q: "Wann sind die meisten Stürze passiert?",
+                opts: [
+                  "morgens beim Aufstehen",
+                  "während der Körperpflege",
+                  "nachts auf dem Weg zur Toilette"
+                ],
+                a: 2
+              },
+              {
+                q: "Was ändert sich in den Patientenzimmern?",
+                opts: [
+                  "Die Klingeln werden ausgetauscht.",
+                  "Es werden kleine Nachtlichter angebracht.",
+                  "Die Betten werden niedriger eingestellt."
+                ],
+                a: 1
+              },
+              {
+                q: "Was gilt ab dem ersten Dezember für die Sturzprotokolle?",
+                opts: [
+                  "Sie werden nur noch elektronisch ausgefüllt.",
+                  "Die Stationsleitung muss sie unterschreiben.",
+                  "Sie werden zusätzlich auf Papier abgelegt."
+                ],
+                a: 0
+              },
+              {
+                q: "Was erfährt man über Frau Okafor?",
+                opts: [
+                  "Sie ist im ersten Ausbildungsjahr.",
+                  "Daniel Weber ist ihr Praxisanleiter.",
+                  "Sie arbeitet in der ersten Woche nur im Frühdienst."
+                ],
+                a: 2
+              }
+            ]
+          },
+          {
+            t: "abbina",
+            puntiPerItem: 1,
+            consegna: "Sie hören drei Personen zum Thema: Sollen Angehörige im Krankenhaus bei der Pflege mithelfen? Welche Aussage a bis e passt zu welcher Person? Zwei Aussagen passen zu keiner Person. Wenn keine Aussage passt, wählen Sie 0. Sie hören jede Person zweimal.",
+            brani: [
+              [
+                {
+                  it: "Ich heiße Renate Seidel und bin seit zwanzig Jahren Pflegefachfrau auf einer chirurgischen Station.",
+                  sp: "A"
+                },
+                {
+                  it: "Ich finde es schön, wenn Angehörige beim Essen helfen, vorlesen oder mit dem Patienten ein paar Schritte über den Flur gehen.",
+                  sp: "A"
+                },
+                {
+                  it: "Aber Waschen, Lagern oder Verbände gehören in die Hände von Fachleuten. Wenn dabei etwas passiert, tragen wir die Verantwortung und nicht die Tochter oder der Sohn.",
+                  sp: "A"
+                }
+              ],
+              [
+                {
+                  it: "Mein Name ist Markus Feld. Meine Mutter lag im Frühjahr drei Wochen im Krankenhaus.",
+                  sp: "B"
+                },
+                {
+                  it: "Sie hat sich nur wohlgefühlt, wenn ich da war. Morgens habe ich ihr beim Waschen geholfen, weil sie sich vor fremden Menschen schämt.",
+                  sp: "B"
+                },
+                {
+                  it: "Die Pflegekräfte haben mir am ersten Tag gezeigt, worauf ich achten muss. Ich finde, man sollte Familien viel öfter so einbeziehen. Das hilft allen.",
+                  sp: "B"
+                }
+              ],
+              [
+                {
+                  it: "Ich bin Ines Vogt und arbeite als Ärztin in der Geriatrie.",
+                  sp: "A"
+                },
+                {
+                  it: "Ich sehe das Problem eigentlich woanders. Auf vielen Stationen fehlt Personal, und dann sollen die Familien die Lücken schließen.",
+                  sp: "A"
+                },
+                {
+                  it: "Das kann keine Lösung sein. Wer die Hilfe von Angehörigen fest einplant, nimmt den Verantwortlichen den Druck, endlich mehr Stellen zu schaffen.",
+                  sp: "A"
+                }
+              ]
+            ],
+            annunci: [
+              {
+                titolo: "Kein Ersatz",
+                testo: "Die Hilfe der Familie darf fehlendes Personal nicht ersetzen."
+              },
+              {
+                titolo: "Störung im Ablauf",
+                testo: "Angehörige auf der Station machen die Arbeit oft komplizierter."
+              },
+              {
+                titolo: "Klare Grenzen",
+                testo: "Bei einfachen Dingen dürfen Angehörige helfen, die eigentliche Pflege bleibt beim Fachpersonal."
+              },
+              {
+                titolo: "Erst ein Kurs",
+                testo: "Wer mithelfen will, sollte vorher einen Pflegekurs besuchen müssen."
+              },
+              {
+                titolo: "Mehr Beteiligung",
+                testo: "Angehörige sollten auch bei der Körperpflege mithelfen dürfen."
+              }
+            ],
+            items: [
+              {
+                q: "Renate Seidel, Pflegefachfrau",
+                a: 2
+              },
+              {
+                q: "Markus Feld, Sohn einer Patientin",
+                a: 4
+              },
+              {
+                q: "Ines Vogt, Ärztin",
+                a: 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: "lettura",
+        modulo: "Lesen",
+        minuti: 60,
+        prove: [
+          {
+            t: "abbina",
+            puntiPerItem: 1,
+            consegna: "Lesen Sie die vier E-Mails und die Betreffzeilen a bis f. Welche Betreffzeile passt zu welcher E-Mail? Jede Betreffzeile passt höchstens einmal. Zwei Betreffzeilen bleiben übrig. Wenn keine Betreffzeile passt, wählen Sie 0.",
+            testo: [
+              "E-Mail 1: Liebe Kolleginnen und Kollegen, ab Montag wird der Aufzug neben der Cafeteria drei Wochen lang repariert. Bitte bringen Sie Patientinnen und Patienten im Bett in dieser Zeit über den Aufzug im Westflügel zur Radiologie. Planen Sie dafür etwa zehn Minuten mehr ein und sagen Sie der Radiologie Bescheid, wenn Sie sich verspäten. Viele Grüße, Klaus Betz, Haustechnik",
+              "E-Mail 2: Hallo liebes Team der Station 4B, ich bin die Tochter von Frau Gerlach, die letzte Woche bei Ihnen lag. Meine Mutter ist wieder zu Hause, und es geht ihr gut. Sie erzählt immer wieder, wie geduldig Sie mit ihr waren, gerade in den Nächten, in denen sie nicht schlafen konnte. Dafür möchten wir uns herzlich bedanken. Am Freitag bringe ich eine Kleinigkeit für Ihr Stationszimmer vorbei. Herzliche Grüße, Carola Gerlach",
+              "E-Mail 3: Hallo Sven, könntest du am Samstag meinen Frühdienst übernehmen? Mein Sohn spielt bei einem Fußballturnier in Kassel, und ich würde ihn gern hinfahren. Ich nehme dafür deinen Spätdienst am Mittwoch. Frau Brandt ist einverstanden, wenn du zustimmst. Gib mir bitte bis morgen Bescheid. Danke dir! Mira",
+              "E-Mail 4: Sehr geehrte Damen und Herren, im Rahmen unserer Qualitätsprüfung befragen wir vom 3. bis 5. März unsere Patientinnen und Patienten. Die Fragebögen werden am Aufnahmetag verteilt und können ohne Namen in die Boxen vor den Stationen geworfen werden. Bitte weisen Sie bei der Aufnahme kurz darauf hin. Mit freundlichen Grüßen, Dr. Silke Arndt, Qualitätsmanagement"
+            ],
+            annunci: [
+              {
+                titolo: "Reparatur der Patientenklingeln",
+                testo: ""
+              },
+              {
+                titolo: "Bitte um einen Diensttausch",
+                testo: ""
+              },
+              {
+                titolo: "Fragebögen für Patienten im März",
+                testo: ""
+              },
+              {
+                titolo: "Beschwerde über den Nachtdienst",
+                testo: ""
+              },
+              {
+                titolo: "Längerer Weg für Bettentransporte",
+                testo: ""
+              },
+              {
+                titolo: "Dank einer Familie",
+                testo: ""
+              }
+            ],
+            items: [
+              {
+                q: "E-Mail 1",
+                a: 4
+              },
+              {
+                q: "E-Mail 2",
+                a: 5
+              },
+              {
+                q: "E-Mail 3",
+                a: 1
+              },
+              {
+                q: "E-Mail 4",
+                a: 2
+              }
+            ]
+          },
+          {
+            t: "abbina",
+            puntiPerItem: 1,
+            consegna: "Lesen Sie den Auszug aus einer Pflegeplanung und die Maßnahmen a bis g. Welche Maßnahme passt zu welchem Pflegeproblem? Jede Maßnahme passt höchstens einmal. Zwei Maßnahmen bleiben übrig. Wenn keine Maßnahme passt, wählen Sie 0.",
+            titolo: "Pflegeplanung, Seniorenzentrum Haus am Mühlbach, Wohnbereich 2",
+            testo: [
+              "Bewohner: Walter Ebert, 81 Jahre. Herr Ebert hatte vor sechs Wochen einen Schlaganfall und ist seitdem auf der rechten Seite gelähmt. Er ist zu Zeit, Ort und Person orientiert, spricht aber langsam und ermüdet schnell. Früher hat er als Schreiner gearbeitet und bis vor zwei Jahren allein in seinem Haus gelebt. Seine Tochter besucht ihn zweimal in der Woche.",
+              "Pflegeziele: Herr Ebert bleibt ohne Druckgeschwür und ohne Sturz, nimmt genug Flüssigkeit auf und isst so selbstständig wie möglich. Er findet Kontakt zu anderen Bewohnern."
+            ],
+            annunci: [
+              {
+                titolo: "Messungen vor den Mahlzeiten",
+                testo: "Blutzucker vor jeder Mahlzeit messen, die Werte eintragen und Abweichungen der Hausärztin melden."
+              },
+              {
+                titolo: "Hilfsmittel am Esstisch",
+                testo: "Essen mundgerecht vorbereiten, Teller mit erhöhtem Rand und Besteck mit dickem Griff bereitstellen, dann allein essen lassen."
+              },
+              {
+                titolo: "Positionswechsel",
+                testo: "Nach Plan alle zwei Stunden umlagern, Haut an Steiß und Fersen täglich kontrollieren, jede Lagerung dokumentieren."
+              },
+              {
+                titolo: "Gruppenangebot",
+                testo: "Zum Erzählcafé am Donnerstag begleiten und Gespräche über seine frühere Arbeit in der Werkstatt anregen."
+              },
+              {
+                titolo: "Hilfe im Bad",
+                testo: "Beim Duschen einen Duschstuhl bereitstellen, Haltegriffe nutzen und die Wassertemperatur vorher prüfen."
+              },
+              {
+                titolo: "Konsistenz der Getränke",
+                testo: "Getränke angedickt reichen, nur in aufrechter Sitzposition trinken lassen und nach dem Essen noch eine Weile sitzen lassen."
+              },
+              {
+                titolo: "Vorkehrungen am Bett",
+                testo: "Bett nachts in die niedrigste Position bringen, eine Sensormatte vor das Bett legen und ein Nachtlicht einschalten."
+              }
+            ],
+            items: [
+              {
+                q: "Herr Ebert kann sich wegen der Lähmung nicht selbst im Bett drehen. Die Haut ist durch Druck gefährdet.",
+                a: 2
+              },
+              {
+                q: "Herr Ebert verschluckt sich häufig beim Trinken und hustet danach stark.",
+                a: 5
+              },
+              {
+                q: "Herr Ebert ist nachts unruhig und versucht, allein aufzustehen.",
+                a: 6
+              },
+              {
+                q: "Herr Ebert zieht sich zurück und spricht kaum mit den anderen Bewohnern.",
+                a: 3
+              },
+              {
+                q: "Herr Ebert kann mit der linken Hand essen, braucht aber Hilfe beim Schneiden.",
+                a: 1
+              }
+            ]
+          },
+          {
+            t: "mc",
+            puntiPerItem: 1,
+            consegna: "Lesen Sie die drei Texte und die Aufgaben 1 bis 6. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.",
+            testo: [
+              "Text A: Gebrauchsinformation Tarvelin Filmtabletten (Auszug)",
+              "Wofür wird Tarvelin angewendet? Tarvelin wird bei Erwachsenen zur Behandlung von leichten bis mäßig starken Gelenkschmerzen angewendet.",
+              "Wann dürfen Sie Tarvelin nicht einnehmen? Wenn Sie allergisch gegen den Wirkstoff sind oder wenn Sie ein Magengeschwür haben.",
+              "Wie ist Tarvelin einzunehmen? Nehmen Sie die Tablette nach einer Mahlzeit unzerkaut mit einem Glas Wasser ein. Die Tablette darf nicht geteilt werden, weil sie eine schützende Schicht hat.",
+              "Welche Nebenwirkungen sind möglich? Häufig treten Magenbeschwerden und Übelkeit auf, selten ein Hautausschlag. Wenn Sie schwarzen Stuhl bemerken, beenden Sie die Einnahme und wenden Sie sich sofort an eine Ärztin oder einen Arzt.",
+              "Text B: Rundschreiben der Pflegedirektion an alle Stationen. Betreff: Wertsachen von Patientinnen und Patienten",
+              "Ab dem 1. April werden Wertsachen nicht mehr im Stationszimmer aufbewahrt. Jedes Patientenzimmer bekommt abschließbare Fächer im Schrank, den Schlüssel erhält die Patientin oder der Patient selbst.",
+              "Kann eine Person wegen ihres Zustands nicht selbst auf ihre Sachen achten, werden Geld, Schmuck und Dokumente in Anwesenheit von zwei Pflegekräften in einer Liste erfasst und im Tresor der Verwaltung hinterlegt. Beide Pflegekräfte unterschreiben die Liste.",
+              "Brillen, Hörgeräte und Zahnprothesen sind von dieser Regelung ausgenommen. Sie bleiben bei der Patientin oder dem Patienten und werden in der Pflegedokumentation vermerkt.",
+              "Text C: Dienstanweisung des Klinikums Lindenhain zu freiheitsentziehenden Maßnahmen (Auszug)",
+              "Erstens: Als freiheitsentziehend gelten unter anderem hochgestellte Bettgitter, Bauchgurte und Tische am Stuhl, wenn die Person sie nicht selbst entfernen kann.",
+              "Zweitens: Solche Maßnahmen sind nur erlaubt, wenn die Person selbst wirksam zustimmt oder wenn eine Genehmigung des Betreuungsgerichts vorliegt.",
+              "Drittens: In einer akuten Gefahrensituation darf eine Pflegefachkraft eine Maßnahme vorübergehend anordnen. Sie informiert unverzüglich die zuständige Ärztin oder den zuständigen Arzt.",
+              "Viertens: Jede Maßnahme wird mit Grund, Beginn, Ende und den Namen der Beteiligten dokumentiert. Vorher ist zu prüfen, ob mildere Mittel ausreichen, zum Beispiel ein Niederflurbett oder eine Sensormatte."
+            ],
+            items: [
+              {
+                q: "Text A: Wie soll Tarvelin eingenommen werden?",
+                opts: [
+                  "vor dem Essen, in Wasser aufgelöst",
+                  "nach dem Essen, ganz geschluckt",
+                  "geteilt, damit man es leichter schlucken kann"
+                ],
+                a: 1
+              },
+              {
+                q: "Text A: Was soll man tun, wenn der Stuhl schwarz wird?",
+                opts: [
+                  "die Tabletten weiter nehmen und den Stuhl beobachten",
+                  "die Tabletten nur noch zusammen mit dem Essen nehmen",
+                  "die Einnahme beenden und sofort ärztlichen Rat holen"
+                ],
+                a: 2
+              },
+              {
+                q: "Text B: Wo bewahren Patienten ihre Wertsachen ab April normalerweise auf?",
+                opts: [
+                  "im Stationszimmer",
+                  "in einem abschließbaren Fach im eigenen Zimmer",
+                  "im Tresor der Verwaltung"
+                ],
+                a: 1
+              },
+              {
+                q: "Text B: Was gilt für Hörgeräte?",
+                opts: [
+                  "Sie kommen zusammen mit dem Geld in den Tresor.",
+                  "Sie werden in der Liste der Wertsachen erfasst.",
+                  "Sie bleiben beim Patienten und werden dokumentiert."
+                ],
+                a: 2
+              },
+              {
+                q: "Text C: Wann ist ein hochgestelltes Bettgitter eine freiheitsentziehende Maßnahme?",
+                opts: [
+                  "immer, wenn es benutzt wird",
+                  "wenn die Person es nicht selbst öffnen kann",
+                  "nur wenn es in der Nacht benutzt wird"
+                ],
+                a: 1
+              },
+              {
+                q: "Text C: Was muss eine Pflegefachkraft tun, wenn sie in einer Notsituation eine Maßnahme anordnet?",
+                opts: [
+                  "sofort die Ärztin oder den Arzt informieren",
+                  "zuerst beim Betreuungsgericht anrufen",
+                  "die Zustimmung der Angehörigen einholen"
+                ],
+                a: 0
+              }
+            ]
+          },
+          {
+            t: "vf",
+            puntiPerItem: 1,
+            consegna: "Lesen Sie den Text aus der Informationsmappe für neue Mitarbeitende. Sind die Aussagen 1 bis 3 richtig oder falsch?",
+            titolo: "Gesund bleiben im Beruf: Angebote des Klinikums Lindenhain",
+            testo: [
+              "Das Klinikum Lindenhain bietet allen Beschäftigten ein Programm zur Gesundheitsförderung an. Dazu gehören ein Rückenkurs, der zweimal pro Woche direkt nach dem Frühdienst stattfindet, und ein Zuschuss zum Beitrag im Fitnessstudio.",
+              "Der Rückenkurs wird als Arbeitszeit angerechnet, wenn Sie in den ersten sechs Monaten mindestens acht Termine besuchen. Die Anmeldung erfolgt über das Intranet, die Plätze werden in der Reihenfolge der Anmeldungen vergeben.",
+              "Für den Zuschuss zum Fitnessstudio reichen Sie einmal im Quartal Ihre Rechnung bei der Personalabteilung ein. Der Betrag wird mit dem nächsten Gehalt ausgezahlt.",
+              "Außerdem gibt es eine kostenlose Beratung für Beschäftigte, die sich im Beruf oder im Privatleben belastet fühlen. Die Termine vereinbaren Sie direkt mit der Beratungsstelle. Die Gespräche sind vertraulich, Ihre Vorgesetzten erfahren davon nichts."
+            ],
+            items: [
+              {
+                q: "Der Rückenkurs findet vor Beginn des Frühdienstes statt.",
+                a: 1
+              },
+              {
+                q: "Für den Zuschuss zum Fitnessstudio muss man die Rechnung bei der Personalabteilung abgeben.",
+                a: 0
+              },
+              {
+                q: "Die Stationsleitung wird informiert, wenn jemand die Beratung nutzt.",
+                a: 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: "sprachbausteine",
+        modulo: "Sprachbausteine",
+        minuti: 60,
+        prove: [
+          {
+            t: "lueckeAbbina",
+            puntiPerItem: 1,
+            consegna: "Lesen Sie den Pflegebericht. Welches Wort passt in die Lücken 1 bis 8? Jedes Wort passt nur einmal. Vier Wörter bleiben übrig.",
+            titolo: "Pflegebericht Frühdienst, Frau Irmgard Kessler, Zimmer 7",
+            opts: [
+              "deshalb",
+              "ob",
+              "weil",
+              "nachdem",
+              "sondern",
+              "falls",
+              "außerdem",
+              "denn",
+              "damit",
+              "obwohl",
+              "trotzdem",
+              "bevor"
+            ],
+            testo: [
+              "Frau Kessler hat die Nacht unruhig verbracht,",
+              "sie Schmerzen im linken Bein hatte. Um sechs Uhr war sie wach und orientiert. Sie wollte allein zur Toilette gehen,",
+              "sie seit gestern nur mit dem Rollator gehen darf. Ich habe sie begleitet. Die Körperpflege hat sie am Waschbecken teilweise selbst übernommen;",
+              "hat sie sich die Zähne allein geputzt. Zum Frühstück hat sie nur eine halbe Scheibe Brot gegessen,",
+              "habe ich ihr um zehn Uhr einen Joghurt angeboten, den sie gern genommen hat. Für das Bein wurde ein Ultraschall angeordnet,",
+              "die Ärztin sie bei der Visite untersucht hatte. Frau Kessler war danach sehr nervös. Ich habe ihr den Ablauf der Untersuchung erklärt,",
+              "sie weiß, was auf sie zukommt. Die Tochter wurde telefonisch informiert,",
+              "der Transport zur Untersuchung bestellt wurde. Bitte im Spätdienst die Schmerzen erneut einschätzen und die Ärztin verständigen,",
+              "der Wert auf der Schmerzskala über vier liegt."
+            ],
+            items: [
+              {
+                a: 2
+              },
+              {
+                a: 9
+              },
+              {
+                a: 6
+              },
+              {
+                a: 0
+              },
+              {
+                a: 3
+              },
+              {
+                a: 8
+              },
+              {
+                a: 11
+              },
+              {
+                a: 5
+              }
+            ]
+          },
+          {
+            t: "lueckeMc",
+            puntiPerItem: 1,
+            consegna: "Lesen Sie den Überleitungsbericht. Welches Wort passt in die Lücken 1 bis 10? Wählen Sie bei jeder Lücke a, b oder c.",
+            titolo: "Pflegerischer Überleitungsbericht, Herr Rudolf Matern",
+            testo: [
+              "Herr Matern wird heute vom Klinikum Lindenhain in das Seniorenzentrum Haus am Mühlbach verlegt. Er ist vor zwölf Tagen wegen einer Lungenentzündung stationär",
+              "worden. Die",
+              "sind seit drei Tagen stabil. Herr Matern ist zu Zeit, Ort und Person",
+              "und kann einfache Entscheidungen selbst treffen. Bei der Körperpflege benötigt er",
+              "beim Waschen von Rücken und Beinen. Er geht mit dem Rollator, ist aber",
+              "und sollte nachts nicht ohne Licht aufstehen. Die Haut am Steiß ist leicht gerötet, ein",
+              "ist bisher nicht entstanden. Herr Matern trägt im Oberkiefer eine",
+              "aus Kunststoff, die er selbst reinigt. Tagsüber ist er",
+              "und geht allein zur Toilette, nachts benutzt er eine Urinflasche. Die Medikamente werden weiter nach dem beiliegenden",
+              "gegeben. Für Rückfragen steht Ihnen die",
+              "der Station 4B gern zur Verfügung."
+            ],
+            items: [
+              {
+                opts: [
+                  "angenommen",
+                  "aufgenommen",
+                  "übernommen"
+                ],
+                a: 1
+              },
+              {
+                opts: [
+                  "Vitalzeichen",
+                  "Lebenszeichen",
+                  "Kennzeichen"
+                ],
+                a: 0
+              },
+              {
+                opts: [
+                  "informiert",
+                  "organisiert",
+                  "orientiert"
+                ],
+                a: 2
+              },
+              {
+                opts: [
+                  "Unterhaltung",
+                  "Unterstützung",
+                  "Unterbrechung"
+                ],
+                a: 1
+              },
+              {
+                opts: [
+                  "sturzgefährdet",
+                  "sturzbereit",
+                  "sturzfrei"
+                ],
+                a: 0
+              },
+              {
+                opts: [
+                  "Diabetes",
+                  "Delir",
+                  "Dekubitus"
+                ],
+                a: 2
+              },
+              {
+                opts: [
+                  "Zahnprothese",
+                  "Zahnbürste",
+                  "Zahnlücke"
+                ],
+                a: 0
+              },
+              {
+                opts: [
+                  "konstant",
+                  "kontinent",
+                  "kontinuierlich"
+                ],
+                a: 1
+              },
+              {
+                opts: [
+                  "Medikamentenrest",
+                  "Medikamentenpreis",
+                  "Medikamentenplan"
+                ],
+                a: 2
+              },
+              {
+                opts: [
+                  "Stationsküche",
+                  "Stationsleitung",
+                  "Stationsapotheke"
+                ],
+                a: 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: "scritta",
+        modulo: "Schreiben",
+        minuti: 30,
+        prove: [
+          {
+            t: "schreiben",
+            scelta: [
+              {
+                titolo: "Aufnahmebericht",
+                consegna: "Sie arbeiten im Seniorenzentrum Haus am Mühlbach. Heute ist Frau Gisela Brockmann bei Ihnen eingezogen. Schreiben Sie mit Hilfe des Auszugs aus dem Anamnesebogen einen Aufnahmebericht für die Pflegedokumentation. Schreiben Sie in ganzen Sätzen und gehen Sie auf alle Angaben ein.",
+                modulo: {
+                  intestazione: "Anamnesebogen (Auszug), Seniorenzentrum Haus am Mühlbach",
+                  righe: [
+                    [
+                      "Name",
+                      "Gisela Brockmann, 84 Jahre"
+                    ],
+                    [
+                      "Einzug",
+                      "heute um halb elf, begleitet von ihrem Sohn"
+                    ],
+                    [
+                      "Diagnosen",
+                      "Herzschwäche, Arthrose in beiden Knien"
+                    ],
+                    [
+                      "Mobilität",
+                      "geht kurze Strecken mit dem Rollator, Treppen nicht möglich"
+                    ],
+                    [
+                      "Körperpflege",
+                      "wäscht Gesicht und Oberkörper selbst, braucht Hilfe beim Duschen"
+                    ],
+                    [
+                      "Ernährung",
+                      "isst gern, trinkt wenig, mag keinen Fisch"
+                    ],
+                    [
+                      "Ausscheidung",
+                      "nachts zweimal zur Toilette, leichte Harninkontinenz"
+                    ],
+                    [
+                      "Schlaf",
+                      "schläft schlecht ein, möchte das Fenster gekippt haben"
+                    ],
+                    [
+                      "Besonderheiten",
+                      "trägt links ein Hörgerät, zur Person orientiert, zu Zeit und Ort zeitweise unsicher"
+                    ]
+                  ]
+                },
+                richiede: [
+                  {
+                    etichetta: "Mobilität",
+                    any: [
+                      "Rollator",
+                      "Treppen",
+                      "Treppe"
+                    ]
+                  },
+                  {
+                    etichetta: "Körperpflege",
+                    any: [
+                      "duschen",
+                      "Duschen",
+                      "wäscht",
+                      "waschen",
+                      "Körperpflege"
+                    ]
+                  },
+                  {
+                    etichetta: "Ernährung",
+                    any: [
+                      "trinkt",
+                      "trinken",
+                      "isst",
+                      "essen",
+                      "Ernährung"
+                    ]
+                  },
+                  {
+                    etichetta: "Hörgerät",
+                    any: [
+                      "Hörgerät"
+                    ]
+                  },
+                  {
+                    etichetta: "Orientierung",
+                    any: [
+                      "orientiert",
+                      "Orientierung",
+                      "unsicher"
+                    ]
+                  }
+                ],
+                parole: {
+                  min: 100,
+                  max: 150
+                }
+              },
+              {
+                titolo: "Biografiebericht",
+                consegna: "Herr Helmut Kranz lebt seit einer Woche im Seniorenzentrum Haus am Mühlbach. Seine Tochter hat mit Ihnen den Biografiebogen ausgefüllt. Schreiben Sie mit Hilfe des Auszugs einen Biografiebericht für das Pflegeteam. Gehen Sie auf alle Angaben ein und schreiben Sie auch, was das Team daraus für den Alltag mit Herrn Kranz ableiten kann.",
+                modulo: {
+                  intestazione: "Biografiebogen (Auszug), Seniorenzentrum Haus am Mühlbach",
+                  righe: [
+                    [
+                      "Name",
+                      "Helmut Kranz, 88 Jahre"
+                    ],
+                    [
+                      "Herkunft",
+                      "aufgewachsen in einem Dorf an der Mosel, jüngstes von fünf Kindern"
+                    ],
+                    [
+                      "Beruf",
+                      "Busfahrer, später Leiter eines Busdepots"
+                    ],
+                    [
+                      "Familie",
+                      "seit vier Jahren verwitwet, eine Tochter, zwei Enkel"
+                    ],
+                    [
+                      "Hobbys",
+                      "Gartenarbeit, Kreuzworträtsel, Schlagermusik"
+                    ],
+                    [
+                      "Gewohnheiten",
+                      "steht um sechs Uhr auf, trinkt vor dem Frühstück Kaffee und liest Zeitung"
+                    ],
+                    [
+                      "Das mag er nicht",
+                      "laute Räume, Fernsehen am Abend"
+                    ],
+                    [
+                      "Das ist ihm wichtig",
+                      "Pünktlichkeit, gepflegte Kleidung, sonntags der Gottesdienst"
+                    ]
+                  ]
+                },
+                richiede: [
+                  {
+                    etichetta: "Beruf",
+                    any: [
+                      "Busfahrer",
+                      "Beruf",
+                      "Busdepot",
+                      "Busdepots"
+                    ]
+                  },
+                  {
+                    etichetta: "Familie",
+                    any: [
+                      "Tochter",
+                      "verwitwet",
+                      "Enkel"
+                    ]
+                  },
+                  {
+                    etichetta: "Hobbys",
+                    any: [
+                      "Garten",
+                      "Gartenarbeit",
+                      "Kreuzworträtsel",
+                      "Musik",
+                      "Hobbys"
+                    ]
+                  },
+                  {
+                    etichetta: "Tagesablauf",
+                    any: [
+                      "Kaffee",
+                      "Zeitung",
+                      "sechs Uhr"
+                    ]
+                  },
+                  {
+                    etichetta: "Hinweise für das Team",
+                    any: [
+                      "sollte",
+                      "sollten",
+                      "empfehlen",
+                      "wichtig"
+                    ]
+                  }
+                ],
+                parole: {
+                  min: 100,
+                  max: 150
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: "orale",
+        modulo: "Sprechen",
+        minuti: 16,
+        prove: [
+          {
+            t: "sprechen",
+            parti: [
+              {
+                id: "1A",
+                consegna: "Sehen Sie sich das Bild an. Erzählen Sie: Was sehen Sie? Welche Erfahrungen haben Sie mit solchen Situationen in Ihrem Berufsalltag gemacht?",
+                bild: {
+                  alt: "Pflegekraft begleitet einen älteren Mann mit Rollator über einen Flur",
+                  beschreibung: "Auf dem hellen Flur eines Pflegeheims geht ein älterer Mann mit einem Rollator. Neben ihm geht eine Pflegekraft in blauer Dienstkleidung und hält eine Hand locker an seinem Rücken. An der Wand hängen Fotos von einem Sommerfest, am Ende des Flurs steht ein Fenster offen. Der Mann lacht, die Pflegekraft zeigt mit der freien Hand nach vorn."
+                }
+              },
+              {
+                id: "1B",
+                fragen: [
+                  "Wie fördern Sie die Selbstständigkeit der Menschen, die Sie pflegen?",
+                  "Was machen Sie, wenn jemand keine Lust hat, aufzustehen?",
+                  "Welche Hilfsmittel für die Mobilität kennen Sie aus Ihrer Arbeit?"
+                ]
+              }
+            ]
+          },
+          {
+            t: "sprechen",
+            parti: [
+              {
+                id: "2A",
+                consegna: "Wählen Sie eines der beiden Themen und halten Sie einen kurzen Vortrag von etwa zwei Minuten. Die Stichworte helfen Ihnen.",
+                scelta: [
+                  {
+                    thema: "Die erste Woche einer neuen Kollegin oder eines neuen Kollegen",
+                    stichworte: [
+                      "Einarbeitung und feste Ansprechperson",
+                      "typische Schwierigkeiten am Anfang",
+                      "Dokumentation und Abläufe",
+                      "Ihre eigenen Erfahrungen"
+                    ]
+                  },
+                  {
+                    thema: "Essen und Trinken im Alter",
+                    stichworte: [
+                      "Appetit und Trinkmenge",
+                      "Hilfe beim Essen",
+                      "Wünsche und Gewohnheiten",
+                      "Beispiele aus Ihrem Berufsalltag"
+                    ]
+                  }
+                ]
+              },
+              {
+                id: "2B",
+                consegna: "Ihre Gesprächspartnerin oder Ihr Gesprächspartner und die Prüfenden stellen Ihnen Fragen zu Ihrem Vortrag.",
+                fragen: [
+                  "Was war für Sie am Anfang Ihrer Arbeit am schwierigsten?",
+                  "Wie kann ein Team neuen Kolleginnen und Kollegen den Start erleichtern?",
+                  "Was tun Sie, wenn ein Bewohner das Essen ablehnt?",
+                  "Wie dokumentieren Sie auf Ihrer Station die Trinkmenge?"
+                ]
+              }
+            ]
+          },
+          {
+            t: "sprechen",
+            parti: [
+              {
+                id: "3",
+                consegna: "Diskutieren Sie mit Ihrer Gesprächspartnerin oder Ihrem Gesprächspartner über das Thema. Sagen Sie Ihre Meinung, begründen Sie sie und reagieren Sie auf die Argumente der anderen Person.",
+                thema: "Sollen Pflegekräfte im Dienst ihr privates Smartphone bei sich tragen dürfen?",
+                aussagen: [
+                  "Wer das Handy in der Tasche hat, ist mit den Gedanken nicht beim Patienten.",
+                  "Ich brauche mein Handy, damit meine Familie mich im Notfall erreichen kann.",
+                  "Mit einer Übersetzungs-App kann ich mich mit Patienten verständigen, die kein Deutsch sprechen.",
+                  "Fotos und Nachrichten auf privaten Geräten sind ein Risiko für den Datenschutz."
+                ]
+              }
             ]
           }
         ]
