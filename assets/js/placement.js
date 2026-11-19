@@ -51,8 +51,12 @@
    * test ends when the interval closes: two adjacent levels are then
    * settled and further questions would add nothing.
    */
+  function sequentialLevels() {
+    return Core.registry.levels.filter(function (lv) { return lv.sequential !== false; });
+  }
+
   function nowyPrzebieg(seed) {
-    var kody = Core.registry.levels.map(function (l) { return l.code; });
+    var kody = sequentialLevels().map(function (l) { return l.code; });
     return {
       seed: seed,
       kody: kody,
@@ -99,7 +103,7 @@
   function zastosuj(p) {
     var w = wynik(p);
     var oznaczone = 0;
-    Core.registry.levels.forEach(function (lv, i) {
+    sequentialLevels().forEach(function (lv, i) {
       if (i >= w.index) return;
       (lv.units || []).forEach(function (u) {
         (u.lessons || []).concat(u.test ? [u.test] : []).forEach(function (l) {

@@ -167,6 +167,7 @@
   function nextOpenLesson() {
     var levels = registry.levels;
     for (var i = 0; i < levels.length; i++) {
+      if (levels[i].sequential === false) continue;
       var n = nextLesson(levels[i]);
       if (n) return { level: levels[i], unit: n.unit, lesson: n.lesson };
     }
@@ -183,6 +184,7 @@
     var levels = registry.levels;
     for (var i = from || 0; i < levels.length; i++) {
       var lv = levels[i];
+      if (lv.sequential === false) continue;
       if (!registry.loaded[lv.code]) {
         Registry.loadLevelData(lv.code, function () { findNextLesson(cb, i); });
         return;
@@ -294,7 +296,7 @@
   /* ---------------- Module export ---------------- */
   var Core = {
     STORE_KEY: Store.KEY,
-    registry: registry,
+    registry: registry, levelCodeOf: Registry.levelCodeOf,
     get state() { return Store.state; },
     load: Store.load, save: save,
     norm: norm, fold: fold, stripAccents: stripAccents, levenshtein: levenshtein,

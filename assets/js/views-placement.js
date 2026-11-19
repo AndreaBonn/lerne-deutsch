@@ -16,6 +16,10 @@
   var set = Views.shell.set;
   var pageHead = Views.shell.head;
 
+  function sequentialLevels() {
+    return Core.registry.levels.filter(function (lv) { return lv.sequential !== false; });
+  }
+
   Views.piazzamento = function (params) {
     if (params && params.go === "1") return start();
 
@@ -47,7 +51,7 @@
        be loaded; otherwise the pool of the higher levels would be empty and
        the student would land low because of missing data, not missing
        knowledge. */
-    var kody = Core.registry.levels.map(function (l) { return l.code; });
+    var kody = sequentialLevels().map(function (l) { return l.code; });
     var zostalo = kody.length;
     var nieudane = [];
     kody.forEach(function (k) {
@@ -136,7 +140,7 @@
   /** How many lessons would disappear from the path — the number shown BEFORE the decision. */
   function policzNizsze(indeks) {
     var n = 0;
-    Core.registry.levels.forEach(function (lv, i) {
+    sequentialLevels().forEach(function (lv, i) {
       if (i >= indeks) return;
       (lv.units || []).forEach(function (u) {
         (u.lessons || []).concat(u.test ? [u.test] : []).forEach(function (l) {

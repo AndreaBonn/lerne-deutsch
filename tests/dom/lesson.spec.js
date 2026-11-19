@@ -208,3 +208,16 @@ test("a late answer from a lesson already left changes nothing in the new one", 
   await expect(page.locator(".ex-chip.is-ok, .ex-chip.is-ko")).toHaveCount(przed);
   await expect(page.locator("#lessonScore")).toHaveText(/^0\//);
 });
+
+test("a cold bookmark opens a lesson from a non-sequential level", async ({ page }) => {
+  await page.route("**/data/core/curriculum-index.js", async route => {
+    const response = await route.fetch();
+    const body = await response.text();
+    await route.fulfill({ response, body: body + '\nLINGUAI.registerLevel({code:"PFL",sequential:false,dataFiles:["pfl-01.js"]});' });
+  });
+  await page.route("**/data/core/pfl-01.js", route => route.fulfill({ contentType: "text/javascript", body: 'LINGUAI.addUnits("PFL",[{id:"pfl-u01",title:"Pflege",lessons:[{id:"pfl-u01-l1",title:"Pflege bookmark",titleIt:"Pflege",theory:[],vocab:[],exercises:[]}]}]);' }));
+  await page.route("**/data/i18n/*/pfl-01.js", route => route.fulfill({ contentType: "text/javascript", body: "" }));
+  await page.goto("/index.html#/lezione?id=pfl-u01-l1");
+  await expect(page.locator("main h1")).toHaveText("Pflege");
+  await expect(page.locator("main")).toContainText("Pflege bookmark");
+});

@@ -425,3 +425,32 @@ describe("a level known only from the curriculum index", () => {
     assert.ok(R(box).getLesson("a1-u01-l1"));
   });
 });
+
+test("level code comes from the full lesson id prefix", () => {
+  const registry = R(swiezy());
+  assert.equal(registry.levelCodeOf("b2-u02-l1"), "B2");
+  assert.equal(registry.levelCodeOf("pfl-u01-l1"), "PFL");
+  assert.equal(registry.levelCodeOf(""), null);
+});
+
+test("next lesson skips non-sequential levels without loading them", () => {
+  const box = swiezy();
+  R(box).registerLevel(poziom({ code: "C2", units: [jednostka("c2-u01")] }));
+  R(box).registry.loaded.C2 = true;
+  ["c2-u01-l1", "c2-u01-test"].forEach(id => box.Core.recordLesson(id, 10, 10, 0));
+  R(box).registerLevel({ code: "PFL", sequential: false, dataFiles: ["pfl-01.js"], units: [jednostka("pfl-u01")] });
+  assert.equal(box.Core.nextOpenLesson(), null);
+  let result = "pending";
+  box.Core.findNextLesson(value => { result = value; });
+  assert.equal(result, null);
+  assert.equal(box.scripts.length, 0);
+});
+
+test("finding the next lesson never loads a non-sequential level", () => {
+  const box = swiezy();
+  R(box).registerLevel({ code: "PFL", sequential: false, dataFiles: ["pfl-01.js"] });
+  let result = "pending";
+  box.Core.findNextLesson(value => { result = value; });
+  assert.equal(result, null);
+  assert.equal(box.scripts.length, 0);
+});

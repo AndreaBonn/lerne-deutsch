@@ -108,6 +108,10 @@ const T_WRITING = "tests/unit/writing.test.mjs";
  * says.
  */
 const MUTACJE = [
+  { plik: "assets/js/placement.js", test: "tests/unit/placement.test.mjs", opis: "placement skips non-sequential levels",
+    z: "return Core.registry.levels.filter(function (lv) { return lv.sequential !== false; });", na: "return Core.registry.levels;" },
+  { plik: "assets/js/core.js", test: "tests/unit/registry.test.mjs", opis: "next lesson skips non-sequential levels",
+    z: "if (levels[i].sequential === false) continue;", na: "if (false) continue;" },
   { plik: "assets/js/cils-html.js", test: "tests/unit/cils-html.test.mjs", opis: "Teil: reading text omitted outside vf",
     z: "if (p.t !== \"cloze\" && p.testo)", na: "if (p.t === \"vf\" && p.testo)" },
   { plik: "assets/js/cils-html.js", test: "tests/unit/cils-html.test.mjs", opis: "Teil: ads disappear",

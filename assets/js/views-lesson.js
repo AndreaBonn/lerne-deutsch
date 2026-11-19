@@ -40,8 +40,7 @@
     if (!found) {
       // arriving from a bookmark, or moving to a lesson of a level not loaded yet:
       // pull the data of the level derived from the id (e.g. "b2-u02-l1" -> B2) and try again
-      var m = /^([a-z]\d)/i.exec(params.id || "");
-      var code = m ? m[1].toUpperCase() : null;
+      var code = Core.levelCodeOf(params.id);
       if (code && Core.registry.byCode[code] && !Core.registry.loaded[code]) {
         set(empty(t("path.loading")));
         Core.loadLevelData(code, function () {

@@ -266,3 +266,19 @@ describe("rejestr z mniejsza liczba poziomow", () => {
     assert.equal(r.placement.level, "A1");
   });
 });
+
+test("placement skips non-sequential levels in search and marking", () => {
+  const box = silnik();
+  box.Core.registerLevel({ code: "PFL", sequential: false, units: [{ lessons: [{ id: "pfl-u01-l1" }] }] });
+  const levels = box.Core.registry.levels;
+  levels.splice(1, 0, levels.pop());
+  box.Core.registry.byCode.A1.units = [{ lessons: [{ id: "a1-u01-l1" }] }];
+  const placement = box.sandbox.Placement;
+  const run = placement.nowyPrzebieg("seed");
+  let code;
+  while ((code = placement.nastepnyPoziom(run))) placement.zapiszRunde(run, code, 6, 6);
+  assert.equal(placement.wynik(run).code, "C2");
+  placement.zastosuj(run);
+  assert.equal(box.Core.state.lessons["a1-u01-l1"].done, true);
+  assert.equal(box.Core.state.lessons["pfl-u01-l1"], undefined);
+});

@@ -111,12 +111,12 @@
   }
 
   function pickStartLevel() {
-    var levels = Core.registry.levels;
+    var levels = Core.registry.levels.filter(function (lv) { return lv.sequential !== false; });
     for (var i = 0; i < levels.length; i++) {
       var p = Core.levelProgress(levels[i]);
       if (p.total === 0 || p.pct < 1) return levels[i].code;
     }
-    return levels[0].code;
+    return levels.length ? levels[0].code : null;
   }
 
   function renderResume(level, next) {

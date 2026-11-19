@@ -61,6 +61,8 @@
     });
   }
 
+  function levelCodeOf(id) { return id ? id.split("-")[0].toUpperCase() : null; }
+
   function getLesson(id) { return registry.lessonIndex[id] || null; }
 
   /** Adds units to an already registered level (data split across files). */
@@ -173,7 +175,7 @@
   }
 
   global.Registry = {
-    registry: registry,
+    registry: registry, levelCodeOf: levelCodeOf,
     registerLevel: registerLevel, addUnits: addUnits, getLesson: getLesson,
     reindex: reindex,
     i18nPaths: i18nPaths, markI18n: markI18n,

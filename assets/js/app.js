@@ -300,10 +300,11 @@
   /** Which level to load at startup: the one with unfinished progress. */
   function guessLevel(d) {
     if (d.route === "lezione" && d.params.id) {
-      var m = /^([a-z]\d)/i.exec(d.params.id);
-      if (m) return m[1].toUpperCase();
+      var code = global.Registry.levelCodeOf(d.params.id);
+      /* An id from an unknown level falls through, so the default level still loads. */
+      if (Core.registry.levels.some(function (lv) { return lv.code === code; })) return code;
     }
-    var levels = Core.registry.levels;
+    var levels = Core.registry.levels.filter(function (lv) { return lv.sequential !== false; });
     for (var i = 0; i < levels.length; i++) {
       var p = Core.levelProgress(levels[i]);
       if (p.total === 0 || p.pct < 1) return levels[i].code;
