@@ -183,10 +183,11 @@ describe("checkOpen", () => {
     assert.equal(r.sim, 0);
   });
 
-  /* Without that threshold "ho" against "io" comes out at 0.5 similarity on
-     two letters and the course would encourage the student that they were
-     close, on a pure guess. */
-  test("a string of up to two characters is never \"almost\"", () => {
+  /* On two letters one edit is half the word: "ho" against "io" is 0.5
+     similarity, under the "almost" threshold, so the course does not tell
+     the student they were close on a pure guess. A separate length guard
+     used to say the same thing and changed no result. */
+  test("two letters with one wrong are not \"almost\"", () => {
     assert.equal(T.checkOpen("ho", ["io"]).near, false);
   });
 

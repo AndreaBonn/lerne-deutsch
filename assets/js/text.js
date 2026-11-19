@@ -119,7 +119,7 @@
       var transcription = transcribedMatch(given, target);
       var sim = transcription ? 1 : similarity(given, target);
       if (sim > bestSim) { bestSim = sim; best = list[i]; }
-      if (transcription || (!umlautMismatch(given, target) && sim >= NEAR_THRESHOLD && given.length > 2)) near = true;
+      if (transcription || (!umlautMismatch(given, target) && sim >= NEAR_THRESHOLD)) near = true;
     }
     return { ok: ok, near: !ok && near, best: best || list[0], sim: bestSim };
   }
