@@ -47,8 +47,8 @@ test("the keys of every exercise in the course are different", async ({ page }) 
      collisions and pass. They are a BASELINE, so they move whenever content
      is added — and the value to put here is what the walk reports for the registered levels (`node scripts/baseline.mjs` once it runs again)
      prints, not a number anybody counts by hand. */
-  expect(wynik.lekcji).toBe(195);
-  expect(wynik.ile).toBe(2015);
+  expect(wynik.lekcji).toBe(200);
+  expect(wynik.ile).toBe(2072);
 });
 
 test("every key finds its own exercise again", async ({ page }) => {

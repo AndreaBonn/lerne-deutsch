@@ -264,4 +264,4 @@ B2-C2 non esiste una lista di riferimento; la copertura si giudica in revisione.
 
 Pseudo-livello senza originale italiano, unità dichiarate in `scripts/own-target.json`.
 Contratto completo in `specs/008-pflege/curriculum.md`. Unità registrate: pfl-u01 (Aufnahme
-und Anamnese), pfl-u02 (Vitalzeichen und Messwerte), pfl-u03 (Grundpflege und Mobilisation), pfl-u04 (Schmerz und Notfall), pfl-u05 (Medikamente und Beipackzettel).
+und Anamnese), pfl-u02 (Vitalzeichen und Messwerte), pfl-u03 (Grundpflege und Mobilisation), pfl-u04 (Schmerz und Notfall), pfl-u05 (Medikamente und Beipackzettel), pfl-u06 (Dienstübergabe und Pflegebericht).
