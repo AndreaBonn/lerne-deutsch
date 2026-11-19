@@ -270,10 +270,10 @@ HTML (celowo, dla wyróżnień) — nie wolno tam wstawiać treści pochodzącej
 `PFL` („Deutsch für die Pflege") jest rejestrowany jak poziom CEFR, ale nim nie jest: to ścieżka
 równoległa dla personelu pielęgniarskiego, od B1 ogólnego. Trzy pola `registerLevel` go odróżniają:
 
-- **`sequential: false`** — poziom nie wchodzi do testu poziomującego ani do łańcucha „następna
+- **`sequential: false`**: poziom nie wchodzi do testu poziomującego ani do łańcucha „następna
   lekcja" (`placement.js`, `views-placement.js`, `core.js`, `app.js`, `views-path.js`). Poziom bez
   tego pola jest sekwencyjny, więc A1-C2 zachowują się jak dawniej.
-- **`notice`** — klucz napisu pokazywany w bloku `role="note"` na ścieżce poziomu i w nagłówku
+- **`notice`**: klucz napisu pokazywany w bloku `role="note"` na ścieżce poziomu i w nagłówku
   każdej jego lekcji. Dla PFL mówi, że treść jest wygenerowana, jeszcze nie przejrzana przez
   personel medyczny i nie jest poradą medyczną. Po recenzji pielęgniarki (faza 7) zdanie o braku
   recenzji znika, reszta zostaje.
