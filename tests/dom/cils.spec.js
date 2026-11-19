@@ -434,3 +434,22 @@ test.describe("telc Sprechen with preparation", () => {
     await expect(page.locator(".js-notes-ro")).toHaveCount(0);
   });
 });
+
+/* The list is the only way into a simulation: a mock exam that is in the
+   data but not listed, or listed but unable to start, looks like a smaller
+   course rather than a broken one. */
+test("the list shows the four mock exams and each one starts", async ({ page }) => {
+  const errors = [];
+  page.on("pageerror", e => errors.push(e.message));
+  const ids = ["sim-1", "sim-2", "pfl-sim-1", "pfl-sim-2"];
+  await page.goto("/index.html#/esame");
+  await page.waitForSelector(".js-start");
+  await expect(page.locator(".js-start")).toHaveCount(ids.length);
+  for (const id of ids) {
+    await page.goto("/index.html#/esame");
+    await page.waitForSelector(".js-start");
+    await page.locator(`.js-start[data-id="${id}"]`).click();
+    await expect(page.locator(".js-clock")).toBeVisible();
+  }
+  expect(errors).toEqual([]);
+});
