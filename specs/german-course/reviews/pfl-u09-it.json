@@ -1,0 +1,28 @@
+{
+  "bundleHash": "b9e24fc27a5c6adfe370adf6a1a8d27eed897081d929375dd5c14d0e9081e797",
+  "findings": [
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "La spiegazione afferma che la d di «werden» rimane solo alla terza persona singolare, ma compare anche in «werde», «werden» e «werdet». Spiega invece che nella seconda persona singolare «wirst» la d cade, mentre nella terza «wird» rimane.",
+      "path": "merged.lessons[2].exercises[1].why"
+    },
+    {
+      "kind": "Traduzione",
+      "msg": "«Sie meldet sich» si riferisce alla moglie del paziente in terza persona; «si presenti» sembra invece rivolgersi direttamente all'interlocutore. Traduci, per esempio: «Prima Sua moglie si presenti nella stanza del personale, per favore: lì le spieghiamo tutto».",
+      "path": "merged.lessons[0].dialogue.lines[6].tr"
+    },
+    {
+      "kind": "Contrasto linguistico",
+      "msg": "«Kann ich?» può chiedere anche un permesso, non soltanto possibilità o capacità. Precisa che «Darf ich?» mette esplicitamente a fuoco il permesso, mentre «Kann ich?» può esprimerlo secondo il contesto.",
+      "path": "merged.lessons[3].theory[2].contrast"
+    },
+    {
+      "kind": "Domanda ambigua",
+      "msg": "Anche «Sie haben eine Hypertonie» comunica correttamente al paziente che ha la pressione alta; la consegna non chiede di scegliere la formulazione più comprensibile. Riformula la domanda precisando che si cerca l'espressione più semplice per il paziente.",
+      "path": "merged.test.exercises[0]"
+    }
+  ],
+  "lang": "it",
+  "unit": "pfl-u09",
+  "verdict": "fail"
+}

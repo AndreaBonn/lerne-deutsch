@@ -1,0 +1,43 @@
+{
+  "bundleHash": "38e5e802f5185795f48726d037b4585f3e80de73772941e92e469bf7ff6c41f6",
+  "findings": [
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La nota afferma che con le parti del corpo il pronome riflessivo al dativo è obbligatorio, ma la stessa lezione accetta «Desinfizieren Sie bitte Ihre Hände». Spiegare che la costruzione con «sich die Hände» è usuale, mentre è possibile anche il possessivo «Ihre Hände».",
+      "path": "merged.lessons[0].theory[3].trap"
+    },
+    {
+      "kind": "risposta ambigua",
+      "msg": "La prima lacuna ammette anche «wird»: la frase descriverebbe il rilevamento e l'isolamento al presente. Aggiungere un'indicazione temporale che richieda il Präteritum oppure accettare «wird».",
+      "path": "merged.lessons[0].exercises[3]"
+    },
+    {
+      "kind": "lessico",
+      "msg": "«Berufsverband» indica un'associazione professionale, non necessariamente un sindacato. Tradurre con «stowarzyszenie zawodowe»; per «związek zawodowy» usare «Gewerkschaft».",
+      "path": "merged.lessons[1].theory[3].trap"
+    },
+    {
+      "kind": "risposta ambigua",
+      "msg": "«Sie werden am Freitag entlassen» può essere anche Futur I attivo: «Loro licenzieranno/vorranno dimettere venerdì», con un complemento omesso ricavabile dal contesto. Specificare che «Sie» è la paziente a cui ci si rivolge, così da rendere univoca l'esclusione dalla risposta.",
+      "path": "merged.lessons[2].exercises[4]"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "La distinzione è troppo assoluta: «können» può esprimere anche permesso e «Kann ich?» può essere una richiesta di autorizzazione. Presentare «dürfen» come la scelta più esplicita per parlare di permesso o divieto, senza escludere gli usi pertinenti di «können».",
+      "path": "merged.lessons[3].theory[2].contrast"
+    },
+    {
+      "kind": "spiegazione lessicale",
+      "msg": "«Haftung» indica soprattutto responsabilità giuridica per danni o obbligazioni; includervi indistintamente la responsabilità penale è fuorviante. Distinguere «Haftung» da «strafrechtliche Verantwortung».",
+      "path": "merged.lessons[3].theory[3].trap"
+    },
+    {
+      "kind": "risposta ambigua",
+      "msg": "Senza un'indicazione temporale, «wird» è possibile anche nella prima lacuna e «wurde» nella seconda: il rilevamento e l'isolamento possono entrambi collocarsi al presente o al passato. Specificare il rapporto temporale richiesto oppure accettare le combinazioni grammaticalmente coerenti.",
+      "path": "merged.test.exercises[5]"
+    }
+  ],
+  "lang": "pl",
+  "unit": "pfl-u09",
+  "verdict": "fail"
+}

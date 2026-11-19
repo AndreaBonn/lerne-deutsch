@@ -1,0 +1,28 @@
+{
+  "bundleHash": "1e24c8970c3e7340181fffc165a814c328bd9e54faa714dd4c5a2cf69c9c28a3",
+  "findings": [
+    {
+      "kind": "Chiave ambigua",
+      "msg": "Senza un'indicazione temporale, sono possibili anche «wurde ... wurde» e «wird ... wird». Specifica che il rilevamento è passato e l'isolamento è attuale, oppure accetta le combinazioni coerenti.",
+      "path": "merged.test.exercises[5]"
+    },
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "La spiegazione afferma che la d rimane solo nella terza persona singolare, ma compare anche nella prima, «ich werde». Correggi distinguendo «werde», «wirst» e «wird».",
+      "path": "merged.lessons[2].exercises[1].why"
+    },
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "«Kann ich?» può chiedere anche un permesso, non soltanto esprimere possibilità o capacità. Presenta «Darf ich?» come la formulazione esplicita per chiedere il permesso, senza escludere tale uso di «können».",
+      "path": "merged.lessons[3].theory[2].contrast"
+    },
+    {
+      "kind": "Spiegazione grammaticale",
+      "msg": "«Siempre con bitte» presenta una scelta di cortesia come obbligo grammaticale. Sostituisci «siempre» con «a menudo» o spiega che bitte rende la richiesta più cortese.",
+      "path": "merged.lessons[0].theory[0].p"
+    }
+  ],
+  "lang": "es",
+  "unit": "pfl-u09",
+  "verdict": "fail"
+}

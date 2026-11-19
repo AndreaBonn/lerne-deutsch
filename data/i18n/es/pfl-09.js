@@ -95,7 +95,7 @@ LINGUAI.addStrings("es", {
           "Sie desinfizieren bitte sich die Hände.",
           "Desinfiziert Sie sich bitte die Hände."
         ],
-        why: "En el imperativo de cortesía el verbo va en primera posición y tiene la forma del infinitivo: <b>Desinfizieren Sie</b>. <i>Desinfiziert</i> es la forma de <i>ihr</i> y no va con <i>Sie</i>; <i>Sie desinfizieren bitte</i> es una frase afirmativa con el orden equivocado."
+        why: "En el imperativo de cortesía el verbo va en primera posición y tiene la forma del infinitivo: <b>Desinfizieren Sie</b>. <i>Desinfiziert</i> es la forma de <i>ihr</i> y no va con <i>Sie</i>; en <i>Sie desinfizieren bitte sich</i> el pronombre <i>sich</i> está fuera de lugar (va justo después del verbo), y además es una frase afirmativa, no el imperativo que se pide."
       },
       {
         tr: "El presente de desinfizieren, todas las personas.",
@@ -241,7 +241,7 @@ LINGUAI.addStrings("es", {
       {
         q: "Describe la herida: el borde está ligeramente enrojecido. ¿Qué frase es correcta?",
         opts: [
-          "Der Wundrand ist leicht geröteter.",
+          "Der Wundrand ist leicht gerötete.",
           "Der Wundrand hat leicht gerötet.",
           "Der Wundrand ist leicht gerötet."
         ],
@@ -393,11 +393,11 @@ LINGUAI.addStrings("es", {
           "Ein Pflegedienst wird Sie zu Hause unterstützen.",
           "Ein Pflegedienst werden Sie zu Hause unterstützen."
         ],
-        why: "Futur I: <i>wird</i> + <b>infinitivo</b> al final, <b>unterstützen</b>. Con el participio <i>unterstützt</i> la frase se convertiría en una pasiva sin sentido; <i>werden</i> no concuerda con el sujeto singular <i>ein Pflegedienst</i>."
+        why: "Futur I: <i>wird</i> + <b>infinitivo</b> al final, <b>unterstützen</b>. <i>wird ... unterstützt</i> es la estructura de la pasiva, y una pasiva no admite además el complemento en acusativo <i>Sie</i>: la frase es agramatical; <i>werden</i> no concuerda con el sujeto singular <i>ein Pflegedienst</i>."
       },
       {
         tr: "El presente de werden, todas las personas.",
-        why: "<i>Werde, wirst, wird, werden, werdet, werden</i>: en la segunda y la tercera persona del singular la <b>e</b> pasa a <b>i</b>, y la <b>d</b> se queda solo en la tercera, <i>wird</i>."
+        why: "<i>Werde, wirst, wird, werden, werdet, werden</i>: en la segunda y la tercera persona del singular la <b>e</b> pasa a <b>i</b>, y la <b>d</b> cae en <i>wirst</i> pero se queda en <i>wird</i>."
       },
       {
         q: "Completa: «Ihr Hausarzt ___ die Wunde nächste Woche kontrollieren.»",
@@ -434,7 +434,7 @@ LINGUAI.addStrings("es", {
         why: "<i>Ein Pflegedienst wird Sie morgens unterstützen.</i> <i>wird</i> en segunda posición, el infinitivo <i>unterstützen</i> al final."
       },
       {
-        q: "Traduce: «El médico de familia controlará la herida la semana que viene.»",
+        q: "Traduce con el Futur I: «El médico de familia controlará la herida la semana que viene.»",
         why: "<i>Der Hausarzt wird die Wunde nächste Woche kontrollieren</i>: Futur I, el infinitivo al final. <i>nächste Woche</i> (o <i>in der nächsten Woche</i>) también puede ir en primera posición: <i>Nächste Woche wird der Hausarzt ...</i>"
       },
       {
@@ -478,7 +478,7 @@ LINGUAI.addStrings("es", {
         p: "En Alemania algunas tareas médicas pueden delegarse al personal de enfermería (<em>Delegation</em>); quien acepta una tarea responde de cómo la ejecuta. Qué se puede delegar, a quién y en qué condiciones depende de la ley, del centro y de tu situación, por ejemplo mientras dura el reconocimiento del título. Esta lección enseña las palabras para preguntar y para decir que no, no las normas jurídicas: para los casos concretos la persona indicada es la <em>Stationsleitung</em>, la supervisora de planta."
       },
       {
-        contrast: "En español la negación separa bien los dos sentidos: «no tienes que hacerlo» quiere decir que no es obligatorio, y «no debes» o «no puedes hacerlo» quiere decir que está prohibido. El alemán reparte igual, pero con verbos que engañan: «no tener que» es <em>nicht müssen</em> (<em>Das <b>musst</b> du nicht allein machen</em>, «no tienes que hacerlo sola»), y la prohibición se dice con <em>nicht dürfen</em> (<em>Das <b>darfst</b> du nicht allein machen</em>, «no puedes hacerlo sola, no está permitido»). La trampa está en <em>müssen</em>, que suena a «deber»: traducir «no debes» con <em>musst nicht</em> convierte una prohibición en un permiso. También «¿puedo?» se divide en dos: <em>Darf ich?</em> pide permiso, <em>Kann ich?</em> pregunta si es posible o si eres capaz."
+        contrast: "En español la negación separa bien los dos sentidos: «no tienes que hacerlo» quiere decir que no es obligatorio, y «no debes» o «no puedes hacerlo» quiere decir que está prohibido. El alemán reparte igual, pero con verbos que engañan: «no tener que» es <em>nicht müssen</em> (<em>Das <b>musst</b> du nicht allein machen</em>, «no tienes que hacerlo sola»), y la prohibición se dice con <em>nicht dürfen</em> (<em>Das <b>darfst</b> du nicht allein machen</em>, «no puedes hacerlo sola, no está permitido»). La trampa está en <em>müssen</em>, que suena a «deber»: traducir «no debes» con <em>musst nicht</em> convierte una prohibición en un permiso. También «¿puedo?» se divide en dos: <em>Darf ich?</em> pide permiso de forma explícita; <em>Kann ich?</em> pregunta si es posible o si eres capaz, y en la lengua hablada a menudo también pide permiso. Cuando lo que cuenta es el permiso, <em>Darf ich?</em> es la opción clara."
       },
       {
         trap: "<em>die Haftung</em> no es la responsabilidad en general: es la responsabilidad jurídica, la obligación de responder de un daño. La responsabilidad profesional y moral es <em>die Verantwortung</em>: <em>Ich trage die Verantwortung für meine Patienten.</em> Y <em>die Krankenschwester</em>, que los pacientes todavía usan mucho, ya no es el título profesional: el título es <em>Pflegefachfrau</em> o <em>Pflegefachmann</em>, lo que en español sería «enfermera» o «enfermero»."
@@ -626,7 +626,7 @@ LINGUAI.addStrings("es", {
     ],
     exercises: [
       {
-        q: "Le explicas a un paciente que tiene la tensión alta. ¿Qué frase usas?",
+        q: "Le explicas a un paciente que tiene la tensión alta. ¿Qué frase entiende con más facilidad?",
         opts: ["Sie haben eine Hypertonie.", "Sie haben Bluthochdruck.", "Ihr RR ist erhöht."],
         why: "Con el paciente se usa la palabra de todos los días: <b>Bluthochdruck</b>. <i>Hypertonie</i> y la sigla <i>RR</i> valen entre colegas y en el registro."
       },

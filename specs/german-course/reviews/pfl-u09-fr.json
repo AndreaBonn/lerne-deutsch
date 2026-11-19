@@ -1,0 +1,68 @@
+{
+  "bundleHash": "e70ddb6b86ad4ef8749d59224209c2765f29f61bc25a6983c6b19a83d07876e7",
+  "findings": [
+    {
+      "kind": "traduzione imprecisa",
+      "msg": "« Erreger » indica un agente patogeno, non necessariamente una batteria. Sostituire « bactérie multirésistante » con « agent pathogène multirésistant » qui e nella traduzione del cloze corrispondente.",
+      "path": "merged.lessons[0].grammar.examples[4].tr"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "« Sie desinfizieren bitte sich die Hände » è errata per la posizione di « sich », non perché è una frase dichiarativa: « Sie desinfizieren sich bitte die Hände » può esprimere una richiesta. Correggere la spiegazione.",
+      "path": "merged.lessons[0].exercises[0].why"
+    },
+    {
+      "kind": "traduzione imprecisa",
+      "msg": "« Entzündet » significa « inflammée »; « infectée » introduce una diagnosi diversa. Tradurre « Ma plaie est-elle inflammée ? ».",
+      "path": "merged.lessons[1].exercises[8].lines[0].tr"
+    },
+    {
+      "kind": "chiave ambigua",
+      "msg": "Anche « Die Wunde ist etwas geröteter » è grammaticalmente possibile e significa che la ferita è un po’ più arrossata. Sostituire il distrattore con una forma inequivocabilmente scorretta o specificare il confronto richiesto.",
+      "path": "merged.lessons[1].exercises[8].lines[1].choices[2]"
+    },
+    {
+      "kind": "pronuncia",
+      "msg": "Il primo d di « Wundrand » è in fine di sillaba e si desonorizza, ma il secondo precede una vocale e si pronuncia [d]. Correggere la spiegazione.",
+      "path": "merged.lessons[1].exercises[10].why"
+    },
+    {
+      "kind": "contrasto grammaticale",
+      "msg": "In francese non tutti gli aggettivi cambiano forma nell’accordo, e in tedesco gli aggettivi possono essere invariabili anche in funzione avverbiale. Limitare il confronto agli aggettivi predicativi francesi che si accordano e agli aggettivi tedeschi dopo « sein ».",
+      "path": "merged.lessons[1].theory[2].contrast"
+    },
+    {
+      "kind": "ambiguità grammaticale",
+      "msg": "« Sie werden am Freitag entlassen » può anche essere un futuro attivo, per esempio « loro licenzieranno venerdì », se il contesto fornisce un complemento. La lettura passiva è quella intesa nel contesto della dimissione, ma la forma da sola non la impone. Precisarlo anche nell’esercizio che chiede di riconoscere il Futur I.",
+      "path": "merged.lessons[2].theory[1].p"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "Nella frase scorretta « Ein Pflegedienst wird Sie zu Hause unterstützt », « unterstützt » non produce semplicemente un passivo insensato: la costruzione non ammette qui il soggetto e il complemento accusativo presenti. Spiegare che il futuro richiede l’infinito « unterstützen ».",
+      "path": "merged.lessons[2].exercises[0].why"
+    },
+    {
+      "kind": "risposte alternative",
+      "msg": "La consegna chiede una traduzione senza imporre il Futur I: anche « Der Hausarzt kontrolliert die Wunde nächste Woche » è una traduzione naturale. Accettare il presente con valore futuro oppure richiedere esplicitamente il Futur I.",
+      "path": "merged.lessons[2].exercises[8]"
+    },
+    {
+      "kind": "contrasto grammaticale",
+      "msg": "La formula « ne pas devoir = nicht dürfen » è troppo categorica: anche il francese « ne pas devoir » può esprimere assenza di necessità secondo il contesto. Distinguere i due significati con esempi contestualizzati, senza proporre un’equivalenza automatica.",
+      "path": "merged.lessons[3].theory[2].contrast"
+    },
+    {
+      "kind": "terminologia",
+      "msg": "« Haftung » riguarda in particolare la responsabilità giuridica per danni e non equivale genericamente alla responsabilità penale. Precisare la distinzione senza includere automaticamente quest’ultima.",
+      "path": "merged.lessons[3].theory[3].trap"
+    },
+    {
+      "kind": "ambiguità del cloze",
+      "msg": "Senza traduzione o indicazione temporale nella consegna, anche « wurde ... gefunden, deshalb wurde er isoliert » è una frase coerente. Esplicitare che l’isolamento è attuale oppure accettare « wurde » nel secondo spazio se la traduzione non viene mostrata come vincolo.",
+      "path": "merged.test.exercises[5]"
+    }
+  ],
+  "lang": "fr",
+  "unit": "pfl-u09",
+  "verdict": "fail"
+}

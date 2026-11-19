@@ -31,7 +31,7 @@ LINGUAI.addStrings("pl", {
         contrast: "Po polsku personel mówi «zakażenie», a pacjent częściej «infekcja»; przejście choroby z człowieka na człowieka to «zarażenie», «zarazić się», «zaraźliwy». Niemiecki dzieli to podobnie, ale inaczej rozkłada słowa: <em>die Infektion</em> rozumie także pacjent, a codziennym słowem na zarażenie jest <em>die Ansteckung</em>, z czasownikiem <em>sich anstecken</em> («zarazić się») i przymiotnikiem <em>ansteckend</em> («zaraźliwy»): <em>Ist das ansteckend?</em> to pytanie, które usłyszysz najczęściej. Uwaga na pułapkę: polskie «zakazić» i «zarazić» brzmią podobnie, a niemieckie odpowiedniki nie mają ze sobą nic wspólnego w brzmieniu, więc trzeba je zapamiętać osobno. Skróty: <em>MRSA</em> jest ten sam, a czyta się go po niemiecku litera po literze, <em>em-er-es-a</em>, prawie jak po polsku. W wielu placówkach używa się jednak szerszego skrótu <em>MRE</em>, <em>multiresistente Erreger</em>, czyli mniej więcej wasze «drobnoustroje wielooporne». Pacjent mówi często <em>Krankenhauskeim</em>, «bakteria szpitalna»: to nie jest termin precyzyjny, ale to jego słowo i trzeba je rozumieć."
       },
       {
-        trap: "<em>desinfizieren</em> kończy się na <em>-ieren</em>, więc jego imiesłów nie ma <em>ge-</em>: <em>Die Hände werden desinfiziert</em>, nigdy <em>gedesinfiziert</em>. Przy częściach ciała niemiecki wymaga zaimka zwrotnego w celowniku, <em>Desinfizieren Sie <b>sich</b> die Hände</em>, tam gdzie po polsku zwykle wystarczy «proszę zdezynfekować ręce», bez «sobie». <em>der Schutzkittel</em> to fartuch ochronny, a nie płaszcz (<em>der Mantel</em>). I <em>der Keim</em> znaczy też «kiełek»: w kuchni to coś zupełnie innego niż na oddziale."
+        trap: "<em>desinfizieren</em> kończy się na <em>-ieren</em>, więc jego imiesłów nie ma <em>ge-</em>: <em>Die Hände werden desinfiziert</em>, nigdy <em>gedesinfiziert</em>. Przy częściach ciała niemiecki zwykle używa zaimka zwrotnego w celowniku (możliwe jest też <em>Ihre Hände</em>), <em>Desinfizieren Sie <b>sich</b> die Hände</em>, tam gdzie po polsku zwykle wystarczy «proszę zdezynfekować ręce», bez «sobie». <em>der Schutzkittel</em> to fartuch ochronny, a nie płaszcz (<em>der Mantel</em>). I <em>der Keim</em> znaczy też «kiełek»: w kuchni to coś zupełnie innego niż na oddziale."
       },
       {
         tip: "Kiedy wyjaśniasz jakiś środek, pokazuj w trakcie mówienia: wskaż dozownik, weź fartuch do ręki. Pacjent łatwiej zapamięta słowo, jeśli połączy je z przedmiotem, a ty nie musisz szukać synonimu, kiedy cię nie rozumie."
@@ -95,7 +95,7 @@ LINGUAI.addStrings("pl", {
           "Sie desinfizieren bitte sich die Hände.",
           "Desinfiziert Sie sich bitte die Hände."
         ],
-        why: "W grzecznościowym trybie rozkazującym czasownik stoi na pierwszym miejscu i ma formę bezokolicznika: <b>Desinfizieren Sie</b>. <i>Desinfiziert</i> to forma dla <i>ihr</i> i nie łączy się z <i>Sie</i>; <i>Sie desinfizieren bitte</i> to zdanie oznajmujące z błędnym szykiem."
+        why: "W grzecznościowym trybie rozkazującym czasownik stoi na pierwszym miejscu i ma formę bezokolicznika: <b>Desinfizieren Sie</b>. <i>Desinfiziert</i> to forma dla <i>ihr</i> i nie łączy się z <i>Sie</i>; w <i>Sie desinfizieren bitte sich</i> zaimek <i>sich</i> stoi w złym miejscu (powinien być zaraz po czasowniku), a poza tym to zdanie oznajmujące, a nie wymagany tryb rozkazujący."
       },
       {
         tr: "Czas teraźniejszy desinfizieren we wszystkich osobach.",
@@ -183,7 +183,7 @@ LINGUAI.addStrings("pl", {
         contrast: "Polski przymiotnik odmienia się zawsze, także po «jest»: «rana jest zaczerwieniona», «brzegi są obrzęknięte». Niemiecki robi odwrotnie: po <em>sein</em> nie ma żadnej końcówki (<em>Die Wunde ist gerötet</em>), a odmienia się dopiero przymiotnik przed rzeczownikiem. Polskie przyzwyczajenie podsuwa więc <em>Die Wunde ist gerötete</em>, a to błąd. Ze słownictwem jest łatwiej, bo tu polski i niemiecki myślą tak samo: «zapalenie» to codzienne słowo, a niemieckie <em>die Entzündung</em> (<em>entzündet</em>, «w stanie zapalnym») też jest swojskie, nie łacińskie; łacińskie <em>Inflammation</em> spotyka się głównie w tekstach medycznych. Różnica jest w nazwach chorób: tam, gdzie polski mówi opisowo «zapalenie oskrzeli», «zapalenie stawów», niemiecki pacjent zna i używa słów na <em>-itis</em>: <em>Bronchitis, Arthritis</em>. Objawy niemiecki nazywa zwykłymi słowami: <em>Rötung, Schwellung, Überwärmung</em>, czyli zaczerwienienie, obrzęk, ocieplenie."
       },
       {
-        trap: "<em>der Verband</em> to opatrunek, ale też «związek, stowarzyszenie»: <em>Berufsverband</em> to związek zawodowy, a nie opatrunek zawodowy. Uwaga na czasownik: opatrunek się zmienia przez <em>wechseln</em> (<em>Der Verband wird gewechselt</em>), a nie przez <em>ändern</em>, które znaczy «zmodyfikować, przerobić». Polskie «zmienić» obejmuje oba znaczenia, niemiecki je rozdziela. I <em>die Medikation</em> to leczenie lekami, nigdy opatrunek."
+        trap: "<em>der Verband</em> to opatrunek, ale też «związek, stowarzyszenie»: <em>Berufsverband</em> to stowarzyszenie zawodowe, a nie opatrunek zawodowy (związek zawodowy w sensie syndykatu to <em>Gewerkschaft</em>). Uwaga na czasownik: opatrunek się zmienia przez <em>wechseln</em> (<em>Der Verband wird gewechselt</em>), a nie przez <em>ändern</em>, które znaczy «zmodyfikować, przerobić». Polskie «zmienić» obejmuje oba znaczenia, niemiecki je rozdziela. I <em>die Medikation</em> to leczenie lekami, nigdy opatrunek."
       },
       {
         tip: "Opisuj ranę zawsze w tej samej kolejności: lokalizacja, wielkość, dno, brzegi, wydzielina, skóra dookoła. Przy stałym schemacie niczego nie zapomnisz, a osoba, która następnego dnia przeczyta twój opis, może porównać go ze swoim."
@@ -241,7 +241,7 @@ LINGUAI.addStrings("pl", {
       {
         q: "Opisz ranę: brzeg jest lekko zaczerwieniony. Które zdanie jest poprawne?",
         opts: [
-          "Der Wundrand ist leicht geröteter.",
+          "Der Wundrand ist leicht gerötete.",
           "Der Wundrand hat leicht gerötet.",
           "Der Wundrand ist leicht gerötet."
         ],
@@ -393,11 +393,11 @@ LINGUAI.addStrings("pl", {
           "Ein Pflegedienst wird Sie zu Hause unterstützen.",
           "Ein Pflegedienst werden Sie zu Hause unterstützen."
         ],
-        why: "Futur I: <i>wird</i> + <b>bezokolicznik</b> na końcu, <b>unterstützen</b>. Z imiesłowem <i>unterstützt</i> zdanie stałoby się bezsensowną stroną bierną; <i>werden</i> nie zgadza się z podmiotem w liczbie pojedynczej <i>ein Pflegedienst</i>."
+        why: "Futur I: <i>wird</i> + <b>bezokolicznik</b> na końcu, <b>unterstützen</b>. <i>wird ... unterstützt</i> to schemat strony biernej, a strona bierna nie przyjmuje dodatkowo dopełnienia w bierniku <i>Sie</i>: zdanie jest niegramatyczne; <i>werden</i> nie zgadza się z podmiotem w liczbie pojedynczej <i>ein Pflegedienst</i>."
       },
       {
         tr: "Czas teraźniejszy werden we wszystkich osobach.",
-        why: "<i>Werde, wirst, wird, werden, werdet, werden</i>: w drugiej i trzeciej osobie liczby pojedynczej <b>e</b> zmienia się w <b>i</b>, a <b>d</b> zostaje tylko w trzeciej, <i>wird</i>."
+        why: "<i>Werde, wirst, wird, werden, werdet, werden</i>: w drugiej i trzeciej osobie liczby pojedynczej <b>e</b> zmienia się w <b>i</b>, a <b>d</b> znika w <i>wirst</i>, ale zostaje w <i>wird</i>."
       },
       {
         q: "Uzupełnij: «Ihr Hausarzt ___ die Wunde nächste Woche kontrollieren.»",
@@ -434,7 +434,7 @@ LINGUAI.addStrings("pl", {
         why: "<i>Ein Pflegedienst wird Sie morgens unterstützen.</i> <i>wird</i> na drugim miejscu, bezokolicznik <i>unterstützen</i> na końcu."
       },
       {
-        q: "Przetłumacz: «Lekarz rodzinny skontroluje ranę w przyszłym tygodniu.»",
+        q: "Przetłumacz, używając Futur I: «Lekarz rodzinny skontroluje ranę w przyszłym tygodniu.»",
         why: "<i>Der Hausarzt wird die Wunde nächste Woche kontrollieren</i>: Futur I, bezokolicznik na końcu. <i>nächste Woche</i> (albo <i>in der nächsten Woche</i>) może też stać na pierwszym miejscu: <i>Nächste Woche wird der Hausarzt ...</i>"
       },
       {
@@ -478,10 +478,10 @@ LINGUAI.addStrings("pl", {
         p: "W Niemczech niektóre zadania lekarskie można delegować personelowi pielęgniarskiemu (<em>Delegation</em>); kto przyjmuje zadanie, odpowiada za jego wykonanie. Co można delegować, komu i na jakich warunkach, zależy od prawa, od placówki i od twojej sytuacji, na przykład w trakcie uznawania dyplomu. Zakres samodzielnych czynności nie musi się pokrywać z tym, co wolno ci było w Polsce. Ta lekcja uczy słów, którymi się pyta i odmawia, a nie przepisów: w konkretnych sprawach właściwą osobą jest <em>Stationsleitung</em>."
       },
       {
-        contrast: "Tu polski bardzo pomaga, bo dzieli to tak samo jak niemiecki: «nie musisz» to <em>du musst nicht</em> («nie ma obowiązku»), a «nie wolno ci» to <em>du darfst nicht</em> (zakaz). Trudność leży gdzie indziej: w polskim «nie możesz». «Nie możesz tego robić sama» to po polsku zwykle zakaz, ale <em>Du kannst das nicht allein machen</em> znaczy po niemiecku «nie dasz rady, nie potrafisz». Zakaz to zawsze <em>nicht dürfen</em>: <em>Das <b>darfst</b> du nicht allein machen.</em> Tak samo pytanie «czy mogę?» rozpada się na dwa: <em>Darf ich?</em> to «czy wolno mi?», a <em>Kann ich?</em> pyta, czy to możliwe albo czy dasz radę."
+        contrast: "Tu polski bardzo pomaga, bo dzieli to tak samo jak niemiecki: «nie musisz» to <em>du musst nicht</em> («nie ma obowiązku»), a «nie wolno ci» to <em>du darfst nicht</em> (zakaz). Trudność leży gdzie indziej: w polskim «nie możesz». «Nie możesz tego robić sama» to po polsku zwykle zakaz, ale <em>Du kannst das nicht allein machen</em> znaczy po niemiecku «nie dasz rady, nie potrafisz». Zakaz to zawsze <em>nicht dürfen</em>: <em>Das <b>darfst</b> du nicht allein machen.</em> Tak samo pytanie «czy mogę?» rozpada się na dwa: <em>Darf ich?</em> to wprost «czy wolno mi?», a <em>Kann ich?</em> pyta, czy to możliwe albo czy dam radę, choć w mowie potocznej często też prosi o pozwolenie. Kiedy chodzi o pozwolenie, <em>Darf ich?</em> jest wyborem jednoznacznym."
       },
       {
-        trap: "Polskie «odpowiedzialność» obejmuje dwa niemieckie słowa. <em>die Haftung</em> to odpowiedzialność prawna, obowiązek odpowiadania za szkodę (cywilna albo karna). Odpowiedzialność zawodowa i moralna to <em>die Verantwortung</em>: <em>Ich trage die Verantwortung für meine Patienten.</em> A <em>die Krankenschwester</em>, której pacjenci wciąż często używają, nie jest już tytułem zawodowym: tytuł to <em>Pflegefachfrau</em> albo <em>Pflegefachmann</em>."
+        trap: "Polskie «odpowiedzialność» obejmuje dwa niemieckie słowa. <em>die Haftung</em> to odpowiedzialność prawna, obowiązek odpowiadania za szkodę (przede wszystkim cywilna; odpowiedzialność karna to raczej <em>strafrechtliche Verantwortung</em>). Odpowiedzialność zawodowa i moralna to <em>die Verantwortung</em>: <em>Ich trage die Verantwortung für meine Patienten.</em> A <em>die Krankenschwester</em>, której pacjenci wciąż często używają, nie jest już tytułem zawodowym: tytuł to <em>Pflegefachfrau</em> albo <em>Pflegefachmann</em>."
       },
       {
         tip: "Jeśli ktoś z rodziny albo pacjent prosi cię o coś, co nie należy do ciebie, nie mów samego «nie»: powiedz, kto o tym decyduje i co teraz robisz. <em>Das darf ich nicht allein entscheiden. Ich spreche mit der Ärztin.</em> Wtedy prośba nie zostaje bez odpowiedzi."
@@ -626,7 +626,7 @@ LINGUAI.addStrings("pl", {
     ],
     exercises: [
       {
-        q: "Wyjaśniasz pacjentowi, że ma nadciśnienie. Którego zdania użyjesz?",
+        q: "Wyjaśniasz pacjentowi, że ma nadciśnienie. Które zdanie zrozumie najłatwiej?",
         opts: ["Sie haben eine Hypertonie.", "Sie haben Bluthochdruck.", "Ihr RR ist erhöht."],
         why: "Z pacjentem używa się codziennego słowa: <b>Bluthochdruck</b>. <i>Hypertonie</i>, które znasz ze studiów, i skrót <i>RR</i> są dobre między kolegami i w dokumentacji, ale pacjent może ich nie rozumieć."
       },

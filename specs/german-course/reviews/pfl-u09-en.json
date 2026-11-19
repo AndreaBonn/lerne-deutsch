@@ -1,0 +1,33 @@
+{
+  "bundleHash": "67dceed7ed926b7e54017f66f4656a9601d8cce50cf2053ba0b40c2f45309850",
+  "findings": [
+    {
+      "kind": "pronuncia",
+      "msg": "In «sich» la s iniziale è sorda [zɪç] solo se pronunciata come [z], ma nella pronuncia standard è effettivamente sonora [zɪç]; l'indicazione è corretta. Invece «Sie» e «sich» non presentano un difetto.",
+      "path": "merged.lessons[0].exercises[11].why"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "«Sie werden am Freitag entlassen» è ambiguo senza contesto: può significare anche «They will dismiss [someone] on Friday», con entlassen infinito. Precisare che nell'interpretazione rivolta al paziente è passivo presente, anziché escludere categoricamente il Futur I.",
+      "path": "merged.lessons[2].theory[1].p"
+    },
+    {
+      "kind": "chiave di risposta",
+      "msg": "Il completamento «wurde ... wurde» è grammaticalmente possibile e descrive entrambi gli eventi nel passato. Specificare nella consegna che l'isolamento è attuale oppure accettare anche «wurde» nel secondo spazio.",
+      "path": "merged.test.exercises[5].gaps[1]"
+    },
+    {
+      "kind": "domanda ambigua",
+      "msg": "Anche «Sie haben eine Hypertonie» e «Ihr RR ist erhöht» possono essere dette a un paziente e sono grammaticalmente corrette. Chiedere esplicitamente la formulazione più comprensibile in linguaggio comune, anziché quale frase usare.",
+      "path": "merged.test.exercises[0].q"
+    },
+    {
+      "kind": "spiegazione grammaticale",
+      "msg": "L'opzione «Ein Pflegedienst wird Sie zu Hause unterstützt» non diventa semplicemente un passivo privo di senso: la presenza di «Sie» come accusativo la rende grammaticalmente scorretta nel passivo previsto. Correggere la spiegazione.",
+      "path": "merged.lessons[2].exercises[0].why"
+    }
+  ],
+  "lang": "en",
+  "unit": "pfl-u09",
+  "verdict": "fail"
+}

@@ -226,7 +226,7 @@ LINGUAI.addUnits("PFL", [
                 choices: [
                   "Die Wunde ist etwas gerötet. Die Ärztin schaut sie sich heute an.",
                   "Inflammation am Wundrand, Ärztin informiert.",
-                  "Die Wunde ist etwas geröteter. Die Ärztin schaut sie sich heute an."
+                  "Die Wunde ist etwas gerötete. Die Ärztin schaut sie sich heute an."
                 ],
                 a: 0
               },

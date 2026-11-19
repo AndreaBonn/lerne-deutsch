@@ -54,7 +54,7 @@ LINGUAI.addStrings("fr", {
         { tr: "Avant d'entrer, mettez une surblouse, s'il vous plaît.", note: "anziehen est séparable : an va à la fin" },
         { tr: "Avant la visite, présentez-vous en salle de soins, s'il vous plaît.", note: "sich melden : réfléchi, aussi à l'impératif" },
         { tr: "Les mains sont désinfectées avant et après chaque contact avec le patient.", note: "passif présent au pluriel : werden + desinfiziert, sans ge-" },
-        { tr: "On a trouvé une bactérie multirésistante chez M. Brandt.", note: "passif au Präteritum : wurde + gefunden ; le français préfère « on », l'allemand le passif" },
+        { tr: "On a trouvé un agent pathogène multirésistant chez M. Brandt.", note: "passif au Präteritum : wurde + gefunden ; le français préfère « on », l'allemand le passif" },
         { tr: "La chambre est nettoyée tous les jours.", note: "passif présent : wird + gereinigt" }
       ]
     },
@@ -95,7 +95,7 @@ LINGUAI.addStrings("fr", {
           "Sie desinfizieren bitte sich die Hände.",
           "Desinfiziert Sie sich bitte die Hände."
         ],
-        why: "À l'impératif de politesse, le verbe vient en premier et a la forme de l'infinitif : <b>Desinfizieren Sie</b>. <i>Desinfiziert</i> est la forme de <i>ihr</i> et ne va pas avec <i>Sie</i> ; <i>Sie desinfizieren bitte</i> est une phrase affirmative, avec un ordre des mots faux."
+        why: "À l'impératif de politesse, le verbe vient en premier et a la forme de l'infinitif : <b>Desinfizieren Sie</b>. <i>Desinfiziert</i> est la forme de <i>ihr</i> et ne va pas avec <i>Sie</i> ; dans <i>Sie desinfizieren bitte sich</i>, le pronom <i>sich</i> est mal placé (il vient juste après le verbe), et c'est de toute façon une phrase affirmative, pas l'impératif demandé."
       },
       {
         tr: "Le présent de desinfizieren, à toutes les personnes.",
@@ -108,7 +108,7 @@ LINGUAI.addStrings("fr", {
       },
       {
         q: "Complète la phrase.",
-        tr: "On a trouvé une bactérie multirésistante chez M. Brandt.",
+        tr: "On a trouvé un agent pathogène multirésistant chez M. Brandt.",
         why: "<i>Bei Herrn Brandt <b>wurde</b> ein multiresistenter Erreger <b>gefunden</b></i> : passif au Präteritum, <i>wurde</i> en deuxième position et le participe à la fin. Dans les comptes rendus, on lit aussi <i>nachgewiesen</i>, « mis en évidence »."
       },
       {
@@ -241,7 +241,7 @@ LINGUAI.addStrings("fr", {
       {
         q: "Décris la plaie : la berge est légèrement rougie. Quelle phrase est correcte ?",
         opts: [
-          "Der Wundrand ist leicht geröteter.",
+          "Der Wundrand ist leicht gerötete.",
           "Der Wundrand hat leicht gerötet.",
           "Der Wundrand ist leicht gerötet."
         ],
@@ -289,7 +289,7 @@ LINGUAI.addStrings("fr", {
         q: "Le patient pose des questions sur sa plaie.",
         setting: "Pendant la réfection du pansement, M. Brandt est inquiet et te pose des questions.",
         lines: [
-          { tr: "Ma plaie est infectée ?" },
+          { tr: "Ma plaie est enflammée ?" },
           { tr: "Réponds qu'elle est un peu rouge et que la médecin la regarde aujourd'hui.", answerTr: "La plaie est un peu rouge. La médecin la regarde aujourd'hui." },
           { tr: "Pourquoi le pansement est-il si mouillé ?" },
           { tr: "Réponds que c'est un écoulement, du liquide qui sort de la plaie, et que tu le notes.", answerTr: "C'est un écoulement, du liquide qui sort de la plaie. Je le note." },
@@ -393,11 +393,11 @@ LINGUAI.addStrings("fr", {
           "Ein Pflegedienst wird Sie zu Hause unterstützen.",
           "Ein Pflegedienst werden Sie zu Hause unterstützen."
         ],
-        why: "Futur I : <i>wird</i> + <b>infinitif</b> à la fin, <b>unterstützen</b>. Avec le participe <i>unterstützt</i>, la phrase deviendrait un passif sans aucun sens ; <i>werden</i> ne s'accorde pas avec le sujet singulier <i>ein Pflegedienst</i>."
+        why: "Futur I : <i>wird</i> + <b>infinitif</b> à la fin, <b>unterstützen</b>. <i>wird ... unterstützt</i> est la structure du passif, et un passif n'admet pas en plus le complément à l'accusatif <i>Sie</i> : la phrase est agrammaticale ; <i>werden</i> ne s'accorde pas avec le sujet singulier <i>ein Pflegedienst</i>."
       },
       {
         tr: "Le présent de werden, à toutes les personnes.",
-        why: "<i>Werde, wirst, wird, werden, werdet, werden</i> : à la deuxième et à la troisième personne du singulier, le <b>e</b> devient <b>i</b>, et le <b>d</b> de <i>wird</i> ne reste qu'à la troisième."
+        why: "<i>Werde, wirst, wird, werden, werdet, werden</i> : à la deuxième et à la troisième personne du singulier, le <b>e</b> devient <b>i</b>, et le <b>d</b> tombe dans <i>wirst</i> mais reste dans <i>wird</i>."
       },
       {
         q: "Complète : « Ihr Hausarzt ___ die Wunde nächste Woche kontrollieren. »",
@@ -434,7 +434,7 @@ LINGUAI.addStrings("fr", {
         why: "<i>Ein Pflegedienst wird Sie morgens unterstützen.</i> <i>wird</i> en deuxième position, l'infinitif <i>unterstützen</i> à la fin."
       },
       {
-        q: "Traduis : « Le médecin traitant contrôlera la plaie la semaine prochaine. »",
+        q: "Traduis avec le Futur I : « Le médecin traitant contrôlera la plaie la semaine prochaine. »",
         why: "<i>Der Hausarzt wird die Wunde nächste Woche kontrollieren</i> : Futur I, l'infinitif à la fin. <i>nächste Woche</i> (ou <i>in der nächsten Woche</i>) peut aussi se placer en tête : <i>Nächste Woche wird der Hausarzt ...</i>"
       },
       {
@@ -478,10 +478,10 @@ LINGUAI.addStrings("fr", {
         p: "En Allemagne, certaines tâches médicales peuvent être déléguées au personnel infirmier (<em>Delegation</em>) ; la personne qui accepte une tâche répond de son exécution. Ce qui peut être délégué, à qui et à quelles conditions dépend de la loi, de l'établissement et de ta situation, par exemple pendant la reconnaissance de ton diplôme. Le cadre ne se superpose pas au rôle propre et au rôle prescrit que tu connais peut-être. Cette leçon apprend les mots pour demander et pour dire non, pas les règles juridiques : pour les cas concrets, la bonne personne est la <em>Stationsleitung</em>."
       },
       {
-        contrast: "En français, « tu ne dois pas le faire seule » veut dire en général que c'est interdit. L'allemand exprime l'interdiction avec <em>dürfen</em> : <em>Das <b>darfst</b> du nicht allein machen.</em> <em>Du <b>musst</b> das nicht machen</em> veut dire au contraire « tu n'es pas obligée, ce n'est pas nécessaire » : traduire « tu ne dois pas » par <em>musst nicht</em> transforme une interdiction en permission. La règle pratique : « ne pas devoir » français = <em>nicht dürfen</em> ; « ne pas être obligé », « pas besoin de » = <em>nicht müssen</em>. Et le « je peux ? » français se dédouble aussi : <em>Darf ich?</em> demande l'autorisation (« j'ai le droit ? »), <em>Kann ich?</em> demande si c'est possible ou si tu en es capable."
+        contrast: "En français, « tu ne dois pas le faire seule » veut dire en général que c'est interdit. L'allemand exprime l'interdiction avec <em>dürfen</em> : <em>Das <b>darfst</b> du nicht allein machen.</em> <em>Du <b>musst</b> das nicht machen</em> veut dire au contraire « tu n'es pas obligée, ce n'est pas nécessaire » : traduire « tu ne dois pas » par <em>musst nicht</em> transforme une interdiction en permission. La règle pratique : « tu ne dois pas » au sens d'une interdiction = <em>nicht dürfen</em> ; « ne pas être obligé », « pas besoin de » = <em>nicht müssen</em>. Et le « je peux ? » français se dédouble aussi : <em>Darf ich?</em> demande explicitement l'autorisation (« j'ai le droit ? ») ; <em>Kann ich?</em> demande si c'est possible ou si tu en es capable, et à l'oral sert souvent aussi à demander la permission. Quand c'est l'autorisation qui compte, <em>Darf ich?</em> est le choix clair."
       },
       {
-        trap: "Le français « responsabilité » couvre deux mots allemands. <em>die Haftung</em>, c'est la responsabilité juridique, l'obligation de répondre d'un dommage (la responsabilité civile ou pénale). La responsabilité professionnelle et morale, c'est <em>die Verantwortung</em> : <em>Ich trage die Verantwortung für meine Patienten.</em> Et <em>die Krankenschwester</em>, que les patients emploient encore souvent, n'est plus le titre professionnel : le titre est <em>Pflegefachfrau</em> ou <em>Pflegefachmann</em>."
+        trap: "Le français « responsabilité » couvre deux mots allemands. <em>die Haftung</em>, c'est la responsabilité juridique, l'obligation de répondre d'un dommage (surtout la responsabilité civile ; la responsabilité pénale se dit plutôt <em>strafrechtliche Verantwortung</em>). La responsabilité professionnelle et morale, c'est <em>die Verantwortung</em> : <em>Ich trage die Verantwortung für meine Patienten.</em> Et <em>die Krankenschwester</em>, que les patients emploient encore souvent, n'est plus le titre professionnel : le titre est <em>Pflegefachfrau</em> ou <em>Pflegefachmann</em>."
       },
       {
         tip: "Si un proche ou un patient te demande quelque chose qui ne relève pas de toi, ne dis pas seulement non : dis qui décide et ce que tu fais maintenant. <em>Das darf ich nicht allein entscheiden. Ich spreche mit der Ärztin.</em> Ainsi, la demande ne reste pas sans réponse."
@@ -626,7 +626,7 @@ LINGUAI.addStrings("fr", {
     ],
     exercises: [
       {
-        q: "Tu expliques à un patient qu'il a de la tension. Quelle phrase utilises-tu ?",
+        q: "Tu expliques à un patient qu'il a de la tension. Quelle phrase comprendra-t-il le plus facilement ?",
         opts: ["Sie haben eine Hypertonie.", "Sie haben Bluthochdruck.", "Ihr RR ist erhöht."],
         why: "Avec le patient, on emploie le mot de tous les jours : <b>Bluthochdruck</b>. <i>Hypertonie</i>, transparent pour toi, et le sigle <i>RR</i> conviennent entre collègues et dans la documentation."
       },

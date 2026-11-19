@@ -79,7 +79,7 @@ LINGUAI.addStrings("it", {
       "Per questo la stanza singola?",
       "Esatto. Per un po' di tempo sarà isolato. Chi viene da Lei indossa un camice protettivo e i guanti.",
       "E mia moglie? Vuole venire a trovarmi domani.",
-      "Prima si presenti nella stanza del personale, per favore: lì le spieghiamo tutto.",
+      "Prima Sua moglie si presenti nella stanza del personale, per favore: lì le spieghiamo tutto.",
       "E io che cosa devo fare?",
       "Si disinfetti le mani, per favore, e ci avvisi prima di uscire dalla stanza."
     ],
@@ -95,7 +95,7 @@ LINGUAI.addStrings("it", {
           "Sie desinfizieren bitte sich die Hände.",
           "Desinfiziert Sie sich bitte die Hände."
         ],
-        why: "Nell'imperativo di cortesia il verbo va al primo posto e ha la forma dell'infinito: <b>Desinfizieren Sie</b>. <i>Desinfiziert</i> è la forma di <i>ihr</i> e non si combina con <i>Sie</i>; <i>Sie desinfizieren bitte</i> è una frase affermativa con un ordine delle parole sbagliato."
+        why: "Nell'imperativo di cortesia il verbo va al primo posto e ha la forma dell'infinito: <b>Desinfizieren Sie</b>. <i>Desinfiziert</i> è la forma di <i>ihr</i> e non si combina con <i>Sie</i>; in <i>Sie desinfizieren bitte sich</i> il pronome <i>sich</i> è fuori posto (va subito dopo il verbo), e comunque è una frase affermativa, non l'imperativo richiesto."
       },
       {
         tr: "Il presente di desinfizieren, tutte le persone.",
@@ -146,7 +146,7 @@ LINGUAI.addStrings("it", {
           { tr: "Perché sono da solo in una stanza?" },
           { tr: "Rispondi che gli è stato trovato un germe, per questo viene isolato.", answerTr: "Le è stato trovato un germe, per questo viene isolato." },
           { tr: "Mia figlia vuole venire a trovarmi oggi." },
-          { tr: "Rispondi che prima deve presentarsi nella stanza del personale.", answerTr: "Prima si presenti nella stanza del personale, per favore." },
+          { tr: "Rispondi che prima deve presentarsi nella stanza del personale.", answerTr: "Prima Sua figlia si presenti nella stanza del personale, per favore." },
           { tr: "Che cosa deve indossare nella stanza?" },
           { tr: "Rispondi: un camice protettivo e i guanti.", answerTr: "Un camice protettivo e i guanti." }
         ]
@@ -241,7 +241,7 @@ LINGUAI.addStrings("it", {
       {
         q: "Descrivi la ferita: il margine è leggermente arrossato. Quale frase è corretta?",
         opts: [
-          "Der Wundrand ist leicht geröteter.",
+          "Der Wundrand ist leicht gerötete.",
           "Der Wundrand hat leicht gerötet.",
           "Der Wundrand ist leicht gerötet."
         ],
@@ -393,11 +393,11 @@ LINGUAI.addStrings("it", {
           "Ein Pflegedienst wird Sie zu Hause unterstützen.",
           "Ein Pflegedienst werden Sie zu Hause unterstützen."
         ],
-        why: "Futur I: <i>wird</i> + <b>infinito</b> in fondo, <b>unterstützen</b>. Con il participio <i>unterstützt</i> la frase diventerebbe un passivo senza senso; <i>werden</i> non concorda con il soggetto singolare <i>ein Pflegedienst</i>."
+        why: "Futur I: <i>wird</i> + <b>infinito</b> in fondo, <b>unterstützen</b>. <i>wird ... unterstützt</i> è la struttura del passivo, e un passivo non ammette in più il complemento all'accusativo <i>Sie</i>: la frase è sgrammaticata; <i>werden</i> non concorda con il soggetto singolare <i>ein Pflegedienst</i>."
       },
       {
         tr: "Il presente di werden, tutte le persone.",
-        why: "<i>Werde, wirst, wird, werden, werdet, werden</i>: alla seconda e alla terza persona singolare la <b>e</b> diventa <b>i</b>, e la <b>d</b> di <i>wird</i> resta solo alla terza."
+        why: "<i>Werde, wirst, wird, werden, werdet, werden</i>: alla seconda e alla terza persona singolare la <b>e</b> diventa <b>i</b>, e la <b>d</b> cade in <i>wirst</i> ma resta in <i>wird</i>."
       },
       {
         q: "Completa: «Ihr Hausarzt ___ die Wunde nächste Woche kontrollieren.»",
@@ -434,7 +434,7 @@ LINGUAI.addStrings("it", {
         why: "<i>Ein Pflegedienst wird Sie morgens unterstützen.</i> <i>wird</i> al secondo posto, l'infinito <i>unterstützen</i> in fondo."
       },
       {
-        q: "Traduci: «Il medico di famiglia controllerà la ferita la settimana prossima.»",
+        q: "Traduci con il Futur I: «Il medico di famiglia controllerà la ferita la settimana prossima.»",
         why: "<i>Der Hausarzt wird die Wunde nächste Woche kontrollieren</i>: Futur I, l'infinito in fondo. <i>nächste Woche</i> (o <i>in der nächsten Woche</i>) può stare anche al primo posto: <i>Nächste Woche wird der Hausarzt ...</i>"
       },
       {
@@ -478,7 +478,7 @@ LINGUAI.addStrings("it", {
         p: "In Germania alcuni compiti medici possono essere delegati al personale infermieristico (<em>Delegation</em>); chi accetta un compito ne risponde per l'esecuzione. Che cosa si può delegare, a chi e a quali condizioni dipende dalla legge, dalla struttura e dalla tua posizione, per esempio durante il riconoscimento del titolo. Questa lezione insegna le parole per chiedere e per dire di no, non le regole giuridiche: per i casi concreti la persona giusta è la <em>Stationsleitung</em>."
       },
       {
-        contrast: "In italiano «non devi» di solito vuol dire che è vietato: «non devi farlo da sola». In tedesco il divieto si dice con <em>dürfen</em>: <em>Das <b>darfst</b> du nicht allein machen.</em> <em>Du <b>musst</b> das nicht machen</em> vuol dire invece «non sei obbligata, non serve»: tradurre «non devi» con <em>musst nicht</em> trasforma un divieto in un permesso. Anche la domanda «posso?» si divide in due: <em>Darf ich?</em> chiede il permesso, <em>Kann ich?</em> chiede se è possibile o se ne sei capace."
+        contrast: "In italiano «non devi» di solito vuol dire che è vietato: «non devi farlo da sola». In tedesco il divieto si dice con <em>dürfen</em>: <em>Das <b>darfst</b> du nicht allein machen.</em> <em>Du <b>musst</b> das nicht machen</em> vuol dire invece «non sei obbligata, non serve»: tradurre «non devi» con <em>musst nicht</em> trasforma un divieto in un permesso. Anche la domanda «posso?» si divide in due: <em>Darf ich?</em> chiede esplicitamente il permesso; <em>Kann ich?</em> chiede se è possibile o se ne sei capace, e nel parlato spesso anche il permesso. Quando conta il permesso, <em>Darf ich?</em> è la scelta chiara."
       },
       {
         trap: "<em>die Haftung</em> non è la responsabilità in generale: è la responsabilità giuridica, l'obbligo di rispondere di un danno. La responsabilità professionale e morale è <em>die Verantwortung</em>: <em>Ich trage die Verantwortung für meine Patienten.</em> E <em>die Krankenschwester</em>, che i pazienti usano ancora spesso, oggi non è più il titolo professionale: il titolo è <em>Pflegefachfrau</em> o <em>Pflegefachmann</em>."
@@ -626,7 +626,7 @@ LINGUAI.addStrings("it", {
     ],
     exercises: [
       {
-        q: "Spieghi a un paziente che ha la pressione alta. Quale frase usi?",
+        q: "Spieghi a un paziente che ha la pressione alta. Quale frase capisce più facilmente?",
         opts: ["Sie haben eine Hypertonie.", "Sie haben Bluthochdruck.", "Ihr RR ist erhöht."],
         why: "Con il paziente si usa la parola di tutti i giorni: <b>Bluthochdruck</b>. <i>Hypertonie</i> e la sigla <i>RR</i> vanno bene tra colleghi e nella documentazione."
       },

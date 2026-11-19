@@ -31,7 +31,7 @@ LINGUAI.addStrings("en", {
         contrast: "In English “infection” works with everyone, and the everyday question is “Is it contagious?” or “Can I catch it?”. German has the same split, but with two nouns: <em>die Infektion</em> is understood by patients too, while the everyday word for passing it on is <em>die Ansteckung</em>, with the verb <em>sich anstecken</em> (“to catch it”) and the adjective <em>ansteckend</em> (“contagious”): <em>Ist das ansteckend?</em> is the question you will hear most. Do not translate “to catch” word for word with <em>fangen</em>: you catch a ball, not a germ. <em>MRSA</em> is the same abbreviation as in English, but it is spelled out with German letter names, <em>em-er-es-a</em>, and many facilities use the broader <em>MRE</em>, <em>multiresistente Erreger</em>. Patients often say <em>Krankenhauskeim</em> (“hospital germ”): not a precise term, but it is their word, and you should understand it."
       },
       {
-        trap: "<em>desinfizieren</em> ends in <em>-ieren</em>, so its participle has no <em>ge-</em>: <em>Die Hände werden desinfiziert</em>, never <em>gedesinfiziert</em>. English says “disinfect <b>your</b> hands”; with body parts German uses a reflexive pronoun in the dative instead of the possessive: <em>Desinfizieren Sie <b>sich</b> die Hände</em>. And the protective gown is <em>der Schutzkittel</em>: <em>der Mantel</em> is a coat, and <em>das Kleid</em> is a dress."
+        trap: "<em>desinfizieren</em> ends in <em>-ieren</em>, so its participle has no <em>ge-</em>: <em>Die Hände werden desinfiziert</em>, never <em>gedesinfiziert</em>. English says “disinfect <b>your</b> hands”; with body parts German usually uses a reflexive pronoun in the dative instead of the possessive (<em>Ihre Hände</em> is also possible): <em>Desinfizieren Sie <b>sich</b> die Hände</em>. And the protective gown is <em>der Schutzkittel</em>: <em>der Mantel</em> is a coat, and <em>das Kleid</em> is a dress."
       },
       {
         tip: "While you explain a measure, show it: point to the dispenser, hold up a gown. The word sticks better when the patient links it to an object, and you do not have to hunt for a synonym if they do not understand."
@@ -95,7 +95,7 @@ LINGUAI.addStrings("en", {
           "Sie desinfizieren bitte sich die Hände.",
           "Desinfiziert Sie sich bitte die Hände."
         ],
-        why: "In the polite imperative the verb comes first and looks like the infinitive: <b>Desinfizieren Sie</b>. <i>Desinfiziert</i> is the <i>ihr</i> form and does not go with <i>Sie</i>; <i>Sie desinfizieren bitte</i> is a statement with the wrong word order."
+        why: "In the polite imperative the verb comes first and looks like the infinitive: <b>Desinfizieren Sie</b>. <i>Desinfiziert</i> is the <i>ihr</i> form and does not go with <i>Sie</i>; in <i>Sie desinfizieren bitte sich</i> the pronoun <i>sich</i> is out of place (it goes right after the verb), and the sentence is a statement anyway, not the imperative you were asked for."
       },
       {
         tr: "The present of desinfizieren, all persons.",
@@ -241,7 +241,7 @@ LINGUAI.addStrings("en", {
       {
         q: "Describe the wound: the edge is slightly reddened. Which sentence is correct?",
         opts: [
-          "Der Wundrand ist leicht geröteter.",
+          "Der Wundrand ist leicht gerötete.",
           "Der Wundrand hat leicht gerötet.",
           "Der Wundrand ist leicht gerötet."
         ],
@@ -393,11 +393,11 @@ LINGUAI.addStrings("en", {
           "Ein Pflegedienst wird Sie zu Hause unterstützen.",
           "Ein Pflegedienst werden Sie zu Hause unterstützen."
         ],
-        why: "Futur I: <i>wird</i> + <b>infinitive</b> at the end, <b>unterstützen</b>. With the participle <i>unterstützt</i> the sentence would turn into a passive that makes no sense; <i>werden</i> does not agree with the singular subject <i>ein Pflegedienst</i>."
+        why: "Futur I: <i>wird</i> + <b>infinitive</b> at the end, <b>unterstützen</b>. <i>wird ... unterstützt</i> is the passive pattern, and a passive cannot also carry the accusative object <i>Sie</i>, so the sentence is ungrammatical; <i>werden</i> does not agree with the singular subject <i>ein Pflegedienst</i>."
       },
       {
         tr: "The present of werden, all persons.",
-        why: "<i>Werde, wirst, wird, werden, werdet, werden</i>: in the second and third person singular the <b>e</b> becomes <b>i</b>, and the <b>d</b> stays only in the third, <i>wird</i>."
+        why: "<i>Werde, wirst, wird, werden, werdet, werden</i>: in the second and third person singular the <b>e</b> becomes <b>i</b>, and the <b>d</b> drops in <i>wirst</i> but stays in <i>wird</i>."
       },
       {
         q: "Complete: “Ihr Hausarzt ___ die Wunde nächste Woche kontrollieren.”",
@@ -434,7 +434,7 @@ LINGUAI.addStrings("en", {
         why: "<i>Ein Pflegedienst wird Sie morgens unterstützen.</i> <i>wird</i> in second position, the infinitive <i>unterstützen</i> at the end."
       },
       {
-        q: "Translate: “The family doctor will check the wound next week.”",
+        q: "Translate using the Futur I: “The family doctor will check the wound next week.”",
         why: "<i>Der Hausarzt wird die Wunde nächste Woche kontrollieren</i>: Futur I, infinitive at the end. <i>nächste Woche</i> (or <i>in der nächsten Woche</i>) can also go first: <i>Nächste Woche wird der Hausarzt ...</i> “Family doctor” is <i>Hausarzt</i> or <i>Hausärztin</i>, roughly a primary care physician."
       },
       {
@@ -478,7 +478,7 @@ LINGUAI.addStrings("en", {
         p: "In Germany some medical tasks can be delegated to nursing staff (<em>Delegation</em>); whoever accepts a task is responsible for carrying it out properly. What can be delegated, to whom and under what conditions depends on the law, the facility and your status, for example while your credentials are being recognized. This lesson teaches the words to ask and to say no, not the legal rules: for concrete cases the right person is the <em>Stationsleitung</em>, the nurse manager."
       },
       {
-        contrast: "This is the classic trap for English speakers. “You must not do that” is a prohibition, and <em>Du musst das nicht machen</em> looks like its word-for-word translation, but it means the opposite: “you don't have to do that”, there is no obligation. The prohibition is said with <em>dürfen</em>: <em>Das <b>darfst</b> du nicht allein machen</em>, “you're not allowed to do that alone”. So: “must not” = <em>nicht dürfen</em>; “don't have to” = <em>nicht müssen</em>. Getting it backwards turns a ban into a permission, which on a unit is the dangerous direction. “May I?” and “Can I?” split the same way as in careful English: <em>Darf ich?</em> asks permission, <em>Kann ich?</em> asks whether it is possible or whether you are able to."
+        contrast: "This is the classic trap for English speakers. “You must not do that” is a prohibition, and <em>Du musst das nicht machen</em> looks like its word-for-word translation, but it means the opposite: “you don't have to do that”, there is no obligation. The prohibition is said with <em>dürfen</em>: <em>Das <b>darfst</b> du nicht allein machen</em>, “you're not allowed to do that alone”. So: “must not” = <em>nicht dürfen</em>; “don't have to” = <em>nicht müssen</em>. Getting it backwards turns a ban into a permission, which on a unit is the dangerous direction. “May I?” and “Can I?” work much as in English: <em>Darf ich?</em> asks permission explicitly; <em>Kann ich?</em> asks whether it is possible or whether you are able to, and in everyday speech often asks permission too. When permission is the point, <em>Darf ich?</em> is the clear choice."
       },
       {
         trap: "<em>die Haftung</em> is liability, the legal duty to answer for damage; it is not responsibility in general. Professional and moral responsibility is <em>die Verantwortung</em>: <em>Ich trage die Verantwortung für meine Patienten.</em> And <em>die Krankenschwester</em> (“nurse”), which patients still use a lot, is no longer the professional title: the title is <em>Pflegefachfrau</em> or <em>Pflegefachmann</em>, roughly a registered nurse."
@@ -626,7 +626,7 @@ LINGUAI.addStrings("en", {
     ],
     exercises: [
       {
-        q: "You explain to a patient that they have high blood pressure. Which sentence do you use?",
+        q: "You explain to a patient that they have high blood pressure. Which sentence is easiest for the patient to understand?",
         opts: ["Sie haben eine Hypertonie.", "Sie haben Bluthochdruck.", "Ihr RR ist erhöht."],
         why: "With the patient you use the everyday word: <b>Bluthochdruck</b>. <i>Hypertonie</i> and the abbreviation <i>RR</i> are fine among colleagues and in the chart."
       },
