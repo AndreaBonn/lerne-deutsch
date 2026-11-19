@@ -184,6 +184,14 @@ Valutazione:
 
 ## Fasi (ognuna mergiabile da sola)
 
+**Ri-stima dopo il pilota (T1.21, 2026-11-19, misurata).** Il contenuto lo scrivono agent, non
+ore-persona: pfl-u01 è costato core + overlay it 14 min, overlay en+es e fr+pl 6-7 min in
+parallelo, 2 giri del secondo giudice con correzioni 10 min, audio 3 min (139 mp3). Per unità
+circa 35-40 min di orologio e 4 agent; il secondo giudice non converge oltre 2 giri, quindi
+la regola per le unità 2-9 è 1 giro di review_lot con correzione dei finding validi e i
+respinti annotati nel file human (decisione T1.15 in `.pilota/decisioni.md`). Le stime in ore
+delle fasi 2-3 sotto restano come misura dell'equivalente lavoro umano, non del tempo reale.
+
 | Fase | Contenuto | Stato usabile dopo la fase | Stima (con buffer) |
 |---|---|---|---|
 | 1 | Idraulica dello pseudo-livello + unità pilota `pfl-u01` Aufnahme und Anamnese, 5 lingue, audio, revisione umana, rilascio | PFL nel Percorso con 1 unità | 62-76h |
