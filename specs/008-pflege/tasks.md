@@ -17,6 +17,63 @@ D3=A, D4=B (PFL visibile da subito con avviso "non ancora rivisto"). La revision
 un'infermiera arriva a fine flusso e non blocca nessuna fase: le righe `human` producono il file
 con `REVISORE: in attesa`, la revisione vera si fa in un lotto unico alla fine (task 7.1).
 
+## Checklist (fonte di verità della notte, 2026-11-19)
+
+Le tabelle sotto restano il dettaglio di ogni voce. Già fatte prima della notte: 1.1-1.10, 1.12-1.14, 1.16, 1.17, 1.19 (commit cd89874, fab5ade, ffe6c7e).
+
+- [ ] T1.15 review_lot (secondo giudice) di pfl-u01 per it en es fr pl
+- [ ] T1.18 pfl-u01-human.md con ESITO e REVISORE: in attesa | dip: T1.15
+- [ ] T1.20 click-through 375/1280 di PFL, a11y-gate, contrast.spec
+- [ ] T1.11 CLAUDE.md: pseudo-livello, sequential, notice, own-target, REVISORE
+- [ ] T1.21 ri-stima fasi 2-3 in plan.md col costo misurato di pfl-u01 | dip: T1.18
+- [ ] T2.2.a pfl-u02: core + overlay it, own-target, curriculum pointer | dip: T1.21
+- [ ] T2.2.c pfl-u02: overlay en es fr pl | dip: T2.2.a
+- [ ] T2.2.d pfl-u02: audio, registrazione in dataFiles, gate, review_lot 5 lingue, human in attesa | dip: T2.2.c
+- [ ] T2.3.a pfl-u03: core + overlay it, own-target, curriculum pointer | dip: T1.21
+- [ ] T2.3.c pfl-u03: overlay en es fr pl | dip: T2.3.a
+- [ ] T2.3.d pfl-u03: audio, registrazione in dataFiles, gate, review_lot 5 lingue, human in attesa | dip: T2.3.c
+- [ ] T2.4.a pfl-u04: core + overlay it, own-target, curriculum pointer | dip: T1.21
+- [ ] T2.4.c pfl-u04: overlay en es fr pl | dip: T2.4.a
+- [ ] T2.4.d pfl-u04: audio, registrazione in dataFiles, gate, review_lot 5 lingue, human in attesa | dip: T2.4.c
+- [ ] T2.5.a pfl-u05: core + overlay it, own-target, curriculum pointer | dip: T1.21
+- [ ] T2.5.c pfl-u05: overlay en es fr pl | dip: T2.5.a
+- [ ] T2.5.d pfl-u05: audio, registrazione in dataFiles, gate, review_lot 5 lingue, human in attesa | dip: T2.5.c
+- [ ] T3.6.a pfl-u06: core + overlay it, own-target, curriculum pointer | dip: T1.21
+- [ ] T3.6.c pfl-u06: overlay en es fr pl | dip: T3.6.a
+- [ ] T3.6.d pfl-u06: audio, registrazione in dataFiles, gate, review_lot 5 lingue, human in attesa | dip: T3.6.c
+- [ ] T3.7.a pfl-u07: core + overlay it, own-target, curriculum pointer | dip: T1.21
+- [ ] T3.7.c pfl-u07: overlay en es fr pl | dip: T3.7.a
+- [ ] T3.7.d pfl-u07: audio, registrazione in dataFiles, gate, review_lot 5 lingue, human in attesa | dip: T3.7.c
+- [ ] T3.8.a pfl-u08: core + overlay it, own-target, curriculum pointer | dip: T1.21
+- [ ] T3.8.c pfl-u08: overlay en es fr pl | dip: T3.8.a
+- [ ] T3.8.d pfl-u08: audio, registrazione in dataFiles, gate, review_lot 5 lingue, human in attesa | dip: T3.8.c
+- [ ] T3.9.a pfl-u09: core + overlay it, own-target, curriculum pointer | dip: T1.21
+- [ ] T3.9.c pfl-u09: overlay en es fr pl | dip: T3.9.a
+- [ ] T3.9.d pfl-u09: audio, registrazione in dataFiles, gate, review_lot 5 lingue, human in attesa | dip: T3.9.c
+- [ ] T4.1 2 conversazioni ramificate Pflege, 5 overlay, audio | dip: T1.21
+- [ ] T4.2 3 scenari chat Pflege | dip: T1.21
+- [ ] T4.3 library-pfl.js 3 testi + F1 (library-pfl in --all) | dip: T1.21
+- [ ] T4.4 human in attesa dei moduli | dip: T4.1,T4.2,T4.3
+- [ ] T5.1 telc-formato.md con fonte
+- [ ] T5.2 EXAM_FORMATS e Cils.formato(sim) | dip: T5.1
+- [ ] T5.3 conforme con item per Teil | dip: T5.2
+- [ ] T5.4 esito fasceRicettive | dip: T5.2
+- [ ] T5.5 tipi di prova lueckeAbbina e lueckeMc | dip: T5.2
+- [ ] T5.6 views-cils due famiglie, avviso telc, risultato X/59 | dip: T5.4,T5.5
+- [ ] T5.7 prompt LLM d'esame dal formato | dip: T5.2
+- [ ] T5.8 Schreiben Aufnahme-/Biografiebericht | dip: T5.5
+- [ ] T5.9 Sprechen T1-T3 con preparazione 20 min | dip: T5.6
+- [ ] T5.10 contenuto Modelltest Pflege 1 | dip: T5.3,T5.8,T5.9
+- [ ] T5.11 audio Hören + check:porting + human in attesa | dip: T5.10
+- [ ] T5.12 6 mutazioni d'esame | dip: T5.4,T5.5,T5.7
+- [ ] T5.13 click-through esame, a11y-gate, chiavi cils.* x5 | dip: T5.11
+- [ ] T5.14 CLAUDE.md fasceRicettive | dip: T5.6
+- [ ] T6.1 contenuto Modelltest Pflege 2 | dip: T5.13
+- [ ] T6.2 audio + human in attesa | dip: T6.1
+- [ ] T6.3 cils.spec con 4 simulazioni | dip: T6.1
+- [ ] T6.4 swversion + click-through finale | dip: T6.2,T6.3
+- [?] T7.1 revisione dell'infermiera (Q: esterna, a fine flusso, la porta l'utente)
+
 ## Fase 1 - Pseudo-livello e unità pilota
 
 ### 1a. Idraulica (nessun effetto visibile: PFL non è ancora registrato)
